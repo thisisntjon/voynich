@@ -1,10 +1,10 @@
-# Root index
+# The research record
 
-*Generated (snapshot 2026-10-19). The root keeps the research tree's own layout so every script and stub path still works; this page groups its 935 files.*
+The reader pages are one level up: start with [README](../README.md). *Generated (snapshot 2026-10-19). This folder keeps the research tree's own layout so every script and stub path still works; this page groups its 935 files.*
 
 Each results file's header names the script that wrote it; `NEEDS.tsv` lists the data each script needs.
 
-## Reader pages (15)
+## Reader pages, one level up (15)
 
 - `CITATION.cff`
 - `CONTINUING.md`

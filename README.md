@@ -113,7 +113,7 @@ Edit only the canonical home; derived views are rebuilt from it. If a document a
 | Decisions, reversals and rejections | [`record/.inventory/registers/DECISIONS.md`](record/.inventory/registers/DECISIONS.md) (88 rows; D-066 is the run log) | |
 | Open questions and parked work | [`record/.inventory/registers/OPEN.md`](record/.inventory/registers/OPEN.md) (86 rows) | [`OPEN-QUESTIONS.md`](OPEN-QUESTIONS.md) |
 | Methods, equations, thresholds | [`record/.inventory/registers/METHODS.md`](record/.inventory/registers/METHODS.md), [`record/workflow/TRIANGULATION.md`](record/workflow/TRIANGULATION.md) (how results are graded and filed) | |
-| Runs and who ran them | `runs/<id>/` and [`record/TEAM-HANDOFF.md`](record/TEAM-HANDOFF.md) | [`record/ROOT-INDEX.md`](record/ROOT-INDEX.md) |
+| Runs and who ran them | `runs/<id>/` and [`record/TEAM-HANDOFF.md`](record/TEAM-HANDOFF.md) | [`record/README.md`](record/README.md) |
 | Pre-registrations | `*.prereg`, `*.prereg.sha256` | `python tools/verify_stubs.py` |
 | Published per-page facts (who said what about each folio) | `data/page-facts/*.tsv` (sources and links; quotations removed) | |
 | Third-party sources and licences | [`record/data/SOURCES.tsv`](record/data/SOURCES.tsv), [`record/data/FETCH.tsv`](record/data/FETCH.tsv) | [`record/NEEDS.tsv`](record/NEEDS.tsv) (what each script needs) |
