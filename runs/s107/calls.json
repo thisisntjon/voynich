@@ -1,0 +1,174 @@
+{
+ "loc_band": [
+  0.9073818633685861,
+  1.049928019378369
+ ],
+ "order_band": {
+  "100": [
+   0.012321,
+   0.092252
+  ],
+  "200": [
+   -0.003465,
+   0.086474
+  ]
+ },
+ "PC1": true,
+ "PC1_seeds": [
+  false,
+  true,
+  true
+ ],
+ "PC2": true,
+ "NC": true,
+ "GATE": true,
+ "REPRO": false,
+ "CALL_RESTATE_F40": true,
+ "SHOWS": {
+  "PC2_VOY_IT2a_as_control": true,
+  "NC_augustine_la": false,
+  "T1_tacuinum_bnf9333": false,
+  "T2_degradibus_const": false,
+  "T3_lull_tabula_1515": true
+ },
+ "FULL": {
+  "PC2_VOY_IT2a_as_control": true,
+  "NC_augustine_la": false,
+  "T1_tacuinum_bnf9333": false,
+  "T2_degradibus_const": false,
+  "T3_lull_tabula_1515": false
+ },
+ "desc": {
+  "PC2_VOY_IT2a_as_control": {
+   "role": "gate",
+   "flags": [],
+   "tokens": 22500,
+   "applicable": [
+    "slot"
+   ],
+   "sig": {
+    "slot": "YYYY"
+   },
+   "bc": {
+    "slot": true
+   },
+   "sig_ok": true,
+   "battery_ok": true,
+   "battery": {
+    "IT2a": 10
+   }
+  },
+  "NC_augustine_la": {
+   "role": "gate",
+   "flags": [],
+   "tokens": 22500,
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnYY",
+    "slot": "nnnY",
+    "affix2": "nnYY"
+   },
+   "bc": {
+    "identity": false,
+    "slot": false,
+    "affix2": false
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   }
+  },
+  "T1_tacuinum_bnf9333": {
+   "role": "tabular",
+   "flags": [
+    "below 22,500"
+   ],
+   "tokens": 9770,
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnYY",
+    "slot": "nnYY",
+    "affix2": "nnYY"
+   },
+   "bc": {
+    "identity": false,
+    "slot": false,
+    "affix2": false
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": null
+  },
+  "T2_degradibus_const": {
+   "role": "tabular",
+   "flags": [
+    "below 22,500"
+   ],
+   "tokens": 16069,
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnYY",
+    "slot": "nnYY",
+    "affix2": "nnYY"
+   },
+   "bc": {
+    "identity": false,
+    "slot": false,
+    "affix2": false
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": null
+  },
+  "T3_lull_tabula_1515": {
+   "role": "tabular",
+   "flags": [
+    "below 22,500"
+   ],
+   "tokens": 957,
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nYYY",
+    "slot": "nYYY",
+    "affix2": "YYYn"
+   },
+   "bc": {
+    "identity": true,
+    "slot": true,
+    "affix2": true
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": null
+  }
+ },
+ "power": {
+  "T1_tacuinum_bnf9333|LP91": true,
+  "T1_tacuinum_bnf9333|IT2a": true,
+  "T2_degradibus_const|LP91": true,
+  "T2_degradibus_const|IT2a": true,
+  "T3_lull_tabula_1515|LP91": true,
+  "T3_lull_tabula_1515|IT2a": true
+ },
+ "errors": {},
+ "verdict": "F-40 restated: in-line reuse is not unique to the manuscript (tabular writing produces it): T3_lull_tabula_1515; H-01-tabular opened as a new hypothesis"
+}

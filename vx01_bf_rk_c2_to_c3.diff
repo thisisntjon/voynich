@@ -1,0 +1,239 @@
+--- vx01_bf_rk_c2.py
++++ vx01_bf_rk_c3.py
+@@ -1,6 +1,6 @@
+-"""vx01_bf_rk_c2.py -- nuisance spread r_k,q on the REAL whole-word text (script 6b). UNVERIFIED.
++"""vx01_bf_rk_c3.py -- nuisance spread r_k,q on the REAL whole-word text (script 6b). UNVERIFIED.
+ 
+-Plan: PLAN-X01-B-FALLBACK, cited only by sha256 4ed0314a7c8aef4d925dee4fbab3ef8eca3a005352062563e3708a0273e63f3e
++Plan: PLAN-X01-B-FALLBACK, cited only by sha256 dfc2e0886700a240c39bccf845a126577751682845456e5864058483b8de1a5f
+ (section 3; statistics section 2; load list section 8). Base plan PLAN-X01-v5.1 af4fee6b847caca46afd2456818d510e817cb09699b91034270ac7f4a6a75393.
+ WRITTEN FOR IV CODE REVIEW. NOT RUN. NOT FROZEN. Open code decisions: vx01_bf_CODE_DECISIONS_1.md.
+ 
+@@ -12,9 +12,9 @@
+ Modes
+   --dev        pre-freeze run (also the freeze trace for this script): writes runs/vx01_bf_rk/dev_<utc>/ only.
+   --gate       the ONE frozen run (needs the stub): writes vx01_bf_rk_table.json and results_vx01_bf_rk.txt.
+-  --pin-check  environment pin check only; one line to vx01_bf_rk_c2_pin_checks.log (not in the stub).
+-  --write-stub builds vx01_bf_rk_c2.prereg.sha256 from the dev trace (refuses if it exists). Needs --plan PATH.
+-Single process. BelowNormal. Audit hook on open + process-creation events in every mode (rules (a), (c), (d)).
++  --pin-check  environment pin check only; one line to vx01_bf_rk_c3_pin_checks.log (not in the stub); spawn-free.
++  --write-stub builds vx01_bf_rk_c3.prereg.sha256 from the dev trace (refuses if it exists). Needs --plan PATH.
++Run with python -s (c3 item d). Single process. BelowNormal. Audit hook on open + process-creation events in every mode (rules (a), (c), (d)).
+ """
+ import sys
+ sys.dont_write_bytecode = True   # no .pyc writes: a write under ROOT would void a gate run (rule (c))
+@@ -36,12 +36,14 @@
+     sys.path.insert(0, ROOT_STR)
+ import vx01_common as C  # noqa: E402
+ 
+-# ===== BEGIN SHARED BLOCK (byte-identical in vx01_bf_rk_c2.py and vx01_b0_fitter_recovery_c2.py) =====
++# ===== BEGIN SHARED BLOCK (byte-identical in vx01_bf_rk_c3.py and vx01_b0_fitter_recovery_c3.py) =====
++# Shared-block measure (c3, D-33): "through the END line" = the bytes from the start of the BEGIN line above through
++# the end of the END line, without that line's final newline (IV's 29,929-byte measure on code-2).
+ # Plan cited ONLY by sha256 (its title line still reads v4; IV-REVIEW-X01-B-FALLBACK-v5 nit 1).
+-BF_PLAN_SHA256 = "4ed0314a7c8aef4d925dee4fbab3ef8eca3a005352062563e3708a0273e63f3e"
++BF_PLAN_SHA256 = "dfc2e0886700a240c39bccf845a126577751682845456e5864058483b8de1a5f"   # v6 (c3 item i)
+ V51_PLAN_SHA256 = "af4fee6b847caca46afd2456818d510e817cb09699b91034270ac7f4a6a75393"
+ 
+-# Environment pin (plan 4ed0314a section 8 rule (d), "Environment pin"). Values as written in the plan.
++# Environment pin (plan dfc2e088 section 8 rule (d), "Environment pin"). Values as written in the plan.
+ PIN_EXE = r"<home>/AppData/Local/Programs/Python/Python311/python.exe"
+ PIN_EXE_SHA256 = "5f7b89a612c9b8af1d6456cdfcd1dbe5ca630849e79aebced9bee9a6694952ec"
+ PIN_SYS_VERSION = "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]"
+@@ -71,6 +73,13 @@
+ MIN_FREE_GB = 4.0
+ EXIT_VOID = 4
+ EXIT_CAP = 5
++# Code decisions frozen with the code (c3 item e): each stub hashes these files; --write-stub refuses on a mismatch.
++CODE_DECISIONS = OrderedDict([
++    ("vx01_bf_CODE_DECISIONS_1.md", "fa94d24858fddcd7f723a9960a5d1a978dd65f412a0c21bc7832808b5b5a42a5"),
++    ("vx01_bf_CODE_DECISIONS_2.md", "b65b20cb9e9a1970b355ff61a1988fe7e154ddc8960f473c1123456f2584b3db"),
++])
++# User site-packages (c3 item d): runs use python -s; freeze and gate refuse any module loaded from here.
++USER_SITE_PIN = r"<home>/AppData/Roaming/Python/Python311/site-packages"
+ 
+ LOAD_LIST = OrderedDict([
+     ('data/external/voynich-nu-ivtff/RF1b-er.txt', 'eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2'),  # D
+@@ -450,9 +459,59 @@
+     return bad
+ 
+ 
++def user_site_dirs():
++    import site
++    out = {USER_SITE_PIN}
++    try:
++        out.add(site.getusersitepackages())
++    except Exception:
++        pass
++    return sorted(os.path.normcase(os.path.abspath(d)) for d in out if d)
++
++
++def user_site_modules():
++    """(c3 item d) Names of loaded modules whose file is under the user site-packages. Must be empty."""
++    us = user_site_dirs()
++    bad = []
++    for name, m in list(sys.modules.items()):
++        f = getattr(m, "__file__", None)
++        if not f or not os.path.isabs(f):
++            continue
++        af = os.path.normcase(os.path.abspath(f))
++        if any(af == d or af.startswith(d + os.sep) for d in us):
++            bad.append(name)
++    return sorted(bad)
++
++
++def user_site_problems():
++    """(c3 item d) Runs use python -s: [] when sys.flags.no_user_site is set and no module came from the user site."""
++    bad = []
++    if not sys.flags.no_user_site:
++        bad.append("not run with -s (sys.flags.no_user_site = 0)")
++    mods = user_site_modules()
++    if mods:
++        bad.append("modules loaded from the user site: %s" % mods[:10])
++    return bad
++
++
++_SB_BEGIN = "# " + "=" * 5 + " BEGIN SHARED BLOCK"
++_SB_END = "# " + "=" * 5 + " END SHARED BLOCK " + "=" * 5
++
++
++def shared_block_bytes(path):
++    """(c3, D-33) The shared block "through the END line": from the start of the BEGIN line through the end of the
++    END line, without its final newline."""
++    b = Path(path).read_bytes()
++    i = b.index(("\n" + _SB_BEGIN).encode("utf-8")) + 1
++    j = b.index(("\n" + _SB_END).encode("utf-8"), i) + 1 + len(_SB_END)
++    return b[i:j]
++
++
+ def env_log_record(env, where, bad):
+-    """IV add-on: every pin check writes one log line with its PT time and the output hashes."""
++    """IV add-on: every pin check writes one log line with its PT time and the output hashes (c3: plus the user-site
++    facts of item d)."""
+     return dict(event="ENV-PIN-CHECK", where=where, t=C.utc_now(), t_pt=pt_now(),
++                no_user_site=bool(sys.flags.no_user_site), user_site_modules=user_site_modules(),
+                 exe_sha256=env["exe_sha256"], sys_version_sha256=env["sys_version_sha256"], vv_sha256=env["vv_sha256"],
+                 sitecustomize_sha256=env["sitecustomize_sha256"], dists_sha256=env["dists_sha256"],
+                 pywin32_bootstrap_sha256=env["pywin32_bootstrap_sha256"], match=not bad, mismatches=bad)
+@@ -576,6 +635,22 @@
+     print(__doc__)
+     sys.exit(2)
+ 
++
++def pin_check():
++    """--pin-check (c3 item a): runs HERE, above the hook block and the heavy imports, so nothing is spawned (the
++    scipy import chain is never reached). Reads the environment and writes one ENV-PIN-CHECK line to the pin log."""
++    C.set_below_normal()
++    env = env_measure()
++    bad = env_mismatch(env)
++    h = C.append_chained(PIN_LOG, env_log_record(env, "manual --pin-check", bad))
++    print(json.dumps(env, indent=1))
++    print("pin match:", not bad, bad, "user site:", user_site_problems(), "log line", h)
++    return 0 if not bad else 3
++
++
++if MODE == "--pin-check":
++    sys.exit(pin_check())
++
+ # ---------------------------------------------------------------- early hook (before the heavy imports)
+ _stub_kv, _stub_hl = ({}, [])
+ if MODE == "--gate":
+@@ -641,7 +716,7 @@
+ 
+ def render(vals, rk, med, header):
+     lines = list(header)
+-    lines.append("# r_k,q = max - min over ZL3b/RF1b/IT2a of statistic k on real quire q (plan 4ed0314a section 3)")
++    lines.append("# r_k,q = max - min over ZL3b/RF1b/IT2a of statistic k on real quire q (plan dfc2e088 section 3)")
+     lines.append("quire\t" + "\t".join("k%d_%s" % (k, STAT_NAMES[k - 1]) for k in range(1, 7)))
+     for q in FOLDS:
+         lines.append(q + "\t" + "\t".join("NA" if rk[q][k] is None else "%.10g" % rk[q][k] for k in range(1, 7)))
+@@ -671,18 +746,12 @@
+     snap = HOOK.snapshot()
+     return dict(script=NAME, script_sha256=C.sha256_file(SELF), mode=mode, t=C.utc_now(), t_pt=pt_now(),
+                 reads_root=snap["reads_root"], modules_root=mods, writes=snap["writes"],
+-                proc_events=snap["proc_events"], dists=dists, unmapped_modules=unmapped)
++                proc_events=snap["proc_events"], dists=dists, unmapped_modules=unmapped,
++                no_user_site=bool(sys.flags.no_user_site), user_site_modules=user_site_modules())
+ 
+ 
+ def main():
+     C.set_below_normal()
+-    if MODE == "--pin-check":
+-        env = env_measure()
+-        bad = env_mismatch(env)
+-        h = C.append_chained(PIN_LOG, env_log_record(env, "manual --pin-check", bad))
+-        print(json.dumps(env, indent=1))
+-        print("pin match:", not bad, bad, "log line", h)
+-        return 0 if not bad else 3
+     if MODE == "--write-stub":
+         return write_stub()
+     fg = free_gb()
+@@ -695,6 +764,10 @@
+     if gate and bad:
+         C.append_chained(GATE_LOG, env_log_record(env, "gate start (refused)", bad))
+         C.refuse("environment pin mismatch: %s" % ", ".join(bad))
++    usp = user_site_problems()
++    if gate and usp:
++        C.append_chained(GATE_LOG, env_log_record(env, "gate start (refused: user site)", usp))
++        C.refuse("user site (c3 item d): %s" % "; ".join(usp))
+     if gate and (OUT_TABLE.exists() or OUT_TXT.exists()):
+         C.refuse("rk output exists; this script runs once")
+     ctx.start()
+@@ -718,14 +791,14 @@
+     env2 = env_measure()
+     bad2 = env_mismatch(env2, _stub_kv if gate else None)
+     C.append_chained(logp, env_log_record(env2, "end", bad2))
+-    head = ctx.finish(outs, note="env_end_match=%s" % (not bad2))
++    head = ctx.finish(outs, note="env_end_match=%s user_site_end=%s" % (not bad2, user_site_problems()))
+     print("done; outputs:", [str(o) for o in outs], "log head", head)
+     return 0
+ 
+ 
+ def write_stub():
+     """Build the stub text from the latest dev trace of THIS script hash. Refuses if the stub exists.
+-    The decision rules are copied from the plan file given with --plan (its sha256 must be 4ed0314a...)."""
++    The decision rules are copied from the plan file given with --plan (its sha256 must be dfc2e088...)."""
+     if STUB.exists():
+         C.refuse("stub exists")
+     plan = Path(ARGS[ARGS.index("--plan") + 1]) if "--plan" in ARGS else None
+@@ -745,7 +818,11 @@
+     C.append_chained(PIN_LOG, env_log_record(env, "freeze (--write-stub)", bad))
+     if bad:
+         C.refuse("NO freeze: environment pin mismatch: %s" % ", ".join(bad))
+-    out = ["# vx01_bf_rk_c2.prereg.sha256 -- UNVERIFIED until the Independent Verifier signs",
++    for f, h in CODE_DECISIONS.items():
++        if not (ROOT / f).exists() or C.sha256_file(ROOT / f) != h:
++            C.refuse("NO freeze: %s missing or its sha256 is not %s" % (f, h))
++    sb = shared_block_bytes(SELF)
++    out = ["# vx01_bf_rk_c3.prereg.sha256 -- UNVERIFIED until the Independent Verifier signs",
+            "# plan PLAN-X01-B-FALLBACK cited by sha256 only (title reads v4): bf_plan_sha256 below",
+            "plan_sha256=%s" % V51_PLAN_SHA256, "bf_plan_sha256=%s" % BF_PLAN_SHA256,
+            "script_sha256=%s" % me, "common_sha256=%s" % C.sha256_file(C.__file__),
+@@ -758,10 +835,16 @@
+     out.append("env_exe=%s" % env["exe"])
+     out.append("env_sys_version=%s" % env["sys_version"])
+     out.append("env_dists=%s" % json.dumps(env["dists"], separators=(",", ":")))
++    out.append("# shared block measure: through the END line (from the start of the BEGIN line through the end of the "
++               "END line, without its final newline; D-33)")
++    out.append("shared_block_sha256=%s shared_block_bytes=%d" % (C.sha256_bytes(sb), len(sb)))
++    for i, (f, h) in enumerate(CODE_DECISIONS.items(), 1):
++        out.append("code_decisions_%d_sha256=%s" % (i, h))
+     out.append("# decision rules copied from the plan (sections 2 and 3):")
+     out += ["# " + l for l in plan_sections(plan, ("## 2.", "## 3."))]
+     out.append("# files loaded at run time (trace), each against disk:")
+     out += ["%s  %s" % (h, p) for p, h in rows]
++    out += ["%s  %s" % (h, f) for f, h in CODE_DECISIONS.items()]
+     write_new(STUB, "\n".join(out) + "\n")
+     print("stub written", STUB, C.sha256_file(STUB))
+     return 0
+@@ -803,6 +886,10 @@
+             problems.append("unlisted distribution %s" % d)
+     for m in tr["unmapped_modules"]:
+         problems.append("module %s maps to no distribution" % m)
++    if not tr.get("no_user_site", False):
++        problems.append("trace not run with python -s (c3 item d)")
++    if tr.get("user_site_modules", ["(not recorded)"]):
++        problems.append("modules loaded from the user site: %s" % tr.get("user_site_modules", ["(not recorded)"])[:10])
+     foreign = [w for w in tr["writes"] if not os.path.normcase(w).startswith(os.path.normcase(str(RUN_DIR)))
+                and os.path.normcase(w) not in {os.path.normcase(str(x)) for x in (DEV_LOG, GATE_LOG, PIN_LOG)}]
+     if foreign:

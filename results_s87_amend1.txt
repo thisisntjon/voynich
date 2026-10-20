@@ -1,0 +1,177 @@
+S87: which reference text class reproduces the Voynich core-layer profile (pre-registered in the docstring)
+date: Sun Oct 18 06:01:00 PDT 2026 (`date`)
+device: cuda (NVIDIA GeForce RTX 5080); torch 2.11.0.dev20260115+cu128; numpy 2.4.6; python 3.11.9; process priority BelowNormal set=True; single process
+s87_core_layer_genre.py sha256=d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db
+prereg stub s87_core_layer_genre.prereg.sha256 sha256=4bb78d83fad95dace20e807e38c3d295417d1a72ab098b33cd412757bd9fb633  stub_match=True
+  hashed a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  hashed a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  hashed b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  hashed b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  hashed c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  hashed c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  hashed c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  hashed c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  hashed corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  hashed f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  hashed f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  hashed f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  hashed g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  hashed m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  hashed n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  hashed p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  hashed p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  hashed s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  hashed s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  hashed s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  hashed s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  hashed s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  hashed s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  hashed s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  hashed s87_core_layer_genre.py sha256=d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db
+  hashed scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  hashed scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  hashed tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  hashed vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+  hashed data/external/genre-s87/pg8102_forme_of_cury.txt sha256=87d1a2819214526a7410c8b864f39a217e9bf93816a26736e01e8df25447c7eb
+  hashed data/external/genre-s87/pg49513_culpeper_complete_herbal.txt sha256=d9bacb3247d798fcd2a8ce3b7c76222407fc0ac1c8d4242e9e8163508c10e968
+  hashed data/external/genre-s87/pg782_mandeville_travels.txt sha256=486cbfae324668a9229557917f4ec5941f9341f7eb9e2f55a4fd810d077d75f5
+  hashed data/external/genre-s87/twofifteenthcent00austuoft_djvu.txt sha256=754b6b3aee4e5f3ae04d84d50b41d726c43dd26ab83d90b2a48f347293feef42
+  hashed data/external/genre-s87/alphitaamedicob00mowagoog_djvu.txt sha256=474fd50cd2058918f4828fa5c422ec595afe017aea50004c3591365d47786f87
+  hashed data/external/genre-s87/BIUSante_pharma_res012103_djvu.txt sha256=a2276e3dcfd326f5e6b2c299411c98ece792d967cc3d0545d56c63663d013057
+N_TOT 22500 tokens, 15 blocks of 1500; order shuffles 1000; R shuffles 1000; locality permutations 500, bootstrap 2000; seed 20261018
+order band K=100: frozen [+0.012321,+0.092252] re-derived [+0.012321,+0.092252] -> MATCH
+order band K=200: frozen [-0.003465,+0.086474] re-derived [-0.003465,+0.086474] -> MATCH
+
+=== G_linepool fit: target R_within(1) ZL3b cut (200 shuffles) 1.179; grid alpha 0.25 -> 5.323; alpha 0.35 -> 3.927; alpha 0.5 -> 2.868; alpha 0.7 -> 2.115; alpha 1.0 -> 1.692; alpha 1.4 -> 1.370; alpha 2.0 -> 1.238; alpha 3.0 -> 1.093; alpha 5.0 -> 0.986 -> alpha 2.0
+N_match (order) = 4731 held-out tokens (smallest over gating texts and VOY)
+
+=== corpus list (class, gating, tokens after cut, held-out tokens, label) ===
+  VOY_ZL3b                 VOY target      tokens  22500 pages  173 held-out  5850  Voynich ZL3b, real pages/lines, SlotSegmenter cores
+  VOY_RF1b                 VOY target      tokens  22500 pages  175 held-out  5684  Voynich RF1b, real pages/lines, SlotSegmenter cores
+  VOY_IT2a                 VOY target      tokens  22500 pages  174 held-out  5536  Voynich IT2a, real pages/lines, SlotSegmenter cores
+  L_alphita_la             L   gating      tokens  22500 pages  173 held-out  5850  Alphita plant-synonym glossary, Latin, OCR (Mowat 1887)
+  L_dispensarium_la        L   gating      tokens  22500 pages  173 held-out  5850  Dispensarium Nicolai antidotary, Latin, OCR (1582)
+  L_cookery15_enm          L   gating      tokens  22500 pages  173 held-out  5850  Two 15th-c. Cookery-Books recipes, Middle English, OCR
+  L_culpeper_en            L   gating      tokens  22500 pages  173 held-out  5850  Culpeper Complete Herbal entries, English (1653)
+  L_cury_enm               L   descriptive tokens  17157 pages  141 held-out     -  Forme of Cury recipes, Middle English (17157 tokens < N_TOT: UNMATCHED, descriptive)
+  P_cremma_prose_la        P   gating      tokens  22500 pages  139 held-out  4731  CREMMA prose manuscripts, Latin, real manuscript lines
+  P_caesar_la              P   descriptive tokens  20545 pages  155 held-out     -  Caesar, De bello Gallico, Latin prose (20545 tokens < N_TOT: UNMATCHED, descriptive)
+  P_augustine_la           P   gating      tokens  22500 pages  173 held-out  5850  Augustine, Latin prose
+  P_pliny_herbal_la        P   gating      tokens  22500 pages  173 held-out  5850  Pliny NH XX-XXVII, Latin prose on plants
+  P_mandeville_en          P   gating      tokens  22500 pages  173 held-out  5850  Mandeville's Travels, English prose
+  P_alice_en               P   gating      tokens  22500 pages  173 held-out  5850  Alice in Wonderland, English prose
+  V_dante_it               V   gating      tokens  22500 pages  186 held-out  5667  Dante, Italian verse, real verse lines
+  V_nibelungenlied_gmh     V   gating      tokens  22500 pages  156 held-out  5392  Nibelungenlied, MHG verse, real verse lines
+  V_croisade_oc            V   gating      tokens  22500 pages  152 held-out  6435  Canso de la crozada, Occitan verse, real verse lines
+  V_roland_fro             V   gating      tokens  22500 pages  184 held-out  5748  Chanson de Roland, Old French verse, real verse lines
+  G_s57_localmem           G   gating      tokens  22500 pages  138 held-out  4875  s57 local-memory generator (ZL3b fit, seed 1)
+  G_s67_CA                 G   gating      tokens  22500 pages  153 held-out  6104  s67 constrained assembly, ZL3b LOQO folds (seed 1) concatenated
+  G_pagepool               G   gating      tokens  22500 pages  173 held-out  5850  page-pool generator (ZL3b page core pools, 0 free params)
+  G_linepool               G   gating      tokens  22500 pages  173 held-out  5850  line-pool generator (ZL3b page pools; alpha 2.0 fitted to R_within(1))
+
+=== profiles (primary cores) ===
+  VOY_ZL3b: done [3s]
+  VOY_RF1b: done [2s]
+  VOY_IT2a: done [3s]
+  L_alphita_la: done [0s]
+  L_dispensarium_la: done [0s]
+  L_cookery15_enm: done [0s]
+  L_culpeper_en: done [0s]
+  L_cury_enm: done [0s]
+  P_cremma_prose_la: done [0s]
+  P_caesar_la: done [0s]
+  P_augustine_la: done [0s]
+  P_pliny_herbal_la: done [0s]
+  P_mandeville_en: done [0s]
+  P_alice_en: done [0s]
+  V_dante_it: done [0s]
+  V_nibelungenlied_gmh: done [0s]
+  V_croisade_oc: done [0s]
+  V_roland_fro: done [0s]
+  G_s57_localmem: done [0s]
+  G_s67_CA: done [0s]
+  G_pagepool: done [0s]
+  G_linepool: done [0s]
+
+LOCALITY band (rule frozen; computed from VOY): [0.9074, 1.0499]; VOY_ZL3b 0.9774 [0.9499,1.0056]; VOY_RF1b 0.9769 [0.9434,1.0130]; VOY_IT2a 0.9789 [0.9439,1.0150]
+ORDER bands: K100 [+0.0123,+0.0923]  K200 [-0.0035,+0.0865]
+R_VOY (mean of 3): R_within(1) 1.197, R_cross(1) 0.627
+  VOY_ZL3b order 95 % (s80-style, 200 draws x 20): K25 +0.040[+0.032,+0.052]; K50 +0.038[+0.023,+0.058]; K100 +0.034[+0.018,+0.052]; K200 +0.028[+0.009,+0.048]; K400 +0.029[+0.003,+0.049]
+  VOY_RF1b order 95 % (s80-style, 200 draws x 20): K25 +0.035[+0.025,+0.046]; K50 +0.038[+0.024,+0.050]; K100 +0.020[+0.002,+0.033]; K200 +0.009[-0.010,+0.023]; K400 -0.012[-0.034,+0.006]
+  VOY_IT2a order 95 % (s80-style, 200 draws x 20): K25 +0.050[+0.041,+0.061]; K50 +0.039[+0.029,+0.053]; K100 +0.030[+0.017,+0.043]; K200 +0.030[+0.013,+0.040]; K400 +0.025[+0.007,+0.039]
+
+=== per-text profile table (C1 flags: a order, b R_within, c R_cross<R_within, d locality) ===
+  VOY_ZL3b                 tok  22500 ty  1747 | order MM K25 +0.040 K50 +0.038 K100 +0.034(p0.005) K200 +0.028(p0.015) K400 +0.029 | Rw1 1.180(p0.001) Rw2 1.25 Rw3 1.19 Rw5 1.14 Rc1 0.564 | loc 0.977[0.950,1.006] p0.002 typeR 0.942 | C1 YYYY VOYNICH-LIKE | D 0.33 [VOY]
+  VOY_RF1b                 tok  22500 ty  1840 | order MM K25 +0.035 K50 +0.038 K100 +0.020(p0.040) K200 +0.009(p0.252) K400 -0.012 | Rw1 1.193(p0.001) Rw2 1.27 Rw3 1.19 Rw5 1.15 Rc1 0.670 | loc 0.977[0.943,1.013] p0.002 typeR 0.939 | C1 YYYY VOYNICH-LIKE | D 0.50 [VOY]
+  VOY_IT2a                 tok  22500 ty  1712 | order MM K25 +0.050 K50 +0.039 K100 +0.030(p0.004) K200 +0.030(p0.014) K400 +0.025 | Rw1 1.217(p0.001) Rw2 1.24 Rw3 1.19 Rw5 1.17 Rc1 0.646 | loc 0.979[0.944,1.015] p0.002 typeR 0.939 | C1 YYYY VOYNICH-LIKE | D 0.28 [VOY]
+  L_alphita_la             tok  22500 ty  8769 | order MM K25 +0.160 K50 +0.177 K100 +0.231(p0.001) K200 +0.282(p0.001) K400 +0.280 | Rw1 0.077(p1.000) Rw2 1.19 Rw3 1.19 Rw5 1.84 Rc1 0.184 | loc 0.931[0.909,0.949] p0.002 typeR 0.953 | C1 nnnY - | D 6.80 [L]
+  L_dispensarium_la        tok  22500 ty  8442 | order MM K25 +0.038 K50 +0.053 K100 +0.088(p0.001) K200 +0.107(p0.001) K400 +0.134 | Rw1 0.138(p1.000) Rw2 1.26 Rw3 1.19 Rw5 1.37 Rc1 0.210 | loc 0.880[0.861,0.899] p0.002 typeR 0.897 | C1 nnnn - | D 4.95 [L]
+  L_cookery15_enm          tok  22500 ty  2533 | order MM K25 +0.306 K50 +0.509 K100 +0.655(p0.001) K200 +0.751(p0.001) K400 +0.770 | Rw1 0.027(p1.000) Rw2 0.65 Rw3 1.08 Rw5 1.22 Rc1 0.048 | loc 0.958[0.938,0.976] p0.002 typeR 0.871 | C1 nnnY - | D 13.39 [L]
+  L_culpeper_en            tok  22500 ty  2664 | order MM K25 +0.225 K50 +0.345 K100 +0.473(p0.001) K200 +0.564(p0.001) K400 +0.570 | Rw1 0.009(p1.000) Rw2 0.44 Rw3 1.04 Rw5 1.02 Rc1 0.066 | loc 0.981[0.966,0.994] p0.002 typeR 0.949 | C1 nnnY - | D 12.82 [L]
+  L_cury_enm               tok  17157 ty  2078 | order MM K25 +0.400 K50 +0.560 K100 +0.714(p0.001) K200 +0.761(p0.001) K400 +0.742 | Rw1 0.013(p1.000) Rw2 0.64 Rw3 1.20 Rw5 1.04 Rc1 0.055 | loc 0.905[0.861,0.946] p0.002 typeR 0.795 | C1 nnnn - | D 14.61 [L, descriptive]
+  P_cremma_prose_la        tok  22500 ty  7507 | order MM K25 +0.039 K50 +0.061 K100 +0.074(p0.001) K200 +0.099(p0.001) K400 +0.103 | Rw1 0.193(p1.000) Rw2 1.12 Rw3 1.45 Rw5 1.35 Rc1 0.299 | loc 0.792[0.720,0.868] p0.002 typeR 0.810 | C1 nnnn - | D 4.17 [P]
+  P_caesar_la              tok  20545 ty  5687 | order MM K25 +0.028 K50 +0.054 K100 +0.108(p0.001) K200 +0.152(p0.001) K400 +0.155 | Rw1 0.000(p1.000) Rw2 0.54 Rw3 1.31 Rw5 0.84 Rc1 0.000 | loc 0.964[0.952,0.978] p0.002 typeR 0.944 | C1 nnnY - | D 19.23 [P, descriptive]
+  P_augustine_la           tok  22500 ty  6893 | order MM K25 +0.042 K50 +0.099 K100 +0.127(p0.001) K200 +0.148(p0.001) K400 +0.135 | Rw1 0.072(p1.000) Rw2 1.09 Rw3 1.43 Rw5 1.65 Rc1 0.048 | loc 0.920[0.900,0.940] p0.002 typeR 0.923 | C1 nnYY - | D 7.76 [P]
+  P_pliny_herbal_la        tok  22500 ty  6850 | order MM K25 +0.057 K50 +0.060 K100 +0.091(p0.001) K200 +0.132(p0.001) K400 +0.157 | Rw1 0.000(p1.000) Rw2 0.72 Rw3 0.82 Rw5 1.11 Rc1 0.000 | loc 0.958[0.891,1.015] p0.002 typeR 0.938 | C1 nnnY - | D 19.22 [P]
+  P_mandeville_en          tok  22500 ty  2945 | order MM K25 +0.271 K50 +0.405 K100 +0.541(p0.001) K200 +0.632(p0.001) K400 +0.642 | Rw1 0.015(p1.000) Rw2 0.45 Rw3 1.34 Rw5 1.08 Rc1 0.035 | loc 0.928[0.863,0.974] p0.002 typeR 0.843 | C1 nnnY - | D 13.25 [P]
+  P_alice_en               tok  22500 ty  2303 | order MM K25 +0.226 K50 +0.342 K100 +0.500(p0.001) K200 +0.636(p0.001) K400 +0.696 | Rw1 0.146(p1.000) Rw2 0.72 Rw3 1.00 Rw5 1.16 Rc1 0.060 | loc 0.959[0.947,0.973] p0.002 typeR 0.882 | C1 nnYY - | D 10.00 [P]
+  V_dante_it               tok  22500 ty  4891 | order MM K25 +0.173 K50 +0.264 K100 +0.345(p0.001) K200 +0.432(p0.001) K400 +0.481 | Rw1 0.066(p1.000) Rw2 0.72 Rw3 1.50 Rw5 1.14 Rc1 0.000 | loc 0.980[0.964,0.997] p0.002 typeR 0.974 | C1 nnYY - | D 15.03 [V]
+  V_nibelungenlied_gmh     tok  22500 ty  3305 | order MM K25 +0.106 K50 +0.181 K100 +0.241(p0.001) K200 +0.279(p0.001) K400 +0.249 | Rw1 0.049(p1.000) Rw2 0.60 Rw3 0.73 Rw5 1.25 Rc1 0.389 | loc 0.974[0.959,0.989] p0.002 typeR 0.932 | C1 nnnY - | D 7.20 [V]
+  V_croisade_oc            tok  22500 ty  4345 | order MM K25 +0.129 K50 +0.226 K100 +0.362(p0.001) K200 +0.475(p0.001) K400 +0.530 | Rw1 0.027(p1.000) Rw2 0.90 Rw3 1.45 Rw5 1.44 Rc1 0.000 | loc 0.967[0.947,0.987] p0.002 typeR 0.944 | C1 nnYY - | D 15.96 [V]
+  V_roland_fro             tok  22500 ty  3719 | order MM K25 +0.131 K50 +0.233 K100 +0.326(p0.001) K200 +0.429(p0.001) K400 +0.517 | Rw1 0.060(p1.000) Rw2 1.44 Rw3 2.20 Rw5 1.35 Rc1 0.000 | loc 0.967[0.952,0.983] p0.002 typeR 0.922 | C1 nnYY - | D 15.06 [V]
+  G_s57_localmem           tok  22500 ty  1737 | order MM K25 -0.000 K50 -0.008 K100 -0.009(p0.779) K200 -0.010(p0.784) K400 -0.012 | Rw1 1.243(p0.001) Rw2 1.22 Rw3 1.14 Rw5 1.23 Rc1 0.923 | loc 0.978[0.965,0.991] p0.002 typeR 0.968 | C1 nYYY - | D 1.16 [G]
+  G_s67_CA                 tok  22500 ty  1139 | order MM K25 +0.010 K50 +0.013 K100 +0.007(p0.264) K200 +0.006(p0.328) K400 +0.010 | Rw1 1.207(p0.001) Rw2 1.13 Rw3 1.10 Rw5 1.07 Rc1 1.026 | loc 0.982[0.962,1.000] p0.002 typeR 0.968 | C1 nYYY - | D 1.17 [G]
+  G_pagepool               tok  22500 ty  1310 | order MM K25 -0.015 K50 -0.024 K100 -0.024(p0.986) K200 -0.025(p0.965) K400 -0.022 | Rw1 0.972(p0.841) Rw2 1.01 Rw3 0.94 Rw5 1.02 Rc1 0.916 | loc 0.802[0.778,0.825] p0.002 typeR 0.708 | C1 nnYn - | D 1.77 [G]
+  G_linepool               tok  22500 ty   721 | order MM K25 +0.005 K50 -0.000 K100 -0.006(p0.711) K200 -0.004(p0.641) K400 -0.000 | Rw1 1.238(p0.001) Rw2 1.18 Rw3 1.17 Rw5 1.05 Rc1 1.020 | loc 0.881[0.849,0.919] p0.002 typeR 0.798 | C1 nYYn - | D 1.40 [G]
+
+=== secondary: SlotSegmenter stems for natural texts (not in C2) ===
+  L_alphita_la/stem        tok  22500 ty  5925 | order MM K25 +0.141 K50 +0.180 K100 +0.227(p0.001) K200 +0.241(p0.001) K400 +0.263 | Rw1 0.357(p1.000) Rw2 1.10 Rw3 1.09 Rw5 1.58 Rc1 0.292 | loc 0.947[0.932,0.961] p0.002 typeR 0.950 | C1 nnYY - | D 4.00
+  L_dispensarium_la/stem   tok  22500 ty  5037 | order MM K25 +0.034 K50 +0.044 K100 +0.068(p0.001) K200 +0.088(p0.001) K400 +0.104 | Rw1 0.808(p1.000) Rw2 1.06 Rw3 0.98 Rw5 1.03 Rc1 0.929 | loc 0.895[0.878,0.914] p0.002 typeR 0.893 | C1 nnnn - | D 1.33
+  L_cookery15_enm/stem     tok  22500 ty  1670 | order MM K25 +0.296 K50 +0.431 K100 +0.536(p0.001) K200 +0.591(p0.001) K400 +0.587 | Rw1 0.389(p1.000) Rw2 0.75 Rw3 1.01 Rw5 1.15 Rc1 0.392 | loc 0.963[0.941,0.983] p0.002 typeR 0.872 | C1 nnnY - | D 8.07
+  L_culpeper_en/stem       tok  22500 ty  1858 | order MM K25 +0.174 K50 +0.312 K100 +0.393(p0.001) K200 +0.416(p0.001) K400 +0.433 | Rw1 0.446(p1.000) Rw2 0.60 Rw3 0.97 Rw5 1.09 Rc1 0.543 | loc 0.981[0.966,0.994] p0.002 typeR 0.946 | C1 nnnY - | D 5.69
+  L_cury_enm/stem          tok  17157 ty  1526 | order MM K25 +0.368 K50 +0.456 K100 +0.565(p0.001) K200 +0.590(p0.001) K400 +0.568 | Rw1 0.369(p1.000) Rw2 0.67 Rw3 1.16 Rw5 1.05 Rc1 0.506 | loc 0.928[0.893,0.961] p0.002 typeR 0.810 | C1 nnnY - | D 8.27
+  P_cremma_prose_la/stem   tok  22500 ty  3855 | order MM K25 +0.044 K50 +0.054 K100 +0.057(p0.001) K200 +0.070(p0.001) K400 +0.092 | Rw1 0.685(p1.000) Rw2 1.03 Rw3 1.21 Rw5 1.19 Rc1 0.780 | loc 0.858[0.804,0.913] p0.002 typeR 0.819 | C1 Ynnn - | D 1.45
+  P_caesar_la/stem         tok  20545 ty  3585 | order MM K25 +0.056 K50 +0.101 K100 +0.127(p0.001) K200 +0.158(p0.001) K400 +0.161 | Rw1 0.477(p1.000) Rw2 0.60 Rw3 1.05 Rw5 1.11 Rc1 0.583 | loc 0.973[0.960,0.985] p0.002 typeR 0.937 | C1 nnnY - | D 2.34
+  P_augustine_la/stem      tok  22500 ty  4498 | order MM K25 +0.065 K50 +0.087 K100 +0.108(p0.001) K200 +0.103(p0.001) K400 +0.120 | Rw1 0.614(p1.000) Rw2 1.13 Rw3 1.27 Rw5 1.30 Rc1 0.719 | loc 0.931[0.916,0.948] p0.002 typeR 0.912 | C1 nnnY - | D 1.65
+  P_pliny_herbal_la/stem   tok  22500 ty  4114 | order MM K25 +0.038 K50 +0.047 K100 +0.068(p0.001) K200 +0.092(p0.001) K400 +0.080 | Rw1 0.408(p1.000) Rw2 0.84 Rw3 0.98 Rw5 1.09 Rc1 0.400 | loc 0.967[0.917,1.010] p0.002 typeR 0.926 | C1 nnYY - | D 2.40
+  P_mandeville_en/stem     tok  22500 ty  2286 | order MM K25 +0.248 K50 +0.358 K100 +0.427(p0.001) K200 +0.464(p0.001) K400 +0.453 | Rw1 0.205(p1.000) Rw2 0.56 Rw3 1.34 Rw5 1.05 Rc1 0.215 | loc 0.939[0.877,0.987] p0.002 typeR 0.848 | C1 nnnY - | D 7.24
+  P_alice_en/stem          tok  22500 ty  1499 | order MM K25 +0.210 K50 +0.305 K100 +0.401(p0.001) K200 +0.461(p0.001) K400 +0.455 | Rw1 0.590(p1.000) Rw2 0.90 Rw3 0.99 Rw5 1.06 Rc1 0.712 | loc 0.966[0.952,0.980] p0.002 typeR 0.882 | C1 nnnY - | D 5.89
+  V_dante_it/stem          tok  22500 ty  2585 | order MM K25 +0.092 K50 +0.144 K100 +0.157(p0.001) K200 +0.164(p0.001) K400 +0.120 | Rw1 0.704(p1.000) Rw2 0.96 Rw3 1.16 Rw5 1.00 Rc1 0.249 | loc 0.977[0.955,0.997] p0.002 typeR 0.964 | C1 nnYY - | D 2.72
+  V_nibelungenlied_gmh/stem tok  22500 ty  1831 | order MM K25 +0.127 K50 +0.169 K100 +0.213(p0.001) K200 +0.242(p0.001) K400 +0.237 | Rw1 0.669(p1.000) Rw2 0.80 Rw3 0.80 Rw5 1.09 Rc1 0.787 | loc 0.977[0.957,0.994] p0.002 typeR 0.928 | C1 nnnY - | D 2.96
+  V_croisade_oc/stem       tok  22500 ty  2231 | order MM K25 +0.132 K50 +0.158 K100 +0.200(p0.001) K200 +0.209(p0.001) K400 +0.167 | Rw1 0.740(p1.000) Rw2 1.03 Rw3 1.06 Rw5 1.18 Rc1 0.292 | loc 0.972[0.950,0.995] p0.002 typeR 0.939 | C1 nnYY - | D 2.97
+  V_roland_fro/stem        tok  22500 ty  1939 | order MM K25 +0.106 K50 +0.163 K100 +0.196(p0.001) K200 +0.208(p0.001) K400 +0.178 | Rw1 0.972(p0.792) Rw2 1.01 Rw3 1.21 Rw5 1.02 Rc1 0.272 | loc 0.975[0.955,0.994] p0.002 typeR 0.920 | C1 nnYY - | D 2.88
+
+=== validity (not gating) ===
+  V1 VOY_ZL3b self-check C1: PASS {'a_order': True, 'b_Rwithin': True, 'c_Rcross<Rwithin': True, 'd_locality': True}
+  V1 VOY_RF1b self-check C1: PASS {'a_order': True, 'b_Rwithin': True, 'c_Rcross<Rwithin': True, 'd_locality': True}
+  V1 VOY_IT2a self-check C1: PASS {'a_order': True, 'b_Rwithin': True, 'c_Rcross<Rwithin': True, 'd_locality': True}
+  V2 ZL3b s80 setting: K100 +0.0442 (s80 +0.0452) K200 +0.0357 (s80 +0.0352) -> PASS
+  V3 GPU MI == S80.mi_batch: PASS
+  V2 RF1b s80 setting: K100 +0.0497 (s80 +0.0496) K200 +0.0439 (s80 +0.0435) -> PASS
+  V2 IT2a s80 setting: K100 +0.0577 (s80 +0.0583) K200 +0.0530 (s80 +0.0522) -> PASS
+
+=== C1 / C2 ===
+  C1 L_alphita_la             L  no  fails: a_order, b_Rwithin, c_Rcross<Rwithin
+  C1 L_dispensarium_la        L  no  fails: a_order, b_Rwithin, c_Rcross<Rwithin, d_locality
+  C1 L_cookery15_enm          L  no  fails: a_order, b_Rwithin, c_Rcross<Rwithin
+  C1 L_culpeper_en            L  no  fails: a_order, b_Rwithin, c_Rcross<Rwithin
+  C1 P_cremma_prose_la        P  no  fails: a_order, b_Rwithin, c_Rcross<Rwithin, d_locality
+  C1 P_augustine_la           P  no  fails: a_order, b_Rwithin
+  C1 P_pliny_herbal_la        P  no  fails: a_order, b_Rwithin, c_Rcross<Rwithin
+  C1 P_mandeville_en          P  no  fails: a_order, b_Rwithin, c_Rcross<Rwithin
+  C1 P_alice_en               P  no  fails: a_order, b_Rwithin
+  C1 V_dante_it               V  no  fails: a_order, b_Rwithin
+  C1 V_nibelungenlied_gmh     V  no  fails: a_order, b_Rwithin, c_Rcross<Rwithin
+  C1 V_croisade_oc            V  no  fails: a_order, b_Rwithin
+  C1 V_roland_fro             V  no  fails: a_order, b_Rwithin
+  C1 G_s57_localmem           G  no  fails: a_order
+  C1 G_s67_CA                 G  no  fails: a_order
+  C1 G_pagepool               G  no  fails: a_order, b_Rwithin, d_locality
+  C1 G_linepool               G  no  fails: a_order, d_locality
+  C2 Voynich-like per class: L 0/4; P 0/5; V 0/4; G 0/4
+  class minimum D: L 4.95 (L_dispensarium_la); P 4.17 (P_cremma_prose_la); V 7.20 (V_nibelungenlied_gmh); G 1.16 (G_s57_localmem)
+
+VERDICT: no reference class reproduces the core layer; closest class G (text G_s57_localmem, D 1.16), failing component(s): a_order
+
+sidecars: runs/s87/profiles.csv, runs/s87/calls.json
+runtime 19 s; finished Sun Oct 18 06:01:19 PDT 2026 (`date`)

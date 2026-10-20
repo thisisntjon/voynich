@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:05:38.2005331Z",
+ "response": "{\n  \"PT\": \"PLANT\",\n  \"P_plants\": \"3+\",\n  \"P_root\": \"TUBER\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"1-4\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"MULTI\",\n  \"J_shape\": \"NONE\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"6-15\",\n  \"J_fragtype\": \"MIXED\",\n  \"C_centre\": \"EMPTY\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"20+\",\n  \"C_rings\": \"4+\",\n  \"C_diagrams\": \"4+\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"NA\",\n  \"B_figures\": \"1-5\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Illustrations of plants with roots and leaves, no containers or circular diagrams.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2655583700,
+ "load_duration": 157633200,
+ "prompt_eval_count": 3225,
+ "prompt_eval_duration": 762352000,
+ "eval_count": 219,
+ "eval_duration": 1610828000,
+ "stem": "178_101v_part"
+}

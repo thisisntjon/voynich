@@ -1,0 +1,50 @@
+# s83 pre-registration stub, frozen Sun Oct 18 04:20:16 PDT 2026 (clock read with date) after fixture pass 4 PASS (runs/s83/fixture.txt)
+# Model: HLT homophonic letter/syllable/chunk-in-core cipher + per-line sticky affix table (core-first back-off), 24 configs
+#   plaintext {latin CREMMA, italian dante} x unit {letter, syllable, chunk} x p {0.5, 0.9} x cadence {off, on};
+#   per config fitted on training quires: r {0,0.25,0.5}, a {0.75,1.0}, g {0.75,1.25,2.0} (cadence on).
+# SELECTION: on each fold SEL = config with the smallest TRAINING fit loss (R(d), types, Moran, pm1, pm3, K100 core order);
+#   no held-out quantity enters fitting or selection; the 24 fixed configs are descriptive (multiplicity).
+# C1 (primary, s67/s71 rule): SEL PREDICTS held-out quires iff >= 5/6 of P1 P2 P3 P4 P5 P7 on >= 8/15 folds on ZL3b, RF1b AND IT2a.
+# C2: matched-K (s80 M-freq) core order of SEL within Voynich's band (min..max of training quires) with agreeing permutation-p
+#     decision (p<0.05, 200 exact within-line permutations, L-171) at K=50,100,200 on >= 8/15 folds on each transliteration.
+# C3: R(1) > 1 and all 7 s69 calls equal the real held-out quire's on >= 8/15 folds on each transliteration.
+# READINGS: C1 true -> 'a plaintext-carrying cipher predicts the manuscript out of sample: candidate for a solver run';
+#   C1 false, C2 and C3 true -> 'matches the core and slot layers, misses (named predictions)';
+#   otherwise -> 'this construction does not reproduce the manuscript' with the failing components named.
+# Verify: grep -v "^#" s83_homophonic_line_table_loqo.prereg.sha256 | tr -d '\r' | sha256sum -c -
+0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2 *a1_profile.py
+426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3 *a2_position.py
+5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a *b4_selfcite_sim.py
+0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007 *b5_nmf_topics.py
+9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57 *c1_quire_null.py
+f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a *c2_section_generator.py
+30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb *c3_edge_coupling.py
+46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b *c4_naibbe_lines.py
+2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518 *corpora.py
+5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76 *f1_residual_order.py
+440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd *f2_syllable_control.py
+e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca *f3_flow_choice.py
+4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7 *g1_edge_joint.py
+0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b *m1_coordinates.py
+598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299 *m3_bakeoff_reconcile.py
+a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1 *n1_habit_table.py
+3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea *p1_bifolio_null.py
+5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39 *p4d1_core_order.py
+5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02 *s29_q1_label_controls.py
+406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625 *s34_morphology_syntax_geography.py
+56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec *s55_code_vs_generator.py
+1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7 *s56_core_repetition_lag.py
+4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155 *s57_local_memory_model.py
+6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3 *s64_naibbe_taxonomy.py
+8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354 *s67_constrained_assembly_loqo.py
+785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5 *s69_prefix_stream_memory.py
+9b4f024792c778ae300fd14d7d1e85f03243d50964b1f7f61ba09f1553c11a18 *s71_weakened_grille_and_sticky_naibbe_loqo.py
+43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29 *s76_segmenter_independence.py
+196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b *s80_a14_size_matched.py
+771ad770d5b9c4ec4413ea020fe0c42facf806dbeab141ded1100966c1b0c675 *s83_homophonic_line_table_loqo.py
+4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f *scoreboard/__init__.py
+a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed *scoreboard/metrics_new.py
+8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65 *tools/boxes.py
+0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1 *vparse.py
+# FAILED Sun Oct 18 04:26:45 PDT 2026: real run 1 (started Sun Oct 18 04:20:48 PDT 2026) died after ~2.5 min, exit 127, no Python traceback from the main process (workers then BrokenPipe); no fold had finished, no result seen; cause not identified.
+# AMENDMENT OK Sun Oct 18 04:26:45 PDT 2026: re-run of the identical frozen files (hash lines unchanged); interpreter flag -X faulthandler added only to report a native crash.

@@ -1,0 +1,63 @@
+results_r1.txt -- R1 line-initial profile (U1)
+run at (clock): 2026-10-17T22:29:49-07:00
+script r1.py sha256: b0fb86ea4f7340cfd4ca782bb05168a7f3e237b54be92308afcfd2a4af574804
+prereg stub      : b0fb86ea4f7340cfd4ca782bb05168a7f3e237b54be92308afcfd2a4af574804
+stub match       : YES
+prep.py sha256   : 288930c36a3329e4d4ae759d9aa0bf9656453729f58a88c7a42b37b6a6fe6465
+corpora.json sha256: b492cab1d2c7ba81312f2b6ee49f9749e3b0c328596d9f227ba4ed4379c9758a
+
+Full-corpus results (lines with >= 3 words; null = 30 within-line shuffles)
+corpus                             genre      lines   words  JSD_obs JSD_null null_sd   EXCESS
+VOY_IT                                         4033   34349   0.1750   0.0019  0.0005  +0.1731
+VOY_IT_A                                       1516   11058   0.1354   0.0031  0.0009  +0.1323
+VOY_IT_ALLLOCI                                 4192   36695   0.1682   0.0018  0.0004  +0.1663
+VOY_IT_ALLLOCI_A                               1518   11064   0.1353   0.0030  0.0008  +0.1323
+VOY_IT_ALLLOCI_B                               2444   22975   0.2218   0.0018  0.0003  +0.2200
+VOY_IT_B                                       2437   22781   0.2230   0.0019  0.0005  +0.2212
+VOY_RF                                         4037   34500   0.1873   0.0027  0.0006  +0.1847
+VOY_RF_A                                       1510   10993   0.1500   0.0051  0.0012  +0.1449
+VOY_RF_ALLLOCI                                 4198   37125   0.1816   0.0030  0.0005  +0.1785
+VOY_RF_ALLLOCI_A                               1512   10999   0.1501   0.0051  0.0008  +0.1450
+VOY_RF_ALLLOCI_B                               2466   23541   0.2322   0.0026  0.0006  +0.2296
+VOY_RF_B                                       2447   22994   0.2341   0.0022  0.0005  +0.2319
+VOY_ZL                                         4045   34931   0.1775   0.0028  0.0006  +0.1748
+VOY_ZL_A                                       1515   11259   0.1426   0.0058  0.0010  +0.1369
+VOY_ZL_ALLLOCI                                 4216   37649   0.1713   0.0032  0.0004  +0.1681
+VOY_ZL_ALLLOCI_A                               1518   11268   0.1423   0.0051  0.0010  +0.1372
+VOY_ZL_ALLLOCI_B                               2469   23687   0.2208   0.0023  0.0007  +0.2185
+VOY_ZL_B                                       2449   23145   0.2227   0.0023  0.0006  +0.2205
+VOY_ZL_NOCOMMA                                 4026   32432   0.1782   0.0028  0.0006  +0.1754
+VOY_ZL_NOCOMMA_A                               1503   10427   0.1424   0.0055  0.0011  +0.1369
+VOY_ZL_NOCOMMA_B                               2443   21500   0.2238   0.0022  0.0005  +0.2216
+LAT15_BGO-511                      formulaic     39     140   0.1867   0.1221  0.0362  +0.0645
+LAT15_Latin8236                    verse        204    1400   0.0739   0.0238  0.0070  +0.0502
+LAT15_LaurentianusPluteus39.34     verse        116     752   0.1064   0.0405  0.0147  +0.0659
+LAT15_LaurentianusPluteus53.08     prose        216    2941   0.0308   0.0260  0.0072  +0.0048
+LAT15_LaurentianusPluteus53.09     prose        125    1266   0.0533   0.0361  0.0112  +0.0172
+LAT15_PalLat373                    prose        427    2177   0.0246   0.0172  0.0040  +0.0074
+LAT15_SBB_PK_Hdschr25              formulaic    212     903   0.0312   0.0303  0.0069  +0.0009
+LAT15_PROSE                        pool         768    6384   0.0166   0.0115  0.0029  +0.0050
+LAT15_ALL                          pool        1339    9579   0.0132   0.0067  0.0015  +0.0065
+DANTE                                         14233   97197   0.0302   0.0004  0.0001  +0.0299
+
+Matched size: 773 random Voynich lines (>=3 words), 200 draws, each with its own 30-shuffle null
+corpus           median     p2.5    p97.5   n_elig
+VOY_ZL          +0.1746  +0.1551  +0.1975     4045
+VOY_IT          +0.1732  +0.1552  +0.1951     4033
+VOY_RF          +0.1835  +0.1615  +0.2045     4037
+
+PASS RULE: VOY_ZL matched-size 2.5% bound (+0.1551) > max prose-pool excess (+0.0172, LAT15_LaurentianusPluteus53.09)
+R1 CALL: PASS
+  robustness VOY_IT: 2.5% bound +0.1552 > +0.0172 ? yes
+  robustness VOY_RF: 2.5% bound +0.1615 > +0.0172 ? yes
+
+Descriptive checks of the sub-predictions (do not change the call):
+  Voynich (ZL) full excess +0.1748 vs predicted ~+0.17
+  pooled prose excess +0.0050 vs predicted ~+0.01
+  prose MS LAT15_LaurentianusPluteus53.08 excess +0.0048 (prediction: <= +0.05) -> ok
+  prose MS LAT15_LaurentianusPluteus53.09 excess +0.0172 (prediction: <= +0.05) -> ok
+  prose MS LAT15_PalLat373 excess +0.0074 (prediction: <= +0.05) -> ok
+  formulaic MS LAT15_BGO-511 (39 lines) excess +0.0645 (prediction: can reach +0.10..+0.14)
+  verse MS LAT15_Latin8236 (204 lines) excess +0.0502 (prediction: can reach +0.10..+0.14)
+  verse MS LAT15_LaurentianusPluteus39.34 (116 lines) excess +0.0659 (prediction: can reach +0.10..+0.14)
+  formulaic MS LAT15_SBB_PK_Hdschr25 (212 lines) excess +0.0009 (prediction: can reach +0.10..+0.14)

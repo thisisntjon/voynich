@@ -1,0 +1,5 @@
+r13 log
+fixture run 1 15:48:56 rev0 NOT OK; rev1 (oracle); run 2 15:50:02 NOT OK; rev2 (true lexicon in A oracle); run 15:50:55 crashed (pickling) -> same design via fit_lines; run 3 15:51:34 OK
+FREEZE at (clock): 2026-10-18 15:52:31 PDT r13.py d3c91e27791781b3d047ca56a926ae6862a0b9b3c37fd38cc89b1bc0215b3d94
+real run start: 2026-10-18 15:52:31 PDT
+real run end: 2026-10-18 15:55:08 PDT exit=0

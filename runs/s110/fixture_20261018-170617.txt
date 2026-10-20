@@ -1,0 +1,73 @@
+S110 FIXTURE (synthetic only; reads no Voynich data)
+date: Sun Oct 18 17:06:17 PDT 2026 (`date`)
+s110_g2_combinatory_grid.py sha256=3e7c21a069fe0b36ba7a7419fb0cf28edd20278153e151e8948ed4d681464d85; s104 sha256=da6c33be8f4143bd0f681bc8da211031331cdc6f90cf786185362a3254e93e70 (stub da6c33be8f4143bd0f681bc8da211031331cdc6f90cf786185362a3254e93e70) -> True
+figure: 84 columns x 20 cells = 1680 rows; symbol ranks tbcdefghik; first column bcdt bctb bctc bctd bdtb bdtc bdtd btbc btbd btcd cdtb cdtc cdtd ctbc ctbd ctcd dtbc dtbd dtcd tbcd
+layout: 15 quires, 150 pages, 2700 lines, 21740 tokens
+FX2 known-map decoding on the whole planted G2a text: 0.9293
+  [fixture fits] free RAM 6.3 GB (need >= 4.0); 30 jobs on 2 workers
+  fit seconds: median 66.3, max 77.6
+  target FX110/FX1_planted_G2b/target       tok  21740 ty   463 core% 100.0 | o100 +0.009(p0.200) o200 -0.009 | Rw1 1.084(p0.048) Rc1 1.052 | loc 1.000[1.000,1.000] | C1 nYYY - [order n=4398<4731]
+  target FX110/FX2_planted_G2a/target       tok  21740 ty    37 core% 100.0 | o100 +1.310(p0.001) o200 +1.310 | Rw1 5.008(p0.001) Rc1 0.878 | loc 1.000[1.000,1.000] | C1 nYYY - [order n=4398<4731]
+  target FX110/FX3_prose_G2b/target         tok  21740 ty  4386 core% 100.0 | o100 +0.089(p0.001) o200 +0.101 | Rw1 0.620(p1.000) Rc1 0.740 | loc 0.931[0.917,0.947] | C1 nnnY - [order n=4398<4731]
+  [fixture battery] free RAM 4.6 GB (need >= 4.0); 135 jobs on 2 workers
+  [REVISION 1] oracle envelope (mean +- 3 SD over the 15 oracle replicates) for o100, o200, Rw1, Rc1, loc: [-0.0318, 0.0363], [-0.0450, 0.0392], [0.8507, 1.1685], [0.4634, 1.3702], [0.9994, 1.0003]
+  oracle folds (envelope flags | battery | holds): A:YYYYY/3 B:YYYYY/3 C:YYYYY/4* D:YYYYY/4* E:YYYYY/5* F:YYYYY/4* G:YYYYY/5* H:YYYYY/4* I:YYYYY/4* J:YYYYY/4* K:YYYYY/5* L:YYYYY/5* M:YYYYY/4* N:YYYYY/4* O:YYYYY/4* -> oracle holds 13/15, battery >= 4/6 on 13/15
+
+  FX1_planted_G2b: per fold Q | sig flags | battery | replicate loc in band | fitted phi, m | drift scale pre/suf | kappa, tau | extra | RECOVERED
+   A | YYYYn | 3 | False | 0.40, 25 | 5.0/3.3 | 0.30, 2.0 | prefix TV 0.055 (n 10) | False
+   B | YYYYn | 3 | True | 0.60, 200 | 3.3/3.3 | 0.20, 2.0 | prefix TV 0.062 (n 10) | False
+   C | YYYYY | 3 | True | 0.40, 50 | 2.0/3.3 | 0.20, 2.0 | prefix TV 0.060 (n 10) | False
+   D | YYYYY | 3 | True | 0.60, 200 | 3.3/2.0 | 0.20, 2.0 | prefix TV 0.060 (n 10) | False
+   E | YYYYY | 3 | True | 0.40, 100 | 3.3/3.3 | 0.40, 2.0 | prefix TV 0.065 (n 10) | False
+   F | YYYYY | 3 | True | 0.60, 200 | 2.0/3.3 | 0.20, 2.0 | prefix TV 0.056 (n 10) | False
+   G | YYnYY | 4 | True | 0.60, 200 | 3.3/3.3 | 0.30, 2.0 | prefix TV 0.054 (n 10) | False
+   H | YYYYn | 4 | False | 0.40, 100 | 5.0/3.3 | 0.20, 2.0 | prefix TV 0.063 (n 10) | False
+   I | YYYYY | 5 | True | 0.40, 50 | 3.3/2.0 | 0.30, 2.0 | prefix TV 0.066 (n 10) | True
+   J | YYYYY | 5 | True | 0.40, 25 | 3.3/2.0 | 0.20, 2.0 | prefix TV 0.056 (n 10) | True
+   K | YYYYY | 3 | True | 0.60, 200 | 3.3/2.0 | 0.20, 2.0 | prefix TV 0.058 (n 10) | False
+   L | YYnYn | 5 | False | 0.60, 200 | 2.0/3.3 | 0.20, 2.0 | prefix TV 0.067 (n 10) | False
+   M | YYYYY | 3 | True | 0.60, 200 | 2.0/3.3 | 0.20, 2.0 | prefix TV 0.061 (n 10) | False
+   N | YYYYY | 5 | True | 0.60, 200 | 3.3/2.0 | 0.20, 2.0 | prefix TV 0.066 (n 10) | True
+   O | YYYYY | 2 | True | 0.40, 25 | 20.0/10.0 | 0.20, 2.0 | prefix TV 0.058 (n 10) | False
+
+  FX2_planted_G2a: per fold Q | sig flags | battery | replicate loc in band | fitted phi, m | drift scale pre/suf | kappa, tau | extra | RECOVERED
+   A | YYYY | 4 | True | nan, 0 | nan/nan | nan, nan | decode 0.928 prof True | True
+   B | YYYY | 2 | True | nan, 0 | nan/nan | nan, nan | decode 0.872 prof True | True
+   C | nYYY | 4 | True | nan, 0 | nan/nan | nan, nan | decode 0.939 prof False | False
+   D | nYYY | 3 | True | nan, 0 | nan/nan | nan, nan | decode 0.956 prof False | False
+   E | YYYY | 3 | True | nan, 0 | nan/nan | nan, nan | decode 0.928 prof True | True
+   F | nYYY | 2 | True | nan, 0 | nan/nan | nan, nan | decode 0.972 prof False | False
+   G | YYYY | 3 | True | nan, 0 | nan/nan | nan, nan | decode 0.906 prof True | True
+   H | nYYY | 3 | True | nan, 0 | nan/nan | nan, nan | decode 0.928 prof False | False
+   I | YYYY | 2 | True | nan, 0 | nan/nan | nan, nan | decode 0.906 prof True | True
+   J | YYYY | 2 | True | nan, 0 | nan/nan | nan, nan | decode 0.956 prof True | True
+   K | YYYY | 3 | True | nan, 0 | nan/nan | nan, nan | decode 0.922 prof True | True
+   L | nYYY | 4 | True | nan, 0 | nan/nan | nan, nan | decode 0.928 prof False | False
+   M | YYYY | 3 | True | nan, 0 | nan/nan | nan, nan | decode 0.917 prof True | True
+   N | YYYY | 3 | True | nan, 0 | nan/nan | nan, nan | decode 0.933 prof True | True
+   O | nYYY | 3 | True | nan, 0 | nan/nan | nan, nan | decode 0.950 prof False | False
+
+  FX3_prose_G2b: per fold Q | sig flags | battery | replicate loc in band | fitted phi, m | drift scale pre/suf | kappa, tau | extra | RECOVERED
+   A | nnnY | 3 | False | 0.15, 25 | 3.3/2.0 | 0.00, 1.0 |  | False
+   B | nnYY | 2 | False | 0.20, 50 | 2.0/2.0 | 0.00, 1.0 |  | False
+   C | nnnY | 3 | False | 0.40, 400 | 3.3/2.0 | 0.00, 1.0 |  | False
+   D | nnnY | 3 | False | 0.20, 50 | 3.3/2.0 | 0.00, 1.0 |  | False
+   E | nnnY | 4 | False | 0.20, 25 | 3.3/2.0 | 0.00, 1.0 |  | False
+   F | nnnY | 3 | False | 0.20, 25 | 3.3/2.0 | 0.00, 1.0 |  | False
+   G | nnnY | 3 | True | 0.20, 25 | 3.3/2.0 | 0.00, 1.0 |  | False
+   H | nnnY | 3 | False | 0.40, 400 | 5.0/2.0 | 0.00, 1.0 |  | False
+   I | nnYY | 4 | False | 0.40, 400 | 2.0/1.4 | 0.00, 1.0 |  | False
+   J | nnYY | 3 | False | 0.20, 50 | 2.0/2.0 | 0.00, 1.0 |  | False
+   K | nnYY | 3 | True | 0.20, 25 | 3.3/2.0 | 0.00, 1.0 |  | False
+   L | nnYY | 3 | True | 0.20, 25 | 2.0/2.0 | 0.00, 1.0 |  | False
+   M | nnYY | 3 | False | 0.20, 25 | 3.3/1.4 | 0.00, 1.0 |  | False
+   N | nnnY | 4 | True | 0.20, 25 | 3.3/2.0 | 0.00, 1.0 |  | False
+   O | nnnY | 4 | True | 0.20, 25 | 2.0/2.0 | 0.00, 1.0 |  | False
+
+FX1 planted G2b recovered on 3/15 folds (need >= 10); median drift scale prefix 3.33 suffix 3.33 (planted 5.0; band (2.5, 10.0)); median prefix TV 0.060 (<= 0.15); oracle battery power 13/15 (need >= 10) -> FX1 = False
+FX2 planted G2a: decoding >= 0.80 on 15/15 folds; fold rule on 9/15 (need >= 10 each) -> FX2 = False
+FX3 prose: G2b fold rule (recovered) on 0/15 (profile-only 0/15; need < 10); G2a known-map decoding 0.000 (< 0.80) -> FX3 = True
+FX4 battery fix on a control with an empty block: FXREF: folds >=4/6  1/15 (NOT ASSESSABLE 1) fails | per fold 2 1 1 2 4 1 1 0 2 0 1 1 0 1 NA -> FX4 = True
+
+FIXTURE_PASS = False
+runtime 1215 s; finished Sun Oct 18 17:26:32 PDT 2026 (`date`)

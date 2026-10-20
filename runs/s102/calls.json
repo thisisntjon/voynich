@@ -1,0 +1,660 @@
+{
+ "loc_band": [
+  0.9073818633685861,
+  1.049928019378369
+ ],
+ "order_band": {
+  "100": [
+   0.012321,
+   0.092252
+  ],
+  "200": [
+   -0.003465,
+   0.086474
+  ]
+ },
+ "h2_band": [
+  2.0234471809076253,
+  2.2335893334248453
+ ],
+ "voy_h2": {
+  "ZL3b": 2.1234471809076254,
+  "RF1b": 2.1335893334248452,
+  "IT2a": 2.1272240364872856
+ },
+ "voy_rhythm": {
+  "ZL3b": {
+   "I": 0.1310245181903617,
+   "whole": 0.11303624843518696,
+   "tokens": 22500,
+   "lines": 2888,
+   "lines_ge2": 2861,
+   "pairs": 19612,
+   "draws": 999,
+   "median": 0.06066221558593687,
+   "p": 0.001,
+   "q99": 0.07336243426908601,
+   "excess": 0.07036230260442483,
+   "holds": true
+  },
+  "RF1b": {
+   "I": 0.12992314549440123,
+   "whole": 0.11640607237429304,
+   "tokens": 22500,
+   "lines": 2922,
+   "lines_ge2": 2896,
+   "pairs": 19578,
+   "draws": 999,
+   "median": 0.06239521377632171,
+   "p": 0.001,
+   "q99": 0.07635000210601961,
+   "excess": 0.06752793171807953,
+   "holds": true
+  },
+  "IT2a": {
+   "I": 0.12747059271107986,
+   "whole": 0.11117033429954694,
+   "tokens": 22500,
+   "lines": 2914,
+   "lines_ge2": 2888,
+   "pairs": 19586,
+   "draws": 999,
+   "median": 0.05847605697709487,
+   "p": 0.001,
+   "q99": 0.07228953704097574,
+   "excess": 0.06899453573398498,
+   "holds": true
+  }
+ },
+ "G1": true,
+ "recovery": {
+  "P1_la_E1": 1.0,
+  "P1_la_E2": 1.0,
+  "P1_la_E3": 1.0,
+  "P1_la_E4": 1.0,
+  "P2_it_E1": 1.0,
+  "P2_it_E2": 1.0,
+  "P2_it_E3": 1.0,
+  "P2_it_E4": 1.0,
+  "P3_de_E1": 1.0,
+  "P3_de_E2": 1.0,
+  "P3_de_E3": 1.0,
+  "P3_de_E4": 1.0
+ },
+ "solver": {
+  "P1_la_E1": 0.174471232587218,
+  "P1_la_E2": 0.6474319443220862,
+  "P2_it_E1": 0.9446982794105541,
+  "P2_it_E2": 0.8417828214300399,
+  "P3_de_E1": 0.9505456690590895,
+  "P3_de_E2": 0.9491715093450604
+ },
+ "PC1": true,
+ "PC1_seeds": [
+  false,
+  true,
+  true
+ ],
+ "PC2": true,
+ "NC": true,
+ "GATE": true,
+ "CALL_S102_PERIOD_CIPHER": false,
+ "desc": {
+  "REF_P1_la_plain": {
+   "role": "descriptive",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnn",
+    "slot": "YnYn",
+    "affix2": "YnYn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.026245557857058097,
+    "median": 0.0320169359063007,
+    "excess": -0.05826249376335879,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 3.4402272372011646,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": null,
+   "solver_accB": null
+  },
+  "P1_la_E1": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "YnYn",
+    "slot": "YnYn",
+    "affix2": "YnYn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.024315681814376624,
+    "median": 0.03161942778982859,
+    "excess": -0.05593510960420521,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 3.591166949591833,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": 1.0,
+   "solver_accB": 0.174471232587218
+  },
+  "P1_la_E2": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnn",
+    "slot": "YnYn",
+    "affix2": "nnnn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.025083663713182675,
+    "median": 0.029526122939916653,
+    "excess": -0.05460978665309933,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 4.541578803151209,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": 1.0,
+   "solver_accB": 0.6474319443220862
+  },
+  "P1_la_E3": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "Ynnn",
+    "slot": "YnYn",
+    "affix2": "YnYn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.03286037617725518,
+    "median": 0.02281177515295104,
+    "excess": -0.05567215133020622,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 4.603919809052434,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": 1.0,
+   "solver_accB": null
+  },
+  "P1_la_E4": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnn",
+    "slot": "Ynnn",
+    "affix2": "Ynnn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 1
+   },
+   "rhythm": {
+    "I": -0.034286986029585444,
+    "median": 0.0216148331363977,
+    "excess": -0.05590181916598314,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 4.655679679895142,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": 1.0,
+   "solver_accB": null
+  },
+  "REF_P2_it_plain": {
+   "role": "descriptive",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnYn",
+    "slot": "nnYY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.26345755000269067,
+    "median": -0.03998986267467908,
+    "excess": -0.2234676873280116,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 3.06627857175287,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": null,
+   "solver_accB": null
+  },
+  "P2_it_E1": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnn",
+    "slot": "nnYY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.25376990494351553,
+    "median": -0.0365368372933507,
+    "excess": -0.21723306765016484,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 3.234541751006719,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": 1.0,
+   "solver_accB": 0.9446982794105541
+  },
+  "P2_it_E2": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "YnYY",
+    "slot": "nnnY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.2535426451717377,
+    "median": -0.03809773927067299,
+    "excess": -0.2154449059010647,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 4.2102037673502855,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": 1.0,
+   "solver_accB": 0.8417828214300399
+  },
+  "P2_it_E3": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnYn",
+    "slot": "nnYY",
+    "affix2": "nnYn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.1169103632289462,
+    "median": -0.01193083193579213,
+    "excess": -0.10497953129315407,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 4.272506968967391,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": 1.0,
+   "solver_accB": null
+  },
+  "P2_it_E4": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnY",
+    "slot": "nnnY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.11787384100478465,
+    "median": -0.012796762407257096,
+    "excess": -0.10507707859752756,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 4.36424057176117,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": 1.0,
+   "solver_accB": null
+  },
+  "REF_P3_de_plain": {
+   "role": "descriptive",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnn",
+    "slot": "nnnn",
+    "affix2": "nnnn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.07598875426667932,
+    "median": -0.018988332297351664,
+    "excess": -0.057000421969327655,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 3.137510506436431,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": null,
+   "solver_accB": null
+  },
+  "P3_de_E1": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnn",
+    "slot": "nnnn",
+    "affix2": "nnnn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.07116592832885277,
+    "median": -0.01759375507861392,
+    "excess": -0.053572173250238844,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 3.3048600369150947,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": 1.0,
+   "solver_accB": 0.9505456690590895
+  },
+  "P3_de_E2": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnY",
+    "slot": "YnYY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.07204556022015651,
+    "median": -0.01872459149290087,
+    "excess": -0.05332096872725564,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 4.298859816874058,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": 1.0,
+   "solver_accB": 0.9491715093450604
+  },
+  "P3_de_E3": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "YnYn",
+    "slot": "nnnY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.009784532344392327,
+    "median": 0.003252158300405685,
+    "excess": -0.013036690644798012,
+    "p": 0.982,
+    "holds": false
+   },
+   "h2": 4.339743768570735,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": 1.0,
+   "solver_accB": null
+  },
+  "P3_de_E4": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnYY",
+    "slot": "YnnY",
+    "affix2": "YnYY"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 1
+   },
+   "rhythm": {
+    "I": -0.010028902791693802,
+    "median": 0.0025653598918405707,
+    "excess": -0.012594262683534373,
+    "p": 0.981,
+    "holds": false
+   },
+   "h2": 4.386243345782881,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": 1.0,
+   "solver_accB": null
+  },
+  "PC2_VOY_IT2a_as_control": {
+   "role": "gate",
+   "applicable": [
+    "slot"
+   ],
+   "sig": {
+    "slot": "YYYY"
+   },
+   "sig_ok": true,
+   "battery_ok": true,
+   "battery": {
+    "IT2a": 10
+   },
+   "rhythm": {
+    "I": 0.12747059271107986,
+    "median": 0.058595010295391554,
+    "excess": 0.06887558241568831,
+    "p": 0.001,
+    "holds": true
+   },
+   "h2": 2.1272240364872856,
+   "h2_ok": true,
+   "s97_full": true,
+   "voynich_like": true,
+   "recovery": null,
+   "solver_accB": null
+  },
+  "NC_augustine_la": {
+   "role": "gate",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnYY",
+    "slot": "nnnY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "rhythm": {
+    "I": -0.05026223895762899,
+    "median": 0.00918272243542219,
+    "excess": -0.05944496139305118,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 3.3232578593053974,
+   "h2_ok": false,
+   "s97_full": false,
+   "voynich_like": false,
+   "recovery": null,
+   "solver_accB": null
+  }
+ },
+ "verdict": "no cell is Voynich-like: 'period cipher over vernacular recipes' is closed within the tested constructions (D-066 (h) stopping rule; no parameter sweeps)"
+}

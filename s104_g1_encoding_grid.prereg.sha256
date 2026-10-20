@@ -1,0 +1,67 @@
+# s104_g1_encoding_grid prereg stub, frozen Sun Oct 18 13:28:50 PDT 2026 (`date`), before any scoring run (D-066 (j) + lead amendment D-066 (j-amend); run id s104, lead tree).
+# D-066 (j) criteria, jointly per cell: SIG four-part core signature (S87.c1, ORDER_BAND K100 [+0.012321,+0.092252] K200 [-0.003465,+0.086474], R_within(1)>1 p<0.05, R_cross<R_within, locality in VOY band) on every applicable segmenter (identity/slot/affix2, core share>=0.5)
+#   AND slot battery >= 4/6 on >= 8/15 folds (each of ZL3b, RF1b, IT2a) AND within-line length-rhythm excess > 0 with p < 0.05 AND h2 in [2.023, 2.234] AND lag-2 prefix residue (s98 XCMI, median over 15 blocks) <= 0.5 x the s81 table's (mean of results_s98.txt S81 medians).
+# Gates: recovery >= 0.80 (known table) on all 18 texts; s97 gate PC1/PC2/NC; lag-2 validity (VOY <= bar, s81 table > bar). Survivor (passing cells only): LOQO >= 8/15 folds on each translit with fitted tables, and plaintext held folds > shuffled-twin held folds.
+# Amendment (j-amend, before freeze; r6-r8 arrived before this freeze): manuscript scored first through the same code; criteria it fails become target-relative per the docstring rules; unused predictions PRED_A (r6 affix-state C, X, suffix decay) and PRED_B (R_within(1) slot + affix2 at Voynich scale), not part of SURVIVOR.
+# Stopping rule: no cell passes -> closed within G1, grid moves to H-05/H-07 side; a cell passes but its twin passes equally -> structure without content, no decipherment. Revisions used: 2 of 2 (docstring). No edits after this freeze.
+0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2 *a1_profile.py
+426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3 *a2_position.py
+5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a *b4_selfcite_sim.py
+0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007 *b5_nmf_topics.py
+9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57 *c1_quire_null.py
+f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a *c2_section_generator.py
+30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb *c3_edge_coupling.py
+46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b *c4_naibbe_lines.py
+2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518 *corpora.py
+5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76 *f1_residual_order.py
+440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd *f2_syllable_control.py
+e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca *f3_flow_choice.py
+4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7 *g1_edge_joint.py
+0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b *m1_coordinates.py
+598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299 *m3_bakeoff_reconcile.py
+a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1 *n1_habit_table.py
+3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea *p1_bifolio_null.py
+5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39 *p4d1_core_order.py
+5e35d7fa3e1f4e82fb69df46ab6dd703c84dac7e99eca1fae9c7248b307f5e87 *s102_period_ciphers_recipes.py
+da6c33be8f4143bd0f681bc8da211031331cdc6f90cf786185362a3254e93e70 *s104_g1_encoding_grid.py
+e4e96e8f53969a7677f33db74c67125a3afe835b96ac1065cc4400f517dd09eb *s21_moran_realline.py
+5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02 *s29_q1_label_controls.py
+406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625 *s34_morphology_syntax_geography.py
+c63e035be6a0e03f7a71c0be6e5b1a3a1bd2033ce8041552bb169319f10df9ad *s50_solver.py
+1b5c5227cf12db05d7c09d73040fad545e5f318512254128c609dbe4441b965b *s50_solver_ladder.py
+56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec *s55_code_vs_generator.py
+1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7 *s56_core_repetition_lag.py
+4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155 *s57_local_memory_model.py
+6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3 *s64_naibbe_taxonomy.py
+8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354 *s67_constrained_assembly_loqo.py
+11e722d4a0391d34228637da8b9c1872a6dc4ddd5dc1f2ff4e94f8c6a903c458 *s69_prefix_stream_memory.py
+ae0a00e8df8b053677451a5dd96b55dc5a9e0942052a59147383129bec95b5cb *s70_canonical_segmentation_and_rare_cores.py
+9b4f024792c778ae300fd14d7d1e85f03243d50964b1f7f61ba09f1553c11a18 *s71_weakened_grille_and_sticky_naibbe_loqo.py
+43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29 *s76_segmenter_independence.py
+56eb6afdafdc57654b56a7019ee6a9410752db9ffb08c3a9112f83dd0798cc5d *s77_deconfounded_scribe_and_comma_ablation_loqo.py
+196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b *s80_a14_size_matched.py
+418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063 *s81_sticky_table_loqo.py
+2e36fc0a6ce81520ae521b78ea4bd8fd8cccea5048a4209bf6317ae39f59f3e0 *s86_sticky_table_solver_and_triangulation.py
+d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db *s87_core_layer_genre.py
+92dba656c9d74dfb972837d3bba070bb945c3ed59ef444448d5bd7aafcdee21a *s91_line_pool_producer_loqo.py
+76837cdbf089eb445278cc7c51879dfd9f5b7daef1bf6720a9d02c83b320c7cb *s97_language_rescue_controls.py
+2deac4c11729071829cb20e850fe1851358b021331a22fa4d6dd1844af11bf01 *s98_lag2_prefix_dependence.py
+4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f *scoreboard/__init__.py
+a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed *scoreboard/metrics_new.py
+8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65 *tools/boxes.py
+5a08d4252dabfbe5f4ef5f93e5f2808a678ebb76fe32d99891c8310679bc81aa *tools/ivtff_to_meta.py
+0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1 *vparse.py
+ce233477803a865365e53418f5e2b78c324fa0ea124b0aa46a9eb6a5189f7ef0 *data/translit/ZL3b_eva.meta.json
+c7d9bccba99b2610b9d80b4ce5f26f7d1ab54c12ec2364d0423d6b89f51da9df *data/translit/RF1b.meta.json
+0d0d3e758d1e308b0aee4b4d006f90cbc8090c081e0fcb3327de6734ac5e5fdf *data/translit/IT2a.meta.json
+be53d490c342df533d2c218a33f5892bba49be377fcf9023da39293b56b01115 *data/controls_realline/cremma_all_marks.meta.json
+00c484e965af06b52ff4fc323af3e14071d3476fd59b8f85a5b7ec1e1a7b35b2 *data/controls/latin_macer_floridus.txt
+30287aab673c861ae500f06fe55d4396f529a0c251b37178e7220b6c51317189 *data/controls/latin_augustine.txt
+52a9b4ea92a0f718d15580f51c07d73414a339ddfecc19bd99e7e5bbcf7670e9 *results_s98.txt
+2f63d4beabdbc1b84821a74ce462eb3dcc80d43117ec33db6a5f8eb5aa7da3fc *runs/s49/lang_latin_cremma.meta.json
+890835df665d33b96228d4a587030fee2bc1637783dc627b4e6aa584186cadcd *data/naibbe_zenodo_17219445/Naibbe_Cipher.xlsx
+f466e12c9ff61a32e1e4534af5d5fa7f28aa4188a954ceb1137c612b9270d75b *data/controls_period/raw_it/librodicucinade00fratgoog_djvu.txt
+1b167fdb127cbb5c3c9dd4ea5159ffaf497a49580556bcc08cd874d9309d8edf *data/controls_period/raw_it/b21525213_djvu.txt
+9fa4c19aed390b7629dfb77592ef9a31a9218fcd6b82987bbf380ab9f447789b *data/controls_period/raw_de/bub_gb_I0QSAAAAYAAJ_djvu.txt
+efb119a0a75104e53bb94978d7cb99bf11b9098362977db733e8e2eeb9c97410 *data/controls_period/raw_de/Buoch_von_guoter_Spise_rendered.txt
+18684bb864ece18f510fa383f0c04828248591926840db7f829e5c03411a1b0a *data/controls_period/raw_de/b24880681_djvu.txt

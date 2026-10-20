@@ -1,0 +1,3 @@
+FIXTURE_FREE (must be NOT_RESTATED): words>=5 24377, types 12481  B;E excess -0.0032 bits (null q99 +0.0088) p 0.8507  B;M excess 0.0016 bits (null q99 +0.0077) p 0.3433  M;E excess 0.0023 bits (null q99 +0.0072) p 0.2488  free-assembly type ratio 0.998  CALL=NOT_RESTATED
+FIXTURE_LEXICON (must be RESTATED): words>=5 24377, types 1855  B;E excess 1.0224 bits (null q99 +0.0040) p 0.0050  B;M excess 1.3009 bits (null q99 +0.0043) p 0.0050  M;E excess 0.9566 bits (null q99 +0.0041) p 0.0050  free-assembly type ratio 3.877  CALL=RESTATED
+CONTROL_PASS

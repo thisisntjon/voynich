@@ -1,0 +1,126 @@
+{
+  "scope": "method audit, not manuscript effect estimation",
+  "seed": 20261017,
+  "code_sha256": "be538878d971e1bdfb94dc3e12835ee13ff8bff5fc5c8f547149e895c2dc76f6",
+  "helper_sha256": "9f99121aeb6a37ed34dd97d798ad1347c8745bfdbd45b352e04ad850484d1938",
+  "reviewed_plan_sha256": "113a7385d05e943b420634affe67e947dccd710b70f5537393bbdc36f58c75e0",
+  "pooling_counterexample": {
+    "manuscript_a": 1.0,
+    "manuscript_b": 1.0,
+    "pooled": 0.0
+  },
+  "mark_stripping_counterexample": {
+    "preserved": 1.0,
+    "stripped": 0.0
+  },
+  "iid_null_jsd_by_line_count": {
+    "50": {
+      "mean": 0.1259758288165398,
+      "q025": 0.05597584464118531,
+      "q975": 0.20363661565834906
+    },
+    "100": {
+      "mean": 0.05608304028470736,
+      "q025": 0.02803950372116539,
+      "q975": 0.09850489324655261
+    },
+    "500": {
+      "mean": 0.010421384715455555,
+      "q025": 0.005269577429652058,
+      "q975": 0.017207052173616903
+    },
+    "1000": {
+      "mean": 0.005031648401467209,
+      "q025": 0.0024936755286149724,
+      "q975": 0.007805237092911234
+    },
+    "4130": {
+      "mean": 0.001190321188000267,
+      "q025": 0.0006172326484972943,
+      "q975": 0.002067804941576064
+    }
+  },
+  "source_format_check": {
+    "path": "data\\external\\cremma-medieval-lat-mlc1\\data\\Arras-861\\056r.xml",
+    "sha256": "58aac4ffad3206b2e7267fecac3283cc8a24127c3f3ec69dad890c1d77202b1b",
+    "mainzone_blocks": [
+      {
+        "id": "eSc_textblock_a478970b",
+        "lines": 35,
+        "hpos": "386",
+        "width": "1798"
+      },
+      {
+        "id": "eSc_textblock_95b4cd21",
+        "lines": 35,
+        "hpos": "2264",
+        "width": "1817"
+      }
+    ],
+    "token_count_differences": 12,
+    "examples": [
+      {
+        "line": "eSc_line_aca85b83",
+        "text": "tale eᷤ mores bonos facit.aliud ad hoĩem",
+        "planned": [
+          "tale",
+          "e",
+          "mores",
+          "bonos",
+          "facit.aliud",
+          "ad",
+          "hoiem"
+        ],
+        "punctuation_delimited": [
+          "tale",
+          "e",
+          "mores",
+          "bonos",
+          "facit",
+          "aliud",
+          "ad",
+          "hoiem"
+        ]
+      },
+      {
+        "line": "eSc_line_8c4a16ec",
+        "text": "alendũ ꝑtinet.aliud ad ex̾cendũ. aliud",
+        "planned": [
+          "alendu",
+          "ꝑtinet.aliud",
+          "ad",
+          "excendu",
+          "aliud"
+        ],
+        "punctuation_delimited": [
+          "alendu",
+          "ꝑtinet",
+          "aliud",
+          "ad",
+          "excendu",
+          "aliud"
+        ]
+      },
+      {
+        "line": "eSc_line_c18f53b7",
+        "text": "tantur.tũ qͣre hoĩem natura ꝓdux̾it",
+        "planned": [
+          "tantur.tu",
+          "qre",
+          "hoiem",
+          "natura",
+          "ꝓduxit"
+        ],
+        "punctuation_delimited": [
+          "tantur",
+          "tu",
+          "qre",
+          "hoiem",
+          "natura",
+          "ꝓduxit"
+        ]
+      }
+    ]
+  },
+  "assertions": "PASS: two pooling values 1, pooled 0; marked 1, stripped 0"
+}

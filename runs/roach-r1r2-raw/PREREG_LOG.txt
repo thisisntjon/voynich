@@ -1,0 +1,9 @@
+prereg log
+hashed at (clock): 2026-10-17 22:29:02 PDT
+prep.py 7ca04e92ab39f7f59aa83dde0aaac337f3bfbb83aa90ad42f691f9830c14a64c
+r1.py b0fb86ea4f7340cfd4ca782bb05168a7f3e237b54be92308afcfd2a4af574804
+r2.py 2bfe9279b65091fb41b979bc30f2797bbe70e5b1cb9c3520ea700d3074e7f1c4
+AMENDMENT at (clock): 2026-10-17 22:29:43 PDT -- prep.py only, before any R1/R2 run:
+  page-id regex f\d+[rv]\d* missed page 'fRos' (161 IVTFF lines, 11 of type P in ZL/RF); changed to f[0-9A-Za-z]+.
+  new prep.py 288930c36a3329e4d4ae759d9aa0bf9656453729f58a88c7a42b37b6a6fe6465  (supersedes 7ca04e92...). r1.py/r2.py unchanged.
+POST-HOC script explore_r2.py hashed at (clock) 2026-10-17 22:30:54 PDT: 950cae54cbe49d94bac8b893da08072df3c9a8334dd2e1251b624ec820833b57 -- written AFTER seeing R1/R2 results; exploratory only.

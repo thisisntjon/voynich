@@ -1,0 +1,42 @@
+s117 within-line co-occurrence vs the F-41 quire pool -- REAL RUN. Design D-066 (w). started 2026-10-18 22:22:39 PDT; BelowNormal; workers 4
+script tools/s117_line_cooccurrence.py sha256 83b5d36b3d51b72c226a3e34615ba905d33f67912710b87b0a2420a123b8956a; stub s117_line_cooccurrence.prereg.sha256 verified (7 files) sha256 c0d03eca150c1c0d8db3abc6e6a7767309aec1f4104b80fcf216390889a59044
+data ZL3b: data/translit/ZL3b_eva.meta.json sha256 ce233477803a865365e53418f5e2b78c324fa0ea124b0aa46a9eb6a5189f7ef0
+data RF1b: data/translit/RF1b.meta.json sha256 c7d9bccba99b2610b9d80b4ce5f26f7d1ab54c12ec2364d0423d6b89f51da9df
+data IT2a: data/translit/IT2a.meta.json sha256 0d0d3e758d1e308b0aee4b4d006f90cbc8090c081e0fcb3327de6734ac5e5fdf
+R_E 100 R_H 100 TRADES 5 ALPHA 0.01 NT_MIN 10 NT_RATIO 2.0 seed 20261018
+  ZL3b core null=quire lines 4130 units 2335 | S 19150.8 null 17903.7+-66.5 z 18.74 p 0.0099 | N_T 57 {'p': 18, 't': 39} null mean 24.76 q99 38.01 | Q 0.2452 (null mean 0.2057, q99 0.2161, p 0.0099) | call C | 53.6s
+  RF1b core null=quire lines 4130 units 2536 | S 20641.8 null 19333.8+-58.0 z 22.56 p 0.0099 | N_T 49 {'p': 16, 't': 33} null mean 26.02 q99 43.01 | Q 0.2519 (null mean 0.2065, q99 0.2144, p 0.0099) | call C | 54.0s
+  ZL3b word null=quire lines 4130 units 7025 | S 79946.9 null 78185.2+-103.3 z 17.05 p 0.0099 | N_T 92 {'p': 30, 't': 62} null mean 21.10 q99 30.01 | Q n/a | call T | 78.1s
+  IT2a core null=quire lines 4117 units 2380 | S 19768.4 null 18314.6+-59.1 z 24.60 p 0.0099 | N_T 76 {'p': 17, 't': 59} null mean 25.23 q99 38.06 | Q 0.2601 (null mean 0.2078, q99 0.2164, p 0.0099) | call C | 47.9s
+  RF1b word null=quire lines 4130 units 7348 | S 79850.0 null 78205.9+-102.4 z 16.06 p 0.0099 | N_T 98 {'p': 27, 't': 71} null mean 18.62 q99 29.02 | Q n/a | call T | 73.1s
+  ZL3b tri  null=quire lines 4130 units 7025 | S 137201.8 null 100385.8+-405.4 z 90.82 p 0.0099 | N_T 308 {'p': 308} null mean 56.23 q99 71.10 | Q n/a | call T | 183.0s
+  IT2a word null=quire lines 4117 units 7069 | S 79265.0 null 77635.4+-98.1 z 16.61 p 0.0099 | N_T 89 {'p': 40, 't': 49} null mean 19.24 q99 32.00 | Q n/a | call T | 69.8s
+  ZL3b core null=page  lines 4130 units 2335 | S 18096.5 null 17310.9+-53.0 z 14.81 p 0.0099 | N_T 47 {'p': 14, 't': 33} null mean 22.50 q99 35.00 | Q n/a | call X | 44.9s
+  RF1b tri  null=quire lines 4130 units 7348 | S 143823.3 null 106174.4+-439.2 z 85.73 p 0.0099 | N_T 327 {'p': 327} null mean 63.53 q99 80.06 | Q n/a | call T | 182.9s
+  ZL3b word null=page  lines 4130 units 7025 | S 82886.8 null 81760.5+-93.9 z 11.99 p 0.0099 | N_T 60 {'p': 25, 't': 35} null mean 19.68 q99 33.01 | Q n/a | call X | 62.8s
+  RF1b core null=page  lines 4130 units 2536 | S 19703.2 null 18849.5+-58.1 z 14.70 p 0.0099 | N_T 34 {'p': 12, 't': 22} null mean 22.25 q99 35.01 | Q n/a | call X | 42.6s
+  RF1b word null=page  lines 4130 units 7348 | S 83580.8 null 82568.2+-87.6 z 11.56 p 0.0099 | N_T 50 {'p': 19, 't': 31} null mean 18.05 q99 27.00 | Q n/a | call X | 65.3s
+  IT2a core null=page  lines 4117 units 2380 | S 18870.9 null 17819.4+-59.5 z 17.67 p 0.0099 | N_T 68 {'p': 22, 't': 46} null mean 21.25 q99 32.02 | Q n/a | call T | 46.1s
+  IT2a tri  null=quire lines 4117 units 7069 | S 137218.6 null 100820.8+-376.1 z 96.77 p 0.0099 | N_T 371 {'p': 371} null mean 57.55 q99 76.04 | Q n/a | call T | 181.4s
+  IT2a word null=page  lines 4117 units 7069 | S 82549.7 null 81552.3+-86.4 z 11.54 p 0.0099 | N_T 43 {'p': 18, 't': 25} null mean 17.90 q99 28.01 | Q n/a | call X | 58.8s
+
+CALL ZL3b core: C  (p_S 0.0099, z_S 18.74, N_T 57 vs null q99 38.01, p_Q 0.0099)
+CALL ZL3b word: T  (p_S 0.0099, z_S 17.05, N_T 92 vs null q99 30.01, p_Q n/a)
+CALL ZL3b tri: T  (p_S 0.0099, z_S 90.82, N_T 308 vs null q99 71.10, p_Q n/a)
+CALL ZL3b transliteration: T
+CALL RF1b core: C  (p_S 0.0099, z_S 22.56, N_T 49 vs null q99 43.01, p_Q 0.0099)
+CALL RF1b word: T  (p_S 0.0099, z_S 16.06, N_T 98 vs null q99 29.02, p_Q n/a)
+CALL RF1b tri: T  (p_S 0.0099, z_S 85.73, N_T 327 vs null q99 80.06, p_Q n/a)
+CALL RF1b transliteration: T
+CALL IT2a core: C  (p_S 0.0099, z_S 24.60, N_T 76 vs null q99 38.06, p_Q 0.0099)
+CALL IT2a word: T  (p_S 0.0099, z_S 16.61, N_T 89 vs null q99 32.00, p_Q n/a)
+CALL IT2a tri: T  (p_S 0.0099, z_S 96.77, N_T 371 vs null q99 76.04, p_Q n/a)
+CALL IT2a transliteration: T
+DIAGNOSTIC page-null ZL3b core: p_S 0.0099 z_S 14.81 N_T 47 vs null q99 35.00 (rule would give X; not a call)
+DIAGNOSTIC page-null ZL3b word: p_S 0.0099 z_S 11.99 N_T 60 vs null q99 33.01 (rule would give X; not a call)
+DIAGNOSTIC page-null RF1b core: p_S 0.0099 z_S 14.70 N_T 34 vs null q99 35.01 (rule would give X; not a call)
+DIAGNOSTIC page-null RF1b word: p_S 0.0099 z_S 11.56 N_T 50 vs null q99 27.00 (rule would give X; not a call)
+DIAGNOSTIC page-null IT2a core: p_S 0.0099 z_S 17.67 N_T 68 vs null q99 32.02 (rule would give T; not a call)
+DIAGNOSTIC page-null IT2a word: p_S 0.0099 z_S 11.54 N_T 43 vs null q99 28.01 (rule would give X; not a call)
+CALL overall: T
+finished 2026-10-18 22:28:09 PDT

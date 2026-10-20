@@ -1,0 +1,22 @@
+S97: codicological scale of quire-local tail recurrence
+freeze_match=True fixture_pass=True seed=970018
+source_sha256=0206D14FA8B058E008A0D558AE65FCD832AA6EE853B8BE25360F04E955A25C3B prereg_sha256=942CAC4AEE85362C2358A7DFE99F2EDC2F6D0E5FA4389B46BC4DCD3F15D79C72
+
+[ZL3b] pages=202 folds=15
+  quire_vs_cross     +0.0046058 [+0.0019097, +0.0072416] n=8665
+  sheet_vs_quire     +0.0026444 [+0.0009694, +0.0044983] n=9703
+  leaf_vs_sheet      -0.0009563 [-0.0019408, +0.0000700] n=8948
+[RF1b] pages=202 folds=15
+  quire_vs_cross     +0.0045806 [+0.0024000, +0.0068507] n=8947
+  sheet_vs_quire     +0.0011926 [-0.0002687, +0.0028516] n=10002
+  leaf_vs_sheet      -0.0006381 [-0.0012890, -0.0000172] n=9266
+[IT2a] pages=201 folds=15
+  quire_vs_cross     +0.0069628 [+0.0040273, +0.0099815] n=8705
+  sheet_vs_quire     +0.0013714 [-0.0001599, +0.0030422] n=9757
+  leaf_vs_sheet      -0.0005905 [-0.0011981, +0.0000411] n=8996
+
+C1_QUIRE=True
+C2_SHEET=False
+C3_LEAF=False
+VERDICT=QUIRE_REGISTER_POOL
+runtime_seconds=1.2

@@ -1,0 +1,500 @@
+s122 within-line co-occurrence, quire null + page null, near-copy controlled -- REAL RUN. Design D-066 (bb). started 2026-10-19 01:11:03 PDT; BelowNormal; workers 4; free RAM 7.4 GB
+script tools/s122_cooccurrence_nearcopy.py sha256 86e8a8f9a249a789af77e5633532f6f229a15e5ca7f1310c7ca0da063a0d86f6; stub s122_cooccurrence_nearcopy.prereg.sha256 verified (6 files) sha256 0f6e6a80b8d27a3dc1a67fc06c229bef441228f76ac6994e08680976ac74aee8; fixture runs/s122/fixture_20261018_235607.txt (FIXTURE_GATE PASS)
+data ZL3b: data/translit/ZL3b_eva.meta.json sha256 ce233477803a865365e53418f5e2b78c324fa0ea124b0aa46a9eb6a5189f7ef0
+data RF1b: data/translit/RF1b.meta.json sha256 c7d9bccba99b2610b9d80b4ce5f26f7d1ab54c12ec2364d0423d6b89f51da9df
+data IT2a: data/translit/IT2a.meta.json sha256 0d0d3e758d1e308b0aee4b4d006f90cbc8090c081e0fcb3327de6734ac5e5fdf
+R_E 100 R_H 100 TRADES 5 ALPHA 0.01 NT_MIN 10 NT_RATIO 2.0 seed 20261018
+  ZL3b core null=quire lines 4130 units 2335 | S 19150.8 null 17903.7+-66.5 z 18.74 p 0.0099 | N_T 57 {'p': 18, 't': 39} null mean 24.76 q99 38.01 | Q 0.2452 (null mean 0.2057, q99 0.2161, p 0.0099) | call C | 56.2s
+  RF1b core null=quire lines 4130 units 2536 | S 20641.8 null 19333.8+-58.0 z 22.56 p 0.0099 | N_T 49 {'p': 16, 't': 33} null mean 26.02 q99 43.01 | Q 0.2519 (null mean 0.2065, q99 0.2144, p 0.0099) | call C | 56.6s
+  ZL3b word null=quire lines 4130 units 7025 | S 79946.9 null 78185.2+-103.3 z 17.05 p 0.0099 | N_T 92 {'p': 30, 't': 62} null mean 21.10 q99 30.01 | Q 0.2312 (null mean 0.2068, q99 0.2142, p 0.0099) | call T | 92.9s
+  IT2a core null=quire lines 4117 units 2380 | S 19768.4 null 18314.6+-59.1 z 24.60 p 0.0099 | N_T 76 {'p': 17, 't': 59} null mean 25.23 q99 38.06 | Q 0.2601 (null mean 0.2078, q99 0.2164, p 0.0099) | call C | 56.7s
+  RF1b word null=quire lines 4130 units 7348 | S 79850.0 null 78205.9+-102.4 z 16.06 p 0.0099 | N_T 98 {'p': 27, 't': 71} null mean 18.62 q99 29.02 | Q 0.2315 (null mean 0.2122, q99 0.2198, p 0.0099) | call T | 93.9s
+  IT2a word null=quire lines 4117 units 7069 | S 79265.0 null 77635.4+-98.1 z 16.61 p 0.0099 | N_T 89 {'p': 40, 't': 49} null mean 19.24 q99 32.00 | Q 0.2431 (null mean 0.2120, q99 0.2205, p 0.0099) | call T | 91.3s
+  ZL3b tri  null=quire lines 4130 units 7025 | S 137201.8 null 100385.8+-405.4 z 90.82 p 0.0099 | N_T 308 {'p': 308} null mean 56.23 q99 71.10 | Q 0.2297 (null mean 0.0968, q99 0.1043, p 0.0099) | call T | 280.0s
+  ZL3b core null=page  lines 4130 units 2335 | S 18096.5 null 17310.9+-53.0 z 14.81 p 0.0099 | N_T 47 {'p': 14, 't': 33} null mean 22.50 q99 35.00 | Q n/a | call X | 50.8s
+  RF1b tri  null=quire lines 4130 units 7348 | S 143823.3 null 106174.4+-439.2 z 85.73 p 0.0099 | N_T 327 {'p': 327} null mean 63.53 q99 80.06 | Q 0.2313 (null mean 0.0966, q99 0.1044, p 0.0099) | call T | 290.8s
+  ZL3b word null=page  lines 4130 units 7025 | S 82886.8 null 81760.5+-93.9 z 11.99 p 0.0099 | N_T 60 {'p': 25, 't': 35} null mean 19.68 q99 33.01 | Q n/a | call X | 71.5s
+  RF1b core null=page  lines 4130 units 2536 | S 19703.2 null 18849.5+-58.1 z 14.70 p 0.0099 | N_T 34 {'p': 12, 't': 22} null mean 22.25 q99 35.01 | Q n/a | call X | 46.1s
+  RF1b word null=page  lines 4130 units 7348 | S 83580.8 null 82568.2+-87.6 z 11.56 p 0.0099 | N_T 50 {'p': 19, 't': 31} null mean 18.05 q99 27.00 | Q n/a | call X | 65.7s
+  IT2a tri  null=quire lines 4117 units 7069 | S 137218.6 null 100820.8+-376.1 z 96.77 p 0.0099 | N_T 371 {'p': 371} null mean 57.55 q99 76.04 | Q 0.2308 (null mean 0.0972, q99 0.1063, p 0.0099) | call T | 280.4s
+  IT2a core null=page  lines 4117 units 2380 | S 18870.9 null 17819.4+-59.5 z 17.67 p 0.0099 | N_T 68 {'p': 22, 't': 46} null mean 21.25 q99 32.02 | Q n/a | call T | 51.1s
+  ZL3b tri  null=page  lines 4130 units 7025 | S 110042.9 null 91989.4+-438.3 z 41.19 p 0.0099 | N_T 254 {'p': 254} null mean 44.87 q99 58.00 | Q n/a | call T | 204.5s
+  IT2a word null=page  lines 4117 units 7069 | S 82549.7 null 81552.3+-86.4 z 11.54 p 0.0099 | N_T 43 {'p': 18, 't': 25} null mean 17.90 q99 28.01 | Q n/a | call X | 69.8s
+  RF1b tri  null=page  lines 4130 units 7348 | S 115759.0 null 97130.1+-376.6 z 49.46 p 0.0099 | N_T 286 {'p': 286} null mean 47.89 q99 65.11 | Q n/a | call T | 208.8s
+  IT2a tri  null=page  lines 4117 units 7069 | S 110304.1 null 92606.7+-336.8 z 52.54 p 0.0099 | N_T 274 {'p': 274} null mean 46.62 q99 62.00 | Q n/a | call T | 193.3s
+
+CALL ZL3b core: C  (quire null: C, p_S 0.0099, z_S 18.74, N_T 57 vs q99 38.01, p_Q 0.0099 | page null: X, p_S 0.0099, z_S 14.81, N_T 47 vs q99 35.00)
+CALL ZL3b word: C  (quire null: T, p_S 0.0099, z_S 17.05, N_T 92 vs q99 30.01, p_Q 0.0099 | page null: X, p_S 0.0099, z_S 11.99, N_T 60 vs q99 33.01)
+CALL ZL3b tri: T  (quire null: T, p_S 0.0099, z_S 90.82, N_T 308 vs q99 71.10, p_Q 0.0099 | page null: T, p_S 0.0099, z_S 41.19, N_T 254 vs q99 58.00)
+CALL ZL3b transliteration: C
+CALL RF1b core: C  (quire null: C, p_S 0.0099, z_S 22.56, N_T 49 vs q99 43.01, p_Q 0.0099 | page null: X, p_S 0.0099, z_S 14.70, N_T 34 vs q99 35.01)
+CALL RF1b word: C  (quire null: T, p_S 0.0099, z_S 16.06, N_T 98 vs q99 29.02, p_Q 0.0099 | page null: X, p_S 0.0099, z_S 11.56, N_T 50 vs q99 27.00)
+CALL RF1b tri: T  (quire null: T, p_S 0.0099, z_S 85.73, N_T 327 vs q99 80.06, p_Q 0.0099 | page null: T, p_S 0.0099, z_S 49.46, N_T 286 vs q99 65.11)
+CALL RF1b transliteration: C
+CALL IT2a core: C  (quire null: C, p_S 0.0099, z_S 24.60, N_T 76 vs q99 38.06, p_Q 0.0099 | page null: T, p_S 0.0099, z_S 17.67, N_T 68 vs q99 32.02)
+CALL IT2a word: C  (quire null: T, p_S 0.0099, z_S 16.61, N_T 89 vs q99 32.00, p_Q 0.0099 | page null: X, p_S 0.0099, z_S 11.54, N_T 43 vs q99 28.01)
+CALL IT2a tri: T  (quire null: T, p_S 0.0099, z_S 96.77, N_T 371 vs q99 76.04, p_Q 0.0099 | page null: T, p_S 0.0099, z_S 52.54, N_T 274 vs q99 62.00)
+CALL IT2a transliteration: C
+CALL overall: C
+
+DESCRIPTIVE top-50 recurring tuples (quire null; candidates passing N_T's global test, ranked by lines; no call from this list). Columns: rank | kind | tuple | lines | null mean | lift | in N_T | n quires | quires (lines) | n pages | pages
+TUPLES ZL3b core (50 listed)
+   1 | t | y + ain + in | 39 | 12.91 | 3.0 | Y | 5 | T:21, M:14, N:2, F:1, H:1 | 19 | f103r, f103vx2, f104r, f107r, f111r, f111vx8, f114r, f116rx6, f48v, f58v, f75v, f76rx4, f76v, f79rx2, f79v, f80rx2, f82vx3, f86v5, f86v6
+   2 | t | r + s + in | 29 | 9.52 | 3.0 | n | 7 | T:15, M:9, A:1, E:1, H:1, I:1, O:1 | 23 | f103r, f103v, f104rx2, f104v, f106v, f108v, f111r, f112r, f112v, f113r, f114rx2, f116rx2, f39v, f58v, f67v2, f6v, f75v, f76rx2, f77rx2, f78r, f78vx2, f82r, f90r2
+   3 | p | p + pched | 15 | 3.44 | 4.4 | Y | 5 | T:7, M:4, N:2, D:1, F:1 | 12 | f103rx2, f106v, f107v, f114rx2, f115v, f26v, f48v, f78v, f81r, f82r, f83r, f86v6x2
+   4 | t | l + s + iiin | 14 | 4.19 | 3.3 | n | 6 | T:6, M:3, E:2, N:1, O:1, S:1 | 11 | f102v2, f105vx2, f107v, f112r, f112vx2, f33r, f39r, f76v, f78vx2, f86v5, f89r2
+   5 | p | pch + p | 13 | 2.68 | 4.9 | Y | 7 | T:4, N:3, B:2, A:1, F:1, M:1, Q:1 | 13 | f104r, f111v, f114r, f114v, f13r, f3r, f45r, f81r, f85r1, f86v5, f86v6, f93v, f9v
+   6 | p | p + pche | 12 | 2.79 | 4.3 | Y | 5 | T:5, N:3, F:2, B:1, M:1 | 12 | f103r, f105r, f105v, f106r, f106v, f16r, f43v, f44r, f80r, f86v3, f86v5, f86v6
+   7 | p | pchd + shd | 11 | 1.53 | 7.2 | Y | 6 | T:3, E:2, F:2, Q:2, D:1, N:1 | 10 | f103v, f106vx2, f26v, f33r, f34v, f43r, f46r, f86v3, f95r1, f95r2
+   8 | t | sh + chd + ed | 11 | 2.67 | 4.1 | n | 6 | T:5, Q:2, E:1, F:1, G:1, N:1 | 11 | f106v, f108r, f112r, f112v, f115r, f34v, f48v, f50r, f86v6, f94v, f95v1
+   9 | t | r + che + ke | 11 | 2.98 | 3.7 | Y | 8 | H:2, O:2, T:2, F:1, J:1, M:1, N:1, S:1 | 11 | f101r, f113v, f116r, f48v, f58r, f66r, f70r2, f75v, f86v3, f88v, f89r2
+  10 | t | r + in + ck | 11 | 3.55 | 3.1 | n | 6 | T:6, A:1, E:1, G:1, M:1, Q:1 | 10 | f103v, f104r, f108v, f111v, f116rx2, f40v, f55r, f6v, f76r, f95v2
+  11 | t | d + p + pched | 10 | 1.83 | 5.5 | Y | 4 | T:5, M:3, D:1, F:1 | 8 | f103rx2, f106v, f114rx2, f26v, f48v, f78v, f82r, f83r
+  12 | p | f + p | 10 | 2.16 | 4.6 | Y | 8 | N:3, B:1, F:1, G:1, H:1, I:1, S:1, T:1 | 9 | f102r1, f105v, f43v, f52r, f65v, f67r2, f86v5, f86v6x2, f9v
+  13 | t | che + ee + ke | 10 | 2.16 | 4.6 | Y | 7 | T:3, N:2, F:1, H:1, M:1, O:1, S:1 | 9 | f101r, f112v, f113v, f116r, f41v, f58v, f79v, f86v3x2, f88v
+  14 | t | e + ain + q | 10 | 2.50 | 4.0 | n | 3 | M:5, T:4, N:1 | 7 | f111v, f112r, f115r, f116r, f75r, f76rx4, f86v3
+  15 | t | al + ar + ke | 10 | 2.87 | 3.5 | n | 5 | T:4, H:2, M:2, F:1, S:1 | 8 | f101r, f103r, f104r, f112r, f113r, f46r, f58vx2, f75vx2
+  16 | t | d + ol + dl | 10 | 3.19 | 3.1 | n | 6 | T:4, M:2, A:1, B:1, D:1, E:1 | 10 | f104v, f106v, f108r, f114v, f11r, f28r, f2r, f39r, f75v, f76v
+  17 | t | e + eed + keed | 10 | 3.27 | 3.1 | n | 2 | T:8, M:2 | 9 | f105r, f108r, f108v, f111r, f112r, f112vx2, f114r, f79v, f82v
+  18 | t | d + chd + shd | 10 | 3.31 | 3.0 | n | 6 | M:3, F:2, T:2, G:1, N:1, Q:1 | 10 | f103r, f106v, f43r, f46r, f55r, f76r, f81v, f84v, f85r1, f95r2
+  19 | t | ar + iin + eee | 9 | 1.79 | 5.0 | Y | 3 | T:5, N:3, S:1 | 7 | f102v2, f107vx2, f108v, f113r, f113v, f85r1, f86v5x2
+  20 | t | e + iin + eeo | 9 | 1.99 | 4.5 | Y | 4 | T:4, N:3, I:1, O:1 | 9 | f105r, f113r, f113v, f114v, f67r2, f86v3, f86v4, f86v6, f90v1
+  21 | p | pche + pched | 9 | 2.05 | 4.4 | Y | 5 | T:5, G:1, H:1, M:1, N:1 | 8 | f106r, f106v, f111vx2, f113r, f51r, f66r, f83v, f86v6
+  22 | t | ar + ck + am | 9 | 2.23 | 4.0 | Y | 5 | T:3, E:2, F:2, H:1, Q:1 | 9 | f107v, f111v, f116r, f33v, f34v, f43v, f46v, f58r, f95r2
+  23 | t | y + or + old | 9 | 2.29 | 3.9 | Y | 6 | B:2, M:2, O:2, E:1, F:1, G:1 | 7 | f35r, f48v, f54r, f80v, f84v, f89r2x2, f9vx2
+  24 | t | r + e + an | 9 | 2.61 | 3.4 | n | 3 | T:5, A:3, M:1 | 6 | f103vx2, f116rx3, f1r, f2v, f79v, f8v
+  25 | t | ar + ck + chd | 9 | 2.79 | 3.2 | n | 4 | E:3, T:3, M:2, G:1 | 8 | f103r, f113r, f115v, f33v, f34vx2, f50r, f75r, f76r
+  26 | t | al + air + iin | 9 | 2.85 | 3.2 | Y | 4 | T:4, H:3, E:1, F:1 | 7 | f104r, f105v, f107r, f108v, f33r, f46v, f58vx3
+  27 | t | sh + ar + chd | 9 | 2.89 | 3.1 | n | 5 | T:5, F:1, G:1, N:1, Q:1 | 9 | f106v, f108r, f112r, f113r, f115v, f46r, f50r, f86v6, f95v1
+  28 | p | an + in | 8 | 1.41 | 5.7 | Y | 3 | T:5, M:2, A:1 | 7 | f103vx2, f108v, f111v, f116r, f5r, f76v, f79v
+  29 | p | pched + pchd | 8 | 1.56 | 5.1 | Y | 4 | T:5, D:1, M:1, N:1 | 8 | f105v, f107v, f112v, f114r, f115v, f26v, f76r, f85r1
+  30 | t | ain + in + am | 8 | 1.58 | 5.1 | Y | 3 | T:5, N:2, M:1 | 8 | f103r, f111v, f113v, f114r, f116r, f79v, f86v3, f86v6
+  31 | t | sh + ar + p | 8 | 1.64 | 4.9 | n | 4 | T:5, F:1, N:1, O:1 | 7 | f103r, f104r, f106vx2, f113v, f46r, f86v5, f89r1
+  32 | t | sh + e + shed | 8 | 1.78 | 4.5 | n | 2 | T:6, M:2 | 8 | f103r, f103v, f106v, f107v, f111v, f116r, f79r, f81v
+  33 | p | p + pchd | 8 | 1.80 | 4.4 | Y | 4 | T:4, N:2, D:1, F:1 | 6 | f106r, f106vx2, f114r, f26v, f46r, f85r1x2
+  34 | t | l + air + am | 8 | 1.95 | 4.1 | n | 2 | T:6, H:2 | 7 | f105r, f105v, f107v, f108r, f114r, f116r, f58vx2
+  35 | t | y + chd + shd | 8 | 1.98 | 4.0 | Y | 5 | M:3, N:2, F:1, Q:1, T:1 | 8 | f103v, f43r, f76r, f81v, f84v, f85r1, f86v3, f95r2
+  36 | t | d + chd + pchd | 8 | 1.99 | 4.0 | n | 3 | T:5, F:2, N:1 | 8 | f104r, f106r, f107v, f114r, f114v, f43r, f46r, f85r1
+  37 | t | ol + pche + ed | 8 | 2.09 | 3.8 | n | 3 | T:6, M:1, S:1 | 8 | f104v, f105v, f107v, f113r, f113v, f114v, f76r, f99v
+  38 | t | r + d + sht | 8 | 2.10 | 3.8 | n | 5 | M:3, N:2, A:1, G:1, T:1 | 7 | f103v, f2v, f49r, f75r, f82v, f84v, f85r1x2
+  39 | t | ch + che + am | 8 | 2.37 | 3.4 | n | 4 | T:5, A:1, D:1, G:1 | 8 | f105v, f108r, f113r, f115r, f116r, f27r, f3r, f51r
+  40 | t | ckh + daiin + ck | 8 | 2.39 | 3.3 | n | 6 | O:2, T:2, A:1, F:1, M:1, S:1 | 8 | f104r, f112v, f3v, f46r, f81v, f89r2, f89v2, f99r
+  41 | t | r + aiin + a | 8 | 2.40 | 3.3 | n | 4 | T:3, A:2, G:2, N:1 | 8 | f108v, f113v, f115v, f50r, f55v, f6v, f86v3, f8r
+  42 | t | ar + d + ckhd | 8 | 2.43 | 3.3 | n | 5 | E:2, F:2, T:2, G:1, M:1 | 7 | f105v, f115r, f33v, f34v, f46vx2, f55v, f83v
+  43 | t | al + aiin + iiin | 8 | 2.61 | 3.1 | n | 3 | M:3, N:3, T:2 | 6 | f105r, f107v, f77vx2, f80r, f86v5, f86v6x2
+  44 | t | r + iin + eee | 8 | 2.62 | 3.1 | n | 3 | T:5, N:2, B:1 | 6 | f106r, f113r, f113vx2, f114r, f86v5x2, f9v
+  45 | t | d + pched + pchd | 7 | 0.84 | 8.3 | Y | 4 | T:4, D:1, M:1, N:1 | 7 | f105v, f107v, f112v, f114r, f26v, f76r, f85r1
+  46 | t | d + pchd + shd | 7 | 0.93 | 7.5 | Y | 5 | F:2, Q:2, D:1, E:1, T:1 | 7 | f106v, f26v, f34v, f43r, f46r, f95r1, f95r2
+  47 | t | d + p + pchd | 7 | 1.07 | 6.5 | Y | 4 | T:3, N:2, D:1, F:1 | 6 | f106r, f106v, f114r, f26v, f46r, f85r1x2
+  48 | p | odaiin + ir | 7 | 1.27 | 5.5 | Y | 4 | T:4, F:1, I:1, N:1 | 7 | f105v, f106v, f111r, f114r, f46v, f67r1, f85r1
+  49 | t | sh + m + ed | 7 | 1.53 | 4.6 | Y | 3 | T:4, Q:2, F:1 | 6 | f103vx2, f108r, f111v, f48v, f94v, f95v1
+  50 | t | e + ain + shct | 7 | 1.56 | 4.5 | n | 2 | T:5, M:2 | 5 | f103rx2, f111vx2, f116r, f76r, f80v
+TUPLES ZL3b word (50 listed)
+   1 | p | o + l | 24 | 5.30 | 4.5 | Y | 9 | T:11, M:3, A:2, C:2, S:2, B:1, F:1, G:1, N:1 | 24 | f102r2, f102v2, f103v, f104r, f105v, f107v, f111r, f111v, f112r, f114r, f114v, f115v, f116r, f13v, f1v, f21r, f23v, f44v, f50v, f75v, f78r, f7v, f82v, fRos
+   2 | t | or + ol + aiin | 22 | 4.35 | 5.1 | Y | 6 | N:6, T:5, S:4, E:3, M:3, G:1 | 19 | f101r, f101v, f102v2, f106v, f113vx2, f114r, f115r, f33r, f39v, f40r, f55r, f75v, f79r, f82r, f85r1, f86v4x2, f86v5x2, f86v6, f99v
+   3 | p | okedy + otedy | 19 | 4.46 | 4.3 | Y | 4 | M:10, T:6, E:2, F:1 | 12 | f108rx5, f112r, f34r, f39v, f41r, f75rx2, f75v, f76rx3, f76v, f78v, f84r, f84v
+   4 | t | s + ol + aiin | 16 | 3.05 | 5.2 | Y | 7 | N:4, M:3, S:3, O:2, T:2, G:1, Q:1 | 13 | f101rx2, f102v2, f108v, f113r, f55v, f78r, f81v, f82r, f85r1x2, f86v4, f86v6, f89v2x2, f94v
+   5 | p | r + ain | 15 | 3.30 | 4.5 | Y | 4 | M:7, T:5, O:2, S:1 | 13 | f102v2, f106v, f108v, f111r, f116rx2, f75r, f76rx2, f76v, f77r, f79v, f82v, f88v, f89r2
+   6 | p | al + sar | 14 | 3.65 | 3.8 | Y | 6 | T:6, M:4, G:1, H:1, N:1, S:1 | 14 | f104r, f106r, f106v, f111v, f112r, f113r, f55v, f57r, f76v, f81v, f82v, f83v, f86v4, f99r
+   7 | t | or + s + aiin | 12 | 2.28 | 5.3 | Y | 7 | N:5, S:2, A:1, E:1, H:1, M:1, T:1 | 11 | f101v, f102v2, f104r, f33r, f3r, f58v, f82r, f85r1x2, f86v4, f86v5, f86v6
+   8 | p | keey + l | 12 | 2.32 | 5.2 | n | 2 | T:11, C:1 | 8 | f103v, f107v, f111rx2, f111vx2, f112r, f113vx3, f116r, f21r
+   9 | t | or + chol + ol | 12 | 2.72 | 4.4 | Y | 7 | S:4, G:3, C:1, H:1, O:1, Q:1, T:1 | 8 | f101rx3, f102v2, f106v, f17v, f54rx3, f58r, f90v1, f94r
+  10 | t | ar + or + ol | 12 | 2.97 | 4.0 | Y | 5 | T:4, N:3, E:2, G:2, M:1 | 10 | f104v, f111v, f113v, f115r, f34r, f40r, f55rx2, f81r, f86v5, f86v6x2
+  11 | p | chdy + okedy | 12 | 3.71 | 3.2 | n | 5 | T:5, F:3, M:2, E:1, N:1 | 8 | f108rx5, f34v, f43r, f43v, f46v, f81v, f84v, f85r1
+  12 | t | ar + or + aiin | 12 | 3.81 | 3.1 | Y | 5 | N:4, E:3, T:3, G:1, H:1 | 11 | f108v, f113v, f115r, f33r, f33v, f39v, f55r, f58v, f85r2, f86v5, f86v6x2
+  13 | t | chey + ol + aiin | 12 | 3.90 | 3.1 | n | 5 | M:4, S:3, T:3, F:1, N:1 | 11 | f101rx2, f102v1, f106v, f108r, f114v, f43v, f75v, f76r, f80v, f82r, f86v5
+  14 | t | okeey + qokeey + chedy | 11 | 1.93 | 5.7 | n | 2 | T:10, M:1 | 8 | f103v, f108rx2, f108vx2, f111rx2, f112r, f112v, f116r, f76r
+  15 | p | aiin + ches | 11 | 3.57 | 3.1 | n | 5 | M:4, T:3, N:2, E:1, F:1 | 11 | f106v, f112r, f113r, f39r, f46r, f76r, f78r, f80v, f82r, f85r1, f86v6
+  16 | t | ol + aiin + cheey | 10 | 2.30 | 4.3 | n | 4 | T:7, M:1, N:1, S:1 | 9 | f101r, f104v, f106r, f107r, f108vx2, f113r, f115r, f82r, f85r1
+  17 | t | or + s + ol | 10 | 2.59 | 3.9 | n | 4 | N:3, S:3, G:2, M:2 | 8 | f101rx2, f102v2, f54rx2, f82r, f84v, f85r1, f86v4, f86v6
+  18 | t | or + dar + aiin | 10 | 2.64 | 3.8 | Y | 7 | E:3, N:2, B:1, F:1, G:1, S:1, T:1 | 9 | f101v, f113v, f15v, f33rx2, f40r, f43v, f50v, f85r1, f86v6
+  19 | p | al + kar | 10 | 2.94 | 3.4 | Y | 6 | T:5, D:1, E:1, G:1, M:1, N:1 | 10 | f105r, f105v, f111r, f112v, f113v, f31v, f34r, f55v, f76r, f86v5
+  20 | t | or + chey + ol | 10 | 3.18 | 3.1 | Y | 4 | M:4, N:3, T:2, S:1 | 9 | f101r, f111v, f116r, f75r, f75v, f80v, f82r, f86v5, f86v6x2
+  21 | t | chey + ol + qokaiin | 10 | 3.26 | 3.1 | n | 3 | T:6, M:3, N:1 | 9 | f103vx2, f106r, f107v, f108r, f114v, f76r, f79r, f82v, f86v6
+  22 | p | d + aiin | 10 | 3.29 | 3.0 | n | 5 | E:6, B:1, F:1, G:1, M:1 | 8 | f16r, f35vx2, f38r, f38vx2, f39v, f42v, f56r, f78v
+  23 | t | or + okal + aiin | 9 | 0.84 | 10.7 | Y | 5 | G:3, E:2, T:2, H:1, Q:1 | 8 | f106v, f108v, f33r, f39v, f55r, f55vx2, f58v, f95v2
+  24 | t | r + ol + aiin | 9 | 1.66 | 5.4 | Y | 4 | T:4, M:2, S:2, E:1 | 8 | f101r, f102v2, f105r, f108vx2, f114r, f39v, f79r, f82r
+  25 | t | or + ol + cheey | 9 | 1.86 | 4.8 | Y | 4 | T:4, M:3, N:1, O:1 | 9 | f103v, f104v, f115r, f116r, f75v, f79r, f82r, f85r1, f90v1
+  26 | t | y + or + aiin | 9 | 1.90 | 4.7 | n | 6 | G:3, H:2, E:1, M:1, N:1, T:1 | 7 | f111r, f39v, f55rx2, f55v, f58vx2, f76r, f86v6
+  27 | p | cho + l | 9 | 1.92 | 4.7 | n | 4 | T:5, C:2, D:1, E:1 | 6 | f106r, f107r, f111rx3, f21vx2, f29r, f35v
+  28 | p | o + am | 9 | 2.17 | 4.1 | Y | 7 | E:2, T:2, A:1, I:1, M:1, O:1, Q:1 | 8 | f112rx2, f1v, f40r, f40v, f67r1, f78r, f89v2, f94r
+  29 | t | l + qokain + chedy | 9 | 2.41 | 3.7 | n | 2 | M:5, T:4 | 9 | f104v, f111r, f111v, f116r, f75r, f76r, f78r, f80v, f81v
+  30 | t | ar + dar + aiin | 9 | 2.66 | 3.4 | n | 3 | E:4, N:3, T:2 | 7 | f105v, f115r, f33r, f33v, f39rx2, f85r1, f86v6x2
+  31 | p | al + lkar | 9 | 2.82 | 3.2 | Y | 3 | T:6, M:2, N:1 | 7 | f107r, f107v, f111r, f113rx2, f115v, f76rx2, f86v6
+  32 | t | chedy + okedy + otedy | 8 | 0.66 | 12.1 | n | 3 | M:6, F:1, T:1 | 6 | f108r, f41r, f75v, f76rx3, f76v, f84v
+  33 | t | okeey + l + qokeey | 8 | 1.01 | 7.9 | n | 2 | T:7, S:1 | 6 | f102r2, f103rx2, f103v, f111rx2, f111v, f116r
+  34 | t | s + aiin + cheey | 8 | 1.10 | 7.3 | Y | 5 | T:3, S:2, M:1, N:1, O:1 | 8 | f101r, f101v, f105v, f108v, f114v, f82r, f85r1, f89r2
+  35 | t | y + s + aiin | 8 | 1.41 | 5.7 | Y | 7 | H:2, D:1, G:1, N:1, O:1, Q:1, T:1 | 7 | f113r, f26r, f55v, f58vx2, f86v6, f88v, f94v
+  36 | t | ar + s + ol | 8 | 1.57 | 5.1 | n | 6 | T:3, C:1, M:1, N:1, O:1, S:1 | 8 | f102v2, f111r, f112r, f113r, f24r, f76r, f86v6, f90r2
+  37 | p | sh + s | 8 | 1.61 | 5.0 | Y | 8 | A:1, C:1, E:1, H:1, M:1, N:1, S:1, T:1 | 8 | f100v, f113r, f1r, f21r, f34r, f57r, f77r, f86v4
+  38 | p | qokchy + qotchy | 8 | 1.65 | 4.8 | n | 5 | C:4, B:1, D:1, F:1, T:1 | 7 | f10v, f115r, f18vx2, f21v, f24r, f32r, f44r
+  39 | t | s + dar + aiin | 8 | 1.76 | 4.5 | Y | 6 | N:2, S:2, D:1, E:1, G:1, O:1 | 7 | f101r, f101v, f26r, f33r, f54r, f85r1x2, f89v2
+  40 | p | sho + chodaiin | 8 | 1.79 | 4.5 | Y | 5 | A:3, C:2, D:1, F:1, S:1 | 8 | f101r, f1r, f20r, f21v, f28r, f2v, f3v, f42r
+  41 | t | daiin + okeey + qokeey | 8 | 1.88 | 4.3 | n | 3 | T:5, O:2, S:1 | 6 | f101v, f103v, f107v, f108vx2, f111r, f89r2x2
+  42 | t | ol + cheol + aiin | 8 | 1.92 | 4.2 | Y | 4 | S:3, M:2, T:2, E:1 | 6 | f101rx2, f102v2, f108rx2, f39r, f80r, f81v
+  43 | t | okeey + ol + qokeey | 8 | 1.97 | 4.1 | n | 2 | T:6, S:2 | 7 | f101v, f102r2, f103r, f103v, f108v, f111rx2, f112r
+  44 | p | os + aiin | 8 | 1.99 | 4.0 | Y | 6 | I:2, T:2, C:1, G:1, O:1, S:1 | 7 | f102v1, f104r, f105v, f17v, f55v, f67r2x2, f89v1
+  45 | p | dy + ty | 8 | 2.01 | 4.0 | Y | 5 | B:2, E:2, F:2, A:1, D:1 | 8 | f10v, f14r, f29r, f33v, f36v, f43r, f44r, f7v
+  46 | t | daiin + chol + dor | 8 | 2.01 | 4.0 | n | 4 | B:3, A:2, S:2, E:1 | 7 | f101r, f102r1, f11r, f15r, f2vx2, f37v, f9v
+  47 | p | qokedy + lkedy | 8 | 2.03 | 3.9 | Y | 2 | M:4, T:4 | 7 | f105r, f108r, f108v, f112r, f76rx2, f76v, f83r
+  48 | p | dy + keedy | 8 | 2.07 | 3.9 | n | 4 | M:4, E:2, G:1, T:1 | 8 | f111v, f33v, f34v, f55r, f75r, f77r, f78r, f80v
+  49 | p | ol + cheeor | 8 | 2.08 | 3.8 | Y | 6 | S:2, T:2, C:1, G:1, M:1, O:1 | 8 | f100v, f102v2, f108r, f115r, f17v, f50r, f80v, f90v2
+  50 | p | kor + ol | 8 | 2.21 | 3.6 | n | 4 | E:3, S:3, C:1, T:1 | 7 | f101rx2, f102v1, f105r, f22r, f33r, f39v, f40v
+TUPLES ZL3b tri (50 listed)
+   1 | p | #op ~ opc | 66 | 21.04 | 3.1 | Y | 12 | T:35, M:8, N:6, F:5, B:3, A:2, Q:2, C:1, G:1, H:1, O:1, S:1 | 43 | f104r, f104v, f105r, f105vx4, f106rx4, f106vx3, f107vx4, f108rx3, f111r, f111vx2, f112vx3, f113r, f113vx2, f114r, f114vx2, f115vx2, f13r, f16r, f20v, f3r, f41r, f44r, f44v, f46r, f48r, f54r, f58r, f76rx2, f76vx2, f78v, f81r, f83r, f83v, f85r1x2, f86v3, f86v5, f86v6x2, f89r2, f8v, f93v, f94r, f99r, f9v
+   2 | p | #po ~ opc | 55 | 14.05 | 3.9 | Y | 11 | T:26, M:8, N:6, C:5, B:2, D:2, H:2, A:1, F:1, G:1, Q:1 | 40 | f103r, f103v, f104v, f105vx2, f106rx2, f106v, f107rx2, f107vx2, f108rx2, f108v, f111r, f111vx4, f112v, f113r, f113vx3, f114r, f15v, f16r, f19v, f20v, f22r, f23v, f24r, f25v, f27v, f46v, f54r, f58r, f58v, f76rx2, f76v, f77r, f79r, f7v, f81rx2, f83v, f85r1, f86v5x2, f86v6x3, f93v
+   3 | p | #po ~ #op | 50 | 12.97 | 3.9 | Y | 10 | T:25, M:10, C:5, B:2, H:2, N:2, D:1, F:1, G:1, Q:1 | 36 | f103r, f103vx2, f105v, f106r, f106v, f107rx4, f107vx2, f108r, f108v, f111r, f111vx3, f112rx2, f112v, f113vx3, f114r, f15v, f16r, f19v, f20v, f22r, f23v, f24r, f27v, f46v, f54r, f58r, f58v, f76rx3, f76vx2, f79r, f80v, f81rx2, f83v, f85r1, f86v6, f93v
+   4 | p | #op ~ fch | 47 | 12.86 | 3.7 | Y | 11 | T:18, M:5, N:5, F:4, C:3, D:3, H:3, G:2, O:2, B:1, E:1 | 39 | f103v, f105r, f105v, f106v, f107r, f108r, f111r, f112r, f112v, f113r, f113vx4, f114rx3, f116r, f16r, f21r, f22r, f23r, f26vx2, f31v, f39r, f43r, f44r, f45r, f46v, f49v, f50r, f58r, f58v, f66r, f76vx2, f78v, f84r, f84v, f85r1, f86v3, f86v5x2, f86v6, f89v1, f90v2
+   5 | p | qop ~ #op | 47 | 13.95 | 3.4 | Y | 11 | T:24, M:5, N:5, B:3, F:3, G:2, A:1, C:1, D:1, O:1, Q:1 | 36 | f104rx2, f105vx4, f106r, f106v, f107vx2, f108r, f111r, f111v, f112r, f112vx2, f113v, f114rx3, f114vx2, f115vx2, f13r, f16r, f20v, f31v, f3r, f44r, f45r, f46r, f50r, f54r, f75v, f76r, f80v, f81r, f83r, f85r1x2, f86v3, f86v5, f86v6, f89v1, f94r, f9v
+   6 | p | opc ~ fch | 44 | 13.19 | 3.3 | Y | 11 | T:20, N:5, F:4, M:4, D:2, E:2, G:2, H:2, A:1, B:1, C:1 | 38 | f103v, f104v, f105rx2, f105v, f106r, f107r, f108r, f111r, f112r, f113rx3, f113v, f114rx2, f114v, f115r, f115v, f116r, f16r, f22r, f25v, f26v, f34v, f39r, f43r, f44r, f45r, f46v, f49v, f50r, f58v, f66r, f76vx2, f78v, f7r, f84v, f85r1, f86v3, f86v5, f86v6x2
+   7 | p | ypc ~ pch | 37 | 8.29 | 4.5 | Y | 11 | T:8, F:7, B:5, N:4, D:3, C:2, E:2, H:2, S:2, A:1, G:1 | 31 | f101r, f103r, f105rx2, f105vx2, f106v, f10r, f113r, f114r, f13r, f16r, f16v, f21r, f22r, f26rx2, f26v, f2r, f34vx2, f41v, f43v, f45r, f46r, f48r, f48vx2, f51r, f58r, f66r, f85r1x2, f86v3, f86v5, f99r, f9v
+   8 | p | #yp ~ pch | 36 | 9.77 | 3.7 | Y | 11 | F:8, T:7, N:5, B:3, C:3, D:3, E:2, S:2, A:1, G:1, H:1 | 29 | f101r, f105rx2, f105vx2, f106v, f10r, f113r, f114r, f16r, f17r, f21r, f22r, f26rx2, f26v, f2r, f34vx2, f41v, f43v, f45r, f46r, f46v, f48r, f48vx2, f51r, f66r, f85r1x3, f86v3, f86v5, f99r, f9v
+   9 | p | pol ~ opc | 36 | 9.85 | 3.7 | Y | 6 | T:19, M:9, N:4, A:2, C:1, S:1 | 26 | f101r, f103r, f103v, f105v, f107r, f107vx2, f108rx2, f108v, f111r, f111vx4, f112v, f113r, f113vx3, f22r, f3r, f76r, f76v, f77r, f79r, f7v, f81rx2, f82r, f83r, f83v, f85r1, f86v6x3
+  10 | p | pol ~ #op | 35 | 8.71 | 4.0 | Y | 7 | T:18, M:11, N:2, A:1, C:1, O:1, S:1 | 26 | f102r2, f103r, f103vx2, f105v, f107r, f107vx2, f108r, f108v, f111r, f111vx3, f112r, f112v, f113vx3, f22r, f3r, f76rx2, f76vx2, f79r, f80v, f81rx2, f83r, f83v, f84r, f85r1, f86v6, f89v1
+  11 | p | #pc ~ qop | 35 | 10.83 | 3.2 | Y | 7 | T:20, M:5, N:5, D:2, A:1, C:1, F:1 | 25 | f103r, f103v, f104rx3, f105vx2, f106r, f107v, f111r, f111v, f113rx3, f113v, f114v, f115r, f115vx3, f21r, f26v, f31v, f3r, f46r, f75v, f76r, f83rx2, f84r, f85r1x3, f86v3, f86v6
+  12 | p | #pc ~ fch | 32 | 10.15 | 3.2 | Y | 10 | T:14, F:4, D:3, M:3, N:3, A:1, C:1, E:1, H:1, Q:1 | 28 | f103v, f104v, f106r, f106v, f107r, f108v, f111r, f112r, f113rx3, f114v, f115r, f116r, f22r, f26r, f26v, f31v, f39r, f41v, f46r, f48vx2, f66r, f79v, f80v, f84v, f85r1x2, f85r2, f8r, f94v
+  13 | p | pch ~ #of | 31 | 9.43 | 3.3 | Y | 11 | T:10, M:5, F:4, D:3, H:3, A:1, C:1, E:1, G:1, N:1, Q:1 | 28 | f104r, f105r, f105v, f107r, f108r, f108v, f114rx3, f114v, f22r, f26r, f26vx2, f40v, f41v, f42r, f44r, f45r, f50v, f57r, f58r, f66r, f78v, f79v, f81r, f81v, f84v, f86v6, f8r, f95r1
+  14 | p | qop ~ fch | 26 | 7.38 | 3.5 | Y | 8 | T:11, N:6, D:3, F:2, E:1, G:1, H:1, O:1 | 23 | f104v, f105r, f105v, f106r, f111r, f113rx2, f114r, f114v, f115r, f115v, f25v, f31v, f32r, f34v, f44r, f45r, f50r, f65v, f85r1x2, f86v3, f86v5, f86v6x2, f89v1
+  15 | p | #po ~ qop | 26 | 7.86 | 3.3 | Y | 8 | T:13, M:4, N:4, A:1, B:1, C:1, D:1, G:1 | 22 | f104v, f106r, f108r, f111r, f111vx2, f112r, f112v, f113rx2, f113v, f114rx2, f16r, f20v, f25v, f54r, f77r, f7v, f80v, f81r, f81v, f85r1, f86v5x2, f86v6
+  16 | p | cph ~ fch | 25 | 7.41 | 3.4 | Y | 11 | T:5, C:4, E:3, F:3, H:2, M:2, N:2, D:1, O:1, Q:1, S:1 | 25 | f100r, f105r, f106v, f113r, f114r, f114v, f17v, f20r, f21r, f22r, f25r, f33r, f36r, f37r, f43r, f46r, f48v, f58r, f65v, f77r, f78v, f85r1, f86v6, f89v1, f94v
+  17 | p | #o# ~ #l# | 24 | 4.87 | 4.9 | Y | 9 | T:11, M:3, A:2, C:2, S:2, B:1, F:1, G:1, N:1 | 24 | f102r2, f102v2, f103v, f104r, f105v, f107v, f111r, f111v, f112r, f114r, f114v, f115v, f116r, f13v, f1v, f21r, f23v, f44v, f50v, f75v, f78r, f7v, f82v, fRos
+  18 | p | #op ~ #of | 23 | 4.64 | 5.0 | Y | 9 | T:9, M:3, D:2, F:2, H:2, O:2, G:1, I:1, Q:1 | 20 | f105r, f105v, f107r, f108r, f108v, f113v, f114rx3, f26vx2, f44r, f45r, f50v, f57r, f58r, f67v2, f81r, f84r, f84v, f89v1, f90v2, f95r1
+  19 | p | psh ~ #op | 23 | 5.09 | 4.5 | Y | 9 | M:7, F:5, T:5, C:1, G:1, H:1, N:1, Q:1, S:1 | 20 | f104r, f106r, f106v, f107r, f113v, f24v, f41r, f43rx2, f44r, f48r, f50r, f58r, f76rx2, f76v, f79r, f80vx2, f84r, f86v5, f96v, f99r
+  20 | p | #po ~ fch | 22 | 7.26 | 3.0 | n | 9 | T:13, E:2, C:1, D:1, F:1, H:1, M:1, N:1, Q:1 | 18 | f103vx2, f104v, f105r, f106v, f107r, f111rx2, f113r, f113vx3, f115r, f22r, f25v, f33v, f36r, f46v, f66v, f76v, f86v6, f95v2
+  21 | p | psh ~ opc | 21 | 4.81 | 4.4 | Y | 7 | T:7, F:6, M:4, G:1, H:1, N:1, S:1 | 19 | f104r, f105r, f106r, f106v, f107r, f113v, f114v, f41r, f43rx2, f44r, f47v, f48r, f50r, f58r, f76rx2, f76v, f79r, f86v5, f99r
+  22 | p | pch ~ hep | 21 | 6.73 | 3.1 | Y | 6 | T:7, F:5, M:4, O:3, D:1, N:1 | 17 | f103rx4, f106v, f113r, f115v, f26r, f41r, f41v, f43v, f46rx2, f75r, f80r, f83r, f83v, f86v5, f87v, f89r1, f90v1
+  23 | p | #op ~ ofc | 20 | 4.35 | 4.6 | Y | 8 | T:7, M:4, D:2, F:2, O:2, E:1, H:1, N:1 | 17 | f107r, f108r, f111r, f113v, f114rx3, f26vx2, f39r, f44r, f45r, f58v, f76v, f78v, f84r, f84v, f85r1, f89v1, f90v2
+  24 | p | pch ~ qof | 20 | 5.72 | 3.5 | Y | 9 | T:6, E:3, M:3, N:3, B:1, D:1, F:1, G:1, H:1 | 18 | f106v, f108r, f111r, f113rx2, f115r, f25v, f33r, f36v, f39r, f41v, f52r, f58v, f76r, f76v, f78v, f85r1x2, f86v6, f9v
+  25 | p | #ts ~ opc | 20 | 6.45 | 3.1 | n | 8 | T:10, G:2, N:2, Q:2, A:1, B:1, I:1, M:1 | 17 | f104rx2, f106r, f106vx2, f107v, f113r, f114vx2, f115v, f13r, f51r, f53v, f68r2, f78r, f7v, f86v3, f86v6, f94v, f95r2
+  26 | p | #op ~ pai | 19 | 5.97 | 3.2 | n | 4 | T:16, C:1, H:1, N:1 | 14 | f104r, f105rx2, f107rx3, f107v, f108r, f111v, f112r, f113vx2, f114r, f114vx2, f115r, f17r, f58v, f86v6
+  27 | p | tsh ~ qop | 19 | 6.16 | 3.1 | n | 7 | T:9, N:3, A:2, M:2, B:1, G:1, Q:1 | 16 | f104r, f106vx3, f107v, f113r, f114vx2, f115v, f13r, f3r, f53v, f78r, f7v, f80v, f86v3, f86v5, f86v6, f95r2
+  28 | p | ypc ~ opc | 18 | 3.87 | 4.7 | Y | 8 | T:7, B:3, F:3, C:1, E:1, G:1, H:1, N:1 | 16 | f105rx2, f105vx2, f106v, f10r, f113r, f114r, f13r, f16r, f21r, f34v, f45r, f46r, f48r, f51r, f66r, f86v3
+  29 | p | pol ~ qop | 18 | 5.50 | 3.3 | Y | 5 | T:8, M:5, A:2, N:2, O:1 | 16 | f108r, f111r, f111vx2, f112r, f112v, f113r, f113v, f3r, f77r, f7v, f80v, f81r, f81v, f83r, f86v6x2, f89v1
+  30 | p | #pc ~ opa | 18 | 5.63 | 3.2 | Y | 5 | T:12, D:2, N:2, H:1, S:1 | 17 | f102v2, f103v, f104r, f105r, f105v, f106r, f107v, f111v, f112r, f112v, f113v, f114v, f116r, f26v, f31v, f58v, f85r1x2
+  31 | p | ypc ~ #pc | 17 | 3.13 | 5.4 | Y | 9 | F:4, B:3, C:2, D:2, N:2, E:1, H:1, S:1, T:1 | 16 | f103r, f10r, f16v, f21r, f22r, f26r, f26v, f34v, f41v, f43v, f48vx2, f58r, f85r1, f86v5, f99r, f9v
+  32 | p | #ps ~ opc | 17 | 3.23 | 5.3 | Y | 5 | F:6, T:6, M:3, G:1, N:1 | 16 | f104r, f106r, f106v, f107r, f111v, f114v, f41r, f43rx2, f44r, f47v, f48r, f50r, f76r, f76v, f79r, f86v5
+  33 | p | #ps ~ #op | 17 | 3.32 | 5.1 | Y | 6 | F:5, T:5, M:4, G:1, N:1, Q:1 | 16 | f104r, f106r, f106v, f107r, f111v, f41r, f43rx2, f44r, f48r, f50r, f76r, f76v, f79r, f80v, f86v5, f96v
+  34 | p | #yp ~ opc | 17 | 4.47 | 3.8 | Y | 8 | T:6, F:4, B:2, C:1, E:1, G:1, H:1, N:1 | 15 | f105rx2, f105vx2, f10r, f113r, f114r, f16r, f21r, f34v, f45r, f46r, f46v, f48r, f51r, f66r, f86v3
+  35 | p | #yp ~ #op | 17 | 4.56 | 3.7 | Y | 7 | T:5, F:4, C:2, H:2, N:2, B:1, G:1 | 15 | f105rx2, f105v, f107r, f114r, f16r, f17rx2, f45r, f46r, f46v, f48r, f51r, f58v, f66r, f86v3, f86v5
+  36 | p | pch ~ ocp | 17 | 5.05 | 3.4 | Y | 9 | T:6, F:2, G:2, N:2, C:1, D:1, O:1, Q:1, S:1 | 16 | f100r, f104r, f104v, f113r, f114r, f114vx2, f22r, f28r, f43r, f46r, f52v, f54r, f85r1, f86v6, f87r, f93v
+  37 | p | #ts ~ qop | 16 | 2.95 | 5.4 | Y | 7 | T:7, A:2, M:2, N:2, B:1, G:1, Q:1 | 13 | f106vx3, f107v, f114vx2, f115v, f13r, f3r, f53v, f78r, f7v, f80v, f86v3, f86v6, f95r2
+  38 | p | #yp ~ fch | 16 | 3.04 | 5.3 | Y | 8 | F:6, N:3, T:2, B:1, C:1, D:1, E:1, H:1 | 15 | f106v, f113r, f16r, f22r, f26r, f34v, f41v, f43r, f45r, f46v, f48vx2, f66r, f85r1, f86v3, f86v5
+  39 | p | #yp ~ #pc | 16 | 3.54 | 4.5 | Y | 8 | F:4, N:3, B:2, C:2, D:2, E:1, S:1, T:1 | 14 | f106v, f10r, f21r, f22r, f26r, f26v, f34v, f41v, f43v, f48vx2, f85r1x2, f86v5, f99r, f9v
+  40 | p | opa ~ fch | 16 | 3.90 | 4.1 | Y | 4 | T:8, M:3, N:3, D:2 | 11 | f105v, f108r, f112v, f113vx3, f114rx2, f26v, f31v, f76vx2, f84r, f85r1, f86v6x2
+  41 | p | cph ~ cfh | 16 | 3.94 | 4.1 | Y | 9 | G:4, A:3, H:2, S:2, B:1, C:1, E:1, M:1, T:1 | 15 | f100r, f104v, f11r, f1rx2, f24v, f36r, f49v, f52r, f53r, f54r, f58r, f65v, f76r, f8r, f99r
+  42 | p | opc ~ ofc | 16 | 4.38 | 3.7 | Y | 7 | T:6, M:3, D:2, F:2, E:1, H:1, N:1 | 15 | f107r, f108r, f111r, f114rx2, f114v, f25v, f26v, f39r, f44r, f45r, f58v, f76v, f78v, f84v, f85r1
+  43 | p | pol ~ fch | 16 | 4.51 | 3.5 | Y | 6 | T:9, N:2, O:2, C:1, H:1, M:1 | 12 | f103vx2, f105r, f106vx2, f111r, f113vx2, f115r, f22r, f58r, f76v, f86v6x2, f89v1, f90v2
+  44 | p | qop ~ opa | 16 | 4.74 | 3.4 | Y | 5 | T:10, N:3, D:1, M:1, Q:1 | 13 | f104r, f105vx2, f107v, f108r, f112r, f113v, f114r, f114vx2, f31v, f80v, f85r1, f86v6x2, f94r
+  45 | p | opc ~ #of | 16 | 4.83 | 3.3 | Y | 6 | T:8, F:2, H:2, M:2, D:1, G:1 | 15 | f104r, f105r, f105v, f107r, f108r, f114rx2, f114v, f26v, f44r, f45r, f50v, f57r, f58r, f81r, f84v
+  46 | p | cph ~ #fc | 15 | 2.80 | 5.4 | Y | 9 | C:4, T:4, D:1, E:1, F:1, H:1, O:1, Q:1, S:1 | 15 | f100r, f105r, f106v, f114r, f114v, f17v, f20r, f21r, f22r, f25r, f36r, f48v, f65v, f89v1, f94v
+  47 | p | cfh ~ #op | 15 | 3.73 | 4.0 | Y | 9 | T:3, H:2, M:2, N:2, O:2, B:1, C:1, D:1, G:1 | 15 | f103r, f111v, f114r, f24v, f31v, f54r, f58r, f58v, f76r, f84v, f86v3, f86v5, f89v1, f90v2, f9v
+  48 | p | ypc ~ #op | 15 | 3.81 | 3.9 | Y | 7 | T:4, B:3, F:3, H:2, C:1, G:1, N:1 | 15 | f105r, f105v, f106v, f114r, f13r, f16r, f17r, f45r, f46r, f48r, f51r, f58r, f66r, f86v3, f9v
+  49 | p | cfh ~ opc | 15 | 3.94 | 3.8 | Y | 7 | N:4, T:3, B:2, M:2, Q:2, G:1, H:1 | 14 | f103r, f111v, f113r, f13r, f54r, f58v, f76r, f84v, f86v3, f86v5x2, f86v6, f95r2, f96r, f9v
+  50 | p | #cp ~ fch | 15 | 4.13 | 3.6 | Y | 11 | E:2, F:2, H:2, M:2, C:1, D:1, N:1, O:1, Q:1, S:1, T:1 | 15 | f100r, f105r, f17v, f25r, f33r, f36r, f43r, f48v, f58r, f65v, f77r, f78v, f86v6, f89v1, f94v
+TUPLES RF1b core (50 listed)
+   1 | t | y + s + ir | 16 | 4.73 | 3.4 | n | 6 | T:9, E:2, H:2, F:1, N:1, O:1 | 15 | f104r, f104vx2, f105r, f105v, f106v, f108v, f114r, f116r, f34r, f34v, f46v, f57r, f58r, f86v3, f89v2
+   2 | t | l + s + iiin | 15 | 4.61 | 3.3 | Y | 6 | M:5, T:5, N:2, E:1, O:1, S:1 | 13 | f102v2, f105vx2, f107v, f112r, f112v, f33r, f76r, f76v, f78vx2, f80r, f86v5, f86v6, f89r2
+   3 | t | r + in + ck | 14 | 4.07 | 3.4 | Y | 7 | T:7, M:2, A:1, E:1, G:1, I:1, Q:1 | 12 | f103v, f104r, f108v, f111v, f116rx3, f40v, f55r, f67r2, f6v, f76r, f84r, f95v2
+   4 | p | p + pched | 13 | 3.36 | 3.9 | Y | 4 | T:7, M:3, N:2, D:1 | 10 | f103rx2, f106v, f107v, f114rx2, f115v, f26v, f81r, f82r, f83r, f86v6x2
+   5 | t | l + or + kaiin | 13 | 3.89 | 3.3 | Y | 6 | T:5, M:3, N:2, B:1, G:1, O:1 | 11 | f106r, f106v, f107r, f112v, f113v, f56r, f80rx2, f84v, f86v6x2, f89v1, f9v
+   6 | p | pch + p | 12 | 2.37 | 5.1 | Y | 7 | N:3, T:3, B:2, A:1, F:1, M:1, Q:1 | 12 | f104r, f111v, f114v, f13r, f3r, f45r, f81r, f85r1, f86v5, f86v6, f93v, f9v
+   7 | p | p + pche | 12 | 3.08 | 3.9 | Y | 5 | T:5, N:3, F:2, B:1, M:1 | 12 | f103r, f105r, f105v, f106r, f106v, f16r, f43v, f44r, f80r, f86v3, f86v5, f86v6
+   8 | p | am + keed | 12 | 3.69 | 3.3 | n | 3 | T:10, G:1, N:1 | 8 | f105rx2, f108r, f108vx2, f111rx3, f113v, f114r, f55r, f86v6
+   9 | t | r + s + iiin | 12 | 3.98 | 3.0 | n | 6 | M:4, T:4, E:1, I:1, N:1, O:1 | 11 | f105v, f112r, f115r, f116r, f33r, f68v3, f76r, f76v, f78vx2, f86v6, f89r2
+  10 | t | sh + chd + ed | 11 | 2.34 | 4.7 | Y | 6 | T:5, Q:2, E:1, F:1, G:1, N:1 | 11 | f106v, f108r, f112r, f112v, f115r, f34v, f48v, f50r, f86v6, f94v, f95v1
+  11 | t | s + iin + ir | 11 | 2.95 | 3.7 | n | 4 | T:8, H:1, M:1, N:1 | 11 | f104v, f105r, f105v, f106v, f108v, f111r, f114r, f116r, f58v, f79r, f86v3
+  12 | t | k + e + q | 11 | 3.46 | 3.2 | Y | 4 | T:5, M:3, S:2, N:1 | 10 | f102r2x2, f111r, f111v, f112r, f113v, f115r, f75r, f76r, f83v, f86v6
+  13 | p | pchd + shd | 10 | 1.54 | 6.5 | Y | 6 | T:3, E:2, Q:2, D:1, F:1, N:1 | 9 | f103v, f106vx2, f26v, f33r, f34v, f46r, f86v3, f95r1, f95r2
+  14 | t | r + iin + eeo | 10 | 2.01 | 5.0 | Y | 6 | T:3, N:2, O:2, H:1, I:1, Q:1 | 10 | f105r, f113r, f113v, f66v, f67r2, f86v4, f86v6, f88v, f90v1, f95v1
+  15 | t | aiin + s + q | 10 | 2.34 | 4.3 | n | 5 | M:4, T:3, D:1, E:1, N:1 | 8 | f112r, f115rx2, f32v, f37r, f76rx2, f76v, f84r, f86v3
+  16 | t | d + ol + dl | 10 | 2.50 | 4.0 | Y | 5 | T:5, M:2, B:1, D:1, E:1 | 10 | f104v, f105v, f106v, f108r, f114v, f11r, f28r, f39r, f75v, f76v
+  17 | t | e + iin + eeo | 10 | 2.62 | 3.8 | n | 4 | N:3, O:3, T:3, I:1 | 10 | f105r, f113v, f114v, f67r2, f86v3, f86v4, f86v6, f88v, f90v1, f90v2
+  18 | t | e + ain + q | 10 | 2.69 | 3.7 | n | 3 | M:6, T:3, N:1 | 7 | f111v, f112r, f116r, f75r, f76rx4, f83v, f86v3
+  19 | p | chd + pchd | 10 | 3.02 | 3.3 | n | 4 | T:6, F:2, M:1, N:1 | 10 | f103v, f104r, f106r, f107v, f114r, f114v, f43r, f46r, f75v, f85r1
+  20 | t | d + chd + shd | 10 | 3.21 | 3.1 | n | 6 | M:3, F:2, T:2, G:1, N:1, Q:1 | 10 | f103r, f106v, f43r, f46r, f55r, f76r, f81v, f84v, f85r1, f95r2
+  21 | t | r + s + eee | 10 | 3.23 | 3.1 | n | 7 | C:2, S:2, T:2, B:1, G:1, N:1, O:1 | 9 | f100r, f101v, f111r, f113r, f13r, f18vx2, f53r, f86v5, f89v2
+  22 | p | p + f | 9 | 1.94 | 4.6 | Y | 7 | N:3, B:1, F:1, H:1, I:1, S:1, T:1 | 8 | f102r1, f105v, f43v, f65v, f67r2, f86v5, f86v6x2, f9v
+  23 | p | pche + pched | 9 | 2.18 | 4.1 | Y | 5 | T:5, G:1, H:1, M:1, N:1 | 8 | f106r, f106v, f111vx2, f113r, f51r, f66r, f83v, f86v6
+  24 | t | d + s + aiir | 9 | 2.49 | 3.6 | Y | 9 | A:1, B:1, F:1, G:1, H:1, J:1, O:1, S:1, T:1 | 9 | f101r, f105r, f46r, f55r, f58r, f6r, f70r2, f89v2, f9r
+  25 | t | ed + ched + ked | 9 | 2.66 | 3.4 | n | 2 | T:6, M:3 | 6 | f108rx4, f108v, f115v, f78r, f81r, f83r
+  26 | t | sh + d + shd | 9 | 2.83 | 3.2 | n | 5 | F:3, T:3, E:1, H:1, N:1 | 7 | f103rx2, f106v, f33v, f43r, f46rx2, f66r, f86v6
+  27 | t | ckh + e + ckhe | 9 | 2.91 | 3.1 | n | 3 | S:5, G:3, O:1 | 8 | f101r, f101v, f102v1, f51rx2, f53v, f90r2, f99r, f99v
+  28 | p | an + in | 8 | 1.48 | 5.4 | Y | 3 | T:5, M:2, A:1 | 7 | f103vx2, f108v, f111v, f116r, f5r, f76v, f79v
+  29 | t | y + chd + shd | 8 | 1.54 | 5.2 | Y | 5 | M:3, N:2, F:1, Q:1, T:1 | 8 | f103v, f43r, f76r, f81v, f84v, f85r1, f86v3, f95r2
+  30 | t | ar + iin + eee | 8 | 1.58 | 5.1 | Y | 4 | N:3, T:3, O:1, S:1 | 6 | f102v2, f107vx2, f113r, f85r1, f86v5x2, f89v2
+  31 | t | d + chd + pchd | 8 | 1.62 | 4.9 | n | 3 | T:5, F:2, N:1 | 8 | f104r, f106r, f107v, f114r, f114v, f43r, f46r, f85r1
+  32 | t | d + p + pched | 8 | 1.82 | 4.4 | Y | 3 | T:5, M:2, D:1 | 6 | f103rx2, f106v, f114rx2, f26v, f82r, f83r
+  33 | p | pched + pchd | 8 | 1.85 | 4.3 | Y | 4 | T:5, D:1, M:1, N:1 | 8 | f105v, f107v, f112v, f114r, f115v, f26v, f76r, f85r1
+  34 | t | daiin + ol + oiin | 8 | 2.10 | 3.8 | n | 5 | C:3, S:2, A:1, E:1, O:1 | 7 | f102v1x2, f20v, f21r, f22r, f37v, f5v, f89r2
+  35 | t | s + o + ir | 8 | 2.19 | 3.7 | n | 4 | T:4, H:2, N:1, O:1 | 8 | f104v, f106v, f108v, f111v, f57r, f58v, f86v5, f89v2
+  36 | t | y + she + shed | 8 | 2.29 | 3.5 | n | 4 | T:4, M:2, F:1, Q:1 | 7 | f103vx2, f111r, f116r, f46r, f76r, f84r, f95v1
+  37 | t | e + ee + ot | 8 | 2.35 | 3.4 | Y | 4 | T:4, O:2, C:1, F:1 | 8 | f105r, f105v, f107v, f116r, f21r, f48r, f89r2, f89v2
+  38 | t | ar + o + ir | 8 | 2.47 | 3.2 | n | 3 | T:6, H:1, N:1 | 8 | f104r, f104v, f106v, f111v, f114r, f115r, f58v, f86v5
+  39 | p | ck + dsh | 8 | 2.58 | 3.1 | n | 5 | M:3, D:2, F:1, O:1, T:1 | 8 | f108v, f28r, f32v, f44v, f75r, f76v, f83r, f89r1
+  40 | t | l + in + am | 8 | 2.66 | 3.0 | n | 4 | T:5, M:1, N:1, Q:1 | 7 | f103r, f104r, f111v, f116rx2, f79v, f86v3, f95r2
+  41 | p | cphe + pch | 7 | 0.41 | 17.1 | Y | 6 | T:2, H:1, M:1, N:1, O:1, S:1 | 7 | f112v, f114r, f58v, f76v, f86v6, f87r, f99r
+  42 | t | d + pched + pchd | 7 | 1.06 | 6.6 | Y | 4 | T:4, D:1, M:1, N:1 | 7 | f105v, f107v, f112v, f114r, f26v, f76r, f85r1
+  43 | t | k + ol + old | 7 | 1.24 | 5.6 | n | 4 | F:3, O:2, E:1, H:1 | 7 | f40r, f43r, f46r, f48v, f58v, f88r, f89r2
+  44 | t | r + o + chee | 7 | 1.26 | 5.6 | n | 3 | T:5, D:1, F:1 | 7 | f104v, f106r, f106v, f115r, f115v, f31v, f41v
+  45 | t | l + air + ir | 7 | 1.35 | 5.2 | n | 3 | T:5, E:1, N:1 | 6 | f104r, f105r, f105vx2, f114r, f34v, f86v5
+  46 | t | s + t + am | 7 | 1.47 | 4.8 | Y | 5 | H:2, T:2, F:1, M:1, O:1 | 7 | f103r, f113v, f42r, f58r, f58v, f80r, f89v2
+  47 | t | ar + in + am | 7 | 1.49 | 4.7 | Y | 4 | T:3, F:2, N:1, Q:1 | 7 | f104r, f107r, f111v, f43r, f43v, f86v6, f95r2
+  48 | t | sh + m + ed | 7 | 1.50 | 4.7 | n | 3 | T:4, Q:2, F:1 | 7 | f103v, f108r, f111v, f112r, f48v, f94v, f95v1
+  49 | t | e + ain + shct | 7 | 1.58 | 4.4 | n | 2 | T:5, M:2 | 5 | f103rx2, f111vx2, f116r, f76r, f80v
+  50 | t | ar + ck + am | 7 | 1.75 | 4.0 | n | 5 | F:2, T:2, E:1, H:1, Q:1 | 7 | f106r, f116r, f34v, f43v, f46v, f58r, f95r2
+TUPLES RF1b word (50 listed)
+   1 | t | or + ol + aiin | 26 | 5.72 | 4.5 | Y | 8 | N:6, S:6, T:4, E:3, M:3, G:2, O:1, Q:1 | 21 | f101rx2, f101vx2, f102v2, f106v, f113v, f114r, f115r, f33r, f39v, f40r, f50v, f54r, f75v, f79r, f81r, f86v4x2, f86v5x2, f86v6x2, f90v1, f94r, f99v
+   2 | p | r + cheey | 20 | 6.51 | 3.1 | Y | 6 | M:7, T:6, G:2, O:2, S:2, D:1 | 15 | f101vx2, f104v, f108vx2, f115rx2, f115v, f31r, f49r, f49v, f75r, f76v, f77r, f77v, f82r, f82vx2, f89r2x2
+   3 | t | s + ol + aiin | 19 | 3.67 | 5.2 | Y | 7 | S:5, M:4, O:3, G:2, N:2, T:2, Q:1 | 16 | f101rx3, f101v, f102v2, f104v, f113r, f54r, f55v, f78rx2, f81v, f82r, f85r1, f86v6, f89v2, f90v1, f90v2, f94v
+   4 | t | daiin + s + aiin | 19 | 6.33 | 3.0 | n | 10 | S:6, D:2, G:2, O:2, T:2, B:1, E:1, F:1, N:1, Q:1 | 16 | f101rx2, f101v, f104r, f104v, f16r, f31rx2, f35r, f46r, f54r, f54v, f85r1, f88r, f89r2, f95v2, f99rx2, f99v
+   5 | p | okedy + otedy | 17 | 4.40 | 3.9 | n | 3 | M:10, T:5, E:2 | 11 | f108rx4, f112r, f34r, f39v, f75rx2, f75v, f76rx3, f76v, f78v, f84r, f84v
+   6 | p | qokar + okar | 17 | 5.07 | 3.4 | n | 6 | T:6, E:3, N:3, G:2, M:2, Q:1 | 12 | f104rx2, f106v, f113vx2, f116r, f39v, f40rx2, f55rx2, f76r, f84v, f85r1x2, f86v6, f95r2
+   7 | t | ar + or + aiin | 15 | 4.40 | 3.4 | n | 4 | N:7, T:4, E:3, G:1 | 12 | f104v, f108v, f113v, f115r, f33r, f33v, f39v, f55r, f85r2x2, f86v4, f86v5, f86v6x3
+   8 | t | chey + ol + aiin | 14 | 4.26 | 3.3 | Y | 5 | M:4, T:4, S:3, N:2, F:1 | 13 | f101rx2, f102v1, f104r, f106v, f108r, f114v, f43v, f75v, f76r, f80v, f82r, f86v5, f86v6
+   9 | t | ar + or + ol | 13 | 3.37 | 3.9 | Y | 4 | N:4, T:4, M:3, E:2 | 11 | f104vx2, f111v, f115r, f34r, f40r, f77v, f78r, f81r, f86v4, f86v5, f86v6x2
+  10 | p | r + ain | 13 | 3.80 | 3.4 | n | 2 | M:8, T:5 | 10 | f103v, f106v, f108v, f116rx2, f75r, f76v, f77rx2, f79v, f82r, f82vx2
+  11 | t | or + s + aiin | 12 | 2.82 | 4.3 | Y | 6 | N:4, S:4, E:1, G:1, O:1, T:1 | 10 | f101r, f101vx2, f102v2, f104r, f33r, f54r, f85r1x2, f86v5, f86v6, f90v1
+  12 | p | d + aiin | 12 | 3.29 | 3.6 | Y | 7 | E:4, G:2, T:2, D:1, F:1, M:1, N:1 | 11 | f104v, f111r, f25v, f35vx2, f38r, f38v, f42v, f49v, f56r, f78v, f86v4
+  13 | t | ar + al + aiin | 12 | 3.94 | 3.0 | Y | 4 | T:6, N:3, M:2, G:1 | 11 | f105v, f112v, f113r, f113vx2, f115r, f55r, f76r, f80v, f85r1, f86v5, f86v6
+  14 | p | aiin + ches | 12 | 3.96 | 3.0 | n | 5 | M:5, T:3, N:2, E:1, F:1 | 12 | f106v, f112r, f113r, f39r, f46r, f76r, f77r, f78r, f80v, f82r, f85r1, f86v6
+  15 | t | ar + s + ol | 11 | 1.73 | 6.4 | Y | 8 | M:4, C:1, G:1, H:1, N:1, O:1, S:1, T:1 | 10 | f102v2, f113r, f24r, f54r, f58v, f76r, f78rx2, f82r, f86v6, f90r2
+  16 | t | r + ol + aiin | 11 | 2.02 | 5.4 | Y | 4 | T:5, M:3, S:2, Q:1 | 9 | f101r, f102v1, f105r, f108vx3, f115v, f77r, f79r, f82r, f95v1
+  17 | p | s + air | 11 | 3.17 | 3.5 | n | 7 | H:3, E:2, T:2, F:1, I:1, M:1, O:1 | 11 | f104v, f105v, f34v, f40v, f46v, f57r, f58r, f58v, f67r1, f83r, f89v2
+  18 | t | or + dar + ol | 11 | 3.32 | 3.3 | Y | 7 | M:4, S:2, E:1, G:1, N:1, Q:1, T:1 | 11 | f101r, f101v, f113v, f34v, f50v, f77v, f79r, f81v, f84r, f86v6, f95r1
+  19 | t | or + chey + ol | 11 | 3.61 | 3.0 | Y | 4 | M:4, N:3, T:3, S:1 | 9 | f101r, f111v, f116rx2, f75r, f75v, f77v, f80v, f86v5, f86v6x2
+  20 | p | chdy + okedy | 11 | 3.63 | 3.0 | n | 4 | T:5, F:3, M:2, N:1 | 7 | f108rx5, f43r, f43v, f46v, f81v, f84v, f85r1
+  21 | t | s + aiin + chedy | 10 | 1.74 | 5.7 | Y | 4 | M:4, T:4, D:1, H:1 | 9 | f103r, f104r, f104v, f113r, f31r, f66v, f76vx2, f78r, f81v
+  22 | t | okeey + qokeey + chedy | 10 | 1.91 | 5.2 | n | 2 | T:9, M:1 | 8 | f103v, f108rx2, f108vx2, f111r, f112r, f112v, f116r, f76r
+  23 | t | or + chol + ol | 10 | 2.80 | 3.6 | Y | 5 | S:4, G:3, O:1, Q:1, T:1 | 6 | f101rx3, f102v2, f106v, f54rx3, f90v1, f94r
+  24 | t | or + s + ol | 10 | 3.16 | 3.2 | Y | 5 | S:4, M:3, G:1, N:1, O:1 | 9 | f101rx2, f101v, f102v2, f54r, f78r, f84r, f84v, f86v6, f90v1
+  25 | t | daiin + chor + ol | 10 | 3.30 | 3.0 | n | 6 | O:3, G:2, S:2, B:1, C:1, N:1 | 9 | f101r, f101v, f15v, f22r, f54rx2, f85r1, f89r2, f89v1, f90r2
+  26 | t | or + okal + aiin | 9 | 1.04 | 8.7 | Y | 5 | G:3, E:2, T:2, H:1, Q:1 | 8 | f106v, f108v, f33r, f39v, f55r, f55vx2, f58v, f95v2
+  27 | t | r + chey + aiin | 9 | 1.07 | 8.4 | Y | 6 | M:3, S:2, E:1, G:1, O:1, T:1 | 9 | f101r, f102v1, f108v, f38r, f56r, f76v, f77v, f82r, f89r2
+  28 | t | s + dar + aiin | 9 | 1.92 | 4.7 | Y | 6 | S:3, N:2, D:1, E:1, G:1, O:1 | 7 | f101r, f101vx2, f26r, f33r, f54r, f85r1x2, f89v2
+  29 | t | s + chey + aiin | 9 | 1.92 | 4.7 | Y | 5 | T:3, M:2, S:2, D:1, O:1 | 9 | f101r, f102v2, f103r, f104r, f105r, f31r, f76v, f82r, f89r2
+  30 | t | okaiin + ol + aiin | 9 | 2.36 | 3.8 | Y | 5 | T:4, E:2, G:1, M:1, N:1 | 9 | f105v, f107v, f108v, f114r, f39v, f40r, f55v, f81v, f85r1
+  31 | t | ol + aiin + cheey | 9 | 2.68 | 3.4 | n | 2 | T:8, M:1 | 8 | f104v, f106r, f107r, f108vx2, f113r, f115r, f115v, f82r
+  32 | t | ol + al + qokain | 9 | 2.78 | 3.2 | n | 2 | M:7, T:2 | 6 | f111r, f116r, f75v, f80vx4, f81r, f84v
+  33 | t | qokal + qokaiin + chedy | 9 | 2.86 | 3.1 | n | 2 | M:7, T:2 | 7 | f104r, f107r, f77r, f77vx2, f80r, f83r, f83vx2
+  34 | p | otaiin + qotar | 9 | 2.89 | 3.1 | n | 4 | T:6, E:1, M:1, N:1 | 8 | f104v, f105r, f113v, f114rx2, f114v, f36v, f82v, f86v3
+  35 | t | or + al + aiin | 9 | 2.90 | 3.1 | Y | 6 | T:3, N:2, E:1, G:1, H:1, S:1 | 9 | f101r, f111r, f113v, f115r, f33r, f55r, f58v, f86v4, f86v6
+  36 | t | ar + al + otaiin | 8 | 1.21 | 6.6 | n | 2 | T:7, N:1 | 6 | f103r, f104v, f105v, f112v, f113vx3, f85r1
+  37 | t | s + al + aiin | 8 | 1.26 | 6.3 | Y | 6 | S:2, T:2, E:1, H:1, M:1, N:1 | 8 | f101r, f102v2, f105r, f113r, f33r, f58v, f76v, f85r1
+  38 | t | daiin + okaiin + qokaiin | 8 | 1.27 | 6.3 | Y | 3 | T:5, M:2, G:1 | 8 | f103v, f111v, f113r, f113v, f116r, f55r, f80v, f84v
+  39 | t | s + aiin + cheey | 8 | 1.52 | 5.3 | Y | 5 | T:3, O:2, M:1, N:1, S:1 | 8 | f101v, f104v, f105v, f114v, f82r, f85r1, f88v, f89r2
+  40 | p | sho + chodaiin | 8 | 1.67 | 4.8 | Y | 5 | A:3, C:2, D:1, F:1, S:1 | 8 | f101r, f1r, f20r, f21v, f28r, f2v, f3v, f42r
+  41 | t | daiin + chey + okeey | 8 | 1.72 | 4.7 | Y | 5 | O:3, T:2, H:1, M:1, S:1 | 7 | f101v, f103v, f104v, f58v, f81v, f89r2x2, f89v2
+  42 | p | qotchy + qokchy | 8 | 1.74 | 4.6 | n | 5 | C:4, B:1, D:1, F:1, T:1 | 7 | f10v, f115r, f18vx2, f21v, f24r, f32r, f44r
+  43 | t | r + chey + ol | 8 | 1.78 | 4.5 | n | 2 | M:6, S:2 | 6 | f101r, f102v1, f75r, f80rx3, f82r, f82v
+  44 | p | r + cho | 8 | 1.89 | 4.2 | Y | 6 | G:2, S:2, C:1, D:1, H:1, T:1 | 8 | f101r, f101v, f105r, f24r, f25v, f49v, f51v, f58r
+  45 | t | s + cheol + aiin | 8 | 1.93 | 4.1 | n | 3 | O:4, S:3, M:1 | 6 | f101r, f102v2x2, f81v, f87r, f88v, f89r2x2
+  46 | t | daiin + chol + dor | 8 | 1.94 | 4.1 | n | 4 | B:3, A:2, S:2, E:1 | 7 | f101r, f102r1, f11r, f15r, f2vx2, f37v, f9v
+  47 | p | qokedy + lkedy | 8 | 2.07 | 3.9 | Y | 2 | M:4, T:4 | 7 | f105r, f108r, f108v, f112r, f76rx2, f76v, f83r
+  48 | t | ar + s + aiin | 8 | 2.11 | 3.8 | n | 5 | M:2, N:2, T:2, I:1, O:1 | 8 | f104r, f113r, f67r1, f78r, f82r, f85r1, f86v6, f88v
+  49 | t | dar + qokedy + qokeedy | 8 | 2.15 | 3.7 | n | 2 | M:7, D:1 | 6 | f31r, f75r, f75v, f76r, f78v, f84rx3
+  50 | p | aiin + os | 8 | 2.16 | 3.7 | Y | 6 | S:2, T:2, C:1, G:1, I:1, O:1 | 8 | f102v1, f102v2, f104r, f105v, f17v, f55v, f67r2, f89v1
+TUPLES RF1b tri (50 listed)
+   1 | p | opc ~ #op | 62 | 20.04 | 3.1 | Y | 12 | T:32, M:8, N:6, F:4, B:3, A:2, Q:2, C:1, G:1, H:1, O:1, S:1 | 42 | f104r, f104v, f105r, f105vx4, f106rx4, f106vx3, f107vx3, f108rx2, f111r, f111vx2, f112vx2, f113r, f113vx2, f114r, f114vx2, f115vx2, f13r, f16r, f20v, f3r, f44r, f44v, f46r, f48r, f54r, f58r, f76rx2, f76vx2, f78v, f81r, f83r, f83v, f85r1x2, f86v3, f86v5, f86v6x2, f89r2, f8v, f93v, f94r, f99r, f9v
+   2 | p | #po ~ opc | 49 | 12.33 | 4.0 | Y | 11 | T:23, M:8, N:6, C:4, H:2, A:1, B:1, D:1, F:1, G:1, Q:1 | 36 | f103r, f103v, f104v, f105vx2, f106r, f106v, f107rx2, f107vx2, f108rx2, f108v, f111r, f111vx3, f112v, f113vx3, f114r, f16r, f19v, f22r, f23v, f24r, f25v, f46v, f54r, f58r, f58v, f76rx2, f76v, f77r, f79r, f7v, f81rx2, f83v, f85r1, f86v5x2, f86v6x3, f93v
+   3 | p | #op ~ fch | 48 | 13.08 | 3.7 | Y | 10 | T:19, F:5, N:5, C:4, M:4, D:3, H:3, G:2, O:2, E:1 | 41 | f103v, f105r, f105v, f106v, f107r, f107v, f108r, f111r, f112r, f112v, f113r, f113vx4, f114rx3, f116r, f17v, f21r, f22r, f23r, f26vx2, f31v, f39r, f43r, f44r, f45r, f46r, f46v, f49v, f50r, f58r, f58v, f66r, f76v, f78v, f84r, f84v, f85r1, f86v3, f86v5x2, f86v6, f89v1, f90v2
+   4 | p | qop ~ #op | 48 | 14.00 | 3.4 | Y | 11 | T:23, M:6, N:6, B:3, F:3, G:2, A:1, C:1, D:1, O:1, Q:1 | 36 | f104rx2, f105vx4, f106r, f106v, f107vx2, f108r, f111r, f111v, f112r, f112v, f113v, f114rx3, f114vx2, f115vx2, f13r, f16r, f20v, f31v, f3r, f44r, f45r, f46r, f50r, f54r, f75v, f76rx2, f76v, f81r, f83r, f85r1x2, f86v3, f86v5, f86v6x2, f89v1, f94r, f9v
+   5 | p | #po ~ #op | 43 | 11.37 | 3.8 | Y | 9 | T:21, M:10, C:4, H:2, N:2, B:1, F:1, G:1, Q:1 | 32 | f103r, f103vx2, f105v, f106r, f106v, f107rx4, f107vx2, f108r, f108v, f111r, f111vx2, f112r, f113vx2, f114r, f16r, f19v, f22r, f23v, f24r, f46v, f54r, f58r, f58v, f76rx3, f76vx2, f79r, f81rx2, f83v, f84r, f85r1, f86v6, f93v
+   6 | p | opc ~ fch | 42 | 13.01 | 3.2 | Y | 10 | T:19, F:5, N:5, M:3, D:2, E:2, G:2, H:2, A:1, C:1 | 37 | f103v, f104v, f105rx2, f105v, f106r, f107r, f108r, f111r, f112r, f113rx3, f113v, f114rx2, f114v, f115v, f116r, f22r, f25v, f26v, f34v, f39r, f43r, f44r, f45r, f46r, f46v, f49v, f50r, f58v, f66r, f76v, f78v, f7r, f84v, f85r1, f86v3, f86v5, f86v6x2
+   7 | p | ypc ~ pch | 40 | 9.55 | 4.2 | Y | 12 | T:9, F:7, B:5, N:4, D:3, E:3, C:2, H:2, S:2, A:1, G:1, M:1 | 34 | f101r, f103r, f105rx2, f105vx2, f106v, f10r, f111r, f113r, f114r, f13r, f16r, f16v, f21r, f22r, f26rx2, f26v, f2r, f34vx2, f40v, f41v, f43v, f45r, f46r, f48r, f48vx2, f51r, f58r, f66r, f79r, f85r1x2, f86v3, f86v5, f99r, f9v
+   8 | p | opc ~ qop | 40 | 13.29 | 3.0 | Y | 8 | T:20, M:6, N:6, B:2, F:2, G:2, A:1, C:1 | 31 | f104r, f105r, f105vx2, f106r, f106vx2, f107v, f111r, f111vx2, f112v, f113r, f114rx2, f114vx2, f115r, f115vx2, f13r, f16r, f20v, f3r, f44r, f45r, f50r, f54r, f75v, f76rx2, f76v, f80r, f82r, f85r1, f86v3, f86v5, f86v6x3
+   9 | p | pol ~ opc | 36 | 8.50 | 4.2 | Y | 6 | T:18, M:10, N:4, A:2, C:1, S:1 | 27 | f101r, f103r, f103v, f105v, f107r, f107vx2, f108rx2, f108v, f111r, f111vx3, f112v, f113vx3, f115r, f22r, f3r, f76r, f76v, f77r, f79r, f7v, f80r, f81rx2, f82r, f83r, f83v, f85r1, f86v6x3
+  10 | p | #pc ~ fch | 36 | 9.69 | 3.7 | Y | 10 | T:15, F:5, D:4, M:3, N:3, C:2, A:1, E:1, H:1, Q:1 | 29 | f103v, f104v, f106r, f106v, f107r, f108v, f111r, f112r, f113rx4, f114v, f115r, f116r, f17v, f22r, f26r, f26vx2, f31v, f39r, f41v, f46rx2, f48vx2, f66r, f79v, f80v, f84v, f85r1x2, f85r2, f8r, f94v
+  11 | p | #yp ~ pch | 36 | 10.34 | 3.5 | Y | 11 | F:8, T:7, N:5, B:3, C:3, D:3, E:2, S:2, A:1, G:1, H:1 | 29 | f101r, f105rx2, f105vx2, f106v, f10r, f113r, f114r, f16r, f17r, f21r, f22r, f26rx2, f26v, f2r, f34vx2, f41v, f43v, f45r, f46r, f46v, f48r, f48vx2, f51r, f66r, f85r1x3, f86v3, f86v5, f99r, f9v
+  12 | p | qop ~ #pc | 36 | 11.14 | 3.2 | Y | 7 | T:21, M:5, N:5, D:2, A:1, C:1, F:1 | 25 | f103r, f103v, f104rx3, f105vx2, f106r, f107v, f111r, f111v, f113rx4, f113v, f114v, f115r, f115vx3, f21r, f26v, f31v, f3r, f46r, f75v, f76r, f83rx2, f84r, f85r1x3, f86v3, f86v6
+  13 | p | cph ~ fch | 31 | 8.58 | 3.6 | Y | 11 | T:7, C:4, E:3, F:3, H:3, M:2, N:2, O:2, Q:2, S:2, D:1 | 31 | f100r, f101r, f104v, f105r, f106v, f113r, f114r, f114v, f115v, f17v, f20r, f21r, f22r, f25r, f33r, f36r, f37r, f43r, f46r, f48v, f58r, f58v, f65v, f77r, f78v, f85r1, f86v6, f89v1, f90v2, f94v, f95v1
+  14 | p | pch ~ #of | 31 | 9.65 | 3.2 | Y | 11 | T:11, F:4, M:4, D:3, H:3, A:1, C:1, E:1, G:1, N:1, Q:1 | 28 | f104r, f105r, f105v, f107r, f108r, f108v, f113v, f114rx3, f114v, f22r, f26r, f26vx2, f40v, f41v, f42r, f44r, f45r, f50v, f57r, f58r, f66r, f78v, f79v, f81r, f81v, f86v6, f8r, f95r1
+  15 | p | pol ~ #op | 30 | 7.68 | 3.9 | Y | 7 | T:14, M:10, N:2, A:1, C:1, O:1, S:1 | 23 | f102r2, f103r, f103vx2, f105v, f107r, f107vx2, f108r, f108v, f111r, f111vx2, f113vx2, f22r, f3r, f76rx2, f76vx2, f79r, f81rx2, f83r, f83v, f84r, f85r1, f86v6, f89v1
+  16 | p | qop ~ fch | 27 | 6.96 | 3.9 | Y | 8 | T:10, N:6, D:4, F:3, E:1, G:1, H:1, O:1 | 24 | f104v, f105r, f105v, f106r, f111r, f113rx2, f114r, f114v, f115v, f25v, f26v, f31v, f32r, f34v, f44r, f45r, f46r, f50r, f65v, f85r1x2, f86v3, f86v5, f86v6x2, f89v1
+  17 | p | cph ~ cfh | 25 | 5.63 | 4.4 | Y | 12 | A:5, G:4, S:4, E:2, H:2, M:2, B:1, C:1, F:1, N:1, O:1, T:1 | 23 | f100r, f100v, f102r2, f104v, f11r, f1rx2, f24v, f35r, f36r, f42r, f49v, f52r, f53r, f54r, f58r, f65v, f76r, f76v, f86v6, f8rx2, f8v, f90v2, f99r
+  18 | p | #op ~ #of | 24 | 4.51 | 5.3 | Y | 10 | T:10, D:2, F:2, H:2, M:2, O:2, G:1, I:1, N:1, Q:1 | 21 | f105r, f105v, f107r, f107v, f108r, f108v, f113v, f114rx3, f26vx2, f44r, f45r, f50v, f57r, f58r, f67v2, f81r, f84r, f86v6, f89v1, f90v2, f95r1
+  19 | p | #po ~ qop | 24 | 7.32 | 3.3 | Y | 7 | T:10, M:6, N:4, A:1, B:1, D:1, G:1 | 21 | f104v, f108r, f111r, f111vx2, f112v, f113r, f113v, f114rx2, f16r, f25v, f54r, f76r, f76v, f77r, f7v, f80v, f81r, f81v, f85r1, f86v5x2, f86v6
+  20 | p | psh ~ #op | 21 | 5.19 | 4.0 | Y | 9 | F:5, M:5, T:5, C:1, G:1, H:1, N:1, Q:1, S:1 | 19 | f104r, f106r, f106v, f107r, f113v, f24v, f41r, f43rx2, f44r, f48r, f50r, f58r, f76rx2, f76v, f79r, f84r, f86v5, f96v, f99r
+  21 | p | psh ~ opc | 21 | 5.43 | 3.9 | Y | 7 | T:7, F:5, M:5, G:1, H:1, N:1, S:1 | 19 | f104r, f105r, f106r, f106v, f107r, f113v, f114v, f43rx2, f44r, f47v, f48r, f50r, f58r, f76rx2, f76v, f79r, f83r, f86v5, f99r
+  22 | p | #po ~ fch | 21 | 6.18 | 3.4 | Y | 9 | T:12, E:2, C:1, D:1, F:1, H:1, M:1, N:1, O:1 | 18 | f103vx2, f104v, f105r, f106v, f107r, f111rx2, f113r, f113vx2, f115r, f22r, f25v, f33v, f36r, f46v, f66v, f84r, f86v6, f89r2
+  23 | p | ypc ~ #pc | 20 | 3.45 | 5.8 | Y | 9 | F:4, B:3, T:3, C:2, D:2, E:2, N:2, H:1, S:1 | 19 | f103r, f10r, f111r, f113r, f16v, f21r, f22r, f26r, f26v, f34v, f40v, f41v, f43v, f48vx2, f58r, f85r1, f86v5, f99r, f9v
+  24 | p | ypc ~ opc | 20 | 4.67 | 4.3 | Y | 9 | T:8, B:3, F:3, C:1, E:1, G:1, H:1, M:1, N:1 | 18 | f105rx2, f105vx2, f106v, f10r, f111r, f113r, f114r, f13r, f16r, f21r, f34v, f45r, f46r, f48r, f51r, f66r, f79r, f86v3
+  25 | p | cfh ~ opc | 20 | 4.89 | 4.1 | Y | 9 | N:5, M:4, T:3, B:2, Q:2, A:1, F:1, G:1, H:1 | 17 | f103r, f105v, f111v, f13r, f46r, f54r, f58v, f75v, f76r, f76v, f84v, f86v5x2, f86v6x3, f8v, f95r2, f96r, f9v
+  26 | p | cfh ~ #op | 20 | 5.07 | 3.9 | Y | 11 | T:4, M:3, N:3, H:2, O:2, A:1, B:1, C:1, D:1, F:1, G:1 | 19 | f103r, f105v, f111v, f114r, f24v, f31v, f46r, f54r, f58r, f58v, f75v, f76r, f84v, f86v5, f86v6x2, f89v1, f8v, f90v2, f9v
+  27 | p | #cp ~ cph | 20 | 5.81 | 3.4 | Y | 12 | O:3, S:3, T:3, A:2, N:2, B:1, C:1, D:1, E:1, F:1, G:1, Q:1 | 18 | f100r, f100v, f102r2, f114r, f116rx2, f11v, f17r, f1rx2, f30v, f37v, f43r, f52v, f85r1, f86v6, f87r, f88r, f90v2, f96r
+  28 | p | opa ~ #pc | 20 | 6.00 | 3.3 | Y | 5 | T:13, N:3, D:2, H:1, S:1 | 19 | f102v2, f103v, f104r, f105r, f105v, f106r, f107v, f111v, f112r, f112v, f113v, f114r, f114v, f116r, f26v, f31v, f58v, f85r1x2, f86v6
+  29 | p | #ts ~ opc | 20 | 6.05 | 3.3 | n | 8 | T:10, G:2, N:2, Q:2, A:1, B:1, I:1, M:1 | 17 | f104rx2, f106r, f106vx2, f107v, f113r, f114vx2, f115v, f13r, f51r, f53v, f68r2, f78r, f7v, f86v3, f86v6, f94v, f95r2
+  30 | p | pch ~ hep | 20 | 6.30 | 3.2 | Y | 5 | T:7, F:5, M:4, O:3, N:1 | 16 | f103rx4, f106v, f113r, f115v, f41r, f41v, f43v, f46rx2, f75r, f80r, f83r, f83v, f86v5, f87v, f89r1, f90v1
+  31 | p | #cp ~ cfh | 19 | 3.99 | 4.8 | Y | 9 | A:5, S:4, E:2, G:2, H:2, B:1, F:1, M:1, N:1 | 17 | f100r, f102r2, f11r, f1rx2, f35r, f36r, f42r, f49v, f53r, f58r, f65v, f76v, f86v6, f8rx2, f8v, f99r, f99v
+  32 | p | ypc ~ #op | 19 | 4.36 | 4.4 | Y | 8 | T:5, F:4, B:3, H:2, N:2, C:1, G:1, M:1 | 19 | f105r, f105v, f106v, f111r, f114r, f13r, f16r, f17r, f41r, f45r, f46r, f48r, f51r, f58r, f66r, f79r, f86v3, f86v6, f9v
+  33 | p | #op ~ ofc | 19 | 4.77 | 4.0 | Y | 8 | T:8, D:2, F:2, M:2, O:2, E:1, H:1, N:1 | 16 | f107r, f107v, f108r, f111r, f113v, f114rx3, f26vx2, f39r, f44r, f45r, f58v, f78v, f84r, f85r1, f89v1, f90v2
+  34 | p | pol ~ qop | 19 | 4.96 | 3.8 | Y | 5 | M:7, T:7, A:2, N:2, O:1 | 17 | f108r, f111r, f111vx2, f112v, f113v, f115r, f3r, f76v, f77r, f7v, f80r, f80v, f81r, f81v, f83r, f86v6x2, f89v1
+  35 | p | pch ~ ocp | 19 | 5.39 | 3.5 | Y | 9 | T:7, G:3, F:2, N:2, C:1, D:1, O:1, Q:1, S:1 | 17 | f100r, f104r, f113rx2, f114r, f114vx2, f115v, f22r, f28r, f43r, f46r, f52v, f54r, f56r, f85r1, f86v6, f87r, f93v
+  36 | p | cph ~ #fc | 18 | 3.04 | 5.9 | Y | 9 | T:6, C:4, S:2, D:1, E:1, F:1, H:1, O:1, Q:1 | 18 | f100r, f101r, f104v, f105r, f106v, f114r, f114v, f115v, f17v, f20r, f21r, f22r, f25r, f36r, f48v, f65v, f89v1, f94v
+  37 | p | #yp ~ fch | 18 | 3.17 | 5.7 | Y | 9 | F:6, N:3, D:2, T:2, B:1, C:1, E:1, H:1, S:1 | 17 | f101r, f106v, f113r, f16r, f22r, f26r, f26v, f34v, f41v, f43r, f45r, f46v, f48vx2, f66r, f85r1, f86v3, f86v5
+  38 | p | qop ~ opa | 18 | 4.81 | 3.7 | Y | 5 | T:10, N:4, M:2, D:1, Q:1 | 14 | f104r, f105vx2, f107v, f108r, f112r, f113v, f114r, f114vx2, f31v, f76v, f80v, f85r1, f86v6x3, f94r
+  39 | p | #yp ~ #op | 18 | 4.82 | 3.7 | Y | 7 | F:5, T:5, C:2, H:2, N:2, B:1, G:1 | 16 | f105rx2, f105v, f107r, f114r, f16r, f17rx2, f41r, f45r, f46r, f46v, f48r, f51r, f58v, f66r, f86v3, f86v5
+  40 | p | #cp ~ fch | 18 | 4.98 | 3.6 | Y | 11 | E:2, F:2, H:2, M:2, O:2, Q:2, S:2, C:1, D:1, N:1, T:1 | 18 | f100r, f101r, f105r, f17v, f25r, f33r, f36r, f43r, f48v, f58r, f65v, f77r, f78v, f86v6, f89v1, f90v2, f94v, f95v1
+  41 | p | pch ~ qof | 18 | 5.70 | 3.2 | Y | 9 | T:5, E:3, N:3, M:2, B:1, D:1, F:1, G:1, H:1 | 17 | f106v, f108r, f111r, f113r, f115r, f25v, f33r, f36v, f39r, f41v, f52r, f58v, f78v, f83r, f85r1x2, f86v6, f9v
+  42 | p | cfh ~ fch | 17 | 3.40 | 5.0 | Y | 11 | T:4, O:3, F:2, C:1, D:1, E:1, H:1, M:1, N:1, Q:1, S:1 | 17 | f100r, f104v, f105v, f113r, f114r, f22r, f31v, f39r, f41v, f46r, f58r, f84v, f86v6, f89v1, f90r1, f90v2, f95v1
+  43 | p | #yp ~ #pc | 17 | 3.68 | 4.6 | Y | 8 | F:4, N:3, B:2, C:2, D:2, T:2, E:1, S:1 | 15 | f106v, f10r, f113r, f21r, f22r, f26r, f26v, f34v, f41v, f43v, f48vx2, f85r1x2, f86v5, f99r, f9v
+  44 | p | #yp ~ opc | 17 | 4.84 | 3.5 | Y | 8 | T:6, F:4, B:2, C:1, E:1, G:1, H:1, N:1 | 15 | f105rx2, f105vx2, f10r, f113r, f114r, f16r, f21r, f34v, f45r, f46r, f46v, f48r, f51r, f66r, f86v3
+  45 | p | cfh ~ qop | 16 | 2.69 | 5.9 | Y | 10 | M:3, N:3, B:2, O:2, D:1, F:1, G:1, H:1, Q:1, T:1 | 15 | f105v, f13r, f31v, f46r, f54r, f65v, f75v, f76r, f76v, f86v5x2, f86v6, f89v1, f89v2, f95r2, f9v
+  46 | p | ypc ~ fch | 16 | 3.03 | 5.3 | Y | 9 | F:4, D:2, E:2, N:2, T:2, B:1, C:1, H:1, S:1 | 15 | f101r, f111r, f113r, f16r, f22r, f26r, f26v, f34v, f36r, f41v, f45r, f48vx2, f66r, f85r1, f86v3
+  47 | p | #ts ~ qop | 16 | 3.36 | 4.8 | Y | 7 | T:7, A:2, M:2, N:2, B:1, G:1, Q:1 | 13 | f106vx3, f107v, f114vx2, f115v, f13r, f3r, f53v, f78r, f7v, f80v, f86v3, f86v6, f95r2
+  48 | p | pol ~ fch | 16 | 3.93 | 4.1 | Y | 6 | T:8, O:3, N:2, C:1, H:1, M:1 | 13 | f103vx2, f105r, f106vx2, f111r, f113v, f115r, f22r, f58r, f84r, f86v6x2, f89r2, f89v1, f90v2
+  49 | p | opa ~ fch | 16 | 4.05 | 4.0 | Y | 4 | T:9, N:3, D:2, M:2 | 12 | f105v, f107v, f108r, f112v, f113vx3, f114rx2, f26v, f31v, f76v, f84r, f85r1, f86v6x2
+  50 | p | shy ~ #ts | 16 | 5.08 | 3.1 | n | 8 | T:4, F:3, B:2, N:2, Q:2, A:1, C:1, D:1 | 14 | f103r, f106vx2, f111v, f13r, f15r, f23v, f28v, f44r, f44v, f45v, f7v, f85r1, f86v6, f95v1x2
+TUPLES IT2a core (50 listed)
+   1 | p | p + pche | 26 | 5.98 | 4.3 | Y | 8 | T:11, N:5, M:4, F:2, B:1, C:1, D:1, O:1 | 22 | f103rx2, f103v, f105r, f105v, f106rx2, f106v, f107v, f111v, f114v, f16r, f19v, f26v, f43v, f44r, f75r, f79r, f80r, f83r, f86v3, f86v5, f86v6x3, f90v1
+   2 | t | r + l + in | 23 | 6.47 | 3.6 | Y | 6 | T:10, M:7, N:2, O:2, F:1, S:1 | 18 | f102v2, f103r, f104r, f106v, f108vx2, f111r, f112v, f113v, f116rx2, f48v, f75r, f75v, f76r, f77rx3, f82v, f86v6x2, f89r2, f90r2
+   3 | p | p + pched | 22 | 6.54 | 3.4 | Y | 5 | T:10, M:5, F:3, N:3, D:1 | 18 | f103rx3, f103v, f105r, f106v, f107v, f111v, f114rx2, f26v, f43v, f46v, f48v, f77r, f81r, f81v, f82r, f83r, f85r1, f86v6x2
+   4 | p | p + pch | 20 | 4.82 | 4.1 | Y | 8 | T:6, N:4, M:3, B:2, Q:2, A:1, D:1, F:1 | 19 | f103v, f104r, f105v, f111v, f113r, f114v, f13r, f26v, f3r, f45r, f81r, f83r, f84r, f85r1, f86v5, f86v6x2, f93v, f94v, f9v
+   5 | t | l + ar + in | 20 | 6.12 | 3.3 | Y | 7 | T:10, M:3, N:2, O:2, D:1, F:1, Q:1 | 15 | f104r, f106v, f107vx2, f108vx2, f111r, f111vx2, f113v, f31v, f48v, f75r, f76rx2, f86v6x2, f89r2, f89v1, f94v
+   6 | p | pche + pched | 19 | 4.94 | 3.8 | Y | 6 | T:9, M:4, F:3, D:1, G:1, N:1 | 18 | f103r, f103v, f105r, f106r, f106v, f111r, f111vx2, f113r, f26v, f41v, f43v, f48v, f51r, f75v, f76r, f83r, f83v, f86v6
+   7 | t | y + ain + shck | 17 | 4.66 | 3.6 | n | 3 | T:10, M:6, N:1 | 11 | f103rx2, f103vx3, f106v, f111v, f113r, f116rx2, f75v, f76rx3, f79r, f84v, f86v5
+   8 | t | y + s + in | 17 | 5.15 | 3.3 | n | 4 | T:9, M:5, O:2, G:1 | 11 | f103v, f104v, f107r, f108vx2, f116rx4, f50v, f75v, f76rx3, f78r, f89r2, f90r2
+   9 | t | d + p + pched | 16 | 3.75 | 4.3 | Y | 5 | T:8, F:3, M:3, D:1, N:1 | 13 | f103rx3, f103v, f105r, f106v, f114rx2, f26v, f43v, f46v, f48v, f81v, f82r, f83r, f85r1
+  10 | t | r + ar + in | 16 | 5.04 | 3.2 | Y | 6 | T:9, M:2, N:2, E:1, F:1, O:1 | 14 | f104r, f106r, f106v, f108v, f111r, f111v, f113v, f116rx2, f39v, f48v, f75r, f78r, f86v6x2, f89r2
+  11 | t | d + pche + pched | 14 | 2.82 | 5.0 | Y | 4 | T:6, M:4, F:3, D:1 | 14 | f103r, f103v, f105r, f106v, f111r, f113r, f26v, f41v, f43v, f48v, f75v, f76r, f83r, f83v
+  12 | t | ar + s + in | 14 | 3.00 | 4.7 | Y | 4 | T:8, M:3, O:2, E:1 | 11 | f106r, f107v, f108vx2, f111v, f116rx3, f39v, f76r, f78r, f80v, f89r2, f89v1
+  13 | p | pch + pche | 14 | 3.23 | 4.3 | Y | 9 | T:5, N:2, A:1, B:1, C:1, F:1, G:1, O:1, S:1 | 14 | f101r, f103v, f105r, f111r, f111v, f115v, f16v, f21r, f41r, f54r, f86v5, f86v6, f87v, f8r
+  14 | t | r + s + in | 14 | 3.81 | 3.7 | Y | 5 | T:7, M:3, O:2, E:1, F:1 | 14 | f103r, f103v, f106r, f108v, f111r, f112r, f116r, f39v, f42r, f75v, f77r, f78r, f89r2, f90r2
+  15 | t | r + l + iiin | 14 | 4.37 | 3.2 | n | 5 | T:7, N:3, M:2, G:1, O:1 | 11 | f103v, f105v, f111v, f112r, f112vx2, f113v, f55r, f78vx2, f86v5, f86v6x2, f89r2
+  16 | t | e + o + eo | 14 | 4.62 | 3.0 | n | 4 | T:6, O:4, S:3, G:1 | 13 | f101r, f101v, f102v2, f104v, f106v, f113rx2, f114r, f115v, f53r, f87v, f89r1, f90r1, f90v2
+  17 | p | pchd + shd | 13 | 1.90 | 6.8 | Y | 7 | T:4, E:2, F:2, Q:2, D:1, M:1, N:1 | 12 | f103r, f103v, f106vx2, f26v, f33r, f34v, f43r, f46r, f81v, f86v3, f95r1, f95r2
+  18 | p | p + pchd | 13 | 3.37 | 3.9 | Y | 4 | T:7, N:4, D:1, H:1 | 10 | f105r, f106r, f106vx2, f107r, f114r, f115v, f26v, f58r, f85r1x2, f86v6x2
+  19 | p | pched + pchd | 12 | 2.68 | 4.5 | Y | 4 | T:7, N:3, D:1, M:1 | 10 | f105v, f106v, f107v, f112v, f114r, f115vx2, f26v, f76r, f85r1x2, f86v6
+  20 | p | pche + pchd | 11 | 2.32 | 4.7 | Y | 5 | T:7, D:1, F:1, M:1, N:1 | 11 | f103v, f105v, f106r, f108r, f113r, f114v, f115v, f26v, f48r, f82v, f86v3
+  21 | t | sh + chd + ed | 11 | 2.40 | 4.6 | Y | 6 | T:5, Q:2, E:1, F:1, G:1, N:1 | 11 | f106v, f108r, f112r, f112v, f115r, f34v, f48v, f50r, f86v6, f94v, f95v1
+  22 | p | f + p | 11 | 2.42 | 4.5 | Y | 8 | N:3, T:2, B:1, F:1, H:1, I:1, M:1, S:1 | 10 | f102r1, f105v, f107r, f43v, f65v, f67r2, f81v, f86v5, f86v6x2, f9v
+  23 | t | r + s + eee | 11 | 2.51 | 4.4 | Y | 8 | T:3, C:2, B:1, D:1, G:1, N:1, O:1, S:1 | 10 | f102v2, f106r, f111r, f113v, f13r, f18vx2, f26v, f53r, f86v5, f89v2
+  24 | p | pch + pched | 11 | 2.92 | 3.8 | n | 2 | T:10, M:1 | 8 | f103vx3, f104r, f105vx2, f106r, f111r, f111v, f112v, f81r
+  25 | t | d + p + pche | 11 | 3.20 | 3.4 | Y | 7 | T:4, M:2, B:1, D:1, F:1, N:1, O:1 | 11 | f103r, f103v, f106v, f114v, f16r, f26v, f43v, f75r, f83r, f86v6, f90v1
+  26 | t | ar + iin + eee | 10 | 1.18 | 8.5 | Y | 4 | T:5, N:3, O:1, S:1 | 8 | f102v2, f106r, f107vx2, f113r, f113v, f85r1, f86v5x2, f89v2
+  27 | t | or + iin + p | 10 | 2.66 | 3.8 | n | 3 | T:5, N:3, E:2 | 8 | f105r, f106r, f112rx2, f116r, f33r, f39v, f85r1, f86v5x2
+  28 | t | s + ain + in | 10 | 2.75 | 3.6 | n | 2 | T:6, M:4 | 6 | f106r, f111v, f112v, f116rx3, f75v, f76rx3
+  29 | t | l + s + iiin | 10 | 2.92 | 3.4 | Y | 5 | T:4, M:3, N:1, O:1, S:1 | 9 | f102v2, f105v, f107v, f112r, f113r, f76v, f78vx2, f86v6, f89r2
+  30 | t | sh + ar + chd | 10 | 3.30 | 3.0 | n | 5 | T:5, F:2, G:1, N:1, Q:1 | 10 | f103v, f106v, f108r, f112r, f115v, f43r, f48v, f50r, f86v6, f95v1
+  31 | t | d + pchd + shd | 9 | 1.04 | 8.7 | Y | 6 | F:2, Q:2, T:2, D:1, E:1, M:1 | 9 | f103r, f106v, f26v, f34v, f43r, f46r, f81v, f95r1, f95r2
+  32 | t | d + pched + pchd | 9 | 1.39 | 6.5 | Y | 4 | T:5, N:2, D:1, M:1 | 8 | f105v, f106v, f107v, f112v, f114r, f26v, f76r, f85r1x2
+  33 | t | d + ol + dl | 9 | 2.55 | 3.5 | Y | 6 | T:4, B:1, D:1, G:1, M:1, N:1 | 9 | f104v, f105v, f106v, f114v, f11r, f28r, f52r, f75v, f86v6
+  34 | t | y + s + iiin | 9 | 2.68 | 3.4 | Y | 5 | M:2, N:2, S:2, T:2, O:1 | 8 | f102v2, f112v, f116r, f76vx2, f86v5, f86v6, f89r2, f99v
+  35 | t | or + k + am | 9 | 2.93 | 3.1 | n | 6 | F:3, E:2, D:1, N:1, O:1, T:1 | 8 | f113v, f31v, f33r, f40r, f43rx2, f48v, f86v6, f89v1
+  36 | p | iin + aiiin | 9 | 2.95 | 3.1 | n | 3 | T:7, E:1, N:1 | 9 | f104r, f106r, f107r, f112r, f113r, f113v, f115r, f33r, f86v6
+  37 | t | al + pche + pched | 8 | 0.95 | 8.4 | Y | 3 | T:5, M:2, F:1 | 7 | f103r, f105r, f111vx2, f113r, f41v, f76r, f83v
+  38 | t | d + pche + pchd | 8 | 1.21 | 6.6 | Y | 4 | T:5, D:1, F:1, M:1 | 8 | f105v, f106r, f108r, f113r, f114v, f26v, f48r, f82v
+  39 | t | ar + s + eee | 8 | 1.30 | 6.2 | Y | 5 | T:3, N:2, C:1, O:1, S:1 | 8 | f102v2, f106r, f113r, f113v, f18v, f85r1, f86v5, f89v2
+  40 | t | e + iin + eeo | 8 | 2.12 | 3.8 | n | 4 | N:3, T:3, I:1, O:1 | 8 | f105r, f113r, f114v, f67r2, f86v3, f86v4, f86v6, f90v1
+  41 | t | e + ain + q | 8 | 2.18 | 3.7 | n | 2 | M:4, T:4 | 5 | f111v, f112r, f115r, f116r, f76rx4
+  42 | t | r + e + an | 8 | 2.23 | 3.6 | n | 3 | T:5, A:2, M:1 | 5 | f103vx2, f116rx3, f1r, f2v, f79v
+  43 | t | y + she + shed | 8 | 2.39 | 3.3 | n | 3 | T:6, M:1, Q:1 | 7 | f103r, f103vx2, f111r, f115v, f116r, f78v, f95v1
+  44 | t | y + or + old | 8 | 2.42 | 3.3 | n | 6 | B:2, M:2, E:1, F:1, G:1, O:1 | 7 | f35r, f48v, f54r, f80v, f84v, f89r2, f9vx2
+  45 | p | ck + dsh | 8 | 2.47 | 3.2 | n | 5 | M:3, D:2, F:1, O:1, T:1 | 8 | f108v, f28r, f32v, f44v, f75r, f76v, f83r, f89r1
+  46 | t | e + ee + q | 8 | 2.50 | 3.2 | n | 3 | T:5, O:2, M:1 | 7 | f108r, f111v, f112rx2, f116r, f76r, f87v, f89r2
+  47 | t | ar + ck + am | 8 | 2.54 | 3.1 | n | 5 | T:3, F:2, H:1, M:1, Q:1 | 8 | f106r, f107v, f116r, f43v, f46v, f58r, f79v, f95r2
+  48 | t | al + ar + iiin | 8 | 2.58 | 3.1 | n | 3 | T:4, N:3, M:1 | 6 | f103v, f107v, f112vx2, f78v, f86v5x2, f86v6
+  49 | p | oiin + am | 8 | 2.60 | 3.1 | n | 6 | T:3, B:1, E:1, H:1, M:1, N:1 | 8 | f104r, f108r, f116r, f33r, f58v, f80r, f85r1, f9r
+  50 | t | d + ed + eeo | 8 | 2.62 | 3.1 | n | 2 | T:7, S:1 | 8 | f103r, f104r, f105r, f108v, f111r, f113r, f114v, f99v
+TUPLES IT2a word (50 listed)
+   1 | t | or + ol + aiin | 20 | 3.50 | 5.7 | Y | 8 | N:6, E:3, S:3, G:2, M:2, T:2, F:1, O:1 | 17 | f101r, f101v, f114r, f115r, f33r, f39v, f40r, f41v, f54r, f55r, f75v, f79r, f86v4x2, f86v5x2, f86v6x2, f90v1, f99v
+   2 | p | otedy + okedy | 18 | 4.73 | 3.8 | Y | 3 | M:10, T:6, E:2 | 11 | f108rx5, f112r, f34r, f39v, f75rx2, f75v, f76rx3, f76v, f78v, f84r, f84v
+   3 | p | qokedy + qokchdy | 12 | 3.50 | 3.4 | n | 4 | M:8, T:2, D:1, E:1 | 11 | f112v, f114v, f26r, f34r, f75rx2, f76r, f78r, f78v, f81v, f82r, f83r
+   4 | p | chdy + okedy | 12 | 3.70 | 3.2 | n | 5 | T:5, F:3, M:2, E:1, N:1 | 8 | f108rx5, f34v, f43r, f43v, f46v, f81v, f84v, f85r1
+   5 | p | al + sar | 12 | 3.71 | 3.2 | Y | 5 | T:5, M:3, N:2, H:1, S:1 | 12 | f104r, f106r, f106v, f112r, f113r, f57r, f76v, f81v, f83v, f85r1, f86v4, f99r
+   6 | t | daiin + s + aiin | 12 | 3.73 | 3.2 | Y | 8 | O:3, F:2, G:2, D:1, E:1, Q:1, S:1, T:1 | 11 | f104r, f31r, f35r, f41v, f46r, f54r, f54v, f89r2x2, f89v2, f95v2, f99r
+   7 | p | otedy + qotedy | 12 | 4.00 | 3.0 | Y | 5 | M:6, T:3, E:1, F:1, N:1 | 10 | f108rx2, f108v, f34r, f43r, f75r, f75v, f76r, f84rx2, f84v, f85r1
+   8 | t | qokeey + okeey + chedy | 11 | 1.82 | 6.0 | n | 2 | T:10, M:1 | 8 | f103v, f108rx2, f108vx2, f111rx2, f112r, f112v, f116r, f76r
+   9 | t | ar + or + aiin | 11 | 2.99 | 3.7 | Y | 4 | N:4, E:3, T:3, G:1 | 10 | f108v, f113v, f115r, f33r, f33v, f39v, f55v, f85r2, f86v5, f86v6x2
+  10 | p | al + r | 10 | 2.59 | 3.9 | n | 5 | M:4, T:3, G:1, J:1, N:1 | 8 | f104v, f105r, f111r, f51r, f70r2, f76vx3, f77r, f86v5
+  11 | p | y + okain | 10 | 2.90 | 3.4 | n | 4 | T:6, M:2, G:1, Q:1 | 10 | f103v, f106r, f107v, f112v, f113r, f116r, f50r, f76r, f79r, f95v2
+  12 | p | aiin + ches | 10 | 3.04 | 3.3 | Y | 5 | T:4, M:3, E:1, F:1, N:1 | 10 | f106v, f112r, f113r, f116r, f39r, f46r, f78r, f80v, f82r, f85r1
+  13 | t | al + aiin + chedy | 10 | 3.28 | 3.0 | Y | 3 | T:7, M:2, G:1 | 10 | f105v, f107v, f108r, f108v, f112r, f113r, f114r, f55v, f76r, f76v
+  14 | t | or + okal + aiin | 9 | 0.80 | 11.2 | Y | 6 | G:3, E:2, H:1, Q:1, S:1, T:1 | 8 | f101r, f108v, f33r, f39v, f55r, f55vx2, f58v, f95v2
+  15 | t | or + ol + al | 9 | 1.62 | 5.6 | Y | 6 | N:3, M:2, E:1, G:1, S:1, T:1 | 8 | f101r, f112v, f34r, f55r, f80v, f84v, f86v4x2, f86v5
+  16 | p | kor + ol | 9 | 2.16 | 4.2 | Y | 4 | S:4, E:3, C:1, T:1 | 7 | f101rx3, f102v1, f105r, f22r, f33r, f39v, f40v
+  17 | t | or + chol + aiin | 9 | 2.38 | 3.8 | Y | 7 | G:2, S:2, B:1, F:1, O:1, Q:1, T:1 | 8 | f101rx2, f108r, f41v, f54r, f55r, f88r, f94r, f9r
+  18 | t | ar + al + aiin | 9 | 2.50 | 3.6 | Y | 3 | T:6, N:2, M:1 | 7 | f105v, f111v, f113r, f113vx2, f115r, f76r, f86v5x2
+  19 | p | qokeedy + chedaiin | 9 | 2.64 | 3.4 | n | 2 | T:7, M:2 | 6 | f104vx2, f105v, f107r, f112vx3, f76v, f77r
+  20 | t | or + ol + chol | 9 | 2.64 | 3.4 | n | 5 | G:3, S:3, C:1, F:1, O:1 | 6 | f101rx2, f102v2, f17v, f41v, f54rx3, f90v1
+  21 | p | otaiin + qotar | 9 | 2.92 | 3.1 | n | 4 | T:6, E:1, M:1, N:1 | 8 | f104v, f105r, f113v, f114rx2, f114v, f36v, f82v, f86v3
+  22 | t | or + ol + okar | 8 | 1.09 | 7.3 | Y | 6 | E:2, N:2, F:1, G:1, O:1, T:1 | 7 | f108v, f40rx2, f48v, f55r, f86v5, f86v6, f89r2
+  23 | p | o + r | 8 | 1.14 | 7.0 | Y | 5 | E:2, O:2, S:2, M:1, T:1 | 7 | f101v, f111v, f35r, f36r, f76v, f89r2x2, f99r
+  24 | t | qokeey + okeey + qokeedy | 8 | 1.27 | 6.3 | n | 2 | T:6, M:2 | 7 | f103r, f108r, f108vx2, f111r, f116r, f76r, f79v
+  25 | t | s + ol + aiin | 8 | 1.36 | 5.9 | Y | 6 | G:2, O:2, M:1, N:1, Q:1, T:1 | 8 | f113r, f54r, f55v, f78r, f85r1, f89v2, f90v1, f94v
+  26 | p | sho + chodaiin | 8 | 1.53 | 5.2 | Y | 5 | A:3, C:2, D:1, F:1, S:1 | 8 | f101r, f1r, f20r, f21v, f28r, f2v, f3v, f42r
+  27 | p | otol + dol | 8 | 1.72 | 4.7 | Y | 5 | M:3, D:2, F:1, Q:1, S:1 | 6 | f101r, f29v, f32r, f42r, f84vx3, f95r2
+  28 | t | ar + ol + al | 8 | 1.74 | 4.6 | Y | 4 | T:5, E:1, H:1, N:1 | 7 | f105v, f108v, f111r, f113rx2, f34r, f58v, f86v5
+  29 | t | ol + qokeey + okeey | 8 | 1.79 | 4.5 | n | 2 | T:6, S:2 | 7 | f101v, f102r2, f103r, f103v, f108v, f111rx2, f112r
+  30 | t | qokey + chedy + qokedy | 8 | 1.82 | 4.4 | n | 2 | M:7, F:1 | 7 | f41r, f75r, f76r, f78vx2, f82r, f82v, f84v
+  31 | p | dy + keedy | 8 | 1.86 | 4.3 | Y | 4 | M:4, E:2, G:1, T:1 | 8 | f111v, f33v, f34v, f55r, f75r, f77r, f78r, f80v
+  32 | p | ol + oaiin | 8 | 1.92 | 4.2 | n | 4 | T:4, S:2, G:1, I:1 | 8 | f101v, f102v1, f107r, f112v, f113r, f114v, f55v, f67r2
+  33 | t | daiin + qokeey + okeey | 8 | 1.96 | 4.1 | n | 4 | T:4, O:2, E:1, S:1 | 6 | f101v, f103v, f108vx2, f111r, f38v, f89r2x2
+  34 | p | dair + dol | 8 | 1.99 | 4.0 | Y | 7 | H:2, A:1, B:1, C:1, D:1, F:1, O:1 | 7 | f14v, f1v, f23r, f32r, f44v, f66rx2, f89v2
+  35 | p | qokedy + lkedy | 8 | 2.02 | 4.0 | n | 2 | M:4, T:4 | 7 | f105r, f108r, f108v, f112r, f76rx2, f76v, f83r
+  36 | p | shol + kol | 8 | 2.07 | 3.9 | Y | 6 | A:2, S:2, D:1, E:1, O:1, T:1 | 8 | f101v, f105r, f1v, f28r, f35v, f89r2, f8v, f99r
+  37 | t | ol + aiin + okaiin | 8 | 2.15 | 3.7 | Y | 5 | T:3, E:2, G:1, M:1, N:1 | 8 | f105v, f108v, f114r, f39v, f40r, f55v, f81v, f85r1
+  38 | p | shey + tar | 8 | 2.18 | 3.7 | n | 3 | T:4, M:3, N:1 | 8 | f107r, f107v, f111r, f111v, f80r, f81v, f84r, f86v5
+  39 | t | ar + or + ol | 8 | 2.19 | 3.7 | Y | 4 | T:3, E:2, N:2, M:1 | 8 | f104v, f111v, f115r, f34r, f40r, f81r, f86v5, f86v6
+  40 | t | chey + dar + shedy | 8 | 2.29 | 3.5 | n | 3 | M:6, D:1, T:1 | 6 | f103r, f26v, f76r, f83v, f84rx3, f84v
+  41 | t | or + chey + aiin | 8 | 2.42 | 3.3 | n | 5 | T:4, F:1, G:1, M:1, N:1 | 8 | f104v, f107r, f111r, f112v, f43v, f55v, f75v, f86v5
+  42 | t | daiin + chol + dor | 8 | 2.46 | 3.3 | n | 4 | B:3, A:2, S:2, E:1 | 7 | f101r, f102r1, f11r, f15r, f2vx2, f37v, f9v
+  43 | p | okar + ain | 8 | 2.48 | 3.2 | Y | 5 | T:3, N:2, F:1, M:1, O:1 | 7 | f106v, f108v, f111r, f48v, f76r, f86v6x2, f89r2
+  44 | t | ol + al + aiin | 8 | 2.49 | 3.2 | n | 3 | N:3, T:3, G:2 | 7 | f108r, f108v, f113r, f55r, f55v, f86v4x2, f86v5
+  45 | t | chey + qokedy + qokeedy | 8 | 2.50 | 3.2 | Y | 2 | M:4, T:4 | 6 | f105r, f108vx2, f111r, f79v, f80r, f84rx2
+  46 | p | al + lkar | 8 | 2.53 | 3.2 | Y | 3 | T:5, M:2, N:1 | 7 | f107r, f107v, f111r, f113r, f115v, f76rx2, f86v6
+  47 | t | qokeey + qol + chedy | 8 | 2.53 | 3.2 | n | 2 | M:6, T:2 | 6 | f107v, f116r, f75rx3, f76r, f81r, f82r
+  48 | p | r + cheey | 8 | 2.64 | 3.0 | n | 5 | M:3, G:2, D:1, O:1, S:1 | 8 | f101v, f31r, f49r, f49v, f75r, f76v, f77r, f89r2
+  49 | t | y + or + aiin | 7 | 0.61 | 11.5 | Y | 5 | G:3, E:1, F:1, H:1, T:1 | 6 | f111r, f39v, f43v, f55rx2, f55v, f58v
+  50 | t | chedy + otedy + okedy | 7 | 0.86 | 8.1 | n | 2 | M:6, T:1 | 5 | f108r, f75v, f76rx3, f76v, f84v
+TUPLES IT2a tri (50 listed)
+   1 | p | #op ~ opc | 63 | 20.56 | 3.1 | Y | 12 | T:34, M:7, N:6, F:4, B:3, A:2, Q:2, C:1, G:1, H:1, O:1, S:1 | 41 | f104r, f104v, f105r, f105vx4, f106rx4, f106vx3, f107vx3, f108rx3, f111r, f111vx2, f112vx3, f113r, f113vx2, f114r, f114vx2, f115vx2, f13r, f16r, f20v, f3r, f44r, f44v, f46r, f48r, f54r, f58r, f76rx2, f76vx2, f81r, f83r, f83v, f85r1x2, f86v3, f86v5, f86v6x2, f89r2, f8v, f93v, f94r, f99r, f9v
+   2 | p | #po ~ opc | 54 | 13.99 | 3.9 | Y | 11 | T:26, M:8, C:5, N:5, B:2, G:2, H:2, A:1, D:1, F:1, Q:1 | 39 | f103r, f103v, f104v, f105r, f105vx2, f106rx2, f106v, f107rx2, f107vx2, f108rx2, f108v, f111r, f111vx4, f112v, f113vx3, f114r, f15v, f16r, f19v, f20v, f22r, f23v, f24r, f25v, f46v, f49r, f54r, f58r, f58v, f76rx2, f76v, f77r, f79r, f7v, f81rx2, f83v, f86v5x2, f86v6x3, f93v
+   3 | p | #op ~ fch | 50 | 13.19 | 3.8 | Y | 11 | T:19, F:5, M:5, N:5, C:4, D:3, H:3, G:2, O:2, B:1, E:1 | 42 | f103v, f105r, f105v, f106v, f107r, f107v, f108r, f111r, f112r, f112v, f113r, f113vx4, f114rx3, f116r, f16r, f17v, f21r, f22r, f23r, f26vx2, f31v, f39r, f43r, f44r, f45r, f46r, f46v, f49v, f50r, f58r, f58v, f66r, f76vx2, f78v, f84r, f84v, f85r1, f86v3, f86v5x2, f86v6, f89v1, f90v2
+   4 | p | qop ~ #op | 48 | 13.66 | 3.5 | Y | 11 | T:24, N:6, M:5, B:3, F:3, G:2, A:1, C:1, D:1, O:1, Q:1 | 36 | f104rx2, f105vx4, f106r, f106v, f107vx2, f108r, f111r, f111v, f112r, f112vx2, f113v, f114rx3, f114vx2, f115vx2, f13r, f16r, f20v, f31v, f3r, f44r, f45r, f46r, f50r, f54r, f75v, f76r, f80v, f81r, f83r, f85r1x2, f86v3, f86v5, f86v6x2, f89v1, f94r, f9v
+   5 | p | #po ~ #op | 47 | 13.31 | 3.5 | Y | 9 | T:23, M:10, C:5, B:2, G:2, H:2, F:1, N:1, Q:1 | 35 | f103r, f103vx2, f105v, f106r, f106v, f107rx3, f107vx2, f108r, f108v, f111r, f111vx3, f112r, f112v, f113vx3, f114r, f15v, f16r, f19v, f20v, f22r, f23v, f24r, f46v, f49r, f54r, f58r, f58v, f76rx3, f76vx2, f79r, f80v, f81rx2, f83v, f86v6, f93v
+   6 | p | opc ~ fch | 46 | 13.33 | 3.5 | Y | 11 | T:19, F:5, N:5, M:4, H:3, C:2, D:2, E:2, G:2, A:1, B:1 | 40 | f103v, f104v, f105rx2, f105v, f106r, f107r, f108r, f111r, f112r, f113rx3, f113v, f114rx2, f114v, f115v, f116r, f16r, f21r, f22r, f25v, f26v, f34v, f39r, f43r, f44r, f45r, f46r, f46v, f49v, f50r, f58r, f58v, f66r, f76vx2, f78v, f7r, f84v, f85r1, f86v3, f86v5, f86v6x2
+   7 | p | qop ~ opc | 40 | 13.16 | 3.0 | Y | 8 | T:21, N:6, M:5, B:2, F:2, G:2, A:1, C:1 | 31 | f104r, f105r, f105vx2, f106r, f106vx2, f107v, f111r, f111vx2, f112vx2, f113r, f114rx2, f114vx2, f115r, f115vx2, f13r, f16r, f20v, f3r, f44r, f45r, f50r, f54r, f75v, f76r, f80r, f82r, f83r, f85r1, f86v3, f86v5, f86v6x3
+   8 | p | ypc ~ pch | 39 | 8.70 | 4.5 | Y | 11 | F:8, T:8, B:5, N:5, D:3, C:2, E:2, H:2, S:2, A:1, G:1 | 33 | f101r, f103r, f105rx2, f105vx2, f106v, f10r, f113r, f114r, f13r, f16r, f16v, f21r, f22r, f26rx2, f26v, f2r, f34vx2, f41r, f41v, f43v, f45r, f46r, f48r, f48vx2, f51r, f58r, f66r, f85r1x2, f86v3, f86v5, f86v6, f99r, f9v
+   9 | p | #yp ~ pch | 38 | 9.91 | 3.8 | Y | 11 | F:9, T:7, N:6, B:3, C:3, D:3, E:2, S:2, A:1, G:1, H:1 | 31 | f101r, f105rx2, f105vx2, f106v, f10r, f113r, f114r, f16r, f17r, f21r, f22r, f26rx2, f26v, f2r, f34vx2, f41r, f41v, f43v, f45r, f46r, f46v, f48r, f48vx2, f51r, f66r, f85r1x3, f86v3, f86v5, f86v6, f99r, f9v
+  10 | p | pol ~ opc | 36 | 9.15 | 3.9 | Y | 6 | T:19, M:10, N:3, A:2, C:1, S:1 | 26 | f101r, f103r, f103v, f105v, f107r, f107vx2, f108rx2, f108v, f111r, f111vx4, f112v, f113vx3, f115r, f22r, f3r, f76r, f76v, f77r, f79r, f7v, f80r, f81rx2, f82r, f83r, f83v, f86v6x3
+  11 | p | #pc ~ qop | 36 | 10.83 | 3.3 | Y | 7 | T:21, M:5, N:5, D:2, A:1, C:1, F:1 | 25 | f103r, f103v, f104rx3, f105vx2, f106r, f107v, f111r, f111v, f113rx4, f113v, f114v, f115r, f115vx3, f21r, f26v, f31v, f3r, f46r, f75v, f76r, f83rx2, f84r, f85r1x3, f86v3, f86v6
+  12 | p | pol ~ #op | 33 | 8.64 | 3.8 | Y | 7 | T:17, M:11, A:1, C:1, N:1, O:1, S:1 | 24 | f102r2, f103r, f103vx2, f105v, f107r, f107vx2, f108r, f108v, f111r, f111vx3, f112v, f113vx3, f22r, f3r, f76rx2, f76vx2, f79r, f80v, f81rx2, f83r, f83v, f84r, f86v6, f89v1
+  13 | p | pch ~ #of | 33 | 9.58 | 3.4 | Y | 11 | T:11, M:5, F:4, D:3, H:3, C:2, A:1, E:1, G:1, N:1, Q:1 | 30 | f104r, f105r, f105v, f107r, f108r, f108v, f113v, f114rx3, f114v, f21r, f22r, f26r, f26vx2, f40v, f41v, f42r, f44r, f45r, f50v, f57r, f58r, f66r, f78v, f79v, f81r, f81v, f84v, f86v6, f8r, f95r1
+  14 | p | #pc ~ fch | 33 | 10.26 | 3.2 | Y | 9 | T:15, F:5, M:3, N:3, C:2, D:2, A:1, E:1, H:1 | 27 | f103v, f104v, f106r, f106v, f107r, f108v, f111r, f112r, f113rx4, f114v, f115r, f116r, f17v, f22r, f26v, f31v, f39r, f41v, f46rx2, f48vx2, f66r, f79v, f80v, f84v, f85r1x2, f85r2, f8r
+  15 | p | cph ~ #pc | 32 | 10.35 | 3.1 | Y | 12 | T:9, S:5, M:3, N:3, E:2, F:2, G:2, O:2, A:1, D:1, H:1, Q:1 | 26 | f100r, f101r, f101v, f104rx3, f104v, f113r, f114vx2, f115vx2, f28r, f36r, f36v, f43r, f48v, f52v, f54v, f66r, f75v, f83r, f84r, f85r1x2, f86v6, f87v, f88r, f8v, f94v, f99rx2
+  16 | p | cph ~ fch | 28 | 7.94 | 3.5 | Y | 10 | T:5, C:4, E:4, F:3, N:3, H:2, M:2, O:2, S:2, D:1 | 27 | f100r, f101r, f105r, f106v, f113r, f114r, f114v, f17v, f20r, f21r, f22r, f25r, f33r, f36r, f37r, f39r, f43r, f46r, f48v, f58r, f65v, f77r, f78v, f85r1x2, f86v6, f89v1, f90v2
+  17 | p | cfh ~ pch | 27 | 8.89 | 3.0 | Y | 12 | T:6, B:4, N:4, E:2, G:2, M:2, Q:2, C:1, D:1, F:1, H:1, S:1 | 24 | f104v, f111v, f113rx2, f114r, f115r, f13r, f16v, f22r, f31v, f36r, f37r, f41v, f52r, f54r, f58v, f76r, f84v, f86v3, f86v5x2, f86v6, f95r2, f96r, f99r, f9vx2
+  18 | p | qop ~ fch | 26 | 7.06 | 3.7 | Y | 8 | T:10, N:6, D:3, F:3, E:1, G:1, H:1, O:1 | 23 | f104v, f105r, f105v, f106r, f111r, f113rx2, f114r, f114v, f115v, f25v, f31v, f32r, f34v, f44r, f45r, f46r, f50r, f65v, f85r1x2, f86v3, f86v5, f86v6x2, f89v1
+  19 | p | #po ~ fch | 25 | 6.90 | 3.6 | Y | 10 | T:13, E:2, M:2, N:2, C:1, D:1, F:1, H:1, O:1, Q:1 | 20 | f103vx2, f104v, f105r, f107rx2, f111rx2, f113r, f113vx3, f115r, f22r, f25v, f33v, f36r, f46v, f66v, f76v, f78r, f85r1, f86v6, f89r2, f95v2
+  20 | p | #po ~ qop | 25 | 8.08 | 3.1 | Y | 8 | T:12, M:4, N:4, A:1, B:1, C:1, D:1, G:1 | 22 | f104v, f105r, f106r, f108r, f111r, f111vx2, f112v, f113r, f113v, f114rx2, f16r, f20v, f25v, f54r, f77r, f7v, f80v, f81r, f81v, f85r1, f86v5x2, f86v6
+  21 | p | #op ~ #of | 24 | 4.86 | 4.9 | Y | 9 | T:10, M:3, D:2, F:2, H:2, O:2, G:1, N:1, Q:1 | 21 | f105r, f105v, f107r, f107v, f108r, f108v, f113v, f114rx3, f26vx2, f44r, f45r, f50v, f57r, f58r, f81r, f84r, f84v, f86v6, f89v1, f90v2, f95r1
+  22 | p | psh ~ #op | 22 | 5.17 | 4.3 | Y | 9 | M:7, T:5, F:4, C:1, G:1, H:1, N:1, Q:1, S:1 | 19 | f104r, f106r, f106v, f107r, f113v, f24v, f43rx2, f44r, f48r, f50r, f58r, f76rx2, f76v, f79r, f80vx2, f84r, f86v5, f96v, f99r
+  23 | p | pch ~ hep | 22 | 6.33 | 3.5 | Y | 6 | T:7, F:5, M:4, O:4, D:1, N:1 | 17 | f103rx4, f106v, f113r, f115v, f28v, f41r, f41v, f43v, f46rx2, f75r, f80r, f83r, f83v, f86v5, f87vx2, f89r1, f90v1
+  24 | p | #op ~ ofc | 21 | 5.00 | 4.2 | Y | 8 | T:8, M:4, D:2, F:2, O:2, E:1, H:1, N:1 | 18 | f107r, f107v, f108r, f111r, f113v, f114rx3, f26vx2, f39r, f44r, f45r, f58v, f76v, f78v, f84r, f84v, f85r1, f89v1, f90v2
+  25 | p | pch ~ qof | 21 | 6.37 | 3.3 | Y | 9 | T:6, M:4, E:3, N:3, B:1, D:1, F:1, G:1, H:1 | 19 | f106v, f108r, f111r, f113rx2, f115r, f25v, f33r, f36v, f39r, f41v, f52r, f58v, f76r, f76v, f78v, f83r, f85r1x2, f86v6, f9v
+  26 | p | ypc ~ #pc | 20 | 3.40 | 5.9 | Y | 9 | F:5, B:3, T:3, C:2, D:2, N:2, E:1, H:1, S:1 | 19 | f103r, f105r, f10r, f113r, f16v, f21r, f22r, f26r, f26v, f34v, f41r, f41v, f43v, f48vx2, f58r, f85r1, f86v5, f99r, f9v
+  27 | p | psh ~ opc | 20 | 5.07 | 3.9 | Y | 7 | T:7, F:5, M:4, G:1, H:1, N:1, S:1 | 18 | f104r, f105r, f106r, f106v, f107r, f113v, f114v, f43rx2, f44r, f47v, f48r, f50r, f58r, f76rx2, f76v, f79r, f86v5, f99r
+  28 | p | #ts ~ opc | 20 | 6.35 | 3.1 | n | 9 | T:10, N:2, Q:2, A:1, B:1, G:1, H:1, I:1, M:1 | 17 | f104rx2, f106r, f106vx2, f107v, f113r, f114vx2, f115v, f13r, f53v, f57r, f68r2, f78r, f7v, f86v3, f86v6, f94v, f95r2
+  29 | p | #yp ~ #pc | 19 | 3.65 | 5.2 | Y | 8 | F:5, N:3, T:3, B:2, C:2, D:2, E:1, S:1 | 17 | f105r, f106v, f10r, f113r, f21r, f22r, f26r, f26v, f34v, f41r, f41v, f43v, f48vx2, f85r1x2, f86v5, f99r, f9v
+  30 | p | ypc ~ opc | 19 | 4.21 | 4.5 | Y | 8 | T:7, B:3, F:3, N:2, C:1, E:1, G:1, H:1 | 17 | f105rx2, f105vx2, f106v, f10r, f113r, f114r, f13r, f16r, f21r, f34v, f45r, f46r, f48r, f51r, f66r, f86v3, f86v6
+  31 | p | #yp ~ #op | 19 | 4.65 | 4.1 | Y | 7 | F:5, T:5, N:3, C:2, H:2, B:1, G:1 | 17 | f105rx2, f105v, f107r, f114r, f16r, f17rx2, f41r, f45r, f46r, f46v, f48r, f51r, f58v, f66r, f86v3, f86v5, f86v6
+  32 | p | #cp ~ #pc | 19 | 5.82 | 3.3 | n | 12 | S:4, E:2, G:2, O:2, T:2, A:1, C:1, F:1, H:1, M:1, N:1, Q:1 | 18 | f101r, f101v, f104r, f115v, f20r, f36r, f36v, f48v, f52v, f54v, f66r, f84r, f86v6, f87v, f88r, f8v, f94v, f99rx2
+  33 | p | #op ~ pai | 19 | 6.15 | 3.1 | n | 4 | T:16, C:1, H:1, N:1 | 14 | f104r, f105rx2, f107rx3, f107v, f108r, f111v, f112r, f113vx2, f114r, f114vx2, f115r, f17r, f58v, f86v6
+  34 | p | cph ~ cfh | 18 | 3.67 | 4.9 | Y | 10 | G:4, A:3, E:2, H:2, S:2, B:1, C:1, M:1, O:1, T:1 | 17 | f100r, f104v, f11r, f1rx2, f24v, f36r, f39r, f49v, f52r, f53r, f54r, f58r, f65v, f76r, f8r, f90v2, f99r
+  35 | p | pch ~ ocp | 18 | 4.40 | 4.1 | Y | 9 | T:6, C:2, F:2, G:2, N:2, D:1, O:1, Q:1, S:1 | 17 | f100r, f104r, f104v, f113r, f114r, f114vx2, f21r, f22r, f28r, f43r, f46r, f52v, f54r, f85r1, f86v6, f87r, f93v
+  36 | p | #yp ~ opc | 18 | 4.86 | 3.7 | Y | 8 | T:6, F:4, B:2, N:2, C:1, E:1, G:1, H:1 | 16 | f105rx2, f105vx2, f10r, f113r, f114r, f16r, f21r, f34v, f45r, f46r, f46v, f48r, f51r, f66r, f86v3, f86v6
+  37 | p | pol ~ qop | 18 | 5.30 | 3.4 | Y | 5 | T:7, M:6, A:2, N:2, O:1 | 16 | f108r, f111r, f111vx2, f112v, f113v, f115r, f3r, f77r, f7v, f80r, f80v, f81r, f81v, f83r, f86v6x2, f89v1
+  38 | p | #yp ~ fch | 17 | 2.96 | 5.7 | Y | 8 | F:6, N:4, T:2, B:1, C:1, E:1, H:1, S:1 | 16 | f101r, f106v, f113r, f16r, f22r, f34v, f41v, f43r, f45r, f46v, f48vx2, f66r, f85r1, f86v3, f86v5, f86v6
+  39 | p | #ps ~ #op | 17 | 3.64 | 4.7 | Y | 6 | M:5, T:5, F:4, G:1, N:1, Q:1 | 15 | f104r, f106r, f106v, f107r, f111v, f43rx2, f44r, f48r, f50r, f76r, f76vx2, f79r, f80v, f86v5, f96v
+  40 | p | pol ~ fch | 17 | 4.01 | 4.2 | Y | 6 | T:8, N:3, O:3, C:1, H:1, M:1 | 14 | f103vx2, f105r, f106v, f111r, f113vx2, f115r, f22r, f58r, f76v, f85r1, f86v6x2, f89r2, f89v1, f90v2
+  41 | p | ypc ~ #op | 17 | 4.03 | 4.2 | Y | 7 | F:4, T:4, B:3, H:2, N:2, C:1, G:1 | 17 | f105r, f105v, f106v, f114r, f13r, f16r, f17r, f41r, f45r, f46r, f48r, f51r, f58r, f66r, f86v3, f86v6, f9v
+  42 | p | opc ~ #of | 17 | 4.61 | 3.7 | Y | 7 | T:8, F:2, H:2, M:2, C:1, D:1, G:1 | 16 | f104r, f105r, f105v, f107r, f108r, f114rx2, f114v, f21r, f26v, f44r, f45r, f50v, f57r, f58r, f81r, f84v
+  43 | p | #cp ~ fch | 17 | 4.72 | 3.6 | Y | 10 | E:2, F:2, H:2, M:2, N:2, O:2, S:2, C:1, D:1, T:1 | 17 | f100r, f101r, f105r, f17v, f25r, f33r, f36r, f43r, f48v, f58r, f65v, f77r, f78v, f85r1, f86v6, f89v1, f90v2
+  44 | p | opc ~ ofc | 17 | 4.97 | 3.4 | Y | 7 | T:6, M:3, D:2, F:2, H:2, E:1, N:1 | 16 | f107r, f108r, f111r, f114rx2, f114v, f25v, f26v, f39r, f44r, f45r, f58r, f58v, f76v, f78v, f84v, f85r1
+  45 | p | #op ~ #fc | 17 | 5.13 | 3.3 | Y | 6 | T:8, C:4, M:2, B:1, G:1, N:1 | 15 | f103v, f105v, f106v, f112v, f113vx3, f114r, f16r, f17v, f21r, f22r, f23r, f49v, f76v, f84r, f86v5
+  46 | p | cph ~ #fc | 16 | 2.91 | 5.5 | Y | 8 | C:4, T:4, E:2, S:2, D:1, F:1, H:1, O:1 | 16 | f100r, f101r, f105r, f106v, f114r, f114v, f17v, f20r, f21r, f22r, f25r, f36r, f39r, f48v, f65v, f89v1
+  47 | p | #ts ~ qop | 16 | 3.13 | 5.1 | Y | 7 | T:7, A:2, M:2, N:2, B:1, G:1, Q:1 | 13 | f106vx3, f107v, f114vx2, f115v, f13r, f3r, f53v, f78r, f7v, f80v, f86v3, f86v6, f95r2
+  48 | p | #pc ~ #of | 16 | 3.31 | 4.8 | Y | 9 | T:4, M:3, C:2, F:2, A:1, D:1, E:1, H:1, N:1 | 16 | f104r, f105r, f108r, f108v, f21r, f22r, f26v, f40v, f41v, f42r, f66r, f79v, f81v, f84v, f86v6, f8r
+  49 | p | lka ~ kl# | 16 | 3.46 | 4.6 | Y | 2 | T:13, M:3 | 9 | f104r, f105r, f105vx4, f107rx2, f107v, f111vx3, f115v, f79r, f80rx2
+  50 | p | #ps ~ opc | 16 | 3.48 | 4.6 | Y | 5 | T:6, F:5, M:3, G:1, N:1 | 15 | f104r, f106r, f106v, f107r, f111v, f114v, f43rx2, f44r, f47v, f48r, f50r, f76r, f76v, f79r, f86v5
+finished 2026-10-19 01:22:10 PDT

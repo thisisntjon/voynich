@@ -1,0 +1,170 @@
+==========================================================================================================
+LEAD INVESTIGATOR REPORT: CANDIDATES 8 (TONAL MARKS), 9 (TWO STREAMS), AND 10 (MUSIC-TEXT HYBRID)
+==========================================================================================================
+Started: 2026-10-17 22:41:16
+
+==========================================================================================================
+EXPERIMENT 8: CANDIDATE 8 — TONAL LANGUAGE WITH EXPLICIT TONE MARKS (MODELS T1a, T1b, T2a, T3a, T4a, T4b)
+==========================================================================================================
+Testing 6 concrete (Syllable_Base, Tone_Mark) decompositions against 2 Planted Tonal Language Controls:
+  - T1a_Suffix_Slot   : Tone = SlotSegmenter Suffix S (19 classes), Base = Prefix + Core
+  - T1b_Final_Coda_RPA: Tone = Final glyph in {y,r,n,l,s,o,d,m,g,∅} (Hmong RPA style), Base = w[:-1]
+  - T2a_Prefix_Slot   : Tone = SlotSegmenter Prefix P (28 classes), Base = Core + Suffix
+  - T3a_Gallows_Tier  : Tone = Gallows pattern in word (k,t,p,f,ckh,cth,cph,cfh,∅), Base = non-gallows skeleton
+  - T4a_RunLen_Collapse: Tone = (e-run length 0..3, i-run length 0..3, o/a count), Base = word with e+->e, i+->i
+  - T4b_Vowel_vs_Cons : Tone = (e-run len, i-run len, o/a pattern), Base = consonant/gallows skeleton
+
+--- 8.0 Reference Expectations on Planted Tonal Controls (Built from Real-Line CREMMA + 6 Lexical Tones + Sandhi) ---
+  Control / Model        | BaseTyp Need90 Base_h2 | #Tone  H(T) Perp|B Top200T | NMI_SecT NMI_SecB T/B_Sec | JSD_p0 JSD_fn | EdgeEx% BaseGAIN
+  Planted_Syllabary_6T   |     600    456  2.3641 |     6  2.56   5.35    6.00 |   0.0008   0.0345   0.024 | 0.0040 0.0055 | -223.0%  -0.4279
+  Planted_Direct_6T      |   17954  12227  3.5825 |     6  2.56   1.11    1.33 |   0.0008   0.1732   0.005 | 0.0040 0.0055 |  -46.1%  -0.2735
+
+--- 8.1 [ZL3b] Candidate 8 Tonal Models (Unstripped: 7025 types, need90=3540, h2=2.1262, F1=+0.0461) ---
+  Model                  | BaseTyp Need90 Base_h2 | #Tone  H(T) Perp|B Top200T | NMI_SecT NMI_SecB T/B_Sec | JSD_p0 JSD_l0 JSD_fn | EdgeEx%  F1_Base BaseGAIN
+  T1a_Suffix_Slot        |    4463   1284  2.2391 |    19  2.68   1.95    6.05 |   0.0206   0.1077   0.191 | 0.1305 0.0463 0.0366 |   34.4%  +0.0395  -0.2780
+      -> [ZL3b detail] Within-Hand Section NMI: Hand1(H vs P) Tone=0.0097 vs Base=0.0552; Hand23(B vs S vs H) Tone=0.0135 vs Base=0.0689 | Tone-to-Tone MI_ex=+0.0247 (z=+38.5) | F1_Base CI=[+0.0266, +0.0515]
+  T1b_Final_Coda_RPA     |    5366   1881  2.2737 |    10  2.50   1.71    3.83 |   0.0129   0.1168   0.111 | 0.0166 0.0170 0.0752 |   81.3%  +0.0322  -0.3003
+      -> [ZL3b detail] Within-Hand Section NMI: Hand1(H vs P) Tone=0.0035 vs Base=0.0587; Hand23(B vs S vs H) Tone=0.0155 vs Base=0.0736 | Tone-to-Tone MI_ex=+0.0219 (z=+68.8) | F1_Base CI=[+0.0239, +0.0406]
+  T2a_Prefix_Slot        |    3802    778  2.0968 |    28  4.32   5.26    9.77 |   0.0423   0.0913   0.463 | 0.5691 0.1957 0.0495 |   70.3%  +0.0098  -0.2237
+      -> [ZL3b detail] Within-Hand Section NMI: Hand1(H vs P) Tone=0.0257 vs Base=0.0465; Hand23(B vs S vs H) Tone=0.0240 vs Base=0.0585 | Tone-to-Tone MI_ex=+0.1081 (z=+121.8) | F1_Base CI=[+0.0002, +0.0198]
+  T3a_Gallows_Tier       |    4546   1345  1.9605 |    62  2.06   1.95    4.61 |   0.0122   0.1094   0.112 | 0.3595 0.0295 0.0144 |  -16.0%  +0.0377  -0.2596
+      -> [ZL3b detail] Within-Hand Section NMI: Hand1(H vs P) Tone=0.0161 vs Base=0.0526; Hand23(B vs S vs H) Tone=0.0062 vs Base=0.0704 | Tone-to-Tone MI_ex=+0.0329 (z=+56.9) | F1_Base CI=[+0.0273, +0.0477]
+  T4a_RunLen_Collapse    |    6259   2774  2.0977 |    39  3.51   1.31    1.81 |   0.0302   0.1236   0.245 | 0.0595 0.0165 0.0444 |  -27.1%  +0.0449  -0.2805
+      -> [ZL3b detail] Within-Hand Section NMI: Hand1(H vs P) Tone=0.0291 vs Base=0.0615; Hand23(B vs S vs H) Tone=0.0185 vs Base=0.0796 | Tone-to-Tone MI_ex=+0.0485 (z=+70.7) | F1_Base CI=[+0.0340, +0.0557]
+  T4b_Vowel_vs_Cons      |    2830    523  2.2504 |    79  4.10   3.66    9.13 |   0.0374   0.0790   0.474 | 0.0840 0.0249 0.0681 |  -36.3%  +0.0290  -0.1701
+      -> [ZL3b detail] Within-Hand Section NMI: Hand1(H vs P) Tone=0.0279 vs Base=0.0397; Hand23(B vs S vs H) Tone=0.0207 vs Base=0.0511 | Tone-to-Tone MI_ex=+0.0713 (z=+41.0) | F1_Base CI=[+0.0188, +0.0390]
+
+--- 8.1 [RF1b] Candidate 8 Tonal Models (Unstripped: 7348 types, need90=3887, h2=2.1351, F1=+0.0333) ---
+  Model                  | BaseTyp Need90 Base_h2 | #Tone  H(T) Perp|B Top200T | NMI_SecT NMI_SecB T/B_Sec | JSD_p0 JSD_l0 JSD_fn | EdgeEx%  F1_Base BaseGAIN
+  T1a_Suffix_Slot        |    4715   1436  2.2464 |    21  2.71   1.97    6.41 |   0.0211   0.1092   0.193 | 0.1388 0.0504 0.0356 |   37.0%  +0.0320  -0.2902
+  T1b_Final_Coda_RPA     |    5670   2209  2.2831 |    10  2.48   1.70    3.87 |   0.0131   0.1187   0.110 | 0.0166 0.0170 0.0763 |   84.4%  +0.0252  -0.2995
+  T2a_Prefix_Slot        |    3959    870  2.1119 |    29  4.36   5.30   10.21 |   0.0425   0.0925   0.460 | 0.6260 0.2052 0.0488 |   73.9%  +0.0168  -0.2151
+  T3a_Gallows_Tier       |    4813   1518  1.9683 |    68  2.10   1.94    4.67 |   0.0128   0.1115   0.115 | 0.4241 0.0294 0.0155 |  -20.0%  +0.0322  -0.2643
+  T4a_RunLen_Collapse    |    6559   3098  2.1071 |    38  3.52   1.31    1.82 |   0.0300   0.1257   0.239 | 0.0687 0.0173 0.0445 |  -30.2%  +0.0378  -0.2840
+  T4b_Vowel_vs_Cons      |    2978    570  2.2576 |    80  4.14   3.72    9.57 |   0.0375   0.0798   0.470 | 0.0927 0.0271 0.0668 |  -39.9%  +0.0200  -0.1558
+
+--- 8.1 [IT2a] Candidate 8 Tonal Models (Unstripped: 7069 types, need90=3628, h2=2.1283, F1=+0.0410) ---
+  Model                  | BaseTyp Need90 Base_h2 | #Tone  H(T) Perp|B Top200T | NMI_SecT NMI_SecB T/B_Sec | JSD_p0 JSD_l0 JSD_fn | EdgeEx%  F1_Base BaseGAIN
+  T1a_Suffix_Slot        |    4469   1309  2.2393 |    20  2.75   2.01    6.09 |   0.0216   0.1087   0.199 | 0.1285 0.0469 0.0382 |   41.2%  +0.0354  -0.2934
+  T1b_Final_Coda_RPA     |    5361   1920  2.2716 |    10  2.45   1.71    3.88 |   0.0147   0.1183   0.125 | 0.0146 0.0179 0.0777 |   88.7%  +0.0340  -0.3085
+  T2a_Prefix_Slot        |    3906    875  2.0961 |    25  4.18   5.05    9.38 |   0.0422   0.0945   0.447 | 0.4904 0.1867 0.0522 |   76.7%  +0.0094  -0.1802
+  T3a_Gallows_Tier       |    4566   1387  1.9607 |    60  2.09   1.97    4.67 |   0.0132   0.1113   0.119 | 0.3952 0.0297 0.0166 |  -19.9%  +0.0283  -0.2629
+  T4a_RunLen_Collapse    |    6300   2859  2.0997 |    37  3.51   1.31    1.83 |   0.0325   0.1256   0.259 | 0.0593 0.0174 0.0495 |  -29.2%  +0.0467  -0.2848
+  T4b_Vowel_vs_Cons      |    2790    527  2.2481 |    78  4.10   3.70    9.07 |   0.0398   0.0796   0.500 | 0.0832 0.0270 0.0724 |  -39.6%  +0.0280  -0.1598
+
+==========================================================================================================
+EXPERIMENT 9: CANDIDATE 9 — TWO COMBINED INFORMATION STREAMS (INDEPENDENT EXTRACTION & OOS PREDICTION)
+==========================================================================================================
+Rule: 'We'd need two stable extraction rules, each producing independently useful predictions.
+       An edge/core split by itself doesn't demonstrate two messages.'
+Split: 166 training pages / 41 held-out pages (g1_edge_joint.split_names, seed 20261017).
+SlotSegmenter trained STRICTLY on the 166 training pages and applied to the 41 held-out pages.
+
+--- [ZL3b] 9.1 Within-Word Stream Coupling on 41 Held-Out Pages (n=8586 tokens) ---
+  H(Frame F=(P,S)) = 6.6643 bits (420 types); H(Core C) = 6.3293 bits (881 types)
+  MI(F_t; C_t) = 3.4077 bits (shuffle null 1.6157, excess +1.7920 bits, z=+191.6, NMI=0.5245)
+  Sub-components: MI(P_t; C_t)=1.8287 (NMI=0.3434), MI(S_t; C_t)=1.5092 (NMI=0.3386), MI(P_t; S_t)=0.2422 (NMI=0.0701)
+--- [ZL3b] 9.2 2x2 Directed Inter-Word Stream Coupling on 41 Held-Out Pages (n=7562 pairs) ---
+  Transition       |  obs_MI null_MI    MI_ex    z_MI | OOS_uni  OOS_bi  OOS_GAIN
+  F_t -> F_{t+1}   |  1.8093  1.5932  +0.2161   +23.3 |   6.687   6.725   -0.0374
+  C_t -> C_{t+1}   |  1.6764  1.5467  +0.1297   +15.0 |   6.465   6.627   -0.1622
+  C_t -> F_{t+1}   |  1.7531  1.5543  +0.1988   +27.9 |   6.687   6.680   +0.0078
+  F_t -> C_{t+1}   |  1.6652  1.5604  +0.1049   +11.7 |   6.465   6.657   -0.1918
+  P_t -> P_{t+1}   |  0.1756  0.0742  +0.1014   +31.7 |   4.360   4.260   +0.0999
+  S_t -> P_{t+1}   |  0.1969  0.0491  +0.1479   +41.6 |   4.360   4.197   +0.1621
+  C_t -> P_{t+1}   |  0.8361  0.6494  +0.1867   +32.9 |   4.360   4.212   +0.1480
+  C_t -> S_{t+1}   |  0.4332  0.3643  +0.0690    +9.5 |   2.505   2.510   -0.0050
+  Held-out 41p Length Covariances (char^2): within-word Cov(|F_t|,|C_t|)=-0.5661; adjacent Cov(|F1|,|F2|)=+0.1869, Cov(|C1|,|C2|)=+0.0834, cross Cov(|C1|,|F2|)=+0.1376 (of which Cov(|C1|,|P2|)=+0.0790), Cov(|F1|,|C2|)=+0.0573
+--- [ZL3b] 9.3 Out-of-Sample Line-Position Prediction on 41 Held-Out Pages (n=8465 tokens, prior H=1.0372 bits) ---
+  Full Word W_t   : held-out log-loss = 0.8929 bits, info gain = +0.1444 bits/tok, acc = 78.81%
+  Frame F_t=(P,S) : held-out log-loss = 0.9023 bits, info gain = +0.1349 bits/tok, acc = 78.49%
+  Prefix P_t      : held-out log-loss = 0.9171 bits, info gain = +0.1201 bits/tok, acc = 77.84%
+  Suffix S_t      : held-out log-loss = 0.9904 bits, info gain = +0.0468 bits/tok, acc = 77.74%
+  Core C_t        : held-out log-loss = 0.9502 bits, info gain = +0.0870 bits/tok, acc = 78.09%
+  Binary Slot Info Gain (bits): para_0 [F_t=+0.0119, C_t=+0.0022, W_t=+0.0050] | line_0 [F_t=+0.0763, C_t=+0.0522] | final [F_t=+0.0456, C_t=+0.0344]
+--- [ZL3b] 9.4 Out-of-Sample Page Regime Classification on 41 Held-Out Pages ---
+  Currier A vs B                       (n=39 held-out pages): W= 97.4% (38/39) | F=(P,S)= 97.4% (38/39) | P= 92.3% | S= 97.4% | C= 97.4% (38/39) | F-vs-C pred agreement = 100.0%
+  Scribal Hand (1..5)                  (n=41 held-out pages): W= 87.8% (36/41) | F=(P,S)= 87.8% (36/41) | P= 80.5% | S= 82.9% | C= 82.9% (34/41) | F-vs-C pred agreement =  90.2%
+  Illustration Section (H/B/S/P/C/T/A) (n=41 held-out pages): W= 80.5% (33/41) | F=(P,S)= 73.2% (30/41) | P= 73.2% | S= 68.3% | C= 73.2% (30/41) | F-vs-C pred agreement =  73.2%
+
+--- [RF1b] 9.1 Within-Word Stream Coupling on 41 Held-Out Pages (n=8604 tokens) ---
+  H(Frame F=(P,S)) = 6.7022 bits (455 types); H(Core C) = 6.3080 bits (876 types)
+  MI(F_t; C_t) = 3.4096 bits (shuffle null 1.6304, excess +1.7792 bits, z=+268.2, NMI=0.5241)
+  Sub-components: MI(P_t; C_t)=1.8365 (NMI=0.3442), MI(S_t; C_t)=1.5015 (NMI=0.3374), MI(P_t; S_t)=0.2536 (NMI=0.0729)
+--- [RF1b] 9.2 2x2 Directed Inter-Word Stream Coupling on 41 Held-Out Pages (n=7580 pairs) ---
+  Transition       |  obs_MI null_MI    MI_ex    z_MI | OOS_uni  OOS_bi  OOS_GAIN
+  F_t -> F_{t+1}   |  1.8551  1.6422  +0.2129   +29.6 |   6.722   6.762   -0.0400
+  C_t -> C_{t+1}   |  1.6550  1.5262  +0.1288   +12.8 |   6.452   6.590   -0.1379
+  C_t -> F_{t+1}   |  1.7707  1.5638  +0.2069   +22.8 |   6.722   6.734   -0.0121
+  F_t -> C_{t+1}   |  1.6850  1.5727  +0.1123   +10.7 |   6.452   6.634   -0.1811
+  P_t -> P_{t+1}   |  0.1784  0.0802  +0.0982   +30.8 |   4.400   4.305   +0.0951
+  S_t -> P_{t+1}   |  0.2067  0.0554  +0.1512   +59.9 |   4.400   4.239   +0.1613
+  C_t -> P_{t+1}   |  0.8425  0.6519  +0.1906   +30.2 |   4.400   4.266   +0.1338
+  C_t -> S_{t+1}   |  0.4418  0.3661  +0.0758    +9.1 |   2.509   2.526   -0.0175
+  Held-out 41p Length Covariances (char^2): within-word Cov(|F_t|,|C_t|)=-0.5692; adjacent Cov(|F1|,|F2|)=+0.1701, Cov(|C1|,|C2|)=+0.0834, cross Cov(|C1|,|F2|)=+0.1482 (of which Cov(|C1|,|P2|)=+0.0806), Cov(|F1|,|C2|)=+0.0601
+--- [RF1b] 9.3 Out-of-Sample Line-Position Prediction on 41 Held-Out Pages (n=8494 tokens, prior H=1.0374 bits) ---
+  Full Word W_t   : held-out log-loss = 0.8912 bits, info gain = +0.1462 bits/tok, acc = 78.74%
+  Frame F_t=(P,S) : held-out log-loss = 0.9030 bits, info gain = +0.1343 bits/tok, acc = 78.36%
+  Prefix P_t      : held-out log-loss = 0.9172 bits, info gain = +0.1202 bits/tok, acc = 77.88%
+  Suffix S_t      : held-out log-loss = 0.9905 bits, info gain = +0.0469 bits/tok, acc = 77.71%
+  Core C_t        : held-out log-loss = 0.9458 bits, info gain = +0.0916 bits/tok, acc = 78.13%
+  Binary Slot Info Gain (bits): para_0 [F_t=+0.0114, C_t=+0.0024, W_t=+0.0059] | line_0 [F_t=+0.0803, C_t=+0.0557] | final [F_t=+0.0421, C_t=+0.0355]
+--- [RF1b] 9.4 Out-of-Sample Page Regime Classification on 41 Held-Out Pages ---
+  Currier A vs B                       (n=39 held-out pages): W= 97.4% (38/39) | F=(P,S)= 97.4% (38/39) | P= 89.7% | S= 97.4% | C= 97.4% (38/39) | F-vs-C pred agreement = 100.0%
+  Scribal Hand (1..5)                  (n=41 held-out pages): W= 87.8% (36/41) | F=(P,S)= 90.2% (37/41) | P= 80.5% | S= 80.5% | C= 82.9% (34/41) | F-vs-C pred agreement =  85.4%
+  Illustration Section (H/B/S/P/C/T/A) (n=41 held-out pages): W= 82.9% (34/41) | F=(P,S)= 73.2% (30/41) | P= 75.6% | S= 70.7% | C= 70.7% (29/41) | F-vs-C pred agreement =  70.7%
+
+--- [IT2a] 9.1 Within-Word Stream Coupling on 41 Held-Out Pages (n=8411 tokens) ---
+  H(Frame F=(P,S)) = 6.5804 bits (391 types); H(Core C) = 6.3512 bits (856 types)
+  MI(F_t; C_t) = 3.3621 bits (shuffle null 1.5931, excess +1.7690 bits, z=+185.1, NMI=0.5200)
+  Sub-components: MI(P_t; C_t)=1.7191 (NMI=0.3273), MI(S_t; C_t)=1.5583 (NMI=0.3461), MI(P_t; S_t)=0.2275 (NMI=0.0668)
+--- [IT2a] 9.2 2x2 Directed Inter-Word Stream Coupling on 41 Held-Out Pages (n=7392 pairs) ---
+  Transition       |  obs_MI null_MI    MI_ex    z_MI | OOS_uni  OOS_bi  OOS_GAIN
+  F_t -> F_{t+1}   |  1.7550  1.5314  +0.2236   +23.6 |   6.634   6.641   -0.0079
+  C_t -> C_{t+1}   |  1.7111  1.5642  +0.1469   +13.2 |   6.478   6.608   -0.1297
+  C_t -> F_{t+1}   |  1.7508  1.5515  +0.1993   +26.2 |   6.634   6.647   -0.0132
+  F_t -> C_{t+1}   |  1.6555  1.5341  +0.1215   +12.1 |   6.478   6.651   -0.1732
+  P_t -> P_{t+1}   |  0.1468  0.0603  +0.0865   +29.2 |   4.238   4.142   +0.0961
+  S_t -> P_{t+1}   |  0.1961  0.0462  +0.1499   +55.4 |   4.238   4.075   +0.1628
+  C_t -> P_{t+1}   |  0.7955  0.6253  +0.1702   +26.0 |   4.238   4.105   +0.1331
+  C_t -> S_{t+1}   |  0.4399  0.3787  +0.0612    +7.6 |   2.564   2.577   -0.0129
+  Held-out 41p Length Covariances (char^2): within-word Cov(|F_t|,|C_t|)=-0.6682; adjacent Cov(|F1|,|F2|)=+0.1470, Cov(|C1|,|C2|)=+0.1223, cross Cov(|C1|,|F2|)=+0.0979 (of which Cov(|C1|,|P2|)=+0.0458), Cov(|F1|,|C2|)=+0.0681
+--- [IT2a] 9.3 Out-of-Sample Line-Position Prediction on 41 Held-Out Pages (n=8291 tokens, prior H=1.0482 bits) ---
+  Full Word W_t   : held-out log-loss = 0.8875 bits, info gain = +0.1607 bits/tok, acc = 78.71%
+  Frame F_t=(P,S) : held-out log-loss = 0.9194 bits, info gain = +0.1289 bits/tok, acc = 77.83%
+  Prefix P_t      : held-out log-loss = 0.9373 bits, info gain = +0.1109 bits/tok, acc = 76.93%
+  Suffix S_t      : held-out log-loss = 1.0011 bits, info gain = +0.0471 bits/tok, acc = 77.28%
+  Core C_t        : held-out log-loss = 0.9536 bits, info gain = +0.0946 bits/tok, acc = 77.88%
+  Binary Slot Info Gain (bits): para_0 [F_t=+0.0074, C_t=+0.0029, W_t=+0.0053] | line_0 [F_t=+0.0795, C_t=+0.0542] | final [F_t=+0.0415, C_t=+0.0392]
+--- [IT2a] 9.4 Out-of-Sample Page Regime Classification on 41 Held-Out Pages ---
+  Currier A vs B                       (n=39 held-out pages): W= 97.4% (38/39) | F=(P,S)= 97.4% (38/39) | P= 89.7% | S= 97.4% | C= 97.4% (38/39) | F-vs-C pred agreement = 100.0%
+  Scribal Hand (1..5)                  (n=41 held-out pages): W= 85.4% (35/41) | F=(P,S)= 90.2% (37/41) | P= 78.0% | S= 85.4% | C= 85.4% (35/41) | F-vs-C pred agreement =  87.8%
+  Illustration Section (H/B/S/P/C/T/A) (n=41 held-out pages): W= 82.9% (34/41) | F=(P,S)= 68.3% (28/41) | P= 75.6% | S= 65.9% | C= 73.2% (30/41) | F-vs-C pred agreement =  75.6%
+
+==========================================================================================================
+EXPERIMENT 10: CANDIDATE 10 — MUSIC-TEXT HYBRID OUTSIDE EDGE-PITCH (S24/S34 DIAGNOSTICS & CHANT GATE)
+==========================================================================================================
+--- 10.1 Exhaustive 1,022 Glyph-Class Partition Landscape on ZL3b (Why 0/1,022 Partitions Meet Language P1) ---
+  Language P1 Target Box (from 5 real-line medieval languages): h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax <= 0.248
+  ZL3b Unstripped Baseline: h2 = 2.1262, types_25k = 5417, hapax = 0.147
+  Across ALL 1,022 non-trivial glyph-class partitions of ZL3b:
+    * Residual h2 range       : [0.2448, 2.4367] ( global max h2 = 2.4367 at M={BENCH+OA+I+Y}, types=1706, hapax=0.038 )
+    * Max h2 with types in [3478, 8626] & hapax <= 0.248: h2 = 2.2277 at M={OA}, types=3758, hapax=0.095
+    * Shortfall below language floor (3.0228): +0.5861 bits (even unconstrained) and +0.7951 bits (in type band)!
+
+--- 10.2 Diagnosing & Fixing the S34 P3 Positive-Control Selector on `planted_cremma` ---
+  Why s34's raw selector `argmax(I_self - I_cross)` picked M={GALLOWS+BENCH+E+OA+I+Y+Q+PITCH} (S=+0.6249) over M={PITCH} (S=+0.5328, rank 25):
+    1. In `planted_cremma`, a PITCH symbol is inserted immediately after every vowel-group (E, OA, I, Y).
+    2. When vowels + PITCH are merged into M, the M stream alternates deterministically [Vowel] -> [PITCH] -> [Vowel] -> [PITCH].
+    3. That bipartite class alternation injects ~1 bit of artificial transition structure into I_self (0.6797 vs 0.5333),
+       while I_cross is only penalized by 1x (0.0548 vs 0.0004), and because `cremma_all` starts at the top of the P1 box
+       (h2=3.5825, types=8626), stripping 71% of its letters still leaves h2=3.1425 >= 3.0228 and types=3553 >= 3478.
+  When we enforce the Superimposition Independence Gate (`I_cross <= 0.005 bits` AND `M_alph >= 2` among P1-ok partitions):
+    Qualifying partitions on `planted_cremma`: 0 of 1022
+
+--- 10.3 Positive-Control Verification on Synthetic Medieval Modal Chant (8-Neume Stepwise Contour + Line-End Cadence) ---
+  Modal Chant Control (n=8 edge symbols, 31101 within-line pairs):
+    * S24 P1 Seriation MAD = 1.0807 (MAD/(n-1) = 0.1544, band<=2 mass = 0.9120) vs Voynich ZL3b MAD = 2.6644 (row/col null 1st pct = 2.4694)
+    * S24 P2 Line-End Reset: within-line MI_ex = 0.7454 bits, across-line MI_ex = 0.0003 bits -> across/within ratio = 0.0004 (PASSES < 0.0615 Dante threshold!)
+
+Completed in 107.8s

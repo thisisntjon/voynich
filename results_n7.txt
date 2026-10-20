@@ -1,0 +1,354 @@
+# results_n7: gibberish family X on the frozen v2 board  run=2026-10-17 19:40 (system clock)  seed=20261017
+# script sha256 02925f76f29f5709d87370ebc9e82efb6ece6799f941a9a47e106ad3317e532c  stub 02925f76f29f5709d87370ebc9e82efb6ece6799f941a9a47e106ad3317e532c  -> MATCH
+# ranges file: n7_gibberish_ranges.json (built in step b from results_m4_phase1_board.json)
+
+gate copy-check gib_pooled: |dPosEnt|=0.00e+00 |dMoran|=0.00e+00
+gate copy-check voynich: |dPosEnt|=0.00e+00 |dMoran|=0.00e+00
+
+=== (a) run_v2 on the 39 gib_ sidecars (--family X --ranges results_m4_phase1_board.json) ===
+  results_n7_gib_DA_01.txt  0s
+  results_n7_gib_DA_02.txt  1s
+  results_n7_gib_DC_01.txt  1s
+  results_n7_gib_DC_03.txt  0s
+  results_n7_gib_DC_04.txt  1s
+  results_n7_gib_DC_05.txt  1s
+  results_n7_gib_DC_06.txt  1s
+  results_n7_gib_DC_08.txt  0s
+  results_n7_gib_DC_09.txt  0s
+  results_n7_gib_DC_10.txt  0s
+  results_n7_gib_DC_11.txt  0s
+  results_n7_gib_DC_12.txt  0s
+  results_n7_gib_DC_15.txt  1s
+  results_n7_gib_DC_16.txt  1s
+  results_n7_gib_DC_18.txt  1s
+  results_n7_gib_DC_20.txt  0s
+  results_n7_gib_DC_21.txt  0s
+  results_n7_gib_DC_22.txt  0s
+  results_n7_gib_DC_23.txt  0s
+  results_n7_gib_DC_24.txt  0s
+  results_n7_gib_DC_25.txt  0s
+  results_n7_gib_DC_26.txt  1s
+  results_n7_gib_DC_27.txt  0s
+  results_n7_gib_DC_28.txt  0s
+  results_n7_gib_DC_29.txt  0s
+  results_n7_gib_DC_30.txt  1s
+  results_n7_gib_DC_31.txt  1s
+  results_n7_gib_DC_32.txt  0s
+  results_n7_gib_DC_33.txt  0s
+  results_n7_gib_DC_34.txt  1s
+  results_n7_gib_DC_35.txt  0s
+  results_n7_gib_DC_36.txt  0s
+  results_n7_gib_DC_37.txt  1s
+  results_n7_gib_DC_38.txt  0s
+  results_n7_gib_DC_39.txt  0s
+  results_n7_gib_DC_40.txt  1s
+  results_n7_gib_DC_41.txt  0s
+  results_n7_gib_DC_42.txt  0s
+  results_n7_gib_pooled.txt  9s
+writers scored: 38; tokens 10023; pooled 10023
+
+writer      tok        h2    sd_len jsd_first p_init_en m_final_e cross_exc redup_pct x_positio  moran*
+DA_01       210     2.788     1.714     0.127     6.000       nan     0.060     0.478     1.899  +0.013
+DA_02       356     2.790     2.751     0.091     1.740     0.000     0.164     0.000     2.056  -0.018
+DC_01       364     2.868     1.554     0.121     1.180     0.270     0.064     0.000     1.923  +0.031
+DC_03       251     2.870     2.759     0.125     2.920       nan     0.035     0.800     1.893  -0.179
+DC_04       270     2.866     2.422     0.198     1.190     1.980     0.163     0.000     2.031  -0.099
+DC_05       200     3.268     2.939     0.259     0.860     3.000    -0.000     1.508     2.168  +0.064
+DC_06       342     3.074     4.296     0.116       nan     0.850     0.070     0.587     2.069  +0.183
+DC_08       247     2.835     1.688     0.185     0.000     1.490     0.070     0.407     1.934  -0.142
+DC_09       218     3.210     1.390     0.164     3.000     1.000     0.145     0.461     2.063  +0.072
+DC_10       221     2.948     2.230     0.234     2.100     1.960    -0.063     0.000     2.014  -0.058
+DC_11       223     3.114     2.853     0.147     0.990     0.990    -0.070     0.901     2.007  -0.107
+DC_12       207     3.197     2.805     0.169     1.990     0.000    -0.052     0.000     2.125  +0.086
+DC_15       480     3.167     2.412     0.105     2.250     3.000     0.114     0.626     2.126  +0.080
+DC_16       338     3.529     2.835     0.089     2.000     1.000     0.305     0.297     2.152  +0.189
+DC_18       421     2.948     2.157     0.110     2.970     0.000     0.059     0.476     1.984  -0.123
+DC_20       274     2.485     2.727     0.106       nan     0.000     0.049     4.029     2.054  -0.116
+DC_21       305     2.531     2.564     0.069     0.000     0.320     0.019     0.000     1.892  -0.045
+DC_22       150     3.277     3.521     0.356     0.000     0.980     0.027     1.342     2.145  +0.361
+DC_23       120     2.768     1.806     0.291     1.000     0.000     0.074     0.000     1.818  -0.311
+DC_24        79     2.920     2.692     0.229     0.000     1.180    -0.067     0.000     1.922  -0.062
+DC_25       157     3.202     1.651     0.301     0.000     1.460     0.097     0.000     1.929  -0.088
+DC_26       228     3.827     2.527     0.173     0.650     0.730     0.057     0.000     2.203  -0.042
+DC_27       332     3.528     1.485     0.182     0.000     0.590     0.112     0.302     2.146  +0.191
+DC_28       215     2.912     1.983     0.150     0.540     0.000     0.070     0.000     1.961  +0.058
+DC_29       184     3.336     2.854     0.341    12.000     3.000     0.021     0.000     2.068  -0.063
+DC_30       322     3.114     1.647     0.123     0.000     1.380     0.053     0.000     1.966  -0.008
+DC_31       355     3.466     1.823     0.098     0.980     0.390     0.111     0.000     2.149  +0.178
+DC_32       281     3.076     1.894     0.200     0.900     0.430     0.165     2.143     1.932  -0.114
+DC_33       188     2.433     2.827     0.140     0.000       nan     0.126     1.070     1.718  -0.085
+DC_34       276     2.937     1.352     0.082     2.940     1.040    -0.009     0.364     1.850  -0.048
+DC_35       267     3.549     2.112     0.146     0.870     0.000     0.077     0.000     2.125  +0.146
+DC_36       199     4.003     6.584     0.234     0.000     0.850     0.073     0.000     2.255  +0.043
+DC_37       317     3.588     2.274     0.171     2.150     1.320     0.175     0.000     2.194  +0.140
+DC_38       292     2.744     2.471     0.115     3.930     0.540     0.064     0.687     1.937  -0.046
+DC_39       312     3.245     2.254     0.248     1.000     0.000    -0.008     0.000     2.065  +0.021
+DC_40       330     3.405     3.109     0.053     1.600     1.330     0.066     1.520     2.151  -0.133
+DC_41       150     3.032     1.966     0.195     1.470     0.000     0.026     0.671     1.992  +0.006
+DC_42       342     2.629     2.201     0.149       nan     0.940     0.131     0.293     1.914  +0.077
+(* Moran I per writer is descriptive only; the weighted X Moran range is from the pooled corpus)
+
+=== jackknife: gib_pooled minus one writer (38 corpora), run_v2.score_one ===
+  38 jackknife corpora scored
+
+=== (b) n7_gibberish_ranges.json ===
+metric                                     X range               X source               L range tight LCGX  noW(m4->n7)
+h2                                  2.4328..4.0030        per-writer (38)        2.5694..3.5377       ttt.         n->n
+sd_len                              1.3520..6.5840        per-writer (38)        1.3880..2.9710       ttt.         y->y
+jsd_first_fg                        0.0526..0.3560        per-writer (38)        0.0008..0.0027       ttt.         n->n
+p_init_enrich                      0.0000..12.0000        per-writer (38)        0.7500..1.2200       t...         n->n
+m_final_enrich                      0.0000..3.0000        per-writer (38)        0.0000..1.3800       t.tt         n->n
+cross_excess_eva                   -0.0702..0.3049        per-writer (38)        0.0261..0.1459       ttt.         n->n
+redup_pct                           0.0000..4.0290        per-writer (38)        0.0000..0.3800       ttt.         n->n
+x_edge_mi_word                      0.0245..0.0335  pooled + 38 jackknife        0.0280..0.1497       .ttt         n->n
+types_25k                                      nan  NA (undefined at 25k)  1182.0000..8308.0000       ttt.         n->n
+x_position_entropy                  1.7182..2.2550        per-writer (38)        1.9439..2.1557       t.t.         n->n
+x_ltr_minus_rtl                     0.0021..0.0142  pooled + 38 jackknife       -0.0062..0.0023       t.tt         n->n
+x_moran_I                           0.1079..0.1308  pooled + 38 jackknife       -0.2736..0.0377       .ttt         y->n
+lex_beta                            0.9716..1.0538  pooled + 38 jackknife        0.5730..0.9095       .t.t         y->n
+lex_rate_late_early                 1.0016..1.1701  pooled + 38 jackknife        0.2113..0.6117       tt.t         y->n
+lex_edit1_excess                    0.1366..0.1528  pooled + 38 jackknife       -0.0017..0.0995       tttt         y->n
+slot_occupancy_pc                   0.0355..0.0385  pooled + 38 jackknife        0.0314..0.0663       tttt         y->n
+slot_table_likeness                 0.8925..0.9010  pooled + 38 jackknife        0.5462..0.7758       .ttt         y->n
+slot_core_crowding                  0.5779..0.6011  pooled + 38 jackknife        0.5097..0.9231       tttt         y->n
+info_mi_adjacent                    0.2787..0.3409  pooled + 38 jackknife        0.2309..1.1160       .ttt         y->y
+info_samecol_minus_othercol        -0.0322..0.0498  pooled + 38 jackknife       -0.0071..0.0859       tttt         y->y
+bake_char3_minus_unigram          -0.8589..-0.7926  pooled + 38 jackknife       -0.4292..1.7457       ...t         y->n
+x_hapax_10k                         0.8521..0.8521  pooled + 38 jackknife        0.4139..0.7401       .t.t         y->y
+info_mi_page                        0.1465..0.2351  pooled + 38 jackknife       -0.0229..0.0305       tttt         y->y
+info_bpe_adjacent                   0.3287..0.3545  pooled + 38 jackknife                   nan       ...t         n->y
+
+=== (c) run_v2 with --ranges n7_gibberish_ranges.json ===
+  results_n7_voy_all.txt  27s
+  results_n7_RF1b_all.txt  27s
+  results_n7_IT2a_all.txt  27s
+  results_n7_voy_A.txt  8s
+  results_n7_RF1b_A.txt  7s
+  results_n7_IT2a_A.txt  6s
+  results_n7_voy_B.txt  12s
+  results_n7_RF1b_B.txt  10s
+  results_n7_IT2a_B.txt  10s
+  results_n7_ent_c2_best.txt  12s
+  results_n7_ent_flow_cipher_layer.txt  13s
+  results_n7_ent_flow_gen_layer.txt  13s
+  results_n7_ent_latin_merged.txt  16s
+  results_n7_ent_lull_ars_brevis_table.txt  1s
+  results_n7_ent_markov1.txt  19s
+  results_n7_ent_naibbe_like.txt  33s
+  results_n7_ent_nomen_k2_x2.txt  23s
+  results_n7_ent_nomen_k2_x8.txt  28s
+  results_n7_ent_nomen_lines.txt  18s
+  results_n7_ent_nomen_numeric.txt  11s
+  results_n7_ent_nomen_numeric_lines.txt  13s
+  results_n7_ent_nomen_numeric_sylls.txt  17s
+  results_n7_ent_nomen_syll.txt  19s
+  results_n7_ent_nomen_word.txt  17s
+  results_n7_ent_rugg_grille.txt  15s
+  results_n7_ent_schwartz_reuse.txt  16s
+  results_n7_ent_timm_schinner.txt  14s
+  results_n7_ent_timm_schinner_ownlines.txt  10s
+
+=== FULL SCALE: Voynich ZL3b per metric (in/out L C G X; class; flips across ZL3b/RF1b/IT2a) ===
+-- subset all --
+metric                            ZL3b      RF1b      IT2a  L   C   G   X   class    weight
+h2                               2.126     2.135     2.128  OUT OUT  IN OUT  ANOM     W
+sd_len                           1.764     1.777     1.691   IN  IN  IN  IN  NONDIAG  noW
+jsd_first_fg                     0.176     0.181     0.175  OUT OUT OUT  IN  FAV_X    W
+p_init_enrich                   17.890    19.400    17.550  OUT  NA  IN OUT  ANOM     W
+m_final_enrich                  16.310    16.430    16.510  OUT  NA OUT OUT  ANOM     W
+cross_excess_eva                 0.181     0.173     0.166  OUT OUT OUT  IN  FAV_X    W
+redup_pct                        0.896     0.880     0.932  OUT OUT  IN  IN  FAV_X    W
+x_edge_mi_word                   0.188     0.179     0.173  OUT OUT OUT OUT  ANOM     W
+types_25k                     5417.000  5680.000  5522.000   IN OUT  IN  NA  NA       W
+x_position_entropy               1.661     1.665     1.650  OUT  IN  IN OUT  ANOM     flip0
+x_ltr_minus_rtl                  0.005     0.004     0.004  OUT OUT  IN  IN  FAV_X    W
+x_moran_I                        0.141     0.141     0.141  OUT OUT OUT OUT  ANOM     W
+lex_beta                         0.741     0.753     0.750   IN OUT  IN OUT  FAV_L    W
+lex_rate_late_early              0.464     0.473     0.462   IN OUT  IN OUT  FAV_L    W
+lex_edit1_excess                 0.097     0.088     0.099   IN OUT  IN OUT  FAV_L    W
+slot_occupancy_pc                0.066     0.067     0.070   IN  IN  IN OUT  FAV_L    W
+slot_table_likeness              0.648     0.650     0.654   IN OUT  IN OUT  FAV_L    W
+slot_core_crowding               0.872     0.852     0.865   IN  IN  IN OUT  FAV_L    W
+info_mi_adjacent                 0.174     0.163     0.151   IN OUT  IN OUT  FAV_L    noW
+info_samecol_minus_othercol      0.009     0.011     0.017   IN OUT  IN  IN  NONDIAG  noW
+bake_char3_minus_unigram        -0.526    -0.546    -0.526   IN  IN  IN OUT  FAV_L    W
+x_hapax_10k                      0.686     0.704     0.688   IN OUT  IN OUT  FAV_L    REPORT
+info_mi_page                     0.029     0.021     0.020   IN OUT OUT OUT  FAV_L    REPORT
+info_bpe_adjacent                1.176     1.165     1.162   NA  NA  NA OUT  NA       REPORT
+  L: outs= 9 tight-outs=7 na=0  out: h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I
+  C: outs=12 tight-outs=11 na=2  out: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_table_likeness
+  G: outs= 5 tight-outs=5 na=0  out: jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word, x_moran_I
+  X: outs=12 tight-outs=10 na=1  out: h2, p_init_enrich, m_final_enrich, x_edge_mi_word, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  counted metrics (17): h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  zero-weighted by translit flip: x_position_entropy
+  KILL-precondition (>=3 tight outs): ['L', 'C', 'G', 'X']   FAVOURED (fewest outs by >=2): ['G']
+  FAV_X (4): jsd_first_fg, cross_excess_eva, redup_pct, x_ltr_minus_rtl
+  FAV_L (7): lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  NONDIAG: -
+  ANOM (out L and X): h2, p_init_enrich, m_final_enrich, x_edge_mi_word, x_moran_I
+  outside every family (L,C,G,X all OUT, any class): x_edge_mi_word, x_moran_I
+
+-- subset A --
+metric                            ZL3b      RF1b      IT2a  L   C   G   X   class    weight
+h2                               2.145     2.158     2.139  OUT OUT  IN OUT  ANOM     W
+sd_len                           1.786     1.806     1.730   IN  IN  IN  IN  NONDIAG  noW
+jsd_first_fg                     0.139     0.145     0.136  OUT OUT OUT  IN  FAV_X    W
+p_init_enrich                   11.620    12.760    12.030  OUT  NA  IN  IN  FAV_X    W
+m_final_enrich                   6.210     6.300     6.480  OUT  NA  IN OUT  ANOM     W
+cross_excess_eva                 0.120     0.107     0.097   IN OUT OUT  IN  NONDIAG  W
+redup_pct                        0.864     0.841     0.957  OUT OUT  IN  IN  FAV_X    W
+x_edge_mi_word                   0.127     0.113     0.102   IN OUT OUT OUT  FAV_L    W
+types_25k                     3217.000  3384.000  3243.000   IN OUT  IN  NA  NA       W
+x_position_entropy               1.695     1.711     1.686  OUT  IN  IN  IN  FAV_X    W
+x_ltr_minus_rtl                  0.005     0.002     0.001  OUT OUT  IN  IN  FAV_X    flip0
+x_moran_I                        0.105     0.109     0.099  OUT OUT  IN OUT  ANOM     flip0
+lex_beta                         0.747     0.767     0.756   IN OUT  IN OUT  FAV_L    flip0
+lex_rate_late_early              0.519     0.494     0.530   IN  IN  IN OUT  FAV_L    flip0
+lex_edit1_excess                 0.091     0.079     0.082   IN OUT  IN OUT  FAV_L    W
+slot_occupancy_pc                0.070     0.065     0.069   IN  IN  IN OUT  FAV_L    W
+slot_table_likeness              0.688     0.689     0.690   IN OUT  IN OUT  FAV_L    W
+slot_core_crowding               0.860     0.844     0.869   IN  IN  IN OUT  FAV_L    W
+info_mi_adjacent                 0.103     0.086     0.082  OUT OUT  IN OUT  ANOM     noW
+info_samecol_minus_othercol      0.010    -0.015     0.014   IN OUT  IN  IN  NONDIAG  noW
+bake_char3_minus_unigram        -0.662    -0.682    -0.668  OUT  IN  IN OUT  ANOM     W
+x_hapax_10k                      0.693     0.713     0.698   IN OUT  IN OUT  FAV_L    REPORT
+info_mi_page                    -0.001     0.001     0.001   IN OUT  IN OUT  FAV_L    REPORT
+info_bpe_adjacent                1.112     1.107     1.096   NA  NA  NA OUT  NA       REPORT
+  L: outs= 7 tight-outs=6 na=0  out: h2, jsd_first_fg, p_init_enrich, m_final_enrich, redup_pct, x_position_entropy, bake_char3_minus_unigram
+  C: outs= 8 tight-outs=8 na=2  out: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, lex_edit1_excess, slot_table_likeness
+  G: outs= 3 tight-outs=3 na=0  out: jsd_first_fg, cross_excess_eva, x_edge_mi_word
+  X: outs= 8 tight-outs=7 na=1  out: h2, m_final_enrich, x_edge_mi_word, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  counted metrics (14): h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_position_entropy, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  zero-weighted by translit flip: x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early
+  KILL-precondition (>=3 tight outs): ['L', 'C', 'G', 'X']   FAVOURED (fewest outs by >=2): ['G']
+  FAV_X (4): jsd_first_fg, p_init_enrich, redup_pct, x_position_entropy
+  FAV_L (5): x_edge_mi_word, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding
+  NONDIAG: cross_excess_eva
+  ANOM (out L and X): h2, m_final_enrich, bake_char3_minus_unigram
+  outside every family (L,C,G,X all OUT, any class): -
+
+-- subset B --
+metric                            ZL3b      RF1b      IT2a  L   C   G   X   class    weight
+h2                               1.998     2.008     2.004  OUT OUT  IN OUT  ANOM     W
+sd_len                           1.779     1.786     1.682   IN  IN  IN  IN  NONDIAG  noW
+jsd_first_fg                     0.219     0.224     0.220  OUT OUT OUT  IN  FAV_X    W
+p_init_enrich                   21.780    23.620    21.020  OUT  NA OUT OUT  ANOM     flip0
+m_final_enrich                  32.090    32.520    32.020  OUT  NA OUT OUT  ANOM     W
+cross_excess_eva                 0.232     0.226     0.218  OUT OUT OUT  IN  FAV_X    W
+redup_pct                        0.841     0.825     0.838  OUT OUT  IN  IN  FAV_X    W
+x_edge_mi_word                   0.240     0.233     0.226  OUT OUT OUT OUT  ANOM     W
+types_25k                     4788.000  4945.000  4813.000   IN OUT  IN  NA  NA       W
+x_position_entropy               1.604     1.604     1.591  OUT  IN  IN OUT  ANOM     W
+x_ltr_minus_rtl                  0.009     0.006     0.007  OUT OUT OUT  IN  FAV_X    flip0
+x_moran_I                        0.151     0.154     0.157  OUT OUT OUT OUT  ANOM     W
+lex_beta                         0.748     0.751     0.736   IN OUT  IN OUT  FAV_L    W
+lex_rate_late_early              0.511     0.539     0.526   IN  IN  IN OUT  FAV_L    flip0
+lex_edit1_excess                 0.073     0.073     0.069   IN OUT  IN OUT  FAV_L    W
+slot_occupancy_pc                0.080     0.083     0.080  OUT  IN  IN OUT  ANOM     W
+slot_table_likeness              0.656     0.654     0.660   IN OUT  IN OUT  FAV_L    W
+slot_core_crowding               0.858     0.833     0.857   IN  IN  IN OUT  FAV_L    W
+info_mi_adjacent                 0.167     0.162     0.150   IN OUT  IN OUT  FAV_L    noW
+info_samecol_minus_othercol     -0.001    -0.001    -0.002   IN  IN  IN  IN  NONDIAG  noW
+bake_char3_minus_unigram        -0.592    -0.608    -0.594   IN  IN  IN OUT  FAV_L    W
+x_hapax_10k                      0.686     0.688     0.683   IN OUT  IN OUT  FAV_L    REPORT
+info_mi_page                     0.012     0.006     0.017   IN  IN  IN OUT  FAV_L    REPORT
+info_bpe_adjacent                1.245     1.249     1.231   NA  NA  NA OUT  NA       REPORT
+  L: outs= 9 tight-outs=7 na=0  out: h2, jsd_first_fg, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_position_entropy, x_moran_I, slot_occupancy_pc
+  C: outs=10 tight-outs=10 na=1  out: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_moran_I, lex_beta, lex_edit1_excess, slot_table_likeness
+  G: outs= 5 tight-outs=5 na=0  out: jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word, x_moran_I
+  X: outs=11 tight-outs=9 na=1  out: h2, m_final_enrich, x_edge_mi_word, x_position_entropy, x_moran_I, lex_beta, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  counted metrics (15): h2, jsd_first_fg, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_position_entropy, x_moran_I, lex_beta, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  zero-weighted by translit flip: p_init_enrich, x_ltr_minus_rtl, lex_rate_late_early
+  KILL-precondition (>=3 tight outs): ['L', 'C', 'G', 'X']   FAVOURED (fewest outs by >=2): ['G']
+  FAV_X (3): jsd_first_fg, cross_excess_eva, redup_pct
+  FAV_L (5): lex_beta, lex_edit1_excess, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  NONDIAG: -
+  ANOM (out L and X): h2, m_final_enrich, x_edge_mi_word, x_position_entropy, x_moran_I, slot_occupancy_pc
+  outside every family (L,C,G,X all OUT, any class): x_edge_mi_word, x_moran_I
+
+=== entrants/controls vs X (n7 ranges; synthetic via run_v2, L controls from stored m4 rows) ===
+  c2_best                        [run_v2] X-outs=13 L-outs=10  X out: h2, p_init_enrich, m_final_enrich, x_edge_mi_word, x_position_entropy, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  flow_cipher_layer              [run_v2] X-outs=13 L-outs= 8  X out: h2, m_final_enrich, x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  flow_gen_layer                 [run_v2] X-outs=12 L-outs= 9  X out: h2, m_final_enrich, x_edge_mi_word, x_position_entropy, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  latin_merged                   [run_v2] X-outs=10 L-outs= 1  X out: jsd_first_fg, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  lull_ars_brevis_table          [run_v2] X-outs= 8 L-outs= 6  X out: jsd_first_fg, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  markov1                        [run_v2] X-outs= 9 L-outs= 7  X out: h2, jsd_first_fg, x_edge_mi_word, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness
+  naibbe_like                    [run_v2] X-outs= 9 L-outs= 9  X out: jsd_first_fg, x_edge_mi_word, x_moran_I, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  nomen_k2_x2                    [run_v2] X-outs= 9 L-outs= 5  X out: x_edge_mi_word, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  nomen_k2_x8                    [run_v2] X-outs=10 L-outs= 7  X out: m_final_enrich, x_edge_mi_word, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  nomen_lines                    [run_v2] X-outs= 9 L-outs= 4  X out: x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  nomen_numeric                  [run_v2] X-outs=12 L-outs= 9  X out: jsd_first_fg, x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  nomen_numeric_lines            [run_v2] X-outs=11 L-outs= 9  X out: x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  nomen_numeric_sylls            [run_v2] X-outs=11 L-outs= 4  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  nomen_syll                     [run_v2] X-outs=11 L-outs= 3  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  nomen_word                     [run_v2] X-outs=10 L-outs= 4  X out: jsd_first_fg, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  rugg_grille                    [run_v2] X-outs=11 L-outs= 6  X out: jsd_first_fg, x_position_entropy, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  schwartz_reuse                 [run_v2] X-outs=10 L-outs= 9  X out: h2, m_final_enrich, x_edge_mi_word, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  timm_schinner                  [run_v2] X-outs=11 L-outs= 5  X out: h2, jsd_first_fg, x_edge_mi_word, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  timm_schinner_ownlines         [run_v2] X-outs=11 L-outs=10  X out: h2, m_final_enrich, x_edge_mi_word, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  latin_caesar                   [m4 row] X-outs=11 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  latin_augustine                [m4 row] X-outs=11 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  italian_dante                  [m4 row] X-outs=10 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  german_faust                   [m4 row] X-outs=10 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, bake_char3_minus_unigram
+  german_kafka                   [m4 row] X-outs=11 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  english_alice                  [m4 row] X-outs=10 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  hebrew_torah                   [m4 row] X-outs=11 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  arabic_quran                   [m4 row] X-outs=11 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  greek_herodotus                [m4 row] X-outs= 9 L-outs= 0  X out: jsd_first_fg, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, bake_char3_minus_unigram
+  czech_bible_kralicka_1613      [m4 row] X-outs=11 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  occitan_croisade_albigeoise    [m4 row] X-outs=11 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  oldfrench_roland               [m4 row] X-outs=11 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  mhg_nibelungenlied             [m4 row] X-outs=11 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  mhg_parzival                   [m4 row] X-outs=11 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  catalan_tirant                 [m4 row] X-outs=11 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  turkish_kanun_medeni_1926      [m4 row] X-outs=10 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  latin_macer_floridus           [m4 row] X-outs= 9 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  latin_pliny_herbal             [m4 row] X-outs=10 L-outs= 0  X out: jsd_first_fg, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  hawaiian_fornander             [m4 row] X-outs=10 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  tagalog_urbana_feliza_1864     [m4 row] X-outs= 9 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, bake_char3_minus_unigram
+  tagalog_florante_1838          [m4 row] X-outs=11 L-outs= 0  X out: jsd_first_fg, x_edge_mi_word, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+
+=== (d) MATCHED LENGTH: Voynich windows and L windows at the 38 writer lengths ===
+-- subset all: 760 Voynich windows --
+metric                V median        L_ml range        X_ml range  V%inL  V%inX  L   X   class
+h2                       1.909      2.409..3.216      2.433..4.003    0.0    0.0  OUT OUT  ANOM
+sd_len                   1.747      1.394..3.170      1.352..6.584   99.9  100.0   IN  IN  NONDIAG
+jsd_first_fg             0.277      0.070..0.408      0.053..0.356   85.9   77.5   IN  IN  NONDIAG
+p_init_enrich           11.270      0.000..6.000     0.000..12.000   32.7   57.9  OUT  IN  FAV_X
+m_final_enrich          13.820      0.000..6.000      0.000..3.000   29.7   14.5  OUT OUT  ANOM
+cross_excess_eva         0.139     -0.121..0.207     -0.070..0.305   83.6   96.3   IN  IN  NONDIAG
+redup_pct                0.811      0.000..1.258      0.000..4.029   79.7  100.0   IN  IN  NONDIAG
+x_position_entropy       1.585      1.818..2.116      1.718..2.255    0.0   18.0  OUT OUT  ANOM
+  FAV_X (1): p_init_enrich   FAV_L (0): -
+
+-- subset A: 760 Voynich windows --
+metric                V median        L_ml range        X_ml range  V%inL  V%inX  L   X   class
+h2                       1.965      2.409..3.216      2.433..4.003    0.0    0.0  OUT OUT  ANOM
+sd_len                   1.759      1.394..3.170      1.352..6.584  100.0  100.0   IN  IN  NONDIAG
+jsd_first_fg             0.228      0.070..0.408      0.053..0.356   98.2   95.4   IN  IN  NONDIAG
+p_init_enrich            5.950      0.000..6.000     0.000..12.000   55.3   85.7   IN  IN  NONDIAG
+m_final_enrich           4.910      0.000..6.000      0.000..3.000   62.3   30.8   IN OUT  FAV_L
+cross_excess_eva         0.086     -0.121..0.207     -0.070..0.305   99.2   99.5   IN  IN  NONDIAG
+redup_pct                0.857      0.000..1.258      0.000..4.029   75.0  100.0   IN  IN  NONDIAG
+x_position_entropy       1.624      1.818..2.116      1.718..2.255    0.0   29.9  OUT OUT  ANOM
+  FAV_X (0): -   FAV_L (1): m_final_enrich
+
+-- subset B: 760 Voynich windows --
+metric                V median        L_ml range        X_ml range  V%inL  V%inX  L   X   class
+h2                       1.848      2.409..3.216      2.433..4.003    0.0    0.0  OUT OUT  ANOM
+sd_len                   1.754      1.394..3.170      1.352..6.584  100.0  100.0   IN  IN  NONDIAG
+jsd_first_fg             0.342      0.070..0.408      0.053..0.356   74.7   63.0   IN  IN  NONDIAG
+p_init_enrich           15.040      0.000..6.000     0.000..12.000   16.5   44.4  OUT OUT  ANOM
+m_final_enrich          23.030      0.000..6.000      0.000..3.000    7.0    3.1  OUT OUT  ANOM
+cross_excess_eva         0.187     -0.121..0.207     -0.070..0.305   77.2   95.8   IN  IN  NONDIAG
+redup_pct                0.787      0.000..1.258      0.000..4.029   81.8   99.9   IN  IN  NONDIAG
+x_position_entropy       1.547      1.818..2.116      1.718..2.255    0.0    4.5  OUT OUT  ANOM
+  FAV_X (0): -   FAV_L (0): -
+
+=== VERDICT (pre-registered rule) ===
+PRIMARY  (PREREG-v2 §7 family rule): FAVOURED G (all/A/B agree)
+         kill-precondition on all/A/B: ['C', 'G', 'L', 'X']  (per subset: all=['L', 'C', 'G', 'X'], A=['L', 'C', 'G', 'X'], B=['L', 'C', 'G', 'X']; parameter-change clause untested)
+SECONDARY (X-vs-L count): SIZE-DEPENDENT (full LEAN L ['L', 'L', 'L'], matched MIXED ['X', 'L', 'tie'])
+         full: all X4/L7; A X4/L5; B X3/L5   matched: all X1/L0; A X0/L1; B X0/L0
+outside every family (full, ZL3b): all: x_edge_mi_word, x_moran_I; A: -; B: x_edge_mi_word, x_moran_I
+elapsed 854s

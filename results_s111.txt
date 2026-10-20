@@ -1,0 +1,305 @@
+S111 subject vs batch (D-066 (p)); mode --real; started Sun Oct 18 15:59:07 PDT 2026 (`date`); BelowNormal True; free RAM 4.5 GB
+stub match: True
+pages loaded 207; included 185 (Hands 1-3, five subjects)
+per-page table: id quire hand subject side tokens
+  f1v      A  H1 herbal       v 92
+  f2r      A  H1 herbal       r 101
+  f2v      A  H1 herbal       v 61
+  f3r      A  H1 herbal       r 114
+  f3v      A  H1 herbal       v 85
+  f4r      A  H1 herbal       r 63
+  f4v      A  H1 herbal       v 84
+  f5r      A  H1 herbal       r 53
+  f5v      A  H1 herbal       v 48
+  f6r      A  H1 herbal       r 86
+  f6v      A  H1 herbal       v 116
+  f7r      A  H1 herbal       r 66
+  f7v      A  H1 herbal       v 78
+  f8r      A  H1 herbal       r 149
+  f8v      A  H1 herbal       v 116
+  f9r      B  H1 herbal       r 84
+  f9v      B  H1 herbal       v 86
+  f10r     B  H1 herbal       r 90
+  f10v     B  H1 herbal       v 57
+  f11r     B  H1 herbal       r 58
+  f11v     B  H1 herbal       v 48
+  f13r     B  H1 herbal       r 76
+  f13v     B  H1 herbal       v 69
+  f14r     B  H1 herbal       r 75
+  f14v     B  H1 herbal       v 75
+  f15r     B  H1 herbal       r 94
+  f15v     B  H1 herbal       v 69
+  f16r     B  H1 herbal       r 84
+  f16v     B  H1 herbal       v 76
+  f17r     C  H1 herbal       r 77
+  f17v     C  H1 herbal       v 135
+  f18r     C  H1 herbal       r 83
+  f18v     C  H1 herbal       v 68
+  f19r     C  H1 herbal       r 75
+  f19v     C  H1 herbal       v 78
+  f20r     C  H1 herbal       r 88
+  f20v     C  H1 herbal       v 84
+  f21r     C  H1 herbal       r 104
+  f21v     C  H1 herbal       v 58
+  f22r     C  H1 herbal       r 109
+  f22v     C  H1 herbal       v 77
+  f23r     C  H1 herbal       r 109
+  f23v     C  H1 herbal       v 94
+  f24r     C  H1 herbal       r 108
+  f24v     C  H1 herbal       v 84
+  f25r     D  H1 herbal       r 47
+  f25v     D  H1 herbal       v 59
+  f26r     D  H2 herbal       r 89
+  f26v     D  H2 herbal       v 92
+  f27r     D  H1 herbal       r 93
+  f27v     D  H1 herbal       v 61
+  f28r     D  H1 herbal       r 68
+  f28v     D  H1 herbal       v 68
+  f29r     D  H1 herbal       r 65
+  f29v     D  H1 herbal       v 94
+  f30r     D  H1 herbal       r 99
+  f30v     D  H1 herbal       v 62
+  f31r     D  H2 herbal       r 101
+  f31v     D  H2 herbal       v 110
+  f32r     D  H1 herbal       r 75
+  f32v     D  H1 herbal       v 89
+  f33r     E  H2 herbal       r 74
+  f33v     E  H2 herbal       v 114
+  f34r     E  H2 herbal       r 143
+  f34v     E  H2 herbal       v 117
+  f35r     E  H1 herbal       r 92
+  f35v     E  H1 herbal       v 91
+  f36r     E  H1 herbal       r 61
+  f36v     E  H1 herbal       v 76
+  f37r     E  H1 herbal       r 78
+  f37v     E  H1 herbal       v 89
+  f38r     E  H1 herbal       r 44
+  f38v     E  H1 herbal       v 67
+  f39r     E  H2 herbal       r 157
+  f39v     E  H2 herbal       v 146
+  f40r     E  H2 herbal       r 102
+  f40v     E  H2 herbal       v 105
+  f42r     F  H1 herbal       r 138
+  f42v     F  H1 herbal       v 114
+  f43r     F  H2 herbal       r 153
+  f43v     F  H2 herbal       v 151
+  f44r     F  H1 herbal       r 73
+  f44v     F  H1 herbal       v 100
+  f45r     F  H1 herbal       r 87
+  f45v     F  H1 herbal       v 84
+  f46r     F  H2 herbal       r 162
+  f46v     F  H2 herbal       v 110
+  f47r     F  H1 herbal       r 73
+  f47v     F  H1 herbal       v 85
+  f49r     G  H1 herbal       r 114
+  f49v     G  H1 herbal       v 142
+  f50r     G  H2 herbal       r 93
+  f50v     G  H2 herbal       v 100
+  f51r     G  H1 herbal       r 89
+  f51v     G  H1 herbal       v 82
+  f52r     G  H1 herbal       r 69
+  f52v     G  H1 herbal       v 78
+  f53r     G  H1 herbal       r 61
+  f53v     G  H1 herbal       v 73
+  f54r     G  H1 herbal       r 109
+  f54v     G  H1 herbal       v 93
+  f55r     G  H2 herbal       r 122
+  f55v     G  H2 herbal       v 104
+  f56r     G  H1 herbal       r 101
+  f56v     G  H1 herbal       v 91
+  f58r     H  H3 recipes      r 377
+  f58v     H  H3 recipes      v 373
+  f65v     H  H3 herbal       v 45
+  f75r     M  H2 balneo       r 418
+  f75v     M  H2 balneo       v 323
+  f76v     M  H2 balneo       v 398
+  f77r     M  H2 balneo       r 321
+  f77v     M  H2 balneo       v 321
+  f78r     M  H2 balneo       r 287
+  f78v     M  H2 balneo       v 293
+  f79r     M  H2 balneo       r 382
+  f79v     M  H2 balneo       v 355
+  f80r     M  H2 balneo       r 433
+  f80v     M  H2 balneo       v 376
+  f81r     M  H2 balneo       r 210
+  f81v     M  H2 balneo       v 252
+  f82r     M  H2 balneo       r 278
+  f82v     M  H2 balneo       v 305
+  f83r     M  H2 balneo       r 339
+  f83v     M  H2 balneo       v 255
+  f84r     M  H2 balneo       r 353
+  f84v     M  H2 balneo       v 341
+  f85r2    N  H2 astro_cosmo  r 107
+  f86v4    N  H2 astro_cosmo  v 48
+  f86v3    N  H2 astro_cosmo  v 278
+  f87r     O  H1 herbal       r 102
+  f87v     O  H1 herbal       v 91
+  f88r     O  H1 pharma       r 134
+  f88v     O  H1 pharma       v 131
+  f89r1    O  H1 pharma       r 125
+  f89r2    O  H1 pharma       r 211
+  f89v2    O  H1 pharma       v 164
+  f89v1    O  H1 pharma       v 145
+  f90r1    O  H1 herbal       r 69
+  f90r2    O  H1 herbal       r 47
+  f90v2    O  H1 herbal       v 66
+  f90v1    O  H1 herbal       v 95
+  f93r     Q  H1 herbal       r 152
+  f93v     Q  H1 herbal       v 87
+  f94r     Q  H3 herbal       r 79
+  f94v     Q  H3 herbal       v 97
+  f95r1    Q  H3 herbal       r 101
+  f95r2    Q  H3 herbal       r 79
+  f95v2    Q  H3 herbal       v 60
+  f95v1    Q  H3 herbal       v 116
+  f96r     Q  H1 herbal       r 84
+  f96v     Q  H1 herbal       v 56
+  f99r     S  H1 pharma       r 158
+  f99v     S  H1 pharma       v 146
+  f100r    S  H1 pharma       r 88
+  f100v    S  H1 pharma       v 78
+  f101r    S  H1 pharma       r 225
+  f101v    S  H1 pharma       v 182
+  f102r1   S  H1 pharma       r 102
+  f102r2   S  H1 pharma       r 135
+  f102v2   S  H1 pharma       v 165
+  f102v1   S  H1 pharma       v 117
+  f103r    T  H3 recipes      r 523
+  f103v    T  H3 recipes      v 453
+  f104r    T  H3 recipes      r 448
+  f104v    T  H3 recipes      v 472
+  f105r    T  H3 recipes      r 376
+  f105v    T  H3 recipes      v 399
+  f106r    T  H3 recipes      r 431
+  f106v    T  H3 recipes      v 444
+  f107r    T  H3 recipes      r 487
+  f107v    T  H3 recipes      v 462
+  f108r    T  H3 recipes      r 493
+  f108v    T  H3 recipes      v 580
+  f111r    T  H3 recipes      r 620
+  f111v    T  H3 recipes      v 565
+  f112r    T  H3 recipes      r 397
+  f112v    T  H3 recipes      v 418
+  f113r    T  H3 recipes      r 528
+  f113v    T  H3 recipes      v 499
+  f114r    T  H3 recipes      r 455
+  f114v    T  H3 recipes      v 373
+  f115r    T  H3 recipes      r 460
+  f115v    T  H3 recipes      v 408
+  f116r    T  H3 recipes      r 545
+subject x quire x hand page counts:
+  H1 herbal       A  15
+  H1 herbal       B  14
+  H1 herbal       C  16
+  H1 herbal       D  12
+  H1 herbal       E  8
+  H1 herbal       F  8
+  H1 herbal       G  12
+  H1 herbal       O  6
+  H1 herbal       Q  4
+  H1 pharma       O  6
+  H1 pharma       S  10
+  H2 astro_cosmo  N  3
+  H2 balneo       M  19
+  H2 herbal       D  4
+  H2 herbal       E  8
+  H2 herbal       F  4
+  H2 herbal       G  4
+  H3 herbal       H  1
+  H3 herbal       Q  6
+  H3 recipes      H  2
+  H3 recipes      T  23
+  pair cells H1 (pages 111): SS-SQ 265, SS-DQ 2000, DS-SQ 18, DS-DQ 742
+  pair cells H2 (pages 42): SS-SQ 100, SS-DQ 72, DS-SQ 0, DS-DQ 249
+  pair cells H3 (pages 32): SS-SQ 127, SS-DQ 26, DS-SQ 1, DS-DQ 86
+min tokens on an included page: 44
+N_SUB 44; subsamples 20; perms 10000; boots 2000; alpha 0.01; gate 10/15; seed 20261018
+slot cores: 2159 types
+
+=== POWER FIXTURE (D-068): planted pure-subject and pure-batch texts from the real slot-core distributions ===
+effect scale: real G(section labels) = 0.06109; real G(quire labels) = 0.03646 (pooled-group JSD excess over page-permuted labels; M_CAL 400, R_CAL 10, P_CAL 10)
+  subject: lam = 0.42 (planted G 0.05999 vs target 0.06109)
+  batch: lam = 0.40 (planted G 0.04294 vs target 0.03646)
+  subject resample  0: combined SUBJECT +0.06258 p 0.0003 | BATCH -0.01982 p 0.7632 | H1 S +0.0758 p 0.001 B +0.0040 p 0.420 H2 S +0.0500 p 1.000 B +nan p nan H3 S +0.0376 p 0.344 B -0.0265 p 0.793
+  subject resample  1: combined SUBJECT +0.03575 p 0.0220 | BATCH +0.00752 p 0.3982 | H1 S +0.0353 p 0.066 B -0.0075 p 0.673 H2 S +0.0297 p 1.000 B +nan p nan H3 S +0.0512 p 0.327 B +0.0103 p 0.372
+  subject resample  2: combined SUBJECT +0.02817 p 0.0015 | BATCH -0.05182 p 0.9551 | H1 S +0.0423 p 0.003 B +0.0144 p 0.143 H2 S +0.0003 p 1.000 B +nan p nan H3 S -0.0042 p 0.337 B -0.0603 p 0.969
+  subject resample  3: combined SUBJECT +0.03657 p 0.0026 | BATCH +0.00468 p 0.3614 | H1 S +0.0396 p 0.006 B +0.0124 p 0.251 H2 S +0.0311 p 1.000 B +nan p nan H3 S +0.0483 p 0.338 B +0.0020 p 0.445
+  subject resample  4: combined SUBJECT +0.07053 p 0.0002 | BATCH +0.01173 p 0.3789 | H1 S +0.0782 p 0.001 B -0.0017 p 0.545 H2 S +0.0634 p 1.000 B +nan p nan H3 S +0.0344 p 0.337 B +0.0179 p 0.382
+  subject resample  5: combined SUBJECT +0.05166 p 0.0006 | BATCH -0.05480 p 0.9931 | H1 S +0.0633 p 0.001 B -0.0255 p 0.952 H2 S +0.0482 p 1.000 B +nan p nan H3 S +0.0123 p 0.338 B -0.0631 p 0.982
+  subject resample  6: combined SUBJECT +0.05055 p 0.0009 | BATCH -0.01060 p 0.7631 | H1 S +0.0541 p 0.003 B -0.0105 p 0.767 H2 S +0.0376 p 1.000 B +nan p nan H3 S +0.0616 p 0.336 B -0.0106 p 0.734
+  subject resample  7: combined SUBJECT +0.05946 p 0.0007 | BATCH -0.07703 p 0.9995 | H1 S +0.0588 p 0.001 B -0.0276 p 0.946 H2 S +0.0676 p 1.000 B +nan p nan H3 S +0.0440 p 0.329 B -0.0817 p 1.000
+  subject resample  8: combined SUBJECT +0.04433 p 0.0022 | BATCH +0.00650 p 0.3920 | H1 S +0.0337 p 0.005 B -0.0161 p 0.854 H2 S +0.0629 p 1.000 B +nan p nan H3 S +0.0488 p 0.337 B +0.0100 p 0.348
+  subject resample  9: combined SUBJECT +0.04570 p 0.0019 | BATCH -0.03730 p 0.8978 | H1 S +0.0481 p 0.004 B -0.0157 p 0.797 H2 S +0.0414 p 1.000 B +nan p nan H3 S +0.0429 p 0.336 B -0.0422 p 0.880
+  subject resample 10: combined SUBJECT +0.01951 p 0.2210 | BATCH +0.03358 p 0.0711 | H1 S +0.0099 p 0.633 B -0.0083 p 0.719 H2 S +0.0254 p 1.000 B +nan p nan H3 S +0.0406 p 0.335 B +0.0446 p 0.067
+  subject resample 11: combined SUBJECT +0.03026 p 0.0370 | BATCH +0.00577 p 0.3987 | H1 S +0.0242 p 0.117 B -0.0170 p 0.899 H2 S +0.0498 p 1.000 B +nan p nan H3 S +0.0394 p 0.332 B +0.0145 p 0.327
+  subject resample 12: combined SUBJECT +0.05847 p 0.0003 | BATCH -0.02344 p 0.7598 | H1 S +0.0495 p 0.001 B +0.0016 p 0.465 H2 S +0.0756 p 1.000 B +nan p nan H3 S +0.0680 p 0.333 B -0.0312 p 0.760
+  subject resample 13: combined SUBJECT +0.03228 p 0.0849 | BATCH +0.02327 p 0.1481 | H1 S +0.0430 p 0.014 B -0.0051 p 0.611 H2 S +0.0261 p 1.000 B +nan p nan H3 S +0.0114 p 1.000 B +0.0365 p 0.121
+  subject resample 14: combined SUBJECT +0.05293 p 0.0006 | BATCH +0.01844 p 0.2540 | H1 S +0.0485 p 0.001 B +0.0342 p 0.018 H2 S +0.0568 p 1.000 B +nan p nan H3 S +0.0720 p 0.330 B +0.0136 p 0.371
+  GATE subject combined: right contrast (S) p<0.01 on 11/15; other (B) quiet on 15/15 -> PASS
+  GATE subject H1      : right contrast (S) p<0.01 on 11/15; other (B) quiet on 15/15 -> PASS
+  GATE subject H2      : right contrast (S) p<0.01 on 0/15; other (B) quiet on 15/15 -> FAIL
+  GATE subject H3      : right contrast (S) p<0.01 on 0/15; other (B) quiet on 15/15 -> FAIL
+  batch resample  0: combined SUBJECT -0.01011 p 0.7448 | BATCH +0.03838 p 0.0091 | H1 S -0.0106 p 0.934 B +0.0319 p 0.044 H2 S -0.0128 p 1.000 B +nan p nan H3 S +0.0101 p 0.328 B +0.0452 p 0.072
+  batch resample  1: combined SUBJECT -0.01048 p 0.4541 | BATCH +0.03483 p 0.0576 | H1 S -0.0193 p 0.769 B +0.0437 p 0.013 H2 S +0.0121 p 1.000 B +nan p nan H3 S +0.0023 p 0.339 B +0.0281 p 0.223
+  batch resample  2: combined SUBJECT +0.00447 p 0.4227 | BATCH +0.09321 p 0.0001 | H1 S +0.0057 p 0.135 B +0.0642 p 0.000 H2 S +0.0084 p 1.000 B +nan p nan H3 S -0.0186 p 1.000 B +0.1158 p 0.008
+  batch resample  3: combined SUBJECT +0.00030 p 0.5220 | BATCH -0.02136 p 0.8108 | H1 S +0.0059 p 0.495 B +0.0088 p 0.298 H2 S -0.0033 p 1.000 B +nan p nan H3 S -0.0207 p 0.670 B -0.0287 p 0.831
+  batch resample  4: combined SUBJECT -0.00155 p 0.1608 | BATCH +0.01925 p 0.1805 | H1 S +0.0018 p 0.352 B +0.0651 p 0.000 H2 S -0.0195 p 1.000 B +nan p nan H3 S +0.0147 p 0.341 B +0.0098 p 0.401
+  batch resample  5: combined SUBJECT +0.00706 p 0.1293 | BATCH +0.02473 p 0.1255 | H1 S +0.0165 p 0.018 B +0.0546 p 0.001 H2 S -0.0065 p 1.000 B +nan p nan H3 S -0.0252 p 1.000 B +0.0198 p 0.242
+  batch resample  6: combined SUBJECT -0.00286 p 0.9826 | BATCH +0.02284 p 0.1542 | H1 S -0.0016 p 0.960 B +0.0587 p 0.000 H2 S -0.0018 p 1.000 B +nan p nan H3 S -0.0182 p 1.000 B +0.0151 p 0.261
+  batch resample  7: combined SUBJECT +0.00197 p 0.7730 | BATCH +0.03334 p 0.1579 | H1 S +0.0020 p 0.670 B +0.0259 p 0.062 H2 S +0.0043 p 1.000 B +nan p nan H3 S -0.0110 p 1.000 B +0.0365 p 0.241
+  batch resample  8: combined SUBJECT -0.00534 p 0.4582 | BATCH +0.00905 p 0.4370 | H1 S -0.0081 p 0.721 B +0.0280 p 0.069 H2 S -0.0059 p 1.000 B +nan p nan H3 S +0.0287 p 0.339 B -0.0051 p 0.551
+  batch resample  9: combined SUBJECT -0.00561 p 0.7300 | BATCH +0.04258 p 0.0019 | H1 S -0.0079 p 0.756 B +0.0489 p 0.001 H2 S -0.0019 p 1.000 B +nan p nan H3 S +0.0043 p 0.668 B +0.0364 p 0.146
+  batch resample 10: combined SUBJECT -0.00728 p 0.4942 | BATCH +0.07838 p 0.0005 | H1 S -0.0160 p 0.418 B +0.0416 p 0.003 H2 S +0.0176 p 1.000 B +nan p nan H3 S +0.0187 p 1.000 B +0.0971 p 0.018
+  batch resample 11: combined SUBJECT -0.00812 p 0.5494 | BATCH +0.04414 p 0.0460 | H1 S -0.0070 p 0.652 B +0.0694 p 0.000 H2 S -0.0054 p 1.000 B +nan p nan H3 S -0.0168 p 0.330 B +0.0376 p 0.124
+  batch resample 12: combined SUBJECT -0.00052 p 0.5116 | BATCH +0.04162 p 0.0183 | H1 S +0.0082 p 0.514 B -0.0361 p 0.986 H2 S -0.0146 p 1.000 B +nan p nan H3 S -0.0104 p 0.667 B +0.0655 p 0.008
+  batch resample 13: combined SUBJECT +0.00665 p 0.0148 | BATCH +0.01346 p 0.3565 | H1 S +0.0046 p 0.022 B +0.0508 p 0.000 H2 S +0.0157 p 1.000 B +nan p nan H3 S +0.0019 p 0.336 B +0.0033 p 0.526
+  batch resample 14: combined SUBJECT -0.00033 p 0.5144 | BATCH +0.02550 p 0.0666 | H1 S -0.0072 p 0.610 B +0.0229 p 0.066 H2 S +0.0141 p 1.000 B +nan p nan H3 S +0.0178 p 0.334 B +0.0268 p 0.178
+  GATE batch   combined: right contrast (B) p<0.01 on 4/15; other (S) quiet on 15/15 -> FAIL
+  GATE batch   H1      : right contrast (B) p<0.01 on 8/15; other (S) quiet on 15/15 -> FAIL
+  GATE batch   H2      : right contrast (B) p<0.01 on 0/15; other (S) quiet on 15/15 -> FAIL
+  GATE batch   H3      : right contrast (B) p<0.01 on 2/15; other (S) quiet on 15/15 -> FAIL
+POWER_GATE combined: FAIL (pure-subject PASS, pure-batch FAIL)
+fixture done Sun Oct 18 16:06:15 PDT 2026 (`date`); elapsed 428 s
+
+=== REAL DATA (primary: slot cores; sensitivity: identity, affix2) ===
+[slot] types 2159
+[identity] types 6507
+
+--- representation: identity ---
+  H1 (pages 111, pairs 3025): SUBJECT +0.02760 p 0.9969 | BATCH +0.00305 p 0.3901 | ratio +9.052 CI [-47.998, +35.381] (boot dropped 15)
+  H2 (pages 42, pairs 421): SUBJECT +0.02311 p 1.0000 | BATCH +nan p nan | ratio +nan CI [+nan, +nan] (boot dropped 2000)
+  H3 (pages 32, pairs 240): SUBJECT -0.01816 p 0.6654 | BATCH -0.04286 p 0.9612 | ratio +0.424 CI [-0.182, +0.599] (boot dropped 1161)
+  combined weights SUBJECT {'1': 0.4788041535125825, '2': 0.30921460748086116, '3': 0.2119812390065564} BATCH {'1': 0.19290911629063737, '3': 0.8070908837093627}
+  combined: SUBJECT +0.01651 p 0.9715 | BATCH -0.03400 p 0.9625 | ratio -0.486 95% CI [-1.081, -0.213] (boot dropped 1168)
+[identity] SUBJECT_REAL = False (SUBJECT +0.01651, p 0.9715)
+[identity] BATCH_REAL = False (BATCH -0.03400, p 0.9625)
+[identity] RATIO SUBJECT/BATCH = -0.486, bootstrap 95% CI [-1.081, -0.213]
+[identity] sensitivity outcome by the frozen rule: none
+[affix2] types 2606
+
+--- representation: affix2 ---
+  H1 (pages 111, pairs 3025): SUBJECT +0.03644 p 0.9803 | BATCH +0.01680 p 0.2239 | ratio +2.169 CI [-17.990, +21.468] (boot dropped 16)
+  H2 (pages 42, pairs 421): SUBJECT -0.02407 p 1.0000 | BATCH +nan p nan | ratio +nan CI [+nan, +nan] (boot dropped 2000)
+  H3 (pages 32, pairs 240): SUBJECT -0.02198 p 0.3351 | BATCH -0.09159 p 0.8877 | ratio +0.240 CI [-0.837, +0.464] (boot dropped 1177)
+  combined weights SUBJECT {'1': 0.6136177371633642, '2': 0.30757263749465164, '3': 0.07880962534198428} BATCH {'1': 0.4776826043287375, '3': 0.5223173956712626}
+  combined: SUBJECT +0.01322 p 0.8905 | BATCH -0.03981 p 0.8755 | ratio -0.332 95% CI [-2.181, +0.041] (boot dropped 1186)
+[affix2] SUBJECT_REAL = False (SUBJECT +0.01322, p 0.8905)
+[affix2] BATCH_REAL = False (BATCH -0.03981, p 0.8755)
+[affix2] RATIO SUBJECT/BATCH = -0.332, bootstrap 95% CI [-2.181, +0.041]
+[affix2] sensitivity outcome by the frozen rule: none
+
+=== PRIMARY (slot cores) ===
+POWER_GATE combined: FAIL
+
+--- representation: slot ---
+  H1 (pages 111, pairs 3025): SUBJECT +0.03918 p 0.9742 | BATCH +0.01604 p 0.2472 | ratio +2.443 CI [-20.868, +19.387] (boot dropped 19)
+  H2 (pages 42, pairs 421): SUBJECT +0.00912 p 1.0000 | BATCH +nan p nan | ratio +nan CI [+nan, +nan] (boot dropped 2000)
+  H3 (pages 32, pairs 240): SUBJECT -0.01909 p 0.3285 | BATCH -0.06666 p 0.8892 | ratio +0.286 CI [-1.177, +0.623] (boot dropped 1209)
+  combined weights SUBJECT {'1': 0.4904277259285131, '2': 0.4057408803032621, '3': 0.10383139376822469} BATCH {'1': 0.452975420368252, '3': 0.5470245796317481}
+  combined: SUBJECT +0.02094 p 0.8326 | BATCH -0.02920 p 0.8336 | ratio -0.717 95% CI [-4.933, +0.020] (boot dropped 1213)
+SUBJECT_REAL = False (SUBJECT +0.02094, p 0.8326)
+BATCH_REAL = False (BATCH -0.02920, p 0.8336)
+RATIO SUBJECT/BATCH = -0.717, bootstrap 95% CI [-4.933, +0.020]
+CALL: SUBJECT_REAL=False BATCH_REAL=False RATIO=-0.717 CI=[-4.933,+0.020]
+VERDICT: HOLD (power gate failed, D-068; frozen-rule outcome would be 'none')
+finished Sun Oct 18 16:06:31 PDT 2026 (`date`); elapsed 444 s; stub match at end: True

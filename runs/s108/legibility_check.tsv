@@ -1,0 +1,48 @@
+# s108 legibility gate (ii), hand check by the running agent (s108 subagent) against the page images, recorded Sun Oct 18 15:05:13 PDT 2026 (date), before the freeze.
+# Crops: runs/s108/legibility/<text>_row<id>.jpg (written by --extract). Sample ids: --extract output (seed SEED108 + text index).
+# Counting conventions (applied to printed and extracted tokens alike): long s read as f; ae/oe ligatures equal ae/oe; abbreviation marks dropped
+#  (cū -> cu, ę -> e, 9 -> nothing); a word printed with a line-end hyphen is one token, a word broken at a line end WITHOUT a hyphen is two
+#  tokens (as a perfect OCR plus rule 6 would give); letterspaced capitals read as the printed word; an extracted token counts as matched if it
+#  equals a printed token of the same row (lenient on order inside merged cells). n_printed counts only horizontally set cells inside the band.
+# T1_alkindi_1531 is not hand-checked: it fails gate (i) (150 tokens < 1,300 over all its 20 ruled rows), so it is ILLEGIBLE whatever (ii) gives.
+text	row	page	n_extracted	n_printed	n_matched	note
+T2_tacuinum_1531	12	n043	15	13	9	itipticum/aegc/rtiones misread; 'j od' for Quod
+T2_tacuinum_1531	17	n045	15	10	6	5 junk tokens from a rotated cell read as horizontal (Frigidis/Sang.)
+T2_tacuinum_1531	38	n049	4	7	4	band is the DOMVS footer strip, not a table row
+T2_tacuinum_1531	47	n053	16	15	5	band includes the table title; title and cells mostly misread
+T2_tacuinum_1531	60	n055	12	9	6	Pectori/stomacho/Visceribus misread
+T2_tacuinum_1531	72	n061	13	16	9	merged words (etme, cumuinoue)
+T2_tacuinum_1531	84	n063	10	9	6	'o' cell lost; rotunda split
+T2_tacuinum_1531	131	n075	24	21	14	humidae/lactantis/fluit/opilationem misread
+T2_tacuinum_1531	143	n079	9	11	7	cell 'Neruis' missing from OCR
+T2_tacuinum_1531	145	n079	10	9	1	almost every word misread
+T2_tacuinum_1531	167	n091	19	18	9	band includes the title line
+T2_tacuinum_1531	169	n091	11	11	2	almost every word misread
+T2_tacuinum_1531	172	n091	17	19	13	soluit corpus merged; fluens misread
+T2_tacuinum_1531	193	n095	17	21	3	cell 'Magni, & odoriferi' and most words lost
+T2_tacuinum_1531	194	n095	28	13	0	header row H (MELIVS EX RE IPSA ...): all junk
+T2_tacuinum_1531	205	n099	17	18	4	most words misread
+T2_tacuinum_1531	220	n105	8	7	0	band is the title strip (De Motu ... Iuuamenta), not a table row
+T2_tacuinum_1531	231	n107	6	6	0	band is the title strip (De operationibus Balneorum ...), not a table row
+T2_tacuinum_1531	247	n109	19	15	12	hyphens misread so words split
+T2_tacuinum_1531	272	n115	7	6	3	Decliuis/digestionem/Tremori misread
+T3_ibnjazlah_1532	28	n014	29	32	10	Tabula universalis row; many words misread; three cells merged
+T3_ibnjazlah_1532	29	n014	19	19	4	cells Reumata, Tussis, Peripleumonia missing from OCR
+T3_ibnjazlah_1532	36	n014	15	16	5	Colica/Ileos miserabile/Torsio misread
+T3_ibnjazlah_1532	68	n073	59	53	40	cell order mixed inside merged cells; several misreads
+T3_ibnjazlah_1532	100	n079	47	46	35	stray token from the row above (UIEIES)
+T3_ibnjazlah_1532	127	n085	35	40	24	several misreads (Vlcus cum, manifesta est, Aspergatur)
+T3_ibnjazlah_1532	128	n085	22	32	13	many merged words in the last two cells
+T3_ibnjazlah_1532	142	n087	33	40	23	several misreads and merges
+T3_ibnjazlah_1532	158	n091	44	38	26	stray junk tokens; strictura/Angustia misread
+T3_ibnjazlah_1532	180	n095	43	40	26	several misreads (grauedo, aliqn, febris)
+T3_ibnjazlah_1532	226	n105	23	22	15	palpebra/grosso/emplastro misread
+T3_ibnjazlah_1532	243	n109	18	12	8	header row (NOMINA CAVSA SIGNVM ...); spaced capitals split
+T3_ibnjazlah_1532	286	n117	20	24	10	many merged words
+T3_ibnjazlah_1532	321	n125	13	10	5	header row; spaced capitals misread
+T3_ibnjazlah_1532	369	n133	46	53	31	several merges
+T3_ibnjazlah_1532	390	n139	6	6	5	band is the table title strip, not a table row
+T3_ibnjazlah_1532	404	n141	38	36	21	first cell and several words misread
+T3_ibnjazlah_1532	423	n145	34	39	11	many misreads and merges
+T3_ibnjazlah_1532	452	n151	36	37	16	many misreads and merges
+T3_ibnjazlah_1532	456	n151	37	40	23	several merges

@@ -1,0 +1,6 @@
+r9 log
+fixture run 1: 2026-10-18 13:28:05 PDT rev0, OK (scale 10 vs 5)
+revision 1; fixture run 2: 13:31:56 PDT, OK (scale 5.0)
+FREEZE at (clock): 2026-10-18 13:35:47 PDT r9.py b5a62a57c65a52004c35881c27073dc51e426b45c40954c4571e13f97f51567b
+real run start: 2026-10-18 13:35:47 PDT
+real run end: 2026-10-18 13:47:44 PDT exit=0

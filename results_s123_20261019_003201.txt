@@ -1,0 +1,54 @@
+s123 water colour vs sheet (P-68 / H-20, D-066 cc) -- REAL RUN. started 2026-10-19 00:32:01; priority BelowNormal
+script tools/s123_water_sheet.py sha256 59a4c565bdf64bfb5bd1ad91cfc9e8fcbf3f9db9f84bac25ac17746c45c260aa; stub s123_water_sheet.prereg.sha256 verified (27 files) sha256 523f1dc49723cd2828d50037b514f0a13add68690faa73776c35a82c58ad6895; VKB snapshot runs\s123\inputs_meta.json (VKB sha256 4ed3497cfd73f0ac.. build 2026-10-19 00:10)
+thresholds (calibrated on f9v, f2r only): {'L_MIN': 35.0, 'L_MAX': 100.0, 'H_G_LO': 105.0, 'H_SPLIT': 200.0, 'H_B_HI': 310.0}, C_MIN_G 14.0, C_MIN_B 9.0, closing 5, min component 2000, min water px 5000 (1/2-resolution pixels)
+
+Per-page water colour (quire M; f76r is section T, not tested):
+folio   sec water_px blue_sh green_sh med_hue    hue10-90 med_C med_L meas
+f75r    B     157235   0.000    1.000   113.2   108-118    19.9  49.7 yes
+f75v    B      25495   0.000    1.000   114.6   108-121    17.8  54.0 yes
+f76r    T          0  -- no water px
+f76v    B          0  -- no water px
+f77r    B          0  -- no water px
+f77v    B          0  -- no water px
+f78r    B      89377   0.000    1.000   115.6   109-123    19.3  49.6 yes
+f78v    B      54485   0.006    0.994   115.9   109-122    18.5  47.1 yes
+f79r    B      52980   0.000    1.000   115.8   111-121    20.4  50.6 yes
+f79v    B     105911   0.000    1.000   115.9   110-121    21.3  48.6 yes
+f80r    B       4686   1.000    0.000   217.8   206-231    11.5  53.5 no
+f80v    B       2195   1.000    0.000   215.4   205-227    11.4  49.0 no
+f81r    B     118156   0.006    0.994   119.3   113-127    18.8  49.3 yes
+f81v    B      96419   0.000    1.000   120.6   113-128    18.4  47.6 yes
+f82r    B     111957   0.000    1.000   120.7   113-126    20.3  52.5 yes
+f82v    B     128748   0.039    0.961   116.0   109-124    20.0  53.6 yes
+f83r    B          0  -- no water px
+f83v    B      81350   0.000    1.000   125.0   117-132    17.4  46.9 yes
+f84r    B     119645   0.009    0.991   125.8   116-133    17.8  52.2 yes
+f84v    B       5911   0.995    0.005   221.7   206-241    14.0  44.0 yes
+
+VALIDATION blue: crops ['f84v']; hand-check PASS 1/1 (need >= 4 of 5)
+  note: only 1 pages qualify as blue-class crops
+VALIDATION green: crops ['f75r', 'f82v', 'f84r', 'f81r', 'f82r']; hand-check PASS 5/5 (need >= 4 of 5)
+  hand: green | f75r | PASS | olive-green pool with nymphs; mask covers the pool, nymph bodies left out
+  hand: green | f82v | PASS | wide green pool band; mask covers it; a thin blue-and-green arc at top right is mostly not masked
+  hand: green | f84r | PASS | green pool under five nymphs; masked; a small blue pool at top left is NOT masked (blue miss)
+  hand: green | f81r | PASS | green band pool with nymphs; masked; pale blue wavy lines inside the band not masked
+  hand: green | f82r | PASS | lobed green pool; masked; text and nymphs left out
+  hand: blue | f84v | PASS | the masked pixels are the dark-blue central stream of a blue pool, so precision is fine; recall is poor: most of the pale blue wash of the same pool is not masked
+
+Colour split over 13 measurable section-B pages: green-class (blue share <= 0.2) 12, blue-class (>= 0.8) 1, mixed 0
+pooled water hue histogram (5-degree bins from 105 to 310): 121902 264053 324473 244624 124607 39954 11482 2616 744 87 38 17 4 5 2 0 0 2 28 1139 1398 1920 1590 1618 1439 1152 858 694 512 345 250 96 18 1 1 0 0 0 0 0 0
+
+Leaf profiles (mean over measurable pages): f75[M-1] blue 0.000 hue 114, f78[M-4] blue 0.003 hue 116, f79[M-5] blue 0.000 hue 116, f81[M-4] blue 0.003 hue 120, f82[M-3] blue 0.019 hue 118, f83[M-2] blue 0.000 hue 125, f84[M-1] blue 0.502 hue 174
+dropped bifolios (a leaf without measurable water): ['M-2', 'M-3', 'M-5']
+NOT_MEASURABLE: bifolios usable 2 (need >= 4); validation ok True
+exact null: 3 perfect matchings of 4 leaves; minimum achievable p = 0.33333
+PRIMARY (blue share): T = between - within mean |d| = -0.0000; null mean +0.0000 sd 0.0000; exact p = 1.0000 (3/3)
+SECONDARY (median hue / 100): T = -0.0211; exact p = 1.0000
+POSITIVE CONTROL B (parchment median L*a*b*, z, all 10 leaves; expected sheet-linked if skin tone dominates scan drift): T = +0.4473; exact p = 0.0455 -> SHEET
+DESCRIPTIVE same leaf (recto vs verso): 6 pairs, mean |d| in-pair minus other pairs = +0.0140; MC page-permutation p (more alike) = 0.3876
+DESCRIPTIVE FACING pages in current binding [ORDER-DEPENDENT]: 3 pairs, mean |d| in-pair minus other pairs = -0.1609; MC page-permutation p (more alike) = 0.2472
+
+Caveats: whether the paint was applied at writing time is unknown, so SHEET means 'painted per sheet', not 'planned per sheet'. n is small (5 bifolios, 10 leaves); the minimum achievable p is printed above. Water = blue/green paint pixels in components >= MIN_COMP; offset transfer and other green/blue paint are only controlled by the chroma floors and the hand check. D-066 (v): no real-language control applies (image colour); the shuffled control is the exact matching null.
+CALL: NOT_MEASURABLE
+CALL_COLOUR_SPLIT: ONE_COLOUR
+finished 2026-10-19 00:32:02

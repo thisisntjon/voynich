@@ -1,0 +1,146 @@
+job L2 occitan key 2 start 01:04:47
+L2 r0 p1 sweep 0 T=20.000 score=-330066.7 nulls=1 M=36973
+L2 r0 p1 sweep 10 T=7.767 score=-294917.1 nulls=1 M=36973
+L2 r0 p1 sweep 20 T=3.016 score=-294504.7 nulls=1 M=36973
+L2 r0 p1 sweep 30 T=1.171 score=-294434.1 nulls=1 M=36973
+L2 r0 p1 sweep 39 T=0.000 score=-294429.6 nulls=1 M=36973
+L2 r0 stepwise nulls: 6 rounds, nulls 6, score -292734.2
+L2 r0 p2 sweep 0 T=0.500 score=-292734.2 nulls=6 M=35295
+L2 r0 p2 sweep 3 T=0.000 score=-292734.2 nulls=6 M=35295
+L2 restart 0 final score -292734.2 nulls 6
+L2 r1 p1 sweep 0 T=20.000 score=-331600.1 nulls=9 M=35896
+L2 r1 p1 sweep 10 T=7.767 score=-264188.0 nulls=9 M=35896
+L2 r1 p1 sweep 20 T=3.016 score=-264128.7 nulls=9 M=35896
+L2 r1 p1 sweep 30 T=1.171 score=-264098.2 nulls=9 M=35896
+L2 r1 p1 sweep 39 T=0.000 score=-264098.2 nulls=9 M=35896
+L2 r1 stepwise nulls: 15 rounds, nulls 23, score -227670.8
+L2 r1 p2 sweep 0 T=0.500 score=-227227.3 nulls=22 M=31373
+L2 r1 p2 sweep 3 T=0.000 score=-227227.3 nulls=22 M=31373
+L2 restart 1 final score -227227.3 nulls 22
+L2 r2 p1 sweep 0 T=20.000 score=-330663.1 nulls=1 M=36973
+L2 r2 p1 sweep 10 T=7.767 score=-299702.3 nulls=1 M=36973
+L2 r2 p1 sweep 20 T=3.016 score=-299327.2 nulls=1 M=36973
+L2 r2 p1 sweep 30 T=1.171 score=-299305.7 nulls=1 M=36973
+L2 r2 p1 sweep 39 T=0.000 score=-299299.1 nulls=1 M=36973
+L2 r2 stepwise nulls: 50 rounds, nulls 50, score -283872.5
+L2 r2 p2 sweep 0 T=0.500 score=-283872.5 nulls=50 M=22189
+L2 r2 p2 sweep 3 T=0.000 score=-283872.5 nulls=50 M=22189
+L2 restart 2 final score -283872.5 nulls 50
+L2 r3 p1 sweep 0 T=20.000 score=-320115.8 nulls=9 M=35896
+L2 r3 p1 sweep 10 T=7.767 score=-301430.4 nulls=9 M=35896
+L2 r3 p1 sweep 20 T=3.016 score=-263466.4 nulls=9 M=35896
+L2 r3 p1 sweep 30 T=1.171 score=-263457.4 nulls=9 M=35896
+L2 r3 p1 sweep 39 T=0.000 score=-263453.2 nulls=9 M=35896
+L2 r3 stepwise nulls: 15 rounds, nulls 23, score -227670.8
+L2 r3 p2 sweep 0 T=0.500 score=-227227.3 nulls=22 M=31373
+L2 r3 p2 sweep 3 T=0.000 score=-227227.3 nulls=22 M=31373
+L2 restart 3 final score -227227.3 nulls 22
+L2 r4 p1 sweep 0 T=20.000 score=-337344.2 nulls=1 M=36973
+L2 r4 p1 sweep 10 T=7.767 score=-297578.4 nulls=1 M=36973
+L2 r4 p1 sweep 20 T=3.016 score=-296731.2 nulls=1 M=36973
+L2 r4 p1 sweep 30 T=1.171 score=-296306.3 nulls=1 M=36973
+L2 r4 p1 sweep 39 T=0.000 score=-296301.3 nulls=1 M=36973
+L2 r4 stepwise nulls: 3 rounds, nulls 3, score -295842.0
+L2 r4 p2 sweep 0 T=0.500 score=-295843.7 nulls=2 M=36366
+L2 r4 p2 sweep 3 T=0.000 score=-295691.4 nulls=5 M=35663
+L2 restart 4 final score -295691.4 nulls 5
+L2 r5 p1 sweep 0 T=20.000 score=-326233.3 nulls=9 M=35896
+L2 r5 p1 sweep 10 T=7.767 score=-263676.7 nulls=9 M=35896
+L2 r5 p1 sweep 20 T=3.016 score=-263658.0 nulls=9 M=35896
+L2 r5 p1 sweep 30 T=1.171 score=-263657.2 nulls=9 M=35896
+L2 r5 p1 sweep 39 T=0.000 score=-263656.3 nulls=9 M=35896
+L2 r5 stepwise nulls: 15 rounds, nulls 23, score -227670.8
+L2 r5 p2 sweep 0 T=0.500 score=-227227.8 nulls=21 M=31376
+L2 r5 p2 sweep 3 T=0.000 score=-227227.3 nulls=22 M=31373
+L2 restart 5 final score -227227.3 nulls 22
+L2 r6 p1 sweep 0 T=20.000 score=-329207.0 nulls=1 M=36973
+L2 r6 p1 sweep 10 T=7.767 score=-294783.0 nulls=1 M=36973
+L2 r6 p1 sweep 20 T=3.016 score=-294483.9 nulls=1 M=36973
+L2 r6 p1 sweep 30 T=1.171 score=-294461.3 nulls=1 M=36973
+L2 r6 p1 sweep 39 T=0.000 score=-294460.1 nulls=1 M=36973
+L2 r6 stepwise nulls: 8 rounds, nulls 8, score -292283.6
+L2 r6 p2 sweep 0 T=0.500 score=-292283.6 nulls=8 M=34869
+L2 r6 p2 sweep 3 T=0.000 score=-292228.4 nulls=8 M=34869
+L2 restart 6 final score -292228.4 nulls 8
+L2 r7 p1 sweep 0 T=20.000 score=-326596.8 nulls=9 M=35896
+L2 r7 p1 sweep 10 T=7.767 score=-300562.4 nulls=9 M=35896
+L2 r7 p1 sweep 20 T=3.016 score=-299655.0 nulls=9 M=35896
+L2 r7 p1 sweep 30 T=1.171 score=-299571.9 nulls=9 M=35896
+L2 r7 p1 sweep 39 T=0.000 score=-299570.8 nulls=9 M=35896
+L2 r7 stepwise nulls: 51 rounds, nulls 59, score -287953.8
+L2 r7 p2 sweep 0 T=0.500 score=-287825.0 nulls=58 M=22186
+L2 r7 p2 sweep 3 T=0.000 score=-287825.0 nulls=58 M=22186
+L2 restart 7 final score -287825.0 nulls 58
+L2 r8 p1 sweep 0 T=20.000 score=-335156.0 nulls=1 M=36973
+L2 r8 p1 sweep 10 T=7.767 score=-270291.2 nulls=1 M=36973
+L2 r8 p1 sweep 20 T=3.016 score=-270105.7 nulls=1 M=36973
+L2 r8 p1 sweep 30 T=1.171 score=-270101.9 nulls=1 M=36973
+L2 r8 p1 sweep 39 T=0.000 score=-270101.9 nulls=1 M=36973
+L2 r8 stepwise nulls: 22 rounds, nulls 22, score -227227.3
+L2 r8 p2 sweep 0 T=0.500 score=-227227.3 nulls=22 M=31373
+L2 r8 p2 sweep 3 T=0.000 score=-227227.3 nulls=22 M=31373
+L2 restart 8 final score -227227.3 nulls 22
+L2 r9 p1 sweep 0 T=20.000 score=-330776.7 nulls=9 M=35896
+L2 r9 p1 sweep 10 T=7.767 score=-302184.7 nulls=9 M=35896
+L2 r9 p1 sweep 20 T=3.016 score=-302015.7 nulls=9 M=35896
+L2 r9 p1 sweep 30 T=1.171 score=-302001.9 nulls=9 M=35896
+L2 r9 p1 sweep 39 T=0.000 score=-301999.2 nulls=9 M=35896
+L2 r9 stepwise nulls: 45 rounds, nulls 53, score -283360.9
+L2 r9 p2 sweep 0 T=0.500 score=-283334.4 nulls=52 M=22213
+L2 r9 p2 sweep 3 T=0.000 score=-283334.4 nulls=52 M=22213
+L2 restart 9 final score -283334.4 nulls 52
+L2 r10 p1 sweep 0 T=20.000 score=-307304.5 nulls=1 M=36973
+L2 r10 p1 sweep 10 T=7.767 score=-296358.1 nulls=1 M=36973
+L2 r10 p1 sweep 20 T=3.016 score=-295113.0 nulls=1 M=36973
+L2 r10 p1 sweep 30 T=1.171 score=-295047.7 nulls=1 M=36973
+L2 r10 p1 sweep 39 T=0.000 score=-295047.1 nulls=1 M=36973
+L2 r10 stepwise nulls: 6 rounds, nulls 6, score -294605.3
+L2 r10 p2 sweep 0 T=0.500 score=-294605.3 nulls=6 M=35913
+L2 r10 p2 sweep 3 T=0.000 score=-294605.3 nulls=6 M=35913
+L2 restart 10 final score -294605.3 nulls 6
+L2 r11 p1 sweep 0 T=20.000 score=-330336.1 nulls=9 M=35896
+L2 r11 p1 sweep 10 T=7.767 score=-304319.9 nulls=9 M=35896
+L2 r11 p1 sweep 20 T=3.016 score=-303397.5 nulls=9 M=35896
+L2 r11 p1 sweep 30 T=1.171 score=-303341.3 nulls=9 M=35896
+L2 r11 p1 sweep 39 T=0.000 score=-303341.3 nulls=9 M=35896
+L2 r11 stepwise nulls: 50 rounds, nulls 58, score -285837.6
+L2 r11 p2 sweep 0 T=0.500 score=-285829.1 nulls=57 M=22204
+L2 r11 p2 sweep 3 T=0.000 score=-285829.1 nulls=57 M=22204
+L2 restart 11 final score -285829.1 nulls 57
+L2 r12 p1 sweep 0 T=20.000 score=-331859.5 nulls=1 M=36973
+L2 r12 p1 sweep 10 T=7.767 score=-311162.0 nulls=1 M=36973
+L2 r12 p1 sweep 20 T=3.016 score=-310978.3 nulls=1 M=36973
+L2 r12 p1 sweep 30 T=1.171 score=-310921.3 nulls=1 M=36973
+L2 r12 p1 sweep 39 T=0.000 score=-310921.3 nulls=1 M=36973
+L2 r12 stepwise nulls: 38 rounds, nulls 38, score -283424.7
+L2 r12 p2 sweep 0 T=0.500 score=-283424.7 nulls=38 M=22188
+L2 r12 p2 sweep 3 T=0.000 score=-283424.7 nulls=38 M=22188
+L2 restart 12 final score -283424.7 nulls 38
+L2 r13 p1 sweep 0 T=20.000 score=-334862.3 nulls=9 M=35896
+L2 r13 p1 sweep 10 T=7.767 score=-303380.9 nulls=9 M=35896
+L2 r13 p1 sweep 20 T=3.016 score=-301994.7 nulls=9 M=35896
+L2 r13 p1 sweep 30 T=1.171 score=-301981.5 nulls=9 M=35896
+L2 r13 p1 sweep 39 T=0.000 score=-301979.2 nulls=9 M=35896
+L2 r13 stepwise nulls: 60 rounds, nulls 69, score -288082.6
+L2 r13 p2 sweep 0 T=0.500 score=-287937.3 nulls=72 M=22197
+L2 r13 p2 sweep 3 T=0.000 score=-287937.2 nulls=72 M=22197
+L2 restart 13 final score -287937.2 nulls 72
+L2 r14 p1 sweep 0 T=20.000 score=-337604.6 nulls=1 M=36973
+L2 r14 p1 sweep 10 T=7.767 score=-312740.6 nulls=1 M=36973
+L2 r14 p1 sweep 20 T=3.016 score=-312280.8 nulls=1 M=36973
+L2 r14 p1 sweep 30 T=1.171 score=-312243.0 nulls=1 M=36973
+L2 r14 p1 sweep 39 T=0.000 score=-312241.2 nulls=1 M=36973
+L2 r14 stepwise nulls: 45 rounds, nulls 45, score -285334.2
+L2 r14 p2 sweep 0 T=0.500 score=-285334.2 nulls=45 M=22191
+L2 r14 p2 sweep 3 T=0.000 score=-285334.2 nulls=45 M=22191
+L2 restart 14 final score -285334.2 nulls 45
+L2 r15 p1 sweep 0 T=20.000 score=-332005.6 nulls=9 M=35896
+L2 r15 p1 sweep 10 T=7.767 score=-264572.6 nulls=9 M=35896
+L2 r15 p1 sweep 20 T=3.016 score=-264452.7 nulls=9 M=35896
+L2 r15 p1 sweep 30 T=1.171 score=-264439.7 nulls=9 M=35896
+L2 r15 p1 sweep 39 T=0.000 score=-264439.7 nulls=9 M=35896
+L2 r15 stepwise nulls: 15 rounds, nulls 23, score -227670.8
+L2 r15 p2 sweep 0 T=0.500 score=-227227.3 nulls=22 M=31373
+L2 r15 p2 sweep 3 T=0.000 score=-227227.3 nulls=22 M=31373
+L2 restart 15 final score -227227.3 nulls 22
+RESULT acc=0.9998 info={'chosen': 'given', 'acc': 0.999809420957342, 'score': np.float64(-227227.30505161814), 'nulls': 22, 'units': 153, 'elapsed': 175.51556873321533}

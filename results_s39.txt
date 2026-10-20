@@ -1,0 +1,51 @@
+S39: F1 held-out word-order residual and CHARWIN by layer (prefix-only / core-only / suffix-only streams), 3 transliterations
+run started Sat Oct 17 22:25:27 PDT 2026 (`date`)
+s39_f1_charwin_by_layer.py sha256=275a45e1b3277f359276d85f9c262927176bc1bd5ecc793aab85ab7163b57de3  prereg stub_match=True
+F1 = n1_habit_table.residual(by, 'quires') (as n4_habit7k.py:336-364); CHARWIN = n5_signature_discrimination.score(pages)['CHARWIN']; SlotSegmenter fitted on the 166 training pages (g1_edge_joint.split_names, Random(20261017)); Moran = s21 within-line lag-1 on slot lengths, 999-draw line-shuffle null
+predictions: (i) affix layer = prefix-only or suffix-only F1 interval excludes zero and core-only includes zero; (ii) core layer = the reverse (ZL3b, KEEP-∅ variant decides)
+
+=== ZL3b: 207 pages, 34857 tokens; training pages 166 (26271 tokens), held-out 41 ===
+  SlotSegmenter (166-page fit): 27 prefix candidates ['a', 'al', 'ch', 'che', 'cho', 'cth', 'k', 'l', 'lk', 'o', 'ok', 'oke', 'ol', 'ot', 'ota', 'ote', 'p', 'qo', 'qok', 'qot', 'r', 'she', 'sho', 't', 'y', 'yk', 'yt']; 18 suffix candidates ['ain', 'air', 'al', 'am', 'ar', 'chy', 'd', 'dal', 'dar', 'eey', 'hy', 'ky', 'o', 'ody', 'ol', 'or', 's', 'y']; applied everywhere -> 28 prefix classes (incl. empty), 2360 cores, 19 suffix classes (incl. empty); empty prefix 19.2 % of tokens, empty suffix 44.0 %
+  stream                 | tokens types |  F1 residual          [2.5, 97.5]    lo-0 |  CHARWIN |  Moran I null med     q99      p
+  full                   |  34857  7025 |      +0.0461 [+0.0357, +0.0564] +0.0357 |  +0.0940 |  +0.1572  +0.0699 +0.0806  0.001
+  prefix-only (keep ∅)   |  34857    28 |      +0.0034 [-0.0021, +0.0085] -0.0021 |  +0.0000 |  +0.0726  +0.0385 +0.0495  0.001
+  core-only              |  34857  2360 |      +0.0169 [+0.0075, +0.0255] +0.0075 |  +0.0370 |  +0.0366  +0.0317 +0.0425  0.152
+  suffix-only (keep ∅)   |  34857    19 |      +0.0017 [-0.0016, +0.0054] -0.0016 |  +0.0001 |  +0.0497  +0.0335 +0.0457  0.001
+  prefix-only (drop ∅)   |  28151    27 |      +0.0062 [-0.0000, +0.0122] -0.0000 |  +0.0000 |  +0.0946  +0.0560 +0.0694  0.001
+  suffix-only (drop ∅)   |  19516    18 |      +0.0023 [-0.0039, +0.0084] -0.0039 |  +0.0001 |  +0.0647  +0.0508 +0.0646  0.011
+  check: full F1 +0.0461 vs results_n6 +0.0461 (OK); full CHARWIN +0.0940 vs results_n5 +0.094 (OK); full Moran 0.1572 vs s21 0.157
+  elapsed 50s
+
+=== RF1b: 207 pages, 34618 tokens; training pages 166 (26014 tokens), held-out 41 ===
+  SlotSegmenter (166-page fit): 28 prefix candidates ['a', 'al', 'ch', 'che', 'cho', 'cth', 'dal', 'k', 'l', 'lk', 'o', 'ok', 'oke', 'ol', 'ot', 'ota', 'ote', 'p', 'qo', 'qok', 'qot', 'r', 'she', 'sho', 't', 'y', 'yk', 'yt']; 20 suffix candidates ['ain', 'air', 'al', 'am', 'ar', 'chy', 'd', 'dal', 'dar', 'eey', 'hy', 'kar', 'ky', 'o', 'ody', 'ol', 'or', 'os', 's', 'y']; applied everywhere -> 29 prefix classes (incl. empty), 2491 cores, 21 suffix classes (incl. empty); empty prefix 18.2 % of tokens, empty suffix 43.6 %
+  stream                 | tokens types |  F1 residual          [2.5, 97.5]    lo-0 |  CHARWIN |  Moran I null med     q99      p
+  full                   |  34618  7348 |      +0.0333 [+0.0213, +0.0446] +0.0213 |  +0.1099 |  +0.1549  +0.0705 +0.0815  0.001
+  prefix-only (keep ∅)   |  34618    29 |      -0.0071 [-0.0133, -0.0009] -0.0133 |  +0.0000 |  +0.0647  +0.0339 +0.0439  0.001
+  core-only              |  34618  2491 |      +0.0214 [+0.0136, +0.0289] +0.0136 |  +0.0483 |  +0.0389  +0.0374 +0.0486  0.377
+  suffix-only (keep ∅)   |  34618    21 |      +0.0027 [-0.0016, +0.0076] -0.0016 |  +0.0001 |  +0.0456  +0.0299 +0.0416  0.001
+  prefix-only (drop ∅)   |  28325    28 |      -0.0048 [-0.0104, +0.0014] -0.0104 |  +0.0000 |  +0.0964  +0.0534 +0.0669  0.001
+  suffix-only (drop ∅)   |  19518    20 |      +0.0012 [-0.0060, +0.0078] -0.0060 |  +0.0001 |  +0.0664  +0.0532 +0.0675  0.018
+  elapsed 101s
+
+=== IT2a: 206 pages, 34411 tokens; training pages 165 (26000 tokens), held-out 41 ===
+  SlotSegmenter (166-page fit): 24 prefix candidates ['a', 'al', 'ch', 'che', 'cho', 'cth', 'k', 'l', 'lk', 'o', 'ok', 'ol', 'ot', 'ote', 'qo', 'qok', 'qot', 'r', 'she', 'sho', 't', 'y', 'yk', 'yt']; 19 suffix candidates ['ain', 'air', 'al', 'am', 'ar', 'chy', 'd', 'dal', 'dar', 'eey', 'hy', 'kar', 'ky', 'o', 'ody', 'ol', 'or', 's', 'y']; applied everywhere -> 25 prefix classes (incl. empty), 2420 cores, 20 suffix classes (incl. empty); empty prefix 19.9 % of tokens, empty suffix 42.0 %
+  stream                 | tokens types |  F1 residual          [2.5, 97.5]    lo-0 |  CHARWIN |  Moran I null med     q99      p
+  full                   |  34411  7069 |      +0.0410 [+0.0317, +0.0498] +0.0317 |  +0.0977 |  +0.1566  +0.0708 +0.0830  0.001
+  prefix-only (keep ∅)   |  34411    25 |      +0.0023 [-0.0030, +0.0077] -0.0030 |  +0.0000 |  +0.0607  +0.0361 +0.0477  0.001
+  core-only              |  34411  2420 |      +0.0162 [+0.0085, +0.0244] +0.0085 |  +0.0456 |  +0.0435  +0.0379 +0.0492  0.131
+  suffix-only (keep ∅)   |  34411    20 |      +0.0022 [-0.0014, +0.0058] -0.0014 |  +0.0001 |  +0.0469  +0.0312 +0.0430  0.001
+  prefix-only (drop ∅)   |  27572    24 |      +0.0065 [+0.0014, +0.0122] +0.0014 |  +0.0001 |  +0.0944  +0.0562 +0.0684  0.001
+  suffix-only (drop ∅)   |  19944    19 |      -0.0024 [-0.0084, +0.0029] -0.0084 |  +0.0001 |  +0.0603  +0.0483 +0.0633  0.033
+  elapsed 150s
+
+=== READING (pre-registered rule; ZL3b KEEP-∅ decides) ===
+  ZL3b: KEEP -> F1 in the core layer; DROP -> F1 in the core layer; intervals excluding zero: ['full', 'core-only']; CHARWIN full +0.0940, largest stream core-only +0.0370, core-only +0.0370, prefix-keep +0.0000, suffix-keep +0.0001
+    Moran cross-check (s33): core-only I +0.0366 (p 0.152); prefix-keep +0.0726 (p 0.001); suffix-keep +0.0497 (p 0.001); full +0.1572
+  RF1b: KEEP -> F1 in the core layer; DROP -> F1 in the core layer; intervals excluding zero: ['full', 'core-only']; CHARWIN full +0.1099, largest stream core-only +0.0483, core-only +0.0483, prefix-keep +0.0000, suffix-keep +0.0001
+    Moran cross-check (s33): core-only I +0.0389 (p 0.377); prefix-keep +0.0647 (p 0.001); suffix-keep +0.0456 (p 0.001); full +0.1549
+  IT2a: KEEP -> F1 in the core layer; DROP -> F1 in both / neither layer; intervals excluding zero: ['full', 'core-only', 'prefix-only (drop ∅)']; CHARWIN full +0.0977, largest stream core-only +0.0456, core-only +0.0456, prefix-keep +0.0000, suffix-keep +0.0001
+    Moran cross-check (s33): core-only I +0.0435 (p 0.131); prefix-keep +0.0607 (p 0.001); suffix-keep +0.0469 (p 0.001); full +0.1566
+reading: F1 in the core layer (ZL3b); prediction (i) affix layer does not hold; prediction (ii) core layer HOLDS; same call on RF1b, IT2a
+
+elapsed 150.0 s
+run finished Sat Oct 17 22:27:57 PDT 2026 (`date`)

@@ -1,0 +1,317 @@
+M1 same-column copying with physical x-coordinates  (seed 20261017, run 2026-10-17 16:37 Pacific Daylight Time)
+boxes: voynichese.com scrape via Rozanova & Temerev (3-px grid, ~600-px layout)
+
+=== alignment ===
+folios with boxes and ZL text: 223; boxes 37464, string-matched to ZL 32054 (85.6%)
+ZL lines (all units) 5186: aligned within 1 token 4341 (83.7%), strict (>= n-1 string matches) 3598 (69.4%)
+paragraph (P-unit) lines kept: 3782 on 204 pages, 31495 tokens; mean token width W per page: median 47.6 px (range 31.6-60.5); 3-px grid = 0.06 W
+per-folio alignment (folio: boxes matched% | lines aligned/total):
+  f1r:84%|28/28  f1v:87%|9/10  f2r:94%|13/15  f2v:93%|8/8  f3r:88%|18/20  f3v:90%|13/14
+  f4r:91%|13/13  f4v:92%|14/14  f5r:86%|6/7  f5v:91%|5/6  f6r:89%|14/14  f6v:83%|19/21
+  f7r:92%|10/10  f7v:86%|7/9  f8r:84%|16/21  f8v:93%|17/17  f9r:92%|10/10  f9v:95%|12/12
+  f10r:91%|11/12  f10v:91%|7/7  f11r:93%|7/7  f11v:85%|6/7  f13r:94%|10/10  f13v:88%|8/10
+  f14r:82%|13/13  f14v:85%|7/9  f15r:97%|15/15  f15v:90%|12/12  f16r:90%|12/13  f16v:95%|13/13
+  f17r:85%|10/13  f17v:93%|23/23  f18r:86%|13/14  f18v:92%|10/10  f19r:89%|12/13  f19v:95%|13/14
+  f20r:92%|12/13  f20v:87%|11/11  f21r:88%|10/12  f21v:98%|7/8  f22r:91%|12/13  f22v:95%|16/16
+  f23r:92%|10/11  f23v:88%|10/12  f24r:85%|18/20  f24v:84%|15/16  f25r:92%|7/7  f25v:89%|7/7
+  f26r:79%|9/10  f26v:89%|9/9  f27r:86%|10/13  f27v:76%|7/8  f28r:94%|9/9  f28v:94%|9/9
+  f29r:92%|9/9  f29v:88%|12/12  f30r:92%|12/13  f30v:90%|11/11  f31r:85%|16/16  f31v:82%|11/11
+  f32r:90%|19/19  f32v:91%|11/11  f33r:90%|7/7  f33v:93%|8/11  f34r:87%|15/15  f34v:93%|11/11
+  f35r:88%|14/15  f35v:86%|20/21  f36r:94%|9/9  f36v:89%|14/14  f37r:86%|9/11  f37v:86%|21/23
+  f38r:88%|6/6  f38v:92%|8/8  f39r:88%|14/16  f39v:91%|14/14  f40r:86%|10/11  f40v:92%|19/19
+  f41r:78%|11/11  f41v:93%|6/8  f42r:89%|23/23  f42v:87%|15/16  f43r:84%|14/14  f43v:86%|16/16
+  f44r:81%|11/11  f44v:89%|13/13  f45r:92%|10/11  f45v:90%|11/11  f46r:89%|12/15  f46v:89%|13/13
+  f47r:87%|10/11  f47v:96%|14/14  f48r:90%|9/9  f48v:91%|11/11  f49r:84%|19/21  f49v:80%|26/52
+  f50r:88%|10/10  f50v:93%|10/11  f51r:83%|14/15  f51v:89%|13/13  f52r:87%|8/8  f52v:88%|13/14
+  f53r:89%|7/9  f53v:83%|13/13  f54r:86%|10/12  f54v:89%|16/16  f55r:83%|12/13  f55v:81%|11/12
+  f56r:78%|17/19  f56v:89%|14/16  f57r:80%|11/11  f57v:69%|1/13  f58r:90%|38/41  f58v:86%|33/39
+  f65r:100%|1/1  f65v:84%|6/6  f66r:86%|69/82  f66v:83%|13/13  f67r1:78%|12/19  f67r2:63%|35/74
+  f67v1:41%|10/29  f67v2:36%|6/22  f68r1:57%|9/37  f68r2:75%|21/31  f68r3:60%|6/22  f68v1:62%|5/10
+  f68v2:80%|11/18  f68v3:65%|10/19  f69r:47%|20/49  f69v:67%|21/31  f70r1:64%|10/19  f70r2:33%|13/19
+  f70v1:76%|12/17  f70v2:67%|19/33  f71r:71%|13/18  f71v:83%|14/18  f72r1:74%|14/18  f72r2:71%|25/32
+  f72r3:62%|15/34  f72v1:68%|23/33  f72v2:54%|13/33  f72v3:42%|7/33  f73r:67%|19/33  f73v:72%|18/33
+  f75r:87%|47/53  f75v:87%|53/70  f76r:89%|44/56  f76v:93%|41/41  f77r:91%|43/50  f77v:90%|38/45
+  f78r:89%|41/47  f78v:90%|31/32  f79r:89%|42/44  f79v:92%|40/42  f80r:92%|49/53  f80v:93%|43/44
+  f81r:90%|29/31  f81v:88%|26/28  f82r:87%|33/45  f82v:91%|38/48  f83r:91%|50/55  f83v:94%|33/35
+  f84r:84%|36/47  f84v:90%|47/51  f85r1:88%|30/35  f85r2:63%|13/24  f86v3:48%|21/36  f86v4:78%|7/9
+  f86v5:92%|38/39  f86v6:87%|41/45  f87r:80%|14/16  f87v:81%|16/16  f88r:91%|28/31  f88v:88%|27/30
+  f89r1:88%|25/27  f89r2:78%|21/34  f89v1:79%|18/24  f89v2:75%|16/27  f90r1:80%|9/9  f90r2:80%|5/6
+  f90v1:78%|11/11  f90v2:83%|7/8  f93r:86%|31/32  f93v:90%|10/10  f94r:83%|9/9  f94v:89%|11/12
+  f95r1:93%|11/11  f95r2:92%|9/9  f95v1:89%|13/13  f95v2:78%|6/7  f96r:93%|13/13  f96v:64%|9/13
+  f99r:84%|39/52  f99v:85%|38/44  f100r:82%|24/27  f100v:86%|19/22  f102r1:84%|13/17  f102r2:79%|14/22
+  f102v1:80%|17/24  f102v2:68%|25/39  f103r:89%|49/54  f103v:90%|43/46  f104r:89%|40/45  f104v:90%|38/44
+  f105r:89%|36/37  f105v:89%|35/38  f106r:90%|41/47  f106v:86%|44/47  f107r:89%|48/51  f107v:91%|42/49
+  f108r:91%|47/50  f108v:89%|45/53  f111r:89%|47/54  f111v:89%|48/51  f112r:85%|43/45  f112v:92%|47/47
+  f113r:89%|45/51  f113v:88%|45/49  f114r:91%|42/45  f114v:90%|39/41  f115r:91%|40/45  f115v:90%|43/45
+  f116r:87%|45/50
+folios with < 60% boxes matched: 9: f67v1 f67v2 f68r1 f68r3 f69r f70r2 f72v2 f72v3 f86v3
+
+=== T2 with coordinates (paragraph lines; prev = line n-1 on the same page) ===
+word-index version (results_b1.txt T2): same 10.69%  off 8.79%  far 8.80%  (exact 2.57 / 1.96 / 1.94)
+
+--- all paragraph text ---
+condition         n   exact%  edit=1%  edit<=1%   95% CI (edit<=1)
+same          22046     1.06     3.56      4.61   [4.23, 5.02]
+off           25429     0.77     2.65      3.42   [3.08, 3.76]
+far           19396     0.85     2.89      3.74   [3.40, 4.09]
+off_far       24324     0.67     2.29      2.95   [2.63, 3.25]
+ratios (edit<=1): same/far = 1.23, same/off = 1.35, off/far = 0.92
+column-specific excess = (same-far) - (off-off_far) = +0.41 pp  [recency at same x +0.88; recency at 3-5 W offset +0.47]
+diff same-off        edit<=1: [+0.82, +1.56] pp   P(diff<=0) = 0.000
+diff same-far        edit<=1: [+0.47, +1.26] pp   P(diff<=0) = 0.000
+diff off-far         edit<=1: [-0.65, +0.01] pp   P(diff<=0) = 0.971
+diff off-off_far     edit<=1: [+0.14, +0.78] pp   P(diff<=0) = 0.002
+diff column-specific edit<=1: [-0.10, +0.88] pp   P(diff<=0) = 0.068
+
+=== by section ($I illustration code) ===
+
+--- section I=H (128 pages) ---
+condition         n   exact%  edit=1%  edit<=1%   95% CI (edit<=1)
+same           7512     1.03     3.26      4.29   [3.79, 4.80]
+off            8043     0.80     2.47      3.27   [2.84, 3.73]
+far            6069     0.87     2.65      3.53   [2.94, 4.10]
+off_far        7321     0.74     2.06      2.80   [2.31, 3.33]
+ratios (edit<=1): same/far = 1.22, same/off = 1.31, off/far = 0.93
+column-specific excess = (same-far) - (off-off_far) = +0.29 pp  [recency at same x +0.76; recency at 3-5 W offset +0.47]
+diff same-off        edit<=1: [+0.44, +1.63] pp   P(diff<=0) = 0.000
+diff same-far        edit<=1: [+0.01, +1.48] pp   P(diff<=0) = 0.025
+diff off-far         edit<=1: [-0.97, +0.49] pp   P(diff<=0) = 0.745
+diff off-off_far     edit<=1: [-0.18, +1.08] pp   P(diff<=0) = 0.086
+diff column-specific edit<=1: [-0.57, +1.18] pp   P(diff<=0) = 0.231
+
+--- section I=S (25 pages) ---
+condition         n   exact%  edit=1%  edit<=1%   95% CI (edit<=1)
+same           7244     0.83     3.51      4.33   [3.62, 5.13]
+off            8913     0.52     2.00      2.51   [2.07, 2.96]
+far            7133     0.69     2.57      3.25   [2.64, 3.85]
+off_far        8922     0.44     2.02      2.45   [2.02, 2.90]
+ratios (edit<=1): same/far = 1.33, same/off = 1.72, off/far = 0.77
+column-specific excess = (same-far) - (off-off_far) = +1.02 pp  [recency at same x +1.08; recency at 3-5 W offset +0.06]
+diff same-off        edit<=1: [+1.20, +2.48] pp   P(diff<=0) = 0.000
+diff same-far        edit<=1: [+0.30, +1.97] pp   P(diff<=0) = 0.005
+diff off-far         edit<=1: [-1.34, -0.16] pp   P(diff<=0) = 0.995
+diff off-off_far     edit<=1: [-0.44, +0.50] pp   P(diff<=0) = 0.386
+diff column-specific edit<=1: [+0.10, +2.03] pp   P(diff<=0) = 0.016
+
+--- section I=B (19 pages) ---
+condition         n   exact%  edit=1%  edit<=1%   95% CI (edit<=1)
+same           4392     1.75     4.44      6.19   [5.50, 6.82]
+off            5073     1.20     4.16      5.36   [4.68, 5.99]
+far            3701     1.46     3.57      5.03   [4.42, 5.75]
+off_far        4920     1.12     2.91      4.02   [3.41, 4.71]
+ratios (edit<=1): same/far = 1.23, same/off = 1.16, off/far = 1.07
+column-specific excess = (same-far) - (off-off_far) = -0.17 pp  [recency at same x +1.17; recency at 3-5 W offset +1.34]
+diff same-off        edit<=1: [-0.15, +1.90] pp   P(diff<=0) = 0.056
+diff same-far        edit<=1: [+0.22, +1.95] pp   P(diff<=0) = 0.012
+diff off-far         edit<=1: [-0.70, +1.20] pp   P(diff<=0) = 0.253
+diff off-off_far     edit<=1: [+0.45, +2.22] pp   P(diff<=0) = 0.003
+diff column-specific edit<=1: [-1.24, +0.94] pp   P(diff<=0) = 0.615
+
+--- section I=T (6 pages) ---
+condition         n   exact%  edit=1%  edit<=1%   95% CI (edit<=1)
+same           1449     0.69     3.11      3.80   [2.47, 4.83]
+off            1737     0.75     2.42      3.17   [2.21, 3.92]
+far            1386     0.87     2.89      3.75   [3.04, 4.33]
+off_far        1713     0.35     1.81      2.16   [1.44, 2.94]
+ratios (edit<=1): same/far = 1.01, same/off = 1.20, off/far = 0.84
+column-specific excess = (same-far) - (off-off_far) = -0.96 pp  [recency at same x +0.04; recency at 3-5 W offset +1.01]
+diff same-off        edit<=1: [+0.08, +1.13] pp   P(diff<=0) = 0.016
+diff same-far        edit<=1: [-0.96, +0.67] pp   P(diff<=0) = 0.436
+diff off-far         edit<=1: [-1.13, -0.16] pp   P(diff<=0) = 0.995
+diff off-off_far     edit<=1: [+0.06, +1.78] pp   P(diff<=0) = 0.012
+diff column-specific edit<=1: [-1.89, +0.16] pp   P(diff<=0) = 0.956
+
+--- section I=P (14 pages) ---
+condition         n   exact%  edit=1%  edit<=1%   95% CI (edit<=1)
+same           1081     0.56     3.24      3.79   [2.84, 4.70]
+off            1281     0.78     2.26      3.04   [2.38, 3.88]
+far             950     0.74     2.63      3.37   [2.34, 4.45]
+off_far        1240     0.48     1.94      2.42   [1.67, 3.20]
+ratios (edit<=1): same/far = 1.13, same/off = 1.25, off/far = 0.90
+column-specific excess = (same-far) - (off-off_far) = -0.20 pp  [recency at same x +0.42; recency at 3-5 W offset +0.63]
+diff same-off        edit<=1: [-0.40, +1.82] pp   P(diff<=0) = 0.127
+diff same-far        edit<=1: [-0.79, +1.50] pp   P(diff<=0) = 0.231
+diff off-far         edit<=1: [-1.61, +0.83] pp   P(diff<=0) = 0.678
+diff off-off_far     edit<=1: [-0.25, +1.55] pp   P(diff<=0) = 0.077
+diff column-specific edit<=1: [-1.38, +0.91] pp   P(diff<=0) = 0.645
+
+--- section I=C (7 pages) ---
+condition         n   exact%  edit=1%  edit<=1%   95% CI (edit<=1)
+same            260     1.15     3.85      5.00   [2.42, 8.13]
+off             272     0.74     4.04      4.78   [2.63, 7.34]
+far             107     0.00     0.00      0.00   [0.00, 0.00]
+off_far         212     0.47     1.42      1.89   [0.00, 3.97]
+column-specific excess = (same-far) - (off-off_far) = +2.11 pp  [recency at same x +5.00; recency at 3-5 W offset +2.89]
+diff same-off        edit<=1: [-3.37, +4.30] pp   P(diff<=0) = 0.436
+diff same-far        edit<=1: [+2.42, +8.13] pp   P(diff<=0) = 0.000
+diff off-far         edit<=1: [+2.63, +7.34] pp   P(diff<=0) = 0.000
+diff off-off_far     edit<=1: [-0.90, +6.77] pp   P(diff<=0) = 0.092
+diff column-specific edit<=1: [-3.37, +8.19] pp   P(diff<=0) = 0.255
+
+--- section I=A (5 pages) ---
+condition         n   exact%  edit=1%  edit<=1%   95% CI (edit<=1)
+same            108     0.00     0.00      0.00   [0.00, 0.00]
+off             110     0.91     2.73      3.64   [0.00, 7.55]
+far               9     0.00     0.00      0.00   [0.00, 0.00]
+off_far          16     6.25     6.25     12.50   [0.00, 20.00]
+column-specific excess = (same-far) - (off-off_far) = +8.86 pp  [recency at same x +0.00; recency at 3-5 W offset -8.86]
+diff same-off        edit<=1: [-7.55, +0.00] pp   P(diff<=0) = 1.000
+diff same-far        edit<=1: [+0.00, +0.00] pp   P(diff<=0) = 1.000
+diff off-far         edit<=1: [+0.00, +7.55] pp   P(diff<=0) = 0.082
+diff off-off_far     edit<=1: [-18.96, +5.84] pp   P(diff<=0) = 0.765
+diff column-specific edit<=1: [-5.84, +18.96] pp   P(diff<=0) = 0.317
+
+=== by Currier language ($L) ===
+
+--- language ? (10 pages) ---
+condition         n   exact%  edit=1%  edit<=1%   95% CI (edit<=1)
+same            250     0.40     3.60      4.00   [0.00, 6.75]
+off             261     1.15     3.07      4.21   [1.50, 7.30]
+far              64     0.00     1.56      1.56   [0.00, 1.92]
+off_far         118     0.00     0.00      0.00   [0.00, 0.00]
+ratios (edit<=1): same/far = 2.56, same/off = 0.95, off/far = 2.70
+column-specific excess = (same-far) - (off-off_far) = -1.78 pp  [recency at same x +2.44; recency at 3-5 W offset +4.21]
+diff same-off        edit<=1: [-5.30, +3.03] pp   P(diff<=0) = 0.572
+diff same-far        edit<=1: [+0.00, +4.98] pp   P(diff<=0) = 0.030
+diff off-far         edit<=1: [+0.71, +7.14] pp   P(diff<=0) = 0.003
+diff off-off_far     edit<=1: [+1.50, +7.30] pp   P(diff<=0) = 0.000
+diff column-specific edit<=1: [-5.34, +1.44] pp   P(diff<=0) = 0.805
+
+--- language A (112 pages) ---
+condition         n   exact%  edit=1%  edit<=1%   95% CI (edit<=1)
+same           6835     1.07     3.45      4.52   [3.97, 5.12]
+off            7434     0.77     2.45      3.21   [2.77, 3.75]
+far            5612     1.23     2.64      3.87   [3.21, 4.57]
+off_far        6823     0.64     2.18      2.83   [2.40, 3.37]
+ratios (edit<=1): same/far = 1.17, same/off = 1.41, off/far = 0.83
+column-specific excess = (same-far) - (off-off_far) = +0.27 pp  [recency at same x +0.65; recency at 3-5 W offset +0.39]
+diff same-off        edit<=1: [+0.67, +1.90] pp   P(diff<=0) = 0.000
+diff same-far        edit<=1: [-0.14, +1.47] pp   P(diff<=0) = 0.055
+diff off-far         edit<=1: [-1.42, +0.13] pp   P(diff<=0) = 0.945
+diff off-off_far     edit<=1: [-0.21, +1.00] pp   P(diff<=0) = 0.107
+diff column-specific edit<=1: [-0.65, +1.20] pp   P(diff<=0) = 0.272
+
+--- language B (82 pages) ---
+condition         n   exact%  edit=1%  edit<=1%   95% CI (edit<=1)
+same          14961     1.06     3.60      4.67   [4.20, 5.17]
+off           17734     0.77     2.72      3.50   [3.09, 3.93]
+far           13648     0.86     3.08      3.94   [3.50, 4.40]
+off_far       17414     0.69     2.43      3.13   [2.78, 3.51]
+ratios (edit<=1): same/far = 1.18, same/off = 1.33, off/far = 0.89
+column-specific excess = (same-far) - (off-off_far) = +0.36 pp  [recency at same x +0.72; recency at 3-5 W offset +0.37]
+diff same-off        edit<=1: [+0.72, +1.62] pp   P(diff<=0) = 0.000
+diff same-far        edit<=1: [+0.20, +1.27] pp   P(diff<=0) = 0.003
+diff off-far         edit<=1: [-0.92, +0.01] pp   P(diff<=0) = 0.970
+diff off-off_far     edit<=1: [-0.00, +0.76] pp   P(diff<=0) = 0.026
+diff column-specific edit<=1: [-0.28, +0.98] pp   P(diff<=0) = 0.147
+
+=== horizontal-offset profile ===
+hit rate (edit<=1 %) by horizontal offset |dx|/W between the token and every token of the comparison line; diff = n-1 minus far, with ~1 SE
+|dx|/W bin    n(n-1)    n-1    n-2    far     n-1 - far exact n-1 exact far
+0.00-0.25      13080   4.85   4.36   3.87    +0.98+-0.26      1.03      1.00
+0.25-0.50      10096   4.31   4.07   3.32    +0.98+-0.26      1.14      0.69
+0.50-0.75       9379   4.30   4.43   3.52    +0.78+-0.28      0.98      0.78
+0.75-1.00       9672   4.34   4.13   3.41    +0.93+-0.27      1.10      0.71
+1.00-1.25      10115   4.55   4.11   3.43    +1.11+-0.27      1.16      0.74
+1.25-1.50      10016   3.96   4.33   3.54    +0.42+-0.27      0.82      0.65
+1.50-1.75       9230   4.28   3.76   3.13    +1.14+-0.28      0.99      0.75
+1.75-2.00       8438   3.84   3.59   3.11    +0.73+-0.27      0.65      0.80
+2.00-2.25       8517   3.99   3.87   2.85    +1.14+-0.27      0.92      0.61
+2.25-2.50       8308   4.02   4.06   3.14    +0.88+-0.28      0.94      0.86
+2.50-2.75       8251   4.00   3.28   3.50    +0.50+-0.29      1.01      0.70
+2.75-3.00       7789   3.79   3.73   3.38    +0.40+-0.29      1.23      0.63
+3.00-3.25       7594   4.13   3.72   3.39    +0.75+-0.30      0.99      0.72
+3.25-3.50       7267   3.44   3.51   2.95    +0.49+-0.29      0.62      0.62
+3.50-3.75       6974   3.74   3.42   3.04    +0.70+-0.30      0.83      0.69
+3.75-4.00       6929   3.58   2.87   3.05    +0.53+-0.30      0.88      0.72
+4.00-4.25       6532   3.35   3.19   3.10    +0.25+-0.30      0.67      0.64
+4.25-4.50       6412   3.31   3.67   3.17    +0.14+-0.31      0.66      0.59
+4.50-4.75       5893   3.51   3.59   2.90    +0.62+-0.32      0.61      0.50
+4.75-5.00       5889   3.35   3.27   2.70    +0.65+-0.31      0.71      0.52
+5.00-5.25       5625   3.84   3.46   2.81    +1.03+-0.33      0.66      0.61
+5.25-5.50       5340   3.54   2.82   2.96    +0.58+-0.34      0.71      0.70
+5.50-5.75       5170   3.69   3.71   2.90    +0.79+-0.34      0.68      0.46
+5.75-6.00       4747   3.54   3.11   2.95    +0.58+-0.36      0.78      0.45
+
+=== nulls ===
+null 1: words shuffled within each line, boxes fixed (20 reps)
+  same   edit<=1: mean 3.79%  sd 0.10  range 3.61-3.93
+  off    edit<=1: mean 3.73%  sd 0.09  range 3.59-3.94
+  far    edit<=1: mean 3.18%  sd 0.09  range 3.04-3.36
+  observed same 4.61% vs null-1 same max 3.93%
+null 2: previous line replaced by a random other aligned paragraph line of the page (20 reps)
+  same   edit<=1: mean 3.81%  sd 0.13  range 3.56-4.09
+  off    edit<=1: mean 3.07%  sd 0.08  range 2.95-3.24
+  far    edit<=1: mean 3.60%  sd 0.12  range 3.27-3.81
+  observed same 4.61% vs null-2 same max 4.09%
+
+=== secondary: word-index-style multi-candidate version on the same aligned lines ===
+(same = any of the 3 nearest prev-line tokens within 1.5 W; off = any of 3 tokens nearest to 4 W within 3-5 W; far = 3 nearest on far line within 1.5 W) - comparable to b1 T2 j-1..j+1 / j+4..j+6
+
+--- multi-candidate ---
+condition         n   exact%  edit=1%  edit<=1%   95% CI (edit<=1)
+same          25907     2.43     7.28      9.71   [8.99, 10.33]
+off           25429     1.45     5.20      6.65   [6.11, 7.15]
+far           24136     1.80     6.11      7.91   [7.36, 8.43]
+ratios (edit<=1): same/far = 1.23, same/off = 1.46, off/far = 0.84
+diff same-off        edit<=1: [+2.64, +3.49] pp   P(diff<=0) = 0.000
+diff same-far        edit<=1: [+1.29, +2.26] pp   P(diff<=0) = 0.000
+diff off-far         edit<=1: [-1.75, -0.76] pp   P(diff<=0) = 1.000
+
+=== f57v ring retest (boxes ordered by angle) ===
+f57v: boxes 175 matched 121 lines 13 aligned 1
+ring centre (circle fit over 164 C-unit boxes): (313, 328)
+ring radii (median px): line 2: 306, line 3: 255, line 4: 199, line 5: 156
+boxes re-assigned by radius; words are the voynichese reading where the ZL string match failed
+
+line 2 unit Cc: ZL n=54 boxes=52 matched=35 radius mean 308 sd 7; angle order agrees with box order at 48/51 steps
+  tokens by angle: dydas o k sher saiin v dairol sa l y soeos vs ar okees o d socfchees lg sos okey defo fo rkedam sh ofol sar ddal yty s y daiis oteo dsh dy dkals ety fchcho a r ofaiin dal karody ar okchy daram qokar okal okal d o l shkeal
+  token-level period p -> match rate (exact / edit<=1):
+    p= 20: exact 0.03  edit<=1 0.16
+    p= 13: exact 0.03  edit<=1 0.13
+    p= 21: exact 0.00  edit<=1 0.13
+    p=  9: exact 0.00  edit<=1 0.12
+    p= 24: exact 0.00  edit<=1 0.11
+  glyph string length 207 (collapsed ch/sh/cth/ckh/cph/cfh/aiin/iin/in)
+  glyph-level lag -> match rate, top 8: lag 87: 0.18, lag 17: 0.18, lag 76: 0.18, lag 22: 0.17, lag 45: 0.16, lag 62: 0.16, lag 11: 0.16, lag 98: 0.15
+  max exact match rate over p=10..26: observed 0.03; token-shuffle null mean 0.04, 95th pct 0.06, P(null>=obs) = 0.795
+  chunks of 13 (angle order): chunk 2 vs 1 = 1/13; chunk 3 vs 1 = 0/13; chunk 4 vs 1 = 0/13
+  chunks of 17 (angle order): chunk 2 vs 1 = 0/17; chunk 3 vs 1 = 0/17
+
+line 3 unit Cc: ZL n=68 boxes=54 matched=36 radius mean 253 sd 6; angle order agrees with box order at 52/53 steps
+  tokens by angle: y c o l d r v x k k p t r y c o l d r v x k k p t r y c r daiin o l d r v x k k f t r y c o l d r v x k m f t r
+  token-level period p -> match rate (exact / edit<=1):
+    p= 13: exact 0.61  edit<=1 0.95
+    p= 15: exact 0.31  edit<=1 0.95
+    p=  7: exact 0.09  edit<=1 0.96
+    p= 27: exact 0.07  edit<=1 0.96
+    p= 26: exact 0.07  edit<=1 0.96
+  glyph string length 108 (collapsed ch/sh/cth/ckh/cph/cfh/aiin/iin/in)
+  glyph-level lag -> match rate, top 8: lag 26: 0.63, lag 2: 0.51, lag 4: 0.47, lag 6: 0.47, lag 14: 0.46, lag 8: 0.45, lag 12: 0.45, lag 10: 0.44
+  max exact match rate over p=10..27: observed 0.61; token-shuffle null mean 0.17, 95th pct 0.23, P(null>=obs) = 0.000
+  chunks of 13 (angle order): chunk 2 vs 1 = 13/13; chunk 3 vs 1 = 2/13; chunk 4 vs 1 = 0/13
+  chunks of 17 (angle order): chunk 2 vs 1 = 0/17; chunk 3 vs 1 = 1/17
+
+line 4 unit Cc: ZL n=31 boxes=30 matched=21 radius mean 199 sd 6; angle order agrees with box order at 28/29 steps
+  tokens by angle: daiin aiin otal daro v otey ofchey shes o d okeeod l o lkeeol dkedar yf aros s y chedaiin k eeety x deeodal vo tchor ch kedar dal ?
+  token-level period p -> match rate (exact / edit<=1):
+    p=  4: exact 0.04  edit<=1 0.12
+    p=  9: exact 0.00  edit<=1 0.19
+    p= 13: exact 0.00  edit<=1 0.18
+    p= 12: exact 0.00  edit<=1 0.17
+    p= 11: exact 0.00  edit<=1 0.16
+  glyph string length 117 (collapsed ch/sh/cth/ckh/cph/cfh/aiin/iin/in)
+  glyph-level lag -> match rate, top 8: lag 51: 0.27, lag 35: 0.20, lag 52: 0.15, lag 26: 0.15, lag 31: 0.15, lag 10: 0.15, lag 41: 0.14, lag 54: 0.14
+  max exact match rate over p=10..15: observed 0.00; token-shuffle null mean 0.01, 95th pct 0.06, P(null>=obs) = 1.000
+
+line 5 unit Cc: ZL n=35 boxes=28 matched=25 radius mean 155 sd 5; angle order agrees with box order at 27/27 steps
+  tokens by angle: o v l r m aiin d c f s y l k x l r ar o s t l s d y ar teodar otodar sheky
+  token-level period p -> match rate (exact / edit<=1):
+    p= 12: exact 0.19  edit<=1 0.62
+    p=  9: exact 0.16  edit<=1 0.74
+    p=  3: exact 0.08  edit<=1 0.68
+    p= 13: exact 0.07  edit<=1 0.67
+    p=  8: exact 0.05  edit<=1 0.75
+  glyph string length 70 (collapsed ch/sh/cth/ckh/cph/cfh/aiin/iin/in)
+  glyph-level lag -> match rate, top 8: lag 2: 0.34, lag 6: 0.31, lag 31: 0.31, lag 4: 0.30, lag 27: 0.30, lag 8: 0.27, lag 33: 0.27, lag 14: 0.27
+  max exact match rate over p=10..14: observed 0.19; token-shuffle null mean 0.10, 95th pct 0.17, P(null>=obs) = 0.020

@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T03:55:13.5778132Z",
+ "response": "{\n  \"PT\": \"PLANT\",\n  \"P_plants\": \"1\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"0\",\n  \"P_flower\": \"5+\",\n  \"P_habit\": \"ROSETTE\",\n  \"J_shape\": \"NONE\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"0\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"EMPTY\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"0\",\n  \"C_rings\": \"0-1\",\n  \"C_diagrams\": \"NA\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"NA\",\n  \"B_figures\": \"NA\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Single plant with multiple flowers, rosette habit.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2637663300,
+ "load_duration": 235686200,
+ "prompt_eval_count": 3311,
+ "prompt_eval_duration": 738651000,
+ "eval_count": 203,
+ "eval_duration": 1482957000,
+ "stem": "057_29v"
+}

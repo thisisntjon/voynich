@@ -1,0 +1,56 @@
+D3 VERBOSE-CIPHER FORWARD TEST  N=25000 tokens, tables=5, p_space=0.5, bigram units=20, seeds=[1, 2, 3]
+Voynich paragraph lines=4130 tokens(all)=34857; Caesar plaintext words=19520
+seed 1: cipher words=25000 lines=2961 meta={'n_units_used': 44, 'pool_size': 82, 'frag_mean_len': 2.790909090909091}
+seed 2: cipher words=25000 lines=2984 meta={'n_units_used': 44, 'pool_size': 82, 'frag_mean_len': 2.7181818181818183}
+seed 3: cipher words=25000 lines=2958 meta={'n_units_used': 44, 'pool_size': 82, 'frag_mean_len': 2.7818181818181817}
+
+metric                         Voynich      cipher(mean+-sd)       Latin(plain)
+h1                                3.863        3.876 +- 0.026          4.009
+h2                                2.126        2.486 +- 0.041          3.295
+mean_len                          4.888        5.487 +- 0.117          6.011
+sd_len                            1.764        4.076 +- 0.051          2.905
+zipf                             -1.047       -0.985 +- 0.011         -0.856
+types                          5417.000     9129.000 +- 52.198       5491.000
+hapax                             0.679        0.820 +- 0.003          0.612
+redup                             0.896        0.365 +- 0.016          0.000
+jsd_first_fg                      0.176        0.001 +- 0.000          0.005
+jsd_last_fg                       0.036        0.001 +- 0.000          0.004
+jsd_first_fg_null                 0.002        0.001 +- 0.000            nan
+jsd_last_fg_null                  0.002        0.001 +- 0.000            nan
+jsd_first_lg                      0.014        0.001 +- 0.000          0.004
+jsd_last_lg                       0.082        0.001 +- 0.000          0.003
+jsd_first_lg_null                 0.001        0.001 +- 0.000            nan
+jsd_last_lg_null                  0.001        0.001 +- 0.000            nan
+jsd_first_len                     0.022        0.001 +- 0.000          0.001
+jsd_last_len                      0.012        0.001 +- 0.000          0.003
+jsd_first_len_null                0.001        0.001 +- 0.000            nan
+jsd_last_len_null                 0.001        0.001 +- 0.000            nan
+enr_p_init_rate                   0.093        0.061 +- 0.003          0.081
+enr_p_mid_rate                    0.005        0.061 +- 0.003          0.088
+enr_p_enrich                     17.886        1.008 +- 0.029          0.924
+enr_m_final_rate                  0.155        0.069 +- 0.030          0.168
+enr_m_mid_rate                    0.010        0.065 +- 0.025          0.175
+enr_m_enrich                     16.312        1.040 +- 0.113          0.962
+
+Line-position JSD vs permutation null (excess = observed - null mean):
+  jsd_first_fg       VMS excess=+0.1739 (obs 0.1759 null 0.0020)   cipher excess=+0.0002 (obs 0.0012 null 0.0010)
+  jsd_last_fg        VMS excess=+0.0342 (obs 0.0363 null 0.0021)   cipher excess=+0.0002 (obs 0.0011 null 0.0009)
+  jsd_first_lg       VMS excess=+0.0131 (obs 0.0143 null 0.0012)   cipher excess=-0.0000 (obs 0.0008 null 0.0008)
+  jsd_last_lg        VMS excess=+0.0809 (obs 0.0820 null 0.0011)   cipher excess=-0.0000 (obs 0.0008 null 0.0008)
+  jsd_first_len      VMS excess=+0.0210 (obs 0.0217 null 0.0007)   cipher excess=-0.0000 (obs 0.0005 null 0.0005)
+  jsd_last_len       VMS excess=+0.0116 (obs 0.0124 null 0.0008)   cipher excess=+0.0002 (obs 0.0008 null 0.0006)
+
+p-initial enrichment: VMS x17.89 (0.093 vs mid 0.005) | cipher x1.01 (0.061 vs mid 0.061)
+m-final enrichment:   VMS x16.31 (0.155 vs mid 0.010) | cipher x1.04 (0.069 vs mid 0.065)
+
+VERDICT (tolerances stated inline; read numbers above, not just flags):
+  [REPRODUCED] h2 within 0.4 bits (VMS 2.13 vs cipher 2.49; Latin plain 3.29)
+  [REPRODUCED] word-len mean within 1.0 EVA chars (VMS 4.89 vs cipher 5.49) [mean is partly set by p_space]
+  [FAILS     ] word-len SD within 0.5 (VMS 1.76 vs cipher 4.08; Bernoulli spaces predict geometric, over-dispersed lengths)
+  [REPRODUCED] Zipf slope within 0.15 (VMS -1.047 vs cipher -0.985)
+  [FAILS     ] adjacent-repeat within 0.5pp (VMS 0.896% vs cipher 0.365%)
+  [FAILS     ] line-position JSD excess: VMS mean +0.0755 vs cipher +0.0001 (cipher would need >= half the VMS excess)
+  [FAILS     ] p-init / m-final enrichment: VMS x17.89/x16.31 vs cipher x1.01/x1.04 (~1.0 = no effect)
+
+Simplifications: see module docstring (spaces discarded pre-enciphering; 5 i.i.d. tables; fragments distinct within a table, reused across tables; Bernoulli p=0.5 spaces; lines imposed post hoc; no gallows/positional/abbreviation rules; EVA chars).
+Interpretation: metrics flagged REPRODUCED are what ANY verbose homophonic enciphering of real Latin buys for free and therefore do not discriminate verbose-cipher from other generators; metrics flagged FAILS need extra machinery beyond verbose enciphering (see numbers).

@@ -1,0 +1,63 @@
+=== F1, target vocabulary: whole words ===
+held-out bits/token; residual = word-order gain beyond last-two-glyph edge table
+
+VOYNICH all                U=10.255 E2=10.267 W=10.386  edge gain=-0.011 (shuf -0.253, excess +0.241)  residual=-0.120 (shuf -0.161, excess +0.041)  pairs=15207
+VOYNICH Currier A          U= 9.888 E2=10.030 W=10.174  edge gain=-0.142 (shuf -0.288, excess +0.146)  residual=-0.144 (shuf -0.176, excess +0.032)  pairs=4667
+VOYNICH Currier B          U= 9.857 E2= 9.863 W= 9.994  edge gain=-0.006 (shuf -0.282, excess +0.276)  residual=-0.130 (shuf -0.173, excess +0.043)  pairs=10466
+NULL token-shuffled MS     U=10.428 E2=10.724 W=10.915  edge gain=-0.295 (shuf -0.292, excess -0.003)  residual=-0.191 (shuf -0.191, excess -0.000)  pairs=15207
+
+NAIBBE (c4 skeleton)       U=10.361 E2=10.659 W=10.814  edge gain=-0.298 (shuf -0.319, excess +0.021)  residual=-0.155 (shuf -0.193, excess +0.038)  pairs=9224
+c2 section ps=0.6          U= 8.073 E2= 8.270 W= 8.418  edge gain=-0.197 (shuf -0.215, excess +0.018)  residual=-0.147 (shuf -0.148, excess +0.001)  pairs=15207
+
+CTRL latin_caesar          U=10.969 E2=10.903 W=10.854  edge gain=+0.066 (shuf -0.322, excess +0.388)  residual=+0.049 (shuf -0.187, excess +0.236)  pairs=8640
+CTRL latin_augustine       U=10.934 E2=10.939 W=10.949  edge gain=-0.006 (shuf -0.330, excess +0.324)  residual=-0.010 (shuf -0.177, excess +0.167)  pairs=14613
+CTRL italian_dante         U= 9.881 E2= 9.652 W= 9.641  edge gain=+0.229 (shuf -0.291, excess +0.520)  residual=+0.011 (shuf -0.186, excess +0.197)  pairs=14613
+CTRL german_faust          U=10.101 E2=10.079 W=10.068  edge gain=+0.022 (shuf -0.305, excess +0.327)  residual=+0.011 (shuf -0.180, excess +0.191)  pairs=13024
+CTRL german_kafka          U= 9.541 E2= 9.478 W= 9.427  edge gain=+0.063 (shuf -0.293, excess +0.356)  residual=+0.051 (shuf -0.177, excess +0.228)  pairs=8079
+CTRL english_alice         U= 8.756 E2= 8.162 W= 7.903  edge gain=+0.594 (shuf -0.208, excess +0.802)  residual=+0.259 (shuf -0.158, excess +0.417)  pairs=11520
+CTRL dante verse lines     U=10.051 E2= 9.686 W= 9.648  edge gain=+0.365 (shuf -0.254, excess +0.618)  residual=+0.038 (shuf -0.168, excess +0.206)  pairs=15549
+
+residual excess: smallest prose = +0.167; Voynich = +0.041; token-shuffled null = -0.000
+pre-registered verdict: INCONCLUSIVE
+=== F1, target vocabulary: top-100 train words, others -> <first.last> class ===
+held-out bits/token; residual = word-order gain beyond last-two-glyph edge table
+
+VOYNICH all                U= 7.069 E2= 6.869 W= 6.907  edge gain=+0.200 (shuf -0.068, excess +0.267)  residual=-0.037 (shuf -0.061, excess +0.024)  pairs=15207
+VOYNICH Currier A          U= 6.997 E2= 6.926 W= 7.013  edge gain=+0.072 (shuf -0.114, excess +0.185)  residual=-0.087 (shuf -0.135, excess +0.049)  pairs=4667
+VOYNICH Currier B          U= 7.050 E2= 6.832 W= 6.890  edge gain=+0.218 (shuf -0.098, excess +0.316)  residual=-0.059 (shuf -0.095, excess +0.036)  pairs=10466
+NULL token-shuffled MS     U= 7.077 E2= 7.175 W= 7.263  edge gain=-0.098 (shuf -0.101, excess +0.003)  residual=-0.088 (shuf -0.090, excess +0.002)  pairs=15207
+
+NAIBBE (c4 skeleton)       U= 7.232 E2= 7.316 W= 7.391  edge gain=-0.084 (shuf -0.106, excess +0.022)  residual=-0.075 (shuf -0.111, excess +0.036)  pairs=9224
+c2 section ps=0.6          U= 6.872 E2= 6.947 W= 7.030  edge gain=-0.075 (shuf -0.076, excess +0.001)  residual=-0.084 (shuf -0.085, excess +0.001)  pairs=15207
+
+CTRL latin_caesar          U= 7.614 E2= 7.449 W= 7.457  edge gain=+0.165 (shuf -0.128, excess +0.292)  residual=-0.008 (shuf -0.130, excess +0.122)  pairs=8640
+CTRL latin_augustine       U= 7.609 E2= 7.450 W= 7.459  edge gain=+0.159 (shuf -0.124, excess +0.283)  residual=-0.010 (shuf -0.115, excess +0.105)  pairs=14613
+CTRL italian_dante         U= 7.213 E2= 6.787 W= 6.714  edge gain=+0.426 (shuf -0.109, excess +0.535)  residual=+0.073 (shuf -0.104, excess +0.177)  pairs=14613
+CTRL german_faust          U= 7.764 E2= 7.622 W= 7.600  edge gain=+0.142 (shuf -0.138, excess +0.280)  residual=+0.021 (shuf -0.133, excess +0.155)  pairs=13024
+CTRL german_kafka          U= 7.644 E2= 7.493 W= 7.445  edge gain=+0.151 (shuf -0.161, excess +0.312)  residual=+0.048 (shuf -0.146, excess +0.195)  pairs=8079
+CTRL english_alice         U= 7.585 E2= 7.018 W= 6.835  edge gain=+0.567 (shuf -0.123, excess +0.690)  residual=+0.183 (shuf -0.137, excess +0.319)  pairs=11520
+CTRL dante verse lines     U= 7.233 E2= 6.663 W= 6.577  edge gain=+0.570 (shuf -0.070, excess +0.640)  residual=+0.086 (shuf -0.085, excess +0.171)  pairs=15549
+
+residual excess: smallest prose = +0.105; Voynich = +0.024; token-shuffled null = +0.002
+pre-registered verdict: INCONCLUSIVE
+=== F1, target vocabulary: top-300 train words, others -> <first.last> class ===
+held-out bits/token; residual = word-order gain beyond last-two-glyph edge table
+
+VOYNICH all                U= 7.919 E2= 7.733 W= 7.800  edge gain=+0.186 (shuf -0.084, excess +0.270)  residual=-0.067 (shuf -0.109, excess +0.042)  pairs=15207
+VOYNICH Currier A          U= 7.718 E2= 7.658 W= 7.777  edge gain=+0.060 (shuf -0.127, excess +0.188)  residual=-0.119 (shuf -0.170, excess +0.052)  pairs=4667
+VOYNICH Currier B          U= 7.852 E2= 7.650 W= 7.743  edge gain=+0.202 (shuf -0.116, excess +0.318)  residual=-0.093 (shuf -0.142, excess +0.048)  pairs=10466
+NULL token-shuffled MS     U= 7.927 E2= 8.045 W= 8.178  edge gain=-0.118 (shuf -0.118, excess -0.001)  residual=-0.133 (shuf -0.135, excess +0.002)  pairs=15207
+
+NAIBBE (c4 skeleton)       U= 7.719 E2= 7.822 W= 7.928  edge gain=-0.104 (shuf -0.125, excess +0.021)  residual=-0.106 (shuf -0.142, excess +0.036)  pairs=9224
+c2 section ps=0.6          U= 7.443 E2= 7.537 W= 7.656  edge gain=-0.094 (shuf -0.101, excess +0.007)  residual=-0.119 (shuf -0.120, excess +0.001)  pairs=15207
+
+CTRL latin_caesar          U= 8.172 E2= 7.975 W= 7.962  edge gain=+0.197 (shuf -0.144, excess +0.341)  residual=+0.013 (shuf -0.161, excess +0.174)  pairs=8640
+CTRL latin_augustine       U= 8.077 E2= 7.890 W= 7.897  edge gain=+0.186 (shuf -0.137, excess +0.323)  residual=-0.006 (shuf -0.148, excess +0.141)  pairs=14613
+CTRL italian_dante         U= 7.709 E2= 7.259 W= 7.184  edge gain=+0.450 (shuf -0.127, excess +0.577)  residual=+0.075 (shuf -0.138, excess +0.212)  pairs=14613
+CTRL german_faust          U= 8.184 E2= 8.030 W= 8.005  edge gain=+0.154 (shuf -0.158, excess +0.311)  residual=+0.025 (shuf -0.156, excess +0.181)  pairs=13024
+CTRL german_kafka          U= 8.067 E2= 7.891 W= 7.833  edge gain=+0.176 (shuf -0.177, excess +0.353)  residual=+0.058 (shuf -0.175, excess +0.233)  pairs=8079
+CTRL english_alice         U= 7.972 E2= 7.346 W= 7.112  edge gain=+0.626 (shuf -0.138, excess +0.764)  residual=+0.233 (shuf -0.154, excess +0.387)  pairs=11520
+CTRL dante verse lines     U= 7.730 E2= 7.126 W= 7.025  edge gain=+0.604 (shuf -0.089, excess +0.693)  residual=+0.101 (shuf -0.113, excess +0.213)  pairs=15549
+
+residual excess: smallest prose = +0.141; Voynich = +0.042; token-shuffled null = +0.002
+pre-registered verdict: FAVOURS LANGUAGE (word order beyond the edge table)

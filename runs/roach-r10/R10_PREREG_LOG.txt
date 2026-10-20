@@ -1,0 +1,5 @@
+r10 log
+fixture run 1 13:49:12 PDT rev0 NOT OK; rev1; run 2 13:50:47 NOT OK; rev2; run 3 13:52:33 OK
+FREEZE at (clock): 2026-10-18 13:54:09 PDT r10.py ada3231f0b6b0992767c7bd98fb206a4b1f138dcdb11d190cfc521ddaff4f69b
+real run start: 2026-10-18 13:54:09 PDT
+real run end: 2026-10-18 13:58:33 PDT exit=0

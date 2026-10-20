@@ -1,0 +1,59 @@
+r9.py mode=fixture run at (clock): 2026-10-18T13:28:06-07:00
+r9.py sha256: b6ba32784a2c6b7bbd3f85ae80a6b6dea60c62f619f3e306da54ce9853c78b3a
+R9a FIX_PLANTED_DRIFT (whole text, positions >= 2; decay S(D) and cross-page SX(1))
+   prefix S(1)    1.043 (quire-shuffle null 1.000, p_up 0.005)
+   prefix S(2-4)  1.030 (quire-shuffle null 1.000, p_up 0.005)
+   prefix SX(1)   0.976 (quire-shuffle null 1.003, p_up 0.766)
+   prefix S(D) D=1..4 (mean over quires): 1.043 1.033 1.027 1.031
+   suffix S(1)    1.060 (quire-shuffle null 0.999, p_up 0.005)
+   suffix S(2-4)  1.042 (quire-shuffle null 1.000, p_up 0.005)
+   suffix SX(1)   1.073 (quire-shuffle null 1.001, p_up 0.055)
+   suffix S(D) D=1..4 (mean over quires): 1.060 1.044 1.049 1.033
+R9b FIX_PLANTED_DRIFT: 15 folds, threshold 8
+   fold | drift lam/beta (scale) pre ; suf | match (i) drift (ii) line (iii) word (iv) chain | real q1..q7 prefix ; suffix
+   Q00  | 0.20/10 (5.0) ; 0.20/10 (5.0) | True  False False False | 0.993 0.045 1.033 1.024 1.034 1.020 1.032 ; 0.949 0.080 1.046 1.080 1.122 1.047 1.342
+   Q01  | 0.05/5 (20.0) ; 0.20/10 (5.0) | False False False False | 1.049 0.195 1.045 1.066 1.102 1.060 1.105 ; 1.082 0.081 1.030 1.028 1.033 1.003 1.041
+   Q02  | 0.05/5 (20.0) ; 0.05/5 (20.0) | True  True  True  True  | 0.986 0.065 1.003 0.995 1.008 1.019 0.944 ; 1.020 0.018 1.077 1.020 1.046 1.027 0.988
+   Q03  | 0.20/10 (5.0) ; 0.20/10 (5.0) | True  False False False | 1.004 0.046 0.961 1.023 1.042 1.027 1.175 ; 0.983 -0.030 1.055 1.002 1.041 1.080 1.088
+   Q04  | 0.05/5 (20.0) ; 0.10/10 (10.0) | True  False False False | 1.003 -0.005 1.042 1.028 1.060 1.038 0.897 ; 1.062 0.193 1.053 1.056 1.079 1.029 1.182
+   Q05  | 0.05/5 (20.0) ; 0.20/10 (5.0) | False False False False | 1.005 -0.045 1.019 1.081 1.097 1.025 1.000 ; 0.980 -0.078 1.058 1.058 1.087 1.060 1.164
+   Q06  | 0.10/10 (10.0) ; 0.30/20 (3.3) | False False False False | 1.003 0.060 1.060 1.057 1.089 1.043 0.938 ; 1.013 -0.002 1.063 1.026 1.068 1.078 1.073
+   Q07  | 0.20/10 (5.0) ; 0.20/10 (5.0) | True  False False False | 0.946 -0.056 1.049 1.022 1.038 1.028 0.748 ; 0.918 -0.095 1.031 1.045 1.073 1.042 0.906
+   Q08  | 0.20/10 (5.0) ; 0.05/5 (20.0) | True  False False True  | 0.965 -0.089 0.980 1.014 1.026 1.034 0.877 ; 0.925 -0.126 1.021 1.006 1.042 1.036 0.972
+   Q09  | 0.05/5 (20.0) ; 0.05/5 (20.0) | True  False True  True  | 0.986 -0.062 1.027 1.023 1.028 1.024 0.891 ; 1.058 0.105 0.987 0.998 1.015 1.018 0.958
+   Q10  | 0.50/20 (2.0) ; 0.05/5 (20.0) | True  True  False True  | 0.980 -0.054 1.057 1.001 1.003 1.025 1.226 ; 1.005 -0.006 1.045 1.016 1.032 1.039 1.020
+   Q11  | 0.05/5 (20.0) ; 0.30/20 (3.3) | False False False False | 1.052 0.001 1.079 1.011 1.028 1.021 1.194 ; 1.015 0.093 1.039 1.027 1.070 1.051 1.056
+   Q12  | 0.20/10 (5.0) ; 0.20/10 (5.0) | True  False False False | 0.988 0.022 1.045 1.010 1.019 1.030 0.939 ; 1.013 0.090 1.069 1.005 1.056 1.056 1.049
+   Q13  | 0.10/5 (10.0) ; 0.10/10 (10.0) | True  True  True  True  | 0.974 -0.061 1.021 1.030 1.037 1.016 0.892 ; 0.957 0.002 1.069 1.047 1.050 0.991 1.223
+   Q14  | 0.10/5 (10.0) ; 0.05/5 (20.0) | True  False False False | 1.033 0.029 1.076 1.001 1.029 1.048 0.780 ; 1.015 0.012 0.998 1.035 1.084 1.072 1.038
+   matches: (i) drift 11, (ii) line-held 3, (iii) per-word 3, (iv) chain 5 (threshold 8); median fitted drift scale 10.0 lines -> call PASS
+
+R9a FIX_PLANTED_LINEHELD (whole text, positions >= 2; decay S(D) and cross-page SX(1))
+   prefix S(1)    1.006 (quire-shuffle null 1.000, p_up 0.119)
+   prefix S(2-4)  1.004 (quire-shuffle null 1.001, p_up 0.154)
+   prefix SX(1)   1.018 (quire-shuffle null 0.997, p_up 0.219)
+   prefix S(D) D=1..4 (mean over quires): 1.006 1.010 1.015 0.987
+   suffix S(1)    0.991 (quire-shuffle null 1.000, p_up 0.915)
+   suffix S(2-4)  0.997 (quire-shuffle null 1.000, p_up 0.756)
+   suffix SX(1)   0.939 (quire-shuffle null 0.998, p_up 0.905)
+   suffix S(D) D=1..4 (mean over quires): 0.991 1.013 0.981 0.997
+R9b FIX_PLANTED_LINEHELD: 15 folds, threshold 8
+   fold | drift lam/beta (scale) pre ; suf | match (i) drift (ii) line (iii) word (iv) chain | real q1..q7 prefix ; suffix
+   Q00  | 1.00/2 (1.0) ; 1.00/5 (1.0) | False True  False False | 1.008 0.023 2.067 0.937 0.995 1.022 0.887 ; 1.023 0.042 2.665 0.948 1.055 1.027 0.983
+   Q01  | 1.00/2 (1.0) ; 1.00/2 (1.0) | False True  False False | 0.981 0.005 2.133 0.979 1.048 1.033 1.268 ; 0.988 -0.016 2.428 0.972 1.052 0.951 1.209
+   Q02  | 1.00/2 (1.0) ; 1.00/2 (1.0) | False True  False False | 0.992 0.014 1.949 1.023 1.081 0.979 0.627 ; 0.959 -0.048 2.564 0.943 1.011 0.956 1.143
+   Q03  | 1.00/5 (1.0) ; 1.00/5 (1.0) | False True  False False | 1.016 0.026 1.944 0.946 0.980 1.015 0.867 ; 1.028 0.054 2.527 0.992 1.090 1.034 0.742
+   Q04  | 1.00/2 (1.0) ; 1.00/5 (1.0) | False True  False False | 1.023 0.045 2.087 0.933 0.987 1.001 1.416 ; 0.994 0.066 2.363 0.938 0.992 1.022 0.753
+   Q05  | 1.00/5 (1.0) ; 1.00/2 (1.0) | False True  False False | 0.970 -0.038 2.100 0.909 0.965 1.037 1.114 ; 1.052 0.108 2.601 0.872 0.922 0.980 1.109
+   Q06  | 1.00/5 (1.0) ; 1.00/5 (1.0) | False True  False False | 1.008 0.051 2.041 0.874 0.919 1.010 0.757 ; 1.015 -0.014 2.821 0.916 0.996 1.029 1.261
+   Q07  | 1.00/5 (1.0) ; 1.00/2 (1.0) | False True  False False | 1.039 0.035 2.082 0.979 1.030 1.023 1.284 ; 1.000 -0.029 2.394 0.907 0.974 0.965 0.778
+   Q08  | 1.00/5 (1.0) ; 1.00/5 (1.0) | False False False False | 1.007 -0.037 2.275 0.891 0.924 0.985 1.322 ; 1.006 0.061 2.676 0.772 0.864 1.094 0.859
+   Q09  | 1.00/5 (1.0) ; 1.00/5 (1.0) | False True  False False | 1.004 0.049 2.190 1.024 1.105 1.021 0.931 ; 0.977 -0.022 2.583 0.933 1.035 0.938 1.721
+   Q10  | 1.00/5 (1.0) ; 1.00/5 (1.0) | False True  False False | 0.995 -0.046 2.266 0.991 1.045 0.980 0.852 ; 0.993 -0.006 2.841 0.857 0.941 0.939 1.122
+   Q11  | 1.00/5 (1.0) ; 1.00/2 (1.0) | False False False False | 0.977 -0.058 2.015 0.904 0.949 0.968 1.228 ; 1.001 -0.005 2.797 0.955 1.023 0.984 0.335
+   Q12  | 1.00/2 (1.0) ; 1.00/5 (1.0) | False True  False False | 0.990 -0.032 2.105 0.999 1.068 1.007 1.297 ; 0.993 -0.048 2.432 0.945 0.997 0.979 0.413
+   Q13  | 1.00/2 (1.0) ; 1.00/2 (1.0) | False True  False False | 0.960 -0.049 2.040 0.961 0.996 0.985 0.793 ; 0.982 0.004 2.544 0.871 0.943 1.053 0.711
+   Q14  | 1.00/2 (1.0) ; 1.00/5 (1.0) | False True  False False | 1.005 0.026 2.195 0.944 0.999 0.996 0.629 ; 0.956 -0.035 2.605 0.909 0.975 1.001 0.942
+   matches: (i) drift 0, (ii) line-held 13, (iii) per-word 0, (iv) chain 0 (threshold 8); median fitted drift scale 1.0 lines -> call FAIL
+
+FIXTURE CHECK: planted drift PASS: True (median scale 10.0, planted 5) ; planted line-held not PASS: True ; overall OK

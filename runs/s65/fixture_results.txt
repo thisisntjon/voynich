@@ -1,0 +1,41 @@
+S65: drawing-gap robustness of A1/A5, space fitting, Steckley BEFORE length
+start: Sun Oct 18 01:56:42 PDT 2026 (`date`)
+stub_match: NO STUB
+  sha256 2b182cb96a82d0d4e582e849d2a17fd1689200da6aba1d7ab687bd9bb6b12dee  s65_drawing_gap_robustness.py
+  sha256 5a08d4252dabfbe5f4ef5f93e5f2808a678ebb76fe32d99891c8310679bc81aa  tools/ivtff_to_meta.py
+  sha256 8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65  tools/boxes.py
+  sha256 0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1  vparse.py
+  source FIXTURE: sha256 2aa6e662b3eb593ccaec9b3c60c937eaf9c4bc13c383c2adb79127d3d87adb59
+
+--- (a) FIXTURE: 60 pages, P lines 1200, lines with '<->' 322, '<->' marks 322, internal gaps (both sides non-empty) 322
+  BASE  tokens   9177 lines  1200 | A1 raw 0.0072 excess +0.0060 [+0.0041, +0.0081] | A5 I +0.1439 excess +0.1057 [+0.0937, +0.1152]
+  EXCL  tokens   8533 lines  1200 | A1 raw 0.0100 excess +0.0088 [+0.0065, +0.0115] | A5 I +0.1449 excess +0.1035 [+0.0920, +0.1144]
+  SPLIT tokens   9177 lines  1522 | A1 raw 0.0095 excess +0.0082 [+0.0061, +0.0107] | A5 I +0.1387 excess +0.0940 [+0.0833, +0.1049]
+    A1 EXCL/BASE = 1.470
+    A1 SPLIT/BASE = 1.378
+    A5 EXCL/BASE = 0.979
+    A5 SPLIT/BASE = 0.889
+
+  part (a) call: not robust: FIXTURE EXCL A1 moved +47.0 % vs BASE
+
+--- (b) space fitting (ZL3b + voynichese boxes) ---
+  ZL3b pages with P text 60; box folios aligned 60; pages with >=50 % usable P lines 60 (100.0 %); lines skipped: non-monotone x 0, segment/token mismatch 0
+  events: MID 6133, PREGAP 322, MARGIN 1200
+  class             n  mean L  mean S  slope dL/dS  95% CI
+  MID            6133   3.941   5.498      +0.9773  [+0.9733, +0.9809]
+  PREGAP          322   2.003  13.536      +0.8426  [+0.7971, +0.8819]
+  MARGIN         1200   3.991  18.090      -0.0019  [-0.0094, +0.0068]
+  OBSTACLE       1522   3.570  17.126      +0.0184  [+0.0111, +0.0261]
+  OBSTACLE - MID slope -0.9588 [-0.9669, -0.9503];  PREGAP - MID -0.1347 [-0.1810, -0.0945]
+  part (b) call: no space fitting
+
+--- (c) Steckley BEFORE vs MIDDLE word length, ZL3b ---
+  all hands      EVA chars: BEFORE 2.003 (n 322) vs MIDDLE 4.344 (n 5514); diff -2.341 [-2.416, -2.268]  (pages 60, with BEFORE 59)
+  all hands      glyphs   : BEFORE 2.003 (n 322) vs MIDDLE 3.938 (n 5514); diff -1.935 [-2.012, -1.862]  (pages 60, with BEFORE 59)
+  hand 1 Herbal  EVA chars: BEFORE 1.994 (n 156) vs MIDDLE 4.351 (n 2753); diff -2.357 [-2.473, -2.250]  (pages 30, with BEFORE 29)
+  hand 1 Herbal  glyphs   : BEFORE 1.994 (n 156) vs MIDDLE 3.951 (n 2753); diff -1.957 [-2.073, -1.852]  (pages 30, with BEFORE 29)
+
+=== VERDICT ===
+VERDICT s65 (a): not robust: FIXTURE EXCL A1 moved +47.0 % vs BASE
+VERDICT s65 (b): no space fitting
+end: Sun Oct 18 01:57:17 PDT 2026 (`date`)  (elapsed 35 s)

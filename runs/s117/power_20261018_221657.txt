@@ -1,0 +1,35 @@
+s117 power diagnostic (not a gate). started 2026-10-18 22:16:57 PDT; BelowNormal; script sha256 83b5d36b3d51b72c226a3e34615ba905d33f67912710b87b0a2420a123b8956a
+  table T_PROB=0.05 seed 0 core null=quire lines 4130 units 1653 | S 14642.9 null 14494.4+-56.9 z 2.61 p 0.0198 | N_T 28 {'p': 4, 't': 24} null mean 17.05 q99 26.06 | Q n/a | call P | 43.6s
+  table T_PROB=0.1 seed 2 core null=quire lines 4130 units 1649 | S 15432.3 null 15163.2+-58.5 z 4.60 p 0.0099 | N_T 70 {'p': 23, 't': 47} null mean 18.41 q99 33.03 | Q n/a | call T | 43.8s
+  table T_PROB=0.1 seed 0 core null=quire lines 4130 units 1705 | S 15310.4 null 15190.0+-62.5 z 1.93 p 0.0297 | N_T 54 {'p': 15, 't': 39} null mean 17.99 q99 26.02 | Q n/a | call P | 44.1s
+  table T_PROB=0.1 seed 1 core null=quire lines 4130 units 1624 | S 14740.9 null 14603.7+-55.5 z 2.47 p 0.0099 | N_T 49 {'p': 15, 't': 34} null mean 18.76 q99 30.01 | Q 0.2364 (null mean 0.2234, q99 0.2338, p 0.0198) | call X | 48.3s
+  table T_PROB=0.05 seed 1 core null=quire lines 4130 units 1683 | S 15222.0 null 15184.4+-57.0 z 0.66 p 0.2871 | N_T 24 {'p': 4, 't': 20} null mean 16.84 q99 27.01 | Q n/a | call P | 43.1s
+  content C_LAMBDA=0.2 seed 0 core null=quire lines 4130 units 1426 | S 12390.4 null 12376.2+-60.3 z 0.24 p 0.4158 | N_T 19 {'p': 3, 't': 16} null mean 16.46 q99 24.02 | Q n/a | call P | 43.0s
+  table T_PROB=0.05 seed 2 core null=quire lines 4130 units 1645 | S 15085.0 null 14911.4+-64.5 z 2.69 p 0.0099 | N_T 27 {'p': 6, 't': 21} null mean 17.89 q99 25.01 | Q 0.2199 (null mean 0.2259, q99 0.2352, p 0.9505) | call X | 47.6s
+  content C_LAMBDA=0.2 seed 1 core null=quire lines 4130 units 1372 | S 12100.9 null 11965.4+-54.2 z 2.50 p 0.0099 | N_T 14 {'p': 1, 't': 13} null mean 15.06 q99 23.02 | Q 0.2107 (null mean 0.2087, q99 0.2165, p 0.3267) | call X | 47.1s
+  content C_LAMBDA=0.2 seed 2 core null=quire lines 4130 units 1456 | S 13091.3 null 13061.8+-56.8 z 0.52 p 0.3267 | N_T 14 {'p': 1, 't': 13} null mean 16.75 q99 29.00 | Q n/a | call P | 44.0s
+  content C_LAMBDA=0.1 seed 0 core null=quire lines 4130 units 1574 | S 14095.9 null 14005.8+-66.2 z 1.36 p 0.0792 | N_T 9 {'p': 3, 't': 6} null mean 16.51 q99 27.01 | Q n/a | call P | 44.0s
+  content C_LAMBDA=0.1 seed 1 core null=quire lines 4130 units 1543 | S 13746.3 null 13773.0+-51.3 z -0.52 p 0.7228 | N_T 9 {'p': 1, 't': 8} null mean 16.88 q99 28.06 | Q n/a | call P | 44.1s
+  content C_LAMBDA=0.1 seed 2 core null=quire lines 4130 units 1556 | S 13915.5 null 13955.9+-56.4 z -0.72 p 0.8020 | N_T 11 {'p': 1, 't': 10} null mean 16.76 q99 29.01 | Q n/a | call P | 43.8s
+  table T_PROB=0.1 seed 0 word null=quire lines 4130 units 4852 | S 66974.8 null 65181.5+-103.8 z 17.28 p 0.0099 | N_T 201 {'p': 150, 't': 51} null mean 13.79 q99 21.05 | Q n/a | call T | 61.5s
+  table T_PROB=0.1 seed 1 word null=quire lines 4130 units 4800 | S 67526.6 null 65524.4+-105.2 z 19.03 p 0.0099 | N_T 220 {'p': 164, 't': 56} null mean 14.57 q99 23.00 | Q n/a | call T | 61.4s
+  table T_PROB=0.1 seed 2 word null=quire lines 4130 units 4740 | S 66501.4 null 64851.7+-89.8 z 18.37 p 0.0099 | N_T 174 {'p': 130, 't': 44} null mean 13.84 q99 23.02 | Q n/a | call T | 60.7s
+  table T_PROB=0.05 seed 0 word null=quire lines 4130 units 4791 | S 64564.0 null 63943.2+-84.8 z 7.32 p 0.0099 | N_T 84 {'p': 62, 't': 22} null mean 13.90 q99 23.04 | Q n/a | call T | 60.3s
+  table T_PROB=0.05 seed 2 word null=quire lines 4130 units 4778 | S 65088.7 null 64483.1+-88.0 z 6.88 p 0.0099 | N_T 74 {'p': 53, 't': 21} null mean 13.35 q99 24.01 | Q n/a | call T | 59.4s
+  table T_PROB=0.05 seed 1 word null=quire lines 4130 units 4879 | S 65660.6 null 64924.6+-90.4 z 8.14 p 0.0099 | N_T 80 {'p': 60, 't': 20} null mean 13.48 q99 20.03 | Q n/a | call T | 60.0s
+  content C_LAMBDA=0.2 seed 0 word null=quire lines 4130 units 4423 | S 67278.1 null 65684.1+-98.0 z 16.26 p 0.0099 | N_T 14 {'p': 11, 't': 3} null mean 12.80 q99 22.03 | Q 0.2533 (null mean 0.2144, q99 0.2266, p 0.0099) | call C | 68.9s
+  content C_LAMBDA=0.2 seed 1 word null=quire lines 4130 units 4408 | S 67272.3 null 65949.1+-98.8 z 13.40 p 0.0099 | N_T 12 {'p': 11, 't': 1} null mean 12.66 q99 20.01 | Q 0.2496 (null mean 0.2125, q99 0.2221, p 0.0099) | call C | 68.4s
+  content C_LAMBDA=0.1 seed 0 word null=quire lines 4130 units 4658 | S 66493.2 null 66302.8+-91.6 z 2.08 p 0.0396 | N_T 12 {'p': 11, 't': 1} null mean 12.91 q99 20.01 | Q n/a | call P | 52.2s
+  content C_LAMBDA=0.2 seed 2 word null=quire lines 4130 units 4430 | S 65798.5 null 64470.4+-113.7 z 11.68 p 0.0099 | N_T 17 {'p': 15, 't': 2} null mean 12.77 q99 20.03 | Q 0.2605 (null mean 0.2153, q99 0.2229, p 0.0099) | call C | 62.6s
+  content C_LAMBDA=0.1 seed 1 word null=quire lines 4130 units 4661 | S 67165.9 null 66990.2+-90.8 z 1.94 p 0.0198 | N_T 12 {'p': 11, 't': 1} null mean 12.47 q99 20.00 | Q n/a | call P | 53.5s
+  content C_LAMBDA=0.1 seed 2 word null=quire lines 4130 units 4617 | S 65354.5 null 65398.0+-90.4 z -0.48 p 0.6832 | N_T 9 {'p': 9, 't': 0} null mean 13.53 q99 22.04 | Q n/a | call P | 53.0s
+
+POWER core table T_PROB=0.1       expect T: correct 1/3 calls PXT
+POWER core table T_PROB=0.05      expect T: correct 0/3 calls PPX
+POWER core content C_LAMBDA=0.2   expect C: correct 0/3 calls PXP
+POWER core content C_LAMBDA=0.1   expect C: correct 0/3 calls PPP
+POWER word table T_PROB=0.1       expect T: correct 3/3 calls TTT
+POWER word table T_PROB=0.05      expect T: correct 3/3 calls TTT
+POWER word content C_LAMBDA=0.2   expect C: correct 3/3 calls CCC
+POWER word content C_LAMBDA=0.1   expect C: correct 0/3 calls PPP
+finished 2026-10-18 22:22:18 PDT

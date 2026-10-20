@@ -1,0 +1,18 @@
+# s128 F0-N2-REAL; count list data/fixture/madeup_counts.tsv sha256 a3c656ddc3ebb69327c6915fa3d0c0cd526c54d997a6ba27dfa9965d53afe871; pages 112; strata 28; held_in_place 2; widened 0; Egerton chapters 523
+seed 20261046 start 125 examined 138 short_skip 26 NAME: S 0.375 N1q99 0.250 N2q99 0.259 fire 1 RARITY: S 0.125 N1q99 0.179 N2q99 0.170 fire 0
+seed 20261047 start 148 examined 139 short_skip 27 NAME: S 0.357 N1q99 0.259 N2q99 0.250 fire 1 RARITY: S 0.143 N1q99 0.179 N2q99 0.170 fire 0
+seed 20261048 start 133 examined 132 short_skip 20 NAME: S 0.357 N1q99 0.277 N2q99 0.268 fire 1 RARITY: S 0.098 N1q99 0.205 N2q99 0.188 fire 0
+seed 20261049 start 154 examined 148 short_skip 36 NAME: S 0.312 N1q99 0.250 N2q99 0.214 fire 1 RARITY: S 0.098 N1q99 0.179 N2q99 0.161 fire 0
+seed 20261050 start 80 examined 138 short_skip 26 NAME: S 0.464 N1q99 0.312 N2q99 0.286 fire 1 RARITY: S 0.107 N1q99 0.214 N2q99 0.205 fire 0
+seed 20261051 start 334 examined 133 short_skip 21 NAME: S 0.348 N1q99 0.277 N2q99 0.259 fire 1 RARITY: S 0.134 N1q99 0.205 N2q99 0.179 fire 0
+seed 20261052 start 330 examined 137 short_skip 25 NAME: S 0.348 N1q99 0.268 N2q99 0.232 fire 1 RARITY: S 0.125 N1q99 0.196 N2q99 0.170 fire 0
+seed 20261053 start 438 examined 144 short_skip 32 NAME: S 0.348 N1q99 0.259 N2q99 0.232 fire 1 RARITY: S 0.089 N1q99 0.161 N2q99 0.161 fire 0
+seed 20261054 start 376 examined 163 short_skip 51 NAME: S 0.295 N1q99 0.250 N2q99 0.250 fire 1 RARITY: S 0.062 N1q99 0.196 N2q99 0.179 fire 0
+seed 20261055 start 519 examined 129 short_skip 17 NAME: S 0.473 N1q99 0.295 N2q99 0.277 fire 1 RARITY: S 0.107 N1q99 0.214 N2q99 0.205 fire 0
+seed 20261056 start 269 examined 144 short_skip 32 NAME: S 0.429 N1q99 0.277 N2q99 0.259 fire 1 RARITY: S 0.143 N1q99 0.223 N2q99 0.196 fire 0
+seed 20261057 start 270 examined 143 short_skip 31 NAME: S 0.429 N1q99 0.277 N2q99 0.259 fire 1 RARITY: S 0.143 N1q99 0.223 N2q99 0.188 fire 0
+seed 20261058 start 1 examined 130 short_skip 18 NAME: S 0.500 N1q99 0.304 N2q99 0.295 fire 1 RARITY: S 0.107 N1q99 0.188 N2q99 0.161 fire 0
+seed 20261059 start 381 examined 158 short_skip 46 NAME: S 0.268 N1q99 0.241 N2q99 0.250 fire 1 RARITY: S 0.062 N1q99 0.188 N2q99 0.170 fire 0
+seed 20261060 start 344 examined 140 short_skip 28 NAME: S 0.286 N1q99 0.268 N2q99 0.250 fire 1 RARITY: S 0.089 N1q99 0.205 N2q99 0.179 fire 0
+NAME fires 15/15 (need >= 10); RARITY fires 0/15 (need <= 5)
+CALL_F0N2_REAL PASS

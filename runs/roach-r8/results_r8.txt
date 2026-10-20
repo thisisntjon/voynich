@@ -1,0 +1,119 @@
+r8.py mode=real run at (clock): 2026-10-18T13:13:45-07:00
+r8.py sha256: d5fe0de371e44576ab4e2caeb76cc9ce617ba0b4b640c5d54a226fbe63a722c6
+r7.py (local import) sha256: 0d5e65db45b3c410bfbcab5b56d45adaab09b09c9af007b3546538a5b9f69b96
+prereg r8.py d5fe0de371e44576ab4e2caeb76cc9ce617ba0b4b640c5d54a226fbe63a722c6 ; stub match: YES ; r7.py entry match: YES
+data ../dl_ZL/ZL3b-n.txt bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc
+data ../r3/dl_PG18837/pg18837.txt 8bae4d88747b318b58ea193f981766fed337ddf613df452c1a06d72c9af75ffd
+Latin letter stream: 194108 letters
+Voynich-slot S2 MDL affixes: ['o', 'qo', 'y', 'cho', 'ch', 'sh', 'che', 'she', 's', 'd', 'l', 'ol', 'q'] ; ['s', 'aiin', 'ar', 'y', 'or', 'ain', 'al', 'ol', 'dy', 'ody', 'o', 'eey', 'edy', 'ey', 'eedy']
+Setting A: unit=1 h=3 lengths=(2, 3), 23 plaintext units; cipher S2 MDL affixes: ['q', 'sh', 'ch', 's', 'r', 'y', 'l', 'd', 'o', 'qo'] ; []
+   A/S1           fold: cipher(a) vs voy(a) | cipher R(1) vs voy R(1) | supports
+      A    +0.2719 vs +0.0391 | 0.480 vs 1.133 | True
+      B    +0.2321 vs -0.0743 | 0.655 vs 1.117 | True
+      C    +0.2327 vs +0.0150 | 0.504 vs 1.282 | True
+      D    +0.2507 vs +0.0347 | 0.323 vs 1.171 | True
+      E    +0.2540 vs -0.0043 | 0.516 vs 1.143 | True
+      F    +0.2839 vs -0.0095 | 0.445 vs 1.224 | True
+      G    +0.2124 vs -0.0503 | 0.793 vs 1.226 | True
+      H    +0.2220 vs +0.0189 | 0.655 vs 1.262 | True
+      I    +0.0913 vs -0.1634 | 0.837 vs 1.135 | True
+      M    +0.4140 vs +0.0198 | 0.525 vs 1.136 | True
+      N    +0.3013 vs +0.0396 | 0.340 vs 1.202 | True
+      O    +0.2662 vs -0.0686 | 0.408 vs 0.846 | True
+      Q    +0.1892 vs -0.0639 | 0.366 vs 1.056 | True
+      S    +0.2018 vs -0.0453 | 0.621 vs 1.226 | True
+      T    +0.4203 vs +0.0269 | 0.531 vs 1.205 | True
+   A/S1           folds supporting 15 of 15 (threshold 8) -> SUPPORTS
+   A/S2           fold: cipher(a) vs voy(a) | cipher R(1) vs voy R(1) | supports
+      A    -0.0761 vs +0.0702 | 0.577 vs 1.174 | False
+      B    -0.1044 vs +0.0697 | 0.721 vs 1.077 | False
+      C    -0.0704 vs +0.0065 | 0.569 vs 1.066 | False
+      D    -0.1012 vs +0.0029 | 0.245 vs 0.992 | False
+      E    -0.1067 vs +0.0215 | 0.298 vs 0.933 | False
+      F    -0.0875 vs +0.0084 | 0.410 vs 1.248 | False
+      G    -0.0755 vs -0.0026 | 0.701 vs 1.192 | False
+      H    -0.1032 vs -0.0280 | 0.581 vs 1.069 | False
+      I    -0.1063 vs -0.0386 | 0.437 vs 1.162 | False
+      M    -0.0460 vs +0.0802 | 0.614 vs 1.016 | False
+      N    -0.0906 vs +0.0578 | 0.331 vs 1.092 | False
+      O    -0.1115 vs +0.0184 | 0.218 vs 0.793 | False
+      Q    -0.1156 vs -0.0023 | 0.403 vs 1.062 | False
+      S    -0.1161 vs +0.0006 | 0.682 vs 1.196 | False
+      T    -0.0393 vs +0.0823 | 0.491 vs 1.242 | False
+   A/S2           folds supporting 0 of 15 (threshold 8) -> does not support
+Setting B: unit=1 h=6 lengths=(2, 3), 23 plaintext units; cipher S2 MDL affixes: ['q', 'ch', 'sh', 'l', 'r', 's', 'y', 'd', 'o', 'qo'] ; []
+   B/S1           fold: cipher(a) vs voy(a) | cipher R(1) vs voy R(1) | supports
+      A    +0.1799 vs +0.0391 | 0.599 vs 1.133 | True
+      B    +0.1372 vs -0.0743 | 0.672 vs 1.117 | True
+      C    +0.1376 vs +0.0150 | 0.263 vs 1.282 | True
+      D    +0.1476 vs +0.0347 | 0.778 vs 1.171 | True
+      E    +0.1384 vs -0.0043 | 0.264 vs 1.143 | True
+      F    +0.1051 vs -0.0095 | 0.292 vs 1.224 | True
+      G    +0.1195 vs -0.0503 | 0.645 vs 1.226 | True
+      H    +0.1077 vs +0.0189 | 0.452 vs 1.262 | True
+      I    +0.1145 vs -0.1634 | 0.370 vs 1.135 | True
+      M    +0.2875 vs +0.0198 | 0.543 vs 1.136 | True
+      N    +0.1994 vs +0.0396 | 0.379 vs 1.202 | True
+      O    +0.1396 vs -0.0686 | 0.576 vs 0.846 | True
+      Q    +0.0887 vs -0.0639 | 0.000 vs 1.056 | True
+      S    +0.1163 vs -0.0453 | 0.944 vs 1.226 | True
+      T    +0.3229 vs +0.0269 | 0.597 vs 1.205 | True
+   B/S1           folds supporting 15 of 15 (threshold 8) -> SUPPORTS
+   B/S2           fold: cipher(a) vs voy(a) | cipher R(1) vs voy R(1) | supports
+      A    -0.0268 vs +0.0702 | 1.237 vs 1.174 | False
+      B    -0.0399 vs +0.0697 | 0.714 vs 1.077 | False
+      C    -0.0573 vs +0.0065 | 0.174 vs 1.066 | False
+      D    -0.0358 vs +0.0029 | 0.206 vs 0.992 | False
+      E    -0.0293 vs +0.0215 | 0.398 vs 0.933 | False
+      F    +0.0065 vs +0.0084 | 0.394 vs 1.248 | False
+      G    -0.0141 vs -0.0026 | 0.168 vs 1.192 | False
+      H    -0.0258 vs -0.0280 | 0.259 vs 1.069 | True
+      I    -0.0631 vs -0.0386 | 0.904 vs 1.162 | False
+      M    -0.0174 vs +0.0802 | 0.231 vs 1.016 | False
+      N    -0.0542 vs +0.0578 | 0.279 vs 1.092 | False
+      O    -0.0190 vs +0.0184 | 0.426 vs 0.793 | False
+      Q    -0.0532 vs -0.0023 | 0.000 vs 1.062 | False
+      S    -0.0537 vs +0.0006 | 0.358 vs 1.196 | False
+      T    -0.0173 vs +0.0823 | 0.703 vs 1.242 | False
+   B/S2           folds supporting 1 of 15 (threshold 8) -> does not support
+Setting C: unit=2 h=2 lengths=(3, 4), 362 plaintext units; cipher S2 MDL affixes: ['q', 'ch', 'sh', 'y', 's', 'l', 'r', 'd', 'qo', 'o'] ; ['aiin', 'ain', 'eey', 'edy', 'am', 'al', 'ar', 'ol', 'or', 'iin', 'g', 'ey', 's', 'dy', 'm']
+   C/S1           fold: cipher(a) vs voy(a) | cipher R(1) vs voy R(1) | supports
+      A    +0.0866 vs +0.0391 | 0.745 vs 1.133 | True
+      B    +0.1057 vs -0.0743 | 0.717 vs 1.117 | True
+      C    +0.0936 vs +0.0150 | 0.647 vs 1.282 | True
+      D    +0.0542 vs +0.0347 | 0.373 vs 1.171 | True
+      E    +0.0851 vs -0.0043 | 0.000 vs 1.143 | True
+      F    +0.1411 vs -0.0095 | 0.996 vs 1.224 | True
+      G    +0.0685 vs -0.0503 | 0.000 vs 1.226 | True
+      H    +0.0494 vs +0.0189 | 0.428 vs 1.262 | True
+      I    -0.1650 vs -0.1634 | 0.000 vs 1.135 | False
+      M    +0.1219 vs +0.0198 | 0.180 vs 1.136 | True
+      N    +0.0601 vs +0.0396 | 0.575 vs 1.202 | True
+      O    +0.0242 vs -0.0686 | 0.302 vs 0.846 | True
+      Q    +0.0595 vs -0.0639 | 0.000 vs 1.056 | True
+      S    +0.0381 vs -0.0453 | 0.000 vs 1.226 | True
+      T    +0.1611 vs +0.0269 | 0.634 vs 1.205 | True
+   C/S1           folds supporting 14 of 15 (threshold 8) -> SUPPORTS
+   C/S2           fold: cipher(a) vs voy(a) | cipher R(1) vs voy R(1) | supports
+      A    +0.0292 vs +0.0702 | 0.878 vs 1.174 | False
+      B    +0.0936 vs +0.0697 | 0.671 vs 1.077 | True
+      C    +0.0845 vs +0.0065 | 1.077 vs 1.066 | False
+      D    +0.0224 vs +0.0029 | 0.398 vs 0.992 | True
+      E    +0.0713 vs +0.0215 | 0.000 vs 0.933 | True
+      F    +0.1074 vs +0.0084 | 1.211 vs 1.248 | True
+      G    +0.0339 vs -0.0026 | 0.000 vs 1.192 | True
+      H    +0.0132 vs -0.0280 | 0.288 vs 1.069 | True
+      I    -0.2019 vs -0.0386 | 0.000 vs 1.162 | False
+      M    +0.0698 vs +0.0802 | 0.143 vs 1.016 | False
+      N    +0.0457 vs +0.0578 | 0.454 vs 1.092 | False
+      O    -0.0116 vs +0.0184 | 0.354 vs 0.793 | False
+      Q    +0.0753 vs -0.0023 | 0.000 vs 1.062 | True
+      S    +0.0398 vs +0.0006 | 0.000 vs 1.196 | True
+      T    +0.0992 vs +0.0823 | 0.631 vs 1.242 | True
+   C/S2           folds supporting 9 of 15 (threshold 8) -> SUPPORTS
+CALL S1: settings supporting 3 of 3 -> claim HOLDS
+CALL S2: settings supporting 1 of 3 -> claim NOT HOLDS
+
+CALLS
+S1: claim HOLDS ; S2: claim NOT HOLDS ; segmenters DISAGREE
+VERDICT: S1 HOLDS, S2 NOT HOLDS

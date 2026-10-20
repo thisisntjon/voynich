@@ -1,0 +1,136 @@
+--- vx01_bf_rk.py
++++ vx01_bf_rk_c2.py
+@@ -1,4 +1,4 @@
+-"""vx01_bf_rk.py -- nuisance spread r_k,q on the REAL whole-word text (script 6b). UNVERIFIED.
++"""vx01_bf_rk_c2.py -- nuisance spread r_k,q on the REAL whole-word text (script 6b). UNVERIFIED.
+ 
+ Plan: PLAN-X01-B-FALLBACK, cited only by sha256 4ed0314a7c8aef4d925dee4fbab3ef8eca3a005352062563e3708a0273e63f3e
+ (section 3; statistics section 2; load list section 8). Base plan PLAN-X01-v5.1 af4fee6b847caca46afd2456818d510e817cb09699b91034270ac7f4a6a75393.
+@@ -12,8 +12,8 @@
+ Modes
+   --dev        pre-freeze run (also the freeze trace for this script): writes runs/vx01_bf_rk/dev_<utc>/ only.
+   --gate       the ONE frozen run (needs the stub): writes vx01_bf_rk_table.json and results_vx01_bf_rk.txt.
+-  --pin-check  environment pin check only; one line to vx01_bf_rk_pin_checks.log (not in the stub).
+-  --write-stub builds vx01_bf_rk.prereg.sha256 from the dev trace (refuses if it exists). Needs --plan PATH.
++  --pin-check  environment pin check only; one line to vx01_bf_rk_c2_pin_checks.log (not in the stub).
++  --write-stub builds vx01_bf_rk_c2.prereg.sha256 from the dev trace (refuses if it exists). Needs --plan PATH.
+ Single process. BelowNormal. Audit hook on open + process-creation events in every mode (rules (a), (c), (d)).
+ """
+ import sys
+@@ -36,7 +36,7 @@
+     sys.path.insert(0, ROOT_STR)
+ import vx01_common as C  # noqa: E402
+ 
+-# ===== BEGIN SHARED BLOCK (byte-identical in vx01_bf_rk.py and vx01_b0_fitter_recovery.py) =====
++# ===== BEGIN SHARED BLOCK (byte-identical in vx01_bf_rk_c2.py and vx01_b0_fitter_recovery_c2.py) =====
+ # Plan cited ONLY by sha256 (its title line still reads v4; IV-REVIEW-X01-B-FALLBACK-v5 nit 1).
+ BF_PLAN_SHA256 = "4ed0314a7c8aef4d925dee4fbab3ef8eca3a005352062563e3708a0273e63f3e"
+ V51_PLAN_SHA256 = "af4fee6b847caca46afd2456818d510e817cb09699b91034270ac7f4a6a75393"
+@@ -52,6 +52,7 @@
+     ("pyarrow", "22.0.0"), ("Pillow", "12.1.0"), ("lxml", "6.0.2"), ("psutil", "7.2.1"), ("defusedxml", "0.7.1"),
+     ("python-dateutil", "2.9.0.post0"), ("pytz", "2025.2"), ("six", "1.17.0"), ("tqdm", "4.67.1"),
+     ("typing_extensions", "4.15.0"), ("colorama", "0.4.6"), ("charset-normalizer", "3.4.4"), ("pywin32", "311"),
++    ("setuptools", "65.5.0"),   # c2 (IV code-1 must-fix 3): _distutils_hack, loaded at every start by distutils-precedence.pth
+ ])
+ # Module -> distribution exceptions named in the plan: torchgen belongs to torch; pywin32_bootstrap maps to no
+ # distribution and is pinned through pywin32 311 plus a hash of its file (taken at freeze).
+@@ -325,29 +326,71 @@
+         return float("nan")
+ 
+ 
++def canon_dist(name):
++    """PEP 503 canonical distribution name: lower case; runs of '-', '_' and '.' become one '-'
++    (c2, IV code-1 must-fix 2a: packages_distributions gives 'pillow', the pin list says 'Pillow')."""
++    s = str(name).lower().replace("_", "-").replace(".", "-")
++    while "--" in s:
++        s = s.replace("--", "-")
++    return s
++
++
++PIN_CANON = {canon_dist(d): d for d in PIN_DISTS}
++# Modules pinned by file hash, not by a distribution (c2, must-fix 2c): sitecustomize (plan section 8 rule (d)).
++HASH_PINNED_MODULES = frozenset(["sitecustomize"])
++
++
++def dist_pinned(d):
++    return canon_dist(d) in PIN_CANON
++
++
+ def run_path_distributions():
+-    """Distributions of every site-packages module in sys.modules (by distribution name), plus module names that
+-    map to no distribution. Read-only (importlib.metadata)."""
++    """Canonical names of the distributions of every site-packages module in sys.modules, plus the modules that map
++    to no distribution. Read-only (importlib.metadata). A module is mapped (c2, must-fix 2b), in this order:
++    (1) the top name of its __name__, then of its sys.modules key, through the plan's named exceptions and
++    packages_distributions(); (2) the first path part of its file under the site-packages root (the folder named
++    site-packages), through packages_distributions(). So scipy.sparse._csparsetools (key '_csparsetools') maps to
++    scipy and sklearn/_loss/_loss.pyd to scikit-learn. sitecustomize is hash-pinned and is skipped."""
+     import importlib.metadata as md
+     pdist = md.packages_distributions()
++    roots = []
++    for p in sys.path:
++        if p and os.path.basename(os.path.normpath(p)).lower() == "site-packages":
++            roots.append(os.path.abspath(p))
+     sp = [os.path.normcase(os.path.abspath(p)) for p in sys.path if p and "site-packages" in p.lower()]
+     dists, unmapped = set(), set()
+-    for name, m in list(sys.modules.items()):
++    for key, m in list(sys.modules.items()):
+         f = getattr(m, "__file__", None)
+         if not f or not os.path.isabs(f):
+             continue  # relative __file__ (torch _ops.py / _classes.py) are filtered, plan section 8 rule (a)
+         af = os.path.normcase(os.path.abspath(f))
+         if not any(af.startswith(s + os.sep) for s in sp):
+             continue
+-        top = name.split(".")[0]
+-        if top in PIN_MODULE_DIST:
+-            dists.add(PIN_MODULE_DIST[top])
++        names = []
++        for n in (getattr(m, "__name__", None), key):
++            if isinstance(n, str) and n and n.split(".")[0] not in names:
++                names.append(n.split(".")[0])
++        raw = os.path.abspath(f)
++        for r in roots:
++            if os.path.normcase(raw).startswith(os.path.normcase(r) + os.sep):
++                part = raw[len(r) + 1:].split(os.sep)[0].split(".")[0]
++                if part and part not in names:
++                    names.append(part)
++                break
++        if any(n in HASH_PINNED_MODULES for n in names):
+             continue
+-        ds = pdist.get(top)
+-        if ds:
+-            dists.update(ds)
++        found = None
++        for n in names:
++            if n in PIN_MODULE_DIST:
++                found = [PIN_MODULE_DIST[n]]
++                break
++            if pdist.get(n):
++                found = pdist[n]
++                break
++        if found:
++            dists.update(canon_dist(x) for x in found)
+         else:
+-            unmapped.add(top)
++            unmapped.add(names[0] if names else key)
+     return sorted(dists), sorted(unmapped)
+ 
+ 
+@@ -702,7 +745,7 @@
+     C.append_chained(PIN_LOG, env_log_record(env, "freeze (--write-stub)", bad))
+     if bad:
+         C.refuse("NO freeze: environment pin mismatch: %s" % ", ".join(bad))
+-    out = ["# vx01_bf_rk.prereg.sha256 -- UNVERIFIED until the Independent Verifier signs",
++    out = ["# vx01_bf_rk_c2.prereg.sha256 -- UNVERIFIED until the Independent Verifier signs",
+            "# plan PLAN-X01-B-FALLBACK cited by sha256 only (title reads v4): bf_plan_sha256 below",
+            "plan_sha256=%s" % V51_PLAN_SHA256, "bf_plan_sha256=%s" % BF_PLAN_SHA256,
+            "script_sha256=%s" % me, "common_sha256=%s" % C.sha256_file(C.__file__),
+@@ -756,7 +799,7 @@
+     if tr["proc_events"]:
+         problems.append("%d process events" % len(tr["proc_events"]))
+     for d in tr["dists"]:
+-        if d not in PIN_DISTS:
++        if not dist_pinned(d):
+             problems.append("unlisted distribution %s" % d)
+     for m in tr["unmapped_modules"]:
+         problems.append("module %s maps to no distribution" % m)

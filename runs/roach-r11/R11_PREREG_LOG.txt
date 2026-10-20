@@ -1,0 +1,6 @@
+r11 log
+fixture run 1 13:59:49 PDT rev0 OK; loader dry run 14:00 found ballads marker issue; revision 1; dry run 14:01 OK; fixture run 2 14:02 OK
+first stub attempt 14:02 broken by spaces in CREMMA file names; kept as r11.prereg.sha256.BROKEN-unquoted-paths-1402
+FREEZE at (clock): 2026-10-18 14:12:10 PDT r11.py 668037abf5c53d809de8a3d80bc07b7e915034a6d4a9335a2674b1259a2e7867
+real run start: 2026-10-18 14:12:10 PDT
+real run end: 2026-10-18 14:16:05 PDT exit=0

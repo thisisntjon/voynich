@@ -1,0 +1,8 @@
+# s126 calibration page choice, written Mon Oct 19 00:33:32 PDT 2026, before any s126 measurement and before any new look at quire M.
+# Disclosure: the s126 calibrator also ran s123 and saw quire M page overviews and crops there (f75r, f77r, f80r, f82v, f84r, f81r, f82r, f84v).
+# Rule: calibration pages come only from outside quire M. Candidates (from manuscript knowledge: pale-blue washes on the
+# Rosettes foldout, the f67-f69 circles and the pharma jars): Yale scans 154/155/156 (f85-86 foldout parts),
+# 120_67r, 122_68r, 124_69r, 160_88r. Thumbnails are viewed first; the pages that actually show pale-blue wash are used.
+# Mon Oct 19 00:33:53 PDT 2026: after viewing thumbnails (contact_0.png, contact_1.png). Chosen positives: 157_85v_and_86r_foldout (Rosettes; pale blue and
+# blue-green washes), 124_69r (blue and green rays with pale blue wash between), 120_67r (blue rays), 160_88r (green leaves, blue-green jars).
+# Rejected: 122_68r (little paint), 156_86v_part (mostly ink), 155 (shared canvas, covered by 157).

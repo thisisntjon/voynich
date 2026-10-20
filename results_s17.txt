@@ -1,0 +1,88 @@
+S17: real-line control corpora, native vs 8-word re-lined, on the v2 scorer (phase-1.md step s17)
+run started Sat Oct 17 20:28:41 PDT 2026 (`date`)
+s17_realline_v2.py sha256=a53ac0c940b02ce619db6bc6941e33c9be7c99779daa527652ca3739c6806806  tools/realline_to_meta.py sha256=215d84952195f0d549ffbb19c9490d69b64b9853c7807fd0b95bafd0c0f8f55b  prereg stub_match=True
+ranges file s15_ranges.json sha256=b995aba64e5baa22524565963d67880287e43e98220a7c3cdd2d136eac6b3fef  scorer scoreboard/run_v2.py sha256=7dfdc9f75de5980a…
+sidecars (10): gib_realline_pooled, gib_realline_pooled_relined8, mhg_nibelungenlied, mhg_nibelungenlied_relined8, oldfrench_roland, oldfrench_roland_relined8, occitan_croisade, occitan_croisade_relined8, italian_dante, italian_dante_relined8
+other sidecars present in controls_realline/ and NOT scored here (s18's): cremma_Arras-861.meta.json, cremma_Arras-861_marks.meta.json, cremma_BGO-511.meta.json, cremma_BGO-511_marks.meta.json, cremma_BIS-193.meta.json, cremma_BIS-193_marks.meta.json, cremma_CCCC-MSS-165.meta.json, cremma_CCCC-MSS-165_marks.meta.json, cremma_CCCC-MSS-236.meta.json, cremma_CCCC-MSS-236_marks.meta.json, cremma_CLM13027.meta.json, cremma_CLM13027_marks.meta.json, cremma_Egerton821.meta.json, cremma_Egerton821_marks.meta.json, cremma_H318.meta.json, cremma_H318_marks.meta.json, cremma_Latin16195.meta.json, cremma_Latin16195_marks.meta.json, cremma_Latin6395.meta.json, cremma_Latin6395_marks.meta.json, cremma_Latin8236.meta.json, cremma_Latin8236_marks.meta.json, cremma_LaurPlut33.31.meta.json, cremma_LaurPlut33.31_marks.meta.json, cremma_LaurPlut39.34.meta.json, cremma_LaurPlut39.34_marks.meta.json, cremma_LaurPlut53.08.meta.json, cremma_LaurPlut53.08_marks.meta.json, cremma_LaurPlut53.09.meta.json, cremma_LaurPlut53.09_marks.meta.json, cremma_Mazarine915.meta.json, cremma_Mazarine915_marks.meta.json, cremma_PalLat373.meta.json, cremma_PalLat373_marks.meta.json, cremma_Phi_10a135.meta.json, cremma_Phi_10a135_marks.meta.json, cremma_SBB_PK_Hdschr25.meta.json, cremma_SBB_PK_Hdschr25_marks.meta.json, cremma_UBL758.meta.json, cremma_UBL758_marks.meta.json, cremma_WettF0015.meta.json, cremma_WettF0015_marks.meta.json, cremma_all.meta.json, cremma_all_marks.meta.json, cremma_all_relined8.meta.json, cremma_all_relined8_marks.meta.json, cremma_c15.meta.json, cremma_c15_marks.meta.json, cremma_c15_relined8.meta.json, cremma_c15_relined8_marks.meta.json, cremma_prose15.meta.json, cremma_prose15_marks.meta.json, cremma_prose15_relined8.meta.json, cremma_prose15_relined8_marks.meta.json
+
+=== run_v2 --family L --ranges s15_ranges.json, one call per sidecar ===
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/gib_realline_pooled.meta.json --family L --ranges ./s15_ranges.json --out ./results_s17_gib_realline_pooled.txt
+    # pages=38 lines=1617 tokens=10023 types=6839 sections=['gib'] hands=38 langs=['?']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/gib_realline_pooled_relined8.meta.json --family L --ranges ./s15_ranges.json --out ./results_s17_gib_realline_pooled_relined8.txt
+    # pages=38 lines=1253 tokens=10023 types=6839 sections=['gib'] hands=38 langs=['?']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/mhg_nibelungenlied.meta.json --family L --ranges ./s15_ranges.json --out ./results_s17_mhg_nibelungenlied.txt
+    # pages=13 lines=2981 tokens=25000 types=3478 sections=['1. Aventiure', '10. Aventiure', '11. Aventiure', '12. Aventiure', '13. Aventiure', '2. Aventiure', '3. Aventiure', '4. Aventiure'] hands=1 langs=['?']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/mhg_nibelungenlied_relined8.meta.json --family L --ranges ./s15_ranges.json --out ./results_s17_mhg_nibelungenlied_relined8.txt
+    # pages=13 lines=3125 tokens=25000 types=3478 sections=['1. Aventiure', '10. Aventiure', '11. Aventiure', '12. Aventiure', '13. Aventiure', '2. Aventiure', '3. Aventiure', '4. Aventiure'] hands=1 langs=['?']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/oldfrench_roland.meta.json --family L --ranges ./s15_ranges.json --out ./results_s17_oldfrench_roland.txt
+    # pages=244 lines=3383 tokens=25004 types=3976 sections=['laisse 1', 'laisse 10', 'laisse 100', 'laisse 101', 'laisse 102', 'laisse 103', 'laisse 104', 'laisse 105'] hands=1 langs=['?']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/oldfrench_roland_relined8.meta.json --family L --ranges ./s15_ranges.json --out ./results_s17_oldfrench_roland_relined8.txt
+    # pages=244 lines=3125 tokens=25000 types=3975 sections=['laisse 1', 'laisse 10', 'laisse 100', 'laisse 101', 'laisse 102', 'laisse 103', 'laisse 104', 'laisse 105'] hands=1 langs=['?']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/occitan_croisade.meta.json --family L --ranges ./s15_ranges.json --out ./results_s17_occitan_croisade.txt
+    # pages=136 lines=2909 tokens=25006 types=4685 sections=['laisse 1', 'laisse 10', 'laisse 100', 'laisse 101', 'laisse 102', 'laisse 103', 'laisse 104', 'laisse 105'] hands=1 langs=['?']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/occitan_croisade_relined8.meta.json --family L --ranges ./s15_ranges.json --out ./results_s17_occitan_croisade_relined8.txt
+    # pages=136 lines=3125 tokens=25000 types=4685 sections=['laisse 1', 'laisse 10', 'laisse 100', 'laisse 101', 'laisse 102', 'laisse 103', 'laisse 104', 'laisse 105'] hands=1 langs=['?']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/italian_dante.meta.json --family L --ranges ./s15_ranges.json --out ./results_s17_italian_dante.txt
+    # pages=27 lines=3470 tokens=25001 types=5250 sections=['front', 'inferno'] hands=1 langs=['?']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/italian_dante_relined8.meta.json --family L --ranges ./s15_ranges.json --out ./results_s17_italian_dante_relined8.txt
+    # pages=26 lines=3125 tokens=25000 types=5249 sections=['inferno'] hands=1 langs=['?']
+
+=== CHARWIN (n5_signature_discrimination.score) and JSD within-line permutation null (a2_position.null, n=30) on load_meta+subsample(25000) pages ===
+  gib_realline_pooled              lines= 1617 tokens= 10023 CHARWIN=+0.3555  jsd_first null=0.0039±0.0011 jsd_last null=0.0051±0.0014  a2.stats==run_v2 jsd (first/last): True/True  n5 POSLOCK==x_position_entropy: True  n5 MORAN==x_moran_I: True
+  gib_realline_pooled_relined8     lines= 1253 tokens= 10023 CHARWIN=+0.3220  jsd_first null=0.0040±0.0011 jsd_last null=0.0041±0.0012  a2.stats==run_v2 jsd (first/last): True/True  n5 POSLOCK==x_position_entropy: True  n5 MORAN==x_moran_I: True
+  mhg_nibelungenlied               lines= 2981 tokens= 25000 CHARWIN=-0.4526  jsd_first null=0.0016±0.0005 jsd_last null=0.0017±0.0005  a2.stats==run_v2 jsd (first/last): True/True  n5 POSLOCK==x_position_entropy: True  n5 MORAN==x_moran_I: True
+  mhg_nibelungenlied_relined8      lines= 3125 tokens= 25000 CHARWIN=-0.4540  jsd_first null=0.0015±0.0004 jsd_last null=0.0014±0.0004  a2.stats==run_v2 jsd (first/last): True/True  n5 POSLOCK==x_position_entropy: True  n5 MORAN==x_moran_I: True
+  oldfrench_roland                 lines= 3383 tokens= 25004 CHARWIN=-0.7448  jsd_first null=0.0019±0.0005 jsd_last null=0.0016±0.0006  a2.stats==run_v2 jsd (first/last): True/True  n5 POSLOCK==x_position_entropy: True  n5 MORAN==x_moran_I: True
+  oldfrench_roland_relined8        lines= 3125 tokens= 25000 CHARWIN=-0.7339  jsd_first null=0.0017±0.0005 jsd_last null=0.0015±0.0004  a2.stats==run_v2 jsd (first/last): True/True  n5 POSLOCK==x_position_entropy: True  n5 MORAN==x_moran_I: True
+  occitan_croisade                 lines= 2909 tokens= 25006 CHARWIN=-0.4877  jsd_first null=0.0017±0.0005 jsd_last null=0.0016±0.0004  a2.stats==run_v2 jsd (first/last): True/True  n5 POSLOCK==x_position_entropy: True  n5 MORAN==x_moran_I: True
+  occitan_croisade_relined8        lines= 3125 tokens= 25000 CHARWIN=-0.4834  jsd_first null=0.0014±0.0004 jsd_last null=0.0017±0.0005  a2.stats==run_v2 jsd (first/last): True/True  n5 POSLOCK==x_position_entropy: True  n5 MORAN==x_moran_I: True
+  italian_dante                    lines= 3470 tokens= 25001 CHARWIN=-0.5499  jsd_first null=0.0013±0.0004 jsd_last null=0.0013±0.0004  a2.stats==run_v2 jsd (first/last): True/True  n5 POSLOCK==x_position_entropy: True  n5 MORAN==x_moran_I: True
+  italian_dante_relined8           lines= 3125 tokens= 25000 CHARWIN=-0.4895  jsd_first null=0.0014±0.0005 jsd_last null=0.0012±0.0004  a2.stats==run_v2 jsd (first/last): True/True  n5 POSLOCK==x_position_entropy: True  n5 MORAN==x_moran_I: True
+
+s2 Part 1 prior parsed from results_s2_u123_controls.txt lines 5-16: 6 corpora (gib_realline_pooled, italian_dante, mhg_nibelungenlied, occitan_croisade, oldfrench_roland, voynich_ZL3b); sha256=801bfe86c0ad49f0…
+
+=== v2 metrics, native vs relined8 (25k-token cap; run_v2 rows + n5 CHARWIN) ===
+corpus                   | mode    | lines  toks  | jsd_first_fg jsd_first_null jsd_first_exc  jsd_last_lg jsd_last_null jsd_last_exc p_init_enrich m_final_enrich cross_excess_eva x_edge_mi_word x_position_entropy    x_moran_I      CHARWIN bake_char3_minus_unigram
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+gib_realline_pooled      | native  |  1617  10023 |       0.0078       0.0039       0.0039       0.0060       0.0051       0.0009       0.9600       0.9800       0.0127       0.0298       2.2426       0.1194       0.3555      -0.8447
+gib_realline_pooled      | relined |  1253  10023 |       0.0038       0.0040      -0.0002       0.0042       0.0041       0.0001       1.1500       1.1700       0.0113       0.0314       2.2426       0.1194       0.3220      -0.8397
+mhg_nibelungenlied       | native  |  2981  25000 |       0.0925       0.0016       0.0909       0.2247       0.0017       0.2230       0.6400       0.5500       0.0792       0.0832       1.9439      -0.1047      -0.4526      -0.2091
+mhg_nibelungenlied       | relined |  3125  25000 |       0.0015       0.0015      -0.0000       0.0010       0.0014      -0.0004       0.8800       1.0400       0.0837       0.0871       1.9439      -0.1047      -0.4540      -0.2098
+oldfrench_roland         | native  |  3383  25004 |       0.0241       0.0019       0.0222       0.0825       0.0016       0.0809       1.3300       1.0500       0.0911       0.0971       2.0028      -0.1413      -0.7448       0.6374
+oldfrench_roland         | relined |  3125  25000 |       0.0011       0.0017      -0.0006       0.0017       0.0015       0.0002       1.0200       1.2500       0.0791       0.0833       2.0028      -0.1418      -0.7339       0.6373
+occitan_croisade         | native  |  2909  25006 |       0.0663       0.0017       0.0646       0.1812       0.0016       0.1796       0.9200       0.0900       0.1084       0.1123       2.0342      -0.1835      -0.4877       0.3181
+occitan_croisade         | relined |  3125  25000 |       0.0019       0.0014       0.0005       0.0012       0.0017      -0.0005       0.8700       0.9600       0.0959       0.0997       2.0343      -0.1835      -0.4834       0.3185
+italian_dante            | native  |  3470  25001 |       0.0337       0.0013       0.0324       0.1648       0.0013       0.1635       1.2200       0.0000       0.1615       0.1672       2.0139      -0.1511      -0.5499       0.1156
+italian_dante            | relined |  3125  25000 |       0.0023       0.0014       0.0009       0.0011       0.0012      -0.0001       1.0400       1.4700       0.1400       0.1442       2.0139      -0.1511      -0.4895       0.0977
+
+=== native minus relined8 per metric (flag >width where s15_ranges.json within_manuscript gives one) ===
+corpus                   | jsd_first_fg jsd_first_null jsd_first_exc  jsd_last_lg jsd_last_null jsd_last_exc p_init_enrich m_final_enrich cross_excess_eva x_edge_mi_word x_position_entropy    x_moran_I      CHARWIN bake_char3_minus_unigram
+gib_realline_pooled      |  +0.0040      -0.0000      +0.0040      +0.0018      +0.0010      +0.0008      -0.1900      -0.1900      +0.0014      -0.0016      +0.0000      +0.0000      +0.0334      -0.0050    
+mhg_nibelungenlied       |  +0.0910      +0.0001      +0.0909      +0.2237      +0.0003      +0.2234      -0.2400      -0.4900      -0.0045      -0.0039      +0.0000      +0.0000      +0.0014      +0.0007    
+oldfrench_roland         |  +0.0230      +0.0002      +0.0228      +0.0808      +0.0001      +0.0807      +0.3100      -0.2000      +0.0120      +0.0137      +0.0000      +0.0005      -0.0109      +0.0000    
+occitan_croisade         |  +0.0644      +0.0003      +0.0641      +0.1800      -0.0001      +0.1801      +0.0500      -0.8700      +0.0125      +0.0126      -0.0000      +0.0000      -0.0043      -0.0004    
+italian_dante            |  +0.0314      -0.0001      +0.0315      +0.1637      +0.0000      +0.1637      +0.1800      -1.4700      +0.0215      +0.0230      +0.0000      -0.0000      -0.0604      +0.0179    
+within_manuscript widths available for: none
+
+=== s2 Part 1 prior (v1 estimator, score.py line_metrics, 25k cap, no 5% skip) beside v2 ===
+corpus                   | mode    | s2 lines toks  JSDf    JSDl    p_init  m_fin  | v2 jsd_first jsd_last p_init  m_fin
+voynich_ZL3b             | native  |  4130  34857  0.1759  0.0820   17.89   16.31 | (v1 reference only)
+voynich_ZL3b             | relined |  4357  34856  0.0010  0.0008    0.98    1.02 | (v1 reference only)
+gib_realline_pooled      | native  |  1559   9974  0.0075  0.0059    0.96    0.98 | 0.0078 0.0060   0.96   0.98
+gib_realline_pooled      | relined |  1246   9968  0.0040  0.0037    1.04    0.98 | 0.0038 0.0042   1.15   1.17
+mhg_nibelungenlied       | native  |  2985  25007  0.0924  0.2254    0.64    0.57 | 0.0925 0.2247   0.64   0.55
+mhg_nibelungenlied       | relined |  3125  25000  0.0020  0.0012    0.50    1.06 | 0.0015 0.0010   0.88   1.04
+oldfrench_roland         | native  |  3595  25001  0.0198  0.0714    1.23    1.22 | 0.0241 0.0825   1.33   1.05
+oldfrench_roland         | relined |  3125  25000  0.0020  0.0019    0.95    0.79 | 0.0011 0.0017   1.02   1.25
+occitan_croisade         | native  |  3063  25007  0.0764  0.1734    0.83    0.09 | 0.0663 0.1812   0.92   0.09
+occitan_croisade         | relined |  3125  25000  0.0019  0.0017    1.01    0.67 | 0.0019 0.0012   0.87   0.96
+italian_dante            | native  |  3000  21529  0.0324  0.1639    1.19    0.00 | 0.0337 0.1648   1.22   0.00
+italian_dante            | relined |  2691  21528  0.0023  0.0012    1.08    1.55 | 0.0023 0.0011   1.04   1.47
+
+max native jsd_first_fg over the 5 real-line corpora on v2 = 0.0925 (mhg_nibelungenlied); < 0.10 (s2 Part 1 outcome-A threshold, re-read on v2; Voynich s2 v1 native = 0.1759)
+gibberish row on real lines: 1617 volunteer lines, 10023 tokens (gib_pooled was 8x20-wrapped, phase-1.md §4)
+n5-vs-run_v2 extras consistency: all equal
+a2_position.stats-vs-run_v2 raw JSD consistency (null estimator applies to the same lines): all equal
+jsd_*_null = mean of 30 within-line shuffles (a2_position.null, Random(0..29)); jsd_*_exc = raw - null; null sd printed in the CHARWIN/JSD block above
+done-when: results_s17.txt lists 5 real-line corpora native and relined8 on v2 metrics, gibberish row on real lines -> MET
+run finished Sat Oct 17 20:30:41 PDT 2026 (`date`)

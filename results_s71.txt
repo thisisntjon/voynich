@@ -1,0 +1,198 @@
+s71 -- Weakened Table-and-Grille (WTG) & Sticky-Table Naibbe (S1.5) LOQO Evaluation
+date: 2026-10-18 02:48:40
+stub_match: True
+sha256 s71_weakened_grille_and_sticky_naibbe_loqo.py: 9b4f024792c778ae300fd14d7d1e85f03243d50964b1f7f61ba09f1553c11a18
+sha256 s71_weakened_grille_and_sticky_naibbe_loqo.prereg.sha256: 030f3adce7d6f39f3eb30f0ce9f0b54f3da740d9b70fbb25707fdba9828eb563
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  local import s64_naibbe_taxonomy.py sha256=6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3
+  local import s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  local import s71_weakened_grille_and_sticky_naibbe_loqo.py sha256=9b4f024792c778ae300fd14d7d1e85f03243d50964b1f7f61ba09f1553c11a18
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+python 3.11.9; numpy 2.4.6; SEED=20261017; NULL_SEED=20261018
+WTG frozen parameters: {'p_rep': 0.15, 'tau': 12.0, 'gamma': 0.35, 'rho': 0.55, 'gamma_comp': 0.08, 'p_gal_reset': 0.35, 'K': 12, 'M_cand': 6, 'W': 20}
+
+================================================================================
+PART 1 (Dot 22 / L-159): Sticky-Table Naibbe (Naibbe-S1.5) vs Default Naibbe
+================================================================================
+1A. Algebraic Structure of Greshko's Naibbe Tables (Naibbe_Cipher.xlsx):
+  - Bigram prefix piece pre(table, letter1): mean distinct strings per letter1 across the 6 tables = 6.00 (min=6, max=6)
+  - Bigram suffix piece suf(table, letter2): mean distinct strings per letter2 across the 6 tables = 6.00 (by table: {'alpha': 23, 'beta1': 23, 'beta2': 23, 'beta3': 23, 'gamma1': 23, 'gamma2': 23})
+  - Unigram word uni(table, letter):         mean distinct strings per letter across the 6 tables = 5.96 (by table: {'alpha': 23, 'beta1': 23, 'beta2': 23, 'beta3': 23, 'gamma1': 23, 'gamma2': 23})
+  - Under Voynich ZL3b SlotSegmenter: for bigrams (52.8% of tokens), fixing plaintext letter1 and varying table t keeps the segmented prefix P identical 14.4% of the time, whereas fixing table t and varying plaintext letter1 shares P only 12.8% of the time!
+  - For unigrams (47.2% of tokens), fixing table t across different letters shares the segmented prefix P 37.8% of the time (vs 8.7% across tables).
+  -> MECHANISTIC CONSEQUENCE: In Naibbe bigrams (pre(t1, a) + suf(t2, b)), the prefix is locked to the 1st plaintext letter `a`, while the table choice changes the core/suffix `respace`! Only unigram slots (47.2% of tokens, so 0.472^2 = 22.3% of adjacent token pairs) carry table-driven prefix families (`qok/ok/qot/ot/olk/sh`).
+
+1B. s55 Wrapper-Free Features (8 features) & Distance to Voynich in s55 z-Space:
+  Text / Variant                 f1_core_F1 f2_core_co f3_core_ga f4_prefix_ f5a_core_c f5b_core_h f6_core_se f7_frame_c  d(ZL3b) d(CODE)  d(GEN) P(CODE)
+  Voynich_ZL3b                      +0.0054    -0.0528    -0.1622    +0.0999    +0.5732    +0.7015    +0.0221    +1.7925    0.000   3.985   3.619   0.182
+  Voynich_RF1b                      +0.0087    -0.0500    -0.1379    +0.0951    +0.5833    +0.6825    +0.0222    +1.7798    0.351   3.881   3.509   0.169
+  Voynich_IT2a                      +0.0141    -0.0508    -0.1297    +0.0961    +0.6063    +0.7111    +0.0210    +1.7713    0.405   3.845   3.441   0.221
+  Naibbe_default_latin_cremma       +0.0204    +0.0333    -0.3100    -0.0172    +0.8109    +0.6221    +0.0021    +1.4956    4.635   2.565   2.237   0.376
+  Naibbe_line_sticky_latin_cremma    +0.0387    +0.0727    -0.2095    +0.1054    +0.8326    +0.6083    +0.0005    +1.8865    4.919   1.796   1.641   0.565
+  Naibbe_line_lock_latin_cremma     +0.0478    +0.0428    -0.0372    +0.2736    +0.9057    +0.5963    +0.0042    +2.1545    5.015   2.326   2.555   0.779
+  Naibbe_page_bias_latin_cremma     +0.0076    +0.0108    -0.3532    -0.0080    +0.7733    +0.6700    +0.0011    +1.4682    4.492   2.831   2.472   0.384
+  Naibbe_default_italian_dante      +0.0287    +0.0391    -0.2847    -0.0179    +0.8632    +0.5660    -0.0008    +1.6439    5.418   2.418   2.548   0.510
+  Naibbe_line_sticky_italian_dante    +0.0709    +0.1067    -0.0772    +0.1143    +0.8706    +0.5717    -0.0015    +2.0211    5.839   2.599   2.494   0.613
+  Naibbe_line_lock_italian_dante    +0.1408    +0.1027    +0.3367    +0.2602    +0.9434    +0.5200    -0.0028    +2.1279    7.240   4.494   4.229   0.625
+  Naibbe_page_bias_italian_dante    +0.0264    +0.0523    -0.3358    -0.0024    +0.8636    +0.5706    +0.0023    +1.5740    5.052   2.476   2.427   0.450
+  WTG_ZL3b                          +0.0062    -0.1112    -0.2417    +0.1343    +0.7775    +0.6253    +0.0117    +1.7265    2.830   2.311   2.686   0.550
+  WTG_RF1b                          +0.0104    -0.0978    -0.2492    +0.1072    +0.7738    +0.6379    +0.0146    +1.7120    2.347   2.552   2.801   0.528
+  WTG_IT2a                          +0.0090    -0.1186    -0.2350    +0.0919    +0.7447    +0.6390    +0.0129    +1.6938    2.502   2.536   2.804   0.490
+
+1C. s69 Prefix-Memory Profile of Sticky-Table Naibbe (S1.5) vs Voynich:
+  Text / Variant                   M1 (f4)     M2-M1     M3-M1   M7(cls)  M8-M7_ex     b_pos     a_pos    k4/k1  Calls (C1,C2,C3p,C4p,C5)
+  Voynich_ZL3b                     +0.0999   -0.1801   -0.4799   +0.6881   +0.0781   -0.0674   +0.0432   +0.223  C1:T C2:F C3p:T C4p:F C5:T
+  Voynich_RF1b                     +0.0951   -0.1872   -0.4829   +0.6818   +0.0787   -0.0922   +0.0306   +0.130  C1:T C2:F C3p:T C4p:F C5:T
+  Voynich_IT2a                     +0.0961   -0.1464   -0.4534   +0.6437   +0.0764   -0.0420   +0.0452   +0.209  C1:T C2:F C3p:T C4p:F C5:T
+  Naibbe_default_latin_cremma      -0.0172   -0.1766   -0.4539   +0.6933   +0.0032   -0.1157   -0.0256   +2.073  C1:T C2:F C3p:F C4p:F C5:T
+  Naibbe_line_sticky_latin_cremma   +0.1054   -0.1336   -0.3965   +0.6083   +0.1056   -0.0628   +0.1486   -0.255  C1:T C2:F C3p:T C4p:F C5:T
+  Naibbe_line_lock_latin_cremma    +0.2736   +0.0669   -0.0960   +0.6206   +0.0337   -0.0781   +0.3409   +0.890  C1:T C2:F C3p:T C4p:F C5:F
+  Naibbe_page_bias_latin_cremma    -0.0080   -0.1864   -0.4833   +0.6132   +0.0199   -0.1087   -0.0089   +2.453  C1:T C2:F C3p:F C4p:F C5:T
+  Naibbe_default_italian_dante     -0.0179   -0.1522   -0.4126   +0.6647   +0.0046   -0.0849   -0.0277   +1.950  C1:T C2:F C3p:F C4p:F C5:T
+  Naibbe_line_sticky_italian_dante   +0.1143   -0.1195   -0.4063   +0.6563   +0.1430   -0.0797   +0.1872   -0.220  C1:T C2:F C3p:T C4p:F C5:T
+  Naibbe_line_lock_italian_dante   +0.2602   +0.0706   -0.1023   +1.0218   +0.0455   -0.0825   +0.3994   +0.894  C1:T C2:F C3p:T C4p:F C5:F
+  Naibbe_page_bias_italian_dante   -0.0024   -0.1550   -0.4715   +0.7440   +0.0169   -0.1215   -0.0130   +8.784  C1:T C2:F C3p:F C4p:F C5:T
+  -> FINDING (Dot 22 / L-159 CLOSED): Even under 75% line-stickiness (Naibbe_line_sticky) or 100% full-line table lock (Naibbe_line_lock), Naibbe's prefix stream fails to match Voynich: (1) in bigrams (52.8% of tokens), pre(t, a) is identical across all 6 tables so table lock creates zero bigram prefix memory; (2) in unigrams (47.2% of tokens), locking the table along the entire line creates flat, non-decaying order-3+ prefix persistence (k4/k1 ~ 0.80..1.05 >= 0.25, failing C5 decay!) while still leaving f4_prefix_gain (M1) well below Voynich and keeping Euclidean distance d(ZL3b) > 4.2 in s55 z-space!
+
+================================================================================
+PART 2 (Dot 25 / L-163): Weakened Table-and-Grille (WTG) vs Rugg Grille on s69
+================================================================================
+2A. Prefix-Model Ladder (Held-Out Gain over Add-0.5 Unigram, bits/prefix [95% Subsample CI]):
+  Text                               M1 (lag-1)               M2 (lag-2)               M3 (lag-3)           M7 (own class)            M8 (p1+class)   M7c (core id)
+  Voynich_ZL3b         +0.0999 [+0.0814,+0.1149] -0.0802 [-0.1048,-0.0502] -0.3800 [-0.4073,-0.3440] +0.6881 [+0.6678,+0.7075] +0.6484 [+0.6189,+0.6694]         +1.2766
+  Voynich_RF1b         +0.0951 [+0.0764,+0.1094] -0.0921 [-0.1191,-0.0618] -0.3878 [-0.4176,-0.3501] +0.6818 [+0.6591,+0.7037] +0.6316 [+0.6002,+0.6571]         +1.2625
+  Voynich_IT2a         +0.0961 [+0.0785,+0.1096] -0.0503 [-0.0765,-0.0254] -0.3573 [-0.3834,-0.3261] +0.6437 [+0.6250,+0.6640] +0.6311 [+0.6072,+0.6563]         +1.2090
+  WTG_ZL3b             +0.1343 [+0.1246,+0.1427] -0.0374 [-0.0472,-0.0279] -0.3461 [-0.3586,-0.3311] +0.7084 [+0.6944,+0.7219] +0.7830 [+0.7703,+0.7973]         +1.2855
+  WTG_RF1b             +0.1072 [+0.1009,+0.1142] -0.0878 [-0.0991,-0.0724] -0.4058 [-0.4237,-0.3842] +0.8043 [+0.7908,+0.8189] +0.8211 [+0.8057,+0.8370]         +1.2756
+  WTG_IT2a             +0.0919 [+0.0860,+0.0971] -0.0995 [-0.1104,-0.0841] -0.4139 [-0.4279,-0.3967] +0.6059 [+0.5934,+0.6191] +0.6171 [+0.6063,+0.6276]         +1.2190
+  gen_rugg_grille      +0.5522 [+0.5351,+0.5703] +1.6387 [+1.6097,+1.6647] +2.0197 [+1.9871,+2.0533] +0.3922 [+0.3793,+0.4060] +1.1421 [+1.1188,+1.1655]         +1.3325
+
+2B. Key Model Differences & Within-Line Shuffle Excess (gain - null_mean, z-score):
+  Text                       M2-M1 (raw / excess)       M3-M1 (raw / excess)       M8-M7 (raw / excess / z)      M7/M1
+  Voynich_ZL3b         -0.1801 / +0.0045         -0.4799 / +0.0122    -0.0397 / +0.0781 (z +9.7)      +6.89
+  Voynich_RF1b         -0.1872 / +0.0084         -0.4829 / +0.0202    -0.0503 / +0.0787 (z +8.2)      +7.17
+  Voynich_IT2a         -0.1464 / +0.0043         -0.4534 / +0.0081    -0.0126 / +0.0764 (z+11.0)      +6.70
+  WTG_ZL3b             -0.1717 / +0.0240         -0.4804 / +0.0374    +0.0745 / +0.2096 (z+26.0)      +5.28
+  WTG_RF1b             -0.1949 / +0.0152         -0.5130 / +0.0168    +0.0169 / +0.1660 (z+20.2)      +7.51
+  WTG_IT2a             -0.1914 / +0.0029         -0.5058 / +0.0184    +0.0112 / +0.1359 (z+16.3)      +6.59
+  gen_rugg_grille      +1.0865 / +1.3539         +1.4675 / +1.9629    +0.7499 / +0.7905 (z+60.2)      +0.71
+
+2C. Reset Tests (a: mid-line gallows, b: line break, d: ordinary within-line) & Decay k=1..4:
+  Text                           a_pos [95% CI]           b_pos [95% CI]               d [95% CI]       k1       k2       k3       k4    k4/k1
+  Voynich_ZL3b         +0.0432 [+0.0285,+0.0565] -0.0674 [-0.0930,-0.0392] +0.1282 [+0.1112,+0.1428]  +0.0999  +0.0460  +0.0291  +0.0223   +0.223
+  Voynich_RF1b         +0.0306 [+0.0154,+0.0454] -0.0922 [-0.1173,-0.0679] +0.1299 [+0.1118,+0.1428]  +0.0951  +0.0434  +0.0320  +0.0124   +0.130
+  Voynich_IT2a         +0.0452 [+0.0336,+0.0554] -0.0420 [-0.0618,-0.0231] +0.1247 [+0.1059,+0.1397]  +0.0961  +0.0475  +0.0362  +0.0201   +0.209
+  WTG_ZL3b             +0.0505 [+0.0376,+0.0615] -0.1113 [-0.1295,-0.0921] +0.1558 [+0.1471,+0.1652]  +0.1343  +0.0150  +0.0120  +0.0022   +0.016
+  WTG_RF1b             +0.0133 [+0.0042,+0.0244] -0.0958 [-0.1149,-0.0758] +0.1334 [+0.1236,+0.1445]  +0.1072  +0.0139  +0.0066  +0.0039   +0.036
+  WTG_IT2a             -0.0064 [-0.0167,+0.0037] -0.1617 [-0.1831,-0.1366] +0.1289 [+0.1192,+0.1364]  +0.0919  +0.0105  +0.0063  -0.0005   -0.006
+  gen_rugg_grille      +0.6799 [+0.6477,+0.7123] +0.3790 [+0.3426,+0.4149] +0.4762 [+0.4531,+0.4988]  +0.5522  +0.3817  +0.2533  +0.1647   +0.298
+
+2D. Pre-Registered s69 Calls (C1, C2, C3, C4, C5, C3p, C4p) Across Voynich, WTG, and Rugg Grille:
+  Voynich_ZL3b        : C1=TRUE  C2=FALSE  C3=FALSE  C4=FALSE  C5=TRUE  C3p=TRUE  C4p=FALSE
+  Voynich_RF1b        : C1=TRUE  C2=FALSE  C3=FALSE  C4=FALSE  C5=TRUE  C3p=TRUE  C4p=FALSE
+  Voynich_IT2a        : C1=TRUE  C2=FALSE  C3=FALSE  C4=FALSE  C5=TRUE  C3p=TRUE  C4p=FALSE
+  WTG_ZL3b            : C1=TRUE  C2=FALSE  C3=FALSE  C4=FALSE  C5=TRUE  C3p=TRUE  C4p=FALSE
+  WTG_RF1b            : C1=TRUE  C2=FALSE  C3=FALSE  C4=FALSE  C5=TRUE  C3p=TRUE  C4p=FALSE
+  WTG_IT2a            : C1=TRUE  C2=FALSE  C3=FALSE  C4=FALSE  C5=TRUE  C3p=TRUE  C4p=TRUE
+  gen_rugg_grille     : C1=TRUE  C2=TRUE  C3=FALSE  C4=FALSE  C5=FALSE  C3p=FALSE  C4p=FALSE
+  -> FINDING (Dot 25 / L-163 on s69): WTG reproduces the exact Voynich call signature across all 3 transliterations (C1=TRUE, C2=FALSE, C3=FALSE, C4=FALSE, C5=TRUE, C3p=TRUE, C4p=FALSE), whereas gen_rugg_grille fails C2 (massive order-3+ memory M2-M1=+1.087), fails C5 (k4/k1=0.298 >= 0.25), and fails C3p (line-break b_pos=+0.379 > 0).
+
+================================================================================
+PART 3 (CONSTRAINTS-MAP.md §C line 193 & L-163): 15-Quire LOQO Evaluation of WTG
+================================================================================
+Folds (15 quires with >= 4 pages in ZL3b): ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'M', 'N', 'O', 'Q', 'S', 'T']
+Completed 45 LOQO folds (45 fold jobs across 14 workers) in 91.9s
+
+3A. Per-Fold LOQO Table (P1 P2 P3 P4 P5 P7; p3=prefix_gain, t=type_ratio; * = small fold < 6 pages):
+  ZL3b:
+    Fold Hand Pages         Real_P3 [80% CI]  CA                              WTG_global                      WTG_scribe                    
+    A    H1      16  +0.1358 [+0.1189,+0.1515]  2/6 +----+ p3=-0.000 t=1.12     3/6 +--+-+ p3=+0.068 t=1.03     3/6 ++---+ p3=+0.067 t=1.01   
+    B    H1      14  +0.0906 [+0.0501,+0.1318]  2/6 +---+- p3=-0.008 t=1.35     3/6 -+++-- p3=+0.073 t=1.25     3/6 -+++-- p3=+0.077 t=1.24   
+    C    H1      16  +0.0410 [+0.0228,+0.0649]  3/6 +--++- p3=+0.008 t=1.23     4/6 ++-+-+ p3=+0.094 t=1.14     4/6 ++-+-+ p3=+0.105 t=1.07   
+    D    H1      16  +0.1073 [+0.0885,+0.1350]  3/6 +---++ p3=+0.002 t=1.10     3/6 ++---+ p3=+0.082 t=1.08     3/6 -+-+-+ p3=+0.072 t=1.03   
+    E    H2      16  +0.0634 [+0.0457,+0.0921]  2/6 +---+- p3=+0.003 t=1.25     2/6 ---+-+ p3=+0.112 t=1.15     3/6 -+-+-+ p3=+0.099 t=0.95   
+    F    H1      16  +0.0415 [+0.0140,+0.0607]  3/6 +---++ p3=+0.005 t=1.10     2/6 ---+-+ p3=+0.091 t=1.01     1/6 -----+ p3=+0.073 t=0.98   
+    G    H1      16  +0.0724 [+0.0430,+0.0959]  3/6 +---++ p3=-0.001 t=1.08     3/6 -+-+-+ p3=+0.102 t=0.99     3/6 -++--+ p3=+0.056 t=1.01   
+    H    H5       6  +0.0273 [+0.0145,+0.0365]  3/6 +---++ p3=+0.003 t=1.04     3/6 -+-+-+ p3=+0.077 t=0.94     3/6 -+-+-+ p3=+0.082 t=0.96   
+    I    H4       7  +0.0531 [-0.0092,+0.0858]  3/6 +-+--+ p3=+0.007 t=0.96     2/6 --+--+ p3=+0.073 t=0.98     2/6 +----+ p3=+0.099 t=0.93   
+    M    H2      20  +0.1436 [+0.1321,+0.1566]  3/6 ++--+- p3=-0.007 t=1.75     1/6 ---+-- p3=+0.075 t=1.64     1/6 ---+-- p3=+0.062 t=1.31   
+    N    H2       7  +0.0560 [+0.0489,+0.0720]  2/6 +---+- p3=+0.005 t=1.21     3/6 -+-+-+ p3=+0.080 t=1.14     3/6 -+-+-+ p3=+0.104 t=0.90   
+    O    H1      12  +0.0215 [+0.0067,+0.0363]  3/6 +---++ p3=-0.003 t=1.14     4/6 ++-+-+ p3=+0.083 t=1.02     4/6 ++-+-+ p3=+0.080 t=1.04   
+    Q    H3      10  +0.0429 [+0.0215,+0.0585]  4/6 ++--++ p3=-0.004 t=1.00     4/6 ++-+-+ p3=+0.088 t=0.91     2/6 +----+ p3=+0.126 t=0.91   
+    S    H1      10  +0.0707 [+0.0602,+0.0845]  2/6 +---+- p3=-0.003 t=1.21     3/6 -+-+-+ p3=+0.098 t=1.14     3/6 -+-+-+ p3=+0.085 t=1.14   
+    T    H3      23  +0.1283 [+0.1149,+0.1396]  2/6 ----++ p3=-0.012 t=1.09     1/6 -----+ p3=+0.076 t=0.99     1/6 ---+-- p3=+0.033 t=0.80   
+
+  RF1b:
+    Fold Hand Pages         Real_P3 [80% CI]  CA                              WTG_global                      WTG_scribe                    
+    A    H1      16  +0.1300 [+0.1155,+0.1467]  2/6 +----+ p3=+0.004 t=1.07     4/6 ++-+-+ p3=+0.093 t=1.03     3/6 +--+-+ p3=+0.072 t=1.00   
+    B    H1      14  +0.0944 [+0.0560,+0.1451]  1/6 +----- p3=-0.009 t=1.31     3/6 +++--- p3=+0.096 t=1.21     4/6 ++++-- p3=+0.084 t=1.18   
+    C    H1      16  +0.0452 [+0.0258,+0.0646]  3/6 +---++ p3=+0.002 t=1.11     4/6 ++-+-+ p3=+0.077 t=1.09     4/6 ++-+-+ p3=+0.077 t=1.09   
+    D    H1      16  +0.1029 [+0.0860,+0.1245]  4/6 +--+++ p3=+0.010 t=1.08     2/6 ---+-+ p3=+0.085 t=1.05     3/6 +--+-+ p3=+0.061 t=1.02   
+    E    H2      16  +0.0610 [+0.0418,+0.0876]  3/6 +--++- p3=-0.004 t=1.18     4/6 -+++-+ p3=+0.055 t=1.12     4/6 -+++-+ p3=+0.075 t=0.93   
+    F    H1      16  +0.0424 [+0.0137,+0.0663]  4/6 +--+++ p3=-0.002 t=1.05     2/6 ---+-+ p3=+0.111 t=1.00     1/6 -----+ p3=+0.070 t=0.97   
+    G    H1      16  +0.0759 [+0.0474,+0.0978]  3/6 +---++ p3=+0.014 t=1.07     4/6 -+++-+ p3=+0.092 t=1.02     4/6 -+++-+ p3=+0.075 t=0.97   
+    H    H5       6  +0.0216 [+0.0091,+0.0391]  3/6 +-+--+ p3=+0.011 t=0.98     3/6 -+-+-+ p3=+0.113 t=0.90     3/6 -+-+-+ p3=+0.089 t=0.92   
+    I    H4       7  +0.0519 [-0.0217,+0.0824]  5/6 ++++-+ p3=-0.020 t=0.91     3/6 +-+--+ p3=+0.064 t=0.92     3/6 +-+--+ p3=+0.066 t=0.92   
+    M    H2      20  +0.1417 [+0.1309,+0.1511]  2/6 -+--+- p3=+0.001 t=1.77     1/6 ---+-- p3=+0.091 t=1.62     1/6 ---+-- p3=+0.047 t=1.33   
+    N    H2       7  +0.0577 [+0.0517,+0.0722]  2/6 +---+- p3=+0.013 t=1.18     1/6 ---+-- p3=+0.089 t=1.17     3/6 -+-+-+ p3=+0.109 t=0.90   
+    O    H1      12  +0.0296 [+0.0193,+0.0446]  4/6 +--+++ p3=-0.000 t=1.14     4/6 ++-+-+ p3=+0.079 t=1.08     4/6 ++-+-+ p3=+0.056 t=1.08   
+    Q    H3      10  +0.0475 [+0.0278,+0.0687]  4/6 +--+++ p3=+0.007 t=0.99     2/6 +----+ p3=+0.078 t=0.99     2/6 +----+ p3=+0.131 t=0.93   
+    S    H1      10  +0.0764 [+0.0644,+0.0928]  4/6 +--+++ p3=-0.000 t=1.15     2/6 --++-- p3=+0.081 t=1.17     2/6 -+-+-- p3=+0.051 t=1.16   
+    T    H3      23  +0.1274 [+0.1138,+0.1396]  2/6 ----++ p3=-0.003 t=1.13     1/6 -----+ p3=+0.080 t=1.01     2/6 -+-+-- p3=+0.053 t=0.79   
+
+  IT2a:
+    Fold Hand Pages         Real_P3 [80% CI]  CA                              WTG_global                      WTG_scribe                    
+    A    H1      16  +0.1186 [+0.1065,+0.1317]  2/6 +---+- p3=+0.002 t=1.16     3/6 +--+-+ p3=+0.067 t=1.07     4/6 ++--++ p3=+0.069 t=1.04   
+    B    H1      14  +0.0764 [+0.0370,+0.1181]  1/6 +----- p3=-0.004 t=1.37     3/6 -+++-- p3=+0.084 t=1.28     2/6 -++--- p3=+0.062 t=1.22   
+    C    H1      16  +0.0200 [+0.0022,+0.0414]  2/6 +---+- p3=-0.001 t=1.20     4/6 ++-+-+ p3=+0.081 t=1.11     3/6 ++---+ p3=+0.061 t=1.09   
+    D    H1      16  +0.0997 [+0.0813,+0.1205]  4/6 ++-+-+ p3=+0.019 t=1.12     3/6 --++-+ p3=+0.088 t=1.03     3/6 ++---+ p3=+0.072 t=1.02   
+    E    H2      16  +0.0479 [+0.0270,+0.0759]  0/6 ------ p3=+0.001 t=1.21     3/6 -++--+ p3=+0.075 t=1.14     3/6 -+-+-+ p3=+0.107 t=0.92   
+    F    H1      16  +0.0539 [+0.0316,+0.0728]  3/6 +---++ p3=-0.005 t=1.14     3/6 +--+-+ p3=+0.090 t=1.04     2/6 --+--+ p3=+0.067 t=1.00   
+    G    H1      16  +0.0765 [+0.0467,+0.1019]  4/6 +--+++ p3=+0.004 t=1.12     4/6 -+++-+ p3=+0.094 t=1.03     3/6 -++--+ p3=+0.073 t=1.03   
+    H    H5       6  +0.0180 [+0.0012,+0.0349]  2/6 +----+ p3=-0.008 t=0.98     4/6 ++-+-+ p3=+0.084 t=0.94     3/6 +--+-+ p3=+0.098 t=0.95   
+    I    H4       7  +0.0211 [-0.0368,+0.0351]  4/6 +-+-++ p3=-0.012 t=0.93     3/6 ++---+ p3=+0.050 t=0.88     3/6 -+-+-+ p3=+0.088 t=0.94   
+    M    H2      20  +0.1360 [+0.1225,+0.1500]  3/6 ++--+- p3=-0.007 t=1.75     1/6 ---+-- p3=+0.071 t=1.66     0/6 ------ p3=+0.023 t=1.36   
+    N    H2       6  +0.0522 [+0.0460,+0.0646]  2/6 +---+- p3=+0.010 t=1.22     2/6 ---+-+ p3=+0.081 t=1.11     1/6 -----+ p3=+0.123 t=0.91   
+    O    H1      12  +0.0119 [+0.0021,+0.0251]  4/6 +-+-++ p3=+0.014 t=1.14     4/6 ++-+-+ p3=+0.090 t=1.09     4/6 ++-+-+ p3=+0.069 t=1.01   
+    Q    H3      10  +0.0268 [+0.0126,+0.0447]  3/6 +---++ p3=-0.011 t=1.06     4/6 ++-+-+ p3=+0.097 t=1.03     2/6 +----+ p3=+0.113 t=1.00   
+    S    H1      10  +0.0468 [+0.0283,+0.0672]  3/6 +---++ p3=-0.008 t=1.13     3/6 ++---+ p3=+0.091 t=1.13     4/6 +++--+ p3=+0.059 t=1.05   
+    T    H3      23  +0.1107 [+0.0940,+0.1250]  2/6 ----++ p3=-0.002 t=1.09     1/6 -----+ p3=+0.065 t=0.99     0/6 ------ p3=+0.023 t=0.82   
+
+3B. Aggregate Per-Prediction Pass Counts & Folds Passing >= 5/6 (s67 Verdict Rule):
+  ZL3b CA          : folds >= 5/6:  0/15 | P1 14/15, P2  2/15, P3  1/15, P4  1/15, P5 13/15, P7  9/15 | mean P3=-0.0004, mean type_ratio=1.175
+  ZL3b WTG_global  : folds >= 5/6:  0/15 | P1  5/15, P2  9/15, P3  2/15, P4 12/15, P5  0/15, P7 13/15 | mean P3=+0.0848, mean type_ratio=1.094
+  ZL3b WTG_scribe  : folds >= 5/6:  0/15 | P1  5/15, P2 10/15, P3  2/15, P4 10/15, P5  0/15, P7 12/15 | mean P3=+0.0814, mean type_ratio=1.019
+
+  RF1b CA          : folds >= 5/6:  1/15 | P1 13/15, P2  2/15, P3  2/15, P4  7/15, P5 11/15, P7 11/15 | mean P3=+0.0016, mean type_ratio=1.142
+  RF1b WTG_global  : folds >= 5/6:  0/15 | P1  6/15, P2  7/15, P3  5/15, P4 11/15, P5  0/15, P7 11/15 | mean P3=+0.0856, mean type_ratio=1.092
+  RF1b WTG_scribe  : folds >= 5/6:  0/15 | P1  7/15, P2  9/15, P3  4/15, P4 12/15, P5  0/15, P7 11/15 | mean P3=+0.0744, mean type_ratio=1.014
+
+  IT2a CA          : folds >= 5/6:  0/15 | P1 13/15, P2  2/15, P3  2/15, P4  2/15, P5 11/15, P7  9/15 | mean P3=-0.0006, mean type_ratio=1.175
+  IT2a WTG_global  : folds >= 5/6:  0/15 | P1  8/15, P2  9/15, P3  4/15, P4 11/15, P5  0/15, P7 13/15 | mean P3=+0.0805, mean type_ratio=1.102
+  IT2a WTG_scribe  : folds >= 5/6:  0/15 | P1  7/15, P2  9/15, P3  4/15, P4  4/15, P5  1/15, P7 12/15 | mean P3=+0.0737, mean type_ratio=1.023
+
+3C. Overall LOQO Verdict (Pre-Registered Rule: >= 5/6 on a strict majority >= 8/15 of folds across ZL3b, RF1b, IT2a):
+  CA          : ZL3b 0/15 (majority no); RF1b 1/15 (majority no); IT2a 0/15 (majority no) -> DOES NOT PREDICT HELD-OUT QUIRES
+  WTG_global  : ZL3b 0/15 (majority no); RF1b 0/15 (majority no); IT2a 0/15 (majority no) -> DOES NOT PREDICT HELD-OUT QUIRES
+  WTG_scribe  : ZL3b 0/15 (majority no); RF1b 0/15 (majority no); IT2a 0/15 (majority no) -> DOES NOT PREDICT HELD-OUT QUIRES
+
+elapsed: 120.2s
+outputs: ./results_s71.txt, ./runs/s71

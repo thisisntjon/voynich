@@ -1,0 +1,12 @@
+I1: F4 frozen procedure on the F3 flow cipher with m homophones per piece (Zipf weights).
+cot = honest held-out (odd->even) class-over-token, bits/token minus line-shuffled; 3 KMeans seeds.
+
+VOYNICH reference: tokens 34857  types 7025  hapax share 0.680   (F4: cot mean -0.005, null -0.004)
+
+m=1  tokens 20917  types 4703  hapax 0.492  K=96   truth type ARI 0.190  cot +0.0139 (+0.0156 +0.0101 +0.0160)  null cot +0.0032  seed ARI 0.203
+m=2  tokens 20917  types 6541  hapax 0.630  K=98   truth type ARI 0.073  cot +0.0031 (+0.0081 +0.0019 -0.0007)  null cot -0.0009  seed ARI 0.132
+m=3  tokens 20917  types 7610  hapax 0.702  K=73   truth type ARI 0.044  cot +0.0043 (+0.0038 +0.0031 +0.0061)  null cot +0.0003  seed ARI 0.078
+m=5  tokens 20917  types 8316  hapax 0.746  K=123  truth type ARI 0.010  cot +0.0104 (+0.0065 +0.0155 +0.0091)  null cot +0.0027  seed ARI 0.114
+
+Reading: recovery 'holds' if cot stays clearly above its null (gap > ~0.006, the F4 seed spread)
+at the m whose types/hapax match Voynich. If it collapses there, F4's Voynich negative is uninformative.

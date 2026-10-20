@@ -1,0 +1,47 @@
+# s84_stem_alignment_loqo.py pre-registration stub, frozen Sun Oct 18 04:48:19 PDT 2026 (clock read with date), before any real-data run.
+# Fixture (--synth84, synthetic only) passed before the freeze: planted fx0/fx3 beat every null family p95 on 15/15 folds, own language best 13/15 and 13/15; fresh line-shuffle 2/15.
+# C1: Voynich per-fold max gain (max over 6 languages of held-out stem-transition LL gain per 1k pairs) exceeds the 95th percentile
+#     of the 105 matched null texts of the same transliteration (LSHUF 20, BSHUF 20, S67 20, S57 20, P4D1 25) on >= 10/15 LOQO folds, on all of ZL3b, RF1b, IT2a.
+# C2: a language L is the modal best language with >= 10/15 folds on >= 2 of 3 transliterations, and on each of those Voynich's
+#     mean margin (g[L] - max other, over folds) exceeds the 95th percentile of the null texts' margins.
+# C3: >= 5 of 6 planted W3 controls (ZL3b skeleton) pass the C1 fold rule and have their own language modal on >= 10/15 folds with margin > null margin p95.
+# Readings: C3 false -> 'inconclusive: controls failed'; C1 and C2 -> 'Voynich stems align with <language> above every null: candidate for word-level decoding';
+#           C1 true, C2 false -> 'language-like stem structure, no specific language'; C1 false -> 'stem alignment not above null when order-free'.
+# Verify: grep -v "^#" s84_stem_alignment_loqo.prereg.sha256 | tr -d '\r' | sha256sum -c -
+0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2 *a1_profile.py
+426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3 *a2_position.py
+5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a *b4_selfcite_sim.py
+0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007 *b5_nmf_topics.py
+9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57 *c1_quire_null.py
+f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a *c2_section_generator.py
+30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb *c3_edge_coupling.py
+46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b *c4_naibbe_lines.py
+2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518 *corpora.py
+d7a0be47e77b57b18b6b7ed1cfe413b276c6cbb7638422941af9dd485ce5126a *corpora_ext.py
+5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76 *f1_residual_order.py
+440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd *f2_syllable_control.py
+e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca *f3_flow_choice.py
+4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7 *g1_edge_joint.py
+0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b *m1_coordinates.py
+598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299 *m3_bakeoff_reconcile.py
+a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1 *n1_habit_table.py
+3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea *p1_bifolio_null.py
+5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39 *p4d1_core_order.py
+5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02 *s29_q1_label_controls.py
+406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625 *s34_morphology_syntax_geography.py
+c63e035be6a0e03f7a71c0be6e5b1a3a1bd2033ce8041552bb169319f10df9ad *s50_solver.py
+1b5c5227cf12db05d7c09d73040fad545e5f318512254128c609dbe4441b965b *s50_solver_ladder.py
+56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec *s55_code_vs_generator.py
+1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7 *s56_core_repetition_lag.py
+4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155 *s57_local_memory_model.py
+785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5 *s69_prefix_stream_memory.py
+06f2241b51c9f3149ee0d5236259f1dd046732b5e2a504c346183ff8f731b2d0 *s73_word_code_solver_and_syllabary.py
+43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29 *s76_segmenter_independence.py
+196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b *s80_a14_size_matched.py
+084488da6ba79a429df9925f5810a2b00413cbf8e42a1840cfc16eadc97665d2 *s82_cipher_rescore_matched_k.py
+772460e675e83951bd0c0089208fab182ce4d52294ff079f2e0b741b20fe3ef9 *s84_stem_alignment_loqo.py
+4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f *scoreboard/__init__.py
+a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed *scoreboard/metrics_new.py
+3a7b7c3efea13b884362f9f7f07551835bab8ca158ecdb43b946c96a8b3fbf1d *scoreboard/score.py
+8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65 *tools/boxes.py
+0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1 *vparse.py

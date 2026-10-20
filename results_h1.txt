@@ -1,0 +1,13 @@
+H1 one row  BETA=1.5 (from results_f3.txt, not refit)  rules p=0.088 m=0.148 after skeleton
+bands: h2 1.98-2.28, sd 1.41-2.11, JSDf>=0.10, p>=x8, m>=x8, excess>=+0.09, redup 0.4-1.8%
+
+cipher tokens poured=20917  source chunks=20923
+unruled row is a reproduction check, not a candidate
+unruled beta=1.5
+  tokens=20917 types=4688 h2=2.090 sd=1.645 JSDf=0.0012 p=x0.84 m=x1.05 excess=+0.2189 redup=0.124%
+  joint=FAIL  missed=['jsd_first_fg', 'p_init_enrich', 'm_final_enrich', 'redup_pct']
+RULED beta=1.5
+  tokens=20917 types=4965 h2=2.111 sd=1.647 JSDf=0.0288 p=x7.22 m=x5.04 excess=+0.2191 redup=0.12%
+  joint=FAIL  missed=['jsd_first_fg', 'p_init_enrich', 'm_final_enrich', 'redup_pct']
+
+DECISION: NO JOINT PASS  missed=jsd_first_fg,p_init_enrich,m_final_enrich,redup_pct

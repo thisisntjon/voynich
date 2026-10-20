@@ -1,0 +1,64 @@
+contact_prototype 20261018-171654  N=42  candidates/page {'min': 40, 'max': 40}
+timing: features 9.4s, GPU 0.5s, total 10.7s; GPU peak alloc 0.11 GB
+
+[O_offset] known links: rank from left / from right (excl. current facing) | rot180 control
+  f10v|f15r   25/ 19 of 40  ( 24/ 18)  | rot  29/ 35  global 444/840
+  f33v|f40r   32/ 34 of 40  ( 31/ 34)  | rot   6/  7  global 626/840
+  f58v|f65r   23/ 22 of 40  ( 23/ 22)  | rot  29/ 33  global 489/840
+  f76v|f83r   39/ 39 of 40  ( 38/ 38)  | rot  10/ 25  global 828/840
+  f78v|f81r   12/ 17 of 40  ( 12/ 17)  | rot   2/  2  global 187/840
+  top-1 (both ends) 0/5, top-1 (either end) 0/5; top-5 both ends 0/5 (null mean 0.31, p=1.0000)
+  facing (n=15) mean 0.092 median 0.073 | random (n=816) mean 0.106 median 0.090 p95 0.242
+  AUC facing>random 0.438; known>random 0.384; conjugate-outer>random 0.151
+
+[C_coverage] known links: rank from left / from right (excl. current facing) | rot180 control
+  f10v|f15r   13/  9 of 40  ( 13/  8)  | rot   9/ 12  global 101/840
+  f33v|f40r   20/ 14 of 40  ( 19/ 14)  | rot   2/  1  global 180/840
+  f58v|f65r   26/ 30 of 40  ( 26/ 30)  | rot  26/ 34  global 713/840
+  f76v|f83r   38/ 39 of 40  ( 37/ 38)  | rot  24/ 36  global 828/840
+  f78v|f81r   21/ 29 of 40  ( 21/ 29)  | rot  11/ 14  global 522/840
+  top-1 (both ends) 0/5, top-1 (either end) 0/5; top-5 both ends 0/5 (null mean 0.24, p=1.0000)
+  facing (n=15) mean 0.166 median 0.072 | random (n=816) mean 0.180 median 0.148 p95 0.460
+  AUC facing>random 0.440; known>random 0.440; conjugate-outer>random 0.341
+
+[T_stain] known links: rank from left / from right (excl. current facing) | rot180 control
+  f10v|f15r   11/ 12 of 40  ( 11/ 11)  | rot  21/ 24  global 186/840
+  f33v|f40r    4/  1 of 40  (  4/  1)  | rot  38/ 31  global 78/840
+  f58v|f65r   31/ 27 of 40  ( 31/ 27)  | rot  27/ 19  global 635/840
+  f76v|f83r    2/  3 of 40  (  2/  3)  | rot  21/ 19  global 47/840
+  f78v|f81r    1/  1 of 40  (  1/  1)  | rot   1/  1  global 1/840
+  top-1 (both ends) 1/5, top-1 (either end) 2/5; top-5 both ends 3/5 (null mean 0.52, p=0.0070)
+  facing (n=15) mean 0.269 median 0.233 | random (n=816) mean 0.209 median 0.197 p95 0.368
+  AUC facing>random 0.667; known>random 0.780; conjugate-outer>random 0.774
+
+[U_gutter] known links: rank from left / from right (excl. current facing) | rot180 control
+  f10v|f15r   10/ 17 of 40  ( 10/ 17)  | rot  12/  6  global 174/840
+  f33v|f40r    4/ 31 of 40  (  3/ 31)  | rot   9/ 34  global 464/840
+  f58v|f65r   34/ 10 of 40  ( 34/ 10)  | rot  32/  2  global 509/840
+  f76v|f83r   28/ 26 of 40  ( 27/ 25)  | rot  25/  4  global 499/840
+  f78v|f81r   28/ 37 of 40  ( 28/ 37)  | rot  14/ 15  global 617/840
+  top-1 (both ends) 0/5, top-1 (either end) 0/5; top-5 both ends 0/5 (null mean 0.25, p=1.0000)
+  facing (n=15) mean 1.134 median 1.068 | random (n=816) mean 0.977 median 0.996 p95 1.730
+  AUC facing>random 0.595; known>random 0.465; conjugate-outer>random 0.505
+
+[combined] known links: rank from left / from right (excl. current facing) | rot180 control
+  f10v|f15r   12/ 10 of 40  ( 12/  9)  | rot  15/ 19  global 111/840
+  f33v|f40r   11/ 16 of 40  ( 10/ 16)  | rot   5/  3  global 224/840
+  f58v|f65r   37/ 25 of 40  ( 37/ 25)  | rot  37/ 24  global 723/840
+  f76v|f83r   16/ 27 of 40  ( 15/ 26)  | rot  19/ 24  global 585/840
+  f78v|f81r    1/  6 of 40  (  1/  6)  | rot   1/  1  global 25/840
+  top-1 (both ends) 0/5, top-1 (either end) 1/5; top-5 both ends 0/5 (null mean 0.25, p=1.0000)
+  facing (n=15) mean 0.691 median 1.398 | random (n=816) mean -0.022 median -0.310 p95 4.038
+  AUC facing>random 0.584; known>random 0.606; conjugate-outer>random 0.528
+
+[C+T] known links: rank from left / from right (excl. current facing) | rot180 control
+  f10v|f15r   10/  8 of 40  ( 10/  7)  | rot  13/ 18  global 76/840
+  f33v|f40r    8/  5 of 40  (  8/  5)  | rot   5/  2  global 60/840
+  f58v|f65r   34/ 32 of 40  ( 34/ 32)  | rot  29/ 31  global 765/840
+  f76v|f83r    2/ 12 of 40  (  2/ 12)  | rot  21/ 28  global 303/840
+  f78v|f81r    1/  1 of 40  (  1/  1)  | rot   1/  1  global 3/840
+  top-1 (both ends) 1/5, top-1 (either end) 1/5; top-5 both ends 1/5 (null mean 0.33, p=0.2929)
+  facing (n=15) mean 0.524 median 0.605 | random (n=816) mean -0.027 median -0.239 p95 2.531
+  AUC facing>random 0.605; known>random 0.717; conjugate-outer>random 0.687
+
+same-leaf show-through control: O_hflip mean 0.133 vs random 0.105

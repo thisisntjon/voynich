@@ -1,0 +1,52 @@
+D5 RAMBLING SIGNATURES  (controls truncated to VMS length)
+VMS paragraph tokens N=34857 types=7025 pages(>=20 tok)=207 median page=101 tok
+  VMS              N=34857 types=7025
+  latin_caesar     N=19520 types=5491
+  latin_augustine  N=34857 types=9500
+  italian_dante    N=34857 types=6503
+  VMS-shuffled     N=34857 types=7025
+
+Prior (not duplicated): a4b VMS W=10 exact-local/far=1.69 (controls 0.96-1.53); b5 NMF NMI(section)~0.28-0.38 >> perm-null, i.e. SOME page-level structure exists.
+
+[1] PERSEVERATION: P(same word recurs within next k tokens)
+text             k=1      k=5      k=20     k=100     excess@k5/shuf* k=1/k=100
+VMS              0.0084  0.0432  0.1275  0.3143   2.50            0.027
+latin_caesar     0.0000  0.0141  0.0676  0.2213   0.82            0.000
+latin_augustine  0.0003  0.0394  0.1302  0.2777   2.28            0.001
+italian_dante    0.0005  0.0333  0.1376  0.3409   1.93            0.002
+VMS-shuffled     0.0034  0.0173  0.0642  0.2235   1.00            0.015
+*self-ratio=1 for shuffled row. k=1 = immediate reduplication.
+
+[2] VOCABULARY GROWTH (Heaps V=K*N^beta, log-log fit N>=100; folio/order order)
+text               beta  beta_late(2nd half)   V@5k  V@10k  V@20k  V@full
+VMS               0.724                0.784   1717   2900   4527    7025
+latin_caesar      0.748                0.722   2100   3404      -    5491
+latin_augustine   0.779                0.719   2203   3801   6363    9500
+italian_dante     0.727                0.654   1666   2783   4554    6503
+VMS-shuffled      0.712                0.682   1793   2982   4796    7025
+
+[3] BURSTINESS: inter-repeat gaps of top-50 words (CV=std/mean; B=(CV-1)/(CV+1), 0=Poisson)
+text              mean_gap  meanCV  medCV  meanB
+VMS                  178.3   1.702  1.599  0.238
+latin_caesar         260.9   1.184  1.110  0.077
+latin_augustine      227.2   1.253  1.216  0.106
+italian_dante        195.8   1.055  1.032  0.024
+VMS-shuffled         184.2   0.990  0.989 -0.007
+
+[4] LONG-RANGE COHERENCE: rare-word (global freq 2-10) Jaccard between pages by page distance
+text                           d=1    d2-5   d6-20    d>20  adj/far
+VMS                         0.0205  0.0138  0.0097  0.0064     3.18
+VMS langA only (n=114)      0.0269  0.0179  0.0157  0.0120     2.24
+VMS langB only (n=83)       0.0362  0.0240  0.0202  0.0155     2.34
+VMS shuffled-pages null     0.0088  0.0084  0.0075  0.0068     1.30
+latin_caesar                0.0273  0.0147  0.0104  0.0083     3.29
+latin_augustine             0.0216  0.0099  0.0053  0.0044     4.87
+italian_dante               0.0096  0.0070  0.0054  0.0049     1.94
+
+VERDICTS vs 'single disordered/obsessive rambler' predictions
+P1 perseveration: VMS k=1 0.0084 vs shuffled 0.0034 (2.45x), vs max control 0.0005 (16.33x); k=5 0.0432 vs shuf 0.0173 (2.50x), max ctrl 0.0394 (1.10x); k=100 excess 1.41x. -> SUPPORTED at k=1 specifically (immediate reduplication is the outlier; by k=5 VMS is near the top control); decay k1->k100 excess 2.45->1.41 (localised, rambling-like)
+P2 vocab saturation: VMS beta=0.724 (controls 0.727-0.779), beta_late=0.784 (controls 0.654-0.722), types@N=7025 (length-matched controls 6503-9500; caesar exhausted at 19520 tok). -> REFUTED as saturation: overall beta is only marginally lowest and beta_late is the HIGHEST, i.e. new types still arrive fastest late in the book (partly A->B dialect turnover)
+P3 burstiness: VMS meanCV=1.702 medCV=1.599 B=0.238 vs shuffled CV=0.990, controls CV 1.055-1.253. -> MORE bursty than every control (consistent with topical clustering AND with perseverative bursts; does not separate them); not metronomic (CV>>shuffle)
+P4 long-range coherence: VMS Jaccard adj=0.0205 far=0.0064 ratio=3.18; shuffled adj=0.0088 far=0.0068 ratio=1.30; adj excess over null 2.34x, far excess 0.95x. -> REFUTED: real distance-decaying topical locality (consistent with b5) (check within-lang rows above for A/B confound)
+
+Note: EVA word types are the unit throughout; controls are surface word forms at matched N. P1/P3 local clustering can also arise from self-citation/copying (a4/b4), so P1 alone does not isolate 'rambling'.

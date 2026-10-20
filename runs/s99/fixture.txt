@@ -1,0 +1,8 @@
+S99 - label rare core vs physically nearest body lines (Phase 6.3, E1)
+started Sun Oct 18 12:22:18 PDT 2026 (`date`)  priority=BelowNormal workers=1  free_RAM_GB=7.43
+thresholds: TOP_K=20 TOP_K_BROAD=5 RARE_SUB_SHARE=0.01 MIN_BODY_LINES=4 N_PERM=10000 ALPHA=0.05 NEG_MDE_MAX=0.1 SEED=99018
+[fixture_near] events=72 pages=24 T=0.0736 null_mean=0.5000 sd=0.0254 shift=+0.4264 p=0.0005 MDE=0.0631
+[fixture_none] events=72 pages=24 T=0.5094 null_mean=0.5000 sd=0.0234 shift=-0.0094 p=0.6697 MDE=0.0581
+[fixture_mild] events=72 pages=24 T=0.3035 null_mean=0.4998 sd=0.0236 shift=+0.1963 p=0.0005 MDE=0.0588
+FIXTURE_PASS=True
+finished Sun Oct 18 12:22:21 PDT 2026 (`date`) runtime_s=3.2

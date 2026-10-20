@@ -1,0 +1,157 @@
+s58 -- two-layer producer TL (counted ordered affix wrapper over s57's local-memory core stream) fitted on the training pages, predicting s57's 6 properties of the 41 held-out pages
+date: Sun Oct 18 01:13:32 PDT 2026 (`date`)
+sha256 s58_two_layer_heldout.py: 634e2534941bc1fc0b0942f2e6b331049835d8c61a4be8efe43e358ef6f5c0e3
+sha256 s58_two_layer_heldout.prereg.sha256: 94651deb89c87927450161cf2ea23efa22aa7dc9fb67395d3a129f7624760725
+stub_match: True
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  local import s58_two_layer_heldout.py sha256=634e2534941bc1fc0b0942f2e6b331049835d8c61a4be8efe43e358ef6f5c0e3
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+numpy 2.4.6; python -I; CPU; W=20; grid p_copy [0.0, 0.02, 0.04, 0.06, 0.08, 0.11, 0.15, 0.2, 0.27, 0.35], tau [1.0, 2.0, 4.0, 7.0, 12.0, 20.0], a [0.0, 0.15, 0.3, 0.5], q_core [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]; subsample 80 % of held-out pages without replacement x 500; core->core null 200 (point) / 20 (per draw); seeds 1-3; scoring = s57 code imported
+
+translit ZL3b: ZL3b_eva.meta.json sha256=ce233477803a8653
+=== ZL3b: 207 pages; training 166 pages (26271 tokens), held-out 41 pages (8586 tokens); training SlotSegmenter 27 prefix / 18 suffix candidates ===
+    stage A (240 evals): best loss 4758.85 at p_copy 0.02, tau 1.0, a 0.5
+    stage B (251 evals): best loss 4686.01 at q_core 0.1
+    stage C (266 evals): best loss 4686.01
+  wrapper tables (counted): 795 (pos, pre-1, suf-1) contexts, 38 (pos, suf-1), 3 (pos); 507 distinct (pre, suf) outcomes
+  fit (266 grid evaluations, 42s): p_copy 0.02, tau 1.0, a 0.5, q_core 0.1; loss 4686.01 (R 65.78, shares 138.54, types 4481.69)
+  [in-sample] target R(d) real : 1.171 1.191 1.070 1.153 1.085 1.117 1.111 1.085 1.042 1.101 1.130 1.051 1.092 1.054 1.094 1.046 1.074 1.048 1.066 1.057
+  [in-sample] fitted R(d) TL s0: 1.168 1.028 1.022 1.018 1.010 1.002 1.006 1.012 0.990 1.015 1.062 0.993 1.023 1.026 1.018 1.014 0.981 0.970 1.006 1.058
+  [in-sample] edit shares real : identical 0.2015, prefix_swap 0.4815, suffix_swap 0.1094, core_edit1 0.2076  (counts [4002, 9561, 2172, 4123])
+  [in-sample] edit shares TL s0: identical 0.0510, prefix_swap 0.6581, suffix_swap 0.1212, core_edit1 0.1698  (counts [353, 4557, 839, 1176])
+  [in-sample] types real 5860 at 26271 tokens; TL seed 0 9783 at 26253 tokens
+  [in-sample] line length real mean 8.458 sd 3.138; TL seed 0 mean 8.452 sd 3.062 (empirical sampling)
+  measured 7 texts in 18s
+  subsample draws 54s
+  real held-out: Moran 0.1556 [0.1385,0.1701]; core->core -0.0526 [-0.0770,-0.0364]; prefix gain +0.0999 [+0.0784,+0.1123]; jsd_first_fg 0.1762 (excess +0.1722); CHARWIN +0.0940
+  real F1 by stream: prefix +0.0063 [+0.0036,+0.0089], core +0.0041 [-0.0026,+0.0104], suffix +0.0007 [-0.0011,+0.0022] -> s39 rule on the real text (this split): affix layer
+    TL s1: Moran 0.0505 core->core -0.0283 prefix gain +0.0359 jsd_first_fg 0.1116 CHARWIN +0.0756 F1 prefix/core/suffix +0.0037/+0.0017/-0.0014
+    TL s2: Moran 0.0271 core->core -0.0367 prefix gain +0.0483 jsd_first_fg 0.0896 CHARWIN +0.1044 F1 prefix/core/suffix +0.0041/+0.0019/+0.0009
+    TL s3: Moran 0.0216 core->core -0.0229 prefix gain +0.0444 jsd_first_fg 0.1003 CHARWIN +0.0860 F1 prefix/core/suffix +0.0075/+0.0016/+0.0015
+    TL0 s1: Moran 0.0478 core->core -0.0241 prefix gain +0.0435 jsd_first_fg 0.1063 CHARWIN +0.0852 F1 prefix/core/suffix +0.0073/+0.0039/+0.0071
+    TL0 s2: Moran 0.0295 core->core -0.0350 prefix gain +0.0490 jsd_first_fg 0.0879 CHARWIN +0.1014 F1 prefix/core/suffix +0.0089/+0.0088/-0.0082
+    TL0 s3: Moran 0.0213 core->core -0.0761 prefix gain +0.0342 jsd_first_fg 0.0988 CHARWIN +0.0816 F1 prefix/core/suffix +0.0076/+0.0185/-0.0014
+  -- TL: 1/6 hold --
+    P1 fails: Moran Δ -0.1225 [-0.1382,-0.1041] (gen 0.0331, real 0.1556); margin hi-0 = -0.1041
+    P2 fails: core->core excess Δ +0.0234 [+0.0031,+0.0477] (gen -0.0293, real -0.0526); margins 0-lo -0.0031, hi-0 +0.0477
+    P3 fails: prefix gain gen +0.0429 vs real +0.0999 [+0.0784,+0.1123]; margins g-lo -0.0355, hi-g +0.0695
+    P4 fails: jsd_first_fg gen 0.1005 vs s15 width [0.1447,0.2156] (real held-out 0.1762); margins -0.0442 / +0.1151; excess gen +0.0959 real +0.1722
+    P5 HOLDS: CHARWIN gen +0.0887 (real +0.0940); margin +0.0887
+    P6 fails: F1 gen: prefix +0.0051 [+0.0032,+0.0067], core +0.0017 [-0.0017,+0.0049], suffix +0.0003 [-0.0013,+0.0024] -> affix layer; core lo margin -0.0017
+  -- TL0: 2/6 hold --
+    P1 fails: Moran Δ -0.1227 [-0.1381,-0.1054] (gen 0.0329, real 0.1556); margin hi-0 = -0.1054
+    P2 HOLDS: core->core excess Δ +0.0076 [-0.0129,+0.0318] (gen -0.0451, real -0.0526); margins 0-lo +0.0129, hi-0 +0.0318
+    P3 fails: prefix gain gen +0.0422 vs real +0.0999 [+0.0784,+0.1123]; margins g-lo -0.0361, hi-g +0.0701
+    P4 fails: jsd_first_fg gen 0.0977 vs s15 width [0.1447,0.2156] (real held-out 0.1762); margins -0.0470 / +0.1179; excess gen +0.0927 real +0.1722
+    P5 HOLDS: CHARWIN gen +0.0894 (real +0.0940); margin +0.0894
+    P6 fails: F1 gen: prefix +0.0079 [+0.0066,+0.0093], core +0.0104 [+0.0071,+0.0137], suffix -0.0008 [-0.0028,+0.0012] -> both / neither; core lo margin +0.0071
+  elapsed so far 115s
+
+translit RF1b: RF1b.meta.json sha256=c7d9bccba99b2610
+=== RF1b: 207 pages; training 166 pages (26014 tokens), held-out 41 pages (8604 tokens); training SlotSegmenter 28 prefix / 20 suffix candidates ===
+    stage A (240 evals): best loss 4356.50 at p_copy 0.02, tau 1.0, a 0.5
+    stage B (251 evals): best loss 4238.49 at q_core 0.0
+    stage C (266 evals): best loss 4238.49
+  wrapper tables (counted): 860 (pos, pre-1, suf-1) contexts, 42 (pos, suf-1), 3 (pos); 556 distinct (pre, suf) outcomes
+  fit (266 grid evaluations, 40s): p_copy 0.02, tau 1.0, a 0.5, q_core 0.0; loss 4238.49 (R 83.95, shares 182.10, types 3972.43)
+  [in-sample] target R(d) real : 1.177 1.188 1.081 1.161 1.096 1.087 1.117 1.080 1.077 1.118 1.122 1.040 1.117 1.095 1.093 1.083 1.075 1.043 1.046 1.024
+  [in-sample] fitted R(d) TL s0: 1.158 1.066 1.020 0.994 1.026 1.079 0.986 1.001 1.061 1.052 1.039 0.948 1.016 0.957 0.965 0.984 1.038 0.947 0.996 1.091
+  [in-sample] edit shares real : identical 0.2024, prefix_swap 0.4823, suffix_swap 0.1102, core_edit1 0.2050  (counts [3815, 9089, 2077, 3864])
+  [in-sample] edit shares TL s0: identical 0.0557, prefix_swap 0.6960, suffix_swap 0.1178, core_edit1 0.1304  (counts [351, 4383, 742, 821])
+  [in-sample] types real 6164 at 26014 tokens; TL seed 0 10049 at 25902 tokens
+  [in-sample] line length real mean 8.375 sd 3.164; TL seed 0 mean 8.339 sd 3.145 (empirical sampling)
+  measured 7 texts in 17s
+  subsample draws 53s
+  real held-out: Moran 0.1547 [0.1385,0.1678]; core->core -0.0499 [-0.0739,-0.0344]; prefix gain +0.0951 [+0.0734,+0.1086]; jsd_first_fg 0.1785 (excess +0.1749); CHARWIN +0.1099
+  real F1 by stream: prefix +0.0019 [-0.0012,+0.0057], core +0.0170 [+0.0126,+0.0215], suffix -0.0011 [-0.0028,+0.0006] -> s39 rule on the real text (this split): core layer
+    TL s1: Moran 0.0504 core->core -0.0440 prefix gain +0.0344 jsd_first_fg 0.1003 CHARWIN +0.1094 F1 prefix/core/suffix +0.0127/-0.0042/-0.0053
+    TL s2: Moran 0.0210 core->core -0.0601 prefix gain +0.0388 jsd_first_fg 0.1141 CHARWIN +0.1077 F1 prefix/core/suffix +0.0074/+0.0052/+0.0013
+    TL s3: Moran 0.0417 core->core -0.0217 prefix gain +0.0515 jsd_first_fg 0.1090 CHARWIN +0.0810 F1 prefix/core/suffix +0.0027/+0.0029/+0.0038
+    TL0 s1: Moran 0.0344 core->core -0.0519 prefix gain +0.0498 jsd_first_fg 0.1189 CHARWIN +0.1267 F1 prefix/core/suffix +0.0094/+0.0039/+0.0038
+    TL0 s2: Moran -0.0014 core->core -0.0839 prefix gain +0.0358 jsd_first_fg 0.1143 CHARWIN +0.1230 F1 prefix/core/suffix +0.0064/+0.0152/+0.0010
+    TL0 s3: Moran 0.0133 core->core -0.0581 prefix gain +0.0464 jsd_first_fg 0.0983 CHARWIN +0.1024 F1 prefix/core/suffix +0.0107/+0.0010/-0.0028
+  -- TL: 2/6 hold --
+    P1 fails: Moran Δ -0.1170 [-0.1325,-0.0995] (gen 0.0377, real 0.1547); margin hi-0 = -0.0995
+    P2 HOLDS: core->core excess Δ +0.0080 [-0.0130,+0.0324] (gen -0.0419, real -0.0499); margins 0-lo +0.0130, hi-0 +0.0324
+    P3 fails: prefix gain gen +0.0416 vs real +0.0951 [+0.0734,+0.1086]; margins g-lo -0.0318, hi-g +0.0670
+    P4 fails: jsd_first_fg gen 0.1078 vs s15 width [0.1447,0.2156] (real held-out 0.1785); margins -0.0369 / +0.1078; excess gen +0.1021 real +0.1749
+    P5 HOLDS: CHARWIN gen +0.0994 (real +0.1099); margin +0.0994
+    P6 fails: F1 gen: prefix +0.0076 [+0.0062,+0.0091], core +0.0013 [-0.0017,+0.0049], suffix -0.0001 [-0.0018,+0.0013] -> affix layer; core lo margin -0.0017
+  -- TL0: 2/6 hold --
+    P1 fails: Moran Δ -0.1393 [-0.1547,-0.1213] (gen 0.0154, real 0.1547); margin hi-0 = -0.1213
+    P2 HOLDS: core->core excess Δ -0.0147 [-0.0323,+0.0097] (gen -0.0646, real -0.0499); margins 0-lo +0.0323, hi-0 +0.0097
+    P3 fails: prefix gain gen +0.0440 vs real +0.0951 [+0.0734,+0.1086]; margins g-lo -0.0294, hi-g +0.0646
+    P4 fails: jsd_first_fg gen 0.1105 vs s15 width [0.1447,0.2156] (real held-out 0.1785); margins -0.0342 / +0.1051; excess gen +0.1055 real +0.1749
+    P5 HOLDS: CHARWIN gen +0.1174 (real +0.1099); margin +0.1174
+    P6 fails: F1 gen: prefix +0.0089 [+0.0074,+0.0103], core +0.0067 [+0.0026,+0.0109], suffix +0.0007 [-0.0009,+0.0024] -> both / neither; core lo margin +0.0026
+  elapsed so far 226s
+
+translit IT2a: IT2a.meta.json sha256=0d0d3e758d1e308b
+=== IT2a: 206 pages; training 165 pages (26000 tokens), held-out 41 pages (8411 tokens); training SlotSegmenter 24 prefix / 19 suffix candidates ===
+    stage A (240 evals): best loss 4648.21 at p_copy 0.02, tau 7.0, a 0.0
+    stage B (251 evals): best loss 4648.21 at q_core 0.25
+    stage C (251 evals): best loss 4648.21
+  wrapper tables (counted): 758 (pos, pre-1, suf-1) contexts, 40 (pos, suf-1), 3 (pos); 469 distinct (pre, suf) outcomes
+  fit (251 grid evaluations, 36s): p_copy 0.02, tau 7.0, a 0.0, q_core 0.25; loss 4648.21 (R 104.15, shares 150.14, types 4393.92)
+  [in-sample] target R(d) real : 1.222 1.160 1.071 1.109 1.106 1.083 1.112 1.090 1.079 1.129 1.099 1.084 1.059 1.029 1.057 1.041 1.043 1.032 1.081 1.020
+  [in-sample] fitted R(d) TL s0: 1.049 1.015 1.011 0.976 0.983 0.989 0.925 0.977 1.092 1.002 0.946 1.025 0.976 0.966 1.001 1.049 1.025 0.980 1.026 1.044
+  [in-sample] edit shares real : identical 0.2098, prefix_swap 0.4726, suffix_swap 0.1159, core_edit1 0.2018  (counts [3890, 8764, 2149, 3742])
+  [in-sample] edit shares TL s0: identical 0.0559, prefix_swap 0.6537, suffix_swap 0.1422, core_edit1 0.1481  (counts [332, 3880, 844, 879])
+  [in-sample] types real 5965 at 26000 tokens; TL seed 0 9919 at 26048 tokens
+  [in-sample] line length real mean 8.393 sd 3.034; TL seed 0 mean 8.408 sd 3.048 (empirical sampling)
+  measured 7 texts in 16s
+  subsample draws 54s
+  real held-out: Moran 0.1623 [0.1475,0.1752]; core->core -0.0504 [-0.0738,-0.0366]; prefix gain +0.0961 [+0.0764,+0.1096]; jsd_first_fg 0.1817 (excess +0.1781); CHARWIN +0.0977
+  real F1 by stream: prefix +0.0061 [+0.0033,+0.0094], core +0.0249 [+0.0201,+0.0294], suffix +0.0009 [-0.0003,+0.0021] -> s39 rule on the real text (this split): both / neither
+    TL s1: Moran 0.0411 core->core -0.0517 prefix gain +0.0354 jsd_first_fg 0.0825 CHARWIN +0.1202 F1 prefix/core/suffix +0.0115/-0.0079/+0.0025
+    TL s2: Moran -0.0013 core->core -0.0474 prefix gain +0.0340 jsd_first_fg 0.0788 CHARWIN +0.1035 F1 prefix/core/suffix +0.0077/+0.0068/+0.0028
+    TL s3: Moran 0.0350 core->core -0.0621 prefix gain +0.0310 jsd_first_fg 0.0954 CHARWIN +0.1096 F1 prefix/core/suffix +0.0058/+0.0063/-0.0024
+    TL0 s1: Moran 0.0175 core->core -0.0440 prefix gain +0.0323 jsd_first_fg 0.0843 CHARWIN +0.1196 F1 prefix/core/suffix +0.0026/+0.0007/+0.0032
+    TL0 s2: Moran 0.0442 core->core -0.0621 prefix gain +0.0339 jsd_first_fg 0.0855 CHARWIN +0.1129 F1 prefix/core/suffix +0.0054/-0.0012/+0.0017
+    TL0 s3: Moran 0.0249 core->core -0.0514 prefix gain +0.0356 jsd_first_fg 0.0985 CHARWIN +0.1183 F1 prefix/core/suffix +0.0110/-0.0034/+0.0038
+  -- TL: 2/6 hold --
+    P1 fails: Moran Δ -0.1374 [-0.1525,-0.1206] (gen 0.0249, real 0.1623); margin hi-0 = -0.1206
+    P2 HOLDS: core->core excess Δ -0.0033 [-0.0216,+0.0262] (gen -0.0537, real -0.0504); margins 0-lo +0.0216, hi-0 +0.0262
+    P3 fails: prefix gain gen +0.0335 vs real +0.0961 [+0.0764,+0.1096]; margins g-lo -0.0430, hi-g +0.0761
+    P4 fails: jsd_first_fg gen 0.0856 vs s15 width [0.1447,0.2156] (real held-out 0.1817); margins -0.0591 / +0.1300; excess gen +0.0800 real +0.1781
+    P5 HOLDS: CHARWIN gen +0.1111 (real +0.0977); margin +0.1111
+    P6 fails: F1 gen: prefix +0.0083 [+0.0066,+0.0099], core +0.0018 [-0.0024,+0.0051], suffix +0.0010 [-0.0009,+0.0028] -> affix layer; core lo margin -0.0024
+  -- TL0: 2/6 hold --
+    P1 fails: Moran Δ -0.1335 [-0.1485,-0.1154] (gen 0.0289, real 0.1623); margin hi-0 = -0.1154
+    P2 HOLDS: core->core excess Δ -0.0021 [-0.0160,+0.0230] (gen -0.0525, real -0.0504); margins 0-lo +0.0160, hi-0 +0.0230
+    P3 fails: prefix gain gen +0.0339 vs real +0.0961 [+0.0764,+0.1096]; margins g-lo -0.0425, hi-g +0.0756
+    P4 fails: jsd_first_fg gen 0.0894 vs s15 width [0.1447,0.2156] (real held-out 0.1817); margins -0.0553 / +0.1262; excess gen +0.0843 real +0.1781
+    P5 HOLDS: CHARWIN gen +0.1169 (real +0.0977); margin +0.1169
+    P6 fails: F1 gen: prefix +0.0063 [+0.0043,+0.0080], core -0.0013 [-0.0050,+0.0028], suffix +0.0029 [+0.0011,+0.0047] -> affix layer; core lo margin -0.0050
+  elapsed so far 334s
+
+=== VERDICT (pre-registered rule) ===
+  TL  : ZL3b 1/6 [P1- P2- P3- P4- P5+ P6-]; RF1b 2/6 [P1- P2+ P3- P4- P5+ P6-]; IT2a 2/6 [P1- P2+ P3- P4- P5+ P6-]
+  TL0 : ZL3b 2/6 [P1- P2+ P3- P4- P5+ P6-]; RF1b 2/6 [P1- P2+ P3- P4- P5+ P6-]; IT2a 2/6 [P1- P2+ P3- P4- P5+ P6-]
+  s57 as filed (not rerun): local-memory ZL3b 0/6, RF1b 0/6, IT2a 0/6; null p_copy=0 1/6 each
+VERDICT: two-layer model does NOT predict untouched pages (ZL3b 1/6; holding sets {'ZL3b': ('P5',), 'RF1b': ('P2', 'P5'), 'IT2a': ('P2', 'P5')})
+TL0 (p_copy=0) counts: ZL3b 2/6, RF1b 2/6, IT2a 2/6
+  ZL3b: held by TL not TL0: none; held by TL0 not TL: ['P2']
+  RF1b: held by TL not TL0: none; held by TL0 not TL: none
+  IT2a: held by TL not TL0: none; held by TL0 not TL: none
+caveats: P6 weak (the s39 rule gives a different call on each transliteration's real text for this split); P4 and P3 close to built-in via the counted wrapper; TL vs TL0 isolates the core-memory contribution
+
+elapsed: 334.0 s
+date end: Sun Oct 18 01:19:06 PDT 2026 (`date`)
+paths: ./results_s58.txt, ./runs/s58

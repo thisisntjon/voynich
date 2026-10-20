@@ -1,0 +1,8 @@
+S114 — repeated pharmaceutical label object consistency
+freeze_match=True fixture_pass=True rows=239 pages=14 repeated_types=27
+fixture pairs=31 agreement=1.000000 q99=0.451613 p=0.000100
+[three_way] pairs=31 agreement=0.645161 null_med=0.645161 q95=0.741935 q99=0.774194 p=0.629637
+[container_binary] pairs=31 agreement=0.774194 null_med=0.806452 q95=0.935484 q99=0.967742 p=0.834217
+C1_REPEAT_OBJECT_CONSISTENCY=False
+VERDICT=NO_REPEATED_LABEL_OBJECT_CLASS_LINK
+runtime_seconds=1.201

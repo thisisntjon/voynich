@@ -1,0 +1,2 @@
+# s53 prereg: sha256 of the scoring script; frozen Sun Oct 18 00:11:36 PDT 2026 before any scoring run on real pairs (scoring code run only on random embeddings via --selftest in the scratchpad; a development embed run, no pair scoring, preceded the final merge rule)
+8479b3c3694610c1dfb99fd7f20accb68a85c55c4240759c35fca9555c69df49  s53_same_plant_parts.py

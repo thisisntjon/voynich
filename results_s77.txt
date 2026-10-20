@@ -1,0 +1,459 @@
+s77 -- Section/Quire-Matched Herbal-B Scribe Test & Direct Comma/Ink-Gap Alignment + LOQO Rare-Core Component Ablation
+date: 2026-10-18 03:04:14 (datetime.now)
+sha256 s77_deconfounded_scribe_and_comma_ablation_loqo.py: 56eb6afdafdc57654b56a7019ee6a9410752db9ffb08c3a9112f83dd0798cc5d
+sha256 s77_deconfounded_scribe_and_comma_ablation_loqo.prereg.sha256: 96c0a8e77c113d7a8a4c8583fb10087ca55b26eea67f972f77173b2bec53e255
+stub_match: True
+Loaded folio_evidence_inventory.tsv (227 folios with $Q, $B, $F, Davis hand) and s47 ink-gap map (154677 glyph boundaries).
+
+################################################################################
+TRANSLITERATION ZL3b: 207 P* pages (U1 comma-joined pages=207)
+################################################################################
+
+================================================================================
+PART 1 [ZL3b]: SECTION/QUIRE-MATCHED HERBAL-B HAND 2 vs HAND 3 TEST (L-303)
+================================================================================
+  Codicological Breakdown inside Section = H (Herbal) & Quire H [ZL3b]:
+    Hand 2 Herbal-B (Quires D,E,F,G): 20 pages ['f26r', 'f26v', 'f31r', 'f31v', 'f33r', 'f33v', 'f34r', 'f34v', 'f39r', 'f39v', 'f40r', 'f40v', 'f43r', 'f43v', 'f46r', 'f46v', 'f50r', 'f50v', 'f55r', 'f55v'] (bifolios=['D|2', 'E|1', 'E|2', 'F|3', 'G|2'], leaves=10)
+    Hand 2 Herbal-B (Quires E,F,G)  : 16 pages ['f33r', 'f33v', 'f34r', 'f34v', 'f39r', 'f39v', 'f40r', 'f40v', 'f43r', 'f43v', 'f46r', 'f46v', 'f50r', 'f50v', 'f55r', 'f55v']
+    Hand 3 Herbal-B (Quire Q strict): 6 pages ['f94r', 'f94v', 'f95r1', 'f95r2', 'f95v2', 'f95v1'] (bifolio=['Q|2'], leaves=['Q|f94', 'Q|f95'])
+    Hand 3 Herbal   (Quire Q + f65v): 7 pages ['f65v', 'f94r', 'f94v', 'f95r1', 'f95r2', 'f95v2', 'f95v1']
+    Quire H + Quire Q Extended      : 11 pages ['f58r', 'f58v', 'f65v', 'f66r', 'f66v', 'f94r', 'f94v', 'f95r1', 'f95r2', 'f95v2', 'f95v1']
+    Hand 5 Herbal-B (Quires F, H)   : 6 pages ['f41r', 'f41v', 'f48r', 'f48v', 'f57r', 'f66v']
+
+--- C1_Strict_HerbB (Sec=H,Lang=B: H2[20p] vs H3_Q+f65v[7p]) [ZL3b] ---
+  [SlotSegmenter] Nested LOLO/Leaf-Out  : D_sym(all)=-0.1159 (H3->H2=+0.9899, H2->H3=-1.2218, acc=20/27) | D_sym(C_top50)=-0.0954 | D_sym(blind)=+0.0271
+  [SlotSegmenter] Nested LOBO ($Q|$B)   : D_sym(all)=-1.6962 (acc=20/27) | D_sym(C_top50)=-1.9930 | D_sym(blind)=-0.7694
+  [SlotSegmenter] Nested LOQO ($Q)      : D_sym(all)=-1.7352 (H3->H2=+0.7805, H2->H3=-4.2509, acc=20/27) | D_sym(C_top50)=-2.0341 | D_sym(blind)=-0.7874
+    Null P1 (Within-Herbal-B Page Perm)          [n_comb=888030, draws=500]: all null=-0.0638+/-0.0893 (z=+0.48, p=0.3114) | C_top50 p=0.2695 (z=+0.62) | blind p=0.1018 (z=+1.27)
+    Null P2a (Within-Herbal-B Leaf $Q|$F Block)  [n_comb=   286, draws=286]: all null=-0.2061+/-0.1568 (z=+1.18, p=0.0941) | C_top50 p=0.0801 (z=+1.25) | blind p=0.0871 (z=+1.31)
+    Null P2b (Within-Herbal-B Bifolio $Q|$B Block) [n_comb=    21, draws= 21]: all null=-0.0281+/-0.1512 (z=+0.05, p=0.5000) | C_top50 p=0.4545 (z=+0.19) | blind p=0.5000 (z=+0.09)
+    Null P3 (Within-Herbal-B Quire $Q Block)     [n_comb=    15, draws= 15]: all null=-0.0030+/-0.1410 (z=-0.12, p=0.5625) | C_top50 p=0.5000 (z=+0.05) | blind p=0.5625 (z=-0.09)
+  [Seg_Affix2   ] Nested LOLO/Leaf-Out  : D_sym(all)=-0.0342 (H3->H2=+1.0458, H2->H3=-1.1142, acc=20/27) | D_sym(C_top50)=-0.2002 | D_sym(blind)=+0.0298
+  [Seg_Affix2   ] Nested LOBO ($Q|$B)   : D_sym(all)=-1.6434 (acc=20/27) | D_sym(C_top50)=-2.1331 | D_sym(blind)=-0.7325
+  [Seg_Affix2   ] Nested LOQO ($Q)      : D_sym(all)=-1.6931 (H3->H2=+0.8593, H2->H3=-4.2455, acc=20/27) | D_sym(C_top50)=-2.1819 | D_sym(blind)=-0.7723
+
+--- C1b_Strict_EFG_vs_Q (Sec=H,Lang=B: H2_EFG[16p] vs H3_Q[6p]) [ZL3b] ---
+  [SlotSegmenter] Nested LOLO/Leaf-Out  : D_sym(all)=-0.1547 (H3->H2=+0.9195, H2->H3=-1.2289, acc=16/22) | D_sym(C_top50)=-0.1364 | D_sym(blind)=-0.0751
+  [SlotSegmenter] Nested LOBO ($Q|$B)   : D_sym(all)=+0.3890 (acc=16/16) | D_sym(C_top50)=+0.3640 | D_sym(blind)=+0.2415
+    Null P1 (Within-Herbal-B Page Perm)          [n_comb= 74613, draws=500]: all null=-0.0703+/-0.0970 (z=+0.12, p=0.4651) | C_top50 p=0.3633 (z=+0.37) | blind p=0.2535 (z=+0.68)
+    Null P2a (Within-Herbal-B Leaf $Q|$F Block)  [n_comb=    45, draws= 45]: all null=-0.3039+/-0.1951 (z=+1.26, p=0.1522) | C_top50 p=0.1087 (z=+1.36) | blind p=0.1304 (z=+1.08)
+    Null P2b (Within-Herbal-B Bifolio $Q|$B Block) [n_comb=     5, draws=  5]: all null=-0.1409+/-0.0958 (z=+0.86, p=0.5000) | C_top50 p=0.3333 (z=+1.06) | blind p=0.5000 (z=+0.41)
+    Null P3 (Within-Herbal-B Quire $Q Block)     [n_comb=     4, draws=  4]: all null=-0.0658+/-0.0097 (z=+0.78, p=0.6000) | C_top50 p=0.4000 (z=+0.98) | blind p=0.8000 (z=-0.23)
+  [Seg_Affix2   ] Nested LOLO/Leaf-Out  : D_sym(all)=-0.1459 (H3->H2=+0.9164, H2->H3=-1.2082, acc=16/22) | D_sym(C_top50)=-0.2522 | D_sym(blind)=-0.0287
+  [Seg_Affix2   ] Nested LOBO ($Q|$B)   : D_sym(all)=+0.4132 (acc=16/16) | D_sym(C_top50)=+0.3133 | D_sym(blind)=+0.2880
+
+--- C2_Extended_HerbB_QuireH (H2_EFG+f55[16p] vs H3_QuireH+Q[11p]) [ZL3b] ---
+  [SlotSegmenter] Nested LOLO/Leaf-Out  : D_sym(all)=-0.0163 (H3->H2=+0.1634, H2->H3=-0.1960, acc=14/27) | D_sym(C_top50)=-0.0108 | D_sym(blind)=+0.0195
+  [SlotSegmenter] Nested LOBO ($Q|$B)   : D_sym(all)=-0.2232 (acc=7/27) | D_sym(C_top50)=-0.2270 | D_sym(blind)=-0.0795
+  [SlotSegmenter] Nested LOQO ($Q)      : D_sym(all)=-0.4724 (H3->H2=-0.0960, H2->H3=-0.8487, acc=6/27) | D_sym(C_top50)=-0.4967 | D_sym(blind)=-0.1628
+    Null P1 (Within-Herbal-B Page Perm)          [n_comb=13037895, draws=500]: all null=-0.0523+/-0.0621 (z=+0.76, p=0.2196) | C_top50 p=0.1477 (z=+1.00) | blind p=0.2236 (z=+0.72)
+    Null P2a (Within-Herbal-B Leaf $Q|$F Block)  [n_comb=  1287, draws=500]: all null=-0.1227+/-0.0741 (z=+1.59, p=0.0479) | C_top50 p=0.0399 (z=+1.76) | blind p=0.1038 (z=+1.24)
+    Null P2b (Within-Herbal-B Bifolio $Q|$B Block) [n_comb=    35, draws= 35]: all null=-0.0697+/-0.0633 (z=+1.02, p=0.2222) | C_top50 p=0.2500 (z=+1.06) | blind p=0.2500 (z=+0.68)
+    Null P3 (Within-Herbal-B Quire $Q Block)     [n_comb=    10, draws= 10]: all null=-0.0495+/-0.0489 (z=+0.91, p=0.4545) | C_top50 p=0.3636 (z=+0.94) | blind p=0.4545 (z=+0.45)
+  [Seg_Affix2   ] Nested LOLO/Leaf-Out  : D_sym(all)=+0.0229 (H3->H2=+0.1659, H2->H3=-0.1201, acc=13/27) | D_sym(C_top50)=+0.0395 | D_sym(blind)=-0.0365
+  [Seg_Affix2   ] Nested LOBO ($Q|$B)   : D_sym(all)=-0.0863 (acc=10/27) | D_sym(C_top50)=-0.0531 | D_sym(blind)=-0.1118
+  [Seg_Affix2   ] Nested LOQO ($Q)      : D_sym(all)=-0.3182 (H3->H2=-0.0822, H2->H3=-0.5541, acc=7/27) | D_sym(C_top50)=-0.2758 | D_sym(blind)=-0.2147
+
+--- 1B. Direct Intra-Quire Contrasts (Quire H & Quire F) & Out-of-Section Cross-Projection [ZL3b] ---
+  Out-of-Quire Cross-Projection (Train: Q_M[H2,Bio] vs Q_T[H3,Stars] -> Test: Untouched Herbal-B Sec=H):
+    [All Tokens (Core-Cond)] Delta_H on H2_HerbB(20p)=-0.6978, Delta_H on H3_HerbB(7p)=+0.7187, D_sym=+0.0104 | Blind Page ID: H2=0/20, H3=7/7
+  Out-of-Quire Cross-Projection (Train: Q_M[H2,Bio] vs Q_T[H3,Stars] -> Test: Untouched Herbal-B Sec=H):
+    [Shared Top-50 Cores   ] Delta_H on H2_HerbB(20p)=-0.6599, Delta_H on H3_HerbB(7p)=+0.5952, D_sym=-0.0324 | Blind Page ID: H2=0/20, H3=7/7
+  Out-of-Quire Cross-Projection (Train: Q_M[H2,Bio] vs Q_T[H3,Stars] -> Test: Untouched Herbal-B Sec=H):
+    [Core-Blind Transitions] Delta_H on H2_HerbB(20p)=-0.6617, Delta_H on H3_HerbB(7p)=+0.4780, D_sym=-0.0918 | Blind Page ID: H2=0/20, H3=7/7
+  Direct Per-Page Cross-Entropy (H(page|H3_Q_T) - H(page|H2_Q_M)) on Quire G/H/Q Transition Folios:
+    f50r(Q=G,S=H,L=B,H=2):-0.737 | f50v(Q=G,S=H,L=B,H=2):-0.905 | f55r(Q=G,S=H,L=B,H=2):-0.658 | f55v(Q=G,S=H,L=B,H=2):-0.558 | f57r(Q=H,S=H,L=B,H=5):-1.664 | f58r(Q=H,S=S,L=A,H=3):-1.390 | f58v(Q=H,S=S,L=A,H=3):-1.129 | f65v(Q=H,S=H,L=?,H=3):-0.996
+    f66r(Q=H,S=T,L=B,H=5):-0.768 | f66v(Q=H,S=H,L=B,H=5):-1.229 | f94r(Q=Q,S=H,L=B,H=3):-0.347 | f94v(Q=Q,S=H,L=B,H=3):-0.987 | f95r1(Q=Q,S=H,L=B,H=3):-0.547 | f95r2(Q=Q,S=H,L=B,H=3):-1.062 | f95v2(Q=Q,S=H,L=B,H=3):-0.539 | f95v1(Q=Q,S=H,L=B,H=3):-0.648
+
+--- 1C. 2x2 Factorial Decomposition: How Much of s60's Currier-B Divergence (D_sym=+0.41) is Section vs Hand? [ZL3b] ---
+  1. Unstratified Currier-B (All H2_CurB vs All H3_CurB, s60 baseline): D_sym(all)=+0.2940 | D_sym(C_top50)=+0.2799 | D_sym(blind)=+0.2337
+  2. Cross-Hand + Cross-Section (H2_Bio[Sec=B] vs H3_Stars[Sec=S])     : D_sym(all)=+0.7344 | D_sym(C_top50)=+0.6874 | D_sym(blind)=+0.5182
+  3. Same-Hand-2 Cross-Section  (H2_Bio[Sec=B] vs H2_HerbB[Sec=H])     : D_sym(all)=+1.0725 | D_sym(C_top50)=+1.1046 | D_sym(blind)=+0.8614
+  4. Same-Hand-3 Cross-Section  (H3_Stars[Sec=S] vs H3_HerbB[Sec=H])   : D_sym(all)=+0.3504 | D_sym(C_top50)=+0.3974 | D_sym(blind)=+0.2375
+  5. Same-Section-H Cross-Hand  (H2_HerbB[Sec=H] vs H3_HerbB[Sec=H])   : D_sym(all)=-0.1159 | D_sym(C_top50)=-0.0954 | D_sym(blind)=+0.0271
+  -> Pure Within-Section Hand Retention Share (Row 5 / Row 1)          : all=-39.4%, C_top50=-34.1%, blind=11.6%
+
+================================================================================
+PART 2A [ZL3b]: DIRECT COMMA ',' & s47 INK-GAP ALIGNMENT OF B2 SPLITS + B1_1CHAR vs B1_MULTI (L-304)
+================================================================================
+
+  [Standard_Split__SlotSegmenter] 15-Quire LOQO Unseen Core Breakdown (N_unseen=1772, N_rare_events=8326):
+    B1 Total Boundary Bleed/Reparse = 1280/1772 (72.23%): Strict 1-Char Shift (B1_1char) = 1062 (59.93%) vs Multi-Char Reparse Only (B1_multi) =  218 (12.30%)
+    Waterfall Remainder: B2_comp(>=2+>=2)=19.47%, B3_subglyph= 0.06%, B4_edit1= 2.43%, B5_distal= 5.81%
+    Cross-Segmenter Sensitivity:  493/1772 (27.82%) of unseen cores disappear (become attested training cores) under the alternate segmenter!
+    Strictly Unseen Held-Out Cores (N=1772, marginal B2_len2=1259 [71.05%] vs char-shuffled null B2_len2=270 [15.24%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/1259 ( 0.00%) [any comma in word: 0/1259 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):   83/1259 ( 6.59%) [comma only: 31/1259 ( 2.46%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):   83/1259 ( 6.59%) vs Pure Unbroken String Split: 1176/1259 (93.41%) [shuffled null break align: 7/270 ( 2.59%)]
+      - s47 Physical Ink-Gap Alignment at C1|C2 (n=1077 aligned B2 boundaries vs 1475 non-B2 internal boundaries):
+        C1|C2 median r = 0.4175 (ink-space call rate = 39/1077 =  3.62%) vs non-B2 internal median r = 0.3736 (ink-space call rate =  3.32%) [ref s47: N=0.3737 (3.37%), Comma C=0.9400 (44.83%), Dot D=1.8601 (91.37%)]
+    First-on-Page Rare Cores (s59/s63) (N=8326, marginal B2_len2=2662 [31.97%] vs char-shuffled null B2_len2=495 [ 5.95%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/2662 ( 0.00%) [any comma in word: 0/2662 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):  142/2662 ( 5.33%) [comma only: 56/2662 ( 2.10%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):  142/2662 ( 5.33%) vs Pure Unbroken String Split: 2520/2662 (94.67%) [shuffled null break align: 10/495 ( 2.02%)]
+      - s47 Physical Ink-Gap Alignment at C1|C2 (n=2046 aligned B2 boundaries vs 2692 non-B2 internal boundaries):
+        C1|C2 median r = 0.3967 (ink-space call rate = 65/2046 =  3.18%) vs non-B2 internal median r = 0.3766 (ink-space call rate =  2.67%) [ref s47: N=0.3737 (3.37%), Comma C=0.9400 (44.83%), Dot D=1.8601 (91.37%)]
+
+  [Standard_Split__Seg_Affix2] 15-Quire LOQO Unseen Core Breakdown (N_unseen=2185, N_rare_events=10968):
+    B1 Total Boundary Bleed/Reparse = 1508/2185 (69.02%): Strict 1-Char Shift (B1_1char) = 1394 (63.80%) vs Multi-Char Reparse Only (B1_multi) =  114 ( 5.22%)
+    Waterfall Remainder: B2_comp(>=2+>=2)=23.43%, B3_subglyph= 0.05%, B4_edit1= 2.70%, B5_distal= 4.81%
+    Cross-Segmenter Sensitivity:  906/2185 (41.46%) of unseen cores disappear (become attested training cores) under the alternate segmenter!
+    Strictly Unseen Held-Out Cores (N=2185, marginal B2_len2=1701 [77.85%] vs char-shuffled null B2_len2=549 [25.13%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/1701 ( 0.00%) [any comma in word: 0/1701 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):  113/1701 ( 6.64%) [comma only: 43/1701 ( 2.53%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):  113/1701 ( 6.64%) vs Pure Unbroken String Split: 1588/1701 (93.36%) [shuffled null break align: 14/549 ( 2.55%)]
+      - s47 Physical Ink-Gap Alignment at C1|C2 (n=1604 aligned B2 boundaries vs 2109 non-B2 internal boundaries):
+        C1|C2 median r = 0.4182 (ink-space call rate = 45/1604 =  2.81%) vs non-B2 internal median r = 0.3720 (ink-space call rate =  3.46%) [ref s47: N=0.3737 (3.37%), Comma C=0.9400 (44.83%), Dot D=1.8601 (91.37%)]
+    First-on-Page Rare Cores (s59/s63) (N=10968, marginal B2_len2=4055 [36.97%] vs char-shuffled null B2_len2=1117 [10.18%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/4055 ( 0.00%) [any comma in word: 0/4055 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):  205/4055 ( 5.06%) [comma only: 89/4055 ( 2.19%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):  205/4055 ( 5.06%) vs Pure Unbroken String Split: 3850/4055 (94.94%) [shuffled null break align: 20/1117 ( 1.79%)]
+      - s47 Physical Ink-Gap Alignment at C1|C2 (n=3091 aligned B2 boundaries vs 4344 non-B2 internal boundaries):
+        C1|C2 median r = 0.4031 (ink-space call rate = 97/3091 =  3.14%) vs non-B2 internal median r = 0.3806 (ink-space call rate =  3.43%) [ref s47: N=0.3737 (3.37%), Comma C=0.9400 (44.83%), Dot D=1.8601 (91.37%)]
+
+  [U1_CommaJoined__SlotSegmenter] 15-Quire LOQO Unseen Core Breakdown (N_unseen=2375, N_rare_events=9240):
+    B1 Total Boundary Bleed/Reparse = 1510/2375 (63.58%): Strict 1-Char Shift (B1_1char) = 1270 (53.47%) vs Multi-Char Reparse Only (B1_multi) =  240 (10.11%)
+    Waterfall Remainder: B2_comp(>=2+>=2)=23.62%, B3_subglyph= 0.25%, B4_edit1= 2.06%, B5_distal=10.48%
+    Cross-Segmenter Sensitivity:  566/2375 (23.83%) of unseen cores disappear (become attested training cores) under the alternate segmenter!
+    Strictly Unseen Held-Out Cores (N=2375, marginal B2_len2=1671 [70.36%] vs char-shuffled null B2_len2=360 [15.16%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):  297/1671 (17.77%) [any comma in word: 554/1671 (33.15%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):  337/1671 (20.17%) [comma only: 26/1671 ( 1.56%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):  384/1671 (22.98%) vs Pure Unbroken String Split: 1287/1671 (77.02%) [shuffled null break align: 33/360 ( 9.17%)]
+      - s47 Physical Ink-Gap Alignment at C1|C2 (n=1423 aligned B2 boundaries vs 2062 non-B2 internal boundaries):
+        C1|C2 median r = 0.4429 (ink-space call rate = 116/1423 =  8.15%) vs non-B2 internal median r = 0.3949 (ink-space call rate =  5.58%) [ref s47: N=0.3737 (3.37%), Comma C=0.9400 (44.83%), Dot D=1.8601 (91.37%)]
+    First-on-Page Rare Cores (s59/s63) (N=9240, marginal B2_len2=3346 [36.21%] vs char-shuffled null B2_len2=608 [ 6.58%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):  457/3346 (13.66%) [any comma in word: 891/3346 (26.63%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):  538/3346 (16.08%) [comma only: 51/3346 ( 1.52%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):  606/3346 (18.11%) vs Pure Unbroken String Split: 2740/3346 (81.89%) [shuffled null break align: 45/608 ( 7.40%)]
+      - s47 Physical Ink-Gap Alignment at C1|C2 (n=2583 aligned B2 boundaries vs 3529 non-B2 internal boundaries):
+        C1|C2 median r = 0.4347 (ink-space call rate = 186/2583 =  7.20%) vs non-B2 internal median r = 0.3966 (ink-space call rate =  5.16%) [ref s47: N=0.3737 (3.37%), Comma C=0.9400 (44.83%), Dot D=1.8601 (91.37%)]
+
+================================================================================
+PART 2B [ZL3b]: PRE-REGISTERED 6-MODEL COMPONENT ABLATION ON 15 LOQO FOLDS (L-304)
+================================================================================
+
+  --- [SlotSegmenter] 15-Quire LOQO Held-Out Cross-Entropy on Strictly Unseen Cores (ZL3b: 1772 tok, 1639 types across 16 quires) ---
+  Model              | bits/core | bits/char |  Delta vs M0_char2 (95% Quire-Boot CI) | Quires Won | Share of M5 Gain
+  ----------------------------------------------------------------------------------------------------------------
+  M0_char2           |   16.3181 |    2.6249 |  +0.0000 [ +0.0000,  +0.0000]         |    0/16    |            0.0%
+  M0_char3           |   16.8752 |    2.7145 |  +0.5571 [ +0.4614,  +0.6985]         |    0/16    |         -362.2%
+  M1_bleed1_only     |   16.2461 |    2.6133 |  -0.0720 [ -0.1097,  -0.0407]         |   13/16    |           46.8%
+  M2_reparse_only    |   16.2989 |    2.6218 |  -0.0191 [ -0.0368,  -0.0011]         |   10/16    |           12.5%
+  M3_comp_only       |   16.2320 |    2.6110 |  -0.0861 [ -0.1316,  -0.0112]         |   11/16    |           56.0%
+  M4_subglyph_only   |   16.2922 |    2.6207 |  -0.0258 [ -0.0438,  -0.0152]         |   13/16    |           16.8%
+  M5_joint_all       |   16.1643 |    2.6001 |  -0.1538 [ -0.1894,  -0.0897]         |   14/16    |          100.0%
+
+  --- [Seg_Affix2] 15-Quire LOQO Held-Out Cross-Entropy on Strictly Unseen Cores (ZL3b: 2185 tok, 2005 types across 16 quires) ---
+  Model              | bits/core | bits/char |  Delta vs M0_char2 (95% Quire-Boot CI) | Quires Won | Share of M5 Gain
+  ----------------------------------------------------------------------------------------------------------------
+  M0_char2           |   16.3928 |    2.7014 |  +0.0000 [ +0.0000,  +0.0000]         |    0/16    |            0.0%
+  M0_char3           |   16.8425 |    2.7755 |  +0.4496 [ +0.4049,  +0.5186]         |    0/16    |         -490.6%
+  M1_bleed1_only     |   16.3677 |    2.6973 |  -0.0252 [ -0.0530,  -0.0077]         |   11/16    |           27.5%
+  M2_reparse_only    |   16.3900 |    2.7010 |  -0.0028 [ -0.0178,  +0.0057]         |    6/16    |            3.1%
+  M3_comp_only       |   16.3481 |    2.6941 |  -0.0448 [ -0.0600,  -0.0161]         |   11/16    |           48.9%
+  M4_subglyph_only   |   16.3245 |    2.6902 |  -0.0683 [ -0.0911,  -0.0519]         |   15/16    |           74.5%
+  M5_joint_all       |   16.3012 |    2.6863 |  -0.0916 [ -0.1364,  -0.0552]         |   12/16    |          100.0%
+
+[ZL3b completed in 421.4s]
+
+################################################################################
+TRANSLITERATION RF1b: 207 P* pages (U1 comma-joined pages=207)
+################################################################################
+
+================================================================================
+PART 1 [RF1b]: SECTION/QUIRE-MATCHED HERBAL-B HAND 2 vs HAND 3 TEST (L-303)
+================================================================================
+  Codicological Breakdown inside Section = H (Herbal) & Quire H [RF1b]:
+    Hand 2 Herbal-B (Quires D,E,F,G): 20 pages ['f26r', 'f26v', 'f31r', 'f31v', 'f33r', 'f33v', 'f34r', 'f34v', 'f39r', 'f39v', 'f40r', 'f40v', 'f43r', 'f43v', 'f46r', 'f46v', 'f50r', 'f50v', 'f55r', 'f55v'] (bifolios=['D|2', 'E|1', 'E|2', 'F|3', 'G|2'], leaves=10)
+    Hand 2 Herbal-B (Quires E,F,G)  : 16 pages ['f33r', 'f33v', 'f34r', 'f34v', 'f39r', 'f39v', 'f40r', 'f40v', 'f43r', 'f43v', 'f46r', 'f46v', 'f50r', 'f50v', 'f55r', 'f55v']
+    Hand 3 Herbal-B (Quire Q strict): 6 pages ['f94r', 'f94v', 'f95r1', 'f95r2', 'f95v2', 'f95v1'] (bifolio=['Q|2'], leaves=['Q|f94', 'Q|f95'])
+    Hand 3 Herbal   (Quire Q + f65v): 7 pages ['f65v', 'f94r', 'f94v', 'f95r1', 'f95r2', 'f95v2', 'f95v1']
+    Quire H + Quire Q Extended      : 11 pages ['f58r', 'f58v', 'f65v', 'f66r', 'f66v', 'f94r', 'f94v', 'f95r1', 'f95r2', 'f95v2', 'f95v1']
+    Hand 5 Herbal-B (Quires F, H)   : 6 pages ['f41r', 'f41v', 'f48r', 'f48v', 'f57r', 'f66v']
+
+--- C1_Strict_HerbB (Sec=H,Lang=B: H2[20p] vs H3_Q+f65v[7p]) [RF1b] ---
+  [SlotSegmenter] Nested LOLO/Leaf-Out  : D_sym(all)=-0.1449 (H3->H2=+0.8511, H2->H3=-1.1410, acc=20/27) | D_sym(C_top50)=-0.1477 | D_sym(blind)=+0.0707
+  [SlotSegmenter] Nested LOBO ($Q|$B)   : D_sym(all)=-1.7344 (acc=20/27) | D_sym(C_top50)=-2.1254 | D_sym(blind)=-0.7314
+  [SlotSegmenter] Nested LOQO ($Q)      : D_sym(all)=-1.7618 (H3->H2=+0.7075, H2->H3=-4.2311, acc=20/27) | D_sym(C_top50)=-2.1635 | D_sym(blind)=-0.7497
+    Null P1 (Within-Herbal-B Page Perm)          [n_comb=888030, draws=500]: all null=-0.0615+/-0.0868 (z=+0.14, p=0.4790) | C_top50 p=0.5968 (z=-0.15) | blind p=0.2156 (z=+0.76)
+    Null P2a (Within-Herbal-B Leaf $Q|$F Block)  [n_comb=   286, draws=286]: all null=-0.2020+/-0.1405 (z=+1.09, p=0.1185) | C_top50 p=0.1533 (z=+0.91) | blind p=0.1254 (z=+1.16)
+    Null P2b (Within-Herbal-B Bifolio $Q|$B Block) [n_comb=    21, draws= 21]: all null=-0.0341+/-0.1334 (z=-0.11, p=0.5000) | C_top50 p=0.5455 (z=-0.25) | blind p=0.5000 (z=-0.09)
+    Null P3 (Within-Herbal-B Quire $Q Block)     [n_comb=    15, draws= 15]: all null=-0.0102+/-0.1198 (z=-0.33, p=0.6250) | C_top50 p=0.6875 (z=-0.47) | blind p=0.5000 (z=-0.24)
+  [Seg_Affix2   ] Nested LOLO/Leaf-Out  : D_sym(all)=-0.0081 (H3->H2=+1.0499, H2->H3=-1.0661, acc=20/27) | D_sym(C_top50)=+0.0039 | D_sym(blind)=+0.0150
+  [Seg_Affix2   ] Nested LOBO ($Q|$B)   : D_sym(all)=-1.7896 (acc=20/27) | D_sym(C_top50)=-2.2234 | D_sym(blind)=-0.8491
+  [Seg_Affix2   ] Nested LOQO ($Q)      : D_sym(all)=-1.8314 (H3->H2=+0.8573, H2->H3=-4.5202, acc=20/27) | D_sym(C_top50)=-2.2626 | D_sym(blind)=-0.8770
+
+--- C1b_Strict_EFG_vs_Q (Sec=H,Lang=B: H2_EFG[16p] vs H3_Q[6p]) [RF1b] ---
+  [SlotSegmenter] Nested LOLO/Leaf-Out  : D_sym(all)=-0.1892 (H3->H2=+0.8383, H2->H3=-1.2167, acc=16/22) | D_sym(C_top50)=-0.1042 | D_sym(blind)=+0.0371
+  [SlotSegmenter] Nested LOBO ($Q|$B)   : D_sym(all)=+0.3546 (acc=16/16) | D_sym(C_top50)=+0.3450 | D_sym(blind)=+0.2537
+    Null P1 (Within-Herbal-B Page Perm)          [n_comb= 74613, draws=500]: all null=-0.0706+/-0.0918 (z=-0.03, p=0.5130) | C_top50 p=0.5170 (z=-0.03) | blind p=0.1238 (z=+1.20)
+    Null P2a (Within-Herbal-B Leaf $Q|$F Block)  [n_comb=    45, draws= 45]: all null=-0.3030+/-0.1664 (z=+1.38, p=0.1087) | C_top50 p=0.1304 (z=+1.33) | blind p=0.1304 (z=+1.52)
+    Null P2b (Within-Herbal-B Bifolio $Q|$B Block) [n_comb=     5, draws=  5]: all null=-0.1661+/-0.1121 (z=+0.83, p=0.5000) | C_top50 p=0.5000 (z=+0.85) | blind p=0.5000 (z=+0.98)
+    Null P3 (Within-Herbal-B Quire $Q Block)     [n_comb=     4, draws=  4]: all null=-0.0845+/-0.0181 (z=+0.63, p=0.6000) | C_top50 p=0.6000 (z=+0.85) | blind p=0.6000 (z=+0.63)
+  [Seg_Affix2   ] Nested LOLO/Leaf-Out  : D_sym(all)=-0.1533 (H3->H2=+0.9127, H2->H3=-1.2193, acc=16/22) | D_sym(C_top50)=-0.0619 | D_sym(blind)=-0.0726
+  [Seg_Affix2   ] Nested LOBO ($Q|$B)   : D_sym(all)=+0.4221 (acc=16/16) | D_sym(C_top50)=+0.3685 | D_sym(blind)=+0.2589
+
+--- C2_Extended_HerbB_QuireH (H2_EFG+f55[16p] vs H3_QuireH+Q[11p]) [RF1b] ---
+  [SlotSegmenter] Nested LOLO/Leaf-Out  : D_sym(all)=-0.0528 (H3->H2=+0.0836, H2->H3=-0.1892, acc=11/27) | D_sym(C_top50)=+0.0024 | D_sym(blind)=+0.0343
+  [SlotSegmenter] Nested LOBO ($Q|$B)   : D_sym(all)=-0.2393 (acc=5/27) | D_sym(C_top50)=-0.1888 | D_sym(blind)=-0.0456
+  [SlotSegmenter] Nested LOQO ($Q)      : D_sym(all)=-0.5020 (H3->H2=-0.1903, H2->H3=-0.8136, acc=4/27) | D_sym(C_top50)=-0.4835 | D_sym(blind)=-0.1484
+    Null P1 (Within-Herbal-B Page Perm)          [n_comb=13037895, draws=500]: all null=-0.0529+/-0.0649 (z=+0.38, p=0.3633) | C_top50 p=0.2315 (z=+0.73) | blind p=0.2814 (z=+0.56)
+    Null P2a (Within-Herbal-B Leaf $Q|$F Block)  [n_comb=  1287, draws=500]: all null=-0.1272+/-0.0790 (z=+1.26, p=0.1138) | C_top50 p=0.0579 (z=+1.57) | blind p=0.1597 (z=+1.09)
+    Null P2b (Within-Herbal-B Bifolio $Q|$B Block) [n_comb=    35, draws= 35]: all null=-0.0832+/-0.0705 (z=+0.78, p=0.2222) | C_top50 p=0.2500 (z=+0.92) | blind p=0.3056 (z=+0.59)
+    Null P3 (Within-Herbal-B Quire $Q Block)     [n_comb=    10, draws= 10]: all null=-0.0630+/-0.0529 (z=+0.66, p=0.3636) | C_top50 p=0.2727 (z=+0.82) | blind p=0.6364 (z=+0.26)
+  [Seg_Affix2   ] Nested LOLO/Leaf-Out  : D_sym(all)=+0.0098 (H3->H2=+0.1813, H2->H3=-0.1617, acc=12/27) | D_sym(C_top50)=+0.1042 | D_sym(blind)=-0.0233
+  [Seg_Affix2   ] Nested LOBO ($Q|$B)   : D_sym(all)=-0.1034 (acc=9/27) | D_sym(C_top50)=-0.0354 | D_sym(blind)=-0.0819
+  [Seg_Affix2   ] Nested LOQO ($Q)      : D_sym(all)=-0.3314 (H3->H2=-0.0364, H2->H3=-0.6263, acc=5/27) | D_sym(C_top50)=-0.2613 | D_sym(blind)=-0.1772
+
+--- 1B. Direct Intra-Quire Contrasts (Quire H & Quire F) & Out-of-Section Cross-Projection [RF1b] ---
+  Out-of-Quire Cross-Projection (Train: Q_M[H2,Bio] vs Q_T[H3,Stars] -> Test: Untouched Herbal-B Sec=H):
+    [All Tokens (Core-Cond)] Delta_H on H2_HerbB(20p)=-0.6931, Delta_H on H3_HerbB(7p)=+0.7273, D_sym=+0.0171 | Blind Page ID: H2=0/20, H3=7/7
+  Out-of-Quire Cross-Projection (Train: Q_M[H2,Bio] vs Q_T[H3,Stars] -> Test: Untouched Herbal-B Sec=H):
+    [Shared Top-50 Cores   ] Delta_H on H2_HerbB(20p)=-0.6240, Delta_H on H3_HerbB(7p)=+0.5330, D_sym=-0.0455 | Blind Page ID: H2=0/20, H3=7/7
+  Out-of-Quire Cross-Projection (Train: Q_M[H2,Bio] vs Q_T[H3,Stars] -> Test: Untouched Herbal-B Sec=H):
+    [Core-Blind Transitions] Delta_H on H2_HerbB(20p)=-0.6559, Delta_H on H3_HerbB(7p)=+0.4935, D_sym=-0.0812 | Blind Page ID: H2=0/20, H3=7/7
+  Direct Per-Page Cross-Entropy (H(page|H3_Q_T) - H(page|H2_Q_M)) on Quire G/H/Q Transition Folios:
+    f50r(Q=G,S=H,L=B,H=2):-0.798 | f50v(Q=G,S=H,L=B,H=2):-1.049 | f55r(Q=G,S=H,L=B,H=2):-0.675 | f55v(Q=G,S=H,L=B,H=2):-0.542 | f57r(Q=H,S=H,L=B,H=5):-1.714 | f58r(Q=H,S=S,L=A,H=3):-1.358 | f58v(Q=H,S=S,L=A,H=3):-1.363 | f65v(Q=H,S=H,L=?,H=3):-1.215
+    f66r(Q=H,S=T,L=B,H=5):-0.813 | f66v(Q=H,S=H,L=B,H=5):-1.143 | f94r(Q=Q,S=H,L=B,H=3):-0.168 | f94v(Q=Q,S=H,L=B,H=3):-1.275 | f95r1(Q=Q,S=H,L=B,H=3):-0.413 | f95r2(Q=Q,S=H,L=B,H=3):-0.865 | f95v2(Q=Q,S=H,L=B,H=3):-0.411 | f95v1(Q=Q,S=H,L=B,H=3):-0.815
+
+--- 1C. 2x2 Factorial Decomposition: How Much of s60's Currier-B Divergence (D_sym=+0.41) is Section vs Hand? [RF1b] ---
+  1. Unstratified Currier-B (All H2_CurB vs All H3_CurB, s60 baseline): D_sym(all)=+0.2975 | D_sym(C_top50)=+0.2796 | D_sym(blind)=+0.2519
+  2. Cross-Hand + Cross-Section (H2_Bio[Sec=B] vs H3_Stars[Sec=S])     : D_sym(all)=+0.7050 | D_sym(C_top50)=+0.6277 | D_sym(blind)=+0.5553
+  3. Same-Hand-2 Cross-Section  (H2_Bio[Sec=B] vs H2_HerbB[Sec=H])     : D_sym(all)=+0.8882 | D_sym(C_top50)=+0.8419 | D_sym(blind)=+0.7180
+  4. Same-Hand-3 Cross-Section  (H3_Stars[Sec=S] vs H3_HerbB[Sec=H])   : D_sym(all)=+0.4496 | D_sym(C_top50)=+0.4868 | D_sym(blind)=+0.2723
+  5. Same-Section-H Cross-Hand  (H2_HerbB[Sec=H] vs H3_HerbB[Sec=H])   : D_sym(all)=-0.1449 | D_sym(C_top50)=-0.1477 | D_sym(blind)=+0.0707
+  -> Pure Within-Section Hand Retention Share (Row 5 / Row 1)          : all=-48.7%, C_top50=-52.8%, blind=28.0%
+
+================================================================================
+PART 2A [RF1b]: DIRECT COMMA ',' & s47 INK-GAP ALIGNMENT OF B2 SPLITS + B1_1CHAR vs B1_MULTI (L-304)
+================================================================================
+
+  [Standard_Split__SlotSegmenter] 15-Quire LOQO Unseen Core Breakdown (N_unseen=1952, N_rare_events=8679):
+    B1 Total Boundary Bleed/Reparse = 1357/1952 (69.52%): Strict 1-Char Shift (B1_1char) = 1122 (57.48%) vs Multi-Char Reparse Only (B1_multi) =  235 (12.04%)
+    Waterfall Remainder: B2_comp(>=2+>=2)=21.98%, B3_subglyph= 0.05%, B4_edit1= 1.79%, B5_distal= 6.66%
+    Cross-Segmenter Sensitivity:  549/1952 (28.12%) of unseen cores disappear (become attested training cores) under the alternate segmenter!
+    Strictly Unseen Held-Out Cores (N=1952, marginal B2_len2=1431 [73.31%] vs char-shuffled null B2_len2=341 [17.47%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/1431 ( 0.00%) [any comma in word: 0/1431 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):  142/1431 ( 9.92%) [comma only: 74/1431 ( 5.17%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):  142/1431 ( 9.92%) vs Pure Unbroken String Split: 1289/1431 (90.08%) [shuffled null break align: 17/341 ( 4.99%)]
+    First-on-Page Rare Cores (s59/s63) (N=8679, marginal B2_len2=2895 [33.36%] vs char-shuffled null B2_len2=565 [ 6.51%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/2895 ( 0.00%) [any comma in word: 0/2895 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):  199/2895 ( 6.87%) [comma only: 106/2895 ( 3.66%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):  199/2895 ( 6.87%) vs Pure Unbroken String Split: 2696/2895 (93.13%) [shuffled null break align: 21/565 ( 3.72%)]
+
+  [Standard_Split__Seg_Affix2] 15-Quire LOQO Unseen Core Breakdown (N_unseen=2304, N_rare_events=11139):
+    B1 Total Boundary Bleed/Reparse = 1533/2304 (66.54%): Strict 1-Char Shift (B1_1char) = 1411 (61.24%) vs Multi-Char Reparse Only (B1_multi) =  122 ( 5.30%)
+    Waterfall Remainder: B2_comp(>=2+>=2)=25.39%, B3_subglyph= 0.09%, B4_edit1= 2.04%, B5_distal= 5.95%
+    Cross-Segmenter Sensitivity:  901/2304 (39.11%) of unseen cores disappear (become attested training cores) under the alternate segmenter!
+    Strictly Unseen Held-Out Cores (N=2304, marginal B2_len2=1786 [77.52%] vs char-shuffled null B2_len2=534 [23.18%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/1786 ( 0.00%) [any comma in word: 0/1786 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):  179/1786 (10.02%) [comma only: 103/1786 ( 5.77%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):  179/1786 (10.02%) vs Pure Unbroken String Split: 1607/1786 (89.98%) [shuffled null break align: 26/534 ( 4.87%)]
+    First-on-Page Rare Cores (s59/s63) (N=11139, marginal B2_len2=4155 [37.30%] vs char-shuffled null B2_len2=1186 [10.65%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/4155 ( 0.00%) [any comma in word: 0/4155 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):  285/4155 ( 6.86%) [comma only: 159/4155 ( 3.83%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):  285/4155 ( 6.86%) vs Pure Unbroken String Split: 3870/4155 (93.14%) [shuffled null break align: 41/1186 ( 3.46%)]
+
+  [U1_CommaJoined__SlotSegmenter] 15-Quire LOQO Unseen Core Breakdown (N_unseen=2037, N_rare_events=8824):
+    B1 Total Boundary Bleed/Reparse = 1379/2037 (67.70%): Strict 1-Char Shift (B1_1char) = 1133 (55.62%) vs Multi-Char Reparse Only (B1_multi) =  246 (12.08%)
+    Waterfall Remainder: B2_comp(>=2+>=2)=22.88%, B3_subglyph= 0.05%, B4_edit1= 1.91%, B5_distal= 7.46%
+    Cross-Segmenter Sensitivity:  547/2037 (26.85%) of unseen cores disappear (become attested training cores) under the alternate segmenter!
+    Strictly Unseen Held-Out Cores (N=2037, marginal B2_len2=1487 [73.00%] vs char-shuffled null B2_len2=334 [16.40%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):   55/1487 ( 3.70%) [any comma in word: 90/1487 ( 6.05%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):  174/1487 (11.70%) [comma only: 73/1487 ( 4.91%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):  196/1487 (13.18%) vs Pure Unbroken String Split: 1291/1487 (86.82%) [shuffled null break align: 18/334 ( 5.39%)]
+    First-on-Page Rare Cores (s59/s63) (N=8824, marginal B2_len2=3015 [34.17%] vs char-shuffled null B2_len2=576 [ 6.53%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):   84/3015 ( 2.79%) [any comma in word: 152/3015 ( 5.04%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):  255/3015 ( 8.46%) [comma only: 108/3015 ( 3.58%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):  285/3015 ( 9.45%) vs Pure Unbroken String Split: 2730/3015 (90.55%) [shuffled null break align: 24/576 ( 4.17%)]
+
+================================================================================
+PART 2B [RF1b]: PRE-REGISTERED 6-MODEL COMPONENT ABLATION ON 15 LOQO FOLDS (L-304)
+================================================================================
+
+  --- [SlotSegmenter] 15-Quire LOQO Held-Out Cross-Entropy on Strictly Unseen Cores (RF1b: 1952 tok, 1809 types across 16 quires) ---
+  Model              | bits/core | bits/char |  Delta vs M0_char2 (95% Quire-Boot CI) | Quires Won | Share of M5 Gain
+  ----------------------------------------------------------------------------------------------------------------
+  M0_char2           |   16.5772 |    2.5868 |  +0.0000 [ +0.0000,  +0.0000]         |    0/16    |            0.0%
+  M0_char3           |   17.1505 |    2.6763 |  +0.5733 [ +0.4584,  +0.6981]         |    1/16    |         -597.8%
+  M1_bleed1_only     |   16.5354 |    2.5803 |  -0.0418 [ -0.0856,  -0.0174]         |   12/16    |           43.6%
+  M2_reparse_only    |   16.5574 |    2.5837 |  -0.0198 [ -0.0372,  -0.0017]         |    8/16    |           20.7%
+  M3_comp_only       |   16.5278 |    2.5791 |  -0.0494 [ -0.0841,  +0.0117]         |    7/16    |           51.6%
+  M4_subglyph_only   |   16.5624 |    2.5845 |  -0.0148 [ -0.0203,  -0.0051]         |    9/16    |           15.4%
+  M5_joint_all       |   16.4814 |    2.5719 |  -0.0959 [ -0.1262,  -0.0466]         |   11/16    |          100.0%
+
+  --- [Seg_Affix2] 15-Quire LOQO Held-Out Cross-Entropy on Strictly Unseen Cores (RF1b: 2304 tok, 2152 types across 16 quires) ---
+  Model              | bits/core | bits/char |  Delta vs M0_char2 (95% Quire-Boot CI) | Quires Won | Share of M5 Gain
+  ----------------------------------------------------------------------------------------------------------------
+  M0_char2           |   16.7635 |    2.7039 |  +0.0000 [ +0.0000,  +0.0000]         |    0/16    |            0.0%
+  M0_char3           |   17.2211 |    2.7778 |  +0.4577 [ +0.3763,  +0.5040]         |    1/16    |         -546.4%
+  M1_bleed1_only     |   16.7298 |    2.6985 |  -0.0337 [ -0.0488,  -0.0093]         |   12/16    |           40.2%
+  M2_reparse_only    |   16.7600 |    2.7034 |  -0.0035 [ -0.0215,  +0.0058]         |    5/16    |            4.2%
+  M3_comp_only       |   16.6985 |    2.6935 |  -0.0650 [ -0.0839,  -0.0354]         |   10/16    |           77.6%
+  M4_subglyph_only   |   16.7207 |    2.6970 |  -0.0428 [ -0.0567,  -0.0250]         |   14/16    |           51.1%
+  M5_joint_all       |   16.6797 |    2.6904 |  -0.0838 [ -0.1117,  -0.0355]         |   10/16    |          100.0%
+
+[RF1b completed in 318.9s]
+
+################################################################################
+TRANSLITERATION IT2a: 206 P* pages (U1 comma-joined pages=206)
+################################################################################
+
+================================================================================
+PART 1 [IT2a]: SECTION/QUIRE-MATCHED HERBAL-B HAND 2 vs HAND 3 TEST (L-303)
+================================================================================
+  Codicological Breakdown inside Section = H (Herbal) & Quire H [IT2a]:
+    Hand 2 Herbal-B (Quires D,E,F,G): 20 pages ['f26r', 'f26v', 'f31r', 'f31v', 'f33r', 'f33v', 'f34r', 'f34v', 'f39r', 'f39v', 'f40r', 'f40v', 'f43r', 'f43v', 'f46r', 'f46v', 'f50r', 'f50v', 'f55r', 'f55v'] (bifolios=['D|2', 'E|1', 'E|2', 'F|3', 'G|2'], leaves=10)
+    Hand 2 Herbal-B (Quires E,F,G)  : 16 pages ['f33r', 'f33v', 'f34r', 'f34v', 'f39r', 'f39v', 'f40r', 'f40v', 'f43r', 'f43v', 'f46r', 'f46v', 'f50r', 'f50v', 'f55r', 'f55v']
+    Hand 3 Herbal-B (Quire Q strict): 6 pages ['f94r', 'f94v', 'f95r1', 'f95r2', 'f95v2', 'f95v1'] (bifolio=['Q|2'], leaves=['Q|f94', 'Q|f95'])
+    Hand 3 Herbal   (Quire Q + f65v): 7 pages ['f65v', 'f94r', 'f94v', 'f95r1', 'f95r2', 'f95v2', 'f95v1']
+    Quire H + Quire Q Extended      : 11 pages ['f58r', 'f58v', 'f65v', 'f66r', 'f66v', 'f94r', 'f94v', 'f95r1', 'f95r2', 'f95v2', 'f95v1']
+    Hand 5 Herbal-B (Quires F, H)   : 6 pages ['f41r', 'f41v', 'f48r', 'f48v', 'f57r', 'f66v']
+
+--- C1_Strict_HerbB (Sec=H,Lang=B: H2[20p] vs H3_Q+f65v[7p]) [IT2a] ---
+  [SlotSegmenter] Nested LOLO/Leaf-Out  : D_sym(all)=-0.2693 (H3->H2=+0.8054, H2->H3=-1.3439, acc=20/27) | D_sym(C_top50)=-0.2454 | D_sym(blind)=-0.0855
+  [SlotSegmenter] Nested LOBO ($Q|$B)   : D_sym(all)=-1.9207 (acc=19/27) | D_sym(C_top50)=-2.1120 | D_sym(blind)=-0.9217
+  [SlotSegmenter] Nested LOQO ($Q)      : D_sym(all)=-1.9457 (H3->H2=+0.6481, H2->H3=-4.5394, acc=19/27) | D_sym(C_top50)=-2.1409 | D_sym(blind)=-0.9397
+    Null P1 (Within-Herbal-B Page Perm)          [n_comb=888030, draws=500]: all null=-0.0649+/-0.0895 (z=-0.43, p=0.6607) | C_top50 p=0.5808 (z=-0.17) | blind p=0.4750 (z=+0.12)
+    Null P2a (Within-Herbal-B Leaf $Q|$F Block)  [n_comb=   286, draws=286]: all null=-0.2040+/-0.1619 (z=+0.62, p=0.2439) | C_top50 p=0.1916 (z=+0.75) | blind p=0.2334 (z=+0.66)
+    Null P2b (Within-Herbal-B Bifolio $Q|$B Block) [n_comb=    21, draws= 21]: all null=-0.0297+/-0.1371 (z=-0.54, p=0.7273) | C_top50 p=0.5455 (z=-0.29) | blind p=0.6364 (z=-0.54)
+    Null P3 (Within-Herbal-B Quire $Q Block)     [n_comb=    15, draws= 15]: all null=-0.0194+/-0.1305 (z=-0.64, p=0.8125) | C_top50 p=0.6250 (z=-0.36) | blind p=0.7500 (z=-0.69)
+  [Seg_Affix2   ] Nested LOLO/Leaf-Out  : D_sym(all)=-0.0871 (H3->H2=+1.0438, H2->H3=-1.2179, acc=20/27) | D_sym(C_top50)=-0.1717 | D_sym(blind)=-0.0798
+  [Seg_Affix2   ] Nested LOBO ($Q|$B)   : D_sym(all)=-1.8669 (acc=20/27) | D_sym(C_top50)=-2.3175 | D_sym(blind)=-0.9619
+  [Seg_Affix2   ] Nested LOQO ($Q)      : D_sym(all)=-1.8994 (H3->H2=+0.8890, H2->H3=-4.6878, acc=20/27) | D_sym(C_top50)=-2.3496 | D_sym(blind)=-0.9798
+
+--- C1b_Strict_EFG_vs_Q (Sec=H,Lang=B: H2_EFG[16p] vs H3_Q[6p]) [IT2a] ---
+  [SlotSegmenter] Nested LOLO/Leaf-Out  : D_sym(all)=-0.3581 (H3->H2=+0.7251, H2->H3=-1.4414, acc=16/22) | D_sym(C_top50)=-0.2952 | D_sym(blind)=-0.1554
+  [SlotSegmenter] Nested LOBO ($Q|$B)   : D_sym(all)=+0.2989 (acc=16/16) | D_sym(C_top50)=+0.2594 | D_sym(blind)=+0.2105
+    Null P1 (Within-Herbal-B Page Perm)          [n_comb= 74613, draws=500]: all null=-0.0722+/-0.0984 (z=-0.78, p=0.7864) | C_top50 p=0.6567 (z=-0.38) | blind p=0.5928 (z=-0.25)
+    Null P2a (Within-Herbal-B Leaf $Q|$F Block)  [n_comb=    45, draws= 45]: all null=-0.3064+/-0.1842 (z=+0.86, p=0.2174) | C_top50 p=0.1522 (z=+1.07) | blind p=0.2826 (z=+0.71)
+    Null P2b (Within-Herbal-B Bifolio $Q|$B Block) [n_comb=     5, draws=  5]: all null=-0.1647+/-0.0754 (z=+0.21, p=0.6667) | C_top50 p=0.5000 (z=+0.63) | blind p=0.6667 (z=-0.21)
+    Null P3 (Within-Herbal-B Quire $Q Block)     [n_comb=     4, draws=  4]: all null=-0.1053+/-0.0410 (z=-1.06, p=1.0000) | C_top50 p=0.8000 (z=-0.61) | blind p=1.0000 (z=-0.92)
+  [Seg_Affix2   ] Nested LOLO/Leaf-Out  : D_sym(all)=-0.1642 (H3->H2=+0.8913, H2->H3=-1.2198, acc=16/22) | D_sym(C_top50)=-0.2097 | D_sym(blind)=-0.1141
+  [Seg_Affix2   ] Nested LOBO ($Q|$B)   : D_sym(all)=+0.3999 (acc=16/16) | D_sym(C_top50)=+0.3280 | D_sym(blind)=+0.2192
+
+--- C2_Extended_HerbB_QuireH (H2_EFG+f55[16p] vs H3_QuireH+Q[11p]) [IT2a] ---
+  [SlotSegmenter] Nested LOLO/Leaf-Out  : D_sym(all)=-0.0478 (H3->H2=+0.0809, H2->H3=-0.1765, acc=13/27) | D_sym(C_top50)=-0.0456 | D_sym(blind)=-0.0347
+  [SlotSegmenter] Nested LOBO ($Q|$B)   : D_sym(all)=-0.2639 (acc=7/27) | D_sym(C_top50)=-0.2282 | D_sym(blind)=-0.1608
+  [SlotSegmenter] Nested LOQO ($Q)      : D_sym(all)=-0.5483 (H3->H2=-0.1611, H2->H3=-0.9354, acc=5/27) | D_sym(C_top50)=-0.5935 | D_sym(blind)=-0.2234
+    Null P1 (Within-Herbal-B Page Perm)          [n_comb=13037895, draws=500]: all null=-0.0547+/-0.0608 (z=+0.13, p=0.4411) | C_top50 p=0.4351 (z=+0.13) | blind p=0.4671 (z=+0.03)
+    Null P2a (Within-Herbal-B Leaf $Q|$F Block)  [n_comb=  1287, draws=500]: all null=-0.1255+/-0.0735 (z=+1.07, p=0.1238) | C_top50 p=0.1377 (z=+1.08) | blind p=0.2275 (z=+0.66)
+    Null P2b (Within-Herbal-B Bifolio $Q|$B Block) [n_comb=    35, draws= 35]: all null=-0.0720+/-0.0674 (z=+0.37, p=0.3611) | C_top50 p=0.3889 (z=+0.31) | blind p=0.4722 (z=+0.06)
+    Null P3 (Within-Herbal-B Quire $Q Block)     [n_comb=    10, draws= 10]: all null=-0.0765+/-0.0393 (z=+0.75, p=0.3636) | C_top50 p=0.5455 (z=+0.43) | blind p=0.6364 (z=+0.07)
+  [Seg_Affix2   ] Nested LOLO/Leaf-Out  : D_sym(all)=-0.0358 (H3->H2=+0.1351, H2->H3=-0.2068, acc=14/27) | D_sym(C_top50)=-0.0383 | D_sym(blind)=-0.1033
+  [Seg_Affix2   ] Nested LOBO ($Q|$B)   : D_sym(all)=-0.1543 (acc=10/27) | D_sym(C_top50)=-0.1558 | D_sym(blind)=-0.1722
+  [Seg_Affix2   ] Nested LOQO ($Q)      : D_sym(all)=-0.4098 (H3->H2=-0.0417, H2->H3=-0.7779, acc=8/27) | D_sym(C_top50)=-0.3913 | D_sym(blind)=-0.2661
+
+--- 1B. Direct Intra-Quire Contrasts (Quire H & Quire F) & Out-of-Section Cross-Projection [IT2a] ---
+  Out-of-Quire Cross-Projection (Train: Q_M[H2,Bio] vs Q_T[H3,Stars] -> Test: Untouched Herbal-B Sec=H):
+    [All Tokens (Core-Cond)] Delta_H on H2_HerbB(20p)=-0.6049, Delta_H on H3_HerbB(7p)=+0.8456, D_sym=+0.1204 | Blind Page ID: H2=0/20, H3=7/7
+  Out-of-Quire Cross-Projection (Train: Q_M[H2,Bio] vs Q_T[H3,Stars] -> Test: Untouched Herbal-B Sec=H):
+    [Shared Top-50 Cores   ] Delta_H on H2_HerbB(20p)=-0.5018, Delta_H on H3_HerbB(7p)=+0.6039, D_sym=+0.0511 | Blind Page ID: H2=0/20, H3=7/7
+  Out-of-Quire Cross-Projection (Train: Q_M[H2,Bio] vs Q_T[H3,Stars] -> Test: Untouched Herbal-B Sec=H):
+    [Core-Blind Transitions] Delta_H on H2_HerbB(20p)=-0.5902, Delta_H on H3_HerbB(7p)=+0.4871, D_sym=-0.0515 | Blind Page ID: H2=0/20, H3=7/7
+  Direct Per-Page Cross-Entropy (H(page|H3_Q_T) - H(page|H2_Q_M)) on Quire G/H/Q Transition Folios:
+    f50r(Q=G,S=H,L=B,H=2):-0.682 | f50v(Q=G,S=H,L=B,H=2):-0.481 | f55r(Q=G,S=H,L=B,H=2):-0.503 | f55v(Q=G,S=H,L=B,H=2):-0.644 | f57r(Q=H,S=H,L=B,H=5):-1.743 | f58r(Q=H,S=S,L=A,H=3):-1.178 | f58v(Q=H,S=S,L=A,H=3):-1.369 | f65v(Q=H,S=H,L=?,H=3):-1.374
+    f66r(Q=H,S=T,L=B,H=5):-0.703 | f66v(Q=H,S=H,L=B,H=5):-0.907 | f94r(Q=Q,S=H,L=B,H=3):-0.803 | f94v(Q=Q,S=H,L=B,H=3):-0.953 | f95r1(Q=Q,S=H,L=B,H=3):-0.507 | f95r2(Q=Q,S=H,L=B,H=3):-0.880 | f95v2(Q=Q,S=H,L=B,H=3):-0.657 | f95v1(Q=Q,S=H,L=B,H=3):-0.961
+
+--- 1C. 2x2 Factorial Decomposition: How Much of s60's Currier-B Divergence (D_sym=+0.41) is Section vs Hand? [IT2a] ---
+  1. Unstratified Currier-B (All H2_CurB vs All H3_CurB, s60 baseline): D_sym(all)=+0.2966 | D_sym(C_top50)=+0.3042 | D_sym(blind)=+0.2488
+  2. Cross-Hand + Cross-Section (H2_Bio[Sec=B] vs H3_Stars[Sec=S])     : D_sym(all)=+0.7333 | D_sym(C_top50)=+0.6787 | D_sym(blind)=+0.5393
+  3. Same-Hand-2 Cross-Section  (H2_Bio[Sec=B] vs H2_HerbB[Sec=H])     : D_sym(all)=+0.9500 | D_sym(C_top50)=+0.9614 | D_sym(blind)=+0.7357
+  4. Same-Hand-3 Cross-Section  (H3_Stars[Sec=S] vs H3_HerbB[Sec=H])   : D_sym(all)=+0.3096 | D_sym(C_top50)=+0.4033 | D_sym(blind)=+0.1802
+  5. Same-Section-H Cross-Hand  (H2_HerbB[Sec=H] vs H3_HerbB[Sec=H])   : D_sym(all)=-0.2693 | D_sym(C_top50)=-0.2454 | D_sym(blind)=-0.0855
+  -> Pure Within-Section Hand Retention Share (Row 5 / Row 1)          : all=-90.8%, C_top50=-80.7%, blind=-34.4%
+
+================================================================================
+PART 2A [IT2a]: DIRECT COMMA ',' & s47 INK-GAP ALIGNMENT OF B2 SPLITS + B1_1CHAR vs B1_MULTI (L-304)
+================================================================================
+
+  [Standard_Split__SlotSegmenter] 15-Quire LOQO Unseen Core Breakdown (N_unseen=1790, N_rare_events=8408):
+    B1 Total Boundary Bleed/Reparse = 1286/1790 (71.84%): Strict 1-Char Shift (B1_1char) = 1066 (59.55%) vs Multi-Char Reparse Only (B1_multi) =  220 (12.29%)
+    Waterfall Remainder: B2_comp(>=2+>=2)=20.06%, B3_subglyph= 0.11%, B4_edit1= 1.96%, B5_distal= 6.03%
+    Cross-Segmenter Sensitivity:  526/1790 (29.39%) of unseen cores disappear (become attested training cores) under the alternate segmenter!
+    Strictly Unseen Held-Out Cores (N=1790, marginal B2_len2=1291 [72.12%] vs char-shuffled null B2_len2=296 [16.54%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/1291 ( 0.00%) [any comma in word: 0/1291 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):   55/1291 ( 4.26%) [comma only: 50/1291 ( 3.87%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):   55/1291 ( 4.26%) vs Pure Unbroken String Split: 1236/1291 (95.74%) [shuffled null break align: 9/296 ( 3.04%)]
+    First-on-Page Rare Cores (s59/s63) (N=8408, marginal B2_len2=2736 [32.54%] vs char-shuffled null B2_len2=513 [ 6.10%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/2736 ( 0.00%) [any comma in word: 0/2736 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):   93/2736 ( 3.40%) [comma only: 84/2736 ( 3.07%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):   93/2736 ( 3.40%) vs Pure Unbroken String Split: 2643/2736 (96.60%) [shuffled null break align: 13/513 ( 2.53%)]
+
+  [Standard_Split__Seg_Affix2] 15-Quire LOQO Unseen Core Breakdown (N_unseen=2096, N_rare_events=10841):
+    B1 Total Boundary Bleed/Reparse = 1457/2096 (69.51%): Strict 1-Char Shift (B1_1char) = 1360 (64.89%) vs Multi-Char Reparse Only (B1_multi) =   97 ( 4.63%)
+    Waterfall Remainder: B2_comp(>=2+>=2)=23.14%, B3_subglyph= 0.05%, B4_edit1= 2.39%, B5_distal= 4.91%
+    Cross-Segmenter Sensitivity:  832/2096 (39.69%) of unseen cores disappear (become attested training cores) under the alternate segmenter!
+    Strictly Unseen Held-Out Cores (N=2096, marginal B2_len2=1624 [77.48%] vs char-shuffled null B2_len2=506 [24.14%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/1624 ( 0.00%) [any comma in word: 0/1624 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):   68/1624 ( 4.19%) [comma only: 60/1624 ( 3.69%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):   68/1624 ( 4.19%) vs Pure Unbroken String Split: 1556/1624 (95.81%) [shuffled null break align: 11/506 ( 2.17%)]
+    First-on-Page Rare Cores (s59/s63) (N=10841, marginal B2_len2=4008 [36.97%] vs char-shuffled null B2_len2=1162 [10.72%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/4008 ( 0.00%) [any comma in word: 0/4008 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):  120/4008 ( 2.99%) [comma only: 110/4008 ( 2.74%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):  120/4008 ( 2.99%) vs Pure Unbroken String Split: 3888/4008 (97.01%) [shuffled null break align: 21/1162 ( 1.81%)]
+
+  [U1_CommaJoined__SlotSegmenter] 15-Quire LOQO Unseen Core Breakdown (N_unseen=1790, N_rare_events=8408):
+    B1 Total Boundary Bleed/Reparse = 1286/1790 (71.84%): Strict 1-Char Shift (B1_1char) = 1066 (59.55%) vs Multi-Char Reparse Only (B1_multi) =  220 (12.29%)
+    Waterfall Remainder: B2_comp(>=2+>=2)=20.06%, B3_subglyph= 0.11%, B4_edit1= 1.96%, B5_distal= 6.03%
+    Cross-Segmenter Sensitivity:  526/1790 (29.39%) of unseen cores disappear (become attested training cores) under the alternate segmenter!
+    Strictly Unseen Held-Out Cores (N=1790, marginal B2_len2=1291 [72.12%] vs char-shuffled null B2_len2=323 [18.04%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/1291 ( 0.00%) [any comma in word: 0/1291 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):   55/1291 ( 4.26%) [comma only: 50/1291 ( 3.87%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):   55/1291 ( 4.26%) vs Pure Unbroken String Split: 1236/1291 (95.74%) [shuffled null break align: 5/323 ( 1.55%)]
+    First-on-Page Rare Cores (s59/s63) (N=8408, marginal B2_len2=2736 [32.54%] vs char-shuffled null B2_len2=524 [ 6.23%]):
+      - Exact C1|C2 Raw IVTFF Comma (same translit before U1 join):    0/2736 ( 0.00%) [any comma in word: 0/2736 ( 0.00%)]
+      - Exact C1|C2 Cross-Transcriber Break (other 2 translits '.' or ','):   93/2736 ( 3.40%) [comma only: 84/2736 ( 3.07%)]
+      - Total True Comma/Break Split (Same-OR-Cross Translit at C1|C2):   93/2736 ( 3.40%) vs Pure Unbroken String Split: 2643/2736 (96.60%) [shuffled null break align: 8/524 ( 1.53%)]
+
+================================================================================
+PART 2B [IT2a]: PRE-REGISTERED 6-MODEL COMPONENT ABLATION ON 15 LOQO FOLDS (L-304)
+================================================================================
+
+  --- [SlotSegmenter] 15-Quire LOQO Held-Out Cross-Entropy on Strictly Unseen Cores (IT2a: 1790 tok, 1646 types across 16 quires) ---
+  Model              | bits/core | bits/char |  Delta vs M0_char2 (95% Quire-Boot CI) | Quires Won | Share of M5 Gain
+  ----------------------------------------------------------------------------------------------------------------
+  M0_char2           |   16.4377 |    2.6129 |  +0.0000 [ +0.0000,  +0.0000]         |    0/16    |            0.0%
+  M0_char3           |   17.0051 |    2.7031 |  +0.5674 [ +0.4669,  +0.6442]         |    0/16    |         -341.6%
+  M1_bleed1_only     |   16.3525 |    2.5993 |  -0.0852 [ -0.1036,  -0.0485]         |   13/16    |           51.3%
+  M2_reparse_only    |   16.4166 |    2.6095 |  -0.0211 [ -0.0472,  +0.0081]         |    9/16    |           12.7%
+  M3_comp_only       |   16.3498 |    2.5989 |  -0.0880 [ -0.1591,  +0.0274]         |   10/16    |           53.0%
+  M4_subglyph_only   |   16.4043 |    2.6076 |  -0.0334 [ -0.0508,  -0.0068]         |    8/16    |           20.1%
+  M5_joint_all       |   16.2716 |    2.5865 |  -0.1661 [ -0.2394,  -0.0304]         |   11/16    |          100.0%
+
+  --- [Seg_Affix2] 15-Quire LOQO Held-Out Cross-Entropy on Strictly Unseen Cores (IT2a: 2096 tok, 1935 types across 16 quires) ---
+  Model              | bits/core | bits/char |  Delta vs M0_char2 (95% Quire-Boot CI) | Quires Won | Share of M5 Gain
+  ----------------------------------------------------------------------------------------------------------------
+  M0_char2           |   16.5316 |    2.7189 |  +0.0000 [ +0.0000,  +0.0000]         |    0/16    |            0.0%
+  M0_char3           |   16.9577 |    2.7890 |  +0.4261 [ +0.3579,  +0.5130]         |    0/16    |         -317.2%
+  M1_bleed1_only     |   16.4920 |    2.7124 |  -0.0396 [ -0.0691,  -0.0089]         |    8/16    |           29.5%
+  M2_reparse_only    |   16.5253 |    2.7179 |  -0.0063 [ -0.0300,  +0.0067]         |    7/16    |            4.7%
+  M3_comp_only       |   16.4329 |    2.7027 |  -0.0987 [ -0.1320,  -0.0359]         |   11/16    |           73.5%
+  M4_subglyph_only   |   16.4787 |    2.7103 |  -0.0529 [ -0.0643,  -0.0377]         |   14/16    |           39.4%
+  M5_joint_all       |   16.3973 |    2.6969 |  -0.1343 [ -0.1751,  -0.0614]         |   12/16    |          100.0%
+
+[IT2a completed in 472.6s]
+
+================================================================================
+CONSOLIDATED SUMMARY OF s77 FINDINGS (CLOSING L-303 & L-304 IN CONSTRAINTS-MAP.md §C):
+================================================================================
+  [ZL3b] PART 1 (L-303 — Herbal-B Section-Matched Hand 2 vs Hand 3):
+    - Unstratified Currier-B D_sym(all/top50/blind) = +0.2940 / +0.2799 / +0.2337
+    - Strict Herbal-B (Sec=H) Nested LOLO D_sym     = -0.1159 / -0.0954 / +0.0271 (Null P1 page p=0.3114, Null P2a leaf p=0.0941, Null P2b bifolio p=0.5000, Null P3 quire p=0.5625)
+  [ZL3b] PART 2 (L-304 — 15-Quire LOQO Individual Component Ablation Delta vs M0_char2 [bits/core]):
+    - SlotSegmenter: M1_bleed1=-0.0720, M2_reparse=-0.0191, M3_comp=-0.0861, M4_subglyph=-0.0258, M5_joint=-0.1538
+    - Seg_Affix2   : M1_bleed1=-0.0252, M2_reparse=-0.0028, M3_comp=-0.0448, M4_subglyph=-0.0683, M5_joint=-0.0916
+  [RF1b] PART 1 (L-303 — Herbal-B Section-Matched Hand 2 vs Hand 3):
+    - Unstratified Currier-B D_sym(all/top50/blind) = +0.2975 / +0.2796 / +0.2519
+    - Strict Herbal-B (Sec=H) Nested LOLO D_sym     = -0.1449 / -0.1477 / +0.0707 (Null P1 page p=0.4790, Null P2a leaf p=0.1185, Null P2b bifolio p=0.5000, Null P3 quire p=0.6250)
+  [RF1b] PART 2 (L-304 — 15-Quire LOQO Individual Component Ablation Delta vs M0_char2 [bits/core]):
+    - SlotSegmenter: M1_bleed1=-0.0418, M2_reparse=-0.0198, M3_comp=-0.0494, M4_subglyph=-0.0148, M5_joint=-0.0959
+    - Seg_Affix2   : M1_bleed1=-0.0337, M2_reparse=-0.0035, M3_comp=-0.0650, M4_subglyph=-0.0428, M5_joint=-0.0838
+  [IT2a] PART 1 (L-303 — Herbal-B Section-Matched Hand 2 vs Hand 3):
+    - Unstratified Currier-B D_sym(all/top50/blind) = +0.2966 / +0.3042 / +0.2488
+    - Strict Herbal-B (Sec=H) Nested LOLO D_sym     = -0.2693 / -0.2454 / -0.0855 (Null P1 page p=0.6607, Null P2a leaf p=0.2439, Null P2b bifolio p=0.7273, Null P3 quire p=0.8125)
+  [IT2a] PART 2 (L-304 — 15-Quire LOQO Individual Component Ablation Delta vs M0_char2 [bits/core]):
+    - SlotSegmenter: M1_bleed1=-0.0852, M2_reparse=-0.0211, M3_comp=-0.0880, M4_subglyph=-0.0334, M5_joint=-0.1661
+    - Seg_Affix2   : M1_bleed1=-0.0396, M2_reparse=-0.0063, M3_comp=-0.0987, M4_subglyph=-0.0529, M5_joint=-0.1343
+
+run finished: 2026-10-18 03:24:32 (datetime.now) (total elapsed 1217.5s)

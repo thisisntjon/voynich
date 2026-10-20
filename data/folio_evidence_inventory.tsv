@@ -1,0 +1,228 @@
+folio	quire	page_in_quire	bifolio	section	lang	hand	p_lines	p_tokens	p_types	label_tokens	h2	para_gallows	m_final_lines	coord_box_file	direct_pixel_sites	facsimile	crib_sources	notes
+f1r	A	A	a	T	A	1	28	215	167	0	2.073	1/1	1/28	f1r.js	0	-	-	Standard folio
+f1v	A	B	a	H	A	1	10	92	70	0	1.893	1/1	1/10	f1v.js	0	f1v.jpg	sherwood_botanical_index	Standard folio
+f2r	A	C	b	H	A	1	13	101	80	4	1.856	1/1	0/13	f2r.js	0	-	sherwood_botanical_index	Standard folio
+f2v	A	D	b	H	A	1	8	61	47	0	1.562	1/1	0/8	f2v.js	0	-	sherwood_botanical_index	Standard folio
+f3r	A	E	c	H	A	1	20	114	89	0	1.864	1/1	6/20	f3r.js	0	-	sherwood_botanical_index	Standard folio
+f3v	A	F	c	H	A	1	14	85	75	0	1.982	1/1	3/14	f3v.js	0	-	sherwood_botanical_index	Standard folio
+f4r	A	G	d	H	A	1	13	64	48	0	1.568	1/1	2/13	f4r.js	0	-	sherwood_botanical_index	Standard folio
+f4v	A	H	d	H	A	1	14	84	72	0	1.745	1/1	1/14	f4v.js	0	-	sherwood_botanical_index	Standard folio
+f5r	A	I	w	H	A	1	7	54	45	0	1.708	1/1	0/7	f5r.js	0	-	sherwood_botanical_index	Standard folio
+f5v	A	J	w	H	A	1	6	48	38	0	1.552	1/1	0/6	f5v.js	0	-	sherwood_botanical_index	Standard folio
+f6r	A	K	x	H	A	1	14	86	68	0	1.859	1/1	4/14	f6r.js	0	-	sherwood_botanical_index	Standard folio
+f6v	A	L	x	H	A	1	21	116	90	0	1.972	1/1	3/21	f6v.js	0	-	sherwood_botanical_index	Standard folio
+f7r	A	M	y	H	A	1	10	66	60	0	1.797	1/1	0/10	f7r.js	0	-	sherwood_botanical_index	Standard folio
+f7v	A	N	y	H	A	1	9	78	59	0	1.764	1/1	0/9	f7v.js	36 (36c/0u)	-	sherwood_botanical_index	Standard folio
+f8r	A	O	z	H	A	1	21	151	120	0	1.956	1/1	4/21	f8r.js	0	-	sherwood_botanical_index	Standard folio
+f8v	A	P	z	H	A	1	17	118	88	0	1.783	0/1	2/17	f8v.js	0	-	sherwood_botanical_index	Standard folio
+f9r	B	A	a	H	A	1	10	85	75	0	1.939	1/1	1/10	f9r.js	0	-	sherwood_botanical_index	Standard folio
+f9v	B	B	a	H	A	1	12	86	67	0	1.856	1/1	1/12	f9v.js	0	-	sherwood_botanical_index	Standard folio
+f10r	B	C	b	H	A	1	12	92	72	0	1.785	1/1	2/12	f10r.js	0	-	sherwood_botanical_index	Standard folio
+f10v	B	D	b	H	A	1	7	57	41	0	1.534	1/1	0/7	f10v.js	0	-	sherwood_botanical_index	Standard folio
+f11r	B	E	c	H	A	1	7	59	43	0	1.632	1/1	0/7	f11r.js	0	-	sherwood_botanical_index	Standard folio
+f11v	B	F	c	H	A	1	6	49	44	1	1.802	1/1	0/6	f11v.js	0	-	sherwood_botanical_index	Standard folio
+f13r	B	I	w	H	A	1	10	77	61	0	1.692	1/1	0/10	f13r.js	0	-	sherwood_botanical_index	Standard folio
+f13v	B	J	w	H	A	1	10	69	58	0	1.833	1/1	0/10	f13v.js	0	-	sherwood_botanical_index	Standard folio
+f14r	B	K	x	H	A	1	13	76	65	0	1.814	1/1	0/13	f14r.js	0	-	sherwood_botanical_index	Standard folio
+f14v	B	L	x	H	A	1	9	75	59	0	1.755	1/1	1/9	f14v.js	30 (24c/6u)	-	sherwood_botanical_index	Standard folio
+f15r	B	M	y	H	A	1	15	94	73	0	1.829	1/1	1/15	f15r.js	0	-	sherwood_botanical_index	Standard folio
+f15v	B	N	y	H	A	1	12	72	50	0	1.585	1/1	0/12	f15v.js	0	-	sherwood_botanical_index	Standard folio
+f16r	B	O	z	H	A	1	13	84	72	0	1.982	1/1	1/13	f16r.js	0	-	sherwood_botanical_index	Standard folio
+f16v	B	P	z	H	A	1	13	76	61	0	1.803	1/1	0/13	f16v.js	0	-	sherwood_botanical_index	Standard folio
+f17r	C	A	a	H	A	1	12	78	74	2	2.021	1/1	4/12	f17r.js	0	-	sherwood_botanical_index	Standard folio
+f17v	C	B	a	H	A	1	23	135	106	0	1.843	1/1	3/23	f17v.js	0	-	sherwood_botanical_index	Standard folio
+f18r	C	C	b	H	A	1	14	84	63	0	1.733	1/1	1/14	f18r.js	0	-	sherwood_botanical_index	Standard folio
+f18v	C	D	b	H	A	1	10	69	60	0	1.791	1/1	4/10	f18v.js	0	-	sherwood_botanical_index	Standard folio
+f19r	C	E	c	H	A	1	13	78	51	0	1.632	1/1	0/13	f19r.js	0	-	sherwood_botanical_index	Standard folio
+f19v	C	F	c	H	A	1	14	78	62	0	1.736	1/1	3/14	f19v.js	0	-	sherwood_botanical_index	Standard folio
+f20r	C	G	d	H	A	1	13	89	79	0	1.701	1/1	0/13	f20r.js	0	-	sherwood_botanical_index	Standard folio
+f20v	C	H	d	H	A	1	11	86	69	0	1.878	1/1	0/11	f20v.js	0	-	sherwood_botanical_index	Standard folio
+f21r	C	I	w	H	A	1	12	104	80	0	1.866	1/1	0/12	f21r.js	0	-	sherwood_botanical_index	Standard folio
+f21v	C	J	w	H	A	1	8	58	43	0	1.613	1/1	0/8	f21v.js	0	-	sherwood_botanical_index	Standard folio
+f22r	C	K	x	H	A	1	13	111	80	0	1.750	1/1	2/13	f22r.js	0	-	sherwood_botanical_index	Standard folio
+f22v	C	L	x	H	A	1	16	77	61	0	1.699	1/1	2/16	f22v.js	0	-	sherwood_botanical_index	Standard folio
+f23r	C	M	y	H	A	1	11	110	80	0	1.839	1/1	0/11	f23r.js	59 (55c/4u)	-	sherwood_botanical_index	Standard folio
+f23v	C	N	y	H	A	1	12	95	75	0	1.880	1/1	1/12	f23v.js	0	-	sherwood_botanical_index	Standard folio
+f24r	C	O	z	H	A	1	20	110	85	0	1.922	1/1	1/20	f24r.js	0	-	sherwood_botanical_index	Standard folio
+f24v	C	P	z	H	A	1	16	85	80	0	2.161	1/1	4/16	f24v.js	0	-	sherwood_botanical_index	Standard folio
+f25r	D	A	a	H	A	1	7	47	40	0	1.581	1/1	0/7	f25r.js	0	-	sherwood_botanical_index	Standard folio
+f25v	D	B	a	H	A	1	7	60	45	0	1.619	1/1	0/7	f25v.js	0	-	sherwood_botanical_index	Standard folio
+f26r	D	C	b	H	B	2	10	90	65	0	1.794	1/1	0/10	f26r.js	0	-	sherwood_botanical_index	Standard folio
+f26v	D	D	b	H	B	2	9	93	78	0	1.815	1/1	0/9	f26v.js	0	-	sherwood_botanical_index	Standard folio
+f27r	D	E	c	H	A	1	13	94	63	0	1.690	1/1	2/13	f27r.js	0	-	sherwood_botanical_index	Standard folio
+f27v	D	F	c	H	A	1	8	61	55	0	1.850	1/1	0/8	f27v.js	0	-	sherwood_botanical_index	Standard folio
+f28r	D	G	d	H	A	1	9	68	57	0	1.782	1/1	1/9	f28r.js	0	-	sherwood_botanical_index	Standard folio
+f28v	D	H	d	H	A	1	9	68	50	0	1.540	1/1	1/9	f28v.js	0	-	sherwood_botanical_index	Standard folio
+f29r	D	I	w	H	A	1	9	65	57	0	1.659	1/1	1/9	f29r.js	0	-	sherwood_botanical_index	Standard folio
+f29v	D	J	w	H	A	1	12	94	75	0	1.824	1/1	0/12	f29v.js	0	-	sherwood_botanical_index	Standard folio
+f30r	D	K	x	H	A	1	13	99	84	0	1.791	0/1	1/13	f30r.js	0	-	sherwood_botanical_index	Standard folio
+f30v	D	L	x	H	A	1	11	63	52	0	1.725	0/1	0/11	f30v.js	0	-	sherwood_botanical_index	Standard folio
+f31r	D	M	y	H	B	2	16	103	79	0	1.764	1/1	1/16	f31r.js	0	-	sherwood_botanical_index	Standard folio
+f31v	D	N	y	H	B	2	11	110	97	0	1.966	1/1	2/11	f31v.js	0	-	sherwood_botanical_index	Standard folio
+f32r	D	O	z	H	A	1	19	76	63	0	1.704	1/1	1/19	f32r.js	0	-	sherwood_botanical_index	Standard folio
+f32v	D	P	z	H	A	1	11	89	63	0	1.649	1/1	0/11	f32v.js	0	-	sherwood_botanical_index	Standard folio
+f33r	E	A	a	H	B	2	7	74	60	0	1.661	1/1	3/7	f33r.js	0	-	sherwood_botanical_index	Standard folio
+f33v	E	B	a	H	B	2	11	114	75	0	1.795	1/1	2/11	f33v.js	0	-	sherwood_botanical_index	Standard folio
+f34r	E	C	b	H	B	2	15	143	119	0	2.039	1/1	5/15	f34r.js	0	-	sherwood_botanical_index	Standard folio
+f34v	E	D	b	H	B	2	11	117	92	0	1.736	1/1	5/11	f34v.js	0	-	sherwood_botanical_index	Standard folio
+f35r	E	E	c	H	A	1	15	94	71	0	1.649	0/1	0/15	f35r.js	0	-	sherwood_botanical_index	Standard folio
+f35v	E	F	c	H	A	1	21	91	73	0	1.752	1/1	0/21	f35v.js	0	-	sherwood_botanical_index	Standard folio
+f36r	E	G	d	H	A	1	9	63	56	0	1.862	1/1	0/9	f36r.js	0	-	sherwood_botanical_index	Standard folio
+f36v	E	H	d	H	A	1	14	76	60	0	1.912	1/1	1/14	f36v.js	0	-	sherwood_botanical_index	Standard folio
+f37r	E	I	w	H	A	1	11	78	63	0	1.725	1/1	0/11	f37r.js	0	-	sherwood_botanical_index	Standard folio
+f37v	E	J	w	H	A	1	23	89	66	0	1.715	1/1	1/23	f37v.js	0	-	sherwood_botanical_index	Standard folio
+f38r	E	K	x	H	A	1	6	44	39	0	1.755	1/1	0/6	f38r.js	0	-	sherwood_botanical_index	Standard folio
+f38v	E	L	x	H	A	1	8	68	46	0	1.527	0/1	1/8	f38v.js	0	-	sherwood_botanical_index	Standard folio
+f39r	E	M	y	H	B	2	16	157	119	0	1.941	1/1	1/16	f39r.js	0	-	sherwood_botanical_index	Standard folio
+f39v	E	N	y	H	B	2	14	146	106	0	1.871	1/1	1/14	f39v.js	76 (73c/3u)	-	sherwood_botanical_index	Standard folio
+f40r	E	O	z	H	B	2	11	103	77	0	1.830	1/1	2/11	f40r.js	0	-	sherwood_botanical_index	Standard folio
+f40v	E	P	z	H	B	2	19	105	80	0	1.775	1/1	2/19	f40v.js	0	-	sherwood_botanical_index	Standard folio
+f41r	F	A	a	H	B	5	11	97	78	0	1.798	1/1	1/11	f41r.js	0	-	sherwood_botanical_index	Standard folio
+f41v	F	B	a	H	B	5	7	65	57	1	1.798	1/1	1/7	f41v.js	0	-	sherwood_botanical_index	Standard folio
+f42r	F	C	b	H	A	1	23	141	107	0	1.778	0/1	2/23	f42r.js	0	-	sherwood_botanical_index	Standard folio
+f42v	F	D	b	H	A	1	16	116	96	0	1.907	0/1	1/16	f42v.js	31 (29c/2u)	-	sherwood_botanical_index	Standard folio
+f43r	F	E	c	H	B	2	14	153	116	0	1.942	1/1	4/14	f43r.js	0	-	sherwood_botanical_index	Standard folio
+f43v	F	F	c	H	B	2	16	151	127	0	2.022	1/1	3/16	f43v.js	0	-	sherwood_botanical_index	Standard folio
+f44r	F	G	d	H	A	1	11	74	67	0	2.019	1/1	3/11	f44r.js	0	-	sherwood_botanical_index	Standard folio
+f44v	F	H	d	H	A	1	13	100	78	0	1.902	1/1	0/13	f44v.js	0	-	sherwood_botanical_index	Standard folio
+f45r	F	I	w	H	A	1	11	89	75	0	1.821	1/1	3/11	f45r.js	0	-	sherwood_botanical_index	Standard folio
+f45v	F	J	w	H	A	1	11	85	76	0	2.044	1/1	3/11	f45v.js	0	-	sherwood_botanical_index	Standard folio
+f46r	F	K	x	H	B	2	15	163	125	0	1.990	1/1	5/15	f46r.js	0	-	sherwood_botanical_index	Standard folio
+f46v	F	L	x	H	B	2	13	111	89	0	1.887	1/1	6/13	f46v.js	0	-	sherwood_botanical_index	Standard folio
+f47r	F	M	y	H	A	1	11	76	55	0	1.572	0/1	2/11	f47r.js	0	-	sherwood_botanical_index	Standard folio
+f47v	F	N	y	H	A	1	14	85	67	0	1.667	1/1	0/14	f47v.js	0	-	sherwood_botanical_index	Standard folio
+f48r	F	O	z	H	B	5	9	89	87	0	1.968	1/1	2/9	f48r.js	0	-	sherwood_botanical_index	Standard folio
+f48v	F	P	z	H	B	5	11	128	105	0	1.895	1/1	5/11	f48v.js	0	-	sherwood_botanical_index	Standard folio
+f49r	G	A	a	H	A	1	21	114	85	0	1.714	1/1	0/21	f49r.js	0	-	sherwood_botanical_index	Standard folio
+f49v	G	B	a	H	A	1	26	143	103	26	1.743	1/1	1/26	f49v.js	0	-	sherwood_botanical_index	Standard folio
+f50r	G	C	b	H	B	2	10	93	78	0	1.842	1/1	3/10	f50r.js	0	-	sherwood_botanical_index	Standard folio
+f50v	G	D	b	H	B	2	11	100	85	0	1.870	1/1	2/11	f50v.js	0	-	sherwood_botanical_index	Standard folio
+f51r	G	E	c	H	A	1	15	89	79	0	1.907	1/1	3/15	f51r.js	0	-	sherwood_botanical_index	Standard folio
+f51v	G	F	c	H	A	1	13	82	70	0	1.803	1/1	1/13	f51v.js	0	-	sherwood_botanical_index	Standard folio
+f52r	G	G	d	H	A	1	8	69	58	0	1.951	1/1	2/8	f52r.js	0	-	sherwood_botanical_index	Standard folio
+f52v	G	H	d	H	A	1	14	78	69	0	1.842	1/1	2/14	f52v.js	0	-	sherwood_botanical_index	Standard folio
+f53r	G	I	w	H	A	1	9	61	57	0	2.034	1/1	0/9	f53r.js	0	-	sherwood_botanical_index	Standard folio
+f53v	G	J	w	H	A	1	13	73	67	0	1.868	1/1	2/13	f53v.js	0	-	sherwood_botanical_index	Standard folio
+f54r	G	K	x	H	A	1	12	110	75	0	1.959	1/1	5/12	f54r.js	0	-	sherwood_botanical_index	Standard folio
+f54v	G	L	x	H	A	1	16	93	75	0	1.834	1/1	5/16	f54v.js	0	-	sherwood_botanical_index	Standard folio
+f55r	G	M	y	H	B	2	13	124	92	0	1.955	1/1	2/13	f55r.js	0	-	sherwood_botanical_index	Standard folio
+f55v	G	N	y	H	B	2	12	105	74	0	1.797	1/1	3/12	f55v.js	0	-	sherwood_botanical_index	Standard folio
+f56r	G	O	z	H	A	1	19	103	80	0	1.707	0/1	0/19	f56r.js	0	-	sherwood_botanical_index	Standard folio
+f56v	G	P	z	H	A	1	16	91	67	0	1.588	1/1	0/16	f56v.js	51 (45c/6u)	-	sherwood_botanical_index	Standard folio
+f57r	H	A	a	H	B	5	11	87	77	0	1.847	1/1	5/11	f57r.js	0	-	sherwood_botanical_index	Standard folio
+f57v	H	B	a	C	?	1	0	0	0	198	-	0/0	0/0	f57v.js	0	f57v.jpg	-	4-ring wheel; Ring 3 exact 13-box / 17-unit 4x cycle (p=0.000)
+f58r	H	C	b	S	A	3	41	378	288	0	2.094	1/1	12/41	f58r.js	0	-	-	Standard folio
+f58v	H	D	b	S	A	3	39	375	236	0	1.959	1/1	10/39	f58v.js	0	-	-	Standard folio
+f65r	H	E	y	H	?	3	0	0	0	3	-	0/0	0/0	f65r.js	0	-	-	Standard folio
+f65v	H	F	y	H	?	3	6	45	44	0	2.004	0/1	1/6	f65v.js	0	-	-	Standard folio
+f66r	H	G	z	T	B	5	32	294	220	54	2.024	1/1	2/32	f66r.js	0	-	-	Standard folio
+f66v	H	H	z	H	B	5	13	114	94	0	2.041	0/1	2/13	f66v.js	0	-	-	Standard folio
+f67r1	I	B	a	A	?	4	4	41	33	126	1.715	1/1	1/4	f67r1.js	0	-	-	Standard folio
+f67r2	I	C	a	A	?	4	35	126	106	64	2.122	1/13	2/35	f67r2.js	0	-	-	Standard folio
+f67v2	I	E	a	C	?	4	8	34	33	28	1.836	2/4	3/8	f67v2.js	0	-	voynich_nu_q09_f067v2_tr.txt	Standard folio
+f67v1	I	F	a	A	?	4	0	0	0	73	-	0/0	0/0	f67v1.js	0	-	-	Standard folio
+f68r1	I	H	z	A	?	4	7	31	31	34	1.896	0/2	1/7	f68r1.js	0	f68r.jpg	f68r1_event_jvs.pdf,voynich_nu_f068r1_tr.txt	Star-diagram foldout; Bax/Stolfi star-label cribs
+f68r2	I	I	z	A	?	4	5	37	36	45	1.818	1/1	1/5	f68r2.js	0	f68r.jpg	voynich_nu_f068r2_tr.txt	Star-diagram foldout; Bax/Stolfi star-label cribs
+f68r3	I	J	z	A	?	4	0	0	0	106	-	0/0	0/0	f68r3.js	0	f68r.jpg	stolfi_f68r3.htm,stolfi_f68r3_data.txt,voynich_nu_f068r3_tr.txt	Star-diagram foldout; Bax/Stolfi star-label cribs
+f68v3	I	L	z	C	?	4	7	55	48	114	1.855	1/2	1/7	f68v3.js	0	-	-	Standard folio
+f68v2	I	M	z	A	?	4	5	44	43	59	1.775	1/1	2/5	f68v2.js	0	-	-	Standard folio
+f68v1	I	N	z	A	?	4	0	0	0	97	-	0/0	0/0	f68v1.js	0	-	-	Standard folio
+f69r	J	A	a	C	?	4	4	36	33	122	1.676	1/1	2/4	f69r.js	0	-	-	Standard folio
+f69v	J	B	a	C	?	4	0	0	0	142	-	0/0	0/0	f69v.js	0	-	-	Standard folio
+f70r1	J	D	z	C	?	4	0	0	0	112	-	0/0	0/0	f70r1.js	0	-	-	Standard folio
+f70r2	J	E	z	C	?	4	14	101	75	145	1.935	0/1	4/14	f70r2.js	0	-	-	Standard folio
+f70v2	J	G	z	Z	?	4	0	0	0	131	-	0/0	0/0	f70v2.js	0	-	stolfi_f70v2.htm,voynich_nu_f070v2_tr.txt	Zodiac medallion + ~30 nymph star labels + Romance month gloss
+f70v1	J	H	z	Z	?	4	0	0	0	86	-	0/0	0/0	f70v1.js	0	-	voynich_nu_f070v1_tr.txt	Zodiac medallion + ~30 nymph star labels + Romance month gloss
+f71r	K	A	a	Z	?	4	0	0	0	90	-	0/0	0/0	f71r.js	0	-	voynich_nu_f071r_tr.txt	Zodiac medallion + ~30 nymph star labels + Romance month gloss
+f71v	K	B	a	Z	?	4	0	0	0	100	-	0/0	0/0	f71v.js	0	-	voynich_nu_f071v_tr.txt	Zodiac medallion + ~30 nymph star labels + Romance month gloss
+f72r1	K	D	z	Z	?	4	0	0	0	105	-	0/0	0/0	f72r1.js	0	-	voynich_nu_f072r1_tr.txt	Zodiac medallion + ~30 nymph star labels + Romance month gloss
+f72r2	K	E	z	Z	?	4	0	0	0	113	-	0/0	0/0	f72r2.js	0	-	voynich_nu_f072r2_tr.txt	Zodiac medallion + ~30 nymph star labels + Romance month gloss
+f72r3	K	F	z	Z	?	4	0	0	0	165	-	0/0	0/0	f72r3.js	0	-	voynich_nu_f072r3_tr.txt	Zodiac medallion + ~30 nymph star labels + Romance month gloss
+f72v3	K	H	z	Z	?	4	0	0	0	119	-	0/0	0/0	f72v3.js	0	-	voynich_nu_f072v3_tr.txt	Zodiac medallion + ~30 nymph star labels + Romance month gloss
+f72v2	K	I	z	Z	?	4	0	0	0	108	-	0/0	0/0	f72v2.js	0	-	stolfi_f72v2_data.txt,voynich_nu_f072v2_tr.txt	Zodiac medallion + ~30 nymph star labels + Romance month gloss
+f72v1	K	J	z	Z	?	4	0	0	0	104	-	0/0	0/0	f72v1.js	0	-	voynich_nu_f072v1_tr.txt	Zodiac medallion + ~30 nymph star labels + Romance month gloss
+f73r	L	A	a	Z	?	4	0	0	0	96	-	0/0	0/0	f73r.js	0	-	voynich_nu_f073r_tr.txt	Zodiac medallion + ~30 nymph star labels + Romance month gloss
+f73v	L	B	a	Z	?	4	0	0	0	99	-	0/0	0/0	f73v.js	0	-	voynich_nu_f073v_tr.txt	Zodiac medallion + ~30 nymph star labels + Romance month gloss
+f75r	M	A	a	B	B	2	53	418	203	0	1.698	1/2	7/53	f75r.js	0	f75r.jpg	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f75v	M	B	a	B	B	2	37	324	173	36	1.713	3/3	3/37	f75v.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f76r	M	C	b	T	B	2	47	561	257	9	1.762	1/1	2/47	f76r.js	0	-	-	Standard folio
+f76v	M	D	b	B	B	2	41	400	227	0	1.763	1/1	2/41	f76v.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f77r	M	E	c	B	B	2	40	321	167	11	1.559	1/1	2/40	f77r.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f77v	M	F	c	B	B	2	37	321	164	11	1.615	0/1	2/37	f77v.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f78r	M	G	d	B	B	2	41	290	161	8	1.728	1/1	3/41	f78r.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f78v	M	H	d	B	B	2	32	295	159	0	1.666	0/1	2/32	f78v.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f79r	M	I	e	B	B	2	44	383	214	0	1.799	1/1	3/44	f79r.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f79v	M	J	e	B	B	2	42	356	201	0	1.725	1/1	6/42	f79v.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f80r	M	K	v	B	B	2	43	436	230	10	1.788	1/1	8/43	f80r.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f80v	M	L	v	B	B	2	44	376	199	0	1.770	1/1	2/44	f80v.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f81r	M	M	w	B	B	2	31	210	128	0	1.676	1/1	1/31	f81r.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f81v	M	N	w	B	B	2	27	253	155	2	1.815	1/1	1/27	f81v.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f82r	M	O	x	B	B	2	32	278	161	13	1.663	1/2	2/32	f82r.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f82v	M	P	x	B	B	2	34	306	178	14	1.705	1/1	3/34	f82v.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f83r	M	Q	y	B	B	2	51	341	196	4	1.702	1/4	1/51	f83r.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f83v	M	R	y	B	B	2	31	257	144	4	1.590	2/2	1/31	f83v.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f84r	M	S	z	B	B	2	34	354	182	14	1.710	1/2	5/34	f84r.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f84v	M	T	z	B	B	2	51	341	164	0	1.650	1/4	4/51	f84v.js	0	-	-	Balneological/biological pools & ducts; peak qo-/-edy density
+f85r1	N	B	a	T	B	2	35	347	239	0	1.954	1/1	13/35	f85r1.js	0	-	-	Rosettes 6-panel cosmological foldout (Ghibelline merlons)
+f85r2	N	C	a	C	B	2	22	108	85	48	1.839	1/4	3/22	f85r2.js	0	-	-	Rosettes 6-panel cosmological foldout (Ghibelline merlons)
+fRos	N	D	?	C	B	4	11	39	37	501	1.744	2/4	0/11	-	0	-	-	Standard folio
+f86v4	N	N	z	C	B	2	5	49	37	142	1.719	1/1	1/5	f86v4.js	0	-	-	Rosettes 6-panel cosmological foldout (Ghibelline merlons)
+f86v6	N	O	z	T	B	2	45	490	287	0	1.955	1/1	11/45	f86v6.js	0	-	-	Rosettes 6-panel cosmological foldout (Ghibelline merlons)
+f86v5	N	P	z	T	B	2	39	390	231	0	1.958	1/1	11/39	f86v5.js	0	-	-	Rosettes 6-panel cosmological foldout (Ghibelline merlons)
+f86v3	N	Q	z	C	B	2	36	281	198	0	1.843	5/5	13/36	f86v3.js	0	-	-	Rosettes 6-panel cosmological foldout (Ghibelline merlons)
+f87r	O	A	a	H	A	1	16	102	91	0	1.963	1/1	1/16	f87r.js	0	-	-	Standard folio
+f87v	O	B	a	H	A	1	16	92	88	0	2.132	0/1	3/16	f87v.js	0	-	-	Standard folio
+f88r	O	C	b	P	A	1	16	134	95	16	1.835	2/3	4/16	f88r.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f88v	O	D	b	P	A	1	17	131	105	14	1.888	2/2	3/17	f88v.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f89r1	O	F	y	P	A	1	14	126	95	15	1.858	1/2	2/14	f89r1.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f89r2	O	G	y	P	A	1	14	212	135	22	1.835	2/3	2/14	f89r2.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f89v2	O	I	y	P	A	1	12	165	120	16	2.002	1/2	4/12	f89v2.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f89v1	O	J	y	P	A	1	16	145	117	9	1.888	1/1	1/16	f89v1.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f90r1	O	L	z	H	A	1	9	69	66	0	2.101	1/1	1/9	f90r1.js	0	-	-	Standard folio
+f90r2	O	M	z	H	A	1	6	47	40	0	1.947	1/1	0/6	f90r2.js	0	-	-	Standard folio
+f90v2	O	O	z	H	A	1	8	68	60	0	1.885	0/1	2/8	f90v2.js	0	-	-	Standard folio
+f90v1	O	P	z	H	A	1	11	96	84	0	1.944	1/1	1/11	f90v1.js	0	-	-	Standard folio
+f93r	Q	A	a	H	A	1	32	152	117	0	1.949	1/1	2/32	f93r.js	0	-	-	Standard folio
+f93v	Q	B	a	H	A	1	10	89	75	0	1.925	1/1	2/10	f93v.js	0	-	-	Standard folio
+f94r	Q	C	b	H	B	3	9	79	74	0	1.801	1/1	3/9	f94r.js	0	-	-	Standard folio
+f94v	Q	D	b	H	B	3	12	97	85	0	1.849	1/1	2/12	f94v.js	0	-	-	Standard folio
+f95r1	Q	F	y	H	B	3	11	102	80	0	1.650	1/1	1/11	f95r1.js	0	-	-	Standard folio
+f95r2	Q	G	y	H	B	3	9	79	62	0	1.740	1/1	4/9	f95r2.js	0	-	-	Standard folio
+f95v2	Q	I	y	H	B	3	7	60	55	0	1.696	1/1	0/7	f95v2.js	0	-	-	Standard folio
+f95v1	Q	J	y	H	B	3	13	118	104	0	1.817	0/1	2/13	f95v1.js	0	-	-	Standard folio
+f96r	Q	K	z	H	A	1	13	84	75	0	1.823	1/1	0/13	f96r.js	0	-	-	Standard folio
+f96v	Q	L	z	H	A	1	13	56	56	0	1.984	1/1	1/13	f96v.js	0	-	-	Standard folio
+f99r	S	A	a	P	A	1	18	158	114	36	1.931	4/4	2/18	f99r.js	0	f99r.jpg	-	Pharmaceutical jars (albarelli) + roots + recipes
+f99v	S	B	a	P	A	1	19	148	117	28	1.824	0/4	4/19	f99v.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f100r	S	C	b	P	A	1	10	91	75	19	1.946	2/2	1/10	f100r.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f100v	S	D	b	P	A	1	9	79	67	14	1.983	0/1	0/9	f100v.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f101r	S	E	y	P	A	1	10	227	145	0	1.857	1/1	2/10	-	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f101v	S	H	y	P	A	1	10	197	149	18	1.953	1/1	1/10	-	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f102r1	S	L	z	P	A	1	13	103	89	4	1.965	3/3	1/13	f102r1.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f102r2	S	M	z	P	A	1	15	137	106	7	2.059	1/3	2/15	f102r2.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f102v2	S	O	z	P	A	1	17	168	127	22	1.974	2/2	0/17	f102v2.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f102v1	S	P	z	P	A	1	14	118	96	10	1.792	2/2	3/14	f102v1.js	0	-	-	Pharmaceutical jars (albarelli) + roots + recipes
+f103r	T	A	a	S	B	3	54	532	290	0	1.835	1/1	5/54	f103r.js	0	-	-	Standard folio
+f103v	T	B	a	S	B	3	46	454	238	0	1.830	1/1	5/46	f103v.js	0	-	-	Standard folio
+f104r	T	C	b	S	B	3	45	448	313	0	1.959	1/1	14/45	f104r.js	0	-	-	Standard folio
+f104v	T	D	b	S	B	3	44	477	312	0	1.908	1/1	13/44	f104v.js	0	-	-	Standard folio
+f105r	T	E	c	S	B	3	37	379	273	0	2.025	0/1	8/37	f105r.js	0	-	-	Standard folio
+f105v	T	F	c	S	B	3	38	399	284	0	2.049	1/1	11/38	f105v.js	0	-	-	Standard folio
+f106r	T	G	d	S	B	3	47	432	306	0	1.942	1/1	9/47	f106r.js	0	-	-	Standard folio
+f106v	T	H	d	S	B	3	47	444	313	0	1.961	1/1	11/47	f106v.js	0	-	-	Standard folio
+f107r	T	I	e	S	B	3	51	487	317	0	1.965	1/1	12/51	f107r.js	0	-	-	Standard folio
+f107v	T	J	e	S	B	3	49	462	260	0	1.812	1/1	8/49	f107v.js	0	-	-	Standard folio
+f108r	T	K	f	S	B	3	50	494	279	0	1.787	1/1	12/50	f108r.js	0	-	-	Standard folio
+f108v	T	L	f	S	B	3	53	581	299	0	1.738	1/1	17/53	f108v.js	0	-	-	Standard folio
+f111r	T	M	u	S	B	3	54	624	356	0	1.860	1/1	15/54	f111r.js	0	-	-	Standard folio
+f111v	T	N	u	S	B	3	51	568	305	0	1.797	1/1	13/51	f111v.js	0	-	-	Standard folio
+f112r	T	O	v	S	B	3	45	401	257	0	1.909	1/1	14/45	f112r.js	0	-	-	Standard folio
+f112v	T	P	v	S	B	3	47	420	261	0	1.820	1/1	12/47	f112v.js	0	-	-	Standard folio
+f113r	T	Q	w	S	B	3	51	529	370	0	2.002	1/1	8/51	f113r.js	0	-	-	Standard folio
+f113v	T	R	w	S	B	3	49	502	317	0	1.983	1/1	10/49	f113v.js	0	-	-	Standard folio
+f114r	T	S	x	S	B	3	45	460	320	0	1.916	1/1	6/45	f114r.js	0	-	-	Standard folio
+f114v	T	T	x	S	B	3	41	376	265	0	1.864	1/1	10/41	f114v.js	0	-	-	Standard folio
+f115r	T	U	y	S	B	?	45	461	310	0	1.926	1/1	7/45	f115r.js	0	-	-	Standard folio
+f115v	T	V	y	S	B	3	45	410	317	0	2.019	1/1	15/45	f115v.js	0	-	-	Standard folio
+f116r	T	W	z	S	B	3	50	553	273	0	1.903	1/1	17/50	f116r.js	0	-	-	Standard folio
+f116v	T	X	z	T	?	3	0	0	0	2	-	0/0	0/0	-	0	f116v.jpg	ciphermysteries_f116v_p4559.html,ciphermysteries_f116v_p4559.html.txt,stolfi_f116v.htm	Marginalia charm w/ embedded Voynich 'oror sheey'; 2024 MSI

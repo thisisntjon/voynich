@@ -1,0 +1,124 @@
+{
+ "row": {
+  "name": "gib_DC_31",
+  "tokens": 355,
+  "types": 343,
+  "pages": 3,
+  "lines": 45,
+  "errors": {
+   "extra": "ZeroDivisionError: float division by zero",
+   "bake": "KeyError: 'markov3'"
+  },
+  "types_25k": 343,
+  "h2": 3.4665,
+  "sd_len": 1.823,
+  "jsd_first_fg": 0.0983,
+  "p_init_enrich": 0.98,
+  "m_final_enrich": 0.39,
+  "cross_excess_eva": 0.1109,
+  "redup_pct": 0.0,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "jsd_first_fg",
+   "p_init_enrich",
+   "m_final_enrich",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "gib_DC_31",
+   "tokens": 355,
+   "types": 343,
+   "hapax_rate": 0.9679,
+   "mean_len": 5.194,
+   "sd_len": 1.823,
+   "h1": 4.1405,
+   "h2": 3.4665,
+   "h3": 2.2571,
+   "zipf": -0.0835,
+   "redup_pct": 0.0,
+   "jsd_first_fg": 0.0983,
+   "jsd_last_lg": 0.1353,
+   "p_init_enrich": 0.98,
+   "m_final_enrich": 0.39,
+   "cross_mi_eva": 1.0322,
+   "cross_excess_eva": 0.1109,
+   "cross_mi_glyph": 1.2344,
+   "cross_excess_glyph": 0.1229,
+   "recur_le_1": 0.0,
+   "recur_le_5": 0.0,
+   "recur_le_20": 0.0028,
+   "recur_le_100": 0.031
+  },
+  "info_mi_adjacent": 0.0,
+  "info_mi_page": 0.0,
+  "info_samecol_minus_othercol": 0.0,
+  "info_bpe_adjacent": 0.3137688527839435,
+  "lex_beta": null,
+  "lex_rate_late_early": null,
+  "lex_edit1_excess": 0.1282798833819242,
+  "slot_occupancy_pc": 0.0534376018246986,
+  "slot_table_likeness": 0.9900510958165584,
+  "slot_core_crowding": 0.5483870967741935,
+  "x_edge_mi_word": null,
+  "x_position_entropy": null,
+  "x_ltr_minus_rtl": null,
+  "x_moran_I": null,
+  "bake_char3_minus_unigram": null,
+  "x_hapax_10k": null,
+  "bake_winner": null,
+  "family": "X",
+  "note": "data\\controls_gibberish\\gib_DC_31.meta.json; 355 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 5,
+    "outs": 2,
+    "na": 3,
+    "out_metrics": [
+     "jsd_first_fg",
+     "types_25k"
+    ],
+    "out_tight": [
+     "jsd_first_fg"
+    ]
+   },
+   "C": {
+    "ins": 3,
+    "outs": 2,
+    "na": 5,
+    "out_metrics": [
+     "cross_excess_eva",
+     "types_25k"
+    ],
+    "out_tight": [
+     "cross_excess_eva"
+    ]
+   },
+   "G": {
+    "ins": 2,
+    "outs": 5,
+    "na": 3,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "types_25k"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "results_m4_phase1_board.json"
+}

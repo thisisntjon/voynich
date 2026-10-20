@@ -1,0 +1,58 @@
+S44: Currier-A-only line-initial JSD excess draws vs the s18 Latin manuscripts (red-team request)
+run started Sat Oct 17 22:17:43 PDT 2026 (`date`)
+s44_a_only_line_initial.py sha256=9a71ed1e28c465e5f2b133632828979408c901ff89295ebf35755b0d04567734  prereg stub_match=True
+estimator: a2_position.stats (feat w[0]) raw jsd_first; null = mean of a2_position.null n=30; excess = raw - null; 200 draws per size, random.Random(20261017).sample re-seeded per size and language
+prediction (red team): A 773-line draw interval includes >= +0.132 -> 'A inside'. Rule: 'A inside' if A 2.5 % bound < +0.132 at every available size >= 201; else 'A outside'.
+
+ZL3b all: 207 pages, 4130 lines, 34857 tokens; jsd_first raw 0.1759 null 0.0019 excess +0.1740
+ZL3b A  : 114 pages, 1557 lines, 11231 tokens; jsd_first raw 0.1392 null 0.0031 excess +0.1361
+ZL3b B  : 83 pages, 2478 lines, 23078 tokens; jsd_first raw 0.2191 null 0.0017 excess +0.2174
+check: results_s32.txt ZL3b full excess +0.1740 (all pages)
+
+=== draws: 200 per size; excess median [2.5 %, 97.5 %]; margin = (2.5 % bound - 0.132) ===
+   k |                       A excess  A margin |                       B excess |             all excess (check)
+ 114 |     +0.1267 [+0.0839, +0.1765]   -0.0481 |     +0.2218 [+0.1606, +0.2948] |                              -
+ 131 |     +0.1279 [+0.0905, +0.1773]   -0.0415 |     +0.2213 [+0.1598, +0.2841] |                              -
+ 160 |     +0.1302 [+0.0908, +0.1743]   -0.0412 |     +0.2165 [+0.1616, +0.2767] |                              -
+ 201 |     +0.1309 [+0.1010, +0.1629]   -0.0310 |     +0.2182 [+0.1694, +0.2663] |                              -
+ 492 |     +0.1326 [+0.1135, +0.1532]   -0.0185 |     +0.2188 [+0.1864, +0.2482] |                              -
+ 773 |     +0.1346 [+0.1186, +0.1502]   -0.0134 |     +0.2178 [+0.1953, +0.2415] |     +0.1734 [+0.1528, +0.1980]
+check: all-pages draw at 773 -> +0.1734 [+0.1528, +0.1980]; results_s32.txt gives +0.1734 [+0.1528, +0.1980]
+
+=== Latin rows (results_s18.txt lines 239-259 + s32 pooled rows) against the A and B draw intervals at the nearest draw size >= row lines (or the largest available) ===
+row                      | lines |      exc | A size   A pos | B size   B pos
+Arras-861                |   351 |  +0.0239 |    492   below |    492   below
+BGO-511                  |    54 |  +0.0122 |    114   below |    114   below
+BIS-193                  |   598 |  +0.0393 |    773   below |    773   below
+CCCC-MSS-165             |   148 |  +0.0047 |    160   below |    160   below
+CCCC-MSS-236             |   160 |  +0.0642 |    160   below |    160   below
+CLM13027                 |   609 |  +0.0483 |    773   below |    773   below
+Egerton821               |   114 |  +0.1324 |    114  inside |    114   below
+H318                     |   414 |  +0.0152 |    492   below |    492   below
+Latin16195               |   430 |  +0.0083 |    492   below |    492   below
+Latin6395                |   622 |  +0.0583 |    773   below |    773   below
+Latin8236                |   206 |  +0.0579 |    492   below |    492   below
+LaurPlut33.31            |   201 |  +0.1370 |    201  inside |    201   below
+LaurPlut39.34            |   131 |  +0.1017 |    131  inside |    131   below
+LaurPlut53.08            |   216 |  +0.0073 |    492   below |    492   below
+LaurPlut53.09            |   125 |  +0.0203 |    131   below |    131   below
+Mazarine915              |   418 |  +0.0192 |    492   below |    492   below
+PalLat373                |   432 |  +0.0202 |    492   below |    492   below
+Phi_10a135               |   139 |  +0.0241 |    160   below |    160   below
+SBB_PK_Hdschr25          |   234 |  +0.0023 |    492   below |    492   below
+UBL758                   |   469 |  +0.0306 |    492   below |    492   below
+WettF0015                |   380 |  +0.0525 |    492   below |    492   below
+Latin-verse-pool (s32)   |   492 |  +0.0941 |    492   below |    492   below
+cremma_prose15 (s18)     |   773 |  +0.0078 |    773   below |    773   below
+
+=== READING (pre-registered rule) ===
+  A at 201: 2.5 % bound +0.1010 vs +0.132 -> below (inside); margin -0.0310
+  A at 492: 2.5 % bound +0.1135 vs +0.132 -> below (inside); margin -0.0185
+  A at 773: 2.5 % bound +0.1186 vs +0.132 -> below (inside); margin -0.0134
+  prediction check (A at 773 includes >= +0.132): interval [+0.1186, +0.1502] -> includes -> prediction CONFIRMED
+reading: A inside (rule sizes [201, 492, 773]; sizes with A 2.5 % bound below +0.132: [201, 492, 773])
+  A largest size 773: 2.5 % bound +0.1186; highest Latin row +0.1370 (LaurPlut33.31); pooled Latin verse +0.0941; CREMMA prose pool +0.0078
+  B largest size 773: 2.5 % bound +0.1953; highest Latin row +0.1370 (LaurPlut33.31); pooled Latin verse +0.0941; CREMMA prose pool +0.0078
+
+elapsed 87.3 s
+run finished Sat Oct 17 22:19:10 PDT 2026 (`date`)

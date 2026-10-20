@@ -1,0 +1,155 @@
+{
+ "n_match": 6195,
+ "bands": {
+  "freq|50": [
+   0.0091,
+   0.1093
+  ],
+  "freq|100": [
+   -0.0057,
+   0.1026
+  ],
+  "freq|200": [
+   -0.0203,
+   0.1011
+  ],
+  "clust|50": [
+   0.0035,
+   0.124
+  ],
+  "clust|100": [
+   -0.0041,
+   0.1078
+  ],
+  "clust|200": [
+   -0.0275,
+   0.0978
+  ],
+  "freq|25": [
+   0.007,
+   0.0879
+  ],
+  "clust|25": [
+   0.0134,
+   0.0905
+  ],
+  "freq|400": [
+   -0.0401,
+   0.096
+  ],
+  "clust|400": [
+   -0.0455,
+   0.0925
+  ]
+ },
+ "voy_sig": {
+  "freq|25": true,
+  "freq|50": true,
+  "freq|100": true,
+  "freq|200": true,
+  "freq|400": true,
+  "clust|25": true,
+  "clust|50": true,
+  "clust|100": true,
+  "clust|200": true,
+  "clust|400": false
+ },
+ "calls": {
+  "P4D1": {
+   "n": 36,
+   "C1": 25,
+   "C2": 0,
+   "C1_freq_only": 26,
+   "per_target": {
+    "curve": 25,
+    "h2": 0,
+    "A5": 0,
+    "CHARWIN": 36,
+    "f4": 0
+   },
+   "fail_among_curve_matches": {
+    "h2": 25,
+    "A5": 25,
+    "CHARWIN": 0,
+    "f4": 25
+   },
+   "matches": [
+    "K1_latin_caesar_s1",
+    "K1_latin_caesar_s2",
+    "K1_latin_caesar_s3",
+    "K3_latin_caesar_s1",
+    "K3_latin_caesar_s2",
+    "K3_latin_caesar_s3",
+    "K1_latin_augustine_s1",
+    "K1_latin_augustine_s2",
+    "K1_latin_augustine_s3",
+    "K3_latin_augustine_s1",
+    "K3_latin_augustine_s2",
+    "K3_latin_augustine_s3",
+    "K1_italian_dante_s1",
+    "K1_italian_dante_s2",
+    "K1_italian_dante_s3",
+    "K3_italian_dante_s1",
+    "K3_italian_dante_s2",
+    "K3_italian_dante_s3",
+    "K1_german_kafka_s1",
+    "K1_german_kafka_s2",
+    "K3_german_kafka_s1",
+    "K1_english_alice_s1",
+    "K1_english_alice_s3",
+    "K3_english_alice_s1",
+    "K3_english_alice_s3"
+   ],
+   "joint": [],
+   "reading": "core order reachable, joint profile not (failing targets among curve matches: h2 (missed by 25/25), A5 (missed by 25/25), f4 (missed by 25/25))"
+  },
+  "S50": {
+   "n": 81,
+   "C1": 25,
+   "C2": 0,
+   "C1_freq_only": 26,
+   "per_target": {
+    "curve": 25,
+    "h2": 0,
+    "A5": 3,
+    "CHARWIN": 2,
+    "f4": 0
+   },
+   "fail_among_curve_matches": {
+    "h2": 25,
+    "A5": 23,
+    "CHARWIN": 25,
+    "f4": 25
+   },
+   "matches": [
+    "L4_K0_b0_a0.7_g1",
+    "L4_K0_b0_a1_g0.5",
+    "L4_K0_b0_a1_g1",
+    "L4_K0_b0_a1.3_g0",
+    "L4_K0_b0_a1.3_g0.5",
+    "L4_K0_b0_a1.3_g1",
+    "L4_K0_b1_a0.7_g1",
+    "L4_K0_b1_a1_g0",
+    "L4_K0_b1_a1_g0.5",
+    "L4_K0_b1_a1_g1",
+    "L4_K0_b1_a1.3_g0",
+    "L4_K0_b1_a1.3_g0.5",
+    "L4_K0_b1_a1.3_g1",
+    "L4_K0_b2_a0.7_g0",
+    "L4_K0_b2_a0.7_g0.5",
+    "L4_K0_b2_a0.7_g1",
+    "L4_K0_b2_a1_g0",
+    "L4_K0_b2_a1_g0.5",
+    "L4_K0_b2_a1_g1",
+    "L4_K0_b2_a1.3_g0",
+    "L4_K0_b2_a1.3_g0.5",
+    "L4_K0_b2_a1.3_g1",
+    "L4_K12_b0_a1.3_g0.5",
+    "L4_K12_b0_a1.3_g1",
+    "L4_K12_b1_a1.3_g1"
+   ],
+   "joint": [],
+   "reading": "core order reachable, joint profile not (failing targets among curve matches: h2 (missed by 25/25), A5 (missed by 23/25), CHARWIN (missed by 25/25), f4 (missed by 25/25))"
+  }
+ }
+}

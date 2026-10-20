@@ -1,0 +1,40 @@
+F3: flow-choice producers (homophone / candidate chosen by R(first | previous last)^BETA)
+battery as F2; line rows = b4.report on lines 2+
+
+VOYNICH                    crossMI excess=+0.181  edge-gain excess=+0.270  residual excess=+0.042  h2=2.109  len 4.99±1.79  types=7025  hapax=0.68  tokens=34857
+Naibbe chunks rebuilt: 20923; unigram letters 23, prefix 23, suffix 23; homophones per unigram letter (median) 6
+
+CIPHER flow beta=0         crossMI excess=+0.001  edge-gain excess=+0.031  residual excess=+0.033  h2=2.086  len 5.26±1.62  types=4650  hapax=0.48  tokens=20917
+CIPHER flow beta=1         crossMI excess=+0.115  edge-gain excess=+0.131  residual excess=+0.038  h2=2.088  len 5.28±1.63  types=4691  hapax=0.49  tokens=20917
+CIPHER flow beta=2         crossMI excess=+0.327  edge-gain excess=+0.379  residual excess=+0.063  h2=2.098  len 5.26±1.64  types=4778  hapax=0.49  tokens=20917
+CIPHER flow beta=3         crossMI excess=+0.511  edge-gain excess=+0.541  residual excess=+0.059  h2=2.098  len 5.27±1.66  types=4737  hapax=0.48  tokens=20917
+
+GEN flow beta=0 s1         crossMI excess=+0.000  edge-gain excess=-0.011  residual excess=-0.004  h2=1.758  len 4.29±1.62  types=1608  hapax=0.33  tokens=34857
+GEN flow beta=0 s2         crossMI excess=+0.001  edge-gain excess=+0.023  residual excess=+0.001  h2=1.755  len 4.35±1.64  types=1613  hapax=0.35  tokens=34857
+GEN flow beta=1 s1         crossMI excess=+0.119  edge-gain excess=+0.124  residual excess=+0.013  h2=1.764  len 4.31±1.60  types=1616  hapax=0.35  tokens=34857
+GEN flow beta=1 s2         crossMI excess=+0.138  edge-gain excess=+0.142  residual excess=+0.009  h2=1.740  len 4.39±1.59  types=1607  hapax=0.35  tokens=34857
+GEN flow beta=2 s1         crossMI excess=+0.348  edge-gain excess=+0.338  residual excess=+0.017  h2=1.747  len 4.34±1.61  types=1604  hapax=0.35  tokens=34857
+GEN flow beta=2 s2         crossMI excess=+0.389  edge-gain excess=+0.376  residual excess=+0.012  h2=1.736  len 4.40±1.62  types=1582  hapax=0.35  tokens=34857
+GEN flow beta=3 s1         crossMI excess=+0.568  edge-gain excess=+0.549  residual excess=+0.009  h2=1.738  len 4.40±1.63  types=1639  hapax=0.36  tokens=34857
+GEN flow beta=3 s2         crossMI excess=+0.619  edge-gain excess=+0.592  residual excess=+0.015  h2=1.724  len 4.45±1.63  types=1602  hapax=0.36  tokens=34857
+
+CIPHER flow beta=1.5       crossMI excess=+0.224  edge-gain excess=+0.273  residual excess=+0.049  h2=2.094  len 5.26±1.64  types=4703  hapax=0.49  tokens=20917
+GEN flow1.5 run-copy 0.1 s1 crossMI excess=+0.270  edge-gain excess=+0.287  residual excess=+0.003  h2=1.759  len 4.32±1.65  types=1643  hapax=0.35  tokens=34857
+GEN flow1.5 run-copy 0.1 s2 crossMI excess=+0.257  edge-gain excess=+0.257  residual excess=+0.003  h2=1.741  len 4.42±1.67  types=1605  hapax=0.36  tokens=34857
+GEN flow1.5 run-copy 0.3 s1 crossMI excess=+0.292  edge-gain excess=+0.267  residual excess=-0.005  h2=1.747  len 4.40±1.65  types=1624  hapax=0.34  tokens=34857
+GEN flow1.5 run-copy 0.3 s2 crossMI excess=+0.299  edge-gain excess=+0.267  residual excess=-0.009  h2=1.748  len 4.42±1.58  types=1624  hapax=0.35  tokens=34857
+GEN flow1.5 run-copy 0.5 s1 crossMI excess=+0.310  edge-gain excess=+0.274  residual excess=-0.014  h2=1.750  len 4.45±1.63  types=1663  hapax=0.35  tokens=34857
+GEN flow1.5 run-copy 0.5 s2 crossMI excess=+0.313  edge-gain excess=+0.284  residual excess=-0.008  h2=1.753  len 4.41±1.61  types=1576  hapax=0.35  tokens=34857
+
+--- residual excess under stricter splits (quire split removes neighbouring-page leakage) ---
+VOYNICH                      pages even->odd: +0.042  pages odd->even: +0.039  quires alt: +0.041
+CIPHER flow beta=1.5         pages even->odd: +0.049  pages odd->even: +0.042  quires alt: +0.049
+GEN flow1.5 s1               pages even->odd: +0.011  pages odd->even: +0.012  quires alt: -0.001
+GEN flow1.5 run-copy 0.3 s1  pages even->odd: -0.005  pages odd->even: +0.001  quires alt: +0.006
+
+--- line statistics (no line rules in any producer) ---
+VOYNICH          JSDfirst=0.1722 (null 0.0019)  JSDlast=0.0839 (null 0.0013)  p-init x15.97  m-final x16.55  h2=2.093  repeat=0.87%  samecol_edit<=1=0.044  tokens=33053
+CIPHER flow beta=0 JSDfirst=0.0009 (null 0.0014)  JSDlast=0.0009 (null 0.0012)  p-init x 0.94  m-final x 1.21  h2=2.085  repeat=0.14%  samecol_edit<=1=0.019  tokens=19607
+CIPHER flow beta=2 JSDfirst=0.0016 (null 0.0014)  JSDlast=0.0008 (null 0.0009)  p-init x 1.07  m-final x 0.99  h2=2.098  repeat=0.13%  samecol_edit<=1=0.017  tokens=19607
+GEN flow beta=0 s1 JSDfirst=0.0008 (null 0.0009)  JSDlast=0.0007 (null 0.0010)  p-init x 1.04  m-final x 1.16  h2=1.756  repeat=1.50%  samecol_edit<=1=0.067  tokens=33053
+GEN flow beta=2 s1 JSDfirst=0.0020 (null 0.0011)  JSDlast=0.0012 (null 0.0010)  p-init x 0.84  m-final x 1.16  h2=1.747  repeat=1.41%  samecol_edit<=1=0.061  tokens=33053

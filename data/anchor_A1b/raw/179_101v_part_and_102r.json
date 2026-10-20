@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:05:43.0148502Z",
+ "response": "{\n  \"PT\": \"PLANT\",\n  \"P_plants\": \"3+\",\n  \"P_root\": \"TUBER\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"1-4\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"MULTI\",\n  \"J_shape\": \"NONE\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"6+\",\n  \"J_fragtype\": \"MIXED\",\n  \"C_centre\": \"EMPTY\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"2-3\",\n  \"C_rings\": \"4+\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"0\",\n  \"B_figures\": \"0\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Illustrations of plants with tuberous roots and linear leaves.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2773156300,
+ "load_duration": 201053900,
+ "prompt_eval_count": 3431,
+ "prompt_eval_duration": 843562000,
+ "eval_count": 212,
+ "eval_duration": 1570332000,
+ "stem": "179_101v_part_and_102r"
+}

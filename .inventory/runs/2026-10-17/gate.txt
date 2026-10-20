@@ -1,0 +1,30 @@
+# Gate run 2026-10-17 18:53 PDT
+
+## validate.py
+G6: gated 206 verification-asserting claim rows
+records: 214 | fails: 0 | warnings: 1
+  WARN  G3 coverage 100.0% of 108 knowledge files (0 unaccounted)
+INVENTORY GATE: PASS
+
+## claim_coverage.py (live summary docs)
+claim coverage: 89/102 = 87.3% across 7 public files
+claim register: 542 distinct numbers, 161 with an id
+UNCOVERED (13) — a number here cannot be sourced on request:
+  TEAM-HANDOFF.md  (4)
+    :32    133 / 0        - Hand-2 section NMI: **NOT EVIDENCE**. The manuscript fails its own quire-block null on all three t
+    :32    219 / 0        - Hand-2 section NMI: **NOT EVIDENCE**. The manuscript fails its own quire-block null on all three t
+    :36    278 / 0        - Seed spread is 0.15–0.30, and single generator seeds reach the manuscript's NMI, even without habi
+    :92    80/20          1. **Manuscript on G1's 41 test pages.** Score the real text on the same page split (seed 20261017, 
+  PREREG-v2-DRAFT.md  (4)
+    :35    0.2 %          | M3 | Immediate word repeats | ≤0.2 % | low–moderate | high (≥1.5 %) |
+    :42    50 %           | M10 | Lexicon growth: Heaps β; late/early new-type rate | β 0.5–0.7, no saturation | saturation: l
+    :51    7.0k           | M19 | **Type budget**: word types at 25k tokens scored jointly with cross-space edge-MI excess (K-
+    :66    10 %           range (extended by 10 % of the range width), **out** otherwise. The critic reports, per family,
+  PREREG.md  (3)
+    :29    0.0%           | redup_pct | 0.896% | 0.4–1.8% | b4 sims 2.2–6.0%; plain Latin 0.0% |
+    :32    20,100         cross_mi_glyph/excess, recur_le_{1,5,20,100} (v1 definition in score.py;
+    :51    80/20          pages only: page-level 80/20 split, seed 20261017, same split for all
+  K_RESULTS.md  (2)
+    :58    25%            **K4: lossy (many-to-one) nomenclator.** Each plaintext word maps to several codewords taken from a 
+    :58    15%            **K4: lossy (many-to-one) nomenclator.** Each plaintext word maps to several codewords taken from a 
+CLAIM COVERAGE: REPORT ONLY

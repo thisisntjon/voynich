@@ -1,0 +1,9 @@
+#s128_layout_counts v2 (prereg v4)
+#source_path	data/fixture/synthetic_ivtff_v4_nomarks.txt
+#source_sha256	eb7f50a588f1a5ade4983c43d60a0502089152cc656e4f3b06e54935b4764478
+#para_start_marks_on_included_herbal_lines	0
+#excluded_foldout_pages	1	f901r1
+#herbal_pages_no_kept_line	1	f901r
+page	Q	B	H	L	line_token_counts	para_start_flags
+f900r	Z	1	1	A	2,2,3	1,1,1
+f900v	Z	1	2	?	2,1,2	1,0,0

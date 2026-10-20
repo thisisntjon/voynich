@@ -1,0 +1,6 @@
+# s120_sheet_unit prereg stub (sha256sum format, LF, no BOM). Frozen Sun Oct 18 21:16:07 PDT 2026 (`date`), after the fixture passed and before any real feature value is read.
+# Run s120 (DECISIONS.md D-066 (y), L-338): s119 design with one change, matched strata (quire, bound distance, same-hand-x-section-cell flag). All s118/s119 control bars kept.
+# Fixture runs/s120/fixture_20261018_211553.txt: FIXTURE OVERALL PASS (power 1.000; (b) 0.030/0.030; (c) 0.035; (a) 20/20; (b2) 0/20).
+# Verify: grep -v "^#" STUB | tr -d CR | sha256sum -c -
+7f16b4205f4a7f252976807f17d87608eb389c17c50360d0320035317095f612 *tools/s120_sheet_unit.py
+3efcf16c6eb93fa6e3111d6a851c0f0077daf657f29b9264e31e6d8f1f77bd97 *runs/s120/fixture_20261018_211553.txt

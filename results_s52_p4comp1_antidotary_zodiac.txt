@@ -1,0 +1,117 @@
+s52_p4comp1_antidotary_zodiac.py sha256=69f964382376a5f6fe296a76448c25bb04811fe37d16077002ed6a24699ea077  prereg stub_match=True
+run started: 2026-10-17 23:55:29 (datetime.now)
+166-page clean SlotSegmenter (ZL3b): train_pages=166, train_tokens=26271, prefixes=27, suffixes=18
+166-page clean SlotSegmenter (RF1b): train_pages=166, train_tokens=26014, prefixes=28, suffixes=20
+166-page clean SlotSegmenter (IT2a): train_pages=165, train_tokens=26000, prefixes=24, suffixes=19
+================================================================================
+PART 1 (T1a & T1b): Q20 Recipe Quire Antidotary vs Formulaic & Alphabetical Order
+================================================================================
+--- T1b Power Gate on Planted 285-Paragraph Alphabetical Antidotary (10,000 permutations, alpha=0.01) ---
+  Planted_Plain_Alphabetical (k=1)              : lag1_match=0.9401 vs null=0.0525±0.0132 (q99=0.0880, z=+67.10, p=0.0005) -> DETECTED (PASS POWER GATE)
+  Planted_Mantua1401_VowelHom (k_v=4, k_c=1)    : lag1_match=0.7852 vs null=0.0428±0.0117 (q99=0.0704, z=+63.19, p=0.0005) -> DETECTED (PASS POWER GATE)
+  Planted_Homophonic_k3 (3 hom/letter)          : lag1_match=0.3169 vs null=0.0181±0.0080 (q99=0.0387, z=+37.24, p=0.0005) -> DETECTED (PASS POWER GATE)
+  Planted_Homophonic_k6 (6 hom/letter)          : lag1_match=0.1725 vs null=0.0085±0.0054 (q99=0.0246, z=+30.44, p=0.0005) -> DETECTED (PASS POWER GATE)
+  Planted_WordCode_Unordered (random stem code) : lag1_match=0.1232 vs null=0.1049±0.0186 (q99=0.1514, z=+0.99, p=0.1919) -> NOT DETECTED
+
+--- T1a Comparator Check on CREMMA Medical/Recipe & Formulaic Manuscripts ---
+  cremma_H318           : lines= 414 modal_first='⁊' (0.080) H_norm=0.8974
+  cremma_CLM13027       : lines= 609 modal_first='⁊' (0.033) H_norm=0.9400
+  cremma_Latin16195     : lines= 430 modal_first='⁊' (0.060) H_norm=0.8844
+  cremma_Phi_10a135     : lines= 139 modal_first='in' (0.058) H_norm=0.9313
+
+--- ZL3b T1a: Q20 Paragraph Incipits (N=295 paragraphs, internal line starts=848) ---
+  Raw first token     : distinct=249/295 modal='polaiin' (6/295 = 0.0203) H=7.8168 bits vs internal-line-start null 6.9618±0.1012 (null modal=0.0620)
+  Gallows-stripped    : distinct=229/295 modal='chedy' (8/295 = 0.0271) H=7.6196 bits vs internal-line-start null 6.9377±0.1008
+  166p-Core of w_0    : distinct=165/295 modal='che' (18/295 = 0.0610)
+  T1a Verdict (ZL3b): ANTIDOTARY / NON-FORMULAIC (modal < 0.05, H >= null)
+  T1b ZL3b [Folio_Order             ] post_gallows_init_glyph : obs=0.3063 | quire_perm=0.2395±0.0232 (z=+2.89, p=0.0025) | page_block_perm=0.3101±0.0061 (p=0.8160) -> FAIL (NULL)
+  T1b ZL3b [Folio_Order             ] core_init_glyph (166p)  : obs=0.2993 | quire_perm=0.2142±0.0219 (z=+3.88, p=0.0001) | page_block_perm=0.3006±0.0055 (p=0.7031) -> FAIL (NULL)
+  T1b ZL3b [Folio_Order             ] word2_init_glyph        : obs=0.2007 | quire_perm=0.1590±0.0210 (z=+1.99, p=0.0344) | page_block_perm=0.1936±0.0054 (p=0.1617) -> FAIL (NULL)
+  T1b ZL3b [Layfield_Davis_Alt_Order] post_gallows_init_glyph : obs=0.3099 | quire_perm=0.2392±0.0231 (z=+3.06, p=0.0025) | page_block_perm=0.3102±0.0060 (p=0.6320) -> FAIL (NULL)
+  T1b ZL3b [Layfield_Davis_Alt_Order] core_init_glyph (166p)  : obs=0.3028 | quire_perm=0.2143±0.0222 (z=+3.99, p=0.0002) | page_block_perm=0.3007±0.0055 (p=0.4670) -> FAIL (NULL)
+  T1b ZL3b [Layfield_Davis_Alt_Order] word2_init_glyph        : obs=0.2007 | quire_perm=0.1593±0.0207 (z=+2.00, p=0.0292) | page_block_perm=0.1937±0.0054 (p=0.1604) -> FAIL (NULL)
+
+--- RF1b T1a: Q20 Paragraph Incipits (N=27 paragraphs, internal line starts=1116) ---
+  Raw first token     : distinct= 26/27 modal='pchedal' (2/27 = 0.0741) H=4.6808 bits vs internal-line-start null 4.6347±0.1062 (null modal=0.0732)
+  Gallows-stripped    : distinct= 26/27 modal='chedal' (2/27 = 0.0741) H=4.6808 bits vs internal-line-start null 4.6244±0.1100
+  166p-Core of w_0    : distinct= 25/27 modal='che' (2/27 = 0.0741)
+  T1a Verdict (RF1b): FORMULAIC
+  T1b RF1b [Folio_Order             ] post_gallows_init_glyph : obs=0.3636 | quire_perm=0.3119±0.0779 (z=+0.66, p=0.3449) | page_block_perm=0.3136±0.0779 (p=0.3512) -> FAIL (NULL)
+  T1b RF1b [Folio_Order             ] core_init_glyph (166p)  : obs=0.1818 | quire_perm=0.2621±0.0762 (z=-1.05, p=0.9225) | page_block_perm=0.2605±0.0733 (p=0.9264) -> FAIL (NULL)
+  T1b RF1b [Folio_Order             ] word2_init_glyph        : obs=0.1364 | quire_perm=0.1305±0.0693 (z=+0.09, p=0.5696) | page_block_perm=0.1309±0.0702 (p=0.5704) -> FAIL (NULL)
+  T1b RF1b [Layfield_Davis_Alt_Order] post_gallows_init_glyph : obs=0.3182 | quire_perm=0.3121±0.0770 (z=+0.08, p=0.5733) | page_block_perm=0.3106±0.0778 (p=0.5681) -> FAIL (NULL)
+  T1b RF1b [Layfield_Davis_Alt_Order] core_init_glyph (166p)  : obs=0.2273 | quire_perm=0.2609±0.0754 (z=-0.45, p=0.7704) | page_block_perm=0.2612±0.0756 (p=0.7720) -> FAIL (NULL)
+  T1b RF1b [Layfield_Davis_Alt_Order] word2_init_glyph        : obs=0.0909 | quire_perm=0.1302±0.0693 (z=-0.57, p=0.8100) | page_block_perm=0.1310±0.0689 (p=0.8135) -> FAIL (NULL)
+
+--- IT2a T1a: Q20 Paragraph Incipits (N=301 paragraphs, internal line starts=841) ---
+  Raw first token     : distinct=250/301 modal='polaiin' (6/301 = 0.0199) H=7.8140 bits vs internal-line-start null 7.0784±0.0908 (null modal=0.0579)
+  Gallows-stripped    : distinct=227/301 modal='ol' (10/301 = 0.0332) H=7.5770 bits vs internal-line-start null 7.0551±0.0911
+  166p-Core of w_0    : distinct=182/301 modal='pche' (17/301 = 0.0565)
+  T1a Verdict (IT2a): ANTIDOTARY / NON-FORMULAIC (modal < 0.05, H >= null)
+  T1b IT2a [Folio_Order             ] post_gallows_init_glyph : obs=0.3056 | quire_perm=0.2416±0.0232 (z=+2.76, p=0.0046) | page_block_perm=0.3036±0.0062 (p=0.4756) -> FAIL (NULL)
+  T1b IT2a [Folio_Order             ] core_init_glyph (166p)  : obs=0.3299 | quire_perm=0.3147±0.0197 (z=+0.77, p=0.2452) | page_block_perm=0.3248±0.0058 (p=0.2690) -> FAIL (NULL)
+  T1b IT2a [Folio_Order             ] word2_init_glyph        : obs=0.1979 | quire_perm=0.1628±0.0207 (z=+1.70, p=0.0550) | page_block_perm=0.1944±0.0053 (p=0.3495) -> FAIL (NULL)
+  T1b IT2a [Layfield_Davis_Alt_Order] post_gallows_init_glyph : obs=0.3090 | quire_perm=0.2420±0.0231 (z=+2.90, p=0.0029) | page_block_perm=0.3036±0.0063 (p=0.2707) -> FAIL (NULL)
+  T1b IT2a [Layfield_Davis_Alt_Order] core_init_glyph (166p)  : obs=0.3229 | quire_perm=0.3143±0.0197 (z=+0.44, p=0.3619) | page_block_perm=0.3248±0.0056 (p=0.7310) -> FAIL (NULL)
+  T1b IT2a [Layfield_Davis_Alt_Order] word2_init_glyph        : obs=0.1944 | quire_perm=0.1626±0.0205 (z=+1.55, p=0.0768) | page_block_perm=0.1944±0.0053 (p=0.5975) -> FAIL (NULL)
+
+================================================================================
+PART 2 (T2a & T2b): Zodiac Period-7 Monomoiria & Cross-Sign Degree-Position Stem
+================================================================================
+--- T2a Power Gate on Planted 10x30 Planet Monomoiria Rings (Period 7, 10,000 ring permutations) ---
+  Planted_Monomoiria (k= 1 homophones/planet): lag7_match=0.7667 vs null=0.1146±0.0182 (z=+35.89, p=0.0005) -> DETECTED (PASS POWER GATE)
+  Planted_Monomoiria (k= 3 homophones/planet): lag7_match=0.2600 vs null=0.0421±0.0112 (z=+19.41, p=0.0005) -> DETECTED (PASS POWER GATE)
+  Planted_Monomoiria (k= 6 homophones/planet): lag7_match=0.1167 vs null=0.0179±0.0075 (z=+13.22, p=0.0005) -> DETECTED (PASS POWER GATE)
+  Planted_Monomoiria (k=10 homophones/planet): lag7_match=0.0867 vs null=0.0118±0.0061 (z=+12.33, p=0.0005) -> DETECTED (PASS POWER GATE)
+
+--- T2b Power Gate on Planted 8x30 Recurring Degree-Image Rings (15% shared stems at offset 0) ---
+  Planted_Degree_Images (15% shared stems): offset0_match=0.0798 vs circular-shift null=0.0027±0.0024 (z=+31.82, p=0.0005) -> DETECTED (PASS POWER GATE)
+
+--- ZL3b T2a & T2b on Zodiac @Lz Nymph Labels (pages=12, total labels=350) ---
+  T2a (full_token    ) lag-7 period match: obs=0.0000 vs perm_null=0.0030±0.0029 (z=-1.03, p=1.0000) -> FAIL (NULL)
+  T2a (core_166p     ) lag-7 period match: obs=0.0247 vs perm_null=0.0272±0.0080 (z=-0.31, p=0.6152) -> FAIL (NULL)
+  T2a (post_o_first2 ) lag-7 period match: obs=0.0673 vs perm_null=0.0866±0.0141 (z=-1.37, p=0.9160) -> FAIL (NULL)
+  T2a (suffix_166p   ) lag-7 period match: obs=0.2249 vs perm_null=0.2376±0.0190 (z=-0.67, p=0.7486) -> FAIL (NULL)
+  T2b (Exact_Core_166p  , 10 rings x 29 deg) offset-0 match: obs=0.0176 vs circular_shift_null=0.0181±0.0033 (z=-0.15, p=0.5859) -> FAIL (NULL)
+  T2b (Token_EditDist<=1, 10 rings x 29 deg) offset-0 match: obs=0.0161 vs circular_shift_null=0.0145±0.0031 (z=+0.50, p=0.3456) -> FAIL (NULL)
+
+--- RF1b T2a & T2b on Zodiac @Lz Nymph Labels (pages=12, total labels=343) ---
+  T2a (full_token    ) lag-7 period match: obs=0.0000 vs perm_null=0.0018±0.0023 (z=-0.82, p=1.0000) -> FAIL (NULL)
+  T2a (core_166p     ) lag-7 period match: obs=0.0215 vs perm_null=0.0204±0.0071 (z=+0.15, p=0.4187) -> FAIL (NULL)
+  T2a (post_o_first2 ) lag-7 period match: obs=0.0587 vs perm_null=0.0817±0.0135 (z=-1.70, p=0.9609) -> FAIL (NULL)
+  T2a (suffix_166p   ) lag-7 period match: obs=0.2591 vs perm_null=0.2402±0.0190 (z=+1.00, p=0.1631) -> FAIL (NULL)
+  T2b (Exact_Core_166p  , 10 rings x 29 deg) offset-0 match: obs=0.0123 vs circular_shift_null=0.0126±0.0029 (z=-0.13, p=0.5841) -> FAIL (NULL)
+  T2b (Token_EditDist<=1, 10 rings x 29 deg) offset-0 match: obs=0.0115 vs circular_shift_null=0.0107±0.0027 (z=+0.31, p=0.4134) -> FAIL (NULL)
+
+--- IT2a T2a & T2b on Zodiac @Lz Nymph Labels (pages=12, total labels=367) ---
+  T2a (full_token    ) lag-7 period match: obs=0.0049 vs perm_null=0.0027±0.0026 (z=+0.86, p=0.2082) -> FAIL (NULL)
+  T2a (core_166p     ) lag-7 period match: obs=0.0153 vs perm_null=0.0288±0.0082 (z=-1.65, p=0.9591) -> FAIL (NULL)
+  T2a (post_o_first2 ) lag-7 period match: obs=0.0684 vs perm_null=0.0714±0.0127 (z=-0.24, p=0.5868) -> FAIL (NULL)
+  T2a (suffix_166p   ) lag-7 period match: obs=0.2200 vs perm_null=0.2292±0.0181 (z=-0.51, p=0.6927) -> FAIL (NULL)
+  T2b (Exact_Core_166p  , 10 rings x 29 deg) offset-0 match: obs=0.0253 vs circular_shift_null=0.0210±0.0038 (z=+1.14, p=0.1445) -> FAIL (NULL)
+  T2b (Token_EditDist<=1, 10 rings x 29 deg) offset-0 match: obs=0.0146 vs circular_shift_null=0.0155±0.0033 (z=-0.30, p=0.6434) -> FAIL (NULL)
+
+================================================================================
+PART 3 (T3a & T3b): Rank 3 Hausbuch Section Order & Rank 5 Circa Instans Herbal
+================================================================================
+--- T3a: Section-Order Permutation Test (6 sections, 720 exact permutations) ---
+  Voynich Folio order [H, Z, B, C, P, S] vs Laufenberg Regimen conceptual order [Z, C, B, H, P, S]:
+  Kendall discordant pairs = 4/15 (exact p = 0.1361 across 720 permutations; best possible exact match p = 1/720 = 0.0014) -> NOT SIGNIFICANT (FAIL)
+
+--- T3b: Circa Instans Herbal Opening Slot 1/2/3 Entropy Test (N=127 Herbal pages on ZL3b) ---
+  Slot_0 (1st word) : H_tok=6.9040 (null 6.5926±0.0935, top5=0.079, p_low=1.0000) | H_core166=6.2825 (null 5.2666±0.1563, top5=0.213, p_low=1.0000)
+  Slot_1 (2nd word) : H_tok=6.7406 (null 6.5920±0.0936, top5=0.110, p_low=0.9535) | H_core166=5.4749 (null 5.2695±0.1631, top5=0.323, p_low=0.8916)
+  Slot_2 (3rd word) : H_tok=6.8725 (null 6.5894±0.0945, top5=0.087, p_low=1.0000) | H_core166=5.8674 (null 5.2659±0.1607, top5=0.260, p_low=1.0000)
+  Slot_3 (4th word) : H_tok=6.6933 (null 6.5902±0.0953, top5=0.126, p_low=0.8681) | H_core166=5.5755 (null 5.2636±0.1559, top5=0.323, p_low=0.9785)
+  Planted Circa-instans Slot_1 positive control (4 qualities x 3 homophones, 70% rate): H_tok=4.6939 bits (p_low=0.0005 -> DETECTED)
+  T3b Verdict: No low-entropy humoral quality formula in Herbal Slot 1, 2, or 3 (all p_low > 0.10).
+
+================================================================================
+OVERALL P4-COMP-1 SUMMARY:
+  - T1a (Q20 Incipit Formulaicity): ANTIDOTARY / NON-FORMULAIC (modal first token <= 2.1% raw, <= 3.9% gallows-stripped; H(w_0) matches or exceeds internal line starts; rules out plain 'Recipe/Item' word-code).
+  - T1b (Q20 Alphabetical Order): FAIL (NULL) in both Folio and Layfield-Davis orders across all 3 transliterations (all p > 0.05 under within-quire and page-block permutations, while planted alphabetical antidotary passes power gate up to k=6 homophones/letter).
+  - T2a (Zodiac Period-7 Monomoiria): FAIL (NULL) across all 4 representations (token, 166p-core, post-o first-2, suffix; all p > 0.10, while planted 7-planet ring passes power gate up to k=10 homophones).
+  - T2b (Zodiac Cross-Sign Degree Stem): FAIL (NULL) on both 166p-core and edit<=1 (all p > 0.15, while planted 15% recurring-degree control passes at p=0.0005).
+  - T3a & T3b (Laufenberg Section Order & Circa Instans Herbal Quality Slot): FAIL (NULL).
+================================================================================
+run finished: 2026-10-17 23:56:04 (datetime.now) (elapsed 35.5s)

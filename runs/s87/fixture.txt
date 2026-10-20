@@ -1,0 +1,14 @@
+S87 FIXTURE (synthetic only; no real data read)
+date: Sun Oct 18 05:58:25 PDT 2026 (`date`)  device: cuda (NVIDIA GeForce RTX 5080); below_normal=True
+s87_core_layer_genre.py sha256=4dc89b95873ff93c0ea871a7db009ff1177eb77a403dd4f2dc9a00ac0502f26d  stub_match=NO STUB
+FX3 GPU MI == S80.mi_batch: PASS (max diff 8.88e-16)
+FX4 GPU repetition rates == numpy port of r5 rates(): PASS
+fixture N_TOT 22500, N_match 4433
+fixture target (from FX_linepool_A): order bands K100 [-0.0595,+0.0107] K200 [-0.0795,+0.0031]; locality band [0.736,0.860]
+  FX_linepool_A            tok  22500 ty  1789 | order MM K25 -0.023 K50 -0.024 K100 -0.024(p0.939) K200 -0.038(p0.984) K400 -0.028 | Rw1 7.783(p0.001) Rw2 7.72 Rw3 7.56 Rw5 6.98 Rc1 0.616 | loc 0.798[0.767,0.829] p0.002 typeR 0.349 | C1 YYYY VOYNICH-LIKE | D 0.00  [3s]
+  FX_linepool_B            tok  22500 ty  1836 | order MM K25 -0.024 K50 -0.022 K100 -0.031(p0.954) K200 -0.008(p0.665) K400 -0.028 | Rw1 7.461(p0.001) Rw2 7.42 Rw3 7.19 Rw5 6.80 Rc1 0.692 | loc 0.773[0.736,0.807] p0.002 typeR 0.350 | C1 YYYY VOYNICH-LIKE | D 0.45  [0s]
+  FX_pagepool              tok  22500 ty  2581 | order MM K25 +0.001 K50 -0.005 K100 +0.003(p0.354) K200 -0.002(p0.578) K400 -0.007 | Rw1 0.983(p0.558) Rw2 0.99 Rw3 1.01 Rw5 1.06 Rc1 1.158 | loc 0.958[0.947,0.967] p0.002 typeR 0.623 | C1 Ynnn - | D 4.52  [0s]
+  FX_prose                 tok  22500 ty  2714 | order MM K25 +0.603 K50 +0.826 K100 +1.001(p0.001) K200 +1.169(p0.001) K400 +1.253 | Rw1 0.881(p0.936) Rw2 0.92 Rw3 1.28 Rw5 0.93 Rc1 0.720 | loc 1.000[0.993,1.006] p0.455 typeR 0.999 | C1 nnYn - | D 19.05  [0s]
+FX1 planted line-pool B Voynich-like vs target and closest: PASS (like=True, closest=FX_linepool_B)
+FX2 prose not Voynich-like: PASS
+FIXTURE PASS   runtime 5s; finished Sun Oct 18 05:58:30 PDT 2026 (`date`)

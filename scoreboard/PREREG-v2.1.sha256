@@ -1,0 +1,7 @@
+# PREREG v2.1 freeze: sha256 of the amendment and every file it binds; frozen 2026-10-17 20:55 PDT (clock read via date)
+87e09ce3bdc1f68f0cce0469399c39d3f8f344499f7b8d6eeb9bf39cab0e6ac2 *PREREG-v2.1.md
+7dfdc9f75de5980adaa4b387df8ab272fd1d1c7a9ff452e94cac149012ff253e *scoreboard/run_v2.py
+b995aba64e5baa22524565963d67880287e43e98220a7c3cdd2d136eac6b3fef *s15_ranges.json
+ac281dfd53a6a59622ecc1a149bf1461bce5bb0638aead8dd46f548ba29c6bd3 *n7_gibberish_ranges.json
+bb86177034d324c9d9f6412b7b7925373b475c1e8a1f8b15d91a478adba5a769 *results_m4_phase1_board.json
+db1d131cd09405d00e5c5e323ce2a0b1e65b6c6dfdfaffd65ecbdb77aebc60c8 *tools/gibberish_to_meta.py

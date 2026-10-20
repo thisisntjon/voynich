@@ -1,0 +1,5 @@
+s69 prereg freeze: Sun Oct 18 02:08:23 PDT 2026
+stub: s69_prefix_stream_memory.prereg.sha256 sha256=4ced8e1c663061768bab6f62c63216e3ae3c214a8e84267436738f14354d5337
+before the freeze the script ran only with --fixture (runs/s69/fixture.txt; fixture check PASS: C2 TRUE on the planted order-2 texts)
+FAILED run 1 window Sun Oct 18 02:08:29 PDT 2026 - Sun Oct 18 02:12:20 PDT 2026: gap/paragraph re-parse raised TypeError (sum over bool) -> tests c, b_par n/a; d included gap pairs. Outputs kept as runs/s69/run1_FAILED_*.
+OK amendment 1 at Sun Oct 18 02:13:08 PDT 2026: one-line fix in voynich_pages count + notice line; new script sha256 785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5 appended to stub; fixture re-run (runs/s69/fixture.txt).

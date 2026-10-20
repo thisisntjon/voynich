@@ -1,0 +1,140 @@
+r13.py mode=real run at (clock): 2026-10-18T15:52:31-07:00
+r13.py sha256: d3c91e27791781b3d047ca56a926ae6862a0b9b3c37fd38cc89b1bc0215b3d94
+r10.py sha256: ada3231f0b6b0992767c7bd98fb206a4b1f138dcdb11d190cfc521ddaff4f69b
+r7.py sha256: 0d5e65db45b3c410bfbcab5b56d45adaab09b09c9af007b3546538a5b9f69b96
+prereg r13.py d3c91e27791781b3d047ca56a926ae6862a0b9b3c37fd38cc89b1bc0215b3d94 ; stub match: YES ; r10 entry YES ; r7 entry YES
+data ../dl_ZL/ZL3b-n.txt bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc
+Producer parameters fitted on all of ZL: A {'q': 0.1, 'e': 0.67} ; B {'R': 256}
+  PLANTED_A (producer A): folds matched 8 of 15 ; most-missed {'t7': 6, 't6': 4}
+     A    False params {'q': 0.1, 'e': 0.67} misses t6,t7 | 1.951 2.344 1.593 0.000 -0.029 1.145 0.507 4.995
+     B    True  params {'q': 0.1, 'e': 0.67} misses - | 1.021 2.740 2.234 1.747 -0.040 1.105 0.573 4.911
+     C    False params {'q': 0.1, 'e': 0.67} misses t7 | 1.138 2.075 2.073 4.626 -0.019 1.066 0.519 4.963
+     D    False params {'q': 0.1, 'e': 0.67} misses t6,t7 | 2.072 1.557 1.542 1.356 0.007 1.191 0.538 4.987
+     E    False params {'q': 0.1, 'e': 0.67} misses t6,t7 | 1.582 1.653 2.201 2.544 -0.032 1.200 0.514 5.039
+     F    True  params {'q': 0.1, 'e': 0.67} misses - | 1.155 2.013 1.437 2.998 -0.008 0.958 0.504 5.010
+     G    True  params {'q': 0.1, 'e': 0.67} misses - | 1.328 3.224 1.628 1.625 0.012 0.897 0.533 5.042
+     H    True  params {'q': 0.1, 'e': 0.67} misses - | 2.261 3.444 2.721 8.441 0.009 1.038 0.557 4.952
+     I    True  params {'q': 0.1, 'e': 0.67} misses - | 2.270 2.907 1.210 7.199 -0.040 1.057 0.731 5.174
+     M    False params {'q': 0.1, 'e': 0.67} misses t6 | 2.442 2.287 1.692 3.535 -0.005 1.049 0.350 4.980
+     N    True  params {'q': 0.1, 'e': 0.67} misses - | 2.051 1.628 1.840 1.781 -0.017 1.032 0.510 5.094
+     O    True  params {'q': 0.1, 'e': 0.67} misses - | 1.085 1.552 1.440 0.000 -0.019 0.851 0.566 5.065
+     Q    False params {'q': 0.1, 'e': 0.67} misses t7 | 2.322 2.440 1.363 3.764 -0.019 1.066 0.573 4.973
+     S    False params {'q': 0.1, 'e': 0.67} misses t7 | 3.055 1.580 2.061 0.000 0.010 0.987 0.513 4.925
+     T    True  params {'q': 0.1, 'e': 0.67} misses - | 2.771 2.165 2.209 2.187 0.005 0.941 0.301 4.966
+  REAL_ZL (producer A): folds matched 1 of 15 ; most-missed {'t6': 11, 't7': 10, 't8': 8, 't5': 6}
+     A    False params {'q': 0.1, 'e': 0.67} misses t6,t8 | 1.518 1.097 0.940 0.000 0.022 1.695 0.493 4.713
+     B    False params {'q': 0.1, 'e': 0.67} misses t6,t7,t8 | 1.142 0.816 0.827 0.000 0.069 2.516 0.464 4.540
+     C    False params {'q': 0.1, 'e': 0.67} misses t6,t7,t8 | 0.870 1.527 0.955 0.000 0.029 1.807 0.472 4.634
+     D    False params {'q': 0.1, 'e': 0.67} misses t6,t7,t8 | 1.271 1.006 1.228 0.000 0.051 1.803 0.513 4.771
+     E    False params {'q': 0.1, 'e': 0.67} misses t5,t6,t7,t8 | 0.822 1.263 1.630 0.000 0.065 1.885 0.449 4.593
+     F    False params {'q': 0.1, 'e': 0.67} misses t8 | 1.971 1.338 1.184 0.763 0.052 1.034 0.502 4.846
+     G    False params {'q': 0.1, 'e': 0.67} misses t5,t6,t8 | 1.412 0.791 0.968 0.000 0.064 1.338 0.500 4.842
+     H    False params {'q': 0.1, 'e': 0.67} misses t7 | 1.521 1.484 1.222 0.000 0.071 0.805 0.575 5.082
+     I    False params {'q': 0.1, 'e': 0.67} misses t7 | 0.779 1.956 2.159 0.000 0.042 0.825 0.774 4.981
+     M    False params {'q': 0.1, 'e': 0.67} misses t1,t3,t5,t6,t7 | 1.156 1.857 1.317 0.490 0.096 2.628 0.221 4.985
+     N    False params {'q': 0.1, 'e': 0.67} misses t5,t6,t7 | 1.116 1.277 1.410 0.000 0.051 1.416 0.451 4.996
+     O    False params {'q': 0.1, 'e': 0.67} misses t6 | 0.468 1.843 1.618 1.141 0.035 1.532 0.513 5.008
+     Q    True  params {'q': 0.1, 'e': 0.67} misses - | 1.068 2.253 1.519 0.000 0.037 0.910 0.620 5.147
+     S    False params {'q': 0.1, 'e': 0.67} misses t5,t6,t7 | 1.714 2.037 1.624 0.000 0.087 1.519 0.470 4.981
+     T    False params {'q': 0.2, 'e': 0.67} misses t1,t2,t3,t4,t5,t6,t7,t8 | 1.641 1.911 1.451 0.000 0.070 0.939 0.286 5.234
+  CROSS_A_on_plantedB (producer A): folds matched 1 of 15 ; most-missed {'t1': 14, 't5': 14, 't3': 6, 't2': 4}
+     A    False params {'q': 0, 'e': 0} misses t1,t5 | 0.000 0.185 0.360 1.933 0.385 0.948 0.145 5.052
+     B    False params {'q': 0, 'e': 0} misses t1,t5 | 0.000 0.230 0.509 0.000 0.419 0.944 0.209 5.031
+     C    False params {'q': 0, 'e': 0} misses t1,t5 | 0.000 0.201 0.354 0.000 0.481 0.963 0.154 5.091
+     D    False params {'q': 0, 'e': 0} misses t1,t5 | 0.000 0.226 0.514 1.310 0.410 0.931 0.173 5.015
+     E    False params {'q': 0, 'e': 0} misses t1,t5 | 0.000 0.381 0.485 0.000 0.450 0.960 0.142 5.084
+     F    False params {'q': 0, 'e': 0} misses t1,t2,t5 | 0.000 0.151 0.556 1.039 0.595 0.995 0.129 5.049
+     G    False params {'q': 0, 'e': 0} misses t1,t2,t5 | 0.000 0.000 0.406 0.000 0.469 1.019 0.145 5.102
+     H    False params {'q': 0, 'e': 0} misses t1,t3,t5 | 0.000 0.368 0.185 0.000 0.388 0.988 0.172 5.015
+     I    True  params {'q': 0, 'e': 0} misses - | 0.000 0.000 0.522 0.000 0.185 0.981 0.478 5.125
+     M    False params {'q': 0, 'e': 0} misses t1,t2,t3,t5 | 0.000 0.106 0.369 1.211 0.860 0.998 0.033 5.084
+     N    False params {'q': 0, 'e': 0} misses t1,t3,t5 | 0.000 0.550 0.195 0.950 0.655 0.975 0.131 5.010
+     O    False params {'q': 0, 'e': 0} misses t1,t3,t5 | 0.000 0.337 0.291 0.000 0.660 1.033 0.160 4.977
+     Q    False params {'q': 0, 'e': 0} misses t1,t5 | 0.000 0.321 0.422 0.000 0.447 1.029 0.236 4.937
+     S    False params {'q': 0, 'e': 0} misses t1,t3,t5 | 0.000 0.323 0.166 3.006 0.437 0.964 0.155 5.140
+     T    False params {'q': 0, 'e': 0} misses t1,t2,t3,t5 | 0.000 0.149 0.500 0.525 0.981 1.014 0.020 5.076
+  PLANTED_B (producer B): folds matched 0 of 15 ; most-missed {'t5': 15}
+     A    False params {'R': 256} misses t5 | 0.000 0.185 0.360 1.933 0.388 0.948 0.145 5.052
+     B    False params {'R': 256} misses t5 | 0.000 0.230 0.509 0.000 0.417 0.944 0.209 5.031
+     C    False params {'R': 256} misses t5 | 0.000 0.201 0.354 0.000 0.478 0.963 0.154 5.091
+     D    False params {'R': 256} misses t5 | 0.000 0.226 0.514 1.310 0.412 0.931 0.173 5.015
+     E    False params {'R': 256} misses t5 | 0.000 0.381 0.485 0.000 0.452 0.960 0.142 5.084
+     F    False params {'R': 256} misses t5 | 0.000 0.151 0.556 1.039 0.596 0.995 0.129 5.049
+     G    False params {'R': 256} misses t5 | 0.000 0.000 0.406 0.000 0.467 1.019 0.145 5.102
+     H    False params {'R': 256} misses t5 | 0.000 0.368 0.185 0.000 0.384 0.988 0.172 5.015
+     I    False params {'R': 256} misses t5 | 0.000 0.000 0.522 0.000 0.195 0.981 0.478 5.125
+     M    False params {'R': 256} misses t5 | 0.000 0.106 0.369 1.211 0.861 0.998 0.033 5.084
+     N    False params {'R': 256} misses t5 | 0.000 0.550 0.195 0.950 0.651 0.975 0.131 5.010
+     O    False params {'R': 256} misses t5 | 0.000 0.337 0.291 0.000 0.662 1.033 0.160 4.977
+     Q    False params {'R': 256} misses t5 | 0.000 0.321 0.422 0.000 0.446 1.029 0.236 4.937
+     S    False params {'R': 256} misses t5 | 0.000 0.323 0.166 3.006 0.438 0.964 0.155 5.140
+     T    False params {'R': 256} misses t5 | 0.000 0.149 0.500 0.525 0.981 1.014 0.020 5.076
+  REAL_ZL (producer B): folds matched 0 of 15 ; most-missed {'t7': 15, 't3': 13, 't6': 12, 't2': 9}
+     A    False params {'R': 256} misses t1,t7 | 1.518 1.097 0.940 0.000 0.025 1.695 0.493 4.713
+     B    False params {'R': 128} misses t3,t7 | 1.142 0.816 0.827 0.000 0.069 2.516 0.464 4.540
+     C    False params {'R': 256} misses t2,t3,t6,t7,t8 | 0.870 1.527 0.955 0.000 0.030 1.807 0.472 4.634
+     D    False params {'R': 128} misses t1,t3,t6,t7 | 1.271 1.006 1.228 0.000 0.048 1.803 0.513 4.771
+     E    False params {'R': 256} misses t3,t6,t7,t8 | 0.822 1.263 1.630 0.000 0.068 1.885 0.449 4.593
+     F    False params {'R': 256} misses t1,t2,t3,t6,t7 | 1.971 1.338 1.184 0.763 0.055 1.034 0.502 4.846
+     G    False params {'R': 256} misses t1,t6,t7 | 1.412 0.791 0.968 0.000 0.066 1.338 0.500 4.842
+     H    False params {'R': 128} misses t1,t2,t3,t6,t7 | 1.521 1.484 1.222 0.000 0.069 0.805 0.575 5.082
+     I    False params {'R': 256} misses t3,t6,t7 | 0.779 1.956 2.159 0.000 0.032 0.825 0.774 4.981
+     M    False params {'R': 256} misses t2,t3,t6,t7 | 1.156 1.857 1.317 0.490 0.096 2.628 0.221 4.985
+     N    False params {'R': 128} misses t1,t2,t3,t6,t7 | 1.116 1.277 1.410 0.000 0.049 1.416 0.451 4.996
+     O    False params {'R': 256} misses t2,t3,t7 | 0.468 1.843 1.618 1.141 0.031 1.532 0.513 5.008
+     Q    False params {'R': 256} misses t2,t3,t6,t7 | 1.068 2.253 1.519 0.000 0.042 0.910 0.620 5.147
+     S    False params {'R': 128} misses t1,t2,t3,t6,t7 | 1.714 2.037 1.624 0.000 0.084 1.519 0.470 4.981
+     T    False params {'R': 256} misses t1,t2,t3,t4,t6,t7 | 1.641 1.911 1.451 0.000 0.070 0.939 0.286 5.234
+  CROSS_B_on_plantedA (producer B): folds matched 0 of 15 ; most-missed {'t2': 15, 't6': 15, 't7': 15, 't3': 14}
+     A    False params {'R': 256} misses t1,t2,t3,t5,t6,t7 | 1.951 2.344 1.593 0.000 -0.029 1.145 0.507 4.995
+     B    False params {'R': 256} misses t2,t3,t5,t6,t7 | 1.021 2.740 2.234 1.747 -0.044 1.105 0.573 4.911
+     C    False params {'R': 256} misses t2,t3,t4,t5,t6,t7 | 1.138 2.075 2.073 4.626 -0.015 1.066 0.519 4.963
+     D    False params {'R': 256} misses t1,t2,t3,t6,t7 | 2.072 1.557 1.542 1.356 0.005 1.191 0.538 4.987
+     E    False params {'R': 256} misses t2,t3,t5,t6,t7 | 1.582 1.653 2.201 2.544 -0.028 1.200 0.514 5.039
+     F    False params {'R': 256} misses t2,t3,t6,t7 | 1.155 2.013 1.437 2.998 -0.008 0.958 0.504 5.010
+     G    False params {'R': 256} misses t1,t2,t3,t6,t7 | 1.328 3.224 1.628 1.625 0.014 0.897 0.533 5.042
+     H    False params {'R': 256} misses t1,t2,t3,t4,t6,t7 | 2.261 3.444 2.721 8.441 0.007 1.038 0.557 4.952
+     I    False params {'R': 256} misses t1,t2,t6,t7 | 2.270 2.907 1.210 7.199 -0.042 1.057 0.731 5.174
+     M    False params {'R': 256} misses t1,t2,t3,t4,t5,t6,t7 | 2.442 2.287 1.692 3.535 -0.004 1.049 0.350 4.980
+     N    False params {'R': 256} misses t1,t2,t3,t5,t6,t7 | 2.051 1.628 1.840 1.781 -0.016 1.032 0.510 5.094
+     O    False params {'R': 256} misses t2,t3,t5,t6,t7 | 1.085 1.552 1.440 0.000 -0.019 0.851 0.566 5.065
+     Q    False params {'R': 256} misses t1,t2,t3,t6,t7 | 2.322 2.440 1.363 3.764 -0.020 1.066 0.573 4.973
+     S    False params {'R': 256} misses t1,t2,t3,t6,t7 | 3.055 1.580 2.061 0.000 0.009 0.987 0.513 4.925
+     T    False params {'R': 256} misses t1,t2,t3,t5,t6,t7 | 2.771 2.165 2.209 2.187 0.005 0.941 0.301 4.966
+  PLANTED_A ORACLE (producer A): folds matched 13 of 15 ; most-missed {'t7': 1, 't1': 1}
+     A    True  params {'q': 0.1, 'e': 0.67} misses - | 1.951 2.344 1.593 0.000 -0.027 1.145 0.507 4.995
+     B    True  params {'q': 0.1, 'e': 0.67} misses - | 1.021 2.740 2.234 1.747 -0.041 1.105 0.573 4.911
+     C    True  params {'q': 0.1, 'e': 0.67} misses - | 1.138 2.075 2.073 4.626 -0.019 1.066 0.519 4.963
+     D    True  params {'q': 0.1, 'e': 0.67} misses - | 2.072 1.557 1.542 1.356 0.004 1.191 0.538 4.987
+     E    True  params {'q': 0.1, 'e': 0.67} misses - | 1.582 1.653 2.201 2.544 -0.032 1.200 0.514 5.039
+     F    True  params {'q': 0.1, 'e': 0.67} misses - | 1.155 2.013 1.437 2.998 -0.008 0.958 0.504 5.010
+     G    True  params {'q': 0.1, 'e': 0.67} misses - | 1.328 3.224 1.628 1.625 0.015 0.897 0.533 5.042
+     H    True  params {'q': 0.1, 'e': 0.67} misses - | 2.261 3.444 2.721 8.441 0.013 1.038 0.557 4.952
+     I    True  params {'q': 0.1, 'e': 0.67} misses - | 2.270 2.907 1.210 7.199 -0.042 1.057 0.731 5.174
+     M    True  params {'q': 0.1, 'e': 0.67} misses - | 2.442 2.287 1.692 3.535 -0.004 1.049 0.350 4.980
+     N    True  params {'q': 0.1, 'e': 0.67} misses - | 2.051 1.628 1.840 1.781 -0.014 1.032 0.510 5.094
+     O    False params {'q': 0.1, 'e': 0.67} misses t7 | 1.085 1.552 1.440 0.000 -0.018 0.851 0.566 5.065
+     Q    True  params {'q': 0.1, 'e': 0.67} misses - | 2.322 2.440 1.363 3.764 -0.020 1.066 0.573 4.973
+     S    True  params {'q': 0.1, 'e': 0.67} misses - | 3.055 1.580 2.061 0.000 0.010 0.987 0.513 4.925
+     T    False params {'q': 0.1, 'e': 0.67} misses t1 | 2.771 2.165 2.209 2.187 0.005 0.941 0.301 4.966
+  PLANTED_B ORACLE (producer B): folds matched 14 of 15 ; most-missed {'t5': 1}
+     A    False params {'R': 256, 'offs': (122, 210)} misses t5 | 0.000 0.185 0.360 1.933 0.383 0.948 0.145 5.052
+     B    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.230 0.509 0.000 0.419 0.944 0.209 5.031
+     C    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.201 0.354 0.000 0.480 0.963 0.154 5.091
+     D    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.226 0.514 1.310 0.412 0.931 0.173 5.015
+     E    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.381 0.485 0.000 0.451 0.960 0.142 5.084
+     F    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.151 0.556 1.039 0.597 0.995 0.129 5.049
+     G    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.000 0.406 0.000 0.469 1.019 0.145 5.102
+     H    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.368 0.185 0.000 0.389 0.988 0.172 5.015
+     I    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.000 0.522 0.000 0.186 0.981 0.478 5.125
+     M    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.106 0.369 1.211 0.860 0.998 0.033 5.084
+     N    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.550 0.195 0.950 0.650 0.975 0.131 5.010
+     O    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.337 0.291 0.000 0.661 1.033 0.160 4.977
+     Q    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.321 0.422 0.000 0.446 1.029 0.236 4.937
+     S    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.323 0.166 3.006 0.438 0.964 0.155 5.140
+     T    True  params {'R': 256, 'offs': (122, 210)} misses - | 0.000 0.149 0.500 0.525 0.982 1.014 0.020 5.076
+
+CALLS
+Producer A (copy-and-vary): planted (refitted) 8/15 -> WEAK ; planted ORACLE 13/15 ; real 1/15 ; cross (negative control) 1/15
+Producer B (table-and-grille): planted (refitted) 0/15 -> UNINFORMATIVE ; planted ORACLE 14/15 ; real 0/15 (0/15 but not an exclusion: test not POWERED) ; cross (negative control) 0/15
+VERDICT: A WEAK, B UNINFORMATIVE

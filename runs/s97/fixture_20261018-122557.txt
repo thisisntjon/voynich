@@ -1,0 +1,18 @@
+S97 FIXTURE (synthetic only; no real data read)
+date: Sun Oct 18 12:25:57 PDT 2026 (`date`)  device: cuda; below_normal=True
+s97 sha256=a106fcbee1160d8fee7ca5aeff5c247ed789656ffc1b82ff30a716d2d9370cf6  stub_match=NO STUB
+fixture bands from FX_A: K100 [-0.0006,+0.0616] K200 [+0.0067,+0.0823] loc [0.937,0.993]
+  FX_A                               tok  22500 ty  1146 core% 100.0 | o100 +0.030(p0.002) o200 +0.045 | Rw1 3.432(p0.001) Rc1 0.351 | loc 0.965[0.951,0.979] | C1 YYYY VOYNICH-LIKE [order n=4391<4731]
+  FX_B cores/identity                tok  22500 ty  1182 core% 100.0 | o100 +0.016(p0.081) o200 +0.003 | Rw1 2.999(p0.001) Rc1 0.342 | loc 0.966[0.955,0.975] | C1 nYYY - [order n=4391<4731]
+  FX_prose/identity                  tok  22500 ty  1493 core% 100.0 | o100 +1.045(p0.001) o200 +1.218 | Rw1 0.805(p0.997) Rc1 0.973 | loc 1.000[0.999,1.001] | C1 nnnn - [order n=4391<4731]
+FX1 planted FX_B Voynich-like: FAIL
+FX2 Markov prose not Voynich-like: PASS
+  [FX5 descriptive] FX_B words/identity                tok  22500 ty  3457 core% 100.0 | o100 +0.002(p0.424) o200 +0.018 | Rw1 8.694(p0.001) Rc1 0.166 | loc 0.933[0.919,0.944] | C1 YYYn - [order n=4391<4731]
+  [FX5 descriptive] FX_B words/slot                    tok  22500 ty   639 core% 100.0 | o100 +0.016(p0.122) o200 +0.019 | Rw1 2.370(p0.001) Rc1 0.461 | loc 0.975[0.966,0.982] | C1 YYYY VOYNICH-LIKE [order n=4391<4731]
+  [FX5 descriptive] FX_B words/affix2                  tok  22500 ty  1239 core% 100.0 | o100 +0.030(p0.007) o200 +0.026 | Rw1 3.632(p0.001) Rc1 0.311 | loc 0.968[0.960,0.975] | C1 YYYY VOYNICH-LIKE [order n=4391<4731]
+FX3 transforms: verbose injective share 1.0000 (936 types, 585 syllable types); markers line-constant True; sigla replaced 2012 tokens (3 fixed-stem types); unit map bijective True -> PASS
+  [fixture battery] free RAM 5.2 GB (need >= 4.0); 45 Measured jobs on 2 workers
+  FX_B     FXA: folds >=4/6  1/15 fails; median 3.0/6; per prediction P1 11 P2 10 P3  6 P4  0 P5  0 P7 13 | per fold 3 1 2 3 3 3 3 2 3 4 3 2 3 2 3
+  FX_prose FXA: folds >=4/6  0/15 fails; median 0.0/6; per prediction P1  6 P2  0 P3  1 P4  0 P5  0 P7  0 | per fold 2 0 1 1 1 1 0 0 0 0 0 1 0 0 0
+FX4 FX_B battery >= 4/6 on >= 8/15 folds vs FX_A: FAIL; FX5 prose (descriptive) 0/15
+FIXTURE FAIL   runtime 49s; finished Sun Oct 18 12:26:46 PDT 2026 (`date`)

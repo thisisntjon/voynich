@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T03:57:24.4787209Z",
+ "response": "{\n  \"PT\": \"PLANT\",\n  \"P_plants\": \"1\",\n  \"P_root\": \"TUBER\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"20+\",\n  \"P_flower\": \"5+\",\n  \"P_habit\": \"ROSETTE\",\n  \"J_shape\": \"NONE\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"0\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"EMPTY\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"2-3\",\n  \"C_rings\": \"4+\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"0\",\n  \"B_figures\": \"NA\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Illustration of a plant with tuberous roots and rosette habit.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2739029800,
+ "load_duration": 236097700,
+ "prompt_eval_count": 3268,
+ "prompt_eval_duration": 730569000,
+ "eval_count": 213,
+ "eval_duration": 1582193000,
+ "stem": "084_43r"
+}

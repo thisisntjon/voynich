@@ -1,0 +1,56 @@
+s119 FIXTURE + POWER CHECK started 2026-10-18 21:13:35 PDT; script sha256 cd7eebc525296227907d96c07bb3771a7087dbfa3e4e3773e58a3ffd781931eb; BelowNormal, 1 core
+Synthetic books on the REAL layout (VKB folios table; per-transliteration n_tokens >= 50 page sets; no other real feature value read). 43 features = hand x section effects + N(0,1) noise; sheet plant N(0, 0.8) per bifolio on 12 features. B=10000, sims=200, seed 20261018.
+-- layout ZL3b: 186 pages (dropped for cell < 3: 7 ['f1r', 'f66r', 'f67r2', 'f68v3', 'f70r2', 'f85r2', 'f86v3']), 8 hand x section cells, 14 quires; same-quire different-leaf pairs 1234, of which conjugate 181 (46 leaf pairs)
+   informative strata (quire, bound distance) 105; pairs used 892; conjugate page pairs used 143 covering 44 conjugate leaf pairs: f1/f8 f10/f15 f100/f101 f102/f99 f103/f116 f104/f115 f105/f114 f106/f113 f107/f112 f108/f111 f11/f14 f16/f9 f17/f24 f18/f23 f19/f22 f2/f7 f20/f21 f25/f32 f26/f31 f27/f30 f28/f29 f3/f6 f33/f40 f34/f39 f35/f38 f36/f37 f4/f5 f41/f48 f42/f47 f43/f46 f44/f45 f49/f56 f50/f55 f51/f54 f52/f53 f75/f84 f76/f83 f77/f82 f78/f81 f79/f80 f87/f90 f88/f89 f93/f96 f94/f95
+-- layout RF1b: 190 pages (dropped for cell < 3: 5 ['f1r', 'f66r', 'f67r2', 'f68v3', 'f70r2']), 9 hand x section cells, 14 quires; same-quire different-leaf pairs 1248, of which conjugate 189 (46 leaf pairs)
+   informative strata (quire, bound distance) 105; pairs used 898; conjugate page pairs used 144 covering 44 conjugate leaf pairs: f1/f8 f10/f15 f100/f101 f102/f99 f103/f116 f104/f115 f105/f114 f106/f113 f107/f112 f108/f111 f11/f14 f16/f9 f17/f24 f18/f23 f19/f22 f2/f7 f20/f21 f25/f32 f26/f31 f27/f30 f28/f29 f3/f6 f33/f40 f34/f39 f35/f38 f36/f37 f4/f5 f41/f48 f42/f47 f43/f46 f44/f45 f49/f56 f50/f55 f51/f54 f52/f53 f75/f84 f76/f83 f77/f82 f78/f81 f79/f80 f87/f90 f88/f89 f93/f96 f94/f95
+-- layout IT2a: 186 pages (dropped for cell < 3: 7 ['f1r', 'f66r', 'f67r2', 'f68v3', 'f70r2', 'f85r2', 'f86v3']), 8 hand x section cells, 14 quires; same-quire different-leaf pairs 1234, of which conjugate 181 (46 leaf pairs)
+   informative strata (quire, bound distance) 105; pairs used 892; conjugate page pairs used 143 covering 44 conjugate leaf pairs: f1/f8 f10/f15 f100/f101 f102/f99 f103/f116 f104/f115 f105/f114 f106/f113 f107/f112 f108/f111 f11/f14 f16/f9 f17/f24 f18/f23 f19/f22 f2/f7 f20/f21 f25/f32 f26/f31 f27/f30 f28/f29 f3/f6 f33/f40 f34/f39 f35/f38 f36/f37 f4/f5 f41/f48 f42/f47 f43/f46 f44/f45 f49/f56 f50/f55 f51/f54 f52/f53 f75/f84 f76/f83 f77/f82 f78/f81 f79/f80 f87/f90 f88/f89 f93/f96 f94/f95
+
+POWER CHECK (ZL3b layout, sheet 0.8 SD on 12/43 features): p_more < 0.05 on 0.995 of 200 sims (need >= 0.8) -> PASS
+CONTROL (b) no-sheet single-analogue: p_more < 0.05 rate 0.005, p_less < 0.05 rate 0.220 (need each <= 0.1) -> FAIL
+CONTROL (c) drift-only (within-quire slopes N(0, 0.8) on 12 features): p_more < 0.05 rate 0.000 (need <= 0.1) -> PASS; p_less < 0.05 rate 0.210 (reported)
+BOOK planted-sheet#0: ZL3b p_more=0.0010 p_less=0.9991 RF1b p_more=0.0142 p_less=0.9859 IT2a p_more=0.0007 p_less=0.9994 -> SHEET_BATCH
+BOOK planted-sheet#1: ZL3b p_more=0.0001 p_less=1.0000 RF1b p_more=0.0010 p_less=0.9991 IT2a p_more=0.0003 p_less=0.9998 -> SHEET_BATCH
+BOOK planted-sheet#2: ZL3b p_more=0.0032 p_less=0.9969 RF1b p_more=0.0052 p_less=0.9949 IT2a p_more=0.0006 p_less=0.9995 -> SHEET_BATCH
+BOOK planted-sheet#3: ZL3b p_more=0.0001 p_less=1.0000 RF1b p_more=0.0041 p_less=0.9960 IT2a p_more=0.0001 p_less=1.0000 -> SHEET_BATCH
+BOOK planted-sheet#4: ZL3b p_more=0.0002 p_less=0.9999 RF1b p_more=0.0001 p_less=1.0000 IT2a p_more=0.0006 p_less=0.9995 -> SHEET_BATCH
+BOOK planted-sheet#5: ZL3b p_more=0.0002 p_less=0.9999 RF1b p_more=0.0001 p_less=1.0000 IT2a p_more=0.0001 p_less=1.0000 -> SHEET_BATCH
+BOOK planted-sheet#6: ZL3b p_more=0.0002 p_less=0.9999 RF1b p_more=0.0003 p_less=0.9998 IT2a p_more=0.0002 p_less=0.9999 -> SHEET_BATCH
+BOOK planted-sheet#7: ZL3b p_more=0.0026 p_less=0.9975 RF1b p_more=0.0002 p_less=0.9999 IT2a p_more=0.0001 p_less=1.0000 -> SHEET_BATCH
+BOOK planted-sheet#8: ZL3b p_more=0.0001 p_less=1.0000 RF1b p_more=0.0001 p_less=1.0000 IT2a p_more=0.0003 p_less=0.9998 -> SHEET_BATCH
+BOOK planted-sheet#9: ZL3b p_more=0.0001 p_less=1.0000 RF1b p_more=0.0017 p_less=0.9984 IT2a p_more=0.0007 p_less=0.9994 -> SHEET_BATCH
+BOOK planted-sheet#10: ZL3b p_more=0.0015 p_less=0.9986 RF1b p_more=0.0005 p_less=0.9996 IT2a p_more=0.0002 p_less=0.9999 -> SHEET_BATCH
+BOOK planted-sheet#11: ZL3b p_more=0.0001 p_less=1.0000 RF1b p_more=0.0159 p_less=0.9842 IT2a p_more=0.0001 p_less=1.0000 -> SHEET_BATCH
+BOOK planted-sheet#12: ZL3b p_more=0.0042 p_less=0.9959 RF1b p_more=0.0008 p_less=0.9993 IT2a p_more=0.0001 p_less=1.0000 -> SHEET_BATCH
+BOOK planted-sheet#13: ZL3b p_more=0.0001 p_less=1.0000 RF1b p_more=0.0001 p_less=1.0000 IT2a p_more=0.0001 p_less=1.0000 -> SHEET_BATCH
+BOOK planted-sheet#14: ZL3b p_more=0.0003 p_less=0.9998 RF1b p_more=0.0001 p_less=1.0000 IT2a p_more=0.0001 p_less=1.0000 -> SHEET_BATCH
+BOOK planted-sheet#15: ZL3b p_more=0.0032 p_less=0.9969 RF1b p_more=0.0001 p_less=1.0000 IT2a p_more=0.0001 p_less=1.0000 -> SHEET_BATCH
+BOOK planted-sheet#16: ZL3b p_more=0.0001 p_less=1.0000 RF1b p_more=0.0017 p_less=0.9984 IT2a p_more=0.0002 p_less=0.9999 -> SHEET_BATCH
+BOOK planted-sheet#17: ZL3b p_more=0.0001 p_less=1.0000 RF1b p_more=0.0001 p_less=1.0000 IT2a p_more=0.0001 p_less=1.0000 -> SHEET_BATCH
+BOOK planted-sheet#18: ZL3b p_more=0.0002 p_less=0.9999 RF1b p_more=0.0002 p_less=0.9999 IT2a p_more=0.0002 p_less=0.9999 -> SHEET_BATCH
+BOOK planted-sheet#19: ZL3b p_more=0.0001 p_less=1.0000 RF1b p_more=0.0005 p_less=0.9996 IT2a p_more=0.0001 p_less=1.0000 -> SHEET_BATCH
+BOOK no-sheet#0: ZL3b p_more=0.9107 p_less=0.0894 RF1b p_more=0.7375 p_less=0.2626 IT2a p_more=0.9485 p_less=0.0516 -> NULL
+BOOK no-sheet#1: ZL3b p_more=0.9262 p_less=0.0739 RF1b p_more=0.9201 p_less=0.0800 IT2a p_more=0.8976 p_less=0.1025 -> NULL
+BOOK no-sheet#2: ZL3b p_more=0.9412 p_less=0.0589 RF1b p_more=0.8827 p_less=0.1174 IT2a p_more=0.5747 p_less=0.4254 -> NULL
+BOOK no-sheet#3: ZL3b p_more=0.7777 p_less=0.2224 RF1b p_more=0.8378 p_less=0.1623 IT2a p_more=0.8731 p_less=0.1270 -> NULL
+BOOK no-sheet#4: ZL3b p_more=0.7796 p_less=0.2205 RF1b p_more=0.7932 p_less=0.2069 IT2a p_more=0.9872 p_less=0.0129 -> NULL
+BOOK no-sheet#5: ZL3b p_more=0.9104 p_less=0.0897 RF1b p_more=0.7374 p_less=0.2627 IT2a p_more=0.3584 p_less=0.6417 -> NULL
+BOOK no-sheet#6: ZL3b p_more=0.9876 p_less=0.0125 RF1b p_more=0.7444 p_less=0.2557 IT2a p_more=0.7393 p_less=0.2608 -> NULL
+BOOK no-sheet#7: ZL3b p_more=0.4293 p_less=0.5708 RF1b p_more=0.8285 p_less=0.1716 IT2a p_more=0.0090 p_less=0.9911 -> NULL
+BOOK no-sheet#8: ZL3b p_more=0.8242 p_less=0.1759 RF1b p_more=0.7760 p_less=0.2241 IT2a p_more=0.9215 p_less=0.0786 -> NULL
+BOOK no-sheet#9: ZL3b p_more=0.7651 p_less=0.2350 RF1b p_more=0.9606 p_less=0.0395 IT2a p_more=0.4641 p_less=0.5360 -> NULL
+BOOK no-sheet#10: ZL3b p_more=0.9117 p_less=0.0884 RF1b p_more=0.8156 p_less=0.1845 IT2a p_more=0.1578 p_less=0.8423 -> NULL
+BOOK no-sheet#11: ZL3b p_more=0.6885 p_less=0.3116 RF1b p_more=0.8863 p_less=0.1138 IT2a p_more=0.3865 p_less=0.6136 -> NULL
+BOOK no-sheet#12: ZL3b p_more=0.9743 p_less=0.0258 RF1b p_more=0.9877 p_less=0.0124 IT2a p_more=0.9508 p_less=0.0493 -> DRIFT_ONLY
+BOOK no-sheet#13: ZL3b p_more=0.3620 p_less=0.6381 RF1b p_more=0.9157 p_less=0.0844 IT2a p_more=0.9127 p_less=0.0874 -> NULL
+BOOK no-sheet#14: ZL3b p_more=0.8594 p_less=0.1407 RF1b p_more=0.9649 p_less=0.0352 IT2a p_more=0.9913 p_less=0.0088 -> NULL
+BOOK no-sheet#15: ZL3b p_more=0.7356 p_less=0.2645 RF1b p_more=0.6238 p_less=0.3763 IT2a p_more=0.8578 p_less=0.1423 -> NULL
+BOOK no-sheet#16: ZL3b p_more=0.8529 p_less=0.1472 RF1b p_more=0.2751 p_less=0.7250 IT2a p_more=0.7474 p_less=0.2527 -> NULL
+BOOK no-sheet#17: ZL3b p_more=0.8596 p_less=0.1405 RF1b p_more=0.8525 p_less=0.1476 IT2a p_more=0.7982 p_less=0.2019 -> NULL
+BOOK no-sheet#18: ZL3b p_more=0.9951 p_less=0.0050 RF1b p_more=0.8709 p_less=0.1292 IT2a p_more=0.6670 p_less=0.3331 -> NULL
+BOOK no-sheet#19: ZL3b p_more=0.8929 p_less=0.1072 RF1b p_more=0.9621 p_less=0.0380 IT2a p_more=0.7747 p_less=0.2254 -> NULL
+CONTROL (a) planted-sheet books: SHEET_BATCH 20/20 (need >= 16) -> PASS
+CONTROL (b2) no-sheet books: non-NULL 1/20 (need <= 2) -> PASS
+
+FIXTURE OVERALL: FAIL; power 0.995; elapsed 3s; finished 2026-10-18 21:13:38 PDT

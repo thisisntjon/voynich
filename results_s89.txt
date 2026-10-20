@@ -1,0 +1,113 @@
+S89: line-repetition genres (arm A) and a line-scoped pool producer, LOQO (arm B), vs the four-part core signature
+date: Sun Oct 18 06:38:46 PDT 2026 (`date`)
+device: cuda (NVIDIA GeForce RTX 5080); torch 2.11.0.dev20260115+cu128; numpy 2.4.6; python 3.11.9; priority BelowNormal set=True; arm B on 2 worker processes (BelowNormal, GPU shared)
+s89_line_repetition_genres.py sha256=db4f69d0752aa3e24fcc38c6a17640799c4535d4551827dcc4b910c3403ad484
+prereg stub s89_line_repetition_genres.prereg.sha256 sha256=2f0cd56f735ee3b8a34e67e4c24a9e4bc781d3a11ca2753088810b33c790702f  stub_match=True
+  hashed a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  hashed a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  hashed b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  hashed b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  hashed c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  hashed c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  hashed c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  hashed c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  hashed corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  hashed f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  hashed f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  hashed f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  hashed g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  hashed m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  hashed m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  hashed n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  hashed p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  hashed p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  hashed s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  hashed s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  hashed s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  hashed s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  hashed s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  hashed s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  hashed s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  hashed s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  hashed s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  hashed s87_core_layer_genre.py sha256=d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db
+  hashed s89_line_repetition_genres.py sha256=db4f69d0752aa3e24fcc38c6a17640799c4535d4551827dcc4b910c3403ad484
+  hashed scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  hashed scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  hashed tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  hashed vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+  hashed data/external/genre-s89/pg7000_kalevala.txt sha256=23e57fdc123b738f49e31a68ceef2b74b77a83baa0359ffd820f682905283631
+  hashed data/external/genre-s89/horaeeboracenses00surtuoft_djvu.txt sha256=ebf9ae94c49a8eb7c1b253688c5950910744da20425be1e80b969228ce3503e1
+  hashed data/external/genre-s89/4617_djvu.txt sha256=e42bf4aedd3724f9abec85dcd59647f8fc40c1b449900ed8c0f0e91b44f0180f
+  hashed data/external/genre-s89/carminagadelicah01carm_0_djvu.txt sha256=d55a7d6847e8d25e43f35a27c242e157c118bab817ba849a80dbb9dffb14d976
+  hashed data/external/genre-s89/sinonomabartholo01mirfuoft_djvu.txt sha256=7b027352d3e9c22a123c24ef896f7748594f98551c8b8511e6c206fbf03059a9
+  hashed data/external/genre-s89/promptoriumparvu00galfuoft_djvu.txt sha256=d52c9c76b68920cce9d4479b953f76311f59106ca5beec2e9f43eb02ccff27e7
+  hashed data/external/genre-s87/alphitaamedicob00mowagoog_djvu.txt sha256=474fd50cd2058918f4828fa5c422ec595afe017aea50004c3591365d47786f87
+  hashed data/controls/trithemius_steganographia_1608.txt sha256=fb7a0274738ee07fe09945fb4b6ec25e9355aaeb194fd3d2bb53c43dabd9b4d1
+  hashed data/controls/enochian_keys_dee.txt sha256=d0df8c682d243f173226e418001d32cc3de3a87d510f007358a5514aa0ebd0eb
+  hashed data/controls_realline/cremma_Egerton821.meta.json sha256=93b17f09780463cc473e28ce8da72b1654f759862d9b78ebeeba13377f14770d
+  hashed data/controls_realline/cremma_SBB_PK_Hdschr25.meta.json sha256=6e9d3cff082b0416b8b12984c88e363c78882eba7edd926344ff052d9ce60539
+  hashed data/controls_realline/cremma_H318.meta.json sha256=2f2622c1dac3b18f3887fde949655a0b081dbf90288b951536b13511753c7344
+  hashed data/controls_realline/cremma_CLM13027.meta.json sha256=3516de0a3f8dbec641d1596463fa38fd2e78f17ffc3ffbe666ced10ae06883d4
+  hashed data/controls_realline/cremma_Latin16195.meta.json sha256=f39f27e883b750cc48513d3c5aee5d16d226b9beecd75dccdecd6ec247405344
+  hashed data/controls_realline/cremma_Phi_10a135.meta.json sha256=ea4bbb72122fde9247306fe16b4e292a81e344e12712028dcbe2f2d7f3c7d2c6
+  hashed data/controls_realline/cremma_BIS-193.meta.json sha256=068005c8cc843880a1c40ecff2598d69b44748ff4a103b7d7559506f63f4d7e6
+  hashed data/controls_realline/cremma_Mazarine915.meta.json sha256=dbd349526e49b0fc29170660c8724ab5dcec1518ab6732272b9dde65175116a2
+  hashed data/controls_realline/cremma_UBL758.meta.json sha256=f21a07f7f222f034236186c1503b744ff2337c6620596c7b2dd2b9fb7c59c853
+  hashed data/controls_realline/cremma_WettF0015.meta.json sha256=263c2157d3dbc4f3ca9dd2d8c2182288e7815e3ebef36020abe77c84f3ec1cdf
+  hashed data/controls_realline/cremma_LaurPlut53.08.meta.json sha256=71051225ab529b98fbbdd1f7aacc7d915d82b51eba8977902810d8e08e6df51b
+  hashed data/controls_realline/cremma_LaurPlut53.09.meta.json sha256=0186ad0a7f0731b8aad4f3339fffb09923ddb861ce8e3e248a85e9e2e148cbd4
+  hashed data/controls_realline/cremma_Arras-861.meta.json sha256=3c41d5b07484afb81dd8ec1b027d340e2c17aeb1f89a7429543a75091bb7b961
+  hashed data/controls_realline/cremma_PalLat373.meta.json sha256=f949922838f9f2da0c524f654e388b3fba4ec85194d6e6a741f6c98c368aa4e8
+  hashed data/controls_realline/cremma_CCCC-MSS-165.meta.json sha256=2dd5cbab160ab6d403e46722f844ee46ddf16b3e0f138037a7b848b2e719026c
+  hashed data/translit/ZL3b_eva.meta.json sha256=ce233477803a865365e53418f5e2b78c324fa0ea124b0aa46a9eb6a5189f7ef0
+  hashed data/translit/RF1b.meta.json sha256=c7d9bccba99b2610b9d80b4ce5f26f7d1ab54c12ec2364d0423d6b89f51da9df
+  hashed data/translit/IT2a.meta.json sha256=0d0d3e758d1e308b0aee4b4d006f90cbc8090c081e0fcb3327de6734ac5e5fdf
+N_TOT 22500; N_match 4731 (frozen from s87 amendment 1); s87 counts {'N_SHUF_ORDER': 1000, 'N_SHUF_R': 1000, 'N_PERM_LOC': 500, 'N_BOOT': 2000}; fit counts {'N_SHUF_ORDER': 200, 'N_SHUF_R': 200, 'N_PERM_LOC': 100, 'N_BOOT': 200}; seed 20261089
+ORDER bands (S87.ORDER_BAND, frozen): K100 [+0.012321,+0.092252] K200 [-0.003465,+0.086474]
+
+LOCALITY band (recomputed from VOY, s87 rule): [0.9074, 1.0499]; s87 amendment 1 [0.9074, 1.0499] -> MATCH
+R_VOY (mean of 3): R_within(1) 1.197, R_cross(1) 0.627
+  V1 VOY_ZL3b: o100 +0.034 o200 +0.028 Rw1 1.180(p0.001) Rc1 0.564 loc 0.977 C1 YYYY -> PASS
+  V1 VOY_RF1b: o100 +0.020 o200 +0.009 Rw1 1.193(p0.001) Rc1 0.670 loc 0.977 C1 YYYY -> PASS
+  V1 VOY_IT2a: o100 +0.030 o200 +0.030 Rw1 1.217(p0.001) Rc1 0.646 loc 0.979 C1 YYYY -> PASS
+
+=== ARM A corpus list (class, gating, tokens, lines, label) ===
+  R_kalevala_fi            R  gating    tokens   68501 lines  22877 mean line  2.99  Kalevala, Finnish runo verse with charms (verse lines)
+  R_horae_ebor_la          R  gating    tokens   50495 lines   7121 mean line  7.09  Horae Eboracenses hours/litany/prayers, Latin, OCR lines
+  R_atharva_en             R  gating    tokens  122057 lines  16266 mean line  7.50  Atharva-Veda hymns and charms X-XX, English (Griffith), OCR lines
+  R_carmina_gd_en          R  gating    tokens   54209 lines   7379 mean line  7.35  Carmina Gadelica I hymns and incantations, Gaelic + English, OCR lines
+  R_steganographia_la      R  gating    tokens   44628 lines   6222 mean line  7.17  Trithemius Steganographia 1608 conjurations, Latin, OCR lines
+  R_enochian               R  UNMATCHED tokens    1306 lines     38 mean line 34.37  Enochian Keys/Calls (one Key per line)
+  R_egerton821_la          R  UNMATCHED tokens    1088 lines    114 mean line  9.54  CREMMA Egerton 821 sortes and charms, ms lines
+  R_hours_sbb_la           R  UNMATCHED tokens     958 lines    234 mean line  4.09  CREMMA SBB-PK Hdschr. 25 Book of Hours, ms lines
+  T_alphita_la             T  gating    tokens   29333 lines   6730 mean line  4.36  Alphita glossary, Latin, real OCR lines
+  T_promptorium_enm_la     T  gating    tokens   75518 lines  20704 mean line  3.65  Promptorium parvulorum English-Latin glossary columns, OCR lines <= 40 chars
+  T_sinonoma_la_en         T  UNMATCHED tokens    5432 lines   1367 mean line  3.97  Sinonoma Bartholomei glossary, OCR lines <= 48 chars
+  T_horae_kalendar_la      T  UNMATCHED tokens    2917 lines    584 mean line  4.99  Horae Eboracenses kalendar, Latin, OCR lines
+  N_cremma_H318            N  UNMATCHED tokens    4676 lines    414 mean line 11.29  CREMMA H318, Latin abbreviated graphemic, ms lines (medical)
+  N_cremma_CLM13027        N  UNMATCHED tokens    6732 lines    609 mean line 11.05  CREMMA CLM13027, Latin abbreviated graphemic, ms lines (medical)
+  N_cremma_Latin16195      N  UNMATCHED tokens    3993 lines    430 mean line  9.29  CREMMA Latin16195, Latin abbreviated graphemic, ms lines (medical)
+  N_cremma_Phi_10a135      N  UNMATCHED tokens    1718 lines    139 mean line 12.36  CREMMA Phi_10a135, Latin abbreviated graphemic, ms lines (medical)
+  N_cremma_BIS-193         N  UNMATCHED tokens    6981 lines    598 mean line 11.67  CREMMA BIS-193, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_Mazarine915     N  UNMATCHED tokens    4581 lines    418 mean line 10.96  CREMMA Mazarine915, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_UBL758          N  UNMATCHED tokens    4366 lines    469 mean line  9.31  CREMMA UBL758, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_WettF0015       N  UNMATCHED tokens    3498 lines    380 mean line  9.21  CREMMA WettF0015, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_LaurPlut53.08   N  UNMATCHED tokens    3319 lines    216 mean line 15.37  CREMMA LaurPlut53.08, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_LaurPlut53.09   N  UNMATCHED tokens    1323 lines    125 mean line 10.58  CREMMA LaurPlut53.09, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_Arras-861       N  UNMATCHED tokens    2478 lines    351 mean line  7.06  CREMMA Arras-861, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_PalLat373       N  UNMATCHED tokens    2248 lines    432 mean line  5.20  CREMMA PalLat373, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_CCCC-MSS-165    N  UNMATCHED tokens    1410 lines    148 mean line  9.53  CREMMA CCCC-MSS-165, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  R_pool                   R  gating    tokens   22521 lines   3853 mean line  5.85  ritual class pool of 8 members, water-filled quotas (max 3830 tokens)
+  T_pool                   T  gating    tokens   22503 lines   5571 mean line  4.04  tabular class pool of 4 members, water-filled quotas (max 7076 tokens)
+  N_pool                   N  gating    tokens   22549 lines   2403 mean line  9.38  abbreviated class pool of 13 members, water-filled quotas (max 1805 tokens)
+
+=== ARM A profiles (primary = whole words; C1 flags a order, b R_within, c R_cross<R_within, d locality) ===
+  R_kalevala_fi            tok  22500 ty  8865 | order MM K25 +0.092 K50 +0.107 K100 +0.110(p0.001) K200 +0.149(p0.001) K400 +0.131 | Rw1 0.142(p1.000) Rw2 2.20 Rw3 0.00 Rw5 2.54 Rc1 0.808 | loc 0.848[0.813,0.884] p0.002 typeR 0.854 | C1 nnnn - | D 4.56 [R; held-out 4454 < N_match]
+  R_horae_ebor_la          tok  22500 ty  6162 | order MM K25 +0.063 K50 +0.102 K100 +0.160(p0.001) K200 +0.267(p0.001) K400 +0.312 | Rw1 0.105(p1.000) Rw2 1.14 Rw3 1.41 Rw5 1.68 Rc1 0.196 | loc 0.878[0.812,0.933] p0.002 typeR 0.855 | C1 nnnn - | D 6.01 [R; held-out 4731]
+  R_atharva_en             tok  22500 ty  5428 | order MM K25 +0.131 K50 +0.175 K100 +0.223(p0.001) K200 +0.276(p0.001) K400 +0.315 | Rw1 0.059(p1.000) Rw2 0.81 Rw3 1.26 Rw5 1.59 Rc1 0.140 | loc 0.910[0.886,0.934] p0.002 typeR 0.880 | C1 nnnY - | D 7.40 [R; held-out 4731]
+  R_carmina_gd_en          tok  22500 ty  4446 | order MM K25 +0.167 K50 +0.240 K100 +0.354(p0.001) K200 +0.411(p0.001) K400 +0.469 | Rw1 0.140(p1.000) Rw2 0.89 Rw3 2.22 Rw5 1.21 Rc1 0.201 | loc 0.883[0.853,0.911] p0.002 typeR 0.812 | C1 nnnn - | D 7.00 [R; held-out 4731]
+  R_steganographia_la      tok  22500 ty 12998 | order MM K25 +0.023 K50 +0.019 K100 +0.042(p0.001) K200 +0.084(p0.001) K400 +0.106 | Rw1 0.532(p0.998) Rw2 1.35 Rw3 1.57 Rw5 1.47 Rc1 0.448 | loc 0.950[0.902,0.992] p0.002 typeR 0.976 | C1 YnYY - | D 1.82 [R; held-out 4731]
+
+FAILED: run crashed at Sun Oct 18 06:39:12 PDT 2026 (`date` of this note) in S87.profile on R_enochian (descriptive, 1,306 tokens: no within-line held-out pairs, torch max() on an empty tensor). No call was made; the values above are from the frozen script and stand as printed.
+AMENDMENT OK: amendment 1 (crash only): a DESCRIPTIVE text whose profile raises is reported as "not profilable" and skipped; gating texts and every call rule are unchanged. Output -> results_s89_amend1.txt; stub line for the script commented as superseded, new hash added.

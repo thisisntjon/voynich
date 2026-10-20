@@ -1,0 +1,53 @@
+s126 water colour vs sheet (s123 rerun, blue recalibrated; D-066 cc-s126) -- REAL RUN. started 2026-10-19 00:38:15; priority BelowNormal
+script tools/s126_water_sheet.py sha256 0494506097356c8605651863c1ca1b01b6badfe583442b2ef969a38b52ecc390; stub s126_water_sheet.prereg.sha256 verified (30 files) sha256 fe7b859358902798984b701d1c3b9d31de8f85e5b1293fd62c0dc9f0563b4c3b; VKB snapshot runs/s126/inputs_meta.json (VKB sha256 4ed3497cfd73f0ac.. build 2026-10-19 00:10)
+segmentation: green {'L_MIN': 35.0, 'C_MIN': 14.0, 'H_LO': 105.0, 'H_HI': 200.0, 'MIN_COMP': 2000, 'CLOSE': 5}; blue {'L_MIN': 25.0, 'C_MIN': 4.0, 'H_LO': 200.0, 'H_HI': 310.0, 'MIN_COMP': 200, 'CLOSE': 5} (blue calibrated on f85v/86r Rosettes, f69r, f67r, f9v; negatives f1r, f66r, f116v); min water px 5000 (1/2-resolution pixels)
+
+Per-page water colour (quire M; f76r is section T, not tested):
+folio   sec water_px   green    blue blue_sh med_hue    hue10-90 med_C med_L meas
+f75r    B     157235  157235       0   0.000   113.2   108-118    19.9  49.7 yes
+f75v    B      26218   25495     723   0.028   114.7   108-121    17.7  54.0 yes
+f76r    T          0  -- no water px
+f76v    B          0  -- no water px
+f77r    B       2598       0    2598   1.000   227.3   208-249    12.4  41.0 no
+f77v    B       2297       0    2297   1.000   248.4   230-258    17.1  39.9 no
+f78r    B      90011   89377     634   0.007   115.6   110-123    19.3  49.6 yes
+f78v    B      57816   54160    3656   0.063   116.3   109-124    18.3  46.9 yes
+f79r    B      54158   52980    1178   0.022   115.9   111-121    20.3  50.4 yes
+f79v    B     107018  105911    1107   0.010   116.0   110-121    21.3  48.5 yes
+f80r    B      13717       0   13717   1.000   215.3   204-230     9.7  54.9 yes
+f80v    B       9206       0    9206   1.000   216.0   204-238    10.6  48.4 yes
+f81r    B     120294  117459    2835   0.024   119.5   113-127    18.7  49.2 yes
+f81v    B      97139   96410     729   0.008   120.7   113-129    18.4  47.6 yes
+f82r    B     117246  111957    5289   0.045   120.9   113-127    20.2  52.3 yes
+f82v    B     131143  123741    7402   0.056   116.2   109-125    20.0  53.5 yes
+f83r    B       4712       0    4712   1.000   225.5   207-242    10.9  44.9 no
+f83v    B      82384   81350    1034   0.013   125.1   117-133    17.4  46.9 yes
+f84r    B     121556  118533    3023   0.025   126.0   116-134    17.8  52.2 yes
+f84v    B      16512       0   16512   1.000   222.2   205-244    12.4  45.4 yes
+
+VALIDATION (calibration pages, gate) blue: 6/6 PASS (need >= 4 of 5) -> ok
+VALIDATION (calibration pages, gate) green: 6/6 PASS (need >= 4 of 5) -> ok
+DESCRIPTIVE quire-M blue crop check (not a gate): crops ['f84v', 'f80r', 'f80v', 'f82v', 'f82r']; PASS 5/5
+  hand: blue | f84v | PASS | blue pool with nymphs; dark central stream and darker patches masked; the pale blue wash covering most of the pool is NOT masked (recall about a quarter)
+  hand: blue | f80r | PASS | horizontal pale blue water band; its darker middle masked, the paler upper and outer parts not (recall about half)
+  hand: blue | f80v | PASS | blue water band under a nymph; darker right part masked, left and pale parts not (recall about a third)
+  hand: blue | f82v | PASS | small saturated blue pool beside a nymph on a page whose large pools are green; pool mostly masked
+  hand: blue | f82r | PASS | small blue tub/pool next to a large green pool; blue tub masked
+
+Colour split over 15 measurable section-B pages: green-class (blue share <= 0.2) 12, blue-class (>= 0.8) 3, mixed 0
+pooled water hue histogram (5-degree bins from 105 to 310): 121902 264053 324473 244624 124607 39954 11482 2616 744 87 38 17 4 5 2 0 0 0 0 6379 7685 9604 8151 7983 6830 5566 4600 3642 2754 1824 1208 550 185 50 17 6 4 2 3 0 2
+
+Leaf profiles (mean over measurable pages): f75[M-1] blue 0.014 hue 114, f78[M-4] blue 0.035 hue 116, f79[M-5] blue 0.016 hue 116, f80[M-5] blue 1.000 hue 216, f81[M-4] blue 0.016 hue 120, f82[M-3] blue 0.051 hue 119, f83[M-2] blue 0.013 hue 125, f84[M-1] blue 0.512 hue 174
+dropped bifolios (a leaf without measurable water): ['M-2', 'M-3']
+NOT_MEASURABLE: bifolios usable 3 (need >= 4); calibration validation ok True
+exact null: 15 perfect matchings of 6 leaves; minimum achievable p = 0.06667
+PRIMARY (blue share): T = between - within mean |d| = -0.0892; null mean -0.0000 sd 0.1625; exact p = 1.0000 (15/15)
+SECONDARY (median hue / 100): T = -0.1106; exact p = 1.0000
+POSITIVE CONTROL B (parchment median L*a*b*, z, all 10 leaves): T = +0.4473; exact p = 0.0455 -> SHEET
+DESCRIPTIVE same leaf (recto vs verso): 7 pairs, mean |d| in-pair minus other pairs = -0.2057; MC page-permutation p (more alike) = 0.1092
+DESCRIPTIVE FACING pages in current binding [ORDER-DEPENDENT]: 5 pairs, mean |d| in-pair minus other pairs = +0.0658; MC page-permutation p (more alike) = 0.7403
+
+Caveats: whether the paint was applied at writing time is unknown, so SHEET means 'painted per sheet', not 'planned per sheet'. n is small (5 bifolios, 10 leaves; minimum p 1/945 = 0.00106 with all 10 leaves). Blue is detected by absolute hue (>= 200); parchment-hued grey-teal washes (as the f69r smudges) are not detectable. The s126 calibrator had seen quire-M overviews in s123. D-066 (v): no real-language control applies (image colour); the shuffled control is the exact matching null.
+CALL: NOT_MEASURABLE
+CALL_COLOUR_SPLIT: NOT_MEASURABLE
+finished 2026-10-19 00:38:16

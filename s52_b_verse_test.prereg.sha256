@@ -1,0 +1,8 @@
+# s52 prereg: sha256 of the s52 script and the files it imports; frozen Sat Oct 17 23:59:20 PDT 2026 before the run
+# superseded by AMENDMENT 1: 0ac698934a24c945772d5231415857b9ee7aa59c369364acb61ae380303440e7 *s52_b_verse_test.py
+7dfdc9f75de5980adaa4b387df8ab272fd1d1c7a9ff452e94cac149012ff253e *scoreboard/run_v2.py
+a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed *scoreboard/metrics_new.py
+3a7b7c3efea13b884362f9f7f07551835bab8ca158ecdb43b946c96a8b3fbf1d *scoreboard/score.py
+0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1 *vparse.py
+# AMENDMENT 1 Sun Oct 18 00:01:27 PDT 2026: run 1 FAILED (Egerton821 114 < K lines; randint crash); n < K cells now skip draws (full values only); re-frozen before run 2
+faa45d69ba33910390df2a2e29215d84163b50000663dafebf11ee8b2f984823 *s52_b_verse_test.py

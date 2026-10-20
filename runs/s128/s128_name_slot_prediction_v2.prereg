@@ -1,0 +1,139 @@
+# s128 v2 PRE-REGISTRATION: page-confined "name slot" at the start of Voynich herbal pages
+# Replaces v1 (runs/s128/s128_name_slot_prediction_v1.prereg, sha256 c0329038...e385, REJECTED by the Independent Verifier,
+# IV-REVIEW-S128-PREREG-V1-20261019.md sha256 dab20d8b...a6a2, 7 must-fixes). v1 and the DRAFT are left unchanged.
+# Frozen BEFORE any Voynich text was read for s128 and before any s128 scorer exists. Freeze time: stub header.
+# Lead rulings (Voynich Analyst, 2026-10-19 ~01:26 PDT): separate line under run id s128; N2 decisive with swaps restricted to same
+# hand and Currier language; N1 reported beside it, non-decisive; held under D-072; Gisclon 2026 logged as c-589, queued after s128.
+# Calibration (known-answer herbals, no Voynich): runs/s128/results_s128_herbal_profile.txt ("calibration file", cited by line)
+# and runs/s128/results_s128_f0n2_calibration.txt (N2 known-answer check on Egerton). Every input is hashed in the stub.
+
+STATUS AND ORDER
+- Frozen design. NOT run. No scorer implemented.
+- HOLD 1 (D-072): no s128 Voynich read until Egerton transfer or Fontana known-answer recovery holds up with the Independent Verifier.
+- HOLD 2: nothing in s128 counts until the Independent Verifier accepts this prereg.
+- Order once both holds clear:
+  (a) write scorer tools/s128_name_slot_score.py;
+  (b) run gates F0 and F0-N2 on calibration texts only (no Voynich file opened);
+  (c) append the scorer's sha256 to the stub as a new uncommented line;
+  (d) only then read Voynich data; (e) gates G1b then G1a; (f) real score; (g) CALL.
+  Any gate failure in (b) stops s128; a fix needs a new run id.
+
+QUESTION
+Do Voynich herbal pages carry, as a real Circa Instans-type herbal does, a word type that is confined to one page, recurs on that page,
+and first appears in the page's first line, beyond what the rarity and positional habits of paragraph-initial words (L-069, F-02) produce?
+
+DATA (paths relative to the project root; sha256 in the stub; the scorer refuses to run if any hash differs)
+- Primary: data/ZL3b-n.txt (ZL3b, IVTFF). Secondary: data/external/voynich-nu-ivtff/RF1b-er.txt, data/external/voynich-nu-ivtff/IT2a-n.txt.
+- Page header variables are read with vparse.PAGE_RE / vparse.VAR_RE (vparse.py, hashed): $I illustration, $Q quire, $B bifolio within
+  quire, $H hand, $L Currier language.
+- Herbal page set: every page whose header has $I=H, minus the excluded foldouts.
+- Excluded foldouts: every page id matching ^f[0-9]+[rv][0-9]+$ (multi-panel). The expected herbal panels under this rule are frozen in
+  runs/s128/s128_excluded_foldouts.txt (f90r1 f90r2 f90v1 f90v2 f95r1 f95r2 f95v1 f95v2, taken from the published catalogue, not from a
+  transliteration). The scorer prints every page it excludes; an excluded herbal page not on the list is printed as LIST_MISMATCH and is
+  still excluded (the rule binds, the list is the audit).
+- Sheet rule (written out; same as p1_bifolio_null.bifolio_of_pages, hashed): sheet = the pair ($Q, $B) from the page header.
+  A page with $Q or $B missing has sheet '?' and forms its own sheet.
+
+MARKUP-READING RULES (IVTFF; applied identically to all three files)
+- File lines starting with '#' and blank lines are skipped.
+- Page header: a line matching vparse.PAGE_RE '^<(f\w+)>\s+<!(.*)>'; header variables apply to the following text lines until the next header.
+- Text line: a line matching vparse.LINE_RE '^<(f\w+)\.(\d+),(.)(\w+)>\s+(.*)$' -> page, line number, locus indicator (one character),
+  unit code, text. One text line = one line for every s128 purpose.
+- Included units: unit codes P0, P1, Pb, Pc, Pr (running paragraph text). Excluded: Pt (titles), every L* (labels), C* (circular),
+  R* (radial), S* and any other code. The scorer prints counts of unit codes seen on herbal pages and of lines excluded.
+- Line order: file order within a page. Line 1 of a page = the first included text line of that page.
+- Inline comments <!...> are removed. The drawing-interruption mark <-> is a word break inside the same line.
+  Paragraph markers <%> (start) and <$> (end) are read for paragraph boundaries (below) and then removed; any other <...> tag is removed.
+- Alternative readings [a:b] (or [a:b:c]) take the first reading. Ligature braces { } are removed, keeping the glyphs inside.
+  Apostrophes and the filler characters '!' and '%' outside tags are removed.
+- Word breaks: '.' (space) and ',' (uncertain space) both break words (vparse.clean default, strict_spaces=False).
+- Uncertain glyphs: '?' (unreadable glyph), '*' (unreadable, older files) and @nnn; (rare-glyph code, mapped to '?' by vparse.clean)
+  make the whole token uncertain. Uncertain tokens are deleted before any count; the positions of the remaining tokens close up within
+  the line. A line left with zero tokens is dropped (the next included line becomes line 1 if it was line 1).
+- Paragraph start: (i) the first included line of a page; (ii) any included line whose raw text begins with <%>; (iii) the included line
+  after a line whose raw text ends with <$>. If a file has no <%> marker on any herbal page, rule (ii) is replaced by: any included line
+  with locus indicator '@' starts a paragraph; the scorer prints PARA_FALLBACK for that file.
+- Slots: paragraph-initial = first token of a paragraph-start line; line-initial = first token of any other included line; other = the rest.
+
+UNITS
+- Primary: whole words. Secondary (report only): cores under scoreboard/metrics_new.py SlotSegmenter and under
+  s76_segmenter_independence.py ZatteraSegmenter("drop", "primary") (both hashed; X-01 at risk).
+
+STATISTIC S (adapted from the calibration definition: the reference corpus is now per Currier language)
+- Reference corpus: all herbal pages of the same Currier language as the page ($L; pages with no $L form their own group '?').
+- Page-confined recurring type on page p: count on p >= 2 and count on p / count in the reference corpus >= 0.9.
+- Per page: if it has at least one such type, take the one whose first occurrence on p is earliest; hit = that occurrence is in line 1.
+- S = hits / number of herbal pages (every page in the denominator).
+- Primary: ZL3b, whole words, pooled herbal. Also reported: Herbal A only, Herbal B only.
+
+NULLS (S recomputed on each draw with the reference counts of the permuted corpus; p = (1 + #draws >= obs) / (draws + 1);
+q99 = the 99th percentile, i.e. sorted draw index ceil(0.99 * draws) - 1)
+- N2 (DECISIVE), 1,000 draws, seed 20261019. Stratum = (quire $Q, sheet ($Q,$B), hand $H, Currier language $L): where a sheet mixes hands
+  or languages, swaps happen only between its pages sharing both. Paragraph-initial tokens are permuted among the paragraph-initial
+  slots of all pages in the stratum. Line-initial tokens are permuted among the line-initial slots of the same page. Other tokens are
+  permuted among the other slots of the same page. Line lengths and paragraph structure are kept. If more than 25% of herbal pages sit
+  in single-page strata, those pages only are re-stratified by (quire, hand, language); the count is printed.
+- N1 (NON-DECISIVE, always reported beside N2), 1,000 draws, seed 20261020: all tokens of a page permuted within the page, line lengths kept.
+
+GATES BEFORE ANY VOYNICH READ (calibration texts only)
+- F0 scorer fixture, seeds 20261021..20261030 (10). On the calibration Egerton set at start_N90 (8-token pseudo-lines, one paragraph per
+  chapter, reference corpus = all chapters): the scorer reproduces S = 0.266 +/- 0.01 and N1 q99 = 0.134 +/- 0.02 (calibration file
+  line 9). With tokens shuffled within chapter (one shuffle per seed), S is not above its N1 q99 (200 draws) in >= 9 of 10 seeds.
+- F0-N2 known-answer check for the decisive null, seeds 20261031..20261045 (15). Per seed: draw 28 random blocks of 4 consecutive
+  Egerton chapters (112 pages, about the herbal page count); pseudo-stratum = the block of 4 (a sheet stand-in, one hand, one language);
+  pages truncated to N = 60 and N = 90 tokens; 8-token pseudo-lines; one paragraph per page (paragraph-initial = token 0, where Egerton
+  places the name 86% of the time, calibration file line 9); N2 and N1 with 200 draws each.
+  Arm NAME (real Egerton, name in the paragraph-initial slot): PASS if S > N2 q99 in >= 10/15 seeds at both N.
+  Arm RARITY (every name-stem token replaced by the common word 'et'; token 0 replaced by a fresh type that occurs nowhere else):
+  PASS if S > N2 q99 in <= 5/15 seeds at both N.
+  Frozen expected outcome (already observed in runs/s128/results_s128_f0n2_calibration.txt with s128_f0n2_calib.py): NAME 15/15 at
+  N60 and N90 (median S 0.339 / 0.384, N2 q99 0.250 / 0.259); RARITY 1/15 and 0/15 (median S 0.098 / 0.107, N2 q99 0.170 / 0.179).
+  The scorer's own implementation must give NAME >= 10/15 and RARITY <= 5/15 at both N; otherwise stop.
+
+GATES AFTER THE VOYNICH READ, BEFORE THE REAL SCORE (real herbal pages, real sizes and layout, ZL3b whole words)
+- G1b DECISIVE planted gate (the Egerton placement), seeds 20261101..20261115 (15). On each page, the paragraph-initial token of line 1 is
+  replaced by a fresh type unique to that page; with probability 0.535 (Egerton start_N90 share of chapters whose name recurs >= 2,
+  calibration file line 9, column 'recurs>=2') 1-3 (uniform) further copies replace random tokens of the same page outside line 1.
+  PASS = planted S > planted-corpus N2 q99 (200 draws) in >= 10/15 seeds. FAIL -> CALL NOT_POWERED.
+- G1a planted gate, reported only, seeds 20261201..20261215 (15): as G1b, but the plant replaces a random non-paragraph-initial token of
+  line 1. A page whose line 1 has only one token gets no G1a plant (left unplanted) and is counted; if such pages are > 10% of herbal
+  pages, G1a is printed as G1a_REDUCED.
+- Macer-strength versions of G1b and G1a (recurrence probability 0.364, Macer start_N90 'recurs>=2', calibration file line 18),
+  seeds 20261301..20261315 and 20261401..20261415: reported only.
+- One-token line 1 in G1b: the plant still goes into the paragraph-initial slot (the line's only token); recurrence copies go outside
+  line 1 as above. If a page has no included tokens outside line 1, it receives no recurrence copies; the count is printed.
+
+LEAVE-ONE-QUIRE-OUT (no parameter is fitted; thresholds 2 and 0.9 are fixed from calibration)
+- Qualifying quire: a herbal quire with >= 4 herbal pages. For each, S_q on its pages (confinement still against the full same-language
+  reference corpus) and N2 restricted to that quire's strata, 200 draws. One RNG stream, seed 20261501, quires processed in ascending
+  $Q order.
+- LOQO_MET if at least 3 quires qualify and S_q > N2_q q95 in >= ceil(2/3 x qualifying quires).
+- LOQO_NOT_MET if at least 3 quires qualify and fewer pass. LOQO_NOT_ASSESSABLE if fewer than 3 quires qualify.
+
+CALL (ZL3b, whole words, pooled herbal). Rules are tested in this order; the first that applies is the call, so every outcome maps to
+exactly one call.
+1. If G1b failed: NOT_POWERED (S and the nulls are printed, not interpreted).
+2. Else if S <= N1 q99: ABSENT.
+3. Else if S <= N2 q99: RARITY_ONLY (here N1 q99 < S <= N2 q99).
+4. Else (S > max(N1 q99, N2 q99)) if S >= 0.117 and LOQO_MET: NAME_SLOT_PRESENT.
+5. Else (S > max(N1 q99, N2 q99) but S < 0.117, or LOQO_NOT_MET, or LOQO_NOT_ASSESSABLE): MIXED, printed with the failing condition(s).
+- Floor 0.117: Macer start_N90 S (calibration file line 18), the weakest real named herbal at Voynich-like page size that beats its own
+  null (p 0.01). The floor is set AT Macer's value so a Macer-strength name signal passes; it is not meant to exclude Macer-strength signals.
+
+REPORTED, NOT CALLED
+- N1 beside N2 (required). Herbal A and B separately. RF1b, IT2a, SlotSegmenter cores, Zattera cores (BH across these 4 x 3 cells,
+  seeds as for the primary nulls).
+- Descriptive: for hit pages, median own-page count of the line-1 type, share that recur beyond line 1, median share of other
+  same-language herbal pages containing the type (Egerton other-chapter fraction 0.0019 at start_N90, calibration file line 9).
+- Stolfi first-token uniqueness rate with its N2 value, marked non-diagnostic (calibration CALL_D).
+
+INTERPRETATION LIMITS (fixed now)
+- NAME_SLOT_PRESENT locates where a plant-name crib should be tried (line 1, page-confined, self-recurring). It reads nothing, does not
+  show the type is a plant name, and does not move the scoreboard until the Independent Verifier accepts it.
+- RARITY_ONLY: the page-start signal is the known paragraph-initial vocabulary (L-069); page confinement gives "first word = plant name"
+  no support. ABSENT: herbal pages do not behave like a named-chapter herbal at the page start. MIXED: no claim either way.
+- No re-run with changed thresholds, units, strata or seeds under s128; any change is a new run id.
+
+OUTPUTS
+- Scorer (reserved): tools/s128_name_slot_score.py. Results: runs/s128/results_s128_name_slot_<YYYYMMDDTHHMMSS>.txt, one file per run,
+  never overwritten; CALL lines filed as printed.

@@ -1,0 +1,704 @@
+{
+"homophones": {
+"e": [
+"k",
+"F",
+"j",
+"e"
+],
+"n": [
+"o",
+"O",
+"L",
+"I"
+],
+"u": [
+"K",
+"B",
+"s",
+"S"
+],
+"i": [
+"c",
+"R",
+"P"
+],
+"d": [
+"x",
+"n",
+"J"
+],
+"s": [
+"i",
+"a",
+"U"
+],
+"r": [
+"u",
+"T"
+],
+"a": [
+"m",
+"C"
+],
+"t": [
+"G",
+"z"
+],
+"l": [
+"b",
+"f"
+],
+"z": [
+"Q"
+],
+"m": [
+"d"
+],
+"h": [
+"r"
+],
+"o": [
+"y"
+],
+"c": [
+"H"
+],
+"g": [
+"D"
+],
+"b": [
+"t"
+],
+"f": [
+"l"
+],
+"p": [
+"p"
+],
+"k": [
+"q"
+],
+"y": [
+"A"
+],
+"x": [
+"N"
+],
+"q": [
+"M"
+],
+"~": [
+"g"
+],
+"&": [
+"v"
+]
+},
+"nulls": [
+"h",
+"E"
+],
+"code": {
+"nim": [
+"nI"
+],
+"sd": [
+"bS"
+],
+"du": [
+"br"
+],
+"uon": [
+"TP"
+],
+"uil": [
+"db"
+],
+"uuirt": [
+"MQ"
+],
+"danne": [
+"GA"
+],
+"uuol": [
+"vc"
+],
+"dor": [
+"dn"
+],
+"machen": [
+"kr"
+],
+"tu": [
+"mk"
+],
+"lege": [
+"dv"
+],
+"uuil": [
+"tQ"
+],
+"uz": [
+"Bl"
+],
+"harn": [
+"ro"
+],
+"siut": [
+"Hx"
+],
+"mensch": [
+"UJ"
+],
+"mache": [
+"tH"
+],
+"hat": [
+"vB"
+],
+"uuazer": [
+"sf"
+],
+"nemen": [
+"dU"
+],
+"laz": [
+"gU"
+],
+"mach": [
+"FL"
+],
+"baz": [
+"Kr"
+],
+"houbet": [
+"bA"
+],
+"uuilt": [
+"Ba"
+],
+"dicke": [
+"Cl"
+],
+"gesunt": [
+"zR"
+],
+"giuz": [
+"Oa"
+],
+"abe": [
+"ze"
+],
+"salbe": [
+"rQ"
+],
+"uuerde": [
+"dM"
+],
+"tage": [
+"yQ"
+],
+"sich": [
+"KT"
+],
+"snit": [
+"yP"
+],
+"diz": [
+"Bf"
+],
+"temper": [
+"Qs"
+],
+"eyer": [
+"MU"
+],
+"gar": [
+"FC"
+],
+"ougen": [
+"lB"
+],
+"gip": [
+"IQ"
+],
+"guot": [
+"CO"
+],
+"schiere": [
+"SB"
+],
+"stoz": [
+"vH"
+],
+"unze": [
+"vq"
+],
+"suuenne": [
+"Sa"
+],
+"suuer": [
+"iA"
+],
+"umbe": [
+"Lr"
+],
+"eime": [
+"ms"
+],
+"gut": [
+"za"
+],
+"menschen": [
+"eyc"
+],
+"solt": [
+"jdt"
+],
+"uuenic": [
+"HIH"
+],
+"gib": [
+"djp"
+],
+"gibz": [
+"xDc"
+],
+"siech": [
+"rzy"
+],
+"milich": [
+"boF"
+],
+"puluer": [
+"mKP"
+],
+"suuem": [
+"SKp"
+],
+"uaste": [
+"Mfl"
+],
+"aller": [
+"Dbm"
+],
+"gesuuulst": [
+"vqv"
+],
+"habe": [
+"sFs"
+],
+"st": [
+"aPG"
+],
+"uuine": [
+"xON"
+],
+"fur": [
+"qut"
+],
+"ime": [
+"kKJ"
+],
+"inne": [
+"qbv"
+],
+"selben": [
+"krj"
+],
+"bint": [
+"vxs"
+],
+"brust": [
+"krq"
+],
+"fulle": [
+"Puj"
+],
+"ole": [
+"nSJ"
+],
+"ouz": [
+"SRK"
+],
+"palde": [
+"oxo"
+],
+"pluot": [
+"lDG"
+],
+"trinchen": [
+"KBe"
+],
+"lange": [
+"lau"
+],
+"uuazzer": [
+"DlA"
+],
+"alle": [
+"tfI"
+],
+"eyern": [
+"iST"
+],
+"gesoten": [
+"oov"
+],
+"neme": [
+"ueD"
+],
+"stat": [
+"tcN"
+],
+"uast": [
+"rtR"
+],
+"uuurz": [
+"DKr"
+],
+"brenne": [
+"uKb"
+],
+"dunne": [
+"DCi"
+],
+"nem": [
+"dNx"
+],
+"smaltze": [
+"bSn"
+],
+"zuuei": [
+"KfA"
+],
+"hut": [
+"qQP"
+],
+"pfeffer": [
+"NmG"
+],
+"souch": [
+"mQj"
+],
+"teil": [
+"DRk"
+],
+"ander": [
+"tRa"
+],
+"auer": [
+"FqA"
+],
+"einander": [
+"yaL"
+],
+"heizet": [
+"aol"
+],
+"huenre": [
+"QNl"
+],
+"ouf": [
+"Fry"
+],
+"sieden": [
+"NMR"
+],
+"tuo": [
+"jmJ"
+],
+"tuoch": [
+"sAr"
+],
+"uuunden": [
+"tNj"
+],
+"aber": [
+"sQC"
+],
+"allez": [
+"nTn"
+],
+"butern": [
+"gqL"
+],
+"duz": [
+"ssu"
+],
+"morser": [
+"lsm"
+],
+"mule": [
+"nLi"
+],
+"mus": [
+"OPt"
+],
+"rot": [
+"Cgz"
+],
+"sammene": [
+"rjk"
+],
+"uuirf": [
+"Mme"
+],
+"uuurze": [
+"lGP"
+],
+"blat": [
+"bPb"
+],
+"bouch": [
+"voJ"
+],
+"brotes": [
+"otj"
+],
+"epfele": [
+"erP"
+],
+"ezich": [
+"BgB"
+],
+"ii": [
+"kKs"
+],
+"mische": [
+"pnj"
+],
+"nimmer": [
+"IJH"
+],
+"siehtuom": [
+"mnq"
+],
+"siude": [
+"AgS"
+],
+"slahe": [
+"ckc"
+],
+"uue": [
+"yuz"
+],
+"dirre": [
+"QfC"
+],
+"hafen": [
+"NbR"
+],
+"heiz": [
+"sUd"
+],
+"legez": [
+"SGF"
+],
+"menge": [
+"fug"
+],
+"smaltz": [
+"pGf"
+],
+"tuch": [
+"zoF"
+],
+"uaz": [
+"gxd"
+],
+"uersaltz": [
+"mlj"
+],
+"uuie": [
+"CGj"
+],
+"allen": [
+"nkf"
+],
+"iht": [
+"qag"
+],
+"mandel": [
+"mfD"
+],
+"ouge": [
+"pui"
+],
+"riemen": [
+"IrP"
+],
+"ris": [
+"djs"
+],
+"saltz": [
+"JJz"
+],
+"uuerden": [
+"bLG"
+],
+"dd": [
+"nts"
+],
+"ezen": [
+"PiK"
+],
+"ge": [
+"oPI"
+],
+"har": [
+"sGi"
+],
+"ich": [
+"rJc"
+],
+"krapfen": [
+"MpK"
+],
+"mele": [
+"fxy"
+],
+"milch": [
+"gPl"
+],
+"nase": [
+"jtP"
+],
+"nehelphe": [
+"bxy"
+],
+"nime": [
+"daS"
+],
+"rinden": [
+"yzR"
+],
+"saffran": [
+"MPa"
+],
+"salben": [
+"Jgi"
+],
+"selbe": [
+"Biz"
+],
+"uu": [
+"DxG"
+],
+"uuerdent": [
+"qRz"
+],
+"uuo": [
+"bIC"
+],
+"ypocras": [
+"kNp"
+],
+"alliu": [
+"fRy"
+],
+"andern": [
+"rpg"
+],
+"disiu": [
+"iRD"
+],
+"fleisch": [
+"AqS"
+],
+"gestozzen": [
+"Brs"
+],
+"geuuinnen": [
+"IfU"
+],
+"ingeber": [
+"trb"
+],
+"is": [
+"LCa"
+],
+"mahtu": [
+"LFG"
+],
+"mul": [
+"fTn"
+],
+"naht": [
+"Uoc"
+],
+"niu": [
+"ixQ"
+],
+"oben": [
+"ksv"
+],
+"schoene": [
+"Urm"
+],
+"schuzzeln": [
+"irt"
+],
+"sf": [
+"fup"
+],
+"siechen": [
+"ery"
+],
+"siede": [
+"NTN"
+],
+"stucke": [
+"TSF"
+],
+"suua": [
+"FBb"
+],
+"tages": [
+"TDF"
+],
+"totern": [
+"nua"
+],
+"uud": [
+"zLn"
+],
+"uuelle": [
+"lDI"
+],
+"uufne": [
+"HoM"
+],
+"zende": [
+"Hgz"
+],
+"alsd": [
+"ACH"
+],
+"backen": [
+"ATM"
+],
+"chumt": [
+"iTt"
+],
+"drin": [
+"GLa"
+],
+"erde": [
+"Ibx"
+],
+"erzente": [
+"mfO"
+],
+"ezzige": [
+"UxS"
+],
+"groz": [
+"MLF"
+],
+"mandelmilch": [
+"QSN"
+]
+}
+}

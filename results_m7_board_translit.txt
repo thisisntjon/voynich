@@ -1,0 +1,52 @@
+m7 board x transliteration  seed=20261017  run=2026-10-17 16:46 Pacific Daylight Time
+scorer: scoreboard/score.py v1 via score_corpus(name, words, lines), same call as g0_score_filed.py
+Bands (PREREG v1): h2 1.98-2.28, sd 1.41-2.11, JSDf>=0.10, p>=x8, m>=x8, excess>=+0.09, redup 0.4-1.8%
+
+ZL3b_eva: alphabet=Eva- collapse=None pages=207 lines=4130 tokens=34857 dropped_unreadable=212
+RF1b: alphabet=Eva- collapse=None pages=207 lines=4130 tokens=34618 dropped_unreadable=41
+IT2a: alphabet=EvaT collapse=None pages=206 lines=4117 tokens=34411 dropped_unreadable=80
+ZL3b_glyphplus: alphabet=Eva- collapse=glyph+ pages=207 lines=4130 tokens=34857 dropped_unreadable=212
+GC2a: alphabet=v101 collapse=None pages=207 lines=4128 tokens=36385 dropped_unreadable=318
+GC2a_v101pm: GC2a relabelled g->p, p->m, m->g so score.py's p/m read v101 g (=EVA p) line-initial and v101 p (=EVA m) line-final
+relabel invariance of other bands: OK
+
+translit                        h2            sd_len      jsd_first_fg     p_init_enrich    m_final_enrich  cross_excess_eva         redup_pct  tokens
+ZL3b_eva                     2.126             1.764            0.1759            x17.89            x16.31           +0.1809            0.896%   25000
+RF1b                         2.135             1.777            0.1809             x19.4            x16.43           +0.1729             0.88%   25000
+IT2a                         2.128             1.691            0.1748            x17.55            x16.51           +0.1660            0.932%   25000
+ZL3b_glyphplus               2.397             1.435            0.2022            x17.89            x16.31           +0.1899            0.896%   25000
+GC2a                         2.540             1.454            0.2140              x0.0             x0.95           +0.2253            0.732%   25000
+GC2a_v101pm                  2.540             1.454            0.2140            x22.68            x17.67           +0.2253            0.732%   25000
+
+ZL3b_eva vs scoreboard.json voynich_eva (filed; PREREG Voynich column):
+  h2                 m7=     2.126 filed=     2.126 raw_equal=True printed_equal=True
+  sd_len             m7=     1.764 filed=     1.764 raw_equal=True printed_equal=True
+  jsd_first_fg       m7=    0.1759 filed=    0.1759 raw_equal=True printed_equal=True
+  p_init_enrich      m7=    x17.89 filed=    x17.89 raw_equal=True printed_equal=True
+  m_final_enrich     m7=    x16.31 filed=    x16.31 raw_equal=True printed_equal=True
+  cross_excess_eva   m7=   +0.1809 filed=   +0.1809 raw_equal=True printed_equal=True
+  redup_pct          m7=    0.896% filed=    0.896% raw_equal=True printed_equal=True
+  tokens m7=25000 filed=25000
+  result: MATCH at printed precision
+  (results_g0.txt holds no Voynich row itself; its Bands line is the same PREREG gates: found)
+
+Spread across EVA-based files (ZL3b_eva, RF1b, IT2a, ZL3b_glyphplus) and GC2a separately:
+band                 eva_min   eva_max      GC2a  GC2a_v101pm     PREREG band
+h2                     2.126     2.397     2.540        2.540       1.98-2.28   (min ZL3b_eva, max ZL3b_glyphplus)
+sd_len                 1.435     1.777     1.454        1.454       1.41-2.11   (min ZL3b_glyphplus, max RF1b)
+jsd_first_fg          0.1748    0.2022    0.2140       0.2140           >=0.1   (min IT2a, max ZL3b_glyphplus)
+p_init_enrich         x17.55     x19.4      x0.0       x22.68             >=8   (min IT2a, max RF1b)
+m_final_enrich        x16.31    x16.51     x0.95       x17.67             >=8   (min ZL3b_eva, max IT2a)
+cross_excess_eva     +0.1660   +0.1899   +0.2253      +0.2253          >=0.09   (min IT2a, max ZL3b_glyphplus)
+redup_pct              0.88%    0.932%    0.732%       0.732%         0.4-1.8   (min RF1b, max IT2a)
+
+Per-band verdict (GC2a uses the v101-mapped p/m for the enrichment bands):
+  h2: PAST band edge for ['ZL3b_glyphplus', 'GC2a']; EVA spread 2.126..2.397, GC2a 2.540 vs band 1.98-2.28; closest value -0.260 from an edge (-87% of band width)
+  sd_len: inside band but NEAR an edge; EVA spread 1.435..1.777, GC2a 1.454 vs band 1.41-2.11; closest value +0.025 from an edge (4% of band width)
+  jsd_first_fg: comfortably inside; EVA spread 0.1748..0.2022, GC2a 0.2140 vs band >=0.1; closest value +0.075 above threshold (75% of it)
+  p_init_enrich: comfortably inside; EVA spread x17.55..x19.4, GC2a x22.68 vs band >=8; closest value +9.550 above threshold (119% of it)
+  m_final_enrich: comfortably inside; EVA spread x16.31..x16.51, GC2a x17.67 vs band >=8; closest value +8.310 above threshold (104% of it)
+  cross_excess_eva: comfortably inside; EVA spread +0.1660..+0.1899, GC2a +0.2253 vs band >=0.09; closest value +0.076 above threshold (84% of it)
+  redup_pct: comfortably inside; EVA spread 0.88%..0.932%, GC2a 0.732% vs band 0.4-1.8; closest value +0.332 from an edge (24% of band width)
+
+Note: h2 and sd_len are measured per alphabet unit. ZL3b_glyphplus and GC2a (v101) write multi-letter EVA glyphs (ch, sh, cth, iin, ...) as one symbol, so their h2 rises and sd_len falls by construction; the PREREG h2/sd_len bands were set at EVA character level and only the three plain-EVA files are on that scale. Plain-EVA spread: h2 2.126..2.135, sd_len 1.691..1.777

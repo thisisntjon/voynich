@@ -1,0 +1,23 @@
+G controls (generated text) vs Voynich ZL3b paragraph text; written 2026-10-17 16:36 PDT by ctl_report.py
+h2 = char conditional entropy with space as a symbol (a1_profile.char_entropies); len = word length mean+-SD;
+repeat = immediate exact repeat rate; p-init / m-final = b4_selfcite_sim.enrich on lines 2+ of each page
+(all-lines values in parentheses). Filed Voynich targets: h2 2.13 (a1, 25k sample), SD 1.76, repeat 0.90%, p-init x16, m-final x16.6.
+
+VOYNICH (ZL3b para)    tokens= 34857 types= 7025 hapax= 4779 h2=2.109 len=4.99+-1.79 repeat=0.84% p-init x15.97 m-final x16.55 (all lines x17.89/x16.31)
+timm_schinner          tokens= 34857 types= 5177 hapax= 2773 h2=2.079 len=4.67+-1.60 repeat=0.90% p-init x 0.75 m-final x 0.93 (all lines x 0.76/x 0.94)
+timm_schinner_ownlines tokens= 43376 types= 6080 hapax= 3264 h2=2.092 len=4.66+-1.61 repeat=0.92% p-init x 7.63 m-final x 8.52 (all lines x 7.66/x 8.32)
+schwartz_reuse         tokens= 34857 types= 5940 hapax= 3355 h2=2.103 len=4.87+-1.90 repeat=0.90% p-init x 2.49 m-final x 3.57 (all lines x 2.49/x 3.59)
+c2_best                tokens= 34857 types= 1982 hapax=  805 h2=1.805 len=4.35+-1.60 repeat=1.18% p-init x18.71 m-final x10.14 (all lines x18.92/x10.41)
+
+provenance: timm_schinner = REAL Java run of Timm & Schinner's text-generator.jar (Temurin 21 JRE, shipped
+  conf.properties, lines_to_create 1200->4800, seed 19), tokens poured into the Voynich page/line shape;
+  timm_schinner_ownlines = the same run in the generator's own 29-line pages (its line-edge habits survive only here);
+schwartz_reuse = Python re-implementation (ctl_schwartz.py, seed 20261017) of Schwartz 2026 §5.2, parameters in
+  its docstring and sidecar 'fit'; c2_best = c2_section_generator at the minimax-deviation setting (ctl_c2_best.py).
+  c2_best setting: section ps=0.8 s2 kwargs={'mode': 'section', 'seed': 2, 'p_seed': 0.8, 'rule_p': 0.088, 'rule_m': 0.148}
+  schwartz hand 1: shares={'reuse': 0.729, 'copy': 0.02, 'coin': 0.251} w_init=0.297 w_final=0.279 lag1=+0.115 beta=0.108 vocab=2985 types/10481 tokens
+  schwartz hand 2: shares={'reuse': 0.767, 'copy': 0.049, 'coin': 0.184} w_init=0.353 w_final=0.316 lag1=+0.153 beta=0.156 vocab=2434 types/10800 tokens
+  schwartz hand 3: shares={'reuse': 0.729, 'copy': 0.02, 'coin': 0.251} w_init=0.360 w_final=0.294 lag1=+0.176 beta=0.179 vocab=3302 types/11703 tokens
+  schwartz hand 4: shares={'reuse': 0.729, 'copy': 0.02, 'coin': 0.251} w_init=0.095 w_final=0.149 lag1=+0.131 beta=0.141 vocab=382 types/540 tokens
+  schwartz hand 5: shares={'reuse': 0.767, 'copy': 0.049, 'coin': 0.184} w_init=0.176 w_final=0.210 lag1=+0.157 beta=0.188 vocab=536 types/873 tokens
+  schwartz hand ?: shares={'reuse': 0.767, 'copy': 0.049, 'coin': 0.184} w_init=0.265 w_final=0.041 lag1=+0.221 beta=0.184 vocab=309 types/460 tokens

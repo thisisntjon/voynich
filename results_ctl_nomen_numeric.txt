@@ -1,0 +1,12 @@
+ctl_nomen_numeric.py  seed=20261017  N_TOKENS=35000  radices=(8, 12, 15, 10)
+h2 = char conditional entropy with space as a symbol (a1_profile.char_entropies); redup = immediate word repeats (%); poslock = token-weighted mean entropy (bits) of each glyph's relative-position quintile distribution (metrics_new.extra_signatures (d); max 2.322, low = position-locked)
+
+variant                       tokens     types     hapax  mean_len    sd_len     alpha        h1        h2     redup   poslock
+nomen_numeric                  35007      9168     0.611     2.781     0.985        23     3.988     3.322     0.000     1.606
+nomen_numeric_lines            35007     10080     0.640     2.826     1.005        25     4.045     3.363     0.000     1.633
+nomen_numeric_sylls            35007      9156     0.611     4.986     2.335        20     4.048     3.659     0.000     2.180
+Voynich EVA (first 35k)        34857      7025     0.680     4.990     1.788        26     3.871     2.109     0.843     1.661
+
+word code: 9168 types; code length distribution {1: 9, 2: 140, 3: 1650, 4: 7369}; token-weighted {1: 4463, 2: 8260, 3: 12748, 4: 9536}
+syllable code: 1797 syllables; numeral length distribution {1: 9, 2: 140, 3: 1648}
+digit alphabets (word code): pos0[8]=iaqfdrkj  pos1[12]=frsntcylvoex  pos2[15]=queakfxibnslgyt  pos3[10]=rnfhjklgxv

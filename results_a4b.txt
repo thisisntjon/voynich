@@ -1,0 +1,8 @@
+VMS matched W=10: exact 0.079/0.047=1.69  d=1 0.210/0.162=1.30  d<=1 0.289/0.208=1.39
+VMS matched W=40: exact 0.210/0.147=1.42  d=1 0.357/0.331=1.08  d<=1 0.567/0.478=1.18
+latin_caesar     W=10: exact 1.19  d=1 1.08  d<=1 1.12
+latin_augustine  W=10: exact 1.53  d=1 1.13  d<=1 1.33
+italian_dante    W=10: exact 0.96  d=1 1.00  d<=1 0.99
+german_faust     W=10: exact 1.49  d=1 1.11  d<=1 1.27
+german_kafka     W=10: exact 0.98  d=1 0.93  d<=1 0.95
+english_alice    W=10: exact 1.13  d=1 0.95  d<=1 1.02

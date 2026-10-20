@@ -1,0 +1,26 @@
+[
+  {
+    "file": "<local-path>",
+    "orientation": "rotate270",
+    "display_percentiles": [
+      23.0,
+      2370.0
+    ]
+  },
+  {
+    "file": "<local-path>",
+    "orientation": "rotate270",
+    "display_percentiles": [
+      10.0,
+      379.0
+    ]
+  },
+  {
+    "file": "<local-path>",
+    "orientation": "rotate270",
+    "display_percentiles": [
+      104.0,
+      1796.4899999999907
+    ]
+  }
+]

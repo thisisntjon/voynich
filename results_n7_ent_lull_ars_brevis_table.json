@@ -1,0 +1,179 @@
+{
+ "row": {
+  "name": "lull_ars_brevis_table",
+  "tokens": 1680,
+  "types": 816,
+  "pages": 84,
+  "lines": 1680,
+  "errors": {
+   "extra": "TypeError: Cannot cast array data from dtype('float64') to dtype('int64') according to the rule 'safe'"
+  },
+  "types_25k": 816,
+  "h2": 2.6031,
+  "sd_len": 0.218,
+  "jsd_first_fg": 0.0,
+  "p_init_enrich": null,
+  "m_final_enrich": null,
+  "cross_excess_eva": 0.0,
+  "redup_pct": 0.0,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "jsd_first_fg",
+   "cross_excess_eva",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "lull_ars_brevis_table",
+   "tokens": 1680,
+   "types": 816,
+   "hapax_rate": 0.8235,
+   "mean_len": 3.95,
+   "sd_len": 0.218,
+   "h1": 3.2822,
+   "h2": 2.6031,
+   "h3": 2.2501,
+   "zipf": -0.6105,
+   "redup_pct": 0.0,
+   "jsd_first_fg": 0.0,
+   "jsd_last_lg": 0.0,
+   "p_init_enrich": null,
+   "m_final_enrich": null,
+   "cross_mi_eva": 0,
+   "cross_excess_eva": 0.0,
+   "cross_mi_glyph": 0,
+   "cross_excess_glyph": 0.0,
+   "recur_le_1": 0.0,
+   "recur_le_5": 0.0,
+   "recur_le_20": 0.15,
+   "recur_le_100": 0.3143
+  },
+  "info_mi_adjacent": null,
+  "info_mi_page": 0.39702432115085173,
+  "info_samecol_minus_othercol": null,
+  "info_bpe_adjacent": 0.5359253591858315,
+  "lex_beta": 0.8019356065897444,
+  "lex_rate_late_early": 0.5751072961373391,
+  "lex_edit1_excess": 0.9938725490196079,
+  "slot_occupancy_pc": 0.5511111111111111,
+  "slot_table_likeness": 0.860864602213222,
+  "slot_core_crowding": 1.0,
+  "bake_winner": "copy0.3+markov3",
+  "bake_char3_minus_unigram": -0.2803720906806628,
+  "bake_bits": {
+   "markov2": 12.891781122349883,
+   "markov3": 12.554043657974995,
+   "slot": 12.970588098357297,
+   "unigram_gt": 12.834415748655658,
+   "copy0.3+markov3": 11.178409459966495,
+   "copy0.1+markov3": 11.55476075889047,
+   "copy0.05+markov3": 11.770097596841278
+  },
+  "x_edge_mi_word": null,
+  "x_position_entropy": null,
+  "x_ltr_minus_rtl": null,
+  "x_moran_I": null,
+  "x_hapax_10k": null,
+  "family": "-",
+  "note": "data\\controls_synthetic\\lull_ars_brevis_table.meta.json; 1680 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 6,
+    "outs": 6,
+    "na": 6,
+    "out_metrics": [
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_core_crowding"
+    ]
+   },
+   "C": {
+    "ins": 5,
+    "outs": 7,
+    "na": 6,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "types_25k",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_occupancy_pc"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "types_25k",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_occupancy_pc"
+    ]
+   },
+   "G": {
+    "ins": 6,
+    "outs": 6,
+    "na": 6,
+    "out_metrics": [
+     "h2",
+     "redup_pct",
+     "types_25k",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness"
+    ],
+    "out_tight": [
+     "h2",
+     "redup_pct",
+     "types_25k",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness"
+    ]
+   },
+   "X": {
+    "ins": 3,
+    "outs": 8,
+    "na": 7,
+    "out_metrics": [
+     "jsd_first_fg",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding",
+     "bake_char3_minus_unigram"
+    ],
+    "out_tight": [
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding",
+     "bake_char3_minus_unigram"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "n7_gibberish_ranges.json"
+}

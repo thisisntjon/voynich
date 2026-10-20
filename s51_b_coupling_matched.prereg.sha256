@@ -1,0 +1,6 @@
+# s51 prereg: sha256 of the s51 script and the scorer files it imports; frozen Sat Oct 17 23:47:22 PDT 2026 before the run
+98d0539829c00795baf7526fc647e29940f4decc8339920de642dbf0b6fded85 *s51_b_coupling_matched.py
+7dfdc9f75de5980adaa4b387df8ab272fd1d1c7a9ff452e94cac149012ff253e *scoreboard/run_v2.py
+3a7b7c3efea13b884362f9f7f07551835bab8ca158ecdb43b946c96a8b3fbf1d *scoreboard/score.py
+a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed *scoreboard/metrics_new.py
+0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1 *vparse.py

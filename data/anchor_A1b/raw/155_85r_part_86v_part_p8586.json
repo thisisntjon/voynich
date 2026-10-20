@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:03:49.3022397Z",
+ "response": "{\n  \"PT\": \"CIRCLE\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"0\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"ROSETTE\",\n  \"J_shape\": \"OTHER\",\n  \"J_count\": \"2-3\",\n  \"J_fragcount\": \"NA\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"FACE\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"10-19\",\n  \"C_rings\": \"4+\",\n  \"C_diagrams\": \"2-3\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"NA\",\n  \"B_figures\": \"NA\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Circular diagrams with central faces and rays.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2734820300,
+ "load_duration": 172813200,
+ "prompt_eval_count": 3545,
+ "prompt_eval_duration": 864669000,
+ "eval_count": 206,
+ "eval_duration": 1531457000,
+ "stem": "155_85r_part_86v_part_p8586"
+}

@@ -1,0 +1,8 @@
+J4 context-only gate: ARI>=0.15 at m=3 (refs: F4 0.039, J1ctx+pos 0.101, J1v2+spelling 0.171)
+m=3 ctx4 K=96 ARI=0.029 NMI=0.559 tokARI=0.151
+m=3 ctx2dim80 K=96 ARI=0.044 NMI=0.592 tokARI=0.188
+m=2 ctx4 K=96 ARI=0.024 NMI=0.612 tokARI=0.162
+m=2 ctx2dim80 K=96 ARI=0.092 NMI=0.678 tokARI=0.270
+m=1 ctx4 K=96 ARI=0.093 NMI=0.736 tokARI=0.387
+m=1 ctx2dim80 K=96 ARI=0.202 NMI=0.799 tokARI=0.549
+Gate verdict in summary; no Voynich run unless m=3 clears 0.15.

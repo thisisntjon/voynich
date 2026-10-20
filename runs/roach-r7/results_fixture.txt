@@ -1,0 +1,117 @@
+r7.py mode=fixture run at (clock): 2026-10-18T12:59:14-07:00
+r7.py sha256: 0d5e65db45b3c410bfbcab5b56d45adaab09b09c9af007b3546538a5b9f69b96
+== FIX_PLANTED
+  FIX_PLANTED S2 MDL affixes (DL 667949 bits): prefixes ['q', 'sh', 'ch', 'y', 'l', 'r', 'd', 's', 'o', 'qo'] ; suffixes ['aiin', 'iin', 'edy', 'al', 'ol', 'dy', 'ey', 'in', 'm', 'r', 's', 'y', 'l']
+  FIX_PLANTED S1: 15 folds, threshold 8
+   fold | (a) excess p pass | (b) R_within p pass | (c) D (Rw'/Rx') p pass | (d) L_q [band] pass | FOLD
+   Q00  | +0.3123 0.005 True  | 2.614 0.005 True  | +6.182 (8.008/1.826) 0.005 True  | 1.118 [0.865,1.118] True  | PASS
+   Q01  | +0.2641 0.005 True  | 2.597 0.005 True  | +6.942 (8.835/1.893) 0.005 True  | 0.989 [0.877,1.156] True  | PASS
+   Q02  | +0.3918 0.005 True  | 2.812 0.005 True  | +8.886 (9.993/1.106) 0.005 True  | 0.982 [0.856,1.127] True  | PASS
+   Q03  | +0.3220 0.005 True  | 2.516 0.005 True  | +6.665 (8.090/1.425) 0.005 True  | 1.036 [0.886,1.142] True  | PASS
+   Q04  | +0.3535 0.005 True  | 2.643 0.005 True  | +8.279 (9.531/1.252) 0.005 True  | 0.915 [0.875,1.175] True  | PASS
+   Q05  | +0.3042 0.005 True  | 2.665 0.005 True  | +8.493 (9.606/1.113) 0.005 True  | 0.979 [0.865,1.126] True  | PASS
+   Q06  | +0.3803 0.005 True  | 2.720 0.005 True  | +8.319 (9.396/1.078) 0.005 True  | 0.984 [0.857,1.155] True  | PASS
+   Q07  | +0.3818 0.005 True  | 2.585 0.005 True  | +7.296 (8.661/1.365) 0.005 True  | 1.160 [0.864,1.151] True  | PASS
+   Q08  | +0.3105 0.005 True  | 2.738 0.005 True  | +8.880 (9.808/0.928) 0.005 True  | 0.925 [0.884,1.128] True  | PASS
+   Q09  | +0.3597 0.005 True  | 2.746 0.005 True  | +6.068 (8.532/2.464) 0.005 True  | 0.993 [0.848,1.129] True  | PASS
+   Q10  | +0.3376 0.005 True  | 2.546 0.005 True  | +8.718 (10.317/1.600) 0.005 True  | 0.940 [0.900,1.118] True  | PASS
+   Q11  | +0.3199 0.005 True  | 2.860 0.005 True  | +9.415 (10.387/0.972) 0.005 True  | 0.931 [0.878,1.142] True  | PASS
+   Q12  | +0.3275 0.005 True  | 2.439 0.005 True  | +6.752 (8.070/1.318) 0.005 True  | 1.206 [0.880,1.132] True  | PASS
+   Q13  | +0.3517 0.005 True  | 2.425 0.005 True  | +7.906 (8.970/1.064) 0.005 True  | 1.019 [0.882,1.146] True  | PASS
+   Q14  | +0.3818 0.005 True  | 2.712 0.005 True  | +8.794 (10.293/1.499) 0.005 True  | 0.969 [0.866,1.163] True  | PASS
+   folds passing: (a) 15 (b) 15 (c) 15 (d) 15 ; (b)&(c) 15 ; ALL FOUR 15 of 15 -> signature HOLDS
+  FIX_PLANTED S2: 15 folds, threshold 8
+   fold | (a) excess p pass | (b) R_within p pass | (c) D (Rw'/Rx') p pass | (d) L_q [band] pass | FOLD
+   Q00  | +0.2032 0.005 True  | 2.604 0.005 True  | +6.074 (8.088/2.014) 0.005 True  | 1.082 [0.838,1.143] True  | PASS
+   Q01  | +0.1026 0.005 True  | 2.631 0.005 True  | +6.605 (8.845/2.240) 0.005 True  | 1.082 [0.844,1.177] True  | PASS
+   Q02  | +0.1817 0.005 True  | 3.007 0.005 True  | +9.068 (11.063/1.996) 0.005 True  | 1.039 [0.847,1.158] True  | PASS
+   Q03  | +0.1285 0.005 True  | 2.338 0.005 True  | +6.985 (7.808/0.823) 0.005 True  | 0.955 [0.848,1.165] True  | PASS
+   Q04  | +0.1927 0.005 True  | 2.616 0.005 True  | +8.333 (9.679/1.346) 0.005 True  | 0.990 [0.860,1.204] True  | PASS
+   Q05  | +0.1530 0.005 True  | 2.850 0.005 True  | +8.715 (9.622/0.907) 0.005 True  | 0.950 [0.860,1.150] True  | PASS
+   Q06  | +0.2016 0.005 True  | 2.778 0.005 True  | +8.377 (9.632/1.255) 0.005 True  | 0.999 [0.845,1.163] True  | PASS
+   Q07  | +0.1908 0.005 True  | 2.646 0.005 True  | +7.485 (9.718/2.233) 0.005 True  | 1.129 [0.848,1.153] True  | PASS
+   Q08  | +0.1308 0.005 True  | 2.824 0.005 True  | +8.488 (9.886/1.397) 0.005 True  | 0.873 [0.853,1.155] True  | PASS
+   Q09  | +0.1648 0.005 True  | 2.549 0.005 True  | +4.257 (7.831/3.574) 0.005 True  | 1.040 [0.847,1.148] True  | PASS
+   Q10  | +0.1647 0.005 True  | 2.552 0.005 True  | +9.186 (10.695/1.509) 0.005 True  | 0.841 [0.855,1.149] True  | PASS
+   Q11  | +0.1646 0.005 True  | 2.891 0.005 True  | +9.353 (10.724/1.371) 0.005 True  | 0.931 [0.844,1.167] True  | PASS
+   Q12  | +0.1771 0.005 True  | 2.288 0.005 True  | +6.865 (7.885/1.019) 0.005 True  | 1.243 [0.864,1.149] True  | PASS
+   Q13  | +0.1955 0.005 True  | 2.474 0.005 True  | +8.053 (9.299/1.246) 0.005 True  | 0.986 [0.827,1.160] True  | PASS
+   Q14  | +0.1924 0.005 True  | 2.723 0.005 True  | +9.383 (10.270/0.887) 0.005 True  | 1.019 [0.858,1.186] True  | PASS
+   folds passing: (a) 15 (b) 15 (c) 15 (d) 15 ; (b)&(c) 15 ; ALL FOUR 15 of 15 -> signature HOLDS
+  FIX_PLANTED S0: 15 folds, threshold 8
+   fold | (a) excess p pass | (b) R_within p pass | (c) D (Rw'/Rx') p pass | (d) L_q [band] pass | FOLD
+   Q00  | +0.0068 0.224 False | nan 1.000 False | +0.000 (0.000/0.000) 0.975 False | 0.954 [0.809,1.218] True  | fail
+   Q01  | +0.0012 0.423 False | 3.132 0.060 False | +16.622 (16.622/0.000) 0.005 True  | 0.990 [0.788,1.220] True  | fail
+   Q02  | +0.0097 0.090 False | nan 1.000 False | +0.000 (0.000/0.000) 0.985 False | 0.901 [0.820,1.205] True  | fail
+   Q03  | +0.0048 0.328 False | 1.963 0.299 False | +11.518 (11.518/0.000) 0.015 True  | 0.997 [0.802,1.218] True  | fail
+   Q04  | +0.0195 0.045 True  | nan 1.000 False | +0.000 (0.000/0.000) 0.980 False | 0.871 [0.770,1.245] True  | fail
+   Q05  | +0.0124 0.104 False | 4.109 0.020 True  | +21.185 (21.185/0.000) 0.005 True  | 0.872 [0.768,1.234] True  | fail
+   Q06  | +0.0102 0.114 False | 4.472 0.005 True  | +29.078 (29.078/0.000) 0.005 True  | 0.969 [0.793,1.236] True  | fail
+   Q07  | +0.0178 0.104 False | 2.500 0.453 False | +6.625 (6.625/0.000) 0.114 False | 0.973 [0.833,1.188] True  | fail
+   Q08  | +0.0395 0.005 True  | 2.841 0.020 True  | +25.086 (25.086/0.000) 0.005 True  | 0.950 [0.797,1.245] True  | PASS
+   Q09  | +0.0263 0.010 True  | nan 1.000 False | +0.000 (0.000/0.000) 0.990 False | 1.059 [0.789,1.209] True  | fail
+   Q10  | +0.0247 0.015 True  | nan 1.000 False | -43.968 (0.000/43.968) 1.000 False | 0.973 [0.795,1.215] True  | fail
+   Q11  | +0.0298 0.005 True  | 2.000 0.443 False | +6.252 (6.252/0.000) 0.139 False | 0.884 [0.810,1.243] True  | fail
+   Q12  | -0.0053 0.667 False | nan 1.000 False | +0.000 (0.000/0.000) 0.980 False | 1.241 [0.825,1.208] True  | fail
+   Q13  | -0.0014 0.562 False | 2.493 0.030 True  | +21.197 (21.197/0.000) 0.005 True  | 1.173 [0.800,1.214] True  | fail
+   Q14  | +0.0169 0.080 False | 2.353 0.209 False | +17.187 (17.187/0.000) 0.010 True  | 1.050 [0.813,1.198] True  | fail
+   folds passing: (a) 5 (b) 4 (c) 7 (d) 15 ; (b)&(c) 4 ; ALL FOUR 1 of 15 -> signature NOT HOLDS
+
+== FIX_WORD_MARKOV
+  FIX_WORD_MARKOV S2 MDL affixes (DL 621144 bits): prefixes ['q', 'sh', 'ch', 'r', 'y', 's', 'l', 'd', 'qo', 'o'] ; suffixes ['aiin', 'eey', 'iin', 'ain', 'am', 'or', 'ar', 'ey', 'in', 'dy', 'y', 'm', 'r', 'l', 'g']
+  FIX_WORD_MARKOV S1: 15 folds, threshold 8
+   fold | (a) excess p pass | (b) R_within p pass | (c) D (Rw'/Rx') p pass | (d) L_q [band] pass | FOLD
+   Q00  | -0.0107 0.682 False | 1.140 0.224 False | +0.546 (1.246/0.700) 0.154 False | 0.965 [0.875,1.151] True  | fail
+   Q01  | +0.0230 0.095 False | 0.939 0.726 False | -1.048 (0.866/1.914) 0.985 False | 0.954 [0.868,1.136] True  | fail
+   Q02  | +0.0120 0.219 False | 0.939 0.692 False | -0.460 (0.925/1.385) 0.831 False | 0.958 [0.884,1.124] True  | fail
+   Q03  | +0.0083 0.318 False | 0.945 0.706 False | +0.030 (1.062/1.033) 0.542 False | 1.077 [0.872,1.131] True  | fail
+   Q04  | +0.0135 0.284 False | 1.191 0.109 False | -0.170 (1.252/1.423) 0.706 False | 1.121 [0.877,1.166] True  | fail
+   Q05  | -0.0213 0.871 False | 0.900 0.751 False | -0.191 (0.814/1.005) 0.682 False | 0.892 [0.863,1.133] True  | fail
+   Q06  | -0.0122 0.741 False | 0.896 0.791 False | -1.248 (0.869/2.117) 1.000 False | 1.062 [0.866,1.167] True  | fail
+   Q07  | +0.0161 0.189 False | 1.203 0.090 False | -0.438 (1.148/1.586) 0.831 False | 0.982 [0.855,1.123] True  | fail
+   Q08  | +0.0117 0.269 False | 1.284 0.020 True  | -0.591 (1.357/1.948) 0.866 False | 1.029 [0.857,1.146] True  | fail
+   Q09  | -0.0069 0.617 False | 1.054 0.468 False | -0.009 (0.962/0.971) 0.443 False | 0.986 [0.875,1.146] True  | fail
+   Q10  | +0.0082 0.333 False | 0.888 0.801 False | -0.765 (0.965/1.729) 0.930 False | 0.932 [0.876,1.145] True  | fail
+   Q11  | +0.0027 0.463 False | 0.892 0.796 False | -0.450 (1.005/1.455) 0.806 False | 0.912 [0.891,1.164] True  | fail
+   Q12  | -0.0178 0.801 False | 1.184 0.154 False | -0.050 (1.038/1.088) 0.577 False | 1.021 [0.876,1.143] True  | fail
+   Q13  | +0.0045 0.433 False | 1.134 0.224 False | -0.294 (1.137/1.431) 0.756 False | 1.091 [0.874,1.156] True  | fail
+   Q14  | -0.0085 0.647 False | 1.333 0.030 True  | +0.684 (1.591/0.907) 0.085 False | 1.008 [0.861,1.156] True  | fail
+   folds passing: (a) 0 (b) 2 (c) 0 (d) 15 ; (b)&(c) 0 ; ALL FOUR 0 of 15 -> signature NOT HOLDS
+  FIX_WORD_MARKOV S2: 15 folds, threshold 8
+   fold | (a) excess p pass | (b) R_within p pass | (c) D (Rw'/Rx') p pass | (d) L_q [band] pass | FOLD
+   Q00  | +0.0117 0.264 False | 0.889 0.776 False | +0.257 (1.031/0.774) 0.363 False | 0.864 [0.854,1.146] True  | fail
+   Q01  | +0.0012 0.438 False | 0.993 0.607 False | -0.157 (0.921/1.078) 0.632 False | 0.974 [0.844,1.153] True  | fail
+   Q02  | +0.0085 0.358 False | 1.044 0.443 False | +0.052 (1.095/1.043) 0.527 False | 0.948 [0.873,1.179] True  | fail
+   Q03  | -0.0297 0.940 False | 1.047 0.408 False | -0.203 (1.109/1.313) 0.697 False | 1.032 [0.845,1.159] True  | fail
+   Q04  | +0.0069 0.348 False | 1.280 0.095 False | +0.150 (1.323/1.173) 0.413 False | 1.142 [0.873,1.184] True  | fail
+   Q05  | -0.0185 0.856 False | 0.927 0.687 False | -0.352 (0.775/1.127) 0.741 False | 0.891 [0.835,1.171] True  | fail
+   Q06  | -0.0199 0.856 False | 0.919 0.692 False | -1.298 (0.888/2.186) 0.990 False | 1.092 [0.858,1.174] True  | fail
+   Q07  | +0.0043 0.438 False | 1.166 0.224 False | -0.634 (1.117/1.751) 0.886 False | 0.978 [0.851,1.145] True  | fail
+   Q08  | +0.0232 0.080 False | 1.171 0.164 False | -1.354 (1.255/2.609) 0.980 False | 1.001 [0.830,1.162] True  | fail
+   Q09  | +0.0335 0.030 True  | 0.888 0.776 False | -0.218 (0.868/1.087) 0.647 False | 0.989 [0.857,1.164] True  | fail
+   Q10  | -0.0242 0.905 False | 0.883 0.756 False | -0.616 (0.838/1.454) 0.861 False | 0.941 [0.861,1.173] True  | fail
+   Q11  | -0.0094 0.672 False | 0.944 0.607 False | +0.001 (1.094/1.093) 0.458 False | 0.936 [0.852,1.203] True  | fail
+   Q12  | +0.0016 0.448 False | 1.320 0.060 False | +0.054 (1.314/1.260) 0.507 False | 1.062 [0.856,1.168] True  | fail
+   Q13  | -0.0005 0.512 False | 1.232 0.129 False | +0.018 (1.243/1.226) 0.493 False | 1.085 [0.849,1.168] True  | fail
+   Q14  | +0.0351 0.065 False | 1.298 0.065 False | +0.514 (1.523/1.009) 0.189 False | 1.046 [0.844,1.188] True  | fail
+   folds passing: (a) 1 (b) 0 (c) 0 (d) 15 ; (b)&(c) 0 ; ALL FOUR 0 of 15 -> signature NOT HOLDS
+  FIX_WORD_MARKOV S0: 15 folds, threshold 8
+   fold | (a) excess p pass | (b) R_within p pass | (c) D (Rw'/Rx') p pass | (d) L_q [band] pass | FOLD
+   Q00  | -0.0049 0.662 False | 0.000 1.000 False | +0.000 (0.000/0.000) 0.950 False | 0.923 [0.831,1.155] True  | fail
+   Q01  | +0.0065 0.169 False | nan 1.000 False | +0.000 (0.000/0.000) 0.985 False | 0.954 [0.850,1.173] True  | fail
+   Q02  | -0.0062 0.791 False | 0.000 1.000 False | +0.000 (0.000/0.000) 0.980 False | 0.937 [0.842,1.172] True  | fail
+   Q03  | -0.0263 0.990 False | 0.000 1.000 False | +0.000 (0.000/0.000) 0.965 False | 1.183 [0.839,1.162] True  | fail
+   Q04  | +0.0184 0.070 False | 0.000 1.000 False | +0.000 (0.000/0.000) 1.000 False | 1.019 [0.842,1.174] True  | fail
+   Q05  | +0.0089 0.154 False | 0.000 1.000 False | +0.000 (0.000/0.000) 0.980 False | 0.918 [0.837,1.133] True  | fail
+   Q06  | +0.0148 0.020 True  | 0.000 1.000 False | +0.000 (0.000/0.000) 0.970 False | 1.030 [0.837,1.164] True  | fail
+   Q07  | +0.0146 0.070 False | nan 1.000 False | +0.000 (0.000/0.000) 0.985 False | 1.003 [0.839,1.142] True  | fail
+   Q08  | +0.0210 0.010 True  | 0.000 1.000 False | +0.000 (0.000/0.000) 0.970 False | 1.010 [0.842,1.141] True  | fail
+   Q09  | +0.0169 0.035 True  | 5.000 0.219 False | +5.219 (5.219/0.000) 0.154 False | 0.954 [0.845,1.172] True  | fail
+   Q10  | +0.0034 0.313 False | nan 1.000 False | -31.584 (0.000/31.584) 1.000 False | 0.938 [0.870,1.171] True  | fail
+   Q11  | -0.0149 0.876 False | nan 1.000 False | +0.000 (0.000/0.000) 0.985 False | 0.949 [0.850,1.220] True  | fail
+   Q12  | -0.0066 0.791 False | nan 1.000 False | +0.000 (0.000/0.000) 0.935 False | 1.119 [0.838,1.162] True  | fail
+   Q13  | +0.0006 0.433 False | 3.000 0.323 False | +7.032 (7.032/0.000) 0.104 False | 0.988 [0.841,1.152] True  | fail
+   Q14  | +0.0192 0.040 True  | nan 1.000 False | +0.000 (0.000/0.000) 0.950 False | 1.066 [0.835,1.194] True  | fail
+   folds passing: (a) 4 (b) 0 (c) 0 (d) 15 ; (b)&(c) 0 ; ALL FOUR 0 of 15 -> signature NOT HOLDS
+
+FIXTURE CHECK: planted HOLDS under S1: True ; word-Markov NOT HOLDS under all: True ; overall OK

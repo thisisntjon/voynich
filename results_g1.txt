@@ -1,0 +1,55 @@
+G1 edge-joint  seed-split=20261017  rules after the line
+pages train=166 test=41  edge pairs=23165  contexts>=5: 19  cells=213
+rejection draw, max 40 tries; line rules do not edit the characters inside a within-line edge pair
+reported config: ('seed', 200, 20261017)  rule_p=0.088 rule_m=0.148
+held-out pass = all seven PREREG bands on test pages only
+
+seed_L200_s20261017    full tok=25000 h2=1.600 sd=1.548 JSDf=0.0885 p=x1211.08 m=x14.66 excess=+0.1054 redup=2.704%  fallback=0/34857 (0.00%)
+                       full joint=FAIL failed=['h2', 'jsd_first_fg', 'redup_pct']
+seed_L200_s20261017    held tok= 8586 h2=1.595 sd=1.562 JSDf=0.0801 p=x540.78 m=x17.44 excess=+0.0997 redup=2.749%  fallback=0/34857 (0.00%)
+                       held joint=FAIL failed=['h2', 'jsd_first_fg', 'redup_pct']
+
+seed_L200_s1           full tok=25000 h2=1.635 sd=1.609 JSDf=0.0969 p=x2586.71 m=x10.94 excess=+0.1025 redup=2.756%  fallback=0/34857 (0.00%)
+                       full joint=FAIL failed=['h2', 'jsd_first_fg', 'redup_pct']
+seed_L200_s1           held tok= 8586 h2=1.618 sd=1.609 JSDf=0.1001 p=xinf m=x11.32 excess=+0.0924 redup=2.656%  fallback=0/34857 (0.00%)
+                       held joint=FAIL failed=['h2', 'redup_pct']
+
+seed_L200_s2           full tok=25000 h2=1.597 sd=1.483 JSDf=0.1016 p=x543.67 m=x16.35 excess=+0.1039 redup=3.156%  fallback=0/34857 (0.00%)
+                       full joint=FAIL failed=['h2', 'redup_pct']
+seed_L200_s2           held tok= 8586 h2=1.581 sd=1.533 JSDf=0.1039 p=xinf m=x16.63 excess=+0.0961 redup=3.005%  fallback=0/34857 (0.00%)
+                       held joint=FAIL failed=['h2', 'redup_pct']
+
+seed_L200_s3           full tok=25000 h2=1.622 sd=1.526 JSDf=0.0896 p=x831.52 m=x25.63 excess=+0.0969 redup=3.06%  fallback=0/34857 (0.00%)
+                       full joint=FAIL failed=['h2', 'jsd_first_fg', 'redup_pct']
+seed_L200_s3           held tok= 8586 h2=1.606 sd=1.534 JSDf=0.1046 p=x658.06 m=x25.2 excess=+0.0841 redup=3.168%  fallback=0/34857 (0.00%)
+                       held joint=FAIL failed=['h2', 'cross_excess_eva', 'redup_pct']
+
+seed_L200_s4           full tok=25000 h2=1.591 sd=1.551 JSDf=0.0858 p=x1211.08 m=x20.39 excess=+0.1093 redup=2.996%  fallback=0/34857 (0.00%)
+                       full joint=FAIL failed=['h2', 'jsd_first_fg', 'redup_pct']
+seed_L200_s4           held tok= 8586 h2=1.593 sd=1.495 JSDf=0.0860 p=xinf m=x18.32 excess=+0.1126 redup=2.854%  fallback=0/34857 (0.00%)
+                       held joint=FAIL failed=['h2', 'jsd_first_fg', 'redup_pct']
+
+seed_L200_s5           full tok=25000 h2=1.572 sd=1.504 JSDf=0.0917 p=xinf m=x15.95 excess=+0.1083 redup=2.692%  fallback=0/34857 (0.00%)
+                       full joint=FAIL failed=['h2', 'jsd_first_fg', 'redup_pct']
+seed_L200_s5           held tok= 8586 h2=1.555 sd=1.512 JSDf=0.0889 p=xinf m=x16.12 excess=+0.1059 redup=2.9%  fallback=0/34857 (0.00%)
+                       held joint=FAIL failed=['h2', 'jsd_first_fg', 'redup_pct']
+
+circular_LNone_s20261017 full tok=25000 h2=2.030 sd=1.743 JSDf=0.1095 p=x158.33 m=x7.43 excess=+0.1095 redup=0.7%  fallback=0/34857 (0.00%)
+                       full joint=FAIL failed=['m_final_enrich']
+circular_LNone_s20261017 held tok= 8586 h2=1.935 sd=1.734 JSDf=0.0994 p=x118.36 m=x8.75 excess=+0.1035 redup=0.676%  fallback=0/34857 (0.00%)
+                       held joint=FAIL failed=['h2', 'jsd_first_fg']
+
+circular_LNone_s1      full tok=25000 h2=2.029 sd=1.747 JSDf=0.1078 p=x137.87 m=x7.43 excess=+0.1104 redup=0.748%  fallback=0/34857 (0.00%)
+                       full joint=FAIL failed=['m_final_enrich']
+circular_LNone_s1      held tok= 8586 h2=1.940 sd=1.737 JSDf=0.0985 p=x149.85 m=x8.31 excess=+0.1058 redup=0.734%  fallback=0/34857 (0.00%)
+                       held joint=FAIL failed=['h2', 'jsd_first_fg']
+
+circular_LNone_s2      full tok=25000 h2=2.023 sd=1.737 JSDf=0.1115 p=x159.06 m=x6.81 excess=+0.1190 redup=0.76%  fallback=0/34857 (0.00%)
+                       full joint=FAIL failed=['m_final_enrich']
+circular_LNone_s2      held tok= 8586 h2=1.934 sd=1.716 JSDf=0.0980 p=x109.68 m=x8.25 excess=+0.1114 redup=0.687%  fallback=0/34857 (0.00%)
+                       held joint=FAIL failed=['h2', 'jsd_first_fg']
+
+held-out joint passes: seed=- circular=-
+fewest held-out misses: circular_LNone_s2 failed=['h2', 'jsd_first_fg'] excess=+0.1114 JSDf=0.0980
+KILL CHECK: best held-out run clears both kill floors. A partial pass retires nothing.
+OUTCOME: CIRCULAR FAILS on the reported seed. Bands missed: h2, jsd_first_fg

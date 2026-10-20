@@ -1,0 +1,193 @@
+{
+ "row": {
+  "name": "voynich_IT2a",
+  "tokens": 34411,
+  "types": 7069,
+  "pages": 206,
+  "lines": 4117,
+  "errors": {},
+  "types_25k": 5522,
+  "h2": 2.1283,
+  "sd_len": 1.691,
+  "jsd_first_fg": 0.1748,
+  "p_init_enrich": 17.55,
+  "m_final_enrich": 16.51,
+  "cross_excess_eva": 0.166,
+  "redup_pct": 0.932,
+  "v1_pass": true,
+  "v1_missed": [],
+  "v1_full": {
+   "name": "voynich_IT2a",
+   "tokens": 25000,
+   "types": 5522,
+   "hapax_rate": 0.6787,
+   "mean_len": 4.96,
+   "sd_len": 1.691,
+   "h1": 3.8635,
+   "h2": 2.1283,
+   "h3": 1.8523,
+   "zipf": -1.0317,
+   "redup_pct": 0.932,
+   "jsd_first_fg": 0.1748,
+   "jsd_last_lg": 0.0838,
+   "p_init_enrich": 17.55,
+   "m_final_enrich": 16.51,
+   "cross_mi_eva": 0.1792,
+   "cross_excess_eva": 0.166,
+   "cross_mi_glyph": 0.1968,
+   "cross_excess_glyph": 0.175,
+   "recur_le_1": 0.0087,
+   "recur_le_5": 0.0417,
+   "recur_le_20": 0.1263,
+   "recur_le_100": 0.3099
+  },
+  "x_edge_mi_word": 0.17307622456168245,
+  "x_hapax_10k": 0.6883423180592992,
+  "x_moran_I": 0.14101552252470317,
+  "x_position_entropy": 1.6502472224739317,
+  "x_ltr_minus_rtl": 0.004040680897687038,
+  "info_mi_adjacent": 0.1510013689981453,
+  "info_mi_page": 0.01985454464992409,
+  "info_samecol_minus_othercol": 0.0171800169653773,
+  "info_bpe_adjacent": 1.1619405030265906,
+  "lex_beta": 0.750054931927173,
+  "lex_rate_late_early": 0.46243291592128805,
+  "lex_edit1_excess": 0.09916536992502475,
+  "slot_occupancy_pc": 0.06967009025832556,
+  "slot_table_likeness": 0.6540528799768021,
+  "slot_core_crowding": 0.8651260504201681,
+  "bake_winner": "copy0.05+markov3",
+  "bake_char3_minus_unigram": -0.5262328822157105,
+  "bake_bits": {
+   "markov2": 11.676568349051477,
+   "markov3": 11.63636297318025,
+   "slot": 12.297140917876835,
+   "unigram_gt": 12.16259585539596,
+   "copy0.3+markov3": 11.88786709112713,
+   "copy0.1+markov3": 11.658604006125929,
+   "copy0.05+markov3": 11.625787934058193
+  },
+  "family": "-",
+  "note": "data/translit/IT2a.meta.json; 34411 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 8,
+    "outs": 10,
+    "na": 0,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "p_init_enrich",
+     "m_final_enrich",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "x_position_entropy",
+     "x_ltr_minus_rtl",
+     "x_moran_I"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "p_init_enrich",
+     "m_final_enrich",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ]
+   },
+   "C": {
+    "ins": 4,
+    "outs": 12,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k",
+     "x_ltr_minus_rtl",
+     "x_moran_I",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_table_likeness"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k",
+     "x_moran_I",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_table_likeness"
+    ]
+   },
+   "G": {
+    "ins": 13,
+    "outs": 5,
+    "na": 0,
+    "out_metrics": [
+     "jsd_first_fg",
+     "m_final_enrich",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_moran_I"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "m_final_enrich",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_moran_I"
+    ]
+   },
+   "X": {
+    "ins": 4,
+    "outs": 13,
+    "na": 1,
+    "out_metrics": [
+     "h2",
+     "p_init_enrich",
+     "m_final_enrich",
+     "x_edge_mi_word",
+     "x_position_entropy",
+     "x_moran_I",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding",
+     "bake_char3_minus_unigram"
+    ],
+    "out_tight": [
+     "m_final_enrich",
+     "x_edge_mi_word",
+     "x_moran_I",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding",
+     "bake_char3_minus_unigram"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "n7_gibberish_ranges.json"
+}

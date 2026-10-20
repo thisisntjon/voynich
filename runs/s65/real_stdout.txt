@@ -1,0 +1,65 @@
+S65: drawing-gap robustness of A1/A5, space fitting, Steckley BEFORE length
+start: Sun Oct 18 01:57:39 PDT 2026 (`date`)
+stub_match: True
+  sha256 2b182cb96a82d0d4e582e849d2a17fd1689200da6aba1d7ab687bd9bb6b12dee  s65_drawing_gap_robustness.py
+  sha256 5a08d4252dabfbe5f4ef5f93e5f2808a678ebb76fe32d99891c8310679bc81aa  tools/ivtff_to_meta.py
+  sha256 8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65  tools/boxes.py
+  sha256 0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1  vparse.py
+  source ZL3b: sha256 bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc
+  source RF1b: sha256 eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2
+  source IT2a: sha256 7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5
+  check ZL3b: BASE tokens 34857 vs meta.json 34857 -> MATCH
+  check RF1b: BASE tokens 34618 vs meta.json 34618 -> MATCH
+  check IT2a: BASE tokens 34411 vs meta.json 34411 -> MATCH
+
+--- (a) ZL3b: 207 pages, P lines 4130, lines with '<->' 616, '<->' marks 746, internal gaps (both sides non-empty) 745
+  BASE  tokens  34857 lines  4130 | A1 raw 0.1759 excess +0.1740 [+0.1636, +0.1844] | A5 I +0.1572 excess +0.0887 [+0.0802, +0.0936]
+  EXCL  tokens  33447 lines  4129 | A1 raw 0.1812 excess +0.1790 [+0.1691, +0.1879] | A5 I +0.1619 excess +0.0897 [+0.0836, +0.0968]
+  SPLIT tokens  34857 lines  4875 | A1 raw 0.1664 excess +0.1638 [+0.1543, +0.1729] | A5 I +0.1576 excess +0.0855 [+0.0777, +0.0917]
+    A1 EXCL/BASE = 1.029
+    A1 SPLIT/BASE = 0.941
+    A5 EXCL/BASE = 1.011
+    A5 SPLIT/BASE = 0.964
+
+--- (a) RF1b: 207 pages, P lines 4130, lines with '<->' 616, '<->' marks 752, internal gaps (both sides non-empty) 752
+  BASE  tokens  34618 lines  4130 | A1 raw 0.1809 excess +0.1789 [+0.1695, +0.1881] | A5 I +0.1549 excess +0.0848 [+0.0769, +0.0904]
+  EXCL  tokens  33200 lines  4129 | A1 raw 0.1865 excess +0.1841 [+0.1745, +0.1937] | A5 I +0.1603 excess +0.0881 [+0.0809, +0.0941]
+  SPLIT tokens  34618 lines  4882 | A1 raw 0.1725 excess +0.1699 [+0.1596, +0.1793] | A5 I +0.1560 excess +0.0834 [+0.0759, +0.0895]
+    A1 EXCL/BASE = 1.029
+    A1 SPLIT/BASE = 0.950
+    A5 EXCL/BASE = 1.039
+    A5 SPLIT/BASE = 0.984
+
+--- (a) IT2a: 206 pages, P lines 4117, lines with '<->' 636, '<->' marks 779, internal gaps (both sides non-empty) 779
+  BASE  tokens  34411 lines  4117 | A1 raw 0.1748 excess +0.1730 [+0.1630, +0.1812] | A5 I +0.1566 excess +0.0851 [+0.0785, +0.0921]
+  EXCL  tokens  32937 lines  4115 | A1 raw 0.1806 excess +0.1784 [+0.1686, +0.1874] | A5 I +0.1606 excess +0.0895 [+0.0817, +0.0959]
+  SPLIT tokens  34411 lines  4896 | A1 raw 0.1649 excess +0.1622 [+0.1525, +0.1720] | A5 I +0.1576 excess +0.0852 [+0.0771, +0.0911]
+    A1 EXCL/BASE = 1.031
+    A1 SPLIT/BASE = 0.938
+    A5 EXCL/BASE = 1.052
+    A5 SPLIT/BASE = 1.001
+
+  part (a) call: A1/A5 robust to drawing gaps
+
+--- (b) space fitting (ZL3b + voynichese boxes) ---
+  ZL3b pages with P text 207; box folios aligned 223; pages with >=50 % usable P lines 189 (91.3 %); lines skipped: non-monotone x 48, segment/token mismatch 0
+  events: MID 15749, PREGAP 442, MARGIN 2607
+  class             n  mean L  mean S  slope dL/dS  95% CI
+  MID           15749   4.534   5.723      +0.7558  [+0.7347, +0.7752]
+  PREGAP          442   3.792  10.026      +0.1093  [+0.0728, +0.1788]
+  MARGIN         2607   4.323  12.033      +0.0308  [+0.0235, +0.0385]
+  OBSTACLE       3049   4.246  11.742      +0.0345  [+0.0274, +0.0423]
+  OBSTACLE - MID slope -0.7213 [-0.7423, -0.6978];  PREGAP - MID -0.6464 [-0.6876, -0.5765]
+  part (b) call: no space fitting
+
+--- (c) Steckley BEFORE vs MIDDLE word length, ZL3b ---
+  all hands      EVA chars: BEFORE 4.318 (n 745) vs MIDDLE 4.882 (n 20208); diff -0.564 [-0.726, -0.391]  (pages 207, with BEFORE 111)
+  all hands      glyphs   : BEFORE 3.839 (n 745) vs MIDDLE 4.347 (n 20208); diff -0.508 [-0.661, -0.346]  (pages 207, with BEFORE 111)
+  hand 1 Herbal  EVA chars: BEFORE 4.282 (n 496) vs MIDDLE 4.584 (n 3859); diff -0.302 [-0.520, -0.073]  (pages 95, with BEFORE 72)
+  hand 1 Herbal  glyphs   : BEFORE 3.770 (n 496) vs MIDDLE 3.825 (n 3859); diff -0.054 [-0.247, +0.133]  (pages 95, with BEFORE 72)
+
+=== VERDICT ===
+VERDICT s65 (a): A1/A5 robust to drawing gaps
+VERDICT s65 (b): no space fitting
+end: Sun Oct 18 02:04:11 PDT 2026 (`date`)  (elapsed 392 s)
+wrote ./results_s65.txt

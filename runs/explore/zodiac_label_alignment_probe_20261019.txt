@@ -1,0 +1,8 @@
+EXPLORATORY (D-085), run 2026-10-19 ~12:57 PDT, script zodiac_label_alignment_probe_20261019.py (first word of each nymph label; 12 zodiac pages; max over 30 rotations x 2 directions per page pair; shuffle null)
+ZL3b exact: labels 299 distinct 250 on>1 page 27; sum best-alignment matches over 66 pairs obs 33 null mean 31.6 q99 36 p 0.3067
+ZL3b edit<=1: obs 96 null mean 95.6 q99 106 p 0.5050
+RF1b exact: labels 299 distinct 255 on>1 page 24; obs 29 null mean 29.5 q99 35 p 0.6583
+RF1b edit<=1: obs 101 null mean 98.3 q99 109 p 0.2691
+IT2a exact: labels 299 distinct 254 on>1 page 26; obs 28 null mean 28.1 q99 32 p 0.6224
+IT2a edit<=1: obs 111 null mean 106.2 q99 116 p 0.1296
+Read: no positional alignment of labels across signs at any ring start or direction. Limits: the 30-label sequence spans several rings, so the rotation is approximate; no planted-power check.

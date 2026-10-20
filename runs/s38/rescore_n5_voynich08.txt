@@ -1,0 +1,6 @@
+# s38 sidecars re-scored with canonical n5_signature_discrimination.score() (voynich-08, 2026-10-18 01:12 PDT)
+# Re-measurement of existing streams with the canonical scorer; not a new hypothesis. Script copy: rescore_s38.py in this folder.
+boxes_baseline {'CHARWIN': 0.0951, 'POSLOCK': 1.6513, 'MORAN': 0.1406, 'tokens': 34154}
+phys_touching_merged {'CHARWIN': 0.1819, 'POSLOCK': 1.8061, 'MORAN': 0.1019, 'tokens': 29932}
+phys_narrow_merged {'CHARWIN': 0.1876, 'POSLOCK': 1.8106, 'MORAN': 0.0964, 'tokens': 29756}
+phys_wide_plus_lifts {'CHARWIN': 0.0782, 'POSLOCK': 1.6559, 'MORAN': -0.0657, 'tokens': 42159}

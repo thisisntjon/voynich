@@ -1,0 +1,90 @@
+--- PLAN-X01-B-FALLBACK-v5.md
++++ PLAN-X01-B-FALLBACK-v6.md
+@@ -46,15 +46,15 @@
+ - **Undefined values and the match rule (IV v1 ruling 2; Eve call 2).** If statistic k is None or NaN on the scored quire, k is undefined for that fold. If it is undefined on >10% of the 200 copies, k is also undefined for that fold. **A fold MATCHES if and only if at least 5 statistics are both defined AND inside the band.** So with 6 defined, at most 1 may miss. With 5 defined, none may miss. With fewer than 5 defined, the fold is a NON-MATCH, reported as UNDEFINED. This replaces v1's rule (">= 5 defined, <= 1 miss"), which let a fold match with only 4 inside, below 5b:157's ">= 5/6 inside".
+ - **Level.** All six are measured per held-out quire: real value, copies and band. Nothing is measured at book level, except the fit loss (section 4), which pools training quires.
+ 
+-## 3. Nuisance spread r_k (measured FIRST by `vx01_bf_rk.py`, at quire level)
++## 3. Nuisance spread r_k (measured FIRST by `vx01_bf_rk_c2.py`, at quire level)
+ - For each fold quire q and statistic k: r_k,q = max - min over ZL3b / RF1b / IT2a of statistic k (section 2) on real quire q, with tag `vx01_bf|real|<T>` and CHARWIN train = the other real quires of the same transliteration. 15 x 6 numbers. Also reported, but not used: the median over q of r_k,q.
+ - This is quire level, to match the band (IV item 5e). 5b:158's "max - min over ZL3b/RF1b/IT2a on the real whole-word text" is applied per quire. A pooled whole-book r_k is not used.
+ - Inputs: the 3 sidecars (section 8 D-rows), features.py, m3_bakeoff_reconcile.py and corpora.py (plus their imports, section 8). No model, no hypothesis, no random seed except the fixed `F.seed` tags.
+-- `vx01_bf_rk.py` is frozen, run once, and its output table's SHA256 goes into the B0 stub before any producer is planted or scored.
++- `vx01_bf_rk_c2.py` is frozen, run once, and its output table's SHA256 goes into the B0 stub before any producer is planted or scored.
+ 
+ ## 4. Fit loss, fitter, band
+ - **Loss (IV item 6; IV v1 item 9).** For fold q, Qtr = the 14 OTHER FOLD QUIRES (the 15 fold quires minus q). Quire J and any other non-fold quire are never in Qtr. For a text X, s_k(X) = mean of statistic k over the quires in Qtr where k is defined, for k = 1..5. d_k is taken over the same defined quires. If k is defined on fewer than 10 of the 14, k is undefined for X at that fold, and its L term = 25. CHARWIN (k = 6) is NOT in the loss, because inside the fit it would need an inner leave-one-quire-out on every evaluation. It is still scored in the band. d_k = max(SD over those defined quires in Qtr of statistic k on the REAL-or-planted text under test, 1e-9). The copy's g_k uses the same rule (mean over its defined quires of Qtr; undefined if fewer than 10 of 14). For one candidate parameter set θ, the producer makes 1 simulated copy of the training layout (the same as the original fitters, e.g. s57:409), with seed rule control `fit|<fold>|<eval index>`. Then g_k = s_k(copy) and **L(θ) = Σ_{k=1..5} ((g_k − s_k(X)) / d_k)²**. Undefined g_k or s_k: that term = 25 (a 5-SD miss). Note: producer TRAINING input (below) and CHARWIN train pages are still "all pages with quire != q" (J included); only the loss uses Qtr.
+-- **Fitter (named; one per producer; frozen in the B0 stub).** The search schedule (stages and grids) of each producer's OWN frozen fit, re-implemented in vx01_b0 with L in place of the original loss. Grid constants are imported by name from the module (not copied by hand):
++- **Fitter (named; one per producer; frozen in the B0 stub).** The search schedule (stages and grids) of each producer's OWN frozen fit, re-implemented in `vx01_b0_fitter_recovery_c2.py` with L in place of the original loss. Grid constants are imported by name from the module (not copied by hand):
+   - s57: stage A GRID_P x GRID_TAU x GRID_A with q = 0.25; stage B q_pre, q_suf, q_core on tenths with sum <= 1; stage C local refine (s57:141-143, 397-445).
+   - s58: s58:114, 273-320 (same pattern, q_core GRID_QC).
+   - s61: s61:120-121, 295-end of fit (stage A0 p_new, then A, ...).
+@@ -79,8 +79,8 @@
+   - s67 CA0 is not in s101's loader: its θ_plant = the median over the 15 folds of T of `runs/s67/cells.json` `params["CA0"]` (the key exists; 45 cells = 3 x 15), the same median rule as CA (accepted by IV, v1 ruling 3). The planting producer is `CAProducer(tr_voy, seg_voy, use_class=True)` (s101:707).
+   - r13 A / B: `r13.fit_params(kind, Fit(all pages of T with quire != 'A'), same)` (r13.py:177-193), a deterministic grid fit with fixed seeds 13001 / 13002.
+   - Planted books: producer trained on the real quires != 'A' of T (s101:683, 713, 734), generated on T's full layout (s101:685-686).
+-  - These values were fitted before this plan existed, by frozen code, so the plan author does not choose them. The real text enters this plan only through: (i) those fitted parameters and the producers' training quires; (ii) `vx01_bf_rk.py`; (iii) B1.
+-- **Params file.** `vx01_b0_fitter_recovery.py --build-params` (no seed, no planting) writes `vx01_bf_plant_params.json`: θ_plant for every (P, T), each value's source file and SHA256, and the fitter grids/schedules (by module constant name and value).
++  - These values were fitted before this plan existed, by frozen code, so the plan author does not choose them. The real text enters this plan only through: (i) those fitted parameters and the producers' training quires; (ii) `vx01_bf_rk_c2.py`; (iii) B1.
++- **Params file.** `vx01_b0_fitter_recovery_c2.py --build-params` (no seed, no planting) writes `vx01_bf_plant_params.json`: θ_plant for every (P, T), each value's source file and SHA256, and the fitter grids/schedules (by module constant name and value).
+ - **MEI map rule** (`--calibrate-mei`, dev seeds only).
+   - All MEI books are generated by the PLANTING producer object (same training input, seg_voy and tables; section 7 oracle rule) with parameters reset to the candidate. Only the RNG seed differs.
+   - For each (P, T), on the dev book (master 20261101), make the oracle band at θ_plant for each fold (200 copies at θ_plant, no refit), giving lo_k,q, hi_k,q and the copy SD sd_k,q.
+@@ -110,7 +110,7 @@
+   - Off-grid θ_plant values on disk now (IV v2 item 3): s58 IT2a q_core = 0.25 (runs/s58/fit_IT2a.json; GRID_QC tenths, s58:114; 0.25 = the stage-A start, s58:296); s61 RF1b and IT2a q_edit = 0.25 (runs/s61/fit_RF1b.json, fit_IT2a.json; GRID_QE tenths, s61:120). Rule 2 covers them. The θ_plant value itself is not a candidate (a candidate must change the value).
+   - If no candidate reaches a pair, the MEI control cannot be built and no EXCLUDED call is filed for P (v5.1:134).
+   - Output: `vx01_b0_mei_map.json`.
+-- **Freeze order.** The params file, MEI map and fitter (the vx01_b0 script itself) are all hashed in the B0-F stub BEFORE any gate-seed book exists. The script refuses `--gate` until the stub verifies (v5.1 rule 3).
++- **Freeze order.** The params file, MEI map and fitter (the `vx01_b0_fitter_recovery_c2.py` script itself) are all hashed in the B0-F stub BEFORE any gate-seed book exists. The script refuses `--gate` until the stub verifies (v5.1 rule 3).
+ 
+ ## 6. Seeds (Eve call 1: v5.1 3a only; no new seeds)
+ - B0 dev 20261101, 20261102, 20261103; B0 gate 20261201, 20261202, 20261203 (v5.1:77-78). Their gate hashes are already in frozen `vx01_common.py` GATE_SEED_SHA256 (v5.1:95). B1 uses the B0 gate seeds (v5.1:95). B2 seeds: unused (B2 dropped).
+@@ -144,7 +144,7 @@
+ ## 8. Files loaded at run time (IV item 8; Eve call 8)
+ How found: a static, read-only scan of import statements (ast) from the roots m3_bakeoff_reconcile, features, corpora, vx01_common, s57, s58, s61, s67, s71, s81, s91, r13 (+ spec loads r10, r7) and score.py, plus the data files named in s101:106-126 and :285-310. Nothing was run. Spec-load edges: r13.py:66-68 -> r10; r10.py:61-62 -> r7; g1_edge_joint.py:46-49 -> scoreboard/score.py. Function-level imports are included (e.g. features.py:208 -> evidence -> findings_graph; these are only reached by build_folio_features, which this plan does not call).
+ **Rule (IV v1 item 3; a hard stop).** These are today's bytes, a check list, not a freeze.
+-- (a) At freeze, a run-time trace (open AND process-creation events, rule d) runs EVERY mode of each script (`vx01_bf_rk.py`; `vx01_b0_fitter_recovery.py --build-params`, `--calibrate-mei`, `--oracle`, `--dev`; `vx01_b1_exclusions_rerun.py --dev`) for EVERY producer and all 3 transliterations, on dev seeds only. Method: `sys.addaudithook` on "open" events plus every `sys.modules` `__file__` under the root. A `__pycache__/*.pyc` read is mapped to its `.py`. Entries whose `__file__` is relative (torch registers `torch.ops` as `_ops.py` and `torch.classes` as `_classes.py`) are filtered out, as are standard-library and site-packages paths. Lazy loads are caught because the trace calls every code path: openpyxl in `S64.load_greshko` (s64:151-153), the IVTFF reads of `S69.voynich_pages` (s69:283-290), and r13's spec loads through `vx01_bf_pathmap.py`.
++- (a) At freeze, a run-time trace (open AND process-creation events, rule d) runs EVERY mode of each script (`vx01_bf_rk_c2.py`; `vx01_b0_fitter_recovery_c2.py --build-params`, `--calibrate-mei`, `--oracle`, `--dev`; `vx01_b1_exclusions_rerun.py --dev`) for EVERY producer and all 3 transliterations, on dev seeds only. Method: `sys.addaudithook` on "open" events plus every `sys.modules` `__file__` under the root. A `__pycache__/*.pyc` read is mapped to its `.py`. Entries whose `__file__` is relative (torch registers `torch.ops` as `_ops.py` and `torch.classes` as `_classes.py`) are filtered out, as are standard-library and site-packages paths. Lazy loads are caught because the trace calls every code path: openpyxl in `S64.load_greshko` (s64:151-153), the IVTFF reads of `S69.voynich_pages` (s69:283-290), and r13's spec loads through `vx01_bf_pathmap.py`.
+ - (b) If any file is loaded that is NOT in the list below, or any listed hash differs from disk, then **NO freeze**. The plan list is updated in a new plan version, and IV rechecks it before any freeze.
+ - (c) `--gate` (B0 and B1) installs the same audit hook. If any file under the project root is opened for reading that is not in the stub, the run is VOID. The hook allows writes only to the script's declared outputs (its run folder, results file and its own dev/gate logs). On a void, the hook writes a final gate-log line `GATE-VOID <path>`. It counts as the one gate run, so a rerun needs a new script version and IV OK (the same rule as compute condition iii, section 9).
+ - (d) **Process creation (IV v3 must-fix 1).** The same hook, in `--gate` (B0 and B1) and in the freeze trace, also watches these CPython audit events. Names are exact, from the Python "Audit events table" (docs.python.org/3.11/library/audit_events.html; the same names on the 3.13 page, checked 2026-10-19):
+@@ -171,6 +171,7 @@
+     - `Lib\site-packages\sitecustomize.py` SHA256 14bae2b6c8862fa98f4fa0396014c545c8daefdb871a2911203cc56be630e113. It runs at every interpreter start.
+     - `importlib.metadata.version` of every site-packages distribution imported on the run path. The freeze trace lists them. Today: numpy 2.4.6, scipy 1.17.0, torch 2.11.0.dev20260115+cu128, openpyxl 3.1.5, scikit-learn 1.8.0, joblib 1.5.3, threadpoolctl 3.6.0, pandas 2.3.3, pyarrow 22.0.0, Pillow 12.1.0, lxml 6.0.2, psutil 7.2.1, defusedxml 0.7.1, python-dateutil 2.9.0.post0, pytz 2025.2, six 1.17.0, tqdm 4.67.1, typing_extensions 4.15.0, colorama 0.4.6, charset-normalizer 3.4.4, pywin32 311.
+     - Versions are read by DISTRIBUTION name. The module `torchgen` belongs to the distribution `torch` (`packages_distributions()["torchgen"] = ["torch"]`), so it is pinned by torch's version. The module `pywin32_bootstrap` maps to no distribution, so it is pinned through pywin32 311, and the freeze trace hashes its file as well.
++    - setuptools 65.5.0 (added in v6): the module `_distutils_hack` is imported at every interpreter start by `distutils-precedence.pth` and belongs to the distribution `setuptools` (`packages_distributions()["_distutils_hack"] = ["setuptools"]`), so it is pinned by setuptools' version.
+     - If the freeze trace finds a distribution that is not in this list, that is "a file not in the list" under rule (b): NO freeze until a new plan version lists it.
+   - Limit (stated, not fixed): a process started through raw ctypes/Win32 calls raises no Python audit event. No load-listed module does this (static scan, rule e).
+ - (e) **The scipy `cmd /c ver` spawn (Eve call).** Importing s57's chain imports scipy, which runs `numpy.testing` -> `platform.machine()` -> `platform._syscmd_ver` -> `cmd.exe /c ver` once (IV-REVIEW v3, spawn_who.txt). Rule: **the script calls `platform.uname()` before it installs the hook, with NO allow-list.** That call caches the result, so the later `platform.machine()` call spawns nothing. If any spawn happens after the hook is in, including this one, the run is VOID.
+@@ -343,8 +344,8 @@
+ ## 9. Scripts (none written or frozen; order; v5.1:160 and :174 names)
+ | # | Script | Modes | Stub holds |
+ |---|---|---|---|
+-| 6b | `vx01_bf_rk.py` | single run (real text only) | script + all loaded files (trace) + sidecars; output table hash goes to the B0 stub |
+-| 7 | `vx01_b0_fitter_recovery.py` | `--build-params` (no seed) -> `--calibrate-mei` (dev) -> `--oracle` (dev) -> `--dev` (dev) -> `--gate` | script SHA256 TBD; all loaded files (trace); vx01_bf_rk output hash; `vx01_bf_plant_params.json` hash; `vx01_b0_mei_map.json` hash; oracle-result hash; dev-log chain head; gate_seeds_sha256; this file's and v5.1's hashes; the decision rules of sections 2, 4, 5 and 7 copied in |
++| 6b | `vx01_bf_rk_c2.py` | single run (real text only) | script + all loaded files (trace) + sidecars; output table hash goes to the B0 stub |
++| 7 | `vx01_b0_fitter_recovery_c2.py` | `--build-params` (no seed) -> `--calibrate-mei` (dev) -> `--oracle` (dev) -> `--dev` (dev) -> `--gate` | script SHA256 TBD; all loaded files (trace); vx01_bf_rk output hash; `vx01_bf_plant_params.json` hash; `vx01_b0_mei_map.json` hash; oracle-result hash; dev-log chain head; gate_seeds_sha256; this file's and v5.1's hashes; the decision rules of sections 2, 4, 5 and 7 copied in |
+ | 8 | `vx01_b1_exclusions_rerun.py` | `--dev` (dev, on planted books only) -> `--gate` (real text) | script SHA256 TBD; B0 stub hash; B0 gate result hash; all loaded files; B1 table copied in |
+ No `vx01_b2_*` in this version. No `vx01_bf_common.py`. The script table numbers are v5.1:174-177.
+ **Compute rule.** IV v1 ruling 6, four conditions, copied word for word:
+@@ -352,7 +353,7 @@
+ **Single process (Eve call, 2026-10-19; IV v2 item 2, option (a)).** r13 and EVERY step of `--gate` (B0 and B1) run in ONE process with NO spawned workers. So the audit hook (section 8 rule c) and the pathmap stay in force for every file read. All dev modes run single-process too, so the dev timing is the gate timing. This replaces "<=2 BelowNormal workers" in IV condition (iv) with "1 BelowNormal process", which is stricter. The rest of (iv) (the free-RAM check, never touch other jobs) holds as written.
+ Eve's compute rule: estimate hours from SINGLE-PROCESS dev timing, cap at 2x that estimate, run at BelowNormal, stop if over the cap, never kill other jobs. Where Eve's rule and IV's wording differ, IV's wording rules.
+ **How the timing is measured (none exists yet).**
+-- After the oracle fixture passes and before the B0-F stub is written: `vx01_b0_fitter_recovery.py --dev`, single process, BelowNormal, DEV seed 20261103 only.
++- After the oracle fixture passes and before the B0-F stub is written: `vx01_b0_fitter_recovery_c2.py --dev`, single process, BelowNormal, DEV seed 20261103 only.
+ - It runs one full cell (ZL3b; all 4 controls; 15 folds; fit + 200 copies) for each producer still in the run. Wall seconds per producer are logged in its dev log.
+ - Estimate E = Σ over producers of (dev seconds for that cell x 9). Cap = 2 x E. Both numbers go into the B0-F stub.
+ - `--gate` checks elapsed time against the cap only between producers (condition ii).
+@@ -445,3 +446,11 @@
+ |---|---|---|
+ | IV v4 must-fix 1 | whole environment pinned in the stub (exe SHA256, full `python -VV`, all run-path distribution versions incl. torch 2.11.0.dev20260115+cu128, sitecustomize.py SHA256); `--gate` refuses on any mismatch. Nothing else changed: the title and header lines above are left as in v4 on purpose, so the v4->v5 diff touches only this; this file is v5 by its name and this row. | 8 rule (d), "Environment pin" |
+ 
++
++## 17. Changes from B-FALLBACK-v5
++Base: B-FALLBACK sha256 4ed0314a7c8aef4d925dee4fbab3ef8eca3a005352062563e3708a0273e63f3e. Authority: IV-REVIEW-X01-B0F-CODE-1 (sha256 d5a8d86ad73b5b4ca69061c6345ac505a440899f67f44fd363e5f365da7dba13) and Eve's ruling of 2026-10-19.
++| Item | Fix | v6 section |
++|---|---|---|
++| IV code-1 must-fix 3 | setuptools 65.5.0 added to the environment pin (`_distutils_hack` maps to setuptools) | 8 rule (d), "Environment pin" |
++| Eve ruling | script names changed mechanically to the code-2 files `vx01_bf_rk_c2.py` and `vx01_b0_fitter_recovery_c2.py` in the 10 places that named the scripts (the bare "vx01_b0" in sections 4 and 5 included); the code-1 files stay as the record of what IV reviewed | 3, 4, 5, 8 (a), 9 |
++Nothing else changed. The title and header lines are left as they were on purpose; this file is v6 by its name and this section.

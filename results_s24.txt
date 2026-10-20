@@ -1,0 +1,83 @@
+S24: bounded musical / hybrid-notation check (PLAN.md Phase 3 s24 approval; phase-3.md s5)
+run started Sat Oct 17 21:11:40 PDT 2026 (`date`)
+s24_music_seriation.py sha256=c7cb84dd2c96084c26dfa42ad48e7d4b464d84dbeee86b47d65b425d2edac64e  prereg stub_match=True
+cap: one CPU process, no GPU, no paid calls, no new data; expected < 300 s; HARD STOP 900 s (watchdog + in-loop checks); every matrix built at run time from existing sidecars
+loader: scoreboard/run_v2.py load_meta by path (sha256 7dfdc9f75de5980a...)
+search: Fiedler init + 200 best-improvement swap sweeps; nulls 200+200 per transliteration, seed 20261017; MI nulls 20 reps; h2 on first 25000 tokens
+
+=== P1 seriation: within-line last-char -> next-first-char table, MAD bandwidth, same search everywhere ===
+table                      n  pairs      MAD MAD/(n-1)  band<=2 sweeps  ordering
+ZL3b                      25  30727   2.6644    0.1110   0.5732     21  vzujxigemarsncolyqdktpfhb
+RF1b                      24  30488   2.7504    0.1196   0.5777     16  kdqylocnsratmepfhgbxijuz
+IT2a                      21  30294   2.7342    0.1367   0.5566     15  zxighfepmtarsncoyqldk
+mhg_nibelungenlied        26  69400   4.5381    0.1815   0.3218     21  qypabowzitsndehrvmglkfcujx  [MHG verse, native lines]
+italian_dante             22  87372   4.4156    0.2103   0.3243     15  jzbhquvtrndcelaiospmfg  [Italian verse, native lines]
+cremma_all                79  50827   6.5286    0.0837   0.2572     90  ◌ᵇ?+·87'¬¶|5ø4zꝭ2/ꝗ⁋ꝵꝓbꝯgꝑꝰqpc⁊uaesitnmdorfꝙhlvłxħẜᵈy&≈‸  [CREMMA Latin, all, native lines]
+gib_realline_pooled       26   8406   6.1448    0.2458   0.2611     19  jqzfpcrkhlonatesimudgbywvx  [human GIBBERISH, writers' own lines (listed with the real-line set as named)]
+c2_best                   21  30727   3.0641    0.1532   0.4144     14  xigemtaqlcyonsrdkphfu  [c2 section generator]
+timm_schinner             19  30727   3.1745    0.1764   0.4180     15  tqsnarcloydmkpegfxi  [Timm-Schinner self-citation]
+schwartz_reuse            24  30727   3.1596    0.1374   0.4267     17  vubjxihgfemtadrcyolqnskp  [Schwartz reuse generator]
+flow_gen_layer            22  30727   2.8152    0.1341   0.5486     12  buxifhegptkarsqydloncm  [n2 flow generator layer]
+
+P1 nulls (200 within-line shuffles + 200 row/column permutations per transliteration, same search):
+translit    MAD_obs  shuf_p1 shuf_min shuf_med p_shuf    rc_p1   rc_min   rc_med   p_rc  below-1st-pct(shuf,rc)
+ZL3b         2.6644   3.0871   3.0797   3.1175  0.005   2.4694   2.2375   2.9057  0.174  (True, False)
+RF1b         2.7504   3.1099   3.1034   3.1777  0.005   2.3188   2.2522   2.8865  0.279  (True, False)
+IT2a         2.7342   3.0765   3.0725   3.1324  0.005   2.2938   2.2656   2.7551  0.473  (True, False)
+
+P1 control minimum MAD = 2.8152 (flow_gen_layer); Voynich MAD spread across translits = 0.0860
+P1 ZL3b: MAD 2.6644 vs shuffle 1st pct 3.0871 (below), row/col 1st pct 2.4694 (NOT below), control min 2.8152 (below) -> FAIL
+P1 RF1b: MAD 2.7504 vs shuffle 1st pct 3.1099 (below), row/col 1st pct 2.3188 (NOT below), control min 2.8152 (below) -> FAIL
+P1 IT2a: MAD 2.7342 vs shuffle 1st pct 3.0765 (below), row/col 1st pct 2.2938 (NOT below), control min 2.8152 (below) -> FAIL
+P1 overall: FAIL (all three transliterations required)
+
+=== P2 line-end reset: MI excess (bits, 20 permutation nulls) across line ends vs within lines ===
+corpus                   n_within    MI_w  null_w   exc_w n_across    MI_a  null_a   exc_a   ratio
+ZL3b                        30727  0.1950  0.0068  0.1882     3923  0.0469  0.0329  0.0140  0.0743  Voynich
+RF1b                        30488  0.1865  0.0069  0.1796     3923  0.0494  0.0336  0.0158  0.0881  Voynich
+IT2a                        30294  0.1792  0.0062  0.1730     3911  0.0405  0.0294  0.0111  0.0642  Voynich
+mhg_nibelungenlied          69400  0.0797  0.0049  0.0747     9261  0.0300  0.0252  0.0048  0.0643  MHG verse, native lines
+italian_dante               87372  0.1628  0.0029  0.1599    14134  0.0154  0.0056  0.0098  0.0615  Italian verse, native lines
+cremma_all                  50827  0.0857  0.0365  0.0492     6331  0.2145  0.1528  0.0616  1.2527  CREMMA Latin, all, native lines
+gib_realline_pooled          8406  0.0880  0.0573  0.0307     1579  0.3337  0.3091  0.0246  0.8001  human GIBBERISH, writers' own lines (listed with the real-line set as named)
+c2_best                     30727  0.0060  0.0053  0.0007     3923  0.0276  0.0278 -0.0002 -0.2520  generator (reference only): c2 section generator
+timm_schinner               30727  0.0201  0.0036  0.0165     3923  0.0328  0.0213  0.0115  0.6950  generator (reference only): Timm-Schinner self-citation
+schwartz_reuse              30727  0.0095  0.0076  0.0019     3923  0.0399  0.0358  0.0041  2.1228  generator (reference only): Schwartz reuse generator
+flow_gen_layer              30727  0.2407  0.0050  0.2357     3923  0.0299  0.0289  0.0010  0.0043  generator (reference only): n2 flow generator layer
+P2 minimum real-line ratio = 0.0615 (italian_dante); all: mhg_nibelungenlied 0.0643, italian_dante 0.0615, cremma_all 1.2527, gib_realline_pooled 0.8001
+P2 ZL3b: ratio 0.0743 vs real-line min 0.0615 -> FAIL
+P2 RF1b: ratio 0.0881 vs real-line min 0.0615 -> FAIL
+P2 IT2a: ratio 0.0642 vs real-line min 0.0615 -> FAIL
+P2 overall: FAIL
+
+=== P3 residual inventory after stripping the putative pitch slot (F = first char, L = last char) ===
+language h2 rows: s17_mhg_nibelungenlied=3.0228, s17_italian_dante=3.1042, s17_oldfrench_roland=3.1375, s17_occitan_croisade=3.1630, s18_cremma_all=3.5825
+language h2 range = [3.0228, 3.5825]
+translit slot   tokens dropped  types need90  top100%      h2  inv<=100  h2-in-range  variant
+ZL3b     none    34857       0   7025   3540    44.85  2.1262  -         -            unstripped reference
+ZL3b     F       33748    1109   4972   1672    56.56  2.1338  False     False        first-char slot stripped
+ZL3b     L       33748    1109   5326   1952    53.46  2.2482  False     False        last-char slot stripped
+ZL3b     SEG     32289    2568    514    152    84.84  2.0888  False     False        diagnostic (not scored): SlotSegmenter core stripped, prefix+suffix kept
+P3 ZL3b: F FAIL (need 1672 types for 90 %, h2 2.1338); L FAIL (need 1952 types, h2 2.2482); SEG diagnostic misses -> FAIL (either F or L)
+RF1b     none    34618       0   7348   3887    44.00  2.1351  -         -            unstripped reference
+RF1b     F       33798     820   5221   1842    55.87  2.1469  False     False        first-char slot stripped
+RF1b     L       33798     820   5612   2233    52.76  2.2606  False     False        last-char slot stripped
+RF1b     SEG     32335    2283    510    154    84.64  2.0860  False     False        diagnostic (not scored): SlotSegmenter core stripped, prefix+suffix kept
+P3 RF1b: F FAIL (need 1842 types for 90 %, h2 2.1469); L FAIL (need 2233 types, h2 2.2606); SEG diagnostic misses -> FAIL (either F or L)
+IT2a     none    34411       0   7069   3628    43.69  2.1283  -         -            unstripped reference
+IT2a     F       33849     562   4964   1661    56.19  2.1342  False     False        first-char slot stripped
+IT2a     L       33849     562   5335   1951    52.88  2.2552  False     False        last-char slot stripped
+IT2a     SEG     32282    2129    494    142    85.77  2.0663  False     False        diagnostic (not scored): SlotSegmenter core stripped, prefix+suffix kept
+P3 IT2a: F FAIL (need 1661 types for 90 %, h2 2.1342); L FAIL (need 1951 types, h2 2.2552); SEG diagnostic misses -> FAIL (either F or L)
+P3 overall: FAIL
+
+=== VERDICT (pre-registered rule: SUPPORTED only if P1, P2 and P3 all PASS on all three transliterations) ===
+ZL3b: P1 FAIL  P2 FAIL  P3 FAIL
+RF1b: P1 FAIL  P2 FAIL  P3 FAIL
+IT2a: P1 FAIL  P2 FAIL  P3 FAIL
+VERDICT: musical/hybrid notation NOT SUPPORTED
+failed predictions: P1, P2, P3
+
+elapsed 7.3 s (expected < 300 s; hard cap 900 s; within cap: True)
+done-when: results_s24.txt exists with the P1/P2/P3 blocks on all three transliterations, the control values and the verdict line -> met
+run ended Sat Oct 17 21:11:48 PDT 2026 (`date`)

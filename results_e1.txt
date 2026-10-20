@@ -1,0 +1,16 @@
+E1 resegmentation  seed=20261017  paragraph P*  '?' dropped
+tok_frac = within-line adjacent-token excess / token entropy
+boundaries=30727  even-pages PMI fit, odd-pages PMI1 score
+
+BASE       n= 34830 len= 4.99 sd=1.79 h2=2.109 crossMI=0.195 tok_excess= 0.028b H=10.21 tok_frac= 0.0027 joined=    0 ( 0.0%)
+STRICT     n= 32368 len= 5.37 sd=1.85 h2=2.123 crossMI=0.163 tok_excess=-0.049b H=10.59 tok_frac=-0.0047 joined=    0 ( 0.0%)
+J1 y-q     n= 31365 len= 5.54 sd=3.14 h2=2.144 crossMI=0.187 tok_excess= 0.012b H=10.72 tok_frac= 0.0011 joined= 3465 (11.3%)
+J2 top8    n= 24690 len= 7.04 sd=4.81 h2=2.209 crossMI=0.359 tok_excess=-0.025b H=11.78 tok_frac=-0.0022 joined=10140 (33.0%)
+ODD base   n= 17376 len= 5.00 sd=1.78 h2=2.108 crossMI=0.200 tok_excess=-0.005b H=10.03 tok_frac=-0.0005 joined=    0 ( 0.0%)
+PMI1 odd   n= 16517 len= 5.26 sd=1.85 h2=2.088 crossMI=0.152 tok_excess=-0.042b H=10.18 tok_frac=-0.0042 joined=  859 ( 5.6%)
+NULL       reps=20 join_count=10140  h2=2.278 crossMI=0.196 tok_frac=-0.0051
+italian_da n= 97002 len= 3.97 sd=2.26 h2=3.109 crossMI=0.143 tok_excess= 0.536b H= 9.89 tok_frac= 0.0542 joined=    0 ( 0.0%)
+latin_caes n= 19512 len= 6.01 sd=2.90 h2=3.294 crossMI=0.050 tok_excess= 0.239b H=10.65 tok_frac= 0.0224 joined=    0 ( 0.0%)
+
+best tok_frac among J1/J2/PMI1: J1 = 0.0011
+DECISION: INCONCLUSIVE

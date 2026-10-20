@@ -1,0 +1,18 @@
+# r7 pre-registration, voynich-91 (Roach). Frozen at (clock): 2026-10-18 13:01:13 PDT
+# Task relayed from Skynet 2026-10-18 (r7). Reply-to thread: <team-comms>
+# Fixture 2026-10-18 12:59:14 PDT, revision 0: planted HOLDS 15/15 (S1, S2); word-Markov NOT HOLDS (S0 0, S1 0, S2 1 of 15). FIXTURE CHECK OK.
+# Core definitions: S0 whole word; S1 r3 lists (Voynich-type) or r3 frequency affixes (references); S2 MDL greedy affix inducer (25+25 candidates, <=15 per side).
+# (a) PASS: Miller-Madow MI excess at K=100 (99 most frequent training cores + pool) > 0 and permutation p_up < 0.05, 200 within-line shuffles.
+# (b) PASS: R_within(1) (vs exact within-line expectation) > 1 and p_up < 0.05, 200 within-line shuffles.
+# (c) PASS: D = Rw' - Rx' (both vs exact within-page expectation) > 0 and p_up < 0.05, 200 within-page shuffles.
+# (d) PASS: 0.8 <= L_q <= 1.25 (quire locality ratio); shuffle band [2.5,97.5] over 200 whole-book token shuffles reported.
+# FOLD passes iff (a)-(d) all pass. CALL: signature HOLDS for a definition iff >= 8 of 15 LOQO folds pass. Reference shows (b)&(c) iff both pass on >= 8 of 15.
+# Controls: planted must HOLD under S1; Latin and word-Markov must NOT HOLD under S0, S1, S2.
+# Verify: grep -v "^#" r7.prereg.sha256 | tr -d '\r' | sha256sum -c -
+0d5e65db45b3c410bfbcab5b56d45adaab09b09c9af007b3546538a5b9f69b96  r7.py
+bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc  ../dl_ZL/ZL3b-n.txt
+7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5  ../dl_IT/IT2a-n.txt
+8bae4d88747b318b58ea193f981766fed337ddf613df452c1a06d72c9af75ffd  ../r3/dl_PG18837/pg18837.txt
+87d1a2819214526a7410c8b864f39a217e9bf93816a26736e01e8df25447c7eb  dl_PG8102/pg8102.txt
+ca6752868c55970f0d38d3710030b70e170195e65d6a13ec6f097b2a71e63528  dl_PG29622/pg29622.txt
+4cdd962f1910a49091b945eff4233798b8c13f74b011cee75a8cccc7467d3612  ../r3/dl_PG45334/pg45334.txt

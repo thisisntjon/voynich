@@ -1,0 +1,11 @@
+# s103_herbal_tradition_matching prereg stub (D-066 (i)); frozen Sun Oct 18 13:18:08 PDT 2026 (clock read with date), before the real run.
+# D-066 (i) thresholds (verbatim intent, unchanged): (1) recovery gate first: same species across the comparison herbals retrieved above chance (p < 0.05, label permutation); gate fails -> Voynich comparison not run (HOLD).
+# (2) Voynich-to-tradition top-1/top-5 retrieval better than a page-permutation null with p < 0.05 in BOTH representations (A part-level shape, B whole-plant) = match signal; MDE stated before scoring.
+# (3) mode by which representation carries the matches. Stopping rule: no match at adequate power -> copying drift excluded at this resolution, no feature variation afterwards; matches -> candidate cribs for a separately frozen test, no reading claim.
+# Operationalizations (script docstring): adequate power = gate_r and MDE(hit1) <= 0.20; pre-freeze revisions used: 2 (rev1 power+mode rule after fixture; rev2 segmentation after visual check).
+# Verify: grep -v "^#" s103_herbal_tradition_matching.prereg.sha256 | tr -d '\r' | sha256sum -c -
+8c701b555fa9d6e6774c46d2bb8f0898a2f23cb3a070c240684ad0b521feeb88 *s103_herbal_tradition_matching.py
+4c39c1c30c69ebbf05094884069c65c8f61b6b4fe947f021e44b5f09fd8d5131 *tools/s103_fetch_herbals.py
+b43747086011fdfb6eac8bc61e0eb7e4e36435c8a75f87389e9dcb0f761450a1 *runs/s103/image_manifest.txt
+5b5c1aa2c9c4bedcab8faf7855be33362563edb8a768c0f66715b5b682ebc022 *data/herbals_period/ljs419/captions_s103.json
+89318008dc541863b6a8525f02bd1f414d51c9090021357cc6e8f53ff2a99dc9 *data/herbals_period/sloane4016/captions_s103.json

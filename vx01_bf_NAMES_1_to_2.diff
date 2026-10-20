@@ -1,0 +1,8 @@
+--- vx01_bf_NAMES_1.md	2026-10-19 01:58:01.116645432 -0700
++++ vx01_bf_NAMES_2.md	2026-10-19 02:14:05.936645432 -0700
+@@ -46,4 +46,4 @@
+ | `vx01_bf_CODE_DECISIONS_1.md` | fa94d24858fddcd7f723a9960a5d1a978dd65f412a0c21bc7832808b5b5a42a5 |
+ | `vx01_bf_CODE_DECISIONS_2.md` | b65b20cb9e9a1970b355ff61a1988fe7e154ddc8960f473c1123456f2584b3db |
+ 
+-NAMES_1 holds the c3 hashes, so the c3 code can't hold NAMES_1's hash (that would be circular); the stubs and gate logs cite v6 + NAMES_1 by sha256 in the run record.
++NAMES_1 holds the c3 hashes, so the c3 code can't hold NAMES_1's hash (that would be circular). The c3 stubs and gate logs cite v6 only; the run record vx01_bf_RUN_RECORD_1.md, written at freeze, cites v6, this file, and both c3 stubs by sha256.

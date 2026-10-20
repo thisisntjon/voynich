@@ -1,0 +1,16 @@
+S102 FIXTURE (synthetic only; no real data read)
+date: Sun Oct 18 12:53:22 PDT 2026 (`date`)  device: cuda; below_normal=True
+s102 sha256=1d07958b228bdb4870a58f9bea8f3d1996c8d1cf8d35a22290fc6c6e788bbc26  stub_match=NO STUB
+fixture plaintext tokens 22500 types 4693
+  E1: recovery 1.0000; null rate 0.0504; homophones [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; glyphs 27; code groups 0; code-token share 0.000; collisions 0; line-held True -> ok
+  E2: recovery 1.0000; null rate 0.0502; homophones [4, 4, 4, 3, 3, 3, 2, 2, 2, 2, 1, 1]; glyphs 46; code groups 0; code-token share 0.000; collisions 0; line-held True -> ok
+  E3: recovery 1.0000; null rate 0.0512; homophones [4, 4, 4, 3, 3, 3, 2, 2, 2, 2, 1, 1]; glyphs 46; code groups 200; code-token share 0.485; collisions 0; line-held True -> ok
+  E4: recovery 1.0000; null rate 0.0502; homophones [4, 4, 4, 3, 3, 3, 2, 2, 2, 2, 1, 1]; glyphs 46; code groups 600; code-token share 0.485; collisions 0; line-held True -> ok
+FXa encodings/decoder: PASS
+FXb rhythm: IID excess +0.0156 (p 0.015); ascending excess +0.7039 (p 0.001) -> PASS
+FXc h2 alternation -0.0000 -> PASS
+  [fixture smoke] free RAM 6.6 GB (need >= 4.0); 2 Measured jobs on 2 workers
+FXd pool returned [('SMOKE', 0), ('SMOKE', 1)] -> PASS
+  [FXe descriptive] FX_E1/identity                     tok  22500 ty  8052 core% 100.0 | o100 +0.014(p0.094) o200 +0.022 | Rw1 0.991(p0.583) Rc1 0.923 | loc 0.998[0.986,1.011] | C1 YnYY - [order n=4000<4731]
+  [FXe descriptive] FX_E4/identity                     tok  22500 ty  9349 core% 100.0 | o100 -0.012(p0.852) o200 -0.015 | Rw1 1.809(p0.001) Rc1 0.667 | loc 1.003[0.983,1.024] | C1 nYYY - [order n=4000<4731]
+FIXTURE PASS   runtime 11s; finished Sun Oct 18 12:53:33 PDT 2026 (`date`)

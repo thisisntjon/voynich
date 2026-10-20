@@ -1,0 +1,17 @@
+# synthetic IVTFF fixture v4, hand-written invented strings (not Voynich text)
+<f900r>   <! $Q=Z $B=1 $I=H $L=A $H=1>
+<f900r.2,+P0>      qdd.q?e.qff<$>
+<f900r.4,!P0>      qzz.qzz
+<f900r.5,=L0>      qlab
+<f900r.6,+P0>      q?x
+<f900r.7,+P0>      qmm.@123;q.qnn<$>
+<f900r.9,+P0>      qoo.qpp.qrr
+<f900v>   <! $Q=Z $B=1 $I=H $H=2>
+<f900v.1,@P0>      qoo.qpp
+<f900v.2,+P0>      qqq
+<f900v.3,@P0>      qst.quu
+<f901r>   <! $Q=Z $B=2 $I=H $L=B $H=1>
+<f901r.1,@L0>      qlabel.only
+<f901r.2,+P0>      q?q
+<f901r1>  <! $Q=Z $B=2 $I=H $L=B $H=1>
+<f902r>   <! $Q=Z $B=2 $I=A $L=B $H=1>

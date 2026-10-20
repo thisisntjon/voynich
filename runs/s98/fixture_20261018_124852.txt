@@ -1,0 +1,133 @@
+s98 -- lag-2 prefix dependence given the intervening prefix (H-14 vs H-05) [FIXTURE]
+date: 2026-10-18 12:48:52 (datetime.now)
+stub_match: False (no stub)
+sha256 s98_lag2_prefix_dependence.py: 2deac4c11729071829cb20e850fe1851358b021331a22fa4d6dd1844af11bf01
+sha256 s98_lag2_prefix_dependence.prereg.sha256: missing
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  local import s64_naibbe_taxonomy.py sha256=6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3
+  local import s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  local import s69_prefix_stream_memory.py sha256=11e722d4a0391d34228637da8b9c1872a6dc4ddd5dc1f2ff4e94f8c6a903c458
+  local import s71_weakened_grille_and_sticky_naibbe_loqo.py sha256=9b4f024792c778ae300fd14d7d1e85f03243d50964b1f7f61ba09f1553c11a18
+  local import s81_sticky_table_loqo.py sha256=418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063
+  local import s98_lag2_prefix_dependence.py sha256=2deac4c11729071829cb20e850fe1851358b021331a22fa4d6dd1844af11bf01
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+python 3.11.9; numpy 2.4.6; numba 0.64.0; device cpu; workers 2 (BelowNormal); free RAM 7.5 GB (need >= 4.0)
+threshold BETA: written 4.0 coded 4 equal True
+threshold ALPHA: written 0.05 coded 0.05 equal True
+threshold N_NEED: written 8.0 coded 8 equal True
+threshold N_FOLDS: written 15.0 coded 15 equal True
+threshold K_MAIN: written 8.0 coded 8 equal True
+threshold M_NULL: written 200.0 coded 200 equal True
+threshold STEPS_PER_TOKEN: written 50.0 coded 50 equal True
+SEED 20261098; M_NULL 200; steps per sample 50 x tokens; K_MAIN 8; K_DESC (4, 12)
+
+=== FIXTURE PART A (symbol level, 20 symbols, primary null, K_MAIN) ===
+  A1 first-order: -1.32/0.617 -4.07/0.771 +0.03/0.547 +2.09/0.274 -1.17/0.667 -0.00/0.498 -2.48/0.697 +0.15/0.502 +0.63/0.473 +5.52/0.104 -2.10/0.701 +7.53/0.010* +1.90/0.328 -4.63/0.871 -0.31/0.507
+  A2 line-state seed 12: +9.32/0.060 +5.59/0.159 +26.16/0.005* +17.87/0.015* +11.30/0.095 +6.81/0.184 +16.15/0.015* +33.97/0.005* +15.21/0.010* +7.26/0.095 -0.54/0.517 +5.95/0.219 +11.50/0.065 +15.86/0.025* +4.86/0.284
+  A2 line-state seed 13: +4.94/0.149 +12.18/0.015* +10.39/0.060 +16.79/0.005* +24.67/0.005* +10.86/0.065 +7.74/0.109 +18.99/0.010* +13.47/0.035* +23.25/0.005* +4.13/0.224 +25.22/0.005* +20.55/0.005* +24.39/0.005* +6.49/0.184
+  A2 line-state seed 14: +39.47/0.005* +39.93/0.005* +32.92/0.005* +26.26/0.005* +24.60/0.010* +47.97/0.005* +38.65/0.005* +38.52/0.005* +30.22/0.005* +37.21/0.005* +15.78/0.090 +45.24/0.005* +56.79/0.005* +25.44/0.005* +14.23/0.080
+  A2 line-state seed 15: +18.93/0.005* +14.71/0.020* +7.44/0.164 +29.26/0.005* +10.39/0.124 +13.00/0.025* +12.30/0.055 -7.46/0.836 +22.47/0.005* +18.13/0.010* +20.30/0.005* +5.91/0.229 +17.34/0.010* -2.92/0.687 +10.82/0.050*
+  A2 line-state seed 16: +26.75/0.005* +10.09/0.080 +6.27/0.169 -1.82/0.592 -3.34/0.721 +15.20/0.010* +0.37/0.493 +20.56/0.005* +9.52/0.134 +20.19/0.010* +22.04/0.005* +19.26/0.005* +18.98/0.020* +7.48/0.139 +13.20/0.020*
+  A2 positive folds per planted manuscript: [6, 9, 13, 9, 8] (MMCMI: [3, 4, 8, 5, 5])
+  A1 positive 1/15 (need <= 3) -> True
+  A2 median positive 9/15 over 5 planted manuscripts (need >= 8) -> True
+  A3 calibration: 300 first-order fold tests: mean excess -0.127 mbit (sd 5.108), t -0.43; positive rate 0.063; P(p<=0.05) 0.063, P(p<=0.10) 0.117, P(p<=0.50) 0.507
+  A3 (MMCMI beside): mean excess +0.497 mbit, t +0.64, positive rate 0.053; A1 MMCMI positive 0/15, A2 MMCMI positive 3/15
+  A3 |t| < 3.0 and rate <= 0.09 -> True
+
+=== FIXTURE PART B (end to end; manuscript = s81 line_sticky 0.75 Latin on a synthetic skeleton) ===
+folds: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] (15); N_FOLDS 15; need 8
+running 15 fold jobs on 2 workers
+
+=== PER-FOLD TABLE: PREFIX XCMI (K=8, same-length null; excess bits x1000 / exact p; * = positive: excess > 0 and p < 0.05) ===
+  FIX:
+    fold lines  trip              VOY              S81               FO              WTG              LAT   S81 p_fit
+    A       76   439   +27.42/0.010*    +4.92/0.279     -8.87/0.905     -3.42/0.751     -1.63/0.632    0.75
+    B      196  1016   +17.77/0.005*   +12.36/0.070     -0.99/0.547     +3.25/0.199     +2.93/0.289    0.75
+    C       77   386    +6.52/0.234    +20.32/0.020*    -1.02/0.617     -1.92/0.677     -1.46/0.627    0.75
+    D      169   914   +15.72/0.020*   +18.48/0.005*    +6.64/0.080     -7.05/0.920     +4.60/0.189    0.8
+    E      167   907   +20.62/0.010*   +18.63/0.010*    +6.13/0.149     -0.96/0.567     -0.34/0.522    0.8
+    F      227  1238   +36.63/0.005*   +20.34/0.005*    +4.18/0.174     -2.29/0.687     +2.03/0.323    0.75
+    G      140   773   +15.61/0.040*   +23.81/0.005*    +2.54/0.289     -5.11/0.920     -8.31/0.965    0.75
+    H      290  1548   +25.77/0.005*   +36.95/0.005*    +6.54/0.080     -3.85/0.796     +0.53/0.453    0.85
+    I      176   972    +6.76/0.174    +10.77/0.080     -0.20/0.527     +1.69/0.348     +2.16/0.413    0.8
+    J      800  4222   +27.18/0.005*   +21.39/0.005*    +2.07/0.289     +4.51/0.119     +1.24/0.368    0.75
+    K      201  1086   +14.46/0.015*    +5.31/0.159     +7.80/0.045*    +0.62/0.468     -9.63/0.871    0.75
+    L      117   663   +16.00/0.015*   +23.86/0.010*    -1.67/0.597     -6.07/0.896     -0.68/0.557    0.8
+    M      278  1591   +18.34/0.005*   +15.77/0.020*    +4.24/0.189     +4.38/0.199     -0.48/0.542    0.75
+    N      103   604   +16.00/0.010*   +20.90/0.020*    +5.45/0.229     +3.04/0.229     +1.59/0.353    0.8
+    O      152   756   +15.01/0.040*   +12.48/0.060     +2.03/0.338     -0.13/0.498     -4.35/0.881    0.75
+    positive folds: VOY 13/15  S81 10/15  FO 1/15  WTG 0/15  LAT 0/15
+
+=== PER-FOLD TABLE: SUFFIX XCMI (K=8, same-length null; excess bits x1000 / exact p; * = positive: excess > 0 and p < 0.05) ===
+  FIX:
+    fold lines  trip              VOY              S81               FO              WTG              LAT   S81 p_fit
+    A       76   439    -0.29/0.522     +0.71/0.448     -1.70/0.706     -0.13/0.498     -3.68/0.756    0.75
+    B      196  1016    -3.83/0.801     +4.90/0.149     +0.02/0.473     +0.40/0.463     +0.59/0.473    0.75
+    C       77   386    +1.80/0.358     +2.04/0.353     +9.82/0.030*    +5.56/0.095     +5.52/0.154    0.75
+    D      169   914    +7.46/0.075     +4.58/0.209     +2.44/0.254     -0.48/0.587     -0.11/0.488    0.8
+    E      167   907   +10.77/0.040*    -5.08/0.826     -6.73/0.836     +3.55/0.209     -4.15/0.811    0.8
+    F      227  1238    +0.75/0.443     +5.01/0.144    -10.42/0.995     +2.97/0.259     +3.84/0.139    0.75
+    G      140   773    -2.01/0.632    +10.16/0.070     -2.08/0.627     -6.06/0.910     +5.14/0.075    0.75
+    H      290  1548    +4.72/0.194     +4.84/0.164     -7.58/0.935     +0.35/0.423     +0.94/0.383    0.85
+    I      176   972    -1.14/0.577     +4.15/0.244     +2.71/0.284     -5.22/0.935     +3.03/0.338    0.8
+    J      800  4222    +0.93/0.353     +4.05/0.144     -1.42/0.672     +3.70/0.100     +3.43/0.139    0.75
+    K      201  1086    +5.20/0.154     +1.84/0.383     -2.07/0.657     +0.91/0.393     -1.24/0.582    0.75
+    L      117   663    +8.61/0.025*   +11.28/0.015*    +0.49/0.507     -1.09/0.617     -9.02/0.851    0.8
+    M      278  1591    +6.82/0.085     +7.31/0.080     -6.78/0.940     +2.48/0.269     +0.17/0.502    0.75
+    N      103   604    +5.62/0.174    +10.44/0.070     -2.97/0.741     -0.25/0.512     +1.08/0.378    0.8
+    O      152   756    -3.60/0.756     +4.95/0.224     +2.76/0.269     +6.88/0.055     -5.42/0.935    0.75
+    positive folds: VOY 2/15  S81 1/15  FO 1/15  WTG 0/15  LAT 0/15
+
+=== DESCRIPTIVE: positive-fold counts by estimator, K and null (prefix unless marked) ===
+  FIX XCMI  K=8  len : VOY 13  S81 10  FO  1  WTG  0  LAT  0
+  FIX MMCMI K=8  len : VOY  2  S81  3  FO  0  WTG  0  LAT  2
+  FIX XCMI  K=4  len : VOY  8  S81  6  FO  0  WTG  1  LAT  1
+  FIX MMCMI K=4  len : VOY  2  S81  3  FO  0  WTG  0  LAT  1
+  FIX XCMI  K=12 len : VOY 13  S81 11  FO  1  WTG  1  LAT  1
+  FIX MMCMI K=12 len : VOY  6  S81  4  FO  1  WTG  2  LAT  1
+  FIX XCMI  K=8  page: VOY  9  S81  7  FO  1  WTG  1  LAT  1
+  FIX MMCMI K=8  page: VOY  3  S81  1  FO  1  WTG  1  LAT  3
+  FIX XCMI  K=8  word: VOY  8  S81  5  FO  3  WTG  0  LAT  0
+  FIX MMCMI K=8  word: VOY  2  S81  0  FO  2  WTG  1  LAT  1
+  FIX XCMI  K=8  len  SUFFIX: VOY  2  S81  1  FO  1  WTG  0  LAT  0
+  FIX MMCMI K=8  len  SUFFIX: VOY  1  S81  1  FO  0  WTG  1  LAT  2
+
+=== EXCESS SIZE (XCMI, median over folds, bits x1000; K_MAIN, same-length null) and VOY / S81 ratio ===
+  pre FIX: VOY +16.005  S81 +18.631  FO +2.542  WTG -0.963  LAT -0.337   VOY/S81 +0.86
+  suf FIX: VOY +1.800  S81 +4.843  FO -1.702  WTG +0.400  LAT +0.593   VOY/S81 +0.37
+
+=== PRE-REGISTERED CALLS (prefix XCMI, K_MAIN, same-length null) ===
+  Voynich positive folds: FIX 13/15
+  S81 control positive folds: FIX 10/15
+  FO control positive folds: FIX 1/15
+  CALL_VOY = True
+  CALL_S81 = True
+  CALL_FO = True
+  VOY_NONE = False
+  FO calibration (diagnostic, not a call): positive folds per translit {'FIX': 1} (about 0.75 expected)
+  excess size VOY/S81 (median ratio, prefix): FIX +0.86
+  SECONDARY (suffix, same rule, not the verdict): VOY {'FIX': 2} S81 {'FIX': 1} FO {'FIX': 1} -> 'inconclusive'
+  PRINTED READING: 'H-14-like (hidden line state)'
+
+FIXTURE Part A PASS; Part B reading 'H-14-like (hidden line state)' -> True
+FIXTURE PASS
+elapsed 497s; date end 2026-10-18 12:57:09
+outputs: ./runs/s98/fixture_20261018_124852.txt, ./runs/s98

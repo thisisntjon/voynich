@@ -1,0 +1,2 @@
+# s48 prereg: sha256 of the scoring script; frozen Sat Oct 17 23:59:04 PDT 2026 before any scoring run on real embeddings (dry run only on random embeddings in the scratchpad)
+d3ba835c4060729fb3dacf619c56a3e36297de8db8dcc5de30319db7106eea8d  s48_same_plant_images.py

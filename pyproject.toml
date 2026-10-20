@@ -1,0 +1,14 @@
+[project]
+name = "voynich"
+version = "0.1.0"
+description = "Voynich EVA statistical/cipher battery. analyze.py + b1 are stdlib-only; a/b scripts use numpy/scipy/scikit-learn (uv-managed .venv)."
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4.6",
+    "openpyxl>=3.1.5",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.17.1",
+]
+
+[tool.uv]
+managed = true

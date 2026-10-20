@@ -1,0 +1,44 @@
+S109 - cross-section label network: ok-/ot- enrichment (CMH) and recurring adjacent pairs (D-066 (n))
+started Sun Oct 18 15:55:43 PDT 2026 (`date`)  priority=BelowNormal workers=1  free_RAM_GB=4.17 waited_s=0
+thresholds: ALPHA=0.01 N_SHUF=10000 N_PLANT=10 SEED=109018 FREQ_EDGES=[1, 2, 3, 4, 5, 6, 8, 12, 20, 50, 100] LEN_EDGES=[0, 4, 5, 6, 7, 8, 9, 11]
+stub_match=True (2 modules, 1 data files) 
+section_map_vs_ZL_$I mismatches=0 []
+[fix_freqonly_label] OR=5.727 95%CI=(1.065,30.803) CMH_p=0.07374 strata=3/35 types_used=59  para_hi=0.930 enrich_call=False
+[fix_freqonly_pairs] X=36 null_mean=39.687 null_sd=4.333 p=0.83458 pair_call=False
+[fix_enrich_label] OR=inf 95%CI=(nan,nan) CMH_p=0.0002364 strata=3/35 types_used=40  para_hi=1.223 enrich_call=True
+[fix_enrich_pairs] X=44 null_mean=44.135 null_sd=3.967 p=0.55622 pair_call=False
+[fix_pairs_label] OR=4.713 95%CI=(0.849,26.159) CMH_p=0.1342 strata=5/40 types_used=79  para_hi=1.428 enrich_call=False
+[fix_pairs_pairs] X=48 null_mean=36.925 null_sd=3.920 p=0.00450 pair_call=True
+[fix_shuffled_label] OR=0.132 95%CI=(0.013,1.320) CMH_p=0.1358 strata=3/34 types_used=54  para_hi=1.812 enrich_call=False
+[fix_shuffled_pairs] X=41 null_mean=43.173 null_sd=4.214 p=0.73113 pair_call=False
+FIXTURE_PASS=True
+CALL_FIXTURE=True
+data: label_loci=1081 (dropped on text-only pages: 57) label_types=913 pages_with_labels=59 sections=6 per_section={'A': 171, 'B': 115, 'C': 250, 'H': 26, 'P': 225, 'Z': 294}
+      cross-section label types=65  section-local=848  (of which repeated=25)  paragraph tokens=32573 types=6737
+ARGON RAW NUMBERS, recomputed descriptively (unstratified; not part of any call):
+  ARGON_RAW[frozen map, L+R, T pages dropped; vs local_repeated] cross 44/65=0.677  local 12/25=0.480  chi2(1df, uncorrected)=2.98 p=0.0844
+  ARGON_RAW[frozen map, L+R, T pages dropped; vs local_all] cross 44/65=0.677  local 265/848=0.312  chi2(1df, uncorrected)=35.81 p=2.18e-09
+  ARGON_RAW[ZL $I as-is incl T, L+R; vs local_repeated] cross 44/69=0.638  local 12/26=0.462  chi2(1df, uncorrected)=2.42 p=0.12
+  ARGON_RAW[ZL $I as-is incl T, L+R; vs local_all] cross 44/69=0.638  local 266/864=0.308  chi2(1df, uncorrected)=31.33 p=2.18e-08
+  ARGON_RAW[ZL $I as-is, L+R, 1-2 word loci; vs local_repeated] cross 44/69=0.638  local 12/26=0.462  chi2(1df, uncorrected)=2.42 p=0.12
+  ARGON_RAW[ZL $I as-is, L+R, 1-2 word loci; vs local_all] cross 44/69=0.638  local 237/778=0.305  chi2(1df, uncorrected)=31.71 p=1.79e-08
+TEST 1 (CMH, stratified by frequency x length):
+[labels] OR=1.292 95%CI=(0.378,4.410) CMH_p=0.9255 strata=6/31 types_used=56
+[paragraph_control] OR=0.807 95%CI=(0.554,1.174) CMH_p=0.2958 strata=29/72 types_used=1609
+LABEL_ENRICH_REAL=False  (CMH p=0.9255 < 0.01 and OR 1.292 > paragraph 95% upper 1.174)
+TEST 2 (unordered adjacent label pairs recurring across sections; within-page shuffles):
+[pairs] X=5 null_mean=0.542 null_sd=0.714 p=0.00010
+PAIR_EXCESS=True  (p=0.00010 < 0.01)
+  recurring pairs (pair : sections): d/y:CH; l/o:BC; l/s:BC; o/r:BH; okary/okolo:BP
+  okolo/okary recurs: True
+CONTROLS on real data:
+[positive_control_10_planted_pairs] X=15 null_mean=0.756 null_sd=0.845 p=0.00010
+  POSITIVE_CONTROL_DETECTED=True
+[negative_control_shuffled_labels] OR=1.138 95%CI=(0.294,4.403) CMH_p=0.8609 strata=5/31 types_used=52 enrich_call=False
+[negative_control_shuffled_labels] X=0 null_mean=0.275 null_sd=0.514 p=1.00000 pair_call=False
+  NEGATIVE_CONTROL_NO_CALL=True
+CONTROLS_OK=True
+CALL: LABEL_ENRICH_REAL=False PAIR_EXCESS=True CONTROLS_OK=True
+VERDICT=PAIR_EXCESS: adjacent labels form recurring units across sections; propose a held-out prediction (pairs on pages not used) before any semantic reading
+sidecar: runs/s109/summary.json
+finished Sun Oct 18 15:56:05 PDT 2026 (`date`) runtime_s=22.8

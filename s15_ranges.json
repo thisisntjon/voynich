@@ -1,0 +1,1925 @@
+{
+ "run": "s15 Sat Oct 17 20:10:47 PDT 2026",
+ "seed": 20261017,
+ "n_sample": 25000,
+ "n_shuffles": 5,
+ "extend": 0.1,
+ "ranges": {
+  "h2": {
+   "L": {
+    "min": 2.5694,
+    "max": 3.5377,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 3.1709,
+    "max": 3.757,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 1.8159,
+    "max": 2.5106,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 2.4328,
+    "max": 4.003,
+    "n": 38,
+    "source": "per-writer (38)"
+   }
+  },
+  "sd_len": {
+   "L": {
+    "min": 1.388,
+    "max": 2.971,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.966,
+    "max": 2.324,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 1.135,
+    "max": 3.432,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 1.352,
+    "max": 6.584,
+    "n": 38,
+    "source": "per-writer (38)"
+   }
+  },
+  "jsd_first_fg": {
+   "L": {
+    "min": 0.0008,
+    "max": 0.0027,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.0074,
+    "max": 0.1174,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.0009,
+    "max": 0.0568,
+    "n": 5,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.0526,
+    "max": 0.356,
+    "n": 38,
+    "source": "per-writer (38)"
+   }
+  },
+  "p_init_enrich": {
+   "L": {
+    "min": 0.75,
+    "max": 1.22,
+    "n": 18,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": null,
+   "G": {
+    "min": 0.98,
+    "max": 19.86,
+    "n": 5,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.0,
+    "max": 12.0,
+    "n": 35,
+    "source": "per-writer (38)"
+   }
+  },
+  "m_final_enrich": {
+   "L": {
+    "min": 0.0,
+    "max": 1.38,
+    "n": 18,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": null,
+   "G": {
+    "min": 1.0,
+    "max": 11.23,
+    "n": 5,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.0,
+    "max": 3.0,
+    "n": 35,
+    "source": "per-writer (38)"
+   }
+  },
+  "cross_excess_eva": {
+   "L": {
+    "min": 0.0261,
+    "max": 0.1459,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.0059,
+    "max": 0.029,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.0003,
+    "max": 0.0144,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": -0.0702,
+    "max": 0.3049,
+    "n": 38,
+    "source": "per-writer (38)"
+   }
+  },
+  "redup_pct": {
+   "L": {
+    "min": 0.0,
+    "max": 0.38,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.0,
+    "max": 0.0,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.12,
+    "max": 1.108,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.0,
+    "max": 4.029,
+    "n": 38,
+    "source": "per-writer (38)"
+   }
+  },
+  "lex_beta": {
+   "L": {
+    "min": 0.5730426118427684,
+    "max": 0.9094876343547942,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.7575025221225495,
+    "max": 0.7768141010221766,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.6067367484163072,
+    "max": 0.8242711014575127,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.9715770178661904,
+    "max": 1.0538099107768366,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "lex_rate_late_early": {
+   "L": {
+    "min": 0.2112845138055222,
+    "max": 0.611723226090789,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.5119667013527576,
+    "max": 0.5315967197298601,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.059064807219032,
+    "max": 0.6398520573277855,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 1.0015637216575448,
+    "max": 1.1701388888888888,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "lex_edit1_excess": {
+   "L": {
+    "min": -0.0016802016241948964,
+    "max": 0.09954260953298025,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": -0.0013704888076747496,
+    "max": 0.018651561204752698,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.014954645746506512,
+    "max": 0.2613333333333333,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.13656188900586552,
+    "max": 0.15279672578444747,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "slot_occupancy_pc": {
+   "L": {
+    "min": 0.03144449982035026,
+    "max": 0.06627611518915867,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.02901864842599296,
+    "max": 0.19163442049014187,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.06231287425149701,
+    "max": 0.1252913752913753,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.03548296613627091,
+    "max": 0.03848780487804878,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "slot_table_likeness": {
+   "L": {
+    "min": 0.5461927134274223,
+    "max": 0.775816535547751,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.7499050716048948,
+    "max": 0.9564311708126861,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.629804464539925,
+    "max": 0.7658822808906031,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.892507599354542,
+    "max": 0.900979453615099,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "slot_core_crowding": {
+   "L": {
+    "min": 0.5097165991902834,
+    "max": 0.923105917828873,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.643193449334698,
+    "max": 1.0,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.592814371257485,
+    "max": 0.9758203799654577,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.5778597785977859,
+    "max": 0.6010808155244411,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "info_mi_adjacent": {
+   "L": {
+    "min": 0.23086678843794406,
+    "max": 1.1160116766398098,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.29814221316948797,
+    "max": 0.3566937389218334,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.004167650257548505,
+    "max": 0.3421245827255768,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.2787120190924396,
+    "max": 0.3408942497993408,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "info_mi_page": {
+   "L": {
+    "min": -0.022902911342586485,
+    "max": 0.030500383403419207,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.007775303526339261,
+    "max": 0.019806511838711405,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.0008139712144825673,
+    "max": 0.02004286830209434,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.14652161742993608,
+    "max": 0.23509750495100468,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "info_samecol_minus_othercol": {
+   "L": {
+    "min": -0.00710963530276798,
+    "max": 0.08593922095042128,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": -0.014463627207091712,
+    "max": 0.004694765622368813,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.001932148195881167,
+    "max": 0.02530239016069946,
+    "n": 5,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": -0.032234263251109896,
+    "max": 0.04976728114200568,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "bake_char3_minus_unigram": {
+   "L": {
+    "min": -0.4291595183699677,
+    "max": 1.7456625178377791,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": -0.7002404474793291,
+    "max": 1.8111001197986933,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.8125021787587041,
+    "max": 0.6792919396468715,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": -0.8589121345442265,
+    "max": -0.7926270480452793,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "x_edge_mi_word": {
+   "L": {
+    "min": 0.027967702560818382,
+    "max": 0.14965827327437403,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.007476538485865376,
+    "max": 0.03159511472680879,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.0007770945828578513,
+    "max": 0.0260164630515084,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.024488304406300176,
+    "max": 0.033503010802769066,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "x_hapax_10k": {
+   "L": {
+    "min": 0.4138755980861244,
+    "max": 0.7400684030518284,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 0.5874959716403481,
+    "max": 0.6254396248534584,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.4145896656534954,
+    "max": 0.8328552803129075,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.8521446347533304,
+    "max": 0.8521446347533304,
+    "n": 1,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "x_moran_I": {
+   "L": {
+    "min": -0.2735859474828522,
+    "max": 0.03767666394698721,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": -0.042673002895805875,
+    "max": 0.02268647122546271,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.003551429933751194,
+    "max": 0.11254321178091956,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.10785371408130352,
+    "max": 0.13077910297557477,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "x_position_entropy": {
+   "L": {
+    "min": 1.943928987725214,
+    "max": 2.1556617154905027,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": 1.586928214289316,
+    "max": 2.238375376324994,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 1.4065181974114742,
+    "max": 1.7973821073169816,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 1.7182332452972522,
+    "max": 2.2550417848811275,
+    "n": 38,
+    "source": "per-writer (38)"
+   }
+  },
+  "x_ltr_minus_rtl": {
+   "L": {
+    "min": -0.00622292140777182,
+    "max": 0.0023473621206056695,
+    "n": 21,
+    "members": [
+     "latin_caesar",
+     "latin_augustine",
+     "italian_dante",
+     "german_faust",
+     "german_kafka",
+     "english_alice",
+     "hebrew_torah",
+     "arabic_quran",
+     "greek_herodotus",
+     "czech_bible_kralicka_1613",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "catalan_tirant",
+     "turkish_kanun_medeni_1926",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "hawaiian_fornander",
+     "tagalog_urbana_feliza_1864",
+     "tagalog_florante_1838"
+    ]
+   },
+   "C": {
+    "min": -0.02795451433929823,
+    "max": -0.0009968166546607793,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.0002470798988380047,
+    "max": 0.006146991720417493,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   },
+   "X": {
+    "min": 0.0020691430398882666,
+    "max": 0.014204548189010388,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  },
+  "bake_winner": {
+   "L": [
+    "copy0.05+markov3",
+    "unigram_gt"
+   ],
+   "C": [
+    "markov2",
+    "slot",
+    "unigram_gt"
+   ],
+   "G": [
+    "copy0.05+markov3",
+    "markov2",
+    "markov3",
+    "unigram_gt"
+   ]
+  },
+  "types_25k": {
+   "L": {
+    "min": 1182,
+    "max": 8308,
+    "n": 17
+   },
+   "C": {
+    "min": 6560,
+    "max": 7238,
+    "n": 6
+   },
+   "G": {
+    "min": 1720,
+    "max": 8195,
+    "n": 6
+   }
+  },
+  "info_bpe_adjacent": {
+   "X": {
+    "min": 0.3286694430374987,
+    "max": 0.3544614280299244,
+    "n": 39,
+    "source": "pooled + 38 jackknife"
+   }
+  }
+ },
+ "tight": {
+  "h2": {
+   "L": true,
+   "C": true,
+   "G": true,
+   "X": false
+  },
+  "sd_len": {
+   "L": true,
+   "C": true,
+   "G": true,
+   "X": false
+  },
+  "jsd_first_fg": {
+   "L": true,
+   "C": true,
+   "G": true,
+   "X": false
+  },
+  "p_init_enrich": {
+   "L": true,
+   "C": false,
+   "G": false,
+   "X": false
+  },
+  "m_final_enrich": {
+   "L": true,
+   "C": false,
+   "G": true,
+   "X": true
+  },
+  "cross_excess_eva": {
+   "L": true,
+   "C": true,
+   "G": true,
+   "X": false
+  },
+  "redup_pct": {
+   "L": true,
+   "C": true,
+   "G": true,
+   "X": false
+  },
+  "x_edge_mi_word": {
+   "L": false,
+   "C": true,
+   "G": true,
+   "X": true
+  },
+  "types_25k": {
+   "L": true,
+   "C": true,
+   "G": true,
+   "X": false
+  },
+  "x_position_entropy": {
+   "L": true,
+   "C": false,
+   "G": true,
+   "X": false
+  },
+  "x_ltr_minus_rtl": {
+   "L": true,
+   "C": false,
+   "G": true,
+   "X": true
+  },
+  "x_moran_I": {
+   "L": false,
+   "C": true,
+   "G": true,
+   "X": true
+  },
+  "lex_beta": {
+   "L": false,
+   "C": true,
+   "G": false,
+   "X": true
+  },
+  "lex_rate_late_early": {
+   "L": true,
+   "C": true,
+   "G": false,
+   "X": true
+  },
+  "lex_edit1_excess": {
+   "L": true,
+   "C": true,
+   "G": true,
+   "X": true
+  },
+  "slot_occupancy_pc": {
+   "L": true,
+   "C": true,
+   "G": true,
+   "X": true
+  },
+  "slot_table_likeness": {
+   "L": false,
+   "C": true,
+   "G": true,
+   "X": true
+  },
+  "slot_core_crowding": {
+   "L": true,
+   "C": true,
+   "G": true,
+   "X": true
+  },
+  "info_mi_adjacent": {
+   "L": false,
+   "C": true,
+   "G": true,
+   "X": true
+  },
+  "info_samecol_minus_othercol": {
+   "L": true,
+   "C": true,
+   "G": true,
+   "X": true
+  },
+  "bake_char3_minus_unigram": {
+   "L": false,
+   "C": false,
+   "G": false,
+   "X": true
+  },
+  "x_hapax_10k": {
+   "L": false,
+   "C": true,
+   "G": false,
+   "X": true
+  },
+  "info_mi_page": {
+   "L": true,
+   "C": true,
+   "G": true,
+   "X": true
+  },
+  "info_bpe_adjacent": {
+   "L": false,
+   "C": false,
+   "G": false,
+   "X": true
+  }
+ },
+ "no_weight": [
+  "sd_len",
+  "info_mi_adjacent",
+  "info_samecol_minus_othercol",
+  "x_hapax_10k",
+  "info_mi_page",
+  "info_bpe_adjacent",
+  "bake_winner",
+  "x_moran_I",
+  "lex_beta",
+  "lex_rate_late_early",
+  "lex_edit1_excess",
+  "slot_occupancy_pc",
+  "slot_table_likeness",
+  "slot_core_crowding",
+  "bake_char3_minus_unigram"
+ ],
+ "no_weight_reasons": {
+  "x_moran_I": "X range is a 10k-token pooled jackknife sliver (n7; O-046)",
+  "lex_beta": "X range is a 10k-token pooled jackknife sliver (n7; O-046)",
+  "lex_rate_late_early": "X range is a 10k-token pooled jackknife sliver (n7; O-046)",
+  "lex_edit1_excess": "X range is a 10k-token pooled jackknife sliver (n7; O-046)",
+  "slot_occupancy_pc": "X range is a 10k-token pooled jackknife sliver (n7; O-046)",
+  "slot_table_likeness": "X range is a 10k-token pooled jackknife sliver (n7; O-046)",
+  "slot_core_crowding": "X range is a 10k-token pooled jackknife sliver (n7; O-046)",
+  "bake_char3_minus_unigram": "X range is a 10k-token pooled jackknife sliver (n7; O-046)"
+ },
+ "x_family": "gibberish",
+ "within_manuscript": {
+  "h2": {
+   "median": 2.1029999999999998,
+   "lo95": 2.0539975,
+   "hi95": 2.1523075,
+   "min": 2.0057,
+   "max": 2.1745,
+   "n_splits": 200
+  },
+  "sd_len": {
+   "median": 1.783,
+   "lo95": 1.7469750000000002,
+   "hi95": 1.8282250000000002,
+   "min": 1.736,
+   "max": 1.846,
+   "n_splits": 200
+  },
+  "jsd_first_fg": {
+   "median": 0.17765,
+   "lo95": 0.1447,
+   "hi95": 0.21562750000000003,
+   "min": 0.1383,
+   "max": 0.2509,
+   "n_splits": 200
+  },
+  "p_init_enrich": {
+   "median": 18.11,
+   "lo95": 12.300500000000001,
+   "hi95": 26.354000000000003,
+   "min": 9.58,
+   "max": 30.65,
+   "n_splits": 200
+  },
+  "m_final_enrich": {
+   "median": 16.225,
+   "lo95": 10.1835,
+   "hi95": 27.41075,
+   "min": 8.07,
+   "max": 33.7,
+   "n_splits": 200
+  },
+  "cross_excess_eva": {
+   "median": 0.1801,
+   "lo95": 0.14765,
+   "hi95": 0.208505,
+   "min": 0.1412,
+   "max": 0.2184,
+   "n_splits": 200
+  },
+  "redup_pct": {
+   "median": 0.8454999999999999,
+   "lo95": 0.6622750000000001,
+   "hi95": 1.0597750000000001,
+   "min": 0.606,
+   "max": 1.17,
+   "n_splits": 200
+  },
+  "x_edge_mi_word": {
+   "median": 0.18902024421245275,
+   "lo95": 0.15675568225747097,
+   "hi95": 0.2207538055957207,
+   "min": 0.15048969865835973,
+   "max": 0.2287927224275748,
+   "n_splits": 200
+  },
+  "types_25k": {
+   "median": 2283.0,
+   "lo95": 1910.85,
+   "hi95": 2654.35,
+   "min": 1728.0,
+   "max": 2724.0,
+   "n_splits": 200
+  },
+  "x_position_entropy": {
+   "median": 1.6569215861792919,
+   "lo95": 1.6283858672701366,
+   "hi95": 1.6911592388488104,
+   "min": 1.6118167728419948,
+   "max": 1.7025898585305785,
+   "n_splits": 200
+  },
+  "x_ltr_minus_rtl": {
+   "median": 0.007710123860103191,
+   "lo95": 0.0025895237479590136,
+   "hi95": 0.013708362004064648,
+   "min": 0.0001866402511261142,
+   "max": 0.017334970374012618,
+   "n_splits": 200
+  },
+  "x_moran_I": {
+   "median": 0.1402771915294991,
+   "lo95": 0.10862106754681204,
+   "hi95": 0.1700111843378619,
+   "min": 0.0953974416005574,
+   "max": 0.18338659788429812,
+   "n_splits": 200
+  },
+  "lex_beta": {
+   "median": 0.7880570487810374,
+   "lo95": 0.7552804976508952,
+   "hi95": 0.8242854942979352,
+   "min": 0.7445411996349188,
+   "max": 0.8384950659967004,
+   "n_splits": 200
+  },
+  "lex_rate_late_early": {
+   "median": 0.5219315121200462,
+   "lo95": 0.40532070254692737,
+   "hi95": 0.6418017248284517,
+   "min": 0.38047559449311635,
+   "max": 0.7286324786324787,
+   "n_splits": 200
+  },
+  "lex_edit1_excess": {
+   "median": 0.2373859649122807,
+   "lo95": 0.15330100900482768,
+   "hi95": 0.41096386196042256,
+   "min": 0.13032305433186492,
+   "max": 0.4704861111111111,
+   "n_splits": 200
+  },
+  "slot_occupancy_pc": {
+   "median": 0.07705192488894871,
+   "lo95": 0.06897412374515034,
+   "hi95": 0.08735704176147531,
+   "min": 0.06529012522703374,
+   "max": 0.09284090909090909,
+   "n_splits": 200
+  },
+  "slot_table_likeness": {
+   "median": 0.7493534928443235,
+   "lo95": 0.7222599113315324,
+   "hi95": 0.7708426175336219,
+   "min": 0.7114639722374364,
+   "max": 0.780842276019935,
+   "n_splits": 200
+  },
+  "slot_core_crowding": {
+   "median": 0.8478942562970646,
+   "lo95": 0.8181113199946287,
+   "hi95": 0.8718569547525616,
+   "min": 0.8032305433186491,
+   "max": 0.8794871794871795,
+   "n_splits": 200
+  },
+  "info_mi_adjacent": {
+   "median": 0.09810429488215155,
+   "lo95": 0.055707416021155885,
+   "hi95": 0.13114956101224143,
+   "min": 0.040061112256592146,
+   "max": 0.14809273458594463,
+   "n_splits": 200
+  },
+  "info_samecol_minus_othercol": {
+   "median": 0.0028747918696105934,
+   "lo95": -0.043437592435068596,
+   "hi95": 0.04776472510725757,
+   "min": -0.05420723010500206,
+   "max": 0.06256417354495669,
+   "n_splits": 200
+  },
+  "bake_char3_minus_unigram": {
+   "median": -0.7467919379668313,
+   "lo95": -0.7894674323850231,
+   "hi95": -0.7125362112841851,
+   "min": -0.8017873813121206,
+   "max": -0.7087268352808778,
+   "n_splits": 200
+  },
+  "x_hapax_10k": {
+   "median": null,
+   "lo95": null,
+   "hi95": null,
+   "min": null,
+   "max": null,
+   "n_splits": 0
+  },
+  "info_mi_page": {
+   "median": 0.014406223512163141,
+   "lo95": -0.015533151094265583,
+   "hi95": 0.048056079483498014,
+   "min": -0.022480645930098575,
+   "max": 0.06976630167946185,
+   "n_splits": 200
+  },
+  "info_bpe_adjacent": {
+   "median": 1.132422507765601,
+   "lo95": 1.035705762028708,
+   "hi95": 1.2013718440207517,
+   "min": 1.020428419429856,
+   "max": 1.212863673901138,
+   "n_splits": 200
+  }
+ },
+ "within_manuscript_note": "ZL3b EVA via vparse; 200 random 41-page subsets, seeds 1000..1199, random.Random(seed).sample(page_ids, 41); run_v2.score_one, edge-null nrep 20; lo95/hi95 = 2.5/97.5 percentiles. run_v2 ignores this key; s18 reads it.",
+ "within_manuscript_tokens": {
+  "median": 6898.5,
+  "lo95": 5277.4,
+  "hi95": 8423.725,
+  "min": 4885.0,
+  "max": 8787.0,
+  "n_splits": 200
+ },
+ "g1_heldout_41": {
+  "h2": 2.0483,
+  "sd_len": 1.725,
+  "jsd_first_fg": 0.1762,
+  "p_init_enrich": 18.95,
+  "m_final_enrich": 26.23,
+  "cross_excess_eva": 0.2026,
+  "redup_pct": 0.804,
+  "x_edge_mi_word": 0.21123601580748627,
+  "types_25k": 2535.0,
+  "x_position_entropy": 1.623834361387423,
+  "x_ltr_minus_rtl": 0.007825907911061539,
+  "x_moran_I": 0.1445834241338023,
+  "lex_beta": 0.7988535077529588,
+  "lex_rate_late_early": 0.4760820045558087,
+  "lex_edit1_excess": 0.11597633136094676,
+  "slot_occupancy_pc": 0.07641065830721003,
+  "slot_table_likeness": 0.7301034651362128,
+  "slot_core_crowding": 0.8547544409613375,
+  "info_mi_adjacent": 0.11428074863606152,
+  "info_samecol_minus_othercol": -0.00840078469427441,
+  "bake_char3_minus_unigram": -0.7137967776301437,
+  "x_hapax_10k": null,
+  "info_mi_page": 0.012913438868398242,
+  "info_bpe_adjacent": 1.166377549377338,
+  "tokens": 8586,
+  "seed": 20261017
+ },
+ "full_rows": {
+  "ZL3b": {
+   "h2": 2.1262,
+   "sd_len": 1.764,
+   "jsd_first_fg": 0.1759,
+   "p_init_enrich": 17.89,
+   "m_final_enrich": 16.31,
+   "cross_excess_eva": 0.1809,
+   "redup_pct": 0.896,
+   "x_edge_mi_word": 0.18823191855276483,
+   "types_25k": 5417.0,
+   "x_position_entropy": 1.660684936162736,
+   "x_ltr_minus_rtl": 0.004874606909289779,
+   "x_moran_I": 0.1406700396039436,
+   "lex_beta": 0.7409671572551417,
+   "lex_rate_late_early": 0.46392694063926937,
+   "lex_edit1_excess": 0.09651245551601423,
+   "slot_occupancy_pc": 0.06598242634571365,
+   "slot_table_likeness": 0.6475008472842115,
+   "slot_core_crowding": 0.871948608137045,
+   "info_mi_adjacent": 0.17374716704735338,
+   "info_samecol_minus_othercol": 0.009191928565677854,
+   "bake_char3_minus_unigram": -0.5256174400738107,
+   "x_hapax_10k": 0.6855172413793104,
+   "info_mi_page": 0.029456503800154854,
+   "info_bpe_adjacent": 1.1759818826742083,
+   "tokens": 34857,
+   "source": ".//data//translit//ZL3b_eva.meta.json"
+  },
+  "RF1b": {
+   "h2": 2.1351,
+   "sd_len": 1.777,
+   "jsd_first_fg": 0.1809,
+   "p_init_enrich": 19.4,
+   "m_final_enrich": 16.43,
+   "cross_excess_eva": 0.1729,
+   "redup_pct": 0.88,
+   "x_edge_mi_word": 0.17916571711350485,
+   "types_25k": 5680.0,
+   "x_position_entropy": 1.6646176892242235,
+   "x_ltr_minus_rtl": 0.003559259639713341,
+   "x_moran_I": 0.14084367006585724,
+   "lex_beta": 0.7533103933640031,
+   "lex_rate_late_early": 0.47276595744680855,
+   "lex_edit1_excess": 0.08818726183995648,
+   "slot_occupancy_pc": 0.06689387111311401,
+   "slot_table_likeness": 0.6503780601866332,
+   "slot_core_crowding": 0.8517350157728707,
+   "info_mi_adjacent": 0.1629241132358552,
+   "info_samecol_minus_othercol": 0.010526957637290169,
+   "bake_char3_minus_unigram": -0.5456551444660498,
+   "x_hapax_10k": 0.7041851616994292,
+   "info_mi_page": 0.0209720431965994,
+   "info_bpe_adjacent": 1.1647368930526862,
+   "tokens": 34618,
+   "source": ".//data//translit//RF1b.meta.json"
+  },
+  "IT2a": {
+   "h2": 2.1283,
+   "sd_len": 1.691,
+   "jsd_first_fg": 0.1748,
+   "p_init_enrich": 17.55,
+   "m_final_enrich": 16.51,
+   "cross_excess_eva": 0.166,
+   "redup_pct": 0.932,
+   "x_edge_mi_word": 0.17307622456168245,
+   "types_25k": 5522.0,
+   "x_position_entropy": 1.6502472224739317,
+   "x_ltr_minus_rtl": 0.004040680897687038,
+   "x_moran_I": 0.14101552252470317,
+   "lex_beta": 0.750054931927173,
+   "lex_rate_late_early": 0.46243291592128805,
+   "lex_edit1_excess": 0.09916536992502475,
+   "slot_occupancy_pc": 0.06967009025832556,
+   "slot_table_likeness": 0.6540528799768021,
+   "slot_core_crowding": 0.8651260504201681,
+   "info_mi_adjacent": 0.1510013689981453,
+   "info_samecol_minus_othercol": 0.0171800169653773,
+   "bake_char3_minus_unigram": -0.5262328822157105,
+   "x_hapax_10k": 0.6883423180592992,
+   "info_mi_page": 0.01985454464992409,
+   "info_bpe_adjacent": 1.1619405030265906,
+   "tokens": 34411,
+   "source": ".//data//translit//IT2a.meta.json"
+  }
+ },
+ "provenance": {
+  "run_time": "Sat Oct 17 20:10:47 PDT 2026",
+  "script": "s15_band_widths.py",
+  "script_sha256": "d5f3cb522d53e5b25ebb309f4d258abad126a9beb8ee7b6a675be07c1f3be277",
+  "ranges_source": "n7_gibberish_ranges.json",
+  "ranges_source_sha256": "ac281dfd53a6a59622ecc1a149bf1461bce5bb0638aead8dd46f548ba29c6bd3",
+  "ranges_source_run": "2026-10-17 16:52",
+  "n7": {
+   "built": "2026-10-17 19:46",
+   "from_file": "results_m4_phase1_board.json",
+   "x_source": {
+    "h2": "per-writer (38)",
+    "sd_len": "per-writer (38)",
+    "jsd_first_fg": "per-writer (38)",
+    "p_init_enrich": "per-writer (38)",
+    "m_final_enrich": "per-writer (38)",
+    "cross_excess_eva": "per-writer (38)",
+    "redup_pct": "per-writer (38)",
+    "x_edge_mi_word": "pooled + 38 jackknife",
+    "types_25k": "NA (undefined at 25k)",
+    "x_position_entropy": "per-writer (38)",
+    "x_ltr_minus_rtl": "pooled + 38 jackknife",
+    "x_moran_I": "pooled + 38 jackknife",
+    "lex_beta": "pooled + 38 jackknife",
+    "lex_rate_late_early": "pooled + 38 jackknife",
+    "lex_edit1_excess": "pooled + 38 jackknife",
+    "slot_occupancy_pc": "pooled + 38 jackknife",
+    "slot_table_likeness": "pooled + 38 jackknife",
+    "slot_core_crowding": "pooled + 38 jackknife",
+    "info_mi_adjacent": "pooled + 38 jackknife",
+    "info_samecol_minus_othercol": "pooled + 38 jackknife",
+    "bake_char3_minus_unigram": "pooled + 38 jackknife",
+    "x_hapax_10k": "pooled + 38 jackknife",
+    "info_mi_page": "pooled + 38 jackknife",
+    "info_bpe_adjacent": "pooled + 38 jackknife"
+   },
+   "note": "L/C/G = m4 ranges unchanged; X per n7 prereg"
+  },
+  "scorer": {
+   "run_v2.py": "7dfdc9f75de5980adaa4b387df8ab272fd1d1c7a9ff452e94cac149012ff253e",
+   "score.py": "3a7b7c3efea13b884362f9f7f07551835bab8ca158ecdb43b946c96a8b3fbf1d",
+   "metrics_new.py": "a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed"
+  },
+  "s2_reference": "results_s2_u123_controls.txt",
+  "s2_reference_sha256": "801bfe86c0ad49f0def045eb21a58707b376c23077afe1281e2d1bee0d097163",
+  "reconciliation_pass": false,
+  "source_files": [
+   "data/ZL3b-n.txt (via vparse)",
+   "data/translit/ZL3b_eva.meta.json",
+   "data/translit/RF1b.meta.json",
+   "data/translit/IT2a.meta.json"
+  ]
+ }
+}

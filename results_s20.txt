@@ -1,0 +1,79 @@
+=== s20: Currier A/B on the coupling metrics vs s15 widths and real-line ranges ===
+run started Sat Oct 17 20:49:24 PDT 2026 (`date`)
+script: s20_ab_coupling_v2.py sha256 0c6f0eddbcc51c049af786940590636a70f2494241dad7db62569926a323dad4; stub_match=True
+ranges: s15_ranges.json sha256 b995aba64e5baa22524565963d67880287e43e98220a7c3cdd2d136eac6b3fef
+scorer: scoreboard/run_v2.py sha256 7dfdc9f75de5980adaa4b387df8ab272fd1d1c7a9ff452e94cac149012ff253e
+decision metrics: cross_excess_eva, x_edge_mi_word; real-line range = min..max over pooled native rows (8 files); per-manuscript CREMMA rows with tokens >= 5000 reported beside
+
+--- run_v2 calls (python -I scoreboard/run_v2.py; one process at a time) ---
+  $ python.exe -I ./scoreboard/run_v2.py --voynich --lang A --ranges ./s15_ranges.json --out ./results_s20_ZL3b_A.txt
+    # pages=114 lines=1557 tokens=11231 types=3217 sections=['H', 'P', 'S', 'T'] hands=2 langs=['A']
+  $ python.exe -I ./scoreboard/run_v2.py --voynich --lang B --ranges ./s15_ranges.json --out ./results_s20_ZL3b_B.txt
+    # pages=83 lines=2478 tokens=23078 types=4788 sections=['B', 'C', 'H', 'S', 'T'] hands=5 langs=['B']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/translit/RF1b.meta.json --n-sample 40000 --lang A --ranges ./s15_ranges.json --out ./results_s20_RF1b_A.txt
+    # pages=114 lines=1557 tokens=11053 types=3384 sections=['H', 'P', 'S', 'T'] hands=2 langs=['A']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/translit/RF1b.meta.json --n-sample 40000 --lang B --ranges ./s15_ranges.json --out ./results_s20_RF1b_B.txt
+    # pages=83 lines=2478 tokens=23028 types=4945 sections=['B', 'C', 'H', 'S', 'T'] hands=5 langs=['B']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/translit/IT2a.meta.json --n-sample 40000 --lang A --ranges ./s15_ranges.json --out ./results_s20_IT2a_A.txt
+    # pages=114 lines=1557 tokens=11081 types=3243 sections=['H', 'P', 'S', 'T'] hands=2 langs=['A']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/translit/IT2a.meta.json --n-sample 40000 --lang B --ranges ./s15_ranges.json --out ./results_s20_IT2a_B.txt
+    # pages=82 lines=2466 tokens=22797 types=4813 sections=['B', 'C', 'H', 'S', 'T'] hands=4 langs=['B']
+
+--- the six A/B rows (run_v2 .json 'row'; decision metrics, then context) ---
+translit half  tokens pages | cross_excess_eva x_edge_mi_word |      h2 types_25k jsd_first_fg | m4-L cross / edge
+ZL3b   A      11231   114 |           0.1203         0.1265 |  2.1453      3217       0.1392 | inside / inside
+ZL3b   B      23078    83 |           0.2321         0.2404 |  1.9983      4788       0.2191 | above / above
+RF1b   A      11053   114 |           0.1071         0.1126 |  2.1584      3384       0.1448 | inside / inside
+RF1b   B      23028    83 |           0.2259         0.2332 |  2.0084      4945       0.2244 | above / above
+IT2a   A      11081   114 |           0.0968         0.1023 |  2.1393      3243       0.1355 | inside / inside
+IT2a   B      22797    82 |           0.2181         0.2262 |  2.0042      4813       0.2202 | above / above
+m4-derived s15 L ranges (context only): cross_excess_eva L 0.0261..0.1459 (n=21); x_edge_mi_word L 0.0280..0.1497 (n=21)
+
+--- s15 within_manuscript 95 % half-widths (hi95-lo95)/2, ZL3b 41-page subsets, s15_ranges.json ---
+cross_excess_eva: hw=0.0304 (lo95 0.1477, hi95 0.2085, median 0.1801, n_splits 200)
+x_edge_mi_word: hw=0.0320 (lo95 0.1568, hi95 0.2208, median 0.1890, n_splits 200)
+ZL3b: cross_excess_eva: |A-B|=0.1118 = 3.7 hw -> > one half-width; x_edge_mi_word: |A-B|=0.1139 = 3.6 hw -> > one half-width
+RF1b: cross_excess_eva: |A-B|=0.1188 = 3.9 hw -> > one half-width; x_edge_mi_word: |A-B|=0.1206 = 3.8 hw -> > one half-width
+IT2a: cross_excess_eva: |A-B|=0.1213 = 4.0 hw -> > one half-width; x_edge_mi_word: |A-B|=0.1239 = 3.9 hw -> > one half-width
+
+--- real-line L range: pooled native rows (the decision range) ---
+row                       tokens  >=5k | cross_excess_eva x_edge_mi_word | file
+cremma_all                 25002   yes |           0.0491         0.0643 | results_s18_cremma_all.json
+cremma_c15                 10190   yes |           0.0390         0.0524 | results_s18_cremma_c15.json
+cremma_prose15              6890   yes |           0.0239         0.0414 | results_s18_cremma_prose15.json
+gib_realline_pooled        10023   yes |           0.0127         0.0298 | results_s17_gib_realline_pooled.json
+mhg_nibelungenlied         25000   yes |           0.0792         0.0832 | results_s17_mhg_nibelungenlied.json
+oldfrench_roland           25004   yes |           0.0911         0.0971 | results_s17_oldfrench_roland.json
+occitan_croisade           25006   yes |           0.1084         0.1123 | results_s17_occitan_croisade.json
+italian_dante              25001   yes |           0.1615         0.1672 | results_s17_italian_dante.json
+real-line range cross_excess_eva: 0.0127 (gib_realline_pooled) .. 0.1615 (italian_dante); n=8 of 8 pooled rows carry the metric
+real-line range x_edge_mi_word: 0.0298 (gib_realline_pooled) .. 0.1672 (italian_dante); n=8 of 8 pooled rows carry the metric
+
+--- per-manuscript CREMMA rows with tokens >= 5000 (reported beside, NOT in the range) ---
+cremma_BIS-193           tokens=6981 | cross_excess_eva=0.0974 (inside pooled range); x_edge_mi_word=NA (NA pooled range)
+cremma_CLM13027          tokens=6732 | cross_excess_eva=0.0680 (inside pooled range); x_edge_mi_word=NA (NA pooled range)
+2 per-manuscript rows at >= 5000 tokens
+
+--- s30 Part 1 survival (filed A/B stratified null; copied verbatim from results_s30_phase2_deltas.txt lines 3-14) ---
+results_s30_phase2_deltas.txt sha256 411cedb5de3335089700318cb7cbec4c3568f095f20d9a40fe26e805c290a914
+  s30:3: --- PART 1 (s20 delta): Currier A vs. Currier B Position-Stratified Coupling Null ---
+  s30:4:   ZL3b_eva   [Currier_A]: pages=114 tok= 11224 | obs_MI=0.1460 within_ex=+0.1206 cell_strat_ex=+0.1263±0.0017 (survival=104.8%)
+  s30:5:   ZL3b_eva   [Currier_B]: pages= 83 tok= 23063 | obs_MI=0.2489 within_ex=+0.2323 cell_strat_ex=+0.2393±0.0008 (survival=103.0%)
+  s30:6:   RF1b       [Currier_A]: pages=114 tok= 11047 | obs_MI=0.1309 within_ex=+0.1063 cell_strat_ex=+0.1121±0.0015 (survival=105.4%)
+  s30:7:   RF1b       [Currier_B]: pages= 83 tok= 23012 | obs_MI=0.2423 within_ex=+0.2254 cell_strat_ex=+0.2321±0.0008 (survival=103.0%)
+  s30:8:   IT2a       [Currier_A]: pages=114 tok= 11074 | obs_MI=0.1187 within_ex=+0.0965 cell_strat_ex=+0.1017±0.0016 (survival=105.4%)
+  s30:9:   IT2a       [Currier_B]: pages= 82 tok= 22781 | obs_MI=0.2340 within_ex=+0.2181 cell_strat_ex=+0.2248±0.0009 (survival=103.1%)
+  s30:10: 
+  s30:11: --- PART 1B (s20 delta): Non-Voynich Syllable & Dante Edge-Table Transfer on Currier A vs. B ---
+  s30:12:   Table=LA_Herbal_Syllable  : Gen_Currier_A_edge=+0.6741 (h2=1.860) | Gen_Currier_B_edge=+0.6371 (h2=1.645)
+  s30:13:   Table=IT_Dante_Rank       : Gen_Currier_A_edge=+0.2530 (h2=1.856) | Gen_Currier_B_edge=+0.2111 (h2=1.648)
+  s30:14: PART 1 VERDICT: BOTH CURRIER A AND B COUPLING SURVIVE STRATIFICATION (min survival=103.0%), AND NON-VOYNICH SYLLABLE/PROSE TABLES MECHANICALLY DRIVE COUPLING IN BOTH (min ex=+0.2111 >= +0.09)
+
+--- pre-registered reading (positions vs the pooled real-line range) ---
+ZL3b: A cross_excess_eva 0.1203 inside, x_edge_mi_word 0.1265 inside | B cross_excess_eva 0.2321 above, x_edge_mi_word 0.2404 above -> coupling anomaly is a B-text property
+RF1b: A cross_excess_eva 0.1071 inside, x_edge_mi_word 0.1126 inside | B cross_excess_eva 0.2259 above, x_edge_mi_word 0.2332 above -> coupling anomaly is a B-text property
+IT2a: A cross_excess_eva 0.0968 inside, x_edge_mi_word 0.1023 inside | B cross_excess_eva 0.2181 above, x_edge_mi_word 0.2262 above -> coupling anomaly is a B-text property
+READING: coupling anomaly is a B-text property
+
+done-when (s20): results_s20.txt holds the six rows, the real-line range, and the printed reading -> MET
+run finished Sat Oct 17 20:50:14 PDT 2026 (`date`)

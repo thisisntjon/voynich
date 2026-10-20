@@ -1,0 +1,678 @@
+{
+ "script_sha256": "02925f76f29f5709d87370ebc9e82efb6ece6799f941a9a47e106ad3317e532c",
+ "stub": "02925f76f29f5709d87370ebc9e82efb6ece6799f941a9a47e106ad3317e532c",
+ "primary": "FAVOURED G (all/A/B agree)",
+ "kill_all": [
+  "C",
+  "G",
+  "L",
+  "X"
+ ],
+ "secondary": "SIZE-DEPENDENT (full LEAN L ['L', 'L', 'L'], matched MIXED ['X', 'L', 'tie'])",
+ "full": {
+  "all": {
+   "fam": {
+    "L": {
+     "outs": [
+      "h2",
+      "jsd_first_fg",
+      "p_init_enrich",
+      "m_final_enrich",
+      "cross_excess_eva",
+      "redup_pct",
+      "x_edge_mi_word",
+      "x_ltr_minus_rtl",
+      "x_moran_I"
+     ],
+     "tight_outs": [
+      "h2",
+      "jsd_first_fg",
+      "p_init_enrich",
+      "m_final_enrich",
+      "cross_excess_eva",
+      "redup_pct",
+      "x_ltr_minus_rtl"
+     ],
+     "na": []
+    },
+    "C": {
+     "outs": [
+      "h2",
+      "jsd_first_fg",
+      "cross_excess_eva",
+      "redup_pct",
+      "x_edge_mi_word",
+      "types_25k",
+      "x_ltr_minus_rtl",
+      "x_moran_I",
+      "lex_beta",
+      "lex_rate_late_early",
+      "lex_edit1_excess",
+      "slot_table_likeness"
+     ],
+     "tight_outs": [
+      "h2",
+      "jsd_first_fg",
+      "cross_excess_eva",
+      "redup_pct",
+      "x_edge_mi_word",
+      "types_25k",
+      "x_moran_I",
+      "lex_beta",
+      "lex_rate_late_early",
+      "lex_edit1_excess",
+      "slot_table_likeness"
+     ],
+     "na": [
+      "p_init_enrich",
+      "m_final_enrich"
+     ]
+    },
+    "G": {
+     "outs": [
+      "jsd_first_fg",
+      "m_final_enrich",
+      "cross_excess_eva",
+      "x_edge_mi_word",
+      "x_moran_I"
+     ],
+     "tight_outs": [
+      "jsd_first_fg",
+      "m_final_enrich",
+      "cross_excess_eva",
+      "x_edge_mi_word",
+      "x_moran_I"
+     ],
+     "na": []
+    },
+    "X": {
+     "outs": [
+      "h2",
+      "p_init_enrich",
+      "m_final_enrich",
+      "x_edge_mi_word",
+      "x_moran_I",
+      "lex_beta",
+      "lex_rate_late_early",
+      "lex_edit1_excess",
+      "slot_occupancy_pc",
+      "slot_table_likeness",
+      "slot_core_crowding",
+      "bake_char3_minus_unigram"
+     ],
+     "tight_outs": [
+      "m_final_enrich",
+      "x_edge_mi_word",
+      "x_moran_I",
+      "lex_beta",
+      "lex_rate_late_early",
+      "lex_edit1_excess",
+      "slot_occupancy_pc",
+      "slot_table_likeness",
+      "slot_core_crowding",
+      "bake_char3_minus_unigram"
+     ],
+     "na": [
+      "types_25k"
+     ]
+    }
+   },
+   "kill": [
+    "L",
+    "C",
+    "G",
+    "X"
+   ],
+   "fav": [
+    "G"
+   ],
+   "fav_x": [
+    "jsd_first_fg",
+    "cross_excess_eva",
+    "redup_pct",
+    "x_ltr_minus_rtl"
+   ],
+   "fav_l": [
+    "lex_beta",
+    "lex_rate_late_early",
+    "lex_edit1_excess",
+    "slot_occupancy_pc",
+    "slot_table_likeness",
+    "slot_core_crowding",
+    "bake_char3_minus_unigram"
+   ],
+   "counted": [
+    "h2",
+    "jsd_first_fg",
+    "p_init_enrich",
+    "m_final_enrich",
+    "cross_excess_eva",
+    "redup_pct",
+    "x_edge_mi_word",
+    "types_25k",
+    "x_ltr_minus_rtl",
+    "x_moran_I",
+    "lex_beta",
+    "lex_rate_late_early",
+    "lex_edit1_excess",
+    "slot_occupancy_pc",
+    "slot_table_likeness",
+    "slot_core_crowding",
+    "bake_char3_minus_unigram"
+   ],
+   "flipped": [
+    "x_position_entropy"
+   ],
+   "cls": {
+    "h2": "ANOM",
+    "sd_len": "NONDIAG",
+    "jsd_first_fg": "FAV_X",
+    "p_init_enrich": "ANOM",
+    "m_final_enrich": "ANOM",
+    "cross_excess_eva": "FAV_X",
+    "redup_pct": "FAV_X",
+    "x_edge_mi_word": "ANOM",
+    "types_25k": "NA",
+    "x_position_entropy": "ANOM",
+    "x_ltr_minus_rtl": "FAV_X",
+    "x_moran_I": "ANOM",
+    "lex_beta": "FAV_L",
+    "lex_rate_late_early": "FAV_L",
+    "lex_edit1_excess": "FAV_L",
+    "slot_occupancy_pc": "FAV_L",
+    "slot_table_likeness": "FAV_L",
+    "slot_core_crowding": "FAV_L",
+    "info_mi_adjacent": "FAV_L",
+    "info_samecol_minus_othercol": "NONDIAG",
+    "bake_char3_minus_unigram": "FAV_L",
+    "x_hapax_10k": "FAV_L",
+    "info_mi_page": "FAV_L",
+    "info_bpe_adjacent": "NA"
+   },
+   "outside_all": [
+    "x_edge_mi_word",
+    "x_moran_I"
+   ]
+  },
+  "A": {
+   "fam": {
+    "L": {
+     "outs": [
+      "h2",
+      "jsd_first_fg",
+      "p_init_enrich",
+      "m_final_enrich",
+      "redup_pct",
+      "x_position_entropy",
+      "bake_char3_minus_unigram"
+     ],
+     "tight_outs": [
+      "h2",
+      "jsd_first_fg",
+      "p_init_enrich",
+      "m_final_enrich",
+      "redup_pct",
+      "x_position_entropy"
+     ],
+     "na": []
+    },
+    "C": {
+     "outs": [
+      "h2",
+      "jsd_first_fg",
+      "cross_excess_eva",
+      "redup_pct",
+      "x_edge_mi_word",
+      "types_25k",
+      "lex_edit1_excess",
+      "slot_table_likeness"
+     ],
+     "tight_outs": [
+      "h2",
+      "jsd_first_fg",
+      "cross_excess_eva",
+      "redup_pct",
+      "x_edge_mi_word",
+      "types_25k",
+      "lex_edit1_excess",
+      "slot_table_likeness"
+     ],
+     "na": [
+      "p_init_enrich",
+      "m_final_enrich"
+     ]
+    },
+    "G": {
+     "outs": [
+      "jsd_first_fg",
+      "cross_excess_eva",
+      "x_edge_mi_word"
+     ],
+     "tight_outs": [
+      "jsd_first_fg",
+      "cross_excess_eva",
+      "x_edge_mi_word"
+     ],
+     "na": []
+    },
+    "X": {
+     "outs": [
+      "h2",
+      "m_final_enrich",
+      "x_edge_mi_word",
+      "lex_edit1_excess",
+      "slot_occupancy_pc",
+      "slot_table_likeness",
+      "slot_core_crowding",
+      "bake_char3_minus_unigram"
+     ],
+     "tight_outs": [
+      "m_final_enrich",
+      "x_edge_mi_word",
+      "lex_edit1_excess",
+      "slot_occupancy_pc",
+      "slot_table_likeness",
+      "slot_core_crowding",
+      "bake_char3_minus_unigram"
+     ],
+     "na": [
+      "types_25k"
+     ]
+    }
+   },
+   "kill": [
+    "L",
+    "C",
+    "G",
+    "X"
+   ],
+   "fav": [
+    "G"
+   ],
+   "fav_x": [
+    "jsd_first_fg",
+    "p_init_enrich",
+    "redup_pct",
+    "x_position_entropy"
+   ],
+   "fav_l": [
+    "x_edge_mi_word",
+    "lex_edit1_excess",
+    "slot_occupancy_pc",
+    "slot_table_likeness",
+    "slot_core_crowding"
+   ],
+   "counted": [
+    "h2",
+    "jsd_first_fg",
+    "p_init_enrich",
+    "m_final_enrich",
+    "cross_excess_eva",
+    "redup_pct",
+    "x_edge_mi_word",
+    "types_25k",
+    "x_position_entropy",
+    "lex_edit1_excess",
+    "slot_occupancy_pc",
+    "slot_table_likeness",
+    "slot_core_crowding",
+    "bake_char3_minus_unigram"
+   ],
+   "flipped": [
+    "x_ltr_minus_rtl",
+    "x_moran_I",
+    "lex_beta",
+    "lex_rate_late_early"
+   ],
+   "cls": {
+    "h2": "ANOM",
+    "sd_len": "NONDIAG",
+    "jsd_first_fg": "FAV_X",
+    "p_init_enrich": "FAV_X",
+    "m_final_enrich": "ANOM",
+    "cross_excess_eva": "NONDIAG",
+    "redup_pct": "FAV_X",
+    "x_edge_mi_word": "FAV_L",
+    "types_25k": "NA",
+    "x_position_entropy": "FAV_X",
+    "x_ltr_minus_rtl": "FAV_X",
+    "x_moran_I": "ANOM",
+    "lex_beta": "FAV_L",
+    "lex_rate_late_early": "FAV_L",
+    "lex_edit1_excess": "FAV_L",
+    "slot_occupancy_pc": "FAV_L",
+    "slot_table_likeness": "FAV_L",
+    "slot_core_crowding": "FAV_L",
+    "info_mi_adjacent": "ANOM",
+    "info_samecol_minus_othercol": "NONDIAG",
+    "bake_char3_minus_unigram": "ANOM",
+    "x_hapax_10k": "FAV_L",
+    "info_mi_page": "FAV_L",
+    "info_bpe_adjacent": "NA"
+   },
+   "outside_all": []
+  },
+  "B": {
+   "fam": {
+    "L": {
+     "outs": [
+      "h2",
+      "jsd_first_fg",
+      "m_final_enrich",
+      "cross_excess_eva",
+      "redup_pct",
+      "x_edge_mi_word",
+      "x_position_entropy",
+      "x_moran_I",
+      "slot_occupancy_pc"
+     ],
+     "tight_outs": [
+      "h2",
+      "jsd_first_fg",
+      "m_final_enrich",
+      "cross_excess_eva",
+      "redup_pct",
+      "x_position_entropy",
+      "slot_occupancy_pc"
+     ],
+     "na": []
+    },
+    "C": {
+     "outs": [
+      "h2",
+      "jsd_first_fg",
+      "cross_excess_eva",
+      "redup_pct",
+      "x_edge_mi_word",
+      "types_25k",
+      "x_moran_I",
+      "lex_beta",
+      "lex_edit1_excess",
+      "slot_table_likeness"
+     ],
+     "tight_outs": [
+      "h2",
+      "jsd_first_fg",
+      "cross_excess_eva",
+      "redup_pct",
+      "x_edge_mi_word",
+      "types_25k",
+      "x_moran_I",
+      "lex_beta",
+      "lex_edit1_excess",
+      "slot_table_likeness"
+     ],
+     "na": [
+      "m_final_enrich"
+     ]
+    },
+    "G": {
+     "outs": [
+      "jsd_first_fg",
+      "m_final_enrich",
+      "cross_excess_eva",
+      "x_edge_mi_word",
+      "x_moran_I"
+     ],
+     "tight_outs": [
+      "jsd_first_fg",
+      "m_final_enrich",
+      "cross_excess_eva",
+      "x_edge_mi_word",
+      "x_moran_I"
+     ],
+     "na": []
+    },
+    "X": {
+     "outs": [
+      "h2",
+      "m_final_enrich",
+      "x_edge_mi_word",
+      "x_position_entropy",
+      "x_moran_I",
+      "lex_beta",
+      "lex_edit1_excess",
+      "slot_occupancy_pc",
+      "slot_table_likeness",
+      "slot_core_crowding",
+      "bake_char3_minus_unigram"
+     ],
+     "tight_outs": [
+      "m_final_enrich",
+      "x_edge_mi_word",
+      "x_moran_I",
+      "lex_beta",
+      "lex_edit1_excess",
+      "slot_occupancy_pc",
+      "slot_table_likeness",
+      "slot_core_crowding",
+      "bake_char3_minus_unigram"
+     ],
+     "na": [
+      "types_25k"
+     ]
+    }
+   },
+   "kill": [
+    "L",
+    "C",
+    "G",
+    "X"
+   ],
+   "fav": [
+    "G"
+   ],
+   "fav_x": [
+    "jsd_first_fg",
+    "cross_excess_eva",
+    "redup_pct"
+   ],
+   "fav_l": [
+    "lex_beta",
+    "lex_edit1_excess",
+    "slot_table_likeness",
+    "slot_core_crowding",
+    "bake_char3_minus_unigram"
+   ],
+   "counted": [
+    "h2",
+    "jsd_first_fg",
+    "m_final_enrich",
+    "cross_excess_eva",
+    "redup_pct",
+    "x_edge_mi_word",
+    "types_25k",
+    "x_position_entropy",
+    "x_moran_I",
+    "lex_beta",
+    "lex_edit1_excess",
+    "slot_occupancy_pc",
+    "slot_table_likeness",
+    "slot_core_crowding",
+    "bake_char3_minus_unigram"
+   ],
+   "flipped": [
+    "p_init_enrich",
+    "x_ltr_minus_rtl",
+    "lex_rate_late_early"
+   ],
+   "cls": {
+    "h2": "ANOM",
+    "sd_len": "NONDIAG",
+    "jsd_first_fg": "FAV_X",
+    "p_init_enrich": "ANOM",
+    "m_final_enrich": "ANOM",
+    "cross_excess_eva": "FAV_X",
+    "redup_pct": "FAV_X",
+    "x_edge_mi_word": "ANOM",
+    "types_25k": "NA",
+    "x_position_entropy": "ANOM",
+    "x_ltr_minus_rtl": "FAV_X",
+    "x_moran_I": "ANOM",
+    "lex_beta": "FAV_L",
+    "lex_rate_late_early": "FAV_L",
+    "lex_edit1_excess": "FAV_L",
+    "slot_occupancy_pc": "ANOM",
+    "slot_table_likeness": "FAV_L",
+    "slot_core_crowding": "FAV_L",
+    "info_mi_adjacent": "FAV_L",
+    "info_samecol_minus_othercol": "NONDIAG",
+    "bake_char3_minus_unigram": "FAV_L",
+    "x_hapax_10k": "FAV_L",
+    "info_mi_page": "FAV_L",
+    "info_bpe_adjacent": "NA"
+   },
+   "outside_all": [
+    "x_edge_mi_word",
+    "x_moran_I"
+   ]
+  }
+ },
+ "matched": {
+  "all": {
+   "cls": {
+    "h2": "ANOM",
+    "sd_len": "NONDIAG",
+    "jsd_first_fg": "NONDIAG",
+    "p_init_enrich": "FAV_X",
+    "m_final_enrich": "ANOM",
+    "cross_excess_eva": "NONDIAG",
+    "redup_pct": "NONDIAG",
+    "x_position_entropy": "ANOM"
+   },
+   "fav_x": [
+    "p_init_enrich"
+   ],
+   "fav_l": []
+  },
+  "A": {
+   "cls": {
+    "h2": "ANOM",
+    "sd_len": "NONDIAG",
+    "jsd_first_fg": "NONDIAG",
+    "p_init_enrich": "NONDIAG",
+    "m_final_enrich": "FAV_L",
+    "cross_excess_eva": "NONDIAG",
+    "redup_pct": "NONDIAG",
+    "x_position_entropy": "ANOM"
+   },
+   "fav_x": [],
+   "fav_l": [
+    "m_final_enrich"
+   ]
+  },
+  "B": {
+   "cls": {
+    "h2": "ANOM",
+    "sd_len": "NONDIAG",
+    "jsd_first_fg": "NONDIAG",
+    "p_init_enrich": "ANOM",
+    "m_final_enrich": "ANOM",
+    "cross_excess_eva": "NONDIAG",
+    "redup_pct": "NONDIAG",
+    "x_position_entropy": "ANOM"
+   },
+   "fav_x": [],
+   "fav_l": []
+  }
+ },
+ "matched_ranges": {
+  "h2": {
+   "L": {
+    "min": 2.409,
+    "max": 3.2155,
+    "n": 38
+   },
+   "X": {
+    "min": 2.4328,
+    "max": 4.003,
+    "n": 38
+   }
+  },
+  "sd_len": {
+   "L": {
+    "min": 1.394,
+    "max": 3.17,
+    "n": 38
+   },
+   "X": {
+    "min": 1.352,
+    "max": 6.584,
+    "n": 38
+   }
+  },
+  "jsd_first_fg": {
+   "L": {
+    "min": 0.0697,
+    "max": 0.408,
+    "n": 38
+   },
+   "X": {
+    "min": 0.0526,
+    "max": 0.356,
+    "n": 38
+   }
+  },
+  "p_init_enrich": {
+   "L": {
+    "min": 0.0,
+    "max": 6.0,
+    "n": 28
+   },
+   "X": {
+    "min": 0.0,
+    "max": 12.0,
+    "n": 35
+   }
+  },
+  "m_final_enrich": {
+   "L": {
+    "min": 0.0,
+    "max": 6.0,
+    "n": 27
+   },
+   "X": {
+    "min": 0.0,
+    "max": 3.0,
+    "n": 35
+   }
+  },
+  "cross_excess_eva": {
+   "L": {
+    "min": -0.1213,
+    "max": 0.2071,
+    "n": 38
+   },
+   "X": {
+    "min": -0.0702,
+    "max": 0.3049,
+    "n": 38
+   }
+  },
+  "redup_pct": {
+   "L": {
+    "min": 0.0,
+    "max": 1.258,
+    "n": 38
+   },
+   "X": {
+    "min": 0.0,
+    "max": 4.029,
+    "n": 38
+   }
+  },
+  "x_position_entropy": {
+   "L": {
+    "min": 1.8182966471809585,
+    "max": 2.115850468339025,
+    "n": 38
+   },
+   "X": {
+    "min": 1.7182332452972522,
+    "max": 2.2550417848811275,
+    "n": 38
+   }
+  }
+ },
+ "ranges_file": "n7_gibberish_ranges.json"
+}

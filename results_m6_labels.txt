@@ -1,0 +1,227 @@
+m6_labels.py  run 2026-10-17 16:48:36 local  seed=20261017  shuffles=200
+data: ZL3b-n.txt; words with '?' dropped; label tokens = all words in L* records
+
+==============================================================================
+1. INVENTORY  (tokens / types / hapax share of types)
+==============================================================================
+-- by illus --
+                        labels(L*)      circle+radial(C*,R*)             paragraph(P*)
+A             148     140    0.950      448     329    0.827      279     221    0.851
+B             126     113    0.903        -       -        -     6240    1395    0.664
+C             212     188    0.899     1296     671    0.748      694     417    0.767
+H              31      20    0.750        -       -        -    11468    3324    0.687
+P             241     226    0.947        -       -        -     2306     939    0.718
+S               -       -        -        -       -        -    11586    3275    0.690
+T              62      37    0.730        -       -        -     2284     953    0.706
+Z             344     279    0.849      947     549    0.772        -       -        -
+ALL          1164     837    0.833     2691    1267    0.767    34857    7025    0.680
+
+-- by hand --
+                        labels(L*)      circle+radial(C*,R*)             paragraph(P*)
+1             273     245    0.927      173      76    0.724    10481    2985    0.684
+2             135     116    0.897      187     142    0.852    10800    2434    0.676
+3               5       5    1.000        -       -        -    11703    3302    0.691
+4             699     549    0.849     2331    1155    0.776      540     382    0.822
+5              52      34    0.765        -       -        -      873     536    0.780
+?               -       -        -        -       -        -      460     309    0.816
+ALL          1164     837    0.833     2691    1267    0.767    34857    7025    0.680
+
+-- by lang --
+                        labels(L*)      circle+radial(C*,R*)             paragraph(P*)
+?             559     449    0.857     2163    1055    0.764      548     392    0.834
+A             268     240    0.925        -       -        -    11231    3217    0.689
+B             337     262    0.866      528     318    0.764    23078    4788    0.680
+ALL          1164     837    0.833     2691    1267    0.767    34857    7025    0.680
+
+label loci (L* records with >=1 clear word): 997; primary (first-word) tokens: 997; all-position label tokens: 1164; label pages: 57
+label unit subtypes: {'Lp': 5, 'L0': 352, 'Lx': 9, 'Ls': 84, 'La': 9, 'Lz': 344, 'Ln': 64, 'Lt': 56, 'Lc': 36, 'Lf': 205}
+
+==============================================================================
+2. PROFILE: h2 (a1 char_entropies, space as symbol), h1, length, first/last glyph
+==============================================================================
+-- tokenization: eva --
+set                                       n    alpha       h1       h2       h3     mlen    sdlen
+labels (all tokens)                    1164       23    3.819    2.409    2.040    5.279    2.064
+circle+radial                          2691       26    3.774    2.207    1.915    4.823    2.101
+paragraph (all)                       34857       26    3.871    2.109    1.845    4.990    1.788
+bag null: random P words, n=labels 1164.000   21.550    3.869    2.087    1.771    4.989    1.784
+   (sd)                               0.000    1.014    0.007    0.019    0.018    0.049    0.038
+contiguous P sample, n=labels      1164.000   21.110    3.837    1.968    1.628    4.991    1.769
+   (sd)                               0.000    0.937    0.034    0.138    0.123    0.229    0.069
+labels vs bag null: z(h2)=+16.79  z(h1)=-6.74  z(mlen)=+5.89  z(sdlen)=+7.43
+labels vs contiguous: z(h2)=+3.20
+  per hand (labels vs bag of same-hand paragraph words, 100 draws):
+    hand 1: labels n=273 h2=2.433  bag h2=2.043±0.043  z=+9.03  mlen 5.49 vs 4.79
+    hand 2: labels n=135 h2=1.949  bag h2=1.813±0.061  z=+2.23  mlen 4.87 vs 4.92
+    hand 3: labels=5 P words=11703 (skipped: too few)
+    hand 4: labels=699 P words=540 (skipped: too few)
+    hand 5: labels n=52 h2=2.007  bag h2=1.862±0.065  z=+2.21  mlen 2.58 vs 5.27
+  frequency-matched bag (P tokens drawn to match label corpus-frequency bins, 100 draws): h2=2.350±0.013  mlen=5.67  sdlen=1.86  labels z(h2)=+4.52
+
+-- tokenization: glyph --
+set                                       n    alpha       h1       h2       h3     mlen    sdlen
+labels (all tokens)                    1164       29    3.792    2.470    2.089    4.978    1.940
+circle+radial                          2691       32    3.737    2.308    2.007    4.458    1.925
+paragraph (all)                       34857       32    3.859    2.236    2.000    4.462    1.645
+bag null: random P words, n=labels 1164.000   27.440    3.856    2.200    1.885    4.465    1.644
+   (sd)                               0.000    1.071    0.009    0.021    0.017    0.048    0.034
+contiguous P sample, n=labels      1164.000   26.780    3.821    2.108    1.769    4.460    1.619
+   (sd)                               0.000    1.221    0.038    0.164    0.140    0.289    0.064
+labels vs bag null: z(h2)=+13.09  z(h1)=-6.75  z(mlen)=+10.62  z(sdlen)=+8.85
+labels vs contiguous: z(h2)=+2.20
+  per hand (labels vs bag of same-hand paragraph words, 100 draws):
+    hand 1: labels n=273 h2=2.474  bag h2=2.197±0.043  z=+6.43  mlen 5.18 vs 4.13
+    hand 2: labels n=135 h2=1.993  bag h2=1.855±0.060  z=+2.30  mlen 4.69 vs 4.48
+    hand 3: labels=5 P words=11703 (skipped: too few)
+    hand 4: labels=699 P words=540 (skipped: too few)
+    hand 5: labels n=52 h2=2.025  bag h2=1.923±0.083  z=+1.22  mlen 2.48 vs 4.67
+  frequency-matched bag (P tokens drawn to match label corpus-frequency bins, 100 draws): h2=2.513±0.015  mlen=5.02  sdlen=1.69  labels z(h2)=-2.90
+
+-- first glyph distribution (share of tokens) --
+                  o     ch      d     qo      y      a     sh      s      l      k      t      r
+labels        0.538  0.062  0.098  0.009  0.080  0.058  0.021  0.049  0.014  0.014  0.009  0.013
+paragraph     0.206  0.161  0.094  0.149  0.050  0.052  0.088  0.034  0.040  0.034  0.028  0.014
+JSD(labels, paragraph)=0.1721; bag-null JSD=0.0042±0.0011 (max 0.0081); z=+150.8
+-- last glyph distribution (share of tokens) --
+                  y     dy    iin     ar     ol     ey     al     or      s      m     in      o
+labels        0.224  0.148  0.044  0.087  0.049  0.037  0.076  0.036  0.058  0.058  0.020  0.033
+paragraph     0.122  0.180  0.114  0.069  0.094  0.106  0.052  0.059  0.032  0.026  0.047  0.033
+JSD(labels, paragraph)=0.0727; bag-null JSD=0.0048±0.0013 (max 0.0087); z=+53.2
+
+==============================================================================
+3. REGISTER: initial-glyph shares, label-only types, cross-page recurrence
+==============================================================================
+section     nL     nP |    o- L   o- P     z |   qo- L  qo- P |   gal L  gal P |  o- Pline1
+A          148    279 |   0.459  0.222   6.9 |   0.007  0.061 |   0.061  0.054 |      0.179
+B          126   6240 |   0.595  0.212  10.5 |   0.024  0.243 |   0.016  0.062 |      0.086
+C          212    694 |   0.542  0.218  11.5 |   0.005  0.118 |   0.009  0.086 |      0.187
+H           31  11468 |   0.226  0.174   0.8 |   0.000  0.091 |   0.194  0.149 |      0.168
+P          241   2306 |   0.506  0.217  10.9 |   0.000  0.122 |   0.050  0.094 |      0.112
+T           62   2284 |   0.129  0.220  -1.7 |   0.065  0.140 |   0.145  0.095 |      0.093
+Z          344      0 |   0.672    nan   nan |   0.003    nan |   0.009    nan |        nan
+ALL       1164  34857 |   0.538  0.206  28.1 |   0.009  0.149 |   0.037  0.103 |      0.136
+(z: label o-share vs binomial at that section's paragraph o-share; Z section has no paragraph text)
+
+-- by hand (o-initial) --
+  hand 1: labels n=273 o-=0.484 | P n=10481 o-=0.162 line-initial o-=0.179 | z vs P all=+14.4 vs P line1=+13.1
+  hand 2: labels n=135 o-=0.563 | P n=10800 o-=0.223 line-initial o-=0.094 | z vs P all=+9.5 vs P line1=+18.7
+  hand 3: labels n=5 o-=0.400 | P n=11703 o-=0.234 line-initial o-=0.136 | z vs P all=+0.9 vs P line1=+1.7
+  hand 4: labels n=699 o-=0.587 | P n=540 o-=0.211 line-initial o-=0.190 | z vs P all=+24.3 vs P line1=+26.7
+  hand 5: labels n=52 o-=0.115 | P n=873 o-=0.181 line-initial o-=0.043 | z vs P all=-1.2 vs P line1=+2.6
+
+label types never in paragraph text: 448/837 = 0.535; by tokens 466/1164 = 0.400
+  bag null (random P sample of same size; type absent from the REST of P): types 0.253±0.016, tokens 0.139±0.010
+  circle/radial types never in paragraph text: 595/1267 = 0.470
+
+-- cross-page recurrence --
+label tokens whose type is a LABEL on another page: 0.378; whose type occurs ANYWHERE on another page: 0.634
+label types on >1 page (as labels): 127 of 837
+  label-shuffle null: 137.1±1.7 (min 133); running-text null (random P tokens, same n): 158.1±6.5 (min 137)
+  observed 127: z vs label-shuffle -5.9, z vs running-text -4.8
+  token recurrence (type on another page, any unit), by corpus-wide frequency bin, labels vs P tokens:
+  bin       nL   L rec     nP   P rec
+  f=1      423   0.000   4584   0.000
+  f=2       83   0.964   1547   0.977
+  3-5      129   1.000   2489   1.000
+  6-10     109   1.000   2255   1.000
+  11-30    130   1.000   4609   1.000
+  31+      290   1.000  19373   1.000
+  frequency-matched: labels 0.634 vs P reweighted to label bins 0.635
+  label frequency bins (share of tokens): f=1:0.36, f=2:0.07, 3-5:0.11, 6-10:0.09, 11-30:0.11, 31+:0.25
+  paragraph frequency bins:               f=1:0.13, f=2:0.04, 3-5:0.07, 6-10:0.06, 11-30:0.13, 31+:0.56
+
+==============================================================================
+4. LABELS AS A LIST: adjacent similarity in ZL order vs shuffled order
+==============================================================================
+STARS f68r1-3 (Ls): pages=3 labels=67 adjacent pairs=64
+   adjacent norm. edit distance   obs=0.729  shuffled=0.729±0.018  z=-0.00  p(lower)=0.493
+   shared first glyph             obs=0.516  shuffled=0.487±0.034  z=+0.83  p(higher)=0.259
+   shared last glyph              obs=0.125  shuffled=0.136±0.038  z=-0.28  p(higher)=0.672
+   shared 2-char prefix           obs=0.094  shuffled=0.104±0.031  z=-0.32  p(higher)=0.756
+   longest same-first-glyph run   obs=10.000  shuffled=10.140±2.876  z=-0.05  p(higher)=0.522
+ZODIAC f70v2-f73v (Lz): pages=12 labels=344 adjacent pairs=332
+   adjacent norm. edit distance   obs=0.696  shuffled=0.709±0.009  z=-1.53  p(lower)=0.060
+   shared first glyph             obs=0.464  shuffled=0.485±0.016  z=-1.27  p(higher)=0.925
+   shared last glyph              obs=0.154  shuffled=0.137±0.017  z=+0.97  p(higher)=0.199
+   shared 2-char prefix           obs=0.157  shuffled=0.164±0.017  z=-0.40  p(higher)=0.687
+   longest same-first-glyph run   obs=11.000  shuffled=12.935±2.672  z=-0.72  p(higher)=0.821
+PHARMA jar/container labels (Lc): pages=11 labels=35 adjacent pairs=24
+   adjacent norm. edit distance   obs=0.711  shuffled=0.734±0.025  z=-0.93  p(lower)=0.209
+   shared first glyph             obs=0.333  shuffled=0.326±0.056  z=+0.13  p(higher)=0.587
+   shared last glyph              obs=0.250  shuffled=0.253±0.054  z=-0.05  p(higher)=0.687
+   shared 2-char prefix           obs=0.125  shuffled=0.072±0.034  z=+1.56  p(higher)=0.174
+   longest same-first-glyph run   obs=3.000  shuffled=3.000±0.000  z=+nan  p(higher)=1.000
+PHARMA plant-part labels (Lf): pages=14 labels=204 adjacent pairs=190
+   adjacent norm. edit distance   obs=0.755  shuffled=0.767±0.011  z=-1.11  p(lower)=0.134
+   shared first glyph             obs=0.316  shuffled=0.305±0.022  z=+0.47  p(higher)=0.373
+   shared last glyph              obs=0.137  shuffled=0.112±0.019  z=+1.31  p(higher)=0.095
+   shared 2-char prefix           obs=0.111  shuffled=0.095±0.018  z=+0.88  p(higher)=0.209
+   longest same-first-glyph run   obs=6.000  shuffled=6.875±1.330  z=-0.66  p(higher)=0.866
+ALL label pages, all L* in file order: pages=55 labels=1162 adjacent pairs=1107
+   adjacent norm. edit distance   obs=0.750  shuffled=0.762±0.004  z=-2.79  p(lower)=0.005
+   shared first glyph             obs=0.362  shuffled=0.365±0.009  z=-0.25  p(higher)=0.602
+   shared last glyph              obs=0.130  shuffled=0.124±0.008  z=+0.78  p(higher)=0.274
+   shared 2-char prefix           obs=0.124  shuffled=0.110±0.008  z=+1.79  p(higher)=0.050
+   longest same-first-glyph run   obs=11.000  shuffled=13.490±2.200  z=-1.13  p(higher)=0.945
+control: adjacent words WITHIN paragraph lines (same statistics, shuffle within line):
+PARAGRAPH lines (all): pages=400 labels=3349 adjacent pairs=2949
+   adjacent norm. edit distance   obs=0.768  shuffled=0.772±0.003  z=-1.21  p(lower)=0.114
+   shared first glyph             obs=0.156  shuffled=0.149±0.005  z=+1.28  p(higher)=0.100
+   shared last glyph              obs=0.155  shuffled=0.143±0.005  z=+2.51  p(higher)=0.010
+   shared 2-char prefix           obs=0.103  shuffled=0.099±0.004  z=+1.04  p(higher)=0.184
+   longest same-first-glyph run   obs=5.000  shuffled=5.180±0.691  z=-0.26  p(higher)=0.886
+longest same-first-glyph runs (observed, per group):
+   stars: run=10 glyph=o labels=['otys', 'olor', 'ockhy', 'ofcheor', 'otchdy', 'otykchs', 'otol', 'otor', 'oiinar', 'okoldy']
+   zodiac: run=11 glyph=o labels=['ofchdamy', 'oklairdy', 'okaram', 'okairy', 'okealar', 'otaraldy', 'okalar', 'okal', 'okaly', 'okal', 'okeey']
+   pharma Lc: run=3 glyph=o labels=['otorchety', 'otaldy', 'ofyskydal']
+   pharma Lf: run=6 glyph=o labels=['osal', 'orald', 'oldar', 'otoky', 'otaly', 'oram']
+
+zodiac label order per page (first glyphs):
+   f70v2  n=34 oyooooaoooooocooaoooooaoaoodoosoyo
+   f70v1  n=25 otadosooooooooyoooaaooooa
+   f71r   n=17 oaoooooocoroooooo
+   f71v   n=22 cacooaoooaaoadoaooooss
+   f72r1  n=23 ocoaaoycaooooyaosooooao
+   f72r2  n=31 oooooooooooaoodoooooooorooocoao
+   f72r3  n=39 oooooacyaodooooyoyooofoeyaooooooyoysoao
+   f72v3  n=34 oooooocooosodcodcoooococlooooooooy
+   f72v2  n=31 oooaaooccsoooyooyocooooooocoyoo
+   f72v1  n=28 oooooooooaoyoyoocyooooooyooo
+   f73r   n=30 ocoyoooyooyosoocdooooooococako
+   f73v   n=30 oooeosoeooyoyyyooyoyqoeooyyoyy
+
+==============================================================================
+5. SCHWARTZ 2026 REPLICATION (his numbers quoted from data/external/schwartz-2026-preprint/text.txt)
+==============================================================================
+quantity                                                        Schwartz          ours
+label tokens (primary; all positions)                         864; 1,164     997; 1164
+o-initial share: primary labels                                      59%         59.2%
+  all-position label tokens                                                      53.8%
+  line-initial words on label pages                                  42%         10.3%
+    probe: line-initial of ALL units on label pages (L+C+R+P)                       38.4%
+    probe: line-initial of circle/radial lines on label pages                       61.1%
+  null matched on hand+section (all positions)                       32%         20.7%
+  null matched on hand+section, line-initial                                     15.3%
+  paragraph-initial running text (<%> lines, first word)             18%          5.0%
+  all paragraph words                                                            20.6%
+o-initial excess over matched null (binomial z)                 11-17 sd         30.0
+  vs line-initial matched null                                                   38.5
+  per hand (primary labels vs same-hand paragraph words / line-initial):
+    hand 1: labels n=254 o-=0.50 vs P 0.16 (z=+14.8) vs P line1 0.18 (z=+13.5)
+    hand 2: labels n=124 o-=0.58 vs P 0.22 (z=+9.6) vs P line1 0.09 (z=+18.6)
+    hand 3: labels n=2 o-=1.00 vs P 0.23 (z=+2.6) vs P line1 0.14 (z=+3.6)
+    hand 4: labels n=569 o-=0.67 vs P 0.21 (z=+26.9) vs P line1 0.19 (z=+29.3)
+    hand 5: labels n=48 o-=0.12 vs P 0.18 (z=-1.0) vs P line1 0.04 (z=+2.8)
+labels never occurring in running text (types; tokens)               44%      55%; 43%
+label types on >1 page: observed; label-shuffle; running-text null   75; 85; 111  99; 110; 138
+  (null sd: label-shuffle 1.5, running-text 7.0; z=-7.3, -5.5)
+  caveat: label-shuffle null keeps per-page label counts; our running-text null draws random P tokens with their own pages (P pages are more numerous and longer than label pages, which raises recurrence).
+
+==============================================================================
+SUMMARY
+==============================================================================
+h2 (eva): labels 2.409 | paragraph all 2.109 | bag null (random P words, n=1164) 2.087±0.019 | contiguous P sample 1.968±0.138
+   labels z vs bag = +16.79; bag vs full-P difference = -0.023 (the 'no neighbours'/sample-size effect alone)
+   frequency-matched bag (P tokens matched to label rarity bins): eva 2.350±0.013 (labels 2.409, z=+4.5); glyph 2.513±0.015 (labels 2.470, z=-2.9) -> most of the label h2 excess is vocabulary rarity (36% corpus-hapax tokens vs 13% in paragraphs), not a distinct glyph grammar
+o-initial: labels 0.538 vs paragraph 0.206 (line-initial 0.136); qo-: labels 0.009 vs paragraph 0.149; gallows-initial: 0.037 vs 0.103
+label types never in paragraph text 0.535 vs bag null 0.253; label types on >1 page 127 vs label-shuffle 137 / running-text 158

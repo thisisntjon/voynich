@@ -1,0 +1,6 @@
+pages 2 para_marks 2 excluded_foldouts 1
+count_list_sha256 a1a4f533bbf48e7fc1b90b0ec1b915828e3c8befe61368cd829f4e749c8611d8
+exit=0
+pages 2 para_marks 0 excluded_foldouts 0
+count_list_sha256 e815896a5374c934d9760dcc3576e02db5dbdf969007aefce356c79e46e09e0a
+exit=3

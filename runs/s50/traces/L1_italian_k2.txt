@@ -1,0 +1,98 @@
+job L1 italian key 2 start 00:59:26
+L1 r0 p1 sweep 0 T=20.000 score=-312283.6 nulls=0 M=37141
+L1 r0 p1 sweep 10 T=7.767 score=-278485.2 nulls=0 M=37141
+L1 r0 p1 sweep 20 T=3.016 score=-277151.6 nulls=0 M=37141
+L1 r0 p1 sweep 30 T=1.171 score=-277138.3 nulls=0 M=37141
+L1 r0 p1 sweep 39 T=0.000 score=-277136.6 nulls=0 M=37141
+L1 restart 0 final score -277136.6 nulls 0
+L1 r1 p1 sweep 0 T=20.000 score=-301428.1 nulls=0 M=37141
+L1 r1 p1 sweep 10 T=7.767 score=-200027.8 nulls=0 M=37141
+L1 r1 p1 sweep 20 T=3.016 score=-200007.5 nulls=0 M=37141
+L1 r1 p1 sweep 30 T=1.171 score=-200007.5 nulls=0 M=37141
+L1 r1 p1 sweep 39 T=0.000 score=-200007.5 nulls=0 M=37141
+L1 restart 1 final score -200007.5 nulls 0
+L1 r2 p1 sweep 0 T=20.000 score=-317762.1 nulls=0 M=37141
+L1 r2 p1 sweep 10 T=7.767 score=-296632.8 nulls=0 M=37141
+L1 r2 p1 sweep 20 T=3.016 score=-296359.6 nulls=0 M=37141
+L1 r2 p1 sweep 30 T=1.171 score=-296339.5 nulls=0 M=37141
+L1 r2 p1 sweep 39 T=0.000 score=-296339.3 nulls=0 M=37141
+L1 restart 2 final score -296339.3 nulls 0
+L1 r3 p1 sweep 0 T=20.000 score=-320387.5 nulls=0 M=37141
+L1 r3 p1 sweep 10 T=7.767 score=-200072.8 nulls=0 M=37141
+L1 r3 p1 sweep 20 T=3.016 score=-200007.5 nulls=0 M=37141
+L1 r3 p1 sweep 30 T=1.171 score=-200007.6 nulls=0 M=37141
+L1 r3 p1 sweep 39 T=0.000 score=-200007.5 nulls=0 M=37141
+L1 restart 3 final score -200007.5 nulls 0
+L1 r4 p1 sweep 0 T=20.000 score=-328525.7 nulls=0 M=37141
+L1 r4 p1 sweep 10 T=7.767 score=-299388.3 nulls=0 M=37141
+L1 r4 p1 sweep 20 T=3.016 score=-299049.9 nulls=0 M=37141
+L1 r4 p1 sweep 30 T=1.171 score=-299030.9 nulls=0 M=37141
+L1 r4 p1 sweep 39 T=0.000 score=-299026.9 nulls=0 M=37141
+L1 restart 4 final score -299026.9 nulls 0
+L1 r5 p1 sweep 0 T=20.000 score=-329075.4 nulls=0 M=37141
+L1 r5 p1 sweep 10 T=7.767 score=-278955.1 nulls=0 M=37141
+L1 r5 p1 sweep 20 T=3.016 score=-278847.1 nulls=0 M=37141
+L1 r5 p1 sweep 30 T=1.171 score=-278831.7 nulls=0 M=37141
+L1 r5 p1 sweep 39 T=0.000 score=-278830.1 nulls=0 M=37141
+L1 restart 5 final score -278830.1 nulls 0
+L1 r6 p1 sweep 0 T=20.000 score=-326362.0 nulls=0 M=37141
+L1 r6 p1 sweep 10 T=7.767 score=-279520.0 nulls=0 M=37141
+L1 r6 p1 sweep 20 T=3.016 score=-278771.4 nulls=0 M=37141
+L1 r6 p1 sweep 30 T=1.171 score=-278762.4 nulls=0 M=37141
+L1 r6 p1 sweep 39 T=0.000 score=-278754.6 nulls=0 M=37141
+L1 restart 6 final score -278754.6 nulls 0
+L1 r7 p1 sweep 0 T=20.000 score=-328961.2 nulls=0 M=37141
+L1 r7 p1 sweep 10 T=7.767 score=-294719.7 nulls=0 M=37141
+L1 r7 p1 sweep 20 T=3.016 score=-294502.3 nulls=0 M=37141
+L1 r7 p1 sweep 30 T=1.171 score=-294492.2 nulls=0 M=37141
+L1 r7 p1 sweep 39 T=0.000 score=-294488.7 nulls=0 M=37141
+L1 restart 7 final score -294488.7 nulls 0
+L1 r8 p1 sweep 0 T=20.000 score=-321138.3 nulls=0 M=37141
+L1 r8 p1 sweep 10 T=7.767 score=-302809.0 nulls=0 M=37141
+L1 r8 p1 sweep 20 T=3.016 score=-302262.4 nulls=0 M=37141
+L1 r8 p1 sweep 30 T=1.171 score=-302240.4 nulls=0 M=37141
+L1 r8 p1 sweep 39 T=0.000 score=-302240.0 nulls=0 M=37141
+L1 restart 8 final score -302240.0 nulls 0
+L1 r9 p1 sweep 0 T=20.000 score=-305429.1 nulls=0 M=37141
+L1 r9 p1 sweep 10 T=7.767 score=-279906.2 nulls=0 M=37141
+L1 r9 p1 sweep 20 T=3.016 score=-279784.2 nulls=0 M=37141
+L1 r9 p1 sweep 30 T=1.171 score=-279729.7 nulls=0 M=37141
+L1 r9 p1 sweep 39 T=0.000 score=-279723.9 nulls=0 M=37141
+L1 restart 9 final score -279723.9 nulls 0
+L1 r10 p1 sweep 0 T=20.000 score=-314591.7 nulls=0 M=37141
+L1 r10 p1 sweep 10 T=7.767 score=-281542.4 nulls=0 M=37141
+L1 r10 p1 sweep 20 T=3.016 score=-281389.0 nulls=0 M=37141
+L1 r10 p1 sweep 30 T=1.171 score=-281245.5 nulls=0 M=37141
+L1 r10 p1 sweep 39 T=0.000 score=-281227.1 nulls=0 M=37141
+L1 restart 10 final score -281227.1 nulls 0
+L1 r11 p1 sweep 0 T=20.000 score=-314122.6 nulls=0 M=37141
+L1 r11 p1 sweep 10 T=7.767 score=-253802.9 nulls=0 M=37141
+L1 r11 p1 sweep 20 T=3.016 score=-200007.5 nulls=0 M=37141
+L1 r11 p1 sweep 30 T=1.171 score=-200007.5 nulls=0 M=37141
+L1 r11 p1 sweep 39 T=0.000 score=-200007.5 nulls=0 M=37141
+L1 restart 11 final score -200007.5 nulls 0
+L1 r12 p1 sweep 0 T=20.000 score=-334144.0 nulls=0 M=37141
+L1 r12 p1 sweep 10 T=7.767 score=-295686.0 nulls=0 M=37141
+L1 r12 p1 sweep 20 T=3.016 score=-295417.9 nulls=0 M=37141
+L1 r12 p1 sweep 30 T=1.171 score=-294919.8 nulls=0 M=37141
+L1 r12 p1 sweep 39 T=0.000 score=-294919.7 nulls=0 M=37141
+L1 restart 12 final score -294919.7 nulls 0
+L1 r13 p1 sweep 0 T=20.000 score=-312266.3 nulls=0 M=37141
+L1 r13 p1 sweep 10 T=7.767 score=-277104.5 nulls=0 M=37141
+L1 r13 p1 sweep 20 T=3.016 score=-276944.8 nulls=0 M=37141
+L1 r13 p1 sweep 30 T=1.171 score=-276848.9 nulls=0 M=37141
+L1 r13 p1 sweep 39 T=0.000 score=-276846.7 nulls=0 M=37141
+L1 restart 13 final score -276846.7 nulls 0
+L1 r14 p1 sweep 0 T=20.000 score=-308891.3 nulls=0 M=37141
+L1 r14 p1 sweep 10 T=7.767 score=-282110.5 nulls=0 M=37141
+L1 r14 p1 sweep 20 T=3.016 score=-281845.3 nulls=0 M=37141
+L1 r14 p1 sweep 30 T=1.171 score=-281553.9 nulls=0 M=37141
+L1 r14 p1 sweep 39 T=0.000 score=-281542.0 nulls=0 M=37141
+L1 restart 14 final score -281542.0 nulls 0
+L1 r15 p1 sweep 0 T=20.000 score=-314301.4 nulls=0 M=37141
+L1 r15 p1 sweep 10 T=7.767 score=-200033.0 nulls=0 M=37141
+L1 r15 p1 sweep 20 T=3.016 score=-200007.6 nulls=0 M=37141
+L1 r15 p1 sweep 30 T=1.171 score=-200007.6 nulls=0 M=37141
+L1 r15 p1 sweep 39 T=0.000 score=-200007.5 nulls=0 M=37141
+L1 restart 15 final score -200007.5 nulls 0
+RESULT acc=0.9999 info={'chosen': 'given', 'acc': 0.9998920610934211, 'score': np.float64(-200007.48773363366), 'nulls': 0, 'units': 131, 'elapsed': 58.78546595573425}

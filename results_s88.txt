@@ -1,0 +1,327 @@
+s88_f39_f23_f36_triangulation_closures.py  start=2026-10-18 07:33:20 (datetime.now)  seed=20261017
+stub_match: True
+sha256 s88_f39_f23_f36_triangulation_closures.py: a80556562048a1468085b0aea7aaf8a29326002fee43613f2206586365f6a59b
+sha256 s88_f39_f23_f36_triangulation_closures.prereg.sha256: bbe6aa5e94db9eac0df9c763749c57b5cd31a9d6db56d9771abe648a58a57d2e
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import corpora_ext.py sha256=d7a0be47e77b57b18b6b7ed1cfe413b276c6cbb7638422941af9dd485ce5126a
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  local import p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  local import s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  local import s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  local import s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  local import s58_two_layer_heldout.py sha256=634e2534941bc1fc0b0942f2e6b331049835d8c61a4be8efe43e358ef6f5c0e3
+  local import s61_joint_word_producer.py sha256=059a218127de9fbbde080dc78c658e6b31dec3ecae33be7c5b8b511b81266622
+  local import s64_naibbe_taxonomy.py sha256=6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3
+  local import s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  local import s71_weakened_grille_and_sticky_naibbe_loqo.py sha256=9b4f024792c778ae300fd14d7d1e85f03243d50964b1f7f61ba09f1553c11a18
+  local import s73_word_code_solver_and_syllabary.py sha256=06f2241b51c9f3149ee0d5236259f1dd046732b5e2a504c346183ff8f731b2d0
+  local import s75_transposition_nulls_and_mdl_bakeoff.py sha256=4f35f09afaaf525b01b99df8231cfc7019071bc67f4770efe56039a4a06a0828
+  local import s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  local import s77_deconfounded_scribe_and_comma_ablation_loqo.py sha256=56eb6afdafdc57654b56a7019ee6a9410752db9ffb08c3a9112f83dd0798cc5d
+  local import s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  local import s83_homophonic_line_table_loqo.py sha256=771ad770d5b9c4ec4413ea020fe0c42facf806dbeab141ded1100966c1b0c675
+  local import s88_f39_f23_f36_triangulation_closures.py sha256=a80556562048a1468085b0aea7aaf8a29326002fee43613f2206586365f6a59b
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import scoreboard/score.py sha256=3a7b7c3efea13b884362f9f7f07551835bab8ca158ecdb43b946c96a8b3fbf1d
+  local import tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+  Loaded ZL3b: 207 pages, 34857 paragraph tokens
+  Loaded RF1b: 207 pages, 34618 paragraph tokens
+  Loaded IT2a: 206 pages, 34411 paragraph tokens
+
+====================================================================================================
+PART 1 (F-39: s83 Homophonic Line-Table Cipher HLT on 15-Quire LOQO Across 3 Segmenters & T1/T2 Order)
+====================================================================================================
+
+--- 1A. 15-Quire LOQO Evaluation of s83 HLT (Selected Model SEL) Across 3 Transliterations x 3 Segmenters ---
+  Translit Segmenter         P1    P2    P3    P4    P5    P7  C2_MM   All7         MM_K50 [95% CI]        MM_K100 [95% CI]        MM_K200 [95% CI]  R_win(1)
+  ZL3b     SlotSegmenter   7/15  0/15  2/15  1/15  4/15 12/15   0/15   0/15 +0.1922 [+0.1831,+0.1999] +0.1888 [+0.1799,+0.1977] +0.1850 [+0.1770,+0.1927]    0.6085
+  ZL3b     Zattera         7/15  3/15  5/15  1/15  4/15 12/15   3/15   0/15 +0.0230 [+0.0148,+0.0297] +0.0173 [+0.0078,+0.0251] +0.0133 [+0.0034,+0.0241]    1.0625
+  ZL3b     Seg_Affix2      7/15  3/15  2/15  1/15  4/15 12/15   5/15   0/15 +0.0124 [+0.0092,+0.0153] +0.0068 [+0.0009,+0.0130] +0.0006 [-0.0053,+0.0065]    0.9463
+  RF1b     SlotSegmenter   8/15  0/15  5/15  3/15  5/15 14/15   0/15   0/15 +0.1762 [+0.1693,+0.1836] +0.1786 [+0.1717,+0.1884] +0.1718 [+0.1636,+0.1810]    0.6663
+  RF1b     Zattera         8/15  2/15  2/15  3/15  5/15 14/15   3/15   0/15 +0.0330 [+0.0289,+0.0377] +0.0288 [+0.0218,+0.0351] +0.0262 [+0.0188,+0.0350]    1.2020
+  RF1b     Seg_Affix2      8/15  2/15  2/15  3/15  5/15 14/15   6/15   0/15 +0.0311 [+0.0244,+0.0367] +0.0309 [+0.0233,+0.0375] +0.0251 [+0.0154,+0.0330]    1.0125
+  IT2a     SlotSegmenter  12/15  0/15  4/15  0/15  1/15 13/15   0/15   0/15 +0.1779 [+0.1712,+0.1842] +0.1849 [+0.1774,+0.1926] +0.1767 [+0.1684,+0.1851]    0.7889
+  IT2a     Zattera        12/15  1/15  5/15  0/15  1/15 13/15   4/15   0/15 +0.0399 [+0.0341,+0.0440] +0.0390 [+0.0320,+0.0449] +0.0269 [+0.0190,+0.0341]    1.1566
+  IT2a     Seg_Affix2     12/15  1/15  2/15  0/15  1/15 13/15   7/15   0/15 +0.0239 [+0.0205,+0.0274] +0.0224 [+0.0170,+0.0277] +0.0113 [+0.0068,+0.0166]    1.0390
+
+  Reference Real Voynich 15-Quire LOQO Matched-K Core Order & R_within(1) Across 3 Segmenters:
+    Voynich ZL3b  | SlotSegmenter : MM_K50=+0.0408 [+0.0348,+0.0484] (p=0.0050) | MM_K100=+0.0338 [+0.0278,+0.0420] (p=0.0050) | MM_K200=+0.0182 [+0.0077,+0.0331] (p=0.0149) | R_win(1)=1.1596
+    Voynich ZL3b  | Zattera       : MM_K50=+0.0644 [+0.0581,+0.0714] (p=0.0050) | MM_K100=+0.0730 [+0.0645,+0.0801] (p=0.0050) | MM_K200=+0.0619 [+0.0523,+0.0743] (p=0.0050) | R_win(1)=1.1197
+    Voynich ZL3b  | Seg_Affix2    : MM_K50=+0.0346 [+0.0248,+0.0472] (p=0.0050) | MM_K100=+0.0282 [+0.0151,+0.0476] (p=0.0050) | MM_K200=+0.0176 [+0.0027,+0.0363] (p=0.0199) | R_win(1)=1.1133
+    Voynich RF1b  | SlotSegmenter : MM_K50=+0.0352 [+0.0290,+0.0441] (p=0.0050) | MM_K100=+0.0260 [+0.0174,+0.0378] (p=0.0050) | MM_K200=+0.0164 [+0.0052,+0.0297] (p=0.0249) | R_win(1)=1.1700
+    Voynich RF1b  | Zattera       : MM_K50=+0.0609 [+0.0526,+0.0710] (p=0.0050) | MM_K100=+0.0725 [+0.0648,+0.0808] (p=0.0050) | MM_K200=+0.0578 [+0.0470,+0.0720] (p=0.0050) | R_win(1)=1.0983
+    Voynich RF1b  | Seg_Affix2    : MM_K50=+0.0363 [+0.0273,+0.0456] (p=0.0050) | MM_K100=+0.0259 [+0.0137,+0.0411] (p=0.0050) | MM_K200=+0.0133 [-0.0016,+0.0290] (p=0.0746) | R_win(1)=1.1438
+    Voynich IT2a  | SlotSegmenter : MM_K50=+0.0359 [+0.0289,+0.0463] (p=0.0050) | MM_K100=+0.0234 [+0.0147,+0.0370] (p=0.0050) | MM_K200=+0.0104 [-0.0016,+0.0254] (p=0.0995) | R_win(1)=1.2052
+    Voynich IT2a  | Zattera       : MM_K50=+0.0538 [+0.0476,+0.0609] (p=0.0050) | MM_K100=+0.0605 [+0.0531,+0.0670] (p=0.0050) | MM_K200=+0.0478 [+0.0397,+0.0574] (p=0.0050) | R_win(1)=1.1200
+    Voynich IT2a  | Seg_Affix2    : MM_K50=+0.0266 [+0.0173,+0.0382] (p=0.0050) | MM_K100=+0.0229 [+0.0122,+0.0366] (p=0.0149) | MM_K200=+0.0139 [+0.0015,+0.0262] (p=0.0348) | R_win(1)=1.1214
+
+--- 1B. Granularity (Letter, Syllable, Chunk2, SEL) x Segmenter x Reading Order (Standard, T1, T2) on ZL3b 15-Quire LOQO ---
+  Model / Granularity    Segmenter      Order           MM_K50        MM_K100 [95% CI]   MM_K200   p_K100  Ex_vs_Voy   P3_pref  R_win(1)
+  Voynich_ZL3b           SlotSegmenter  Standard       +0.0416 +0.0346 [+0.0276,+0.0425]   +0.0182   0.0050    +0.0000   +0.0730    1.1596
+  Voynich_ZL3b           SlotSegmenter  T1_line_rev    +0.0411 +0.0344 [+0.0274,+0.0422]   +0.0188   0.0050    +0.0000   +0.0730    1.1577
+  Voynich_ZL3b           SlotSegmenter  T2_tok_rev     +0.0414 +0.0362 [+0.0296,+0.0438]   +0.0192   0.0050    +0.0000   +0.0753    1.1577
+  Voynich_ZL3b           Zattera        Standard       +0.0645 +0.0741 [+0.0666,+0.0811]   +0.0617   0.0050    +0.0000   -0.0002    1.1197
+  Voynich_ZL3b           Zattera        T1_line_rev    +0.0649 +0.0739 [+0.0661,+0.0809]   +0.0628   0.0050    +0.0000   -0.0002    1.1259
+  Voynich_ZL3b           Zattera        T2_tok_rev     +0.0641 +0.0738 [+0.0663,+0.0810]   +0.0621   0.0050    +0.0000   +0.0052    1.1259
+  Voynich_ZL3b           Seg_Affix2     Standard       +0.0337 +0.0288 [+0.0159,+0.0466]   +0.0177   0.0050    +0.0000   +0.0535    1.1133
+  Voynich_ZL3b           Seg_Affix2     T1_line_rev    +0.0348 +0.0286 [+0.0152,+0.0465]   +0.0174   0.0050    +0.0000   +0.0535    1.1503
+  Voynich_ZL3b           Seg_Affix2     T2_tok_rev     +0.0345 +0.0282 [+0.0148,+0.0470]   +0.0186   0.0050    +0.0000   +0.0604    1.1503
+  HLT_SEL_ZL3b           SlotSegmenter  Standard       +0.1923 +0.1891 [+0.1791,+0.1989]   +0.1842   0.0050    +0.1466   +0.0913    0.6085
+  HLT_SEL_ZL3b           SlotSegmenter  T1_line_rev    +0.1920 +0.1896 [+0.1799,+0.1993]   +0.1845   0.0050    +0.1474   +0.0913    0.6415
+  HLT_SEL_ZL3b           SlotSegmenter  T2_tok_rev     +0.1917 +0.1896 [+0.1803,+0.1991]   +0.1856   0.0050    +0.1457   +0.0767    0.6415
+  HLT_SEL_ZL3b           Zattera        Standard       +0.0228 +0.0167 [+0.0076,+0.0243]   +0.0143   0.0050    -0.0644   +0.0053    1.0625
+  HLT_SEL_ZL3b           Zattera        T1_line_rev    +0.0238 +0.0168 [+0.0078,+0.0244]   +0.0132   0.0149    -0.0641   +0.0053    1.0747
+  HLT_SEL_ZL3b           Zattera        T2_tok_rev     +0.0228 +0.0177 [+0.0086,+0.0251]   +0.0149   0.0050    -0.0633   +0.0018    1.0747
+  HLT_SEL_ZL3b           Seg_Affix2     Standard       +0.0133 +0.0066 [+0.0007,+0.0126]   +0.0000   0.1542    -0.0400   +0.0132    0.9463
+  HLT_SEL_ZL3b           Seg_Affix2     T1_line_rev    +0.0129 +0.0052 [-0.0006,+0.0112]   +0.0005   0.2388    -0.0413   +0.0132    0.9520
+  HLT_SEL_ZL3b           Seg_Affix2     T2_tok_rev     +0.0136 +0.0064 [+0.0007,+0.0123]   +0.0001   0.1891    -0.0407   +0.0050    0.9520
+  lat-lett-p0.5-cad      SlotSegmenter  Standard       +0.2065 +0.2039 [+0.1970,+0.2138]   +0.1939   0.0050    +0.1615   +0.0937    0.5266
+  lat-lett-p0.5-cad      SlotSegmenter  T1_line_rev    +0.2052 +0.2035 [+0.1965,+0.2131]   +0.1940   0.0050    +0.1613   +0.0937    0.6291
+  lat-lett-p0.5-cad      SlotSegmenter  T2_tok_rev     +0.2049 +0.2040 [+0.1972,+0.2133]   +0.1937   0.0050    +0.1602   +0.0778    0.6291
+  lat-lett-p0.5-cad      Zattera        Standard       +0.0289 +0.0272 [+0.0216,+0.0320]   +0.0282   0.0050    -0.0539   -0.0013    1.1378
+  lat-lett-p0.5-cad      Zattera        T1_line_rev    +0.0281 +0.0263 [+0.0208,+0.0311]   +0.0281   0.0050    -0.0546   -0.0013    1.1564
+  lat-lett-p0.5-cad      Zattera        T2_tok_rev     +0.0280 +0.0268 [+0.0211,+0.0314]   +0.0287   0.0050    -0.0542   -0.0019    1.1564
+  lat-lett-p0.5-cad      Seg_Affix2     Standard       +0.0285 +0.0226 [+0.0182,+0.0267]   +0.0170   0.0050    -0.0240   +0.0121    1.0002
+  lat-lett-p0.5-cad      Seg_Affix2     T1_line_rev    +0.0279 +0.0226 [+0.0180,+0.0267]   +0.0166   0.0050    -0.0239   +0.0121    1.0002
+  lat-lett-p0.5-cad      Seg_Affix2     T2_tok_rev     +0.0281 +0.0227 [+0.0184,+0.0268]   +0.0166   0.0050    -0.0243   +0.0026    1.0002
+  lat-syll-p0.5-cad      SlotSegmenter  Standard       +0.2323 +0.2509 [+0.2373,+0.2634]   +0.2566   0.0050    +0.2084   +0.0351    0.8502
+  lat-syll-p0.5-cad      SlotSegmenter  T1_line_rev    +0.2326 +0.2497 [+0.2361,+0.2621]   +0.2567   0.0050    +0.2075   +0.0351    0.8870
+  lat-syll-p0.5-cad      SlotSegmenter  T2_tok_rev     +0.2331 +0.2500 [+0.2363,+0.2627]   +0.2561   0.0050    +0.2062   +0.0442    0.8870
+  lat-syll-p0.5-cad      Zattera        Standard       +0.0326 +0.0392 [+0.0333,+0.0454]   +0.0406   0.0050    -0.0419   -0.0262    1.3427
+  lat-syll-p0.5-cad      Zattera        T1_line_rev    +0.0330 +0.0384 [+0.0324,+0.0445]   +0.0403   0.0050    -0.0425   -0.0262    1.3538
+  lat-syll-p0.5-cad      Zattera        T2_tok_rev     +0.0322 +0.0392 [+0.0335,+0.0454]   +0.0406   0.0050    -0.0418   -0.0178    1.3538
+  lat-syll-p0.5-cad      Seg_Affix2     Standard       +0.0501 +0.0607 [+0.0552,+0.0676]   +0.0510   0.0050    +0.0141   -0.0050    1.3586
+  lat-syll-p0.5-cad      Seg_Affix2     T1_line_rev    +0.0503 +0.0605 [+0.0547,+0.0676]   +0.0505   0.0050    +0.0139   -0.0050    1.3539
+  lat-syll-p0.5-cad      Seg_Affix2     T2_tok_rev     +0.0501 +0.0602 [+0.0545,+0.0669]   +0.0498   0.0050    +0.0132   -0.0086    1.3539
+  lat-chun-p0.5-cad      SlotSegmenter  Standard       +0.1435 +0.1853 [+0.1657,+0.2009]   +0.2062   0.0050    +0.1428   +0.0295    0.4582
+  lat-chun-p0.5-cad      SlotSegmenter  T1_line_rev    +0.1435 +0.1844 [+0.1648,+0.2002]   +0.2077   0.0050    +0.1422   +0.0295    0.4880
+  lat-chun-p0.5-cad      SlotSegmenter  T2_tok_rev     +0.1435 +0.1845 [+0.1651,+0.2000]   +0.2074   0.0050    +0.1407   +0.0361    0.4880
+  lat-chun-p0.5-cad      Zattera        Standard       +0.0115 +0.0189 [+0.0099,+0.0253]   +0.0095   0.0050    -0.0623   -0.0281    1.1284
+  lat-chun-p0.5-cad      Zattera        T1_line_rev    +0.0120 +0.0194 [+0.0102,+0.0257]   +0.0095   0.0050    -0.0615   -0.0281    1.1433
+  lat-chun-p0.5-cad      Zattera        T2_tok_rev     +0.0123 +0.0182 [+0.0091,+0.0248]   +0.0095   0.0050    -0.0628   -0.0223    1.1433
+  lat-chun-p0.5-cad      Seg_Affix2     Standard       +0.0253 +0.0453 [+0.0352,+0.0536]   +0.0433   0.0050    -0.0013   -0.0222    0.9526
+  lat-chun-p0.5-cad      Seg_Affix2     T1_line_rev    +0.0257 +0.0450 [+0.0348,+0.0533]   +0.0441   0.0050    -0.0016   -0.0222    0.9485
+  lat-chun-p0.5-cad      Seg_Affix2     T2_tok_rev     +0.0257 +0.0450 [+0.0349,+0.0534]   +0.0442   0.0050    -0.0020   -0.0128    0.9485
+  ita-lett-p0.5-cad      SlotSegmenter  Standard       +0.2565 +0.2503 [+0.2339,+0.2731]   +0.2439   0.0050    +0.2078   +0.0882    0.6415
+  ita-lett-p0.5-cad      SlotSegmenter  T1_line_rev    +0.2562 +0.2517 [+0.2353,+0.2743]   +0.2434   0.0050    +0.2095   +0.0882    0.7130
+  ita-lett-p0.5-cad      SlotSegmenter  T2_tok_rev     +0.2565 +0.2508 [+0.2345,+0.2731]   +0.2428   0.0050    +0.2069   +0.0756    0.7130
+  ita-lett-p0.5-cad      Zattera        Standard       +0.0217 +0.0225 [+0.0146,+0.0306]   +0.0250   0.0050    -0.0587   -0.0066    1.2892
+  ita-lett-p0.5-cad      Zattera        T1_line_rev    +0.0217 +0.0221 [+0.0143,+0.0305]   +0.0254   0.0050    -0.0588   -0.0066    1.3142
+  ita-lett-p0.5-cad      Zattera        T2_tok_rev     +0.0219 +0.0223 [+0.0147,+0.0307]   +0.0243   0.0050    -0.0587   -0.0040    1.3142
+  ita-lett-p0.5-cad      Seg_Affix2     Standard       +0.0346 +0.0392 [+0.0308,+0.0469]   +0.0280   0.0050    -0.0074   +0.0125    1.1019
+  ita-lett-p0.5-cad      Seg_Affix2     T1_line_rev    +0.0342 +0.0404 [+0.0317,+0.0481]   +0.0267   0.0050    -0.0062   +0.0125    1.1368
+  ita-lett-p0.5-cad      Seg_Affix2     T2_tok_rev     +0.0345 +0.0388 [+0.0303,+0.0464]   +0.0282   0.0050    -0.0082   +0.0075    1.1368
+  ita-syll-p0.5-cad      SlotSegmenter  Standard       +0.0976 +0.1261 [+0.1149,+0.1337]   +0.1277   0.0050    +0.0836   +0.0076    0.4453
+  ita-syll-p0.5-cad      SlotSegmenter  T1_line_rev    +0.0977 +0.1260 [+0.1149,+0.1335]   +0.1287   0.0050    +0.0838   +0.0076    0.5028
+  ita-syll-p0.5-cad      SlotSegmenter  T2_tok_rev     +0.0977 +0.1264 [+0.1152,+0.1343]   +0.1282   0.0050    +0.0826   +0.0263    0.5028
+  ita-syll-p0.5-cad      Zattera        Standard       -0.0047 -0.0059 [-0.0107,-0.0011]   -0.0134   0.8358    -0.0870   -0.0239    1.1784
+  ita-syll-p0.5-cad      Zattera        T1_line_rev    -0.0040 -0.0058 [-0.0106,-0.0015]   -0.0137   0.8358    -0.0867   -0.0239    1.1975
+  ita-syll-p0.5-cad      Zattera        T2_tok_rev     -0.0050 -0.0057 [-0.0102,-0.0014]   -0.0130   0.8358    -0.0867   -0.0216    1.1975
+  ita-syll-p0.5-cad      Seg_Affix2     Standard       +0.0075 +0.0080 [+0.0021,+0.0161]   +0.0167   0.1095    -0.0386   -0.0173    0.9627
+  ita-syll-p0.5-cad      Seg_Affix2     T1_line_rev    +0.0086 +0.0080 [+0.0020,+0.0158]   +0.0160   0.1194    -0.0385   -0.0173    0.9987
+  ita-syll-p0.5-cad      Seg_Affix2     T2_tok_rev     +0.0083 +0.0084 [+0.0026,+0.0159]   +0.0158   0.1045    -0.0386   -0.0284    0.9987
+  ita-chun-p0.5-cad      SlotSegmenter  Standard       +0.2970 +0.3177 [+0.3009,+0.3332]   +0.3275   0.0050    +0.2752   +0.0430    0.3372
+  ita-chun-p0.5-cad      SlotSegmenter  T1_line_rev    +0.2975 +0.3174 [+0.3001,+0.3326]   +0.3269   0.0050    +0.2752   +0.0430    0.4330
+  ita-chun-p0.5-cad      SlotSegmenter  T2_tok_rev     +0.2973 +0.3173 [+0.3003,+0.3323]   +0.3272   0.0050    +0.2735   +0.0459    0.4330
+  ita-chun-p0.5-cad      Zattera        Standard       +0.0198 +0.0299 [+0.0250,+0.0367]   +0.0273   0.0050    -0.0512   -0.0392    1.0980
+  ita-chun-p0.5-cad      Zattera        T1_line_rev    +0.0205 +0.0298 [+0.0247,+0.0365]   +0.0280   0.0050    -0.0511   -0.0392    1.1347
+  ita-chun-p0.5-cad      Zattera        T2_tok_rev     +0.0206 +0.0296 [+0.0246,+0.0361]   +0.0280   0.0050    -0.0513   -0.0213    1.1347
+  ita-chun-p0.5-cad      Seg_Affix2     Standard       +0.0451 +0.0550 [+0.0496,+0.0621]   +0.0537   0.0050    +0.0084   -0.0260    0.9393
+  ita-chun-p0.5-cad      Seg_Affix2     T1_line_rev    +0.0455 +0.0560 [+0.0505,+0.0632]   +0.0542   0.0050    +0.0095   -0.0260    0.9640
+  ita-chun-p0.5-cad      Seg_Affix2     T2_tok_rev     +0.0449 +0.0552 [+0.0496,+0.0625]   +0.0536   0.0050    +0.0082   -0.0208    0.9640
+
+--- 1C. Pre-Registered Call CALL_1_F39_SEG_ORDER (X-01 on F-39 & seg + order Triangulation) ---
+  - Total (Translit x Seg x Quire) cells passing all 7 targets: 0/135 (req: 0/135); max C2 folds on any (Translit, Seg) = 7/15 (req: <= 8/15)
+  - Native SlotSegmenter min MM_K100 excess above Voynich 95% CI upper bound across all 7 models x 3 reading orders (Standard/T1/T2): +0.0826 bits (req: >= +0.0500 bits)
+  - Independent re-segmentation (Zattera, Seg_Affix2) max P3 prefix gain across 42 (Granularity x Seg x Order) cells: +0.0132 bits (vs Voynich +0.0535..+0.0753)
+  - CALL_1_F39_SEG_ORDER: TRUE (X-01 on F-39 DISCHARGED; F-39 triangulated across impl + seg + null + order)
+
+====================================================================================================
+PART 2 (F-23: All 4 Phase-4 Lexical Producers s57, s58, s61, s67 on 15-Quire LOQO Across impl + seg + physical)
+====================================================================================================
+
+--- 2A. Axis 1 (impl): All 4 Lexical Producers Across ZL3b, RF1b, IT2a on 15-Quire LOQO (45 Folds Each) ---
+  Producer             Translit    P1    P2    P3    P4    P5    P7   All6  MeanHolds   P1_gen   P2_gen   P3_gen   P4_gen   P5_gen  P7_ratio
+  P1_s57_local_mem     ZL3b      1/15  3/15  0/15  4/15 10/15  7/15   0/15    1.67/6   0.0073  -0.0295  -0.0642   0.1561  +0.0278     1.176
+  P2_s58_affix_wrap    ZL3b      3/15  4/15  0/15  1/15 15/15  0/15   0/15    1.53/6   0.0375  -0.0480  -0.0228   0.1160  +0.1679     1.598
+  P3_s61_joint_word    ZL3b      4/15  9/15  0/15  7/15 15/15  9/15   0/15    2.93/6   0.0598  -0.0973  -0.0161   0.1444  +0.0753     1.154
+  P4_s67_CA            ZL3b     14/15  2/15  1/15  1/15 13/15  9/15   0/15    2.67/6   0.1586  -0.0054  -0.0004   0.1235  +0.0172     1.175
+  P1_s57_local_mem     RF1b      1/15  2/15  0/15 11/15 12/15  9/15   0/15    2.33/6   0.0081  -0.0413  -0.0753   0.1528  +0.0239     1.157
+  P2_s58_affix_wrap    RF1b      4/15  2/15  1/15  3/15 15/15  0/15   0/15    1.67/6   0.0423  -0.0574  -0.0093   0.1273  +0.1790     1.563
+  P3_s61_joint_word    RF1b      4/15  7/15  0/15 11/15 15/15 10/15   0/15    3.13/6   0.0524  -0.0991  -0.0226   0.1692  +0.0950     1.149
+  P4_s67_CA            RF1b     13/15  2/15  2/15  7/15 11/15 11/15   0/15    3.07/6   0.1545  -0.0048  +0.0016   0.1393  +0.0160     1.142
+  P1_s57_local_mem     IT2a      1/15  2/15  0/15 10/15 15/15  9/15   0/15    2.47/6   0.0055  -0.0289  -0.0774   0.1460  +0.0421     1.150
+  P2_s58_affix_wrap    IT2a      3/15  4/15  1/15  1/15 15/15  0/15   0/15    1.60/6   0.0137  -0.0508  -0.0203   0.1057  +0.1750     1.584
+  P3_s61_joint_word    IT2a      3/15  5/15  1/15  6/15 15/15 10/15   0/15    2.67/6   0.0459  -0.0975  -0.0201   0.1481  +0.0910     1.155
+  P4_s67_CA            IT2a     13/15  2/15  2/15  2/15 11/15  9/15   0/15    2.60/6   0.1456  -0.0038  -0.0006   0.1051  +0.0137     1.175
+
+--- 2B. Axis 2 (seg): All 4 Lexical Producers Across 3 Independent Segmenters on ZL3b 15-Quire LOQO ---
+  Producer             Segmenter      Mode          P1    P2    P3    P4    P5    P7   All6  MeanHolds   P2_gen   P3_gen  P7_ratio
+  P1_s57_local_mem     SlotSegmenter  native      1/15  3/15  0/15  4/15 10/15  7/15   0/15    1.67/6  -0.0295  -0.0642     1.176
+  P1_s57_local_mem     Zattera        rescore     1/15  3/15  5/15  4/15 10/15  7/15   0/15    2.00/6  +0.0027  -0.0143     1.176
+  P1_s57_local_mem     Zattera        native      0/15  2/15  4/15  8/15 15/15  9/15   0/15    2.53/6  -0.0091  -0.0198     1.170
+  P1_s57_local_mem     Seg_Affix2     rescore     1/15  2/15  0/15  4/15 10/15  7/15   0/15    1.60/6  -0.0263  -0.0177     1.176
+  P1_s57_local_mem     Seg_Affix2     native      2/15  1/15  0/15  7/15 14/15  7/15   0/15    2.07/6  -0.0218  -0.0162     1.174
+  P2_s58_affix_wrap    SlotSegmenter  native      3/15  4/15  0/15  1/15 15/15  0/15   0/15    1.53/6  -0.0480  -0.0228     1.598
+  P2_s58_affix_wrap    Zattera        rescore     3/15  7/15  4/15  1/15 15/15  0/15   0/15    2.00/6  -0.0678  -0.0086     1.598
+  P2_s58_affix_wrap    Zattera        native      3/15  0/15  5/15  1/15 15/15  3/15   0/15    1.80/6  +0.0124  -0.0092     1.292
+  P2_s58_affix_wrap    Seg_Affix2     rescore     3/15  2/15  2/15  1/15 15/15  0/15   0/15    1.53/6  -0.0764  +0.0135     1.598
+  P2_s58_affix_wrap    Seg_Affix2     native      5/15  4/15  1/15  1/15 15/15  0/15   0/15    1.73/6  -0.0757  +0.0186     1.723
+  P3_s61_joint_word    SlotSegmenter  native      4/15  9/15  0/15  7/15 15/15  9/15   0/15    2.93/6  -0.0973  -0.0161     1.154
+  P3_s61_joint_word    Zattera        rescore     4/15  6/15  5/15  7/15 15/15  9/15   0/15    3.07/6  -0.0817  -0.0086     1.154
+  P3_s61_joint_word    Zattera        native      3/15  8/15  4/15  4/15 15/15  9/15   0/15    2.87/6  -0.0816  -0.0083     1.109
+  P3_s61_joint_word    Seg_Affix2     rescore     4/15  8/15  3/15  7/15 15/15  9/15   0/15    3.07/6  -0.1138  +0.0029     1.154
+  P3_s61_joint_word    Seg_Affix2     native      5/15  7/15  2/15  8/15 15/15  9/15   0/15    3.07/6  -0.1214  +0.0112     1.163
+  P4_s67_CA            SlotSegmenter  native     14/15  2/15  1/15  1/15 13/15  9/15   0/15    2.67/6  -0.0054  -0.0004     1.175
+  P4_s67_CA            Zattera        rescore    14/15  7/15  4/15  1/15 13/15  9/15   0/15    3.20/6  -0.0576  -0.0102     1.175
+  P4_s67_CA            Zattera        native     12/15  4/15  2/15  0/15 14/15 13/15   0/15    3.00/6  -0.0088  -0.0107     1.055
+  P4_s67_CA            Seg_Affix2     rescore    14/15  2/15  0/15  1/15 13/15  9/15   0/15    2.60/6  -0.0385  -0.0471     1.175
+  P4_s67_CA            Seg_Affix2     native     14/15  0/15  1/15  0/15 15/15  5/15   0/15    2.33/6  +0.0011  -0.0138     1.246
+
+--- 2C. Axis 3 (physical): All 4 Producers on s45 127-Page Physical Ink-Verified Subset (ink_lines_ZL3b & ink_ZL3b) ---
+  Clean ink-verified pages: 127 pages across 12 non-empty quires; 11 quires have >= 4 clean pages (A:10, B:13, C:14, D:15, E:11, F:14, G:10, H:5, M:8, Q:4, T:20; small/empty clean quires: I:0, N:0, O:3, S:0)
+  Physical Corpus  Producer                 P1     P2     P3     P4     P5     P7  All6(11q)  All6(12q)  MeanHolds   P1_gen   P2_gen   P3_gen   P5_gen   P7_rt
+  ink_lines_127    P1_s57_local_mem      0/11  1/11  0/11  7/11  3/11  7/11      0/11      0/12    1.64/6   0.0152  -0.0243  -0.0790  -0.0374   1.164
+  ink_lines_127    P2_s58_affix_wrap     1/11  4/11  1/11  1/11 11/11  0/11      0/11      0/12    1.64/6   0.0249  -0.0468  -0.0156  +0.1911   1.562
+  ink_lines_127    P3_s61_joint_word     3/11  4/11  1/11  5/11  7/11  7/11      0/11      0/12    2.45/6   0.0671  -0.1150  -0.0146  +0.0244   1.160
+  ink_lines_127    P4_s67_CA            10/11  1/11  1/11  1/11 11/11  7/11      0/11      0/12    2.82/6   0.1527  +0.0085  -0.0588  +0.1240   1.189
+  ink_full_127     P1_s57_local_mem      0/11  3/11  0/11  4/11  0/11  4/11      0/11      0/12    1.00/6   0.0144  -0.0229  -0.0755  -0.1328   1.189
+  ink_full_127     P2_s58_affix_wrap     2/11  3/11  1/11  2/11 11/11  0/11      0/11      0/12    1.73/6   0.0886  -0.0289  -0.0062  +0.1897   1.546
+  ink_full_127     P3_s61_joint_word     1/11  5/11  0/11  8/11  3/11  5/11      0/11      0/12    2.00/6   0.0996  -0.1070  -0.0281  -0.0546   1.161
+  ink_full_127     P4_s67_CA             8/11  1/11  0/11  4/11 11/11  4/11      0/11      0/12    2.55/6   0.1991  +0.0098  -0.0739  +0.1526   1.200
+
+--- 2D. Pre-Registered Call CALL_2_F23_TRIANGULATED (F-23 Across impl + seg + physical on 15-Quire LOQO) ---
+  - Axis 1 (impl: 4 producers x 3 transliterations x 15 LOQO folds): 0/180 cells pass all 6 targets (req: 0/180)
+  - Axis 2 (seg: 4 producers x 3 segmenters [rescore + native] x 15 LOQO folds): 0/300 cells pass all 6 targets (req: 0/300)
+  - Axis 3 (physical: 4 producers x 2 s45 ink corpora x 11/12 LOQO folds): 0/88 (>=4-page folds) and 0/96 (all non-empty folds) pass all 6 targets (req: 0)
+  - CALL_2_F23_TRIANGULATED: TRUE (F-23 triangulated across impl + seg + physical on 15-quire LOQO)
+
+====================================================================================================
+PART 3 (F-36 & L-179: Factorial Resolution of s73 vs s84 & De-Aliased Word-Code Gate G_word Across impl + seg + null)
+====================================================================================================
+
+--- 3A-1. 15-Quire LOQO Decomposition of s84: Full 105-Null Pool vs 80-Draw Non-Cipher Null Pool (LSHUF+BSHUF+S67+S57) ---
+  Text / Control           Translit CoreTypes      MeanMaxGain [95% CI]  Folds>All105  Folds>NonC80 ModalLang (n_L)              Margin [95% CI]
+  VOY_ZL3b                 ZL3b          2335     -6.94 [-48.47,+59.60]         0/15         6/15 italian (7/15)         -9.62 [-65.61,+21.64]
+  VOY_RF1b                 RF1b          2536    -10.14 [-48.84,+36.81]         0/15         6/15 occitan (6/15)         -0.30 [-27.69,+33.94]
+  VOY_IT2a                 IT2a          2380    -10.40 [-53.48,+30.27]         0/15         5/15 italian (6/15)         -5.87 [-40.69,+22.39]
+  CTRL_W3_latin            ZL3b           849     -4.94 [-42.94,+52.08]         0/15         5/15 latin (8/15)           +10.00 [-7.80,+30.77]
+  CTRL_W3_italian          ZL3b           849    +92.26 [-8.86,+426.41]        12/15        14/15 italian (14/15)       +45.44 [-7.65,+208.00]
+  CTRL_W3_german           ZL3b           849   +37.37 [-15.96,+235.15]         1/15        13/15 german (11/15)        +11.26 [-19.03,+55.93]
+  CTRL_W3_occitan          ZL3b           847    +93.80 [-9.19,+454.59]         9/15        14/15 occitan (14/15)       +40.94 [-5.33,+176.14]
+  CTRL_W3_czech            ZL3b           849   +58.72 [-26.10,+353.73]         5/15        12/15 czech (10/15)         +11.74 [-21.86,+66.66]
+  CTRL_W3_catalan          ZL3b           850   +119.84 [+0.19,+485.28]        12/15        15/15 catalan (13/15)       +30.88 [-12.47,+85.05]
+
+  Null-Family Summary on ZL3b 15-Quire LOQO (80 Non-Cipher Nulls vs 25 P4-D1 Letter/Chunk Ciphers):
+  Family       N_texts MeanCoreTypes   MeanMaxGain  MaxFolds>NonC80   n_L>=10/15   Margin_p95   Margin_Max
+  LSHUF             20        2335.0        -28.49            1/15        0/20         +0.74        +1.89
+  BSHUF             20        2335.0        -13.94            3/15        0/20         -0.25        +0.28
+  S67               20        1607.5        -16.25            2/15        0/20         -1.85        -1.12
+  S57               20        2401.7        -12.30            3/15        0/20         -1.56        -0.77
+  P4D1              25        1914.2        +45.74           15/15        2/25         +9.73       +20.11
+
+--- 3A-2. Split x Feature x Segmenter Factorial Bridge Between s73 (Bound Half) and s84 (Order-Free) ---
+  Split             FeatureMode  Segmenter      Translit   MaxGain BestLang   SecondLang    Margin  Null6_Max  Null20_p95  AboveNull20
+  S1_BoundHalf      F_asym_s73   SlotSegmenter  ZL3b        +50.56 catalan    occitan        +0.52      +6.22       +4.54          YES
+  S1_BoundHalf      F_asym_s73   SlotSegmenter  RF1b        +68.72 occitan    italian       +18.19      +6.22       +4.54          YES
+  S1_BoundHalf      F_asym_s73   SlotSegmenter  IT2a        +49.49 occitan    catalan       +13.68      +6.22       +4.54          YES
+  S1_BoundHalf      F_asym_s73   Zattera        ZL3b        +89.07 italian    catalan        +3.66      -6.52       -0.47          YES
+  S1_BoundHalf      F_asym_s73   Seg_Affix2     ZL3b        +45.76 occitan    catalan       +23.78      +1.53       +0.32          YES
+  S1_BoundHalf      F_sym_core   SlotSegmenter  ZL3b        +53.95 czech      italian       +14.54      +6.22       +4.54          YES
+  S1_BoundHalf      F_sym_core   SlotSegmenter  RF1b        +62.92 occitan    italian        +0.88      +6.22       +4.54          YES
+  S1_BoundHalf      F_sym_core   SlotSegmenter  IT2a        +56.34 italian    occitan        +5.01      +6.22       +4.54          YES
+  S1_BoundHalf      F_sym_core   Zattera        ZL3b        +73.11 german     occitan       +11.25      -6.52       -0.47          YES
+  S1_BoundHalf      F_sym_core   Zattera        RF1b        +50.11 italian    czech          +8.73      -6.52       -0.47          YES
+  S1_BoundHalf      F_sym_core   Zattera        IT2a        +89.29 occitan    italian       +28.37      -6.52       -0.47          YES
+  S1_BoundHalf      F_sym_core   Seg_Affix2     ZL3b        +57.77 occitan    italian       +35.28      +1.53       +0.32          YES
+  S1_BoundHalf      F_sym_core   Seg_Affix2     RF1b        +59.30 latin      czech          +1.50      +1.53       +0.32          YES
+  S1_BoundHalf      F_sym_core   Seg_Affix2     IT2a        +54.97 czech      occitan        +0.59      +1.53       +0.32          YES
+  S2_OrderFreeHalf  F_asym_s73   SlotSegmenter  ZL3b        +64.97 occitan    czech          +1.74     +29.37      +13.46          YES
+  S2_OrderFreeHalf  F_asym_s73   SlotSegmenter  RF1b        +48.60 italian    occitan        +8.48     +29.37      +13.46          YES
+  S2_OrderFreeHalf  F_asym_s73   SlotSegmenter  IT2a        +40.55 czech      occitan        +0.67     +29.37      +13.46          YES
+  S2_OrderFreeHalf  F_asym_s73   Zattera        ZL3b       +110.52 italian    occitan        +9.54     +29.19      +29.15          YES
+  S2_OrderFreeHalf  F_asym_s73   Seg_Affix2     ZL3b        +94.80 occitan    czech         +15.41     +11.85      +10.54          YES
+  S2_OrderFreeHalf  F_sym_core   SlotSegmenter  ZL3b        +89.15 occitan    czech         +28.22     +29.37      +13.46          YES
+  S2_OrderFreeHalf  F_sym_core   SlotSegmenter  RF1b        +46.63 italian    german         +5.75     +29.37      +13.46          YES
+  S2_OrderFreeHalf  F_sym_core   SlotSegmenter  IT2a        +47.31 italian    catalan       +10.08     +29.37      +13.46          YES
+  S2_OrderFreeHalf  F_sym_core   Zattera        ZL3b       +117.21 catalan    italian        +0.26     +29.19      +29.15          YES
+  S2_OrderFreeHalf  F_sym_core   Zattera        RF1b       +128.68 catalan    italian        +2.03     +29.19      +29.15          YES
+  S2_OrderFreeHalf  F_sym_core   Zattera        IT2a       +144.44 occitan    czech         +51.63     +29.19      +29.15          YES
+  S2_OrderFreeHalf  F_sym_core   Seg_Affix2     ZL3b        +75.65 czech      italian        +2.70     +11.85      +10.54          YES
+  S2_OrderFreeHalf  F_sym_core   Seg_Affix2     RF1b        +69.45 latin      occitan        +0.60     +11.85      +10.54          YES
+  S2_OrderFreeHalf  F_sym_core   Seg_Affix2     IT2a        +87.98 czech      german         +6.08     +11.85      +10.54          YES
+
+--- 3A-3. 15-Quire LOQO Segmenter Independence (SlotSegmenter, Zattera, Seg_Affix2) on Real Voynich ---
+  Translit Segmenter      CoreTypes      MeanMaxGain [95% CI]  Folds>NonC80 ModalLang (n_L)              Margin [95% CI]
+  ZL3b     SlotSegmenter       2335     -6.94 [-48.47,+59.60]         6/15 italian (7/15)         -9.62 [-65.61,+21.64]
+  RF1b     SlotSegmenter       2536    -10.14 [-48.84,+36.81]         6/15 occitan (6/15)         -0.30 [-27.69,+33.94]
+  IT2a     SlotSegmenter       2380    -10.40 [-53.48,+30.27]         5/15 italian (6/15)         -5.87 [-40.69,+22.39]
+  ZL3b     Zattera             4401    -8.39 [-63.11,+111.44]         3/15 italian (5/15)         -6.83 [-49.55,+18.07]
+  RF1b     Zattera             4664    -7.24 [-62.58,+112.98]         2/15 catalan (6/15)        -12.35 [-68.22,+25.02]
+  IT2a     Zattera             4377     -7.86 [-54.90,+93.64]         3/15 catalan (7/15)        -12.51 [-82.64,+20.89]
+  ZL3b     Seg_Affix2          2820    -12.12 [-49.38,+55.51]         3/15 italian (5/15)         -8.97 [-41.34,+23.87]
+  RF1b     Seg_Affix2          3034    -14.04 [-50.88,+43.13]         3/15 italian (7/15)         -9.68 [-38.88,+10.65]
+  IT2a     Seg_Affix2          2803    -13.53 [-53.59,+54.69]         3/15 german (6/15)         -12.91 [-51.39,+22.33]
+
+--- 3B. L-179 De-Aliased Joint Word-Code Gate G_word (Positive Controls W3 vs P4-D1/HLT Ciphers vs Nulls vs Voynich) ---
+  Group / Candidate               N  G1 (Folds>=10/15 vs NonC80)   G2 (n_L>=10 & Margin>+8.0)           G3 (f4>=.0535 & A5>0.0)      G1&G2   Joint G_word Details
+  W3_latin (pos ctrl)             1                  fail (5/15)   fail (latin 8/15, m=+10.0) PASS (f4=+0.102,A5=+0.080,A14=+0.087)       FAIL           FAIL planted=latin
+  W3_italian (pos ctrl)           1                 PASS (14/15) PASS (italian 14/15, m=+45.4) PASS (f4=+0.106,A5=+0.043,A14=+0.246)       PASS           PASS planted=italian
+  W3_german (pos ctrl)            1                 PASS (13/15) PASS (german 11/15, m=+11.3) PASS (f4=+0.113,A5=+0.071,A14=+0.178)       PASS           PASS planted=german
+  W3_occitan (pos ctrl)           1                 PASS (14/15) PASS (occitan 14/15, m=+40.9) PASS (f4=+0.111,A5=+0.074,A14=+0.291)       PASS           PASS planted=occitan
+  W3_czech (pos ctrl)             1                 PASS (12/15)  PASS (czech 10/15, m=+11.7) PASS (f4=+0.109,A5=+0.075,A14=+0.382)       PASS           PASS planted=czech
+  W3_catalan (pos ctrl)           1                 PASS (15/15) PASS (catalan 13/15, m=+30.9) PASS (f4=+0.117,A5=+0.037,A14=+0.386)       PASS           PASS planted=catalan
+  P4D1_ZL3b (letter/chunk)       25            25/25 alias on G1                 2/25 pass G2        0/25 (f4=-0.020,A5=-0.007)       2/25      0/25 PASS max_margin=+20.11
+  P4D1_RF1b (letter/chunk)       25            25/25 alias on G1                 3/25 pass G2        0/25 (f4=-0.020,A5=-0.007)       3/25      0/25 PASS max_margin=+16.17
+  P4D1_IT2a (letter/chunk)       25            25/25 alias on G1                 3/25 pass G2        0/25 (f4=-0.020,A5=-0.007)       3/25      0/25 PASS max_margin=+18.22
+  s83_HLT_SEL_ZL3b (cipher)       1                  fail (1/15)  fail (italian 7/15, m=-4.0) fail (f4=+.060,A5=+.164,MM=+.189)        0/1       0/1 PASS fails G1, G2 & MM_K100
+  NonCipherNulls_ZL3b            80                 0/80 pass G1                 0/80 pass G2     0/80 (nulls fail joint 6-tgt)       0/80      0/80 PASS LSHUF+BSHUF+S67+S57
+  NonCipherNulls_RF1b            80                 0/80 pass G1                 0/80 pass G2     0/80 (nulls fail joint 6-tgt)       0/80      0/80 PASS LSHUF+BSHUF+S67+S57
+  NonCipherNulls_IT2a            80                 0/80 pass G1                 0/80 pass G2     0/80 (nulls fail joint 6-tgt)       0/80      0/80 PASS LSHUF+BSHUF+S67+S57
+  VOY_ZL3b_SlotSegmenter          1                  fail (6/15)  fail (italian 7/15, m=-9.6) PASS (f4=+0.100,A5=+0.157,MM<=.074)       FAIL           FAIL mean_gain=-6.94
+  VOY_RF1b_SlotSegmenter          1                  fail (6/15)  fail (occitan 6/15, m=-0.3) PASS (f4=+0.095,A5=+0.155,MM<=.074)       FAIL           FAIL mean_gain=-10.14
+  VOY_IT2a_SlotSegmenter          1                  fail (5/15)  fail (italian 6/15, m=-5.9) PASS (f4=+0.096,A5=+0.157,MM<=.074)       FAIL           FAIL mean_gain=-10.40
+  VOY_ZL3b_Zattera                1                  fail (3/15)  fail (italian 5/15, m=-6.8) PASS (f4=+0.100,A5=+0.157,MM<=.074)       FAIL           FAIL mean_gain=-8.39
+  VOY_RF1b_Zattera                1                  fail (2/15) fail (catalan 6/15, m=-12.3) PASS (f4=+0.095,A5=+0.155,MM<=.074)       FAIL           FAIL mean_gain=-7.24
+  VOY_IT2a_Zattera                1                  fail (3/15) fail (catalan 7/15, m=-12.5) PASS (f4=+0.096,A5=+0.157,MM<=.074)       FAIL           FAIL mean_gain=-7.86
+  VOY_ZL3b_Seg_Affix2             1                  fail (3/15)  fail (italian 5/15, m=-9.0) PASS (f4=+0.100,A5=+0.157,MM<=.074)       FAIL           FAIL mean_gain=-12.12
+  VOY_RF1b_Seg_Affix2             1                  fail (3/15)  fail (italian 7/15, m=-9.7) PASS (f4=+0.095,A5=+0.155,MM<=.074)       FAIL           FAIL mean_gain=-14.04
+  VOY_IT2a_Seg_Affix2             1                  fail (3/15)  fail (german 6/15, m=-12.9) PASS (f4=+0.096,A5=+0.157,MM<=.074)       FAIL           FAIL mean_gain=-13.53
+
+--- 3C. Pre-Registered Calls CALL_3A_F36_FACTORIAL & CALL_3B_WORD_GATE (Closing F-36 & L-179) ---
+  - C3_dealiased (Planted W3 word-code positive controls passing G_word): 5/6 (req: >= 5/6) -> PASS
+  - L-179 P4-D1 de-aliasing progression: G1 alone = 75/75 (100% alias); G1 & G2 = 8/75 (89.3% de-aliased); G_word = G1 & G2 & G3 = 0/75 (100% de-aliased)
+  - Negative-control false positives on G_word: P4-D1=0/75, s83_HLT=0/1, NonCipherNulls=0/240 (req: all 0) -> PASS
+  - Real Voynich cells (3 translits x 3 segmenters) passing G_word: 0/9 (folds above NonC80 p95: 2..6/15 across all 9 cells; req: >= 10/15)
+  - CALL_3B_WORD_GATE: VALIDATED_NEGATIVE (controls PASS 5/6; P4-D1 aliasing eliminated 0/75; Voynich 0/9 -> stem alignment not above null across impl + seg + null)
+
+====================================================================================================
+OVERALL SUMMARY OF PRE-REGISTERED CALLS (s88 / P-20 — Triangulation Closure of F-39, F-23, F-36)
+====================================================================================================
+  1. CALL_1_F39_SEG_ORDER (F-39 / X-01) : TRUE (0/135 LOQO cells pass all 7 targets across 3 translits x 3 segmenters; min MM_K100 excess above Voynich 95% CI upper bound = +0.0826 bits across all granularities & Standard/T1/T2)
+  2. CALL_2_F23_TRIANGULATED (F-23)     : TRUE (0/180 impl LOQO cells, 0/300 seg LOQO cells [SlotSegmenter, Zattera, Seg_Affix2], and 0/120 s45 physical ink-verified LOQO cells pass all 6 targets across s57, s58, s61, s67)
+  3. CALL_3B_WORD_GATE (F-36 & L-179)   : VALIDATED_NEGATIVE (Planted W3 positive controls: 5/6 PASS G_word; P4-D1 letter/chunk ciphers: 0/75 PASS; Non-cipher nulls: 0/240 PASS; Real Voynich: 0/9 cells PASS across 3 translits x 3 segmenters)
+  4. CI Bracket Verification            : 0/3353 violations (asserted 0 violations)
+  5. Pre-Registration Stub Match        : True
+  6. Total Wall-Clock Runtime           : 446.36s (finished 2026-10-18 07:40:46 (datetime.now))
+====================================================================================================

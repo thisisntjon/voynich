@@ -1,0 +1,9 @@
+S90 FIXTURE (synthetic only; no real data read)
+date: Sun Oct 18 06:47:49 PDT 2026 (`date`)  device: cuda (NVIDIA GeForce RTX 5080); below_normal=True; free RAM 7.9 GB
+s90_constructed_text_core.py sha256=3f5f3aa290a34f2acf2cfcd2fd5b5e8857c2bec0f6d13b4906914d38a057d503  stub_match=NO STUB
+fixture target (FX_A): o100 +0.015 o200 +0.023 Rw1 1.825(p0.001) Rc1 0.899 loc 0.926; order bands K100 [-0.0182,+0.0475] K200 [-0.0156,+0.0624]; locality band [0.8909,0.9606]
+FX2 Markov prose: o100 +1.028 o200 +1.208 Rw1 0.720(p1.000) Rc1 0.530 loc 1.000 C1 nnYn -> not Voynich-like: PASS
+FXP planted in-line-repetition text FX_B: o100 +0.005 o200 +0.008 Rw1 1.851(p0.001) Rc1 0.730 loc 0.911 C1 YYYY -> (b) and (c) recovered: PASS
+FXS FX_B cut to 10023 tokens: o100 -0.021 o200 +0.000 Rw1 1.844(p0.001) Rc1 0.784 loc 0.926 C1 nYYY -> (b) recovered: True (reported, not gating)
+FXS FX_B cut to 270 tokens: NOT PROFILABLE (RuntimeError) (reported, not gating)
+FIXTURE PASS (FXP and FX2)   runtime 6s; finished Sun Oct 18 06:47:55 PDT 2026 (`date`)

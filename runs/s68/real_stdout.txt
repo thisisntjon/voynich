@@ -1,0 +1,283 @@
+S68: Parisel's per-folio cho/che switch, within Davis hand
+start: Sun Oct 18 01:53:53 PDT 2026 (`date`)
+stub_match: True
+script sha256: 00f2937f182af09f3e9582eccaf8ba8d0b77629d3864f34e729fef6c5f90a0b3  tools/ivtff_to_meta.py sha256: 5a08d4252dabfbe5f4ef5f93e5f2808a678ebb76fe32d99891c8310679bc81aa
+  source ZL3b: data\ZL3b-n.txt sha256 bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc
+  source RF1b: data\external\voynich-nu-ivtff\RF1b-er.txt sha256 eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2
+  source IT2a: data\external\voynich-nu-ivtff\IT2a-n.txt sha256 7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5
+
+=== ZL3b: 192 units (folio sides, panels merged), 34857 P-tokens, classified words 10336 (cho 3262), units with n>=20: 155
+  hand x lang of entering units: {('1', 'A'): 84, ('2', 'B'): 35, ('3', 'A'): 2, ('3', 'B'): 24, ('4', '?'): 4, ('5', 'B'): 5, ('?', 'B'): 1}
+  group     K      N  mean f     BC |  dAIC_BB   rho1 2-state means (w, rho)             | dAIC_bin |     phi null_med    q99       p
+  hand1    84   3167   0.674  0.521 |    +8.51  0.109 0.726 (0.85,0.036); 0.347 (0.15,0.000) |   +279.6 |    5.89    0.995  1.360  0.0005
+  hand2B   35   2816   0.099  0.586 |    -0.52  0.065 0.151 (0.52,0.051); 0.033 (0.48,0.000) |   +140.1 |    8.32    0.978  1.627  0.0005
+  hand3B   24   3070   0.169  0.377 |    -2.05  0.039 0.204 (0.71,0.009); 0.073 (0.29,0.002) |    +73.9 |    5.90    0.971  1.783  0.0005
+  pooled  155   9798   0.436  0.645 |   +23.94  0.321 0.731 (0.44,0.036); 0.199 (0.56,0.137) |  +2391.2 |   21.54    0.997  1.290  0.0005
+  secondary (glyph events [cs]h+o vs [cs]h+e, units with >=20 events):
+    hand1   K= 85 N=  3276 mean f_ev=0.675 dAIC_BB=   +8.51 means 0.727, 0.348
+    hand2B  K= 35 N=  2853 mean f_ev=0.102 dAIC_BB=   +0.05 means 0.157, 0.036
+    hand3B  K= 24 N=  3124 mean f_ev=0.172 dAIC_BB=   -0.41 means 0.210, 0.076
+    pooled  K=157 N= 10027 mean f_ev=0.438 dAIC_BB=  +25.09 means 0.731, 0.200
+  eta^2 of unit f (K=155): hand 0.766  Currier A/B 0.769  section 0.512
+    (units with $L in A/B only, K=151: hand 0.766 A/B 0.770 section 0.512)
+  d/l ratio (units with n>=20 and d+l>=20):
+    hand1   K= 82 mean d/l=0.530 sd=0.124  r(f, d/l)=+0.212
+    hand2B  K= 35 mean d/l=0.614 sd=0.137  r(f, d/l)=+0.303
+    hand3B  K= 24 mean d/l=0.550 sd=0.118  r(f, d/l)=+0.228
+    pooled  K=153 mean d/l=0.557 sd=0.138  r(f, d/l)=-0.156
+  per-hand histograms of unit f:
+    hand 1 (K=84, langs {'A': 84}):
+      [0.0,0.1)   0 
+      [0.1,0.2)   0 
+      [0.2,0.3)   5 #####
+      [0.3,0.4)   5 #####
+      [0.4,0.5)   4 ####
+      [0.5,0.6)   8 ########
+      [0.6,0.7)  19 ###################
+      [0.7,0.8)  22 ######################
+      [0.8,0.9)  12 ############
+      [0.9,1.0]   9 #########
+    hand 2 (K=35, langs {'B': 35}):
+      [0.0,0.1)  20 ####################
+      [0.1,0.2)  12 ############
+      [0.2,0.3)   2 ##
+      [0.3,0.4)   0 
+      [0.4,0.5)   1 #
+      [0.5,0.6)   0 
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand 3 (K=26, langs {'A': 2, 'B': 24}):
+      [0.0,0.1)   5 #####
+      [0.1,0.2)  11 ###########
+      [0.2,0.3)   7 #######
+      [0.3,0.4)   1 #
+      [0.4,0.5)   1 #
+      [0.5,0.6)   1 #
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand 4 (K=4, langs {'?': 4}):
+      [0.0,0.1)   0 
+      [0.1,0.2)   0 
+      [0.2,0.3)   0 
+      [0.3,0.4)   2 ##
+      [0.4,0.5)   2 ##
+      [0.5,0.6)   0 
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand 5 (K=5, langs {'B': 5}):
+      [0.0,0.1)   1 #
+      [0.1,0.2)   3 ###
+      [0.2,0.3)   1 #
+      [0.3,0.4)   0 
+      [0.4,0.5)   0 
+      [0.5,0.6)   0 
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand ? (K=1, langs {'B': 1}):
+      [0.0,0.1)   0 
+      [0.1,0.2)   0 
+      [0.2,0.3)   1 #
+      [0.3,0.4)   0 
+      [0.4,0.5)   0 
+      [0.5,0.6)   0 
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+
+=== RF1b: 192 units (folio sides, panels merged), 34618 P-tokens, classified words 10314 (cho 3225), units with n>=20: 155
+  hand x lang of entering units: {('1', 'A'): 84, ('2', 'B'): 35, ('3', 'A'): 2, ('3', 'B'): 24, ('4', '?'): 4, ('5', 'B'): 5, ('?', 'B'): 1}
+  group     K      N  mean f     BC |  dAIC_BB   rho1 2-state means (w, rho)             | dAIC_bin |     phi null_med    q99       p
+  hand1    84   3136   0.674  0.513 |    +8.21  0.115 0.726 (0.85,0.041); 0.339 (0.15,0.000) |   +291.5 |    6.06    0.995  1.355  0.0005
+  hand2B   35   2815   0.099  0.596 |    -0.09  0.066 0.156 (0.50,0.053); 0.034 (0.50,0.000) |   +145.5 |    8.45    0.981  1.679  0.0005
+  hand3B   24   3079   0.166  0.402 |    +0.03  0.038 0.205 (0.70,0.006); 0.071 (0.30,0.001) |    +78.0 |    5.82    0.973  1.795  0.0005
+  pooled  155   9777   0.436  0.644 |   +23.15  0.322 0.729 (0.45,0.041); 0.192 (0.55,0.128) |  +2410.6 |   21.63    0.999  1.282  0.0005
+  secondary (glyph events [cs]h+o vs [cs]h+e, units with >=20 events):
+    hand1   K= 86 N=  3291 mean f_ev=0.676 dAIC_BB=   +8.24 means 0.727, 0.340
+    hand2B  K= 35 N=  2861 mean f_ev=0.102 dAIC_BB=   +0.55 means 0.162, 0.036
+    hand3B  K= 24 N=  3134 mean f_ev=0.169 dAIC_BB=   +0.00 means 0.208, 0.072
+    pooled  K=158 N= 10063 mean f_ev=0.440 dAIC_BB=  +24.78 means 0.730, 0.194
+  eta^2 of unit f (K=155): hand 0.759  Currier A/B 0.765  section 0.512
+    (units with $L in A/B only, K=151: hand 0.760 A/B 0.766 section 0.512)
+  d/l ratio (units with n>=20 and d+l>=20):
+    hand1   K= 82 mean d/l=0.532 sd=0.126  r(f, d/l)=+0.236
+    hand2B  K= 35 mean d/l=0.614 sd=0.138  r(f, d/l)=+0.318
+    hand3B  K= 24 mean d/l=0.550 sd=0.117  r(f, d/l)=+0.243
+    pooled  K=153 mean d/l=0.558 sd=0.139  r(f, d/l)=-0.138
+  per-hand histograms of unit f:
+    hand 1 (K=84, langs {'A': 84}):
+      [0.0,0.1)   0 
+      [0.1,0.2)   0 
+      [0.2,0.3)   4 ####
+      [0.3,0.4)   6 ######
+      [0.4,0.5)   4 ####
+      [0.5,0.6)   8 ########
+      [0.6,0.7)  18 ##################
+      [0.7,0.8)  23 #######################
+      [0.8,0.9)  11 ###########
+      [0.9,1.0]  10 ##########
+    hand 2 (K=35, langs {'B': 35}):
+      [0.0,0.1)  21 #####################
+      [0.1,0.2)  11 ###########
+      [0.2,0.3)   1 #
+      [0.3,0.4)   1 #
+      [0.4,0.5)   1 #
+      [0.5,0.6)   0 
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand 3 (K=26, langs {'A': 2, 'B': 24}):
+      [0.0,0.1)   6 ######
+      [0.1,0.2)  10 ##########
+      [0.2,0.3)   7 #######
+      [0.3,0.4)   1 #
+      [0.4,0.5)   1 #
+      [0.5,0.6)   1 #
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand 4 (K=4, langs {'?': 4}):
+      [0.0,0.1)   0 
+      [0.1,0.2)   0 
+      [0.2,0.3)   0 
+      [0.3,0.4)   2 ##
+      [0.4,0.5)   1 #
+      [0.5,0.6)   1 #
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand 5 (K=5, langs {'B': 5}):
+      [0.0,0.1)   2 ##
+      [0.1,0.2)   2 ##
+      [0.2,0.3)   1 #
+      [0.3,0.4)   0 
+      [0.4,0.5)   0 
+      [0.5,0.6)   0 
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand ? (K=1, langs {'B': 1}):
+      [0.0,0.1)   0 
+      [0.1,0.2)   0 
+      [0.2,0.3)   1 #
+      [0.3,0.4)   0 
+      [0.4,0.5)   0 
+      [0.5,0.6)   0 
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+
+=== IT2a: 191 units (folio sides, panels merged), 34411 P-tokens, classified words 10352 (cho 3294), units with n>=20: 158
+  hand x lang of entering units: {('1', 'A'): 87, ('2', 'B'): 35, ('3', 'A'): 2, ('3', 'B'): 24, ('4', '?'): 4, ('5', 'B'): 5, ('?', 'B'): 1}
+  group     K      N  mean f     BC |  dAIC_BB   rho1 2-state means (w, rho)             | dAIC_bin |     phi null_med    q99       p
+  hand1    87   3248   0.670  0.518 |    +9.03  0.123 0.728 (0.84,0.040); 0.333 (0.16,0.000) |   +311.7 |    6.25    0.995  1.383  0.0005
+  hand2B   35   2799   0.100  0.604 |    -0.80  0.066 0.157 (0.49,0.057); 0.037 (0.51,0.002) |   +143.0 |    8.35    0.975  1.641  0.0005
+  hand3B   24   3090   0.172  0.384 |    -0.90  0.038 0.209 (0.70,0.008); 0.074 (0.30,0.000) |    +75.8 |    5.96    0.981  1.842  0.0005
+  pooled  158   9881   0.440  0.644 |   +24.27  0.321 0.732 (0.45,0.039); 0.197 (0.55,0.129) |  +2435.0 |   21.37    0.998  1.279  0.0005
+  secondary (glyph events [cs]h+o vs [cs]h+e, units with >=20 events):
+    hand1   K= 88 N=  3352 mean f_ev=0.672 dAIC_BB=   +9.19 means 0.729, 0.336
+    hand2B  K= 35 N=  2832 mean f_ev=0.103 dAIC_BB=   -0.03 means 0.160, 0.038
+    hand3B  K= 24 N=  3138 mean f_ev=0.174 dAIC_BB=   -0.38 means 0.212, 0.077
+    pooled  K=160 N= 10100 mean f_ev=0.442 dAIC_BB=  +25.42 means 0.734, 0.201
+  eta^2 of unit f (K=158): hand 0.736  Currier A/B 0.741  section 0.498
+    (units with $L in A/B only, K=154: hand 0.737 A/B 0.741 section 0.498)
+  d/l ratio (units with n>=20 and d+l>=20):
+    hand1   K= 85 mean d/l=0.539 sd=0.126  r(f, d/l)=+0.189
+    hand2B  K= 35 mean d/l=0.614 sd=0.137  r(f, d/l)=+0.266
+    hand3B  K= 24 mean d/l=0.551 sd=0.117  r(f, d/l)=+0.235
+    pooled  K=156 mean d/l=0.562 sd=0.138  r(f, d/l)=-0.125
+  per-hand histograms of unit f:
+    hand 1 (K=87, langs {'A': 87}):
+      [0.0,0.1)   0 
+      [0.1,0.2)   1 #
+      [0.2,0.3)   4 ####
+      [0.3,0.4)   6 ######
+      [0.4,0.5)   4 ####
+      [0.5,0.6)   9 #########
+      [0.6,0.7)  17 #################
+      [0.7,0.8)  23 #######################
+      [0.8,0.9)  14 ##############
+      [0.9,1.0]   9 #########
+    hand 2 (K=35, langs {'B': 35}):
+      [0.0,0.1)  22 ######################
+      [0.1,0.2)  10 ##########
+      [0.2,0.3)   1 #
+      [0.3,0.4)   1 #
+      [0.4,0.5)   1 #
+      [0.5,0.6)   0 
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand 3 (K=26, langs {'A': 2, 'B': 24}):
+      [0.0,0.1)   6 ######
+      [0.1,0.2)  10 ##########
+      [0.2,0.3)   7 #######
+      [0.3,0.4)   1 #
+      [0.4,0.5)   1 #
+      [0.5,0.6)   1 #
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand 4 (K=4, langs {'?': 4}):
+      [0.0,0.1)   0 
+      [0.1,0.2)   0 
+      [0.2,0.3)   0 
+      [0.3,0.4)   2 ##
+      [0.4,0.5)   1 #
+      [0.5,0.6)   1 #
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand 5 (K=5, langs {'B': 5}):
+      [0.0,0.1)   1 #
+      [0.1,0.2)   3 ###
+      [0.2,0.3)   1 #
+      [0.3,0.4)   0 
+      [0.4,0.5)   0 
+      [0.5,0.6)   0 
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand ? (K=1, langs {'B': 1}):
+      [0.0,0.1)   0 
+      [0.1,0.2)   0 
+      [0.2,0.3)   1 #
+      [0.3,0.4)   0 
+      [0.4,0.5)   0 
+      [0.5,0.6)   0 
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+
+=== CONTROLS (ZL3b unit sizes per group, 20 replicates each) ===
+  hand1   K= 84: positive 20/20 called (dAIC median +41.5, min +26.3); negative (mean 0.629, rho 0.109) 20/20 correct (dAIC median -2.93, max +0.48) -> PASS
+  hand2B  K= 35: positive 20/20 called (dAIC median +26.0, min +15.0); negative (mean 0.089, rho 0.065) 20/20 correct (dAIC median -3.69, max +5.84) -> PASS
+  hand3B  K= 24: positive 19/20 called (dAIC median +18.3, min +8.2); negative (mean 0.163, rho 0.039) 20/20 correct (dAIC median -2.62, max +5.15) -> PASS
+  pooled  K=155: positive 20/20 called (dAIC median +100.6, min +66.4); negative (mean 0.302, rho 0.300) 20/20 correct (dAIC median -1.99, max +4.05) -> PASS
+  controls: PASS
+
+=== VERDICT ===
+  ZL3b: dAIC_BB hand1 +8.51  hand2B -0.52  hand3B -2.05  pooled +23.94  -> within=False scribe=True
+  RF1b: dAIC_BB hand1 +8.21  hand2B -0.09  hand3B +0.03  pooled +23.15  -> within=False scribe=True
+  IT2a: dAIC_BB hand1 +9.03  hand2B -0.80  hand3B -0.90  pooled +24.27  -> within=False scribe=True
+VERDICT s68: switch is scribe
+end: Sun Oct 18 01:55:28 PDT 2026 (`date`)  (elapsed 95 s)
+wrote ./results_s68.txt

@@ -1,0 +1,5 @@
+r12 log
+fixture 14:18:10 PDT rev0 OK
+FREEZE at (clock): 2026-10-18 14:20:00 PDT r12.py 980ded572901f3f2cd181a08459d351412af294af3b1e2d052f68b3e6fc759bc
+real run start: 2026-10-18 14:20:00 PDT
+real run end: 2026-10-18 14:23:53 PDT exit=0

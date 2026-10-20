@@ -1,0 +1,198 @@
+s81 -- line/page-sticky Naibbe table cipher on the s67 LOQO battery + s69 calls + s55 distance [FIXTURE]
+date: 2026-10-18 03:31:01 (datetime.now)
+stub_match: False (no stub)
+sha256 s81_sticky_table_loqo.py: 418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063
+sha256 s81_sticky_table_loqo.prereg.sha256: missing
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  local import s64_naibbe_taxonomy.py sha256=6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3
+  local import s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  local import s81_sticky_table_loqo.py sha256=418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+python 3.11.9; numpy 2.4.6; device cpu (torch 2.11.0.dev20260115+cu128, cuda available True; not used: battery code reused verbatim on CPU); workers 4 (BelowNormal)
+SEED 20261017; seeds (1, 2); N_DRAW 500 (80 % held-out pages w/o replacement); s69 B_SUB 500; s55 splits 30 (SPLIT_SEED 81081); grid p [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0]
+variants: default(line, p=0.0), line_sticky75(line, p=0.75), line_sticky_fit(line, p=fit), line_lock(line, p=1.0), page_sticky_fit(page, p=fit), page_lock(page, p=1.0) x ['latin_cremma', 'italian_dante']
+NOTE: stickiness p (fitted variants) is fitted to the training-quire lag-1 prefix gain, so P3 is partly built in by the fit.
+
+folds: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] (8); threshold (strict majority) 5/8
+  FIX: pages per fold A 12, B 12, C 12, D 12, E 12, F 12, G 12, H 5
+
+s69 call pattern of the manuscript (FIX, full text, s69 166/41-style split): C1=T C2=F C3p=T C4p=F C5=T; M1 +0.0452
+
+running 8 fold jobs + 13 s55 split jobs on 4 workers
+=== C3 FITTED p (fit on s55's default training split) ===
+  FIX: line_sticky_fit|latin_cremma p=0.75; page_sticky_fit|latin_cremma p=0.75; line_sticky_fit|italian_dante p=0.75; page_sticky_fit|italian_dante p=0.8
+
+=== PER-VARIANT PER-TRANSLITERATION FOLD COUNTS ===
+  (n5 = folds with >= 5/6 of P1 P2 P3 P4 P5 P7; match = folds whose s69 (C1,C2,C3p,C4p,C5) equal the manuscript's full-text pattern; sf = same-fold match, reported only)
+  default|latin_cremma           FIX: n5  1/8  match  0/8 (sf  2)  per-pred P1  5 P2  5 P3  0 P4  7 P5  6 P7  3  p 0.00-0.00 (median 0.00)  mean n 3.25
+  line_sticky75|latin_cremma     FIX: n5  6/8  match  5/8 (sf  3)  per-pred P1  6 P2  6 P3  4 P4  7 P5  8 P7  8  p 0.75-0.75 (median 0.75)  mean n 4.88
+  line_sticky_fit|latin_cremma   FIX: n5  4/8  match  3/8 (sf  2)  per-pred P1  5 P2  5 P3  2 P4  7 P5  8 P7  8  p 0.70-0.75 (median 0.75)  mean n 4.38
+  line_lock|latin_cremma         FIX: n5  6/8  match  0/8 (sf  0)  per-pred P1  8 P2  6 P3  0 P4  7 P5  8 P7  8  p 1.00-1.00 (median 1.00)  mean n 4.62
+  page_sticky_fit|latin_cremma   FIX: n5  5/8  match  5/8 (sf  4)  per-pred P1  6 P2  7 P3  2 P4  8 P5  8 P7  8  p 0.60-0.75 (median 0.72)  mean n 4.88
+  page_lock|latin_cremma         FIX: n5  4/8  match  0/8 (sf  0)  per-pred P1  8 P2  7 P3  0 P4  7 P5  8 P7  5  p 1.00-1.00 (median 1.00)  mean n 4.38
+  default|italian_dante          FIX: n5  2/8  match  0/8 (sf  2)  per-pred P1  4 P2  5 P3  0 P4  7 P5  8 P7  5  p 0.00-0.00 (median 0.00)  mean n 3.62
+  line_sticky75|italian_dante    FIX: n5  5/8  match  7/8 (sf  5)  per-pred P1  5 P2  6 P3  3 P4  7 P5  8 P7  8  p 0.75-0.75 (median 0.75)  mean n 4.62
+  line_sticky_fit|italian_dante  FIX: n5  6/8  match  4/8 (sf  2)  per-pred P1  5 P2  7 P3  4 P4  7 P5  8 P7  8  p 0.70-0.75 (median 0.70)  mean n 4.88
+  line_lock|italian_dante        FIX: n5  5/8  match  0/8 (sf  0)  per-pred P1  6 P2  7 P3  0 P4  8 P5  8 P7  8  p 1.00-1.00 (median 1.00)  mean n 4.62
+  page_sticky_fit|italian_dante  FIX: n5  5/8  match  3/8 (sf  4)  per-pred P1  6 P2  6 P3  2 P4  8 P5  8 P7  8  p 0.60-0.85 (median 0.70)  mean n 4.75
+  page_lock|italian_dante        FIX: n5  1/8  match  0/8 (sf  0)  per-pred P1  5 P2  6 P3  0 P4  8 P5  8 P7  3  p 1.00-1.00 (median 1.00)  mean n 3.75
+
+=== PER-FOLD DETAIL (n/6 and +/- for P1 P2 P3 P4 P5 P7; m = s69 call match) ===
+  FIX:
+    A (12 pages) Voynich s69 calls TFTFT M1 +0.0667
+      default|latin_cremma           2/6 ---++- t1.19 p0.00 calls TFFFT M1 -0.0498 .
+      line_sticky75|latin_cremma     5/6 -+++++ t1.02 p0.75 calls TFTFT M1 +0.0485 m
+      line_sticky_fit|latin_cremma   5/6 -+++++ t1.06 p0.75 calls TFFFT M1 +0.0217 .
+      line_lock|latin_cremma         5/6 ++-+++ t0.94 p1.00 calls TFTFF M1 +0.1576 .
+      page_sticky_fit|latin_cremma   4/6 -+-+++ t1.03 p0.75 calls TFTFT M1 +0.0480 m
+      page_lock|latin_cremma         5/6 ++-+++ t0.86 p1.00 calls TFFFF M1 +0.1220 .
+      default|italian_dante          2/6 ---++- t1.18 p0.00 calls TFFFT M1 -0.0605 .
+      line_sticky75|italian_dante    5/6 -+++++ t1.01 p0.75 calls TFTFT M1 +0.0592 m
+      line_sticky_fit|italian_dante  4/6 -+-+++ t1.08 p0.70 calls TFTTT M1 +0.0526 .
+      line_lock|italian_dante        4/6 -+-+++ t0.90 p1.00 calls TFTFF M1 +0.1858 .
+      page_sticky_fit|italian_dante  4/6 -+-+++ t0.98 p0.85 calls TFTFT M1 +0.1245 m
+      page_lock|italian_dante        4/6 -+-+++ t0.87 p1.00 calls TFFFF M1 +0.1367 .
+    B (12 pages) Voynich s69 calls TFTFT M1 +0.0547
+      default|latin_cremma           3/6 +--+-+ t1.06 p0.00 calls TFFFT M1 -0.0724 .
+      line_sticky75|latin_cremma     5/6 ++-+++ t0.92 p0.75 calls TFTFT M1 +0.0924 m
+      line_sticky_fit|latin_cremma   6/6 ++++++ t0.99 p0.75 calls TFTFT M1 +0.0789 m
+      line_lock|latin_cremma         4/6 +--+++ t0.86 p1.00 calls TFTFF M1 +0.1569 .
+      page_sticky_fit|latin_cremma   5/6 ++-+++ t0.97 p0.75 calls TFTFT M1 +0.0855 m
+      page_lock|latin_cremma         4/6 ++-++- t0.81 p1.00 calls TFTFF M1 +0.2408 .
+      default|italian_dante          4/6 -+-+++ t1.07 p0.00 calls TFFFT M1 -0.0535 .
+      line_sticky75|italian_dante    4/6 +--+++ t0.97 p0.75 calls TFTFT M1 +0.0837 m
+      line_sticky_fit|italian_dante  5/6 ++-+++ t0.99 p0.70 calls TFTFT M1 +0.0828 m
+      line_lock|italian_dante        5/6 ++-+++ t0.87 p1.00 calls TFTFF M1 +0.2468 .
+      page_sticky_fit|italian_dante  5/6 ++-+++ t0.97 p0.70 calls TFFFT M1 +0.0063 .
+      page_lock|italian_dante        4/6 ++-++- t0.82 p1.00 calls TFTFF M1 +0.1506 .
+    C (12 pages) Voynich s69 calls TFFFT M1 +0.0437
+      default|latin_cremma           4/6 -+-+++ t1.12 p0.00 calls TFFFT M1 -0.0550 .
+      line_sticky75|latin_cremma     4/6 +--+++ t1.00 p0.75 calls TFTFT M1 +0.0833 m
+      line_sticky_fit|latin_cremma   3/6 ---+++ t0.96 p0.75 calls TFTTT M1 +0.0335 .
+      line_lock|latin_cremma         5/6 ++-+++ t0.93 p1.00 calls TFTFF M1 +0.1931 .
+      page_sticky_fit|latin_cremma   6/6 ++++++ t1.04 p0.60 calls TFTTT M1 +0.0379 .
+      page_lock|latin_cremma         4/6 ++-++- t0.78 p1.00 calls TFTFF M1 +0.1102 .
+      default|italian_dante          5/6 ++-+++ t1.12 p0.00 calls TFFFT M1 -0.0351 .
+      line_sticky75|italian_dante    5/6 ++-+++ t1.00 p0.75 calls TFTFT M1 +0.0798 m
+      line_sticky_fit|italian_dante  6/6 ++++++ t1.03 p0.70 calls TFTFT M1 +0.0604 m
+      line_lock|italian_dante        5/6 ++-+++ t0.91 p1.00 calls TFTFF M1 +0.1886 .
+      page_sticky_fit|italian_dante  5/6 +-++++ t1.06 p0.60 calls TFTTT M1 +0.0333 .
+      page_lock|italian_dante        4/6 ++-++- t0.84 p1.00 calls TFTFF M1 +0.1685 .
+    D (12 pages) Voynich s69 calls TFFFT M1 +0.0325
+      default|latin_cremma           4/6 ++-++- t1.21 p0.00 calls TFFFT M1 -0.0805 .
+      line_sticky75|latin_cremma     5/6 ++-+++ t1.00 p0.75 calls TFTFT M1 +0.0916 m
+      line_sticky_fit|latin_cremma   5/6 ++-+++ t1.00 p0.75 calls TFTFT M1 +0.0604 m
+      line_lock|latin_cremma         5/6 ++-+++ t0.97 p1.00 calls TFTFF M1 +0.1495 .
+      page_sticky_fit|latin_cremma   5/6 ++-+++ t1.05 p0.75 calls TFTFT M1 +0.0497 m
+      page_lock|latin_cremma         5/6 ++-+++ t0.94 p1.00 calls TFTFF M1 +0.1300 .
+      default|italian_dante          4/6 ++-++- t1.21 p0.00 calls TFFFT M1 -0.0437 .
+      line_sticky75|italian_dante    5/6 ++-+++ t1.10 p0.75 calls TFTFT M1 +0.0811 m
+      line_sticky_fit|italian_dante  5/6 ++-+++ t1.04 p0.70 calls TFTFT M1 +0.0795 m
+      line_lock|italian_dante        5/6 ++-+++ t0.94 p1.00 calls TFTFF M1 +0.1624 .
+      page_sticky_fit|italian_dante  5/6 ++-+++ t1.07 p0.60 calls TFFFT M1 +0.0319 .
+      page_lock|italian_dante        4/6 +--+++ t0.86 p1.00 calls TFTFF M1 +0.1668 .
+    E (12 pages) Voynich s69 calls TFTFT M1 +0.0668
+      default|latin_cremma           3/6 ++-+-- t1.24 p0.00 calls TFFFT M1 -0.0762 .
+      line_sticky75|latin_cremma     6/6 ++++++ t1.06 p0.75 calls TFFFT M1 +0.0175 .
+      line_sticky_fit|latin_cremma   4/6 +--+++ t1.07 p0.70 calls TFFFT M1 +0.0426 .
+      line_lock|latin_cremma         5/6 ++-+++ t0.97 p1.00 calls TFTFF M1 +0.1932 .
+      page_sticky_fit|latin_cremma   5/6 ++-+++ t1.11 p0.75 calls TFTFT M1 +0.0656 m
+      page_lock|latin_cremma         5/6 ++-+++ t0.88 p1.00 calls TFTFF M1 +0.1889 .
+      default|italian_dante          4/6 ++-++- t1.23 p0.00 calls TFFFT M1 -0.0505 .
+      line_sticky75|italian_dante    4/6 -+-+++ t1.07 p0.75 calls TFTFT M1 +0.1086 m
+      line_sticky_fit|italian_dante  6/6 ++++++ t1.10 p0.70 calls TFFFT M1 +0.0396 .
+      line_lock|italian_dante        5/6 ++-+++ t0.99 p1.00 calls TFTFF M1 +0.1589 .
+      page_sticky_fit|italian_dante  5/6 ++-+++ t1.11 p0.70 calls TFFFT M1 +0.0486 .
+      page_lock|italian_dante        5/6 ++-+++ t0.90 p1.00 calls TFTFF M1 +0.2037 .
+    F (12 pages) Voynich s69 calls TFTFT M1 +0.0463
+      default|latin_cremma           5/6 ++-+++ t1.11 p0.00 calls TFFFT M1 -0.0778 .
+      line_sticky75|latin_cremma     6/6 ++++++ t0.98 p0.75 calls TFFFT M1 +0.0361 .
+      line_sticky_fit|latin_cremma   5/6 ++-+++ t0.99 p0.70 calls TFFFT M1 +0.0195 .
+      line_lock|latin_cremma         5/6 ++-+++ t0.85 p1.00 calls TFTFF M1 +0.2641 .
+      page_sticky_fit|latin_cremma   4/6 +--+++ t0.92 p0.70 calls TFFFT M1 +0.0098 .
+      page_lock|latin_cremma         4/6 ++-++- t0.72 p1.00 calls TFTFF M1 +0.1875 .
+      default|italian_dante          5/6 ++-+++ t1.11 p0.00 calls TFFFT M1 -0.0227 .
+      line_sticky75|italian_dante    6/6 ++++++ t0.95 p0.75 calls TFFFT M1 +0.0297 .
+      line_sticky_fit|italian_dante  5/6 -+++++ t1.00 p0.75 calls TFFFT M1 +0.0132 .
+      line_lock|italian_dante        4/6 +--+++ t0.87 p1.00 calls TFTFF M1 +0.2346 .
+      page_sticky_fit|italian_dante  6/6 ++++++ t0.97 p0.80 calls TFTFT M1 +0.0728 m
+      page_lock|italian_dante        4/6 ++-++- t0.71 p1.00 calls TFFFF M1 +0.1343 .
+    G (12 pages) Voynich s69 calls TFTFT M1 +0.0683
+      default|latin_cremma           3/6 -+-++- t1.15 p0.00 calls TFFFT M1 -0.0537 .
+      line_sticky75|latin_cremma     5/6 -+++++ t1.03 p0.75 calls TFTFT M1 +0.0822 m
+      line_sticky_fit|latin_cremma   4/6 -+-+++ t1.04 p0.75 calls TFFFT M1 +0.0299 .
+      line_lock|latin_cremma         5/6 ++-+++ t0.91 p1.00 calls TFTFF M1 +0.2085 .
+      page_sticky_fit|latin_cremma   4/6 -+-+++ t1.03 p0.70 calls TFFFT M1 +0.0378 .
+      page_lock|latin_cremma         5/6 ++-+++ t0.89 p1.00 calls TFTFF M1 +0.1678 .
+      default|italian_dante          3/6 ---+++ t1.13 p0.00 calls TFFFT M1 -0.0356 .
+      line_sticky75|italian_dante    5/6 -+++++ t1.04 p0.75 calls TFTFT M1 +0.0901 m
+      line_sticky_fit|italian_dante  5/6 -+++++ t1.04 p0.70 calls TFTFT M1 +0.0798 m
+      line_lock|italian_dante        4/6 -+-+++ t0.93 p1.00 calls TFTFF M1 +0.1845 .
+      page_sticky_fit|italian_dante  4/6 -+-+++ t1.02 p0.70 calls TFFFT M1 +0.0289 .
+      page_lock|italian_dante        3/6 -+-++- t0.66 p1.00 calls TFFFF M1 +0.2271 .
+    H (5 pages*) Voynich s69 calls TFTFT M1 +0.0892
+      default|latin_cremma           2/6 +---+- t1.15 p0.00 calls TFFFT M1 -0.0360 .
+      line_sticky75|latin_cremma     3/6 +---++ t0.99 p0.75 calls TFFFT M1 +0.0286 .
+      line_sticky_fit|latin_cremma   3/6 +---++ t1.10 p0.75 calls TFTFT M1 +0.1033 m
+      line_lock|latin_cremma         3/6 +---++ t1.01 p1.00 calls TFTFF M1 +0.1226 .
+      page_sticky_fit|latin_cremma   6/6 ++++++ t1.06 p0.70 calls TFTFT M1 +0.0852 m
+      page_lock|latin_cremma         3/6 +---++ t0.86 p1.00 calls TFTFF M1 +0.1573 .
+      default|italian_dante          2/6 ----++ t1.12 p0.00 calls TFFFT M1 -0.0339 .
+      line_sticky75|italian_dante    3/6 +---++ t1.04 p0.75 calls TFTFT M1 +0.0610 m
+      line_sticky_fit|italian_dante  3/6 +---++ t1.12 p0.70 calls TFFFT M1 +0.0088 .
+      line_lock|italian_dante        5/6 ++-+++ t0.99 p1.00 calls TFTFF M1 +0.1947 .
+      page_sticky_fit|italian_dante  4/6 +--+++ t1.05 p0.75 calls TFTFT M1 +0.0710 m
+      page_lock|italian_dante        2/6 ---++- t0.81 p1.00 calls TFTFF M1 +0.2043 .
+
+=== s55 DISTANCE (C3): median d(variant split i, Voynich split j != i) vs Voynich split-to-split 95 % range ===
+  FIX: Voynich split-to-split d median 1.236 [95 %: 0.539, 2.775]
+    default|latin_cremma           d median 1.691 [1.017, 2.818] -> within
+    line_sticky75|latin_cremma     d median 1.814 [0.926, 2.979] -> within
+    line_sticky_fit|latin_cremma   d median 1.561 [0.730, 2.936] -> within
+    line_lock|latin_cremma         d median 2.296 [1.568, 3.631] -> within
+    page_sticky_fit|latin_cremma   d median 1.591 [0.745, 3.131] -> within
+    page_lock|latin_cremma         d median 3.705 [1.478, 9.314] -> OUTSIDE
+    default|italian_dante          d median 1.601 [0.959, 2.890] -> within
+    line_sticky75|italian_dante    d median 1.675 [0.809, 2.808] -> within
+    line_sticky_fit|italian_dante  d median 1.759 [0.921, 2.876] -> within
+    line_lock|italian_dante        d median 2.670 [2.006, 3.736] -> within
+    page_sticky_fit|italian_dante  d median 1.775 [1.055, 3.013] -> within
+    page_lock|italian_dante        d median 3.954 [2.348, 5.923] -> OUTSIDE
+
+=== CALLS ===
+  default|latin_cremma           C1 false (FIX 1/8)  C2 false (FIX 0/8)  C3 TRUE (FIX 1.69<=2.77)
+  line_sticky75|latin_cremma     C1 TRUE  (FIX 6/8)  C2 TRUE  (FIX 5/8)  C3 TRUE (FIX 1.81<=2.77)
+  line_sticky_fit|latin_cremma   C1 false (FIX 4/8)  C2 false (FIX 3/8)  C3 TRUE (FIX 1.56<=2.77)
+  line_lock|latin_cremma         C1 TRUE  (FIX 6/8)  C2 false (FIX 0/8)  C3 TRUE (FIX 2.30<=2.77)
+  page_sticky_fit|latin_cremma   C1 TRUE  (FIX 5/8)  C2 TRUE  (FIX 5/8)  C3 TRUE (FIX 1.59<=2.77)
+  page_lock|latin_cremma         C1 false (FIX 4/8)  C2 false (FIX 0/8)  C3 false (FIX 3.70<=2.77)
+  default|italian_dante          C1 false (FIX 2/8)  C2 false (FIX 0/8)  C3 TRUE (FIX 1.60<=2.77)
+  line_sticky75|italian_dante    C1 TRUE  (FIX 5/8)  C2 TRUE  (FIX 7/8)  C3 TRUE (FIX 1.67<=2.77)
+  line_sticky_fit|italian_dante  C1 TRUE  (FIX 6/8)  C2 false (FIX 4/8)  C3 TRUE (FIX 1.76<=2.77)
+  line_lock|italian_dante        C1 TRUE  (FIX 5/8)  C2 false (FIX 0/8)  C3 TRUE (FIX 2.67<=2.77)
+  page_sticky_fit|italian_dante  C1 TRUE  (FIX 5/8)  C2 false (FIX 3/8)  C3 TRUE (FIX 1.78<=2.77)
+  page_lock|italian_dante        C1 false (FIX 1/8)  C2 false (FIX 0/8)  C3 false (FIX 3.95<=2.77)
+
+FIXTURE: line_sticky75|latin_cremma C1 True C2 True C3 True; default|latin_cremma C1 False C2 False C3 True
+FIXTURE PASS
+(readout only, not a verdict) reading the battery would give: 'per-line table cipher predicts the manuscript'
+elapsed 149s; date end 2026-10-18 03:33:30
+outputs: ./runs/s81/fixture.txt, ./runs/s81

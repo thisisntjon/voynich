@@ -1,0 +1,99 @@
+You are labelling one scanned manuscript page from its drawings only, using a fixed codebook.
+Writing and writing-like marks have been painted out or must be ignored; judge the drawing only.
+Do not try to read or interpret any writing.
+
+CODEBOOK (category definitions and allowed levels):
+
+## Unit
+
+One scan image (one file stem). A foldout scan with several panels is one unit. Page-level counts
+cover the whole image. Where a category says "principal", it means the largest drawing of the
+relevant kind (largest by drawn area); ties go to the leftmost, then the topmost.
+
+## C0. PT, page type (every image)
+
+Apply the rules in order; the first that fits wins.
+
+1. `CIRCLE`: one or more circular diagrams (a figure organised around a centre with a circular
+   outline, rings, rays or a circle of figures) that together cover at least a quarter of the image.
+2. `BATH`: two or more human figures standing or sitting in pools, basins, tubes or flowing liquid.
+3. `PHARMA`: one or more containers (jars, vessels, tubes standing upright as vessels), or four or
+   more separate small plant parts (roots, leaves, sprigs) set out side by side in rows.
+4. `PLANT`: at least one plant whose drawing is at least 30% of the page height.
+5. `MARGINAL`: only small drawings (stars, small marks, small figures or objects) each under 15% of
+   the page height.
+6. `NONE`: no drawing at all (writing only, or blank).
+7. `OTHER`: a drawing that fits none of the above.
+
+## Plant categories (only when PT = PLANT, else NA)
+
+Principal plant = the tallest plant.
+
+- **P_plants** (separate plants, counted by separate roots or bases, each at least 30% of the height of
+  the tallest): `1`, `2`, `3+`.
+- **P_root** (principal plant's underground part). Decide in this order:
+  - Is there a swollen part (a mass at least twice the stem width that is not just a tangle of thin
+    lines)? If one smooth, rounded, roughly onion- or ball-shaped mass (height/width 0.5 to 2), with or
+    without rootlets hanging from it: `BULB`. If swollen but irregular, lumpy, several lobes,
+    knobbly fingers, or an elongated horizontal mass: `TUBER`.
+  - Not swollen: one main root axis clearly longer and thicker than every side root: `TAPROOT`;
+    two or more roots of comparable thickness diverging, forked or fibrous, no single dominant axis:
+    `BRANCHING`.
+  - No root drawn (stem ends, cut, or hidden): `NONE`.
+- **P_leafshape** (the leaf type covering the largest area on the principal plant). First, if leaves
+  are deeply toothed or lobed (incisions reaching at least a quarter of the way to the midrib) or
+  compound (separate leaflets on one stalk, pinnate or palmate): `DIVIDED`. Otherwise by length to
+  width ratio of a typical leaf: under 1.5 `ROUND`; 1.5 to 3 `ELLIPTIC`; over 3 (strap, grass,
+  needle, narrow lance) `LINEAR`. No leaves: `NONE`.
+- **P_leafcount** (separately drawn leaves on the principal plant; a compound leaf counts once):
+  `0`, `1-4`, `5-10`, `11-20`, `21+`.
+- **P_flower** (flowers, fruit or seed heads on the principal plant: a terminal or side structure
+  that is not leaf-like: petals, a coloured head, cup, bell, spike, berry or cluster): `0`, `1`,
+  `2-4`, `5+`.
+- **P_habit** (principal plant): `ROSETTE` if leaves rise directly from the base with no visible
+  stem, or every stem is shorter than the longest leaf; else `SINGLE` if one stem leaves the
+  root/base (branching higher up is still SINGLE); else `MULTI` (two or more stems leave the
+  root/base).
+
+## Container / pharma categories (only when PT = PHARMA, else NA)
+
+- **J_shape** (shape held by the majority of containers; tie goes to the larger containers): `CYLINDER`
+  (straight, roughly parallel sides, may have lid, rim bands or feet); `VASE` (curved or bulging
+  profile, neck, waist, goblet or pedestal form); `OTHER`; `NONE` (no containers).
+- **J_count** (containers in the image): `0`, `1-2`, `3-4`, `5+`.
+- **J_fragcount** (separate plant parts drawn outside containers: roots, leaves, sprigs, small whole
+  plants): `0`, `1-5`, `6-15`, `16+`.
+- **J_fragtype** (what most fragments are): `ROOTS` (at least two thirds are roots or underground
+  parts with no leaves), `LEAVES` (at least two thirds are leaves or leafy sprigs without roots),
+  `MIXED` (anything else, including small whole plants), `NONE` (no fragments).
+
+## Circular-diagram categories (only when PT = CIRCLE, else NA)
+
+Principal diagram = the largest circular diagram.
+
+- **C_centre** (what fills the centre of the principal diagram): `ANIMAL` (any beast, fish, bird,
+  scorpion, lizard, crab), `HUMAN` (one or more human figures), `FACE` (a sun, moon or star with a
+  drawn face), `GEOMETRIC` (star, rosette, wheel, spokes, flower-like pattern, dots, without a face,
+  animal or human), `EMPTY` (blank, or writing only).
+- **C_animal** (only if C_centre = ANIMAL, else NA): `FISH`; `HORNED` (quadruped with horns);
+  `HORNLESS` (quadruped without horns); `CRAWLER` (scorpion, lizard, crab, crayfish or other
+  many-legged or reptile-like creature); `BIRD`; `OTHER`.
+- **C_figures** (human figures anywhere in the image): `0`, `1-9`, `10-19`, `20+`.
+- **C_rings** (concentric rings of the principal diagram: count the drawn circles around the centre
+  disc, not counting the centre disc's own outline, then map): 0 or 1 circle `0-1`; 2 circles `2`;
+  3 circles `3`; 4 or more `4+`. Bands of writing without drawn circles do not count.
+- **C_diagrams** (separate circular diagrams in the image): `1`, `2-3`, `4+`.
+- **C_rays** (straight radial spokes, rays, petals or wedge segments in the principal diagram):
+  `PRESENT`, `ABSENT`.
+
+## Bath categories (only when PT = BATH, else NA)
+
+- **B_pools** (distinct basins: enclosed areas of liquid, painted, hatched or outlined, or tubs;
+  a pool split by a drawn wall counts as two): `1`, `2`, `3+`.
+- **B_figures** (human figures anywhere in the image): `1-5`, `6-10`, `11+`.
+- **B_tubes** (pipes, tubes, conduits or channels drawn as objects): `PRESENT`, `ABSENT`.
+
+
+Rules: every key takes exactly one level token from its list in the codebook, spelled exactly as shown (for example 1-4, 3+, PRESENT). Use NA when the category does not apply (the page type is not the one the category belongs to, or its stated condition is not met). note is free text of at most 12 words, or -.
+
+Answer with ONE JSON object and nothing else, with exactly these keys in this order: "PT", "P_plants", "P_root", "P_leafshape", "P_leafcount", "P_flower", "P_habit", "J_shape", "J_count", "J_fragcount", "J_fragtype", "C_centre", "C_animal", "C_figures", "C_rings", "C_diagrams", "C_rays", "B_pools", "B_figures", "B_tubes", "note".

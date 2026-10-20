@@ -1,0 +1,38 @@
+fixture: synthetic text 120 pages, 12691 tokens, truth {'p_copy': 0.2, 'tau': 4.0, 'a': 0.15, 'q_pre': 0.3, 'q_suf': 0.2, 'q_core': 0.2}
+=== FIX: 120 pages; training 96 pages (10138 tokens), held-out 24 pages (2553 tokens); training SlotSegmenter 51 prefix / 51 suffix candidates ===
+    stage A (240 evals): best loss 118.04 at p_copy 0.15, tau 4.0, a 0.0
+    stage B (526 evals): best loss 86.47 at q_pre 0.3, q_suf 0.2, q_core 0.2
+    stage C (555 evals): best loss 86.47
+  fit (555 grid evaluations, 14s): p_copy 0.15, tau 4.0, a 0.0, q_pre 0.3, q_suf 0.2, q_core 0.2, q_none 0.30; loss 86.47 (R 83.74, shares 2.54, types 0.19)
+  target R(d) real : 1.807 1.577 1.349 1.379 1.190 1.160 1.281 1.271 1.165 1.157 1.030 0.953 0.921 0.917 0.953 0.963 0.996 1.038 0.872 0.993
+  fitted R(d) gen0 : 1.686 1.705 1.361 1.355 1.263 1.196 1.132 1.062 1.134 0.998 1.064 0.934 0.930 0.908 0.983 0.950 0.912 1.039 1.036 0.990
+  edit shares real : identical 0.3929, prefix_swap 0.3105, suffix_swap 0.1561, core_edit1 0.1406  (counts [1168, 923, 464, 418])
+  edit shares gen0 : identical 0.3751, prefix_swap 0.3065, suffix_swap 0.1819, core_edit1 0.1365
+  types real 2963 at 10138 tokens; gen0 2976 at 10177 tokens
+  line length real mean 7.543 sd 1.713; gen0 mean 7.572 sd 1.696 (empirical sampling)
+  measured 7 texts in 5s
+  subsample draws 1s
+  real held-out: Moran 0.0212 [0.0077,0.0426]; core->core +0.0538 [+0.0279,+0.0731]; prefix gain -0.1143 [-0.1334,-0.0971]; jsd_first_fg 0.0104 (excess +0.0024); CHARWIN -0.9639
+  real F1 by stream: prefix +0.0037 [-0.0010,+0.0110], core +0.0100 [+0.0028,+0.0184], suffix +0.0050 [-0.0069,+0.0126] -> s39 rule on the real text (this split): core layer
+    gen s1: Moran 0.0581 core->core +0.0505 prefix gain -0.1482 jsd_first_fg 0.0126 CHARWIN -0.9535 F1 prefix/core/suffix -0.0114/+0.0072/+0.0070
+    gen s2: Moran 0.0525 core->core +0.0296 prefix gain -0.1208 jsd_first_fg 0.0231 CHARWIN -0.9611 F1 prefix/core/suffix +0.0098/+0.0091/+0.0041
+    gen s3: Moran 0.0110 core->core +0.0368 prefix gain -0.0987 jsd_first_fg 0.0074 CHARWIN -0.9607 F1 prefix/core/suffix +0.0141/-0.0036/-0.0130
+    null s1: Moran -0.0163 core->core +0.0315 prefix gain -0.1477 jsd_first_fg 0.0147 CHARWIN -1.2162 F1 prefix/core/suffix +0.0053/-0.0164/-0.0060
+    null s2: Moran 0.0098 core->core +0.0022 prefix gain -0.1406 jsd_first_fg 0.0080 CHARWIN -1.2264 F1 prefix/core/suffix -0.0161/+0.0258/-0.0022
+    null s3: Moran -0.0114 core->core +0.0018 prefix gain -0.1440 jsd_first_fg 0.0095 CHARWIN -1.2122 F1 prefix/core/suffix -0.0023/+0.0049/+0.0058
+  -- local-memory: 3/6 hold --
+    P1 HOLDS: Moran Δ +0.0193 [-0.0013,+0.0338] (gen 0.0405, real 0.0212); margin hi-0 = +0.0338
+    P2 HOLDS: core->core excess Δ -0.0148 [-0.0434,+0.0125] (gen +0.0390, real +0.0538); margins 0-lo +0.0434, hi-0 +0.0125
+    P3 HOLDS: prefix gain gen -0.1226 vs real -0.1143 [-0.1334,-0.0971]; margins g-lo +0.0109, hi-g +0.0254
+    P4 fails: jsd_first_fg gen 0.0144 vs s15 width [0.1447,0.2156] (real held-out 0.0104); margins -0.1303 / +0.2012; excess gen +0.0068 real +0.0024
+    P5 fails: CHARWIN gen -0.9584 (real -0.9639); margin -0.9584
+    P6 fails: F1 gen: prefix +0.0042 [+0.0005,+0.0067], core +0.0042 [-0.0007,+0.0084], suffix -0.0006 [-0.0045,+0.0028] -> affix layer; core lo margin -0.0007
+  -- null p_copy=0: 1/6 hold --
+    P1 fails: Moran Δ -0.0272 [-0.0555,-0.0116] (gen -0.0059, real 0.0212); margin hi-0 = -0.0116
+    P2 fails: core->core excess Δ -0.0419 [-0.0749,-0.0124] (gen +0.0119, real +0.0538); margins 0-lo +0.0749, hi-0 -0.0124
+    P3 fails: prefix gain gen -0.1441 vs real -0.1143 [-0.1334,-0.0971]; margins g-lo -0.0107, hi-g +0.0470
+    P4 fails: jsd_first_fg gen 0.0107 vs s15 width [0.1447,0.2156] (real held-out 0.0104); margins -0.1340 / +0.2049; excess gen +0.0031 real +0.0024
+    P5 fails: CHARWIN gen -1.2183 (real -0.9639); margin -1.2183
+    P6 HOLDS: F1 gen: prefix -0.0044 [-0.0083,-0.0011], core +0.0048 [+0.0008,+0.0102], suffix -0.0008 [-0.0057,+0.0032] -> core layer; core lo margin +0.0008
+  fixture check: fitted p_copy 0.15 vs truth 0.2 -> OK; refit truth-class producer P1 & P2 hold on its own held-out pages -> OK
+FIXTURE PASS (21s)

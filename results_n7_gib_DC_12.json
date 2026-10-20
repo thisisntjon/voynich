@@ -1,0 +1,130 @@
+{
+ "row": {
+  "name": "gib_DC_12",
+  "tokens": 207,
+  "types": 175,
+  "pages": 2,
+  "lines": 26,
+  "errors": {
+   "extra": "ZeroDivisionError: float division by zero",
+   "bake": "KeyError: 'markov3'"
+  },
+  "types_25k": 175,
+  "h2": 3.1975,
+  "sd_len": 2.805,
+  "jsd_first_fg": 0.1693,
+  "p_init_enrich": 1.99,
+  "m_final_enrich": 0.0,
+  "cross_excess_eva": -0.0525,
+  "redup_pct": 0.0,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "p_init_enrich",
+   "m_final_enrich",
+   "cross_excess_eva",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "gib_DC_12",
+   "tokens": 207,
+   "types": 175,
+   "hapax_rate": 0.8971,
+   "mean_len": 5.705,
+   "sd_len": 2.805,
+   "h1": 4.1106,
+   "h2": 3.1975,
+   "h3": 1.8863,
+   "zipf": -0.245,
+   "redup_pct": 0.0,
+   "jsd_first_fg": 0.1693,
+   "jsd_last_lg": 0.1861,
+   "p_init_enrich": 1.99,
+   "m_final_enrich": 0.0,
+   "cross_mi_eva": 1.1546,
+   "cross_excess_eva": -0.0525,
+   "cross_mi_glyph": 1.4308,
+   "cross_excess_glyph": -0.0233,
+   "recur_le_1": 0.0,
+   "recur_le_5": 0.0097,
+   "recur_le_20": 0.0531,
+   "recur_le_100": 0.1498
+  },
+  "info_mi_adjacent": null,
+  "info_mi_page": -0.0044198895027625085,
+  "info_samecol_minus_othercol": null,
+  "info_bpe_adjacent": 0.3230065140833047,
+  "lex_beta": null,
+  "lex_rate_late_early": null,
+  "lex_edit1_excess": 0.10857142857142857,
+  "slot_occupancy_pc": 0.11717171717171718,
+  "slot_table_likeness": 0.9671028072256416,
+  "slot_core_crowding": 0.3151515151515151,
+  "x_edge_mi_word": null,
+  "x_position_entropy": null,
+  "x_ltr_minus_rtl": null,
+  "x_moran_I": null,
+  "bake_char3_minus_unigram": null,
+  "x_hapax_10k": null,
+  "bake_winner": null,
+  "family": "X",
+  "note": "data\\controls_gibberish\\gib_DC_12.meta.json; 207 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 3,
+    "outs": 4,
+    "na": 3,
+    "out_metrics": [
+     "jsd_first_fg",
+     "p_init_enrich",
+     "cross_excess_eva",
+     "types_25k"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "p_init_enrich"
+    ]
+   },
+   "C": {
+    "ins": 2,
+    "outs": 3,
+    "na": 5,
+    "out_metrics": [
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "types_25k"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "cross_excess_eva"
+    ]
+   },
+   "G": {
+    "ins": 2,
+    "outs": 5,
+    "na": 3,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "types_25k"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "results_m4_phase1_board.json"
+}

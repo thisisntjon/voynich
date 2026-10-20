@@ -1,0 +1,4 @@
+token check: OK
+L05: tokens A 46 B 46 edits 3 agreement 0.9348
+L15: tokens A 46 B 49 edits 11 agreement 0.7755
+ROUTE_C1=FAIL

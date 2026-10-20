@@ -1,0 +1,130 @@
+{
+ "row": {
+  "name": "gib_DC_03",
+  "tokens": 251,
+  "types": 123,
+  "pages": 2,
+  "lines": 32,
+  "errors": {
+   "extra": "ZeroDivisionError: float division by zero",
+   "bake": "KeyError: 'markov3'"
+  },
+  "types_25k": 123,
+  "h2": 2.8698,
+  "sd_len": 2.759,
+  "jsd_first_fg": 0.1247,
+  "p_init_enrich": 2.92,
+  "m_final_enrich": null,
+  "cross_excess_eva": 0.0352,
+  "redup_pct": 0.8,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "p_init_enrich",
+   "cross_excess_eva"
+  ],
+  "v1_full": {
+   "name": "gib_DC_03",
+   "tokens": 251,
+   "types": 123,
+   "hapax_rate": 0.7561,
+   "mean_len": 4.235,
+   "sd_len": 2.759,
+   "h1": 4.0386,
+   "h2": 2.8698,
+   "h3": 1.5332,
+   "zipf": -0.6716,
+   "redup_pct": 0.8,
+   "jsd_first_fg": 0.1247,
+   "jsd_last_lg": 0.1169,
+   "p_init_enrich": 2.92,
+   "m_final_enrich": null,
+   "cross_mi_eva": 0.8607,
+   "cross_excess_eva": 0.0352,
+   "cross_mi_glyph": 0.9699,
+   "cross_excess_glyph": 0.0448,
+   "recur_le_1": 0.008,
+   "recur_le_5": 0.0956,
+   "recur_le_20": 0.3267,
+   "recur_le_100": 0.4861
+  },
+  "info_mi_adjacent": 0.08656985161595543,
+  "info_mi_page": 0.04018264840182706,
+  "info_samecol_minus_othercol": -0.046961806395033,
+  "info_bpe_adjacent": 0.5065100669724711,
+  "lex_beta": null,
+  "lex_rate_late_early": null,
+  "lex_edit1_excess": 0.18699186991869918,
+  "slot_occupancy_pc": 0.3361581920903955,
+  "slot_table_likeness": 0.8762940391371544,
+  "slot_core_crowding": 0.4152542372881356,
+  "x_edge_mi_word": null,
+  "x_position_entropy": null,
+  "x_ltr_minus_rtl": null,
+  "x_moran_I": null,
+  "bake_char3_minus_unigram": null,
+  "x_hapax_10k": null,
+  "bake_winner": null,
+  "family": "X",
+  "note": "data\\controls_gibberish\\gib_DC_03.meta.json; 251 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 2,
+    "outs": 4,
+    "na": 4,
+    "out_metrics": [
+     "jsd_first_fg",
+     "p_init_enrich",
+     "redup_pct",
+     "types_25k"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "p_init_enrich",
+     "redup_pct"
+    ]
+   },
+   "C": {
+    "ins": 1,
+    "outs": 4,
+    "na": 5,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "redup_pct",
+     "types_25k"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "redup_pct"
+    ]
+   },
+   "G": {
+    "ins": 2,
+    "outs": 4,
+    "na": 4,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "types_25k"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "results_m4_phase1_board.json"
+}

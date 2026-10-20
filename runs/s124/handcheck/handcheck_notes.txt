@@ -1,0 +1,15 @@
+s124 hand-check of 10 seeded crops (colour | silhouette), viewed with the Read tool after the crops stage, before scoring. Written 2026-10-19 00:43:21 PDT.
+hc00 f88v_p1 00: whole leaf cluster, clean.
+hc01 f89r1_p1 03: faint fragment of a root (wash only), partial.
+hc02 f89r2_p1 21: whole root, clean (outline ink not in silhouette).
+hc03 f89r2_p1 26: leaf pair + root of one plant merged into one object; neighbour leaf excluded.
+hc04 f89v2_p1 20: leaf/hand-shaped part, silhouette fragmented (wash gaps).
+hc05 f99r_p1 08: JAR (missed by the s48 jar rule) merged with a small root; contaminated.
+hc06 f99v_p1 03: whole root, clean.
+hc07 f100r_p1 10: three leaflets of one sprig, fragment of a larger drawing.
+hc08 f101r_p1 09: four leaves of one plant, fragment of a larger drawing.
+hc09 f101v_p1 13: one leaf plus two specks, mostly clean.
+Writing: no text strokes enter any silhouette (jar label on hc05 shows only as filled holes).
+Tally: 4/10 clean whole parts (00, 02, 06, 09), 4/10 fragments/partial (01, 04, 07, 08), 1 merged plant (03), 1 jar contamination (05).
+Consequence (stated before scoring): fragments of one drawing fall on the same page, so within-page similarity is inflated by construction;
+the real herbal controls (one plant per page, same fragmentation) are the reference for this, not the permutation null alone.

@@ -1,0 +1,1450 @@
+{
+ "run": "n6 matched 23078",
+ "extend": 0.1,
+ "n_target": 23078,
+ "ranges": {
+  "h2": {
+   "L": {
+    "min": 2.5724,
+    "max": 3.534,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 3.1702,
+    "max": 3.7572,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 1.8189,
+    "max": 2.5101,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "sd_len": {
+   "L": {
+    "min": 1.383,
+    "max": 2.966,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.961,
+    "max": 2.304,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 1.136,
+    "max": 3.437,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "jsd_first_fg": {
+   "L": {
+    "min": 0.0009,
+    "max": 0.0032,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.0087,
+    "max": 0.1198,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.0013,
+    "max": 0.0563,
+    "n": 5,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "p_init_enrich": {
+   "L": {
+    "min": 0.43,
+    "max": 1.22,
+    "n": 18,
+    "members": [
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "hawaiian_fornander",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "G": {
+    "min": 1.03,
+    "max": 19.64,
+    "n": 5,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "m_final_enrich": {
+   "L": {
+    "min": 0.0,
+    "max": 1.43,
+    "n": 18,
+    "members": [
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "hawaiian_fornander",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "G": {
+    "min": 1.08,
+    "max": 11.28,
+    "n": 5,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "cross_excess_eva": {
+   "L": {
+    "min": 0.0271,
+    "max": 0.1459,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.006,
+    "max": 0.029,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.0003,
+    "max": 0.0151,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "redup_pct": {
+   "L": {
+    "min": 0.0,
+    "max": 0.381,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.0,
+    "max": 0.0,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.117,
+    "max": 1.057,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "x_edge_mi_word": {
+   "L": {
+    "min": 0.028815716635279848,
+    "max": 0.14965827327437403,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.008114652014761208,
+    "max": 0.03214828307154041,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.0001717817544646845,
+    "max": 0.02534419113350353,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "types_25k": {
+   "L": {
+    "min": 1127.0,
+    "max": 7767.0,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 6172.0,
+    "max": 6815.0,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 1654.0,
+    "max": 7679.0,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "x_position_entropy": {
+   "L": {
+    "min": 1.9452674486419994,
+    "max": 2.153281391234706,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 1.5846097921757132,
+    "max": 2.238366556054355,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 1.4068659286841778,
+    "max": 1.7981159726583307,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "x_ltr_minus_rtl": {
+   "L": {
+    "min": -0.006010668506306782,
+    "max": 0.002849113331640974,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": -0.027185847374093956,
+    "max": -0.000631321836283965,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.00044962119121585395,
+    "max": 0.005972031887438978,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "x_moran_I": {
+   "L": {
+    "min": -0.272194514258738,
+    "max": 0.03595383910772829,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": -0.04198151033883433,
+    "max": 0.025173610789934065,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.003817211850470883,
+    "max": 0.11231699085981896,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "lex_beta": {
+   "L": {
+    "min": 0.5750896776661644,
+    "max": 0.9107276445952988,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.7573835578531264,
+    "max": 0.7767462373029201,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.6083584007317785,
+    "max": 0.8246554537881323,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "lex_rate_late_early": {
+   "L": {
+    "min": 0.18592057761732853,
+    "max": 0.5980487804878047,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.5248498088476242,
+    "max": 0.5491388044579534,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.06591500433651344,
+    "max": 0.6418352244696596,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "lex_edit1_excess": {
+   "L": {
+    "min": -0.0016802016241948964,
+    "max": 0.0983648770439037,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": -0.00032367697038354626,
+    "max": 0.018635363169479113,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.014618434093161548,
+    "max": 0.2641268217847098,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "slot_occupancy_pc": {
+   "L": {
+    "min": 0.032045871855168634,
+    "max": 0.06636937941285767,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.02837099316868103,
+    "max": 0.19237147595356552,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.06152534113060429,
+    "max": 0.1252561784207354,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "slot_table_likeness": {
+   "L": {
+    "min": 0.5540614955737009,
+    "max": 0.7775492483338585,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.7520509286433211,
+    "max": 0.954497041043874,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.634349155477902,
+    "max": 0.7673350344708211,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "slot_core_crowding": {
+   "L": {
+    "min": 0.5097165991902834,
+    "max": 0.9240755310778914,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.6443914081145584,
+    "max": 1.0,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.5936423841059603,
+    "max": 0.9756944444444444,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "info_mi_adjacent": {
+   "L": {
+    "min": 0.21382723543474658,
+    "max": 1.1095473748107563,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.2980737768146988,
+    "max": 0.3637745972758497,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.006753442810464527,
+    "max": 0.3516361495660365,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "info_samecol_minus_othercol": {
+   "L": {
+    "min": -0.010379011452618547,
+    "max": 0.06207985670268856,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": -0.014588393020333656,
+    "max": 0.0036209922146779316,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.005981415086542929,
+    "max": 0.005623258683275845,
+    "n": 5,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "bake_char3_minus_unigram": {
+   "L": {
+    "min": -0.45038651632813576,
+    "max": 1.7103609340744725,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": -0.707200105193829,
+    "max": 1.7657268375108348,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": -0.8179848352082146,
+    "max": 0.6435507076207472,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "x_hapax_10k": {
+   "L": {
+    "min": 0.4138755980861244,
+    "max": 0.7400684030518284,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.5874959716403481,
+    "max": 0.6254396248534584,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.4145896656534954,
+    "max": 0.8328552803129075,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "info_mi_page": {
+   "L": {
+    "min": -0.022902911342586485,
+    "max": 0.03016559805547603,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.009235961515457802,
+    "max": 0.0215864696037793,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.0015782883494724897,
+    "max": 0.029019728443911763,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  },
+  "info_bpe_adjacent": {
+   "L": {
+    "min": 0.6852896168354216,
+    "max": 1.125957875694268,
+    "n": 21,
+    "members": [
+     "arabic_quran",
+     "catalan_tirant",
+     "czech_bible_kralicka_1613",
+     "english_alice",
+     "german_faust",
+     "german_kafka",
+     "greek_herodotus",
+     "hawaiian_fornander",
+     "hebrew_torah",
+     "italian_dante",
+     "latin_augustine",
+     "latin_caesar",
+     "latin_macer_floridus",
+     "latin_pliny_herbal",
+     "mhg_nibelungenlied",
+     "mhg_parzival",
+     "occitan_croisade_albigeoise",
+     "oldfrench_roland",
+     "tagalog_florante_1838",
+     "tagalog_urbana_feliza_1864",
+     "turkish_kanun_medeni_1926"
+    ]
+   },
+   "C": {
+    "min": 0.351680432722674,
+    "max": 0.9340328437412211,
+    "n": 6,
+    "members": [
+     "nomen_lines",
+     "nomen_numeric",
+     "nomen_numeric_lines",
+     "nomen_numeric_sylls",
+     "nomen_syll",
+     "nomen_word"
+    ]
+   },
+   "G": {
+    "min": 0.6857866990100782,
+    "max": 1.0962130806604273,
+    "n": 6,
+    "members": [
+     "c2_best",
+     "markov1",
+     "rugg_grille",
+     "schwartz_reuse",
+     "timm_schinner",
+     "timm_schinner_ownlines"
+    ]
+   }
+  }
+ },
+ "tight": {
+  "h2": {
+   "L": true,
+   "C": true,
+   "G": true
+  },
+  "sd_len": {
+   "L": true,
+   "C": true,
+   "G": false
+  },
+  "jsd_first_fg": {
+   "L": true,
+   "C": true,
+   "G": true
+  },
+  "p_init_enrich": {
+   "L": true,
+   "C": false,
+   "G": false
+  },
+  "m_final_enrich": {
+   "L": true,
+   "C": false,
+   "G": true
+  },
+  "cross_excess_eva": {
+   "L": false,
+   "C": true,
+   "G": true
+  },
+  "redup_pct": {
+   "L": true,
+   "C": true,
+   "G": false
+  },
+  "lex_beta": {
+   "L": false,
+   "C": true,
+   "G": false
+  },
+  "lex_rate_late_early": {
+   "L": true,
+   "C": true,
+   "G": false
+  },
+  "lex_edit1_excess": {
+   "L": true,
+   "C": true,
+   "G": true
+  },
+  "slot_occupancy_pc": {
+   "L": true,
+   "C": true,
+   "G": true
+  },
+  "slot_table_likeness": {
+   "L": false,
+   "C": true,
+   "G": true
+  },
+  "slot_core_crowding": {
+   "L": true,
+   "C": true,
+   "G": true
+  },
+  "info_mi_adjacent": {
+   "L": false,
+   "C": true,
+   "G": true
+  },
+  "info_mi_page": {
+   "L": true,
+   "C": true,
+   "G": true
+  },
+  "info_samecol_minus_othercol": {
+   "L": true,
+   "C": true,
+   "G": true
+  },
+  "bake_char3_minus_unigram": {
+   "L": false,
+   "C": false,
+   "G": false
+  },
+  "x_edge_mi_word": {
+   "L": false,
+   "C": true,
+   "G": true
+  },
+  "x_hapax_10k": {
+   "L": false,
+   "C": true,
+   "G": false
+  },
+  "x_moran_I": {
+   "L": false,
+   "C": true,
+   "G": true
+  },
+  "x_position_entropy": {
+   "L": true,
+   "C": false,
+   "G": true
+  },
+  "x_ltr_minus_rtl": {
+   "L": true,
+   "C": false,
+   "G": true
+  }
+ },
+ "no_weight": [
+  "sd_len",
+  "lex_beta",
+  "lex_rate_late_early",
+  "lex_edit1_excess",
+  "slot_occupancy_pc",
+  "slot_table_likeness",
+  "slot_core_crowding",
+  "info_mi_adjacent",
+  "info_mi_page",
+  "info_samecol_minus_othercol",
+  "bake_char3_minus_unigram",
+  "x_hapax_10k",
+  "x_moran_I",
+  "bake_winner"
+ ],
+ "rows": [],
+ "short_controls": [
+  "german_kafka",
+  "latin_caesar",
+  "latin_macer_floridus"
+ ],
+ "note": "n6 matched-size ranges; tight/no_weight copied from results_m4_phase1_board.json"
+}

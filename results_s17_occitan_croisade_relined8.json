@@ -1,0 +1,147 @@
+{
+ "row": {
+  "name": "occitan_croisade_relined8",
+  "tokens": 25000,
+  "types": 4685,
+  "pages": 136,
+  "lines": 3125,
+  "errors": {},
+  "types_25k": 4685,
+  "h2": 3.163,
+  "sd_len": 2.212,
+  "jsd_first_fg": 0.0019,
+  "p_init_enrich": 0.87,
+  "m_final_enrich": 0.96,
+  "cross_excess_eva": 0.0959,
+  "redup_pct": 0.028,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "jsd_first_fg",
+   "p_init_enrich",
+   "m_final_enrich",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "occitan_croisade_relined8",
+   "tokens": 25000,
+   "types": 4685,
+   "hapax_rate": 0.6015,
+   "mean_len": 3.753,
+   "sd_len": 2.212,
+   "h1": 3.9192,
+   "h2": 3.163,
+   "h3": 2.6539,
+   "zipf": -1.027,
+   "redup_pct": 0.028,
+   "jsd_first_fg": 0.0019,
+   "jsd_last_lg": 0.0012,
+   "p_init_enrich": 0.87,
+   "m_final_enrich": 0.96,
+   "cross_mi_eva": 0.1154,
+   "cross_excess_eva": 0.0959,
+   "cross_mi_glyph": 0.1203,
+   "cross_excess_glyph": 0.0969,
+   "recur_le_1": 0.0003,
+   "recur_le_5": 0.0439,
+   "recur_le_20": 0.1539,
+   "recur_le_100": 0.3684
+  },
+  "x_edge_mi_word": 0.09969020298280148,
+  "x_hapax_10k": 0.6566811194324005,
+  "x_moran_I": -0.18347896856495846,
+  "x_position_entropy": 2.034250546170091,
+  "x_ltr_minus_rtl": -0.0018531061506749551,
+  "info_mi_adjacent": 0.6757236782396505,
+  "info_mi_page": 0.01637528853150738,
+  "info_samecol_minus_othercol": 0.016277638418958018,
+  "info_bpe_adjacent": 0.8419374182452098,
+  "lex_beta": 0.7461285308340283,
+  "lex_rate_late_early": 0.4180478821362799,
+  "lex_edit1_excess": 0.037139807897545354,
+  "slot_occupancy_pc": 0.04196503791069924,
+  "slot_table_likeness": 0.630719117651658,
+  "slot_core_crowding": 0.81044650379107,
+  "bake_winner": "unigram_gt",
+  "bake_char3_minus_unigram": 0.31854662089233443,
+  "bake_bits": {
+   "markov2": 12.987522907714531,
+   "markov3": 11.70025096074655,
+   "slot": 12.226056215208189,
+   "unigram_gt": 11.381704339854215,
+   "copy0.3+markov3": 12.015164316307951,
+   "copy0.1+markov3": 11.760743954545555,
+   "copy0.05+markov3": 11.71570980261343
+  },
+  "family": "L",
+  "note": ".//data//controls_realline//occitan_croisade_relined8.meta.json; 82388 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 10,
+    "outs": 0,
+    "na": 0,
+    "out_metrics": [],
+    "out_tight": []
+   },
+   "C": {
+    "ins": 4,
+    "outs": 4,
+    "na": 2,
+    "out_metrics": [
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k"
+    ],
+    "out_tight": [
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k"
+    ]
+   },
+   "G": {
+    "ins": 5,
+    "outs": 5,
+    "na": 0,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ]
+   },
+   "X": {
+    "ins": 6,
+    "outs": 3,
+    "na": 1,
+    "out_metrics": [
+     "jsd_first_fg",
+     "x_edge_mi_word",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "x_edge_mi_word",
+     "x_ltr_minus_rtl"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": ".//s15_ranges.json"
+}

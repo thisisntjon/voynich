@@ -1,0 +1,12 @@
+Pages with labels+text: 40  label tokens: 778
+Label word found in own page text: 0.121; section-permuted null 0.107±0.010; p=0.106
+  section A: 3 pages, own-page hit 0.095
+  section B: 11 pages, own-page hit 0.246
+  section C: 4 pages, own-page hit 0.068
+  section H: 5 pages, own-page hit 0.143
+  section P: 15 pages, own-page hit 0.079
+  section T: 2 pages, own-page hit 0.250
+Section H: rare-word Jaccard adjacent(<=2 pages)=0.0218 vs distant=0.0140  ratio 1.55
+Section B: rare-word Jaccard adjacent(<=2 pages)=0.0628 vs distant=0.0574  ratio 1.09
+Section S: rare-word Jaccard adjacent(<=2 pages)=0.0697 vs distant=0.0581  ratio 1.20
+Section P: rare-word Jaccard adjacent(<=2 pages)=0.0435 vs distant=0.0363  ratio 1.20

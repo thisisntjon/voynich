@@ -1,0 +1,552 @@
+=== S34: MORPHOLOGICAL SLOT, OPERATOR & LABEL COUPLING INVESTIGATOR ===
+Clock: 2026-10-17 21:29:02 (datetime.now)
+Script SHA256 verification: MATCH (406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625)
+Seed: 20261017 | Part 1 shuffles: 200 | Part 2 perms: 500 | Part 3 perms: 1000
+
+======================================================================================
+TRANSLITERATION: ZL3b (ZL3b-n.txt)
+======================================================================================
+
+--- PART 1 [ZL3b]: 3x3 INTER-WORD SLOT COUPLING & WITHIN-WORD HIERARCHY ---
+  SlotSegmenter inventory on ZL3b: 34857 tokens, 7025 word types -> 29 prefixes (incl. empty), 2335 cores, 19 suffixes (incl. empty)
+  Prefixes (28 non-empty): ['a', 'al', 'ch', 'che', 'cho', 'cth', 'dal', 'k', 'l', 'lk', 'o', 'ok', 'oke', 'ol', 'ot', 'ota', 'ote', 'p', 'qo', 'qok', 'qot', 'r', 'she', 'sho', 't', 'y', 'yk', 'yt']
+  Suffixes (18 non-empty): ['ain', 'air', 'al', 'am', 'ar', 'chy', 'd', 'dal', 'dar', 'eey', 'hy', 'ky', 'o', 'ody', 'ol', 'or', 's', 'y']
+
+  [ZL3b | ALL] tokens=34857, lines(>=2w)=4103, adj_pairs=30727
+    Within-Word Slot Binding (vs 200 freq-weighted independent slot shuffles):
+      MI(P;C): obs=1.6696  null=0.4483+/-0.0026  excess=+1.2214 bits  z=+471.76  NMI_sym=0.3056
+      MI(C;S): obs=1.4608  null=0.2635+/-0.0029  excess=+1.1973 bits  z=+414.95  NMI_sym=0.3158
+      MI(P;S): obs=0.1962  null=0.0107+/-0.0007  excess=+0.1855 bits  z=+273.19  NMI_sym=0.0559
+    Inter-Word 3x3 Directed Slot Coupling (vs 200 within-line word-order shuffles):
+      Pair       obs_MI  null_MI  null_SD    excess   z_score  Role
+      S1->P2     0.1480   0.0265   0.0012   +0.1214   +103.00  suffix->next_prefix boundary
+      P1->P2     0.1279   0.0589   0.0017   +0.0690    +39.58  prefix->next_prefix run/agreement
+      C1->C2     1.3469   1.3784   0.0061   -0.0315     -5.14  core->next_core stem transition
+      S1->S2     0.0324   0.0188   0.0009   +0.0136    +15.05  suffix->next_suffix rhyme/agreement
+      C1->P2     0.6231   0.4964   0.0038   +0.1267    +33.53  core->next_prefix coupling
+      S1->C2     0.3386   0.3046   0.0037   +0.0339     +9.17  suffix->next_core coupling
+      P1->C2     0.4823   0.4964   0.0036   -0.0141     -3.89  prefix->next_core coupling
+      P1->S2     0.0301   0.0264   0.0013   +0.0037     +2.85  prefix->next_suffix coupling
+      C1->S2     0.3001   0.3039   0.0037   -0.0038     -1.03  core->next_suffix coupling
+    3x3 Excess MI Grid (rows=[P1,C1,S1] in word_t, cols=[P2,C2,S2] in word_{t+1}):
+                  -> P2      -> C2      -> S2   RowSum_Ex
+      P1        +0.0690    -0.0141    +0.0037     +0.0586
+      C1        +0.1267    -0.0315    -0.0038     +0.0914
+      S1        +0.1214    +0.0339    +0.0136     +0.1689
+      ColSum    +0.3171    -0.0117    +0.0135     +0.3190
+    Top S1->P2 concrete transitions by positive MI contribution (count >= 50):
+      -y    -> qok - : count=1558, PMI=+1.080 bits, dMI=+0.0548
+      -<0>  -> a   - : count=1068, PMI=+0.603 bits, dMI=+0.0210
+      -<0>  -> che - : count=1447, PMI=+0.350 bits, dMI=+0.0165
+      -y    -> qot - : count= 495, PMI=+0.944 bits, dMI=+0.0152
+      -y    -> qo  - : count= 430, PMI=+0.829 bits, dMI=+0.0116
+      -y    -> l   - : count= 354, PMI=+0.793 bits, dMI=+0.0091
+      -<0>  -> she - : count= 912, PMI=+0.283 bits, dMI=+0.0084
+      -o    -> <0> - : count= 239, PMI=+1.006 bits, dMI=+0.0078
+
+  [ZL3b | Currier_A] tokens=11231, lines(>=2w)=1550, adj_pairs=9674
+    Within-Word Slot Binding (vs 200 freq-weighted independent slot shuffles):
+      MI(P;C): obs=1.6868  null=0.6202+/-0.0056  excess=+1.0666 bits  z=+191.64  NMI_sym=0.3232
+      MI(C;S): obs=1.5437  null=0.4148+/-0.0058  excess=+1.1289 bits  z=+194.45  NMI_sym=0.3346
+      MI(P;S): obs=0.1649  null=0.0334+/-0.0018  excess=+0.1315 bits  z= +71.41  NMI_sym=0.0484
+    Inter-Word 3x3 Directed Slot Coupling (vs 200 within-line word-order shuffles):
+      Pair       obs_MI  null_MI  null_SD    excess   z_score  Role
+      S1->P2     0.1116   0.0487   0.0026   +0.0629    +23.92  suffix->next_prefix boundary
+      P1->P2     0.1233   0.0866   0.0038   +0.0367     +9.74  prefix->next_prefix run/agreement
+      C1->C2     1.6866   1.7649   0.0120   -0.0783     -6.52  core->next_core stem transition
+      S1->S2     0.0412   0.0328   0.0022   +0.0084     +3.78  suffix->next_suffix rhyme/agreement
+      C1->P2     0.7146   0.6729   0.0078   +0.0417     +5.36  core->next_prefix coupling
+      S1->C2     0.4735   0.4621   0.0076   +0.0114     +1.51  suffix->next_core coupling
+      P1->C2     0.6495   0.6737   0.0082   -0.0243     -2.96  prefix->next_core coupling
+      P1->S2     0.0535   0.0484   0.0027   +0.0051     +1.89  prefix->next_suffix coupling
+      C1->S2     0.4432   0.4615   0.0072   -0.0183     -2.56  core->next_suffix coupling
+    3x3 Excess MI Grid (rows=[P1,C1,S1] in word_t, cols=[P2,C2,S2] in word_{t+1}):
+                  -> P2      -> C2      -> S2   RowSum_Ex
+      P1        +0.0367    -0.0243    +0.0051     +0.0175
+      C1        +0.0417    -0.0783    -0.0183     -0.0549
+      S1        +0.0629    +0.0114    +0.0084     +0.0827
+      ColSum    +0.1413    -0.0911    -0.0049     +0.0453
+
+  [ZL3b | Currier_B] tokens=23078, lines(>=2w)=2463, adj_pairs=20600
+    Within-Word Slot Binding (vs 200 freq-weighted independent slot shuffles):
+      MI(P;C): obs=1.7541  null=0.4598+/-0.0031  excess=+1.2943 bits  z=+413.53  NMI_sym=0.3271
+      MI(C;S): obs=1.4544  null=0.2578+/-0.0037  excess=+1.1966 bits  z=+321.22  NMI_sym=0.3269
+      MI(P;S): obs=0.2387  null=0.0165+/-0.0010  excess=+0.2223 bits  z=+223.62  NMI_sym=0.0693
+    Inter-Word 3x3 Directed Slot Coupling (vs 200 within-line word-order shuffles):
+      Pair       obs_MI  null_MI  null_SD    excess   z_score  Role
+      S1->P2     0.1815   0.0261   0.0015   +0.1554   +103.00  suffix->next_prefix boundary
+      P1->P2     0.1319   0.0492   0.0019   +0.0828    +43.73  prefix->next_prefix run/agreement
+      C1->C2     1.3070   1.3316   0.0070   -0.0246     -3.52  core->next_core stem transition
+      S1->S2     0.0325   0.0182   0.0013   +0.0144    +11.13  suffix->next_suffix rhyme/agreement
+      C1->P2     0.6577   0.4980   0.0040   +0.1598    +39.63  core->next_prefix coupling
+      S1->C2     0.3242   0.2877   0.0044   +0.0365     +8.33  suffix->next_core coupling
+      P1->C2     0.4837   0.4989   0.0040   -0.0152     -3.80  prefix->next_core coupling
+      P1->S2     0.0300   0.0265   0.0015   +0.0036     +2.39  prefix->next_suffix coupling
+      C1->S2     0.2814   0.2883   0.0043   -0.0070     -1.60  core->next_suffix coupling
+    3x3 Excess MI Grid (rows=[P1,C1,S1] in word_t, cols=[P2,C2,S2] in word_{t+1}):
+                  -> P2      -> C2      -> S2   RowSum_Ex
+      P1        +0.0828    -0.0152    +0.0036     +0.0712
+      C1        +0.1598    -0.0246    -0.0070     +0.1282
+      S1        +0.1554    +0.0365    +0.0144     +0.2063
+      ColSum    +0.3979    -0.0033    +0.0110     +0.4057
+
+--- PART 2 [ZL3b]: O-027 PREFIX/CORE/SUFFIX SECTION OPERATOR TEST ---
+
+  [ZL3b | Hand1_H_vs_P] tokens=10273, shared_cores=170, top50_shared_tokens=8226 (80.1%)
+    Token-Level Section Mutual Information & Block Permutation Nulls:
+      Feature           |  obs_MI obs_NMI  U(S|F) |  Quire_Ex  Quire_z  Quire_p | Bifolio_Ex  Bifol_z  Bifol_p
+      a_WholeWord(W)    |  0.3273  0.0630  0.4260 |   +0.0995    +3.12   0.0182 |    +0.1526    +5.55   0.0000
+      b_Prefix(P)       |  0.0612  0.0259  0.0797 |   +0.0473    +4.75   0.0182 |    +0.0513    +9.96   0.0000
+      c_Core(C)         |  0.1428  0.0401  0.1859 |   +0.0548    +3.54   0.0182 |    +0.0760    +6.44   0.0000
+      d_Suffix(S)       |  0.0176  0.0098  0.0229 |   +0.0108    +2.91   0.0182 |    +0.0127    +6.23   0.0000
+      e1_Prefix|Core50  |  0.1168  0.0434  0.1635 |   +0.0549    +4.54   0.0182 |    +0.0664    +8.78   0.0000
+      e2_Suffix|Core50  |  0.0369  0.0282  0.0517 |   +0.0058    +1.65   0.0909 |    +0.0111    +2.94   0.0080
+    Chunk-Level 40-Word NMF Topic NMI (259 chunks; Quire B=11 n=55, Bifolio B=27 n=500):
+      Feature           |  obs_NMI |  Q_null     Q_ex     Q_z     Q_p | BF_null    BF_ex    BF_z    BF_p
+      a_WholeWord(W)    |   0.2751 |  0.0668  +0.2084   +3.89  0.0182 |  0.0473  +0.2278   +7.78  0.0000
+      b_Prefix(P)       |   0.2923 |  0.0536  +0.2387   +5.11  0.0182 |  0.0348  +0.2575  +11.58  0.0000
+      c_Core(C)         |   0.2066 |  0.0454  +0.1612   +3.78  0.0182 |  0.0324  +0.1742   +7.31  0.0000
+      d_Suffix(S)       |   0.0645 |  0.0278  +0.0367   +1.60  0.1273 |  0.0205  +0.0439   +2.86  0.0180
+      e1_Prefix|Core50  |   0.2705 |  0.0584  +0.2122   +4.30  0.0182 |  0.0469  +0.2237   +7.86  0.0000
+      e2_Suffix|Core50  |   0.1855 |  0.0493  +0.1362   +3.23  0.0364 |  0.0328  +0.1526   +6.68  0.0000
+    Concrete Top Shared Cores in Hand1_H_vs_P showing Section-Operator Prefix Shifts (P | C):
+      core='d': H(n=697: <0>:74%, cho:8%, o:4%) vs P(n=180: <0>:68%, cho:8%, ol:6%)
+      core='y': H(n=579: ch:18%, cth:16%, <0>:13%) vs P(n=91: che:25%, she:22%, oke:13%)
+      core='daiin': H(n=478: <0>:82%, cho:5%, o:4%) vs P(n=119: <0>:82%, ol:5%, o:4%)
+      core='l': H(n=458: cho:52%, sho:23%, o:13%) vs P(n=118: cho:39%, o:36%, <0>:7%)
+      core='s': H(n=377: <0>:76%, cho:5%, o:2%) vs P(n=111: <0>:74%, cho:7%, ol:5%)
+
+  [ZL3b | Hand2_B_vs_H_vs_T] tokens=10367, shared_cores=207, top50_shared_tokens=8762 (84.5%)
+    Token-Level Section Mutual Information & Block Permutation Nulls:
+      Feature           |  obs_MI obs_NMI  U(S|F) |  Quire_Ex  Quire_z  Quire_p | Bifolio_Ex  Bifol_z  Bifol_p
+      a_WholeWord(W)    |  0.5099  0.0977  0.3742 |   +0.1283    +1.72   0.0286 |    +0.1028    +3.60   0.0000
+      b_Prefix(P)       |  0.0831  0.0298  0.0610 |   +0.0281    +1.51   0.0952 |    +0.0502    +3.88   0.0020
+      c_Core(C)         |  0.1979  0.0535  0.1453 |   +0.0495    +1.53   0.0381 |    +0.0452    +3.10   0.0080
+      d_Suffix(S)       |  0.0302  0.0162  0.0221 |   +0.0085    +1.02   0.1714 |    +0.0168    +3.11   0.0120
+      e1_Prefix|Core50  |  0.1919  0.0606  0.1508 |   +0.0505    +1.85   0.0286 |    +0.0621    +4.64   0.0000
+      e2_Suffix|Core50  |  0.0782  0.0431  0.0614 |   +0.0205    +1.84   0.0190 |    +0.0240    +4.12   0.0000
+    Chunk-Level 40-Word NMF Topic NMI (258 chunks; Quire B=7 n=105, Bifolio B=12 n=500):
+      Feature           |  obs_NMI |  Q_null     Q_ex     Q_z     Q_p | BF_null    BF_ex    BF_z    BF_p
+      a_WholeWord(W)    |   0.3329 |  0.2092  +0.1237   +1.32  0.1333 |  0.1314  +0.2015   +3.50  0.0080
+      b_Prefix(P)       |   0.2135 |  0.1418  +0.0717   +1.40  0.1333 |  0.0856  +0.1279   +3.89  0.0000
+      c_Core(C)         |   0.1944 |  0.1379  +0.0565   +0.99  0.1619 |  0.0728  +0.1216   +3.51  0.0060
+      d_Suffix(S)       |   0.1138 |  0.0914  +0.0224   +0.77  0.2476 |  0.0450  +0.0687   +3.11  0.0100
+      e1_Prefix|Core50  |   0.3041 |  0.1937  +0.1105   +1.29  0.1143 |  0.1221  +0.1820   +3.43  0.0080
+      e2_Suffix|Core50  |   0.2287 |  0.1541  +0.0747   +1.23  0.1048 |  0.0910  +0.1378   +3.53  0.0060
+    Concrete Top Shared Cores in Hand2_B_vs_H_vs_T showing Section-Operator Prefix Shifts (P | C):
+      core='d': B(n=864: <0>:30%, she:27%, che:23%) vs H(n=354: <0>:32%, che:15%, ch:14%) vs T(n=227: <0>:33%, che:18%, she:17%)
+      core='y': B(n=416: she:21%, che:18%, qok:14%) vs H(n=105: <0>:18%, ok:15%, che:13%) vs T(n=97: che:24%, she:22%, <0>:15%)
+      core='l': B(n=449: o:49%, qo:27%, ota:6%) vs H(n=68: o:32%, cho:15%, sho:15%) vs T(n=100: o:35%, a:16%, ota:16%)
+      core='ed': B(n=386: qok:41%, qot:12%, she:10%) vs H(n=99: qok:30%, oke:12%, qot:11%) vs T(n=36: qok:28%, qot:11%, oke:11%)
+      core='r': B(n=183: o:49%, <0>:16%, a:15%) vs H(n=142: a:41%, o:40%, ota:8%) vs T(n=111: o:38%, a:33%, ota:14%)
+
+  [ZL3b | Hand23_B_vs_S_vs_H] tokens=20288, shared_cores=336, top50_shared_tokens=16800 (82.8%)
+    Token-Level Section Mutual Information & Block Permutation Nulls:
+      Feature           |  obs_MI obs_NMI  U(S|F) |  Quire_Ex  Quire_z  Quire_p | Bifolio_Ex  Bifol_z  Bifol_p
+      a_WholeWord(W)    |  0.4648  0.0833  0.3318 |   +0.1779    +1.70   0.0437 |    +0.0677    +3.65   0.0020
+      b_Prefix(P)       |  0.0687  0.0239  0.0490 |   +0.0327    +1.97   0.0357 |    +0.0483    +6.54   0.0000
+      c_Core(C)         |  0.1795  0.0463  0.1281 |   +0.0693    +1.70   0.0397 |    +0.0408    +4.33   0.0000
+      d_Suffix(S)       |  0.0265  0.0136  0.0189 |   +0.0125    +1.54   0.0516 |    +0.0173    +4.23   0.0020
+      e1_Prefix|Core50  |  0.1570  0.0486  0.1173 |   +0.0626    +1.90   0.0357 |    +0.0634    +6.12   0.0000
+      e2_Suffix|Core50  |  0.0591  0.0338  0.0441 |   +0.0226    +1.91   0.0317 |    +0.0143    +3.80   0.0020
+    Chunk-Level 40-Word NMF Topic NMI (505 chunks; Quire B=9 n=252, Bifolio B=19 n=500):
+      Feature           |  obs_NMI |  Q_null     Q_ex     Q_z     Q_p | BF_null    BF_ex    BF_z    BF_p
+      a_WholeWord(W)    |   0.2937 |  0.1480  +0.1456   +1.79  0.0159 |  0.0823  +0.2114   +6.16  0.0000
+      b_Prefix(P)       |   0.1966 |  0.1229  +0.0737   +1.58  0.0476 |  0.0490  +0.1476   +6.39  0.0000
+      c_Core(C)         |   0.1827 |  0.0984  +0.0843   +1.95  0.0040 |  0.0483  +0.1344   +5.78  0.0000
+      d_Suffix(S)       |   0.0953 |  0.0633  +0.0320   +1.03  0.2222 |  0.0354  +0.0599   +3.36  0.0080
+      e1_Prefix|Core50  |   0.2918 |  0.1487  +0.1431   +1.78  0.0119 |  0.0768  +0.2150   +6.61  0.0000
+      e2_Suffix|Core50  |   0.2343 |  0.1151  +0.1192   +2.19  0.0040 |  0.0618  +0.1725   +6.51  0.0000
+    Concrete Top Shared Cores in Hand23_B_vs_S_vs_H showing Section-Operator Prefix Shifts (P | C):
+      core='d': B(n=864: <0>:30%, she:27%, che:23%) vs S(n=909: che:29%, <0>:21%, she:16%) vs H(n=429: <0>:31%, ch:16%, che:15%)
+      core='l': B(n=449: o:49%, qo:27%, ota:6%) vs S(n=597: a:23%, o:19%, <0>:17%) vs H(n=94: o:36%, cho:16%, ota:13%)
+      core='y': B(n=416: she:21%, che:18%, qok:14%) vs S(n=478: che:26%, she:17%, <0>:16%) vs H(n=139: <0>:19%, ok:14%, che:12%)
+      core='e': B(n=216: che:29%, qok:24%, she:20%) vs S(n=686: oke:20%, che:19%, qok:15%) vs H(n=77: che:18%, she:14%, qok:13%)
+      core='r': B(n=183: o:49%, <0>:16%, a:15%) vs S(n=466: a:43%, o:22%, ota:15%) vs H(n=167: o:41%, a:38%, ota:10%)
+
+--- PART 3 [ZL3b]: SAME-FOLIO LABEL <-> PARAGRAPH BODY-TEXT COUPLING ---
+  [ZL3b] Total L* label pages=57 (1164 tokens); pages with BOTH L* and P* paragraph body=40 (778 label tokens); pages with L* and ANY non-L* body=55 (1159 label tokens)
+    Overall Same-Folio Coupling on 40 L*+P* Folios (778 label tokens, 1000 perms):
+      Measure           |  TokHit Null_IH    Ex_IH   z_IH   p_IH |  TypHit  z_Typ |   TFIDF Null_TF   z_TF   p_TF
+      i_ExactWord       |  0.1208  0.1058  +0.0150  +1.67 0.0639 |  0.1099  +2.10 |  0.0245  0.0192  +2.99 0.0020
+      ii_SlotCore       |  0.4871  0.4677  +0.0195  +1.07 0.1608 |  0.3897  +2.65 |  0.1307  0.1127  +4.35 0.0010
+      iii_Strip_oyds    |  0.1581  0.1413  +0.0168  +1.92 0.0270 |  0.1449  +2.43 |  0.0331  0.0272  +2.78 0.0050
+      iv_Strip_12pref   |  0.2326  0.2153  +0.0173  +1.68 0.0539 |  0.2076  +2.04 |  0.0540  0.0484  +2.27 0.0190
+      v_s29_AffixStem   |  0.2866  0.2772  +0.0095  +0.86 0.2238 |  0.2645  +2.20 |  0.0771  0.0634  +3.64 0.0020
+
+    Per-Section Breakdown (1,000 within-section folio permutations):
+      [Herbal: 5 folios, 28 label tokens]
+        i_ExactWord      : TokHit=0.1429 (null=0.1871, ex=-0.0442, z=-0.47, p=0.6553) | TFIDF=0.0168 (null=0.0088, z=+1.60)
+        ii_SlotCore      : TokHit=0.7143 (null=0.6290, ex=+0.0853, z=+0.97, p=0.2567) | TFIDF=0.1110 (null=0.0884, z=+1.65)
+        iii_Strip_oyds   : TokHit=0.1429 (null=0.2024, ex=-0.0595, z=-0.63, p=0.7043) | TFIDF=0.0280 (null=0.0153, z=+1.52)
+        iv_Strip_12pref  : TokHit=0.1429 (null=0.2024, ex=-0.0595, z=-0.63, p=0.7043) | TFIDF=0.0312 (null=0.0163, z=+1.61)
+        v_s29_AffixStem  : TokHit=0.1786 (null=0.1941, ex=-0.0155, z=-0.16, p=0.6194) | TFIDF=0.0718 (null=0.0210, z=+2.58)
+      [Pharma: 15 folios, 241 label tokens]
+        i_ExactWord      : TokHit=0.0788 (null=0.0731, ex=+0.0058, z=+0.41, p=0.3996) | TFIDF=0.0139 (null=0.0125, z=+0.51)
+        ii_SlotCore      : TokHit=0.4149 (null=0.4064, ex=+0.0085, z=+0.60, p=0.3127) | TFIDF=0.0904 (null=0.0805, z=+2.10)
+        iii_Strip_oyds   : TokHit=0.0996 (null=0.0942, ex=+0.0054, z=+0.35, p=0.4196) | TFIDF=0.0174 (null=0.0159, z=+0.50)
+        iv_Strip_12pref  : TokHit=0.1992 (null=0.1902, ex=+0.0090, z=+0.63, p=0.3117) | TFIDF=0.0397 (null=0.0356, z=+1.12)
+        v_s29_AffixStem  : TokHit=0.2324 (null=0.2291, ex=+0.0032, z=+0.19, p=0.4665) | TFIDF=0.0506 (null=0.0436, z=+1.76)
+      [Bio: 11 folios, 126 label tokens]
+        i_ExactWord      : TokHit=0.2460 (null=0.2311, ex=+0.0150, z=+0.72, p=0.2757) | TFIDF=0.0392 (null=0.0303, z=+2.16)
+        ii_SlotCore      : TokHit=0.6825 (null=0.6503, ex=+0.0322, z=+2.11, p=0.0400) | TFIDF=0.1482 (null=0.1335, z=+1.83)
+        iii_Strip_oyds   : TokHit=0.3333 (null=0.2993, ex=+0.0340, z=+1.37, p=0.1159) | TFIDF=0.0496 (null=0.0418, z=+1.52)
+        iv_Strip_12pref  : TokHit=0.4286 (null=0.4160, ex=+0.0126, z=+0.59, p=0.3646) | TFIDF=0.0815 (null=0.0787, z=+0.57)
+        v_s29_AffixStem  : TokHit=0.5238 (null=0.4960, ex=+0.0278, z=+0.98, p=0.1918) | TFIDF=0.1094 (null=0.0933, z=+2.16)
+      [Cosmo_Astro: 9 folios, 383 label tokens]
+        i_ExactWord      : TokHit=0.1044 (null=0.0777, ex=+0.0267, z=+1.04, p=0.1768) | TFIDF=0.0283 (null=0.0218, z=+1.08)
+        ii_SlotCore      : TokHit=0.4517 (null=0.4282, ex=+0.0235, z=+0.54, p=0.3097) | TFIDF=0.1875 (null=0.1377, z=+3.98)
+        iii_Strip_oyds   : TokHit=0.1384 (null=0.1088, ex=+0.0296, z=+1.04, p=0.1678) | TFIDF=0.0417 (null=0.0299, z=+1.91)
+        iv_Strip_12pref  : TokHit=0.1958 (null=0.1609, ex=+0.0349, z=+0.94, p=0.1878) | TFIDF=0.0567 (null=0.0444, z=+1.63)
+        v_s29_AffixStem  : TokHit=0.2507 (null=0.2389, ex=+0.0118, z=+0.30, p=0.3606) | TFIDF=0.0848 (null=0.0725, z=+1.36)
+
+======================================================================================
+TRANSLITERATION: RF1b (RF1b-e.txt)
+======================================================================================
+
+--- PART 1 [RF1b]: 3x3 INTER-WORD SLOT COUPLING & WITHIN-WORD HIERARCHY ---
+  SlotSegmenter inventory on RF1b: 31142 tokens, 6635 word types -> 28 prefixes (incl. empty), 2229 cores, 20 suffixes (incl. empty)
+
+  [RF1b | ALL] tokens=31142, lines(>=2w)=4089, adj_pairs=27020
+    Within-Word Slot Binding (vs 200 freq-weighted independent slot shuffles):
+      MI(P;C): obs=1.7087  null=0.4697+/-0.0028  excess=+1.2390 bits  z=+449.96  NMI_sym=0.3121
+      MI(C;S): obs=1.4581  null=0.2834+/-0.0035  excess=+1.1747 bits  z=+331.74  NMI_sym=0.3132
+      MI(P;S): obs=0.2008  null=0.0123+/-0.0008  excess=+0.1885 bits  z=+228.28  NMI_sym=0.0572
+    Inter-Word 3x3 Directed Slot Coupling (vs 200 within-line word-order shuffles):
+      Pair       obs_MI  null_MI  null_SD    excess   z_score  Role
+      S1->P2     0.1322   0.0276   0.0011   +0.1046    +91.47  suffix->next_prefix boundary
+      P1->P2     0.1197   0.0594   0.0019   +0.0603    +31.14  prefix->next_prefix run/agreement
+      C1->C2     1.4054   1.4507   0.0076   -0.0453     -5.99  core->next_core stem transition
+      S1->S2     0.0311   0.0194   0.0011   +0.0117    +10.43  suffix->next_suffix rhyme/agreement
+      C1->P2     0.6185   0.5182   0.0039   +0.1003    +25.43  core->next_prefix coupling
+      S1->C2     0.3522   0.3255   0.0041   +0.0266     +6.52  suffix->next_core coupling
+      P1->C2     0.5015   0.5179   0.0041   -0.0164     -3.98  prefix->next_core coupling
+      P1->S2     0.0310   0.0275   0.0014   +0.0035     +2.45  prefix->next_suffix coupling
+      C1->S2     0.3125   0.3256   0.0040   -0.0130     -3.24  core->next_suffix coupling
+    3x3 Excess MI Grid (rows=[P1,C1,S1] in word_t, cols=[P2,C2,S2] in word_{t+1}):
+                  -> P2      -> C2      -> S2   RowSum_Ex
+      P1        +0.0603    -0.0164    +0.0035     +0.0474
+      C1        +0.1003    -0.0453    -0.0130     +0.0420
+      S1        +0.1046    +0.0266    +0.0117     +0.1429
+      ColSum    +0.2652    -0.0351    +0.0022     +0.2323
+
+  [RF1b | Currier_A] tokens=10429, lines(>=2w)=1546, adj_pairs=8872
+    Within-Word Slot Binding (vs 200 freq-weighted independent slot shuffles):
+      MI(P;C): obs=1.7440  null=0.6506+/-0.0064  excess=+1.0934 bits  z=+171.42  NMI_sym=0.3316
+      MI(C;S): obs=1.5685  null=0.4496+/-0.0069  excess=+1.1189 bits  z=+161.63  NMI_sym=0.3354
+      MI(P;S): obs=0.1744  null=0.0365+/-0.0021  excess=+0.1379 bits  z= +64.58  NMI_sym=0.0508
+    Inter-Word 3x3 Directed Slot Coupling (vs 200 within-line word-order shuffles):
+      Pair       obs_MI  null_MI  null_SD    excess   z_score  Role
+      S1->P2     0.1162   0.0522   0.0026   +0.0641    +24.41  suffix->next_prefix boundary
+      P1->P2     0.1213   0.0862   0.0035   +0.0351    +10.14  prefix->next_prefix run/agreement
+      C1->C2     1.7918   1.8748   0.0117   -0.0830     -7.10  core->next_core stem transition
+      S1->S2     0.0474   0.0387   0.0025   +0.0087     +3.53  suffix->next_suffix rhyme/agreement
+      C1->P2     0.7196   0.7007   0.0075   +0.0189     +2.53  core->next_prefix coupling
+      S1->C2     0.5107   0.5002   0.0084   +0.0104     +1.24  suffix->next_core coupling
+      P1->C2     0.6771   0.7007   0.0082   -0.0235     -2.88  prefix->next_core coupling
+      P1->S2     0.0574   0.0522   0.0029   +0.0052     +1.79  prefix->next_suffix coupling
+      C1->S2     0.4805   0.5003   0.0078   -0.0198     -2.53  core->next_suffix coupling
+    3x3 Excess MI Grid (rows=[P1,C1,S1] in word_t, cols=[P2,C2,S2] in word_{t+1}):
+                  -> P2      -> C2      -> S2   RowSum_Ex
+      P1        +0.0351    -0.0235    +0.0052     +0.0167
+      C1        +0.0189    -0.0830    -0.0198     -0.0840
+      S1        +0.0641    +0.0104    +0.0087     +0.0832
+      ColSum    +0.1180    -0.0961    -0.0059     +0.0160
+
+  [RF1b | Currier_B] tokens=20218, lines(>=2w)=2456, adj_pairs=17747
+    Within-Word Slot Binding (vs 200 freq-weighted independent slot shuffles):
+      MI(P;C): obs=1.7869  null=0.4786+/-0.0034  excess=+1.3083 bits  z=+388.38  NMI_sym=0.3333
+      MI(C;S): obs=1.4529  null=0.2751+/-0.0044  excess=+1.1778 bits  z=+269.56  NMI_sym=0.3253
+      MI(P;S): obs=0.2519  null=0.0193+/-0.0012  excess=+0.2326 bits  z=+200.49  NMI_sym=0.0732
+    Inter-Word 3x3 Directed Slot Coupling (vs 200 within-line word-order shuffles):
+      Pair       obs_MI  null_MI  null_SD    excess   z_score  Role
+      S1->P2     0.1611   0.0300   0.0016   +0.1310    +83.15  suffix->next_prefix boundary
+      P1->P2     0.1240   0.0509   0.0022   +0.0731    +32.86  prefix->next_prefix run/agreement
+      C1->C2     1.3593   1.3930   0.0076   -0.0337     -4.41  core->next_core stem transition
+      S1->S2     0.0352   0.0219   0.0015   +0.0132     +9.00  suffix->next_suffix rhyme/agreement
+      C1->P2     0.6523   0.5179   0.0044   +0.1345    +30.64  core->next_prefix coupling
+      S1->C2     0.3349   0.3093   0.0047   +0.0256     +5.49  suffix->next_core coupling
+      P1->C2     0.5002   0.5178   0.0047   -0.0175     -3.74  prefix->next_core coupling
+      P1->S2     0.0342   0.0302   0.0017   +0.0040     +2.41  prefix->next_suffix coupling
+      C1->S2     0.2968   0.3087   0.0041   -0.0119     -2.86  core->next_suffix coupling
+    3x3 Excess MI Grid (rows=[P1,C1,S1] in word_t, cols=[P2,C2,S2] in word_{t+1}):
+                  -> P2      -> C2      -> S2   RowSum_Ex
+      P1        +0.0731    -0.0175    +0.0040     +0.0596
+      C1        +0.1345    -0.0337    -0.0119     +0.0888
+      S1        +0.1310    +0.0256    +0.0132     +0.1699
+      ColSum    +0.3386    -0.0256    +0.0054     +0.3183
+
+--- PART 2 [RF1b]: O-027 PREFIX/CORE/SUFFIX SECTION OPERATOR TEST ---
+
+  [RF1b | Hand1_H_vs_P] tokens=9564, shared_cores=167, top50_shared_tokens=7589 (79.3%)
+    Token-Level Section Mutual Information & Block Permutation Nulls:
+      Feature           |  obs_MI obs_NMI  U(S|F) |  Quire_Ex  Quire_z  Quire_p | Bifolio_Ex  Bifol_z  Bifol_p
+      a_WholeWord(W)    |  0.3316  0.0636  0.4331 |   +0.0943    +2.83   0.0182 |    +0.1495    +5.97   0.0000
+      b_Prefix(P)       |  0.0639  0.0270  0.0834 |   +0.0495    +4.80   0.0182 |    +0.0538   +10.39   0.0000
+      c_Core(C)         |  0.1459  0.0405  0.1906 |   +0.0530    +3.26   0.0182 |    +0.0751    +7.11   0.0000
+      d_Suffix(S)       |  0.0164  0.0090  0.0214 |   +0.0095    +2.63   0.0364 |    +0.0113    +5.83   0.0000
+      e1_Prefix|Core50  |  0.1173  0.0449  0.1646 |   +0.0532    +4.31   0.0182 |    +0.0657    +9.15   0.0000
+      e2_Suffix|Core50  |  0.0404  0.0305  0.0567 |   +0.0062    +1.89   0.0545 |    +0.0119    +3.29   0.0080
+    Chunk-Level 40-Word NMF Topic NMI (241 chunks; Quire B=11 n=55, Bifolio B=27 n=500):
+      Feature           |  obs_NMI |  Q_null     Q_ex     Q_z     Q_p | BF_null    BF_ex    BF_z    BF_p
+      a_WholeWord(W)    |   0.2244 |  0.0619  +0.1625   +3.29  0.0182 |  0.0441  +0.1803   +6.02  0.0000
+      b_Prefix(P)       |   0.3327 |  0.0593  +0.2734   +5.22  0.0182 |  0.0437  +0.2890  +10.60  0.0000
+      c_Core(C)         |   0.1913 |  0.0461  +0.1451   +3.22  0.0364 |  0.0292  +0.1621   +7.47  0.0000
+      d_Suffix(S)       |   0.0589 |  0.0276  +0.0312   +1.33  0.0909 |  0.0190  +0.0399   +3.02  0.0080
+      e1_Prefix|Core50  |   0.3089 |  0.0663  +0.2426   +4.44  0.0182 |  0.0411  +0.2678   +9.44  0.0000
+      e2_Suffix|Core50  |   0.2097 |  0.0523  +0.1574   +3.29  0.0364 |  0.0349  +0.1748   +7.42  0.0000
+
+  [RF1b | Hand2_B_vs_H_vs_T] tokens=8904, shared_cores=182, top50_shared_tokens=7543 (84.7%)
+    Token-Level Section Mutual Information & Block Permutation Nulls:
+      Feature           |  obs_MI obs_NMI  U(S|F) |  Quire_Ex  Quire_z  Quire_p | Bifolio_Ex  Bifol_z  Bifol_p
+      a_WholeWord(W)    |  0.5193  0.1004  0.3856 |   +0.1313    +1.70   0.0190 |    +0.1003    +3.31   0.0040
+      b_Prefix(P)       |  0.0884  0.0320  0.0656 |   +0.0294    +1.46   0.0762 |    +0.0533    +3.78   0.0040
+      c_Core(C)         |  0.1984  0.0536  0.1474 |   +0.0486    +1.49   0.0571 |    +0.0407    +2.71   0.0100
+      d_Suffix(S)       |  0.0305  0.0165  0.0227 |   +0.0073    +0.82   0.2857 |    +0.0155    +2.60   0.0220
+      e1_Prefix|Core50  |  0.2008  0.0629  0.1595 |   +0.0534    +1.87   0.0286 |    +0.0645    +4.57   0.0000
+      e2_Suffix|Core50  |  0.0794  0.0432  0.0631 |   +0.0185    +1.79   0.0381 |    +0.0188    +3.33   0.0040
+    Chunk-Level 40-Word NMF Topic NMI (222 chunks; Quire B=7 n=105, Bifolio B=12 n=500):
+      Feature           |  obs_NMI |  Q_null     Q_ex     Q_z     Q_p | BF_null    BF_ex    BF_z    BF_p
+      a_WholeWord(W)    |   0.2490 |  0.1830  +0.0660   +0.78  0.2952 |  0.1209  +0.1281   +2.53  0.0240
+      b_Prefix(P)       |   0.1493 |  0.1203  +0.0291   +1.02  0.1905 |  0.0973  +0.0520   +1.55  0.0560
+      c_Core(C)         |   0.2191 |  0.1571  +0.0620   +0.81  0.2476 |  0.0864  +0.1328   +3.00  0.0240
+      d_Suffix(S)       |   0.1088 |  0.0974  +0.0114   +0.32  0.4000 |  0.0555  +0.0533   +1.90  0.0520
+      e1_Prefix|Core50  |   0.2486 |  0.1748  +0.0738   +0.97  0.2381 |  0.1164  +0.1322   +2.89  0.0120
+      e2_Suffix|Core50  |   0.2663 |  0.1791  +0.0872   +1.07  0.1524 |  0.0977  +0.1686   +3.28  0.0160
+
+  [RF1b | Hand23_B_vs_S_vs_H] tokens=17771, shared_cores=310, top50_shared_tokens=14729 (82.9%)
+    Token-Level Section Mutual Information & Block Permutation Nulls:
+      Feature           |  obs_MI obs_NMI  U(S|F) |  Quire_Ex  Quire_z  Quire_p | Bifolio_Ex  Bifol_z  Bifol_p
+      a_WholeWord(W)    |  0.4703  0.0848  0.3421 |   +0.1800    +1.64   0.0437 |    +0.0559    +2.86   0.0080
+      b_Prefix(P)       |  0.0713  0.0250  0.0519 |   +0.0346    +1.97   0.0317 |    +0.0507    +6.59   0.0000
+      c_Core(C)         |  0.1767  0.0457  0.1286 |   +0.0665    +1.57   0.0437 |    +0.0325    +3.36   0.0020
+      d_Suffix(S)       |  0.0268  0.0137  0.0195 |   +0.0123    +1.54   0.0317 |    +0.0167    +3.97   0.0040
+      e1_Prefix|Core50  |  0.1618  0.0497  0.1232 |   +0.0654    +1.85   0.0278 |    +0.0627    +5.90   0.0000
+      e2_Suffix|Core50  |  0.0604  0.0337  0.0460 |   +0.0223    +1.83   0.0317 |    +0.0098    +2.54   0.0240
+    Chunk-Level 40-Word NMF Topic NMI (442 chunks; Quire B=9 n=252, Bifolio B=19 n=500):
+      Feature           |  obs_NMI |  Q_null     Q_ex     Q_z     Q_p | BF_null    BF_ex    BF_z    BF_p
+      a_WholeWord(W)    |   0.2848 |  0.1448  +0.1400   +1.61  0.0159 |  0.0845  +0.2003   +6.08  0.0000
+      b_Prefix(P)       |   0.2225 |  0.1293  +0.0932   +1.54  0.0238 |  0.0625  +0.1600   +5.79  0.0000
+      c_Core(C)         |   0.1544 |  0.0806  +0.0738   +1.51  0.0278 |  0.0470  +0.1074   +4.40  0.0000
+      d_Suffix(S)       |   0.0703 |  0.0474  +0.0229   +1.03  0.2341 |  0.0305  +0.0399   +2.98  0.0080
+      e1_Prefix|Core50  |   0.2897 |  0.1506  +0.1391   +1.57  0.0357 |  0.0780  +0.2116   +6.17  0.0000
+      e2_Suffix|Core50  |   0.1506 |  0.0809  +0.0698   +1.66  0.0040 |  0.0525  +0.0981   +4.28  0.0000
+
+--- PART 3 [RF1b]: SAME-FOLIO LABEL <-> PARAGRAPH BODY-TEXT COUPLING ---
+  [RF1b] Total L* label pages=57 (1002 tokens); pages with BOTH L* and P* paragraph body=40 (676 label tokens); pages with L* and ANY non-L* body=55 (997 label tokens)
+    Overall Same-Folio Coupling on 40 L*+P* Folios (676 label tokens, 1000 perms):
+      Measure           |  TokHit Null_IH    Ex_IH   z_IH   p_IH |  TypHit  z_Typ |   TFIDF Null_TF   z_TF   p_TF
+      i_ExactWord       |  0.0947  0.0909  +0.0038  +0.53 0.3407 |  0.0868  +1.16 |  0.0189  0.0160  +1.85 0.0340
+      ii_SlotCore       |  0.4615  0.4487  +0.0129  +0.91 0.2208 |  0.3846  +1.95 |  0.1260  0.1106  +4.18 0.0010
+      iii_Strip_oyds    |  0.1287  0.1255  +0.0032  +0.44 0.3746 |  0.1164  +1.00 |  0.0270  0.0234  +1.80 0.0360
+      iv_Strip_12pref   |  0.1953  0.1877  +0.0076  +0.86 0.2268 |  0.1783  +1.13 |  0.0461  0.0418  +1.61 0.0589
+      v_s29_AffixStem   |  0.2648  0.2492  +0.0156  +1.54 0.0719 |  0.2430  +2.59 |  0.0686  0.0562  +3.21 0.0020
+
+    Per-Section Breakdown (1,000 within-section folio permutations):
+      [Herbal: 5 folios, 29 label tokens]
+        i_ExactWord      : TokHit=0.1724 (null=0.1588, ex=+0.0137, z=+0.14, p=0.4496) | TFIDF=0.0162 (null=0.0079, z=+1.78)
+        ii_SlotCore      : TokHit=0.7241 (null=0.6139, ex=+0.1102, z=+1.49, p=0.1139) | TFIDF=0.1090 (null=0.0844, z=+2.14)
+        iii_Strip_oyds   : TokHit=0.1724 (null=0.1735, ex=-0.0011, z=-0.01, p=0.4985) | TFIDF=0.0269 (null=0.0140, z=+1.75)
+        iv_Strip_12pref  : TokHit=0.1724 (null=0.1735, ex=-0.0011, z=-0.01, p=0.4985) | TFIDF=0.0316 (null=0.0155, z=+1.83)
+        v_s29_AffixStem  : TokHit=0.2069 (null=0.1655, ex=+0.0414, z=+0.43, p=0.4136) | TFIDF=0.0719 (null=0.0200, z=+2.70)
+      [Pharma: 15 folios, 211 label tokens]
+        i_ExactWord      : TokHit=0.0521 (null=0.0541, ex=-0.0020, z=-0.16, p=0.6244) | TFIDF=0.0105 (null=0.0101, z=+0.17)
+        ii_SlotCore      : TokHit=0.4123 (null=0.4012, ex=+0.0111, z=+0.67, p=0.3117) | TFIDF=0.0918 (null=0.0806, z=+2.33)
+        iii_Strip_oyds   : TokHit=0.0758 (null=0.0687, ex=+0.0072, z=+0.49, p=0.3666) | TFIDF=0.0151 (null=0.0126, z=+0.80)
+        iv_Strip_12pref  : TokHit=0.1706 (null=0.1533, ex=+0.0173, z=+1.24, p=0.1439) | TFIDF=0.0363 (null=0.0308, z=+1.38)
+        v_s29_AffixStem  : TokHit=0.2133 (null=0.1981, ex=+0.0152, z=+0.87, p=0.2358) | TFIDF=0.0495 (null=0.0393, z=+2.20)
+      [Bio: 11 folios, 105 label tokens]
+        i_ExactWord      : TokHit=0.2476 (null=0.2247, ex=+0.0229, z=+0.93, p=0.2138) | TFIDF=0.0362 (null=0.0285, z=+2.14)
+        ii_SlotCore      : TokHit=0.6476 (null=0.6558, ex=-0.0082, z=-0.52, p=0.7932) | TFIDF=0.1484 (null=0.1384, z=+1.36)
+        iii_Strip_oyds   : TokHit=0.2952 (null=0.2913, ex=+0.0039, z=+0.15, p=0.4865) | TFIDF=0.0455 (null=0.0399, z=+1.19)
+        iv_Strip_12pref  : TokHit=0.4000 (null=0.4056, ex=-0.0056, z=-0.19, p=0.6633) | TFIDF=0.0742 (null=0.0724, z=+0.27)
+        v_s29_AffixStem  : TokHit=0.4857 (null=0.4809, ex=+0.0049, z=+0.18, p=0.4895) | TFIDF=0.0908 (null=0.0844, z=+0.86)
+      [Cosmo_Astro: 9 folios, 331 label tokens]
+        i_ExactWord      : TokHit=0.0665 (null=0.0573, ex=+0.0091, z=+0.42, p=0.3217) | TFIDF=0.0131 (null=0.0143, z=-0.23)
+        ii_SlotCore      : TokHit=0.4109 (null=0.3780, ex=+0.0329, z=+0.83, p=0.2258) | TFIDF=0.1652 (null=0.1220, z=+3.88)
+        iii_Strip_oyds   : TokHit=0.1057 (null=0.0922, ex=+0.0135, z=+0.52, p=0.3027) | TFIDF=0.0242 (null=0.0230, z=+0.19)
+        iv_Strip_12pref  : TokHit=0.1480 (null=0.1329, ex=+0.0151, z=+0.46, p=0.2827) | TFIDF=0.0362 (null=0.0345, z=+0.25)
+        v_s29_AffixStem  : TokHit=0.2326 (null=0.2062, ex=+0.0264, z=+0.78, p=0.2388) | TFIDF=0.0715 (null=0.0588, z=+1.45)
+
+======================================================================================
+TRANSLITERATION: IT2a (IT2a-n.txt)
+======================================================================================
+
+--- PART 1 [IT2a]: 3x3 INTER-WORD SLOT COUPLING & WITHIN-WORD HIERARCHY ---
+  SlotSegmenter inventory on IT2a: 34411 tokens, 7069 word types -> 27 prefixes (incl. empty), 2380 cores, 20 suffixes (incl. empty)
+
+  [IT2a | ALL] tokens=34411, lines(>=2w)=4090, adj_pairs=30294
+    Within-Word Slot Binding (vs 200 freq-weighted independent slot shuffles):
+      MI(P;C): obs=1.6183  null=0.4498+/-0.0023  excess=+1.1685 bits  z=+499.99  NMI_sym=0.2966
+      MI(C;S): obs=1.4931  null=0.2793+/-0.0030  excess=+1.2139 bits  z=+399.54  NMI_sym=0.3184
+      MI(P;S): obs=0.1886  null=0.0107+/-0.0006  excess=+0.1778 bits  z=+302.17  NMI_sym=0.0539
+    Inter-Word 3x3 Directed Slot Coupling (vs 200 within-line word-order shuffles):
+      Pair       obs_MI  null_MI  null_SD    excess   z_score  Role
+      S1->P2     0.1461   0.0255   0.0012   +0.1206   +100.42  suffix->next_prefix boundary
+      P1->P2     0.1204   0.0543   0.0018   +0.0661    +37.10  prefix->next_prefix run/agreement
+      C1->C2     1.4121   1.4475   0.0060   -0.0354     -5.85  core->next_core stem transition
+      S1->S2     0.0337   0.0196   0.0009   +0.0141    +14.87  suffix->next_suffix rhyme/agreement
+      C1->P2     0.6218   0.4940   0.0036   +0.1278    +35.09  core->next_prefix coupling
+      S1->C2     0.3531   0.3216   0.0036   +0.0315     +8.66  suffix->next_core coupling
+      P1->C2     0.4735   0.4936   0.0033   -0.0201     -6.11  prefix->next_core coupling
+      P1->S2     0.0273   0.0254   0.0012   +0.0019     +1.50  prefix->next_suffix coupling
+      C1->S2     0.3135   0.3224   0.0037   -0.0089     -2.39  core->next_suffix coupling
+    3x3 Excess MI Grid (rows=[P1,C1,S1] in word_t, cols=[P2,C2,S2] in word_{t+1}):
+                  -> P2      -> C2      -> S2   RowSum_Ex
+      P1        +0.0661    -0.0201    +0.0019     +0.0479
+      C1        +0.1278    -0.0354    -0.0089     +0.0835
+      S1        +0.1206    +0.0315    +0.0141     +0.1662
+      ColSum    +0.3145    -0.0240    +0.0070     +0.2976
+
+  [IT2a | Currier_A] tokens=11081, lines(>=2w)=1550, adj_pairs=9524
+    Within-Word Slot Binding (vs 200 freq-weighted independent slot shuffles):
+      MI(P;C): obs=1.6479  null=0.6172+/-0.0060  excess=+1.0307 bits  z=+173.20  NMI_sym=0.3163
+      MI(C;S): obs=1.5710  null=0.4341+/-0.0062  excess=+1.1369 bits  z=+182.05  NMI_sym=0.3364
+      MI(P;S): obs=0.1601  null=0.0328+/-0.0019  excess=+0.1272 bits  z= +67.04  NMI_sym=0.0471
+    Inter-Word 3x3 Directed Slot Coupling (vs 200 within-line word-order shuffles):
+      Pair       obs_MI  null_MI  null_SD    excess   z_score  Role
+      S1->P2     0.1083   0.0459   0.0027   +0.0625    +23.56  suffix->next_prefix boundary
+      P1->P2     0.1117   0.0764   0.0033   +0.0353    +10.75  prefix->next_prefix run/agreement
+      C1->C2     1.7412   1.8312   0.0116   -0.0900     -7.75  core->next_core stem transition
+      S1->S2     0.0462   0.0354   0.0022   +0.0108     +4.82  suffix->next_suffix rhyme/agreement
+      C1->P2     0.7123   0.6614   0.0073   +0.0509     +6.98  core->next_prefix coupling
+      S1->C2     0.4872   0.4819   0.0073   +0.0053     +0.73  suffix->next_core coupling
+      P1->C2     0.6318   0.6620   0.0077   -0.0301     -3.92  prefix->next_core coupling
+      P1->S2     0.0495   0.0457   0.0025   +0.0038     +1.52  prefix->next_suffix coupling
+      C1->S2     0.4619   0.4819   0.0073   -0.0200     -2.74  core->next_suffix coupling
+    3x3 Excess MI Grid (rows=[P1,C1,S1] in word_t, cols=[P2,C2,S2] in word_{t+1}):
+                  -> P2      -> C2      -> S2   RowSum_Ex
+      P1        +0.0353    -0.0301    +0.0038     +0.0090
+      C1        +0.0509    -0.0900    -0.0200     -0.0591
+      S1        +0.0625    +0.0053    +0.0108     +0.0786
+      ColSum    +0.1487    -0.1148    -0.0054     +0.0285
+
+  [IT2a | Currier_B] tokens=22797, lines(>=2w)=2450, adj_pairs=20331
+    Within-Word Slot Binding (vs 200 freq-weighted independent slot shuffles):
+      MI(P;C): obs=1.6935  null=0.4618+/-0.0030  excess=+1.2317 bits  z=+408.76  NMI_sym=0.3164
+      MI(C;S): obs=1.4924  null=0.2742+/-0.0033  excess=+1.2182 bits  z=+365.95  NMI_sym=0.3310
+      MI(P;S): obs=0.2359  null=0.0163+/-0.0010  excess=+0.2196 bits  z=+212.61  NMI_sym=0.0687
+    Inter-Word 3x3 Directed Slot Coupling (vs 200 within-line word-order shuffles):
+      Pair       obs_MI  null_MI  null_SD    excess   z_score  Role
+      S1->P2     0.1821   0.0260   0.0014   +0.1562   +113.46  suffix->next_prefix boundary
+      P1->P2     0.1234   0.0445   0.0019   +0.0789    +42.65  prefix->next_prefix run/agreement
+      C1->C2     1.3744   1.3988   0.0072   -0.0244     -3.39  core->next_core stem transition
+      S1->S2     0.0322   0.0194   0.0012   +0.0128    +10.34  suffix->next_suffix rhyme/agreement
+      C1->P2     0.6582   0.4967   0.0041   +0.1615    +39.39  core->next_prefix coupling
+      S1->C2     0.3404   0.3075   0.0044   +0.0329     +7.49  suffix->next_core coupling
+      P1->C2     0.4775   0.4968   0.0042   -0.0193     -4.60  prefix->next_core coupling
+      P1->S2     0.0275   0.0260   0.0015   +0.0016     +1.05  prefix->next_suffix coupling
+      C1->S2     0.2980   0.3066   0.0046   -0.0087     -1.87  core->next_suffix coupling
+    3x3 Excess MI Grid (rows=[P1,C1,S1] in word_t, cols=[P2,C2,S2] in word_{t+1}):
+                  -> P2      -> C2      -> S2   RowSum_Ex
+      P1        +0.0789    -0.0193    +0.0016     +0.0612
+      C1        +0.1615    -0.0244    -0.0087     +0.1285
+      S1        +0.1562    +0.0329    +0.0128     +0.2019
+      ColSum    +0.3966    -0.0108    +0.0058     +0.3915
+
+--- PART 2 [IT2a]: O-027 PREFIX/CORE/SUFFIX SECTION OPERATOR TEST ---
+
+  [IT2a | Hand1_H_vs_P] tokens=10147, shared_cores=169, top50_shared_tokens=8085 (79.7%)
+    Token-Level Section Mutual Information & Block Permutation Nulls:
+      Feature           |  obs_MI obs_NMI  U(S|F) |  Quire_Ex  Quire_z  Quire_p | Bifolio_Ex  Bifol_z  Bifol_p
+      a_WholeWord(W)    |  0.3320  0.0637  0.4318 |   +0.1002    +2.99   0.0182 |    +0.1545    +5.62   0.0000
+      b_Prefix(P)       |  0.0610  0.0262  0.0793 |   +0.0472    +4.70   0.0182 |    +0.0512    +9.58   0.0000
+      c_Core(C)         |  0.1444  0.0403  0.1878 |   +0.0545    +3.34   0.0182 |    +0.0761    +6.66   0.0000
+      d_Suffix(S)       |  0.0173  0.0096  0.0226 |   +0.0102    +2.61   0.0364 |    +0.0122    +5.71   0.0000
+      e1_Prefix|Core50  |  0.1162  0.0433  0.1624 |   +0.0533    +4.42   0.0182 |    +0.0653    +8.70   0.0000
+      e2_Suffix|Core50  |  0.0377  0.0283  0.0527 |   +0.0044    +1.15   0.1636 |    +0.0105    +2.81   0.0100
+    Chunk-Level 40-Word NMF Topic NMI (254 chunks; Quire B=11 n=55, Bifolio B=27 n=500):
+      Feature           |  obs_NMI |  Q_null     Q_ex     Q_z     Q_p | BF_null    BF_ex    BF_z    BF_p
+      a_WholeWord(W)    |   0.2870 |  0.0619  +0.2252   +4.05  0.0182 |  0.0430  +0.2440   +8.66  0.0000
+      b_Prefix(P)       |   0.2537 |  0.0436  +0.2101   +5.43  0.0182 |  0.0310  +0.2228  +11.75  0.0000
+      c_Core(C)         |   0.1776 |  0.0508  +0.1268   +2.88  0.0364 |  0.0380  +0.1396   +5.31  0.0000
+      d_Suffix(S)       |   0.0515 |  0.0308  +0.0207   +0.85  0.2545 |  0.0227  +0.0288   +1.74  0.0500
+      e1_Prefix|Core50  |   0.3063 |  0.0632  +0.2431   +4.59  0.0182 |  0.0447  +0.2617   +9.70  0.0000
+      e2_Suffix|Core50  |   0.2162 |  0.0595  +0.1566   +3.12  0.0364 |  0.0415  +0.1747   +6.48  0.0000
+
+  [IT2a | Hand2_B_vs_H_vs_T] tokens=10273, shared_cores=216, top50_shared_tokens=8602 (83.7%)
+    Token-Level Section Mutual Information & Block Permutation Nulls:
+      Feature           |  obs_MI obs_NMI  U(S|F) |  Quire_Ex  Quire_z  Quire_p | Bifolio_Ex  Bifol_z  Bifol_p
+      a_WholeWord(W)    |  0.5248  0.1002  0.3872 |   +0.1337    +1.76   0.0190 |    +0.1086    +3.72   0.0000
+      b_Prefix(P)       |  0.0839  0.0306  0.0619 |   +0.0287    +1.52   0.0762 |    +0.0510    +3.85   0.0040
+      c_Core(C)         |  0.2065  0.0554  0.1524 |   +0.0516    +1.58   0.0286 |    +0.0463    +3.19   0.0080
+      d_Suffix(S)       |  0.0314  0.0167  0.0232 |   +0.0094    +1.12   0.1810 |    +0.0176    +3.23   0.0080
+      e1_Prefix|Core50  |  0.1956  0.0619  0.1553 |   +0.0532    +1.94   0.0190 |    +0.0661    +4.72   0.0000
+      e2_Suffix|Core50  |  0.0844  0.0452  0.0671 |   +0.0236    +2.00   0.0190 |    +0.0264    +4.29   0.0000
+    Chunk-Level 40-Word NMF Topic NMI (256 chunks; Quire B=7 n=105, Bifolio B=12 n=500):
+      Feature           |  obs_NMI |  Q_null     Q_ex     Q_z     Q_p | BF_null    BF_ex    BF_z    BF_p
+      a_WholeWord(W)    |   0.2841 |  0.1887  +0.0954   +1.09  0.1524 |  0.1132  +0.1710   +3.18  0.0220
+      b_Prefix(P)       |   0.1394 |  0.1103  +0.0291   +0.86  0.2190 |  0.0728  +0.0666   +2.59  0.0140
+      c_Core(C)         |   0.2257 |  0.1569  +0.0688   +0.97  0.2000 |  0.0809  +0.1448   +3.30  0.0120
+      d_Suffix(S)       |   0.1366 |  0.0988  +0.0377   +1.25  0.1810 |  0.0477  +0.0888   +3.63  0.0080
+      e1_Prefix|Core50  |   0.3007 |  0.1967  +0.1041   +1.12  0.1810 |  0.1179  +0.1829   +3.32  0.0120
+      e2_Suffix|Core50  |   0.2499 |  0.1662  +0.0837   +1.08  0.1429 |  0.0989  +0.1510   +3.05  0.0160
+
+  [IT2a | Hand23_B_vs_S_vs_H] tokens=20085, shared_cores=374, top50_shared_tokens=16489 (82.1%)
+    Token-Level Section Mutual Information & Block Permutation Nulls:
+      Feature           |  obs_MI obs_NMI  U(S|F) |  Quire_Ex  Quire_z  Quire_p | Bifolio_Ex  Bifol_z  Bifol_p
+      a_WholeWord(W)    |  0.4746  0.0846  0.3382 |   +0.1818    +1.72   0.0476 |    +0.0695    +3.67   0.0020
+      b_Prefix(P)       |  0.0706  0.0249  0.0503 |   +0.0343    +2.03   0.0317 |    +0.0501    +6.64   0.0000
+      c_Core(C)         |  0.1830  0.0468  0.1303 |   +0.0703    +1.74   0.0397 |    +0.0392    +4.20   0.0000
+      d_Suffix(S)       |  0.0275  0.0138  0.0196 |   +0.0130    +1.53   0.0437 |    +0.0177    +4.13   0.0020
+      e1_Prefix|Core50  |  0.1593  0.0496  0.1191 |   +0.0647    +1.95   0.0238 |    +0.0657    +6.19   0.0000
+      e2_Suffix|Core50  |  0.0629  0.0352  0.0470 |   +0.0243    +1.94   0.0278 |    +0.0158    +4.18   0.0020
+    Chunk-Level 40-Word NMF Topic NMI (502 chunks; Quire B=9 n=252, Bifolio B=19 n=500):
+      Feature           |  obs_NMI |  Q_null     Q_ex     Q_z     Q_p | BF_null    BF_ex    BF_z    BF_p
+      a_WholeWord(W)    |   0.2901 |  0.1428  +0.1473   +1.95  0.0040 |  0.0803  +0.2099   +5.97  0.0000
+      b_Prefix(P)       |   0.1857 |  0.1140  +0.0717   +1.75  0.0476 |  0.0458  +0.1399   +6.21  0.0000
+      c_Core(C)         |   0.1756 |  0.0945  +0.0812   +1.94  0.0119 |  0.0584  +0.1172   +4.20  0.0000
+      d_Suffix(S)       |   0.0668 |  0.0457  +0.0211   +0.91  0.2619 |  0.0305  +0.0364   +2.43  0.0140
+      e1_Prefix|Core50  |   0.2614 |  0.1387  +0.1228   +1.76  0.0198 |  0.0725  +0.1889   +6.04  0.0000
+      e2_Suffix|Core50  |   0.2512 |  0.1253  +0.1259   +2.23  0.0040 |  0.0650  +0.1862   +6.32  0.0000
+
+--- PART 3 [IT2a]: SAME-FOLIO LABEL <-> PARAGRAPH BODY-TEXT COUPLING ---
+  [IT2a] Total L* label pages=52 (1023 tokens); pages with BOTH L* and P* paragraph body=36 (622 label tokens); pages with L* and ANY non-L* body=51 (1020 label tokens)
+    Overall Same-Folio Coupling on 36 L*+P* Folios (622 label tokens, 1000 perms):
+      Measure           |  TokHit Null_IH    Ex_IH   z_IH   p_IH |  TypHit  z_Typ |   TFIDF Null_TF   z_TF   p_TF
+      i_ExactWord       |  0.1093  0.1068  +0.0025  +0.35 0.3916 |  0.1096  +0.78 |  0.0226  0.0196  +1.56 0.0679
+      ii_SlotCore       |  0.5161  0.5080  +0.0081  +0.55 0.3536 |  0.4347  +1.91 |  0.1259  0.1155  +2.69 0.0100
+      iii_Strip_oyds    |  0.1608  0.1478  +0.0130  +1.56 0.0759 |  0.1558  +1.95 |  0.0323  0.0277  +2.15 0.0240
+      iv_Strip_12pref   |  0.2315  0.2325  -0.0010  -0.11 0.5784 |  0.2198  +0.25 |  0.0507  0.0482  +0.98 0.1618
+      v_s29_AffixStem   |  0.2942  0.2836  +0.0106  +1.05 0.1758 |  0.2868  +2.58 |  0.0721  0.0636  +3.14 0.0010
+
+    Per-Section Breakdown (1,000 within-section folio permutations):
+      [Herbal: 2 folios, 21 label tokens]
+        i_ExactWord      : TokHit=0.1905 (null=0.1439, ex=+0.0466, z=+0.98, p=0.5115) | TFIDF=0.0264 (null=0.0173, z=+0.98)
+        ii_SlotCore      : TokHit=0.8095 (null=0.7630, ex=+0.0466, z=+0.98, p=0.5115) | TFIDF=0.1166 (null=0.1300, z=-0.98)
+        iii_Strip_oyds   : TokHit=0.1905 (null=0.1439, ex=+0.0466, z=+0.98, p=0.5115) | TFIDF=0.0278 (null=0.0183, z=+0.98)
+        iv_Strip_12pref  : TokHit=0.1905 (null=0.1439, ex=+0.0466, z=+0.98, p=0.5115) | TFIDF=0.0291 (null=0.0194, z=+0.98)
+        v_s29_AffixStem  : TokHit=0.1905 (null=0.1439, ex=+0.0466, z=+0.98, p=0.5115) | TFIDF=0.0308 (null=0.0205, z=+0.98)
+      [Pharma: 15 folios, 247 label tokens]
+        i_ExactWord      : TokHit=0.0810 (null=0.0773, ex=+0.0037, z=+0.28, p=0.4545) | TFIDF=0.0148 (null=0.0142, z=+0.21)
+        ii_SlotCore      : TokHit=0.4534 (null=0.4312, ex=+0.0222, z=+1.37, p=0.1029) | TFIDF=0.0977 (null=0.0896, z=+1.49)
+        iii_Strip_oyds   : TokHit=0.1215 (null=0.1043, ex=+0.0171, z=+1.18, p=0.1489) | TFIDF=0.0234 (null=0.0190, z=+1.31)
+        iv_Strip_12pref  : TokHit=0.2065 (null=0.2051, ex=+0.0014, z=+0.09, p=0.5135) | TFIDF=0.0437 (null=0.0396, z=+1.03)
+        v_s29_AffixStem  : TokHit=0.2551 (null=0.2387, ex=+0.0164, z=+0.95, p=0.2038) | TFIDF=0.0595 (null=0.0491, z=+2.27)
+      [Bio: 11 folios, 129 label tokens]
+        i_ExactWord      : TokHit=0.2326 (null=0.2264, ex=+0.0061, z=+0.28, p=0.4176) | TFIDF=0.0382 (null=0.0303, z=+1.93)
+        ii_SlotCore      : TokHit=0.6667 (null=0.6627, ex=+0.0039, z=+0.26, p=0.4965) | TFIDF=0.1461 (null=0.1342, z=+1.65)
+        iii_Strip_oyds   : TokHit=0.3333 (null=0.3045, ex=+0.0288, z=+1.08, p=0.1658) | TFIDF=0.0521 (null=0.0439, z=+1.73)
+        iv_Strip_12pref  : TokHit=0.4109 (null=0.4211, ex=-0.0103, z=-0.49, p=0.7453) | TFIDF=0.0743 (null=0.0738, z=+0.10)
+        v_s29_AffixStem  : TokHit=0.5194 (null=0.4903, ex=+0.0290, z=+1.17, p=0.1588) | TFIDF=0.1086 (null=0.0939, z=+2.25)
+      [Cosmo_Astro: 8 folios, 225 label tokens]
+        i_ExactWord      : TokHit=0.0622 (null=0.0653, ex=-0.0030, z=-0.11, p=0.5245) | TFIDF=0.0147 (null=0.0137, z=+0.20)
+        ii_SlotCore      : TokHit=0.4711 (null=0.4127, ex=+0.0584, z=+1.34, p=0.0959) | TFIDF=0.1535 (null=0.1086, z=+3.55)
+        iii_Strip_oyds   : TokHit=0.1022 (null=0.1002, ex=+0.0020, z=+0.06, p=0.4985) | TFIDF=0.0230 (null=0.0196, z=+0.61)
+        iv_Strip_12pref  : TokHit=0.1600 (null=0.1464, ex=+0.0136, z=+0.42, p=0.3976) | TFIDF=0.0366 (null=0.0301, z=+1.07)
+        v_s29_AffixStem  : TokHit=0.2178 (null=0.2171, ex=+0.0007, z=+0.02, p=0.5365) | TFIDF=0.0559 (null=0.0508, z=+0.68)
+
+======================================================================================
+CROSS-TRANSLITERATION SYNTHESIS & SCIENTIFIC CONCLUSIONS (ZL3b | RF1b | IT2a)
+======================================================================================
+  [Part 1 ZL3b] S1->P2 ex: ALL=+0.1214 (z=+103.0), A=+0.0629, B=+0.1554 | C1->P2 ex: ALL=+0.1267 | P1->P2 ex: ALL=+0.0690 | C1->C2 ex: ALL=-0.0315 (z=-5.1) | Within-word P;S ex: ALL=+0.1855
+  [Part 1 RF1b] S1->P2 ex: ALL=+0.1046 (z=+91.5), A=+0.0641, B=+0.1310 | C1->P2 ex: ALL=+0.1003 | P1->P2 ex: ALL=+0.0603 | C1->C2 ex: ALL=-0.0453 (z=-6.0) | Within-word P;S ex: ALL=+0.1885
+  [Part 1 IT2a] S1->P2 ex: ALL=+0.1206 (z=+100.4), A=+0.0625, B=+0.1562 | C1->P2 ex: ALL=+0.1278 | P1->P2 ex: ALL=+0.0661 | C1->C2 ex: ALL=-0.0354 (z=-5.9) | Within-word P;S ex: ALL=+0.1778
+  [Part 2 O-027 ZL3b] Hand1 NMF NMI: W=0.275 P=0.292 C=0.207 S=0.064 P|C50=0.271 | Hand23 NMF NMI: W=0.294 P=0.197 C=0.183 S=0.095 P|C50=0.292
+  [Part 2 O-027 RF1b] Hand1 NMF NMI: W=0.224 P=0.333 C=0.191 S=0.059 P|C50=0.309 | Hand23 NMF NMI: W=0.285 P=0.222 C=0.154 S=0.070 P|C50=0.290
+  [Part 2 O-027 IT2a] Hand1 NMF NMI: W=0.287 P=0.254 C=0.178 S=0.051 P|C50=0.306 | Hand23 NMF NMI: W=0.290 P=0.186 C=0.176 S=0.067 P|C50=0.261
+  [Part 3 ZL3b] Same-folio L*->P* hit (obs vs null, z): Exact=0.121 vs 0.106 (z=+1.67, p=0.064) | SlotCore=0.487 vs 0.468 (z=+1.07, p=0.161) | Strip12=0.233 vs 0.215 (z=+1.68, p=0.054)
+  [Part 3 RF1b] Same-folio L*->P* hit (obs vs null, z): Exact=0.095 vs 0.091 (z=+0.53, p=0.341) | SlotCore=0.462 vs 0.449 (z=+0.91, p=0.221) | Strip12=0.195 vs 0.188 (z=+0.86, p=0.227)
+  [Part 3 IT2a] Same-folio L*->P* hit (obs vs null, z): Exact=0.109 vs 0.107 (z=+0.35, p=0.392) | SlotCore=0.516 vs 0.508 (z=+0.55, p=0.354) | Strip12=0.232 vs 0.233 (z=-0.11, p=0.578)
+
+Completed in 48.44s. Wrote results_s34_morphology_syntax_geography.txt

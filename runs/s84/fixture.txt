@@ -1,0 +1,54 @@
+s84 synthetic fixture (no real data read)
+Run timestamp: Sun Oct 18 04:48:36 PDT 2026 (`date`); priority BelowNormal (psutil)
+device: cuda (shuffles, quantiles); solver: s73 numpy on CPU
+  done FX_LSHUF_0                               [21s, types 260, tokens 34872]  t+25s
+  done FX_LSHUF_1                               [21s, types 260, tokens 34872]  t+25s
+  done FX_LSHUF_2                               [21s, types 260, tokens 34872]  t+25s
+  done FX_LSHUF_3                               [21s, types 260, tokens 34872]  t+25s
+  done FX_LSHUF_4                               [18s, types 260, tokens 34872]  t+42s
+  done FX_LSHUF_5                               [18s, types 260, tokens 34872]  t+42s
+  done FX_LSHUF_6                               [18s, types 260, tokens 34872]  t+43s
+  done FX_LSHUF_7                               [18s, types 260, tokens 34872]  t+43s
+  done FX_LSHUF_8                               [18s, types 260, tokens 34872]  t+60s
+  done FX_LSHUF_9                               [18s, types 260, tokens 34872]  t+60s
+  done FX_BSHUF_0                               [18s, types 260, tokens 34872]  t+60s
+  done FX_BSHUF_1                               [18s, types 260, tokens 34872]  t+60s
+  done FX_BSHUF_2                               [18s, types 260, tokens 34872]  t+78s
+  done FX_BSHUF_3                               [18s, types 260, tokens 34872]  t+78s
+  done FX_BSHUF_4                               [18s, types 260, tokens 34872]  t+78s
+  done FX_BSHUF_5                               [18s, types 260, tokens 34872]  t+78s
+  done FX_BSHUF_6                               [18s, types 260, tokens 34872]  t+95s
+  done FX_BSHUF_7                               [18s, types 260, tokens 34872]  t+95s
+  done FX_BSHUF_8                               [18s, types 260, tokens 34872]  t+96s
+  done FX_BSHUF_9                               [18s, types 260, tokens 34872]  t+96s
+  done FX_IID_0                                 [18s, types 260, tokens 34872]  t+113s
+  done FX_IID_1                                 [18s, types 260, tokens 34872]  t+113s
+  done FX_IID_2                                 [18s, types 260, tokens 34872]  t+113s
+  done FX_IID_3                                 [18s, types 260, tokens 34872]  t+113s
+  done FX_IID_4                                 [17s, types 260, tokens 34872]  t+130s
+  done FX_IID_5                                 [17s, types 260, tokens 34872]  t+131s
+  done FX_IID_6                                 [17s, types 260, tokens 34872]  t+131s
+  done FX_IID_7                                 [18s, types 260, tokens 34872]  t+131s
+  done FX_IID_8                                 [17s, types 260, tokens 34872]  t+147s
+  done FX_IID_9                                 [17s, types 260, tokens 34872]  t+148s
+  done FX_COPY_0                                [18s, types 260, tokens 34872]  t+148s
+  done FX_COPY_1                                [18s, types 260, tokens 34872]  t+149s
+  done FX_COPY_2                                [18s, types 260, tokens 34872]  t+166s
+  done FX_COPY_3                                [18s, types 260, tokens 34872]  t+166s
+  done FX_COPY_4                                [18s, types 260, tokens 34872]  t+166s
+  done FX_COPY_5                                [18s, types 260, tokens 34872]  t+167s
+  done FX_COPY_6                                [18s, types 260, tokens 34872]  t+183s
+  done FX_COPY_7                                [18s, types 260, tokens 34872]  t+184s
+  done FX_COPY_8                                [18s, types 260, tokens 34872]  t+184s
+  done FX_COPY_9                                [18s, types 260, tokens 34872]  t+184s
+  done FX_PLANT_0                               [18s, types 260, tokens 34872]  t+201s
+  done FX_PLANT_3                               [18s, types 260, tokens 34872]  t+202s
+  done FX_LSHUF_999                             [17s, types 260, tokens 34872]  t+202s
+  planted fx0: beats every family p95 on 15/15 folds (FA PASS); own language best on 13/15 (FB PASS); median max gain +241.3
+  planted fx3: beats every family p95 on 15/15 folds (FA PASS); own language best on 13/15 (FB PASS); median max gain +256.9
+  fresh line-shuffled planted text: beats every family p95 on 2/15 folds (FC PASS)
+  family LSHUF: per-fold p95 median +29.3
+  family BSHUF: per-fold p95 median +13.7
+  family IID: per-fold p95 median +11.3
+  family COPY: per-fold p95 median +10.7
+FIXTURE PASS  (elapsed 203s)

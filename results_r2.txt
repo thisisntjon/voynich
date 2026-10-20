@@ -1,0 +1,8 @@
+source https://archive.org/download/schoolsalernuma00handgoog/schoolsalernuma00handgoog_djvu.txt bytes=137939 sha256=7243833611efa7dea4a25c7d14cc7bf1c0ef252abb6613fb076306c5c46ed6d3
+parsed entries=4 simples=4 substitutes=7
+substitutes-per-simple distribution: {1: 1, 2: 2, 3: 1}
+simples-per-substitute distribution: {1: 6, 2: 1}
+shared substitutes (many-to-one): 1/7 (14.3%); max simples per substitute=2
+  origanum <- abrotano, absynthio
+pairs written: 8 rows -> data/external/quid-pro-quo/quid_pro_quo_pairs.csv
+Scope: one printed Salernum edition's appendix; genre attestation, not the 1477 Benedetto item (still unverified, STEAL-VERIFY.md).

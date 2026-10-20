@@ -1,0 +1,13 @@
+S107 FIXTURE (synthetic only; no real data read)
+date: Sun Oct 18 13:48:57 PDT 2026 (`date`)  device: cuda; below_normal=True
+s107 sha256=f99eec24db1d3245f2c28f0dc2b84bf7cec272050f79ada8701bc3c937e0b026  stub_match=NO STUB
+FXa T1 paragraphs -> lines, heading not used, º removed: [['ficus', 'complexio', 'calida', 'et', 'humida', 'in', 'gradum'], ['uue', 'electio', 'albe']] -> PASS
+FXb T2 entry rule (blank+capital, degree formula, continuation, head, catchword, hyphen join): 4 entries -> PASS
+FXc T3 row filter and 4-letter re-cut: [['bctc', 'bctc', 'bctc', 'bctc'], ['bctb', 'bctb', 'bctb', 'bctb'], None, ['bftb', 'bgtb', 'bbtb', 'bitb'], ['bcft', 'bcg', 'bcb', 'bef']] -> PASS
+  FX_LP91_n1300                      tok   1300 ty   269 core% 100.0 | o100 +0.055(p0.215) o200 +0.021 | Rw1 2.421(p0.001) Rc1 0.000 | loc 0.982[0.958,1.005] | C1 YYYY VOYNICH-LIKE [order n=343<4731]
+  FX_prose_n1300                     tok   1300 ty   572 core% 100.0 | o100 +0.609(p0.001) o200 +0.716 | Rw1 0.930(p0.664) Rc1 0.569 | loc 0.991[0.919,1.064] | C1 nnYY - [order n=343<4731]
+FXd n=1300: planted (b)+(c) True (want True); Markov prose (b)+(c) False (want False) -> PASS
+  FX_LP91_n10000                     tok  10000 ty   847 core% 100.0 | o100 +0.045(p0.013) o200 +0.066 | Rw1 2.871(p0.001) Rc1 0.193 | loc 0.969[0.948,0.984] | C1 YYYY VOYNICH-LIKE [order n=2114<4731]
+  FX_prose_n10000                    tok  10000 ty  1370 core% 100.0 | o100 +1.045(p0.001) o200 +1.106 | Rw1 0.757(p0.997) Rc1 0.727 | loc 1.000[0.993,1.006] | C1 nnYY - [order n=2114<4731]
+FXd n=10000: planted (b)+(c) True (want True); Markov prose (b)+(c) False (want False) -> PASS
+FIXTURE PASS   runtime 3s; finished Sun Oct 18 13:49:00 PDT 2026 (`date`)

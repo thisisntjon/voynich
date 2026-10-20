@@ -1,0 +1,35 @@
+s115-A1 kappa and keep decisions (written Sun Oct 18 20:31 PDT 2026, `date`; rules from CODEBOOK.md, applied mechanically)
+Units: 204 scan images (data/anchor_A1/images.tsv); pass files labels_pass1.tsv / labels_pass2.tsv; consensus labels.tsv
+(71 disagreeing cells over 55 images, marked DISAGREE:<pass1>|<pass2>, not resolved).
+Full kappa table: kappa_full_raw.txt (same numbers). Pilot: pilot_kappa.txt, pilot_decision.txt.
+
+category     n    kappa   decision
+PT           204  0.992   KEPT
+P_plants     125  1.000   KEPT
+P_root       125  0.796   DROPPED (failed pilot: 0.444, n=5; full-run value is information only)
+P_leafshape  125  0.814   KEPT
+P_leafcount  125  0.881   KEPT
+P_flower     125  0.885   KEPT
+P_habit      125  0.853   KEPT
+J_shape       12  1.000   KEPT
+J_count       12  1.000   KEPT
+J_fragcount   12  1.000   KEPT
+J_fragtype    12  1.000   KEPT
+C_centre      17  0.921   KEPT
+C_animal       6  0.778   DROPPED (n < 10)
+C_figures     17  1.000   KEPT
+C_rings       17  0.816   KEPT
+C_diagrams    17  0.909   KEPT (pass1 has one off-codebook value '2' on 130_72v_part, kept as written; it counts as a disagreement)
+C_rays        17  1.000   KEPT
+B_pools       18  1.000   KEPT
+B_figures     18  0.913   KEPT
+B_tubes       18  undefined DROPPED (both passes PRESENT on all 18; not estimable)
+
+Caveats binding on A2:
+- Both passes are the same vision model in separate contexts with no shared output. Kappa here measures the
+  model's self-consistency, not agreement between independent human viewers; it is an upper bound on reliability.
+- Labellers were told not to use background knowledge of the manuscript; that cannot be verified.
+- Masking: policy M1 (glyph-sized ink not touching paint erased) on 185 images; policy M0 (no erasure, downscale only)
+  on the 19 circular-diagram scans, so C_* labels were made with text visible. M1 thinned some unpainted roots/outlines.
+- Part-file repairs (append-only): pass2 b2 155_85r_part_86v_part_p8586 superseded by its correction row; pass2 b4
+  lines 21-22 (19 fields) skipped, corrected rows at the end used. See assemble log in the stub comments.

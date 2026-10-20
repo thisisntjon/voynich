@@ -1,0 +1,83 @@
+# s128 v1 PRE-REGISTRATION: page-confined "name slot" at the start of Voynich herbal pages
+# Frozen 2026-10-19 (time in the stub header) BEFORE any Voynich text was read for s128 and before any s128 scorer exists.
+# Supersedes nothing; the DRAFT (runs/s128/s128_name_slot_prediction.DRAFT.md) is left unchanged as the design record.
+# Lead rulings applied (Voynich Analyst, 2026-10-19 ~01:26 PDT): separate line under run id s128 (not item d); N2 decisive,
+# swaps restricted to same hand and Currier language; N1 reported beside it as non-decisive; held under D-072; Gisclon 2026
+# logged as outside claim (c-589), queued after s128.
+# Calibration (known-answer herbals, no Voynich): runs/s128/results_s128_herbal_profile.txt (hash in the stub).
+
+STATUS
+- Frozen design. NOT run. No scorer implemented.
+- HOLD 1 (D-072): no s128 Voynich read until Egerton transfer or Fontana known-answer recovery holds up with the Independent Verifier.
+- HOLD 2: nothing in s128 counts until the Independent Verifier accepts this prereg (request in D:/Squire).
+- Order once both holds clear: (a) write scorer tools/s128_name_slot_score.py; (b) fixture gate F0 (below) on the calibration texts only;
+  (c) append the scorer's sha256 to the stub as a new uncommented line; (d) only then read Voynich data; (e) planted-answer gate G1; (f) real score.
+
+QUESTION
+Do Voynich herbal pages carry, as a real Circa Instans-type herbal does, a word type that is confined to one page, recurs on that page,
+and first appears in the page's first line, beyond what the known rarity of paragraph-initial words (L-069, F-02) produces?
+
+DATA
+- Primary transliteration ZL3b (IVTFF). Secondary: RF1b, IT2a.
+- Pages: every folio side whose illustration type is herbal ($I=H) in the transliteration header. Multi-panel foldouts are excluded.
+- Strata variables from the same headers: quire ($Q), sheet/bifolium ($Q|$B as in p1_bifolio), hand ($H), Currier language ($L).
+  A page with no hand or language value is dropped from N2 strata and counted in the output.
+- Text: paragraph text only (P* loci); labels, titles and radial/circular text are excluded. Line = transliteration line.
+  Paragraph-initial token = first token of the first line of each paragraph. Line-initial token = first token of any other line.
+- Tokens: split on word separators ('.' and ','); drop tokens with an unreadable glyph ('?' or '*'); alternations [a:b] take the first reading.
+- Units: primary whole words. Secondary: cores under SlotSegmenter and under Zattera 2022 12-slot (X-01 is at risk; report only).
+
+STATISTIC S (identical to the calibration definition)
+- Reference corpus for confinement: all herbal pages of the SAME Currier language as the page.
+- A page-confined recurring type on page p: count on p >= 2 and count on p / count in the reference corpus >= 0.9.
+- For each page: if it has at least one such type, take the one whose first occurrence is earliest; hit = that occurrence lies in line 1 of the page.
+- S = hits / number of pages (all pages in the denominator).
+- Reported for: pooled herbal (primary), Herbal A only, Herbal B only.
+
+NULLS (1,000 draws each; seed 20261019; p = (1 + #null >= obs) / 1001; q99 = 99th percentile)
+- N2 (DECISIVE). Three slot classes per page: paragraph-initial, line-initial, other.
+  Paragraph-initial tokens are permuted among the paragraph-initial slots of all pages in the same stratum
+  (quire x sheet x hand x Currier language). Where a sheet mixes hands or languages, swaps happen only between pages sharing both.
+  Line-initial tokens are permuted among line-initial slots within the page; other tokens among other slots within the page.
+  Line lengths and paragraph structure are kept. If more than 25% of herbal pages fall in single-page strata, the stratum is widened
+  to quire x hand x Currier language for those pages only, and the count of widened pages is printed.
+- N1 (NON-DECISIVE, reported beside N2). All tokens of a page permuted within the page, line lengths kept (calibration null).
+
+GATES
+- F0 fixture (calibration texts only, before any Voynich read): the scorer run on the s128 Egerton set at start_N90 reproduces
+  S = 0.266 +/- 0.01 and N1 q99 0.134 +/- 0.02 from results_s128_herbal_profile.txt; on Egerton with tokens shuffled within chapter,
+  S is not above its N1 q99 in >= 9/10 seeds. Fail -> stop, fix scorer, new run id.
+- G1 planted answer (Voynich layout, D-068 rule). 15 seeds. On each real herbal page, replace one random token of line 1
+  (never the paragraph-initial token) with a fresh type unique to that page; with probability 0.55 (Egerton own-page recurrence)
+  replace 1-3 (uniform) random later tokens of the same page with that type. PASS = planted S > N2 q99 (200 draws) in >= 10/15 seeds.
+  Also report the Macer-strength plant (probability 0.36). If the Egerton-strength plant fails -> CALL NOT_POWERED and the real S
+  is printed but not interpreted.
+
+PRIMARY CALL (ZL3b, whole words, pooled herbal)
+- NAME_SLOT_PRESENT if G1 PASS and S > N2 q99 and S >= 0.12 (the Macer-Egerton band floor) and LOQO criterion holds.
+- RARITY_ONLY if G1 PASS and S > N1 q99 but S <= N2 q99.
+- ABSENT if G1 PASS and S <= N1 q99.
+- NOT_POWERED if G1 fails.
+- Any other combination prints MIXED with the values.
+
+LEAVE-ONE-QUIRE-OUT (no parameter is fitted; the thresholds 2 and 0.9 are fixed from calibration)
+- For every herbal quire with >= 4 pages: S_q on that quire's pages (confinement still against the full same-language reference corpus),
+  N2 restricted to that quire, 200 draws. Criterion: S_q > N2_q q95 in >= 2/3 of such quires. Number of quires printed.
+
+REPORTED, NOT CALLED
+- N1 result beside N2 (required). Herbal A and B separately. RF1b, IT2a, SlotSegmenter cores, Zattera cores (BH across these 4 x 3 cells).
+- P2 descriptive: for hit pages, median own-page count of the line-1 type, share of hit types that recur beyond line 1, median share of
+  other same-language herbal pages containing the type; compare to Egerton (other-chapter fraction 0.002-0.004).
+- Stolfi first-token uniqueness rate, with its N2 value, explicitly marked non-diagnostic (calibration CALL_D).
+
+INTERPRETATION LIMITS (fixed now)
+- NAME_SLOT_PRESENT locates where a plant-name crib should be tried (line 1, page-confined, self-recurring); it reads nothing and
+  does not establish that the type is a plant name. It does not move the scoreboard until the Independent Verifier accepts it.
+- RARITY_ONLY means the page-start signal is the known paragraph-initial vocabulary (L-069) and page confinement gives
+  "first word = plant name" no support.
+- ABSENT means the herbal pages do not behave like a named-chapter herbal at the page start.
+- No re-run with changed thresholds, units or strata under s128; any change is a new run id.
+
+OUTPUTS
+- Scorer (reserved name): tools/s128_name_slot_score.py. Results: runs/s128/results_s128_name_slot_<YYYYMMDDTHHMMSS>.txt, one file per run,
+  never overwritten; CALL lines printed and filed as printed.

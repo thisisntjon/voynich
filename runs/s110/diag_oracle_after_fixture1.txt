@@ -1,0 +1,9 @@
+# s110 diagnostic after fixture run 1 (FAIL), before revision 1. Synthetic worlds only (no Voynich data).
+# Script: runs/s110/diag_oracle_after_fixture1.py (run once, ~17:00 PDT). Oracle = replicate from the TRUE planted
+# generator (FX1) or the KNOWN map (FX2), scored by the run-1 fold rule (S104.sig_rel vs the planted profile; battery row).
+FX1 target: Rw1 1.085 (p 0.087) Rc1 1.065 loc 1.000 [0.999,1.001]
+ oracle sig_rel YYYY on 8/15 (fails c on A B E G I K N; a on F); battery >=4/6 on 12/15 (P4 fails on all 15)
+ per fold A..O sig: YYnY YYnY YYYY YYYY YYnY nYYY YYnY YYYY YYnY YYYY YYnY YYYY YYYY YYnY YYYY
+ per fold A..O battery n: 3 5 4 5 5 3 4 5 4 4 4 5 3 4 5 ; Rc range 0.746-1.313 vs band [0.852, 1.331]
+FX2 target: Rw1 5.008 o100 +1.310 Rc1 0.878
+ oracle sig_rel YYYY on 12/15; battery >=4/6 on 2/15 (per fold n: 2 3 2 3 3 2 2 3 3 3 4 3 3 4 3; P4 fails 15/15, P5 14/15)

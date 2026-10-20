@@ -1,0 +1,5 @@
+r5 prereg log
+fixture runs: 2026-10-18 03:26:48 PDT (first version; negative raw WB gains seen on IID), calibration probes 03:27-03:28 (12 IID fixtures: 4.4% of folds p<0.05), 03:29:18 PDT (excess descriptor added; final fixture run by r5.py 0a9bbaab...)
+FREEZE at (clock): 2026-10-18 03:30:06 PDT  0a9bbaab8630d4897405963b8f0916bbbfb221596004978728ab0f4acad45715  r5.py
+real run start: 2026-10-18 03:30:06 PDT
+real run end: 2026-10-18 03:31:18 PDT exit=0

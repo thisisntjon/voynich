@@ -1,0 +1,826 @@
+s81 -- line/page-sticky Naibbe table cipher on the s67 LOQO battery + s69 calls + s55 distance
+date: 2026-10-18 03:34:03 (datetime.now)
+stub_match: True
+sha256 s81_sticky_table_loqo.py: 418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063
+sha256 s81_sticky_table_loqo.prereg.sha256: 5cd64cf68a860402b935fff381d9358c2d68aee6a2ab5afb38ed7c75df0a3841
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  local import s64_naibbe_taxonomy.py sha256=6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3
+  local import s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  local import s81_sticky_table_loqo.py sha256=418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+python 3.11.9; numpy 2.4.6; device cpu (torch 2.11.0.dev20260115+cu128, cuda available True; not used: battery code reused verbatim on CPU); workers 4 (BelowNormal)
+SEED 20261017; seeds (1, 2); N_DRAW 500 (80 % held-out pages w/o replacement); s69 B_SUB 500; s55 splits 30 (SPLIT_SEED 81081); grid p [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0]
+variants: default(line, p=0.0), line_sticky75(line, p=0.75), line_sticky_fit(line, p=fit), line_lock(line, p=1.0), page_sticky_fit(page, p=fit), page_lock(page, p=1.0) x ['latin_cremma', 'italian_dante']
+NOTE: stickiness p (fitted variants) is fitted to the training-quire lag-1 prefix gain, so P3 is partly built in by the fit.
+
+translit ZL3b: ZL3b_eva.meta.json sha256=ce233477803a8653; pages 207 / s69 207 / s55 207
+translit RF1b: RF1b.meta.json sha256=c7d9bccba99b2610; pages 207 / s69 207 / s55 207
+translit IT2a: IT2a.meta.json sha256=0d0d3e758d1e308b; pages 206 / s69 206 / s55 206
+folds: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'M', 'N', 'O', 'Q', 'S', 'T'] (15); threshold (strict majority) 8/15
+  ZL3b: pages per fold A 16, B 14, C 16, D 16, E 16, F 16, G 16, H 6, I 7, M 20, N 7, O 12, Q 10, S 10, T 23
+  RF1b: pages per fold A 16, B 14, C 16, D 16, E 16, F 16, G 16, H 6, I 7, M 20, N 7, O 12, Q 10, S 10, T 23
+  IT2a: pages per fold A 16, B 14, C 16, D 16, E 16, F 16, G 16, H 6, I 7, M 20, N 6, O 12, Q 10, S 10, T 23
+
+s69 call pattern of the manuscript (ZL3b, full text, s69 166/41-style split): C1=T C2=F C3p=T C4p=F C5=T; M1 +0.0999
+s69 call pattern of the manuscript (RF1b, full text, s69 166/41-style split): C1=T C2=F C3p=T C4p=F C5=T; M1 +0.0951
+s69 call pattern of the manuscript (IT2a, full text, s69 166/41-style split): C1=T C2=F C3p=T C4p=F C5=T; M1 +0.0961
+
+running 45 fold jobs + 39 s55 split jobs on 4 workers
+[92s] fold ZL3b B (68s)
+[99s] fold ZL3b D (75s)
+[104s] fold ZL3b C (80s)
+[106s] fold ZL3b A (82s)
+[169s] fold ZL3b E (77s)
+[177s] fold ZL3b H (70s)
+[181s] fold ZL3b G (77s)
+[182s] fold ZL3b F (82s)
+[215s] fold ZL3b I (46s)
+[259s] fold ZL3b O (77s)
+[270s] fold ZL3b N (89s)
+[277s] fold ZL3b Q (62s)
+<home>/AppData/Local/Programs/Python/Python311/Lib/site-packages/numpy/lib/_nanfunctions_impl.py:1396: RuntimeWarning: All-NaN slice encountered
+  return _nanquantile_unchecked(
+[337s] fold ZL3b S (78s)
+[356s] fold RF1b A (79s)
+[404s] fold RF1b B (68s)
+[435s] fold ZL3b M (258s)
+[437s] fold RF1b C (81s)
+[482s] fold RF1b D (78s)
+[522s] fold RF1b E (87s)
+[529s] fold RF1b F (92s)
+[578s] fold RF1b G (95s)
+[585s] fold RF1b I (56s)
+[609s] fold RF1b H (87s)
+[682s] fold RF1b N (97s)
+[693s] fold ZL3b T (423s)
+[694s] fold RF1b O (86s)
+<home>/AppData/Local/Programs/Python/Python311/Lib/site-packages/numpy/lib/_nanfunctions_impl.py:1396: RuntimeWarning: All-NaN slice encountered
+  return _nanquantile_unchecked(
+[748s] fold RF1b Q (65s)
+[774s] fold RF1b S (81s)
+[846s] fold IT2a A (98s)
+[879s] fold IT2a B (105s)
+[895s] fold RF1b M (317s)
+[1112s] fold IT2a C (267s)
+[1127s] fold IT2a D (248s)
+[1160s] fold IT2a E (266s)
+[1380s] fold IT2a G (253s)
+[1385s] fold IT2a F (272s)
+[1398s] fold IT2a H (238s)
+[1505s] fold IT2a I (125s)
+[1581s] fold IT2a N (182s)
+[1581s] fold RF1b T (887s)
+[1629s] fold IT2a O (124s)
+[1676s] fold IT2a Q (96s)
+[1697s] fold IT2a S (116s)
+[1838s] fold IT2a M (452s)
+[2278s] fold IT2a T (648s)
+[2278s] s55 ZL3b Voynich_ZL3b (120s)
+[2278s] s55 ZL3b default|latin_cremma (127s)
+[2278s] s55 ZL3b line_sticky75|latin_cremma (144s)
+[2278s] s55 ZL3b line_sticky_fit|latin_cremma (144s)
+[2278s] s55 ZL3b line_lock|latin_cremma (141s)
+[2278s] s55 ZL3b page_sticky_fit|latin_cremma (152s)
+[2278s] s55 ZL3b page_lock|latin_cremma (146s)
+[2278s] s55 ZL3b default|italian_dante (149s)
+[2278s] s55 ZL3b line_sticky75|italian_dante (128s)
+[2278s] s55 ZL3b line_sticky_fit|italian_dante (130s)
+[2278s] s55 ZL3b line_lock|italian_dante (125s)
+[2353s] s55 ZL3b page_sticky_fit|italian_dante (133s)
+[2377s] s55 ZL3b page_lock|italian_dante (132s)
+[2392s] s55 RF1b Voynich_RF1b (140s)
+[2421s] s55 RF1b default|latin_cremma (143s)
+[2500s] s55 RF1b line_sticky75|latin_cremma (147s)
+[2524s] s55 RF1b line_sticky_fit|latin_cremma (148s)
+[2537s] s55 RF1b line_lock|latin_cremma (145s)
+[2569s] s55 RF1b page_sticky_fit|latin_cremma (148s)
+[2638s] s55 RF1b page_lock|latin_cremma (138s)
+[2664s] s55 RF1b default|italian_dante (139s)
+[2672s] s55 RF1b line_sticky75|italian_dante (135s)
+[2701s] s55 RF1b line_sticky_fit|italian_dante (132s)
+[2753s] s55 RF1b line_lock|italian_dante (115s)
+[2776s] s55 RF1b page_sticky_fit|italian_dante (112s)
+[2780s] s55 RF1b page_lock|italian_dante (108s)
+[2810s] s55 IT2a Voynich_IT2a (109s)
+[2880s] s55 IT2a default|latin_cremma (126s)
+[2906s] s55 IT2a line_sticky75|latin_cremma (130s)
+[2910s] s55 IT2a line_sticky_fit|latin_cremma (131s)
+[2943s] s55 IT2a line_lock|latin_cremma (133s)
+[3011s] s55 IT2a page_sticky_fit|latin_cremma (131s)
+[3030s] s55 IT2a page_lock|latin_cremma (125s)
+[3040s] s55 IT2a default|italian_dante (129s)
+[3069s] s55 IT2a line_sticky75|italian_dante (127s)
+[3136s] s55 IT2a line_sticky_fit|italian_dante (125s)
+[3145s] s55 IT2a line_lock|italian_dante (115s)
+[3153s] s55 IT2a page_sticky_fit|italian_dante (113s)
+[3169s] s55 IT2a page_lock|italian_dante (100s)
+=== C3 FITTED p (fit on s55's default training split) ===
+  ZL3b: line_sticky_fit|latin_cremma p=0.8; page_sticky_fit|latin_cremma p=0.7; line_sticky_fit|italian_dante p=0.7; page_sticky_fit|italian_dante p=0.7
+  RF1b: line_sticky_fit|latin_cremma p=0.7; page_sticky_fit|latin_cremma p=0.7; line_sticky_fit|italian_dante p=0.75; page_sticky_fit|italian_dante p=0.7
+  IT2a: line_sticky_fit|latin_cremma p=0.7; page_sticky_fit|latin_cremma p=0.6; line_sticky_fit|italian_dante p=0.6; page_sticky_fit|italian_dante p=0.7
+
+=== PER-VARIANT PER-TRANSLITERATION FOLD COUNTS ===
+  (n5 = folds with >= 5/6 of P1 P2 P3 P4 P5 P7; match = folds whose s69 (C1,C2,C3p,C4p,C5) equal the manuscript's full-text pattern; sf = same-fold match, reported only)
+  default|latin_cremma           ZL3b: n5  0/15  match  0/15 (sf  0)  per-pred P1  0 P2  1 P3  0 P4  0 P5  0 P7 12  p 0.00-0.00 (median 0.00)  mean n 0.87
+  default|latin_cremma           RF1b: n5  0/15  match  0/15 (sf  1)  per-pred P1  0 P2  1 P3  1 P4  0 P5  0 P7 13  p 0.00-0.00 (median 0.00)  mean n 1.00
+  default|latin_cremma           IT2a: n5  0/15  match  0/15 (sf  2)  per-pred P1  0 P2  0 P3  1 P4  0 P5  0 P7 12  p 0.00-0.00 (median 0.00)  mean n 0.87
+  line_sticky75|latin_cremma     ZL3b: n5  0/15  match 15/15 (sf  5)  per-pred P1  0 P2  0 P3  2 P4  0 P5  0 P7 10  p 0.75-0.75 (median 0.75)  mean n 0.80
+  line_sticky75|latin_cremma     RF1b: n5  0/15  match 14/15 (sf  3)  per-pred P1  0 P2  0 P3  3 P4  0 P5  0 P7  9  p 0.75-0.75 (median 0.75)  mean n 0.80
+  line_sticky75|latin_cremma     IT2a: n5  0/15  match 15/15 (sf  6)  per-pred P1  0 P2  0 P3  2 P4  0 P5  0 P7 10  p 0.75-0.75 (median 0.75)  mean n 0.80
+  line_sticky_fit|latin_cremma   ZL3b: n5  0/15  match 14/15 (sf  5)  per-pred P1  2 P2  0 P3  2 P4  0 P5  0 P7 10  p 0.70-0.80 (median 0.80)  mean n 0.93
+  line_sticky_fit|latin_cremma   RF1b: n5  0/15  match 14/15 (sf  3)  per-pred P1  1 P2  1 P3  4 P4  0 P5  0 P7  7  p 0.70-0.80 (median 0.75)  mean n 0.87
+  line_sticky_fit|latin_cremma   IT2a: n5  0/15  match 15/15 (sf  6)  per-pred P1  1 P2  0 P3  4 P4  0 P5  0 P7 11  p 0.60-0.80 (median 0.75)  mean n 1.07
+  line_lock|latin_cremma         ZL3b: n5  0/15  match  0/15 (sf  3)  per-pred P1  0 P2  0 P3  0 P4  0 P5  0 P7  2  p 1.00-1.00 (median 1.00)  mean n 0.13
+  line_lock|latin_cremma         RF1b: n5  0/15  match  0/15 (sf  5)  per-pred P1  1 P2  0 P3  0 P4  0 P5  0 P7  1  p 1.00-1.00 (median 1.00)  mean n 0.13
+  line_lock|latin_cremma         IT2a: n5  0/15  match  0/15 (sf  2)  per-pred P1  2 P2  0 P3  0 P4  0 P5  0 P7  2  p 1.00-1.00 (median 1.00)  mean n 0.27
+  page_sticky_fit|latin_cremma   ZL3b: n5  0/15  match  7/15 (sf  4)  per-pred P1  1 P2  0 P3  4 P4  0 P5  0 P7 10  p 0.70-0.80 (median 0.75)  mean n 1.00
+  page_sticky_fit|latin_cremma   RF1b: n5  0/15  match  9/15 (sf  4)  per-pred P1  0 P2  1 P3  4 P4  0 P5  0 P7  9  p 0.70-0.80 (median 0.75)  mean n 0.93
+  page_sticky_fit|latin_cremma   IT2a: n5  0/15  match 10/15 (sf  5)  per-pred P1  0 P2  0 P3  4 P4  0 P5  0 P7 10  p 0.75-0.80 (median 0.75)  mean n 0.93
+  page_lock|latin_cremma         ZL3b: n5  0/15  match  0/15 (sf  0)  per-pred P1  2 P2  0 P3  0 P4  0 P5  0 P7  1  p 1.00-1.00 (median 1.00)  mean n 0.20
+  page_lock|latin_cremma         RF1b: n5  0/15  match  0/15 (sf  0)  per-pred P1  1 P2  0 P3  0 P4  0 P5  0 P7  1  p 1.00-1.00 (median 1.00)  mean n 0.13
+  page_lock|latin_cremma         IT2a: n5  0/15  match  0/15 (sf  1)  per-pred P1  2 P2  0 P3  0 P4  0 P5  0 P7  1  p 1.00-1.00 (median 1.00)  mean n 0.20
+  default|italian_dante          ZL3b: n5  0/15  match  0/15 (sf  0)  per-pred P1  0 P2  0 P3  1 P4  0 P5  0 P7 13  p 0.00-0.00 (median 0.00)  mean n 0.93
+  default|italian_dante          RF1b: n5  0/15  match  0/15 (sf  1)  per-pred P1  0 P2  1 P3  1 P4  0 P5  0 P7 14  p 0.00-0.00 (median 0.00)  mean n 1.07
+  default|italian_dante          IT2a: n5  0/15  match  0/15 (sf  1)  per-pred P1  0 P2  0 P3  1 P4  0 P5  0 P7 13  p 0.00-0.00 (median 0.00)  mean n 0.93
+  line_sticky75|italian_dante    ZL3b: n5  0/15  match 15/15 (sf  5)  per-pred P1  0 P2  0 P3  3 P4  0 P5  0 P7  9  p 0.75-0.75 (median 0.75)  mean n 0.80
+  line_sticky75|italian_dante    RF1b: n5  0/15  match 15/15 (sf  3)  per-pred P1  0 P2  0 P3  4 P4  0 P5  0 P7  8  p 0.75-0.75 (median 0.75)  mean n 0.80
+  line_sticky75|italian_dante    IT2a: n5  0/15  match 13/15 (sf  6)  per-pred P1  0 P2  0 P3  5 P4  0 P5  0 P7 10  p 0.75-0.75 (median 0.75)  mean n 1.00
+  line_sticky_fit|italian_dante  ZL3b: n5  0/15  match 14/15 (sf  5)  per-pred P1  0 P2  0 P3  3 P4  0 P5  0 P7 11  p 0.70-0.80 (median 0.75)  mean n 0.93
+  line_sticky_fit|italian_dante  RF1b: n5  0/15  match 15/15 (sf  3)  per-pred P1  0 P2  0 P3  3 P4  0 P5  0 P7 11  p 0.70-0.80 (median 0.75)  mean n 0.93
+  line_sticky_fit|italian_dante  IT2a: n5  0/15  match 15/15 (sf  6)  per-pred P1  0 P2  0 P3  2 P4  0 P5  0 P7 12  p 0.70-0.80 (median 0.70)  mean n 0.93
+  line_lock|italian_dante        ZL3b: n5  0/15  match  0/15 (sf  3)  per-pred P1  0 P2  0 P3  0 P4  0 P5  0 P7  3  p 1.00-1.00 (median 1.00)  mean n 0.20
+  line_lock|italian_dante        RF1b: n5  0/15  match  0/15 (sf  5)  per-pred P1  0 P2  0 P3  0 P4  0 P5  0 P7  1  p 1.00-1.00 (median 1.00)  mean n 0.07
+  line_lock|italian_dante        IT2a: n5  0/15  match  0/15 (sf  2)  per-pred P1  0 P2  0 P3  0 P4  0 P5  0 P7  2  p 1.00-1.00 (median 1.00)  mean n 0.13
+  page_sticky_fit|italian_dante  ZL3b: n5  0/15  match  4/15 (sf  2)  per-pred P1  0 P2  0 P3  1 P4  0 P5  0 P7 12  p 0.70-0.80 (median 0.75)  mean n 0.87
+  page_sticky_fit|italian_dante  RF1b: n5  0/15  match  8/15 (sf  2)  per-pred P1  0 P2  0 P3  4 P4  0 P5  0 P7  8  p 0.70-0.75 (median 0.70)  mean n 0.80
+  page_sticky_fit|italian_dante  IT2a: n5  0/15  match  9/15 (sf  2)  per-pred P1  0 P2  0 P3  2 P4  0 P5  0 P7  9  p 0.70-0.85 (median 0.75)  mean n 0.73
+  page_lock|italian_dante        ZL3b: n5  0/15  match  0/15 (sf  2)  per-pred P1  0 P2  0 P3  0 P4  0 P5  0 P7  1  p 1.00-1.00 (median 1.00)  mean n 0.07
+  page_lock|italian_dante        RF1b: n5  0/15  match  0/15 (sf  1)  per-pred P1  0 P2  1 P3  0 P4  0 P5  0 P7  0  p 1.00-1.00 (median 1.00)  mean n 0.07
+  page_lock|italian_dante        IT2a: n5  0/15  match  0/15 (sf  1)  per-pred P1  1 P2  0 P3  0 P4  0 P5  0 P7  1  p 1.00-1.00 (median 1.00)  mean n 0.13
+
+=== PER-FOLD DETAIL (n/6 and +/- for P1 P2 P3 P4 P5 P7; m = s69 call match) ===
+  ZL3b:
+    A (16 pages) Voynich s69 calls TFTFT M1 +0.1358
+      default|latin_cremma           1/6 -----+ t1.06 p0.00 calls TFFFT M1 -0.0075 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.90 p0.75 calls TFTFT M1 +0.1033 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.90 p0.80 calls TFTFT M1 +0.0904 m
+      line_lock|latin_cremma         0/6 ------ t0.79 p1.00 calls TFTFF M1 +0.1942 .
+      page_sticky_fit|latin_cremma   2/6 --+--+ t0.88 p0.75 calls TFTFT M1 +0.1310 m
+      page_lock|latin_cremma         0/6 ------ t0.63 p1.00 calls TFFFF M1 +0.1854 .
+      default|italian_dante          1/6 -----+ t1.06 p0.00 calls TFTTT M1 -0.0039 .
+      line_sticky75|italian_dante    1/6 -----+ t0.89 p0.75 calls TFTFT M1 +0.0920 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.90 p0.70 calls TFTFT M1 +0.1029 m
+      line_lock|italian_dante        0/6 ------ t0.77 p1.00 calls TFTFF M1 +0.2808 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.90 p0.75 calls TFTFT M1 +0.1063 m
+      page_lock|italian_dante        0/6 ------ t0.68 p1.00 calls TFFFF M1 +0.2950 .
+    B (14 pages) Voynich s69 calls TFTFF M1 +0.0906
+      default|latin_cremma           0/6 ------ t1.21 p0.00 calls TFFFT M1 -0.0081 .
+      line_sticky75|latin_cremma     2/6 --+--+ t1.08 p0.75 calls TFTFT M1 +0.1188 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t1.04 p0.80 calls TFTFT M1 +0.1840 m
+      line_lock|latin_cremma         1/6 -----+ t0.97 p1.00 calls TFTFF M1 +0.2312 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t1.06 p0.75 calls TFFFT M1 +0.1644 .
+      page_lock|latin_cremma         1/6 -----+ t0.93 p1.00 calls TFFFF M1 +0.2537 .
+      default|italian_dante          0/6 ------ t1.23 p0.00 calls TFFFT M1 +0.0031 .
+      line_sticky75|italian_dante    2/6 --+--+ t1.06 p0.75 calls TFTFT M1 +0.1294 m
+      line_sticky_fit|italian_dante  2/6 --+--+ t1.08 p0.80 calls TFTFT M1 +0.1330 m
+      line_lock|italian_dante        1/6 -----+ t0.98 p1.00 calls TFTFF M1 +0.2952 .
+      page_sticky_fit|italian_dante  1/6 -----+ t1.08 p0.75 calls TFFFT M1 +0.1448 .
+      page_lock|italian_dante        1/6 -----+ t0.89 p1.00 calls TFTFF M1 +0.2225 .
+    C (16 pages) Voynich s69 calls TFTFF M1 +0.0410
+      default|latin_cremma           1/6 -----+ t1.11 p0.00 calls TFFFT M1 -0.0054 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.93 p0.75 calls TFTFT M1 +0.1212 m
+      line_sticky_fit|latin_cremma   2/6 +----+ t0.96 p0.70 calls TFTFT M1 +0.0936 m
+      line_lock|latin_cremma         0/6 ------ t0.85 p1.00 calls TFTFF M1 +0.2270 .
+      page_sticky_fit|latin_cremma   2/6 +----+ t0.97 p0.75 calls TFFFT M1 +0.1158 .
+      page_lock|latin_cremma         1/6 +----- t0.75 p1.00 calls TFFFF M1 +0.1797 .
+      default|italian_dante          1/6 -----+ t1.10 p0.00 calls TFFFT M1 +0.0007 .
+      line_sticky75|italian_dante    1/6 -----+ t0.98 p0.75 calls TFTFT M1 +0.1018 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.99 p0.70 calls TFTFT M1 +0.1339 m
+      line_lock|italian_dante        0/6 ------ t0.84 p1.00 calls TFTFF M1 +0.3238 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.94 p0.75 calls TFTFT M1 +0.0873 m
+      page_lock|italian_dante        0/6 ------ t0.64 p1.00 calls TFFFF M1 +0.2465 .
+    D (16 pages) Voynich s69 calls TFTFT M1 +0.1073
+      default|latin_cremma           1/6 -----+ t1.07 p0.00 calls TFFFT M1 -0.0059 .
+      line_sticky75|latin_cremma     2/6 --+--+ t0.90 p0.75 calls TFTFT M1 +0.0813 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.87 p0.80 calls TFTFT M1 +0.1297 m
+      line_lock|latin_cremma         0/6 ------ t0.82 p1.00 calls TFTFF M1 +0.2374 .
+      page_sticky_fit|latin_cremma   2/6 --+--+ t0.95 p0.70 calls TFFFT M1 +0.0983 .
+      page_lock|latin_cremma         0/6 ------ t0.80 p1.00 calls TFFFF M1 +0.2391 .
+      default|italian_dante          1/6 -----+ t1.06 p0.00 calls TFTTT M1 +0.0131 .
+      line_sticky75|italian_dante    2/6 --+--+ t0.89 p0.75 calls TFTFT M1 +0.1405 m
+      line_sticky_fit|italian_dante  2/6 --+--+ t0.88 p0.75 calls TFTFT M1 +0.1113 m
+      line_lock|italian_dante        0/6 ------ t0.84 p1.00 calls TFTFF M1 +0.2130 .
+      page_sticky_fit|italian_dante  2/6 --+--+ t0.90 p0.75 calls TFFFT M1 +0.0931 .
+      page_lock|italian_dante        0/6 ------ t0.68 p1.00 calls TFFFF M1 +0.2844 .
+    E (16 pages) Voynich s69 calls TFTFT M1 +0.0634
+      default|latin_cremma           1/6 -----+ t1.14 p0.00 calls TFFFT M1 -0.0257 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.98 p0.75 calls TFTFT M1 +0.1000 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.98 p0.70 calls TFTFT M1 +0.1049 m
+      line_lock|latin_cremma         0/6 ------ t0.83 p1.00 calls TFTFF M1 +0.1919 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.94 p0.75 calls TFFFT M1 +0.1261 .
+      page_lock|latin_cremma         0/6 ------ t0.83 p1.00 calls TFTFF M1 +0.2247 .
+      default|italian_dante          1/6 -----+ t1.14 p0.00 calls TFFFT M1 -0.0098 .
+      line_sticky75|italian_dante    1/6 -----+ t0.97 p0.75 calls TFTFT M1 +0.1218 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.98 p0.75 calls TFTFT M1 +0.1304 m
+      line_lock|italian_dante        1/6 -----+ t0.87 p1.00 calls TFTFF M1 +0.2988 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.97 p0.75 calls TFFFT M1 +0.0884 .
+      page_lock|italian_dante        0/6 ------ t0.74 p1.00 calls TFTFF M1 +0.2093 .
+    F (16 pages) Voynich s69 calls TFTFT M1 +0.0415
+      default|latin_cremma           1/6 -----+ t1.02 p0.00 calls TFFFT M1 -0.0191 .
+      line_sticky75|latin_cremma     0/6 ------ t0.84 p0.75 calls TFTFT M1 +0.0895 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.87 p0.70 calls TFTFT M1 +0.0764 m
+      line_lock|latin_cremma         0/6 ------ t0.78 p1.00 calls TFTFF M1 +0.2279 .
+      page_sticky_fit|latin_cremma   0/6 ------ t0.84 p0.70 calls TFTFT M1 +0.0654 m
+      page_lock|latin_cremma         0/6 ------ t0.68 p1.00 calls TFFFF M1 +0.2259 .
+      default|italian_dante          1/6 -----+ t0.99 p0.00 calls TFFFT M1 -0.0057 .
+      line_sticky75|italian_dante    0/6 ------ t0.84 p0.75 calls TFTFT M1 +0.0697 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.85 p0.75 calls TFTFT M1 +0.0674 m
+      line_lock|italian_dante        0/6 ------ t0.72 p1.00 calls TFTFF M1 +0.2566 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.87 p0.70 calls TFTFT M1 +0.1012 m
+      page_lock|italian_dante        0/6 ------ t0.65 p1.00 calls TFFFF M1 +0.2503 .
+    G (16 pages) Voynich s69 calls TFTTT M1 +0.0724
+      default|latin_cremma           1/6 -----+ t1.05 p0.00 calls TFFFT M1 -0.0111 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.89 p0.75 calls TFTFT M1 +0.1208 m
+      line_sticky_fit|latin_cremma   2/6 --+--+ t0.90 p0.70 calls TFTFT M1 +0.1007 m
+      line_lock|latin_cremma         0/6 ------ t0.81 p1.00 calls TFTFF M1 +0.1922 .
+      page_sticky_fit|latin_cremma   2/6 --+--+ t0.91 p0.70 calls TFTFT M1 +0.0824 m
+      page_lock|latin_cremma         0/6 ------ t0.76 p1.00 calls TFFFF M1 +0.2141 .
+      default|italian_dante          1/6 -----+ t1.04 p0.00 calls TFFFT M1 -0.0066 .
+      line_sticky75|italian_dante    1/6 --+--- t0.85 p0.75 calls TFTFT M1 +0.0951 m
+      line_sticky_fit|italian_dante  2/6 --+--+ t0.89 p0.75 calls TFTFT M1 +0.0675 m
+      line_lock|italian_dante        0/6 ------ t0.78 p1.00 calls TFTFF M1 +0.3221 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.89 p0.70 calls TFFFT M1 +0.0913 .
+      page_lock|italian_dante        0/6 ------ t0.69 p1.00 calls TFFFF M1 +0.1853 .
+    H (6 pages) Voynich s69 calls TFTTT M1 +0.0273
+      default|latin_cremma           1/6 -----+ t0.94 p0.00 calls TFFFT M1 -0.0189 .
+      line_sticky75|latin_cremma     0/6 ------ t0.81 p0.75 calls TFTFT M1 +0.1755 m
+      line_sticky_fit|latin_cremma   0/6 ------ t0.81 p0.80 calls TFTFT M1 +0.1510 m
+      line_lock|latin_cremma         0/6 ------ t0.70 p1.00 calls TFTFF M1 +0.2979 .
+      page_sticky_fit|latin_cremma   0/6 ------ t0.78 p0.80 calls TFFFT M1 +0.0909 .
+      page_lock|latin_cremma         0/6 ------ t0.64 p1.00 calls TFFFF M1 +0.2423 .
+      default|italian_dante          1/6 -----+ t0.96 p0.00 calls TFFFT M1 -0.0016 .
+      line_sticky75|italian_dante    0/6 ------ t0.80 p0.75 calls TFTFT M1 +0.1070 m
+      line_sticky_fit|italian_dante  0/6 ------ t0.79 p0.80 calls TFTFT M1 +0.1158 m
+      line_lock|italian_dante        0/6 ------ t0.74 p1.00 calls TFTFF M1 +0.2256 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.79 p0.80 calls TFFFT M1 +0.1449 .
+      page_lock|italian_dante        0/6 ------ t0.43 p1.00 calls TFFFF M1 +0.1989 .
+    I (7 pages) Voynich s69 calls TFFFF M1 +0.0531
+      default|latin_cremma           1/6 -----+ t0.91 p0.00 calls TFFFT M1 -0.0088 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.86 p0.75 calls TFTFT M1 +0.1018 m
+      line_sticky_fit|latin_cremma   2/6 +-+--- t0.83 p0.75 calls TFFFT M1 +0.0284 .
+      line_lock|latin_cremma         0/6 ------ t0.82 p1.00 calls TFTFF M1 +0.2491 .
+      page_sticky_fit|latin_cremma   0/6 ------ t0.80 p0.75 calls TFFFF M1 +0.0922 .
+      page_lock|latin_cremma         0/6 ------ t0.70 p1.00 calls TFTFF M1 +0.2607 .
+      default|italian_dante          2/6 --+--+ t0.91 p0.00 calls TFFFT M1 -0.0022 .
+      line_sticky75|italian_dante    0/6 ------ t0.82 p0.75 calls TFTFT M1 +0.0889 m
+      line_sticky_fit|italian_dante  0/6 ------ t0.83 p0.75 calls TFTFF M1 +0.0855 .
+      line_lock|italian_dante        0/6 ------ t0.80 p1.00 calls TFTFF M1 +0.2654 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.86 p0.75 calls TFTFT M1 +0.1072 m
+      page_lock|italian_dante        0/6 ------ t0.71 p1.00 calls TFFFF M1 +0.2223 .
+    M (20 pages) Voynich s69 calls TFTFT M1 +0.1436
+      default|latin_cremma           1/6 -+---- t1.62 p0.00 calls TFFFT M1 -0.0148 .
+      line_sticky75|latin_cremma     0/6 ------ t1.17 p0.75 calls TFTFT M1 +0.1112 m
+      line_sticky_fit|latin_cremma   0/6 ------ t1.17 p0.75 calls TFTFT M1 +0.0908 m
+      line_lock|latin_cremma         0/6 ------ t0.81 p1.00 calls TFTFF M1 +0.2209 .
+      page_sticky_fit|latin_cremma   0/6 ------ t1.19 p0.75 calls TFTFT M1 +0.0901 m
+      page_lock|latin_cremma         0/6 ------ t0.73 p1.00 calls TFTFF M1 +0.1490 .
+      default|italian_dante          0/6 ------ t1.60 p0.00 calls TFFFT M1 -0.0123 .
+      line_sticky75|italian_dante    1/6 -----+ t1.10 p0.75 calls TFTFT M1 +0.1068 m
+      line_sticky_fit|italian_dante  1/6 -----+ t1.14 p0.70 calls TFTFT M1 +0.0872 m
+      line_lock|italian_dante        0/6 ------ t0.74 p1.00 calls TFTFF M1 +0.2301 .
+      page_sticky_fit|italian_dante  1/6 -----+ t1.04 p0.80 calls TFFFT M1 +0.1229 .
+      page_lock|italian_dante        0/6 ------ t0.60 p1.00 calls TFFFF M1 +0.1826 .
+    N (7 pages) Voynich s69 calls TFTTF M1 +0.0560
+      default|latin_cremma           1/6 -----+ t1.15 p0.00 calls TFFFT M1 -0.0161 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.96 p0.75 calls TFTFT M1 +0.0825 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.91 p0.80 calls TFTFT M1 +0.1689 m
+      line_lock|latin_cremma         0/6 ------ t0.80 p1.00 calls TFTFF M1 +0.2417 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.90 p0.80 calls TFTFT M1 +0.1057 m
+      page_lock|latin_cremma         0/6 ------ t0.52 p1.00 calls TFFFF M1 +0.1579 .
+      default|italian_dante          1/6 -----+ t1.12 p0.00 calls TFFFT M1 -0.0149 .
+      line_sticky75|italian_dante    1/6 -----+ t0.93 p0.75 calls TFTFT M1 +0.1203 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.93 p0.80 calls TFTFT M1 +0.1044 m
+      line_lock|italian_dante        0/6 ------ t0.84 p1.00 calls TFTFF M1 +0.2579 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.95 p0.75 calls TFFFT M1 +0.1038 .
+      page_lock|italian_dante        0/6 ------ t0.59 p1.00 calls TFFFF M1 +0.3186 .
+    O (12 pages) Voynich s69 calls TFTTT M1 +0.0215
+      default|latin_cremma           1/6 -----+ t1.02 p0.00 calls TFFFT M1 -0.0136 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.90 p0.75 calls TFTFT M1 +0.1179 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.86 p0.80 calls TFTFT M1 +0.1215 m
+      line_lock|latin_cremma         0/6 ------ t0.76 p1.00 calls TFTFF M1 +0.2549 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.86 p0.80 calls TFFFT M1 +0.1011 .
+      page_lock|latin_cremma         1/6 +----- t0.64 p1.00 calls TFFFF M1 +0.2102 .
+      default|italian_dante          1/6 -----+ t1.07 p0.00 calls TFFFT M1 -0.0164 .
+      line_sticky75|italian_dante    1/6 -----+ t0.88 p0.75 calls TFTFT M1 +0.0951 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.87 p0.75 calls TFTFT M1 +0.0950 m
+      line_lock|italian_dante        0/6 ------ t0.78 p1.00 calls TFTFF M1 +0.2574 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.87 p0.80 calls TFFFT M1 +0.1190 .
+      page_lock|italian_dante        0/6 ------ t0.73 p1.00 calls TFFFF M1 +0.2299 .
+    Q (10 pages) Voynich s69 calls TFTTF M1 +0.0429
+      default|latin_cremma           1/6 -----+ t0.95 p0.00 calls TFFFT M1 -0.0250 .
+      line_sticky75|latin_cremma     0/6 ------ t0.85 p0.75 calls TFTFT M1 +0.1292 m
+      line_sticky_fit|latin_cremma   0/6 ------ t0.82 p0.80 calls TFTFT M1 +0.1305 m
+      line_lock|latin_cremma         0/6 ------ t0.75 p1.00 calls TFTFF M1 +0.1950 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.85 p0.80 calls TFFFT M1 +0.0863 .
+      page_lock|latin_cremma         0/6 ------ t0.68 p1.00 calls TFFFF M1 +0.2083 .
+      default|italian_dante          1/6 -----+ t0.93 p0.00 calls TFTTT M1 +0.0070 .
+      line_sticky75|italian_dante    0/6 ------ t0.83 p0.75 calls TFTFT M1 +0.1067 m
+      line_sticky_fit|italian_dante  0/6 ------ t0.81 p0.80 calls TFTFT M1 +0.1425 m
+      line_lock|italian_dante        0/6 ------ t0.78 p1.00 calls TFTFF M1 +0.2502 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.79 p0.80 calls TFFFT M1 +0.1093 .
+      page_lock|italian_dante        0/6 ------ t0.77 p1.00 calls TFFFF M1 +0.2775 .
+    S (10 pages) Voynich s69 calls TFTTT M1 +0.0707
+      default|latin_cremma           0/6 ------ t1.15 p0.00 calls TFFFT M1 -0.0204 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.96 p0.75 calls TFTFT M1 +0.1122 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.96 p0.80 calls TFTFT M1 +0.1618 m
+      line_lock|latin_cremma         1/6 -----+ t0.87 p1.00 calls TFTFF M1 +0.2089 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t1.01 p0.80 calls TFTFT M1 +0.0918 m
+      page_lock|latin_cremma         0/6 ------ t0.80 p1.00 calls TFTFF M1 +0.1402 .
+      default|italian_dante          1/6 -----+ t1.15 p0.00 calls TFFFT M1 -0.0141 .
+      line_sticky75|italian_dante    1/6 -----+ t0.97 p0.75 calls TFTFT M1 +0.1147 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.97 p0.80 calls TFTFT M1 +0.1395 m
+      line_lock|italian_dante        1/6 -----+ t0.89 p1.00 calls TFTFF M1 +0.2514 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.96 p0.80 calls TFFFT M1 +0.1487 .
+      page_lock|italian_dante        0/6 ------ t0.79 p1.00 calls TFFFF M1 +0.2664 .
+    T (23 pages) Voynich s69 calls TFTFF M1 +0.1283
+      default|latin_cremma           1/6 -----+ t1.11 p0.00 calls TFFFT M1 -0.0146 .
+      line_sticky75|latin_cremma     0/6 ------ t0.75 p0.75 calls TFTFT M1 +0.1128 m
+      line_sticky_fit|latin_cremma   0/6 ------ t0.78 p0.70 calls TFTFT M1 +0.0921 m
+      line_lock|latin_cremma         0/6 ------ t0.47 p1.00 calls TFTFF M1 +0.2381 .
+      page_sticky_fit|latin_cremma   1/6 --+--- t0.74 p0.75 calls TFTFT M1 +0.1175 m
+      page_lock|latin_cremma         0/6 ------ t0.42 p1.00 calls TFFFF M1 +0.1664 .
+      default|italian_dante          1/6 -----+ t1.04 p0.00 calls TFFFT M1 -0.0162 .
+      line_sticky75|italian_dante    0/6 ------ t0.69 p0.75 calls TFTFT M1 +0.0997 m
+      line_sticky_fit|italian_dante  0/6 ------ t0.72 p0.70 calls TFTFT M1 +0.0946 m
+      line_lock|italian_dante        0/6 ------ t0.40 p1.00 calls TFTFF M1 +0.2664 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.69 p0.75 calls TFFFT M1 +0.0977 .
+      page_lock|italian_dante        0/6 ------ t0.37 p1.00 calls TFFFF M1 +0.2448 .
+  RF1b:
+    A (16 pages) Voynich s69 calls TFTFT M1 +0.1300
+      default|latin_cremma           1/6 -----+ t0.99 p0.00 calls TFFFT M1 -0.0106 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.85 p0.75 calls TFTFT M1 +0.1275 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.87 p0.75 calls TFTFT M1 +0.0737 m
+      line_lock|latin_cremma         1/6 +----- t0.75 p1.00 calls TFTFF M1 +0.2420 .
+      page_sticky_fit|latin_cremma   0/6 ------ t0.83 p0.75 calls TFTFT M1 +0.1133 m
+      page_lock|latin_cremma         0/6 ------ t0.65 p1.00 calls TFFFF M1 +0.2071 .
+      default|italian_dante          1/6 -----+ t1.00 p0.00 calls TFFFT M1 +0.0007 .
+      line_sticky75|italian_dante    0/6 ------ t0.85 p0.75 calls TFTFT M1 +0.0891 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.86 p0.75 calls TFTFT M1 +0.1035 m
+      line_lock|italian_dante        0/6 ------ t0.73 p1.00 calls TFTFF M1 +0.2243 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.84 p0.70 calls TFTFT M1 +0.0851 m
+      page_lock|italian_dante        0/6 ------ t0.73 p1.00 calls TFFFF M1 +0.2217 .
+    B (14 pages) Voynich s69 calls TFTFF M1 +0.0944
+      default|latin_cremma           1/6 -----+ t1.12 p0.00 calls TFFFT M1 -0.0026 .
+      line_sticky75|latin_cremma     2/6 --+--+ t1.03 p0.75 calls TFTFT M1 +0.1160 m
+      line_sticky_fit|latin_cremma   2/6 --+--+ t0.96 p0.80 calls TFTFT M1 +0.0894 m
+      line_lock|latin_cremma         1/6 -----+ t0.94 p1.00 calls TFTFF M1 +0.2200 .
+      page_sticky_fit|latin_cremma   2/6 --+--+ t1.00 p0.75 calls TFFFT M1 +0.1172 .
+      page_lock|latin_cremma         1/6 -----+ t0.88 p1.00 calls TFFFF M1 +0.2044 .
+      default|italian_dante          1/6 -----+ t1.14 p0.00 calls TFFFF M1 -0.0051 .
+      line_sticky75|italian_dante    2/6 --+--+ t1.01 p0.75 calls TFTFT M1 +0.0883 m
+      line_sticky_fit|italian_dante  2/6 --+--+ t1.02 p0.75 calls TFTFT M1 +0.1067 m
+      line_lock|italian_dante        1/6 -----+ t0.88 p1.00 calls TFTFF M1 +0.2068 .
+      page_sticky_fit|italian_dante  2/6 --+--+ t1.01 p0.75 calls TFFFT M1 +0.1266 .
+      page_lock|italian_dante        0/6 ------ t0.85 p1.00 calls TFTFF M1 +0.2932 .
+    C (16 pages) Voynich s69 calls TFTFF M1 +0.0452
+      default|latin_cremma           1/6 -----+ t1.09 p0.00 calls TFFFT M1 -0.0237 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.89 p0.75 calls TFTFT M1 +0.1523 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.88 p0.75 calls TFTFT M1 +0.0999 m
+      line_lock|latin_cremma         0/6 ------ t0.80 p1.00 calls TFTFF M1 +0.2245 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.90 p0.75 calls TFTFT M1 +0.1263 m
+      page_lock|latin_cremma         0/6 ------ t0.77 p1.00 calls TFFFF M1 +0.2258 .
+      default|italian_dante          1/6 -----+ t1.05 p0.00 calls TFFFT M1 -0.0074 .
+      line_sticky75|italian_dante    1/6 -----+ t0.91 p0.75 calls TFTFT M1 +0.1128 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.92 p0.70 calls TFTFT M1 +0.1180 m
+      line_lock|italian_dante        0/6 ------ t0.79 p1.00 calls TFTFF M1 +0.2408 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.88 p0.75 calls TFTFT M1 +0.1039 m
+      page_lock|italian_dante        0/6 ------ t0.76 p1.00 calls TTFFF M1 +0.2461 .
+    D (16 pages) Voynich s69 calls TFTFF M1 +0.1029
+      default|latin_cremma           1/6 -----+ t1.02 p0.00 calls TFFFT M1 -0.0305 .
+      line_sticky75|latin_cremma     2/6 --+--+ t0.87 p0.75 calls TFTFT M1 +0.1096 m
+      line_sticky_fit|latin_cremma   1/6 --+--- t0.84 p0.75 calls TFTFT M1 +0.0977 m
+      line_lock|latin_cremma         0/6 ------ t0.78 p1.00 calls TFTFF M1 +0.2264 .
+      page_sticky_fit|latin_cremma   2/6 --+--+ t0.88 p0.75 calls TFTFT M1 +0.1057 m
+      page_lock|latin_cremma         0/6 ------ t0.70 p1.00 calls TTFFF M1 +0.2289 .
+      default|italian_dante          1/6 -----+ t1.00 p0.00 calls TFFFT M1 -0.0117 .
+      line_sticky75|italian_dante    1/6 --+--- t0.85 p0.75 calls TFTFT M1 +0.1213 m
+      line_sticky_fit|italian_dante  2/6 --+--+ t0.85 p0.70 calls TFTFT M1 +0.0811 m
+      line_lock|italian_dante        0/6 ------ t0.78 p1.00 calls TFTFF M1 +0.2114 .
+      page_sticky_fit|italian_dante  2/6 --+--+ t0.87 p0.70 calls TFTFT M1 +0.1004 m
+      page_lock|italian_dante        0/6 ------ t0.64 p1.00 calls TFFFF M1 +0.2203 .
+    E (16 pages) Voynich s69 calls TFTFT M1 +0.0610
+      default|latin_cremma           1/6 -----+ t1.09 p0.00 calls TFFFT M1 -0.0109 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.90 p0.75 calls TFTFT M1 +0.1191 m
+      line_sticky_fit|latin_cremma   2/6 --+--+ t0.93 p0.75 calls TFTFT M1 +0.0471 m
+      line_lock|latin_cremma         0/6 ------ t0.77 p1.00 calls TFTFF M1 +0.2057 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.87 p0.75 calls TFTFT M1 +0.1310 m
+      page_lock|latin_cremma         0/6 ------ t0.74 p1.00 calls TTFFF M1 +0.1964 .
+      default|italian_dante          1/6 -----+ t1.08 p0.00 calls TFFFT M1 -0.0002 .
+      line_sticky75|italian_dante    1/6 -----+ t0.91 p0.75 calls TFTFT M1 +0.0992 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.94 p0.70 calls TFTFT M1 +0.1042 m
+      line_lock|italian_dante        0/6 ------ t0.81 p1.00 calls TFTFF M1 +0.2404 .
+      page_sticky_fit|italian_dante  2/6 --+--+ t0.92 p0.70 calls TFTFT M1 +0.0826 m
+      page_lock|italian_dante        0/6 ------ t0.72 p1.00 calls TFFFF M1 +0.2377 .
+    F (16 pages) Voynich s69 calls TFTTT M1 +0.0424
+      default|latin_cremma           1/6 -----+ t0.98 p0.00 calls TFFFT M1 -0.0107 .
+      line_sticky75|latin_cremma     0/6 ------ t0.82 p0.75 calls TFTFT M1 +0.1329 m
+      line_sticky_fit|latin_cremma   0/6 ------ t0.83 p0.75 calls TFTFT M1 +0.1263 m
+      line_lock|latin_cremma         0/6 ------ t0.75 p1.00 calls TFTFF M1 +0.2392 .
+      page_sticky_fit|latin_cremma   0/6 ------ t0.82 p0.70 calls TFTFT M1 +0.0862 m
+      page_lock|latin_cremma         0/6 ------ t0.69 p1.00 calls TTFFF M1 +0.1913 .
+      default|italian_dante          1/6 -----+ t0.98 p0.00 calls TFFFT M1 -0.0044 .
+      line_sticky75|italian_dante    0/6 ------ t0.84 p0.75 calls TFTFT M1 +0.0805 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.86 p0.70 calls TFTFT M1 +0.0883 m
+      line_lock|italian_dante        0/6 ------ t0.70 p1.00 calls TFTFF M1 +0.2101 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.82 p0.75 calls TFTFT M1 +0.0735 m
+      page_lock|italian_dante        0/6 ------ t0.57 p1.00 calls TFFFF M1 +0.1881 .
+    G (16 pages) Voynich s69 calls TFTFT M1 +0.0759
+      default|latin_cremma           1/6 -----+ t0.99 p0.00 calls TFFFT M1 -0.0101 .
+      line_sticky75|latin_cremma     1/6 --+--- t0.85 p0.75 calls TFTFT M1 +0.0842 m
+      line_sticky_fit|latin_cremma   0/6 ------ t0.85 p0.70 calls TFTFT M1 +0.1043 m
+      line_lock|latin_cremma         0/6 ------ t0.74 p1.00 calls TFTFF M1 +0.2195 .
+      page_sticky_fit|latin_cremma   2/6 --+--+ t0.85 p0.70 calls TFTFT M1 +0.0684 m
+      page_lock|latin_cremma         0/6 ------ t0.74 p1.00 calls TFFFF M1 +0.1909 .
+      default|italian_dante          1/6 -----+ t1.00 p0.00 calls TFFFT M1 -0.0086 .
+      line_sticky75|italian_dante    1/6 --+--- t0.84 p0.75 calls TFTFT M1 +0.1022 m
+      line_sticky_fit|italian_dante  2/6 --+--+ t0.87 p0.70 calls TFTFT M1 +0.0876 m
+      line_lock|italian_dante        0/6 ------ t0.73 p1.00 calls TFTFF M1 +0.2351 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.84 p0.75 calls TFFFT M1 +0.1473 .
+      page_lock|italian_dante        0/6 ------ t0.70 p1.00 calls TFFFF M1 +0.2444 .
+    H (6 pages) Voynich s69 calls TFTTT M1 +0.0216
+      default|latin_cremma           1/6 -----+ t0.89 p0.00 calls TFFFT M1 -0.0203 .
+      line_sticky75|latin_cremma     0/6 ------ t0.79 p0.75 calls TFTFT M1 +0.1103 m
+      line_sticky_fit|latin_cremma   0/6 ------ t0.81 p0.75 calls TFTFT M1 +0.1029 m
+      line_lock|latin_cremma         0/6 ------ t0.70 p1.00 calls TFTFF M1 +0.2656 .
+      page_sticky_fit|latin_cremma   0/6 ------ t0.77 p0.75 calls TFFFT M1 +0.0984 .
+      page_lock|latin_cremma         0/6 ------ t0.53 p1.00 calls TFFFF M1 +0.1366 .
+      default|italian_dante          1/6 -----+ t0.91 p0.00 calls TFFFT M1 -0.0130 .
+      line_sticky75|italian_dante    0/6 ------ t0.77 p0.75 calls TFTFT M1 +0.0927 m
+      line_sticky_fit|italian_dante  0/6 ------ t0.77 p0.80 calls TFTFT M1 +0.1238 m
+      line_lock|italian_dante        0/6 ------ t0.70 p1.00 calls TFTFF M1 +0.2073 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.80 p0.75 calls TFFFT M1 +0.1418 .
+      page_lock|italian_dante        0/6 ------ t0.49 p1.00 calls TFFFF M1 +0.2351 .
+    I (7 pages) Voynich s69 calls TFFFT M1 +0.0519
+      default|latin_cremma           2/6 --+--+ t0.86 p0.00 calls TFFFT M1 -0.0257 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.87 p0.75 calls TFTTT M1 +0.0528 .
+      line_sticky_fit|latin_cremma   3/6 +++--- t0.77 p0.75 calls TFTFT M1 +0.0448 m
+      line_lock|latin_cremma         0/6 ------ t0.76 p1.00 calls TTTFF M1 +0.1717 .
+      page_sticky_fit|latin_cremma   1/6 -+---- t0.76 p0.80 calls TFFFT M1 +0.1493 .
+      page_lock|latin_cremma         0/6 ------ t0.72 p1.00 calls TFFFF M1 +0.1444 .
+      default|italian_dante          2/6 --+--+ t0.87 p0.00 calls TFFFT M1 +0.0112 .
+      line_sticky75|italian_dante    2/6 --+--+ t0.86 p0.75 calls TFTFT M1 +0.0921 m
+      line_sticky_fit|italian_dante  0/6 ------ t0.79 p0.75 calls TFTFT M1 +0.0739 m
+      line_lock|italian_dante        0/6 ------ t0.78 p1.00 calls TFTFF M1 +0.2678 .
+      page_sticky_fit|italian_dante  1/6 --+--- t0.82 p0.70 calls TFTTT M1 +0.0094 .
+      page_lock|italian_dante        1/6 -+---- t0.78 p1.00 calls TFFFF M1 +0.2522 .
+    M (20 pages) Voynich s69 calls TFTFF M1 +0.1417
+      default|latin_cremma           0/6 ------ t1.62 p0.00 calls TFFFT M1 -0.0255 .
+      line_sticky75|latin_cremma     0/6 ------ t1.16 p0.75 calls TFTFT M1 +0.1127 m
+      line_sticky_fit|latin_cremma   0/6 ------ t1.22 p0.70 calls TFTFT M1 +0.0825 m
+      line_lock|latin_cremma         0/6 ------ t0.81 p1.00 calls TFTFF M1 +0.2315 .
+      page_sticky_fit|latin_cremma   0/6 ------ t1.19 p0.75 calls TFFFT M1 +0.0849 .
+      page_lock|latin_cremma         0/6 ------ t0.67 p1.00 calls TFFFF M1 +0.1586 .
+      default|italian_dante          1/6 -+---- t1.57 p0.00 calls TFFFT M1 -0.0140 .
+      line_sticky75|italian_dante    1/6 -----+ t1.08 p0.75 calls TFTFT M1 +0.1087 m
+      line_sticky_fit|italian_dante  1/6 -----+ t1.08 p0.75 calls TFTFT M1 +0.1037 m
+      line_lock|italian_dante        0/6 ------ t0.73 p1.00 calls TFTFF M1 +0.1981 .
+      page_sticky_fit|italian_dante  1/6 -----+ t1.10 p0.75 calls TFFFT M1 +0.1204 .
+      page_lock|italian_dante        0/6 ------ t0.64 p1.00 calls TFFFF M1 +0.2312 .
+    N (7 pages) Voynich s69 calls TFTTF M1 +0.0577
+      default|latin_cremma           1/6 -----+ t1.10 p0.00 calls TFFFT M1 -0.0087 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.97 p0.75 calls TFTFT M1 +0.1068 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.90 p0.80 calls TFTFT M1 +0.1409 m
+      line_lock|latin_cremma         0/6 ------ t0.80 p1.00 calls TFTFF M1 +0.2017 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.89 p0.80 calls TFFFT M1 +0.0815 .
+      page_lock|latin_cremma         0/6 ------ t0.59 p1.00 calls TFFFF M1 +0.1143 .
+      default|italian_dante          1/6 -----+ t1.11 p0.00 calls TFFFT M1 -0.0086 .
+      line_sticky75|italian_dante    1/6 -----+ t0.94 p0.75 calls TFTFT M1 +0.1199 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.91 p0.75 calls TFTFT M1 +0.1384 m
+      line_lock|italian_dante        0/6 ------ t0.82 p1.00 calls TFTFF M1 +0.2458 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.95 p0.70 calls TFTFT M1 +0.0942 m
+      page_lock|italian_dante        0/6 ------ t0.47 p1.00 calls TFFFF M1 +0.1462 .
+    O (12 pages) Voynich s69 calls TFTTT M1 +0.0296
+      default|latin_cremma           1/6 -----+ t1.06 p0.00 calls TFFFT M1 -0.0090 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.92 p0.75 calls TFTFT M1 +0.0890 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.85 p0.80 calls TFTFT M1 +0.1446 m
+      line_lock|latin_cremma         0/6 ------ t0.75 p1.00 calls TFTFF M1 +0.2140 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.88 p0.80 calls TFTFT M1 +0.1193 m
+      page_lock|latin_cremma         0/6 ------ t0.75 p1.00 calls TFFFF M1 +0.2083 .
+      default|italian_dante          1/6 -----+ t1.06 p0.00 calls TFFFT M1 -0.0086 .
+      line_sticky75|italian_dante    1/6 -----+ t0.90 p0.75 calls TFTFT M1 +0.1436 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.92 p0.75 calls TFTFT M1 +0.1402 m
+      line_lock|italian_dante        0/6 ------ t0.78 p1.00 calls TFTFF M1 +0.1984 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.92 p0.70 calls TFTFT M1 +0.0889 m
+      page_lock|italian_dante        0/6 ------ t0.78 p1.00 calls TFFFF M1 +0.2063 .
+    Q (10 pages) Voynich s69 calls TFTTF M1 +0.0475
+      default|latin_cremma           2/6 -+---+ t0.93 p0.00 calls TFFFT M1 -0.0060 .
+      line_sticky75|latin_cremma     0/6 ------ t0.84 p0.75 calls TFTFT M1 +0.1227 m
+      line_sticky_fit|latin_cremma   0/6 ------ t0.81 p0.80 calls TFFFT M1 +0.1430 .
+      line_lock|latin_cremma         0/6 ------ t0.79 p1.00 calls TFTFF M1 +0.2192 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.87 p0.80 calls TFFFT M1 +0.1318 .
+      page_lock|latin_cremma         1/6 +----- t0.68 p1.00 calls TFFFF M1 +0.1179 .
+      default|italian_dante          1/6 -----+ t0.93 p0.00 calls TFFFT M1 -0.0065 .
+      line_sticky75|italian_dante    0/6 ------ t0.81 p0.75 calls TFTFT M1 +0.1135 m
+      line_sticky_fit|italian_dante  0/6 ------ t0.84 p0.75 calls TFTFT M1 +0.1485 m
+      line_lock|italian_dante        0/6 ------ t0.76 p1.00 calls TFTFF M1 +0.2064 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.83 p0.70 calls TFFFT M1 +0.1388 .
+      page_lock|italian_dante        0/6 ------ t0.60 p1.00 calls TFTFF M1 +0.1221 .
+    S (10 pages) Voynich s69 calls TFTTT M1 +0.0764
+      default|latin_cremma           0/6 ------ t1.15 p0.00 calls TFFFT M1 -0.0190 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.95 p0.75 calls TFTFT M1 +0.0915 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.93 p0.80 calls TFTFT M1 +0.1434 m
+      line_lock|latin_cremma         0/6 ------ t0.84 p1.00 calls TFTFF M1 +0.2860 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.99 p0.80 calls TFTFT M1 +0.1470 m
+      page_lock|latin_cremma         0/6 ------ t0.65 p1.00 calls TFFFF M1 +0.1302 .
+      default|italian_dante          1/6 -----+ t1.11 p0.00 calls TFFFT M1 -0.0165 .
+      line_sticky75|italian_dante    1/6 -----+ t0.99 p0.75 calls TFTFT M1 +0.1167 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.97 p0.75 calls TFTFT M1 +0.1401 m
+      line_lock|italian_dante        0/6 ------ t0.81 p1.00 calls TFTFF M1 +0.2094 .
+      page_sticky_fit|italian_dante  1/6 -----+ t1.01 p0.70 calls TFTFT M1 +0.1041 m
+      page_lock|italian_dante        0/6 ------ t0.73 p1.00 calls TFFFF M1 +0.2399 .
+    T (23 pages) Voynich s69 calls TFTFF M1 +0.1274
+      default|latin_cremma           1/6 -----+ t1.06 p0.00 calls TFFFT M1 -0.0222 .
+      line_sticky75|latin_cremma     0/6 ------ t0.72 p0.75 calls TFTFT M1 +0.1224 m
+      line_sticky_fit|latin_cremma   0/6 ------ t0.70 p0.75 calls TFTFT M1 +0.1039 m
+      line_lock|latin_cremma         0/6 ------ t0.44 p1.00 calls TFTFF M1 +0.2279 .
+      page_sticky_fit|latin_cremma   1/6 --+--- t0.70 p0.75 calls TFTFT M1 +0.1146 m
+      page_lock|latin_cremma         0/6 ------ t0.44 p1.00 calls TFFFF M1 +0.1890 .
+      default|italian_dante          1/6 -----+ t0.99 p0.00 calls TFFFT M1 -0.0153 .
+      line_sticky75|italian_dante    0/6 ------ t0.67 p0.75 calls TFTFT M1 +0.1060 m
+      line_sticky_fit|italian_dante  0/6 ------ t0.70 p0.70 calls TFTFT M1 +0.1016 m
+      line_lock|italian_dante        0/6 ------ t0.38 p1.00 calls TFTFF M1 +0.2050 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.66 p0.75 calls TFFFT M1 +0.1036 .
+      page_lock|italian_dante        0/6 ------ t0.35 p1.00 calls TFFFF M1 +0.2356 .
+  IT2a:
+    A (16 pages) Voynich s69 calls TFTFT M1 +0.1186
+      default|latin_cremma           1/6 -----+ t1.05 p0.00 calls TFFFT M1 -0.0202 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.89 p0.75 calls TFTFT M1 +0.1138 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.92 p0.75 calls TFTFT M1 +0.1028 m
+      line_lock|latin_cremma         1/6 +----- t0.78 p1.00 calls TFTFF M1 +0.2415 .
+      page_sticky_fit|latin_cremma   2/6 --+--+ t0.88 p0.75 calls TFTFT M1 +0.1047 m
+      page_lock|latin_cremma         0/6 ------ t0.67 p1.00 calls TFFFF M1 +0.1575 .
+      default|italian_dante          1/6 -----+ t1.03 p0.00 calls TFFFT M1 -0.0060 .
+      line_sticky75|italian_dante    2/6 --+--+ t0.89 p0.75 calls TFTFT M1 +0.1099 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.91 p0.70 calls TFTFT M1 +0.1041 m
+      line_lock|italian_dante        0/6 ------ t0.78 p1.00 calls TFTFF M1 +0.2577 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.85 p0.80 calls TFTFT M1 +0.1455 m
+      page_lock|italian_dante        1/6 +----- t0.75 p1.00 calls TTFFF M1 +0.2589 .
+    B (14 pages) Voynich s69 calls TFTFT M1 +0.0764
+      default|latin_cremma           0/6 ------ t1.22 p0.00 calls TFFFT M1 -0.0149 .
+      line_sticky75|latin_cremma     2/6 --+--+ t1.06 p0.75 calls TFTFT M1 +0.0545 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t1.04 p0.80 calls TFTFT M1 +0.1207 m
+      line_lock|latin_cremma         1/6 -----+ t0.96 p1.00 calls TFTFF M1 +0.1891 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t1.04 p0.80 calls TFFFT M1 +0.1493 .
+      page_lock|latin_cremma         1/6 -----+ t0.87 p1.00 calls TFFFF M1 +0.2104 .
+      default|italian_dante          0/6 ------ t1.23 p0.00 calls TFFFT M1 -0.0016 .
+      line_sticky75|italian_dante    2/6 --+--+ t1.03 p0.75 calls TFTFT M1 +0.1363 m
+      line_sticky_fit|italian_dante  2/6 --+--+ t1.06 p0.80 calls TFTFT M1 +0.1024 m
+      line_lock|italian_dante        1/6 -----+ t0.95 p1.00 calls TFTFF M1 +0.3014 .
+      page_sticky_fit|italian_dante  1/6 -----+ t1.08 p0.85 calls TFFFT M1 +0.1569 .
+      page_lock|italian_dante        1/6 -----+ t0.93 p1.00 calls TFFFF M1 +0.2379 .
+    C (16 pages) Voynich s69 calls TFFFT M1 +0.0200
+      default|latin_cremma           1/6 -----+ t1.09 p0.00 calls TFFFT M1 -0.0071 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.89 p0.75 calls TFTFT M1 +0.0999 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.87 p0.75 calls TFTFT M1 +0.0928 m
+      line_lock|latin_cremma         0/6 ------ t0.82 p1.00 calls TFTFF M1 +0.1874 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.92 p0.75 calls TFFFT M1 +0.1363 .
+      page_lock|latin_cremma         0/6 ------ t0.79 p1.00 calls TFFFF M1 +0.2164 .
+      default|italian_dante          1/6 -----+ t1.05 p0.00 calls TFFFT M1 +0.0046 .
+      line_sticky75|italian_dante    1/6 -----+ t0.94 p0.75 calls TFTFT M1 +0.0568 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.95 p0.70 calls TFTFT M1 +0.1143 m
+      line_lock|italian_dante        0/6 ------ t0.81 p1.00 calls TFTFF M1 +0.2941 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.93 p0.75 calls TFTFT M1 +0.1326 m
+      page_lock|italian_dante        0/6 ------ t0.71 p1.00 calls TFFFF M1 +0.2476 .
+    D (16 pages) Voynich s69 calls TFTFF M1 +0.0997
+      default|latin_cremma           1/6 -----+ t1.05 p0.00 calls TFFFT M1 -0.0135 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.89 p0.75 calls TFTFT M1 +0.1400 m
+      line_sticky_fit|latin_cremma   2/6 --+--+ t0.87 p0.75 calls TFTFT M1 +0.0907 m
+      line_lock|latin_cremma         0/6 ------ t0.80 p1.00 calls TFTFF M1 +0.1904 .
+      page_sticky_fit|latin_cremma   2/6 --+--+ t0.90 p0.75 calls TFFFT M1 +0.1330 .
+      page_lock|latin_cremma         0/6 ------ t0.77 p1.00 calls TFFFF M1 +0.2928 .
+      default|italian_dante          1/6 -----+ t1.04 p0.00 calls TFFFT M1 -0.0013 .
+      line_sticky75|italian_dante    2/6 --+--+ t0.86 p0.75 calls TFTFT M1 +0.1204 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.87 p0.70 calls TFTFT M1 +0.0542 m
+      line_lock|italian_dante        0/6 ------ t0.80 p1.00 calls TFTFF M1 +0.2700 .
+      page_sticky_fit|italian_dante  2/6 --+--+ t0.88 p0.75 calls TFTFT M1 +0.1419 m
+      page_lock|italian_dante        0/6 ------ t0.77 p1.00 calls TFFFF M1 +0.2694 .
+    E (16 pages) Voynich s69 calls TFTFT M1 +0.0479
+      default|latin_cremma           1/6 -----+ t1.10 p0.00 calls TFFFT M1 -0.0100 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.93 p0.75 calls TFTFT M1 +0.1064 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.93 p0.75 calls TFTFT M1 +0.0853 m
+      line_lock|latin_cremma         0/6 ------ t0.78 p1.00 calls TFTFF M1 +0.2302 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.87 p0.75 calls TFTFT M1 +0.1419 m
+      page_lock|latin_cremma         0/6 ------ t0.78 p1.00 calls TFFFF M1 +0.2772 .
+      default|italian_dante          1/6 -----+ t1.07 p0.00 calls TFFFT M1 -0.0070 .
+      line_sticky75|italian_dante    1/6 -----+ t0.92 p0.75 calls TFTFT M1 +0.0806 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.95 p0.70 calls TFTFT M1 +0.0942 m
+      line_lock|italian_dante        0/6 ------ t0.80 p1.00 calls TFTFF M1 +0.2888 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.93 p0.75 calls TFTFT M1 +0.0773 m
+      page_lock|italian_dante        0/6 ------ t0.76 p1.00 calls TFFFF M1 +0.2017 .
+    F (16 pages) Voynich s69 calls TFTFT M1 +0.0539
+      default|latin_cremma           1/6 -----+ t1.01 p0.00 calls TFFFT M1 -0.0231 .
+      line_sticky75|latin_cremma     0/6 ------ t0.84 p0.75 calls TFTFT M1 +0.1350 m
+      line_sticky_fit|latin_cremma   2/6 --+--+ t0.92 p0.60 calls TFTFT M1 +0.0724 m
+      line_lock|latin_cremma         0/6 ------ t0.78 p1.00 calls TFTFF M1 +0.2189 .
+      page_sticky_fit|latin_cremma   0/6 ------ t0.84 p0.75 calls TFTFT M1 +0.1320 m
+      page_lock|latin_cremma         0/6 ------ t0.75 p1.00 calls TFFFF M1 +0.2209 .
+      default|italian_dante          1/6 -----+ t1.02 p0.00 calls TFFFT M1 -0.0167 .
+      line_sticky75|italian_dante    1/6 -----+ t0.85 p0.75 calls TFTFT M1 +0.0874 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.87 p0.70 calls TFTFT M1 +0.0875 m
+      line_lock|italian_dante        0/6 ------ t0.71 p1.00 calls TFTFF M1 +0.2167 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.85 p0.75 calls TFFFT M1 +0.1159 .
+      page_lock|italian_dante        0/6 ------ t0.68 p1.00 calls TFFFF M1 +0.1949 .
+    G (16 pages) Voynich s69 calls TFTFT M1 +0.0765
+      default|latin_cremma           1/6 -----+ t1.02 p0.00 calls TFFFF M1 -0.0174 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.86 p0.75 calls TFTFT M1 +0.1129 m
+      line_sticky_fit|latin_cremma   2/6 --+--+ t0.88 p0.70 calls TFTFT M1 +0.0885 m
+      line_lock|latin_cremma         0/6 ------ t0.80 p1.00 calls TFTFF M1 +0.2133 .
+      page_sticky_fit|latin_cremma   2/6 --+--+ t0.87 p0.75 calls TFTFT M1 +0.0966 m
+      page_lock|latin_cremma         0/6 ------ t0.69 p1.00 calls TFFFF M1 +0.2533 .
+      default|italian_dante          1/6 -----+ t1.03 p0.00 calls TFFFT M1 -0.0087 .
+      line_sticky75|italian_dante    1/6 --+--- t0.84 p0.75 calls TFTFT M1 +0.0678 m
+      line_sticky_fit|italian_dante  2/6 --+--+ t0.88 p0.70 calls TFTFT M1 +0.0895 m
+      line_lock|italian_dante        0/6 ------ t0.78 p1.00 calls TFTFF M1 +0.2869 .
+      page_sticky_fit|italian_dante  2/6 --+--+ t0.87 p0.75 calls TFFFT M1 +0.0990 .
+      page_lock|italian_dante        0/6 ------ t0.68 p1.00 calls TFFFF M1 +0.1923 .
+    H (6 pages) Voynich s69 calls TFTTT M1 +0.0180
+      default|latin_cremma           1/6 -----+ t0.91 p0.00 calls TFFFF M1 -0.0081 .
+      line_sticky75|latin_cremma     0/6 ------ t0.79 p0.75 calls TFTFT M1 +0.0961 m
+      line_sticky_fit|latin_cremma   0/6 ------ t0.79 p0.75 calls TFTFT M1 +0.0927 m
+      line_lock|latin_cremma         0/6 ------ t0.68 p1.00 calls TFTFF M1 +0.2201 .
+      page_sticky_fit|latin_cremma   0/6 ------ t0.76 p0.75 calls TFFFT M1 +0.1063 .
+      page_lock|latin_cremma         0/6 ------ t0.56 p1.00 calls TFFFF M1 +0.2014 .
+      default|italian_dante          1/6 -----+ t0.93 p0.00 calls TFFFT M1 +0.0001 .
+      line_sticky75|italian_dante    0/6 ------ t0.78 p0.75 calls TFTFT M1 +0.1203 m
+      line_sticky_fit|italian_dante  0/6 ------ t0.78 p0.75 calls TFTFT M1 +0.1050 m
+      line_lock|italian_dante        0/6 ------ t0.73 p1.00 calls TFTFF M1 +0.2510 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.79 p0.75 calls TFFFT M1 +0.1102 .
+      page_lock|italian_dante        0/6 ------ t0.53 p1.00 calls TFFFF M1 +0.2618 .
+    I (7 pages) Voynich s69 calls TFFFF M1 +0.0211
+      default|latin_cremma           1/6 --+--- t0.85 p0.00 calls TFTTF M1 -0.0025 .
+      line_sticky75|latin_cremma     0/6 ------ t0.83 p0.75 calls TFTFT M1 +0.0778 m
+      line_sticky_fit|latin_cremma   1/6 +----- t0.79 p0.75 calls TFTFT M1 +0.0761 m
+      line_lock|latin_cremma         0/6 ------ t0.75 p1.00 calls TFTFF M1 +0.2188 .
+      page_sticky_fit|latin_cremma   0/6 ------ t0.80 p0.75 calls TFTFT M1 +0.0979 m
+      page_lock|latin_cremma         1/6 +----- t0.68 p1.00 calls TFFFF M1 +0.3351 .
+      default|italian_dante          2/6 --+--+ t0.89 p0.00 calls TFFFT M1 -0.0192 .
+      line_sticky75|italian_dante    0/6 ------ t0.81 p0.75 calls TFFFT M1 +0.1255 .
+      line_sticky_fit|italian_dante  0/6 ------ t0.82 p0.70 calls TFTFT M1 +0.1343 m
+      line_lock|italian_dante        0/6 ------ t0.77 p1.00 calls TFTFF M1 +0.3003 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.83 p0.75 calls TFTTF M1 +0.0496 .
+      page_lock|italian_dante        0/6 ------ t0.74 p1.00 calls TFFFF M1 +0.1747 .
+    M (20 pages) Voynich s69 calls TFTFT M1 +0.1360
+      default|latin_cremma           0/6 ------ t1.63 p0.00 calls TFFFT M1 -0.0082 .
+      line_sticky75|latin_cremma     0/6 ------ t1.16 p0.75 calls TFTFT M1 +0.1136 m
+      line_sticky_fit|latin_cremma   0/6 ------ t1.16 p0.75 calls TFTFT M1 +0.0991 m
+      line_lock|latin_cremma         0/6 ------ t0.80 p1.00 calls TFTFF M1 +0.2325 .
+      page_sticky_fit|latin_cremma   0/6 ------ t1.20 p0.75 calls TFFFT M1 +0.0771 .
+      page_lock|latin_cremma         0/6 ------ t0.72 p1.00 calls TFFFF M1 +0.2508 .
+      default|italian_dante          0/6 ------ t1.57 p0.00 calls TFFFT M1 -0.0083 .
+      line_sticky75|italian_dante    1/6 -----+ t1.10 p0.75 calls TFTFT M1 +0.1092 m
+      line_sticky_fit|italian_dante  1/6 -----+ t1.14 p0.70 calls TFTFT M1 +0.1037 m
+      line_lock|italian_dante        0/6 ------ t0.74 p1.00 calls TFTFF M1 +0.2732 .
+      page_sticky_fit|italian_dante  1/6 -----+ t1.09 p0.75 calls TFFFT M1 +0.0881 .
+      page_lock|italian_dante        0/6 ------ t0.68 p1.00 calls TFFFF M1 +0.2334 .
+    N (6 pages) Voynich s69 calls TFTTF M1 +0.0522
+      default|latin_cremma           1/6 -----+ t1.13 p0.00 calls TFFFT M1 -0.0085 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.95 p0.75 calls TFTFT M1 +0.0825 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.92 p0.75 calls TFTFT M1 +0.1338 m
+      line_lock|latin_cremma         0/6 ------ t0.82 p1.00 calls TFTFF M1 +0.2264 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.92 p0.75 calls TFTFT M1 +0.0822 m
+      page_lock|latin_cremma         0/6 ------ t0.67 p1.00 calls TFFFF M1 +0.2176 .
+      default|italian_dante          1/6 -----+ t1.12 p0.00 calls TFFFT M1 +0.0003 .
+      line_sticky75|italian_dante    1/6 -----+ t0.94 p0.75 calls TFTFT M1 +0.1137 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.92 p0.75 calls TFTFT M1 +0.1000 m
+      line_lock|italian_dante        0/6 ------ t0.83 p1.00 calls TFTFF M1 +0.2395 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.93 p0.75 calls TFTFT M1 +0.0921 m
+      page_lock|italian_dante        0/6 ------ t0.58 p1.00 calls TFFFF M1 +0.2168 .
+    O (12 pages) Voynich s69 calls TFTTT M1 +0.0119
+      default|latin_cremma           1/6 -----+ t1.04 p0.00 calls TFFFT M1 -0.0097 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.92 p0.75 calls TFTFT M1 +0.1208 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.91 p0.75 calls TFTFT M1 +0.1048 m
+      line_lock|latin_cremma         1/6 +----- t0.79 p1.00 calls TFTFF M1 +0.2049 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.91 p0.75 calls TFTFT M1 +0.0928 m
+      page_lock|latin_cremma         0/6 ------ t0.69 p1.00 calls TFFFF M1 +0.2163 .
+      default|italian_dante          1/6 -----+ t1.06 p0.00 calls TFFFF M1 -0.0000 .
+      line_sticky75|italian_dante    1/6 -----+ t0.90 p0.75 calls TFTFT M1 +0.0886 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.89 p0.75 calls TFTFT M1 +0.0809 m
+      line_lock|italian_dante        0/6 ------ t0.79 p1.00 calls TFTFF M1 +0.2337 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.92 p0.75 calls TFTFT M1 +0.1033 m
+      page_lock|italian_dante        0/6 ------ t0.74 p1.00 calls TFFFF M1 +0.2109 .
+    Q (10 pages) Voynich s69 calls TFTTF M1 +0.0268
+      default|latin_cremma           1/6 -----+ t0.97 p0.00 calls TFFFT M1 -0.0002 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.88 p0.75 calls TFTFT M1 +0.1225 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.86 p0.75 calls TFTFT M1 +0.1123 m
+      line_lock|latin_cremma         0/6 ------ t0.80 p1.00 calls TFTFF M1 +0.1854 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.88 p0.80 calls TFTFT M1 +0.1156 m
+      page_lock|latin_cremma         1/6 +----- t0.67 p1.00 calls TFFFF M1 +0.2743 .
+      default|italian_dante          1/6 -----+ t0.96 p0.00 calls TFFFF M1 -0.0058 .
+      line_sticky75|italian_dante    0/6 ------ t0.81 p0.75 calls TFFFT M1 +0.1063 .
+      line_sticky_fit|italian_dante  1/6 -----+ t0.86 p0.75 calls TFTFT M1 +0.1045 m
+      line_lock|italian_dante        0/6 ------ t0.76 p1.00 calls TFTFF M1 +0.2277 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.83 p0.75 calls TFTFT M1 +0.1170 m
+      page_lock|italian_dante        0/6 ------ t0.70 p1.00 calls TTFFF M1 +0.2887 .
+    S (10 pages) Voynich s69 calls TFTTT M1 +0.0468
+      default|latin_cremma           1/6 -----+ t1.15 p0.00 calls TFTTT M1 +0.0035 .
+      line_sticky75|latin_cremma     1/6 -----+ t0.97 p0.75 calls TFTFT M1 +0.1210 m
+      line_sticky_fit|latin_cremma   1/6 -----+ t0.94 p0.75 calls TFTFT M1 +0.1399 m
+      line_lock|latin_cremma         1/6 -----+ t0.85 p1.00 calls TFTFF M1 +0.2189 .
+      page_sticky_fit|latin_cremma   1/6 -----+ t0.96 p0.80 calls TFTFT M1 +0.0817 m
+      page_lock|latin_cremma         0/6 ------ t0.78 p1.00 calls TFFFF M1 +0.2242 .
+      default|italian_dante          1/6 -----+ t1.12 p0.00 calls TFFFT M1 -0.0039 .
+      line_sticky75|italian_dante    1/6 -----+ t0.97 p0.75 calls TFTFT M1 +0.1029 m
+      line_sticky_fit|italian_dante  1/6 -----+ t0.96 p0.75 calls TFTFT M1 +0.0686 m
+      line_lock|italian_dante        1/6 -----+ t0.85 p1.00 calls TFTFF M1 +0.2599 .
+      page_sticky_fit|italian_dante  1/6 -----+ t0.97 p0.75 calls TFTFT M1 +0.1361 m
+      page_lock|italian_dante        0/6 ------ t0.61 p1.00 calls TFFFF M1 +0.1993 .
+    T (23 pages) Voynich s69 calls TFTFF M1 +0.1107
+      default|latin_cremma           1/6 -----+ t1.09 p0.00 calls TFFFT M1 -0.0201 .
+      line_sticky75|latin_cremma     1/6 --+--- t0.73 p0.75 calls TFTFT M1 +0.1010 m
+      line_sticky_fit|latin_cremma   1/6 --+--- t0.71 p0.75 calls TFTFT M1 +0.1039 m
+      line_lock|latin_cremma         0/6 ------ t0.45 p1.00 calls TFTFF M1 +0.2170 .
+      page_sticky_fit|latin_cremma   1/6 --+--- t0.72 p0.75 calls TFTFT M1 +0.1088 m
+      page_lock|latin_cremma         0/6 ------ t0.43 p1.00 calls TFFFF M1 +0.1983 .
+      default|italian_dante          1/6 -----+ t1.01 p0.00 calls TFFFT M1 -0.0127 .
+      line_sticky75|italian_dante    1/6 --+--- t0.67 p0.75 calls TFTFT M1 +0.0923 m
+      line_sticky_fit|italian_dante  0/6 ------ t0.71 p0.70 calls TFTFT M1 +0.0778 m
+      line_lock|italian_dante        0/6 ------ t0.39 p1.00 calls TFTFF M1 +0.2114 .
+      page_sticky_fit|italian_dante  0/6 ------ t0.72 p0.70 calls TFTFT M1 +0.0895 m
+      page_lock|italian_dante        0/6 ------ t0.38 p1.00 calls TFFFF M1 +0.2287 .
+
+=== s55 DISTANCE (C3): median d(variant split i, Voynich split j != i) vs Voynich split-to-split 95 % range ===
+  ZL3b: Voynich split-to-split d median 1.336 [95 %: 0.540, 3.440]
+    default|latin_cremma           d median 4.976 [3.619, 7.053] -> OUTSIDE
+    line_sticky75|latin_cremma     d median 5.378 [4.125, 7.509] -> OUTSIDE
+    line_sticky_fit|latin_cremma   d median 5.491 [4.215, 7.663] -> OUTSIDE
+    line_lock|latin_cremma         d median 5.945 [4.745, 8.091] -> OUTSIDE
+    page_sticky_fit|latin_cremma   d median 5.214 [4.003, 7.306] -> OUTSIDE
+    page_lock|latin_cremma         d median 5.928 [2.909, 9.495] -> OUTSIDE
+    default|italian_dante          d median 5.482 [4.181, 7.535] -> OUTSIDE
+    line_sticky75|italian_dante    d median 5.995 [4.695, 8.108] -> OUTSIDE
+    line_sticky_fit|italian_dante  d median 5.898 [4.679, 7.945] -> OUTSIDE
+    line_lock|italian_dante        d median 6.823 [5.537, 8.830] -> OUTSIDE
+    page_sticky_fit|italian_dante  d median 6.036 [4.810, 8.152] -> OUTSIDE
+    page_lock|italian_dante        d median 6.189 [4.433, 9.960] -> OUTSIDE
+  RF1b: Voynich split-to-split d median 1.306 [95 %: 0.495, 3.511]
+    default|latin_cremma           d median 4.963 [3.378, 7.061] -> OUTSIDE
+    line_sticky75|latin_cremma     d median 5.373 [3.973, 7.706] -> OUTSIDE
+    line_sticky_fit|latin_cremma   d median 5.395 [3.923, 7.689] -> OUTSIDE
+    line_lock|latin_cremma         d median 6.020 [4.613, 8.203] -> OUTSIDE
+    page_sticky_fit|latin_cremma   d median 5.183 [3.776, 7.415] -> OUTSIDE
+    page_lock|latin_cremma         d median 6.158 [3.348, 11.559] -> OUTSIDE
+    default|italian_dante          d median 5.341 [3.820, 7.435] -> OUTSIDE
+    line_sticky75|italian_dante    d median 6.118 [4.791, 8.334] -> OUTSIDE
+    line_sticky_fit|italian_dante  d median 6.074 [4.713, 8.210] -> OUTSIDE
+    line_lock|italian_dante        d median 7.072 [5.720, 9.035] -> OUTSIDE
+    page_sticky_fit|italian_dante  d median 5.883 [4.497, 8.044] -> OUTSIDE
+    page_lock|italian_dante        d median 7.457 [4.861, 10.955] -> OUTSIDE
+  IT2a: Voynich split-to-split d median 1.329 [95 %: 0.537, 3.140]
+    default|latin_cremma           d median 5.191 [3.813, 7.113] -> OUTSIDE
+    line_sticky75|latin_cremma     d median 5.489 [4.075, 7.616] -> OUTSIDE
+    line_sticky_fit|latin_cremma   d median 5.575 [4.273, 7.520] -> OUTSIDE
+    line_lock|latin_cremma         d median 6.113 [4.922, 8.061] -> OUTSIDE
+    page_sticky_fit|latin_cremma   d median 5.237 [3.943, 7.233] -> OUTSIDE
+    page_lock|latin_cremma         d median 6.533 [3.915, 9.793] -> OUTSIDE
+    default|italian_dante          d median 5.757 [4.409, 7.678] -> OUTSIDE
+    line_sticky75|italian_dante    d median 6.326 [5.146, 8.227] -> OUTSIDE
+    line_sticky_fit|italian_dante  d median 6.041 [4.714, 8.006] -> OUTSIDE
+    line_lock|italian_dante        d median 7.196 [5.710, 9.205] -> OUTSIDE
+    page_sticky_fit|italian_dante  d median 5.894 [4.622, 7.823] -> OUTSIDE
+    page_lock|italian_dante        d median 7.692 [4.338, 12.032] -> OUTSIDE
+
+=== CALLS ===
+  default|latin_cremma           C1 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C2 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C3 false (ZL3b 4.98<=3.44, RF1b 4.96<=3.51, IT2a 5.19<=3.14)
+  line_sticky75|latin_cremma     C1 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C2 TRUE  (ZL3b 15/15, RF1b 14/15, IT2a 15/15)  C3 false (ZL3b 5.38<=3.44, RF1b 5.37<=3.51, IT2a 5.49<=3.14)
+  line_sticky_fit|latin_cremma   C1 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C2 TRUE  (ZL3b 14/15, RF1b 14/15, IT2a 15/15)  C3 false (ZL3b 5.49<=3.44, RF1b 5.39<=3.51, IT2a 5.58<=3.14)
+  line_lock|latin_cremma         C1 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C2 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C3 false (ZL3b 5.94<=3.44, RF1b 6.02<=3.51, IT2a 6.11<=3.14)
+  page_sticky_fit|latin_cremma   C1 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C2 false (ZL3b 7/15, RF1b 9/15, IT2a 10/15)  C3 false (ZL3b 5.21<=3.44, RF1b 5.18<=3.51, IT2a 5.24<=3.14)
+  page_lock|latin_cremma         C1 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C2 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C3 false (ZL3b 5.93<=3.44, RF1b 6.16<=3.51, IT2a 6.53<=3.14)
+  default|italian_dante          C1 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C2 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C3 false (ZL3b 5.48<=3.44, RF1b 5.34<=3.51, IT2a 5.76<=3.14)
+  line_sticky75|italian_dante    C1 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C2 TRUE  (ZL3b 15/15, RF1b 15/15, IT2a 13/15)  C3 false (ZL3b 5.99<=3.44, RF1b 6.12<=3.51, IT2a 6.33<=3.14)
+  line_sticky_fit|italian_dante  C1 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C2 TRUE  (ZL3b 14/15, RF1b 15/15, IT2a 15/15)  C3 false (ZL3b 5.90<=3.44, RF1b 6.07<=3.51, IT2a 6.04<=3.14)
+  line_lock|italian_dante        C1 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C2 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C3 false (ZL3b 6.82<=3.44, RF1b 7.07<=3.51, IT2a 7.20<=3.14)
+  page_sticky_fit|italian_dante  C1 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C2 false (ZL3b 4/15, RF1b 8/15, IT2a 9/15)  C3 false (ZL3b 6.04<=3.44, RF1b 5.88<=3.51, IT2a 5.89<=3.14)
+  page_lock|italian_dante        C1 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C2 false (ZL3b 0/15, RF1b 0/15, IT2a 0/15)  C3 false (ZL3b 6.19<=3.44, RF1b 7.46<=3.51, IT2a 7.69<=3.14)
+
+VERDICT: 'matches the slot layer, misses the rest' (line_sticky75|latin_cremma: C3 FALSE (s55 distance outside Voynich range); predictions failing on a majority of folds in every transliteration: P1, P2, P3, P4, P5; line_sticky_fit|latin_cremma: C3 FALSE (s55 distance outside Voynich range); predictions failing on a majority of folds in every transliteration: P1, P2, P3, P4, P5; line_sticky75|italian_dante: C3 FALSE (s55 distance outside Voynich range); predictions failing on a majority of folds in every transliteration: P1, P2, P3, P4, P5; line_sticky_fit|italian_dante: C3 FALSE (s55 distance outside Voynich range); predictions failing on a majority of folds in every transliteration: P1, P2, P3, P4, P5)
+elapsed 3170s; date end 2026-10-18 04:26:53
+outputs: ./results_s81.txt, ./runs/s81

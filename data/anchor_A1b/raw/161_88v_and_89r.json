@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:04:18.6703439Z",
+ "response": "{\n  \"PT\": \"PHARMA\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"TUBER\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"1-4\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"SINGLE\",\n  \"J_shape\": \"CYLINDER\",\n  \"J_count\": \"5+\",\n  \"J_fragcount\": \"6-15\",\n  \"J_fragtype\": \"MIXED\",\n  \"C_centre\": \"EMPTY\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"0\",\n  \"C_rings\": \"4+\",\n  \"C_diagrams\": \"2-3\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"NA\",\n  \"B_figures\": \"NA\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Illustrations of plants and containers, no circular diagrams or baths.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2633514400,
+ "load_duration": 173974500,
+ "prompt_eval_count": 3260,
+ "prompt_eval_duration": 730558000,
+ "eval_count": 217,
+ "eval_duration": 1594931000,
+ "stem": "161_88v_and_89r"
+}

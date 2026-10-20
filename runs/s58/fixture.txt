@@ -1,0 +1,41 @@
+s58 fixture; stub_match: NO STUB
+fixture: synthetic text 120 pages, 12438 tokens, truth {'p_copy': 0.2, 'tau': 4.0, 'a': 0.15, 'q_core': 0.2}
+=== FIX: 120 pages; training 96 pages (9959 tokens), held-out 24 pages (2479 tokens); training SlotSegmenter 33 prefix / 47 suffix candidates ===
+    stage A (240 evals): best loss 58.03 at p_copy 0.27, tau 7.0, a 0.0
+    stage B (251 evals): best loss 58.03 at q_core 0.25
+    stage C (251 evals): best loss 58.03
+  wrapper tables (counted): 1865 (pos, pre-1, suf-1) contexts, 95 (pos, suf-1), 3 (pos); 1311 distinct (pre, suf) outcomes
+  fit (251 grid evaluations, 17s): p_copy 0.27, tau 7.0, a 0.0, q_core 0.25; loss 58.03 (R 43.47, shares 14.23, types 0.33)
+  [in-sample] target R(d) real : 1.526 1.419 1.297 1.172 1.297 1.214 1.155 1.137 1.094 1.001 1.093 1.037 0.951 0.973 0.926 0.966 1.010 1.058 0.911 1.003
+  [in-sample] fitted R(d) TL s0: 1.494 1.402 1.333 1.294 1.275 1.180 1.241 1.119 1.117 1.133 1.099 1.010 1.059 1.020 1.019 1.085 1.045 1.004 0.909 0.982
+  [in-sample] edit shares real : identical 0.0231, prefix_swap 0.4549, suffix_swap 0.3407, core_edit1 0.1813  (counts [21, 414, 310, 165])
+  [in-sample] edit shares TL s0: identical 0.0103, prefix_swap 0.4271, suffix_swap 0.4053, core_edit1 0.1573  (counts [9, 372, 353, 137])
+  [in-sample] types real 7536 at 9959 tokens; TL seed 0 7493 at 9945 tokens
+  [in-sample] line length real mean 7.410 sd 1.661; TL seed 0 mean 7.400 sd 1.640 (empirical sampling)
+  measured 7 texts in 7s
+  subsample draws 2s
+  real held-out: Moran 0.0886 [0.0658,0.1038]; core->core -0.0249 [-0.0509,-0.0060]; prefix gain -0.0328 [-0.0422,-0.0210]; jsd_first_fg 0.0163 (excess +0.0076); CHARWIN +0.1188
+  real F1 by stream: prefix +0.0211 [+0.0141,+0.0252], core -0.0027 [-0.0099,+0.0066], suffix +0.0363 [+0.0260,+0.0456] -> s39 rule on the real text (this split): affix layer
+    TL s1: Moran 0.0677 core->core -0.0170 prefix gain -0.0592 jsd_first_fg 0.0247 CHARWIN +0.0880 F1 prefix/core/suffix +0.0032/+0.0045/+0.0304
+    TL s2: Moran 0.0588 core->core +0.0446 prefix gain -0.0106 jsd_first_fg 0.0133 CHARWIN +0.1241 F1 prefix/core/suffix +0.0193/-0.0068/+0.0507
+    TL s3: Moran 0.0940 core->core -0.0184 prefix gain -0.0285 jsd_first_fg 0.0139 CHARWIN +0.0933 F1 prefix/core/suffix +0.0104/-0.0074/+0.0522
+    TL0 s1: Moran 0.0572 core->core -0.0140 prefix gain -0.0524 jsd_first_fg 0.0102 CHARWIN +0.0802 F1 prefix/core/suffix +0.0180/+0.0021/+0.0421
+    TL0 s2: Moran 0.0664 core->core -0.0102 prefix gain -0.0645 jsd_first_fg 0.0158 CHARWIN +0.0825 F1 prefix/core/suffix -0.0018/+0.0080/+0.0573
+    TL0 s3: Moran 0.0407 core->core +0.0142 prefix gain -0.0485 jsd_first_fg 0.0136 CHARWIN +0.1048 F1 prefix/core/suffix +0.0035/+0.0015/+0.0519
+  -- TL: 3/6 hold --
+    P1 HOLDS: Moran Δ -0.0152 [-0.0342,+0.0056] (gen 0.0735, real 0.0886); margin hi-0 = +0.0056
+    P2 fails: core->core excess Δ +0.0280 [+0.0106,+0.0572] (gen +0.0031, real -0.0249); margins 0-lo -0.0106, hi-0 +0.0572
+    P3 HOLDS: prefix gain gen -0.0328 vs real -0.0328 [-0.0422,-0.0210]; margins g-lo +0.0094, hi-g +0.0118
+    P4 fails: jsd_first_fg gen 0.0173 vs s15 width [0.1447,0.2156] (real held-out 0.0163); margins -0.1274 / +0.1983; excess gen +0.0098 real +0.0076
+    P5 HOLDS: CHARWIN gen +0.1018 (real +0.1188); margin +0.1018
+    P6 fails: F1 gen: prefix +0.0110 [+0.0059,+0.0156], core -0.0032 [-0.0087,+0.0009], suffix +0.0444 [+0.0385,+0.0493] -> affix layer; core lo margin -0.0087
+  -- TL0: 2/6 hold --
+    P1 fails: Moran Δ -0.0339 [-0.0518,-0.0134] (gen 0.0548, real 0.0886); margin hi-0 = -0.0134
+    P2 HOLDS: core->core excess Δ +0.0216 [-0.0017,+0.0591] (gen -0.0033, real -0.0249); margins 0-lo +0.0017, hi-0 +0.0591
+    P3 fails: prefix gain gen -0.0551 vs real -0.0328 [-0.0422,-0.0210]; margins g-lo -0.0130, hi-g +0.0341
+    P4 fails: jsd_first_fg gen 0.0132 vs s15 width [0.1447,0.2156] (real held-out 0.0163); margins -0.1315 / +0.2024; excess gen +0.0057 real +0.0076
+    P5 HOLDS: CHARWIN gen +0.0892 (real +0.1188); margin +0.0892
+    P6 fails: F1 gen: prefix +0.0066 [+0.0030,+0.0091], core +0.0039 [-0.0023,+0.0100], suffix +0.0504 [+0.0448,+0.0573] -> affix layer; core lo margin -0.0023
+  fixture check: fitted p_copy 0.27 vs truth 0.2 -> OK; refit TL holds P3 (ordered wrapper recovered) on its own held-out pages -> OK
+  fixture TL 3/6, TL0 2/6 (informative only)
+FIXTURE PASS (26s)

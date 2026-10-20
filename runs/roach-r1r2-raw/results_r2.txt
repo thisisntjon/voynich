@@ -1,0 +1,55 @@
+results_r2.txt -- R2 across-space coupling, Currier A vs B
+run at (clock): 2026-10-17T22:29:49-07:00
+script r2.py sha256: 2bfe9279b65091fb41b979bc30f2797bbe70e5b1cb9c3520ea700d3074e7f1c4
+prereg stub      : 2bfe9279b65091fb41b979bc30f2797bbe70e5b1cb9c3520ea700d3074e7f1c4
+stub match       : YES
+prep.py sha256   : 288930c36a3329e4d4ae759d9aa0bf9656453729f58a88c7a42b37b6a6fe6465
+corpora.json sha256: b492cab1d2c7ba81312f2b6ee49f9749e3b0c328596d9f227ba4ed4379c9758a
+
+Full-corpus results (adjacent within-line pairs; null = 30 within-line shuffles)
+corpus                             genre      lines   pairs   MI_obs  MI_null null_sd   EXCESS
+VOY_IT                                         4090   30373   0.1820   0.0138  0.0010  +0.1682
+VOY_IT_A                                       1550    9576   0.1260   0.0247  0.0019  +0.1013
+VOY_IT_ALLLOCI                                 4393   32704   0.1837   0.0178  0.0008  +0.1659
+VOY_IT_ALLLOCI_A                               1572    9600   0.1262   0.0240  0.0020  +0.1022
+VOY_IT_ALLLOCI_B                               2470   20557   0.2343   0.0166  0.0013  +0.2177
+VOY_IT_B                                       2450   20357   0.2348   0.0164  0.0012  +0.2184
+VOY_RF                                         4103   30529   0.1968   0.0203  0.0010  +0.1765
+VOY_RF_A                                       1551    9524   0.1471   0.0387  0.0017  +0.1084
+VOY_RF_ALLLOCI                                 4411   33140   0.2009   0.0285  0.0013  +0.1725
+VOY_RF_ALLLOCI_A                               1568    9543   0.1476   0.0399  0.0024  +0.1077
+VOY_RF_ALLLOCI_B                               2510   21119   0.2513   0.0233  0.0014  +0.2280
+VOY_RF_B                                       2462   20562   0.2533   0.0227  0.0013  +0.2307
+VOY_ZL                                         4104   30945   0.2007   0.0196  0.0010  +0.1811
+VOY_ZL_A                                       1551    9780   0.1557   0.0369  0.0023  +0.1188
+VOY_ZL_ALLLOCI                                 4424   33641   0.2055   0.0271  0.0008  +0.1784
+VOY_ZL_ALLLOCI_A                               1567    9799   0.1562   0.0365  0.0028  +0.1197
+VOY_ZL_ALLLOCI_B                               2512   21261   0.2513   0.0198  0.0014  +0.2315
+VOY_ZL_B                                       2463   20710   0.2533   0.0193  0.0011  +0.2340
+VOY_ZL_NOCOMMA                                 4102   28482   0.1678   0.0198  0.0010  +0.1480
+VOY_ZL_NOCOMMA_A                               1550    8971   0.1170   0.0362  0.0021  +0.0808
+VOY_ZL_NOCOMMA_B                               2462   19076   0.2146   0.0198  0.0013  +0.1948
+LAT15_BGO-511                      formulaic     52     114   0.9457   1.0304  0.0624  -0.0847
+LAT15_Latin8236                    verse        204    1196   0.4069   0.2376  0.0154  +0.1693
+LAT15_LaurentianusPluteus39.34     verse        116     636   0.6190   0.3921  0.0247  +0.2269
+LAT15_LaurentianusPluteus53.08     prose        216    2725   0.1992   0.1737  0.0086  +0.0255
+LAT15_LaurentianusPluteus53.09     prose        125    1141   0.2577   0.2178  0.0137  +0.0399
+LAT15_PalLat373                    prose        430    1753   0.3261   0.2657  0.0153  +0.0604
+LAT15_SBB_PK_Hdschr25              formulaic    226     705   0.4482   0.4106  0.0204  +0.0376
+LAT15_PROSE                        pool         771    5619   0.1416   0.1139  0.0044  +0.0277
+LAT15_ALL                          pool        1369    8270   0.1198   0.0825  0.0030  +0.0374
+DANTE                              verse-it   14233   82964   0.1038   0.0070  0.0004  +0.0968
+
+Secondary: matched size 773 lines (>=2 words), 200 draws
+corpus           median     p2.5    p97.5   n_elig
+VOY_ZL_A        +0.1178  +0.1057  +0.1303     1551
+VOY_ZL_B        +0.2328  +0.2169  +0.2500     2463
+
+Control range: min -0.0847 (LAT15_BGO-511) .. max +0.2269 (LAT15_LaurentianusPluteus39.34)
+ZL B excess +0.2340 > control max +0.2269 ? yes (margin +0.0071)
+ZL A excess +0.1188 inside [-0.0847, +0.2269] ? yes
+R2 CALL: PASS
+  robustness IT: B +0.2184 above max? NO ; A +0.1013 in range? yes
+  robustness RF: B +0.2307 above max? yes ; A +0.1084 in range? yes
+
+Descriptive vs lead values: ZL B +0.2340 (lead ~+0.23); ZL A +0.1188 (lead ~+0.10..+0.13); controls max +0.2269 (lead < +0.13)

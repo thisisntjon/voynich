@@ -1,0 +1,10 @@
+# s128 excluded multi-panel foldout pages (rule: any page id matching ^f[0-9]+[rv][0-9]+$ is excluded).
+# Herbal-illustration panels expected under that rule, from the published catalogue (data/external/page-facts/catalogues/facts.tsv folio ids; Zandbergen voynich.nu), not from any transliteration:
+f90r1
+f90r2
+f90v1
+f90v2
+f95r1
+f95r2
+f95v1
+f95v2

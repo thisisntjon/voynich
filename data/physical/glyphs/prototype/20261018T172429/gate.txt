@@ -1,0 +1,112 @@
+# glyph_prototype (D-069 part 2) PROTOTYPE, not pre-registered, files no claim. start 2026-10-18 17:24:29 Pacific Daylight Time
+preflight passed: free RAM >= 4.0 GB, GPU free >= cap + 0.5 GB; GPU total 15.9 GB
+eligible pages per hand: {'1': 31, '2': 30, '3': 25, '4': 0, '5': 4}
+selected: f42r(h1,h) f3v(h1,h) f30r(h1,t) f22r(h1,t) f54r(h1,t) f29v(h1,t) f54v(h1,t) f87v(h1,t) f24v(h1,t) f75r(h2,h) f81v(h2,t) f76v(h2,t) f40v(h2,t) f105v(h3,h) f105r(h3,t) f112r(h3,t) f103v(h3,t) f66r(h5,h) f48r(h5,t) f57r(h5,t)
+  f42r h1 heldout: box reg: n 15, median centre error 0.19 pitch, within 0.5 pitch 0.87, box h 1.18 pitch; pitch 86px xh 26px sw 5.0px; ink words 123, labelled 22, drawing-dropped 8  (9s)
+  f3v h1 heldout: box reg: n 8, median centre error 14.28 pitch, within 0.5 pitch 0.00, box h 1.36 pitch; pitch 77px xh 24px sw 3.0px; ink words 94, labelled 12, drawing-dropped 1  (8s)
+  f30r h1 train: box reg: n 27, median centre error 0.19 pitch, within 0.5 pitch 0.81, box h 0.88 pitch; pitch 91px xh 24px sw 3.0px; ink words 94, labelled 37, drawing-dropped 1  (16s)
+  f22r h1 train: box reg: n 14, median centre error 24.61 pitch, within 0.5 pitch 0.00, box h 1.09 pitch; pitch 74px xh 24px sw 4.0px; ink words 136, labelled 30, drawing-dropped 3  (8s)
+  f54r h1 train: box reg: n 7, median centre error 16.10 pitch, within 0.5 pitch 0.00, box h 1.02 pitch; pitch 76px xh 27px sw 5.0px; ink words 136, labelled 24, drawing-dropped 5  (10s)
+  f29v h1 train: box reg: n 9, median centre error 0.17 pitch, within 0.5 pitch 1.00, box h 1.11 pitch; pitch 78px xh 24px sw 4.0px; ink words 96, labelled 17, drawing-dropped 3  (14s)
+  f54v h1 train: box reg: n 21, median centre error 13.43 pitch, within 0.5 pitch 0.00, box h 1.04 pitch; pitch 85px xh 25px sw 5.0px; ink words 72, labelled 29, drawing-dropped 3  (17s)
+  f87v h1 train: box reg: n 15, median centre error 4.73 pitch, within 0.5 pitch 0.00, box h 0.73 pitch; pitch 106px xh 27px sw 3.0px; ink words 87, labelled 17, drawing-dropped 3  (14s)
+  f24v h1 train: box reg: n 12, median centre error 14.99 pitch, within 0.5 pitch 0.00, box h 0.98 pitch; pitch 76px xh 25px sw 4.0px; ink words 93, labelled 19, drawing-dropped 0  (10s)
+  f75r h2 heldout: box reg: n 16, median centre error 0.35 pitch, within 0.5 pitch 0.75, box h 1.18 pitch; pitch 61px xh 25px sw 4.0px; ink words 451, labelled 78, drawing-dropped 8  (10s)
+  f81v h2 train: box reg: n 17, median centre error 13.27 pitch, within 0.5 pitch 0.00, box h 1.24 pitch; pitch 61px xh 33px sw 6.0px; ink words 289, labelled 55, drawing-dropped 1  (11s)
+  f76v h2 train: box reg: n 50, median centre error 0.50 pitch, within 0.5 pitch 0.50, box h 1.11 pitch; pitch 63px xh 35px sw 5.0px; ink words 380, labelled 135, drawing-dropped 0  (9s)
+  f40v h2 train: box reg: n 20, median centre error 13.85 pitch, within 0.5 pitch 0.00, box h 0.93 pitch; pitch 65px xh 24px sw 5.0px; ink words 101, labelled 36, drawing-dropped 2  (9s)
+  f105v h3 heldout: box reg: n 28, median centre error 0.32 pitch, within 0.5 pitch 0.64, box h 1.21 pitch; pitch 72px xh 26px sw 6.0px; ink words 376, labelled 40, drawing-dropped 8  (12s)
+  f105r h3 train: box reg: n 58, median centre error 0.43 pitch, within 0.5 pitch 0.59, box h 1.08 pitch; pitch 68px xh 25px sw 6.0px; ink words 334, labelled 91, drawing-dropped 18  (16s)
+  f112r h3 train: box reg: n 25, median centre error 0.28 pitch, within 0.5 pitch 0.64, box h 1.06 pitch; pitch 66px xh 24px sw 6.0px; ink words 454, labelled 54, drawing-dropped 9  (17s)
+  f103v h3 train: box reg: n 36, median centre error 0.45 pitch, within 0.5 pitch 0.56, box h 1.28 pitch; pitch 62px xh 26px sw 6.0px; ink words 413, labelled 111, drawing-dropped 5  (5s)
+  f66r h5 heldout: box reg: n 17, median centre error 6.95 pitch, within 0.5 pitch 0.00, box h 1.17 pitch; pitch 70px xh 23px sw 4.0px; ink words 338, labelled 23, drawing-dropped 6  (10s)
+  f48r h5 train: box reg: n 30, median centre error 0.28 pitch, within 0.5 pitch 0.80, box h 1.18 pitch; pitch 55px xh 22px sw 4.0px; ink words 82, labelled 35, drawing-dropped 2  (10s)
+  f57r h5 train: box reg: n 8, median centre error 3.19 pitch, within 0.5 pitch 0.00, box h 1.03 pitch; pitch 67px xh 21px sw 5.0px; ink words 102, labelled 14, drawing-dropped 0  (10s)
+
+## G-count: per-word candidate count vs EVA counts (labelled words only)
+  train: n words 704
+    level A vs u1: exact 0.347  within1 0.703  mean(cand-eva) +0.25  spearman 0.627
+    level A vs u0: exact 0.328  within1 0.659  mean(cand-eva) -0.29  spearman 0.616
+    level A vs u2: exact 0.304  within1 0.646  mean(cand-eva) +0.72  spearman 0.541
+    level B vs u1: exact 0.388  within1 0.766  mean(cand-eva) -0.41  spearman 0.654
+    level B vs u0: exact 0.321  within1 0.658  mean(cand-eva) -0.95  spearman 0.637
+    level B vs u2: exact 0.348  within1 0.734  mean(cand-eva) +0.05  spearman 0.563
+    level C vs u1: exact 0.341  within1 0.719  mean(cand-eva) +0.64  spearman 0.692
+    level C vs u0: exact 0.382  within1 0.767  mean(cand-eva) +0.10  spearman 0.729
+    level C vs u2: exact 0.271  within1 0.611  mean(cand-eva) +1.11  spearman 0.651
+  heldout: n words 175
+    level A vs u1: exact 0.297  within1 0.629  mean(cand-eva) +0.44  spearman 0.521
+    level A vs u0: exact 0.274  within1 0.623  mean(cand-eva) -0.07  spearman 0.560
+    level A vs u2: exact 0.269  within1 0.629  mean(cand-eva) +0.77  spearman 0.515
+    level B vs u1: exact 0.337  within1 0.709  mean(cand-eva) -0.38  spearman 0.548
+    level B vs u0: exact 0.263  within1 0.691  mean(cand-eva) -0.89  spearman 0.562
+    level B vs u2: exact 0.354  within1 0.703  mean(cand-eva) -0.05  spearman 0.538
+    level C vs u1: exact 0.274  within1 0.686  mean(cand-eva) +0.91  spearman 0.748
+    level C vs u0: exact 0.349  within1 0.789  mean(cand-eva) +0.40  spearman 0.758
+    level C vs u2: exact 0.223  within1 0.634  mean(cand-eva) +1.23  spearman 0.730
+  level chosen on TRAIN (best exact vs U1): B (0.388)
+  (u1 = corpora.GLYPHS units = VKB n_glyphs; u0 = EVA characters; u2 = GLYPHS_PLUS: iin/in/ir/ee single)
+
+## G-units: count_level ~ sum_g beta_g n_g(word), all labelled words, bootstrap 95% CI
+  level A (n words 821): o:1.26[0.96,1.51]  e:0.36[0.14,0.54]  y:1.09[0.81,1.35]  d:1.01[0.80,1.25]  a:1.33[0.98,1.65]  i:0.87[0.61,1.17]  l:0.78[0.50,1.09]  k:1.28[0.94,1.75]  ch:1.66[1.32,2.03]  r:1.04[0.75,1.42]  n:1.28[0.72,2.01]  t:1.26[0.80,1.81]  q:0.02[-0.35,0.33]  sh:2.31[1.97,2.66]  s:1.42[0.91,1.88]  ckh:1.97[1.11,2.91]  cth:2.10[1.34,2.91]
+  level B (n words 821): o:1.05[0.89,1.25]  e:0.41[0.31,0.54]  y:1.13[0.94,1.33]  d:0.88[0.68,1.06]  a:1.16[0.91,1.42]  i:0.69[0.49,0.90]  l:0.80[0.61,1.04]  k:0.94[0.66,1.28]  ch:1.35[1.13,1.58]  r:0.92[0.68,1.13]  n:1.23[0.72,1.71]  t:0.82[0.52,1.13]  q:-0.03[-0.31,0.26]  sh:1.38[1.10,1.66]  s:1.10[0.84,1.42]  ckh:1.63[0.92,2.22]  cth:1.51[0.84,2.22]
+  level C (n words 821): o:1.16[0.97,1.36]  e:0.68[0.53,0.84]  y:1.08[0.89,1.25]  d:0.98[0.79,1.16]  a:1.24[0.92,1.56]  i:0.66[0.34,0.91]  l:0.81[0.62,1.02]  k:1.55[1.24,1.87]  ch:1.92[1.70,2.16]  r:1.18[0.92,1.44]  n:1.56[1.09,2.10]  t:1.69[1.37,2.00]  q:0.52[0.22,0.86]  sh:2.08[1.82,2.35]  s:1.13[0.75,1.53]  ckh:2.49[1.90,3.16]  cth:2.59[2.13,3.12]
+
+## Embedding (level B): 11296 train units, 5520 held-out units; SimCLR 40 epochs
+  trained+embedded in 74s
+
+## G-purity: held-out units with positional U1 labels (words whose count equals the U1 count)
+  n labelled held-out units 230; label types 18; majority-label share 0.122
+  simclr     K=24: purity 0.604  null 0.251 (max 0.287)  NMI 0.547
+  simclr     K=32: purity 0.613  null 0.283 (max 0.326)  NMI 0.551
+  simclr     K=48: purity 0.665  null 0.328 (max 0.365)  NMI 0.589
+  pca-pixels K=24: purity 0.604  null 0.255 (max 0.313)  NMI 0.533
+  pca-pixels K=32: purity 0.639  null 0.275 (max 0.304)  NMI 0.571
+  pca-pixels K=48: purity 0.670  null 0.318 (max 0.374)  NMI 0.588
+  simclr K=32 cluster composition (held-out labelled, top labels):
+    c01 n=   1: sh:1.00
+    c02 n=  14: l:0.86, r:0.07, ch:0.07
+    c03 n=   1: e:1.00
+    c04 n=  11: d:0.64, e:0.18, o:0.09, a:0.09
+    c05 n=   4: e:0.50, s:0.25, o:0.25
+    c06 n=  12: a:0.67, y:0.33
+    c07 n=  15: o:0.60, a:0.07, sh:0.07, q:0.07
+    c08 n=   1: y:1.00
+    c09 n=  10: ch:0.50, sh:0.20, e:0.10, a:0.10
+    c10 n=  14: i:0.57, a:0.07, d:0.07, o:0.07
+    c11 n=   5: y:0.40, g:0.20, d:0.20, t:0.20
+    c12 n=   4: l:0.50, d:0.50
+    c13 n=   2: o:0.50, a:0.50
+    c14 n=   4: sh:0.75, ch:0.25
+    c15 n=  10: t:0.40, k:0.30, y:0.10, p:0.10
+    c16 n=  12: o:0.83, e:0.17
+    c17 n=  22: y:0.82, q:0.09, l:0.05, n:0.05
+    c18 n=   3: sh:0.33, d:0.33, e:0.33
+    c19 n=   7: q:0.29, i:0.14, l:0.14, sh:0.14
+    c20 n=   7: r:0.86, n:0.14
+    c21 n=   4: cth:0.25, sh:0.25, y:0.25, t:0.25
+    c22 n=  11: a:0.82, y:0.09, k:0.09
+    c23 n=   2: o:0.50, d:0.50
+    c24 n=   6: i:0.50, e:0.17, d:0.17, l:0.17
+    c25 n=   7: n:0.43, r:0.29, l:0.14, d:0.14
+    c26 n=   9: e:0.22, ch:0.22, sh:0.11, l:0.11
+    c27 n=  12: d:0.75, e:0.25
+    c28 n=   2: o:0.50, ch:0.50
+    c29 n=   1: a:1.00
+    c30 n=   6: k:0.67, t:0.17, e:0.17
+    c31 n=  11: r:0.36, e:0.27, l:0.18, o:0.09
+  multi-stroke EVA units, held-out: share in their modal cluster / that cluster's purity for them
+    ch: n 11, modal cluster c09 holds 0.45; ch share of c09 0.50
+    sh: n 12, modal cluster c14 holds 0.25; sh share of c14 0.75
+    k: n 10, modal cluster c30 holds 0.40; k share of c30 0.67
+    t: n 7, modal cluster c15 holds 0.57; t share of c15 0.40
+
+## G-hand (descriptive, 20 pages, confounded with section/scan): LOPO nearest-centroid by shape
+  glyph types used: [np.str_('o'), np.str_('y'), np.str_('a'), np.str_('e'), np.str_('i'), np.str_('d'), np.str_('l'), np.str_('ch'), np.str_('r'), np.str_('n'), np.str_('k'), np.str_('t')]
+  LOPO accuracy 0.650; permutation null mean 0.281, p = 0.010
+
+## G-gap: inter-unit ink gaps (level B, in x-heights): inside words vs between adjacent words
+  train: in-word median 0.09, between median 1.25; threshold 0.73 xh
+  held-out: n in 4199, between 196; boundary recall 0.888, precision 0.617, kappa 0.713
+
+# end 2026-10-18 17:29:34 Pacific Daylight Time  elapsed 305s  out ./data/physical/glyphs/prototype/20261018T172429

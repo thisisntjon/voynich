@@ -1,0 +1,24 @@
+path	location	kind	owner	note
+<team-comms>	<team-comms>	location	<team-comms> comms (mixed: Daybreak, roach, skynet/codex)	809 Voynich/Daybreak/Argon-named files; contradicts repo in places
+lab	lab	location	early battery (Oct-17)	stale, superseded
+lab/codex_lab	lab/codex_lab	location	Daybreak	221 experiment files, 117 reviews, acquisition corpora, 4 status files
+<local-path>	<local-path>	location	roach	r1r2-raw, r3-r12, ten-theories; no r13 yet
+<local-path>	<local-path>	location	mirror	only incoming\ten-theories
+<home>/.claude/projects/<agent-project>/memory	memory dir	location	main session (guidance)	7 files: goal, roster, comms, CPU, triangulation, order-agnostic
+<local-path>	<local-path>	location	unrelated projects	no Voynich in <local-path>
+<team-comms>	<team-comms>	status-file	Daybreak	teammate status file; stated times unreliable
+<team-comms>	<team-comms>	status-file	Daybreak	teammate start file
+<team-comms>	<team-comms>	status-file	Daybreak	teammate start file
+<team-comms>	<team-comms>	status-file	Daybreak	says 'Canonical interpretation'; read-first list puts codex_lab before the repo
+<team-comms>	<team-comms>	status-file	Daybreak	overstates S101 (repo D-068: F-23/F-30 at-risk)
+<team-comms>	<team-comms>	status-file	Daybreak	evidence index
+<team-comms>	<team-comms>	status-file	Daybreak	109 KB; ~30 other VOYNICH-TOP10-* versions; says producer exclusions withdrawn
+<team-comms>	<team-comms>	status-file	Daybreak	top-10 plain English
+lab/codex_lab/AGENT-START.md	lab/codex_lab	status-file	Daybreak	codex_lab status file
+lab/codex_lab/CURRENT_STATE_2026-10-18.md	lab/codex_lab	status-file	Daybreak	stronger than repo on S101
+lab/codex_lab/EVIDENCE-INDEX.md	lab/codex_lab	status-file	Daybreak	codex_lab evidence index
+lab/codex_lab/BIG-PICTURE-EVIDENCE-SYNTHESIS-2026-10-18.md	lab/codex_lab	status-file	Daybreak	codex_lab synthesis
+lab/TEAM-HANDOFF.md	lab	status-file	early battery (Oct-17)	Oct-17 stale; says 'Read in this order (canonical)'
+lab/PLAN.md	lab	status-file	early battery (Oct-17)	Oct-17 stale
+lab/FINDINGS.md	lab	status-file	early battery (Oct-17)	Oct-17 stale
+lab/LEADS-AND-FINDINGS.md	lab	status-file	early battery (Oct-17)	Oct-17 stale

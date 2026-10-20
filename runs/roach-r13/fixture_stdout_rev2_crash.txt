@@ -1,0 +1,43 @@
+  FIX_PLANTED_A refit (producer A): folds matched 10 of 15 ; most-missed {'t8': 2, 't1': 1, 't7': 1, 't3': 1}
+  FIX_PLANTED_B refit (producer B): folds matched 0 of 15 ; most-missed {'t5': 15}
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Python311\Lib\multiprocessing\queues.py", line 244, in _feed
+    obj = _ForkingPickler.dumps(obj)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+_pickle.PicklingError: Can't pickle <class 'r10.Lex'>: import of module 'r10' failed
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<home>/voynich-replication/r13/r13.py", line 318, in <module>
+    main()
+  File "<home>/voynich-replication/r13/r13.py", line 274, in main
+    ao = match_test('FIX_PLANTED_A ORACLE', pa, 'A', 13203, out, {'q': 0.3, 'e': 0.5, 'fit': fit})[0]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/voynich-replication/r13/r13.py", line 235, in match_test
+    res = list(ex.map(fold_job, [(fi, q, lines, kind, seed, oracle) for fi, q in enumerate(folds)]))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\concurrent\futures\process.py", line 597, in _chain_from_iterable_of_lists
+    for element in iterable:
+  File "C:\Python311\Lib\concurrent\futures\_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\concurrent\futures\_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Python311\Lib\multiprocessing\queues.py", line 244, in _feed
+    obj = _ForkingPickler.dumps(obj)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+_pickle.PicklingError: Can't pickle <class 'r10.Lex'>: import of module 'r10' failed

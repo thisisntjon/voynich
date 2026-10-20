@@ -1,0 +1,55 @@
+S15: within-manuscript widths for every v2 metric (200 random 41-page splits of ZL3b, run_v2.score_one)
+run: Sat Oct 17 20:10:47 PDT 2026
+script: s15_band_widths.py sha256=d5f3cb522d53e5b25ebb309f4d258abad126a9beb8ee7b6a675be07c1f3be277
+seeds: 1000..1199 (n=200; random.Random(seed).sample(page_ids, 41), manuscript order kept); extra row g1 held-out Random(20261017)
+scorer: scoreboard/run_v2.py score_one (sha256[:16] 7dfdc9f75de5980a; score.py 3a7b7c3efea13b88; metrics_new.py a59c9c17f8abe4cc); edge-null nrep = score.py default (20); lexicon n_shuffles=5
+source: ZL3b EVA paragraphs via vparse (207 pages, 34857 tokens); full rows: data/translit/{ZL3b_eva,RF1b,IT2a}.meta.json, no token cap
+subset tokens: median 6898, range 4885..8787; elapsed per split: mean 4.5s, min 2.9s, max 7.0s, total 15.0 min
+score_one step errors over the 200 splits: none; metrics with NaN in some split: x_hapax_10k(200)
+
+=== within-manuscript widths (200 splits) and full-size rows ===
+metric                          median      2.5%     97.5%       min       max    n |     g1_41 |      ZL3b      RF1b      IT2a
+h2                              2.1030    2.0540    2.1523    2.0057    2.1745  200 |    2.0483 |    2.1262    2.1351    2.1283
+sd_len                          1.7830    1.7470    1.8282    1.7360    1.8460  200 |    1.7250 |    1.7640    1.7770    1.6910
+jsd_first_fg                    0.1777    0.1447    0.2156    0.1383    0.2509  200 |    0.1762 |    0.1759    0.1809    0.1748
+p_init_enrich                  18.1100   12.3005   26.3540    9.5800   30.6500  200 |   18.9500 |   17.8900   19.4000   17.5500
+m_final_enrich                 16.2250   10.1835   27.4108    8.0700   33.7000  200 |   26.2300 |   16.3100   16.4300   16.5100
+cross_excess_eva                0.1801    0.1477    0.2085    0.1412    0.2184  200 |    0.2026 |    0.1809    0.1729    0.1660
+redup_pct                       0.8455    0.6623    1.0598    0.6060    1.1700  200 |    0.8040 |    0.8960    0.8800    0.9320
+x_edge_mi_word                  0.1890    0.1568    0.2208    0.1505    0.2288  200 |    0.2112 |    0.1882    0.1792    0.1731
+types_25k                    2283.0000 1910.8500 2654.3500 1728.0000 2724.0000  200 | 2535.0000 | 5417.0000 5680.0000 5522.0000
+x_position_entropy              1.6569    1.6284    1.6912    1.6118    1.7026  200 |    1.6238 |    1.6607    1.6646    1.6502
+x_ltr_minus_rtl                 0.0077    0.0026    0.0137    0.0002    0.0173  200 |    0.0078 |    0.0049    0.0036    0.0040
+x_moran_I                       0.1403    0.1086    0.1700    0.0954    0.1834  200 |    0.1446 |    0.1407    0.1408    0.1410
+lex_beta                        0.7881    0.7553    0.8243    0.7445    0.8385  200 |    0.7989 |    0.7410    0.7533    0.7501
+lex_rate_late_early             0.5219    0.4053    0.6418    0.3805    0.7286  200 |    0.4761 |    0.4639    0.4728    0.4624
+lex_edit1_excess                0.2374    0.1533    0.4110    0.1303    0.4705  200 |    0.1160 |    0.0965    0.0882    0.0992
+slot_occupancy_pc               0.0771    0.0690    0.0874    0.0653    0.0928  200 |    0.0764 |    0.0660    0.0669    0.0697
+slot_table_likeness             0.7494    0.7223    0.7708    0.7115    0.7808  200 |    0.7301 |    0.6475    0.6504    0.6541
+slot_core_crowding              0.8479    0.8181    0.8719    0.8032    0.8795  200 |    0.8548 |    0.8719    0.8517    0.8651
+info_mi_adjacent                0.0981    0.0557    0.1311    0.0401    0.1481  200 |    0.1143 |    0.1737    0.1629    0.1510
+info_samecol_minus_othercol     0.0029   -0.0434    0.0478   -0.0542    0.0626  200 |   -0.0084 |    0.0092    0.0105    0.0172
+bake_char3_minus_unigram       -0.7468   -0.7895   -0.7125   -0.8018   -0.7087  200 |   -0.7138 |   -0.5256   -0.5457   -0.5262
+x_hapax_10k                        nan       nan       nan       nan       nan    0 |       nan |    0.6855    0.7042    0.6883
+info_mi_page                    0.0144   -0.0155    0.0481   -0.0225    0.0698  200 |    0.0129 |    0.0295    0.0210    0.0199
+info_bpe_adjacent               1.1324    1.0357    1.2014    1.0204    1.2129  200 |    1.1664 |    1.1760    1.1647    1.1619
+tokens                            6898      5277      8424      4885      8787  200 |      8586 |     34857     34618     34411
+(x_hapax_10k is NaN below 10k tokens; types_25k on a 41-page subset is just the type count; bake-off folds are leave-one-quire-out.)
+
+=== full-size rows (data/translit sidecars, whole) ===
+  ZL3b   pages=207 lines=4130 tokens=34857 types=7025 bake_winner=copy0.05+markov3 elapsed=19.28s errors=-
+  RF1b   pages=207 lines=4130 tokens=34618 types=7348 bake_winner=copy0.05+markov3 elapsed=22.75s errors=-
+  IT2a   pages=206 lines=4117 tokens=34411 types=7069 bake_winner=copy0.05+markov3 elapsed=19.91s errors=-
+
+=== reconciliation with results_s2_u123_controls.txt Part 3B (v1 estimator, same 200 splits) ===
+metric               s15 med    s2 med    d_med |   s15 lo    s2 lo     d_lo |   s15 hi    s2 hi     d_hi | tol    verdict
+h2                    2.1030    2.1030  -0.0000 |   2.0540   2.0540  -0.0000 |   2.1523   2.1523  +0.0000 | 0.01  PASS
+sd_len                1.7830    1.7833  -0.0003 |   1.7470   1.7473  -0.0003 |   1.8282   1.8278  +0.0004 | 0.01  PASS
+jsd_first_fg          0.1777    0.1776  +0.0000 |   0.1447   0.1447  +0.0000 |   0.2156   0.2156  +0.0000 | 0.01  PASS
+p_init_enrich        18.1100   18.1095  +0.0005 |  12.3005  12.3045  -0.0040 |  26.3540  26.3538  +0.0002 | 1.0   PASS
+m_final_enrich       16.2250   16.2249  +0.0001 |  10.1835  10.1844  -0.0009 |  27.4108  27.4137  -0.0029 | 1.0   PASS
+cross_excess_eva      0.1801    0.1801  +0.0000 |   0.1477   0.1477  -0.0000 |   0.2085   0.2085  +0.0000 | 0.01  PASS
+redup_pct             0.8455    0.9420  -0.0965 |   0.6623   0.7137  -0.0514 |   1.0598   1.1920  -0.1322 | 0.01  FAIL  (CI differs beyond tol)
+reconciliation: FAIL (6/7 medians within tolerance; tolerance 0.01 for h2, sd_len, jsd, cross, redup; 1.0x for the enrichments; CI differences reported, not gated)
+
+total wall time 16.2 min this invocation; per-split log: <home>/AppData/Local/Temp/claude/<agent-project>/<session>/scratchpad/s15_splits.jsonl

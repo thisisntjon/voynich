@@ -1,0 +1,22 @@
+ZL3b     tok=34857 h2=2.126 sd=1.76 JSDf=0.1759 p=x17.89 m=x16.31 excess=+0.1809 redup=0.896% hapax=0.6788
+RF1b-e   tok=31142 h2=2.137 sd=1.79 JSDf=0.1586 p=x18.48 m=x16.4 excess=+0.1518 redup=0.856% hapax=0.6895
+IT2a-n   tok=34411 h2=2.128 sd=1.69 JSDf=0.1748 p=x17.55 m=x16.51 excess=+0.1660 redup=0.932% hapax=0.6787
+GC2a-n   tok=36385 h2=2.540 sd=1.45 JSDf=0.2140 p=x0.0 m=x0.95 excess=+0.2253 redup=0.732% hapax=0.7055
+
+Ranges across transcriptions (min..max):
+  tokens             25000 .. 25000
+  types              5417 .. 6349
+  hapax_rate         0.6787 .. 0.7055
+  mean_len           3.856 .. 4.96
+  sd_len             1.454 .. 1.791
+  h1                 3.8626 .. 4.0222
+  h2                 2.1262 .. 2.5402
+  zipf               -1.0466 .. -1.0085
+  redup_pct          0.732 .. 0.932
+  jsd_first_fg       0.1586 .. 0.214
+  jsd_last_lg        0.0781 .. 0.0943
+  p_init_enrich      0.0 .. 18.48
+  m_final_enrich     0.95 .. 16.51
+  cross_mi_eva       0.1663 .. 0.2661
+  cross_excess_eva   0.1518 .. 0.2253
+  recur_le_100       0.2867 .. 0.3143

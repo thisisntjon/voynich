@@ -1,0 +1,5 @@
+r3 prereg log
+fixture runs: 2026-10-18 02:35:46 PDT (r3.py 2cb399ea..., R3c false positive on no-chain control) and 02:36:45 PDT (r3.py 06e88402..., secondary rescaled interval + permutation p added; control clean)
+FREEZE at (clock): 2026-10-18 02:37:16 PDT  06e88402c27707541cc0cc636953ea4fc27997b99ce20d5889ebf0a3d46908fe  r3.py
+real run start: 2026-10-18 02:37:16 PDT
+real run end: 2026-10-18 02:37:52 PDT exit=0

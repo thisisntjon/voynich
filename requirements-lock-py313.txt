@@ -1,0 +1,14 @@
+# Core environment, Python 3.12 or newer (the project's 3.13 venv). For Python 3.11 use requirements-lock.txt.
+cloudpickle==3.1.2
+et_xmlfile==2.0.0
+joblib==1.6.0
+narwhals==2.27.1
+numpy==2.5.4
+openpyxl==3.1.5
+pypdf==6.21.1
+PyYAML==6.0.2
+scikit-learn==1.9.1
+scipy==1.18.1
+threadpoolctl==3.7.0
+psutil==7.2.1
+defusedxml==0.7.1

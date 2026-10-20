@@ -1,0 +1,30 @@
+db-S127 mode=real
+script_sha256=2C179D4F8984139A1ED5E689503F38814684B306F6713FD7D61D5CA4A0C9919C
+source=./data/ZL3b-n.txt
+source_sha256=BF5B6D4AC1E3A51B1847A9C388318D609020441CCD56984C901C32B09BECCAFC
+candidate=f/p
+counts=421/1501
+mean_feature_jsd=0.020712460
+feature_jsd={"char_pos": 0.020169282438812067, "left": 0.029206262296932146, "right": 0.01278596513084359, "word_len": 0.003835708599375791, "word_pos": 0.03756508179107734}
+primary_rank_p=0.032258065
+stable_folds=16/16 at p<=0.1
+benchmark_k_t_jsd=0.018840464020992258
+CALL_CONTEXT_EQUIVALENT=True
+null_pairs=g/m m/q m/n m/t m/s m/r g/q g/n g/t g/s g/r l/m k/m i/m g/l d/m c/m g/k a/m g/i d/g c/g a/g m/y h/m e/m g/y g/h e/g m/o
+folds:
+  A jsd=0.022674667 rank_p=0.032258065
+  B jsd=0.020775338 rank_p=0.032258065
+  C jsd=0.023822872 rank_p=0.032258065
+  D jsd=0.021488068 rank_p=0.032258065
+  E jsd=0.019664558 rank_p=0.032258065
+  F jsd=0.021095424 rank_p=0.032258065
+  G jsd=0.020619137 rank_p=0.032258065
+  H jsd=0.020586309 rank_p=0.032258065
+  I jsd=0.021309224 rank_p=0.032258065
+  J jsd=0.020954734 rank_p=0.032258065
+  M jsd=0.020221546 rank_p=0.032258065
+  N jsd=0.018010318 rank_p=0.032258065
+  O jsd=0.020192838 rank_p=0.032258065
+  Q jsd=0.020467493 rank_p=0.032258065
+  S jsd=0.021523490 rank_p=0.032258065
+  T jsd=0.021650584 rank_p=0.032258065

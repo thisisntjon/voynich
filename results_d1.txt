@@ -1,0 +1,18 @@
+D1 EDGE COUPLING  common N=19000 tokens/corpus (VMS-full also shown), seed=7
+MI in bits. MM=Miller-Madow corrected. gain = bigram entropy reduction / unigram H.
+----------------------------------------------------------------------------------------------------
+VMS EVA chars              tok= 19000 types=  4356 | CROSS MI=0.1913 MM=0.1721 permNull=0.0118+/-0.0012 (npairs=16548, Hlast=2.409 Hfirst=3.094) | WITHIN MI=1.6601 MM=1.6551 (npairs=73131) | cross/within=0.104 | Hword=9.605 Hcond=3.929 gain_raw=59.09% gain_shufcorr=0.85%
+VMS glyphs (ch/sh=1)       tok= 19000 types=  4356 | CROSS MI=0.2056 MM=0.1761 permNull=0.0168+/-0.0012 (npairs=16548, Hlast=2.413 Hfirst=3.399) | WITHIN MI=1.4997 MM=1.4903 (npairs=62377) | cross/within=0.118 | Hword=9.605 Hcond=3.929 gain_raw=59.09% gain_shufcorr=0.85%
+Latin Caesar               tok= 19000 types=  5414 | CROSS MI=0.0484 MM=0.0355 permNull=0.0127+/-0.0009 (npairs=18999, Hlast=3.283 Hfirst=4.089) | WITHIN MI=0.7401 MM=0.7367 (npairs=95223) | cross/within=0.048 | Hword=10.648 Hcond=3.194 gain_raw=70.00% gain_shufcorr=2.46%
+Italian Dante              tok= 19000 types=  4390 | CROSS MI=0.1547 MM=0.1404 permNull=0.0126+/-0.0008 (npairs=18999, Hlast=2.926 Hfirst=4.035) | WITHIN MI=0.8266 MM=0.8209 (npairs=55864) | cross/within=0.171 | Hword=9.512 Hcond=3.877 gain_raw=59.24% gain_shufcorr=3.85%
+VMS EVA full (all lines)   tok= 34830 types=  7012 | CROSS MI=0.1950 MM=0.1846 permNull=0.0067+/-0.0005 (npairs=30727, Hlast=2.417 Hfirst=3.117) | WITHIN MI=1.6694 MM=1.6668 (npairs=138928) | cross/within=0.111 | Hword=9.990 Hcond=4.406 gain_raw=55.89% gain_shufcorr=0.72%
+----------------------------------------------------------------------------------------------------
+NULL VMS shuffled words    tok= 19000 types=  4356 | CROSS MI=0.0123 MM=0.0000 permNull=0.0119+/-0.0008 (npairs=16548, Hlast=2.467 Hfirst=3.162) | WITHIN MI=1.6601 MM=1.6551 (npairs=73131) | cross/within=0.000 | Hword=9.793 Hcond=4.014 gain_raw=59.01% gain_shufcorr=-0.09%
+NULL VMS iid unigram       tok= 19000 types=  3196 | CROSS MI=0.0126 MM=0.0000 permNull=0.0120+/-0.0010 (npairs=16548, Hlast=2.466 Hfirst=3.165) | WITHIN MI=1.6583 MM=1.6535 (npairs=73162) | cross/within=0.000 | Hword=9.655 Hcond=4.167 gain_raw=56.84% gain_shufcorr=-0.09%
+NULL VMS char-bigram pseudo tok= 19000 types=  6222 | CROSS MI=0.0110 MM=0.0000 permNull=0.0113+/-0.0008 (npairs=16548, Hlast=2.469 Hfirst=3.148) | WITHIN MI=1.6636 MM=1.6594 (npairs=73070) | cross/within=0.000 | Hword=9.694 Hcond=3.794 gain_raw=60.87% gain_shufcorr=0.31%
+----------------------------------------------------------------------------------------------------
+Top cross-space MI contributors VMS EVA: 'y'->'q' c=1806 obs/exp=1.78 (+0.0908b), 'r'->'a' c=313 obs/exp=3.15 (+0.0313b), 'n'->'c' c=733 obs/exp=1.40 (+0.0214b), 's'->'a' c=128 obs/exp=6.13 (+0.0202b), 'n'->'o' c=635 obs/exp=1.34 (+0.0160b), 'y'->'l' c=339 obs/exp=1.71 (+0.0158b), 'r'->'c' c=696 obs/exp=1.28 (+0.0150b), 'l'->'d' c=456 obs/exp=1.42 (+0.0139b)
+Top cross-space MI contributors VMS glyph: 'y'->'q' c=1806 obs/exp=1.78 (+0.0908b), 'r'->'a' c=313 obs/exp=3.15 (+0.0313b), 's'->'a' c=128 obs/exp=6.13 (+0.0202b), 'n'->'o' c=635 obs/exp=1.34 (+0.0160b), 'y'->'l' c=339 obs/exp=1.71 (+0.0158b), 'r'->'ch' c=592 obs/exp=1.31 (+0.0139b), 'l'->'d' c=456 obs/exp=1.42 (+0.0139b), 'n'->'sh' c=374 obs/exp=1.48 (+0.0127b)
+----------------------------------------------------------------------------------------------------
+Reading: compare CROSS MM vs its permNull and vs the three NULL rows (bias floor);
+compare gain_shufcorr across corpora (raw gain is inflated by sparse bigrams).

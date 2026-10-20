@@ -1,0 +1,3477 @@
+{
+  "scope": "independent statistic over stored upstream segmentations; no semantic reading",
+  "source_sha256": "7807BE5CBE674086ECB6CE5069EF73C4A30874718E227C8AA2D764EBD9E45547",
+  "input_db": ".//data//vkb//vkb.sqlite",
+  "input_db_sha256": "6615AAE975844410613729F2EFAB7A9C726354C8BD49C72D6EEBD104D1B3A1F9",
+  "seed": 70692,
+  "n_perm": 5000,
+  "primary_rule": "suffix pair_flip p<=.01 in >=5/6 and line_reverse p<=.05 in >=5/6",
+  "global_call": "ROBUST_DIRECTIONAL_ASYMMETRY",
+  "localization_rule": "short line_reverse sig >=5/6 and long <=1/6 => short localized; long >=5/6 => broad",
+  "localization_call": "SHORT_OPERATIONAL_STATE_LOCALIZED",
+  "summary": {
+    "pair_flip_all_sig_6": 6,
+    "line_reverse_all_sig_6": 6,
+    "line_reverse_short_sig_6": 6,
+    "line_reverse_long_sig_6": 0
+  },
+  "dependence_note": "ZL3b/RF1b/IT2a are robustness views of the same manuscript, not independent replications",
+  "cells": {
+    "ZL3b|slot|all|suffix": {
+      "n_echo": 1662,
+      "n_lines": 1259,
+      "n_unordered_pairs": 83,
+      "stat": 115.32339791990954,
+      "pair_flip_p": 0.0009998000399920016,
+      "line_reverse_p": 0.0001999600079984003,
+      "pair_flip_q99": 106.6819093425954,
+      "line_reverse_q99": 102.8237502584625,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 27,
+          "b_to_a": 8,
+          "net": 19
+        },
+        {
+          "a": "al",
+          "b": "y",
+          "a_to_b": 40,
+          "b_to_a": 24,
+          "net": 16
+        },
+        {
+          "a": "ar",
+          "b": "y",
+          "a_to_b": 39,
+          "b_to_a": 26,
+          "net": 13
+        },
+        {
+          "a": "ain",
+          "b": "y",
+          "a_to_b": 26,
+          "b_to_a": 17,
+          "net": 9
+        },
+        {
+          "a": "ol",
+          "b": "y",
+          "a_to_b": 17,
+          "b_to_a": 25,
+          "net": -8
+        },
+        {
+          "a": "EMPTY",
+          "b": "ody",
+          "a_to_b": 9,
+          "b_to_a": 1,
+          "net": 8
+        },
+        {
+          "a": "al",
+          "b": "ar",
+          "a_to_b": 10,
+          "b_to_a": 3,
+          "net": 7
+        },
+        {
+          "a": "EMPTY",
+          "b": "ain",
+          "a_to_b": 0,
+          "b_to_a": 6,
+          "net": -6
+        },
+        {
+          "a": "o",
+          "b": "ol",
+          "a_to_b": 6,
+          "b_to_a": 0,
+          "net": 6
+        },
+        {
+          "a": "chy",
+          "b": "y",
+          "a_to_b": 6,
+          "b_to_a": 1,
+          "net": 5
+        },
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 8,
+          "b_to_a": 4,
+          "net": 4
+        },
+        {
+          "a": "EMPTY",
+          "b": "ol",
+          "a_to_b": 7,
+          "b_to_a": 3,
+          "net": 4
+        }
+      ]
+    },
+    "ZL3b|slot|all|prefix": {
+      "n_echo": 1662,
+      "n_lines": 1259,
+      "n_unordered_pairs": 230,
+      "stat": 248.45087312109766,
+      "pair_flip_p": 0.10137972405518897,
+      "line_reverse_p": 0.04999000199960008,
+      "pair_flip_q99": 264.3397619477737,
+      "line_reverse_q99": 257.78362558744584,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "she",
+          "a_to_b": 30,
+          "b_to_a": 14,
+          "net": 16
+        },
+        {
+          "a": "qok",
+          "b": "she",
+          "a_to_b": 7,
+          "b_to_a": 22,
+          "net": -15
+        },
+        {
+          "a": "qok",
+          "b": "qot",
+          "a_to_b": 5,
+          "b_to_a": 16,
+          "net": -11
+        },
+        {
+          "a": "EMPTY",
+          "b": "che",
+          "a_to_b": 31,
+          "b_to_a": 22,
+          "net": 9
+        },
+        {
+          "a": "lk",
+          "b": "qok",
+          "a_to_b": 4,
+          "b_to_a": 13,
+          "net": -9
+        },
+        {
+          "a": "ok",
+          "b": "qok",
+          "a_to_b": 10,
+          "b_to_a": 17,
+          "net": -7
+        },
+        {
+          "a": "che",
+          "b": "she",
+          "a_to_b": 12,
+          "b_to_a": 18,
+          "net": -6
+        },
+        {
+          "a": "qok",
+          "b": "yk",
+          "a_to_b": 2,
+          "b_to_a": 8,
+          "net": -6
+        },
+        {
+          "a": "cth",
+          "b": "qok",
+          "a_to_b": 7,
+          "b_to_a": 1,
+          "net": 6
+        },
+        {
+          "a": "a",
+          "b": "ota",
+          "a_to_b": 12,
+          "b_to_a": 17,
+          "net": -5
+        },
+        {
+          "a": "EMPTY",
+          "b": "o",
+          "a_to_b": 14,
+          "b_to_a": 9,
+          "net": 5
+        },
+        {
+          "a": "k",
+          "b": "t",
+          "a_to_b": 9,
+          "b_to_a": 4,
+          "net": 5
+        }
+      ]
+    },
+    "ZL3b|slot|short_1_2|suffix": {
+      "n_echo": 1420,
+      "n_lines": 1087,
+      "n_unordered_pairs": 81,
+      "stat": 107.47512430181006,
+      "pair_flip_p": 0.004799040191961607,
+      "line_reverse_p": 0.0013997200559888023,
+      "pair_flip_q99": 104.60021860795031,
+      "line_reverse_q99": 100.1503806981119,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 26,
+          "b_to_a": 8,
+          "net": 18
+        },
+        {
+          "a": "al",
+          "b": "y",
+          "a_to_b": 40,
+          "b_to_a": 24,
+          "net": 16
+        },
+        {
+          "a": "ar",
+          "b": "y",
+          "a_to_b": 39,
+          "b_to_a": 26,
+          "net": 13
+        },
+        {
+          "a": "ain",
+          "b": "y",
+          "a_to_b": 25,
+          "b_to_a": 17,
+          "net": 8
+        },
+        {
+          "a": "ol",
+          "b": "y",
+          "a_to_b": 17,
+          "b_to_a": 24,
+          "net": -7
+        },
+        {
+          "a": "al",
+          "b": "ar",
+          "a_to_b": 10,
+          "b_to_a": 3,
+          "net": 7
+        },
+        {
+          "a": "EMPTY",
+          "b": "ody",
+          "a_to_b": 7,
+          "b_to_a": 1,
+          "net": 6
+        },
+        {
+          "a": "EMPTY",
+          "b": "ain",
+          "a_to_b": 0,
+          "b_to_a": 6,
+          "net": -6
+        },
+        {
+          "a": "o",
+          "b": "ol",
+          "a_to_b": 6,
+          "b_to_a": 0,
+          "net": 6
+        },
+        {
+          "a": "chy",
+          "b": "y",
+          "a_to_b": 6,
+          "b_to_a": 1,
+          "net": 5
+        },
+        {
+          "a": "o",
+          "b": "y",
+          "a_to_b": 3,
+          "b_to_a": 7,
+          "net": -4
+        },
+        {
+          "a": "ain",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 4,
+          "net": -4
+        }
+      ]
+    },
+    "ZL3b|slot|short_1_2|prefix": {
+      "n_echo": 1420,
+      "n_lines": 1087,
+      "n_unordered_pairs": 199,
+      "stat": 213.3027228392399,
+      "pair_flip_p": 0.13597280543891221,
+      "line_reverse_p": 0.06898620275944811,
+      "pair_flip_q99": 231.99708317594192,
+      "line_reverse_q99": 224.25715945645305,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "she",
+          "a_to_b": 29,
+          "b_to_a": 14,
+          "net": 15
+        },
+        {
+          "a": "qok",
+          "b": "she",
+          "a_to_b": 7,
+          "b_to_a": 22,
+          "net": -15
+        },
+        {
+          "a": "a",
+          "b": "ota",
+          "a_to_b": 6,
+          "b_to_a": 16,
+          "net": -10
+        },
+        {
+          "a": "lk",
+          "b": "qok",
+          "a_to_b": 2,
+          "b_to_a": 12,
+          "net": -10
+        },
+        {
+          "a": "EMPTY",
+          "b": "che",
+          "a_to_b": 30,
+          "b_to_a": 22,
+          "net": 8
+        },
+        {
+          "a": "ok",
+          "b": "qok",
+          "a_to_b": 3,
+          "b_to_a": 11,
+          "net": -8
+        },
+        {
+          "a": "che",
+          "b": "she",
+          "a_to_b": 12,
+          "b_to_a": 18,
+          "net": -6
+        },
+        {
+          "a": "k",
+          "b": "t",
+          "a_to_b": 9,
+          "b_to_a": 3,
+          "net": 6
+        },
+        {
+          "a": "cth",
+          "b": "qok",
+          "a_to_b": 7,
+          "b_to_a": 1,
+          "net": 6
+        },
+        {
+          "a": "oke",
+          "b": "qok",
+          "a_to_b": 4,
+          "b_to_a": 9,
+          "net": -5
+        },
+        {
+          "a": "EMPTY",
+          "b": "a",
+          "a_to_b": 8,
+          "b_to_a": 3,
+          "net": 5
+        },
+        {
+          "a": "qok",
+          "b": "qot",
+          "a_to_b": 2,
+          "b_to_a": 7,
+          "net": -5
+        }
+      ]
+    },
+    "ZL3b|slot|long_3plus|suffix": {
+      "n_echo": 242,
+      "n_lines": 225,
+      "n_unordered_pairs": 17,
+      "stat": 17.333333333333336,
+      "pair_flip_p": 0.4539092181563687,
+      "line_reverse_p": 0.46250749850029993,
+      "pair_flip_q99": 23.0,
+      "line_reverse_q99": 23.333333333333332,
+      "top": [
+        {
+          "a": "ody",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 3,
+          "net": -2
+        },
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "EMPTY",
+          "b": "ody",
+          "a_to_b": 2,
+          "b_to_a": 0,
+          "net": 2
+        },
+        {
+          "a": "o",
+          "b": "y",
+          "a_to_b": 2,
+          "b_to_a": 1,
+          "net": 1
+        },
+        {
+          "a": "EMPTY",
+          "b": "al",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "EMPTY",
+          "b": "ol",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "ain",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "al",
+          "b": "or",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "am",
+          "b": "eey",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "d",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "dal",
+          "b": "y",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        }
+      ]
+    },
+    "ZL3b|slot|long_3plus|prefix": {
+      "n_echo": 242,
+      "n_lines": 225,
+      "n_unordered_pairs": 77,
+      "stat": 87.11501831501833,
+      "pair_flip_p": 0.04919016196760648,
+      "line_reverse_p": 0.051789642071585686,
+      "pair_flip_q99": 91.46010989010989,
+      "line_reverse_q99": 91.82930402930403,
+      "top": [
+        {
+          "a": "qok",
+          "b": "qot",
+          "a_to_b": 3,
+          "b_to_a": 9,
+          "net": -6
+        },
+        {
+          "a": "a",
+          "b": "ota",
+          "a_to_b": 6,
+          "b_to_a": 1,
+          "net": 5
+        },
+        {
+          "a": "l",
+          "b": "ol",
+          "a_to_b": 1,
+          "b_to_a": 5,
+          "net": -4
+        },
+        {
+          "a": "qok",
+          "b": "t",
+          "a_to_b": 1,
+          "b_to_a": 5,
+          "net": -4
+        },
+        {
+          "a": "qok",
+          "b": "yk",
+          "a_to_b": 1,
+          "b_to_a": 5,
+          "net": -4
+        },
+        {
+          "a": "qok",
+          "b": "yt",
+          "a_to_b": 1,
+          "b_to_a": 4,
+          "net": -3
+        },
+        {
+          "a": "ch",
+          "b": "qok",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "l",
+          "b": "lk",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "ot",
+          "b": "qok",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "k",
+          "b": "qo",
+          "a_to_b": 2,
+          "b_to_a": 0,
+          "net": 2
+        },
+        {
+          "a": "l",
+          "b": "qok",
+          "a_to_b": 0,
+          "b_to_a": 2,
+          "net": -2
+        },
+        {
+          "a": "l",
+          "b": "qot",
+          "a_to_b": 0,
+          "b_to_a": 2,
+          "net": -2
+        }
+      ]
+    },
+    "ZL3b|a2|all|suffix": {
+      "n_echo": 1585,
+      "n_lines": 1207,
+      "n_unordered_pairs": 49,
+      "stat": 73.26484724642339,
+      "pair_flip_p": 0.004799040191961607,
+      "line_reverse_p": 0.0021995600879824036,
+      "pair_flip_q99": 70.50480584098656,
+      "line_reverse_q99": 67.23965861334898,
+      "top": [
+        {
+          "a": "in",
+          "b": "r",
+          "a_to_b": 40,
+          "b_to_a": 18,
+          "net": 22
+        },
+        {
+          "a": "dy",
+          "b": "ol",
+          "a_to_b": 7,
+          "b_to_a": 22,
+          "net": -15
+        },
+        {
+          "a": "l",
+          "b": "r",
+          "a_to_b": 101,
+          "b_to_a": 114,
+          "net": -13
+        },
+        {
+          "a": "in",
+          "b": "l",
+          "a_to_b": 21,
+          "b_to_a": 10,
+          "net": 11
+        },
+        {
+          "a": "ey",
+          "b": "y",
+          "a_to_b": 16,
+          "b_to_a": 26,
+          "net": -10
+        },
+        {
+          "a": "dy",
+          "b": "y",
+          "a_to_b": 22,
+          "b_to_a": 12,
+          "net": 10
+        },
+        {
+          "a": "al",
+          "b": "dy",
+          "a_to_b": 11,
+          "b_to_a": 3,
+          "net": 8
+        },
+        {
+          "a": "EMPTY",
+          "b": "l",
+          "a_to_b": 2,
+          "b_to_a": 9,
+          "net": -7
+        },
+        {
+          "a": "ol",
+          "b": "y",
+          "a_to_b": 15,
+          "b_to_a": 9,
+          "net": 6
+        },
+        {
+          "a": "or",
+          "b": "y",
+          "a_to_b": 15,
+          "b_to_a": 9,
+          "net": 6
+        },
+        {
+          "a": "EMPTY",
+          "b": "dy",
+          "a_to_b": 10,
+          "b_to_a": 4,
+          "net": 6
+        },
+        {
+          "a": "ar",
+          "b": "dy",
+          "a_to_b": 7,
+          "b_to_a": 1,
+          "net": 6
+        }
+      ]
+    },
+    "ZL3b|a2|all|prefix": {
+      "n_echo": 1585,
+      "n_lines": 1207,
+      "n_unordered_pairs": 86,
+      "stat": 167.0925587194818,
+      "pair_flip_p": 0.0001999600079984003,
+      "line_reverse_p": 0.0001999600079984003,
+      "pair_flip_q99": 113.56266000892983,
+      "line_reverse_q99": 108.00767287319802,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "ok",
+          "a_to_b": 7,
+          "b_to_a": 35,
+          "net": -28
+        },
+        {
+          "a": "EMPTY",
+          "b": "ot",
+          "a_to_b": 7,
+          "b_to_a": 31,
+          "net": -24
+        },
+        {
+          "a": "EMPTY",
+          "b": "d",
+          "a_to_b": 13,
+          "b_to_a": 30,
+          "net": -17
+        },
+        {
+          "a": "EMPTY",
+          "b": "s",
+          "a_to_b": 1,
+          "b_to_a": 17,
+          "net": -16
+        },
+        {
+          "a": "ok",
+          "b": "ot",
+          "a_to_b": 30,
+          "b_to_a": 17,
+          "net": 13
+        },
+        {
+          "a": "EMPTY",
+          "b": "t",
+          "a_to_b": 2,
+          "b_to_a": 15,
+          "net": -13
+        },
+        {
+          "a": "ch",
+          "b": "d",
+          "a_to_b": 17,
+          "b_to_a": 7,
+          "net": 10
+        },
+        {
+          "a": "ch",
+          "b": "t",
+          "a_to_b": 13,
+          "b_to_a": 4,
+          "net": 9
+        },
+        {
+          "a": "k",
+          "b": "sh",
+          "a_to_b": 1,
+          "b_to_a": 10,
+          "net": -9
+        },
+        {
+          "a": "EMPTY",
+          "b": "k",
+          "a_to_b": 16,
+          "b_to_a": 8,
+          "net": 8
+        },
+        {
+          "a": "l",
+          "b": "qo",
+          "a_to_b": 6,
+          "b_to_a": 14,
+          "net": -8
+        },
+        {
+          "a": "ch",
+          "b": "ot",
+          "a_to_b": 17,
+          "b_to_a": 24,
+          "net": -7
+        }
+      ]
+    },
+    "ZL3b|a2|short_1_2|suffix": {
+      "n_echo": 1476,
+      "n_lines": 1129,
+      "n_unordered_pairs": 46,
+      "stat": 71.75575001074316,
+      "pair_flip_p": 0.0033993201359728054,
+      "line_reverse_p": 0.0015996800639872025,
+      "pair_flip_q99": 66.6135443844867,
+      "line_reverse_q99": 63.73328006685166,
+      "top": [
+        {
+          "a": "in",
+          "b": "r",
+          "a_to_b": 39,
+          "b_to_a": 15,
+          "net": 24
+        },
+        {
+          "a": "l",
+          "b": "r",
+          "a_to_b": 101,
+          "b_to_a": 114,
+          "net": -13
+        },
+        {
+          "a": "dy",
+          "b": "ol",
+          "a_to_b": 6,
+          "b_to_a": 18,
+          "net": -12
+        },
+        {
+          "a": "ey",
+          "b": "y",
+          "a_to_b": 16,
+          "b_to_a": 26,
+          "net": -10
+        },
+        {
+          "a": "dy",
+          "b": "y",
+          "a_to_b": 22,
+          "b_to_a": 12,
+          "net": 10
+        },
+        {
+          "a": "in",
+          "b": "l",
+          "a_to_b": 20,
+          "b_to_a": 10,
+          "net": 10
+        },
+        {
+          "a": "al",
+          "b": "dy",
+          "a_to_b": 11,
+          "b_to_a": 3,
+          "net": 8
+        },
+        {
+          "a": "EMPTY",
+          "b": "dy",
+          "a_to_b": 10,
+          "b_to_a": 2,
+          "net": 8
+        },
+        {
+          "a": "EMPTY",
+          "b": "l",
+          "a_to_b": 2,
+          "b_to_a": 9,
+          "net": -7
+        },
+        {
+          "a": "ol",
+          "b": "y",
+          "a_to_b": 15,
+          "b_to_a": 9,
+          "net": 6
+        },
+        {
+          "a": "or",
+          "b": "y",
+          "a_to_b": 15,
+          "b_to_a": 9,
+          "net": 6
+        },
+        {
+          "a": "ey",
+          "b": "or",
+          "a_to_b": 7,
+          "b_to_a": 11,
+          "net": -4
+        }
+      ]
+    },
+    "ZL3b|a2|short_1_2|prefix": {
+      "n_echo": 1476,
+      "n_lines": 1129,
+      "n_unordered_pairs": 80,
+      "stat": 163.84459242946733,
+      "pair_flip_p": 0.0001999600079984003,
+      "line_reverse_p": 0.0001999600079984003,
+      "pair_flip_q99": 106.19983030585135,
+      "line_reverse_q99": 102.33085007260894,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "ok",
+          "a_to_b": 7,
+          "b_to_a": 35,
+          "net": -28
+        },
+        {
+          "a": "EMPTY",
+          "b": "ot",
+          "a_to_b": 7,
+          "b_to_a": 31,
+          "net": -24
+        },
+        {
+          "a": "EMPTY",
+          "b": "d",
+          "a_to_b": 13,
+          "b_to_a": 30,
+          "net": -17
+        },
+        {
+          "a": "EMPTY",
+          "b": "s",
+          "a_to_b": 1,
+          "b_to_a": 17,
+          "net": -16
+        },
+        {
+          "a": "ok",
+          "b": "ot",
+          "a_to_b": 30,
+          "b_to_a": 17,
+          "net": 13
+        },
+        {
+          "a": "EMPTY",
+          "b": "t",
+          "a_to_b": 2,
+          "b_to_a": 15,
+          "net": -13
+        },
+        {
+          "a": "ch",
+          "b": "d",
+          "a_to_b": 17,
+          "b_to_a": 7,
+          "net": 10
+        },
+        {
+          "a": "l",
+          "b": "qo",
+          "a_to_b": 2,
+          "b_to_a": 12,
+          "net": -10
+        },
+        {
+          "a": "ch",
+          "b": "t",
+          "a_to_b": 13,
+          "b_to_a": 4,
+          "net": 9
+        },
+        {
+          "a": "k",
+          "b": "sh",
+          "a_to_b": 1,
+          "b_to_a": 10,
+          "net": -9
+        },
+        {
+          "a": "EMPTY",
+          "b": "k",
+          "a_to_b": 16,
+          "b_to_a": 8,
+          "net": 8
+        },
+        {
+          "a": "ch",
+          "b": "ot",
+          "a_to_b": 17,
+          "b_to_a": 24,
+          "net": -7
+        }
+      ]
+    },
+    "ZL3b|a2|long_3plus|suffix": {
+      "n_echo": 109,
+      "n_lines": 102,
+      "n_unordered_pairs": 13,
+      "stat": 15.419047619047621,
+      "pair_flip_p": 0.20055988802239552,
+      "line_reverse_p": 0.2001599680063987,
+      "pair_flip_q99": 20.8,
+      "line_reverse_q99": 20.9047619047619,
+      "top": [
+        {
+          "a": "dy",
+          "b": "ey",
+          "a_to_b": 5,
+          "b_to_a": 2,
+          "net": 3
+        },
+        {
+          "a": "dy",
+          "b": "ol",
+          "a_to_b": 1,
+          "b_to_a": 4,
+          "net": -3
+        },
+        {
+          "a": "in",
+          "b": "r",
+          "a_to_b": 1,
+          "b_to_a": 3,
+          "net": -2
+        },
+        {
+          "a": "EMPTY",
+          "b": "dy",
+          "a_to_b": 0,
+          "b_to_a": 2,
+          "net": -2
+        },
+        {
+          "a": "ar",
+          "b": "dy",
+          "a_to_b": 2,
+          "b_to_a": 0,
+          "net": 2
+        },
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 1,
+          "b_to_a": 2,
+          "net": -1
+        },
+        {
+          "a": "EMPTY",
+          "b": "ol",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "al",
+          "b": "or",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "ey",
+          "b": "hy",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "ey",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "hy",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        }
+      ]
+    },
+    "ZL3b|a2|long_3plus|prefix": {
+      "n_echo": 109,
+      "n_lines": 102,
+      "n_unordered_pairs": 23,
+      "stat": 19.77777777777778,
+      "pair_flip_p": 0.8448310337932413,
+      "line_reverse_p": 0.8370325934813038,
+      "pair_flip_q99": 32.0,
+      "line_reverse_q99": 32.11444444444452,
+      "top": [
+        {
+          "a": "l",
+          "b": "qo",
+          "a_to_b": 4,
+          "b_to_a": 2,
+          "net": 2
+        },
+        {
+          "a": "qo",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 3,
+          "net": -2
+        },
+        {
+          "a": "EMPTY",
+          "b": "o",
+          "a_to_b": 0,
+          "b_to_a": 2,
+          "net": -2
+        },
+        {
+          "a": "o",
+          "b": "qo",
+          "a_to_b": 2,
+          "b_to_a": 0,
+          "net": 2
+        },
+        {
+          "a": "ol",
+          "b": "qo",
+          "a_to_b": 5,
+          "b_to_a": 4,
+          "net": 1
+        },
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "c",
+          "b": "o",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "ch",
+          "b": "ok",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "ch",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "ch",
+          "b": "sh",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "d",
+          "b": "k",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "k",
+          "b": "ok",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        }
+      ]
+    },
+    "RF1b|slot|all|suffix": {
+      "n_echo": 1570,
+      "n_lines": 1198,
+      "n_unordered_pairs": 81,
+      "stat": 112.69821087887453,
+      "pair_flip_p": 0.0015996800639872025,
+      "line_reverse_p": 0.0003999200159968006,
+      "pair_flip_q99": 105.36208359451382,
+      "line_reverse_q99": 100.3524419381788,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 26,
+          "b_to_a": 9,
+          "net": 17
+        },
+        {
+          "a": "ar",
+          "b": "y",
+          "a_to_b": 42,
+          "b_to_a": 27,
+          "net": 15
+        },
+        {
+          "a": "al",
+          "b": "y",
+          "a_to_b": 40,
+          "b_to_a": 26,
+          "net": 14
+        },
+        {
+          "a": "ain",
+          "b": "y",
+          "a_to_b": 27,
+          "b_to_a": 15,
+          "net": 12
+        },
+        {
+          "a": "EMPTY",
+          "b": "ol",
+          "a_to_b": 8,
+          "b_to_a": 0,
+          "net": 8
+        },
+        {
+          "a": "al",
+          "b": "ar",
+          "a_to_b": 10,
+          "b_to_a": 3,
+          "net": 7
+        },
+        {
+          "a": "o",
+          "b": "y",
+          "a_to_b": 3,
+          "b_to_a": 10,
+          "net": -7
+        },
+        {
+          "a": "ol",
+          "b": "y",
+          "a_to_b": 17,
+          "b_to_a": 22,
+          "net": -5
+        },
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 10,
+          "b_to_a": 5,
+          "net": 5
+        },
+        {
+          "a": "EMPTY",
+          "b": "ody",
+          "a_to_b": 6,
+          "b_to_a": 1,
+          "net": 5
+        },
+        {
+          "a": "EMPTY",
+          "b": "ain",
+          "a_to_b": 1,
+          "b_to_a": 5,
+          "net": -4
+        },
+        {
+          "a": "chy",
+          "b": "y",
+          "a_to_b": 5,
+          "b_to_a": 1,
+          "net": 4
+        }
+      ]
+    },
+    "RF1b|slot|all|prefix": {
+      "n_echo": 1570,
+      "n_lines": 1198,
+      "n_unordered_pairs": 226,
+      "stat": 235.34830896393555,
+      "pair_flip_p": 0.250749850029994,
+      "line_reverse_p": 0.1873625274945011,
+      "pair_flip_q99": 260.9788815420821,
+      "line_reverse_q99": 255.8612877222711,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "she",
+          "a_to_b": 27,
+          "b_to_a": 13,
+          "net": 14
+        },
+        {
+          "a": "qok",
+          "b": "she",
+          "a_to_b": 7,
+          "b_to_a": 21,
+          "net": -14
+        },
+        {
+          "a": "EMPTY",
+          "b": "o",
+          "a_to_b": 14,
+          "b_to_a": 4,
+          "net": 10
+        },
+        {
+          "a": "lk",
+          "b": "qok",
+          "a_to_b": 4,
+          "b_to_a": 13,
+          "net": -9
+        },
+        {
+          "a": "ok",
+          "b": "qok",
+          "a_to_b": 9,
+          "b_to_a": 17,
+          "net": -8
+        },
+        {
+          "a": "qok",
+          "b": "qot",
+          "a_to_b": 8,
+          "b_to_a": 16,
+          "net": -8
+        },
+        {
+          "a": "EMPTY",
+          "b": "che",
+          "a_to_b": 27,
+          "b_to_a": 21,
+          "net": 6
+        },
+        {
+          "a": "EMPTY",
+          "b": "a",
+          "a_to_b": 10,
+          "b_to_a": 4,
+          "net": 6
+        },
+        {
+          "a": "k",
+          "b": "t",
+          "a_to_b": 8,
+          "b_to_a": 2,
+          "net": 6
+        },
+        {
+          "a": "EMPTY",
+          "b": "sho",
+          "a_to_b": 7,
+          "b_to_a": 1,
+          "net": 6
+        },
+        {
+          "a": "cth",
+          "b": "qok",
+          "a_to_b": 7,
+          "b_to_a": 1,
+          "net": 6
+        },
+        {
+          "a": "EMPTY",
+          "b": "ch",
+          "a_to_b": 16,
+          "b_to_a": 11,
+          "net": 5
+        }
+      ]
+    },
+    "RF1b|slot|short_1_2|suffix": {
+      "n_echo": 1347,
+      "n_lines": 1042,
+      "n_unordered_pairs": 80,
+      "stat": 105.57780488894875,
+      "pair_flip_p": 0.004399120175964807,
+      "line_reverse_p": 0.001999600079984003,
+      "pair_flip_q99": 102.55297965852246,
+      "line_reverse_q99": 97.9559927959828,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 25,
+          "b_to_a": 9,
+          "net": 16
+        },
+        {
+          "a": "ar",
+          "b": "y",
+          "a_to_b": 42,
+          "b_to_a": 27,
+          "net": 15
+        },
+        {
+          "a": "al",
+          "b": "y",
+          "a_to_b": 40,
+          "b_to_a": 26,
+          "net": 14
+        },
+        {
+          "a": "ain",
+          "b": "y",
+          "a_to_b": 26,
+          "b_to_a": 15,
+          "net": 11
+        },
+        {
+          "a": "o",
+          "b": "y",
+          "a_to_b": 2,
+          "b_to_a": 9,
+          "net": -7
+        },
+        {
+          "a": "EMPTY",
+          "b": "ol",
+          "a_to_b": 7,
+          "b_to_a": 0,
+          "net": 7
+        },
+        {
+          "a": "al",
+          "b": "ar",
+          "a_to_b": 9,
+          "b_to_a": 3,
+          "net": 6
+        },
+        {
+          "a": "ol",
+          "b": "y",
+          "a_to_b": 17,
+          "b_to_a": 21,
+          "net": -4
+        },
+        {
+          "a": "EMPTY",
+          "b": "ain",
+          "a_to_b": 1,
+          "b_to_a": 5,
+          "net": -4
+        },
+        {
+          "a": "chy",
+          "b": "y",
+          "a_to_b": 5,
+          "b_to_a": 1,
+          "net": 4
+        },
+        {
+          "a": "EMPTY",
+          "b": "o",
+          "a_to_b": 4,
+          "b_to_a": 0,
+          "net": 4
+        },
+        {
+          "a": "ain",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 4,
+          "net": -4
+        }
+      ]
+    },
+    "RF1b|slot|short_1_2|prefix": {
+      "n_echo": 1347,
+      "n_lines": 1042,
+      "n_unordered_pairs": 200,
+      "stat": 213.28951972886895,
+      "pair_flip_p": 0.16736652669466107,
+      "line_reverse_p": 0.09258148370325935,
+      "pair_flip_q99": 233.12950430674414,
+      "line_reverse_q99": 228.25669404743036,
+      "top": [
+        {
+          "a": "qok",
+          "b": "she",
+          "a_to_b": 7,
+          "b_to_a": 21,
+          "net": -14
+        },
+        {
+          "a": "EMPTY",
+          "b": "she",
+          "a_to_b": 26,
+          "b_to_a": 13,
+          "net": 13
+        },
+        {
+          "a": "lk",
+          "b": "qok",
+          "a_to_b": 2,
+          "b_to_a": 12,
+          "net": -10
+        },
+        {
+          "a": "ok",
+          "b": "qok",
+          "a_to_b": 2,
+          "b_to_a": 12,
+          "net": -10
+        },
+        {
+          "a": "EMPTY",
+          "b": "o",
+          "a_to_b": 13,
+          "b_to_a": 4,
+          "net": 9
+        },
+        {
+          "a": "a",
+          "b": "ota",
+          "a_to_b": 6,
+          "b_to_a": 14,
+          "net": -8
+        },
+        {
+          "a": "k",
+          "b": "t",
+          "a_to_b": 8,
+          "b_to_a": 1,
+          "net": 7
+        },
+        {
+          "a": "EMPTY",
+          "b": "a",
+          "a_to_b": 10,
+          "b_to_a": 4,
+          "net": 6
+        },
+        {
+          "a": "cth",
+          "b": "qok",
+          "a_to_b": 7,
+          "b_to_a": 1,
+          "net": 6
+        },
+        {
+          "a": "EMPTY",
+          "b": "che",
+          "a_to_b": 26,
+          "b_to_a": 21,
+          "net": 5
+        },
+        {
+          "a": "a",
+          "b": "o",
+          "a_to_b": 15,
+          "b_to_a": 20,
+          "net": -5
+        },
+        {
+          "a": "EMPTY",
+          "b": "ch",
+          "a_to_b": 16,
+          "b_to_a": 11,
+          "net": 5
+        }
+      ]
+    },
+    "RF1b|slot|long_3plus|suffix": {
+      "n_echo": 223,
+      "n_lines": 210,
+      "n_unordered_pairs": 14,
+      "stat": 13.333333333333334,
+      "pair_flip_p": 0.6578684263147371,
+      "line_reverse_p": 0.6822635472905418,
+      "pair_flip_q99": 19.0,
+      "line_reverse_q99": 19.0,
+      "top": [
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "EMPTY",
+          "b": "ody",
+          "a_to_b": 2,
+          "b_to_a": 0,
+          "net": 2
+        },
+        {
+          "a": "ody",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 2,
+          "net": -1
+        },
+        {
+          "a": "EMPTY",
+          "b": "ol",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "ain",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "al",
+          "b": "ar",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "d",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "dal",
+          "b": "y",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "eey",
+          "b": "y",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "hy",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "ol",
+          "b": "y",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        }
+      ]
+    },
+    "RF1b|slot|long_3plus|prefix": {
+      "n_echo": 223,
+      "n_lines": 210,
+      "n_unordered_pairs": 72,
+      "stat": 78.26666666666667,
+      "pair_flip_p": 0.14497100579884023,
+      "line_reverse_p": 0.14477104579084182,
+      "pair_flip_q99": 87.07695238095239,
+      "line_reverse_q99": 86.88590476190477,
+      "top": [
+        {
+          "a": "a",
+          "b": "ota",
+          "a_to_b": 7,
+          "b_to_a": 0,
+          "net": 7
+        },
+        {
+          "a": "qok",
+          "b": "qot",
+          "a_to_b": 3,
+          "b_to_a": 9,
+          "net": -6
+        },
+        {
+          "a": "qok",
+          "b": "t",
+          "a_to_b": 1,
+          "b_to_a": 5,
+          "net": -4
+        },
+        {
+          "a": "qok",
+          "b": "yk",
+          "a_to_b": 1,
+          "b_to_a": 4,
+          "net": -3
+        },
+        {
+          "a": "qok",
+          "b": "yt",
+          "a_to_b": 1,
+          "b_to_a": 4,
+          "net": -3
+        },
+        {
+          "a": "ok",
+          "b": "qok",
+          "a_to_b": 7,
+          "b_to_a": 5,
+          "net": 2
+        },
+        {
+          "a": "ch",
+          "b": "qok",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "l",
+          "b": "lk",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "ot",
+          "b": "qok",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "l",
+          "b": "qot",
+          "a_to_b": 0,
+          "b_to_a": 2,
+          "net": -2
+        },
+        {
+          "a": "ok",
+          "b": "she",
+          "a_to_b": 0,
+          "b_to_a": 2,
+          "net": -2
+        },
+        {
+          "a": "ok",
+          "b": "t",
+          "a_to_b": 0,
+          "b_to_a": 2,
+          "net": -2
+        }
+      ]
+    },
+    "RF1b|a2|all|suffix": {
+      "n_echo": 1567,
+      "n_lines": 1185,
+      "n_unordered_pairs": 48,
+      "stat": 71.85769019366981,
+      "pair_flip_p": 0.003999200159968006,
+      "line_reverse_p": 0.0011997600479904018,
+      "pair_flip_q99": 68.11662235727592,
+      "line_reverse_q99": 64.31916816539906,
+      "top": [
+        {
+          "a": "l",
+          "b": "r",
+          "a_to_b": 107,
+          "b_to_a": 135,
+          "net": -28
+        },
+        {
+          "a": "in",
+          "b": "r",
+          "a_to_b": 39,
+          "b_to_a": 18,
+          "net": 21
+        },
+        {
+          "a": "dy",
+          "b": "ol",
+          "a_to_b": 7,
+          "b_to_a": 22,
+          "net": -15
+        },
+        {
+          "a": "dy",
+          "b": "y",
+          "a_to_b": 22,
+          "b_to_a": 12,
+          "net": 10
+        },
+        {
+          "a": "in",
+          "b": "l",
+          "a_to_b": 20,
+          "b_to_a": 10,
+          "net": 10
+        },
+        {
+          "a": "ey",
+          "b": "y",
+          "a_to_b": 14,
+          "b_to_a": 23,
+          "net": -9
+        },
+        {
+          "a": "al",
+          "b": "dy",
+          "a_to_b": 10,
+          "b_to_a": 2,
+          "net": 8
+        },
+        {
+          "a": "ar",
+          "b": "dy",
+          "a_to_b": 8,
+          "b_to_a": 1,
+          "net": 7
+        },
+        {
+          "a": "ey",
+          "b": "ol",
+          "a_to_b": 7,
+          "b_to_a": 13,
+          "net": -6
+        },
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 5,
+          "b_to_a": 11,
+          "net": -6
+        },
+        {
+          "a": "or",
+          "b": "y",
+          "a_to_b": 13,
+          "b_to_a": 9,
+          "net": 4
+        },
+        {
+          "a": "dy",
+          "b": "r",
+          "a_to_b": 1,
+          "b_to_a": 5,
+          "net": -4
+        }
+      ]
+    },
+    "RF1b|a2|all|prefix": {
+      "n_echo": 1567,
+      "n_lines": 1185,
+      "n_unordered_pairs": 88,
+      "stat": 168.29412800790024,
+      "pair_flip_p": 0.0001999600079984003,
+      "line_reverse_p": 0.0001999600079984003,
+      "pair_flip_q99": 114.76476539543967,
+      "line_reverse_q99": 111.0107695807686,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "ok",
+          "a_to_b": 6,
+          "b_to_a": 40,
+          "net": -34
+        },
+        {
+          "a": "EMPTY",
+          "b": "d",
+          "a_to_b": 13,
+          "b_to_a": 33,
+          "net": -20
+        },
+        {
+          "a": "ok",
+          "b": "ot",
+          "a_to_b": 30,
+          "b_to_a": 15,
+          "net": 15
+        },
+        {
+          "a": "EMPTY",
+          "b": "ot",
+          "a_to_b": 8,
+          "b_to_a": 23,
+          "net": -15
+        },
+        {
+          "a": "EMPTY",
+          "b": "s",
+          "a_to_b": 1,
+          "b_to_a": 16,
+          "net": -15
+        },
+        {
+          "a": "EMPTY",
+          "b": "t",
+          "a_to_b": 0,
+          "b_to_a": 14,
+          "net": -14
+        },
+        {
+          "a": "ch",
+          "b": "t",
+          "a_to_b": 12,
+          "b_to_a": 5,
+          "net": 7
+        },
+        {
+          "a": "sh",
+          "b": "t",
+          "a_to_b": 12,
+          "b_to_a": 5,
+          "net": 7
+        },
+        {
+          "a": "d",
+          "b": "ot",
+          "a_to_b": 3,
+          "b_to_a": 10,
+          "net": -7
+        },
+        {
+          "a": "k",
+          "b": "sh",
+          "a_to_b": 3,
+          "b_to_a": 10,
+          "net": -7
+        },
+        {
+          "a": "EMPTY",
+          "b": "q",
+          "a_to_b": 0,
+          "b_to_a": 7,
+          "net": -7
+        },
+        {
+          "a": "ch",
+          "b": "k",
+          "a_to_b": 18,
+          "b_to_a": 12,
+          "net": 6
+        }
+      ]
+    },
+    "RF1b|a2|short_1_2|suffix": {
+      "n_echo": 1460,
+      "n_lines": 1108,
+      "n_unordered_pairs": 45,
+      "stat": 67.88735013176895,
+      "pair_flip_p": 0.005598880223955209,
+      "line_reverse_p": 0.0021995600879824036,
+      "pair_flip_q99": 65.08904216128109,
+      "line_reverse_q99": 62.784461937704215,
+      "top": [
+        {
+          "a": "l",
+          "b": "r",
+          "a_to_b": 107,
+          "b_to_a": 135,
+          "net": -28
+        },
+        {
+          "a": "in",
+          "b": "r",
+          "a_to_b": 38,
+          "b_to_a": 16,
+          "net": 22
+        },
+        {
+          "a": "dy",
+          "b": "ol",
+          "a_to_b": 5,
+          "b_to_a": 17,
+          "net": -12
+        },
+        {
+          "a": "dy",
+          "b": "y",
+          "a_to_b": 22,
+          "b_to_a": 12,
+          "net": 10
+        },
+        {
+          "a": "in",
+          "b": "l",
+          "a_to_b": 20,
+          "b_to_a": 10,
+          "net": 10
+        },
+        {
+          "a": "ey",
+          "b": "y",
+          "a_to_b": 14,
+          "b_to_a": 23,
+          "net": -9
+        },
+        {
+          "a": "al",
+          "b": "dy",
+          "a_to_b": 10,
+          "b_to_a": 2,
+          "net": 8
+        },
+        {
+          "a": "ey",
+          "b": "ol",
+          "a_to_b": 7,
+          "b_to_a": 12,
+          "net": -5
+        },
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 4,
+          "b_to_a": 9,
+          "net": -5
+        },
+        {
+          "a": "ar",
+          "b": "dy",
+          "a_to_b": 6,
+          "b_to_a": 1,
+          "net": 5
+        },
+        {
+          "a": "or",
+          "b": "y",
+          "a_to_b": 13,
+          "b_to_a": 9,
+          "net": 4
+        },
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 2,
+          "b_to_a": 6,
+          "net": -4
+        }
+      ]
+    },
+    "RF1b|a2|short_1_2|prefix": {
+      "n_echo": 1460,
+      "n_lines": 1108,
+      "n_unordered_pairs": 84,
+      "stat": 168.7656087389718,
+      "pair_flip_p": 0.0001999600079984003,
+      "line_reverse_p": 0.0001999600079984003,
+      "pair_flip_q99": 109.69328465483876,
+      "line_reverse_q99": 106.9476582135242,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "ok",
+          "a_to_b": 6,
+          "b_to_a": 40,
+          "net": -34
+        },
+        {
+          "a": "EMPTY",
+          "b": "d",
+          "a_to_b": 13,
+          "b_to_a": 33,
+          "net": -20
+        },
+        {
+          "a": "ok",
+          "b": "ot",
+          "a_to_b": 30,
+          "b_to_a": 15,
+          "net": 15
+        },
+        {
+          "a": "EMPTY",
+          "b": "ot",
+          "a_to_b": 8,
+          "b_to_a": 23,
+          "net": -15
+        },
+        {
+          "a": "EMPTY",
+          "b": "s",
+          "a_to_b": 1,
+          "b_to_a": 16,
+          "net": -15
+        },
+        {
+          "a": "EMPTY",
+          "b": "t",
+          "a_to_b": 0,
+          "b_to_a": 14,
+          "net": -14
+        },
+        {
+          "a": "sh",
+          "b": "t",
+          "a_to_b": 12,
+          "b_to_a": 4,
+          "net": 8
+        },
+        {
+          "a": "l",
+          "b": "qo",
+          "a_to_b": 2,
+          "b_to_a": 10,
+          "net": -8
+        },
+        {
+          "a": "ch",
+          "b": "t",
+          "a_to_b": 12,
+          "b_to_a": 5,
+          "net": 7
+        },
+        {
+          "a": "d",
+          "b": "ot",
+          "a_to_b": 3,
+          "b_to_a": 10,
+          "net": -7
+        },
+        {
+          "a": "k",
+          "b": "sh",
+          "a_to_b": 3,
+          "b_to_a": 10,
+          "net": -7
+        },
+        {
+          "a": "EMPTY",
+          "b": "q",
+          "a_to_b": 0,
+          "b_to_a": 7,
+          "net": -7
+        }
+      ]
+    },
+    "RF1b|a2|long_3plus|suffix": {
+      "n_echo": 107,
+      "n_lines": 101,
+      "n_unordered_pairs": 12,
+      "stat": 11.452380952380953,
+      "pair_flip_p": 0.5604879024195161,
+      "line_reverse_p": 0.5476904619076185,
+      "pair_flip_q99": 19.333333333333332,
+      "line_reverse_q99": 19.619285714285716,
+      "top": [
+        {
+          "a": "dy",
+          "b": "ol",
+          "a_to_b": 2,
+          "b_to_a": 5,
+          "net": -3
+        },
+        {
+          "a": "dy",
+          "b": "ey",
+          "a_to_b": 5,
+          "b_to_a": 3,
+          "net": 2
+        },
+        {
+          "a": "ar",
+          "b": "dy",
+          "a_to_b": 2,
+          "b_to_a": 0,
+          "net": 2
+        },
+        {
+          "a": "in",
+          "b": "r",
+          "a_to_b": 1,
+          "b_to_a": 2,
+          "net": -1
+        },
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 1,
+          "b_to_a": 2,
+          "net": -1
+        },
+        {
+          "a": "EMPTY",
+          "b": "dy",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "EMPTY",
+          "b": "ol",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "al",
+          "b": "ar",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "ey",
+          "b": "hy",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "ey",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "hy",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        }
+      ]
+    },
+    "RF1b|a2|long_3plus|prefix": {
+      "n_echo": 107,
+      "n_lines": 101,
+      "n_unordered_pairs": 24,
+      "stat": 20.311111111111106,
+      "pair_flip_p": 0.8532293541291741,
+      "line_reverse_p": 0.8498300339932013,
+      "pair_flip_q99": 33.46733333333335,
+      "line_reverse_q99": 33.24444444444445,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "o",
+          "a_to_b": 0,
+          "b_to_a": 3,
+          "net": -3
+        },
+        {
+          "a": "l",
+          "b": "qo",
+          "a_to_b": 4,
+          "b_to_a": 2,
+          "net": 2
+        },
+        {
+          "a": "o",
+          "b": "qo",
+          "a_to_b": 2,
+          "b_to_a": 0,
+          "net": 2
+        },
+        {
+          "a": "ol",
+          "b": "qo",
+          "a_to_b": 5,
+          "b_to_a": 4,
+          "net": 1
+        },
+        {
+          "a": "qo",
+          "b": "y",
+          "a_to_b": 2,
+          "b_to_a": 3,
+          "net": -1
+        },
+        {
+          "a": "o",
+          "b": "y",
+          "a_to_b": 2,
+          "b_to_a": 1,
+          "net": 1
+        },
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "a",
+          "b": "o",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "a",
+          "b": "qo",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "c",
+          "b": "o",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "ch",
+          "b": "ok",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "ch",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        }
+      ]
+    },
+    "IT2a|slot|all|suffix": {
+      "n_echo": 1646,
+      "n_lines": 1253,
+      "n_unordered_pairs": 86,
+      "stat": 123.41489221363683,
+      "pair_flip_p": 0.0007998400319936012,
+      "line_reverse_p": 0.0003999200159968006,
+      "pair_flip_q99": 109.39824708182778,
+      "line_reverse_q99": 105.02708557268494,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 27,
+          "b_to_a": 5,
+          "net": 22
+        },
+        {
+          "a": "ar",
+          "b": "y",
+          "a_to_b": 46,
+          "b_to_a": 26,
+          "net": 20
+        },
+        {
+          "a": "al",
+          "b": "y",
+          "a_to_b": 43,
+          "b_to_a": 25,
+          "net": 18
+        },
+        {
+          "a": "ol",
+          "b": "y",
+          "a_to_b": 19,
+          "b_to_a": 26,
+          "net": -7
+        },
+        {
+          "a": "ain",
+          "b": "y",
+          "a_to_b": 24,
+          "b_to_a": 17,
+          "net": 7
+        },
+        {
+          "a": "air",
+          "b": "y",
+          "a_to_b": 10,
+          "b_to_a": 3,
+          "net": 7
+        },
+        {
+          "a": "EMPTY",
+          "b": "ol",
+          "a_to_b": 9,
+          "b_to_a": 2,
+          "net": 7
+        },
+        {
+          "a": "EMPTY",
+          "b": "ody",
+          "a_to_b": 8,
+          "b_to_a": 1,
+          "net": 7
+        },
+        {
+          "a": "al",
+          "b": "ar",
+          "a_to_b": 9,
+          "b_to_a": 3,
+          "net": 6
+        },
+        {
+          "a": "EMPTY",
+          "b": "ain",
+          "a_to_b": 0,
+          "b_to_a": 5,
+          "net": -5
+        },
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 9,
+          "b_to_a": 5,
+          "net": 4
+        },
+        {
+          "a": "ar",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 4,
+          "net": -4
+        }
+      ]
+    },
+    "IT2a|slot|all|prefix": {
+      "n_echo": 1646,
+      "n_lines": 1253,
+      "n_unordered_pairs": 232,
+      "stat": 245.04769153523932,
+      "pair_flip_p": 0.1807638472305539,
+      "line_reverse_p": 0.09778044391121776,
+      "pair_flip_q99": 267.3846367621361,
+      "line_reverse_q99": 261.02285557247416,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "she",
+          "a_to_b": 30,
+          "b_to_a": 13,
+          "net": 17
+        },
+        {
+          "a": "qok",
+          "b": "she",
+          "a_to_b": 6,
+          "b_to_a": 18,
+          "net": -12
+        },
+        {
+          "a": "qok",
+          "b": "qot",
+          "a_to_b": 6,
+          "b_to_a": 15,
+          "net": -9
+        },
+        {
+          "a": "lk",
+          "b": "qok",
+          "a_to_b": 4,
+          "b_to_a": 13,
+          "net": -9
+        },
+        {
+          "a": "ok",
+          "b": "qok",
+          "a_to_b": 10,
+          "b_to_a": 18,
+          "net": -8
+        },
+        {
+          "a": "EMPTY",
+          "b": "ch",
+          "a_to_b": 19,
+          "b_to_a": 12,
+          "net": 7
+        },
+        {
+          "a": "EMPTY",
+          "b": "o",
+          "a_to_b": 12,
+          "b_to_a": 5,
+          "net": 7
+        },
+        {
+          "a": "a",
+          "b": "o",
+          "a_to_b": 14,
+          "b_to_a": 20,
+          "net": -6
+        },
+        {
+          "a": "oke",
+          "b": "qok",
+          "a_to_b": 4,
+          "b_to_a": 10,
+          "net": -6
+        },
+        {
+          "a": "k",
+          "b": "qok",
+          "a_to_b": 9,
+          "b_to_a": 3,
+          "net": 6
+        },
+        {
+          "a": "qok",
+          "b": "yk",
+          "a_to_b": 1,
+          "b_to_a": 7,
+          "net": -6
+        },
+        {
+          "a": "EMPTY",
+          "b": "cho",
+          "a_to_b": 14,
+          "b_to_a": 9,
+          "net": 5
+        }
+      ]
+    },
+    "IT2a|slot|short_1_2|suffix": {
+      "n_echo": 1396,
+      "n_lines": 1073,
+      "n_unordered_pairs": 85,
+      "stat": 120.52474861739567,
+      "pair_flip_p": 0.0005998800239952009,
+      "line_reverse_p": 0.0003999200159968006,
+      "pair_flip_q99": 108.31198897344487,
+      "line_reverse_q99": 103.83492560380796,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 27,
+          "b_to_a": 5,
+          "net": 22
+        },
+        {
+          "a": "ar",
+          "b": "y",
+          "a_to_b": 46,
+          "b_to_a": 26,
+          "net": 20
+        },
+        {
+          "a": "al",
+          "b": "y",
+          "a_to_b": 43,
+          "b_to_a": 25,
+          "net": 18
+        },
+        {
+          "a": "air",
+          "b": "y",
+          "a_to_b": 10,
+          "b_to_a": 3,
+          "net": 7
+        },
+        {
+          "a": "EMPTY",
+          "b": "ody",
+          "a_to_b": 8,
+          "b_to_a": 1,
+          "net": 7
+        },
+        {
+          "a": "ol",
+          "b": "y",
+          "a_to_b": 19,
+          "b_to_a": 25,
+          "net": -6
+        },
+        {
+          "a": "ain",
+          "b": "y",
+          "a_to_b": 23,
+          "b_to_a": 17,
+          "net": 6
+        },
+        {
+          "a": "EMPTY",
+          "b": "ol",
+          "a_to_b": 8,
+          "b_to_a": 2,
+          "net": 6
+        },
+        {
+          "a": "al",
+          "b": "ar",
+          "a_to_b": 8,
+          "b_to_a": 3,
+          "net": 5
+        },
+        {
+          "a": "EMPTY",
+          "b": "ain",
+          "a_to_b": 0,
+          "b_to_a": 5,
+          "net": -5
+        },
+        {
+          "a": "chy",
+          "b": "y",
+          "a_to_b": 6,
+          "b_to_a": 2,
+          "net": 4
+        },
+        {
+          "a": "ar",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 4,
+          "net": -4
+        }
+      ]
+    },
+    "IT2a|slot|short_1_2|prefix": {
+      "n_echo": 1396,
+      "n_lines": 1073,
+      "n_unordered_pairs": 200,
+      "stat": 218.3149021637794,
+      "pair_flip_p": 0.10097980403919216,
+      "line_reverse_p": 0.03519296140771846,
+      "pair_flip_q99": 234.66362863460722,
+      "line_reverse_q99": 225.72507956685428,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "she",
+          "a_to_b": 29,
+          "b_to_a": 13,
+          "net": 16
+        },
+        {
+          "a": "qok",
+          "b": "she",
+          "a_to_b": 6,
+          "b_to_a": 18,
+          "net": -12
+        },
+        {
+          "a": "a",
+          "b": "ota",
+          "a_to_b": 4,
+          "b_to_a": 15,
+          "net": -11
+        },
+        {
+          "a": "lk",
+          "b": "qok",
+          "a_to_b": 2,
+          "b_to_a": 12,
+          "net": -10
+        },
+        {
+          "a": "ok",
+          "b": "qok",
+          "a_to_b": 3,
+          "b_to_a": 12,
+          "net": -9
+        },
+        {
+          "a": "EMPTY",
+          "b": "ch",
+          "a_to_b": 19,
+          "b_to_a": 12,
+          "net": 7
+        },
+        {
+          "a": "EMPTY",
+          "b": "o",
+          "a_to_b": 11,
+          "b_to_a": 4,
+          "net": 7
+        },
+        {
+          "a": "a",
+          "b": "o",
+          "a_to_b": 14,
+          "b_to_a": 20,
+          "net": -6
+        },
+        {
+          "a": "oke",
+          "b": "qok",
+          "a_to_b": 4,
+          "b_to_a": 10,
+          "net": -6
+        },
+        {
+          "a": "k",
+          "b": "t",
+          "a_to_b": 8,
+          "b_to_a": 2,
+          "net": 6
+        },
+        {
+          "a": "k",
+          "b": "qok",
+          "a_to_b": 7,
+          "b_to_a": 2,
+          "net": 5
+        },
+        {
+          "a": "EMPTY",
+          "b": "al",
+          "a_to_b": 6,
+          "b_to_a": 1,
+          "net": 5
+        }
+      ]
+    },
+    "IT2a|slot|long_3plus|suffix": {
+      "n_echo": 250,
+      "n_lines": 232,
+      "n_unordered_pairs": 18,
+      "stat": 16.0,
+      "pair_flip_p": 0.875624875024995,
+      "line_reverse_p": 0.864627074585083,
+      "pair_flip_q99": 24.0,
+      "line_reverse_q99": 24.0,
+      "top": [
+        {
+          "a": "ody",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 3,
+          "net": -2
+        },
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "EMPTY",
+          "b": "al",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "EMPTY",
+          "b": "o",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "EMPTY",
+          "b": "ol",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "ain",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "al",
+          "b": "ar",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "am",
+          "b": "eey",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "chy",
+          "b": "y",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "d",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "dal",
+          "b": "y",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "eey",
+          "b": "y",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        }
+      ]
+    },
+    "IT2a|slot|long_3plus|prefix": {
+      "n_echo": 250,
+      "n_lines": 232,
+      "n_unordered_pairs": 78,
+      "stat": 86.02930402930404,
+      "pair_flip_p": 0.10037992401519696,
+      "line_reverse_p": 0.09038192361527694,
+      "pair_flip_q99": 94.51663003663003,
+      "line_reverse_q99": 92.2216483516484,
+      "top": [
+        {
+          "a": "a",
+          "b": "ota",
+          "a_to_b": 7,
+          "b_to_a": 0,
+          "net": 7
+        },
+        {
+          "a": "qok",
+          "b": "qot",
+          "a_to_b": 3,
+          "b_to_a": 9,
+          "net": -6
+        },
+        {
+          "a": "qok",
+          "b": "t",
+          "a_to_b": 1,
+          "b_to_a": 5,
+          "net": -4
+        },
+        {
+          "a": "qok",
+          "b": "yt",
+          "a_to_b": 1,
+          "b_to_a": 5,
+          "net": -4
+        },
+        {
+          "a": "l",
+          "b": "ol",
+          "a_to_b": 2,
+          "b_to_a": 5,
+          "net": -3
+        },
+        {
+          "a": "EMPTY",
+          "b": "qo",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "ch",
+          "b": "qok",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "l",
+          "b": "lk",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "ot",
+          "b": "qok",
+          "a_to_b": 3,
+          "b_to_a": 1,
+          "net": 2
+        },
+        {
+          "a": "qok",
+          "b": "yk",
+          "a_to_b": 1,
+          "b_to_a": 3,
+          "net": -2
+        },
+        {
+          "a": "l",
+          "b": "qok",
+          "a_to_b": 0,
+          "b_to_a": 2,
+          "net": -2
+        },
+        {
+          "a": "l",
+          "b": "qot",
+          "a_to_b": 0,
+          "b_to_a": 2,
+          "net": -2
+        }
+      ]
+    },
+    "IT2a|a2|all|suffix": {
+      "n_echo": 1557,
+      "n_lines": 1178,
+      "n_unordered_pairs": 44,
+      "stat": 71.0852450726376,
+      "pair_flip_p": 0.0007998400319936012,
+      "line_reverse_p": 0.0001999600079984003,
+      "pair_flip_q99": 63.28237817926046,
+      "line_reverse_q99": 61.09049672132873,
+      "top": [
+        {
+          "a": "l",
+          "b": "r",
+          "a_to_b": 91,
+          "b_to_a": 127,
+          "net": -36
+        },
+        {
+          "a": "in",
+          "b": "r",
+          "a_to_b": 41,
+          "b_to_a": 17,
+          "net": 24
+        },
+        {
+          "a": "dy",
+          "b": "ol",
+          "a_to_b": 8,
+          "b_to_a": 23,
+          "net": -15
+        },
+        {
+          "a": "in",
+          "b": "l",
+          "a_to_b": 22,
+          "b_to_a": 11,
+          "net": 11
+        },
+        {
+          "a": "ey",
+          "b": "y",
+          "a_to_b": 15,
+          "b_to_a": 25,
+          "net": -10
+        },
+        {
+          "a": "dy",
+          "b": "y",
+          "a_to_b": 22,
+          "b_to_a": 12,
+          "net": 10
+        },
+        {
+          "a": "al",
+          "b": "dy",
+          "a_to_b": 10,
+          "b_to_a": 2,
+          "net": 8
+        },
+        {
+          "a": "ol",
+          "b": "y",
+          "a_to_b": 15,
+          "b_to_a": 9,
+          "net": 6
+        },
+        {
+          "a": "or",
+          "b": "y",
+          "a_to_b": 15,
+          "b_to_a": 10,
+          "net": 5
+        },
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 6,
+          "b_to_a": 11,
+          "net": -5
+        },
+        {
+          "a": "ey",
+          "b": "ol",
+          "a_to_b": 10,
+          "b_to_a": 14,
+          "net": -4
+        },
+        {
+          "a": "EMPTY",
+          "b": "dy",
+          "a_to_b": 6,
+          "b_to_a": 2,
+          "net": 4
+        }
+      ]
+    },
+    "IT2a|a2|all|prefix": {
+      "n_echo": 1557,
+      "n_lines": 1178,
+      "n_unordered_pairs": 88,
+      "stat": 175.73195823866837,
+      "pair_flip_p": 0.0001999600079984003,
+      "line_reverse_p": 0.0001999600079984003,
+      "pair_flip_q99": 114.31719154886031,
+      "line_reverse_q99": 110.38047222367986,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "ok",
+          "a_to_b": 8,
+          "b_to_a": 28,
+          "net": -20
+        },
+        {
+          "a": "EMPTY",
+          "b": "d",
+          "a_to_b": 12,
+          "b_to_a": 31,
+          "net": -19
+        },
+        {
+          "a": "EMPTY",
+          "b": "s",
+          "a_to_b": 1,
+          "b_to_a": 19,
+          "net": -18
+        },
+        {
+          "a": "EMPTY",
+          "b": "ot",
+          "a_to_b": 7,
+          "b_to_a": 23,
+          "net": -16
+        },
+        {
+          "a": "EMPTY",
+          "b": "t",
+          "a_to_b": 0,
+          "b_to_a": 14,
+          "net": -14
+        },
+        {
+          "a": "ch",
+          "b": "k",
+          "a_to_b": 18,
+          "b_to_a": 8,
+          "net": 10
+        },
+        {
+          "a": "d",
+          "b": "ot",
+          "a_to_b": 3,
+          "b_to_a": 13,
+          "net": -10
+        },
+        {
+          "a": "ok",
+          "b": "ot",
+          "a_to_b": 29,
+          "b_to_a": 20,
+          "net": 9
+        },
+        {
+          "a": "ch",
+          "b": "ot",
+          "a_to_b": 14,
+          "b_to_a": 22,
+          "net": -8
+        },
+        {
+          "a": "ch",
+          "b": "ok",
+          "a_to_b": 28,
+          "b_to_a": 35,
+          "net": -7
+        },
+        {
+          "a": "l",
+          "b": "qo",
+          "a_to_b": 6,
+          "b_to_a": 13,
+          "net": -7
+        },
+        {
+          "a": "k",
+          "b": "sh",
+          "a_to_b": 4,
+          "b_to_a": 11,
+          "net": -7
+        }
+      ]
+    },
+    "IT2a|a2|short_1_2|suffix": {
+      "n_echo": 1449,
+      "n_lines": 1097,
+      "n_unordered_pairs": 42,
+      "stat": 67.7629854108834,
+      "pair_flip_p": 0.0015996800639872025,
+      "line_reverse_p": 0.0009998000399920016,
+      "pair_flip_q99": 61.74938707692742,
+      "line_reverse_q99": 58.390239540483904,
+      "top": [
+        {
+          "a": "l",
+          "b": "r",
+          "a_to_b": 91,
+          "b_to_a": 127,
+          "net": -36
+        },
+        {
+          "a": "in",
+          "b": "r",
+          "a_to_b": 39,
+          "b_to_a": 15,
+          "net": 24
+        },
+        {
+          "a": "dy",
+          "b": "ol",
+          "a_to_b": 7,
+          "b_to_a": 18,
+          "net": -11
+        },
+        {
+          "a": "ey",
+          "b": "y",
+          "a_to_b": 15,
+          "b_to_a": 25,
+          "net": -10
+        },
+        {
+          "a": "dy",
+          "b": "y",
+          "a_to_b": 22,
+          "b_to_a": 12,
+          "net": 10
+        },
+        {
+          "a": "in",
+          "b": "l",
+          "a_to_b": 21,
+          "b_to_a": 11,
+          "net": 10
+        },
+        {
+          "a": "al",
+          "b": "dy",
+          "a_to_b": 10,
+          "b_to_a": 2,
+          "net": 8
+        },
+        {
+          "a": "ol",
+          "b": "y",
+          "a_to_b": 15,
+          "b_to_a": 9,
+          "net": 6
+        },
+        {
+          "a": "or",
+          "b": "y",
+          "a_to_b": 15,
+          "b_to_a": 10,
+          "net": 5
+        },
+        {
+          "a": "EMPTY",
+          "b": "dy",
+          "a_to_b": 6,
+          "b_to_a": 1,
+          "net": 5
+        },
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 5,
+          "b_to_a": 9,
+          "net": -4
+        },
+        {
+          "a": "al",
+          "b": "ar",
+          "a_to_b": 3,
+          "b_to_a": 7,
+          "net": -4
+        }
+      ]
+    },
+    "IT2a|a2|short_1_2|prefix": {
+      "n_echo": 1449,
+      "n_lines": 1097,
+      "n_unordered_pairs": 84,
+      "stat": 173.9017846865084,
+      "pair_flip_p": 0.0001999600079984003,
+      "line_reverse_p": 0.0001999600079984003,
+      "pair_flip_q99": 109.85124894964889,
+      "line_reverse_q99": 107.0037828367333,
+      "top": [
+        {
+          "a": "EMPTY",
+          "b": "ok",
+          "a_to_b": 8,
+          "b_to_a": 28,
+          "net": -20
+        },
+        {
+          "a": "EMPTY",
+          "b": "d",
+          "a_to_b": 12,
+          "b_to_a": 31,
+          "net": -19
+        },
+        {
+          "a": "EMPTY",
+          "b": "s",
+          "a_to_b": 1,
+          "b_to_a": 19,
+          "net": -18
+        },
+        {
+          "a": "EMPTY",
+          "b": "ot",
+          "a_to_b": 7,
+          "b_to_a": 23,
+          "net": -16
+        },
+        {
+          "a": "EMPTY",
+          "b": "t",
+          "a_to_b": 0,
+          "b_to_a": 14,
+          "net": -14
+        },
+        {
+          "a": "ch",
+          "b": "k",
+          "a_to_b": 18,
+          "b_to_a": 8,
+          "net": 10
+        },
+        {
+          "a": "d",
+          "b": "ot",
+          "a_to_b": 3,
+          "b_to_a": 13,
+          "net": -10
+        },
+        {
+          "a": "l",
+          "b": "qo",
+          "a_to_b": 2,
+          "b_to_a": 12,
+          "net": -10
+        },
+        {
+          "a": "ok",
+          "b": "ot",
+          "a_to_b": 29,
+          "b_to_a": 20,
+          "net": 9
+        },
+        {
+          "a": "ch",
+          "b": "ot",
+          "a_to_b": 14,
+          "b_to_a": 22,
+          "net": -8
+        },
+        {
+          "a": "k",
+          "b": "sh",
+          "a_to_b": 4,
+          "b_to_a": 11,
+          "net": -7
+        },
+        {
+          "a": "sh",
+          "b": "t",
+          "a_to_b": 11,
+          "b_to_a": 4,
+          "net": 7
+        }
+      ]
+    },
+    "IT2a|a2|long_3plus|suffix": {
+      "n_echo": 108,
+      "n_lines": 103,
+      "n_unordered_pairs": 12,
+      "stat": 13.5,
+      "pair_flip_p": 0.2829434113177364,
+      "line_reverse_p": 0.29094181163767247,
+      "pair_flip_q99": 19.666666666666664,
+      "line_reverse_q99": 20.0,
+      "top": [
+        {
+          "a": "dy",
+          "b": "ol",
+          "a_to_b": 1,
+          "b_to_a": 5,
+          "net": -4
+        },
+        {
+          "a": "dy",
+          "b": "ey",
+          "a_to_b": 5,
+          "b_to_a": 3,
+          "net": 2
+        },
+        {
+          "a": "ar",
+          "b": "dy",
+          "a_to_b": 2,
+          "b_to_a": 0,
+          "net": 2
+        },
+        {
+          "a": "ey",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 2,
+          "net": -2
+        },
+        {
+          "a": "ol",
+          "b": "or",
+          "a_to_b": 1,
+          "b_to_a": 2,
+          "net": -1
+        },
+        {
+          "a": "EMPTY",
+          "b": "dy",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "EMPTY",
+          "b": "ol",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "al",
+          "b": "ar",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "in",
+          "b": "l",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "l",
+          "b": "ol",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "in",
+          "b": "r",
+          "a_to_b": 2,
+          "b_to_a": 2,
+          "net": 0
+        }
+      ]
+    },
+    "IT2a|a2|long_3plus|prefix": {
+      "n_echo": 108,
+      "n_lines": 103,
+      "n_unordered_pairs": 23,
+      "stat": 18.0,
+      "pair_flip_p": 0.9372125574885023,
+      "line_reverse_p": 0.9384123175364927,
+      "pair_flip_q99": 32.46666666666667,
+      "line_reverse_q99": 32.668000000000035,
+      "top": [
+        {
+          "a": "l",
+          "b": "qo",
+          "a_to_b": 4,
+          "b_to_a": 1,
+          "net": 3
+        },
+        {
+          "a": "qo",
+          "b": "y",
+          "a_to_b": 2,
+          "b_to_a": 4,
+          "net": -2
+        },
+        {
+          "a": "EMPTY",
+          "b": "o",
+          "a_to_b": 0,
+          "b_to_a": 2,
+          "net": -2
+        },
+        {
+          "a": "ol",
+          "b": "qo",
+          "a_to_b": 2,
+          "b_to_a": 3,
+          "net": -1
+        },
+        {
+          "a": "ch",
+          "b": "sh",
+          "a_to_b": 1,
+          "b_to_a": 2,
+          "net": -1
+        },
+        {
+          "a": "EMPTY",
+          "b": "y",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "c",
+          "b": "o",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "ch",
+          "b": "ok",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "ch",
+          "b": "ol",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        },
+        {
+          "a": "d",
+          "b": "k",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "d",
+          "b": "l",
+          "a_to_b": 1,
+          "b_to_a": 0,
+          "net": 1
+        },
+        {
+          "a": "k",
+          "b": "ok",
+          "a_to_b": 0,
+          "b_to_a": 1,
+          "net": -1
+        }
+      ]
+    }
+  }
+}

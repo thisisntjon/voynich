@@ -1,0 +1,253 @@
+s70 -- Boundary-Aware Canonical Segmentation (L-165), Origin of True Canonical Rare Cores, and Fair Space-Fitting Test (L-162)
+date: 2026-10-18 03:37:47 (datetime.now)
+sha256 s70_canonical_segmentation_and_rare_cores.py: ae0a00e8df8b053677451a5dd96b55dc5a9e0942052a59147383129bec95b5cb
+sha256 s70_canonical_segmentation_and_rare_cores.prereg.sha256: 3ec5d3b19511e4400fd1e8b3d4b549b21e90009a3d59031774d2e7a74eab0f9f
+stub_match: True
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import s70_canonical_segmentation_and_rare_cores.py sha256=ae0a00e8df8b053677451a5dd96b55dc5a9e0942052a59147383129bec95b5cb
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+numpy 2.4.6; python 3.11.9 -I; seed=20261017
+
+======================================================================================================================
+PART 1 (L-165): BOUNDARY-AWARE CANONICAL SEGMENTATION vs GREEDY SLOTSEGMENTER ON DOTS 14, 15, 16, 20
+======================================================================================================================
+
+--- ZL3b (data/translit/ZL3b_eva.meta.json, sha256=ce233477803a8653) ---
+  pages 207 -> train 166 (26271 tok) / held-out 41 (8586 tok)
+
+  [1A. Core Vocabulary Compression & Held-Out Coverage (Dot 15: f5a_core_cover)]
+  Variant        | AllTyp  TrTyp  Tr<=2  TeTyp Unseen(Typ/Tok) | BShift(Tr/Te) Comp(Tr/Te) |    f5a_type_cover [95% CI]  TokCov Heaps_b
+  Greedy         |   2360   1984   1561    881         376/405 |         0/  0       0/  0 |     0.5732 [0.5330,0.6135]  0.9528  0.7015
+  Canon          |   1255   1083    660    508         172/176 |      1080/449       0/  0 |     0.6614 [0.6100,0.7128]  0.9795  0.6035
+  Canon+Comp     |   1078    945    522    459         133/137 |      1080/449     138/ 53 |     0.7102 [0.6533,0.7672]  0.9840  0.5842
+  Canon_AllRare  |    894    750    570    320         144/149 |     6268/1978     171/ 57 |     0.5500 [0.4864,0.6136]  0.9826  0.5449
+
+  [1B. Within-Line Core->Core MI Excess (A14 / Dot 15) & Held-Out Core F1 (Dot 14)]
+  Variant        |         f1_core_F1 [95% CI] |     f2_core_core_HO [95% CI] | f2_core_All207p |  f3_core_gain (shuf_exc) | f7_frame_core
+  Greedy         |   +0.0054 [-0.0043,+0.0151] |    -0.0528 [-0.0972,-0.0084] |         -0.0329 |        -0.1622 (+0.1166) |       +1.7923
+  Canon          |   +0.0086 [-0.0007,+0.0178] |    -0.0240 [-0.0610,+0.0129] |         +0.0025 |        -0.1045 (+0.1127) |       +1.8163
+  Canon+Comp     |   +0.0099 [-0.0005,+0.0204] |    -0.0160 [-0.0596,+0.0277] |         +0.0086 |        -0.0983 (+0.1099) |       +1.8179
+  Canon_AllRare  |   +0.0097 [-0.0015,+0.0209] |    +0.0092 [-0.0191,+0.0375] |         +0.0140 |        -0.0404 (+0.0961) |       +1.7623
+
+  [1C. Short-Range Core Repetition R(d) (Dot 16 / s56: 207 pages, 200 within-page shuffles, 500 subsample draws)]
+  Variant (Cohort)         |         R(1) [95% CI]    R(2)    R(3)    R(5)   R(10)   R(20) | Line R(1)   Same-x
+  Greedy (all cores)       |   1.169 [1.143,1.197]   1.183   1.100   1.098   1.091   1.038 |     1.242    1.172
+  Greedy (ex-top20)        |   1.760 [1.616,1.888]   1.356   1.256   1.142   1.083   0.847 |     1.938    1.275
+  Canon (all cores)        |   1.169 [1.139,1.199]   1.172   1.105   1.102   1.093   1.037 |     1.240    1.163
+  Canon (ex-top20)         |   1.841 [1.710,1.971]   1.325   1.279   1.170   1.078   0.915 |     2.004    1.250
+  Canon+Comp (all cores)   |   1.170 [1.140,1.199]   1.171   1.106   1.103   1.086   1.035 |     1.238    1.162
+  Canon+Comp (ex-top20)    |   1.843 [1.710,1.970]   1.346   1.264   1.166   1.058   0.889 |     1.986    1.230
+  Canon_AllRare (all cores) |   1.147 [1.124,1.169]   1.136   1.084   1.085   1.097   1.032 |     1.195    1.159
+  Canon_AllRare (ex-top20) |   1.714 [1.537,1.867]   1.236   1.052   1.179   0.985   0.954 |     1.888    1.112
+
+  [1D. Local Edit-1 Parent Excess W u V / N1 (Dot 20 / s59 41p held-out & s62 166p training, 200 null draws)]
+  Split / Variant          | Events Real_WV   N1_WV |     WuV / N1 [95% CI]       W / N1 [95% CI]       V / N1 [95% CI] | WuV / N2 EndShr
+  s59_41p_HO:Greedy        |   1893  0.3703  0.3660 |   1.012 [0.991,1.030]   1.012 [0.991,1.030]   0.977 [0.936,1.016] |    1.096  0.917
+  s59_41p_HO:Canon         |   1624  0.4353  0.4314 |   1.009 [0.993,1.027]   1.009 [0.993,1.027]   0.994 [0.948,1.039] |    1.073  0.926
+  s59_41p_HO:Canon+Comp    |   1592  0.4529  0.4466 |   1.014 [0.995,1.030]   1.014 [0.995,1.030]   0.982 [0.934,1.026] |    1.080  0.925
+  s59_41p_HO:Canon_AllRare |    848  0.4776  0.4818 |   0.991 [0.966,1.016]   0.991 [0.966,1.016]   0.886 [0.836,0.934] |    1.037  0.943
+  s62_166p_rev:Greedy      |   7835  0.3598  0.3528 |   1.020 [1.011,1.029]   1.020 [1.011,1.028]   1.049 [1.021,1.078] |    1.123  0.890
+  s62_166p_rev:Canon       |   6264  0.4127  0.4091 |   1.009 [0.999,1.020]   1.008 [0.999,1.018]   1.005 [0.978,1.028] |    1.092  0.893
+  s62_166p_rev:Canon+Comp  |   6136  0.4208  0.4185 |   1.005 [0.996,1.015]   1.005 [0.995,1.014]   0.998 [0.973,1.024] |    1.089  0.895
+  s62_166p_rev:Canon_AllRare |   3636  0.4125  0.4188 |   0.985 [0.973,0.997]   0.986 [0.974,0.998]   0.949 [0.922,0.979] |    1.052  0.896
+  166p_self:Greedy         |   6468  0.3856  0.3844 |   1.003 [0.993,1.013]   1.002 [0.993,1.012]   1.015 [0.992,1.039] |    1.102  0.917
+  166p_self:Canon          |   5858  0.4406  0.4417 |   0.998 [0.988,1.008]   0.997 [0.988,1.007]   1.004 [0.980,1.028] |    1.092  0.919
+  166p_self:Canon+Comp     |   5770  0.4536  0.4542 |   0.998 [0.989,1.007]   0.998 [0.988,1.007]   0.998 [0.973,1.025] |    1.093  0.920
+  166p_self:Canon_AllRare  |   2956  0.4973  0.4963 |   1.002 [0.989,1.015]   1.002 [0.990,1.015]   0.920 [0.892,0.952] |    1.061  0.924
+  [ZL3b Part 1 completed in 75.9s]
+
+--- RF1b (data/translit/RF1b.meta.json, sha256=c7d9bccba99b2610) ---
+  pages 207 -> train 166 (26014 tok) / held-out 41 (8604 tok)
+
+  [1A. Core Vocabulary Compression & Held-Out Coverage (Dot 15: f5a_core_cover)]
+  Variant        | AllTyp  TrTyp  Tr<=2  TeTyp Unseen(Typ/Tok) | BShift(Tr/Te) Comp(Tr/Te) |    f5a_type_cover [95% CI]  TokCov Heaps_b
+  Greedy         |   2491   2126   1707    876         365/385 |         0/  0       0/  0 |     0.5833 [0.5451,0.6216]  0.9553  0.6825
+  Canon          |   1352   1184    765    505         168/170 |      1139/446       0/  0 |     0.6673 [0.6189,0.7158]  0.9802  0.5741
+  Canon+Comp     |   1156   1023    604    459         133/134 |      1139/446     161/ 48 |     0.7102 [0.6607,0.7598]  0.9844  0.5597
+  Canon_AllRare  |    979    834    659    317         145/147 |     6231/1884     191/ 51 |     0.5426 [0.4854,0.5998]  0.9829  0.5069
+
+  [1B. Within-Line Core->Core MI Excess (A14 / Dot 15) & Held-Out Core F1 (Dot 14)]
+  Variant        |         f1_core_F1 [95% CI] |     f2_core_core_HO [95% CI] | f2_core_All207p |  f3_core_gain (shuf_exc) | f7_frame_core
+  Greedy         |   +0.0087 [-0.0044,+0.0218] |    -0.0506 [-0.0942,-0.0069] |         -0.0397 |        -0.1379 (+0.1295) |       +1.7784
+  Canon          |   +0.0127 [+0.0031,+0.0222] |    -0.0255 [-0.0580,+0.0069] |         -0.0036 |        -0.0875 (+0.1155) |       +1.8053
+  Canon+Comp     |   +0.0103 [+0.0006,+0.0200] |    -0.0150 [-0.0551,+0.0251] |         -0.0001 |        -0.0886 (+0.1114) |       +1.8053
+  Canon_AllRare  |   +0.0052 [-0.0056,+0.0159] |    +0.0158 [-0.0084,+0.0399] |         +0.0112 |        -0.0258 (+0.1003) |       +1.7410
+
+  [1C. Short-Range Core Repetition R(d) (Dot 16 / s56: 207 pages, 200 within-page shuffles, 500 subsample draws)]
+  Variant (Cohort)         |         R(1) [95% CI]    R(2)    R(3)    R(5)   R(10)   R(20) | Line R(1)   Same-x
+  Greedy (all cores)       |   1.158 [1.129,1.186]   1.193   1.112   1.105   1.107   1.032 |     1.224    1.173
+  Greedy (ex-top20)        |   1.759 [1.628,1.888]   1.364   1.217   1.049   1.227   0.906 |     1.923    1.254
+  Canon (all cores)        |   1.161 [1.137,1.185]   1.183   1.110   1.108   1.101   1.026 |     1.227    1.171
+  Canon (ex-top20)         |   1.767 [1.633,1.900]   1.342   1.202   1.129   1.200   0.878 |     1.922    1.238
+  Canon+Comp (all cores)   |   1.170 [1.143,1.196]   1.184   1.120   1.108   1.103   1.021 |     1.233    1.166
+  Canon+Comp (ex-top20)    |   1.854 [1.713,1.980]   1.359   1.211   1.143   1.211   0.861 |     1.976    1.214
+  Canon_AllRare (all cores) |   1.152 [1.126,1.176]   1.160   1.087   1.102   1.086   1.012 |     1.199    1.133
+  Canon_AllRare (ex-top20) |   1.923 [1.743,2.075]   1.449   1.308   1.072   1.087   0.915 |     2.077    1.131
+
+  [1D. Local Edit-1 Parent Excess W u V / N1 (Dot 20 / s59 41p held-out & s62 166p training, 200 null draws)]
+  Split / Variant          | Events Real_WV   N1_WV |     WuV / N1 [95% CI]       W / N1 [95% CI]       V / N1 [95% CI] | WuV / N2 EndShr
+  s59_41p_HO:Greedy        |   1889  0.3727  0.3691 |   1.010 [0.990,1.026]   1.010 [0.991,1.026]   0.939 [0.895,0.983] |    1.074  0.911
+  s59_41p_HO:Canon         |   1615  0.4291  0.4337 |   0.989 [0.972,1.007]   0.990 [0.972,1.007]   0.920 [0.875,0.965] |    1.046  0.921
+  s59_41p_HO:Canon+Comp    |   1585  0.4479  0.4494 |   0.997 [0.980,1.016]   0.997 [0.980,1.016]   0.924 [0.879,0.973] |    1.054  0.918
+  s59_41p_HO:Canon_AllRare |    829  0.4656  0.4760 |   0.978 [0.957,0.999]   0.978 [0.957,0.999]   0.822 [0.781,0.859] |    1.036  0.889
+  s62_166p_rev:Greedy      |   8209  0.3531  0.3489 |   1.012 [1.003,1.021]   1.013 [1.003,1.021]   1.061 [1.032,1.088] |    1.107  0.893
+  s62_166p_rev:Canon       |   6679  0.4120  0.4076 |   1.011 [1.001,1.018]   1.010 [1.000,1.018]   1.029 [1.002,1.055] |    1.091  0.898
+  s62_166p_rev:Canon+Comp  |   6561  0.4204  0.4172 |   1.008 [0.998,1.017]   1.007 [0.998,1.016]   1.026 [0.998,1.050] |    1.090  0.899
+  s62_166p_rev:Canon_AllRare |   4042  0.3971  0.4032 |   0.985 [0.973,0.994]   0.985 [0.974,0.994]   0.969 [0.941,0.993] |    1.052  0.903
+  166p_self:Greedy         |   6722  0.3853  0.3850 |   1.001 [0.990,1.011]   1.001 [0.990,1.011]   1.014 [0.986,1.043] |    1.094  0.912
+  166p_self:Canon          |   6064  0.4405  0.4411 |   0.999 [0.986,1.010]   0.998 [0.986,1.010]   1.007 [0.978,1.032] |    1.089  0.915
+  166p_self:Canon+Comp     |   5967  0.4547  0.4551 |   0.999 [0.987,1.011]   0.999 [0.986,1.011]   1.006 [0.978,1.033] |    1.090  0.915
+  166p_self:Canon_AllRare  |   3059  0.4740  0.4785 |   0.991 [0.979,1.002]   0.991 [0.979,1.002]   0.963 [0.936,0.998] |    1.057  0.897
+  [RF1b Part 1 completed in 77.8s]
+
+--- IT2a (data/translit/IT2a.meta.json, sha256=0d0d3e758d1e308b) ---
+  pages 206 -> train 165 (26000 tok) / held-out 41 (8411 tok)
+
+  [1A. Core Vocabulary Compression & Held-Out Coverage (Dot 15: f5a_core_cover)]
+  Variant        | AllTyp  TrTyp  Tr<=2  TeTyp Unseen(Typ/Tok) | BShift(Tr/Te) Comp(Tr/Te) |    f5a_type_cover [95% CI]  TokCov Heaps_b
+  Greedy         |   2420   2083   1654    856         337/364 |         0/  0       0/  0 |     0.6063 [0.5746,0.6380]  0.9567  0.7111
+  Canon          |   1270   1134    705    482         136/139 |      1149/456       0/  0 |     0.7178 [0.6807,0.7550]  0.9835  0.6038
+  Canon+Comp     |   1097    989    560    443         108/110 |      1149/456     145/ 41 |     0.7562 [0.7182,0.7942]  0.9869  0.5854
+  Canon_AllRare  |    908    791    605    297         117/121 |     6054/1842     181/ 45 |     0.6061 [0.5610,0.6511]  0.9856  0.5309
+
+  [1B. Within-Line Core->Core MI Excess (A14 / Dot 15) & Held-Out Core F1 (Dot 14)]
+  Variant        |         f1_core_F1 [95% CI] |     f2_core_core_HO [95% CI] | f2_core_All207p |  f3_core_gain (shuf_exc) | f7_frame_core
+  Greedy         |   +0.0141 [+0.0019,+0.0264] |    -0.0515 [-0.0913,-0.0117] |         -0.0375 |        -0.1297 (+0.1434) |       +1.7720
+  Canon          |   +0.0160 [+0.0076,+0.0244] |    -0.0090 [-0.0376,+0.0196] |         +0.0029 |        -0.0706 (+0.1410) |       +1.8034
+  Canon+Comp     |   +0.0156 [+0.0068,+0.0244] |    -0.0019 [-0.0334,+0.0296] |         +0.0091 |        -0.0707 (+0.1321) |       +1.8048
+  Canon_AllRare  |   +0.0046 [-0.0038,+0.0130] |    +0.0191 [-0.0072,+0.0454] |         +0.0147 |        -0.0233 (+0.1009) |       +1.7468
+
+  [1C. Short-Range Core Repetition R(d) (Dot 16 / s56: 207 pages, 200 within-page shuffles, 500 subsample draws)]
+  Variant (Cohort)         |         R(1) [95% CI]    R(2)    R(3)    R(5)   R(10)   R(20) | Line R(1)   Same-x
+  Greedy (all cores)       |   1.223 [1.192,1.257]   1.181   1.093   1.114   1.126   1.040 |     1.305    1.231
+  Greedy (ex-top20)        |   1.748 [1.629,1.865]   1.375   1.133   1.252   1.068   0.894 |     1.926    1.296
+  Canon (all cores)        |   1.213 [1.180,1.246]   1.172   1.092   1.123   1.116   1.033 |     1.290    1.211
+  Canon (ex-top20)         |   1.742 [1.613,1.859]   1.428   1.240   1.357   1.041   0.919 |     1.911    1.219
+  Canon+Comp (all cores)   |   1.220 [1.190,1.252]   1.170   1.090   1.122   1.119   1.037 |     1.298    1.212
+  Canon+Comp (ex-top20)    |   1.766 [1.642,1.882]   1.438   1.243   1.353   1.034   0.903 |     1.935    1.205
+  Canon_AllRare (all cores) |   1.182 [1.156,1.205]   1.159   1.078   1.113   1.099   1.030 |     1.236    1.179
+  Canon_AllRare (ex-top20) |   1.804 [1.644,1.948]   1.392   1.056   1.235   0.942   1.064 |     1.950    1.412
+
+  [1D. Local Edit-1 Parent Excess W u V / N1 (Dot 20 / s59 41p held-out & s62 166p training, 200 null draws)]
+  Split / Variant          | Events Real_WV   N1_WV |     WuV / N1 [95% CI]       W / N1 [95% CI]       V / N1 [95% CI] | WuV / N2 EndShr
+  s59_41p_HO:Greedy        |   1913  0.3654  0.3704 |   0.986 [0.966,1.008]   0.986 [0.966,1.008]   0.973 [0.931,1.011] |    1.085  0.914
+  s59_41p_HO:Canon         |   1639  0.4301  0.4342 |   0.991 [0.972,1.010]   0.991 [0.972,1.010]   0.924 [0.886,0.965] |    1.076  0.922
+  s59_41p_HO:Canon+Comp    |   1615  0.4471  0.4487 |   0.996 [0.978,1.016]   0.996 [0.978,1.016]   0.935 [0.894,0.969] |    1.086  0.922
+  s59_41p_HO:Canon_AllRare |    849  0.4629  0.4686 |   0.988 [0.959,1.013]   0.988 [0.959,1.013]   0.887 [0.844,0.930] |    1.025  0.911
+  s62_166p_rev:Greedy      |   7901  0.3593  0.3522 |   1.020 [1.009,1.029]   1.019 [1.008,1.028]   1.075 [1.050,1.099] |    1.118  0.887
+  s62_166p_rev:Canon       |   6142  0.4087  0.4014 |   1.018 [1.008,1.029]   1.017 [1.007,1.028]   1.035 [1.007,1.064] |    1.110  0.877
+  s62_166p_rev:Canon+Comp  |   6036  0.4163  0.4101 |   1.015 [1.005,1.026]   1.014 [1.004,1.025]   1.037 [1.006,1.067] |    1.108  0.880
+  s62_166p_rev:Canon_AllRare |   3566  0.3982  0.4107 |   0.970 [0.957,0.983]   0.969 [0.956,0.983]   0.964 [0.930,0.992] |    1.041  0.850
+  166p_self:Greedy         |   6678  0.3741  0.3756 |   0.996 [0.986,1.006]   0.995 [0.985,1.006]   0.981 [0.954,1.009] |    1.104  0.912
+  166p_self:Canon          |   6032  0.4312  0.4338 |   0.994 [0.984,1.004]   0.994 [0.984,1.003]   0.951 [0.927,0.977] |    1.096  0.916
+  166p_self:Canon+Comp     |   5935  0.4418  0.4457 |   0.991 [0.981,1.000]   0.991 [0.981,1.000]   0.956 [0.931,0.982] |    1.092  0.915
+  166p_self:Canon_AllRare  |   3140  0.4732  0.4808 |   0.984 [0.972,0.995]   0.984 [0.973,0.996]   0.912 [0.883,0.941] |    1.057  0.915
+  [IT2a Part 1 completed in 76.6s]
+
+======================================================================================================================
+PART 2 (CONSTRAINTS-MAP §C l.197): ORIGIN OF THE REMAINING TRUE CANONICAL RARE CORES (AFTER CANON+COMP)
+======================================================================================================================
+
+  [2A. Anatomical Classification (M1..M5) of Remaining Canonical Rare Cores vs Frequent Stems (N_train >= 10)]
+  Waterfall (mutually exclusive): M1_Minim/Vowel -> M2_Gallows/Bench -> M3_s66_Confus -> M4_Other_Ed1 -> M5_Distal_Root
+  Cohort                                 N | M1_Vowel  M2_Gall  M3_s66  M4_Ed1  M5_Dist |  Marg:M1  M1_str  Marg:M2  AnyEd1
+  ZL3b train rare types (1<=N<=2)      522 |   16.28%    0.38%   0.57%   7.85%   74.90% |   16.28%   0.57%    0.38%  14.37%
+  ZL3b train rare tokens (1<=N<=2)     563 |   16.34%    0.71%   0.53%  10.12%   72.29% |   16.34%   0.53%    0.71%  17.41%
+  ZL3b train rare types (char-shuf)    522 |   16.28%    0.19%   0.00%   2.68%   80.84% |   16.28%   0.57%    0.19%   4.98%
+  ZL3b HO unseen types (N_tr==0)       133 |   12.78%    0.00%   0.00%   6.77%   80.45% |   12.78%   2.26%    0.00%  12.03%
+  ZL3b HO unseen tokens (N_tr==0)      137 |   12.41%    0.00%   0.00%   6.57%   81.02% |   12.41%   2.19%    0.00%  11.68%
+  ZL3b HO unseen types (char-shuf)     133 |   16.54%    0.00%   0.00%   3.76%   79.70% |   16.54%   0.75%    0.00%   6.77%
+  RF1b train rare types (1<=N<=2)      604 |   13.74%    0.33%   0.66%   5.13%   80.13% |   13.74%   0.33%    0.33%  10.76%
+  RF1b train rare tokens (1<=N<=2)     639 |   13.77%    0.63%   0.63%   6.57%   78.40% |   13.77%   0.31%    0.63%  12.99%
+  RF1b train rare types (char-shuf)    604 |   13.41%    0.00%   0.00%   1.66%   84.93% |   13.41%   0.17%    0.17%   4.30%
+  RF1b HO unseen types (N_tr==0)       133 |   14.29%    0.00%   0.75%   3.01%   81.95% |   14.29%   2.26%    0.00%   7.52%
+  RF1b HO unseen tokens (N_tr==0)      134 |   14.18%    0.00%   0.75%   2.99%   82.09% |   14.18%   2.24%    0.00%   7.46%
+  RF1b HO unseen types (char-shuf)     133 |   15.79%    0.00%   0.00%   1.50%   82.71% |   15.79%   0.75%    0.00%   3.01%
+  IT2a train rare types (1<=N<=2)      560 |   13.39%    0.18%   0.18%   4.11%   82.14% |   13.39%   0.71%    0.18%   8.75%
+  IT2a train rare tokens (1<=N<=2)     605 |   14.21%    0.33%   0.33%   5.12%   80.00% |   14.21%   0.83%    0.33%  11.24%
+  IT2a train rare types (char-shuf)    560 |   11.61%    0.00%   0.36%   2.68%   85.36% |   11.61%   0.18%    0.00%   5.18%
+  IT2a HO unseen types (N_tr==0)       108 |    9.26%    0.00%   0.00%   2.78%   87.96% |    9.26%   0.93%    0.00%   5.56%
+  IT2a HO unseen tokens (N_tr==0)      110 |    9.09%    0.00%   0.00%   2.73%   88.18% |    9.09%   0.91%    0.00%   5.45%
+  IT2a HO unseen types (char-shuf)     108 |   10.19%    0.00%   0.00%   0.93%   88.89% |   10.19%   0.00%    0.00%   0.93%
+  Latin cremma train rare types        926 |    5.29%    0.11%   0.00%   3.24%   91.36% |    5.29%   0.97%    0.11%   4.10%
+  Latin cremma HO unseen types         252 |    3.57%    0.00%   0.00%   2.78%   93.65% |    3.57%   0.00%    0.00%   2.78%
+
+  [2B. Concrete Examples of Canonical Rare Core Classes (ZL3b 166p training, c -> closest frequent stem c*)]
+    M1 Minim/Vowel-Run Modulation   : fachy->fch, ckhyd->ckhed, coaiid->eeed, odoal->dal, chaj->ch
+    M2 Gallows/Bench Allomorphy     : cfhaiin->kaiin, fshed->pched
+    M3 s66 Scribal Confusion        : saiim->saiin, paiim->paiin, laiim->laiin
+    M4 Other Edit-1 to Freq Stem    : v->d, fchodaiin->chodaiin, fyd->yd, aiih->aiin, chto->cho
+    M5 True Distal Root (d>=2)      : syaiir, darais, cphodaiil, daicto, shcthaiin
+
+  [2C. Clustering of Canonical Rare Cores & M5 Distal Roots by (Hand, Section) and Page (207 pages)]
+  ZL3b: canonical rare tokens=712 (20.43/1k tok, page chi2/df=1.93x) | M5 distal tokens=525 (15.06/1k tok, page chi2/df=1.77x)
+        multi-page canonical rare types=48 (63 page-pairs): same-(Hand,Sec) share=0.3333 vs perm null=0.2512 [0.1270,0.3968] (1.33x)
+        by (Hand:Sec): H3:S (11126t): rare=18.5/1k, M5=13.9/1k | H1:H (7967t): rare=24.7/1k, M5=16.8/1k | H2:B (6240t): rare=14.1/1k, M5=11.7/1k | H2:H (2345t): rare=19.2/1k, M5=13.6/1k | H1:P (2306t): rare=29.9/1k, M5=19.5/1k | H2:T (1782t): rare=15.7/1k, M5=13.5/1k | H5:H (579t): rare=22.5/1k, M5=20.7/1k | H3:H (577t): rare=19.1/1k, M5=13.9/1k | H?:S (460t): rare=19.6/1k, M5=17.4/1k | H2:C (433t): rare=20.8/1k, M5=13.9/1k
+  RF1b: canonical rare tokens=789 (22.79/1k tok, page chi2/df=1.89x) | M5 distal tokens=623 (18.00/1k tok, page chi2/df=1.77x)
+        multi-page canonical rare types=40 (61 page-pairs): same-(Hand,Sec) share=0.4262 vs perm null=0.2456 [0.1225,0.4098] (1.74x)
+        by (Hand:Sec): H3:S (11072t): rare=20.7/1k, M5=16.0/1k | H1:H (7758t): rare=31.2/1k, M5=24.5/1k | H2:B (6288t): rare=13.2/1k, M5=10.5/1k | H1:P (2346t): rare=29.4/1k, M5=22.6/1k | H2:H (2301t): rare=19.6/1k, M5=15.2/1k | H2:T (1769t): rare=20.4/1k, M5=18.7/1k | H3:H (586t): rare=25.6/1k, M5=20.5/1k | H5:H (570t): rare=33.3/1k, M5=29.8/1k | H?:S (463t): rare=15.1/1k, M5=13.0/1k | H2:C (441t): rare=20.4/1k, M5=15.9/1k
+  IT2a: canonical rare tokens=734 (21.33/1k tok, page chi2/df=2.01x) | M5 distal tokens=596 (17.32/1k tok, page chi2/df=1.93x)
+        multi-page canonical rare types=55 (76 page-pairs): same-(Hand,Sec) share=0.2895 vs perm null=0.2482 [0.1447,0.3753] (1.17x)
+        by (Hand:Sec): H3:S (10961t): rare=18.9/1k, M5=15.6/1k | H1:H (7865t): rare=27.2/1k, M5=22.8/1k | H2:B (6227t): rare=12.7/1k, M5=9.6/1k | H2:H (2307t): rare=22.1/1k, M5=16.0/1k | H1:P (2282t): rare=27.2/1k, M5=21.5/1k | H2:T (1739t): rare=18.4/1k, M5=16.7/1k | H3:H (590t): rare=18.6/1k, M5=13.6/1k | H5:H (579t): rare=29.4/1k, M5=27.6/1k | H?:S (444t): rare=29.3/1k, M5=22.5/1k | H2:C (431t): rare=25.5/1k, M5=18.6/1k
+
+======================================================================================================================
+PART 3 (L-162 REPAIR OF s65(b)): FAIR PRE-WORD REMAINING-SPACE TEST WITHOUT CIRCULARITY (ZL3b + BOXES)
+======================================================================================================================
+
+  ZL3b pages with P text: 207; box folios aligned: 223; pages with >=50% usable P lines: 189 (91.3%); skipped non-monotone x: 48, seg mismatch: 0
+  Usable token events (j >= 1): MID=15749, PREGAP=442, MARGIN=2607
+
+  [3A. Proof of s65(b) MID Circularity]
+    s65(b) MID S = (left[j+1] - right[j-1]) / g = width(w_j)/g + interword_gaps/g: corr(S_s65, width(w_j)/g) = +0.9277
+    s65(b) MID slope d(glen)/d(S_s65) = +0.7558 (r = +0.7982) -> removing width(w_j)/g gives d(glen)/d(gaps_only) = +0.4627 (r = +0.1861)
+
+  [3B. Fair Pre-Word Remaining Space R_page(j) = (X_margin(page) - x_start(w_j)) / g_page (Zero Own-Width Leakage)]
+    Note: Raw slope across all j is confounded by s33 rightward position shortening; Fair test conditions on (folio, j, L) & prev_glen.
+    Class           n |        Raw dL/dR90 [95% CI]  Raw dL/dR95 |   Within-(p,j,L) dL/dR90 [95% CI] |     Within-(p,j,L)+prevL [95% CI]  r_part
+    MID         15749 |   +0.0087 [+0.0061,+0.0113]      +0.0086 |         +0.0488 [+0.0324,+0.0694] |         +0.0611 [+0.0416,+0.0842] +0.1208
+    PREGAP        442 |   +0.0168 [+0.0026,+0.0344]      +0.0171 |         +0.2640 [+0.1119,+0.4417] |         +0.2867 [+0.1257,+0.4720] +0.3252
+    MARGIN       2607 |   +0.0305 [+0.0236,+0.0387]      +0.0300 |         +0.0791 [+0.0388,+0.1430] |         +0.0788 [+0.0378,+0.1429] +0.1862
+    OBSTACLE     3049 |   +0.0166 [+0.0105,+0.0238]      +0.0165 |         +0.0822 [+0.0411,+0.1464] |         +0.0818 [+0.0409,+0.1460] +0.1890
+    OBSTACLE - MID slope: Raw +0.0078 [+0.0019,+0.0153] | Within-(page,j,L)+prevL +0.0207 [-0.0069,+0.0701]
+
+  [3C. Sub-Slot Breakdown (Word Chars |w_j|, Canonical Core |C_j|, Suffix |S_j|) & Within-Page Same-L Line-Exchange Null]
+    MID        within-(page,j,L)+prevL slopes on R90: d|w|/dR90=+0.0750 [+0.0528,+0.1022] | d|C|/dR90=+0.0323 [+0.0173,+0.0508] | d|S|/dR90=+0.0121 [+0.0056,+0.0203]
+    MARGIN     within-(page,j,L)+prevL slopes on R90: d|w|/dR90=+0.0958 [+0.0440,+0.1701] | d|C|/dR90=+0.0397 [+0.0145,+0.0784] | d|S|/dR90=+0.0109 [-0.0029,+0.0310]
+    PREGAP     within-(page,j,L)+prevL slopes on R90: d|w|/dR90=+0.3824 [+0.2034,+0.5410] | d|C|/dR90=+0.1886 [+0.0331,+0.3403] | d|S|/dR90=+0.0697 [-0.0624,+0.1947]
+    OBSTACLE   within-(page,j,L)+prevL slopes on R90: d|w|/dR90=+0.0999 [+0.0475,+0.1748] | d|C|/dR90=+0.0417 [+0.0167,+0.0801] | d|S|/dR90=+0.0119 [-0.0015,+0.0323]
+    Within-page same-L line-exchange null (500 draws): MID within-(p,j,L)=-0.0000 [-0.0102,+0.0102] (+prevL: -0.0000 [-0.0098,+0.0096]) | MARGIN within-(p,j,L)=-0.0007 [-0.0253,+0.0222] (+prevL: -0.0008 [-0.0255,+0.0224])
+
+  [3D. Fair Pre-Drawing-Gap (PREGAP) Test Matched on Token Index j and Pre-Word x_start(w_j)]
+    PREGAP minus Same-(Page, j) MID (n=369): d_glen=-0.142, d_wlen=-0.304, d_core=-0.159, d_suf=+0.091, d_x_start=+0.862g
+    PREGAP minus Same-(Hand, Sec, j) MID (n=442): d_glen=-0.384, d_wlen=-0.604, d_core=-0.219, d_suf=+0.004, d_x_start=-0.349g
+    PREGAP slope on R_gap=(x_start(w_{j+1})-x_start(w_j))/g: raw=+0.1042 (r=+0.3186), within-j=+0.0990 (r=+0.2971) | within-j slope on pre-word x_start(w_j)/g: +0.0073 (r=+0.0234)
+  [Part 3 completed in 94.1s]
+
+======================================================================================================================
+SUMMARY CONCLUSIONS (s70)
+======================================================================================================================
+1. L-165 (Canonical Segmentation on Dots 14, 15, 16, 20; ZL3b shown, RF1b/IT2a concordant):
+   - Dot 15 Vocabulary & Coverage: Greedy -> Canon+Comp compresses 207p core types from 2360 to 1078 (Canon_AllRare: 894), eliminates 66.17% of unseen held-out tokens (405 -> 137), and raises held-out core type coverage f5a_core_cover from 0.5732 [0.5330,0.6135] to 0.7102 [0.6533,0.7672] (Canon_AllRare: 0.5500; token coverage 0.9840).
+   - Dot 14 (F1) & Dot 15 (A14): Held-out core F1 stays positive (+0.0054 [-0.0043,+0.0151] -> +0.0099 [-0.0005,+0.0204]) and within-line core->core MI excess A14 stays <= 0 (HO: -0.0528 [-0.0972,-0.0084] -> -0.0160 [-0.0596,+0.0277]; 207p: -0.0329 -> +0.0086).
+   - Dot 16 (s56 R(d)): Short-range core burstiness SURVIVES canonicalization: R(1)=1.169 -> 1.170 (Canon_AllRare: 1.147), and R_rare(1)=1.760 -> 1.843 (Canon_AllRare: 1.714).
+   - Dot 20 (s59/s62 WuV/N1): Local edit-1 parent ratio stays null (~1.00-1.02) across Greedy (1.012 HO / 1.020 s62), Canon+Comp (1.014 HO / 1.005 s62), and Canon_AllRare (0.991 HO / 0.985 s62).
+2. §C line 197 (Origin of Remaining True Canonical Rare Cores, Table 2A/2C): After Canon+Comp eliminates 66.17% of unseen held-out tokens on ZL3b (405 -> 137, leaving 133 unseen types / 137 tokens = 1.60% of HO tokens), shallow modulations and 1-edit variants of frequent stems (N_train>=10) in M1..M4 (M1 vowel/minim=16.28% tr/12.78% HO, M2 gallows/bench=0.38%/0.00%, M3 s66 confusion=0.57%/0.00%, M4 other edit-1=7.85%/6.77%) account for 25.10% of training rare types (27.71% of rare tokens, vs 19.16% char-shuf null) and 19.55% of held-out unseen types (18.98% of unseen tokens, vs 20.30% char-shuf null). The remaining M5_Dist distal fraction (d>=2 from N_train>=10 stems and not M1/M2) is 74.90% of training rare types (72.29% of rare tokens) and 80.45% of held-out unseen types (81.02% of unseen tokens = 111 tokens = 1.29% of HO tokens), and overdisperses by page (chi2/df=1.77x) and by (Hand, Section) (same-(Hand,Sec) pair share=0.3333 vs 0.2512 null [0.1270,0.3968], 1.33x).
+3. L-162 (Fair Pre-Word Remaining-Space Test Repairing s65(b), Table 3A-3D): Removing w_j's own box width from s65(b)'s S_MID (corr(S_s65, width(w_j)/g)=+0.9277) collapses s65(b)'s circular MID slope from +0.7558 (r=+0.7982) to +0.4627 (r=+0.1861) on interword gaps alone. Using non-circular pre-word remaining space R90(j)=(X_margin90(page)-x_start(w_j))/g_page and conditioning on (page, token index j, line length L) + prev_glen, there is a modest positive within-cell slope d(glen)/d(R90) across positions: MID=+0.0611 [+0.0416,+0.0842] (r_part=+0.1208, strictly above the within-page same-L line-exchange null -0.0000 [-0.0098,+0.0096]), MARGIN=+0.0788 [+0.0378,+0.1429] (r_part=+0.1862, vs line-exchange null -0.0008 [-0.0255,+0.0224]), PREGAP=+0.2867 [+0.1257,+0.4720] (r_part=+0.3252), and OBSTACLE=+0.0818 [+0.0409,+0.1460]; thus OBSTACLE - MID within-(page,j,L)+prevL is +0.0207 [-0.0069,+0.0701] (CI includes 0), while PREGAP words are -0.142 glyphs shorter than same-(page, j) MID words.
+
+date end: 2026-10-18 03:43:13 (datetime.now)
+elapsed: 325.9 s

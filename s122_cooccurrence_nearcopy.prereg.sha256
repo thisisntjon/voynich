@@ -1,0 +1,13 @@
+# s122_cooccurrence_nearcopy pre-registration stub (sha256sum format, LF, no BOM). Frozen 2026-10-19 01:10:58 PDT (clock read with date) AFTER the fixture and BEFORE any real-data co-occurrence statistic.
+# Design: DECISIONS.md D-066 (bb) (Jon approved 's122: settle T vs near-copy (Recommended)'); follows L-345. Copy of s117 (tools/s117_line_cooccurrence.py, untouched); full frozen design in the docstring of tools/s122_cooccurrence_nearcopy.py.
+# s117 statistics, nulls, constants unchanged: curveball within quire, Besag-Clifford hub, TRADES 5, R_E 100, R_H 100; S, N_T (LIFT 3, MIN_OUTSIDE 3), Q; ALPHA 0.01, NT_MIN 10, NT_RATIO 2.
+# Additions: (1) near-copy producer, P_NC calibrated to the real F-13 rate (ZL3b adjacent-word ED 1-2 share 0.1150; P_NC 0.1045); (2) within-page null; cell CALL = T only if T under quire AND page null, else s117 rule without T under the quire null; (3) descriptive top-50 tuples (no call).
+# Translit call = majority of core/word/tri CALLs; overall = ZL3b call if RF1b and IT2a agree, else NOT_REPLICATED.
+# Fixture: runs/s122/fixture_20261018_235607.txt FIXTURE_GATE PASS (table T 10/10, content C 10/10, pool P 10/10, nearcopy not T 10/10 in core, word, tri). Partial killed run runs/s122/fixture_20261018_223828.txt is superseded (no gate line), not part of this stub. Note: nearcopy tri gives C 10/10 (quire null).
+# Verify: grep -v "^#" s122_cooccurrence_nearcopy.prereg.sha256 | tr -d '\r' | sha256sum -c -
+86e8a8f9a249a789af77e5633532f6f229a15e5ca7f1310c7ca0da063a0d86f6 *tools/s122_cooccurrence_nearcopy.py
+a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed *scoreboard/metrics_new.py
+ce233477803a865365e53418f5e2b78c324fa0ea124b0aa46a9eb6a5189f7ef0 *data/translit/ZL3b_eva.meta.json
+c7d9bccba99b2610b9d80b4ce5f26f7d1ab54c12ec2364d0423d6b89f51da9df *data/translit/RF1b.meta.json
+0d0d3e758d1e308b0aee4b4d006f90cbc8090c081e0fcb3327de6734ac5e5fdf *data/translit/IT2a.meta.json
+5baa74c79b3cb98ec7666fd6ed3bcdb5b3c612ea6ba18d865497907382f2b4ef *runs/s122/fixture_20261018_235607.txt

@@ -1,0 +1,9 @@
+K3: stem codebook (K2 x2) + flow-chosen prefix slot + M5 layer; columns as K1
+
+Voynich tokens with a decomposable prefix: 76.7%; P(prefix|prev last) for y: -:0.20, qok:0.13, d:0.09, ch:0.08, qo:0.08, o:0.07
+VOYNICH                  NMI h1/h2=0.275/0.333  JSDf para=0.549 other=0.147  JSDl=0.082  p(para) x  87.0  m-fin x 16.3  d w2/last 0.042/0.165  crossMI+0.181  resid +0.042  h2=2.11  types=7025 hapax=0.68  rep=0.84%  tok=34857
+K2 nomenclator x2        NMI h1/h2=0.370/0.270  JSDf para=0.445 other=0.022  JSDl=0.013  p(para) x  15.5  m-fin x  2.3  d w2/last 0.063/0.129  crossMI+0.069  resid +0.045  h2=2.51  types=10471 hapax=0.51  rep=0.01%  tok=34857
+K3 stem x1.0 + flow prefix NMI h1/h2=0.060/0.011  JSDf para=0.495 other=0.324  JSDl=0.001  p(para) x  38.7  m-fin x  1.0  d w2/last 0.073/0.244  crossMI+0.161  resid +0.008  h2=2.79  types=21514 hapax=0.74  rep=0.00%  tok=34857
+K3 stem x2.0 + flow prefix NMI h1/h2=0.013/0.015  JSDf para=0.486 other=0.314  JSDl=0.001  p(para) x  31.5  m-fin x  1.0  d w2/last 0.084/0.237  crossMI+0.174  resid +0.003  h2=2.87  types=24690 hapax=0.78  rep=0.00%  tok=34857
+K3 x2, prefix NOT flow   NMI h1/h2=0.089/0.051  JSDf para=0.468 other=0.126  JSDl=0.001  p(para) x  25.5  m-fin x  1.0  d w2/last 0.091/0.274  crossMI+0.001  resid +0.001  h2=2.86  types=24626 hapax=0.78  rep=0.00%  tok=34857
+K3 x2 NULL shuffled plain NMI h1/h2=0.008/0.031  JSDf para=0.484 other=0.328  JSDl=0.001  p(para) x  29.8  m-fin x  0.8  d w2/last 0.063/0.243  crossMI+0.171  resid +0.014  h2=2.87  types=24684 hapax=0.78  rep=0.00%  tok=34857

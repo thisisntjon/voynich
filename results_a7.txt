@@ -1,0 +1,8 @@
+VMS eva          rho=-0.248  top50 len=4.00  token mean len=4.89  ratio=0.82
+VMS glyph+       rho=-0.243  top50 len=3.24  token mean len=3.96  ratio=0.82
+latin_caesar     rho=-0.344  top50 len=3.58  token mean len=6.01  ratio=0.60
+latin_augustine  rho=-0.413  top50 len=3.26  token mean len=5.32  ratio=0.61
+italian_dante    rho=-0.374  top50 len=2.48  token mean len=3.93  ratio=0.63
+german_faust     rho=-0.414  top50 len=3.30  token mean len=4.77  ratio=0.69
+german_kafka     rho=-0.370  top50 len=3.42  token mean len=5.14  ratio=0.67
+english_alice    rho=-0.385  top50 len=3.02  token mean len=3.94  ratio=0.77

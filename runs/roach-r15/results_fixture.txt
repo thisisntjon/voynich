@@ -1,0 +1,28 @@
+r15b fixture
+clock 2026-10-18 20:43:47 Pacific Daylight Time
+dropped {'kept': 94, 'short': 132, 'label': 1}
+layout {'n': 94, 'quires': 15, 'cells': 13, 'cells_multi_quire': 6, 'folios_in_multi': 67}
+sanity seed 14000 all-features offset 5: p=0.000100 obs=28.422929 drift=1
+planted seed 15001 p=0.000100 obs=5.144813 drift=1
+planted seed 15002 p=0.000100 obs=4.726904 drift=1
+planted seed 15003 p=0.000100 obs=4.324568 drift=1
+planted seed 15004 p=0.000100 obs=4.877326 drift=1
+planted seed 15005 p=0.000100 obs=4.549394 drift=1
+planted seed 15006 p=0.000100 obs=4.690649 drift=1
+planted seed 15007 p=0.000100 obs=4.905995 drift=1
+planted seed 15008 p=0.000100 obs=4.964145 drift=1
+planted seed 15009 p=0.000100 obs=5.410494 drift=1
+planted seed 15010 p=0.000100 obs=5.458970 drift=1
+null seed 16001 p=0.258174 obs=3.318224 drift=0
+null seed 16002 p=0.529247 obs=3.294423 drift=0
+null seed 16003 p=0.795420 obs=2.927645 drift=0
+null seed 16004 p=0.323068 obs=3.204746 drift=0
+null seed 16005 p=0.222578 obs=3.166088 drift=0
+null seed 16006 p=0.378262 obs=3.358840 drift=0
+null seed 16007 p=0.535946 obs=3.188580 drift=0
+null seed 16008 p=0.451355 obs=3.358655 drift=0
+null seed 16009 p=0.091291 obs=3.655022 drift=0
+null seed 16010 p=0.807119 obs=2.996078 drift=0
+planted DRIFT 10 of 10 (need >= 8)
+null DRIFT 0 of 10 (need <= 1)
+VERDICT: PASS

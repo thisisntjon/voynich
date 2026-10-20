@@ -1,0 +1,26 @@
+s115-A1b cross-model kappa: Claude consensus labels.tsv vs labels_gemma.tsv (qwen2.5vl:7b)
+images in both: 204 (only consensus 0, only model 0)
+rule: PT over all images; others where both non-NA; consensus DISAGREE cells skipped; A2-eligible = kappa >= 0.6 and n >= 10
+category	n	percent_agree	kappa	disagree_skipped	invalid_model_levels_all_images	A2	levels_consensus	levels_model
+PT	203	0.882	0.792	1	0	ELIGIBLE	BATH:18,CIRCLE:17,MARGINAL:26,NONE:4,OTHER:1,PHARMA:12,PLANT:125	BATH:3,CIRCLE:16,MARGINAL:29,NONE:5,OTHER:9,PHARMA:8,PLANT:133
+P_plants	125	0.896	0.194	0	4	no	1:117,2:6,3+:2	1:116,2:5,3+:4
+P_root	109	0.339	0.164	16	0	no	BRANCHING:43,BULB:4,NONE:3,TAPROOT:7,TUBER:52	NONE:30,TAPROOT:38,TUBER:41
+P_leafshape	109	0.239	0.108	16	0	no	DIVIDED:47,ELLIPTIC:36,LINEAR:13,ROUND:13	DIVIDED:6,ELLIPTIC:5,LINEAR:95,ROUND:3
+P_leafcount	114	0.254	0.077	11	25	no	1-4:19,11-20:36,21+:25,5-10:34	0:14,1-4:4,10-20:1,2-4:15,20+:3,21+:11,3+:2,3-4:1,5-10:63
+P_flower	115	0.330	0.140	10	0	no	0:7,1:27,2-4:35,5+:46	0:43,1:1,2-4:61,5+:10
+P_habit	117	0.342	0.094	8	0	no	MULTI:31,ROSETTE:2,SINGLE:84	MULTI:8,ROSETTE:69,SINGLE:40
+J_shape	12	0.333	-0.091	0	0	no	CYLINDER:8,VASE:4	CYLINDER:7,NONE:5
+J_count	12	0.250	0.100	0	4	no	1-2:4,3-4:5,5+:3	0:5,2-4:1,3-4:3,5+:3
+J_fragcount	12	0.500	0.172	0	3	no	16+:9,6-15:3	0:1,16+:5,6+:2,6-15:4
+J_fragtype	12	0.750	-0.059	0	0	no	MIXED:10,ROOTS:2	MIXED:11,NONE:1
+C_centre	16	0.562	0.451	1	1	no	ANIMAL:6,EMPTY:1,FACE:3,GEOMETRIC:4,HUMAN:2	ANIMAL:3,FACE:6,GEOMETRIC:1,HUMAN:6
+C_animal	2	0.500	0.333	1	7	no	FISH:1,HORNED:1	FISH:1,HORNLESS:1
+C_figures	17	0.588	0.402	0	27	no	0:7,1-9:2,10-19:2,20+:6	0:4,10-19:1,2-3:1,2-9:1,20+:10
+C_rings	15	0.400	-0.116	2	6	no	2:2,3:6,4+:7	3:1,4+:14
+C_diagrams	15	0.667	0.460	1	2	no	1:7,2-3:5,4+:3	1:10,2-3:2,3:1,4+:2
+C_rays	17	0.824	0.598	0	0	no	ABSENT:12,PRESENT:5	ABSENT:11,PRESENT:6
+B_pools	18	0.222	0.019	1	73	no	1:2,2:3,3+:13	0:8,1-5:1,2:5,3+:4
+B_figures	17	0.235	0.035	2	69	no	1-5:4,11+:8,6-10:5	0:3,2-9:1,6-10:12,7-9:1
+B_tubes	18	0.222	0.000	1	0	no	PRESENT:18	ABSENT:14,PRESENT:4
+total DISAGREE cells skipped: 71
+A2-eligible: PT

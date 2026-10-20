@@ -1,0 +1,7 @@
+ZL3b: words>=5 24377, types 7000  B;E excess 0.4760 bits (null q99 +0.0071) p 0.0050  B;M excess 1.3603 bits (null q99 +0.0080) p 0.0050  M;E excess 1.2994 bits (null q99 +0.0061) p 0.0050  free-assembly type ratio 1.793  CALL=RESTATED
+RF1b: words>=5 24591, types 7349  B;E excess 0.4694 bits (null q99 +0.0082) p 0.0050  B;M excess 1.3415 bits (null q99 +0.0082) p 0.0050  M;E excess 1.2894 bits (null q99 +0.0080) p 0.0050  free-assembly type ratio 1.762  CALL=RESTATED
+IT2a: words>=5 24348, types 6981  B;E excess 0.4781 bits (null q99 +0.0060) p 0.0050  B;M excess 1.3643 bits (null q99 +0.0078) p 0.0050  M;E excess 1.2977 bits (null q99 +0.0066) p 0.0050  free-assembly type ratio 1.798  CALL=RESTATED
+latin_caesar: words>=5 15028, types 5805  B;E excess 1.5765 bits (null q99 +0.0139) p 0.0050  B;M excess 2.2436 bits (null q99 +0.0148) p 0.0050  M;E excess 1.7597 bits (null q99 +0.0114) p 0.0050  free-assembly type ratio 2.525  (context, not gated)
+italian_dante: words>=5 41018, types 11598  B;E excess 1.6845 bits (null q99 +0.0071) p 0.0050  B;M excess 2.2485 bits (null q99 +0.0056) p 0.0050  M;E excess 1.7929 bits (null q99 +0.0082) p 0.0050  free-assembly type ratio 3.118  (context, not gated)
+german_faust: words>=5 13698, types 5306  B;E excess 1.5337 bits (null q99 +0.0156) p 0.0050  B;M excess 1.9034 bits (null q99 +0.0124) p 0.0050  M;E excess 1.5312 bits (null q99 +0.0115) p 0.0050  free-assembly type ratio 2.367  (context, not gated)
+OVERALL_CALL=RESTATED

@@ -1,0 +1,13 @@
+S109 - cross-section label network: ok-/ot- enrichment (CMH) and recurring adjacent pairs (D-066 (n))
+started Sun Oct 18 15:54:36 PDT 2026 (`date`)  priority=BelowNormal workers=1  free_RAM_GB=4.06 waited_s=0
+thresholds: ALPHA=0.01 N_SHUF=10000 N_PLANT=10 SEED=109018 FREQ_EDGES=[1, 2, 3, 4, 5, 6, 8, 12, 20, 50, 100] LEN_EDGES=[0, 4, 5, 6, 7, 8, 9, 11]
+[fix_freqonly_label] OR=5.727 95%CI=(1.065,30.803) CMH_p=0.07374 strata=3/35 types_used=59  para_hi=0.930 enrich_call=False
+[fix_freqonly_pairs] X=36 null_mean=39.687 null_sd=4.333 p=0.83458 pair_call=False
+[fix_enrich_label] OR=4.064 95%CI=(1.245,13.271) CMH_p=0.03572 strata=9/34 types_used=73  para_hi=1.444 enrich_call=False
+[fix_enrich_pairs] X=53 null_mean=46.958 null_sd=4.390 p=0.10645 pair_call=False
+[fix_pairs_label] OR=0.669 95%CI=(0.163,2.743) CMH_p=0.8513 strata=3/37 types_used=73  para_hi=1.286 enrich_call=False
+[fix_pairs_pairs] X=49 null_mean=37.465 null_sd=3.992 p=0.00250 pair_call=True
+[fix_shuffled_label] OR=0.670 95%CI=(0.154,2.924) CMH_p=0.8754 strata=4/33 types_used=57  para_hi=2.102 enrich_call=False
+[fix_shuffled_pairs] X=38 null_mean=40.469 null_sd=4.171 p=0.75512 pair_call=False
+FIXTURE_PASS=False
+finished Sun Oct 18 15:54:42 PDT 2026 (`date`) runtime_s=5.8

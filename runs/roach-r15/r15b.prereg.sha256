@@ -1,0 +1,11 @@
+# r15b pre-registration, voynich-91b (Roach). Frozen at (clock): 2026-10-18 20:44:03 Pacific Daylight Time
+# Message: <team-comms>
+# Fixture PASS before this freeze. See results_fixture.txt.
+# Test A: sum of eta^2 of quire on hand x section residuals, 10000 within-cell quire permutations.
+# DRIFT if p<0.01 on ZL3b and p<0.05 on RF1b-e and on IT2a.
+# Test B: same omnibus on R_within(1) and cadence excess. Report MDE at 80% (p<0.01 on >=8/10) and p. No DRIFT call.
+# Verify: grep -v "^#" r15b.prereg.sha256 | tr -d '\r' | sha256sum -c -
+d45b3b3c3f15515d87a299766964143cfbd87f39346f8291071591966ef341be  r15b.py
+bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc  ../dl_ZL/ZL3b-n.txt
+7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5  ../dl_IT/IT2a-n.txt
+e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782  ../dl_RF/RF1b-e.txt

@@ -1,0 +1,32 @@
+s115-A0 real-manuscript link control; script sha256=58a59d8e33fabdda8d007be0b43f5f342a3bf45500b778c1a14e28fd4c83d944
+run start 2026-10-18T20:39:52 (datetime.now); stub_match=True manifest_match=True
+fixture related=True: pairs=435 (a) share p<0.05 = 1.00; (b) share = 1.00; (b) median MRR 1.000
+fixture related=False: pairs=459 (a) share p<0.05 = 0.02; (b) share = 0.04; (b) median MRR 0.055
+FIXTURE_PASS=True
+units: 820 {'ljs419': 186, 'bod408': 165, 'sloane4016': 469}
+embedded on cuda:0 in 70s
+known pairs (b): 157; by pool ms {'bod408': 72, 'sloane4016': 85}
+same-name cross-ms pairs: n=213 mean picture z +0.782 vs other cross-ms -0.233 (Cohen d +1.241)
+
+=== TEST (a) s78 analog: partial Mantel picture similarity vs caption tf-idf similarity ===
+[a full clean] N=820 r=+0.0987 p=0.0010 null mean +0.0528 q99 +0.0710
+[a full noisy] N=820 r=+0.0852 p=0.0010 null mean +0.0498 q99 +0.0700
+[a N=119 voynich_noisy] R=200 share p<0.05 = 0.405; r median +0.0912 IQR [+0.0697, +0.1128]; p median 0.0920
+[a N=119 voynich_shuffled] R=200 share p<0.05 = 0.045; r median +0.0493 IQR [+0.0311, +0.0797]; p median 0.5575
+[a N=119 voynich_clean] R=200 share p<0.05 = 0.540; r median +0.1064 IQR [+0.0864, +0.1294]; p median 0.0340
+[a N=119 voynich_stem4] R=200 share p<0.05 = 0.485; r median +0.0896 IQR [+0.0685, +0.1133]; p median 0.0540
+[a N=240 noisy, descriptive] R=50 share p<0.05 = 0.740; r median +0.0923
+
+=== TEST (b) s48/s53 analog: label-defined partners retrieved by pictures (mean_cls_centred) ===
+[b full] pairs=157 pools={'bod408': 165, 'sloane4016': 469} MRR=0.3018 null mean 0.0299 q99 0.0566 p=0.0010 top1=32 top5=60 median pct 0.037
+[b full, exact-name pairs only, descriptive] pairs=110 MRR=0.3254 null mean 0.0291 p=0.0010 top1=24 top5=46
+[b 13 pairs / pool 123] R=200 share p<0.05 = 0.995; MRR median 0.4143 IQR [0.3388, 0.4822]; null mean median 0.0528; top5 median 7.0/13; s53-P1 rule share 0.875
+[b shuffled] R=200 share p<0.05 = 0.035; MRR median 0.0363
+
+=== CALLS (thresholds frozen in the docstring) ===
+CALL_A=False (power 0.405 >= 0.8? shuffled 0.045 <= 0.1?)
+CALL_B=True (power 0.995 >= 0.8? shuffled 0.035 <= 0.1?)
+CALL_C=NOT_RUN (no transcribed body text for these witnesses)
+REAL_LINK_RECOVERED=False
+OVERALL_CALL=REAL_LINK_NOT_RECOVERED (tests a, b; c not run)
+run end 2026-10-18T20:43:42

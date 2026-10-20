@@ -1,0 +1,8 @@
+# s109_label_network prereg stub (sha256sum format, LF, no BOM). Revision 0, frozen Sun Oct 18 15:55:37 PDT 2026 (`date`) before any real statistic.
+# Design: D-066 (n), frozen; header of s109_label_network.py holds section map (Zandbergen voynich.nu/illustr.html = ZL $I), locus rule, bins and calls.
+# Calls: LABEL_ENRICH_REAL = CMH p < 0.01 AND label MH OR > paragraph-control 95% upper bound; PAIR_EXCESS = within-page shuffle p < 0.01 (10,000 shuffles). Positive control 10 planted pairs p < 0.01; negative control shuffled labels no call.
+# Fixture: runs/s109/fixture_2.txt FIXTURE_PASS=True (fixture_0, fixture_1 = synthetic-only revisions, no real data read).
+# Verify: grep -v "^#" STUB | tr -d CR | sha256sum -c -
+81e1bd2df91beb63ea6b42b9b70a29ffc55388ed9914dc067f3ca474440dd1d2 *s109_label_network.py
+0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1 *vparse.py
+bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc *data/ZL3b-n.txt

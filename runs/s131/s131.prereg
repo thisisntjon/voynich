@@ -1,0 +1,9 @@
+# s131 prereg stub, frozen 2026-10-19 11:24:27 PDT by voynich-08 / b3796192 after fixture, before the real run; design and gates in the script docstring
+# note: the fixture reads ZL3b part marginals to plant FREE text; no S1/S2 statistic of real text was computed before this freeze
+# verify from runs/s131: grep -v '^#' s131.prereg | tr -d '\r' | sha256sum -c -
+e21b892e57e95b89e0ac69f91a4b90c668849eb22202bcf39afa654a5a2da344 *s131_f15_splitfree.py
+36b3bea099664b1a3141ce09de10017f7641152d8451c64e9c9aac30c0d7cc7e *fixture_output.txt
+47811c4d5d3a9a69827712b04c081e9be2ce5e971da73a40925e9dcbf740cf39 *../../data/vkb/vkb.sqlite
+84ac8411841a4d8f5f4a49b6a2cd1f466917c6a5af72916d5e0b2b1ecb2f659c *../../data/controls/latin_caesar.txt
+4669dcc00ee61ceffe92d871e61ea430cec87b35cbab24f19a4c0b1c7da521b2 *../../data/controls/italian_dante.txt
+fed2a58edd6910ee96d27ada614d34bcc41f03750d86541c41246bb74c564ff7 *../../data/controls/german_faust.txt

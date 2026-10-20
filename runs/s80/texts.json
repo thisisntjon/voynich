@@ -1,0 +1,353 @@
+{
+ "VOY_ZL3b": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 706,
+  "secs": 48.445950984954834,
+  "group": "VOY",
+  "matched": true
+ },
+ "VOY_RF1b": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5445,
+  "core_types": 689,
+  "secs": 50.775455951690674,
+  "group": "VOY",
+  "matched": true
+ },
+ "VOY_IT2a": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5433,
+  "core_types": 697,
+  "secs": 49.97798418998718,
+  "group": "VOY",
+  "matched": true
+ },
+ "VOYZ_ZL3b_zattera": {
+  "tokens": 6195,
+  "pages": 39,
+  "pairs": 5298,
+  "core_types": 122,
+  "secs": 59.06296753883362,
+  "group": "VOYZ",
+  "matched": true
+ },
+ "K1_latin_caesar": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 577,
+  "secs": 52.45809197425842,
+  "group": "CIPHER",
+  "matched": true
+ },
+ "K3_latin_caesar": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 892,
+  "secs": 62.944443225860596,
+  "group": "CIPHER",
+  "matched": true
+ },
+ "K1_latin_augustine": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 568,
+  "secs": 47.73602366447449,
+  "group": "CIPHER",
+  "matched": true
+ },
+ "K3_latin_augustine": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 911,
+  "secs": 53.71450448036194,
+  "group": "CIPHER",
+  "matched": true
+ },
+ "K1_italian_dante": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 568,
+  "secs": 48.45393204689026,
+  "group": "CIPHER",
+  "matched": true
+ },
+ "K3_italian_dante": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 907,
+  "secs": 59.25399971008301,
+  "group": "CIPHER",
+  "matched": true
+ },
+ "K1_german_faust": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 552,
+  "secs": 48.16121006011963,
+  "group": "CIPHER",
+  "matched": true
+ },
+ "K3_german_faust": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 952,
+  "secs": 61.024882316589355,
+  "group": "CIPHER",
+  "matched": true
+ },
+ "K1_german_kafka": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 557,
+  "secs": 46.6006236076355,
+  "group": "CIPHER",
+  "matched": true
+ },
+ "K3_german_kafka": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 927,
+  "secs": 56.135321617126465,
+  "group": "CIPHER",
+  "matched": true
+ },
+ "K1_english_alice": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 589,
+  "secs": 48.56005883216858,
+  "group": "CIPHER",
+  "matched": true
+ },
+ "K3_english_alice": {
+  "tokens": 6195,
+  "pages": 30,
+  "pairs": 5442,
+  "core_types": 957,
+  "secs": 56.18060111999512,
+  "group": "CIPHER",
+  "matched": true
+ },
+ "lang_italian_dante": {
+  "tokens": 6195,
+  "pages": 7,
+  "pairs": 5341,
+  "core_types": 1143,
+  "secs": 55.0045108795166,
+  "group": "LANG",
+  "matched": true
+ },
+ "lang_latin_cremma": {
+  "tokens": 6195,
+  "pages": 13,
+  "pairs": 5501,
+  "core_types": 1692,
+  "secs": 60.38145327568054,
+  "group": "LANG",
+  "matched": true
+ },
+ "lang_mhg_nibelungenlied": {
+  "tokens": 5172,
+  "pages": 4,
+  "pairs": 4557,
+  "core_types": 798,
+  "secs": 50.010082721710205,
+  "group": "LANG",
+  "matched": false
+ },
+ "lang_mhg_parzival": {
+  "tokens": 6195,
+  "pages": 39,
+  "pairs": 5045,
+  "core_types": 942,
+  "secs": 46.96669554710388,
+  "group": "LANG",
+  "matched": true
+ },
+ "lang_occitan_croisade": {
+  "tokens": 6195,
+  "pages": 27,
+  "pairs": 5483,
+  "core_types": 1038,
+  "secs": 54.20497107505798,
+  "group": "LANG",
+  "matched": true
+ },
+ "lang_oldfrench_roland": {
+  "tokens": 6195,
+  "pages": 58,
+  "pairs": 5351,
+  "core_types": 993,
+  "secs": 62.1587872505188,
+  "group": "LANG",
+  "matched": true
+ },
+ "realline_cremma_prose15": {
+  "tokens": 1730,
+  "pages": 3,
+  "pairs": 1514,
+  "core_types": 575,
+  "secs": 24.022860288619995,
+  "group": "LANG",
+  "matched": false
+ },
+ "realline_italian_dante": {
+  "tokens": 6195,
+  "pages": 7,
+  "pairs": 5315,
+  "core_types": 1174,
+  "secs": 63.814441442489624,
+  "group": "LANG",
+  "matched": true
+ },
+ "gen_s28_ZL3b_s1": {
+  "tokens": 6195,
+  "pages": 36,
+  "pairs": 5411,
+  "core_types": 973,
+  "secs": 45.48411297798157,
+  "group": "GEN",
+  "matched": true
+ },
+ "gen_c2_section": {
+  "tokens": 6195,
+  "pages": 36,
+  "pairs": 5411,
+  "core_types": 305,
+  "secs": 43.28284502029419,
+  "group": "GEN",
+  "matched": true
+ },
+ "gen_timm_schinner": {
+  "tokens": 6195,
+  "pages": 24,
+  "pairs": 5505,
+  "core_types": 490,
+  "secs": 53.807820320129395,
+  "group": "GEN",
+  "matched": true
+ },
+ "gen_schwartz_reuse": {
+  "tokens": 6195,
+  "pages": 36,
+  "pairs": 5411,
+  "core_types": 605,
+  "secs": 49.22331237792969,
+  "group": "GEN",
+  "matched": true
+ },
+ "gen_rugg_grille": {
+  "tokens": 6195,
+  "pages": 45,
+  "pairs": 5422,
+  "core_types": 412,
+  "secs": 59.14018535614014,
+  "group": "GEN",
+  "matched": true
+ },
+ "gen_G2layer_ZL3b_s1": {
+  "tokens": 6195,
+  "pages": 36,
+  "pairs": 5411,
+  "core_types": 1252,
+  "secs": 58.8769965171814,
+  "group": "GEN",
+  "matched": true
+ },
+ "s57_gen_IT2a_s1": {
+  "tokens": 6195,
+  "pages": 36,
+  "pairs": 5454,
+  "core_types": 802,
+  "secs": 59.132341384887695,
+  "group": "GEN57",
+  "matched": true
+ },
+ "s57_gen_IT2a_s2": {
+  "tokens": 6195,
+  "pages": 36,
+  "pairs": 5448,
+  "core_types": 806,
+  "secs": 49.44358491897583,
+  "group": "GEN57",
+  "matched": true
+ },
+ "s57_gen_IT2a_s3": {
+  "tokens": 6195,
+  "pages": 37,
+  "pairs": 5449,
+  "core_types": 799,
+  "secs": 63.79955053329468,
+  "group": "GEN57",
+  "matched": true
+ },
+ "s57_gen_RF1b_s1": {
+  "tokens": 6195,
+  "pages": 39,
+  "pairs": 5468,
+  "core_types": 828,
+  "secs": 49.78791522979736,
+  "group": "GEN57",
+  "matched": true
+ },
+ "s57_gen_RF1b_s2": {
+  "tokens": 6195,
+  "pages": 37,
+  "pairs": 5470,
+  "core_types": 808,
+  "secs": 58.679001331329346,
+  "group": "GEN57",
+  "matched": true
+ },
+ "s57_gen_RF1b_s3": {
+  "tokens": 6195,
+  "pages": 39,
+  "pairs": 5478,
+  "core_types": 824,
+  "secs": 51.7324378490448,
+  "group": "GEN57",
+  "matched": true
+ },
+ "s57_gen_ZL3b_s1": {
+  "tokens": 6195,
+  "pages": 39,
+  "pairs": 5464,
+  "core_types": 810,
+  "secs": 44.593945264816284,
+  "group": "GEN57",
+  "matched": true
+ },
+ "s57_gen_ZL3b_s2": {
+  "tokens": 6195,
+  "pages": 37,
+  "pairs": 5454,
+  "core_types": 773,
+  "secs": 43.90239858627319,
+  "group": "GEN57",
+  "matched": true
+ },
+ "s57_gen_ZL3b_s3": {
+  "tokens": 6195,
+  "pages": 39,
+  "pairs": 5471,
+  "core_types": 778,
+  "secs": 38.57101058959961,
+  "group": "GEN57",
+  "matched": true
+ }
+}

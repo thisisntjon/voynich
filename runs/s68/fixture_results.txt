@@ -1,0 +1,71 @@
+S68: Parisel's per-folio cho/che switch, within Davis hand
+start: Sun Oct 18 01:52:16 PDT 2026 (`date`)
+stub_match: NO STUB
+script sha256: 00f2937f182af09f3e9582eccaf8ba8d0b77629d3864f34e729fef6c5f90a0b3  tools/ivtff_to_meta.py sha256: 5a08d4252dabfbe5f4ef5f93e5f2808a678ebb76fe32d99891c8310679bc81aa
+  source FIXTURE: runs\s68\fixture.txt sha256 743e4b9a00081b724e6a26702a2e5eb5c2fea5272d2589a45c486902484dc700
+
+=== FIXTURE: 64 units (folio sides, panels merged), 4096 P-tokens, classified words 2057 (cho 816), units with n>=20: 64
+  hand x lang of entering units: {('1', 'A'): 30, ('2', 'B'): 20, ('3', 'B'): 14}
+  group     K      N  mean f     BC |  dAIC_BB   rho1 2-state means (w, rho)             | dAIC_bin |     phi null_med    q99       p
+  hand1    30    982   0.398  0.686 |   +25.91  0.272 0.678 (0.50,0.005); 0.122 (0.50,0.000) |   +296.2 |   11.69    0.975  1.667  0.0005
+  hand2B   20    642   0.481  0.285 |    -6.00  0.000 0.484 (0.50,0.000); 0.484 (0.50,0.000) |     -4.0 |    0.55    0.965  1.884  0.9430
+  hand3B   14    433   0.266  0.403 |    -6.00  0.000 0.268 (0.50,0.000); 0.268 (0.50,0.000) |     -4.0 |    0.64    0.961  2.106  0.8211
+  pooled   64   2057   0.395  0.489 |    -0.01  0.163 0.506 (0.69,0.073); 0.148 (0.31,0.002) |   +232.0 |    6.46    0.994  1.452  0.0005
+  secondary (glyph events [cs]h+o vs [cs]h+e, units with >=20 events):
+    hand1   K= 30 N=   982 mean f_ev=0.398 dAIC_BB=  +25.91 means 0.678, 0.122
+    hand2B  K= 20 N=   642 mean f_ev=0.481 dAIC_BB=   -6.00 means 0.484, 0.484
+    hand3B  K= 14 N=   433 mean f_ev=0.266 dAIC_BB=   -6.00 means 0.268, 0.268
+    pooled  K= 64 N=  2057 mean f_ev=0.395 dAIC_BB=   -0.01 means 0.506, 0.148
+  eta^2 of unit f (K=64): hand 0.129  Currier A/B 0.000  section 0.000
+    (units with $L in A/B only, K=64: hand 0.129 A/B 0.000 section 0.000)
+  d/l ratio (units with n>=20 and d+l>=20):
+    hand1   K= 30 mean d/l=0.509 sd=0.063  r(f, d/l)=-0.244
+    hand2B  K= 20 mean d/l=0.539 sd=0.064  r(f, d/l)=+0.105
+    hand3B  K= 14 mean d/l=0.510 sd=0.049  r(f, d/l)=-0.028
+    pooled  K= 64 mean d/l=0.519 sd=0.061  r(f, d/l)=-0.086
+  per-hand histograms of unit f:
+    hand 1 (K=30, langs {'A': 30}):
+      [0.0,0.1)   2 ##
+      [0.1,0.2)  12 ############
+      [0.2,0.3)   1 #
+      [0.3,0.4)   0 
+      [0.4,0.5)   0 
+      [0.5,0.6)   4 ####
+      [0.6,0.7)   4 ####
+      [0.7,0.8)   6 ######
+      [0.8,0.9)   1 #
+      [0.9,1.0]   0 
+    hand 2 (K=20, langs {'B': 20}):
+      [0.0,0.1)   0 
+      [0.1,0.2)   0 
+      [0.2,0.3)   0 
+      [0.3,0.4)   1 #
+      [0.4,0.5)  10 ##########
+      [0.5,0.6)   8 ########
+      [0.6,0.7)   1 #
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+    hand 3 (K=14, langs {'B': 14}):
+      [0.0,0.1)   0 
+      [0.1,0.2)   3 ###
+      [0.2,0.3)   7 #######
+      [0.3,0.4)   4 ####
+      [0.4,0.5)   0 
+      [0.5,0.6)   0 
+      [0.6,0.7)   0 
+      [0.7,0.8)   0 
+      [0.8,0.9)   0 
+      [0.9,1.0]   0 
+
+=== CONTROLS (ZL3b unit sizes per group, 20 replicates each) ===
+  hand1   K= 30: positive 9/20 called (dAIC median +9.7, min +3.1); negative (mean 0.396, rho 0.272) 20/20 correct (dAIC median -4.20, max +3.55) -> FAIL
+  hand2B  K= 20: positive 8/20 called (dAIC median +7.9, min -0.7); negative (mean 0.484, rho 0.005) 20/20 correct (dAIC median -5.93, max -1.51) -> FAIL
+  hand3B  K= 14: positive 2/20 called (dAIC median +5.4, min -1.0); negative (mean 0.268, rho 0.005) 20/20 correct (dAIC median -6.00, max -4.62) -> FAIL
+  pooled  K= 64: positive 20/20 called (dAIC median +33.5, min +11.5); negative (mean 0.397, rho 0.163) 20/20 correct (dAIC median -2.57, max +8.61) -> PASS
+  controls: FAIL
+
+=== VERDICT ===
+  FIXTURE: dAIC_BB hand1 +25.91  hand2B -6.00  hand3B -6.00  pooled -0.01  -> within=False scribe=False
+VERDICT s68: inconclusive: controls failed
+end: Sun Oct 18 01:53:33 PDT 2026 (`date`)  (elapsed 77 s)

@@ -1,0 +1,128 @@
+{
+ "row": {
+  "name": "nomen_numeric_lines",
+  "tokens": 25000,
+  "types": 7238,
+  "pages": 184,
+  "lines": 3118,
+  "errors": {},
+  "types_25k": 7238,
+  "h2": 3.351,
+  "sd_len": 0.986,
+  "jsd_first_fg": 0.117,
+  "p_init_enrich": null,
+  "m_final_enrich": null,
+  "cross_excess_eva": 0.0059,
+  "redup_pct": 0.0,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "cross_excess_eva",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "nomen_numeric_lines",
+   "tokens": 25000,
+   "types": 7238,
+   "hapax_rate": 0.619,
+   "mean_len": 2.788,
+   "sd_len": 0.986,
+   "h1": 4.0398,
+   "h2": 3.351,
+   "h3": 3.0665,
+   "zipf": -0.7909,
+   "redup_pct": 0.0,
+   "jsd_first_fg": 0.117,
+   "jsd_last_lg": 0.077,
+   "p_init_enrich": null,
+   "m_final_enrich": null,
+   "cross_mi_eva": 0.0138,
+   "cross_excess_eva": 0.0059,
+   "cross_mi_glyph": 0.0215,
+   "cross_excess_glyph": 0.0065,
+   "recur_le_1": 0.0,
+   "recur_le_5": 0.0145,
+   "recur_le_20": 0.074,
+   "recur_le_100": 0.1961
+  },
+  "x_edge_mi_word": 0.007476538485865376,
+  "x_hapax_10k": 0.6254396248534584,
+  "x_moran_I": 0.02268647122546271,
+  "x_position_entropy": 1.6149634861801536,
+  "x_ltr_minus_rtl": -0.02425239719654517,
+  "info_mi_adjacent": 0.29814221316948797,
+  "info_mi_page": 0.019806511838711405,
+  "info_samecol_minus_othercol": 0.004694765622368813,
+  "info_bpe_adjacent": 0.32182548074015827,
+  "lex_beta": 0.7768141010221766,
+  "lex_rate_late_early": 0.5315967197298601,
+  "lex_edit1_excess": 0.018651561204752698,
+  "slot_occupancy_pc": 0.11702605570530099,
+  "slot_table_likeness": 0.8752707590745658,
+  "slot_core_crowding": 1.0,
+  "bake_winner": "markov2",
+  "bake_char3_minus_unigram": -0.7002404474793291,
+  "bake_bits": {
+   "markov2": 11.89809138251354,
+   "markov3": 11.912843796668119,
+   "slot": 12.024904245443453,
+   "unigram_gt": 12.613084244147448,
+   "copy0.3+markov3": 12.255803055164794,
+   "copy0.1+markov3": 11.990778057479936,
+   "copy0.05+markov3": 11.941087306377012
+  },
+  "family": "C",
+  "note": "data/controls_synthetic/nomen_numeric_lines.meta.json; 35007 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 3,
+    "outs": 5,
+    "na": 2,
+    "out_metrics": [
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ]
+   },
+   "C": {
+    "ins": 8,
+    "outs": 0,
+    "na": 2,
+    "out_metrics": [],
+    "out_tight": []
+   },
+   "G": {
+    "ins": 4,
+    "outs": 4,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "redup_pct",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "x_ltr_minus_rtl"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "results_m4_phase1_board.json"
+}

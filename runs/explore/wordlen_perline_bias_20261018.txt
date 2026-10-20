@@ -1,0 +1,15 @@
+Exploratory check (not pre-registered), 2026-10-18 12:39 PDT, voynich-08.
+Question: Voynich Ninja thread "[split] Word length autocorrelation" (quimqu, nablator, Stolfi, 2025-09-05) reports Voynich lag-1
+word-length Pearson r = +0.16 globally but about -0.07 averaged line by line, and reads the per-line value as "natural-like".
+Method: lines with >= 3 words; per-line Pearson r of lengths (w_i, w_i+1) averaged over lines; pooled within-line r; each
+compared with 20 within-line shuffles (word order randomised inside each line, same lines, same lengths).
+Loader: scoreboard.run_v2.load_meta; data/translit/ZL3b_eva.meta.json, data/controls_realline/cremma_all.meta.json, italian_dante.meta.json.
+
+text                          per-line mean r  shuffled  excess | pooled within-line r  shuffled
+Voynich ZL3b                           -0.071    -0.153   0.082 |                0.160     0.069
+CREMMA Latin (real lines)              -0.182    -0.149  -0.033 |                0.036     0.074
+Dante Italian                          -0.261    -0.167  -0.094 |               -0.146    -0.054
+
+Reading: the per-line mean is biased negative for short series (shuffled lines give -0.15 to -0.17). Against that baseline
+Voynich is POSITIVE (+0.082) and the natural texts are negative (-0.03, -0.09). The forum's "-0.07 natural-like" is the
+small-sample bias, not language-like alternation. Consistent with F-04 (within-line Moran I 0.157 vs shuffle q99 0.081).

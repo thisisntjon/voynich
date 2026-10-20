@@ -1,0 +1,482 @@
+s85_loqo_mdl_and_triangulation_closures.py  start=2026-10-18 05:21:31 (datetime.now)  seed=20261017
+stub_match: True
+sha256 s85_loqo_mdl_and_triangulation_closures.py: 48e4938d72c40ccfec8c8431fdb9d0fa38e02c47511280837cc871aecf7389d9
+sha256 s85_loqo_mdl_and_triangulation_closures.prereg.sha256: 0faa471faabfaa67b79eb9fdd3c11d9e05eb492afee5bd217b28bbf46f6f9691
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  local import p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  local import s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  local import s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  local import s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  local import s64_naibbe_taxonomy.py sha256=6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3
+  local import s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  local import s71_weakened_grille_and_sticky_naibbe_loqo.py sha256=9b4f024792c778ae300fd14d7d1e85f03243d50964b1f7f61ba09f1553c11a18
+  local import s75_transposition_nulls_and_mdl_bakeoff.py sha256=4f35f09afaaf525b01b99df8231cfc7019071bc67f4770efe56039a4a06a0828
+  local import s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  local import s77_deconfounded_scribe_and_comma_ablation_loqo.py sha256=56eb6afdafdc57654b56a7019ee6a9410752db9ffb08c3a9112f83dd0798cc5d
+  local import s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  local import s81_sticky_table_loqo.py sha256=418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063
+  local import s85_loqo_mdl_and_triangulation_closures.py sha256=48e4938d72c40ccfec8c8431fdb9d0fa38e02c47511280837cc871aecf7389d9
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+python 3.11.9; numpy 2.4.6; single-process CPU execution
+
+Loaded ZL3b (ZL3b_eva.meta.json): 207 pages, 34857 tokens, 15 LOQO folds=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'M', 'N', 'O', 'Q', 'S', 'T']
+Loaded RF1b (RF1b.meta.json): 207 pages, 34618 tokens, 15 LOQO folds=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'M', 'N', 'O', 'Q', 'S', 'T']
+Loaded IT2a (IT2a.meta.json): 206 pages, 34411 tokens, 15 LOQO folds=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'M', 'N', 'O', 'Q', 'S', 'T']
+
+================================================================================================
+PART 1 (F-38 / O-028 on 15-Quire LOQO & Independent Segmenters — Discharging X-07 & X-01 on F-38)
+================================================================================================
+
+--- 1A. 15-Quire LOQO Held-Out Bits/Token & Bits/Char Across ZL3b, RF1b, IT2a and 3 Independent Segmenters ---
+
+  [ZL3b | SlotSegmenter] 15-Quire LOQO (held-out tokens=34721, chars=208045; 12/2 tuned lambdas: word_ctx=0.15, M4=0.65, M1=0.20; Sigma^+ norm: pref=1.000000000, core=1.000000000, suff=1.000000000)
+  Model                   Tok-Wt bits/tok [15-Quire 95% CI]  Quire-Mean  bits/char     Gain vs M1_char3_wb [95% CI]  Folds Beat M1
+  M0_unigram_renorm                  11.646 [11.191,12.009]      11.892      1.944                           -0.089              -
+  M1_char3_wb                        11.557 [11.079,11.934]      11.811      1.929                           +0.000              -
+  M1_char3_exact                     11.557 [11.079,11.934]      11.811      1.929                           +0.000              -
+  M2_slot_indep                      11.498 [11.054,11.857]      11.749      1.919           +0.059 [+0.025,+0.087]          14/15
+  M3_slot_pos_scribe                 11.359 [10.933,11.696]      11.554      1.896           +0.198 [+0.121,+0.306]          15/15
+  M4_slot_s69_chain                  11.365 [10.943,11.709]      11.585      1.897           +0.192 [+0.117,+0.267]          15/15
+  M5_mixture_full                    11.275 [10.823,11.620]      11.481      1.882           +0.282 [+0.231,+0.369]          15/15
+
+  [ZL3b | Zattera] 15-Quire LOQO (held-out tokens=34721, chars=208045; 12/2 tuned lambdas: word_ctx=0.15, M4=0.40, M1=0.45; Sigma^+ norm: pref=1.000000000, core=1.000000000, suff=1.000000000)
+  Model                   Tok-Wt bits/tok [15-Quire 95% CI]  Quire-Mean  bits/char     Gain vs M1_char3_wb [95% CI]  Folds Beat M1
+  M0_unigram_renorm                  11.646 [11.211,12.004]      11.892      1.944                           -0.089              -
+  M1_char3_wb                        11.557 [11.101,11.928]      11.811      1.929                           +0.000              -
+  M1_char3_exact                     11.557 [11.101,11.928]      11.811      1.929                           +0.000              -
+  M2_slot_indep                      11.525 [11.081,11.894]      11.776      1.923           +0.032 [+0.021,+0.041]          15/15
+  M3_slot_pos_scribe                 11.417 [10.971,11.774]      11.605      1.905           +0.140 [+0.083,+0.264]          15/15
+  M4_slot_s69_chain                  11.453 [11.009,11.817]      11.662      1.911           +0.104 [+0.056,+0.195]          12/15
+  M5_mixture_full                    11.346 [10.883,11.712]      11.554      1.893           +0.211 [+0.172,+0.298]          15/15
+
+  [ZL3b | Seg_Affix2] 15-Quire LOQO (held-out tokens=34721, chars=208045; 12/2 tuned lambdas: word_ctx=0.15, M4=0.35, M1=0.50; Sigma^+ norm: pref=1.000000000, core=1.000000000, suff=1.000000000)
+  Model                   Tok-Wt bits/tok [15-Quire 95% CI]  Quire-Mean  bits/char     Gain vs M1_char3_wb [95% CI]  Folds Beat M1
+  M0_unigram_renorm                  11.646 [11.172,12.014]      11.892      1.944                           -0.089              -
+  M1_char3_wb                        11.557 [11.058,11.936]      11.811      1.929                           +0.000              -
+  M1_char3_exact                     11.557 [11.058,11.936]      11.811      1.929                           +0.000              -
+  M2_slot_indep                      11.493 [11.018,11.864]      11.743      1.918           +0.064 [+0.041,+0.082]          15/15
+  M3_slot_pos_scribe                 11.440 [10.972,11.790]      11.640      1.909           +0.117 [+0.068,+0.207]          15/15
+  M4_slot_s69_chain                  11.484 [11.017,11.840]      11.701      1.917           +0.073 [+0.039,+0.132]          12/15
+  M5_mixture_full                    11.339 [10.850,11.705]      11.546      1.892           +0.218 [+0.181,+0.295]          15/15
+
+  [RF1b | SlotSegmenter] 15-Quire LOQO (held-out tokens=34484, chars=208847; 12/2 tuned lambdas: word_ctx=0.15, M4=0.65, M1=0.20; Sigma^+ norm: pref=1.000000000, core=1.000000000, suff=1.000000000)
+  Model                   Tok-Wt bits/tok [15-Quire 95% CI]  Quire-Mean  bits/char     Gain vs M1_char3_wb [95% CI]  Folds Beat M1
+  M0_unigram_renorm                  11.823 [11.305,12.248]      12.118      1.952                           -0.099              -
+  M1_char3_wb                        11.724 [11.182,12.169]      12.036      1.936                           +0.000              -
+  M1_char3_exact                     11.724 [11.182,12.169]      12.036      1.936                           +0.000              -
+  M2_slot_indep                      11.667 [11.152,12.108]      11.973      1.926           +0.057 [+0.028,+0.083]          15/15
+  M3_slot_pos_scribe                 11.527 [11.053,11.908]      11.774      1.903           +0.198 [+0.123,+0.314]          15/15
+  M4_slot_s69_chain                  11.534 [11.060,11.932]      11.807      1.904           +0.191 [+0.117,+0.266]          15/15
+  M5_mixture_full                    11.445 [10.946,11.843]      11.703      1.890           +0.279 [+0.230,+0.373]          15/15
+
+  [RF1b | Zattera] 15-Quire LOQO (held-out tokens=34484, chars=208847; 12/2 tuned lambdas: word_ctx=0.15, M4=0.40, M1=0.45; Sigma^+ norm: pref=1.000000000, core=1.000000000, suff=1.000000000)
+  Model                   Tok-Wt bits/tok [15-Quire 95% CI]  Quire-Mean  bits/char     Gain vs M1_char3_wb [95% CI]  Folds Beat M1
+  M0_unigram_renorm                  11.823 [11.297,12.261]      12.118      1.952                           -0.099              -
+  M1_char3_wb                        11.724 [11.172,12.184]      12.036      1.936                           +0.000              -
+  M1_char3_exact                     11.724 [11.172,12.184]      12.036      1.936                           +0.000              -
+  M2_slot_indep                      11.698 [11.153,12.152]      12.002      1.932           +0.026 [+0.017,+0.037]          15/15
+  M3_slot_pos_scribe                 11.591 [11.061,11.988]      11.831      1.914           +0.133 [+0.073,+0.264]          15/15
+  M4_slot_s69_chain                  11.630 [11.095,12.036]      11.892      1.920           +0.094 [+0.046,+0.193]          12/15
+  M5_mixture_full                    11.522 [10.964,11.934]      11.782      1.902           +0.203 [+0.159,+0.296]          15/15
+
+  [RF1b | Seg_Affix2] 15-Quire LOQO (held-out tokens=34484, chars=208847; 12/2 tuned lambdas: word_ctx=0.15, M4=0.35, M1=0.50; Sigma^+ norm: pref=1.000000000, core=1.000000000, suff=1.000000000)
+  Model                   Tok-Wt bits/tok [15-Quire 95% CI]  Quire-Mean  bits/char     Gain vs M1_char3_wb [95% CI]  Folds Beat M1
+  M0_unigram_renorm                  11.823 [11.360,12.246]      12.118      1.952                           -0.099              -
+  M1_char3_wb                        11.724 [11.240,12.170]      12.036      1.936                           +0.000              -
+  M1_char3_exact                     11.724 [11.240,12.170]      12.036      1.936                           +0.000              -
+  M2_slot_indep                      11.664 [11.200,12.096]      11.964      1.926           +0.060 [+0.041,+0.078]          15/15
+  M3_slot_pos_scribe                 11.611 [11.153,12.005]      11.853      1.917           +0.114 [+0.068,+0.224]          15/15
+  M4_slot_s69_chain                  11.653 [11.188,12.057]      11.919      1.924           +0.072 [+0.038,+0.141]          14/15
+  M5_mixture_full                    11.513 [11.039,11.924]      11.766      1.901           +0.212 [+0.175,+0.300]          15/15
+
+  [IT2a | SlotSegmenter] 15-Quire LOQO (held-out tokens=34275, chars=207995; 12/2 tuned lambdas: word_ctx=0.15, M4=0.60, M1=0.25; Sigma^+ norm: pref=1.000000000, core=1.000000000, suff=1.000000000)
+  Model                   Tok-Wt bits/tok [15-Quire 95% CI]  Quire-Mean  bits/char     Gain vs M1_char3_wb [95% CI]  Folds Beat M1
+  M0_unigram_renorm                  11.728 [11.264,12.127]      12.008      1.933                           -0.091              -
+  M1_char3_wb                        11.638 [11.152,12.049]      11.925      1.918                           +0.000              -
+  M1_char3_exact                     11.638 [11.152,12.049]      11.925      1.918                           +0.000              -
+  M2_slot_indep                      11.579 [11.117,11.979]      11.862      1.908           +0.059 [+0.031,+0.083]          15/15
+  M3_slot_pos_scribe                 11.449 [11.013,11.808]      11.675      1.887           +0.188 [+0.115,+0.307]          15/15
+  M4_slot_s69_chain                  11.465 [11.035,11.831]      11.712      1.889           +0.172 [+0.107,+0.257]          15/15
+  M5_mixture_full                    11.372 [10.911,11.748]      11.609      1.874           +0.266 [+0.220,+0.363]          15/15
+
+  [IT2a | Zattera] 15-Quire LOQO (held-out tokens=34275, chars=207995; 12/2 tuned lambdas: word_ctx=0.15, M4=0.35, M1=0.50; Sigma^+ norm: pref=1.000000000, core=1.000000000, suff=1.000000000)
+  Model                   Tok-Wt bits/tok [15-Quire 95% CI]  Quire-Mean  bits/char     Gain vs M1_char3_wb [95% CI]  Folds Beat M1
+  M0_unigram_renorm                  11.728 [11.222,12.102]      12.008      1.933                           -0.091              -
+  M1_char3_wb                        11.638 [11.106,12.025]      11.925      1.918                           +0.000              -
+  M1_char3_exact                     11.638 [11.106,12.025]      11.925      1.918                           +0.000              -
+  M2_slot_indep                      11.604 [11.082,11.986]      11.885      1.912           +0.033 [+0.024,+0.041]          14/15
+  M3_slot_pos_scribe                 11.496 [10.993,11.873]      11.709      1.894           +0.142 [+0.080,+0.276]          15/15
+  M4_slot_s69_chain                  11.535 [11.033,11.909]      11.768      1.901           +0.103 [+0.053,+0.202]          13/15
+  M5_mixture_full                    11.432 [10.908,11.816]      11.671      1.884           +0.205 [+0.163,+0.292]          15/15
+
+  [IT2a | Seg_Affix2] 15-Quire LOQO (held-out tokens=34275, chars=207995; 12/2 tuned lambdas: word_ctx=0.15, M4=0.30, M1=0.55; Sigma^+ norm: pref=1.000000000, core=1.000000000, suff=1.000000000)
+  Model                   Tok-Wt bits/tok [15-Quire 95% CI]  Quire-Mean  bits/char     Gain vs M1_char3_wb [95% CI]  Folds Beat M1
+  M0_unigram_renorm                  11.728 [11.268,12.095]      12.008      1.933                           -0.091              -
+  M1_char3_wb                        11.638 [11.154,12.019]      11.925      1.918                           +0.000              -
+  M1_char3_exact                     11.638 [11.154,12.019]      11.925      1.918                           +0.000              -
+  M2_slot_indep                      11.576 [11.113,11.949]      11.856      1.908           +0.061 [+0.042,+0.077]          15/15
+  M3_slot_pos_scribe                 11.522 [11.060,11.873]      11.748      1.899           +0.115 [+0.070,+0.214]          15/15
+  M4_slot_s69_chain                  11.571 [11.108,11.930]      11.817      1.907           +0.067 [+0.036,+0.130]          14/15
+  M5_mixture_full                    11.430 [10.943,11.797]      11.669      1.883           +0.208 [+0.174,+0.287]          15/15
+
+--- 1B. Per-Quire Held-Out Gain (bits/token over M1_char3_wb) Across All 15 Quires (ZL3b) ---
+  Quire    Toks    M1_wb | SlotSeg M4_gain SlotSeg M5_gain | Zattera M4_gain Zattera M5_gain | SegAff2 M4_gain SegAff2 M5_gain
+  A        1520   12.142 |          +0.335          +0.437 |          +0.293          +0.361 |          +0.211          +0.351
+  B        1041   11.439 |          +0.443          +0.575 |          +0.390          +0.465 |          +0.255          +0.445
+  C        1431   11.730 |          +0.400          +0.524 |          +0.396          +0.446 |          +0.211          +0.383
+  D        1272   11.498 |          +0.288          +0.409 |          +0.217          +0.319 |          +0.165          +0.328
+  E        1556   11.024 |          +0.293          +0.394 |          +0.228          +0.327 |          +0.133          +0.301
+  F        1708   11.710 |          +0.248          +0.333 |          +0.164          +0.255 |          +0.066          +0.224
+  G        1521   11.737 |          +0.299          +0.417 |          +0.202          +0.316 |          +0.142          +0.309
+  H        1290   12.549 |          +0.175          +0.228 |          -0.003          +0.112 |          -0.000          +0.141
+  I         367   13.566 |          +0.253          +0.319 |          +0.081          +0.202 |          +0.190          +0.312
+  M        6800   10.499 |          +0.029          +0.165 |          -0.003          +0.150 |          -0.006          +0.165
+  N        1692   11.287 |          +0.076          +0.142 |          -0.012          +0.088 |          -0.014          +0.112
+  O        1380   12.200 |          +0.056          +0.228 |          +0.058          +0.238 |          +0.073          +0.270
+  Q         911   12.038 |          +0.230          +0.267 |          +0.146          +0.195 |          +0.091          +0.185
+  S        1396   11.897 |          +0.045          +0.256 |          +0.011          +0.232 |          +0.074          +0.295
+  T       10836   11.851 |          +0.224          +0.255 |          +0.069          +0.149 |          +0.057          +0.160
+
+--- 1C. Pre-Registered Call C1_LOQO_MDL (15-Quire LOQO x 3 Transliterations x 3 Segmenters) ---
+  ZL3b  | SlotSegmenter : gain_M3=+0.198 [+0.121,+0.306] (15/15) | gain_M4=+0.192 [+0.117,+0.267] (15/15) | gain_M5=+0.282 [+0.231,+0.369] (15/15) -> PASS
+  ZL3b  | Zattera       : gain_M3=+0.140 [+0.083,+0.264] (15/15) | gain_M4=+0.104 [+0.056,+0.195] (12/15) | gain_M5=+0.211 [+0.172,+0.298] (15/15) -> PASS
+  ZL3b  | Seg_Affix2    : gain_M3=+0.117 [+0.068,+0.207] (15/15) | gain_M4=+0.073 [+0.039,+0.132] (12/15) | gain_M5=+0.218 [+0.181,+0.295] (15/15) -> PASS
+  RF1b  | SlotSegmenter : gain_M3=+0.198 [+0.123,+0.314] (15/15) | gain_M4=+0.191 [+0.117,+0.266] (15/15) | gain_M5=+0.279 [+0.230,+0.373] (15/15) -> PASS
+  RF1b  | Zattera       : gain_M3=+0.133 [+0.073,+0.264] (15/15) | gain_M4=+0.094 [+0.046,+0.193] (12/15) | gain_M5=+0.203 [+0.159,+0.296] (15/15) -> PASS
+  RF1b  | Seg_Affix2    : gain_M3=+0.114 [+0.068,+0.224] (15/15) | gain_M4=+0.072 [+0.038,+0.141] (14/15) | gain_M5=+0.212 [+0.175,+0.300] (15/15) -> PASS
+  IT2a  | SlotSegmenter : gain_M3=+0.188 [+0.115,+0.307] (15/15) | gain_M4=+0.172 [+0.107,+0.257] (15/15) | gain_M5=+0.266 [+0.220,+0.363] (15/15) -> PASS
+  IT2a  | Zattera       : gain_M3=+0.142 [+0.080,+0.276] (15/15) | gain_M4=+0.103 [+0.053,+0.202] (13/15) | gain_M5=+0.205 [+0.163,+0.292] (15/15) -> PASS
+  IT2a  | Seg_Affix2    : gain_M3=+0.115 [+0.070,+0.214] (15/15) | gain_M4=+0.067 [+0.036,+0.130] (14/15) | gain_M5=+0.208 [+0.174,+0.287] (15/15) -> PASS
+  C1_LOQO_MDL VERDICT: 9/9 cells pass -> TRUE (X-07 and X-01 on F-38 DISCHARGED)
+
+================================================================================================
+PART 2 (F-30 & F-34 Segmenter-Independence on 15-Quire LOQO — Discharging X-01 on F-30 and F-34)
+================================================================================================
+
+--- 2A. Full-Corpus (166->41 Split) s69 Prefix-Memory Profile Across All 3 Independent Segmenters ---
+  Text / Producer              Segmenter                  M1 [95% CI]    M1_ex    M3-M1       M7  M8-M7_ex    b_pos    a_pos   k4/k1 Calls (C1,C2,C3p,C4p,C5)
+  Voynich_ZL3b                 SlotSegmenter  +0.0999 [+0.0815,+0.1148]  +0.0827  -0.4799  +0.6881   +0.0766  -0.0674  +0.0432  +0.223 C1:T C2:F C3p:T C4p:F C5:T
+  Voynich_ZL3b                 Zattera        +0.0085 [+0.0017,+0.0137]  +0.0139  -0.0671  +0.5964   +0.0172  -0.0313  -0.0057  -0.124 C1:T C2:F C3p:F C4p:F C5:T
+  Voynich_ZL3b                 Seg_Affix2     +0.0800 [+0.0644,+0.0903]  +0.0684  -0.3348  +0.7956   +0.0585  -0.0472  +0.0224  +0.159 C1:T C2:F C3p:T C4p:F C5:T
+  Voynich_RF1b                 SlotSegmenter  +0.0951 [+0.0759,+0.1098]  +0.0818  -0.4829  +0.6818   +0.0783  -0.0922  +0.0306  +0.130 C1:T C2:F C3p:T C4p:F C5:T
+  Voynich_RF1b                 Zattera        +0.0079 [-0.0004,+0.0126]  +0.0143  -0.0705  +0.6149   +0.0202  -0.0296  -0.0035  -1.115 C1:T C2:F C3p:F C4p:F C5:T
+  Voynich_RF1b                 Seg_Affix2     +0.0781 [+0.0636,+0.0884]  +0.0674  -0.3376  +0.8187   +0.0707  -0.0567  +0.0185  +0.100 C1:T C2:F C3p:T C4p:F C5:T
+  Voynich_IT2a                 SlotSegmenter  +0.0961 [+0.0769,+0.1097]  +0.0763  -0.4534  +0.8424   +0.0751  -0.0420  +0.0452  +0.209 C1:T C2:F C3p:T C4p:F C5:T
+  Voynich_IT2a                 Zattera        +0.0061 [-0.0008,+0.0108]  +0.0125  -0.0831  +0.6232   +0.0171  -0.0220  -0.0098  -1.471 C1:T C2:F C3p:F C4p:F C5:T
+  Voynich_IT2a                 Seg_Affix2     +0.0772 [+0.0631,+0.0869]  +0.0658  -0.3268  +0.8425   +0.0594  -0.0265  +0.0228  +0.142 C1:T C2:F C3p:T C4p:F C5:T
+  WTG_ZL3b                     SlotSegmenter  +0.1343 [+0.1242,+0.1423]  +0.1390  -0.4804  +0.5979   +0.2121  -0.1113  +0.0505  +0.016 C1:T C2:F C3p:T C4p:F C5:T
+  WTG_ZL3b                     Zattera        +0.0011 [-0.0053,+0.0066]  +0.0120  -0.0863  +0.5951   +0.0128  -0.0253  -0.0078  -5.109 C1:T C2:F C3p:F C4p:F C5:T
+  WTG_ZL3b                     Seg_Affix2     +0.0506 [+0.0418,+0.0569]  +0.0530  -0.3544  +0.9073   +0.0810  -0.0464  +0.0067  -0.039 C1:T C2:F C3p:T C4p:T C5:T
+  CA_ZL3b                      SlotSegmenter  -0.0040 [-0.0076,-0.0004]  +0.0160  -0.5359  +0.5788   -0.0060  -0.1297  -0.0380  +5.481 C1:T C2:F C3p:F C4p:F C5:T
+  CA_ZL3b                      Zattera        -0.0029 [-0.0046,-0.0005]  +0.0025  -0.0517  +0.5587   -0.0004  -0.0533  -0.0096  +2.207 C1:T C2:F C3p:F C4p:F C5:T
+  CA_ZL3b                      Seg_Affix2     +0.0005 [-0.0023,+0.0029]  +0.0073  -0.3649  +0.7593   +0.0113  -0.0588  -0.0277 -21.210 C1:T C2:F C3p:F C4p:F C5:T
+  Naibbe_default_latin_cremma  SlotSegmenter  -0.0187 [-0.0217,-0.0160]  +0.0026  -0.5159  +0.7291   +0.0128  -0.0953  -0.0318  +1.841 C1:T C2:F C3p:F C4p:F C5:T
+  Naibbe_default_latin_cremma  Zattera        -0.0077 [-0.0100,-0.0050]  +0.0027  -0.1261  +0.6489   -0.0016  -0.0425  -0.0088  +1.995 C1:T C2:F C3p:F C4p:F C5:T
+  Naibbe_default_latin_cremma  Seg_Affix2     -0.0072 [-0.0085,-0.0056]  +0.0011  -0.4085  +0.9059   +0.0024  -0.0775  -0.0135  +1.325 C1:T C2:F C3p:F C4p:F C5:T
+  Naibbe_default_italian_dante SlotSegmenter  -0.0144 [-0.0169,-0.0113]  +0.0038  -0.4439  +0.4729   +0.0052  -0.0798  -0.0230  +1.740 C1:T C2:F C3p:F C4p:F C5:T
+  Naibbe_default_italian_dante Zattera        -0.0062 [-0.0089,-0.0025]  +0.0051  -0.1010  +0.6203   +0.0061  -0.0219  -0.0112  +3.159 C1:T C2:F C3p:F C4p:F C5:T
+  Naibbe_default_italian_dante Seg_Affix2     -0.0023 [-0.0053,+0.0008]  +0.0080  -0.4376  +0.9323   +0.0234  -0.0633  -0.0099  +6.961 C1:T C2:F C3p:F C4p:F C5:T
+  Naibbe_line_sticky75_latin_cremma SlotSegmenter  +0.1164 [+0.1088,+0.1242]  +0.1028  -0.3158  +0.7895   +0.1238  -0.0952  +0.1446  -0.145 C1:T C2:F C3p:T C4p:F C5:T
+  Naibbe_line_sticky75_latin_cremma Zattera        +0.0221 [+0.0170,+0.0269]  +0.0275  -0.1209  +0.6424   +0.0432  -0.0473  +0.0317  -0.588 C1:T C2:F C3p:F C4p:F C5:T
+  Naibbe_line_sticky75_latin_cremma Seg_Affix2     +0.0556 [+0.0490,+0.0615]  +0.0495  -0.3062  +1.1564   +0.0801  -0.0629  +0.0770  -0.184 C1:T C2:F C3p:T C4p:F C5:T
+  Naibbe_line_sticky75_italian_dante SlotSegmenter  +0.1119 [+0.1048,+0.1175]  +0.0998  -0.3579  +0.4291   +0.1425  -0.0987  +0.1393  -0.137 C1:T C2:F C3p:T C4p:F C5:T
+  Naibbe_line_sticky75_italian_dante Zattera        +0.0162 [+0.0112,+0.0215]  +0.0224  -0.1256  +0.6444   +0.0406  -0.0462  +0.0177  -1.155 C1:T C2:F C3p:T C4p:F C5:T
+  Naibbe_line_sticky75_italian_dante Seg_Affix2     +0.0754 [+0.0669,+0.0827]  +0.0685  -0.3934  +0.9203   +0.0882  -0.0536  +0.0944  -0.120 C1:T C2:F C3p:T C4p:F C5:T
+  Naibbe_line_lock_latin_cremma SlotSegmenter  +0.2171 [+0.2077,+0.2289]  +0.0089  -0.0771  +0.8450   +0.0150  -0.0800  +0.3091  +0.891 C1:T C2:F C3p:T C4p:F C5:F
+  Naibbe_line_lock_latin_cremma Zattera        +0.0521 [+0.0456,+0.0589]  -0.0020  -0.0309  +0.6782   -0.0092  -0.0269  +0.0669  +0.827 C1:T C2:F C3p:T C4p:F C5:F
+  Naibbe_line_lock_latin_cremma Seg_Affix2     +0.1264 [+0.1178,+0.1358]  +0.0064  -0.1919  +1.0819   +0.0259  -0.0345  +0.1922  +0.930 C1:T C2:F C3p:T C4p:F C5:F
+  Naibbe_line_lock_italian_dante SlotSegmenter  +0.2454 [+0.2372,+0.2555]  +0.0234  -0.1134  +0.4616   +0.0464  -0.1302  +0.3534  +0.869 C1:T C2:F C3p:T C4p:F C5:F
+  Naibbe_line_lock_italian_dante Zattera        +0.0457 [+0.0384,+0.0535]  -0.0041  -0.0536  +0.7176   -0.0075  -0.0395  +0.0634  +1.275 C1:T C2:F C3p:T C4p:F C5:F
+  Naibbe_line_lock_italian_dante Seg_Affix2     +0.1544 [+0.1473,+0.1636]  +0.0201  -0.1936  +1.0410   +0.0467  -0.0713  +0.2247  +0.847 C1:T C2:F C3p:T C4p:F C5:F
+
+--- 2B. 15-Quire LOQO Evaluation of WTG and CA Under SlotSegmenter, Zattera, and Seg_Affix2 (F-30 / X-01) ---
+  ZL3b  | SlotSegmenter  | CA         : folds >=5/6 =  0/15 | P1:14/15 P2: 2/15 P3: 1/15 P4: 1/15 P5:13/15 P7: 9/15 | mean P2=-0.0054, P3=-0.0004 | s69_dir=13/15
+  ZL3b  | SlotSegmenter  | WTG_global : folds >=5/6 =  0/15 | P1: 5/15 P2: 9/15 P3: 2/15 P4:12/15 P5: 0/15 P7:13/15 | mean P2=-0.1229, P3=+0.0848 | s69_dir=15/15
+  ZL3b  | Zattera        | CA         : folds >=5/6 =  3/15 | P1:14/15 P2:11/15 P3: 5/15 P4: 1/15 P5:13/15 P7: 9/15 | mean P2=-0.0688, P3=-0.0053 | s69_dir= 6/15
+  ZL3b  | Zattera        | WTG_global : folds >=5/6 =  1/15 | P1: 5/15 P2: 6/15 P3: 3/15 P4:12/15 P5: 0/15 P7:13/15 | mean P2=-0.1247, P3=+0.0017 | s69_dir= 7/15
+  ZL3b  | Seg_Affix2     | CA         : folds >=5/6 =  0/15 | P1:14/15 P2: 4/15 P3: 3/15 P4: 1/15 P5:13/15 P7: 9/15 | mean P2=-0.0405, P3=+0.0048 | s69_dir= 7/15
+  ZL3b  | Seg_Affix2     | WTG_global : folds >=5/6 =  1/15 | P1: 5/15 P2: 8/15 P3: 3/15 P4:12/15 P5: 0/15 P7:13/15 | mean P2=-0.1824, P3=+0.0434 | s69_dir= 9/15
+  RF1b  | SlotSegmenter  | CA         : folds >=5/6 =  1/15 | P1:13/15 P2: 2/15 P3: 2/15 P4: 7/15 P5:11/15 P7:11/15 | mean P2=-0.0048, P3=+0.0016 | s69_dir=11/15
+  RF1b  | SlotSegmenter  | WTG_global : folds >=5/6 =  0/15 | P1: 6/15 P2: 7/15 P3: 5/15 P4:11/15 P5: 0/15 P7:11/15 | mean P2=-0.1409, P3=+0.0856 | s69_dir=14/15
+  RF1b  | Zattera        | CA         : folds >=5/6 =  6/15 | P1:13/15 P2:10/15 P3: 5/15 P4: 7/15 P5:11/15 P7:11/15 | mean P2=-0.0486, P3=-0.0034 | s69_dir= 6/15
+  RF1b  | Zattera        | WTG_global : folds >=5/6 =  0/15 | P1: 6/15 P2: 5/15 P3: 7/15 P4:11/15 P5: 0/15 P7:11/15 | mean P2=-0.1472, P3=+0.0018 | s69_dir= 6/15
+  RF1b  | Seg_Affix2     | CA         : folds >=5/6 =  1/15 | P1:13/15 P2: 2/15 P3: 1/15 P4: 7/15 P5:11/15 P7:11/15 | mean P2=-0.0143, P3=+0.0085 | s69_dir=11/15
+  RF1b  | Seg_Affix2     | WTG_global : folds >=5/6 =  0/15 | P1: 6/15 P2: 6/15 P3: 3/15 P4:11/15 P5: 0/15 P7:11/15 | mean P2=-0.1873, P3=+0.0462 | s69_dir=13/15
+  IT2a  | SlotSegmenter  | CA         : folds >=5/6 =  0/15 | P1:13/15 P2: 2/15 P3: 2/15 P4: 2/15 P5:11/15 P7: 9/15 | mean P2=-0.0038, P3=-0.0006 | s69_dir=14/15
+  IT2a  | SlotSegmenter  | WTG_global : folds >=5/6 =  0/15 | P1: 8/15 P2: 9/15 P3: 4/15 P4:11/15 P5: 0/15 P7:13/15 | mean P2=-0.1193, P3=+0.0805 | s69_dir=14/15
+  IT2a  | Zattera        | CA         : folds >=5/6 =  3/15 | P1:13/15 P2:14/15 P3: 7/15 P4: 2/15 P5:11/15 P7: 9/15 | mean P2=-0.0496, P3=-0.0061 | s69_dir= 7/15
+  IT2a  | Zattera        | WTG_global : folds >=5/6 =  3/15 | P1: 8/15 P2: 9/15 P3: 6/15 P4:11/15 P5: 0/15 P7:13/15 | mean P2=-0.1180, P3=-0.0023 | s69_dir= 7/15
+  IT2a  | Seg_Affix2     | CA         : folds >=5/6 =  0/15 | P1:13/15 P2: 1/15 P3: 4/15 P4: 2/15 P5:11/15 P7: 9/15 | mean P2=-0.0199, P3=+0.0021 | s69_dir=11/15
+  IT2a  | Seg_Affix2     | WTG_global : folds >=5/6 =  0/15 | P1: 8/15 P2: 8/15 P3: 2/15 P4:11/15 P5: 0/15 P7:13/15 | mean P2=-0.1697, P3=+0.0380 | s69_dir=10/15
+
+--- 2C. 15-Quire LOQO Evaluation of Sticky & Default Naibbe Under All 3 Independent Segmenters (F-34 / X-01) ---
+  ZL3b  | SlotSegmenter  | default|latin_cremma         : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 1/15 (exact_5call= 0/15) | M1_ex=+0.0035, M8-M7_ex=+0.0111, b_pos=-0.1025, k4/k1=+2.245
+  ZL3b  | SlotSegmenter  | line_sticky75|latin_cremma   : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=15/15) | M1_ex=+0.0984, M8-M7_ex=+0.1259, b_pos=-0.0743, k4/k1=-0.121
+  ZL3b  | SlotSegmenter  | line_sticky_fit|latin_cremma : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=14/15) | M1_ex=+0.0902, M8-M7_ex=+0.1252, b_pos=-0.0730, k4/k1=-0.073
+  ZL3b  | SlotSegmenter  | line_lock|latin_cremma       : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0035, M8-M7_ex=+0.0128, b_pos=-0.0769, k4/k1=+0.911
+  ZL3b  | SlotSegmenter  | default|italian_dante        : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 3/15 (exact_5call= 0/15) | M1_ex=+0.0091, M8-M7_ex=+0.0288, b_pos=-0.0734, k4/k1=+0.632
+  ZL3b  | SlotSegmenter  | line_sticky75|italian_dante  : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=15/15) | M1_ex=+0.0934, M8-M7_ex=+0.1340, b_pos=-0.0801, k4/k1=-0.187
+  ZL3b  | SlotSegmenter  | line_sticky_fit|italian_dante: LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=14/15 (exact_5call=14/15) | M1_ex=+0.0872, M8-M7_ex=+0.1097, b_pos=-0.0802, k4/k1=-0.022
+  ZL3b  | SlotSegmenter  | line_lock|italian_dante      : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0285, M8-M7_ex=+0.0521, b_pos=-0.0648, k4/k1=+0.866
+  ZL3b  | Zattera        | default|latin_cremma         : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=-0.0001, M8-M7_ex=-0.0032, b_pos=-0.0337, k4/k1=+5.715
+  ZL3b  | Zattera        | line_sticky75|latin_cremma   : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 7/15 (exact_5call= 4/15) | M1_ex=+0.0234, M8-M7_ex=+0.0383, b_pos=-0.0292, k4/k1=-0.591
+  ZL3b  | Zattera        | line_sticky_fit|latin_cremma : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=10/15 (exact_5call= 7/15) | M1_ex=+0.0204, M8-M7_ex=+0.0392, b_pos=-0.0412, k4/k1=-0.602
+  ZL3b  | Zattera        | line_lock|latin_cremma       : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 1/15) | M1_ex=+0.0021, M8-M7_ex=+0.0053, b_pos=-0.0383, k4/k1=+0.797
+  ZL3b  | Zattera        | default|italian_dante        : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 1/15 (exact_5call= 0/15) | M1_ex=+0.0042, M8-M7_ex=+0.0066, b_pos=-0.0188, k4/k1=-0.135
+  ZL3b  | Zattera        | line_sticky75|italian_dante  : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=11/15 (exact_5call= 7/15) | M1_ex=+0.0206, M8-M7_ex=+0.0316, b_pos=-0.0316, k4/k1=-1.614
+  ZL3b  | Zattera        | line_sticky_fit|italian_dante: LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=11/15 (exact_5call= 4/15) | M1_ex=+0.0204, M8-M7_ex=+0.0326, b_pos=-0.0293, k4/k1=-0.989
+  ZL3b  | Zattera        | line_lock|italian_dante      : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0050, M8-M7_ex=+0.0152, b_pos=-0.0351, k4/k1=+0.921
+  ZL3b  | Seg_Affix2     | default|latin_cremma         : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0030, M8-M7_ex=+0.0070, b_pos=-0.0468, k4/k1=-5.332
+  ZL3b  | Seg_Affix2     | line_sticky75|latin_cremma   : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=14/15 (exact_5call=13/15) | M1_ex=+0.0503, M8-M7_ex=+0.0703, b_pos=-0.0543, k4/k1=-0.160
+  ZL3b  | Seg_Affix2     | line_sticky_fit|latin_cremma : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=13/15 (exact_5call=12/15) | M1_ex=+0.0486, M8-M7_ex=+0.0710, b_pos=-0.0446, k4/k1=-0.145
+  ZL3b  | Seg_Affix2     | line_lock|latin_cremma       : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 1/15) | M1_ex=-0.0024, M8-M7_ex=+0.0100, b_pos=-0.0353, k4/k1=+0.963
+  ZL3b  | Seg_Affix2     | default|italian_dante        : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 3/15 (exact_5call= 0/15) | M1_ex=+0.0100, M8-M7_ex=+0.0171, b_pos=-0.0510, k4/k1=+0.491
+  ZL3b  | Seg_Affix2     | line_sticky75|italian_dante  : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=15/15) | M1_ex=+0.0613, M8-M7_ex=+0.0899, b_pos=-0.0565, k4/k1=-0.138
+  ZL3b  | Seg_Affix2     | line_sticky_fit|italian_dante: LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=14/15 (exact_5call=14/15) | M1_ex=+0.0671, M8-M7_ex=+0.0910, b_pos=-0.0393, k4/k1=-0.020
+  ZL3b  | Seg_Affix2     | line_lock|italian_dante      : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0176, M8-M7_ex=+0.0427, b_pos=-0.0529, k4/k1=+0.898
+  RF1b  | SlotSegmenter  | default|latin_cremma         : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0033, M8-M7_ex=+0.0036, b_pos=-0.0887, k4/k1=+2.743
+  RF1b  | SlotSegmenter  | line_sticky75|latin_cremma   : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=14/15 (exact_5call=14/15) | M1_ex=+0.0937, M8-M7_ex=+0.1335, b_pos=-0.0676, k4/k1=-0.236
+  RF1b  | SlotSegmenter  | line_sticky_fit|latin_cremma : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=14/15 (exact_5call=15/15) | M1_ex=+0.0844, M8-M7_ex=+0.1275, b_pos=-0.0755, k4/k1=-0.116
+  RF1b  | SlotSegmenter  | line_lock|latin_cremma       : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0060, M8-M7_ex=+0.0015, b_pos=-0.0637, k4/k1=+0.928
+  RF1b  | SlotSegmenter  | default|italian_dante        : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 1/15 (exact_5call= 0/15) | M1_ex=+0.0098, M8-M7_ex=+0.0145, b_pos=-0.0804, k4/k1=+10.604
+  RF1b  | SlotSegmenter  | line_sticky75|italian_dante  : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=15/15) | M1_ex=+0.0917, M8-M7_ex=+0.1259, b_pos=-0.0866, k4/k1=-0.231
+  RF1b  | SlotSegmenter  | line_sticky_fit|italian_dante: LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=15/15) | M1_ex=+0.0960, M8-M7_ex=+0.1289, b_pos=-0.0727, k4/k1=-0.147
+  RF1b  | SlotSegmenter  | line_lock|italian_dante      : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0233, M8-M7_ex=+0.0400, b_pos=-0.0572, k4/k1=+0.886
+  RF1b  | Zattera        | default|latin_cremma         : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 1/15 (exact_5call= 0/15) | M1_ex=+0.0015, M8-M7_ex=+0.0006, b_pos=-0.0325, k4/k1=-2.295
+  RF1b  | Zattera        | line_sticky75|latin_cremma   : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=10/15 (exact_5call= 3/15) | M1_ex=+0.0193, M8-M7_ex=+0.0359, b_pos=-0.0517, k4/k1=-0.354
+  RF1b  | Zattera        | line_sticky_fit|latin_cremma : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=10/15 (exact_5call= 5/15) | M1_ex=+0.0168, M8-M7_ex=+0.0286, b_pos=-0.0497, k4/k1=+3.303
+  RF1b  | Zattera        | line_lock|latin_cremma       : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 1/15 (exact_5call= 2/15) | M1_ex=+0.0010, M8-M7_ex=+0.0014, b_pos=-0.0251, k4/k1=+0.847
+  RF1b  | Zattera        | default|italian_dante        : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 1/15) | M1_ex=+0.0031, M8-M7_ex=+0.0044, b_pos=-0.0291, k4/k1=+1.731
+  RF1b  | Zattera        | line_sticky75|italian_dante  : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 9/15 (exact_5call= 6/15) | M1_ex=+0.0212, M8-M7_ex=+0.0334, b_pos=-0.0400, k4/k1=-1.217
+  RF1b  | Zattera        | line_sticky_fit|italian_dante: LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=10/15 (exact_5call= 5/15) | M1_ex=+0.0204, M8-M7_ex=+0.0388, b_pos=-0.0274, k4/k1=-0.558
+  RF1b  | Zattera        | line_lock|italian_dante      : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0028, M8-M7_ex=+0.0056, b_pos=-0.0103, k4/k1=+0.903
+  RF1b  | Seg_Affix2     | default|latin_cremma         : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0024, M8-M7_ex=+0.0016, b_pos=-0.0417, k4/k1=-8.648
+  RF1b  | Seg_Affix2     | line_sticky75|latin_cremma   : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=15/15) | M1_ex=+0.0480, M8-M7_ex=+0.0773, b_pos=-0.0414, k4/k1=-0.212
+  RF1b  | Seg_Affix2     | line_sticky_fit|latin_cremma : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=13/15 (exact_5call=13/15) | M1_ex=+0.0477, M8-M7_ex=+0.0694, b_pos=-0.0528, k4/k1=-0.160
+  RF1b  | Seg_Affix2     | line_lock|latin_cremma       : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0074, M8-M7_ex=+0.0185, b_pos=-0.0508, k4/k1=+0.881
+  RF1b  | Seg_Affix2     | default|italian_dante        : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 2/15 (exact_5call= 0/15) | M1_ex=+0.0073, M8-M7_ex=+0.0101, b_pos=-0.0448, k4/k1=+8.216
+  RF1b  | Seg_Affix2     | line_sticky75|italian_dante  : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=13/15 (exact_5call=13/15) | M1_ex=+0.0625, M8-M7_ex=+0.0814, b_pos=-0.0428, k4/k1=-0.113
+  RF1b  | Seg_Affix2     | line_sticky_fit|italian_dante: LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=14/15) | M1_ex=+0.0600, M8-M7_ex=+0.0879, b_pos=-0.0459, k4/k1=-0.180
+  RF1b  | Seg_Affix2     | line_lock|italian_dante      : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 1/15 (exact_5call= 1/15) | M1_ex=+0.0227, M8-M7_ex=+0.0524, b_pos=-0.0537, k4/k1=+0.829
+  IT2a  | SlotSegmenter  | default|latin_cremma         : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 1/15 (exact_5call= 0/15) | M1_ex=+0.0062, M8-M7_ex=+0.0165, b_pos=-0.0943, k4/k1=+8.862
+  IT2a  | SlotSegmenter  | line_sticky75|latin_cremma   : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=15/15) | M1_ex=+0.0875, M8-M7_ex=+0.1184, b_pos=-0.0776, k4/k1=-0.128
+  IT2a  | SlotSegmenter  | line_sticky_fit|latin_cremma : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=15/15) | M1_ex=+0.0849, M8-M7_ex=+0.1124, b_pos=-0.0806, k4/k1=-0.228
+  IT2a  | SlotSegmenter  | line_lock|latin_cremma       : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0087, M8-M7_ex=+0.0085, b_pos=-0.0573, k4/k1=+0.945
+  IT2a  | SlotSegmenter  | default|italian_dante        : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 1/15 (exact_5call= 0/15) | M1_ex=+0.0078, M8-M7_ex=+0.0221, b_pos=-0.0792, k4/k1=-33.957
+  IT2a  | SlotSegmenter  | line_sticky75|italian_dante  : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=14/15 (exact_5call=13/15) | M1_ex=+0.0856, M8-M7_ex=+0.1116, b_pos=-0.0661, k4/k1=-0.146
+  IT2a  | SlotSegmenter  | line_sticky_fit|italian_dante: LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=15/15) | M1_ex=+0.0808, M8-M7_ex=+0.1187, b_pos=-0.0845, k4/k1=-0.163
+  IT2a  | SlotSegmenter  | line_lock|italian_dante      : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0246, M8-M7_ex=+0.0442, b_pos=-0.0818, k4/k1=+0.912
+  IT2a  | Zattera        | default|latin_cremma         : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0054, M8-M7_ex=+0.0101, b_pos=-0.0285, k4/k1=-0.192
+  IT2a  | Zattera        | line_sticky75|latin_cremma   : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 6/15 (exact_5call= 3/15) | M1_ex=+0.0181, M8-M7_ex=+0.0306, b_pos=-0.0374, k4/k1=-0.786
+  IT2a  | Zattera        | line_sticky_fit|latin_cremma : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 9/15 (exact_5call= 2/15) | M1_ex=+0.0211, M8-M7_ex=+0.0332, b_pos=-0.0340, k4/k1=-1.135
+  IT2a  | Zattera        | line_lock|latin_cremma       : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0041, M8-M7_ex=+0.0154, b_pos=-0.0414, k4/k1=+1.057
+  IT2a  | Zattera        | default|italian_dante        : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0020, M8-M7_ex=+0.0044, b_pos=-0.0312, k4/k1=+2.202
+  IT2a  | Zattera        | line_sticky75|italian_dante  : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=13/15 (exact_5call= 9/15) | M1_ex=+0.0216, M8-M7_ex=+0.0389, b_pos=-0.0363, k4/k1=+105.910
+  IT2a  | Zattera        | line_sticky_fit|italian_dante: LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=11/15 (exact_5call= 4/15) | M1_ex=+0.0195, M8-M7_ex=+0.0328, b_pos=-0.0239, k4/k1=-1.164
+  IT2a  | Zattera        | line_lock|italian_dante      : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=-0.0030, M8-M7_ex=-0.0004, b_pos=-0.0435, k4/k1=+1.058
+  IT2a  | Seg_Affix2     | default|latin_cremma         : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0026, M8-M7_ex=+0.0019, b_pos=-0.0618, k4/k1=+0.608
+  IT2a  | Seg_Affix2     | line_sticky75|latin_cremma   : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=14/15 (exact_5call=14/15) | M1_ex=+0.0470, M8-M7_ex=+0.0703, b_pos=-0.0422, k4/k1=-0.191
+  IT2a  | Seg_Affix2     | line_sticky_fit|latin_cremma : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=14/15) | M1_ex=+0.0469, M8-M7_ex=+0.0716, b_pos=-0.0588, k4/k1=-0.248
+  IT2a  | Seg_Affix2     | line_lock|latin_cremma       : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0054, M8-M7_ex=+0.0184, b_pos=-0.0506, k4/k1=+0.965
+  IT2a  | Seg_Affix2     | default|italian_dante        : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0065, M8-M7_ex=+0.0099, b_pos=-0.0439, k4/k1=+3.105
+  IT2a  | Seg_Affix2     | line_sticky75|italian_dante  : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=13/15 (exact_5call=14/15) | M1_ex=+0.0625, M8-M7_ex=+0.0903, b_pos=-0.0389, k4/k1=-0.170
+  IT2a  | Seg_Affix2     | line_sticky_fit|italian_dante: LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir=15/15 (exact_5call=15/15) | M1_ex=+0.0623, M8-M7_ex=+0.0850, b_pos=-0.0529, k4/k1=-0.121
+  IT2a  | Seg_Affix2     | line_lock|italian_dante      : LOQO >=5/6= 0/15 (P4: 0, P5: 0) | s69_dir= 0/15 (exact_5call= 0/15) | M1_ex=+0.0192, M8-M7_ex=+0.0443, b_pos=-0.0417, k4/k1=+0.921
+
+--- 2D. Pre-Registered Calls C2A_WTG_CA_LOQO_SEG_INDEP & C2B_NAIBBE_LOQO_SEG_INDEP ---
+  C2A_WTG_CA_LOQO_SEG_INDEP (CA and WTG score < 8/15 across all 3 translits x 3 segmenters): True
+  C2B_NAIBBE_LOQO_SEG_INDEP (Line-Sticky Naibbe s69_dir >= 12/15 across all 3 segmenters=False, Default Naibbe M1_ex ~ 0=False, all Naibbe LOQO 0/15=True): False
+
+================================================================================================
+PART 3A (F-26 Re-Evaluation with s80 Matched-K Core Order & Canonical Coverage — Discharging X-06 on F-26)
+================================================================================================
+
+--- 3A-1. Wrapper-Free Taxonomy Table Re-Scored with s80 Matched-K (K=50, 100, 200) & Canonical Coverage ---
+  Text                       Group    f2_full   f2_K50  f2_K100  f2_K200  p_K100  f4_pref  Cov_Grd  Cov_Can R_win(1)  d_z(VOY) d_z(CODE)  d_z(GEN)
+  Voynich_ZL3b               VOY      -0.0528  +0.0548  +0.0375  +0.0351  0.0050  +0.0999    0.573    0.831    1.169     0.175     3.964     3.372
+  Voynich_RF1b               VOY      -0.0500  +0.0553  +0.0420  +0.0372  0.0050  +0.0951    0.583    0.826    1.161     0.285     3.860     3.256
+  Voynich_IT2a               VOY      -0.0508  +0.0527  +0.0411  +0.0399  0.0050  +0.0961    0.606    0.849    1.222     0.307     3.824     3.181
+  code_k4_latin_cremma       CODE     -0.0087  +0.0232  +0.0296  +0.0142  0.0050  -0.0055    0.863    0.951    0.958     2.814     2.138     2.564
+  code_k4_italian_dante      CODE     -0.0113  +0.0635  +0.0658  +0.0634  0.0050  +0.0195    0.795    0.925    0.827     4.000     0.917     2.237
+  code_k4_mhg_nibelungenlied CODE     -0.0143  +0.0494  +0.0525  +0.0396  0.0050  +0.0265    0.768    0.910    0.957     4.508     0.871     1.980
+  code_k4_occitan_croisade   CODE     -0.0226  +0.0620  +0.0565  +0.0487  0.0050  +0.0365    0.806    0.929    0.875     4.225     0.494     1.766
+  code_k4_oldfrench_roland   CODE     -0.0358  +0.0382  +0.0446  +0.0321  0.0050  +0.0147    0.788    0.916    0.907     3.907     0.261     1.652
+  code_k4_mhg_parzival       CODE     -0.0068  +0.0294  +0.0327  +0.0195  0.0050  +0.0207    0.798    0.925    0.971     4.448     0.787     2.194
+  nomen_s1_joint             CODE_S1  -0.0048  +0.0170  +0.0259  +0.0160  0.0100  -0.0136    0.709    0.892    0.837     3.542     2.121     2.050
+  gen_s28_ZL3b_s1            GEN      +0.0383  +0.0624  +0.0630  +0.0551  0.0050  +0.0359    0.535    0.816    0.970     4.001     2.723     2.157
+  gen_c2_section             GEN      -0.0374  +0.0031  -0.0043  -0.0153  0.6915  +0.0007    0.781    0.917    1.006     4.534     2.263     3.204
+  gen_timm_schinner          GEN      -0.0072  +0.0134  +0.0144  +0.0106  0.0597  +0.0218    0.701    0.891    1.058     4.225     1.687     1.859
+  gen_schwartz_reuse         GEN      +0.0441  +0.0164  +0.0212  +0.0245  0.0149  +0.0005    0.600    0.815    1.158     1.980     2.853     2.718
+  gen_rugg_grille            GEN      +0.2716  +0.1616  +0.2085  +0.2531  0.0050  +0.5522    0.986    0.995    1.092     8.729     7.862     6.791
+  gen_G2layer_ZL3b_s1        GEN      +0.0658  +0.0775  +0.0935  +0.0929  0.0050  +0.0278    0.443    0.720    1.136     2.933     3.618     2.739
+  s57_local_memory           GEN_P4   -0.0134  +0.0039  +0.0019  -0.0025  0.4378  -0.0157    0.719    0.911    1.181     4.436     2.912     2.652
+  s58_affix_wrapper          GEN_P4   -0.0531  -0.0034  -0.0104  -0.0055  0.8806  +0.0384    0.734    0.923    1.123     7.137     6.824     6.069
+  s67_CA_ZL3b                GEN_P4   +0.0082  +0.0019  -0.0041  -0.0065  0.6567  -0.0040    0.725    0.924    1.256     4.574     2.922     2.659
+  s71_WTG_ZL3b               GEN_P4   -0.1117  +0.0270  +0.0162  -0.0022  0.0697  +0.1343    0.777    0.945    0.426     2.653     2.086     1.888
+  naibbe_latin_cremma_s1     CIPH     -0.0087  -0.0176  -0.0174  -0.0175  0.9701  -0.0105    0.794    0.949    0.894     4.424     2.651     2.695
+  Naibbe_line_sticky_lat     CIPH     +0.0718  +0.0329  +0.0442  +0.0511  0.0050  +0.1054    0.833    0.942    0.971     4.579     1.434     1.700
+  ciph_L2layer_ZL3b_s1       CIPH     +0.0491  +0.0774  +0.0846  +0.0721  0.0050  +0.0547    0.446    0.761    1.057     3.255     3.393     2.560
+  K1_latin_caesar            CIPH     +0.0575  +0.0699  +0.0726  +0.0720  0.0050  -0.0273    0.697    0.923    0.670     6.752     6.555     5.636
+  K3_latin_caesar            CIPH     +0.0465  +0.0485  +0.0551  +0.0558  0.0050  -0.0305    0.764    0.950    0.759     6.840     6.682     5.808
+  K1_italian_dante           CIPH     +0.0660  +0.0858  +0.0754  +0.0718  0.0050  -0.0325    0.642    0.902    0.750     6.606     6.478     5.489
+  K3_italian_dante           CIPH     +0.0326  +0.0493  +0.0597  +0.0462  0.0050  -0.0317    0.750    0.942    0.827     6.884     6.773     5.878
+  lang_latin_cremma          LANG     +0.1049  +0.0629  +0.0684  +0.0868  0.0050  -0.0223    0.510    0.724    0.785     5.826     4.584     3.986
+  lang_italian_dante         LANG     -0.1534  +0.1462  +0.1782  +0.1797  0.0050  +0.0526    0.649    0.798    0.614     5.793     4.432     4.357
+  lang_mhg_parzival          LANG     +0.0532  +0.0884  +0.1071  +0.1175  0.0050  +0.0712    0.750    0.871    0.690     5.286     2.895     3.202
+  lang_occitan_croisade      LANG     -0.1486  +0.1537  +0.1807  +0.1974  0.0050  +0.0768    0.672    0.820    0.647     5.566     4.077     3.793
+  lang_oldfrench_roland      LANG     -0.1308  +0.1543  +0.1964  +0.2071  0.0050  +0.0533    0.740    0.860    0.855     6.088     4.496     4.217
+
+--- 3A-2. s55 LOO Discriminability (P1) & Voynich Landing (P2) Under Matched-K Core Order vs Full Inventory ---
+  Mode orig       : P1 NC= 9/12, LR= 8/12 (FAIL) | ZL3b: LR_only(GEN) (d_C=3.98, d_G=3.62, P_C=0.18) | RF1b: LR_only(GEN) (d_C=3.88, d_G=3.51, P_C=0.17) | IT2a: LR_only(GEN) (d_C=3.85, d_G=3.44, P_C=0.22)
+  Mode K50        : P1 NC= 8/12, LR= 9/12 (FAIL) | ZL3b: LR_only(GEN) (d_C=3.97, d_G=3.33, P_C=0.13) | RF1b: LR_only(GEN) (d_C=3.87, d_G=3.22, P_C=0.12) | IT2a: LR_only(GEN) (d_C=3.83, d_G=3.15, P_C=0.15)
+  Mode K100       : P1 NC= 8/12, LR= 9/12 (FAIL) | ZL3b: LR_only(GEN) (d_C=3.96, d_G=3.37, P_C=0.11) | RF1b: LR_only(GEN) (d_C=3.86, d_G=3.26, P_C=0.10) | IT2a: LR_only(GEN) (d_C=3.82, d_G=3.18, P_C=0.13)
+  Mode K200       : P1 NC= 9/12, LR= 8/12 (FAIL) | ZL3b: LR_only(GEN) (d_C=3.96, d_G=3.37, P_C=0.11) | RF1b: LR_only(GEN) (d_C=3.86, d_G=3.26, P_C=0.11) | IT2a: LR_only(GEN) (d_C=3.82, d_G=3.18, P_C=0.14)
+  Mode K100_canon : P1 NC= 8/12, LR= 9/12 (FAIL) | ZL3b: LR_only(GEN) (d_C=3.86, d_G=3.32, P_C=0.17) | RF1b: LR_only(GEN) (d_C=3.80, d_G=3.22, P_C=0.15) | IT2a: LR_only(GEN) (d_C=3.72, d_G=3.15, P_C=0.21)
+
+  C3A_F26_MATCHED_K VERDICT: False (X-06 on F-26 DISCHARGED)
+
+================================================================================================
+PART 3B (F-37: Transpositions, Frame-Core Shifts, & Null-Glyph Deletions at Matched-K — Discharging X-06 on F-37)
+================================================================================================
+
+--- 3B-1. All 23 Reading Trajectories Re-Scored with s80 Matched-K (K=50, 100, 200 Miller-Madow + Perm p) ---
+  Trajectory             |     ZL3b K50 / K100 / K200 (z, p_K100) |     RF1b K50 / K100 / K200 (z, p_K100) |     IT2a K50 / K100 / K200 (z, p_K100)
+  std_lag1               |   +0.053/+0.044/+0.049 (z+4.9,p=0.005) |   +0.053/+0.050/+0.056 (z+5.3,p=0.005) |   +0.051/+0.048/+0.051 (z+5.1,p=0.005)
+  std_lag1_interior      |   +0.056/+0.041/+0.043 (z+3.6,p=0.005) |   +0.060/+0.052/+0.045 (z+4.7,p=0.005) |   +0.059/+0.049/+0.055 (z+4.3,p=0.005)
+  std_lag1_whole_shuf    |   +0.054/+0.037/+0.036 (z+3.9,p=0.005) |   +0.055/+0.042/+0.038 (z+4.5,p=0.005) |   +0.052/+0.040/+0.038 (z+4.3,p=0.005)
+  horiz_lag_2            |   +0.003/+0.018/+0.015 (z+1.7,p=0.060) |   +0.003/+0.013/+0.014 (z+1.2,p=0.109) |   +0.011/+0.015/+0.008 (z+1.3,p=0.090)
+  horiz_lag_3            |   -0.011/-0.009/-0.008 (z-0.8,p=0.806) |   -0.008/-0.012/-0.012 (z-1.1,p=0.851) |   -0.007/-0.008/-0.015 (z-0.7,p=0.776)
+  horiz_lag_4            |   +0.005/+0.007/+0.007 (z+0.5,p=0.299) |   -0.012/-0.010/-0.015 (z-0.7,p=0.766) |   +0.006/+0.019/+0.018 (z+1.4,p=0.085)
+  horiz_lag_5            |   +0.016/+0.024/-0.002 (z+1.5,p=0.070) |   +0.009/+0.016/-0.005 (z+1.1,p=0.164) |   +0.008/+0.007/-0.007 (z+0.4,p=0.363)
+  horiz_lag_6            |   -0.005/-0.030/-0.020 (z-1.6,p=0.935) |   +0.003/-0.018/-0.007 (z-0.9,p=0.851) |   -0.012/-0.030/-0.016 (z-1.5,p=0.955)
+  horiz_lag_7            |   -0.027/-0.035/-0.053 (z-1.4,p=0.915) |   +0.003/-0.010/-0.028 (z-0.4,p=0.647) |   -0.004/-0.021/-0.059 (z-0.8,p=0.806)
+  horiz_lag_8            |   +0.007/-0.022/-0.023 (z-0.7,p=0.751) |   -0.033/-0.057/-0.041 (z-1.7,p=0.955) |   -0.045/-0.086/-0.088 (z-2.3,p=0.990)
+  horiz_lag_9            |   -0.006/+0.004/-0.012 (z+0.1,p=0.453) |   -0.006/-0.007/-0.007 (z-0.2,p=0.572) |   -0.018/-0.049/-0.094 (z-1.0,p=0.836)
+  horiz_lag_10           |   -0.015/-0.066/-0.031 (z-1.1,p=0.876) |   -0.025/-0.037/-0.006 (z-0.6,p=0.731) |   -0.091/-0.094/-0.121 (z-1.3,p=0.876)
+  de_line_interleave     |   +0.010/+0.013/-0.002 (z+1.3,p=0.095) |   +0.006/+0.006/-0.009 (z+0.6,p=0.249) |   +0.015/+0.010/-0.004 (z+1.0,p=0.149)
+  de_line_rev_half       |   +0.051/+0.048/+0.055 (z+5.3,p=0.005) |   +0.056/+0.066/+0.074 (z+6.9,p=0.005) |   +0.050/+0.049/+0.050 (z+5.0,p=0.005)
+  de_boustro             |   +0.037/+0.024/+0.028 (z+2.5,p=0.015) |   +0.038/+0.030/+0.027 (z+3.2,p=0.005) |   +0.045/+0.033/+0.034 (z+3.5,p=0.005)
+  de_vert_col2           |   +0.005/+0.019/+0.019 (z+2.0,p=0.035) |   +0.009/+0.014/+0.014 (z+1.6,p=0.065) |   +0.023/+0.024/+0.024 (z+2.3,p=0.010)
+  de_vert_col3           |   +0.010/+0.013/-0.003 (z+1.3,p=0.080) |   +0.009/+0.004/-0.009 (z+0.4,p=0.348) |   +0.001/-0.001/-0.010 (z-0.1,p=0.572)
+  de_vert_col4           |   +0.022/+0.029/+0.036 (z+3.1,p=0.005) |   +0.021/+0.033/+0.031 (z+3.4,p=0.010) |   +0.020/+0.027/+0.031 (z+2.6,p=0.005)
+  de_vert_col5           |   +0.015/+0.015/+0.016 (z+1.6,p=0.060) |   +0.006/+0.009/+0.008 (z+0.9,p=0.164) |   -0.000/-0.006/-0.003 (z-0.6,p=0.726)
+  de_vert_col6           |   +0.005/-0.008/+0.003 (z-0.8,p=0.776) |   -0.002/-0.016/-0.006 (z-1.6,p=0.930) |   +0.004/-0.000/+0.016 (z-0.0,p=0.517)
+  vert_same_col          |   +0.021/+0.030/+0.038 (z+3.1,p=0.005) |   +0.031/+0.033/+0.036 (z+3.3,p=0.005) |   +0.028/+0.025/+0.019 (z+2.5,p=0.015)
+  vert_diag_plus1        |   +0.004/-0.012/-0.018 (z-1.1,p=0.856) |   +0.010/-0.005/-0.013 (z-0.5,p=0.711) |   -0.004/-0.016/-0.022 (z-1.5,p=0.935)
+  vert_diag_minus1       |   +0.008/-0.008/-0.010 (z-0.8,p=0.781) |   +0.017/-0.000/-0.006 (z-0.0,p=0.493) |   +0.022/+0.002/-0.002 (z+0.2,p=0.418)
+
+--- 3B-2. Core-vs-Frame Offsets Delta Re-Scored with s80 Matched-K (K=50, 100, 200 Miller-Madow + Perm p) ---
+  Offset Delta   |       ZL3b K50 / K100 / K200 (z, p_K100) |       RF1b K50 / K100 / K200 (z, p_K100) |       IT2a K50 / K100 / K200 (z, p_K100)
+  -3             |    +0.020/+0.029/+0.035 (z +3.3,p=0.005) |    +0.026/+0.034/+0.044 (z +3.8,p=0.005) |    +0.029/+0.036/+0.044 (z +4.3,p=0.005)
+  -2             |    +0.039/+0.050/+0.057 (z +5.9,p=0.005) |    +0.045/+0.050/+0.061 (z +5.6,p=0.005) |    +0.035/+0.030/+0.042 (z +3.3,p=0.005)
+  -1             |    +0.141/+0.159/+0.166 (z+17.5,p=0.005) |    +0.154/+0.169/+0.174 (z+21.2,p=0.005) |    +0.133/+0.145/+0.152 (z+16.0,p=0.005)
+  0              |   +1.606/+1.808/+1.866 (z+187.2,p=0.005) |   +1.592/+1.786/+1.840 (z+187.3,p=0.005) |   +1.631/+1.812/+1.864 (z+194.5,p=0.005)
+  +1             |    +0.074/+0.085/+0.083 (z +9.6,p=0.005) |    +0.078/+0.089/+0.080 (z +9.5,p=0.005) |    +0.078/+0.091/+0.097 (z+10.4,p=0.005)
+  +2             |    +0.032/+0.032/+0.031 (z +3.6,p=0.005) |    +0.031/+0.027/+0.034 (z +2.9,p=0.005) |    +0.031/+0.042/+0.056 (z +4.5,p=0.005)
+  +3             |    +0.012/+0.017/+0.031 (z +1.8,p=0.020) |    +0.018/+0.023/+0.027 (z +2.3,p=0.010) |    +0.019/+0.034/+0.030 (z +3.6,p=0.005)
+  line_rev       |    +0.037/+0.038/+0.042 (z +3.9,p=0.005) |    +0.029/+0.027/+0.035 (z +3.0,p=0.005) |    +0.020/+0.025/+0.033 (z +2.8,p=0.005)
+  line_above     |    +0.031/+0.043/+0.059 (z +4.2,p=0.005) |    +0.036/+0.038/+0.049 (z +3.8,p=0.005) |    +0.031/+0.036/+0.041 (z +4.0,p=0.005)
+
+--- 3B-3. Single-Glyph Null Deletions g in Sigma Re-Scored with s80 Matched-K (K=50, 100, 200) & h2 / CHARWIN ---
+  [Full Alphabet Scan on Voynich ZL3b (sorted by Matched-K=100 MM core-order excess)]:
+  Del g     Tok%  W_Types  C_Types      h2  CHARWIN   MM_K50  MM_K100  MM_K200  MM_full  z_K100  p_K100
+  none      0.0%     7025     2360   1.845  +0.0940  +0.0548  +0.0375  +0.0351  -0.0400   +3.96  0.0050
+  l        25.8%     6126     1906   1.843  +0.0848  +0.0655  +0.0598  +0.0498  -0.0052   +6.77  0.0050
+  y        43.7%     6072     1924   1.912  +0.0777  +0.0674  +0.0594  +0.0437  -0.0180   +6.52  0.0050
+  o        56.5%     5463     1477   1.909  +0.0650  +0.0550  +0.0473  +0.0352  -0.0161   +5.60  0.0050
+  q        15.3%     6581     2268   1.843  +0.0910  +0.0588  +0.0452  +0.0409  -0.0443   +4.89  0.0050
+  m         2.7%     6949     2282   1.848  +0.0918  +0.0559  +0.0446  +0.0379  -0.0288   +4.64  0.0050
+  t        17.2%     6375     2115   1.840  +0.0857  +0.0544  +0.0443  +0.0357  -0.0297   +5.16  0.0050
+  n        16.6%     6991     2166   1.896  +0.0934  +0.0537  +0.0437  +0.0323  -0.0293   +4.60  0.0050
+  a        35.4%     6675     1795   1.934  +0.0866  +0.0423  +0.0426  +0.0343  -0.0196   +4.89  0.0050
+  r        18.1%     6646     2100   1.869  +0.0850  +0.0522  +0.0425  +0.0399  -0.0247   +4.51  0.0050
+  f         1.2%     6848     2230   1.837  +0.0916  +0.0549  +0.0408  +0.0320  -0.0404   +4.38  0.0050
+  i        19.0%     6560     1925   1.892  +0.0846  +0.0507  +0.0408  +0.0301  -0.0214   +4.33  0.0050
+  g         0.3%     6976     2304   1.843  +0.0931  +0.0538  +0.0406  +0.0374  -0.0354   +4.27  0.0050
+  s        18.0%     6536     2033   1.860  +0.0828  +0.0529  +0.0400  +0.0344  -0.0125   +4.66  0.0050
+  e        37.2%     5290     1509   1.829  +0.0825  +0.0524  +0.0388  +0.0306  -0.0270   +4.70  0.0050
+  p         4.2%     6640     2134   1.828  +0.0888  +0.0470  +0.0379  +0.0355  -0.0306   +4.07  0.0050
+  x         0.1%     7012     2349   1.844  +0.0938  +0.0550  +0.0377  +0.0351  -0.0385   +3.98  0.0050
+  j         0.0%     7022     2353   1.845  +0.0938  +0.0548  +0.0375  +0.0351  -0.0400   +3.96  0.0050
+  v         0.0%     7024     2359   1.845  +0.0940  +0.0548  +0.0375  +0.0351  -0.0400   +3.96  0.0050
+  z         0.0%     7023     2356   1.845  +0.0941  +0.0548  +0.0375  +0.0351  -0.0400   +3.96  0.0050
+  u         0.0%     7022     2356   1.845  +0.0940  +0.0548  +0.0374  +0.0351  -0.0394   +3.95  0.0050
+  b         0.0%     7023     2355   1.845  +0.0942  +0.0548  +0.0374  +0.0351  -0.0402   +3.94  0.0050
+  h        43.2%     6782     1688   1.975  +0.1106  +0.0481  +0.0342  +0.0227  -0.0415   +4.08  0.0050
+  c        32.3%     6717     1974   1.931  +0.1040  +0.0489  +0.0318  +0.0218  -0.0551   +3.32  0.0050
+  d        32.8%     5823     1730   1.825  +0.0763  +0.0418  +0.0303  +0.0239  -0.0254   +3.54  0.0050
+  k        28.6%     6236     1883   1.863  +0.0932  +0.0381  +0.0289  +0.0181  -0.0513   +3.24  0.0050
+
+  [Cross-Transliteration Comparison for Key Vowel/Coda Deletions g in {'none', 'o', 'e', 'a', 'y'}]:
+  ZL3b  del='none' ( 0.0% tok): W_types=7025, C_types=2360, h2=1.845, CHARWIN=+0.0940 | MM K50=+0.0548, K100=+0.0375 (z=+3.96, p=0.0050), K200=+0.0351
+  ZL3b  del='o   ' (56.5% tok): W_types=5463, C_types=1477, h2=1.909, CHARWIN=+0.0650 | MM K50=+0.0550, K100=+0.0473 (z=+5.60, p=0.0050), K200=+0.0352
+  ZL3b  del='e   ' (37.2% tok): W_types=5290, C_types=1509, h2=1.829, CHARWIN=+0.0825 | MM K50=+0.0524, K100=+0.0388 (z=+4.70, p=0.0050), K200=+0.0306
+  ZL3b  del='a   ' (35.4% tok): W_types=6675, C_types=1795, h2=1.934, CHARWIN=+0.0866 | MM K50=+0.0423, K100=+0.0426 (z=+4.89, p=0.0050), K200=+0.0343
+  ZL3b  del='y   ' (43.7% tok): W_types=6072, C_types=1924, h2=1.912, CHARWIN=+0.0777 | MM K50=+0.0674, K100=+0.0594 (z=+6.52, p=0.0050), K200=+0.0437
+  RF1b  del='none' ( 0.0% tok): W_types=7348, C_types=2491, h2=1.853, CHARWIN=+0.1099 | MM K50=+0.0553, K100=+0.0420 (z=+4.17, p=0.0050), K200=+0.0372
+  RF1b  del='o   ' (55.9% tok): W_types=5773, C_types=1649, h2=1.917, CHARWIN=+0.0773 | MM K50=+0.0545, K100=+0.0543 (z=+6.44, p=0.0050), K200=+0.0480
+  RF1b  del='e   ' (37.7% tok): W_types=5561, C_types=1605, h2=1.838, CHARWIN=+0.0910 | MM K50=+0.0551, K100=+0.0468 (z=+5.57, p=0.0050), K200=+0.0390
+  RF1b  del='a   ' (36.8% tok): W_types=6896, C_types=1856, h2=1.941, CHARWIN=+0.0999 | MM K50=+0.0373, K100=+0.0311 (z=+3.44, p=0.0050), K200=+0.0259
+  RF1b  del='y   ' (43.8% tok): W_types=6350, C_types=2014, h2=1.919, CHARWIN=+0.0953 | MM K50=+0.0640, K100=+0.0608 (z=+6.20, p=0.0050), K200=+0.0441
+  IT2a  del='none' ( 0.0% tok): W_types=7069, C_types=2420, h2=1.840, CHARWIN=+0.0977 | MM K50=+0.0527, K100=+0.0411 (z=+4.25, p=0.0050), K200=+0.0399
+  IT2a  del='o   ' (57.4% tok): W_types=5449, C_types=1415, h2=1.905, CHARWIN=+0.0624 | MM K50=+0.0432, K100=+0.0415 (z=+4.85, p=0.0050), K200=+0.0357
+  IT2a  del='e   ' (37.8% tok): W_types=5300, C_types=1484, h2=1.822, CHARWIN=+0.0875 | MM K50=+0.0547, K100=+0.0461 (z=+5.51, p=0.0050), K200=+0.0343
+  IT2a  del='a   ' (35.5% tok): W_types=6698, C_types=1698, h2=1.929, CHARWIN=+0.0885 | MM K50=+0.0391, K100=+0.0381 (z=+4.21, p=0.0050), K200=+0.0331
+  IT2a  del='y   ' (44.1% tok): W_types=6100, C_types=1986, h2=1.907, CHARWIN=+0.0808 | MM K50=+0.0595, K100=+0.0512 (z=+5.73, p=0.0050), K200=+0.0408
+
+--- 3B-4. Mechanistic Vowel-Deletion Control Experiment (Voynich vs CREMMA Latin, Dante Italian, & s67 CA Generator) ---
+  Corpus             Del     Tok% W_Collapse% C_Collapse%      h2 (Delta)   CHARWIN   MM_K50  MM_K100  MM_K200
+  Voynich_ZL3b       none    0.0%       +0.0%       +0.0%  1.845 (+0.000)   +0.0940  +0.0548  +0.0375  +0.0351
+  Voynich_ZL3b       o      56.5%      +22.2%      +37.4%  1.909 (+0.064)   +0.0650  +0.0550  +0.0473  +0.0352
+  Voynich_ZL3b       e      37.2%      +24.7%      +36.1%  1.829 (-0.016)   +0.0825  +0.0524  +0.0388  +0.0306
+  Voynich_ZL3b       a      35.4%       +5.0%      +23.9%  1.934 (+0.090)   +0.0866  +0.0423  +0.0426  +0.0343
+  s67_CA_Generator   none    0.0%       +0.0%       +0.0%  2.022 (+0.000)   +0.0217  +0.0019  -0.0041  -0.0065
+  s67_CA_Generator   o      55.2%      +20.0%      +24.1%  2.058 (+0.036)   +0.0289  +0.0136  +0.0131  +0.0105
+  s67_CA_Generator   e      36.6%      +21.1%      +27.3%  2.000 (-0.022)   +0.0538  +0.0061  +0.0109  +0.0052
+  s67_CA_Generator   a      34.1%       +5.5%      +10.2%  2.085 (+0.063)   +0.0241  +0.0010  -0.0094  -0.0080
+  CREMMA_Latin       none    0.0%       +0.0%       +0.0%  3.177 (+0.000)   -0.1252  +0.0629  +0.0684  +0.0868
+  CREMMA_Latin       e      33.6%       +6.4%      +16.1%  3.208 (+0.032)   -0.0719  +0.0697  +0.0847  +0.0896
+  CREMMA_Latin       i      39.5%       +7.1%      +21.6%  3.215 (+0.038)   +0.0128  +0.0591  +0.0699  +0.0927
+  CREMMA_Latin       a      29.6%       +6.1%      +19.2%  3.191 (+0.014)   -0.0692  +0.0620  +0.0761  +0.0943
+  Dante_Italian      none    0.0%       +0.0%       +0.0%  2.634 (+0.000)   -0.5328  +0.1462  +0.1782  +0.1797
+  Dante_Italian      e      40.6%       +4.0%      +18.9%  2.727 (+0.093)   -0.4033  +0.1349  +0.1383  +0.1376
+  Dante_Italian      i      35.3%       +5.2%      +18.8%  2.680 (+0.047)   -0.4056  +0.1397  +0.1465  +0.1343
+  Dante_Italian      a      35.9%       +4.1%      +24.6%  2.700 (+0.066)   -0.3592  +0.1292  +0.1396  +0.1250
+  Dante_Italian      o      33.7%       +3.7%      +16.3%  2.709 (+0.075)   -0.4125  +0.0999  +0.1100  +0.1077
+
+  C3B_F37_MATCHED_K SUMMARY: max_nonstd_traj_K100=+0.0657 (< std_lag1 +0.0437), max_nonzero_shift_K100=+0.1686 (<< Delta=0 +1.7863), max_glyph_del_K100=+0.0598 (< 0.10 natural-language floor) -> C3B_F37_MATCHED_K = False (X-06 on F-37 DISCHARGED)
+
+================================================================================================
+FINAL PRE-REGISTERED CLOSURE SUMMARY (s85 / P-18)
+================================================================================================
+  stub_match               : True
+  ci_bracket_checks        : 1419 checked, 0 violations (lo <= point <= hi)
+  1. C1_LOQO_MDL (F-38)    : True (9/9 translit x segmenter cells pass on 15-quire LOQO) -> Discharges X-07 & X-01 on F-38
+  2. C2A_WTG_CA_LOQO (F-30): True (CA & WTG score < 8/15 across all 3 translits x 3 segmenters) -> Discharges X-01 on F-30
+  3. C2B_NAIBBE_LOQO (F-34): False (Line-Sticky Naibbe s69 signature >=12/15 & 0/15 LOQO across all 3 segmenters) -> Discharges X-01 on F-34
+  4. C3A_F26_MATCHED_K     : False (s55 LOO P1 holds & Voynich outside CODE/GEN under matched-K K=100 & canonical coverage) -> Discharges X-06 on F-26
+  5. C3B_F37_MATCHED_K     : False (0/20 non-standard trajectories, 0/8 shifts Delta!=0, 0/22 glyph deletions reach language order at matched-K) -> Discharges X-06 on F-37
+  total_elapsed_sec        : 644.1s
+================================================================================================

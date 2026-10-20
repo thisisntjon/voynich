@@ -1,0 +1,190 @@
+s101 -- Leave-One-Quire-Out (LOQO) Power Audit of Producer Exclusions (F-23, F-30, F-34, F-41)
+date start: 2026-10-18 12:57:30 (datetime.now)
+device: cuda (NVIDIA GeForce RTX 5080); torch 2.11.0.dev20260115+cu128; numpy 2.4.6; python 3.11.9; priority BelowNormal=True; workers=2; free RAM=5.37 GB (req >= 4.0 GB)
+sha256 s101_loqo_power_audit.py: 5adc340b346bf8697fb3dc0a52b1e930e19b6ecede8b32650b8aab35baf3621e
+sha256 s101_loqo_power_audit.prereg.sha256: 3a51033447828b49c6dd8e9eed4af31f2cb6012e209266cbbeca52e673abfbe2
+stub_match: True
+  hashed a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  hashed a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  hashed b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  hashed b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  hashed c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  hashed c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  hashed c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  hashed c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  hashed corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  hashed f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  hashed f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  hashed f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  hashed g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  hashed m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  hashed m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  hashed n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  hashed p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  hashed p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  hashed s101_loqo_power_audit.py sha256=5adc340b346bf8697fb3dc0a52b1e930e19b6ecede8b32650b8aab35baf3621e
+  hashed s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  hashed s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  hashed s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  hashed s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  hashed s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  hashed s58_two_layer_heldout.py sha256=634e2534941bc1fc0b0942f2e6b331049835d8c61a4be8efe43e358ef6f5c0e3
+  hashed s61_joint_word_producer.py sha256=059a218127de9fbbde080dc78c658e6b31dec3ecae33be7c5b8b511b81266622
+  hashed s64_naibbe_taxonomy.py sha256=6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3
+  hashed s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  hashed s69_prefix_stream_memory.py sha256=11e722d4a0391d34228637da8b9c1872a6dc4ddd5dc1f2ff4e94f8c6a903c458
+  hashed s71_weakened_grille_and_sticky_naibbe_loqo.py sha256=9b4f024792c778ae300fd14d7d1e85f03243d50964b1f7f61ba09f1553c11a18
+  hashed s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  hashed s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  hashed s81_sticky_table_loqo.py sha256=418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063
+  hashed s87_core_layer_genre.py sha256=d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db
+  hashed s91_line_pool_producer_loqo.py sha256=92dba656c9d74dfb972837d3bba070bb945c3ed59ef444448d5bd7aafcdee21a
+  hashed scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  hashed scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  hashed tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  hashed vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+  hashed data/translit/ZL3b_eva.meta.json sha256=ce233477803a865365e53418f5e2b78c324fa0ea124b0aa46a9eb6a5189f7ef0
+  hashed data/translit/RF1b.meta.json sha256=c7d9bccba99b2610b9d80b4ce5f26f7d1ab54c12ec2364d0423d6b89f51da9df
+  hashed data/translit/IT2a.meta.json sha256=0d0d3e758d1e308b0aee4b4d006f90cbc8090c081e0fcb3327de6734ac5e5fdf
+  hashed data/ZL3b-n.txt sha256=bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc
+  hashed data/external/voynich-nu-ivtff/RF1b-er.txt sha256=eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2
+  hashed data/external/voynich-nu-ivtff/IT2a-n.txt sha256=7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5
+  hashed data/naibbe_zenodo_17219445/Naibbe_Cipher.xlsx sha256=890835df665d33b96228d4a587030fee2bc1637783dc627b4e6aa584186cadcd
+  hashed runs/s49/lang_latin_cremma.meta.json sha256=2f63d4beabdbc1b84821a74ce462eb3dcc80d43117ec33db6a5f8eb5aa7da3fc
+  hashed runs/s49/lang_italian_dante.meta.json sha256=e0c8e9b8272f5731f455fcaf6d26ccda765dd5940f57e31b54d5d251085b5027
+  hashed runs/s57/fit_ZL3b.json sha256=f329b589b20090096ff97df8fa61cda0eb826a7aec9d7b04a7fc3798024d96d6
+  hashed runs/s57/fit_RF1b.json sha256=2291e6669f97965dc16cd8109f916e9f08f9abd3b58b4e81e54a30086484f096
+  hashed runs/s57/fit_IT2a.json sha256=2187b06b94db4e5b8f79c8575adfba7f7aea1408c0e05f831ad4035c22a221bb
+  hashed runs/s58/fit_ZL3b.json sha256=90c32cda1b0f932ac600d655a0360d5632e45ad6df9aeb282899685c86de4ff8
+  hashed runs/s58/fit_RF1b.json sha256=43e4e0e41bd359594b0756b6614ae8a607e6219c17589476ad095d75b020903b
+  hashed runs/s58/fit_IT2a.json sha256=0eadf610f64a5481d8cae184f83d30abd9010ab6591ab570568aaed481353a95
+  hashed runs/s61/fit_ZL3b.json sha256=c2a194731811c7f4a1bfaffa3fe7c8f4483fc6164028a1068f0a7dc792bb85c1
+  hashed runs/s61/fit_RF1b.json sha256=945eb987cdc8720795a357df9a4f7770447d2223d611b3a136e418306b15d7b8
+  hashed runs/s61/fit_IT2a.json sha256=5312811de64e508de6929522b6adc4dadb23a70477dda33b53b7f2ec1de0e6e4
+  hashed runs/s67/cells.json sha256=607fa9d91d5f3b359324f1cb42ae45b6a360684fc273b2f6bd58fcd57856d8b8
+  hashed runs/s81/cells.json sha256=297f598ed396d3c0ce511c185dec5e010fae8fe86cac6704d396fc1f01f23b1d
+  hashed runs/s91/calls.json sha256=61e4e7772388742279d5f7865791a5e6df09f18f80abcc39e2871c683bb4bea8
+
+PRE-REGISTERED DECISION RULE (frozen before running):
+  For each excluded producer family on 15 LOQO folds, let recovery r in {0..15} be the number of folds
+  where the original LOQO pipeline calls the producer a match to its own planted text:
+    - POWERED       if r >= 10/15
+    - WEAK          if 5/15 <= r <= 9/15
+    - UNINFORMATIVE if r <= 4/15
+
+Folds (15 quires with >= 4 pages in ZL3b): ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'M', 'N', 'O', 'Q', 'S', 'T'] (15 folds)
+Loaded Voynich training-quire fitted parameters for planting:
+  s57: {'ZL3b': {'p_copy': 0.15, 'tau': 12.0, 'a': 0.15, 'q_pre': 0.1, 'q_suf': 0.1, 'q_core': 0.6}, 'RF1b': {'p_copy': 0.15, 'tau': 20.0, 'a': 0.15, 'q_pre': 0.2, 'q_suf': 0.0, 'q_core': 0.6}, 'IT2a': {'p_copy': 0.15, 'tau': 12.0, 'a': 0.15, 'q_pre': 0.2, 'q_suf': 0.0, 'q_core': 0.6}}
+  s58: {'ZL3b': {'p_copy': 0.02, 'tau': 1.0, 'a': 0.5, 'q_core': 0.1}, 'RF1b': {'p_copy': 0.02, 'tau': 1.0, 'a': 0.5, 'q_core': 0.0}, 'IT2a': {'p_copy': 0.02, 'tau': 7.0, 'a': 0.0, 'q_core': 0.25}}
+  s61: {'ZL3b': {'p_copy': 0.08, 'tau': 20.0, 'a': 0.0, 'q_edit': 0.5, 'p_new': 0.1}, 'RF1b': {'p_copy': 0.06, 'tau': 20.0, 'a': 0.3, 'q_edit': 0.25, 'p_new': 0.16}, 'IT2a': {'p_copy': 0.06, 'tau': 20.0, 'a': 0.0, 'q_edit': 0.25, 'p_new': 0.16}}
+  s67: {'ZL3b': {'p_rep': 0.06, 'tau': 12.0, 'gamma': 0.25, 'rho': 0.6}, 'RF1b': {'p_rep': 0.1, 'tau': 20.0, 'gamma': 0.25, 'rho': 0.5}, 'IT2a': {'p_rep': 0.06, 'tau': 20.0, 'gamma': 0.25, 'rho': 0.6}}
+  s81: {'ZL3b': 0.8, 'RF1b': 0.75, 'IT2a': 0.75}
+  s91: {'ZL3b': {'conc': 100.0, 'alpha': 12.0, 'rho': 0.0, 'lam': 0.45, 'pen': 0.9}, 'RF1b': {'conc': 30.0, 'alpha': 12.0, 'rho': 0.0, 'lam': 0.45, 'pen': 0.9}, 'IT2a': {'conc': 30.0, 'alpha': 12.0, 'rho': 0.0, 'lam': 0.3, 'pen': 0.8}}
+  s71 WTG: {'p_rep': 0.15, 'tau': 12.0, 'gamma': 0.35, 'rho': 0.55, 'gamma_comp': 0.08, 'p_gal_reset': 0.35, 'K': 12, 'M_cand': 6, 'W': 20}
+
+Generating planted manuscripts (fitted to Voynich training quires q != 'A', exact Voynich page/line/quire structure)...
+Planted manuscripts generated in 17.5s (2026-10-18 12:57:48 (datetime.now)).
+
+================================================================================
+AUDIT 1 — F-30 (s71 Weakened Table-and-Grille: WTG_global & WTG_scribe on 15-Quire LOQO)
+================================================================================
+  F-30 WTG_global   | ZL3b: recovery  1/15 -> UNINFORMATIVE | P1 11/15, P2 10/15, P3  5/15, P4 11/15, P5  0/15, P7 15/15 | [diagnostic recentred P4/P5:  7/15]
+  F-30 WTG_global   | RF1b: recovery  2/15 -> UNINFORMATIVE | P1 11/15, P2  8/15, P3  9/15, P4 10/15, P5  0/15, P7 15/15 | [diagnostic recentred P4/P5:  6/15]
+  F-30 WTG_global   | IT2a: recovery  4/15 -> UNINFORMATIVE | P1 13/15, P2  9/15, P3  8/15, P4 12/15, P5  0/15, P7 15/15 | [diagnostic recentred P4/P5:  9/15]
+  => F-30 WTG_global   CALL: UNINFORMATIVE (ZL3b 1/15 [UNINFORMATIVE], RF1b 2/15 [UNINFORMATIVE], IT2a 4/15 [UNINFORMATIVE])
+  F-30 WTG_scribe   | ZL3b: recovery  3/15 -> UNINFORMATIVE | P1 11/15, P2  9/15, P3  8/15, P4 12/15, P5  0/15, P7 14/15 | [diagnostic recentred P4/P5:  5/15]
+  F-30 WTG_scribe   | RF1b: recovery  1/15 -> UNINFORMATIVE | P1  8/15, P2  9/15, P3  6/15, P4  9/15, P5  0/15, P7 14/15 | [diagnostic recentred P4/P5:  5/15]
+  F-30 WTG_scribe   | IT2a: recovery  4/15 -> UNINFORMATIVE | P1 12/15, P2  9/15, P3  6/15, P4 12/15, P5  0/15, P7 14/15 | [diagnostic recentred P4/P5:  6/15]
+  => F-30 WTG_scribe   CALL: UNINFORMATIVE (ZL3b 3/15 [UNINFORMATIVE], RF1b 1/15 [UNINFORMATIVE], IT2a 4/15 [UNINFORMATIVE])
+Completed F-30 audit in 613.6s (2026-10-18 13:08:01 (datetime.now)).
+
+================================================================================
+AUDIT 2 — F-34 (s81 Per-Line Sticky Naibbe on 15-Quire LOQO: C1 >=5/6 Exclusion & C2 s69 Call Match)
+================================================================================
+  Planted s81 (ZL3b) full-text s69 reference calls: C1=T C2=F C3p=T C4p=F C5=T (M1=+0.1440)
+  Planted s81 (RF1b) full-text s69 reference calls: C1=T C2=F C3p=T C4p=F C5=T (M1=+0.1139)
+  Planted s81 (IT2a) full-text s69 reference calls: C1=T C2=F C3p=T C4p=F C5=T (M1=+0.1136)
+  F-34 line_sticky_fit|latin_cremma | ZL3b: C1(>=5/6)= 0/15 [UNINFORMATIVE] (recentred P4/P5: 11/15 [POWERED]) | C2(s69 match)= 9/15 [WEAK         ] | P1 13/15, P2  8/15, P3  4/15, P4  0/15, P5  0/15, P7 15/15
+  F-34 line_sticky_fit|latin_cremma | RF1b: C1(>=5/6)= 0/15 [UNINFORMATIVE] (recentred P4/P5: 11/15 [POWERED]) | C2(s69 match)=13/15 [POWERED      ] | P1 11/15, P2 12/15, P3  4/15, P4  0/15, P5  0/15, P7 15/15
+  F-34 line_sticky_fit|latin_cremma | IT2a: C1(>=5/6)= 0/15 [UNINFORMATIVE] (recentred P4/P5: 10/15 [POWERED]) | C2(s69 match)=15/15 [POWERED      ] | P1 12/15, P2  9/15, P3  6/15, P4  0/15, P5  0/15, P7 15/15
+  => F-34 line_sticky_fit|latin_cremma C1 (>=5/6 battery) CALL: UNINFORMATIVE (ZL3b 0/15, RF1b 0/15, IT2a 0/15)
+  => F-34 line_sticky_fit|latin_cremma C2 (s69 call match) CALL: WEAK (ZL3b 9/15, RF1b 13/15, IT2a 15/15)
+  F-34 line_sticky75|latin_cremma   | ZL3b: C1(>=5/6)= 0/15 [UNINFORMATIVE] (recentred P4/P5: 10/15 [POWERED]) | C2(s69 match)=15/15 [POWERED      ] | P1 14/15, P2  9/15, P3  6/15, P4  0/15, P5  0/15, P7 15/15
+  F-34 line_sticky75|latin_cremma   | RF1b: C1(>=5/6)= 0/15 [UNINFORMATIVE] (recentred P4/P5:  9/15 [WEAK]) | C2(s69 match)=14/15 [POWERED      ] | P1 10/15, P2 11/15, P3  5/15, P4  0/15, P5  0/15, P7 15/15
+  F-34 line_sticky75|latin_cremma   | IT2a: C1(>=5/6)= 0/15 [UNINFORMATIVE] (recentred P4/P5:  9/15 [WEAK]) | C2(s69 match)=15/15 [POWERED      ] | P1 13/15, P2  8/15, P3  5/15, P4  0/15, P5  0/15, P7 15/15
+  => F-34 line_sticky75|latin_cremma   C1 (>=5/6 battery) CALL: UNINFORMATIVE (ZL3b 0/15, RF1b 0/15, IT2a 0/15)
+  => F-34 line_sticky75|latin_cremma   C2 (s69 call match) CALL: POWERED (ZL3b 15/15, RF1b 14/15, IT2a 15/15)
+Completed F-34 audit in 624.0s (2026-10-18 13:18:25 (datetime.now)).
+
+================================================================================
+AUDIT 3 — F-23 (Lexical Producers s57, s58, s61, s67 CA on 15-Quire LOQO)
+================================================================================
+  Fitted s57 on planted ZL3b training split (545 evals, 41.1s): params={'p_copy': 0.15, 'tau': 20.0, 'a': 0.0, 'q_pre': 0.0, 'q_suf': 0.2, 'q_core': 0.6}, loss=29.56
+  Fitted s57 on planted RF1b training split (555 evals, 42.6s): params={'p_copy': 0.15, 'tau': 20.0, 'a': 0.15, 'q_pre': 0.2, 'q_suf': 0.0, 'q_core': 0.6}, loss=31.49
+  Fitted s58 on planted ZL3b training split (274 evals, 34.0s): params={'p_copy': 0.02, 'tau': 4.0, 'a': 0.5, 'q_core': 0.0}, loss=538.43
+  Fitted s57 on planted IT2a training split (555 evals, 40.2s): params={'p_copy': 0.15, 'tau': 20.0, 'a': 0.15, 'q_pre': 0.2, 'q_suf': 0.0, 'q_core': 0.6}, loss=27.81
+  Fitted s58 on planted RF1b training split (251 evals, 29.5s): params={'p_copy': 0.04, 'tau': 4.0, 'a': 0.3, 'q_core': 0.25}, loss=399.45
+  Fitted s58 on planted IT2a training split (286 evals, 34.0s): params={'p_copy': 0.02, 'tau': 2.0, 'a': 0.15, 'q_core': 0.3}, loss=755.40
+  Fitted s61 on planted ZL3b training split (394 evals, 32.6s): params={'p_copy': 0.04, 'tau': 4.0, 'a': 0.15, 'q_edit': 0.25, 'p_new': 0.16}, loss=40.14
+  Fitted s61 on planted RF1b training split (394 evals, 33.9s): params={'p_copy': 0.06, 'tau': 12.0, 'a': 0.0, 'q_edit': 0.25, 'p_new': 0.16}, loss=23.11
+  Fitted s61 on planted IT2a training split (413 evals, 38.4s): params={'p_copy': 0.06, 'tau': 20.0, 'a': 0.0, 'q_edit': 0.5, 'p_new': 0.13}, loss=26.36
+  F-23 s57          | ZL3b: recovery(>=5/6)= 0/15 [UNINFORMATIVE] (all 6/6:  0/15; recentred P4/P5 >=5/6:  6/15) | P1 13/15, P2  8/15, P3  7/15, P4  1/15, P5  0/15, P7 15/15
+  F-23 s57          | RF1b: recovery(>=5/6)= 0/15 [UNINFORMATIVE] (all 6/6:  0/15; recentred P4/P5 >=5/6:  6/15) | P1 14/15, P2  7/15, P3  4/15, P4  1/15, P5  0/15, P7 15/15
+  F-23 s57          | IT2a: recovery(>=5/6)= 0/15 [UNINFORMATIVE] (all 6/6:  0/15; recentred P4/P5 >=5/6:  5/15) | P1 13/15, P2  5/15, P3  5/15, P4  1/15, P5  0/15, P7 15/15
+  => F-23 s57    CALL: UNINFORMATIVE (ZL3b 0/15 [UNINFORMATIVE], RF1b 0/15 [UNINFORMATIVE], IT2a 0/15 [UNINFORMATIVE])
+  F-23 s58          | ZL3b: recovery(>=5/6)= 2/15 [UNINFORMATIVE] (all 6/6:  0/15; recentred P4/P5 >=5/6:  7/15) | P1 12/15, P2 11/15, P3  3/15, P4  0/15, P5 15/15, P7 13/15
+  F-23 s58          | RF1b: recovery(>=5/6)= 1/15 [UNINFORMATIVE] (all 6/6:  0/15; recentred P4/P5 >=5/6:  6/15) | P1 12/15, P2 11/15, P3  2/15, P4  0/15, P5 15/15, P7 13/15
+  F-23 s58          | IT2a: recovery(>=5/6)= 1/15 [UNINFORMATIVE] (all 6/6:  0/15; recentred P4/P5 >=5/6:  2/15) | P1 13/15, P2  8/15, P3  3/15, P4  0/15, P5 15/15, P7 11/15
+  => F-23 s58    CALL: UNINFORMATIVE (ZL3b 2/15 [UNINFORMATIVE], RF1b 1/15 [UNINFORMATIVE], IT2a 1/15 [UNINFORMATIVE])
+  F-23 s61          | ZL3b: recovery(>=5/6)= 1/15 [UNINFORMATIVE] (all 6/6:  0/15; recentred P4/P5 >=5/6:  6/15) | P1  8/15, P2 10/15, P3  6/15, P4  6/15, P5  0/15, P7 15/15
+  F-23 s61          | RF1b: recovery(>=5/6)= 1/15 [UNINFORMATIVE] (all 6/6:  0/15; recentred P4/P5 >=5/6: 10/15) | P1 11/15, P2 12/15, P3  4/15, P4  7/15, P5  0/15, P7 15/15
+  F-23 s61          | IT2a: recovery(>=5/6)= 1/15 [UNINFORMATIVE] (all 6/6:  0/15; recentred P4/P5 >=5/6:  7/15) | P1 10/15, P2 12/15, P3  3/15, P4  3/15, P5  0/15, P7 15/15
+  => F-23 s61    CALL: UNINFORMATIVE (ZL3b 1/15 [UNINFORMATIVE], RF1b 1/15 [UNINFORMATIVE], IT2a 1/15 [UNINFORMATIVE])
+  F-23 s67_CA      | ZL3b: recovery(>=5/6)= 2/15 [UNINFORMATIVE] (recentred P4/P5 >=5/6:  4/15) | P1 15/15, P2 12/15, P3  4/15, P4  1/15, P5  7/15, P7 15/15
+  F-23 s67_CA      | RF1b: recovery(>=5/6)= 2/15 [UNINFORMATIVE] (recentred P4/P5 >=5/6:  7/15) | P1 15/15, P2  6/15, P3  8/15, P4  0/15, P5  9/15, P7 15/15
+  F-23 s67_CA      | IT2a: recovery(>=5/6)= 0/15 [UNINFORMATIVE] (recentred P4/P5 >=5/6:  6/15) | P1 15/15, P2  8/15, P3  5/15, P4  1/15, P5  4/15, P7 15/15
+  => F-23 s67_CA  CALL: UNINFORMATIVE (ZL3b 2/15 [UNINFORMATIVE], RF1b 2/15 [UNINFORMATIVE], IT2a 0/15 [UNINFORMATIVE])
+  F-23 s67_CA0     | ZL3b: recovery(>=5/6)= 0/15 [UNINFORMATIVE] (recentred P4/P5 >=5/6:  1/15) | P1  0/15, P2 12/15, P3  4/15, P4  0/15, P5  8/15, P7 15/15
+  F-23 s67_CA0     | RF1b: recovery(>=5/6)= 0/15 [UNINFORMATIVE] (recentred P4/P5 >=5/6:  7/15) | P1  0/15, P2 14/15, P3 11/15, P4  0/15, P5 13/15, P7 15/15
+  F-23 s67_CA0     | IT2a: recovery(>=5/6)= 0/15 [UNINFORMATIVE] (recentred P4/P5 >=5/6:  2/15) | P1  0/15, P2 10/15, P3  7/15, P4  0/15, P5  5/15, P7 15/15
+  => F-23 s67_CA0 CALL: UNINFORMATIVE (ZL3b 0/15 [UNINFORMATIVE], RF1b 0/15 [UNINFORMATIVE], IT2a 0/15 [UNINFORMATIVE])
+Completed F-23 audit in 1865.6s (2026-10-18 13:49:31 (datetime.now)).
+
+================================================================================
+AUDIT 4 — F-41 (s91 Line-Pool Producer LP91 on 15-Quire LOQO: C1 Core Signature & C2 Word Battery)
+================================================================================
+  Planted LP91 profiles: recomputed loc_band=[0.8642, 0.9997] (frozen s87 loc_band=[0.9074, 1.0499]); recomputed order_band K100=[-0.0373, +0.0682]
+    PLANTED_LP91_ZL3b: o100 +0.017 o200 +0.018 Rw1 1.316(p0.001) Rc1 0.657 loc 0.941 flags(s87)=YYYY (PASS)
+    PLANTED_LP91_RF1b: o100 -0.004 o200 -0.001 Rw1 1.276(p0.001) Rc1 0.722 loc 0.932 flags(s87)=nYYY (FAIL)
+    PLANTED_LP91_IT2a: o100 +0.032 o200 +0.031 Rw1 1.184(p0.001) Rc1 0.861 loc 0.932 flags(s87)=YYYY (PASS)
+  F-41 s91_LP91 C1   | ZL3b: recovery(s87 bands)= 7/15 [WEAK         ] (planted-self bands: 15/15) | a_order  9/15, b_Rw 15/15, c_Rc<Rw 15/15, d_loc 12/15
+  F-41 s91_LP91 C2   | ZL3b: recovery(>=5/6)= 0/15 [UNINFORMATIVE] | P1 13/15, P2  8/15, P3 10/15, P4  0/15, P5  5/15, P7 14/15
+  F-41 s91_LP91 C1   | RF1b: recovery(s87 bands)= 5/15 [WEAK         ] (planted-self bands: 14/15) | a_order  8/15, b_Rw 15/15, c_Rc<Rw 14/15, d_loc 13/15
+  F-41 s91_LP91 C2   | RF1b: recovery(>=5/6)= 0/15 [UNINFORMATIVE] | P1 14/15, P2  9/15, P3  5/15, P4  0/15, P5  2/15, P7 15/15
+  F-41 s91_LP91 C1   | IT2a: recovery(s87 bands)=14/15 [POWERED      ] (planted-self bands: 14/15) | a_order 14/15, b_Rw 15/15, c_Rc<Rw 15/15, d_loc 15/15
+  F-41 s91_LP91 C2   | IT2a: recovery(>=5/6)= 2/15 [UNINFORMATIVE] | P1 10/15, P2  8/15, P3 11/15, P4  0/15, P5  6/15, P7 13/15
+  => F-41 s91_LP91 C1 (core signature) CALL: WEAK (ZL3b 7/15 [WEAK], RF1b 5/15 [WEAK], IT2a 14/15 [POWERED])
+  => F-41 s91_LP91 C2 (LP91+s81 words) CALL: UNINFORMATIVE (ZL3b 0/15 [UNINFORMATIVE], RF1b 0/15 [UNINFORMATIVE], IT2a 2/15 [UNINFORMATIVE])
+Completed F-41 audit in 4690.5s (2026-10-18 15:07:41 (datetime.now)).
+
+================================================================================
+SUMMARY TABLE — s101 LOQO POWER AUDIT (PRE-REGISTERED RULE: >=10/15 POWERED, 5-9/15 WEAK, <=4/15 UNINFORMATIVE)
+================================================================================
+  Finding Producer Family                    ZL3b (Call)           RF1b (Call)           IT2a (Call)           Family Call     Recentred(Z/R/I)
+  F-30    s71_WTG_global                      1/15 (UNINFORMATIVE)  2/15 (UNINFORMATIVE)  4/15 (UNINFORMATIVE) UNINFORMATIVE    7/ 6/ 9 of 15
+  F-30    s71_WTG_scribe                      3/15 (UNINFORMATIVE)  1/15 (UNINFORMATIVE)  4/15 (UNINFORMATIVE) UNINFORMATIVE    5/ 5/ 6 of 15
+  F-34    s81_line_sticky_fit|latin_cremma_C1  0/15 (UNINFORMATIVE)  0/15 (UNINFORMATIVE)  0/15 (UNINFORMATIVE) UNINFORMATIVE   11/11/10 of 15
+  F-34    s81_line_sticky_fit|latin_cremma_C2_s69  9/15 (WEAK)          13/15 (POWERED)       15/15 (POWERED)       WEAK             9/13/15 of 15
+  F-34    s81_line_sticky75|latin_cremma_C1   0/15 (UNINFORMATIVE)  0/15 (UNINFORMATIVE)  0/15 (UNINFORMATIVE) UNINFORMATIVE   10/ 9/ 9 of 15
+  F-34    s81_line_sticky75|latin_cremma_C2_s69 15/15 (POWERED)       14/15 (POWERED)       15/15 (POWERED)       POWERED         15/14/15 of 15
+  F-23    F23_s57                             0/15 (UNINFORMATIVE)  0/15 (UNINFORMATIVE)  0/15 (UNINFORMATIVE) UNINFORMATIVE    6/ 6/ 5 of 15
+  F-23    F23_s58                             2/15 (UNINFORMATIVE)  1/15 (UNINFORMATIVE)  1/15 (UNINFORMATIVE) UNINFORMATIVE    7/ 6/ 2 of 15
+  F-23    F23_s61                             1/15 (UNINFORMATIVE)  1/15 (UNINFORMATIVE)  1/15 (UNINFORMATIVE) UNINFORMATIVE    6/10/ 7 of 15
+  F-23    F23_s67_CA                          2/15 (UNINFORMATIVE)  2/15 (UNINFORMATIVE)  0/15 (UNINFORMATIVE) UNINFORMATIVE    4/ 7/ 6 of 15
+  F-23    F23_s67_CA0                         0/15 (UNINFORMATIVE)  0/15 (UNINFORMATIVE)  0/15 (UNINFORMATIVE) UNINFORMATIVE    1/ 7/ 2 of 15
+  F-41    s91_LP91_C1_core                    7/15 (WEAK)           5/15 (WEAK)          14/15 (POWERED)       WEAK            15/14/14 of 15
+  F-41    s91_LP91_C2_words                   0/15 (UNINFORMATIVE)  0/15 (UNINFORMATIVE)  2/15 (UNINFORMATIVE) UNINFORMATIVE    0/ 0/ 2 of 15
+
+elapsed: 7811.2s
+date end: 2026-10-18 15:07:41 (datetime.now)
+outputs: ./results_s101.txt, ./runs/s101

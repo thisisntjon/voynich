@@ -1,0 +1,150 @@
+{
+ "row": {
+  "name": "oldfrench_roland",
+  "tokens": 25004,
+  "types": 3976,
+  "pages": 244,
+  "lines": 3383,
+  "errors": {},
+  "types_25k": 3975,
+  "h2": 3.1375,
+  "sd_len": 2.296,
+  "jsd_first_fg": 0.0241,
+  "p_init_enrich": 1.33,
+  "m_final_enrich": 1.05,
+  "cross_excess_eva": 0.0911,
+  "redup_pct": 0.044,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "jsd_first_fg",
+   "p_init_enrich",
+   "m_final_enrich",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "oldfrench_roland",
+   "tokens": 25000,
+   "types": 3975,
+   "hapax_rate": 0.5565,
+   "mean_len": 4.001,
+   "sd_len": 2.296,
+   "h1": 3.9093,
+   "h2": 3.1375,
+   "h3": 2.6021,
+   "zipf": -1.0188,
+   "redup_pct": 0.044,
+   "jsd_first_fg": 0.0241,
+   "jsd_last_lg": 0.0825,
+   "p_init_enrich": 1.33,
+   "m_final_enrich": 1.05,
+   "cross_mi_eva": 0.1125,
+   "cross_excess_eva": 0.0911,
+   "cross_mi_glyph": 0.119,
+   "cross_excess_glyph": 0.0927,
+   "recur_le_1": 0.0004,
+   "recur_le_5": 0.0423,
+   "recur_le_20": 0.1359,
+   "recur_le_100": 0.3547
+  },
+  "x_edge_mi_word": 0.0970737872093226,
+  "x_hapax_10k": 0.5855232826187183,
+  "x_moran_I": -0.14125664179865569,
+  "x_position_entropy": 2.0028418072845637,
+  "x_ltr_minus_rtl": 0.0005207043112184316,
+  "info_mi_adjacent": 0.839173353951451,
+  "info_mi_page": -0.005994002445322666,
+  "info_samecol_minus_othercol": 0.03811490502125747,
+  "info_bpe_adjacent": 0.9248215388861648,
+  "lex_beta": 0.7068324682242602,
+  "lex_rate_late_early": 0.3936718175128771,
+  "lex_edit1_excess": 0.024396378269617686,
+  "slot_occupancy_pc": 0.048446305775296,
+  "slot_table_likeness": 0.6491592583184633,
+  "slot_core_crowding": 0.8106095858538855,
+  "bake_winner": "unigram_gt",
+  "bake_char3_minus_unigram": 0.6373511126274103,
+  "bake_bits": {
+   "markov2": 13.341857318285506,
+   "markov3": 11.702074051707163,
+   "slot": 11.881997939365332,
+   "unigram_gt": 11.064722939079752,
+   "copy0.3+markov3": 12.024045371479108,
+   "copy0.1+markov3": 11.767194452610447,
+   "copy0.05+markov3": 11.721035160416786
+  },
+  "family": "L",
+  "note": ".//data//controls_realline//oldfrench_roland.meta.json; 29524 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 8,
+    "outs": 2,
+    "na": 0,
+    "out_metrics": [
+     "jsd_first_fg",
+     "p_init_enrich"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "p_init_enrich"
+    ]
+   },
+   "C": {
+    "ins": 4,
+    "outs": 4,
+    "na": 2,
+    "out_metrics": [
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k"
+    ],
+    "out_tight": [
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k"
+    ]
+   },
+   "G": {
+    "ins": 6,
+    "outs": 4,
+    "na": 0,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_position_entropy"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_position_entropy"
+    ]
+   },
+   "X": {
+    "ins": 7,
+    "outs": 2,
+    "na": 1,
+    "out_metrics": [
+     "x_edge_mi_word",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "x_edge_mi_word",
+     "x_ltr_minus_rtl"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": ".//s15_ranges.json"
+}

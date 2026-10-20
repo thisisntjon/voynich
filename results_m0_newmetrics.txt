@@ -1,0 +1,179 @@
+# results_d1_newmetrics: new Phase-1 metric families, seed 20261017
+# run 2026-10-17 16:23 (system clock)
+# voynich_eva          pages= 207  lines= 4130  tokens= 34857  types= 7025  sections=['A', 'B', 'C', 'H', 'P', 'S', 'T']
+# latin_caesar         pages= 122  lines= 2440  tokens= 19520  types= 5491  sections=['s1', 's2', 's3', 's4']
+# italian_dante        pages= 157  lines= 3125  tokens= 25000  types= 5323  sections=['s1', 's2', 's3', 's4']
+# NULL_bigram_pseudo   pages= 207  lines= 4130  tokens= 34857  types=10787  sections=['A', 'B', 'C', 'H', 'P', 'S', 'T']
+
+=== 1. LEXICON GROWTH (Heaps V=K N^beta; log-log OLS on 40 log-spaced points from N=100) ===
+L: beta ~0.5-0.7 steady; C: beta_late < beta_early, low rate ratio; G: steady beta, high edit-1 share
+metric                                           voynich_eva        latin_caesar       italian_dante  NULL_bigram_pseudo
+beta (all)                                             0.741               0.783               0.765               0.844
+beta early half                                        0.780               0.829               0.802               0.861
+beta late half                                         0.725               0.721               0.722               0.836
+new-type rate last20%/first20%                         0.464               0.411               0.462               0.670
+new types edit1 of prev-200 tokens                     0.322               0.071               0.142               0.123
+  same, far window (baseline)                          0.225               0.050               0.086               0.119
+null(shuffled pages) beta mean                         0.762               0.790               0.770               0.840
+null beta_late mean                                    0.716               0.709               0.721               0.835
+null rate ratio mean                                   0.422               0.389               0.420               0.654
+null rate ratio sd                                     0.028               0.018               0.019               0.013
+null edit1 share mean                                  0.307               0.060               0.135               0.122
+null edit1 share sd                                   0.0032              0.0022              0.0025              0.0017
+Per section / hand (Voynich; >=2000 tokens):
+  section=B  N=  6240 V= 1395 beta=0.725 early=0.723 late=0.697 rate_ratio=0.397 edit1=0.477
+  section=H  N= 11468 V= 3324 beta=0.775 early=0.833 late=0.738 rate_ratio=0.617 edit1=0.391
+  section=P  N=  2306 V=  939 beta=0.796 early=0.867 late=0.770 rate_ratio=0.486 edit1=0.485
+  section=S  N= 11586 V= 3275 beta=0.757 early=0.817 late=0.734 rate_ratio=0.459 edit1=0.382
+  section=T  N=  2284 V=  953 beta=0.760 early=0.891 late=0.650 rate_ratio=0.393 edit1=0.504
+  hand=1  N= 10481 V= 2985 beta=0.744 early=0.795 late=0.705 rate_ratio=0.537 edit1=0.401
+  hand=2  N= 10800 V= 2434 beta=0.741 early=0.867 late=0.623 rate_ratio=0.465 edit1=0.413
+  hand=3  N= 11703 V= 3302 beta=0.758 early=0.825 late=0.716 rate_ratio=0.470 edit1=0.384
+Voynich types-seen curve (N:V): 100:87 182:142 332:233 605:378 1104:588 2012:888 3668:1344 6687:2104 12189:3480 22219:4963
+
+=== 2. SLOT STRUCTURE (prefix/core/suffix induced by >=1% share + successor entropy >= 0.5 H(glyph)) ===
+L: sparse, Zipfian cores within prefix; C: high occupancy, table-likeness ~1; G: between, crowded cores
+[all_types]
+metric                                           voynich_eva        latin_caesar       italian_dante  NULL_bigram_pseudo
+n prefixes                                                29                  36                  34                  25
+n cores                                                 2335                3465                2891                5287
+n suffixes                                                19                  31                  32                  26
+n types (occupied cells)                                7025                5491                5323               10787
+occupancy P x C x S                                   0.0055              0.0014              0.0017              0.0031
+occupancy P x C                                       0.0660              0.0332              0.0394              0.0594
+occupancy C x S                                       0.0848              0.0464              0.0474              0.0531
+H(core) bits                                           6.580               9.170               7.224               6.862
+H(core | prefix) bits                                  4.911               5.314               4.618               5.226
+table-likeness (tok-weighted)                          0.648               0.747               0.633               0.606
+table-likeness (unweighted)                            0.695               0.769               0.705               0.702
+mean row fill (cores/prefix / nC)                     0.0660              0.0332              0.0394              0.0594
+core edit-1 neighbour share                            0.872               0.679               0.747               0.583
+empty-prefix token share                               0.188               0.138               0.236               0.258
+empty-suffix token share                               0.442               0.242               0.408               0.518
+[top_types]
+metric                                           voynich_eva        latin_caesar       italian_dante  NULL_bigram_pseudo
+n prefixes                                                29                  36                  34                  25
+n cores                                                  392                1226                 976                 398
+n suffixes                                                19                  31                  32                  26
+n types (occupied cells)                                2000                2000                2000                2000
+occupancy P x C x S                                   0.0093              0.0015              0.0019              0.0077
+occupancy P x C                                       0.1067              0.0337              0.0429              0.1104
+occupancy C x S                                       0.1003              0.0484              0.0509              0.0757
+H(core) bits                                           5.564               8.093               6.222               4.544
+H(core | prefix) bits                                  4.003               4.359               3.795               3.386
+table-likeness (tok-weighted)                          0.705               0.765               0.642               0.576
+table-likeness (unweighted)                            0.769               0.788               0.723               0.677
+mean row fill (cores/prefix / nC)                     0.1067              0.0337              0.0429              0.1104
+core edit-1 neighbour share                            0.957               0.688               0.794               0.781
+empty-prefix token share                               0.187               0.149               0.258               0.300
+empty-suffix token share                               0.487               0.280               0.464               0.606
+[voynich_eva] H(glyph)=3.865 thresh=1.933
+   prefixes: o ch qo qok che ok ot a she y cho ol l k qot t oke sho ota ote p yk r cth yt lk al dal
+   suffixes: y ol ar hy or al eey ain o s ody chy am ky dar d dal air
+   rejected prefixes (share, H_next): [('c', 0.186, 0.78), ('q', 0.152, 0.2), ('s', 0.122, 1.47), ('d', 0.094, 1.86), ('sh', 0.088, 1.87), ('da', 0.061, 1.68), ('dai', 0.036, 1.29), ('ai', 0.023, 1.44)]
+   top prefixes: [('', 0.188), ('qok', 0.088), ('che', 0.075), ('o', 0.062), ('she', 0.05), ('a', 0.046), ('ch', 0.044), ('cho', 0.042)]
+   top cores: [('d', 0.103), ('y', 0.055), ('l', 0.055), ('e', 0.047), ('r', 0.044), ('daiin', 0.032), ('aiin', 0.031), ('s', 0.03)]
+   top suffixes: [('', 0.442), ('y', 0.266), ('hy', 0.041), ('ol', 0.033), ('ar', 0.028), ('or', 0.024), ('ain', 0.021), ('o', 0.021)]
+   examples: daiin=|daiin| ol=o|l| chedy=che|d|y aiin=a|iin| shedy=she|d|y chol=cho|l| or=o|r| chey=che|y| ar=a|r| s=|s|
+[latin_caesar] H(glyph)=3.987 thresh=1.993
+   prefixes: c e a p i s co in m f h t o re con l su ca se ad ex no po pro de qua qui si pa di ne ma vi ve per
+   suffixes: s e t um i is a us o que re es em os am it ae ere tum tis as c ri ium ta ti ia ius tus ris
+   rejected prefixes (share, H_next): [('q', 0.052, 0.09), ('qu', 0.052, 1.74), ('n', 0.048, 1.99), ('d', 0.04, 1.94), ('r', 0.039, 1.31), ('pr', 0.03, 1.47), ('v', 0.028, 1.92), ('et', 0.025, 0.5)]
+   top prefixes: [('', 0.138), ('e', 0.09), ('a', 0.085), ('i', 0.064), ('f', 0.035), ('h', 0.034), ('c', 0.03), ('o', 0.029)]
+   top cores: [('n', 0.045), ('t', 0.036), ('d', 0.029), ('qu', 0.024), ('i', 0.023), ('e', 0.019), ('b', 0.018), ('u', 0.017)]
+   top suffixes: [('', 0.242), ('t', 0.101), ('e', 0.062), ('i', 0.053), ('um', 0.052), ('o', 0.045), ('us', 0.041), ('a', 0.03)]
+   examples: in=i|n| et=e|t| ad=a|d| cum=c|um| quod=|quod| se=s|e| ex=e|x| non=no|n| ut=|u|t qui=|qu|i
+[italian_dante] H(glyph)=4.016 thresh=2.008
+   prefixes: c l s d a p m i t f co v di g al o in se ma mi de pi ve b con so po su ri me gi vi fa
+   suffixes: e a o i n l to on io se ra ia er te ta u ro ti no ne de el or al me re na so da tro ma
+   rejected prefixes (share, H_next): [('e', 0.067, 1.61), ('ch', 0.052, 1.14), ('n', 0.04, 1.98), ('che', 0.036, 0.09), ('la', 0.031, 1.02), ('q', 0.027, -0.0), ('qu', 0.027, 1.38), ('pe', 0.023, 1.23)]
+   top prefixes: [('', 0.236), ('c', 0.079), ('l', 0.073), ('s', 0.059), ('p', 0.047), ('d', 0.044), ('t', 0.044), ('a', 0.043)]
+   top cores: [('e', 0.097), ('a', 0.075), ('i', 0.075), ('n', 0.057), ('h', 0.052), ('l', 0.05), ('u', 0.044), ('o', 0.032)]
+   top suffixes: [('', 0.408), ('e', 0.083), ('i', 0.081), ('o', 0.055), ('a', 0.051), ('to', 0.034), ('n', 0.022), ('te', 0.021)]
+   examples: e=|e| che=c|h|e l=|l| la=l|a| a=|a| di=d|i| si=s|i| non=|n|on per=p|er| ch=c|h|
+[NULL_bigram_pseudo] H(glyph)=3.862 thresh=1.931
+   prefixes: o ch qo sh che a ok ol l qok she cho k qol ot t qot sho oke p ck ct ke al
+   suffixes: y dy ey ain ol edy ar or al o s chy ody eey d key ky am dar kar shy ty dal eol kal
+   rejected prefixes (share, H_next): [('c', 0.185, 0.96), ('q', 0.153, 0.18), ('s', 0.121, 1.65), ('d', 0.092, 1.82), ('y', 0.051, 0.84), ('dy', 0.049, 0.76), ('da', 0.028, 1.84), ('ai', 0.025, 1.58)]
+   top prefixes: [('', 0.258), ('o', 0.094), ('qo', 0.07), ('che', 0.07), ('ch', 0.048), ('a', 0.047), ('qok', 0.037), ('she', 0.037)]
+   top cores: [('d', 0.136), ('y', 0.12), ('l', 0.085), ('r', 0.065), ('e', 0.044), ('s', 0.038), ('ch', 0.024), ('o', 0.024)]
+   top suffixes: [('', 0.518), ('y', 0.137), ('ain', 0.054), ('edy', 0.036), ('ey', 0.03), ('dy', 0.027), ('ar', 0.025), ('o', 0.018)]
+   examples: y=|y| dy=|d|y ol=o|l| l=|l| s=|s| qol=qo|l| or=o|r| chy=ch|y| qor=qo|r| chey=che|y|
+
+=== 3. INFORMATION PROFILE (MI(w; context) bits, top-500 types + OTHER, plug-in minus permutation null, +- bootstrap SE) ===
+L: steep decay from adjacent; C: flat page/section level; G: adjacent + previous-line spikes
+[word_boundaries_given]  tokens: voynich_eva=34857  latin_caesar=19520  italian_dante=25000  NULL_bigram_pseudo=34857  OTHER share: voynich_eva=0.309  latin_caesar=0.411  italian_dante=0.289  NULL_bigram_pseudo=0.359
+metric                                           voynich_eva        latin_caesar       italian_dante  NULL_bigram_pseudo
+adjacent                                        0.174+-0.014        0.270+-0.018        0.574+-0.013        0.006+-0.009
+same_line_2_5                                   0.049+-0.010        0.029+-0.020        0.028+-0.012        0.001+-0.009
+prev_line_same_col                              0.039+-0.010        0.020+-0.018        0.017+-0.014        0.003+-0.009
+prev_line_other_col                             0.029+-0.014        0.023+-0.018        0.015+-0.011        0.001+-0.010
+same_page_far                                   0.029+-0.013       -0.007+-0.017        0.007+-0.015        0.002+-0.011
+same_section_other_page                         0.021+-0.010        0.004+-0.017        0.013+-0.013        0.015+-0.009
+other_section                                  -0.001+-0.012       -0.016+-0.017        0.005+-0.015       -0.009+-0.009
+  adjacent / same_page_far ratio                         5.9            269586.6                87.4                 2.9
+  H(w) (adjacent pair set)                             6.495               5.688               6.101               5.453
+  raw MI adjacent (uncorrected)                        1.470               1.612               1.759               0.811
+  permutation null adjacent                            1.296               1.342               1.185               0.805
+[bpe_resegmented]  tokens: voynich_eva=87804  latin_caesar=82677  italian_dante=70848  NULL_bigram_pseudo=91662  OTHER share: voynich_eva=0.000  latin_caesar=0.000  italian_dante=0.000  NULL_bigram_pseudo=0.000
+metric                                           voynich_eva        latin_caesar       italian_dante  NULL_bigram_pseudo
+adjacent                                        1.176+-0.008        0.945+-0.009        0.897+-0.007        0.851+-0.007
+same_line_2_5                                   0.053+-0.003        0.035+-0.003        0.019+-0.003        0.006+-0.003
+prev_line_same_col                              0.039+-0.004        0.003+-0.003        0.002+-0.003       -0.002+-0.003
+prev_line_other_col                             0.019+-0.003       -0.004+-0.003        0.005+-0.002       -0.002+-0.003
+same_page_far                                   0.016+-0.003       -0.002+-0.002        0.002+-0.002       -0.002+-0.003
+same_section_other_page                         0.006+-0.003        0.002+-0.003       -0.000+-0.003        0.001+-0.003
+other_section                                   0.000+-0.003       -0.000+-0.003       -0.001+-0.002       -0.000+-0.003
+  adjacent / same_page_far ratio                        71.7            944844.2               457.5            850882.9
+  H(w) (adjacent pair set)                             5.287               5.329               5.319               5.311
+  raw MI adjacent (uncorrected)                        1.237               1.007               0.958               0.913
+  permutation null adjacent                            0.061               0.062               0.061               0.062
+[voynich_eva] BPE merges: ch dy ai ok ol che sh in ee aiin ot qok ar al or she ain daiin eey chedy edy ey qot eedy ody hy ct chy ck chey
+[latin_caesar] BPE merges: er um qu is nt it es at in us et os on ar or em li am en ent im ec ib ac pr ur as an om que
+[italian_dante] BPE merges: ch er co an el al en di es to ar on in ia tr io qu si ol or che ta os ti te as un per se do
+[NULL_bigram_pseudo] BPE merges: ch dy ai ok ol che sh ee ot ain ar al or aii ey edy qo qok ed chy qol aiin in chey ct ck ody qot od chedy
+
+=== 4. HELD-OUT BAKE-OFF (leave-one-quire-out for Voynich/null, blocks of 10 pages for controls; bits/token, bits/char) ===
+L: markov3/unigram win, copy adds nothing; C: slot beats markov3; G: copy beats markov3
+metric                                           voynich_eva        latin_caesar       italian_dante  NULL_bigram_pseudo
+markov2 bits/token                                    11.581              18.723              13.305              12.679
+markov3 bits/token                                    11.556              15.297              12.049              12.850
+slot bits/token                                       12.217              14.830              12.696              14.071
+unigram_gt bits/token                                 12.082              13.846              11.819              13.642
+copy0.3+markov3 bits/token                            11.811              15.666              12.398              13.227
+copy0.1+markov3 bits/token                            11.579              15.367              12.125              12.948
+copy0.05+markov3 bits/token                           11.545              15.311              12.073              12.892
+markov2 bits/char                                      1.934               2.671               2.698               2.150
+markov3 bits/char                                      1.929               2.182               2.443               2.179
+slot bits/char                                         2.040               2.115               2.574               2.386
+unigram_gt bits/char                                   2.017               1.975               2.396               2.314
+copy0.3+markov3 bits/char                              1.972               2.235               2.514               2.243
+copy0.1+markov3 bits/char                              1.933               2.192               2.459               2.196
+copy0.05+markov3 bits/char                             1.927               2.184               2.448               2.186
+gain over markov3: copy0.3+markov3                    -0.255              -0.370              -0.349              -0.376
+gain over markov3: copy0.1+markov3                    -0.022              -0.070              -0.076              -0.097
+gain over markov3: copy0.05+markov3                    0.012              -0.014              -0.024              -0.042
+slot - markov3 bits/token                              0.661              -0.467               0.647               1.221
+folds                                                     16                  13                  16                  16
+[voynich_eva] per-section winner (bits/token): T:markov3(11.25, n=2284); H:copy0.05+markov3(11.74, n=11468); S:markov2(11.88, n=11586); A:markov2(13.66, n=279); C:markov3(11.61, n=694); B:copy0.05+markov3(10.48, n=6240); P:copy0.05+markov3(11.74, n=2306)
+[latin_caesar] per-section winner (bits/token): s1:unigram_gt(13.82, n=4960); s2:unigram_gt(13.45, n=4800); s3:unigram_gt(14.38, n=4960); s4:unigram_gt(13.72, n=4800)
+[italian_dante] per-section winner (bits/token): s1:unigram_gt(11.75, n=6400); s2:unigram_gt(11.81, n=6240); s3:unigram_gt(11.84, n=6240); s4:unigram_gt(11.89, n=6120)
+[NULL_bigram_pseudo] per-section winner (bits/token): T:markov2(12.39, n=2284); H:markov2(12.70, n=11468); S:markov2(12.73, n=11586); A:markov2(12.78, n=279); C:markov2(12.60, n=694); B:markov2(12.48, n=6240); P:markov2(13.15, n=2306)
+
+=== 5. EXTRA PUBLISHED SIGNATURES ===
+(a) edge MI: R&T ~0.2 Voynich > prose; (b) hapax ~70% vs 41-60%; (c) Moran I wordlen >0 Voynich/gibberish, <0 text;
+(d) position entropy low = position-locked glyphs; (e) ltr-rtl bits/char asymmetry (Parisel)
+metric                                           voynich_eva        latin_caesar       italian_dante  NULL_bigram_pseudo
+(a) edge MI word->next word                            0.188               0.037               0.145              -0.000
+    edge MI line-end->next line                        0.016               0.019               0.136              -0.001
+(b) hapax share @10k                                   0.686               0.652               0.677               0.835
+    hapax share @20k                                   0.680                 nan               0.651               0.833
+    hapax share all tokens                             0.680               0.612               0.645               0.833
+(c) Moran I wordlen lag1                               0.141               0.001              -0.154               0.002
+    Moran I within-line pairs                          0.157               0.003              -0.154               0.004
+(d) glyph position entropy (max 2.32)                  1.661               2.152               2.016               1.801
+(e) bits/char ltr                                      1.929               2.182               2.443               2.179
+    bits/char rtl                                      1.924               2.184               2.441               2.177
+    asymmetry ltr - rtl                               0.0049             -0.0023              0.0023              0.0026
+
+timing (s): voynich_eva/lex=14.7, voynich_eva/slot=0.3, voynich_eva/info=2.1, voynich_eva/bake=9.9, voynich_eva/extra=6.3, latin_caesar/lex=12.8, latin_caesar/slot=0.3, latin_caesar/info=1.2, latin_caesar/bake=3.9, latin_caesar/extra=2.9, italian_dante/lex=12.2, italian_dante/slot=0.2, italian_dante/info=1.2, italian_dante/bake=5.8, italian_dante/extra=3.8, NULL_bigram_pseudo/lex=23.1, NULL_bigram_pseudo/slot=0.5, NULL_bigram_pseudo/info=1.8, NULL_bigram_pseudo/bake=9.8, NULL_bigram_pseudo/extra=6.0

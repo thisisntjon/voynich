@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:02:19.238791Z",
+ "response": "{\n  \"PT\": \"NONE\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NA\",\n  \"P_leafshape\": \"NA\",\n  \"P_leafcount\": \"NA\",\n  \"P_flower\": \"NA\",\n  \"P_habit\": \"NA\",\n  \"J_shape\": \"NA\",\n  \"J_count\": \"NA\",\n  \"J_fragcount\": \"NA\",\n  \"J_fragtype\": \"NA\",\n  \"C_centre\": \"EMPTY\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"0\",\n  \"C_rings\": \"0-1\",\n  \"C_diagrams\": \"NA\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"NA\",\n  \"B_figures\": \"NA\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2512131800,
+ "load_duration": 189964400,
+ "prompt_eval_count": 3268,
+ "prompt_eval_duration": 742057000,
+ "eval_count": 187,
+ "eval_duration": 1431577000,
+ "stem": "136_76r"
+}

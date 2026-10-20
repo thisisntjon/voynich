@@ -1,0 +1,50 @@
+r10.py mode=fixture run at (clock): 2026-10-18T13:52:33-07:00
+r10.py sha256: ada3231f0b6b0992767c7bd98fb206a4b1f138dcdb11d190cfc521ddaff4f69b
+r7.py (local import) sha256: 0d5e65db45b3c410bfbcab5b56d45adaab09b09c9af007b3546538a5b9f69b96
+== FIX_PLANTED_COPY
+  FIX_PLANTED_COPY: 15 folds, threshold 8
+   fold | fitted pool a ; drift a/tau ; copy c | match (i) pool (ii) drift (iii) copy | real t1..t6 | misses
+   Q00  | 15.42 ; 30/0.5 ; 0.20 | False False True  | 8.246 2.460 0.974 0.879 0.229 0.934 | pool:t1,t3,t5 drift:t1,t3,t5 copy:-
+   Q01  | 15.51 ; 30/0.5 ; 0.20 | False False True  | 7.499 2.365 0.979 0.642 0.215 1.089 | pool:t1,t3,t5 drift:t1,t3,t5 copy:-
+   Q02  | 15.52 ; 30/0.5 ; 0.20 | False False True  | 8.255 2.376 1.025 0.942 0.270 1.025 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   Q03  | 15.54 ; 30/0.5 ; 0.20 | False False True  | 9.166 2.942 0.918 0.594 0.262 0.927 | pool:t1,t3,t5 drift:t1,t2,t3,t5 copy:-
+   Q04  | 15.41 ; 30/0.5 ; 0.20 | False False True  | 7.151 2.203 0.859 0.936 0.236 1.103 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   Q05  | 15.48 ; 30/0.5 ; 0.20 | False False True  | 8.022 2.354 0.958 0.909 0.293 1.077 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   Q06  | 15.51 ; 30/0.5 ; 0.20 | False False True  | 7.947 2.363 1.158 1.607 0.280 1.031 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   Q07  | 15.37 ; 30/0.5 ; 0.20 | False False True  | 7.412 2.047 0.905 1.433 0.231 1.080 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   Q08  | 15.41 ; 30/0.5 ; 0.20 | False False True  | 7.223 2.301 1.072 1.040 0.288 1.042 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   Q09  | 15.50 ; 30/0.5 ; 0.20 | False False True  | 8.292 2.367 0.942 0.878 0.243 1.015 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   Q10  | 15.52 ; 30/0.5 ; 0.20 | False False True  | 8.160 2.485 1.257 1.009 0.304 0.933 | pool:t1,t3,t5 drift:t1,t3,t5 copy:-
+   Q11  | 15.44 ; 30/0.5 ; 0.20 | False False True  | 8.077 2.417 0.871 0.671 0.284 1.042 | pool:t1,t3,t5 drift:t1,t3,t5 copy:-
+   Q12  | 15.39 ; 30/0.5 ; 0.20 | False False True  | 8.511 2.435 0.915 0.614 0.242 0.907 | pool:t1,t3,t5 drift:t1,t3,t5 copy:-
+   Q13  | 15.50 ; 30/0.5 ; 0.20 | False False True  | 8.268 2.187 1.136 0.699 0.235 0.976 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   Q14  | 15.39 ; 30/0.5 ; 0.20 | False False True  | 8.551 2.346 1.084 0.998 0.234 0.915 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   folds matched: (i) pool 0, (ii) drift 0, (iii) copy 15 (threshold 8)
+   pool most-missed quantities: t1 15, t3 15, t5 15
+   drift most-missed quantities: t1 15, t3 15, t5 15
+   copy most-missed quantities: none
+
+== FIX_PLANTED_POOL
+  FIX_PLANTED_POOL: 15 folds, threshold 8
+   fold | fitted pool a ; drift a/tau ; copy c | match (i) pool (ii) drift (iii) copy | real t1..t6 | misses
+   Q00  | 1.94 ; 30/0.5 ; 0.20 | True  False False | 9.165 9.882 9.257 0.802 -0.003 0.992 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   Q01  | 1.95 ; 30/0.5 ; 0.20 | True  False False | 9.199 9.326 9.315 0.740 -0.007 1.174 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   Q02  | 1.94 ; 30/0.5 ; 0.20 | False False False | 7.980 8.650 8.391 0.535 -0.063 1.205 | pool:t5 drift:t1,t2,t3,t5,t6 copy:t2,t3,t5,t6
+   Q03  | 1.95 ; 30/0.5 ; 0.20 | True  False False | 10.215 10.549 10.738 0.632 0.005 0.924 | pool:- drift:t1,t2,t3 copy:t1,t2,t3,t5
+   Q04  | 1.92 ; 30/0.5 ; 0.20 | True  False False | 9.322 9.563 8.849 0.470 -0.021 1.022 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   Q05  | 1.95 ; 30/0.5 ; 0.20 | True  False False | 9.092 9.174 8.752 0.375 -0.015 1.115 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   Q06  | 1.95 ; 30/0.5 ; 0.20 | False False False | 10.047 9.339 9.728 0.682 0.069 1.060 | pool:t5 drift:t1,t2,t3,t5 copy:t1,t2,t3,t5
+   Q07  | 1.94 ; 30/0.5 ; 0.20 | True  False False | 10.225 10.969 10.475 0.229 -0.009 0.823 | pool:- drift:t1,t2,t3,t4 copy:t1,t2,t3,t4,t5
+   Q08  | 1.94 ; 30/0.5 ; 0.20 | True  False False | 8.854 9.240 8.744 0.384 0.044 1.120 | pool:- drift:t1,t2,t3,t4,t5 copy:t2,t3,t5
+   Q09  | 1.94 ; 30/0.5 ; 0.20 | True  False False | 10.436 10.122 9.840 0.825 0.009 0.872 | pool:- drift:t1,t2,t3 copy:t1,t2,t3,t5
+   Q10  | 1.95 ; 30/0.5 ; 0.20 | True  False False | 10.639 10.481 10.775 0.873 -0.034 0.855 | pool:- drift:t1,t2,t3 copy:t1,t2,t3,t5
+   Q11  | 1.96 ; 30/0.5 ; 0.20 | True  False False | 9.134 9.586 9.494 0.830 -0.063 1.125 | pool:- drift:t1,t2,t3,t5 copy:t2,t3,t5
+   Q12  | 1.94 ; 30/0.5 ; 0.20 | True  False False | 8.397 8.612 8.504 0.621 0.007 1.182 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   Q13  | 1.93 ; 30/0.5 ; 0.20 | True  False False | 8.538 8.807 8.593 0.491 -0.028 1.130 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   Q14  | 1.93 ; 30/0.5 ; 0.20 | True  False False | 8.666 8.741 9.237 0.318 -0.029 1.017 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   folds matched: (i) pool 13, (ii) drift 0, (iii) copy 0 (threshold 8)
+   pool most-missed quantities: t5 2
+   drift most-missed quantities: t1 15, t2 15, t3 15
+   copy most-missed quantities: t2 15, t3 15, t5 15
+
+FIXTURE CHECK: planted copy -> (iii) matches: True ; planted pool -> (iii) not matching: True ; overall OK

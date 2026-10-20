@@ -1,0 +1,291 @@
+S79: reading-order audit (T1 word order, T2 line order, T3 page order, T4 glyph order)
+date: Sun Oct 18 03:13:57 PDT 2026 (`date`)
+s79_reading_order_audit.py sha256=791f849540d0f6624360e04433e658fc33a12fd25a6005b374c8a48e7b88ced9
+prereg stub s79_reading_order_audit.prereg.sha256 sha256=f0a6bbcd71bfbbbd80b03d6f0b831f267514a1135532c95abb52d8a55b490457  stub_match=True
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import s21_moran_realline.py sha256=e4e96e8f53969a7677f33db74c67125a3afe835b96ac1065cc4400f517dd09eb
+  local import s42_recency_by_layer.py sha256=d58581375cd53b74e71ea5c008e1345859dde96ae11e7bed86379ac4176812df
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  local import s68_parisel_switch_within_hand.py sha256=00f2937f182af09f3e9582eccaf8ba8d0b77629d3864f34e729fef6c5f90a0b3
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  local import s79_reading_order_audit.py sha256=791f849540d0f6624360e04433e658fc33a12fd25a6005b374c8a48e7b88ced9
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  local import tools/ivtff_to_meta.py sha256=5a08d4252dabfbe5f4ef5f93e5f2808a678ebb76fe32d99891c8310679bc81aa
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+python 3.11.9; numpy 2.4.6; seed 20261017; 500 subsamples of 80% pages without replacement; T3 seeds 1..20
+
+  ZL3b   pages69 207 tokens69 34857  pages55 207 tokens55 34857  ZL3b_eva.meta.json sha256=ce233477803a8653; IVTFF re-parse ZL3b-n.txt sha256=bf5b6d4ac1e3a51b matches meta lines exactly; gap pairs 745, paragraph-start lines 264
+  RF1b   pages69 207 tokens69 34618  pages55 207 tokens55 34618  RF1b.meta.json sha256=c7d9bccba99b2610; IVTFF re-parse RF1b-er.txt sha256=eb857a1f353b1898 matches meta lines exactly; gap pairs 752, paragraph-start lines 264
+  IT2a   pages69 206 tokens69 34411  pages55 206 tokens55 34411  IT2a.meta.json sha256=0d0d3e758d1e308b; IVTFF re-parse IT2a-n.txt sha256=7f27a8b0feed8f6d matches meta lines exactly; gap pairs 779, paragraph-start lines 260
+
+[ZL3b T0 done 28s; a2 check max |diff| 2.78e-17]
+
+=== REPRODUCTION CHECK (ZL3b T0) ===
+  A1_ff filed loader (metrics_new.voynich_pages('eva'), 4130 lines): +0.1740; meta.json loader: +0.1740; filed +0.1740 (results_s44.txt line 7)
+  M1 +0.0999 (filed +0.0999, results_s69.txt); f2 -0.0528 (filed -0.0528, results_s55.txt); f4 +0.0999 (filed +0.0999)
+  beside (not in the stop rule): A5_I 0.157244 (filed 0.157244); R1..R5 core 1.169 1.183 1.100 1.158 1.098 (filed 1.169 1.183 1.100 1.158 1.098)
+  reproduction: PASS
+
+[ZL3b echo done 40s]
+[ZL3b T1 done 69s]
+[ZL3b T2 done 98s]
+[ZL3b T4 done 129s]
+[ZL3b T3g x20 done 135s]
+[ZL3b T3q x20 done 140s]
+[RF1b T0 done 167s; a2 check max |diff| 2.78e-17]
+[RF1b T1 done 208s]
+[RF1b T2 done 241s]
+[RF1b T4 done 275s]
+[RF1b T3g x20 done 287s]
+[RF1b T3q x20 done 298s]
+[IT2a T0 done 335s; a2 check max |diff| 2.78e-17]
+[IT2a T1 done 362s]
+[IT2a T2 done 568s]
+[IT2a T4 done 602s]
+[IT2a T3g x20 done 608s]
+[IT2a T3q x20 done 614s]
+[ZL3b extras done 627s]
+[RF1b extras done 641s]
+[IT2a extras done 653s]
+
+=== MAIN NUMBERS: T0 point [95 % page-subsample interval] and transformed points ===
+  (T3g / T3q = median over 20 seeds; for statistics whose code never reads page order, T3 is seed 1 only)
+--- ZL3b ---
+  stat           T0            T0 interval        T1        T2       T3g       T3q        T4       T14      T124
+  A1_ff     +0.1740     [+0.1641, +0.1832]   +0.0343   +0.1743   +0.1741   +0.1741   +0.0130   +0.0808   +0.0808
+  A1_lf     +0.0344     [+0.0317, +0.0373]   +0.1740   +0.0344   +0.0344   +0.0345   +0.0809   +0.0130   +0.0130
+  A1_fl     +0.0130     [+0.0111, +0.0151]   +0.0808   +0.0130   +0.0130   +0.0130   +0.1740   +0.0343   +0.0344
+  A2_ll     +0.0809     [+0.0757, +0.0866]   +0.0130   +0.0808   +0.0808   +0.0808   +0.0344   +0.1740   +0.1741
+  A3_cp     +0.1882     [+0.1801, +0.1949]   +0.0081   +0.1879   +0.1884   +0.1882   +0.0082   +0.1883   +0.1884
+  A3_cpm    +0.0082     [+0.0067, +0.0095]   +0.1883   +0.0080   +0.0082   +0.0082   +0.1882   +0.0081   +0.0080
+  A5_I      +0.1572     [+0.1500, +0.1645]   +0.1572   +0.1572   +0.1572   +0.1572   +0.1572   +0.1572   +0.1572
+  A13_Ic    +0.0366     [+0.0273, +0.0441]   +0.0366   +0.0366   +0.0366   +0.0366   +0.0524   +0.0524   +0.0524
+  f2        -0.0528     [-0.0768, -0.0358]   -0.0527   -0.0526   -0.0517   -0.0534   -0.0518   -0.0519   -0.0513
+  f1        +0.0054     [+0.0007, +0.0099]   +0.0306   +0.0030   +0.0067   +0.0103   +0.0138   +0.0222   +0.0187
+  f4        +0.0999     [+0.0797, +0.1140]   +0.0863   +0.0999   +0.0999   +0.0999   +0.0615   +0.0547   +0.0547
+  f4b       +0.0863     [+0.0687, +0.0995]   +0.0999   +0.0863   +0.0863   +0.0863   +0.0547   +0.0615   +0.0615
+  s4        +0.0249     [+0.0186, +0.0311]   +0.0163   +0.0249   +0.0249   +0.0249   +0.0577   +0.0489   +0.0489
+  M1        +0.0999     [+0.0814, +0.1149]   +0.0863   +0.0999   +0.0999   +0.0999   +0.0615   +0.0547   +0.0547
+  bpos      -0.0674     [-0.0930, -0.0392]   -0.0333   -0.0551   -0.0674   -0.0674   -0.0362   -0.0389   -0.0372
+  b         -0.3851     [-0.4199, -0.3370]   -0.1906   -0.4404   -0.3851   -0.3851   -0.1113   -0.2853   -0.3030
+  d         +0.1282     [+0.1112, +0.1428]   +0.0666   +0.1282   +0.1282   +0.1282   +0.0468   +0.0467   +0.0467
+  R1        +1.1688     [+1.1427, +1.1970]   +1.1639   +1.1657   +1.1661   +1.1675   +1.1375   +1.1391   +1.1378
+  R2        +1.1831     [+1.1516, +1.2098]   +1.1929   +1.1946   +1.1860   +1.1851   +1.1857   +1.1831   +1.1843
+  R3        +1.1002     [+1.0714, +1.1305]   +1.0945   +1.0935   +1.1004   +1.1033   +1.0814   +1.1080   +1.0854
+  R4        +1.1583     [+1.1325, +1.1854]   +1.0918   +1.0903   +1.1642   +1.1607   +1.1373   +1.0936   +1.1398
+  R5        +1.0980     [+1.0718, +1.1242]   +1.1021   +1.0997   +1.0986   +1.0953   +1.0864   +1.0964   +1.0852
+  sx        +1.1723     [+1.1448, +1.2005]   +1.1688   +1.1782   +1.1717   +1.1753   +1.2044   +1.1805   +1.1805
+  EchoA     +0.8238     [+0.6692, +0.9452]       n/a       n/a       n/a       n/a       n/a       n/a       n/a
+  EchoB     +0.9088     [+0.7478, +1.0277]       n/a       n/a       n/a       n/a       n/a       n/a       n/a
+  carry     +0.3792     [+0.3643, +0.3922]   +0.3792   +0.3792   +0.2388   +0.3556   +0.2993   +0.2993   +0.2993
+  drJ       +0.0354     [+0.0333, +0.0371]   +0.0354   +0.0354   +0.0602   +0.0443   +0.0354   +0.0354   +0.0354
+  drR       -0.6114     [-0.6478, -0.5737]   -0.6114   -0.6114   -0.0191   -0.6107       n/a       n/a       n/a
+
+--- RF1b ---
+  stat           T0            T0 interval        T1        T2       T3g       T3q        T4       T14      T124
+  A1_ff     +0.1789     [+0.1684, +0.1883]   +0.0334   +0.1790   +0.1789   +0.1790   +0.0135   +0.0813   +0.0814
+  A1_lf     +0.0333     [+0.0304, +0.0360]   +0.1789   +0.0335   +0.0334   +0.0334   +0.0813   +0.0134   +0.0135
+  A1_fl     +0.0135     [+0.0115, +0.0157]   +0.0813   +0.0134   +0.0134   +0.0134   +0.1789   +0.0334   +0.0335
+  A2_ll     +0.0813     [+0.0756, +0.0870]   +0.0134   +0.0813   +0.0814   +0.0814   +0.0333   +0.1789   +0.1790
+  A3_cp     +0.1794     [+0.1717, +0.1872]   +0.0075   +0.1795   +0.1796   +0.1797   +0.0074   +0.1797   +0.1797
+  A3_cpm    +0.0074     [+0.0061, +0.0088]   +0.1797   +0.0073   +0.0074   +0.0074   +0.1794   +0.0075   +0.0075
+  A5_I      +0.1549     [+0.1479, +0.1614]   +0.1549   +0.1549   +0.1549   +0.1549   +0.1549   +0.1549   +0.1549
+  A13_Ic    +0.0389     [+0.0295, +0.0465]   +0.0389   +0.0389   +0.0389   +0.0389   +0.0550   +0.0550   +0.0550
+  f2        -0.0500     [-0.0754, -0.0335]   -0.0505   -0.0474   -0.0502   -0.0504   -0.0541   -0.0541   -0.0524
+  f1        +0.0087     [+0.0016, +0.0148]   +0.0325   +0.0145   +0.0013   +0.0139   +0.0121   +0.0198   +0.0167
+  f4        +0.0951     [+0.0746, +0.1091]   +0.0812   +0.0951   +0.0951   +0.0951   +0.0606   +0.0533   +0.0533
+  f4b       +0.0812     [+0.0647, +0.0947]   +0.0951   +0.0812   +0.0812   +0.0812   +0.0533   +0.0606   +0.0606
+  s4        +0.0256     [+0.0199, +0.0317]   +0.0146   +0.0256   +0.0256   +0.0256   +0.0518   +0.0406   +0.0406
+  M1        +0.0951     [+0.0764, +0.1094]   +0.0812   +0.0951   +0.0951   +0.0951   +0.0606   +0.0533   +0.0533
+  bpos      -0.0922     [-0.1173, -0.0679]   -0.0381   -0.0612   -0.0922   -0.0922   -0.0253   -0.0386   -0.0267
+  b         -0.4287     [-0.4707, -0.3658]   -0.2241   -0.4932   -0.4287   -0.4287   -0.0920   -0.2789   -0.2721
+  d         +0.1299     [+0.1118, +0.1428]   +0.0648   +0.1299   +0.1299   +0.1299   +0.0499   +0.0437   +0.0437
+  R1        +1.1633     [+1.1375, +1.1924]   +1.1489   +1.1516   +1.1625   +1.1611   +1.1556   +1.1427   +1.1547
+  R2        +1.1951     [+1.1639, +1.2275]   +1.2038   +1.2016   +1.1930   +1.1953   +1.1912   +1.1757   +1.1916
+  R3        +1.1105     [+1.0816, +1.1407]   +1.0923   +1.0925   +1.1096   +1.1101   +1.0809   +1.0865   +1.0837
+  R4        +1.1564     [+1.1336, +1.1813]   +1.0926   +1.0937   +1.1602   +1.1582   +1.1444   +1.0949   +1.1407
+  R5        +1.1046     [+1.0793, +1.1317]   +1.1172   +1.1120   +1.1060   +1.1049   +1.1004   +1.1140   +1.0994
+  sx        +1.1729     [+1.1459, +1.1984]   +1.1655   +1.1683   +1.1704   +1.1717   +1.2194   +1.2002   +1.2029
+  carry     +0.3723     [+0.3582, +0.3851]   +0.3723   +0.3723   +0.2368   +0.3505   +0.2981   +0.2981   +0.2981
+  drJ       +0.0355     [+0.0334, +0.0371]   +0.0355   +0.0355   +0.0604   +0.0444   +0.0355   +0.0355   +0.0355
+  drR       -0.6153     [-0.6526, -0.5767]   -0.6153   -0.6153   -0.0210   -0.6145       n/a       n/a       n/a
+
+--- IT2a ---
+  stat           T0            T0 interval        T1        T2       T3g       T3q        T4       T14      T124
+  A1_ff     +0.1730     [+0.1633, +0.1820]   +0.0372   +0.1730   +0.1730   +0.1730   +0.0149   +0.0826   +0.0828
+  A1_lf     +0.0372     [+0.0342, +0.0405]   +0.1728   +0.0373   +0.0373   +0.0372   +0.0827   +0.0149   +0.0149
+  A1_fl     +0.0149     [+0.0128, +0.0171]   +0.0826   +0.0149   +0.0148   +0.0149   +0.1730   +0.0372   +0.0373
+  A2_ll     +0.0827     [+0.0777, +0.0882]   +0.0149   +0.0828   +0.0828   +0.0827   +0.0372   +0.1728   +0.1730
+  A3_cp     +0.1733     [+0.1655, +0.1805]   +0.0073   +0.1731   +0.1733   +0.1730   +0.0072   +0.1732   +0.1732
+  A3_cpm    +0.0072     [+0.0061, +0.0086]   +0.1732   +0.0073   +0.0071   +0.0073   +0.1733   +0.0073   +0.0073
+  A5_I      +0.1566     [+0.1482, +0.1634]   +0.1566   +0.1566   +0.1566   +0.1566   +0.1566   +0.1566   +0.1566
+  A13_Ic    +0.0435     [+0.0336, +0.0510]   +0.0435   +0.0435   +0.0435   +0.0435   +0.0593   +0.0593   +0.0593
+  f2        -0.0508     [-0.0732, -0.0356]   -0.0497   -0.0498   -0.0501   -0.0507   -0.0602   -0.0582   -0.0592
+  f1        +0.0141     [+0.0075, +0.0195]   +0.0275   +0.0162   +0.0160   +0.0257   +0.0212   +0.0183   +0.0292
+  f4        +0.0961     [+0.0769, +0.1091]   +0.0867   +0.0961   +0.0961   +0.0961   +0.0614   +0.0582   +0.0582
+  f4b       +0.0867     [+0.0716, +0.0985]   +0.0961   +0.0867   +0.0867   +0.0867   +0.0582   +0.0614   +0.0614
+  s4        +0.0294     [+0.0236, +0.0358]   +0.0238   +0.0294   +0.0294   +0.0294   +0.0563   +0.0499   +0.0499
+  M1        +0.0961     [+0.0785, +0.1096]   +0.0867   +0.0961   +0.0961   +0.0961   +0.0614   +0.0582   +0.0582
+  bpos      -0.0420     [-0.0618, -0.0231]   -0.0481   -0.0588   -0.0420   -0.0420   -0.0484   -0.0445   -0.0571
+  b         -0.3169     [-0.3448, -0.2786]   -0.1864   -0.3283   -0.3169   -0.3169   -0.1209   -0.2950   -0.3122
+  d         +0.1247     [+0.1059, +0.1397]   +0.0633   +0.1247   +0.1247   +0.1247   +0.0540   +0.0459   +0.0459
+  R1        +1.2251     [+1.1933, +1.2559]   +1.2282   +1.2209   +1.2243   +1.2218   +1.1856   +1.1894   +1.1848
+  R2        +1.1854     [+1.1561, +1.2124]   +1.1787   +1.1826   +1.1862   +1.1861   +1.1793   +1.1682   +1.1806
+  R3        +1.0944     [+1.0650, +1.1209]   +1.0878   +1.0903   +1.0890   +1.0928   +1.0844   +1.0977   +1.0831
+  R4        +1.1344     [+1.1085, +1.1587]   +1.0889   +1.0841   +1.1313   +1.1301   +1.1347   +1.0675   +1.1296
+  R5        +1.1154     [+1.0837, +1.1423]   +1.0952   +1.0985   +1.1072   +1.1123   +1.0881   +1.0885   +1.0876
+  sx        +1.2341     [+1.2009, +1.2652]   +1.2286   +1.2360   +1.2369   +1.2313   +1.2154   +1.2058   +1.2088
+  carry     +0.3684     [+0.3537, +0.3825]   +0.3684   +0.3684   +0.2234   +0.3487   +0.2979   +0.2979   +0.2979
+  drJ       +0.0349     [+0.0330, +0.0365]   +0.0349   +0.0349   +0.0596   +0.0438   +0.0349   +0.0349   +0.0349
+  drR       -0.6093     [-0.6465, -0.5676]   -0.6093   -0.6093   -0.0204   -0.6092       n/a       n/a       n/a
+
+=== T3 spread over seeds (min / median / max) ===
+  ZL3b  T3g carry   n=20 min +0.2255 median +0.2388 max +0.2511   (T0 +0.3792 [+0.3643, +0.3922])
+  ZL3b  T3g drJ     n=20 min +0.0565 median +0.0602 max +0.0623   (T0 +0.0354 [+0.0333, +0.0371])
+  ZL3b  T3g drR     n=20 min -0.1480 median -0.0191 max +0.1805   (T0 -0.6114 [-0.6478, -0.5737])
+  ZL3b  T3q carry   n=20 min +0.3502 median +0.3556 max +0.3677   (T0 +0.3792 [+0.3643, +0.3922])
+  ZL3b  T3q drJ     n=20 min +0.0417 median +0.0443 max +0.0464   (T0 +0.0354 [+0.0333, +0.0371])
+  ZL3b  T3q drR     n=20 min -0.6167 median -0.6107 max -0.6046   (T0 -0.6114 [-0.6478, -0.5737])
+  RF1b  T3g carry   n=20 min +0.2209 median +0.2368 max +0.2460   (T0 +0.3723 [+0.3582, +0.3851])
+  RF1b  T3g drJ     n=20 min +0.0567 median +0.0604 max +0.0624   (T0 +0.0355 [+0.0334, +0.0371])
+  RF1b  T3g drR     n=20 min -0.1485 median -0.0210 max +0.1809   (T0 -0.6153 [-0.6526, -0.5767])
+  RF1b  T3q carry   n=20 min +0.3427 median +0.3505 max +0.3622   (T0 +0.3723 [+0.3582, +0.3851])
+  RF1b  T3q drJ     n=20 min +0.0417 median +0.0444 max +0.0464   (T0 +0.0355 [+0.0334, +0.0371])
+  RF1b  T3q drR     n=20 min -0.6205 median -0.6145 max -0.6085   (T0 -0.6153 [-0.6526, -0.5767])
+  IT2a  T3g carry   n=20 min +0.2121 median +0.2234 max +0.2399   (T0 +0.3684 [+0.3537, +0.3825])
+  IT2a  T3g drJ     n=20 min +0.0560 median +0.0596 max +0.0616   (T0 +0.0349 [+0.0330, +0.0365])
+  IT2a  T3g drR     n=20 min -0.1573 median -0.0204 max +0.2055   (T0 -0.6093 [-0.6465, -0.5676])
+  IT2a  T3q carry   n=20 min +0.3406 median +0.3487 max +0.3569   (T0 +0.3684 [+0.3537, +0.3825])
+  IT2a  T3q drJ     n=20 min +0.0413 median +0.0438 max +0.0457   (T0 +0.0349 [+0.0330, +0.0365])
+  IT2a  T3q drR     n=20 min -0.6157 median -0.6092 max -0.6020   (T0 -0.6093 [-0.6465, -0.5676])
+
+=== CLASSIFICATION PER STATISTIC (pre-registered rule) ===
+  stat                   ZL3b:T1                ZL3b:T2               ZL3b:T3g               ZL3b:T3q                ZL3b:T4                RF1b:T1                RF1b:T2               RF1b:T3g               RF1b:T3q                RF1b:T4                IT2a:T1                IT2a:T2               IT2a:T3g               IT2a:T3q                IT2a:T4
+  A1_ff                 mirrored             order-free        order-free (BC)        order-free (BC)               mirrored               mirrored             order-free        order-free (BC)        order-free (BC)               mirrored               mirrored             order-free        order-free (BC)        order-free (BC)               mirrored
+  A1_lf                 mirrored             order-free        order-free (BC)        order-free (BC)               mirrored               mirrored             order-free        order-free (BC)        order-free (BC)               mirrored               mirrored             order-free        order-free (BC)        order-free (BC)               mirrored
+  A1_fl                 mirrored             order-free        order-free (BC)        order-free (BC)               mirrored               mirrored             order-free        order-free (BC)        order-free (BC)               mirrored               mirrored             order-free        order-free (BC)        order-free (BC)               mirrored
+  A2_ll                 mirrored             order-free        order-free (BC)        order-free (BC)               mirrored               mirrored             order-free        order-free (BC)        order-free (BC)               mirrored               mirrored             order-free        order-free (BC)        order-free (BC)               mirrored
+  A3_cp                 mirrored             order-free        order-free (BC)        order-free (BC)               mirrored               mirrored             order-free        order-free (BC)        order-free (BC)               mirrored               mirrored             order-free        order-free (BC)        order-free (BC)               mirrored
+  A3_cpm                mirrored             order-free        order-free (BC)        order-free (BC)               mirrored               mirrored             order-free        order-free (BC)        order-free (BC)               mirrored               mirrored             order-free        order-free (BC)        order-free (BC)               mirrored
+  A5_I                order-free             order-free        order-free (BC)        order-free (BC)             order-free             order-free             order-free        order-free (BC)        order-free (BC)             order-free             order-free             order-free        order-free (BC)        order-free (BC)             order-free
+  A13_Ic              order-free             order-free        order-free (BC)        order-free (BC)       order-dependent*             order-free             order-free        order-free (BC)        order-free (BC)       order-dependent*             order-free             order-free        order-free (BC)        order-free (BC)       order-dependent*
+  f2                  order-free             order-free        order-free (BC)        order-free (BC)             order-free             order-free             order-free        order-free (BC)        order-free (BC)             order-free             order-free             order-free        order-free (BC)        order-free (BC)             order-free
+  f1                    mirrored             order-free        order-free (BC) order-free (BC; s1 moved)*       order-dependent*               mirrored             order-free order-free (BC; s1 moved)*        order-free (BC)             order-free               mirrored             order-free        order-free (BC) order-free (BC; s1 moved)*       order-dependent*
+  f4                  order-free             order-free        order-free (BC)        order-free (BC)        order-dependent             order-free             order-free        order-free (BC)        order-free (BC)        order-dependent             order-free             order-free        order-free (BC)        order-free (BC)        order-dependent
+  f4b                  mirrored*             order-free        order-free (BC)        order-free (BC)        order-dependent              mirrored*             order-free        order-free (BC)        order-free (BC)       order-dependent*             order-free             order-free        order-free (BC)        order-free (BC)        order-dependent
+  s4                   mirrored*             order-free        order-free (BC)        order-free (BC)        order-dependent              mirrored*             order-free        order-free (BC)        order-free (BC)        order-dependent             order-free             order-free        order-free (BC)        order-free (BC)        order-dependent
+  M1                  order-free             order-free        order-free (BC)        order-free (BC)        order-dependent             order-free             order-free        order-free (BC)        order-free (BC)        order-dependent             order-free             order-free        order-free (BC)        order-free (BC)        order-dependent
+  bpos                 mirrored*             order-free        order-free (BC)        order-free (BC)       order-dependent*               mirrored              mirrored*        order-free (BC)        order-free (BC)        order-dependent             order-free             order-free        order-free (BC)        order-free (BC)             order-free
+  R1                  order-free             order-free        order-free (BC)        order-free (BC)       order-dependent*             order-free             order-free        order-free (BC)        order-free (BC)             order-free             order-free             order-free        order-free (BC)        order-free (BC)       order-dependent*
+  R2                  order-free             order-free        order-free (BC)        order-free (BC)             order-free             order-free             order-free        order-free (BC)        order-free (BC)             order-free             order-free             order-free        order-free (BC)        order-free (BC)             order-free
+  R3                  order-free             order-free        order-free (BC)        order-free (BC)             order-free             order-free             order-free        order-free (BC)        order-free (BC)       order-dependent*             order-free             order-free        order-free (BC)        order-free (BC)             order-free
+  R4                    mirrored               mirrored        order-free (BC)        order-free (BC)             order-free               mirrored               mirrored        order-free (BC)        order-free (BC)             order-free              mirrored*               mirrored        order-free (BC)        order-free (BC)             order-free
+  R5                  order-free             order-free        order-free (BC)        order-free (BC)             order-free             order-free             order-free        order-free (BC)        order-free (BC)             order-free             order-free             order-free        order-free (BC)        order-free (BC)             order-free
+  sx                  order-free             order-free        order-free (BC)        order-free (BC)       order-dependent*             order-free             order-free        order-free (BC)        order-free (BC)       order-dependent*             order-free             order-free        order-free (BC)        order-free (BC)             order-free
+  EchoA          order-free (BC)             order-free        order-free (BC)        order-free (BC)        order-free (BC)                    n/a                    n/a                    n/a                    n/a                    n/a                    n/a                    n/a                    n/a                    n/a                    n/a
+  carry               order-free             order-free        order-dependent       order-dependent*        order-dependent             order-free             order-free        order-dependent       order-dependent*        order-dependent             order-free             order-free        order-dependent       order-dependent*        order-dependent
+  drJ                 order-free             order-free        order-dependent        order-dependent             order-free             order-free             order-free        order-dependent        order-dependent             order-free             order-free             order-free        order-dependent        order-dependent             order-free
+  drR                 order-free             order-free        order-dependent             order-free                    n/a             order-free             order-free        order-dependent             order-free                    n/a             order-free             order-free        order-dependent             order-free                    n/a
+
+=== CONSTRAINT TABLE (a dependency counts when it holds on >= 2 of the 3 texts) ===
+  A1     within-line-direction dependent (A1_ff mirrored) + glyph-direction dependent (A1_ff mirrored)
+  A2     within-line-direction dependent (A1_ff mirrored; A2_ll mirrored) + glyph-direction dependent (A1_ff mirrored; A2_ll mirrored)   [paragraph-first JSD split not recomputed; gallows position in direction evidence]
+  A3     within-line-direction dependent (A3_cp mirrored) + glyph-direction dependent (A3_cp mirrored)   [full-text coupling (filed numbers are A/B halves)]
+  A4     not re-tested                -- not re-tested: a statement about built texts' edge tables, not about the transliteration
+  A5     order-free
+  A6     not re-tested in s79         -- not re-tested in s79: CHARWIN is computable but not rerun (character model; T4-sensitive by design)
+  A7     within-line-direction dependent (f1 mirrored) + glyph-direction dependent (f1 order-dependent)   [proxy: s55 core-stream F1, not the n6 word-level F1]
+  A8     order-free by construction   -- order-free by construction: section NMI is a bag of tokens per page (no order read); not rerun
+  A9     not re-tested                -- not re-tested: entropy / type counts under alphabets; type counts are order-free by construction
+  A10    within-line-direction dependent (A1_ff mirrored; A3_cp mirrored) + glyph-direction dependent (A1_ff mirrored; A3_cp mirrored)   [widths inherit A1 / A3 / A5]
+  A11    not re-tested                -- not re-tested: literature / period bound
+  A12    not re-tested                -- not re-tested: board classifier over many entrants
+  A13    glyph-direction dependent (A13_Ic order-dependent)   [core-length Moran as the slot-ablation proxy]
+  A14    glyph-direction dependent (f4 order-dependent)
+  A15    page-order dependent (global) (carry order-dependent) + page-order dependent (within quire) (carry order-dependent) + glyph-direction dependent (carry order-dependent)   [physical layout parts (drawing gaps, bifolio clustering) not re-tested; echo = m1 recency]
+  A16    within-line-direction dependent (f1 mirrored) + glyph-direction dependent (f1 order-dependent)
+  A17    not re-tested                -- not re-tested: producer reachability
+  A18    not re-tested                -- not re-tested: framing / producer failures
+  A19    order-free by construction   -- order-free by construction: ink-gap vs space agreement is per gap; not rerun
+  A20    not re-tested                -- not re-tested: bag of tokens per hand (order-free in line / page order by construction) but the slot profiles depend on the segmenter's direction (T4) -- untested
+  A21    not re-tested                -- not re-tested: s63 parser heuristics (segmenter-direction dependent by design)
+  dot15  glyph-direction dependent (f4 order-dependent)   [f5a (type cover) is order-free by construction]
+  dot16  within-line-direction dependent (R4 mirrored) + line-order dependent (R4 mirrored) + glyph-direction dependent (R1 order-dependent)
+  dot17  not re-tested                -- not re-tested: s52-s54 (comparators, error battery, length persistence)
+  dot18  not re-tested                -- not re-tested: producer (s57)
+  dot19  not re-tested                -- not re-tested: producer (s58)
+  dot20  not re-tested                -- not re-tested: s59/s62 parent window = PRECEDING 15 tokens + line above, directional by design; the cross-page analogue is 'carry'
+  dot21  not re-tested                -- not re-tested: producers (s57, s58, s61)
+  dot22  glyph-direction dependent (f4 order-dependent)   [rests on prefix-stream order]
+  dot23  order-free by construction (LOQO folds are quires; per task, not rerun) -- order-free by construction (LOQO folds are quires; per task, not rerun)
+  dot24  page-order dependent (global) (drR order-dependent; drJ order-dependent) + page-order dependent (within quire) (drJ order-dependent)
+  dot25  within-line-direction dependent (bpos mirrored) + glyph-direction dependent (M1 order-dependent; bpos order-dependent)
+  dot26  not re-tested                -- not re-tested: solver ladder on planted ciphers
+
+=== DIRECTION EVIDENCE (descriptive, no verdict) ===
+--- ZL3b ---
+  line-edge marking at T0 (JSD excess vs mid-line, [interval]):
+    A1_ff  +0.1740 [+0.1641, +0.1832]   line-initial JSD excess (first glyph, first word)
+    A1_lf  +0.0344 [+0.0317, +0.0373]   first glyph, LAST word (T1 mirror of A1_ff)
+    A1_fl  +0.0130 [+0.0111, +0.0151]   last glyph, first word (T4 mirror of A1_ff)
+    A2_ll  +0.0809 [+0.0757, +0.0866]   line-final JSD excess (last glyph, last word)
+    line-start (A1_ff) vs line-end (A2_ll) intervals overlap: False; A1_ff vs its T1 mirror A1_lf overlap: False
+  gallows word share: paragraph-start lines (n=264) first word +0.917, last word +0.420; other lines (n=3866) first +0.486, last +0.418
+    under T1 the paragraph-start lines' gallows sit at: first word +0.420, last word +0.917
+  words per line: paragraph-first +8.11, paragraph-last +5.20, paragraph-internal +8.70
+  prefix stream forward f4 +0.0999 [+0.0797, +0.1140] vs backward f4b +0.0863 [+0.0687, +0.0995]; suffix stream s4 +0.0249 [+0.0186, +0.0311]
+  coupling facing edges A3_cp +0.1882 [+0.1801, +0.1949] vs outer edges A3_cpm +0.0082 [+0.0067, +0.0095]
+  same-index echo left-aligned sx +1.172 [+1.145, +1.201] vs right-aligned (sx under T1) +1.169
+  pixel echo: line above +0.824 [+0.669, +0.945] (obs 4.61 % vs null 3.79 %, 22046 probes); line below +0.909 [+0.748, +1.028] (obs 4.70 %)
+  line-break reset bpos T0 -0.0674 [-0.0930, -0.0392]; T1 -0.0333; T2 -0.0551; T124 (page read backwards) -0.0372
+  page order: carry T0 +0.3792 [+0.3643, +0.3922] vs T3g median +0.2388, T3q +0.3556; drR T0 -0.6114 vs T3g -0.0191, T3q -0.6107; drJ T0 +0.0354 vs T3g +0.0602, T3q +0.0443
+
+--- RF1b ---
+  line-edge marking at T0 (JSD excess vs mid-line, [interval]):
+    A1_ff  +0.1789 [+0.1684, +0.1883]   line-initial JSD excess (first glyph, first word)
+    A1_lf  +0.0333 [+0.0304, +0.0360]   first glyph, LAST word (T1 mirror of A1_ff)
+    A1_fl  +0.0135 [+0.0115, +0.0157]   last glyph, first word (T4 mirror of A1_ff)
+    A2_ll  +0.0813 [+0.0756, +0.0870]   line-final JSD excess (last glyph, last word)
+    line-start (A1_ff) vs line-end (A2_ll) intervals overlap: False; A1_ff vs its T1 mirror A1_lf overlap: False
+  gallows word share: paragraph-start lines (n=264) first word +0.943, last word +0.420; other lines (n=3866) first +0.491, last +0.418
+    under T1 the paragraph-start lines' gallows sit at: first word +0.420, last word +0.943
+  words per line: paragraph-first +8.06, paragraph-last +5.09, paragraph-internal +8.65
+  prefix stream forward f4 +0.0951 [+0.0746, +0.1091] vs backward f4b +0.0812 [+0.0647, +0.0947]; suffix stream s4 +0.0256 [+0.0199, +0.0317]
+  coupling facing edges A3_cp +0.1794 [+0.1717, +0.1872] vs outer edges A3_cpm +0.0074 [+0.0061, +0.0088]
+  same-index echo left-aligned sx +1.173 [+1.146, +1.198] vs right-aligned (sx under T1) +1.165
+  line-break reset bpos T0 -0.0922 [-0.1173, -0.0679]; T1 -0.0381; T2 -0.0612; T124 (page read backwards) -0.0267
+  page order: carry T0 +0.3723 [+0.3582, +0.3851] vs T3g median +0.2368, T3q +0.3505; drR T0 -0.6153 vs T3g -0.0210, T3q -0.6145; drJ T0 +0.0355 vs T3g +0.0604, T3q +0.0444
+
+--- IT2a ---
+  line-edge marking at T0 (JSD excess vs mid-line, [interval]):
+    A1_ff  +0.1730 [+0.1633, +0.1820]   line-initial JSD excess (first glyph, first word)
+    A1_lf  +0.0372 [+0.0342, +0.0405]   first glyph, LAST word (T1 mirror of A1_ff)
+    A1_fl  +0.0149 [+0.0128, +0.0171]   last glyph, first word (T4 mirror of A1_ff)
+    A2_ll  +0.0827 [+0.0777, +0.0882]   line-final JSD excess (last glyph, last word)
+    line-start (A1_ff) vs line-end (A2_ll) intervals overlap: False; A1_ff vs its T1 mirror A1_lf overlap: False
+  gallows word share: paragraph-start lines (n=260) first word +0.938, last word +0.423; other lines (n=3857) first +0.488, last +0.411
+    under T1 the paragraph-start lines' gallows sit at: first word +0.423, last word +0.938
+  words per line: paragraph-first +8.25, paragraph-last +5.08, paragraph-internal +8.60
+  prefix stream forward f4 +0.0961 [+0.0769, +0.1091] vs backward f4b +0.0867 [+0.0716, +0.0985]; suffix stream s4 +0.0294 [+0.0236, +0.0358]
+  coupling facing edges A3_cp +0.1733 [+0.1655, +0.1805] vs outer edges A3_cpm +0.0072 [+0.0061, +0.0086]
+  same-index echo left-aligned sx +1.234 [+1.201, +1.265] vs right-aligned (sx under T1) +1.229
+  line-break reset bpos T0 -0.0420 [-0.0618, -0.0231]; T1 -0.0481; T2 -0.0588; T124 (page read backwards) -0.0571
+  page order: carry T0 +0.3684 [+0.3537, +0.3825] vs T3g median +0.2234, T3q +0.3487; drR T0 -0.6093 vs T3g -0.0204, T3q -0.6092; drJ T0 +0.0349 vs T3g +0.0596, T3q +0.0438
+
+sidecars: runs/s79/cells.csv, runs/s79/t3_seeds.csv, runs/s79/classification.json
+runtime 653 s; finished Sun Oct 18 03:24:50 PDT 2026 (`date`)

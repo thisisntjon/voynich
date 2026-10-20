@@ -1,0 +1,5690 @@
+{
+ "FIX|C": {
+  "T": "FIX",
+  "Q": "C",
+  "n_test": 12,
+  "n_train": 77,
+  "real_point": {
+   "P1": -0.012116035884085857,
+   "P2": -0.0017156035954570825,
+   "P3": 0.04366873441186314,
+   "P4": 0.01576228979307026,
+   "P4_exc": -0.004266899158834346,
+   "P5": -0.42769886347352326,
+   "F1_prefix": 0.01069740502503791,
+   "F1_core": 0.009412081097006017,
+   "F1_suffix": 0.005384762678794683
+  },
+  "voy69": {
+   "calls": {
+    "C1": true,
+    "C2": false,
+    "C3p": false,
+    "C4p": false,
+    "C5": true
+   },
+   "M1": 0.04366873441186365,
+   "k41": -1.638541790568876
+  },
+  "models": {
+   "default|latin_cremma": {
+    "p": 0.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0424 [-0.0773,-0.0095] (gen -0.0545, real -0.0121); margin hi-0 = -0.0095",
+     "P2": "core->core excess \u0394 -0.0126 [-0.0537,+0.0485] (gen -0.0143, real -0.0017); margins 0-lo +0.0537, hi-0 +0.0485",
+     "P3": "prefix gain gen -0.0411 vs real +0.0437 [+0.0179,+0.0664]; margins g-lo -0.0590, hi-g +0.1075",
+     "P4": "[fixture, re-centred] jsd gen 0.0310 real 0.0158 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.0101 real -0.4277",
+     "P7": "types gen/real at matched tokens 1.115 (seeds 1.120, 1.110); tol \u00b115%"
+    },
+    "type_ratio": 1.1151574803149606,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.05500095603347636,
+     "k41": 1.188154706862062
+    },
+    "match": false,
+    "match_fold": true
+   },
+   "line_sticky75|latin_cremma": {
+    "p": 0.75,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0203 [-0.0145,+0.0585] (gen 0.0082, real -0.0121); margin hi-0 = +0.0585",
+     "P2": "core->core excess \u0394 +0.0688 [+0.0150,+0.1209] (gen +0.0671, real -0.0017); margins 0-lo -0.0150, hi-0 +0.1209",
+     "P3": "prefix gain gen +0.0842 vs real +0.0437 [+0.0179,+0.0664]; margins g-lo +0.0663, hi-g -0.0178",
+     "P4": "[fixture, re-centred] jsd gen 0.0192 real 0.0158 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4804 real -0.4277",
+     "P7": "types gen/real at matched tokens 1.003 (seeds 1.002, 1.004); tol \u00b115%"
+    },
+    "type_ratio": 1.0029527559055118,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.08332932031332721,
+     "k41": -0.5496970664096024
+    },
+    "match": true,
+    "match_fold": false
+   },
+   "line_sticky_fit|latin_cremma": {
+    "p": 0.75,
+    "fit": {
+     "p": 0.75,
+     "target": 0.030258083690462616,
+     "gen": 0.026059089110452474,
+     "grid": [
+      [
+       0.0,
+       -0.1181365568789815
+      ],
+      [
+       0.1,
+       -0.05747199106612469
+      ],
+      [
+       0.2,
+       -0.03374256407312397
+      ],
+      [
+       0.3,
+       -0.029957650120375323
+      ],
+      [
+       0.4,
+       -0.04700764839009655
+      ],
+      [
+       0.5,
+       -0.007044600416480104
+      ],
+      [
+       0.6,
+       0.012005792252389987
+      ],
+      [
+       0.7,
+       0.06576314487294489
+      ],
+      [
+       0.75,
+       0.026059089110452474
+      ],
+      [
+       0.8,
+       0.10475418939335612
+      ],
+      [
+       0.85,
+       0.14482142657488345
+      ],
+      [
+       0.9,
+       0.15319573522836497
+      ],
+      [
+       0.95,
+       0.12909829207466203
+      ],
+      [
+       1.0,
+       0.18427157642914477
+      ]
+     ]
+    },
+    "n": 3,
+    "holds": {
+     "P1": false,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0355 [-0.0733,-0.0008] (gen -0.0477, real -0.0121); margin hi-0 = -0.0008",
+     "P2": "core->core excess \u0394 +0.0635 [+0.0189,+0.1172] (gen +0.0618, real -0.0017); margins 0-lo -0.0189, hi-0 +0.1172",
+     "P3": "prefix gain gen +0.0668 vs real +0.0437 [+0.0179,+0.0664]; margins g-lo +0.0490, hi-g -0.0004",
+     "P4": "[fixture, re-centred] jsd gen 0.0249 real 0.0158 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4675 real -0.4277",
+     "P7": "types gen/real at matched tokens 0.965 (seeds 0.953, 0.976); tol \u00b115%"
+    },
+    "type_ratio": 0.9645669291338583,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": true,
+      "C5": true
+     },
+     "M1": 0.033512351358400645,
+     "k41": -1.2519156490352301
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0104 [-0.0401,+0.0185] (gen -0.0225, real -0.0121); margin hi-0 = +0.0185",
+     "P2": "core->core excess \u0394 +0.0374 [-0.0141,+0.0860] (gen +0.0357, real -0.0017); margins 0-lo +0.0141, hi-0 +0.0860",
+     "P3": "prefix gain gen +0.2172 vs real +0.0437 [+0.0179,+0.0664]; margins g-lo +0.1994, hi-g -0.1508",
+     "P4": "[fixture, re-centred] jsd gen 0.0193 real 0.0158 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.8468 real -0.4277",
+     "P7": "types gen/real at matched tokens 0.927 (seeds 0.911, 0.943); tol \u00b115%"
+    },
+    "type_ratio": 0.9271653543307087,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.19313504153653785,
+     "k41": 0.7502472890053845
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|latin_cremma": {
+    "p": 0.6,
+    "fit": {
+     "p": 0.6,
+     "target": 0.030258083690462616,
+     "gen": 0.021475956680757205,
+     "grid": [
+      [
+       0.0,
+       -0.06263584150935453
+      ],
+      [
+       0.1,
+       -0.04281857439885625
+      ],
+      [
+       0.2,
+       -0.0618302555069826
+      ],
+      [
+       0.3,
+       -0.0514676306493357
+      ],
+      [
+       0.4,
+       -0.025340406880959548
+      ],
+      [
+       0.5,
+       -0.03079466515590582
+      ],
+      [
+       0.6,
+       0.021475956680757205
+      ],
+      [
+       0.7,
+       0.07684341952150002
+      ],
+      [
+       0.75,
+       0.05476909975543145
+      ],
+      [
+       0.8,
+       0.06750230995258917
+      ],
+      [
+       0.85,
+       0.09488172827459321
+      ],
+      [
+       0.9,
+       0.11288476518272085
+      ],
+      [
+       0.95,
+       0.12209104674773985
+      ],
+      [
+       1.0,
+       0.1444813464918109
+      ]
+     ]
+    },
+    "n": 6,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0307 [-0.0030,+0.0606] (gen 0.0186, real -0.0121); margin hi-0 = +0.0606",
+     "P2": "core->core excess \u0394 +0.0040 [-0.0438,+0.0682] (gen +0.0022, real -0.0017); margins 0-lo +0.0438, hi-0 +0.0682",
+     "P3": "prefix gain gen +0.0276 vs real +0.0437 [+0.0179,+0.0664]; margins g-lo +0.0097, hi-g +0.0388",
+     "P4": "[fixture, re-centred] jsd gen 0.0212 real 0.0158 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.3053 real -0.4277",
+     "P7": "types gen/real at matched tokens 1.044 (seeds 1.045, 1.043); tol \u00b115%"
+    },
+    "type_ratio": 1.044291338582677,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": true,
+      "C5": true
+     },
+     "M1": 0.03791084360305267,
+     "k41": -3.370087116849205
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0077 [-0.0405,+0.0271] (gen -0.0198, real -0.0121); margin hi-0 = +0.0271",
+     "P2": "core->core excess \u0394 +0.0166 [-0.0232,+0.0833] (gen +0.0149, real -0.0017); margins 0-lo +0.0232, hi-0 +0.0833",
+     "P3": "prefix gain gen +0.2179 vs real +0.0437 [+0.0179,+0.0664]; margins g-lo +0.2001, hi-g -0.1515",
+     "P4": "[fixture, re-centred] jsd gen 0.0223 real 0.0158 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.8514 real -0.4277",
+     "P7": "types gen/real at matched tokens 0.779 (seeds 0.681, 0.876); tol \u00b115%"
+    },
+    "type_ratio": 0.7785433070866141,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.11019276272835857,
+     "k41": 0.9814233671774107
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "default|italian_dante": {
+    "p": 0.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0208 [-0.0521,+0.0067] (gen -0.0329, real -0.0121); margin hi-0 = +0.0067",
+     "P2": "core->core excess \u0394 +0.0087 [-0.0374,+0.0703] (gen +0.0070, real -0.0017); margins 0-lo +0.0374, hi-0 +0.0703",
+     "P3": "prefix gain gen -0.0300 vs real +0.0437 [+0.0179,+0.0664]; margins g-lo -0.0479, hi-g +0.0964",
+     "P4": "[fixture, re-centred] jsd gen 0.0096 real 0.0158 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.0962 real -0.4277",
+     "P7": "types gen/real at matched tokens 1.120 (seeds 1.134, 1.106); tol \u00b115%"
+    },
+    "type_ratio": 1.1200787401574803,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.03513348470311176,
+     "k41": 2.2588768002039665
+    },
+    "match": false,
+    "match_fold": true
+   },
+   "line_sticky75|italian_dante": {
+    "p": 0.75,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0233 [-0.0627,+0.0136] (gen -0.0355, real -0.0121); margin hi-0 = +0.0136",
+     "P2": "core->core excess \u0394 +0.0371 [-0.0094,+0.0971] (gen +0.0354, real -0.0017); margins 0-lo +0.0094, hi-0 +0.0971",
+     "P3": "prefix gain gen +0.0837 vs real +0.0437 [+0.0179,+0.0664]; margins g-lo +0.0658, hi-g -0.0172",
+     "P4": "[fixture, re-centred] jsd gen 0.0245 real 0.0158 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.6115 real -0.4277",
+     "P7": "types gen/real at matched tokens 1.001 (seeds 1.010, 0.992); tol \u00b115%"
+    },
+    "type_ratio": 1.000984251968504,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.07984637390629144,
+     "k41": -0.34702636822075866
+    },
+    "match": true,
+    "match_fold": false
+   },
+   "line_sticky_fit|italian_dante": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.030258083690462616,
+     "gen": 0.016188467323843565,
+     "grid": [
+      [
+       0.0,
+       -0.027721393962819814
+      ],
+      [
+       0.1,
+       -0.05312577828151803
+      ],
+      [
+       0.2,
+       -0.10209326969524131
+      ],
+      [
+       0.3,
+       -0.04165626217470346
+      ],
+      [
+       0.4,
+       -0.0015186368345501452
+      ],
+      [
+       0.5,
+       -0.06079178006752632
+      ],
+      [
+       0.6,
+       0.001191138371219127
+      ],
+      [
+       0.7,
+       0.016188467323843565
+      ],
+      [
+       0.75,
+       0.08319079120571661
+      ],
+      [
+       0.8,
+       0.07529686870302549
+      ],
+      [
+       0.85,
+       0.1069994448610735
+      ],
+      [
+       0.9,
+       0.14204906329929373
+      ],
+      [
+       0.95,
+       0.20244802735376005
+      ],
+      [
+       1.0,
+       0.19460082158702272
+      ]
+     ]
+    },
+    "n": 6,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0005 [-0.0310,+0.0273] (gen -0.0116, real -0.0121); margin hi-0 = +0.0273",
+     "P2": "core->core excess \u0394 +0.0140 [-0.0330,+0.0688] (gen +0.0123, real -0.0017); margins 0-lo +0.0330, hi-0 +0.0688",
+     "P3": "prefix gain gen +0.0594 vs real +0.0437 [+0.0179,+0.0664]; margins g-lo +0.0416, hi-g +0.0070",
+     "P4": "[fixture, re-centred] jsd gen 0.0122 real 0.0158 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5566 real -0.4277",
+     "P7": "types gen/real at matched tokens 1.027 (seeds 1.031, 1.022); tol \u00b115%"
+    },
+    "type_ratio": 1.0265748031496063,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.06042322808319308,
+     "k41": -1.7383676715633645
+    },
+    "match": true,
+    "match_fold": false
+   },
+   "line_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0049 [-0.0284,+0.0347] (gen -0.0072, real -0.0121); margin hi-0 = +0.0347",
+     "P2": "core->core excess \u0394 +0.0187 [-0.0319,+0.0694] (gen +0.0169, real -0.0017); margins 0-lo +0.0319, hi-0 +0.0694",
+     "P3": "prefix gain gen +0.2162 vs real +0.0437 [+0.0179,+0.0664]; margins g-lo +0.1983, hi-g -0.1498",
+     "P4": "[fixture, re-centred] jsd gen 0.0224 real 0.0158 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -1.0931 real -0.4277",
+     "P7": "types gen/real at matched tokens 0.913 (seeds 0.915, 0.911); tol \u00b115%"
+    },
+    "type_ratio": 0.9133858267716536,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.1885544597705895,
+     "k41": 0.79901431183506
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|italian_dante": {
+    "p": 0.6,
+    "fit": {
+     "p": 0.6,
+     "target": 0.030258083690462616,
+     "gen": 0.015845794328632798,
+     "grid": [
+      [
+       0.0,
+       -0.05864139792579322
+      ],
+      [
+       0.1,
+       -0.05263184193370052
+      ],
+      [
+       0.2,
+       -0.061108855681866706
+      ],
+      [
+       0.3,
+       -0.07256078905737921
+      ],
+      [
+       0.4,
+       -0.021598115426080932
+      ],
+      [
+       0.5,
+       -0.01606766148133735
+      ],
+      [
+       0.6,
+       0.015845794328632798
+      ],
+      [
+       0.7,
+       0.009577515132706502
+      ],
+      [
+       0.75,
+       0.0611926309462733
+      ],
+      [
+       0.8,
+       0.07300666188222202
+      ],
+      [
+       0.85,
+       0.07192094788959033
+      ],
+      [
+       0.9,
+       0.14287434649217387
+      ],
+      [
+       0.95,
+       0.13470249777033477
+      ],
+      [
+       1.0,
+       0.13833122128140227
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0135 [-0.0488,+0.0258] (gen -0.0256, real -0.0121); margin hi-0 = +0.0258",
+     "P2": "core->core excess \u0394 +0.0575 [+0.0104,+0.1099] (gen +0.0558, real -0.0017); margins 0-lo -0.0104, hi-0 +0.1099",
+     "P3": "prefix gain gen +0.0307 vs real +0.0437 [+0.0179,+0.0664]; margins g-lo +0.0129, hi-g +0.0357",
+     "P4": "[fixture, re-centred] jsd gen 0.0320 real 0.0158 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.3925 real -0.4277",
+     "P7": "types gen/real at matched tokens 1.060 (seeds 1.075, 1.045); tol \u00b115%"
+    },
+    "type_ratio": 1.0600393700787403,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": true,
+      "C5": true
+     },
+     "M1": 0.03333918015264307,
+     "k41": -2.0309598168846033
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0115 [-0.0464,+0.0179] (gen -0.0236, real -0.0121); margin hi-0 = +0.0179",
+     "P2": "core->core excess \u0394 +0.0284 [-0.0137,+0.0777] (gen +0.0266, real -0.0017); margins 0-lo +0.0137, hi-0 +0.0777",
+     "P3": "prefix gain gen +0.1810 vs real +0.0437 [+0.0179,+0.0664]; margins g-lo +0.1631, hi-g -0.1146",
+     "P4": "[fixture, re-centred] jsd gen 0.0132 real 0.0158 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.9984 real -0.4277",
+     "P7": "types gen/real at matched tokens 0.839 (seeds 0.837, 0.841); tol \u00b115%"
+    },
+    "type_ratio": 0.8385826771653543,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.1684698585508129,
+     "k41": 0.8985927508254563
+    },
+    "match": false,
+    "match_fold": false
+   }
+  },
+  "secs": 47.576683044433594
+ },
+ "FIX|A": {
+  "T": "FIX",
+  "Q": "A",
+  "n_test": 12,
+  "n_train": 77,
+  "real_point": {
+   "P1": 0.0453031259364101,
+   "P2": 0.03907231387059573,
+   "P3": 0.06673676294818276,
+   "P4": 0.022562195276833844,
+   "P4_exc": -0.0026018941237258113,
+   "P5": -0.3223886023136959,
+   "F1_prefix": 0.005169334417642007,
+   "F1_core": 0.015553480398695821,
+   "F1_suffix": -0.005163230021049434
+  },
+  "voy69": {
+   "calls": {
+    "C1": true,
+    "C2": false,
+    "C3p": true,
+    "C4p": false,
+    "C5": true
+   },
+   "M1": 0.06673676294818276,
+   "k41": -1.0208463740780036
+  },
+  "models": {
+   "default|latin_cremma": {
+    "p": 0.0,
+    "fit": null,
+    "n": 2,
+    "holds": {
+     "P1": false,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0454 [-0.0762,-0.0158] (gen -0.0001, real 0.0453); margin hi-0 = -0.0158",
+     "P2": "core->core excess \u0394 -0.0582 [-0.0850,-0.0074] (gen -0.0191, real +0.0391); margins 0-lo +0.0850, hi-0 -0.0074",
+     "P3": "prefix gain gen -0.0542 vs real +0.0667 [+0.0519,+0.0824]; margins g-lo -0.1061, hi-g +0.1366",
+     "P4": "[fixture, re-centred] jsd gen 0.0330 real 0.0226 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.0556 real -0.3224",
+     "P7": "types gen/real at matched tokens 1.195 (seeds 1.166, 1.223); tol \u00b115%"
+    },
+    "type_ratio": 1.1946640316205532,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.049773846501690255,
+     "k41": 1.5921222147207512
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky75|latin_cremma": {
+    "p": 0.75,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0601 [-0.0869,-0.0337] (gen -0.0147, real 0.0453); margin hi-0 = -0.0337",
+     "P2": "core->core excess \u0394 -0.0297 [-0.0651,+0.0053] (gen +0.0094, real +0.0391); margins 0-lo +0.0651, hi-0 +0.0053",
+     "P3": "prefix gain gen +0.0644 vs real +0.0667 [+0.0519,+0.0824]; margins g-lo +0.0125, hi-g +0.0180",
+     "P4": "[fixture, re-centred] jsd gen 0.0255 real 0.0226 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4203 real -0.3224",
+     "P7": "types gen/real at matched tokens 1.025 (seeds 1.032, 1.018); tol \u00b115%"
+    },
+    "type_ratio": 1.024703557312253,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.04845008707426935,
+     "k41": -1.0136392887243915
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "line_sticky_fit|latin_cremma": {
+    "p": 0.75,
+    "fit": {
+     "p": 0.75,
+     "target": 0.046558215938621,
+     "gen": 0.03101301575094835,
+     "grid": [
+      [
+       0.0,
+       -0.09068567451450309
+      ],
+      [
+       0.1,
+       -0.05407121543771332
+      ],
+      [
+       0.2,
+       -0.04135757964165828
+      ],
+      [
+       0.3,
+       -0.03284685624466721
+      ],
+      [
+       0.4,
+       -0.04206609420097178
+      ],
+      [
+       0.5,
+       -0.0009246175280124774
+      ],
+      [
+       0.6,
+       -0.0020546175284610014
+      ],
+      [
+       0.7,
+       0.06792343088535137
+      ],
+      [
+       0.75,
+       0.03101301575094835
+      ],
+      [
+       0.8,
+       0.08879964628350888
+      ],
+      [
+       0.85,
+       0.13380998739723046
+      ],
+      [
+       0.9,
+       0.14982068974625665
+      ],
+      [
+       0.95,
+       0.1206051364748549
+      ],
+      [
+       1.0,
+       0.17392062604826303
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0440 [-0.0732,-0.0139] (gen 0.0013, real 0.0453); margin hi-0 = -0.0139",
+     "P2": "core->core excess \u0394 +0.0303 [-0.0093,+0.0702] (gen +0.0694, real +0.0391); margins 0-lo +0.0093, hi-0 +0.0702",
+     "P3": "prefix gain gen +0.0542 vs real +0.0667 [+0.0519,+0.0824]; margins g-lo +0.0023, hi-g +0.0282",
+     "P4": "[fixture, re-centred] jsd gen 0.0200 real 0.0226 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4119 real -0.3224",
+     "P7": "types gen/real at matched tokens 1.058 (seeds 1.067, 1.049); tol \u00b115%"
+    },
+    "type_ratio": 1.058300395256917,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.021713733579766685,
+     "k41": -2.1220706834999663
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0056 [-0.0319,+0.0216] (gen 0.0397, real 0.0453); margin hi-0 = +0.0216",
+     "P2": "core->core excess \u0394 +0.0286 [-0.0121,+0.0799] (gen +0.0677, real +0.0391); margins 0-lo +0.0121, hi-0 +0.0799",
+     "P3": "prefix gain gen +0.1650 vs real +0.0667 [+0.0519,+0.0824]; margins g-lo +0.1131, hi-g -0.0826",
+     "P4": "[fixture, re-centred] jsd gen 0.0276 real 0.0226 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.7974 real -0.3224",
+     "P7": "types gen/real at matched tokens 0.939 (seeds 0.945, 0.933); tol \u00b115%"
+    },
+    "type_ratio": 0.9387351778656127,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.15755475662474924,
+     "k41": 0.97602328784098
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|latin_cremma": {
+    "p": 0.75,
+    "fit": {
+     "p": 0.75,
+     "target": 0.046558215938621,
+     "gen": 0.031024740386295387,
+     "grid": [
+      [
+       0.0,
+       -0.07470602494445348
+      ],
+      [
+       0.1,
+       -0.06922622650251027
+      ],
+      [
+       0.2,
+       -0.07513413360771194
+      ],
+      [
+       0.3,
+       -0.044955908548696036
+      ],
+      [
+       0.4,
+       -0.011952334630118206
+      ],
+      [
+       0.5,
+       -0.020785298142125284
+      ],
+      [
+       0.6,
+       0.02329251820090801
+      ],
+      [
+       0.7,
+       0.08803641924969005
+      ],
+      [
+       0.75,
+       0.031024740386295387
+      ],
+      [
+       0.8,
+       0.08742697511428775
+      ],
+      [
+       0.85,
+       0.06334446473913348
+      ],
+      [
+       0.9,
+       0.11601604691792591
+      ],
+      [
+       0.95,
+       0.12794559896718222
+      ],
+      [
+       1.0,
+       0.1392850309879856
+      ]
+     ]
+    },
+    "n": 4,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0335 [-0.0648,-0.0022] (gen 0.0118, real 0.0453); margin hi-0 = -0.0022",
+     "P2": "core->core excess \u0394 +0.0099 [-0.0322,+0.0488] (gen +0.0489, real +0.0391); margins 0-lo +0.0322, hi-0 +0.0488",
+     "P3": "prefix gain gen +0.0435 vs real +0.0667 [+0.0519,+0.0824]; margins g-lo -0.0084, hi-g +0.0389",
+     "P4": "[fixture, re-centred] jsd gen 0.0207 real 0.0226 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4317 real -0.3224",
+     "P7": "types gen/real at matched tokens 1.034 (seeds 1.045, 1.022); tol \u00b115%"
+    },
+    "type_ratio": 1.033596837944664,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.04795941432474618,
+     "k41": -1.3465954274158645
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "page_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0131 [-0.0194,+0.0447] (gen 0.0584, real 0.0453); margin hi-0 = +0.0447",
+     "P2": "core->core excess \u0394 -0.0210 [-0.0541,+0.0164] (gen +0.0181, real +0.0391); margins 0-lo +0.0541, hi-0 +0.0164",
+     "P3": "prefix gain gen +0.1763 vs real +0.0667 [+0.0519,+0.0824]; margins g-lo +0.1245, hi-g -0.0939",
+     "P4": "[fixture, re-centred] jsd gen 0.0269 real 0.0226 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.8821 real -0.3224",
+     "P7": "types gen/real at matched tokens 0.864 (seeds 0.796, 0.931); tol \u00b115%"
+    },
+    "type_ratio": 0.8636363636363635,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.12196814350057766,
+     "k41": 0.830000011260561
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "default|italian_dante": {
+    "p": 0.0,
+    "fit": null,
+    "n": 2,
+    "holds": {
+     "P1": false,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0483 [-0.0749,-0.0185] (gen -0.0030, real 0.0453); margin hi-0 = -0.0185",
+     "P2": "core->core excess \u0394 -0.0450 [-0.0800,-0.0002] (gen -0.0059, real +0.0391); margins 0-lo +0.0800, hi-0 -0.0002",
+     "P3": "prefix gain gen -0.0630 vs real +0.0667 [+0.0519,+0.0824]; margins g-lo -0.1148, hi-g +0.1454",
+     "P4": "[fixture, re-centred] jsd gen 0.0268 real 0.0226 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.1086 real -0.3224",
+     "P7": "types gen/real at matched tokens 1.178 (seeds 1.176, 1.180); tol \u00b115%"
+    },
+    "type_ratio": 1.1778656126482214,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.06054172220102704,
+     "k41": 1.467944200304798
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky75|italian_dante": {
+    "p": 0.75,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0850 [-0.1105,-0.0535] (gen -0.0397, real 0.0453); margin hi-0 = -0.0535",
+     "P2": "core->core excess \u0394 +0.0290 [-0.0142,+0.0713] (gen +0.0681, real +0.0391); margins 0-lo +0.0142, hi-0 +0.0713",
+     "P3": "prefix gain gen +0.0553 vs real +0.0667 [+0.0519,+0.0824]; margins g-lo +0.0034, hi-g +0.0271",
+     "P4": "[fixture, re-centred] jsd gen 0.0255 real 0.0226 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.6131 real -0.3224",
+     "P7": "types gen/real at matched tokens 1.012 (seeds 1.034, 0.990); tol \u00b115%"
+    },
+    "type_ratio": 1.0118577075098814,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.05919461481359529,
+     "k41": -1.2168258595475483
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "line_sticky_fit|italian_dante": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.046558215938621,
+     "gen": 0.023338998047704795,
+     "grid": [
+      [
+       0.0,
+       -0.042128740641526316
+      ],
+      [
+       0.1,
+       -0.0603117766937096
+      ],
+      [
+       0.2,
+       -0.07878789765209873
+      ],
+      [
+       0.3,
+       -0.040852660609373974
+      ],
+      [
+       0.4,
+       -0.012046256137945239
+      ],
+      [
+       0.5,
+       -0.03634970060182585
+      ],
+      [
+       0.6,
+       0.010816291396138392
+      ],
+      [
+       0.7,
+       0.023338998047704795
+      ],
+      [
+       0.75,
+       0.0751757955157706
+      ],
+      [
+       0.8,
+       0.09398138121689033
+      ],
+      [
+       0.85,
+       0.08986434637780537
+      ],
+      [
+       0.9,
+       0.14356245072897464
+      ],
+      [
+       0.95,
+       0.19136984499372295
+      ],
+      [
+       1.0,
+       0.2403622443275235
+      ]
+     ]
+    },
+    "n": 4,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0497 [-0.0772,-0.0174] (gen -0.0044, real 0.0453); margin hi-0 = -0.0174",
+     "P2": "core->core excess \u0394 -0.0053 [-0.0433,+0.0320] (gen +0.0338, real +0.0391); margins 0-lo +0.0433, hi-0 +0.0320",
+     "P3": "prefix gain gen +0.0476 vs real +0.0667 [+0.0519,+0.0824]; margins g-lo -0.0043, hi-g +0.0348",
+     "P4": "[fixture, re-centred] jsd gen 0.0202 real 0.0226 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5359 real -0.3224",
+     "P7": "types gen/real at matched tokens 1.076 (seeds 1.077, 1.075); tol \u00b115%"
+    },
+    "type_ratio": 1.0760869565217392,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": true,
+      "C5": true
+     },
+     "M1": 0.052645856503667036,
+     "k41": -2.229200358750314
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0619 [-0.0936,-0.0273] (gen -0.0166, real 0.0453); margin hi-0 = -0.0273",
+     "P2": "core->core excess \u0394 -0.0055 [-0.0444,+0.0304] (gen +0.0335, real +0.0391); margins 0-lo +0.0444, hi-0 +0.0304",
+     "P3": "prefix gain gen +0.2094 vs real +0.0667 [+0.0519,+0.0824]; margins g-lo +0.1575, hi-g -0.1269",
+     "P4": "[fixture, re-centred] jsd gen 0.0183 real 0.0226 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -1.1156 real -0.3224",
+     "P7": "types gen/real at matched tokens 0.904 (seeds 0.935, 0.874); tol \u00b115%"
+    },
+    "type_ratio": 0.9041501976284585,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.1858060780839517,
+     "k41": 0.8074256559848965
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|italian_dante": {
+    "p": 0.85,
+    "fit": {
+     "p": 0.85,
+     "target": 0.046558215938621,
+     "gen": 0.06198090602821023,
+     "grid": [
+      [
+       0.0,
+       -0.049841560094674095
+      ],
+      [
+       0.1,
+       -0.048342012214397184
+      ],
+      [
+       0.2,
+       -0.06464904113030248
+      ],
+      [
+       0.3,
+       -0.038008803278982525
+      ],
+      [
+       0.4,
+       -0.038660209689289037
+      ],
+      [
+       0.5,
+       0.0021912498913511332
+      ],
+      [
+       0.6,
+       -0.0012471444742279147
+      ],
+      [
+       0.7,
+       0.015684683174279682
+      ],
+      [
+       0.75,
+       0.06334412435687918
+      ],
+      [
+       0.8,
+       0.08836534336889997
+      ],
+      [
+       0.85,
+       0.06198090602821023
+      ],
+      [
+       0.9,
+       0.17658263179820227
+      ],
+      [
+       0.95,
+       0.15005113946084742
+      ],
+      [
+       1.0,
+       0.1707764257209288
+      ]
+     ]
+    },
+    "n": 4,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0528 [-0.0843,-0.0208] (gen -0.0075, real 0.0453); margin hi-0 = -0.0208",
+     "P2": "core->core excess \u0394 -0.0351 [-0.0695,+0.0103] (gen +0.0039, real +0.0391); margins 0-lo +0.0695, hi-0 +0.0103",
+     "P3": "prefix gain gen +0.1254 vs real +0.0667 [+0.0519,+0.0824]; margins g-lo +0.0735, hi-g -0.0430",
+     "P4": "[fixture, re-centred] jsd gen 0.0198 real 0.0226 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.7850 real -0.3224",
+     "P7": "types gen/real at matched tokens 0.981 (seeds 0.962, 1.000); tol \u00b115%"
+    },
+    "type_ratio": 0.9812252964426877,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.12451445897115315,
+     "k41": -0.15210237188660672
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "page_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0450 [-0.0899,-0.0086] (gen 0.0003, real 0.0453); margin hi-0 = -0.0086",
+     "P2": "core->core excess \u0394 +0.0138 [-0.0185,+0.0578] (gen +0.0528, real +0.0391); margins 0-lo +0.0185, hi-0 +0.0578",
+     "P3": "prefix gain gen +0.1634 vs real +0.0667 [+0.0519,+0.0824]; margins g-lo +0.1115, hi-g -0.0810",
+     "P4": "[fixture, re-centred] jsd gen 0.0305 real 0.0226 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -1.0318 real -0.3224",
+     "P7": "types gen/real at matched tokens 0.868 (seeds 0.925, 0.810); tol \u00b115%"
+    },
+    "type_ratio": 0.8675889328063241,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.1366805309565248,
+     "k41": 0.8942188973483556
+    },
+    "match": false,
+    "match_fold": false
+   }
+  },
+  "secs": 48.142186641693115
+ },
+ "FIX|B": {
+  "T": "FIX",
+  "Q": "B",
+  "n_test": 12,
+  "n_train": 77,
+  "real_point": {
+   "P1": -0.007013739631756243,
+   "P2": 0.04546565389628299,
+   "P3": 0.05474174479715317,
+   "P4": 0.014922605569623163,
+   "P4_exc": -0.005088226745327665,
+   "P5": -0.4267023029453245,
+   "F1_prefix": 0.023144279096533178,
+   "F1_core": 0.013552356883913819,
+   "F1_suffix": -0.0048555775227180015
+  },
+  "voy69": {
+   "calls": {
+    "C1": true,
+    "C2": false,
+    "C3p": true,
+    "C4p": false,
+    "C5": true
+   },
+   "M1": 0.054741744797154136,
+   "k41": -0.2249070365939356
+  },
+  "models": {
+   "default|latin_cremma": {
+    "p": 0.0,
+    "fit": null,
+    "n": 3,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": false,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0032 [-0.0440,+0.0418] (gen -0.0102, real -0.0070); margin hi-0 = +0.0418",
+     "P2": "core->core excess \u0394 -0.0759 [-0.1147,-0.0301] (gen -0.0305, real +0.0455); margins 0-lo +0.1147, hi-0 -0.0301",
+     "P3": "prefix gain gen -0.0525 vs real +0.0547 [+0.0460,+0.0697]; margins g-lo -0.0985, hi-g +0.1222",
+     "P4": "[fixture, re-centred] jsd gen 0.0157 real 0.0149 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen +0.0001 real -0.4267",
+     "P7": "types gen/real at matched tokens 1.061 (seeds 1.027, 1.094); tol \u00b115%"
+    },
+    "type_ratio": 1.0606884057971016,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.07243849880533297,
+     "k41": 1.1442761498238603
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky75|latin_cremma": {
+    "p": 0.75,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0157 [-0.0226,+0.0618] (gen 0.0087, real -0.0070); margin hi-0 = +0.0618",
+     "P2": "core->core excess \u0394 +0.0097 [-0.0359,+0.0558] (gen +0.0552, real +0.0455); margins 0-lo +0.0359, hi-0 +0.0558",
+     "P3": "prefix gain gen +0.0776 vs real +0.0547 [+0.0460,+0.0697]; margins g-lo +0.0315, hi-g -0.0079",
+     "P4": "[fixture, re-centred] jsd gen 0.0146 real 0.0149 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5118 real -0.4267",
+     "P7": "types gen/real at matched tokens 0.921 (seeds 0.926, 0.917); tol \u00b115%"
+    },
+    "type_ratio": 0.9211956521739131,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.09241680994935259,
+     "k41": -0.9218358941710438
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "line_sticky_fit|latin_cremma": {
+    "p": 0.75,
+    "fit": {
+     "p": 0.75,
+     "target": 0.04367026011346533,
+     "gen": 0.03213002617381408,
+     "grid": [
+      [
+       0.0,
+       -0.08298570112977148
+      ],
+      [
+       0.1,
+       -0.048334794728463394
+      ],
+      [
+       0.2,
+       -0.039753928902938794
+      ],
+      [
+       0.3,
+       -0.024141613751369764
+      ],
+      [
+       0.4,
+       -0.04239230384515216
+      ],
+      [
+       0.5,
+       -0.0034089102144418703
+      ],
+      [
+       0.6,
+       0.006449262041469898
+      ],
+      [
+       0.7,
+       0.06848034064883889
+      ],
+      [
+       0.75,
+       0.03213002617381408
+      ],
+      [
+       0.8,
+       0.09484071369413657
+      ],
+      [
+       0.85,
+       0.1238278364494777
+      ],
+      [
+       0.9,
+       0.13978002296338446
+      ],
+      [
+       0.95,
+       0.1265805407191822
+      ],
+      [
+       1.0,
+       0.19967482866742006
+      ]
+     ]
+    },
+    "n": 6,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0579 [+0.0241,+0.1044] (gen 0.0509, real -0.0070); margin hi-0 = +0.1044",
+     "P2": "core->core excess \u0394 -0.0401 [-0.0958,+0.0053] (gen +0.0053, real +0.0455); margins 0-lo +0.0958, hi-0 +0.0053",
+     "P3": "prefix gain gen +0.0637 vs real +0.0547 [+0.0460,+0.0697]; margins g-lo +0.0177, hi-g +0.0060",
+     "P4": "[fixture, re-centred] jsd gen 0.0284 real 0.0149 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4053 real -0.4267",
+     "P7": "types gen/real at matched tokens 0.989 (seeds 0.967, 1.011); tol \u00b115%"
+    },
+    "type_ratio": 0.9891304347826086,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.07888754648387201,
+     "k41": -0.2747779021600253
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "line_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0756 [+0.0354,+0.1228] (gen 0.0686, real -0.0070); margin hi-0 = +0.1228",
+     "P2": "core->core excess \u0394 -0.0536 [-0.1014,-0.0042] (gen -0.0081, real +0.0455); margins 0-lo +0.1014, hi-0 -0.0042",
+     "P3": "prefix gain gen +0.1915 vs real +0.0547 [+0.0460,+0.0697]; margins g-lo +0.1455, hi-g -0.1218",
+     "P4": "[fixture, re-centred] jsd gen 0.0165 real 0.0149 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.7831 real -0.4267",
+     "P7": "types gen/real at matched tokens 0.859 (seeds 0.859, 0.859); tol \u00b115%"
+    },
+    "type_ratio": 0.8586956521739131,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.15694985040994502,
+     "k41": 1.0997647562305395
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|latin_cremma": {
+    "p": 0.75,
+    "fit": {
+     "p": 0.75,
+     "target": 0.04367026011346533,
+     "gen": 0.0359854641529645,
+     "grid": [
+      [
+       0.0,
+       -0.06720313294276252
+      ],
+      [
+       0.1,
+       -0.06340334964217667
+      ],
+      [
+       0.2,
+       -0.06273694839341439
+      ],
+      [
+       0.3,
+       -0.03503086784423479
+      ],
+      [
+       0.4,
+       -0.003512864539043546
+      ],
+      [
+       0.5,
+       -0.027923574752848675
+      ],
+      [
+       0.6,
+       0.024510594611405978
+      ],
+      [
+       0.7,
+       0.07868875984069511
+      ],
+      [
+       0.75,
+       0.0359854641529645
+      ],
+      [
+       0.8,
+       0.0809085982353013
+      ],
+      [
+       0.85,
+       0.10629661413413934
+      ],
+      [
+       0.9,
+       0.12083280820509928
+      ],
+      [
+       0.95,
+       0.15725159440053094
+      ],
+      [
+       1.0,
+       0.15709411574966176
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0295 [-0.0097,+0.0769] (gen 0.0225, real -0.0070); margin hi-0 = +0.0769",
+     "P2": "core->core excess \u0394 -0.0148 [-0.0561,+0.0340] (gen +0.0307, real +0.0455); margins 0-lo +0.0561, hi-0 +0.0340",
+     "P3": "prefix gain gen +0.0724 vs real +0.0547 [+0.0460,+0.0697]; margins g-lo +0.0264, hi-g -0.0027",
+     "P4": "[fixture, re-centred] jsd gen 0.0190 real 0.0149 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5502 real -0.4267",
+     "P7": "types gen/real at matched tokens 0.966 (seeds 0.944, 0.989); tol \u00b115%"
+    },
+    "type_ratio": 0.9664855072463767,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.08554932133625073,
+     "k41": -0.719656427837156
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "page_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0496 [+0.0098,+0.0946] (gen 0.0426, real -0.0070); margin hi-0 = +0.0946",
+     "P2": "core->core excess \u0394 +0.0219 [-0.0202,+0.0620] (gen +0.0673, real +0.0455); margins 0-lo +0.0202, hi-0 +0.0620",
+     "P3": "prefix gain gen +0.2210 vs real +0.0547 [+0.0460,+0.0697]; margins g-lo +0.1750, hi-g -0.1513",
+     "P4": "[fixture, re-centred] jsd gen 0.0230 real 0.0149 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.7224 real -0.4267",
+     "P7": "types gen/real at matched tokens 0.812 (seeds 0.777, 0.846); tol \u00b115%"
+    },
+    "type_ratio": 0.8115942028985508,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.24080862422260763,
+     "k41": 0.6502512665455121
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "default|italian_dante": {
+    "p": 0.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0664 [-0.1038,-0.0200] (gen -0.0734, real -0.0070); margin hi-0 = -0.0200",
+     "P2": "core->core excess \u0394 -0.0338 [-0.0781,+0.0113] (gen +0.0116, real +0.0455); margins 0-lo +0.0781, hi-0 +0.0113",
+     "P3": "prefix gain gen -0.0449 vs real +0.0547 [+0.0460,+0.0697]; margins g-lo -0.0909, hi-g +0.1146",
+     "P4": "[fixture, re-centred] jsd gen 0.0248 real 0.0149 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.0960 real -0.4267",
+     "P7": "types gen/real at matched tokens 1.072 (seeds 1.103, 1.042); tol \u00b115%"
+    },
+    "type_ratio": 1.072463768115942,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.05351877552981239,
+     "k41": 1.5350711896604006
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky75|italian_dante": {
+    "p": 0.75,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0256 [-0.0160,+0.0701] (gen 0.0186, real -0.0070); margin hi-0 = +0.0701",
+     "P2": "core->core excess \u0394 +0.0620 [+0.0135,+0.1005] (gen +0.1075, real +0.0455); margins 0-lo -0.0135, hi-0 +0.1005",
+     "P3": "prefix gain gen +0.0815 vs real +0.0547 [+0.0460,+0.0697]; margins g-lo +0.0354, hi-g -0.0118",
+     "P4": "[fixture, re-centred] jsd gen 0.0187 real 0.0149 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.6651 real -0.4267",
+     "P7": "types gen/real at matched tokens 0.972 (seeds 0.975, 0.969); tol \u00b115%"
+    },
+    "type_ratio": 0.9719202898550725,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.08366511878617815,
+     "k41": -0.9863978867925975
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "line_sticky_fit|italian_dante": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.04367026011346533,
+     "gen": 0.02932673575100385,
+     "grid": [
+      [
+       0.0,
+       -0.0419310262412515
+      ],
+      [
+       0.1,
+       -0.07265306837179375
+      ],
+      [
+       0.2,
+       -0.06394965354708364
+      ],
+      [
+       0.3,
+       -0.04836903668866788
+      ],
+      [
+       0.4,
+       -0.013058142962462074
+      ],
+      [
+       0.5,
+       -0.01384594633123746
+      ],
+      [
+       0.6,
+       0.015260553012588421
+      ],
+      [
+       0.7,
+       0.02932673575100385
+      ],
+      [
+       0.75,
+       0.09685084972508418
+      ],
+      [
+       0.8,
+       0.1133882063183218
+      ],
+      [
+       0.85,
+       0.0912808038146149
+      ],
+      [
+       0.9,
+       0.11430665739105328
+      ],
+      [
+       0.95,
+       0.1778161816230977
+      ],
+      [
+       1.0,
+       0.18519266092065922
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0083 [-0.0506,+0.0364] (gen -0.0153, real -0.0070); margin hi-0 = +0.0364",
+     "P2": "core->core excess \u0394 +0.0037 [-0.0488,+0.0493] (gen +0.0492, real +0.0455); margins 0-lo +0.0488, hi-0 +0.0493",
+     "P3": "prefix gain gen +0.0706 vs real +0.0547 [+0.0460,+0.0697]; margins g-lo +0.0246, hi-g -0.0010",
+     "P4": "[fixture, re-centred] jsd gen 0.0184 real 0.0149 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.6435 real -0.4267",
+     "P7": "types gen/real at matched tokens 0.990 (seeds 0.987, 0.993); tol \u00b115%"
+    },
+    "type_ratio": 0.990036231884058,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.08284393707600264,
+     "k41": -0.96568348562379
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "line_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0044 [-0.0424,+0.0368] (gen -0.0115, real -0.0070); margin hi-0 = +0.0368",
+     "P2": "core->core excess \u0394 -0.0117 [-0.0508,+0.0303] (gen +0.0338, real +0.0455); margins 0-lo +0.0508, hi-0 +0.0303",
+     "P3": "prefix gain gen +0.2083 vs real +0.0547 [+0.0460,+0.0697]; margins g-lo +0.1622, hi-g -0.1386",
+     "P4": "[fixture, re-centred] jsd gen 0.0189 real 0.0149 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -1.0888 real -0.4267",
+     "P7": "types gen/real at matched tokens 0.872 (seeds 0.895, 0.850); tol \u00b115%"
+    },
+    "type_ratio": 0.8722826086956521,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.24681296350942225,
+     "k41": 0.7214900759362299
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|italian_dante": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.04367026011346533,
+     "gen": 0.03752196580384261,
+     "grid": [
+      [
+       0.0,
+       -0.05590735351002536
+      ],
+      [
+       0.1,
+       -0.06699521444634879
+      ],
+      [
+       0.2,
+       -0.054417212566595805
+      ],
+      [
+       0.3,
+       -0.0637068959394469
+      ],
+      [
+       0.4,
+       -0.028086273920852785
+      ],
+      [
+       0.5,
+       0.006444225774717032
+      ],
+      [
+       0.6,
+       0.0039595120835656415
+      ],
+      [
+       0.7,
+       0.03752196580384261
+      ],
+      [
+       0.75,
+       0.06017271519389656
+      ],
+      [
+       0.8,
+       0.08814555778034949
+      ],
+      [
+       0.85,
+       0.061257557136175526
+      ],
+      [
+       0.9,
+       0.17568206571527137
+      ],
+      [
+       0.95,
+       0.1332258971277883
+      ],
+      [
+       1.0,
+       0.1392561267222764
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0143 [-0.0553,+0.0297] (gen -0.0213, real -0.0070); margin hi-0 = +0.0297",
+     "P2": "core->core excess \u0394 -0.0108 [-0.0561,+0.0363] (gen +0.0347, real +0.0455); margins 0-lo +0.0561, hi-0 +0.0363",
+     "P3": "prefix gain gen +0.0273 vs real +0.0547 [+0.0460,+0.0697]; margins g-lo -0.0187, hi-g +0.0424",
+     "P4": "[fixture, re-centred] jsd gen 0.0131 real 0.0149 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5930 real -0.4267",
+     "P7": "types gen/real at matched tokens 0.973 (seeds 0.946, 1.000); tol \u00b115%"
+    },
+    "type_ratio": 0.9728260869565217,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.00630464118473658,
+     "k41": -12.052894194178362
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0222 [-0.0578,+0.0213] (gen -0.0292, real -0.0070); margin hi-0 = +0.0213",
+     "P2": "core->core excess \u0394 -0.0154 [-0.0557,+0.0332] (gen +0.0300, real +0.0455); margins 0-lo +0.0557, hi-0 +0.0332",
+     "P3": "prefix gain gen +0.1656 vs real +0.0547 [+0.0460,+0.0697]; margins g-lo +0.1195, hi-g -0.0959",
+     "P4": "[fixture, re-centred] jsd gen 0.0163 real 0.0149 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -1.0533 real -0.4267",
+     "P7": "types gen/real at matched tokens 0.819 (seeds 0.815, 0.822); tol \u00b115%"
+    },
+    "type_ratio": 0.8188405797101449,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.15058191640523028,
+     "k41": 0.620983116306103
+    },
+    "match": false,
+    "match_fold": false
+   }
+  },
+  "secs": 48.781311988830566
+ },
+ "FIX|D": {
+  "T": "FIX",
+  "Q": "D",
+  "n_test": 12,
+  "n_train": 77,
+  "real_point": {
+   "P1": -0.06554257945994289,
+   "P2": 0.03018696285342637,
+   "P3": 0.03251078573857684,
+   "P4": 0.024351441367241173,
+   "P4_exc": 0.0024940157093771217,
+   "P5": -0.48410736527122467,
+   "F1_prefix": 0.04273705802638933,
+   "F1_core": 0.042426548650844914,
+   "F1_suffix": -0.00010872661906753851
+  },
+  "voy69": {
+   "calls": {
+    "C1": true,
+    "C2": false,
+    "C3p": false,
+    "C4p": false,
+    "C5": true
+   },
+   "M1": 0.03251078573857684,
+   "k41": -2.040424078797416
+  },
+  "models": {
+   "default|latin_cremma": {
+    "p": 0.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0287 [+0.0052,+0.0569] (gen -0.0369, real -0.0655); margin hi-0 = +0.0569",
+     "P2": "core->core excess \u0394 -0.0213 [-0.0658,+0.0500] (gen +0.0089, real +0.0302); margins 0-lo +0.0658, hi-0 +0.0500",
+     "P3": "prefix gain gen -0.0574 vs real +0.0325 [+0.0199,+0.0439]; margins g-lo -0.0773, hi-g +0.1013",
+     "P4": "[fixture, re-centred] jsd gen 0.0138 real 0.0244 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.0004 real -0.4841",
+     "P7": "types gen/real at matched tokens 1.214 (seeds 1.224, 1.204); tol \u00b115%"
+    },
+    "type_ratio": 1.2137254901960786,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.08045035365895188,
+     "k41": 0.8722395755049156
+    },
+    "match": false,
+    "match_fold": true
+   },
+   "line_sticky75|latin_cremma": {
+    "p": 0.75,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0874 [+0.0615,+0.1129] (gen 0.0219, real -0.0655); margin hi-0 = +0.1129",
+     "P2": "core->core excess \u0394 +0.0142 [-0.0378,+0.0773] (gen +0.0444, real +0.0302); margins 0-lo +0.0378, hi-0 +0.0773",
+     "P3": "prefix gain gen +0.1006 vs real +0.0325 [+0.0199,+0.0439]; margins g-lo +0.0807, hi-g -0.0568",
+     "P4": "[fixture, re-centred] jsd gen 0.0187 real 0.0244 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4469 real -0.4841",
+     "P7": "types gen/real at matched tokens 0.996 (seeds 0.994, 0.998); tol \u00b115%"
+    },
+    "type_ratio": 0.996078431372549,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.09158474126063235,
+     "k41": -0.45209101146402303
+    },
+    "match": true,
+    "match_fold": false
+   },
+   "line_sticky_fit|latin_cremma": {
+    "p": 0.75,
+    "fit": {
+     "p": 0.75,
+     "target": 0.036298419752080154,
+     "gen": 0.029333414423346905,
+     "grid": [
+      [
+       0.0,
+       -0.07889889415634317
+      ],
+      [
+       0.1,
+       -0.06634516140138223
+      ],
+      [
+       0.2,
+       -0.024669504088570486
+      ],
+      [
+       0.3,
+       -0.03825200848648106
+      ],
+      [
+       0.4,
+       -0.030068361105529504
+      ],
+      [
+       0.5,
+       -0.0014529771970910313
+      ],
+      [
+       0.6,
+       0.019210166200177365
+      ],
+      [
+       0.7,
+       0.05352883574643503
+      ],
+      [
+       0.75,
+       0.029333414423346905
+      ],
+      [
+       0.8,
+       0.10753668650972677
+      ],
+      [
+       0.85,
+       0.11333629387051784
+      ],
+      [
+       0.9,
+       0.15196125384912265
+      ],
+      [
+       0.95,
+       0.12394910105622085
+      ],
+      [
+       1.0,
+       0.18307713175815052
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0570 [+0.0280,+0.0885] (gen -0.0085, real -0.0655); margin hi-0 = +0.0885",
+     "P2": "core->core excess \u0394 -0.0059 [-0.0507,+0.0594] (gen +0.0243, real +0.0302); margins 0-lo +0.0507, hi-0 +0.0594",
+     "P3": "prefix gain gen +0.0644 vs real +0.0325 [+0.0199,+0.0439]; margins g-lo +0.0445, hi-g -0.0205",
+     "P4": "[fixture, re-centred] jsd gen 0.0162 real 0.0244 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4283 real -0.4841",
+     "P7": "types gen/real at matched tokens 0.999 (seeds 0.992, 1.006); tol \u00b115%"
+    },
+    "type_ratio": 0.9990196078431373,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.06038646278205418,
+     "k41": -1.5792319519334463
+    },
+    "match": true,
+    "match_fold": false
+   },
+   "line_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.1039 [+0.0743,+0.1339] (gen 0.0384, real -0.0655); margin hi-0 = +0.1339",
+     "P2": "core->core excess \u0394 -0.0032 [-0.0516,+0.0600] (gen +0.0269, real +0.0302); margins 0-lo +0.0516, hi-0 +0.0600",
+     "P3": "prefix gain gen +0.1989 vs real +0.0325 [+0.0199,+0.0439]; margins g-lo +0.1790, hi-g -0.1550",
+     "P4": "[fixture, re-centred] jsd gen 0.0272 real 0.0244 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.8222 real -0.4841",
+     "P7": "types gen/real at matched tokens 0.973 (seeds 0.965, 0.980); tol \u00b115%"
+    },
+    "type_ratio": 0.9725490196078431,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.1494827987847263,
+     "k41": 0.7696406077210741
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|latin_cremma": {
+    "p": 0.75,
+    "fit": {
+     "p": 0.75,
+     "target": 0.036298419752080154,
+     "gen": 0.03564123099905166,
+     "grid": [
+      [
+       0.0,
+       -0.07928407570099479
+      ],
+      [
+       0.1,
+       -0.036207512154711574
+      ],
+      [
+       0.2,
+       -0.07663542223454287
+      ],
+      [
+       0.3,
+       -0.026084940019553974
+      ],
+      [
+       0.4,
+       -0.0011705698939093816
+      ],
+      [
+       0.5,
+       -0.04070562303909706
+      ],
+      [
+       0.6,
+       0.00792445681702632
+      ],
+      [
+       0.7,
+       0.07534846905453399
+      ],
+      [
+       0.75,
+       0.03564123099905166
+      ],
+      [
+       0.8,
+       0.0526375122450389
+      ],
+      [
+       0.85,
+       0.08353200955513737
+      ],
+      [
+       0.9,
+       0.11294254278838844
+      ],
+      [
+       0.95,
+       0.1432593267180732
+      ],
+      [
+       1.0,
+       0.15116536222733704
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0203 [-0.0053,+0.0490] (gen -0.0453, real -0.0655); margin hi-0 = +0.0490",
+     "P2": "core->core excess \u0394 +0.0001 [-0.0440,+0.0705] (gen +0.0303, real +0.0302); margins 0-lo +0.0440, hi-0 +0.0705",
+     "P3": "prefix gain gen +0.0825 vs real +0.0325 [+0.0199,+0.0439]; margins g-lo +0.0626, hi-g -0.0387",
+     "P4": "[fixture, re-centred] jsd gen 0.0242 real 0.0244 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4472 real -0.4841",
+     "P7": "types gen/real at matched tokens 1.053 (seeds 1.025, 1.080); tol \u00b115%"
+    },
+    "type_ratio": 1.052941176470588,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.04965588081563765,
+     "k41": -1.0710626158178551
+    },
+    "match": true,
+    "match_fold": false
+   },
+   "page_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0361 [+0.0048,+0.0719] (gen -0.0294, real -0.0655); margin hi-0 = +0.0719",
+     "P2": "core->core excess \u0394 +0.0104 [-0.0327,+0.0785] (gen +0.0406, real +0.0302); margins 0-lo +0.0327, hi-0 +0.0785",
+     "P3": "prefix gain gen +0.1935 vs real +0.0325 [+0.0199,+0.0439]; margins g-lo +0.1736, hi-g -0.1497",
+     "P4": "[fixture, re-centred] jsd gen 0.0216 real 0.0244 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.9599 real -0.4841",
+     "P7": "types gen/real at matched tokens 0.939 (seeds 0.898, 0.980); tol \u00b115%"
+    },
+    "type_ratio": 0.9392156862745098,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.12999655688532946,
+     "k41": 1.0715390472883
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "default|italian_dante": {
+    "p": 0.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0380 [+0.0032,+0.0699] (gen -0.0276, real -0.0655); margin hi-0 = +0.0699",
+     "P2": "core->core excess \u0394 -0.0289 [-0.0742,+0.0454] (gen +0.0013, real +0.0302); margins 0-lo +0.0742, hi-0 +0.0454",
+     "P3": "prefix gain gen -0.0431 vs real +0.0325 [+0.0199,+0.0439]; margins g-lo -0.0630, hi-g +0.0870",
+     "P4": "[fixture, re-centred] jsd gen 0.0181 real 0.0244 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.1166 real -0.4841",
+     "P7": "types gen/real at matched tokens 1.210 (seeds 1.235, 1.184); tol \u00b115%"
+    },
+    "type_ratio": 1.2098039215686276,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.043660091992558124,
+     "k41": 2.509863163995064
+    },
+    "match": false,
+    "match_fold": true
+   },
+   "line_sticky75|italian_dante": {
+    "p": 0.75,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0814 [+0.0519,+0.1107] (gen 0.0159, real -0.0655); margin hi-0 = +0.1107",
+     "P2": "core->core excess \u0394 -0.0129 [-0.0641,+0.0531] (gen +0.0173, real +0.0302); margins 0-lo +0.0641, hi-0 +0.0531",
+     "P3": "prefix gain gen +0.0621 vs real +0.0325 [+0.0199,+0.0439]; margins g-lo +0.0422, hi-g -0.0182",
+     "P4": "[fixture, re-centred] jsd gen 0.0266 real 0.0244 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5463 real -0.4841",
+     "P7": "types gen/real at matched tokens 1.103 (seeds 1.127, 1.078); tol \u00b115%"
+    },
+    "type_ratio": 1.1029411764705883,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.08110026672438965,
+     "k41": -0.8840683731050756
+    },
+    "match": true,
+    "match_fold": false
+   },
+   "line_sticky_fit|italian_dante": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.036298419752080154,
+     "gen": 0.04099103333813377,
+     "grid": [
+      [
+       0.0,
+       -0.027300277371814872
+      ],
+      [
+       0.1,
+       -0.05833386077670527
+      ],
+      [
+       0.2,
+       -0.07774203096863556
+      ],
+      [
+       0.3,
+       -0.045555210784762615
+      ],
+      [
+       0.4,
+       -0.015389213142137313
+      ],
+      [
+       0.5,
+       -0.05336415076087619
+      ],
+      [
+       0.6,
+       -0.02011110292440733
+      ],
+      [
+       0.7,
+       0.04099103333813377
+      ],
+      [
+       0.75,
+       0.07657150120856919
+      ],
+      [
+       0.8,
+       0.06889722525416929
+      ],
+      [
+       0.85,
+       0.0963459014234855
+      ],
+      [
+       0.9,
+       0.13724556547072198
+      ],
+      [
+       0.95,
+       0.20682142047142213
+      ],
+      [
+       1.0,
+       0.21715695122053064
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0571 [+0.0322,+0.0818] (gen -0.0084, real -0.0655); margin hi-0 = +0.0818",
+     "P2": "core->core excess \u0394 +0.0082 [-0.0382,+0.0757] (gen +0.0384, real +0.0302); margins 0-lo +0.0382, hi-0 +0.0757",
+     "P3": "prefix gain gen +0.0527 vs real +0.0325 [+0.0199,+0.0439]; margins g-lo +0.0328, hi-g -0.0089",
+     "P4": "[fixture, re-centred] jsd gen 0.0126 real 0.0244 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5590 real -0.4841",
+     "P7": "types gen/real at matched tokens 1.036 (seeds 1.039, 1.033); tol \u00b115%"
+    },
+    "type_ratio": 1.0362745098039217,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.07947057637323898,
+     "k41": -1.1719808517405141
+    },
+    "match": true,
+    "match_fold": false
+   },
+   "line_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0188 [-0.0083,+0.0458] (gen -0.0467, real -0.0655); margin hi-0 = +0.0458",
+     "P2": "core->core excess \u0394 +0.0073 [-0.0430,+0.0655] (gen +0.0375, real +0.0302); margins 0-lo +0.0430, hi-0 +0.0655",
+     "P3": "prefix gain gen +0.1743 vs real +0.0325 [+0.0199,+0.0439]; margins g-lo +0.1544, hi-g -0.1304",
+     "P4": "[fixture, re-centred] jsd gen 0.0221 real 0.0244 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -1.0665 real -0.4841",
+     "P7": "types gen/real at matched tokens 0.941 (seeds 0.943, 0.939); tol \u00b115%"
+    },
+    "type_ratio": 0.9411764705882353,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.16240751772446943,
+     "k41": 0.7471088854348752
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|italian_dante": {
+    "p": 0.6,
+    "fit": {
+     "p": 0.6,
+     "target": 0.036298419752080154,
+     "gen": 0.015022943783477054,
+     "grid": [
+      [
+       0.0,
+       -0.04335154898838877
+      ],
+      [
+       0.1,
+       -0.06331777602036438
+      ],
+      [
+       0.2,
+       -0.059954150039872846
+      ],
+      [
+       0.3,
+       -0.06250029393963605
+      ],
+      [
+       0.4,
+       -0.024519021514881226
+      ],
+      [
+       0.5,
+       -0.021234278638827653
+      ],
+      [
+       0.6,
+       0.015022943783477054
+      ],
+      [
+       0.7,
+       0.010208390172211841
+      ],
+      [
+       0.75,
+       0.07046580451643128
+      ],
+      [
+       0.8,
+       0.07322500311331795
+      ],
+      [
+       0.85,
+       0.0710606268922341
+      ],
+      [
+       0.9,
+       0.15914478456667308
+      ],
+      [
+       0.95,
+       0.1580647092920284
+      ],
+      [
+       1.0,
+       0.15001416769071255
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0453 [+0.0185,+0.0713] (gen -0.0203, real -0.0655); margin hi-0 = +0.0713",
+     "P2": "core->core excess \u0394 +0.0382 [-0.0130,+0.0992] (gen +0.0684, real +0.0302); margins 0-lo +0.0130, hi-0 +0.0992",
+     "P3": "prefix gain gen +0.0154 vs real +0.0325 [+0.0199,+0.0439]; margins g-lo -0.0045, hi-g +0.0285",
+     "P4": "[fixture, re-centred] jsd gen 0.0307 real 0.0244 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4496 real -0.4841",
+     "P7": "types gen/real at matched tokens 1.074 (seeds 1.065, 1.082); tol \u00b115%"
+    },
+    "type_ratio": 1.0735294117647058,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.03185908258639464,
+     "k41": -2.206226474266418
+    },
+    "match": false,
+    "match_fold": true
+   },
+   "page_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0738 [+0.0474,+0.0984] (gen 0.0083, real -0.0655); margin hi-0 = +0.0984",
+     "P2": "core->core excess \u0394 +0.0541 [+0.0047,+0.1210] (gen +0.0843, real +0.0302); margins 0-lo -0.0047, hi-0 +0.1210",
+     "P3": "prefix gain gen +0.1747 vs real +0.0325 [+0.0199,+0.0439]; margins g-lo +0.1548, hi-g -0.1308",
+     "P4": "[fixture, re-centred] jsd gen 0.0203 real 0.0244 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.9693 real -0.4841",
+     "P7": "types gen/real at matched tokens 0.860 (seeds 0.786, 0.933); tol \u00b115%"
+    },
+    "type_ratio": 0.8598039215686275,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.16683923274954898,
+     "k41": 0.7164678585368839
+    },
+    "match": false,
+    "match_fold": false
+   }
+  },
+  "secs": 50.080297231674194
+ },
+ "FIX|H": {
+  "T": "FIX",
+  "Q": "H",
+  "n_test": 5,
+  "n_train": 84,
+  "real_point": {
+   "P1": -0.03214536605254966,
+   "P2": 0.010133074410803022,
+   "P3": 0.08916636144077948,
+   "P4": 0.08299889375528358,
+   "P4_exc": 0.025330876085159937,
+   "P5": -0.45063171445024075,
+   "F1_prefix": 0.039579067883473804,
+   "F1_core": 0.044752957379812816,
+   "F1_suffix": 0.00042392024190176375
+  },
+  "voy69": {
+   "calls": {
+    "C1": true,
+    "C2": false,
+    "C3p": true,
+    "C4p": false,
+    "C5": true
+   },
+   "M1": 0.08916636144077948,
+   "k41": -0.5186364900192085
+  },
+  "models": {
+   "default|latin_cremma": {
+    "p": 0.0,
+    "fit": null,
+    "n": 2,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": false,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "[small fold, point] Moran \u0394 +0.0417 >= -0.0158",
+     "P2": "[small fold, point] core->core \u0394 -0.0238, |\u0394| <= 0.0203",
+     "P3": "[small fold, point] prefix gain gen -0.0298 real +0.0892, |d| <= 0.017",
+     "P4": "[fixture, re-centred] jsd gen 0.0345 real 0.0830 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.0477 real -0.4506",
+     "P7": "types gen/real at matched tokens 1.151 (seeds 1.162, 1.140); tol \u00b115%"
+    },
+    "type_ratio": 1.1510791366906474,
+    "small": true,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.03599672674752609,
+     "k41": 1.9102774715511583
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky75|latin_cremma": {
+    "p": 0.75,
+    "fit": null,
+    "n": 3,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": false,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "[small fold, point] Moran \u0394 +0.0562 >= -0.0158",
+     "P2": "[small fold, point] core->core \u0394 +0.0507, |\u0394| <= 0.0203",
+     "P3": "[small fold, point] prefix gain gen +0.0297 real +0.0892, |d| <= 0.017",
+     "P4": "[fixture, re-centred] jsd gen 0.0321 real 0.0830 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4188 real -0.4506",
+     "P7": "types gen/real at matched tokens 0.989 (seeds 0.982, 0.996); tol \u00b115%"
+    },
+    "type_ratio": 0.9892086330935252,
+    "small": true,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.028648003364006375,
+     "k41": -0.921875993741268
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky_fit|latin_cremma": {
+    "p": 0.75,
+    "fit": {
+     "p": 0.75,
+     "target": 0.02962972446736872,
+     "gen": 0.029581495040362744,
+     "grid": [
+      [
+       0.0,
+       -0.07692320843218561
+      ],
+      [
+       0.1,
+       -0.059757375497169855
+      ],
+      [
+       0.2,
+       -0.02606929985905303
+      ],
+      [
+       0.3,
+       -0.05661273623372426
+      ],
+      [
+       0.4,
+       -0.054696154789805725
+      ],
+      [
+       0.5,
+       -0.021036009977310793
+      ],
+      [
+       0.6,
+       -0.0027620303059576624
+      ],
+      [
+       0.7,
+       0.04285362726900607
+      ],
+      [
+       0.75,
+       0.029581495040362744
+      ],
+      [
+       0.8,
+       0.10124259681832694
+      ],
+      [
+       0.85,
+       0.10555577254437151
+      ],
+      [
+       0.9,
+       0.1845769144634169
+      ],
+      [
+       0.95,
+       0.15828974680947297
+      ],
+      [
+       1.0,
+       0.15656445659461934
+      ]
+     ]
+    },
+    "n": 3,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": false,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "[small fold, point] Moran \u0394 +0.0512 >= -0.0158",
+     "P2": "[small fold, point] core->core \u0394 +0.0573, |\u0394| <= 0.0203",
+     "P3": "[small fold, point] prefix gain gen +0.1101 real +0.0892, |d| <= 0.017",
+     "P4": "[fixture, re-centred] jsd gen 0.0462 real 0.0830 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5221 real -0.4506",
+     "P7": "types gen/real at matched tokens 1.101 (seeds 1.101, 1.101); tol \u00b115%"
+    },
+    "type_ratio": 1.1007194244604317,
+    "small": true,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.10333372771802313,
+     "k41": -0.9268351776519689
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "line_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 3,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": false,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "[small fold, point] Moran \u0394 +0.0533 >= -0.0158",
+     "P2": "[small fold, point] core->core \u0394 -0.0250, |\u0394| <= 0.0203",
+     "P3": "[small fold, point] prefix gain gen +0.1844 real +0.0892, |d| <= 0.017",
+     "P4": "[fixture, re-centred] jsd gen 0.0290 real 0.0830 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.8491 real -0.4506",
+     "P7": "types gen/real at matched tokens 1.007 (seeds 1.025, 0.989); tol \u00b115%"
+    },
+    "type_ratio": 1.0071942446043165,
+    "small": true,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.12261051490395727,
+     "k41": 0.36534986694266947
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|latin_cremma": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.02962972446736872,
+     "gen": 0.046445620795650504,
+     "grid": [
+      [
+       0.0,
+       -0.07930196695790588
+      ],
+      [
+       0.1,
+       -0.04074020350693086
+      ],
+      [
+       0.2,
+       -0.05975284301071565
+      ],
+      [
+       0.3,
+       -0.017831495479828992
+      ],
+      [
+       0.4,
+       -0.026636267108807638
+      ],
+      [
+       0.5,
+       0.002598327295854629
+      ],
+      [
+       0.6,
+       -0.007509909796845213
+      ],
+      [
+       0.7,
+       0.046445620795650504
+      ],
+      [
+       0.75,
+       0.0793832538614658
+      ],
+      [
+       0.8,
+       0.06700147767696617
+      ],
+      [
+       0.85,
+       0.10319468273924882
+      ],
+      [
+       0.9,
+       0.10813202263032572
+      ],
+      [
+       0.95,
+       0.10669003485202878
+      ],
+      [
+       1.0,
+       0.1991944996230515
+      ]
+     ]
+    },
+    "n": 6,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "[small fold, point] Moran \u0394 +0.0652 >= -0.0158",
+     "P2": "[small fold, point] core->core \u0394 -0.0082, |\u0394| <= 0.0203",
+     "P3": "[small fold, point] prefix gain gen +0.0938 real +0.0892, |d| <= 0.017",
+     "P4": "[fixture, re-centred] jsd gen 0.0733 real 0.0830 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4690 real -0.4506",
+     "P7": "types gen/real at matched tokens 1.058 (seeds 1.025, 1.090); tol \u00b115%"
+    },
+    "type_ratio": 1.0575539568345325,
+    "small": true,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.08522071338061464,
+     "k41": -1.0456099258707006
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "page_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 3,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": false,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "[small fold, point] Moran \u0394 +0.0367 >= -0.0158",
+     "P2": "[small fold, point] core->core \u0394 +0.0562, |\u0394| <= 0.0203",
+     "P3": "[small fold, point] prefix gain gen +0.2411 real +0.0892, |d| <= 0.017",
+     "P4": "[fixture, re-centred] jsd gen 0.0445 real 0.0830 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.6271 real -0.4506",
+     "P7": "types gen/real at matched tokens 0.863 (seeds 0.867, 0.860); tol \u00b115%"
+    },
+    "type_ratio": 0.8633093525179856,
+    "small": true,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.1573093339305942,
+     "k41": 1.4768178736090172
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "default|italian_dante": {
+    "p": 0.0,
+    "fit": null,
+    "n": 2,
+    "holds": {
+     "P1": false,
+     "P2": false,
+     "P3": false,
+     "P4": false,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "[small fold, point] Moran \u0394 -0.0299 >= -0.0158",
+     "P2": "[small fold, point] core->core \u0394 +0.0414, |\u0394| <= 0.0203",
+     "P3": "[small fold, point] prefix gain gen -0.0184 real +0.0892, |d| <= 0.017",
+     "P4": "[fixture, re-centred] jsd gen 0.0411 real 0.0830 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.1578 real -0.4506",
+     "P7": "types gen/real at matched tokens 1.121 (seeds 1.115, 1.126); tol \u00b115%"
+    },
+    "type_ratio": 1.120503597122302,
+    "small": true,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.03388083402144799,
+     "k41": 4.9099603743976195
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky75|italian_dante": {
+    "p": 0.75,
+    "fit": null,
+    "n": 3,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": false,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "[small fold, point] Moran \u0394 +0.0474 >= -0.0158",
+     "P2": "[small fold, point] core->core \u0394 +0.0433, |\u0394| <= 0.0203",
+     "P3": "[small fold, point] prefix gain gen +0.0658 real +0.0892, |d| <= 0.017",
+     "P4": "[fixture, re-centred] jsd gen 0.0356 real 0.0830 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5328 real -0.4506",
+     "P7": "types gen/real at matched tokens 1.038 (seeds 1.047, 1.029); tol \u00b115%"
+    },
+    "type_ratio": 1.0377697841726619,
+    "small": true,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.061015010753153825,
+     "k41": -1.897159967611497
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "line_sticky_fit|italian_dante": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.02962972446736872,
+     "gen": 0.015195300525447208,
+     "grid": [
+      [
+       0.0,
+       -0.061619672433363026
+      ],
+      [
+       0.1,
+       -0.058357227051188836
+      ],
+      [
+       0.2,
+       -0.06411884980910629
+      ],
+      [
+       0.3,
+       -0.06307681172981669
+      ],
+      [
+       0.4,
+       -0.009937374292229711
+      ],
+      [
+       0.5,
+       -0.05486743541119065
+      ],
+      [
+       0.6,
+       -0.0036734958335627177
+      ],
+      [
+       0.7,
+       0.015195300525447208
+      ],
+      [
+       0.75,
+       0.06276023484746049
+      ],
+      [
+       0.8,
+       0.08043201002763779
+      ],
+      [
+       0.85,
+       0.12049754152663203
+      ],
+      [
+       0.9,
+       0.16328982176506918
+      ],
+      [
+       0.95,
+       0.19247119337694465
+      ],
+      [
+       1.0,
+       0.16325831080697123
+      ]
+     ]
+    },
+    "n": 3,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": false,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "[small fold, point] Moran \u0394 +0.0105 >= -0.0158",
+     "P2": "[small fold, point] core->core \u0394 -0.0214, |\u0394| <= 0.0203",
+     "P3": "[small fold, point] prefix gain gen +0.0355 real +0.0892, |d| <= 0.017",
+     "P4": "[fixture, re-centred] jsd gen 0.0430 real 0.0830 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5971 real -0.4506",
+     "P7": "types gen/real at matched tokens 1.119 (seeds 1.140, 1.097); tol \u00b115%"
+    },
+    "type_ratio": 1.1187050359712232,
+    "small": true,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.008761026900286666,
+     "k41": -9.672751337352931
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "[small fold, point] Moran \u0394 -0.0155 >= -0.0158",
+     "P2": "[small fold, point] core->core \u0394 +0.0045, |\u0394| <= 0.0203",
+     "P3": "[small fold, point] prefix gain gen +0.2090 real +0.0892, |d| <= 0.017",
+     "P4": "[fixture, re-centred] jsd gen 0.0697 real 0.0830 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -1.0911 real -0.4506",
+     "P7": "types gen/real at matched tokens 0.995 (seeds 1.029, 0.960); tol \u00b115%"
+    },
+    "type_ratio": 0.9946043165467626,
+    "small": true,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.19470391104306736,
+     "k41": 0.7848601350612858
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|italian_dante": {
+    "p": 0.75,
+    "fit": {
+     "p": 0.75,
+     "target": 0.02962972446736872,
+     "gen": 0.039781083510488806,
+     "grid": [
+      [
+       0.0,
+       -0.04342319340784938
+      ],
+      [
+       0.1,
+       -0.08108116612585517
+      ],
+      [
+       0.2,
+       -0.05159831905033408
+      ],
+      [
+       0.3,
+       -0.02800692747438776
+      ],
+      [
+       0.4,
+       -0.020678781928578988
+      ],
+      [
+       0.5,
+       -0.01323549010995226
+      ],
+      [
+       0.6,
+       0.01808501462647704
+      ],
+      [
+       0.7,
+       0.03978466314315399
+      ],
+      [
+       0.75,
+       0.039781083510488806
+      ],
+      [
+       0.8,
+       0.0794686659731182
+      ],
+      [
+       0.85,
+       0.10299224118080093
+      ],
+      [
+       0.9,
+       0.1819046188907251
+      ],
+      [
+       0.95,
+       0.10775853756453171
+      ],
+      [
+       1.0,
+       0.18010595009400496
+      ]
+     ]
+    },
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "[small fold, point] Moran \u0394 +0.0375 >= -0.0158",
+     "P2": "[small fold, point] core->core \u0394 +0.0651, |\u0394| <= 0.0203",
+     "P3": "[small fold, point] prefix gain gen +0.0593 real +0.0892, |d| <= 0.017",
+     "P4": "[fixture, re-centred] jsd gen 0.0484 real 0.0830 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.6651 real -0.4506",
+     "P7": "types gen/real at matched tokens 1.054 (seeds 1.025, 1.083); tol \u00b115%"
+    },
+    "type_ratio": 1.0539568345323742,
+    "small": true,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.07102221447807995,
+     "k41": -0.41943866535216007
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "page_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 2,
+    "holds": {
+     "P1": false,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "[small fold, point] Moran \u0394 -0.0175 >= -0.0158",
+     "P2": "[small fold, point] core->core \u0394 +0.0272, |\u0394| <= 0.0203",
+     "P3": "[small fold, point] prefix gain gen +0.1816 real +0.0892, |d| <= 0.017",
+     "P4": "[fixture, re-centred] jsd gen 0.0546 real 0.0830 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.6253 real -0.4506",
+     "P7": "types gen/real at matched tokens 0.809 (seeds 0.906, 0.712); tol \u00b115%"
+    },
+    "type_ratio": 0.8093525179856116,
+    "small": true,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.204277068953777,
+     "k41": 0.8349517985284582
+    },
+    "match": false,
+    "match_fold": false
+   }
+  },
+  "secs": 26.228142738342285
+ },
+ "FIX|F": {
+  "T": "FIX",
+  "Q": "F",
+  "n_test": 12,
+  "n_train": 77,
+  "real_point": {
+   "P1": -0.013245628981992785,
+   "P2": 0.019977967112275508,
+   "P3": 0.04630799860374128,
+   "P4": 0.023429269778055102,
+   "P4_exc": 0.0004748523560926081,
+   "P5": -0.40433451167240975,
+   "F1_prefix": 0.012262845896824463,
+   "F1_core": 0.049671635585889995,
+   "F1_suffix": 0.008972398868873119
+  },
+  "voy69": {
+   "calls": {
+    "C1": true,
+    "C2": false,
+    "C3p": true,
+    "C4p": false,
+    "C5": true
+   },
+   "M1": 0.04630799860374128,
+   "k41": -0.7015663715932787
+  },
+  "models": {
+   "default|latin_cremma": {
+    "p": 0.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0096 [-0.0170,+0.0361] (gen -0.0036, real -0.0132); margin hi-0 = +0.0361",
+     "P2": "core->core excess \u0394 +0.0062 [-0.0430,+0.0500] (gen +0.0261, real +0.0200); margins 0-lo +0.0430, hi-0 +0.0500",
+     "P3": "prefix gain gen -0.0596 vs real +0.0463 [+0.0338,+0.0686]; margins g-lo -0.0934, hi-g +0.1281",
+     "P4": "[fixture, re-centred] jsd gen 0.0211 real 0.0234 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.0173 real -0.4043",
+     "P7": "types gen/real at matched tokens 1.110 (seeds 1.137, 1.083); tol \u00b115%"
+    },
+    "type_ratio": 1.1096153846153847,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.07781655646245791,
+     "k41": 1.0644349654902752
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky75|latin_cremma": {
+    "p": 0.75,
+    "fit": null,
+    "n": 6,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0076 [-0.0374,+0.0233] (gen -0.0209, real -0.0132); margin hi-0 = +0.0233",
+     "P2": "core->core excess \u0394 +0.0236 [-0.0260,+0.0639] (gen +0.0436, real +0.0200); margins 0-lo +0.0260, hi-0 +0.0639",
+     "P3": "prefix gain gen +0.0628 vs real +0.0463 [+0.0338,+0.0686]; margins g-lo +0.0290, hi-g +0.0058",
+     "P4": "[fixture, re-centred] jsd gen 0.0164 real 0.0234 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4784 real -0.4043",
+     "P7": "types gen/real at matched tokens 0.978 (seeds 0.967, 0.988); tol \u00b115%"
+    },
+    "type_ratio": 0.9778846153846155,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.036115869071557866,
+     "k41": -1.744374771086552
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky_fit|latin_cremma": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.0655936096054706,
+     "gen": 0.061116217145739775,
+     "grid": [
+      [
+       0.0,
+       -0.07558252109203874
+      ],
+      [
+       0.1,
+       -0.04484444818032361
+      ],
+      [
+       0.2,
+       -0.03283328429129485
+      ],
+      [
+       0.3,
+       -0.042506812746532556
+      ],
+      [
+       0.4,
+       -0.039390086026679295
+      ],
+      [
+       0.5,
+       0.0005217822429931434
+      ],
+      [
+       0.6,
+       0.01977640396921464
+      ],
+      [
+       0.7,
+       0.061116217145739775
+      ],
+      [
+       0.75,
+       0.016425353847045694
+      ],
+      [
+       0.8,
+       0.07761804314931685
+      ],
+      [
+       0.85,
+       0.13457456739943296
+      ],
+      [
+       0.9,
+       0.16456382612385698
+      ],
+      [
+       0.95,
+       0.12913808132316978
+      ],
+      [
+       1.0,
+       0.1650865277366869
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0156 [-0.0114,+0.0420] (gen 0.0024, real -0.0132); margin hi-0 = +0.0420",
+     "P2": "core->core excess \u0394 +0.0374 [-0.0144,+0.0804] (gen +0.0574, real +0.0200); margins 0-lo +0.0144, hi-0 +0.0804",
+     "P3": "prefix gain gen +0.0211 vs real +0.0463 [+0.0338,+0.0686]; margins g-lo -0.0127, hi-g +0.0475",
+     "P4": "[fixture, re-centred] jsd gen 0.0179 real 0.0234 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.3462 real -0.4043",
+     "P7": "types gen/real at matched tokens 0.990 (seeds 1.004, 0.977); tol \u00b115%"
+    },
+    "type_ratio": 0.9903846153846154,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.019547944397806296,
+     "k41": -3.39682347449933
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0232 [-0.0089,+0.0573] (gen 0.0100, real -0.0132); margin hi-0 = +0.0573",
+     "P2": "core->core excess \u0394 -0.0096 [-0.0509,+0.0382] (gen +0.0104, real +0.0200); margins 0-lo +0.0509, hi-0 +0.0382",
+     "P3": "prefix gain gen +0.2542 vs real +0.0463 [+0.0338,+0.0686]; margins g-lo +0.2204, hi-g -0.1856",
+     "P4": "[fixture, re-centred] jsd gen 0.0229 real 0.0234 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.7847 real -0.4043",
+     "P7": "types gen/real at matched tokens 0.851 (seeds 0.854, 0.848); tol \u00b115%"
+    },
+    "type_ratio": 0.8509615384615384,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.2640772841639058,
+     "k41": 0.9797880721963571
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|latin_cremma": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.0655936096054706,
+     "gen": 0.05387375173972742,
+     "grid": [
+      [
+       0.0,
+       -0.05940658443530645
+      ],
+      [
+       0.1,
+       -0.05026183802609381
+      ],
+      [
+       0.2,
+       -0.06458840468075037
+      ],
+      [
+       0.3,
+       -0.030413225445964948
+      ],
+      [
+       0.4,
+       -0.010745553222065073
+      ],
+      [
+       0.5,
+       -0.01965556544796599
+      ],
+      [
+       0.6,
+       0.008699180351272056
+      ],
+      [
+       0.7,
+       0.05387375173972742
+      ],
+      [
+       0.75,
+       0.02993124012279914
+      ],
+      [
+       0.8,
+       0.03526117419116876
+      ],
+      [
+       0.85,
+       0.09500559162472436
+      ],
+      [
+       0.9,
+       0.11573589476449737
+      ],
+      [
+       0.95,
+       0.15007092054102128
+      ],
+      [
+       1.0,
+       0.17623825560321046
+      ]
+     ]
+    },
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0192 [-0.0190,+0.0534] (gen 0.0059, real -0.0132); margin hi-0 = +0.0534",
+     "P2": "core->core excess \u0394 +0.1070 [+0.0518,+0.1425] (gen +0.1270, real +0.0200); margins 0-lo -0.0518, hi-0 +0.1425",
+     "P3": "prefix gain gen +0.0072 vs real +0.0463 [+0.0338,+0.0686]; margins g-lo -0.0266, hi-g +0.0613",
+     "P4": "[fixture, re-centred] jsd gen 0.0196 real 0.0234 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.3296 real -0.4043",
+     "P7": "types gen/real at matched tokens 0.922 (seeds 0.946, 0.898); tol \u00b115%"
+    },
+    "type_ratio": 0.9221153846153847,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.009762226413621126,
+     "k41": -7.743559844657155
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0531 [+0.0215,+0.0817] (gen 0.0399, real -0.0132); margin hi-0 = +0.0817",
+     "P2": "core->core excess \u0394 +0.0050 [-0.0404,+0.0395] (gen +0.0249, real +0.0200); margins 0-lo +0.0404, hi-0 +0.0395",
+     "P3": "prefix gain gen +0.2097 vs real +0.0463 [+0.0338,+0.0686]; margins g-lo +0.1758, hi-g -0.1411",
+     "P4": "[fixture, re-centred] jsd gen 0.0235 real 0.0234 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.7755 real -0.4043",
+     "P7": "types gen/real at matched tokens 0.718 (seeds 0.542, 0.894); tol \u00b115%"
+    },
+    "type_ratio": 0.7182692307692308,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.18751037315179744,
+     "k41": 0.4398681601964821
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "default|italian_dante": {
+    "p": 0.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0110 [-0.0189,+0.0381] (gen -0.0023, real -0.0132); margin hi-0 = +0.0381",
+     "P2": "core->core excess \u0394 +0.0321 [-0.0202,+0.0797] (gen +0.0521, real +0.0200); margins 0-lo +0.0202, hi-0 +0.0797",
+     "P3": "prefix gain gen -0.0180 vs real +0.0463 [+0.0338,+0.0686]; margins g-lo -0.0518, hi-g +0.0866",
+     "P4": "[fixture, re-centred] jsd gen 0.0221 real 0.0234 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.1137 real -0.4043",
+     "P7": "types gen/real at matched tokens 1.113 (seeds 1.135, 1.092); tol \u00b115%"
+    },
+    "type_ratio": 1.1134615384615385,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.022661151037001535,
+     "k41": 3.0799094234054163
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky75|italian_dante": {
+    "p": 0.75,
+    "fit": null,
+    "n": 6,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0093 [-0.0407,+0.0218] (gen -0.0226, real -0.0132); margin hi-0 = +0.0218",
+     "P2": "core->core excess \u0394 -0.0124 [-0.0584,+0.0287] (gen +0.0076, real +0.0200); margins 0-lo +0.0584, hi-0 +0.0287",
+     "P3": "prefix gain gen +0.0429 vs real +0.0463 [+0.0338,+0.0686]; margins g-lo +0.0091, hi-g +0.0256",
+     "P4": "[fixture, re-centred] jsd gen 0.0196 real 0.0234 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.6033 real -0.4043",
+     "P7": "types gen/real at matched tokens 0.953 (seeds 0.954, 0.952); tol \u00b115%"
+    },
+    "type_ratio": 0.9528846153846153,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.029671913579419666,
+     "k41": -0.8648022504876617
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky_fit|italian_dante": {
+    "p": 0.75,
+    "fit": {
+     "p": 0.75,
+     "target": 0.0655936096054706,
+     "gen": 0.06122499203857267,
+     "grid": [
+      [
+       0.0,
+       -0.043079413565560644
+      ],
+      [
+       0.1,
+       -0.06551651341074725
+      ],
+      [
+       0.2,
+       -0.07089674515048097
+      ],
+      [
+       0.3,
+       -0.06082659622808977
+      ],
+      [
+       0.4,
+       -0.01725556830702507
+      ],
+      [
+       0.5,
+       -0.040500639296023
+      ],
+      [
+       0.6,
+       -0.013160318081285552
+      ],
+      [
+       0.7,
+       0.056889383375256855
+      ],
+      [
+       0.75,
+       0.06122499203857267
+      ],
+      [
+       0.8,
+       0.09516813005270443
+      ],
+      [
+       0.85,
+       0.1367539130255147
+      ],
+      [
+       0.9,
+       0.14490425885598307
+      ],
+      [
+       0.95,
+       0.23104313357787795
+      ],
+      [
+       1.0,
+       0.1843060338476426
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0914 [-0.1238,-0.0644] (gen -0.1046, real -0.0132); margin hi-0 = -0.0644",
+     "P2": "core->core excess \u0394 +0.0296 [-0.0157,+0.0727] (gen +0.0496, real +0.0200); margins 0-lo +0.0157, hi-0 +0.0727",
+     "P3": "prefix gain gen +0.0585 vs real +0.0463 [+0.0338,+0.0686]; margins g-lo +0.0247, hi-g +0.0100",
+     "P4": "[fixture, re-centred] jsd gen 0.0235 real 0.0234 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.6366 real -0.4043",
+     "P7": "types gen/real at matched tokens 0.998 (seeds 0.983, 1.013); tol \u00b115%"
+    },
+    "type_ratio": 0.9980769230769231,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.013220177469401882,
+     "k41": -6.117335785266244
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0090 [-0.0216,+0.0373] (gen -0.0042, real -0.0132); margin hi-0 = +0.0373",
+     "P2": "core->core excess \u0394 +0.0622 [+0.0157,+0.1028] (gen +0.0822, real +0.0200); margins 0-lo -0.0157, hi-0 +0.1028",
+     "P3": "prefix gain gen +0.2052 vs real +0.0463 [+0.0338,+0.0686]; margins g-lo +0.1713, hi-g -0.1366",
+     "P4": "[fixture, re-centred] jsd gen 0.0208 real 0.0234 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -1.0493 real -0.4043",
+     "P7": "types gen/real at matched tokens 0.870 (seeds 0.877, 0.863); tol \u00b115%"
+    },
+    "type_ratio": 0.8701923076923077,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.23460870778625822,
+     "k41": 0.6948644027223532
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|italian_dante": {
+    "p": 0.8,
+    "fit": {
+     "p": 0.8,
+     "target": 0.0655936096054706,
+     "gen": 0.06325363607119122,
+     "grid": [
+      [
+       0.0,
+       -0.03708633462131517
+      ],
+      [
+       0.1,
+       -0.08699381702917938
+      ],
+      [
+       0.2,
+       -0.04730708126515186
+      ],
+      [
+       0.3,
+       -0.07773517054779651
+      ],
+      [
+       0.4,
+       -0.06489363842841424
+      ],
+      [
+       0.5,
+       -0.017285406245673665
+      ],
+      [
+       0.6,
+       0.0014827027225341872
+      ],
+      [
+       0.7,
+       0.0005981828314182942
+      ],
+      [
+       0.75,
+       0.04488151593982517
+      ],
+      [
+       0.8,
+       0.06325363607119122
+      ],
+      [
+       0.85,
+       0.08133726663717362
+      ],
+      [
+       0.9,
+       0.15691668794681388
+      ],
+      [
+       0.95,
+       0.12526881303135098
+      ],
+      [
+       1.0,
+       0.14969075169367846
+      ]
+     ]
+    },
+    "n": 6,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0163 [-0.0498,+0.0168] (gen -0.0295, real -0.0132); margin hi-0 = +0.0168",
+     "P2": "core->core excess \u0394 +0.0063 [-0.0401,+0.0487] (gen +0.0262, real +0.0200); margins 0-lo +0.0401, hi-0 +0.0487",
+     "P3": "prefix gain gen +0.0544 vs real +0.0463 [+0.0338,+0.0686]; margins g-lo +0.0206, hi-g +0.0141",
+     "P4": "[fixture, re-centred] jsd gen 0.0234 real 0.0234 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.7135 real -0.4043",
+     "P7": "types gen/real at matched tokens 0.969 (seeds 0.994, 0.944); tol \u00b115%"
+    },
+    "type_ratio": 0.9692307692307692,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.07276227099914445,
+     "k41": -1.1722555412596987
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "page_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0082 [-0.0254,+0.0352] (gen -0.0050, real -0.0132); margin hi-0 = +0.0352",
+     "P2": "core->core excess \u0394 +0.0373 [-0.0158,+0.0685] (gen +0.0573, real +0.0200); margins 0-lo +0.0158, hi-0 +0.0685",
+     "P3": "prefix gain gen +0.1490 vs real +0.0463 [+0.0338,+0.0686]; margins g-lo +0.1152, hi-g -0.0804",
+     "P4": "[fixture, re-centred] jsd gen 0.0122 real 0.0234 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.9076 real -0.4043",
+     "P7": "types gen/real at matched tokens 0.712 (seeds 0.700, 0.725); tol \u00b115%"
+    },
+    "type_ratio": 0.7124999999999999,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.1343313068759231,
+     "k41": 0.6322764767697596
+    },
+    "match": false,
+    "match_fold": false
+   }
+  },
+  "secs": 43.241572856903076
+ },
+ "FIX|E": {
+  "T": "FIX",
+  "Q": "E",
+  "n_test": 12,
+  "n_train": 77,
+  "real_point": {
+   "P1": -0.012418459306563462,
+   "P2": 0.023805719614037102,
+   "P3": 0.06678628000378974,
+   "P4": 0.010063805587732903,
+   "P4_exc": -0.010803535347677078,
+   "P5": -0.4141578032145379,
+   "F1_prefix": 0.02463144187544533,
+   "F1_core": 0.03316264301353192,
+   "F1_suffix": -0.003471201711342655
+  },
+  "voy69": {
+   "calls": {
+    "C1": true,
+    "C2": false,
+    "C3p": true,
+    "C4p": false,
+    "C5": true
+   },
+   "M1": 0.06678628000378974,
+   "k41": -0.8336518099040717
+  },
+  "models": {
+   "default|latin_cremma": {
+    "p": 0.0,
+    "fit": null,
+    "n": 3,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": false,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0038 [-0.0240,+0.0358] (gen -0.0086, real -0.0124); margin hi-0 = +0.0358",
+     "P2": "core->core excess \u0394 -0.0306 [-0.0693,+0.0113] (gen -0.0068, real +0.0238); margins 0-lo +0.0693, hi-0 +0.0113",
+     "P3": "prefix gain gen -0.0593 vs real +0.0668 [+0.0459,+0.0803]; margins g-lo -0.1051, hi-g +0.1395",
+     "P4": "[fixture, re-centred] jsd gen 0.0172 real 0.0101 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen +0.0135 real -0.4142",
+     "P7": "types gen/real at matched tokens 1.235 (seeds 1.197, 1.274); tol \u00b115%"
+    },
+    "type_ratio": 1.2354771784232366,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.07615670580925701,
+     "k41": 0.8151810000076786
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky75|latin_cremma": {
+    "p": 0.75,
+    "fit": null,
+    "n": 6,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0042 [-0.0183,+0.0272] (gen -0.0082, real -0.0124); margin hi-0 = +0.0272",
+     "P2": "core->core excess \u0394 +0.0250 [-0.0217,+0.0706] (gen +0.0488, real +0.0238); margins 0-lo +0.0217, hi-0 +0.0706",
+     "P3": "prefix gain gen +0.0545 vs real +0.0668 [+0.0459,+0.0803]; margins g-lo +0.0087, hi-g +0.0257",
+     "P4": "[fixture, re-centred] jsd gen 0.0184 real 0.0101 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4781 real -0.4142",
+     "P7": "types gen/real at matched tokens 1.056 (seeds 1.050, 1.062); tol \u00b115%"
+    },
+    "type_ratio": 1.0560165975103735,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.0174545237445392,
+     "k41": -5.121541922935822
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky_fit|latin_cremma": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.044992488463412576,
+     "gen": 0.04736508859257398,
+     "grid": [
+      [
+       0.0,
+       -0.08733147023306534
+      ],
+      [
+       0.1,
+       -0.058139062768024885
+      ],
+      [
+       0.2,
+       -0.031350453712009
+      ],
+      [
+       0.3,
+       -0.04309409037329763
+      ],
+      [
+       0.4,
+       -0.028556840275925865
+      ],
+      [
+       0.5,
+       -0.0034850830509576694
+      ],
+      [
+       0.6,
+       0.003116576841206601
+      ],
+      [
+       0.7,
+       0.04736508859257398
+      ],
+      [
+       0.75,
+       0.03037360867537814
+      ],
+      [
+       0.8,
+       0.09574744809910031
+      ],
+      [
+       0.85,
+       0.11714015856438025
+      ],
+      [
+       0.9,
+       0.17864812826085574
+      ],
+      [
+       0.95,
+       0.12647217067506203
+      ],
+      [
+       1.0,
+       0.16841938030196138
+      ]
+     ]
+    },
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0163 [-0.0112,+0.0472] (gen 0.0039, real -0.0124); margin hi-0 = +0.0472",
+     "P2": "core->core excess \u0394 +0.0762 [+0.0350,+0.1141] (gen +0.1000, real +0.0238); margins 0-lo -0.0350, hi-0 +0.1141",
+     "P3": "prefix gain gen +0.0222 vs real +0.0668 [+0.0459,+0.0803]; margins g-lo -0.0236, hi-g +0.0580",
+     "P4": "[fixture, re-centred] jsd gen 0.0282 real 0.0101 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4429 real -0.4142",
+     "P7": "types gen/real at matched tokens 1.075 (seeds 1.081, 1.068); tol \u00b115%"
+    },
+    "type_ratio": 1.0746887966804979,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.04263366009869913,
+     "k41": -0.9094297433380473
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0486 [+0.0197,+0.0772] (gen 0.0362, real -0.0124); margin hi-0 = +0.0772",
+     "P2": "core->core excess \u0394 -0.0008 [-0.0414,+0.0394] (gen +0.0230, real +0.0238); margins 0-lo +0.0414, hi-0 +0.0394",
+     "P3": "prefix gain gen +0.1906 vs real +0.0668 [+0.0459,+0.0803]; margins g-lo +0.1448, hi-g -0.1103",
+     "P4": "[fixture, re-centred] jsd gen 0.0210 real 0.0101 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.8241 real -0.4142",
+     "P7": "types gen/real at matched tokens 0.973 (seeds 0.954, 0.992); tol \u00b115%"
+    },
+    "type_ratio": 0.9730290456431536,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.19323505975279118,
+     "k41": 0.5941234670894394
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|latin_cremma": {
+    "p": 0.75,
+    "fit": {
+     "p": 0.75,
+     "target": 0.044992488463412576,
+     "gen": 0.048620538525042625,
+     "grid": [
+      [
+       0.0,
+       -0.05926601465046075
+      ],
+      [
+       0.1,
+       -0.04563654022826662
+      ],
+      [
+       0.2,
+       -0.08779108918035251
+      ],
+      [
+       0.3,
+       -0.02809456462675597
+      ],
+      [
+       0.4,
+       -0.02613947273263737
+      ],
+      [
+       0.5,
+       -0.05709603990708414
+      ],
+      [
+       0.6,
+       0.011146872301845905
+      ],
+      [
+       0.7,
+       0.056191985047521244
+      ],
+      [
+       0.75,
+       0.048620538525042625
+      ],
+      [
+       0.8,
+       0.061432447189773455
+      ],
+      [
+       0.85,
+       0.10112505341573974
+      ],
+      [
+       0.9,
+       0.1072996947168646
+      ],
+      [
+       0.95,
+       0.14549728289374428
+      ],
+      [
+       1.0,
+       0.1472772187791883
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0010 [-0.0325,+0.0266] (gen -0.0135, real -0.0124); margin hi-0 = +0.0266",
+     "P2": "core->core excess \u0394 -0.0023 [-0.0391,+0.0458] (gen +0.0215, real +0.0238); margins 0-lo +0.0391, hi-0 +0.0458",
+     "P3": "prefix gain gen +0.0399 vs real +0.0668 [+0.0459,+0.0803]; margins g-lo -0.0059, hi-g +0.0403",
+     "P4": "[fixture, re-centred] jsd gen 0.0213 real 0.0101 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4271 real -0.4142",
+     "P7": "types gen/real at matched tokens 1.111 (seeds 1.091, 1.131); tol \u00b115%"
+    },
+    "type_ratio": 1.1109958506224067,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.06561754301213556,
+     "k41": -0.6358051880335083
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "page_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0091 [-0.0222,+0.0445] (gen -0.0033, real -0.0124); margin hi-0 = +0.0445",
+     "P2": "core->core excess \u0394 -0.0005 [-0.0324,+0.0475] (gen +0.0233, real +0.0238); margins 0-lo +0.0324, hi-0 +0.0475",
+     "P3": "prefix gain gen +0.2158 vs real +0.0668 [+0.0459,+0.0803]; margins g-lo +0.1699, hi-g -0.1355",
+     "P4": "[fixture, re-centred] jsd gen 0.0157 real 0.0101 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.7454 real -0.4142",
+     "P7": "types gen/real at matched tokens 0.880 (seeds 0.911, 0.849); tol \u00b115%"
+    },
+    "type_ratio": 0.8796680497925311,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.1888851122169228,
+     "k41": 1.0772710226819155
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "default|italian_dante": {
+    "p": 0.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0160 [-0.0448,+0.0137] (gen -0.0284, real -0.0124); margin hi-0 = +0.0137",
+     "P2": "core->core excess \u0394 -0.0169 [-0.0519,+0.0317] (gen +0.0069, real +0.0238); margins 0-lo +0.0519, hi-0 +0.0317",
+     "P3": "prefix gain gen -0.0512 vs real +0.0668 [+0.0459,+0.0803]; margins g-lo -0.0970, hi-g +0.1314",
+     "P4": "[fixture, re-centred] jsd gen 0.0222 real 0.0101 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.1037 real -0.4142",
+     "P7": "types gen/real at matched tokens 1.231 (seeds 1.201, 1.261); tol \u00b115%"
+    },
+    "type_ratio": 1.2313278008298756,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.05048554566304492,
+     "k41": 1.2920159015965749
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky75|italian_dante": {
+    "p": 0.75,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0395 [-0.0700,-0.0060] (gen -0.0519, real -0.0124); margin hi-0 = -0.0060",
+     "P2": "core->core excess \u0394 +0.0281 [-0.0115,+0.0776] (gen +0.0519, real +0.0238); margins 0-lo +0.0115, hi-0 +0.0776",
+     "P3": "prefix gain gen +0.0987 vs real +0.0668 [+0.0459,+0.0803]; margins g-lo +0.0529, hi-g -0.0185",
+     "P4": "[fixture, re-centred] jsd gen 0.0114 real 0.0101 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.6149 real -0.4142",
+     "P7": "types gen/real at matched tokens 1.070 (seeds 1.087, 1.052); tol \u00b115%"
+    },
+    "type_ratio": 1.0695020746887967,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.10855646952342082,
+     "k41": -1.037856927248338
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "line_sticky_fit|italian_dante": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.044992488463412576,
+     "gen": 0.038787131790366164,
+     "grid": [
+      [
+       0.0,
+       -0.03063002410863114
+      ],
+      [
+       0.1,
+       -0.061212572156790414
+      ],
+      [
+       0.2,
+       -0.07674532977344412
+      ],
+      [
+       0.3,
+       -0.03893913596737446
+      ],
+      [
+       0.4,
+       -0.015608357105740567
+      ],
+      [
+       0.5,
+       -0.05280685627004185
+      ],
+      [
+       0.6,
+       0.0040697037452004665
+      ],
+      [
+       0.7,
+       0.038787131790366164
+      ],
+      [
+       0.75,
+       0.06657523153783894
+      ],
+      [
+       0.8,
+       0.06770838475397499
+      ],
+      [
+       0.85,
+       0.11797338280968325
+      ],
+      [
+       0.9,
+       0.13394468566746945
+      ],
+      [
+       0.95,
+       0.2249034066165934
+      ],
+      [
+       1.0,
+       0.20169414445835215
+      ]
+     ]
+    },
+    "n": 6,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0206 [-0.0515,+0.0096] (gen -0.0331, real -0.0124); margin hi-0 = +0.0096",
+     "P2": "core->core excess \u0394 -0.0149 [-0.0447,+0.0253] (gen +0.0089, real +0.0238); margins 0-lo +0.0447, hi-0 +0.0253",
+     "P3": "prefix gain gen +0.0496 vs real +0.0668 [+0.0459,+0.0803]; margins g-lo +0.0038, hi-g +0.0306",
+     "P4": "[fixture, re-centred] jsd gen 0.0135 real 0.0101 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5491 real -0.4142",
+     "P7": "types gen/real at matched tokens 1.095 (seeds 1.093, 1.098); tol \u00b115%"
+    },
+    "type_ratio": 1.095435684647303,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.03957752876751682,
+     "k41": -1.7020455802579606
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0045 [-0.0277,+0.0178] (gen -0.0169, real -0.0124); margin hi-0 = +0.0178",
+     "P2": "core->core excess \u0394 +0.0057 [-0.0363,+0.0505] (gen +0.0295, real +0.0238); margins 0-lo +0.0363, hi-0 +0.0505",
+     "P3": "prefix gain gen +0.1812 vs real +0.0668 [+0.0459,+0.0803]; margins g-lo +0.1353, hi-g -0.1009",
+     "P4": "[fixture, re-centred] jsd gen 0.0138 real 0.0101 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -1.1195 real -0.4142",
+     "P7": "types gen/real at matched tokens 0.985 (seeds 0.975, 0.996); tol \u00b115%"
+    },
+    "type_ratio": 0.9854771784232366,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.1589153554220648,
+     "k41": 0.8878380721689482
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|italian_dante": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.044992488463412576,
+     "gen": 0.022857403773105654,
+     "grid": [
+      [
+       0.0,
+       -0.04325997067582286
+      ],
+      [
+       0.1,
+       -0.08225865045266462
+      ],
+      [
+       0.2,
+       -0.04551952755388084
+      ],
+      [
+       0.3,
+       -0.07065492915022516
+      ],
+      [
+       0.4,
+       -0.04404275895543278
+      ],
+      [
+       0.5,
+       -0.025618253146059207
+      ],
+      [
+       0.6,
+       0.013360396739098189
+      ],
+      [
+       0.7,
+       0.022857403773105654
+      ],
+      [
+       0.75,
+       0.07158933469967842
+      ],
+      [
+       0.8,
+       0.0773857145926302
+      ],
+      [
+       0.85,
+       0.09076913868873776
+      ],
+      [
+       0.9,
+       0.1528068251209814
+      ],
+      [
+       0.95,
+       0.1701080367033613
+      ],
+      [
+       1.0,
+       0.14372620393000238
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0371 [+0.0149,+0.0625] (gen 0.0247, real -0.0124); margin hi-0 = +0.0625",
+     "P2": "core->core excess \u0394 +0.0253 [-0.0160,+0.0666] (gen +0.0491, real +0.0238); margins 0-lo +0.0160, hi-0 +0.0666",
+     "P3": "prefix gain gen +0.0449 vs real +0.0668 [+0.0459,+0.0803]; margins g-lo -0.0010, hi-g +0.0354",
+     "P4": "[fixture, re-centred] jsd gen 0.0174 real 0.0101 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5996 real -0.4142",
+     "P7": "types gen/real at matched tokens 1.114 (seeds 1.106, 1.122); tol \u00b115%"
+    },
+    "type_ratio": 1.1141078838174274,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.04858491698757287,
+     "k41": -3.359013435147544
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 +0.0167 [-0.0151,+0.0450] (gen 0.0043, real -0.0124); margin hi-0 = +0.0450",
+     "P2": "core->core excess \u0394 +0.0177 [-0.0202,+0.0616] (gen +0.0415, real +0.0238); margins 0-lo +0.0202, hi-0 +0.0616",
+     "P3": "prefix gain gen +0.1852 vs real +0.0668 [+0.0459,+0.0803]; margins g-lo +0.1394, hi-g -0.1050",
+     "P4": "[fixture, re-centred] jsd gen 0.0182 real 0.0101 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -1.1640 real -0.4142",
+     "P7": "types gen/real at matched tokens 0.900 (seeds 0.936, 0.865); tol \u00b115%"
+    },
+    "type_ratio": 0.9004149377593361,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.20368595229609987,
+     "k41": 0.8262187425441944
+    },
+    "match": false,
+    "match_fold": false
+   }
+  },
+  "secs": 44.23272132873535
+ },
+ "FIX|G": {
+  "T": "FIX",
+  "Q": "G",
+  "n_test": 12,
+  "n_train": 77,
+  "real_point": {
+   "P1": 0.04987090656790205,
+   "P2": 0.03767899204400971,
+   "P3": 0.06831273772116575,
+   "P4": 0.03645913181854823,
+   "P4_exc": 0.014662846068251262,
+   "P5": -0.4225609104857,
+   "F1_prefix": 0.01892105590575377,
+   "F1_core": 0.031215390530131254,
+   "F1_suffix": 0.004123982432816847
+  },
+  "voy69": {
+   "calls": {
+    "C1": true,
+    "C2": false,
+    "C3p": true,
+    "C4p": false,
+    "C5": true
+   },
+   "M1": 0.06831273772116575,
+   "k41": -0.9454020994568509
+  },
+  "models": {
+   "default|latin_cremma": {
+    "p": 0.0,
+    "fit": null,
+    "n": 3,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0731 [-0.1217,-0.0357] (gen -0.0233, real 0.0499); margin hi-0 = -0.0357",
+     "P2": "core->core excess \u0394 -0.0156 [-0.0699,+0.0286] (gen +0.0221, real +0.0377); margins 0-lo +0.0699, hi-0 +0.0286",
+     "P3": "prefix gain gen -0.0691 vs real +0.0683 [+0.0545,+0.0850]; margins g-lo -0.1236, hi-g +0.1541",
+     "P4": "[fixture, re-centred] jsd gen 0.0214 real 0.0365 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.0242 real -0.4226",
+     "P7": "types gen/real at matched tokens 1.150 (seeds 1.150, 1.151); tol \u00b115%"
+    },
+    "type_ratio": 1.1504854368932038,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.05365300968328611,
+     "k41": 1.2318290675343715
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky75|latin_cremma": {
+    "p": 0.75,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0733 [-0.1177,-0.0360] (gen -0.0234, real 0.0499); margin hi-0 = -0.0360",
+     "P2": "core->core excess \u0394 -0.0083 [-0.0655,+0.0305] (gen +0.0293, real +0.0377); margins 0-lo +0.0655, hi-0 +0.0305",
+     "P3": "prefix gain gen +0.0807 vs real +0.0683 [+0.0545,+0.0850]; margins g-lo +0.0262, hi-g +0.0043",
+     "P4": "[fixture, re-centred] jsd gen 0.0195 real 0.0365 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4381 real -0.4226",
+     "P7": "types gen/real at matched tokens 1.027 (seeds 1.029, 1.025); tol \u00b115%"
+    },
+    "type_ratio": 1.0271844660194174,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.08223880768542383,
+     "k41": -1.0200908030194693
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "line_sticky_fit|latin_cremma": {
+    "p": 0.75,
+    "fit": {
+     "p": 0.75,
+     "target": 0.031469678537897554,
+     "gen": 0.024562733545246837,
+     "grid": [
+      [
+       0.0,
+       -0.07868031137420584
+      ],
+      [
+       0.1,
+       -0.039671261283231146
+      ],
+      [
+       0.2,
+       -0.030221336955703323
+      ],
+      [
+       0.3,
+       -0.05525376941665514
+      ],
+      [
+       0.4,
+       -0.04158054967304292
+      ],
+      [
+       0.5,
+       0.001246193133902553
+      ],
+      [
+       0.6,
+       -0.0006048680713669893
+      ],
+      [
+       0.7,
+       0.019926108955464646
+      ],
+      [
+       0.75,
+       0.024562733545246837
+      ],
+      [
+       0.8,
+       0.09984379854493727
+      ],
+      [
+       0.85,
+       0.12705273096586414
+      ],
+      [
+       0.9,
+       0.17525313202232184
+      ],
+      [
+       0.95,
+       0.14461785077635694
+      ],
+      [
+       1.0,
+       0.16337976732311313
+      ]
+     ]
+    },
+    "n": 4,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0715 [-0.1213,-0.0305] (gen -0.0216, real 0.0499); margin hi-0 = -0.0305",
+     "P2": "core->core excess \u0394 -0.0011 [-0.0557,+0.0376] (gen +0.0366, real +0.0377); margins 0-lo +0.0557, hi-0 +0.0376",
+     "P3": "prefix gain gen +0.0241 vs real +0.0683 [+0.0545,+0.0850]; margins g-lo -0.0304, hi-g +0.0610",
+     "P4": "[fixture, re-centred] jsd gen 0.0200 real 0.0365 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4701 real -0.4226",
+     "P7": "types gen/real at matched tokens 1.037 (seeds 1.023, 1.050); tol \u00b115%"
+    },
+    "type_ratio": 1.036893203883495,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.029915664077427826,
+     "k41": -1.352862735446191
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0252 [-0.0708,+0.0139] (gen 0.0247, real 0.0499); margin hi-0 = +0.0139",
+     "P2": "core->core excess \u0394 -0.0212 [-0.0628,+0.0191] (gen +0.0164, real +0.0377); margins 0-lo +0.0628, hi-0 +0.0191",
+     "P3": "prefix gain gen +0.2418 vs real +0.0683 [+0.0545,+0.0850]; margins g-lo +0.1874, hi-g -0.1568",
+     "P4": "[fixture, re-centred] jsd gen 0.0397 real 0.0365 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.8518 real -0.4226",
+     "P7": "types gen/real at matched tokens 0.913 (seeds 0.895, 0.930); tol \u00b115%"
+    },
+    "type_ratio": 0.912621359223301,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.20848980088824687,
+     "k41": 0.6448867896120669
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|latin_cremma": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.031469678537897554,
+     "gen": 0.0329446700404944,
+     "grid": [
+      [
+       0.0,
+       -0.06311194262883066
+      ],
+      [
+       0.1,
+       -0.05338934200881736
+      ],
+      [
+       0.2,
+       -0.06522241725845679
+      ],
+      [
+       0.3,
+       -0.04423048165629726
+      ],
+      [
+       0.4,
+       -0.027112723393384802
+      ],
+      [
+       0.5,
+       -0.001922815308038212
+      ],
+      [
+       0.6,
+       -0.013137006409883927
+      ],
+      [
+       0.7,
+       0.0329446700404944
+      ],
+      [
+       0.75,
+       0.07121665896829099
+      ],
+      [
+       0.8,
+       0.057458612080344036
+      ],
+      [
+       0.85,
+       0.1040127275756715
+      ],
+      [
+       0.9,
+       0.11121219585094945
+      ],
+      [
+       0.95,
+       0.13684693306268317
+      ],
+      [
+       1.0,
+       0.15382074741711732
+      ]
+     ]
+    },
+    "n": 4,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0416 [-0.0846,-0.0047] (gen 0.0083, real 0.0499); margin hi-0 = -0.0047",
+     "P2": "core->core excess \u0394 +0.0230 [-0.0359,+0.0654] (gen +0.0606, real +0.0377); margins 0-lo +0.0359, hi-0 +0.0654",
+     "P3": "prefix gain gen +0.0477 vs real +0.0683 [+0.0545,+0.0850]; margins g-lo -0.0068, hi-g +0.0373",
+     "P4": "[fixture, re-centred] jsd gen 0.0358 real 0.0365 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4138 real -0.4226",
+     "P7": "types gen/real at matched tokens 1.027 (seeds 1.008, 1.047); tol \u00b115%"
+    },
+    "type_ratio": 1.0271844660194174,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.03777633852294233,
+     "k41": -1.419709961850427
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_lock|latin_cremma": {
+    "p": 1.0,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": true,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0419 [-0.0905,+0.0005] (gen 0.0079, real 0.0499); margin hi-0 = +0.0005",
+     "P2": "core->core excess \u0394 -0.0110 [-0.0628,+0.0340] (gen +0.0267, real +0.0377); margins 0-lo +0.0628, hi-0 +0.0340",
+     "P3": "prefix gain gen +0.1764 vs real +0.0683 [+0.0545,+0.0850]; margins g-lo +0.1220, hi-g -0.0914",
+     "P4": "[fixture, re-centred] jsd gen 0.0160 real 0.0365 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.8652 real -0.4226",
+     "P7": "types gen/real at matched tokens 0.892 (seeds 0.833, 0.951); tol \u00b115%"
+    },
+    "type_ratio": 0.8922330097087379,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.16776302091891657,
+     "k41": 1.0390617980106125
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "default|italian_dante": {
+    "p": 0.0,
+    "fit": null,
+    "n": 3,
+    "holds": {
+     "P1": false,
+     "P2": false,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.1207 [-0.1648,-0.0823] (gen -0.0708, real 0.0499); margin hi-0 = -0.0823",
+     "P2": "core->core excess \u0394 -0.1037 [-0.1553,-0.0594] (gen -0.0661, real +0.0377); margins 0-lo +0.1553, hi-0 -0.0594",
+     "P3": "prefix gain gen -0.0509 vs real +0.0683 [+0.0545,+0.0850]; margins g-lo -0.1053, hi-g +0.1359",
+     "P4": "[fixture, re-centred] jsd gen 0.0244 real 0.0365 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.1231 real -0.4226",
+     "P7": "types gen/real at matched tokens 1.125 (seeds 1.107, 1.144); tol \u00b115%"
+    },
+    "type_ratio": 1.1252427184466018,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": -0.03561297917949403,
+     "k41": 3.053942319125172
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "line_sticky75|italian_dante": {
+    "p": 0.75,
+    "fit": null,
+    "n": 5,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0755 [-0.1186,-0.0401] (gen -0.0256, real 0.0499); margin hi-0 = -0.0401",
+     "P2": "core->core excess \u0394 -0.0243 [-0.0784,+0.0147] (gen +0.0134, real +0.0377); margins 0-lo +0.0784, hi-0 +0.0147",
+     "P3": "prefix gain gen +0.0821 vs real +0.0683 [+0.0545,+0.0850]; margins g-lo +0.0276, hi-g +0.0030",
+     "P4": "[fixture, re-centred] jsd gen 0.0151 real 0.0365 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.6069 real -0.4226",
+     "P7": "types gen/real at matched tokens 1.037 (seeds 1.008, 1.066); tol \u00b115%"
+    },
+    "type_ratio": 1.036893203883495,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.09010329237622297,
+     "k41": -0.27053073247356507
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "line_sticky_fit|italian_dante": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.031469678537897554,
+     "gen": 0.032941132073361905,
+     "grid": [
+      [
+       0.0,
+       -0.07172504063399518
+      ],
+      [
+       0.1,
+       -0.06723673577659746
+      ],
+      [
+       0.2,
+       -0.05861886161279772
+      ],
+      [
+       0.3,
+       -0.0473636416530383
+      ],
+      [
+       0.4,
+       -0.03517427134326119
+      ],
+      [
+       0.5,
+       -0.026959303424009956
+      ],
+      [
+       0.6,
+       -0.024680792079327565
+      ],
+      [
+       0.7,
+       0.032941132073361905
+      ],
+      [
+       0.75,
+       0.06331262869139308
+      ],
+      [
+       0.8,
+       0.060988929637526994
+      ],
+      [
+       0.85,
+       0.1252806671462329
+      ],
+      [
+       0.9,
+       0.16437960304095348
+      ],
+      [
+       0.95,
+       0.20580553454958514
+      ],
+      [
+       1.0,
+       0.20840165321030082
+      ]
+     ]
+    },
+    "n": 5,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": true,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0594 [-0.1043,-0.0189] (gen -0.0095, real 0.0499); margin hi-0 = -0.0189",
+     "P2": "core->core excess \u0394 +0.0359 [-0.0160,+0.0763] (gen +0.0736, real +0.0377); margins 0-lo +0.0160, hi-0 +0.0763",
+     "P3": "prefix gain gen +0.0563 vs real +0.0683 [+0.0545,+0.0850]; margins g-lo +0.0019, hi-g +0.0287",
+     "P4": "[fixture, re-centred] jsd gen 0.0173 real 0.0365 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.5204 real -0.4226",
+     "P7": "types gen/real at matched tokens 1.043 (seeds 1.043, 1.043); tol \u00b115%"
+    },
+    "type_ratio": 1.0427184466019417,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.07983522632654041,
+     "k41": -1.2165323031543753
+    },
+    "match": true,
+    "match_fold": true
+   },
+   "line_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 4,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0923 [-0.1374,-0.0523] (gen -0.0425, real 0.0499); margin hi-0 = -0.0523",
+     "P2": "core->core excess \u0394 -0.0088 [-0.0633,+0.0289] (gen +0.0289, real +0.0377); margins 0-lo +0.0633, hi-0 +0.0289",
+     "P3": "prefix gain gen +0.1636 vs real +0.0683 [+0.0545,+0.0850]; margins g-lo +0.1091, hi-g -0.0785",
+     "P4": "[fixture, re-centred] jsd gen 0.0181 real 0.0365 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -1.0765 real -0.4226",
+     "P7": "types gen/real at matched tokens 0.934 (seeds 0.928, 0.940); tol \u00b115%"
+    },
+    "type_ratio": 0.9339805825242719,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": true,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.18446152411406413,
+     "k41": 0.9345777592733906
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_sticky_fit|italian_dante": {
+    "p": 0.7,
+    "fit": {
+     "p": 0.7,
+     "target": 0.031469678537897554,
+     "gen": 0.008558152955963164,
+     "grid": [
+      [
+       0.0,
+       -0.02600856306530552
+      ],
+      [
+       0.1,
+       -0.0565114486506969
+      ],
+      [
+       0.2,
+       -0.04456503372836081
+      ],
+      [
+       0.3,
+       -0.06297454167792335
+      ],
+      [
+       0.4,
+       -0.06935746130193246
+      ],
+      [
+       0.5,
+       -0.03368394179146465
+      ],
+      [
+       0.6,
+       0.0015638014353967498
+      ],
+      [
+       0.7,
+       0.008558152955963164
+      ],
+      [
+       0.75,
+       0.059109368151443374
+      ],
+      [
+       0.8,
+       0.0769354669083816
+      ],
+      [
+       0.85,
+       0.09413469833485426
+      ],
+      [
+       0.9,
+       0.196145538464839
+      ],
+      [
+       0.95,
+       0.11942978279822196
+      ],
+      [
+       1.0,
+       0.1946352537049589
+      ]
+     ]
+    },
+    "n": 4,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": true
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0763 [-0.1220,-0.0365] (gen -0.0264, real 0.0499); margin hi-0 = -0.0365",
+     "P2": "core->core excess \u0394 +0.0341 [-0.0208,+0.0733] (gen +0.0718, real +0.0377); margins 0-lo +0.0208, hi-0 +0.0733",
+     "P3": "prefix gain gen +0.0438 vs real +0.0683 [+0.0545,+0.0850]; margins g-lo -0.0107, hi-g +0.0413",
+     "P4": "[fixture, re-centred] jsd gen 0.0190 real 0.0365 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.4580 real -0.4226",
+     "P7": "types gen/real at matched tokens 1.024 (seeds 1.031, 1.017); tol \u00b115%"
+    },
+    "type_ratio": 1.0242718446601942,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": true
+     },
+     "M1": 0.02886040467834228,
+     "k41": -1.8708785581758078
+    },
+    "match": false,
+    "match_fold": false
+   },
+   "page_lock|italian_dante": {
+    "p": 1.0,
+    "fit": null,
+    "n": 3,
+    "holds": {
+     "P1": false,
+     "P2": true,
+     "P3": false,
+     "P4": true,
+     "P5": true,
+     "P7": false
+    },
+    "text": {
+     "P1": "Moran \u0394 -0.0859 [-0.1329,-0.0469] (gen -0.0360, real 0.0499); margin hi-0 = -0.0469",
+     "P2": "core->core excess \u0394 +0.0215 [-0.0329,+0.0587] (gen +0.0592, real +0.0377); margins 0-lo +0.0329, hi-0 +0.0587",
+     "P3": "prefix gain gen +0.2202 vs real +0.0683 [+0.0545,+0.0850]; margins g-lo +0.1657, hi-g -0.1351",
+     "P4": "[fixture, re-centred] jsd gen 0.0186 real 0.0365 |d| <= 0.0355",
+     "P5": "[fixture, re-centred] CHARWIN sign gen -0.8419 real -0.4226",
+     "P7": "types gen/real at matched tokens 0.661 (seeds 0.505, 0.817); tol \u00b115%"
+    },
+    "type_ratio": 0.6611650485436893,
+    "small": false,
+    "s69": {
+     "calls": {
+      "C1": true,
+      "C2": false,
+      "C3p": false,
+      "C4p": false,
+      "C5": false
+     },
+     "M1": 0.22705069939882605,
+     "k41": 0.7171368958970741
+    },
+    "match": false,
+    "match_fold": false
+   }
+  },
+  "secs": 44.44388723373413
+ }
+}

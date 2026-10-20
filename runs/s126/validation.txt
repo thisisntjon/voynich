@@ -1,0 +1,16 @@
+# s126 calibration validation (pages outside quire M only), written Mon Oct 19 00:36:38 PDT 2026 after viewing with Read:
+# runs/s126/calib/cal_blue_sheet0.png, cal_blue_sheet1.png, cal_green_sheet0.png, cal_green_sheet1.png (crops at the s126 settings, tools/s126_calib_crops.py).
+# format: class | crop | PASS/FAIL | what was seen. PASS = masked (magenta) pixels are paint of the claimed colour (precision); recall noted.
+blue | 157_85v_and_86r_foldout_0 | PASS | Rosette with saturated blue rays; all rays masked, ochre segments and ink left out
+blue | 157_85v_and_86r_foldout_1 | PASS | lower rosette blue petals; masked, a few streaky pale edges missed
+blue | 124_69r_0 | PASS | two dark blue rays masked; adjacent green ray not masked as blue
+blue | 124_69r_1 | PASS | two dark blue rays masked (thin core); pale grey-teal smudges between rays NOT masked: measured hue 70-90 at C 2-12, i.e. parchment-hued, not separable by absolute hue (known recall limit)
+blue | 120_67r_0 | PASS | blue sun rays masked; red rays and ochre crescent left out
+blue | 019_9v_0 | PASS | blue flower masked; green leaves not blue
+green | 124_69r_0 | PASS | green ray masked; blue rays and green-blue ovals left out
+green | 160_88r_0 | PASS | green jar and pale green leaves masked
+green | 160_88r_1 | PASS | blue-green leaves masked, two leaves near edge missed
+green | 004_2r_0 | PASS | green leaves masked; offset ghost below not masked
+green | 019_9v_0 | PASS | green leaves masked; offset ghost not masked
+green | 124_69r_1 | PASS | green ray masked
+# negatives (text-only pages f1r, f66r, f116v): 0 green px and 0 blue px at the s126 settings.

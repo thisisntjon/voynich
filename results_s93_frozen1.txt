@@ -1,0 +1,281 @@
+s93_unified_line_producer_and_f09_f16_triangulation.py — ULP93 Producer & F-09 / F-16 Triangulation (s93 / P-25)
+date: 2026-10-18 09:45:09 (datetime.now)
+device: cpu (CUDA_VISIBLE_DEVICES=''); torch 2.11.0.dev20260115+cu128 (threads=1); numpy 2.4.6; python 3.11.9
+stub_match: True
+sha256 s93_unified_line_producer_and_f09_f16_triangulation.py: dc0355c7dc8b94132d4c933698dea10d6e33224a3d46db9c3a9454121745331c
+sha256 s93_unified_line_producer_and_f09_f16_triangulation.prereg.sha256: b01a9bbd03e45dda36d4bb76656b25e731eee0c370a122c812ab0a1516506cd9
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  local import p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  local import s21_moran_realline.py sha256=e4e96e8f53969a7677f33db74c67125a3afe835b96ac1065cc4400f517dd09eb
+  local import s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  local import s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  local import s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  local import s64_naibbe_taxonomy.py sha256=6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3
+  local import s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  local import s74_cadence_prediction_and_line_automaton.py sha256=4e869b40fc9751174c1e3381e8a2e0a3b2f9450c8ed9d8591c70f293ae8ff114
+  local import s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  local import s77_deconfounded_scribe_and_comma_ablation_loqo.py sha256=56eb6afdafdc57654b56a7019ee6a9410752db9ffb08c3a9112f83dd0798cc5d
+  local import s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  local import s81_sticky_table_loqo.py sha256=418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063
+  local import s87_core_layer_genre.py sha256=d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db
+  local import s93_unified_line_producer_and_f09_f16_triangulation.py sha256=dc0355c7dc8b94132d4c933698dea10d6e33224a3d46db9c3a9454121745331c
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+params: SEED=20261093, SPLIT_SEED=20261017, N_TOT=22500, NB=15, N_MATCH=4731, LP93_PARAMS={'conc': 5000.0, 'alpha': 8.0, 'rho': 0.0, 'lam': 0.42, 'pen': 0.85}
+
+================================================================================================================
+PART 1 (P-25A: Diagnosing & Resolving the s91 C1 vs C2 Gap — Unified Line-Scoped Producer ULP93 on 15-Quire LOQO)
+================================================================================================================
+
+  15 LOQO Folds (quires with >= 4 pages in ZL3b): ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'M', 'N', 'O', 'Q', 'S', 'T']
+  Models evaluated strictly out-of-sample (fitted on 14 training quires, scored on held-out quire Q):
+    - M1_LP91_s81         : s91 baseline (LP91 fitted core stream + s81 line_sticky75 Naibbe affix slots)
+    - M2_LP93_ClassSticky : Marginal-calibrated LP93 cores + F-11/F-14/F-15 core-class line-sticky affix table (0 len params)
+    - M3_LP93_Handshake   : M2 + s74 length-blind graphical handshake K(C_{t-1})->(P_t,S_t) & 6-state line mode (0 len params)
+    - M4_ULP93_Cadence    : M3 + slot-centered within-line cadence filter (M=6 candidates at t>=1, gamma=1.25, rho=0.55)
+
+--- 1A. [ZL3b] Per-Fold LOQO Comparison: M1_LP91_s81 vs M4_ULP93_Cadence (15 Folds) ---
+  Fold  Pg   Tok | M1_C1(abcd) M1_loc M1_C2_leg   M1_tR | M4_C1(abcd) M4_o100 M4_Rw1 M4_Rc1 M4_loc | M4_C2_leg   M4_C2_deal    M4_I  M4_P3 M4_JSD M4_tR
+  A     16  1520 | FAIL(YYYn)  0.866 2/6 +---+-   1.47 | PASS(YYYY) +0.0496  3.346  0.185  0.961 | 3/6 +---++  5/6 +++-++  +0.156 +0.045  0.143  0.93
+  B     14  1041 | FAIL(YYYn)  0.892 1/6 ----+-   1.50 | PASS(YYYY) +0.0739  3.087  0.129  0.978 | 5/6 +++-++  5/6 +++-++  +0.185 +0.105  0.118  1.06
+  C     16  1431 | PASS(YYYY)  0.915 1/6 ----+-   1.64 | PASS(YYYY) +0.0326  3.360  0.235  0.981 | 5/6 +++-++  5/6 +++-++  +0.128 +0.060  0.139  0.97
+  D     16  1272 | FAIL(YYYn)  0.896 2/6 -+--+-   1.53 | PASS(YYYY) +0.0259  3.140  0.159  0.969 | 5/6 ++-+++  5/6 +-++++  +0.129 +0.069  0.178  1.00
+  E     16  1556 | PASS(YYYY)  0.915 1/6 ----+-   1.59 | PASS(YYYY) +0.0497  3.154  0.163  0.972 | 5/6 ++-+++  6/6 ++++++  +0.144 +0.097  0.181  1.07
+  F     16  1708 | PASS(YYYY)  0.936 1/6 ----+-   1.50 | PASS(YYYY) +0.0354  2.958  0.214  0.977 | 4/6 +--+++  6/6 ++++++  +0.160 +0.077  0.153  1.00
+  G     16  1521 | FAIL(YYYn)  0.879 1/6 ----+-   1.25 | PASS(YYYY) +0.0440  3.324  0.202  0.960 | 4/6 +-+-++  5/6 +++-++  +0.186 +0.093  0.134  0.97
+  H      6  1290 | FAIL(YYYn)  0.886 1/6 ----+-   1.33 | PASS(YYYY) +0.0492  2.785  0.264  0.979 | 3/6 +---++  5/6 +++-++  +0.169 +0.074  0.220  0.92
+  I      7   367 | FAIL(YYYn)  0.874 2/6 -+--+-   1.15 | PASS(YYYY) +0.0287  3.534  0.200  0.990 | 4/6 +-+++-  5/6 +++++-  +0.119 +0.058  0.193  0.84
+  M     20  6800 | PASS(YYYY)  0.988 1/6 ----+-   2.24 | PASS(YYYY) +0.0365  2.770  0.223  0.987 | 3/6 ++--+-  4/6 +++-+-  +0.181 +0.087  0.218  1.26
+  N      7  1692 | PASS(YYYY)  0.925 1/6 ----+-   1.35 | PASS(YYYY) +0.0430  3.022  0.232  0.974 | 3/6 +---++  4/6 ++--++  +0.154 +0.154  0.130  0.86
+  O     12  1380 | FAIL(YYYn)  0.892 1/6 ----+-   1.56 | PASS(YYYY) +0.0396  3.049  0.158  0.973 | 3/6 +---++  5/6 +++-++  +0.152 +0.044  0.136  0.98
+  Q     10   911 | PASS(YYYY)  0.991 2/6 -+--+-   1.36 | PASS(YYYY) +0.0505  3.138  0.215  0.982 | 5/6 ++-+++  6/6 ++++++  +0.192 +0.096  0.151  0.96
+  S     10  1396 | PASS(YYYY)  0.929 0/6 ------   1.82 | FAIL(nYYY) +0.0112  2.660  0.194  0.968 | 3/6 +---++  5/6 +++-++  +0.143 +0.043  0.143  1.04
+  T     23 10836 | PASS(YYYY)  0.987 2/6 ----++   1.08 | PASS(YYYY) +0.0562  2.684  0.301  0.993 | 2/6 ---++-  3/6 --+++-  +0.127 +0.065  0.201  0.73
+  [ZL3b 15-fold LOQO completed in 62.0s]
+
+--- 1A. [RF1b] Per-Fold LOQO Comparison: M1_LP91_s81 vs M4_ULP93_Cadence (15 Folds) ---
+  Fold  Pg   Tok | M1_C1(abcd) M1_loc M1_C2_leg   M1_tR | M4_C1(abcd) M4_o100 M4_Rw1 M4_Rc1 M4_loc | M4_C2_leg   M4_C2_deal    M4_I  M4_P3 M4_JSD M4_tR
+  A     16  1469 | PASS(YYYY)  0.912 1/6 ----+-   1.55 | PASS(YYYY) +0.0344  3.225  0.156  0.972 | 3/6 ++---+  3/6 +-+--+  +0.133 +0.053  0.130  0.89
+  B     14   990 | FAIL(YYYn)  0.878 1/6 ----+-   1.44 | PASS(YYYY) +0.0873  3.323  0.115  0.973 | 4/6 +--+++  6/6 ++++++  +0.143 +0.061  0.172  1.07
+  C     16  1394 | FAIL(YYYn)  0.907 1/6 ----+-   1.49 | PASS(YYYY) +0.0570  3.485  0.172  0.974 | 4/6 ++--++  5/6 +++-++  +0.153 +0.074  0.115  0.95
+  D     16  1238 | PASS(YYYY)  0.918 1/6 ----+-   1.25 | PASS(YYYY) +0.0387  3.192  0.123  0.974 | 6/6 ++++++  6/6 ++++++  +0.130 +0.095  0.188  0.95
+  E     16  1509 | FAIL(YYYn)  0.806 0/6 ------   1.53 | PASS(YYYY) +0.0553  3.281  0.138  0.960 | 5/6 ++-+++  6/6 ++++++  +0.162 +0.092  0.154  1.00
+  F     16  1688 | PASS(YYYY)  0.938 1/6 ----+-   1.35 | PASS(YYYY) +0.0641  3.066  0.203  0.974 | 5/6 ++-+++  6/6 ++++++  +0.134 +0.069  0.157  0.98
+  G     16  1478 | FAIL(nYYn)  0.895 1/6 ----+-   1.39 | PASS(YYYY) +0.0441  3.505  0.184  0.970 | 5/6 +++-++  5/6 +++-++  +0.136 +0.085  0.143  0.93
+  H      6  1272 | PASS(YYYY)  0.918 1/6 ----+-   1.33 | PASS(YYYY) +0.0645  3.080  0.143  0.969 | 4/6 +--+++  6/6 ++++++  +0.179 +0.112  0.181  0.87
+  I      7   359 | FAIL(YYYn)  0.884 3/6 ++---+   1.14 | PASS(YYYY) +0.0523  3.717  0.192  0.986 | 4/6 +-+-++  4/6 +-+-++  +0.187 +0.038  0.247  0.87
+  M     20  6834 | PASS(YYYY)  0.990 1/6 ----+-   1.98 | PASS(YYYY) +0.0443  2.894  0.082  0.983 | 3/6 ++--+-  4/6 +++-+-  +0.191 +0.097  0.226  1.24
+  N      7  1703 | FAIL(nYYY)  0.918 1/6 ----+-   1.58 | PASS(YYYY) +0.0332  3.007  0.204  0.966 | 3/6 +--++-  4/6 ++-++-  +0.162 +0.155  0.152  0.80
+  O     12  1396 | PASS(YYYY)  0.919 1/6 ----+-   1.37 | PASS(YYYY) +0.0434  2.841  0.128  0.971 | 5/6 +-++++  6/6 ++++++  +0.163 +0.043  0.178  0.98
+  Q     10   930 | FAIL(YYYn)  0.865 2/6 -+--+-   1.33 | PASS(YYYY) +0.0461  3.273  0.315  0.981 | 5/6 ++-+++  6/6 ++++++  +0.219 +0.065  0.181  0.99
+  S     10  1431 | FAIL(nYYY)  0.941 1/6 ----+-   1.52 | PASS(YYYY) +0.0422  2.759  0.098  0.977 | 4/6 +--+++  6/6 ++++++  +0.167 +0.045  0.202  1.01
+  T     23 10793 | FAIL(nYYY)  0.983 1/6 ----+-   1.57 | PASS(YYYY) +0.0275  2.820  0.359  0.994 | 2/6 ---++-  3/6 --+++-  +0.127 +0.050  0.189  0.72
+  [RF1b 15-fold LOQO completed in 61.6s]
+
+--- 1A. [IT2a] Per-Fold LOQO Comparison: M1_LP91_s81 vs M4_ULP93_Cadence (15 Folds) ---
+  Fold  Pg   Tok | M1_C1(abcd) M1_loc M1_C2_leg   M1_tR | M4_C1(abcd) M4_o100 M4_Rw1 M4_Rc1 M4_loc | M4_C2_leg   M4_C2_deal    M4_I  M4_P3 M4_JSD M4_tR
+  A     16  1495 | PASS(YYYY)  0.928 2/6 +---+-   1.23 | PASS(YYYY) +0.0724  3.462  0.186  0.971 | 4/6 ++--++  4/6 ++--++  +0.104 +0.030  0.120  0.95
+  B     14  1019 | FAIL(YYYn)  0.887 1/6 ----+-   1.67 | PASS(YYYY) +0.0170  3.352  0.138  0.975 | 5/6 +++-++  5/6 +++-++  +0.158 +0.089  0.125  1.08
+  C     16  1401 | FAIL(nYYn)  0.893 1/6 ----+-   1.60 | PASS(YYYY) +0.0737  3.542  0.107  0.977 | 3/6 ++---+  4/6 +++--+  +0.134 +0.048  0.129  0.94
+  D     16  1251 | FAIL(YYYn)  0.891 1/6 ----+-   1.52 | PASS(YYYY) +0.0503  3.289  0.201  0.969 | 6/6 ++++++  6/6 ++++++  +0.166 +0.090  0.169  0.97
+  E     16  1522 | FAIL(YYYn)  0.888 1/6 ----+-   1.35 | PASS(YYYY) +0.0616  3.413  0.179  0.966 | 3/6 +---++  5/6 +++-++  +0.152 +0.092  0.128  1.01
+  F     16  1711 | PASS(YYYY)  0.936 1/6 ----+-   1.54 | PASS(YYYY) +0.0552  3.048  0.193  0.979 | 4/6 ++--++  5/6 +++-++  +0.172 +0.087  0.138  0.99
+  G     16  1497 | FAIL(YYYn)  0.879 1/6 ----+-   1.51 | PASS(YYYY) +0.0430  3.448  0.232  0.965 | 5/6 +-++++  6/6 ++++++  +0.134 +0.083  0.179  0.92
+  H      6  1271 | PASS(YYYY)  0.909 1/6 ----+-   1.29 | PASS(YYYY) +0.0469  3.175  0.169  0.976 | 4/6 +--+++  6/6 ++++++  +0.206 +0.138  0.178  0.86
+  I      7   353 | FAIL(YYYn)  0.797 2/6 ----++   1.06 | PASS(YYYY) +0.0714  3.592  0.179  0.987 | 4/6 +++-+-  3/6 +-+-+-  +0.104 +0.031  0.308  0.83
+  M     20  6773 | PASS(YYYY)  0.991 1/6 ----+-   1.86 | PASS(YYYY) +0.0418  3.030  0.260  0.983 | 4/6 ++-++-  5/6 +++++-  +0.172 +0.082  0.203  1.27
+  N      6  1624 | PASS(YYYY)  0.968 0/6 ------   1.85 | PASS(YYYY) +0.0519  3.021  0.189  0.971 | 2/6 +---+-  3/6 ++--+-  +0.150 +0.150  0.101  0.83
+  O     12  1384 | FAIL(YYYn)  0.904 2/6 +---+-   1.44 | PASS(YYYY) +0.0529  3.182  0.320  0.968 | 3/6 +---++  5/6 +++-++  +0.156 +0.045  0.111  1.00
+  Q     10   932 | FAIL(YYYn)  0.880 1/6 ----+-   1.18 | PASS(YYYY) +0.0377  3.342  0.172  0.980 | 5/6 ++-+++  6/6 ++++++  +0.149 +0.103  0.198  1.00
+  S     10  1369 | PASS(YYYY)  0.908 1/6 ----+-   1.75 | PASS(YYYY) +0.0510  2.855  0.198  0.972 | 4/6 +--+++  5/6 ++-+++  +0.171 -0.010  0.181  1.06
+  T     23 10673 | PASS(YYYY)  0.974 1/6 ----+-   1.60 | PASS(YYYY) +0.0541  2.829  0.380  0.991 | 2/6 ---++-  2/6 ---++-  +0.127 +0.015  0.178  0.79
+  [IT2a 15-fold LOQO completed in 62.5s]
+
+--- 1B. 15-Quire LOQO Summary Across All 4 Models (C1 Core Signature, F-14 Prefix Memory, C2_legacy & C2_dealiased) ---
+  Translit Model                  | C1_Pass a/b/c/d            mean_o100 [95% CI] mean_Rw1 mean_loc | C2_leg>=5 C2_deal>=5 P1/P2k/P3g/P4/P5/P7   | M1_gain   M8-M7   b_pos    tR
+  ZL3b   [Real Manuscript]      |   15/15 15/15/15/15               in s87 band    ~1.20   ~0.977 |         -          - (observed target)     | +0.0730 -0.0543 -0.0658  1.00
+  ZL3b   M1_LP91_s81            |    8/15 15/15/15/8    +0.0420 [+0.0158,+0.0770]   1.5045   0.9181 |      0/15       0/15  1/10/ 0/ 0/14/ 1     | -0.0830 +0.1264 -0.4469  1.49
+  ZL3b   M2_LP93_ClassSticky    |   14/15 14/15/15/15   +0.0417 [+0.0164,+0.0677]   3.0674   0.9763 |      2/15       3/15  3/10/14/ 9/11/10     | +0.0657 +0.1622 -0.1579  1.12
+  ZL3b   M3_LP93_Handshake      |   14/15 14/15/15/15   +0.0417 [+0.0164,+0.0677]   3.0674   0.9763 |      4/15       7/15  8/12/14/ 7/13/11     | +0.0726 +0.1782 -0.1548  0.98
+  ZL3b   M4_ULP93_Cadence       |   14/15 14/15/15/15   +0.0417 [+0.0164,+0.0677]   3.0674   0.9763 |      5/15      12/15 14/13/14/ 6/15/12     | +0.0744 +0.1713 -0.1830  0.97
+  RF1b   [Real Manuscript]      |   15/15 15/15/15/15               in s87 band    ~1.20   ~0.977 |         -          - (observed target)     | +0.0737 -0.0595 -0.0721  1.00
+  RF1b   M1_LP91_s81            |    6/15 11/15/15/9    +0.0465 [+0.0036,+0.0859]   1.4050   0.9115 |      0/15       0/15  1/14/ 0/ 0/13/ 1     | -0.1103 +0.0566 -0.3964  1.46
+  RF1b   M2_LP93_ClassSticky    |   15/15 15/15/15/15   +0.0490 [+0.0295,+0.0793]   3.1645   0.9749 |      1/15       4/15  4/12/15/ 4/ 9/12     | +0.0709 +0.1676 -0.2101  1.10
+  RF1b   M3_LP93_Handshake      |   15/15 15/15/15/15   +0.0490 [+0.0295,+0.0793]   3.1645   0.9749 |      4/15       9/15 10/13/13/ 9/12/12     | +0.0832 +0.1813 -0.1642  0.96
+  RF1b   M4_ULP93_Cadence       |   15/15 15/15/15/15   +0.0490 [+0.0295,+0.0793]   3.1645   0.9749 |      6/15      10/15 14/12/14/10/14/12     | +0.0769 +0.1529 -0.1748  0.95
+  IT2a   [Real Manuscript]      |   15/15 15/15/15/15               in s87 band    ~1.20   ~0.977 |         -          - (observed target)     | +0.0611 -0.0539 -0.0674  1.00
+  IT2a   M1_LP91_s81            |    7/15 14/15/15/7    +0.0422 [+0.0080,+0.0751]   1.5433   0.9089 |      0/15       0/15  2/14/ 0/ 0/14/ 1     | -0.0647 +0.1106 -0.5127  1.50
+  IT2a   M2_LP93_ClassSticky    |   15/15 15/15/15/15   +0.0521 [+0.0243,+0.0732]   3.2386   0.9753 |      0/15       5/15  3/12/13/ 8/11/12     | +0.0739 +0.1350 -0.2075  1.11
+  IT2a   M3_LP93_Handshake      |   15/15 15/15/15/15   +0.0521 [+0.0243,+0.0732]   3.2386   0.9753 |      2/15       6/15  7/13/11/ 6/12/10     | +0.0716 +0.1559 -0.2142  0.99
+  IT2a   M4_ULP93_Cadence       |   15/15 15/15/15/15   +0.0521 [+0.0243,+0.0732]   3.2386   0.9753 |      4/15      10/15 14/13/11/ 7/14/11     | +0.0735 +0.1351 -0.1699  0.97
+
+--- 1C. Pre-Registered Call CALL_1_P25A_ULP93 (Unified Line-Scoped Producer ULP93 on 15-Quire LOQO) ---
+  - M4_ULP93_Cadence C1 (F-40 4-part core signature) folds passing: {'ZL3b': 14, 'RF1b': 15, 'IT2a': 15} (req: >= 12/15 on all 3 transliterations)
+  - M4_ULP93_Cadence C2_dealiased (>= 5/6) folds passing: {'ZL3b': 12, 'RF1b': 10, 'IT2a': 10} (req: >= 10/15 on all 3; C2_legacy >= 5/6: {'ZL3b': 5, 'RF1b': 6, 'IT2a': 4}, req: >= 4/15 vs s91 0/15)
+  - M4_ULP93_Cadence F-14 prefix-memory signature (M1_gain > +0.04, M8-M7 > +0.02, b_pos <= +0.005): True (req: True on 3/3)
+  - CALL_1_P25A_ULP93: TRUE (ULP93 jointly reproduces the F-40 core signature C1, F-14 prefix memory, and C2 word battery out of sample)
+
+================================================================================================================
+PART 2 (P-25B: Upgrading F-09 from SINGLE to TRIANGULATED Across `data`, `split`, `method`, and `physical` Axes)
+================================================================================================================
+
+--- 2A. 8 Core Project Metrics Across 4 Independent Axes (500 Resampling Draws per Cell; Point [95% CI]) ---
+
+  Metric `jsd_first_fg`:
+    ZL3b_sub41 [data+split]     : 0.1741 [0.1413,0.2171]     (width=0.0758, width_ratio_vs_ZL3b_sub41=1.00x)
+    RF1b_sub41 [data+split]     : 0.1796 [0.1476,0.2255]     (width=0.0779, width_ratio_vs_ZL3b_sub41=1.03x)
+    IT2a_sub41 [data+split]     : 0.1733 [0.1424,0.2183]     (width=0.0759, width_ratio_vs_ZL3b_sub41=1.00x)
+    ZL3b_LOQO15 [method:quire]  : 0.1741 [0.1294,0.2787]     (width=0.1493, width_ratio_vs_ZL3b_sub41=1.97x)
+    ZL3b_Bif20 [method:bifolio] : 0.1741 [0.1377,0.2144]     (width=0.0768, width_ratio_vs_ZL3b_sub41=1.01x)
+    RF1b_Bif20 [method:bifolio] : 0.1796 [0.1465,0.2239]     (width=0.0774, width_ratio_vs_ZL3b_sub41=1.02x)
+    IT2a_Bif20 [method:bifolio] : 0.1733 [0.1334,0.2168]     (width=0.0834, width_ratio_vs_ZL3b_sub41=1.10x)
+    ZL3b_ink127 [physical:s45]  : 0.1757 [0.1416,0.2225]     (width=0.0809, width_ratio_vs_ZL3b_sub41=1.07x)
+    -> [split]+[method] CI Intersection [+0.1413, +0.2144] & 4-Axis (`data`,`split`,`method`,`physical`) Survival: TRIANGULATED (8/8 cells survive + CIs overlap)
+
+  Metric `cross_excess_eva`:
+    ZL3b_sub41 [data+split]     : +0.1909 [+0.1672,+0.2187]  (width=0.0515, width_ratio_vs_ZL3b_sub41=1.00x)
+    RF1b_sub41 [data+split]     : +0.1828 [+0.1804,+0.2339]  (width=0.0536, width_ratio_vs_ZL3b_sub41=1.04x)
+    IT2a_sub41 [data+split]     : +0.1754 [+0.1746,+0.2230]  (width=0.0484, width_ratio_vs_ZL3b_sub41=0.94x)
+    ZL3b_LOQO15 [method:quire]  : +0.1909 [+0.1639,+0.2620]  (width=0.0981, width_ratio_vs_ZL3b_sub41=1.90x)
+    ZL3b_Bif20 [method:bifolio] : +0.1909 [+0.1704,+0.2284]  (width=0.0580, width_ratio_vs_ZL3b_sub41=1.13x)
+    RF1b_Bif20 [method:bifolio] : +0.1828 [+0.1641,+0.2212]  (width=0.0571, width_ratio_vs_ZL3b_sub41=1.11x)
+    IT2a_Bif20 [method:bifolio] : +0.1754 [+0.1564,+0.2097]  (width=0.0533, width_ratio_vs_ZL3b_sub41=1.03x)
+    ZL3b_ink127 [physical:s45]  : +0.1945 [+0.1904,+0.2368]  (width=0.0464, width_ratio_vs_ZL3b_sub41=0.90x)
+    -> [split]+[method] CI Intersection [+0.1704, +0.2187] & 4-Axis (`data`,`split`,`method`,`physical`) Survival: TRIANGULATED (8/8 cells survive + CIs overlap)
+
+  Metric `I_within`:
+    ZL3b_sub41 [data+split]     : +0.1572 [+0.1214,+0.1855]  (width=0.0641, width_ratio_vs_ZL3b_sub41=1.00x)
+    RF1b_sub41 [data+split]     : +0.1549 [+0.1259,+0.1827]  (width=0.0568, width_ratio_vs_ZL3b_sub41=0.89x)
+    IT2a_sub41 [data+split]     : +0.1566 [+0.1212,+0.1821]  (width=0.0609, width_ratio_vs_ZL3b_sub41=0.95x)
+    ZL3b_LOQO15 [method:quire]  : +0.1572 [+0.0842,+0.1850]  (width=0.1007, width_ratio_vs_ZL3b_sub41=1.57x)
+    ZL3b_Bif20 [method:bifolio] : +0.1572 [+0.1206,+0.1816]  (width=0.0610, width_ratio_vs_ZL3b_sub41=0.95x)
+    RF1b_Bif20 [method:bifolio] : +0.1549 [+0.1243,+0.1728]  (width=0.0485, width_ratio_vs_ZL3b_sub41=0.76x)
+    IT2a_Bif20 [method:bifolio] : +0.1566 [+0.1206,+0.1778]  (width=0.0572, width_ratio_vs_ZL3b_sub41=0.89x)
+    ZL3b_ink127 [physical:s45]  : +0.1669 [+0.1323,+0.1919]  (width=0.0596, width_ratio_vs_ZL3b_sub41=0.93x)
+    -> [split]+[method] CI Intersection [+0.1214, +0.1816] & 4-Axis (`data`,`split`,`method`,`physical`) Survival: TRIANGULATED (8/8 cells survive + CIs overlap)
+
+  Metric `h2`:
+    ZL3b_sub41 [data+split]     : 2.0743 [2.0137,2.1222]     (width=0.1086, width_ratio_vs_ZL3b_sub41=1.00x)
+    RF1b_sub41 [data+split]     : 2.0848 [2.0279,2.1284]     (width=0.1005, width_ratio_vs_ZL3b_sub41=0.93x)
+    IT2a_sub41 [data+split]     : 2.0766 [2.0170,2.1257]     (width=0.1087, width_ratio_vs_ZL3b_sub41=1.00x)
+    ZL3b_LOQO15 [method:quire]  : 2.0743 [1.9025,2.1621]     (width=0.2596, width_ratio_vs_ZL3b_sub41=2.39x)
+    ZL3b_Bif20 [method:bifolio] : 2.0743 [2.0108,2.1306]     (width=0.1198, width_ratio_vs_ZL3b_sub41=1.10x)
+    RF1b_Bif20 [method:bifolio] : 2.0848 [2.0152,2.1371]     (width=0.1219, width_ratio_vs_ZL3b_sub41=1.12x)
+    IT2a_Bif20 [method:bifolio] : 2.0766 [2.0089,2.1311]     (width=0.1223, width_ratio_vs_ZL3b_sub41=1.13x)
+    ZL3b_ink127 [physical:s45]  : 2.0768 [2.0285,2.1180]     (width=0.0895, width_ratio_vs_ZL3b_sub41=0.82x)
+    -> [split]+[method] CI Intersection [+2.0137, +2.1222] & 4-Axis (`data`,`split`,`method`,`physical`) Survival: TRIANGULATED (8/8 cells survive + CIs overlap)
+
+  Metric `CHARWIN`:
+    ZL3b_sub41 [data+split]     : +0.0893 [+0.0678,+0.1096]  (width=0.0417, width_ratio_vs_ZL3b_sub41=1.00x)
+    RF1b_sub41 [data+split]     : +0.0990 [+0.0772,+0.1205]  (width=0.0434, width_ratio_vs_ZL3b_sub41=1.04x)
+    IT2a_sub41 [data+split]     : +0.0908 [+0.0682,+0.1124]  (width=0.0442, width_ratio_vs_ZL3b_sub41=1.06x)
+    ZL3b_LOQO15 [method:quire]  : +0.0893 [+0.0561,+0.1269]  (width=0.0708, width_ratio_vs_ZL3b_sub41=1.70x)
+    ZL3b_Bif20 [method:bifolio] : +0.0893 [+0.0719,+0.1091]  (width=0.0373, width_ratio_vs_ZL3b_sub41=0.89x)
+    RF1b_Bif20 [method:bifolio] : +0.0990 [+0.0779,+0.1199]  (width=0.0420, width_ratio_vs_ZL3b_sub41=1.01x)
+    IT2a_Bif20 [method:bifolio] : +0.0908 [+0.0721,+0.1099]  (width=0.0378, width_ratio_vs_ZL3b_sub41=0.91x)
+    ZL3b_ink127 [physical:s45]  : +0.1117 [+0.0895,+0.1352]  (width=0.0458, width_ratio_vs_ZL3b_sub41=1.10x)
+    -> [split]+[method] CI Intersection [+0.0719, +0.1091] & 4-Axis (`data`,`split`,`method`,`physical`) Survival: TRIANGULATED (8/8 cells survive + CIs overlap)
+
+  Metric `f4_prefix_gain`:
+    ZL3b_sub41 [data+split]     : +0.0928 [+0.0660,+0.1186]  (width=0.0526, width_ratio_vs_ZL3b_sub41=1.00x)
+    RF1b_sub41 [data+split]     : +0.0965 [+0.0662,+0.1213]  (width=0.0552, width_ratio_vs_ZL3b_sub41=1.05x)
+    IT2a_sub41 [data+split]     : +0.0895 [+0.0610,+0.1137]  (width=0.0527, width_ratio_vs_ZL3b_sub41=1.00x)
+    ZL3b_LOQO15 [method:quire]  : +0.0928 [+0.0374,+0.1280]  (width=0.0906, width_ratio_vs_ZL3b_sub41=1.72x)
+    ZL3b_Bif20 [method:bifolio] : +0.0928 [+0.0691,+0.1123]  (width=0.0432, width_ratio_vs_ZL3b_sub41=0.82x)
+    RF1b_Bif20 [method:bifolio] : +0.0965 [+0.0689,+0.1193]  (width=0.0504, width_ratio_vs_ZL3b_sub41=0.96x)
+    IT2a_Bif20 [method:bifolio] : +0.0895 [+0.0591,+0.1130]  (width=0.0538, width_ratio_vs_ZL3b_sub41=1.02x)
+    ZL3b_ink127 [physical:s45]  : +0.0797 [+0.0477,+0.1056]  (width=0.0579, width_ratio_vs_ZL3b_sub41=1.10x)
+    -> [split]+[method] CI Intersection [+0.0691, +0.1123] & 4-Axis (`data`,`split`,`method`,`physical`) Survival: TRIANGULATED (8/8 cells survive + CIs overlap)
+
+  Metric `MM_K100`:
+    ZL3b_sub41 [data+split]     : +0.2828 [+0.2231,+0.3536]  (width=0.1305, width_ratio_vs_ZL3b_sub41=1.00x)
+    RF1b_sub41 [data+split]     : +0.2813 [+0.2151,+0.3612]  (width=0.1462, width_ratio_vs_ZL3b_sub41=1.12x)
+    IT2a_sub41 [data+split]     : +0.2897 [+0.2263,+0.3643]  (width=0.1380, width_ratio_vs_ZL3b_sub41=1.06x)
+    ZL3b_LOQO15 [method:quire]  : +0.2828 [+0.0802,+0.4377]  (width=0.3575, width_ratio_vs_ZL3b_sub41=2.74x)
+    ZL3b_Bif20 [method:bifolio] : +0.2828 [+0.2374,+0.3460]  (width=0.1086, width_ratio_vs_ZL3b_sub41=0.83x)
+    RF1b_Bif20 [method:bifolio] : +0.2813 [+0.2334,+0.3423]  (width=0.1090, width_ratio_vs_ZL3b_sub41=0.83x)
+    IT2a_Bif20 [method:bifolio] : +0.2897 [+0.2442,+0.3525]  (width=0.1082, width_ratio_vs_ZL3b_sub41=0.83x)
+    ZL3b_ink127 [physical:s45]  : +0.3839 [+0.3257,+0.4507]  (width=0.1250, width_ratio_vs_ZL3b_sub41=0.96x)
+    -> [split]+[method] CI Intersection [+0.2374, +0.3460] & 4-Axis (`data`,`split`,`method`,`physical`) Survival: TRIANGULATED (8/8 cells survive + CIs overlap)
+
+  Metric `R_within_1`:
+    ZL3b_sub41 [data+split]     : 1.2363 [1.1100,1.3646]     (width=0.2546, width_ratio_vs_ZL3b_sub41=1.00x)
+    RF1b_sub41 [data+split]     : 1.2119 [1.1028,1.3402]     (width=0.2375, width_ratio_vs_ZL3b_sub41=0.93x)
+    IT2a_sub41 [data+split]     : 1.2713 [1.1504,1.4061]     (width=0.2558, width_ratio_vs_ZL3b_sub41=1.00x)
+    ZL3b_LOQO15 [method:quire]  : 1.2363 [1.0685,1.4345]     (width=0.3660, width_ratio_vs_ZL3b_sub41=1.44x)
+    ZL3b_Bif20 [method:bifolio] : 1.2363 [1.1474,1.3302]     (width=0.1829, width_ratio_vs_ZL3b_sub41=0.72x)
+    RF1b_Bif20 [method:bifolio] : 1.2119 [1.1314,1.3010]     (width=0.1696, width_ratio_vs_ZL3b_sub41=0.67x)
+    IT2a_Bif20 [method:bifolio] : 1.2713 [1.1828,1.3662]     (width=0.1834, width_ratio_vs_ZL3b_sub41=0.72x)
+    ZL3b_ink127 [physical:s45]  : 1.3110 [1.1848,1.4407]     (width=0.2559, width_ratio_vs_ZL3b_sub41=1.00x)
+    -> [split]+[method] CI Intersection [+1.1474, +1.3302] & 4-Axis (`data`,`split`,`method`,`physical`) Survival: TRIANGULATED (8/8 cells survive + CIs overlap)
+
+--- 2B. Pre-Registered Call CALL_2_P25B_F09_TRIANGULATED (Upgrading F-09 from SINGLE to TRIANGULATED) ---
+  - Metrics triangulated across all 4 axes (`data`, `split`, `method`, `physical`): 8/8 (req: 8/8)
+  - CALL_2_P25B_F09_TRIANGULATED: TRUE (F-09 upgraded from SINGLE to TRIANGULATED across data, split, method, and physical)
+
+================================================================================================================
+PART 3 (P-25C: Discharging X-08 on F-16 — Label-Free Unsupervised Physical & Distributional Scribe Regimes)
+================================================================================================================
+
+--- 3A. Unsupervised $H-Blind k=2 Clustering vs Currier A/B ($L) and Davis Hand 1 vs Hands 2/3 ($H) ---
+  Dataset / Feature Space              Pages | Acc vs Currier A/B [95% CI]  NMI(A/B) |  Acc vs H1 vs H2/3 [95% CI]   NMI(H)
+  ZL3b X_dist (Parisel+Slot, $H-blind)   189 |      0.8095 [0.7619,0.8677]    0.3428 |      0.8095 [0.7513,0.8624]   0.3348
+  ZL3b_scan127 X_joint (Phys+Dist)       121 |      0.9091 [0.8512,0.9506]    0.5444 |      0.9091 [0.8595,0.9587]   0.5429
+
+  Physical Scan Layout Separation Across Unsupervised $H-Blind Regimes (n=121 scan pages):
+    - Cluster 0 (Currier A / Hand 1 regime, n=76): words/line = 7.19, lines/page = 14.12
+    - Cluster 1 (Currier B / Hand 2-3 regime, n=45): words/line = 8.55, lines/page = 34.18
+    - Physical difference z-scores: z(words/line) = +3.86, z(lines/page) = +8.17
+  RF1b X_dist (Parisel+Slot, $H-blind)   189 |      0.8095 [0.7460,0.8677]    0.3337 |      0.8095 [0.7513,0.8624]   0.3268
+  IT2a X_dist (Parisel+Slot, $H-blind)   189 |      0.8148 [0.7618,0.8624]    0.3425 |      0.8148 [0.7619,0.8679]   0.3358
+
+--- 3B. Within Herbal-B (`Section=H, Currier=B`) Label-Free LOBO Cross-Entropy Transfer Test (Discharging X-08 on F-16) ---
+  Translit Herbal-B Partition ($H-blind vs Davis)    Pages(A/B) |     D_sym(top50) [95% CI]  p_bif(top50) |  D_sym(blind) Verdict (D_sym<=0 or p>0.05)
+  ZL3b   P1_PhysQuire (Quires E,F,G vs H,Q, $H-blind)        20/9 | -1.1459 [-1.7940,-0.5840]        0.8421 |       -0.5442        NULL HOLDS (no split)
+  ZL3b   P2_UnsupK2 (k=2 Core/Slot Cluster, $H-blind)       19/14 | +0.0646 [+0.0132,+0.4003]        0.0630 |       +0.2064        NULL HOLDS (no split)
+  ZL3b   P3_DavisRef (Hand 2 vs Hand 3, reference)        20/7 | -2.0416 [-3.0987,-1.1280]        0.4545 |       -0.7383        NULL HOLDS (no split)
+  RF1b   P1_PhysQuire (Quires E,F,G vs H,Q, $H-blind)        20/9 | -1.2111 [-1.8329,-0.6875]        0.9649 |       -0.4576        NULL HOLDS (no split)
+  RF1b   P2_UnsupK2 (k=2 Core/Slot Cluster, $H-blind)       19/14 | -0.0112 [-0.0634,+0.2910]        0.0472 |       +0.1781        NULL HOLDS (no split)
+  RF1b   P3_DavisRef (Hand 2 vs Hand 3, reference)        20/7 | -2.1576 [-3.2158,-1.2914]        0.3636 |       -0.6911        NULL HOLDS (no split)
+  IT2a   P1_PhysQuire (Quires E,F,G vs H,Q, $H-blind)        20/9 | -1.2228 [-1.9294,-0.6504]        0.9649 |       -0.5280        NULL HOLDS (no split)
+  IT2a   P2_UnsupK2 (k=2 Core/Slot Cluster, $H-blind)       17/16 | +0.1647 [+0.0191,+0.4244]        0.0353 |       +0.2370                        SPLIT
+  IT2a   P3_DavisRef (Hand 2 vs Hand 3, reference)        20/7 | -2.1670 [-3.1911,-1.2591]        0.6364 |       -0.9224        NULL HOLDS (no split)
+
+--- 3C. Pre-Registered Call CALL_3_P25C_F16_X08_DISCHARGED (Discharging X-08 on F-16) ---
+  - Unsupervised $H-blind k=2 clustering accuracy vs Currier A/B & Hand 1 vs 2/3: min acc = 0.8095 (req: >= 0.8500), min NMI = 0.3337 (req: >= 0.4000)
+  - Physical scan layout separation between $H-blind regimes: z(words/line) = +3.86, z(lines/page) = +8.17 (req: |z| > 3.0)
+  - Within-Herbal-B $H-blind partitions (Physical Quire E,F,G vs H,Q & Unsupervised k=2) showing D_sym(top50) <= 0 or p_bif > 0.05: False (6/6 cells)
+  - CALL_3_P25C_F16_X08_DISCHARGED: FALSE
+
+================================================================================================================
+SUMMARY OF PRE-REGISTERED CALLS & LEDGER CLOSURE (s93 / P-25)
+================================================================================================================
+  1. CALL_1_P25A_ULP93 (Unified Two-Layer Producer)   : TRUE (M4_ULP93_Cadence C1 = {'ZL3b': 14, 'RF1b': 15, 'IT2a': 15}; C2_dealiased >= 5/6 = {'ZL3b': 12, 'RF1b': 10, 'IT2a': 10}; C2_legacy >= 5/6 = {'ZL3b': 5, 'RF1b': 6, 'IT2a': 4}; F-14 prefix memory = True)
+  2. CALL_2_P25B_F09_TRIANGULATED (F-09 4-Axis Table) : TRUE (8/8 core metrics overlap across `data`, `split`, `method` [LOQO + 52-bifolio], and `physical` [s45 127p])
+  3. CALL_3_P25C_F16_X08_DISCHARGED (X-08 on F-16)    : FALSE ($H-blind k=2 acc >= 81.0%, NMI >= 0.334; physical scan z(wpl)=+3.86, z(lpp)=+8.17; Herbal-B $H-blind null = False)
+  - CI bracket audit (lo <= point <= hi)              : 0 violations across 186 checks
+  - Pre-registration stub match                       : True
+
+OVERALL VERDICT (s93 / P-25): PARTIAL / SEE FAILING CALLS ABOVE
+runtime: 911.37 s; finished 2026-10-18 10:00:20 (datetime.now)

@@ -1,0 +1,31 @@
+{
+ "loc_band": [
+  0.9073818633685861,
+  1.049928019378369
+ ],
+ "order_band": {
+  "100": [
+   0.012321,
+   0.092252
+  ],
+  "200": [
+   -0.003465,
+   0.086474
+  ]
+ },
+ "rw_v": 1.1968822539263946,
+ "rc_v": 0.6266510978571009,
+ "C1": {
+  "ZL3b": 8,
+  "RF1b": 6,
+  "IT2a": 7
+ },
+ "C2": {
+  "ZL3b": 0,
+  "RF1b": 1,
+  "IT2a": 0
+ },
+ "C1_call": false,
+ "C2_call": false,
+ "verdict": "line-scoped producer does not reproduce the core layer; failing components (fold failures, all three transliterations): d_locality 21/45, a_order 5/45"
+}

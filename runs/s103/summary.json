@@ -1,0 +1,89 @@
+{
+ "gate": {
+  "A": [
+   0.06070460172589176,
+   0.0096990300969903,
+   1.0,
+   12.0,
+   130.0
+  ],
+  "B": [
+   0.25542145502523483,
+   9.999000099990002e-05,
+   23.0,
+   43.0,
+   130.0
+  ]
+ },
+ "S": [
+  "agrimonia",
+  "alkekengi",
+  "alleluia",
+  "apios",
+  "aristolochia",
+  "asphodelus",
+  "betonica",
+  "bistorta",
+  "branca",
+  "bryonia",
+  "calendula",
+  "caprifolium",
+  "cauda",
+  "chamaepitys",
+  "consolida",
+  "cyclamen",
+  "cyperus",
+  "dictamnus",
+  "gentiana",
+  "hermodactylus",
+  "hypocistis",
+  "lactuca",
+  "lentiscus",
+  "lingua",
+  "liquiritia",
+  "mandragora",
+  "napellus",
+  "origanum",
+  "paeonia",
+  "palma",
+  "pes",
+  "polypodium",
+  "pulmonaria",
+  "raphanus",
+  "reubarbarum",
+  "rubia",
+  "ruta",
+  "saluia",
+  "saponaria",
+  "saxifraga",
+  "scolopendria",
+  "scrophularia",
+  "serpentaria",
+  "sigillum",
+  "spica",
+  "squilla",
+  "tamariscus",
+  "trifolium",
+  "uitis",
+  "ungula"
+ ],
+ "match": false,
+ "sig": {
+  "A": false,
+  "B": false
+ },
+ "adequate": {
+  "A": true,
+  "B": true
+ },
+ "mode": null,
+ "p_mixed": 0.5191480851914808,
+ "p_repeat": 1.0,
+ "cribs": [
+  [
+   "f25r",
+   "sigillum",
+   "agrimonia"
+  ]
+ ]
+}

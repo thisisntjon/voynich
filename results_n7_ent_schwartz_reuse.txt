@@ -1,0 +1,55 @@
+# PREREG-v2 score: schwartz_reuse  family=G  run=2026-10-17 19:53 (system clock)  seed=20261017
+# source: data\controls_synthetic\schwartz_reuse.meta.json
+# data\controls_synthetic\schwartz_reuse.meta.json; 34857 tokens full
+# v1 bands: scoreboard/score.py via path + g0 band checks; extras: scoreboard/metrics_new.py; sample cap 25000 (non-Voynich)
+# pages=187 lines=3147 tokens=25007 types=4654 sections=['A', 'B', 'C', 'H', 'P', 'S', 'T'] hands=5 langs=['?', 'A', 'B']
+
+    v1 0.9s
+    extra 3.4s
+    info 1.7s
+    lex 3.3s
+    slot 0.2s
+    bake 6.0s
+
+# ranges: n7_gibberish_ranges.json (run 2026-10-17 16:52, extend 0.1); families ['L', 'C', 'G', 'X']; X range present
+=== v1 seven bands (frozen; PREREG v1 thresholds) ===
+band                      value           band   ok    L    C    G    X
+h2                       2.1113      1.98-2.28   ok  OUT  OUT   IN  OUT
+sd_len                   1.9040      1.41-2.11   ok   IN   IN   IN   IN
+jsd_first_fg             0.0224         >=0.10   --  OUT   IN   IN   IN
+p_init_enrich            2.4400           >=x8   --  OUT   NA   IN   IN
+m_final_enrich           3.3800           >=x8   --  OUT   NA   IN  OUT
+cross_excess_eva         0.0001        >=+0.09   --  OUT  OUT   IN   IN
+redup_pct                0.9640       0.4-1.8%   ok  OUT  OUT   IN   IN
+v1 joint: FAIL  missed: jsd_first_fg,p_init_enrich,m_final_enrich,cross_excess_eva
+
+=== v2 extras (metrics_new) ===
+metric                            value      class    L    C    G    X  tightLCG ovl
+x_edge_mi_word                   0.0034   WEIGHTED  OUT  OUT   IN  OUT       .tt  no
+types_25k                     4654.0000  WEIGHTED*   IN  OUT   IN   NA       ttt  no
+x_position_entropy               1.6736   WEIGHTED  OUT   IN   IN   IN       t.t  no
+x_ltr_minus_rtl                  0.0013   WEIGHTED   IN   IN   IN   IN       t.t  no
+x_moran_I                        0.1125   WEIGHTED  OUT  OUT   IN   IN       .tt  no
+lex_beta                         0.7394   WEIGHTED   IN  OUT   IN  OUT       .t.  no
+lex_rate_late_early              0.4356   WEIGHTED   IN  OUT   IN  OUT       tt.  no
+lex_edit1_excess                 0.0509   WEIGHTED   IN  OUT   IN  OUT       ttt  no
+slot_occupancy_pc                0.0626   WEIGHTED   IN   IN   IN  OUT       ttt  no
+slot_table_likeness              0.6679   WEIGHTED   IN  OUT   IN  OUT       .tt  no
+slot_core_crowding               0.7910   WEIGHTED   IN   IN   IN  OUT       ttt  no
+info_mi_adjacent                 0.0203   WEIGHTED  OUT  OUT   IN  OUT       .tt yes
+info_samecol_minus_othercol      0.0096   WEIGHTED   IN  OUT   IN   IN       ttt yes
+bake_char3_minus_unigram        -0.2953   WEIGHTED   IN   IN   IN  OUT       ...  no
+x_hapax_10k                      0.6137     REPORT   IN   IN   IN  OUT       .t. yes
+info_mi_page                     0.0168     REPORT   IN   IN   IN  OUT       ttt yes
+info_bpe_adjacent                0.9645     REPORT   NA   NA   NA  OUT       ... yes
+bake_winner: copy0.05+markov3  bake bits: markov2=11.394 markov3=11.346 slot=11.841 unigram_gt=11.641 copy0.3+markov3=11.602 copy0.1+markov3=11.352 copy0.05+markov3=11.312
+
+=== per-family in/out (weighted metrics = v1 bands + WEIGHTED extras, minus the ranges file's no-weight list) ===
+  L: in= 9 out= 9 na= 0  out: h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_position_entropy, x_moran_I  | tight-outs (7): h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_position_entropy
+  C: in= 6 out=10 na= 2  out: h2, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_table_likeness  | tight-outs (10): h2, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_table_likeness
+  G: in=18 out= 0 na= 0  out: -  | tight-outs (0): -
+  X: in= 7 out=10 na= 1  out: h2, m_final_enrich, x_edge_mi_word, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram  | tight-outs (9): m_final_enrich, x_edge_mi_word, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  weighted metrics (18): h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_position_entropy, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  (kill = >=3 weighted outs on tight ranges; favoured = fewest outs by >=2; both need the A/B rule of PREREG-v2 §6)
+
+provenance sha256[:16]: {'score.py': '3a7b7c3efea13b88', 'metrics_new.py': 'a59c9c17f8abe4cc', 'run_v2.py': '7dfdc9f75de5980a'}

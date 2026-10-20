@@ -1,0 +1,65 @@
+N6: 7k-type glyph-model habit generator (V2_glyph, O-042) vs F1 word order and within-hand section NMI
+prereg_sha256=52fb51e411301487d436df17ca54ae95931fbdb6a07d54546cf595a3743cde94 (stub_match=True); imports n4_habit7k.py rules unchanged
+
+=== ZL3b ===
+MS       residual quires +0.0461 [+0.0357, +0.0564]  pages +0.0400  edge +0.181  h2 2.109  types 7025  hapax 0.680  repeat 0.94%
+MS       NMI h1 0.275 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.333 (quire p 0.133/7bl, bifolio p 0.005/12bl)
+V2_glyph calibration (seed 0, p=0): lam=2.7627 -> types 7038 (target 7025), h2 2.106, hapax 0.683, repeat 0.81%; 96300 synthetic forms
+V2_glyph p=0    s1  residual quires +0.0156 [+0.0038, +0.0263]  pages +0.0062  edge +0.241  h2 2.104  types 7046  hapax 0.690  repeat 0.87%
+V2_glyph p=0    s2  residual quires +0.0176 [+0.0088, +0.0267]  pages +0.0078  edge +0.249  h2 2.096  types 6911  hapax 0.680  repeat 0.73%
+V2_glyph p=0    s3  residual quires +0.0097 [+0.0004, +0.0196]  pages +0.0141  edge +0.248  h2 2.096  types 6899  hapax 0.681  repeat 0.86%
+V2_glyph p=0.04 s1  residual quires +0.0292 [+0.0179, +0.0393]  pages +0.0284  edge +0.249  h2 2.142  types 7414  hapax 0.688  repeat 0.73%
+      NMI h1 0.105 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.138 (quire p 0.019/7bl, bifolio p 0.000/12bl)
+V2_glyph p=0.04 s2  residual quires +0.0267 [+0.0161, +0.0375]  pages +0.0336  edge +0.254  h2 2.136  types 7204  hapax 0.668  repeat 0.69%
+      NMI h1 0.059 (quire p 0.018/11bl, bifolio p 0.004/27bl)  NMI h2 0.080 (quire p 0.171/7bl, bifolio p 0.010/12bl)
+V2_glyph p=0.04 s3  residual quires +0.0253 [+0.0160, +0.0343]  pages +0.0214  edge +0.254  h2 2.138  types 7418  hapax 0.675  repeat 0.76%
+      NMI h1 0.098 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.136 (quire p 0.019/7bl, bifolio p 0.000/12bl)
+  F1 V2_glyph: p=0 mean +0.0143 (power OK, h2_p0=2.098 gap=0.011); p=0.04 mean residual +0.0271 edge +0.252 h2 2.139 types 7345 hapax 0.677 repeat 0.72%  resid=FAIL  edge=ok  h2=ok  repeat=ok  types=ok  -> NO MATCH
+  NMI-h1 V2_glyph: seed-mean 0.087 (>= 0.206?) quire null passed 3/3, bifolio null passed 3/3, types&h2 ok True -> no match
+  NMI-h1: MS 0.275 quire p 0.018 bifolio p 0.000 -> HOLDS
+  NMI-h2 V2_glyph: seed-mean 0.118 (>= 0.250?) quire null passed 2/3, bifolio null passed 3/3, types&h2 ok True -> no match
+  NMI-h2: MS 0.333 quire p 0.133 bifolio p 0.005 -> NOT EVIDENCE
+
+=== RF1b ===
+MS       residual quires +0.0333 [+0.0213, +0.0446]  pages +0.0483  edge +0.173  h2 2.120  types 7348  hapax 0.691  repeat 0.92%
+MS       NMI h1 0.270 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.286 (quire p 0.219/7bl, bifolio p 0.010/12bl)
+V2_glyph calibration (seed 0, p=0): lam=2.9941 -> types 7052 (target 7348), h2 2.102, hapax 0.693, repeat 0.82%; 103651 synthetic forms
+V2_glyph p=0    s1  residual quires -0.0022 [-0.0133, +0.0078]  pages +0.0063  edge +0.243  h2 2.088  types 6998  hapax 0.683  repeat 0.88%
+V2_glyph p=0    s2  residual quires +0.0086 [-0.0014, +0.0169]  pages +0.0080  edge +0.249  h2 2.115  types 7227  hapax 0.691  repeat 0.76%
+V2_glyph p=0    s3  residual quires +0.0066 [-0.0031, +0.0172]  pages +0.0109  edge +0.243  h2 2.095  types 7030  hapax 0.685  repeat 0.75%
+V2_glyph p=0.04 s1  residual quires +0.0356 [+0.0258, +0.0456]  pages +0.0362  edge +0.248  h2 2.156  types 7679  hapax 0.690  repeat 0.76%
+      NMI h1 0.056 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.084 (quire p 0.333/7bl, bifolio p 0.020/12bl)
+V2_glyph p=0.04 s2  residual quires +0.0316 [+0.0216, +0.0423]  pages +0.0236  edge +0.245  h2 2.146  types 7597  hapax 0.693  repeat 0.76%
+      NMI h1 0.088 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.071 (quire p 0.057/7bl, bifolio p 0.003/12bl)
+V2_glyph p=0.04 s3  residual quires +0.0179 [+0.0071, +0.0275]  pages +0.0289  edge +0.244  h2 2.143  types 7599  hapax 0.684  repeat 0.77%
+      NMI h1 0.141 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.100 (quire p 0.314/7bl, bifolio p 0.044/12bl)
+  F1 V2_glyph: p=0 mean +0.0043 (power OK, h2_p0=2.099 gap=0.021); p=0.04 mean residual +0.0284 edge +0.246 h2 2.148 types 7625 hapax 0.689 repeat 0.76%  resid=ok  edge=ok  h2=ok  repeat=ok  types=ok  -> MATCH
+  NMI-h1 V2_glyph: seed-mean 0.095 (>= 0.203?) quire null passed 3/3, bifolio null passed 3/3, types&h2 ok True -> no match
+  NMI-h1: MS 0.270 quire p 0.018 bifolio p 0.000 -> HOLDS
+  NMI-h2 V2_glyph: seed-mean 0.085 (>= 0.214?) quire null passed 0/3, bifolio null passed 3/3, types&h2 ok True -> no match
+  NMI-h2: MS 0.286 quire p 0.219 bifolio p 0.010 -> NOT EVIDENCE
+
+=== IT2a ===
+MS       residual quires +0.0410 [+0.0317, +0.0498]  pages +0.0396  edge +0.166  h2 2.112  types 7069  hapax 0.678  repeat 0.96%
+MS       NMI h1 0.287 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.284 (quire p 0.152/7bl, bifolio p 0.013/12bl)
+V2_glyph calibration (seed 0, p=0): lam=2.9883 -> types 7086 (target 7069), h2 2.107, hapax 0.695, repeat 0.86%; 102831 synthetic forms
+V2_glyph p=0    s1  residual quires +0.0112 [+0.0025, +0.0209]  pages +0.0114  edge +0.236  h2 2.115  types 7186  hapax 0.695  repeat 0.79%
+V2_glyph p=0    s2  residual quires +0.0095 [-0.0008, +0.0192]  pages +0.0100  edge +0.228  h2 2.105  types 7043  hapax 0.690  repeat 0.82%
+V2_glyph p=0    s3  residual quires +0.0133 [+0.0029, +0.0225]  pages +0.0027  edge +0.241  h2 2.121  types 7230  hapax 0.691  repeat 0.73%
+V2_glyph p=0.04 s1  residual quires +0.0232 [+0.0136, +0.0320]  pages +0.0289  edge +0.243  h2 2.148  types 7588  hapax 0.686  repeat 0.73%
+      NMI h1 0.121 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.143 (quire p 0.019/7bl, bifolio p 0.000/12bl)
+V2_glyph p=0.04 s2  residual quires +0.0326 [+0.0236, +0.0422]  pages +0.0278  edge +0.234  h2 2.147  types 7574  hapax 0.691  repeat 0.73%
+      NMI h1 0.111 (quire p 0.018/11bl, bifolio p 0.002/27bl)  NMI h2 0.048 (quire p 0.114/7bl, bifolio p 0.009/12bl)
+V2_glyph p=0.04 s3  residual quires +0.0249 [+0.0159, +0.0355]  pages +0.0319  edge +0.241  h2 2.149  types 7477  hapax 0.681  repeat 0.66%
+      NMI h1 0.182 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.117 (quire p 0.152/7bl, bifolio p 0.002/12bl)
+  F1 V2_glyph: p=0 mean +0.0113 (power OK, h2_p0=2.114 gap=0.002); p=0.04 mean residual +0.0269 edge +0.239 h2 2.148 types 7546 hapax 0.686 repeat 0.70%  resid=FAIL  edge=ok  h2=ok  repeat=ok  types=ok  -> NO MATCH
+  NMI-h1 V2_glyph: seed-mean 0.138 (>= 0.215?) quire null passed 3/3, bifolio null passed 3/3, types&h2 ok True -> no match
+  NMI-h1: MS 0.287 quire p 0.018 bifolio p 0.000 -> HOLDS
+  NMI-h2 V2_glyph: seed-mean 0.103 (>= 0.213?) quire null passed 1/3, bifolio null passed 3/3, types&h2 ok True -> no match
+  NMI-h2: MS 0.284 quire p 0.152 bifolio p 0.013 -> NOT EVIDENCE
+
+VERDICTS
+  F1 V2_glyph: NO MATCH   ZL3b=NO MATCH  RF1b=MATCH  IT2a=NO MATCH
+  NMI-h1: HOLDS   ZL3b=HOLDS  RF1b=HOLDS  IT2a=HOLDS
+  NMI-h2: NOT EVIDENCE   ZL3b=NOT EVIDENCE  RF1b=NOT EVIDENCE  IT2a=NOT EVIDENCE
+VERDICT: F1 REOPENED for manuscript-sized producers; hand-1 section NMI HOLDS; hand-2 section NMI NOT EVIDENCE

@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:02:52.6873626Z",
+ "response": "{\n  \"PT\": \"OTHER\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"0\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"MULTI\",\n  \"J_shape\": \"NONE\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"0\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"FACE\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"1-9\",\n  \"C_rings\": \"2\",\n  \"C_diagrams\": \"4+\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"0\",\n  \"B_figures\": \"1-5\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Page with drawings of animals and plants, no containers or circular diagrams.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2664412300,
+ "load_duration": 199244000,
+ "prompt_eval_count": 3268,
+ "prompt_eval_duration": 740012000,
+ "eval_count": 206,
+ "eval_duration": 1581611000,
+ "stem": "143_79v"
+}

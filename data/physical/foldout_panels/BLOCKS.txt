@@ -1,0 +1,14 @@
+Panels cut on 2026-10-18 are the 11 rows in MANIFEST.tsv.
+Each cut uses an x-fraction already stored in tools/plant_regions.py PANELS, and only where that canvas has two or more panels.
+That module says the fractions were set by eye on thumbnails and are unverified. No new fraction was chosen.
+
+Not cut, because no x-fraction is stored:
+- 120_67r.jpg, 121_67v.jpg (ZL3b splits f67r1/r2 and f67v1/v2)
+- 122_68r.jpg, 123_68v.jpg (f68r1/r2/r3 and f68v1/v2/v3)
+- 125_69v_and_70r.jpg, 126_70v_part.jpg, 127_70v_part.jpg
+- 129_71v_and_72r.jpg, 130_72v_part.jpg, 131_72v_part.jpg
+- 154_85r_part_p8586.jpg, 155_85r_part_86v_part_p8586.jpg, 156_86v_part_p8586.jpg, 157_85v_and_86r_foldout.jpg
+- 164_90r.jpg is one panel in PANELS (f90r1, 0.04-0.97) and does not separate f90r2. f90r2 was cut from 163_89v_part_and_90r.jpg.
+- 169_94v_and_95r.jpg, 170_95v_part.jpg, 171_95v.jpg (f95v1/v2)
+
+Single-panel JPEGs already on disk were not copied.

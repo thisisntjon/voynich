@@ -1,0 +1,704 @@
+{
+"homophones": {
+"~": [
+"F",
+"S",
+"t",
+"v"
+],
+"i": [
+"E",
+"h",
+"C",
+"T"
+],
+"e": [
+"K",
+"q",
+"N",
+"p"
+],
+"t": [
+"u",
+"g",
+"e"
+],
+"a": [
+"b",
+"m",
+"G"
+],
+"u": [
+"f",
+"I",
+"O"
+],
+"s": [
+"U",
+"L"
+],
+"c": [
+"j",
+"D"
+],
+"o": [
+"k",
+"R"
+],
+"n": [
+"s",
+"A"
+],
+"r": [
+"d"
+],
+"m": [
+"i"
+],
+"d": [
+"c"
+],
+"p": [
+"o"
+],
+"l": [
+"H"
+],
+"q": [
+"n"
+],
+"b": [
+"l"
+],
+"g": [
+"a"
+],
+"f": [
+"P"
+],
+"&": [
+"x"
+],
+"h": [
+"Q"
+],
+"x": [
+"z"
+],
+"y": [
+"M"
+],
+"z": [
+"J"
+],
+"k": [
+"r"
+]
+},
+"nulls": [
+"y",
+"B"
+],
+"code": {
+"q~": [
+"br"
+],
+"e~": [
+"Lq"
+],
+"s~": [
+"bj"
+],
+"i~": [
+"zl"
+],
+"n~": [
+"Ce"
+],
+"p~": [
+"RG"
+],
+"u~": [
+"Dd"
+],
+"cu~": [
+"Dt"
+],
+"qr": [
+"qx"
+],
+"sem~": [
+"Fg"
+],
+"no~": [
+"ad"
+],
+"ei~": [
+"RQ"
+],
+"su~t": [
+"MJ"
+],
+"uino": [
+"er"
+],
+"q~~": [
+"pa"
+],
+"coit~": [
+"EF"
+],
+"an~": [
+"MQ"
+],
+"c~": [
+"jg"
+],
+"qm~": [
+"IM"
+],
+"d~": [
+"JO"
+],
+"&~": [
+"cq"
+],
+"g~": [
+"kb"
+],
+"se": [
+"GE"
+],
+"au~t": [
+"Jp"
+],
+"qd": [
+"Mo"
+],
+"au~": [
+"cu"
+],
+"t~": [
+"SF"
+],
+"fu~it": [
+"SG"
+],
+"ii": [
+"sJ"
+],
+"sic~": [
+"fK"
+],
+"eg~": [
+"se"
+],
+"coitu": [
+"pp"
+],
+"sumpta": [
+"oi"
+],
+"uel": [
+"DJ"
+],
+"sicut": [
+"Hd"
+],
+"melle": [
+"dK"
+],
+"m~": [
+"oj"
+],
+"mag~": [
+"hc"
+],
+"a~": [
+"Ox"
+],
+"qd~": [
+"Am"
+],
+"sig~": [
+"ip"
+],
+"saepe": [
+"Rh"
+],
+"aq~": [
+"IO"
+],
+"curat": [
+"DD"
+],
+"iii": [
+"MD"
+],
+"ur~": [
+"Pk"
+],
+"ca~": [
+"HE"
+],
+"coitu~": [
+"nn"
+],
+"cui": [
+"lh"
+],
+"dicitur": [
+"Je"
+],
+"e~e~": [
+"NRC"
+],
+"fiat": [
+"nmh"
+],
+"illius": [
+"trg"
+],
+"io~": [
+"TQT"
+],
+"prodest": [
+"UCp"
+],
+"ss~": [
+"jGe"
+],
+"iuuat": [
+"xgu"
+],
+"plus": [
+"esr"
+],
+"p~p~": [
+"ubN"
+],
+"corp~": [
+"LSi"
+],
+"me": [
+"gLj"
+],
+"res": [
+"sFn"
+],
+"dic~": [
+"CEH"
+],
+"dix~": [
+"Imz"
+],
+"eor~": [
+"dpx"
+],
+"illi": [
+"AbC"
+],
+"o~": [
+"jRm"
+],
+"tm~": [
+"juC"
+],
+"hanc": [
+"Too"
+],
+"hi~": [
+"sAu"
+],
+"iiii": [
+"QSn"
+],
+"q~da~": [
+"ExK"
+],
+"succus": [
+"NIs"
+],
+"eg~tudi~s": [
+"hgA"
+],
+"mlr~es": [
+"fKE"
+],
+"na~": [
+"LHF"
+],
+"uiri": [
+"cCu"
+],
+"uis": [
+"bhd"
+],
+"dicunt": [
+"KIH"
+],
+"multu~": [
+"KIF"
+],
+"oleo": [
+"FuC"
+],
+"sibi": [
+"mxz"
+],
+"sup~": [
+"NCl"
+],
+"un~": [
+"rxp"
+],
+"his": [
+"IeI"
+],
+"hor~": [
+"HJc"
+],
+"potata": [
+"FCS"
+],
+"aceto": [
+"qeM"
+],
+"alii": [
+"bvA"
+],
+"dd~": [
+"dtL"
+],
+"dolorem": [
+"GvK"
+],
+"foliis": [
+"CAn"
+],
+"herba": [
+"USk"
+],
+"neq~": [
+"tzb"
+],
+"purgat": [
+"RvF"
+],
+"sicca": [
+"flR"
+],
+"tn~": [
+"nJx"
+],
+"trita": [
+"Dkm"
+],
+"u~o": [
+"Duu"
+],
+"cito": [
+"ibm"
+],
+"cor~": [
+"kvE"
+],
+"die": [
+"FoH"
+],
+"eg~tudo": [
+"LcD"
+],
+"ip~e": [
+"NdQ"
+],
+"q~s": [
+"FdT"
+],
+"te": [
+"icN"
+],
+"calida": [
+"QFt"
+],
+"c~u~is": [
+"uxc"
+],
+"decoctio": [
+"dMj"
+],
+"duo": [
+"gqe"
+],
+"ei": [
+"KNJ"
+],
+"ht~": [
+"tKk"
+],
+"illam": [
+"hQF"
+],
+"ip~a": [
+"kGj"
+],
+"i~o": [
+"zPv"
+],
+"ma": [
+"FfG"
+],
+"menstrua": [
+"veO"
+],
+"me~": [
+"MCt"
+],
+"mod~": [
+"JHf"
+],
+"solet": [
+"Csv"
+],
+"sputu~": [
+"nUv"
+],
+"sp~ma": [
+"SCn"
+],
+"ualde": [
+"Eks"
+],
+"ui": [
+"fsI"
+],
+"aliis": [
+"OHU"
+],
+"ca": [
+"fvI"
+],
+"dicit": [
+"AAA"
+],
+"hora": [
+"mKs"
+],
+"ip~o": [
+"dkR"
+],
+"mat~cis": [
+"EjR"
+],
+"nod~": [
+"DLj"
+],
+"organu~": [
+"UuC"
+],
+"re": [
+"qfv"
+],
+"repellit": [
+"sEU"
+],
+"semen": [
+"obe"
+],
+"siue": [
+"puk"
+],
+"st~": [
+"hph"
+],
+"superaddita": [
+"viA"
+],
+"aliq~": [
+"kzu"
+],
+"an": [
+"uJM"
+],
+"appetit~": [
+"nGn"
+],
+"aqua": [
+"fhF"
+],
+"bene": [
+"hjM"
+],
+"calore~": [
+"jva"
+],
+"cor": [
+"nQT"
+],
+"c~c~": [
+"NqU"
+],
+"hac": [
+"eRq"
+],
+"hausta": [
+"vrK"
+],
+"ha~c": [
+"prd"
+],
+"huic": [
+"TPH"
+],
+"ip~i~": [
+"qsk"
+],
+"iste": [
+"AJT"
+],
+"it~": [
+"DGv"
+],
+"lib": [
+"dpQ"
+],
+"modo": [
+"ccu"
+],
+"more": [
+"QOl"
+],
+"mulsa": [
+"KnQ"
+],
+"que": [
+"tjr"
+],
+"q~b~": [
+"PJH"
+],
+"radix": [
+"nUe"
+],
+"semi~s": [
+"fdE"
+],
+"sua": [
+"jrk"
+],
+"t~a": [
+"lQr"
+],
+"unu~": [
+"SdJ"
+],
+"uo~": [
+"ove"
+],
+"alia": [
+"zsg"
+],
+"audit~": [
+"sEG"
+],
+"calor": [
+"CIp"
+],
+"capitis": [
+"rTK"
+],
+"decocta": [
+"evM"
+],
+"ga~": [
+"xhd"
+],
+"hocque": [
+"HDn"
+],
+"ia~": [
+"UCE"
+],
+"int~": [
+"Qkp"
+],
+"mala": [
+"IRO"
+],
+"malu~": [
+"mhl"
+],
+"multa": [
+"mMA"
+],
+"nimis": [
+"bhH"
+],
+"nos": [
+"dnQ"
+],
+"os": [
+"oSp"
+],
+"p~ea": [
+"Qhz"
+],
+"qr~": [
+"jtU"
+],
+"recipiens": [
+"hft"
+],
+"sale": [
+"NpT"
+],
+"sine": [
+"ldM"
+],
+"succo": [
+"kph"
+],
+"suo": [
+"FUo"
+],
+"su~": [
+"gbE"
+],
+"tali": [
+"zlh"
+],
+"tumorem": [
+"Ohv"
+],
+"accidu~t": [
+"Ctq"
+],
+"ait": [
+"IfE"
+],
+"ali": [
+"oAv"
+],
+"appare~t": [
+"kqK"
+],
+"bibatur": [
+"Nfo"
+],
+"calore": [
+"gzG"
+],
+"cataplasma": [
+"xkx"
+],
+"coierit": [
+"qAs"
+],
+"coire": [
+"Oth"
+],
+"cunctis": [
+"HtP"
+]
+}
+}

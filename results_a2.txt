@@ -1,0 +1,35 @@
+VMS              first glyph  JSD(first,mid)=0.1759 null=0.0019±0.0005   JSD(last,mid)=0.0363 null=0.0020±0.0005
+VMS              last glyph   JSD(first,mid)=0.0143 null=0.0013±0.0003   JSD(last,mid)=0.0820 null=0.0012±0.0004
+VMS              length       JSD(first,mid)=0.0217 null=0.0007±0.0003   JSD(last,mid)=0.0124 null=0.0008±0.0003
+italian_dante    first glyph  JSD(first,mid)=0.0337 null=0.0009±0.0003   JSD(last,mid)=0.0686 null=0.0010±0.0002
+italian_dante    last glyph   JSD(first,mid)=0.0185 null=0.0010±0.0003   JSD(last,mid)=0.1673 null=0.0009±0.0003
+italian_dante    length       JSD(first,mid)=0.0062 null=0.0013±0.0005   JSD(last,mid)=0.3050 null=0.0013±0.0004
+german_faust     first glyph  JSD(first,mid)=0.0343 null=0.0014±0.0004   JSD(last,mid)=0.0879 null=0.0013±0.0003
+german_faust     last glyph   JSD(first,mid)=0.0271 null=0.0014±0.0005   JSD(last,mid)=0.0839 null=0.0014±0.0003
+german_faust     length       JSD(first,mid)=0.0448 null=0.0014±0.0005   JSD(last,mid)=0.1140 null=0.0016±0.0006
+
+Line-initial word first glyph: ratio vs mid-line (>1 = over-represented)
+  d: 0.154 vs 0.074  x2.10
+  s: 0.148 vs 0.124  x1.20
+  y: 0.146 vs 0.036  x4.00
+  o: 0.135 vs 0.212  x0.64
+  q: 0.131 vs 0.166  x0.79
+  t: 0.097 vs 0.019  x5.12
+  p: 0.093 vs 0.005  x17.89
+  c: 0.038 vs 0.211  x0.18
+  k: 0.026 vs 0.037  x0.70
+  l: 0.017 vs 0.041  x0.41
+Line-final word last glyph:
+  y: 0.391 vs 0.423  x0.92
+  m: 0.155 vs 0.010  x16.31
+  n: 0.153 vs 0.161  x0.95
+  l: 0.111 vs 0.165  x0.67
+  r: 0.087 vs 0.149  x0.58
+  s: 0.034 vs 0.031  x1.09
+  d: 0.026 vs 0.015  x1.70
+  g: 0.022 vs 0.001  x25.47
+  o: 0.013 vs 0.032  x0.40
+  a: 0.002 vs 0.002  x1.14
+
+Page-first-line initial glyph is a gallows (k,t,p,f): 85.99% vs other lines 18.61%
+  p/f only: 48.31% vs 7.93%

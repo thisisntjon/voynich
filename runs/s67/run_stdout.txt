@@ -1,0 +1,1531 @@
+s67 -- constrained assembly with length cadence (CA), leave-one-quire-out; s57's P1-P5 + type check P7
+date: Sun Oct 18 01:49:14 PDT 2026 (`date`)
+sha256 s67_constrained_assembly_loqo.py: 8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+sha256 s67_constrained_assembly_loqo.prereg.sha256: d491e26d951674cdd56d3e954b0feeac094cad991d518f931ad4c1ea1851b55f
+stub_match: True
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  local import s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+numpy 2.4.6; python -I; CPU; K=12, M=6, W=20, TOP=300, ALPHA=5.0; grids p_rep [0.0, 0.03, 0.06, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4], tau [1.0, 2.0, 4.0, 7.0, 12.0, 20.0], gamma [0.0, 0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 3.0, 4.0], rho [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]; seeds (1, 2); subsample 80 % of held-out-quire pages x 300
+MULTIPLICITY (D-056): this is the 4th producer evaluated in phase 4 (s57, s58, s61, s67) and the first on leave-one-quire-out.
+NOTE: within-line Moran I is a fit target, so P1 is partly built in by the fit.
+NOTE: P4 uses s15's 41-page width on single quires (noisier); P1-P5 scored by s57's code imported verbatim (S57.Measured, draws_for, score_cells).
+
+translit ZL3b: ZL3b_eva.meta.json sha256=ce233477803a8653
+translit RF1b: RF1b.meta.json sha256=c7d9bccba99b2610
+translit IT2a: IT2a.meta.json sha256=0d0d3e758d1e308b
+folds (quires with >= 4 pages in ZL3b): ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'M', 'N', 'O', 'Q', 'S', 'T'] (15)
+  ZL3b: pages per fold A 16, B 14, C 16, D 16, E 16, F 16, G 16, H 6, I 7, M 20, N 7, O 12, Q 10, S 10, T 23; other quires J 2
+  RF1b: pages per fold A 16, B 14, C 16, D 16, E 16, F 16, G 16, H 6, I 7, M 20, N 7, O 12, Q 10, S 10, T 23; other quires J 2
+  IT2a: pages per fold A 16, B 14, C 16, D 16, E 16, F 16, G 16, H 6, I 7, M 20, N 6, O 12, Q 10, S 10, T 23; other quires J 2
+
+running 45 fold jobs on 14 worker processes
+[141s] done ZL3b S (136s) CA 2/6
+[144s] done ZL3b I (140s) CA 3/6
+[145s] done ZL3b D (141s) CA 3/6
+[145s] done ZL3b Q (140s) CA 4/6
+[145s] done ZL3b E (141s) CA 2/6
+[147s] done ZL3b N (142s) CA 2/6
+[147s] done ZL3b H (143s) CA 3/6
+[151s] done ZL3b F (147s) CA 3/6
+[152s] done ZL3b O (147s) CA 3/6
+[152s] done ZL3b C (149s) CA 3/6
+[153s] done ZL3b B (150s) CA 2/6
+[154s] done ZL3b G (150s) CA 3/6
+[155s] done ZL3b A (151s) CA 2/6
+[174s] done ZL3b M (169s) CA 3/6
+[274s] done RF1b C (129s) CA 3/6
+[276s] done RF1b H (124s) CA 3/6
+[276s] done RF1b B (131s) CA 1/6
+[276s] done RF1b A (132s) CA 2/6
+[278s] done RF1b I (126s) CA 5/6
+[278s] done RF1b D (134s) CA 4/6
+[281s] done RF1b E (134s) CA 3/6
+[281s] done RF1b N (126s) CA 2/6
+[282s] done RF1b G (131s) CA 3/6
+[283s] done RF1b F (136s) CA 4/6
+[284s] done RF1b O (129s) CA 4/6
+[295s] done ZL3b T (154s) CA 2/6
+[301s] done RF1b Q (128s) CA 4/6
+[307s] done RF1b M (153s) CA 2/6
+[388s] done RF1b S (114s) CA 4/6
+[393s] done IT2a A (117s) CA 2/6
+[393s] done IT2a C (115s) CA 2/6
+[397s] done IT2a D (118s) CA 4/6
+[397s] done IT2a G (115s) CA 4/6
+[398s] done IT2a B (121s) CA 1/6
+[399s] done IT2a E (118s) CA 0/6
+[399s] done IT2a I (115s) CA 4/6
+[401s] done IT2a F (121s) CA 3/6
+[404s] done IT2a H (121s) CA 2/6
+[414s] done RF1b T (139s) CA 2/6
+[417s] done IT2a N (115s) CA 2/6
+[419s] done IT2a O (112s) CA 4/6
+[427s] done IT2a M (133s) CA 3/6
+[474s] done IT2a Q (86s) CA 3/6
+[478s] done IT2a S (85s) CA 3/6
+[499s] done IT2a T (106s) CA 2/6
+=== ZL3b ===
+--- ZL3b fold A: held-out 16 pages (1520 tokens), training 191 pages (33337 tokens)
+  classes: {'top': 300, 'nearest': 462, 'backoff': 1498, 'inertia': 33.0667, 'top_class_sizes': [30, 23, 48, 36, 28, 13, 12, 47, 20, 12, 3, 28]}; mu 5.002; affix contexts CA [455, 51, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1600, word-length sd 1.7902, types 6770 at 33337 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.5; loss 112.40 (R 38.45, types 61.98, Moran 3.33, len-sd 8.64); in-sample Moran 0.1418, len sd 1.7376, types 7303 at 33505
+  fit CA0   : p_rep 0.1, tau 12.0, gamma 0.0, rho 0.0; loss 593.57 (R 49.51, types 228.78, Moran 187.46, len-sd 127.82); in-sample Moran 0.0231, len sd 1.9926, types 7794 at 33061
+  fit CA-ind: p_rep 0.03, tau 2.0, gamma 1.0, rho 0.2; loss 2174.82 (R 84.96, types 1231.73, Moran 5.46, len-sd 852.66); in-sample Moran 0.1366, len sd 1.2674, types 9146 at 33316
+  fits: CA 147 evals 67s; CA-ind 145 evals 61s
+  real held-out: Moran 0.0627 [0.0425,0.0861]; core->core -0.0754 [-0.1167,-0.0419]; prefix gain +0.1358 [+0.1189,+0.1515]; jsd_first_fg 0.1460; CHARWIN +0.0936
+  -- CA: 2/6 hold [P1+ P2- P3- P4- P5- P7+] --
+    P1 HOLDS: Moran Δ +0.1143 [+0.0894,+0.1373] (gen 0.1769, real 0.0627); margin hi-0 = +0.1373
+    P2 fails: core->core excess Δ +0.0893 [+0.0469,+0.1313] (gen +0.0139, real -0.0754); margins 0-lo -0.0469, hi-0 +0.1313
+    P3 fails: prefix gain gen -0.0003 vs real +0.1358 [+0.1189,+0.1515]; margins g-lo -0.1192, hi-g +0.1518
+    P4 fails: jsd_first_fg gen 0.1074 vs s15 width [0.1447,0.2156] (real held-out 0.1460); margins -0.0373 / +0.1082; excess gen +0.0921 real +0.1263
+    P5 fails: CHARWIN gen -0.0083 (real +0.0936); margin -0.0083
+    P7 HOLDS: types gen/real at matched tokens 1.122 (seeds 1.079, 1.164); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.0508 [-0.0776,-0.0250] (gen 0.0119, real 0.0627); margin hi-0 = -0.0250
+    P2 fails: core->core excess Δ +0.0532 [+0.0163,+0.0997] (gen -0.0222, real -0.0754); margins 0-lo -0.0163, hi-0 +0.0997
+    P3 fails: prefix gain gen -0.0010 vs real +0.1358 [+0.1189,+0.1515]; margins g-lo -0.1199, hi-g +0.1525
+    P4 fails: jsd_first_fg gen 0.1224 vs s15 width [0.1447,0.2156] (real held-out 0.1460); margins -0.0223 / +0.0932; excess gen +0.1074 real +0.1263
+    P5 HOLDS: CHARWIN gen +0.0085 (real +0.0936); margin +0.0085
+    P7 HOLDS: types gen/real at matched tokens 1.122 (seeds 1.100, 1.144); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3- P4+ P5- P7-] --
+    P1 HOLDS: Moran Δ +0.1094 [+0.0819,+0.1341] (gen 0.1721, real 0.0627); margin hi-0 = +0.1341
+    P2 fails: core->core excess Δ +0.0459 [+0.0067,+0.0932] (gen -0.0295, real -0.0754); margins 0-lo -0.0067, hi-0 +0.0932
+    P3 fails: prefix gain gen +0.0069 vs real +0.1358 [+0.1189,+0.1515]; margins g-lo -0.1120, hi-g +0.1445
+    P4 HOLDS: jsd_first_fg gen 0.1497 vs s15 width [0.1447,0.2156] (real held-out 0.1460); margins +0.0050 / +0.0659; excess gen +0.1346 real +0.1263
+    P5 fails: CHARWIN gen -0.0563 (real +0.0936); margin -0.0563
+    P7 fails: types gen/real at matched tokens 1.479 (seeds 1.503, 1.455); tol ±15%
+  fold time 151s
+--- ZL3b fold B: held-out 14 pages (1041 tokens), training 193 pages (33816 tokens)
+  classes: {'top': 300, 'nearest': 468, 'backoff': 1514, 'inertia': 33.2366, 'top_class_sizes': [21, 45, 10, 51, 5, 36, 17, 26, 11, 38, 37, 3]}; mu 5.004; affix contexts CA [449, 49, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1556, word-length sd 1.7900, types 6884 at 33816 tokens
+  fit CA    : p_rep 0.06, tau 12.0, gamma 0.25, rho 0.5; loss 116.79 (R 24.40, types 82.17, Moran 1.51, len-sd 8.72); in-sample Moran 0.1434, len sd 1.7372, types 7508 at 33257
+  fit CA0   : p_rep 0.1, tau 12.0, gamma 0.0, rho 0.0; loss 751.60 (R 25.20, types 421.31, Moran 183.99, len-sd 121.09); in-sample Moran 0.0200, len sd 1.9870, types 8297 at 33709
+  fit CA-ind: p_rep 0.03, tau 2.0, gamma 0.75, rho 0.4; loss 2058.78 (R 79.82, types 1491.95, Moran 86.01, len-sd 400.99); in-sample Moran 0.2484, len sd 1.4316, types 9543 at 33456
+  fits: CA 147 evals 69s; CA-ind 142 evals 60s
+  real held-out: Moran 0.1385 [0.1053,0.1699]; core->core -0.1037 [-0.1376,-0.0657]; prefix gain +0.0906 [+0.0501,+0.1318]; jsd_first_fg 0.1793; CHARWIN +0.1294
+  -- CA: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.0110 [-0.0303,+0.0478] (gen 0.1495, real 0.1385); margin hi-0 = +0.0478
+    P2 fails: core->core excess Δ +0.0738 [+0.0249,+0.1176] (gen -0.0298, real -0.1037); margins 0-lo -0.0249, hi-0 +0.1176
+    P3 fails: prefix gain gen -0.0077 vs real +0.0906 [+0.0501,+0.1318]; margins g-lo -0.0578, hi-g +0.1395
+    P4 fails: jsd_first_fg gen 0.1357 vs s15 width [0.1447,0.2156] (real held-out 0.1793); margins -0.0090 / +0.0799; excess gen +0.1161 real +0.1582
+    P5 HOLDS: CHARWIN gen +0.0110 (real +0.1294); margin +0.0110
+    P7 fails: types gen/real at matched tokens 1.351 (seeds 1.310, 1.393); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4+ P5+ P7-] --
+    P1 fails: Moran Δ -0.1592 [-0.1935,-0.1201] (gen -0.0207, real 0.1385); margin hi-0 = -0.1201
+    P2 fails: core->core excess Δ +0.0705 [+0.0286,+0.1193] (gen -0.0332, real -0.1037); margins 0-lo -0.0286, hi-0 +0.1193
+    P3 fails: prefix gain gen +0.0076 vs real +0.0906 [+0.0501,+0.1318]; margins g-lo -0.0426, hi-g +0.1242
+    P4 HOLDS: jsd_first_fg gen 0.1751 vs s15 width [0.1447,0.2156] (real held-out 0.1793); margins +0.0304 / +0.0405; excess gen +0.1530 real +0.1582
+    P5 HOLDS: CHARWIN gen +0.0177 (real +0.1294); margin +0.0177
+    P7 fails: types gen/real at matched tokens 1.356 (seeds 1.345, 1.366); tol ±15%
+  -- CA-ind: 3/6 hold [P1+ P2- P3- P4+ P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.1270 [+0.0950,+0.1590] (gen 0.2655, real 0.1385); margin hi-0 = +0.1590
+    P2 fails: core->core excess Δ +0.0904 [+0.0400,+0.1237] (gen -0.0132, real -0.1037); margins 0-lo -0.0400, hi-0 +0.1237
+    P3 fails: prefix gain gen +0.0148 vs real +0.0906 [+0.0501,+0.1318]; margins g-lo -0.0353, hi-g +0.1170
+    P4 HOLDS: jsd_first_fg gen 0.2151 vs s15 width [0.1447,0.2156] (real held-out 0.1793); margins +0.0704 / +0.0005; excess gen +0.1928 real +0.1582
+    P5 HOLDS: CHARWIN gen +0.0104 (real +0.1294); margin +0.0104
+    P7 fails: types gen/real at matched tokens 1.705 (seeds 1.680, 1.730); tol ±15%
+  fold time 150s
+--- ZL3b fold C: held-out 16 pages (1431 tokens), training 191 pages (33426 tokens)
+  classes: {'top': 300, 'nearest': 472, 'backoff': 1492, 'inertia': 33.637, 'top_class_sizes': [23, 43, 48, 40, 19, 15, 21, 14, 30, 11, 18, 18]}; mu 5.005; affix contexts CA [468, 52, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1598, word-length sd 1.7890, types 6806 at 33426 tokens
+  fit CA    : p_rep 0.06, tau 12.0, gamma 0.25, rho 0.5; loss 144.99 (R 22.18, types 98.07, Moran 8.62, len-sd 16.11); in-sample Moran 0.1304, len sd 1.7172, types 7480 at 33544
+  fit CA0   : p_rep 0.06, tau 7.0, gamma 0.0, rho 0.0; loss 667.28 (R 40.44, types 322.90, Moran 200.59, len-sd 103.35); in-sample Moran 0.0181, len sd 1.9708, types 8029 at 33426
+  fit CA-ind: p_rep 0.0, tau 1.0, gamma 0.75, rho 0.2; loss 1962.06 (R 101.86, types 1390.59, Moran 5.08, len-sd 464.53); in-sample Moran 0.1372, len sd 1.4034, types 9344 at 33110
+  fits: CA 147 evals 68s; CA-ind 137 evals 54s
+  real held-out: Moran 0.0526 [0.0269,0.0768]; core->core -0.1018 [-0.1357,-0.0766]; prefix gain +0.0410 [+0.0228,+0.0649]; jsd_first_fg 0.1534; CHARWIN +0.1045
+  -- CA: 3/6 hold [P1+ P2- P3- P4+ P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.0903 [+0.0553,+0.1196] (gen 0.1429, real 0.0526); margin hi-0 = +0.1196
+    P2 fails: core->core excess Δ +0.0899 [+0.0515,+0.1276] (gen -0.0119, real -0.1018); margins 0-lo -0.0515, hi-0 +0.1276
+    P3 fails: prefix gain gen +0.0079 vs real +0.0410 [+0.0228,+0.0649]; margins g-lo -0.0149, hi-g +0.0570
+    P4 HOLDS: jsd_first_fg gen 0.1658 vs s15 width [0.1447,0.2156] (real held-out 0.1534); margins +0.0211 / +0.0498; excess gen +0.1513 real +0.1352
+    P5 HOLDS: CHARWIN gen +0.0052 (real +0.1045); margin +0.0052
+    P7 fails: types gen/real at matched tokens 1.230 (seeds 1.223, 1.237); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.0407 [-0.0690,-0.0107] (gen 0.0119, real 0.0526); margin hi-0 = -0.0107
+    P2 fails: core->core excess Δ +0.0749 [+0.0429,+0.1137] (gen -0.0269, real -0.1018); margins 0-lo -0.0429, hi-0 +0.1137
+    P3 fails: prefix gain gen +0.0036 vs real +0.0410 [+0.0228,+0.0649]; margins g-lo -0.0192, hi-g +0.0613
+    P4 fails: jsd_first_fg gen 0.1139 vs s15 width [0.1447,0.2156] (real held-out 0.1534); margins -0.0308 / +0.1017; excess gen +0.0989 real +0.1352
+    P5 HOLDS: CHARWIN gen +0.0239 (real +0.1045); margin +0.0239
+    P7 fails: types gen/real at matched tokens 1.217 (seeds 1.210, 1.225); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0608 [+0.0277,+0.0903] (gen 0.1134, real 0.0526); margin hi-0 = +0.0903
+    P2 fails: core->core excess Δ +0.0684 [+0.0369,+0.1039] (gen -0.0334, real -0.1018); margins 0-lo -0.0369, hi-0 +0.1039
+    P3 fails: prefix gain gen +0.0015 vs real +0.0410 [+0.0228,+0.0649]; margins g-lo -0.0213, hi-g +0.0634
+    P4 fails: jsd_first_fg gen 0.1429 vs s15 width [0.1447,0.2156] (real held-out 0.1534); margins -0.0018 / +0.0727; excess gen +0.1284 real +0.1352
+    P5 fails: CHARWIN gen -0.0253 (real +0.1045); margin -0.0253
+    P7 fails: types gen/real at matched tokens 1.615 (seeds 1.639, 1.590); tol ±15%
+  fold time 149s
+--- ZL3b fold D: held-out 16 pages (1272 tokens), training 191 pages (33585 tokens)
+  classes: {'top': 300, 'nearest': 468, 'backoff': 1507, 'inertia': 34.3334, 'top_class_sizes': [44, 47, 42, 27, 14, 24, 17, 28, 17, 26, 6, 8]}; mu 4.998; affix contexts CA [473, 50, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1584, word-length sd 1.7884, types 6840 at 33585 tokens
+  fit CA    : p_rep 0.1, tau 12.0, gamma 0.25, rho 0.7; loss 131.91 (R 45.52, types 50.69, Moran 12.57, len-sd 23.12); in-sample Moran 0.1939, len sd 1.7024, types 7327 at 33621
+  fit CA0   : p_rep 0.1, tau 12.0, gamma 0.0, rho 0.0; loss 633.19 (R 51.79, types 308.81, Moran 198.08, len-sd 74.50); in-sample Moran 0.0177, len sd 1.9428, types 8042 at 33602
+  fit CA-ind: p_rep 0.15, tau 20.0, gamma 0.75, rho 0.1; loss 1964.86 (R 31.54, types 1292.42, Moran 71.12, len-sd 569.78); in-sample Moran 0.0741, len sd 1.3615, types 9299 at 33441
+  fits: CA 142 evals 65s; CA-ind 139 evals 56s
+  real held-out: Moran 0.1054 [0.0908,0.1259]; core->core -0.0524 [-0.0932,-0.0224]; prefix gain +0.1073 [+0.0885,+0.1350]; jsd_first_fg 0.1348; CHARWIN +0.0781
+  -- CA: 3/6 hold [P1+ P2- P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0694 [+0.0435,+0.0940] (gen 0.1748, real 0.1054); margin hi-0 = +0.0940
+    P2 fails: core->core excess Δ +0.0865 [+0.0492,+0.1262] (gen +0.0341, real -0.0524); margins 0-lo -0.0492, hi-0 +0.1262
+    P3 fails: prefix gain gen +0.0017 vs real +0.1073 [+0.0885,+0.1350]; margins g-lo -0.0868, hi-g +0.1334
+    P4 fails: jsd_first_fg gen 0.1288 vs s15 width [0.1447,0.2156] (real held-out 0.1348); margins -0.0159 / +0.0868; excess gen +0.1094 real +0.1118
+    P5 HOLDS: CHARWIN gen +0.0197 (real +0.0781); margin +0.0197
+    P7 HOLDS: types gen/real at matched tokens 1.104 (seeds 1.117, 1.091); tol ±15%
+  -- CA0: 3/6 hold [P1- P2- P3- P4+ P5+ P7+] --
+    P1 fails: Moran Δ -0.1050 [-0.1311,-0.0824] (gen 0.0004, real 0.1054); margin hi-0 = -0.0824
+    P2 fails: core->core excess Δ +0.0379 [+0.0002,+0.0837] (gen -0.0145, real -0.0524); margins 0-lo -0.0002, hi-0 +0.0837
+    P3 fails: prefix gain gen -0.0039 vs real +0.1073 [+0.0885,+0.1350]; margins g-lo -0.0924, hi-g +0.1389
+    P4 HOLDS: jsd_first_fg gen 0.1481 vs s15 width [0.1447,0.2156] (real held-out 0.1348); margins +0.0034 / +0.0675; excess gen +0.1279 real +0.1118
+    P5 HOLDS: CHARWIN gen +0.0290 (real +0.0781); margin +0.0290
+    P7 HOLDS: types gen/real at matched tokens 1.112 (seeds 1.123, 1.100); tol ±15%
+  -- CA-ind: 2/6 hold [P1- P2+ P3- P4+ P5- P7-] --
+    P1 fails: Moran Δ -0.0391 [-0.0612,-0.0172] (gen 0.0663, real 0.1054); margin hi-0 = -0.0172
+    P2 HOLDS: core->core excess Δ -0.0394 [-0.0790,+0.0054] (gen -0.0918, real -0.0524); margins 0-lo +0.0790, hi-0 +0.0054
+    P3 fails: prefix gain gen +0.0001 vs real +0.1073 [+0.0885,+0.1350]; margins g-lo -0.0884, hi-g +0.1349
+    P4 HOLDS: jsd_first_fg gen 0.1494 vs s15 width [0.1447,0.2156] (real held-out 0.1348); margins +0.0047 / +0.0662; excess gen +0.1298 real +0.1118
+    P5 fails: CHARWIN gen -0.0484 (real +0.0781); margin -0.0484
+    P7 fails: types gen/real at matched tokens 1.487 (seeds 1.475, 1.499); tol ±15%
+  fold time 141s
+--- ZL3b fold E: held-out 16 pages (1556 tokens), training 191 pages (33301 tokens)
+  classes: {'top': 300, 'nearest': 470, 'backoff': 1494, 'inertia': 33.7412, 'top_class_sizes': [11, 48, 43, 4, 29, 21, 22, 17, 50, 14, 32, 9]}; mu 5.007; affix contexts CA [457, 50, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1565, word-length sd 1.7842, types 6842 at 33301 tokens
+  fit CA    : p_rep 0.06, tau 12.0, gamma 0.25, rho 0.5; loss 117.42 (R 21.59, types 85.59, Moran 2.95, len-sd 7.28); in-sample Moran 0.1393, len sd 1.7361, types 7475 at 32873
+  fit CA0   : p_rep 0.1, tau 20.0, gamma 0.0, rho 0.0; loss 730.97 (R 20.50, types 387.01, Moran 192.96, len-sd 130.50); in-sample Moran 0.0176, len sd 1.9880, types 8188 at 33564
+  fit CA-ind: p_rep 0.0, tau 1.0, gamma 0.75, rho 0.2; loss 2187.53 (R 91.56, types 1609.60, Moran 9.02, len-sd 477.35); in-sample Moran 0.1265, len sd 1.3944, types 9587 at 33169
+  fits: CA 144 evals 66s; CA-ind 137 evals 53s
+  real held-out: Moran 0.1266 [0.1010,0.1521]; core->core -0.0674 [-0.1207,-0.0363]; prefix gain +0.0634 [+0.0457,+0.0921]; jsd_first_fg 0.2407; CHARWIN +0.1028
+  -- CA: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.0192 [-0.0138,+0.0455] (gen 0.1458, real 0.1266); margin hi-0 = +0.0455
+    P2 fails: core->core excess Δ +0.0946 [+0.0524,+0.1497] (gen +0.0273, real -0.0674); margins 0-lo -0.0524, hi-0 +0.1497
+    P3 fails: prefix gain gen +0.0031 vs real +0.0634 [+0.0457,+0.0921]; margins g-lo -0.0426, hi-g +0.0890
+    P4 fails: jsd_first_fg gen 0.1230 vs s15 width [0.1447,0.2156] (real held-out 0.2407); margins -0.0217 / +0.0926; excess gen +0.1068 real +0.2200
+    P5 HOLDS: CHARWIN gen +0.0407 (real +0.1028); margin +0.0407
+    P7 fails: types gen/real at matched tokens 1.249 (seeds 1.239, 1.259); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.0820 [-0.1156,-0.0510] (gen 0.0446, real 0.1266); margin hi-0 = -0.0510
+    P2 fails: core->core excess Δ +0.0901 [+0.0567,+0.1454] (gen +0.0227, real -0.0674); margins 0-lo -0.0567, hi-0 +0.1454
+    P3 fails: prefix gain gen -0.0020 vs real +0.0634 [+0.0457,+0.0921]; margins g-lo -0.0477, hi-g +0.0941
+    P4 fails: jsd_first_fg gen 0.1359 vs s15 width [0.1447,0.2156] (real held-out 0.2407); margins -0.0088 / +0.0797; excess gen +0.1204 real +0.2200
+    P5 HOLDS: CHARWIN gen +0.0280 (real +0.1028); margin +0.0280
+    P7 fails: types gen/real at matched tokens 1.256 (seeds 1.246, 1.265); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2+ P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ -0.0066 [-0.0324,+0.0209] (gen 0.1200, real 0.1266); margin hi-0 = +0.0209
+    P2 HOLDS: core->core excess Δ +0.0200 [-0.0160,+0.0703] (gen -0.0474, real -0.0674); margins 0-lo +0.0160, hi-0 +0.0703
+    P3 fails: prefix gain gen +0.0126 vs real +0.0634 [+0.0457,+0.0921]; margins g-lo -0.0331, hi-g +0.0795
+    P4 fails: jsd_first_fg gen 0.1389 vs s15 width [0.1447,0.2156] (real held-out 0.2407); margins -0.0058 / +0.0767; excess gen +0.1227 real +0.2200
+    P5 fails: CHARWIN gen -0.0211 (real +0.1028); margin -0.0211
+    P7 fails: types gen/real at matched tokens 1.612 (seeds 1.606, 1.619); tol ±15%
+  fold time 141s
+--- ZL3b fold F: held-out 16 pages (1708 tokens), training 191 pages (33149 tokens)
+  classes: {'top': 300, 'nearest': 463, 'backoff': 1490, 'inertia': 33.5418, 'top_class_sizes': [27, 11, 46, 37, 26, 21, 16, 5, 30, 11, 51, 19]}; mu 4.997; affix contexts CA [463, 50, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1579, word-length sd 1.7932, types 6760 at 33149 tokens
+  fit CA    : p_rep 0.06, tau 12.0, gamma 0.25, rho 0.7; loss 131.68 (R 38.77, types 81.69, Moran 4.89, len-sd 6.33); in-sample Moran 0.1800, len sd 1.7481, types 7371 at 33154
+  fit CA0   : p_rep 0.03, tau 7.0, gamma 0.0, rho 0.0; loss 661.58 (R 38.97, types 290.41, Moran 213.44, len-sd 118.76); in-sample Moran 0.0118, len sd 1.9886, types 7912 at 33029
+  fit CA-ind: p_rep 0.06, tau 4.0, gamma 1.0, rho 0.2; loss 2096.85 (R 61.32, types 1185.97, Moran 0.42, len-sd 849.14); in-sample Moran 0.1514, len sd 1.2707, types 9088 at 33227
+  fits: CA 147 evals 66s; CA-ind 142 evals 57s
+  real held-out: Moran 0.1360 [0.1044,0.1610]; core->core -0.0982 [-0.1385,-0.0653]; prefix gain +0.0415 [+0.0140,+0.0607]; jsd_first_fg 0.1328; CHARWIN +0.1113
+  -- CA: 3/6 hold [P1+ P2- P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0076 [-0.0245,+0.0402] (gen 0.1435, real 0.1360); margin hi-0 = +0.0402
+    P2 fails: core->core excess Δ +0.1149 [+0.0677,+0.1582] (gen +0.0167, real -0.0982); margins 0-lo -0.0677, hi-0 +0.1582
+    P3 fails: prefix gain gen +0.0052 vs real +0.0415 [+0.0140,+0.0607]; margins g-lo -0.0088, hi-g +0.0556
+    P4 fails: jsd_first_fg gen 0.1228 vs s15 width [0.1447,0.2156] (real held-out 0.1328); margins -0.0219 / +0.0928; excess gen +0.1079 real +0.1144
+    P5 HOLDS: CHARWIN gen +0.0186 (real +0.1113); margin +0.0186
+    P7 HOLDS: types gen/real at matched tokens 1.096 (seeds 1.087, 1.105); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.1478 [-0.1752,-0.1141] (gen -0.0118, real 0.1360); margin hi-0 = -0.1141
+    P2 fails: core->core excess Δ +0.0824 [+0.0331,+0.1288] (gen -0.0159, real -0.0982); margins 0-lo -0.0331, hi-0 +0.1288
+    P3 fails: prefix gain gen +0.0074 vs real +0.0415 [+0.0140,+0.0607]; margins g-lo -0.0066, hi-g +0.0533
+    P4 fails: jsd_first_fg gen 0.1312 vs s15 width [0.1447,0.2156] (real held-out 0.1328); margins -0.0135 / +0.0844; excess gen +0.1156 real +0.1144
+    P5 HOLDS: CHARWIN gen +0.0320 (real +0.1113); margin +0.0320
+    P7 HOLDS: types gen/real at matched tokens 1.103 (seeds 1.108, 1.098); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0187 [-0.0107,+0.0479] (gen 0.1547, real 0.1360); margin hi-0 = +0.0479
+    P2 fails: core->core excess Δ +0.0424 [+0.0081,+0.0898] (gen -0.0558, real -0.0982); margins 0-lo -0.0081, hi-0 +0.0898
+    P3 fails: prefix gain gen +0.0042 vs real +0.0415 [+0.0140,+0.0607]; margins g-lo -0.0097, hi-g +0.0565
+    P4 fails: jsd_first_fg gen 0.1393 vs s15 width [0.1447,0.2156] (real held-out 0.1328); margins -0.0054 / +0.0763; excess gen +0.1229 real +0.1144
+    P5 fails: CHARWIN gen -0.0532 (real +0.1113); margin -0.0532
+    P7 fails: types gen/real at matched tokens 1.413 (seeds 1.412, 1.414); tol ±15%
+  fold time 147s
+--- ZL3b fold G: held-out 16 pages (1521 tokens), training 191 pages (33336 tokens)
+  classes: {'top': 300, 'nearest': 463, 'backoff': 1502, 'inertia': 33.8286, 'top_class_sizes': [21, 46, 13, 37, 14, 7, 40, 22, 23, 38, 16, 23]}; mu 4.996; affix contexts CA [479, 51, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1558, word-length sd 1.7852, types 6789 at 33336 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.7; loss 129.52 (R 23.04, types 47.12, Moran 2.57, len-sd 56.79); in-sample Moran 0.1719, len sd 1.6507, types 7255 at 32887
+  fit CA0   : p_rep 0.15, tau 12.0, gamma 0.0, rho 0.0; loss 462.03 (R 118.08, types 178.88, Moran 138.72, len-sd 26.35); in-sample Moran 0.0380, len sd 1.8769, types 7697 at 33253
+  fit CA-ind: p_rep 0.1, tau 12.0, gamma 0.75, rho 0.2; loss 1887.39 (R 18.54, types 1346.28, Moran 6.35, len-sd 516.22); in-sample Moran 0.1306, len sd 1.3796, types 9280 at 32741
+  fits: CA 147 evals 66s; CA-ind 147 evals 61s
+  real held-out: Moran 0.1793 [0.1530,0.2013]; core->core -0.1197 [-0.1509,-0.0768]; prefix gain +0.0724 [+0.0430,+0.0959]; jsd_first_fg 0.1643; CHARWIN +0.0717
+  -- CA: 3/6 hold [P1+ P2- P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0193 [-0.0056,+0.0489] (gen 0.1986, real 0.1793); margin hi-0 = +0.0489
+    P2 fails: core->core excess Δ +0.1195 [+0.0749,+0.1590] (gen -0.0002, real -0.1197); margins 0-lo -0.0749, hi-0 +0.1590
+    P3 fails: prefix gain gen -0.0012 vs real +0.0724 [+0.0430,+0.0959]; margins g-lo -0.0441, hi-g +0.0971
+    P4 fails: jsd_first_fg gen 0.1179 vs s15 width [0.1447,0.2156] (real held-out 0.1643); margins -0.0268 / +0.0977; excess gen +0.1039 real +0.1474
+    P5 HOLDS: CHARWIN gen +0.0258 (real +0.0717); margin +0.0258
+    P7 HOLDS: types gen/real at matched tokens 1.084 (seeds 1.073, 1.095); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.1618 [-0.1886,-0.1303] (gen 0.0175, real 0.1793); margin hi-0 = -0.1303
+    P2 fails: core->core excess Δ +0.1155 [+0.0659,+0.1511] (gen -0.0042, real -0.1197); margins 0-lo -0.0659, hi-0 +0.1511
+    P3 fails: prefix gain gen -0.0050 vs real +0.0724 [+0.0430,+0.0959]; margins g-lo -0.0480, hi-g +0.1009
+    P4 fails: jsd_first_fg gen 0.1039 vs s15 width [0.1447,0.2156] (real held-out 0.1643); margins -0.0408 / +0.1117; excess gen +0.0887 real +0.1474
+    P5 HOLDS: CHARWIN gen +0.0228 (real +0.0717); margin +0.0228
+    P7 HOLDS: types gen/real at matched tokens 1.123 (seeds 1.092, 1.153); tol ±15%
+  -- CA-ind: 2/6 hold [P1- P2- P3- P4+ P5+ P7-] --
+    P1 fails: Moran Δ -0.0294 [-0.0538,-0.0003] (gen 0.1499, real 0.1793); margin hi-0 = -0.0003
+    P2 fails: core->core excess Δ +0.0946 [+0.0486,+0.1265] (gen -0.0251, real -0.1197); margins 0-lo -0.0486, hi-0 +0.1265
+    P3 fails: prefix gain gen +0.0081 vs real +0.0724 [+0.0430,+0.0959]; margins g-lo -0.0349, hi-g +0.0878
+    P4 HOLDS: jsd_first_fg gen 0.1559 vs s15 width [0.1447,0.2156] (real held-out 0.1643); margins +0.0112 / +0.0597; excess gen +0.1428 real +0.1474
+    P5 HOLDS: CHARWIN gen +0.0013 (real +0.0717); margin +0.0013
+    P7 fails: types gen/real at matched tokens 1.472 (seeds 1.472, 1.473); tol ±15%
+  fold time 150s
+--- ZL3b fold H: held-out 6 pages (1290 tokens), training 201 pages (33567 tokens)
+  classes: {'top': 300, 'nearest': 480, 'backoff': 1490, 'inertia': 33.469, 'top_class_sizes': [17, 4, 24, 30, 39, 44, 47, 27, 23, 22, 14, 9]}; mu 4.986; affix contexts CA [454, 52, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1576, word-length sd 1.7884, types 6761 at 33567 tokens
+  fit CA    : p_rep 0.06, tau 4.0, gamma 0.25, rho 0.6; loss 160.50 (R 87.00, types 47.71, Moran 0.24, len-sd 25.55); in-sample Moran 0.1625, len sd 1.6980, types 7228 at 33216
+  fit CA0   : p_rep 0.03, tau 2.0, gamma 0.0, rho 0.0; loss 538.05 (R 72.70, types 219.20, Moran 172.89, len-sd 73.25); in-sample Moran 0.0261, len sd 1.9414, types 7762 at 33477
+  fit CA-ind: p_rep 0.15, tau 20.0, gamma 0.75, rho 0.4; loss 1996.04 (R 36.17, types 1426.99, Moran 86.55, len-sd 446.33); in-sample Moran 0.2506, len sd 1.4105, types 9315 at 33347
+  fits: CA 147 evals 68s; CA-ind 139 evals 55s
+  real held-out: Moran 0.1460 [0.1219,0.1546]; core->core -0.1271 [-0.1703,-0.0945]; prefix gain +0.0273 [+0.0145,+0.0365]; jsd_first_fg 0.2319; CHARWIN +0.0593
+  -- CA: 3/6 hold [P1+ P2- P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0247 [+0.0060,+0.0579] (gen 0.1707, real 0.1460); margin hi-0 = +0.0579
+    P2 fails: core->core excess Δ +0.0832 [+0.0502,+0.1330] (gen -0.0439, real -0.1271); margins 0-lo -0.0502, hi-0 +0.1330
+    P3 fails: prefix gain gen +0.0028 vs real +0.0273 [+0.0145,+0.0365]; margins g-lo -0.0118, hi-g +0.0338
+    P4 fails: jsd_first_fg gen 0.1185 vs s15 width [0.1447,0.2156] (real held-out 0.2319); margins -0.0262 / +0.0971; excess gen +0.0962 real +0.2096
+    P5 HOLDS: CHARWIN gen +0.0029 (real +0.0593); margin +0.0029
+    P7 HOLDS: types gen/real at matched tokens 1.035 (seeds 1.047, 1.023); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.1617 [-0.1862,-0.1266] (gen -0.0158, real 0.1460); margin hi-0 = -0.1266
+    P2 fails: core->core excess Δ +0.1394 [+0.0894,+0.1837] (gen +0.0123, real -0.1271); margins 0-lo -0.0894, hi-0 +0.1837
+    P3 fails: prefix gain gen -0.0009 vs real +0.0273 [+0.0145,+0.0365]; margins g-lo -0.0154, hi-g +0.0374
+    P4 fails: jsd_first_fg gen 0.1168 vs s15 width [0.1447,0.2156] (real held-out 0.2319); margins -0.0279 / +0.0988; excess gen +0.0939 real +0.2096
+    P5 HOLDS: CHARWIN gen +0.0068 (real +0.0593); margin +0.0068
+    P7 HOLDS: types gen/real at matched tokens 1.025 (seeds 1.021, 1.029); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.1258 [+0.1108,+0.1588] (gen 0.2718, real 0.1460); margin hi-0 = +0.1588
+    P2 fails: core->core excess Δ +0.1163 [+0.0683,+0.1607] (gen -0.0109, real -0.1271); margins 0-lo -0.0683, hi-0 +0.1607
+    P3 fails: prefix gain gen +0.0023 vs real +0.0273 [+0.0145,+0.0365]; margins g-lo -0.0122, hi-g +0.0342
+    P4 fails: jsd_first_fg gen 0.1356 vs s15 width [0.1447,0.2156] (real held-out 0.2319); margins -0.0091 / +0.0800; excess gen +0.1117 real +0.2096
+    P5 HOLDS: CHARWIN gen +0.0223 (real +0.0593); margin +0.0223
+    P7 fails: types gen/real at matched tokens 1.290 (seeds 1.262, 1.317); tol ±15%
+  fold time 143s
+--- ZL3b fold I: held-out 7 pages (367 tokens), training 200 pages (34490 tokens)
+  classes: {'top': 300, 'nearest': 480, 'backoff': 1523, 'inertia': 33.1106, 'top_class_sizes': [11, 25, 22, 3, 24, 50, 48, 34, 38, 11, 24, 10]}; mu 4.990; affix contexts CA [453, 50, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1574, word-length sd 1.7871, types 6942 at 34490 tokens
+  fit CA    : p_rep 0.03, tau 7.0, gamma 0.25, rho 0.6; loss 91.13 (R 37.55, types 46.23, Moran 0.03, len-sd 7.32); in-sample Moran 0.1591, len sd 1.7387, types 7414 at 34243
+  fit CA0   : p_rep 0.06, tau 7.0, gamma 0.0, rho 0.0; loss 706.41 (R 23.95, types 332.06, Moran 203.56, len-sd 146.85); in-sample Moran 0.0148, len sd 2.0037, types 8207 at 34452
+  fit CA-ind: p_rep 0.1, tau 20.0, gamma 0.75, rho 0.3; loss 1992.65 (R 22.43, types 1478.18, Moran 14.56, len-sd 477.48); in-sample Moran 0.1956, len sd 1.3966, types 9611 at 34343
+  fits: CA 147 evals 66s; CA-ind 139 evals 59s
+  real held-out: Moran 0.1419 [0.0962,0.1796]; core->core -0.1126 [-0.1335,-0.0717]; prefix gain +0.0531 [-0.0092,+0.0858]; jsd_first_fg 0.1949; CHARWIN -0.0011
+  -- CA: 3/6 hold [P1+ P2- P3+ P4- P5- P7+] --
+    P1 HOLDS: Moran Δ -0.0122 [-0.0618,+0.0653] (gen 0.1297, real 0.1419); margin hi-0 = +0.0653
+    P2 fails: core->core excess Δ +0.1006 [+0.0200,+0.1248] (gen -0.0120, real -0.1126); margins 0-lo -0.0200, hi-0 +0.1248
+    P3 HOLDS: prefix gain gen +0.0067 vs real +0.0531 [-0.0092,+0.0858]; margins g-lo +0.0159, hi-g +0.0791
+    P4 fails: jsd_first_fg gen 0.1412 vs s15 width [0.1447,0.2156] (real held-out 0.1949); margins -0.0035 / +0.0744; excess gen +0.0941 real +0.1383
+    P5 fails: CHARWIN gen -0.0188 (real -0.0011); margin -0.0188
+    P7 HOLDS: types gen/real at matched tokens 0.956 (seeds 0.961, 0.951); tol ±15%
+  -- CA0: 3/6 hold [P1- P2- P3+ P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.1234 [-0.1642,-0.0701] (gen 0.0184, real 0.1419); margin hi-0 = -0.0701
+    P2 fails: core->core excess Δ +0.0824 [+0.0232,+0.1156] (gen -0.0301, real -0.1126); margins 0-lo -0.0232, hi-0 +0.1156
+    P3 HOLDS: prefix gain gen +0.0059 vs real +0.0531 [-0.0092,+0.0858]; margins g-lo +0.0150, hi-g +0.0800
+    P4 fails: jsd_first_fg gen 0.1445 vs s15 width [0.1447,0.2156] (real held-out 0.1949); margins -0.0002 / +0.0711; excess gen +0.1020 real +0.1383
+    P5 HOLDS: CHARWIN gen +0.0100 (real -0.0011); margin +0.0100
+    P7 HOLDS: types gen/real at matched tokens 0.951 (seeds 0.947, 0.954); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3+ P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0058 [-0.0642,+0.0625] (gen 0.1477, real 0.1419); margin hi-0 = +0.0625
+    P2 fails: core->core excess Δ +0.0741 [+0.0266,+0.1071] (gen -0.0385, real -0.1126); margins 0-lo -0.0266, hi-0 +0.1071
+    P3 HOLDS: prefix gain gen +0.0094 vs real +0.0531 [-0.0092,+0.0858]; margins g-lo +0.0186, hi-g +0.0764
+    P4 fails: jsd_first_fg gen 0.2204 vs s15 width [0.1447,0.2156] (real held-out 0.1949); margins +0.0757 / -0.0048; excess gen +0.1756 real +0.1383
+    P5 fails: CHARWIN gen -0.0041 (real -0.0011); margin -0.0041
+    P7 fails: types gen/real at matched tokens 1.162 (seeds 1.183, 1.141); tol ±15%
+  fold time 140s
+--- ZL3b fold M: held-out 20 pages (6800 tokens), training 187 pages (28057 tokens)
+  classes: {'top': 300, 'nearest': 336, 'backoff': 1304, 'inertia': 33.0302, 'top_class_sizes': [10, 23, 29, 18, 13, 9, 18, 53, 42, 21, 23, 41]}; mu 4.991; affix contexts CA [515, 52, 13] / CA-ind [46, 4]
+  training targets: Moran 0.1610, word-length sd 1.8060, types 6384 at 28057 tokens
+  fit CA    : p_rep 0.1, tau 12.0, gamma 0.25, rho 0.6; loss 102.23 (R 23.01, types 33.77, Moran 2.24, len-sd 43.21); in-sample Moran 0.1759, len sd 1.6873, types 6755 at 27947
+  fit CA0   : p_rep 0.1, tau 7.0, gamma 0.0, rho 0.0; loss 474.62 (R 57.69, types 211.76, Moran 165.07, len-sd 40.09); in-sample Moran 0.0325, len sd 1.9204, types 7313 at 28238
+  fit CA-ind: p_rep 0.1, tau 12.0, gamma 0.75, rho 0.3; loss 2076.22 (R 23.13, types 1573.05, Moran 11.15, len-sd 468.89); in-sample Moran 0.1944, len sd 1.4149, types 8916 at 27801
+  fits: CA 147 evals 56s; CA-ind 142 evals 52s
+  real held-out: Moran 0.1403 [0.1222,0.1576]; core->core +0.0026 [-0.0159,+0.0153]; prefix gain +0.1436 [+0.1321,+0.1566]; jsd_first_fg 0.1472; CHARWIN +0.1339
+  -- CA: 3/6 hold [P1+ P2+ P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.0227 [+0.0052,+0.0427] (gen 0.1630, real 0.1403); margin hi-0 = +0.0427
+    P2 HOLDS: core->core excess Δ -0.0028 [-0.0224,+0.0194] (gen -0.0002, real +0.0026); margins 0-lo +0.0224, hi-0 +0.0194
+    P3 fails: prefix gain gen -0.0068 vs real +0.1436 [+0.1321,+0.1566]; margins g-lo -0.1388, hi-g +0.1634
+    P4 fails: jsd_first_fg gen 0.1078 vs s15 width [0.1447,0.2156] (real held-out 0.1472); margins -0.0369 / +0.1078; excess gen +0.1031 real +0.1430
+    P5 HOLDS: CHARWIN gen +0.0226 (real +0.1339); margin +0.0226
+    P7 fails: types gen/real at matched tokens 1.750 (seeds 1.739, 1.761); tol ±15%
+  -- CA0: 2/6 hold [P1- P2+ P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.1119 [-0.1305,-0.0925] (gen 0.0285, real 0.1403); margin hi-0 = -0.0925
+    P2 HOLDS: core->core excess Δ +0.0095 [-0.0068,+0.0325] (gen +0.0121, real +0.0026); margins 0-lo +0.0068, hi-0 +0.0325
+    P3 fails: prefix gain gen -0.0089 vs real +0.1436 [+0.1321,+0.1566]; margins g-lo -0.1410, hi-g +0.1656
+    P4 fails: jsd_first_fg gen 0.0984 vs s15 width [0.1447,0.2156] (real held-out 0.1472); margins -0.0463 / +0.1172; excess gen +0.0940 real +0.1430
+    P5 HOLDS: CHARWIN gen +0.0198 (real +0.1339); margin +0.0198
+    P7 fails: types gen/real at matched tokens 1.838 (seeds 1.821, 1.855); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3- P4+ P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0679 [+0.0491,+0.0880] (gen 0.2082, real 0.1403); margin hi-0 = +0.0880
+    P2 fails: core->core excess Δ -0.0227 [-0.0371,-0.0011] (gen -0.0200, real +0.0026); margins 0-lo +0.0371, hi-0 -0.0011
+    P3 fails: prefix gain gen -0.0009 vs real +0.1436 [+0.1321,+0.1566]; margins g-lo -0.1330, hi-g +0.1576
+    P4 HOLDS: jsd_first_fg gen 0.1449 vs s15 width [0.1447,0.2156] (real held-out 0.1472); margins +0.0002 / +0.0707; excess gen +0.1399 real +0.1430
+    P5 fails: CHARWIN gen -0.0099 (real +0.1339); margin -0.0099
+    P7 fails: types gen/real at matched tokens 2.368 (seeds 2.365, 2.371); tol ±15%
+  fold time 169s
+--- ZL3b fold N: held-out 7 pages (1692 tokens), training 200 pages (33165 tokens)
+  classes: {'top': 300, 'nearest': 478, 'backoff': 1498, 'inertia': 33.1659, 'top_class_sizes': [19, 20, 53, 38, 33, 7, 38, 16, 14, 7, 26, 29]}; mu 4.990; affix contexts CA [457, 50, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1578, word-length sd 1.7879, types 6813 at 33165 tokens
+  fit CA    : p_rep 0.06, tau 12.0, gamma 0.25, rho 0.4; loss 153.62 (R 21.50, types 101.98, Moran 14.02, len-sd 16.12); in-sample Moran 0.1204, len sd 1.7161, types 7501 at 33229
+  fit CA0   : p_rep 0.1, tau 12.0, gamma 0.0, rho 0.0; loss 620.08 (R 35.54, types 293.91, Moran 187.96, len-sd 102.67); in-sample Moran 0.0207, len sd 1.9691, types 7981 at 32868
+  fit CA-ind: p_rep 0.15, tau 20.0, gamma 1.0, rho 0.2; loss 1942.24 (R 32.71, types 1026.67, Moran 3.42, len-sd 879.44); in-sample Moran 0.1394, len sd 1.2577, types 8996 at 32997
+  fits: CA 147 evals 64s; CA-ind 139 evals 54s
+  real held-out: Moran 0.1456 [0.1306,0.1656]; core->core -0.0827 [-0.1105,-0.0576]; prefix gain +0.0560 [+0.0489,+0.0720]; jsd_first_fg 0.1854; CHARWIN +0.1055
+  -- CA: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.0014 [-0.0267,+0.0242] (gen 0.1470, real 0.1456); margin hi-0 = +0.0242
+    P2 fails: core->core excess Δ +0.0715 [+0.0455,+0.1080] (gen -0.0113, real -0.0827); margins 0-lo -0.0455, hi-0 +0.1080
+    P3 fails: prefix gain gen +0.0049 vs real +0.0560 [+0.0489,+0.0720]; margins g-lo -0.0441, hi-g +0.0672
+    P4 fails: jsd_first_fg gen 0.1325 vs s15 width [0.1447,0.2156] (real held-out 0.1854); margins -0.0122 / +0.0831; excess gen +0.1154 real +0.1719
+    P5 HOLDS: CHARWIN gen +0.0269 (real +0.1055); margin +0.0269
+    P7 fails: types gen/real at matched tokens 1.207 (seeds 1.211, 1.204); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.1579 [-0.1877,-0.1332] (gen -0.0123, real 0.1456); margin hi-0 = -0.1332
+    P2 fails: core->core excess Δ +0.0573 [+0.0288,+0.0864] (gen -0.0255, real -0.0827); margins 0-lo -0.0288, hi-0 +0.0864
+    P3 fails: prefix gain gen +0.0110 vs real +0.0560 [+0.0489,+0.0720]; margins g-lo -0.0380, hi-g +0.0611
+    P4 fails: jsd_first_fg gen 0.1258 vs s15 width [0.1447,0.2156] (real held-out 0.1854); margins -0.0189 / +0.0898; excess gen +0.1087 real +0.1719
+    P5 HOLDS: CHARWIN gen +0.0125 (real +0.1055); margin +0.0125
+    P7 fails: types gen/real at matched tokens 1.248 (seeds 1.232, 1.264); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2+ P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ -0.0181 [-0.0413,+0.0053] (gen 0.1275, real 0.1456); margin hi-0 = +0.0053
+    P2 HOLDS: core->core excess Δ -0.0067 [-0.0375,+0.0360] (gen -0.0894, real -0.0827); margins 0-lo +0.0375, hi-0 +0.0360
+    P3 fails: prefix gain gen +0.0004 vs real +0.0560 [+0.0489,+0.0720]; margins g-lo -0.0485, hi-g +0.0716
+    P4 fails: jsd_first_fg gen 0.1377 vs s15 width [0.1447,0.2156] (real held-out 0.1854); margins -0.0070 / +0.0779; excess gen +0.1215 real +0.1719
+    P5 fails: CHARWIN gen -0.0685 (real +0.1055); margin -0.0685
+    P7 fails: types gen/real at matched tokens 1.560 (seeds 1.567, 1.552); tol ±15%
+  fold time 142s
+--- ZL3b fold O: held-out 12 pages (1380 tokens), training 195 pages (33477 tokens)
+  classes: {'top': 300, 'nearest': 469, 'backoff': 1469, 'inertia': 32.7062, 'top_class_sizes': [23, 17, 11, 28, 51, 11, 23, 25, 37, 49, 3, 22]}; mu 4.989; affix contexts CA [455, 51, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1608, word-length sd 1.7888, types 6780 at 33477 tokens
+  fit CA    : p_rep 0.06, tau 12.0, gamma 0.25, rho 0.5; loss 89.94 (R 20.12, types 56.58, Moran 4.62, len-sd 8.62); in-sample Moran 0.1393, len sd 1.7363, types 7290 at 33505
+  fit CA0   : p_rep 0.06, tau 7.0, gamma 0.0, rho 0.0; loss 650.32 (R 22.13, types 337.19, Moran 183.35, len-sd 107.65); in-sample Moran 0.0253, len sd 1.9744, types 8025 at 33666
+  fit CA-ind: p_rep 0.0, tau 1.0, gamma 1.0, rho 0.3; loss 2254.28 (R 89.74, types 1345.53, Moran 21.23, len-sd 797.78); in-sample Moran 0.2068, len sd 1.2836, types 9267 at 33218
+  fits: CA 147 evals 69s; CA-ind 137 evals 55s
+  real held-out: Moran 0.0716 [0.0477,0.1007]; core->core -0.1033 [-0.1524,-0.0628]; prefix gain +0.0215 [+0.0067,+0.0363]; jsd_first_fg 0.2807; CHARWIN +0.0279
+  -- CA: 3/6 hold [P1+ P2- P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0757 [+0.0411,+0.1103] (gen 0.1473, real 0.0716); margin hi-0 = +0.1103
+    P2 fails: core->core excess Δ +0.0871 [+0.0466,+0.1419] (gen -0.0162, real -0.1033); margins 0-lo -0.0466, hi-0 +0.1419
+    P3 fails: prefix gain gen -0.0031 vs real +0.0215 [+0.0067,+0.0363]; margins g-lo -0.0098, hi-g +0.0393
+    P4 fails: jsd_first_fg gen 0.1183 vs s15 width [0.1447,0.2156] (real held-out 0.2807); margins -0.0264 / +0.0973; excess gen +0.0978 real +0.2580
+    P5 HOLDS: CHARWIN gen +0.0086 (real +0.0279); margin +0.0086
+    P7 HOLDS: types gen/real at matched tokens 1.136 (seeds 1.140, 1.132); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.0815 [-0.1159,-0.0513] (gen -0.0099, real 0.0716); margin hi-0 = -0.0513
+    P2 fails: core->core excess Δ +0.0940 [+0.0436,+0.1455] (gen -0.0093, real -0.1033); margins 0-lo -0.0436, hi-0 +0.1455
+    P3 fails: prefix gain gen +0.0001 vs real +0.0215 [+0.0067,+0.0363]; margins g-lo -0.0066, hi-g +0.0362
+    P4 fails: jsd_first_fg gen 0.1320 vs s15 width [0.1447,0.2156] (real held-out 0.2807); margins -0.0127 / +0.0836; excess gen +0.1105 real +0.2580
+    P5 HOLDS: CHARWIN gen +0.0374 (real +0.0279); margin +0.0374
+    P7 HOLDS: types gen/real at matched tokens 1.147 (seeds 1.140, 1.155); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3- P4+ P5- P7-] --
+    P1 HOLDS: Moran Δ +0.1064 [+0.0745,+0.1351] (gen 0.1780, real 0.0716); margin hi-0 = +0.1351
+    P2 fails: core->core excess Δ +0.0905 [+0.0472,+0.1501] (gen -0.0128, real -0.1033); margins 0-lo -0.0472, hi-0 +0.1501
+    P3 fails: prefix gain gen +0.0032 vs real +0.0215 [+0.0067,+0.0363]; margins g-lo -0.0035, hi-g +0.0330
+    P4 HOLDS: jsd_first_fg gen 0.1841 vs s15 width [0.1447,0.2156] (real held-out 0.2807); margins +0.0394 / +0.0315; excess gen +0.1620 real +0.2580
+    P5 fails: CHARWIN gen -0.0221 (real +0.0279); margin -0.0221
+    P7 fails: types gen/real at matched tokens 1.435 (seeds 1.416, 1.454); tol ±15%
+  fold time 147s
+--- ZL3b fold Q: held-out 10 pages (911 tokens), training 197 pages (33946 tokens)
+  classes: {'top': 300, 'nearest': 476, 'backoff': 1513, 'inertia': 34.0098, 'top_class_sizes': [44, 9, 6, 38, 13, 43, 14, 24, 24, 46, 8, 31]}; mu 4.986; affix contexts CA [483, 50, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1604, word-length sd 1.7836, types 6873 at 33946 tokens
+  fit CA    : p_rep 0.06, tau 7.0, gamma 0.25, rho 0.6; loss 89.99 (R 47.82, types 33.87, Moran 1.45, len-sd 6.84); in-sample Moran 0.1725, len sd 1.7370, types 7273 at 33825
+  fit CA0   : p_rep 0.06, tau 7.0, gamma 0.0, rho 0.0; loss 609.14 (R 32.47, types 262.71, Moran 185.31, len-sd 128.65); in-sample Moran 0.0243, len sd 1.9859, types 7987 at 33913
+  fit CA-ind: p_rep 0.0, tau 1.0, gamma 0.75, rho 0.2; loss 2202.59 (R 100.51, types 1599.77, Moran 16.33, len-sd 485.98); in-sample Moran 0.1200, len sd 1.3904, types 9622 at 34106
+  fits: CA 142 evals 65s; CA-ind 137 evals 55s
+  real held-out: Moran 0.0504 [0.0302,0.0763]; core->core -0.0846 [-0.1335,-0.0319]; prefix gain +0.0429 [+0.0215,+0.0585]; jsd_first_fg 0.2596; CHARWIN +0.0453
+  -- CA: 4/6 hold [P1+ P2+ P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0910 [+0.0604,+0.1200] (gen 0.1414, real 0.0504); margin hi-0 = +0.1200
+    P2 HOLDS: core->core excess Δ +0.0541 [-0.0035,+0.1115] (gen -0.0305, real -0.0846); margins 0-lo +0.0035, hi-0 +0.1115
+    P3 fails: prefix gain gen -0.0039 vs real +0.0429 [+0.0215,+0.0585]; margins g-lo -0.0254, hi-g +0.0624
+    P4 fails: jsd_first_fg gen 0.1307 vs s15 width [0.1447,0.2156] (real held-out 0.2596); margins -0.0140 / +0.0849; excess gen +0.1062 real +0.2306
+    P5 HOLDS: CHARWIN gen +0.0290 (real +0.0453); margin +0.0290
+    P7 HOLDS: types gen/real at matched tokens 0.999 (seeds 1.005, 0.993); tol ±15%
+  -- CA0: 4/6 hold [P1+ P2+ P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ -0.0216 [-0.0493,+0.0050] (gen 0.0288, real 0.0504); margin hi-0 = +0.0050
+    P2 HOLDS: core->core excess Δ +0.0425 [-0.0185,+0.0947] (gen -0.0420, real -0.0846); margins 0-lo +0.0185, hi-0 +0.0947
+    P3 fails: prefix gain gen -0.0048 vs real +0.0429 [+0.0215,+0.0585]; margins g-lo -0.0263, hi-g +0.0633
+    P4 fails: jsd_first_fg gen 0.1147 vs s15 width [0.1447,0.2156] (real held-out 0.2596); margins -0.0300 / +0.1009; excess gen +0.0883 real +0.2306
+    P5 HOLDS: CHARWIN gen +0.0281 (real +0.0453); margin +0.0281
+    P7 HOLDS: types gen/real at matched tokens 0.995 (seeds 0.966, 1.023); tol ±15%
+  -- CA-ind: 4/6 hold [P1+ P2+ P3- P4+ P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.0687 [+0.0424,+0.0982] (gen 0.1191, real 0.0504); margin hi-0 = +0.0982
+    P2 HOLDS: core->core excess Δ +0.0508 [-0.0169,+0.0925] (gen -0.0338, real -0.0846); margins 0-lo +0.0169, hi-0 +0.0925
+    P3 fails: prefix gain gen +0.0013 vs real +0.0429 [+0.0215,+0.0585]; margins g-lo -0.0202, hi-g +0.0572
+    P4 HOLDS: jsd_first_fg gen 0.1593 vs s15 width [0.1447,0.2156] (real held-out 0.2596); margins +0.0146 / +0.0563; excess gen +0.1323 real +0.2306
+    P5 HOLDS: CHARWIN gen +0.0514 (real +0.0453); margin +0.0514
+    P7 fails: types gen/real at matched tokens 1.273 (seeds 1.274, 1.272); tol ±15%
+  fold time 140s
+--- ZL3b fold S: held-out 10 pages (1396 tokens), training 197 pages (33461 tokens)
+  classes: {'top': 300, 'nearest': 469, 'backoff': 1488, 'inertia': 33.214, 'top_class_sizes': [29, 49, 25, 38, 10, 17, 44, 7, 39, 22, 12, 8]}; mu 4.992; affix contexts CA [470, 51, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1565, word-length sd 1.7873, types 6804 at 33461 tokens
+  fit CA    : p_rep 0.03, tau 4.0, gamma 0.25, rho 0.6; loss 146.05 (R 53.40, types 72.92, Moran 0.21, len-sd 19.53); in-sample Moran 0.1611, len sd 1.7083, types 7385 at 33071
+  fit CA0   : p_rep 0.03, tau 4.0, gamma 0.0, rho 0.0; loss 604.83 (R 50.42, types 315.74, Moran 170.18, len-sd 68.50); in-sample Moran 0.0260, len sd 1.9352, types 8013 at 33043
+  fit CA-ind: p_rep 0.15, tau 20.0, gamma 0.75, rho 0.3; loss 2023.30 (R 38.29, types 1511.20, Moran 11.95, len-sd 461.85); in-sample Moran 0.1910, len sd 1.4032, types 9449 at 33217
+  fits: CA 142 evals 62s; CA-ind 139 evals 55s
+  real held-out: Moran 0.1737 [0.1361,0.1976]; core->core -0.1387 [-0.1699,-0.0979]; prefix gain +0.0707 [+0.0602,+0.0845]; jsd_first_fg 0.2151; CHARWIN +0.0845
+  -- CA: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.0678 [+0.0264,+0.1192] (gen 0.2415, real 0.1737); margin hi-0 = +0.1192
+    P2 fails: core->core excess Δ +0.1361 [+0.0916,+0.1772] (gen -0.0026, real -0.1387); margins 0-lo -0.0916, hi-0 +0.1772
+    P3 fails: prefix gain gen -0.0030 vs real +0.0707 [+0.0602,+0.0845]; margins g-lo -0.0633, hi-g +0.0876
+    P4 fails: jsd_first_fg gen 0.1054 vs s15 width [0.1447,0.2156] (real held-out 0.2151); margins -0.0393 / +0.1102; excess gen +0.0818 real +0.1899
+    P5 HOLDS: CHARWIN gen +0.0315 (real +0.0845); margin +0.0315
+    P7 fails: types gen/real at matched tokens 1.215 (seeds 1.201, 1.229); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.1497 [-0.1853,-0.0982] (gen 0.0239, real 0.1737); margin hi-0 = -0.0982
+    P2 fails: core->core excess Δ +0.1179 [+0.0756,+0.1648] (gen -0.0208, real -0.1387); margins 0-lo -0.0756, hi-0 +0.1648
+    P3 fails: prefix gain gen -0.0044 vs real +0.0707 [+0.0602,+0.0845]; margins g-lo -0.0646, hi-g +0.0889
+    P4 fails: jsd_first_fg gen 0.1229 vs s15 width [0.1447,0.2156] (real held-out 0.2151); margins -0.0218 / +0.0927; excess gen +0.0970 real +0.1899
+    P5 HOLDS: CHARWIN gen +0.0442 (real +0.0845); margin +0.0442
+    P7 fails: types gen/real at matched tokens 1.247 (seeds 1.234, 1.260); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3- P4+ P5- P7-] --
+    P1 HOLDS: Moran Δ -0.0032 [-0.0393,+0.0426] (gen 0.1704, real 0.1737); margin hi-0 = +0.0426
+    P2 fails: core->core excess Δ +0.1117 [+0.0613,+0.1544] (gen -0.0271, real -0.1387); margins 0-lo -0.0613, hi-0 +0.1544
+    P3 fails: prefix gain gen +0.0226 vs real +0.0707 [+0.0602,+0.0845]; margins g-lo -0.0376, hi-g +0.0619
+    P4 HOLDS: jsd_first_fg gen 0.1698 vs s15 width [0.1447,0.2156] (real held-out 0.2151); margins +0.0251 / +0.0458; excess gen +0.1435 real +0.1899
+    P5 fails: CHARWIN gen -0.0131 (real +0.0845); margin -0.0131
+    P7 fails: types gen/real at matched tokens 1.525 (seeds 1.511, 1.540); tol ±15%
+  fold time 136s
+--- ZL3b fold T: held-out 23 pages (10836 tokens), training 184 pages (24021 tokens)
+  classes: {'top': 300, 'nearest': 300, 'backoff': 1200, 'inertia': 33.013, 'top_class_sizes': [18, 22, 7, 16, 13, 45, 38, 13, 28, 27, 57, 16]}; mu 4.880; affix contexts CA [404, 51, 13] / CA-ind [34, 4]
+  training targets: Moran 0.1337, word-length sd 1.7713, types 5289 at 24021 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.4; loss 81.35 (R 24.96, types 29.86, Moran 8.07, len-sd 18.46); in-sample Moran 0.1053, len sd 1.6952, types 5578 at 23908
+  fit CA0   : p_rep 0.06, tau 20.0, gamma 0.0, rho 0.0; loss 474.90 (R 24.42, types 216.93, Moran 140.92, len-sd 92.63); in-sample Moran 0.0150, len sd 1.9418, types 6068 at 23971
+  fit CA-ind: p_rep 0.15, tau 12.0, gamma 0.75, rho 0.3; loss 2273.28 (R 59.83, types 1728.64, Moran 21.96, len-sd 462.86); in-sample Moran 0.1806, len sd 1.3903, types 7488 at 24076
+  fits: CA 144 evals 42s; CA-ind 142 evals 42s
+  real held-out: Moran 0.1816 [0.1675,0.1967]; core->core -0.0484 [-0.0736,-0.0416]; prefix gain +0.1283 [+0.1149,+0.1396]; jsd_first_fg 0.3153; CHARWIN +0.0687
+  -- CA: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.0750 [-0.0924,-0.0585] (gen 0.1066, real 0.1816); margin hi-0 = -0.0585
+    P2 fails: core->core excess Δ +0.0344 [+0.0227,+0.0611] (gen -0.0140, real -0.0484); margins 0-lo -0.0227, hi-0 +0.0611
+    P3 fails: prefix gain gen -0.0117 vs real +0.1283 [+0.1149,+0.1396]; margins g-lo -0.1266, hi-g +0.1513
+    P4 fails: jsd_first_fg gen 0.0963 vs s15 width [0.1447,0.2156] (real held-out 0.3153); margins -0.0484 / +0.1193; excess gen +0.0924 real +0.3122
+    P5 HOLDS: CHARWIN gen +0.0423 (real +0.0687); margin +0.0423
+    P7 HOLDS: types gen/real at matched tokens 1.091 (seeds 1.087, 1.094); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.1676 [-0.1865,-0.1507] (gen 0.0141, real 0.1816); margin hi-0 = -0.1507
+    P2 fails: core->core excess Δ +0.0470 [+0.0371,+0.0756] (gen -0.0014, real -0.0484); margins 0-lo -0.0371, hi-0 +0.0756
+    P3 fails: prefix gain gen -0.0050 vs real +0.1283 [+0.1149,+0.1396]; margins g-lo -0.1200, hi-g +0.1446
+    P4 fails: jsd_first_fg gen 0.0897 vs s15 width [0.1447,0.2156] (real held-out 0.3153); margins -0.0550 / +0.1259; excess gen +0.0862 real +0.3122
+    P5 HOLDS: CHARWIN gen +0.0515 (real +0.0687); margin +0.0515
+    P7 fails: types gen/real at matched tokens 1.157 (seeds 1.158, 1.156); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.0004 [-0.0160,+0.0164] (gen 0.1820, real 0.1816); margin hi-0 = +0.0164
+    P2 fails: core->core excess Δ +0.0407 [+0.0283,+0.0650] (gen -0.0077, real -0.0484); margins 0-lo -0.0283, hi-0 +0.0650
+    P3 fails: prefix gain gen -0.0047 vs real +0.1283 [+0.1149,+0.1396]; margins g-lo -0.1196, hi-g +0.1443
+    P4 fails: jsd_first_fg gen 0.1090 vs s15 width [0.1447,0.2156] (real held-out 0.3153); margins -0.0357 / +0.1066; excess gen +0.1053 real +0.3122
+    P5 HOLDS: CHARWIN gen +0.0265 (real +0.0687); margin +0.0265
+    P7 fails: types gen/real at matched tokens 1.520 (seeds 1.532, 1.509); tol ±15%
+  fold time 154s
+
+=== RF1b ===
+--- RF1b fold A: held-out 16 pages (1469 tokens), training 191 pages (33149 tokens)
+  classes: {'top': 300, 'nearest': 485, 'backoff': 1648, 'inertia': 33.6133, 'top_class_sizes': [49, 51, 5, 28, 21, 22, 12, 35, 18, 8, 14, 37]}; mu 5.061; affix contexts CA [469, 50, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1588, word-length sd 1.7976, types 7075 at 33149 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.8; loss 100.03 (R 36.42, types 29.00, Moran 15.61, len-sd 19.01); in-sample Moran 0.1983, len sd 1.7192, types 7456 at 33313
+  fit CA0   : p_rep 0.1, tau 12.0, gamma 0.0, rho 0.0; loss 507.09 (R 48.06, types 232.59, Moran 171.69, len-sd 54.75); in-sample Moran 0.0277, len sd 1.9306, types 8154 at 33361
+  fit CA-ind: p_rep 0.15, tau 20.0, gamma 0.5, rho 0.3; loss 2011.03 (R 27.48, types 1818.43, Moran 0.23, len-sd 164.89); in-sample Moran 0.1540, len sd 1.5668, types 10092 at 33017
+  fits: CA 147 evals 58s; CA-ind 139 evals 52s
+  real held-out: Moran 0.0506 [0.0253,0.0801]; core->core -0.0780 [-0.1243,-0.0400]; prefix gain +0.1300 [+0.1155,+0.1467]; jsd_first_fg 0.1480; CHARWIN +0.0750
+  -- CA: 2/6 hold [P1+ P2- P3- P4- P5- P7+] --
+    P1 HOLDS: Moran Δ +0.1426 [+0.1093,+0.1713] (gen 0.1932, real 0.0506); margin hi-0 = +0.1713
+    P2 fails: core->core excess Δ +0.0924 [+0.0474,+0.1374] (gen +0.0143, real -0.0780); margins 0-lo -0.0474, hi-0 +0.1374
+    P3 fails: prefix gain gen +0.0036 vs real +0.1300 [+0.1155,+0.1467]; margins g-lo -0.1118, hi-g +0.1430
+    P4 fails: jsd_first_fg gen 0.1227 vs s15 width [0.1447,0.2156] (real held-out 0.1480); margins -0.0220 / +0.0929; excess gen +0.1074 real +0.1287
+    P5 fails: CHARWIN gen -0.0087 (real +0.0750); margin -0.0087
+    P7 HOLDS: types gen/real at matched tokens 1.070 (seeds 1.065, 1.075); tol ±15%
+  -- CA0: 4/6 hold [P1+ P2- P3- P4+ P5+ P7+] --
+    P1 HOLDS: Moran Δ -0.0306 [-0.0652,+0.0039] (gen 0.0199, real 0.0506); margin hi-0 = +0.0039
+    P2 fails: core->core excess Δ +0.0664 [+0.0294,+0.1238] (gen -0.0116, real -0.0780); margins 0-lo -0.0294, hi-0 +0.1238
+    P3 fails: prefix gain gen +0.0010 vs real +0.1300 [+0.1155,+0.1467]; margins g-lo -0.1145, hi-g +0.1457
+    P4 HOLDS: jsd_first_fg gen 0.1562 vs s15 width [0.1447,0.2156] (real held-out 0.1480); margins +0.0115 / +0.0594; excess gen +0.1405 real +0.1287
+    P5 HOLDS: CHARWIN gen +0.0540 (real +0.0750); margin +0.0540
+    P7 HOLDS: types gen/real at matched tokens 1.103 (seeds 1.063, 1.144); tol ±15%
+  -- CA-ind: 3/6 hold [P1+ P2- P3- P4+ P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.1112 [+0.0727,+0.1465] (gen 0.1617, real 0.0506); margin hi-0 = +0.1465
+    P2 fails: core->core excess Δ +0.0738 [+0.0339,+0.1230] (gen -0.0042, real -0.0780); margins 0-lo -0.0339, hi-0 +0.1230
+    P3 fails: prefix gain gen +0.0168 vs real +0.1300 [+0.1155,+0.1467]; margins g-lo -0.0987, hi-g +0.1299
+    P4 HOLDS: jsd_first_fg gen 0.1710 vs s15 width [0.1447,0.2156] (real held-out 0.1480); margins +0.0263 / +0.0446; excess gen +0.1561 real +0.1287
+    P5 HOLDS: CHARWIN gen +0.0272 (real +0.0750); margin +0.0272
+    P7 fails: types gen/real at matched tokens 1.435 (seeds 1.437, 1.434); tol ±15%
+  fold time 132s
+--- RF1b fold B: held-out 14 pages (990 tokens), training 193 pages (33628 tokens)
+  classes: {'top': 300, 'nearest': 497, 'backoff': 1667, 'inertia': 32.4506, 'top_class_sizes': [21, 38, 55, 22, 17, 11, 13, 29, 42, 11, 25, 16]}; mu 5.061; affix contexts CA [476, 50, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1547, word-length sd 1.7985, types 7175 at 33628 tokens
+  fit CA    : p_rep 0.06, tau 20.0, gamma 0.25, rho 0.7; loss 105.89 (R 22.58, types 43.83, Moran 9.50, len-sd 29.98); in-sample Moran 0.1856, len sd 1.7000, types 7650 at 33389
+  fit CA0   : p_rep 0.06, tau 12.0, gamma 0.0, rho 0.0; loss 546.22 (R 28.68, types 227.41, Moran 210.43, len-sd 79.70); in-sample Moran 0.0097, len sd 1.9590, types 8257 at 33366
+  fit CA-ind: p_rep 0.1, tau 7.0, gamma 0.75, rho 0.3; loss 1857.93 (R 42.58, types 1332.38, Moran 10.66, len-sd 472.31); in-sample Moran 0.1874, len sd 1.4076, types 9794 at 33300
+  fits: CA 147 evals 58s; CA-ind 142 evals 55s
+  real held-out: Moran 0.1362 [0.1005,0.1610]; core->core -0.1538 [-0.2012,-0.1087]; prefix gain +0.0944 [+0.0560,+0.1451]; jsd_first_fg 0.1780; CHARWIN +0.1132
+  -- CA: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0686 [+0.0340,+0.1086] (gen 0.2048, real 0.1362); margin hi-0 = +0.1086
+    P2 fails: core->core excess Δ +0.1715 [+0.0949,+0.2204] (gen +0.0177, real -0.1538); margins 0-lo -0.0949, hi-0 +0.2204
+    P3 fails: prefix gain gen -0.0093 vs real +0.0944 [+0.0560,+0.1451]; margins g-lo -0.0652, hi-g +0.1544
+    P4 fails: jsd_first_fg gen 0.1311 vs s15 width [0.1447,0.2156] (real held-out 0.1780); margins -0.0136 / +0.0845; excess gen +0.1108 real +0.1571
+    P5 fails: CHARWIN gen -0.0243 (real +0.1132); margin -0.0243
+    P7 fails: types gen/real at matched tokens 1.312 (seeds 1.264, 1.361); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.1131 [-0.1434,-0.0751] (gen 0.0232, real 0.1362); margin hi-0 = -0.0751
+    P2 fails: core->core excess Δ +0.1541 [+0.0975,+0.2100] (gen +0.0003, real -0.1538); margins 0-lo -0.0975, hi-0 +0.2100
+    P3 fails: prefix gain gen -0.0033 vs real +0.0944 [+0.0560,+0.1451]; margins g-lo -0.0593, hi-g +0.1484
+    P4 fails: jsd_first_fg gen 0.1409 vs s15 width [0.1447,0.2156] (real held-out 0.1780); margins -0.0038 / +0.0747; excess gen +0.1179 real +0.1571
+    P5 HOLDS: CHARWIN gen +0.0310 (real +0.1132); margin +0.0310
+    P7 fails: types gen/real at matched tokens 1.249 (seeds 1.250, 1.248); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0631 [+0.0313,+0.0998] (gen 0.1993, real 0.1362); margin hi-0 = +0.0998
+    P2 fails: core->core excess Δ +0.1332 [+0.0797,+0.1819] (gen -0.0206, real -0.1538); margins 0-lo -0.0797, hi-0 +0.1819
+    P3 fails: prefix gain gen +0.0126 vs real +0.0944 [+0.0560,+0.1451]; margins g-lo -0.0433, hi-g +0.1324
+    P4 fails: jsd_first_fg gen 0.1394 vs s15 width [0.1447,0.2156] (real held-out 0.1780); margins -0.0053 / +0.0762; excess gen +0.1189 real +0.1571
+    P5 fails: CHARWIN gen -0.0304 (real +0.1132); margin -0.0304
+    P7 fails: types gen/real at matched tokens 1.595 (seeds 1.558, 1.631); tol ±15%
+  fold time 131s
+--- RF1b fold C: held-out 16 pages (1394 tokens), training 191 pages (33224 tokens)
+  classes: {'top': 300, 'nearest': 494, 'backoff': 1661, 'inertia': 33.4678, 'top_class_sizes': [32, 19, 33, 40, 12, 23, 12, 55, 36, 11, 14, 13]}; mu 5.065; affix contexts CA [485, 50, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1569, word-length sd 1.7969, types 7107 at 33224 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.4; loss 101.79 (R 29.56, types 32.96, Moran 13.50, len-sd 25.76); in-sample Moran 0.1202, len sd 1.7057, types 7515 at 33382
+  fit CA0   : p_rep 0.1, tau 20.0, gamma 0.0, rho 0.0; loss 545.37 (R 18.84, types 245.25, Moran 183.00, len-sd 98.27); in-sample Moran 0.0216, len sd 1.9750, types 8220 at 33144
+  fit CA-ind: p_rep 0.1, tau 20.0, gamma 1.0, rho 0.1; loss 1914.07 (R 18.90, types 961.72, Moran 61.49, len-sd 871.96); in-sample Moran 0.0785, len sd 1.2663, types 9311 at 33138
+  fits: CA 139 evals 55s; CA-ind 139 evals 54s
+  real held-out: Moran 0.0820 [0.0527,0.1122]; core->core -0.1157 [-0.1439,-0.0781]; prefix gain +0.0452 [+0.0258,+0.0646]; jsd_first_fg 0.1742; CHARWIN +0.0726
+  -- CA: 3/6 hold [P1+ P2- P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0551 [+0.0206,+0.0884] (gen 0.1371, real 0.0820); margin hi-0 = +0.0884
+    P2 fails: core->core excess Δ +0.1469 [+0.0985,+0.1787] (gen +0.0313, real -0.1157); margins 0-lo -0.0985, hi-0 +0.1787
+    P3 fails: prefix gain gen +0.0021 vs real +0.0452 [+0.0258,+0.0646]; margins g-lo -0.0237, hi-g +0.0625
+    P4 fails: jsd_first_fg gen 0.1168 vs s15 width [0.1447,0.2156] (real held-out 0.1742); margins -0.0279 / +0.0988; excess gen +0.1021 real +0.1556
+    P5 HOLDS: CHARWIN gen +0.0200 (real +0.0726); margin +0.0200
+    P7 HOLDS: types gen/real at matched tokens 1.108 (seeds 1.088, 1.127); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.0814 [-0.1157,-0.0472] (gen 0.0005, real 0.0820); margin hi-0 = -0.0472
+    P2 fails: core->core excess Δ +0.1463 [+0.0992,+0.1749] (gen +0.0307, real -0.1157); margins 0-lo -0.0992, hi-0 +0.1749
+    P3 fails: prefix gain gen -0.0032 vs real +0.0452 [+0.0258,+0.0646]; margins g-lo -0.0289, hi-g +0.0678
+    P4 fails: jsd_first_fg gen 0.1045 vs s15 width [0.1447,0.2156] (real held-out 0.1742); margins -0.0402 / +0.1111; excess gen +0.0883 real +0.1556
+    P5 HOLDS: CHARWIN gen +0.0103 (real +0.0726); margin +0.0103
+    P7 HOLDS: types gen/real at matched tokens 1.146 (seeds 1.126, 1.167); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3- P4+ P5- P7-] --
+    P1 HOLDS: Moran Δ -0.0271 [-0.0621,+0.0064] (gen 0.0549, real 0.0820); margin hi-0 = +0.0064
+    P2 fails: core->core excess Δ +0.0451 [+0.0009,+0.0782] (gen -0.0706, real -0.1157); margins 0-lo -0.0009, hi-0 +0.0782
+    P3 fails: prefix gain gen -0.0022 vs real +0.0452 [+0.0258,+0.0646]; margins g-lo -0.0279, hi-g +0.0668
+    P4 HOLDS: jsd_first_fg gen 0.1777 vs s15 width [0.1447,0.2156] (real held-out 0.1742); margins +0.0330 / +0.0379; excess gen +0.1617 real +0.1556
+    P5 fails: CHARWIN gen -0.0698 (real +0.0726); margin -0.0698
+    P7 fails: types gen/real at matched tokens 1.510 (seeds 1.527, 1.494); tol ±15%
+  fold time 129s
+--- RF1b fold D: held-out 16 pages (1238 tokens), training 191 pages (33380 tokens)
+  classes: {'top': 300, 'nearest': 492, 'backoff': 1670, 'inertia': 33.4404, 'top_class_sizes': [8, 43, 49, 8, 30, 21, 19, 24, 38, 12, 27, 21]}; mu 5.059; affix contexts CA [495, 49, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1561, word-length sd 1.7952, types 7143 at 33380 tokens
+  fit CA    : p_rep 0.06, tau 20.0, gamma 0.25, rho 0.5; loss 87.89 (R 29.73, types 34.41, Moran 4.97, len-sd 18.79); in-sample Moran 0.1338, len sd 1.7174, types 7562 at 33421
+  fit CA0   : p_rep 0.1, tau 12.0, gamma 0.0, rho 0.0; loss 472.76 (R 33.90, types 158.05, Moran 191.84, len-sd 88.97); in-sample Moran 0.0176, len sd 1.9646, types 8041 at 33113
+  fit CA-ind: p_rep 0.06, tau 12.0, gamma 0.75, rho 0.3; loss 1834.77 (R 45.03, types 1318.80, Moran 6.24, len-sd 464.69); in-sample Moran 0.1810, len sd 1.4082, types 9737 at 33380
+  fits: CA 147 evals 58s; CA-ind 150 evals 56s
+  real held-out: Moran 0.1163 [0.0943,0.1385]; core->core -0.0509 [-0.0882,-0.0275]; prefix gain +0.1029 [+0.0860,+0.1245]; jsd_first_fg 0.1374; CHARWIN +0.0824
+  -- CA: 4/6 hold [P1+ P2- P3- P4+ P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0536 [+0.0271,+0.0795] (gen 0.1699, real 0.1163); margin hi-0 = +0.0795
+    P2 fails: core->core excess Δ +0.0801 [+0.0484,+0.1244] (gen +0.0291, real -0.0509); margins 0-lo -0.0484, hi-0 +0.1244
+    P3 fails: prefix gain gen +0.0099 vs real +0.1029 [+0.0860,+0.1245]; margins g-lo -0.0761, hi-g +0.1146
+    P4 HOLDS: jsd_first_fg gen 0.1479 vs s15 width [0.1447,0.2156] (real held-out 0.1374); margins +0.0032 / +0.0677; excess gen +0.1312 real +0.1142
+    P5 HOLDS: CHARWIN gen +0.0055 (real +0.0824); margin +0.0055
+    P7 HOLDS: types gen/real at matched tokens 1.075 (seeds 1.064, 1.087); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.1373 [-0.1637,-0.1129] (gen -0.0211, real 0.1163); margin hi-0 = -0.1129
+    P2 fails: core->core excess Δ +0.0597 [+0.0230,+0.1024] (gen +0.0088, real -0.0509); margins 0-lo -0.0230, hi-0 +0.1024
+    P3 fails: prefix gain gen -0.0078 vs real +0.1029 [+0.0860,+0.1245]; margins g-lo -0.0938, hi-g +0.1323
+    P4 fails: jsd_first_fg gen 0.1283 vs s15 width [0.1447,0.2156] (real held-out 0.1374); margins -0.0164 / +0.0873; excess gen +0.1100 real +0.1142
+    P5 HOLDS: CHARWIN gen +0.0219 (real +0.0824); margin +0.0219
+    P7 HOLDS: types gen/real at matched tokens 1.072 (seeds 1.070, 1.075); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3- P4+ P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0531 [+0.0257,+0.0818] (gen 0.1693, real 0.1163); margin hi-0 = +0.0818
+    P2 fails: core->core excess Δ +0.0356 [+0.0008,+0.0784] (gen -0.0153, real -0.0509); margins 0-lo -0.0008, hi-0 +0.0784
+    P3 fails: prefix gain gen +0.0075 vs real +0.1029 [+0.0860,+0.1245]; margins g-lo -0.0785, hi-g +0.1170
+    P4 HOLDS: jsd_first_fg gen 0.1515 vs s15 width [0.1447,0.2156] (real held-out 0.1374); margins +0.0068 / +0.0641; excess gen +0.1318 real +0.1142
+    P5 fails: CHARWIN gen -0.0058 (real +0.0824); margin -0.0058
+    P7 fails: types gen/real at matched tokens 1.422 (seeds 1.408, 1.436); tol ±15%
+  fold time 134s
+--- RF1b fold E: held-out 16 pages (1509 tokens), training 191 pages (33109 tokens)
+  classes: {'top': 300, 'nearest': 496, 'backoff': 1662, 'inertia': 33.1162, 'top_class_sizes': [24, 19, 28, 19, 9, 9, 54, 45, 26, 39, 3, 25]}; mu 5.067; affix contexts CA [469, 49, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1545, word-length sd 1.7953, types 7149 at 33109 tokens
+  fit CA    : p_rep 0.06, tau 7.0, gamma 0.25, rho 0.5; loss 172.86 (R 46.43, types 106.86, Moran 1.95, len-sd 17.62); in-sample Moran 0.1406, len sd 1.7199, types 7888 at 33363
+  fit CA0   : p_rep 0.06, tau 7.0, gamma 0.0, rho 0.0; loss 662.07 (R 40.30, types 331.69, Moran 182.73, len-sd 107.35); in-sample Moran 0.0194, len sd 1.9813, types 8451 at 33096
+  fit CA-ind: p_rep 0.06, tau 12.0, gamma 0.5, rho 0.2; loss 1903.70 (R 33.00, types 1676.31, Moran 20.82, len-sd 173.57); in-sample Moran 0.1089, len sd 1.5588, types 10076 at 32919
+  fits: CA 142 evals 58s; CA-ind 142 evals 54s
+  real held-out: Moran 0.1340 [0.1089,0.1562]; core->core -0.1206 [-0.1501,-0.0832]; prefix gain +0.0610 [+0.0418,+0.0876]; jsd_first_fg 0.2516; CHARWIN +0.1040
+  -- CA: 3/6 hold [P1+ P2- P3- P4+ P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.0006 [-0.0266,+0.0319] (gen 0.1345, real 0.1340); margin hi-0 = +0.0319
+    P2 fails: core->core excess Δ +0.0790 [+0.0388,+0.1142] (gen -0.0416, real -0.1206); margins 0-lo -0.0388, hi-0 +0.1142
+    P3 fails: prefix gain gen -0.0038 vs real +0.0610 [+0.0418,+0.0876]; margins g-lo -0.0456, hi-g +0.0914
+    P4 HOLDS: jsd_first_fg gen 0.1565 vs s15 width [0.1447,0.2156] (real held-out 0.2516); margins +0.0118 / +0.0591; excess gen +0.1415 real +0.2322
+    P5 HOLDS: CHARWIN gen +0.0146 (real +0.1040); margin +0.0146
+    P7 fails: types gen/real at matched tokens 1.181 (seeds 1.148, 1.214); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4+ P5+ P7-] --
+    P1 fails: Moran Δ -0.1183 [-0.1459,-0.0894] (gen 0.0156, real 0.1340); margin hi-0 = -0.0894
+    P2 fails: core->core excess Δ +0.0893 [+0.0446,+0.1177] (gen -0.0313, real -0.1206); margins 0-lo -0.0446, hi-0 +0.1177
+    P3 fails: prefix gain gen +0.0042 vs real +0.0610 [+0.0418,+0.0876]; margins g-lo -0.0376, hi-g +0.0834
+    P4 HOLDS: jsd_first_fg gen 0.1743 vs s15 width [0.1447,0.2156] (real held-out 0.2516); margins +0.0296 / +0.0413; excess gen +0.1573 real +0.2322
+    P5 HOLDS: CHARWIN gen +0.0270 (real +0.1040); margin +0.0270
+    P7 fails: types gen/real at matched tokens 1.210 (seeds 1.206, 1.215); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ -0.0050 [-0.0311,+0.0270] (gen 0.1289, real 0.1340); margin hi-0 = +0.0270
+    P2 fails: core->core excess Δ +0.0694 [+0.0269,+0.1077] (gen -0.0512, real -0.1206); margins 0-lo -0.0269, hi-0 +0.1077
+    P3 fails: prefix gain gen +0.0014 vs real +0.0610 [+0.0418,+0.0876]; margins g-lo -0.0404, hi-g +0.0862
+    P4 fails: jsd_first_fg gen 0.1408 vs s15 width [0.1447,0.2156] (real held-out 0.2516); margins -0.0039 / +0.0748; excess gen +0.1244 real +0.2322
+    P5 HOLDS: CHARWIN gen +0.0349 (real +0.1040); margin +0.0349
+    P7 fails: types gen/real at matched tokens 1.561 (seeds 1.568, 1.553); tol ±15%
+  fold time 134s
+--- RF1b fold F: held-out 16 pages (1688 tokens), training 191 pages (32930 tokens)
+  classes: {'top': 300, 'nearest': 484, 'backoff': 1663, 'inertia': 33.4353, 'top_class_sizes': [12, 23, 45, 38, 55, 38, 9, 25, 12, 12, 8, 23]}; mu 5.060; affix contexts CA [485, 50, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1564, word-length sd 1.8002, types 7072 at 32930 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.4; loss 117.15 (R 24.75, types 58.95, Moran 19.03, len-sd 14.41); in-sample Moran 0.1128, len sd 1.7319, types 7615 at 32975
+  fit CA0   : p_rep 0.06, tau 12.0, gamma 0.0, rho 0.0; loss 698.92 (R 30.05, types 294.20, Moran 223.18, len-sd 151.49); in-sample Moran 0.0070, len sd 2.0218, types 8285 at 33101
+  fit CA-ind: p_rep 0.1, tau 7.0, gamma 0.75, rho 0.2; loss 1933.58 (R 41.45, types 1378.81, Moran 11.47, len-sd 501.84); in-sample Moran 0.1225, len sd 1.3969, types 9698 at 32671
+  fits: CA 147 evals 57s; CA-ind 150 evals 58s
+  real held-out: Moran 0.1183 [0.0939,0.1453]; core->core -0.0757 [-0.1128,-0.0327]; prefix gain +0.0424 [+0.0137,+0.0663]; jsd_first_fg 0.1462; CHARWIN +0.0997
+  -- CA: 4/6 hold [P1+ P2- P3- P4+ P5+ P7+] --
+    P1 HOLDS: Moran Δ -0.0141 [-0.0451,+0.0143] (gen 0.1041, real 0.1183); margin hi-0 = +0.0143
+    P2 fails: core->core excess Δ +0.0585 [+0.0144,+0.1016] (gen -0.0172, real -0.0757); margins 0-lo -0.0144, hi-0 +0.1016
+    P3 fails: prefix gain gen -0.0020 vs real +0.0424 [+0.0137,+0.0663]; margins g-lo -0.0157, hi-g +0.0683
+    P4 HOLDS: jsd_first_fg gen 0.1520 vs s15 width [0.1447,0.2156] (real held-out 0.1462); margins +0.0073 / +0.0636; excess gen +0.1352 real +0.1278
+    P5 HOLDS: CHARWIN gen +0.0111 (real +0.0997); margin +0.0111
+    P7 HOLDS: types gen/real at matched tokens 1.053 (seeds 1.026, 1.080); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.1007 [-0.1352,-0.0721] (gen 0.0175, real 0.1183); margin hi-0 = -0.0721
+    P2 fails: core->core excess Δ +0.0990 [+0.0497,+0.1428] (gen +0.0234, real -0.0757); margins 0-lo -0.0497, hi-0 +0.1428
+    P3 fails: prefix gain gen +0.0079 vs real +0.0424 [+0.0137,+0.0663]; margins g-lo -0.0058, hi-g +0.0584
+    P4 fails: jsd_first_fg gen 0.1277 vs s15 width [0.1447,0.2156] (real held-out 0.1462); margins -0.0170 / +0.0879; excess gen +0.1120 real +0.1278
+    P5 HOLDS: CHARWIN gen +0.0353 (real +0.0997); margin +0.0353
+    P7 HOLDS: types gen/real at matched tokens 1.087 (seeds 1.063, 1.110); tol ±15%
+  -- CA-ind: 3/6 hold [P1+ P2+ P3- P4+ P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0152 [-0.0151,+0.0479] (gen 0.1334, real 0.1183); margin hi-0 = +0.0479
+    P2 HOLDS: core->core excess Δ +0.0340 [-0.0124,+0.0753] (gen -0.0417, real -0.0757); margins 0-lo +0.0124, hi-0 +0.0753
+    P3 fails: prefix gain gen +0.0029 vs real +0.0424 [+0.0137,+0.0663]; margins g-lo -0.0108, hi-g +0.0634
+    P4 HOLDS: jsd_first_fg gen 0.1533 vs s15 width [0.1447,0.2156] (real held-out 0.1462); margins +0.0086 / +0.0623; excess gen +0.1364 real +0.1278
+    P5 fails: CHARWIN gen -0.0200 (real +0.0997); margin -0.0200
+    P7 fails: types gen/real at matched tokens 1.407 (seeds 1.425, 1.389); tol ±15%
+  fold time 136s
+--- RF1b fold G: held-out 16 pages (1478 tokens), training 191 pages (33140 tokens)
+  classes: {'top': 300, 'nearest': 482, 'backoff': 1646, 'inertia': 33.4039, 'top_class_sizes': [23, 24, 10, 25, 41, 10, 55, 12, 15, 14, 29, 42]}; mu 5.056; affix contexts CA [483, 50, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1539, word-length sd 1.7921, types 7084 at 33140 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.7; loss 133.86 (R 39.67, types 74.15, Moran 5.20, len-sd 14.84); in-sample Moran 0.1767, len sd 1.7230, types 7694 at 32970
+  fit CA0   : p_rep 0.15, tau 12.0, gamma 0.0, rho 0.0; loss 574.58 (R 92.06, types 235.45, Moran 178.66, len-sd 68.41); in-sample Moran 0.0203, len sd 1.9403, types 8171 at 32710
+  fit CA-ind: p_rep 0.0, tau 1.0, gamma 0.75, rho 0.3; loss 1932.34 (R 103.21, types 1340.86, Moran 13.97, len-sd 474.31); in-sample Moran 0.1913, len sd 1.4018, types 9678 at 32931
+  fits: CA 147 evals 59s; CA-ind 137 evals 49s
+  real held-out: Moran 0.1736 [0.1302,0.2001]; core->core -0.1339 [-0.1700,-0.1003]; prefix gain +0.0759 [+0.0474,+0.0978]; jsd_first_fg 0.1658; CHARWIN +0.0830
+  -- CA: 3/6 hold [P1+ P2- P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ -0.0099 [-0.0447,+0.0359] (gen 0.1637, real 0.1736); margin hi-0 = +0.0359
+    P2 fails: core->core excess Δ +0.1210 [+0.0811,+0.1625] (gen -0.0129, real -0.1339); margins 0-lo -0.0811, hi-0 +0.1625
+    P3 fails: prefix gain gen +0.0144 vs real +0.0759 [+0.0474,+0.0978]; margins g-lo -0.0330, hi-g +0.0835
+    P4 fails: jsd_first_fg gen 0.1379 vs s15 width [0.1447,0.2156] (real held-out 0.1658); margins -0.0068 / +0.0777; excess gen +0.1223 real +0.1498
+    P5 HOLDS: CHARWIN gen +0.0408 (real +0.0830); margin +0.0408
+    P7 HOLDS: types gen/real at matched tokens 1.073 (seeds 1.056, 1.090); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.1453 [-0.1787,-0.0995] (gen 0.0283, real 0.1736); margin hi-0 = -0.0995
+    P2 fails: core->core excess Δ +0.1417 [+0.1066,+0.1872] (gen +0.0078, real -0.1339); margins 0-lo -0.1066, hi-0 +0.1872
+    P3 fails: prefix gain gen -0.0053 vs real +0.0759 [+0.0474,+0.0978]; margins g-lo -0.0527, hi-g +0.1032
+    P4 fails: jsd_first_fg gen 0.1365 vs s15 width [0.1447,0.2156] (real held-out 0.1658); margins -0.0082 / +0.0791; excess gen +0.1214 real +0.1498
+    P5 HOLDS: CHARWIN gen +0.0048 (real +0.0830); margin +0.0048
+    P7 HOLDS: types gen/real at matched tokens 1.115 (seeds 1.113, 1.118); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0252 [-0.0053,+0.0695] (gen 0.1989, real 0.1736); margin hi-0 = +0.0695
+    P2 fails: core->core excess Δ +0.1029 [+0.0643,+0.1449] (gen -0.0310, real -0.1339); margins 0-lo -0.0643, hi-0 +0.1449
+    P3 fails: prefix gain gen +0.0123 vs real +0.0759 [+0.0474,+0.0978]; margins g-lo -0.0351, hi-g +0.0856
+    P4 fails: jsd_first_fg gen 0.1193 vs s15 width [0.1447,0.2156] (real held-out 0.1658); margins -0.0254 / +0.0963; excess gen +0.1037 real +0.1498
+    P5 fails: CHARWIN gen -0.0080 (real +0.0830); margin -0.0080
+    P7 fails: types gen/real at matched tokens 1.391 (seeds 1.375, 1.408); tol ±15%
+  fold time 131s
+--- RF1b fold H: held-out 6 pages (1272 tokens), training 201 pages (33346 tokens)
+  classes: {'top': 300, 'nearest': 496, 'backoff': 1650, 'inertia': 33.1814, 'top_class_sizes': [14, 28, 12, 24, 21, 14, 24, 24, 32, 12, 41, 54]}; mu 5.050; affix contexts CA [490, 50, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1545, word-length sd 1.7966, types 7065 at 33346 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.5; loss 63.82 (R 26.13, types 18.15, Moran 3.10, len-sd 16.44); in-sample Moran 0.1369, len sd 1.7238, types 7366 at 33205
+  fit CA0   : p_rep 0.1, tau 20.0, gamma 0.0, rho 0.0; loss 531.03 (R 23.36, types 217.53, Moran 180.15, len-sd 110.00); in-sample Moran 0.0203, len sd 1.9850, types 8107 at 33539
+  fit CA-ind: p_rep 0.06, tau 20.0, gamma 0.75, rho 0.3; loss 1846.13 (R 31.81, types 1332.53, Moran 11.21, len-sd 470.58); in-sample Moran 0.1880, len sd 1.4069, types 9644 at 33455
+  fits: CA 139 evals 54s; CA-ind 139 evals 52s
+  real held-out: Moran 0.1613 [0.1399,0.1691]; core->core -0.1249 [-0.1858,-0.0883]; prefix gain +0.0216 [+0.0091,+0.0391]; jsd_first_fg 0.2445; CHARWIN +0.0534
+  -- CA: 3/6 hold [P1+ P2- P3+ P4- P5- P7+] --
+    P1 HOLDS: Moran Δ +0.0144 [-0.0012,+0.0473] (gen 0.1757, real 0.1613); margin hi-0 = +0.0473
+    P2 fails: core->core excess Δ +0.1174 [+0.0739,+0.1786] (gen -0.0075, real -0.1249); margins 0-lo -0.0739, hi-0 +0.1786
+    P3 HOLDS: prefix gain gen +0.0109 vs real +0.0216 [+0.0091,+0.0391]; margins g-lo +0.0018, hi-g +0.0282
+    P4 fails: jsd_first_fg gen 0.1356 vs s15 width [0.1447,0.2156] (real held-out 0.2445); margins -0.0091 / +0.0800; excess gen +0.1129 real +0.2209
+    P5 fails: CHARWIN gen -0.0017 (real +0.0534); margin -0.0017
+    P7 HOLDS: types gen/real at matched tokens 0.978 (seeds 0.965, 0.990); tol ±15%
+  -- CA0: 3/6 hold [P1- P2- P3- P4+ P5+ P7+] --
+    P1 fails: Moran Δ -0.1494 [-0.1724,-0.1180] (gen 0.0119, real 0.1613); margin hi-0 = -0.1180
+    P2 fails: core->core excess Δ +0.1131 [+0.0669,+0.1786] (gen -0.0119, real -0.1249); margins 0-lo -0.0669, hi-0 +0.1786
+    P3 fails: prefix gain gen +0.0053 vs real +0.0216 [+0.0091,+0.0391]; margins g-lo -0.0038, hi-g +0.0337
+    P4 HOLDS: jsd_first_fg gen 0.1561 vs s15 width [0.1447,0.2156] (real held-out 0.2445); margins +0.0114 / +0.0595; excess gen +0.1337 real +0.2209
+    P5 HOLDS: CHARWIN gen +0.0092 (real +0.0534); margin +0.0092
+    P7 HOLDS: types gen/real at matched tokens 0.993 (seeds 0.989, 0.997); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.0257 [+0.0055,+0.0583] (gen 0.1870, real 0.1613); margin hi-0 = +0.0583
+    P2 fails: core->core excess Δ +0.0985 [+0.0562,+0.1633] (gen -0.0264, real -0.1249); margins 0-lo -0.0562, hi-0 +0.1633
+    P3 fails: prefix gain gen +0.0068 vs real +0.0216 [+0.0091,+0.0391]; margins g-lo -0.0023, hi-g +0.0322
+    P4 fails: jsd_first_fg gen 0.1390 vs s15 width [0.1447,0.2156] (real held-out 0.2445); margins -0.0057 / +0.0766; excess gen +0.1155 real +0.2209
+    P5 HOLDS: CHARWIN gen +0.0109 (real +0.0534); margin +0.0109
+    P7 fails: types gen/real at matched tokens 1.262 (seeds 1.258, 1.267); tol ±15%
+  fold time 124s
+--- RF1b fold I: held-out 7 pages (359 tokens), training 200 pages (34259 tokens)
+  classes: {'top': 300, 'nearest': 510, 'backoff': 1693, 'inertia': 32.8067, 'top_class_sizes': [25, 3, 37, 48, 19, 16, 14, 53, 24, 12, 9, 40]}; mu 5.054; affix contexts CA [467, 49, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1555, word-length sd 1.7955, types 7266 at 34259 tokens
+  fit CA    : p_rep 0.06, tau 12.0, gamma 0.25, rho 0.5; loss 88.03 (R 27.20, types 42.02, Moran 5.88, len-sd 12.93); in-sample Moran 0.1313, len sd 1.7309, types 7737 at 33920
+  fit CA0   : p_rep 0.06, tau 12.0, gamma 0.0, rho 0.0; loss 708.51 (R 23.23, types 364.91, Moran 180.63, len-sd 139.74); in-sample Moran 0.0211, len sd 2.0077, types 8654 at 34634
+  fit CA-ind: p_rep 0.15, tau 20.0, gamma 0.75, rho 0.3; loss 1798.13 (R 36.20, types 1288.32, Moran 6.71, len-sd 466.90); in-sample Moran 0.1814, len sd 1.4075, types 9874 at 33795
+  fits: CA 142 evals 57s; CA-ind 139 evals 53s
+  real held-out: Moran 0.0930 [0.0541,0.1240]; core->core -0.0751 [-0.1094,-0.0341]; prefix gain +0.0519 [-0.0217,+0.0824]; jsd_first_fg 0.2047; CHARWIN -0.0293
+  -- CA: 5/6 hold [P1+ P2+ P3+ P4+ P5- P7+] --
+    P1 HOLDS: Moran Δ +0.0287 [-0.0165,+0.0868] (gen 0.1217, real 0.0930); margin hi-0 = +0.0868
+    P2 HOLDS: core->core excess Δ +0.0237 [-0.0244,+0.0799] (gen -0.0513, real -0.0751); margins 0-lo +0.0244, hi-0 +0.0799
+    P3 HOLDS: prefix gain gen -0.0200 vs real +0.0519 [-0.0217,+0.0824]; margins g-lo +0.0018, hi-g +0.1024
+    P4 HOLDS: jsd_first_fg gen 0.1777 vs s15 width [0.1447,0.2156] (real held-out 0.2047); margins +0.0330 / +0.0379; excess gen +0.1345 real +0.1430
+    P5 fails: CHARWIN gen -0.0265 (real -0.0293); margin -0.0265
+    P7 HOLDS: types gen/real at matched tokens 0.913 (seeds 0.899, 0.927); tol ±15%
+  -- CA0: 3/6 hold [P1- P2- P3+ P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.1075 [-0.1472,-0.0568] (gen -0.0145, real 0.0930); margin hi-0 = -0.0568
+    P2 fails: core->core excess Δ +0.0554 [+0.0114,+0.1160] (gen -0.0197, real -0.0751); margins 0-lo -0.0114, hi-0 +0.1160
+    P3 HOLDS: prefix gain gen +0.0091 vs real +0.0519 [-0.0217,+0.0824]; margins g-lo +0.0309, hi-g +0.0733
+    P4 fails: jsd_first_fg gen 0.1348 vs s15 width [0.1447,0.2156] (real held-out 0.2047); margins -0.0099 / +0.0808; excess gen +0.0914 real +0.1430
+    P5 HOLDS: CHARWIN gen +0.0533 (real -0.0293); margin +0.0533
+    P7 HOLDS: types gen/real at matched tokens 0.924 (seeds 0.924, 0.924); tol ±15%
+  -- CA-ind: 5/6 hold [P1+ P2+ P3+ P4+ P5- P7+] --
+    P1 HOLDS: Moran Δ +0.1100 [+0.0637,+0.1624] (gen 0.2029, real 0.0930); margin hi-0 = +0.1624
+    P2 HOLDS: core->core excess Δ +0.0393 [-0.0112,+0.0876] (gen -0.0357, real -0.0751); margins 0-lo +0.0112, hi-0 +0.0876
+    P3 HOLDS: prefix gain gen +0.0166 vs real +0.0519 [-0.0217,+0.0824]; margins g-lo +0.0384, hi-g +0.0658
+    P4 HOLDS: jsd_first_fg gen 0.2046 vs s15 width [0.1447,0.2156] (real held-out 0.2047); margins +0.0599 / +0.0110; excess gen +0.1546 real +0.1430
+    P5 fails: CHARWIN gen -0.0032 (real -0.0293); margin -0.0032
+    P7 HOLDS: types gen/real at matched tokens 1.139 (seeds 1.135, 1.142); tol ±15%
+  fold time 126s
+--- RF1b fold M: held-out 20 pages (6834 tokens), training 187 pages (27784 tokens)
+  classes: {'top': 300, 'nearest': 342, 'backoff': 1490, 'inertia': 33.1421, 'top_class_sizes': [32, 43, 15, 11, 29, 49, 11, 23, 8, 44, 6, 29]}; mu 5.073; affix contexts CA [525, 50, 13] / CA-ind [46, 4]
+  training targets: Moran 0.1549, word-length sd 1.8165, types 6718 at 27784 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.5; loss 75.27 (R 15.01, types 3.35, Moran 4.07, len-sd 52.84); in-sample Moran 0.1347, len sd 1.6845, types 6841 at 27859
+  fit CA0   : p_rep 0.1, tau 20.0, gamma 0.0, rho 0.0; loss 348.85 (R 24.97, types 121.01, Moran 137.71, len-sd 65.17); in-sample Moran 0.0375, len sd 1.9632, types 7457 at 27713
+  fit CA-ind: p_rep 0.1, tau 7.0, gamma 1.0, rho 0.2; loss 2037.83 (R 46.77, types 1176.21, Moran 0.03, len-sd 814.82); in-sample Moran 0.1532, len sd 1.2980, types 9022 at 27999
+  fits: CA 139 evals 49s; CA-ind 142 evals 47s
+  real held-out: Moran 0.1543 [0.1372,0.1708]; core->core +0.0012 [-0.0198,+0.0135]; prefix gain +0.1417 [+0.1309,+0.1511]; jsd_first_fg 0.1479; CHARWIN +0.1561
+  -- CA: 2/6 hold [P1- P2+ P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.0208 [-0.0380,-0.0044] (gen 0.1335, real 0.1543); margin hi-0 = -0.0044
+    P2 HOLDS: core->core excess Δ -0.0145 [-0.0297,+0.0105] (gen -0.0133, real +0.0012); margins 0-lo +0.0297, hi-0 +0.0105
+    P3 fails: prefix gain gen +0.0007 vs real +0.1417 [+0.1309,+0.1511]; margins g-lo -0.1302, hi-g +0.1504
+    P4 fails: jsd_first_fg gen 0.1043 vs s15 width [0.1447,0.2156] (real held-out 0.1479); margins -0.0404 / +0.1113; excess gen +0.0991 real +0.1444
+    P5 HOLDS: CHARWIN gen +0.0241 (real +0.1561); margin +0.0241
+    P7 fails: types gen/real at matched tokens 1.770 (seeds 1.763, 1.776); tol ±15%
+  -- CA0: 2/6 hold [P1- P2+ P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.1306 [-0.1482,-0.1132] (gen 0.0237, real 0.1543); margin hi-0 = -0.1132
+    P2 HOLDS: core->core excess Δ +0.0093 [-0.0068,+0.0360] (gen +0.0104, real +0.0012); margins 0-lo +0.0068, hi-0 +0.0360
+    P3 fails: prefix gain gen -0.0097 vs real +0.1417 [+0.1309,+0.1511]; margins g-lo -0.1406, hi-g +0.1608
+    P4 fails: jsd_first_fg gen 0.1293 vs s15 width [0.1447,0.2156] (real held-out 0.1479); margins -0.0154 / +0.0863; excess gen +0.1244 real +0.1444
+    P5 HOLDS: CHARWIN gen +0.0357 (real +0.1561); margin +0.0357
+    P7 fails: types gen/real at matched tokens 1.869 (seeds 1.875, 1.864); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ -0.0056 [-0.0221,+0.0152] (gen 0.1486, real 0.1543); margin hi-0 = +0.0152
+    P2 fails: core->core excess Δ -0.0215 [-0.0378,-0.0011] (gen -0.0204, real +0.0012); margins 0-lo +0.0378, hi-0 -0.0011
+    P3 fails: prefix gain gen -0.0012 vs real +0.1417 [+0.1309,+0.1511]; margins g-lo -0.1321, hi-g +0.1522
+    P4 fails: jsd_first_fg gen 0.1420 vs s15 width [0.1447,0.2156] (real held-out 0.1479); margins -0.0027 / +0.0736; excess gen +0.1375 real +0.1444
+    P5 fails: CHARWIN gen -0.0198 (real +0.1561); margin -0.0198
+    P7 fails: types gen/real at matched tokens 2.392 (seeds 2.372, 2.413); tol ±15%
+  fold time 153s
+--- RF1b fold N: held-out 7 pages (1703 tokens), training 200 pages (32915 tokens)
+  classes: {'top': 300, 'nearest': 501, 'backoff': 1650, 'inertia': 32.8206, 'top_class_sizes': [9, 40, 35, 13, 12, 53, 26, 23, 24, 26, 14, 25]}; mu 5.057; affix contexts CA [490, 50, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1545, word-length sd 1.7957, types 7126 at 32915 tokens
+  fit CA    : p_rep 0.06, tau 7.0, gamma 0.25, rho 0.7; loss 106.95 (R 45.86, types 36.58, Moran 12.63, len-sd 11.88); in-sample Moran 0.1901, len sd 1.7338, types 7557 at 32562
+  fit CA0   : p_rep 0.06, tau 7.0, gamma 0.0, rho 0.0; loss 524.65 (R 33.32, types 220.02, Moran 188.88, len-sd 82.44); in-sample Moran 0.0171, len sd 1.9587, types 8183 at 32984
+  fit CA-ind: p_rep 0.0, tau 1.0, gamma 0.75, rho 0.2; loss 1932.15 (R 105.02, types 1333.28, Moran 9.13, len-sd 484.72); in-sample Moran 0.1243, len sd 1.4003, types 9728 at 33002
+  fits: CA 142 evals 56s; CA-ind 137 evals 50s
+  real held-out: Moran 0.1597 [0.1438,0.1859]; core->core -0.0936 [-0.1125,-0.0644]; prefix gain +0.0577 [+0.0517,+0.0722]; jsd_first_fg 0.1883; CHARWIN +0.1171
+  -- CA: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.0005 [-0.0295,+0.0229] (gen 0.1602, real 0.1597); margin hi-0 = +0.0229
+    P2 fails: core->core excess Δ +0.1008 [+0.0679,+0.1225] (gen +0.0072, real -0.0936); margins 0-lo -0.0679, hi-0 +0.1225
+    P3 fails: prefix gain gen +0.0130 vs real +0.0577 [+0.0517,+0.0722]; margins g-lo -0.0388, hi-g +0.0592
+    P4 fails: jsd_first_fg gen 0.1120 vs s15 width [0.1447,0.2156] (real held-out 0.1883); margins -0.0327 / +0.1036; excess gen +0.0930 real +0.1744
+    P5 HOLDS: CHARWIN gen +0.0436 (real +0.1171); margin +0.0436
+    P7 fails: types gen/real at matched tokens 1.183 (seeds 1.175, 1.191); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.1442 [-0.1742,-0.1207] (gen 0.0154, real 0.1597); margin hi-0 = -0.1207
+    P2 fails: core->core excess Δ +0.0852 [+0.0512,+0.1134] (gen -0.0084, real -0.0936); margins 0-lo -0.0512, hi-0 +0.1134
+    P3 fails: prefix gain gen -0.0019 vs real +0.0577 [+0.0517,+0.0722]; margins g-lo -0.0537, hi-g +0.0742
+    P4 fails: jsd_first_fg gen 0.1096 vs s15 width [0.1447,0.2156] (real held-out 0.1883); margins -0.0351 / +0.1060; excess gen +0.0923 real +0.1744
+    P5 HOLDS: CHARWIN gen +0.0187 (real +0.1171); margin +0.0187
+    P7 fails: types gen/real at matched tokens 1.225 (seeds 1.231, 1.218); tol ±15%
+  -- CA-ind: 0/6 hold [P1- P2- P3- P4- P5- P7-] --
+    P1 fails: Moran Δ -0.0273 [-0.0627,-0.0047] (gen 0.1324, real 0.1597); margin hi-0 = -0.0047
+    P2 fails: core->core excess Δ +0.0748 [+0.0428,+0.0940] (gen -0.0188, real -0.0936); margins 0-lo -0.0428, hi-0 +0.0940
+    P3 fails: prefix gain gen +0.0183 vs real +0.0577 [+0.0517,+0.0722]; margins g-lo -0.0334, hi-g +0.0539
+    P4 fails: jsd_first_fg gen 0.1297 vs s15 width [0.1447,0.2156] (real held-out 0.1883); margins -0.0150 / +0.0859; excess gen +0.1110 real +0.1744
+    P5 fails: CHARWIN gen -0.0282 (real +0.1171); margin -0.0282
+    P7 fails: types gen/real at matched tokens 1.553 (seeds 1.528, 1.578); tol ±15%
+  fold time 126s
+--- RF1b fold O: held-out 12 pages (1396 tokens), training 195 pages (33222 tokens)
+  classes: {'top': 300, 'nearest': 492, 'backoff': 1630, 'inertia': 33.3459, 'top_class_sizes': [48, 14, 41, 22, 11, 10, 3, 32, 24, 22, 41, 32]}; mu 5.058; affix contexts CA [465, 49, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1584, word-length sd 1.7942, types 7105 at 33222 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.8; loss 106.46 (R 35.09, types 21.05, Moran 14.98, len-sd 35.33); in-sample Moran 0.1972, len sd 1.6876, types 7431 at 33204
+  fit CA0   : p_rep 0.1, tau 20.0, gamma 0.0, rho 0.0; loss 468.31 (R 16.82, types 240.57, Moran 170.97, len-sd 39.96); in-sample Moran 0.0277, len sd 1.9076, types 8207 at 33276
+  fit CA-ind: p_rep 0.1, tau 12.0, gamma 0.75, rho 0.3; loss 1872.54 (R 22.86, types 1363.95, Moran 11.61, len-sd 474.12); in-sample Moran 0.1925, len sd 1.4035, types 9729 at 33444
+  fits: CA 139 evals 55s; CA-ind 147 evals 56s
+  real held-out: Moran 0.0711 [0.0511,0.0922]; core->core -0.1323 [-0.1843,-0.0903]; prefix gain +0.0296 [+0.0193,+0.0446]; jsd_first_fg 0.2716; CHARWIN +0.0614
+  -- CA: 4/6 hold [P1+ P2- P3- P4+ P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.1166 [+0.0886,+0.1440] (gen 0.1878, real 0.0711); margin hi-0 = +0.1440
+    P2 fails: core->core excess Δ +0.1267 [+0.0721,+0.1818] (gen -0.0056, real -0.1323); margins 0-lo -0.0721, hi-0 +0.1818
+    P3 fails: prefix gain gen -0.0003 vs real +0.0296 [+0.0193,+0.0446]; margins g-lo -0.0196, hi-g +0.0450
+    P4 HOLDS: jsd_first_fg gen 0.1513 vs s15 width [0.1447,0.2156] (real held-out 0.2716); margins +0.0066 / +0.0643; excess gen +0.1285 real +0.2512
+    P5 HOLDS: CHARWIN gen +0.0441 (real +0.0614); margin +0.0441
+    P7 HOLDS: types gen/real at matched tokens 1.141 (seeds 1.152, 1.129); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.0282 [-0.0535,-0.0001] (gen 0.0429, real 0.0711); margin hi-0 = -0.0001
+    P2 fails: core->core excess Δ +0.1242 [+0.0806,+0.1831] (gen -0.0081, real -0.1323); margins 0-lo -0.0806, hi-0 +0.1831
+    P3 fails: prefix gain gen +0.0003 vs real +0.0296 [+0.0193,+0.0446]; margins g-lo -0.0190, hi-g +0.0444
+    P4 fails: jsd_first_fg gen 0.1293 vs s15 width [0.1447,0.2156] (real held-out 0.2716); margins -0.0154 / +0.0863; excess gen +0.1066 real +0.2512
+    P5 HOLDS: CHARWIN gen +0.0292 (real +0.0614); margin +0.0292
+    P7 fails: types gen/real at matched tokens 1.159 (seeds 1.160, 1.159); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.1151 [+0.0881,+0.1450] (gen 0.1862, real 0.0711); margin hi-0 = +0.1450
+    P2 fails: core->core excess Δ +0.0848 [+0.0388,+0.1453] (gen -0.0475, real -0.1323); margins 0-lo -0.0388, hi-0 +0.1453
+    P3 fails: prefix gain gen +0.0031 vs real +0.0296 [+0.0193,+0.0446]; margins g-lo -0.0162, hi-g +0.0416
+    P4 fails: jsd_first_fg gen 0.1357 vs s15 width [0.1447,0.2156] (real held-out 0.2716); margins -0.0090 / +0.0799; excess gen +0.1127 real +0.2512
+    P5 fails: CHARWIN gen -0.0260 (real +0.0614); margin -0.0260
+    P7 fails: types gen/real at matched tokens 1.492 (seeds 1.471, 1.513); tol ±15%
+  fold time 129s
+--- RF1b fold Q: held-out 10 pages (930 tokens), training 197 pages (33688 tokens)
+  classes: {'top': 300, 'nearest': 499, 'backoff': 1685, 'inertia': 33.0509, 'top_class_sizes': [16, 25, 19, 18, 12, 9, 27, 44, 24, 57, 13, 36]}; mu 5.054; affix contexts CA [488, 50, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1583, word-length sd 1.7909, types 7188 at 33688 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.5; loss 108.05 (R 28.08, types 54.57, Moran 5.50, len-sd 19.89); in-sample Moran 0.1348, len sd 1.7111, types 7719 at 33806
+  fit CA0   : p_rep 0.1, tau 20.0, gamma 0.0, rho 0.0; loss 579.43 (R 23.32, types 278.71, Moran 193.37, len-sd 84.04); in-sample Moran 0.0192, len sd 1.9551, types 8388 at 33548
+  fit CA-ind: p_rep 0.1, tau 12.0, gamma 0.75, rho 0.3; loss 1885.27 (R 22.34, types 1426.67, Moran 10.26, len-sd 426.00); in-sample Moran 0.1903, len sd 1.4213, types 9903 at 33433
+  fits: CA 139 evals 57s; CA-ind 147 evals 54s
+  real held-out: Moran 0.0521 [0.0125,0.0779]; core->core -0.0731 [-0.1063,-0.0333]; prefix gain +0.0475 [+0.0278,+0.0687]; jsd_first_fg 0.2734; CHARWIN +0.0741
+  -- CA: 4/6 hold [P1+ P2- P3- P4+ P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0711 [+0.0256,+0.1162] (gen 0.1232, real 0.0521); margin hi-0 = +0.1162
+    P2 fails: core->core excess Δ +0.0654 [+0.0201,+0.1175] (gen -0.0077, real -0.0731); margins 0-lo -0.0201, hi-0 +0.1175
+    P3 fails: prefix gain gen +0.0069 vs real +0.0475 [+0.0278,+0.0687]; margins g-lo -0.0210, hi-g +0.0619
+    P4 HOLDS: jsd_first_fg gen 0.1654 vs s15 width [0.1447,0.2156] (real held-out 0.2734); margins +0.0207 / +0.0502; excess gen +0.1372 real +0.2441
+    P5 HOLDS: CHARWIN gen +0.0423 (real +0.0741); margin +0.0423
+    P7 HOLDS: types gen/real at matched tokens 0.992 (seeds 0.970, 1.014); tol ±15%
+  -- CA0: 4/6 hold [P1+ P2- P3- P4+ P5+ P7+] --
+    P1 HOLDS: Moran Δ -0.0377 [-0.0719,+0.0120] (gen 0.0144, real 0.0521); margin hi-0 = +0.0120
+    P2 fails: core->core excess Δ +0.0565 [+0.0086,+0.1051] (gen -0.0166, real -0.0731); margins 0-lo -0.0086, hi-0 +0.1051
+    P3 fails: prefix gain gen +0.0110 vs real +0.0475 [+0.0278,+0.0687]; margins g-lo -0.0168, hi-g +0.0577
+    P4 HOLDS: jsd_first_fg gen 0.1688 vs s15 width [0.1447,0.2156] (real held-out 0.2734); margins +0.0241 / +0.0468; excess gen +0.1416 real +0.2441
+    P5 HOLDS: CHARWIN gen +0.0222 (real +0.0741); margin +0.0222
+    P7 HOLDS: types gen/real at matched tokens 1.042 (seeds 1.018, 1.067); tol ±15%
+  -- CA-ind: 3/6 hold [P1+ P2+ P3- P4+ P5- P7-] --
+    P1 HOLDS: Moran Δ +0.1599 [+0.1253,+0.2024] (gen 0.2119, real 0.0521); margin hi-0 = +0.2024
+    P2 HOLDS: core->core excess Δ +0.0183 [-0.0337,+0.0639] (gen -0.0549, real -0.0731); margins 0-lo +0.0337, hi-0 +0.0639
+    P3 fails: prefix gain gen -0.0020 vs real +0.0475 [+0.0278,+0.0687]; margins g-lo -0.0298, hi-g +0.0708
+    P4 HOLDS: jsd_first_fg gen 0.1787 vs s15 width [0.1447,0.2156] (real held-out 0.2734); margins +0.0340 / +0.0369; excess gen +0.1523 real +0.2441
+    P5 fails: CHARWIN gen -0.0559 (real +0.0741); margin -0.0559
+    P7 fails: types gen/real at matched tokens 1.328 (seeds 1.308, 1.348); tol ±15%
+  fold time 128s
+--- RF1b fold S: held-out 10 pages (1431 tokens), training 197 pages (33187 tokens)
+  classes: {'top': 300, 'nearest': 506, 'backoff': 1634, 'inertia': 32.9329, 'top_class_sizes': [15, 33, 54, 45, 13, 23, 46, 12, 12, 23, 6, 18]}; mu 5.061; affix contexts CA [487, 50, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1534, word-length sd 1.7937, types 7115 at 33187 tokens
+  fit CA    : p_rep 0.06, tau 12.0, gamma 0.25, rho 0.6; loss 117.56 (R 45.34, types 54.03, Moran 0.19, len-sd 18.00); in-sample Moran 0.1578, len sd 1.7176, types 7638 at 33206
+  fit CA0   : p_rep 0.06, tau 12.0, gamma 0.0, rho 0.0; loss 530.74 (R 36.26, types 219.86, Moran 187.76, len-sd 86.85); in-sample Moran 0.0164, len sd 1.9608, types 8170 at 32709
+  fit CA-ind: p_rep 0.15, tau 20.0, gamma 0.5, rho 0.3; loss 1925.65 (R 32.96, types 1740.12, Moran 0.86, len-sd 151.73); in-sample Moran 0.1442, len sd 1.5727, types 10083 at 32826
+  fits: CA 142 evals 52s; CA-ind 139 evals 44s
+  real held-out: Moran 0.1775 [0.1474,0.2020]; core->core -0.1323 [-0.1662,-0.0942]; prefix gain +0.0764 [+0.0644,+0.0928]; jsd_first_fg 0.2032; CHARWIN +0.0869
+  -- CA: 4/6 hold [P1+ P2- P3- P4+ P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0058 [-0.0289,+0.0469] (gen 0.1833, real 0.1775); margin hi-0 = +0.0469
+    P2 fails: core->core excess Δ +0.1281 [+0.0806,+0.1645] (gen -0.0042, real -0.1323); margins 0-lo -0.0806, hi-0 +0.1645
+    P3 fails: prefix gain gen -0.0002 vs real +0.0764 [+0.0644,+0.0928]; margins g-lo -0.0645, hi-g +0.0930
+    P4 HOLDS: jsd_first_fg gen 0.1713 vs s15 width [0.1447,0.2156] (real held-out 0.2032); margins +0.0266 / +0.0443; excess gen +0.1500 real +0.1788
+    P5 HOLDS: CHARWIN gen +0.0102 (real +0.0869); margin +0.0102
+    P7 HOLDS: types gen/real at matched tokens 1.147 (seeds 1.125, 1.168); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4+ P5+ P7-] --
+    P1 fails: Moran Δ -0.1752 [-0.2073,-0.1354] (gen 0.0023, real 0.1775); margin hi-0 = -0.1354
+    P2 fails: core->core excess Δ +0.0996 [+0.0614,+0.1450] (gen -0.0327, real -0.1323); margins 0-lo -0.0614, hi-0 +0.1450
+    P3 fails: prefix gain gen +0.0043 vs real +0.0764 [+0.0644,+0.0928]; margins g-lo -0.0601, hi-g +0.0885
+    P4 HOLDS: jsd_first_fg gen 0.1791 vs s15 width [0.1447,0.2156] (real held-out 0.2032); margins +0.0344 / +0.0365; excess gen +0.1553 real +0.1788
+    P5 HOLDS: CHARWIN gen +0.0580 (real +0.0869); margin +0.0580
+    P7 fails: types gen/real at matched tokens 1.231 (seeds 1.222, 1.240); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ -0.0189 [-0.0520,+0.0195] (gen 0.1585, real 0.1775); margin hi-0 = +0.0195
+    P2 fails: core->core excess Δ +0.1332 [+0.0851,+0.1698] (gen +0.0009, real -0.1323); margins 0-lo -0.0851, hi-0 +0.1698
+    P3 fails: prefix gain gen +0.0012 vs real +0.0764 [+0.0644,+0.0928]; margins g-lo -0.0631, hi-g +0.0916
+    P4 fails: jsd_first_fg gen 0.1252 vs s15 width [0.1447,0.2156] (real held-out 0.2032); margins -0.0195 / +0.0904; excess gen +0.0991 real +0.1788
+    P5 HOLDS: CHARWIN gen +0.0590 (real +0.0869); margin +0.0590
+    P7 fails: types gen/real at matched tokens 1.564 (seeds 1.570, 1.558); tol ±15%
+  fold time 114s
+--- RF1b fold T: held-out 23 pages (10793 tokens), training 184 pages (23825 tokens)
+  classes: {'top': 300, 'nearest': 315, 'backoff': 1319, 'inertia': 32.0378, 'top_class_sizes': [49, 8, 14, 16, 23, 51, 6, 30, 27, 36, 13, 27]}; mu 4.951; affix contexts CA [402, 52, 13] / CA-ind [36, 4]
+  training targets: Moran 0.1333, word-length sd 1.7805, types 5500 at 23825 tokens
+  fit CA    : p_rep 0.06, tau 12.0, gamma 0.25, rho 0.5; loss 105.57 (R 28.72, types 70.87, Moran 0.17, len-sd 5.81); in-sample Moran 0.1292, len sd 1.7376, types 5963 at 23693
+  fit CA0   : p_rep 0.06, tau 12.0, gamma 0.0, rho 0.0; loss 604.16 (R 29.71, types 285.92, Moran 143.55, len-sd 144.98); in-sample Moran 0.0135, len sd 1.9949, types 6430 at 23634
+  fit CA-ind: p_rep 0.15, tau 12.0, gamma 0.75, rho 0.2; loss 2178.33 (R 52.13, types 1654.27, Moran 0.73, len-sd 471.19); in-sample Moran 0.1247, len sd 1.3940, types 7737 at 23958
+  fits: CA 142 evals 38s; CA-ind 142 evals 35s
+  real held-out: Moran 0.1785 [0.1653,0.1900]; core->core -0.0653 [-0.0856,-0.0553]; prefix gain +0.1274 [+0.1138,+0.1396]; jsd_first_fg 0.3189; CHARWIN +0.0857
+  -- CA: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.0530 [-0.0666,-0.0380] (gen 0.1254, real 0.1785); margin hi-0 = -0.0380
+    P2 fails: core->core excess Δ +0.0555 [+0.0417,+0.0812] (gen -0.0098, real -0.0653); margins 0-lo -0.0417, hi-0 +0.0812
+    P3 fails: prefix gain gen -0.0025 vs real +0.1274 [+0.1138,+0.1396]; margins g-lo -0.1164, hi-g +0.1421
+    P4 fails: jsd_first_fg gen 0.1067 vs s15 width [0.1447,0.2156] (real held-out 0.3189); margins -0.0380 / +0.1089; excess gen +0.1029 real +0.3160
+    P5 HOLDS: CHARWIN gen +0.0456 (real +0.0857); margin +0.0456
+    P7 HOLDS: types gen/real at matched tokens 1.129 (seeds 1.133, 1.126); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.1738 [-0.1898,-0.1583] (gen 0.0047, real 0.1785); margin hi-0 = -0.1583
+    P2 fails: core->core excess Δ +0.0649 [+0.0467,+0.0877] (gen -0.0004, real -0.0653); margins 0-lo -0.0467, hi-0 +0.0877
+    P3 fails: prefix gain gen -0.0021 vs real +0.1274 [+0.1138,+0.1396]; margins g-lo -0.1159, hi-g +0.1416
+    P4 fails: jsd_first_fg gen 0.0942 vs s15 width [0.1447,0.2156] (real held-out 0.3189); margins -0.0505 / +0.1214; excess gen +0.0907 real +0.3160
+    P5 HOLDS: CHARWIN gen +0.0391 (real +0.0857); margin +0.0391
+    P7 HOLDS: types gen/real at matched tokens 1.150 (seeds 1.157, 1.142); tol ±15%
+  -- CA-ind: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.0617 [-0.0761,-0.0467] (gen 0.1168, real 0.1785); margin hi-0 = -0.0467
+    P2 fails: core->core excess Δ +0.0448 [+0.0315,+0.0638] (gen -0.0205, real -0.0653); margins 0-lo -0.0315, hi-0 +0.0638
+    P3 fails: prefix gain gen -0.0118 vs real +0.1274 [+0.1138,+0.1396]; margins g-lo -0.1256, hi-g +0.1513
+    P4 fails: jsd_first_fg gen 0.1152 vs s15 width [0.1447,0.2156] (real held-out 0.3189); margins -0.0295 / +0.1004; excess gen +0.1114 real +0.3160
+    P5 HOLDS: CHARWIN gen +0.0194 (real +0.0857); margin +0.0194
+    P7 fails: types gen/real at matched tokens 1.496 (seeds 1.512, 1.480); tol ±15%
+  fold time 139s
+
+=== IT2a ===
+--- IT2a fold A: held-out 16 pages (1495 tokens), training 190 pages (32916 tokens)
+  classes: {'top': 300, 'nearest': 491, 'backoff': 1505, 'inertia': 32.2266, 'top_class_sizes': [23, 15, 52, 24, 16, 49, 14, 25, 38, 12, 8, 24]}; mu 5.078; affix contexts CA [469, 51, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1606, word-length sd 1.7056, types 6826 at 32916 tokens
+  fit CA    : p_rep 0.06, tau 12.0, gamma 0.25, rho 0.5; loss 144.17 (R 20.45, types 104.26, Moran 7.79, len-sd 11.66); in-sample Moran 0.1327, len sd 1.6474, types 7523 at 33251
+  fit CA0   : p_rep 0.06, tau 7.0, gamma 0.0, rho 0.0; loss 664.92 (R 41.86, types 337.49, Moran 196.08, len-sd 89.49); in-sample Moran 0.0206, len sd 1.8670, types 8080 at 33018
+  fit CA-ind: p_rep 0.0, tau 1.0, gamma 0.75, rho 0.3; loss 1919.22 (R 103.77, types 1507.16, Moran 5.58, len-sd 302.71); in-sample Moran 0.1842, len sd 1.4089, types 9476 at 32688
+  fits: CA 147 evals 53s; CA-ind 137 evals 42s
+  real held-out: Moran 0.0336 [0.0032,0.0665]; core->core -0.0610 [-0.0978,-0.0233]; prefix gain +0.1186 [+0.1065,+0.1317]; jsd_first_fg 0.1360; CHARWIN +0.0886
+  -- CA: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.1059 [+0.0715,+0.1407] (gen 0.1395, real 0.0336); margin hi-0 = +0.1407
+    P2 fails: core->core excess Δ +0.0629 [+0.0208,+0.1045] (gen +0.0019, real -0.0610); margins 0-lo -0.0208, hi-0 +0.1045
+    P3 fails: prefix gain gen +0.0019 vs real +0.1186 [+0.1065,+0.1317]; margins g-lo -0.1046, hi-g +0.1298
+    P4 fails: jsd_first_fg gen 0.1053 vs s15 width [0.1447,0.2156] (real held-out 0.1360); margins -0.0394 / +0.1103; excess gen +0.0923 real +0.1197
+    P5 HOLDS: CHARWIN gen +0.0075 (real +0.0886); margin +0.0075
+    P7 fails: types gen/real at matched tokens 1.161 (seeds 1.138, 1.185); tol ±15%
+  -- CA0: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ -0.0218 [-0.0567,+0.0118] (gen 0.0118, real 0.0336); margin hi-0 = +0.0118
+    P2 fails: core->core excess Δ +0.0587 [+0.0183,+0.1049] (gen -0.0023, real -0.0610); margins 0-lo -0.0183, hi-0 +0.1049
+    P3 fails: prefix gain gen -0.0041 vs real +0.1186 [+0.1065,+0.1317]; margins g-lo -0.1105, hi-g +0.1358
+    P4 fails: jsd_first_fg gen 0.1380 vs s15 width [0.1447,0.2156] (real held-out 0.1360); margins -0.0067 / +0.0776; excess gen +0.1236 real +0.1197
+    P5 HOLDS: CHARWIN gen +0.0218 (real +0.0886); margin +0.0218
+    P7 fails: types gen/real at matched tokens 1.206 (seeds 1.202, 1.209); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.1428 [+0.1070,+0.1750] (gen 0.1764, real 0.0336); margin hi-0 = +0.1750
+    P2 fails: core->core excess Δ +0.0440 [+0.0012,+0.0867] (gen -0.0171, real -0.0610); margins 0-lo -0.0012, hi-0 +0.0867
+    P3 fails: prefix gain gen -0.0009 vs real +0.1186 [+0.1065,+0.1317]; margins g-lo -0.1074, hi-g +0.1326
+    P4 fails: jsd_first_fg gen 0.1363 vs s15 width [0.1447,0.2156] (real held-out 0.1360); margins -0.0084 / +0.0793; excess gen +0.1223 real +0.1197
+    P5 fails: CHARWIN gen -0.0037 (real +0.0886); margin -0.0037
+    P7 fails: types gen/real at matched tokens 1.482 (seeds 1.475, 1.489); tol ±15%
+  fold time 117s
+--- IT2a fold B: held-out 14 pages (1019 tokens), training 192 pages (33392 tokens)
+  classes: {'top': 300, 'nearest': 497, 'backoff': 1528, 'inertia': 32.4872, 'top_class_sizes': [13, 18, 18, 22, 12, 10, 48, 28, 34, 27, 21, 49]}; mu 5.078; affix contexts CA [481, 51, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1557, word-length sd 1.7055, types 6922 at 33392 tokens
+  fit CA    : p_rep 0.06, tau 12.0, gamma 0.25, rho 0.6; loss 112.31 (R 34.32, types 54.50, Moran 3.42, len-sd 20.08); in-sample Moran 0.1372, len sd 1.6291, types 7433 at 33331
+  fit CA0   : p_rep 0.1, tau 12.0, gamma 0.0, rho 0.0; loss 593.22 (R 46.33, types 266.03, Moran 180.04, len-sd 100.82); in-sample Moran 0.0215, len sd 1.8767, types 8051 at 33310
+  fit CA-ind: p_rep 0.1, tau 12.0, gamma 1.0, rho 0.2; loss 1843.51 (R 19.08, types 1142.80, Moran 2.16, len-sd 679.47); in-sample Moran 0.1410, len sd 1.2609, types 9262 at 33430
+  fits: CA 147 evals 54s; CA-ind 150 evals 50s
+  real held-out: Moran 0.1265 [0.1051,0.1513]; core->core -0.1273 [-0.1680,-0.0743]; prefix gain +0.0764 [+0.0370,+0.1181]; jsd_first_fg 0.1705; CHARWIN +0.1228
+  -- CA: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0151 [-0.0161,+0.0428] (gen 0.1416, real 0.1265); margin hi-0 = +0.0428
+    P2 fails: core->core excess Δ +0.1407 [+0.0795,+0.1844] (gen +0.0133, real -0.1273); margins 0-lo -0.0795, hi-0 +0.1844
+    P3 fails: prefix gain gen -0.0036 vs real +0.0764 [+0.0370,+0.1181]; margins g-lo -0.0406, hi-g +0.1216
+    P4 fails: jsd_first_fg gen 0.0942 vs s15 width [0.1447,0.2156] (real held-out 0.1705); margins -0.0505 / +0.1214; excess gen +0.0747 real +0.1489
+    P5 fails: CHARWIN gen -0.0161 (real +0.1228); margin -0.0161
+    P7 fails: types gen/real at matched tokens 1.371 (seeds 1.365, 1.377); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.1250 [-0.1589,-0.0918] (gen 0.0015, real 0.1265); margin hi-0 = -0.0918
+    P2 fails: core->core excess Δ +0.1227 [+0.0653,+0.1709] (gen -0.0047, real -0.1273); margins 0-lo -0.0653, hi-0 +0.1709
+    P3 fails: prefix gain gen -0.0029 vs real +0.0764 [+0.0370,+0.1181]; margins g-lo -0.0399, hi-g +0.1210
+    P4 fails: jsd_first_fg gen 0.0797 vs s15 width [0.1447,0.2156] (real held-out 0.1705); margins -0.0650 / +0.1359; excess gen +0.0577 real +0.1489
+    P5 HOLDS: CHARWIN gen +0.0427 (real +0.1228); margin +0.0427
+    P7 fails: types gen/real at matched tokens 1.388 (seeds 1.390, 1.386); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0138 [-0.0196,+0.0451] (gen 0.1403, real 0.1265); margin hi-0 = +0.0451
+    P2 fails: core->core excess Δ +0.0968 [+0.0389,+0.1389] (gen -0.0305, real -0.1273); margins 0-lo -0.0389, hi-0 +0.1389
+    P3 fails: prefix gain gen +0.0003 vs real +0.0764 [+0.0370,+0.1181]; margins g-lo -0.0366, hi-g +0.1177
+    P4 fails: jsd_first_fg gen 0.1135 vs s15 width [0.1447,0.2156] (real held-out 0.1705); margins -0.0312 / +0.1021; excess gen +0.0930 real +0.1489
+    P5 fails: CHARWIN gen -0.0885 (real +0.1228); margin -0.0885
+    P7 fails: types gen/real at matched tokens 1.673 (seeds 1.656, 1.690); tol ±15%
+  fold time 121s
+--- IT2a fold C: held-out 16 pages (1401 tokens), training 190 pages (33010 tokens)
+  classes: {'top': 300, 'nearest': 494, 'backoff': 1506, 'inertia': 32.0316, 'top_class_sizes': [26, 11, 46, 54, 18, 12, 35, 25, 15, 23, 14, 21]}; mu 5.078; affix contexts CA [487, 51, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1586, word-length sd 1.7019, types 6829 at 33010 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.5; loss 95.73 (R 22.91, types 56.21, Moran 4.64, len-sd 11.98); in-sample Moran 0.1371, len sd 1.6430, types 7341 at 33157
+  fit CA0   : p_rep 0.1, tau 20.0, gamma 0.0, rho 0.0; loss 687.32 (R 27.34, types 322.30, Moran 204.62, len-sd 133.05); in-sample Moran 0.0156, len sd 1.8983, types 8055 at 32647
+  fit CA-ind: p_rep 0.03, tau 2.0, gamma 0.75, rho 0.3; loss 1925.23 (R 74.50, types 1541.27, Moran 5.72, len-sd 303.75); in-sample Moran 0.1825, len sd 1.4053, types 9510 at 32902
+  fits: CA 139 evals 49s; CA-ind 145 evals 46s
+  real held-out: Moran 0.0816 [0.0556,0.1086]; core->core -0.0973 [-0.1356,-0.0566]; prefix gain +0.0200 [+0.0022,+0.0414]; jsd_first_fg 0.1531; CHARWIN +0.0901
+  -- CA: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ +0.0587 [+0.0273,+0.0886] (gen 0.1402, real 0.0816); margin hi-0 = +0.0886
+    P2 fails: core->core excess Δ +0.0826 [+0.0358,+0.1238] (gen -0.0147, real -0.0973); margins 0-lo -0.0358, hi-0 +0.1238
+    P3 fails: prefix gain gen -0.0011 vs real +0.0200 [+0.0022,+0.0414]; margins g-lo -0.0032, hi-g +0.0424
+    P4 fails: jsd_first_fg gen 0.1133 vs s15 width [0.1447,0.2156] (real held-out 0.1531); margins -0.0314 / +0.1023; excess gen +0.0978 real +0.1345
+    P5 HOLDS: CHARWIN gen +0.0054 (real +0.0901); margin +0.0054
+    P7 fails: types gen/real at matched tokens 1.200 (seeds 1.197, 1.204); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3+ P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.0924 [-0.1215,-0.0605] (gen -0.0108, real 0.0816); margin hi-0 = -0.0605
+    P2 fails: core->core excess Δ +0.0993 [+0.0530,+0.1458] (gen +0.0020, real -0.0973); margins 0-lo -0.0530, hi-0 +0.1458
+    P3 HOLDS: prefix gain gen +0.0033 vs real +0.0200 [+0.0022,+0.0414]; margins g-lo +0.0012, hi-g +0.0380
+    P4 fails: jsd_first_fg gen 0.1065 vs s15 width [0.1447,0.2156] (real held-out 0.1531); margins -0.0382 / +0.1091; excess gen +0.0910 real +0.1345
+    P5 HOLDS: CHARWIN gen +0.0084 (real +0.0901); margin +0.0084
+    P7 fails: types gen/real at matched tokens 1.237 (seeds 1.209, 1.266); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2- P3+ P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.1013 [+0.0715,+0.1315] (gen 0.1829, real 0.0816); margin hi-0 = +0.1315
+    P2 fails: core->core excess Δ +0.0597 [+0.0143,+0.1059] (gen -0.0376, real -0.0973); margins 0-lo -0.0143, hi-0 +0.1059
+    P3 HOLDS: prefix gain gen +0.0085 vs real +0.0200 [+0.0022,+0.0414]; margins g-lo +0.0063, hi-g +0.0329
+    P4 fails: jsd_first_fg gen 0.1234 vs s15 width [0.1447,0.2156] (real held-out 0.1531); margins -0.0213 / +0.0922; excess gen +0.1081 real +0.1345
+    P5 fails: CHARWIN gen -0.0045 (real +0.0901); margin -0.0045
+    P7 fails: types gen/real at matched tokens 1.529 (seeds 1.504, 1.554); tol ±15%
+  fold time 115s
+--- IT2a fold D: held-out 16 pages (1251 tokens), training 190 pages (33160 tokens)
+  classes: {'top': 300, 'nearest': 487, 'backoff': 1488, 'inertia': 33.1507, 'top_class_sizes': [43, 21, 47, 14, 14, 35, 5, 30, 19, 45, 18, 9]}; mu 5.073; affix contexts CA [478, 50, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1572, word-length sd 1.7043, types 6884 at 33160 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.6; loss 100.28 (R 38.46, types 58.61, Moran 0.14, len-sd 3.07); in-sample Moran 0.1535, len sd 1.6744, types 7411 at 33277
+  fit CA0   : p_rep 0.1, tau 20.0, gamma 0.0, rho 0.0; loss 685.18 (R 29.30, types 353.34, Moran 166.59, len-sd 135.96); in-sample Moran 0.0282, len sd 1.9030, types 8178 at 33223
+  fit CA-ind: p_rep 0.06, tau 2.0, gamma 0.75, rho 0.1; loss 2109.33 (R 105.98, types 1545.16, Moran 67.72, len-sd 390.46); in-sample Moran 0.0750, len sd 1.3675, types 9590 at 32966
+  fits: CA 139 evals 51s; CA-ind 150 evals 49s
+  real held-out: Moran 0.1220 [0.0962,0.1447]; core->core -0.0711 [-0.1067,-0.0454]; prefix gain +0.0997 [+0.0813,+0.1205]; jsd_first_fg 0.1404; CHARWIN +0.0846
+  -- CA: 4/6 hold [P1+ P2+ P3- P4+ P5- P7+] --
+    P1 HOLDS: Moran Δ +0.0365 [+0.0069,+0.0662] (gen 0.1585, real 0.1220); margin hi-0 = +0.0662
+    P2 HOLDS: core->core excess Δ +0.0220 [-0.0158,+0.0690] (gen -0.0491, real -0.0711); margins 0-lo +0.0158, hi-0 +0.0690
+    P3 fails: prefix gain gen +0.0191 vs real +0.0997 [+0.0813,+0.1205]; margins g-lo -0.0623, hi-g +0.1015
+    P4 HOLDS: jsd_first_fg gen 0.1497 vs s15 width [0.1447,0.2156] (real held-out 0.1404); margins +0.0050 / +0.0659; excess gen +0.1300 real +0.1173
+    P5 fails: CHARWIN gen -0.0090 (real +0.0846); margin -0.0090
+    P7 HOLDS: types gen/real at matched tokens 1.115 (seeds 1.121, 1.110); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.0901 [-0.1284,-0.0567] (gen 0.0319, real 0.1220); margin hi-0 = -0.0567
+    P2 fails: core->core excess Δ +0.0702 [+0.0365,+0.1102] (gen -0.0010, real -0.0711); margins 0-lo -0.0365, hi-0 +0.1102
+    P3 fails: prefix gain gen -0.0008 vs real +0.0997 [+0.0813,+0.1205]; margins g-lo -0.0821, hi-g +0.1213
+    P4 fails: jsd_first_fg gen 0.1236 vs s15 width [0.1447,0.2156] (real held-out 0.1404); margins -0.0211 / +0.0920; excess gen +0.1085 real +0.1173
+    P5 HOLDS: CHARWIN gen +0.0154 (real +0.0846); margin +0.0154
+    P7 HOLDS: types gen/real at matched tokens 1.115 (seeds 1.127, 1.102); tol ±15%
+  -- CA-ind: 1/6 hold [P1- P2- P3- P4+ P5- P7-] --
+    P1 fails: Moran Δ -0.0572 [-0.0838,-0.0291] (gen 0.0648, real 0.1220); margin hi-0 = -0.0291
+    P2 fails: core->core excess Δ +0.0349 [+0.0010,+0.0763] (gen -0.0362, real -0.0711); margins 0-lo -0.0010, hi-0 +0.0763
+    P3 fails: prefix gain gen +0.0155 vs real +0.0997 [+0.0813,+0.1205]; margins g-lo -0.0658, hi-g +0.1050
+    P4 HOLDS: jsd_first_fg gen 0.1638 vs s15 width [0.1447,0.2156] (real held-out 0.1404); margins +0.0191 / +0.0518; excess gen +0.1434 real +0.1173
+    P5 fails: CHARWIN gen -0.0406 (real +0.0846); margin -0.0406
+    P7 fails: types gen/real at matched tokens 1.473 (seeds 1.466, 1.481); tol ±15%
+  fold time 118s
+--- IT2a fold E: held-out 16 pages (1522 tokens), training 190 pages (32889 tokens)
+  classes: {'top': 300, 'nearest': 496, 'backoff': 1514, 'inertia': 32.6619, 'top_class_sizes': [31, 24, 38, 14, 12, 46, 10, 15, 26, 43, 28, 13]}; mu 5.081; affix contexts CA [485, 51, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1550, word-length sd 1.7026, types 6874 at 32889 tokens
+  fit CA    : p_rep 0.06, tau 7.0, gamma 0.25, rho 0.4; loss 138.69 (R 35.68, types 71.19, Moran 23.12, len-sd 8.70); in-sample Moran 0.1069, len sd 1.6523, types 7454 at 32903
+  fit CA0   : p_rep 0.1, tau 7.0, gamma 0.0, rho 0.0; loss 690.00 (R 86.21, types 317.06, Moran 154.43, len-sd 132.30); in-sample Moran 0.0307, len sd 1.8984, types 8098 at 32977
+  fit CA-ind: p_rep 0.15, tau 20.0, gamma 0.75, rho 0.1; loss 1898.02 (R 23.54, types 1436.14, Moran 69.26, len-sd 369.09); in-sample Moran 0.0718, len sd 1.3755, types 9479 at 32893
+  fits: CA 147 evals 53s; CA-ind 139 evals 44s
+  real held-out: Moran 0.1494 [0.1308,0.1721]; core->core -0.1071 [-0.1451,-0.0714]; prefix gain +0.0479 [+0.0270,+0.0759]; jsd_first_fg 0.2384; CHARWIN +0.1097
+  -- CA: 0/6 hold [P1- P2- P3- P4- P5- P7-] --
+    P1 fails: Moran Δ -0.0525 [-0.0799,-0.0253] (gen 0.0969, real 0.1494); margin hi-0 = -0.0253
+    P2 fails: core->core excess Δ +0.0760 [+0.0328,+0.1248] (gen -0.0311, real -0.1071); margins 0-lo -0.0328, hi-0 +0.1248
+    P3 fails: prefix gain gen +0.0008 vs real +0.0479 [+0.0270,+0.0759]; margins g-lo -0.0262, hi-g +0.0751
+    P4 fails: jsd_first_fg gen 0.0964 vs s15 width [0.1447,0.2156] (real held-out 0.2384); margins -0.0483 / +0.1192; excess gen +0.0819 real +0.2196
+    P5 fails: CHARWIN gen -0.0029 (real +0.1097); margin -0.0029
+    P7 fails: types gen/real at matched tokens 1.213 (seeds 1.199, 1.228); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.1271 [-0.1571,-0.0931] (gen 0.0223, real 0.1494); margin hi-0 = -0.0931
+    P2 fails: core->core excess Δ +0.1132 [+0.0671,+0.1543] (gen +0.0061, real -0.1071); margins 0-lo -0.0671, hi-0 +0.1543
+    P3 fails: prefix gain gen -0.0028 vs real +0.0479 [+0.0270,+0.0759]; margins g-lo -0.0298, hi-g +0.0787
+    P4 fails: jsd_first_fg gen 0.1144 vs s15 width [0.1447,0.2156] (real held-out 0.2384); margins -0.0303 / +0.1012; excess gen +0.0997 real +0.2196
+    P5 HOLDS: CHARWIN gen +0.0196 (real +0.1097); margin +0.0196
+    P7 fails: types gen/real at matched tokens 1.231 (seeds 1.224, 1.238); tol ±15%
+  -- CA-ind: 0/6 hold [P1- P2- P3- P4- P5- P7-] --
+    P1 fails: Moran Δ -0.0779 [-0.1070,-0.0532] (gen 0.0715, real 0.1494); margin hi-0 = -0.0532
+    P2 fails: core->core excess Δ +0.0594 [+0.0131,+0.0998] (gen -0.0477, real -0.1071); margins 0-lo -0.0131, hi-0 +0.0998
+    P3 fails: prefix gain gen +0.0025 vs real +0.0479 [+0.0270,+0.0759]; margins g-lo -0.0245, hi-g +0.0734
+    P4 fails: jsd_first_fg gen 0.1327 vs s15 width [0.1447,0.2156] (real held-out 0.2384); margins -0.0120 / +0.0829; excess gen +0.1169 real +0.2196
+    P5 fails: CHARWIN gen -0.0206 (real +0.1097); margin -0.0206
+    P7 fails: types gen/real at matched tokens 1.535 (seeds 1.538, 1.532); tol ±15%
+  fold time 118s
+--- IT2a fold F: held-out 16 pages (1711 tokens), training 190 pages (32700 tokens)
+  classes: {'top': 300, 'nearest': 467, 'backoff': 1471, 'inertia': 32.3641, 'top_class_sizes': [47, 5, 30, 46, 9, 25, 15, 7, 24, 21, 29, 42]}; mu 5.077; affix contexts CA [469, 51, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1579, word-length sd 1.7062, types 6808 at 32700 tokens
+  fit CA    : p_rep 0.03, tau 7.0, gamma 0.25, rho 0.6; loss 182.08 (R 63.58, types 116.56, Moran 0.01, len-sd 1.94); in-sample Moran 0.1569, len sd 1.6825, types 7543 at 32404
+  fit CA0   : p_rep 0.03, tau 7.0, gamma 0.0, rho 0.0; loss 742.76 (R 48.56, types 329.07, Moran 224.54, len-sd 140.59); in-sample Moran 0.0081, len sd 1.9085, types 8043 at 33016
+  fit CA-ind: p_rep 0.15, tau 20.0, gamma 0.75, rho 0.3; loss 1923.99 (R 30.18, types 1546.17, Moran 6.79, len-sd 340.85); in-sample Moran 0.1840, len sd 1.3912, types 9485 at 32599
+  fits: CA 142 evals 50s; CA-ind 147 evals 48s
+  real held-out: Moran 0.1170 [0.0897,0.1457]; core->core -0.0628 [-0.0950,-0.0375]; prefix gain +0.0539 [+0.0316,+0.0728]; jsd_first_fg 0.1430; CHARWIN +0.1147
+  -- CA: 3/6 hold [P1+ P2- P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0334 [+0.0026,+0.0646] (gen 0.1504, real 0.1170); margin hi-0 = +0.0646
+    P2 fails: core->core excess Δ +0.0466 [+0.0104,+0.0860] (gen -0.0162, real -0.0628); margins 0-lo -0.0104, hi-0 +0.0860
+    P3 fails: prefix gain gen -0.0048 vs real +0.0539 [+0.0316,+0.0728]; margins g-lo -0.0363, hi-g +0.0775
+    P4 fails: jsd_first_fg gen 0.0921 vs s15 width [0.1447,0.2156] (real held-out 0.1430); margins -0.0526 / +0.1235; excess gen +0.0756 real +0.1261
+    P5 HOLDS: CHARWIN gen +0.0111 (real +0.1147); margin +0.0111
+    P7 HOLDS: types gen/real at matched tokens 1.142 (seeds 1.125, 1.158); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5- P7+] --
+    P1 fails: Moran Δ -0.1269 [-0.1662,-0.0944] (gen -0.0099, real 0.1170); margin hi-0 = -0.0944
+    P2 fails: core->core excess Δ +0.0524 [+0.0162,+0.0888] (gen -0.0103, real -0.0628); margins 0-lo -0.0162, hi-0 +0.0888
+    P3 fails: prefix gain gen +0.0133 vs real +0.0539 [+0.0316,+0.0728]; margins g-lo -0.0183, hi-g +0.0595
+    P4 fails: jsd_first_fg gen 0.1048 vs s15 width [0.1447,0.2156] (real held-out 0.1430); margins -0.0399 / +0.1108; excess gen +0.0895 real +0.1261
+    P5 fails: CHARWIN gen -0.0154 (real +0.1147); margin -0.0154
+    P7 HOLDS: types gen/real at matched tokens 1.128 (seeds 1.133, 1.123); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2+ P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0579 [+0.0286,+0.0865] (gen 0.1749, real 0.1170); margin hi-0 = +0.0865
+    P2 HOLDS: core->core excess Δ +0.0280 [-0.0009,+0.0678] (gen -0.0348, real -0.0628); margins 0-lo +0.0009, hi-0 +0.0678
+    P3 fails: prefix gain gen +0.0172 vs real +0.0539 [+0.0316,+0.0728]; margins g-lo -0.0144, hi-g +0.0556
+    P4 fails: jsd_first_fg gen 0.1035 vs s15 width [0.1447,0.2156] (real held-out 0.1430); margins -0.0412 / +0.1121; excess gen +0.0883 real +0.1261
+    P5 fails: CHARWIN gen -0.0073 (real +0.1147); margin -0.0073
+    P7 fails: types gen/real at matched tokens 1.439 (seeds 1.398, 1.479); tol ±15%
+  fold time 121s
+--- IT2a fold G: held-out 16 pages (1497 tokens), training 190 pages (32914 tokens)
+  classes: {'top': 300, 'nearest': 479, 'backoff': 1470, 'inertia': 32.9833, 'top_class_sizes': [10, 43, 28, 47, 43, 23, 42, 22, 4, 10, 18, 10]}; mu 5.072; affix contexts CA [459, 50, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1568, word-length sd 1.6993, types 6827 at 32914 tokens
+  fit CA    : p_rep 0.03, tau 4.0, gamma 0.25, rho 0.6; loss 197.97 (R 70.80, types 124.58, Moran 0.09, len-sd 2.49); in-sample Moran 0.1538, len sd 1.6725, types 7589 at 32934
+  fit CA0   : p_rep 0.03, tau 4.0, gamma 0.0, rho 0.0; loss 753.31 (R 53.60, types 377.82, Moran 185.86, len-sd 136.03); in-sample Moran 0.0205, len sd 1.8975, types 8154 at 32640
+  fit CA-ind: p_rep 0.0, tau 1.0, gamma 1.0, rho 0.1; loss 2142.27 (R 123.49, types 1234.81, Moran 70.55, len-sd 713.42); in-sample Moran 0.0728, len sd 1.2454, types 9226 at 32723
+  fits: CA 142 evals 51s; CA-ind 137 evals 42s
+  real held-out: Moran 0.1453 [0.1066,0.1772]; core->core -0.1031 [-0.1403,-0.0737]; prefix gain +0.0765 [+0.0467,+0.1019]; jsd_first_fg 0.1697; CHARWIN +0.0884
+  -- CA: 4/6 hold [P1+ P2- P3- P4+ P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0264 [-0.0088,+0.0700] (gen 0.1716, real 0.1453); margin hi-0 = +0.0700
+    P2 fails: core->core excess Δ +0.0929 [+0.0546,+0.1342] (gen -0.0102, real -0.1031); margins 0-lo -0.0546, hi-0 +0.1342
+    P3 fails: prefix gain gen +0.0041 vs real +0.0765 [+0.0467,+0.1019]; margins g-lo -0.0426, hi-g +0.0978
+    P4 HOLDS: jsd_first_fg gen 0.1530 vs s15 width [0.1447,0.2156] (real held-out 0.1697); margins +0.0083 / +0.0626; excess gen +0.1379 real +0.1528
+    P5 HOLDS: CHARWIN gen +0.0346 (real +0.0884); margin +0.0346
+    P7 HOLDS: types gen/real at matched tokens 1.120 (seeds 1.153, 1.087); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.1128 [-0.1501,-0.0659] (gen 0.0325, real 0.1453); margin hi-0 = -0.0659
+    P2 fails: core->core excess Δ +0.1159 [+0.0759,+0.1609] (gen +0.0128, real -0.1031); margins 0-lo -0.0759, hi-0 +0.1609
+    P3 fails: prefix gain gen +0.0026 vs real +0.0765 [+0.0467,+0.1019]; margins g-lo -0.0441, hi-g +0.0992
+    P4 fails: jsd_first_fg gen 0.1290 vs s15 width [0.1447,0.2156] (real held-out 0.1697); margins -0.0157 / +0.0866; excess gen +0.1142 real +0.1528
+    P5 HOLDS: CHARWIN gen +0.0361 (real +0.0884); margin +0.0361
+    P7 HOLDS: types gen/real at matched tokens 1.135 (seeds 1.121, 1.149); tol ±15%
+  -- CA-ind: 1/6 hold [P1- P2- P3- P4+ P5- P7-] --
+    P1 fails: Moran Δ -0.1022 [-0.1399,-0.0543] (gen 0.0431, real 0.1453); margin hi-0 = -0.0543
+    P2 fails: core->core excess Δ +0.0527 [+0.0148,+0.0918] (gen -0.0504, real -0.1031); margins 0-lo -0.0148, hi-0 +0.0918
+    P3 fails: prefix gain gen +0.0155 vs real +0.0765 [+0.0467,+0.1019]; margins g-lo -0.0312, hi-g +0.0864
+    P4 HOLDS: jsd_first_fg gen 0.1716 vs s15 width [0.1447,0.2156] (real held-out 0.1697); margins +0.0269 / +0.0440; excess gen +0.1566 real +0.1528
+    P5 fails: CHARWIN gen -0.0711 (real +0.0884); margin -0.0711
+    P7 fails: types gen/real at matched tokens 1.432 (seeds 1.440, 1.424); tol ±15%
+  fold time 115s
+--- IT2a fold H: held-out 6 pages (1271 tokens), training 200 pages (33140 tokens)
+  classes: {'top': 300, 'nearest': 496, 'backoff': 1522, 'inertia': 31.6235, 'top_class_sizes': [44, 29, 13, 37, 10, 17, 45, 35, 30, 11, 12, 17]}; mu 5.062; affix contexts CA [464, 50, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1583, word-length sd 1.7039, types 6785 at 33140 tokens
+  fit CA    : p_rep 0.06, tau 20.0, gamma 0.25, rho 0.6; loss 100.26 (R 19.93, types 71.32, Moran 0.51, len-sd 8.50); in-sample Moran 0.1512, len sd 1.6543, types 7358 at 32746
+  fit CA0   : p_rep 0.1, tau 12.0, gamma 0.0, rho 0.0; loss 728.68 (R 37.89, types 362.04, Moran 223.33, len-sd 105.43); in-sample Moran 0.0089, len sd 1.8789, types 8076 at 33097
+  fit CA-ind: p_rep 0.1, tau 20.0, gamma 1.0, rho 0.2; loss 1857.53 (R 12.08, types 1207.78, Moran 0.35, len-sd 637.32); in-sample Moran 0.1524, len sd 1.2738, types 9143 at 32920
+  fits: CA 147 evals 53s; CA-ind 150 evals 51s
+  real held-out: Moran 0.1118 [0.0929,0.1183]; core->core -0.1746 [-0.2310,-0.1376]; prefix gain +0.0180 [+0.0012,+0.0349]; jsd_first_fg 0.2415; CHARWIN +0.0525
+  -- CA: 2/6 hold [P1+ P2- P3- P4- P5- P7+] --
+    P1 HOLDS: Moran Δ +0.0410 [+0.0183,+0.0724] (gen 0.1528, real 0.1118); margin hi-0 = +0.0724
+    P2 fails: core->core excess Δ +0.1680 [+0.1251,+0.2290] (gen -0.0066, real -0.1746); margins 0-lo -0.1251, hi-0 +0.2290
+    P3 fails: prefix gain gen -0.0083 vs real +0.0180 [+0.0012,+0.0349]; margins g-lo -0.0095, hi-g +0.0432
+    P4 fails: jsd_first_fg gen 0.1214 vs s15 width [0.1447,0.2156] (real held-out 0.2415); margins -0.0233 / +0.0942; excess gen +0.0966 real +0.2203
+    P5 fails: CHARWIN gen -0.0111 (real +0.0525); margin -0.0111
+    P7 HOLDS: types gen/real at matched tokens 0.983 (seeds 0.954, 1.011); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.0876 [-0.1119,-0.0549] (gen 0.0241, real 0.1118); margin hi-0 = -0.0549
+    P2 fails: core->core excess Δ +0.1635 [+0.1045,+0.2333] (gen -0.0111, real -0.1746); margins 0-lo -0.1045, hi-0 +0.2333
+    P3 fails: prefix gain gen -0.0008 vs real +0.0180 [+0.0012,+0.0349]; margins g-lo -0.0020, hi-g +0.0357
+    P4 fails: jsd_first_fg gen 0.0917 vs s15 width [0.1447,0.2156] (real held-out 0.2415); margins -0.0530 / +0.1239; excess gen +0.0700 real +0.2203
+    P5 HOLDS: CHARWIN gen +0.0155 (real +0.0525); margin +0.0155
+    P7 HOLDS: types gen/real at matched tokens 1.010 (seeds 1.018, 1.001); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0232 [+0.0025,+0.0490] (gen 0.1350, real 0.1118); margin hi-0 = +0.0490
+    P2 fails: core->core excess Δ +0.1113 [+0.0603,+0.1709] (gen -0.0633, real -0.1746); margins 0-lo -0.0603, hi-0 +0.1709
+    P3 fails: prefix gain gen -0.0006 vs real +0.0180 [+0.0012,+0.0349]; margins g-lo -0.0018, hi-g +0.0355
+    P4 fails: jsd_first_fg gen 0.1281 vs s15 width [0.1447,0.2156] (real held-out 0.2415); margins -0.0166 / +0.0875; excess gen +0.1043 real +0.2203
+    P5 fails: CHARWIN gen -0.0682 (real +0.0525); margin -0.0682
+    P7 fails: types gen/real at matched tokens 1.241 (seeds 1.225, 1.258); tol ±15%
+  fold time 121s
+--- IT2a fold I: held-out 7 pages (353 tokens), training 199 pages (34058 tokens)
+  classes: {'top': 300, 'nearest': 506, 'backoff': 1540, 'inertia': 32.0698, 'top_class_sizes': [49, 26, 16, 13, 29, 38, 10, 29, 10, 22, 46, 12]}; mu 5.065; affix contexts CA [478, 51, 13] / CA-ind [40, 4]
+  training targets: Moran 0.1574, word-length sd 1.7036, types 6983 at 34058 tokens
+  fit CA    : p_rep 0.06, tau 7.0, gamma 0.25, rho 0.6; loss 79.41 (R 35.80, types 37.74, Moran 0.12, len-sd 5.74); in-sample Moran 0.1539, len sd 1.6628, types 7412 at 33951
+  fit CA0   : p_rep 0.03, tau 7.0, gamma 0.0, rho 0.0; loss 625.97 (R 61.17, types 208.37, Moran 220.28, len-sd 136.15); in-sample Moran 0.0089, len sd 1.9024, types 7991 at 33374
+  fit CA-ind: p_rep 0.1, tau 12.0, gamma 1.0, rho 0.3; loss 1826.10 (R 27.12, types 1170.44, Moran 39.48, len-sd 589.06); in-sample Moran 0.2202, len sd 1.2901, types 9372 at 33766
+  fits: CA 147 evals 54s; CA-ind 142 evals 48s
+  real held-out: Moran 0.0842 [0.0519,0.1101]; core->core -0.1061 [-0.1584,-0.0486]; prefix gain +0.0211 [-0.0368,+0.0351]; jsd_first_fg 0.1826; CHARWIN -0.0193
+  -- CA: 4/6 hold [P1+ P2- P3+ P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0629 [+0.0247,+0.1118] (gen 0.1470, real 0.0842); margin hi-0 = +0.1118
+    P2 fails: core->core excess Δ +0.1181 [+0.0339,+0.1744] (gen +0.0120, real -0.1061); margins 0-lo -0.0339, hi-0 +0.1744
+    P3 HOLDS: prefix gain gen -0.0121 vs real +0.0211 [-0.0368,+0.0351]; margins g-lo +0.0247, hi-g +0.0473
+    P4 fails: jsd_first_fg gen 0.1090 vs s15 width [0.1447,0.2156] (real held-out 0.1826); margins -0.0357 / +0.1066; excess gen +0.0620 real +0.1201
+    P5 HOLDS: CHARWIN gen +0.0630 (real -0.0193); margin +0.0630
+    P7 HOLDS: types gen/real at matched tokens 0.932 (seeds 0.919, 0.944); tol ±15%
+  -- CA0: 6/6 hold [P1+ P2+ P3+ P4+ P5+ P7+] --
+    P1 HOLDS: Moran Δ -0.0234 [-0.0873,+0.0657] (gen 0.0607, real 0.0842); margin hi-0 = +0.0657
+    P2 HOLDS: core->core excess Δ +0.0703 [-0.0183,+0.1191] (gen -0.0357, real -0.1061); margins 0-lo +0.0183, hi-0 +0.1191
+    P3 HOLDS: prefix gain gen +0.0025 vs real +0.0211 [-0.0368,+0.0351]; margins g-lo +0.0393, hi-g +0.0327
+    P4 HOLDS: jsd_first_fg gen 0.1588 vs s15 width [0.1447,0.2156] (real held-out 0.1826); margins +0.0141 / +0.0568; excess gen +0.1162 real +0.1201
+    P5 HOLDS: CHARWIN gen +0.0383 (real -0.0193); margin +0.0383
+    P7 HOLDS: types gen/real at matched tokens 0.926 (seeds 0.926, 0.926); tol ±15%
+  -- CA-ind: 4/6 hold [P1+ P2+ P3+ P4- P5- P7+] --
+    P1 HOLDS: Moran Δ +0.1136 [+0.0780,+0.1529] (gen 0.1977, real 0.0842); margin hi-0 = +0.1529
+    P2 HOLDS: core->core excess Δ +0.0605 [-0.0147,+0.1239] (gen -0.0456, real -0.1061); margins 0-lo +0.0147, hi-0 +0.1239
+    P3 HOLDS: prefix gain gen -0.0136 vs real +0.0211 [-0.0368,+0.0351]; margins g-lo +0.0232, hi-g +0.0488
+    P4 fails: jsd_first_fg gen 0.1159 vs s15 width [0.1447,0.2156] (real held-out 0.1826); margins -0.0288 / +0.0997; excess gen +0.0659 real +0.1201
+    P5 fails: CHARWIN gen -0.0590 (real -0.0193); margin -0.0590
+    P7 HOLDS: types gen/real at matched tokens 1.139 (seeds 1.172, 1.105); tol ±15%
+  fold time 115s
+--- IT2a fold M: held-out 20 pages (6773 tokens), training 186 pages (27638 tokens)
+  classes: {'top': 300, 'nearest': 346, 'backoff': 1367, 'inertia': 31.9246, 'top_class_sizes': [22, 26, 16, 44, 36, 39, 32, 12, 22, 22, 16, 13]}; mu 5.077; affix contexts CA [532, 51, 13] / CA-ind [46, 4]
+  training targets: Moran 0.1583, word-length sd 1.7302, types 6449 at 27638 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.6; loss 59.19 (R 26.38, types 13.28, Moran 0.12, len-sd 19.41); in-sample Moran 0.1549, len sd 1.6539, types 6684 at 27333
+  fit CA0   : p_rep 0.1, tau 12.0, gamma 0.0, rho 0.0; loss 460.98 (R 38.28, types 169.66, Moran 171.28, len-sd 81.76); in-sample Moran 0.0274, len sd 1.8866, types 7289 at 27505
+  fit CA-ind: p_rep 0.1, tau 20.0, gamma 1.0, rho 0.3; loss 1958.84 (R 23.73, types 1295.29, Moran 45.70, len-sd 594.13); in-sample Moran 0.2259, len sd 1.3084, types 8770 at 27349
+  fits: CA 147 evals 44s; CA-ind 139 evals 39s
+  real held-out: Moran 0.1485 [0.1342,0.1596]; core->core +0.0038 [-0.0260,+0.0153]; prefix gain +0.1360 [+0.1225,+0.1500]; jsd_first_fg 0.1449; CHARWIN +0.1382
+  -- CA: 3/6 hold [P1+ P2+ P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ -0.0046 [-0.0200,+0.0135] (gen 0.1439, real 0.1485); margin hi-0 = +0.0135
+    P2 HOLDS: core->core excess Δ +0.0114 [-0.0032,+0.0412] (gen +0.0152, real +0.0038); margins 0-lo +0.0032, hi-0 +0.0412
+    P3 fails: prefix gain gen -0.0069 vs real +0.1360 [+0.1225,+0.1500]; margins g-lo -0.1293, hi-g +0.1569
+    P4 fails: jsd_first_fg gen 0.0874 vs s15 width [0.1447,0.2156] (real held-out 0.1449); margins -0.0573 / +0.1282; excess gen +0.0826 real +0.1411
+    P5 HOLDS: CHARWIN gen +0.0167 (real +0.1382); margin +0.0167
+    P7 fails: types gen/real at matched tokens 1.750 (seeds 1.775, 1.725); tol ±15%
+  -- CA0: 2/6 hold [P1- P2+ P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.1245 [-0.1380,-0.1088] (gen 0.0240, real 0.1485); margin hi-0 = -0.1088
+    P2 HOLDS: core->core excess Δ +0.0061 [-0.0092,+0.0380] (gen +0.0099, real +0.0038); margins 0-lo +0.0092, hi-0 +0.0380
+    P3 fails: prefix gain gen -0.0108 vs real +0.1360 [+0.1225,+0.1500]; margins g-lo -0.1332, hi-g +0.1608
+    P4 fails: jsd_first_fg gen 0.0922 vs s15 width [0.1447,0.2156] (real held-out 0.1449); margins -0.0525 / +0.1234; excess gen +0.0877 real +0.1411
+    P5 HOLDS: CHARWIN gen +0.0273 (real +0.1382); margin +0.0273
+    P7 fails: types gen/real at matched tokens 1.839 (seeds 1.842, 1.836); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2+ P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0685 [+0.0549,+0.0829] (gen 0.2170, real 0.1485); margin hi-0 = +0.0829
+    P2 HOLDS: core->core excess Δ -0.0105 [-0.0261,+0.0186] (gen -0.0067, real +0.0038); margins 0-lo +0.0261, hi-0 +0.0186
+    P3 fails: prefix gain gen -0.0004 vs real +0.1360 [+0.1225,+0.1500]; margins g-lo -0.1228, hi-g +0.1504
+    P4 fails: jsd_first_fg gen 0.1150 vs s15 width [0.1447,0.2156] (real held-out 0.1449); margins -0.0297 / +0.1006; excess gen +0.1102 real +0.1411
+    P5 fails: CHARWIN gen -0.0246 (real +0.1382); margin -0.0246
+    P7 fails: types gen/real at matched tokens 2.372 (seeds 2.379, 2.364); tol ±15%
+  fold time 133s
+--- IT2a fold N: held-out 6 pages (1624 tokens), training 200 pages (32787 tokens)
+  classes: {'top': 300, 'nearest': 488, 'backoff': 1479, 'inertia': 32.9886, 'top_class_sizes': [16, 21, 12, 23, 37, 8, 18, 13, 32, 50, 21, 49]}; mu 5.064; affix contexts CA [460, 51, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1567, word-length sd 1.7041, types 6856 at 32787 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.6; loss 106.43 (R 17.61, types 50.46, Moran 0.11, len-sd 38.26); in-sample Moran 0.1534, len sd 1.5987, types 7343 at 32676
+  fit CA0   : p_rep 0.06, tau 12.0, gamma 0.0, rho 0.0; loss 541.12 (R 32.02, types 276.97, Moran 173.09, len-sd 59.04); in-sample Moran 0.0251, len sd 1.8350, types 7997 at 32608
+  fit CA-ind: p_rep 0.1, tau 20.0, gamma 0.75, rho 0.3; loss 1763.54 (R 14.80, types 1429.32, Moran 3.85, len-sd 315.58); in-sample Moran 0.1763, len sd 1.4013, types 9448 at 32421
+  fits: CA 147 evals 51s; CA-ind 139 evals 47s
+  real held-out: Moran 0.1551 [0.1406,0.1692]; core->core -0.1419 [-0.1714,-0.1184]; prefix gain +0.0522 [+0.0460,+0.0646]; jsd_first_fg 0.1916; CHARWIN +0.0992
+  -- CA: 2/6 hold [P1+ P2- P3- P4- P5+ P7-] --
+    P1 HOLDS: Moran Δ -0.0075 [-0.0355,+0.0246] (gen 0.1476, real 0.1551); margin hi-0 = +0.0246
+    P2 fails: core->core excess Δ +0.1340 [+0.1037,+0.1677] (gen -0.0078, real -0.1419); margins 0-lo -0.1037, hi-0 +0.1677
+    P3 fails: prefix gain gen +0.0097 vs real +0.0522 [+0.0460,+0.0646]; margins g-lo -0.0362, hi-g +0.0549
+    P4 fails: jsd_first_fg gen 0.0845 vs s15 width [0.1447,0.2156] (real held-out 0.1916); margins -0.0602 / +0.1311; excess gen +0.0658 real +0.1726
+    P5 HOLDS: CHARWIN gen +0.0018 (real +0.0992); margin +0.0018
+    P7 fails: types gen/real at matched tokens 1.217 (seeds 1.206, 1.228); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.1113 [-0.1323,-0.0930] (gen 0.0437, real 0.1551); margin hi-0 = -0.0930
+    P2 fails: core->core excess Δ +0.1556 [+0.1279,+0.1945] (gen +0.0137, real -0.1419); margins 0-lo -0.1279, hi-0 +0.1945
+    P3 fails: prefix gain gen -0.0134 vs real +0.0522 [+0.0460,+0.0646]; margins g-lo -0.0594, hi-g +0.0780
+    P4 fails: jsd_first_fg gen 0.0842 vs s15 width [0.1447,0.2156] (real held-out 0.1916); margins -0.0605 / +0.1314; excess gen +0.0670 real +0.1726
+    P5 HOLDS: CHARWIN gen +0.0419 (real +0.0992); margin +0.0419
+    P7 fails: types gen/real at matched tokens 1.235 (seeds 1.227, 1.242); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0440 [+0.0236,+0.0665] (gen 0.1991, real 0.1551); margin hi-0 = +0.0665
+    P2 fails: core->core excess Δ +0.0920 [+0.0642,+0.1359] (gen -0.0499, real -0.1419); margins 0-lo -0.0642, hi-0 +0.1359
+    P3 fails: prefix gain gen +0.0001 vs real +0.0522 [+0.0460,+0.0646]; margins g-lo -0.0459, hi-g +0.0645
+    P4 fails: jsd_first_fg gen 0.1083 vs s15 width [0.1447,0.2156] (real held-out 0.1916); margins -0.0364 / +0.1073; excess gen +0.0897 real +0.1726
+    P5 fails: CHARWIN gen -0.0185 (real +0.0992); margin -0.0185
+    P7 fails: types gen/real at matched tokens 1.565 (seeds 1.567, 1.564); tol ±15%
+  fold time 115s
+--- IT2a fold O: held-out 12 pages (1384 tokens), training 194 pages (33027 tokens)
+  classes: {'top': 300, 'nearest': 501, 'backoff': 1489, 'inertia': 32.766, 'top_class_sizes': [42, 26, 37, 13, 26, 14, 22, 9, 12, 22, 53, 24]}; mu 5.069; affix contexts CA [488, 51, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1601, word-length sd 1.7027, types 6837 at 33027 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.7; loss 78.73 (R 29.64, types 46.86, Moran 0.96, len-sd 1.27); in-sample Moran 0.1699, len sd 1.6835, types 7305 at 32970
+  fit CA0   : p_rep 0.06, tau 12.0, gamma 0.0, rho 0.0; loss 658.95 (R 21.92, types 259.32, Moran 240.46, len-sd 137.25); in-sample Moran 0.0050, len sd 1.9021, types 7938 at 32923
+  fit CA-ind: p_rep 0.15, tau 20.0, gamma 1.0, rho 0.2; loss 1815.82 (R 21.78, types 1115.01, Moran 3.19, len-sd 675.84); in-sample Moran 0.1423, len sd 1.2600, types 9120 at 33211
+  fits: CA 147 evals 51s; CA-ind 139 evals 46s
+  real held-out: Moran 0.0762 [0.0426,0.0982]; core->core -0.1340 [-0.1708,-0.0999]; prefix gain +0.0119 [+0.0021,+0.0251]; jsd_first_fg 0.2668; CHARWIN +0.0732
+  -- CA: 4/6 hold [P1+ P2- P3+ P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.0780 [+0.0496,+0.1133] (gen 0.1542, real 0.0762); margin hi-0 = +0.1133
+    P2 fails: core->core excess Δ +0.1415 [+0.0954,+0.1813] (gen +0.0075, real -0.1340); margins 0-lo -0.0954, hi-0 +0.1813
+    P3 HOLDS: prefix gain gen +0.0139 vs real +0.0119 [+0.0021,+0.0251]; margins g-lo +0.0118, hi-g +0.0112
+    P4 fails: jsd_first_fg gen 0.0955 vs s15 width [0.1447,0.2156] (real held-out 0.2668); margins -0.0492 / +0.1201; excess gen +0.0745 real +0.2457
+    P5 HOLDS: CHARWIN gen +0.0250 (real +0.0732); margin +0.0250
+    P7 HOLDS: types gen/real at matched tokens 1.136 (seeds 1.110, 1.163); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.0721 [-0.1029,-0.0357] (gen 0.0041, real 0.0762); margin hi-0 = -0.0357
+    P2 fails: core->core excess Δ +0.1261 [+0.0860,+0.1639] (gen -0.0078, real -0.1340); margins 0-lo -0.0860, hi-0 +0.1639
+    P3 fails: prefix gain gen -0.0043 vs real +0.0119 [+0.0021,+0.0251]; margins g-lo -0.0064, hi-g +0.0294
+    P4 fails: jsd_first_fg gen 0.1240 vs s15 width [0.1447,0.2156] (real held-out 0.2668); margins -0.0207 / +0.0916; excess gen +0.1050 real +0.2457
+    P5 HOLDS: CHARWIN gen +0.0160 (real +0.0732); margin +0.0160
+    P7 fails: types gen/real at matched tokens 1.166 (seeds 1.188, 1.143); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0424 [+0.0149,+0.0761] (gen 0.1186, real 0.0762); margin hi-0 = +0.0761
+    P2 fails: core->core excess Δ +0.1003 [+0.0612,+0.1389] (gen -0.0337, real -0.1340); margins 0-lo -0.0612, hi-0 +0.1389
+    P3 fails: prefix gain gen -0.0071 vs real +0.0119 [+0.0021,+0.0251]; margins g-lo -0.0092, hi-g +0.0322
+    P4 fails: jsd_first_fg gen 0.1263 vs s15 width [0.1447,0.2156] (real held-out 0.2668); margins -0.0184 / +0.0893; excess gen +0.1054 real +0.2457
+    P5 fails: CHARWIN gen -0.0688 (real +0.0732); margin -0.0688
+    P7 fails: types gen/real at matched tokens 1.471 (seeds 1.443, 1.498); tol ±15%
+  fold time 112s
+--- IT2a fold Q: held-out 10 pages (932 tokens), training 196 pages (33479 tokens)
+  classes: {'top': 300, 'nearest': 506, 'backoff': 1531, 'inertia': 32.2695, 'top_class_sizes': [28, 19, 9, 23, 24, 9, 17, 55, 14, 41, 49, 12]}; mu 5.066; affix contexts CA [479, 50, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1590, word-length sd 1.7020, types 6932 at 33479 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.6; loss 106.57 (R 29.69, types 65.96, Moran 0.09, len-sd 10.81); in-sample Moran 0.1621, len sd 1.6460, types 7495 at 33333
+  fit CA0   : p_rep 0.06, tau 20.0, gamma 0.0, rho 0.0; loss 651.57 (R 21.70, types 356.58, Moran 176.25, len-sd 97.03); in-sample Moran 0.0263, len sd 1.8696, types 8241 at 33490
+  fit CA-ind: p_rep 0.15, tau 20.0, gamma 1.0, rho 0.3; loss 1816.50 (R 28.66, types 1107.59, Moran 25.35, len-sd 654.91); in-sample Moran 0.2094, len sd 1.2664, types 9239 at 33242
+  fits: CA 144 evals 40s; CA-ind 139 evals 34s
+  real held-out: Moran 0.0790 [0.0378,0.1102]; core->core -0.1028 [-0.1551,-0.0553]; prefix gain +0.0268 [+0.0126,+0.0447]; jsd_first_fg 0.2565; CHARWIN +0.0662
+  -- CA: 3/6 hold [P1+ P2- P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ +0.1027 [+0.0599,+0.1446] (gen 0.1817, real 0.0790); margin hi-0 = +0.1446
+    P2 fails: core->core excess Δ +0.1210 [+0.0623,+0.1868] (gen +0.0182, real -0.1028); margins 0-lo -0.0623, hi-0 +0.1868
+    P3 fails: prefix gain gen -0.0114 vs real +0.0268 [+0.0126,+0.0447]; margins g-lo -0.0240, hi-g +0.0561
+    P4 fails: jsd_first_fg gen 0.0809 vs s15 width [0.1447,0.2156] (real held-out 0.2565); margins -0.0638 / +0.1347; excess gen +0.0555 real +0.2307
+    P5 HOLDS: CHARWIN gen +0.0053 (real +0.0662); margin +0.0053
+    P7 HOLDS: types gen/real at matched tokens 1.061 (seeds 1.076, 1.047); tol ±15%
+  -- CA0: 3/6 hold [P1+ P2- P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ -0.0264 [-0.0663,+0.0186] (gen 0.0525, real 0.0790); margin hi-0 = +0.0186
+    P2 fails: core->core excess Δ +0.0755 [+0.0234,+0.1421] (gen -0.0273, real -0.1028); margins 0-lo -0.0234, hi-0 +0.1421
+    P3 fails: prefix gain gen -0.0099 vs real +0.0268 [+0.0126,+0.0447]; margins g-lo -0.0224, hi-g +0.0545
+    P4 fails: jsd_first_fg gen 0.0906 vs s15 width [0.1447,0.2156] (real held-out 0.2565); margins -0.0541 / +0.1250; excess gen +0.0649 real +0.2307
+    P5 HOLDS: CHARWIN gen +0.0218 (real +0.0662); margin +0.0218
+    P7 HOLDS: types gen/real at matched tokens 1.091 (seeds 1.094, 1.088); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.1367 [+0.0975,+0.1800] (gen 0.2157, real 0.0790); margin hi-0 = +0.1800
+    P2 fails: core->core excess Δ +0.0999 [+0.0449,+0.1604] (gen -0.0029, real -0.1028); margins 0-lo -0.0449, hi-0 +0.1604
+    P3 fails: prefix gain gen +0.0077 vs real +0.0268 [+0.0126,+0.0447]; margins g-lo -0.0049, hi-g +0.0370
+    P4 fails: jsd_first_fg gen 0.1391 vs s15 width [0.1447,0.2156] (real held-out 0.2565); margins -0.0056 / +0.0765; excess gen +0.1124 real +0.2307
+    P5 fails: CHARWIN gen -0.0552 (real +0.0662); margin -0.0552
+    P7 fails: types gen/real at matched tokens 1.341 (seeds 1.318, 1.363); tol ±15%
+  fold time 86s
+--- IT2a fold S: held-out 10 pages (1369 tokens), training 196 pages (33042 tokens)
+  classes: {'top': 300, 'nearest': 499, 'backoff': 1494, 'inertia': 31.7791, 'top_class_sizes': [27, 56, 39, 20, 10, 24, 12, 24, 9, 24, 13, 42]}; mu 5.067; affix contexts CA [493, 51, 13] / CA-ind [42, 4]
+  training targets: Moran 0.1569, word-length sd 1.7072, types 6839 at 33042 tokens
+  fit CA    : p_rep 0.06, tau 12.0, gamma 0.25, rho 0.6; loss 98.86 (R 21.99, types 68.74, Moran 0.21, len-sd 7.92); in-sample Moran 0.1524, len sd 1.6591, types 7406 at 33178
+  fit CA0   : p_rep 0.03, tau 7.0, gamma 0.0, rho 0.0; loss 645.17 (R 48.18, types 273.01, Moran 208.03, len-sd 115.96); in-sample Moran 0.0127, len sd 1.8910, types 7969 at 33019
+  fit CA-ind: p_rep 0.15, tau 12.0, gamma 1.0, rho 0.2; loss 1862.36 (R 57.05, types 1135.94, Moran 1.00, len-sd 668.37); in-sample Moran 0.1469, len sd 1.2658, types 9144 at 32796
+  fits: CA 147 evals 39s; CA-ind 142 evals 34s
+  real held-out: Moran 0.1485 [0.0850,0.1798]; core->core -0.1387 [-0.1724,-0.1064]; prefix gain +0.0468 [+0.0283,+0.0672]; jsd_first_fg 0.1945; CHARWIN +0.0668
+  -- CA: 3/6 hold [P1+ P2- P3- P4- P5+ P7+] --
+    P1 HOLDS: Moran Δ -0.0307 [-0.0755,+0.0325] (gen 0.1178, real 0.1485); margin hi-0 = +0.0325
+    P2 fails: core->core excess Δ +0.1381 [+0.1003,+0.1837] (gen -0.0006, real -0.1387); margins 0-lo -0.1003, hi-0 +0.1837
+    P3 fails: prefix gain gen -0.0080 vs real +0.0468 [+0.0283,+0.0672]; margins g-lo -0.0363, hi-g +0.0752
+    P4 fails: jsd_first_fg gen 0.1048 vs s15 width [0.1447,0.2156] (real held-out 0.1945); margins -0.0399 / +0.1108; excess gen +0.0818 real +0.1720
+    P5 HOLDS: CHARWIN gen +0.0206 (real +0.0668); margin +0.0206
+    P7 HOLDS: types gen/real at matched tokens 1.132 (seeds 1.129, 1.136); tol ±15%
+  -- CA0: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.1151 [-0.1525,-0.0489] (gen 0.0334, real 0.1485); margin hi-0 = -0.0489
+    P2 fails: core->core excess Δ +0.1370 [+0.0932,+0.1787] (gen -0.0018, real -0.1387); margins 0-lo -0.0932, hi-0 +0.1787
+    P3 fails: prefix gain gen -0.0064 vs real +0.0468 [+0.0283,+0.0672]; margins g-lo -0.0347, hi-g +0.0736
+    P4 fails: jsd_first_fg gen 0.0840 vs s15 width [0.1447,0.2156] (real held-out 0.1945); margins -0.0607 / +0.1316; excess gen +0.0610 real +0.1720
+    P5 HOLDS: CHARWIN gen +0.0277 (real +0.0668); margin +0.0277
+    P7 HOLDS: types gen/real at matched tokens 1.136 (seeds 1.136, 1.136); tol ±15%
+  -- CA-ind: 1/6 hold [P1+ P2- P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ -0.0309 [-0.0800,+0.0319] (gen 0.1176, real 0.1485); margin hi-0 = +0.0319
+    P2 fails: core->core excess Δ +0.1415 [+0.0887,+0.1797] (gen +0.0027, real -0.1387); margins 0-lo -0.0887, hi-0 +0.1797
+    P3 fails: prefix gain gen -0.0069 vs real +0.0468 [+0.0283,+0.0672]; margins g-lo -0.0352, hi-g +0.0741
+    P4 fails: jsd_first_fg gen 0.1137 vs s15 width [0.1447,0.2156] (real held-out 0.1945); margins -0.0310 / +0.1019; excess gen +0.0877 real +0.1720
+    P5 fails: CHARWIN gen -0.0728 (real +0.0668); margin -0.0728
+    P7 fails: types gen/real at matched tokens 1.497 (seeds 1.506, 1.488); tol ±15%
+  fold time 85s
+--- IT2a fold T: held-out 23 pages (10673 tokens), training 183 pages (23738 tokens)
+  classes: {'top': 300, 'nearest': 288, 'backoff': 1224, 'inertia': 32.624, 'top_class_sizes': [36, 7, 16, 30, 37, 2, 16, 37, 26, 29, 49, 15]}; mu 4.947; affix contexts CA [417, 50, 13] / CA-ind [38, 4]
+  training targets: Moran 0.1292, word-length sd 1.6958, types 5339 at 23738 tokens
+  fit CA    : p_rep 0.1, tau 20.0, gamma 0.25, rho 0.5; loss 93.08 (R 36.09, types 52.00, Moran 4.45, len-sd 0.53); in-sample Moran 0.1503, len sd 1.6834, types 5724 at 23644
+  fit CA0   : p_rep 0.1, tau 20.0, gamma 0.0, rho 0.0; loss 619.17 (R 33.38, types 226.77, Moran 138.54, len-sd 220.48); in-sample Moran 0.0115, len sd 1.9476, types 6143 at 23519
+  fit CA-ind: p_rep 0.15, tau 12.0, gamma 1.0, rho 0.2; loss 1940.60 (R 52.61, types 1285.18, Moran 2.99, len-sd 599.82); in-sample Moran 0.1465, len sd 1.2805, types 7253 at 23526
+  fits: CA 139 evals 27s; CA-ind 150 evals 26s
+  real held-out: Moran 0.1839 [0.1717,0.1960]; core->core -0.0598 [-0.0777,-0.0537]; prefix gain +0.1107 [+0.0940,+0.1250]; jsd_first_fg 0.3144; CHARWIN +0.0664
+  -- CA: 2/6 hold [P1- P2- P3- P4- P5+ P7+] --
+    P1 fails: Moran Δ -0.0430 [-0.0586,-0.0266] (gen 0.1410, real 0.1839); margin hi-0 = -0.0266
+    P2 fails: core->core excess Δ +0.0713 [+0.0587,+0.0916] (gen +0.0115, real -0.0598); margins 0-lo -0.0587, hi-0 +0.0916
+    P3 fails: prefix gain gen -0.0019 vs real +0.1107 [+0.0940,+0.1250]; margins g-lo -0.0959, hi-g +0.1269
+    P4 fails: jsd_first_fg gen 0.0889 vs s15 width [0.1447,0.2156] (real held-out 0.3144); margins -0.0558 / +0.1267; excess gen +0.0852 real +0.3113
+    P5 HOLDS: CHARWIN gen +0.0533 (real +0.0664); margin +0.0533
+    P7 HOLDS: types gen/real at matched tokens 1.093 (seeds 1.086, 1.101); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5+ P7-] --
+    P1 fails: Moran Δ -0.1712 [-0.1871,-0.1562] (gen 0.0127, real 0.1839); margin hi-0 = -0.1562
+    P2 fails: core->core excess Δ +0.0469 [+0.0398,+0.0692] (gen -0.0130, real -0.0598); margins 0-lo -0.0398, hi-0 +0.0692
+    P3 fails: prefix gain gen -0.0083 vs real +0.1107 [+0.0940,+0.1250]; margins g-lo -0.1024, hi-g +0.1333
+    P4 fails: jsd_first_fg gen 0.0814 vs s15 width [0.1447,0.2156] (real held-out 0.3144); margins -0.0633 / +0.1342; excess gen +0.0780 real +0.3113
+    P5 HOLDS: CHARWIN gen +0.0419 (real +0.0664); margin +0.0419
+    P7 fails: types gen/real at matched tokens 1.150 (seeds 1.178, 1.123); tol ±15%
+  -- CA-ind: 0/6 hold [P1- P2- P3- P4- P5- P7-] --
+    P1 fails: Moran Δ -0.0403 [-0.0526,-0.0273] (gen 0.1436, real 0.1839); margin hi-0 = -0.0273
+    P2 fails: core->core excess Δ +0.0378 [+0.0263,+0.0573] (gen -0.0220, real -0.0598); margins 0-lo -0.0263, hi-0 +0.0573
+    P3 fails: prefix gain gen -0.0057 vs real +0.1107 [+0.0940,+0.1250]; margins g-lo -0.0997, hi-g +0.1307
+    P4 fails: jsd_first_fg gen 0.0932 vs s15 width [0.1447,0.2156] (real held-out 0.3144); margins -0.0515 / +0.1224; excess gen +0.0900 real +0.3113
+    P5 fails: CHARWIN gen -0.0179 (real +0.0664); margin -0.0179
+    P7 fails: types gen/real at matched tokens 1.454 (seeds 1.475, 1.432); tol ±15%
+  fold time 106s
+
+=== PER-FOLD TABLE (count of P1 P2 P3 P4 P5 P7 holding; + / - per prediction) ===
+  ZL3b:
+    fold  pages  CA                      CA0                     CA-ind                
+    A        16  2/6 +----+ t1.12        2/6 ----++ t1.12        2/6 +--+-- t1.48      
+    B        14  2/6 +---+- t1.35        2/6 ---++- t1.36        3/6 +--++- t1.71      
+    C        16  3/6 +--++- t1.23        1/6 ----+- t1.22        1/6 +----- t1.61      
+    D        16  3/6 +---++ t1.10        3/6 ---+++ t1.11        2/6 -+-+-- t1.49      
+    E        16  2/6 +---+- t1.25        1/6 ----+- t1.26        2/6 ++---- t1.61      
+    F        16  3/6 +---++ t1.10        2/6 ----++ t1.10        1/6 +----- t1.41      
+    G        16  3/6 +---++ t1.08        2/6 ----++ t1.12        2/6 ---++- t1.47      
+    H         6  3/6 +---++ t1.04        2/6 ----++ t1.02        2/6 +---+- t1.29      
+    I         7  3/6 +-+--+ t0.96        3/6 --+-++ t0.95        2/6 +-+--- t1.16      
+    M        20  3/6 ++--+- t1.75        2/6 -+--+- t1.84        2/6 +--+-- t2.37      
+    N         7  2/6 +---+- t1.21        1/6 ----+- t1.25        2/6 ++---- t1.56      
+    O        12  3/6 +---++ t1.14        2/6 ----++ t1.15        2/6 +--+-- t1.44      
+    Q        10  4/6 ++--++ t1.00        4/6 ++--++ t0.99        4/6 ++-++- t1.27      
+    S        10  2/6 +---+- t1.21        1/6 ----+- t1.25        2/6 +--+-- t1.53      
+    T        23  2/6 ----++ t1.09        1/6 ----+- t1.16        2/6 +---+- t1.52      
+  RF1b:
+    fold  pages  CA                      CA0                     CA-ind                
+    A        16  2/6 +----+ t1.07        4/6 +--+++ t1.10        3/6 +--++- t1.44      
+    B        14  1/6 +----- t1.31        1/6 ----+- t1.25        1/6 +----- t1.59      
+    C        16  3/6 +---++ t1.11        2/6 ----++ t1.15        2/6 +--+-- t1.51      
+    D        16  4/6 +--+++ t1.08        2/6 ----++ t1.07        2/6 +--+-- t1.42      
+    E        16  3/6 +--++- t1.18        2/6 ---++- t1.21        2/6 +---+- t1.56      
+    F        16  4/6 +--+++ t1.05        2/6 ----++ t1.09        3/6 ++-+-- t1.41      
+    G        16  3/6 +---++ t1.07        2/6 ----++ t1.12        1/6 +----- t1.39      
+    H         6  3/6 +-+--+ t0.98        3/6 ---+++ t0.99        2/6 +---+- t1.26      
+    I         7  5/6 ++++-+ t0.91        3/6 --+-++ t0.92        5/6 ++++-+ t1.14      
+    M        20  2/6 -+--+- t1.77        2/6 -+--+- t1.87        1/6 +----- t2.39      
+    N         7  2/6 +---+- t1.18        1/6 ----+- t1.22        0/6 ------ t1.55      
+    O        12  4/6 +--+++ t1.14        1/6 ----+- t1.16        1/6 +----- t1.49      
+    Q        10  4/6 +--+++ t0.99        4/6 +--+++ t1.04        3/6 ++-+-- t1.33      
+    S        10  4/6 +--+++ t1.15        2/6 ---++- t1.23        2/6 +---+- t1.56      
+    T        23  2/6 ----++ t1.13        2/6 ----++ t1.15        1/6 ----+- t1.50      
+  IT2a:
+    fold  pages  CA                      CA0                     CA-ind                
+    A        16  2/6 +---+- t1.16        2/6 +---+- t1.21        1/6 +----- t1.48      
+    B        14  1/6 +----- t1.37        1/6 ----+- t1.39        1/6 +----- t1.67      
+    C        16  2/6 +---+- t1.20        2/6 --+-+- t1.24        2/6 +-+--- t1.53      
+    D        16  4/6 ++-+-+ t1.12        2/6 ----++ t1.11        1/6 ---+-- t1.47      
+    E        16  0/6 ------ t1.21        1/6 ----+- t1.23        0/6 ------ t1.53      
+    F        16  3/6 +---++ t1.14        1/6 -----+ t1.13        2/6 ++---- t1.44      
+    G        16  4/6 +--+++ t1.12        2/6 ----++ t1.14        1/6 ---+-- t1.43      
+    H         6  2/6 +----+ t0.98        2/6 ----++ t1.01        1/6 +----- t1.24      
+    I         7  4/6 +-+-++ t0.93        6/6 ++++++ t0.93        4/6 +++--+ t1.14      
+    M        20  3/6 ++--+- t1.75        2/6 -+--+- t1.84        2/6 ++---- t2.37      
+    N         6  2/6 +---+- t1.22        1/6 ----+- t1.23        1/6 +----- t1.57      
+    O        12  4/6 +-+-++ t1.14        1/6 ----+- t1.17        1/6 +----- t1.47      
+    Q        10  3/6 +---++ t1.06        3/6 +---++ t1.09        1/6 +----- t1.34      
+    S        10  3/6 +---++ t1.13        2/6 ----++ t1.14        1/6 +----- t1.50      
+    T        23  2/6 ----++ t1.09        1/6 ----+- t1.15        0/6 ------ t1.45      
+  (+/- order: P1 P2 P3 P4 P5 P7; tX.XX = generated/real types at matched tokens; * = small fold)
+
+=== FITTED PARAMETERS (range over folds) ===
+  ZL3b CA    : p_rep 0.03-0.1 (median 0.06); tau 4.0-20.0 (median 12); gamma 0.25-0.25 (median 0.25); rho 0.4-0.7 (median 0.6)
+  ZL3b CA0   : p_rep 0.03-0.15 (median 0.06); tau 2.0-20.0 (median 7); gamma 0.0-0.0 (median 0); rho 0.0-0.0 (median 0)
+  ZL3b CA-ind: p_rep 0.0-0.15 (median 0.1); tau 1.0-20.0 (median 12); gamma 0.75-1.0 (median 0.75); rho 0.1-0.4 (median 0.2)
+  RF1b CA    : p_rep 0.06-0.1 (median 0.1); tau 7.0-20.0 (median 20); gamma 0.25-0.25 (median 0.25); rho 0.4-0.8 (median 0.5)
+  RF1b CA0   : p_rep 0.06-0.15 (median 0.1); tau 7.0-20.0 (median 12); gamma 0.0-0.0 (median 0); rho 0.0-0.0 (median 0)
+  RF1b CA-ind: p_rep 0.0-0.15 (median 0.1); tau 1.0-20.0 (median 12); gamma 0.5-1.0 (median 0.75); rho 0.1-0.3 (median 0.3)
+  IT2a CA    : p_rep 0.03-0.1 (median 0.06); tau 4.0-20.0 (median 20); gamma 0.25-0.25 (median 0.25); rho 0.4-0.7 (median 0.6)
+  IT2a CA0   : p_rep 0.03-0.1 (median 0.06); tau 4.0-20.0 (median 12); gamma 0.0-0.0 (median 0); rho 0.0-0.0 (median 0)
+  IT2a CA-ind: p_rep 0.0-0.15 (median 0.1); tau 1.0-20.0 (median 12); gamma 0.75-1.0 (median 1); rho 0.1-0.3 (median 0.2)
+
+=== PER-PREDICTION FOLD COUNTS ===
+  ZL3b CA    : folds with >= 5/6: 0/15; per prediction P1 14/15, P2 2/15, P3 1/15, P4 1/15, P5 13/15, P7 9/15
+  ZL3b CA0   : folds with >= 5/6: 0/15; per prediction P1 1/15, P2 2/15, P3 1/15, P4 2/15, P5 15/15, P7 8/15
+  ZL3b CA-ind: folds with >= 5/6: 0/15; per prediction P1 13/15, P2 4/15, P3 1/15, P4 8/15, P5 5/15, P7 0/15
+    CA holds & CA0 fails (folds): P1 13, P2 0, P3 0, P4 1, P5 0, P7 1;  CA0 holds & CA fails: P1 0, P2 0, P3 0, P4 2, P5 2, P7 0
+    CA holds & CA-ind fails (folds): P1 2, P2 1, P3 0, P4 1, P5 8, P7 9;  CA-ind holds & CA fails: P1 1, P2 3, P3 0, P4 8, P5 0, P7 0
+  RF1b CA    : folds with >= 5/6: 1/15; per prediction P1 13/15, P2 2/15, P3 2/15, P4 7/15, P5 11/15, P7 11/15
+  RF1b CA0   : folds with >= 5/6: 0/15; per prediction P1 2/15, P2 1/15, P3 1/15, P4 5/15, P5 15/15, P7 9/15
+  RF1b CA-ind: folds with >= 5/6: 1/15; per prediction P1 13/15, P2 3/15, P3 1/15, P4 6/15, P5 5/15, P7 1/15
+    CA holds & CA0 fails (folds): P1 11, P2 1, P3 1, P4 4, P5 0, P7 2;  CA0 holds & CA fails: P1 0, P2 0, P3 0, P4 2, P5 4, P7 0
+    CA holds & CA-ind fails (folds): P1 1, P2 1, P3 1, P4 3, P5 8, P7 10;  CA-ind holds & CA fails: P1 1, P2 2, P3 0, P4 2, P5 2, P7 0
+  IT2a CA    : folds with >= 5/6: 0/15; per prediction P1 13/15, P2 2/15, P3 2/15, P4 2/15, P5 11/15, P7 9/15
+  IT2a CA0   : folds with >= 5/6: 1/15; per prediction P1 3/15, P2 2/15, P3 2/15, P4 1/15, P5 14/15, P7 7/15
+  IT2a CA-ind: folds with >= 5/6: 0/15; per prediction P1 11/15, P2 3/15, P3 2/15, P4 2/15, P5 0/15, P7 1/15
+    CA holds & CA0 fails (folds): P1 10, P2 1, P3 1, P4 2, P5 1, P7 2;  CA0 holds & CA fails: P1 0, P2 1, P3 1, P4 1, P5 4, P7 0
+    CA holds & CA-ind fails (folds): P1 2, P2 1, P3 1, P4 0, P5 11, P7 8;  CA-ind holds & CA fails: P1 0, P2 2, P3 1, P4 0, P5 0, P7 0
+
+=== VERDICT (pre-registered rule) ===
+  CA    : ZL3b 0/15 folds >= 5/6; RF1b 1/15 folds >= 5/6; IT2a 0/15 folds >= 5/6
+  CA0   : ZL3b 0/15 folds >= 5/6; RF1b 0/15 folds >= 5/6; IT2a 1/15 folds >= 5/6
+  CA-ind: ZL3b 0/15 folds >= 5/6; RF1b 1/15 folds >= 5/6; IT2a 0/15 folds >= 5/6
+VERDICT: constrained assembly with length cadence does NOT predict held-out quires (ZL3b majority no, RF1b majority no, IT2a majority no)
+MULTIPLICITY (D-056): 4th producer evaluated in phase 4, first on leave-one-quire-out.  P1 is partly built in by the fit (Moran is a fit target).
+
+elapsed: 499.4 s
+date end: Sun Oct 18 01:57:33 PDT 2026 (`date`)
+paths: ./results_s67.txt, ./runs/s67

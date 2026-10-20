@@ -1,0 +1,10 @@
+A: 4 single-stratum pages (p2,p3,p4,p7) of 8 = 50% > 25% -> widened 4
+   groups (count-list indices): [[0, 1, 6], [2, 3], [4, 7]] held: [5]
+   expected: (Q1,B1,1,A)=[0,1,6] stays; widened p2,p3 -> W(1,1,A)=[2,3] (do NOT merge into [0,1,6]); p4,p7 -> W(2,2,B)=[4,7]; p5 held
+B: 1 single of 6 = 17% <= 25% -> widened 0 groups [[0, 1, 2, 3, 4], [5]] (single page stays a 1-page stratum)
+C: held page p5 start token ever replaced by another page's token: 0 (expect 0)
+   p4 (2 paragraph starts, widened group with p7) start-slot contents seen: 6 distinct
+D: 4 singles of 17 = 23.5% <= 25%: widened 0 groups [[0], [1], [2], [3], [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]]
+   s0 (alone, starts at slots [0, 2] ) start contents seen: [('s0_0', 's0_2'), ('s0_2', 's0_0')] -> permuted within own page only
+E: chapter of 20 tokens into a page of 6 slots keeps [0, 1, 2, 3, 4, 5] ; tokens [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] dropped
+F: fill order (count-list indices): [0, 1, 6, 2, 3, 4, 7, 5] (strata by first page, count-list order inside; held pages last, count-list order)

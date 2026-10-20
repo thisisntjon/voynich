@@ -1,0 +1,4083 @@
+folio	hand	split	box	eva	n_u1	n_u0	n_A	n_B	n_C
+f42r	1	heldout	0				3	3	3
+f42r	1	heldout	1				19	14	17
+f42r	1	heldout	2				1	1	1
+f42r	1	heldout	3				5	4	6
+f42r	1	heldout	5				8	5	8
+f42r	1	heldout	6				4	4	4
+f42r	1	heldout	7				5	4	6
+f42r	1	heldout	8				17	11	17
+f42r	1	heldout	9				5	4	5
+f42r	1	heldout	10				9	6	11
+f42r	1	heldout	12				3	3	3
+f42r	1	heldout	13	shor	3	4	6	4	4
+f42r	1	heldout	14	chetar	5	6	6	5	9
+f42r	1	heldout	16	dar	3	3	4	4	4
+f42r	1	heldout	17	cthaiin	5	7	4	3	4
+f42r	1	heldout	18	qokar	5	5	6	4	9
+f42r	1	heldout	19	chockhy	4	7	7	7	7
+f42r	1	heldout	20	chotor	5	6	3	3	5
+f42r	1	heldout	21	chy	2	3	2	2	3
+f42r	1	heldout	22	kary	4	4	6	4	5
+f42r	1	heldout	23	dorain	6	6	6	5	6
+f42r	1	heldout	24	ihar	4	4	7	7	7
+f42r	1	heldout	25				3	3	4
+f42r	1	heldout	26				2	2	4
+f42r	1	heldout	27				7	6	7
+f42r	1	heldout	28				15	11	14
+f42r	1	heldout	29				6	3	6
+f42r	1	heldout	30				11	8	13
+f42r	1	heldout	32				8	7	10
+f42r	1	heldout	33				6	5	7
+f42r	1	heldout	34				5	5	7
+f42r	1	heldout	35				5	5	6
+f42r	1	heldout	36				9	7	10
+f42r	1	heldout	37				11	8	10
+f42r	1	heldout	38				5	4	7
+f42r	1	heldout	39				3	3	3
+f42r	1	heldout	40				5	4	7
+f42r	1	heldout	41				3	3	4
+f42r	1	heldout	42				6	3	4
+f42r	1	heldout	43				5	4	6
+f42r	1	heldout	45				10	8	11
+f42r	1	heldout	46				6	4	8
+f42r	1	heldout	47				7	7	8
+f42r	1	heldout	48				5	4	5
+f42r	1	heldout	49				5	3	5
+f42r	1	heldout	50				5	4	4
+f42r	1	heldout	51				5	3	3
+f42r	1	heldout	52				5	5	6
+f42r	1	heldout	53				1	1	1
+f42r	1	heldout	54	chol	3	4	5	5	5
+f42r	1	heldout	55	shol	3	4	4	3	5
+f42r	1	heldout	56				5	4	4
+f42r	1	heldout	57	choeky	5	6	9	7	9
+f42r	1	heldout	58				6	5	8
+f42r	1	heldout	59	dain	4	4	4	3	4
+f42r	1	heldout	60				11	7	9
+f42r	1	heldout	61				3	2	2
+f42r	1	heldout	62				6	6	6
+f42r	1	heldout	63				6	4	7
+f42r	1	heldout	64				5	5	5
+f42r	1	heldout	65				5	4	5
+f42r	1	heldout	66				5	4	7
+f42r	1	heldout	67				4	3	4
+f42r	1	heldout	68				3	1	1
+f42r	1	heldout	69				6	5	5
+f42r	1	heldout	70				6	4	6
+f42r	1	heldout	71				6	5	7
+f42r	1	heldout	72				6	5	6
+f42r	1	heldout	73				10	7	10
+f42r	1	heldout	74				6	4	5
+f42r	1	heldout	75	pchody	5	6	5	4	4
+f42r	1	heldout	76	otshey	5	6	8	5	8
+f42r	1	heldout	77	dodaiin	7	7	8	7	7
+f42r	1	heldout	78				6	5	6
+f42r	1	heldout	79				1	1	1
+f42r	1	heldout	80				5	4	5
+f42r	1	heldout	81				8	5	7
+f42r	1	heldout	82				3	2	2
+f42r	1	heldout	83				4	4	5
+f42r	1	heldout	84				4	4	5
+f42r	1	heldout	85				17	11	14
+f42r	1	heldout	86				6	3	6
+f42r	1	heldout	87				8	5	5
+f42r	1	heldout	88				8	7	9
+f42r	1	heldout	90				1	1	4
+f42r	1	heldout	91	cthochy	4	7	6	5	7
+f42r	1	heldout	92	otaiin	6	6	9	5	10
+f42r	1	heldout	93				14	9	11
+f42r	1	heldout	94				2	2	2
+f42r	1	heldout	95	chorain	6	7	6	3	4
+f42r	1	heldout	96				5	3	3
+f42r	1	heldout	97				1	1	3
+f42r	1	heldout	98				6	6	8
+f42r	1	heldout	99				5	5	5
+f42r	1	heldout	101	cty	3	3	3	2	2
+f42r	1	heldout	102				3	3	3
+f42r	1	heldout	104				5	4	5
+f42r	1	heldout	105				5	5	5
+f42r	1	heldout	106				6	5	7
+f42r	1	heldout	107				4	4	4
+f42r	1	heldout	108				4	3	4
+f42r	1	heldout	109				8	6	7
+f42r	1	heldout	110				4	4	4
+f42r	1	heldout	111				6	5	5
+f42r	1	heldout	112				4	3	4
+f42r	1	heldout	113				7	7	8
+f42r	1	heldout	114				6	6	9
+f42r	1	heldout	115				8	8	9
+f42r	1	heldout	116				8	4	5
+f42r	1	heldout	117				4	2	5
+f42r	1	heldout	118				5	3	8
+f42r	1	heldout	119				6	6	6
+f42r	1	heldout	120				10	5	7
+f42r	1	heldout	121				11	9	12
+f42r	1	heldout	122				10	6	12
+f3v	1	heldout	0				11	8	8
+f3v	1	heldout	1				9	6	7
+f3v	1	heldout	2				6	5	5
+f3v	1	heldout	3				6	4	4
+f3v	1	heldout	4				6	6	6
+f3v	1	heldout	5				1	1	1
+f3v	1	heldout	6				2	1	1
+f3v	1	heldout	7				1	1	1
+f3v	1	heldout	8				4	2	2
+f3v	1	heldout	9				3	3	3
+f3v	1	heldout	10				7	6	6
+f3v	1	heldout	11				11	8	9
+f3v	1	heldout	12				11	6	6
+f3v	1	heldout	13				5	3	3
+f3v	1	heldout	14				8	7	8
+f3v	1	heldout	15				4	4	4
+f3v	1	heldout	16				5	4	4
+f3v	1	heldout	17				5	4	4
+f3v	1	heldout	18				5	4	4
+f3v	1	heldout	19				1	1	1
+f3v	1	heldout	20				5	3	4
+f3v	1	heldout	21				4	3	3
+f3v	1	heldout	22				3	3	6
+f3v	1	heldout	23				3	3	4
+f3v	1	heldout	24				4	4	5
+f3v	1	heldout	25				6	5	5
+f3v	1	heldout	26				2	2	2
+f3v	1	heldout	27				4	2	3
+f3v	1	heldout	28				4	3	3
+f3v	1	heldout	29				5	4	6
+f3v	1	heldout	30				4	3	3
+f3v	1	heldout	31				5	5	6
+f3v	1	heldout	32				1	1	1
+f3v	1	heldout	34				2	1	1
+f3v	1	heldout	35				2	2	2
+f3v	1	heldout	36				5	5	5
+f3v	1	heldout	37				4	4	4
+f3v	1	heldout	38				4	4	5
+f3v	1	heldout	39				1	1	3
+f3v	1	heldout	40				3	2	2
+f3v	1	heldout	41				1	1	1
+f3v	1	heldout	42				2	2	2
+f3v	1	heldout	43				5	4	4
+f3v	1	heldout	44				7	7	7
+f3v	1	heldout	45				2	2	3
+f3v	1	heldout	46				1	1	1
+f3v	1	heldout	47				1	1	2
+f3v	1	heldout	48				3	2	2
+f3v	1	heldout	49				9	7	7
+f3v	1	heldout	51				3	3	3
+f3v	1	heldout	52	ykchy	4	5	7	4	4
+f3v	1	heldout	53	kchom	4	5	9	6	6
+f3v	1	heldout	54	chor	3	4	7	5	5
+f3v	1	heldout	55	chckhol	4	7	14	8	8
+f3v	1	heldout	56	oka	3	3	6	4	4
+f3v	1	heldout	57				2	1	1
+f3v	1	heldout	58				1	1	1
+f3v	1	heldout	60				4	3	3
+f3v	1	heldout	61				6	5	6
+f3v	1	heldout	62				11	9	11
+f3v	1	heldout	63				3	3	6
+f3v	1	heldout	64				3	3	4
+f3v	1	heldout	65	ochos	4	5	5	5	5
+f3v	1	heldout	66				17	13	17
+f3v	1	heldout	67				2	2	2
+f3v	1	heldout	68				4	3	3
+f3v	1	heldout	69	chol	3	4	3	3	5
+f3v	1	heldout	70				2	2	2
+f3v	1	heldout	71				2	2	2
+f3v	1	heldout	72				5	4	4
+f3v	1	heldout	73				2	2	2
+f3v	1	heldout	74				14	9	10
+f3v	1	heldout	75				2	2	5
+f3v	1	heldout	76				2	2	2
+f3v	1	heldout	77				2	2	3
+f3v	1	heldout	78				1	1	1
+f3v	1	heldout	79				3	3	3
+f3v	1	heldout	80				10	10	10
+f3v	1	heldout	81				10	7	8
+f3v	1	heldout	82				9	4	7
+f3v	1	heldout	83				1	1	1
+f3v	1	heldout	84				4	3	4
+f3v	1	heldout	85	shar	3	4	7	4	4
+f3v	1	heldout	86	shkaiin	6	7	11	7	7
+f3v	1	heldout	87	qokchy	5	6	8	6	9
+f3v	1	heldout	88	yty	3	3	3	3	4
+f3v	1	heldout	89	cthal	3	5	3	3	3
+f3v	1	heldout	90				3	3	3
+f3v	1	heldout	91				6	5	5
+f3v	1	heldout	92				7	4	5
+f3v	1	heldout	93				8	6	7
+f30r	1	train	0				12	8	8
+f30r	1	train	1				3	3	4
+f30r	1	train	2				1	1	1
+f30r	1	train	3				7	6	8
+f30r	1	train	4				6	6	7
+f30r	1	train	5				6	6	6
+f30r	1	train	6				1	1	1
+f30r	1	train	7				2	2	2
+f30r	1	train	8				3	2	2
+f30r	1	train	9	ychody	5	6	3	3	5
+f30r	1	train	11				2	2	4
+f30r	1	train	12				6	5	7
+f30r	1	train	13	keeor	5	5	6	4	5
+f30r	1	train	14	cheor	4	5	6	5	6
+f30r	1	train	15	shey	3	4	4	4	5
+f30r	1	train	16	she	2	3	3	2	3
+f30r	1	train	17				6	4	4
+f30r	1	train	18				8	6	6
+f30r	1	train	19				7	6	8
+f30r	1	train	20				2	2	2
+f30r	1	train	21				2	2	2
+f30r	1	train	22				3	3	3
+f30r	1	train	23				5	4	4
+f30r	1	train	24				5	4	4
+f30r	1	train	25				8	7	7
+f30r	1	train	26				12	8	9
+f30r	1	train	27	qokechy	6	7	8	6	7
+f30r	1	train	28	qoko	4	4	3	3	6
+f30r	1	train	29	qop	3	3	4	2	3
+f30r	1	train	30	char	3	4	4	3	4
+f30r	1	train	32	chan	3	4	3	3	4
+f30r	1	train	33	qot	3	3	8	5	5
+f30r	1	train	34	chaiin	5	6	9	7	9
+f30r	1	train	35				4	4	5
+f30r	1	train	36				7	6	9
+f30r	1	train	37				5	5	5
+f30r	1	train	38				5	3	4
+f30r	1	train	39				1	1	1
+f30r	1	train	40				8	7	9
+f30r	1	train	41				5	4	4
+f30r	1	train	42	dchorol	6	7	7	6	8
+f30r	1	train	43	sho	2	3	4	3	4
+f30r	1	train	44	chor	3	4	4	3	3
+f30r	1	train	45				1	1	1
+f30r	1	train	46				5	4	4
+f30r	1	train	47	raiin	5	5	6	4	5
+f30r	1	train	48	dor	3	3	3	3	3
+f30r	1	train	49	chseeor	6	7	8	6	9
+f30r	1	train	50	dy	2	2	2	2	2
+f30r	1	train	51	qor	3	3	3	2	4
+f30r	1	train	52	chain	4	5	5	5	6
+f30r	1	train	53	cthorchy	5	8	7	6	9
+f30r	1	train	54	opchol	5	6	6	5	6
+f30r	1	train	55	ol	2	2	2	2	3
+f30r	1	train	56				2	2	2
+f30r	1	train	57				5	3	3
+f30r	1	train	58				4	4	5
+f30r	1	train	59				5	3	3
+f30r	1	train	60				8	3	4
+f30r	1	train	61	dcheo	4	5	4	4	4
+f30r	1	train	62	rchey	4	5	6	6	7
+f30r	1	train	63				7	5	6
+f30r	1	train	64				4	4	6
+f30r	1	train	65				3	3	4
+f30r	1	train	66				7	6	7
+f30r	1	train	67				3	3	4
+f30r	1	train	68				5	4	5
+f30r	1	train	69	chokchaiin	8	10	10	9	11
+f30r	1	train	70	dchor	4	5	4	4	6
+f30r	1	train	71	chkchean	6	8	6	6	10
+f30r	1	train	72				3	2	3
+f30r	1	train	73	chctho	3	6	4	4	4
+f30r	1	train	74	rchody	5	6	6	6	6
+f30r	1	train	75				8	6	10
+f30r	1	train	76				3	3	5
+f30r	1	train	77				3	3	5
+f30r	1	train	78				6	5	5
+f30r	1	train	79				4	3	3
+f30r	1	train	80				8	4	5
+f30r	1	train	81	dcheey	5	6	6	5	6
+f30r	1	train	82	ckhey	3	5	5	5	5
+f30r	1	train	83	ckhey	3	5	6	5	6
+f30r	1	train	84	daiin	5	5	3	3	3
+f30r	1	train	85				1	1	1
+f30r	1	train	86				9	7	8
+f30r	1	train	87				4	3	3
+f30r	1	train	88				3	3	4
+f30r	1	train	89				1	1	1
+f30r	1	train	90	chtchey	5	7	9	7	8
+f30r	1	train	91	chear	4	5	7	6	10
+f30r	1	train	92				4	4	5
+f30r	1	train	93				10	8	9
+f22r	1	train	1				2	2	2
+f22r	1	train	2				6	5	6
+f22r	1	train	3				1	1	1
+f22r	1	train	4				5	4	6
+f22r	1	train	5				3	2	3
+f22r	1	train	6				1	1	1
+f22r	1	train	7				3	2	2
+f22r	1	train	8				1	1	1
+f22r	1	train	9				2	1	1
+f22r	1	train	10				3	2	3
+f22r	1	train	11				1	1	1
+f22r	1	train	12				5	4	5
+f22r	1	train	13				7	6	6
+f22r	1	train	14				2	1	1
+f22r	1	train	15				1	1	1
+f22r	1	train	16				2	2	3
+f22r	1	train	17				8	6	7
+f22r	1	train	18	ol	2	2	2	2	2
+f22r	1	train	19	oiin	4	4	4	4	4
+f22r	1	train	20	shol	3	4	3	2	4
+f22r	1	train	21	o	1	1	1	1	1
+f22r	1	train	22	kor	3	3	4	3	4
+f22r	1	train	23	qokchol	6	7	6	4	5
+f22r	1	train	24	daiin	5	5	7	5	5
+f22r	1	train	25	okaiin	6	6	8	6	8
+f22r	1	train	26	cthor	3	5	2	2	4
+f22r	1	train	27	dain	4	4	4	4	4
+f22r	1	train	28	ckhy	2	4	4	4	5
+f22r	1	train	29	dom	3	3	4	3	3
+f22r	1	train	30	qokol	5	5	5	4	5
+f22r	1	train	31	dykaiin	7	7	9	7	8
+f22r	1	train	32	o	1	1	1	1	1
+f22r	1	train	34	daiin	5	5	5	5	5
+f22r	1	train	35	cthol	3	5	4	3	4
+f22r	1	train	36	ctholo	4	6	4	4	5
+f22r	1	train	37	dar	3	3	5	4	4
+f22r	1	train	38	shain	4	5	7	5	5
+f22r	1	train	39				8	5	8
+f22r	1	train	40				4	2	5
+f22r	1	train	41				5	5	5
+f22r	1	train	43				4	2	3
+f22r	1	train	44				1	1	1
+f22r	1	train	45				7	7	7
+f22r	1	train	46				7	4	7
+f22r	1	train	47				3	2	2
+f22r	1	train	48				1	1	1
+f22r	1	train	49				1	1	2
+f22r	1	train	50				7	7	7
+f22r	1	train	51				2	2	2
+f22r	1	train	52				5	5	5
+f22r	1	train	53				1	1	1
+f22r	1	train	54				3	2	3
+f22r	1	train	55				2	2	2
+f22r	1	train	56				3	3	4
+f22r	1	train	57				4	3	5
+f22r	1	train	58				3	3	4
+f22r	1	train	59				8	6	6
+f22r	1	train	60				3	3	3
+f22r	1	train	62				1	1	1
+f22r	1	train	63				8	6	8
+f22r	1	train	64				1	1	1
+f22r	1	train	65				4	3	5
+f22r	1	train	66				6	4	7
+f22r	1	train	67				4	2	5
+f22r	1	train	68				4	4	6
+f22r	1	train	69				3	3	4
+f22r	1	train	70				6	5	6
+f22r	1	train	72				4	4	5
+f22r	1	train	73				1	1	1
+f22r	1	train	74				7	6	7
+f22r	1	train	75				2	2	2
+f22r	1	train	76				6	4	4
+f22r	1	train	77				1	1	1
+f22r	1	train	78				7	4	4
+f22r	1	train	79	dchor	4	5	4	4	5
+f22r	1	train	80	oty	3	3	3	3	3
+f22r	1	train	81	daiin	5	5	4	4	4
+f22r	1	train	82	ctholy	4	6	4	4	5
+f22r	1	train	83	qoky	4	4	4	3	4
+f22r	1	train	84	chotaiin	7	8	9	7	9
+f22r	1	train	85	chocthy	4	7	4	3	6
+f22r	1	train	87	dchor	4	5	5	4	5
+f22r	1	train	88				6	6	6
+f22r	1	train	89				5	4	4
+f22r	1	train	90				3	3	3
+f22r	1	train	91				1	1	4
+f22r	1	train	92				1	1	1
+f22r	1	train	93				1	1	1
+f22r	1	train	94				9	9	9
+f22r	1	train	95				4	4	6
+f22r	1	train	96				3	3	4
+f22r	1	train	97				4	4	5
+f22r	1	train	98				6	2	4
+f22r	1	train	99				3	3	3
+f22r	1	train	100				4	4	5
+f22r	1	train	101				2	2	4
+f22r	1	train	103				1	1	3
+f22r	1	train	104				3	2	3
+f22r	1	train	105				2	2	2
+f22r	1	train	106				6	4	6
+f22r	1	train	107				5	5	5
+f22r	1	train	108				7	5	5
+f22r	1	train	109				3	3	5
+f22r	1	train	110				2	2	2
+f22r	1	train	111				5	5	7
+f22r	1	train	112				4	3	3
+f22r	1	train	113				4	3	4
+f22r	1	train	114				2	2	2
+f22r	1	train	115				2	2	3
+f22r	1	train	116				3	3	3
+f22r	1	train	117				2	2	2
+f22r	1	train	118				3	3	3
+f22r	1	train	119				2	1	1
+f22r	1	train	120				6	5	6
+f22r	1	train	121				6	6	6
+f22r	1	train	122				8	7	9
+f22r	1	train	123				2	2	5
+f22r	1	train	124				1	1	1
+f22r	1	train	125				1	1	2
+f22r	1	train	126				1	1	1
+f22r	1	train	127				4	3	4
+f22r	1	train	128				5	4	5
+f22r	1	train	129				6	5	5
+f22r	1	train	130	dchor	4	5	4	4	5
+f22r	1	train	131	dy	2	2	2	2	2
+f22r	1	train	132				1	1	1
+f22r	1	train	133				3	3	4
+f22r	1	train	134				6	4	7
+f22r	1	train	135				12	10	11
+f54r	1	train	0				6	6	6
+f54r	1	train	1				5	4	6
+f54r	1	train	2				6	5	7
+f54r	1	train	3				5	4	5
+f54r	1	train	4				1	1	1
+f54r	1	train	5				6	5	6
+f54r	1	train	6				5	3	6
+f54r	1	train	7				9	6	8
+f54r	1	train	8				1	1	1
+f54r	1	train	9				5	5	6
+f54r	1	train	10				3	3	6
+f54r	1	train	11				9	6	8
+f54r	1	train	12				6	6	8
+f54r	1	train	14				4	4	4
+f54r	1	train	15				4	4	4
+f54r	1	train	16				2	2	3
+f54r	1	train	17				6	6	7
+f54r	1	train	18				2	2	2
+f54r	1	train	19				1	1	1
+f54r	1	train	20				2	2	2
+f54r	1	train	21				4	3	6
+f54r	1	train	22				5	4	4
+f54r	1	train	23				3	2	3
+f54r	1	train	24				4	4	4
+f54r	1	train	25				6	4	6
+f54r	1	train	26				6	6	7
+f54r	1	train	27				2	1	1
+f54r	1	train	28				2	2	2
+f54r	1	train	29				1	1	1
+f54r	1	train	30				1	1	1
+f54r	1	train	31				1	1	1
+f54r	1	train	32				8	6	7
+f54r	1	train	33				4	4	6
+f54r	1	train	34				6	2	2
+f54r	1	train	35				2	2	2
+f54r	1	train	36				6	5	8
+f54r	1	train	37				6	5	5
+f54r	1	train	38				3	1	1
+f54r	1	train	39				9	5	6
+f54r	1	train	40				5	2	2
+f54r	1	train	41				4	1	1
+f54r	1	train	42				3	3	3
+f54r	1	train	43				1	1	1
+f54r	1	train	44				4	4	5
+f54r	1	train	45				1	1	2
+f54r	1	train	46				4	4	4
+f54r	1	train	47				10	10	10
+f54r	1	train	48				1	1	1
+f54r	1	train	49	chokey	5	6	15	14	14
+f54r	1	train	50				14	11	11
+f54r	1	train	51				11	8	10
+f54r	1	train	52				1	1	1
+f54r	1	train	53				2	2	2
+f54r	1	train	54				3	3	3
+f54r	1	train	55				3	3	6
+f54r	1	train	56				2	1	2
+f54r	1	train	57				1	1	1
+f54r	1	train	58				1	1	1
+f54r	1	train	59				3	3	4
+f54r	1	train	60				4	2	2
+f54r	1	train	64				3	3	3
+f54r	1	train	65				3	3	3
+f54r	1	train	66				1	1	1
+f54r	1	train	67				5	3	5
+f54r	1	train	68				6	6	8
+f54r	1	train	69				2	2	3
+f54r	1	train	70				1	1	1
+f54r	1	train	71				2	1	1
+f54r	1	train	72				1	1	2
+f54r	1	train	73				4	4	6
+f54r	1	train	74				2	2	2
+f54r	1	train	75				4	3	3
+f54r	1	train	76				2	2	3
+f54r	1	train	77				3	3	4
+f54r	1	train	78				6	4	7
+f54r	1	train	79				2	1	2
+f54r	1	train	80				2	2	2
+f54r	1	train	81				2	2	4
+f54r	1	train	82				3	3	3
+f54r	1	train	83				7	6	6
+f54r	1	train	84				1	1	1
+f54r	1	train	85				4	4	4
+f54r	1	train	86				5	5	5
+f54r	1	train	87				5	5	8
+f54r	1	train	88				1	1	1
+f54r	1	train	89				5	4	4
+f54r	1	train	90				2	2	2
+f54r	1	train	91				2	2	2
+f54r	1	train	92				3	3	3
+f54r	1	train	93				4	4	6
+f54r	1	train	94				3	3	4
+f54r	1	train	95				2	2	4
+f54r	1	train	96				1	1	1
+f54r	1	train	97				1	1	1
+f54r	1	train	98				2	2	3
+f54r	1	train	99				3	2	4
+f54r	1	train	100				5	5	5
+f54r	1	train	101	tor	3	3	3	2	4
+f54r	1	train	102	ol	2	2	2	2	2
+f54r	1	train	103	dol	3	3	3	3	3
+f54r	1	train	104	or	2	2	2	2	2
+f54r	1	train	105	chol	3	4	3	3	4
+f54r	1	train	106	chol	3	4	1	1	1
+f54r	1	train	107	ckhol	3	5	3	3	3
+f54r	1	train	108	okol	4	4	3	3	3
+f54r	1	train	109	oky	3	3	3	3	4
+f54r	1	train	110	ytchor	5	6	5	5	8
+f54r	1	train	111	ol	2	2	2	2	2
+f54r	1	train	112	koldy	5	5	6	5	6
+f54r	1	train	113	daiin	5	5	5	5	5
+f54r	1	train	114	okor	4	4	4	4	5
+f54r	1	train	115	or	2	2	2	2	2
+f54r	1	train	116	ol	2	2	2	2	2
+f54r	1	train	117	ckhol	3	5	4	2	3
+f54r	1	train	118	chor	3	4	3	3	4
+f54r	1	train	120	dam	3	3	3	3	3
+f54r	1	train	121	or	2	2	2	2	2
+f54r	1	train	122	sho	2	3	2	1	3
+f54r	1	train	123	chol	3	4	3	2	4
+f54r	1	train	124	dom	3	3	2	2	3
+f54r	1	train	126				2	2	2
+f54r	1	train	127				4	4	6
+f54r	1	train	128				1	1	1
+f54r	1	train	129				2	2	4
+f54r	1	train	130				2	2	2
+f54r	1	train	131				3	3	3
+f54r	1	train	132				6	6	9
+f54r	1	train	133				2	2	2
+f54r	1	train	135				4	3	3
+f29v	1	train	0				7	6	6
+f29v	1	train	1				3	2	3
+f29v	1	train	2				7	6	8
+f29v	1	train	3				5	3	4
+f29v	1	train	4				9	6	7
+f29v	1	train	5				11	7	9
+f29v	1	train	6				1	1	1
+f29v	1	train	7				10	7	13
+f29v	1	train	8				11	9	11
+f29v	1	train	9				5	4	6
+f29v	1	train	10				3	3	4
+f29v	1	train	11				2	2	3
+f29v	1	train	12				3	3	4
+f29v	1	train	13				1	1	1
+f29v	1	train	14				10	5	5
+f29v	1	train	16				5	3	4
+f29v	1	train	17				2	2	2
+f29v	1	train	18				4	4	4
+f29v	1	train	19				1	1	1
+f29v	1	train	20				3	2	3
+f29v	1	train	21				3	3	4
+f29v	1	train	22				4	2	4
+f29v	1	train	23				7	4	4
+f29v	1	train	24				10	7	7
+f29v	1	train	25				13	10	15
+f29v	1	train	26				2	2	2
+f29v	1	train	27				2	2	2
+f29v	1	train	28	ysho	3	4	5	3	4
+f29v	1	train	29	otshy	4	5	5	4	6
+f29v	1	train	30	okaiin	6	6	6	4	5
+f29v	1	train	31	cthy	2	4	2	1	2
+f29v	1	train	32	oltchy	5	6	7	5	6
+f29v	1	train	33	ctos	4	4	5	3	6
+f29v	1	train	34	shot	3	4	4	3	5
+f29v	1	train	35	sho	2	3	6	4	4
+f29v	1	train	36	okaiin	6	6	8	5	7
+f29v	1	train	37				3	3	5
+f29v	1	train	38				6	6	6
+f29v	1	train	39				6	2	4
+f29v	1	train	41				3	3	5
+f29v	1	train	42				10	9	9
+f29v	1	train	43				4	3	6
+f29v	1	train	44				7	5	7
+f29v	1	train	45				4	4	5
+f29v	1	train	47				2	2	2
+f29v	1	train	48				8	4	4
+f29v	1	train	49				4	4	4
+f29v	1	train	50				3	2	3
+f29v	1	train	51				2	2	2
+f29v	1	train	52				5	4	6
+f29v	1	train	53				7	5	5
+f29v	1	train	54				5	4	6
+f29v	1	train	55				3	3	3
+f29v	1	train	56				1	1	1
+f29v	1	train	57				2	2	2
+f29v	1	train	58				3	2	2
+f29v	1	train	59				6	4	6
+f29v	1	train	60				5	4	5
+f29v	1	train	61				3	2	3
+f29v	1	train	62				2	2	3
+f29v	1	train	63				9	9	15
+f29v	1	train	65				6	4	4
+f29v	1	train	66				3	3	4
+f29v	1	train	67				7	5	6
+f29v	1	train	68				5	3	3
+f29v	1	train	69				3	2	2
+f29v	1	train	70	sho	2	3	2	1	4
+f29v	1	train	71	chokor	5	6	6	5	7
+f29v	1	train	72	chor	3	4	5	4	5
+f29v	1	train	73	chy	2	3	2	2	3
+f29v	1	train	74	ydaiin	6	6	9	6	7
+f29v	1	train	75	cho	2	3	2	2	3
+f29v	1	train	76	ykeeb	5	5	5	3	3
+f29v	1	train	77	oaiin	5	5	7	5	6
+f29v	1	train	78				9	7	8
+f29v	1	train	79				1	1	1
+f29v	1	train	80				4	4	4
+f29v	1	train	81				8	5	6
+f29v	1	train	82				8	6	7
+f29v	1	train	83				4	4	4
+f29v	1	train	84				5	4	6
+f29v	1	train	85				2	2	2
+f29v	1	train	86				1	1	1
+f29v	1	train	88				5	5	6
+f29v	1	train	90				1	1	1
+f29v	1	train	91				4	4	9
+f29v	1	train	92				3	3	3
+f29v	1	train	93				6	6	7
+f29v	1	train	94				1	1	1
+f29v	1	train	95				2	2	2
+f54v	1	train	1				7	4	7
+f54v	1	train	2				6	6	6
+f54v	1	train	3				8	6	10
+f54v	1	train	4				5	4	5
+f54v	1	train	5				11	8	8
+f54v	1	train	6				5	5	5
+f54v	1	train	7	dcheain	6	7	8	6	8
+f54v	1	train	8	cphaiin	5	7	12	8	8
+f54v	1	train	9	s	1	1	3	1	1
+f54v	1	train	10	ar	2	2	3	2	2
+f54v	1	train	11	cheor	4	5	4	4	5
+f54v	1	train	12	qodaiin	7	7	7	5	7
+f54v	1	train	14	ypchal	5	6	7	4	7
+f54v	1	train	15				11	8	8
+f54v	1	train	16				7	4	5
+f54v	1	train	17				4	4	4
+f54v	1	train	18				4	4	5
+f54v	1	train	19				9	6	7
+f54v	1	train	20				8	8	8
+f54v	1	train	21				9	6	7
+f54v	1	train	22				6	5	6
+f54v	1	train	23				3	3	5
+f54v	1	train	24				13	11	12
+f54v	1	train	25				6	5	6
+f54v	1	train	26				8	6	7
+f54v	1	train	27				11	5	7
+f54v	1	train	28				5	5	6
+f54v	1	train	29				7	6	8
+f54v	1	train	30				4	4	4
+f54v	1	train	31				9	8	9
+f54v	1	train	32				9	6	7
+f54v	1	train	33				5	5	7
+f54v	1	train	34				7	6	6
+f54v	1	train	35	daiin	5	5	7	5	5
+f54v	1	train	36	sheody	5	6	6	5	7
+f54v	1	train	37	qoctheol	6	8	7	5	8
+f54v	1	train	38	s	1	1	1	1	1
+f54v	1	train	39	aiin	4	4	4	4	5
+f54v	1	train	40	qotchy	5	6	5	5	8
+f54v	1	train	41				14	11	11
+f54v	1	train	42				9	6	7
+f54v	1	train	43				5	5	6
+f54v	1	train	44				13	10	15
+f54v	1	train	45				4	4	4
+f54v	1	train	46				4	4	5
+f54v	1	train	47				9	6	7
+f54v	1	train	48	kol	3	3	3	2	3
+f54v	1	train	49	ckaiin	6	6	6	5	6
+f54v	1	train	50	chckhy	3	6	4	4	5
+f54v	1	train	51	qokal	5	5	4	3	6
+f54v	1	train	52	dal	3	3	3	3	3
+f54v	1	train	53	qocthy	4	6	4	4	6
+f54v	1	train	54	oaiin	5	5	7	6	6
+f54v	1	train	55	qockhy	4	6	3	3	8
+f54v	1	train	57				8	7	9
+f54v	1	train	58				4	3	4
+f54v	1	train	59				3	3	4
+f54v	1	train	60				5	4	5
+f54v	1	train	61				7	7	9
+f54v	1	train	62				10	7	10
+f54v	1	train	63				10	9	10
+f54v	1	train	64	or	2	2	4	2	2
+f54v	1	train	65	alchy	4	5	6	3	5
+f54v	1	train	66	ytal	4	4	4	4	7
+f54v	1	train	67	dol	3	3	4	3	4
+f54v	1	train	68	chodoldy	7	8	8	7	8
+f54v	1	train	69	daiin	5	5	8	6	6
+f54v	1	train	70	chol	3	4	3	3	5
+f54v	1	train	71	oldaiin	7	7	9	7	8
+f87v	1	train	0				9	5	6
+f87v	1	train	1	daiin	5	5	7	7	7
+f87v	1	train	2	cpheodar	6	8	6	6	6
+f87v	1	train	3	shody	4	5	5	4	5
+f87v	1	train	4	dcheody	6	7	8	7	7
+f87v	1	train	5	todor	5	5	5	5	7
+f87v	1	train	6	oeeepchody	9	10	14	10	10
+f87v	1	train	7	oldar	5	5	6	5	5
+f87v	1	train	8				8	6	6
+f87v	1	train	9				7	5	6
+f87v	1	train	10				10	7	7
+f87v	1	train	11				2	1	1
+f87v	1	train	12				12	11	11
+f87v	1	train	13				2	1	1
+f87v	1	train	14				7	7	8
+f87v	1	train	15				8	7	7
+f87v	1	train	16				14	9	10
+f87v	1	train	17				5	5	6
+f87v	1	train	18				3	3	3
+f87v	1	train	19				5	4	4
+f87v	1	train	20				9	6	6
+f87v	1	train	21				4	3	4
+f87v	1	train	22				4	3	6
+f87v	1	train	24				5	4	5
+f87v	1	train	25				6	5	6
+f87v	1	train	26				11	6	6
+f87v	1	train	27				6	5	5
+f87v	1	train	28				3	1	1
+f87v	1	train	29				4	3	4
+f87v	1	train	30				8	7	7
+f87v	1	train	32				6	5	6
+f87v	1	train	33				7	6	6
+f87v	1	train	34				1	1	1
+f87v	1	train	35				10	5	6
+f87v	1	train	36				8	4	5
+f87v	1	train	37				6	5	5
+f87v	1	train	38				8	6	6
+f87v	1	train	39				6	6	6
+f87v	1	train	40				5	4	7
+f87v	1	train	41				7	4	4
+f87v	1	train	42				1	1	3
+f87v	1	train	43				7	6	6
+f87v	1	train	44				3	2	2
+f87v	1	train	45				12	10	10
+f87v	1	train	46				5	4	5
+f87v	1	train	47	techol	5	6	4	3	8
+f87v	1	train	48	qoscheody	8	9	13	9	10
+f87v	1	train	49	otol	4	4	4	4	4
+f87v	1	train	50				5	5	5
+f87v	1	train	51				3	2	2
+f87v	1	train	53				13	9	13
+f87v	1	train	54				4	3	4
+f87v	1	train	55				3	2	2
+f87v	1	train	56				5	4	4
+f87v	1	train	57				8	7	8
+f87v	1	train	58				7	6	8
+f87v	1	train	59				9	6	8
+f87v	1	train	60	ytcheoqo	7	8	4	4	5
+f87v	1	train	61	chos	3	4	4	3	3
+f87v	1	train	62				9	9	10
+f87v	1	train	63				1	1	1
+f87v	1	train	64				4	4	4
+f87v	1	train	65				2	1	1
+f87v	1	train	66				1	1	1
+f87v	1	train	67	dain	4	4	4	4	4
+f87v	1	train	68	ksheol	5	6	7	4	5
+f87v	1	train	69				2	1	1
+f87v	1	train	70	cfhs	2	4	5	5	5
+f87v	1	train	71				4	4	4
+f87v	1	train	72				2	2	2
+f87v	1	train	73				11	7	8
+f87v	1	train	74				8	5	5
+f87v	1	train	75				10	8	9
+f87v	1	train	76				5	3	3
+f87v	1	train	77				4	3	3
+f87v	1	train	78				13	6	7
+f87v	1	train	80	qos	3	3	3	2	3
+f87v	1	train	81				2	2	2
+f87v	1	train	82				11	9	9
+f87v	1	train	83				9	6	6
+f87v	1	train	84				2	2	2
+f87v	1	train	85	saiin	5	5	6	5	5
+f24v	1	train	0				10	8	8
+f24v	1	train	1				6	4	8
+f24v	1	train	2				6	4	4
+f24v	1	train	3				5	4	5
+f24v	1	train	4				3	2	2
+f24v	1	train	5				10	7	8
+f24v	1	train	6				10	9	9
+f24v	1	train	7				6	6	6
+f24v	1	train	8				11	7	7
+f24v	1	train	9				6	4	5
+f24v	1	train	10				3	2	3
+f24v	1	train	11				3	3	3
+f24v	1	train	12				2	2	2
+f24v	1	train	13				2	2	2
+f24v	1	train	14				7	5	5
+f24v	1	train	15				2	2	2
+f24v	1	train	16				1	1	1
+f24v	1	train	17				3	2	2
+f24v	1	train	18				3	3	4
+f24v	1	train	19				1	1	1
+f24v	1	train	20				9	6	9
+f24v	1	train	21				1	1	1
+f24v	1	train	22				3	1	1
+f24v	1	train	23				1	1	2
+f24v	1	train	24	octhyl	4	6	6	5	6
+f24v	1	train	25	odchees	6	7	7	5	5
+f24v	1	train	26	oesearies	9	9	12	9	10
+f24v	1	train	27	okam	4	4	5	4	5
+f24v	1	train	28				5	2	4
+f24v	1	train	29				2	2	2
+f24v	1	train	30				1	1	1
+f24v	1	train	31				3	2	2
+f24v	1	train	32				6	4	5
+f24v	1	train	33				1	1	1
+f24v	1	train	34				5	4	5
+f24v	1	train	35				7	6	6
+f24v	1	train	36				3	3	3
+f24v	1	train	37	oeor	4	4	4	3	4
+f24v	1	train	38	oraiin	6	6	8	7	7
+f24v	1	train	39	tchar	4	5	10	6	7
+f24v	1	train	40	oro	3	3	3	3	3
+f24v	1	train	42				1	1	1
+f24v	1	train	43				9	7	10
+f24v	1	train	44				8	7	11
+f24v	1	train	45				1	1	1
+f24v	1	train	46				4	4	5
+f24v	1	train	47				4	4	4
+f24v	1	train	48				3	3	3
+f24v	1	train	49				5	5	5
+f24v	1	train	50				7	6	8
+f24v	1	train	51				5	4	6
+f24v	1	train	52				7	5	6
+f24v	1	train	53				2	2	5
+f24v	1	train	54				4	3	4
+f24v	1	train	55				2	2	2
+f24v	1	train	56				7	5	5
+f24v	1	train	57	okoeor	6	6	8	6	6
+f24v	1	train	58	ctheod	4	6	6	5	7
+f24v	1	train	59	choy	3	4	4	4	4
+f24v	1	train	60	keol	4	4	5	4	4
+f24v	1	train	61				9	6	6
+f24v	1	train	62				4	4	5
+f24v	1	train	63				4	4	6
+f24v	1	train	64				1	1	1
+f24v	1	train	65				4	4	4
+f24v	1	train	66				3	2	2
+f24v	1	train	67				4	2	5
+f24v	1	train	68				5	3	5
+f24v	1	train	69				2	2	3
+f24v	1	train	70				1	1	1
+f24v	1	train	71				4	3	4
+f24v	1	train	72				6	4	7
+f24v	1	train	73				4	2	3
+f24v	1	train	74				7	5	8
+f24v	1	train	75				4	4	5
+f24v	1	train	76				1	1	1
+f24v	1	train	77				2	2	2
+f24v	1	train	78				4	4	4
+f24v	1	train	79				5	4	4
+f24v	1	train	80				16	12	14
+f24v	1	train	81	doiir	5	5	4	4	4
+f24v	1	train	82	cheeodam	7	8	7	7	7
+f24v	1	train	83	sho	2	3	3	2	2
+f24v	1	train	84	sho	2	3	3	2	2
+f24v	1	train	85	dy	2	2	2	2	2
+f24v	1	train	86				2	2	3
+f24v	1	train	87				3	2	2
+f24v	1	train	88				7	5	6
+f24v	1	train	89				4	4	5
+f24v	1	train	90				7	5	6
+f24v	1	train	91	otchol	5	6	6	6	7
+f24v	1	train	92	odaiim	6	6	7	6	6
+f75r	2	heldout	0				9	9	11
+f75r	2	heldout	1				5	5	5
+f75r	2	heldout	2				5	5	5
+f75r	2	heldout	3				1	1	2
+f75r	2	heldout	4				4	4	4
+f75r	2	heldout	5				6	5	5
+f75r	2	heldout	6				5	3	3
+f75r	2	heldout	7				4	4	5
+f75r	2	heldout	8				9	6	8
+f75r	2	heldout	9				7	5	5
+f75r	2	heldout	10				8	6	7
+f75r	2	heldout	11				6	6	6
+f75r	2	heldout	12				5	5	6
+f75r	2	heldout	13				9	6	8
+f75r	2	heldout	14				7	7	8
+f75r	2	heldout	15				6	5	8
+f75r	2	heldout	16				6	4	4
+f75r	2	heldout	17				7	7	7
+f75r	2	heldout	18				5	4	6
+f75r	2	heldout	19				3	3	4
+f75r	2	heldout	20				4	3	3
+f75r	2	heldout	21				5	4	4
+f75r	2	heldout	22				5	3	6
+f75r	2	heldout	23				7	6	6
+f75r	2	heldout	24				8	6	7
+f75r	2	heldout	25				3	1	2
+f75r	2	heldout	26				7	6	7
+f75r	2	heldout	27				4	4	4
+f75r	2	heldout	28				6	5	7
+f75r	2	heldout	29				5	4	4
+f75r	2	heldout	30				2	2	4
+f75r	2	heldout	31				2	2	2
+f75r	2	heldout	32				3	3	4
+f75r	2	heldout	34				7	5	6
+f75r	2	heldout	35				8	5	7
+f75r	2	heldout	36				6	5	6
+f75r	2	heldout	37				6	6	6
+f75r	2	heldout	38				5	4	5
+f75r	2	heldout	39				2	1	1
+f75r	2	heldout	40				4	3	3
+f75r	2	heldout	41				5	4	5
+f75r	2	heldout	42				1	1	1
+f75r	2	heldout	43				2	2	4
+f75r	2	heldout	44				2	2	2
+f75r	2	heldout	45				8	7	7
+f75r	2	heldout	46				7	7	8
+f75r	2	heldout	47				7	7	7
+f75r	2	heldout	48				4	4	4
+f75r	2	heldout	49				3	2	2
+f75r	2	heldout	50				3	3	3
+f75r	2	heldout	51				3	3	4
+f75r	2	heldout	52				2	2	2
+f75r	2	heldout	53				5	4	7
+f75r	2	heldout	54				5	4	4
+f75r	2	heldout	55				9	8	8
+f75r	2	heldout	56				6	4	5
+f75r	2	heldout	57				6	5	7
+f75r	2	heldout	58				6	6	7
+f75r	2	heldout	59				11	9	9
+f75r	2	heldout	60				7	5	6
+f75r	2	heldout	61				5	5	5
+f75r	2	heldout	62				4	2	3
+f75r	2	heldout	63				4	4	4
+f75r	2	heldout	64				3	3	3
+f75r	2	heldout	65				6	6	6
+f75r	2	heldout	66				6	4	4
+f75r	2	heldout	67				5	3	4
+f75r	2	heldout	68				5	4	4
+f75r	2	heldout	69				1	1	1
+f75r	2	heldout	70				10	7	7
+f75r	2	heldout	71				4	3	3
+f75r	2	heldout	72				9	7	8
+f75r	2	heldout	73				5	3	5
+f75r	2	heldout	74				4	4	5
+f75r	2	heldout	75				6	6	6
+f75r	2	heldout	76				7	7	7
+f75r	2	heldout	77				7	6	7
+f75r	2	heldout	78				6	4	6
+f75r	2	heldout	79				2	2	2
+f75r	2	heldout	80				6	6	6
+f75r	2	heldout	81				4	3	6
+f75r	2	heldout	82				6	3	4
+f75r	2	heldout	83				7	5	7
+f75r	2	heldout	84				1	1	1
+f75r	2	heldout	85				5	4	4
+f75r	2	heldout	86				10	10	11
+f75r	2	heldout	87				7	6	7
+f75r	2	heldout	88				8	5	8
+f75r	2	heldout	89				3	3	4
+f75r	2	heldout	90				7	4	4
+f75r	2	heldout	91				2	2	3
+f75r	2	heldout	92				6	4	5
+f75r	2	heldout	93				4	3	5
+f75r	2	heldout	94				2	2	2
+f75r	2	heldout	96				8	6	9
+f75r	2	heldout	97				6	6	6
+f75r	2	heldout	98				2	2	4
+f75r	2	heldout	99				2	2	2
+f75r	2	heldout	100				9	8	8
+f75r	2	heldout	101				3	3	3
+f75r	2	heldout	102				5	5	5
+f75r	2	heldout	103				5	3	7
+f75r	2	heldout	104				2	2	2
+f75r	2	heldout	105				5	4	6
+f75r	2	heldout	106				8	5	5
+f75r	2	heldout	107				4	3	5
+f75r	2	heldout	108				3	3	3
+f75r	2	heldout	109				10	8	8
+f75r	2	heldout	110	ssheckhy	5	8	9	8	9
+f75r	2	heldout	111	qokal	5	5	5	5	5
+f75r	2	heldout	112	oly	3	3	3	3	4
+f75r	2	heldout	113	shey	3	4	6	5	5
+f75r	2	heldout	114	r	1	1	2	2	2
+f75r	2	heldout	115	ol	2	2	2	2	2
+f75r	2	heldout	116	cheey	4	5	4	3	4
+f75r	2	heldout	117	shey	3	4	5	5	5
+f75r	2	heldout	118	dy	2	2	1	1	1
+f75r	2	heldout	119	olshedy	6	7	7	6	6
+f75r	2	heldout	120	qoky	4	4	5	5	5
+f75r	2	heldout	121				6	5	7
+f75r	2	heldout	122				4	3	3
+f75r	2	heldout	123				2	2	2
+f75r	2	heldout	124				5	5	6
+f75r	2	heldout	125				1	1	1
+f75r	2	heldout	126				6	5	6
+f75r	2	heldout	127				6	5	6
+f75r	2	heldout	128				5	4	6
+f75r	2	heldout	129				8	6	7
+f75r	2	heldout	130				7	6	6
+f75r	2	heldout	131				4	4	7
+f75r	2	heldout	132				2	2	2
+f75r	2	heldout	133				6	3	6
+f75r	2	heldout	134				8	8	10
+f75r	2	heldout	135				6	5	6
+f75r	2	heldout	137				4	3	5
+f75r	2	heldout	139				6	4	4
+f75r	2	heldout	140				7	7	8
+f75r	2	heldout	141				1	1	1
+f75r	2	heldout	142				5	5	5
+f75r	2	heldout	143				5	4	8
+f75r	2	heldout	145				6	6	7
+f75r	2	heldout	147				6	5	5
+f75r	2	heldout	148				2	2	3
+f75r	2	heldout	149				1	1	1
+f75r	2	heldout	150				3	3	6
+f75r	2	heldout	151				7	6	7
+f75r	2	heldout	153				4	3	4
+f75r	2	heldout	154				7	6	7
+f75r	2	heldout	155				4	4	6
+f75r	2	heldout	156				5	5	6
+f75r	2	heldout	157				5	2	3
+f75r	2	heldout	158				8	6	8
+f75r	2	heldout	159				4	3	4
+f75r	2	heldout	160				5	5	6
+f75r	2	heldout	161				2	2	2
+f75r	2	heldout	162				6	6	6
+f75r	2	heldout	163				4	4	5
+f75r	2	heldout	164				6	4	5
+f75r	2	heldout	165				1	1	1
+f75r	2	heldout	166				8	5	5
+f75r	2	heldout	167				7	7	8
+f75r	2	heldout	168				4	3	3
+f75r	2	heldout	169				2	2	2
+f75r	2	heldout	170				4	3	4
+f75r	2	heldout	172				5	4	5
+f75r	2	heldout	173				4	3	4
+f75r	2	heldout	174				6	5	6
+f75r	2	heldout	175				5	5	7
+f75r	2	heldout	176				4	4	4
+f75r	2	heldout	177				6	6	6
+f75r	2	heldout	178				2	2	2
+f75r	2	heldout	179				1	1	1
+f75r	2	heldout	180				6	5	6
+f75r	2	heldout	181				1	1	1
+f75r	2	heldout	182				6	6	6
+f75r	2	heldout	183				4	3	3
+f75r	2	heldout	184				5	3	4
+f75r	2	heldout	185				5	3	3
+f75r	2	heldout	186	qokshedy	7	8	7	6	9
+f75r	2	heldout	187				7	5	7
+f75r	2	heldout	188	shey	3	4	4	3	4
+f75r	2	heldout	189	qoky	4	4	3	2	3
+f75r	2	heldout	190	shey	3	4	3	3	4
+f75r	2	heldout	191				1	1	1
+f75r	2	heldout	192	qokain	6	6	8	8	8
+f75r	2	heldout	193	ar	2	2	2	2	2
+f75r	2	heldout	194	ry	2	2	2	2	2
+f75r	2	heldout	195	shey	3	4	5	4	4
+f75r	2	heldout	196	qor	3	3	3	2	4
+f75r	2	heldout	197	chey	3	4	3	3	4
+f75r	2	heldout	198	lchey	4	5	6	4	5
+f75r	2	heldout	199	lo	2	2	2	2	2
+f75r	2	heldout	200	ydain	5	5	5	5	5
+f75r	2	heldout	201	shey	3	4	6	4	4
+f75r	2	heldout	202	qokain	6	6	9	7	9
+f75r	2	heldout	203				5	4	5
+f75r	2	heldout	204				4	4	5
+f75r	2	heldout	205				4	3	5
+f75r	2	heldout	206				3	2	2
+f75r	2	heldout	208				10	7	8
+f75r	2	heldout	209				2	2	2
+f75r	2	heldout	210				3	3	4
+f75r	2	heldout	211				2	2	2
+f75r	2	heldout	212				2	2	3
+f75r	2	heldout	213				5	4	4
+f75r	2	heldout	214				7	3	5
+f75r	2	heldout	215				5	5	5
+f75r	2	heldout	216				6	5	7
+f75r	2	heldout	217				3	3	4
+f75r	2	heldout	218				3	3	5
+f75r	2	heldout	219				6	4	4
+f75r	2	heldout	220				2	1	2
+f75r	2	heldout	221				6	5	6
+f75r	2	heldout	222				5	4	6
+f75r	2	heldout	223				3	3	6
+f75r	2	heldout	224				4	4	5
+f75r	2	heldout	225				2	2	3
+f75r	2	heldout	226				1	1	2
+f75r	2	heldout	227				4	4	4
+f75r	2	heldout	228				5	4	5
+f75r	2	heldout	229				4	4	9
+f75r	2	heldout	230				5	5	6
+f75r	2	heldout	231				5	5	8
+f75r	2	heldout	232				4	4	6
+f75r	2	heldout	233				5	4	5
+f75r	2	heldout	234				1	1	1
+f75r	2	heldout	235				4	3	3
+f75r	2	heldout	236				2	2	2
+f75r	2	heldout	237				1	1	1
+f75r	2	heldout	238				4	4	4
+f75r	2	heldout	239				11	8	12
+f75r	2	heldout	240				2	1	2
+f75r	2	heldout	241				1	1	1
+f75r	2	heldout	242				2	2	2
+f75r	2	heldout	243				1	1	1
+f75r	2	heldout	244				6	5	6
+f75r	2	heldout	245				7	5	6
+f75r	2	heldout	246				6	5	5
+f75r	2	heldout	247				4	4	4
+f75r	2	heldout	248				2	2	2
+f75r	2	heldout	250				4	4	4
+f75r	2	heldout	251				2	2	3
+f75r	2	heldout	252				3	3	4
+f75r	2	heldout	253				6	5	6
+f75r	2	heldout	254				6	6	7
+f75r	2	heldout	255				2	1	2
+f75r	2	heldout	256				2	2	3
+f75r	2	heldout	257				10	7	9
+f75r	2	heldout	258				6	6	6
+f75r	2	heldout	259				6	5	5
+f75r	2	heldout	260				1	1	1
+f75r	2	heldout	261				3	3	3
+f75r	2	heldout	262				2	2	3
+f75r	2	heldout	263				2	2	2
+f75r	2	heldout	264				4	4	6
+f75r	2	heldout	265				2	2	2
+f75r	2	heldout	267				2	2	2
+f75r	2	heldout	268				3	3	6
+f75r	2	heldout	269				3	3	6
+f75r	2	heldout	270				2	2	3
+f75r	2	heldout	271				5	3	4
+f75r	2	heldout	272				8	6	6
+f75r	2	heldout	273				5	4	5
+f75r	2	heldout	274				2	2	2
+f75r	2	heldout	275				1	1	3
+f75r	2	heldout	276				1	1	1
+f75r	2	heldout	277				5	4	4
+f75r	2	heldout	278				6	6	7
+f75r	2	heldout	279				10	6	8
+f75r	2	heldout	280				3	3	4
+f75r	2	heldout	281				4	3	4
+f75r	2	heldout	282				2	2	2
+f75r	2	heldout	284				2	2	3
+f75r	2	heldout	285				5	5	7
+f75r	2	heldout	286				1	1	1
+f75r	2	heldout	287				1	1	1
+f75r	2	heldout	288				4	4	7
+f75r	2	heldout	290				2	2	2
+f75r	2	heldout	291				4	3	3
+f75r	2	heldout	292				8	7	8
+f75r	2	heldout	293				7	6	7
+f75r	2	heldout	294				5	5	5
+f75r	2	heldout	295				5	5	6
+f75r	2	heldout	296				1	1	3
+f75r	2	heldout	297				4	4	4
+f75r	2	heldout	298				5	4	6
+f75r	2	heldout	299				2	2	4
+f75r	2	heldout	300				7	6	7
+f75r	2	heldout	301				4	4	6
+f75r	2	heldout	302				4	4	6
+f75r	2	heldout	303				4	4	4
+f75r	2	heldout	304				4	4	5
+f75r	2	heldout	305				1	1	1
+f75r	2	heldout	306				10	9	11
+f75r	2	heldout	307				10	10	11
+f75r	2	heldout	308				4	3	6
+f75r	2	heldout	309				3	3	6
+f75r	2	heldout	310				6	4	6
+f75r	2	heldout	311				11	8	10
+f75r	2	heldout	312				2	2	4
+f75r	2	heldout	313				4	3	5
+f75r	2	heldout	314				6	6	8
+f75r	2	heldout	315				4	4	5
+f75r	2	heldout	316	polshy	5	6	6	4	5
+f75r	2	heldout	317	dal	3	3	3	3	3
+f75r	2	heldout	318	shedy	4	5	6	5	5
+f75r	2	heldout	319				1	1	1
+f75r	2	heldout	320				6	5	7
+f75r	2	heldout	321				3	3	4
+f75r	2	heldout	322	shedy	4	5	5	4	6
+f75r	2	heldout	323	qotar	5	5	4	4	6
+f75r	2	heldout	324				10	8	10
+f75r	2	heldout	325	ldy	3	3	3	3	3
+f75r	2	heldout	326	qokeey	6	6	4	4	8
+f75r	2	heldout	327				5	5	6
+f75r	2	heldout	328	shedy	4	5	2	2	5
+f75r	2	heldout	329				3	3	4
+f75r	2	heldout	330				7	7	7
+f75r	2	heldout	331				6	5	7
+f75r	2	heldout	333				5	5	5
+f75r	2	heldout	335				2	1	1
+f75r	2	heldout	336				5	5	7
+f75r	2	heldout	337				3	3	4
+f75r	2	heldout	338				1	1	1
+f75r	2	heldout	339	dar	3	3	3	3	6
+f75r	2	heldout	340	oty	3	3	2	2	2
+f75r	2	heldout	341	okar	4	4	5	3	4
+f75r	2	heldout	342	otar	4	4	5	4	5
+f75r	2	heldout	343	ol	2	2	2	2	3
+f75r	2	heldout	344	kain	4	4	6	4	4
+f75r	2	heldout	345	oltedy	6	6	6	5	6
+f75r	2	heldout	346				1	1	2
+f75r	2	heldout	347				3	3	3
+f75r	2	heldout	348				6	5	6
+f75r	2	heldout	349				6	5	8
+f75r	2	heldout	350				5	2	4
+f75r	2	heldout	351				4	4	4
+f75r	2	heldout	352				4	4	5
+f75r	2	heldout	353				5	3	5
+f75r	2	heldout	354				7	4	4
+f75r	2	heldout	355	sol	3	3	4	4	5
+f75r	2	heldout	356	keedy	5	5	5	4	6
+f75r	2	heldout	357	qokeedy	7	7	3	3	5
+f75r	2	heldout	358	qokey	5	5	4	3	5
+f75r	2	heldout	359	okar	4	4	4	4	5
+f75r	2	heldout	360	otar	4	4	4	4	6
+f75r	2	heldout	361	dardardy	8	8	8	7	7
+f75r	2	heldout	362	qokedy	6	6	5	5	6
+f75r	2	heldout	363	dy	2	2	1	1	1
+f75r	2	heldout	364	sheety	5	6	3	2	6
+f75r	2	heldout	365	qokedy	6	6	5	5	9
+f75r	2	heldout	366	qokeedy	7	7	4	3	7
+f75r	2	heldout	367	qokechdy	7	8	6	6	8
+f75r	2	heldout	368	lol	3	3	3	3	3
+f75r	2	heldout	369				1	1	1
+f75r	2	heldout	370				7	6	7
+f75r	2	heldout	371				5	4	5
+f75r	2	heldout	372				6	5	6
+f75r	2	heldout	374				5	4	4
+f75r	2	heldout	375				1	1	1
+f75r	2	heldout	376				7	6	6
+f75r	2	heldout	377				3	3	4
+f75r	2	heldout	378				1	1	1
+f75r	2	heldout	379				5	4	5
+f75r	2	heldout	380				1	1	3
+f75r	2	heldout	381				3	3	5
+f75r	2	heldout	382				5	4	5
+f75r	2	heldout	385				3	2	4
+f75r	2	heldout	386				2	2	2
+f75r	2	heldout	387				3	2	2
+f75r	2	heldout	389				1	1	1
+f75r	2	heldout	390				2	2	2
+f75r	2	heldout	391				5	3	6
+f75r	2	heldout	392	dar	3	3	4	4	4
+f75r	2	heldout	393	shedy	4	5	3	3	5
+f75r	2	heldout	394	qokain	6	6	4	3	5
+f75r	2	heldout	395	shedy	4	5	6	4	4
+f75r	2	heldout	396	dal	3	3	3	3	3
+f75r	2	heldout	397	keedy	5	5	7	6	6
+f75r	2	heldout	398	rshedy	5	6	7	6	10
+f75r	2	heldout	399	sokeedy	7	7	7	6	11
+f75r	2	heldout	400	qokeedy	7	7	4	4	6
+f75r	2	heldout	401	oteedy	6	6	5	5	7
+f75r	2	heldout	402	qoky	4	4	5	5	5
+f75r	2	heldout	403	dy	2	2	3	2	2
+f75r	2	heldout	404	keedy	5	5	4	4	5
+f75r	2	heldout	405	sy	2	2	2	2	2
+f75r	2	heldout	406				2	2	2
+f75r	2	heldout	407				4	3	4
+f75r	2	heldout	408				7	7	9
+f75r	2	heldout	409				7	6	7
+f75r	2	heldout	410				5	5	8
+f75r	2	heldout	411				6	6	9
+f75r	2	heldout	412				4	3	4
+f75r	2	heldout	413				7	6	7
+f75r	2	heldout	414				8	8	11
+f75r	2	heldout	415				9	7	8
+f75r	2	heldout	416				4	3	5
+f75r	2	heldout	417				8	7	9
+f75r	2	heldout	418	qokey	5	5	3	3	6
+f75r	2	heldout	419	qokedy	6	6	4	4	4
+f75r	2	heldout	420	sheol	4	5	4	4	6
+f75r	2	heldout	421	qokedy	6	6	8	6	7
+f75r	2	heldout	422	dain	4	4	5	5	6
+f75r	2	heldout	423	shedy	4	5	9	6	6
+f75r	2	heldout	424	otol	4	4	5	4	5
+f75r	2	heldout	425	chedy	4	5	4	4	4
+f75r	2	heldout	426	olor	4	4	9	8	9
+f75r	2	heldout	427				14	8	8
+f75r	2	heldout	428				3	2	2
+f75r	2	heldout	429				3	2	3
+f75r	2	heldout	430				3	3	3
+f75r	2	heldout	431				2	2	6
+f75r	2	heldout	432				5	4	6
+f75r	2	heldout	433				5	5	6
+f75r	2	heldout	434				7	5	7
+f75r	2	heldout	435				3	3	4
+f75r	2	heldout	436				8	7	8
+f75r	2	heldout	438				8	6	8
+f75r	2	heldout	439				13	9	9
+f75r	2	heldout	440				1	1	1
+f75r	2	heldout	441				4	4	5
+f75r	2	heldout	442				6	6	8
+f75r	2	heldout	443				5	5	6
+f75r	2	heldout	444				5	4	7
+f75r	2	heldout	445				6	5	6
+f75r	2	heldout	446				1	1	2
+f75r	2	heldout	447				3	3	3
+f75r	2	heldout	448				5	5	5
+f75r	2	heldout	449				5	5	6
+f75r	2	heldout	450				5	4	4
+f81v	2	train	1				1	1	2
+f81v	2	train	2				4	3	4
+f81v	2	train	3				5	5	6
+f81v	2	train	4				6	4	5
+f81v	2	train	5				3	3	3
+f81v	2	train	6				3	3	3
+f81v	2	train	7				2	2	2
+f81v	2	train	9				4	4	5
+f81v	2	train	10				4	3	3
+f81v	2	train	11				4	4	4
+f81v	2	train	12				4	2	4
+f81v	2	train	13				3	2	4
+f81v	2	train	14	qokedy	6	6	5	4	5
+f81v	2	train	15	okaiin	6	6	4	4	4
+f81v	2	train	16	kair	4	4	3	3	4
+f81v	2	train	17	okal	4	4	4	4	4
+f81v	2	train	18	sar	3	3	3	3	3
+f81v	2	train	19	ol	2	2	2	2	2
+f81v	2	train	20	kain	4	4	3	3	6
+f81v	2	train	21	olkain	6	6	7	7	7
+f81v	2	train	22	al	2	2	2	2	2
+f81v	2	train	23	ol	2	2	2	1	2
+f81v	2	train	24	rol	3	3	3	3	3
+f81v	2	train	25	dl	2	2	1	1	2
+f81v	2	train	26				2	1	2
+f81v	2	train	27				3	3	3
+f81v	2	train	28				5	5	5
+f81v	2	train	29				2	1	2
+f81v	2	train	30				3	3	4
+f81v	2	train	31				4	4	4
+f81v	2	train	32				7	7	7
+f81v	2	train	33				3	3	3
+f81v	2	train	34				3	3	4
+f81v	2	train	35				3	3	5
+f81v	2	train	36				3	3	3
+f81v	2	train	37				3	3	6
+f81v	2	train	38				2	2	3
+f81v	2	train	39				4	4	4
+f81v	2	train	40				4	4	5
+f81v	2	train	41				3	2	2
+f81v	2	train	42				2	2	2
+f81v	2	train	43				4	4	5
+f81v	2	train	44				3	3	4
+f81v	2	train	45				1	1	1
+f81v	2	train	46				5	5	5
+f81v	2	train	47				2	2	6
+f81v	2	train	48	okaiin	6	6	6	5	5
+f81v	2	train	49	daiin	5	5	7	6	6
+f81v	2	train	50	otain	5	5	6	6	6
+f81v	2	train	51	chckhy	3	6	4	3	6
+f81v	2	train	52	okeedy	6	6	4	4	6
+f81v	2	train	53	qoky	4	4	2	2	2
+f81v	2	train	54	kar	3	3	3	3	4
+f81v	2	train	55	daiin	5	5	5	5	5
+f81v	2	train	56	okar	4	4	3	3	4
+f81v	2	train	57				5	5	6
+f81v	2	train	58				6	6	6
+f81v	2	train	59				1	1	1
+f81v	2	train	60				1	1	1
+f81v	2	train	61				2	2	3
+f81v	2	train	62				3	3	5
+f81v	2	train	63				1	1	1
+f81v	2	train	64				2	2	2
+f81v	2	train	65				1	1	1
+f81v	2	train	66				1	1	1
+f81v	2	train	67				4	4	4
+f81v	2	train	68				4	4	5
+f81v	2	train	69				3	3	4
+f81v	2	train	70	olor	4	4	4	4	4
+f81v	2	train	71	ol	2	2	2	2	2
+f81v	2	train	72	sheckhal	5	8	5	3	7
+f81v	2	train	73	daiin	5	5	3	3	3
+f81v	2	train	74	qokeedal	8	8	5	5	5
+f81v	2	train	75	daiin	5	5	5	5	5
+f81v	2	train	76	chckhy	3	6	2	2	5
+f81v	2	train	77	schedy	5	6	4	4	6
+f81v	2	train	78	qol	3	3	1	1	2
+f81v	2	train	79				1	1	1
+f81v	2	train	80				3	2	2
+f81v	2	train	81				1	1	1
+f81v	2	train	82				2	2	2
+f81v	2	train	83				4	4	5
+f81v	2	train	84				5	5	5
+f81v	2	train	85				4	4	6
+f81v	2	train	86				6	6	6
+f81v	2	train	87				5	5	5
+f81v	2	train	88				3	3	6
+f81v	2	train	89				4	4	4
+f81v	2	train	90				1	1	1
+f81v	2	train	91				2	2	2
+f81v	2	train	92				4	4	4
+f81v	2	train	93				4	4	5
+f81v	2	train	94				4	4	4
+f81v	2	train	95				3	3	5
+f81v	2	train	96				1	1	1
+f81v	2	train	97				3	3	3
+f81v	2	train	98				3	3	7
+f81v	2	train	99				4	4	5
+f81v	2	train	100				3	1	4
+f81v	2	train	101				1	1	3
+f81v	2	train	102				3	2	3
+f81v	2	train	103				5	4	5
+f81v	2	train	104				3	2	4
+f81v	2	train	105				4	4	6
+f81v	2	train	106				5	4	5
+f81v	2	train	107				1	1	1
+f81v	2	train	108				5	4	5
+f81v	2	train	109				2	2	2
+f81v	2	train	110				6	6	6
+f81v	2	train	111				4	3	3
+f81v	2	train	112				6	6	6
+f81v	2	train	113				5	4	5
+f81v	2	train	114				3	2	2
+f81v	2	train	115				8	4	4
+f81v	2	train	116				2	1	1
+f81v	2	train	117				6	3	3
+f81v	2	train	118				6	4	5
+f81v	2	train	119				1	1	1
+f81v	2	train	120				2	2	2
+f81v	2	train	121				1	1	1
+f81v	2	train	122				2	1	2
+f81v	2	train	123				7	6	6
+f81v	2	train	124				2	2	6
+f81v	2	train	125				5	4	6
+f81v	2	train	126				1	1	1
+f81v	2	train	127				3	3	4
+f81v	2	train	128				3	3	3
+f81v	2	train	129				1	1	1
+f81v	2	train	130				2	2	2
+f81v	2	train	131				4	4	5
+f81v	2	train	132				4	3	5
+f81v	2	train	133				5	5	6
+f81v	2	train	134				1	1	1
+f81v	2	train	135				5	4	4
+f81v	2	train	136				4	3	3
+f81v	2	train	137				1	1	1
+f81v	2	train	138				5	3	4
+f81v	2	train	139				3	3	5
+f81v	2	train	140				3	3	5
+f81v	2	train	141				4	3	4
+f81v	2	train	142				9	9	10
+f81v	2	train	144				4	3	4
+f81v	2	train	145				4	4	5
+f81v	2	train	146				4	4	6
+f81v	2	train	148				5	5	5
+f81v	2	train	149				3	3	5
+f81v	2	train	150				3	2	4
+f81v	2	train	151				5	4	6
+f81v	2	train	152				3	2	5
+f81v	2	train	153				1	1	1
+f81v	2	train	154				3	3	3
+f81v	2	train	155				2	2	3
+f81v	2	train	157				2	2	2
+f81v	2	train	158				2	2	5
+f81v	2	train	159				5	5	7
+f81v	2	train	160				5	4	5
+f81v	2	train	161				1	1	1
+f81v	2	train	162				2	2	3
+f81v	2	train	164				4	4	5
+f81v	2	train	165				1	1	1
+f81v	2	train	166				2	2	2
+f81v	2	train	167	qoeedy	6	6	4	3	4
+f81v	2	train	168				3	3	3
+f81v	2	train	169				2	2	2
+f81v	2	train	170				2	1	1
+f81v	2	train	171	lshedy	5	6	3	3	4
+f81v	2	train	172				4	3	5
+f81v	2	train	173	chdy	3	4	3	3	3
+f81v	2	train	174				1	1	1
+f81v	2	train	175				3	2	3
+f81v	2	train	176				3	3	3
+f81v	2	train	177				2	2	2
+f81v	2	train	179				2	2	2
+f81v	2	train	180				2	2	2
+f81v	2	train	181				8	6	9
+f81v	2	train	182				5	5	6
+f81v	2	train	184				2	2	2
+f81v	2	train	185				2	2	2
+f81v	2	train	186				1	1	1
+f81v	2	train	187				4	3	3
+f81v	2	train	188				1	1	1
+f81v	2	train	189	cheky	4	5	4	4	4
+f81v	2	train	190				4	4	8
+f81v	2	train	191	shedy	4	5	5	5	7
+f81v	2	train	192	qokedy	6	6	2	2	4
+f81v	2	train	193	qokedy	6	6	3	3	5
+f81v	2	train	194	chckhy	3	6	3	3	3
+f81v	2	train	195	qoky	4	4	4	4	4
+f81v	2	train	196				3	2	3
+f81v	2	train	197				1	1	2
+f81v	2	train	198				2	2	2
+f81v	2	train	199				2	2	4
+f81v	2	train	200				3	3	4
+f81v	2	train	201				2	2	4
+f81v	2	train	202				7	4	5
+f81v	2	train	203				4	4	5
+f81v	2	train	204				3	3	3
+f81v	2	train	205				1	1	1
+f81v	2	train	206				1	1	2
+f81v	2	train	207				1	1	1
+f81v	2	train	208				2	2	2
+f81v	2	train	209				2	2	2
+f81v	2	train	210				2	2	4
+f81v	2	train	211				2	1	3
+f81v	2	train	212				2	2	3
+f81v	2	train	213				4	4	7
+f81v	2	train	215				3	3	3
+f81v	2	train	216				4	3	4
+f81v	2	train	217				3	3	3
+f81v	2	train	218				3	2	2
+f81v	2	train	219	qokey	5	5	3	3	3
+f81v	2	train	220	lshedy	5	6	3	3	6
+f81v	2	train	221	lshedy	5	6	3	3	3
+f81v	2	train	222	chedy	4	5	4	4	5
+f81v	2	train	223	qolky	5	5	4	3	4
+f81v	2	train	224	lchedal	6	7	5	5	7
+f81v	2	train	225	qol	3	3	1	1	2
+f81v	2	train	226	otar	4	4	5	4	5
+f81v	2	train	227				1	1	1
+f81v	2	train	228				1	1	1
+f81v	2	train	229				2	1	1
+f81v	2	train	230				3	2	2
+f81v	2	train	232				2	2	2
+f81v	2	train	233				3	3	3
+f81v	2	train	234				2	2	4
+f81v	2	train	235				2	2	2
+f81v	2	train	236				3	3	5
+f81v	2	train	237				5	4	4
+f81v	2	train	238				10	9	14
+f81v	2	train	240				2	2	2
+f81v	2	train	241				3	2	2
+f81v	2	train	242				8	6	6
+f81v	2	train	243				5	5	5
+f81v	2	train	244				3	3	4
+f81v	2	train	245				2	2	2
+f81v	2	train	246				3	3	4
+f81v	2	train	247				4	3	3
+f81v	2	train	248				5	5	6
+f81v	2	train	249				5	5	5
+f81v	2	train	250				5	5	5
+f81v	2	train	251				4	3	5
+f81v	2	train	252				4	4	4
+f81v	2	train	253				7	7	10
+f81v	2	train	254				5	5	8
+f81v	2	train	255				4	4	4
+f81v	2	train	256				1	1	1
+f81v	2	train	257				1	1	1
+f81v	2	train	258				3	2	5
+f81v	2	train	259				1	1	1
+f81v	2	train	260				4	3	4
+f81v	2	train	261				1	1	3
+f81v	2	train	262				2	2	3
+f81v	2	train	263				6	5	5
+f81v	2	train	264				2	2	2
+f81v	2	train	265				1	1	3
+f81v	2	train	266				1	1	1
+f81v	2	train	267				5	4	8
+f81v	2	train	268				1	1	1
+f81v	2	train	269				3	2	3
+f81v	2	train	270				2	2	2
+f81v	2	train	271	checholtar	8	10	9	6	10
+f81v	2	train	272	oiin	4	4	4	4	4
+f81v	2	train	273	okedy	5	5	5	4	4
+f81v	2	train	274	dal	3	3	3	3	3
+f81v	2	train	275	shey	3	4	1	1	3
+f81v	2	train	276	olkeol	6	6	3	2	3
+f81v	2	train	277	olkeedy	7	7	6	5	7
+f81v	2	train	278	okeol	5	5	2	2	4
+f81v	2	train	279				1	1	1
+f81v	2	train	280				2	2	4
+f81v	2	train	281				5	5	5
+f81v	2	train	282				6	5	6
+f81v	2	train	283				2	2	4
+f81v	2	train	284				4	4	4
+f81v	2	train	285				3	3	7
+f81v	2	train	286				3	3	4
+f81v	2	train	287				7	6	6
+f81v	2	train	288				5	4	4
+f76v	2	train	0				7	5	7
+f76v	2	train	1				7	6	6
+f76v	2	train	2				5	4	4
+f76v	2	train	3				5	4	5
+f76v	2	train	4				3	2	2
+f76v	2	train	5				5	4	5
+f76v	2	train	6				5	5	5
+f76v	2	train	7				6	6	7
+f76v	2	train	8				1	1	1
+f76v	2	train	9				5	5	5
+f76v	2	train	10				1	1	2
+f76v	2	train	11				7	5	5
+f76v	2	train	12	sshedy	5	6	5	4	4
+f76v	2	train	13	keedy	5	5	5	5	5
+f76v	2	train	14	cholkeeey	8	9	7	6	7
+f76v	2	train	15	otedor	6	6	7	7	7
+f76v	2	train	16	okor	4	4	4	4	4
+f76v	2	train	17	shedy	4	5	3	3	4
+f76v	2	train	18	chedy	4	5	3	3	4
+f76v	2	train	19	qokeedy	7	7	5	5	6
+f76v	2	train	20	oly	3	3	2	2	2
+f76v	2	train	21	shey	3	4	4	3	4
+f76v	2	train	22	qoyky	5	5	4	3	5
+f76v	2	train	23	dchedy	5	6	5	5	5
+f76v	2	train	24	qokeedy	7	7	4	4	4
+f76v	2	train	25	oteedy	6	6	5	4	5
+f76v	2	train	26	chedaiin	7	8	6	6	6
+f76v	2	train	27	chey	3	4	3	3	3
+f76v	2	train	28	qokeedy	7	7	6	6	7
+f76v	2	train	29	olkedy	6	6	5	5	5
+f76v	2	train	30	ror	3	3	3	3	3
+f76v	2	train	31	oteedy	6	6	5	5	6
+f76v	2	train	32	okal	4	4	4	3	3
+f76v	2	train	33				7	7	8
+f76v	2	train	34				3	3	3
+f76v	2	train	35				4	3	5
+f76v	2	train	36				6	6	6
+f76v	2	train	37				4	4	4
+f76v	2	train	38				7	5	9
+f76v	2	train	39				2	2	2
+f76v	2	train	40				3	3	3
+f76v	2	train	42				3	2	4
+f76v	2	train	43				3	3	3
+f76v	2	train	44				1	1	1
+f76v	2	train	45				5	5	6
+f76v	2	train	46				6	6	6
+f76v	2	train	47				6	6	9
+f76v	2	train	48				3	3	4
+f76v	2	train	49				1	1	1
+f76v	2	train	50				5	4	4
+f76v	2	train	51				5	5	5
+f76v	2	train	52				3	3	3
+f76v	2	train	53				9	6	8
+f76v	2	train	54				4	3	3
+f76v	2	train	55				6	6	6
+f76v	2	train	56				5	5	5
+f76v	2	train	57				2	1	2
+f76v	2	train	58				4	4	5
+f76v	2	train	59				5	4	5
+f76v	2	train	60				4	4	4
+f76v	2	train	61				2	2	4
+f76v	2	train	63				4	4	5
+f76v	2	train	64				3	3	4
+f76v	2	train	65				6	5	7
+f76v	2	train	66				6	5	6
+f76v	2	train	67				4	3	4
+f76v	2	train	68				3	3	3
+f76v	2	train	69				5	5	6
+f76v	2	train	70				5	4	4
+f76v	2	train	71				4	4	5
+f76v	2	train	72				4	4	4
+f76v	2	train	73				8	8	8
+f76v	2	train	74				5	5	6
+f76v	2	train	75				4	4	4
+f76v	2	train	76				5	5	5
+f76v	2	train	77				6	5	5
+f76v	2	train	78				3	3	5
+f76v	2	train	79				4	4	4
+f76v	2	train	80				4	4	4
+f76v	2	train	81				3	3	5
+f76v	2	train	82				5	5	7
+f76v	2	train	83				3	3	3
+f76v	2	train	84	sheor	4	5	3	3	4
+f76v	2	train	85	chey	3	4	1	1	3
+f76v	2	train	86	ral	3	3	3	3	3
+f76v	2	train	87	cheey	4	5	3	3	3
+f76v	2	train	88	r	1	1	1	1	1
+f76v	2	train	89	al	2	2	2	2	2
+f76v	2	train	90	cheedy	5	6	3	3	5
+f76v	2	train	92				4	3	4
+f76v	2	train	93				6	5	5
+f76v	2	train	94				4	4	5
+f76v	2	train	95				6	5	6
+f76v	2	train	96				6	5	5
+f76v	2	train	97				1	1	1
+f76v	2	train	98				4	4	5
+f76v	2	train	99				6	5	6
+f76v	2	train	100				4	2	3
+f76v	2	train	101				5	5	5
+f76v	2	train	102				1	1	1
+f76v	2	train	103	cheor	4	5	4	4	4
+f76v	2	train	104	sheedy	5	6	7	5	6
+f76v	2	train	105	daiin	5	5	5	4	5
+f76v	2	train	106	oekeedy	7	7	6	6	6
+f76v	2	train	107	qokeey	6	6	4	4	5
+f76v	2	train	108	qokedy	6	6	5	4	5
+f76v	2	train	109	oteedy	6	6	5	4	5
+f76v	2	train	110	shedy	4	5	3	3	3
+f76v	2	train	111	qokedy	6	6	4	4	5
+f76v	2	train	112	shedam	5	6	4	4	4
+f76v	2	train	113	solsheol	7	8	6	5	6
+f76v	2	train	114	sheey	4	5	5	4	4
+f76v	2	train	115	lteedy	6	6	6	5	5
+f76v	2	train	116	qokeedy	7	7	2	2	5
+f76v	2	train	117	qotal	5	5	2	2	3
+f76v	2	train	118	chedy	4	5	3	3	3
+f76v	2	train	119	checthy	4	7	3	3	5
+f76v	2	train	120	otedeey	7	7	5	4	6
+f76v	2	train	121	qokol	5	5	4	4	5
+f76v	2	train	122	chedy	4	5	4	4	4
+f76v	2	train	123				3	3	3
+f76v	2	train	124	saiin	5	5	5	5	6
+f76v	2	train	125	sheedy	5	6	4	3	4
+f76v	2	train	126	qol	3	3	2	2	3
+f76v	2	train	127	sheedy	5	6	4	4	5
+f76v	2	train	128	okeeedy	7	7	4	4	7
+f76v	2	train	129	qoteedy	7	7	4	4	6
+f76v	2	train	130	chedy	4	5	4	4	4
+f76v	2	train	131	qotedy	6	6	3	3	5
+f76v	2	train	132	oleeedy	7	7	5	5	6
+f76v	2	train	133	qoteedy	7	7	3	3	3
+f76v	2	train	134	lo	2	2	2	2	2
+f76v	2	train	135				3	3	4
+f76v	2	train	136				7	7	8
+f76v	2	train	137				4	4	5
+f76v	2	train	138				3	3	4
+f76v	2	train	139				9	9	11
+f76v	2	train	140				6	5	7
+f76v	2	train	141				6	6	6
+f76v	2	train	142				5	3	4
+f76v	2	train	143	tchedy	5	6	4	4	4
+f76v	2	train	144	lsheedy	6	7	6	6	6
+f76v	2	train	145	chedal	5	6	4	4	5
+f76v	2	train	146	chedy	4	5	2	2	5
+f76v	2	train	147	checthey	5	8	4	4	5
+f76v	2	train	148				7	6	6
+f76v	2	train	150				7	6	6
+f76v	2	train	151				2	1	1
+f76v	2	train	152				5	4	4
+f76v	2	train	153				5	5	6
+f76v	2	train	154				5	4	4
+f76v	2	train	155				5	4	4
+f76v	2	train	156				7	6	8
+f76v	2	train	157				6	5	6
+f76v	2	train	158				2	2	3
+f76v	2	train	159				5	4	4
+f76v	2	train	160				2	2	2
+f76v	2	train	161				4	4	4
+f76v	2	train	162				6	5	5
+f76v	2	train	163				5	5	5
+f76v	2	train	164				4	4	5
+f76v	2	train	165				5	5	6
+f76v	2	train	166				4	4	5
+f76v	2	train	167				5	5	5
+f76v	2	train	168				3	3	3
+f76v	2	train	169	lshey	4	5	4	4	4
+f76v	2	train	170	qockhedy	6	8	2	2	3
+f76v	2	train	171	qodeey	6	6	2	2	4
+f76v	2	train	172	qolkeedy	8	8	6	6	9
+f76v	2	train	173	qokedy	6	6	3	3	3
+f76v	2	train	174	chol	3	4	2	2	3
+f76v	2	train	175	chedchey	6	8	6	5	5
+f76v	2	train	176	daiin	5	5	5	4	5
+f76v	2	train	177	olkedy	6	6	6	6	6
+f76v	2	train	178				4	4	4
+f76v	2	train	179				3	1	2
+f76v	2	train	180	sheey	4	5	4	4	6
+f76v	2	train	181	otar	4	4	4	3	4
+f76v	2	train	183	otchedy	6	7	5	5	5
+f76v	2	train	184	checkhey	5	8	3	3	6
+f76v	2	train	185	olchedy	6	7	6	6	6
+f76v	2	train	186	checkhy	4	7	4	4	4
+f76v	2	train	187	checkhy	4	7	4	4	5
+f76v	2	train	188	lky	3	3	4	3	3
+f76v	2	train	189				2	2	2
+f76v	2	train	190				4	4	6
+f76v	2	train	191				3	3	5
+f76v	2	train	192				1	1	1
+f76v	2	train	193				9	8	10
+f76v	2	train	194				2	2	3
+f76v	2	train	195				5	5	5
+f76v	2	train	196				6	6	6
+f76v	2	train	197				2	2	2
+f76v	2	train	198				6	5	6
+f76v	2	train	199	cthedy	4	6	2	2	4
+f76v	2	train	200	oteol	5	5	2	2	3
+f76v	2	train	201	chdar	4	5	4	4	4
+f76v	2	train	202	chckhy	3	6	2	2	4
+f76v	2	train	203	chees	4	5	4	4	4
+f76v	2	train	204	salkchdy	7	8	6	6	6
+f76v	2	train	205	chey	3	4	2	2	2
+f76v	2	train	206	lcheedy	6	7	4	4	4
+f76v	2	train	207	lchedy	5	6	4	4	5
+f76v	2	train	208	qoteedy	7	7	3	3	3
+f76v	2	train	209				4	3	5
+f76v	2	train	210				4	4	5
+f76v	2	train	211				2	2	3
+f76v	2	train	212				7	7	10
+f76v	2	train	213				1	1	1
+f76v	2	train	214				4	4	6
+f76v	2	train	215				3	3	4
+f76v	2	train	216				5	4	6
+f76v	2	train	217				4	4	5
+f76v	2	train	218				5	5	5
+f76v	2	train	219				5	5	7
+f76v	2	train	220				3	3	3
+f76v	2	train	221				3	3	3
+f76v	2	train	222				3	1	2
+f76v	2	train	223				4	3	3
+f76v	2	train	224				6	6	7
+f76v	2	train	225				5	2	3
+f76v	2	train	226				5	4	4
+f76v	2	train	227	qokeey	6	6	1	1	2
+f76v	2	train	228	lsheey	5	6	6	3	5
+f76v	2	train	229	dal	3	3	3	2	2
+f76v	2	train	230	lchedy	5	6	5	4	4
+f76v	2	train	231	olshey	5	6	5	5	5
+f76v	2	train	232				7	5	6
+f76v	2	train	233				7	5	7
+f76v	2	train	234				7	6	7
+f76v	2	train	235				3	3	6
+f76v	2	train	236				3	3	3
+f76v	2	train	237				2	2	2
+f76v	2	train	238				4	2	4
+f76v	2	train	239				2	2	2
+f76v	2	train	240				3	3	3
+f76v	2	train	241				3	3	4
+f76v	2	train	242				5	5	6
+f76v	2	train	243				2	2	4
+f76v	2	train	244				5	5	5
+f76v	2	train	245				4	4	5
+f76v	2	train	246				6	5	7
+f76v	2	train	247				3	3	5
+f76v	2	train	248				3	3	5
+f76v	2	train	249				4	4	4
+f76v	2	train	250				4	4	4
+f76v	2	train	251				3	3	5
+f76v	2	train	252				3	3	4
+f76v	2	train	253				4	4	5
+f76v	2	train	254				1	1	3
+f76v	2	train	255				1	1	2
+f76v	2	train	258				1	1	2
+f76v	2	train	259				1	1	1
+f76v	2	train	260				3	3	3
+f76v	2	train	261				5	5	7
+f76v	2	train	262				6	5	5
+f76v	2	train	263				4	4	5
+f76v	2	train	264				6	6	7
+f76v	2	train	265				4	4	4
+f76v	2	train	266				4	4	4
+f76v	2	train	267				4	4	7
+f76v	2	train	268				6	6	6
+f76v	2	train	269				4	4	4
+f76v	2	train	270				3	3	4
+f76v	2	train	271				2	2	4
+f76v	2	train	272				3	3	4
+f76v	2	train	273				3	3	4
+f76v	2	train	274				3	3	4
+f76v	2	train	275				5	5	5
+f76v	2	train	276				2	1	3
+f76v	2	train	277				6	5	6
+f76v	2	train	278				6	5	5
+f76v	2	train	279				5	5	6
+f76v	2	train	280				4	4	4
+f76v	2	train	281				9	8	9
+f76v	2	train	282				3	3	5
+f76v	2	train	283				2	2	5
+f76v	2	train	284				5	4	4
+f76v	2	train	285				5	4	6
+f76v	2	train	286				3	2	2
+f76v	2	train	287				8	6	8
+f76v	2	train	288				5	4	4
+f76v	2	train	289	sair	4	4	3	3	4
+f76v	2	train	290	shekaiiin	8	9	5	4	5
+f76v	2	train	291				2	2	2
+f76v	2	train	292				11	8	8
+f76v	2	train	293	shety	4	5	4	3	5
+f76v	2	train	294	otey	4	4	3	3	4
+f76v	2	train	295	okaiin	6	6	4	4	5
+f76v	2	train	296	otedy	5	5	5	4	5
+f76v	2	train	297	qotar	5	5	5	4	5
+f76v	2	train	298	chedy	4	5	5	5	6
+f76v	2	train	299	tain	4	4	3	3	4
+f76v	2	train	300	sheey	4	5	4	4	5
+f76v	2	train	301	qotain	6	6	8	6	7
+f76v	2	train	302	chedy	4	5	3	3	3
+f76v	2	train	303	qokaiin	7	7	5	4	6
+f76v	2	train	304	chedy	4	5	4	4	5
+f76v	2	train	305	taiin	5	5	2	2	4
+f76v	2	train	306	chckhedy	5	8	5	4	6
+f76v	2	train	307	otol	4	4	5	3	4
+f76v	2	train	308	oty	3	3	2	2	3
+f76v	2	train	309	saiin	5	5	5	4	4
+f76v	2	train	310	otaiin	6	6	6	5	6
+f76v	2	train	311	shckhedy	5	8	8	7	8
+f76v	2	train	312				7	6	6
+f76v	2	train	313				6	5	5
+f76v	2	train	314				4	4	4
+f76v	2	train	315				5	3	4
+f76v	2	train	316				4	3	3
+f76v	2	train	317				7	5	5
+f76v	2	train	318				7	5	7
+f76v	2	train	319				7	7	7
+f76v	2	train	320	ychees	5	6	4	3	4
+f76v	2	train	321	alchedy	6	7	5	5	6
+f76v	2	train	322	qokeedy	7	7	5	4	6
+f76v	2	train	323	lshedy	5	6	5	4	5
+f76v	2	train	324	tolchedy	7	8	7	7	8
+f76v	2	train	325	lchedy	5	6	4	3	4
+f76v	2	train	326	qoky	4	4	3	3	4
+f76v	2	train	327	saiin	5	5	5	4	4
+f76v	2	train	328	olor	4	4	4	4	4
+f76v	2	train	329				5	5	5
+f76v	2	train	330				10	9	12
+f76v	2	train	331				3	3	4
+f76v	2	train	332				2	2	4
+f76v	2	train	333				2	2	4
+f76v	2	train	334				5	5	5
+f76v	2	train	335				4	3	3
+f76v	2	train	336				7	7	7
+f76v	2	train	337				4	4	5
+f76v	2	train	338				7	5	5
+f76v	2	train	339				3	2	2
+f76v	2	train	340				7	6	7
+f76v	2	train	341				3	3	4
+f76v	2	train	342				3	3	4
+f76v	2	train	343				4	3	5
+f76v	2	train	344				5	5	6
+f76v	2	train	345				10	9	9
+f76v	2	train	346				4	4	4
+f76v	2	train	347				3	3	3
+f76v	2	train	349				2	2	2
+f76v	2	train	350				1	1	1
+f76v	2	train	351				3	3	3
+f76v	2	train	352				1	1	1
+f76v	2	train	353				2	2	4
+f76v	2	train	354				6	5	5
+f76v	2	train	355				4	4	4
+f76v	2	train	356				5	5	5
+f76v	2	train	357				5	4	4
+f76v	2	train	358				4	4	4
+f76v	2	train	359				5	5	5
+f76v	2	train	360				3	3	3
+f76v	2	train	361				6	5	6
+f76v	2	train	362				7	5	7
+f76v	2	train	363				2	2	4
+f76v	2	train	364				5	5	5
+f76v	2	train	365				3	3	4
+f76v	2	train	366				3	3	4
+f76v	2	train	367				5	5	5
+f76v	2	train	368				5	5	6
+f76v	2	train	369				1	1	2
+f76v	2	train	370				7	6	8
+f76v	2	train	371	sol	3	3	3	3	3
+f76v	2	train	372	shey	3	4	2	2	2
+f76v	2	train	373	chedy	4	5	3	3	4
+f76v	2	train	374	qokedy	6	6	4	4	5
+f76v	2	train	375	chedy	4	5	4	3	4
+f76v	2	train	376	qol	3	3	2	2	3
+f76v	2	train	377	r	1	1	1	1	1
+f76v	2	train	378	aiin	4	4	4	4	4
+f76v	2	train	379	shedy	4	5	5	4	4
+f40v	2	train	0				2	2	2
+f40v	2	train	1				9	7	7
+f40v	2	train	2				13	8	10
+f40v	2	train	3				4	4	4
+f40v	2	train	4				2	1	3
+f40v	2	train	5	todar	5	5	10	8	8
+f40v	2	train	6	qokaiin	7	7	9	7	8
+f40v	2	train	7	ol	2	2	2	2	2
+f40v	2	train	8	arag	4	4	7	7	7
+f40v	2	train	9				10	7	8
+f40v	2	train	10				8	7	9
+f40v	2	train	11				6	6	7
+f40v	2	train	12				10	9	9
+f40v	2	train	13				11	8	9
+f40v	2	train	14				7	5	5
+f40v	2	train	16	solaiin	7	7	9	7	7
+f40v	2	train	17	okar	4	4	4	4	5
+f40v	2	train	18	oly	3	3	3	3	3
+f40v	2	train	19	chckhy	3	6	3	3	5
+f40v	2	train	20				1	1	1
+f40v	2	train	21				9	9	9
+f40v	2	train	22				3	2	2
+f40v	2	train	23				6	6	6
+f40v	2	train	24				6	6	6
+f40v	2	train	25				7	6	6
+f40v	2	train	26				9	8	10
+f40v	2	train	27				7	6	6
+f40v	2	train	28				3	2	2
+f40v	2	train	29	chodaiin	7	8	9	8	9
+f40v	2	train	30	chkalykedy	9	10	11	10	13
+f40v	2	train	31	okal	4	4	8	6	6
+f40v	2	train	32				18	16	17
+f40v	2	train	33				5	4	4
+f40v	2	train	34				3	3	3
+f40v	2	train	35	tchkaiin	7	8	16	12	13
+f40v	2	train	36	tchedy	5	6	7	5	8
+f40v	2	train	37	qokaiin	7	7	8	5	7
+f40v	2	train	38	oraiin	6	6	7	7	7
+f40v	2	train	39				3	2	2
+f40v	2	train	40				5	5	5
+f40v	2	train	41				8	7	7
+f40v	2	train	42				7	6	6
+f40v	2	train	43				5	5	5
+f40v	2	train	44				7	5	5
+f40v	2	train	45	ycheekeey	8	9	9	9	12
+f40v	2	train	46	daiin	5	5	6	5	5
+f40v	2	train	47	okaiin	6	6	9	6	7
+f40v	2	train	48				6	5	5
+f40v	2	train	49				9	6	7
+f40v	2	train	50				7	6	6
+f40v	2	train	51				4	4	6
+f40v	2	train	53				8	6	10
+f40v	2	train	54				6	6	6
+f40v	2	train	55				11	9	13
+f40v	2	train	56	saiin	5	5	7	5	5
+f40v	2	train	57	o	1	1	1	1	1
+f40v	2	train	58	lchey	4	5	5	5	5
+f40v	2	train	59	kchedy	5	6	5	5	5
+f40v	2	train	60	okar	4	4	5	5	6
+f40v	2	train	61				2	2	3
+f40v	2	train	62				3	3	3
+f40v	2	train	63				2	2	2
+f40v	2	train	64				8	5	5
+f40v	2	train	65	chdy	3	4	7	6	6
+f40v	2	train	66				6	5	7
+f40v	2	train	67				1	1	1
+f40v	2	train	68				6	5	6
+f40v	2	train	69				2	2	2
+f40v	2	train	70				5	3	4
+f40v	2	train	71				6	4	4
+f40v	2	train	72				7	6	7
+f40v	2	train	73				4	3	5
+f40v	2	train	74				7	5	8
+f40v	2	train	75				10	8	10
+f40v	2	train	76				3	3	3
+f40v	2	train	77				2	2	2
+f40v	2	train	78				3	3	3
+f40v	2	train	79				4	4	6
+f40v	2	train	80				5	5	6
+f40v	2	train	81	tochey	5	6	9	8	8
+f40v	2	train	82	qokeedy	7	7	8	6	7
+f40v	2	train	83	qokaiin	7	7	9	7	8
+f40v	2	train	84	okeos	5	5	5	5	5
+f40v	2	train	85	qokar	5	5	5	4	7
+f40v	2	train	86				1	1	1
+f40v	2	train	88	oky	3	3	4	4	4
+f40v	2	train	89				2	2	2
+f40v	2	train	90	otain	5	5	5	5	5
+f40v	2	train	91	chckhy	3	6	7	4	4
+f40v	2	train	92				7	6	8
+f40v	2	train	93	okair	5	5	6	5	5
+f40v	2	train	94				14	10	11
+f40v	2	train	95	qokey	5	5	4	4	4
+f40v	2	train	96	okary	5	5	4	3	4
+f40v	2	train	97	pchedy	5	6	6	5	6
+f40v	2	train	98				5	4	5
+f40v	2	train	99				3	2	2
+f40v	2	train	100				13	9	10
+f105v	3	heldout	0				2	1	2
+f105v	3	heldout	2				5	5	5
+f105v	3	heldout	3				4	4	4
+f105v	3	heldout	4				3	2	4
+f105v	3	heldout	5				4	4	5
+f105v	3	heldout	6				5	5	7
+f105v	3	heldout	7				8	6	12
+f105v	3	heldout	8				10	9	11
+f105v	3	heldout	9				6	5	6
+f105v	3	heldout	10				6	5	7
+f105v	3	heldout	11				4	4	5
+f105v	3	heldout	12				1	1	1
+f105v	3	heldout	13				6	5	12
+f105v	3	heldout	14				8	7	11
+f105v	3	heldout	15				9	9	11
+f105v	3	heldout	16				5	4	6
+f105v	3	heldout	17				6	6	8
+f105v	3	heldout	18				6	5	10
+f105v	3	heldout	19				5	4	6
+f105v	3	heldout	20				5	4	5
+f105v	3	heldout	21				1	1	1
+f105v	3	heldout	22				5	4	6
+f105v	3	heldout	23				4	4	6
+f105v	3	heldout	24				5	5	7
+f105v	3	heldout	25				5	5	5
+f105v	3	heldout	26				4	4	6
+f105v	3	heldout	27				3	2	3
+f105v	3	heldout	29				5	5	6
+f105v	3	heldout	30				3	2	4
+f105v	3	heldout	31				1	1	2
+f105v	3	heldout	32				3	3	8
+f105v	3	heldout	33				6	6	8
+f105v	3	heldout	34	olkeeol	7	7	6	6	6
+f105v	3	heldout	35	orchsey	6	7	3	3	6
+f105v	3	heldout	36	qokeedy	7	7	4	4	7
+f105v	3	heldout	37	chdor	4	5	3	3	5
+f105v	3	heldout	38	olar	4	4	5	4	4
+f105v	3	heldout	39	ol	2	2	3	3	3
+f105v	3	heldout	40	keeol	5	5	2	2	2
+f105v	3	heldout	41	chedaiin	7	8	6	6	9
+f105v	3	heldout	43				6	4	12
+f105v	3	heldout	44				5	4	6
+f105v	3	heldout	45				5	5	5
+f105v	3	heldout	46				3	3	5
+f105v	3	heldout	47				4	4	5
+f105v	3	heldout	48				5	5	7
+f105v	3	heldout	49				11	9	10
+f105v	3	heldout	50				5	3	6
+f105v	3	heldout	51				6	5	8
+f105v	3	heldout	52				6	5	7
+f105v	3	heldout	53	dcheo	4	5	2	2	5
+f105v	3	heldout	54				6	6	15
+f105v	3	heldout	55				3	3	3
+f105v	3	heldout	56	dar	3	3	4	4	4
+f105v	3	heldout	57				3	3	3
+f105v	3	heldout	58				3	3	3
+f105v	3	heldout	59				1	1	1
+f105v	3	heldout	60				1	1	1
+f105v	3	heldout	61	daiiidy	7	7	7	7	7
+f105v	3	heldout	62	otedy	5	5	5	3	7
+f105v	3	heldout	63	oteody	6	6	3	3	6
+f105v	3	heldout	64	ykaiin	6	6	8	5	7
+f105v	3	heldout	65	g	1	1	1	1	1
+f105v	3	heldout	67				1	1	5
+f105v	3	heldout	68				5	5	7
+f105v	3	heldout	69				5	5	6
+f105v	3	heldout	70				2	2	2
+f105v	3	heldout	71				6	6	7
+f105v	3	heldout	72				7	7	8
+f105v	3	heldout	73				3	3	6
+f105v	3	heldout	74	fodal	5	5	4	4	4
+f105v	3	heldout	75	kedar	5	5	4	4	5
+f105v	3	heldout	76				4	2	4
+f105v	3	heldout	77				3	2	3
+f105v	3	heldout	78	ksheeol	6	7	5	5	6
+f105v	3	heldout	79	opchedy	6	7	5	5	8
+f105v	3	heldout	80	pchedy	5	6	3	3	7
+f105v	3	heldout	81	opcheddl	7	8	5	3	8
+f105v	3	heldout	82	pchdar	5	6	6	5	9
+f105v	3	heldout	84				6	6	8
+f105v	3	heldout	85				5	5	6
+f105v	3	heldout	86				2	2	4
+f105v	3	heldout	87				1	1	1
+f105v	3	heldout	88				5	5	5
+f105v	3	heldout	89				5	5	6
+f105v	3	heldout	90				5	5	8
+f105v	3	heldout	91				5	5	9
+f105v	3	heldout	92				4	4	5
+f105v	3	heldout	93				7	5	5
+f105v	3	heldout	94				3	2	2
+f105v	3	heldout	95				2	1	1
+f105v	3	heldout	96				3	3	3
+f105v	3	heldout	97				5	4	7
+f105v	3	heldout	98				3	3	6
+f105v	3	heldout	99				2	1	2
+f105v	3	heldout	100				2	2	3
+f105v	3	heldout	101				5	5	5
+f105v	3	heldout	102				3	3	3
+f105v	3	heldout	103				5	5	6
+f105v	3	heldout	104				6	6	7
+f105v	3	heldout	106				1	1	2
+f105v	3	heldout	107				8	8	10
+f105v	3	heldout	108				5	5	5
+f105v	3	heldout	109				3	3	3
+f105v	3	heldout	110				2	2	2
+f105v	3	heldout	111				4	4	4
+f105v	3	heldout	112				4	4	4
+f105v	3	heldout	113				4	3	4
+f105v	3	heldout	114				5	5	5
+f105v	3	heldout	115				2	2	2
+f105v	3	heldout	116				6	5	6
+f105v	3	heldout	117				2	2	4
+f105v	3	heldout	118				4	4	4
+f105v	3	heldout	119				6	5	11
+f105v	3	heldout	120				5	5	9
+f105v	3	heldout	121				4	4	6
+f105v	3	heldout	122				4	3	4
+f105v	3	heldout	123				12	7	13
+f105v	3	heldout	124				5	4	7
+f105v	3	heldout	125				3	3	3
+f105v	3	heldout	126				4	4	6
+f105v	3	heldout	127				5	4	5
+f105v	3	heldout	128				1	1	2
+f105v	3	heldout	129				8	6	8
+f105v	3	heldout	131				6	6	7
+f105v	3	heldout	132				4	4	6
+f105v	3	heldout	133				4	4	5
+f105v	3	heldout	134				3	2	3
+f105v	3	heldout	135				6	5	5
+f105v	3	heldout	136				6	4	6
+f105v	3	heldout	137				4	4	8
+f105v	3	heldout	138				7	6	8
+f105v	3	heldout	139				4	2	5
+f105v	3	heldout	140				4	3	7
+f105v	3	heldout	141				3	3	3
+f105v	3	heldout	142				9	8	9
+f105v	3	heldout	143				4	4	6
+f105v	3	heldout	144				4	4	4
+f105v	3	heldout	145				7	4	8
+f105v	3	heldout	146				5	5	5
+f105v	3	heldout	147				5	5	5
+f105v	3	heldout	148				7	6	7
+f105v	3	heldout	149				3	3	4
+f105v	3	heldout	150				3	3	5
+f105v	3	heldout	151				4	4	5
+f105v	3	heldout	152				7	6	9
+f105v	3	heldout	153				6	5	5
+f105v	3	heldout	154				6	5	8
+f105v	3	heldout	155				3	2	3
+f105v	3	heldout	156				7	6	9
+f105v	3	heldout	157				4	3	9
+f105v	3	heldout	158				5	5	5
+f105v	3	heldout	159				6	6	6
+f105v	3	heldout	160				1	1	2
+f105v	3	heldout	161				3	3	4
+f105v	3	heldout	162				2	2	5
+f105v	3	heldout	163				3	3	3
+f105v	3	heldout	164				2	2	3
+f105v	3	heldout	166				5	5	7
+f105v	3	heldout	167				4	4	4
+f105v	3	heldout	168				3	3	4
+f105v	3	heldout	169				7	7	8
+f105v	3	heldout	170				6	6	7
+f105v	3	heldout	171				6	4	8
+f105v	3	heldout	172				2	2	2
+f105v	3	heldout	173				3	3	4
+f105v	3	heldout	174				1	1	2
+f105v	3	heldout	175				6	6	6
+f105v	3	heldout	176				2	2	2
+f105v	3	heldout	177				2	2	2
+f105v	3	heldout	178				4	3	6
+f105v	3	heldout	179				13	11	13
+f105v	3	heldout	180				4	3	6
+f105v	3	heldout	181				12	11	14
+f105v	3	heldout	182				3	3	7
+f105v	3	heldout	183				6	5	7
+f105v	3	heldout	184				7	6	8
+f105v	3	heldout	185				5	3	8
+f105v	3	heldout	186				14	9	15
+f105v	3	heldout	187				1	1	5
+f105v	3	heldout	188				8	7	11
+f105v	3	heldout	189				4	1	2
+f105v	3	heldout	190				9	7	11
+f105v	3	heldout	191				5	5	9
+f105v	3	heldout	192				2	2	7
+f105v	3	heldout	193				5	5	7
+f105v	3	heldout	194				2	2	3
+f105v	3	heldout	196				3	3	8
+f105v	3	heldout	197				3	3	4
+f105v	3	heldout	198				6	5	7
+f105v	3	heldout	199				4	4	5
+f105v	3	heldout	200				4	4	4
+f105v	3	heldout	201				3	3	4
+f105v	3	heldout	202				6	5	7
+f105v	3	heldout	203				7	6	9
+f105v	3	heldout	204				4	2	3
+f105v	3	heldout	205				2	2	2
+f105v	3	heldout	206				4	4	4
+f105v	3	heldout	207				1	1	6
+f105v	3	heldout	208				5	4	6
+f105v	3	heldout	209				9	8	12
+f105v	3	heldout	210				8	7	11
+f105v	3	heldout	211				5	4	8
+f105v	3	heldout	212				7	7	9
+f105v	3	heldout	213				3	3	3
+f105v	3	heldout	214				6	6	9
+f105v	3	heldout	215				5	5	7
+f105v	3	heldout	216				3	3	3
+f105v	3	heldout	217				6	6	7
+f105v	3	heldout	218				1	1	4
+f105v	3	heldout	220				7	6	9
+f105v	3	heldout	221				4	4	4
+f105v	3	heldout	222				2	1	2
+f105v	3	heldout	223				3	2	7
+f105v	3	heldout	224				4	4	6
+f105v	3	heldout	225				4	3	5
+f105v	3	heldout	226				6	4	8
+f105v	3	heldout	227				4	4	6
+f105v	3	heldout	228				3	3	4
+f105v	3	heldout	229				2	2	2
+f105v	3	heldout	230				5	5	6
+f105v	3	heldout	231				3	3	3
+f105v	3	heldout	232				3	3	7
+f105v	3	heldout	233				8	5	8
+f105v	3	heldout	234				3	3	4
+f105v	3	heldout	235				4	4	5
+f105v	3	heldout	236				3	2	5
+f105v	3	heldout	237				8	5	14
+f105v	3	heldout	239				5	5	6
+f105v	3	heldout	240				8	4	14
+f105v	3	heldout	241				13	11	17
+f105v	3	heldout	243				5	5	6
+f105v	3	heldout	244				3	3	6
+f105v	3	heldout	245				1	1	1
+f105v	3	heldout	246				2	2	2
+f105v	3	heldout	247				3	2	2
+f105v	3	heldout	248				6	4	8
+f105v	3	heldout	249				6	6	9
+f105v	3	heldout	250				6	3	5
+f105v	3	heldout	251				4	4	6
+f105v	3	heldout	252				5	4	6
+f105v	3	heldout	253				6	5	5
+f105v	3	heldout	254				6	5	9
+f105v	3	heldout	256				8	6	12
+f105v	3	heldout	257				4	3	5
+f105v	3	heldout	258				2	2	2
+f105v	3	heldout	259				1	1	1
+f105v	3	heldout	260				2	2	2
+f105v	3	heldout	262				5	4	11
+f105v	3	heldout	263				7	6	10
+f105v	3	heldout	264				5	5	5
+f105v	3	heldout	265				4	4	9
+f105v	3	heldout	266				2	1	3
+f105v	3	heldout	268				4	3	6
+f105v	3	heldout	269				8	6	12
+f105v	3	heldout	270				6	6	7
+f105v	3	heldout	271				3	2	2
+f105v	3	heldout	272				3	3	3
+f105v	3	heldout	273				3	3	3
+f105v	3	heldout	274				4	4	6
+f105v	3	heldout	275	tdol	4	4	4	2	5
+f105v	3	heldout	276	tor	3	3	3	2	3
+f105v	3	heldout	277	oaldar	6	6	6	6	7
+f105v	3	heldout	278	aiir	4	4	4	4	4
+f105v	3	heldout	279	okokeedy	8	8	7	6	10
+f105v	3	heldout	280				8	8	9
+f105v	3	heldout	281				2	2	3
+f105v	3	heldout	282				4	3	7
+f105v	3	heldout	283				5	5	6
+f105v	3	heldout	284				1	1	1
+f105v	3	heldout	285	opairam	7	7	6	5	5
+f105v	3	heldout	286				2	2	6
+f105v	3	heldout	287				2	2	5
+f105v	3	heldout	288				4	3	6
+f105v	3	heldout	289				8	6	7
+f105v	3	heldout	290				5	4	6
+f105v	3	heldout	291				5	3	4
+f105v	3	heldout	292				4	4	8
+f105v	3	heldout	293				10	8	12
+f105v	3	heldout	294				4	4	4
+f105v	3	heldout	295				2	2	2
+f105v	3	heldout	296				4	3	11
+f105v	3	heldout	297				3	3	6
+f105v	3	heldout	298				3	3	4
+f105v	3	heldout	299				4	4	4
+f105v	3	heldout	300				4	4	7
+f105v	3	heldout	301				3	3	3
+f105v	3	heldout	302				4	3	7
+f105v	3	heldout	303				1	1	1
+f105v	3	heldout	304				4	4	6
+f105v	3	heldout	305				5	5	6
+f105v	3	heldout	307				3	2	3
+f105v	3	heldout	308				7	6	10
+f105v	3	heldout	309				3	2	5
+f105v	3	heldout	310				2	2	2
+f105v	3	heldout	311				4	3	6
+f105v	3	heldout	312				8	7	9
+f105v	3	heldout	313				6	6	9
+f105v	3	heldout	314				2	1	1
+f105v	3	heldout	315				14	8	20
+f105v	3	heldout	316				4	4	7
+f105v	3	heldout	317				3	3	5
+f105v	3	heldout	318				3	3	8
+f105v	3	heldout	319				3	3	6
+f105v	3	heldout	320				1	1	2
+f105v	3	heldout	321				1	1	1
+f105v	3	heldout	322				5	5	8
+f105v	3	heldout	323				3	3	5
+f105v	3	heldout	324				6	6	10
+f105v	3	heldout	325				3	2	2
+f105v	3	heldout	326				6	6	7
+f105v	3	heldout	327				3	3	3
+f105v	3	heldout	328				2	2	5
+f105v	3	heldout	329				6	5	6
+f105v	3	heldout	330				3	2	6
+f105v	3	heldout	331				2	2	5
+f105v	3	heldout	332				4	4	4
+f105v	3	heldout	333				6	6	7
+f105v	3	heldout	334				6	6	8
+f105v	3	heldout	335				1	1	1
+f105v	3	heldout	336				6	6	8
+f105v	3	heldout	337				5	5	6
+f105v	3	heldout	338				8	6	8
+f105v	3	heldout	339	doee	4	4	4	4	4
+f105v	3	heldout	340	okcheeo	6	7	3	3	8
+f105v	3	heldout	341	l	1	1	1	1	1
+f105v	3	heldout	342	taiin	5	5	3	3	8
+f105v	3	heldout	343	otcheedy	7	8	4	4	8
+f105v	3	heldout	344	chor	3	4	3	3	5
+f105v	3	heldout	345	aiin	4	4	4	3	5
+f105v	3	heldout	346	odaiin	6	6	7	6	6
+f105v	3	heldout	347	chedy	4	5	3	3	5
+f105v	3	heldout	348	otaiin	6	6	5	4	5
+f105v	3	heldout	349	al	2	2	3	3	3
+f105v	3	heldout	350	kaishd	5	6	6	5	6
+f105v	3	heldout	351				4	4	5
+f105v	3	heldout	352				3	2	5
+f105v	3	heldout	353				6	6	7
+f105v	3	heldout	354				5	5	6
+f105v	3	heldout	355				7	5	8
+f105v	3	heldout	356				6	4	6
+f105v	3	heldout	357				11	10	12
+f105v	3	heldout	358				6	6	8
+f105v	3	heldout	359				3	3	7
+f105v	3	heldout	360				3	2	4
+f105v	3	heldout	361				2	2	5
+f105v	3	heldout	362				4	2	4
+f105v	3	heldout	363				2	2	3
+f105v	3	heldout	364				5	5	7
+f105v	3	heldout	365				7	5	9
+f105v	3	heldout	366				4	4	6
+f105v	3	heldout	367				7	4	6
+f105v	3	heldout	368				7	6	9
+f105v	3	heldout	369				2	2	2
+f105v	3	heldout	370				6	5	5
+f105v	3	heldout	371				4	4	6
+f105v	3	heldout	372				5	5	5
+f105v	3	heldout	373				4	2	3
+f105v	3	heldout	374				4	3	5
+f105v	3	heldout	375				1	1	2
+f105r	3	train	0				2	2	2
+f105r	3	train	1				1	1	2
+f105r	3	train	2				5	4	7
+f105r	3	train	3				11	9	13
+f105r	3	train	4				2	2	5
+f105r	3	train	5				6	5	5
+f105r	3	train	6				5	5	7
+f105r	3	train	7				9	7	9
+f105r	3	train	8				6	4	4
+f105r	3	train	9				7	7	7
+f105r	3	train	10				6	5	6
+f105r	3	train	11				7	7	7
+f105r	3	train	12	dshees	5	6	6	4	6
+f105r	3	train	13	yey	3	3	3	3	3
+f105r	3	train	14	cheey	4	5	3	3	5
+f105r	3	train	16				6	5	5
+f105r	3	train	18				4	4	6
+f105r	3	train	19				5	4	6
+f105r	3	train	20				3	2	2
+f105r	3	train	21	okees	5	5	4	4	5
+f105r	3	train	22	odar	4	4	5	3	5
+f105r	3	train	23	cheody	5	6	4	4	4
+f105r	3	train	24				9	8	11
+f105r	3	train	25				8	6	6
+f105r	3	train	26				10	9	13
+f105r	3	train	27				6	6	7
+f105r	3	train	28				3	3	5
+f105r	3	train	29				3	2	2
+f105r	3	train	30				4	4	6
+f105r	3	train	31				4	4	6
+f105r	3	train	32				5	4	6
+f105r	3	train	33				7	6	9
+f105r	3	train	34				5	4	5
+f105r	3	train	35				4	4	4
+f105r	3	train	36	ykaiin	6	6	7	6	8
+f105r	3	train	38	odaiin	6	6	6	6	6
+f105r	3	train	39	okar	4	4	4	4	5
+f105r	3	train	40	eeeodaiin	9	9	9	9	9
+f105r	3	train	41	yteey	5	5	3	2	5
+f105r	3	train	42	ochedy	5	6	4	4	5
+f105r	3	train	43	qokeeey	7	7	5	5	8
+f105r	3	train	44	oy	2	2	2	2	2
+f105r	3	train	46	qotam	5	5	6	5	7
+f105r	3	train	47				5	5	5
+f105r	3	train	48				4	4	5
+f105r	3	train	49				8	7	9
+f105r	3	train	50				1	1	1
+f105r	3	train	51				4	4	5
+f105r	3	train	52				12	9	12
+f105r	3	train	53				5	4	6
+f105r	3	train	54				5	3	4
+f105r	3	train	55	par	3	3	3	3	3
+f105r	3	train	56	arody	5	5	4	4	4
+f105r	3	train	57	shedeeey	7	8	7	6	6
+f105r	3	train	58	qopchedy	7	8	5	5	7
+f105r	3	train	59	qody	4	4	4	4	6
+f105r	3	train	60	qoteody	7	7	5	4	6
+f105r	3	train	61	aiin	4	4	4	4	4
+f105r	3	train	62	yteody	6	6	5	5	5
+f105r	3	train	63	qokor	5	5	4	3	4
+f105r	3	train	64	olpshedy	7	8	7	5	10
+f105r	3	train	65				11	10	13
+f105r	3	train	66				2	2	2
+f105r	3	train	67				5	5	5
+f105r	3	train	68				4	3	4
+f105r	3	train	69				7	6	8
+f105r	3	train	71				5	4	6
+f105r	3	train	73				6	6	6
+f105r	3	train	74				5	4	6
+f105r	3	train	75				7	6	6
+f105r	3	train	76				6	6	8
+f105r	3	train	77				11	10	14
+f105r	3	train	78				4	3	4
+f105r	3	train	80				5	5	5
+f105r	3	train	81				5	5	5
+f105r	3	train	82				2	2	3
+f105r	3	train	83	oeeolchy	7	8	8	7	8
+f105r	3	train	85	okeey	5	5	6	5	6
+f105r	3	train	86	okchey	5	6	6	6	7
+f105r	3	train	89	daiindy	7	7	9	8	8
+f105r	3	train	90	ytam	4	4	5	4	5
+f105r	3	train	91				10	10	10
+f105r	3	train	92				8	6	8
+f105r	3	train	93				9	6	7
+f105r	3	train	94				10	9	11
+f105r	3	train	95				8	6	6
+f105r	3	train	97				13	11	13
+f105r	3	train	98				4	4	4
+f105r	3	train	99				1	1	1
+f105r	3	train	100				4	3	4
+f105r	3	train	101				8	6	8
+f105r	3	train	102				4	4	7
+f105r	3	train	103				5	5	8
+f105r	3	train	104				6	6	6
+f105r	3	train	105				6	5	8
+f105r	3	train	107				8	6	9
+f105r	3	train	108				5	5	7
+f105r	3	train	109				3	2	2
+f105r	3	train	110				7	7	10
+f105r	3	train	111				3	3	4
+f105r	3	train	112				4	4	5
+f105r	3	train	113				3	3	3
+f105r	3	train	114				5	4	6
+f105r	3	train	115				6	5	5
+f105r	3	train	116				8	5	6
+f105r	3	train	117				6	5	6
+f105r	3	train	118				3	2	3
+f105r	3	train	119				11	10	13
+f105r	3	train	120				4	4	8
+f105r	3	train	121				11	10	15
+f105r	3	train	122				8	7	8
+f105r	3	train	123				7	7	9
+f105r	3	train	124				4	3	5
+f105r	3	train	125				9	8	10
+f105r	3	train	126	lksheey	6	7	3	2	6
+f105r	3	train	127	ol	2	2	2	2	2
+f105r	3	train	128	r	1	1	2	1	1
+f105r	3	train	129	aiin	4	4	4	4	4
+f105r	3	train	130	okeedy	6	6	5	5	7
+f105r	3	train	131	olkeeody	8	8	7	6	8
+f105r	3	train	132	lkaiin	6	6	7	6	8
+f105r	3	train	133	okeeol	6	6	7	5	7
+f105r	3	train	134	oteeol	6	6	6	5	9
+f105r	3	train	135	shod	3	4	4	2	5
+f105r	3	train	136	daiin	5	5	6	5	5
+f105r	3	train	137	aral	4	4	4	3	6
+f105r	3	train	138	yteody	6	6	5	4	8
+f105r	3	train	139	oteeeos	7	7	6	6	9
+f105r	3	train	140	aiin	4	4	4	4	4
+f105r	3	train	141	odal	4	4	5	4	4
+f105r	3	train	142	oiir	4	4	4	3	3
+f105r	3	train	143	okeedy	6	6	6	5	6
+f105r	3	train	144	oral	4	4	4	4	4
+f105r	3	train	146	okeeddl	7	7	4	4	7
+f105r	3	train	147	sheokedy	7	8	8	6	8
+f105r	3	train	148	qokedy	6	6	6	4	9
+f105r	3	train	149				2	2	4
+f105r	3	train	150	kol	3	3	3	3	4
+f105r	3	train	151				3	3	4
+f105r	3	train	152				6	5	6
+f105r	3	train	153				7	5	8
+f105r	3	train	154	okedy	5	5	5	5	5
+f105r	3	train	155				6	5	9
+f105r	3	train	156				5	4	6
+f105r	3	train	157				6	6	6
+f105r	3	train	158				6	5	5
+f105r	3	train	159				6	4	6
+f105r	3	train	160				4	3	6
+f105r	3	train	161				6	6	7
+f105r	3	train	162				4	3	6
+f105r	3	train	163				4	2	6
+f105r	3	train	164				6	5	7
+f105r	3	train	165				5	4	11
+f105r	3	train	166				5	5	7
+f105r	3	train	167				13	12	15
+f105r	3	train	168				4	3	3
+f105r	3	train	169				5	4	7
+f105r	3	train	170				5	5	6
+f105r	3	train	171				5	5	7
+f105r	3	train	172				6	6	12
+f105r	3	train	173				7	7	8
+f105r	3	train	175				1	1	1
+f105r	3	train	176				5	4	5
+f105r	3	train	177				4	4	9
+f105r	3	train	178				7	6	7
+f105r	3	train	179				12	10	14
+f105r	3	train	180				6	5	9
+f105r	3	train	181				5	5	5
+f105r	3	train	182				3	3	3
+f105r	3	train	183				6	6	6
+f105r	3	train	185				7	6	8
+f105r	3	train	186				4	4	4
+f105r	3	train	187	ycheo	4	5	2	2	5
+f105r	3	train	188	lkedy	5	5	3	3	6
+f105r	3	train	189	qoeey	5	5	2	2	5
+f105r	3	train	190	qokedy	6	6	5	5	7
+f105r	3	train	192	saiin	5	5	6	5	6
+f105r	3	train	193	otol	4	4	3	2	6
+f105r	3	train	194	shody	4	5	7	4	5
+f105r	3	train	195	chedy	4	5	5	5	7
+f105r	3	train	196	okaiin	6	6	6	5	6
+f105r	3	train	197	chekaim	6	7	6	5	9
+f105r	3	train	198	olkchokeedy	10	11	9	8	14
+f105r	3	train	199	ypair	5	5	3	2	5
+f105r	3	train	200	opaiin	6	6	6	5	6
+f105r	3	train	201	opail	5	5	5	3	5
+f105r	3	train	202	oteodl	6	6	5	5	8
+f105r	3	train	203	eeol	4	4	4	4	5
+f105r	3	train	204	keey	4	4	2	2	5
+f105r	3	train	205	r	1	1	1	1	1
+f105r	3	train	206	aiin	4	4	3	3	4
+f105r	3	train	207	ylkaiin	7	7	7	7	8
+f105r	3	train	208	am	2	2	2	2	2
+f105r	3	train	209	ols	3	3	3	3	4
+f105r	3	train	210				2	2	2
+f105r	3	train	211				4	2	4
+f105r	3	train	212				3	2	2
+f105r	3	train	213				8	8	9
+f105r	3	train	214				9	5	8
+f105r	3	train	215				3	3	5
+f105r	3	train	216				4	3	4
+f105r	3	train	218				9	8	13
+f105r	3	train	219				8	7	8
+f105r	3	train	220				8	7	10
+f105r	3	train	221				5	3	4
+f105r	3	train	222				6	5	5
+f105r	3	train	223				13	12	12
+f105r	3	train	224	deeedy	6	6	4	4	6
+f105r	3	train	225	cheodkedy	8	9	2	2	7
+f105r	3	train	226	chedy	4	5	2	2	6
+f105r	3	train	227	decthdy	5	7	5	5	8
+f105r	3	train	228	daiiils	7	7	7	6	7
+f105r	3	train	229	airols	6	6	6	6	6
+f105r	3	train	230				4	4	4
+f105r	3	train	231				4	2	6
+f105r	3	train	232				3	3	5
+f105r	3	train	233				8	6	6
+f105r	3	train	234				7	6	10
+f105r	3	train	235				5	4	13
+f105r	3	train	236				7	5	8
+f105r	3	train	237				11	10	14
+f105r	3	train	238				4	4	8
+f105r	3	train	239				5	5	5
+f105r	3	train	240				5	3	5
+f105r	3	train	241				1	1	1
+f105r	3	train	242				3	3	3
+f105r	3	train	243				4	4	6
+f105r	3	train	244				5	4	6
+f105r	3	train	245				9	5	14
+f105r	3	train	246				5	4	4
+f105r	3	train	247				4	4	6
+f105r	3	train	248				2	2	5
+f105r	3	train	249				3	3	6
+f105r	3	train	250				6	6	6
+f105r	3	train	251				6	6	6
+f105r	3	train	252				4	4	5
+f105r	3	train	253				7	3	7
+f105r	3	train	254				6	5	9
+f105r	3	train	255				5	4	5
+f105r	3	train	256				6	5	8
+f105r	3	train	258				5	4	6
+f105r	3	train	259				3	3	4
+f105r	3	train	260				5	4	5
+f105r	3	train	261				5	4	9
+f105r	3	train	262				8	6	10
+f105r	3	train	263				6	6	7
+f105r	3	train	264				6	5	9
+f105r	3	train	265				7	5	5
+f105r	3	train	266				2	2	3
+f105r	3	train	267				6	6	6
+f105r	3	train	268				6	5	5
+f105r	3	train	269				2	2	3
+f105r	3	train	270				6	4	4
+f105r	3	train	271				13	10	16
+f105r	3	train	272				6	5	10
+f105r	3	train	273				5	5	7
+f105r	3	train	274				1	1	1
+f105r	3	train	277	shx	2	3	3	3	4
+f105r	3	train	278				3	2	2
+f105r	3	train	279				1	1	3
+f105r	3	train	280				4	4	5
+f105r	3	train	281				4	3	5
+f105r	3	train	282	lkedy	5	5	3	3	4
+f105r	3	train	283	lkar	4	4	5	5	7
+f105r	3	train	284	chedy	4	5	4	3	5
+f105r	3	train	285				11	10	14
+f105r	3	train	286	or	2	2	2	2	3
+f105r	3	train	288				4	4	8
+f105r	3	train	289				3	3	5
+f105r	3	train	290				4	4	7
+f105r	3	train	291				4	2	5
+f105r	3	train	292				5	5	8
+f105r	3	train	293				3	2	5
+f105r	3	train	294				6	4	8
+f105r	3	train	295				4	4	5
+f105r	3	train	296				7	7	9
+f105r	3	train	297				5	4	4
+f105r	3	train	298				9	7	10
+f105r	3	train	299				3	1	5
+f105r	3	train	301				4	4	9
+f105r	3	train	302				2	2	4
+f105r	3	train	303				5	4	6
+f105r	3	train	304				8	7	8
+f105r	3	train	305				6	6	9
+f105r	3	train	306				7	7	8
+f105r	3	train	307				6	5	6
+f105r	3	train	308				5	3	8
+f105r	3	train	309				8	7	9
+f105r	3	train	310				4	3	4
+f105r	3	train	311				3	2	2
+f105r	3	train	312				12	12	17
+f105r	3	train	313				5	4	6
+f105r	3	train	314				7	5	7
+f105r	3	train	315				4	3	8
+f105r	3	train	316				4	4	7
+f105r	3	train	317				3	3	3
+f105r	3	train	318				2	2	3
+f105r	3	train	319				4	3	6
+f105r	3	train	320				7	6	8
+f105r	3	train	321				10	8	14
+f105r	3	train	322				6	4	6
+f105r	3	train	324				5	5	9
+f105r	3	train	325				8	5	12
+f105r	3	train	326				6	4	9
+f105r	3	train	327				13	10	15
+f105r	3	train	329				8	7	9
+f105r	3	train	330	otoiir	6	6	7	5	7
+f105r	3	train	331	chedaiin	7	8	6	6	8
+f105r	3	train	332	otair	5	5	6	4	8
+f105r	3	train	333	otaly	5	5	5	5	6
+f112r	3	train	1				2	2	2
+f112r	3	train	3				2	2	5
+f112r	3	train	4				2	2	3
+f112r	3	train	5				1	1	4
+f112r	3	train	6				1	1	1
+f112r	3	train	7				3	2	2
+f112r	3	train	8				2	1	1
+f112r	3	train	9				1	1	1
+f112r	3	train	11				5	5	9
+f112r	3	train	12				2	2	2
+f112r	3	train	13				1	1	1
+f112r	3	train	16				1	1	1
+f112r	3	train	17				2	1	1
+f112r	3	train	18				2	1	2
+f112r	3	train	19				1	1	1
+f112r	3	train	20				2	2	4
+f112r	3	train	21				1	1	1
+f112r	3	train	22				4	4	4
+f112r	3	train	23				4	3	3
+f112r	3	train	24				5	4	7
+f112r	3	train	25				6	5	7
+f112r	3	train	26				2	2	2
+f112r	3	train	27				6	6	6
+f112r	3	train	29				1	1	1
+f112r	3	train	30				2	2	2
+f112r	3	train	31				8	7	8
+f112r	3	train	32				1	1	1
+f112r	3	train	33				9	8	9
+f112r	3	train	34				3	3	4
+f112r	3	train	35				6	6	8
+f112r	3	train	36				6	6	8
+f112r	3	train	37				6	6	8
+f112r	3	train	38				4	3	5
+f112r	3	train	39				5	4	4
+f112r	3	train	40				6	6	9
+f112r	3	train	41				7	7	9
+f112r	3	train	42				6	6	7
+f112r	3	train	43				4	3	5
+f112r	3	train	44				8	8	11
+f112r	3	train	45				7	7	7
+f112r	3	train	46				9	8	11
+f112r	3	train	47				5	5	7
+f112r	3	train	48				4	4	5
+f112r	3	train	49				4	4	7
+f112r	3	train	50				4	4	5
+f112r	3	train	51				2	2	2
+f112r	3	train	52				5	5	5
+f112r	3	train	53				1	1	1
+f112r	3	train	54				1	1	1
+f112r	3	train	55				1	1	1
+f112r	3	train	56	oteedy	6	6	6	5	5
+f112r	3	train	57	okeey	5	5	6	6	7
+f112r	3	train	58				11	10	16
+f112r	3	train	59	olkeedy	7	7	7	7	8
+f112r	3	train	60	oteeyoram	9	9	10	10	13
+f112r	3	train	61				4	4	5
+f112r	3	train	62				8	8	10
+f112r	3	train	63				1	1	2
+f112r	3	train	64				4	4	5
+f112r	3	train	65				1	1	1
+f112r	3	train	66				4	4	4
+f112r	3	train	67				5	5	6
+f112r	3	train	68				1	1	2
+f112r	3	train	69				3	3	3
+f112r	3	train	70				12	9	10
+f112r	3	train	71				8	6	6
+f112r	3	train	72				1	1	1
+f112r	3	train	73				6	5	7
+f112r	3	train	74				4	4	4
+f112r	3	train	75				6	6	10
+f112r	3	train	76				5	5	5
+f112r	3	train	77				6	6	9
+f112r	3	train	78				7	7	8
+f112r	3	train	79				2	2	2
+f112r	3	train	81				6	5	6
+f112r	3	train	82				2	2	3
+f112r	3	train	83	qokeey	6	6	5	5	7
+f112r	3	train	84				5	5	8
+f112r	3	train	85				1	1	1
+f112r	3	train	86				11	8	11
+f112r	3	train	87	qokchy	5	6	4	4	6
+f112r	3	train	88				5	4	4
+f112r	3	train	89				1	1	1
+f112r	3	train	90	dair	4	4	6	5	6
+f112r	3	train	91	al	2	2	2	2	4
+f112r	3	train	92	chedy	4	5	5	5	5
+f112r	3	train	93	qodain	6	6	8	6	8
+f112r	3	train	94	dam	3	3	4	3	3
+f112r	3	train	95				5	5	7
+f112r	3	train	96				6	5	6
+f112r	3	train	97				4	4	5
+f112r	3	train	98				5	5	6
+f112r	3	train	99				4	4	6
+f112r	3	train	100				6	4	4
+f112r	3	train	101				1	1	1
+f112r	3	train	103				5	5	7
+f112r	3	train	104				1	1	1
+f112r	3	train	105				1	1	1
+f112r	3	train	106				1	1	1
+f112r	3	train	107				2	1	1
+f112r	3	train	108				1	1	1
+f112r	3	train	109				8	7	7
+f112r	3	train	110				1	1	1
+f112r	3	train	111				1	1	1
+f112r	3	train	112				6	6	8
+f112r	3	train	113				4	3	4
+f112r	3	train	114				7	6	7
+f112r	3	train	115				6	5	7
+f112r	3	train	116				7	7	7
+f112r	3	train	117				6	5	7
+f112r	3	train	118				3	2	2
+f112r	3	train	119				10	8	9
+f112r	3	train	120				4	4	4
+f112r	3	train	121				4	3	6
+f112r	3	train	122				5	4	7
+f112r	3	train	123				5	4	6
+f112r	3	train	124				8	6	8
+f112r	3	train	125				4	4	6
+f112r	3	train	126				7	6	7
+f112r	3	train	127				1	1	1
+f112r	3	train	128				8	8	9
+f112r	3	train	129				5	4	4
+f112r	3	train	130				6	5	6
+f112r	3	train	131				10	9	13
+f112r	3	train	132				12	10	15
+f112r	3	train	133				2	2	2
+f112r	3	train	134				4	4	5
+f112r	3	train	135				10	9	13
+f112r	3	train	136				12	10	13
+f112r	3	train	137				5	3	5
+f112r	3	train	138	solol	5	5	6	6	6
+f112r	3	train	139				7	4	5
+f112r	3	train	140	shol	3	4	4	3	4
+f112r	3	train	141	qokeey	6	6	4	3	4
+f112r	3	train	142	qokeeey	7	7	5	4	6
+f112r	3	train	143	qokedain	8	8	9	7	10
+f112r	3	train	144	otain	5	5	5	5	6
+f112r	3	train	145				6	6	10
+f112r	3	train	146				2	2	2
+f112r	3	train	147				3	3	4
+f112r	3	train	148				2	2	2
+f112r	3	train	149				3	3	3
+f112r	3	train	150				6	5	6
+f112r	3	train	151				4	4	5
+f112r	3	train	152				2	2	3
+f112r	3	train	153				3	3	4
+f112r	3	train	154				3	3	3
+f112r	3	train	155				4	4	5
+f112r	3	train	156				4	3	6
+f112r	3	train	158				2	2	2
+f112r	3	train	159				2	2	2
+f112r	3	train	160	saiin	5	5	4	4	4
+f112r	3	train	161	al	2	2	3	3	3
+f112r	3	train	162	key	3	3	4	3	4
+f112r	3	train	163	chey	3	4	2	2	4
+f112r	3	train	164	dalchd	5	6	7	7	7
+f112r	3	train	165	aiin	4	4	4	4	4
+f112r	3	train	166	okal	4	4	4	4	5
+f112r	3	train	167	chody	4	5	4	3	5
+f112r	3	train	168	chedy	4	5	4	4	5
+f112r	3	train	169	cham	3	4	6	4	5
+f112r	3	train	170				5	4	7
+f112r	3	train	171				1	1	1
+f112r	3	train	172				1	1	1
+f112r	3	train	173				11	10	12
+f112r	3	train	174				7	6	7
+f112r	3	train	175				1	1	2
+f112r	3	train	176				2	2	3
+f112r	3	train	177				5	5	7
+f112r	3	train	178				2	2	3
+f112r	3	train	179				3	3	3
+f112r	3	train	180	qoaiin	6	6	4	4	4
+f112r	3	train	181				2	2	2
+f112r	3	train	182	aiin	4	4	4	4	4
+f112r	3	train	183				1	1	3
+f112r	3	train	184				1	1	1
+f112r	3	train	185				4	4	6
+f112r	3	train	186	keol	4	4	2	2	2
+f112r	3	train	187				10	8	10
+f112r	3	train	188	dal	3	3	4	4	5
+f112r	3	train	189	aiin	4	4	6	5	5
+f112r	3	train	190	ody	3	3	4	3	3
+f112r	3	train	192				9	7	11
+f112r	3	train	193				7	6	6
+f112r	3	train	194				8	7	9
+f112r	3	train	195				4	3	5
+f112r	3	train	196				6	6	8
+f112r	3	train	197				5	5	5
+f112r	3	train	198				6	4	5
+f112r	3	train	199				2	2	2
+f112r	3	train	200				5	4	4
+f112r	3	train	201	qoain	5	5	7	7	8
+f112r	3	train	202	qoiin	5	5	5	5	6
+f112r	3	train	203	olcheedy	7	8	9	7	7
+f112r	3	train	205	teedy	5	5	6	4	6
+f112r	3	train	206				1	1	1
+f112r	3	train	207				3	3	3
+f112r	3	train	208	oteor	5	5	6	6	7
+f112r	3	train	209	octhdy	4	6	10	7	7
+f112r	3	train	210	otychey	6	7	7	7	8
+f112r	3	train	211				1	1	1
+f112r	3	train	212				3	3	4
+f112r	3	train	213				5	4	5
+f112r	3	train	214				5	5	8
+f112r	3	train	215				5	4	8
+f112r	3	train	216				7	7	8
+f112r	3	train	217				7	5	6
+f112r	3	train	218				2	2	2
+f112r	3	train	219				1	1	1
+f112r	3	train	220				6	6	8
+f112r	3	train	221				9	6	7
+f112r	3	train	222				6	4	5
+f112r	3	train	223				8	8	10
+f112r	3	train	224				6	6	7
+f112r	3	train	225				5	4	5
+f112r	3	train	226	tedain	6	6	5	5	8
+f112r	3	train	227	shedy	4	5	5	3	5
+f112r	3	train	228				2	2	2
+f112r	3	train	229				2	2	4
+f112r	3	train	230	ykedy	5	5	4	4	6
+f112r	3	train	231	kedy	4	4	5	5	5
+f112r	3	train	232	chor	3	4	5	4	4
+f112r	3	train	233	aiin	4	4	4	3	5
+f112r	3	train	234				4	4	4
+f112r	3	train	235	chcthy	3	6	6	6	7
+f112r	3	train	236	okey	4	4	4	4	6
+f112r	3	train	237				1	1	1
+f112r	3	train	238				3	2	2
+f112r	3	train	239				3	2	2
+f112r	3	train	241				5	5	6
+f112r	3	train	242				7	6	7
+f112r	3	train	243				5	3	4
+f112r	3	train	244				4	4	7
+f112r	3	train	245				9	8	10
+f112r	3	train	246				4	4	4
+f112r	3	train	247				5	3	4
+f112r	3	train	248				8	7	9
+f112r	3	train	249				8	8	10
+f112r	3	train	250				4	3	3
+f112r	3	train	251				7	5	8
+f112r	3	train	252				1	1	1
+f112r	3	train	253				7	7	7
+f112r	3	train	254				10	8	9
+f112r	3	train	255				8	7	9
+f112r	3	train	257				7	7	7
+f112r	3	train	258				5	5	7
+f112r	3	train	259				7	6	6
+f112r	3	train	260				5	4	5
+f112r	3	train	261				2	2	2
+f112r	3	train	263				4	4	5
+f112r	3	train	264				4	4	4
+f112r	3	train	265				9	7	8
+f112r	3	train	266				5	4	8
+f112r	3	train	267				6	4	4
+f112r	3	train	268				8	7	8
+f112r	3	train	269				5	5	6
+f112r	3	train	270				5	5	7
+f112r	3	train	271				6	6	6
+f112r	3	train	272				1	1	1
+f112r	3	train	273				2	2	2
+f112r	3	train	274				5	5	5
+f112r	3	train	275				2	2	4
+f112r	3	train	276				2	2	2
+f112r	3	train	277				5	4	5
+f112r	3	train	278				8	6	6
+f112r	3	train	279				4	3	4
+f112r	3	train	280				3	3	3
+f112r	3	train	281				5	5	6
+f112r	3	train	282				5	4	5
+f112r	3	train	283				2	2	2
+f112r	3	train	284				5	4	5
+f112r	3	train	285				11	9	10
+f112r	3	train	286				8	6	7
+f112r	3	train	287				7	4	7
+f112r	3	train	288				5	5	6
+f112r	3	train	289				1	1	1
+f112r	3	train	290				6	4	5
+f112r	3	train	291				6	5	6
+f112r	3	train	292				7	6	6
+f112r	3	train	293				5	4	6
+f112r	3	train	295				3	3	3
+f112r	3	train	296				4	4	4
+f112r	3	train	297				2	2	2
+f112r	3	train	298				1	1	2
+f112r	3	train	299				7	7	8
+f112r	3	train	300				9	7	8
+f112r	3	train	301				11	11	13
+f112r	3	train	302				7	6	7
+f112r	3	train	303				2	2	2
+f112r	3	train	304				4	3	3
+f112r	3	train	305				2	2	3
+f112r	3	train	307				1	1	1
+f112r	3	train	308				5	5	5
+f112r	3	train	309				7	7	8
+f112r	3	train	310				6	5	7
+f112r	3	train	311				8	8	8
+f112r	3	train	312				6	5	6
+f112r	3	train	313				6	6	6
+f112r	3	train	314				6	5	5
+f112r	3	train	315				6	5	7
+f112r	3	train	316				6	5	7
+f112r	3	train	317				8	7	8
+f112r	3	train	318				11	11	12
+f112r	3	train	319				6	5	7
+f112r	3	train	320				9	7	7
+f112r	3	train	321				4	4	5
+f112r	3	train	322				3	3	3
+f112r	3	train	323				7	4	5
+f112r	3	train	324				5	5	5
+f112r	3	train	325				6	5	5
+f112r	3	train	326				4	3	6
+f112r	3	train	327				4	4	6
+f112r	3	train	328				5	4	6
+f112r	3	train	329				1	1	1
+f112r	3	train	330				4	4	4
+f112r	3	train	331				5	3	5
+f112r	3	train	332				6	5	6
+f112r	3	train	333				3	2	2
+f112r	3	train	334				2	2	2
+f112r	3	train	335				7	6	6
+f112r	3	train	336				1	1	1
+f112r	3	train	337	sain	4	4	5	4	4
+f112r	3	train	338	ol	2	2	2	2	2
+f112r	3	train	339	checkhy	4	7	3	3	6
+f112r	3	train	340	olchain	6	7	9	7	8
+f112r	3	train	341	okeey	5	5	5	4	5
+f112r	3	train	342	olam	4	4	4	4	4
+f112r	3	train	344				6	6	7
+f112r	3	train	345				7	5	6
+f112r	3	train	346				6	6	7
+f112r	3	train	347				6	5	6
+f112r	3	train	348				8	7	7
+f112r	3	train	349				6	4	8
+f112r	3	train	350				7	4	6
+f112r	3	train	351				8	4	4
+f112r	3	train	352				2	2	2
+f112r	3	train	353				5	4	5
+f112r	3	train	354				3	3	4
+f112r	3	train	355				3	3	3
+f112r	3	train	356				6	6	8
+f112r	3	train	357				9	7	8
+f112r	3	train	358				7	6	8
+f112r	3	train	359				6	6	7
+f112r	3	train	360				1	1	2
+f112r	3	train	361				4	3	5
+f112r	3	train	362				5	4	4
+f112r	3	train	363				7	5	6
+f112r	3	train	364				5	5	8
+f112r	3	train	365				6	4	6
+f112r	3	train	366				7	6	7
+f112r	3	train	367				5	3	3
+f112r	3	train	368				5	4	4
+f112r	3	train	369				8	8	8
+f112r	3	train	371				4	4	4
+f112r	3	train	372				7	6	7
+f112r	3	train	373				6	5	5
+f112r	3	train	374				4	4	4
+f112r	3	train	375				4	4	5
+f112r	3	train	376				7	7	7
+f112r	3	train	377				4	4	5
+f112r	3	train	378				5	5	8
+f112r	3	train	379				1	1	1
+f112r	3	train	380				5	5	5
+f112r	3	train	381				9	7	7
+f112r	3	train	382				6	5	6
+f112r	3	train	383				3	1	4
+f112r	3	train	384				1	1	1
+f112r	3	train	385				5	4	4
+f112r	3	train	386				2	1	1
+f112r	3	train	387				6	5	5
+f112r	3	train	388				5	5	5
+f112r	3	train	389				1	1	1
+f112r	3	train	390				6	5	5
+f112r	3	train	391				7	7	7
+f112r	3	train	392				7	6	8
+f112r	3	train	393				11	8	9
+f112r	3	train	394				5	4	6
+f112r	3	train	395				4	2	2
+f112r	3	train	396				7	4	4
+f112r	3	train	397				1	1	1
+f112r	3	train	398				5	4	4
+f112r	3	train	399				1	1	1
+f112r	3	train	400				1	1	1
+f112r	3	train	401				3	2	2
+f112r	3	train	402				5	4	5
+f112r	3	train	403				7	5	6
+f112r	3	train	404				1	1	1
+f112r	3	train	405				6	5	7
+f112r	3	train	406				2	2	2
+f112r	3	train	407				2	2	3
+f112r	3	train	408				2	2	2
+f112r	3	train	409				7	6	6
+f112r	3	train	410				7	5	6
+f112r	3	train	411				10	7	7
+f112r	3	train	412				3	2	2
+f112r	3	train	413				5	3	3
+f112r	3	train	414				5	3	6
+f112r	3	train	415				7	6	6
+f112r	3	train	417				6	3	5
+f112r	3	train	418				4	4	4
+f112r	3	train	419				1	1	1
+f112r	3	train	420				5	5	7
+f112r	3	train	421				8	6	7
+f112r	3	train	422				6	5	6
+f112r	3	train	423				1	1	1
+f112r	3	train	424				1	1	1
+f112r	3	train	425				6	4	4
+f112r	3	train	426				4	4	5
+f112r	3	train	427				2	2	2
+f112r	3	train	428				3	3	3
+f112r	3	train	429				3	3	3
+f112r	3	train	430				1	1	1
+f112r	3	train	431				11	8	11
+f112r	3	train	432				5	3	3
+f112r	3	train	433				7	6	10
+f112r	3	train	434				3	3	4
+f112r	3	train	435				4	4	4
+f112r	3	train	436				7	5	5
+f112r	3	train	437				12	7	8
+f112r	3	train	438				3	3	3
+f112r	3	train	439				5	5	5
+f112r	3	train	440				4	3	3
+f112r	3	train	441				4	4	4
+f112r	3	train	442				1	1	1
+f112r	3	train	443				11	8	11
+f112r	3	train	444				9	6	7
+f112r	3	train	445				5	5	8
+f112r	3	train	446				6	5	5
+f112r	3	train	448				4	3	3
+f112r	3	train	449				4	3	3
+f112r	3	train	450				4	4	5
+f112r	3	train	451				3	2	2
+f112r	3	train	452				5	4	4
+f112r	3	train	453				7	4	4
+f103v	3	train	0				2	2	2
+f103v	3	train	1				3	3	3
+f103v	3	train	2				8	6	7
+f103v	3	train	3				5	4	5
+f103v	3	train	4				2	2	2
+f103v	3	train	5				7	7	7
+f103v	3	train	6				16	12	13
+f103v	3	train	7				10	10	10
+f103v	3	train	8				5	5	8
+f103v	3	train	9				8	7	8
+f103v	3	train	10				2	2	2
+f103v	3	train	11				1	1	1
+f103v	3	train	12				2	1	1
+f103v	3	train	13				3	2	2
+f103v	3	train	14				1	1	1
+f103v	3	train	15				5	4	6
+f103v	3	train	16				6	5	5
+f103v	3	train	17				6	6	8
+f103v	3	train	18				6	5	6
+f103v	3	train	19				6	4	4
+f103v	3	train	20				3	3	6
+f103v	3	train	21				3	2	7
+f103v	3	train	22				15	10	14
+f103v	3	train	23	qok	3	3	5	4	4
+f103v	3	train	24	or	2	2	2	2	2
+f103v	3	train	25	chedy	4	5	5	5	5
+f103v	3	train	26	qokey	5	5	4	4	5
+f103v	3	train	27	dar	3	3	4	3	3
+f103v	3	train	28	chcthy	3	6	5	4	8
+f103v	3	train	29	char	3	4	5	4	4
+f103v	3	train	30	qoty	4	4	6	4	5
+f103v	3	train	31	shdy	3	4	4	3	3
+f103v	3	train	32	okeedy	6	6	5	5	6
+f103v	3	train	33	qokeey	6	6	5	4	5
+f103v	3	train	34	qokain	6	6	7	6	7
+f103v	3	train	35				1	1	1
+f103v	3	train	36				2	1	1
+f103v	3	train	37				1	1	1
+f103v	3	train	38				2	1	1
+f103v	3	train	39				6	5	6
+f103v	3	train	40				6	5	6
+f103v	3	train	41				7	7	7
+f103v	3	train	42				8	6	7
+f103v	3	train	43				6	6	7
+f103v	3	train	44				4	2	4
+f103v	3	train	45				13	10	12
+f103v	3	train	46				4	4	5
+f103v	3	train	47				6	5	7
+f103v	3	train	48				6	5	8
+f103v	3	train	49				8	7	8
+f103v	3	train	50				7	6	7
+f103v	3	train	51				3	3	5
+f103v	3	train	52				9	9	10
+f103v	3	train	53				5	5	5
+f103v	3	train	54				6	4	4
+f103v	3	train	55				5	4	5
+f103v	3	train	56				3	3	3
+f103v	3	train	57				4	4	5
+f103v	3	train	58				5	5	6
+f103v	3	train	59				4	3	4
+f103v	3	train	61				6	5	6
+f103v	3	train	62				6	5	9
+f103v	3	train	63				5	4	5
+f103v	3	train	64				5	5	6
+f103v	3	train	65				6	4	4
+f103v	3	train	66				3	3	4
+f103v	3	train	67				3	3	4
+f103v	3	train	68				3	3	4
+f103v	3	train	69				5	5	7
+f103v	3	train	70				5	5	5
+f103v	3	train	71				5	5	6
+f103v	3	train	72				5	5	5
+f103v	3	train	73				5	4	4
+f103v	3	train	74				7	7	8
+f103v	3	train	75				10	8	9
+f103v	3	train	76				6	5	7
+f103v	3	train	77				6	5	6
+f103v	3	train	78				4	3	4
+f103v	3	train	79				6	6	7
+f103v	3	train	80				4	4	5
+f103v	3	train	81				9	7	8
+f103v	3	train	82				8	7	9
+f103v	3	train	83				10	9	10
+f103v	3	train	84				6	6	6
+f103v	3	train	85				7	6	8
+f103v	3	train	86				7	6	8
+f103v	3	train	87				4	4	7
+f103v	3	train	88				2	2	2
+f103v	3	train	89				4	4	4
+f103v	3	train	90				6	6	7
+f103v	3	train	91				5	5	7
+f103v	3	train	92				4	3	5
+f103v	3	train	93				6	5	5
+f103v	3	train	94				5	5	7
+f103v	3	train	95				10	8	8
+f103v	3	train	96				4	4	4
+f103v	3	train	97				6	4	5
+f103v	3	train	98				10	9	12
+f103v	3	train	99				3	3	7
+f103v	3	train	100				7	6	8
+f103v	3	train	101				3	3	3
+f103v	3	train	102				8	7	10
+f103v	3	train	103				5	5	6
+f103v	3	train	104				3	3	5
+f103v	3	train	105				6	5	6
+f103v	3	train	106				4	3	5
+f103v	3	train	107				15	12	14
+f103v	3	train	108				16	13	17
+f103v	3	train	109				6	5	7
+f103v	3	train	110				4	3	4
+f103v	3	train	111				4	2	4
+f103v	3	train	112				5	4	4
+f103v	3	train	113				4	4	5
+f103v	3	train	114				7	6	7
+f103v	3	train	115				7	5	6
+f103v	3	train	116				3	3	3
+f103v	3	train	117				6	6	6
+f103v	3	train	118				5	4	4
+f103v	3	train	119				7	5	6
+f103v	3	train	120				3	3	6
+f103v	3	train	121				1	1	5
+f103v	3	train	122				2	1	2
+f103v	3	train	123				6	5	7
+f103v	3	train	124				5	4	5
+f103v	3	train	125				5	3	4
+f103v	3	train	126				8	6	6
+f103v	3	train	127				6	5	7
+f103v	3	train	128				4	4	7
+f103v	3	train	129				17	13	14
+f103v	3	train	130	tchedal	6	7	5	5	7
+f103v	3	train	131				3	1	2
+f103v	3	train	133	lchdy	4	5	5	5	6
+f103v	3	train	134				4	4	5
+f103v	3	train	135				3	3	3
+f103v	3	train	136	olchey	5	6	5	5	5
+f103v	3	train	137	lcheody	6	7	6	5	7
+f103v	3	train	138	tedy	4	4	4	4	4
+f103v	3	train	139	otain	5	5	5	5	7
+f103v	3	train	140	otain	5	5	5	5	7
+f103v	3	train	141				5	5	6
+f103v	3	train	142				4	4	4
+f103v	3	train	143				6	3	8
+f103v	3	train	144				3	3	6
+f103v	3	train	145				2	2	3
+f103v	3	train	146				4	4	6
+f103v	3	train	147				5	5	7
+f103v	3	train	148				6	6	6
+f103v	3	train	149				4	4	6
+f103v	3	train	150				2	2	5
+f103v	3	train	151				1	1	2
+f103v	3	train	152				4	4	7
+f103v	3	train	153				5	4	5
+f103v	3	train	154				4	3	6
+f103v	3	train	155				9	8	10
+f103v	3	train	156				4	4	5
+f103v	3	train	157				6	5	7
+f103v	3	train	158				6	5	7
+f103v	3	train	159				3	3	3
+f103v	3	train	160				3	2	4
+f103v	3	train	161				6	5	6
+f103v	3	train	162				6	4	5
+f103v	3	train	163				6	5	5
+f103v	3	train	164				5	5	7
+f103v	3	train	165				6	6	8
+f103v	3	train	166				8	7	7
+f103v	3	train	167				11	8	15
+f103v	3	train	168				6	4	8
+f103v	3	train	169				3	2	5
+f103v	3	train	170				11	10	12
+f103v	3	train	171				4	3	7
+f103v	3	train	172				4	3	4
+f103v	3	train	173				5	5	6
+f103v	3	train	174				4	3	7
+f103v	3	train	175				5	4	6
+f103v	3	train	176				6	6	6
+f103v	3	train	177				5	5	7
+f103v	3	train	178				6	5	5
+f103v	3	train	179				4	4	6
+f103v	3	train	180				6	6	6
+f103v	3	train	181				4	4	7
+f103v	3	train	182				4	3	4
+f103v	3	train	183				5	5	7
+f103v	3	train	184				5	5	7
+f103v	3	train	185				7	5	6
+f103v	3	train	186				7	4	7
+f103v	3	train	187				3	2	3
+f103v	3	train	188				8	8	10
+f103v	3	train	189				3	3	3
+f103v	3	train	190				4	4	7
+f103v	3	train	191				4	3	6
+f103v	3	train	192				6	5	10
+f103v	3	train	193				12	12	13
+f103v	3	train	194				5	5	6
+f103v	3	train	195				5	4	5
+f103v	3	train	197				5	5	7
+f103v	3	train	198				1	1	1
+f103v	3	train	199				3	2	2
+f103v	3	train	200				3	3	4
+f103v	3	train	201				4	4	6
+f103v	3	train	202				3	3	5
+f103v	3	train	203				4	4	5
+f103v	3	train	204				6	5	6
+f103v	3	train	205				2	2	2
+f103v	3	train	206				2	2	2
+f103v	3	train	207				4	4	5
+f103v	3	train	208				3	3	5
+f103v	3	train	209				3	3	4
+f103v	3	train	210				3	3	5
+f103v	3	train	211				5	4	6
+f103v	3	train	212				3	3	3
+f103v	3	train	213				3	3	4
+f103v	3	train	214				4	4	4
+f103v	3	train	215				4	4	6
+f103v	3	train	216				8	7	7
+f103v	3	train	217				5	5	6
+f103v	3	train	218				9	9	9
+f103v	3	train	219	sain	4	4	5	4	4
+f103v	3	train	220	olkeeey	7	7	7	6	6
+f103v	3	train	221	qokan	5	5	5	4	5
+f103v	3	train	222	oteedy	6	6	7	6	7
+f103v	3	train	223	qotain	6	6	6	5	8
+f103v	3	train	224	otal	4	4	6	6	6
+f103v	3	train	225	oty	3	3	3	3	5
+f103v	3	train	226	opar	4	4	4	4	5
+f103v	3	train	227	aram	4	4	3	3	4
+f103v	3	train	228	oteeam	6	6	5	5	8
+f103v	3	train	229	yteey	5	5	2	2	5
+f103v	3	train	230	qokeey	6	6	5	5	6
+f103v	3	train	231	sheety	5	6	5	4	6
+f103v	3	train	232	oteey	5	5	5	4	6
+f103v	3	train	233	lshedy	5	6	6	4	4
+f103v	3	train	234	oteaiin	7	7	7	6	9
+f103v	3	train	235	fcheody	6	7	3	3	6
+f103v	3	train	236	arar	4	4	3	3	3
+f103v	3	train	237	okeey	5	5	2	2	5
+f103v	3	train	238	okeey	5	5	3	3	3
+f103v	3	train	239	lchedy	5	6	4	4	5
+f103v	3	train	240	oteal	5	5	2	2	2
+f103v	3	train	241	lpar	4	4	5	4	7
+f103v	3	train	242	otedy	5	5	8	6	6
+f103v	3	train	243	qotar	5	5	5	5	5
+f103v	3	train	244	otaryly	7	7	6	6	7
+f103v	3	train	245				4	4	4
+f103v	3	train	246				1	1	7
+f103v	3	train	247				5	4	6
+f103v	3	train	249				7	7	10
+f103v	3	train	250				5	5	7
+f103v	3	train	251				2	2	3
+f103v	3	train	252				16	11	14
+f103v	3	train	253				2	2	2
+f103v	3	train	254				5	5	7
+f103v	3	train	255				2	2	4
+f103v	3	train	256				8	7	7
+f103v	3	train	257				4	2	3
+f103v	3	train	258				7	7	8
+f103v	3	train	259				9	7	10
+f103v	3	train	260				7	5	8
+f103v	3	train	261				9	8	10
+f103v	3	train	262				13	12	23
+f103v	3	train	263				4	4	7
+f103v	3	train	264				5	4	4
+f103v	3	train	265				5	5	6
+f103v	3	train	266				5	4	7
+f103v	3	train	267				2	2	3
+f103v	3	train	268				2	2	5
+f103v	3	train	269				1	1	1
+f103v	3	train	270				1	1	4
+f103v	3	train	271				6	5	6
+f103v	3	train	272				5	4	7
+f103v	3	train	273				4	4	5
+f103v	3	train	274				4	4	8
+f103v	3	train	275				5	5	5
+f103v	3	train	276				6	5	7
+f103v	3	train	277				11	9	9
+f103v	3	train	278				3	3	5
+f103v	3	train	279				9	8	10
+f103v	3	train	280				8	8	9
+f103v	3	train	281				2	2	4
+f103v	3	train	282				4	4	5
+f103v	3	train	283				7	6	6
+f103v	3	train	285	lkeey	5	5	7	6	6
+f103v	3	train	286	qokain	6	6	6	5	6
+f103v	3	train	287	okey	4	4	3	3	6
+f103v	3	train	288	okaiin	6	6	6	6	6
+f103v	3	train	289	cheody	5	6	6	6	7
+f103v	3	train	290	otey	4	4	5	5	5
+f103v	3	train	291	shdpchy	5	7	8	5	8
+f103v	3	train	292	opchey	5	6	6	4	8
+f103v	3	train	293	oly	3	3	3	3	3
+f103v	3	train	294				5	5	5
+f103v	3	train	295				3	3	5
+f103v	3	train	296				2	2	2
+f103v	3	train	297				5	4	4
+f103v	3	train	298				8	5	7
+f103v	3	train	299				5	4	6
+f103v	3	train	300				4	3	7
+f103v	3	train	301				4	4	6
+f103v	3	train	302				4	4	4
+f103v	3	train	303				4	4	5
+f103v	3	train	304				5	5	6
+f103v	3	train	305				4	4	5
+f103v	3	train	306				5	4	6
+f103v	3	train	307				5	5	5
+f103v	3	train	308				4	3	5
+f103v	3	train	309				4	4	7
+f103v	3	train	310				6	5	5
+f103v	3	train	311				5	4	5
+f103v	3	train	312				5	4	4
+f103v	3	train	313	saiin	5	5	4	4	4
+f103v	3	train	314	shey	3	4	5	4	4
+f103v	3	train	315	qokeey	6	6	6	6	9
+f103v	3	train	316	oshey	4	5	6	4	5
+f103v	3	train	317	olshedy	6	7	7	7	7
+f103v	3	train	318	olshey	5	6	5	4	6
+f103v	3	train	319	qokain	6	6	2	2	5
+f103v	3	train	320	ol	2	2	2	2	2
+f103v	3	train	321	shey	3	4	4	3	4
+f103v	3	train	322	qokeshe	6	7	5	4	8
+f103v	3	train	323	lsheok	5	6	8	6	9
+f103v	3	train	324	shdy	3	4	2	2	5
+f103v	3	train	325	qcphey	4	6	4	4	7
+f103v	3	train	326	chetydar	7	8	6	6	7
+f103v	3	train	327				2	2	5
+f103v	3	train	328				5	5	6
+f103v	3	train	329				2	2	2
+f103v	3	train	330				1	1	5
+f103v	3	train	331				4	4	4
+f103v	3	train	332				4	4	5
+f103v	3	train	333				5	5	7
+f103v	3	train	335	keeolshey	8	9	6	6	6
+f103v	3	train	336				7	6	9
+f103v	3	train	337				4	4	5
+f103v	3	train	338				6	5	8
+f103v	3	train	339				3	2	2
+f103v	3	train	340				2	2	2
+f103v	3	train	341				14	11	16
+f103v	3	train	342	oty	3	3	3	3	5
+f103v	3	train	343	lchdy	4	5	5	5	5
+f103v	3	train	344	yteey	5	5	4	4	6
+f103v	3	train	345	sheal	4	5	3	3	5
+f103v	3	train	346	shey	3	4	1	1	3
+f103v	3	train	347	qoain	5	5	5	5	6
+f103v	3	train	348	ol	2	2	2	2	2
+f103v	3	train	349	keey	4	4	3	3	5
+f103v	3	train	350	qokaiin	7	7	5	5	6
+f103v	3	train	351	shckhy	3	6	4	3	6
+f103v	3	train	352	lchedy	5	6	5	5	6
+f103v	3	train	353	rain	4	4	6	4	4
+f103v	3	train	354				3	3	6
+f103v	3	train	355				3	3	5
+f103v	3	train	356				5	4	6
+f103v	3	train	357				6	5	5
+f103v	3	train	358				4	3	3
+f103v	3	train	359				4	4	5
+f103v	3	train	360				3	3	3
+f103v	3	train	361				4	4	5
+f103v	3	train	362				4	4	5
+f103v	3	train	363				3	2	3
+f103v	3	train	364				5	4	5
+f103v	3	train	365				4	3	3
+f103v	3	train	366				3	3	4
+f103v	3	train	367				4	4	6
+f103v	3	train	368				5	5	7
+f103v	3	train	369	rar	3	3	2	2	5
+f103v	3	train	370	arol	4	4	5	2	3
+f103v	3	train	371				12	9	12
+f103v	3	train	372				3	2	3
+f103v	3	train	373	chckhey	4	7	5	5	5
+f103v	3	train	374	qokaiin	7	7	4	4	5
+f103v	3	train	375	shckhy	3	6	6	5	6
+f103v	3	train	376	shtal	4	5	3	2	5
+f103v	3	train	377				12	8	11
+f103v	3	train	378	lkeedy	6	6	4	4	5
+f103v	3	train	379	chdy	3	4	3	3	4
+f103v	3	train	380	lchedy	5	6	5	5	5
+f103v	3	train	381	qkain	5	5	3	3	7
+f103v	3	train	382	shey	3	4	5	5	5
+f103v	3	train	383	ar	2	2	2	2	2
+f103v	3	train	384	ar	2	2	1	1	1
+f103v	3	train	385	oky	3	3	3	3	4
+f103v	3	train	386	rain	4	4	4	4	4
+f103v	3	train	387	chckhy	3	6	2	2	6
+f103v	3	train	388	shedy	4	5	6	5	5
+f103v	3	train	389	qokeory	7	7	5	4	6
+f103v	3	train	390	lteedy	6	6	8	7	7
+f103v	3	train	391	ro	2	2	3	2	2
+f103v	3	train	392	okey	4	4	4	4	4
+f103v	3	train	393	ol	2	2	3	2	2
+f103v	3	train	394	cheey	4	5	3	2	5
+f103v	3	train	395	lcheey	5	6	2	2	4
+f103v	3	train	396	lkain	5	5	6	5	7
+f103v	3	train	397	shckhy	3	6	4	3	5
+f103v	3	train	398	sheckhy	4	7	11	10	12
+f103v	3	train	399	or	2	2	3	3	3
+f103v	3	train	400	ain	3	3	3	3	3
+f103v	3	train	401				2	2	2
+f103v	3	train	402	oly	3	3	4	4	4
+f103v	3	train	403				4	4	7
+f103v	3	train	404				4	3	3
+f103v	3	train	405				4	4	8
+f103v	3	train	407				3	3	6
+f103v	3	train	408				5	5	5
+f103v	3	train	409				4	4	5
+f103v	3	train	410				4	3	3
+f103v	3	train	411				8	6	6
+f103v	3	train	412				5	5	5
+f66r	5	heldout	0				3	3	3
+f66r	5	heldout	1				4	3	3
+f66r	5	heldout	2				1	1	1
+f66r	5	heldout	4				5	5	5
+f66r	5	heldout	5				5	3	6
+f66r	5	heldout	6				10	8	9
+f66r	5	heldout	7				13	8	10
+f66r	5	heldout	8				8	7	7
+f66r	5	heldout	9				9	6	8
+f66r	5	heldout	10				6	4	6
+f66r	5	heldout	11				3	2	2
+f66r	5	heldout	12				9	7	8
+f66r	5	heldout	13				1	1	1
+f66r	5	heldout	14				4	4	5
+f66r	5	heldout	15				6	4	6
+f66r	5	heldout	16				7	6	8
+f66r	5	heldout	17				6	4	6
+f66r	5	heldout	18				6	4	5
+f66r	5	heldout	19				7	6	9
+f66r	5	heldout	20				6	4	7
+f66r	5	heldout	21				5	4	4
+f66r	5	heldout	22				2	2	2
+f66r	5	heldout	23				11	7	9
+f66r	5	heldout	24				6	4	4
+f66r	5	heldout	25				2	1	1
+f66r	5	heldout	26				9	6	7
+f66r	5	heldout	27				7	6	6
+f66r	5	heldout	28				11	8	12
+f66r	5	heldout	29				4	4	5
+f66r	5	heldout	31				4	3	5
+f66r	5	heldout	32				2	2	2
+f66r	5	heldout	34				11	7	8
+f66r	5	heldout	35				7	5	5
+f66r	5	heldout	36				2	1	1
+f66r	5	heldout	37				1	1	1
+f66r	5	heldout	38				4	3	3
+f66r	5	heldout	39				2	2	2
+f66r	5	heldout	40				4	3	4
+f66r	5	heldout	41				4	4	8
+f66r	5	heldout	42				3	3	4
+f66r	5	heldout	43				5	5	5
+f66r	5	heldout	44				7	5	10
+f66r	5	heldout	45				3	3	6
+f66r	5	heldout	46				3	2	3
+f66r	5	heldout	47				5	3	4
+f66r	5	heldout	48				3	3	3
+f66r	5	heldout	49				9	6	6
+f66r	5	heldout	50				6	5	7
+f66r	5	heldout	51				3	3	4
+f66r	5	heldout	53				10	7	9
+f66r	5	heldout	54				6	5	6
+f66r	5	heldout	55				5	4	5
+f66r	5	heldout	56				5	4	4
+f66r	5	heldout	57				4	2	4
+f66r	5	heldout	58				8	7	8
+f66r	5	heldout	59				6	5	5
+f66r	5	heldout	60				13	9	9
+f66r	5	heldout	61				1	1	1
+f66r	5	heldout	62				6	6	8
+f66r	5	heldout	63				8	7	8
+f66r	5	heldout	65				5	4	7
+f66r	5	heldout	66				7	4	6
+f66r	5	heldout	67				6	6	6
+f66r	5	heldout	68				10	6	7
+f66r	5	heldout	69				13	7	11
+f66r	5	heldout	70				7	4	5
+f66r	5	heldout	71				9	8	8
+f66r	5	heldout	73				11	10	10
+f66r	5	heldout	74				5	5	5
+f66r	5	heldout	75				1	1	2
+f66r	5	heldout	76				8	6	9
+f66r	5	heldout	77				4	4	4
+f66r	5	heldout	78				7	5	5
+f66r	5	heldout	79				7	6	7
+f66r	5	heldout	80				8	5	6
+f66r	5	heldout	81				8	7	7
+f66r	5	heldout	82				8	6	6
+f66r	5	heldout	83				7	4	5
+f66r	5	heldout	84				4	3	3
+f66r	5	heldout	85				2	1	1
+f66r	5	heldout	86				12	9	9
+f66r	5	heldout	87				3	3	3
+f66r	5	heldout	88				10	6	7
+f66r	5	heldout	89				7	4	7
+f66r	5	heldout	90				7	4	5
+f66r	5	heldout	91				11	6	9
+f66r	5	heldout	92				9	5	7
+f66r	5	heldout	93				5	5	5
+f66r	5	heldout	94				8	5	6
+f66r	5	heldout	95				13	7	7
+f66r	5	heldout	96				5	4	5
+f66r	5	heldout	97				5	4	5
+f66r	5	heldout	98				2	1	1
+f66r	5	heldout	99				2	2	2
+f66r	5	heldout	100				5	3	5
+f66r	5	heldout	101				7	4	7
+f66r	5	heldout	102				10	7	11
+f66r	5	heldout	103				5	3	8
+f66r	5	heldout	104				9	9	9
+f66r	5	heldout	105				13	9	9
+f66r	5	heldout	106				7	7	10
+f66r	5	heldout	107				5	4	5
+f66r	5	heldout	108				10	5	8
+f66r	5	heldout	109				7	6	7
+f66r	5	heldout	110				7	7	8
+f66r	5	heldout	111				8	8	9
+f66r	5	heldout	112				8	4	7
+f66r	5	heldout	113				2	1	1
+f66r	5	heldout	114				3	3	4
+f66r	5	heldout	115				5	4	5
+f66r	5	heldout	116				2	1	1
+f66r	5	heldout	117				7	5	5
+f66r	5	heldout	118				10	6	7
+f66r	5	heldout	119				11	8	8
+f66r	5	heldout	120				9	8	8
+f66r	5	heldout	121				3	3	5
+f66r	5	heldout	122				4	4	4
+f66r	5	heldout	123				9	7	7
+f66r	5	heldout	125				4	4	6
+f66r	5	heldout	126				7	5	7
+f66r	5	heldout	127				1	1	1
+f66r	5	heldout	128				7	5	5
+f66r	5	heldout	129				4	3	3
+f66r	5	heldout	130				1	1	2
+f66r	5	heldout	131				2	2	2
+f66r	5	heldout	132				6	5	6
+f66r	5	heldout	133				11	6	6
+f66r	5	heldout	134				6	5	5
+f66r	5	heldout	135				3	2	2
+f66r	5	heldout	136				4	3	3
+f66r	5	heldout	137				7	6	7
+f66r	5	heldout	138				7	5	7
+f66r	5	heldout	139				1	1	1
+f66r	5	heldout	140				6	4	4
+f66r	5	heldout	141				14	14	14
+f66r	5	heldout	142				9	9	12
+f66r	5	heldout	143				6	6	7
+f66r	5	heldout	144				6	4	4
+f66r	5	heldout	145				7	4	4
+f66r	5	heldout	146				1	1	1
+f66r	5	heldout	147				13	11	11
+f66r	5	heldout	148				1	1	1
+f66r	5	heldout	149				4	3	6
+f66r	5	heldout	150				11	10	12
+f66r	5	heldout	151				3	3	4
+f66r	5	heldout	152				5	4	4
+f66r	5	heldout	153				3	3	3
+f66r	5	heldout	154				7	6	7
+f66r	5	heldout	155				4	3	4
+f66r	5	heldout	156				13	8	8
+f66r	5	heldout	157				2	1	1
+f66r	5	heldout	158				4	3	4
+f66r	5	heldout	159				8	7	11
+f66r	5	heldout	160				8	6	7
+f66r	5	heldout	161				5	4	4
+f66r	5	heldout	162				2	1	1
+f66r	5	heldout	163				1	1	1
+f66r	5	heldout	164				3	3	3
+f66r	5	heldout	165				1	1	1
+f66r	5	heldout	166				6	5	8
+f66r	5	heldout	167				6	4	7
+f66r	5	heldout	168				7	6	6
+f66r	5	heldout	169				7	5	8
+f66r	5	heldout	170				12	7	9
+f66r	5	heldout	171				4	2	2
+f66r	5	heldout	172				6	4	5
+f66r	5	heldout	173				6	5	5
+f66r	5	heldout	174				14	10	11
+f66r	5	heldout	175				11	8	10
+f66r	5	heldout	176				18	12	13
+f66r	5	heldout	177				4	3	7
+f66r	5	heldout	179	qokeedar	8	8	6	4	6
+f66r	5	heldout	180				5	4	4
+f66r	5	heldout	181				10	7	8
+f66r	5	heldout	182	qokeedy	7	7	10	7	9
+f66r	5	heldout	183	qokal	5	5	7	6	6
+f66r	5	heldout	184	okedy	5	5	5	4	6
+f66r	5	heldout	185	qokshd	5	6	8	5	6
+f66r	5	heldout	186				6	5	6
+f66r	5	heldout	187				7	4	6
+f66r	5	heldout	188				6	5	5
+f66r	5	heldout	190				4	4	4
+f66r	5	heldout	191				5	3	3
+f66r	5	heldout	192				6	6	7
+f66r	5	heldout	193				11	9	10
+f66r	5	heldout	194				8	6	7
+f66r	5	heldout	195				10	8	8
+f66r	5	heldout	196				4	4	4
+f66r	5	heldout	197				1	1	1
+f66r	5	heldout	198				3	2	5
+f66r	5	heldout	199				7	6	9
+f66r	5	heldout	200				4	3	3
+f66r	5	heldout	201				3	3	3
+f66r	5	heldout	202				7	6	8
+f66r	5	heldout	203				8	5	5
+f66r	5	heldout	204				2	1	1
+f66r	5	heldout	205				2	2	2
+f66r	5	heldout	207				7	5	7
+f66r	5	heldout	208				5	3	3
+f66r	5	heldout	209				4	4	5
+f66r	5	heldout	210				2	2	2
+f66r	5	heldout	211				7	5	7
+f66r	5	heldout	212				7	5	5
+f66r	5	heldout	213				3	3	5
+f66r	5	heldout	214				5	4	4
+f66r	5	heldout	215				8	5	5
+f66r	5	heldout	216				7	4	7
+f66r	5	heldout	217				4	4	4
+f66r	5	heldout	218				6	5	5
+f66r	5	heldout	219				5	3	4
+f66r	5	heldout	220				5	5	5
+f66r	5	heldout	221				7	5	5
+f66r	5	heldout	222				1	1	2
+f66r	5	heldout	223				5	4	7
+f66r	5	heldout	224				3	3	4
+f66r	5	heldout	225				3	2	3
+f66r	5	heldout	226				1	1	2
+f66r	5	heldout	227				7	5	6
+f66r	5	heldout	228				8	7	11
+f66r	5	heldout	229				3	3	3
+f66r	5	heldout	230				1	1	1
+f66r	5	heldout	231				3	3	3
+f66r	5	heldout	232				7	5	9
+f66r	5	heldout	233				13	8	10
+f66r	5	heldout	234				5	4	4
+f66r	5	heldout	235				1	1	1
+f66r	5	heldout	236				6	5	8
+f66r	5	heldout	237				6	4	6
+f66r	5	heldout	238				10	8	8
+f66r	5	heldout	239				10	5	7
+f66r	5	heldout	240				10	9	11
+f66r	5	heldout	241				8	6	7
+f66r	5	heldout	242				5	3	5
+f66r	5	heldout	243				1	1	2
+f66r	5	heldout	244				8	6	7
+f66r	5	heldout	245				11	8	11
+f66r	5	heldout	246				15	11	13
+f66r	5	heldout	247				4	4	8
+f66r	5	heldout	248				5	2	3
+f66r	5	heldout	249				5	5	6
+f66r	5	heldout	250				6	4	4
+f66r	5	heldout	251				1	1	1
+f66r	5	heldout	252				10	7	7
+f66r	5	heldout	253				6	6	7
+f66r	5	heldout	254				1	1	1
+f66r	5	heldout	255				8	6	7
+f66r	5	heldout	256				7	4	5
+f66r	5	heldout	257				13	7	8
+f66r	5	heldout	258				10	7	9
+f66r	5	heldout	259				11	8	9
+f66r	5	heldout	260				8	7	8
+f66r	5	heldout	261				12	8	12
+f66r	5	heldout	262				10	7	7
+f66r	5	heldout	263				1	1	2
+f66r	5	heldout	264				5	3	3
+f66r	5	heldout	265				3	3	3
+f66r	5	heldout	266				5	5	5
+f66r	5	heldout	267				1	1	1
+f66r	5	heldout	268				10	7	11
+f66r	5	heldout	269				21	14	16
+f66r	5	heldout	270				4	3	4
+f66r	5	heldout	271				8	6	8
+f66r	5	heldout	272				13	7	8
+f66r	5	heldout	273				6	4	4
+f66r	5	heldout	274				4	4	5
+f66r	5	heldout	275				1	1	1
+f66r	5	heldout	276				7	6	6
+f66r	5	heldout	277				10	7	9
+f66r	5	heldout	278				7	4	6
+f66r	5	heldout	279				5	4	5
+f66r	5	heldout	280				6	4	5
+f66r	5	heldout	281				7	6	7
+f66r	5	heldout	282				11	5	6
+f66r	5	heldout	283				8	5	9
+f66r	5	heldout	285				3	2	2
+f66r	5	heldout	286	ykeeody	7	7	5	5	6
+f66r	5	heldout	287	sheocthy	5	8	6	3	7
+f66r	5	heldout	288				7	5	8
+f66r	5	heldout	289				10	6	8
+f66r	5	heldout	290	lshedy	5	6	7	5	5
+f66r	5	heldout	291	chokeey	6	7	6	6	7
+f66r	5	heldout	292	chekey	5	6	5	4	5
+f66r	5	heldout	293	chey	3	4	3	3	3
+f66r	5	heldout	294				5	4	6
+f66r	5	heldout	295				2	1	1
+f66r	5	heldout	296				3	3	3
+f66r	5	heldout	297				10	9	10
+f66r	5	heldout	298				7	5	6
+f66r	5	heldout	299				7	5	6
+f66r	5	heldout	300				2	1	1
+f66r	5	heldout	301				5	4	4
+f66r	5	heldout	302				6	6	7
+f66r	5	heldout	303				5	4	5
+f66r	5	heldout	304				9	7	8
+f66r	5	heldout	306	shedy	4	5	3	3	4
+f66r	5	heldout	307	otchedy	6	7	5	4	5
+f66r	5	heldout	308	oteochey	7	8	6	5	6
+f66r	5	heldout	309	tolchedy	7	8	10	9	10
+f66r	5	heldout	310	lsheody	6	7	10	6	9
+f66r	5	heldout	311	qoky	4	4	6	5	5
+f66r	5	heldout	312				13	9	10
+f66r	5	heldout	313				5	4	6
+f66r	5	heldout	314				7	4	6
+f66r	5	heldout	316				5	4	5
+f66r	5	heldout	317				2	1	3
+f66r	5	heldout	318				7	6	10
+f66r	5	heldout	319				7	6	7
+f66r	5	heldout	320				10	8	9
+f66r	5	heldout	321				4	3	4
+f66r	5	heldout	322				8	5	6
+f66r	5	heldout	323				6	5	6
+f66r	5	heldout	324				8	4	5
+f66r	5	heldout	325	daiin	5	5	5	5	6
+f66r	5	heldout	326				9	7	8
+f66r	5	heldout	327	qocthedy	6	8	4	4	8
+f66r	5	heldout	328	qokedy	6	6	7	4	8
+f66r	5	heldout	329				8	4	7
+f66r	5	heldout	330	qokaly	6	6	7	7	7
+f66r	5	heldout	331	shcthy	3	6	6	5	5
+f66r	5	heldout	332	qotal	5	5	6	5	5
+f66r	5	heldout	333				8	7	10
+f66r	5	heldout	334				4	4	4
+f66r	5	heldout	335				4	4	4
+f66r	5	heldout	337				3	3	3
+f48r	5	train	0				2	2	5
+f48r	5	train	1				11	9	9
+f48r	5	train	2				13	11	12
+f48r	5	train	3				5	5	6
+f48r	5	train	4				8	8	8
+f48r	5	train	5				10	7	8
+f48r	5	train	6				8	6	7
+f48r	5	train	7				7	7	7
+f48r	5	train	8				10	7	7
+f48r	5	train	9	daiin	5	5	5	5	5
+f48r	5	train	10	yteeol	6	6	6	4	5
+f48r	5	train	11				14	11	12
+f48r	5	train	12				3	2	2
+f48r	5	train	13	qotedy	6	6	6	6	7
+f48r	5	train	14	chtaiin	6	7	9	7	8
+f48r	5	train	15				13	11	14
+f48r	5	train	16				1	1	1
+f48r	5	train	17	okain	5	5	6	4	6
+f48r	5	train	18	ckhy	2	4	6	6	6
+f48r	5	train	19				8	8	8
+f48r	5	train	20				12	11	13
+f48r	5	train	21				14	10	12
+f48r	5	train	22				3	3	3
+f48r	5	train	23				6	4	5
+f48r	5	train	24				1	1	1
+f48r	5	train	25				4	4	4
+f48r	5	train	26				3	3	3
+f48r	5	train	27				5	4	4
+f48r	5	train	28				6	5	7
+f48r	5	train	29				10	7	8
+f48r	5	train	30				4	4	4
+f48r	5	train	31				14	11	12
+f48r	5	train	32				6	4	7
+f48r	5	train	33				6	6	7
+f48r	5	train	34				3	3	6
+f48r	5	train	35				21	18	23
+f48r	5	train	36				6	5	5
+f48r	5	train	37				7	6	8
+f48r	5	train	38				9	9	11
+f48r	5	train	39	teol	4	4	6	4	4
+f48r	5	train	40	okeody	6	6	7	5	8
+f48r	5	train	41	cheockhy	5	8	9	8	8
+f48r	5	train	42				1	1	2
+f48r	5	train	43				7	6	6
+f48r	5	train	44	octhey	4	6	5	5	6
+f48r	5	train	45	cholkar	6	7	10	8	8
+f48r	5	train	46	aiin	4	4	5	5	6
+f48r	5	train	47	cthar	3	5	5	4	5
+f48r	5	train	48	od	2	2	2	2	2
+f48r	5	train	49	alshey	5	6	5	4	5
+f48r	5	train	50	lkeedy	6	6	8	8	8
+f48r	5	train	51	ytchedy	6	7	9	7	10
+f48r	5	train	52	qokedy	6	6	7	6	7
+f48r	5	train	53	lotal	5	5	11	8	8
+f48r	5	train	54	qotol	5	5	6	6	7
+f48r	5	train	55	otal	4	4	4	4	5
+f48r	5	train	56	ched	3	4	3	3	4
+f48r	5	train	57	o	1	1	1	1	1
+f48r	5	train	58	key	3	3	2	2	2
+f48r	5	train	59	ykeey	5	5	5	5	5
+f48r	5	train	60	daldy	5	5	8	6	6
+f48r	5	train	61	tocthy	4	6	6	4	5
+f48r	5	train	62	qokeol	6	6	5	4	7
+f48r	5	train	63	yteedy	6	6	6	5	6
+f48r	5	train	64	lolkeol	7	7	7	6	8
+f48r	5	train	65	otolches	7	8	8	7	9
+f48r	5	train	66	al	2	2	3	3	3
+f48r	5	train	67	ar	2	2	3	2	2
+f48r	5	train	69	okedy	5	5	5	4	5
+f48r	5	train	70	okam	4	4	4	3	4
+f48r	5	train	71				9	8	11
+f48r	5	train	72				4	3	4
+f48r	5	train	73				6	5	6
+f48r	5	train	74				8	7	8
+f48r	5	train	75				5	4	5
+f48r	5	train	77				14	7	9
+f48r	5	train	78				7	7	8
+f48r	5	train	79				5	4	4
+f48r	5	train	80				7	6	7
+f48r	5	train	81				10	9	9
+f57r	5	train	0				1	1	1
+f57r	5	train	1				11	11	11
+f57r	5	train	2				10	7	8
+f57r	5	train	3				3	1	1
+f57r	5	train	4				7	4	4
+f57r	5	train	5				9	6	7
+f57r	5	train	6				6	4	4
+f57r	5	train	7				7	4	5
+f57r	5	train	8				2	2	2
+f57r	5	train	9				8	6	6
+f57r	5	train	11				2	2	2
+f57r	5	train	12				3	3	3
+f57r	5	train	13				6	5	5
+f57r	5	train	14				8	6	6
+f57r	5	train	15				4	3	5
+f57r	5	train	16				7	6	7
+f57r	5	train	17				2	1	1
+f57r	5	train	18				5	3	3
+f57r	5	train	19				8	6	6
+f57r	5	train	20				11	8	9
+f57r	5	train	21				1	1	1
+f57r	5	train	23				10	5	7
+f57r	5	train	24				3	2	3
+f57r	5	train	25				5	4	6
+f57r	5	train	26				1	1	3
+f57r	5	train	27				8	7	7
+f57r	5	train	28				3	2	2
+f57r	5	train	29				5	4	4
+f57r	5	train	30				4	2	3
+f57r	5	train	31				3	2	2
+f57r	5	train	32				1	1	1
+f57r	5	train	33				1	1	1
+f57r	5	train	34				3	1	2
+f57r	5	train	35				13	7	10
+f57r	5	train	36				8	5	6
+f57r	5	train	37				10	7	7
+f57r	5	train	38				7	7	7
+f57r	5	train	39				9	7	8
+f57r	5	train	40				12	9	10
+f57r	5	train	41	dchos	4	5	7	5	6
+f57r	5	train	42	cheocthy	5	8	12	10	10
+f57r	5	train	43	cheody	5	6	10	7	7
+f57r	5	train	44	qoteeody	8	8	12	8	11
+f57r	5	train	45	octhody	5	7	14	9	10
+f57r	5	train	46	okeeody	7	7	9	7	8
+f57r	5	train	47	chteody	6	7	11	7	8
+f57r	5	train	48				3	2	2
+f57r	5	train	49				3	3	3
+f57r	5	train	50				4	3	6
+f57r	5	train	51				8	7	7
+f57r	5	train	52				10	8	9
+f57r	5	train	53				3	1	2
+f57r	5	train	54				4	1	1
+f57r	5	train	55				10	6	7
+f57r	5	train	56				7	5	6
+f57r	5	train	57				8	6	8
+f57r	5	train	58				7	6	9
+f57r	5	train	59				8	7	8
+f57r	5	train	60				3	2	2
+f57r	5	train	61				4	4	4
+f57r	5	train	62				5	2	2
+f57r	5	train	63				4	4	4
+f57r	5	train	64				8	5	5
+f57r	5	train	65				3	3	4
+f57r	5	train	66	sheedy	5	6	11	9	9
+f57r	5	train	67				6	4	5
+f57r	5	train	68	chetey	5	6	8	6	7
+f57r	5	train	69				6	6	6
+f57r	5	train	70	shekey	5	6	9	7	7
+f57r	5	train	71				9	7	10
+f57r	5	train	72	okaldg	6	6	8	4	6
+f57r	5	train	73				7	5	6
+f57r	5	train	74				8	6	7
+f57r	5	train	75				7	5	6
+f57r	5	train	76				12	7	7
+f57r	5	train	77				8	4	7
+f57r	5	train	78				6	5	5
+f57r	5	train	79				5	4	4
+f57r	5	train	80				2	2	3
+f57r	5	train	81				2	1	1
+f57r	5	train	82				8	7	10
+f57r	5	train	83				3	3	3
+f57r	5	train	84				5	3	3
+f57r	5	train	85				5	4	4
+f57r	5	train	86				8	6	8
+f57r	5	train	87				6	4	6
+f57r	5	train	88				2	2	2
+f57r	5	train	89				9	6	10
+f57r	5	train	90				4	2	4
+f57r	5	train	91				7	6	7
+f57r	5	train	92				7	6	7
+f57r	5	train	93				1	1	2
+f57r	5	train	94				1	1	1
+f57r	5	train	95				6	4	4
+f57r	5	train	96				1	1	1
+f57r	5	train	97				6	4	5
+f57r	5	train	98				1	1	1
+f57r	5	train	99	dshedy	5	6	9	7	7
+f57r	5	train	100	ctechy	5	6	8	4	6
+f57r	5	train	101	cphedam	5	7	10	8	9

@@ -1,0 +1,234 @@
+{
+  "status": "fixed diagnostic; independent result audit pending",
+  "seed": 2026101931,
+  "draws": 1000,
+  "freeze": {
+    "lab//runs//db-s-core-return-20261019//run.py": "b52c57df0b98c31dcb77f4b225294b590241bddb7fed7c2d11a6b310c8abb1fb",
+    "lab//runs//db-s-core-return-20261019//PREREG.md": "562fec06a663f8551cc0f0020dcd2efb1c315bcbc336519d128573c7729c5624",
+    ".//scoreboard//metrics_new.py": "a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed",
+    ".//n1_habit_table.py": "a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1",
+    ".//s87_core_layer_genre.py": "d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db",
+    ".//data//translit//ZL3b_eva.meta.json": "ce233477803a865365e53418f5e2b78c324fa0ea124b0aa46a9eb6a5189f7ef0",
+    ".//data//translit//RF1b.meta.json": "c7d9bccba99b2610b9d80b4ce5f26f7d1ab54c12ec2364d0423d6b89f51da9df",
+    ".//data//translit//IT2a.meta.json": "0d0d3e758d1e308b0aee4b4d006f90cbc8090c081e0fcb3327de6734ac5e5fdf",
+    "lab//runs//db-s-core-return-20261019//fixture.json": "e9271657a2d76cbda24453d2b141c81b4e19d92ca9bf98a2bbcb803020fcb206"
+  },
+  "results": [
+    {
+      "source": "ZL3b_eva",
+      "unit": "word",
+      "tokens": 22500,
+      "pages": 173,
+      "lines": 2888,
+      "first_page": "f1r",
+      "last_page": "f96r",
+      "analytic_line_null_count": 7.839916741324854,
+      "page_token": {
+        "observed_count": 6,
+        "pairs": 2715,
+        "observed_rate": 0.0022099447513812156,
+        "null_mean_count": 22.98,
+        "null_mean_rate": 0.008464088397790056,
+        "ratio": 0.2610966057441253,
+        "null_count_interval95": [
+          14.0,
+          34.0
+        ],
+        "lower_tail_p": 0.000999000999000999
+      },
+      "whole_line": {
+        "observed_count": 6,
+        "pairs": 2715,
+        "observed_rate": 0.0022099447513812156,
+        "null_mean_count": 7.789,
+        "null_mean_rate": 0.002868876611418048,
+        "ratio": 0.7703171138785467,
+        "null_count_interval95": [
+          3.0,
+          13.0
+        ],
+        "lower_tail_p": 0.3246753246753247
+      }
+    },
+    {
+      "source": "ZL3b_eva",
+      "unit": "core",
+      "tokens": 22500,
+      "pages": 173,
+      "lines": 2888,
+      "first_page": "f1r",
+      "last_page": "f96r",
+      "analytic_line_null_count": 60.46531450042878,
+      "page_token": {
+        "observed_count": 64,
+        "pairs": 2715,
+        "observed_rate": 0.023572744014732964,
+        "null_mean_count": 113.145,
+        "null_mean_rate": 0.04167403314917127,
+        "ratio": 0.5656458526669318,
+        "null_count_interval95": [
+          92.975,
+          132.02499999999998
+        ],
+        "lower_tail_p": 0.000999000999000999
+      },
+      "whole_line": {
+        "observed_count": 64,
+        "pairs": 2715,
+        "observed_rate": 0.023572744014732964,
+        "null_mean_count": 60.422,
+        "null_mean_rate": 0.022254880294659298,
+        "ratio": 1.0592168415477807,
+        "null_count_interval95": [
+          47.0,
+          74.0
+        ],
+        "lower_tail_p": 0.7292707292707292
+      }
+    },
+    {
+      "source": "RF1b",
+      "unit": "word",
+      "tokens": 22500,
+      "pages": 175,
+      "lines": 2922,
+      "first_page": "f1r",
+      "last_page": "f99r",
+      "analytic_line_null_count": 7.759294662406685,
+      "page_token": {
+        "observed_count": 7,
+        "pairs": 2747,
+        "observed_rate": 0.0025482344375682563,
+        "null_mean_count": 22.736,
+        "null_mean_rate": 0.008276665453221697,
+        "ratio": 0.3078817733990148,
+        "null_count_interval95": [
+          14.0,
+          33.0
+        ],
+        "lower_tail_p": 0.000999000999000999
+      },
+      "whole_line": {
+        "observed_count": 7,
+        "pairs": 2747,
+        "observed_rate": 0.0025482344375682563,
+        "null_mean_count": 7.909,
+        "null_mean_rate": 0.0028791408809610486,
+        "ratio": 0.8850676444556834,
+        "null_count_interval95": [
+          3.0,
+          13.0
+        ],
+        "lower_tail_p": 0.46153846153846156
+      }
+    },
+    {
+      "source": "RF1b",
+      "unit": "core",
+      "tokens": 22500,
+      "pages": 175,
+      "lines": 2922,
+      "first_page": "f1r",
+      "last_page": "f99r",
+      "analytic_line_null_count": 63.62392459200807,
+      "page_token": {
+        "observed_count": 75,
+        "pairs": 2747,
+        "observed_rate": 0.02730251183108846,
+        "null_mean_count": 111.905,
+        "null_mean_rate": 0.04073716781943939,
+        "ratio": 0.6702113399758723,
+        "null_count_interval95": [
+          90.0,
+          133.0
+        ],
+        "lower_tail_p": 0.000999000999000999
+      },
+      "whole_line": {
+        "observed_count": 75,
+        "pairs": 2747,
+        "observed_rate": 0.02730251183108846,
+        "null_mean_count": 63.582,
+        "null_mean_rate": 0.023145977429923553,
+        "ratio": 1.1795791261677833,
+        "null_count_interval95": [
+          50.0,
+          76.02499999999998
+        ],
+        "lower_tail_p": 0.9660339660339661
+      }
+    },
+    {
+      "source": "IT2a",
+      "unit": "word",
+      "tokens": 22500,
+      "pages": 174,
+      "lines": 2914,
+      "first_page": "f1r",
+      "last_page": "f99r",
+      "analytic_line_null_count": 7.939648475169347,
+      "page_token": {
+        "observed_count": 8,
+        "pairs": 2740,
+        "observed_rate": 0.00291970802919708,
+        "null_mean_count": 23.131,
+        "null_mean_rate": 0.008441970802919708,
+        "ratio": 0.34585621028057584,
+        "null_count_interval95": [
+          14.0,
+          34.0
+        ],
+        "lower_tail_p": 0.001998001998001998
+      },
+      "whole_line": {
+        "observed_count": 8,
+        "pairs": 2740,
+        "observed_rate": 0.00291970802919708,
+        "null_mean_count": 7.965,
+        "null_mean_rate": 0.002906934306569343,
+        "ratio": 1.0043942247332078,
+        "null_count_interval95": [
+          3.0,
+          13.0
+        ],
+        "lower_tail_p": 0.5964035964035964
+      }
+    },
+    {
+      "source": "IT2a",
+      "unit": "core",
+      "tokens": 22500,
+      "pages": 174,
+      "lines": 2914,
+      "first_page": "f1r",
+      "last_page": "f99r",
+      "analytic_line_null_count": 65.73129665747523,
+      "page_token": {
+        "observed_count": 75,
+        "pairs": 2740,
+        "observed_rate": 0.02737226277372263,
+        "null_mean_count": 115.306,
+        "null_mean_rate": 0.042082481751824816,
+        "ratio": 0.6504431686122145,
+        "null_count_interval95": [
+          95.0,
+          136.0
+        ],
+        "lower_tail_p": 0.000999000999000999
+      },
+      "whole_line": {
+        "observed_count": 75,
+        "pairs": 2740,
+        "observed_rate": 0.02737226277372263,
+        "null_mean_count": 65.666,
+        "null_mean_rate": 0.023965693430656933,
+        "ratio": 1.1421435750616757,
+        "null_count_interval95": [
+          51.0,
+          79.02499999999998
+        ],
+        "lower_tail_p": 0.9110889110889111
+      }
+    }
+  ]
+}

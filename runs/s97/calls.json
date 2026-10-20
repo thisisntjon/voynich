@@ -1,0 +1,345 @@
+{
+ "loc_band": [
+  0.9073818633685861,
+  1.049928019378369
+ ],
+ "order_band": {
+  "100": [
+   0.012321,
+   0.092252
+  ],
+  "200": [
+   -0.003465,
+   0.086474
+  ]
+ },
+ "PC1": true,
+ "PC1_seeds": [
+  false,
+  true,
+  true
+ ],
+ "PC2": true,
+ "NC": true,
+ "GATE": true,
+ "CALL_REOPEN_H17_H16": false,
+ "FULL": {
+  "PC2_VOY_IT2a_as_control": true,
+  "NC_augustine_la": false,
+  "REF_cremma_prose_base": false,
+  "C1_cremma_marks_la": false,
+  "C2a_hebrew_abjad": false,
+  "C2b_arabic_abjad": false,
+  "C3a_verbose_la": false,
+  "C3b_verbose_it": false,
+  "C4_sigla_disp_la": false
+ },
+ "desc": {
+  "PC2_VOY_IT2a_as_control": {
+   "role": "gate",
+   "applicable": [
+    "slot"
+   ],
+   "sig": {
+    "slot": "YYYY"
+   },
+   "sig_ok": true,
+   "battery_ok": true,
+   "battery": {
+    "IT2a": 10
+   },
+   "fails": {
+    "slot": []
+   }
+  },
+  "NC_augustine_la": {
+   "role": "gate",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnYY",
+    "slot": "nnnY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "fails": {
+    "identity": [
+     "a_order",
+     "b_Rwithin"
+    ],
+    "slot": [
+     "a_order",
+     "b_Rwithin",
+     "c_Rcross<Rwithin"
+    ],
+    "affix2": [
+     "a_order",
+     "b_Rwithin"
+    ]
+   }
+  },
+  "REF_cremma_prose_base": {
+   "role": "descriptive",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnn",
+    "slot": "Ynnn",
+    "affix2": "nnnn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "fails": {
+    "identity": [
+     "a_order",
+     "b_Rwithin",
+     "c_Rcross<Rwithin",
+     "d_locality"
+    ],
+    "slot": [
+     "b_Rwithin",
+     "c_Rcross<Rwithin",
+     "d_locality"
+    ],
+    "affix2": [
+     "a_order",
+     "b_Rwithin",
+     "c_Rcross<Rwithin",
+     "d_locality"
+    ]
+   }
+  },
+  "C1_cremma_marks_la": {
+   "role": "control",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnn",
+    "slot": "nnnn",
+    "affix2": "nnYn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "fails": {
+    "identity": [
+     "a_order",
+     "b_Rwithin",
+     "c_Rcross<Rwithin",
+     "d_locality"
+    ],
+    "slot": [
+     "a_order",
+     "b_Rwithin",
+     "c_Rcross<Rwithin",
+     "d_locality"
+    ],
+    "affix2": [
+     "a_order",
+     "b_Rwithin",
+     "d_locality"
+    ]
+   }
+  },
+  "C2a_hebrew_abjad": {
+   "role": "control",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnYn",
+    "slot": "nnYn",
+    "affix2": "nnYn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 1,
+    "RF1b": 1,
+    "IT2a": 0
+   },
+   "fails": {
+    "identity": [
+     "a_order",
+     "b_Rwithin",
+     "d_locality"
+    ],
+    "slot": [
+     "a_order",
+     "b_Rwithin",
+     "d_locality"
+    ],
+    "affix2": [
+     "a_order",
+     "b_Rwithin",
+     "d_locality"
+    ]
+   }
+  },
+  "C2b_arabic_abjad": {
+   "role": "control",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnYY",
+    "slot": "nnYY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "fails": {
+    "identity": [
+     "a_order",
+     "b_Rwithin"
+    ],
+    "slot": [
+     "a_order",
+     "b_Rwithin"
+    ],
+    "affix2": [
+     "a_order",
+     "b_Rwithin"
+    ]
+   }
+  },
+  "C3a_verbose_la": {
+   "role": "control",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nYYn",
+    "slot": "YnYn",
+    "affix2": "YnYn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "fails": {
+    "identity": [
+     "a_order",
+     "d_locality"
+    ],
+    "slot": [
+     "b_Rwithin",
+     "d_locality"
+    ],
+    "affix2": [
+     "b_Rwithin",
+     "d_locality"
+    ]
+   }
+  },
+  "C3b_verbose_it": {
+   "role": "control",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnYY",
+    "slot": "nnYY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "fails": {
+    "identity": [
+     "a_order",
+     "b_Rwithin"
+    ],
+    "slot": [
+     "a_order",
+     "b_Rwithin"
+    ],
+    "affix2": [
+     "a_order",
+     "b_Rwithin"
+    ]
+   }
+  },
+  "C4_sigla_disp_la": {
+   "role": "control",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnn",
+    "slot": "YnYn",
+    "affix2": "YnYn"
+   },
+   "sig_ok": false,
+   "battery_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "fails": {
+    "identity": [
+     "a_order",
+     "b_Rwithin",
+     "c_Rcross<Rwithin",
+     "d_locality"
+    ],
+    "slot": [
+     "b_Rwithin",
+     "d_locality"
+    ],
+    "affix2": [
+     "b_Rwithin",
+     "d_locality"
+    ]
+   }
+  }
+ },
+ "verdict": "no hard-way control reaches the signature + battery: F-40 gains an external-genre line"
+}

@@ -1,0 +1,12 @@
+# r9 pre-registration, voynich-91 (Roach). Frozen at (clock): 2026-10-18 13:35:47 PDT
+# Queue: <team-comms> item r9 (regional affix drift).
+# Fixture run 1 13:28:05 PDT rev0: OK but fitted scale 10 vs planted 5. Revision 1 (1 of max 2): r_x3 added to drift fit. Fixture run 2 13:31:56 PDT: OK, drift (i) 12/15 PASS, scale 5.0 (planted 5); line-held not PASS ((ii) 13).
+# Profile per stream (S1 prefix, suffix; positions>=2): q1 R_w(1), q2 R_w(1)-R_w(3), q3 C, q4 X (r6), q5 S(1), q6 mean S(2..4), q7 SX(1) cross-page; S = line-pair affix share / quire P(same).
+# Generators (train quires): (i) drift theta_n=(1-lam)theta_n-1+lam Dir(beta p), grid lam{.05,.1,.2,.3,.5,.7,1} beta{1,2,5,10,20,50,200} fit to (r_w,r_x,r_x3); (ii) line-held; (iii) per-word; (iv) first-order chain.
+# MATCH: all 14 quantities inside [0.5,99.5] percentile envelope of 200 copies. CALL (ZL, 15 LOQO folds): PASS iff (i) >= 8 AND (i) > each of (ii),(iii),(iv). Report median drift scale 1/lam.
+# Controls: planted drift (lam .2, beta 10) must PASS; planted line-held (alpha 3) must not PASS. Latin reported. Whole-text p: 200 shuffles (line/page/quire).
+# Verify: grep -v "^#" r9.prereg.sha256 | tr -d '\r' | sha256sum -c -
+b5a62a57c65a52004c35881c27073dc51e426b45c40954c4571e13f97f51567b  r9.py
+bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc  ../dl_ZL/ZL3b-n.txt
+7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5  ../dl_IT/IT2a-n.txt
+8bae4d88747b318b58ea193f981766fed337ddf613df452c1a06d72c9af75ffd  ../r3/dl_PG18837/pg18837.txt

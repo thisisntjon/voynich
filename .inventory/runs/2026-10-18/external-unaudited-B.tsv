@@ -1,0 +1,12 @@
+path	location	kind	owner	note
+<local-path>	<local-path>	result	roach	r12 word-length rhythm: Voynich-specific positive in-line rhythm NOT HOLDS (Kalevala 15/15)
+<team-comms>	<team-comms>	package	roach	identical copy of r12
+<team-comms>	<team-comms>	package	roach	r12 zip
+lab/codex_lab/incoming/roach_r12_20261018	lab/codex_lab	package	roach	r12 copy in codex_lab
+<team-comms>	<team-comms>	analysis	Daybreak	S107 Llull rhythm/stability (.py/.txt/.json)
+<team-comms>	<team-comms>	analysis	Daybreak	S107 Llull joint lead
+s107_lull_cadence_physical_unit_correction_2026-10-18.md	unstated (<team-comms> or codex_lab)	analysis	Daybreak	S107 physical-unit correction; location not given in the sprawl file
+<team-comms>	<team-comms>	audit	Daybreak	HOLD_BEFORE_FREEZE, six missing requirements (+ .json); audited a pre-stub state
+<team-comms>	<team-comms>	comms	Daybreak	S109 pre-freeze HOLD message
+<team-comms>	<team-comms>	proposal	Daybreak	r13 continuous reference contrast; differs from repo P-50 r13 = s101 replication
+<team-comms>	<team-comms>	analysis	Daybreak	confirms O-059 (15 independent pairs)

@@ -1,0 +1,18 @@
+S18: CREMMA Medii Aevi real-line Latin on the v2 scorer (phase-1.md step s18, audit items 1 and 4 folded)
+run started Sat Oct 17 20:31:00 PDT 2026 (`date`)
+s18_cremma_v2.py sha256=beaffc95052c2985f81957b7f27b4e6974e0293a9448cd6e858fed52ec4c2e54  tools/cremma_to_meta.py sha256=17c8cd39130ca2be09d8f3bb669647e016170f278720c4031fc2f9e02ee7a95b  prereg stub_match=True
+ranges file s15_ranges.json sha256=b995aba64e5baa22524565963d67880287e43e98220a7c3cdd2d136eac6b3fef  scorer scoreboard/run_v2.py sha256=7dfdc9f75de5980a…
+sidecars scored: 54 cremma_* (48 native incl. _marks, 6 _relined8 twins); non-cremma sidecars present and NOT scored (s17's): gib_realline_pooled.meta.json, gib_realline_pooled_relined8.meta.json, italian_dante.meta.json, italian_dante_relined8.meta.json, mhg_nibelungenlied.meta.json, mhg_nibelungenlied_relined8.meta.json, occitan_croisade.meta.json, occitan_croisade_relined8.meta.json, oldfrench_roland.meta.json, oldfrench_roland_relined8.meta.json
+
+=== s19: native minus _relined8 per metric; flag >hw where |diff| exceeds the s15 within_manuscript 95 % half-width (hi95-lo95)/2; n/a where no width ===
+half-widths: jsd_first_fg=0.0355, p_init_enrich=7.0268, m_final_enrich=8.6136, cross_excess_eva=0.0304, x_edge_mi_word=0.0320, x_position_entropy=0.0314, x_moran_I=0.0307, h2=0.0492, sd_len=0.0406, redup_pct=0.1988, types_25k=371.7500
+pool                     | family |   lines n/r |  jsd_first_fg jsd_first_exc   jsd_last_lg  jsd_last_exc p_init_enrich m_final_enrich cross_excess_eva x_edge_mi_word x_position_entropy     x_moran_I       CHARWIN            h2        sd_len     redup_pct     types_25k
+cremma_prose15           | base   |   773/  869 |  +0.0172 <=hw  +0.0115  n/a  +0.0558  n/a  +0.0484  n/a  -0.1500 <=hw  +0.5600 <=hw  -0.0117 <=hw  -0.0026 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000  n/a  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw
+cremma_prose15           | marks  |   773/  869 |  +0.0172 <=hw  +0.0094  n/a  +0.0717  n/a  +0.0603  n/a  -0.1600 <=hw  +0.5300 <=hw  -0.0099 <=hw  -0.0034 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000  n/a  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw
+cremma_c15               | base   |  1398/ 1294 |  +0.0163 <=hw  +0.0124  n/a  +0.0420  n/a  +0.0350  n/a  -0.1700 <=hw  +0.4500 <=hw  -0.0025 <=hw  +0.0021 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000  n/a  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw
+cremma_c15               | marks  |  1398/ 1294 |  +0.0176 <=hw  +0.0132  n/a  +0.0501  n/a  +0.0420  n/a  -0.1700 <=hw  +0.4500 <=hw  -0.0038 <=hw  +0.0017 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000  n/a  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw
+cremma_all               | base   |  2482/ 3141 |  +0.0267 <=hw  +0.0250  n/a  +0.0277  n/a  +0.0254  n/a  -0.0200 <=hw  +0.3100 <=hw  +0.0047 <=hw  +0.0027 <=hw  +0.0000 <=hw  -0.0000 <=hw  +0.0001  n/a  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw
+cremma_all               | marks  |  2482/ 3141 |  +0.0371  >hw  +0.0336  n/a  +0.0399  n/a  +0.0346  n/a  -0.0200 <=hw  +0.5700 <=hw  +0.0048 <=hw  +0.0013 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0001  n/a  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw
+(_marks rows: glyph-unit JSDs; sensitivity only, not comparable to an EVA band without that qualification)
+
+run finished Sat Oct 17 20:36:18 PDT 2026 (`date`)

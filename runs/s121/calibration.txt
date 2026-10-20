@@ -1,0 +1,8 @@
+s121 A0 duplicate-threshold calibration; 2026-10-18T22:09:40; script sha256 3cfb287d4e82dcf0088a82c93a98d8a1b22d1cc4fba1d9fbadabc0f92db907aa
+A0 units 820; mutual top-1 cross-page pairs 133 (same-name 5, precision at no threshold 0.038); cross-page same-name unit pairs 254; units with a same-name partner 258
+  S >= 0.0: pairs 133, precision 0.038
+  S >= 1.0: pairs 133, precision 0.038
+  S >= 2.0: pairs 122, precision 0.033
+  S >= 3.0: pairs 15, precision 0.133
+THRESHOLD=NONE (no threshold reaches precision 0.90 with >= 20 pairs)
+end 2026-10-18T22:09:40

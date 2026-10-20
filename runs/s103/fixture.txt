@@ -1,0 +1,77 @@
+s103 fixture (synthetic plants), Sun Oct 18 13:14:22 PDT 2026
+[fixture M members gate] keyed plants: ljs419 60, sloane4016 60; shared keys |S| = 30
+[fixture M members gate] S = sp0, sp1, sp10, sp11, sp12, sp13, sp14, sp15, sp16, sp17, sp18, sp19, sp2, sp20, sp21, sp22, sp23, sp24, sp25, sp26, sp27, sp28, sp29, sp3, sp4, sp5, sp6, sp7, sp8, sp9
+[fixture M members gate] rep A: MRR=0.9806 null mean=0.0780 q95=0.1125 P=0.0001 top1=58/60 top5=60/60
+[fixture M members gate] rep B: MRR=0.9722 null mean=0.0777 q95=0.1118 P=0.0001 top1=57/60 top5=60/60
+[fixture M members] groups: V = 40 Voynich pages; C (keyed, key not in S) = 60; P (key in S) = 60
+[fixture M members] MDE (one-sided alpha 0.05, power 0.80; from C only, before the Voynich scores):
+   rep A hit1: mean_C=0.7833 mean_P=0.0333 P-C=-0.7500 MDE=0.2109
+   rep A hit5: mean_C=0.9917 mean_P=0.4917 P-C=-0.5000 MDE=0.0328
+   POWER_A (MDE hit1 <= 0.20) = False   (P printed descriptively; self-exclusion bias)
+   rep B hit1: mean_C=0.6833 mean_P=0.0333 P-C=-0.6500 MDE=0.2381
+   rep B hit5: mean_C=0.9750 mean_P=0.4333 P-C=-0.5417 MDE=0.0558
+   POWER_B (MDE hit1 <= 0.20) = False   (P printed descriptively; self-exclusion bias)
+[fixture M members] Voynich vs C (page-permutation null, 10000 perms):
+   rep A hit1: mean_V=0.9750 mean_C=0.7833 d=+0.1917 P=0.0057 z=+2.69  (MDE 0.2109)
+   rep A hit5: mean_V=1.0000 mean_C=0.9917 d=+0.0083 P=0.6056 z=+0.81  (MDE 0.0328)
+   SIGNAL_A = True
+   rep B hit1: mean_V=0.9750 mean_C=0.6833 d=+0.2917 P=0.0002 z=+3.58  (MDE 0.2381)
+   rep B hit5: mean_V=1.0000 mean_C=0.9750 d=+0.0250 P=0.2104 z=+1.44  (MDE 0.0558)
+   SIGNAL_B = True
+   MATCH (SIGNAL_A and SIGNAL_B) = True
+[fixture M members] part-wise mixed: V 0.1000 C 0.5833 d=-0.4833 P_mixed=1.0000
+[fixture M members] repeat share among 4 mixed V pages = 0.5000 null mean 0.0146 P_repeat=0.0292
+   MODE = whole-plant (copying drift)
+   carrier: z hit5 A=+0.81 B=+1.44; hit1 A=+2.69 B=+3.58
+[fixture I invented gate] keyed plants: ljs419 60, sloane4016 60; shared keys |S| = 30
+[fixture I invented gate] S = sp0, sp1, sp10, sp11, sp12, sp13, sp14, sp15, sp16, sp17, sp18, sp19, sp2, sp20, sp21, sp22, sp23, sp24, sp25, sp26, sp27, sp28, sp29, sp3, sp4, sp5, sp6, sp7, sp8, sp9
+[fixture I invented gate] rep A: MRR=0.9806 null mean=0.0780 q95=0.1126 P=0.0001 top1=58/60 top5=60/60
+[fixture I invented gate] rep B: MRR=0.9722 null mean=0.0777 q95=0.1118 P=0.0001 top1=57/60 top5=60/60
+[fixture I invented] groups: V = 40 Voynich pages; C (keyed, key not in S) = 60; P (key in S) = 60
+[fixture I invented] MDE (one-sided alpha 0.05, power 0.80; from C only, before the Voynich scores):
+   rep A hit1: mean_C=0.8000 mean_P=0.0333 P-C=-0.7667 MDE=0.2048
+   rep A hit5: mean_C=0.9917 mean_P=0.4917 P-C=-0.5000 MDE=0.0328
+   POWER_A (MDE hit1 <= 0.20) = False   (P printed descriptively; self-exclusion bias)
+   rep B hit1: mean_C=0.6833 mean_P=0.0333 P-C=-0.6500 MDE=0.2381
+   rep B hit5: mean_C=0.9750 mean_P=0.4333 P-C=-0.5417 MDE=0.0558
+   POWER_B (MDE hit1 <= 0.20) = False   (P printed descriptively; self-exclusion bias)
+[fixture I invented] Voynich vs C (page-permutation null, 10000 perms):
+   rep A hit1: mean_V=0.8500 mean_C=0.8000 d=+0.0500 P=0.3636 z=+0.62  (MDE 0.2048)
+   rep A hit5: mean_V=0.9750 mean_C=0.9917 d=-0.0167 P=0.9418 z=-0.98  (MDE 0.0328)
+   SIGNAL_A = False
+   rep B hit1: mean_V=0.6250 mean_C=0.6833 d=-0.0583 P=0.7959 z=-0.60  (MDE 0.2381)
+   rep B hit5: mean_V=0.9875 mean_C=0.9750 d=+0.0125 P=0.4724 z=+0.62  (MDE 0.0558)
+   SIGNAL_B = False
+   MATCH (SIGNAL_A and SIGNAL_B) = False
+[fixture I invented] part-wise mixed: V 0.6750 C 0.5500 d=+0.1250 P_mixed=0.1478
+[fixture I invented] repeat share among 27 mixed V pages = 0.0000 null mean 0.0076 P_repeat=1.0000
+   MODE = None
+   carrier: z hit5 A=-0.98 B=+0.62; hit1 A=+0.62 B=-0.60
+[fixture D part-chimera gate] keyed plants: ljs419 60, sloane4016 60; shared keys |S| = 30
+[fixture D part-chimera gate] S = sp0, sp1, sp10, sp11, sp12, sp13, sp14, sp15, sp16, sp17, sp18, sp19, sp2, sp20, sp21, sp22, sp23, sp24, sp25, sp26, sp27, sp28, sp29, sp3, sp4, sp5, sp6, sp7, sp8, sp9
+[fixture D part-chimera gate] rep A: MRR=0.9806 null mean=0.0780 q95=0.1123 P=0.0001 top1=58/60 top5=60/60
+[fixture D part-chimera gate] rep B: MRR=0.9722 null mean=0.0777 q95=0.1118 P=0.0001 top1=57/60 top5=60/60
+[fixture D part-chimera] groups: V = 40 Voynich pages; C (keyed, key not in S) = 60; P (key in S) = 60
+[fixture D part-chimera] MDE (one-sided alpha 0.05, power 0.80; from C only, before the Voynich scores):
+   rep A hit1: mean_C=0.8333 mean_P=0.0333 P-C=-0.8000 MDE=0.1908
+   rep A hit5: mean_C=0.9917 mean_P=0.4917 P-C=-0.5000 MDE=0.0328
+   POWER_A (MDE hit1 <= 0.20) = True   (P printed descriptively; self-exclusion bias)
+   rep B hit1: mean_C=0.6833 mean_P=0.0333 P-C=-0.6500 MDE=0.2381
+   rep B hit5: mean_C=0.9750 mean_P=0.4333 P-C=-0.5417 MDE=0.0558
+   POWER_B (MDE hit1 <= 0.20) = False   (P printed descriptively; self-exclusion bias)
+[fixture D part-chimera] Voynich vs C (page-permutation null, 10000 perms):
+   rep A hit1: mean_V=0.5500 mean_C=0.8333 d=-0.2833 P=0.9997 z=-3.09  (MDE 0.1908)
+   rep A hit5: mean_V=0.9625 mean_C=0.9917 d=-0.0292 P=0.9769 z=-1.48  (MDE 0.0328)
+   SIGNAL_A = False
+   rep B hit1: mean_V=0.5750 mean_C=0.6833 d=-0.1083 P=0.9045 z=-1.09  (MDE 0.2381)
+   rep B hit5: mean_V=0.9750 mean_C=0.9750 d=+0.0000 P=0.6938 z=-0.00  (MDE 0.0558)
+   SIGNAL_B = False
+   MATCH (SIGNAL_A and SIGNAL_B) = False
+[fixture D part-chimera] part-wise mixed: V 0.6250 C 0.5500 d=+0.0750 P_mixed=0.2964
+[fixture D part-chimera] repeat share among 25 mixed V pages = 0.8000 null mean 0.2524 P_repeat=0.0001
+   MODE = None
+   carrier: z hit5 A=-1.48 B=-0.00; hit1 A=-3.09 B=-1.09
+FIXTURE gate recovered (both reps, all scenarios) = True
+FIXTURE members detected (MATCH) = True
+FIXTURE invented not matched = True
+FIXTURE disguise: SIGNAL_A=False SIGNAL_B=False p_mixed=0.2964 p_repeat=0.0001 (descriptive)

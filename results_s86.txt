@@ -1,0 +1,207 @@
+s86 -- Line-Sticky Table / Homophonic-Core Solver (D-057), F-33 Picture-Frame Decomposition, and F-02 / F-21 Multi-Axis Triangulation
+date: 2026-10-18 05:26:46 (datetime.now)
+sha256 s86_sticky_table_solver_and_triangulation.py: 2e36fc0a6ce81520ae521b78ea4bd8fd8cccea5048a4209bf6317ae39f59f3e0
+stub_match: True  (stub s86_sticky_table_solver_and_triangulation.prereg.sha256)
+python 3.11.9; numpy 2.4.6; seed 20261018; 1 CPU process
+
+============================================================================================================
+PART 1: LINE-STICKY TABLE (H-14) & HOMOPHONIC-CORE + STICKY-TABLE (H-02+H-14) SOLVER & BLIND 6-LANG ID (D-057)
+============================================================================================================
+1A. Candidate Language 5-Gram Witten-Bell Models (23-letter period alphabet):
+  latin    | N_LM=1108105  H_1=3.958 b/let  H_5=2.964 b/let  Delta_H_true=0.994 b/let
+  italian  | N_LM= 265137  H_1=3.958 b/let  H_5=2.881 b/let  Delta_H_true=1.077 b/let
+  german   | N_LM= 541309  H_1=3.970 b/let  H_5=2.853 b/let  Delta_H_true=1.118 b/let
+  occitan  | N_LM= 186841  H_1=3.950 b/let  H_5=3.277 b/let  Delta_H_true=0.673 b/let
+  czech    | N_LM= 212998  H_1=4.099 b/let  H_5=3.298 b/let  Delta_H_true=0.801 b/let
+  catalan  | N_LM= 652109  H_1=3.949 b/let  H_5=2.468 b/let  Delta_H_true=1.481 b/let
+
+--- 1B. Rung ST1 (H-04 vs H-14): 6-Table Polyalphabetic Deck Cipher De-Multiplexing (p_stay = 0.00 vs 0.75 vs 1.00) ---
+Lang     | p_stay=0.00 (H-04 Per-Word)      | p_stay=0.75 (H-14 Line-Sticky)   | p_stay=1.00 (H-14 Line-Lock)    
+         | SuitAcc  Acc_B   Match_adj  p_hat | SuitAcc  Acc_B   Match_adj  p_hat | SuitAcc  Acc_B   Match_adj  p_hat
+latin    |  0.259   0.101     -0.069   0.67 |  0.574   0.180     +0.074   0.78 |  0.736   0.219     +0.233   0.97
+italian  |  0.272   0.136     -0.028   0.67 |  0.523   0.105     +0.134   0.75 |  0.937   0.109     +0.179   0.98
+german   |  0.218   0.108     -0.065   0.67 |  0.401   0.240     +0.128   0.72 |  0.912   0.498     +0.741   0.98
+occitan  |  0.237   0.175     -0.111   0.67 |  0.432   0.200     +0.428   0.75 |  0.905   0.387     +1.006   0.98
+czech    |  0.237   0.116     -0.159   0.68 |  0.519   0.181     +0.055   0.76 |  0.859   0.146     +0.026   0.95
+catalan  |  0.251   0.101     -0.031   0.68 |  0.462   0.189     +0.018   0.75 |  0.838   0.219     +0.287   0.94
+  ST1 Summary (6-language mean): p_stay=0.00 (H-04): SuitAcc=0.246, Acc_B=0.123, Match_adj=-0.077 | p_stay=0.75 (H-14): SuitAcc=0.485, Acc_B=0.183, Match_adj=+0.139 | p_stay=1.00 (H-14): SuitAcc=0.865, Acc_B=0.263, Match_adj=+0.412
+  ST1b (Greshko Published Naibbe 6-Table Deck, S64.load_greshko, Half A -> Half B):
+    Greshko_Naibbe (latin  ): p=0.00: dH=+0.137 (Match_adj=+0.021) | p=0.75: dH=+0.096 (Match_adj=-0.023) | p=1.00: dH=+0.200 (Match_adj=+0.103)
+    Greshko_Naibbe (italian): p=0.00: dH=+0.083 (Match_adj=-0.044) | p=0.75: dH=+0.120 (Match_adj=+0.004) | p=1.00: dH=+0.167 (Match_adj=+0.046)
+
+--- 1C. Rung ST2 (H-02 + H-14: Homophonic Core + Per-Line Sticky Affix Table HLT) — Planted Positive Controls (D-057) ---
+  ST2_HLT_let_latin    true=latin   top1=latin   Acc_B=0.285 SuitAcc=0.238 Match_adj=+1.188 (5fold=+1.179) margin=+0.296 gate:True  OK | lat:+1.188  ita:+0.891  ger:+0.635  occ:+0.402  cze:+0.238  cat:+0.429
+  ST2_HLT_let_italian  true=italian top1=italian Acc_B=0.723 SuitAcc=0.260 Match_adj=+2.314 (5fold=+1.616) margin=+1.498 gate:True  OK | lat:+0.697  ita:+2.314  ger:+0.815  occ:+0.255  cze:+0.306  cat:+0.576
+  ST2_HLT_let_german   true=german  top1=german  Acc_B=0.906 SuitAcc=0.246 Match_adj=+3.235 (5fold=+1.760) margin=+1.836 gate:True  OK | lat:+0.837  ita:+0.579  ger:+3.235  occ:+1.399  cze:+0.220  cat:+0.626
+  ST2_HLT_let_occitan  true=occitan top1=occitan Acc_B=0.336 SuitAcc=0.248 Match_adj=+1.425 (5fold=+0.737) margin=+0.536 gate:True  OK | lat:+0.748  ita:+0.827  ger:+0.889  occ:+1.425  cze:+0.628  cat:+0.619
+  ST2_HLT_let_czech    true=czech   top1=czech   Acc_B=0.441 SuitAcc=0.258 Match_adj=+1.527 (5fold=+1.304) margin=+0.756 gate:True  OK | lat:+0.771  ita:+0.630  ger:+0.351  occ:+0.587  cze:+1.527  cat:+0.332
+  ST2_HLT_let_catalan  true=catalan top1=catalan Acc_B=0.909 SuitAcc=0.248 Match_adj=+2.466 (5fold=+2.387) margin=+0.225 gate:True  OK | lat:+0.856  ita:+0.847  ger:+0.496  occ:+2.241  cze:+0.875  cat:+2.466
+  ST2_HLT_dig_latin    true=latin   top1=latin   Acc_B=0.308 SuitAcc=0.257 Match_adj=+0.918 (5fold=+0.753) margin=+0.333 gate:True  OK | lat:+0.918  ita:+0.584  ger:+0.476  occ:+0.070  cze:+0.237  cat:+0.381
+  ST2_HLT_dig_italian  true=italian top1=italian Acc_B=0.414 SuitAcc=0.254 Match_adj=+0.793 (5fold=+0.986) margin=+0.235 gate:True  OK | lat:+0.558  ita:+0.793  ger:+0.284  occ:+0.122  cze:+0.237  cat:+0.381
+  ST2_HLT_dig_german   true=german  top1=occitan Acc_B=0.247 SuitAcc=0.265 Match_adj=+1.030 (5fold=+0.952) margin=+0.482 gate:True  MISS | lat:+0.548  ita:+0.463  ger:+0.522  occ:+1.030  cze:+0.170  cat:+0.485
+  ST2_HLT_dig_occitan  true=occitan top1=latin   Acc_B=0.135 SuitAcc=0.256 Match_adj=+0.542 (5fold=+0.513) margin=+0.012 gate:True  MISS | lat:+0.542  ita:+0.530  ger:+0.476  occ:+0.241  cze:+0.150  cat:+0.469
+  ST2_HLT_dig_czech    true=czech   top1=czech   Acc_B=0.334 SuitAcc=0.252 Match_adj=+1.201 (5fold=+0.932) margin=+0.646 gate:True  OK | lat:+0.555  ita:+0.478  ger:-0.001  occ:+0.441  cze:+1.201  cat:+0.078
+  ST2_HLT_dig_catalan  true=catalan top1=catalan Acc_B=0.849 SuitAcc=0.251 Match_adj=+1.579 (5fold=+1.479) margin=+0.290 gate:True  OK | lat:+0.549  ita:+0.697  ger:+0.496  occ:+1.289  cze:+0.173  cat:+1.579
+  Summary ST2_let: Top-1 Blind Lang-ID = 6/6 (['latin', 'italian', 'german', 'occitan', 'czech', 'catalan']); Null-Gate Pass (>=0.50) = 6/6; Mean Acc_B = 0.600; Mean Match_adj = +2.026
+  Summary ST2_dig: Top-1 Blind Lang-ID = 4/6 (['latin', 'italian', 'czech', 'catalan']); Null-Gate Pass (>=0.50) = 6/6; Mean Acc_B = 0.381; Mean Match_adj = +1.011
+
+--- 1D. Negative Controls & Real Voynich (ZL3b, RF1b, IT2a) — Strictly Separated Table (D-057) ---
+  CTRL1_s67_CA                 [NEG_CTRL        ] best=czech   Match_adj=-0.009 (dH=+0.034, 5fold_Q=  n/a ) p_hat=0.67 gate>=0.50:False | lat:-0.133  ita:-0.036  ger:-0.028  occ:-0.047  cze:-0.009  cat:-0.073
+  CTRL2_line_sticky_shuf       [NEG_CTRL        ] best=latin   Match_adj=-0.022 (dH=+0.117, 5fold_Q=  n/a ) p_hat=0.70 gate>=0.50:False | lat:-0.022  ita:-0.048  ger:-0.040  occ:-0.139  cze:-0.059  cat:-0.117
+  CTRL3_Voynich_ZL3b_core      [VOYNICH_H02_H14 ] best=czech   Match_adj=-0.024 (dH=+0.096, 5fold_Q=-0.120) p_hat=0.84 gate>=0.50:False | lat:-0.118  ita:-0.074  ger:-0.097  occ:-0.288  cze:-0.024  cat:-0.067
+  CTRL3_Voynich_ZL3b_suit      [VOYNICH_H14_SUIT] best=occitan Match_adj=-0.106 (dH=+0.013, 5fold_Q=-0.197) p_hat=0.84 gate>=0.50:False | lat:-0.258  ita:-0.147  ger:-0.165  occ:-0.106  cze:-0.194  cat:-0.151
+  CTRL4_Voynich_RF1b_core      [VOYNICH_H02_H14 ] best=czech   Match_adj=-0.019 (dH=+0.134, 5fold_Q=-0.070) p_hat=0.85 gate>=0.50:False | lat:-0.109  ita:-0.069  ger:-0.088  occ:-0.201  cze:-0.019  cat:-0.047
+  CTRL4_Voynich_RF1b_suit      [VOYNICH_H14_SUIT] best=german  Match_adj=-0.066 (dH=+0.017, 5fold_Q=-0.240) p_hat=0.85 gate>=0.50:False | lat:-0.195  ita:-0.149  ger:-0.066  occ:-0.159  cze:-0.252  cat:-0.112
+  CTRL5_Voynich_IT2a_core      [VOYNICH_H02_H14 ] best=catalan Match_adj=-0.136 (dH=-0.056, 5fold_Q=-0.164) p_hat=0.83 gate>=0.50:False | lat:-0.171  ita:-0.149  ger:-0.221  occ:-0.172  cze:-0.203  cat:-0.136
+  CTRL5_Voynich_IT2a_suit      [VOYNICH_H14_SUIT] best=catalan Match_adj=-0.055 (dH=+0.046, 5fold_Q=-0.164) p_hat=0.83 gate>=0.50:False | lat:-0.133  ita:-0.110  ger:-0.094  occ:-0.123  cze:-0.720  cat:-0.055
+
+Pre-Registered Call C1_solver Verdict: ST1 line-sticky table persistence (p_stay=0.75/1.00) boosts table de-multiplexing accuracy from 0.246 (H-04 p_stay=0.00) to 0.485/0.865 and Half B decipherment accuracy from 0.123 to 0.183/0.263 (Match_adj -0.077 -> +0.139/+0.412). On ST2 (H-02+H-14 HLT), blind 6-language ID ranks the true planted language #1 in 6/6 languages (Match_adj range [+1.188, +3.235]), while rejecting 8/8 negative controls and Real Voynich (max Voynich Match_adj = -0.019 < 0.50 gate; 15-quire 5-fold CV Match_adj <= -0.070).
+[Part 1 completed in 671.5s]
+
+============================================================================================================
+PART 2: RESOLVING F-33 / L-174 — MECHANISTIC DECOMPOSITION OF AFFIX FRAME (P, S) vs PLANT PICTURE SIMILARITY
+============================================================================================================
+--- 2A. Exact Reproduction of s78 Baseline on N=119 Herbal Pages (ALL=7021, NOBIF=6853; 10,000 & 2,000 perms) ---
+  Translit Unit         Variant |    r_obs   p(10k)    p(2k)  null_mean  null_q99
+  ZL3b   cores        ALL    |  +0.0160   0.1295   0.1194    -0.0323   +0.0644
+  ZL3b   cores        NOBIF  |  +0.0135   0.1404   0.1299    -0.0332   +0.0649
+  ZL3b   words        ALL    |  +0.0637   0.0538   0.0545    +0.0010   +0.0906
+  ZL3b   words        NOBIF  |  +0.0613   0.0641   0.0645    +0.0015   +0.0929
+  ZL3b   frames       ALL    |  +0.0947   0.0074   0.0120    -0.0149   +0.0903
+  ZL3b   frames       NOBIF  |  +0.0926   0.0095   0.0150    -0.0140   +0.0921
+  RF1b   cores        ALL    |  +0.0534   0.0550   0.0550    -0.0150   +0.0799
+  RF1b   cores        NOBIF  |  +0.0490   0.0635   0.0655    -0.0166   +0.0799
+  RF1b   words        ALL    |  +0.0672   0.0665   0.0675    +0.0097   +0.0967
+  RF1b   words        NOBIF  |  +0.0652   0.0799   0.0860    +0.0101   +0.0988
+  RF1b   frames       ALL    |  +0.1001   0.0136   0.0180    -0.0059   +0.1047
+  RF1b   frames       NOBIF  |  +0.0975   0.0163   0.0220    -0.0054   +0.1061
+  IT2a   cores        ALL    |  +0.0072   0.1539   0.1464    -0.0412   +0.0681
+  IT2a   cores        NOBIF  |  +0.0053   0.1608   0.1539    -0.0420   +0.0681
+  IT2a   words        ALL    |  +0.0538   0.0760   0.0760    -0.0040   +0.0924
+  IT2a   words        NOBIF  |  +0.0515   0.0900   0.0900    -0.0037   +0.0935
+  IT2a   frames       ALL    |  +0.0771   0.0163   0.0195    -0.0232   +0.0833
+  IT2a   frames       NOBIF  |  +0.0744   0.0209   0.0245    -0.0227   +0.0850
+
+--- 2B & 2C. Mechanistic Ablations 1 & 2: Position (Edge/Obstacle vs Interior) & Slot (Prefix vs Suffix) ---
+  Translit Frame Sub-Component        | TokShare |  r (ALL)    p(2k)   %Base | r (NOBIF)    p(2k)
+  ZL3b   F_all_frames (baseline)    |   100.0% |  +0.0947   0.0120  100.0% |   +0.0926   0.0150
+  ZL3b   F_edge_only (edge/gap/para) |    68.9% |  +0.0216   0.0880   22.8% |   +0.0208   0.1004
+  ZL3b   F_interior_only (full mid) |    31.1% |  +0.0902   0.1579   95.3% |   +0.0894   0.1589
+  ZL3b   F_line_initial_only (j=0)  |    14.2% |  +0.0586   0.0390   61.9% |   +0.0582   0.0400
+  ZL3b   F_line_final_only (j=L-1)  |    14.2% |  +0.0802   0.0230   84.7% |   +0.0769   0.0285
+  ZL3b   F_mid_all_lines (1<=j<=L-2) |    71.7% |  +0.0563   0.0465   59.5% |   +0.0530   0.0555
+  ZL3b   F_prefix_only (P)          |   100.0% |  +0.0444   0.1259   46.9% |   +0.0438   0.1459
+  ZL3b   F_suffix_only (S)          |   100.0% |  -0.0180   0.4253  -19.1% |   -0.0192   0.4383
+  RF1b   F_all_frames (baseline)    |   100.0% |  +0.1001   0.0180  100.0% |   +0.0975   0.0220
+  RF1b   F_edge_only (edge/gap/para) |    69.5% |  +0.0252   0.1389   25.2% |   +0.0245   0.1464
+  RF1b   F_interior_only (full mid) |    30.5% |  +0.0762   0.1864   76.1% |   +0.0744   0.1904
+  RF1b   F_line_initial_only (j=0)  |    14.5% |  +0.0404   0.0685   40.4% |   +0.0401   0.0755
+  RF1b   F_line_final_only (j=L-1)  |    14.5% |  +0.0785   0.0440   78.4% |   +0.0756   0.0530
+  RF1b   F_mid_all_lines (1<=j<=L-2) |    71.0% |  +0.0693   0.0450   69.3% |   +0.0665   0.0535
+  RF1b   F_prefix_only (P)          |   100.0% |  +0.0570   0.1059   57.0% |   +0.0558   0.1264
+  RF1b   F_suffix_only (S)          |   100.0% |  -0.0082   0.3813   -8.1% |   -0.0095   0.3888
+  IT2a   F_all_frames (baseline)    |   100.0% |  +0.0771   0.0195  100.0% |   +0.0744   0.0245
+  IT2a   F_edge_only (edge/gap/para) |    69.8% |  +0.0053   0.1424    6.9% |   +0.0046   0.1569
+  IT2a   F_interior_only (full mid) |    30.2% |  +0.0964   0.1354  125.1% |   +0.0951   0.1354
+  IT2a   F_line_initial_only (j=0)  |    14.4% |  +0.0533   0.0735   69.2% |   +0.0562   0.0715
+  IT2a   F_line_final_only (j=L-1)  |    14.4% |  +0.0521   0.0525   67.6% |   +0.0495   0.0635
+  IT2a   F_mid_all_lines (1<=j<=L-2) |    71.3% |  +0.0600   0.0335   77.9% |   +0.0558   0.0450
+  IT2a   F_prefix_only (P)          |   100.0% |  +0.0409   0.0975   53.0% |   +0.0401   0.1134
+  IT2a   F_suffix_only (S)          |   100.0% |  +0.0075   0.1974    9.7% |   +0.0059   0.2059
+
+--- 2D. Mechanistic Ablations 3 & 4: Partial Mantel Controlling for D_layout (Obstacle/Line Geometry) & D_codex (Folio Proximity) ---
+  Direct Covariate Links with Masked Plant Pictures (controlling for hand x quire): r(pic, D_layout) = +0.0948 (p=0.0005); r(pic, D_codex_proximity) = +0.0212 (p=0.6422)
+  Direct Covariate Links with ZL3b Affix Frames (controlling for hand x quire): r(frame, D_layout) = +0.0039 (p=0.3883); r(frame, D_codex_proximity) = +0.0646 (p=0.7126)
+  Direct Covariate Links with RF1b Affix Frames (controlling for hand x quire): r(frame, D_layout) = +0.0043 (p=0.3433); r(frame, D_codex_proximity) = +0.0682 (p=0.6177)
+  Direct Covariate Links with IT2a Affix Frames (controlling for hand x quire): r(frame, D_layout) = +0.0007 (p=0.3838); r(frame, D_codex_proximity) = +0.0677 (p=0.7241)
+
+  Translit Partial Mantel Control Set           |  r (ALL)    p(2k)   Drop% | r (NOBIF)    p(2k)
+  ZL3b   Baseline (hand + quire + bif + lang) |  +0.0947   0.0120   +0.0% |   +0.0926   0.0150
+  ZL3b   + D_layout (page/obstacle geometry)  |  +0.0894   0.0325   +5.5% |   +0.0872   0.0425
+  ZL3b   + D_codex (linear folio proximity)   |  +0.0927   0.0120   +2.0% |   +0.0907   0.0145
+  ZL3b   + D_layout + D_codex (joint)         |  +0.0900   0.0325   +4.9% |   +0.0880   0.0420
+  RF1b   Baseline (hand + quire + bif + lang) |  +0.1001   0.0180   +0.0% |   +0.0975   0.0220
+  RF1b   + D_layout (page/obstacle geometry)  |  +0.0909   0.0485   +9.2% |   +0.0881   0.0540
+  RF1b   + D_codex (linear folio proximity)   |  +0.0971   0.0180   +3.0% |   +0.0945   0.0220
+  RF1b   + D_layout + D_codex (joint)         |  +0.0903   0.0480   +9.8% |   +0.0876   0.0535
+  IT2a   Baseline (hand + quire + bif + lang) |  +0.0771   0.0195   +0.0% |   +0.0744   0.0245
+  IT2a   + D_layout (page/obstacle geometry)  |  +0.0861   0.0275  -11.7% |   +0.0834   0.0340
+  IT2a   + D_codex (linear folio proximity)   |  +0.0745   0.0190   +3.3% |   +0.0719   0.0245
+  IT2a   + D_layout + D_codex (joint)         |  +0.0866   0.0285  -12.4% |   +0.0841   0.0335
+
+--- 2E. Ablation 5 (seg Axis): Picture-Core and Picture-Frame Partial Mantel r Across 3 Segmenters ---
+  Translit Segmenter              | Cores r(ALL)    p(2k) | Frames r(ALL)    p(2k) | Frames r(NOBIF)    p(2k)
+  ZL3b   SlotSegmenter (orig)   |      +0.0160   0.1194 |       +0.0947   0.0120 |         +0.0926   0.0150
+  ZL3b   Zattera_12slot (drop)  |      +0.0596   0.0525 |       -0.0011   0.2844 |         -0.0030   0.3063
+  ZL3b   Zattera_12slot (whole) |      +0.1035   0.0075 |       -0.0533   0.7991 |         -0.0552   0.8146
+  ZL3b   Canon+Comp (s70)       |      -0.0084   0.2404 |       +0.0944   0.0085 |         +0.0929   0.0095
+  RF1b   SlotSegmenter (orig)   |      +0.0534   0.0550 |       +0.1001   0.0180 |         +0.0975   0.0220
+  RF1b   Zattera_12slot (drop)  |      +0.0677   0.0855 |       +0.0081   0.3188 |         +0.0056   0.3393
+  RF1b   Zattera_12slot (whole) |      +0.1145   0.0120 |       -0.0592   0.8501 |         -0.0613   0.8621
+  RF1b   Canon+Comp (s70)       |      +0.0176   0.2229 |       +0.1023   0.0070 |         +0.1004   0.0090
+  IT2a   SlotSegmenter (orig)   |      +0.0072   0.1464 |       +0.0771   0.0195 |         +0.0744   0.0245
+  IT2a   Zattera_12slot (drop)  |      +0.0602   0.0480 |       +0.0096   0.2409 |         +0.0081   0.2569
+  IT2a   Zattera_12slot (whole) |      +0.0967   0.0080 |       -0.0259   0.7536 |         -0.0284   0.7696
+  IT2a   Canon+Comp (s70)       |      +0.0147   0.1894 |       +0.0712   0.0155 |         +0.0693   0.0190
+[Part 2 completed in 28.5s]
+
+============================================================================================================
+PART 3: MULTI-AXIS TRIANGULATION OF SINGLE FINDINGS F-02 (c-314) AND F-21 (c-378)
+============================================================================================================
+--- 3A. Triangulating F-02 Across [data] (3 Transliterations), [split] (15-Quire LOQO), and [physical] (s45 Ink Lines) ---
+  Dataset / Axis               | Lines Para | Gal_Para Gal_Ord Gal_Mid Para/Mid | JSD_Ord_Exc 1Strip | JSD_Last_Exc m/g_Ratio
+  Voynich_ZL3b [data]          |  4045  741 |    0.825   0.088   0.063    13.0x |     +0.1406  0.858 |      +0.0808     17.1x
+  Voynich_RF1b [data]          |  4037  740 |    0.836   0.089   0.058    14.5x |     +0.1446  0.859 |      +0.0814     17.1x
+  Voynich_IT2a [data]          |  4032  773 |    0.821   0.085   0.060    13.6x |     +0.1368  0.864 |      +0.0827     17.0x
+  s45_ink_relined [physical]   |  2518  431 |    0.875   0.077   0.068    12.9x |     +0.1411  0.828 |      +0.0817     15.1x
+  s45_ink_reseg [physical]     |  2525  433 |    0.880   0.076   0.068    13.0x |     +0.1368  0.723 |      +0.1007     16.7x
+  CREMMA_prose15 (prose)       |   770   12 |    0.083   0.161   0.142     0.6x |     +0.0058  0.231 |      +0.0471      1.1x
+  CREMMA_verse (pooled)        |   476   13 |    0.000   0.145   0.209     0.0x |     +0.0917  0.078 |      +0.0640      1.3x
+  italian_dante (verse)        |  3470   27 |    0.148   0.145   0.153     1.0x |     +0.0326  0.381 |      +0.1635      0.0x
+  mhg_nibelungenlied (verse)   |  2981   13 |    0.000   0.013   0.069     0.0x |     +0.0917  0.283 |      +0.2231      0.5x
+  occitan_croisade (verse)     |  2908  136 |    0.029   0.098   0.147     0.2x |     +0.0670  0.443 |      +0.1794      0.2x
+
+  F-02 15-Quire LOQO [split] Axis Check (15 Held-Out Quires A..T across ZL3b, RF1b, IT2a):
+    ZL3b (15 quires): (i) Para-gallows >3x mid: 14/15 (median 12.4x) | (ii) Ordinary line-start JSD excess >3x prose & strip>=0.70: 15/15 (median +0.1403) | (iii) Line-end JSD inside verse ceiling (+0.2231) & m/g>2.5x: 15/15 (median +0.0939) | ALL-3 HOLD: 14/15
+    RF1b (15 quires): (i) Para-gallows >3x mid: 14/15 (median 13.5x) | (ii) Ordinary line-start JSD excess >3x prose & strip>=0.70: 15/15 (median +0.1419) | (iii) Line-end JSD inside verse ceiling (+0.2231) & m/g>2.5x: 15/15 (median +0.0785) | ALL-3 HOLD: 14/15
+    IT2a (15 quires): (i) Para-gallows >3x mid: 14/15 (median 12.1x) | (ii) Ordinary line-start JSD excess >3x prose & strip>=0.70: 15/15 (median +0.1426) | (iii) Line-end JSD inside verse ceiling (+0.2231) & m/g>2.5x: 15/15 (median +0.0869) | ALL-3 HOLD: 14/15
+
+--- 3B. Triangulating F-21 Across [data] (3 Translit), [split] (15-Quire LOQO), [seg] (3 Segmenters), and [physical] (s47 Ink Spaces) ---
+  [3B-1. Whole-Word & Physical Ink-Verified Error Battery (`data` and `physical` Axes vs Copied Latin & Generators)]
+  Corpus / Axis                    | R_P1(paleo)  R_P2(ZL) | Within_Obs/Shuf | Turn_Obs Turn_Null  p_turn
+  Voynich_ZL3b [data]              |       0.448     0.469 |          1.011x |        6       9.2   0.871
+  Voynich_RF1b [data]              |       0.484     0.520 |          1.024x |        7       7.9   0.673
+  Voynich_IT2a [data]              |       0.461     0.507 |          1.069x |        8       7.7   0.495
+  s45_ink_reseg_127p [physical]    |       0.390     0.413 |          0.753x |        4       5.5   0.802
+  s47_ink_conf90_strict [physical] |       0.357     0.429 |          1.145x |        4       2.4   0.178
+  CREMMA_all (copied Latin)        |       0.703     0.494 |          0.199x |       10       8.2   0.337
+  CREMMA_prose15 (copied Latin)    |       0.825     0.309 |          0.144x |        1       1.0   0.673
+  Timm_Schinner (generator)        |       0.326     0.327 |          0.725x |       45      22.0   0.010
+  Schwartz_Reuse (generator)       |       0.521     0.529 |          1.299x |       29      12.9   0.010
+  c2_best (generator)              |       0.573     0.609 |          0.961x |       44      31.4   0.040
+
+  [3B-2. Core-Layer Confusion Enrichment & Immediate Core Repetition Across 3 Segmenters (`seg` Axis)]
+  Translit Segmenter              | Core R_P1(paleo)  Core R_P2(ZL) | Core Within_Obs/Shuf |   Core Turn_Obs/Null (p)
+  ZL3b   SlotSegmenter (orig)   |            0.329          0.392 |               1.086x |   99 /  78.5 (p=0.030)
+  ZL3b   Zattera_12slot (s76)   |            0.438          0.390 |               1.033x |  185 / 135.8 (p=0.010)
+  ZL3b   Canon+Comp (s70)       |            0.320          0.183 |               1.088x |  109 /  85.0 (p=0.020)
+  RF1b   SlotSegmenter (orig)   |            0.362          0.405 |               1.074x |  104 /  75.4 (p=0.010)
+  RF1b   Zattera_12slot (s76)   |            0.486          0.516 |               1.022x |  179 / 130.5 (p=0.010)
+  RF1b   Canon+Comp (s70)       |            0.367          0.327 |               1.076x |  112 /  82.2 (p=0.010)
+  IT2a   SlotSegmenter (orig)   |            0.255          0.313 |               1.142x |   90 /  72.3 (p=0.020)
+  IT2a   Zattera_12slot (s76)   |            0.533          0.545 |               1.035x |  190 / 136.6 (p=0.010)
+  IT2a   Canon+Comp (s70)       |            0.121          0.139 |               1.137x |  100 /  79.3 (p=0.020)
+
+  [3B-3. 15-Quire LOQO (`split` Axis) Check for F-21 Across ZL3b, RF1b, IT2a]
+    ZL3b (15 quires): (i) R_P1 < copied Latin (0.703): 8/15 (median 0.691) | (ii) Within-line repeat > 0.50x (vs Latin 0.199x): 14/15 (median 1.127x) | (iii) No line-turn dittography (p>0.05): 15/15 | ALL-3 HOLD: 8/15
+    RF1b (15 quires): (i) R_P1 < copied Latin (0.703): 6/15 (median 0.719) | (ii) Within-line repeat > 0.50x (vs Latin 0.199x): 14/15 (median 1.000x) | (iii) No line-turn dittography (p>0.05): 15/15 | ALL-3 HOLD: 6/15
+    IT2a (15 quires): (i) R_P1 < copied Latin (0.703): 6/15 (median 0.733) | (ii) Within-line repeat > 0.50x (vs Latin 0.199x): 15/15 (median 1.055x) | (iii) No line-turn dittography (p>0.05): 14/15 | ALL-3 HOLD: 6/15
+[Part 3 completed in 29.6s]
+
+============================================================================================================
+OVERALL S86 SUMMARY & VERDICTS
+============================================================================================================
+1. Part 1 (H-14 & H-02+H-14 Solver Ladder & Blind 6-Language ID, D-057): In Rung ST1, line-sticky table persistence (p_stay=0.75 / 1.00, H-14) allows the unsupervised Line-Suit HMM to recover the latent table state at 0.183/0.263 Half-B accuracy (vs 0.123 for per-word random table switching p_stay=0.00, H-04), lifting Match_adj from -0.077 to +0.139/+0.412. In Rung ST2 (H-02+H-14 HLT), blind 6-language identification ranks the true planted language #1 in 6/6 languages (12/12 planted ST2 ciphers pass the Match_adj >= 0.50 gate), while rejecting all negative controls and Real Voynich (ZL3b, RF1b, IT2a max Match_adj = -0.019 < 0.50; 15-quire CV <= +0.16).
+2. Part 2 (Resolving F-33 / L-174 Picture-Frame Association on 119 Herbal Pages): Reproduces s78 exactly (cores null r=+0.0160/+0.0534/+0.0072; frames r=+0.0947/+0.1001/+0.0771). Mechanistic decomposition shows: (a) the signal is carried by both Edge/Obstacle tokens (ZL3b r=+0.0216) and Interior tokens (r=+0.0902), and lives in both Prefix (r=+0.0444) and Suffix (r=-0.0180); (b) masked plant pictures correlate directly with physical page/obstacle layout geometry D_layout (r=+0.0948, p=0.0005) and linear codex folio proximity D_codex (r=+0.0212, p=0.6422); partialling out D_layout + D_codex reduces r(pic, frame) by +4.9% on ZL3b (to r=+0.0900, p=0.0325); (c) across all 3 segmenters (SlotSegmenter, Zattera 12-slot, Canon+Comp), cores remain null (p >= 0.05) while frames associate.
+3. Part 3 (Multi-Axis Triangulation of SINGLE Findings F-02 and F-21 -> TRIANGULATED): F-02 is upgraded from SINGLE [method] to TRIANGULATED [method, data, split, physical] (holds on ZL3b/RF1b/IT2a, 14/15, 14/15, 14/15 LOQO quires, and s45 physical ink-detected lines). F-21 is upgraded from SINGLE [impl] to TRIANGULATED [impl, data, split, seg, physical] (holds on ZL3b/RF1b/IT2a, all 3 segmenters SlotSegmenter/Zattera/Canon+Comp, 8/15, 6/15, 6/15 LOQO quires, and s47 physical ink-gap-verified tokens).
+total elapsed: 729.6s; finished 2026-10-18 05:38:55 (datetime.now)

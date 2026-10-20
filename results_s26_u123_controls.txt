@@ -1,0 +1,53 @@
+S2: Pre-registered U1 / U2 / U3 Controls & Unknown Retirement (workflow/research/SYNTHESIS.md Steps 1-3)
+s2_prereg_sha256=28adb12e589dc0ee5c6e6d68be2450cab390396fdba3a59618e4605192aff794 (stub_match=True)  seed=20261017
+
+=== PART 1: U1 — Native Line Breaks vs. 8-Word Re-Lining (Pre-test on Disk) ===
+  Voynich_ZL3b (native)  | lines=4130 toks=34857 | JSDf=0.1759 (>=0.10) JSDl=0.0820 | p_init=x17.89 m_fin=x16.31 | top_init=p:x17.89  top_fin=g:x25.47  -am:OR=21.3
+  Voynich_ZL3b (8-word)  | lines=4357 toks=34856 | JSDf=0.0010 (<0.10 ) JSDl=0.0008 | p_init=x 0.98 m_fin=x 1.02 | top_init=f:x1.78   top_fin=a:x1.43   -lo:OR=1.7
+  Gibberish_38 (native)  | lines=1559 toks= 9974 | JSDf=0.0075 (<0.10 ) JSDl=0.0059 | p_init=x 0.96 m_fin=x 0.98 | top_init=h:x1.40   top_fin=w:x2.14   -th:OR=2.1
+  Gibberish_38 (8-word)  | lines=1246 toks= 9968 | JSDf=0.0040 (<0.10 ) JSDl=0.0037 | p_init=x 1.04 m_fin=x 0.98 | top_init=y:x1.36   top_fin=w:x1.64   -ll:OR=2.0
+  MHG_Nibelung (native)  | lines=2985 toks=25007 | JSDf=0.0924 (<0.10 ) JSDl=0.2254 | p_init=x 0.64 m_fin=x 0.57 | top_init=d:x2.56   top_fin=p:x12.36  -ip:OR=52.1
+  MHG_Nibelung (8-word)  | lines=3125 toks=25000 | JSDf=0.0020 (<0.10 ) JSDl=0.0012 | p_init=x 0.50 m_fin=x 1.06 | top_init=u:x2.31   top_fin=u:x1.72   -vf:OR=2.3
+  OldFrench_Rol(native)  | lines=3595 toks=25001 | JSDf=0.0198 (<0.10 ) JSDl=0.0714 | p_init=x 1.23 m_fin=x 1.22 | top_init=j:x2.38   top_fin=f:x3.41   -ed:OR=7.6
+  OldFrench_Rol(8-word)  | lines=3125 toks=25000 | JSDf=0.0020 (<0.10 ) JSDl=0.0019 | p_init=x 0.95 m_fin=x 0.79 | top_init=k:x1.36   top_fin=c:x1.43   -ja:OR=2.0
+  Occitan_Crois(native)  | lines=3063 toks=25007 | JSDf=0.0764 (<0.10 ) JSDl=0.1734 | p_init=x 0.83 m_fin=x 0.09 | top_init=q:x3.01   top_fin=r:x3.60   -ea:OR=93.6
+  Occitan_Crois(8-word)  | lines=3125 toks=25000 | JSDf=0.0019 (<0.10 ) JSDl=0.0017 | p_init=x 1.01 m_fin=x 0.67 | top_init=v:x1.12   top_fin=c:x1.13   -ui:OR=1.9
+  Dante_Verse  (native)  | lines=3000 toks=21529 | JSDf=0.0324 (<0.10 ) JSDl=0.1639 | p_init=x 1.19 m_fin=x 0.00 | top_init=e:x2.05   top_fin=o:x1.95   -ge:OR=7.5
+  Dante_Verse  (8-word)  | lines=2691 toks=21528 | JSDf=0.0023 (<0.10 ) JSDl=0.0012 | p_init=x 1.08 m_fin=x 1.55 | top_init=u:x1.23   top_fin=v:x1.68   -om:OR=2.2
+  U1 PRE-TEST VERDICT: OUTCOME A (SURVIVES PRE-TEST: max non-Voynich native-line JSDf = 0.0924 < 0.10)
+
+=== PART 2A: U2a — Position-Stratified Cross-Space Coupling Null (Feaster Confound Check) ===
+  ZL3b | raw_MI=0.1950 | within_line_ex=+0.1807 (null=0.0143) | slot_null_ex=+0.1882 (null=0.0068) | (hand,sec,slot)_ex=+0.1856±0.0006 (102.7% of standard) -> OK
+  RF1b | raw_MI=0.1865 | within_line_ex=+0.1724 (null=0.0140) | slot_null_ex=+0.1795 (null=0.0070) | (hand,sec,slot)_ex=+0.1774±0.0006 (102.9% of standard) -> OK
+  IT2a | raw_MI=0.1792 | within_line_ex=+0.1659 (null=0.0133) | slot_null_ex=+0.1731 (null=0.0061) | (hand,sec,slot)_ex=+0.1706±0.0007 (102.8% of standard) -> OK
+  U2a VERDICT: GENUINE ADJACENT COUPLING (98%+ of cross-space MI survives (hand,section,slot) stratification across all 3 EVA transliterations)
+
+=== PART 2B: U2b — Out-of-Sample / Cross-Currier & Non-Voynich Edge Table Transfer ===
+  Fit_Currier_A -> Gen_Currier_B   | MS_edge=+0.2321 -> Gen_edge=+0.1532 (h2=1.564, rep=1.61%) -> >=+0.09 PASS
+  Fit_Currier_B -> Gen_Currier_A   | MS_edge=+0.1203 -> Gen_edge=+0.2521 (h2=1.815, rep=1.59%) -> >=+0.09 PASS
+  Fit_Train_166 -> Gen_Heldout_41  | MS_edge=+0.2026 -> Gen_edge=+0.2289 (h2=1.664, rep=1.38%) -> >=+0.09 PASS
+  Fit_Dante_Rank-> Gen_ZL3b_All    | MS_edge=+0.1809 -> Gen_edge=+0.2298 (h2=1.798, rep=1.37%) -> >=+0.09 PASS
+  U2b VERDICT: TRANSFERS OUT-OF-SAMPLE (A<->B, 166->41, and rank-mapped Dante table all clear >=+0.09)
+
+=== PART 2C: U2c — Timm's Token & Plaintext-Length Bound on ZL3b ===
+  ZL3b running paragraph tokens = 34,857 across 207 pages
+  Total EVA characters = 173,928 (mean 4.99 EVA chars/token, SD 1.79)
+  Total glyph+ units   = 140,577 (mean 4.03 glyph+ units/token, SD 1.46)
+  Implied plaintext letters for Naibbe/F3 verbose cipher (1.528 letters/token) = 53,261 letters (~9,183 Latin words)
+  Implied plaintext words for 1-to-1 word cipher / nomenclator                 = 34,857 words (~202,171 Latin letters)
+
+=== PART 3A: U3a — Multi-Alphabet / Fixed-Unit Profile Table ===
+  ZL3b_eva        | toks=34857 | h2_25k=2.126 h2_all=2.109 sd_len=1.788 | types_25k=5417 types_all=7025 hapax=0.680 | JSDf=0.1759 cross_ex=+0.1809
+  RF1b            | toks=34618 | h2_25k=2.135 h2_all=2.120 sd_len=1.796 | types_25k=5680 types_all=7348 hapax=0.691 | JSDf=0.1809 cross_ex=+0.1729
+  IT2a            | toks=34411 | h2_25k=2.128 h2_all=2.112 sd_len=1.705 | types_25k=5522 types_all=7069 hapax=0.678 | JSDf=0.1748 cross_ex=+0.1660
+  ZL3b_glyphplus  | toks=34857 | h2_25k=2.397 h2_all=2.385 sd_len=1.456 | types_25k=5417 types_all=7025 hapax=0.680 | JSDf=0.2022 cross_ex=+0.1899
+  GC2a            | toks=36385 | h2_25k=2.540 h2_all=2.533 sd_len=1.480 | types_25k=6349 types_all=8351 hapax=0.702 | JSDf=0.2140 cross_ex=+0.2253
+
+=== PART 3B: U3b — Within-Manuscript Empirical Band Widths (200 Random 41-Page Splits on ZL3b) ===
+  h2                 | median=  2.1030 | 95%_CI=[  2.0540,   2.1523] | min..max=[  2.0057,   2.1745]
+  sd_len             | median=  1.7833 | 95%_CI=[  1.7473,   1.8278] | min..max=[  1.7364,   1.8464]
+  jsd_first_fg       | median=  0.1776 | 95%_CI=[  0.1447,   0.2156] | min..max=[  0.1383,   0.2509]
+  p_init_enrich      | median= 18.1095 | 95%_CI=[ 12.3045,  26.3538] | min..max=[  9.5820,  30.6542]
+  m_final_enrich     | median= 16.2249 | 95%_CI=[ 10.1844,  27.4137] | min..max=[  8.0714,  33.7032]
+  cross_excess_eva   | median=  0.1801 | 95%_CI=[  0.1477,   0.2085] | min..max=[  0.1412,   0.2184]
+  redup_pct          | median=  0.9420 | 95%_CI=[  0.7137,   1.1920] | min..max=[  0.6697,   1.2951]

@@ -1,0 +1,13 @@
+# r6 pre-registration, voynich-91 (Roach). Frozen at (clock): 2026-10-18 12:32:29 PDT
+# Brief: <team-comms>
+# Fixture run 2026-10-18 12:23:00 PDT, revision 0 (no revisions): planted line-held -> PASS ((i) 13/15, (ii) 0, (iii) 0); chain -> FAIL ((iii) 14/15). FIXTURE CHECK OK.
+# Profile per stream (prefix, suffix), positions >= 2: q1=R_w(1), q2=R_w(1)-R_w(3), q3=C (within-line clustering vs page), q4=X (adjacent-line sharing vs page).
+# Decision statistic: exact permutation p, 200 shuffles (within-line for q1,q2; within-page for q3,q4).
+# MATCH: all 8 quantities of the real held-out quire inside the generator's [0.5, 99.5] percentile envelope over 200 copies.
+# CALL (ZL, 15 folds): PASS iff (i) line-held matches >= 8 AND (ii) per-word < 8 AND (iii) Markov < 8. VERDICT follows the call.
+# Controls: planted line-held (alpha=3) must give PASS; Latin must not show the line-held signature (q3>1 p<0.05, q1 p>=0.05, q4 p>=0.05).
+# Verify: grep -v "^#" r6.prereg.sha256 | tr -d '\r' | sha256sum -c -
+6e6ee178b4ef0c9ffab438e0aa1a197f377d27eaeb5de41d98613a32eaf036c4  r6.py
+bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc  ../dl_ZL/ZL3b-n.txt
+7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5  ../dl_IT/IT2a-n.txt
+8bae4d88747b318b58ea193f981766fed337ddf613df452c1a06d72c9af75ffd  ../r3/dl_PG18837/pg18837.txt

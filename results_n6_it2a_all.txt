@@ -1,0 +1,54 @@
+# PREREG-v2 score: IT2a  family=-  run=2026-10-17 19:41 (system clock)  seed=20261017
+# source: data/translit/IT2a.meta.json
+# data/translit/IT2a.meta.json; 34411 tokens full
+# v1 bands: scoreboard/score.py via path + g0 band checks; extras: scoreboard/metrics_new.py; sample cap 40000 (non-Voynich)
+# pages=206 lines=4117 tokens=34411 types=7069 sections=['A', 'B', 'C', 'H', 'P', 'S', 'T'] hands=6 langs=['?', 'A', 'B']
+
+    v1 1.4s
+    extra 6.6s
+    info 2.2s
+    lex 5.4s
+    slot 0.3s
+    bake 10.6s
+
+# ranges: results_m4_phase1_board.json (run 2026-10-17 16:52); X range absent -> X printed NA
+=== v1 seven bands (frozen; PREREG v1 thresholds) ===
+band                      value           band   ok    L    C    G
+h2                       2.1283      1.98-2.28   ok  OUT  OUT   IN
+sd_len                   1.6910      1.41-2.11   ok   IN   IN   IN
+jsd_first_fg             0.1748         >=0.10   ok  OUT  OUT  OUT
+p_init_enrich           17.5500           >=x8   ok  OUT   NA   IN
+m_final_enrich          16.5100           >=x8   ok  OUT   NA  OUT
+cross_excess_eva         0.1660        >=+0.09   ok  OUT  OUT  OUT
+redup_pct                0.9320       0.4-1.8%   ok  OUT  OUT   IN
+v1 joint: PASS  missed: -
+
+=== v2 extras (metrics_new) ===
+metric                            value      class    L    C    G  tightLCG ovl
+x_edge_mi_word                   0.1731   WEIGHTED  OUT  OUT  OUT       .tt  no
+types_25k                     5522.0000  WEIGHTED*   NA   NA   NA       ...  no
+x_position_entropy               1.6502   WEIGHTED  OUT   IN   IN       t.t  no
+x_ltr_minus_rtl                  0.0040   WEIGHTED  OUT  OUT   IN       t.t  no
+x_moran_I                        0.1410   WEIGHTED  OUT  OUT  OUT       .tt yes
+lex_beta                         0.7501   WEIGHTED   IN  OUT   IN       .t. yes
+lex_rate_late_early              0.4624   WEIGHTED   IN  OUT   IN       tt. yes
+lex_edit1_excess                 0.0992   WEIGHTED   IN  OUT   IN       ttt yes
+slot_occupancy_pc                0.0697   WEIGHTED   IN   IN   IN       ttt yes
+slot_table_likeness              0.6541   WEIGHTED   IN  OUT   IN       .tt yes
+slot_core_crowding               0.8651   WEIGHTED   IN   IN   IN       ttt yes
+info_mi_adjacent                 0.1510   WEIGHTED   IN  OUT   IN       .tt yes
+info_samecol_minus_othercol      0.0172   WEIGHTED   IN  OUT   IN       ttt yes
+bake_char3_minus_unigram        -0.5262   WEIGHTED   IN   IN   IN       ... yes
+x_hapax_10k                      0.6883     REPORT   IN  OUT   IN       .t. yes
+info_mi_page                     0.0199     REPORT   IN   IN   IN       ttt yes
+info_bpe_adjacent                1.1619     REPORT   NA   NA   NA       ...  no
+bake_winner: copy0.05+markov3  bake bits: markov2=11.677 markov3=11.636 slot=12.297 unigram_gt=12.163 copy0.3+markov3=11.888 copy0.1+markov3=11.659 copy0.05+markov3=11.626
+
+=== per-family in/out (weighted metrics = v1 bands + WEIGHTED extras, minus the ranges file's no-weight list) ===
+  L: in= 0 out= 9 na= 1  out: h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl  | tight-outs (7): h2, jsd_first_fg, p_init_enrich, m_final_enrich, redup_pct, x_position_entropy, x_ltr_minus_rtl
+  C: in= 1 out= 6 na= 3  out: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, x_ltr_minus_rtl  | tight-outs (5): h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word
+  G: in= 5 out= 4 na= 1  out: jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word  | tight-outs (4): jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word
+  weighted metrics (10): h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_position_entropy, x_ltr_minus_rtl
+  (kill = >=3 weighted outs on tight ranges; favoured = fewest outs by >=2; both need the A/B rule of PREREG-v2 §6)
+
+provenance sha256[:16]: {'score.py': '3a7b7c3efea13b88', 'metrics_new.py': 'a59c9c17f8abe4cc', 'run_v2.py': '7dfdc9f75de5980a'}

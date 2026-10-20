@@ -1,0 +1,55 @@
+P4-D1: A14 core->core statistic on planted in-order ciphers (pre-registered in the docstring)
+Clock: Sat Oct 17 22:31:26 PDT 2026
+Stub: p4d1_core_order.py=MATCH corpora.py=MATCH s34_morphology_syntax_geography.py=MATCH scoreboard/metrics_new.py=MATCH vparse.py=MATCH
+
+Voynich ZL3b  ALL cores=2335  pairs=30727  excess=-0.0315  null sd=0.0061
+Voynich ZL3b  A   cores=2335  pairs=9674   excess=-0.0783  null sd=0.0120
+Voynich ZL3b  B   cores=2335  pairs=20600  excess=-0.0246  null sd=0.0070
+Voynich RF1b  ALL cores=2229  pairs=27020  excess=-0.0453  null sd=0.0076
+Voynich RF1b  A   cores=2229  pairs=8872   excess=-0.0830  null sd=0.0117
+Voynich RF1b  B   cores=2229  pairs=17747  excess=-0.0337  null sd=0.0076
+Voynich IT2a  ALL cores=2380  pairs=30294  excess=-0.0354  null sd=0.0060
+Voynich IT2a  A   cores=2380  pairs=9524   excess=-0.0900  null sd=0.0116
+Voynich IT2a  B   cores=2380  pairs=20331  excess=-0.0244  null sd=0.0072
+Instrument check: ZL3b ALL -0.0315 vs s34 -0.0315 -> OK
+V_max = -0.0244; REACH threshold -0.0044
+
+K1 latin_caesar     tokens=34857  cores=1639  excess seeds +0.0586 +0.0531 +0.0697  mean +0.0605 sd 0.0052  oracle +0.3240  CLEAR
+K2 latin_caesar     tokens=19520  cores=1263  excess seeds +0.0056 +0.0046 +0.0073  mean +0.0058 sd 0.0075  oracle +0.0251  CLEAR
+K3 latin_caesar     tokens=34857  cores=2218  excess seeds +0.0889 +0.1144 +0.0953  mean +0.0995 sd 0.0068  oracle +0.4521  CLEAR
+K0 latin_caesar     tokens=34857  cores=1586  excess seeds +0.0065 +0.0069 -0.0097  mean +0.0012 sd 0.0054  oracle +0.0021  
+K4 latin_caesar     tokens=34857  cores=1639  excess seeds -0.0023 -0.0037 +0.0060  mean +0.0000 sd 0.0057  oracle +0.0009  
+
+K1 latin_augustine  tokens=34857  cores=1666  excess seeds +0.0695 +0.0627 +0.0709  mean +0.0677 sd 0.0055  oracle +0.3220  CLEAR
+K2 latin_augustine  tokens=34857  cores=1857  excess seeds +0.0031 +0.0070 +0.0148  mean +0.0083 sd 0.0058  oracle +0.0296  CLEAR
+K3 latin_augustine  tokens=34857  cores=2272  excess seeds +0.0808 +0.0995 +0.0976  mean +0.0926 sd 0.0071  oracle +0.3885  CLEAR
+K0 latin_augustine  tokens=34857  cores=1586  excess seeds +0.0065 +0.0069 -0.0097  mean +0.0012 sd 0.0054  oracle +0.0021  
+K4 latin_augustine  tokens=34857  cores=1666  excess seeds -0.0125 -0.0033 -0.0088  mean -0.0082 sd 0.0056  oracle -0.0057  
+
+K1 italian_dante    tokens=34857  cores=1636  excess seeds +0.0777 +0.0671 +0.0820  mean +0.0756 sd 0.0054  oracle +0.3590  CLEAR
+K2 italian_dante    tokens=34857  cores=1860  excess seeds -0.0198 -0.0220 -0.0131  mean -0.0183 sd 0.0052  oracle +0.0202  REACHES Voynich
+K3 italian_dante    tokens=34857  cores=2229  excess seeds +0.0827 +0.0827 +0.1025  mean +0.0893 sd 0.0071  oracle +0.4228  CLEAR
+K0 italian_dante    tokens=34857  cores=1586  excess seeds +0.0065 +0.0069 -0.0097  mean +0.0012 sd 0.0054  oracle +0.0021  
+K4 italian_dante    tokens=34857  cores=1636  excess seeds -0.0022 -0.0021 -0.0021  mean -0.0021 sd 0.0053  oracle +0.0010  
+
+K1 german_faust     tokens=34857  cores=1623  excess seeds +0.1544 +0.1482 +0.1600  mean +0.1542 sd 0.0057  oracle +0.4961  CLEAR
+K2 german_faust     tokens=29412  cores=1775  excess seeds -0.0022 -0.0065 -0.0041  mean -0.0043 sd 0.0063  oracle +0.0106  CLEAR
+K3 german_faust     tokens=34857  cores=2241  excess seeds +0.1413 +0.1261 +0.1384  mean +0.1353 sd 0.0069  oracle +0.5309  CLEAR
+K0 german_faust     tokens=34857  cores=1586  excess seeds +0.0065 +0.0069 -0.0097  mean +0.0012 sd 0.0054  oracle +0.0021  
+K4 german_faust     tokens=34857  cores=1623  excess seeds -0.0010 -0.0095 -0.0048  mean -0.0051 sd 0.0054  oracle -0.0022  
+
+K1 german_kafka     tokens=34857  cores=1653  excess seeds +0.1179 +0.1105 +0.1207  mean +0.1164 sd 0.0054  oracle +0.5042  CLEAR
+K2 german_kafka     tokens=18269  cores=1198  excess seeds +0.0265 +0.0415 +0.0271  mean +0.0317 sd 0.0080  oracle +0.0889  CLEAR
+K3 german_kafka     tokens=34857  cores=2267  excess seeds +0.1344 +0.1398 +0.1294  mean +0.1345 sd 0.0072  oracle +0.5852  CLEAR
+K0 german_kafka     tokens=34857  cores=1586  excess seeds +0.0065 +0.0069 -0.0097  mean +0.0012 sd 0.0054  oracle +0.0021  
+K4 german_kafka     tokens=34857  cores=1653  excess seeds -0.0014 -0.0036 +0.0030  mean -0.0007 sd 0.0054  oracle +0.0025  
+
+K1 english_alice    tokens=34857  cores=1635  excess seeds +0.0874 +0.0870 +0.0834  mean +0.0859 sd 0.0055  oracle +0.4098  CLEAR
+K2 english_alice    tokens=26056  cores=1434  excess seeds +0.0357 +0.0421 +0.0318  mean +0.0365 sd 0.0063  oracle +0.2004  CLEAR
+K3 english_alice    tokens=34857  cores=2324  excess seeds +0.0995 +0.1159 +0.0947  mean +0.1033 sd 0.0072  oracle +0.5125  CLEAR
+K0 english_alice    tokens=34857  cores=1586  excess seeds +0.0065 +0.0069 -0.0097  mean +0.0012 sd 0.0054  oracle +0.0021  
+K4 english_alice    tokens=34857  cores=1635  excess seeds -0.0039 +0.0033 +0.0088  mean +0.0027 sd 0.0057  oracle +0.0008  
+
+Cells: 18; CLEAR 17; REACH 1
+Non-clear cells: K2/italian_dante -0.0183
+VERDICT P4-D1: MIXED

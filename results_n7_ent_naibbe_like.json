@@ -1,0 +1,190 @@
+{
+ "row": {
+  "name": "naibbe_like",
+  "tokens": 25003,
+  "types": 21627,
+  "pages": 169,
+  "lines": 3369,
+  "errors": {},
+  "types_25k": 21624,
+  "h2": 4.0771,
+  "sd_len": 3.25,
+  "jsd_first_fg": 0.0026,
+  "p_init_enrich": null,
+  "m_final_enrich": null,
+  "cross_excess_eva": 0.0017,
+  "redup_pct": 0.0,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "jsd_first_fg",
+   "cross_excess_eva",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "naibbe_like",
+   "tokens": 25000,
+   "types": 21624,
+   "hapax_rate": 0.9641,
+   "mean_len": 7.431,
+   "sd_len": 3.25,
+   "h1": 4.1939,
+   "h2": 4.0771,
+   "h3": 3.8501,
+   "zipf": -0.8371,
+   "redup_pct": 0.0,
+   "jsd_first_fg": 0.0026,
+   "jsd_last_lg": 0.0039,
+   "p_init_enrich": null,
+   "m_final_enrich": null,
+   "cross_mi_eva": 0.0115,
+   "cross_excess_eva": 0.0017,
+   "cross_mi_glyph": 0.0208,
+   "cross_excess_glyph": 0.0017,
+   "recur_le_1": 0.0,
+   "recur_le_5": 0.0006,
+   "recur_le_20": 0.0033,
+   "recur_le_100": 0.0147
+  },
+  "x_edge_mi_word": 0.0017610200657895668,
+  "x_hapax_10k": 0.9674841252463324,
+  "x_moran_I": -0.021935293341680373,
+  "x_position_entropy": 2.2945665596120506,
+  "x_ltr_minus_rtl": 0.002919079942650208,
+  "info_mi_adjacent": -0.0436922503570325,
+  "info_mi_page": -0.004525052211351577,
+  "info_samecol_minus_othercol": 0.026679699938377904,
+  "info_bpe_adjacent": 0.17751933459241986,
+  "lex_beta": 0.9766115737122564,
+  "lex_rate_late_early": 0.86084142394822,
+  "lex_edit1_excess": 0.0006935774726036896,
+  "slot_occupancy_pc": 0.042207441055591606,
+  "slot_table_likeness": 0.9501682754296531,
+  "slot_core_crowding": 0.33771360588362537,
+  "bake_winner": "markov2",
+  "bake_char3_minus_unigram": -0.42448144519546105,
+  "bake_bits": {
+   "markov2": 32.84525872822499,
+   "markov3": 32.986670475049344,
+   "slot": 34.68096354199884,
+   "unigram_gt": 33.411151920244805,
+   "copy0.3+markov3": 33.461991005433205,
+   "copy0.1+markov3": 33.12342353655509,
+   "copy0.05+markov3": 33.0515808194194
+  },
+  "family": "-",
+  "note": "data\\controls_synthetic\\naibbe_like.meta.json; 34994 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 7,
+    "outs": 9,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "types_25k",
+     "x_position_entropy",
+     "lex_beta",
+     "lex_rate_late_early",
+     "slot_table_likeness",
+     "slot_core_crowding"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "types_25k",
+     "x_position_entropy",
+     "lex_rate_late_early",
+     "slot_core_crowding"
+    ]
+   },
+   "C": {
+    "ins": 8,
+    "outs": 8,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "types_25k",
+     "x_ltr_minus_rtl",
+     "lex_beta",
+     "lex_rate_late_early",
+     "slot_core_crowding"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "types_25k",
+     "lex_beta",
+     "lex_rate_late_early",
+     "slot_core_crowding"
+    ]
+   },
+   "G": {
+    "ins": 6,
+    "outs": 10,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "redup_pct",
+     "types_25k",
+     "x_position_entropy",
+     "x_moran_I",
+     "lex_beta",
+     "lex_rate_late_early",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding"
+    ],
+    "out_tight": [
+     "h2",
+     "redup_pct",
+     "types_25k",
+     "x_position_entropy",
+     "x_moran_I",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding"
+    ]
+   },
+   "X": {
+    "ins": 6,
+    "outs": 9,
+    "na": 3,
+    "out_metrics": [
+     "jsd_first_fg",
+     "x_edge_mi_word",
+     "x_moran_I",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding",
+     "bake_char3_minus_unigram"
+    ],
+    "out_tight": [
+     "x_edge_mi_word",
+     "x_moran_I",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding",
+     "bake_char3_minus_unigram"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "n7_gibberish_ranges.json"
+}

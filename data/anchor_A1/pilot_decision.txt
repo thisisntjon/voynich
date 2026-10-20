@@ -1,0 +1,7 @@
+s115-A1 pilot decision (rules from CODEBOOK.md, applied mechanically to pilot_kappa.txt)
+Pilot: 15 images (pilot_images.txt, seed 115), two passes (parts/pilot_pass1.tsv, parts/pilot_pass2.tsv).
+KEPT (kappa >= 0.6, n >= 4): PT (1.000, n=15), P_plants (1.000, n=5), P_leafshape (1.000, n=5), P_leafcount (1.000, n=5), P_flower (1.000, n=5), P_habit (1.000, n=5)
+DROPPED (kappa < 0.6, n >= 4): P_root (0.444, n=5)
+CARRIED UNDECIDED (n < 4 or kappa undefined): J_shape, J_count, J_fragcount, J_fragtype (n=2); C_centre, C_animal, C_figures, C_rings, C_diagrams, C_rays (n=2); B_pools, B_figures, B_tubes (n=3)
+Full run: rows keep all 20 columns (format unchanged); P_root is still filled but is DROPPED at the pilot and cannot become KEPT; its full-run kappa is reported for information only.
+Caveat: both passes are the same vision model in separate contexts, so kappa measures self-consistency of that model, not agreement between independent human viewers.

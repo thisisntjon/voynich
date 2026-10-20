@@ -1,0 +1,11 @@
+s101 FIXTURE (synthetic only; no Voynich data read)
+date: 2026-10-18 12:55:58 (datetime.now)
+device: cuda (NVIDIA GeForce RTX 5080); below_normal=True; free RAM=4.8 GB; stub_match=NO STUB
+  fixture fold A: raw 4/6, recentred 5/6, fitted {'p_rep': 0.15, 'tau': 4.0, 'gamma': 1.0, 'rho': 0.5}
+  fixture fold B: raw 4/6, recentred 5/6, fitted {'p_rep': 0.15, 'tau': 4.0, 'gamma': 1.0, 'rho': 0.5}
+  fixture fold C: raw 4/6, recentred 5/6, fitted {'p_rep': 0.15, 'tau': 4.0, 'gamma': 1.0, 'rho': 0.5}
+  fixture fold D: raw 4/6, recentred 5/6, fitted {'p_rep': 0.15, 'tau': 4.0, 'gamma': 1.0, 'rho': 0.5}
+  fixture fold E: raw 4/6, recentred 5/6, fitted {'p_rep': 0.15, 'tau': 4.0, 'gamma': 1.0, 'rho': 0.5}
+  fixture fold F: raw 4/6, recentred 5/6, fitted {'p_rep': 0.15, 'tau': 4.0, 'gamma': 1.0, 'rho': 0.5}
+fixture summary: raw=0/6 (UNINFORMATIVE), recentred=6/6 (POWERED)
+FIXTURE PASS (10.3s; date 2026-10-18 12:56:08 (datetime.now))

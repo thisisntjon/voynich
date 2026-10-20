@@ -1,0 +1,68 @@
+r11.py mode=fixture run at (clock): 2026-10-18T14:01:20-07:00
+r11.py sha256: 668037abf5c53d809de8a3d80bc07b7e915034a6d4a9335a2674b1259a2e7867
+r7.py (local import) sha256: 0d5e65db45b3c410bfbcab5b56d45adaab09b09c9af007b3546538a5b9f69b96
+  FIX_PLANTED S1: (b) 15, (c) 15, (b)&(c) 15 of 15 blocks (threshold 8) -> SHOWS (b)&(c)
+      B00  (b) R 2.614 p 0.0005 True  | (c) D +6.182 (Rw' 8.008 / Rx' 1.826) p 0.0005 True 
+      B01  (b) R 2.597 p 0.0005 True  | (c) D +6.942 (Rw' 8.835 / Rx' 1.893) p 0.0005 True 
+      B02  (b) R 2.812 p 0.0005 True  | (c) D +8.886 (Rw' 9.993 / Rx' 1.106) p 0.0005 True 
+      B03  (b) R 2.516 p 0.0005 True  | (c) D +6.665 (Rw' 8.090 / Rx' 1.425) p 0.0005 True 
+      B04  (b) R 2.643 p 0.0005 True  | (c) D +8.279 (Rw' 9.531 / Rx' 1.252) p 0.0005 True 
+      B05  (b) R 2.665 p 0.0005 True  | (c) D +8.493 (Rw' 9.606 / Rx' 1.113) p 0.0005 True 
+      B06  (b) R 2.720 p 0.0005 True  | (c) D +8.319 (Rw' 9.396 / Rx' 1.078) p 0.0005 True 
+      B07  (b) R 2.585 p 0.0005 True  | (c) D +7.296 (Rw' 8.661 / Rx' 1.365) p 0.0005 True 
+      B08  (b) R 2.738 p 0.0005 True  | (c) D +8.880 (Rw' 9.808 / Rx' 0.928) p 0.0005 True 
+      B09  (b) R 2.746 p 0.0005 True  | (c) D +6.068 (Rw' 8.532 / Rx' 2.464) p 0.0005 True 
+      B10  (b) R 2.546 p 0.0005 True  | (c) D +8.718 (Rw' 10.317 / Rx' 1.600) p 0.0005 True 
+      B11  (b) R 2.860 p 0.0005 True  | (c) D +9.415 (Rw' 10.387 / Rx' 0.972) p 0.0005 True 
+      B12  (b) R 2.439 p 0.0005 True  | (c) D +6.752 (Rw' 8.070 / Rx' 1.318) p 0.0005 True 
+      B13  (b) R 2.425 p 0.0005 True  | (c) D +7.906 (Rw' 8.970 / Rx' 1.064) p 0.0005 True 
+      B14  (b) R 2.712 p 0.0005 True  | (c) D +8.794 (Rw' 10.293 / Rx' 1.499) p 0.0005 True 
+  FIX_PLANTED S0: (b) 4, (c) 7, (b)&(c) 4 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9825 False
+      B01  (b) R 3.132 p 0.0415 True  | (c) D +16.622 (Rw' 16.622 / Rx' 0.000) p 0.0010 True 
+      B02  (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9805 False
+      B03  (b) R 1.963 p 0.2554 False | (c) D +11.518 (Rw' 11.518 / Rx' 0.000) p 0.0130 True 
+      B04  (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9845 False
+      B05  (b) R 4.109 p 0.0125 True  | (c) D +21.185 (Rw' 21.185 / Rx' 0.000) p 0.0005 True 
+      B06  (b) R 4.472 p 0.0040 True  | (c) D +29.078 (Rw' 29.078 / Rx' 0.000) p 0.0010 True 
+      B07  (b) R 2.500 p 0.3683 False | (c) D +6.625 (Rw' 6.625 / Rx' 0.000) p 0.1439 False
+      B08  (b) R 2.841 p 0.0200 True  | (c) D +25.086 (Rw' 25.086 / Rx' 0.000) p 0.0005 True 
+      B09  (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9865 False
+      B10  (b) R nan p 1.0000 False | (c) D -43.968 (Rw' 0.000 / Rx' 43.968) p 1.0000 False
+      B11  (b) R 2.000 p 0.4318 False | (c) D +6.252 (Rw' 6.252 / Rx' 0.000) p 0.1339 False
+      B12  (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9725 False
+      B13  (b) R 2.493 p 0.0515 False | (c) D +21.197 (Rw' 21.197 / Rx' 0.000) p 0.0005 True 
+      B14  (b) R 2.353 p 0.2074 False | (c) D +17.187 (Rw' 17.187 / Rx' 0.000) p 0.0075 True 
+  FIX_WORD_MARKOV S1: (b) 2, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 1.140 p 0.1859 False | (c) D +0.546 (Rw' 1.246 / Rx' 0.700) p 0.1494 False
+      B01  (b) R 0.939 p 0.6867 False | (c) D -1.048 (Rw' 0.866 / Rx' 1.914) p 0.9600 False
+      B02  (b) R 0.939 p 0.6842 False | (c) D -0.460 (Rw' 0.925 / Rx' 1.385) p 0.8226 False
+      B03  (b) R 0.945 p 0.7131 False | (c) D +0.030 (Rw' 1.062 / Rx' 1.033) p 0.5117 False
+      B04  (b) R 1.191 p 0.1129 False | (c) D -0.170 (Rw' 1.252 / Rx' 1.423) p 0.6477 False
+      B05  (b) R 0.900 p 0.7606 False | (c) D -0.191 (Rw' 0.814 / Rx' 1.005) p 0.6702 False
+      B06  (b) R 0.896 p 0.8026 False | (c) D -1.248 (Rw' 0.869 / Rx' 2.117) p 0.9890 False
+      B07  (b) R 1.203 p 0.1229 False | (c) D -0.438 (Rw' 1.148 / Rx' 1.586) p 0.8071 False
+      B08  (b) R 1.284 p 0.0360 True  | (c) D -0.591 (Rw' 1.357 / Rx' 1.948) p 0.8771 False
+      B09  (b) R 1.054 p 0.4048 False | (c) D -0.009 (Rw' 0.962 / Rx' 0.971) p 0.5347 False
+      B10  (b) R 0.888 p 0.8166 False | (c) D -0.765 (Rw' 0.965 / Rx' 1.729) p 0.9250 False
+      B11  (b) R 0.892 p 0.8096 False | (c) D -0.450 (Rw' 1.005 / Rx' 1.455) p 0.8181 False
+      B12  (b) R 1.184 p 0.1489 False | (c) D -0.050 (Rw' 1.038 / Rx' 1.088) p 0.5747 False
+      B13  (b) R 1.134 p 0.2014 False | (c) D -0.294 (Rw' 1.137 / Rx' 1.431) p 0.7191 False
+      B14  (b) R 1.333 p 0.0100 True  | (c) D +0.684 (Rw' 1.591 / Rx' 0.907) p 0.0830 False
+  FIX_WORD_MARKOV S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9735 False
+      B01  (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9875 False
+      B02  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9740 False
+      B03  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9765 False
+      B04  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9845 False
+      B05  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9655 False
+      B06  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9715 False
+      B07  (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9775 False
+      B08  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9560 False
+      B09  (b) R 5.000 p 0.1994 False | (c) D +5.219 (Rw' 5.219 / Rx' 0.000) p 0.1774 False
+      B10  (b) R nan p 1.0000 False | (c) D -31.584 (Rw' 0.000 / Rx' 31.584) p 1.0000 False
+      B11  (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9725 False
+      B12  (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9690 False
+      B13  (b) R 3.000 p 0.3303 False | (c) D +7.032 (Rw' 7.032 / Rx' 0.000) p 0.1389 False
+      B14  (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9825 False
+FIXTURE CHECK: planted shows (b)&(c) under S1: True ; word-Markov does not (S0,S1): True ; overall OK

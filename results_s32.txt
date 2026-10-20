@@ -1,0 +1,54 @@
+S32: O-047 — Voynich line-initial JSD excess vs verse / formulaic Latin at matched line counts
+run started Sat Oct 17 21:08:15 PDT 2026 (`date`)
+s32_matched_verse.py sha256=d0e7623720bde69ee41d5a891e5a4759ff86a25aba1fc558573566765379176e  prereg stub_match=True
+manuscript excess values and line counts: results_s18.txt pooling-guard table (sha256 d5e4ac070700624b…)
+estimator: a2_position.stats (feat w[0]) raw jsd_first; null = mean of a2_position.null n=30; excess = raw - null; Voynich = ZL3b via run_v2 M.voynich_pages('eva'); 200 draws per size, random.Random(20261017).sample
+
+ZL3b full: 4130 lines (4045 with >=3 words); jsd_first raw 0.1759 null 0.0019 excess +0.1740
+
+=== manuscript rows: s18 value used; in-memory recomputation from the sidecar as a check ===
+row                | lines |  exc used | recomputed raw          null      exc | lines match / exc match | source; text type
+LaurPlut33.31      |   201 |   +0.1370 |         0.1704 0.0334±0.0091  +0.1370 | True / True | results_s18.txt; Priapea 12-45, verse
+Egerton821         |   114 |   +0.1324 |         0.1880 0.0557±0.0147  +0.1324 | True / True | results_s18.txt; Sortes sanctorum, charms (formulaic prose)
+LaurPlut39.34      |   131 |   +0.1017 |         0.1502 0.0485±0.0135  +0.1017 | True / True | results_s18.txt; Priapea 1-16, verse
+CCCC-MSS-236       |   160 |   +0.0642 |         0.1059 0.0416±0.0118  +0.0642 | True / True | results_s18.txt; Martial, Epigrams I, verse
+Latin-verse-pool   |   492 |   +0.0941 |         0.1108 0.0168±0.0037  +0.0941 | True / True | computed here; LaurPlut33.31 + LaurPlut39.34 + CCCC-MSS-236, in memory
+pooled Latin verse: 15 pages, 492 lines (476 with >=3 words), 3175 tokens; members cremma_LaurPlut33.31, cremma_LaurPlut39.34, cremma_CCCC-MSS-236
+
+=== Voynich ZL3b draws: 200 per size, rng re-seeded per size; median [2.5 %, 97.5 %] ===
+    k |                jsd_first raw |                         null |                          excess
+  114 | 0.1991 [0.1374, 0.2588] | 0.0279 [0.0237, 0.0330] | +0.1702 [+0.1082, +0.2313]
+  131 | 0.1949 [0.1401, 0.2538] | 0.0243 [0.0205, 0.0302] | +0.1696 [+0.1150, +0.2293]
+  160 | 0.1966 [0.1461, 0.2439] | 0.0205 [0.0175, 0.0247] | +0.1747 [+0.1227, +0.2216]
+  200 | 0.1890 [0.1440, 0.2390] | 0.0168 [0.0144, 0.0195] | +0.1720 [+0.1283, +0.2232]
+  201 | 0.1890 [0.1475, 0.2478] | 0.0166 [0.0141, 0.0201] | +0.1722 [+0.1305, +0.2306]
+  492 | 0.1810 [0.1530, 0.2111] | 0.0078 [0.0065, 0.0093] | +0.1738 [+0.1465, +0.2034]
+  773 | 0.1789 [0.1581, 0.2038] | 0.0055 [0.0045, 0.0063] | +0.1734 [+0.1528, +0.1980]
+
+=== rows: manuscript excess vs matched-size Voynich draw excess; diff = Voynich median - manuscript; interval = 2.5/97.5 % of (draw excess - manuscript excess) ===
+row                | lines |   ms exc |       voy exc med [2.5, 97.5] |     diff          [2.5, 97.5] | position
+LaurPlut33.31      |   201 |  +0.1370 | +0.1722 [+0.1305, +0.2306] |  +0.0352 [-0.0065, +0.0936] | inside
+Egerton821         |   114 |  +0.1324 | +0.1702 [+0.1082, +0.2313] |  +0.0378 [-0.0242, +0.0989] | inside
+LaurPlut39.34      |   131 |  +0.1017 | +0.1696 [+0.1150, +0.2293] |  +0.0679 [+0.0133, +0.1276] | below
+CCCC-MSS-236       |   160 |  +0.0642 | +0.1747 [+0.1227, +0.2216] |  +0.1105 [+0.0585, +0.1574] | below
+Latin-verse-pool   |   492 |  +0.0941 | +0.1738 [+0.1465, +0.2034] |  +0.0797 [+0.0524, +0.1093] | below
+
+=== s17 verse/epic corpora at [200, 773] lines: first N lines of a random page order (random.Random(20261017).shuffle on load_meta+subsample(25000) pages, re-seeded per corpus); vs Voynich draws at the same N ===
+corpus               |    N | pages used |     raw          null      exc |       voy exc med [2.5, 97.5] |     diff | position
+mhg_nibelungenlied   |  200 |          2 |  0.1079 0.0261±0.0067  +0.0819 | +0.1720 [+0.1283, +0.2232] |  +0.0901 | below
+mhg_nibelungenlied   |  773 |          3 |  0.0936 0.0064±0.0018  +0.0872 | +0.1734 [+0.1528, +0.1980] |  +0.0862 | below
+oldfrench_roland     |  200 |         16 |  0.0461 0.0264±0.0077  +0.0197 | +0.1720 [+0.1283, +0.2232] |  +0.1523 | below
+oldfrench_roland     |  773 |         57 |  0.0360 0.0071±0.0025  +0.0289 | +0.1734 [+0.1528, +0.1980] |  +0.1445 | below
+occitan_croisade     |  200 |         10 |  0.0833 0.0243±0.0070  +0.0591 | +0.1720 [+0.1283, +0.2232] |  +0.1129 | below
+occitan_croisade     |  773 |         37 |  0.0656 0.0067±0.0020  +0.0589 | +0.1734 [+0.1528, +0.1980] |  +0.1145 | below
+italian_dante        |  200 |          2 |  0.0760 0.0213±0.0073  +0.0547 | +0.1720 [+0.1283, +0.2232] |  +0.1172 | below
+italian_dante        |  773 |          6 |  0.0421 0.0060±0.0015  +0.0360 | +0.1734 [+0.1528, +0.1980] |  +0.1374 | below
+
+=== READING (pre-registered rule) ===
+five rows (4 manuscripts + pooled verse): verse reaches Voynich at small counts — inside/above: LaurPlut33.31, Egerton821
+four manuscripts only: verse reaches Voynich at small counts — inside/above: LaurPlut33.31, Egerton821
+s17 verse corpora at equal size: all below the 2.5 % Voynich draw excess at 200 and 773 lines
+largest manuscript excess +0.1370 (LaurPlut33.31); smallest 2.5 % Voynich draw excess over the row sizes +0.1082 (k=114)
+
+done-when: 5 manuscript/pooled rows + 4 s17 corpora x 2 sizes with matched Voynich draws and the pre-registered reading -> MET; reading = verse reaches Voynich at small counts
+run finished Sat Oct 17 21:08:54 PDT 2026 (`date`)

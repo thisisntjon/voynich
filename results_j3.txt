@@ -1,0 +1,7 @@
+J3 collapse: K=244 classes over 489 types; types raw=7025 collapsed=6780
+voynich_raw                h2=2.126 sd=1.76 types=5417 JSDf=0.1759 excess=+0.1809 redup=0.896%
+voynich_class_collapsed    h2=2.084 sd=1.78 types=5172 JSDf=0.1086 excess=+0.1063 redup=1.66%
+Latin LM self-score (reference): -2.666
+raw Voynich -> Latin: solver score -3.787 bits/char (units=23) decode: c o a t e e   e r o s   o s   o n o s s e   e t i s   e t i s e   a n t s u e   e   r i s   e t i s n e   e i s e   a r t o s   i s   e
+collapsed Voynich -> Latin: solver score -4.114 bits/char (units=23) decode: i r t e m s   n u r i   r e   r a r i i s   s e n i   s e n e m   t a e e u s   s   s n e   s e n i a m   s n e m   t u e r e   n e   s
+pseudo-Voynich null -> Latin: solver score -4.014 bits/char (units=21) decode: e r e t r i s   i s   a r t t e   e   d i t a r u s i t i s   i a t a c a t u m m o   e   e   e   e u m o   n u s   i n   e t e i s   i

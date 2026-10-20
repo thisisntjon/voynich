@@ -1,0 +1,5 @@
+stub frozen: Sun Oct 18 01:26:27 PDT 2026 (`date`)
+stub: c2548182424928f3b115f38337f178508f2c579223510d12cd3f50b85adef190
+script sha256: 059a218127de9fbbde080dc78c658e6b31dec3ecae33be7c5b8b511b81266622
+covers: s61_joint_word_producer.py (script) and s57_local_memory_model.py (imported scoring code; unchanged since s57)
+fixture: runs/s61/fixture.txt FIXTURE PASS before freeze (planted p_copy 0.2 recovered as 0.2)

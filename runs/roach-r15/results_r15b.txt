@@ -1,0 +1,45 @@
+r15b real
+clock start 2026-10-18 20:44:16 Pacific Daylight Time
+stub abc0d07a98771def51a193a3511002f0e5df47d2d26d27c4720923b164aabe32
+stub match YES
+== ZL dropped {'kept': 94, 'short': 132, 'label': 1} layout {'n': 94, 'quires': 15, 'cells': 13, 'cells_multi_quire': 6, 'folios_in_multi': 67}
+ZL features I:o I:q I:ch I:sh I:d I:a I:l I:y I:k I:s I:t I:p I:r I:cth I:ckh I:f I:e I:cph I:c F:y F:n F:l F:r F:s F:m F:o F:d F:g F:e F:k F:a F:t F:p F:sh F:f F:ch F:i F:ckh mean_len entropy
+TEST A ZL obs=6.572585 p=0.000900 ge=8 threshold=0.01 HIT
+ZL test B folios 94
+MDE grid ZL delta 0.25 hits 0 of 10
+MDE grid ZL delta 0.50 hits 5 of 10
+MDE grid ZL delta 0.75 hits 7 of 10
+MDE grid ZL delta 1.00 hits 9 of 10
+MDE grid ZL delta 1.50 hits 10 of 10
+MDE grid ZL delta 2.00 hits 10 of 10
+MDE grid ZL delta 3.00 hits 10 of 10
+MDE ZL 1.00
+TEST B ZL obs=0.215691 p=0.451955 ge=4519
+== IT dropped {'kept': 95, 'short': 129, 'label': 1} layout {'n': 95, 'quires': 15, 'cells': 13, 'cells_multi_quire': 6, 'folios_in_multi': 68}
+IT features I:o I:q I:ch I:sh I:d I:a I:l I:y I:s I:k I:t I:p I:r I:cth I:ckh I:f I:e I:cph I:c F:y F:n F:l F:r F:m F:s F:o F:d F:e F:k F:a F:g F:t F:sh F:p F:ch F:f F:i F:c mean_len entropy
+TEST A IT obs=6.630288 p=0.000600 ge=5 threshold=0.05 HIT
+IT test B folios 95
+MDE grid IT delta 0.25 hits 1 of 10
+MDE grid IT delta 0.50 hits 5 of 10
+MDE grid IT delta 0.75 hits 8 of 10
+MDE grid IT delta 1.00 hits 9 of 10
+MDE grid IT delta 1.50 hits 10 of 10
+MDE grid IT delta 2.00 hits 10 of 10
+MDE grid IT delta 3.00 hits 10 of 10
+MDE IT 0.75
+TEST B IT obs=0.205452 p=0.463454 ge=4634
+== RF dropped {'kept': 79, 'short': 147, 'label': 1} layout {'n': 79, 'quires': 13, 'cells': 10, 'cells_multi_quire': 5, 'folios_in_multi': 56}
+RF features I:o I:q I:ch I:sh I:d I:a I:l I:y I:s I:k I:t I:r I:p I:cth I:ckh I:f I:e I:cph I:c F:y F:n F:l F:r F:s F:o F:m F:d F:g F:e F:k F:t F:a F:p F:sh F:ch F:f F:i F:ckh mean_len entropy
+TEST A RF obs=7.633512 p=0.054495 ge=544 threshold=0.05 MISS
+RF test B folios 79
+MDE grid RF delta 0.25 hits 0 of 10
+MDE grid RF delta 0.50 hits 1 of 10
+MDE grid RF delta 0.75 hits 5 of 10
+MDE grid RF delta 1.00 hits 8 of 10
+MDE grid RF delta 1.50 hits 9 of 10
+MDE grid RF delta 2.00 hits 10 of 10
+MDE grid RF delta 3.00 hits 10 of 10
+MDE RF 1.00
+TEST B RF obs=0.289285 p=0.345265 ge=3452
+CALL Test A: NO DRIFT
+clock end 2026-10-18 20:44:28 Pacific Daylight Time

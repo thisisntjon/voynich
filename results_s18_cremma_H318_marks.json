@@ -1,0 +1,131 @@
+{
+ "row": {
+  "name": "cremma_H318_marks",
+  "tokens": 4676,
+  "types": 2081,
+  "pages": 5,
+  "lines": 414,
+  "errors": {
+   "extra": "ZeroDivisionError: float division by zero",
+   "bake": "KeyError: 'markov3'"
+  },
+  "types_25k": 2081,
+  "h2": 3.4511,
+  "sd_len": 2.657,
+  "jsd_first_fg": 0.0354,
+  "p_init_enrich": 1.05,
+  "m_final_enrich": 1.44,
+  "cross_excess_eva": 0.0819,
+  "redup_pct": 0.043,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "jsd_first_fg",
+   "p_init_enrich",
+   "m_final_enrich",
+   "cross_excess_eva",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "cremma_H318_marks",
+   "tokens": 4676,
+   "types": 2081,
+   "hapax_rate": 0.7472,
+   "mean_len": 4.511,
+   "sd_len": 2.657,
+   "h1": 4.413,
+   "h2": 3.4511,
+   "h3": 2.7053,
+   "zipf": -0.831,
+   "redup_pct": 0.043,
+   "jsd_first_fg": 0.0354,
+   "jsd_last_lg": 0.0628,
+   "p_init_enrich": 1.05,
+   "m_final_enrich": 1.44,
+   "cross_mi_eva": 0.2809,
+   "cross_excess_eva": 0.0819,
+   "cross_mi_glyph": 0.2977,
+   "cross_excess_glyph": 0.0822,
+   "recur_le_1": 0.0004,
+   "recur_le_5": 0.0554,
+   "recur_le_20": 0.1681,
+   "recur_le_100": 0.3343
+  },
+  "info_mi_adjacent": 0.317914284689516,
+  "info_mi_page": 0.011123134478170371,
+  "info_samecol_minus_othercol": -0.025800906136503876,
+  "info_bpe_adjacent": 0.9736694542206947,
+  "lex_beta": 0.8946048029109652,
+  "lex_rate_late_early": 0.6944444444444444,
+  "lex_edit1_excess": 0.15377222489187892,
+  "slot_occupancy_pc": 0.0450281425891182,
+  "slot_table_likeness": 0.7965047839436549,
+  "slot_core_crowding": 0.6367831245880027,
+  "x_edge_mi_word": null,
+  "x_position_entropy": null,
+  "x_ltr_minus_rtl": null,
+  "x_moran_I": null,
+  "bake_char3_minus_unigram": null,
+  "x_hapax_10k": null,
+  "bake_winner": null,
+  "family": "L",
+  "note": ".//data//controls_realline//cremma_H318_marks.meta.json; 4676 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 6,
+    "outs": 1,
+    "na": 3,
+    "out_metrics": [
+     "jsd_first_fg"
+    ],
+    "out_tight": [
+     "jsd_first_fg"
+    ]
+   },
+   "C": {
+    "ins": 2,
+    "outs": 3,
+    "na": 5,
+    "out_metrics": [
+     "cross_excess_eva",
+     "redup_pct",
+     "types_25k"
+    ],
+    "out_tight": [
+     "cross_excess_eva",
+     "redup_pct",
+     "types_25k"
+    ]
+   },
+   "G": {
+    "ins": 5,
+    "outs": 2,
+    "na": 3,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva"
+    ]
+   },
+   "X": {
+    "ins": 6,
+    "outs": 0,
+    "na": 4,
+    "out_metrics": [],
+    "out_tight": []
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": ".//s15_ranges.json"
+}

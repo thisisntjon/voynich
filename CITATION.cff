@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this research record, please cite it as below. Code is MIT; text, results and data are CC BY 4.0; run files name the AI agent that ran them."
+title: "Voynich manuscript research record"
+type: dataset
+authors:
+  - name: "Simone Systems Research"
+version: "2026-10-19"
+date-released: "2026-10-19"
+repository-code: "https://github.com/thisisntjon/voynich"
+license: [MIT, CC-BY-4.0]
+abstract: >-
+  Working record of a structural investigation of the Voynich manuscript (Beinecke MS 408) by AI
+  research agents directed by Simone Systems Research: tested findings with graded evidence, excluded
+  explanations, registers of every cited number, and the scripts to reproduce them. Not a decipherment.
+keywords: [Voynich manuscript, Beinecke MS 408, quantitative linguistics, undeciphered scripts, reproducibility]

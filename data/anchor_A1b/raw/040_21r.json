@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T03:53:51.6881349Z",
+ "response": "{\n  \"PT\": \"PLANT\",\n  \"P_plants\": \"1\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"21+\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"ROSETTE\",\n  \"J_shape\": \"NONE\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"0\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"EMPTY\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"21+\",\n  \"C_rings\": \"4+\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"0\",\n  \"B_figures\": \"0\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Single plant drawing with multiple leaves and no flowers.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2581385300,
+ "load_duration": 207924300,
+ "prompt_eval_count": 3182,
+ "prompt_eval_duration": 707414000,
+ "eval_count": 204,
+ "eval_duration": 1501208000,
+ "stem": "040_21r"
+}

@@ -1,0 +1,542 @@
+{
+ "ZL3b": {
+  "tokens": 34857,
+  "types": 7025,
+  "reg_tokens": 28671,
+  "reg_types": 3028,
+  "tok_share": 0.8225320595576211,
+  "typ_share": 0.4310320284697509,
+  "und_glyph_tok": 473,
+  "und_order_tok": 5713,
+  "und_multi_tok": 2909,
+  "grammar_tok": 20167,
+  "grammar_same_tok": 20167,
+  "layer_nonempty": {
+   "pfx_nonempty": 0.4669177914966342,
+   "core_nonempty": 0.835617871717066,
+   "sfx_nonempty": 0.9712601583481567
+  },
+  "und_top": [
+   [
+    "cheky",
+    59
+   ],
+   [
+    "checkhy",
+    47
+   ],
+   [
+    "chodaiin",
+    45
+   ],
+   [
+    "chos",
+    37
+   ],
+   [
+    "choty",
+    36
+   ],
+   [
+    "cheos",
+    36
+   ],
+   [
+    "choky",
+    35
+   ],
+   [
+    "sheckhy",
+    33
+   ],
+   [
+    "sheky",
+    31
+   ],
+   [
+    "checthy",
+    30
+   ],
+   [
+    "shodaiin",
+    24
+   ],
+   [
+    "cheeky",
+    23
+   ],
+   [
+    "chety",
+    20
+   ],
+   [
+    "chockhy",
+    19
+   ],
+   [
+    "shecthy",
+    19
+   ],
+   [
+    "chocthy",
+    18
+   ],
+   [
+    "chkaiin",
+    18
+   ],
+   [
+    "daldy",
+    18
+   ],
+   [
+    "aral",
+    16
+   ],
+   [
+    "chokaiin",
+    15
+   ],
+   [
+    "chky",
+    15
+   ],
+   [
+    "chokchy",
+    15
+   ],
+   [
+    "sheeky",
+    15
+   ],
+   [
+    "cheodaiin",
+    13
+   ],
+   [
+    "chotchy",
+    13
+   ],
+   [
+    "chkeey",
+    13
+   ],
+   [
+    "shky",
+    13
+   ],
+   [
+    "chodar",
+    12
+   ],
+   [
+    "chty",
+    12
+   ],
+   [
+    "qokechy",
+    12
+   ],
+   [
+    "g",
+    12
+   ],
+   [
+    "chkain",
+    12
+   ],
+   [
+    "chokeey",
+    12
+   ],
+   [
+    "shocthy",
+    11
+   ],
+   [
+    "aldy",
+    11
+   ],
+   [
+    "sheos",
+    11
+   ],
+   [
+    "checkhey",
+    11
+   ],
+   [
+    "as",
+    11
+   ],
+   [
+    "chekal",
+    11
+   ],
+   [
+    "arody",
+    11
+   ]
+  ]
+ },
+ "RF1b": {
+  "tokens": 34618,
+  "types": 7348,
+  "reg_tokens": 28066,
+  "reg_types": 3096,
+  "tok_share": 0.8107343000751054,
+  "typ_share": 0.42133913990201416,
+  "und_glyph_tok": 423,
+  "und_order_tok": 6129,
+  "und_multi_tok": 3046,
+  "grammar_tok": 19800,
+  "grammar_same_tok": 19800,
+  "layer_nonempty": {
+   "pfx_nonempty": 0.4730278628946056,
+   "core_nonempty": 0.8384522197676905,
+   "sfx_nonempty": 0.9716739114943348
+  },
+  "und_top": [
+   [
+    "cheky",
+    59
+   ],
+   [
+    "checkhy",
+    48
+   ],
+   [
+    "chodaiin",
+    46
+   ],
+   [
+    "choty",
+    37
+   ],
+   [
+    "chos",
+    37
+   ],
+   [
+    "choky",
+    34
+   ],
+   [
+    "cheos",
+    34
+   ],
+   [
+    "sheky",
+    33
+   ],
+   [
+    "checthy",
+    31
+   ],
+   [
+    "sheckhy",
+    31
+   ],
+   [
+    "cheeky",
+    25
+   ],
+   [
+    "shodaiin",
+    24
+   ],
+   [
+    "chety",
+    22
+   ],
+   [
+    "shecthy",
+    20
+   ],
+   [
+    "chocthy",
+    19
+   ],
+   [
+    "chockhy",
+    19
+   ],
+   [
+    "chkaiin",
+    18
+   ],
+   [
+    "chokchy",
+    17
+   ],
+   [
+    "chky",
+    16
+   ],
+   [
+    "daldy",
+    16
+   ],
+   [
+    "aral",
+    15
+   ],
+   [
+    "chokaiin",
+    14
+   ],
+   [
+    "sheos",
+    14
+   ],
+   [
+    "sheeky",
+    14
+   ],
+   [
+    "chodar",
+    13
+   ],
+   [
+    "chekal",
+    13
+   ],
+   [
+    "shky",
+    13
+   ],
+   [
+    "chkar",
+    12
+   ],
+   [
+    "chty",
+    12
+   ],
+   [
+    "qokechy",
+    12
+   ],
+   [
+    "chkeey",
+    12
+   ],
+   [
+    "shocthy",
+    12
+   ],
+   [
+    "chkain",
+    12
+   ],
+   [
+    "chokeey",
+    12
+   ],
+   [
+    "akain",
+    12
+   ],
+   [
+    "shos",
+    11
+   ],
+   [
+    "chotchy",
+    11
+   ],
+   [
+    "g",
+    11
+   ],
+   [
+    "akeey",
+    11
+   ],
+   [
+    "choldy",
+    10
+   ]
+  ]
+ },
+ "IT2a": {
+  "tokens": 34411,
+  "types": 7069,
+  "reg_tokens": 28280,
+  "reg_types": 3109,
+  "tok_share": 0.821830228705937,
+  "typ_share": 0.43980761069458196,
+  "und_glyph_tok": 378,
+  "und_order_tok": 5753,
+  "und_multi_tok": 2884,
+  "grammar_tok": 20178,
+  "grammar_same_tok": 20178,
+  "layer_nonempty": {
+   "pfx_nonempty": 0.48444130127298446,
+   "core_nonempty": 0.8515558698727016,
+   "sfx_nonempty": 0.9759547383309759
+  },
+  "und_top": [
+   [
+    "cheky",
+    60
+   ],
+   [
+    "checkhy",
+    47
+   ],
+   [
+    "chodaiin",
+    43
+   ],
+   [
+    "sheckhy",
+    35
+   ],
+   [
+    "sheky",
+    34
+   ],
+   [
+    "choty",
+    34
+   ],
+   [
+    "chos",
+    34
+   ],
+   [
+    "choky",
+    33
+   ],
+   [
+    "cheos",
+    30
+   ],
+   [
+    "checthy",
+    28
+   ],
+   [
+    "shodaiin",
+    23
+   ],
+   [
+    "chety",
+    23
+   ],
+   [
+    "cheeky",
+    22
+   ],
+   [
+    "shecthy",
+    20
+   ],
+   [
+    "chockhy",
+    19
+   ],
+   [
+    "chkaiin",
+    18
+   ],
+   [
+    "chocthy",
+    17
+   ],
+   [
+    "chky",
+    17
+   ],
+   [
+    "chokaiin",
+    16
+   ],
+   [
+    "daldy",
+    16
+   ],
+   [
+    "chokchy",
+    15
+   ],
+   [
+    "sheos",
+    15
+   ],
+   [
+    "aral",
+    14
+   ],
+   [
+    "sheeky",
+    14
+   ],
+   [
+    "chodar",
+    13
+   ],
+   [
+    "chkeey",
+    13
+   ],
+   [
+    "shky",
+    13
+   ],
+   [
+    "chkar",
+    12
+   ],
+   [
+    "chty",
+    12
+   ],
+   [
+    "qokechy",
+    12
+   ],
+   [
+    "chkain",
+    12
+   ],
+   [
+    "chkal",
+    12
+   ],
+   [
+    "arody",
+    12
+   ],
+   [
+    "cheodaiin",
+    11
+   ],
+   [
+    "chotchy",
+    11
+   ],
+   [
+    "shocthy",
+    11
+   ],
+   [
+    "g",
+    11
+   ],
+   [
+    "aldy",
+    11
+   ],
+   [
+    "chekal",
+    11
+   ],
+   [
+    "aram",
+    11
+   ]
+  ]
+ }
+}

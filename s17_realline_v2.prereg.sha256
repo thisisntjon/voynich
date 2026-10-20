@@ -1,0 +1,3 @@
+# s17 prereg: sha256 of the s17 script and the sidecar builder; frozen Sat Oct 17 20:16:48 PDT 2026 before any s17 scoring run
+a53ac0c940b02ce619db6bc6941e33c9be7c99779daa527652ca3739c6806806  s17_realline_v2.py
+215d84952195f0d549ffbb19c9490d69b64b9853c7807fd0b95bafd0c0f8f55b  tools/realline_to_meta.py

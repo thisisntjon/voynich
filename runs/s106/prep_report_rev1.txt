@@ -1,0 +1,15 @@
+s106 PREP rev1 (text-free)  2026-10-18 13:35:34 Pacific Daylight Time  free RAM 5.33 GB
+stars in s100: 321; status counts: {'snapped': 109, 'ok': 321, 'status_ok': 0}
+kept stars: 321; ZL3b '<%>' paragraphs on these pages: 285
+kept stars beside '<%>' lines: 270; beside mid-block lines: 51
+ZL3b '<%>' lines with no kept star: 15
+hands on kept stars: {'3': 321} (constant -> scribe term dropped)
+|cy-yb|/pitch of kept: median 0.27, p90 0.50, max 0.71
+filled/hollow: consensus 296, DISAGREE dropped 25; filled 152, hollow 144
+tailed/plain:  consensus 293, DISAGREE dropped 28; tailed 225, plain 68
+subset (a) filled/hollow n=296: filled 152, hollow 144
+subset (b) filled/hollow n=251: filled 128, hollow 123
+subset (a) residual: rule-scorable 277, deviations 17 (0.061); ICC_bifolio +0.020, m 46.2, DEFF 1.92; SE_HM 0.0724; MDE_res AUC 0.749; full-label MDE AUC (n1/n0, DEFF=1) 0.584
+subset (b) residual: rule-scorable 241, deviations 13 (0.054); ICC_bifolio +0.014, m 40.2, DEFF 1.57; SE_HM 0.0825; MDE_res AUC 0.757; full-label MDE AUC (n1/n0, DEFF=1) 0.591
+SUBSET CHOICE: (a)  [rule: (b) iff n_b >= 150 and dev_b >= 15 and MDE_b <= 0.72]
+CALL hold = True  (MDE_res[a] = 0.749 vs bar 0.72)

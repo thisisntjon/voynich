@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:03:59.8052274Z",
+ "response": "{\n  \"PT\": \"CIRCLE\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"0\",\n  \"P_flower\": \"NA\",\n  \"P_habit\": \"ROSETTE\",\n  \"J_shape\": \"OTHER\",\n  \"J_count\": \"4+\",\n  \"J_fragcount\": \"1-5\",\n  \"J_fragtype\": \"MIXED\",\n  \"C_centre\": \"FACE\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"20+\",\n  \"C_rings\": \"3\",\n  \"C_diagrams\": \"4+\",\n  \"C_rays\": \"PRESENT\",\n  \"B_pools\": \"1-5\",\n  \"B_figures\": \"6-10\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Complex circular diagrams with human figures and rays.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 3826899300,
+ "load_duration": 165649800,
+ "prompt_eval_count": 4856,
+ "prompt_eval_duration": 1836042000,
+ "eval_count": 210,
+ "eval_duration": 1593441000,
+ "stem": "157_85v_and_86r_foldout"
+}

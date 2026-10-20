@@ -1,0 +1,36 @@
+s105 stage 1 (D-066 (l-frozen)): BLOCKED before any gate is scored
+written: Sun Oct 18 14:13:13 PDT 2026 (clock read with date)
+no script s105_alchemical_herbal_cribs.py, no prereg stub, no G1/G2/P numbers, no Voynich score.
+
+GATE D (frozen: >= 2 of the 4 named manuscripts from public-domain/open scans, each >= 40 plant pages)
+  bsb_clm5905 : obtained, 399 images (ff. 94v-293v), Public Domain Mark 1.0; 178 illustration ranges in the BSB TOC; catalogue identities 72/178
+  bl_add41623 : obtained, 331 images, 'Public Domain in most countries other than the UK'; ~180 plant drawings (catalogue); catalogue identities per folio 0
+  bnf_lat17848: NOT obtained (Gallica IIIF 403 to scripts; viewer 'Usage error.500 ... concerning the ARK'; Cloudflare 520; 13:49-14:12 PDT)
+  bnf_lat17844: NOT obtained (same; Gallica copy is a b/w microfilm digitisation)
+  D_COUNT (manuscripts obtained with >= 40 plant pages) = 2
+  GATE_D (literal count rule) = True
+
+WHY STAGE 1 STOPS (cannot be run as frozen; no new bar improvised)
+  1. G1 needs a known related pair whose plants have identities from catalogue or edition metadata, so that
+     'recover each other's plants' can be scored. Obtained pair BSB Clm 5905 + BL Add 41623: BL has no per-folio
+     identities (only Edelweiss f. 35v and 'Oculis bovis' in the catalogue), so 0 shared identified plants. G1 not computable.
+  2. The obtained pair is not a known related pair. Beasley 2024 (MA thesis, Univ. of Oklahoma, sect. VI, 38-manuscript list)
+     places BnF Lat. 17848/17844 in the direct sub-tradition and LJS 419 in a proposed sub-tradition; Clm 5905 and
+     Add 41623 are not listed. Their catalogues call them a Macer herbal (Ebersberg 1479) and a Dioscorides adaptation (Belluno).
+     The only family pair named in the frozen design (BnF 17848/17844) is unavailable and has no per-folio identities in
+     its catalogue (Segre Rutz 2000 holds them; not available).
+  3. P needs the G1 positive-control gain, so P cannot be computed. G2 alone could run on BSB's 72 catalogue-named
+     plants as the held-out herbal, but by the frozen rule no gate result can change the HOLD while G1 is missing.
+
+CALL (frozen rule 'any gate failing -> HOLD'; here G1 not computable): HOLD, no Voynich verdict.
+  Representation limit: not reached; the block is data (identity ground truth and family membership), not representation.
+
+Lead correction applied in the data README: LJS 419 recto plants excluded from the unrelated population; LJS 419 versos
+and Sloane 4016 remain unrelated controls. Beasley 2024 lists LJS 419 in the tradition (rectos), a thesis not a printed
+catalogue; LJS 419 names on disk are agent transcriptions and cannot be s105 identities.
+
+What would unblock (for the lead to decide; nothing here changes the frozen design):
+  - Gallica access to BnF Lat. 17848/17844 plus per-folio identities from Segre Rutz 2000 (or another edition), or
+  - another openly licensed family pair with edition identities (Beasley's list: e.g. Bodleian Canon. Misc. 408 via Digital Bodleian),
+  - or a re-frozen G1 that defines the copy-pair correspondence without names.
+Data: data/herbals_alchemical/ (README per folder); fetch script tools/s105_fetch_herbals.py; logs runs/s105/fetch_*.log

@@ -1,0 +1,27 @@
+pages total=207 train=166 test=41
+train tokens=27525 types=6000 | test tokens=7332 types=2332
+test unseen-Type tokens=1069 (14.6%) unseen types=1025/2332 (44.0%)
+affix inventory (count>=20): prefixes=194 suffixes=142
+slot model: distinct cores(train,MAP seg)=726 core hapax-reserve p_unk=0.014
+top prefixes=[('qok', 2286), ('che', 2031), ('she', 1318), ('o', 1181), ('cho', 1177), ('', 1164)] top suffixes=[('', 9742), ('y', 3301), ('dy', 1728), ('iin', 1242), ('n', 1168), ('in', 1121)] top cores=[('e', 3945), ('l', 3042), ('r', 2654), ('y', 2280), ('o', 2271), ('i', 2021)]
+
+model                  bits/tok ALL  seen-type  UNSEEN-type       ppl
+(i) word-unigram             10.728      9.469       18.101    1696.1
+(ii) char-trigram            11.279      9.776       20.087    2484.9
+(iii) slot-indep             14.298     12.960       22.132   20137.9
+(iv) slot pref->core         13.136     11.444       23.045    8999.5
+
+WINNER (all test tokens): (i) word-unigram at 10.728 bits/tok
+  beats (ii) char-trigram by 0.551 bits/tok
+  beats (iii) slot-indep by 3.570 bits/tok
+  beats (iv) slot pref->core by 2.408 bits/tok
+WINNER on UNSEEN types only: (i) word-unigram at 18.101 bits/tok (slot-indep 22.132 vs trigram 20.087: diff +2.045)
+
+COVERAGE: test tokens segmentable(core seen)=7234/7332 (98.7%) types=2234/2332 (95.8%)
+unigram UNK tokens=1069 (14.6%); slot MAP-core-unseen tokens=123 (1.7%); trigram novel-char tokens=0, unseen-context predictions=10/44166 (0.02%)
+
+TRAIN bits/tok (overfit contrast):
+  (i) word-unigram         10.171
+  (ii) char-trigram        11.257
+  (iii) slot-indep         14.235
+  (iv) slot pref->core     12.550

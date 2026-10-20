@@ -1,0 +1,65 @@
+{
+ "loc_band": [
+  0.9073818633685861,
+  1.049928019378369
+ ],
+ "order_band": {
+  "100": [
+   0.012321,
+   0.092252
+  ],
+  "200": [
+   -0.003465,
+   0.086474
+  ]
+ },
+ "rw_v": 1.1968822539263946,
+ "rc_v": 0.6266510978571009,
+ "C1": {
+  "C_steganographia_la": false,
+  "C_steg_heidel_la": false,
+  "C_pool": false
+ },
+ "b": {
+  "H_gib_DA_01": false,
+  "H_gib_DA_02": false,
+  "H_gib_DC_01": false,
+  "H_gib_DC_03": false,
+  "H_gib_DC_04": false,
+  "H_gib_DC_06": false,
+  "H_gib_DC_09": false,
+  "H_gib_DC_10": false,
+  "H_gib_DC_11": false,
+  "H_gib_DC_12": false,
+  "H_gib_DC_15": false,
+  "H_gib_DC_16": false,
+  "H_gib_DC_18": false,
+  "H_gib_DC_20": true,
+  "H_gib_DC_21": false,
+  "H_gib_DC_22": false,
+  "H_gib_DC_27": false,
+  "H_gib_DC_30": false,
+  "H_gib_DC_31": false,
+  "H_gib_DC_34": false,
+  "H_gib_DC_36": false,
+  "H_gib_DC_39": false,
+  "H_gib_DC_42": false,
+  "C_steganographia_la": false,
+  "C_steg_heidel_la": false,
+  "C_enochian_clauses": false,
+  "C_lull_rows5": false,
+  "H_gib_pool": false,
+  "C_pool": false
+ },
+ "C2": {
+  "H": [
+   0,
+   0
+  ],
+  "C": [
+   0,
+   3
+  ]
+ },
+ "verdict": "no human text class tested reuses words inside lines"
+}

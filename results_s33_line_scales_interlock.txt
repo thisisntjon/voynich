@@ -1,0 +1,609 @@
+====================================================================================================
+S33: Line-Scale & Moran-I Mechanism Investigation (O-043; A1 + A5 + A3 + A6 Interlock)
+====================================================================================================
+run started 2026-10-17 21:38:57 (datetime.now; `date` unavailable)
+s33_line_scales_interlock.py sha256=e789a4f1fbbe89efdb3ae151e0b7e2f9f1d084860b74b12d6f91a44b823b55fc  prereg stub_match=True
+loader: scoreboard/run_v2.py sha256=7dfdc9f75de5980a... scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc...
+seed=20261017  strat_draws=999  decomp_draws=500  page_moran_draws=200  min_page_tokens=80
+
+=== GATE 0: Reproduction Check on ZL3b Full (vs results_s21.txt) ===
+ZL3b ALL: tokens=34857 lines=4130 lines>=2=4103 pairs=30727 I_within=0.157244 I_whole=0.140670 null_med=0.069861 null_q99=0.080596 excess=+0.087382 p=0.001
+s21 ref : tokens=34857 lines=4130 lines>=2=4103 pairs=30727 I_within=0.157244 I_whole=0.140670 null_med=0.069861 null_q99=0.080596 excess=+0.087383 p=0.001
+GATE 0 REPRODUCTION: PASS (exact match)
+
+====================================================================================================
+PART 1: STRATIFIED ANATOMY OF WITHIN-LINE MORAN I (A5 across Currier A/B, Hands 1-5, Sections)
+====================================================================================================
+Statistic: Daybreak/s21 within-line lag-1 word-length Moran I; 999 within-line shuffle draws, seed 20261017.
+Calibrated excess = I_within - null_med; sig = (I_within > null_q99, i.e., p <= 0.010).
+
+--- 1.ZL3b: Stratified Within-Line Moran I on ZL3b (paragraph units P*) ---
+stratum            | pages  tokens  lines  ln>=2   pairs |  I_within  null_med  null_q99    excess      p | sig(>q99)
+---------------------------------------------------------------------------------------------------------------------
+ALL                |   207   34857   4130   4103   30727 |  0.157244  0.069861  0.080596 +0.087382  0.001 |       YES
+Currier_A          |   114   11231   1557   1550    9674 |  0.117084  0.057392  0.076795 +0.059692  0.001 |       YES
+Currier_B          |    83   23078   2478   2463   20600 |  0.167339  0.066497  0.080031 +0.100843  0.001 |       YES
+Hand_1             |   112   10481   1477   1470    9004 |  0.112773  0.056781  0.075449 +0.055992  0.001 |       YES
+Hand_2             |    46   10800   1228   1214    9572 |  0.148568  0.063293  0.082572 +0.085275  0.001 |       YES
+Hand_3             |    31   11703   1186   1185   10517 |  0.172645  0.059310  0.078146 +0.113335  0.001 |       YES
+Hand_4             |    10     540    100     95     440 |  0.128395  0.064657  0.149979 +0.063738  0.036 |        no
+Hand_5             |     7     873     94     94     779 |  0.152957  0.076836  0.136459 +0.076121  0.002 |       YES
+Sec_H (Herbal)     |   128   11468   1608   1603    9860 |  0.116189  0.054376  0.074017 +0.061814  0.001 |       YES
+Sec_A (Astron)     |     5     279     56     51     223 |  0.189476  0.108206  0.217152 +0.081270  0.041 |        no
+Sec_B (Biol)       |    19    6240    745    732    5495 |  0.133099  0.062282  0.088172 +0.070817  0.001 |       YES
+Sec_C (Cosmol)     |     8     694    107    106     587 |  0.146841  0.089835  0.168361 +0.057005  0.055 |        no
+Sec_P (Pharma)     |    16    2306    224    224    2082 |  0.142943  0.079204  0.121886 +0.063739  0.001 |       YES
+Sec_S (Stars/Rec)  |    25   11586   1164   1163   10422 |  0.182321  0.061239  0.081202 +0.121082  0.001 |       YES
+Sec_T (TextOnly)   |     6    2284    226    224    2058 |  0.152252  0.040291  0.091179 +0.111961  0.001 |       YES
+Sec_H_Currier_A    |    95    7967   1225   1220    6742 |  0.102321  0.048273  0.072901 +0.054047  0.001 |       YES
+Sec_H_Currier_B    |    32    3456    377    377    3079 |  0.144488  0.063966  0.095486 +0.080522  0.001 |       YES
+
+--- 1.RF1b: Stratified Within-Line Moran I on RF1b (paragraph units P*) ---
+stratum            | pages  tokens  lines  ln>=2   pairs |  I_within  null_med  null_q99    excess      p | sig(>q99)
+---------------------------------------------------------------------------------------------------------------------
+ALL                |   207   34618   4130   4103   30488 |  0.154868  0.070480  0.081505 +0.084388  0.001 |       YES
+Currier_A          |   114   11053   1557   1551    9496 |  0.114983  0.055825  0.075390 +0.059158  0.001 |       YES
+Currier_B          |    83   23028   2478   2462   20550 |  0.169219  0.072513  0.086240 +0.096706  0.001 |       YES
+Hand_1             |   112   10311   1477   1471    8834 |  0.109817  0.053932  0.072702 +0.055885  0.001 |       YES
+Hand_2             |    46   10799   1228   1213    9571 |  0.157218  0.071567  0.090221 +0.085651  0.001 |       YES
+Hand_3             |    31   11658   1186   1185   10472 |  0.170504  0.061445  0.079546 +0.109060  0.001 |       YES
+Hand_4             |    10     532    100     95     432 |  0.098277  0.059013  0.138720 +0.039264  0.146 |        no
+Hand_5             |     7     855     94     94     761 |  0.129429  0.074951  0.145995 +0.054478  0.036 |        no
+Sec_H (Herbal)     |   128   11215   1608   1604    9607 |  0.112540  0.057060  0.074739 +0.055479  0.001 |       YES
+Sec_A (Astron)     |     5     271     56     51     215 |  0.118525  0.072780  0.192579 +0.045745  0.181 |        no
+Sec_B (Biol)       |    19    6288    745    731    5543 |  0.151795  0.073534  0.099532 +0.078261  0.001 |       YES
+Sec_C (Cosmol)     |     8     702    107    106     595 |  0.171309  0.116878  0.182810 +0.054431  0.037 |        no
+Sec_P (Pharma)     |    16    2346    224    224    2122 |  0.136267  0.074651  0.113904 +0.061616  0.001 |       YES
+Sec_S (Stars/Rec)  |    25   11535   1164   1163   10371 |  0.179782  0.062453  0.082980 +0.117329  0.001 |       YES
+Sec_T (TextOnly)   |     6    2261    226    224    2035 |  0.152039  0.039195  0.086628 +0.112844  0.001 |       YES
+Sec_H_Currier_A    |    95    7758   1225   1221    6533 |  0.102839  0.048563  0.070926 +0.054276  0.001 |       YES
+Sec_H_Currier_B    |    32    3413    377    377    3036 |  0.132808  0.075759  0.113926 +0.057050  0.001 |       YES
+
+--- 1.IT2a: Stratified Within-Line Moran I on IT2a (paragraph units P*) ---
+stratum            | pages  tokens  lines  ln>=2   pairs |  I_within  null_med  null_q99    excess      p | sig(>q99)
+---------------------------------------------------------------------------------------------------------------------
+ALL                |   206   34411   4117   4090   30294 |  0.156595  0.070798  0.082959 +0.085796  0.001 |       YES
+Currier_A          |   114   11081   1557   1550    9524 |  0.106015  0.048850  0.066325 +0.057165  0.001 |       YES
+Currier_B          |    82   22797   2466   2450   20331 |  0.173303  0.072111  0.085619 +0.101193  0.001 |       YES
+Hand_1             |   112   10349   1477   1470    8872 |  0.103693  0.047746  0.068165 +0.055947  0.001 |       YES
+Hand_2             |    46   10704   1228   1213    9476 |  0.152748  0.064820  0.083335 +0.087929  0.001 |       YES
+Hand_3             |    31   11551   1185   1184   10366 |  0.176691  0.061653  0.080958 +0.115037  0.001 |       YES
+Hand_4             |     9     489     88     84     401 |  0.131477  0.104054  0.191465 +0.027423  0.230 |        no
+Hand_5             |     7     874     94     94     780 |  0.131508  0.071490  0.138252 +0.060018  0.022 |        no
+Sec_H (Herbal)     |   128   11341   1608   1603    9733 |  0.114212  0.051372  0.071919 +0.062840  0.001 |       YES
+Sec_A (Astron)     |     5     266     55     51     211 |  0.110820  0.087338  0.203321 +0.023481  0.320 |        no
+Sec_B (Biol)       |    19    6227    745    731    5482 |  0.147074  0.064161  0.091793 +0.082913  0.001 |       YES
+Sec_C (Cosmol)     |     7     654     96     95     558 |  0.181871  0.125772  0.201367 +0.056099  0.051 |        no
+Sec_P (Pharma)     |    16    2282    224    224    2058 |  0.106265  0.057853  0.103717 +0.048412  0.008 |       YES
+Sec_S (Stars/Rec)  |    25   11405   1163   1162   10242 |  0.180753  0.062536  0.080523 +0.118217  0.001 |       YES
+Sec_T (TextOnly)   |     6    2236    226    224    2010 |  0.141753  0.038879  0.084466 +0.102874  0.001 |       YES
+Sec_H_Currier_A    |    95    7865   1225   1220    6640 |  0.101933  0.045181  0.067059 +0.056753  0.001 |       YES
+Sec_H_Currier_B    |    32    3432    377    377    3055 |  0.141377  0.064595  0.102380 +0.076783  0.001 |       YES
+
+--- 1.Note: Astronomical (Sec_A) and Astrological (Sec_Z) on ZL3b all-loci (including @C/@R/@L non-P loci) ---
+Sec_A_all_loci     | pages=  8 tokens=  875 lines= 238 ln>=2= 138 pairs=  637 | I_within=0.156384 null_med=0.065193 null_q99=0.138582 excess=+0.091191 p=0.003 | sig=YES
+Sec_Z_all_loci     | pages= 12 tokens= 1291 lines= 330 ln>=2=  77 pairs=  961 | I_within=0.199308 null_med=0.022616 null_q99=0.094557 excess=+0.176692 p=0.001 | sig=YES
+
+====================================================================================================
+PART 2: EXACT MECHANISTIC DECOMPOSITION OF WITHIN-LINE MORAN I (O-043)
+====================================================================================================
+Hierarchy of nested permutation nulls and structural ablations (500 draws each, seed 20261017).
+Part 2A tests permutation nulls on the full token stream (holding denominator & pair indices fixed).
+Part 2B tests token-subset and length-component ablations vs their own within-line shuffle nulls.
+Part 2C synthesizes the exact 4-component additive decomposition of I_within.
+
+--- 2A.ZL3b: Hierarchy of Nested Permutation Nulls on Full Stream (obs I_within = 0.157244) ---
+null_model               |  null_med null_mean  null_sd  null_q99 |   obs-med  %of_obs %intra_ex      p | description
+---------------------------------------------------------------------------------------------------------------------
+N0_global_shuf           | -0.000272  0.000035 0.005935  0.012997 | +0.157515    -0.2%    -80.1%  0.002 | Global token shuffle across manuscript
+N1a_section_shuf         |  0.010284  0.010224 0.005587  0.023649 | +0.146959     6.5%    -68.0%  0.002 | Within-section token shuffle across pages/lines
+N1b_hand_shuf            |  0.010240  0.010370 0.005854  0.023875 | +0.147003     6.5%    -68.1%  0.002 | Within-hand token shuffle across pages/lines
+N1_page_shuf             |  0.030368  0.030377 0.005150  0.042792 | +0.126876    19.3%    -45.1%  0.002 | Within-page token shuffle across lines
+N2_line_shuf             |  0.069774  0.069661 0.004730  0.080273 | +0.087470    44.4%     +0.0%  0.002 | Within-line token shuffle (Daybreak/s21 baseline)
+N3a_sec_len_slot_shuf    |  0.051444  0.051549 0.005440  0.064778 | +0.105799    32.7%    -21.0%  0.002 | Cross-line slot shuffle within (section, exact_line_len, slot_k)
+N3b_page_lenbin_slot5    |  0.075740  0.076266 0.004966  0.087637 | +0.081503    48.2%     +6.8%  0.002 | Cross-line slot shuffle within (page, len_bin, rel_slot_5)
+N3c_line_fix_edges       |  0.076747  0.076811 0.004388  0.086146 | +0.080497    48.8%     +8.0%  0.002 | Within-line shuffle fixing ws[0] & ws[-1], permuting ws[1:-1]
+N3d_line_fix_5slots      |  0.095231  0.095194 0.003419  0.103761 | +0.062012    60.6%    +29.1%  0.002 | Within-line shuffle fixing ws[0], ws[1], ws[-2], ws[-1], permuting ws[2:-2]
+N5c_line_pfx_class       |  0.113241  0.113241 0.003521  0.121279 | +0.044003    72.0%    +49.7%  0.002 | Within-line shuffle preserving canonical prefix class (qo/ch/d/o/y/...)
+N5d_line_slotseg_pfx     |  0.129123  0.129210 0.002989  0.135955 | +0.028121    82.1%    +67.9%  0.002 | Within-line shuffle preserving SlotSegmenter prefix
+N5e_line_slotseg_sfx     |  0.097170  0.097387 0.004042  0.107007 | +0.060074    61.8%    +31.3%  0.002 | Within-line shuffle preserving SlotSegmenter suffix
+N5_line_slotseg_pfxsfx   |  0.148525  0.148586 0.001776  0.152632 | +0.008719    94.5%    +90.0%  0.002 | Within-line shuffle preserving (SlotSegmenter prefix, suffix) pair
+N5_line_edges_and_pfx    |  0.122030  0.122048 0.003238  0.128753 | +0.035214    77.6%    +59.7%  0.002 | Within-line shuffle fixing both line edges (ws[0],ws[-1]) & prefix class
+
+--- 2B.ZL3b: Line-Interior Ablations (N4) & Morphological Core/Affix Ablations (N5) ---
+ablation_variant           |  tokens  ln>=2   pairs |  I_within  null_med  null_q99    excess %of_full_ex      p
+----------------------------------------------------------------------------------------------------------------
+Full_stream (ws[:])        |   34857   4103   30727 |  0.157244  0.069774  0.080273 +0.087470      100.0%  0.002
+N4a_drop_first (ws[1:])    |   30727   4045   26624 |  0.158685  0.071846  0.084060 +0.086839       99.3%  0.002
+N4b_drop_last (ws[:-1])    |   30727   4045   26624 |  0.174926  0.082944  0.094200 +0.091982      105.2%  0.002
+N4c_interior_only (ws[1:-1]) |   26624   3894   22579 |  0.180545  0.086301  0.099400 +0.094244      107.7%  0.002
+N4d_deep_interior (ws[2:-2]) |   18685   3341   15038 |  0.181885  0.097267  0.110821 +0.084618       96.7%  0.002
+N4e_no_adj_redup_interior  |   26374   3893   22329 |  0.173356  0.084352  0.095092 +0.089004      101.8%  0.002
+N5a_core_len_all           |   34857   4103   30727 |  0.034567  0.031044  0.041513 +0.003523        4.0%  0.228
+N5b_affix_len_all          |   34857   4103   30727 |  0.091764  0.040534  0.051233 +0.051230       58.6%  0.002
+N5f_core_len_interior      |   26624   3894   22579 |  0.037163  0.034717  0.048516 +0.002447        2.8%  0.335
+N5g_affix_len_interior     |   26624   3894   22579 |  0.110483  0.059329  0.072002 +0.051153       58.5%  0.002
+Currier_A_interior (ws[1:-1]) |    8124   1425    6609 |  0.133015  0.068261  0.090469 +0.064754       74.0%  0.002
+Currier_B_interior (ws[1:-1]) |   18137   2409   15688 |  0.187977  0.080672  0.096792 +0.107305      122.7%  0.002
+
+--- 2C.ZL3b: Telescoping Decomposition Summary of Total I_within = 0.157244 ---
+  [Scale 1] Between-page / section / hand mean length shift (N1_page - N0_global) : +0.030639 ( 19.5% of total I_within)
+  [Scale 2] Between-line mean length shift within pages     (N2_line - N1_page)   : +0.039406 ( 25.1% of total I_within)
+  --> Subtotal: Line-level word-length multiset baseline    (N2_line_shuf)        : +0.069774 ( 44.4% of total I_within)
+  --> True Intra-Line Ordering Excess                       (I_within - N2_line)  : +0.087470 ( 55.6% of total I_within = 100.0% of intra-line excess)
+      Breakdown of the Intra-Line Ordering Excess (+0.087470):
+        (i)   Line-edge length boundary (ws[0] long, ws[-1] short: N3c - N2)      : +0.006973 (  8.0% of intra-line excess)
+        (ii)  Near-edge interior gradient (ws[1], ws[-2] slots: N3d - N3c)        : +0.018485 ( 21.1% of intra-line excess)
+        (iii) Prefix/Suffix slot sequence along line (N5_slotseg_pfxsfx - N2)     : +0.078751 ( 90.0% of intra-line excess; prefix alone =  67.9%)
+        (iv)  Core-length ordering after removing prefix+suffix (N5a_core excess) : +0.003523 (  4.0% of intra-line excess, p=0.228)
+
+--- 2A.RF1b: Hierarchy of Nested Permutation Nulls on Full Stream (obs I_within = 0.154868) ---
+null_model               |  null_med null_mean  null_sd  null_q99 |   obs-med  %of_obs %intra_ex      p | description
+---------------------------------------------------------------------------------------------------------------------
+N0_global_shuf           |  0.000154  0.000073 0.005550  0.012535 | +0.154714     0.1%    -83.1%  0.002 | Global token shuffle across manuscript
+N1a_section_shuf         |  0.006808  0.007163 0.005372  0.019524 | +0.148060     4.4%    -75.2%  0.002 | Within-section token shuffle across pages/lines
+N1b_hand_shuf            |  0.007583  0.007371 0.005538  0.020679 | +0.147285     4.9%    -74.3%  0.002 | Within-hand token shuffle across pages/lines
+N1_page_shuf             |  0.027208  0.027078 0.005506  0.040549 | +0.127660    17.6%    -51.1%  0.002 | Within-page token shuffle across lines
+N2_line_shuf             |  0.070365  0.070549 0.004703  0.081502 | +0.084503    45.4%     +0.0%  0.002 | Within-line token shuffle (Daybreak/s21 baseline)
+N3a_sec_len_slot_shuf    |  0.051465  0.051537 0.005283  0.062764 | +0.103403    33.2%    -22.4%  0.002 | Cross-line slot shuffle within (section, exact_line_len, slot_k)
+N3b_page_lenbin_slot5    |  0.072736  0.072602 0.005054  0.083503 | +0.082132    47.0%     +2.8%  0.002 | Cross-line slot shuffle within (page, len_bin, rel_slot_5)
+N3c_line_fix_edges       |  0.077125  0.076819 0.004648  0.086329 | +0.077743    49.8%     +8.0%  0.002 | Within-line shuffle fixing ws[0] & ws[-1], permuting ws[1:-1]
+N3d_line_fix_5slots      |  0.094870  0.094806 0.003536  0.102502 | +0.059997    61.3%    +29.0%  0.002 | Within-line shuffle fixing ws[0], ws[1], ws[-2], ws[-1], permuting ws[2:-2]
+N5c_line_pfx_class       |  0.110194  0.110042 0.003642  0.118399 | +0.044674    71.2%    +47.1%  0.002 | Within-line shuffle preserving canonical prefix class (qo/ch/d/o/y/...)
+N5d_line_slotseg_pfx     |  0.126408  0.126208 0.002895  0.132309 | +0.028460    81.6%    +66.3%  0.002 | Within-line shuffle preserving SlotSegmenter prefix
+N5e_line_slotseg_sfx     |  0.095428  0.095449 0.003855  0.104590 | +0.059440    61.6%    +29.7%  0.002 | Within-line shuffle preserving SlotSegmenter suffix
+N5_line_slotseg_pfxsfx   |  0.145983  0.146005 0.001860  0.150168 | +0.008885    94.3%    +89.5%  0.002 | Within-line shuffle preserving (SlotSegmenter prefix, suffix) pair
+N5_line_edges_and_pfx    |  0.119260  0.119138 0.003263  0.126069 | +0.035608    77.0%    +57.9%  0.002 | Within-line shuffle fixing both line edges (ws[0],ws[-1]) & prefix class
+
+--- 2B.RF1b: Line-Interior Ablations (N4) & Morphological Core/Affix Ablations (N5) ---
+ablation_variant           |  tokens  ln>=2   pairs |  I_within  null_med  null_q99    excess %of_full_ex      p
+----------------------------------------------------------------------------------------------------------------
+Full_stream (ws[:])        |   34618   4103   30488 |  0.154868  0.070365  0.081502 +0.084503      100.0%  0.002
+N4a_drop_first (ws[1:])    |   30488   4037   26385 |  0.153762  0.067955  0.079674 +0.085807      101.5%  0.002
+N4b_drop_last (ws[:-1])    |   30488   4037   26385 |  0.173239  0.084686  0.097076 +0.088553      104.8%  0.002
+N4c_interior_only (ws[1:-1]) |   26385   3884   22348 |  0.176164  0.083720  0.096239 +0.092444      109.4%  0.002
+N4d_deep_interior (ws[2:-2]) |   18464   3313   14835 |  0.176865  0.092843  0.109023 +0.084022       99.4%  0.002
+N4e_no_adj_redup_interior  |   26142   3883   22105 |  0.168512  0.081473  0.092619 +0.087039      103.0%  0.002
+N5a_core_len_all           |   34618   4103   30488 |  0.041366  0.038633  0.050164 +0.002733        3.2%  0.291
+N5b_affix_len_all          |   34618   4103   30488 |  0.082511  0.035767  0.047005 +0.046744       55.3%  0.002
+N5f_core_len_interior      |   26385   3884   22348 |  0.040126  0.039925  0.052677 +0.000201        0.2%  0.477
+N5g_affix_len_interior     |   26385   3884   22348 |  0.098940  0.054252  0.066223 +0.044687       52.9%  0.002
+Currier_A_interior (ws[1:-1]) |    7945   1412    6435 |  0.134400  0.068460  0.091250 +0.065940       78.0%  0.002
+Currier_B_interior (ws[1:-1]) |   18088   2412   15641 |  0.184903  0.081005  0.096639 +0.103898      123.0%  0.002
+
+--- 2C.RF1b: Telescoping Decomposition Summary of Total I_within = 0.154868 ---
+  [Scale 1] Between-page / section / hand mean length shift (N1_page - N0_global) : +0.027055 ( 17.5% of total I_within)
+  [Scale 2] Between-line mean length shift within pages     (N2_line - N1_page)   : +0.043157 ( 27.9% of total I_within)
+  --> Subtotal: Line-level word-length multiset baseline    (N2_line_shuf)        : +0.070365 ( 45.4% of total I_within)
+  --> True Intra-Line Ordering Excess                       (I_within - N2_line)  : +0.084503 ( 54.6% of total I_within = 100.0% of intra-line excess)
+      Breakdown of the Intra-Line Ordering Excess (+0.084503):
+        (i)   Line-edge length boundary (ws[0] long, ws[-1] short: N3c - N2)      : +0.006760 (  8.0% of intra-line excess)
+        (ii)  Near-edge interior gradient (ws[1], ws[-2] slots: N3d - N3c)        : +0.017746 ( 21.0% of intra-line excess)
+        (iii) Prefix/Suffix slot sequence along line (N5_slotseg_pfxsfx - N2)     : +0.075618 ( 89.5% of intra-line excess; prefix alone =  66.3%)
+        (iv)  Core-length ordering after removing prefix+suffix (N5a_core excess) : +0.002733 (  3.2% of intra-line excess, p=0.291)
+
+--- 2A.IT2a: Hierarchy of Nested Permutation Nulls on Full Stream (obs I_within = 0.156595) ---
+null_model               |  null_med null_mean  null_sd  null_q99 |   obs-med  %of_obs %intra_ex      p | description
+---------------------------------------------------------------------------------------------------------------------
+N0_global_shuf           |  0.000243  0.000288 0.005675  0.013317 | +0.156352     0.2%    -81.8%  0.002 | Global token shuffle across manuscript
+N1a_section_shuf         |  0.012304  0.012238 0.005491  0.024380 | +0.144291     7.9%    -67.8%  0.002 | Within-section token shuffle across pages/lines
+N1b_hand_shuf            |  0.011467  0.011434 0.005789  0.024524 | +0.145127     7.3%    -68.8%  0.002 | Within-hand token shuffle across pages/lines
+N1_page_shuf             |  0.035084  0.034995 0.005595  0.047606 | +0.121510    22.4%    -41.3%  0.002 | Within-page token shuffle across lines
+N2_line_shuf             |  0.070595  0.070794 0.004840  0.083160 | +0.086000    45.1%     +0.0%  0.002 | Within-line token shuffle (Daybreak/s21 baseline)
+N3a_sec_len_slot_shuf    |  0.051163  0.051200 0.005184  0.062966 | +0.105432    32.7%    -22.6%  0.002 | Cross-line slot shuffle within (section, exact_line_len, slot_k)
+N3b_page_lenbin_slot5    |  0.075622  0.076026 0.004878  0.086386 | +0.080973    48.3%     +5.8%  0.002 | Cross-line slot shuffle within (page, len_bin, rel_slot_5)
+N3c_line_fix_edges       |  0.076579  0.076645 0.004684  0.087732 | +0.080016    48.9%     +7.0%  0.002 | Within-line shuffle fixing ws[0] & ws[-1], permuting ws[1:-1]
+N3d_line_fix_5slots      |  0.095386  0.095438 0.003635  0.104391 | +0.061209    60.9%    +28.8%  0.002 | Within-line shuffle fixing ws[0], ws[1], ws[-2], ws[-1], permuting ws[2:-2]
+N5c_line_pfx_class       |  0.112756  0.112651 0.003685  0.120653 | +0.043838    72.0%    +49.0%  0.002 | Within-line shuffle preserving canonical prefix class (qo/ch/d/o/y/...)
+N5d_line_slotseg_pfx     |  0.128553  0.128372 0.003035  0.134976 | +0.028041    82.1%    +67.4%  0.002 | Within-line shuffle preserving SlotSegmenter prefix
+N5e_line_slotseg_sfx     |  0.095656  0.095609 0.003750  0.103926 | +0.060939    61.1%    +29.1%  0.002 | Within-line shuffle preserving SlotSegmenter suffix
+N5_line_slotseg_pfxsfx   |  0.148642  0.148638 0.001835  0.152901 | +0.007953    94.9%    +90.8%  0.002 | Within-line shuffle preserving (SlotSegmenter prefix, suffix) pair
+N5_line_edges_and_pfx    |  0.120643  0.120583 0.003153  0.127916 | +0.035952    77.0%    +58.2%  0.002 | Within-line shuffle fixing both line edges (ws[0],ws[-1]) & prefix class
+
+--- 2B.IT2a: Line-Interior Ablations (N4) & Morphological Core/Affix Ablations (N5) ---
+ablation_variant           |  tokens  ln>=2   pairs |  I_within  null_med  null_q99    excess %of_full_ex      p
+----------------------------------------------------------------------------------------------------------------
+Full_stream (ws[:])        |   34411   4090   30294 |  0.156595  0.070595  0.083160 +0.086000      100.0%  0.002
+N4a_drop_first (ws[1:])    |   30294   4032   26204 |  0.155771  0.070531  0.081770 +0.085240       99.1%  0.002
+N4b_drop_last (ws[:-1])    |   30294   4032   26204 |  0.175493  0.082928  0.096227 +0.092565      107.6%  0.002
+N4c_interior_only (ws[1:-1]) |   26204   3884   22172 |  0.178701  0.084805  0.096340 +0.093896      109.2%  0.002
+N4d_deep_interior (ws[2:-2]) |   18288   3325   14652 |  0.179103  0.092736  0.108291 +0.086367      100.4%  0.002
+N4e_no_adj_redup_interior  |   25952   3881   21920 |  0.170810  0.082158  0.093824 +0.088652      103.1%  0.002
+N5a_core_len_all           |   34411   4090   30294 |  0.041333  0.038206  0.049567 +0.003126        3.6%  0.255
+N5b_affix_len_all          |   34411   4090   30294 |  0.075627  0.034409  0.045028 +0.041217       47.9%  0.002
+N5f_core_len_interior      |   26204   3884   22172 |  0.044068  0.040275  0.052835 +0.003793        4.4%  0.240
+N5g_affix_len_interior     |   26204   3884   22172 |  0.092298  0.052993  0.065178 +0.039305       45.7%  0.002
+Currier_A_interior (ws[1:-1]) |    7974   1422    6459 |  0.126255  0.059350  0.081820 +0.066905       77.8%  0.002
+Currier_B_interior (ws[1:-1]) |   17881   2402   15444 |  0.188954  0.082201  0.098374 +0.106754      124.1%  0.002
+
+--- 2C.IT2a: Telescoping Decomposition Summary of Total I_within = 0.156595 ---
+  [Scale 1] Between-page / section / hand mean length shift (N1_page - N0_global) : +0.034841 ( 22.2% of total I_within)
+  [Scale 2] Between-line mean length shift within pages     (N2_line - N1_page)   : +0.035511 ( 22.7% of total I_within)
+  --> Subtotal: Line-level word-length multiset baseline    (N2_line_shuf)        : +0.070595 ( 45.1% of total I_within)
+  --> True Intra-Line Ordering Excess                       (I_within - N2_line)  : +0.086000 ( 54.9% of total I_within = 100.0% of intra-line excess)
+      Breakdown of the Intra-Line Ordering Excess (+0.086000):
+        (i)   Line-edge length boundary (ws[0] long, ws[-1] short: N3c - N2)      : +0.005984 (  7.0% of intra-line excess)
+        (ii)  Near-edge interior gradient (ws[1], ws[-2] slots: N3d - N3c)        : +0.018808 ( 21.9% of intra-line excess)
+        (iii) Prefix/Suffix slot sequence along line (N5_slotseg_pfxsfx - N2)     : +0.078047 ( 90.8% of intra-line excess; prefix alone =  67.4%)
+        (iv)  Core-length ordering after removing prefix+suffix (N5a_core excess) : +0.003126 (  3.6% of intra-line excess, p=0.255)
+
+====================================================================================================
+PART 3: LINE-POSITION WORD-LENGTH, GLYPH h2, AND TOKEN FREQUENCY RANK CURVE (Slot 0 to Slot N-1)
+====================================================================================================
+Evaluated on lines with >= 4 tokens so that the 5 positional buckets are strictly disjoint:
+  - slot 0 (para-init) : first word of paragraph-initial (or page-initial for controls) lines
+  - slot 0 (ord-init)  : first word of ordinary (non-paragraph-initial) lines
+  - slot 0 (all-init)  : first word of all lines (len >= 4)
+  - slot 1 (second)    : second word of line (ws[1])
+  - slot 2..N-3 (mid)  : strictly interior words (ws[2:-2])
+  - slot N-2 (penult)  : penultimate word of line (ws[-2])
+  - slot N-1 (final)   : line-final word (ws[-1])
+Metrics per slot bucket: token count n, mean_len, sd_len, h2_within_word (H(c_i|c_{i-1}) on ^w$),
+h2_stream (a1_profile.char_entropies h2), mean_rank (1=most frequent type in corpus), median_rank,
+mean_log10_freq, and hapax_share (fraction of tokens in slot that are corpus hapax legomena).
+
+--- 3.ZL3b_ALL: Line-Position Profile (total_tokens=34857, types=7025, lines>=4=3894) ---
+slot_bucket        |   n_tok | mean_len  sd_len d_vs_mid |  h2_word  h2_strm | mean_rnk  med_rnk  log10_f  hapax%
+-----------------------------------------------------------------------------------------------------------------
+slot_0_para_init   |     754 |   6.3528  1.7700  +1.3981 |   2.0763   2.0760 |   2628.2   1847.5   0.4820  46.68%
+slot_0_ord_init    |    3140 |   5.1975  1.7883  +0.2427 |   2.0310   2.0310 |   1104.3    246.0   1.2983  16.85%
+slot_0_all_init    |    3894 |   5.4212  1.8422  +0.4664 |   2.1203   2.1201 |   1399.4    399.5   1.1402  22.62%
+slot_1_second      |    3894 |   4.9589  1.7385  +0.0042 |   1.9701   1.9700 |    748.4    108.0   1.5653  10.84%
+slot_2..N-3_mid    |   18685 |   4.9547  1.7521  +0.0000 |   2.0104   2.0104 |    736.0    103.0   1.5674  10.51%
+slot_N-2_penult    |    3894 |   4.9463  1.7723  -0.0084 |   2.0562   2.0561 |    827.0    114.5   1.5308  12.40%
+slot_N-1_final     |    3894 |   4.7067  1.8721  -0.2480 |   2.2535   2.2535 |   1352.1    304.5   1.2092  22.68%
+
+--- 3.ZL3b_Currier_A: Line-Position Profile (total_tokens=11231, types=3217, lines>=4=1425) ---
+slot_bucket        |   n_tok | mean_len  sd_len d_vs_mid |  h2_word  h2_strm | mean_rnk  med_rnk  log10_f  hapax%
+-----------------------------------------------------------------------------------------------------------------
+slot_0_para_init   |     248 |   6.0766  1.6986  +1.4117 |   2.1118   2.1113 |   1298.8   2109.5   0.3869  52.82%
+slot_0_ord_init    |    1177 |   5.0518  1.7234  +0.3869 |   2.0380   2.0381 |    652.3    213.5   0.9635  22.94%
+slot_0_all_init    |    1425 |   5.2302  1.7625  +0.5652 |   2.1324   2.1320 |    764.8    272.0   0.8631  28.14%
+slot_1_second      |    1425 |   4.7488  1.6792  +0.0838 |   1.9741   1.9739 |    468.4     81.0   1.2180  16.07%
+slot_2..N-3_mid    |    5184 |   4.6649  1.7502  +0.0000 |   2.0910   2.0909 |    475.9     94.0   1.1928  15.93%
+slot_N-2_penult    |    1425 |   4.7340  1.7751  +0.0691 |   2.0506   2.0505 |    519.2     99.5   1.1829  17.96%
+slot_N-1_final     |    1425 |   4.6856  1.9083  +0.0207 |   2.1862   2.1863 |    734.8    239.0   0.9864  27.72%
+
+--- 3.ZL3b_Currier_B: Line-Position Profile (total_tokens=23078, types=4788, lines>=4=2409) ---
+slot_bucket        |   n_tok | mean_len  sd_len d_vs_mid |  h2_word  h2_strm | mean_rnk  med_rnk  log10_f  hapax%
+-----------------------------------------------------------------------------------------------------------------
+slot_0_para_init   |     489 |   6.5133  1.7873  +1.4418 |   1.9338   1.9344 |   1950.2   3161.5   0.4148  52.35%
+slot_0_ord_init    |    1920 |   5.2854  1.8285  +0.2139 |   1.9209   1.9209 |    807.5    172.5   1.2269  18.39%
+slot_0_all_init    |    2409 |   5.5347  1.8861  +0.4631 |   2.0135   2.0136 |   1039.4    315.5   1.0620  25.28%
+slot_1_second      |    2409 |   5.0859  1.7606  +0.0144 |   1.8421   1.8421 |    522.3     85.5   1.5264  11.04%
+slot_2..N-3_mid    |   13279 |   5.0715  1.7368  +0.0000 |   1.9004   1.9004 |    530.6     81.5   1.5041  11.05%
+slot_N-2_penult    |    2409 |   5.0722  1.7476  +0.0007 |   1.9135   1.9136 |    555.6     77.5   1.5033  12.25%
+slot_N-1_final     |    2409 |   4.7264  1.8504  -0.3451 |   2.1766   2.1766 |    983.1    269.5   1.0989  24.08%
+
+--- 3.RF1b_ALL: Line-Position Profile (total_tokens=34618, types=7348, lines>=4=3884) ---
+slot_bucket        |   n_tok | mean_len  sd_len d_vs_mid |  h2_word  h2_strm | mean_rnk  med_rnk  log10_f  hapax%
+-----------------------------------------------------------------------------------------------------------------
+slot_0_para_init   |     296 |   6.6081  1.9509  +1.5988 |   2.2297   2.2293 |   2982.6   4808.0   0.4226  53.72%
+slot_0_ord_init    |    3588 |   5.4392  1.8283  +0.4299 |   2.1013   2.1013 |   1393.4    366.0   1.1510  21.74%
+slot_0_all_init    |    3884 |   5.5283  1.8639  +0.5190 |   2.1412   2.1411 |   1514.5    424.0   1.0955  24.18%
+slot_1_second      |    3884 |   5.0039  1.7235  -0.0055 |   1.9767   1.9766 |    796.8    114.0   1.5489  11.43%
+slot_2..N-3_mid    |   18464 |   5.0093  1.7576  +0.0000 |   2.0166   2.0166 |    793.7    108.0   1.5454  11.29%
+slot_N-2_penult    |    3884 |   5.0075  1.7509  -0.0018 |   2.0669   2.0669 |    897.6    121.5   1.4980  13.34%
+slot_N-1_final     |    3884 |   4.7799  1.9075  -0.2294 |   2.2673   2.2673 |   1452.8    349.5   1.1683  23.71%
+
+--- 3.RF1b_Currier_A: Line-Position Profile (total_tokens=11053, types=3384, lines>=4=1412) ---
+slot_bucket        |   n_tok | mean_len  sd_len d_vs_mid |  h2_word  h2_strm | mean_rnk  med_rnk  log10_f  hapax%
+-----------------------------------------------------------------------------------------------------------------
+slot_0_para_init   |     160 |   6.4562  1.6273  +1.7027 |   2.2160   2.2157 |   1548.6   2184.0   0.2488  63.12%
+slot_0_ord_init    |    1252 |   5.2077  1.7636  +0.4541 |   2.0859   2.0860 |    741.1    233.0   0.8913  26.20%
+slot_0_all_init    |    1412 |   5.3492  1.7929  +0.5956 |   2.1617   2.1613 |    832.6    313.5   0.8185  30.38%
+slot_1_second      |    1412 |   4.8449  1.6442  +0.0914 |   1.9852   1.9850 |    494.8     88.0   1.1894  16.78%
+slot_2..N-3_mid    |    5023 |   4.7535  1.7709  +0.0000 |   2.0990   2.0989 |    519.8    105.0   1.1562  17.52%
+slot_N-2_penult    |    1412 |   4.8931  1.7630  +0.1395 |   2.0673   2.0671 |    590.8    125.0   1.1177  20.68%
+slot_N-1_final     |    1412 |   4.8541  1.9804  +0.1006 |   2.1955   2.1955 |    814.9    266.0   0.9228  30.74%
+
+--- 3.RF1b_Currier_B: Line-Position Profile (total_tokens=23028, types=4945, lines>=4=2412) ---
+slot_bucket        |   n_tok | mean_len  sd_len d_vs_mid |  h2_word  h2_strm | mean_rnk  med_rnk  log10_f  hapax%
+-----------------------------------------------------------------------------------------------------------------
+slot_0_para_init   |     119 |   6.9412  2.2910  +1.8328 |   1.9862   1.9879 |   2044.0   3247.5   0.4392  55.46%
+slot_0_ord_init    |    2293 |   5.5665  1.8558  +0.4581 |   2.0094   2.0095 |   1056.1    310.5   1.0582  25.29%
+slot_0_all_init    |    2412 |   5.6343  1.9031  +0.5259 |   2.0302   2.0303 |   1104.8    372.0   1.0276  26.78%
+slot_1_second      |    2412 |   5.0991  1.7630  -0.0093 |   1.8489   1.8489 |    554.9     86.5   1.5163  11.82%
+slot_2..N-3_mid    |   13229 |   5.1084  1.7405  +0.0000 |   1.9071   1.9071 |    559.2     86.5   1.4918  11.60%
+slot_N-2_penult    |    2412 |   5.0755  1.7275  -0.0329 |   1.9197   1.9197 |    577.9     80.2   1.4925  12.48%
+slot_N-1_final     |    2412 |   4.7425  1.8654  -0.3659 |   2.1921   2.1922 |   1021.5    288.0   1.0814  24.25%
+
+--- 3.IT2a_ALL: Line-Position Profile (total_tokens=34411, types=7069, lines>=4=3884) ---
+slot_bucket        |   n_tok | mean_len  sd_len d_vs_mid |  h2_word  h2_strm | mean_rnk  med_rnk  log10_f  hapax%
+-----------------------------------------------------------------------------------------------------------------
+slot_0_para_init   |     772 |   6.2655  1.7127  +1.2054 |   2.0891   2.0888 |   2552.8   1880.5   0.5056  44.04%
+slot_0_ord_init    |    3112 |   5.2921  1.6867  +0.2319 |   2.0439   2.0439 |   1138.1    276.0   1.2605  17.03%
+slot_0_all_init    |    3884 |   5.4856  1.7359  +0.4254 |   2.1327   2.1326 |   1419.3    403.5   1.1104  22.40%
+slot_1_second      |    3884 |   5.0371  1.6347  -0.0231 |   1.9675   1.9675 |    760.3    112.5   1.5482  10.76%
+slot_2..N-3_mid    |   18288 |   5.0601  1.6671  +0.0000 |   2.0122   2.0121 |    773.4    112.5   1.5366  11.03%
+slot_N-2_penult    |    3884 |   5.0183  1.6729  -0.0419 |   2.0537   2.0536 |    844.6    121.0   1.5086  12.51%
+slot_N-1_final     |    3884 |   4.6697  1.8352  -0.3905 |   2.2569   2.2569 |   1332.5    305.0   1.2086  21.96%
+
+--- 3.IT2a_Currier_A: Line-Position Profile (total_tokens=11081, types=3243, lines>=4=1422) ---
+slot_bucket        |   n_tok | mean_len  sd_len d_vs_mid |  h2_word  h2_strm | mean_rnk  med_rnk  log10_f  hapax%
+-----------------------------------------------------------------------------------------------------------------
+slot_0_para_init   |     255 |   6.2118  1.6409  +1.4343 |   2.1525   2.1521 |   1316.7   2111.5   0.3579  52.94%
+slot_0_ord_init    |    1167 |   5.1208  1.6938  +0.3434 |   2.0429   2.0430 |    682.9    198.0   0.9366  24.68%
+slot_0_all_init    |    1422 |   5.3165  1.7356  +0.5390 |   2.1497   2.1494 |    796.6    323.0   0.8328  29.75%
+slot_1_second      |    1422 |   4.8516  1.5866  +0.0742 |   1.9690   1.9688 |    481.6     90.5   1.2031  16.74%
+slot_2..N-3_mid    |    5037 |   4.7774  1.6894  +0.0000 |   2.0834   2.0834 |    493.9    105.5   1.1672  16.76%
+slot_N-2_penult    |    1422 |   4.8340  1.6936  +0.0566 |   2.0308   2.0307 |    525.8    105.5   1.1719  18.35%
+slot_N-1_final     |    1422 |   4.6779  1.9135  -0.0995 |   2.1838   2.1839 |    725.6    236.0   0.9844  27.43%
+
+--- 3.IT2a_Currier_B: Line-Position Profile (total_tokens=22797, types=4813, lines>=4=2402) ---
+slot_bucket        |   n_tok | mean_len  sd_len d_vs_mid |  h2_word  h2_strm | mean_rnk  med_rnk  log10_f  hapax%
+-----------------------------------------------------------------------------------------------------------------
+slot_0_para_init   |     500 |   6.3180  1.7472  +1.1456 |   1.9444   1.9450 |   1854.6   1300.0   0.4625  47.80%
+slot_0_ord_init    |    1902 |   5.3954  1.6760  +0.2230 |   1.9350   1.9351 |    842.0    206.5   1.1854  18.93%
+slot_0_all_init    |    2402 |   5.5874  1.7321  +0.4151 |   2.0240   2.0241 |   1052.8    346.5   1.0349  24.94%
+slot_1_second      |    2402 |   5.1474  1.6543  -0.0250 |   1.8402   1.8403 |    528.4     89.0   1.5090  10.74%
+slot_2..N-3_mid    |   13042 |   5.1724  1.6422  +0.0000 |   1.9060   1.9060 |    558.8     89.0   1.4764  11.55%
+slot_N-2_penult    |    2402 |   5.1216  1.6405  -0.0508 |   1.9174   1.9174 |    560.8     83.5   1.4824  11.95%
+slot_N-1_final     |    2402 |   4.6699  1.7896  -0.5025 |   2.1793   2.1794 |    961.9    271.5   1.1014  22.69%
+
+--- 3.cremma_prose15: Line-Position Profile (total_tokens=6890, types=3201, lines>=4=747) ---
+slot_bucket        |   n_tok | mean_len  sd_len d_vs_mid |  h2_word  h2_strm | mean_rnk  med_rnk  log10_f  hapax%
+-----------------------------------------------------------------------------------------------------------------
+slot_0_para_init   |      11 |   6.1818  2.9176  +1.4854 |   1.8045   1.7784 |   1374.2   2009.0   0.3621  63.64%
+slot_0_ord_init    |     736 |   4.4959  2.4572  -0.2005 |   3.3597   3.3599 |    905.9    372.5   0.6438  39.40%
+slot_0_all_init    |     747 |   4.5207  2.4730  -0.1757 |   3.3586   3.3588 |    912.8    372.5   0.6397  39.76%
+slot_1_second      |     747 |   4.5141  2.6141  -0.1824 |   3.3770   3.3773 |    762.7    255.0   0.7526  32.26%
+slot_2..N-3_mid    |    3828 |   4.6964  2.6519  +0.0000 |   3.4290   3.4291 |    770.6    255.0   0.7090  31.74%
+slot_N-2_penult    |     747 |   4.6292  2.6309  -0.0673 |   3.3945   3.3945 |    786.8    255.0   0.7138  32.80%
+slot_N-1_final     |     747 |   4.6734  2.4392  -0.0231 |   3.4451   3.4453 |   1073.6    633.0   0.4748  46.72%
+
+--- 3.italian_dante: Line-Position Profile (total_tokens=101607, types=12616, lines>=4=14221) ---
+slot_bucket        |   n_tok | mean_len  sd_len d_vs_mid |  h2_word  h2_strm | mean_rnk  med_rnk  log10_f  hapax%
+-----------------------------------------------------------------------------------------------------------------
+slot_0_para_init   |     100 |   3.7800  1.9979  +0.1888 |   2.5868   2.5868 |    786.6     45.0   2.1195   5.00%
+slot_0_ord_init    |   14121 |   3.4888  2.2053  -0.1023 |   2.8733   2.8734 |    731.0     29.0   2.4308   4.89%
+slot_0_all_init    |   14221 |   3.4909  2.2040  -0.1003 |   2.8752   2.8753 |    731.3     29.0   2.4286   4.89%
+slot_1_second      |   14221 |   3.8981  2.3092  +0.3069 |   3.0642   3.0642 |   1013.6     65.0   2.1337   6.74%
+slot_2..N-3_mid    |   44681 |   3.5912  2.0986  +0.0000 |   3.0587   3.0587 |    822.0     55.5   2.2148   4.72%
+slot_N-2_penult    |   14221 |   3.6789  2.1293  +0.0878 |   3.0653   3.0653 |    759.3     60.0   2.1845   4.05%
+slot_N-1_final     |   14221 |   5.9515  1.7425  +2.3603 |   3.1413   3.1413 |   3132.6   1631.5   0.8051  19.89%
+
+--- 3.gib_realline_pooled: Line-Position Profile (total_tokens=10023, types=6839, lines>=4=1372) ---
+slot_bucket        |   n_tok | mean_len  sd_len d_vs_mid |  h2_word  h2_strm | mean_rnk  med_rnk  log10_f  hapax%
+-----------------------------------------------------------------------------------------------------------------
+slot_0_para_init   |      32 |   3.8438  1.7159  -0.7780 |   2.4076   2.4070 |   1955.0    748.0   0.5400  46.88%
+slot_0_ord_init    |    1340 |   5.2351  2.5889  +0.6133 |   3.9127   3.9128 |   2635.5   3929.5   0.2832  64.40%
+slot_0_all_init    |    1372 |   5.2026  2.5804  +0.5808 |   3.9144   3.9145 |   2619.6   3929.5   0.2892  63.99%
+slot_1_second      |    1372 |   4.9417  2.6232  +0.3199 |   3.8807   3.8808 |   2382.3   3929.5   0.3384  57.36%
+slot_2..N-3_mid    |    3974 |   4.6218  2.3824  +0.0000 |   3.9183   3.9184 |   2308.8   3929.5   0.3708  55.46%
+slot_N-2_penult    |    1372 |   4.7434  2.4393  +0.1216 |   3.8571   3.8573 |   2266.3   3929.5   0.3835  54.30%
+slot_N-1_final     |    1372 |   5.1261  2.5018  +0.5043 |   3.8914   3.8916 |   2527.2   3929.5   0.2967  61.15%
+
+====================================================================================================
+PART 4: FOLIO-LEVEL & QUIRE-LEVEL INTERLOCK MATRIX (A1 vs A3 vs A5 vs A6 vs h2)
+====================================================================================================
+Across all pages with >= 80 paragraph tokens on ZL3b, RF1b, IT2a (plus quire-level):
+  - jsd_first_exc (A1): line-initial first-glyph JSD minus 30-draw within-line shuffle null (a2_position)
+  - cross_exc_eva (A3): cross-space edge MI (last glyph -> next first glyph) minus 20-draw line shuffle (score.py)
+  - I_within_exc  (A5): within-line lag-1 word-length Moran I minus 200-draw within-line shuffle median
+  - I_within_raw  (A5r): raw within-line lag-1 word-length Moran I on the page
+  - charwin_A6    (A6): leave-one-quire-out held-out bits/token (unigram_gt minus markov3; >0 = char model wins)
+  - h2            (h2): conditional character entropy h2 (a1_profile.char_entropies)
+  - mean_word_len (WL): mean word length in characters on the page
+  - mean_line_tok (LT): mean tokens per paragraph line on the page
+
+--- 4A.ZL3b: Folio-Level Summary by Currier Language (pages with >= 80 tokens: ALL=147, A=69, B=76) ---
+metric         |         ALL_med [q25, q75] |   Currier_A_med [q25, q75] |   Currier_B_med [q25, q75] | r_s(B_vs_A)   p_2side
+-----------------------------------------------------------------------------------------------------------------------------
+A1_jsd_ex      |  +0.2017 [+0.1157,+0.2775] |  +0.1633 [+0.0915,+0.2294] |  +0.2324 [+0.1609,+0.3458] |     +0.2949  3.17e-04
+A3_edge_ex     |  +0.1119 [+0.0314,+0.2076] |  +0.0388 [-0.0173,+0.1040] |  +0.1773 [+0.1114,+0.2470] |     +0.5963  2.50e-15
+A5_moran_ex    |  +0.0816 [+0.0296,+0.1344] |  +0.0549 [+0.0001,+0.1020] |  +0.1033 [+0.0638,+0.1436] |     +0.2656  1.24e-03
+A5_moran_raw   |  +0.1067 [+0.0438,+0.1709] |  +0.0660 [+0.0060,+0.1174] |  +0.1342 [+0.0938,+0.1849] |     +0.3659  6.02e-06
+A6_charwin     |  +0.5025 [+0.4352,+0.5830] |  +0.5278 [+0.4518,+0.6515] |  +0.4888 [+0.4252,+0.5668] |     -0.1501  7.15e-02
+h2             |  +1.8477 [+1.7727,+1.9407] |  +1.8560 [+1.7883,+1.9341] |  +1.8292 [+1.7592,+1.9406] |     -0.0792  3.44e-01
+mean_wlen      |  +4.9091 [+4.6456,+5.1744] |  +4.7481 [+4.5591,+5.0000] |  +5.0515 [+4.8390,+5.2995] |     +0.3527  1.36e-05
+mean_ltok      |  +8.6818 [+7.0476,+9.6955] |  +7.5000 [+6.0000,+8.6364] |  +9.3590 [+8.6861,+10.1675] |     +0.5457  1.27e-12
+
+--- 4B.ZL3b: Folio-Level Spearman Correlation Matrix r_s (p-value) Across All 147 Pages ---
+metric         |       A1_jsd_ex |      A3_edge_ex |     A5_moran_ex |    A5_moran_raw |      A6_charwin |              h2 |       mean_wlen |       mean_ltok
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+A1_jsd_ex      |     1.000 (---) | +0.202 (0.014) | +0.170 (0.040) | +0.295 (<.001) | -0.028 (0.741) | +0.217 (0.008) | +0.322 (<.001) | +0.265 (0.001)
+A3_edge_ex     | +0.202 (0.014) |     1.000 (---) | +0.233 (0.005) | +0.405 (<.001) | -0.141 (0.089) | -0.062 (0.459) | +0.187 (0.023) | +0.398 (<.001)
+A5_moran_ex    | +0.170 (0.040) | +0.233 (0.005) |     1.000 (---) | +0.727 (<.001) | +0.125 (0.131) | +0.108 (0.194) | +0.163 (0.049) | +0.206 (0.012)
+A5_moran_raw   | +0.295 (<.001) | +0.405 (<.001) | +0.727 (<.001) |     1.000 (---) | +0.032 (0.701) | +0.086 (0.298) | +0.201 (0.014) | +0.303 (<.001)
+A6_charwin     | -0.028 (0.741) | -0.141 (0.089) | +0.125 (0.131) | +0.032 (0.701) |     1.000 (---) | +0.583 (<.001) | +0.189 (0.022) | -0.026 (0.756)
+h2             | +0.217 (0.008) | -0.062 (0.459) | +0.108 (0.194) | +0.086 (0.298) | +0.583 (<.001) |     1.000 (---) | -0.011 (0.896) | +0.226 (0.006)
+mean_wlen      | +0.322 (<.001) | +0.187 (0.023) | +0.163 (0.049) | +0.201 (0.014) | +0.189 (0.022) | -0.011 (0.896) |     1.000 (---) | +0.146 (0.078)
+mean_ltok      | +0.265 (0.001) | +0.398 (<.001) | +0.206 (0.012) | +0.303 (<.001) | -0.026 (0.756) | +0.226 (0.006) | +0.146 (0.078) |     1.000 (---)
+
+--- 4C.ZL3b: Within-Currier Partial Spearman Correlation Matrix Controlling for A/B (n=145 pages) ---
+metric         |       A1_jsd_ex |      A3_edge_ex |     A5_moran_ex |    A5_moran_raw |      A6_charwin |              h2 |       mean_wlen |       mean_ltok
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+A1_jsd_ex      |     1.000 (---) | +0.043 (0.610) | +0.107 (0.201) | +0.216 (0.009) | +0.034 (0.688) | +0.271 (0.001) | +0.238 (0.004) | +0.118 (0.159)
+A3_edge_ex     | +0.043 (0.610) |     1.000 (---) | +0.101 (0.226) | +0.248 (0.003) | -0.080 (0.343) | -0.033 (0.699) | -0.025 (0.763) | +0.132 (0.116)
+A5_moran_ex    | +0.107 (0.201) | +0.101 (0.226) |     1.000 (---) | +0.709 (<.001) | +0.165 (0.048) | +0.125 (0.135) | +0.099 (0.237) | +0.096 (0.252)
+A5_moran_raw   | +0.216 (0.009) | +0.248 (0.003) | +0.709 (<.001) |     1.000 (---) | +0.092 (0.272) | +0.120 (0.152) | +0.089 (0.291) | +0.145 (0.083)
+A6_charwin     | +0.034 (0.688) | -0.080 (0.343) | +0.165 (0.048) | +0.092 (0.272) |     1.000 (---) | +0.568 (<.001) | +0.289 (<.001) | +0.097 (0.246)
+h2             | +0.271 (0.001) | -0.033 (0.699) | +0.125 (0.135) | +0.120 (0.152) | +0.568 (<.001) |     1.000 (---) | +0.038 (0.653) | +0.359 (<.001)
+mean_wlen      | +0.238 (0.004) | -0.025 (0.763) | +0.099 (0.237) | +0.089 (0.291) | +0.289 (<.001) | +0.038 (0.653) |     1.000 (---) | -0.078 (0.352)
+mean_ltok      | +0.118 (0.159) | +0.132 (0.116) | +0.096 (0.252) | +0.145 (0.083) | +0.097 (0.246) | +0.359 (<.001) | -0.078 (0.352) |     1.000 (---)
+
+--- 4D.ZL3b: Key Constraint Interlock Pairs Within Currier A (n=69) and Within Currier B (n=76) ---
+pair_description                           |      All_r_s (p) |  Part_AB_r_s (p) |  Currier_A_r_s (p) |  Currier_B_r_s (p)
+--------------------------------------------------------------------------------------------------------------------------
+A1 (jsd_first_exc) vs A3 (cross_exc_eva)   | +0.202 ( 0.0144) | +0.043 ( 0.6096) |  -0.139 ( 0.2563) |  +0.156 ( 0.1788)
+A1 (jsd_first_exc) vs A5 (I_within_exc)    | +0.170 ( 0.0401) | +0.107 ( 0.2015) |  +0.163 ( 0.1813) |  +0.075 ( 0.5207)
+A3 (cross_exc_eva) vs A5 (I_within_exc)    | +0.233 ( 0.0045) | +0.101 ( 0.2264) |  +0.018 ( 0.8807) |  +0.125 ( 0.2813)
+A5 (I_within_exc)  vs A6 (charwin_A6)      | +0.125 ( 0.1309) | +0.165 ( 0.0481) |  -0.016 ( 0.8983) |  +0.345 ( 0.0023)
+A5r(I_within_raw)  vs A6 (charwin_A6)      | +0.032 ( 0.7013) | +0.092 ( 0.2717) |  -0.066 ( 0.5872) |  +0.261 ( 0.0226)
+A3 (cross_exc_eva) vs A6 (charwin_A6)      | -0.141 ( 0.0886) | -0.080 ( 0.3431) |  -0.128 ( 0.2955) |  -0.077 ( 0.5065)
+A3 (cross_exc_eva) vs h2                   | -0.062 ( 0.4591) | -0.033 ( 0.6985) |  +0.067 ( 0.5865) |  -0.181 ( 0.1184)
+A5 (I_within_exc)  vs h2                   | +0.108 ( 0.1940) | +0.125 ( 0.1353) |  +0.102 ( 0.4061) |  +0.133 ( 0.2536)
+A5 (I_within_exc)  vs mean_word_len        | +0.163 ( 0.0488) | +0.099 ( 0.2368) |  +0.021 ( 0.8664) |  +0.217 ( 0.0594)
+A5 (I_within_exc)  vs mean_line_tokens     | +0.206 ( 0.0125) | +0.096 ( 0.2520) |  -0.138 ( 0.2593) |  +0.257 ( 0.0249)
+A1 (jsd_first_exc) vs mean_line_tokens     | +0.265 ( 0.0012) | +0.118 ( 0.1595) |  -0.061 ( 0.6181) |  +0.288 ( 0.0115)
+
+--- 4E.ZL3b: Quire-Level Profile & Spearman Correlation Matrix Across 16 Quires ---
+quire pages  tokens  lines | A1_jsd_ex A3_edge_ex A5_mor_ex A5_mor_raw A6_chrwin      h2 mean_wlen mean_ltok
+------------------------------------------------------------------------------------------------------------
+    A    16    1520    225 |   +0.1263    +0.0976   +0.0441    +0.0627   +0.5951  2.0911    4.7158    6.7556
+    B    14    1041    149 |   +0.1582    +0.1248   +0.1146    +0.1385   +0.5120  2.0101    4.5322    6.9866
+    C    16    1431    218 |   +0.1352    +0.1413   +0.0292    +0.0526   +0.5503  2.0874    4.6436    6.5642
+    D    16    1272    174 |   +0.1118    +0.1482   +0.0755    +0.1054   +0.4916  2.0738    4.7704    7.3103
+    E    16    1556    211 |   +0.2200    +0.1872   +0.0476    +0.1266   +0.4375  2.0694    4.6105    7.3744
+    F    16    1708    206 |   +0.1144    +0.1536   +0.0746    +0.1360   +0.5511  2.1615    4.8413    8.2913
+    G    16    1521    228 |   +0.1474    +0.1464   +0.1070    +0.1793   +0.5183  2.1007    4.8442    6.6711
+    H     6    1290    142 |   +0.2096    +0.1290   +0.0874    +0.1460   +0.6420  2.1641    5.0775    9.0845
+    I     7     367     71 |   +0.1383    +0.0824   +0.0472    +0.1419   +0.6423  2.2239    4.9837    5.1690
+    J     2     136     18 |   +0.1868    +0.1004   +0.1537    +0.0863   +0.6262  1.9461    4.4412    7.5556
+    M    20    6800    792 |   +0.1430    +0.2616   +0.0821    +0.1403   +0.4216  1.8015    4.9860    8.5859
+    N     7    1692    193 |   +0.1719    +0.2434   +0.0792    +0.1456   +0.4605  2.0131    4.9900    8.7668
+    O    12    1380    155 |   +0.2580    +0.1086   -0.0000    +0.0716   +0.5513  2.1098    5.0000    8.9032
+    Q    10     911    129 |   +0.2306    +0.0963   +0.0593    +0.0504   +0.5217  2.0971    5.1350    7.0620
+    S    10    1396    135 |   +0.1899    +0.1372   +0.0847    +0.1737   +0.5488  2.0441    4.9370   10.3407
+    T    23   10836   1084 |   +0.3122    +0.2448   +0.1210    +0.1816   +0.5780  2.0002    5.2341    9.9963
+
+Quire-Level Spearman Correlation Matrix r_s (p-value) Across 16 Quires (ZL3b):
+metric         |       A1_jsd_ex |      A3_edge_ex |     A5_moran_ex |    A5_moran_raw |      A6_charwin |              h2 |       mean_wlen |       mean_ltok
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+A1_jsd_ex      |     1.000 (---) | -0.021 (0.940) | +0.224 (0.405) | +0.188 (0.485) | +0.079 (0.770) | -0.156 (0.564) | +0.494 (0.052) | +0.553 (0.026)
+A3_edge_ex     | -0.021 (0.940) |     1.000 (---) | +0.265 (0.322) | +0.447 (0.083) | -0.612 (0.012) | -0.468 (0.068) | +0.115 (0.672) | +0.424 (0.102)
+A5_moran_ex    | +0.224 (0.405) | +0.265 (0.322) |     1.000 (---) | +0.615 (0.011) | -0.038 (0.888) | -0.524 (0.037) | -0.015 (0.957) | +0.350 (0.184)
+A5_moran_raw   | +0.188 (0.485) | +0.447 (0.083) | +0.615 (0.011) |     1.000 (---) | -0.012 (0.966) | -0.109 (0.688) | +0.347 (0.188) | +0.418 (0.107)
+A6_charwin     | +0.079 (0.770) | -0.612 (0.012) | -0.038 (0.888) | -0.012 (0.966) |     1.000 (---) | +0.476 (0.062) | +0.135 (0.617) | -0.021 (0.940)
+h2             | -0.156 (0.564) | -0.468 (0.068) | -0.524 (0.037) | -0.109 (0.688) | +0.476 (0.062) |     1.000 (---) | +0.235 (0.380) | -0.291 (0.274)
+mean_wlen      | +0.494 (0.052) | +0.115 (0.672) | -0.015 (0.957) | +0.347 (0.188) | +0.135 (0.617) | +0.235 (0.380) |     1.000 (---) | +0.485 (0.057)
+mean_ltok      | +0.553 (0.026) | +0.424 (0.102) | +0.350 (0.184) | +0.418 (0.107) | -0.021 (0.940) | -0.291 (0.274) | +0.485 (0.057) |     1.000 (---)
+
+--- 4A.RF1b: Folio-Level Summary by Currier Language (pages with >= 80 tokens: ALL=146, A=66, B=78) ---
+metric         |         ALL_med [q25, q75] |   Currier_A_med [q25, q75] |   Currier_B_med [q25, q75] | r_s(B_vs_A)   p_2side
+-----------------------------------------------------------------------------------------------------------------------------
+A1_jsd_ex      |  +0.2036 [+0.1313,+0.3042] |  +0.1567 [+0.1074,+0.2498] |  +0.2409 [+0.1633,+0.3438] |     +0.2907  4.08e-04
+A3_edge_ex     |  +0.1006 [+0.0250,+0.2021] |  +0.0318 [-0.0379,+0.0909] |  +0.1862 [+0.1003,+0.2378] |     +0.5854  1.30e-14
+A5_moran_ex    |  +0.0682 [+0.0230,+0.1191] |  +0.0504 [+0.0021,+0.0948] |  +0.0875 [+0.0410,+0.1332] |     +0.2092  1.18e-02
+A5_moran_raw   |  +0.1038 [+0.0453,+0.1723] |  +0.0754 [+0.0189,+0.1446] |  +0.1362 [+0.0733,+0.1911] |     +0.2997  2.62e-04
+A6_charwin     |  +0.5260 [+0.4425,+0.6250] |  +0.5762 [+0.4752,+0.6459] |  +0.4911 [+0.4305,+0.5907] |     -0.2136  1.02e-02
+h2             |  +1.8600 [+1.7727,+1.9477] |  +1.8632 [+1.7961,+1.9454] |  +1.8381 [+1.7692,+1.9443] |     -0.0989  2.38e-01
+mean_wlen      |  +4.9868 [+4.7358,+5.2687] |  +4.8915 [+4.6588,+5.1295] |  +5.0690 [+4.8457,+5.2959] |     +0.2729  9.34e-04
+mean_ltok      |  +8.7418 [+7.0647,+9.5602] |  +7.3887 [+5.8667,+8.6857] |  +9.2912 [+8.6495,+9.9389] |     +0.5333  5.92e-12
+
+--- 4B.RF1b: Folio-Level Spearman Correlation Matrix r_s (p-value) Across All 146 Pages ---
+metric         |       A1_jsd_ex |      A3_edge_ex |     A5_moran_ex |    A5_moran_raw |      A6_charwin |              h2 |       mean_wlen |       mean_ltok
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+A1_jsd_ex      |     1.000 (---) | +0.159 (0.056) | +0.227 (0.006) | +0.249 (0.002) | -0.025 (0.766) | +0.223 (0.007) | +0.275 (<.001) | +0.272 (<.001)
+A3_edge_ex     | +0.159 (0.056) |     1.000 (---) | +0.394 (<.001) | +0.474 (<.001) | -0.148 (0.075) | -0.101 (0.223) | +0.162 (0.051) | +0.382 (<.001)
+A5_moran_ex    | +0.227 (0.006) | +0.394 (<.001) |     1.000 (---) | +0.773 (<.001) | +0.068 (0.413) | +0.097 (0.243) | +0.173 (0.036) | +0.186 (0.025)
+A5_moran_raw   | +0.249 (0.002) | +0.474 (<.001) | +0.773 (<.001) |     1.000 (---) | +0.092 (0.269) | +0.084 (0.316) | +0.195 (0.018) | +0.201 (0.015)
+A6_charwin     | -0.025 (0.766) | -0.148 (0.075) | +0.068 (0.413) | +0.092 (0.269) |     1.000 (---) | +0.512 (<.001) | +0.259 (0.002) | -0.102 (0.219)
+h2             | +0.223 (0.007) | -0.101 (0.223) | +0.097 (0.243) | +0.084 (0.316) | +0.512 (<.001) |     1.000 (---) | +0.009 (0.917) | +0.220 (0.008)
+mean_wlen      | +0.275 (<.001) | +0.162 (0.051) | +0.173 (0.036) | +0.195 (0.018) | +0.259 (0.002) | +0.009 (0.917) |     1.000 (---) | +0.082 (0.327)
+mean_ltok      | +0.272 (<.001) | +0.382 (<.001) | +0.186 (0.025) | +0.201 (0.015) | -0.102 (0.219) | +0.220 (0.008) | +0.082 (0.327) |     1.000 (---)
+
+--- 4C.RF1b: Within-Currier Partial Spearman Correlation Matrix Controlling for A/B (n=144 pages) ---
+metric         |       A1_jsd_ex |      A3_edge_ex |     A5_moran_ex |    A5_moran_raw |      A6_charwin |              h2 |       mean_wlen |       mean_ltok
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+A1_jsd_ex      |     1.000 (---) | -0.003 (0.969) | +0.192 (0.022) | +0.182 (0.030) | +0.058 (0.494) | +0.287 (<.001) | +0.206 (0.014) | +0.130 (0.121)
+A3_edge_ex     | -0.003 (0.969) |     1.000 (---) | +0.343 (<.001) | +0.391 (<.001) | -0.046 (0.585) | -0.072 (0.391) | +0.013 (0.877) | +0.132 (0.116)
+A5_moran_ex    | +0.192 (0.022) | +0.343 (<.001) |     1.000 (---) | +0.761 (<.001) | +0.097 (0.250) | +0.102 (0.226) | +0.151 (0.071) | +0.118 (0.159)
+A5_moran_raw   | +0.182 (0.030) | +0.391 (<.001) | +0.761 (<.001) |     1.000 (---) | +0.160 (0.056) | +0.112 (0.183) | +0.138 (0.101) | +0.063 (0.458)
+A6_charwin     | +0.058 (0.494) | -0.046 (0.585) | +0.097 (0.250) | +0.160 (0.056) |     1.000 (---) | +0.490 (<.001) | +0.371 (<.001) | +0.043 (0.614)
+h2             | +0.287 (<.001) | -0.072 (0.391) | +0.102 (0.226) | +0.112 (0.183) | +0.490 (<.001) |     1.000 (---) | +0.062 (0.463) | +0.364 (<.001)
+mean_wlen      | +0.206 (0.014) | +0.013 (0.877) | +0.151 (0.071) | +0.138 (0.101) | +0.371 (<.001) | +0.062 (0.463) |     1.000 (---) | -0.101 (0.231)
+mean_ltok      | +0.130 (0.121) | +0.132 (0.116) | +0.118 (0.159) | +0.063 (0.458) | +0.043 (0.614) | +0.364 (<.001) | -0.101 (0.231) |     1.000 (---)
+
+--- 4D.RF1b: Key Constraint Interlock Pairs Within Currier A (n=66) and Within Currier B (n=78) ---
+pair_description                           |      All_r_s (p) |  Part_AB_r_s (p) |  Currier_A_r_s (p) |  Currier_B_r_s (p)
+--------------------------------------------------------------------------------------------------------------------------
+A1 (jsd_first_exc) vs A3 (cross_exc_eva)   | +0.159 ( 0.0558) | -0.003 ( 0.9687) |  -0.038 ( 0.7596) |  +0.026 ( 0.8220)
+A1 (jsd_first_exc) vs A5 (I_within_exc)    | +0.227 ( 0.0059) | +0.192 ( 0.0216) |  +0.253 ( 0.0408) |  +0.128 ( 0.2637)
+A3 (cross_exc_eva) vs A5 (I_within_exc)    | +0.394 ( 0.0000) | +0.343 ( 0.0000) |  +0.144 ( 0.2478) |  +0.386 ( 0.0005)
+A5 (I_within_exc)  vs A6 (charwin_A6)      | +0.068 ( 0.4127) | +0.097 ( 0.2503) |  -0.027 ( 0.8292) |  +0.225 ( 0.0476)
+A5r(I_within_raw)  vs A6 (charwin_A6)      | +0.092 ( 0.2687) | +0.160 ( 0.0562) |  +0.139 ( 0.2664) |  +0.201 ( 0.0779)
+A3 (cross_exc_eva) vs A6 (charwin_A6)      | -0.148 ( 0.0750) | -0.046 ( 0.5853) |  -0.035 ( 0.7797) |  -0.047 ( 0.6823)
+A3 (cross_exc_eva) vs h2                   | -0.101 ( 0.2229) | -0.072 ( 0.3908) |  +0.040 ( 0.7492) |  -0.195 ( 0.0865)
+A5 (I_within_exc)  vs h2                   | +0.097 ( 0.2429) | +0.102 ( 0.2258) |  +0.101 ( 0.4214) |  +0.072 ( 0.5318)
+A5 (I_within_exc)  vs mean_word_len        | +0.173 ( 0.0363) | +0.151 ( 0.0715) |  +0.035 ( 0.7830) |  +0.252 ( 0.0258)
+A5 (I_within_exc)  vs mean_line_tokens     | +0.186 ( 0.0248) | +0.118 ( 0.1594) |  -0.102 ( 0.4154) |  +0.269 ( 0.0170)
+A1 (jsd_first_exc) vs mean_line_tokens     | +0.272 ( 0.0009) | +0.130 ( 0.1208) |  -0.047 ( 0.7056) |  +0.244 ( 0.0316)
+
+--- 4A.IT2a: Folio-Level Summary by Currier Language (pages with >= 80 tokens: ALL=146, A=67, B=77) ---
+metric         |         ALL_med [q25, q75] |   Currier_A_med [q25, q75] |   Currier_B_med [q25, q75] | r_s(B_vs_A)   p_2side
+-----------------------------------------------------------------------------------------------------------------------------
+A1_jsd_ex      |  +0.2094 [+0.1239,+0.3013] |  +0.1565 [+0.0826,+0.2470] |  +0.2415 [+0.1628,+0.3405] |     +0.2926  3.73e-04
+A3_edge_ex     |  +0.0948 [+0.0231,+0.1817] |  +0.0380 [-0.0259,+0.0903] |  +0.1788 [+0.0830,+0.2382] |     +0.5762  4.12e-14
+A5_moran_ex    |  +0.0788 [+0.0150,+0.1331] |  +0.0386 [-0.0121,+0.1277] |  +0.0898 [+0.0549,+0.1337] |     +0.2386  3.97e-03
+A5_moran_raw   |  +0.1082 [+0.0400,+0.1733] |  +0.0584 [-0.0305,+0.1481] |  +0.1356 [+0.0870,+0.1854] |     +0.3103  1.54e-04
+A6_charwin     |  +0.5077 [+0.4356,+0.6095] |  +0.5268 [+0.4564,+0.6324] |  +0.4821 [+0.4323,+0.5723] |     -0.1408  9.22e-02
+h2             |  +1.8498 [+1.7715,+1.9377] |  +1.8509 [+1.7846,+1.9298] |  +1.8425 [+1.7685,+1.9413] |     -0.0226  7.88e-01
+mean_wlen      |  +4.9744 [+4.7618,+5.2686] |  +4.8704 [+4.6705,+5.0976] |  +5.1217 [+4.8439,+5.3225] |     +0.3195  9.47e-05
+mean_ltok      |  +8.6840 [+7.0000,+9.5922] |  +7.3846 [+5.9286,+8.5000] |  +9.3636 [+8.6757,+9.8889] |     +0.5366  4.15e-12
+
+--- 4B.IT2a: Folio-Level Spearman Correlation Matrix r_s (p-value) Across All 146 Pages ---
+metric         |       A1_jsd_ex |      A3_edge_ex |     A5_moran_ex |    A5_moran_raw |      A6_charwin |              h2 |       mean_wlen |       mean_ltok
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+A1_jsd_ex      |     1.000 (---) | +0.184 (0.026) | +0.254 (0.002) | +0.295 (<.001) | +0.041 (0.626) | +0.243 (0.003) | +0.297 (<.001) | +0.234 (0.004)
+A3_edge_ex     | +0.184 (0.026) |     1.000 (---) | +0.241 (0.003) | +0.330 (<.001) | -0.186 (0.024) | -0.014 (0.864) | +0.229 (0.005) | +0.398 (<.001)
+A5_moran_ex    | +0.254 (0.002) | +0.241 (0.003) |     1.000 (---) | +0.855 (<.001) | +0.056 (0.505) | +0.025 (0.761) | +0.216 (0.009) | +0.158 (0.057)
+A5_moran_raw   | +0.295 (<.001) | +0.330 (<.001) | +0.855 (<.001) |     1.000 (---) | +0.076 (0.364) | +0.039 (0.643) | +0.250 (0.002) | +0.201 (0.015)
+A6_charwin     | +0.041 (0.626) | -0.186 (0.024) | +0.056 (0.505) | +0.076 (0.364) |     1.000 (---) | +0.498 (<.001) | +0.283 (<.001) | -0.017 (0.836)
+h2             | +0.243 (0.003) | -0.014 (0.864) | +0.025 (0.761) | +0.039 (0.643) | +0.498 (<.001) |     1.000 (---) | +0.056 (0.500) | +0.277 (<.001)
+mean_wlen      | +0.297 (<.001) | +0.229 (0.005) | +0.216 (0.009) | +0.250 (0.002) | +0.283 (<.001) | +0.056 (0.500) |     1.000 (---) | +0.159 (0.055)
+mean_ltok      | +0.234 (0.004) | +0.398 (<.001) | +0.158 (0.057) | +0.201 (0.015) | -0.017 (0.836) | +0.277 (<.001) | +0.159 (0.055) |     1.000 (---)
+
+--- 4C.IT2a: Within-Currier Partial Spearman Correlation Matrix Controlling for A/B (n=144 pages) ---
+metric         |       A1_jsd_ex |      A3_edge_ex |     A5_moran_ex |    A5_moran_raw |      A6_charwin |              h2 |       mean_wlen |       mean_ltok
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+A1_jsd_ex      |     1.000 (---) | +0.016 (0.851) | +0.185 (0.027) | +0.221 (0.008) | +0.095 (0.258) | +0.276 (<.001) | +0.238 (0.004) | +0.091 (0.278)
+A3_edge_ex     | +0.016 (0.851) |     1.000 (---) | +0.124 (0.139) | +0.193 (0.021) | -0.135 (0.108) | -0.002 (0.980) | +0.065 (0.439) | +0.137 (0.102)
+A5_moran_ex    | +0.185 (0.027) | +0.124 (0.139) |     1.000 (---) | +0.848 (<.001) | +0.093 (0.267) | +0.034 (0.689) | +0.172 (0.040) | +0.042 (0.621)
+A5_moran_raw   | +0.221 (0.008) | +0.193 (0.021) | +0.848 (<.001) |     1.000 (---) | +0.123 (0.144) | +0.045 (0.591) | +0.180 (0.031) | +0.054 (0.518)
+A6_charwin     | +0.095 (0.258) | -0.135 (0.108) | +0.093 (0.267) | +0.123 (0.144) |     1.000 (---) | +0.486 (<.001) | +0.375 (<.001) | +0.100 (0.234)
+h2             | +0.276 (<.001) | -0.002 (0.980) | +0.034 (0.689) | +0.045 (0.591) | +0.486 (<.001) |     1.000 (---) | +0.081 (0.334) | +0.381 (<.001)
+mean_wlen      | +0.238 (0.004) | +0.065 (0.439) | +0.172 (0.040) | +0.180 (0.031) | +0.375 (<.001) | +0.081 (0.334) |     1.000 (---) | -0.029 (0.728)
+mean_ltok      | +0.091 (0.278) | +0.137 (0.102) | +0.042 (0.621) | +0.054 (0.518) | +0.100 (0.234) | +0.381 (<.001) | -0.029 (0.728) |     1.000 (---)
+
+--- 4D.IT2a: Key Constraint Interlock Pairs Within Currier A (n=67) and Within Currier B (n=77) ---
+pair_description                           |      All_r_s (p) |  Part_AB_r_s (p) |  Currier_A_r_s (p) |  Currier_B_r_s (p)
+--------------------------------------------------------------------------------------------------------------------------
+A1 (jsd_first_exc) vs A3 (cross_exc_eva)   | +0.184 ( 0.0263) | +0.016 ( 0.8513) |  -0.046 ( 0.7142) |  +0.048 ( 0.6758)
+A1 (jsd_first_exc) vs A5 (I_within_exc)    | +0.254 ( 0.0020) | +0.185 ( 0.0272) |  +0.241 ( 0.0498) |  +0.129 ( 0.2624)
+A3 (cross_exc_eva) vs A5 (I_within_exc)    | +0.241 ( 0.0034) | +0.124 ( 0.1389) |  +0.008 ( 0.9481) |  +0.106 ( 0.3579)
+A5 (I_within_exc)  vs A6 (charwin_A6)      | +0.056 ( 0.5049) | +0.093 ( 0.2667) |  -0.184 ( 0.1352) |  +0.341 ( 0.0024)
+A5r(I_within_raw)  vs A6 (charwin_A6)      | +0.076 ( 0.3637) | +0.123 ( 0.1442) |  -0.105 ( 0.3999) |  +0.298 ( 0.0085)
+A3 (cross_exc_eva) vs A6 (charwin_A6)      | -0.186 ( 0.0243) | -0.135 ( 0.1083) |  -0.085 ( 0.4950) |  -0.197 ( 0.0862)
+A3 (cross_exc_eva) vs h2                   | -0.014 ( 0.8644) | -0.002 ( 0.9798) |  +0.111 ( 0.3716) |  -0.149 ( 0.1954)
+A5 (I_within_exc)  vs h2                   | +0.025 ( 0.7612) | +0.034 ( 0.6886) |  -0.084 ( 0.4993) |  +0.117 ( 0.3114)
+A5 (I_within_exc)  vs mean_word_len        | +0.216 ( 0.0088) | +0.172 ( 0.0402) |  +0.107 ( 0.3898) |  +0.267 ( 0.0190)
+A5 (I_within_exc)  vs mean_line_tokens     | +0.158 ( 0.0573) | +0.042 ( 0.6214) |  -0.242 ( 0.0484) |  +0.264 ( 0.0202)
+A1 (jsd_first_exc) vs mean_line_tokens     | +0.234 ( 0.0044) | +0.091 ( 0.2781) |  -0.113 ( 0.3608) |  +0.263 ( 0.0211)
+
+====================================================================================================
+SYNTHESIS & SCIENTIFIC VERDICTS (s33 — O-043 & Line-Scale Interlock)
+====================================================================================================
+1. H1 Verdict (Stratified Anatomy of A5): Within-line word-length Moran I is SIGNIFICANT (I > null_q99,
+   p=0.001) in BOTH Currier A (ZL3b I=0.117084, null_med=0.057392, excess=+0.059692)
+   and Currier B (ZL3b I=0.167339, null_med=0.066497, excess=+0.100843),
+   across Hands 1, 2, 3, 5 (and positive excess +0.064, p=0.036 in small Hand 4), and across all major
+   sections (H, B, P, S, T in P* loci, plus A and Z on all loci, p<=0.003) on ZL3b, RF1b, IT2a.
+   Unlike A3 (which is B-only), A5 is a universal manuscript property across both Currier languages.
+2. H2 Verdict (Mechanistic Decomposition of I_within = 0.157244 on ZL3b — Answering O-043):
+   - Between-page/section/hand mean word-length differences account for +0.030639 (19.5%).
+   - Line-to-line mean word-length variation within pages accounts for +0.039406 (25.1%),
+     yielding the within-line shuffle null median N2 = 0.069774 (44.4% of I_within).
+   - The true intra-line ordering excess (I_within - N2 = +0.087470) is NOT an artifact of line
+     boundaries: fixing ws[0] and ws[-1] (N3c) accounts for only +0.006973 (8.0% of intra-line excess),
+     and strictly interior words ws[1:-1] (N4c) retain I_within = 0.180545 vs null_med = 0.086301
+     (excess = +0.094244, q99 = 0.099400, p = 0.002).
+   - DECISIVE MECHANISM (N5): Subtracting SlotSegmenter prefix+suffix lengths (N5a core lengths) COLLAPSES
+     the intra-line word-length ordering excess by 96.0% to statistical insignificance on all 3 transliterations:
+     ZL3b I_core = 0.034567 vs null_med = 0.031044 (excess = +0.003523, 4.0% of full excess, p = 0.228;
+     interior core excess = +0.002447, p = 0.335). Preserving SlotSegmenter (prefix, suffix)
+     along the line accounts for 90.0% (prefix alone 67.9%) of the intra-line excess.
+3. H3 Verdict (Line-Position Curve): Voynich lines follow a sharp boundary-to-interior word-length & frequency curve:
+   paragraph-initial words are longest (ZL3b A: 6.08, B: 6.51 chars) and rarest (~52% hapax),
+   ordinary line-initial words are elevated (5.20 chars),
+   interior slots 1..N-2 form a flat high-frequency plateau (4.95 chars, ~10.5% hapax),
+   and line-final slot N-1 drops sharply in B (4.73 chars) with higher h2 (2.25) and higher hapax rate (22.7%).
+4. H4 Verdict (Folio & Quire Interlock): Across folios, controlling for Currier A/B removes the apparent
+   folio-level correlation between A1 and A3 (partial r_s = +0.043, p = 0.610 on ZL3b) and between A1 and A5
+   (partial r_s = +0.107, p = 0.201 on ZL3b), while within Currier B, A5 (I_within_exc) correlates positively
+   with A6 (charwin_A6: r_s = +0.345, p = 0.0023 on ZL3b; +0.341, p = 0.0024 on IT2a), directly linking
+   intra-line affix-length cadence (A5) to character-level predictability over word inventory (A6).
+
+done-when: results_s33_line_scales_interlock.txt written with all 4 parts across ZL3b, RF1b, IT2a -> MET
+run finished 2026-10-17 21:39:49 (datetime.now; `date` unavailable) (elapsed 52.4s)

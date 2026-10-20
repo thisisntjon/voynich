@@ -1,0 +1,26 @@
+C3: cross-space edge coupling, MI(last glyph of token i ; first glyph of token i+1), bits
+null = tokens shuffled within each line (20 reps); excess = MI - null mean; z = excess / null sd
+published target (abstract-level): ~0.2 bits real, > all prose controls; keyless generators ~0.001-0.009
+
+VOYNICH all                    EVA: MI=0.1950 null=0.0141 excess=+0.1809 (z  194.7)   glyph+: MI=0.2125 null=0.0227 excess=+0.1899 (z  203.1)   pairs=30727
+VOYNICH Currier A              EVA: MI=0.1460 null=0.0256 excess=+0.1203 (z   67.8)   glyph+: MI=0.1773 null=0.0446 excess=+0.1327 (z   55.1)   pairs=9674
+VOYNICH Currier B              EVA: MI=0.2489 null=0.0167 excess=+0.2321 (z  203.2)   glyph+: MI=0.2674 null=0.0253 excess=+0.2422 (z  213.6)   pairs=20600
+VOYNICH uncertain spaces joined EVA: MI=0.1628 null=0.0146 excess=+0.1482 (z  145.9)   glyph+: MI=0.1785 null=0.0230 excess=+0.1555 (z  127.7)   pairs=28267
+NULL token-shuffled            EVA: MI=0.0059 null=0.0071 excess=-0.0012 (z   -2.2)   glyph+: MI=0.0116 null=0.0136 excess=-0.0020 (z   -2.4)   pairs=30727
+
+b4 SIM_global                  EVA: MI=0.0158 null=0.0184 excess=-0.0025 (z   -2.5)   glyph+: MI=0.0228 null=0.0257 excess=-0.0029 (z   -3.3)   pairs=30727
+b4 SIM_seeded                  EVA: MI=0.0216 null=0.0197 excess=+0.0019 (z    1.6)   glyph+: MI=0.0316 null=0.0297 excess=+0.0019 (z    1.3)   pairs=30727
+b4 SIMcal_global               EVA: MI=0.0107 null=0.0101 excess=+0.0006 (z    0.8)   glyph+: MI=0.0167 null=0.0161 excess=+0.0006 (z    0.7)   pairs=30727
+b4 SIMcal_seeded               EVA: MI=0.0169 null=0.0176 excess=-0.0007 (z   -0.7)   glyph+: MI=0.0251 null=0.0241 excess=+0.0011 (z    1.1)   pairs=30727
+c2 global, no rules            EVA: MI=0.0064 null=0.0063 excess=+0.0001 (z    0.1)   glyph+: MI=0.0117 null=0.0112 excess=+0.0004 (z    0.7)   pairs=30727
+c2 section ps=0.6              EVA: MI=0.0057 null=0.0059 excess=-0.0002 (z   -0.4)   glyph+: MI=0.0107 null=0.0108 excess=-0.0001 (z   -0.1)   pairs=30727
+c2 TUNED L=200 post s5         EVA: MI=0.0051 null=0.0054 excess=-0.0003 (z   -0.6)   glyph+: MI=0.0089 null=0.0094 excess=-0.0005 (z   -0.9)   pairs=30727
+c2 drift ps=0.6                EVA: MI=0.0050 null=0.0053 excess=-0.0003 (z   -0.6)   glyph+: MI=0.0094 null=0.0103 excess=-0.0009 (z   -1.4)   pairs=30727
+c2 circular ps=0.6             EVA: MI=0.0069 null=0.0066 excess=+0.0003 (z    0.5)   glyph+: MI=0.0138 null=0.0131 excess=+0.0007 (z    0.8)   pairs=30727
+
+CTRL latin_caesar              EVA: MI=0.0512 null=0.0157 excess=+0.0355 (z   27.1)   glyph+: MI=0.0606 null=0.0187 excess=+0.0419 (z   30.2)   pairs=17351
+CTRL latin_augustine           EVA: MI=0.0492 null=0.0108 excess=+0.0385 (z   60.4)   glyph+: MI=0.0588 null=0.0137 excess=+0.0451 (z   57.6)   pairs=29333
+CTRL italian_dante             EVA: MI=0.1560 null=0.0113 excess=+0.1446 (z  169.1)   glyph+: MI=0.1711 null=0.0153 excess=+0.1557 (z  166.2)   pairs=29333
+CTRL german_faust              EVA: MI=0.0681 null=0.0155 excess=+0.0526 (z   64.3)   glyph+: MI=0.0780 null=0.0197 excess=+0.0583 (z   63.9)   pairs=26144
+CTRL german_kafka              EVA: MI=0.0644 null=0.0208 excess=+0.0436 (z   29.4)   glyph+: MI=0.0779 null=0.0270 excess=+0.0509 (z   30.9)   pairs=16239
+CTRL english_alice             EVA: MI=0.1251 null=0.0192 excess=+0.1058 (z  198.3)   glyph+: MI=0.1427 null=0.0279 excess=+0.1148 (z  149.4)   pairs=23160

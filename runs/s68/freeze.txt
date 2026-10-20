@@ -1,0 +1,4 @@
+s68 prereg freeze: Sun Oct 18 01:53:44 PDT 2026
+stub: s68_parisel_switch_within_hand.prereg.sha256 (script + tools/ivtff_to_meta.py)
+fixture run: runs/s68/fixture.txt -> runs/s68/fixture_results.txt (01:52-01:53 PDT, pre-freeze)
+history: drafted as s63_parisel_switch_within_hand.py (prefix taken by Argon), then copied to s66_parisel_switch_within_hand.py (also taken; one fixture run started 01:39, stopped at ~10 min for slowness, wrote only runs/s66/fixture.txt). Neither s63 nor s66 was ever frozen or run on real data. Both files left in place, unused.

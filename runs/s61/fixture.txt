@@ -1,0 +1,112 @@
+s61 fixture; stub_match: NO STUB; date Sun Oct 18 01:25:19 PDT 2026 (`date`)
+fixture: synthetic text 120 pages, 12729 tokens, truth {'p_copy': 0.2, 'tau': 4.0, 'a': 0.15, 'q_edit': 0.3, 'p_new': 0.1}
+=== FIX: 120 pages; training 96 pages (10166 tokens), held-out 24 pages (2563 tokens); training SlotSegmenter 36 prefix / 52 suffix candidates ===
+  fitting JW (line prefix state on)
+    stage A0 (12 evals): p_copy 0, best types loss 1.64 at p_new 0.13
+    stage A (251 evals): best loss 85.57 at p_copy 0.2, tau 4.0, a 0.15
+    stage B (383 evals): best loss 68.78 at q_edit 0.3, p_new 0.08
+    stage C (427 evals): best loss 63.85 at p_copy 0.2, tau 7.0, a 0.0
+    stage D (438 evals): best loss 63.85 at p_new 0.08
+  JW context tables (counted): {'ctx_state': 1909, 'ctx_suf': 108, 'ctx_pos': 4, 'words': 3910}
+  JW fit (438 grid evaluations, 22s): p_copy 0.2, tau 7.0, a 0.0, q_edit 0.3, p_new 0.08; loss 63.85 (R 49.90, shares 6.74, types 7.21)
+  fitting JW-lag1 (line prefix state off)
+    stage A0 (12 evals): p_copy 0, best types loss 6.81 at p_new 0.1
+    stage A (251 evals): best loss 74.35 at p_copy 0.2, tau 4.0, a 0.3
+    stage B (383 evals): best loss 56.73 at q_edit 0.3, p_new 0.08
+    stage C (427 evals): best loss 54.08 at p_copy 0.2, tau 4.0, a 0.15
+    stage D (438 evals): best loss 42.67 at p_new 0.1
+  JW-lag1 context tables (counted): {'ctx_state': 0, 'ctx_suf': 108, 'ctx_pos': 4, 'words': 3910}
+  JW-lag1 fit (438 grid evaluations, 22s): p_copy 0.2, tau 4.0, a 0.15, q_edit 0.3, p_new 0.1; loss 42.67 (R 40.16, shares 2.13, types 0.38)
+  JW0 = JW with p_copy 0, p_new 0.13 (stage A0, type count); loss 1262.86 (R 748.55, shares 512.68, types 1.64)
+  [in-sample] target R(d) real    : 1.867 1.554 1.373 1.338 1.385 1.353 1.297 1.181 1.139 1.202 0.986 0.944 1.001 1.012 1.054 0.931 0.927 0.938 0.988 0.992
+  [in-sample] target edit shares  : identical 0.5092, prefix_swap 0.1091, suffix_swap 0.1058, core_edit1 0.2759  (counts [1881, 403, 391, 1019])
+  [in-sample JW] p_copy 0.2, tau 7.0, a 0.0, q_edit 0.3, p_new 0.08
+  [in-sample JW] fitted R(d) s0 : 1.742 1.583 1.456 1.401 1.400 1.338 1.333 1.237 1.159 1.085 1.058 1.066 1.015 1.079 1.047 1.008 1.057 0.982 1.011 0.934
+  [in-sample JW] edit shares s0: identical 0.5483, prefix_swap 0.1121, suffix_swap 0.0964, core_edit1 0.2432  (counts [2054, 420, 361, 911])
+  [in-sample JW] types 3805 at 10246 tokens vs real 3910 at 10166 (-2.7 %)
+  [in-sample JW-lag1] p_copy 0.2, tau 4.0, a 0.15, q_edit 0.3, p_new 0.1
+  [in-sample JW-lag1] fitted R(d) s0 : 1.814 1.622 1.473 1.404 1.397 1.266 1.230 1.180 1.192 1.195 1.061 1.047 1.091 0.931 0.985 0.942 0.946 0.967 0.926 0.940
+  [in-sample JW-lag1] edit shares s0: identical 0.5294, prefix_swap 0.1117, suffix_swap 0.1038, core_edit1 0.2550  (counts [1943, 410, 381, 936])
+  [in-sample JW-lag1] types 3934 at 10184 tokens vs real 3910 at 10166 (+0.6 %)
+  [in-sample JW0] p_copy 0, p_new 0.13
+  [in-sample JW0] fitted R(d) s0 : 1.238 1.071 0.997 0.982 0.969 0.995 0.940 1.009 0.946 0.999 0.962 1.024 0.986 1.081 0.980 1.112 1.031 0.987 0.984 0.973
+  [in-sample JW0] edit shares s0: identical 0.1837, prefix_swap 0.3282, suffix_swap 0.3099, core_edit1 0.1782  (counts [201, 359, 339, 195])
+  [in-sample JW0] types 3960 at 10230 tokens vs real 3910 at 10166 (+1.3 %)
+  [in-sample] line length real mean 7.564 sd 1.737; JW seed 0 mean 7.624 sd 1.738 (empirical sampling)
+  memorisation (vs REAL training pages): share of held-out(-like) lines verbatim in training lines (all / >= 3 words), share of within-line word bigrams seen in training
+    real held-out : lines 0.0000 (n 336), lines>=3 0.0000 (n 336), bigrams 0.0741 (n 2227)
+    JW            : lines 0.0000 (n 336), lines>=3 0.0000 (n 336), bigrams 0.1577 (n 2179)
+    JW0           : lines 0.0000 (n 336), lines>=3 0.0000 (n 336), bigrams 0.1994 (n 2190)
+    JW-lag1       : lines 0.0000 (n 336), lines>=3 0.0000 (n 336), bigrams 0.0243 (n 2226)
+  measured 10 texts in 10s
+  subsample draws 3s
+  real held-out: Moran 0.1135 [0.0897,0.1345]; core->core +0.0170 [-0.0148,+0.0410]; prefix gain -0.0345 [-0.0457,-0.0270]; jsd_first_fg 0.0246 (excess +0.0162); CHARWIN -0.3128
+  real F1 by stream: prefix -0.0017 [-0.0069,+0.0026], core +0.0192 [+0.0143,+0.0254], suffix +0.0496 [+0.0429,+0.0572] -> s39 rule on the real text (this split): both / neither
+    JW s1: Moran 0.1117 core->core +0.0521 prefix gain -0.0190 jsd_first_fg 0.0091 CHARWIN -0.5884 F1 prefix/core/suffix +0.0113/+0.0242/+0.0570
+    JW s2: Moran 0.1067 core->core +0.0331 prefix gain -0.0406 jsd_first_fg 0.0164 CHARWIN -0.5533 F1 prefix/core/suffix +0.0092/+0.0003/+0.0579
+    JW s3: Moran 0.1520 core->core +0.0382 prefix gain -0.0224 jsd_first_fg 0.0159 CHARWIN -0.5398 F1 prefix/core/suffix -0.0011/+0.0338/+0.0387
+    JW0 s1: Moran 0.0996 core->core +0.0232 prefix gain -0.0424 jsd_first_fg 0.0162 CHARWIN -0.6184 F1 prefix/core/suffix +0.0076/+0.0190/+0.0957
+    JW0 s2: Moran 0.1166 core->core +0.0203 prefix gain -0.0325 jsd_first_fg 0.0217 CHARWIN -0.6973 F1 prefix/core/suffix +0.0164/+0.0313/+0.0560
+    JW0 s3: Moran 0.0787 core->core +0.0263 prefix gain -0.0388 jsd_first_fg 0.0193 CHARWIN -0.7465 F1 prefix/core/suffix -0.0006/+0.0161/+0.0619
+    JW-lag1 s1: Moran 0.1110 core->core -0.0424 prefix gain -0.0599 jsd_first_fg 0.0125 CHARWIN -0.5355 F1 prefix/core/suffix -0.0054/-0.0084/+0.0112
+    JW-lag1 s2: Moran 0.1068 core->core +0.0338 prefix gain -0.0372 jsd_first_fg 0.0271 CHARWIN -0.6497 F1 prefix/core/suffix +0.0012/+0.0091/+0.0514
+    JW-lag1 s3: Moran 0.0839 core->core +0.0222 prefix gain -0.0619 jsd_first_fg 0.0065 CHARWIN -0.5380 F1 prefix/core/suffix -0.0070/+0.0211/+0.0325
+  -- JW: 3/6 hold --
+    P1 HOLDS: Moran Δ +0.0100 [-0.0157,+0.0378] (gen 0.1235, real 0.1135); margin hi-0 = +0.0378
+    P2 HOLDS: core->core excess Δ +0.0241 [-0.0195,+0.0583] (gen +0.0411, real +0.0170); margins 0-lo +0.0195, hi-0 +0.0583
+    P3 HOLDS: prefix gain gen -0.0273 vs real -0.0345 [-0.0457,-0.0270]; margins g-lo +0.0184, hi-g +0.0004
+    P4 fails: jsd_first_fg gen 0.0138 vs s15 width [0.1447,0.2156] (real held-out 0.0246); margins -0.1309 / +0.2018; excess gen +0.0066 real +0.0162
+    P5 fails: CHARWIN gen -0.5605 (real -0.3128); margin -0.5605
+    P6 fails: F1 gen: prefix +0.0065 [+0.0034,+0.0094], core +0.0194 [+0.0162,+0.0255], suffix +0.0512 [+0.0457,+0.0557] -> both / neither; core lo margin +0.0162
+  -- JW0: 3/6 hold --
+    P1 HOLDS: Moran Δ -0.0152 [-0.0440,+0.0135] (gen 0.0983, real 0.1135); margin hi-0 = +0.0135
+    P2 HOLDS: core->core excess Δ +0.0062 [-0.0248,+0.0380] (gen +0.0233, real +0.0170); margins 0-lo +0.0248, hi-0 +0.0380
+    P3 HOLDS: prefix gain gen -0.0379 vs real -0.0345 [-0.0457,-0.0270]; margins g-lo +0.0078, hi-g +0.0109
+    P4 fails: jsd_first_fg gen 0.0191 vs s15 width [0.1447,0.2156] (real held-out 0.0246); margins -0.1256 / +0.1965; excess gen +0.0108 real +0.0162
+    P5 fails: CHARWIN gen -0.6874 (real -0.3128); margin -0.6874
+    P6 fails: F1 gen: prefix +0.0078 [+0.0054,+0.0114], core +0.0221 [+0.0176,+0.0265], suffix +0.0712 [+0.0640,+0.0770] -> both / neither; core lo margin +0.0176
+  -- JW-lag1: 2/6 hold --
+    P1 HOLDS: Moran Δ -0.0130 [-0.0333,+0.0129] (gen 0.1005, real 0.1135); margin hi-0 = +0.0129
+    P2 HOLDS: core->core excess Δ -0.0125 [-0.0388,+0.0143] (gen +0.0045, real +0.0170); margins 0-lo +0.0388, hi-0 +0.0143
+    P3 fails: prefix gain gen -0.0530 vs real -0.0345 [-0.0457,-0.0270]; margins g-lo -0.0073, hi-g +0.0260
+    P4 fails: jsd_first_fg gen 0.0153 vs s15 width [0.1447,0.2156] (real held-out 0.0246); margins -0.1294 / +0.2003; excess gen +0.0078 real +0.0162
+    P5 fails: CHARWIN gen -0.5744 (real -0.3128); margin -0.5744
+    P6 fails: F1 gen: prefix -0.0037 [-0.0072,-0.0003], core +0.0073 [+0.0029,+0.0117], suffix +0.0317 [+0.0280,+0.0365] -> both / neither; core lo margin +0.0029
+  fixture check: fitted JW p_copy 0.2 vs planted 0.2 -> OK (tolerance 0.08); fitted {'p_copy': 0.2, 'tau': 7.0, 'a': 0.0, 'q_edit': 0.3, 'p_new': 0.08} (informative)
+  fixture JW 3/6, JW0 3/6, JW-lag1 2/6 (informative only)
+  fixture: exercising summarize() with the fixture result under all three translit names
+=== VERDICT (pre-registered rule) ===
+  JW     : ZL3b 3/6 [P1+ P2+ P3+ P4- P5- P6-]; RF1b 3/6 [P1+ P2+ P3+ P4- P5- P6-]; IT2a 3/6 [P1+ P2+ P3+ P4- P5- P6-]
+  JW0    : ZL3b 3/6 [P1+ P2+ P3+ P4- P5- P6-]; RF1b 3/6 [P1+ P2+ P3+ P4- P5- P6-]; IT2a 3/6 [P1+ P2+ P3+ P4- P5- P6-]
+  JW-lag1: ZL3b 2/6 [P1+ P2+ P3- P4- P5- P6-]; RF1b 2/6 [P1+ P2+ P3- P4- P5- P6-]; IT2a 2/6 [P1+ P2+ P3- P4- P5- P6-]
+  s57 as filed (not rerun): local-memory ZL3b 0/6, RF1b 0/6, IT2a 0/6; null p_copy=0 1/6 each
+  s58 as filed (not rerun): TL ZL3b 1/6, RF1b 2/6, IT2a 2/6; TL0 2/6 each
+VERDICT: joint word producer does NOT predict untouched pages (ZL3b 3/6; holding sets {'ZL3b': ('P1', 'P2', 'P3'), 'RF1b': ('P1', 'P2', 'P3'), 'IT2a': ('P1', 'P2', 'P3')})
+  ZL3b: held by JW not JW0: none; held by JW0 not JW: none
+  ZL3b: held by JW not JW-lag1: ['P3']; held by JW-lag1 not JW: none
+  RF1b: held by JW not JW0: none; held by JW0 not JW: none
+  RF1b: held by JW not JW-lag1: ['P3']; held by JW-lag1 not JW: none
+  IT2a: held by JW not JW0: none; held by JW0 not JW: none
+  IT2a: held by JW not JW-lag1: ['P3']; held by JW-lag1 not JW: none
+
+=== TABLE: generated point (mean over seeds) vs real held-out; + = holds ===
+  translit model     P1 Moran         P2 core->core      P3 prefix gain     P4 jsd_first      P5 CHARWIN        P6 F1 core (call)
+  ZL3b     real     +0.1135          +0.0170            -0.0345            0.0246            -0.3128           +0.0192
+  ZL3b     JW       +0.1235 +        +0.0411 +          -0.0273 +          0.0138 -          -0.5605 -         +0.0194 - (both / neither)
+  ZL3b     JW0      +0.0983 +        +0.0233 +          -0.0379 +          0.0191 -          -0.6874 -         +0.0221 - (both / neither)
+  ZL3b     JW-lag1  +0.1005 +        +0.0045 +          -0.0530 -          0.0153 -          -0.5744 -         +0.0073 - (both / neither)
+  RF1b     real     +0.1135          +0.0170            -0.0345            0.0246            -0.3128           +0.0192
+  RF1b     JW       +0.1235 +        +0.0411 +          -0.0273 +          0.0138 -          -0.5605 -         +0.0194 - (both / neither)
+  RF1b     JW0      +0.0983 +        +0.0233 +          -0.0379 +          0.0191 -          -0.6874 -         +0.0221 - (both / neither)
+  RF1b     JW-lag1  +0.1005 +        +0.0045 +          -0.0530 -          0.0153 -          -0.5744 -         +0.0073 - (both / neither)
+  IT2a     real     +0.1135          +0.0170            -0.0345            0.0246            -0.3128           +0.0192
+  IT2a     JW       +0.1235 +        +0.0411 +          -0.0273 +          0.0138 -          -0.5605 -         +0.0194 - (both / neither)
+  IT2a     JW0      +0.0983 +        +0.0233 +          -0.0379 +          0.0191 -          -0.6874 -         +0.0221 - (both / neither)
+  IT2a     JW-lag1  +0.1005 +        +0.0045 +          -0.0530 -          0.0153 -          -0.5744 -         +0.0073 - (both / neither)
+
+=== IN-SAMPLE TYPE COUNT CHECK (flag if off by > 15 %) ===
+  ZL3b: JW -2.7 %; JW0 +1.3 %; JW-lag1 +0.6 %
+  RF1b: JW -2.7 %; JW0 +1.3 %; JW-lag1 +0.6 %
+  IT2a: JW -2.7 %; JW0 +1.3 %; JW-lag1 +0.6 %
+caveats: P6 weak (the s39 rule gives a different call on each transliteration's real text for this split); P3 / P4 close to built-in via the counted context model; paragraph-initial = first line of page (proxy); the context model draws whole training words -- see the memorisation check
+FIXTURE PASS (57s)

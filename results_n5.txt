@@ -1,0 +1,96 @@
+N5 signature discrimination (O-003)  run=2026-10-17T19:24:21  seed=20261017
+pre-registered in the n5_signature_discrimination.py docstring; prereg hash in n5_signature_discrimination.prereg.sha256
+CHARWIN = unigram-GT-renorm - char3-WB bits/token (page split, + = char wins, stronger high); POSLOCK = glyph position entropy (stronger low); MORAN = Moran I word length lag 1 (stronger high)
+
+--- manuscript ---
+  ZL3b      tokens= 34857  CHARWIN +0.094  POSLOCK 1.661  MORAN +0.141
+  RF1b      tokens= 34618  CHARWIN +0.110  POSLOCK 1.665  MORAN +0.141
+  IT2a      tokens= 34411  CHARWIN +0.098  POSLOCK 1.650  MORAN +0.141
+  ZL3b-25k  tokens= 25007  CHARWIN +0.099  POSLOCK 1.663  MORAN +0.119
+
+--- ENCODED producers (first 25000 tokens) ---
+  flow_cipher_layer                  tokens= 21292  CHARWIN -0.182  POSLOCK 1.598  MORAN -0.021
+  nomen_k2_x2                        tokens= 25007  CHARWIN -0.441  POSLOCK 1.845  MORAN -0.001
+  nomen_k2_x8                        tokens= 25007  CHARWIN -0.471  POSLOCK 1.931  MORAN +0.004
+  f3_flow_cipher s1                  tokens= 20917  CHARWIN -0.197  POSLOCK 1.577  MORAN -0.018
+  f3_flow_cipher s2                  tokens= 20917  CHARWIN -0.171  POSLOCK 1.582  MORAN -0.023
+  f3_flow_cipher s3                  tokens= 20917  CHARWIN -0.194  POSLOCK 1.579  MORAN -0.014
+  naibbe_reencrypt s1                tokens= 20917  CHARWIN -0.178  POSLOCK 1.574  MORAN -0.041
+  naibbe_reencrypt s2                tokens= 20917  CHARWIN -0.176  POSLOCK 1.571  MORAN -0.027
+  naibbe_reencrypt s3                tokens= 20917  CHARWIN -0.174  POSLOCK 1.574  MORAN -0.038
+  naibbe_workbook                    tokens= 20917  CHARWIN -0.162  POSLOCK 1.573  MORAN -0.041
+  h1_ruled_flow s1                   tokens= 20917  CHARWIN -0.172  POSLOCK 1.576  MORAN -0.017
+  h1_ruled_flow s2                   tokens= 20917  CHARWIN -0.147  POSLOCK 1.581  MORAN -0.024
+  h1_ruled_flow s3                   tokens= 20917  CHARWIN -0.162  POSLOCK 1.577  MORAN -0.014
+  k4 k=4 w=120 b=1.5                 tokens= 25007  CHARWIN -0.523  POSLOCK 1.723  MORAN +0.009
+  k4 k=6 w=180 b=1.8                 tokens= 25007  CHARWIN -0.559  POSLOCK 1.745  MORAN +0.015
+  k4 k=8 w=260 b=2.0                 tokens= 25007  CHARWIN -0.562  POSLOCK 1.741  MORAN +0.012
+  k4 k=12 w=400 b=2.2                tokens= 25007  CHARWIN -0.556  POSLOCK 1.764  MORAN +0.029
+  range CHARWIN  -0.562 .. -0.147   median of producer means -0.185
+  range POSLOCK  +1.571 .. +1.931   median of producer means +1.588
+  range MORAN    -0.041 .. +0.029   median of producer means -0.019
+
+--- MEANINGLESS producers (first 25000 tokens) ---
+  flow_gen_layer s1 (file)           tokens= 25007  CHARWIN -0.052  POSLOCK 1.381  MORAN +0.043
+  flow_gen_layer s2                  tokens= 25007  CHARWIN -0.052  POSLOCK 1.383  MORAN +0.044
+  flow_gen_layer s3                  tokens= 25007  CHARWIN -0.059  POSLOCK 1.409  MORAN +0.047
+  timm_schinner                      tokens= 25007  CHARWIN -0.012  POSLOCK 1.793  MORAN -0.004
+  timm_schinner_ownlines             tokens= 25003  CHARWIN +0.038  POSLOCK 1.793  MORAN -0.004
+  schwartz_reuse                     tokens= 25007  CHARWIN -0.047  POSLOCK 1.674  MORAN +0.113
+  c2_best                            tokens= 25007  CHARWIN -0.001  POSLOCK 1.407  MORAN +0.006
+  n2_habit_p0.04 s1                  tokens= 25007  CHARWIN -0.038  POSLOCK 1.415  MORAN +0.070
+  n2_habit_p0.04 s2                  tokens= 25007  CHARWIN -0.009  POSLOCK 1.410  MORAN +0.051
+  n2_habit_p0.04 s3                  tokens= 25007  CHARWIN -0.045  POSLOCK 1.415  MORAN +0.061
+  range CHARWIN  -0.059 .. +0.038   median of producer means -0.021
+  range POSLOCK  +1.381 .. +1.793   median of producer means +1.544
+  range MORAN    -0.004 .. +0.113   median of producer means +0.025
+
+--- NATURAL-language controls (first 25000 tokens) ---
+  latin_caesar                       tokens= 19520  CHARWIN -1.603  POSLOCK 2.152  MORAN +0.001
+  latin_augustine                    tokens= 25000  CHARWIN -0.760  POSLOCK 2.147  MORAN -0.057
+  italian_dante                      tokens= 25000  CHARWIN -0.444  POSLOCK 2.016  MORAN -0.154
+  german_faust                       tokens= 25000  CHARWIN -0.631  POSLOCK 2.033  MORAN -0.031
+  german_kafka                       tokens= 18269  CHARWIN -1.009  POSLOCK 2.067  MORAN -0.031
+  english_alice                      tokens= 25000  CHARWIN -0.624  POSLOCK 1.980  MORAN -0.065
+  hebrew_torah                       tokens= 25000  CHARWIN -0.092  POSLOCK 2.013  MORAN +0.038
+  arabic_quran                       tokens= 25000  CHARWIN -0.260  POSLOCK 2.040  MORAN -0.030
+  greek_herodotus                    tokens= 25000  CHARWIN -0.768  POSLOCK 1.998  MORAN -0.037
+  czech_bible_kralicka_1613          tokens= 25000  CHARWIN -0.672  POSLOCK 2.095  MORAN -0.120
+  occitan_croisade_albigeoise        tokens= 25000  CHARWIN -0.524  POSLOCK 2.034  MORAN -0.183
+  oldfrench_roland                   tokens= 25000  CHARWIN -0.796  POSLOCK 2.003  MORAN -0.142
+  mhg_nibelungenlied                 tokens= 25000  CHARWIN -0.488  POSLOCK 1.944  MORAN -0.105
+  mhg_parzival                       tokens= 25000  CHARWIN -0.534  POSLOCK 1.969  MORAN -0.100
+  catalan_tirant                     tokens= 25000  CHARWIN -0.853  POSLOCK 2.003  MORAN -0.170
+  turkish_kanun_medeni_1926          tokens= 25000  CHARWIN -1.915  POSLOCK 2.128  MORAN -0.003
+  latin_macer_floridus               tokens= 14044  CHARWIN -1.580  POSLOCK 2.124  MORAN -0.023
+  latin_pliny_herbal                 tokens= 25000  CHARWIN -1.749  POSLOCK 2.156  MORAN -0.024
+  hawaiian_fornander                 tokens= 25000  CHARWIN -0.805  POSLOCK 1.990  MORAN -0.218
+  tagalog_urbana_feliza_1864         tokens= 25000  CHARWIN -1.546  POSLOCK 2.090  MORAN -0.274
+  tagalog_florante_1838              tokens= 23760  CHARWIN -1.330  POSLOCK 2.087  MORAN -0.184
+  range CHARWIN  -1.915 .. -0.092   median of producer means -0.768
+  range POSLOCK  +1.944 .. +2.156   median of producer means +2.034
+  range MORAN    -0.274 .. +0.038   median of producer means -0.065
+
+--- CONTEXT (no range) (first 25000 tokens) ---
+  latin_merged                       tokens= 25000  CHARWIN -1.112  POSLOCK 2.182  MORAN -0.057
+  lull_ars_brevis_table              NOT SCORED (TypeError: Cannot cast array data from dtype('float64') to dtype('int64') according to the rule 'safe')
+  markov1                            tokens= 25000  CHARWIN +0.277  POSLOCK 1.797  MORAN +0.002
+  naibbe_like                        tokens= 25003  CHARWIN +0.260  POSLOCK 2.295  MORAN -0.022
+  nomen_lines                        tokens= 25000  CHARWIN -0.626  POSLOCK 1.923  MORAN -0.012
+  nomen_numeric                      tokens= 25003  CHARWIN -0.018  POSLOCK 1.587  MORAN +0.023
+  nomen_numeric_lines                tokens= 25000  CHARWIN -0.004  POSLOCK 1.615  MORAN +0.023
+  nomen_numeric_sylls                tokens= 25003  CHARWIN -1.353  POSLOCK 2.171  MORAN -0.043
+  nomen_syll                         tokens= 25003  CHARWIN -1.851  POSLOCK 2.238  MORAN -0.030
+  nomen_word                         tokens= 25003  CHARWIN -0.699  POSLOCK 1.934  MORAN -0.012
+  rugg_grille                        tokens= 25002  CHARWIN -0.591  POSLOCK 1.600  MORAN +0.025
+  range CHARWIN  -1.851 .. +0.277   median of producer means -0.609
+  range POSLOCK  +1.587 .. +2.295   median of producer means +1.928
+  range MORAN    -0.057 .. +0.025   median of producer means -0.012
+
+=== VERDICTS (decision rule as pre-registered) ===
+CHARWIN: manuscript ZL3b +0.094  inE=False  inG=False  median E -0.185 vs median G -0.021 (E as strong: False)  natural range -1.915..-0.092 (ms inside: False)
+  VERDICT CHARWIN: OUTSIDE BOTH (stronger than every producer run)   (same verdict on RF1b, IT2a, ZL3b-25k)
+POSLOCK: manuscript ZL3b +1.661  inE=True  inG=True  median E +1.588 vs median G +1.544 (E as strong: False)  natural range +1.944..+2.156 (ms inside: False)
+  VERDICT POSLOCK: NON-DIAGNOSTIC   (same verdict on RF1b, IT2a, ZL3b-25k)
+MORAN: manuscript ZL3b +0.141  inE=False  inG=False  median E -0.019 vs median G +0.025 (E as strong: False)  natural range -0.274..+0.038 (ms inside: False)
+  VERDICT MORAN: OUTSIDE BOTH (stronger than every producer run)   (same verdict on RF1b, IT2a, ZL3b-25k)

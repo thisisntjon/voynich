@@ -1,0 +1,127 @@
+{
+ "row": {
+  "name": "nomen_numeric_sylls",
+  "tokens": 25003,
+  "types": 6560,
+  "pages": 169,
+  "lines": 3368,
+  "errors": {},
+  "types_25k": 6560,
+  "h2": 3.6475,
+  "sd_len": 2.275,
+  "jsd_first_fg": 0.0131,
+  "p_init_enrich": null,
+  "m_final_enrich": null,
+  "cross_excess_eva": 0.0091,
+  "redup_pct": 0.0,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "jsd_first_fg",
+   "cross_excess_eva",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "nomen_numeric_sylls",
+   "tokens": 25000,
+   "types": 6560,
+   "hapax_rate": 0.5873,
+   "mean_len": 4.954,
+   "sd_len": 2.275,
+   "h1": 4.0429,
+   "h2": 3.6475,
+   "h3": 3.1881,
+   "zipf": -0.7983,
+   "redup_pct": 0.0,
+   "jsd_first_fg": 0.0131,
+   "jsd_last_lg": 0.0079,
+   "p_init_enrich": null,
+   "m_final_enrich": null,
+   "cross_mi_eva": 0.0156,
+   "cross_excess_eva": 0.0091,
+   "cross_mi_glyph": 0.0171,
+   "cross_excess_glyph": 0.0091,
+   "recur_le_1": 0.0,
+   "recur_le_5": 0.0157,
+   "recur_le_20": 0.0795,
+   "recur_le_100": 0.2107
+  },
+  "x_edge_mi_word": 0.010096358944805452,
+  "x_hapax_10k": 0.5880077369439072,
+  "x_moran_I": -0.042673002895805875,
+  "x_position_entropy": 2.1713450203328937,
+  "x_ltr_minus_rtl": -0.0021362486750839973,
+  "info_mi_adjacent": 0.3566937389218334,
+  "info_mi_page": 0.008214648259164514,
+  "info_samecol_minus_othercol": -0.014463627207091712,
+  "info_bpe_adjacent": 0.43453678285574393,
+  "lex_beta": 0.7575025221225495,
+  "lex_rate_late_early": 0.5119667013527576,
+  "lex_edit1_excess": 0.0025914634146341486,
+  "slot_occupancy_pc": 0.02957871488430656,
+  "slot_table_likeness": 0.7499050716048948,
+  "slot_core_crowding": 0.723667100130039,
+  "bake_winner": "unigram_gt",
+  "bake_char3_minus_unigram": 1.292991759771283,
+  "bake_bits": {
+   "markov2": 19.392197084280827,
+   "markov3": 15.60083938139613,
+   "slot": 15.387614071656808,
+   "unigram_gt": 14.307847621624846,
+   "copy0.3+markov3": 15.985906013904419,
+   "copy0.1+markov3": 15.683520714720155,
+   "copy0.05+markov3": 15.624714644199441
+  },
+  "family": "C",
+  "note": "data/controls_synthetic/nomen_numeric_sylls.meta.json; 35007 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 4,
+    "outs": 4,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "x_edge_mi_word"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg"
+    ]
+   },
+   "C": {
+    "ins": 8,
+    "outs": 0,
+    "na": 2,
+    "out_metrics": [],
+    "out_tight": []
+   },
+   "G": {
+    "ins": 4,
+    "outs": 4,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "redup_pct",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "h2",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "results_m4_phase1_board.json"
+}

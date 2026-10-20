@@ -1,0 +1,327 @@
+M5 line anatomy  (seed 20261017, NREP=100 within-line shuffles, run 2026-10-17 16:52 Pacific Daylight Time)
+data: ZL3b-n paragraph lines (units P*), tokens containing '?' dropped, positions on lines with >= 3 words; 'mid-line' = word 2..n-1; paragraph start = IVTFF <%> marker in the raw locus text
+glyph units for stripping: cth ckh cph cfh ch sh count as one unit, every other EVA letter is one unit
+loaded 4130 paragraph lines; Currier lang counts {'A': 1557, 'B': 2478, '?': 95}
+====================================================================================================
+SUBSET ALL: 4130 paragraph lines, 34857 tokens, 4045 lines with >= 3 words, 740 paragraph-initial lines
+====================================================================================================
+
+--- 1. prefix strip: line-initial token minus its first 1 or 2 glyph units; is the remainder an attested mid-line type? ---
+  note: the per-class shuffle null is near-degenerate for p (most p-tokens are line-initial, so the shuffled line-initial p-tokens are largely the same tokens); the informative baselines are the 'all' row null and the mid-line same-class column.
+  class   n_init  1-strip  [shuffle null]  2-strip  [null]   any  [null]   | mid-line same-class: n  1-strip  2-strip  any
+  p          375  0.720    [0.769±0.053]     0.576    [0.587±0.059]  0.800 [0.849±0.044]   |    138  0.862    0.638    0.942
+  t          391  0.788    [0.766±0.037]     0.693    [0.705±0.043]  0.900 [0.908±0.024]   |    503  0.757    0.750    0.924
+  k          104  0.615    [0.756±0.039]     0.683    [0.671±0.057]  0.817 [0.913±0.025]   |    983  0.775    0.685    0.929
+  f           33  0.636    [0.778±0.120]     0.545    [0.646±0.151]  0.667 [0.841±0.120]   |     65  0.862    0.631    0.923
+  y          590  0.785    [0.734±0.026]     0.612    [0.631±0.035]  0.834 [0.784±0.026]   |    970  0.714    0.658    0.774
+  d          624  0.936    [0.914±0.014]     0.662    [0.634±0.112]  0.949 [0.936±0.013]   |   1960  0.929    0.727    0.950
+  s          599  0.846    [0.610±0.033]     0.713    [0.711±0.035]  0.920 [0.878±0.012]   |   3291  0.561    0.747    0.876
+  o          547  0.815    [0.839±0.012]     0.686    [0.696±0.019]  0.892 [0.918±0.009]   |   5651  0.863    0.682    0.929
+  gallows    903  0.734    [0.763±0.023]     0.638    [0.667±0.039]  0.841 [0.897±0.017]   |   1689  0.780    0.698    0.928
+  all       4045  0.827    [0.770±0.013]     0.701    [0.716±0.023]  0.896 [0.907±0.007]   |  26624  0.774    0.734    0.916
+  p-initial remainders: 241 types, attested 137 types; median mid-line count of attested remainder 9; top: ol(15), chedy(14), chedar(9), cheol(7), chor(7), olaiin(7), aiin(6), olchedy(5)
+  t-initial remainders: 212 types, attested 135 types; median mid-line count of attested remainder 9; top: ol(27), chedy(25), ar(17), aiin(13), chor(12), or(10), shedy(7), odaiin(6)
+  y-initial remainders: 267 types, attested 201 types; median mid-line count of attested remainder 10; top: cheey(18), chor(15), shey(12), keey(11), kaiin(11), cheol(10), cheo(10), chey(9)
+  d-initial remainders: 157 types, attested 118 types; median mid-line count of attested remainder 14; top: aiin(158), ain(49), ar(38), shedy(29), air(25), or(19), chedy(17), ol(14)
+
+--- 2. suffix strip: line-final token minus its final glyph(s); and final m/g replaced by a usual final ---
+  note: as in section 1, the per-ending shuffle null is near-degenerate for m/g (most m/g tokens are line-final); compare with the 'all' row and the mid-line column.
+  ending   n_final  strip-attested [shuffle null]  | mid-line same ending: n  strip-attested
+  m           622  0.453          [0.494±0.050]      |    252  0.528
+  g            79  0.532          [0.587±0.137]      |     21  0.524
+  am          438  0.758          [0.774±0.052]      |    157  0.777
+  ag           11  1.000          [1.000±0.000]      |      4  1.000
+  y          1546  0.622          [0.548±0.013]      |  11100  0.574
+  n           615  0.132          [0.105±0.025]      |   4276  0.114
+  l           447  0.647          [0.765±0.020]      |   4220  0.772
+  r           345  0.606          [0.634±0.022]      |   3850  0.635
+  all        4045  0.499          [0.511±0.027]      |  26624  0.548
+  m-final: replace the final 'm' by a usual final and test attestation mid-line (observed [shuffle null]):
+    m->n: 0.418 [0.437±0.048]  m->in: 0.633 [0.615±0.044]  m->iin: 0.720 [0.702±0.043]  m->r: 0.772 [0.780±0.039]  m->l: 0.754 [0.757±0.042]  m->y: 0.130 [0.200±0.044]  m->s: 0.402 [0.468±0.049]  m->d: 0.114 [0.147±0.034]
+    best single replacement m->r 0.772; any of the 8 replacements attested: 0.846
+    top m-final tokens: am(57), dam(54), otam(28), qokam(21), okam(20), om(14), ram(12), cham(11), oram(9), alam(9)
+  g-final: replace the final 'g' by a usual final and test attestation mid-line (observed [shuffle null]):
+    g->n: 0.127 [0.189±0.097]  g->in: 0.203 [0.271±0.106]  g->iin: 0.228 [0.288±0.104]  g->r: 0.342 [0.433±0.121]  g->l: 0.392 [0.414±0.120]  g->y: 0.468 [0.471±0.142]  g->s: 0.278 [0.349±0.132]  g->d: 0.228 [0.285±0.135]
+    best single replacement g->y 0.468; any of the 8 replacements attested: 0.709
+    top g-final tokens: dag(2), dg(2), og(2), rag(2), cthog(2), lchg(2), daimg(1), soleeg(1), ychopordg(1), dairodg(1)
+
+--- 3. are line-initial / line-final tokens otherwise ordinary? ---
+  group                       n   mean_len  type_never_mid  median_mid_count  mean_log10(mid+1)  hapax   JSD(last glyph vs mid)  JSD(last 2 vs mid)
+  line-initial (all)           4045  5.43      0.297              5             0.965         0.226    0.0143                  0.0386
+    shuffle null                      5.033±0.025  0.159±0.006     27.900±1.411        1.347±0.011   0.143±0.005  0.005±0.001            0.014±0.001
+  line-initial p/t/f/k          903  6.06      0.550              0             0.348         0.417    0.0186                  0.0683
+  line-initial y/d/s           1813  5.08      0.262              6             1.034         0.181    0.0255                  0.0691
+  line-initial other           1329  5.47      0.172             21             1.290         0.157    0.0129                  0.0559
+  line-final (all)             4045  4.73      0.283              9             1.055         0.228    0.0820                  0.1544
+    shuffle null                      5.038±0.027  0.159±0.005     27.890±1.593        1.346±0.011   0.144±0.005  0.005±0.001            0.014±0.001
+  line-final m/g                716  4.52      0.480              1             0.444         0.313    0.9584                  0.9592
+  mid-line (reference)        26624  4.96      0.000             44             1.549         0.109    0.0000                  0.0000
+  last glyph of line-initial tokens vs mid-line (share, ratio):
+    y:0.326/0.423(x0.77)  l:0.142/0.165(x0.86)  n:0.200/0.161(x1.25)  r:0.203/0.149(x1.36)  o:0.059/0.032(x1.83)  s:0.037/0.031(x1.17)  d:0.014/0.015(x0.94)  m:0.005/0.010(x0.49)
+
+--- 4. word 2 of each line, and paragraph-initial vs other line-initial words ---
+  first-glyph JSD vs mid-line: word 1 = 0.1759 [null 0.002±0.000]   word 2 = 0.0118 [null 0.002±0.000]
+  gallows-initial share: word1 0.223  word2 0.056  mid 0.063;  p-initial: word1 0.093 word2 0.002 mid 0.005
+  first-glyph shares (ratio vs mid-line):
+    word 2                       n= 4045  c:0.261(x1.23)  o:0.178(x0.84)  q:0.136(x0.82)  s:0.182(x1.48)  d:0.050(x0.67)  a:0.059(x1.10)  l:0.035(x0.84)  k:0.037(x1.01)  y:0.030(x0.83)  t:0.015(x0.77)
+  paragraph-initial lines n=734, other line-initial n=3311
+    paragraph-initial word 1     n=  734  o:0.048(x0.22)  c:0.011(x0.05)  q:0.041(x0.25)  s:0.026(x0.21)  d:0.020(x0.28)  a:0.000(x0.00)  l:0.003(x0.07)  k:0.106(x2.88)  y:0.015(x0.41)  t:0.233(x12.33)
+    other line-initial word 1    n= 3311  o:0.155(x0.73)  c:0.044(x0.21)  q:0.151(x0.91)  s:0.175(x1.42)  d:0.184(x2.50)  y:0.175(x4.80)  a:0.004(x0.08)  l:0.020(x0.49)  k:0.008(x0.21)  t:0.066(x3.52)
+    gallows share: para-initial 0.832  other-initial 0.088  mid 0.063;  p/f share: para 0.493  other 0.014  mid 0.008
+    JSD(first glyph) vs mid: para-initial 0.5486  other line-initial 0.1468  para vs other 0.4974
+    para-initial         1-strip attested: p 0.695 (n=331)  t 0.731 (n=171)  gallows 0.684  all 0.689;  type never mid-line: 0.601
+    other line-initial   1-strip attested: p 0.909 (n=44)  t 0.832 (n=220)  gallows 0.839  all 0.858;  type never mid-line: 0.230
+
+--- 5. shape of the edge effect: lines with >= 8 words, by word index and from the end ---
+  lines with >= 8 words: 2658
+  index   H(first glyph) [null]     gallows%  [null]     p%     y%     d%     q%    ch/c%  | ends m/g% [null]
+  w1      3.198 [3.203±0.021]   0.263 [0.079±0.004]   0.119  0.136  0.159  0.126  0.032  | 0.004 [0.028±0.003]
+  w2      2.967 [3.206±0.019]   0.055 [0.081±0.005]   0.002  0.030  0.042  0.138  0.226  | 0.006 [0.028±0.003]
+  w3      3.037 [3.211±0.021]   0.065 [0.081±0.005]   0.005  0.041  0.056  0.211  0.200  | 0.006 [0.028±0.003]
+  w4      3.028 [3.205±0.022]   0.059 [0.081±0.005]   0.005  0.033  0.068  0.198  0.207  | 0.008 [0.028±0.003]
+  w5      3.085 [3.209±0.018]   0.062 [0.081±0.005]   0.005  0.043  0.078  0.196  0.178  | 0.010 [0.028±0.003]
+  w6      3.100 [3.205±0.022]   0.056 [0.081±0.005]   0.003  0.041  0.080  0.174  0.207  | 0.008 [0.029±0.003]
+  w7      3.072 [3.207±0.018]   0.058 [0.080±0.004]   0.006  0.038  0.089  0.170  0.195  | 0.007 [0.027±0.003]
+  w8      3.130 [3.205±0.021]   0.058 [0.081±0.005]   0.005  0.040  0.100  0.150  0.182  | 0.034 [0.028±0.003]
+  end-1   3.210 [3.203±0.022]   0.049 [0.081±0.005]   0.003  0.036  0.165  0.096  0.128  | 0.212 [0.028±0.003]
+  end-2   3.166 [3.204±0.025]   0.073 [0.081±0.005]   0.005  0.034  0.104  0.143  0.188  | 0.018 [0.029±0.002]
+  end-3   3.106 [3.202±0.020]   0.061 [0.082±0.006]   0.008  0.043  0.084  0.158  0.188  | 0.008 [0.028±0.003]
+  end-4   3.113 [3.211±0.020]   0.059 [0.081±0.004]   0.009  0.034  0.083  0.169  0.192  | 0.011 [0.028±0.003]
+
+--- 6. decomposition: ordinary word (attested mid-line) / marker+ordinary word / neither ---
+  line-initial tokens n=4045: type attested mid-line 0.703 [null 0.841±0.006]; unattested but 1-/2-unit prefix strip attested 0.224 [null 0.109±0.005]; neither 0.073 [null 0.050±0.004]
+  rarity-controlled: among line-initial tokens NOT attested mid-line, share whose prefix-strip remainder is attested = 0.754 [null 0.686±0.019]  (line-initial tokens are rarer types, so the unconditional excess above is partly rarity)
+  mean log10(mid-line count+1) of the 1-unit remainder, p-initial: line-initial 1.085 (n=375) vs mid-line 1.673 (n=138); whole mid-line tokens 1.549
+  mean log10(mid-line count+1) of the 1-unit remainder, t-initial: line-initial 1.384 (n=391) vs mid-line 1.371 (n=503); whole mid-line tokens 1.549
+  mean log10(mid-line count+1) of the 1-unit remainder, y-initial: line-initial 1.174 (n=590) vs mid-line 0.929 (n=970); whole mid-line tokens 1.549
+  mean log10(mid-line count+1) of the 1-unit remainder, d-initial: line-initial 1.981 (n=624) vs mid-line 1.980 (n=1960); whole mid-line tokens 1.549
+  among line-initial tokens whose type IS attested mid-line: first-glyph JSD vs mid 0.1395 [null 0.003±0.001] (all line-initial 0.1759); gallows share 0.143 vs mid 0.063; p share 0.047 vs mid 0.005
+  p-initial line-initial tokens n=375: type attested mid-line 0.357; unattested-but-remainder-attested 0.363; neither 0.280
+  line-final tokens n=4045: type attested mid-line 0.717 [null 0.840±0.005]; unattested but final-glyph strip/replace attested 0.132 [null 0.055±0.004]; neither 0.151 [null 0.105±0.004]
+  among line-final tokens whose type IS attested mid-line: last-glyph JSD vs mid 0.0574 [null 0.003±0.001] (all line-final 0.0820); m/g share 0.128 vs mid 0.010
+  rarity-controlled: among line-final tokens NOT attested mid-line, share attested after final-glyph strip/replace = 0.466 [null 0.341±0.019]
+
+====================================================================================================
+SUBSET Currier A: 1557 paragraph lines, 11231 tokens, 1515 lines with >= 3 words, 234 paragraph-initial lines
+====================================================================================================
+
+--- 1. prefix strip: line-initial token minus its first 1 or 2 glyph units; is the remainder an attested mid-line type? ---
+  note: the per-class shuffle null is near-degenerate for p (most p-tokens are line-initial, so the shuffled line-initial p-tokens are largely the same tokens); the informative baselines are the 'all' row null and the mid-line same-class column.
+  class   n_init  1-strip  [shuffle null]  2-strip  [null]   any  [null]   | mid-line same-class: n  1-strip  2-strip  any
+  p           78  0.564    [0.666±0.111]     0.538    [0.602±0.107]  0.679 [0.775±0.085]   |     36  0.750    0.750    0.861
+  t          133  0.707    [0.793±0.049]     0.707    [0.734±0.067]  0.857 [0.893±0.042]   |    176  0.841    0.744    0.909
+  k           64  0.641    [0.738±0.048]     0.703    [0.704±0.059]  0.828 [0.879±0.037]   |    355  0.766    0.690    0.870
+  f           18  0.611    [0.734±0.195]     0.500    [0.675±0.206]  0.611 [0.786±0.177]   |     19  0.789    0.737    0.895
+  y          226  0.792    [0.689±0.038]     0.712    [0.668±0.047]  0.863 [0.777±0.034]   |    394  0.635    0.640    0.739
+  d          231  0.922    [0.875±0.021]     0.485    [0.366±0.032]  0.935 [0.899±0.020]   |   1031  0.900    0.373    0.924
+  s          192  0.828    [0.671±0.034]     0.583    [0.576±0.039]  0.891 [0.806±0.026]   |   1128  0.635    0.574    0.793
+  o          267  0.772    [0.719±0.028]     0.674    [0.663±0.030]  0.891 [0.859±0.020]   |   1347  0.715    0.627    0.851
+  gallows    293  0.648    [0.747±0.034]     0.648    [0.700±0.042]  0.788 [0.867±0.027]   |    586  0.788    0.712    0.882
+  all       1515  0.796    [0.737±0.015]     0.665    [0.634±0.015]  0.879 [0.859±0.008]   |   8124  0.728    0.635    0.862
+  p-initial remainders: 64 types, attested 30 types; median mid-line count of attested remainder 24; top: cheol(4), chor(4), chocthy(3), ydaiin(2), shol(2), char(2), aiin(2), cho(2)
+  t-initial remainders: 86 types, attested 50 types; median mid-line count of attested remainder 16; top: ol(12), chor(10), or(5), shol(4), ar(3), chol(3), shor(3), cheody(3)
+  y-initial remainders: 133 types, attested 99 types; median mid-line count of attested remainder 10; top: chor(13), cheor(7), cheey(6), chol(6), keey(6), chey(5), daiin(5), cho(4)
+  d-initial remainders: 73 types, attested 56 types; median mid-line count of attested remainder 14; top: aiin(60), ain(14), ar(13), or(11), chor(11), ol(8), chol(6), chey(6)
+
+--- 2. suffix strip: line-final token minus its final glyph(s); and final m/g replaced by a usual final ---
+  note: as in section 1, the per-ending shuffle null is near-degenerate for m/g (most m/g tokens are line-final); compare with the 'all' row and the mid-line column.
+  ending   n_final  strip-attested [shuffle null]  | mid-line same ending: n  strip-attested
+  m           167  0.503          [0.479±0.070]      |    144  0.493
+  g            43  0.512          [0.547±0.169]      |     11  0.636
+  am           95  0.663          [0.707±0.098]      |     76  0.645
+  ag            2  1.000          [0.971±0.118]      |      1  1.000
+  y           507  0.531          [0.424±0.025]      |   2611  0.427
+  n           319  0.119          [0.081±0.028]      |   1146  0.076
+  l           148  0.581          [0.718±0.029]      |   1640  0.730
+  r           134  0.619          [0.647±0.036]      |   1297  0.662
+  all        1515  0.469          [0.467±0.037]      |   8124  0.498
+  m-final: replace the final 'm' by a usual final and test attestation mid-line (observed [shuffle null]):
+    m->n: 0.365 [0.330±0.060]  m->in: 0.461 [0.425±0.074]  m->iin: 0.647 [0.626±0.065]  m->r: 0.719 [0.730±0.063]  m->l: 0.695 [0.696±0.062]  m->y: 0.102 [0.169±0.052]  m->s: 0.371 [0.312±0.085]  m->d: 0.216 [0.248±0.068]
+    best single replacement m->r 0.719; any of the 8 replacements attested: 0.814
+    top m-final tokens: dam(24), am(12), chom(6), dom(6), cham(4), sam(4), om(4), otam(4), alam(4), cheom(3)
+  g-final: replace the final 'g' by a usual final and test attestation mid-line (observed [shuffle null]):
+    g->n: 0.093 [0.157±0.125]  g->in: 0.093 [0.160±0.124]  g->iin: 0.116 [0.153±0.112]  g->r: 0.209 [0.274±0.157]  g->l: 0.209 [0.277±0.147]  g->y: 0.349 [0.294±0.157]  g->s: 0.163 [0.197±0.140]  g->d: 0.116 [0.212±0.132]
+    best single replacement g->y 0.349; any of the 8 replacements attested: 0.558
+    top g-final tokens: cthog(2), daimg(1), soleeg(1), ychopordg(1), dairodg(1), dairg(1), arg(1), dchg(1), chodalg(1), cheteg(1)
+
+--- 3. are line-initial / line-final tokens otherwise ordinary? ---
+  group                       n   mean_len  type_never_mid  median_mid_count  mean_log10(mid+1)  hapax   JSD(last glyph vs mid)  JSD(last 2 vs mid)
+  line-initial (all)           1515  5.25      0.362              2             0.725         0.282    0.0233                  0.0535
+    shuffle null                      4.864±0.041  0.229±0.010     8.700±0.768        1.000±0.017   0.203±0.008  0.006±0.001            0.021±0.002
+  line-initial p/t/f/k          293  5.78      0.618              0             0.260         0.502    0.0219                  0.1065
+  line-initial y/d/s            649  5.00      0.327              3             0.848         0.230    0.0355                  0.0835
+  line-initial other            573  5.28      0.271              5             0.822         0.229    0.0286                  0.0886
+  line-final (all)             1515  4.74      0.325              4             0.865         0.283    0.0838                  0.1690
+    shuffle null                      4.865±0.040  0.230±0.011     8.630±0.716        0.998±0.018   0.205±0.010  0.006±0.001            0.021±0.002
+  line-final m/g                217  4.59      0.521              0             0.329         0.438    0.9316                  0.9332
+  mid-line (reference)         8124  4.70      0.000             15             1.202         0.163    0.0000                  0.0000
+  last glyph of line-initial tokens vs mid-line (share, ratio):
+    y:0.245/0.329(x0.74)  l:0.160/0.205(x0.78)  r:0.247/0.166(x1.49)  n:0.174/0.141(x1.24)  o:0.096/0.055(x1.75)  s:0.037/0.050(x0.73)  m:0.009/0.018(x0.48)  d:0.007/0.016(x0.45)
+
+--- 4. word 2 of each line, and paragraph-initial vs other line-initial words ---
+  first-glyph JSD vs mid-line: word 1 = 0.1392 [null 0.003±0.001]   word 2 = 0.0145 [null 0.003±0.001]
+  gallows-initial share: word1 0.193  word2 0.066  mid 0.072;  p-initial: word1 0.051 word2 0.000 mid 0.004
+  first-glyph shares (ratio vs mid-line):
+    word 2                       n= 1515  c:0.383(x1.28)  o:0.139(x0.84)  s:0.167(x1.20)  d:0.077(x0.60)  q:0.087(x0.86)  y:0.039(x0.80)  k:0.048(x1.09)  a:0.023(x0.90)  t:0.015(x0.70)  r:0.009(x1.07)
+  paragraph-initial lines n=233, other line-initial n=1282
+    paragraph-initial word 1     n=  233  c:0.017(x0.06)  o:0.039(x0.23)  s:0.039(x0.28)  d:0.017(x0.14)  q:0.052(x0.51)  k:0.193(x4.42)  y:0.013(x0.27)  t:0.232(x10.70)  a:0.000(x0.00)  p:0.322(x72.64)
+    other line-initial word 1    n= 1282  c:0.061(x0.20)  o:0.201(x1.21)  s:0.143(x1.03)  d:0.177(x1.40)  q:0.154(x1.52)  y:0.174(x3.59)  k:0.015(x0.34)  t:0.062(x2.84)  a:0.002(x0.06)  l:0.007(x0.84)
+    gallows share: para-initial 0.815  other-initial 0.080  mid 0.072;  p/f share: para 0.391  other 0.004  mid 0.007
+    JSD(first glyph) vs mid: para-initial 0.5110  other line-initial 0.1247  para vs other 0.4973
+    para-initial         1-strip attested: p 0.560 (n=75)  t 0.630 (n=54)  gallows 0.584  all 0.601;  type never mid-line: 0.657
+    other line-initial   1-strip attested: p 0.667 (n=3)  t 0.759 (n=79)  gallows 0.767  all 0.832;  type never mid-line: 0.308
+
+--- 5. shape of the edge effect: lines with >= 8 words, by word index and from the end ---
+  lines with >= 8 words: 702
+  index   H(first glyph) [null]     gallows%  [null]     p%     y%     d%     q%    ch/c%  | ends m/g% [null]
+  w1      3.183 [3.071±0.041]   0.241 [0.085±0.011]   0.063  0.135  0.164  0.137  0.046  | 0.010 [0.034±0.006]
+  w2      2.769 [3.071±0.043]   0.061 [0.084±0.009]   0.000  0.041  0.080  0.074  0.352  | 0.014 [0.033±0.006]
+  w3      2.966 [3.064±0.040]   0.084 [0.085±0.010]   0.009  0.056  0.084  0.137  0.291  | 0.014 [0.032±0.006]
+  w4      3.025 [3.063±0.047]   0.080 [0.082±0.011]   0.011  0.044  0.121  0.125  0.278  | 0.021 [0.035±0.006]
+  w5      2.979 [3.060±0.038]   0.071 [0.083±0.008]   0.006  0.051  0.145  0.121  0.239  | 0.021 [0.034±0.006]
+  w6      2.980 [3.074±0.047]   0.054 [0.085±0.010]   0.003  0.056  0.151  0.127  0.262  | 0.020 [0.032±0.007]
+  w7      2.933 [3.067±0.042]   0.054 [0.084±0.008]   0.004  0.058  0.182  0.078  0.259  | 0.007 [0.034±0.007]
+  w8      3.040 [3.056±0.038]   0.064 [0.084±0.010]   0.003  0.064  0.208  0.067  0.234  | 0.061 [0.034±0.006]
+  end-1   2.967 [3.071±0.043]   0.046 [0.087±0.008]   0.001  0.048  0.311  0.051  0.171  | 0.178 [0.035±0.007]
+  end-2   2.898 [3.059±0.040]   0.070 [0.083±0.010]   0.003  0.051  0.208  0.058  0.269  | 0.024 [0.032±0.006]
+  end-3   2.908 [3.061±0.043]   0.047 [0.084±0.010]   0.001  0.053  0.171  0.088  0.269  | 0.011 [0.033±0.007]
+  end-4   2.987 [3.078±0.042]   0.064 [0.086±0.010]   0.006  0.054  0.160  0.105  0.248  | 0.021 [0.034±0.006]
+
+--- 6. decomposition: ordinary word (attested mid-line) / marker+ordinary word / neither ---
+  line-initial tokens n=1515: type attested mid-line 0.638 [null 0.770±0.011]; unattested but 1-/2-unit prefix strip attested 0.267 [null 0.154±0.009]; neither 0.094 [null 0.076±0.007]
+  rarity-controlled: among line-initial tokens NOT attested mid-line, share whose prefix-strip remainder is attested = 0.739 [null 0.669±0.024]  (line-initial tokens are rarer types, so the unconditional excess above is partly rarity)
+  mean log10(mid-line count+1) of the 1-unit remainder, p-initial: line-initial 0.787 (n=78) vs mid-line 1.173 (n=36); whole mid-line tokens 1.202
+  mean log10(mid-line count+1) of the 1-unit remainder, t-initial: line-initial 1.062 (n=133) vs mid-line 1.340 (n=176); whole mid-line tokens 1.202
+  mean log10(mid-line count+1) of the 1-unit remainder, y-initial: line-initial 1.056 (n=226) vs mid-line 0.634 (n=394); whole mid-line tokens 1.202
+  mean log10(mid-line count+1) of the 1-unit remainder, d-initial: line-initial 1.470 (n=231) vs mid-line 1.378 (n=1031); whole mid-line tokens 1.202
+  among line-initial tokens whose type IS attested mid-line: first-glyph JSD vs mid 0.1058 [null 0.007±0.002] (all line-initial 0.1392); gallows share 0.116 vs mid 0.072; p share 0.017 vs mid 0.004
+  p-initial line-initial tokens n=78: type attested mid-line 0.205; unattested-but-remainder-attested 0.359; neither 0.436
+  line-final tokens n=1515: type attested mid-line 0.675 [null 0.770±0.009]; unattested but final-glyph strip/replace attested 0.137 [null 0.080±0.006]; neither 0.188 [null 0.150±0.008]
+  among line-final tokens whose type IS attested mid-line: last-glyph JSD vs mid 0.0705 [null 0.007±0.002] (all line-final 0.0838); m/g share 0.102 vs mid 0.019
+  rarity-controlled: among line-final tokens NOT attested mid-line, share attested after final-glyph strip/replace = 0.422 [null 0.348±0.024]
+
+====================================================================================================
+SUBSET Currier B: 2478 paragraph lines, 23078 tokens, 2449 lines with >= 3 words, 479 paragraph-initial lines
+====================================================================================================
+
+--- 1. prefix strip: line-initial token minus its first 1 or 2 glyph units; is the remainder an attested mid-line type? ---
+  note: the per-class shuffle null is near-degenerate for p (most p-tokens are line-initial, so the shuffled line-initial p-tokens are largely the same tokens); the informative baselines are the 'all' row null and the mid-line same-class column.
+  class   n_init  1-strip  [shuffle null]  2-strip  [null]   any  [null]   | mid-line same-class: n  1-strip  2-strip  any
+  p          297  0.724    [0.768±0.056]     0.532    [0.519±0.081]  0.791 [0.842±0.049]   |    101  0.891    0.545    0.950
+  t          246  0.797    [0.699±0.044]     0.581    [0.582±0.062]  0.890 [0.870±0.042]   |    321  0.664    0.629    0.910
+  k           38  0.526    [0.691±0.056]     0.500    [0.517±0.063]  0.737 [0.873±0.043]   |    620  0.726    0.556    0.916
+  f           15  0.467    [0.729±0.173]     0.333    [0.460±0.225]  0.600 [0.799±0.169]   |     44  0.886    0.568    0.932
+  y          349  0.722    [0.711±0.046]     0.433    [0.512±0.063]  0.759 [0.754±0.041]   |    546  0.712    0.632    0.777
+  d          376  0.920    [0.914±0.019]     0.529    [0.573±0.104]  0.944 [0.939±0.016]   |    900  0.922    0.684    0.946
+  s          393  0.822    [0.472±0.031]     0.692    [0.718±0.032]  0.913 [0.883±0.022]   |   2090  0.400    0.741    0.892
+  o          269  0.773    [0.850±0.015]     0.617    [0.656±0.029]  0.855 [0.918±0.011]   |   4243  0.863    0.658    0.932
+  gallows    596  0.735    [0.712±0.032]     0.545    [0.538±0.043]  0.824 [0.862±0.029]   |   1086  0.729    0.577    0.918
+  all       2449  0.798    [0.727±0.013]     0.614    [0.676±0.020]  0.875 [0.894±0.013]   |  18137  0.727    0.698    0.912
+  p-initial remainders: 194 types, attested 113 types; median mid-line count of attested remainder 10; top: chedy(14), ol(14), chedar(9), olaiin(6), olchedy(5), chedal(5), air(4), aiin(4)
+  t-initial remainders: 146 types, attested 97 types; median mid-line count of attested remainder 7; top: chedy(24), ol(14), ar(14), aiin(10), shedy(7), shey(6), or(5), chdy(4)
+  y-initial remainders: 163 types, attested 116 types; median mid-line count of attested remainder 9; top: cheey(12), kaiin(11), shey(10), cheo(8), teedy(8), shedy(7), chedy(7), sheey(6)
+  d-initial remainders: 100 types, attested 71 types; median mid-line count of attested remainder 18; top: aiin(91), ain(35), shedy(28), ar(24), air(19), chedy(17), or(8), cheey(6)
+
+--- 2. suffix strip: line-final token minus its final glyph(s); and final m/g replaced by a usual final ---
+  note: as in section 1, the per-ending shuffle null is near-degenerate for m/g (most m/g tokens are line-final); compare with the 'all' row and the mid-line column.
+  ending   n_final  strip-attested [shuffle null]  | mid-line same ending: n  strip-attested
+  m           438  0.390          [0.382±0.072]      |    102  0.431
+  g            33  0.394          [0.300±0.239]      |      8  0.250
+  am          329  0.754          [0.746±0.064]      |     79  0.810
+  ag            9  1.000          [0.967±0.141]      |      3  1.000
+  y          1009  0.613          [0.525±0.021]      |   8342  0.557
+  n           291  0.079          [0.069±0.022]      |   3091  0.089
+  l           288  0.635          [0.683±0.030]      |   2514  0.721
+  r           201  0.562          [0.493±0.033]      |   2505  0.543
+  all        2449  0.451          [0.462±0.012]      |  18137  0.491
+  m-final: replace the final 'm' by a usual final and test attestation mid-line (observed [shuffle null]):
+    m->n: 0.329 [0.418±0.073]  m->in: 0.653 [0.689±0.059]  m->iin: 0.703 [0.717±0.062]  m->r: 0.751 [0.768±0.055]  m->l: 0.731 [0.753±0.059]  m->y: 0.055 [0.047±0.027]  m->s: 0.290 [0.409±0.069]  m->d: 0.039 [0.038±0.025]
+    best single replacement m->r 0.751; any of the 8 replacements attested: 0.824
+    top m-final tokens: am(44), dam(26), otam(24), qokam(19), okam(18), om(10), ram(10), oram(8), olkam(8), qotam(7)
+  g-final: replace the final 'g' by a usual final and test attestation mid-line (observed [shuffle null]):
+    g->n: 0.121 [0.238±0.209]  g->in: 0.333 [0.423±0.247]  g->iin: 0.333 [0.438±0.249]  g->r: 0.424 [0.540±0.249]  g->l: 0.455 [0.495±0.238]  g->y: 0.364 [0.420±0.233]  g->s: 0.303 [0.447±0.261]  g->d: 0.212 [0.231±0.213]
+    best single replacement g->l 0.455; any of the 8 replacements attested: 0.697
+    top g-final tokens: dag(2), rag(2), lchg(2), amg(1), okalcheg(1), daisog(1), dg(1), arag(1), ag(1), qokeg(1)
+
+--- 3. are line-initial / line-final tokens otherwise ordinary? ---
+  group                       n   mean_len  type_never_mid  median_mid_count  mean_log10(mid+1)  hapax   JSD(last glyph vs mid)  JSD(last 2 vs mid)
+  line-initial (all)           2449  5.54      0.334              4             0.886         0.252    0.0120                  0.0409
+    shuffle null                      5.153±0.027  0.157±0.007     26.480±1.729        1.322±0.016   0.145±0.007  0.006±0.001            0.017±0.002
+  line-initial p/t/f/k          596  6.20      0.597              0             0.289         0.463    0.0228                  0.0707
+  line-initial y/d/s           1118  5.13      0.302              4             0.896         0.196    0.0254                  0.0808
+  line-initial other            735  5.63      0.167             28             1.354         0.165    0.0094                  0.0519
+  line-final (all)             2449  4.75      0.323              6             0.934         0.240    0.0968                  0.1800
+    shuffle null                      5.158±0.032  0.157±0.007     26.250±1.465        1.321±0.015   0.145±0.006  0.006±0.001            0.017±0.002
+  line-final m/g                478  4.51      0.550              0             0.337         0.310    0.9733                  0.9740
+  mid-line (reference)        18137  5.08      0.000             42             1.509         0.112    0.0000                  0.0000
+  last glyph of line-initial tokens vs mid-line (share, ratio):
+    y:0.378/0.465(x0.81)  n:0.216/0.170(x1.27)  l:0.131/0.146(x0.90)  r:0.177/0.142(x1.24)  o:0.035/0.022(x1.57)  s:0.034/0.022(x1.56)  d:0.019/0.015(x1.28)  m:0.002/0.006(x0.36)
+
+--- 4. word 2 of each line, and paragraph-initial vs other line-initial words ---
+  first-glyph JSD vs mid-line: word 1 = 0.2191 [null 0.002±0.001]   word 2 = 0.0125 [null 0.001±0.000]
+  gallows-initial share: word1 0.243  word2 0.051  mid 0.060;  p-initial: word1 0.121 word2 0.003 mid 0.006
+  first-glyph shares (ratio vs mid-line):
+    word 2                       n= 2449  o:0.203(x0.87)  q:0.170(x0.87)  c:0.186(x1.08)  s:0.191(x1.65)  a:0.080(x1.22)  l:0.053(x0.94)  d:0.032(x0.65)  k:0.031(x0.92)  y:0.023(x0.77)  t:0.014(x0.81)
+  paragraph-initial lines n=478, other line-initial n=1971
+    paragraph-initial word 1     n=  478  o:0.042(x0.18)  q:0.038(x0.19)  c:0.004(x0.02)  s:0.019(x0.16)  a:0.000(x0.00)  l:0.002(x0.04)  d:0.019(x0.38)  k:0.069(x2.02)  y:0.013(x0.42)  t:0.226(x12.77)
+    other line-initial word 1    n= 1971  o:0.126(x0.54)  q:0.150(x0.76)  c:0.034(x0.20)  s:0.195(x1.69)  d:0.186(x3.75)  a:0.006(x0.09)  l:0.029(x0.52)  y:0.174(x5.78)  k:0.003(x0.07)  t:0.070(x3.96)
+    gallows share: para-initial 0.862  other-initial 0.093  mid 0.060;  p/f share: para 0.567  other 0.021  mid 0.008
+    JSD(first glyph) vs mid: para-initial 0.6067  other line-initial 0.1847  para vs other 0.5329
+    para-initial         1-strip attested: p 0.691 (n=256)  t 0.741 (n=108)  gallows 0.682  all 0.682;  type never mid-line: 0.672
+    other line-initial   1-strip attested: p 0.927 (n=41)  t 0.841 (n=138)  gallows 0.853  all 0.826;  type never mid-line: 0.252
+
+--- 5. shape of the edge effect: lines with >= 8 words, by word index and from the end ---
+  lines with >= 8 words: 1923
+  index   H(first glyph) [null]     gallows%  [null]     p%     y%     d%     q%    ch/c%  | ends m/g% [null]
+  w1      3.166 [3.191±0.017]   0.272 [0.080±0.005]   0.141  0.136  0.155  0.123  0.026  | 0.002 [0.026±0.004]
+  w2      2.969 [3.199±0.025]   0.053 [0.082±0.006]   0.003  0.026  0.029  0.163  0.180  | 0.003 [0.026±0.003]
+  w3      3.001 [3.188±0.025]   0.058 [0.080±0.007]   0.003  0.036  0.045  0.240  0.168  | 0.004 [0.026±0.003]
+  w4      2.965 [3.187±0.026]   0.053 [0.079±0.006]   0.003  0.029  0.049  0.226  0.179  | 0.003 [0.027±0.004]
+  w5      3.046 [3.185±0.024]   0.060 [0.080±0.006]   0.005  0.038  0.054  0.226  0.155  | 0.006 [0.025±0.003]
+  w6      3.089 [3.188±0.023]   0.058 [0.081±0.006]   0.004  0.034  0.054  0.192  0.187  | 0.004 [0.026±0.003]
+  w7      3.023 [3.194±0.026]   0.059 [0.081±0.006]   0.007  0.029  0.055  0.205  0.172  | 0.007 [0.025±0.003]
+  w8      3.062 [3.189±0.024]   0.056 [0.078±0.005]   0.006  0.030  0.060  0.182  0.162  | 0.023 [0.026±0.003]
+  end-1   3.184 [3.192±0.023]   0.051 [0.081±0.006]   0.004  0.031  0.110  0.114  0.111  | 0.222 [0.026±0.003]
+  end-2   3.153 [3.185±0.018]   0.074 [0.079±0.005]   0.006  0.028  0.067  0.176  0.157  | 0.016 [0.026±0.004]
+  end-3   3.095 [3.192±0.025]   0.066 [0.079±0.006]   0.010  0.038  0.053  0.185  0.158  | 0.006 [0.026±0.004]
+  end-4   3.082 [3.191±0.027]   0.059 [0.080±0.006]   0.010  0.025  0.056  0.193  0.172  | 0.007 [0.026±0.004]
+
+--- 6. decomposition: ordinary word (attested mid-line) / marker+ordinary word / neither ---
+  line-initial tokens n=2449: type attested mid-line 0.666 [null 0.843±0.007]; unattested but 1-/2-unit prefix strip attested 0.246 [null 0.104±0.006]; neither 0.087 [null 0.053±0.004]
+  rarity-controlled: among line-initial tokens NOT attested mid-line, share whose prefix-strip remainder is attested = 0.738 [null 0.661±0.022]  (line-initial tokens are rarer types, so the unconditional excess above is partly rarity)
+  mean log10(mid-line count+1) of the 1-unit remainder, p-initial: line-initial 1.018 (n=297) vs mid-line 1.653 (n=101); whole mid-line tokens 1.509
+  mean log10(mid-line count+1) of the 1-unit remainder, t-initial: line-initial 1.327 (n=246) vs mid-line 1.134 (n=321); whole mid-line tokens 1.509
+  mean log10(mid-line count+1) of the 1-unit remainder, y-initial: line-initial 1.011 (n=349) vs mid-line 0.900 (n=546); whole mid-line tokens 1.509
+  mean log10(mid-line count+1) of the 1-unit remainder, d-initial: line-initial 1.899 (n=376) vs mid-line 1.890 (n=900); whole mid-line tokens 1.509
+  among line-initial tokens whose type IS attested mid-line: first-glyph JSD vs mid 0.1736 [null 0.004±0.001] (all line-initial 0.2191); gallows share 0.147 vs mid 0.060; p share 0.061 vs mid 0.006
+  p-initial line-initial tokens n=297: type attested mid-line 0.333; unattested-but-remainder-attested 0.391; neither 0.276
+  line-final tokens n=2449: type attested mid-line 0.677 [null 0.843±0.007]; unattested but final-glyph strip/replace attested 0.156 [null 0.049±0.004]; neither 0.167 [null 0.108±0.006]
+  among line-final tokens whose type IS attested mid-line: last-glyph JSD vs mid 0.0624 [null 0.004±0.001] (all line-final 0.0968); m/g share 0.130 vs mid 0.006
+  rarity-controlled: among line-final tokens NOT attested mid-line, share attested after final-glyph strip/replace = 0.484 [null 0.311±0.021]
+
+====================================================================================================
+VERDICT
+====================================================================================================
+[ALL]
+  (a) line-initial. VOCABULARY: restricting to line-initial tokens whose type is an ordinary mid-line word keeps 79% of the first-glyph JSD (0.140 of 0.176; null 0.003); 70.3% of line-initial tokens are such ordinary types (null 84.1%).
+      PREFIX MARKER: among line-initial tokens never seen mid-line, 75.4% become an attested word after removing 1-2 leading glyphs (null 68.6%, excess +6.8 pp); line-initial p-words: 1-glyph strip attested 72.0% (n=375) vs 86.2% for mid-line p-words (n=138).
+      -> mostly VOCABULARY (ordinary words chosen with a line-start profile); the prefix-marker component is small and line-initial p-words are no more 'p + ordinary word' than mid-line p-words.
+  (b) line-final. VOCABULARY: ordinary attested types keep 70% of the last-glyph JSD (0.057 of 0.082; null 0.003); 71.7% of line-final tokens are ordinary types (null 84.0%).
+      FINAL FLOURISH: among line-final tokens never seen mid-line, 46.6% become attested after stripping/replacing the final glyph (null 34.1%, excess +12.5 pp); m-final words with m->r attested: line-final 77.2% (n=622) vs mid-line m-words 84.1% (n=252).
+      -> BOTH: vocabulary dominant, with a measurable final-flourish component (unattested m/g tokens resolve to attested stems above null).
+[Currier A]
+  (a) line-initial. VOCABULARY: restricting to line-initial tokens whose type is an ordinary mid-line word keeps 76% of the first-glyph JSD (0.106 of 0.139; null 0.007); 63.8% of line-initial tokens are such ordinary types (null 77.0%).
+      PREFIX MARKER: among line-initial tokens never seen mid-line, 73.9% become an attested word after removing 1-2 leading glyphs (null 66.9%, excess +7.0 pp); line-initial p-words: 1-glyph strip attested 56.4% (n=78) vs 75.0% for mid-line p-words (n=36).
+      -> mostly VOCABULARY (ordinary words chosen with a line-start profile); the prefix-marker component is small and line-initial p-words are no more 'p + ordinary word' than mid-line p-words.
+  (b) line-final. VOCABULARY: ordinary attested types keep 84% of the last-glyph JSD (0.071 of 0.084; null 0.007); 67.5% of line-final tokens are ordinary types (null 77.0%).
+      FINAL FLOURISH: among line-final tokens never seen mid-line, 42.2% become attested after stripping/replacing the final glyph (null 34.8%, excess +7.4 pp); m-final words with m->r attested: line-final 71.9% (n=167) vs mid-line m-words 79.9% (n=144).
+      -> mostly VOCABULARY: specific recurring m/g types are placed line-finally; they are not decomposable above the baseline.
+[Currier B]
+  (a) line-initial. VOCABULARY: restricting to line-initial tokens whose type is an ordinary mid-line word keeps 79% of the first-glyph JSD (0.174 of 0.219; null 0.004); 66.6% of line-initial tokens are such ordinary types (null 84.3%).
+      PREFIX MARKER: among line-initial tokens never seen mid-line, 73.8% become an attested word after removing 1-2 leading glyphs (null 66.1%, excess +7.8 pp); line-initial p-words: 1-glyph strip attested 72.4% (n=297) vs 89.1% for mid-line p-words (n=101).
+      -> mostly VOCABULARY (ordinary words chosen with a line-start profile); the prefix-marker component is small and line-initial p-words are no more 'p + ordinary word' than mid-line p-words.
+  (b) line-final. VOCABULARY: ordinary attested types keep 64% of the last-glyph JSD (0.062 of 0.097; null 0.004); 67.7% of line-final tokens are ordinary types (null 84.3%).
+      FINAL FLOURISH: among line-final tokens never seen mid-line, 48.4% become attested after stripping/replacing the final glyph (null 31.1%, excess +17.4 pp); m-final words with m->r attested: line-final 75.1% (n=438) vs mid-line m-words 84.3% (n=102).
+      -> BOTH: vocabulary dominant, with a measurable final-flourish component (unattested m/g tokens resolve to attested stems above null).
+
+runtime 18.9 s

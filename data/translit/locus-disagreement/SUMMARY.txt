@@ -1,0 +1,19 @@
+per-locus disagreement. Whole-locus token identity after ivtff_tokens.clean.
+Not a word-aligned rate. Not h2, not the 7,025-type count, not hapax 0.68.
+Second-choice LSI codes excluded: D G I Q M.
+LSI loci=5341 IT2a=5215 RF1b-er=5385 GC2a=5367
+loci with a duplicated reader line (that reader dropped)=0
+LSI reader locus counts: C:2550 F:4074 H:5216 J:15 K:209 L:205 N:28 P:2 R:31 T:568 U:1990 V:1918 X:37 Z:7
+comparable (>=2 primary LSI readers): 5282
+all those readers identical tokens: 1176 rate=0.2226
+word counts differ among them: 2194 rate=0.4154
+IT2a vs LSI H: n=5211 token_agree=5188 rate=0.9956 wordcount_agree_rate=0.9994
+RF1b-er vs LSI H: n=5213 token_agree=2338 rate=0.4485 wordcount_agree_rate=0.7424
+GC2a vs IT2a word count: n=5210 agree=2947 rate=0.5656
+H-F and H-C are in pairs.tsv. Whole-locus identity is stricter than a word-aligned rate.
+pair table: data/translit/locus-disagreement/pairs.tsv
+per locus: data/translit/locus-disagreement/loci.tsv
+sha256 LSI 3f3f2af18cde10efe75c582f49b07b651c3397022fcbfa5854fecc424c121afa
+sha256 IT2a 7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5
+sha256 RF1b-er eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2
+sha256 GC2a b09570cb6c993bc2d87134d115e60a978650a8a6495483ddbb1f6005a586096f

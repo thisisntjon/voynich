@@ -1,0 +1,32 @@
+# s128 v3 prereg stub. Frozen 2026-10-19 02:03:08 PDT (Skynet clock) by Grok Bot, before any s128 Voynich read and before any scorer exists. v1 and v2 stubs left unchanged.
+# Verify from the project root: grep -v "^#" runs/s128/s128_name_slot_prediction_v3.prereg.sha256 | tr -d '\r' | sha256sum -c -
+# Voynich transliteration files hashed as bytes only (Get-FileHash); content not read. The count script has run only on the synthetic fixture.
+# Later lines, in order: runs/s128/s128_layout_counts_ZL3b.tsv after step d0 (after HOLD 1 clears); tools/s128_name_slot_score.py after F0. Held under D-072; pending Independent Verifier acceptance.
+f355d9b69b4e0fef47e0b7b5bd2ee0eb2eb0035414f57273f2a8a1a590d14ea5  runs/s128/s128_name_slot_prediction_v3.prereg
+a7f46c1aeb6c2036fe18ab532a001c5cf84987a1b48d76e3b9d1146ebf3defbc  runs/s128/s128_layout_counts.py
+8c96091ae42df96e4771a816320452ff40e0e2f7f0b69c1e0e1212d39b432e6f  runs/s128/s128_name_slot_prediction_v2.prereg
+fdb4e114b6da9fe79f4d31a4ec511fda9e9efbc24ecc88efff9f887f40cea840  runs/s128/results_s128_herbal_profile.txt
+b70bafbe7a9a9ee77731e1f0b86f8bde95d661f2167a7537e9d8a4d554896439  runs/s128/results_s128_herbal_profile.json
+c8d0a4e8ebf40db1415eb196522d4b1d7cddb7f1dc2b68bf28f720fd5f515f2f  runs/s128/s128_herbal_profile.py
+784b6d3782e40126cb6214b738e983e24fafeba8b067065e758d53ce41f65ff7  runs/s128/s128_f0n2_calib.py
+d8736e0ecceef3cac64b789e8f1531a69870c7002efeaa8127f14bbfa41eb950  runs/s128/results_s128_f0n2_calibration.txt
+239eb9fa4fafa0eaa47e4de4a78f2f90a66de89fcc21d1fc8287be77e581d150  runs/s128/s128_excluded_foldouts.txt
+bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc  data/ZL3b-n.txt
+eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2  data/external/voynich-nu-ivtff/RF1b-er.txt
+7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5  data/external/voynich-nu-ivtff/IT2a-n.txt
+0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1  vparse.py
+3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea  p1_bifolio_null.py
+a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed  scoreboard/metrics_new.py
+43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29  s76_segmenter_independence.py
+d17b4b81f381828becd9e01b54f6eebaee3d8ab2a3e08a45212013f00c0951d4  data/external/ventura_egerton747/tractatus-de-herbis-egerton-747-ventura2009-tei.xml
+00c484e965af06b52ff4fc323af3e14071d3476fd59b8f85a5b7ec1e1a7b35b2  data/controls/latin_macer_floridus.txt
+d9bacb3247d798fcd2a8ce3b7c76222407fc0ac1c8d4242e9e8163508c10e968  data/external/genre-s87/pg49513_culpeper_complete_herbal.txt
+ca752c848efb3227c12c2e492635e0fc5fa2c9cd9ec38d274e3c2d4ac8c44c24  data/external/gaskell-bowern-gibberish/danielgaskell-voynich-main/voynich-main/data/meaningful/texts/Historical - German - Technical - German Herbarium.txt
+7f1055e8326b3669126f81efaa357215526a6eda391f343f0a2c00d4fbecc560  runs/s128/s128_prereg_v2_to_v3_DIFF.md
+dff31b76c85db68c07230d5b4ed134b034e00da0eed1fd288c9f6608972551dd  runs/s128/s128_prereg_v2_to_v3.diff
+ce465ae1777daec574a7d68bd200831ac5916d228fb300c9d9716c9c9c0c26da  runs/s128/s128_layout_counts_fixture/synthetic_ivtff_fixture.txt
+218829e79950092b24ae32aeedabf923e6253af93ecf84841d6469d7336c93d7  runs/s128/s128_layout_counts_fixture/synthetic_ivtff_fixture_nomarks.txt
+a1a4f533bbf48e7fc1b90b0ec1b915828e3c8befe61368cd829f4e749c8611d8  runs/s128/s128_layout_counts_fixture/synthetic_counts.tsv
+31335e66c5184d8ccd112f2dad54f4140bc6546ff2a792b380803ee944147ad3  runs/s128/s128_layout_counts_fixture/fixture_run_log.txt
+4231aece9ee2fc252114b7b63f927152465ccfd195c9453521442e90176cee36  D:/Squire/IV-REVIEW-S128-PREREG-V2-20261019.md
+dd82cfb0e47f72d8e677de0c32113d3320a857914b49ff280dba0bbdf2af064e  D:/Squire/v1_to_v2_IV_rebuilt.diff

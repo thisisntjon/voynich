@@ -1,0 +1,43 @@
+date: Sun Oct 18 00:23:55 PDT 2026
+s54_label_partner_text.py sha256=34f982ec9fca65edaa7299461be57ef9fbbdd6b298d686038384d204a9d49705
+stub_match=True
+elapsed: 0.9s
+
+herbal pool: 128 pages ($I=H, >= 30 paragraph tokens); pharma ($I=P) pages: 16; pairs scored 13/13
+SlotSegmenter fitted on all 38977 corpus tokens (real run: every ZL locus, all pages): 28 prefixes ['a', 'al', 'ch', 'che', 'cho', 'cth', 'dal', 'k', 'l', 'lk', 'o', 'ok', 'oke', 'ol', 'ot', 'ota', 'ote', 'p', 'qo', 'qok', 'qot', 'r', 'she', 'sho', 't', 'y', 'yk', 'yt'], 19 suffixes ['ain', 'air', 'al', 'am', 'ar', 'chy', 'd', 'dal', 'dar', 'eey', 'hy', 'ky', 'o', 'ody', 'ol', 'or', 'os', 's', 'y']
+
+POSITIVE CONTROL (planted: 3 true-page tokens per pair, 1-glyph mutation rate 0.3):
+  [ed1  ] MRR=0.8974 null mean=0.0425 q99=0.1414 P=0.0001 top1=11 top5=13/13 median pct=0.000
+  [exact] MRR=0.8901 null mean=0.0421 q99=0.1422 P=0.0001 top1=11 top5=12/13 median pct=0.000
+  [core ] MRR=0.4672 null mean=0.0429 q99=0.1456 P=0.0001 top1=5 top5=6/13 median pct=0.035
+  control (ed1 MRR > null q99): PASS
+
+REAL LABELS (score = [S - E_comparison] - mean over pool; rank among pool; null = 10,000 joint perms):
+  PRIMARY [a    /ed1  ] MRR=0.0389 null mean=0.0426 q99=0.1383 q99.5=0.1555 P=0.3770 top1=0 top5=0 median pct=0.425
+  descr.  [a    /exact] MRR=0.0374 null mean=0.0415 q99=0.1327 q99.5=0.1488 P=0.3962 top1=0 top5=0 median pct=0.496
+  descr.  [a    /core ] MRR=0.0534 null mean=0.0421 q99=0.1378 q99.5=0.1549 P=0.2264 top1=0 top5=1 median pct=0.555
+  PRIMARY [b    /ed1  ] MRR=0.0279 null mean=0.0422 q99=0.1344 q99.5=0.1453 P=0.6104 top1=0 top5=0 median pct=0.417
+  descr.  [b    /exact] MRR=0.0412 null mean=0.0402 q99=0.1122 q99.5=0.1222 P=0.3344 top1=0 top5=0 median pct=0.268
+  descr.  [b    /core ] MRR=0.0985 null mean=0.0421 q99=0.1356 q99.5=0.1506 P=0.0607 top1=1 top5=1 median pct=0.638
+  descr.  [b_row/ed1  ] MRR=0.0263 null mean=0.0426 q99=0.1375 q99.5=0.1542 P=0.6572 top1=0 top5=0 median pct=0.417
+  descr.  [b_row/exact] MRR=0.0392 null mean=0.0411 q99=0.1277 q99.5=0.1449 P=0.3642 top1=0 top5=0 median pct=0.488
+  descr.  [b_row/core ] MRR=0.0644 null mean=0.0421 q99=0.1365 q99.5=0.1516 P=0.1579 top1=0 top5=1 median pct=0.634
+
+per-pair ranks (/128); columns: a/ed1, a/exact, a/core, b/ed1, b/exact, b/core, b_row/ed1, b_row/exact, b_row/core, planted/ed1
+  f102r1       <- f1v     55.0  90.0  65.5  54.0  90.0  65.5  54.0  90.0  65.5 |   1.0  nA=4 cell f102r1[3,2] (row fallback) b=['ddardsh'] ed1-hits on true page: a=[] b=[]
+  f100v        <- f3v     76.0  83.0  47.5  85.5  74.5  82.0  73.5  75.5  81.5 |   1.0  nA=14 cell f100v[1,1] (cell) b=['tolchd'] ed1-hits on true page: a=['chols', 'chos', 'ykchdy'] b=[]
+  f102r2       <- f18v    52.0  14.0  90.0  51.0  14.0  90.0  51.0  14.0  90.0 |   1.0  nA=7 cell f102r2[3,1] (cell) b=['loeekadag', 'oshea??l', 'so???dch'] ed1-hits on true page: a=[] b=[]
+  f102v1       <- f19r    43.5  38.5  71.5   7.5  33.0  24.5   8.5  33.0  24.5 |   1.0  nA=10 cell f102v1[2,2] (cell) b=['ypcholdy'] ed1-hits on true page: a=[] b=[]
+  f102r2       <- f23r   106.0 118.5 109.5 106.0 118.5 109.5 106.0 118.5 109.5 |   1.0  nA=7 cell f102r2[3,1] (cell) b=['loeekadag', 'oshea??l', 'so???dch'] ed1-hits on true page: a=[] b=[]
+  f102r2       <- f32v    21.0  14.0  26.5  21.0  14.0  26.5  21.0  14.0  26.5 |   3.0  nA=7 cell f102r2[1,2] (row fallback) b=['kodaiig'] ed1-hits on true page: a=[] b=[]
+  f102r1       <- f37v    52.0   7.5  90.0  51.0   7.5  90.0  51.0   7.5  90.0 |   1.0  nA=4 cell f102r1[3,1] (cell) b=['ddardsh'] ed1-hits on true page: a=[] b=[]
+  f102r2       <- f47v    75.0  82.0 116.0  75.0  82.0 116.0  75.0  82.0 116.0 |   1.0  nA=7 cell f102r2[1,1] (cell) b=['kodaiig'] ed1-hits on true page: a=[] b=[]
+  f89v2        <- f48r    58.5  29.0  23.0  72.5  59.0  16.0  80.0  60.0   8.5 |   3.0  nA=16 cell f89v2[3,4] (cell) b=['sada?'] ed1-hits on true page: a=['chody', 'okam', 'sheol'] b=[]
+  f89v1+f89v2  <- f48v   123.5  64.0   3.0 127.0 101.5 121.0 127.0 102.5 104.5 |   1.0  nA=25 cell f89v1[1,4] (cell) b=['darshody'] ed1-hits on true page: a=['chody', 'okam', 'otair', 'otory'] b=[]
+  f100r        <- f90v2    6.0  70.0   6.0  37.0  35.0   1.0  66.5  63.0   2.0 |   1.0  nA=19 cell f100r[1,3] (cell) b=['otear'] ed1-hits on true page: a=['okeeos', 'okols', 'oteol', 'sar'] b=[]
+  f100r        <- f90v1    7.5  15.5 104.5  67.0  35.0 123.5  45.5  63.0 120.5 |   1.0  nA=19 cell f100r[1,3] (cell) b=['otear'] ed1-hits on true page: a=['char', 'okeeos', 'orol', 'oteol', 'sar'] b=[]
+  f99r         <- f96v    56.0  93.5  74.0  39.0  10.0  18.0  39.0  10.0  18.0 |   1.0  nA=36 cell f99r[4,1] (cell) b=['yteoldy'] ed1-hits on true page: a=['ain', 'aro', 'dar', 'oaro', 'okar', 'r', 'salo', 'sory', 'y'] b=[]
+
+DECISION (ed1, variant a or b MRR > null q99.5, Bonferroni over 2 variants): a 0.0389 vs 0.1555; b 0.0279 vs 0.1453 -> VERDICT: no label-text link
+
+paths: results_s54.txt, runs/s54/pairs_table.json, s54_label_partner_text.prereg.sha256

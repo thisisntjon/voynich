@@ -1,0 +1,71 @@
+M3 bake-off reconciliation  run=2026-10-17T16:33:34  seed=20261017
+M3: reconcile the two held-out bake-offs (d2_slot_bakeoff.py vs scoreboard/metrics_new.py
+heldout_bakeoff) that disagree on word-unigram vs char-trigram ordering on Voynich.
+
+ONE SHARED DEFINITION (used for every cell of the table):
+  * corpus  : Voynich paragraph units (P*), EVA, tokens containing '?' dropped (both scripts
+              already do this); italian_dante = corpora.control(25000 tokens) wrapped
+              8 tokens/line, 20 lines/page (as scoreboard/run_new.py).
+  * score   : bits/token = -mean log2 P(word string) over all held-out tokens.  Every char
+              model scores the whole string INCLUDING the end-of-word symbol '$' (so word
+              length is paid for); no separate space symbol; bits/char also reported as
+              bits / (len(w)+1), as in m0.
+  * splits  : "page"  = d2's split: shuffle pages, 80/20, one fold.
+              "quire" = m0's split: leave-one-quire-out for Voynich (16 folds); blocks of 10
+              consecutive pages for the control (no quire labels), summed over folds.
+  * models  : unigram-GT+char   = m0 UnigramGT: seen w -> (1-p0) c/N, unseen -> p0 * P_char3WB(w),
+                                  p0 = N1/N (mass spread over strings by the WB char-3 model).
+              unigram-GT-renorm = same, but the char-3 mass already sitting on seen train types
+                                  (~86% for Voynich, ~68% Italian) is removed: unseen ->
+                                  p0 * P_char3WB(w) / (1 - sum_{seen v} P_char3WB(v)).  This is a
+                                  proper distribution over strings (the fair vocabulary-list model).
+              unigram-flatUNK   = d2 p_unigram: (c+0.1)/(N+0.1(V+1)); ALL unseen strings share
+                                  ONE bucket of mass 0.1/(N+0.1(V+1)).  NOT a distribution over
+                                  strings (sums to >1 over the string space), so its unseen cost
+                                  is a lower bound, not a code length.
+              char3-WB          = m0 CharMarkov(order 3), interpolated Witten-Bell, '^^^' pad.
+              char3-add0.01     = d2 p_char_str with alpha=0.01 (d2 used 0.1): '^^' pad,
+                                  (c+a)/(n+a*A), A = |alphabet|+1 ('$').
+  Reproduction rows: d2's exact split (seed 42) with d2's own alpha=0.1 models, to show the
+  published 10.728 / 11.279 are recovered before changing anything.
+Seed 20261017 for the page split.  Writes results_m3_bakeoff_reconcile.txt.
+
+voynich pages=207 tokens=34857 | italian pages=157 tokens=25000
+
+REPRODUCTION of d2 (its split: seed 42, pages sorted by id; its models alpha=0.1):
+  d2 published: word-unigram 10.728 (seen 9.469 / unseen 18.101), char-trigram 11.279 (9.776 / 20.087)
+  here        : unigram-flatUNK(a=0.1)     10.728 (seen 9.469 / unseen 18.101)  unseen tokens 1069/7332
+  here        : char3-add0.1 (d2 repro)    11.279 (seen 9.776 / unseen 20.087)  unseen tokens 1069/7332
+  m0 published (quire): markov3 11.556, markov2 11.581, unigram_gt 12.082
+
+--- voynich_eva: {page split (seed 20261017, 80/20), quire split (16 folds)} x 5 models ---
+split    model                       bits/tok  bits/char     seen   unseen  unseen%   n_tok
+page     unigram-GT+char3WB            11.632      1.928    9.636   23.633     14.3    8586
+page     unigram-GT-renorm             11.245      1.864    9.636   20.923     14.3    8586
+page     unigram-flatUNK(a=0.1)        10.643      1.764    9.414   18.035     14.3    8586
+page     char3-WB                      11.151      1.848    9.528   20.917     14.3    8586
+page     char3-add0.01                 11.222      1.860    9.716   20.278     14.3    8586
+quire    unigram-GT+char3WB            12.082      2.017    9.858   23.995     15.7   34857
+quire    unigram-GT-renorm             11.645      1.944    9.858   21.222     15.7   34857
+quire    unigram-flatUNK(a=0.1)        10.986      1.834    9.644   18.173     15.7   34857
+quire    char3-WB                      11.556      1.929    9.755   21.206     15.7   34857
+quire    char3-add0.01                 11.601      1.937    9.934   20.530     15.7   34857
+
+--- italian_dante: {page split (seed 20261017, 80/20), block10 split (16 folds)} x 5 models ---
+split    model                       bits/tok  bits/char     seen   unseen  unseen%   n_tok
+page     unigram-GT+char3WB            12.009      2.418    9.068   27.120     16.3    4960
+page     unigram-GT-renorm             11.744      2.365    9.068   25.492     16.3    4960
+page     unigram-flatUNK(a=0.1)        10.279      2.070    8.846   17.645     16.3    4960
+page     char3-WB                      12.187      2.454    9.815   24.381     16.3    4960
+page     char3-add0.01                 13.442      2.706   11.229   24.812     16.3    4960
+block10  unigram-GT+char3WB            11.819      2.396    9.098   27.604     14.7   25000
+block10  unigram-GT-renorm             11.578      2.348    9.098   25.965     14.7   25000
+block10  unigram-flatUNK(a=0.1)        10.211      2.070    8.890   17.869     14.7   25000
+block10  char3-WB                      12.049      2.443    9.855   24.780     14.7   25000
+block10  char3-add0.01                 13.344      2.706   11.268   25.385     14.7   25000
+
+=== VERDICT: does 'spelling (char-3) beats vocabulary list (unigram)' hold on Voynich? ===
+  [page] proper distributions: char3-WB 11.151 vs unigram-GT 11.632 -> char3 wins by 0.480; char3-add0.01 11.222 vs unigram-GT -> char3 wins; RENORMALISED unigram-GT 11.245 vs char3-WB -> char3 wins by 0.094; flat-UNK unigram 10.643 (beats char3-WB, but is not normalised over strings)
+  [quire] proper distributions: char3-WB 11.556 vs unigram-GT 12.082 -> char3 wins by 0.526; char3-add0.01 11.601 vs unigram-GT -> char3 wins; RENORMALISED unigram-GT 11.645 vs char3-WB -> char3 wins by 0.089; flat-UNK unigram 10.986 (beats char3-WB, but is not normalised over strings)
+  [italian page] char3-WB 12.187 vs unigram-GT 12.009 / renorm 11.744 -> unigram wins
+  [italian block10] char3-WB 12.049 vs unigram-GT 11.819 / renorm 11.578 -> unigram wins

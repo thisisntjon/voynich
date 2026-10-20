@@ -1,0 +1,191 @@
+s96_d063_amendments_and_triangulation_closures.py — D-063 Audit Resolution & Triangulation Closures (s96 / P-28)
+date: 2026-10-18 10:55:56 (elapsed 0.0s)
+device: cpu (CUDA_VISIBLE_DEVICES=''); torch 2.11.0.dev20260115+cu128 (threads=4); numpy 2.4.6; python 3.11.9
+stub_match: True
+sha256 s96_d063_amendments_and_triangulation_closures.py: e54aaff09358469aa9269c4f1cd258dddfd35c21805d96b16a599f03a82b0268
+sha256 s96_d063_amendments_and_triangulation_closures.prereg.sha256: dd232894bd93642b9d7885d83b12ddcd93da931f5c040914ddb2df7d0586c447
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import corpora_ext.py sha256=d7a0be47e77b57b18b6b7ed1cfe413b276c6cbb7638422941af9dd485ce5126a
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  local import p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  local import s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  local import s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  local import s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  local import s58_two_layer_heldout.py sha256=634e2534941bc1fc0b0942f2e6b331049835d8c61a4be8efe43e358ef6f5c0e3
+  local import s61_joint_word_producer.py sha256=059a218127de9fbbde080dc78c658e6b31dec3ecae33be7c5b8b511b81266622
+  local import s64_naibbe_taxonomy.py sha256=6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3
+  local import s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  local import s70_canonical_segmentation_and_rare_cores.py sha256=ae0a00e8df8b053677451a5dd96b55dc5a9e0942052a59147383129bec95b5cb
+  local import s71_weakened_grille_and_sticky_naibbe_loqo.py sha256=9b4f024792c778ae300fd14d7d1e85f03243d50964b1f7f61ba09f1553c11a18
+  local import s73_word_code_solver_and_syllabary.py sha256=06f2241b51c9f3149ee0d5236259f1dd046732b5e2a504c346183ff8f731b2d0
+  local import s75_transposition_nulls_and_mdl_bakeoff.py sha256=4f35f09afaaf525b01b99df8231cfc7019071bc67f4770efe56039a4a06a0828
+  local import s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  local import s77_deconfounded_scribe_and_comma_ablation_loqo.py sha256=56eb6afdafdc57654b56a7019ee6a9410752db9ffb08c3a9112f83dd0798cc5d
+  local import s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  local import s81_sticky_table_loqo.py sha256=418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063
+  local import s83_homophonic_line_table_loqo.py sha256=771ad770d5b9c4ec4413ea020fe0c42facf806dbeab141ded1100966c1b0c675
+  local import s85_loqo_mdl_and_triangulation_closures.py sha256=48e4938d72c40ccfec8c8431fdb9d0fa38e02c47511280837cc871aecf7389d9
+  local import s87_core_layer_genre.py sha256=d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db
+  local import s88_f39_f23_f36_triangulation_closures.py sha256=a80556562048a1468085b0aea7aaf8a29326002fee43613f2206586365f6a59b
+  local import s89_line_repetition_genres.py sha256=037282e31f57ce2c2091e8fbce5e7488ede231c715cf38c7e4c2d86caa5c305a
+  local import s90_constructed_text_core.py sha256=7b1c63cecb8bed9e732285d464916615e189045cec9ba4d7bb086c64a5e6d633
+  local import s92_f40_seg_order_physical_triangulation.py sha256=378e94bcffca8beea20b7180bfd80949e94cda32da14b1ef4e7aec7658688477
+  local import s96_d063_amendments_and_triangulation_closures.py sha256=e54aaff09358469aa9269c4f1cd258dddfd35c21805d96b16a599f03a82b0268
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import scoreboard/score.py sha256=3a7b7c3efea13b884362f9f7f07551835bab8ca158ecdb43b946c96a8b3fbf1d
+  local import tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+
+Loaded ZL3b (ZL3b_eva.meta.json): 207 pages, 34857 tokens, 15 LOQO folds=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'M', 'N', 'O', 'Q', 'S', 'T']
+Loaded RF1b (RF1b.meta.json): 207 pages, 34618 tokens, 15 LOQO folds=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'M', 'N', 'O', 'Q', 'S', 'T']
+Loaded IT2a (IT2a.meta.json): 206 pages, 34411 tokens, 15 LOQO folds=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'M', 'N', 'O', 'Q', 'S', 'T']
+
+
+========================================================================================================
+PART 1A (F-26 Amendment / D-063 Resolution: Wrapper-Free Taxonomy & LOO Non-Degradation at Matched-K)
+========================================================================================================
+
+--- 1A-1. 32-Corpus Wrapper-Free Taxonomy Table Under s80 Matched-K (K=50, 100, 200) & Canonical Coverage ---
+  Text                       Group    f2_full   f2_K50  f2_K100  f2_K200  p_K100  f4_pref  Cov_Grd  Cov_Can R_win(1)  d_z(VOY) d_z(CODE)  d_z(GEN)  In4Box
+  Voynich_ZL3b               VOY      -0.0528  +0.0548  +0.0375  +0.0351  0.0050  +0.0999    0.573    0.831    1.169     0.175     3.964     3.372     YES
+  Voynich_RF1b               VOY      -0.0500  +0.0553  +0.0420  +0.0372  0.0050  +0.0951    0.583    0.826    1.161     0.285     3.860     3.256     YES
+  Voynich_IT2a               VOY      -0.0508  +0.0527  +0.0411  +0.0399  0.0050  +0.0961    0.606    0.849    1.222     0.307     3.824     3.181     YES
+  code_k4_latin_cremma       CODE     -0.0087  +0.0232  +0.0296  +0.0142  0.0050  -0.0055    0.863    0.951    0.958     2.814     2.138     2.564      no
+  code_k4_italian_dante      CODE     -0.0113  +0.0635  +0.0658  +0.0634  0.0050  +0.0195    0.795    0.925    0.827     4.000     0.917     2.237      no
+  code_k4_mhg_nibelungenlied CODE     -0.0143  +0.0494  +0.0525  +0.0396  0.0050  +0.0265    0.768    0.910    0.957     4.508     0.871     1.980      no
+  code_k4_occitan_croisade   CODE     -0.0226  +0.0620  +0.0565  +0.0487  0.0050  +0.0365    0.806    0.929    0.875     4.225     0.494     1.766      no
+  code_k4_oldfrench_roland   CODE     -0.0358  +0.0382  +0.0446  +0.0321  0.0050  +0.0147    0.788    0.916    0.907     3.907     0.261     1.652      no
+  code_k4_mhg_parzival       CODE     -0.0068  +0.0294  +0.0327  +0.0195  0.0050  +0.0207    0.798    0.925    0.971     4.448     0.787     2.194      no
+  nomen_s1_joint             CODE_S1  -0.0048  +0.0170  +0.0259  +0.0160  0.0100  -0.0136    0.709    0.892    0.837     3.542     2.121     2.050      no
+  gen_s28_ZL3b_s1            GEN      +0.0383  +0.0624  +0.0630  +0.0551  0.0050  +0.0359    0.535    0.816    0.970     4.001     2.723     2.157      no
+  gen_c2_section             GEN      -0.0374  +0.0031  -0.0043  -0.0153  0.6915  +0.0007    0.781    0.917    1.006     4.534     2.263     3.204      no
+  gen_timm_schinner          GEN      -0.0072  +0.0134  +0.0144  +0.0106  0.0597  +0.0218    0.701    0.891    1.058     4.225     1.687     1.859      no
+  gen_schwartz_reuse         GEN      +0.0441  +0.0164  +0.0212  +0.0245  0.0149  +0.0005    0.600    0.815    1.158     1.980     2.853     2.718      no
+  gen_rugg_grille            GEN      +0.2716  +0.1616  +0.2085  +0.2531  0.0050  +0.5522    0.986    0.995    1.092     8.729     7.862     6.791      no
+  gen_G2layer_ZL3b_s1        GEN      +0.0658  +0.0775  +0.0935  +0.0929  0.0050  +0.0278    0.443    0.720    1.136     2.933     3.618     2.739      no
+  s57_local_memory           GEN_P4   -0.0134  +0.0039  +0.0019  -0.0025  0.4378  -0.0157    0.719    0.911    1.181     4.436     2.912     2.652      no
+  s58_affix_wrapper          GEN_P4   -0.0531  -0.0034  -0.0104  -0.0055  0.8806  +0.0384    0.734    0.923    1.123     7.137     6.824     6.069      no
+  s67_CA_ZL3b                GEN_P4   +0.0082  +0.0019  -0.0041  -0.0065  0.6567  -0.0040    0.725    0.924    1.256     4.574     2.922     2.659      no
+  s71_WTG_ZL3b               GEN_P4   -0.1117  +0.0270  +0.0162  -0.0022  0.0697  +0.1343    0.777    0.945    0.426     2.653     2.086     1.888      no
+  naibbe_latin_cremma_s1     CIPH     -0.0087  -0.0176  -0.0174  -0.0175  0.9701  -0.0105    0.794    0.949    0.894     4.424     2.651     2.695      no
+  Naibbe_line_sticky_lat     CIPH     +0.0718  +0.0329  +0.0442  +0.0511  0.0050  +0.1054    0.833    0.942    0.971     4.579     1.434     1.700      no
+  ciph_L2layer_ZL3b_s1       CIPH     +0.0491  +0.0774  +0.0846  +0.0721  0.0050  +0.0547    0.446    0.761    1.057     3.255     3.393     2.560      no
+  K1_latin_caesar            CIPH     +0.0575  +0.0699  +0.0726  +0.0720  0.0050  -0.0273    0.697    0.923    0.670     6.752     6.555     5.636      no
+  K3_latin_caesar            CIPH     +0.0465  +0.0485  +0.0551  +0.0558  0.0050  -0.0305    0.764    0.950    0.759     6.840     6.682     5.808      no
+  K1_italian_dante           CIPH     +0.0660  +0.0858  +0.0754  +0.0718  0.0050  -0.0325    0.642    0.902    0.750     6.606     6.478     5.489      no
+  K3_italian_dante           CIPH     +0.0326  +0.0493  +0.0597  +0.0462  0.0050  -0.0317    0.750    0.942    0.827     6.884     6.773     5.878      no
+  lang_latin_cremma          LANG     +0.1049  +0.0629  +0.0684  +0.0868  0.0050  -0.0223    0.510    0.724    0.785     5.826     4.584     3.986      no
+  lang_italian_dante         LANG     -0.1534  +0.1462  +0.1782  +0.1797  0.0050  +0.0526    0.649    0.798    0.614     5.793     4.432     4.357      no
+  lang_mhg_parzival          LANG     +0.0532  +0.0884  +0.1071  +0.1175  0.0050  +0.0712    0.750    0.871    0.690     5.286     2.895     3.202      no
+  lang_occitan_croisade      LANG     -0.1486  +0.1537  +0.1807  +0.1974  0.0050  +0.0768    0.672    0.820    0.647     5.566     4.077     3.793      no
+  lang_oldfrench_roland      LANG     -0.1308  +0.1543  +0.1964  +0.2071  0.0050  +0.0533    0.740    0.860    0.855     6.088     4.496     4.217      no
+
+--- 1A-2. Side-by-Side LOO Comparison (Biased Full Inventory vs De-Aliased Matched-K vs 8-Feature +R_within(1)) ---
+  Mode orig          : LOO NC= 9/12, LR= 8/12 (Total=17/24) | ZL3b: d_C=3.98 (>2.11), d_G=3.62 (>6.73), d_G/(d_C+d_G)=0.476 | RF1b: d_C=3.88 (>2.11), d_G=3.51 (>6.73), d_G/(d_C+d_G)=0.475 | IT2a: d_C=3.85 (>2.11), d_G=3.44 (>6.73), d_G/(d_C+d_G)=0.472
+  Mode K50           : LOO NC= 8/12, LR= 9/12 (Total=17/24) | ZL3b: d_C=3.97 (>2.18), d_G=3.33 (>6.75), d_G/(d_C+d_G)=0.456 | RF1b: d_C=3.87 (>2.18), d_G=3.22 (>6.75), d_G/(d_C+d_G)=0.455 | IT2a: d_C=3.83 (>2.18), d_G=3.15 (>6.75), d_G/(d_C+d_G)=0.451
+  Mode K100          : LOO NC= 8/12, LR= 9/12 (Total=17/24) | ZL3b: d_C=3.96 (>2.14), d_G=3.37 (>6.79), d_G/(d_C+d_G)=0.460 | RF1b: d_C=3.86 (>2.14), d_G=3.26 (>6.79), d_G/(d_C+d_G)=0.458 | IT2a: d_C=3.82 (>2.14), d_G=3.18 (>6.79), d_G/(d_C+d_G)=0.454
+  Mode K200          : LOO NC= 9/12, LR= 8/12 (Total=17/24) | ZL3b: d_C=3.96 (>2.14), d_G=3.37 (>6.81), d_G/(d_C+d_G)=0.460 | RF1b: d_C=3.86 (>2.14), d_G=3.26 (>6.81), d_G/(d_C+d_G)=0.458 | IT2a: d_C=3.82 (>2.14), d_G=3.18 (>6.81), d_G/(d_C+d_G)=0.454
+  Mode K100_canon    : LOO NC= 8/12, LR= 9/12 (Total=17/24) | ZL3b: d_C=3.86 (>2.13), d_G=3.32 (>6.71), d_G/(d_C+d_G)=0.462 | RF1b: d_C=3.80 (>2.13), d_G=3.22 (>6.71), d_G/(d_C+d_G)=0.459 | IT2a: d_C=3.72 (>2.13), d_G=3.15 (>6.71), d_G/(d_C+d_G)=0.458
+  Mode K100_canon_R1 : LOO NC= 9/12, LR= 9/12 (Total=18/24) | ZL3b: d_C=4.65 (>2.17), d_G=3.47 (>6.71), d_G/(d_C+d_G)=0.428 | RF1b: d_C=4.56 (>2.17), d_G=3.36 (>6.71), d_G/(d_C+d_G)=0.424 | IT2a: d_C=4.87 (>2.17), d_G=3.51 (>6.71), d_G/(d_C+d_G)=0.419
+
+--- 1A-3. Pre-Registered Call CALL_1A_F26_X06_DISCHARGED (Written Rule == Coded Rule) ---
+  - cond_1a_loo_nondeg        : True (K100 LOO=8+9=17/24 >= orig 9+8=17/24; K100_canon_R1=9+9=18/24 >= 18/24)
+  - cond_1a_between_centroids : False (all 3 translits satisfy 0.35 <= d_G/(d_C+d_G) <= 0.65 and d_C > max_rad_C=2.14, d_G > max_rad_G=6.79)
+  - cond_1a_min_dist          : True (min_d_z(VOY, 29 non-Voynich corpora) = 1.980 >= 1.800)
+  - cond_1a_zero_joint_box    : True (non-Voynich corpora inside Voynich 4-feature box = 0/29 == 0/29)
+  - CALL_1A_F26_X06_DISCHARGED: False (X-06 on F-26 DISCHARGED)
+
+========================================================================================================
+PART 1B (F-37 Amendment / D-063 Resolution: Non-Adjacent Trajectories, Frame-Core Shifts & Null Deletions)
+========================================================================================================
+
+--- 1B-1. 23 Reading Trajectories Grouped by Adjacency Class on s80 Matched-K (K=50, 100, 200) ---
+  Trajectory             Class          |     ZL3b K50 / K100 / K200 (z, p_K100) |     RF1b K50 / K100 / K200 (z, p_K100) |     IT2a K50 / K100 / K200 (z, p_K100)
+  std_lag1               STD_ADJ        |   +0.053/+0.044/+0.049 (z+4.9,p=0.005) |   +0.053/+0.050/+0.056 (z+5.3,p=0.005) |   +0.051/+0.048/+0.051 (z+5.1,p=0.005)
+  std_lag1_interior      STD_ADJ        |   +0.056/+0.041/+0.043 (z+3.6,p=0.005) |   +0.060/+0.052/+0.045 (z+4.7,p=0.005) |   +0.059/+0.049/+0.055 (z+4.3,p=0.005)
+  std_lag1_whole_shuf    STD_ADJ        |   +0.054/+0.037/+0.036 (z+3.9,p=0.005) |   +0.055/+0.042/+0.038 (z+4.5,p=0.005) |   +0.052/+0.040/+0.038 (z+4.3,p=0.005)
+  de_line_rev_half       INTRALINE_REV  |   +0.051/+0.048/+0.055 (z+5.3,p=0.005) |   +0.056/+0.066/+0.074 (z+6.9,p=0.005) |   +0.050/+0.049/+0.050 (z+5.0,p=0.005)
+  horiz_lag_2            NON_ADJACENT   |   +0.003/+0.018/+0.015 (z+1.7,p=0.060) |   +0.003/+0.013/+0.014 (z+1.2,p=0.109) |   +0.011/+0.015/+0.008 (z+1.3,p=0.090)
+  horiz_lag_3            NON_ADJACENT   |   -0.011/-0.009/-0.008 (z-0.8,p=0.806) |   -0.008/-0.012/-0.012 (z-1.1,p=0.851) |   -0.007/-0.008/-0.015 (z-0.7,p=0.776)
+  horiz_lag_4            NON_ADJACENT   |   +0.005/+0.007/+0.007 (z+0.5,p=0.299) |   -0.012/-0.010/-0.015 (z-0.7,p=0.766) |   +0.006/+0.019/+0.018 (z+1.4,p=0.085)
+  horiz_lag_5            NON_ADJACENT   |   +0.016/+0.024/-0.002 (z+1.5,p=0.070) |   +0.009/+0.016/-0.005 (z+1.1,p=0.164) |   +0.008/+0.007/-0.007 (z+0.4,p=0.363)
+  horiz_lag_6            NON_ADJACENT   |   -0.005/-0.030/-0.020 (z-1.6,p=0.935) |   +0.003/-0.018/-0.007 (z-0.9,p=0.851) |   -0.012/-0.030/-0.016 (z-1.5,p=0.955)
+  horiz_lag_7            NON_ADJACENT   |   -0.027/-0.035/-0.053 (z-1.4,p=0.915) |   +0.003/-0.010/-0.028 (z-0.4,p=0.647) |   -0.004/-0.021/-0.059 (z-0.8,p=0.806)
+  horiz_lag_8            NON_ADJACENT   |   +0.007/-0.022/-0.023 (z-0.7,p=0.751) |   -0.033/-0.057/-0.041 (z-1.7,p=0.955) |   -0.045/-0.086/-0.088 (z-2.3,p=0.990)
+  horiz_lag_9            NON_ADJACENT   |   -0.006/+0.004/-0.012 (z+0.1,p=0.453) |   -0.006/-0.007/-0.007 (z-0.2,p=0.572) |   -0.018/-0.049/-0.094 (z-1.0,p=0.836)
+  horiz_lag_10           NON_ADJACENT   |   -0.015/-0.066/-0.031 (z-1.1,p=0.876) |   -0.025/-0.037/-0.006 (z-0.6,p=0.731) |   -0.091/-0.094/-0.121 (z-1.3,p=0.876)
+  de_line_interleave     NON_ADJACENT   |   +0.010/+0.013/-0.002 (z+1.3,p=0.095) |   +0.006/+0.006/-0.009 (z+0.6,p=0.249) |   +0.015/+0.010/-0.004 (z+1.0,p=0.149)
+  de_boustro             NON_ADJACENT   |   +0.037/+0.024/+0.028 (z+2.5,p=0.015) |   +0.038/+0.030/+0.027 (z+3.2,p=0.005) |   +0.045/+0.033/+0.034 (z+3.5,p=0.005)
+  de_vert_col2           NON_ADJACENT   |   +0.005/+0.019/+0.019 (z+2.0,p=0.035) |   +0.009/+0.014/+0.014 (z+1.6,p=0.065) |   +0.023/+0.024/+0.024 (z+2.3,p=0.010)
+  de_vert_col3           NON_ADJACENT   |   +0.010/+0.013/-0.003 (z+1.3,p=0.080) |   +0.009/+0.004/-0.009 (z+0.4,p=0.348) |   +0.001/-0.001/-0.010 (z-0.1,p=0.572)
+  de_vert_col4           NON_ADJACENT   |   +0.022/+0.029/+0.036 (z+3.1,p=0.005) |   +0.021/+0.033/+0.031 (z+3.4,p=0.010) |   +0.020/+0.027/+0.031 (z+2.6,p=0.005)
+  de_vert_col5           NON_ADJACENT   |   +0.015/+0.015/+0.016 (z+1.6,p=0.060) |   +0.006/+0.009/+0.008 (z+0.9,p=0.164) |   -0.000/-0.006/-0.003 (z-0.6,p=0.726)
+  de_vert_col6           NON_ADJACENT   |   +0.005/-0.008/+0.003 (z-0.8,p=0.776) |   -0.002/-0.016/-0.006 (z-1.6,p=0.930) |   +0.004/-0.000/+0.016 (z-0.0,p=0.517)
+  vert_same_col          NON_ADJACENT   |   +0.021/+0.030/+0.038 (z+3.1,p=0.005) |   +0.031/+0.033/+0.036 (z+3.3,p=0.005) |   +0.028/+0.025/+0.019 (z+2.5,p=0.015)
+  vert_diag_plus1        NON_ADJACENT   |   +0.004/-0.012/-0.018 (z-1.1,p=0.856) |   +0.010/-0.005/-0.013 (z-0.5,p=0.711) |   -0.004/-0.016/-0.022 (z-1.5,p=0.935)
+  vert_diag_minus1       NON_ADJACENT   |   +0.008/-0.008/-0.010 (z-0.8,p=0.781) |   +0.017/-0.000/-0.006 (z-0.0,p=0.493) |   +0.022/+0.002/-0.002 (z+0.2,p=0.418)
+
+--- 1B-2. Core-vs-Frame Offsets Delta: Alignment Retention R_align(Delta) & Re-Assembled Word Order MM_K100(W_Delta) ---
+  Offset Delta |     ZL3b I(F;C_d) [R_align] / W_d K100 |     RF1b I(F;C_d) [R_align] / W_d K100 |     IT2a I(F;C_d) [R_align] / W_d K100
+  -3           |          +0.029 [  1.6%] / W_d=+0.0374 |          +0.034 [  1.9%] / W_d=+0.0499 |          +0.036 [  2.0%] / W_d=+0.0373
+  -2           |          +0.050 [  2.8%] / W_d=+0.0118 |          +0.050 [  2.8%] / W_d=+0.0221 |          +0.030 [  1.7%] / W_d=+0.0231
+  -1           |          +0.159 [  8.8%] / W_d=+0.0779 |          +0.169 [  9.4%] / W_d=+0.0834 |          +0.145 [  8.0%] / W_d=+0.0976
+  0            |          +1.808 [100.0%] / W_d=+0.0375 |          +1.786 [100.0%] / W_d=+0.0420 |          +1.812 [100.0%] / W_d=+0.0411
+  +1           |          +0.085 [  4.7%] / W_d=+0.0671 |          +0.089 [  5.0%] / W_d=+0.0861 |          +0.091 [  5.0%] / W_d=+0.0872
+  +2           |          +0.032 [  1.8%] / W_d=+0.0251 |          +0.027 [  1.5%] / W_d=+0.0280 |          +0.042 [  2.3%] / W_d=+0.0278
+  +3           |          +0.017 [  0.9%] / W_d=+0.0220 |          +0.023 [  1.3%] / W_d=+0.0299 |          +0.034 [  1.9%] / W_d=+0.0352
+  line_rev     |          +0.038 [  2.1%] / W_d=+0.0201 |          +0.027 [  1.5%] / W_d=+0.0333 |          +0.025 [  1.4%] / W_d=+0.0353
+  line_above   |          +0.043 [  2.4%] / W_d=+0.0252 |          +0.038 [  2.1%] / W_d=+0.0372 |          +0.036 [  2.0%] / W_d=+0.0423
+
+--- 1B-3. Single-Glyph Null Deletions g in Sigma at Matched-K (K=50, 100, 200) vs CREMMA Latin Floor (+0.0680) ---
+  ZL3b del='none' ( 0.0% tok): W_Types=7025, C_Types=2360, h2=1.845, CHARWIN=+0.0940 | MM_K50=+0.0548, MM_K100=+0.0375 (z=+3.96), MM_K200=+0.0351
+  ZL3b del='l   ' (25.8% tok): W_Types=6126, C_Types=1906, h2=1.843, CHARWIN=+0.0848 | MM_K50=+0.0655, MM_K100=+0.0598 (z=+6.77), MM_K200=+0.0498
+  ZL3b del='y   ' (43.7% tok): W_Types=6072, C_Types=1924, h2=1.912, CHARWIN=+0.0777 | MM_K50=+0.0674, MM_K100=+0.0594 (z=+6.52), MM_K200=+0.0437
+  ZL3b del='o   ' (56.5% tok): W_Types=5463, C_Types=1477, h2=1.909, CHARWIN=+0.0650 | MM_K50=+0.0550, MM_K100=+0.0473 (z=+5.60), MM_K200=+0.0352
+  ZL3b del='q   ' (15.3% tok): W_Types=6581, C_Types=2268, h2=1.843, CHARWIN=+0.0910 | MM_K50=+0.0588, MM_K100=+0.0452 (z=+4.89), MM_K200=+0.0409
+  ZL3b del='m   ' ( 2.7% tok): W_Types=6949, C_Types=2282, h2=1.848, CHARWIN=+0.0918 | MM_K50=+0.0559, MM_K100=+0.0446 (z=+4.64), MM_K200=+0.0379
+  ZL3b del='t   ' (17.2% tok): W_Types=6375, C_Types=2115, h2=1.840, CHARWIN=+0.0857 | MM_K50=+0.0544, MM_K100=+0.0443 (z=+5.16), MM_K200=+0.0357
+  ZL3b del='n   ' (16.6% tok): W_Types=6991, C_Types=2166, h2=1.896, CHARWIN=+0.0934 | MM_K50=+0.0537, MM_K100=+0.0437 (z=+4.60), MM_K200=+0.0323
+  ZL3b del='a   ' (35.4% tok): W_Types=6675, C_Types=1795, h2=1.934, CHARWIN=+0.0866 | MM_K50=+0.0423, MM_K100=+0.0426 (z=+4.89), MM_K200=+0.0343
+
+--- 1B-4. Pre-Registered Call CALL_1B_F37_X06_DISCHARGED (Written Rule == Coded Rule) ---
+  - cond_1b_nonadj_trajs      : True (max 19 non-adjacent trajectories MM_K100 = +0.0328 < min std_lag1 +0.0437; max all 20 incl. de_line_rev_half = +0.0657 < +0.0680 floor)
+  - cond_1b_frame_shifts      : False (max Delta!=0 alignment retention R_align = 0.0944 <= 0.1000; max re-assembled W_Delta MM_K100 = +0.0976 < +0.0680 floor)
+  - cond_1b_glyph_dels        : True (max single-glyph deletion MM_K100 across 26 ZL3b + 12 cross-translit cells = +0.0608 < +0.0680 floor)
+  - CALL_1B_F37_X06_DISCHARGED: False (X-06 on F-37 DISCHARGED)
+
+========================================================================================================
+PART 2A (F-39 Amendment / D-063 Resolution: Native-Segmenter HLT Across 3 Segmenters + s45 Physical Ink)
+========================================================================================================
+
+--- 2A-1. Native-Segmenter HLT_SEL on 15-Quire LOQO Across 3 Transliterations x 3 Segmenters (135 Folds) ---
+  Translit Segmenter      Mode        P1    P2    P3    P4    P5    P7  C2_MM   All7         MM_K50 [95% CI]        MM_K100 [95% CI]        MM_K200 [95% CI]  R_win(1)
+Traceback (most recent call last):
+  File "./s96_d063_amendments_and_triangulation_closures.py", line 1772, in <module>
+    main()
+  File "./s96_d063_amendments_and_triangulation_closures.py", line 1742, in main
+    r2a = run_part2a(voy_corpora)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "./s96_d063_amendments_and_triangulation_closures.py", line 927, in run_part2a
+    sel_key = fit_info["selected"]
+              ~~~~~~~~^^^^^^^^^^^^
+KeyError: 'selected'

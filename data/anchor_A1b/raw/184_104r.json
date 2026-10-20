@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:06:06.2272024Z",
+ "response": "{\n  \"PT\": \"MARGINAL\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"0\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"NA\",\n  \"J_shape\": \"NONE\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"0\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"EMPTY\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"2-9\",\n  \"C_rings\": \"4+\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"0\",\n  \"B_figures\": \"0\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Page filled with small drawings and symbols.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2425117900,
+ "load_duration": 157565900,
+ "prompt_eval_count": 3182,
+ "prompt_eval_duration": 697933000,
+ "eval_count": 199,
+ "eval_duration": 1450491000,
+ "stem": "184_104r"
+}

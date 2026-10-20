@@ -1,0 +1,202 @@
+S89: line-repetition genres (arm A) and a line-scoped pool producer, LOQO (arm B), vs the four-part core signature
+date: Sun Oct 18 06:40:25 PDT 2026 (`date`)
+device: cuda (NVIDIA GeForce RTX 5080); torch 2.11.0.dev20260115+cu128; numpy 2.4.6; python 3.11.9; priority BelowNormal set=True; arm B on 2 worker processes (BelowNormal, GPU shared)
+s89_line_repetition_genres.py sha256=037282e31f57ce2c2091e8fbce5e7488ede231c715cf38c7e4c2d86caa5c305a
+prereg stub s89_line_repetition_genres.prereg.sha256 sha256=6c386701ae2b4abf634479a1627547b7cea766d0772ee53e2247872ff983bb24  stub_match=True
+  hashed a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  hashed a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  hashed b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  hashed b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  hashed c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  hashed c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  hashed c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  hashed c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  hashed corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  hashed f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  hashed f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  hashed f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  hashed g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  hashed m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  hashed m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  hashed n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  hashed p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  hashed p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  hashed s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  hashed s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  hashed s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  hashed s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  hashed s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  hashed s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  hashed s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  hashed s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  hashed s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  hashed s87_core_layer_genre.py sha256=d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db
+  hashed s89_line_repetition_genres.py sha256=037282e31f57ce2c2091e8fbce5e7488ede231c715cf38c7e4c2d86caa5c305a
+  hashed scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  hashed scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  hashed tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  hashed vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+  hashed data/external/genre-s89/pg7000_kalevala.txt sha256=23e57fdc123b738f49e31a68ceef2b74b77a83baa0359ffd820f682905283631
+  hashed data/external/genre-s89/horaeeboracenses00surtuoft_djvu.txt sha256=ebf9ae94c49a8eb7c1b253688c5950910744da20425be1e80b969228ce3503e1
+  hashed data/external/genre-s89/4617_djvu.txt sha256=e42bf4aedd3724f9abec85dcd59647f8fc40c1b449900ed8c0f0e91b44f0180f
+  hashed data/external/genre-s89/carminagadelicah01carm_0_djvu.txt sha256=d55a7d6847e8d25e43f35a27c242e157c118bab817ba849a80dbb9dffb14d976
+  hashed data/external/genre-s89/sinonomabartholo01mirfuoft_djvu.txt sha256=7b027352d3e9c22a123c24ef896f7748594f98551c8b8511e6c206fbf03059a9
+  hashed data/external/genre-s89/promptoriumparvu00galfuoft_djvu.txt sha256=d52c9c76b68920cce9d4479b953f76311f59106ca5beec2e9f43eb02ccff27e7
+  hashed data/external/genre-s87/alphitaamedicob00mowagoog_djvu.txt sha256=474fd50cd2058918f4828fa5c422ec595afe017aea50004c3591365d47786f87
+  hashed data/controls/trithemius_steganographia_1608.txt sha256=fb7a0274738ee07fe09945fb4b6ec25e9355aaeb194fd3d2bb53c43dabd9b4d1
+  hashed data/controls/enochian_keys_dee.txt sha256=d0df8c682d243f173226e418001d32cc3de3a87d510f007358a5514aa0ebd0eb
+  hashed data/controls_realline/cremma_Egerton821.meta.json sha256=93b17f09780463cc473e28ce8da72b1654f759862d9b78ebeeba13377f14770d
+  hashed data/controls_realline/cremma_SBB_PK_Hdschr25.meta.json sha256=6e9d3cff082b0416b8b12984c88e363c78882eba7edd926344ff052d9ce60539
+  hashed data/controls_realline/cremma_H318.meta.json sha256=2f2622c1dac3b18f3887fde949655a0b081dbf90288b951536b13511753c7344
+  hashed data/controls_realline/cremma_CLM13027.meta.json sha256=3516de0a3f8dbec641d1596463fa38fd2e78f17ffc3ffbe666ced10ae06883d4
+  hashed data/controls_realline/cremma_Latin16195.meta.json sha256=f39f27e883b750cc48513d3c5aee5d16d226b9beecd75dccdecd6ec247405344
+  hashed data/controls_realline/cremma_Phi_10a135.meta.json sha256=ea4bbb72122fde9247306fe16b4e292a81e344e12712028dcbe2f2d7f3c7d2c6
+  hashed data/controls_realline/cremma_BIS-193.meta.json sha256=068005c8cc843880a1c40ecff2598d69b44748ff4a103b7d7559506f63f4d7e6
+  hashed data/controls_realline/cremma_Mazarine915.meta.json sha256=dbd349526e49b0fc29170660c8724ab5dcec1518ab6732272b9dde65175116a2
+  hashed data/controls_realline/cremma_UBL758.meta.json sha256=f21a07f7f222f034236186c1503b744ff2337c6620596c7b2dd2b9fb7c59c853
+  hashed data/controls_realline/cremma_WettF0015.meta.json sha256=263c2157d3dbc4f3ca9dd2d8c2182288e7815e3ebef36020abe77c84f3ec1cdf
+  hashed data/controls_realline/cremma_LaurPlut53.08.meta.json sha256=71051225ab529b98fbbdd1f7aacc7d915d82b51eba8977902810d8e08e6df51b
+  hashed data/controls_realline/cremma_LaurPlut53.09.meta.json sha256=0186ad0a7f0731b8aad4f3339fffb09923ddb861ce8e3e248a85e9e2e148cbd4
+  hashed data/controls_realline/cremma_Arras-861.meta.json sha256=3c41d5b07484afb81dd8ec1b027d340e2c17aeb1f89a7429543a75091bb7b961
+  hashed data/controls_realline/cremma_PalLat373.meta.json sha256=f949922838f9f2da0c524f654e388b3fba4ec85194d6e6a741f6c98c368aa4e8
+  hashed data/controls_realline/cremma_CCCC-MSS-165.meta.json sha256=2dd5cbab160ab6d403e46722f844ee46ddf16b3e0f138037a7b848b2e719026c
+  hashed data/translit/ZL3b_eva.meta.json sha256=ce233477803a865365e53418f5e2b78c324fa0ea124b0aa46a9eb6a5189f7ef0
+  hashed data/translit/RF1b.meta.json sha256=c7d9bccba99b2610b9d80b4ce5f26f7d1ab54c12ec2364d0423d6b89f51da9df
+  hashed data/translit/IT2a.meta.json sha256=0d0d3e758d1e308b0aee4b4d006f90cbc8090c081e0fcb3327de6734ac5e5fdf
+N_TOT 22500; N_match 4731 (frozen from s87 amendment 1); s87 counts {'N_SHUF_ORDER': 1000, 'N_SHUF_R': 1000, 'N_PERM_LOC': 500, 'N_BOOT': 2000}; fit counts {'N_SHUF_ORDER': 200, 'N_SHUF_R': 200, 'N_PERM_LOC': 100, 'N_BOOT': 200}; seed 20261089
+ORDER bands (S87.ORDER_BAND, frozen): K100 [+0.012321,+0.092252] K200 [-0.003465,+0.086474]
+
+LOCALITY band (recomputed from VOY, s87 rule): [0.9074, 1.0499]; s87 amendment 1 [0.9074, 1.0499] -> MATCH
+R_VOY (mean of 3): R_within(1) 1.197, R_cross(1) 0.627
+  V1 VOY_ZL3b: o100 +0.034 o200 +0.028 Rw1 1.180(p0.001) Rc1 0.564 loc 0.977 C1 YYYY -> PASS
+  V1 VOY_RF1b: o100 +0.020 o200 +0.009 Rw1 1.193(p0.001) Rc1 0.670 loc 0.977 C1 YYYY -> PASS
+  V1 VOY_IT2a: o100 +0.030 o200 +0.030 Rw1 1.217(p0.001) Rc1 0.646 loc 0.979 C1 YYYY -> PASS
+
+=== ARM A corpus list (class, gating, tokens, lines, label) ===
+  R_kalevala_fi            R  gating    tokens   68501 lines  22877 mean line  2.99  Kalevala, Finnish runo verse with charms (verse lines)
+  R_horae_ebor_la          R  gating    tokens   50495 lines   7121 mean line  7.09  Horae Eboracenses hours/litany/prayers, Latin, OCR lines
+  R_atharva_en             R  gating    tokens  122057 lines  16266 mean line  7.50  Atharva-Veda hymns and charms X-XX, English (Griffith), OCR lines
+  R_carmina_gd_en          R  gating    tokens   54209 lines   7379 mean line  7.35  Carmina Gadelica I hymns and incantations, Gaelic + English, OCR lines
+  R_steganographia_la      R  gating    tokens   44628 lines   6222 mean line  7.17  Trithemius Steganographia 1608 conjurations, Latin, OCR lines
+  R_enochian               R  UNMATCHED tokens    1306 lines     38 mean line 34.37  Enochian Keys/Calls (one Key per line)
+  R_egerton821_la          R  UNMATCHED tokens    1088 lines    114 mean line  9.54  CREMMA Egerton 821 sortes and charms, ms lines
+  R_hours_sbb_la           R  UNMATCHED tokens     958 lines    234 mean line  4.09  CREMMA SBB-PK Hdschr. 25 Book of Hours, ms lines
+  T_alphita_la             T  gating    tokens   29333 lines   6730 mean line  4.36  Alphita glossary, Latin, real OCR lines
+  T_promptorium_enm_la     T  gating    tokens   75518 lines  20704 mean line  3.65  Promptorium parvulorum English-Latin glossary columns, OCR lines <= 40 chars
+  T_sinonoma_la_en         T  UNMATCHED tokens    5432 lines   1367 mean line  3.97  Sinonoma Bartholomei glossary, OCR lines <= 48 chars
+  T_horae_kalendar_la      T  UNMATCHED tokens    2917 lines    584 mean line  4.99  Horae Eboracenses kalendar, Latin, OCR lines
+  N_cremma_H318            N  UNMATCHED tokens    4676 lines    414 mean line 11.29  CREMMA H318, Latin abbreviated graphemic, ms lines (medical)
+  N_cremma_CLM13027        N  UNMATCHED tokens    6732 lines    609 mean line 11.05  CREMMA CLM13027, Latin abbreviated graphemic, ms lines (medical)
+  N_cremma_Latin16195      N  UNMATCHED tokens    3993 lines    430 mean line  9.29  CREMMA Latin16195, Latin abbreviated graphemic, ms lines (medical)
+  N_cremma_Phi_10a135      N  UNMATCHED tokens    1718 lines    139 mean line 12.36  CREMMA Phi_10a135, Latin abbreviated graphemic, ms lines (medical)
+  N_cremma_BIS-193         N  UNMATCHED tokens    6981 lines    598 mean line 11.67  CREMMA BIS-193, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_Mazarine915     N  UNMATCHED tokens    4581 lines    418 mean line 10.96  CREMMA Mazarine915, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_UBL758          N  UNMATCHED tokens    4366 lines    469 mean line  9.31  CREMMA UBL758, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_WettF0015       N  UNMATCHED tokens    3498 lines    380 mean line  9.21  CREMMA WettF0015, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_LaurPlut53.08   N  UNMATCHED tokens    3319 lines    216 mean line 15.37  CREMMA LaurPlut53.08, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_LaurPlut53.09   N  UNMATCHED tokens    1323 lines    125 mean line 10.58  CREMMA LaurPlut53.09, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_Arras-861       N  UNMATCHED tokens    2478 lines    351 mean line  7.06  CREMMA Arras-861, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_PalLat373       N  UNMATCHED tokens    2248 lines    432 mean line  5.20  CREMMA PalLat373, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  N_cremma_CCCC-MSS-165    N  UNMATCHED tokens    1410 lines    148 mean line  9.53  CREMMA CCCC-MSS-165, Latin abbreviated graphemic, ms lines (prose; in s87 P)
+  R_pool                   R  gating    tokens   22521 lines   3853 mean line  5.85  ritual class pool of 8 members, water-filled quotas (max 3830 tokens)
+  T_pool                   T  gating    tokens   22503 lines   5571 mean line  4.04  tabular class pool of 4 members, water-filled quotas (max 7076 tokens)
+  N_pool                   N  gating    tokens   22549 lines   2403 mean line  9.38  abbreviated class pool of 13 members, water-filled quotas (max 1805 tokens)
+
+=== ARM A profiles (primary = whole words; C1 flags a order, b R_within, c R_cross<R_within, d locality) ===
+  R_kalevala_fi            tok  22500 ty  8865 | order MM K25 +0.092 K50 +0.107 K100 +0.110(p0.001) K200 +0.149(p0.001) K400 +0.131 | Rw1 0.142(p1.000) Rw2 2.20 Rw3 0.00 Rw5 2.54 Rc1 0.808 | loc 0.848[0.813,0.884] p0.002 typeR 0.854 | C1 nnnn - | D 4.56 [R; held-out 4454 < N_match]
+  R_horae_ebor_la          tok  22500 ty  6162 | order MM K25 +0.063 K50 +0.102 K100 +0.160(p0.001) K200 +0.267(p0.001) K400 +0.312 | Rw1 0.105(p1.000) Rw2 1.14 Rw3 1.41 Rw5 1.68 Rc1 0.196 | loc 0.878[0.812,0.933] p0.002 typeR 0.855 | C1 nnnn - | D 6.01 [R; held-out 4731]
+  R_atharva_en             tok  22500 ty  5428 | order MM K25 +0.131 K50 +0.175 K100 +0.223(p0.001) K200 +0.276(p0.001) K400 +0.315 | Rw1 0.059(p1.000) Rw2 0.81 Rw3 1.26 Rw5 1.59 Rc1 0.140 | loc 0.910[0.886,0.934] p0.002 typeR 0.880 | C1 nnnY - | D 7.40 [R; held-out 4731]
+  R_carmina_gd_en          tok  22500 ty  4446 | order MM K25 +0.167 K50 +0.240 K100 +0.354(p0.001) K200 +0.411(p0.001) K400 +0.469 | Rw1 0.140(p1.000) Rw2 0.89 Rw3 2.22 Rw5 1.21 Rc1 0.201 | loc 0.883[0.853,0.911] p0.002 typeR 0.812 | C1 nnnn - | D 7.00 [R; held-out 4731]
+  R_steganographia_la      tok  22500 ty 12998 | order MM K25 +0.023 K50 +0.019 K100 +0.042(p0.001) K200 +0.084(p0.001) K400 +0.106 | Rw1 0.532(p0.998) Rw2 1.35 Rw3 1.57 Rw5 1.47 Rc1 0.448 | loc 0.950[0.902,0.992] p0.002 typeR 0.976 | C1 YnYY - | D 1.82 [R; held-out 4731]
+  R_enochian               NOT PROFILABLE (descriptive, 1306 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify the reductio
+  R_egerton821_la          tok   1088 ty   603 | order MM K25 +0.046 K50 +0.046 K100 +0.096(p0.019) K200 +0.043(p0.210) K400 +0.100 | Rw1 2.029(p0.001) Rw2 2.15 Rw3 0.87 Rw5 1.51 Rc1 0.000 | loc 0.885[0.767,1.009] p0.002 typeR 0.942 | C1 nYYn - | D 12.97 [R, UNMATCHED; held-out 450 < N_match]
+  R_hours_sbb_la           tok    958 ty   591 | order MM K25 +0.016 K50 +0.079 K100 +0.055(p0.275) K200 +0.083(p0.186) K400 +0.162 | Rw1 0.240(p0.981) Rw2 0.99 Rw3 1.09 Rw5 0.00 Rc1 0.874 | loc 0.949[0.851,1.063] p0.002 typeR 0.967 | C1 YnnY - | D 3.32 [R, UNMATCHED; held-out 193 < N_match]
+  T_alphita_la             tok  22500 ty  8769 | order MM K25 +0.194 K50 +0.218 K100 +0.306(p0.001) K200 +0.325(p0.001) K400 +0.355 | Rw1 0.088(p1.000) Rw2 1.30 Rw3 1.08 Rw5 1.53 Rc1 0.072 | loc 0.927[0.906,0.946] p0.002 typeR 0.952 | C1 nnYY - | D 7.89 [T; held-out 4528 < N_match]
+  T_promptorium_enm_la     tok  22500 ty 13161 | order MM K25 +0.084 K50 +0.107 K100 +0.139(p0.001) K200 +0.142(p0.001) K400 +0.171 | Rw1 0.096(p1.000) Rw2 1.30 Rw3 1.78 Rw5 2.38 Rc1 0.094 | loc 0.765[0.744,0.789] p0.002 typeR 0.931 | C1 nnYn - | D 6.63 [T; held-out 4597 < N_match]
+  T_sinonoma_la_en         tok   5432 ty  2781 | order MM K25 +0.042 K50 +0.083 K100 +0.119(p0.001) K200 +0.142(p0.001) K400 +0.161 | Rw1 0.077(p1.000) Rw2 0.76 Rw3 1.62 Rw5 3.25 Rc1 0.369 | loc 0.920[0.891,0.949] p0.002 typeR 0.954 | C1 nnnY - | D 5.75 [T, UNMATCHED; held-out 1206 < N_match]
+  T_horae_kalendar_la      tok   2917 ty  1405 | order MM K25 +0.081 K50 +0.238 K100 +0.217(p0.001) K200 +0.172(p0.001) K400 +0.215 | Rw1 0.051(p1.000) Rw2 0.56 Rw3 1.31 Rw5 0.85 Rc1 0.000 | loc 0.914[0.852,0.973] p0.002 typeR 0.936 | C1 nnYY - | D 14.56 [T, UNMATCHED; held-out 639 < N_match]
+  N_cremma_H318            tok   4676 ty  1889 | order MM K25 +0.021 K50 +0.034 K100 +0.047(p0.069) K200 +0.074(p0.025) K400 +0.122 | Rw1 0.056(p1.000) Rw2 1.06 Rw3 1.48 Rw5 1.27 Rc1 0.215 | loc 0.817[0.749,0.887] p0.002 typeR 0.863 | C1 Ynnn - | D 6.60 [N, UNMATCHED; held-out 915 < N_match]
+  N_cremma_CLM13027        tok   6732 ty  3052 | order MM K25 +0.058 K50 +0.078 K100 +0.096(p0.001) K200 +0.155(p0.001) K400 +0.129 | Rw1 0.085(p1.000) Rw2 1.14 Rw3 1.34 Rw5 1.22 Rc1 0.163 | loc 0.867[0.785,0.950] p0.002 typeR 0.897 | C1 nnnn - | D 6.11 [N, UNMATCHED; held-out 1617 < N_match]
+  N_cremma_Latin16195      tok   3993 ty  1349 | order MM K25 +0.028 K50 +0.091 K100 +0.142(p0.001) K200 +0.231(p0.001) K400 +0.273 | Rw1 0.171(p1.000) Rw2 0.70 Rw3 1.18 Rw5 1.03 Rc1 0.227 | loc 0.876[0.820,0.929] p0.002 typeR 0.855 | C1 nnnn - | D 4.94 [N, UNMATCHED; held-out 720 < N_match]
+  N_cremma_Phi_10a135      tok   1718 ty  1031 | order MM K25 +0.031 K50 +0.067 K100 +0.075(p0.008) K200 +0.160(p0.001) K400 +0.217 | Rw1 0.121(p1.000) Rw2 1.71 Rw3 1.90 Rw5 1.67 Rc1 1.558 | loc 0.917[0.847,0.981] p0.002 typeR 0.956 | C1 nnnY - | D 5.10 [N, UNMATCHED; held-out 614 < N_match]
+  N_cremma_BIS-193         tok   6981 ty  2019 | order MM K25 +0.033 K50 +0.049 K100 +0.049(p0.026) K200 +0.059(p0.039) K400 +0.129 | Rw1 0.237(p1.000) Rw2 0.92 Rw3 1.25 Rw5 1.36 Rc1 0.248 | loc 0.924[0.890,0.953] p0.002 typeR 0.899 | C1 YnnY - | D 3.76 [N, UNMATCHED; held-out 1403 < N_match]
+  N_cremma_Mazarine915     tok   4581 ty  1329 | order MM K25 +0.032 K50 +0.072 K100 +0.183(p0.001) K200 +0.194(p0.001) K400 +0.174 | Rw1 0.279(p1.000) Rw2 1.06 Rw3 1.36 Rw5 1.50 Rc1 0.000 | loc 0.949[0.891,1.004] p0.002 typeR 0.922 | C1 nnYY - | D 13.40 [N, UNMATCHED; held-out 994 < N_match]
+  N_cremma_UBL758          tok   4366 ty  2147 | order MM K25 +0.027 K50 +0.093 K100 +0.133(p0.001) K200 +0.098(p0.008) K400 +0.089 | Rw1 0.000(p1.000) Rw2 0.54 Rw3 1.06 Rw5 2.16 Rc1 0.000 | loc 0.892[0.850,0.937] p0.002 typeR 0.920 | C1 nnnn - | D 19.23 [N, UNMATCHED; held-out 1029 < N_match]
+  N_cremma_WettF0015       tok   3498 ty  1108 | order MM K25 +0.066 K50 +0.124 K100 +0.113(p0.002) K200 +0.128(p0.002) K400 +0.145 | Rw1 0.348(p1.000) Rw2 0.83 Rw3 1.30 Rw5 1.04 Rc1 0.258 | loc 0.906[0.864,0.941] p0.002 typeR 0.896 | C1 nnYn - | D 3.27 [N, UNMATCHED; held-out 741 < N_match]
+  N_cremma_LaurPlut53.08   tok   3319 ty  1686 | order MM K25 -0.001 K50 +0.013 K100 +0.030(p0.161) K200 +0.002(p0.473) K400 +0.039 | Rw1 0.146(p1.000) Rw2 1.63 Rw3 1.12 Rw5 2.10 Rc1 1.078 | loc 0.844[0.813,0.874] p0.002 typeR 0.904 | C1 Ynnn - | D 4.47 [N, UNMATCHED; held-out 779 < N_match]
+  N_cremma_LaurPlut53.09   tok   1323 ty   773 | order MM K25 -0.011 K50 +0.008 K100 -0.007(p0.572) K200 +0.029(p0.265) K400 +0.079 | Rw1 0.480(p0.947) Rw2 1.62 Rw3 1.86 Rw5 1.65 Rc1 0.000 | loc 0.793[0.740,0.850] p0.002 typeR 0.918 | C1 nnYn - | D 13.11 [N, UNMATCHED; held-out 500 < N_match]
+  N_cremma_Arras-861       tok   2478 ty  1429 | order MM K25 +0.023 K50 +0.023 K100 -0.017(p0.648) K200 +0.009(p0.434) K400 +0.046 | Rw1 0.115(p1.000) Rw2 1.78 Rw3 2.15 Rw5 1.31 Rc1 0.000 | loc 0.918[0.855,0.988] p0.002 typeR 0.960 | C1 nnYY - | D 13.77 [N, UNMATCHED; held-out 588 < N_match]
+  N_cremma_PalLat373       tok   2248 ty  1099 | order MM K25 +0.036 K50 +0.012 K100 +0.009(p0.443) K200 +0.026(p0.330) K400 +0.066 | Rw1 0.000(p1.000) Rw2 0.94 Rw3 0.67 Rw5 0.51 Rc1 0.000 | loc 0.885[0.836,0.942] p0.002 typeR 0.920 | C1 nnnn - | D 19.21 [N, UNMATCHED; held-out 417 < N_match]
+  N_cremma_CCCC-MSS-165    tok   1410 ty   629 | order MM K25 +0.081 K50 +0.119 K100 +0.087(p0.028) K200 +0.214(p0.001) K400 +0.203 | Rw1 0.511(p0.975) Rw2 1.82 Rw3 2.36 Rw5 1.70 Rc1 0.803 | loc 0.824[0.715,0.921] p0.002 typeR 0.897 | C1 nnnn - | D 2.68 [N, UNMATCHED; held-out 495 < N_match]
+  R_pool                   tok  22500 ty 10540 | order MM K25 +0.062 K50 +0.090 K100 +0.090(p0.001) K200 +0.131(p0.001) K400 +0.152 | Rw1 0.217(p1.000) Rw2 1.08 Rw3 1.66 Rw5 1.46 Rc1 0.291 | loc 0.665[0.575,0.763] p0.002 typeR 0.786 | C1 nnnn - | D 4.35 [R; held-out 4731]
+  T_pool                   tok  22500 ty 10890 | order MM K25 +0.056 K50 +0.076 K100 +0.117(p0.001) K200 +0.156(p0.001) K400 +0.180 | Rw1 0.103(p1.000) Rw2 0.99 Rw3 1.40 Rw5 1.65 Rc1 0.165 | loc 0.783[0.667,0.890] p0.002 typeR 0.874 | C1 nnnn - | D 5.89 [T; held-out 4474 < N_match]
+  N_pool                   tok  22500 ty  8276 | order MM K25 +0.018 K50 +0.030 K100 +0.033(p0.001) K200 +0.051(p0.001) K400 +0.075 | Rw1 0.238(p1.000) Rw2 1.08 Rw3 1.53 Rw5 1.46 Rc1 0.185 | loc 0.755[0.706,0.812] p0.002 typeR 0.811 | C1 YnYn - | D 4.30 [N; held-out 4731]
+
+=== ARM A secondary: SlotSegmenter stems (descriptive) ===
+  R_kalevala_fi/stem       tok  22500 ty  5351 | order MM K25 +0.036 K50 +0.104 K100 +0.188(p0.001) K200 +0.160(p0.001) K400 +0.165 | Rw1 0.723(p1.000) Rw2 1.33 Rw3 1.05 Rw5 2.06 Rc1 0.463 | loc 0.892[0.860,0.923] p0.002 typeR 0.867 | C1 nnYn - | D 2.32
+  R_horae_ebor_la/stem     tok  22500 ty  4045 | order MM K25 +0.082 K50 +0.142 K100 +0.211(p0.001) K200 +0.234(p0.001) K400 +0.249 | Rw1 0.453(p1.000) Rw2 1.11 Rw3 1.21 Rw5 1.43 Rc1 0.401 | loc 0.909[0.855,0.959] p0.002 typeR 0.870 | C1 nnYY - | D 3.40
+  R_atharva_en/stem        tok  22500 ty  3376 | order MM K25 +0.127 K50 +0.151 K100 +0.180(p0.001) K200 +0.191(p0.001) K400 +0.186 | Rw1 0.304(p1.000) Rw2 0.91 Rw3 1.19 Rw5 1.38 Rc1 0.422 | loc 0.931[0.907,0.955] p0.002 typeR 0.886 | C1 nnnY - | D 3.54
+  R_carmina_gd_en/stem     tok  22500 ty  2849 | order MM K25 +0.198 K50 +0.270 K100 +0.313(p0.001) K200 +0.339(p0.001) K400 +0.347 | Rw1 0.366(p1.000) Rw2 0.98 Rw3 1.71 Rw5 1.10 Rc1 0.440 | loc 0.910[0.885,0.938] p0.002 typeR 0.840 | C1 nnnY - | D 4.86
+  R_steganographia_la/stem tok  22500 ty  8895 | order MM K25 +0.014 K50 +0.030 K100 +0.048(p0.001) K200 +0.065(p0.001) K400 +0.080 | Rw1 1.169(p0.013) Rw2 1.14 Rw3 1.44 Rw5 1.51 Rc1 0.943 | loc 0.961[0.922,0.998] p0.002 typeR 0.979 | C1 YYYY VOYNICH-LIKE | D 0.86
+  R_egerton821_la/stem     tok   1088 ty   338 | order MM K25 +0.043 K50 +0.040 K100 +0.104(p0.012) K200 +0.088(p0.048) K400 +0.123 | Rw1 1.679(p0.002) Rw2 1.47 Rw3 0.81 Rw5 0.99 Rc1 0.841 | loc 0.929[0.851,1.007] p0.002 typeR 0.948 | C1 nYYY - | D 1.20
+  R_hours_sbb_la/stem      tok    958 ty   381 | order MM K25 -0.058 K50 +0.021 K100 -0.057(p0.719) K200 -0.009(p0.531) K400 +0.036 | Rw1 0.708(p0.898) Rw2 0.82 Rw3 1.23 Rw5 2.92 Rc1 0.999 | loc 0.980[0.887,1.066] p0.058 typeR 0.981 | C1 nnnY - | D 1.93
+  T_alphita_la/stem        tok  22500 ty  5925 | order MM K25 +0.191 K50 +0.227 K100 +0.265(p0.001) K200 +0.279(p0.001) K400 +0.278 | Rw1 0.362(p1.000) Rw2 1.21 Rw3 1.11 Rw5 1.62 Rc1 0.252 | loc 0.945[0.930,0.960] p0.002 typeR 0.948 | C1 nnYY - | D 4.51
+  T_promptorium_enm_la/stem tok  22500 ty  8239 | order MM K25 +0.076 K50 +0.088 K100 +0.093(p0.001) K200 +0.089(p0.001) K400 +0.085 | Rw1 0.649(p1.000) Rw2 1.48 Rw3 2.01 Rw5 3.15 Rc1 0.446 | loc 0.869[0.843,0.893] p0.002 typeR 0.925 | C1 nnYn - | D 1.69
+  T_sinonoma_la_en/stem    tok   5432 ty  1988 | order MM K25 +0.002 K50 +0.084 K100 +0.101(p0.002) K200 +0.124(p0.001) K400 +0.096 | Rw1 0.520(p0.999) Rw2 1.39 Rw3 1.48 Rw5 1.89 Rc1 0.620 | loc 0.936[0.909,0.963] p0.002 typeR 0.947 | C1 nnnY - | D 1.96
+  T_horae_kalendar_la/stem tok   2917 ty   976 | order MM K25 +0.101 K50 +0.255 K100 +0.231(p0.001) K200 +0.204(p0.001) K400 +0.194 | Rw1 0.524(p1.000) Rw2 0.72 Rw3 1.55 Rw5 0.98 Rc1 0.000 | loc 0.950[0.892,1.005] p0.002 typeR 0.945 | C1 nnYY - | D 13.27
+  N_cremma_H318/stem       tok   4676 ty  1203 | order MM K25 +0.043 K50 +0.025 K100 +0.033(p0.135) K200 +0.045(p0.101) K400 +0.153 | Rw1 0.535(p1.000) Rw2 1.09 Rw3 1.30 Rw5 1.08 Rc1 0.232 | loc 0.879[0.824,0.931] p0.002 typeR 0.872 | C1 YnYn - | D 2.65
+  N_cremma_CLM13027/stem   tok   6732 ty  1746 | order MM K25 +0.053 K50 +0.085 K100 +0.105(p0.001) K200 +0.114(p0.001) K400 +0.101 | Rw1 0.533(p1.000) Rw2 1.07 Rw3 1.07 Rw5 1.15 Rc1 1.098 | loc 0.917[0.861,0.976] p0.002 typeR 0.896 | C1 nnnY - | D 2.22
+  N_cremma_Latin16195/stem tok   3993 ty   747 | order MM K25 +0.114 K50 +0.143 K100 +0.193(p0.001) K200 +0.231(p0.001) K400 +0.221 | Rw1 0.673(p1.000) Rw2 0.83 Rw3 1.27 Rw5 1.17 Rc1 0.396 | loc 0.905[0.854,0.951] p0.002 typeR 0.866 | C1 nnYn - | D 2.91
+  N_cremma_Phi_10a135/stem tok   1718 ty   669 | order MM K25 +0.043 K50 +0.108 K100 +0.110(p0.002) K200 +0.134(p0.001) K400 +0.155 | Rw1 0.660(p0.969) Rw2 1.37 Rw3 1.24 Rw5 1.36 Rc1 1.686 | loc 0.961[0.901,1.019] p0.008 typeR 0.969 | C1 nnnY - | D 2.58
+  N_cremma_BIS-193/stem    tok   6981 ty   987 | order MM K25 +0.072 K50 +0.116 K100 +0.131(p0.001) K200 +0.133(p0.001) K400 +0.148 | Rw1 0.636(p1.000) Rw2 1.01 Rw3 1.08 Rw5 1.19 Rc1 0.679 | loc 0.945[0.919,0.972] p0.002 typeR 0.903 | C1 nnnY - | D 1.81
+  N_cremma_Mazarine915/stem tok   4581 ty   665 | order MM K25 +0.053 K50 +0.122 K100 +0.145(p0.001) K200 +0.143(p0.001) K400 +0.109 | Rw1 0.798(p0.995) Rw2 1.03 Rw3 1.20 Rw5 1.15 Rc1 0.952 | loc 0.961[0.907,1.012] p0.002 typeR 0.926 | C1 nnnY - | D 1.86
+  N_cremma_UBL758/stem     tok   4366 ty  1295 | order MM K25 +0.039 K50 +0.060 K100 +0.063(p0.015) K200 +0.090(p0.004) K400 +0.092 | Rw1 0.573(p1.000) Rw2 0.95 Rw3 0.89 Rw5 1.45 Rc1 1.303 | loc 0.935[0.900,0.968] p0.002 typeR 0.936 | C1 nnnY - | D 2.16
+  N_cremma_WettF0015/stem  tok   3498 ty   607 | order MM K25 +0.114 K50 +0.147 K100 +0.110(p0.002) K200 +0.118(p0.004) K400 +0.120 | Rw1 0.698(p0.999) Rw2 0.92 Rw3 1.23 Rw5 0.81 Rc1 0.657 | loc 0.927[0.895,0.955] p0.002 typeR 0.907 | C1 nnYY - | D 1.51
+  N_cremma_LaurPlut53.08/stem tok   3319 ty  1046 | order MM K25 +0.025 K50 -0.003 K100 -0.009(p0.622) K200 -0.004(p0.545) K400 +0.015 | Rw1 0.860(p0.873) Rw2 1.02 Rw3 1.01 Rw5 1.32 Rc1 0.887 | loc 0.886[0.832,0.944] p0.002 typeR 0.905 | C1 nnnn - | D 1.39
+  N_cremma_LaurPlut53.09/stem tok   1323 ty   532 | order MM K25 -0.009 K50 -0.003 K100 -0.016(p0.649) K200 -0.014(p0.614) K400 +0.008 | Rw1 1.016(p0.500) Rw2 1.57 Rw3 1.04 Rw5 1.18 Rc1 0.672 | loc 0.874[0.820,0.952] p0.002 typeR 0.919 | C1 nnYn - | D 1.20
+  N_cremma_Arras-861/stem  tok   2478 ty   824 | order MM K25 +0.016 K50 -0.039 K100 +0.016(p0.348) K200 +0.004(p0.468) K400 +0.017 | Rw1 0.775(p0.945) Rw2 1.52 Rw3 1.26 Rw5 1.01 Rc1 0.850 | loc 0.968[0.910,1.031] p0.002 typeR 0.967 | C1 YnnY - | D 1.20
+  N_cremma_PalLat373/stem  tok   2248 ty   684 | order MM K25 +0.081 K50 +0.101 K100 +0.084(p0.055) K200 +0.097(p0.044) K400 +0.044 | Rw1 0.353(p1.000) Rw2 0.93 Rw3 0.88 Rw5 1.30 Rc1 0.281 | loc 0.935[0.880,0.993] p0.002 typeR 0.919 | C1 nnYY - | D 3.01
+  N_cremma_CCCC-MSS-165/stem tok   1410 ty   452 | order MM K25 +0.070 K50 +0.170 K100 +0.238(p0.001) K200 +0.198(p0.001) K400 +0.216 | Rw1 0.899(p0.669) Rw2 1.36 Rw3 1.55 Rw5 1.28 Rc1 1.294 | loc 0.844[0.745,0.937] p0.002 typeR 0.890 | C1 nnnn - | D 3.15
+  R_pool/stem              tok  22500 ty  6748 | order MM K25 +0.079 K50 +0.110 K100 +0.136(p0.001) K200 +0.142(p0.001) K400 +0.159 | Rw1 0.629(p1.000) Rw2 1.20 Rw3 1.23 Rw5 1.21 Rc1 0.510 | loc 0.776[0.679,0.869] p0.002 typeR 0.809 | C1 nnYn - | D 2.31
+  T_pool/stem              tok  22500 ty  6876 | order MM K25 +0.065 K50 +0.085 K100 +0.116(p0.001) K200 +0.138(p0.001) K400 +0.136 | Rw1 0.572(p1.000) Rw2 1.20 Rw3 1.45 Rw5 1.36 Rc1 0.408 | loc 0.860[0.781,0.932] p0.002 typeR 0.884 | C1 nnYn - | D 2.22
+  N_pool/stem              tok  22500 ty  4471 | order MM K25 +0.023 K50 +0.032 K100 +0.025(p0.008) K200 +0.040(p0.002) K400 +0.065 | Rw1 0.688(p1.000) Rw2 1.00 Rw3 1.20 Rw5 1.23 Rc1 0.690 | loc 0.833[0.795,0.875] p0.002 typeR 0.827 | C1 Ynnn - | D 1.48
+
+=== ARM B: DEFERRED (not run under this stub): producer failed its own planted-instance fixture (FX1 4/15 after one revision; double-sampling locality bias) ===
+
+=== C1 (arm A, gating texts) ===
+  C1 R_kalevala_fi            R  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin, d_locality
+  C1 R_horae_ebor_la          R  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin, d_locality
+  C1 R_atharva_en             R  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin
+  C1 R_carmina_gd_en          R  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin, d_locality
+  C1 R_steganographia_la      R  no           fails: b_Rwithin
+  C1 R_egerton821_la          R  no           fails: a_order, d_locality  [UNMATCHED: descriptive, not in C1]
+  C1 R_hours_sbb_la           R  no           fails: b_Rwithin, c_Rcross<Rwithin  [UNMATCHED: descriptive, not in C1]
+  C1 T_alphita_la             T  no           fails: a_order, b_Rwithin
+  C1 T_promptorium_enm_la     T  no           fails: a_order, b_Rwithin, d_locality
+  C1 T_sinonoma_la_en         T  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin  [UNMATCHED: descriptive, not in C1]
+  C1 T_horae_kalendar_la      T  no           fails: a_order, b_Rwithin  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_H318            N  no           fails: b_Rwithin, c_Rcross<Rwithin, d_locality  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_CLM13027        N  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin, d_locality  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_Latin16195      N  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin, d_locality  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_Phi_10a135      N  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_BIS-193         N  no           fails: b_Rwithin, c_Rcross<Rwithin  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_Mazarine915     N  no           fails: a_order, b_Rwithin  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_UBL758          N  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin, d_locality  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_WettF0015       N  no           fails: a_order, b_Rwithin, d_locality  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_LaurPlut53.08   N  no           fails: b_Rwithin, c_Rcross<Rwithin, d_locality  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_LaurPlut53.09   N  no           fails: a_order, b_Rwithin, d_locality  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_Arras-861       N  no           fails: a_order, b_Rwithin  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_PalLat373       N  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin, d_locality  [UNMATCHED: descriptive, not in C1]
+  C1 N_cremma_CCCC-MSS-165    N  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin, d_locality  [UNMATCHED: descriptive, not in C1]
+  C1 R_pool                   R  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin, d_locality
+  C1 T_pool                   T  no           fails: a_order, b_Rwithin, c_Rcross<Rwithin, d_locality
+  C1 N_pool                   N  no           fails: b_Rwithin, d_locality
+  class R: 0/6 gating texts Voynich-like
+  class T: 0/3 gating texts Voynich-like
+  class N: 0/1 gating texts Voynich-like
+  C2 Voynich-like gating texts per class: R 0/6; T 0/3; N 0/1
+
+VERDICT: no line-repetition genre reproduces the core layer; closest text R_steganographia_la (R, D 1.82), failing: b_Rwithin
+
+sidecars: runs/s89/amend1/armA_profiles.csv, runs/s89/amend1/calls.json
+runtime 12 s; finished Sun Oct 18 06:40:37 PDT 2026 (`date`)

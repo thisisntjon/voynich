@@ -1,0 +1,17 @@
+# vx01_a1_metrics pre-registration stub (UNVERIFIED until the Independent Verifier signs)
+# frozen_at: 2026-10-18 22:56:06 (local) / 2026-10-19T05:56:06Z (UTC)
+# plan: PLAN-X01-v5.1 sha256 af4fee6b847caca46afd2456818d510e817cb09699b91034270ac7f4a6a75393 (IV-signed; this stub cites it)
+# task: script 2b: A1 metrics (boundary F1 token-weighted micro 0-glyph tolerance, exact triple, false structure, oracle parse, roll-up) and thresholds F1>=0.85 exact>=0.70 null<=0.05 books>=10/15 in 9 cells.
+# decision_rule (verbatim PLAN-X01-v5.1 line 70): 6. **Thresholds.** F1 >=0.85, exact triple >=0.70, null false-structure <=5%, >=10/15 are ARBITRARY BUT FIXED before any run, confirmed by Eve 2026-10-18 22:17 PDT, not tuned on data. Link to A2: F1 0.85 allows about 15% boundary error, so A2 injects error at the measured e and at 1.5 x e. The 10/15 gate is the project's D-068 rule.
+# decision_rule (verbatim PLAN-X01-v5.1 line 102): - *Metrics, token-weighted, per book.* Truth per token = (P, C, S); internal boundaries = glyph positions len(P) (if P non-empty) and len(P)+len(C) (if S non-empty). **Boundary F1:** micro-average over every token occurrence (token-weighted), exact position (0-glyph tolerance), precision and recall pooled, F1 of the pooled values. **Exact triple rate:** share of tokens with predicted (P, C, S) equal to truth. **False structure (NULL only):** share of tokens given a non-empty prefix OR suffix, per book. Type-weighted F1 reported, not gating. A token a segmenter drops (Zattera) counts as a miss.
+# decision_rule (verbatim PLAN-X01-v5.1 line 103): - *Oracle ceiling (dev books).* A dictionary parse knowing the true inventories must reach the thresholds on G1 and G2; otherwise the generator is redesigned on dev seeds before step 4 (code revision, rule 4).
+# decision_rule (verbatim PLAN-X01-v5.1 line 104): - *Roll-up.* Book = unit. A segmenter is ADEQUATE ON PLANTED BOOKS only if, in ALL 9 cells (3 sets x {G1, G2, NULL}), >=10 of 15 books pass: G1/G2 book passes if F1 >=0.85 AND exact >=0.70; NULL book passes if false structure <=5%. Strict by design; Slot may fail NULL (any glyph starting >=1% of tokens with high next-glyph entropy becomes a prefix).
+# threshold_rule: all thresholds exactly as written in the plan lines above; none is changed here.
+plan_sha256=af4fee6b847caca46afd2456818d510e817cb09699b91034270ac7f4a6a75393
+script_sha256=0b35605650a8af411d180905f9d5db0b30e2b985bf6d8877e14f5f1f0d5e94a9
+common_sha256=cd4e5960f6e4058fd75f63478be58acf3b27ac54c6168a818c2d19a89325360a
+gate_seeds_sha256=bd9961f3510c7f4ae50f45a693ff73b143447f89fdc1c10d7ed95cfb1068a3dd
+dev_log_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+# dev_log: none (library module, never started directly; the top-level script's dev log applies)
+0b35605650a8af411d180905f9d5db0b30e2b985bf6d8877e14f5f1f0d5e94a9  vx01_a1_metrics.py
+cd4e5960f6e4058fd75f63478be58acf3b27ac54c6168a818c2d19a89325360a  vx01_common.py

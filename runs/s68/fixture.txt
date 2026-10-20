@@ -1,0 +1,578 @@
+#=IVTFF Eva- 2.0 M 3
+# s68 synthetic fixture: hand 1 (A) has a planted 2-state switch, hands 2 and 3 (B) are one state each
+<f1r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f1r.1,@P0>      dal.otedy.sho.chekey.daiin.chol.chol.okal
+<f1r.2,+P0>      lkam.lkam.ar.sho.cho.shedy.ar.chor
+<f1r.3,+P0>      chody.shody.shedy.chey.otedy.lkam.ar.daiin
+<f1r.4,+P0>      okal.chody.chor.shey.chedy.okal.okal.shody
+<f1r.5,+P0>      shody.daiin.cho.ol.okal.qokaiin.okal.otedy
+<f1r.6,+P0>      shody.otedy.chekey.dal.sho.shey.chol.ol
+<f1r.7,+P0>      shody.chey.dal.ar.dal.ol.lkam.ol
+<f1r.8,+P0>      lkam.chekey.cheol.shody.otedy.daiin.otedy.okal
+<f1v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f1v.1,@P0>      chekey.chedy.lkam.shedy.qokaiin.ar.otedy.okal
+<f1v.2,+P0>      okal.shedy.chey.chey.dal.ol.ol.dal
+<f1v.3,+P0>      ol.shey.shey.otedy.chekey.ar.ar.ol
+<f1v.4,+P0>      chedy.chor.cheol.lkam.cheol.lkam.lkam.chody
+<f1v.5,+P0>      cheol.shey.chey.qokaiin.shedy.otedy.ar.dal
+<f1v.6,+P0>      chedy.daiin.otedy.chekey.sho.dal.chedy.cheol
+<f1v.7,+P0>      ar.qokaiin.ol.shedy.otedy.lkam.shey.lkam
+<f1v.8,+P0>      chol.shedy.otedy.chedy.okal.cho.dal.cheol
+<f2r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f2r.1,@P0>      ol.sho.chol.lkam.sho.shody.shody.chody
+<f2r.2,+P0>      ar.chor.lkam.ar.chey.lkam.ol.chol
+<f2r.3,+P0>      lkam.sho.dal.chody.ar.dal.dal.otedy
+<f2r.4,+P0>      okal.ar.shedy.lkam.chol.chedy.daiin.ar
+<f2r.5,+P0>      lkam.ar.ol.chedy.qokaiin.qokaiin.ol.chody
+<f2r.6,+P0>      daiin.cho.chekey.qokaiin.chey.cho.chol.shody
+<f2r.7,+P0>      ol.otedy.shody.sho.lkam.chey.cho.shody
+<f2r.8,+P0>      shody.dal.shey.chody.chekey.chekey.chol.ar
+<f2v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f2v.1,@P0>      chedy.shedy.chey.lkam.lkam.dal.otedy.cheol
+<f2v.2,+P0>      lkam.qokaiin.otedy.ol.shey.daiin.ar.cheol
+<f2v.3,+P0>      lkam.dal.chey.dal.chedy.qokaiin.qokaiin.daiin
+<f2v.4,+P0>      cheol.chedy.otedy.cheol.daiin.chekey.daiin.shedy
+<f2v.5,+P0>      shey.chekey.otedy.dal.qokaiin.ar.ol.dal
+<f2v.6,+P0>      shey.ar.chey.lkam.cheol.ar.otedy.ar
+<f2v.7,+P0>      chekey.lkam.lkam.dal.ar.chedy.shedy.chekey
+<f2v.8,+P0>      cheol.otedy.shey.chekey.shey.shey.chedy.cheol
+<f3r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f3r.1,@P0>      chor.chor.lkam.cheol.ar.chol.chol.ar
+<f3r.2,+P0>      sho.okal.chedy.sho.chody.lkam.cho.ol
+<f3r.3,+P0>      shey.dal.ar.shody.cho.cho.chol.shey
+<f3r.4,+P0>      chol.cho.cho.ol.cho.chedy.shey.otedy
+<f3r.5,+P0>      chody.okal.chey.chody.cheol.otedy.lkam.dal
+<f3r.6,+P0>      qokaiin.otedy.sho.daiin.okal.ar.daiin.chol
+<f3r.7,+P0>      chody.ar.cheol.dal.cho.shody.daiin.shody
+<f3r.8,+P0>      lkam.ol.shedy.daiin.cho.chody.lkam.chor
+<f3v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f3v.1,@P0>      chekey.ol.qokaiin.cheol.qokaiin.chedy.qokaiin.qokaiin
+<f3v.2,+P0>      chey.chekey.chody.shey.chedy.qokaiin.okal.ol
+<f3v.3,+P0>      okal.chey.chedy.daiin.otedy.chekey.cheol.chey
+<f3v.4,+P0>      cheol.chody.shey.daiin.okal.okal.cheol.lkam
+<f3v.5,+P0>      otedy.shedy.shedy.okal.chekey.cheol.chedy.dal
+<f3v.6,+P0>      cheol.chekey.shey.chekey.chedy.chekey.shedy.shody
+<f3v.7,+P0>      cheol.cheol.shey.daiin.shedy.dal.sho.shey
+<f3v.8,+P0>      shey.ol.sho.ol.chedy.cheol.ar.ol
+<f4r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f4r.1,@P0>      chody.ar.dal.qokaiin.chol.otedy.chekey.cho
+<f4r.2,+P0>      otedy.daiin.lkam.daiin.chol.dal.okal.qokaiin
+<f4r.3,+P0>      cheol.otedy.sho.otedy.shedy.chedy.sho.chol
+<f4r.4,+P0>      chey.okal.okal.sho.cheol.chol.chody.dal
+<f4r.5,+P0>      chor.cho.chody.okal.shey.daiin.shody.qokaiin
+<f4r.6,+P0>      cho.otedy.chody.okal.chody.cho.chody.sho
+<f4r.7,+P0>      otedy.chedy.chol.otedy.otedy.cho.cho.qokaiin
+<f4r.8,+P0>      shody.chody.shedy.dal.daiin.cho.dal.lkam
+<f4v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f4v.1,@P0>      qokaiin.daiin.chol.dal.ol.chol.ol.chekey
+<f4v.2,+P0>      chedy.shedy.cheol.okal.otedy.shey.daiin.chey
+<f4v.3,+P0>      dal.daiin.dal.ar.qokaiin.chey.otedy.okal
+<f4v.4,+P0>      daiin.qokaiin.chekey.shey.ol.chey.cheol.daiin
+<f4v.5,+P0>      chekey.ol.shey.chekey.dal.ol.shedy.ol
+<f4v.6,+P0>      okal.daiin.ar.chol.chey.daiin.ar.otedy
+<f4v.7,+P0>      lkam.qokaiin.shey.otedy.okal.qokaiin.chol.qokaiin
+<f4v.8,+P0>      dal.chey.chekey.shedy.chedy.shey.otedy.qokaiin
+<f5r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f5r.1,@P0>      chedy.ar.okal.shody.ol.chey.sho.sho
+<f5r.2,+P0>      daiin.shey.ar.chor.ol.ar.shody.daiin
+<f5r.3,+P0>      okal.cheol.lkam.chedy.chor.dal.dal.chol
+<f5r.4,+P0>      lkam.ol.chekey.chekey.ar.cho.lkam.sho
+<f5r.5,+P0>      qokaiin.lkam.chol.chey.cheol.shedy.chekey.chey
+<f5r.6,+P0>      shody.chor.daiin.chody.daiin.ar.shey.okal
+<f5r.7,+P0>      daiin.chekey.chody.ol.qokaiin.chody.shey.okal
+<f5r.8,+P0>      daiin.chor.cheol.chor.chol.okal.sho.okal
+<f5v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f5v.1,@P0>      lkam.ar.shedy.shey.chey.okal.shey.daiin
+<f5v.2,+P0>      ol.shey.chol.chedy.okal.otedy.cheol.ar
+<f5v.3,+P0>      chedy.chekey.okal.ol.cheol.daiin.chedy.otedy
+<f5v.4,+P0>      sho.ar.okal.daiin.dal.otedy.otedy.chody
+<f5v.5,+P0>      okal.chey.daiin.okal.cheol.chekey.shey.shey
+<f5v.6,+P0>      ol.dal.chor.chedy.lkam.dal.shey.chekey
+<f5v.7,+P0>      cheol.shey.qokaiin.otedy.sho.dal.chey.shey
+<f5v.8,+P0>      ar.otedy.chedy.chedy.shey.shey.chedy.chekey
+<f6r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f6r.1,@P0>      otedy.ol.shody.chekey.ol.lkam.dal.ol
+<f6r.2,+P0>      sho.shody.daiin.lkam.chor.daiin.qokaiin.chor
+<f6r.3,+P0>      daiin.ar.cho.okal.dal.chekey.chol.chol
+<f6r.4,+P0>      dal.dal.otedy.ar.cho.ar.chody.sho
+<f6r.5,+P0>      lkam.chody.dal.qokaiin.chol.chol.chedy.chekey
+<f6r.6,+P0>      chol.chedy.otedy.chey.qokaiin.okal.lkam.dal
+<f6r.7,+P0>      shody.okal.shody.daiin.chey.qokaiin.qokaiin.chol
+<f6r.8,+P0>      lkam.sho.shedy.lkam.daiin.shedy.qokaiin.dal
+<f6v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f6v.1,@P0>      okal.ol.dal.chedy.chekey.ar.ol.dal
+<f6v.2,+P0>      shedy.chey.cheol.lkam.okal.chedy.chey.ol
+<f6v.3,+P0>      chekey.chekey.okal.shedy.chor.chedy.dal.otedy
+<f6v.4,+P0>      chekey.chey.chekey.daiin.cho.cheol.chey.ar
+<f6v.5,+P0>      okal.cheol.chol.shey.dal.lkam.shedy.chedy
+<f6v.6,+P0>      okal.chey.okal.dal.shey.shey.daiin.cheol
+<f6v.7,+P0>      qokaiin.otedy.chekey.dal.chekey.chey.dal.chekey
+<f6v.8,+P0>      okal.shedy.ol.cheol.okal.ar.ol.cho
+<f7r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f7r.1,@P0>      chol.chol.ol.chey.ar.chol.chedy.shody
+<f7r.2,+P0>      lkam.ol.otedy.lkam.chey.chol.cheol.shody
+<f7r.3,+P0>      chor.otedy.qokaiin.dal.cho.daiin.chol.shey
+<f7r.4,+P0>      cho.otedy.ar.shedy.okal.chor.chor.cho
+<f7r.5,+P0>      sho.sho.cho.lkam.chedy.lkam.ol.dal
+<f7r.6,+P0>      chol.sho.chol.dal.ol.qokaiin.okal.cho
+<f7r.7,+P0>      cho.chor.otedy.cheol.ar.cheol.lkam.sho
+<f7r.8,+P0>      ol.sho.dal.chol.chody.chody.chody.otedy
+<f7v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f7v.1,@P0>      cheol.chedy.ar.lkam.chey.okal.shedy.chekey
+<f7v.2,+P0>      chekey.shey.qokaiin.qokaiin.cheol.qokaiin.chey.chody
+<f7v.3,+P0>      ol.chedy.chedy.chedy.chekey.shey.shedy.shedy
+<f7v.4,+P0>      cheol.dal.lkam.chedy.chedy.chey.daiin.ol
+<f7v.5,+P0>      shey.daiin.cheol.otedy.lkam.shody.sho.chekey
+<f7v.6,+P0>      chody.chedy.qokaiin.ol.otedy.ol.qokaiin.shedy
+<f7v.7,+P0>      lkam.chedy.otedy.qokaiin.chey.chol.shey.shey
+<f7v.8,+P0>      shey.cheol.qokaiin.qokaiin.qokaiin.cheol.chedy.qokaiin
+<f8r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f8r.1,@P0>      lkam.ol.sho.ol.shody.chekey.chekey.lkam
+<f8r.2,+P0>      okal.dal.cho.sho.qokaiin.cheol.sho.lkam
+<f8r.3,+P0>      lkam.shey.chedy.cheol.cheol.chor.okal.shedy
+<f8r.4,+P0>      daiin.daiin.daiin.qokaiin.chey.lkam.cheol.dal
+<f8r.5,+P0>      chedy.chody.chor.sho.okal.ar.sho.shody
+<f8r.6,+P0>      chol.chody.dal.daiin.chol.lkam.ol.chody
+<f8r.7,+P0>      okal.otedy.qokaiin.ar.ol.otedy.otedy.chekey
+<f8r.8,+P0>      cheol.shey.sho.ar.chey.sho.okal.otedy
+<f8v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f8v.1,@P0>      cheol.shedy.qokaiin.ar.chekey.cheol.cho.lkam
+<f8v.2,+P0>      chey.lkam.dal.shedy.shey.shey.chekey.dal
+<f8v.3,+P0>      ar.otedy.lkam.ar.chedy.otedy.ar.cheol
+<f8v.4,+P0>      chekey.shey.cheol.okal.qokaiin.chedy.chor.shey
+<f8v.5,+P0>      ar.okal.ar.chor.chedy.dal.chedy.ar
+<f8v.6,+P0>      ar.okal.ol.cheol.shody.chey.ar.chey
+<f8v.7,+P0>      cheol.shey.okal.daiin.otedy.shedy.shey.chekey
+<f8v.8,+P0>      okal.chey.qokaiin.ol.shedy.daiin.shey.lkam
+<f9r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f9r.1,@P0>      ar.dal.chody.cho.shody.dal.sho.qokaiin
+<f9r.2,+P0>      qokaiin.chekey.ol.ol.qokaiin.chor.lkam.cho
+<f9r.3,+P0>      dal.cheol.qokaiin.qokaiin.qokaiin.ol.qokaiin.dal
+<f9r.4,+P0>      chor.lkam.qokaiin.okal.ol.shody.chor.sho
+<f9r.5,+P0>      shedy.dal.chody.ar.ol.chor.ol.chol
+<f9r.6,+P0>      daiin.ol.shedy.chedy.okal.cheol.cheol.otedy
+<f9r.7,+P0>      dal.okal.shey.shody.daiin.cheol.chekey.shody
+<f9r.8,+P0>      sho.dal.ol.ol.shedy.chekey.daiin.dal
+<f9v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f9v.1,@P0>      qokaiin.shedy.daiin.qokaiin.cheol.qokaiin.shey.chey
+<f9v.2,+P0>      shedy.shedy.daiin.otedy.chedy.chedy.daiin.chody
+<f9v.3,+P0>      otedy.otedy.chedy.cheol.shey.chey.chedy.cheol
+<f9v.4,+P0>      chedy.dal.shedy.lkam.ar.ol.dal.chekey
+<f9v.5,+P0>      chedy.chey.cheol.qokaiin.shedy.lkam.otedy.chekey
+<f9v.6,+P0>      lkam.dal.chor.lkam.cho.shedy.cheol.cho
+<f9v.7,+P0>      okal.shedy.ar.ol.chey.ol.chedy.shey
+<f9v.8,+P0>      chekey.daiin.cheol.shey.okal.dal.daiin.shey
+<f10r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f10r.1,@P0>      chor.otedy.shody.lkam.cheol.otedy.ar.chor
+<f10r.2,+P0>      chor.chey.sho.lkam.daiin.lkam.ar.chody
+<f10r.3,+P0>      chody.qokaiin.chody.shody.lkam.shody.shedy.cheol
+<f10r.4,+P0>      chedy.sho.cheol.otedy.ar.shey.ol.ar
+<f10r.5,+P0>      qokaiin.chody.sho.chol.otedy.dal.shody.okal
+<f10r.6,+P0>      chody.okal.dal.chody.otedy.lkam.shody.qokaiin
+<f10r.7,+P0>      okal.ol.sho.chor.chol.shedy.cho.chor
+<f10r.8,+P0>      lkam.okal.dal.daiin.dal.shody.okal.lkam
+<f10v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f10v.1,@P0>      chey.okal.okal.ar.ol.cheol.chedy.chekey
+<f10v.2,+P0>      lkam.daiin.chedy.daiin.chedy.qokaiin.chey.dal
+<f10v.3,+P0>      sho.otedy.daiin.otedy.lkam.chedy.chekey.shedy
+<f10v.4,+P0>      shey.lkam.daiin.shedy.qokaiin.chody.qokaiin.lkam
+<f10v.5,+P0>      okal.okal.shedy.cheol.shey.cheol.ol.shody
+<f10v.6,+P0>      ol.otedy.ar.daiin.daiin.shedy.chey.dal
+<f10v.7,+P0>      sho.qokaiin.sho.qokaiin.otedy.otedy.okal.chody
+<f10v.8,+P0>      dal.qokaiin.chedy.shey.daiin.okal.cheol.lkam
+<f11r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f11r.1,@P0>      lkam.otedy.cho.ol.shody.otedy.chey.lkam
+<f11r.2,+P0>      lkam.chody.sho.chol.shody.daiin.shody.otedy
+<f11r.3,+P0>      lkam.lkam.cho.chekey.cho.chody.dal.qokaiin
+<f11r.4,+P0>      chody.qokaiin.shedy.cho.dal.shody.okal.chey
+<f11r.5,+P0>      shey.chol.sho.chol.sho.ol.chekey.ar
+<f11r.6,+P0>      chor.okal.shody.daiin.shody.okal.dal.cho
+<f11r.7,+P0>      chedy.chedy.qokaiin.shody.okal.okal.otedy.chody
+<f11r.8,+P0>      chody.cho.chol.shody.otedy.dal.ar.dal
+<f11v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f11v.1,@P0>      daiin.chey.cheol.shey.ol.chedy.okal.ar
+<f11v.2,+P0>      lkam.otedy.daiin.okal.otedy.chey.chey.dal
+<f11v.3,+P0>      shey.chekey.chekey.shey.shey.chody.chekey.daiin
+<f11v.4,+P0>      shedy.qokaiin.chedy.shedy.ol.shedy.shey.okal
+<f11v.5,+P0>      otedy.shedy.shedy.shey.shey.otedy.shedy.shedy
+<f11v.6,+P0>      shody.chey.daiin.chey.shedy.lkam.ol.cheol
+<f11v.7,+P0>      qokaiin.chekey.chedy.shey.chey.ar.okal.chekey
+<f11v.8,+P0>      chey.cheol.ar.daiin.chedy.okal.ol.shey
+<f12r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f12r.1,@P0>      cho.lkam.ar.okal.ar.otedy.okal.chody
+<f12r.2,+P0>      otedy.ol.chol.chol.cheol.shey.otedy.cho
+<f12r.3,+P0>      chody.chor.ar.chor.cheol.cho.okal.cheol
+<f12r.4,+P0>      otedy.qokaiin.chey.cho.ar.lkam.chol.ar
+<f12r.5,+P0>      dal.chedy.chey.cheol.chor.chol.chey.qokaiin
+<f12r.6,+P0>      ol.lkam.ol.okal.dal.chol.shody.lkam
+<f12r.7,+P0>      chekey.daiin.ol.shedy.chor.chor.ar.daiin
+<f12r.8,+P0>      lkam.daiin.ol.dal.ol.daiin.chody.chedy
+<f12v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f12v.1,@P0>      otedy.daiin.shey.daiin.okal.cho.dal.daiin
+<f12v.2,+P0>      cheol.shedy.dal.chey.ar.chedy.ol.cheol
+<f12v.3,+P0>      chey.shedy.chey.dal.qokaiin.qokaiin.chekey.otedy
+<f12v.4,+P0>      lkam.daiin.cheol.ar.ar.cheol.otedy.daiin
+<f12v.5,+P0>      chedy.shedy.chekey.shey.chekey.ar.cheol.cheol
+<f12v.6,+P0>      lkam.chey.daiin.dal.okal.okal.sho.ol
+<f12v.7,+P0>      dal.shedy.chey.chor.ar.dal.chey.cheol
+<f12v.8,+P0>      okal.shey.chey.ar.dal.ar.chey.qokaiin
+<f13r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f13r.1,@P0>      ol.shody.daiin.chody.shey.cho.dal.ar
+<f13r.2,+P0>      lkam.ar.chody.sho.sho.chody.daiin.chor
+<f13r.3,+P0>      lkam.ol.ol.okal.chody.otedy.chol.dal
+<f13r.4,+P0>      cho.chol.ol.chedy.chekey.okal.sho.shey
+<f13r.5,+P0>      chol.shody.daiin.shey.cho.chekey.ar.chody
+<f13r.6,+P0>      otedy.shody.chol.ar.daiin.cho.cho.chody
+<f13r.7,+P0>      daiin.otedy.dal.chol.ol.cheol.ol.shody
+<f13r.8,+P0>      shey.lkam.otedy.cheol.chol.daiin.ol.qokaiin
+<f13v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f13v.1,@P0>      dal.daiin.shedy.otedy.chey.chor.shedy.qokaiin
+<f13v.2,+P0>      okal.ar.otedy.dal.shedy.chey.dal.cheol
+<f13v.3,+P0>      ar.chody.shedy.chedy.shey.ol.shedy.chekey
+<f13v.4,+P0>      daiin.ar.lkam.qokaiin.cho.chedy.chekey.otedy
+<f13v.5,+P0>      shedy.shedy.dal.daiin.ol.chedy.cheol.shedy
+<f13v.6,+P0>      qokaiin.chey.otedy.shey.chedy.chey.ar.chor
+<f13v.7,+P0>      chody.ar.shedy.chedy.shey.ol.ol.qokaiin
+<f13v.8,+P0>      ol.okal.chey.dal.cho.ol.shey.lkam
+<f14r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f14r.1,@P0>      lkam.lkam.chody.qokaiin.shedy.ol.okal.otedy
+<f14r.2,+P0>      chody.shey.otedy.dal.dal.dal.chey.ol
+<f14r.3,+P0>      daiin.lkam.lkam.otedy.chedy.otedy.cho.ar
+<f14r.4,+P0>      otedy.ar.otedy.cho.dal.chekey.shody.cheol
+<f14r.5,+P0>      dal.chody.dal.chody.ol.sho.okal.okal
+<f14r.6,+P0>      okal.daiin.daiin.otedy.chody.chody.ar.dal
+<f14r.7,+P0>      okal.okal.shody.otedy.ar.shey.dal.ol
+<f14r.8,+P0>      sho.cheol.lkam.qokaiin.chody.chedy.qokaiin.chey
+<f14v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f14v.1,@P0>      daiin.shedy.qokaiin.shedy.chol.okal.cheol.qokaiin
+<f14v.2,+P0>      dal.qokaiin.otedy.daiin.chekey.chekey.okal.chedy
+<f14v.3,+P0>      shey.otedy.dal.ar.ol.qokaiin.shey.sho
+<f14v.4,+P0>      lkam.qokaiin.chey.qokaiin.chekey.ol.ol.ol
+<f14v.5,+P0>      shedy.daiin.otedy.shey.chey.chey.lkam.shey
+<f14v.6,+P0>      shedy.chedy.cheol.chedy.chedy.ar.cheol.chekey
+<f14v.7,+P0>      dal.sho.qokaiin.otedy.ol.ar.lkam.otedy
+<f14v.8,+P0>      ol.cheol.shey.otedy.cho.chedy.chedy.cheol
+<f15r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f15r.1,@P0>      sho.shedy.chol.lkam.daiin.sho.ol.okal
+<f15r.2,+P0>      shedy.qokaiin.ar.lkam.chor.otedy.cho.lkam
+<f15r.3,+P0>      otedy.ar.lkam.okal.otedy.shody.ol.lkam
+<f15r.4,+P0>      sho.dal.cho.ol.chody.shody.sho.cho
+<f15r.5,+P0>      chol.otedy.cheol.sho.ol.chol.chor.chol
+<f15r.6,+P0>      ol.shedy.lkam.shedy.cheol.chedy.ar.otedy
+<f15r.7,+P0>      chody.shody.ol.sho.shody.ar.daiin.chor
+<f15r.8,+P0>      dal.ol.chody.chor.cho.sho.sho.chol
+<f15v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=A $H=1>
+<f15v.1,@P0>      chekey.ar.shody.daiin.chedy.cheol.chey.cheol
+<f15v.2,+P0>      shedy.cheol.chedy.shey.otedy.ar.daiin.qokaiin
+<f15v.3,+P0>      chedy.shey.dal.ar.okal.shey.chekey.okal
+<f15v.4,+P0>      daiin.otedy.chedy.cheol.chedy.dal.qokaiin.chody
+<f15v.5,+P0>      shedy.chedy.dal.ar.chedy.cheol.shey.chedy
+<f15v.6,+P0>      chol.lkam.chedy.shey.chekey.cheol.chey.shey
+<f15v.7,+P0>      shedy.shey.dal.lkam.chekey.cheol.otedy.chedy
+<f15v.8,+P0>      shey.okal.chor.okal.chekey.daiin.cheol.ol
+<f16r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f16r.1,@P0>      cho.sho.shedy.ar.shedy.dal.otedy.cho
+<f16r.2,+P0>      dal.daiin.shey.daiin.otedy.ol.cho.shey
+<f16r.3,+P0>      shody.daiin.okal.ar.dal.okal.chekey.otedy
+<f16r.4,+P0>      cheol.chey.daiin.cho.ar.qokaiin.okal.daiin
+<f16r.5,+P0>      shedy.chol.shody.sho.cheol.chekey.okal.chey
+<f16r.6,+P0>      shody.dal.ar.chor.cheol.chody.chody.okal
+<f16r.7,+P0>      shedy.chekey.dal.chor.shedy.cheol.chedy.okal
+<f16r.8,+P0>      okal.chey.daiin.chol.chol.chedy.dal.chekey
+<f16v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f16v.1,@P0>      lkam.qokaiin.chol.ol.shey.shedy.chody.cheol
+<f16v.2,+P0>      chody.cheol.chody.chody.shey.ol.lkam.okal
+<f16v.3,+P0>      lkam.ol.dal.sho.chedy.shedy.dal.chedy
+<f16v.4,+P0>      okal.shedy.daiin.chor.chedy.chey.shedy.sho
+<f16v.5,+P0>      cho.ar.chey.daiin.daiin.otedy.otedy.sho
+<f16v.6,+P0>      daiin.shody.lkam.qokaiin.sho.chey.chol.okal
+<f16v.7,+P0>      chol.cho.cheol.daiin.daiin.ar.shody.daiin
+<f16v.8,+P0>      chody.cheol.chody.shody.qokaiin.ol.shey.okal
+<f17r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f17r.1,@P0>      ar.daiin.dal.daiin.chol.okal.dal.otedy
+<f17r.2,+P0>      ar.chor.shody.daiin.okal.shedy.chedy.chey
+<f17r.3,+P0>      chedy.chol.shey.shey.shey.dal.okal.cheol
+<f17r.4,+P0>      shody.sho.chey.sho.chedy.qokaiin.cheol.chekey
+<f17r.5,+P0>      cho.daiin.chedy.ar.shey.okal.shody.ar
+<f17r.6,+P0>      shey.dal.sho.sho.dal.daiin.cho.shey
+<f17r.7,+P0>      daiin.chody.qokaiin.chekey.chedy.ar.qokaiin.cho
+<f17r.8,+P0>      sho.chol.chey.daiin.sho.chody.cheol.cho
+<f17v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f17v.1,@P0>      chekey.ar.ar.chedy.ar.sho.ar.qokaiin
+<f17v.2,+P0>      cho.cho.okal.chekey.sho.qokaiin.chedy.daiin
+<f17v.3,+P0>      shedy.cheol.lkam.cho.cheol.ar.dal.cheol
+<f17v.4,+P0>      qokaiin.lkam.ol.qokaiin.chor.chekey.chor.okal
+<f17v.5,+P0>      chey.ar.sho.daiin.chey.qokaiin.okal.chey
+<f17v.6,+P0>      daiin.chekey.sho.chor.chol.daiin.shey.otedy
+<f17v.7,+P0>      daiin.cho.sho.otedy.daiin.ol.ol.sho
+<f17v.8,+P0>      shey.cho.otedy.qokaiin.chedy.lkam.daiin.sho
+<f18r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f18r.1,@P0>      chody.shody.okal.lkam.sho.cheol.chol.okal
+<f18r.2,+P0>      okal.okal.sho.ol.chody.chol.dal.chekey
+<f18r.3,+P0>      chol.cho.chekey.daiin.daiin.ol.qokaiin.daiin
+<f18r.4,+P0>      cho.shey.sho.chody.otedy.okal.chedy.ar
+<f18r.5,+P0>      shody.otedy.qokaiin.sho.chor.sho.okal.ar
+<f18r.6,+P0>      sho.chody.dal.shey.okal.qokaiin.chekey.chey
+<f18r.7,+P0>      cheol.chekey.chekey.sho.cho.otedy.otedy.shedy
+<f18r.8,+P0>      ol.chol.chol.daiin.shedy.daiin.ol.daiin
+<f18v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f18v.1,@P0>      chor.cheol.shody.dal.lkam.ol.cheol.qokaiin
+<f18v.2,+P0>      ol.sho.otedy.ar.lkam.ar.shody.daiin
+<f18v.3,+P0>      chekey.okal.chey.cheol.daiin.chody.daiin.ar
+<f18v.4,+P0>      okal.ol.lkam.dal.dal.chody.dal.ar
+<f18v.5,+P0>      lkam.dal.ol.otedy.lkam.chey.chey.ar
+<f18v.6,+P0>      chekey.otedy.chedy.shedy.qokaiin.chekey.ar.ol
+<f18v.7,+P0>      lkam.chekey.qokaiin.qokaiin.chedy.dal.otedy.shey
+<f18v.8,+P0>      shody.qokaiin.shedy.dal.ol.chody.ol.okal
+<f19r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f19r.1,@P0>      ol.shey.dal.sho.shody.sho.chor.shey
+<f19r.2,+P0>      ar.chol.lkam.ar.dal.dal.chody.daiin
+<f19r.3,+P0>      ar.shey.shody.ar.chekey.chol.chey.chedy
+<f19r.4,+P0>      ol.shey.chody.ol.chedy.sho.daiin.cheol
+<f19r.5,+P0>      chekey.ol.shedy.ol.shedy.okal.chody.chody
+<f19r.6,+P0>      chedy.chody.chol.cho.dal.qokaiin.shody.chody
+<f19r.7,+P0>      otedy.shey.chedy.ol.chol.otedy.chedy.cho
+<f19r.8,+P0>      daiin.dal.dal.chol.chekey.ar.ar.lkam
+<f19v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f19v.1,@P0>      otedy.qokaiin.shedy.qokaiin.chedy.chekey.qokaiin.chor
+<f19v.2,+P0>      shody.dal.ol.chedy.qokaiin.sho.otedy.daiin
+<f19v.3,+P0>      ar.ol.shey.ar.shedy.shedy.shedy.otedy
+<f19v.4,+P0>      ol.okal.chedy.lkam.shey.cho.okal.ol
+<f19v.5,+P0>      chody.chody.ol.qokaiin.cheol.ar.chedy.shey
+<f19v.6,+P0>      ar.dal.chody.dal.qokaiin.ar.chedy.qokaiin
+<f19v.7,+P0>      otedy.qokaiin.chol.ar.shey.cho.sho.cho
+<f19v.8,+P0>      okal.ar.shody.chey.chor.qokaiin.ol.dal
+<f20r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f20r.1,@P0>      chedy.daiin.cheol.shey.qokaiin.chol.daiin.chody
+<f20r.2,+P0>      shey.chey.okal.shody.okal.otedy.shedy.lkam
+<f20r.3,+P0>      otedy.otedy.otedy.chor.chey.lkam.qokaiin.sho
+<f20r.4,+P0>      daiin.otedy.chor.lkam.lkam.shey.lkam.sho
+<f20r.5,+P0>      shody.lkam.sho.ol.sho.dal.chey.chey
+<f20r.6,+P0>      okal.qokaiin.ol.ar.ol.shey.qokaiin.okal
+<f20r.7,+P0>      chody.daiin.cheol.chody.chey.otedy.chedy.ol
+<f20r.8,+P0>      chey.ar.ol.okal.shedy.okal.cho.otedy
+<f20v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f20v.1,@P0>      dal.ar.ol.okal.dal.cho.daiin.dal
+<f20v.2,+P0>      daiin.shody.qokaiin.cheol.chekey.chekey.chedy.chekey
+<f20v.3,+P0>      ar.ol.chol.shey.shody.ar.otedy.okal
+<f20v.4,+P0>      chekey.qokaiin.dal.qokaiin.dal.chedy.otedy.chekey
+<f20v.5,+P0>      chedy.okal.okal.qokaiin.sho.shey.daiin.ar
+<f20v.6,+P0>      dal.dal.lkam.ol.cho.shody.okal.cho
+<f20v.7,+P0>      chekey.chedy.chody.chody.cho.cho.chey.cho
+<f20v.8,+P0>      chol.okal.dal.ar.dal.dal.shedy.okal
+<f21r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f21r.1,@P0>      otedy.daiin.chol.okal.shey.chol.ar.daiin
+<f21r.2,+P0>      shody.shey.daiin.chekey.shody.shody.dal.ol
+<f21r.3,+P0>      chor.chol.chody.shey.lkam.cheol.qokaiin.chor
+<f21r.4,+P0>      chor.chekey.daiin.chor.okal.chey.otedy.lkam
+<f21r.5,+P0>      ol.chedy.chedy.chey.shedy.daiin.chekey.chody
+<f21r.6,+P0>      chor.lkam.qokaiin.dal.chody.otedy.cheol.shody
+<f21r.7,+P0>      qokaiin.otedy.chor.shey.chey.qokaiin.chekey.okal
+<f21r.8,+P0>      shody.ol.ol.dal.shey.dal.ar.qokaiin
+<f21v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f21v.1,@P0>      ol.cheol.dal.shedy.sho.lkam.chedy.chor
+<f21v.2,+P0>      daiin.cheol.qokaiin.sho.ol.cheol.lkam.sho
+<f21v.3,+P0>      cho.ol.dal.ar.otedy.otedy.ar.dal
+<f21v.4,+P0>      ar.chody.shedy.chody.chekey.dal.lkam.okal
+<f21v.5,+P0>      daiin.chekey.lkam.okal.ar.shody.cho.ol
+<f21v.6,+P0>      ol.qokaiin.okal.chekey.shey.sho.chekey.okal
+<f21v.7,+P0>      lkam.otedy.cheol.chol.cheol.daiin.chody.ol
+<f21v.8,+P0>      qokaiin.daiin.ol.cho.lkam.shody.shedy.daiin
+<f22r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f22r.1,@P0>      qokaiin.lkam.chor.qokaiin.cho.otedy.chedy.chey
+<f22r.2,+P0>      lkam.ar.cheol.sho.otedy.okal.shedy.otedy
+<f22r.3,+P0>      chody.chey.cho.daiin.chedy.shedy.chey.chor
+<f22r.4,+P0>      dal.lkam.ar.chekey.chey.cheol.qokaiin.qokaiin
+<f22r.5,+P0>      shedy.daiin.shody.chekey.chol.chekey.qokaiin.otedy
+<f22r.6,+P0>      shedy.sho.chor.cheol.chekey.shedy.daiin.otedy
+<f22r.7,+P0>      otedy.lkam.chekey.daiin.ol.shody.qokaiin.shody
+<f22r.8,+P0>      chol.cho.chody.chey.otedy.chor.cho.otedy
+<f22v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f22v.1,@P0>      otedy.okal.okal.qokaiin.ar.sho.qokaiin.otedy
+<f22v.2,+P0>      chor.sho.okal.ol.cheol.shedy.chekey.sho
+<f22v.3,+P0>      sho.chody.shody.shey.dal.ol.ar.shey
+<f22v.4,+P0>      chey.daiin.chor.chekey.okal.chody.sho.otedy
+<f22v.5,+P0>      cho.dal.chedy.sho.qokaiin.ar.cho.dal
+<f22v.6,+P0>      ar.sho.chey.chedy.qokaiin.chedy.chekey.shey
+<f22v.7,+P0>      daiin.chol.sho.otedy.shey.daiin.chol.chedy
+<f22v.8,+P0>      sho.daiin.shody.qokaiin.shody.shedy.ol.dal
+<f23r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f23r.1,@P0>      ar.shedy.qokaiin.shody.shody.cheol.daiin.okal
+<f23r.2,+P0>      shedy.chedy.chey.otedy.chody.chol.ol.otedy
+<f23r.3,+P0>      dal.ol.okal.dal.ar.shody.shedy.qokaiin
+<f23r.4,+P0>      shey.otedy.chey.ar.cho.otedy.daiin.okal
+<f23r.5,+P0>      lkam.chor.sho.chey.lkam.chedy.okal.chekey
+<f23r.6,+P0>      qokaiin.shedy.daiin.chey.cheol.sho.shedy.ol
+<f23r.7,+P0>      lkam.shey.chedy.qokaiin.chor.qokaiin.dal.chor
+<f23r.8,+P0>      daiin.okal.okal.qokaiin.cho.shedy.dal.ar
+<f23v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f23v.1,@P0>      chol.cho.chol.dal.chedy.lkam.ol.ol
+<f23v.2,+P0>      otedy.qokaiin.ol.shedy.ol.chor.qokaiin.ar
+<f23v.3,+P0>      chey.okal.qokaiin.chol.chor.otedy.ar.shody
+<f23v.4,+P0>      lkam.chey.dal.chey.cho.dal.okal.daiin
+<f23v.5,+P0>      cho.chol.cheol.shody.qokaiin.chedy.qokaiin.okal
+<f23v.6,+P0>      chor.lkam.lkam.sho.shody.sho.chedy.lkam
+<f23v.7,+P0>      otedy.chedy.ol.otedy.shedy.daiin.qokaiin.shody
+<f23v.8,+P0>      chedy.dal.chedy.qokaiin.ar.daiin.qokaiin.sho
+<f24r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f24r.1,@P0>      qokaiin.chey.chekey.chedy.chedy.shody.okal.otedy
+<f24r.2,+P0>      chody.chol.shey.dal.lkam.shody.sho.chol
+<f24r.3,+P0>      shey.otedy.chey.otedy.dal.dal.daiin.daiin
+<f24r.4,+P0>      lkam.cho.cho.lkam.ar.shedy.shody.ar
+<f24r.5,+P0>      daiin.okal.chekey.chekey.okal.okal.cho.qokaiin
+<f24r.6,+P0>      daiin.shody.chey.chol.dal.ar.chor.dal
+<f24r.7,+P0>      chedy.okal.dal.ar.cho.chedy.dal.chey
+<f24r.8,+P0>      shey.ol.ar.dal.qokaiin.chor.lkam.lkam
+<f24v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f24v.1,@P0>      dal.okal.daiin.dal.qokaiin.lkam.chey.shey
+<f24v.2,+P0>      lkam.otedy.ol.otedy.chody.lkam.ol.okal
+<f24v.3,+P0>      dal.okal.chey.dal.shody.shedy.chekey.ol
+<f24v.4,+P0>      chody.dal.cheol.chor.daiin.shey.cheol.chekey
+<f24v.5,+P0>      chey.chedy.shey.daiin.chedy.otedy.chor.ar
+<f24v.6,+P0>      cheol.lkam.chor.lkam.chol.qokaiin.otedy.ol
+<f24v.7,+P0>      qokaiin.chor.chey.chol.dal.chor.shody.otedy
+<f24v.8,+P0>      chey.sho.shedy.ol.otedy.chor.okal.dal
+<f25r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f25r.1,@P0>      chor.otedy.chekey.daiin.daiin.cheol.qokaiin.otedy
+<f25r.2,+P0>      chekey.okal.qokaiin.qokaiin.ar.sho.shedy.chedy
+<f25r.3,+P0>      cho.cheol.dal.chor.okal.otedy.otedy.shedy
+<f25r.4,+P0>      shody.cheol.ar.qokaiin.chedy.ol.qokaiin.shody
+<f25r.5,+P0>      dal.chor.dal.shedy.chedy.chol.shey.chedy
+<f25r.6,+P0>      shedy.otedy.chekey.ol.chol.shey.cho.sho
+<f25r.7,+P0>      shedy.qokaiin.chol.daiin.sho.chody.cheol.daiin
+<f25r.8,+P0>      chey.lkam.lkam.chedy.cheol.okal.chor.otedy
+<f25v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=2>
+<f25v.1,@P0>      okal.dal.daiin.cheol.chekey.daiin.dal.daiin
+<f25v.2,+P0>      lkam.daiin.dal.ar.cho.chekey.chekey.ar
+<f25v.3,+P0>      okal.ar.ol.qokaiin.lkam.sho.okal.shedy
+<f25v.4,+P0>      chedy.cheol.dal.chekey.qokaiin.qokaiin.cho.chody
+<f25v.5,+P0>      chekey.shedy.cheol.ol.ar.qokaiin.shedy.ol
+<f25v.6,+P0>      ar.okal.chody.otedy.otedy.chor.cheol.lkam
+<f25v.7,+P0>      dal.sho.sho.shey.okal.lkam.chekey.lkam
+<f25v.8,+P0>      dal.chor.shey.okal.cho.okal.cho.ol
+<f26r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f26r.1,@P0>      ol.qokaiin.cho.ar.otedy.dal.cho.ar
+<f26r.2,+P0>      cho.dal.lkam.chedy.lkam.ol.qokaiin.cho
+<f26r.3,+P0>      shedy.cheol.ar.okal.chey.ar.chekey.cheol
+<f26r.4,+P0>      shey.okal.chekey.shey.dal.daiin.shedy.ol
+<f26r.5,+P0>      chey.shey.chey.okal.shedy.shey.shey.chedy
+<f26r.6,+P0>      shody.lkam.ar.otedy.chedy.okal.shedy.shedy
+<f26r.7,+P0>      chey.dal.cheol.ol.qokaiin.okal.shey.otedy
+<f26r.8,+P0>      qokaiin.ar.daiin.qokaiin.okal.dal.chekey.otedy
+<f26v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f26v.1,@P0>      otedy.sho.otedy.otedy.chey.shedy.daiin.chey
+<f26v.2,+P0>      ol.qokaiin.shedy.daiin.okal.lkam.ol.chol
+<f26v.3,+P0>      shody.dal.dal.okal.ar.ol.ar.ol
+<f26v.4,+P0>      ol.dal.daiin.ar.ol.ol.qokaiin.otedy
+<f26v.5,+P0>      lkam.chol.daiin.lkam.sho.chekey.ol.otedy
+<f26v.6,+P0>      otedy.ar.ar.daiin.shey.daiin.shedy.ol
+<f26v.7,+P0>      chedy.chekey.chekey.chekey.cheol.chody.chekey.chekey
+<f26v.8,+P0>      okal.chekey.okal.chedy.chekey.chekey.chey.ol
+<f27r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f27r.1,@P0>      chekey.okal.chey.ol.ar.qokaiin.ol.shey
+<f27r.2,+P0>      sho.shedy.otedy.cheol.otedy.daiin.ar.dal
+<f27r.3,+P0>      chedy.shedy.shey.lkam.cho.lkam.chody.chedy
+<f27r.4,+P0>      chey.dal.lkam.cheol.cho.otedy.daiin.daiin
+<f27r.5,+P0>      otedy.chedy.cheol.shey.chey.otedy.otedy.shedy
+<f27r.6,+P0>      cheol.chor.okal.chekey.ar.shedy.otedy.lkam
+<f27r.7,+P0>      ar.shey.cheol.chekey.chekey.lkam.otedy.okal
+<f27r.8,+P0>      shody.cheol.chedy.ar.qokaiin.ol.qokaiin.okal
+<f27v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f27v.1,@P0>      shey.chedy.otedy.otedy.cheol.okal.ol.dal
+<f27v.2,+P0>      daiin.otedy.chedy.shody.chedy.shey.dal.lkam
+<f27v.3,+P0>      ar.okal.ol.shey.otedy.chekey.sho.qokaiin
+<f27v.4,+P0>      ol.chey.sho.chekey.ol.lkam.otedy.chey
+<f27v.5,+P0>      lkam.shey.chedy.ol.chedy.shedy.lkam.chekey
+<f27v.6,+P0>      qokaiin.chol.chody.ol.chol.cho.chedy.qokaiin
+<f27v.7,+P0>      ol.chor.ar.otedy.daiin.chekey.cho.okal
+<f27v.8,+P0>      ar.cho.cheol.ol.shey.cho.ar.shey
+<f28r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f28r.1,@P0>      shedy.chey.chor.ar.cho.dal.shey.lkam
+<f28r.2,+P0>      chekey.shedy.chekey.ar.lkam.shody.lkam.lkam
+<f28r.3,+P0>      qokaiin.dal.chedy.lkam.cheol.otedy.chol.otedy
+<f28r.4,+P0>      chol.shedy.ar.chey.chor.lkam.chedy.shey
+<f28r.5,+P0>      dal.ol.chekey.okal.sho.chey.dal.dal
+<f28r.6,+P0>      otedy.dal.dal.dal.chey.chey.shey.qokaiin
+<f28r.7,+P0>      shedy.otedy.okal.shedy.chekey.okal.lkam.cheol
+<f28r.8,+P0>      cheol.okal.cho.shey.sho.shedy.chekey.okal
+<f28v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f28v.1,@P0>      sho.ol.dal.chey.cheol.dal.cheol.chody
+<f28v.2,+P0>      chekey.okal.dal.lkam.chody.chedy.otedy.ol
+<f28v.3,+P0>      shey.chekey.daiin.chekey.shey.otedy.shedy.okal
+<f28v.4,+P0>      otedy.shedy.dal.chedy.shody.daiin.cho.dal
+<f28v.5,+P0>      qokaiin.qokaiin.chekey.ar.lkam.otedy.chedy.qokaiin
+<f28v.6,+P0>      lkam.ol.sho.ol.okal.ol.daiin.otedy
+<f28v.7,+P0>      chedy.lkam.lkam.chedy.ol.otedy.shey.ar
+<f28v.8,+P0>      chol.chol.ar.cheol.chey.otedy.ol.qokaiin
+<f29r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f29r.1,@P0>      chody.chody.cheol.shedy.otedy.shey.shedy.shey
+<f29r.2,+P0>      otedy.shey.sho.chol.okal.daiin.ar.chey
+<f29r.3,+P0>      ar.shey.ar.dal.shedy.chekey.otedy.otedy
+<f29r.4,+P0>      okal.ar.cho.qokaiin.okal.cheol.chey.chol
+<f29r.5,+P0>      chey.chedy.dal.lkam.sho.chor.okal.qokaiin
+<f29r.6,+P0>      ar.okal.chekey.okal.cheol.chekey.lkam.ol
+<f29r.7,+P0>      dal.chedy.chey.daiin.otedy.lkam.daiin.ol
+<f29r.8,+P0>      qokaiin.qokaiin.chedy.shey.daiin.daiin.daiin.dal
+<f29v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f29v.1,@P0>      cheol.ar.ol.ol.lkam.sho.qokaiin.chey
+<f29v.2,+P0>      chol.chey.cheol.cho.qokaiin.shody.chekey.dal
+<f29v.3,+P0>      chey.shedy.dal.shody.otedy.otedy.qokaiin.ar
+<f29v.4,+P0>      qokaiin.ar.chey.chekey.daiin.chekey.chody.daiin
+<f29v.5,+P0>      shedy.chedy.cheol.chedy.okal.qokaiin.cheol.shedy
+<f29v.6,+P0>      cho.qokaiin.ol.chedy.chey.chey.chol.ol
+<f29v.7,+P0>      qokaiin.daiin.chey.shey.chor.okal.chekey.dal
+<f29v.8,+P0>      otedy.qokaiin.chor.chor.dal.chekey.chedy.chor
+<f30r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f30r.1,@P0>      dal.okal.daiin.chekey.cheol.shey.ol.chedy
+<f30r.2,+P0>      okal.chedy.otedy.ar.okal.daiin.chor.chekey
+<f30r.3,+P0>      otedy.qokaiin.lkam.daiin.cheol.shedy.ol.shody
+<f30r.4,+P0>      ol.chekey.chor.otedy.dal.chor.chekey.dal
+<f30r.5,+P0>      okal.cheol.ar.ol.ol.daiin.shedy.otedy
+<f30r.6,+P0>      otedy.chekey.cho.chey.okal.chekey.chey.shedy
+<f30r.7,+P0>      chol.otedy.chey.shedy.ol.cheol.chedy.qokaiin
+<f30r.8,+P0>      shedy.dal.okal.lkam.shey.okal.dal.shedy
+<f30v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f30v.1,@P0>      dal.chey.ar.ar.qokaiin.chedy.dal.cheol
+<f30v.2,+P0>      daiin.chekey.shedy.shedy.dal.shey.ol.chol
+<f30v.3,+P0>      ar.okal.chor.shody.shey.qokaiin.cho.chor
+<f30v.4,+P0>      sho.shedy.shedy.otedy.otedy.shedy.lkam.qokaiin
+<f30v.5,+P0>      cheol.chol.dal.otedy.qokaiin.shedy.ar.chor
+<f30v.6,+P0>      shody.chey.okal.dal.qokaiin.chedy.ol.dal
+<f30v.7,+P0>      otedy.cheol.ol.okal.shedy.otedy.ol.qokaiin
+<f30v.8,+P0>      ol.daiin.shedy.qokaiin.ar.otedy.ar.otedy
+<f31r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f31r.1,@P0>      chekey.daiin.chekey.cheol.cheol.shey.shody.cheol
+<f31r.2,+P0>      daiin.chedy.chekey.chor.chol.lkam.cheol.qokaiin
+<f31r.3,+P0>      shody.ol.okal.ar.cho.chekey.otedy.daiin
+<f31r.4,+P0>      ol.cho.chey.chol.chey.dal.daiin.otedy
+<f31r.5,+P0>      cho.dal.chedy.otedy.cheol.chol.qokaiin.daiin
+<f31r.6,+P0>      chey.sho.cheol.shedy.lkam.chol.shey.daiin
+<f31r.7,+P0>      lkam.ol.cheol.okal.shey.shody.shedy.ar
+<f31r.8,+P0>      dal.chekey.okal.ol.chekey.ol.ol.sho
+<f31v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f31v.1,@P0>      cheol.lkam.shey.okal.cho.shedy.chey.shey
+<f31v.2,+P0>      otedy.chekey.ar.chekey.chekey.chedy.shody.chey
+<f31v.3,+P0>      lkam.shedy.shey.dal.qokaiin.chekey.daiin.ol
+<f31v.4,+P0>      dal.dal.daiin.otedy.chol.cho.dal.otedy
+<f31v.5,+P0>      chey.qokaiin.chor.shey.shey.chekey.okal.ol
+<f31v.6,+P0>      ol.chey.shedy.otedy.dal.okal.chey.cheol
+<f31v.7,+P0>      shedy.ar.okal.lkam.cheol.chekey.qokaiin.dal
+<f31v.8,+P0>      otedy.shey.okal.okal.shedy.okal.cho.otedy
+<f32r>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f32r.1,@P0>      chey.cheol.chey.qokaiin.daiin.shedy.chor.shedy
+<f32r.2,+P0>      lkam.cheol.shody.ar.qokaiin.shody.cheol.daiin
+<f32r.3,+P0>      lkam.qokaiin.ol.shey.qokaiin.okal.ar.cheol
+<f32r.4,+P0>      shedy.chedy.chedy.okal.ar.otedy.daiin.sho
+<f32r.5,+P0>      chekey.chedy.cho.chor.shedy.shey.shedy.shey
+<f32r.6,+P0>      chedy.qokaiin.dal.cheol.daiin.chol.dal.chekey
+<f32r.7,+P0>      ol.chedy.chey.ar.chekey.daiin.ol.ol
+<f32r.8,+P0>      shody.ol.daiin.dal.chey.ar.otedy.chedy
+<f32v>      <! $Q=A $P=A $F=a $B=1 $I=H $L=B $H=3>
+<f32v.1,@P0>      shedy.ar.chey.chedy.okal.okal.shey.qokaiin
+<f32v.2,+P0>      shey.dal.shedy.chey.chol.sho.shey.okal
+<f32v.3,+P0>      chey.lkam.dal.okal.shedy.dal.cho.qokaiin
+<f32v.4,+P0>      shedy.daiin.sho.shey.chor.chekey.dal.ol
+<f32v.5,+P0>      cho.cho.ar.shedy.qokaiin.okal.qokaiin.qokaiin
+<f32v.6,+P0>      qokaiin.daiin.chedy.daiin.shey.dal.chekey.cho
+<f32v.7,+P0>      shedy.shedy.chor.dal.qokaiin.otedy.daiin.ar
+<f32v.8,+P0>      chey.qokaiin.shey.okal.daiin.lkam.otedy.chekey

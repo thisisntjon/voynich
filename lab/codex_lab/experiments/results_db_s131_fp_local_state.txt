@@ -1,0 +1,26 @@
+db-S131 mode=real
+script_sha256=D5B151E991E2F4C52820D1246723A26CD9E76CB436382EB148E45E4031C5CAA3
+source=./data/ZL3b-n.txt
+source_sha256=BF5B6D4AC1E3A51B1847A9C388318D609020441CCD56984C901C32B09BECCAFC
+eligible_lines=475
+adjacent_pairs=999
+observed_same_rate=0.656656657
+across_line_shuffle_median=0.658658659 excess=-0.002002002 p=0.858714129 call=False
+within_line_order_shuffle_median=0.665665666 excess=-0.009009009 p=0.283871613 call=False
+CALL_LOCAL_COMPOSITION_OR_ORDER=False
+folds:
+  A pairs=975 same_rate=0.654358974
+  B pairs=962 same_rate=0.655925156
+  C pairs=947 same_rate=0.659978881
+  D pairs=966 same_rate=0.660455487
+  E pairs=961 same_rate=0.662851197
+  F pairs=934 same_rate=0.658458244
+  G pairs=971 same_rate=0.661174047
+  H pairs=944 same_rate=0.662076271
+  I pairs=995 same_rate=0.657286432
+  M pairs=888 same_rate=0.644144144
+  N pairs=918 same_rate=0.662309368
+  O pairs=966 same_rate=0.656314700
+  Q pairs=975 same_rate=0.656410256
+  S pairs=968 same_rate=0.658057851
+  T pairs=616 same_rate=0.629870130

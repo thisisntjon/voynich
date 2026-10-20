@@ -1,0 +1,185 @@
+{
+ "row": {
+  "name": "flow_cipher_layer",
+  "tokens": 21292,
+  "types": 4971,
+  "pages": 159,
+  "lines": 2732,
+  "errors": {},
+  "types_25k": 4971,
+  "h2": 2.1197,
+  "sd_len": 1.667,
+  "jsd_first_fg": 0.0866,
+  "p_init_enrich": 7.5,
+  "m_final_enrich": 4.69,
+  "cross_excess_eva": 0.2172,
+  "redup_pct": 0.136,
+  "v1_pass": false,
+  "v1_missed": [
+   "jsd_first_fg",
+   "p_init_enrich",
+   "m_final_enrich",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "flow_cipher_layer",
+   "tokens": 21292,
+   "types": 4971,
+   "hapax_rate": 0.4977,
+   "mean_len": 5.257,
+   "sd_len": 1.667,
+   "h1": 3.887,
+   "h2": 2.1197,
+   "h3": 1.8134,
+   "zipf": -0.9117,
+   "redup_pct": 0.136,
+   "jsd_first_fg": 0.0866,
+   "jsd_last_lg": 0.0469,
+   "p_init_enrich": 7.5,
+   "m_final_enrich": 4.69,
+   "cross_mi_eva": 0.2273,
+   "cross_excess_eva": 0.2172,
+   "cross_mi_glyph": 0.2356,
+   "cross_excess_glyph": 0.2198,
+   "recur_le_1": 0.0014,
+   "recur_le_5": 0.017,
+   "recur_le_20": 0.0705,
+   "recur_le_100": 0.239
+  },
+  "x_edge_mi_word": 0.2204838172088617,
+  "x_hapax_10k": 0.6086822660098522,
+  "x_moran_I": -0.02056084012131785,
+  "x_position_entropy": 1.5976241563695361,
+  "x_ltr_minus_rtl": 0.0007968523327585218,
+  "info_mi_adjacent": 0.10874754332546721,
+  "info_mi_page": -0.006935911122759153,
+  "info_samecol_minus_othercol": -0.012777923255913981,
+  "info_bpe_adjacent": 1.1228390213152672,
+  "lex_beta": 0.7715010031942668,
+  "lex_rate_late_early": 0.3085522638345445,
+  "lex_edit1_excess": 0.0016093341380004067,
+  "slot_occupancy_pc": 0.08410841084108411,
+  "slot_table_likeness": 0.7169006142954697,
+  "slot_core_crowding": 0.9432943294329433,
+  "bake_winner": "markov3",
+  "bake_char3_minus_unigram": -0.10472594547518632,
+  "bake_bits": {
+   "markov2": 11.639883266524821,
+   "markov3": 11.280127606785419,
+   "slot": 11.59358652314619,
+   "unigram_gt": 11.384853552260605,
+   "copy0.3+markov3": 11.67362480196431,
+   "copy0.1+markov3": 11.379556776872745,
+   "copy0.05+markov3": 11.321906951795395
+  },
+  "family": "-",
+  "note": "data\\controls_synthetic\\flow_cipher_layer.meta.json; 21292 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 10,
+    "outs": 8,
+    "na": 0,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "p_init_enrich",
+     "m_final_enrich",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_position_entropy",
+     "slot_occupancy_pc"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "p_init_enrich",
+     "m_final_enrich",
+     "cross_excess_eva",
+     "x_position_entropy",
+     "slot_occupancy_pc"
+    ]
+   },
+   "C": {
+    "ins": 9,
+    "outs": 7,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k",
+     "lex_rate_late_early",
+     "slot_table_likeness"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k",
+     "lex_rate_late_early",
+     "slot_table_likeness"
+    ]
+   },
+   "G": {
+    "ins": 14,
+    "outs": 4,
+    "na": 0,
+    "out_metrics": [
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_moran_I"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_moran_I"
+    ]
+   },
+   "X": {
+    "ins": 4,
+    "outs": 13,
+    "na": 1,
+    "out_metrics": [
+     "h2",
+     "m_final_enrich",
+     "x_edge_mi_word",
+     "x_position_entropy",
+     "x_ltr_minus_rtl",
+     "x_moran_I",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding",
+     "bake_char3_minus_unigram"
+    ],
+    "out_tight": [
+     "m_final_enrich",
+     "x_edge_mi_word",
+     "x_ltr_minus_rtl",
+     "x_moran_I",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding",
+     "bake_char3_minus_unigram"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "n7_gibberish_ranges.json"
+}

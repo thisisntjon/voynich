@@ -1,0 +1,1104 @@
+{
+"homophones": {
+"e": [
+"K",
+"O",
+"c",
+"D"
+],
+"n": [
+"H",
+"F",
+"E",
+"v"
+],
+"u": [
+"L",
+"x",
+"g",
+"l"
+],
+"i": [
+"Q",
+"j",
+"N"
+],
+"d": [
+"a",
+"C",
+"J"
+],
+"s": [
+"u",
+"q",
+"z"
+],
+"r": [
+"I",
+"m"
+],
+"a": [
+"P",
+"n"
+],
+"t": [
+"f",
+"d"
+],
+"l": [
+"b",
+"B"
+],
+"z": [
+"G"
+],
+"m": [
+"T"
+],
+"h": [
+"i"
+],
+"o": [
+"r"
+],
+"c": [
+"y"
+],
+"g": [
+"s"
+],
+"b": [
+"R"
+],
+"f": [
+"h"
+],
+"p": [
+"M"
+],
+"k": [
+"o"
+],
+"y": [
+"k"
+],
+"x": [
+"A"
+],
+"q": [
+"p"
+],
+"~": [
+"U"
+],
+"&": [
+"e"
+]
+},
+"nulls": [
+"S",
+"t"
+],
+"code": {
+"nim": [
+"qe",
+"iA",
+"Hh"
+],
+"sd": [
+"ad",
+"eF",
+"iI"
+],
+"du": [
+"aA",
+"GA",
+"Rk"
+],
+"uon": [
+"LR",
+"qL",
+"EN"
+],
+"uil": [
+"qz",
+"zn",
+"PD"
+],
+"uuirt": [
+"an",
+"Ie",
+"Jy"
+],
+"danne": [
+"bQ",
+"EM",
+"Eo"
+],
+"uuol": [
+"uQ",
+"oy",
+"IN"
+],
+"dor": [
+"dx",
+"cz",
+"Ou"
+],
+"machen": [
+"ll",
+"iC",
+"nc"
+],
+"tu": [
+"Rr",
+"sv",
+"UE"
+],
+"lege": [
+"rF",
+"bm",
+"Ef"
+],
+"uuil": [
+"sF",
+"gU",
+"Gr"
+],
+"uz": [
+"ej",
+"af",
+"sm"
+],
+"harn": [
+"gq",
+"oD",
+"pu"
+],
+"siut": [
+"sT",
+"Np",
+"lR"
+],
+"mensch": [
+"su",
+"BC",
+"FH"
+],
+"mache": [
+"hg",
+"vb",
+"lM"
+],
+"hat": [
+"MD",
+"gE",
+"DD"
+],
+"uuazer": [
+"BT",
+"pa",
+"bu"
+],
+"nemen": [
+"IR",
+"UJ",
+"yF"
+],
+"laz": [
+"ka",
+"iU",
+"AO"
+],
+"mach": [
+"Mm",
+"jq",
+"hd"
+],
+"baz": [
+"bb",
+"dT",
+"Kk"
+],
+"houbet": [
+"xJ",
+"QU",
+"ha"
+],
+"uuilt": [
+"Tn",
+"KT",
+"yc"
+],
+"dicke": [
+"Bp",
+"Pe",
+"kq"
+],
+"gesunt": [
+"kI",
+"mU",
+"Hq"
+],
+"giuz": [
+"nn",
+"qR",
+"Km"
+],
+"abe": [
+"zL",
+"ie",
+"Ha"
+],
+"salbe": [
+"mn",
+"qM",
+"fa"
+],
+"uuerde": [
+"Ei",
+"ap",
+"PN"
+],
+"tage": [
+"ud",
+"xu",
+"Md"
+],
+"sich": [
+"Le",
+"xv",
+"iG"
+],
+"snit": [
+"qg",
+"ih",
+"Ds"
+],
+"diz": [
+"Rn",
+"ig",
+"NJ"
+],
+"temper": [
+"Ij",
+"eQ",
+"Fh"
+],
+"eyer": [
+"ys",
+"DF",
+"NO"
+],
+"gar": [
+"yn",
+"yj",
+"kd"
+],
+"ougen": [
+"oJ",
+"HL",
+"OK"
+],
+"gip": [
+"Gz",
+"mf",
+"Gj"
+],
+"guot": [
+"oQ",
+"Fk",
+"xl"
+],
+"schiere": [
+"Nv",
+"Gy",
+"sK"
+],
+"stoz": [
+"ev",
+"Am",
+"Gv"
+],
+"unze": [
+"iB",
+"uU",
+"Ea"
+],
+"suuenne": [
+"cA",
+"bC",
+"NI"
+],
+"suuer": [
+"Fe",
+"jm",
+"Lj"
+],
+"umbe": [
+"ff",
+"jv",
+"sA"
+],
+"eime": [
+"Me",
+"BH",
+"ea"
+],
+"gut": [
+"oH",
+"LL",
+"ul"
+],
+"menschen": [
+"lvv",
+"xer",
+"lln"
+],
+"solt": [
+"Ior",
+"Ccg",
+"Orf"
+],
+"uuenic": [
+"ejn",
+"TCh",
+"mkH"
+],
+"gib": [
+"hfm",
+"LLK",
+"nBB"
+],
+"gibz": [
+"OQj",
+"snr",
+"sPG"
+],
+"siech": [
+"OOm",
+"QuG",
+"udn"
+],
+"milich": [
+"uoI",
+"bRJ",
+"CCg"
+],
+"puluer": [
+"Ooo",
+"PqU",
+"OOv"
+],
+"suuem": [
+"Bky",
+"cHh",
+"smB"
+],
+"uaste": [
+"TJO",
+"zFo",
+"IPs"
+],
+"aller": [
+"qEf",
+"bzR",
+"Eec"
+],
+"gesuuulst": [
+"EoH",
+"pBU",
+"yPc"
+],
+"habe": [
+"cNf",
+"MsD",
+"ppM"
+],
+"st": [
+"xBx",
+"Ovm",
+"svf"
+],
+"uuine": [
+"jEd",
+"RLO",
+"jve"
+],
+"fur": [
+"vCh",
+"KsB",
+"qnP"
+],
+"ime": [
+"KsA",
+"QoM",
+"bDD"
+],
+"inne": [
+"bKF",
+"cfj",
+"DRe"
+],
+"selben": [
+"aaf",
+"MnT",
+"DNB"
+],
+"bint": [
+"apF",
+"ijh",
+"srB"
+],
+"brust": [
+"Nla",
+"ACL",
+"OdH"
+],
+"fulle": [
+"Moc",
+"NPN",
+"qnz"
+],
+"ole": [
+"imK",
+"Oua",
+"CMD"
+],
+"ouz": [
+"hgb",
+"nDd",
+"czE"
+],
+"palde": [
+"OLz",
+"Gas",
+"TFo"
+],
+"pluot": [
+"szA",
+"IUn",
+"mDm"
+],
+"trinchen": [
+"dFr",
+"qkk",
+"fKK"
+],
+"lange": [
+"ehm",
+"GEp",
+"rjm"
+],
+"uuazzer": [
+"FOK",
+"zfF",
+"hAf"
+],
+"alle": [
+"mFD",
+"hMe",
+"QrU"
+],
+"eyern": [
+"dvG",
+"gMg",
+"qDb"
+],
+"gesoten": [
+"LaT",
+"rbz",
+"Kvb"
+],
+"neme": [
+"UEg",
+"ROO",
+"gqN"
+],
+"stat": [
+"bex",
+"BTl",
+"CiP"
+],
+"uast": [
+"hev",
+"JAg",
+"bUn"
+],
+"uuurz": [
+"ojD",
+"xQx",
+"ORJ"
+],
+"brenne": [
+"LEM",
+"FbB",
+"GMI"
+],
+"dunne": [
+"ocl",
+"jxz",
+"gPi"
+],
+"nem": [
+"DFo",
+"QAj",
+"qhT"
+],
+"smaltze": [
+"zxk",
+"EHm",
+"isF"
+],
+"zuuei": [
+"cHd",
+"eOL",
+"DDr"
+],
+"hut": [
+"bkE",
+"NAv",
+"Cym"
+],
+"pfeffer": [
+"Aqm",
+"Jbm",
+"jyq"
+],
+"souch": [
+"HFk",
+"AAb",
+"ymj"
+],
+"teil": [
+"mGy",
+"vvd",
+"BaF"
+],
+"ander": [
+"ooC",
+"UAx",
+"buL"
+],
+"auer": [
+"Nnk",
+"lnL",
+"rqp"
+],
+"einander": [
+"Jad",
+"veG",
+"Ple"
+],
+"heizet": [
+"jBb",
+"CMp",
+"Unn"
+],
+"huenre": [
+"Rul",
+"TGa",
+"ufn"
+],
+"ouf": [
+"nBf",
+"jKc",
+"bHf"
+],
+"sieden": [
+"RGE",
+"uHQ",
+"LEC"
+],
+"tuo": [
+"mzy",
+"anR",
+"nsC"
+],
+"tuoch": [
+"UPd",
+"EKf",
+"Ugl"
+],
+"uuunden": [
+"zaA",
+"Hgg",
+"vhi"
+],
+"aber": [
+"CGh",
+"EQD",
+"pQm"
+],
+"allez": [
+"Msy",
+"NzJ",
+"pgc"
+],
+"butern": [
+"NDz",
+"cqG",
+"zJn"
+],
+"duz": [
+"FyD",
+"kuB",
+"BHM"
+],
+"morser": [
+"vBk",
+"CKA",
+"HBb"
+],
+"mule": [
+"xQL",
+"Fqx",
+"Drj"
+],
+"mus": [
+"yhP",
+"KnH",
+"qUL"
+],
+"rot": [
+"xxc",
+"fvP",
+"hqq"
+],
+"sammene": [
+"Mcd",
+"BLr",
+"JBU"
+],
+"uuirf": [
+"CaL",
+"yzU",
+"NPq"
+],
+"uuurze": [
+"Obl",
+"vNs",
+"HKI"
+],
+"blat": [
+"TRz",
+"zos",
+"cuR"
+],
+"bouch": [
+"Tkl",
+"ohx",
+"Gkd"
+],
+"brotes": [
+"CrA",
+"vgi",
+"vsf"
+],
+"epfele": [
+"Lna",
+"qUc",
+"kfd"
+],
+"ezich": [
+"RcP",
+"aFU",
+"QDM"
+],
+"ii": [
+"HPI",
+"ujp",
+"zUq"
+],
+"mische": [
+"fma",
+"mEq",
+"PRH"
+],
+"nimmer": [
+"kcx",
+"Jmc",
+"GLB"
+],
+"siehtuom": [
+"rQK",
+"lkg",
+"pep"
+],
+"siude": [
+"zeo",
+"AvF",
+"FMi"
+],
+"slahe": [
+"Ppz",
+"gby",
+"vTs"
+],
+"uue": [
+"mkO",
+"TUa",
+"CUB"
+],
+"dirre": [
+"Hfg",
+"sMH",
+"hCC"
+],
+"hafen": [
+"Tpv",
+"bPH",
+"Bjs"
+],
+"heiz": [
+"mqx",
+"GPR",
+"uGx"
+],
+"legez": [
+"xTA",
+"gxr",
+"haH"
+],
+"menge": [
+"rja",
+"eTh",
+"PIk"
+],
+"smaltz": [
+"caJ",
+"liK",
+"iFp"
+],
+"tuch": [
+"pyo",
+"QpM",
+"plG"
+],
+"uaz": [
+"MsU",
+"oag",
+"kiy"
+],
+"uersaltz": [
+"FIU",
+"AyF",
+"ekf"
+],
+"uuie": [
+"hcH",
+"gvn",
+"nyQ"
+],
+"allen": [
+"HJv",
+"pAn",
+"CsJ"
+],
+"iht": [
+"GHJ",
+"uCI",
+"gzB"
+],
+"mandel": [
+"GIp",
+"MhL",
+"AKH"
+],
+"ouge": [
+"dkP",
+"aUv",
+"ozG"
+],
+"riemen": [
+"ygN",
+"xoR",
+"ldE"
+],
+"ris": [
+"Nyu",
+"eqc",
+"oRI"
+],
+"saltz": [
+"ICk",
+"PCy",
+"DGL"
+],
+"uuerden": [
+"kia",
+"FpI",
+"kDM"
+],
+"dd": [
+"vdg",
+"lUH",
+"Hfe"
+],
+"ezen": [
+"iLD",
+"vKm",
+"fCy"
+],
+"ge": [
+"onI",
+"PUB",
+"CPu"
+],
+"har": [
+"Oln",
+"szQ",
+"UTL"
+],
+"ich": [
+"yxp",
+"eov",
+"hRO"
+],
+"krapfen": [
+"gKq",
+"QrG",
+"njf"
+],
+"mele": [
+"acE",
+"PIP",
+"dre"
+],
+"milch": [
+"rCd",
+"IyA",
+"LNJ"
+],
+"nase": [
+"Aef",
+"Dgi",
+"NAl"
+],
+"nehelphe": [
+"doJ",
+"bMj",
+"Ucx"
+],
+"nime": [
+"xRd",
+"EzA",
+"NBj"
+],
+"rinden": [
+"aTy",
+"zkE",
+"buK"
+],
+"saffran": [
+"dsx",
+"DQD",
+"cLp"
+],
+"salben": [
+"lgF",
+"Fpg",
+"fHs"
+],
+"selbe": [
+"axE",
+"ThN",
+"Dqz"
+],
+"uu": [
+"zTp",
+"ach",
+"xPD"
+],
+"uuerdent": [
+"Dep",
+"FMR",
+"UAP"
+],
+"uuo": [
+"Knc",
+"xzm",
+"lnf"
+],
+"ypocras": [
+"RQd",
+"pps",
+"udQ"
+],
+"alliu": [
+"IRz",
+"lEE",
+"yuG"
+],
+"andern": [
+"vTB",
+"UfN",
+"npB"
+],
+"disiu": [
+"keU",
+"aBn",
+"IUa"
+],
+"fleisch": [
+"gIa",
+"fiM",
+"Hah"
+],
+"gestozzen": [
+"Bxb",
+"hIb",
+"omJ"
+],
+"geuuinnen": [
+"DIR",
+"pJy",
+"DKJ"
+],
+"ingeber": [
+"vNf",
+"xcM",
+"pUc"
+],
+"is": [
+"jDm",
+"aio",
+"chh"
+],
+"mahtu": [
+"KCe",
+"phD",
+"hur"
+],
+"mul": [
+"BeP",
+"vLK",
+"GAs"
+],
+"naht": [
+"zvg",
+"Mza",
+"BhH"
+],
+"niu": [
+"mda",
+"gkv",
+"PLz"
+],
+"oben": [
+"UED",
+"QsK",
+"gFj"
+],
+"schoene": [
+"dgI",
+"pQD",
+"zci"
+],
+"schuzzeln": [
+"xFm",
+"NPb",
+"RMa"
+],
+"sf": [
+"QFF",
+"PmN",
+"uEI"
+],
+"siechen": [
+"GnI",
+"Lzf",
+"Hys"
+],
+"siede": [
+"hgc",
+"TlU",
+"Jgd"
+],
+"stucke": [
+"QyL",
+"lQE",
+"Lbf"
+],
+"suua": [
+"cpr",
+"PLi",
+"CgJ"
+],
+"tages": [
+"FUz",
+"xcR",
+"Gyl"
+],
+"totern": [
+"JNh",
+"BOh",
+"PdT"
+],
+"uud": [
+"ipM",
+"pdu",
+"yfn"
+],
+"uuelle": [
+"hzm",
+"mCl",
+"oKh"
+],
+"uufne": [
+"iUs",
+"ygr",
+"lEh"
+],
+"zende": [
+"UrL",
+"Mcn",
+"PcR"
+],
+"alsd": [
+"CjG",
+"CiJ",
+"pTn"
+],
+"backen": [
+"fPi",
+"bys",
+"PPn"
+],
+"chumt": [
+"llj",
+"CyK",
+"QiA"
+],
+"drin": [
+"nuF",
+"qzN",
+"xnh"
+],
+"erde": [
+"MyQ",
+"UUn",
+"NDL"
+],
+"erzente": [
+"pAF",
+"gEU",
+"zlQ"
+],
+"ezzige": [
+"vHk",
+"ALG",
+"IqK"
+],
+"groz": [
+"ICo",
+"kdx",
+"eMm"
+],
+"mandelmilch": [
+"Hnb",
+"agO",
+"Hor"
+]
+}
+}

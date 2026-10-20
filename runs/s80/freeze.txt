@@ -1,0 +1,4 @@
+s80 prereg freeze: Sun Oct 18 03:19:31 PDT 2026
+stub s80_a14_size_matched.prereg.sha256 sha256=a0d34862b16e242bb5732a043af55de50c25bc06e175ee2b9f20cfc5dc5275bd
+script s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+fixture runs/s80/fixture.txt sha256=d91bdbc86a08e156702a9188cf0a689120cfe12b6c1607c99a6eb0859ce882df (FX1 FAIL on 1/6 cells, FX2 PASS; disclosed in docstring)

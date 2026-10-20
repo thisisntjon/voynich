@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:03:11.9503386Z",
+ "response": "{\n  \"PT\": \"OTHER\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"0\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"ROSETTE\",\n  \"J_shape\": \"NA\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"0\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"HUMAN\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"21+\",\n  \"C_rings\": \"4+\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"0\",\n  \"B_figures\": \"0\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Page with human figures in a boat, no other drawings.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2770160700,
+ "load_duration": 298082700,
+ "prompt_eval_count": 3311,
+ "prompt_eval_duration": 755427000,
+ "eval_count": 204,
+ "eval_duration": 1538401000,
+ "stem": "147_81v"
+}

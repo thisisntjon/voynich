@@ -1,0 +1,11 @@
+-- identical (expect PASS)
+token check: OK
+L05: tokens A 50 B 50 edits 0 agreement 1.0000
+L15: tokens A 50 B 50 edits 0 agreement 1.0000
+ROUTE_FIXTURE_IDENTICAL=PASS
+-- 10% perturbed (expect FAIL)
+token check: OK
+L05: tokens A 50 B 50 edits 4 agreement 0.9200
+L15: tokens A 50 B 50 edits 4 agreement 0.9200
+ROUTE_FIXTURE_PERTURBED=FAIL
+-- sheet rule (expect only G01 rejected): rejected ['G01']

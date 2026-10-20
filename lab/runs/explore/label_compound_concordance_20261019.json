@@ -1,0 +1,2914 @@
+{
+  "status": "EXPLORATORY",
+  "summary": {
+    "label_instances": 736,
+    "matched_instances": 86,
+    "own_page_instances": 3,
+    "own_page_types": 3,
+    "pharma_own_page": [
+      {
+        "page": "f89r2",
+        "line": 18,
+        "type": "@Lf",
+        "word": "cheys",
+        "section": "P",
+        "whole_body_count": 0,
+        "split_occurrences": [
+          {
+            "page": "f89r2",
+            "line": 14,
+            "word_index": 5,
+            "parts": [
+              "chey",
+              "s"
+            ]
+          }
+        ],
+        "own_page": [
+          {
+            "page": "f89r2",
+            "line": 14,
+            "word_index": 5,
+            "parts": [
+              "chey",
+              "s"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "matches": [
+    {
+      "page": "f57v",
+      "line": 1,
+      "type": "@L0",
+      "word": "dairal",
+      "section": "C",
+      "whole_body_count": 6,
+      "split_occurrences": [
+        {
+          "page": "f112r",
+          "line": 10,
+          "word_index": 1,
+          "parts": [
+            "dair",
+            "al"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f66r",
+      "line": 4,
+      "type": "+L0",
+      "word": "dary",
+      "section": "T",
+      "whole_body_count": 14,
+      "split_occurrences": [
+        {
+          "page": "f51v",
+          "line": 5,
+          "word_index": 7,
+          "parts": [
+            "dar",
+            "y"
+          ]
+        },
+        {
+          "page": "f77v",
+          "line": 33,
+          "word_index": 6,
+          "parts": [
+            "dar",
+            "y"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f66r",
+      "line": 12,
+      "type": "+L0",
+      "word": "saiin",
+      "section": "T",
+      "whole_body_count": 132,
+      "split_occurrences": [
+        {
+          "page": "f3r",
+          "line": 20,
+          "word_index": 5,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f17v",
+          "line": 7,
+          "word_index": 6,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f31r",
+          "line": 2,
+          "word_index": 5,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f34v",
+          "line": 11,
+          "word_index": 3,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f46r",
+          "line": 3,
+          "word_index": 9,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f54v",
+          "line": 7,
+          "word_index": 4,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f55r",
+          "line": 3,
+          "word_index": 10,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f55v",
+          "line": 10,
+          "word_index": 3,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f58v",
+          "line": 27,
+          "word_index": 2,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f78r",
+          "line": 37,
+          "word_index": 3,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f81v",
+          "line": 6,
+          "word_index": 7,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f85r1",
+          "line": 26,
+          "word_index": 8,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f89r2",
+          "line": 25,
+          "word_index": 4,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f89r2",
+          "line": 27,
+          "word_index": 10,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f89v2",
+          "line": 8,
+          "word_index": 7,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f94v",
+          "line": 9,
+          "word_index": 7,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f99r",
+          "line": 43,
+          "word_index": 9,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f101v",
+          "line": 20,
+          "word_index": 8,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f104r",
+          "line": 45,
+          "word_index": 4,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f104v",
+          "line": 14,
+          "word_index": 4,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f113r",
+          "line": 43,
+          "word_index": 6,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f114v",
+          "line": 7,
+          "word_index": 5,
+          "parts": [
+            "s",
+            "aiin"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f66r",
+      "line": 13,
+      "type": "+L0",
+      "word": "qokal",
+      "section": "T",
+      "whole_body_count": 176,
+      "split_occurrences": [
+        {
+          "page": "f104v",
+          "line": 6,
+          "word_index": 5,
+          "parts": [
+            "qoka",
+            "l"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f68r1",
+      "line": 15,
+      "type": "@Ls",
+      "word": "otydy",
+      "section": "A",
+      "whole_body_count": 3,
+      "split_occurrences": [
+        {
+          "page": "f22v",
+          "line": 11,
+          "word_index": 2,
+          "parts": [
+            "oty",
+            "dy"
+          ]
+        },
+        {
+          "page": "f76r",
+          "line": 40,
+          "word_index": 11,
+          "parts": [
+            "oty",
+            "dy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f68r1",
+      "line": 20,
+      "type": "@Ls",
+      "word": "olor",
+      "section": "A",
+      "whole_body_count": 24,
+      "split_occurrences": [
+        {
+          "page": "f17v",
+          "line": 14,
+          "word_index": 1,
+          "parts": [
+            "olo",
+            "r"
+          ]
+        },
+        {
+          "page": "f48v",
+          "line": 6,
+          "word_index": 7,
+          "parts": [
+            "ol",
+            "or"
+          ]
+        },
+        {
+          "page": "f78v",
+          "line": 25,
+          "word_index": 4,
+          "parts": [
+            "ol",
+            "or"
+          ]
+        },
+        {
+          "page": "f102v2",
+          "line": 19,
+          "word_index": 5,
+          "parts": [
+            "o",
+            "l",
+            "or"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f68r1",
+      "line": 36,
+      "type": "@Ls",
+      "word": "dolchedy",
+      "section": "A",
+      "whole_body_count": 1,
+      "split_occurrences": [
+        {
+          "page": "f78r",
+          "line": 5,
+          "word_index": 3,
+          "parts": [
+            "dol",
+            "chedy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f68r2",
+      "line": 8,
+      "type": "@Ls",
+      "word": "cheorol",
+      "section": "A",
+      "whole_body_count": 2,
+      "split_occurrences": [
+        {
+          "page": "f83v",
+          "line": 13,
+          "word_index": 10,
+          "parts": [
+            "cheor",
+            "ol"
+          ]
+        },
+        {
+          "page": "f88r",
+          "line": 22,
+          "word_index": 4,
+          "parts": [
+            "cheor",
+            "ol"
+          ]
+        },
+        {
+          "page": "f100v",
+          "line": 20,
+          "word_index": 6,
+          "parts": [
+            "cheor",
+            "ol"
+          ]
+        },
+        {
+          "page": "f104v",
+          "line": 9,
+          "word_index": 6,
+          "parts": [
+            "cheor",
+            "ol"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f68r2",
+      "line": 12,
+      "type": "@Ls",
+      "word": "dchol",
+      "section": "A",
+      "whole_body_count": 15,
+      "split_occurrences": [
+        {
+          "page": "f49v",
+          "line": 30,
+          "word_index": 2,
+          "parts": [
+            "d",
+            "chol"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f68r2",
+      "line": 19,
+      "type": "@Ls",
+      "word": "cholar",
+      "section": "A",
+      "whole_body_count": 1,
+      "split_occurrences": [
+        {
+          "page": "f23r",
+          "line": 5,
+          "word_index": 6,
+          "parts": [
+            "chol",
+            "ar"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f68r3",
+      "line": 17,
+      "type": "+Ls",
+      "word": "okolchy",
+      "section": "A",
+      "whole_body_count": 2,
+      "split_occurrences": [
+        {
+          "page": "f2r",
+          "line": 12,
+          "word_index": 1,
+          "parts": [
+            "okol",
+            "chy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f70v2",
+      "line": 23,
+      "type": "&Lz",
+      "word": "otaral",
+      "section": "Z",
+      "whole_body_count": 2,
+      "split_occurrences": [
+        {
+          "page": "f105v",
+          "line": 13,
+          "word_index": 4,
+          "parts": [
+            "otar",
+            "al"
+          ]
+        },
+        {
+          "page": "f106v",
+          "line": 3,
+          "word_index": 8,
+          "parts": [
+            "otar",
+            "al"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f70v2",
+      "line": 30,
+      "type": "&Lz",
+      "word": "okaldal",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f75v",
+          "line": 3,
+          "word_index": 4,
+          "parts": [
+            "okal",
+            "dal"
+          ]
+        },
+        {
+          "page": "f78v",
+          "line": 5,
+          "word_index": 9,
+          "parts": [
+            "okal",
+            "dal"
+          ]
+        },
+        {
+          "page": "f89v2",
+          "line": 16,
+          "word_index": 9,
+          "parts": [
+            "okal",
+            "dal"
+          ]
+        },
+        {
+          "page": "f89v1",
+          "line": 16,
+          "word_index": 5,
+          "parts": [
+            "okal",
+            "dal"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f70v1",
+      "line": 5,
+      "type": "&Lz",
+      "word": "okalal",
+      "section": "Z",
+      "whole_body_count": 4,
+      "split_occurrences": [
+        {
+          "page": "f85r1",
+          "line": 15,
+          "word_index": 4,
+          "parts": [
+            "okal",
+            "al"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f71r",
+      "line": 5,
+      "type": "&Lz",
+      "word": "oteolar",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f113v",
+          "line": 2,
+          "word_index": 9,
+          "parts": [
+            "oteol",
+            "ar"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f71r",
+      "line": 8,
+      "type": "&Lz",
+      "word": "otalsar",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f69r",
+          "line": 1,
+          "word_index": 9,
+          "parts": [
+            "otal",
+            "sar"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f71v",
+      "line": 4,
+      "type": "&Lz",
+      "word": "okolar",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f67r2",
+          "line": 73,
+          "word_index": 8,
+          "parts": [
+            "okol",
+            "ar"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72r1",
+      "line": 8,
+      "type": "&Lz",
+      "word": "otaraldy",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f58r",
+          "line": 10,
+          "word_index": 6,
+          "parts": [
+            "otar",
+            "aldy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72r2",
+      "line": 5,
+      "type": "&Lz",
+      "word": "okealar",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f58r",
+          "line": 24,
+          "word_index": 3,
+          "parts": [
+            "okeal",
+            "ar"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72r2",
+      "line": 7,
+      "type": "@Lz",
+      "word": "otaraldy",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f58r",
+          "line": 10,
+          "word_index": 6,
+          "parts": [
+            "otar",
+            "aldy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72r2",
+      "line": 8,
+      "type": "&Lz",
+      "word": "okalar",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f58v",
+          "line": 20,
+          "word_index": 7,
+          "parts": [
+            "okal",
+            "ar"
+          ]
+        },
+        {
+          "page": "f58v",
+          "line": 26,
+          "word_index": 5,
+          "parts": [
+            "okal",
+            "ar"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72r2",
+      "line": 19,
+      "type": "&Lz",
+      "word": "orary",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f70r2",
+          "line": 14,
+          "word_index": 4,
+          "parts": [
+            "or",
+            "ary"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72r2",
+      "line": 27,
+      "type": "&Lz",
+      "word": "okaldy",
+      "section": "Z",
+      "whole_body_count": 8,
+      "split_occurrences": [
+        {
+          "page": "f82v",
+          "line": 16,
+          "word_index": 8,
+          "parts": [
+            "okal",
+            "dy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72r2",
+      "line": 30,
+      "type": "&Lz",
+      "word": "ainaly",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f116r",
+          "line": 23,
+          "word_index": 10,
+          "parts": [
+            "ain",
+            "aly"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72r3",
+      "line": 9,
+      "type": "&Lz",
+      "word": "oteeydaiin",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f100v",
+          "line": 14,
+          "word_index": 7,
+          "parts": [
+            "oteey",
+            "daiin"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72r3",
+      "line": 22,
+      "type": "&Lz",
+      "word": "okalar",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f58v",
+          "line": 20,
+          "word_index": 7,
+          "parts": [
+            "okal",
+            "ar"
+          ]
+        },
+        {
+          "page": "f58v",
+          "line": 26,
+          "word_index": 5,
+          "parts": [
+            "okal",
+            "ar"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72r3",
+      "line": 29,
+      "type": "&Lz",
+      "word": "oraiiral",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f105v",
+          "line": 33,
+          "word_index": 10,
+          "parts": [
+            "or",
+            "aiir",
+            "al"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72r3",
+      "line": 32,
+      "type": "&Lz",
+      "word": "aral",
+      "section": "Z",
+      "whole_body_count": 17,
+      "split_occurrences": [
+        {
+          "page": "f39r",
+          "line": 7,
+          "word_index": 8,
+          "parts": [
+            "ar",
+            "al"
+          ]
+        },
+        {
+          "page": "f55r",
+          "line": 2,
+          "word_index": 11,
+          "parts": [
+            "ar",
+            "al"
+          ]
+        },
+        {
+          "page": "f58r",
+          "line": 5,
+          "word_index": 6,
+          "parts": [
+            "ar",
+            "al"
+          ]
+        },
+        {
+          "page": "f70r2",
+          "line": 6,
+          "word_index": 2,
+          "parts": [
+            "ar",
+            "al"
+          ]
+        },
+        {
+          "page": "f76r",
+          "line": 55,
+          "word_index": 4,
+          "parts": [
+            "ar",
+            "al"
+          ]
+        },
+        {
+          "page": "f105v",
+          "line": 28,
+          "word_index": 2,
+          "parts": [
+            "ar",
+            "al"
+          ]
+        },
+        {
+          "page": "f113r",
+          "line": 43,
+          "word_index": 4,
+          "parts": [
+            "ar",
+            "al"
+          ]
+        },
+        {
+          "page": "f113v",
+          "line": 2,
+          "word_index": 10,
+          "parts": [
+            "ar",
+            "al"
+          ]
+        },
+        {
+          "page": "f115r",
+          "line": 8,
+          "word_index": 10,
+          "parts": [
+            "ar",
+            "al"
+          ]
+        },
+        {
+          "page": "f116r",
+          "line": 43,
+          "word_index": 2,
+          "parts": [
+            "ar",
+            "al"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72v3",
+      "line": 3,
+      "type": "&Lz",
+      "word": "orchey",
+      "section": "Z",
+      "whole_body_count": 4,
+      "split_occurrences": [
+        {
+          "page": "f33v",
+          "line": 10,
+          "word_index": 2,
+          "parts": [
+            "or",
+            "chey"
+          ]
+        },
+        {
+          "page": "f75v",
+          "line": 39,
+          "word_index": 7,
+          "parts": [
+            "or",
+            "chey"
+          ]
+        },
+        {
+          "page": "f83r",
+          "line": 38,
+          "word_index": 1,
+          "parts": [
+            "or",
+            "chey"
+          ]
+        },
+        {
+          "page": "f102r2",
+          "line": 5,
+          "word_index": 3,
+          "parts": [
+            "or",
+            "chey"
+          ]
+        },
+        {
+          "page": "f113r",
+          "line": 45,
+          "word_index": 2,
+          "parts": [
+            "or",
+            "chey"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72v3",
+      "line": 16,
+      "type": "&Lz",
+      "word": "okeeol",
+      "section": "Z",
+      "whole_body_count": 11,
+      "split_occurrences": [
+        {
+          "page": "f113r",
+          "line": 6,
+          "word_index": 12,
+          "parts": [
+            "okeeo",
+            "l"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72v3",
+      "line": 18,
+      "type": "&Lz",
+      "word": "okaldy",
+      "section": "Z",
+      "whole_body_count": 8,
+      "split_occurrences": [
+        {
+          "page": "f82v",
+          "line": 16,
+          "word_index": 8,
+          "parts": [
+            "okal",
+            "dy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72v3",
+      "line": 27,
+      "type": "&Lz",
+      "word": "okary",
+      "section": "Z",
+      "whole_body_count": 7,
+      "split_occurrences": [
+        {
+          "page": "f114r",
+          "line": 18,
+          "word_index": 2,
+          "parts": [
+            "okar",
+            "y"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72v3",
+      "line": 28,
+      "type": "&Lz",
+      "word": "oeesaiin",
+      "section": "Z",
+      "whole_body_count": 1,
+      "split_occurrences": [
+        {
+          "page": "f85r1",
+          "line": 29,
+          "word_index": 1,
+          "parts": [
+            "oees",
+            "aiin"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f72v2",
+      "line": 16,
+      "type": "&Lz",
+      "word": "okeoldy",
+      "section": "Z",
+      "whole_body_count": 1,
+      "split_occurrences": [
+        {
+          "page": "f100v",
+          "line": 16,
+          "word_index": 9,
+          "parts": [
+            "okeol",
+            "dy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f73r",
+      "line": 11,
+      "type": "&Lz",
+      "word": "okeedy",
+      "section": "Z",
+      "whole_body_count": 96,
+      "split_occurrences": [
+        {
+          "page": "f108v",
+          "line": 5,
+          "word_index": 7,
+          "parts": [
+            "o",
+            "keedy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f73r",
+      "line": 18,
+      "type": "&Lz",
+      "word": "dalshey",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f81v",
+          "line": 26,
+          "word_index": 5,
+          "parts": [
+            "dal",
+            "shey"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f73r",
+      "line": 23,
+      "type": "@Lz",
+      "word": "okary",
+      "section": "Z",
+      "whole_body_count": 7,
+      "split_occurrences": [
+        {
+          "page": "f114r",
+          "line": 18,
+          "word_index": 2,
+          "parts": [
+            "okar",
+            "y"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f73r",
+      "line": 25,
+      "type": "&Lz",
+      "word": "oyteedy",
+      "section": "Z",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f105r",
+          "line": 4,
+          "word_index": 9,
+          "parts": [
+            "oy",
+            "teedy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f73v",
+      "line": 12,
+      "type": "&Lz",
+      "word": "ykeody",
+      "section": "Z",
+      "whole_body_count": 10,
+      "split_occurrences": [
+        {
+          "page": "f48v",
+          "line": 3,
+          "word_index": 3,
+          "parts": [
+            "y",
+            "keody"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f75v",
+      "line": 19,
+      "type": "+Ln",
+      "word": "saral",
+      "section": "B",
+      "whole_body_count": 2,
+      "split_occurrences": [
+        {
+          "page": "f57r",
+          "line": 9,
+          "word_index": 3,
+          "parts": [
+            "sar",
+            "al"
+          ]
+        },
+        {
+          "page": "f82v",
+          "line": 32,
+          "word_index": 1,
+          "parts": [
+            "sar",
+            "al"
+          ]
+        },
+        {
+          "page": "f83v",
+          "line": 16,
+          "word_index": 9,
+          "parts": [
+            "sar",
+            "al"
+          ]
+        },
+        {
+          "page": "f86v4",
+          "line": 6,
+          "word_index": 8,
+          "parts": [
+            "sar",
+            "al"
+          ]
+        },
+        {
+          "page": "f104r",
+          "line": 12,
+          "word_index": 5,
+          "parts": [
+            "sar",
+            "al"
+          ]
+        },
+        {
+          "page": "f106v",
+          "line": 3,
+          "word_index": 4,
+          "parts": [
+            "sar",
+            "al"
+          ]
+        },
+        {
+          "page": "f113r",
+          "line": 28,
+          "word_index": 1,
+          "parts": [
+            "sar",
+            "al"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f75v",
+      "line": 21,
+      "type": "+Ln",
+      "word": "darol",
+      "section": "B",
+      "whole_body_count": 1,
+      "split_occurrences": [
+        {
+          "page": "f39r",
+          "line": 15,
+          "word_index": 4,
+          "parts": [
+            "dar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f75v",
+          "line": 47,
+          "word_index": 4,
+          "parts": [
+            "dar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f84v",
+          "line": 14,
+          "word_index": 10,
+          "parts": [
+            "dar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f86v4",
+          "line": 5,
+          "word_index": 5,
+          "parts": [
+            "dar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f101r",
+          "line": 9,
+          "word_index": 5,
+          "parts": [
+            "dar",
+            "ol"
+          ]
+        }
+      ],
+      "own_page": [
+        {
+          "page": "f75v",
+          "line": 47,
+          "word_index": 4,
+          "parts": [
+            "dar",
+            "ol"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "f75v",
+      "line": 22,
+      "type": "@Ln",
+      "word": "daldy",
+      "section": "B",
+      "whole_body_count": 17,
+      "split_occurrences": [
+        {
+          "page": "f33v",
+          "line": 9,
+          "word_index": 9,
+          "parts": [
+            "dal",
+            "dy"
+          ]
+        },
+        {
+          "page": "f68v2",
+          "line": 2,
+          "word_index": 6,
+          "parts": [
+            "dal",
+            "dy"
+          ]
+        },
+        {
+          "page": "f94r",
+          "line": 6,
+          "word_index": 6,
+          "parts": [
+            "dal",
+            "dy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f75v",
+      "line": 25,
+      "type": "+Ln",
+      "word": "qokal",
+      "section": "B",
+      "whole_body_count": 176,
+      "split_occurrences": [
+        {
+          "page": "f104v",
+          "line": 6,
+          "word_index": 5,
+          "parts": [
+            "qoka",
+            "l"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f75v",
+      "line": 30,
+      "type": "@Ln",
+      "word": "dary",
+      "section": "B",
+      "whole_body_count": 14,
+      "split_occurrences": [
+        {
+          "page": "f51v",
+          "line": 5,
+          "word_index": 7,
+          "parts": [
+            "dar",
+            "y"
+          ]
+        },
+        {
+          "page": "f77v",
+          "line": 33,
+          "word_index": 6,
+          "parts": [
+            "dar",
+            "y"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f75v",
+      "line": 32,
+      "type": "@Ln",
+      "word": "daldy",
+      "section": "B",
+      "whole_body_count": 17,
+      "split_occurrences": [
+        {
+          "page": "f33v",
+          "line": 9,
+          "word_index": 9,
+          "parts": [
+            "dal",
+            "dy"
+          ]
+        },
+        {
+          "page": "f68v2",
+          "line": 2,
+          "word_index": 6,
+          "parts": [
+            "dal",
+            "dy"
+          ]
+        },
+        {
+          "page": "f94r",
+          "line": 6,
+          "word_index": 6,
+          "parts": [
+            "dal",
+            "dy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f75v",
+      "line": 35,
+      "type": "+Ln",
+      "word": "ykedy",
+      "section": "B",
+      "whole_body_count": 15,
+      "split_occurrences": [
+        {
+          "page": "f76v",
+          "line": 5,
+          "word_index": 6,
+          "parts": [
+            "y",
+            "kedy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f75v",
+      "line": 52,
+      "type": "=Lt",
+      "word": "olol",
+      "section": "B",
+      "whole_body_count": 13,
+      "split_occurrences": [
+        {
+          "page": "f23r",
+          "line": 5,
+          "word_index": 8,
+          "parts": [
+            "ol",
+            "ol"
+          ]
+        },
+        {
+          "page": "f79r",
+          "line": 41,
+          "word_index": 6,
+          "parts": [
+            "ol",
+            "ol"
+          ]
+        },
+        {
+          "page": "f81r",
+          "line": 4,
+          "word_index": 3,
+          "parts": [
+            "ol",
+            "ol"
+          ]
+        },
+        {
+          "page": "f81r",
+          "line": 5,
+          "word_index": 4,
+          "parts": [
+            "ol",
+            "ol"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f78r",
+      "line": 47,
+      "type": "@Lt",
+      "word": "okaral",
+      "section": "B",
+      "whole_body_count": 5,
+      "split_occurrences": [
+        {
+          "page": "f113v",
+          "line": 23,
+          "word_index": 6,
+          "parts": [
+            "okar",
+            "al"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f80r",
+      "line": 2,
+      "type": "=Ln",
+      "word": "olchdy",
+      "section": "B",
+      "whole_body_count": 7,
+      "split_occurrences": [
+        {
+          "page": "f76r",
+          "line": 11,
+          "word_index": 5,
+          "parts": [
+            "ol",
+            "chdy"
+          ]
+        },
+        {
+          "page": "f78v",
+          "line": 11,
+          "word_index": 6,
+          "parts": [
+            "ol",
+            "chdy"
+          ]
+        },
+        {
+          "page": "f81v",
+          "line": 12,
+          "word_index": 2,
+          "parts": [
+            "ol",
+            "chdy"
+          ]
+        },
+        {
+          "page": "f95r1",
+          "line": 2,
+          "word_index": 1,
+          "parts": [
+            "ol",
+            "chdy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f80r",
+      "line": 5,
+      "type": "=Ln",
+      "word": "okary",
+      "section": "B",
+      "whole_body_count": 7,
+      "split_occurrences": [
+        {
+          "page": "f114r",
+          "line": 18,
+          "word_index": 2,
+          "parts": [
+            "okar",
+            "y"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f80r",
+      "line": 8,
+      "type": "=Ln",
+      "word": "otalshedy",
+      "section": "B",
+      "whole_body_count": 2,
+      "split_occurrences": [
+        {
+          "page": "f79r",
+          "line": 1,
+          "word_index": 7,
+          "parts": [
+            "otal",
+            "shedy"
+          ]
+        },
+        {
+          "page": "f95v1",
+          "line": 5,
+          "word_index": 1,
+          "parts": [
+            "otal",
+            "shedy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f80r",
+      "line": 10,
+      "type": "+Ln",
+      "word": "okan",
+      "section": "B",
+      "whole_body_count": 5,
+      "split_occurrences": [
+        {
+          "page": "f76v",
+          "line": 27,
+          "word_index": 9,
+          "parts": [
+            "o",
+            "kan"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f82r",
+      "line": 34,
+      "type": "@Ln",
+      "word": "okor",
+      "section": "B",
+      "whole_body_count": 25,
+      "split_occurrences": [
+        {
+          "page": "f22r",
+          "line": 2,
+          "word_index": 4,
+          "parts": [
+            "o",
+            "kor"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f82r",
+      "line": 35,
+      "type": "@Lt",
+      "word": "darol",
+      "section": "B",
+      "whole_body_count": 1,
+      "split_occurrences": [
+        {
+          "page": "f39r",
+          "line": 15,
+          "word_index": 4,
+          "parts": [
+            "dar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f75v",
+          "line": 47,
+          "word_index": 4,
+          "parts": [
+            "dar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f84v",
+          "line": 14,
+          "word_index": 10,
+          "parts": [
+            "dar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f86v4",
+          "line": 5,
+          "word_index": 5,
+          "parts": [
+            "dar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f101r",
+          "line": 9,
+          "word_index": 5,
+          "parts": [
+            "dar",
+            "ol"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f82r",
+      "line": 37,
+      "type": "@Ln",
+      "word": "okaldy",
+      "section": "B",
+      "whole_body_count": 8,
+      "split_occurrences": [
+        {
+          "page": "f82v",
+          "line": 16,
+          "word_index": 8,
+          "parts": [
+            "okal",
+            "dy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f82r",
+      "line": 43,
+      "type": "=Ln",
+      "word": "dolol",
+      "section": "B",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f84v",
+          "line": 14,
+          "word_index": 3,
+          "parts": [
+            "dol",
+            "ol"
+          ]
+        },
+        {
+          "page": "f102r2",
+          "line": 11,
+          "word_index": 6,
+          "parts": [
+            "dol",
+            "ol"
+          ]
+        },
+        {
+          "page": "f102v2",
+          "line": 20,
+          "word_index": 8,
+          "parts": [
+            "dol",
+            "ol"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f82r",
+      "line": 44,
+      "type": "=Ln",
+      "word": "olaiin",
+      "section": "B",
+      "whole_body_count": 48,
+      "split_occurrences": [
+        {
+          "page": "f75v",
+          "line": 39,
+          "word_index": 10,
+          "parts": [
+            "ol",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f78r",
+          "line": 38,
+          "word_index": 3,
+          "parts": [
+            "ol",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f101v",
+          "line": 22,
+          "word_index": 5,
+          "parts": [
+            "ol",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f104v",
+          "line": 25,
+          "word_index": 8,
+          "parts": [
+            "ol",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f116r",
+          "line": 11,
+          "word_index": 1,
+          "parts": [
+            "ol",
+            "aiin"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f82v",
+      "line": 39,
+      "type": "@Ln",
+      "word": "olkeedy",
+      "section": "B",
+      "whole_body_count": 42,
+      "split_occurrences": [
+        {
+          "page": "f78v",
+          "line": 4,
+          "word_index": 4,
+          "parts": [
+            "ol",
+            "keedy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f82v",
+      "line": 40,
+      "type": "@Ln",
+      "word": "okalchy",
+      "section": "B",
+      "whole_body_count": 2,
+      "split_occurrences": [
+        {
+          "page": "f13v",
+          "line": 7,
+          "word_index": 2,
+          "parts": [
+            "okal",
+            "chy"
+          ]
+        },
+        {
+          "page": "f69r",
+          "line": 3,
+          "word_index": 4,
+          "parts": [
+            "okal",
+            "chy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f83r",
+      "line": 46,
+      "type": "=Lt",
+      "word": "olsaiin",
+      "section": "B",
+      "whole_body_count": 1,
+      "split_occurrences": [
+        {
+          "page": "f55v",
+          "line": 10,
+          "word_index": 2,
+          "parts": [
+            "ol",
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f78r",
+          "line": 37,
+          "word_index": 2,
+          "parts": [
+            "ol",
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f82r",
+          "line": 16,
+          "word_index": 7,
+          "parts": [
+            "ol",
+            "saiin"
+          ]
+        },
+        {
+          "page": "f83r",
+          "line": 10,
+          "word_index": 4,
+          "parts": [
+            "ols",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f94v",
+          "line": 9,
+          "word_index": 6,
+          "parts": [
+            "ol",
+            "s",
+            "aiin"
+          ]
+        },
+        {
+          "page": "f104v",
+          "line": 19,
+          "word_index": 11,
+          "parts": [
+            "ols",
+            "aiin"
+          ]
+        }
+      ],
+      "own_page": [
+        {
+          "page": "f83r",
+          "line": 10,
+          "word_index": 4,
+          "parts": [
+            "ols",
+            "aiin"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "f88r",
+      "line": 2,
+      "type": "@Lf",
+      "word": "osal",
+      "section": "P",
+      "whole_body_count": 3,
+      "split_occurrences": [
+        {
+          "page": "f86v5",
+          "line": 18,
+          "word_index": 6,
+          "parts": [
+            "os",
+            "al"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f88r",
+      "line": 4,
+      "type": "@Lf",
+      "word": "oldar",
+      "section": "P",
+      "whole_body_count": 7,
+      "split_occurrences": [
+        {
+          "page": "f79v",
+          "line": 17,
+          "word_index": 4,
+          "parts": [
+            "ol",
+            "dar"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f88r",
+      "line": 14,
+      "type": "@Lf",
+      "word": "dary",
+      "section": "P",
+      "whole_body_count": 14,
+      "split_occurrences": [
+        {
+          "page": "f51v",
+          "line": 5,
+          "word_index": 7,
+          "parts": [
+            "dar",
+            "y"
+          ]
+        },
+        {
+          "page": "f77v",
+          "line": 33,
+          "word_index": 6,
+          "parts": [
+            "dar",
+            "y"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f89r2",
+      "line": 17,
+      "type": "@Lf",
+      "word": "sodar",
+      "section": "P",
+      "whole_body_count": 4,
+      "split_occurrences": [
+        {
+          "page": "f87r",
+          "line": 4,
+          "word_index": 6,
+          "parts": [
+            "s",
+            "odar"
+          ]
+        },
+        {
+          "page": "f93r",
+          "line": 8,
+          "word_index": 3,
+          "parts": [
+            "s",
+            "odar"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f89r2",
+      "line": 18,
+      "type": "@Lf",
+      "word": "cheys",
+      "section": "P",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f89r2",
+          "line": 14,
+          "word_index": 5,
+          "parts": [
+            "chey",
+            "s"
+          ]
+        }
+      ],
+      "own_page": [
+        {
+          "page": "f89r2",
+          "line": 14,
+          "word_index": 5,
+          "parts": [
+            "chey",
+            "s"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "f89v2",
+      "line": 3,
+      "type": "@Lf",
+      "word": "darcheor",
+      "section": "P",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f102v2",
+          "line": 32,
+          "word_index": 1,
+          "parts": [
+            "dar",
+            "cheor"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f89v2",
+      "line": 24,
+      "type": "@Lf",
+      "word": "otaram",
+      "section": "P",
+      "whole_body_count": 3,
+      "split_occurrences": [
+        {
+          "page": "f112r",
+          "line": 5,
+          "word_index": 5,
+          "parts": [
+            "otar",
+            "am"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f99r",
+      "line": 2,
+      "type": "@Lf",
+      "word": "okary",
+      "section": "P",
+      "whole_body_count": 7,
+      "split_occurrences": [
+        {
+          "page": "f114r",
+          "line": 18,
+          "word_index": 2,
+          "parts": [
+            "okar",
+            "y"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f99r",
+      "line": 3,
+      "type": "@Lf",
+      "word": "darar",
+      "section": "P",
+      "whole_body_count": 2,
+      "split_occurrences": [
+        {
+          "page": "f39r",
+          "line": 3,
+          "word_index": 7,
+          "parts": [
+            "dar",
+            "ar"
+          ]
+        },
+        {
+          "page": "f39r",
+          "line": 7,
+          "word_index": 7,
+          "parts": [
+            "dar",
+            "ar"
+          ]
+        },
+        {
+          "page": "f39v",
+          "line": 10,
+          "word_index": 1,
+          "parts": [
+            "dar",
+            "ar"
+          ]
+        },
+        {
+          "page": "f78r",
+          "line": 18,
+          "word_index": 3,
+          "parts": [
+            "dar",
+            "ar"
+          ]
+        },
+        {
+          "page": "f105v",
+          "line": 6,
+          "word_index": 7,
+          "parts": [
+            "dar",
+            "ar"
+          ]
+        },
+        {
+          "page": "f115r",
+          "line": 8,
+          "word_index": 9,
+          "parts": [
+            "dar",
+            "ar"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f99r",
+      "line": 8,
+      "type": "@Lf",
+      "word": "okor",
+      "section": "P",
+      "whole_body_count": 25,
+      "split_occurrences": [
+        {
+          "page": "f22r",
+          "line": 2,
+          "word_index": 4,
+          "parts": [
+            "o",
+            "kor"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f99r",
+      "line": 11,
+      "type": "@Lf",
+      "word": "okary",
+      "section": "P",
+      "whole_body_count": 7,
+      "split_occurrences": [
+        {
+          "page": "f114r",
+          "line": 18,
+          "word_index": 2,
+          "parts": [
+            "okar",
+            "y"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f99r",
+      "line": 23,
+      "type": "@Lf",
+      "word": "choky",
+      "section": "P",
+      "whole_body_count": 34,
+      "split_occurrences": [
+        {
+          "page": "f19r",
+          "line": 7,
+          "word_index": 2,
+          "parts": [
+            "cho",
+            "ky"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f99v",
+      "line": 4,
+      "type": "@Lf",
+      "word": "oldy",
+      "section": "P",
+      "whole_body_count": 20,
+      "split_occurrences": [
+        {
+          "page": "f17v",
+          "line": 8,
+          "word_index": 3,
+          "parts": [
+            "ol",
+            "dy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f99v",
+      "line": 8,
+      "type": "@Lf",
+      "word": "arol",
+      "section": "P",
+      "whole_body_count": 5,
+      "split_occurrences": [
+        {
+          "page": "f23r",
+          "line": 5,
+          "word_index": 7,
+          "parts": [
+            "ar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f80v",
+          "line": 13,
+          "word_index": 2,
+          "parts": [
+            "ar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f86v5",
+          "line": 15,
+          "word_index": 10,
+          "parts": [
+            "ar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f106r",
+          "line": 28,
+          "word_index": 10,
+          "parts": [
+            "ar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f111v",
+          "line": 50,
+          "word_index": 8,
+          "parts": [
+            "ar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f113v",
+          "line": 30,
+          "word_index": 7,
+          "parts": [
+            "ar",
+            "ol"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f99v",
+      "line": 18,
+      "type": "@Lf",
+      "word": "saiino",
+      "section": "P",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f40v",
+          "line": 14,
+          "word_index": 1,
+          "parts": [
+            "saiin",
+            "o"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f100r",
+      "line": 18,
+      "type": "@Lf",
+      "word": "orol",
+      "section": "P",
+      "whole_body_count": 9,
+      "split_occurrences": [
+        {
+          "page": "f34v",
+          "line": 3,
+          "word_index": 6,
+          "parts": [
+            "or",
+            "ol"
+          ]
+        },
+        {
+          "page": "f54r",
+          "line": 9,
+          "word_index": 2,
+          "parts": [
+            "or",
+            "ol"
+          ]
+        },
+        {
+          "page": "f54r",
+          "line": 11,
+          "word_index": 3,
+          "parts": [
+            "or",
+            "ol"
+          ]
+        },
+        {
+          "page": "f82r",
+          "line": 16,
+          "word_index": 6,
+          "parts": [
+            "or",
+            "ol"
+          ]
+        },
+        {
+          "page": "f84r",
+          "line": 14,
+          "word_index": 9,
+          "parts": [
+            "or",
+            "ol"
+          ]
+        },
+        {
+          "page": "f101r",
+          "line": 2,
+          "word_index": 8,
+          "parts": [
+            "or",
+            "ol"
+          ]
+        },
+        {
+          "page": "f101r",
+          "line": 3,
+          "word_index": 14,
+          "parts": [
+            "or",
+            "ol"
+          ]
+        },
+        {
+          "page": "f101v",
+          "line": 22,
+          "word_index": 4,
+          "parts": [
+            "or",
+            "ol"
+          ]
+        },
+        {
+          "page": "f102v2",
+          "line": 19,
+          "word_index": 7,
+          "parts": [
+            "or",
+            "ol"
+          ]
+        },
+        {
+          "page": "f104v",
+          "line": 33,
+          "word_index": 7,
+          "parts": [
+            "or",
+            "ol"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f100v",
+      "line": 2,
+      "type": "@Lf",
+      "word": "chols",
+      "section": "P",
+      "whole_body_count": 3,
+      "split_occurrences": [
+        {
+          "page": "f3r",
+          "line": 16,
+          "word_index": 2,
+          "parts": [
+            "chol",
+            "s"
+          ]
+        },
+        {
+          "page": "f3r",
+          "line": 20,
+          "word_index": 4,
+          "parts": [
+            "chol",
+            "s"
+          ]
+        },
+        {
+          "page": "f24r",
+          "line": 18,
+          "word_index": 4,
+          "parts": [
+            "chol",
+            "s"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f100v",
+      "line": 9,
+      "type": "@Lf",
+      "word": "dalsy",
+      "section": "P",
+      "whole_body_count": 0,
+      "split_occurrences": [
+        {
+          "page": "f83r",
+          "line": 14,
+          "word_index": 9,
+          "parts": [
+            "dal",
+            "sy"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f101v",
+      "line": 6,
+      "type": "@Lf",
+      "word": "orar",
+      "section": "P",
+      "whole_body_count": 6,
+      "split_occurrences": [
+        {
+          "page": "f34r",
+          "line": 14,
+          "word_index": 1,
+          "parts": [
+            "or",
+            "ar"
+          ]
+        },
+        {
+          "page": "f40r",
+          "line": 6,
+          "word_index": 2,
+          "parts": [
+            "or",
+            "ar"
+          ]
+        },
+        {
+          "page": "f50r",
+          "line": 4,
+          "word_index": 6,
+          "parts": [
+            "or",
+            "ar"
+          ]
+        },
+        {
+          "page": "f76r",
+          "line": 55,
+          "word_index": 3,
+          "parts": [
+            "or",
+            "ar"
+          ]
+        },
+        {
+          "page": "f86v3",
+          "line": 3,
+          "word_index": 5,
+          "parts": [
+            "or",
+            "ar"
+          ]
+        },
+        {
+          "page": "f112v",
+          "line": 3,
+          "word_index": 4,
+          "parts": [
+            "or",
+            "ar"
+          ]
+        },
+        {
+          "page": "f115r",
+          "line": 24,
+          "word_index": 3,
+          "parts": [
+            "or",
+            "ar"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f101v",
+      "line": 7,
+      "type": "@Lf",
+      "word": "otarar",
+      "section": "P",
+      "whole_body_count": 4,
+      "split_occurrences": [
+        {
+          "page": "f34v",
+          "line": 8,
+          "word_index": 2,
+          "parts": [
+            "otar",
+            "ar"
+          ]
+        },
+        {
+          "page": "f46v",
+          "line": 2,
+          "word_index": 6,
+          "parts": [
+            "otar",
+            "ar"
+          ]
+        },
+        {
+          "page": "f86v6",
+          "line": 9,
+          "word_index": 7,
+          "parts": [
+            "otar",
+            "ar"
+          ]
+        },
+        {
+          "page": "f105r",
+          "line": 32,
+          "word_index": 9,
+          "parts": [
+            "otar",
+            "ar"
+          ]
+        },
+        {
+          "page": "f113v",
+          "line": 13,
+          "word_index": 2,
+          "parts": [
+            "otar",
+            "ar"
+          ]
+        },
+        {
+          "page": "f113v",
+          "line": 26,
+          "word_index": 4,
+          "parts": [
+            "otar",
+            "ar"
+          ]
+        },
+        {
+          "page": "f115r",
+          "line": 44,
+          "word_index": 7,
+          "parts": [
+            "otar",
+            "ar"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f101v",
+      "line": 15,
+      "type": "@Lf",
+      "word": "olkor",
+      "section": "P",
+      "whole_body_count": 2,
+      "split_occurrences": [
+        {
+          "page": "f39v",
+          "line": 5,
+          "word_index": 10,
+          "parts": [
+            "ol",
+            "kor"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f102v2",
+      "line": 3,
+      "type": "@Lf",
+      "word": "oror",
+      "section": "P",
+      "whole_body_count": 5,
+      "split_occurrences": [
+        {
+          "page": "f79v",
+          "line": 39,
+          "word_index": 4,
+          "parts": [
+            "or",
+            "or"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f102v2",
+      "line": 4,
+      "type": "@Lf",
+      "word": "chor",
+      "section": "P",
+      "whole_body_count": 179,
+      "split_occurrences": [
+        {
+          "page": "f24r",
+          "line": 5,
+          "word_index": 2,
+          "parts": [
+            "cho",
+            "r"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f102v2",
+      "line": 11,
+      "type": "@Lf",
+      "word": "cheor",
+      "section": "P",
+      "whole_body_count": 71,
+      "split_occurrences": [
+        {
+          "page": "f20r",
+          "line": 8,
+          "word_index": 2,
+          "parts": [
+            "cheo",
+            "r"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f102v2",
+      "line": 14,
+      "type": "@Lf",
+      "word": "sarol",
+      "section": "P",
+      "whole_body_count": 3,
+      "split_occurrences": [
+        {
+          "page": "f77r",
+          "line": 41,
+          "word_index": 7,
+          "parts": [
+            "s",
+            "arol"
+          ]
+        },
+        {
+          "page": "f79v",
+          "line": 9,
+          "word_index": 1,
+          "parts": [
+            "sar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f81v",
+          "line": 2,
+          "word_index": 5,
+          "parts": [
+            "sar",
+            "ol"
+          ]
+        },
+        {
+          "page": "f84r",
+          "line": 28,
+          "word_index": 1,
+          "parts": [
+            "sar",
+            "ol"
+          ]
+        }
+      ],
+      "own_page": []
+    },
+    {
+      "page": "f102v2",
+      "line": 25,
+      "type": "@Lf",
+      "word": "osain",
+      "section": "P",
+      "whole_body_count": 1,
+      "split_occurrences": [
+        {
+          "page": "f55v",
+          "line": 3,
+          "word_index": 2,
+          "parts": [
+            "os",
+            "ain"
+          ]
+        }
+      ],
+      "own_page": []
+    }
+  ]
+}

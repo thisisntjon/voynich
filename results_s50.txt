@@ -1,0 +1,263 @@
+S50 (P4-D2): solver positive-control ladder L1->L4, verbose homophonic family (pre-registered in the docstring)
+date: Sun Oct 18 00:58:55 PDT 2026
+hashes: s50_solver_ladder.py=1b5c5227cf12db05d7c09d73040fad545e5f318512254128c609dbe4441b965b  s50_solver.py=c63e035be6a0e03f7a71c0be6e5b1a3a1bd2033ce8041552bb169319f10df9ad
+stub_match: True  (stub s50_solver_ladder.prereg.sha256)
+deps (imported unchanged): p4d1_core_order.py=5a400968081214ba  scoreboard/metrics_new.py=a59c9c17f8abe4cc  corpora.py=2f2b3d4af32a054a  a1_profile.py=0b20e37ec2254d27  s15_ranges.json=b995aba64e5baa22
+
+Voynich ZL3b paragraph text: 34857 tokens, 4130 lines; cipher layout 38000 tokens on 4600 lines (cycled); half A = 18998 tokens, half B = 19002
+Voynich ZL3b statistics (reference, 34,857 tokens): types 7025  hapax 0.680  h2 2.109  A14 -0.0315  Moran +0.1572
+Targets: types [5971, 8079]  hapax [0.64, 0.72]  h2 [2.05, 2.15]  A14 <= 0  Moran [0.1086, 0.1700]   (* = outside)
+
+Languages (plaintext letters / LM letters / LM held-out bits per letter on the plaintext):
+  latin    plaintext latin_caesar 100000 letters; LM ['latin_augustine', 'latin_pliny_herbal'] 1108105 letters; H = 2.933 bits/letter
+  italian  plaintext italian_dante 100000 letters; LM same text, letters >= 120k 265137 letters; H = 2.895 bits/letter
+  german   plaintext mhg_nibelungenlied 100000 letters; LM ['mhg_parzival'] 541309 letters; H = 2.873 bits/letter
+  occitan  plaintext occitan_croisade_albigeoise 100000 letters; LM same text, letters >= 120k 186841 letters; H = 3.205 bits/letter
+  czech    plaintext czech_bible_kralicka_1613 100000 letters; LM same text, letters >= 120k 212998 letters; H = 3.326 bits/letter
+  catalan  plaintext catalan_tirant 100000 letters; LM same text, letters >= 120k 652109 letters; H = 2.467 bits/letter
+
+=== L1 === start Sun Oct 18 00:59:03 PDT 2026
+L1 construction latin key 1: alloc min/max 3/15; |P|=50 |S|=52; ciphertext types 7826  hapax 0.565*  h2 3.147*  A14 +0.0264*  Moran +0.0047*
+L1 construction italian key 1: alloc min/max 3/15; |P|=50 |S|=52; ciphertext types 7531  hapax 0.561*  h2 3.164*  A14 +0.0330*  Moran -0.0032*
+L1 construction german key 1: alloc min/max 3/21; |P|=51 |S|=52; ciphertext types 7309  hapax 0.547*  h2 3.083*  A14 +0.0535*  Moran +0.0061*
+L1 construction occitan key 1: alloc min/max 3/16; |P|=50 |S|=52; ciphertext types 7821  hapax 0.568*  h2 3.168*  A14 +0.0228*  Moran -0.0012*
+L1 construction czech key 1: alloc min/max 3/16; |P|=48 |S|=54; ciphertext types 7890  hapax 0.567*  h2 3.107*  A14 +0.0305*  Moran +0.0000*
+L1 construction catalan key 1: alloc min/max 3/20; |P|=49 |S|=54; ciphertext types 7571  hapax 0.557*  h2 3.085*  A14 +0.0476*  Moran -0.0029*
+L1: launching 18 solver jobs on 8 processes at Sun Oct 18 00:59:24 PDT 2026
+--- L1 results (elapsed 2.7 min)
+L1 latin    key 1: acc 0.9999 OK (>=0.90: yes)  nulls 0/129 units  1.0 min  chosen=given
+L1 latin    key 2: acc 0.9998 OK (>=0.90: yes)  nulls 1/129 units  1.0 min  chosen=given
+L1 latin    key 3: acc 0.9999 OK (>=0.90: yes)  nulls 0/128 units  1.0 min  chosen=given
+L1 latin    CELL PASS (3/3 keys >= 0.80; mean acc 0.9999)
+L1 italian  key 1: acc 0.9998 OK (>=0.90: yes)  nulls 2/132 units  1.0 min  chosen=given
+L1 italian  key 2: acc 0.9999 OK (>=0.90: yes)  nulls 0/131 units  1.0 min  chosen=given
+L1 italian  key 3: acc 0.9998 OK (>=0.90: yes)  nulls 2/132 units  1.0 min  chosen=given
+L1 italian  CELL PASS (3/3 keys >= 0.80; mean acc 0.9998)
+L1 german   key 1: acc 0.9997 OK (>=0.90: yes)  nulls 2/132 units  1.0 min  chosen=given
+L1 german   key 2: acc 0.9999 OK (>=0.90: yes)  nulls 1/132 units  1.0 min  chosen=given
+L1 german   key 3: acc 0.9999 OK (>=0.90: yes)  nulls 2/131 units  1.0 min  chosen=given
+L1 german   CELL PASS (3/3 keys >= 0.80; mean acc 0.9998)
+L1 occitan  key 1: acc 0.9999 OK (>=0.90: yes)  nulls 3/135 units  1.0 min  chosen=given
+L1 occitan  key 2: acc 0.9999 OK (>=0.90: yes)  nulls 3/135 units  1.0 min  chosen=given
+L1 occitan  key 3: acc 0.9999 OK (>=0.90: yes)  nulls 2/134 units  1.0 min  chosen=given
+L1 occitan  CELL PASS (3/3 keys >= 0.80; mean acc 0.9999)
+L1 czech    key 1: acc 1.0000 OK (>=0.90: yes)  nulls 2/135 units  1.0 min  chosen=given
+L1 czech    key 2: acc 0.9997 OK (>=0.90: yes)  nulls 3/136 units  1.0 min  chosen=given
+L1 czech    key 3: acc 0.9995 OK (>=0.90: yes)  nulls 2/136 units  1.0 min  chosen=given
+L1 czech    CELL PASS (3/3 keys >= 0.80; mean acc 0.9997)
+L1 catalan  key 1: acc 0.9999 OK (>=0.90: yes)  nulls 2/135 units  1.0 min  chosen=given
+L1 catalan  key 2: acc 1.0000 OK (>=0.90: yes)  nulls 1/135 units  0.7 min  chosen=given
+L1 catalan  key 3: acc 1.0000 OK (>=0.90: yes)  nulls 1/134 units  0.7 min  chosen=given
+L1 catalan  CELL PASS (3/3 keys >= 0.80; mean acc 0.9999)
+L1 passes in 6/6 languages: latin, italian, german, occitan, czech, catalan
+
+=== L2 === start Sun Oct 18 01:02:08 PDT 2026
+L2 construction latin key 1: alloc min/max 3/15; |P|=50 |S|=52; ciphertext types 9603*  hapax 0.620*  h2 3.179*  A14 +0.0165*  Moran +0.0099*
+L2 construction italian key 1: alloc min/max 3/15; |P|=50 |S|=52; ciphertext types 9281*  hapax 0.611*  h2 3.199*  A14 +0.0265*  Moran +0.0118*
+L2 construction german key 1: alloc min/max 3/21; |P|=51 |S|=52; ciphertext types 9066*  hapax 0.604*  h2 3.150*  A14 +0.0214*  Moran +0.0122*
+L2 construction occitan key 1: alloc min/max 3/16; |P|=50 |S|=52; ciphertext types 9477*  hapax 0.616*  h2 3.194*  A14 +0.0197*  Moran +0.0082*
+L2 construction czech key 1: alloc min/max 3/16; |P|=48 |S|=54; ciphertext types 9644*  hapax 0.615*  h2 3.195*  A14 +0.0220*  Moran +0.0095*
+L2 construction catalan key 1: alloc min/max 3/20; |P|=49 |S|=54; ciphertext types 9422*  hapax 0.617*  h2 3.170*  A14 +0.0293*  Moran +0.0095*
+L2: launching 18 solver jobs on 8 processes at Sun Oct 18 01:02:30 PDT 2026
+--- L2 results (elapsed 7.1 min)
+L2 latin    key 1: acc 1.0000 OK (>=0.90: yes)  nulls 20/149 units  2.2 min  chosen=given
+L2 latin    key 2: acc 0.9999 OK (>=0.90: yes)  nulls 20/148 units  2.9 min  chosen=given
+L2 latin    key 3: acc 0.9995 OK (>=0.90: yes)  nulls 20/148 units  2.2 min  chosen=given
+L2 latin    CELL PASS (3/3 keys >= 0.80; mean acc 0.9998)
+L2 italian  key 1: acc 0.9997 OK (>=0.90: yes)  nulls 22/152 units  2.3 min  chosen=given
+L2 italian  key 2: acc 0.9997 OK (>=0.90: yes)  nulls 21/151 units  2.5 min  chosen=given
+L2 italian  key 3: acc 0.0929 fail (>=0.90: no)  nulls 45/151 units  2.0 min  chosen=given
+L2 italian  CELL PASS (2/3 keys >= 0.80; mean acc 0.6974)
+L2 german   key 1: acc 0.9997 OK (>=0.90: yes)  nulls 21/152 units  3.2 min  chosen=given
+L2 german   key 2: acc 0.9997 OK (>=0.90: yes)  nulls 21/152 units  3.1 min  chosen=given
+L2 german   key 3: acc 0.9997 OK (>=0.90: yes)  nulls 22/151 units  2.9 min  chosen=given
+L2 german   CELL PASS (3/3 keys >= 0.80; mean acc 0.9997)
+L2 occitan  key 1: acc 0.9995 OK (>=0.90: yes)  nulls 22/153 units  3.5 min  chosen=given
+L2 occitan  key 2: acc 0.9998 OK (>=0.90: yes)  nulls 22/153 units  2.9 min  chosen=given
+L2 occitan  key 3: acc 0.9997 OK (>=0.90: yes)  nulls 23/154 units  4.0 min  chosen=given
+L2 occitan  CELL PASS (3/3 keys >= 0.80; mean acc 0.9997)
+L2 czech    key 1: acc 0.9995 OK (>=0.90: yes)  nulls 21/155 units  3.6 min  chosen=given
+L2 czech    key 2: acc 0.9996 OK (>=0.90: yes)  nulls 21/155 units  3.6 min  chosen=given
+L2 czech    key 3: acc 0.9993 OK (>=0.90: yes)  nulls 23/156 units  3.3 min  chosen=given
+L2 czech    CELL PASS (3/3 keys >= 0.80; mean acc 0.9995)
+L2 catalan  key 1: acc 1.0000 OK (>=0.90: yes)  nulls 22/155 units  2.3 min  chosen=given
+L2 catalan  key 2: acc 0.9998 OK (>=0.90: yes)  nulls 23/155 units  1.9 min  chosen=given
+L2 catalan  key 3: acc 0.9999 OK (>=0.90: yes)  nulls 23/155 units  1.9 min  chosen=given
+L2 catalan  CELL PASS (3/3 keys >= 0.80; mean acc 0.9999)
+L2 passes in 6/6 languages: latin, italian, german, occitan, czech, catalan
+
+=== L3 === start Sun Oct 18 01:09:37 PDT 2026
+L3 construction latin key 1: alloc min/max 3/15; |P|=50 |S|=52; ciphertext types 9603*  hapax 0.620*  h2 3.179*  A14 +0.0165*  Moran +0.0099*
+L3 construction italian key 1: alloc min/max 3/15; |P|=50 |S|=52; ciphertext types 9281*  hapax 0.611*  h2 3.199*  A14 +0.0265*  Moran +0.0118*
+L3 construction german key 1: alloc min/max 3/21; |P|=51 |S|=52; ciphertext types 9066*  hapax 0.604*  h2 3.150*  A14 +0.0214*  Moran +0.0122*
+L3 construction occitan key 1: alloc min/max 3/16; |P|=50 |S|=52; ciphertext types 9477*  hapax 0.616*  h2 3.194*  A14 +0.0197*  Moran +0.0082*
+L3 construction czech key 1: alloc min/max 3/16; |P|=48 |S|=54; ciphertext types 9644*  hapax 0.615*  h2 3.195*  A14 +0.0220*  Moran +0.0095*
+L3 construction catalan key 1: alloc min/max 3/20; |P|=49 |S|=54; ciphertext types 9422*  hapax 0.617*  h2 3.170*  A14 +0.0293*  Moran +0.0095*
+L3: launching 18 solver jobs on 8 processes at Sun Oct 18 01:09:55 PDT 2026
+--- L3 results (elapsed 43.4 min)
+L3 latin    key 1: acc 0.9892 OK (>=0.90: yes)  nulls 102/232 units  15.4 min  chosen=seg('mdl', '-') sep |P|=42 |S|=50 seg_true=False true_reading=sep
+L3 latin    key 2: acc 0.9877 OK (>=0.90: yes)  nulls 142/283 units  16.1 min  chosen=seg('mdl', '-') sep |P|=44 |S|=49 seg_true=False true_reading=sep
+L3 latin    key 3: acc 0.9858 OK (>=0.90: yes)  nulls 151/294 units  16.4 min  chosen=seg('mdl', '-') sep |P|=35 |S|=55 seg_true=False true_reading=sep
+L3 latin    CELL PASS (3/3 keys >= 0.80; mean acc 0.9876)
+L3 italian  key 1: acc 0.9809 OK (>=0.90: yes)  nulls 148/286 units  12.0 min  chosen=seg('mdl', '-') sep |P|=38 |S|=50 seg_true=False true_reading=sep
+L3 italian  key 2: acc 0.9771 OK (>=0.90: yes)  nulls 130/274 units  13.0 min  chosen=seg('mdl', '-') sep |P|=41 |S|=47 seg_true=False true_reading=sep
+L3 italian  key 3: acc 0.9860 OK (>=0.90: yes)  nulls 119/267 units  13.4 min  chosen=seg('mdl', '-') sep |P|=38 |S|=49 seg_true=False true_reading=sep
+L3 italian  CELL PASS (3/3 keys >= 0.80; mean acc 0.9813)
+L3 german   key 1: acc 0.9754 OK (>=0.90: yes)  nulls 166/303 units  13.9 min  chosen=seg('mdl', '-') sep |P|=40 |S|=48 seg_true=False true_reading=sep
+L3 german   key 2: acc 0.9811 OK (>=0.90: yes)  nulls 136/274 units  12.6 min  chosen=seg('mdl', '-') sep |P|=41 |S|=50 seg_true=False true_reading=sep
+L3 german   key 3: acc 0.0448 fail (>=0.90: no)  nulls 756/1372 units  16.6 min  chosen=seg('mdl', '-') pair |P|=40 |S|=50 seg_true=False true_reading=sep
+L3 german   CELL PASS (2/3 keys >= 0.80; mean acc 0.6671)
+L3 occitan  key 1: acc 0.9897 OK (>=0.90: yes)  nulls 137/268 units  16.1 min  chosen=seg('mdl', '-') sep |P|=42 |S|=48 seg_true=False true_reading=sep
+L3 occitan  key 2: acc 0.9866 OK (>=0.90: yes)  nulls 148/288 units  15.4 min  chosen=seg('mdl', '-') sep |P|=46 |S|=48 seg_true=False true_reading=sep
+L3 occitan  key 3: acc 0.9916 OK (>=0.90: yes)  nulls 122/253 units  16.1 min  chosen=seg('mdl', '-') sep |P|=42 |S|=51 seg_true=False true_reading=sep
+L3 occitan  CELL PASS (3/3 keys >= 0.80; mean acc 0.9893)
+L3 czech    key 1: acc 0.0548 fail (>=0.90: no)  nulls 747/1387 units  15.7 min  chosen=seg('mdl', '-') pair |P|=38 |S|=54 seg_true=False true_reading=sep
+L3 czech    key 2: acc 0.9916 OK (>=0.90: yes)  nulls 92/231 units  17.0 min  chosen=seg('mdl', '-') sep |P|=45 |S|=49 seg_true=False true_reading=sep
+L3 czech    key 3: acc 0.9878 OK (>=0.90: yes)  nulls 134/269 units  16.9 min  chosen=seg('mdl', '-') sep |P|=37 |S|=56 seg_true=False true_reading=sep
+L3 czech    CELL PASS (2/3 keys >= 0.80; mean acc 0.6781)
+L3 catalan  key 1: acc 0.9884 OK (>=0.90: yes)  nulls 128/265 units  15.4 min  chosen=seg('mdl', '-') sep |P|=41 |S|=50 seg_true=False true_reading=sep
+L3 catalan  key 2: acc 0.9843 OK (>=0.90: yes)  nulls 131/268 units  14.9 min  chosen=seg('mdl', '-') sep |P|=41 |S|=49 seg_true=False true_reading=sep
+L3 catalan  key 3: acc 0.9914 OK (>=0.90: yes)  nulls 139/283 units  14.7 min  chosen=seg('mdl', '-') sep |P|=39 |S|=54 seg_true=False true_reading=sep
+L3 catalan  CELL PASS (3/3 keys >= 0.80; mean acc 0.9881)
+L3 passes in 6/6 languages: latin, italian, german, occitan, czech, catalan
+
+=== L4 === start Sun Oct 18 01:53:17 PDT 2026
+L4 base: ZL3b SlotSegmenter |P|=28 |S|=18, 526 attested pairs, 2335 cores
+L4 calibration K=0  beta=0.0 alpha=0.7 gamma=0.0: types 19863*  hapax 0.768*  h2 2.761*  A14 +0.0047*  Moran -0.0092*  dist 13.22
+L4 calibration K=0  beta=0.0 alpha=0.7 gamma=0.5: types 13775*  hapax 0.768*  h2 2.569*  A14 -0.0047  Moran -0.0251*  dist 9.39
+L4 calibration K=0  beta=0.0 alpha=0.7 gamma=1.0: types 7399  hapax 0.760*  h2 2.287*  A14 +0.0161*  Moran -0.0371*  dist 5.75
+L4 calibration K=0  beta=0.0 alpha=1.0 gamma=0.0: types 10031*  hapax 0.634*  h2 2.628*  A14 +0.0092*  Moran -0.0174*  dist 10.57
+L4 calibration K=0  beta=0.0 alpha=1.0 gamma=0.5: types 6868  hapax 0.598*  h2 2.412*  A14 +0.0384*  Moran -0.0341*  dist 6.23
+L4 calibration K=0  beta=0.0 alpha=1.0 gamma=1.0: types 4245*  hapax 0.574*  h2 2.196*  A14 +0.0528*  Moran -0.0328*  dist 6.28
+L4 calibration K=0  beta=0.0 alpha=1.3 gamma=0.0: types 5633*  hapax 0.473*  h2 2.536*  A14 +0.0277*  Moran -0.0330*  dist 8.71
+L4 calibration K=0  beta=0.0 alpha=1.3 gamma=0.5: types 4333*  hapax 0.438*  h2 2.342*  A14 +0.0558*  Moran -0.0282*  dist 6.58
+L4 calibration K=0  beta=0.0 alpha=1.3 gamma=1.0: types 2987*  hapax 0.432*  h2 2.167*  A14 +0.0630*  Moran -0.0285*  dist 7.30
+L4 calibration K=0  beta=1.0 alpha=0.7 gamma=0.0: types 15734*  hapax 0.721*  h2 2.811*  A14 +0.0034*  Moran +0.3499*  dist 14.22
+L4 calibration K=0  beta=1.0 alpha=0.7 gamma=0.5: types 11872*  hapax 0.730*  h2 2.581*  A14 +0.0097*  Moran +0.3166*  dist 9.63
+L4 calibration K=0  beta=1.0 alpha=0.7 gamma=1.0: types 7209  hapax 0.721*  h2 2.313*  A14 +0.0270*  Moran +0.2112*  dist 4.26
+L4 calibration K=0  beta=1.0 alpha=1.0 gamma=0.0: types 9529*  hapax 0.617*  h2 2.641*  A14 +0.0058*  Moran +0.3098*  dist 10.82
+L4 calibration K=0  beta=1.0 alpha=1.0 gamma=0.5: types 7105  hapax 0.603*  h2 2.424*  A14 +0.0255*  Moran +0.2435*  dist 6.48
+L4 calibration K=0  beta=1.0 alpha=1.0 gamma=1.0: types 4615*  hapax 0.587*  h2 2.218*  A14 +0.0515*  Moran +0.1418  dist 6.15
+L4 calibration K=0  beta=1.0 alpha=1.3 gamma=0.0: types 5960*  hapax 0.484*  h2 2.530*  A14 +0.0305*  Moran +0.2349*  dist 8.59
+L4 calibration K=0  beta=1.0 alpha=1.3 gamma=0.5: types 4705*  hapax 0.459*  h2 2.346*  A14 +0.0401*  Moran +0.1715*  dist 5.53
+L4 calibration K=0  beta=1.0 alpha=1.3 gamma=1.0: types 3378*  hapax 0.469*  h2 2.181*  A14 +0.0555*  Moran +0.0953*  dist 6.55
+L4 calibration K=0  beta=2.0 alpha=0.7 gamma=0.0: types 15113*  hapax 0.713  h2 2.817*  A14 +0.0155*  Moran +0.5145*  dist 14.34
+L4 calibration K=0  beta=2.0 alpha=0.7 gamma=0.5: types 12279*  hapax 0.729*  h2 2.599*  A14 +0.0128*  Moran +0.5050*  dist 11.91
+L4 calibration K=0  beta=2.0 alpha=0.7 gamma=1.0: types 8559*  hapax 0.744*  h2 2.363*  A14 +0.0341*  Moran +0.4563*  dist 10.33
+L4 calibration K=0  beta=2.0 alpha=1.0 gamma=0.0: types 10287*  hapax 0.634*  h2 2.645*  A14 +0.0268*  Moran +0.5129*  dist 12.17
+L4 calibration K=0  beta=2.0 alpha=1.0 gamma=0.5: types 8259*  hapax 0.637*  h2 2.443*  A14 +0.0402*  Moran +0.4849*  dist 11.26
+L4 calibration K=0  beta=2.0 alpha=1.0 gamma=1.0: types 6031  hapax 0.636*  h2 2.265*  A14 +0.0477*  Moran +0.4167*  dist 9.04
+L4 calibration K=0  beta=2.0 alpha=1.3 gamma=0.0: types 7081  hapax 0.546*  h2 2.520*  A14 +0.0352*  Moran +0.4879*  dist 11.36
+L4 calibration K=0  beta=2.0 alpha=1.3 gamma=0.5: types 5887*  hapax 0.539*  h2 2.349*  A14 +0.0437*  Moran +0.4452*  dist 9.96
+L4 calibration K=0  beta=2.0 alpha=1.3 gamma=1.0: types 4409*  hapax 0.540*  h2 2.201*  A14 +0.0622*  Moran +0.3627*  dist 7.28
+L4 calibration K=4  beta=0.0 alpha=0.7 gamma=0.0: types 20020*  hapax 0.758*  h2 2.759*  A14 -0.3759  Moran -0.0035*  dist 13.19
+L4 calibration K=4  beta=0.0 alpha=0.7 gamma=0.5: types 18426*  hapax 0.759*  h2 2.714*  A14 -0.3816  Moran -0.0051*  dist 12.29
+L4 calibration K=4  beta=0.0 alpha=0.7 gamma=1.0: types 17575*  hapax 0.758*  h2 2.692*  A14 -0.3786  Moran -0.0080*  dist 11.84
+L4 calibration K=4  beta=0.0 alpha=1.0 gamma=0.0: types 10104*  hapax 0.631*  h2 2.629*  A14 -0.2998  Moran -0.0272*  dist 10.58
+L4 calibration K=4  beta=0.0 alpha=1.0 gamma=0.5: types 9052*  hapax 0.618*  h2 2.562*  A14 -0.2593  Moran -0.0284*  dist 9.24
+L4 calibration K=4  beta=0.0 alpha=1.0 gamma=1.0: types 8474*  hapax 0.612*  h2 2.526*  A14 -0.2472  Moran -0.0283*  dist 8.52
+L4 calibration K=4  beta=0.0 alpha=1.3 gamma=0.0: types 5738*  hapax 0.473*  h2 2.544*  A14 -0.1707  Moran -0.0293*  dist 8.88
+L4 calibration K=4  beta=0.0 alpha=1.3 gamma=0.5: types 5237*  hapax 0.463*  h2 2.466*  A14 -0.1369  Moran -0.0263*  dist 7.33
+L4 calibration K=4  beta=0.0 alpha=1.3 gamma=1.0: types 4921*  hapax 0.455*  h2 2.429*  A14 -0.1196  Moran -0.0220*  dist 6.59
+L4 calibration K=4  beta=1.0 alpha=0.7 gamma=0.0: types 15611*  hapax 0.705  h2 2.808*  A14 -0.2792  Moran +0.3299*  dist 14.16
+L4 calibration K=4  beta=1.0 alpha=0.7 gamma=0.5: types 14532*  hapax 0.704  h2 2.741*  A14 -0.2667  Moran +0.3307*  dist 12.82
+L4 calibration K=4  beta=1.0 alpha=0.7 gamma=1.0: types 13890*  hapax 0.705  h2 2.707*  A14 -0.2768  Moran +0.3243*  dist 12.14
+L4 calibration K=4  beta=1.0 alpha=1.0 gamma=0.0: types 9464*  hapax 0.607*  h2 2.646*  A14 -0.2427  Moran +0.2848*  dist 10.93
+L4 calibration K=4  beta=1.0 alpha=1.0 gamma=0.5: types 8721*  hapax 0.600*  h2 2.566*  A14 -0.2222  Moran +0.2757*  dist 9.33
+L4 calibration K=4  beta=1.0 alpha=1.0 gamma=1.0: types 8361*  hapax 0.605*  h2 2.531*  A14 -0.2187  Moran +0.2689*  dist 8.61
+L4 calibration K=4  beta=1.0 alpha=1.3 gamma=0.0: types 6230  hapax 0.487*  h2 2.541*  A14 -0.1841  Moran +0.2123*  dist 8.81
+L4 calibration K=4  beta=1.0 alpha=1.3 gamma=0.5: types 5809*  hapax 0.487*  h2 2.461*  A14 -0.1575  Moran +0.2056*  dist 7.23
+L4 calibration K=4  beta=1.0 alpha=1.3 gamma=1.0: types 5530*  hapax 0.481*  h2 2.422*  A14 -0.1537  Moran +0.2033*  dist 6.44
+L4 calibration K=4  beta=2.0 alpha=0.7 gamma=0.0: types 15065*  hapax 0.702  h2 2.822*  A14 -0.2097  Moran +0.5019*  dist 14.44
+L4 calibration K=4  beta=2.0 alpha=0.7 gamma=0.5: types 14248*  hapax 0.703  h2 2.749*  A14 -0.1924  Moran +0.5022*  dist 12.98
+L4 calibration K=4  beta=2.0 alpha=0.7 gamma=1.0: types 13731*  hapax 0.708  h2 2.710*  A14 -0.1901  Moran +0.4984*  dist 12.19
+L4 calibration K=4  beta=2.0 alpha=1.0 gamma=0.0: types 10233*  hapax 0.623*  h2 2.649*  A14 -0.1931  Moran +0.4932*  dist 11.53
+L4 calibration K=4  beta=2.0 alpha=1.0 gamma=0.5: types 9621*  hapax 0.625*  h2 2.570*  A14 -0.1861  Moran +0.4870*  dist 11.33
+L4 calibration K=4  beta=2.0 alpha=1.0 gamma=1.0: types 9235*  hapax 0.626*  h2 2.531*  A14 -0.1716  Moran +0.4822*  dist 11.17
+L4 calibration K=4  beta=2.0 alpha=1.3 gamma=0.0: types 7253  hapax 0.533*  h2 2.542*  A14 -0.1563  Moran +0.4699*  dist 10.77
+L4 calibration K=4  beta=2.0 alpha=1.3 gamma=0.5: types 6827  hapax 0.528*  h2 2.464*  A14 -0.1329  Moran +0.4625*  dist 10.53
+L4 calibration K=4  beta=2.0 alpha=1.3 gamma=1.0: types 6532  hapax 0.526*  h2 2.425*  A14 -0.1279  Moran +0.4550*  dist 10.29
+L4 calibration K=12 beta=0.0 alpha=0.7 gamma=0.0: types 20386*  hapax 0.761*  h2 2.763*  A14 -0.0967  Moran -0.0059*  dist 13.26
+L4 calibration K=12 beta=0.0 alpha=0.7 gamma=0.5: types 16430*  hapax 0.771*  h2 2.648*  A14 -0.0974  Moran -0.0191*  dist 10.97
+L4 calibration K=12 beta=0.0 alpha=0.7 gamma=1.0: types 13196*  hapax 0.767*  h2 2.552*  A14 -0.1011  Moran -0.0156*  dist 9.04
+L4 calibration K=12 beta=0.0 alpha=1.0 gamma=0.0: types 10974*  hapax 0.642  h2 2.639*  A14 -0.0495  Moran -0.0011*  dist 10.77
+L4 calibration K=12 beta=0.0 alpha=1.0 gamma=0.5: types 8253*  hapax 0.613*  h2 2.468*  A14 -0.0172  Moran -0.0163*  dist 7.36
+L4 calibration K=12 beta=0.0 alpha=1.0 gamma=1.0: types 6224  hapax 0.612*  h2 2.328*  A14 -0.0011  Moran -0.0202*  dist 5.20
+L4 calibration K=12 beta=0.0 alpha=1.3 gamma=0.0: types 6425  hapax 0.477*  h2 2.550*  A14 -0.0073  Moran -0.0245*  dist 9.01
+L4 calibration K=12 beta=0.0 alpha=1.3 gamma=0.5: types 5253*  hapax 0.470*  h2 2.384*  A14 +0.0165*  Moran -0.0257*  dist 5.69
+L4 calibration K=12 beta=0.0 alpha=1.3 gamma=1.0: types 4016*  hapax 0.469*  h2 2.237*  A14 +0.0359*  Moran -0.0282*  dist 5.46
+L4 calibration K=12 beta=1.0 alpha=0.7 gamma=0.0: types 16432*  hapax 0.709  h2 2.826*  A14 -0.0600  Moran +0.3176*  dist 14.53
+L4 calibration K=12 beta=1.0 alpha=0.7 gamma=0.5: types 13704*  hapax 0.719  h2 2.659*  A14 -0.0607  Moran +0.3120*  dist 11.19
+L4 calibration K=12 beta=1.0 alpha=0.7 gamma=1.0: types 11348*  hapax 0.729*  h2 2.525*  A14 -0.0604  Moran +0.3136*  dist 8.51
+L4 calibration K=12 beta=1.0 alpha=1.0 gamma=0.0: types 10378*  hapax 0.615*  h2 2.682*  A14 -0.0307  Moran +0.2592*  dist 11.64
+L4 calibration K=12 beta=1.0 alpha=1.0 gamma=0.5: types 8381*  hapax 0.611*  h2 2.494*  A14 -0.0239  Moran +0.2342*  dist 7.87
+L4 calibration K=12 beta=1.0 alpha=1.0 gamma=1.0: types 6731  hapax 0.620*  h2 2.349*  A14 -0.0123  Moran +0.2227*  dist 4.99
+L4 calibration K=12 beta=1.0 alpha=1.3 gamma=0.0: types 7040  hapax 0.500*  h2 2.602*  A14 -0.0155  Moran +0.1702*  dist 10.03
+L4 calibration K=12 beta=1.0 alpha=1.3 gamma=0.5: types 5757*  hapax 0.483*  h2 2.419*  A14 +0.0030*  Moran +0.1372  dist 6.37
+L4 calibration K=12 beta=1.0 alpha=1.3 gamma=1.0: types 4540*  hapax 0.490*  h2 2.271*  A14 +0.0213*  Moran +0.1274  dist 4.75
+L4 calibration K=12 beta=2.0 alpha=0.7 gamma=0.0: types 16060*  hapax 0.700  h2 2.852*  A14 -0.0485  Moran +0.4990*  dist 15.04
+L4 calibration K=12 beta=2.0 alpha=0.7 gamma=0.5: types 13980*  hapax 0.718  h2 2.682*  A14 -0.0274  Moran +0.4958*  dist 11.65
+L4 calibration K=12 beta=2.0 alpha=0.7 gamma=1.0: types 11978*  hapax 0.734*  h2 2.547*  A14 -0.0330  Moran +0.4958*  dist 11.62
+L4 calibration K=12 beta=2.0 alpha=1.0 gamma=0.0: types 11643*  hapax 0.636*  h2 2.719*  A14 -0.0371  Moran +0.4732*  dist 12.38
+L4 calibration K=12 beta=2.0 alpha=1.0 gamma=0.5: types 9912*  hapax 0.640  h2 2.539*  A14 -0.0243  Moran +0.4628*  dist 10.54
+L4 calibration K=12 beta=2.0 alpha=1.0 gamma=1.0: types 8339*  hapax 0.660  h2 2.399*  A14 -0.0138  Moran +0.4576*  dist 10.37
+L4 calibration K=12 beta=2.0 alpha=1.3 gamma=0.0: types 8742*  hapax 0.558*  h2 2.631*  A14 -0.0135  Moran +0.4443*  dist 10.62
+L4 calibration K=12 beta=2.0 alpha=1.3 gamma=0.5: types 7529  hapax 0.558*  h2 2.456*  A14 -0.0018  Moran +0.4182*  dist 9.08
+L4 calibration K=12 beta=2.0 alpha=1.3 gamma=1.0: types 6234  hapax 0.581*  h2 2.315*  A14 +0.0075*  Moran +0.4081*  dist 8.76
+L4 calibration: NO grid point hits all five targets; closest K=0 beta=1.0 alpha=0.7 gamma=1.0 misses ['hapax', 'h2', 'a14', 'moran'] -> recorded as evidence against the family (Q3); grid points hitting each target: {'types': 16, 'hapax': 14, 'h2': 0, 'a14': 50, 'moran': 3}
+L4 cipher latin key 1: types 7700  hapax 0.722*  h2 2.285*  A14 +0.0713*  Moran +0.2142*
+L4 cipher latin key 2: types 6579  hapax 0.731*  h2 2.248*  A14 +0.0339*  Moran +0.2041*
+L4 cipher latin key 3: types 7821  hapax 0.733*  h2 2.387*  A14 +0.0063*  Moran +0.2198*
+L4 cipher italian key 1: types 7545  hapax 0.725*  h2 2.305*  A14 +0.0184*  Moran +0.2142*
+L4 cipher italian key 2: types 6495  hapax 0.727*  h2 2.248*  A14 +0.0437*  Moran +0.2208*
+L4 cipher italian key 3: types 7666  hapax 0.729*  h2 2.372*  A14 +0.0328*  Moran +0.2299*
+L4 cipher german key 1: types 7696  hapax 0.726*  h2 2.310*  A14 +0.0760*  Moran +0.2250*
+L4 cipher german key 2: types 7021  hapax 0.728*  h2 2.281*  A14 +0.0352*  Moran +0.2139*
+L4 cipher german key 3: types 7733  hapax 0.726*  h2 2.392*  A14 +0.0394*  Moran +0.2495*
+L4 cipher occitan key 1: types 7817  hapax 0.724*  h2 2.324*  A14 +0.0523*  Moran +0.2129*
+L4 cipher occitan key 2: types 6639  hapax 0.725*  h2 2.271*  A14 +0.0365*  Moran +0.2051*
+L4 cipher occitan key 3: types 7791  hapax 0.733*  h2 2.371*  A14 +0.0318*  Moran +0.2189*
+L4 cipher czech key 1: types 7593  hapax 0.721*  h2 2.298*  A14 +0.0621*  Moran +0.2191*
+L4 cipher czech key 2: types 6512  hapax 0.727*  h2 2.246*  A14 +0.0453*  Moran +0.2263*
+L4 cipher czech key 3: types 7682  hapax 0.733*  h2 2.369*  A14 +0.0170*  Moran +0.2109*
+L4 cipher catalan key 1: types 7690  hapax 0.724*  h2 2.320*  A14 +0.0610*  Moran +0.2150*
+L4 cipher catalan key 2: types 6629  hapax 0.726*  h2 2.261*  A14 +0.0292*  Moran +0.2035*
+L4 cipher catalan key 3: types 7650  hapax 0.728*  h2 2.362*  A14 +0.0241*  Moran +0.2129*
+L4: launching 18 solver jobs on 8 processes at Sun Oct 18 02:01:33 PDT 2026
+--- L4 results (elapsed 24.4 min)
+L4 latin    key 1: acc 0.9753 OK (>=0.90: yes)  nulls 115/290 units  10.5 min  chosen=seg('mdl', '-') pair |P|=32 |S|=27 seg_true=False true_reading=pair
+L4 latin    key 2: acc 0.9071 OK (>=0.90: yes)  nulls 46/217 units  8.2 min  chosen=seg(0.01, 0.5) pair |P|=27 |S|=17 seg_true=False true_reading=pair
+L4 latin    key 3: acc 0.9467 OK (>=0.90: yes)  nulls 101/346 units  11.6 min  chosen=seg(0.01, 0.5) pair |P|=32 |S|=25 seg_true=False true_reading=pair
+L4 latin    CELL PASS (3/3 keys >= 0.80; mean acc 0.9430)
+L4 italian  key 1: acc 0.9788 OK (>=0.90: yes)  nulls 83/229 units  8.8 min  chosen=seg('mdl', '-') pair |P|=29 |S|=22 seg_true=False true_reading=pair
+L4 italian  key 2: acc 0.9180 OK (>=0.90: yes)  nulls 62/264 units  8.3 min  chosen=seg(0.01, 0.5) pair |P|=27 |S|=21 seg_true=False true_reading=pair
+L4 italian  key 3: acc 0.9401 OK (>=0.90: yes)  nulls 92/301 units  10.8 min  chosen=seg(0.01, 0.5) pair |P|=29 |S|=23 seg_true=False true_reading=pair
+L4 italian  CELL PASS (3/3 keys >= 0.80; mean acc 0.9456)
+L4 german   key 1: acc 0.9716 OK (>=0.90: yes)  nulls 61/207 units  6.5 min  chosen=seg('mdl', '-') pair |P|=30 |S|=21 seg_true=False true_reading=pair
+L4 german   key 2: acc 0.9652 OK (>=0.90: yes)  nulls 128/298 units  6.6 min  chosen=seg('mdl', '-') pair |P|=33 |S|=31 seg_true=False true_reading=pair
+L4 german   key 3: acc 0.9474 OK (>=0.90: yes)  nulls 96/292 units  8.8 min  chosen=seg(0.01, 0.5) pair |P|=29 |S|=23 seg_true=False true_reading=pair
+L4 german   CELL PASS (3/3 keys >= 0.80; mean acc 0.9614)
+L4 occitan  key 1: acc 0.9771 OK (>=0.90: yes)  nulls 104/262 units  9.5 min  chosen=seg('mdl', '-') pair |P|=32 |S|=26 seg_true=False true_reading=pair
+L4 occitan  key 2: acc 0.8994 OK (>=0.90: no)  nulls 139/317 units  9.4 min  chosen=seg('mdl', '-') pair |P|=38 |S|=27 seg_true=False true_reading=pair
+L4 occitan  key 3: acc 0.8815 OK (>=0.90: no)  nulls 111/303 units  10.0 min  chosen=seg('mdl', '-') pair |P|=37 |S|=23 seg_true=False true_reading=pair
+L4 occitan  CELL PASS (3/3 keys >= 0.80; mean acc 0.9193)
+L4 czech    key 1: acc 0.9782 OK (>=0.90: yes)  nulls 92/244 units  10.5 min  chosen=seg('mdl', '-') pair |P|=31 |S|=24 seg_true=False true_reading=pair
+L4 czech    key 2: acc 0.9094 OK (>=0.90: yes)  nulls 64/251 units  9.8 min  chosen=seg(0.01, 0.5) pair |P|=29 |S|=19 seg_true=False true_reading=pair
+L4 czech    key 3: acc 0.9569 OK (>=0.90: yes)  nulls 110/312 units  10.6 min  chosen=seg('mdl', '-') pair |P|=34 |S|=27 seg_true=False true_reading=pair
+L4 czech    CELL PASS (3/3 keys >= 0.80; mean acc 0.9482)
+L4 catalan  key 1: acc 0.9731 OK (>=0.90: yes)  nulls 99/260 units  10.1 min  chosen=seg('mdl', '-') pair |P|=32 |S|=23 seg_true=False true_reading=pair
+L4 catalan  key 2: acc 0.9638 OK (>=0.90: yes)  nulls 79/233 units  8.3 min  chosen=seg('mdl', '-') pair |P|=32 |S|=22 seg_true=False true_reading=pair
+L4 catalan  key 3: acc 0.8835 OK (>=0.90: no)  nulls 111/333 units  8.3 min  chosen=seg('mdl', '-') pair |P|=36 |S|=25 seg_true=False true_reading=pair
+L4 catalan  CELL PASS (3/3 keys >= 0.80; mean acc 0.9401)
+L4 passes in 6/6 languages: latin, italian, german, occitan, czech, catalan
+
+L4 matched-L4 passes (cell passes and >= 2 ciphers hit all targets): none
+=== Summary ===
+L1: passes in 6/6 (latin, italian, german, occitan, czech, catalan)
+L2: passes in 6/6 (latin, italian, german, occitan, czech, catalan)
+L3: passes in 6/6 (latin, italian, german, occitan, czech, catalan)
+L4: passes in 6/6 (latin, italian, german, occitan, czech, catalan)
+L4 calibration: NO grid point hits all five targets; closest K=0 beta=1.0 alpha=0.7 gamma=1.0 misses ['hapax', 'h2', 'a14', 'moran'] -> recorded as evidence against the family (Q3); grid points hitting each target: {'types': 16, 'hapax': 14, 'h2': 0, 'a14': 50, 'moran': 3}
+First failing rung: none (L4 passes in >= 1 language)
+Close-rule reading: L4 passes in >= 1 language, but on ciphers that miss the manuscript targets (no matched L4 pass). So the solver reads the closest constructible L4; 'fails L4' is not met; 'no cipher meeting L4's targets can be constructed' holds within this family and grid -> recorded as evidence against the family (Q3). The route does not close by the solver half of the rule; the family is disfavoured by the construction half. Voynich not run (step rule).
+elapsed: 87.0 min; end Sun Oct 18 02:25:57 PDT 2026

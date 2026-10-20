@@ -1,0 +1,11 @@
+# Only for the picture, embedding and physical-measurement runs (GPU recommended).
+# Our runs used torch 2.11.0.dev20260115+cu128 (a CUDA 12.8 nightly); a current stable CUDA build should work.
+numba==0.64.0
+torch>=2.11
+transformers==4.57.5
+# Used by some analysis and physical-measurement scripts (versions from the project's 3.11 environment where recorded).
+pillow==12.1.0
+statsmodels==0.15.0
+networkx==3.6.1
+opencv-python  # tools/segment_scans.py and scan work; version not recorded
+kraken  # line detection in tools/segment_scans.py (s45); version not recorded

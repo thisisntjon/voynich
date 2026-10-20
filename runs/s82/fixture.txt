@@ -1,0 +1,81 @@
+S82 FIXTURE (synthetic only; identity segmenter; no manuscript or cipher text read)
+date: Sun Oct 18 03:39:42 PDT 2026 (`date`)
+s82 sha256=60eec60588eebf71a34e5d62120780bdb1bcff5c9deb6a55d57a1dc9401a078a  stub_match=NO STUB
+torch 2.11.0.dev20260115+cu128; device cuda (NVIDIA GeForce RTX 5080); workers 4; priority BelowNormal (psutil)
+bands vs runs/s80/values.csv: OK
+construction: choose q on seeds (101, 102, 103) (points only, no interval)
+  done FX_q0.2_seed101                    [11s, cuda] device-vs-s80-numpy max |diff| 1.3e-14
+  done FX_q0.2_seed102                    [11s, cuda] device-vs-s80-numpy max |diff| 1.8e-14
+  done FX_q0.2_seed103                    [10s, cuda] device-vs-s80-numpy max |diff| 1.6e-14
+  done FX_q0.25_seed101                   [11s, cuda] device-vs-s80-numpy max |diff| 1.4e-14
+  done FX_q0.25_seed102                   [6s, cuda] device-vs-s80-numpy max |diff| 1.6e-14
+  done FX_q0.25_seed103                   [7s, cuda] device-vs-s80-numpy max |diff| 1.1e-14
+  done FX_q0.3_seed101                    [7s, cuda] device-vs-s80-numpy max |diff| 1.3e-14
+  done FX_q0.3_seed102                    [6s, cuda] device-vs-s80-numpy max |diff| 8.1e-15
+  done FX_q0.3_seed103                    [7s, cuda] device-vs-s80-numpy max |diff| 8.9e-15
+  done FX_q0.35_seed101                   [7s, cuda] device-vs-s80-numpy max |diff| 8.3e-15
+  done FX_q0.35_seed102                   [7s, cuda] device-vs-s80-numpy max |diff| 1.8e-14
+  done FX_q0.35_seed103                   [7s, cuda] device-vs-s80-numpy max |diff| 1.4e-14
+  done FX_q0.4_seed101                    [9s, cuda] device-vs-s80-numpy max |diff| 1.1e-14
+  done FX_q0.4_seed102                    [9s, cuda] device-vs-s80-numpy max |diff| 2.5e-14
+  done FX_q0.4_seed103                    [11s, cuda] device-vs-s80-numpy max |diff| 1.1e-14
+  done FX_q0.45_seed101                   [9s, cuda] device-vs-s80-numpy max |diff| 9.4e-15
+  done FX_q0.45_seed102                   [7s, cuda] device-vs-s80-numpy max |diff| 8.8e-15
+  done FX_q0.45_seed103                   [6s, cuda] device-vs-s80-numpy max |diff| 1.2e-14
+  q=0.2   mean freq +0.004 +0.014 +0.030 +0.033 +0.024 | clust +0.014 +0.032 +0.044 +0.029 +0.037 | max norm dist 0.91
+  q=0.25  mean freq +0.005 +0.020 +0.036 +0.042 +0.058 | clust +0.023 +0.060 +0.078 +0.069 +0.059 | max norm dist 0.78
+  q=0.3   mean freq +0.008 +0.019 +0.032 +0.033 +0.044 | clust +0.044 +0.130 +0.131 +0.060 +0.048 | max norm dist 1.42
+  q=0.35  mean freq +0.011 +0.033 +0.056 +0.078 +0.086 | clust +0.088 +0.266 +0.251 +0.169 +0.109 | max norm dist 3.57
+  q=0.4   mean freq +0.014 +0.044 +0.077 +0.088 +0.108 | clust +0.157 +0.434 +0.398 +0.242 +0.155 | max norm dist 6.19
+  q=0.45  mean freq +0.016 +0.051 +0.080 +0.108 +0.132 | clust +0.244 +0.591 +0.545 +0.366 +0.207 | max norm dist 8.81
+chosen q = 0.25
+  done FX_q0.25_seed202                   [19s, cuda] device-vs-s80-numpy max |diff| 1.6e-14
+  done FX_q0.6_seed203                    [19s, cuda] device-vs-s80-numpy max |diff| 1.2e-14
+  done FX_q0_seed204                      [19s, cuda] device-vs-s80-numpy max |diff| 1.5e-14
+
+  FX_match (FX_q0.25_seed202): matched tokens 6195 pairs 5396 types 1668
+    freq  K=25  cls   25 MM +0.0069 [+0.0017,+0.0104] p 0.005 | plug +0.0053 p 0.005 | band +0.0070,+0.0879
+    freq  K=50  cls   50 MM +0.0169 [+0.0075,+0.0196] p 0.005 | plug +0.0110 p 0.035 | band +0.0091,+0.1093
+    freq  K=100 cls  100 MM +0.0316 [+0.0176,+0.0376] p 0.005 | plug +0.0247 p 0.005 | band -0.0057,+0.1026
+    freq  K=200 cls  200 MM +0.0326 [+0.0090,+0.0375] p 0.005 | plug +0.0207 p 0.025 | band -0.0203,+0.1011
+    freq  K=400 cls  393 MM +0.0349 [+0.0024,+0.0476] p 0.020 | plug +0.0199 p 0.095 | band -0.0401,+0.0960
+    clust K=25  cls   25 MM +0.0236 [+0.0149,+0.0324] p 0.005 | plug +0.0222 p 0.005 | band +0.0134,+0.0905
+    clust K=50  cls   50 MM +0.0639 [+0.0463,+0.0769] p 0.005 | plug +0.0542 p 0.005 | band +0.0035,+0.1240
+    clust K=100 cls   99 MM +0.0551 [+0.0321,+0.0682] p 0.005 | plug +0.0428 p 0.005 | band -0.0041,+0.1078
+    clust K=200 cls  200 MM +0.0533 [+0.0214,+0.0644] p 0.005 | plug +0.0408 p 0.005 | band -0.0275,+0.0978
+    clust K=400 cls  395 MM +0.0290 [-0.0036,+0.0396] p 0.035 | plug +0.0158 p 0.124 | band -0.0455,+0.0925
+    -> MATCH 
+    other targets (code-path check only): h2 2.110 A5 +0.0100 CHARWIN +0.0427 f4 +0.0809
+
+  FX_strong (FX_q0.6_seed203): matched tokens 6195 pairs 5435 types 1668
+    freq  K=25  cls   25 MM +0.0136 [+0.0068,+0.0159] p 0.005 | plug +0.0096 p 0.005 | band +0.0070,+0.0879
+    freq  K=50  cls   50 MM +0.0731 [+0.0552,+0.0743] p 0.005 | plug +0.0586 p 0.005 | band +0.0091,+0.1093
+    freq  K=100 cls  100 MM +0.1292 [+0.0978,+0.1290] p 0.005 | plug +0.1038 p 0.005 | band -0.0057,+0.1026
+    freq  K=200 cls  200 MM +0.1835 [+0.1395,+0.1771] p 0.005 | plug +0.1482 p 0.005 | band -0.0203,+0.1011
+    freq  K=400 cls  394 MM +0.2094 [+0.1554,+0.2015] p 0.005 | plug +0.1666 p 0.005 | band -0.0401,+0.0960
+    clust K=25  cls   25 MM +0.4548 [+0.4376,+0.4792] p 0.005 | plug +0.4450 p 0.005 | band +0.0134,+0.0905
+    clust K=50  cls   50 MM +1.2445 [+1.2046,+1.2842] p 0.005 | plug +1.1872 p 0.005 | band +0.0035,+0.1240
+    clust K=100 cls  100 MM +1.1782 [+1.1043,+1.1737] p 0.005 | plug +1.0557 p 0.005 | band -0.0041,+0.1078
+    clust K=200 cls  200 MM +0.8203 [+0.7220,+0.7819] p 0.005 | plug +0.6831 p 0.005 | band -0.0275,+0.0978
+    clust K=400 cls  393 MM +0.4577 [+0.3714,+0.4174] p 0.005 | plug +0.3601 p 0.005 | band -0.0455,+0.0925
+    -> NO MATCH ['freq100:band', 'freq200:band', 'clust50:band', 'clust100:band', 'clust200:band']
+    other targets (code-path check only): h2 2.111 A5 -0.0240 CHARWIN +0.0452 f4 +0.4192
+
+  FX_none (FX_q0_seed204): matched tokens 6195 pairs 5427 types 1664
+    freq  K=25  cls   25 MM -0.0022 [-0.0047,+0.0003] p 0.891 | plug -0.0026 p 0.856 | band +0.0070,+0.0879
+    freq  K=50  cls   50 MM -0.0076 [-0.0140,-0.0045] p 0.985 | plug -0.0119 p 1.000 | band +0.0091,+0.1093
+    freq  K=100 cls  100 MM -0.0087 [-0.0185,-0.0030] p 0.930 | plug -0.0122 p 0.950 | band -0.0057,+0.1026
+    freq  K=200 cls  200 MM -0.0012 [-0.0160,+0.0125] p 0.572 | plug -0.0018 p 0.557 | band -0.0203,+0.1011
+    freq  K=400 cls  389 MM -0.0072 [-0.0263,+0.0092] p 0.721 | plug -0.0101 p 0.751 | band -0.0401,+0.0960
+    clust K=25  cls   25 MM -0.0049 [-0.0113,+0.0027] p 0.861 | plug -0.0042 p 0.841 | band +0.0134,+0.0905
+    clust K=50  cls   50 MM +0.0063 [-0.0025,+0.0141] p 0.209 | plug +0.0028 p 0.338 | band +0.0035,+0.1240
+    clust K=100 cls  100 MM +0.0020 [-0.0158,+0.0181] p 0.458 | plug +0.0020 p 0.438 | band -0.0041,+0.1078
+    clust K=200 cls  199 MM -0.0212 [-0.0352,-0.0061] p 0.965 | plug -0.0184 p 0.950 | band -0.0275,+0.0978
+    clust K=400 cls  393 MM -0.0077 [-0.0234,+0.0112] p 0.716 | plug -0.0040 p 0.642 | band -0.0455,+0.0925
+    -> NO MATCH ['freq50:band', 'freq100:band', 'freq200:p', 'clust50:p', 'clust100:p', 'clust200:p']
+    other targets (code-path check only): h2 2.110 A5 +0.0031 CHARWIN +0.0430 f4 -0.0052
+
+FXA FX_match called MATCH: PASS
+FXB FX_strong called NO MATCH: PASS
+(reported) FX_none: NO MATCH
+FIXTURE PASS   runtime 72s; finished Sun Oct 18 03:40:54 PDT 2026 (`date`)

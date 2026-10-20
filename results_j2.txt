@@ -1,0 +1,15 @@
+J2 Voynich J1v2 classes (gate passed results_j1.txt m=3 ARI 0.171)
+F4 Voynich reference: honest cot mean -0.0052 (seeds +0.0006/-0.0122/-0.0039), null -0.0044
+K=142 held-out odd->even (honest): cot mean +0.0194 (+0.0196, +0.0194, +0.0194) cls +0.0311 tok +0.0394
+K=142 held-out even->odd (seed0): cot +0.0219 cls +0.0347 tok +0.0420
+K=96 held-out odd->even (honest): cot mean +0.0184 (+0.0204, +0.0190, +0.0159) cls +0.0300 tok +0.0394
+K=96 held-out even->odd (seed0): cot +0.0252 cls +0.0367 tok +0.0420
+Full-book K=244; largest classes by tokens:
+  s y l o r as lr  [7 types]
+  daiin odaiin daiiin  [3 types]
+  ol dol sol oly lol rol ols pol olol  [9 types]
+  aiin saiin raiin aiiin olaiin oiin oaiin qoaiin laiin  [9 types]
+  shedy sheedy lshedy dshedy olshedy shed qokshedy tshedy  [8 types]
+  qokeey okeey qokey qokeeey qokeed  [5 types]
+  chedy dchedy ched ychedy rchedy  [5 types]
+  qokaiin okaiin chokaiin  [3 types]

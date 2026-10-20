@@ -1,0 +1,38 @@
+C1: quire-aligned null for the B5 within-scribe section signal
+A = section labels permuted among quire-section blocks (exact); B = within one quire, page-permutation null;
+C = TF-IDF centroid cosine distance, different-section minus same-section block pairs, same exact null
+p-values in A/C cannot go below 1/(number of distinct assignments)
+
+[VOYNICH ZL3b]
+  hand 1 A quire-block null: NMI=0.275  null mean 0.067  p=0.018  (11 blocks HHHHHHHHPHP, 55 assignments)
+  hand 1 C centroid dist diff-minus-same section = +0.0851  p=0.109
+  hand 1 B within quire O {'H': 12, 'P': 23}: NMI=0.060  page-perm null 0.062  p=0.359  (12 pages)
+  hand 2 A quire-block null: NMI=0.333  null mean 0.209  p=0.133  (7 blocks HHHHBTT, 105 assignments)
+  hand 2 C centroid dist diff-minus-same section = -0.0080  p=0.552
+  hand 2 B within quire M {'B': 156, 'T': 14}: NMI=0.049  page-perm null 0.040  p=0.384  (20 pages)
+[NULL token-shuffled]
+  hand 1 A quire-block null: NMI=0.007  null mean 0.009  p=0.527  (11 blocks HHHHHHHHPHP, 55 assignments)
+  hand 1 C centroid dist diff-minus-same section = -0.0157  p=0.655
+  hand 1 B within quire O {'H': 12, 'P': 23}: NMI=0.059  page-perm null 0.051  p=0.325  (12 pages)
+  hand 2 A quire-block null: NMI=0.011  null mean 0.015  p=0.762  (7 blocks HHHHBTT, 105 assignments)
+  hand 2 C centroid dist diff-minus-same section = -0.0954  p=0.971
+  hand 2 B within quire M {'B': 156, 'T': 14}: NMI=0.010  page-perm null 0.014  p=0.577  (20 pages)
+[NULL drift generator (c2 drift ps=0.6)]
+  hand 1 A quire-block null: NMI=0.022  null mean 0.015  p=0.218  (11 blocks HHHHHHHHPHP, 55 assignments)
+  hand 1 C centroid dist diff-minus-same section = -0.0321  p=0.800
+  hand 1 B within quire O {'H': 12, 'P': 23}: NMI=0.035  page-perm null 0.059  p=0.590  (12 pages)
+  hand 2 A quire-block null: NMI=0.098  null mean 0.064  p=0.029  (7 blocks HHHHBTT, 105 assignments)
+  hand 2 C centroid dist diff-minus-same section = -0.0418  p=0.838
+  hand 2 B within quire M {'B': 156, 'T': 14}: NMI=0.035  page-perm null 0.026  p=0.283  (20 pages)
+[GEN section generator (c2 section ps=0.6)]
+  hand 1 A quire-block null: NMI=0.320  null mean 0.045  p=0.018  (11 blocks HHHHHHHHPHP, 55 assignments)
+  hand 1 C centroid dist diff-minus-same section = +0.0698  p=0.055
+  hand 1 B within quire O {'H': 12, 'P': 23}: NMI=0.408  page-perm null 0.167  p=0.006  (12 pages)
+  hand 2 A quire-block null: NMI=0.267  null mean 0.160  p=0.010  (7 blocks HHHHBTT, 105 assignments)
+  hand 2 C centroid dist diff-minus-same section = -0.0190  p=0.695
+  hand 2 B within quire M {'B': 156, 'T': 14}: NMI=0.214  page-perm null 0.040  p=0.053  (20 pages)
+
+[CTRL latin_augustine main text (2467 chunks), books I-IX vs X-XIII, quire = 30 chunks]
+  A quire-block null: NMI=0.129  null mean 0.009  p=0.0000  (84 blocks, 5000 MC assignments)
+  C centroid dist diff-minus-same = +0.0406  p=0.0000
+  matched to hand 1 size (blocks IIIIIIIIIXX): A NMI=0.045 null 0.021 p=0.091 (55 assignments);  C +0.0053 p=0.345

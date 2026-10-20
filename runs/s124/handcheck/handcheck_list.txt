@@ -1,0 +1,10 @@
+hc00 f88v_p1 obj 00 bbox_frac [0.239, 0.018, 0.11, 0.059] area_frac 0.0026
+hc01 f89r1_p1 obj 03 bbox_frac [0.379, 0.097, 0.067, 0.046] area_frac 0.0002
+hc02 f89r2_p1 obj 21 bbox_frac [0.079, 0.554, 0.111, 0.106] area_frac 0.0032
+hc03 f89r2_p1 obj 26 bbox_frac [0.106, 0.761, 0.18, 0.189] area_frac 0.0076
+hc04 f89v2_p1 obj 20 bbox_frac [0.879, 0.758, 0.061, 0.064] area_frac 0.0010
+hc05 f99r_p1 obj 08 bbox_frac [0.108, 0.288, 0.152, 0.122] area_frac 0.0075
+hc06 f99v_p1 obj 03 bbox_frac [0.707, 0.05, 0.056, 0.061] area_frac 0.0009
+hc07 f100r_p1 obj 10 bbox_frac [0.183, 0.233, 0.052, 0.048] area_frac 0.0004
+hc08 f101r_p1 obj 09 bbox_frac [0.115, 0.083, 0.08, 0.108] area_frac 0.0022
+hc09 f101v_p1 obj 13 bbox_frac [0.64, 0.124, 0.114, 0.065] area_frac 0.0015

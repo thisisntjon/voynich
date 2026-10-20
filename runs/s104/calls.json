@@ -1,0 +1,952 @@
+{
+ "loc_band": [
+  0.9073818633685861,
+  1.049928019378369
+ ],
+ "order_band": {
+  "100": [
+   0.012321,
+   0.092252
+  ],
+  "200": [
+   -0.003465,
+   0.086474
+  ]
+ },
+ "h2_band": [
+  2.023,
+  2.234
+ ],
+ "lag2_ref": {
+  "ZL3b": 0.017873999999999998,
+  "RF1b": 0.012491,
+  "IT2a": 0.017418
+ },
+ "lag2_bar": 0.007963833333333331,
+ "G_R": true,
+ "recovery": {
+  "P1_la_G1a": 0.8392,
+  "P1_la_G1a_shuf": 0.8392,
+  "P1_la_G1b": 1.0,
+  "P1_la_G1b_shuf": 1.0,
+  "P1_la_G1c": 1.0,
+  "P1_la_G1c_shuf": 1.0,
+  "P2_it_G1a": 0.9875111111111111,
+  "P2_it_G1a_shuf": 0.9875111111111111,
+  "P2_it_G1b": 1.0,
+  "P2_it_G1b_shuf": 1.0,
+  "P2_it_G1c": 1.0,
+  "P2_it_G1c_shuf": 1.0,
+  "P3_de_G1a": 0.9136,
+  "P3_de_G1a_shuf": 0.9136,
+  "P3_de_G1b": 1.0,
+  "P3_de_G1b_shuf": 1.0,
+  "P3_de_G1c": 1.0,
+  "P3_de_G1c_shuf": 1.0
+ },
+ "PC1": true,
+ "PC1_seeds": [
+  false,
+  true,
+  true
+ ],
+ "PC2": true,
+ "NC": true,
+ "G_S": true,
+ "G_L": true,
+ "lag2": {
+  "P1_la_G1a": {
+   "residue": 0.00219439028488308,
+   "n": 15,
+   "errors": [],
+   "pos": 0,
+   "holds": true
+  },
+  "P1_la_G1a_shuf": {
+   "residue": 0.004204661581269392,
+   "n": 15,
+   "errors": [],
+   "pos": 1,
+   "holds": true
+  },
+  "P1_la_G1b": {
+   "residue": -0.0007852643657536851,
+   "n": 15,
+   "errors": [],
+   "pos": 1,
+   "holds": true
+  },
+  "P1_la_G1b_shuf": {
+   "residue": 0.0008482851982877931,
+   "n": 15,
+   "errors": [],
+   "pos": 3,
+   "holds": true
+  },
+  "P1_la_G1c": {
+   "residue": 0.0027311754811729944,
+   "n": 15,
+   "errors": [],
+   "pos": 2,
+   "holds": true
+  },
+  "P1_la_G1c_shuf": {
+   "residue": -0.004692418589255723,
+   "n": 15,
+   "errors": [],
+   "pos": 0,
+   "holds": true
+  },
+  "P2_it_G1a": {
+   "residue": -0.0011736961260027656,
+   "n": 15,
+   "errors": [],
+   "pos": 1,
+   "holds": true
+  },
+  "P2_it_G1a_shuf": {
+   "residue": 0.0026140133282940847,
+   "n": 15,
+   "errors": [],
+   "pos": 1,
+   "holds": true
+  },
+  "P2_it_G1b": {
+   "residue": 0.006747442096066073,
+   "n": 15,
+   "errors": [],
+   "pos": 4,
+   "holds": true
+  },
+  "P2_it_G1b_shuf": {
+   "residue": 0.0033938390051906405,
+   "n": 15,
+   "errors": [],
+   "pos": 1,
+   "holds": true
+  },
+  "P2_it_G1c": {
+   "residue": 0.007189440920546936,
+   "n": 15,
+   "errors": [],
+   "pos": 4,
+   "holds": true
+  },
+  "P2_it_G1c_shuf": {
+   "residue": 0.0011537021183045866,
+   "n": 15,
+   "errors": [],
+   "pos": 1,
+   "holds": true
+  },
+  "P3_de_G1a": {
+   "residue": 0.0028064683521022427,
+   "n": 15,
+   "errors": [],
+   "pos": 2,
+   "holds": true
+  },
+  "P3_de_G1a_shuf": {
+   "residue": -0.0010031715962364185,
+   "n": 15,
+   "errors": [],
+   "pos": 1,
+   "holds": true
+  },
+  "P3_de_G1b": {
+   "residue": 0.010630007734127804,
+   "n": 15,
+   "errors": [],
+   "pos": 7,
+   "holds": false
+  },
+  "P3_de_G1b_shuf": {
+   "residue": 0.0014586947029512653,
+   "n": 15,
+   "errors": [],
+   "pos": 2,
+   "holds": true
+  },
+  "P3_de_G1c": {
+   "residue": 0.007468530083461015,
+   "n": 15,
+   "errors": [],
+   "pos": 4,
+   "holds": true
+  },
+  "P3_de_G1c_shuf": {
+   "residue": 0.003810139081637697,
+   "n": 15,
+   "errors": [],
+   "pos": 0,
+   "holds": true
+  },
+  "VOY_ZL3b": {
+   "residue": 0.00535444905530965,
+   "n": 15,
+   "errors": [],
+   "pos": 2,
+   "holds": true
+  },
+  "VOY_RF1b": {
+   "residue": 0.006188840118483922,
+   "n": 15,
+   "errors": [],
+   "pos": 2,
+   "holds": true
+  },
+  "VOY_IT2a": {
+   "residue": 0.004871428549744114,
+   "n": 15,
+   "errors": [],
+   "pos": 4,
+   "holds": true
+  },
+  "S81_line_sticky75": {
+   "residue": 0.012343013332467458,
+   "n": 15,
+   "errors": [],
+   "pos": 10,
+   "holds": false
+  }
+ },
+ "GATE": true,
+ "CALL_S104_ANY_PASS": false,
+ "desc": {
+  "P1_la_G1a": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nYYY*",
+    "slot": "YnYY",
+    "affix2": "nnnY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": -0.0036561751362156336,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 2.8053779464177797,
+   "h2_ok": false,
+   "lag2": 0.00219439028488308,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 0.8392
+  },
+  "P1_la_G1a_shuf": {
+   "role": "twin",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnY*",
+    "slot": "nnYY",
+    "affix2": "nYYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": 0.00020675182270923909,
+    "p": 0.424,
+    "holds": false
+   },
+   "h2": 2.805491899921587,
+   "h2_ok": false,
+   "lag2": 0.004204661581269392,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 0.8392
+  },
+  "P1_la_G1b": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nYnY*",
+    "slot": "nnYY",
+    "affix2": "nnYn"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 1,
+    "RF1b": 1,
+    "IT2a": 1
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": -0.024991153837421898,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 4.019429607805841,
+   "h2_ok": false,
+   "lag2": -0.0007852643657536851,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 1.0
+  },
+  "P1_la_G1b_shuf": {
+   "role": "twin",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnY*",
+    "slot": "nnYY",
+    "affix2": "nnnY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 1
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": 0.0028991770912910886,
+    "p": 0.323,
+    "holds": false
+   },
+   "h2": 4.019900279892521,
+   "h2_ok": false,
+   "lag2": 0.0008482851982877931,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 1.0
+  },
+  "P1_la_G1c": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nYnY*",
+    "slot": "nnnY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": -0.021061401308049607,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 4.008515139455759,
+   "h2_ok": false,
+   "lag2": 0.0027311754811729944,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 1.0
+  },
+  "P1_la_G1c_shuf": {
+   "role": "twin",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnY*",
+    "slot": "nYYY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": 0.014283215512270945,
+    "p": 0.01,
+    "holds": true
+   },
+   "h2": 4.001751259207284,
+   "h2_ok": false,
+   "lag2": -0.004692418589255723,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 1.0
+  },
+  "P2_it_G1a": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnY*",
+    "slot": "nnnY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": 0.00045507555572499303,
+    "p": 0.278,
+    "holds": false
+   },
+   "h2": 2.6378744732391337,
+   "h2_ok": false,
+   "lag2": -0.0011736961260027656,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 0.9875111111111111
+  },
+  "P2_it_G1a_shuf": {
+   "role": "twin",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnY*",
+    "slot": "nnYY",
+    "affix2": "nYYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": -0.000275959440758089,
+    "p": 0.683,
+    "holds": false
+   },
+   "h2": 2.6379030778014982,
+   "h2_ok": false,
+   "lag2": 0.0026140133282940847,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 0.9875111111111111
+  },
+  "P2_it_G1b": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnY*",
+    "slot": "nnYY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 1,
+    "IT2a": 1
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": -0.023724631870909806,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 3.3446238970358237,
+   "h2_ok": false,
+   "lag2": 0.006747442096066073,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 1.0
+  },
+  "P2_it_G1b_shuf": {
+   "role": "twin",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "YnYY*",
+    "slot": "YnYY",
+    "affix2": "YYYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": 0.04349503531914473,
+    "p": 0.001,
+    "holds": true
+   },
+   "h2": 3.3434038407666202,
+   "h2_ok": false,
+   "lag2": 0.0033938390051906405,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 1.0
+  },
+  "P2_it_G1c": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nYnY*",
+    "slot": "nnYY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 1,
+    "IT2a": 1
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": -0.022508479145847665,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 3.3471058088106638,
+   "h2_ok": false,
+   "lag2": 0.007189440920546936,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 1.0
+  },
+  "P2_it_G1c_shuf": {
+   "role": "twin",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "YnnY*",
+    "slot": "nnYY",
+    "affix2": "YYYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 2,
+    "RF1b": 2,
+    "IT2a": 1
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": 0.03965608539035884,
+    "p": 0.001,
+    "holds": true
+   },
+   "h2": 3.346253058439286,
+   "h2_ok": false,
+   "lag2": 0.0011537021183045866,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 1.0
+  },
+  "P3_de_G1a": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnY*",
+    "slot": "nnYY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": -0.0008319295158184525,
+    "p": 0.793,
+    "holds": false
+   },
+   "h2": 2.7377836383687657,
+   "h2_ok": false,
+   "lag2": 0.0028064683521022427,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 0.9136
+  },
+  "P3_de_G1a_shuf": {
+   "role": "twin",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnY*",
+    "slot": "nnYY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": 0.002854986994984321,
+    "p": 0.002,
+    "holds": true
+   },
+   "h2": 2.737838869755611,
+   "h2_ok": false,
+   "lag2": -0.0010031715962364185,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 0.9136
+  },
+  "P3_de_G1b": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nYnY*",
+    "slot": "nnYY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": -0.021979763971336087,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 3.5461782523772323,
+   "h2_ok": false,
+   "lag2": 0.010630007734127804,
+   "lag2_ok": false,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 1.0
+  },
+  "P3_de_G1b_shuf": {
+   "role": "twin",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "YnYY*",
+    "slot": "nnYY",
+    "affix2": "YnYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 1
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": 0.030594136153925387,
+    "p": 0.001,
+    "holds": true
+   },
+   "h2": 3.5536432710198484,
+   "h2_ok": false,
+   "lag2": 0.0014586947029512653,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 1.0
+  },
+  "P3_de_G1c": {
+   "role": "cell",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nYnY*",
+    "slot": "nnnY",
+    "affix2": "nnnY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": -0.024992395096157468,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 3.509981630972435,
+   "h2_ok": false,
+   "lag2": 0.007468530083461015,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 1.0
+  },
+  "P3_de_G1c_shuf": {
+   "role": "twin",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnnY*",
+    "slot": "nnYY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 1,
+    "RF1b": 2,
+    "IT2a": 2
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": 0.025256720004406055,
+    "p": 0.001,
+    "holds": true
+   },
+   "h2": 3.519809459597645,
+   "h2_ok": false,
+   "lag2": 0.003810139081637697,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": 1.0
+  },
+  "VOY_ZL3b": {
+   "role": "target",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nYYY",
+    "slot": "YYYY",
+    "affix2": "YYYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 10,
+    "RF1b": 9,
+    "IT2a": 10
+   },
+   "battery_ok": true,
+   "rhythm": {
+    "excess": 0.07043943213641352,
+    "p": 0.001,
+    "holds": true
+   },
+   "h2": 2.1234471809076254,
+   "h2_ok": true,
+   "lag2": 0.00535444905530965,
+   "lag2_ok": true,
+   "s97_full": false,
+   "PASS": false,
+   "recovery": null
+  },
+  "VOY_RF1b": {
+   "role": "target",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "YYYY",
+    "slot": "YYYY",
+    "affix2": "YYYY"
+   },
+   "sig_ok": true,
+   "battery": {
+    "ZL3b": 14,
+    "RF1b": 11,
+    "IT2a": 12
+   },
+   "battery_ok": true,
+   "rhythm": {
+    "excess": 0.06742667371061979,
+    "p": 0.001,
+    "holds": true
+   },
+   "h2": 2.1335893334248452,
+   "h2_ok": true,
+   "lag2": 0.006188840118483922,
+   "lag2_ok": true,
+   "s97_full": true,
+   "PASS": true,
+   "recovery": null
+  },
+  "VOY_IT2a": {
+   "role": "target",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "YYYY",
+    "slot": "YYYY",
+    "affix2": "YYYY"
+   },
+   "sig_ok": true,
+   "battery": {
+    "ZL3b": 8,
+    "RF1b": 10,
+    "IT2a": 10
+   },
+   "battery_ok": true,
+   "rhythm": {
+    "excess": 0.06907806566256694,
+    "p": 0.001,
+    "holds": true
+   },
+   "h2": 2.1272240364872856,
+   "h2_ok": true,
+   "lag2": 0.004871428549744114,
+   "lag2_ok": true,
+   "s97_full": true,
+   "PASS": true,
+   "recovery": null
+  },
+  "PC2_VOY_IT2a_as_control": {
+   "role": "gate",
+   "applicable": [
+    "slot"
+   ],
+   "sig": {
+    "slot": "YYYY"
+   },
+   "sig_ok": true,
+   "battery": {
+    "IT2a": 10
+   },
+   "battery_ok": true,
+   "rhythm": {
+    "excess": 0.06905301874966308,
+    "p": 0.001,
+    "holds": true
+   },
+   "h2": 2.1272240364872856,
+   "h2_ok": true,
+   "lag2": null,
+   "lag2_ok": null,
+   "s97_full": true,
+   "PASS": null,
+   "recovery": null
+  },
+  "NC_augustine_la": {
+   "role": "gate",
+   "applicable": [
+    "identity",
+    "slot",
+    "affix2"
+   ],
+   "sig": {
+    "identity": "nnYY",
+    "slot": "nnnY",
+    "affix2": "nnYY"
+   },
+   "sig_ok": false,
+   "battery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "battery_ok": false,
+   "rhythm": {
+    "excess": -0.05957315374295247,
+    "p": 1.0,
+    "holds": false
+   },
+   "h2": 3.3232578593053974,
+   "h2_ok": false,
+   "lag2": null,
+   "lag2_ok": null,
+   "s97_full": false,
+   "PASS": null,
+   "recovery": null
+  }
+ },
+ "survivor": {},
+ "survivors": [],
+ "structure_only": [],
+ "heldout_fail": [],
+ "verdict": "no plaintext cell passes: table-driven verbose encodings of real recipe text are closed within G1; the grid moves to the H-05/H-07 side (procedure without plaintext) (D-066 (j) stopping rule)"
+}

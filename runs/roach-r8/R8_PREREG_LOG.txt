@@ -1,0 +1,6 @@
+r8 log
+fixture run 1: 2026-10-18 13:02:31 PDT (4m37s) r8.py rev0, NOT OK (weak stand-in not weak)
+revision 1 applied; fixture run 2: 13:07:58 PDT, FIXTURE CHECK OK
+FREEZE at (clock): 2026-10-18 13:13:45 PDT r8.py d5fe0de371e44576ab4e2caeb76cc9ce617ba0b4b640c5d54a226fbe63a722c6
+real run start: 2026-10-18 13:13:45 PDT
+real run end: 2026-10-18 13:15:46 PDT exit=0

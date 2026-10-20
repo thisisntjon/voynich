@@ -1,0 +1,126 @@
+r6.py mode=real run at (clock): 2026-10-18T12:32:35-07:00
+r6.py sha256: 6e6ee178b4ef0c9ffab438e0aa1a197f377d27eaeb5de41d98613a32eaf036c4
+prereg r6.py: 6e6ee178b4ef0c9ffab438e0aa1a197f377d27eaeb5de41d98613a32eaf036c4 ; stub match: YES
+data ../dl_ZL/ZL3b-n.txt sha256 bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc
+data ../dl_IT/IT2a-n.txt sha256 7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5
+data ../r3/dl_PG18837/pg18837.txt sha256 8bae4d88747b318b58ea193f981766fed337ddf613df452c1a06d72c9af75ffd
+
+R6a VOYNICH_ZL (whole text, positions >= 2)
+   prefix q1 R_w(1) 0.978 (null 1.001, p_up 0.990, p_two 0.035) | q2 decay -0.049 (null +0.000, p_up 1.000, p_two 0.005)
+   prefix q3 C 1.065 (page null 1.000, p_up 0.005) | q4 X 1.050 (page null 1.001, p_up 0.005, p_two 0.005)
+   prefix R_w(d) d=1..6: 0.978 1.077 1.027 1.007 0.986 0.966
+   prefix line-held signature: no
+   suffix q1 R_w(1) 1.128 (null 0.997, p_up 0.005, p_two 0.005) | q2 decay +0.117 (null -0.004, p_up 0.005, p_two 0.005)
+   suffix q3 C 1.119 (page null 1.001, p_up 0.005) | q4 X 1.069 (page null 1.000, p_up 0.005, p_two 0.005)
+   suffix R_w(d) d=1..6: 1.128 1.076 1.010 0.983 0.930 0.856
+   suffix line-held signature: no
+R6b VOYNICH_ZL: 15 folds: A B C D E F G H I M N O Q S T ; match threshold 8 folds
+   fold  lines | alpha(pre) alpha(suf) | match (i) line-held, (ii) per-word, (iii) Markov | real q1..q4 prefix ; suffix
+   A       225 |     22.48      21.43 | no    no    no    | 0.961 -0.053 1.076 1.037 ; 1.116 0.117 1.174 1.123
+   B       149 |     21.80      21.57 | no    YES   no    | 1.048 -0.020 0.986 1.062 ; 1.079 0.082 1.033 1.017
+   C       218 |     21.82      21.48 | no    YES   no    | 0.935 -0.185 1.032 1.024 ; 1.122 0.103 1.095 1.021
+   D       174 |     21.91      21.56 | no    no    no    | 0.930 -0.072 0.987 1.093 ; 1.181 0.188 1.161 1.067
+   E       211 |     21.58      21.14 | no    no    no    | 0.934 -0.141 1.000 1.004 ; 1.138 0.174 1.197 0.996
+   F       206 |     21.85      21.12 | no    no    no    | 1.004 0.067 1.070 1.023 ; 1.140 0.073 1.077 1.091
+   G       228 |     22.00      21.25 | no    no    no    | 0.963 0.049 1.052 1.109 ; 1.055 0.013 1.158 0.989
+   H       142 |     21.69      21.37 | no    no    no    | 1.065 0.060 1.166 1.059 ; 1.175 0.049 1.214 1.060
+   I        71 |     21.81      21.13 | no    YES   YES   | 1.013 -0.183 1.138 1.089 ; 1.317 0.348 0.977 0.926
+   M       792 |     21.85      22.99 | no    no    no    | 0.908 -0.140 1.038 1.077 ; 1.067 0.034 1.096 1.079
+   N       193 |     21.57      20.85 | no    no    no    | 1.002 0.066 1.092 1.012 ; 1.074 0.228 1.152 1.083
+   O       155 |     21.49      21.06 | no    no    no    | 0.992 -0.039 1.050 1.025 ; 0.983 0.049 1.155 1.040
+   Q       129 |     21.57      20.98 | no    YES   no    | 0.944 -0.045 1.061 0.973 ; 1.036 -0.078 1.026 1.069
+   S       135 |     21.14      21.44 | no    no    no    | 0.923 -0.076 1.052 1.017 ; 1.251 0.236 1.075 1.102
+   T      1084 |     21.86      18.35 | no    no    no    | 1.023 -0.016 1.090 1.056 ; 1.188 0.187 1.132 1.077
+   folds matched: (i) line-held 0, (ii) per-word 4, (iii) Markov 1 (threshold 8) -> call FAIL
+
+R6a VOYNICH_IT (whole text, positions >= 2)
+   prefix q1 R_w(1) 0.991 (null 1.000, p_up 0.796, p_two 0.433) | q2 decay -0.040 (null -0.001, p_up 0.990, p_two 0.035)
+   prefix q3 C 1.068 (page null 1.000, p_up 0.005) | q4 X 1.051 (page null 1.000, p_up 0.005, p_two 0.005)
+   prefix R_w(d) d=1..6: 0.991 1.072 1.031 0.995 0.981 0.950
+   prefix line-held signature: no
+   suffix q1 R_w(1) 1.089 (null 0.999, p_up 0.005, p_two 0.005) | q2 decay +0.086 (null -0.001, p_up 0.005, p_two 0.005)
+   suffix q3 C 1.107 (page null 0.999, p_up 0.005) | q4 X 1.072 (page null 1.000, p_up 0.005, p_two 0.005)
+   suffix R_w(d) d=1..6: 1.089 1.086 1.004 0.984 0.972 0.835
+   suffix line-held signature: no
+R6b VOYNICH_IT: 15 folds: A B C D E F G H I M N O Q S T ; match threshold 8 folds
+   fold  lines | alpha(pre) alpha(suf) | match (i) line-held, (ii) per-word, (iii) Markov | real q1..q4 prefix ; suffix
+   A       225 |     21.68      21.61 | no    no    no    | 0.977 -0.077 1.077 1.046 ; 1.107 0.139 1.213 1.117
+   B       149 |     21.16      21.60 | no    no    no    | 1.018 -0.001 1.026 1.067 ; 1.044 0.065 1.025 1.013
+   C       218 |     21.12      21.55 | no    YES   no    | 0.985 -0.118 1.046 1.019 ; 1.115 0.116 1.091 1.057
+   D       174 |     21.24      21.63 | no    no    no    | 0.935 -0.113 1.011 1.088 ; 1.140 0.158 1.171 1.060
+   E       211 |     20.89      21.20 | no    no    no    | 0.984 -0.102 0.997 1.006 ; 1.162 0.239 1.190 1.004
+   F       206 |     21.17      21.23 | no    no    no    | 0.999 0.090 1.074 1.029 ; 1.159 0.158 1.080 1.079
+   G       228 |     21.41      21.27 | no    no    no    | 0.979 -0.029 1.082 1.120 ; 1.029 -0.002 1.104 1.019
+   H       142 |     20.83      21.49 | no    no    no    | 1.071 0.039 1.133 1.080 ; 1.139 0.007 1.232 1.065
+   I        71 |     21.08      21.22 | no    no    no    | 1.061 0.044 1.180 1.132 ; 1.440 0.442 1.008 0.920
+   M       792 |     20.88      23.38 | no    no    no    | 0.892 -0.173 1.037 1.080 ; 1.025 0.004 1.098 1.088
+   N       182 |     20.89      20.85 | no    no    no    | 0.993 0.037 1.100 1.014 ; 1.065 0.224 1.119 1.099
+   O       155 |     20.72      21.16 | no    no    no    | 1.014 0.002 1.055 1.033 ; 0.944 -0.040 1.147 1.031
+   Q       129 |     20.84      21.07 | no    YES   no    | 0.979 0.023 1.044 0.983 ; 0.973 -0.052 1.042 1.052
+   S       135 |     20.49      21.56 | no    no    no    | 0.965 -0.006 1.051 1.008 ; 1.074 0.075 1.078 1.123
+   T      1083 |     21.15      18.01 | no    no    no    | 1.048 0.012 1.091 1.049 ; 1.138 0.124 1.093 1.072
+   folds matched: (i) line-held 0, (ii) per-word 2, (iii) Markov 0 (threshold 8) -> call FAIL
+
+R6a PLANTED_LINE_HELD (alpha=3) (whole text, positions >= 2)
+   prefix q1 R_w(1) 1.000 (null 1.000, p_up 0.468, p_two 0.985) | q2 decay +0.002 (null +0.001, p_up 0.448, p_two 0.950)
+   prefix q3 C 2.320 (page null 1.000, p_up 0.005) | q4 X 0.956 (page null 1.000, p_up 1.000, p_two 0.005)
+   prefix R_w(d) d=1..6: 1.000 1.010 0.999 0.999 1.000 0.987
+   prefix line-held signature: YES
+   suffix q1 R_w(1) 0.994 (null 1.000, p_up 0.856, p_two 0.343) | q2 decay +0.006 (null +0.001, p_up 0.338, p_two 0.682)
+   suffix q3 C 3.546 (page null 1.001, p_up 0.005) | q4 X 0.870 (page null 1.000, p_up 1.000, p_two 0.005)
+   suffix R_w(d) d=1..6: 0.994 1.002 0.987 1.005 1.009 1.018
+   suffix line-held signature: YES
+R6b PLANTED_LINE_HELD: 15 folds: A B C D E F G H I M N O Q S T ; match threshold 8 folds
+   fold  lines | alpha(pre) alpha(suf) | match (i) line-held, (ii) per-word, (iii) Markov | real q1..q4 prefix ; suffix
+   A       225 |      3.12       2.99 | YES   no    no    | 0.998 -0.033 2.132 0.996 ; 0.984 0.076 3.207 0.878
+   B       149 |      3.11       3.01 | YES   no    no    | 0.989 -0.025 2.187 0.882 ; 0.964 -0.101 3.265 0.804
+   C       218 |      3.11       3.00 | YES   no    no    | 0.953 -0.094 2.107 0.988 ; 1.018 0.120 3.294 0.806
+   D       174 |      3.09       3.01 | YES   no    no    | 1.043 0.001 2.013 0.883 ; 1.027 0.055 3.193 0.843
+   E       211 |      3.13       2.97 | no    no    no    | 1.039 0.047 2.363 0.817 ; 1.038 0.080 2.826 0.830
+   F       206 |      3.12       3.00 | YES   no    no    | 0.966 -0.010 2.321 0.947 ; 1.021 0.084 3.224 0.689
+   G       228 |      3.13       3.01 | YES   no    no    | 1.034 0.090 2.272 0.830 ; 1.008 -0.003 3.209 0.812
+   H       142 |      3.11       3.02 | YES   no    no    | 1.011 -0.003 2.352 0.977 ; 1.024 0.063 3.704 0.851
+   I        71 |      3.11       3.00 | no    no    no    | 1.171 0.268 2.027 0.706 ; 0.966 -0.048 2.657 0.734
+   M       792 |      3.13       2.99 | YES   no    no    | 0.993 -0.018 2.434 0.973 ; 0.993 0.005 3.792 0.850
+   N       193 |      3.10       3.01 | YES   no    no    | 1.003 0.052 2.290 1.000 ; 0.968 -0.024 3.641 1.051
+   O       155 |      3.11       3.02 | YES   no    no    | 0.989 -0.012 2.287 0.968 ; 0.983 -0.043 3.584 0.851
+   Q       129 |      3.11       2.99 | YES   no    no    | 0.930 -0.076 2.267 0.940 ; 1.015 0.025 3.056 0.664
+   S       135 |      3.07       2.98 | YES   no    no    | 1.012 0.063 2.062 0.910 ; 1.016 -0.036 3.100 0.725
+   T      1084 |      3.14       3.01 | YES   no    no    | 1.003 0.002 2.399 0.985 ; 0.978 -0.014 3.825 0.961
+   folds matched: (i) line-held 13, (ii) per-word 0, (iii) Markov 0 (threshold 8) -> call PASS
+
+LATIN affixes: ['co', 'in', 'qu', 'pr', 're', 'ad', 'ca', 'su', 'ex', 'se'] ; ['s', 'e', 'm', 't', 'um', 'i', 'is', 'us', 'o', 'a', 'nt', 'ue', 'que', 'r', 'n', 'es', 'bus', 'em', 'd', 're']
+R6a LATIN (whole text, positions >= 2)
+   prefix q1 R_w(1) 0.998 (null 1.000, p_up 0.726, p_two 0.567) | q2 decay -0.003 (null +0.000, p_up 0.667, p_two 0.667)
+   prefix q3 C 1.002 (page null 1.000, p_up 0.244) | q4 X 0.998 (page null 1.000, p_up 0.871, p_two 0.239)
+   prefix R_w(d) d=1..6: 0.998 1.001 1.001 0.997 1.009 0.987
+   prefix line-held signature: no
+   suffix q1 R_w(1) 1.132 (null 0.999, p_up 0.005, p_two 0.005) | q2 decay +0.214 (null +0.004, p_up 0.005, p_two 0.005)
+   suffix q3 C 1.120 (page null 1.000, p_up 0.005) | q4 X 1.040 (page null 1.000, p_up 0.005, p_two 0.005)
+   suffix R_w(d) d=1..6: 1.132 0.917 0.918 1.021 1.001 0.960
+   suffix line-held signature: no
+R6b LATIN: 15 folds: Q00 Q01 Q02 Q03 Q04 Q05 Q06 Q07 Q08 Q09 Q10 Q11 Q12 Q13 Q14 ; match threshold 8 folds
+   fold  lines | alpha(pre) alpha(suf) | match (i) line-held, (ii) per-word, (iii) Markov | real q1..q4 prefix ; suffix
+   Q00     240 |    330.87      90.60 | YES   YES   no    | 1.021 0.013 0.998 1.004 ; 1.022 -0.108 1.104 1.009
+   Q01     240 |    517.87      90.40 | YES   YES   YES   | 1.002 0.009 1.010 1.000 ; 1.137 0.220 1.092 1.054
+   Q02     210 |    285.38      88.58 | no    no    YES   | 0.994 -0.026 0.986 1.001 ; 1.193 0.381 1.046 0.994
+   Q03     240 |    394.45      91.32 | no    no    YES   | 0.973 -0.037 1.004 1.001 ; 1.180 0.281 1.162 1.013
+   Q04     240 |    627.02      91.02 | YES   no    no    | 1.015 0.002 1.010 0.992 ; 0.958 0.044 1.130 1.019
+   Q05     210 |    283.99      87.26 | no    YES   YES   | 1.002 0.038 0.987 0.996 ; 1.085 0.123 1.019 1.065
+   Q06     240 |    468.35      90.65 | no    no    no    | 1.004 -0.001 1.010 0.997 ; 1.086 0.159 1.121 1.078
+   Q07     240 |    568.88      88.85 | YES   no    YES   | 0.964 -0.015 1.012 1.003 ; 1.115 0.138 1.073 1.060
+   Q08     210 |    453.92      91.38 | no    no    YES   | 1.021 -0.001 1.012 1.002 ; 1.257 0.320 1.141 1.007
+   Q09     240 |    332.04      88.88 | no    no    YES   | 0.994 -0.024 0.997 0.988 ; 1.132 0.428 1.084 1.007
+   Q10     240 |    254.45      94.49 | no    no    YES   | 1.014 0.020 0.984 0.999 ; 1.097 -0.034 1.179 1.061
+   Q11     210 |    607.37      95.17 | no    no    no    | 0.993 0.004 1.019 1.002 ; 1.164 0.268 1.212 1.129
+   Q12     240 |    452.88      93.29 | no    no    YES   | 0.987 -0.036 1.003 0.992 ; 1.271 0.528 1.201 1.031
+   Q13     240 |    329.91      94.24 | no    no    YES   | 0.991 0.010 0.996 0.992 ; 1.232 0.347 1.175 1.034
+   Q14     197 |    329.28      89.56 | YES   YES   YES   | 0.992 0.006 0.995 0.999 ; 1.047 0.171 1.061 1.048
+   folds matched: (i) line-held 5, (ii) per-word 4, (iii) Markov 11 (threshold 8) -> call FAIL
+
+CALLS
+Positive control (planted line-held, alpha=3): call PASS (required PASS)
+Negative control (Latin): line-held signature prefix=False suffix=False (required: no); fold call FAIL
+IT (second transliteration): call FAIL, folds (i) 0 (ii) 2 (iii) 0
+ZL CALL: (i) line-held matches 0/15, (ii) per-word 4/15, (iii) Markov 1/15, threshold 8 -> FAIL
+VERDICT: FAIL

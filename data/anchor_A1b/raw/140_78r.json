@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:02:38.4186916Z",
+ "response": "{\n  \"PT\": \"BATH\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"0\",\n  \"P_flower\": \"NA\",\n  \"P_habit\": \"MULTI\",\n  \"J_shape\": \"CYLINDER\",\n  \"J_count\": \"5+\",\n  \"J_fragcount\": \"1-4\",\n  \"J_fragtype\": \"MIXED\",\n  \"C_centre\": \"HUMAN\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"20+\",\n  \"C_rings\": \"3\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"2\",\n  \"B_figures\": \"6-10\",\n  \"B_tubes\": \"PRESENT\",\n  \"note\": \"Circular diagrams with human figures, bath scene with multiple figures and tubes.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2773553000,
+ "load_duration": 189717700,
+ "prompt_eval_count": 3268,
+ "prompt_eval_duration": 793257000,
+ "eval_count": 214,
+ "eval_duration": 1653772000,
+ "stem": "140_78r"
+}

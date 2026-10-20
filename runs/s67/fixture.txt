@@ -1,0 +1,40 @@
+s67 fixture (synthetic, no real data) -- date: Sun Oct 18 01:47:17 PDT 2026 (`date`)
+fixture: synthetic text 192 pages in 16 quires of 12, 17489 tokens; truth {'p_rep': 0.2, 'tau': 3.0, 'gamma': 1.0, 'rho': 0.6}
+  synthetic text within-line Moran 0.4282; base (no cadence) Moran -0.0051
+  recovery fit (training = quires B-P): 142 evals, 18s; fitted p_rep 0.15, tau 2.0, gamma 0.75, rho 0.7; loss 464.61 (R 185.24, types 249.31, Moran 7.11, len-sd 22.96); CA0 p_rep 0.15 tau 2.0 loss 2255.78
+  classes {'top': 300, 'nearest': 221, 'backoff': 77, 'inertia': 31.8974, 'top_class_sizes': [32, 26, 36, 36, 7, 33, 67, 14, 23, 13, 10, 3]}
+  check rho (reported, not gated): fitted 0.7 vs truth 0.6; tau fitted 2.0 vs truth 3.0
+  check p_rep 0.15 vs truth 0.2 (within 0.05) -> OK
+  check gamma 0.75 vs truth 1.0 (> 0 and within one grid step of [0.0, 0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 3.0, 4.0]) -> OK
+--- FIX fold A: held-out 12 pages (1088 tokens), training 180 pages (16401 tokens)
+  classes: {'top': 300, 'nearest': 221, 'backoff': 77, 'inertia': 31.8974, 'top_class_sizes': [32, 26, 36, 36, 7, 33, 67, 14, 23, 13, 10, 3]}; mu 5.573; affix contexts CA [857, 50, 13] / CA-ind [82, 4]
+  training targets: Moran 0.4291, word-length sd 1.3917, types 6897 at 16401 tokens
+  fit CA    : p_rep 0.15, tau 2.0, gamma 0.75, rho 0.7; loss 464.61 (R 185.24, types 249.31, Moran 7.11, len-sd 22.96); in-sample Moran 0.4024, len sd 1.3250, types 7986 at 16438
+  fit CA0   : p_rep 0.15, tau 2.0, gamma 0.0, rho 0.0; loss 2255.78 (R 206.34, types 318.05, Moran 1335.66, len-sd 395.74); in-sample Moran 0.0636, len sd 1.6686, types 8127 at 16338
+  fit CA-ind: p_rep 0.25, tau 2.0, gamma 4.0, rho 0.5; loss 3958.29 (R 289.79, types 2616.60, Moran 48.75, len-sd 1003.16); in-sample Moran 0.4989, len sd 0.9509, types 10425 at 16315
+  fits: CA 142 evals 18s; CA-ind 142 evals 19s
+  real held-out: Moran 0.4143 [0.3955,0.4276]; core->core +0.1410 [+0.1078,+0.1601]; prefix gain -0.0355 [-0.0453,-0.0263]; jsd_first_fg 0.0312; CHARWIN -0.2816
+  -- CA: 2/6 hold [P1+ P2- P3- P4- P5- P7+] --
+    P1 HOLDS: Moran Δ -0.0075 [-0.0329,+0.0172] (gen 0.4068, real 0.4143); margin hi-0 = +0.0172
+    P2 fails: core->core excess Δ -0.1009 [-0.1349,-0.0556] (gen +0.0401, real +0.1410); margins 0-lo +0.1349, hi-0 -0.0556
+    P3 fails: prefix gain gen -0.0502 vs real -0.0355 [-0.0453,-0.0263]; margins g-lo -0.0050, hi-g +0.0239
+    P4 fails: jsd_first_fg gen 0.0179 vs s15 width [0.1447,0.2156] (real held-out 0.0312); margins -0.1268 / +0.1977; excess gen -0.0030 real +0.0099
+    P5 fails: CHARWIN gen -0.1979 (real -0.2816); margin -0.1979
+    P7 HOLDS: types gen/real at matched tokens 1.067 (seeds 1.068, 1.066); tol ±15%
+  -- CA0: 1/6 hold [P1- P2- P3- P4- P5- P7+] --
+    P1 fails: Moran Δ -0.3714 [-0.3950,-0.3527] (gen 0.0429, real 0.4143); margin hi-0 = -0.3527
+    P2 fails: core->core excess Δ -0.0482 [-0.0859,-0.0032] (gen +0.0928, real +0.1410); margins 0-lo +0.0859, hi-0 -0.0032
+    P3 fails: prefix gain gen -0.0507 vs real -0.0355 [-0.0453,-0.0263]; margins g-lo -0.0054, hi-g +0.0244
+    P4 fails: jsd_first_fg gen 0.0198 vs s15 width [0.1447,0.2156] (real held-out 0.0312); margins -0.1249 / +0.1958; excess gen -0.0028 real +0.0099
+    P5 fails: CHARWIN gen -0.1272 (real -0.2816); margin -0.1272
+    P7 HOLDS: types gen/real at matched tokens 1.077 (seeds 1.067, 1.087); tol ±15%
+  -- CA-ind: 2/6 hold [P1+ P2+ P3- P4- P5- P7-] --
+    P1 HOLDS: Moran Δ +0.0574 [+0.0392,+0.0841] (gen 0.4717, real 0.4143); margin hi-0 = +0.0841
+    P2 HOLDS: core->core excess Δ -0.0143 [-0.0526,+0.0248] (gen +0.1267, real +0.1410); margins 0-lo +0.0526, hi-0 +0.0248
+    P3 fails: prefix gain gen -0.0604 vs real -0.0355 [-0.0453,-0.0263]; margins g-lo -0.0151, hi-g +0.0341
+    P4 fails: jsd_first_fg gen 0.0215 vs s15 width [0.1447,0.2156] (real held-out 0.0312); margins -0.1232 / +0.1941; excess gen +0.0030 real +0.0099
+    P5 fails: CHARWIN gen -0.1463 (real -0.2816); margin -0.1463
+    P7 fails: types gen/real at matched tokens 1.199 (seeds 1.201, 1.197); tol ±15%
+  fold time 43s
+  pipeline check (fold A scored for CA, CA0, CA-ind) -> OK; CA on its own truth-class text: 2/6
+FIXTURE PASS (62s)

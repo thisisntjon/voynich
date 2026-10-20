@@ -1,0 +1,209 @@
+=========================================================================================================
+TEST 4 (CANDIDATE 4): COMBINATORIAL CODEBOOK MATRIX FILL & INDEPENDENT ATTRIBUTE LINK
+=========================================================================================================
+
+--- 4A. Combinatorial Cube Fill Rate, 2-Way MI & 3-Way Interaction Information (P x C x S) ---
+Compares Voynich (ZL3b ALL, Currier A, Currier B) against 100 frequency-matched independent
+product-null draws (permuting P, C, S independently) and against combinatorial/taxonomic controls.
+corpus                       |  N_tok   P     C   S | Top50% Cube50_Obs Cube50_Null O/N_50 | MI(P;C) MI(C;S) MI(P;S) TC_3way  II_3way
+-------------------------------------------------------------------------------------------------------------------------------------
+ZL3b_ALL                     |  34857  29  2335  19 |  80.8% 2471 ( 9.0%) 6844.7±27.8  0.36x |  1.6696  1.4608  0.1962  3.3827  +0.0560
+ZL3b_Currier_A               |  11231  29  1154  19 |  80.4% 1440 ( 5.2%) 3431.1±22.0  0.42x |  1.6868  1.5437  0.1649  3.4980  +0.1025
+ZL3b_Currier_B               |  23078  29  1558  19 |  82.6% 1906 ( 6.9%) 5114.5±24.1  0.37x |  1.7541  1.4544  0.2387  3.4630  +0.0158
+lull_ars_combinatoria_lines8 |   1680  60    15  13 | 100.0%  816 ( 7.0%) 1028.8± 8.8  0.79x |  0.6621  0.2736  1.0665  2.0027  +0.0005
+taxonomic_conlang_syntax     |   6890  17   202  34 |  89.9% 1770 ( 6.1%) 3121.6±17.1  0.57x |  0.9821  1.8768  1.1254  4.1572  +0.1729
+taxonomic_conlang_cadence    |   6890  33    70  64 |  99.3% 5285 ( 5.0%) 6354.7±17.9  0.83x |  0.9706  1.0900  0.3751  3.7503  +1.3147
+cremma_prose15               |   6890  38  1875  35 |  52.9%  788 ( 1.2%) 2254.2±16.1  0.35x |  3.1239  2.9388  0.5431  6.8388  +0.2330
+
+  [ZL3b_ALL 2D & 3D Cube Anatomy on Top-50 Cores (80.84% of all tokens)]:
+    - P x C_top50 face (29 x 50 = 1450 cells): obs=790 (54.5%) vs indep_null=1355.2 (93.5%), ratio=0.58x
+    - C_top50 x S face (50 x 19 = 950 cells): obs=502 (52.8%) vs indep_null=833.0 (87.7%), ratio=0.60x
+    - P x C_top50 x S cube (29 x 50 x 19 = 27550 cells): obs=2471 (8.97%) vs indep_null=6844.7 (24.84%), ratio=0.36x (z=-157.2)
+    - Conditional MI(P; S | C) = 0.2522 bits vs unconditional MI(P; S) = 0.1962 bits (3-way Interaction II = +0.0560 bits)
+    - Total Correlation TC(P;C;S) = 3.3827 bits vs indep_null = 1.1984 bits (excess = +2.1843 bits)
+
+--- 4B.1: Q1 Label Locus/Unit Classes (Lz, Lf, Ls, Ln, Lt, Lc, Lp, L0) — Slot Link vs Hierarchy of Nulls ---
+Tests whether WholeWord (W), Prefix (P), Core (C), or Suffix (S) of the 1,164 label tokens links to
+label locus type (Lp=plant, Lz=zodiac, Ls=star, Lf=figure, Ln=nymph, Lt=tube, Lc=circle, L0=other)
+under (1) Free Shuffle, (2) Within-(Section, Hand) Token Shuffle, (3) Within-(Section, Hand) Folio-Block
+Permutation, and (4) Strictly Within-Page Shuffle on the 23 multi-unit pages (500 draws each).
+  Label inventory: 1164 tokens across 57 pages; 23 pages have >=2 distinct L* unit types (427 tokens).
+    Multi-unit stratum (illus=P, hand=1): n=241 tokens, units={'Lf': 205, 'Lc': 36}
+    Multi-unit stratum (illus=C, hand=4): n=207 tokens, units={'L0': 199, 'La': 8}
+    Multi-unit stratum (illus=A, hand=4): n=148 tokens, units={'Ls': 84, 'L0': 63, 'La': 1}
+    Multi-unit stratum (illus=B, hand=2): n=126 tokens, units={'Ln': 64, 'Lt': 56, 'L0': 6}
+    Multi-unit stratum (illus=T, hand=5): n=51 tokens, units={'L0': 46, 'Lx': 5}
+    Multi-unit stratum (illus=H, hand=1): n=27 tokens, units={'L0': 24, 'Lx': 2, 'Lp': 1}
+
+Component    | V_typ  obs_MI | Free_mu  Free_z | WinSH_mu WinSH_z   p_SH | FolSH_mu FolSH_z  p_Fol | WinPg_obs WinPg_mu WinPg_z   p_Pg
+--------------------------------------------------------------------------------------------------------------------------------------
+WholeWord    |   837  2.1017 |  1.9617   +9.33 |   2.0639   +4.52  0.002 |   2.1993   -0.95  0.808 |    2.2104   2.1551   +3.52  0.002
+Prefix       |    29  0.3208 |  0.1332  +16.90 |   0.2949   +3.29  0.002 |   0.3272   -0.27  0.555 |    0.5642   0.4796   +4.21  0.002
+Core         |   420  1.2269 |  1.0612   +8.32 |   1.1720   +4.24  0.002 |   1.2541   -0.52  0.631 |    1.4135   1.3234   +3.66  0.002
+Suffix       |    19  0.1681 |  0.0944   +8.04 |   0.1497   +2.28  0.024 |   0.1674   +0.04  0.381 |    0.3167   0.2725   +2.50  0.012
+
+--- 4B.2: Independent Page & Botanical/Astrological Attribute Link Beyond (Section, Hand, Quire) ---
+  [Test 4B.2a] Petersen/Stolfi Cross-Referenced Plant Pairs in ZL3b-n.txt: 12 valid folio pairs: [('f100r', 'f90v1'), ('f100r', 'f90v2'), ('f102r1', 'f1v'), ('f102r1', 'f37v'), ('f102r2', 'f18v'), ('f102r2', 'f23r'), ('f102r2', 'f32v'), ('f102r2', 'f47v'), ('f102v1', 'f19r'), ('f39r', 'f95r2'), ('f48r', 'f89v2'), ('f96v', 'f99r')]
+    WholeWord_Jaccard   : obs=0.0598 vs random (H,P) pair null=0.0682±0.0229 (z=-0.37, p=0.637)
+    Core_Jaccard        : obs=0.2004 vs random (H,P) pair null=0.2140±0.0196 (z=-0.69, p=0.836)
+    Prefix_Cosine       : obs=0.8308 vs random (H,P) pair null=0.8139±0.0215 (z=+0.78, p=0.210)
+    Suffix_Cosine       : obs=0.8869 vs random (H,P) pair null=0.8950±0.0158 (z=-0.51, p=0.714)
+    Para0_Core_Match    : obs=0.0833 vs random (H,P) pair null=0.0161±0.0297 (z=+2.27, p=0.096)
+
+  [Test 4B.2b] Herbal Hand-1 Pages (n=95 pages) — Link to Independent Page Attributes vs Page-Perm Null:
+    (i) Herbal Hand-1 Page Layout (1_para vs 2plus_para: {'1_para': 92, '2plus_para': 3}):
+        MI(Prefix; ParaCount_Layout): obs=0.0046 vs page-perm null=0.0046±0.0014 (excess=-0.0001, z=-0.04, p=0.472)
+        MI(Core  ; ParaCount_Layout): obs=0.0418 vs page-perm null=0.0331±0.0055 (excess=+0.0087, z=+1.57, p=0.066)
+        MI(Suffix; ParaCount_Layout): obs=0.0019 vs page-perm null=0.0030±0.0011 (excess=-0.0011, z=-0.99, p=0.864)
+    (ii) Sherwood/Scott Same-Genus Herbal Hand-1 Folio Pairs (n=6 pairs across 6 shared genera):
+        Core_Jaccard        : obs=0.2776 vs random H1 pair null=0.2661±0.0361 (z=+0.32, p=0.214)
+        Prefix_Cosine       : obs=0.8950 vs random H1 pair null=0.8678±0.0256 (z=+1.06, p=0.158)
+        Suffix_Cosine       : obs=0.9657 vs random H1 pair null=0.9426±0.0172 (z=+1.34, p=0.050)
+        Para0_Prefix_Match  : obs=0.0000 vs random H1 pair null=0.2471±0.1640 (z=-1.51, p=1.000)
+    (iii) Zodiac Lz Labels (344 tokens across 12 pages) — Link to Classical Element & Season vs Page-Block Null:
+        MI(Prefix; Element_4): obs=0.1757 vs page-block null=0.2565±0.0454 (excess=-0.0808, z=-1.78, p=0.980)
+        MI(Core  ; Element_4): obs=0.9765 vs page-block null=0.9869±0.0343 (excess=-0.0104, z=-0.30, p=0.597)
+        MI(Suffix; Element_4): obs=0.1511 vs page-block null=0.1385±0.0250 (excess=+0.0126, z=+0.50, p=0.315)
+        MI(Prefix; Season_4 ): obs=0.3310 vs page-block null=0.2575±0.0466 (excess=+0.0734, z=+1.58, p=0.072)
+        MI(Core  ; Season_4 ): obs=1.0543 vs page-block null=0.9852±0.0351 (excess=+0.0691, z=+1.97, p=0.032)
+        MI(Suffix; Season_4 ): obs=0.1455 vs page-block null=0.1399±0.0223 (excess=+0.0055, z=+0.25, p=0.391)
+
+=========================================================================================================
+TEST 5 (CANDIDATE 5): HIGHLY ABBREVIATED SPECIALIST WRITING — EXPANSION & EDGE-RESTRICTION TEST
+=========================================================================================================
+Compares Voynich (ZL3b ALL, A, B) directly against CREMMA medieval medical/specialist manuscripts
+WITH tachygraphic abbreviation marks preserved (_marks) and 4 explicit abbreviation/suspension models.
+Metrics:
+  - H_pos : Within-word 5-bin normalized positional entropy (lower = stricter internal glyph order)
+  - A_ord : Within-word character-bigram unidirectional asymmetry (higher = stricter one-way glyph order)
+  - Fin3% : Share of word tokens ending in the top-3 word-final characters
+  - h2    : Conditional character entropy H(c_i | c_{i-1})
+  - A1_jsd, A3_edge, A5_I_within (vs q99), I_core, S1->P2, C1->C2, A6_CHARWIN
+
+corpus_name                |   toks |  H_pos  A_ord  Fin3%    h2 |  A1_jsd  A3_edg   I_win  I_q99  I_core |  S1->P2  C1->C2  CHARWIN
+------------------------------------------------------------------------------------------------------------------------------------
+ZL3b_ALL                   |  34857 | 0.6341 0.8416  72.8%  2.11 | +0.1741 +0.1809 +0.1572 +0.0803 +0.0346 | +0.1215 -0.0319  +0.0940
+ZL3b_Currier_A             |  11231 | 0.6545 0.8023  67.0%  2.15 | +0.1359 +0.1203 +0.1171 +0.0754 +0.0185 | +0.0616 -0.0584  +0.1490
+ZL3b_Currier_B             |  23078 | 0.6071 0.8661  76.2%  2.00 | +0.2176 +0.2321 +0.1673 +0.0795 +0.0668 | +0.1420 +0.0083  +0.0739
+CREMMA_Med_Recipes_base    |  17119 | 0.8860 0.3567  31.9%  3.55 | +0.0214 +0.0601 -0.0618 +0.0252 -0.0235 | +0.0235 +0.0265  -0.0035
+CREMMA_Med_Recipes_marks   |  17119 | 0.8523 0.4279  34.1%  3.64 | +0.0219 +0.0609 -0.0613 +0.0204 -0.0317 | +0.0183 +0.0142  -0.0187
+H318_base                  |   4676 | 0.8716 0.4003  35.9%  3.42 | +0.0146 +0.0888 -0.1035 +0.0173 -0.0559 | +0.0302 -0.0329  +0.0115
+H318_marks                 |   4676 | 0.8114 0.4800  38.0%  3.45 | +0.0146 +0.0819 -0.0916 +0.0193 -0.0602 | +0.0329 -0.0341  +0.0727
+CLM13027_base              |   6732 | 0.8792 0.3716  33.8%  3.52 | +0.0482 +0.0680 -0.0544 +0.0385 -0.0322 | +0.0355 +0.0582  +0.1548
+CLM13027_marks             |   6732 | 0.8514 0.4520  35.4%  3.59 | +0.0499 +0.0677 -0.0683 +0.0266 -0.0452 | +0.0321 +0.0265  +0.1379
+Latin16195_base            |   3993 | 0.8557 0.4566  31.9%  3.40 | +0.0078 +0.1328 -0.0643 +0.0333 -0.0322 | +0.0545 +0.1258  -0.0786
+Latin16195_marks           |   3993 | 0.8364 0.4989  35.6%  3.50 | +0.0075 +0.1315 -0.0555 +0.0313 -0.0436 | +0.0587 +0.1249  -0.0689
+Phi_10a135_base            |   1718 | 0.9026 0.3878  33.4%  3.49 | +0.0241 +0.0717 -0.0445 +0.0628 -0.0177 | +0.0519 +0.1112  +0.1474
+Phi_10a135_marks           |   1718 | 0.8751 0.4426  31.7%  3.56 | +0.0241 +0.0773 -0.0408 +0.0599 -0.0202 | +0.0704 +0.1169  +0.1818
+Egerton821_marks (Charms)  |   1088 | 0.8755 0.4787  44.6%  3.36 | +0.1318 +0.1830 -0.1013 +0.0520 -0.0892 | +0.1313 +0.0446  +0.1304
+Sim5A_Heavy_Tachygraphic   |  17119 | 0.8700 0.4007  31.9%  3.56 | +0.0211 +0.0636 -0.0647 +0.0242 -0.0236 | +0.0239 +0.0266  +0.0058
+Sim5B_Radical_3ch_Susp     |  17119 | 0.7830 0.4445  31.7%  3.55 | +0.0214 +0.0601 -0.0871 +0.0148 -0.0168 | +0.0204 +0.0720  +0.0218
+Sim5C_RightMargin_Susp     |  17119 | 0.8673 0.3940  30.0%  3.58 | +0.0221 +0.0628 -0.0585 +0.0152 -0.0136 | +0.0221 +0.0903  +0.0402
+Sim5D_Formulaic_Rec_Abbrev |  17119 | 0.8060 0.5232  29.8%  3.41 | +0.6580 +0.0510 -0.0385 -0.0315 -0.0108 | +0.0139 -0.0054  +0.0135
+
+=========================================================================================================
+TEST 6 (CANDIDATE 6): SYLLABIC WRITING WITH SOUND-COMBINATION RULES / STOLFI GRAMMAR
+=========================================================================================================
+
+--- 6A. Strict CV/CVC Syllable Decomposition & Coverage on ZL3b (34,857 word tokens) ---
+  Total CV/CVC syllable tokens : 56452 (mean 1.620 syllables/word, 3.081 chars/syllable)
+  Distinct CV/CVC syllable types: 2928
+  Word syllable-count distribution: 1-syl=48.68%, 2-syl=41.08%, 3-syl=9.87%, 4+syl=0.37%
+  Syllable-token coverage thresholds: 50%=22 types, 80%=135 types, 90%=375 types, 95%=815 types, 99%=2364 types
+  Whole-word token coverage (all syllables in word <= rank K): 50%=57 syl types, 80%=270 syl types, 90%=648 syl types, 95%=1275 syl types, 99%=2578 syl types
+  Top-20 CV/CVC syllables: [('dy', 5641, '9.99%'), ('o', 5085, '9.01%'), ('qo', 4651, '8.24%'), ('ol', 1276, '2.26%'), ('daiin', 1264, '2.24%'), ('che', 1149, '2.04%'), ('y', 852, '1.51%'), ('she', 748, '1.33%'), ('cho', 744, '1.32%'), ('kaiin', 653, '1.16%'), ('ke', 651, '1.15%'), ('kee', 645, '1.14%'), ('keey', 642, '1.14%'), ('ky', 596, '1.06%'), ('dar', 588, '1.04%'), ('kain', 571, '1.01%'), ('dal', 515, '0.91%'), ('kal', 507, '0.90%'), ('chol', 477, '0.84%'), ('aiin', 467, '0.83%')]
+
+--- 6B. Within-Word Syllable Slot Locking (Syl_1 vs Syl_mid vs Syl_final on 2+ Syllable Words) ---
+  2+ syllable words: n=17890 (51.3% of corpus)
+  JSD(Syl_initial || Syl_final) within words = 0.8879 bits (1.000 = completely disjoint syllable alphabets!)
+  Top-8 Initial Syllables (Syl_1)   : [('o', '27.6%'), ('qo', '25.6%'), ('che', '5.6%'), ('ol', '4.1%'), ('she', '3.7%'), ('cho', '3.6%'), ('sho', '1.3%'), ('cheo', '1.2%')]
+  Top-8 Medial Syllables  (Syl_mid) : [('ke', '15.4%'), ('kee', '15.4%'), ('te', '8.4%'), ('tee', '5.2%'), ('che', '3.9%'), ('pche', '2.9%'), ('keo', '2.6%'), ('kal', '2.3%')]
+  Top-8 Final Syllables   (Syl_last): [('dy', '29.7%'), ('keey', '3.3%'), ('y', '3.2%'), ('kaiin', '3.2%'), ('ky', '3.1%'), ('kain', '2.9%'), ('daiin', '2.5%'), ('kal', '2.2%')]
+  Within-word MI(Syl_1; Syl_last)   = 1.1199 bits (NMI=0.2166)
+
+--- 6C. Syllable Count & Syllable Type Dependence on Line Position (Lines >= 4 tokens) ---
+line_slot       |  n_tok | mean_chr mean_syl chr/syl | 1-syl% 2-syl% 3+syl% | pf_onset% m_coda%
+-----------------------------------------------------------------------------------------------
+0_para_init     |    754 |   6.3528   1.7825  3.5640 |  35.9%  50.4%  13.7% |    49.07%   0.80%
+0_ord_init      |   3140 |   5.1975   1.5061  3.4510 |  56.4%  36.8%   6.8% |     1.56%   0.29%
+1_second        |   3894 |   4.9589   1.5354  3.2296 |  54.6%  37.4%   8.0% |     2.03%   0.62%
+2_mid           |  18685 |   4.9547   1.6369  3.0268 |  47.4%  41.8%  10.8% |     2.95%   0.84%
+3_penult        |   3894 |   4.9463   1.6194  3.0544 |  48.9%  40.6%  10.5% |     3.08%   1.82%
+4_line_final    |   3894 |   4.7067   1.6726  2.8141 |  45.5%  42.7%  11.8% |     2.62%  15.84%
+
+  Cross-Word Syllable Boundary MI(Syl_last(w_t); Syl_first(w_{t+1})):
+    obs=2.2232 bits vs shuf_null=1.9060±0.0063 -> excess=+0.3172 bits (z=+50.35)
+
+--- 6D. Syllabary Transducer Controls (Natural Language Mapped into Voynich Free & Position-Locked Syllabaries) ---
+  Voynich_ZL3b_ALL           | h2=2.11 H_pos=0.6341 A_ord=0.8416 CHARWIN=+0.0940 | A1_jsd=+0.1741 A3_edg=+0.1809 I_win=+0.1572 (q99=+0.0803) I_core=+0.0346 S1->P2=+0.1215 C1->C2=-0.0319
+  Sim6A_Free_CV_Syllabary    | h2=2.37 H_pos=0.8238 A_ord=0.7982 CHARWIN=-0.6015 | A1_jsd=+0.0007 A3_edg=+0.0016 I_win=-0.0257 (q99=+0.0321) I_core=-0.0184 S1->P2=+0.0032 C1->C2=+0.0340
+  Sim6B_Stolfi_PosLocked_Syl | h2=2.27 H_pos=0.7112 A_ord=0.7148 CHARWIN=-0.3266 | A1_jsd=-0.0005 A3_edg=+0.0030 I_win=-0.0197 (q99=+0.0287) I_core=-0.0097 S1->P2=+0.0068 C1->C2=+0.0407
+
+=========================================================================================================
+TEST 7 (CANDIDATE 7): FORMULAIC RECORDS / PROCEDURAL NOTATION — CROSS-ENTRY TEMPLATE PREDICTION
+=========================================================================================================
+Trains on the first 80% of paragraphs and evaluates on the held-out last 20% of paragraphs across
+Voynich Sections S (Stars/Recipes), H (Herbal), P (Pharmaceutical), B (Biological) vs medieval
+medical recipes (CREMMA_Medical_Recipes), liturgical litanies, and a procedural recipe ledger.
+
+--- 7A. Paragraph Census Across Voynich Sections (ZL3b @P/*P Paragraph Blocks) ---
+  Section S:   28 paragraphs | lines/para=41.57±12.42 (median 46) | tokens/para=413.8±132.4 (total 11586 toks)
+  Section H:  146 paragraphs | lines/para=11.01±5.12 (median 11) | tokens/para=78.5±33.9 (total 11468 toks)
+  Section B:   38 paragraphs | lines/para=19.61±15.67 (median 14) | tokens/para=164.2±143.1 (total 6240 toks)
+  Section P:   36 paragraphs | lines/para=6.22±2.75 (median 5) | tokens/para=64.1±42.6 (total 2306 toks)
+  Section T:   19 paragraphs | lines/para=11.89±12.87 (median 5) | tokens/para=120.2±131.0 (total 2284 toks)
+  Section C:   23 paragraphs | lines/para=4.65±2.93 (median 4) | tokens/para=30.2±24.8 (total 694 toks)
+  Section A:   18 paragraphs | lines/para=3.11±0.94 (median 3) | tokens/para=15.5±13.9 (total 279 toks)
+
+--- 7B.1 Held-Out Prefix Slot (P, V=29) Sequence Prediction (80% Train -> 20% Test Paragraphs) ---
+Cross-Entropy (bits/token, lower = better) and Top-1 Accuracy (%) on held-out 20% paragraphs:
+  - d_Pos  = B0_Marginal - B1_Pos_Unigram   (gain from line/paragraph boundary position alone)
+  - d_Vert = B1_Pos_Unigram - M1_Vert_Col   (gain from cross-line vertical column template)
+  - d_Tmpl = B1_Pos_Unigram - M2_ExactSlot  (gain from exact column index k template)
+  - d_Big  = B1_Pos_Unigram - M3_Local_Big  (gain from local horizontal lag-1 transition)
+  - d_Lag2 = B1_Pos_Unigram - M4_Lag2_Phr   (gain from non-adjacent lag-2 template memory)
+dataset                   | P_cnt N_tst    V  RepL% | B0_Uni B1_Pos |  d_Pos d_Vert d_Tmpl  d_Big d_Lag2 | Acc_B1 Acc_Tm Acc_Bg
+-------------------------------------------------------------------------------------------------------------------------------
+Voynich_Sec_S (Recipes)   |    28  2241   29   0.0% |  4.442  4.293 | +0.149 -0.055 +0.003 +0.018 -0.037 |  14.6%  14.1%  14.9%
+Voynich_Sec_H (Herbal)    |   146  2610   29   0.0% |  4.218  4.088 | +0.130 -0.065 -0.018 -0.043 -0.050 |  23.8%  23.8%  22.4%
+Voynich_Sec_B (Biol)      |    38   949   29   0.0% |  4.033  3.968 | +0.065 -0.050 -0.061 -0.013 -0.059 |  16.3%  17.3%  19.1%
+Voynich_Sec_P (Pharma)    |    36   460   29   0.0% |  3.952  3.863 | +0.089 -0.073 -0.052 -0.005 -0.051 |  24.8%  24.3%  21.7%
+CREMMA_Med_Recipes        |   319  3413   33   0.0% |  4.491  4.497 | -0.007 -0.074 -0.023 -0.077 -0.067 |  22.3%  22.3%  20.9%
+Litany_Sanctorum_Synth    |   200  1451   13  18.0% |  2.277  1.950 | +0.326 +0.236 -0.058 +0.051 +0.016 |  59.8%  59.8%  62.5%
+Procedural_Recipe_Ledger  |   200  1104    2 100.0% |  0.432  0.002 | +0.430 +0.002 -0.001 +0.002 +0.002 | 100.0% 100.0% 100.0%
+
+--- 7B.2 Held-Out Morphological Frame (Prefix, Suffix) Prediction (80% Train -> 20% Test Paragraphs) ---
+Cross-Entropy (bits/token, lower = better) and Top-1 Accuracy (%) on held-out 20% paragraphs:
+  - d_Pos  = B0_Marginal - B1_Pos_Unigram   (gain from line/paragraph boundary position alone)
+  - d_Vert = B1_Pos_Unigram - M1_Vert_Col   (gain from cross-line vertical column template)
+  - d_Tmpl = B1_Pos_Unigram - M2_ExactSlot  (gain from exact column index k template)
+  - d_Big  = B1_Pos_Unigram - M3_Local_Big  (gain from local horizontal lag-1 transition)
+  - d_Lag2 = B1_Pos_Unigram - M4_Lag2_Phr   (gain from non-adjacent lag-2 template memory)
+dataset                   | P_cnt N_tst    V  RepL% | B0_Uni B1_Pos |  d_Pos d_Vert d_Tmpl  d_Big d_Lag2 | Acc_B1 Acc_Tm Acc_Bg
+-------------------------------------------------------------------------------------------------------------------------------
+Voynich_Sec_S (Recipes)   |    28  2241  476   0.0% |  6.997  6.907 | +0.090 -0.022 -0.077 +0.022 -0.013 |   6.3%   6.6%   8.3%
+Voynich_Sec_H (Herbal)    |   146  2610  433   0.0% |  7.133  7.046 | +0.087 -0.014 -0.090 -0.000 -0.022 |   9.5%   9.4%   6.6%
+Voynich_Sec_B (Biol)      |    38   949  291   0.0% |  6.065  6.069 | -0.005 -0.004 -0.156 +0.029 -0.020 |   5.8%   6.4%   7.4%
+Voynich_Sec_P (Pharma)    |    36   460  272   0.0% |  6.703  6.685 | +0.018 -0.006 -0.314 +0.003 -0.007 |  11.3%  10.9%   6.7%
+CREMMA_Med_Recipes        |   319  3413  917   0.0% |  7.855  8.033 | -0.178 -0.028 -0.132 -0.022 -0.020 |  18.0%  18.0%  13.9%
+Litany_Sanctorum_Synth    |   200  1451  112   0.5% |  4.784  4.012 | +0.773 +0.470 -0.232 +0.353 +0.128 |  26.7%  25.2%  38.6%
+Procedural_Recipe_Ledger  |   200  1104    4 100.0% |  1.051  0.385 | +0.666 +0.004 +0.007 +0.013 +0.012 |  88.3%  88.3%  88.3%
+
+--- 7C. Held-Out Top-50 Core Stem Sequence Prediction (80% Train -> 20% Test Paragraphs) ---
+Cross-Entropy (bits/token, lower = better) and Top-1 Accuracy (%) on held-out 20% paragraphs:
+  - d_Pos  = B0_Marginal - B1_Pos_Unigram   (gain from line/paragraph boundary position alone)
+  - d_Vert = B1_Pos_Unigram - M1_Vert_Col   (gain from cross-line vertical column template)
+  - d_Tmpl = B1_Pos_Unigram - M2_ExactSlot  (gain from exact column index k template)
+  - d_Big  = B1_Pos_Unigram - M3_Local_Big  (gain from local horizontal lag-1 transition)
+  - d_Lag2 = B1_Pos_Unigram - M4_Lag2_Phr   (gain from non-adjacent lag-2 template memory)
+dataset                   | P_cnt N_tst    V  RepL% | B0_Uni B1_Pos |  d_Pos d_Vert d_Tmpl  d_Big d_Lag2 | Acc_B1 Acc_Tm Acc_Bg
+-------------------------------------------------------------------------------------------------------------------------------
+Voynich_Sec_S (Recipes)   |    28  2241   51   0.0% |  4.737  4.679 | +0.058 -0.056 -0.063 -0.003 -0.055 |  19.5%  19.4%  17.9%
+Voynich_Sec_H (Herbal)    |   146  2610   51   0.0% |  4.609  4.536 | +0.073 -0.072 -0.048 -0.040 -0.052 |  23.4%  22.0%  20.0%
+Voynich_Sec_B (Biol)      |    38   949   51   0.0% |  4.484  4.509 | -0.025 -0.076 -0.026 -0.026 -0.042 |  20.9%  17.1%  17.5%
+Voynich_Sec_P (Pharma)    |    36   460   51   0.0% |  4.436  4.446 | -0.010 -0.045 -0.168 -0.005 -0.059 |  16.7%  16.5%  14.8%
+CREMMA_Med_Recipes        |   319  3413   51   0.0% |  3.784  3.810 | -0.025 -0.048 -0.033 -0.039 -0.056 |  41.5%  41.5%  40.6%
+Litany_Sanctorum_Synth    |   200  1451   51  25.0% |  4.754  3.284 | +1.471 +0.711 -0.248 +0.580 +0.335 |  31.1%  27.2%  53.1%
+Procedural_Recipe_Ledger  |   200  1104   51   5.1% |  4.995  2.895 | +2.101 +0.060 +0.249 +0.329 +0.248 |  28.8%  32.2%  35.1%
+
+Completed all 4 candidate experiments (C4, C5, C6, C7) in 19.28s.

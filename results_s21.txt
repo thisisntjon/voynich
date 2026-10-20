@@ -1,0 +1,52 @@
+S21: Daybreak's within-line lag-1 word-length Moran I on real-line gibberish and CREMMA (phase-2.md s21)
+run started Sat Oct 17 20:49:49 PDT 2026 (`date`)
+s21_moran_realline.py sha256=e4e96e8f53969a7677f33db74c67125a3afe835b96ac1065cc4400f517dd09eb  prereg stub_match=True
+external definition: lab/codex_lab/experiments/moran-ablation-v1/moran_ablation.py  sha256=086cff8c993b5f157e6d5bdda7f932ed01a4e76d05fd96b7506957c9c7b38a41  (matches docstring: True); NOT imported, NOT executed
+  external PREREG.md sha256=e27fa209e282eae1465236cd4dfa862de4acf652175afcc463bda6bfe52e19b6
+  external REPORT.md sha256=6d9704bd18b6c584a063072dde6e7c78ac875ea4a769306137aea1370ad706bb
+  external result.json sha256=359b3819c8424005833af9942d6eccc98022969534144e9898d0c9692f42dc47
+null: within-line shuffle, 999 draws, seed 20261017 (one np.random.default_rng per row); p = (1 + #(null >= obs)) / 1000; pairs from lines >= 2 tokens; full corpora (no 25k cap except the ZL3b-25k diagnostic row)
+loader: scoreboard/run_v2.py load_meta / subsample by path (sha256 7dfdc9f75de5980a…); ZL3b = metrics_new.voynich_pages('eva') as run_v2 --voynich
+
+=== reproduction check: ZL3b (all paragraph lines) vs Daybreak result.json ===
+ZL3b  tokens=34857 lines=4130 (>=2 tokens: 4103) pairs=30727  within-line I=0.157244  (Daybreak 0.157244; delta -0.000000; tol 0.003)  whole-sequence I=0.140670 (Daybreak 0.140670)
+      line-shuffle null median=0.069861 q99=0.080596 p=0.001  (Daybreak median 0.069368, q99 0.080927, p 0.001; seed differs, distribution-identical)
+      Daybreak token_count 34857 / pair_count_within_line 30727 -> here 34857 / 30727
+REPRODUCTION: PASS  (|delta I| = 0.000000 <= 0.003; q99 near 0.081)
+
+=== rows: within-line lag-1 word-length Moran I, line-shuffle null (999 draws, seed 20261017) ===
+row                             tokens  lines  ln>=2   pairs  I_within   I_whole  null_med  null_q99      p  I-0.157  note
+gib_realline_pooled              10023   1617   1559    8406  0.097973  0.119430  0.103331  0.121825  0.728  -0.0593  human gibberish, writers' own lines (G&B 2022)
+cremma_prose15                    6890    773    772    6117 -0.033091 -0.041523  0.010293  0.038814  1.000  -0.1903  CREMMA Latin prose, 15th c., native lines
+cremma_c15                       10190   1398   1373    8792 -0.019227 -0.031553 -0.003447  0.018821  0.965  -0.1765  CREMMA Latin, 15th c., native lines
+cremma_all                       57278   6451   6398   50827  0.036704  0.030045  0.071900  0.079942  1.000  -0.1205  CREMMA Latin, all, native lines
+mhg_nibelungenlied               78700   9300   9300   69400 -0.115559 -0.112454 -0.049419 -0.041880  1.000  -0.2728  MHG verse, native lines
+oldfrench_roland                 29524   3998   3998   25526 -0.137440 -0.143319 -0.047343 -0.035099  1.000  -0.2947  Old French epic, native lines
+occitan_croisade                 82388   9578   9578   72810 -0.149100 -0.202040 -0.044953 -0.037516  1.000  -0.3063  Occitan epic, native lines
+italian_dante                   101607  14235  14235   87372 -0.144853 -0.153659 -0.053464 -0.046348  1.000  -0.3021  Italian verse, native lines
+gib_realline_pooled_relined8     10023   1253   1253    8770  0.122414  0.119430  0.112052  0.138033  0.187  -0.0348  layout contrast: gibberish relined 8 words
+cremma_all_relined8              57278   7211   7198   50067  0.029582  0.030045  0.073985  0.082181  1.000  -0.1277  layout contrast: CREMMA all relined 8 words
+ZL3b                             34857   4130   4103   30727  0.157244  0.140670  0.069861  0.080596  0.001  -0.0000  Voynich, all paragraph lines (reproduction row)
+ZL3b-25k                         25007   3147   3121   21860  0.135569  0.118675  0.062544  0.075628  0.001  -0.0217  Voynich first 25000-token cut (Daybreak diagnostic 0.135569)
+
+Daybreak control maxima (25k cut, synthetic/relined): E 0.041133  G 0.128961 (schwartz_reuse)  L 0.042799
+
+=== READING (pre-registered, verbatim in the docstring, threshold 0.129 on gib_realline_pooled) ===
+real-line gibberish within-line I = 0.097973  (p = 0.728 vs its own line-shuffle null, q99 0.121825); threshold 0.129; Voynich ZL3b 0.157244
+-> 0.097973 < 0.129: real-line gibberish joins the control set (new G maximum 0.128961); the clause 'no tested meaningless model reproduces it' STANDS.
+   gibberish vs Voynich: delta -0.059270 (0.62x); sign of gibberish I: positive; above its own line-shuffle q99: False
+   layout contrast: gibberish relined8 I = 0.122414 (delta vs native lines +0.024441)
+
+real-line language reference (sign and magnitude relative to Voynich 0.157):
+  cremma_prose15         I=-0.033091  non-positive delta vs Voynich -0.190334  (-0.21x)  above own q99: False  p=1.000
+  cremma_c15             I=-0.019227  non-positive delta vs Voynich -0.176471  (-0.12x)  above own q99: False  p=0.965
+  cremma_all             I=+0.036704  positive     delta vs Voynich -0.120540  (+0.23x)  above own q99: False  p=1.000
+  cremma_all_relined8    I=+0.029582  positive     delta vs Voynich -0.127662  (+0.19x)  above own q99: False  p=1.000
+  mhg_nibelungenlied     I=-0.115559  non-positive delta vs Voynich -0.272802  (-0.73x)  above own q99: False  p=1.000
+  oldfrench_roland       I=-0.137440  non-positive delta vs Voynich -0.294684  (-0.87x)  above own q99: False  p=1.000
+  occitan_croisade       I=-0.149100  non-positive delta vs Voynich -0.306344  (-0.95x)  above own q99: False  p=1.000
+  italian_dante          I=-0.144853  non-positive delta vs Voynich -0.302096  (-0.92x)  above own q99: False  p=1.000
+  real-line language range: [-0.149100, +0.036704]  (Daybreak's relined L max 0.042799); Voynich 0.157244 outside that range
+
+done-when: results_s21.txt exists with the ZL3b reproduction line and the control rows (12 rows written: 8 native real-line, 2 relined8 contrasts, ZL3b, ZL3b-25k) -> met
+run ended Sat Oct 17 20:50:55 PDT 2026 (`date`)

@@ -1,0 +1,5 @@
+# s40 prereg: sha256 of the s40 script; frozen Sat Oct 17 22:27:26 PDT 2026 before the run
+f2ea72fb245ef5b4cc4b40f1be74be5c6bbe8d754f74bb2d936b972d2e5af456 *s40_prefix_stream_as_text.py
+# FAILED Sat Oct 17 22:29:23 PDT 2026: the run of the hash above crashed (SyntaxError in the final core-stream summary f-string, before results_s40.txt was written); no result file produced
+# OK amendment Sat Oct 17 22:29:23 PDT 2026: f-string fixed, no change to method, predictions or rules; re-run from scratch
+78e005177a72f02f7c56ddfd87dd7b1e84c96a5b3d1f78e94e7351797abc8470 *s40_prefix_stream_as_text.py

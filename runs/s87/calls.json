@@ -1,0 +1,46 @@
+{
+ "n_match": 1129,
+ "loc_band": [
+  0.9073818633685861,
+  1.049928019378369
+ ],
+ "order_band": {
+  "100": [
+   0.012321,
+   0.092252
+  ],
+  "200": [
+   -0.003465,
+   0.086474
+  ]
+ },
+ "rw_v": 1.1968822539263946,
+ "rc_v": 0.6266510978571009,
+ "linepool_alpha": 2.0,
+ "C1": {
+  "L_alphita_la": false,
+  "L_dispensarium_la": false,
+  "L_cookery15_enm": false,
+  "L_culpeper_en": false,
+  "P_cremma_prose_la": false,
+  "P_augustine_la": false,
+  "P_pliny_herbal_la": false,
+  "P_mandeville_en": false,
+  "P_alice_en": false,
+  "V_dante_it": false,
+  "V_nibelungenlied_gmh": false,
+  "V_croisade_oc": false,
+  "V_roland_fro": false,
+  "G_s57_localmem": false,
+  "G_s67_CA": true,
+  "G_pagepool": false,
+  "G_linepool": false
+ },
+ "C2": {
+  "L": 0,
+  "P": 0,
+  "V": 0,
+  "G": 1
+ },
+ "verdict": "core layer behaves like a pool generator [target self-check failed: VOY_RF1b: a_order]"
+}

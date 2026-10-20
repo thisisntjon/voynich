@@ -1,0 +1,63 @@
+s120 sheet as unit -- REAL RUN. Design DECISIONS.md D-066 (y). started 2026-10-18 21:17:25 PDT; BelowNormal, 1 core
+script tools/s120_sheet_unit.py sha256 5d60facace9a78d491f4317e7376ea2d1e0127f36d3b6c0cf2af062d40406b8d; stub s120_sheet_unit.prereg.sha256 verified (SKIPPED (descriptive sensitivity copy) files) sha256 8db57eb447be1804fb1b12fc12874098b882a94d154c574994596ea766e3048c; VKB data\vkb\vkb.sqlite sha256 6615aae975844410613729f2efab7a9c726354c8bd49c72d6eebd104d1b3a1f9 build 2026-10-18 17:21; B=10000, sims=20, seed 20261018, min tokens 50
+
+==== ZL3b (primary); features (36): final:l, final:m, final:n, final:r, final:s, final:y, h1, h2, init:d, init:o, init:q, init:s, init:t, init:y, lag1_wlen, mean_wlen, pfx:a, pfx:ch, pfx:che, pfx:cho, pfx:k, pfx:o, pfx:ok, pfx:qok, pfx:qot, pfx:she, sfx:ain, sfx:al, sfx:ar, sfx:eey, sfx:hy, sfx:o, sfx:ol, sfx:or, sfx:s, sfx:y
+-- ZL3b: 186 pages (dropped for cell < 3: 7 ['f1r', 'f66r', 'f67r2', 'f68v3', 'f70r2', 'f85r2', 'f86v3']), 8 hand x section cells, 14 quires; same-quire different-leaf pairs 1234, of which conjugate 181 (46 leaf pairs)
+   informative strata (quire, bound distance, same-cell flag) 84; pairs used 636; conjugate page pairs used 108 covering 35 conjugate leaf pairs: f1/f8 f10/f15 f100/f101 f102/f99 f103/f116 f104/f115 f105/f114 f106/f113 f107/f112 f108/f111 f11/f14 f16/f9 f17/f24 f18/f23 f19/f22 f2/f7 f20/f21 f26/f31 f27/f30 f28/f29 f3/f6 f33/f40 f34/f39 f36/f37 f4/f5 f43/f46 f44/f45 f50/f55 f51/f54 f52/f53 f75/f84 f76/f83 f77/f82 f78/f81 f79/f80
+GATE ZL3b (computed before the real statistic): real-noise power at 0.8 SD on 12 random features = 1.000 (need >= 0.8); real-noise calibration p_more<0.05 rate 0.000, p_less<0.05 rate 0.050 (need each <= 0.1)
+
+==== RF1b (replication); features (36): final:l, final:m, final:n, final:r, final:s, final:y, h1, h2, init:d, init:o, init:q, init:s, init:t, init:y, lag1_wlen, mean_wlen, pfx:a, pfx:ch, pfx:che, pfx:cho, pfx:k, pfx:o, pfx:ok, pfx:qok, pfx:qot, pfx:she, sfx:ain, sfx:al, sfx:ar, sfx:eey, sfx:hy, sfx:o, sfx:ol, sfx:or, sfx:s, sfx:y
+-- RF1b: 190 pages (dropped for cell < 3: 5 ['f1r', 'f66r', 'f67r2', 'f68v3', 'f70r2']), 9 hand x section cells, 14 quires; same-quire different-leaf pairs 1248, of which conjugate 189 (46 leaf pairs)
+   informative strata (quire, bound distance, same-cell flag) 84; pairs used 636; conjugate page pairs used 108 covering 35 conjugate leaf pairs: f1/f8 f10/f15 f100/f101 f102/f99 f103/f116 f104/f115 f105/f114 f106/f113 f107/f112 f108/f111 f11/f14 f16/f9 f17/f24 f18/f23 f19/f22 f2/f7 f20/f21 f26/f31 f27/f30 f28/f29 f3/f6 f33/f40 f34/f39 f36/f37 f4/f5 f43/f46 f44/f45 f50/f55 f51/f54 f52/f53 f75/f84 f76/f83 f77/f82 f78/f81 f79/f80
+GATE RF1b (computed before the real statistic): real-noise power at 0.8 SD on 12 random features = 1.000 (need >= 0.8); real-noise calibration p_more<0.05 rate 0.000, p_less<0.05 rate 0.000 (need each <= 0.1)
+
+==== IT2a (replication); features (36): final:l, final:m, final:n, final:r, final:s, final:y, h1, h2, init:d, init:o, init:q, init:s, init:t, init:y, lag1_wlen, mean_wlen, pfx:a, pfx:ch, pfx:che, pfx:cho, pfx:k, pfx:o, pfx:ok, pfx:qok, pfx:qot, pfx:she, sfx:ain, sfx:al, sfx:ar, sfx:eey, sfx:hy, sfx:o, sfx:ol, sfx:or, sfx:s, sfx:y
+-- IT2a: 186 pages (dropped for cell < 3: 7 ['f1r', 'f66r', 'f67r2', 'f68v3', 'f70r2', 'f85r2', 'f86v3']), 8 hand x section cells, 14 quires; same-quire different-leaf pairs 1234, of which conjugate 181 (46 leaf pairs)
+   informative strata (quire, bound distance, same-cell flag) 84; pairs used 636; conjugate page pairs used 108 covering 35 conjugate leaf pairs: f1/f8 f10/f15 f100/f101 f102/f99 f103/f116 f104/f115 f105/f114 f106/f113 f107/f112 f108/f111 f11/f14 f16/f9 f17/f24 f18/f23 f19/f22 f2/f7 f20/f21 f26/f31 f27/f30 f28/f29 f3/f6 f33/f40 f34/f39 f36/f37 f4/f5 f43/f46 f44/f45 f50/f55 f51/f54 f52/f53 f75/f84 f76/f83 f77/f82 f78/f81 f79/f80
+GATE IT2a (computed before the real statistic): real-noise power at 0.8 SD on 12 random features = 1.000 (need >= 0.8); real-noise calibration p_more<0.05 rate 0.100, p_less<0.05 rate 0.000 (need each <= 0.1)
+
+REAL ZL3b: T (conjugate minus matched non-conjugate mean distance) = -0.1337; null mean -0.0001, null sd 0.0225; p_more=0.00010 p_less=1.00000
+  descriptive: raw mean d conjugate 1.2446 vs non-conjugate in informative strata 1.3819
+  descriptive quire A: conjugate pairs 11, matched diff -0.1764
+  descriptive quire B: conjugate pairs 7, matched diff -0.0021
+  descriptive quire C: conjugate pairs 13, matched diff -0.2338
+  descriptive quire D: conjugate pairs 12, matched diff -0.0331
+  descriptive quire E: conjugate pairs 6, matched diff -0.0984
+  descriptive quire F: conjugate pairs 5, matched diff -0.2138
+  descriptive quire G: conjugate pairs 12, matched diff -0.1282
+  descriptive quire M: conjugate pairs 15, matched diff -0.1419
+  descriptive quire S: conjugate pairs 6, matched diff +0.1366
+  descriptive quire T: conjugate pairs 21, matched diff -0.2161
+  descriptive F-32 direction: Spearman rho(d, bound distance) over 1053 non-conjugate same-quire pairs = +0.039 (asymptotic p 0.2077, pairs not independent)
+
+REAL RF1b: T (conjugate minus matched non-conjugate mean distance) = -0.1366; null mean -0.0003, null sd 0.0226; p_more=0.00010 p_less=1.00000
+  descriptive: raw mean d conjugate 1.2423 vs non-conjugate in informative strata 1.3835
+  descriptive quire A: conjugate pairs 11, matched diff -0.1812
+  descriptive quire B: conjugate pairs 7, matched diff -0.0112
+  descriptive quire C: conjugate pairs 13, matched diff -0.2514
+  descriptive quire D: conjugate pairs 12, matched diff +0.0051
+  descriptive quire E: conjugate pairs 6, matched diff -0.1019
+  descriptive quire F: conjugate pairs 5, matched diff -0.1704
+  descriptive quire G: conjugate pairs 12, matched diff -0.1681
+  descriptive quire M: conjugate pairs 15, matched diff -0.1527
+  descriptive quire S: conjugate pairs 6, matched diff +0.1284
+  descriptive quire T: conjugate pairs 21, matched diff -0.2130
+  descriptive F-32 direction: Spearman rho(d, bound distance) over 1059 non-conjugate same-quire pairs = +0.031 (asymptotic p 0.3114, pairs not independent)
+
+REAL IT2a: T (conjugate minus matched non-conjugate mean distance) = -0.1462; null mean -0.0000, null sd 0.0226; p_more=0.00010 p_less=1.00000
+  descriptive: raw mean d conjugate 1.2433 vs non-conjugate in informative strata 1.3895
+  descriptive quire A: conjugate pairs 11, matched diff -0.1668
+  descriptive quire B: conjugate pairs 7, matched diff -0.0229
+  descriptive quire C: conjugate pairs 13, matched diff -0.2254
+  descriptive quire D: conjugate pairs 12, matched diff -0.0301
+  descriptive quire E: conjugate pairs 6, matched diff -0.0754
+  descriptive quire F: conjugate pairs 5, matched diff -0.2404
+  descriptive quire G: conjugate pairs 12, matched diff -0.1638
+  descriptive quire M: conjugate pairs 15, matched diff -0.1646
+  descriptive quire S: conjugate pairs 6, matched diff +0.0749
+  descriptive quire T: conjugate pairs 21, matched diff -0.2314
+  descriptive F-32 direction: Spearman rho(d, bound distance) over 1053 non-conjugate same-quire pairs = +0.031 (asymptotic p 0.3203, pairs not independent)
+
+Rule: SHEET_BATCH iff p_more ZL3b < 0.05 and RF1b, IT2a < 0.05; DRIFT_ONLY mirrored on p_less; else NULL. p_more ZL3b=0.00010, RF1b=0.00010, IT2a=0.00010; p_less ZL3b=1.00000, RF1b=1.00000, IT2a=1.00000 -> SHEET_BATCH
+elapsed 1s; finished 2026-10-18 21:17:26 PDT
+CALL: s120 OUTCOME=SHEET_BATCH pmore_ZL3b=0.00010 pless_ZL3b=1.00000 pmore_RF1b=0.00010 pless_RF1b=1.00000 pmore_IT2a=0.00010 pless_IT2a=1.00000 nconj_ZL3b=108(35leaf) nconj_RF1b=108(35leaf) nconj_IT2a=108(35leaf) power_ZL3b=1.000 power_RF1b=1.000 power_IT2a=1.000 fp_ZL3b=0.000/0.050 fp_RF1b=0.000/0.000 fp_IT2a=0.100/0.000

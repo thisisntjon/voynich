@@ -1,0 +1,61 @@
+=== C1: q -> o binding ===
+voynich_eva          P(o|q)=0.977 (n=3657)  q word-initial share=0.993
+NULL_bigram_pseudo   P(o|q)=0.977 (n=3661)  q word-initial share=0.993
+latin_caesar         P(u|q)=1.000 (n=2106)
+latin_augustine      P(u|q)=1.000 (n=2308)
+italian_dante        P(u|q)=1.000 (n=752)
+german_faust         P(u|q)=1.000 (n=47)
+german_kafka         P(u|q)=1.000 (n=9)
+english_alice        P(u|q)=1.000 (n=196)
+
+=== C2: does the prefix class predict a following gallows? ===
+P(next char is t/k/p/f | word starts with prefix); baseline = same char word-internally
+[voynich_eva]
+   qo-  -> gallows  0.841 (n= 3511)   internal 'o' -> gallows 0.331 (n=10635)
+   o-   -> gallows  0.565 (n= 4846)   internal 'o' -> gallows 0.331 (n=10635)
+   y-   -> gallows  0.748 (n= 1202)   internal 'y' -> gallows 0.487 (n=347)
+   ch-  -> gallows  0.041 (n= 3966)   internal 'h' -> gallows 0.019 (n=12260)
+   sh-  -> gallows  0.018 (n= 2397)   internal 'h' -> gallows 0.019 (n=12260)
+   d-   -> gallows  0.007 (n= 2798)   internal 'd' -> gallows 0.001 (n=5324)
+   second-order check: P(gallows|qo-)=0.841 vs P(gallows|o-)=0.565
+[NULL_bigram_pseudo]
+   qo-  -> gallows  0.403 (n= 3396)   internal 'o' -> gallows 0.403 (n=10646)
+   o-   -> gallows  0.417 (n= 4656)   internal 'o' -> gallows 0.403 (n=10646)
+   y-   -> gallows  0.684 (n=  187)   internal 'y' -> gallows 0.674 (n=1364)
+   ch-  -> gallows  0.020 (n= 3770)   internal 'h' -> gallows 0.019 (n=12231)
+   sh-  -> gallows  0.017 (n= 2263)   internal 'h' -> gallows 0.019 (n=12231)
+   d-   -> gallows  0.003 (n= 2753)   internal 'd' -> gallows 0.003 (n=5246)
+   second-order check: P(gallows|qo-)=0.403 vs P(gallows|o-)=0.417
+
+=== C3: word-final restriction ===
+share of each glyph's occurrences that are word-final (glyphs with >=200 tokens)
+voynich_eva          glyphs>=90% final:  2  top: n:0.99 m:0.97 y:0.87 r:0.82 l:0.60 s:0.17
+NULL_bigram_pseudo   glyphs>=90% final:  2  top: n:0.99 m:0.96 y:0.87 r:0.81 l:0.60 s:0.17
+latin_caesar         glyphs>=90% final:  0  top: m:0.51 s:0.41 x:0.32 t:0.29 d:0.21 e:0.21
+latin_augustine      glyphs>=90% final:  0  top: m:0.52 s:0.41 t:0.33 x:0.28 d:0.20 o:0.19
+italian_dante        glyphs>=90% final:  0  top: e:0.50 a:0.46 o:0.45 i:0.42 l:0.28 n:0.25
+german_faust         glyphs>=90% final:  0  top: ß:0.56 t:0.54 n:0.46 r:0.40 h:0.27 s:0.27
+german_kafka         glyphs>=90% final:  0  top: ß:0.54 n:0.44 r:0.43 m:0.30 t:0.28 s:0.22
+english_alice        glyphs>=90% final:  0  top: d:0.66 y:0.64 e:0.43 f:0.42 g:0.40 s:0.34
+
+=== C4: h2 (spaces as a symbol) under word-order and within-word shuffles ===
+corpus                 orig word-shuf      d char-shuf-in-word      d
+voynich_eva           2.126     2.126 +0.000             3.610 +1.484
+NULL_bigram_pseudo    2.152     2.152 -0.000             3.638 +1.486
+latin_caesar          3.295     3.295 +0.000             3.927 +0.633
+latin_augustine       3.296     3.296 -0.000             3.888 +0.593
+italian_dante         3.107     3.107 -0.000             3.742 +0.635
+german_faust          3.161     3.161 +0.000             3.910 +0.749
+german_kafka          3.144     3.144 -0.000             3.917 +0.774
+english_alice         3.208     3.208 -0.000             3.840 +0.631
+
+=== C5: single-edit neighbourhoods (top 2000 types; vocabulary from same 25k tokens) ===
+corpus               types w/ nb token-weighted
+voynich_eva                0.972          0.997
+NULL_bigram_pseudo         0.841          0.982
+latin_caesar               0.668          0.793
+latin_augustine            0.724          0.858
+italian_dante              0.838          0.960
+german_faust               0.784          0.924
+german_kafka               0.533          0.832
+english_alice              0.540          0.842

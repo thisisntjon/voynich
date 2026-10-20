@@ -1,0 +1,509 @@
+[
+  {
+    "min_length": 5,
+    "mode": "whole_word",
+    "pages": 26,
+    "groups": 4,
+    "observed": 0.07558715794009911,
+    "null_mean": 0.06244143842183057,
+    "null_q99": 0.08646193349134526,
+    "p_upper": 0.113,
+    "examples": [
+      {
+        "page": "f102v1",
+        "word": "okeody",
+        "whole_word": true
+      },
+      {
+        "page": "f102v2",
+        "word": "cheor",
+        "whole_word": true
+      },
+      {
+        "page": "f99r",
+        "word": "okeoly",
+        "whole_word": true
+      },
+      {
+        "page": "f99v",
+        "word": "doldam",
+        "whole_word": true
+      },
+      {
+        "page": "f75v",
+        "word": "otedy",
+        "whole_word": true
+      },
+      {
+        "page": "f75v",
+        "word": "oteey",
+        "whole_word": true
+      },
+      {
+        "page": "f75v",
+        "word": "qokal",
+        "whole_word": true
+      },
+      {
+        "page": "f75v",
+        "word": "qotedy",
+        "whole_word": true
+      },
+      {
+        "page": "f77r",
+        "word": "otedy",
+        "whole_word": true
+      },
+      {
+        "page": "f80r",
+        "word": "okaly",
+        "whole_word": true
+      },
+      {
+        "page": "f82v",
+        "word": "okain",
+        "whole_word": true
+      },
+      {
+        "page": "f82v",
+        "word": "olkeedy",
+        "whole_word": true
+      },
+      {
+        "page": "f82v",
+        "word": "olkol",
+        "whole_word": true
+      },
+      {
+        "page": "f82v",
+        "word": "oteedy",
+        "whole_word": true
+      },
+      {
+        "page": "f83v",
+        "word": "okaiin",
+        "whole_word": true
+      },
+      {
+        "page": "f84r",
+        "word": "dshedy",
+        "whole_word": true
+      },
+      {
+        "page": "f84r",
+        "word": "okedy",
+        "whole_word": true
+      },
+      {
+        "page": "f84r",
+        "word": "otedy",
+        "whole_word": true
+      },
+      {
+        "page": "f89r2",
+        "word": "cheody",
+        "whole_word": true
+      },
+      {
+        "page": "f89r2",
+        "word": "opcheor",
+        "whole_word": true
+      },
+      {
+        "page": "f89v2",
+        "word": "sheol",
+        "whole_word": true
+      }
+    ]
+  },
+  {
+    "min_length": 5,
+    "mode": "glyphstream",
+    "pages": 26,
+    "groups": 4,
+    "observed": 0.1341072326366444,
+    "null_mean": 0.12303715992441483,
+    "null_q99": 0.1536167672197084,
+    "p_upper": 0.233,
+    "examples": [
+      {
+        "page": "f100r",
+        "word": "oteol",
+        "whole_word": false
+      },
+      {
+        "page": "f102v1",
+        "word": "okeody",
+        "whole_word": true
+      },
+      {
+        "page": "f102v2",
+        "word": "cheor",
+        "whole_word": true
+      },
+      {
+        "page": "f102v2",
+        "word": "osain",
+        "whole_word": false
+      },
+      {
+        "page": "f99r",
+        "word": "okeoly",
+        "whole_word": true
+      },
+      {
+        "page": "f99r",
+        "word": "okolo",
+        "whole_word": false
+      },
+      {
+        "page": "f99v",
+        "word": "doldam",
+        "whole_word": true
+      },
+      {
+        "page": "f99v",
+        "word": "saiino",
+        "whole_word": false
+      },
+      {
+        "page": "f68r2",
+        "word": "dchol",
+        "whole_word": false
+      },
+      {
+        "page": "f75v",
+        "word": "darol",
+        "whole_word": false
+      },
+      {
+        "page": "f75v",
+        "word": "otedy",
+        "whole_word": true
+      },
+      {
+        "page": "f75v",
+        "word": "oteey",
+        "whole_word": true
+      },
+      {
+        "page": "f75v",
+        "word": "qokal",
+        "whole_word": true
+      },
+      {
+        "page": "f75v",
+        "word": "qoted",
+        "whole_word": false
+      },
+      {
+        "page": "f75v",
+        "word": "qotedy",
+        "whole_word": true
+      },
+      {
+        "page": "f75v",
+        "word": "ykedy",
+        "whole_word": false
+      },
+      {
+        "page": "f75v",
+        "word": "ytedy",
+        "whole_word": false
+      },
+      {
+        "page": "f77r",
+        "word": "otedy",
+        "whole_word": true
+      },
+      {
+        "page": "f78r",
+        "word": "okchdy",
+        "whole_word": false
+      },
+      {
+        "page": "f80r",
+        "word": "okaly",
+        "whole_word": true
+      },
+      {
+        "page": "f82v",
+        "word": "okain",
+        "whole_word": true
+      },
+      {
+        "page": "f82v",
+        "word": "okoldy",
+        "whole_word": false
+      },
+      {
+        "page": "f82v",
+        "word": "olkeedy",
+        "whole_word": true
+      },
+      {
+        "page": "f82v",
+        "word": "olkol",
+        "whole_word": true
+      },
+      {
+        "page": "f82v",
+        "word": "otedy",
+        "whole_word": false
+      },
+      {
+        "page": "f82v",
+        "word": "oteedy",
+        "whole_word": true
+      },
+      {
+        "page": "f83r",
+        "word": "olsaiin",
+        "whole_word": false
+      },
+      {
+        "page": "f83v",
+        "word": "okaiin",
+        "whole_word": true
+      },
+      {
+        "page": "f83v",
+        "word": "okchdy",
+        "whole_word": false
+      },
+      {
+        "page": "f84r",
+        "word": "dshedy",
+        "whole_word": true
+      },
+      {
+        "page": "f84r",
+        "word": "okedy",
+        "whole_word": true
+      },
+      {
+        "page": "f84r",
+        "word": "otedy",
+        "whole_word": true
+      },
+      {
+        "page": "f89r2",
+        "word": "cheody",
+        "whole_word": true
+      },
+      {
+        "page": "f89r2",
+        "word": "cheys",
+        "whole_word": false
+      },
+      {
+        "page": "f89r2",
+        "word": "opcheor",
+        "whole_word": true
+      },
+      {
+        "page": "f89v2",
+        "word": "sheol",
+        "whole_word": true
+      }
+    ]
+  },
+  {
+    "min_length": 6,
+    "mode": "whole_word",
+    "pages": 26,
+    "groups": 4,
+    "observed": 0.05844838921761998,
+    "null_mean": 0.04808779028864498,
+    "null_q99": 0.07938987508218276,
+    "p_upper": 0.219,
+    "examples": [
+      {
+        "page": "f102v1",
+        "word": "okeody",
+        "whole_word": true
+      },
+      {
+        "page": "f99r",
+        "word": "okeoly",
+        "whole_word": true
+      },
+      {
+        "page": "f99v",
+        "word": "doldam",
+        "whole_word": true
+      },
+      {
+        "page": "f75v",
+        "word": "qotedy",
+        "whole_word": true
+      },
+      {
+        "page": "f82v",
+        "word": "olkeedy",
+        "whole_word": true
+      },
+      {
+        "page": "f82v",
+        "word": "oteedy",
+        "whole_word": true
+      },
+      {
+        "page": "f83v",
+        "word": "okaiin",
+        "whole_word": true
+      },
+      {
+        "page": "f84r",
+        "word": "dshedy",
+        "whole_word": true
+      },
+      {
+        "page": "f89r2",
+        "word": "cheody",
+        "whole_word": true
+      },
+      {
+        "page": "f89r2",
+        "word": "opcheor",
+        "whole_word": true
+      }
+    ]
+  },
+  {
+    "min_length": 6,
+    "mode": "glyphstream",
+    "pages": 26,
+    "groups": 4,
+    "observed": 0.09413214990138066,
+    "null_mean": 0.08187674031691125,
+    "null_q99": 0.11758382642998028,
+    "p_upper": 0.219,
+    "examples": [
+      {
+        "page": "f102v1",
+        "word": "okeody",
+        "whole_word": true
+      },
+      {
+        "page": "f99r",
+        "word": "okeoly",
+        "whole_word": true
+      },
+      {
+        "page": "f99v",
+        "word": "doldam",
+        "whole_word": true
+      },
+      {
+        "page": "f99v",
+        "word": "saiino",
+        "whole_word": false
+      },
+      {
+        "page": "f75v",
+        "word": "qotedy",
+        "whole_word": true
+      },
+      {
+        "page": "f78r",
+        "word": "okchdy",
+        "whole_word": false
+      },
+      {
+        "page": "f82v",
+        "word": "okoldy",
+        "whole_word": false
+      },
+      {
+        "page": "f82v",
+        "word": "olkeedy",
+        "whole_word": true
+      },
+      {
+        "page": "f82v",
+        "word": "oteedy",
+        "whole_word": true
+      },
+      {
+        "page": "f83r",
+        "word": "olsaiin",
+        "whole_word": false
+      },
+      {
+        "page": "f83v",
+        "word": "okaiin",
+        "whole_word": true
+      },
+      {
+        "page": "f83v",
+        "word": "okchdy",
+        "whole_word": false
+      },
+      {
+        "page": "f84r",
+        "word": "dshedy",
+        "whole_word": true
+      },
+      {
+        "page": "f89r2",
+        "word": "cheody",
+        "whole_word": true
+      },
+      {
+        "page": "f89r2",
+        "word": "opcheor",
+        "whole_word": true
+      }
+    ]
+  },
+  {
+    "min_length": 7,
+    "mode": "whole_word",
+    "pages": 23,
+    "groups": 4,
+    "observed": 0.016304347826086956,
+    "null_mean": 0.020830354163687496,
+    "null_q99": 0.06340579710144927,
+    "p_upper": 0.413,
+    "examples": [
+      {
+        "page": "f82v",
+        "word": "olkeedy",
+        "whole_word": true
+      },
+      {
+        "page": "f89r2",
+        "word": "opcheor",
+        "whole_word": true
+      }
+    ]
+  },
+  {
+    "min_length": 7,
+    "mode": "glyphstream",
+    "pages": 23,
+    "groups": 4,
+    "observed": 0.02717391304347826,
+    "null_mean": 0.026171616751326898,
+    "null_q99": 0.07065217391304347,
+    "p_upper": 0.312,
+    "examples": [
+      {
+        "page": "f82v",
+        "word": "olkeedy",
+        "whole_word": true
+      },
+      {
+        "page": "f83r",
+        "word": "olsaiin",
+        "whole_word": false
+      },
+      {
+        "page": "f89r2",
+        "word": "opcheor",
+        "whole_word": true
+      }
+    ]
+  }
+]

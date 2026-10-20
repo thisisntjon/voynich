@@ -1,0 +1,127 @@
+{
+ "row": {
+  "name": "nomen_lines",
+  "tokens": 25000,
+  "types": 7238,
+  "pages": 184,
+  "lines": 3118,
+  "errors": {},
+  "types_25k": 7238,
+  "h2": 3.1969,
+  "sd_len": 1.598,
+  "jsd_first_fg": 0.1174,
+  "p_init_enrich": null,
+  "m_final_enrich": null,
+  "cross_excess_eva": 0.0241,
+  "redup_pct": 0.0,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "cross_excess_eva",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "nomen_lines",
+   "tokens": 25000,
+   "types": 7238,
+   "hapax_rate": 0.619,
+   "mean_len": 5.35,
+   "sd_len": 1.598,
+   "h1": 4.0054,
+   "h2": 3.1969,
+   "h3": 2.3478,
+   "zipf": -0.7909,
+   "redup_pct": 0.0,
+   "jsd_first_fg": 0.1174,
+   "jsd_last_lg": 0.0779,
+   "p_init_enrich": null,
+   "m_final_enrich": null,
+   "cross_mi_eva": 0.0367,
+   "cross_excess_eva": 0.0241,
+   "cross_mi_glyph": 0.0488,
+   "cross_excess_glyph": 0.0321,
+   "recur_le_1": 0.0,
+   "recur_le_5": 0.0145,
+   "recur_le_20": 0.074,
+   "recur_le_100": 0.1961
+  },
+  "x_edge_mi_word": 0.027242185281947186,
+  "x_hapax_10k": 0.6254396248534584,
+  "x_moran_I": -0.011769750602914545,
+  "x_position_entropy": 1.9226693627126659,
+  "x_ltr_minus_rtl": -0.0019512896999957442,
+  "info_mi_adjacent": 0.29814221316948797,
+  "info_mi_page": 0.019806511838711405,
+  "info_samecol_minus_othercol": 0.004694765622368813,
+  "info_bpe_adjacent": 0.9162969587125899,
+  "lex_beta": 0.7768141010221766,
+  "lex_rate_late_early": 0.5315967197298601,
+  "lex_edit1_excess": 0.005526388505111918,
+  "slot_occupancy_pc": 0.07044025157232704,
+  "slot_table_likeness": 0.8081517809368535,
+  "slot_core_crowding": 0.9381912817176318,
+  "bake_winner": "unigram_gt",
+  "bake_char3_minus_unigram": 0.43385664908281285,
+  "bake_bits": {
+   "markov2": 15.141180405666363,
+   "markov3": 13.070260345684499,
+   "slot": 13.44116840504179,
+   "unigram_gt": 12.636403696601686,
+   "copy0.3+markov3": 13.45494378869883,
+   "copy0.1+markov3": 13.155050725511817,
+   "copy0.05+markov3": 13.097624339680733
+  },
+  "family": "C",
+  "note": "data/controls_synthetic/nomen_lines.meta.json; 35007 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 6,
+    "outs": 2,
+    "na": 2,
+    "out_metrics": [
+     "jsd_first_fg",
+     "x_position_entropy"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "x_position_entropy"
+    ]
+   },
+   "C": {
+    "ins": 8,
+    "outs": 0,
+    "na": 2,
+    "out_metrics": [],
+    "out_tight": []
+   },
+   "G": {
+    "ins": 2,
+    "outs": 6,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "results_m4_phase1_board.json"
+}

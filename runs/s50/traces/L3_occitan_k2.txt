@@ -1,0 +1,153 @@
+job L3 occitan key 2 start 01:22:56
+MDL slot search: 167 prefix / 144 suffix candidates; cost 319951 -> 235689; |P|=46 |S|=48
+cand (0.01,0.5) |P|=48 |S|=45 reading=sep units=1287 score=-368799 ignored=0 crit=-377945
+cand (0.01,0.5) |P|=48 |S|=45 reading=pair units=1111 score=-177426 ignored=-122234 crit=-316041
+cand (0.01,0.5) |P|=48 |S|=45 reading=core units=1194 score=-146293 ignored=-160315 crit=-322989
+cand (mdl,-) |P|=46 |S|=48 reading=sep units=288 score=-228753 ignored=0 crit=-230800
+cand (mdl,-) |P|=46 |S|=48 reading=pair units=1319 score=-144773 ignored=-103959 crit=-259520
+cand (mdl,-) |P|=46 |S|=48 reading=core units=199 score=-133526 ignored=-124731 crit=-269045
+final sep r0 p1 sweep 0 T=20.000 score=-339903.4 nulls=127 M=36564
+final sep r0 p1 sweep 10 T=7.767 score=-301604.7 nulls=127 M=36564
+final sep r0 p1 sweep 20 T=3.016 score=-301284.7 nulls=127 M=36564
+final sep r0 p1 sweep 30 T=1.171 score=-301103.1 nulls=127 M=36564
+final sep r0 p1 sweep 39 T=0.000 score=-301098.4 nulls=127 M=36564
+final sep r0 stepwise nulls: 60 rounds, nulls 187, score -288166.7
+final sep r0 p2 sweep 0 T=0.500 score=-287882.3 nulls=196 M=22063
+final sep r0 p2 sweep 3 T=0.000 score=-287671.1 nulls=197 M=22043
+final sep restart 0 final score -287671.1 nulls 197
+final sep r1 p1 sweep 0 T=20.000 score=-327418.5 nulls=135 M=36191
+final sep r1 p1 sweep 10 T=7.767 score=-297402.2 nulls=135 M=36191
+final sep r1 p1 sweep 20 T=3.016 score=-297046.4 nulls=135 M=36191
+final sep r1 p1 sweep 30 T=1.171 score=-297005.0 nulls=135 M=36191
+final sep r1 p1 sweep 39 T=0.000 score=-296986.7 nulls=135 M=36191
+final sep r1 stepwise nulls: 49 rounds, nulls 183, score -282682.3
+final sep r1 p2 sweep 0 T=0.500 score=-282644.3 nulls=177 M=22050
+final sep r1 p2 sweep 3 T=0.000 score=-282622.6 nulls=179 M=22028
+final sep restart 1 final score -282622.6 nulls 179
+final sep r2 p1 sweep 0 T=20.000 score=-338495.7 nulls=127 M=36564
+final sep r2 p1 sweep 10 T=7.767 score=-302226.6 nulls=127 M=36564
+final sep r2 p1 sweep 20 T=3.016 score=-302078.4 nulls=127 M=36564
+final sep r2 p1 sweep 30 T=1.171 score=-302018.0 nulls=127 M=36564
+final sep r2 p1 sweep 39 T=0.000 score=-301996.6 nulls=127 M=36564
+final sep r2 stepwise nulls: 60 rounds, nulls 187, score -287177.9
+final sep r2 p2 sweep 0 T=0.500 score=-286818.4 nulls=194 M=22052
+final sep r2 p2 sweep 3 T=0.000 score=-286814.0 nulls=193 M=22055
+final sep restart 2 final score -286814.0 nulls 193
+final sep r3 p1 sweep 0 T=20.000 score=-329271.7 nulls=135 M=36191
+final sep r3 p1 sweep 10 T=7.767 score=-267785.6 nulls=135 M=36191
+final sep r3 p1 sweep 20 T=3.016 score=-267635.8 nulls=135 M=36191
+final sep r3 p1 sweep 30 T=1.171 score=-267605.4 nulls=135 M=36191
+final sep r3 p1 sweep 39 T=0.000 score=-267599.4 nulls=135 M=36191
+final sep r3 stepwise nulls: 18 rounds, nulls 152, score -228802.3
+final sep r3 p2 sweep 0 T=0.500 score=-228752.8 nulls=148 M=31068
+final sep r3 p2 sweep 3 T=0.000 score=-228752.8 nulls=148 M=31068
+final sep restart 3 final score -228752.8 nulls 148
+final sep r4 p1 sweep 0 T=20.000 score=-323869.5 nulls=127 M=36564
+final sep r4 p1 sweep 10 T=7.767 score=-273221.5 nulls=127 M=36564
+final sep r4 p1 sweep 20 T=3.016 score=-270522.3 nulls=127 M=36564
+final sep r4 p1 sweep 30 T=1.171 score=-270451.2 nulls=127 M=36564
+final sep r4 p1 sweep 39 T=0.000 score=-270448.8 nulls=127 M=36564
+final sep r4 stepwise nulls: 22 rounds, nulls 148, score -228752.8
+final sep r4 p2 sweep 0 T=0.500 score=-228752.8 nulls=148 M=31068
+final sep r4 p2 sweep 3 T=0.000 score=-228752.8 nulls=148 M=31068
+final sep restart 4 final score -228752.8 nulls 148
+final sep r5 p1 sweep 0 T=20.000 score=-337515.9 nulls=135 M=36191
+final sep r5 p1 sweep 10 T=7.767 score=-299930.7 nulls=135 M=36191
+final sep r5 p1 sweep 20 T=3.016 score=-299135.2 nulls=135 M=36191
+final sep r5 p1 sweep 30 T=1.171 score=-299066.6 nulls=135 M=36191
+final sep r5 p1 sweep 39 T=0.000 score=-299057.2 nulls=135 M=36191
+final sep r5 stepwise nulls: 44 rounds, nulls 178, score -285462.9
+final sep r5 p2 sweep 0 T=0.500 score=-285296.3 nulls=174 M=22059
+final sep r5 p2 sweep 3 T=0.000 score=-285294.8 nulls=176 M=22051
+final sep restart 5 final score -285294.8 nulls 176
+final sep r6 p1 sweep 0 T=20.000 score=-318769.5 nulls=127 M=36564
+final sep r6 p1 sweep 10 T=7.767 score=-303690.6 nulls=127 M=36564
+final sep r6 p1 sweep 20 T=3.016 score=-303289.8 nulls=127 M=36564
+final sep r6 p1 sweep 30 T=1.171 score=-303136.0 nulls=127 M=36564
+final sep r6 p1 sweep 39 T=0.000 score=-303126.8 nulls=127 M=36564
+final sep r6 stepwise nulls: 60 rounds, nulls 187, score -288264.5
+final sep r6 p2 sweep 0 T=0.500 score=-288264.1 nulls=188 M=22035
+final sep r6 p2 sweep 3 T=0.000 score=-288264.1 nulls=188 M=22035
+final sep restart 6 final score -288264.1 nulls 188
+final sep r7 p1 sweep 0 T=20.000 score=-323652.0 nulls=135 M=36191
+final sep r7 p1 sweep 10 T=7.767 score=-302237.8 nulls=135 M=36191
+final sep r7 p1 sweep 20 T=3.016 score=-302002.3 nulls=135 M=36191
+final sep r7 p1 sweep 30 T=1.171 score=-301927.6 nulls=135 M=36191
+final sep r7 p1 sweep 39 T=0.000 score=-301906.4 nulls=135 M=36191
+final sep r7 stepwise nulls: 60 rounds, nulls 195, score -289354.4
+final sep r7 p2 sweep 0 T=0.500 score=-288558.5 nulls=206 M=22088
+final sep r7 p2 sweep 3 T=0.000 score=-288469.1 nulls=206 M=22046
+final sep restart 7 final score -288469.1 nulls 206
+final sep r8 p1 sweep 0 T=20.000 score=-333813.9 nulls=127 M=36564
+final sep r8 p1 sweep 10 T=7.767 score=-296763.7 nulls=127 M=36564
+final sep r8 p1 sweep 20 T=3.016 score=-295870.7 nulls=127 M=36564
+final sep r8 p1 sweep 30 T=1.171 score=-295714.6 nulls=127 M=36564
+final sep r8 p1 sweep 39 T=0.000 score=-295699.0 nulls=127 M=36564
+final sep r8 stepwise nulls: 16 rounds, nulls 142, score -293160.5
+final sep r8 p2 sweep 0 T=0.500 score=-293161.1 nulls=142 M=33778
+final sep r8 p2 sweep 3 T=0.000 score=-293160.5 nulls=142 M=33778
+final sep restart 8 final score -293160.5 nulls 142
+final sep r9 p1 sweep 0 T=20.000 score=-324385.9 nulls=135 M=36191
+final sep r9 p1 sweep 10 T=7.767 score=-268445.5 nulls=135 M=36191
+final sep r9 p1 sweep 20 T=3.016 score=-268337.9 nulls=135 M=36191
+final sep r9 p1 sweep 30 T=1.171 score=-267808.2 nulls=135 M=36191
+final sep r9 p1 sweep 39 T=0.000 score=-267802.8 nulls=135 M=36191
+final sep r9 stepwise nulls: 18 rounds, nulls 152, score -228802.3
+final sep r9 p2 sweep 0 T=0.500 score=-228752.8 nulls=148 M=31068
+final sep r9 p2 sweep 3 T=0.000 score=-228752.8 nulls=148 M=31068
+final sep restart 9 final score -228752.8 nulls 148
+final sep r10 p1 sweep 0 T=20.000 score=-338280.3 nulls=127 M=36564
+final sep r10 p1 sweep 10 T=7.767 score=-270208.6 nulls=127 M=36564
+final sep r10 p1 sweep 20 T=3.016 score=-270049.8 nulls=127 M=36564
+final sep r10 p1 sweep 30 T=1.171 score=-270019.3 nulls=127 M=36564
+final sep r10 p1 sweep 39 T=0.000 score=-270011.8 nulls=127 M=36564
+final sep r10 stepwise nulls: 22 rounds, nulls 148, score -228752.8
+final sep r10 p2 sweep 0 T=0.500 score=-228752.8 nulls=148 M=31068
+final sep r10 p2 sweep 3 T=0.000 score=-228752.8 nulls=148 M=31068
+final sep restart 10 final score -228752.8 nulls 148
+final sep r11 p1 sweep 0 T=20.000 score=-327436.4 nulls=135 M=36191
+final sep r11 p1 sweep 10 T=7.767 score=-304282.3 nulls=135 M=36191
+final sep r11 p1 sweep 20 T=3.016 score=-303972.3 nulls=135 M=36191
+final sep r11 p1 sweep 30 T=1.171 score=-303892.9 nulls=135 M=36191
+final sep r11 p1 sweep 39 T=0.000 score=-303876.6 nulls=135 M=36191
+final sep r11 stepwise nulls: 56 rounds, nulls 190, score -285889.9
+final sep r11 p2 sweep 0 T=0.500 score=-285820.3 nulls=186 M=22044
+final sep r11 p2 sweep 3 T=0.000 score=-285818.8 nulls=186 M=22044
+final sep restart 11 final score -285818.8 nulls 186
+final sep r12 p1 sweep 0 T=20.000 score=-315854.8 nulls=127 M=36564
+final sep r12 p1 sweep 10 T=7.767 score=-302360.7 nulls=127 M=36564
+final sep r12 p1 sweep 20 T=3.016 score=-301878.5 nulls=127 M=36564
+final sep r12 p1 sweep 30 T=1.171 score=-301780.9 nulls=127 M=36564
+final sep r12 p1 sweep 39 T=0.000 score=-301769.5 nulls=127 M=36564
+final sep r12 stepwise nulls: 43 rounds, nulls 169, score -290917.8
+final sep r12 p2 sweep 0 T=0.500 score=-290921.4 nulls=171 M=27280
+final sep r12 p2 sweep 3 T=0.000 score=-290917.8 nulls=169 M=27286
+final sep restart 12 final score -290917.8 nulls 169
+final sep r13 p1 sweep 0 T=20.000 score=-326057.9 nulls=135 M=36191
+final sep r13 p1 sweep 10 T=7.767 score=-311991.1 nulls=135 M=36191
+final sep r13 p1 sweep 20 T=3.016 score=-311818.0 nulls=135 M=36191
+final sep r13 p1 sweep 30 T=1.171 score=-311640.5 nulls=135 M=36191
+final sep r13 p1 sweep 39 T=0.000 score=-311620.9 nulls=135 M=36191
+final sep r13 stepwise nulls: 40 rounds, nulls 174, score -285496.4
+final sep r13 p2 sweep 0 T=0.500 score=-285437.5 nulls=172 M=22035
+final sep r13 p2 sweep 3 T=0.000 score=-285436.8 nulls=172 M=22035
+final sep restart 13 final score -285436.8 nulls 172
+final sep r14 p1 sweep 0 T=20.000 score=-332216.5 nulls=127 M=36564
+final sep r14 p1 sweep 10 T=7.767 score=-296791.3 nulls=127 M=36564
+final sep r14 p1 sweep 20 T=3.016 score=-295330.2 nulls=127 M=36564
+final sep r14 p1 sweep 30 T=1.171 score=-295179.1 nulls=127 M=36564
+final sep r14 p1 sweep 39 T=0.000 score=-295169.3 nulls=127 M=36564
+final sep r14 stepwise nulls: 16 rounds, nulls 142, score -293677.5
+final sep r14 p2 sweep 0 T=0.500 score=-293676.9 nulls=139 M=34043
+final sep r14 p2 sweep 3 T=0.000 score=-293671.6 nulls=141 M=34037
+final sep restart 14 final score -293671.6 nulls 141
+final sep r15 p1 sweep 0 T=20.000 score=-327817.4 nulls=135 M=36191
+final sep r15 p1 sweep 10 T=7.767 score=-303016.5 nulls=135 M=36191
+final sep r15 p1 sweep 20 T=3.016 score=-302642.7 nulls=135 M=36191
+final sep r15 p1 sweep 30 T=1.171 score=-302604.0 nulls=135 M=36191
+final sep r15 p1 sweep 39 T=0.000 score=-302602.1 nulls=135 M=36191
+final sep r15 stepwise nulls: 44 rounds, nulls 178, score -290076.6
+final sep r15 p2 sweep 0 T=0.500 score=-290042.5 nulls=175 M=27619
+final sep r15 p2 sweep 3 T=0.000 score=-289759.6 nulls=179 M=26774
+final sep restart 15 final score -289759.6 nulls 179
+RESULT acc=0.9866 info={'chosen': "seg('mdl', '-') sep |P|=46 |S|=48", 'true_sets': '', 'seg_match_true': False, 'reading_true': 'sep', 'acc': 0.9865959406663913, 'score': np.float64(-228752.801486662), 'nulls': 148, 'units': 288, 'elapsed': 924.0912852287292}

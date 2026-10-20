@@ -1,0 +1,129 @@
+{
+ "row": {
+  "name": "cremma_LaurPlut53.08",
+  "tokens": 3319,
+  "types": 1686,
+  "pages": 4,
+  "lines": 216,
+  "errors": {
+   "extra": "ZeroDivisionError: float division by zero",
+   "bake": "KeyError: 'markov3'"
+  },
+  "types_25k": 1686,
+  "h2": 3.3877,
+  "sd_len": 2.68,
+  "jsd_first_fg": 0.0319,
+  "p_init_enrich": 0.95,
+  "m_final_enrich": 0.0,
+  "cross_excess_eva": 0.0094,
+  "redup_pct": 0.09,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "jsd_first_fg",
+   "p_init_enrich",
+   "m_final_enrich",
+   "cross_excess_eva",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "cremma_LaurPlut53.08",
+   "tokens": 3319,
+   "types": 1686,
+   "hapax_rate": 0.7426,
+   "mean_len": 4.747,
+   "sd_len": 2.68,
+   "h1": 4.1162,
+   "h2": 3.3877,
+   "h3": 2.7648,
+   "zipf": -0.7364,
+   "redup_pct": 0.09,
+   "jsd_first_fg": 0.0319,
+   "jsd_last_lg": 0.1161,
+   "p_init_enrich": 0.95,
+   "m_final_enrich": 0.0,
+   "cross_mi_eva": 0.1791,
+   "cross_excess_eva": 0.0094,
+   "cross_mi_glyph": 0.198,
+   "cross_excess_glyph": 0.0053,
+   "recur_le_1": 0.0009,
+   "recur_le_5": 0.0292,
+   "recur_le_20": 0.1214,
+   "recur_le_100": 0.273
+  },
+  "info_mi_adjacent": 0.28806696638118146,
+  "info_mi_page": -0.017794797290592523,
+  "info_samecol_minus_othercol": 0.022424842655173194,
+  "info_bpe_adjacent": 0.7246908079775494,
+  "lex_beta": 0.8665913961066113,
+  "lex_rate_late_early": 0.6814988290398126,
+  "lex_edit1_excess": 0.18564650059311982,
+  "slot_occupancy_pc": 0.033460803059273424,
+  "slot_table_likeness": 0.8430240497818446,
+  "slot_core_crowding": 0.6787762906309751,
+  "x_edge_mi_word": null,
+  "x_position_entropy": null,
+  "x_ltr_minus_rtl": null,
+  "x_moran_I": null,
+  "bake_char3_minus_unigram": null,
+  "x_hapax_10k": null,
+  "bake_winner": null,
+  "family": "L",
+  "note": ".//data//controls_realline//cremma_LaurPlut53.08.meta.json; 3319 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 5,
+    "outs": 2,
+    "na": 3,
+    "out_metrics": [
+     "jsd_first_fg",
+     "cross_excess_eva"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "cross_excess_eva"
+    ]
+   },
+   "C": {
+    "ins": 3,
+    "outs": 2,
+    "na": 5,
+    "out_metrics": [
+     "redup_pct",
+     "types_25k"
+    ],
+    "out_tight": [
+     "redup_pct",
+     "types_25k"
+    ]
+   },
+   "G": {
+    "ins": 6,
+    "outs": 1,
+    "na": 3,
+    "out_metrics": [
+     "h2"
+    ],
+    "out_tight": [
+     "h2"
+    ]
+   },
+   "X": {
+    "ins": 6,
+    "outs": 0,
+    "na": 4,
+    "out_metrics": [],
+    "out_tight": []
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": ".//s15_ranges.json"
+}

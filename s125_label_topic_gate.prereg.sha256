@@ -1,0 +1,11 @@
+# s125_label_topic_gate prereg stub (sha256sum format, LF, no BOM). Frozen Mon Oct 19 00:29:16 PDT 2026 (`date`), after the fixture passed and before the run.
+# Run s125 (D-066 cc, P-70 / H-20, H-06): Step 0 power gate only; no Voynich label overlap is computed by this script.
+# Disclosure: candidate corpus sizes were looked at in reconnaissance (counts only); the Voynich label-loci section counts were also queried (count only, allowed by the brief). No Voynich label text was read.
+# Verify: grep -v "^#" STUB | tr -d CR | sha256sum -c -
+1b48bc31a70719c7d6a1642acf3c71e71e93e9171b8c1903ca37a246d968ca06 *tools/s125_label_topic_gate.py
+d6bde92596ace58cc366a5c432cfade75db27c62484c06ea3553e2893cfecf96 *runs/s125/fixture.txt
+4ed3497cfd73f0acf5b4bd2c222ebc40f91de961e316996fabed79895a2aaff5 *data/vkb/vkb.sqlite
+100ddf6e1c63285e3e17d04f3154cc61250c59be075f32a4b861524ccaf364c8 *data/herbals_alchemical/bodleian_canon_misc_408/canvases_structures.tsv
+5b5c1aa2c9c4bedcab8faf7855be33362563edb8a768c0f66715b5b682ebc022 *data/herbals_period/ljs419/captions_s103.json
+89318008dc541863b6a8525f02bd1f414d51c9090021357cc6e8f53ff2a99dc9 *data/herbals_period/sloane4016/captions_s103.json
+396f9bb41124d9d70e0a410b5554a535d1acc2731555ad8bfc3278af1faa23c5 *data/controls_tabular/raw_tacuinum_medimanus/tacuinum_sanitatis.html

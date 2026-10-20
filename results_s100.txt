@@ -1,0 +1,150 @@
+========================================================================================
+RUN s100: RECIPE STAR-MARKER CLASSES MEASURED FROM THE YALE SCANS (PHASE 6 / X2 PREREQ)
+========================================================================================
+Agent:               Argon (Antigravity session <session>)
+Lead:                voynich-08 (<session>)
+Start Time (UTC):    2026-10-18T20:23:02Z
+End Time (UTC):      2026-10-18T20:24:32Z
+Free RAM (Start/End): 5.95 GB / 5.47 GB
+GPU Device:          NVIDIA GeForce RTX 5080
+Text Independence:   STRICT (Zero text/transliteration files read or inspected; D-065)
+
+PRE-REGISTERED THRESHOLDS & DECISION RULES (WRITTEN BEFORE FULL RUN)
+----------------------------------------------------------------------------------------
+  Calibration pages (3):     f103r, f107v, f114r (47 stars total)
+  Expected paragraph count:  ~285 (workflow/research/next-steps-external-prediction-2026-10-18.md)
+  Method A filled threshold: core_ink_val >= 55.0 inside r <= 10.0*sc (comb = dark + 2.0*rg_exc)
+  Method A tailed threshold: tail_score >= 9.5 narrow-ridge rows in Voronoi-bounded tail window
+  Method B classifier:       dinov2-base GPU CLS embeddings -> L2-norm -> PCA(3, seed=100) -> KMeans(2, n_init=20, seed=100)
+  Reliability decision rule: Class is RELIABLE iff Cohen's kappa(Method A, Method B) >= 0.60
+
+1. STAR COUNTS FOUND VS EXPECTED (~285)
+----------------------------------------------------------------------------------------
+  Total Quire 20 recipe stars detected: 321 (expected ~285; delta = +36, 112.6% of ~285)
+  Note on Quire 20 leaves: folios 109 and 110 are missing leaves in MS 408; f103r..f116r are the
+  23 recipe pages; f116v (205_116v.jpg) is the final charm/drawing page with 0 left-margin recipe stars.
+
+  Per-Folio Star Counts:
+    f103r : 19 stars | Method A:  7 filled, 12 hollow;  1 tailed, 18 plain | Method B:  7 filled, 12 hollow;  2 tailed, 17 plain [CALIBRATION PAGE]
+    f103v : 14 stars | Method A:  9 filled,  5 hollow;  5 tailed,  9 plain | Method B:  7 filled,  7 hollow;  1 tailed, 13 plain
+    f104r : 13 stars | Method A:  7 filled,  6 hollow; 12 tailed,  1 plain | Method B:  5 filled,  8 hollow; 12 tailed,  1 plain
+    f104v : 13 stars | Method A:  7 filled,  6 hollow; 13 tailed,  0 plain | Method B:  7 filled,  6 hollow; 13 tailed,  0 plain
+    f105r :  9 stars | Method A:  5 filled,  4 hollow;  8 tailed,  1 plain | Method B:  5 filled,  4 hollow;  8 tailed,  1 plain
+    f105v : 10 stars | Method A:  5 filled,  5 hollow;  9 tailed,  1 plain | Method B:  5 filled,  5 hollow;  9 tailed,  1 plain
+    f106r : 16 stars | Method A:  9 filled,  7 hollow; 14 tailed,  2 plain | Method B:  8 filled,  8 hollow; 14 tailed,  2 plain
+    f106v : 14 stars | Method A:  7 filled,  7 hollow; 13 tailed,  1 plain | Method B:  7 filled,  7 hollow; 11 tailed,  3 plain
+    f107r : 15 stars | Method A:  8 filled,  7 hollow; 15 tailed,  0 plain | Method B:  8 filled,  7 hollow; 13 tailed,  2 plain
+    f107v : 15 stars | Method A:  8 filled,  7 hollow; 15 tailed,  0 plain | Method B:  8 filled,  7 hollow; 10 tailed,  5 plain [CALIBRATION PAGE]
+    f108r : 16 stars | Method A:  9 filled,  7 hollow; 15 tailed,  1 plain | Method B:  4 filled, 12 hollow; 13 tailed,  3 plain
+    f108v : 16 stars | Method A: 13 filled,  3 hollow; 14 tailed,  2 plain | Method B:  7 filled,  9 hollow; 11 tailed,  5 plain
+    f111r : 17 stars | Method A: 12 filled,  5 hollow; 14 tailed,  3 plain | Method B:  9 filled,  8 hollow; 14 tailed,  3 plain
+    f111v : 19 stars | Method A: 10 filled,  9 hollow;  4 tailed, 15 plain | Method B: 10 filled,  9 hollow;  3 tailed, 16 plain
+    f112r : 12 stars | Method A:  6 filled,  6 hollow; 11 tailed,  1 plain | Method B:  6 filled,  6 hollow; 11 tailed,  1 plain
+    f112v : 11 stars | Method A:  6 filled,  5 hollow; 11 tailed,  0 plain | Method B:  4 filled,  7 hollow; 10 tailed,  1 plain
+    f113r : 16 stars | Method A:  8 filled,  8 hollow; 14 tailed,  2 plain | Method B:  7 filled,  9 hollow; 14 tailed,  2 plain
+    f113v : 15 stars | Method A:  8 filled,  7 hollow; 15 tailed,  0 plain | Method B:  8 filled,  7 hollow; 14 tailed,  1 plain
+    f114r : 13 stars | Method A:  7 filled,  6 hollow; 13 tailed,  0 plain | Method B:  7 filled,  6 hollow; 13 tailed,  0 plain [CALIBRATION PAGE]
+    f114v : 12 stars | Method A:  6 filled,  6 hollow; 12 tailed,  0 plain | Method B:  6 filled,  6 hollow; 11 tailed,  1 plain
+    f115r : 13 stars | Method A:  8 filled,  5 hollow; 10 tailed,  3 plain | Method B:  7 filled,  6 hollow; 11 tailed,  2 plain
+    f115v : 13 stars | Method A:  7 filled,  6 hollow; 10 tailed,  3 plain | Method B:  6 filled,  7 hollow; 12 tailed,  1 plain
+    f116r : 10 stars | Method A:  5 filled,  5 hollow;  0 tailed, 10 plain | Method B:  4 filled,  6 hollow;  0 tailed, 10 plain
+
+2. PER-CLASS DISTRIBUTIONS & CONTINUOUS FEATURE SUMMARY (N = 321)
+----------------------------------------------------------------------------------------
+  Filled vs Hollow:
+    Method A (Classical):  filled = 177 ( 55.1%), hollow = 144 ( 44.9%)
+    Method B (GPU DINOv2): filled = 152 ( 47.4%), hollow = 169 ( 52.6%)
+  Tailed vs Plain:
+    Method A (Classical):  tailed = 248 ( 77.3%), plain  =  73 ( 22.7%)
+    Method B (GPU DINOv2): tailed = 230 ( 71.7%), plain  =  91 ( 28.3%)
+
+  4-Way Joint Subclass Distribution (filled x tailed):
+    Method A: filled+tailed=138 (43.0%), filled+plain= 39 (12.1%), hollow+tailed=110 (34.3%), hollow+plain= 34 (10.6%)
+    Method B: filled+tailed=108 (33.6%), filled+plain= 44 (13.7%), hollow+tailed=122 (38.0%), hollow+plain= 47 (14.6%)
+
+  Continuous Measured Features Across All Stars:
+    fill_ratio    : mean=   0.587, sd=   0.346, median=   0.652, IQR=[   0.239,    0.934], min=   0.003, max=   1.000
+    core_ink_val  : mean=  82.435, sd=  50.341, median=  64.400, IQR=[  34.780,  131.520], min=  12.230, max= 192.110
+    tail_rows     : mean=  21.623, sd=  12.774, median=  24.000, IQR=[  11.000,   32.000], min=   0.000, max=  41.000
+    tail_score    : mean=  21.668, sd=  12.726, median=  24.000, IQR=[  11.000,   32.000], min=   0.000, max=  41.000
+    ray_count     : mean=   7.044, sd=   0.800, median=   7.000, IQR=[   7.000,    8.000], min=   4.000, max=  10.000
+    size_px       : mean=3120.561, sd= 499.550, median=3117.000, IQR=[2831.000, 3435.000], min=1664.000, max=4941.000
+    equiv_diam_px : mean=  62.828, sd=   5.086, median=  63.000, IQR=[  60.040,   66.130], min=  46.030, max=  79.320
+    ink_density   : mean=   0.319, sd=   0.045, median=   0.318, IQR=[   0.287,    0.351], min=   0.202, max=   0.430
+    ink_redness   : mean=   6.663, sd=   3.911, median=   5.690, IQR=[   3.970,    8.620], min=   0.630, max=  24.590
+
+3. INTER-METHOD AGREEMENT (COHEN'S KAPPA & CONFUSION MATRICES)
+----------------------------------------------------------------------------------------
+  Calibration Set Only (3 pages: f103r, f107v, f114r; n = 47):
+    filled_vs_hollow: Cohen's kappa = 1.0000, agreement = 100.0%
+    tailed_vs_plain:  Cohen's kappa = 0.7408, agreement = 87.2%
+
+  Full Quire 20 Set (23 recipe pages; N = 321):
+    filled_vs_hollow: Cohen's kappa = 0.8451, agreement = 296/321 (92.21%) -> RELIABLE (kappa >= 0.60)
+      Confusion Matrix [A\B] (rows=Method A, cols=Method B): A_filled/B_filled=152, A_filled/B_hollow=25, A_hollow/B_filled=0, A_hollow/B_hollow=144
+    tailed_vs_plain:  Cohen's kappa = 0.7716, agreement = 293/321 (91.28%) -> RELIABLE (kappa >= 0.60)
+      Confusion Matrix [A\B] (rows=Method A, cols=Method B): A_tailed/B_tailed=225, A_tailed/B_plain=23, A_plain/B_tailed=5, A_plain/B_plain=68
+
+4. LIST OF DISAGREEMENTS BETWEEN METHOD A AND METHOD B
+----------------------------------------------------------------------------------------
+  4a. Filled vs Hollow Disagreements (n = 25 of 321):
+      global_idx= 21 f103v # 2 (cx=530, cy=467): filled_A=filled, filled_B=hollow | fill_ratio=0.951, core_ink_val=79.7, ink_redness=6.2, pca1_fill_B=+0.143
+      global_idx= 25 f103v # 6 (cx=560, cy=1156): filled_A=filled, filled_B=hollow | fill_ratio=0.598, core_ink_val=62.7, ink_redness=3.5, pca1_fill_B=+0.121
+      global_idx= 39 f104r # 6 (cx=313, cy=1425): filled_A=filled, filled_B=hollow | fill_ratio=0.801, core_ink_val=99.0, ink_redness=14.2, pca1_fill_B=+0.158
+      global_idx= 41 f104r # 8 (cx=309, cy=1947): filled_A=filled, filled_B=hollow | fill_ratio=0.911, core_ink_val=105.4, ink_redness=13.9, pca1_fill_B=+0.077
+      global_idx= 81 f106r # 3 (cx=252, cy=622): filled_A=filled, filled_B=hollow | fill_ratio=0.585, core_ink_val=62.2, ink_redness=4.1, pca1_fill_B=+0.061
+      global_idx=143 f108r # 5 (cx=284, cy=971): filled_A=filled, filled_B=hollow | fill_ratio=0.664, core_ink_val=55.1, ink_redness=4.7, pca1_fill_B=+0.215
+      global_idx=144 f108r # 6 (cx=283, cy=1154): filled_A=filled, filled_B=hollow | fill_ratio=0.576, core_ink_val=61.9, ink_redness=4.4, pca1_fill_B=+0.253
+      global_idx=146 f108r # 8 (cx=264, cy=1547): filled_A=filled, filled_B=hollow | fill_ratio=0.714, core_ink_val=74.7, ink_redness=4.6, pca1_fill_B=+0.161
+      global_idx=147 f108r # 9 (cx=262, cy=1837): filled_A=filled, filled_B=hollow | fill_ratio=0.573, core_ink_val=60.8, ink_redness=2.8, pca1_fill_B=+0.049
+      global_idx=154 f108r #16 (cx=259, cy=2995): filled_A=filled, filled_B=hollow | fill_ratio=1.000, core_ink_val=133.8, ink_redness=17.3, pca1_fill_B=+0.009
+      global_idx=160 f108v # 6 (cx=510, cy=1369): filled_A=filled, filled_B=hollow | fill_ratio=0.805, core_ink_val=64.3, ink_redness=6.5, pca1_fill_B=+0.160
+      global_idx=162 f108v # 8 (cx=536, cy=1725): filled_A=filled, filled_B=hollow | fill_ratio=0.801, core_ink_val=60.6, ink_redness=4.8, pca1_fill_B=+0.336
+      global_idx=163 f108v # 9 (cx=537, cy=1920): filled_A=filled, filled_B=hollow | fill_ratio=0.669, core_ink_val=64.4, ink_redness=4.8, pca1_fill_B=+0.225
+      global_idx=165 f108v #11 (cx=538, cy=2284): filled_A=filled, filled_B=hollow | fill_ratio=0.737, core_ink_val=58.0, ink_redness=4.2, pca1_fill_B=+0.168
+      global_idx=167 f108v #13 (cx=552, cy=2620): filled_A=filled, filled_B=hollow | fill_ratio=0.909, core_ink_val=68.5, ink_redness=5.1, pca1_fill_B=+0.233
+      global_idx=169 f108v #15 (cx=553, cy=2903): filled_A=filled, filled_B=hollow | fill_ratio=0.994, core_ink_val=78.2, ink_redness=5.7, pca1_fill_B=+0.107
+      global_idx=172 f111r # 2 (cx=232, cy=479): filled_A=filled, filled_B=hollow | fill_ratio=0.597, core_ink_val=55.2, ink_redness=4.9, pca1_fill_B=+0.210
+      global_idx=180 f111r #10 (cx=259, cy=1713): filled_A=filled, filled_B=hollow | fill_ratio=0.763, core_ink_val=57.5, ink_redness=5.3, pca1_fill_B=+0.220
+      global_idx=186 f111r #16 (cx=267, cy=2767): filled_A=filled, filled_B=hollow | fill_ratio=0.730, core_ink_val=55.7, ink_redness=6.2, pca1_fill_B=+0.202
+      global_idx=222 f112v # 4 (cx=654, cy=1368): filled_A=filled, filled_B=hollow | fill_ratio=0.652, core_ink_val=59.4, ink_redness=9.3, pca1_fill_B=+0.080
+      global_idx=229 f112v #11 (cx=512, cy=2941): filled_A=filled, filled_B=hollow | fill_ratio=0.754, core_ink_val=97.2, ink_redness=7.7, pca1_fill_B=+0.001
+      global_idx=243 f113r #14 (cx=165, cy=2665): filled_A=filled, filled_B=hollow | fill_ratio=0.611, core_ink_val=63.4, ink_redness=4.1, pca1_fill_B=+0.049
+      global_idx=289 f115r # 4 (cx=184, cy=812): filled_A=filled, filled_B=hollow | fill_ratio=0.532, core_ink_val=61.1, ink_redness=2.1, pca1_fill_B=+0.007
+      global_idx=311 f115v #13 (cx=487, cy=2774): filled_A=filled, filled_B=hollow | fill_ratio=0.529, core_ink_val=63.2, ink_redness=7.3, pca1_fill_B=+0.001
+      global_idx=315 f116r # 4 (cx=160, cy=796): filled_A=filled, filled_B=hollow | fill_ratio=0.638, core_ink_val=68.8, ink_redness=7.7, pca1_fill_B=+0.090
+
+  4b. Tailed vs Plain Disagreements (n = 28 of 321):
+      global_idx= 12 f103r #12 (cx=376, cy=1951): tailed_A=plain , tailed_B=tailed | tail_rows= 0, tail_score=  0.0, pca1_tail_B=+0.054
+      global_idx= 22 f103v # 3 (cx=540, cy=687): tailed_A=tailed, tailed_B=plain  | tail_rows=15, tail_score= 15.0, pca1_tail_B=+0.263
+      global_idx= 24 f103v # 5 (cx=555, cy=973): tailed_A=tailed, tailed_B=plain  | tail_rows=10, tail_score= 10.0, pca1_tail_B=+0.517
+      global_idx= 29 f103v #10 (cx=608, cy=1995): tailed_A=tailed, tailed_B=plain  | tail_rows=18, tail_score= 18.0, pca1_tail_B=+0.316
+      global_idx= 30 f103v #11 (cx=616, cy=2167): tailed_A=tailed, tailed_B=plain  | tail_rows=19, tail_score= 19.0, pca1_tail_B=+0.222
+      global_idx= 62 f105r # 3 (cx=277, cy=1389): tailed_A=tailed, tailed_B=plain  | tail_rows=13, tail_score= 13.0, pca1_tail_B=+0.168
+      global_idx= 63 f105r # 4 (cx=286, cy=1601): tailed_A=plain , tailed_B=tailed | tail_rows= 7, tail_score=  7.0, pca1_tail_B=-0.191
+      global_idx=102 f106v # 8 (cx=464, cy=1881): tailed_A=tailed, tailed_B=plain  | tail_rows=32, tail_score= 32.0, pca1_tail_B=+0.191
+      global_idx=108 f106v #14 (cx=479, cy=2933): tailed_A=tailed, tailed_B=plain  | tail_rows=25, tail_score= 25.0, pca1_tail_B=+0.187
+      global_idx=111 f107r # 3 (cx=235, cy=644): tailed_A=tailed, tailed_B=plain  | tail_rows=13, tail_score= 13.0, pca1_tail_B=+0.388
+      global_idx=113 f107r # 5 (cx=266, cy=1094): tailed_A=tailed, tailed_B=plain  | tail_rows=12, tail_score= 12.0, pca1_tail_B=+0.184
+      global_idx=126 f107v # 3 (cx=457, cy=589): tailed_A=tailed, tailed_B=plain  | tail_rows=25, tail_score= 25.0, pca1_tail_B=+0.365
+      global_idx=127 f107v # 4 (cx=460, cy=775): tailed_A=tailed, tailed_B=plain  | tail_rows=11, tail_score= 11.0, pca1_tail_B=+0.332
+      global_idx=133 f107v #10 (cx=450, cy=2041): tailed_A=tailed, tailed_B=plain  | tail_rows=15, tail_score= 15.0, pca1_tail_B=+0.363
+      global_idx=134 f107v #11 (cx=435, cy=2227): tailed_A=tailed, tailed_B=plain  | tail_rows= 5, tail_score= 11.0, pca1_tail_B=+0.208
+      global_idx=138 f107v #15 (cx=432, cy=2911): tailed_A=tailed, tailed_B=plain  | tail_rows=11, tail_score= 11.0, pca1_tail_B=+0.465
+      global_idx=151 f108r #13 (cx=260, cy=2475): tailed_A=tailed, tailed_B=plain  | tail_rows=13, tail_score= 13.0, pca1_tail_B=+0.375
+      global_idx=152 f108r #14 (cx=261, cy=2647): tailed_A=tailed, tailed_B=plain  | tail_rows=19, tail_score= 19.0, pca1_tail_B=+0.169
+      global_idx=162 f108v # 8 (cx=536, cy=1725): tailed_A=tailed, tailed_B=plain  | tail_rows=13, tail_score= 13.0, pca1_tail_B=+0.365
+      global_idx=168 f108v #14 (cx=547, cy=2770): tailed_A=tailed, tailed_B=plain  | tail_rows=12, tail_score= 12.0, pca1_tail_B=+0.314
+      global_idx=170 f108v #16 (cx=555, cy=3020): tailed_A=tailed, tailed_B=plain  | tail_rows=31, tail_score= 31.0, pca1_tail_B=+0.352
+      global_idx=206 f111v #19 (cx=534, cy=2849): tailed_A=tailed, tailed_B=plain  | tail_rows=26, tail_score= 26.0, pca1_tail_B=+0.341
+      global_idx=224 f112v # 6 (cx=597, cy=2015): tailed_A=tailed, tailed_B=plain  | tail_rows= 6, tail_score= 11.0, pca1_tail_B=+0.233
+      global_idx=258 f113v #13 (cx=411, cy=2656): tailed_A=tailed, tailed_B=plain  | tail_rows=15, tail_score= 15.0, pca1_tail_B=+0.267
+      global_idx=276 f114v # 3 (cx=446, cy=741): tailed_A=tailed, tailed_B=plain  | tail_rows=19, tail_score= 19.0, pca1_tail_B=+0.155
+      global_idx=296 f115r #11 (cx=164, cy=2525): tailed_A=plain , tailed_B=tailed | tail_rows= 7, tail_score=  7.0, pca1_tail_B=-0.260
+      global_idx=302 f115v # 4 (cx=382, cy=857): tailed_A=plain , tailed_B=tailed | tail_rows= 8, tail_score=  8.0, pca1_tail_B=-0.207
+      global_idx=305 f115v # 7 (cx=412, cy=1482): tailed_A=plain , tailed_B=tailed | tail_rows= 5, tail_score=  5.0, pca1_tail_B=-0.243
+
+5. FINAL VERDICT
+----------------------------------------------------------------------------------------
+  VERDICT: BOTH binary star-marker classes are RELIABLE (filled_vs_hollow kappa = 0.8451 >= 0.60; tailed_vs_plain kappa = 0.7716 >= 0.60; N = 321 stars across 23 Quire 20 recipe pages, zero text used).
+========================================================================================

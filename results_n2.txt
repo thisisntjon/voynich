@@ -1,0 +1,87 @@
+N2: fine habit grid, h2 checked against the manuscript (pre-registered in the docstring; N1 code imported unchanged)
+
+=== ZL3b ===
+MS          residual quires +0.0461 [+0.0357, +0.0564]   pages +0.0400 [+0.0279, +0.0513]   edge +0.181  h2 2.109  repeat 0.94%
+HT p=0     s1  residual quires +0.0102 [+0.0027, +0.0176]   pages +0.0081   edge +0.233  h2 1.753  types 1614  repeat 1.46%
+HT p=0     s2  residual quires +0.0104 [+0.0002, +0.0200]   pages -0.0002   edge +0.258  h2 1.735  types 1586  repeat 1.47%
+HT p=0     s3  residual quires +0.0055 [-0.0043, +0.0158]   pages +0.0061   edge +0.254  h2 1.761  types 1642  repeat 1.40%
+HT p=0.01  s1  residual quires +0.0102 [+0.0003, +0.0192]   pages +0.0102   edge +0.245  h2 1.756  types 1738  repeat 1.32%
+HT p=0.01  s2  residual quires +0.0202 [+0.0114, +0.0291]   pages +0.0112   edge +0.255  h2 1.763  types 1656  repeat 1.35%
+HT p=0.01  s3  residual quires +0.0123 [+0.0035, +0.0214]   pages +0.0142   edge +0.244  h2 1.753  types 1629  repeat 1.29%
+HT p=0.02  s1  residual quires +0.0229 [+0.0120, +0.0349]   pages +0.0195   edge +0.268  h2 1.781  types 1756  repeat 1.51%
+HT p=0.02  s2  residual quires +0.0167 [+0.0065, +0.0259]   pages +0.0127   edge +0.248  h2 1.762  types 1748  repeat 1.48%
+HT p=0.02  s3  residual quires +0.0249 [+0.0155, +0.0337]   pages +0.0151   edge +0.236  h2 1.750  types 1668  repeat 1.32%
+HT p=0.03  s1  residual quires +0.0302 [+0.0213, +0.0394]   pages +0.0351   edge +0.269  h2 1.778  types 1724  repeat 1.40%
+HT p=0.03  s2  residual quires +0.0360 [+0.0271, +0.0454]   pages +0.0357   edge +0.261  h2 1.765  types 1745  repeat 1.33%
+HT p=0.03  s3  residual quires +0.0262 [+0.0154, +0.0373]   pages +0.0332   edge +0.251  h2 1.784  types 1726  repeat 1.37%
+HT p=0.04  s1  residual quires +0.0381 [+0.0295, +0.0462]   pages +0.0423   edge +0.255  h2 1.810  types 1767  repeat 1.18%
+HT p=0.04  s2  residual quires +0.0464 [+0.0354, +0.0569]   pages +0.0284   edge +0.245  h2 1.766  types 1757  repeat 1.17%
+HT p=0.04  s3  residual quires +0.0423 [+0.0321, +0.0520]   pages +0.0457   edge +0.243  h2 1.795  types 1801  repeat 1.30%
+HT p=0.05  s1  residual quires +0.0684 [+0.0578, +0.0784]   pages +0.0532   edge +0.248  h2 1.822  types 1810  repeat 1.10%
+HT p=0.05  s2  residual quires +0.0497 [+0.0379, +0.0613]   pages +0.0550   edge +0.251  h2 1.778  types 1756  repeat 1.42%
+HT p=0.05  s3  residual quires +0.0514 [+0.0409, +0.0617]   pages +0.0536   edge +0.243  h2 1.791  types 1748  repeat 1.40%
+power: manuscript CI lower +0.0357 vs p=0 seed mean +0.0087 -> OK
+  p=0.01  seed mean residual +0.0142  edge +0.248  h2 1.757 (gap 0.352 vs p=0 0.360)  repeat 1.32%  resid=FAIL  edge=ok  h2=ok  repeat=ok
+  p=0.02  seed mean residual +0.0215  edge +0.250  h2 1.764 (gap 0.345 vs p=0 0.360)  repeat 1.44%  resid=FAIL  edge=ok  h2=ok  repeat=ok
+  p=0.03  seed mean residual +0.0308  edge +0.260  h2 1.776 (gap 0.334 vs p=0 0.360)  repeat 1.37%  resid=FAIL  edge=ok  h2=ok  repeat=ok
+  p=0.04  seed mean residual +0.0423  edge +0.248  h2 1.790 (gap 0.319 vs p=0 0.360)  repeat 1.22%  resid=ok  edge=ok  h2=ok  repeat=ok
+  p=0.05  seed mean residual +0.0565  edge +0.247  h2 1.797 (gap 0.312 vs p=0 0.360)  repeat 1.30%  resid=ok  edge=ok  h2=ok  repeat=ok
+VERDICT ZL3b: DIES (all checks pass at p=[0.04, 0.05])   residual inside manuscript CI at p=[0.04]
+
+=== RF1b ===
+MS          residual quires +0.0333 [+0.0213, +0.0446]   pages +0.0483 [+0.0364, +0.0591]   edge +0.173  h2 2.120  repeat 0.92%
+HT p=0     s1  residual quires -0.0022 [-0.0117, +0.0063]   pages +0.0126   edge +0.256  h2 1.722  types 1634  repeat 1.64%
+HT p=0     s2  residual quires -0.0005 [-0.0097, +0.0081]   pages +0.0036   edge +0.258  h2 1.767  types 1723  repeat 1.49%
+HT p=0     s3  residual quires +0.0085 [-0.0032, +0.0192]   pages +0.0042   edge +0.247  h2 1.729  types 1635  repeat 1.42%
+HT p=0.01  s1  residual quires +0.0073 [-0.0004, +0.0158]   pages +0.0096   edge +0.253  h2 1.748  types 1719  repeat 1.29%
+HT p=0.01  s2  residual quires +0.0077 [-0.0021, +0.0172]   pages +0.0191   edge +0.247  h2 1.765  types 1717  repeat 1.37%
+HT p=0.01  s3  residual quires +0.0133 [+0.0045, +0.0221]   pages +0.0164   edge +0.251  h2 1.759  types 1684  repeat 1.48%
+HT p=0.02  s1  residual quires +0.0180 [+0.0060, +0.0296]   pages +0.0162   edge +0.228  h2 1.759  types 1706  repeat 1.46%
+HT p=0.02  s2  residual quires +0.0206 [+0.0101, +0.0322]   pages +0.0206   edge +0.245  h2 1.772  types 1803  repeat 1.52%
+HT p=0.02  s3  residual quires +0.0180 [+0.0076, +0.0293]   pages +0.0066   edge +0.253  h2 1.773  types 1684  repeat 1.65%
+HT p=0.03  s1  residual quires +0.0163 [+0.0062, +0.0263]   pages +0.0278   edge +0.244  h2 1.761  types 1745  repeat 1.55%
+HT p=0.03  s2  residual quires +0.0234 [+0.0120, +0.0347]   pages +0.0306   edge +0.256  h2 1.790  types 1799  repeat 1.53%
+HT p=0.03  s3  residual quires +0.0243 [+0.0153, +0.0339]   pages +0.0273   edge +0.246  h2 1.790  types 1794  repeat 1.55%
+HT p=0.04  s1  residual quires +0.0489 [+0.0379, +0.0612]   pages +0.0580   edge +0.249  h2 1.787  types 1719  repeat 1.37%
+HT p=0.04  s2  residual quires +0.0347 [+0.0250, +0.0437]   pages +0.0442   edge +0.250  h2 1.782  types 1789  repeat 1.28%
+HT p=0.04  s3  residual quires +0.0330 [+0.0235, +0.0432]   pages +0.0400   edge +0.249  h2 1.772  types 1834  repeat 1.25%
+HT p=0.05  s1  residual quires +0.0421 [+0.0320, +0.0532]   pages +0.0603   edge +0.243  h2 1.777  types 1793  repeat 1.36%
+HT p=0.05  s2  residual quires +0.0613 [+0.0492, +0.0733]   pages +0.0574   edge +0.265  h2 1.802  types 1807  repeat 1.29%
+HT p=0.05  s3  residual quires +0.0650 [+0.0506, +0.0785]   pages +0.0599   edge +0.257  h2 1.766  types 1837  repeat 1.40%
+power: manuscript CI lower +0.0213 vs p=0 seed mean +0.0019 -> OK
+  p=0.01  seed mean residual +0.0094  edge +0.250  h2 1.757 (gap 0.363 vs p=0 0.381)  repeat 1.38%  resid=FAIL  edge=ok  h2=ok  repeat=ok
+  p=0.02  seed mean residual +0.0188  edge +0.242  h2 1.768 (gap 0.352 vs p=0 0.381)  repeat 1.54%  resid=FAIL  edge=ok  h2=ok  repeat=ok
+  p=0.03  seed mean residual +0.0214  edge +0.249  h2 1.780 (gap 0.340 vs p=0 0.381)  repeat 1.54%  resid=ok  edge=ok  h2=ok  repeat=ok
+  p=0.04  seed mean residual +0.0389  edge +0.249  h2 1.780 (gap 0.340 vs p=0 0.381)  repeat 1.30%  resid=ok  edge=ok  h2=ok  repeat=ok
+  p=0.05  seed mean residual +0.0561  edge +0.255  h2 1.782 (gap 0.338 vs p=0 0.381)  repeat 1.35%  resid=ok  edge=ok  h2=ok  repeat=ok
+VERDICT RF1b: DIES (all checks pass at p=[0.03, 0.04, 0.05])   residual inside manuscript CI at p=[0.03, 0.04]
+
+=== IT2a ===
+MS          residual quires +0.0410 [+0.0317, +0.0498]   pages +0.0396 [+0.0298, +0.0503]   edge +0.166  h2 2.112  repeat 0.96%
+HT p=0     s1  residual quires +0.0030 [-0.0057, +0.0118]   pages +0.0068   edge +0.233  h2 1.762  types 1670  repeat 1.57%
+HT p=0     s2  residual quires +0.0032 [-0.0071, +0.0132]   pages +0.0097   edge +0.230  h2 1.735  types 1660  repeat 1.50%
+HT p=0     s3  residual quires +0.0083 [-0.0019, +0.0181]   pages +0.0129   edge +0.229  h2 1.729  types 1679  repeat 1.36%
+HT p=0.01  s1  residual quires -0.0019 [-0.0103, +0.0062]   pages +0.0039   edge +0.221  h2 1.769  types 1716  repeat 1.37%
+HT p=0.01  s2  residual quires +0.0076 [-0.0034, +0.0174]   pages +0.0124   edge +0.242  h2 1.756  types 1700  repeat 1.37%
+HT p=0.01  s3  residual quires +0.0031 [-0.0059, +0.0118]   pages +0.0166   edge +0.242  h2 1.757  types 1739  repeat 1.62%
+HT p=0.02  s1  residual quires +0.0188 [+0.0104, +0.0267]   pages +0.0211   edge +0.240  h2 1.775  types 1730  repeat 1.44%
+HT p=0.02  s2  residual quires +0.0139 [+0.0024, +0.0236]   pages +0.0106   edge +0.236  h2 1.782  types 1760  repeat 1.33%
+HT p=0.02  s3  residual quires +0.0237 [+0.0118, +0.0351]   pages +0.0174   edge +0.241  h2 1.768  types 1768  repeat 1.45%
+HT p=0.03  s1  residual quires +0.0281 [+0.0183, +0.0380]   pages +0.0172   edge +0.239  h2 1.757  types 1810  repeat 1.28%
+HT p=0.03  s2  residual quires +0.0202 [+0.0103, +0.0306]   pages +0.0232   edge +0.237  h2 1.772  types 1769  repeat 1.44%
+HT p=0.03  s3  residual quires +0.0241 [+0.0138, +0.0342]   pages +0.0187   edge +0.226  h2 1.775  types 1843  repeat 1.26%
+HT p=0.04  s1  residual quires +0.0231 [+0.0135, +0.0316]   pages +0.0361   edge +0.235  h2 1.783  types 1786  repeat 1.25%
+HT p=0.04  s2  residual quires +0.0376 [+0.0273, +0.0491]   pages +0.0360   edge +0.240  h2 1.772  types 1820  repeat 1.42%
+HT p=0.04  s3  residual quires +0.0431 [+0.0315, +0.0550]   pages +0.0420   edge +0.229  h2 1.787  types 1779  repeat 1.45%
+HT p=0.05  s1  residual quires +0.0530 [+0.0438, +0.0624]   pages +0.0464   edge +0.232  h2 1.791  types 1850  repeat 1.31%
+HT p=0.05  s2  residual quires +0.0480 [+0.0367, +0.0589]   pages +0.0496   edge +0.235  h2 1.775  types 1805  repeat 1.36%
+HT p=0.05  s3  residual quires +0.0506 [+0.0400, +0.0615]   pages +0.0378   edge +0.236  h2 1.775  types 1807  repeat 1.38%
+power: manuscript CI lower +0.0317 vs p=0 seed mean +0.0048 -> OK
+  p=0.01  seed mean residual +0.0029  edge +0.235  h2 1.761 (gap 0.351 vs p=0 0.370)  repeat 1.45%  resid=FAIL  edge=ok  h2=ok  repeat=ok
+  p=0.02  seed mean residual +0.0188  edge +0.239  h2 1.775 (gap 0.337 vs p=0 0.370)  repeat 1.41%  resid=FAIL  edge=ok  h2=ok  repeat=ok
+  p=0.03  seed mean residual +0.0241  edge +0.234  h2 1.768 (gap 0.343 vs p=0 0.370)  repeat 1.33%  resid=FAIL  edge=ok  h2=ok  repeat=ok
+  p=0.04  seed mean residual +0.0346  edge +0.235  h2 1.781 (gap 0.331 vs p=0 0.370)  repeat 1.37%  resid=ok  edge=ok  h2=ok  repeat=ok
+  p=0.05  seed mean residual +0.0505  edge +0.234  h2 1.780 (gap 0.332 vs p=0 0.370)  repeat 1.35%  resid=ok  edge=ok  h2=ok  repeat=ok
+VERDICT IT2a: DIES (all checks pass at p=[0.04, 0.05])   residual inside manuscript CI at p=[0.04]
+
+OVERALL: DIES   ZL3b=DIES  RF1b=DIES  IT2a=DIES

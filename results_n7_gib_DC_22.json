@@ -1,0 +1,130 @@
+{
+ "row": {
+  "name": "gib_DC_22",
+  "tokens": 150,
+  "types": 125,
+  "pages": 1,
+  "lines": 19,
+  "errors": {
+   "extra": "ZeroDivisionError: float division by zero",
+   "bake": "KeyError: 'markov3'"
+  },
+  "types_25k": 125,
+  "h2": 3.2773,
+  "sd_len": 3.521,
+  "jsd_first_fg": 0.356,
+  "p_init_enrich": 0.0,
+  "m_final_enrich": 0.98,
+  "cross_excess_eva": 0.0269,
+  "redup_pct": 1.342,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "p_init_enrich",
+   "m_final_enrich",
+   "cross_excess_eva"
+  ],
+  "v1_full": {
+   "name": "gib_DC_22",
+   "tokens": 150,
+   "types": 125,
+   "hapax_rate": 0.896,
+   "mean_len": 4.78,
+   "sd_len": 3.521,
+   "h1": 4.1798,
+   "h2": 3.2773,
+   "h3": 1.5151,
+   "zipf": -0.2829,
+   "redup_pct": 1.342,
+   "jsd_first_fg": 0.356,
+   "jsd_last_lg": 0.2837,
+   "p_init_enrich": 0.0,
+   "m_final_enrich": 0.98,
+   "cross_mi_eva": 1.6772,
+   "cross_excess_eva": 0.0269,
+   "cross_mi_glyph": 1.7371,
+   "cross_excess_glyph": 0.0434,
+   "recur_le_1": 0.0133,
+   "recur_le_5": 0.04,
+   "recur_le_20": 0.1067,
+   "recur_le_100": 0.1667
+  },
+  "info_mi_adjacent": null,
+  "info_mi_page": null,
+  "info_samecol_minus_othercol": null,
+  "info_bpe_adjacent": 0.0936818254105618,
+  "lex_beta": null,
+  "lex_rate_late_early": null,
+  "lex_edit1_excess": 0.216,
+  "slot_occupancy_pc": 0.15178571428571427,
+  "slot_table_likeness": 0.9689269892881471,
+  "slot_core_crowding": 0.30357142857142855,
+  "x_edge_mi_word": null,
+  "x_position_entropy": null,
+  "x_ltr_minus_rtl": null,
+  "x_moran_I": null,
+  "bake_char3_minus_unigram": null,
+  "x_hapax_10k": null,
+  "bake_winner": null,
+  "family": "X",
+  "note": "data\\controls_gibberish\\gib_DC_22.meta.json; 150 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 3,
+    "outs": 4,
+    "na": 3,
+    "out_metrics": [
+     "jsd_first_fg",
+     "p_init_enrich",
+     "redup_pct",
+     "types_25k"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "p_init_enrich",
+     "redup_pct"
+    ]
+   },
+   "C": {
+    "ins": 2,
+    "outs": 3,
+    "na": 5,
+    "out_metrics": [
+     "jsd_first_fg",
+     "redup_pct",
+     "types_25k"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "redup_pct"
+    ]
+   },
+   "G": {
+    "ins": 2,
+    "outs": 5,
+    "na": 3,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "types_25k"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "results_m4_phase1_board.json"
+}

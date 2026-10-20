@@ -1,0 +1,7 @@
+# s126 quire-M blue crop check (descriptive, not a gate), written Mon Oct 19 00:38:13 PDT 2026 after the measure step, before test; viewed runs/s126/crops/valM_0.png (f84v, f80r, f80v) and valM_1.png (f82v, f82r) with Read.
+# format: class | folio | PASS/FAIL | what was seen. PASS = masked pixels are blue water; recall noted.
+blue | f84v | PASS | blue pool with nymphs; dark central stream and darker patches masked; the pale blue wash covering most of the pool is NOT masked (recall about a quarter)
+blue | f80r | PASS | horizontal pale blue water band; its darker middle masked, the paler upper and outer parts not (recall about half)
+blue | f80v | PASS | blue water band under a nymph; darker right part masked, left and pale parts not (recall about a third)
+blue | f82v | PASS | small saturated blue pool beside a nymph on a page whose large pools are green; pool mostly masked
+blue | f82r | PASS | small blue tub/pool next to a large green pool; blue tub masked

@@ -1,0 +1,51 @@
+002_1r	NONE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	green leaf-like patches, no outlined drawing; writing only
+006_3r	PLANT	1	BRANCHING	DIVIDED	1-4	0	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	striped frond crown, read as one compound leaf
+010_5r	PLANT	1	NONE	ELLIPTIC	5-10	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	stem base faint or absent; show-through ignored
+014_7r	PLANT	1	BRANCHING	LINEAR	11-20	0	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	pale inner leaf-like whorl counted as leaves, not flower
+018_9r	PLANT	1	TUBER	DIVIDED	11-20	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+022_11r	PLANT	1	TUBER	ELLIPTIC	21+	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thick crossed roots: TUBER vs BRANCHING uncertain
+026_14r	PLANT	1	TUBER	LINEAR	11-20	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	segmented horizontal rhizome; leaf count near 20
+030_16r	PLANT	1	TUBER	DIVIDED	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	long leaf petioles from base not counted as stems
+034_18r	PLANT	1	BRANCHING	ELLIPTIC	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+038_20r	PLANT	1	BULB	DIVIDED	5-10	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	root faded by masking; pinnate fronds vs leaflets ambiguous
+042_22r	PLANT	1	BULB	ELLIPTIC	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	unpainted swollen base outline over fibrous roots
+046_24r	PLANT	1	BRANCHING	ELLIPTIC	21+	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaves notched: ELLIPTIC vs DIVIDED uncertain
+050_26r	PLANT	1	BRANCHING	ROUND	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+054_28r	PLANT	1	TUBER	ELLIPTIC	5-10	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small red root mass with fingers
+058_30r	PLANT	1	NONE	ELLIPTIC	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	faint stem outlines; leaf ratio near 3
+062_32r	PLANT	1	NONE	ELLIPTIC	21+	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	root area unclear, outlines lost; green strokes only
+066_34r	PLANT	1	BULB	DIVIDED	5-10	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small round swelling above spreading roots
+070_36r	PLANT	1	TUBER	DIVIDED	5-10	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+074_38r	PLANT	1	BRANCHING	DIVIDED	1-4	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small cup at leaf base counted as flower
+078_40r	PLANT	1	BRANCHING	DIVIDED	5-10	1	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	two stems from base rejoin under flower
+082_42r	PLANT	1	TAPROOT	ELLIPTIC	1-4	0	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	red trilobed structure counted as leaf not flower
+086_44r	PLANT	1	TAPROOT	LINEAR	11-20	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+090_46r	PLANT	1	TUBER	ELLIPTIC	21+	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	three stems on one horizontal rhizome, counted as one plant
+094_48r	PLANT	1	BRANCHING	DIVIDED	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	stem and roots very faint after masking
+098_50r	PLANT	1	BRANCHING	ELLIPTIC	5-10	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+102_52r	PLANT	2	TUBER	DIVIDED	11-20	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small second plant on shared runner; tip-toothed leaves
+106_54r	PLANT	1	BRANCHING	ELLIPTIC	21+	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaf ratio near 3
+110_56r	PLANT	1	TAPROOT	DIVIDED	1-4	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	root outline mostly erased by masking; spiral frond odd
+114_58r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small star outline top left; text page
+118_66r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small sketched figure bottom left; show-through ignored
+122_68r	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	FACE	NA	0	3	2-3	PRESENT	NA	NA	NA	foldout; ring count of right wheel uncertain (2 vs 3)
+126_70v_part	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ANIMAL	FISH	20+	4+	1	ABSENT	NA	NA	NA	left-edge partial drawing from adjacent panel ignored
+130_72v_part	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ANIMAL	HORNLESS	20+	4+	2	ABSENT	NA	NA	NA	faint rings; left wheel principal, slightly larger
+134_75r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	11+	PRESENT	-
+138_77r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	1-5	PRESENT	figures in tub-like tubes; little painted liquid
+142_79r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	6-10	PRESENT	green show-through at bottom ignored
+146_81r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2	11+	PRESENT	-
+150_83r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	1-5	PRESENT	small scaled basins; pool count rough
+154_85r_part_p8586	NONE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	writing only; unmasked; adjacent-leaf sliver at left ignored
+158_87r	PLANT	1	TUBER	ELLIPTIC	21+	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	overlapping leaves; count near 20
+162_89v_part	PHARMA	NA	NA	NA	NA	NA	NA	VASE	3-4	16+	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	fragment count near 15-16 boundary; faded fragments
+166_93r	PLANT	1	BRANCHING	ELLIPTIC	11-20	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	stain at left ignored
+170_95v_part	PLANT	1	BRANCHING	DIVIDED	1-4	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	compound leaves counted once each; leaf grouping unclear
+174_99r	PHARMA	NA	NA	NA	NA	NA	NA	CYLINDER	3-4	16+	ROOTS	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+178_101v_part	PHARMA	NA	NA	NA	NA	NA	NA	CYLINDER	5+	6-15	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	3 jars plus 2 partial jars on left-edge strip counted
+182_103r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small red stars in left margin
+186_105r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small tailed stars in left margin
+190_107r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin
+194_111r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin
+198_113r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin
+202_115r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin

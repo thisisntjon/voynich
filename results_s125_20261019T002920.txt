@@ -1,0 +1,20 @@
+# s125 results, written Mon Oct 19 00:29:20 PDT 2026 (clock read with date). Stub: s125_label_topic_gate.prereg.sha256
+# stub verify:
+#   tools/s125_label_topic_gate.py: OK
+#   runs/s125/fixture.txt: OK
+#   data/vkb/vkb.sqlite: OK
+#   data/herbals_alchemical/bodleian_canon_misc_408/canvases_structures.tsv: OK
+#   data/herbals_period/ljs419/captions_s103.json: OK
+#   data/herbals_period/sloane4016/captions_s103.json: OK
+#   data/controls_tabular/raw_tacuinum_medimanus/tacuinum_sanitatis.html: OK
+Voynich label loci by section (count only; no label text read):
+  IT2a: A=116 B=116 C=33 H=28 P=232 T=59 Z=299  | groups B=116 PH=260 CZA=448
+  RF1b: A=116 B=116 C=172 H=32 P=234 T=60 Z=299  | groups B=116 PH=266 CZA=587
+  ZL3b: A=116 B=116 C=172 H=32 P=234 T=60 Z=299  | groups B=116 PH=266 CZA=587
+Required control sizes (ZL3b): B=116 PH=266 CZA=587; R4 total >= 969
+  C1 Bodleian Canon Misc 408 captions: n=166 topics=1 -> fails R3 topics=1 related_pair=False; R4 n=166 < 969
+  C2 LJS 419 captions: n=186 topics=1 -> fails R3 topics=1 related_pair=False; R4 n=186 < 969
+  C3 Sloane 4016 captions: n=469 topics=1 -> fails R3 topics=1 related_pair=False; R4 n=469 < 969
+  C4 Tacuinum BnF lat 9333 headings: n=207 topics=3 -> fails R4 n=207 < 969
+CALL NO_CONTROL
+Missing: one real illustrated source with >= 3 topical label groups (incl. plant and astral) and >= 969 labels; Voynich label overlap NOT computed.

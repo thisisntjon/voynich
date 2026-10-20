@@ -1,0 +1,152 @@
+{
+ "row": {
+  "name": "mhg_nibelungenlied_relined8",
+  "tokens": 25000,
+  "types": 3478,
+  "pages": 13,
+  "lines": 3125,
+  "errors": {},
+  "types_25k": 3478,
+  "h2": 3.0228,
+  "sd_len": 2.012,
+  "jsd_first_fg": 0.0015,
+  "p_init_enrich": 0.88,
+  "m_final_enrich": 1.04,
+  "cross_excess_eva": 0.0837,
+  "redup_pct": 0.06,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "jsd_first_fg",
+   "p_init_enrich",
+   "m_final_enrich",
+   "cross_excess_eva",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "mhg_nibelungenlied_relined8",
+   "tokens": 25000,
+   "types": 3478,
+   "hapax_rate": 0.5313,
+   "mean_len": 4.305,
+   "sd_len": 2.012,
+   "h1": 3.9846,
+   "h2": 3.0228,
+   "h3": 2.3424,
+   "zipf": -1.0175,
+   "redup_pct": 0.06,
+   "jsd_first_fg": 0.0015,
+   "jsd_last_lg": 0.001,
+   "p_init_enrich": 0.88,
+   "m_final_enrich": 1.04,
+   "cross_mi_eva": 0.1018,
+   "cross_excess_eva": 0.0837,
+   "cross_mi_glyph": 0.1156,
+   "cross_excess_glyph": 0.0924,
+   "recur_le_1": 0.0006,
+   "recur_le_5": 0.0272,
+   "recur_le_20": 0.1212,
+   "recur_le_100": 0.3637
+  },
+  "x_edge_mi_word": 0.08708699810893586,
+  "x_hapax_10k": 0.547711781888997,
+  "x_moran_I": -0.10470649042696596,
+  "x_position_entropy": 1.943928987725214,
+  "x_ltr_minus_rtl": 0.00968350185669505,
+  "info_mi_adjacent": 0.5240120474774181,
+  "info_mi_page": 0.000291849531689925,
+  "info_samecol_minus_othercol": 0.024012874310072707,
+  "info_bpe_adjacent": 1.0124365614013398,
+  "lex_beta": 0.6919835374600447,
+  "lex_rate_late_early": 0.2561327561327561,
+  "lex_edit1_excess": 0.029039677975848194,
+  "slot_occupancy_pc": 0.04681069958847737,
+  "slot_table_likeness": 0.6543271214656112,
+  "slot_core_crowding": 0.8379629629629629,
+  "bake_winner": "markov3",
+  "bake_char3_minus_unigram": -0.20984130876192886,
+  "bake_bits": {
+   "markov2": 13.3936169206861,
+   "markov3": 12.26856169959252,
+   "slot": 13.29677491345488,
+   "unigram_gt": 12.47840300835445,
+   "copy0.3+markov3": 12.619888860531407,
+   "copy0.1+markov3": 12.336696276130118,
+   "copy0.05+markov3": 12.285302121949815
+  },
+  "family": "L",
+  "note": ".//data//controls_realline//mhg_nibelungenlied_relined8.meta.json; 78700 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 9,
+    "outs": 1,
+    "na": 0,
+    "out_metrics": [
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "x_ltr_minus_rtl"
+    ]
+   },
+   "C": {
+    "ins": 2,
+    "outs": 6,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k"
+    ]
+   },
+   "G": {
+    "ins": 5,
+    "outs": 5,
+    "na": 0,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ]
+   },
+   "X": {
+    "ins": 7,
+    "outs": 2,
+    "na": 1,
+    "out_metrics": [
+     "jsd_first_fg",
+     "x_edge_mi_word"
+    ],
+    "out_tight": [
+     "x_edge_mi_word"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": ".//s15_ranges.json"
+}

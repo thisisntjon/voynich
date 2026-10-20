@@ -1,0 +1,334 @@
+S82: s50 and P4-D1 cipher families vs the matched-K core-order profile (pre-registered in the docstring)
+date: Sun Oct 18 03:48:30 PDT 2026 (`date`)
+s82_cipher_rescore_matched_k.py sha256=084488da6ba79a429df9925f5810a2b00413cbf8e42a1840cfc16eadc97665d2
+prereg stub s82_cipher_rescore_matched_k.prereg.sha256 sha256=d5fb98b94da181d3903159fa8b329846cc00ca2ed72beaa154a373480a821c3b  stub_match=True
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  local import p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  local import s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  local import s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  local import s50_solver.py sha256=c63e035be6a0e03f7a71c0be6e5b1a3a1bd2033ce8041552bb169319f10df9ad
+  local import s50_solver_ladder.py sha256=1b5c5227cf12db05d7c09d73040fad545e5f318512254128c609dbe4441b965b
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  local import s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  local import s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  local import s82_cipher_rescore_matched_k.py sha256=084488da6ba79a429df9925f5810a2b00413cbf8e42a1840cfc16eadc97665d2
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+compute: torch 2.11.0.dev20260115+cu128; device cuda (NVIDIA GeForce RTX 5080); 4 worker processes, priority BelowNormal (psutil); uniform keys from numpy (s80 stream), argsort + MI on the device; python 3.11.9; numpy 2.4.6
+N_match 6195; shuffles 200; interval 500 x 80 % pages x 20 shuffles (secondary)
+bands vs runs/s80/values.csv: OK
+
+=== MATCH BANDS (MM excess; gating cells K 50/100/200, both methods) ===
+  M-freq  K=25: [+0.0070, +0.0879](rep)  K=50: [+0.0091, +0.1093]  K=100: [-0.0057, +0.1026]  K=200: [-0.0203, +0.1011]  K=400: [-0.0401, +0.0960](rep)
+  M-clust K=25: [+0.0134, +0.0905](rep)  K=50: [+0.0035, +0.1240]  K=100: [-0.0041, +0.1078]  K=200: [-0.0275, +0.0978]  K=400: [-0.0455, +0.0925](rep)
+
+=== running 120 texts (VOY 3, P4D1 36, S50 81) start Sun Oct 18 03:48:32 PDT 2026 (`date`) ===
+  done VOY_ZL3b                           [14s, cuda] device-vs-s80-numpy max |diff| 1.5e-14
+  done VOY_RF1b                           [14s, cuda] device-vs-s80-numpy max |diff| 1.9e-14
+  done VOY_IT2a                           [14s, cuda] device-vs-s80-numpy max |diff| 1.2e-14
+  done K1_latin_caesar_s1                 [14s, cuda]
+  done K1_latin_caesar_s2                 [8s, cuda]
+  done K1_latin_caesar_s3                 [8s, cuda]
+  done K3_latin_caesar_s1                 [9s, cuda]
+  done K3_latin_caesar_s2                 [9s, cuda]
+  done K3_latin_caesar_s3                 [8s, cuda]
+  done K1_latin_augustine_s1              [8s, cuda]
+  done K1_latin_augustine_s2              [8s, cuda]
+  done K1_latin_augustine_s3              [8s, cuda]
+  done K3_latin_augustine_s1              [11s, cuda]
+  done K3_latin_augustine_s2              [14s, cuda]
+  done K3_latin_augustine_s3              [15s, cuda]
+  done K1_italian_dante_s1                [14s, cuda]
+  done K1_italian_dante_s2                [23s, cuda]
+  done K1_italian_dante_s3                [23s, cuda]
+  done K3_italian_dante_s1                [26s, cuda]
+  done K3_italian_dante_s2                [25s, cuda]
+  done K3_italian_dante_s3                [25s, cuda]
+  done K1_german_faust_s1                 [23s, cuda]
+  done K1_german_faust_s2                 [22s, cuda]
+  done K1_german_faust_s3                 [22s, cuda]
+  done K3_german_faust_s1                 [25s, cuda]
+  done K3_german_faust_s2                 [26s, cuda]
+  done K3_german_faust_s3                 [25s, cuda]
+  done K1_german_kafka_s1                 [23s, cuda]
+  done K1_german_kafka_s2                 [21s, cuda]
+  done K1_german_kafka_s3                 [20s, cuda]
+  done K3_german_kafka_s1                 [22s, cuda]
+  done K3_german_kafka_s2                 [21s, cuda]
+  done K3_german_kafka_s3                 [18s, cuda]
+  done K1_english_alice_s1                [17s, cuda]
+  done K1_english_alice_s2                [17s, cuda]
+  done K1_english_alice_s3                [17s, cuda]
+  done K3_english_alice_s1                [19s, cuda]
+  done K3_english_alice_s2                [19s, cuda]
+  done K3_english_alice_s3                [20s, cuda]
+  done L4_K0_b0_a0.7_g0                   [32s, cuda]
+  done L4_K0_b0_a0.7_g0.5                 [29s, cuda]
+  done L4_K0_b0_a0.7_g1                   [25s, cuda]
+  done L4_K0_b0_a1_g0                     [25s, cuda]
+  done L4_K0_b0_a1_g0.5                   [17s, cuda]
+  done L4_K0_b0_a1_g1                     [16s, cuda]
+  done L4_K0_b0_a1.3_g0                   [16s, cuda]
+  done L4_K0_b0_a1.3_g0.5                 [15s, cuda]
+  done L4_K0_b0_a1.3_g1                   [15s, cuda]
+  done L4_K0_b1_a0.7_g0                   [22s, cuda]
+  done L4_K0_b1_a0.7_g0.5                 [20s, cuda]
+  done L4_K0_b1_a0.7_g1                   [19s, cuda]
+  done L4_K0_b1_a1_g0                     [18s, cuda]
+  done L4_K0_b1_a1_g0.5                   [18s, cuda]
+  done L4_K0_b1_a1_g1                     [18s, cuda]
+  done L4_K0_b1_a1.3_g0                   [17s, cuda]
+  done L4_K0_b1_a1.3_g0.5                 [17s, cuda]
+  done L4_K0_b1_a1.3_g1                   [15s, cuda]
+  done L4_K0_b2_a0.7_g0                   [21s, cuda]
+  done L4_K0_b2_a0.7_g0.5                 [20s, cuda]
+  done L4_K0_b2_a0.7_g1                   [19s, cuda]
+  done L4_K0_b2_a1_g0                     [17s, cuda]
+  done L4_K0_b2_a1_g0.5                   [17s, cuda]
+  done L4_K0_b2_a1_g1                     [17s, cuda]
+  done L4_K0_b2_a1.3_g0                   [17s, cuda]
+  done L4_K0_b2_a1.3_g0.5                 [15s, cuda]
+  done L4_K0_b2_a1.3_g1                   [16s, cuda]
+  done L4_K4_b0_a0.7_g0                   [23s, cuda]
+  done L4_K4_b0_a0.7_g0.5                 [21s, cuda]
+  done L4_K4_b0_a0.7_g1                   [22s, cuda]
+  done L4_K4_b0_a1_g0                     [17s, cuda]
+  done L4_K4_b0_a1_g0.5                   [17s, cuda]
+  done L4_K4_b0_a1_g1                     [17s, cuda]
+  done L4_K4_b0_a1.3_g0                   [15s, cuda]
+  done L4_K4_b0_a1.3_g0.5                 [15s, cuda]
+  done L4_K4_b0_a1.3_g1                   [14s, cuda]
+  done L4_K4_b1_a0.7_g0                   [19s, cuda]
+  done L4_K4_b1_a0.7_g0.5                 [18s, cuda]
+  done L4_K4_b1_a0.7_g1                   [19s, cuda]
+  done L4_K4_b1_a1_g0                     [18s, cuda]
+  done L4_K4_b1_a1_g0.5                   [18s, cuda]
+  done L4_K4_b1_a1_g1                     [19s, cuda]
+  done L4_K4_b1_a1.3_g0                   [17s, cuda]
+  done L4_K4_b1_a1.3_g0.5                 [16s, cuda]
+  done L4_K4_b1_a1.3_g1                   [15s, cuda]
+  done L4_K4_b2_a0.7_g0                   [19s, cuda]
+  done L4_K4_b2_a0.7_g0.5                 [19s, cuda]
+  done L4_K4_b2_a0.7_g1                   [20s, cuda]
+  done L4_K4_b2_a1_g0                     [18s, cuda]
+  done L4_K4_b2_a1_g0.5                   [21s, cuda]
+  done L4_K4_b2_a1_g1                     [22s, cuda]
+  done L4_K4_b2_a1.3_g0                   [20s, cuda]
+  done L4_K4_b2_a1.3_g0.5                 [19s, cuda]
+  done L4_K4_b2_a1.3_g1                   [18s, cuda]
+  done L4_K12_b0_a0.7_g0                  [30s, cuda]
+  done L4_K12_b0_a0.7_g0.5                [28s, cuda]
+  done L4_K12_b0_a0.7_g1                  [27s, cuda]
+  done L4_K12_b0_a1_g0                    [22s, cuda]
+  done L4_K12_b0_a1_g0.5                  [22s, cuda]
+  done L4_K12_b0_a1_g1                    [21s, cuda]
+  done L4_K12_b0_a1.3_g0                  [21s, cuda]
+  done L4_K12_b0_a1.3_g0.5                [20s, cuda]
+  done L4_K12_b0_a1.3_g1                  [20s, cuda]
+  done L4_K12_b1_a0.7_g0                  [30s, cuda]
+  done L4_K12_b1_a0.7_g0.5                [30s, cuda]
+  done L4_K12_b1_a0.7_g1                  [29s, cuda]
+  done L4_K12_b1_a1_g0                    [25s, cuda]
+  done L4_K12_b1_a1_g0.5                  [22s, cuda]
+  done L4_K12_b1_a1_g1                    [22s, cuda]
+  done L4_K12_b1_a1.3_g0                  [20s, cuda]
+  done L4_K12_b1_a1.3_g0.5                [19s, cuda]
+  done L4_K12_b1_a1.3_g1                  [19s, cuda]
+  done L4_K12_b2_a0.7_g0                  [26s, cuda]
+  done L4_K12_b2_a0.7_g0.5                [26s, cuda]
+  done L4_K12_b2_a0.7_g1                  [27s, cuda]
+  done L4_K12_b2_a1_g0                    [26s, cuda]
+  done L4_K12_b2_a1_g0.5                  [25s, cuda]
+  done L4_K12_b2_a1_g1                    [24s, cuda]
+  done L4_K12_b2_a1.3_g0                  [24s, cuda]
+  done L4_K12_b2_a1.3_g0.5                [23s, cuda]
+  done L4_K12_b2_a1.3_g1                  [20s, cuda]
+  measured in 600s
+  devices used: Counter({'cuda': 120}); GPU fallbacks: 0 
+
+=== reproduction checks (not gating) ===
+  VOY_ZL3b MM points vs s80 values.csv: max |diff| 4.55e-07 -> MATCH
+  VOY_RF1b MM points vs s80 values.csv: max |diff| 3.61e-07 -> MATCH
+  VOY_IT2a MM points vs s80 values.csv: max |diff| 4.43e-07 -> MATCH
+  P4D1 seed-1 ciphers MM vs s80 CIPHER rows: max |diff| 4.99e-07 over 12 -> MATCH
+  S50 grid types/h2/Moran vs results_s50.txt calibration lines: 81/81 match
+  VOY_ZL3b f4 +0.0999 vs s69 M1 +0.0999
+  VOY_RF1b f4 +0.0951 vs s69 M1 +0.0951
+  VOY_IT2a f4 +0.0961 vs s69 M1 +0.0961
+
+=== Voynich (MM excess [s80-style 95 % interval, secondary] p_up; plug-in beside) ===
+  VOY_ZL3b: matched tokens 6195 pages 30 pairs 5442 core types 706
+    M-freq  K25:+0.0460[+0.031,+0.056]p0.005 K50:+0.0577[+0.039,+0.070]p0.005 K100:+0.0452[+0.027,+0.060]p0.005 K200:+0.0352[+0.014,+0.053]p0.010 K400:+0.0213[-0.001,+0.041]p0.060
+    M-clust K25:+0.0522[+0.038,+0.062]p0.005 K50:+0.0561[+0.037,+0.072]p0.005 K100:+0.0517[+0.031,+0.069]p0.005 K200:+0.0291[+0.008,+0.046]p0.015 K400:+0.0197[-0.003,+0.039]p0.065
+    h2 2.109  A5 Moran +0.1572  CHARWIN +0.0940  f4 +0.0999  (tokens 34857, types 7025)
+  VOY_RF1b: matched tokens 6195 pages 30 pairs 5445 core types 689
+    M-freq  K25:+0.0410[+0.030,+0.051]p0.005 K50:+0.0558[+0.041,+0.069]p0.005 K100:+0.0496[+0.032,+0.062]p0.005 K200:+0.0435[+0.025,+0.055]p0.005 K400:+0.0298[+0.007,+0.044]p0.010
+    M-clust K25:+0.0483[+0.037,+0.059]p0.005 K50:+0.0701[+0.052,+0.081]p0.005 K100:+0.0535[+0.032,+0.068]p0.005 K200:+0.0320[+0.010,+0.044]p0.005 K400:+0.0177[-0.006,+0.032]p0.070
+    h2 2.120  A5 Moran +0.1549  CHARWIN +0.1099  f4 +0.0951  (tokens 34618, types 7348)
+  VOY_IT2a: matched tokens 6195 pages 30 pairs 5433 core types 697
+    M-freq  K25:+0.0536[+0.041,+0.065]p0.005 K50:+0.0688[+0.050,+0.080]p0.005 K100:+0.0583[+0.036,+0.070]p0.005 K200:+0.0522[+0.033,+0.067]p0.005 K400:+0.0397[+0.017,+0.057]p0.005
+    M-clust K25:+0.0548[+0.043,+0.067]p0.005 K50:+0.0738[+0.054,+0.091]p0.005 K100:+0.0605[+0.042,+0.073]p0.005 K200:+0.0491[+0.030,+0.063]p0.005 K400:+0.0379[+0.015,+0.053]p0.005
+    h2 2.112  A5 Moran +0.1566  CHARWIN +0.0977  f4 +0.0961  (tokens 34411, types 7069)
+  Voynich order decision (p_up < 0.05 on >= 2 of 3): freq25 ORDERED; freq50 ORDERED; freq100 ORDERED; freq200 ORDERED; freq400 ORDERED; clust25 ORDERED; clust50 ORDERED; clust100 ORDERED; clust200 ORDERED; clust400 not ordered
+  self-check VOY_ZL3b against the targets: curve=Y h2=Y A5=Y CHARWIN=Y f4=Y
+  self-check VOY_RF1b against the targets: curve=Y h2=Y A5=Y CHARWIN=Y f4=Y
+  self-check VOY_IT2a against the targets: curve=Y h2=Y A5=Y CHARWIN=Y f4=Y
+
+=== family P4D1: 36 instances ===
+  text                           M-freq MM K25..400                     M-clust MM K25..400                    pmax  curve  h2     A5      CHARWIN  f4      hits
+  K1_latin_caesar_s1             +0.065 +0.081 +0.076 +0.072 +0.072     +0.069 +0.079 +0.086 +0.076 +0.075     0.005 MATCH  2.588* -0.0087* +0.1079 -0.0273*  2/5
+  K1_latin_caesar_s2             +0.052 +0.069 +0.071 +0.067 +0.066     +0.054 +0.082 +0.075 +0.070 +0.070     0.005 MATCH  2.580* -0.0126* +0.0893 -0.0308*  2/5
+  K1_latin_caesar_s3             +0.059 +0.070 +0.080 +0.075 +0.075     +0.068 +0.088 +0.077 +0.073 +0.068     0.005 MATCH  2.579* -0.0157* +0.0939 -0.0322*  2/5
+  K3_latin_caesar_s1             +0.045 +0.056 +0.060 +0.067 +0.085     +0.038 +0.047 +0.069 +0.086 +0.083     0.005 MATCH  2.662* -0.0091* +0.1060 -0.0305*  2/5
+  K3_latin_caesar_s2             +0.045 +0.070 +0.083 +0.092 +0.089     +0.040 +0.059 +0.089 +0.087 +0.083     0.005 MATCH  2.654* -0.0113* +0.1025 -0.0228*  2/5
+  K3_latin_caesar_s3             +0.034 +0.041 +0.049 +0.057 +0.055     +0.028 +0.065 +0.071 +0.062 +0.059     0.005 MATCH  2.654* -0.0213* +0.1285 -0.0270*  2/5
+  K1_latin_augustine_s1          +0.066 +0.068 +0.065 +0.069 +0.059     +0.069 +0.080 +0.071 +0.059 +0.055     0.005 MATCH  2.591* -0.0331* +0.0820 -0.0260*  2/5
+  K1_latin_augustine_s2          +0.071 +0.068 +0.068 +0.064 +0.058     +0.067 +0.066 +0.069 +0.065 +0.065     0.005 MATCH  2.582* -0.0466* +0.0975 -0.0305*  2/5
+  K1_latin_augustine_s3          +0.056 +0.063 +0.050 +0.049 +0.049     +0.056 +0.079 +0.065 +0.045 +0.050     0.005 MATCH  2.578* -0.0341* +0.1023 -0.0327*  2/5
+  K3_latin_augustine_s1          +0.026 +0.044 +0.048 +0.048 +0.063     +0.024 +0.043 +0.080 +0.057 +0.053     0.005 MATCH  2.662* -0.0148* +0.1101 -0.0272*  2/5
+  K3_latin_augustine_s2          +0.049 +0.057 +0.060 +0.054 +0.063     +0.042 +0.069 +0.065 +0.065 +0.069     0.005 MATCH  2.657* -0.0163* +0.1200 -0.0197*  2/5
+  K3_latin_augustine_s3          +0.043 +0.047 +0.063 +0.056 +0.045     +0.035 +0.072 +0.069 +0.068 +0.062     0.005 MATCH  2.657* -0.0200* +0.1314 -0.0274*  2/5
+  K1_italian_dante_s1            +0.072 +0.099 +0.089 +0.092 +0.081     +0.088 +0.102 +0.102 +0.090 +0.083     0.005 MATCH  2.592* -0.0349* +0.0906 -0.0325*  2/5
+  K1_italian_dante_s2            +0.067 +0.074 +0.074 +0.072 +0.062     +0.066 +0.074 +0.067 +0.070 +0.067     0.005 MATCH  2.581* -0.0376* +0.0836 -0.0302*  2/5
+  K1_italian_dante_s3            +0.068 +0.090 +0.090 +0.082 +0.074     +0.077 +0.087 +0.091 +0.074 +0.070     0.005 MATCH  2.581* -0.0333* +0.0980 -0.0326*  2/5
+  K3_italian_dante_s1            +0.040 +0.051 +0.063 +0.054 +0.045     +0.047 +0.060 +0.064 +0.067 +0.067     0.005 MATCH  2.660* -0.0190* +0.1258 -0.0317*  2/5
+  K3_italian_dante_s2            +0.039 +0.044 +0.060 +0.069 +0.052     +0.026 +0.058 +0.056 +0.059 +0.048     0.005 MATCH  2.660* -0.0212* +0.1213 -0.0200*  2/5
+  K3_italian_dante_s3            +0.031 +0.047 +0.055 +0.058 +0.070     +0.031 +0.062 +0.057 +0.072 +0.067     0.005 MATCH  2.658* -0.0301* +0.1109 -0.0247*  2/5
+  K1_german_faust_s1             +0.124 +0.138 +0.141 +0.145 +0.138     +0.133 +0.136 +0.141 +0.136 +0.134     0.005 -      2.584* +0.0192* +0.1003 -0.0272*  1/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  K1_german_faust_s2             +0.131 +0.151 +0.158 +0.159 +0.162     +0.136 +0.166 +0.170 +0.166 +0.159     0.005 -      2.578* +0.0135* +0.1128 -0.0264*  1/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  K1_german_faust_s3             +0.112 +0.127 +0.134 +0.135 +0.138     +0.129 +0.148 +0.139 +0.135 +0.141     0.005 -      2.578* +0.0205* +0.0961 -0.0272*  1/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  K3_german_faust_s1             +0.089 +0.115 +0.131 +0.131 +0.135     +0.085 +0.123 +0.149 +0.145 +0.135     0.005 -      2.652* -0.0051* +0.1231 -0.0337*  1/5  [freq50:band, freq100:band, freq200:band, clust100:band, clust200:band]
+  K3_german_faust_s2             +0.075 +0.102 +0.112 +0.130 +0.131     +0.073 +0.111 +0.119 +0.131 +0.121     0.005 -      2.654* -0.0246* +0.1246 -0.0239*  1/5  [freq100:band, freq200:band, clust100:band, clust200:band]
+  K3_german_faust_s3             +0.089 +0.115 +0.119 +0.126 +0.134     +0.097 +0.124 +0.147 +0.142 +0.131     0.005 -      2.646* -0.0095* +0.1274 -0.0260*  1/5  [freq50:band, freq100:band, freq200:band, clust100:band, clust200:band]
+  K1_german_kafka_s1             +0.071 +0.089 +0.096 +0.091 +0.095     +0.090 +0.105 +0.090 +0.088 +0.086     0.005 MATCH  2.585* -0.0068* +0.0933 -0.0291*  2/5
+  K1_german_kafka_s2             +0.063 +0.085 +0.095 +0.096 +0.090     +0.091 +0.100 +0.098 +0.091 +0.089     0.005 MATCH  2.581* -0.0096* +0.0780 -0.0252*  2/5
+  K1_german_kafka_s3             +0.093 +0.120 +0.125 +0.129 +0.128     +0.095 +0.119 +0.123 +0.129 +0.123     0.005 -      2.576* -0.0055* +0.1106 -0.0324*  1/5  [freq50:band, freq100:band, freq200:band, clust100:band, clust200:band]
+  K3_german_kafka_s1             +0.050 +0.067 +0.073 +0.071 +0.082     +0.049 +0.082 +0.085 +0.085 +0.072     0.005 MATCH  2.652* -0.0136* +0.1256 -0.0298*  2/5
+  K3_german_kafka_s2             +0.066 +0.104 +0.108 +0.118 +0.118     +0.073 +0.119 +0.117 +0.111 +0.110     0.005 -      2.649* -0.0182* +0.1113 -0.0233*  1/5  [freq100:band, freq200:band, clust100:band, clust200:band]
+  K3_german_kafka_s3             +0.062 +0.093 +0.103 +0.101 +0.105     +0.066 +0.084 +0.111 +0.099 +0.101     0.005 -      2.644* -0.0152* +0.1366 -0.0275*  1/5  [freq100:band, clust100:band, clust200:band]
+  K1_english_alice_s1            +0.067 +0.074 +0.064 +0.065 +0.064     +0.077 +0.080 +0.077 +0.072 +0.070     0.005 MATCH  2.590* -0.0420* +0.0787 -0.0243*  2/5
+  K1_english_alice_s2            +0.082 +0.096 +0.102 +0.086 +0.094     +0.091 +0.101 +0.101 +0.099 +0.099     0.005 -      2.581* -0.0498* +0.0783 -0.0309*  1/5  [clust200:band]
+  K1_english_alice_s3            +0.061 +0.077 +0.079 +0.070 +0.064     +0.070 +0.078 +0.068 +0.055 +0.055     0.005 MATCH  2.578* -0.0549* +0.0844 -0.0295*  2/5
+  K3_english_alice_s1            +0.056 +0.069 +0.082 +0.084 +0.088     +0.057 +0.072 +0.085 +0.096 +0.090     0.005 MATCH  2.661* -0.0192* +0.1196 -0.0283*  2/5
+  K3_english_alice_s2            +0.062 +0.076 +0.094 +0.108 +0.102     +0.058 +0.077 +0.103 +0.112 +0.109     0.005 -      2.663* -0.0176* +0.1063 -0.0252*  1/5  [freq200:band, clust200:band]
+  K3_english_alice_s3            +0.053 +0.067 +0.069 +0.081 +0.081     +0.046 +0.069 +0.073 +0.082 +0.086     0.005 MATCH  2.656* -0.0218* +0.1162 -0.0367*  2/5
+  instances hitting each target: {'curve': 25, 'h2': 0, 'A5': 0, 'CHARWIN': 36, 'f4': np.int64(0)}
+  curve-cell misses (band / p-decision) over all instances: {'clust100:band': 9, 'clust200:band': 11, 'clust50:band': 3, 'freq100:band': 9, 'freq200:band': 9, 'freq50:band': 6}
+  C1 (P4D1) curve matches: 25 of 36   (M-freq only, reported: 26)
+  C2 (P4D1) joint five-target matches: 0 of 36   (best instance K3_latin_caesar_s3 hits 2/5)
+  among curve matches, misses per target: {'h2': 25, 'A5': 25, 'CHARWIN': 0, 'f4': 25}
+  READING (P4D1): core order reachable, joint profile not (failing targets among curve matches: h2 (missed by 25/25), A5 (missed by 25/25), f4 (missed by 25/25))
+
+=== family S50: 81 instances ===
+  text                           M-freq MM K25..400                     M-clust MM K25..400                    pmax  curve  h2     A5      CHARWIN  f4      hits
+  L4_K0_b0_a0.7_g0               -0.002 -0.001 -0.004 -0.006 -0.003     -0.006 -0.004 -0.008 +0.002 -0.008     0.741 -      2.761* -0.0092* -0.0663* +0.0017*  0/5  [freq50:band, freq100:p, freq200:p, clust50:band, clust100:band, clust200:p]
+  L4_K0_b0_a0.7_g0.5             +0.014 +0.013 +0.008 +0.018 +0.013     +0.009 -0.004 +0.017 +0.007 -0.005     0.701 -      2.569* -0.0251* -0.0294* +0.0098*  0/5  [freq100:p, clust50:band, clust200:p]
+  L4_K0_b0_a0.7_g1               +0.028 +0.026 +0.025 +0.030 +0.030     +0.025 +0.017 +0.029 +0.018 +0.019     0.035 MATCH  2.287* -0.0371* -0.1261* +0.0213*  1/5
+  L4_K0_b0_a1_g0                 +0.023 +0.015 +0.023 +0.026 +0.013     +0.018 +0.014 +0.012 +0.014 +0.012     0.129 -      2.628* -0.0174* -0.2167* +0.0077*  0/5  [clust50:p, clust100:p, clust200:p]
+  L4_K0_b0_a1_g0.5               +0.035 +0.037 +0.039 +0.043 +0.043     +0.032 +0.042 +0.039 +0.041 +0.041     0.005 MATCH  2.412* -0.0341* -0.2402* +0.0161*  1/5
+  L4_K0_b0_a1_g1                 +0.058 +0.059 +0.053 +0.050 +0.049     +0.058 +0.055 +0.053 +0.051 +0.050     0.005 MATCH  2.196* -0.0328* -0.2810* +0.0229*  1/5
+  L4_K0_b0_a1.3_g0               +0.044 +0.044 +0.040 +0.038 +0.033     +0.042 +0.039 +0.037 +0.036 +0.037     0.005 MATCH  2.536* -0.0330* -0.3421* +0.0127*  1/5
+  L4_K0_b0_a1.3_g0.5             +0.053 +0.052 +0.054 +0.052 +0.048     +0.057 +0.053 +0.050 +0.051 +0.051     0.005 MATCH  2.342* -0.0282* -0.3537* +0.0188*  1/5
+  L4_K0_b0_a1.3_g1               +0.063 +0.065 +0.064 +0.063 +0.064     +0.063 +0.064 +0.066 +0.064 +0.064     0.005 MATCH  2.167* -0.0285* -0.3441* +0.0184*  1/5
+  L4_K0_b1_a0.7_g0               +0.015 +0.016 +0.009 +0.017 +0.024     +0.005 +0.003 +0.015 +0.014 +0.012     0.348 -      2.811* +0.3499* -0.0456* +0.0085*  0/5  [freq100:p, freq200:p, clust50:band, clust100:p, clust200:p]
+  L4_K0_b1_a0.7_g0.5             +0.009 +0.011 +0.016 +0.018 +0.015     +0.016 +0.036 +0.012 +0.007 +0.005     0.279 -      2.581* +0.3166* -0.0571* +0.0131*  0/5  [freq50:p, freq200:p, clust100:p, clust200:p]
+  L4_K0_b1_a0.7_g1               +0.032 +0.036 +0.026 +0.027 +0.021     +0.033 +0.027 +0.025 +0.029 +0.022     0.015 MATCH  2.313* +0.2112* -0.1521* +0.0185*  1/5
+  L4_K0_b1_a1_g0                 +0.026 +0.032 +0.037 +0.043 +0.037     +0.030 +0.023 +0.041 +0.039 +0.038     0.005 MATCH  2.641* +0.3098* -0.2360* +0.0058*  1/5
+  L4_K0_b1_a1_g0.5               +0.023 +0.020 +0.024 +0.029 +0.031     +0.027 +0.026 +0.030 +0.030 +0.028     0.010 MATCH  2.424* +0.2435* -0.2346* +0.0172*  1/5
+  L4_K0_b1_a1_g1                 +0.048 +0.045 +0.045 +0.046 +0.043     +0.048 +0.047 +0.046 +0.045 +0.044     0.005 MATCH  2.218* +0.1418 -0.2709* +0.0238*  2/5
+  L4_K0_b1_a1.3_g0               +0.021 +0.022 +0.027 +0.029 +0.030     +0.027 +0.031 +0.023 +0.031 +0.031     0.015 MATCH  2.530* +0.2349* -0.3622* +0.0116*  1/5
+  L4_K0_b1_a1.3_g0.5             +0.030 +0.020 +0.026 +0.021 +0.018     +0.027 +0.018 +0.020 +0.021 +0.021     0.015 MATCH  2.346* +0.1715* -0.3375* +0.0190*  1/5
+  L4_K0_b1_a1.3_g1               +0.055 +0.052 +0.052 +0.050 +0.051     +0.051 +0.050 +0.053 +0.050 +0.050     0.005 MATCH  2.181* +0.0953* -0.3399* +0.0242*  1/5
+  L4_K0_b2_a0.7_g0               +0.030 +0.022 +0.022 +0.021 +0.011     +0.007 +0.020 +0.022 +0.021 +0.018     0.050 MATCH  2.817* +0.5145* -0.0536* +0.0078*  1/5
+  L4_K0_b2_a0.7_g0.5             +0.025 +0.023 +0.023 +0.024 +0.028     +0.024 +0.039 +0.033 +0.030 +0.031     0.040 MATCH  2.599* +0.5050* -0.0428* +0.0071*  1/5
+  L4_K0_b2_a0.7_g1               +0.048 +0.051 +0.049 +0.047 +0.036     +0.056 +0.051 +0.030 +0.032 +0.032     0.005 MATCH  2.363* +0.4563* -0.1029* +0.0149*  1/5
+  L4_K0_b2_a1_g0                 +0.028 +0.032 +0.037 +0.039 +0.029     +0.027 +0.035 +0.029 +0.029 +0.029     0.010 MATCH  2.645* +0.5129* -0.2097* +0.0084*  1/5
+  L4_K0_b2_a1_g0.5               +0.045 +0.042 +0.053 +0.048 +0.024     +0.049 +0.049 +0.042 +0.038 +0.028     0.005 MATCH  2.443* +0.4849* -0.1978* +0.0175*  1/5
+  L4_K0_b2_a1_g1                 +0.065 +0.065 +0.066 +0.066 +0.062     +0.059 +0.069 +0.063 +0.061 +0.060     0.005 MATCH  2.265* +0.4167* -0.2635* +0.0180*  1/5
+  L4_K0_b2_a1.3_g0               +0.053 +0.059 +0.058 +0.058 +0.056     +0.061 +0.061 +0.050 +0.054 +0.055     0.005 MATCH  2.520* +0.4879* -0.3345* +0.0125*  1/5
+  L4_K0_b2_a1.3_g0.5             +0.034 +0.045 +0.043 +0.034 +0.026     +0.044 +0.048 +0.043 +0.027 +0.029     0.010 MATCH  2.349* +0.4452* -0.2966* +0.0192*  1/5
+  L4_K0_b2_a1.3_g1               +0.061 +0.064 +0.062 +0.061 +0.057     +0.060 +0.060 +0.063 +0.061 +0.061     0.005 MATCH  2.201* +0.3627* -0.3262* +0.0217*  1/5
+  L4_K4_b0_a0.7_g0               -0.128 -0.179 -0.213 -0.214 -0.219     -0.166 -0.229 -0.244 -0.235 -0.234     1.000 -      2.759* -0.0035* -0.0208* +0.0080*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b0_a0.7_g0.5             -0.155 -0.202 -0.230 -0.231 -0.224     -0.158 -0.228 -0.257 -0.253 -0.250     1.000 -      2.714* -0.0051* +0.0125 +0.0080*  1/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b0_a0.7_g1               -0.166 -0.220 -0.242 -0.245 -0.238     -0.166 -0.217 -0.263 -0.261 -0.258     1.000 -      2.692* -0.0080* +0.0166 +0.0093*  1/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b0_a1_g0                 -0.136 -0.173 -0.186 -0.201 -0.212     -0.126 -0.176 -0.187 -0.203 -0.207     1.000 -      2.629* -0.0272* -0.2152* +0.0070*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b0_a1_g0.5               -0.128 -0.171 -0.180 -0.181 -0.182     -0.129 -0.170 -0.191 -0.194 -0.193     1.000 -      2.562* -0.0284* -0.2089* +0.0081*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b0_a1_g1                 -0.118 -0.149 -0.160 -0.159 -0.159     -0.102 -0.145 -0.155 -0.168 -0.165     1.000 -      2.526* -0.0283* -0.2448* +0.0050*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b0_a1.3_g0               -0.092 -0.124 -0.146 -0.148 -0.149     -0.086 -0.122 -0.147 -0.147 -0.147     1.000 -      2.544* -0.0293* -0.3591* +0.0039*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b0_a1.3_g0.5             -0.076 -0.096 -0.107 -0.108 -0.110     -0.084 -0.096 -0.107 -0.108 -0.108     1.000 -      2.466* -0.0263* -0.3630* +0.0116*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b0_a1.3_g1               -0.069 -0.091 -0.100 -0.101 -0.104     -0.073 -0.097 -0.103 -0.102 -0.102     1.000 -      2.429* -0.0220* -0.3572* +0.0108*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b1_a0.7_g0               -0.146 -0.180 -0.198 -0.213 -0.211     -0.144 -0.190 -0.204 -0.210 -0.203     1.000 -      2.808* +0.3299* -0.0480* +0.0152*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b1_a0.7_g0.5             -0.147 -0.181 -0.197 -0.206 -0.207     -0.164 -0.198 -0.212 -0.200 -0.197     1.000 -      2.741* +0.3307* -0.0462* +0.0127*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b1_a0.7_g1               -0.155 -0.191 -0.199 -0.214 -0.209     -0.148 -0.179 -0.218 -0.200 -0.196     1.000 -      2.707* +0.3243* -0.0438* +0.0177*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b1_a1_g0                 -0.144 -0.179 -0.189 -0.189 -0.191     -0.131 -0.171 -0.196 -0.191 -0.189     1.000 -      2.646* +0.2848* -0.2381* +0.0120*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b1_a1_g0.5               -0.132 -0.160 -0.169 -0.173 -0.169     -0.145 -0.152 -0.171 -0.172 -0.173     1.000 -      2.566* +0.2757* -0.2380* +0.0125*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b1_a1_g1                 -0.126 -0.151 -0.161 -0.162 -0.169     -0.133 -0.151 -0.167 -0.173 -0.170     1.000 -      2.531* +0.2689* -0.2335* +0.0157*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b1_a1.3_g0               -0.097 -0.114 -0.124 -0.127 -0.128     -0.090 -0.108 -0.122 -0.128 -0.128     1.000 -      2.541* +0.2123* -0.3621* +0.0105*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b1_a1.3_g0.5             -0.098 -0.110 -0.116 -0.119 -0.123     -0.096 -0.116 -0.119 -0.124 -0.123     1.000 -      2.461* +0.2056* -0.3375* +0.0141*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b1_a1.3_g1               -0.089 -0.109 -0.113 -0.117 -0.121     -0.088 -0.106 -0.118 -0.121 -0.121     1.000 -      2.422* +0.2033* -0.3293* +0.0139*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b2_a0.7_g0               -0.111 -0.137 -0.151 -0.154 -0.141     -0.108 -0.122 -0.143 -0.137 -0.134     1.000 -      2.822* +0.5019* -0.0431* +0.0157*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b2_a0.7_g0.5             -0.117 -0.135 -0.151 -0.147 -0.146     -0.101 -0.152 -0.143 -0.139 -0.129     1.000 -      2.749* +0.5022* -0.0118* +0.0207*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b2_a0.7_g1               -0.113 -0.131 -0.141 -0.143 -0.138     -0.101 -0.119 -0.136 -0.140 -0.130     1.000 -      2.710* +0.4984* -0.0283* +0.0188*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b2_a1_g0                 -0.092 -0.122 -0.125 -0.133 -0.134     -0.094 -0.116 -0.131 -0.131 -0.135     1.000 -      2.649* +0.4932* -0.2368* +0.0090*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b2_a1_g0.5               -0.084 -0.113 -0.126 -0.121 -0.121     -0.089 -0.094 -0.116 -0.122 -0.120     1.000 -      2.570* +0.4870* -0.2158* +0.0158*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b2_a1_g1                 -0.094 -0.101 -0.119 -0.112 -0.114     -0.097 -0.110 -0.111 -0.116 -0.113     1.000 -      2.531* +0.4822* -0.2058* +0.0164*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b2_a1.3_g0               -0.083 -0.101 -0.113 -0.118 -0.119     -0.086 -0.108 -0.113 -0.117 -0.119     1.000 -      2.542* +0.4699* -0.3338* +0.0194*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b2_a1.3_g0.5             -0.086 -0.095 -0.105 -0.102 -0.102     -0.085 -0.100 -0.104 -0.102 -0.102     1.000 -      2.464* +0.4625* -0.3226* +0.0267*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K4_b2_a1.3_g1               -0.082 -0.088 -0.100 -0.098 -0.102     -0.091 -0.109 -0.099 -0.101 -0.101     1.000 -      2.425* +0.4550* -0.3228* +0.0257*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K12_b0_a0.7_g0              -0.005 -0.011 -0.017 -0.023 -0.033     -0.014 -0.007 -0.026 -0.049 -0.056     1.000 -      2.763* -0.0059* -0.0574* +0.0087*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K12_b0_a0.7_g0.5            -0.027 -0.037 -0.042 -0.046 -0.054     -0.021 -0.030 -0.039 -0.073 -0.086     1.000 -      2.648* -0.0191* -0.0121* +0.0108*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K12_b0_a0.7_g1              -0.024 -0.037 -0.042 -0.040 -0.055     -0.021 -0.038 -0.049 -0.060 -0.075     1.000 -      2.552* -0.0156* -0.0536* +0.0146*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K12_b0_a1_g0                +0.000 -0.000 -0.006 -0.018 -0.019     -0.004 -0.010 -0.029 -0.021 -0.026     1.000 -      2.639* -0.0011* -0.2053* +0.0198*  0/5  [freq50:band, freq100:band, freq200:p, clust50:band, clust100:band, clust200:p]
+  L4_K12_b0_a1_g0.5              +0.016 +0.001 +0.003 -0.003 -0.010     +0.016 +0.010 -0.010 -0.004 -0.008     0.851 -      2.468* -0.0163* -0.2302* +0.0183*  0/5  [freq50:band, freq100:p, freq200:p, clust50:p, clust100:band, clust200:p]
+  L4_K12_b0_a1_g1                +0.020 +0.012 +0.008 +0.005 +0.005     +0.015 +0.008 +0.006 +0.003 +0.004     0.383 -      2.328* -0.0202* -0.2673* +0.0218*  0/5  [freq50:p, freq100:p, freq200:p, clust50:p, clust100:p, clust200:p]
+  L4_K12_b0_a1.3_g0              +0.021 +0.014 +0.006 +0.011 +0.006     +0.013 +0.018 +0.010 +0.008 +0.008     0.244 -      2.550* -0.0245* -0.4041* +0.0220*  0/5  [freq100:p, freq200:p, clust100:p, clust200:p]
+  L4_K12_b0_a1.3_g0.5            +0.031 +0.033 +0.038 +0.036 +0.040     +0.029 +0.032 +0.035 +0.036 +0.036     0.005 MATCH  2.384* -0.0257* -0.3564* +0.0267*  1/5
+  L4_K12_b0_a1.3_g1              +0.042 +0.045 +0.041 +0.043 +0.046     +0.045 +0.043 +0.041 +0.043 +0.043     0.005 MATCH  2.237* -0.0282* -0.3700* +0.0349*  1/5
+  L4_K12_b1_a0.7_g0              -0.027 -0.025 -0.045 -0.044 -0.067     -0.025 -0.028 -0.038 -0.052 -0.054     1.000 -      2.826* +0.3176* -0.0768* +0.0080*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K12_b1_a0.7_g0.5            -0.029 -0.031 -0.044 -0.053 -0.062     -0.039 -0.034 -0.041 -0.063 -0.054     1.000 -      2.659* +0.3120* -0.0618* +0.0106*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K12_b1_a0.7_g1              -0.027 -0.038 -0.043 -0.047 -0.051     -0.032 -0.037 -0.048 -0.051 -0.047     1.000 -      2.525* +0.3136* -0.0871* +0.0153*  0/5  [freq50:band, freq100:band, freq200:band, clust50:band, clust100:band, clust200:band]
+  L4_K12_b1_a1_g0                -0.003 -0.015 -0.008 -0.011 -0.023     -0.006 -0.016 -0.017 -0.023 -0.028     0.960 -      2.682* +0.2592* -0.2395* +0.0183*  0/5  [freq50:band, freq100:band, freq200:p, clust50:band, clust100:band, clust200:p]
+  L4_K12_b1_a1_g0.5              -0.004 -0.015 -0.013 -0.017 -0.019     -0.017 -0.017 -0.018 -0.022 -0.018     0.985 -      2.494* +0.2342* -0.2266* +0.0159*  0/5  [freq50:band, freq100:band, freq200:p, clust50:band, clust100:band, clust200:p]
+  L4_K12_b1_a1_g1                +0.006 -0.001 -0.001 +0.000 -0.001     +0.001 +0.002 -0.005 -0.005 -0.003     0.692 -      2.349* +0.2227* -0.2463* +0.0218*  0/5  [freq50:band, freq100:p, freq200:p, clust50:band, clust100:band, clust200:p]
+  L4_K12_b1_a1.3_g0              +0.003 -0.016 -0.019 -0.016 -0.016     -0.010 -0.008 -0.019 -0.017 -0.016     0.970 -      2.602* +0.1702* -0.3804* +0.0094*  0/5  [freq50:band, freq100:band, freq200:p, clust50:band, clust100:band, clust200:p]
+  L4_K12_b1_a1.3_g0.5            +0.020 +0.013 +0.014 +0.013 +0.009     +0.014 +0.004 +0.008 +0.011 +0.010     0.318 -      2.419* +0.1372 -0.3489* +0.0175*  1/5  [freq50:p, freq100:p, freq200:p, clust50:p, clust100:p, clust200:p]
+  L4_K12_b1_a1.3_g1              +0.022 +0.026 +0.026 +0.027 +0.027     +0.027 +0.027 +0.023 +0.028 +0.028     0.005 MATCH  2.271* +0.1274 -0.3686* +0.0205*  2/5
+  L4_K12_b2_a0.7_g0              -0.004 -0.012 -0.017 -0.019 -0.018     -0.026 -0.021 -0.023 -0.021 -0.024     0.985 -      2.852* +0.4990* -0.0738* +0.0155*  0/5  [freq50:band, freq100:band, freq200:p, clust50:band, clust100:band, clust200:p]
+  L4_K12_b2_a0.7_g0.5            -0.009 -0.004 -0.013 -0.014 -0.017     -0.013 -0.004 -0.006 -0.016 -0.017     0.910 -      2.682* +0.4958* -0.0562* +0.0141*  0/5  [freq50:band, freq100:band, freq200:p, clust50:band, clust100:band, clust200:p]
+  L4_K12_b2_a0.7_g1              -0.003 +0.011 -0.004 -0.010 -0.000     -0.016 -0.012 +0.001 +0.005 -0.003     0.900 -      2.547* +0.4958* -0.0920* +0.0184*  0/5  [freq50:p, freq100:p, freq200:p, clust50:band, clust100:p, clust200:p]
+  L4_K12_b2_a1_g0                -0.010 -0.019 -0.026 -0.019 -0.031     -0.014 -0.026 -0.023 -0.033 -0.028     0.995 -      2.719* +0.4732* -0.2304* +0.0073*  0/5  [freq50:band, freq100:band, freq200:p, clust50:band, clust100:band, clust200:band]
+  L4_K12_b2_a1_g0.5              +0.001 -0.001 -0.001 -0.013 -0.006     -0.015 -0.003 -0.009 -0.011 -0.011     0.866 -      2.539* +0.4628* -0.2058* +0.0079*  0/5  [freq50:band, freq100:p, freq200:p, clust50:band, clust100:band, clust200:p]
+  L4_K12_b2_a1_g1                -0.003 -0.001 +0.002 -0.004 -0.010     -0.014 -0.010 -0.010 -0.016 -0.015     0.905 -      2.399* +0.4576* -0.2207* +0.0127*  0/5  [freq50:band, freq100:p, freq200:p, clust50:band, clust100:band, clust200:p]
+  L4_K12_b2_a1.3_g0              +0.002 +0.000 -0.012 -0.007 -0.004     +0.003 +0.014 +0.003 -0.004 -0.006     0.851 -      2.631* +0.4443* -0.3296* +0.0121*  0/5  [freq50:band, freq100:band, freq200:p, clust50:p, clust100:p, clust200:p]
+  L4_K12_b2_a1.3_g0.5            +0.005 +0.011 +0.001 -0.004 +0.000     +0.005 +0.008 +0.002 +0.002 +0.001     0.647 -      2.456* +0.4182* -0.2940* +0.0126*  0/5  [freq50:p, freq100:p, freq200:p, clust50:p, clust100:p, clust200:p]
+  L4_K12_b2_a1.3_g1              +0.009 +0.014 +0.014 +0.007 +0.005     +0.004 +0.004 +0.007 +0.004 +0.006     0.318 -      2.315* +0.4081* -0.2988* +0.0207*  0/5  [freq50:p, freq100:p, freq200:p, clust50:p, clust100:p, clust200:p]
+  instances hitting each target: {'curve': 25, 'h2': 0, 'A5': 3, 'CHARWIN': 2, 'f4': np.int64(0)}
+  curve-cell misses (band / p-decision) over all instances: {'clust100:band': 45, 'clust100:p': 10, 'clust200:band': 34, 'clust200:p': 22, 'clust50:band': 47, 'clust50:p': 7, 'freq100:band': 41, 'freq100:p': 13, 'freq200:band': 33, 'freq200:p': 21, 'freq50:band': 46, 'freq50:p': 6}
+  C1 (S50) curve matches: 25 of 81   (M-freq only, reported: 26)
+  C2 (S50) joint five-target matches: 0 of 81   (best instance L4_K12_b1_a1.3_g1 hits 2/5)
+  among curve matches, misses per target: {'h2': 25, 'A5': 23, 'CHARWIN': 25, 'f4': 25}
+  READING (S50): core order reachable, joint profile not (failing targets among curve matches: h2 (missed by 25/25), A5 (missed by 23/25), CHARWIN (missed by 25/25), f4 (missed by 25/25))
+
+VERDICT: P4D1 (letter-in-core, 36): core order reachable, joint profile not (failing targets among curve matches: h2 (missed by 25/25), A5 (missed by 25/25), f4 (missed by 25/25)) | S50 (verbose-homophonic, 81 grid points): core order reachable, joint profile not (failing targets among curve matches: h2 (missed by 25/25), A5 (missed by 23/25), CHARWIN (missed by 25/25), f4 (missed by 25/25))
+sidecars: runs/s82/values.csv, runs/s82/targets.csv, runs/s82/calls.json
+runtime 600 s; finished Sun Oct 18 03:58:30 PDT 2026 (`date`)

@@ -1,0 +1,34 @@
+# s81_sticky_table_loqo prereg stub, frozen 2026-10-18 03:33:45 PDT (clock read with date) by voynich-08 subagent, before any real-data run.
+# Fixture (--s81-fixture, synthetic line_sticky p=0.75 Latin manuscript, 8 quires): PASS (run 2; run 1 FAIL -> fixed before freeze:
+#   P4/P5 re-centred in fixture only; C2 reference = manuscript full-text s69 pattern instead of same-fold calls).
+#   fixture: line_sticky75|latin C1 6/8 C2 5/8 C3 within; default|latin C1 1/8 C2 0/8. Caveat: C1 also true for line_lock and page_sticky_fit on the fixture (C1 alone has low specificity among sticky variants; C2 separates).
+# CALLS:
+# C1 (primary, s71/s67 rule): a variant PREDICTS held-out quires iff it scores >=5/6 predictions (P1 P2 P3 P4 P5 P7, S67.score_model, N_DRAW 500) on >=8/15 folds on all three transliterations (ZL3b, RF1b, IT2a).
+# C2: a variant reproduces the s69 call pattern iff its per-fold (C1,C2,C3p,C4p,C5) equal the manuscript's full-text s69 pattern on >=8/15 folds per transliteration (all three).
+# C3: a variant's s55 distance to Voynich is within Voynich's own split-to-split 95% range: median d(variant split i, Voynich split j!=i) <= 97.5th pct of Voynich d(split i, split j), 30 splits, each transliteration.
+# READINGS: C1 true for any sticky variant -> 'per-line table cipher predicts the manuscript'; else C2 false for every line-sticky variant (line_sticky75, line_sticky_fit x Latin, Italian) -> 'call-pattern match in s71 does not survive LOQO'; else -> 'matches the slot layer, misses the rest' (name failing predictions; C3 false named among what it misses).
+# Variants: default p=0; line_sticky75 p=.75 line reset; line_sticky_fit; line_lock p=1; page_sticky_fit; page_lock p=1 (page reset); x CREMMA Latin, Dante Italian. p fitted on training quires only (lag-1 prefix gain, inner 80/20).
+# Verify: grep -v "^#" s81_sticky_table_loqo.prereg.sha256 | tr -d '\r' | sha256sum -c -
+0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2 *a1_profile.py
+426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3 *a2_position.py
+5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a *b4_selfcite_sim.py
+0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007 *b5_nmf_topics.py
+f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a *c2_section_generator.py
+30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb *c3_edge_coupling.py
+46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b *c4_naibbe_lines.py
+2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518 *corpora.py
+5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76 *f1_residual_order.py
+440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd *f2_syllable_control.py
+e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca *f3_flow_choice.py
+4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7 *g1_edge_joint.py
+598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299 *m3_bakeoff_reconcile.py
+a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1 *n1_habit_table.py
+56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec *s55_code_vs_generator.py
+4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155 *s57_local_memory_model.py
+6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3 *s64_naibbe_taxonomy.py
+8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354 *s67_constrained_assembly_loqo.py
+785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5 *s69_prefix_stream_memory.py
+418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063 *s81_sticky_table_loqo.py
+4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f *scoreboard/__init__.py
+a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed *scoreboard/metrics_new.py
+0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1 *vparse.py

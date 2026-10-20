@@ -1,0 +1,32 @@
+F2: syllable-spaced natural language vs Voynich (same battery)
+crossMI = c3 (last glyph | next first glyph); edge/residual = F1 held-out excess over own within-line shuffle, top-300 vocab
+
+VOYNICH                    crossMI excess=+0.181  edge-gain excess=+0.270  residual excess=+0.042  h2=2.109  len 4.99±1.79  types=7025  hapax=0.68  tokens=34857
+NAIBBE (c4 skeleton)       crossMI excess=+0.002  edge-gain excess=+0.021  residual excess=+0.036  h2=2.080  len 5.27±1.62  types=4732  hapax=0.49  tokens=20917
+NULL token-shuffled        crossMI excess=-0.001  edge-gain excess=+0.002  residual excess=-0.001  h2=2.109  len 4.99±1.79  types=7025  hapax=0.68  tokens=34857
+
+latin_caesar words         crossMI excess=+0.035  edge-gain excess=+0.353  residual excess=+0.177  h2=3.295  len 6.01±2.91  types=5491  hapax=0.61  tokens=19520
+latin_caesar syllables     crossMI excess=+0.328  edge-gain excess=+1.512  residual excess=+0.389  h2=2.926  len 2.56±0.74  types=1062  hapax=0.24  tokens=33000
+latin_caesar 2-syllable chunks crossMI excess=+0.222  edge-gain excess=+0.943  residual excess=+0.443  h2=3.248  len 4.14±1.41  types=4138  hapax=0.41  tokens=28354
+
+latin_augustine words      crossMI excess=+0.041  edge-gain excess=+0.301  residual excess=+0.131  h2=3.298  len 5.32±2.84  types=9087  hapax=0.68  tokens=33000
+latin_augustine syllables  crossMI excess=+0.309  edge-gain excess=+1.219  residual excess=+0.253  h2=2.949  len 2.48±0.74  types=1258  hapax=0.26  tokens=33000
+latin_augustine 2-syllable chunks crossMI excess=+0.195  edge-gain excess=+0.688  residual excess=+0.286  h2=3.254  len 3.90±1.37  types=5551  hapax=0.47  tokens=33000
+
+italian_dante words        crossMI excess=+0.145  edge-gain excess=+0.595  residual excess=+0.228  h2=3.111  len 3.93±2.24  types=6309  hapax=0.62  tokens=33000
+italian_dante syllables    crossMI excess=+0.355  edge-gain excess=+0.944  residual excess=+0.307  h2=2.771  len 2.37±0.76  types=1236  hapax=0.27  tokens=33000
+italian_dante 2-syllable chunks crossMI excess=+0.189  edge-gain excess=+0.647  residual excess=+0.252  h2=3.068  len 3.41±1.63  types=5006  hapax=0.51  tokens=33000
+
+german_faust words         crossMI excess=+0.052  edge-gain excess=+0.293  residual excess=+0.185  h2=3.160  len 4.77±2.47  types=5907  hapax=0.63  tokens=29412
+german_faust syllables     crossMI excess=+0.236  edge-gain excess=+0.951  residual excess=+0.373  h2=3.019  len 3.20±1.02  types=2614  hapax=0.37  tokens=33000
+german_faust 2-syllable chunks crossMI excess=+0.098  edge-gain excess=+0.482  residual excess=+0.224  h2=3.146  len 4.31±1.65  types=5763  hapax=0.55  tokens=32513
+
+german_kafka words         crossMI excess=+0.045  edge-gain excess=+0.387  residual excess=+0.228  h2=3.144  len 5.14±2.72  types=3571  hapax=0.62  tokens=18269
+german_kafka syllables     crossMI excess=+0.277  edge-gain excess=+1.239  residual excess=+0.538  h2=2.956  len 3.05±0.95  types=1777  hapax=0.34  tokens=30789
+german_kafka 2-syllable chunks crossMI excess=+0.097  edge-gain excess=+0.559  residual excess=+0.334  h2=3.123  len 4.44±1.72  types=3524  hapax=0.54  tokens=21161
+
+english_alice words        crossMI excess=+0.108  edge-gain excess=+0.773  residual excess=+0.377  h2=3.207  len 3.94±1.95  types=2505  hapax=0.43  tokens=26056
+english_alice syllables    crossMI excess=+0.254  edge-gain excess=+1.547  residual excess=+0.404  h2=3.063  len 2.82±1.08  types=1693  hapax=0.30  tokens=33000
+english_alice 2-syllable chunks crossMI excess=+0.152  edge-gain excess=+1.006  residual excess=+0.447  h2=3.193  len 3.66±1.58  types=2541  hapax=0.41  tokens=28081
+
+example: fi nes se qua no rum ab hel ve tiis di vi dit mi lia pas suum xviiii mu rum in al ti tu di nem pe dum

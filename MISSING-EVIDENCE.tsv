@@ -1,0 +1,124 @@
+cited_path	why_not_here	cited_in
+ASTRA-INDEPENDENT-ISOLATION-REVIEW-S133-FINAL-20261019.md	not in the source tree at export	.inventory/registers/DECISIONS.md, .inventory/registers/OPEN.md
+ASTRA-S133-REPLACEMENT-VERIFIER-REPORT-20261019.md	not in the source tree at export	.inventory/registers/DECISIONS.md
+AUDIT.md	not in the source tree at export	workflow/FINDINGS-GRAPH.yaml
+CLAUDE.md	team communication, agent configuration or outside material	workflow/FINDINGS-GRAPH.yaml
+CONVENTIONS.md	blind-study material	.inventory/registers/CLAIMS.md
+DELIVERY.md	team communication, agent configuration or outside material	.inventory/registers/CLAIMS.md, .inventory/registers/LEARNINGS.md
+FETCH/SOURCES.tsv	not in the source tree at export	.inventory/registers/DECISIONS.md
+GEMINI.md	team communication, agent configuration or outside material	workflow/FINDINGS-GRAPH.yaml
+H_RESULTS.md	not in the source tree at export	.inventory/registers/CLAIMS.md, .inventory/registers/DECISIONS.md
+IV-RESCORE-X01-A1.md	not in the source tree at export	.inventory/registers/CLAIMS.md
+LEARNINGS.backup.md	not in the source tree at export	.inventory/registers/DECISIONS.md
+LEEME.txt	not in the source tree at export	.inventory/registers/CLAIMS.md
+RESEARCH_NOTE.md	not in the source tree at export	.inventory/registers/CLAIMS.md
+RESPONSE.csv	blind-study material	.inventory/registers/DECISIONS.md, .inventory/registers/OPEN.md, workflow/FINDINGS-GRAPH.yaml
+TRANSCRIPTION_RESPONSE.csv	not in the source tree at export	.inventory/registers/CLAIMS.md
+VL01186.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/OPEN.md
+ZL3b-n.txt	python tools/fetch_data.py	.inventory/registers/CLAIMS.md
+ZL3b.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+_RESULTS.md	not in the source tree at export	.inventory/registers/CLAIMS.md
+_repeat.json	not in the source tree at export	.inventory/registers/CLAIMS.md
+_statistics.csv	not in the source tree at export	.inventory/registers/LEARNINGS.md
+a1/score.py	not in the source tree at export	.inventory/registers/METHODS.md
+a2/b4/score.py	not in the source tree at export	.inventory/registers/METHODS.md
+a2/score.py	not in the source tree at export	.inventory/registers/CLAIMS.md
+alignment_anchor_verification.json	not in the source tree at export	.inventory/registers/CLAIMS.md
+anchors/greshko_naibbe.md	not in the source tree at export	.inventory/registers/OPEN.md
+anchors/multispectral_marginalia.md	not in the source tree at export	.inventory/registers/OPEN.md
+anchors/period_nomenclators.md	not in the source tree at export	.inventory/registers/LEARNINGS.md, .inventory/registers/OPEN.md
+anchors/zodiac_months.md	not in the source tree at export	.inventory/registers/OPEN.md
+auditE/out/nulls_e_results.json	not in the source tree at export	.inventory/registers/LEARNINGS.md
+audit_c1a.txt	blind-study material	workflow/FINDINGS-GRAPH.yaml
+c1a.tsv	blind-study material	.inventory/registers/CLAIMS.md
+c1b.tsv	blind-study material	.inventory/registers/CLAIMS.md, workflow/FINDINGS-GRAPH.yaml
+c3/score.py	not in the source tree at export	.inventory/registers/METHODS.md
+claim_drafts.md	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+codex_lab/experiments/results_db_s139_global_witness_assignment.txt	file in the companion lab tree that the records do not cite by full path	.inventory/registers/LEARNINGS.md
+codex_lab/preregistrations/db_s136_entry_coherence.md	file in the companion lab tree that the records do not cite by full path	.inventory/registers/LEARNINGS.md
+codex_lab/reviews/s60_s63_evidence_audit_2026-10-18.md	cache or tool folder	.inventory/registers/CLAIMS.md, .inventory/registers/LEARNINGS.md, workflow/FINDINGS-GRAPH.yaml
+completeness_gap.md	not in the source tree at export	.inventory/registers/DECISIONS.md
+core_return_position_20261019.py	not in the source tree at export	.inventory/registers/OPEN.md
+data/ZL3b-n.txt	python tools/fetch_data.py	.inventory/registers/CLAIMS.md, .inventory/registers/METHODS.md
+data/atlas/README.md	third-party or derived data: fetch it or rebuild it	.inventory/registers/LEARNINGS.md
+data/atlas/objects.tsv	third-party or derived data: fetch it or rebuild it	.inventory/registers/LEARNINGS.md
+data/controls_realline/CREMMA_MANIFEST.md	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+data/controls_synthetic/latin_merged.txt	third-party text (transliteration copy)	.inventory/registers/LEARNINGS.md
+data/egerton_ventura_rule/egerton_ventura_identity_rule_v1_heldout_result.txt	blind-study material	.inventory/registers/CLAIMS.md, .inventory/registers/LEARNINGS.md
+data/external/bowern-lindemann-entropy/lindemann_bowern_2021_yale.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+data/external/daybreak-intake-20261019/fontana_known_answer_acquisition_2026-10-19.md	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md, .inventory/registers/LEARNINGS.md
+data/external/daybreak-intake-20261019/fontana_trocr_preflight_RESULT.json	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+data/external/gaskell-bowern-gibberish/gaskell_bowern_2022_gibberish.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+data/external/intake/claim_drafts.md	third-party or derived data: fetch it or rebuild it	.inventory/registers/LEARNINGS.md
+data/external/library/corpus/papers/VL00070.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/OPEN.md
+data/external/library/corpus/papers/VL00103.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/OPEN.md
+data/external/library/corpus/papers/VL00735.txt	third-party or derived data: fetch it or rebuild it	workflow/FINDINGS-GRAPH.yaml
+data/external/library/web/voynich_nu/raw/www.voynich.nu/hist/list/a2011B.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/OPEN.md
+data/external/meaning-visual-programme/README.md	third-party or derived data: fetch it or rebuild it	.inventory/registers/LEARNINGS.md
+data/external/meaning-visual-programme/dimperio-1978-elegant-enigma.pdf.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+data/external/meaning-visual-programme/taiz-taiz-2011-chronica-horticulturae-51-2.pdf.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/OPEN.md
+data/external/page-facts/eyecheck/README.md	third-party or derived data: fetch it or rebuild it	.inventory/registers/LEARNINGS.md
+data/external/page-facts/eyecheck/pairs.tsv	third-party or derived data: fetch it or rebuild it	.inventory/registers/DECISIONS.md, .inventory/registers/LEARNINGS.md
+data/external/papers/montemurro_zanette_2013_plosone.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+data/external/papers/parisel_2026_arxiv_2604.19762.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md, workflow/FINDINGS-GRAPH.yaml
+data/external/papers/rozanova_temerev_2026_arxiv_2608.17096.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md, .inventory/registers/LEARNINGS.md, .inventory/registers/OPEN.md, workflow/FINDINGS-GRAPH.yaml
+data/external/papers/zattera_2022_ceur3313_paper10.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md, workflow/FINDINGS-GRAPH.yaml
+data/external/schwartz-2026-preprint/text.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md, .inventory/registers/LEARNINGS.md
+data/external/ventura_egerton747/egerton747_row_to_ventura_chapter_match_grokbot_20261019.tsv	third-party or derived data: fetch it or rebuild it	.inventory/registers/OPEN.md
+data/external/wave5-beasley-2024/2024_Beasley_Bryce_Thesis.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md, .inventory/registers/LEARNINGS.md
+data/external/wave5-ceur3313/paper11.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+data/external/wave5-ceur3313/paper3.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+data/external/word-coordinates/yale_manifest.json	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+data/facsimile/MANIFEST.tsv	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md, .inventory/registers/DECISIONS.md
+data/facsimile_full/MANIFEST.tsv	third-party or derived data: fetch it or rebuild it	.inventory/registers/OPEN.md
+data/herbals_alchemical/README.md	third-party or derived data: fetch it or rebuild it	.inventory/registers/LEARNINGS.md
+data/msi/README.md	third-party or derived data: fetch it or rebuild it	.inventory/registers/OPEN.md
+data/s127_picture/CODEBOOK_DRAFT.md	third-party or derived data: fetch it or rebuild it	.inventory/registers/DECISIONS.md
+delivery_receipt.md	blind-study material	workflow/FINDINGS-GRAPH.yaml
+egerton_ventura_identity_rule_v1.prereg	blind-study material	.inventory/registers/CLAIMS.md
+explore_r2.txt	not in the source tree at export	.inventory/registers/LEARNINGS.md
+explorediscussion.txt	team communication, agent configuration or outside material	.inventory/registers/LEARNINGS.md
+eyecheck/pairs.tsv	not in the source tree at export	.inventory/registers/DECISIONS.md, workflow/FINDINGS-GRAPH.yaml
+failures.md	not in the source tree at export	.inventory/registers/CLAIMS.md
+failures/computational_recent.md	not in the source tree at export	workflow/FINDINGS-GRAPH.yaml
+failures/hoax_vs_meaning.md	not in the source tree at export	workflow/FINDINGS-GRAPH.yaml
+fontana_ACQUISITION_RECEIPT_V1.json	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+fontana_trocr_preflight_OCR.tsv	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md, .inventory/registers/LEARNINGS.md
+gaps.md	not in the source tree at export	.inventory/registers/LEARNINGS.md, workflow/FINDINGS-GRAPH.yaml
+gaps/text_structure.md	not in the source tree at export	workflow/FINDINGS-GRAPH.yaml
+greshko-entropy-csv.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+held_files.tsv	third-party or derived data: fetch it or rebuild it	.inventory/registers/OPEN.md
+incoming/ten-theories/DELIVERY.md	team communication, agent configuration or outside material	.inventory/registers/DECISIONS.md, .inventory/registers/LEARNINGS.md
+intake_audit_41.tsv	not in the source tree at export	.inventory/registers/LEARNINGS.md
+key.txt	not in the source tree at export	.inventory/registers/DECISIONS.md
+lab/fontana_v1/transcription_gt_0007_manual.txt	file in the companion lab tree that the records do not cite by full path	.inventory/registers/DECISIONS.md
+lindemann_bowern_2021_yale.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+m0_newmetrics.txt	not in the source tree at export	.inventory/registers/CLAIMS.md
+m4_run.log	not in the source tree at export	.inventory/registers/CLAIMS.md
+notes.txt	not in the source tree at export	.inventory/registers/LEARNINGS.md
+nulls_e_results.json	not in the source tree at export	.inventory/registers/LEARNINGS.md
+public-evidence.json	not in the source tree at export	.inventory/registers/DECISIONS.md
+records.json	not in the source tree at export	.inventory/registers/DECISIONS.md
+research/novelty.tsv	not in the source tree at export	.inventory/registers/DECISIONS.md
+research_notes/computational_recent.md	not in the source tree at export	.inventory/registers/CLAIMS.md
+research_notes/hoax_vs_meaning.md	not in the source tree at export	.inventory/registers/CLAIMS.md
+results_db_s140_full_gallery_witness_recovery.txt	not in the source tree at export	.inventory/registers/LEARNINGS.md
+results_s112_pre_amend1_invalid.txt	not in the source tree at export	.inventory/registers/CLAIMS.md
+results_s117_amend1_positive_fixture_noise.txt	not in the source tree at export	.inventory/registers/CLAIMS.md
+results_s85/s86/s88/s92.txt	not in the source tree at export	.inventory/registers/DECISIONS.md
+runs/s133/delivery_receipt.md	blind-study material	.inventory/registers/LEARNINGS.md
+runs/s133/dispatch_manifest.md	blind-study material	.inventory/registers/DECISIONS.md
+runs/s133/results_s133_gate.txt	not in the source tree at export	workflow/FINDINGS-GRAPH.yaml
+s53_p4a1_p4e1_anchors_and_errors.txt	not in the source tree at export	.inventory/registers/LEARNINGS.md
+s54_core_syntax_and_wrapper_invariants.txt	not in the source tree at export	.inventory/registers/LEARNINGS.md
+text.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+tools/atlas_public_evidence.py	contains private details	.inventory/registers/DECISIONS.md
+tools/handover_export.py	contains private details	.inventory/registers/DECISIONS.md
+transcription_ocr_accuracy_0007.json	not in the source tree at export	.inventory/registers/CLAIMS.md
+v1_segmentation_audit.json	not in the source tree at export	.inventory/registers/CLAIMS.md
+v2_ctc/result.json	not in the source tree at export	.inventory/registers/CLAIMS.md
+v2_real_transfer_audit.json	not in the source tree at export	.inventory/registers/CLAIMS.md
+yale_manifest.json	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
+yonichmanuscript/KNOWN_ANSWER_VISUAL_SEMANTIC_CONTROL_CHECKPOINT_2026-10-19.md	not in the source tree at export	.inventory/registers/DECISIONS.md
+yonichmanuscript/codex_lab/acquisition/egerton747_crop_manifest_draft.json	not in the source tree at export	.inventory/registers/OPEN.md
+yonichmanuscript/workflow/research/egerton-v3-replacement-verifier/REPORT.md	not in the source tree at export	.inventory/registers/DECISIONS.md

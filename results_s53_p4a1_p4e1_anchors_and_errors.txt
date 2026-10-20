@@ -1,0 +1,83 @@
+s53_p4a1_p4e1_anchors_and_errors.py sha256=150b694cd921d6db39fbb94e1b509c0a496c8bf95335c1a9d635cb445abba5fe  prereg stub_match=True
+run started: 2026-10-18 00:06:25 (datetime.now)
+================================================================================
+PART 1: P4-A1 CLOSER — Same-Plant Pairs, Duplicate Herbals & Spatial Label Links
+================================================================================
+Herbal candidate pages (>=30 P-tokens): 128 H-pages (144 H+P pages)
+Pre-registered 50/50 split (seed=20261017):
+  Discovery half (n=6): ['f90v1->f89v2', 'f90v2->f102v1', 'f37v->f102r1', 'f48r->f102r2', 'f32v->f99r', 'f96v->f89v2']
+  Held-out half  (n=6): ['f19r->f102v2', 'f3v->f100r', 'f18v->f102r2', 'f47v->f102r1', 'f1v->f102r1', 'f23r->f102r2']
+
+--- 1A. Statistic A: Pharma Label to Cross-Referenced Herbal Page Rank Percentile ---
+  [HELD-OUT] f1v    <- f102r1  (labels= 4, cands=95): comb=0.0000 (ex=0.000, ed1=0.000, core166=0.000) | rank_pct=0.4947
+  [HELD-OUT] f3v    <- f100r   (labels=19, cands=95): comb=2.2235 (ex=0.108, ed1=0.976, core166=0.434) | rank_pct=0.8883
+  [HELD-OUT] f18v   <- f102r2  (labels= 7, cands=95): comb=0.0000 (ex=0.000, ed1=0.000, core166=0.000) | rank_pct=0.4947
+  [HELD-OUT] f19r   <- f102v2  (labels=22, cands=95): comb=3.9630 (ex=0.566, ed1=1.359, core166=0.226) | rank_pct=0.6489
+  [HELD-OUT] f23r   <- f102r2  (labels= 7, cands=95): comb=0.0000 (ex=0.000, ed1=0.000, core166=0.000) | rank_pct=0.4947
+  [DISCOV  ] f32v   <- f99r    (labels=36, cands=95): comb=3.4450 (ex=0.212, ed1=1.802, core166=0.106) | rank_pct=0.2872
+  [DISCOV  ] f37v   <- f102r1  (labels= 4, cands=95): comb=0.0000 (ex=0.000, ed1=0.000, core166=0.000) | rank_pct=0.4947
+  [HELD-OUT] f47v   <- f102r1  (labels= 4, cands=95): comb=0.0000 (ex=0.000, ed1=0.000, core166=0.000) | rank_pct=0.4947
+  [DISCOV  ] f48r   <- f102r2  (labels= 7, cands=32): comb=0.0000 (ex=0.000, ed1=0.000, core166=0.000) | rank_pct=0.5000
+  [DISCOV  ] f90v1  <- f89v2   (labels=16, cands=95): comb=2.7046 (ex=0.204, ed1=0.714, core166=1.021) | rank_pct=0.9149
+  [DISCOV  ] f90v2  <- f102v1  (labels=10, cands=95): comb=0.4244 (ex=0.000, ed1=0.121, core166=0.243) | rank_pct=0.9574
+  [DISCOV  ] f96v   <- f89v2   (labels=16, cands=95): comb=0.1336 (ex=0.000, ed1=0.000, core166=0.134) | rank_pct=0.0106
+  Summary ZL 12 pairs : mean_pct=0.5567 (Discovery=0.5275, Held-Out=0.5860)
+    vs Null 1 (uniform matched page): null=0.4977±0.0833, p_all=0.2382, p_HO=0.2380
+    vs Null 2 (decoy pharma labels) : null=0.4860±0.0781, p_all=0.1924
+    vs Null 3 (generator label pool): null=0.5065±0.0703, p_all=0.2438
+  Summary Stolfi 7 pairs: mean_pct=0.4483 (p_null1=0.6935)
+  VERDICT P4-A1 Statistic A: FAIL (NULL — stop rule fires for text-side pharma-to-herbal label link)
+
+--- 1B. Statistic B: Duplicate-Plant Herbal-to-Herbal Rare-Word & Rare-166p-Core Overlap ---
+  Duplicate pair f39r   <-> f95r2 : rare_word_Jaccard=0.0000, rare_core166_Jaccard=0.0000
+  Duplicate pair f48v   <-> f89v1 : rare_word_Jaccard=0.0000, rare_core166_Jaccard=0.0000
+  Duplicate pair f48v   <-> f89v2 : rare_word_Jaccard=0.0141, rare_core166_Jaccard=0.0000
+  Duplicate pair f90v1  <-> f90v2 : rare_word_Jaccard=0.0185, rare_core166_Jaccard=0.0000
+  Duplicate pair f1v    <-> f37v  : rare_word_Jaccard=0.0000, rare_core166_Jaccard=0.0000
+  Duplicate pair f1v    <-> f47v  : rare_word_Jaccard=0.0000, rare_core166_Jaccard=0.0000
+  Duplicate pair f37v   <-> f47v  : rare_word_Jaccard=0.0000, rare_core166_Jaccard=0.0000
+  Duplicate pair f18v   <-> f23r  : rare_word_Jaccard=0.0217, rare_core166_Jaccard=0.0000
+  Duplicate pair f18v   <-> f48r  : rare_word_Jaccard=0.0000, rare_core166_Jaccard=0.0000
+  Duplicate pair f23r   <-> f48r  : rare_word_Jaccard=0.0000, rare_core166_Jaccard=0.0000
+  Summary Duplicate Herbal Pairs (n=10): rare_word_J=0.00543 vs matched bg 0.00196 (p=0.0704) | rare_core_J=0.00000 vs bg 0.00442 (p=1.0000) -> FAIL (NULL)
+
+--- 1C. Lead 2: Spatial Label-to-Paragraph Distance via Bounding Boxes ---
+  All label-in-paragraph recurrences (n=22): mean_norm_dist=0.4874 vs within-page null=0.4991±0.0458 (p_closer=0.3980)
+  Non-adjacent-line recurrences |dy|>1.5*H_line (n=21): mean_norm_dist=0.5485 vs within-page null=0.5201±0.0471 (p_closer=0.6866) -> FAIL (NULL)
+
+================================================================================
+PART 2: P4-E1 CLOSER — Scribal Copying vs Composition Error Battery (3 Translit)
+================================================================================
+--- 2A. Rank 2: Palaeographic Visual-Confusion Enrichment (Hapax->Freq vs Freq<->Freq) ---
+Corpus                     | P1_hf   P1_ff   R_P1(paleo) | P2_hf   P2_ff   R_P2(ZL) 
+Voynich_ZL3b               |  0.1240  0.2768       0.448 |  0.1329  0.2837     0.469
+Voynich_RF1b               |  0.1321  0.2728       0.484 |  0.1434  0.2755     0.520
+Voynich_IT2a               |  0.1256  0.2722       0.461 |  0.1395  0.2749     0.507
+CREMMA_all (copied Latin)  |  0.0469  0.0668       0.703 |  0.0308  0.0624     0.494
+CREMMA_prose15 (copied)    |  0.0412  0.0500       0.825 |  0.0309  0.1000     0.309
+Timm_Schinner (gen)        |  0.1031  0.3167       0.326 |  0.0841  0.2575     0.327
+Schwartz_Reuse (gen)       |  0.1254  0.2408       0.521 |  0.1268  0.2396     0.529
+c2_best (gen)              |  0.1408  0.2457       0.573 |  0.1463  0.2400     0.609
+markov1 (gen)              |  0.1078  0.2044       0.527 |  0.1157  0.1846     0.627
+gib_realline (human)       |  0.0521  0.0000 52083333.333 |  0.0521  0.0000 52083333.333
+
+--- 2B. Rank 4: Within-Line vs Cross-Line-Turn Dittography Across Transliterations & Controls ---
+Corpus                     | within_obs shuf_med obs/shuf | first% mid%   last%  | turn_obs turn_null p_turn
+Voynich_ZL3b               |        288    287.0    1.003 |   0.34   1.11   0.59 |        6       9.0  0.874
+Voynich_RF1b               |        279    271.5    1.028 |   0.37   1.09   0.52 |        7       8.0  0.677
+Voynich_IT2a               |        292    273.0    1.070 |   0.37   1.14   0.62 |        8       8.0  0.549
+CREMMA_all (copied Latin)  |         81    405.0    0.200 |   0.17   0.18   0.05 |       10       8.0  0.313
+CREMMA_prose15 (copied)    |          5     35.0    0.143 |   0.00   0.11   0.00 |        1       1.0  0.673
+Timm_Schinner (gen)        |        268    368.5    0.727 |   0.95   0.85   0.89 |       45      22.0  0.002
+Schwartz_Reuse (gen)       |        284    220.0    1.291 |   0.73   0.98   0.82 |       29      13.0  0.002
+c2_best (gen)              |        369    383.0    0.963 |   1.10   1.27   0.94 |       44      31.0  0.026
+markov1 (gen)              |        267    251.0    1.064 |   0.94   0.82   1.08 |       40      35.0  0.206
+gib_realline (human)       |         43     64.0    0.672 |   0.32   0.58   0.47 |        6       0.0  0.002
+
+--- 2C. Rank 3: Multi-Hand Orthographic Variants vs 166p-Core Stability Inside Herbal (H) ---
+  ZL3b Herbal (Hand 1 n=95p vs Hand 2 n=20p): |d_ch/(ch+sh)|=0.0222 (p=0.4446) | |d_edy/(edy+aiin)|=0.5371 (p=0.0010) | top30_core166_JSD=0.1275 vs null 0.0099 (p=0.0010) -> BOTH AFFIX AND CORE SHIFT BY HAND/LANGUAGE
+  RF1b Herbal (Hand 1 n=95p vs Hand 2 n=20p): |d_ch/(ch+sh)|=0.0243 (p=0.4016) | |d_edy/(edy+aiin)|=0.5350 (p=0.0010) | top30_core166_JSD=0.1266 vs null 0.0104 (p=0.0010) -> BOTH AFFIX AND CORE SHIFT BY HAND/LANGUAGE
+  IT2a Herbal (Hand 1 n=95p vs Hand 2 n=20p): |d_ch/(ch+sh)|=0.0226 (p=0.4296) | |d_edy/(edy+aiin)|=0.5218 (p=0.0010) | top30_core166_JSD=0.1291 vs null 0.0101 (p=0.0010) -> BOTH AFFIX AND CORE SHIFT BY HAND/LANGUAGE
+PART 2 VERDICT (P4-E1 CLOSED): Voynich shows no misreading enrichment (R_P1=0.61-0.63, R_P2=0.38-0.41, inside generator range 0.36-0.78), no line-turn dittography (6 vs 9 null, p=0.90), within-line repeats at the bag-of-words line shuffle rate (1.01x vs real Latin avoidance 0.15x), and mixed-hand sections shift both affix variants and core distributions together (p=0.001).
+
+run finished: 2026-10-18 00:07:49 (datetime.now) (elapsed 84.0s)

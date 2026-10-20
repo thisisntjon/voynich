@@ -1,0 +1,519 @@
+r11.py mode=real run at (clock): 2026-10-18T14:12:17-07:00
+r11.py sha256: 668037abf5c53d809de8a3d80bc07b7e915034a6d4a9335a2674b1259a2e7867
+r7.py (local import) sha256: 0d5e65db45b3c410bfbcab5b56d45adaab09b09c9af007b3546538a5b9f69b96
+prereg r11.py 668037abf5c53d809de8a3d80bc07b7e915034a6d4a9335a2674b1259a2e7867 ; stub match: YES ; r7.py entry match: YES
+VOYNICH_ZL: 4130 lines, 35075 words, 16 blocks ; S2 MDL affixes ['o', 'qo', 'y', 'cho', 'ch', 'sh', 'che', 'she', 's', 'd', 'l', 'ol', 'q'] ; ['s', 'aiin', 'ar', 'y', 'or', 'ain', 'al', 'ol', 'dy', 'ody', 'o', 'eey', 'edy', 'ey', 'eedy']
+CTRL_POS_PLANTED: 4130 lines, 35075 words, 16 blocks ; S2 MDL affixes ['q', 'sh', 'ch', 's', 'y', 'r', 'd', 'l', 'qo', 'o'] ; ['iin', 'in', 'm', 'l', 'r', 'eey', 'dy', 'y', 's', 'g', 'ey', 'ol', 'or', 'ar']
+CTRL_NEG_CAESAR: 3437 lines, 30880 words, 15 blocks ; S2 MDL affixes ['con', 'in'] ; ['que', 'ur', 'nt', 'tur', 't']
+APICIUS_LATIN_RECIPES: 4330 lines, 31205 words, 15 blocks ; S2 MDL affixes [] ; []
+DIGBY_RECIPES: 2606 lines, 35082 words, 15 blocks ; S2 MDL affixes [] ; []
+ROGET_SYNONYMS: 4685 lines, 35077 words, 15 blocks ; S2 MDL affixes ['in', 're'] ; ['ing', 'ion', 'ed', 'e', 's']
+CULPEPER_HERBAL: 3053 lines, 35076 words, 15 blocks ; S2 MDL affixes [] ; ['ing']
+KALEVALA_VERSE: 11775 lines, 35077 words, 15 blocks ; S2 MDL affixes [] ; ['sta', 'ssa', 'lla', 'n', 't', 'lle', 'ksi', 'han', 'si', 'ta', 'na', 'inen']
+BALLADS_REFRAINS: 3277 lines, 35081 words, 15 blocks ; S2 MDL affixes [] ; ['ing', 'ed', 's']
+CATHOLIC_LITANIES: 3841 lines, 35083 words, 15 blocks ; S2 MDL affixes [] ; ['ing', 'ed', 'ly']
+MEDIEVAL_PRAYERS: 1764 lines, 14527 words, 15 blocks ; S2 MDL affixes [] ; []
+CREMMA_ABBREV_LATIN: 3842 lines, 35078 words, 15 blocks ; S2 MDL affixes ['in', 'di', 'co', 'ꝯ', 'su', 'a', 'si'] ; ['s', 'm', 't', 'ta', '᷑', 'us', 'ꝰ', 'o', 'ũ', 'a', 'e', 'is', 'i', 'ẽ', 'es']
+HEBREW_UNVOWELLED: 2568 lines, 35076 words, 15 blocks ; S2 MDL affixes ['ו', 'ל', 'ה', 'וה', 'ב'] ; ['ו', 'ך']
+DANTE_VERSE: 4850 lines, 35079 words, 15 blocks ; S2 MDL affixes [] ; ['re', 'ti', 'te', 'to', 'ta']
+  VOYNICH_ZL S0: (b) 1, (c) 6, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      A    (b) R 1.369 p 0.0855 False | (c) D +1.518 (Rw' 1.518 / Rx' 0.000) p 0.0155 True 
+      B    (b) R 1.138 p 0.3798 False | (c) D +1.142 (Rw' 1.142 / Rx' 0.000) p 0.1069 False
+      C    (b) R 0.881 p 0.7281 False | (c) D +0.870 (Rw' 0.870 / Rx' 0.000) p 0.1434 False
+      D    (b) R 1.210 p 0.2449 False | (c) D +1.271 (Rw' 1.271 / Rx' 0.000) p 0.0350 True 
+      E    (b) R 0.648 p 0.9750 False | (c) D +0.822 (Rw' 0.822 / Rx' 0.000) p 0.1119 False
+      F    (b) R 1.458 p 0.0450 True  | (c) D +1.208 (Rw' 1.971 / Rx' 0.763) p 0.0825 False
+      G    (b) R 1.508 p 0.0600 False | (c) D +1.412 (Rw' 1.412 / Rx' 0.000) p 0.0320 True 
+      H    (b) R 1.282 p 0.2969 False | (c) D +1.521 (Rw' 1.521 / Rx' 0.000) p 0.0990 False
+      I    (b) R 0.677 p 0.7916 False | (c) D +0.779 (Rw' 0.779 / Rx' 0.000) p 0.5877 False
+      M    (b) R 0.887 p 0.8891 False | (c) D +0.666 (Rw' 1.156 / Rx' 0.490) p 0.0280 True 
+      N    (b) R 0.793 p 0.8491 False | (c) D +1.116 (Rw' 1.116 / Rx' 0.000) p 0.1254 False
+      O    (b) R 0.327 p 0.9995 False | (c) D -0.673 (Rw' 0.468 / Rx' 1.141) p 0.7701 False
+      Q    (b) R 0.846 p 0.7161 False | (c) D +1.068 (Rw' 1.068 / Rx' 0.000) p 0.2839 False
+      S    (b) R 1.154 p 0.3153 False | (c) D +1.714 (Rw' 1.714 / Rx' 0.000) p 0.0230 True 
+      T    (b) R 1.133 p 0.1239 False | (c) D +1.641 (Rw' 1.641 / Rx' 0.000) p 0.0005 True 
+  VOYNICH_ZL S1: (b) 8, (c) 9, (b)&(c) 6 of 15 blocks (threshold 8) -> does not show
+      A    (b) R 1.133 p 0.2059 False | (c) D +1.236 (Rw' 1.574 / Rx' 0.338) p 0.0025 True 
+      B    (b) R 1.117 p 0.2409 False | (c) D +0.086 (Rw' 1.231 / Rx' 1.146) p 0.4268 False
+      C    (b) R 1.282 p 0.0105 True  | (c) D +0.964 (Rw' 1.390 / Rx' 0.425) p 0.0015 True 
+      D    (b) R 1.171 p 0.1594 False | (c) D +0.661 (Rw' 1.558 / Rx' 0.897) p 0.0880 False
+      E    (b) R 1.143 p 0.0575 False | (c) D +0.515 (Rw' 1.337 / Rx' 0.823) p 0.0345 True 
+      F    (b) R 1.224 p 0.0185 True  | (c) D -0.190 (Rw' 1.568 / Rx' 1.759) p 0.7151 False
+      G    (b) R 1.226 p 0.0245 True  | (c) D +0.359 (Rw' 1.218 / Rx' 0.859) p 0.1529 False
+      H    (b) R 1.262 p 0.0095 True  | (c) D +1.337 (Rw' 1.727 / Rx' 0.390) p 0.0005 True 
+      I    (b) R 1.135 p 0.5072 False | (c) D +0.167 (Rw' 1.484 / Rx' 1.317) p 0.5372 False
+      M    (b) R 1.136 p 0.0005 True  | (c) D +0.601 (Rw' 1.272 / Rx' 0.672) p 0.0005 True 
+      N    (b) R 1.202 p 0.0070 True  | (c) D +0.594 (Rw' 1.573 / Rx' 0.979) p 0.0260 True 
+      O    (b) R 0.846 p 0.8911 False | (c) D +0.830 (Rw' 1.090 / Rx' 0.260) p 0.0490 True 
+      Q    (b) R 1.056 p 0.4048 False | (c) D +0.430 (Rw' 1.080 / Rx' 0.650) p 0.1959 False
+      S    (b) R 1.226 p 0.0380 True  | (c) D +1.184 (Rw' 1.649 / Rx' 0.465) p 0.0035 True 
+      T    (b) R 1.205 p 0.0005 True  | (c) D +1.055 (Rw' 1.403 / Rx' 0.348) p 0.0005 True 
+  VOYNICH_ZL S2: (b) 3, (c) 9, (b)&(c) 2 of 15 blocks (threshold 8) -> does not show
+      A    (b) R 1.174 p 0.0850 False | (c) D +0.824 (Rw' 1.430 / Rx' 0.607) p 0.0150 True 
+      B    (b) R 1.077 p 0.3083 False | (c) D +0.246 (Rw' 1.121 / Rx' 0.875) p 0.3093 False
+      C    (b) R 1.066 p 0.2954 False | (c) D +1.096 (Rw' 1.228 / Rx' 0.132) p 0.0010 True 
+      D    (b) R 0.992 p 0.5622 False | (c) D +0.701 (Rw' 1.003 / Rx' 0.303) p 0.0330 True 
+      E    (b) R 0.933 p 0.8031 False | (c) D +0.314 (Rw' 1.034 / Rx' 0.721) p 0.1594 False
+      F    (b) R 1.248 p 0.0035 True  | (c) D +1.038 (Rw' 1.499 / Rx' 0.461) p 0.0005 True 
+      G    (b) R 1.192 p 0.0455 True  | (c) D +0.411 (Rw' 1.170 / Rx' 0.759) p 0.1069 False
+      H    (b) R 1.069 p 0.2504 False | (c) D +1.237 (Rw' 1.413 / Rx' 0.175) p 0.0005 True 
+      I    (b) R 1.162 p 0.3768 False | (c) D +0.472 (Rw' 1.262 / Rx' 0.790) p 0.3853 False
+      M    (b) R 1.016 p 0.3243 False | (c) D +0.602 (Rw' 1.110 / Rx' 0.508) p 0.0005 True 
+      N    (b) R 1.092 p 0.1434 False | (c) D +0.762 (Rw' 1.295 / Rx' 0.533) p 0.0060 True 
+      O    (b) R 0.793 p 0.9610 False | (c) D +0.462 (Rw' 0.946 / Rx' 0.484) p 0.1704 False
+      Q    (b) R 1.062 p 0.3168 False | (c) D +0.997 (Rw' 1.183 / Rx' 0.186) p 0.0055 True 
+      S    (b) R 1.196 p 0.0545 False | (c) D +0.716 (Rw' 1.388 / Rx' 0.672) p 0.0615 False
+      T    (b) R 1.242 p 0.0005 True  | (c) D +1.222 (Rw' 1.449 / Rx' 0.227) p 0.0005 True 
+  CTRL_POS_PLANTED S1: (b) 16, (c) 16, (b)&(c) 16 of 16 blocks (threshold 9) -> SHOWS (b)&(c)
+      A    (b) R 2.612 p 0.0005 True  | (c) D +7.871 (Rw' 8.355 / Rx' 0.484) p 0.0005 True 
+      B    (b) R 2.433 p 0.0005 True  | (c) D +7.203 (Rw' 7.530 / Rx' 0.327) p 0.0005 True 
+      C    (b) R 2.611 p 0.0005 True  | (c) D +8.420 (Rw' 8.944 / Rx' 0.524) p 0.0005 True 
+      D    (b) R 2.762 p 0.0005 True  | (c) D +7.849 (Rw' 8.453 / Rx' 0.604) p 0.0005 True 
+      E    (b) R 2.799 p 0.0005 True  | (c) D +7.457 (Rw' 8.786 / Rx' 1.330) p 0.0005 True 
+      F    (b) R 2.883 p 0.0005 True  | (c) D +6.766 (Rw' 7.856 / Rx' 1.090) p 0.0005 True 
+      G    (b) R 2.645 p 0.0005 True  | (c) D +7.221 (Rw' 7.906 / Rx' 0.684) p 0.0005 True 
+      H    (b) R 3.040 p 0.0005 True  | (c) D +7.747 (Rw' 8.964 / Rx' 1.217) p 0.0005 True 
+      I    (b) R 2.831 p 0.0005 True  | (c) D +8.290 (Rw' 9.243 / Rx' 0.953) p 0.0005 True 
+      J    (b) R 2.539 p 0.0005 True  | (c) D +3.796 (Rw' 6.943 / Rx' 3.147) p 0.0005 True 
+      M    (b) R 3.116 p 0.0005 True  | (c) D +8.908 (Rw' 9.959 / Rx' 1.051) p 0.0005 True 
+      N    (b) R 2.976 p 0.0005 True  | (c) D +7.510 (Rw' 8.069 / Rx' 0.558) p 0.0005 True 
+      O    (b) R 2.910 p 0.0005 True  | (c) D +6.880 (Rw' 7.641 / Rx' 0.761) p 0.0005 True 
+      Q    (b) R 2.606 p 0.0005 True  | (c) D +6.526 (Rw' 7.229 / Rx' 0.703) p 0.0005 True 
+      S    (b) R 3.629 p 0.0005 True  | (c) D +8.691 (Rw' 10.117 / Rx' 1.426) p 0.0005 True 
+      T    (b) R 3.244 p 0.0005 True  | (c) D +7.905 (Rw' 9.572 / Rx' 1.667) p 0.0005 True 
+  CTRL_POS_PLANTED S0: (b) 2, (c) 5, (b)&(c) 2 of 16 blocks (threshold 9) -> does not show
+      A    (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9840 False
+      B    (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9915 False
+      C    (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9930 False
+      D    (b) R 2.826 p 0.3243 False | (c) D +9.821 (Rw' 9.821 / Rx' 0.000) p 0.0985 False
+      E    (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9805 False
+      F    (b) R 3.733 p 0.0685 False | (c) D +27.816 (Rw' 27.816 / Rx' 0.000) p 0.0020 True 
+      G    (b) R nan p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9790 False
+      H    (b) R 4.500 p 0.2324 False | (c) D +8.247 (Rw' 8.247 / Rx' 0.000) p 0.1189 False
+      I    (b) R nan p 1.0000 False | (c) D +nan (Rw' nan / Rx' nan) p 0.0005 False
+      J    (b) R nan p 1.0000 False | (c) D +nan (Rw' nan / Rx' nan) p 0.0005 False
+      M    (b) R 3.378 p 0.0060 True  | (c) D +12.153 (Rw' 12.153 / Rx' 0.000) p 0.0010 True 
+      N    (b) R 6.000 p 0.1589 False | (c) D +7.474 (Rw' 7.474 / Rx' 0.000) p 0.1364 False
+      O    (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.9950 False
+      Q    (b) R 4.500 p 0.2244 False | (c) D +24.405 (Rw' 24.405 / Rx' 0.000) p 0.0350 True 
+      S    (b) R 2.372 p 0.2069 False | (c) D +12.374 (Rw' 12.374 / Rx' 0.000) p 0.0100 True 
+      T    (b) R 3.254 p 0.0005 True  | (c) D +17.354 (Rw' 17.354 / Rx' 0.000) p 0.0005 True 
+  CTRL_POS_PLANTED S2: (b) 16, (c) 16, (b)&(c) 16 of 16 blocks (threshold 9) -> SHOWS (b)&(c)
+      A    (b) R 2.686 p 0.0005 True  | (c) D +6.751 (Rw' 7.503 / Rx' 0.752) p 0.0005 True 
+      B    (b) R 2.381 p 0.0005 True  | (c) D +7.453 (Rw' 7.948 / Rx' 0.496) p 0.0005 True 
+      C    (b) R 2.628 p 0.0005 True  | (c) D +8.335 (Rw' 9.158 / Rx' 0.823) p 0.0005 True 
+      D    (b) R 2.746 p 0.0005 True  | (c) D +7.720 (Rw' 8.183 / Rx' 0.463) p 0.0005 True 
+      E    (b) R 2.836 p 0.0005 True  | (c) D +6.535 (Rw' 8.256 / Rx' 1.720) p 0.0005 True 
+      F    (b) R 2.912 p 0.0005 True  | (c) D +6.033 (Rw' 7.352 / Rx' 1.319) p 0.0005 True 
+      G    (b) R 2.692 p 0.0005 True  | (c) D +7.872 (Rw' 8.264 / Rx' 0.392) p 0.0005 True 
+      H    (b) R 2.827 p 0.0005 True  | (c) D +7.594 (Rw' 8.241 / Rx' 0.647) p 0.0005 True 
+      I    (b) R 2.853 p 0.0005 True  | (c) D +7.287 (Rw' 9.103 / Rx' 1.815) p 0.0005 True 
+      J    (b) R 2.194 p 0.0025 True  | (c) D +6.962 (Rw' 6.962 / Rx' 0.000) p 0.0005 True 
+      M    (b) R 3.134 p 0.0005 True  | (c) D +9.215 (Rw' 10.143 / Rx' 0.928) p 0.0005 True 
+      N    (b) R 2.989 p 0.0005 True  | (c) D +7.623 (Rw' 8.550 / Rx' 0.926) p 0.0005 True 
+      O    (b) R 2.793 p 0.0005 True  | (c) D +6.721 (Rw' 7.380 / Rx' 0.659) p 0.0005 True 
+      Q    (b) R 2.515 p 0.0005 True  | (c) D +6.115 (Rw' 6.661 / Rx' 0.546) p 0.0005 True 
+      S    (b) R 3.617 p 0.0005 True  | (c) D +6.370 (Rw' 8.559 / Rx' 2.188) p 0.0005 True 
+      T    (b) R 3.220 p 0.0005 True  | (c) D +7.800 (Rw' 9.678 / Rx' 1.878) p 0.0005 True 
+  CTRL_NEG_CAESAR S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5352 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5557 False
+      B02  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5667 False
+      B03  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5807 False
+      B04  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5427 False
+      B05  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5447 False
+      B06  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5437 False
+      B07  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5767 False
+      B08  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5757 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5887 False
+      B10  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5622 False
+      B11  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5967 False
+      B12  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5757 False
+      B13  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5657 False
+      B14  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5437 False
+  CTRL_NEG_CAESAR S2: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5307 False
+      B01  (b) R 0.180 p 0.9985 False | (c) D +0.140 (Rw' 0.140 / Rx' 0.000) p 0.5192 False
+      B02  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5582 False
+      B03  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5667 False
+      B04  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5402 False
+      B05  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5407 False
+      B06  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5307 False
+      B07  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5667 False
+      B08  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5577 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5717 False
+      B10  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5572 False
+      B11  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5927 False
+      B12  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5562 False
+      B13  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5587 False
+      B14  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5352 False
+  APICIUS_LATIN_RECIPES S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.122 p 1.0000 False | (c) D -0.639 (Rw' 0.162 / Rx' 0.801) p 0.8401 False
+      B01  (b) R 0.108 p 1.0000 False | (c) D -0.808 (Rw' 0.177 / Rx' 0.985) p 0.9040 False
+      B02  (b) R 0.167 p 1.0000 False | (c) D +0.224 (Rw' 0.224 / Rx' 0.000) p 0.3453 False
+      B03  (b) R 0.042 p 1.0000 False | (c) D +0.053 (Rw' 0.053 / Rx' 0.000) p 0.5222 False
+      B04  (b) R 0.036 p 1.0000 False | (c) D +0.044 (Rw' 0.044 / Rx' 0.000) p 0.5052 False
+      B05  (b) R 0.068 p 1.0000 False | (c) D +0.086 (Rw' 0.086 / Rx' 0.000) p 0.4643 False
+      B06  (b) R 0.074 p 1.0000 False | (c) D +0.086 (Rw' 0.086 / Rx' 0.000) p 0.4838 False
+      B07  (b) R 0.029 p 1.0000 False | (c) D +0.037 (Rw' 0.037 / Rx' 0.000) p 0.4823 False
+      B08  (b) R 0.154 p 1.0000 False | (c) D +0.207 (Rw' 0.207 / Rx' 0.000) p 0.4013 False
+      B09  (b) R 0.119 p 1.0000 False | (c) D +0.168 (Rw' 0.168 / Rx' 0.000) p 0.4373 False
+      B10  (b) R 0.167 p 1.0000 False | (c) D +0.199 (Rw' 0.199 / Rx' 0.000) p 0.3653 False
+      B11  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5437 False
+      B12  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5052 False
+      B13  (b) R 0.698 p 0.8886 False | (c) D +0.352 (Rw' 0.889 / Rx' 0.537) p 0.3703 False
+      B14  (b) R 0.250 p 0.9990 False | (c) D -0.654 (Rw' 0.094 / Rx' 0.748) p 0.9440 False
+  APICIUS_LATIN_RECIPES S2: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.122 p 1.0000 False | (c) D -0.639 (Rw' 0.162 / Rx' 0.801) p 0.8401 False
+      B01  (b) R 0.108 p 1.0000 False | (c) D -0.808 (Rw' 0.177 / Rx' 0.985) p 0.9040 False
+      B02  (b) R 0.167 p 1.0000 False | (c) D +0.224 (Rw' 0.224 / Rx' 0.000) p 0.3453 False
+      B03  (b) R 0.042 p 1.0000 False | (c) D +0.053 (Rw' 0.053 / Rx' 0.000) p 0.5222 False
+      B04  (b) R 0.036 p 1.0000 False | (c) D +0.044 (Rw' 0.044 / Rx' 0.000) p 0.5052 False
+      B05  (b) R 0.068 p 1.0000 False | (c) D +0.086 (Rw' 0.086 / Rx' 0.000) p 0.4643 False
+      B06  (b) R 0.074 p 1.0000 False | (c) D +0.086 (Rw' 0.086 / Rx' 0.000) p 0.4838 False
+      B07  (b) R 0.029 p 1.0000 False | (c) D +0.037 (Rw' 0.037 / Rx' 0.000) p 0.4823 False
+      B08  (b) R 0.154 p 1.0000 False | (c) D +0.207 (Rw' 0.207 / Rx' 0.000) p 0.4013 False
+      B09  (b) R 0.119 p 1.0000 False | (c) D +0.168 (Rw' 0.168 / Rx' 0.000) p 0.4373 False
+      B10  (b) R 0.167 p 1.0000 False | (c) D +0.199 (Rw' 0.199 / Rx' 0.000) p 0.3653 False
+      B11  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5437 False
+      B12  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5052 False
+      B13  (b) R 0.698 p 0.8886 False | (c) D +0.352 (Rw' 0.889 / Rx' 0.537) p 0.3703 False
+      B14  (b) R 0.250 p 0.9990 False | (c) D -0.654 (Rw' 0.094 / Rx' 0.748) p 0.9440 False
+  DIGBY_RECIPES S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.032 p 1.0000 False | (c) D +0.032 (Rw' 0.032 / Rx' 0.000) p 0.5352 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5387 False
+      B02  (b) R 0.078 p 1.0000 False | (c) D +0.069 (Rw' 0.069 / Rx' 0.000) p 0.4863 False
+      B03  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5387 False
+      B04  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5257 False
+      B05  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5272 False
+      B06  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5292 False
+      B07  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5132 False
+      B08  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5112 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5482 False
+      B10  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5402 False
+      B11  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5277 False
+      B12  (b) R 0.064 p 1.0000 False | (c) D +0.061 (Rw' 0.061 / Rx' 0.000) p 0.5002 False
+      B13  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5352 False
+      B14  (b) R 0.039 p 1.0000 False | (c) D +0.031 (Rw' 0.031 / Rx' 0.000) p 0.5002 False
+  DIGBY_RECIPES S2: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.032 p 1.0000 False | (c) D +0.032 (Rw' 0.032 / Rx' 0.000) p 0.5352 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5387 False
+      B02  (b) R 0.078 p 1.0000 False | (c) D +0.069 (Rw' 0.069 / Rx' 0.000) p 0.4863 False
+      B03  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5387 False
+      B04  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5257 False
+      B05  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5272 False
+      B06  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5292 False
+      B07  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5132 False
+      B08  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5112 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5482 False
+      B10  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5402 False
+      B11  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5277 False
+      B12  (b) R 0.064 p 1.0000 False | (c) D +0.061 (Rw' 0.061 / Rx' 0.000) p 0.5002 False
+      B13  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5352 False
+      B14  (b) R 0.039 p 1.0000 False | (c) D +0.031 (Rw' 0.031 / Rx' 0.000) p 0.5002 False
+  ROGET_SYNONYMS S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.035 p 1.0000 False | (c) D -0.486 (Rw' 0.090 / Rx' 0.576) p 0.8016 False
+      B01  (b) R 0.039 p 1.0000 False | (c) D -0.257 (Rw' 0.117 / Rx' 0.374) p 0.6717 False
+      B02  (b) R 0.152 p 1.0000 False | (c) D +0.002 (Rw' 0.383 / Rx' 0.381) p 0.5412 False
+      B03  (b) R 0.124 p 1.0000 False | (c) D +0.014 (Rw' 0.399 / Rx' 0.385) p 0.5232 False
+      B04  (b) R 0.069 p 1.0000 False | (c) D -0.153 (Rw' 0.215 / Rx' 0.367) p 0.6317 False
+      B05  (b) R 0.164 p 1.0000 False | (c) D +0.214 (Rw' 0.651 / Rx' 0.437) p 0.4363 False
+      B06  (b) R 0.276 p 1.0000 False | (c) D +0.971 (Rw' 0.971 / Rx' 0.000) p 0.0645 False
+      B07  (b) R 0.048 p 1.0000 False | (c) D -0.538 (Rw' 0.150 / Rx' 0.688) p 0.8651 False
+      B08  (b) R 0.127 p 1.0000 False | (c) D +0.386 (Rw' 0.386 / Rx' 0.000) p 0.2639 False
+      B09  (b) R 0.171 p 1.0000 False | (c) D +0.256 (Rw' 0.586 / Rx' 0.330) p 0.3598 False
+      B10  (b) R 0.137 p 1.0000 False | (c) D +0.124 (Rw' 0.520 / Rx' 0.396) p 0.4603 False
+      B11  (b) R 0.094 p 1.0000 False | (c) D +0.322 (Rw' 0.322 / Rx' 0.000) p 0.3628 False
+      B12  (b) R 0.097 p 1.0000 False | (c) D +0.286 (Rw' 0.286 / Rx' 0.000) p 0.3538 False
+      B13  (b) R 0.215 p 1.0000 False | (c) D -1.436 (Rw' 0.730 / Rx' 2.166) p 0.9505 False
+      B14  (b) R 0.231 p 1.0000 False | (c) D +0.693 (Rw' 0.693 / Rx' 0.000) p 0.1514 False
+  ROGET_SYNONYMS S2: (b) 0, (c) 2, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.034 p 1.0000 False | (c) D -0.434 (Rw' 0.080 / Rx' 0.514) p 0.7896 False
+      B01  (b) R 0.155 p 1.0000 False | (c) D -0.535 (Rw' 0.465 / Rx' 1.000) p 0.8086 False
+      B02  (b) R 0.224 p 1.0000 False | (c) D +0.207 (Rw' 0.564 / Rx' 0.357) p 0.4203 False
+      B03  (b) R 0.314 p 1.0000 False | (c) D +0.285 (Rw' 0.994 / Rx' 0.709) p 0.3613 False
+      B04  (b) R 0.114 p 1.0000 False | (c) D -0.334 (Rw' 0.352 / Rx' 0.687) p 0.7196 False
+      B05  (b) R 0.221 p 1.0000 False | (c) D -0.370 (Rw' 0.844 / Rx' 1.214) p 0.7461 False
+      B06  (b) R 0.418 p 1.0000 False | (c) D +1.046 (Rw' 1.384 / Rx' 0.338) p 0.0340 True 
+      B07  (b) R 0.057 p 1.0000 False | (c) D -0.489 (Rw' 0.173 / Rx' 0.661) p 0.8446 False
+      B08  (b) R 0.238 p 1.0000 False | (c) D +0.720 (Rw' 0.720 / Rx' 0.000) p 0.1000 False
+      B09  (b) R 0.269 p 1.0000 False | (c) D +0.300 (Rw' 0.885 / Rx' 0.585) p 0.3308 False
+      B10  (b) R 0.198 p 1.0000 False | (c) D +0.359 (Rw' 0.728 / Rx' 0.369) p 0.3063 False
+      B11  (b) R 0.242 p 1.0000 False | (c) D +0.810 (Rw' 0.810 / Rx' 0.000) p 0.1254 False
+      B12  (b) R 0.163 p 1.0000 False | (c) D +0.145 (Rw' 0.480 / Rx' 0.334) p 0.4393 False
+      B13  (b) R 0.314 p 1.0000 False | (c) D -1.461 (Rw' 1.062 / Rx' 2.524) p 0.9580 False
+      B14  (b) R 0.487 p 1.0000 False | (c) D +1.132 (Rw' 1.499 / Rx' 0.367) p 0.0240 True 
+  CULPEPER_HERBAL S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5452 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5577 False
+      B02  (b) R 0.067 p 1.0000 False | (c) D +0.055 (Rw' 0.055 / Rx' 0.000) p 0.5142 False
+      B03  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5412 False
+      B04  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5477 False
+      B05  (b) R 0.000 p 1.0000 False | (c) D -0.307 (Rw' 0.000 / Rx' 0.307) p 0.7256 False
+      B06  (b) R 0.042 p 1.0000 False | (c) D +0.033 (Rw' 0.033 / Rx' 0.000) p 0.5327 False
+      B07  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5242 False
+      B08  (b) R 0.032 p 1.0000 False | (c) D +0.026 (Rw' 0.026 / Rx' 0.000) p 0.4968 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D -0.314 (Rw' 0.000 / Rx' 0.314) p 0.7221 False
+      B10  (b) R 0.030 p 1.0000 False | (c) D +0.031 (Rw' 0.031 / Rx' 0.000) p 0.4943 False
+      B11  (b) R 0.037 p 1.0000 False | (c) D -0.308 (Rw' 0.031 / Rx' 0.339) p 0.7111 False
+      B12  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5272 False
+      B13  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5342 False
+      B14  (b) R 0.039 p 1.0000 False | (c) D +0.033 (Rw' 0.033 / Rx' 0.000) p 0.5382 False
+  CULPEPER_HERBAL S2: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5437 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5577 False
+      B02  (b) R 0.067 p 1.0000 False | (c) D +0.055 (Rw' 0.055 / Rx' 0.000) p 0.5192 False
+      B03  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5432 False
+      B04  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5482 False
+      B05  (b) R 0.000 p 1.0000 False | (c) D -0.306 (Rw' 0.000 / Rx' 0.306) p 0.7271 False
+      B06  (b) R 0.042 p 1.0000 False | (c) D +0.033 (Rw' 0.033 / Rx' 0.000) p 0.5332 False
+      B07  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5252 False
+      B08  (b) R 0.032 p 1.0000 False | (c) D +0.026 (Rw' 0.026 / Rx' 0.000) p 0.4943 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D -0.312 (Rw' 0.000 / Rx' 0.312) p 0.7216 False
+      B10  (b) R 0.030 p 1.0000 False | (c) D +0.031 (Rw' 0.031 / Rx' 0.000) p 0.4933 False
+      B11  (b) R 0.037 p 1.0000 False | (c) D -0.307 (Rw' 0.031 / Rx' 0.338) p 0.7136 False
+      B12  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5252 False
+      B13  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5342 False
+      B14  (b) R 0.038 p 1.0000 False | (c) D +0.033 (Rw' 0.033 / Rx' 0.000) p 0.5382 False
+  KALEVALA_VERSE S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.273 p 0.9950 False | (c) D -0.683 (Rw' 0.233 / Rx' 0.917) p 0.8321 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D -1.101 (Rw' 0.000 / Rx' 1.101) p 0.9475 False
+      B02  (b) R 0.800 p 0.8446 False | (c) D +0.016 (Rw' 0.672 / Rx' 0.657) p 0.5432 False
+      B03  (b) R 0.000 p 1.0000 False | (c) D -1.283 (Rw' 0.000 / Rx' 1.283) p 0.9565 False
+      B04  (b) R 0.000 p 1.0000 False | (c) D -0.878 (Rw' 0.000 / Rx' 0.878) p 0.8936 False
+      B05  (b) R 0.159 p 1.0000 False | (c) D -0.191 (Rw' 0.171 / Rx' 0.362) p 0.6137 False
+      B06  (b) R 0.000 p 1.0000 False | (c) D -0.707 (Rw' 0.000 / Rx' 0.707) p 0.8236 False
+      B07  (b) R 0.256 p 0.9965 False | (c) D -0.868 (Rw' 0.169 / Rx' 1.037) p 0.8791 False
+      B08  (b) R 0.000 p 1.0000 False | (c) D -0.766 (Rw' 0.000 / Rx' 0.766) p 0.8431 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D -0.912 (Rw' 0.000 / Rx' 0.912) p 0.8426 False
+      B10  (b) R 0.484 p 0.9480 False | (c) D -0.179 (Rw' 0.158 / Rx' 0.337) p 0.6187 False
+      B11  (b) R 0.923 p 0.7446 False | (c) D -0.399 (Rw' 0.395 / Rx' 0.794) p 0.6687 False
+      B12  (b) R 0.882 p 0.7656 False | (c) D -2.015 (Rw' 0.610 / Rx' 2.624) p 1.0000 False
+      B13  (b) R 0.000 p 1.0000 False | (c) D -0.418 (Rw' 0.000 / Rx' 0.418) p 0.6727 False
+      B14  (b) R 0.000 p 1.0000 False | (c) D -1.764 (Rw' 0.000 / Rx' 1.764) p 0.9975 False
+  KALEVALA_VERSE S2: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.562 p 0.9700 False | (c) D -0.140 (Rw' 0.440 / Rx' 0.580) p 0.6197 False
+      B01  (b) R 0.891 p 0.7606 False | (c) D -0.267 (Rw' 0.643 / Rx' 0.910) p 0.6922 False
+      B02  (b) R 0.957 p 0.6452 False | (c) D +0.299 (Rw' 0.869 / Rx' 0.570) p 0.3263 False
+      B03  (b) R 0.566 p 0.9600 False | (c) D -0.654 (Rw' 0.373 / Rx' 1.027) p 0.8491 False
+      B04  (b) R 0.339 p 0.9950 False | (c) D -0.759 (Rw' 0.229 / Rx' 0.989) p 0.8821 False
+      B05  (b) R 0.294 p 0.9970 False | (c) D -0.016 (Rw' 0.279 / Rx' 0.295) p 0.5127 False
+      B06  (b) R 0.156 p 1.0000 False | (c) D -0.691 (Rw' 0.135 / Rx' 0.826) p 0.8441 False
+      B07  (b) R 0.256 p 0.9965 False | (c) D -0.716 (Rw' 0.140 / Rx' 0.856) p 0.8516 False
+      B08  (b) R 0.333 p 0.9760 False | (c) D -0.450 (Rw' 0.140 / Rx' 0.590) p 0.7486 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D -0.749 (Rw' 0.000 / Rx' 0.749) p 0.8251 False
+      B10  (b) R 1.145 p 0.4603 False | (c) D +0.385 (Rw' 0.673 / Rx' 0.289) p 0.2749 False
+      B11  (b) R 1.143 p 0.5077 False | (c) D -0.001 (Rw' 0.593 / Rx' 0.594) p 0.4798 False
+      B12  (b) R 0.872 p 0.8041 False | (c) D -1.325 (Rw' 0.830 / Rx' 2.155) p 0.9920 False
+      B13  (b) R 0.714 p 0.8426 False | (c) D -0.171 (Rw' 0.169 / Rx' 0.340) p 0.5802 False
+      B14  (b) R 0.444 p 0.9840 False | (c) D -1.338 (Rw' 0.268 / Rx' 1.605) p 0.9845 False
+  BALLADS_REFRAINS S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.312 p 1.0000 False | (c) D -0.059 (Rw' 0.310 / Rx' 0.368) p 0.5727 False
+      B01  (b) R 0.194 p 1.0000 False | (c) D +0.141 (Rw' 0.141 / Rx' 0.000) p 0.4183 False
+      B02  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5292 False
+      B03  (b) R 0.059 p 1.0000 False | (c) D -0.264 (Rw' 0.060 / Rx' 0.324) p 0.6737 False
+      B04  (b) R 0.347 p 1.0000 False | (c) D +0.246 (Rw' 0.246 / Rx' 0.000) p 0.3883 False
+      B05  (b) R 0.131 p 1.0000 False | (c) D +0.131 (Rw' 0.131 / Rx' 0.000) p 0.4353 False
+      B06  (b) R 0.182 p 1.0000 False | (c) D -0.234 (Rw' 0.122 / Rx' 0.355) p 0.6837 False
+      B07  (b) R 0.040 p 1.0000 False | (c) D +0.038 (Rw' 0.038 / Rx' 0.000) p 0.5297 False
+      B08  (b) R 0.048 p 1.0000 False | (c) D +0.040 (Rw' 0.040 / Rx' 0.000) p 0.5222 False
+      B09  (b) R 0.033 p 1.0000 False | (c) D +0.033 (Rw' 0.033 / Rx' 0.000) p 0.5167 False
+      B10  (b) R 0.236 p 1.0000 False | (c) D +0.241 (Rw' 0.241 / Rx' 0.000) p 0.4108 False
+      B11  (b) R 0.142 p 1.0000 False | (c) D +0.178 (Rw' 0.178 / Rx' 0.000) p 0.4583 False
+      B12  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5412 False
+      B13  (b) R 0.060 p 1.0000 False | (c) D +0.050 (Rw' 0.050 / Rx' 0.000) p 0.5182 False
+      B14  (b) R 0.067 p 1.0000 False | (c) D -0.276 (Rw' 0.064 / Rx' 0.340) p 0.7176 False
+  BALLADS_REFRAINS S2: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.305 p 1.0000 False | (c) D -0.389 (Rw' 0.282 / Rx' 0.670) p 0.7471 False
+      B01  (b) R 0.187 p 1.0000 False | (c) D +0.134 (Rw' 0.134 / Rx' 0.000) p 0.4128 False
+      B02  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5357 False
+      B03  (b) R 0.058 p 1.0000 False | (c) D -0.568 (Rw' 0.058 / Rx' 0.627) p 0.8316 False
+      B04  (b) R 0.347 p 1.0000 False | (c) D -0.090 (Rw' 0.242 / Rx' 0.332) p 0.5872 False
+      B05  (b) R 0.167 p 1.0000 False | (c) D -0.156 (Rw' 0.164 / Rx' 0.320) p 0.6382 False
+      B06  (b) R 0.178 p 1.0000 False | (c) D -0.218 (Rw' 0.114 / Rx' 0.332) p 0.6712 False
+      B07  (b) R 0.148 p 1.0000 False | (c) D +0.142 (Rw' 0.142 / Rx' 0.000) p 0.4728 False
+      B08  (b) R 0.129 p 1.0000 False | (c) D +0.112 (Rw' 0.112 / Rx' 0.000) p 0.4838 False
+      B09  (b) R 0.032 p 1.0000 False | (c) D +0.031 (Rw' 0.031 / Rx' 0.000) p 0.5297 False
+      B10  (b) R 0.228 p 1.0000 False | (c) D +0.222 (Rw' 0.222 / Rx' 0.000) p 0.4248 False
+      B11  (b) R 0.138 p 1.0000 False | (c) D +0.168 (Rw' 0.168 / Rx' 0.000) p 0.4558 False
+      B12  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5417 False
+      B13  (b) R 0.144 p 1.0000 False | (c) D +0.119 (Rw' 0.119 / Rx' 0.000) p 0.4643 False
+      B14  (b) R 0.097 p 1.0000 False | (c) D -0.232 (Rw' 0.092 / Rx' 0.323) p 0.6972 False
+  CATHOLIC_LITANIES S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.000 p 1.0000 False | (c) D -0.080 (Rw' 0.000 / Rx' 0.080) p 0.6262 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5032 False
+      B02  (b) R 0.000 p 1.0000 False | (c) D -0.264 (Rw' 0.000 / Rx' 0.264) p 0.7266 False
+      B03  (b) R 0.071 p 1.0000 False | (c) D +0.068 (Rw' 0.068 / Rx' 0.000) p 0.5117 False
+      B04  (b) R 0.049 p 1.0000 False | (c) D +0.040 (Rw' 0.040 / Rx' 0.000) p 0.4973 False
+      B05  (b) R 0.065 p 1.0000 False | (c) D +0.040 (Rw' 0.040 / Rx' 0.000) p 0.5152 False
+      B06  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5547 False
+      B07  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5352 False
+      B08  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5332 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D -0.351 (Rw' 0.000 / Rx' 0.351) p 0.7321 False
+      B10  (b) R 0.087 p 1.0000 False | (c) D -0.304 (Rw' 0.075 / Rx' 0.379) p 0.7096 False
+      B11  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5502 False
+      B12  (b) R 0.213 p 1.0000 False | (c) D +0.050 (Rw' 0.050 / Rx' 0.000) p 0.4188 False
+      B13  (b) R 0.062 p 1.0000 False | (c) D +0.031 (Rw' 0.031 / Rx' 0.000) p 0.4838 False
+      B14  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5227 False
+  CATHOLIC_LITANIES S2: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.000 p 1.0000 False | (c) D -0.080 (Rw' 0.000 / Rx' 0.080) p 0.6262 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5042 False
+      B02  (b) R 0.000 p 1.0000 False | (c) D -0.263 (Rw' 0.000 / Rx' 0.263) p 0.7226 False
+      B03  (b) R 0.070 p 1.0000 False | (c) D +0.068 (Rw' 0.068 / Rx' 0.000) p 0.5092 False
+      B04  (b) R 0.098 p 1.0000 False | (c) D +0.080 (Rw' 0.080 / Rx' 0.000) p 0.4673 False
+      B05  (b) R 0.064 p 1.0000 False | (c) D +0.040 (Rw' 0.040 / Rx' 0.000) p 0.5162 False
+      B06  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5547 False
+      B07  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5342 False
+      B08  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5352 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D -0.349 (Rw' 0.000 / Rx' 0.349) p 0.7316 False
+      B10  (b) R 0.085 p 1.0000 False | (c) D -0.302 (Rw' 0.074 / Rx' 0.376) p 0.7096 False
+      B11  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5357 False
+      B12  (b) R 0.213 p 1.0000 False | (c) D +0.050 (Rw' 0.050 / Rx' 0.000) p 0.4188 False
+      B13  (b) R 0.062 p 1.0000 False | (c) D +0.031 (Rw' 0.031 / Rx' 0.000) p 0.4848 False
+      B14  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5237 False
+  MEDIEVAL_PRAYERS S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5652 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5617 False
+      B02  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5232 False
+      B03  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5682 False
+      B04  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5337 False
+      B05  (b) R 0.129 p 1.0000 False | (c) D +0.190 (Rw' 0.190 / Rx' 0.000) p 0.4578 False
+      B06  (b) R 0.059 p 1.0000 False | (c) D +0.065 (Rw' 0.065 / Rx' 0.000) p 0.5267 False
+      B07  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5527 False
+      B08  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5507 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5702 False
+      B10  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5432 False
+      B11  (b) R 0.000 p 1.0000 False | (c) D -0.734 (Rw' 0.000 / Rx' 0.734) p 0.8041 False
+      B12  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5312 False
+      B13  (b) R nan p 1.0000 False | (c) D -2.195 (Rw' 0.000 / Rx' 2.195) p 0.9650 False
+      B14  (b) R 0.000 p 1.0000 False | (c) D -2.806 (Rw' 0.000 / Rx' 2.806) p 0.9725 False
+  MEDIEVAL_PRAYERS S2: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5652 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5617 False
+      B02  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5232 False
+      B03  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5682 False
+      B04  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5337 False
+      B05  (b) R 0.129 p 1.0000 False | (c) D +0.190 (Rw' 0.190 / Rx' 0.000) p 0.4578 False
+      B06  (b) R 0.059 p 1.0000 False | (c) D +0.065 (Rw' 0.065 / Rx' 0.000) p 0.5267 False
+      B07  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5527 False
+      B08  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5507 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5702 False
+      B10  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5432 False
+      B11  (b) R 0.000 p 1.0000 False | (c) D -0.734 (Rw' 0.000 / Rx' 0.734) p 0.8041 False
+      B12  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5312 False
+      B13  (b) R nan p 1.0000 False | (c) D -2.195 (Rw' 0.000 / Rx' 2.195) p 0.9650 False
+      B14  (b) R 0.000 p 1.0000 False | (c) D -2.806 (Rw' 0.000 / Rx' 2.806) p 0.9725 False
+  CREMMA_ABBREV_LATIN S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.125 p 1.0000 False | (c) D +0.187 (Rw' 0.187 / Rx' 0.000) p 0.5057 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5707 False
+      B02  (b) R 0.208 p 1.0000 False | (c) D +0.208 (Rw' 0.208 / Rx' 0.000) p 0.4718 False
+      B03  (b) R 0.211 p 1.0000 False | (c) D +0.301 (Rw' 0.301 / Rx' 0.000) p 0.3958 False
+      B04  (b) R 0.337 p 1.0000 False | (c) D -0.231 (Rw' 0.655 / Rx' 0.886) p 0.6657 False
+      B05  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5507 False
+      B06  (b) R 0.110 p 1.0000 False | (c) D -0.245 (Rw' 0.130 / Rx' 0.375) p 0.6702 False
+      B07  (b) R 0.613 p 0.9905 False | (c) D +0.777 (Rw' 0.777 / Rx' 0.000) p 0.1774 False
+      B08  (b) R 0.046 p 1.0000 False | (c) D -0.411 (Rw' 0.046 / Rx' 0.457) p 0.7256 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5572 False
+      B10  (b) R 0.110 p 1.0000 False | (c) D +0.105 (Rw' 0.105 / Rx' 0.000) p 0.4803 False
+      B11  (b) R 0.344 p 0.9855 False | (c) D -0.959 (Rw' 0.321 / Rx' 1.280) p 0.8021 False
+      B12  (b) R 0.350 p 0.9695 False | (c) D -2.186 (Rw' 0.629 / Rx' 2.815) p 0.9020 False
+      B13  (b) R 0.549 p 0.8896 False | (c) D +0.594 (Rw' 0.594 / Rx' 0.000) p 0.6177 False
+      B14  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5832 False
+  CREMMA_ABBREV_LATIN S2: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.278 p 1.0000 False | (c) D +0.382 (Rw' 0.382 / Rx' 0.000) p 0.4163 False
+      B01  (b) R 0.309 p 1.0000 False | (c) D +0.400 (Rw' 0.400 / Rx' 0.000) p 0.3168 False
+      B02  (b) R 0.254 p 1.0000 False | (c) D -0.261 (Rw' 0.253 / Rx' 0.515) p 0.6742 False
+      B03  (b) R 0.260 p 1.0000 False | (c) D +0.350 (Rw' 0.350 / Rx' 0.000) p 0.3388 False
+      B04  (b) R 0.438 p 1.0000 False | (c) D -0.453 (Rw' 0.758 / Rx' 1.211) p 0.7436 False
+      B05  (b) R 0.073 p 1.0000 False | (c) D -0.421 (Rw' 0.057 / Rx' 0.478) p 0.7321 False
+      B06  (b) R 0.171 p 1.0000 False | (c) D -0.129 (Rw' 0.199 / Rx' 0.328) p 0.6062 False
+      B07  (b) R 0.757 p 0.9395 False | (c) D +0.425 (Rw' 0.903 / Rx' 0.478) p 0.3083 False
+      B08  (b) R 0.194 p 1.0000 False | (c) D -0.202 (Rw' 0.196 / Rx' 0.398) p 0.6342 False
+      B09  (b) R 0.050 p 1.0000 False | (c) D +0.059 (Rw' 0.059 / Rx' 0.000) p 0.5127 False
+      B10  (b) R 0.180 p 1.0000 False | (c) D +0.168 (Rw' 0.168 / Rx' 0.000) p 0.4253 False
+      B11  (b) R 0.389 p 0.9875 False | (c) D -0.561 (Rw' 0.368 / Rx' 0.928) p 0.7191 False
+      B12  (b) R 0.307 p 0.9880 False | (c) D -1.474 (Rw' 0.422 / Rx' 1.895) p 0.8761 False
+      B13  (b) R 0.436 p 0.9395 False | (c) D +0.307 (Rw' 0.307 / Rx' 0.000) p 0.5407 False
+      B14  (b) R 0.205 p 1.0000 False | (c) D -1.584 (Rw' 0.153 / Rx' 1.737) p 0.9335 False
+  HEBREW_UNVOWELLED S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.308 p 1.0000 False | (c) D +0.316 (Rw' 0.316 / Rx' 0.000) p 0.3943 False
+      B01  (b) R 0.295 p 1.0000 False | (c) D +0.431 (Rw' 0.431 / Rx' 0.000) p 0.3103 False
+      B02  (b) R 0.106 p 1.0000 False | (c) D +0.164 (Rw' 0.164 / Rx' 0.000) p 0.4763 False
+      B03  (b) R 0.083 p 1.0000 False | (c) D +0.131 (Rw' 0.131 / Rx' 0.000) p 0.4773 False
+      B04  (b) R 0.134 p 1.0000 False | (c) D +0.133 (Rw' 0.133 / Rx' 0.000) p 0.4943 False
+      B05  (b) R 0.079 p 1.0000 False | (c) D +0.144 (Rw' 0.144 / Rx' 0.000) p 0.4633 False
+      B06  (b) R 0.128 p 1.0000 False | (c) D +0.189 (Rw' 0.189 / Rx' 0.000) p 0.4543 False
+      B07  (b) R 0.177 p 1.0000 False | (c) D +0.209 (Rw' 0.209 / Rx' 0.000) p 0.4513 False
+      B08  (b) R 0.047 p 1.0000 False | (c) D +0.085 (Rw' 0.085 / Rx' 0.000) p 0.4933 False
+      B09  (b) R 0.094 p 1.0000 False | (c) D -0.685 (Rw' 0.113 / Rx' 0.798) p 0.7846 False
+      B10  (b) R 0.046 p 1.0000 False | (c) D +0.058 (Rw' 0.058 / Rx' 0.000) p 0.5597 False
+      B11  (b) R 0.230 p 1.0000 False | (c) D +0.263 (Rw' 0.263 / Rx' 0.000) p 0.4158 False
+      B12  (b) R 0.041 p 1.0000 False | (c) D +0.068 (Rw' 0.068 / Rx' 0.000) p 0.5582 False
+      B13  (b) R 0.029 p 1.0000 False | (c) D +0.059 (Rw' 0.059 / Rx' 0.000) p 0.5707 False
+      B14  (b) R 0.028 p 1.0000 False | (c) D +0.055 (Rw' 0.055 / Rx' 0.000) p 0.5297 False
+  HEBREW_UNVOWELLED S2: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.291 p 1.0000 False | (c) D -0.545 (Rw' 0.356 / Rx' 0.901) p 0.7981 False
+      B01  (b) R 0.312 p 1.0000 False | (c) D -0.379 (Rw' 0.502 / Rx' 0.881) p 0.7211 False
+      B02  (b) R 0.293 p 1.0000 False | (c) D +0.475 (Rw' 0.475 / Rx' 0.000) p 0.3218 False
+      B03  (b) R 0.152 p 1.0000 False | (c) D +0.222 (Rw' 0.222 / Rx' 0.000) p 0.4348 False
+      B04  (b) R 0.085 p 1.0000 False | (c) D -0.555 (Rw' 0.102 / Rx' 0.657) p 0.7851 False
+      B05  (b) R 0.156 p 1.0000 False | (c) D -1.009 (Rw' 0.286 / Rx' 1.295) p 0.8841 False
+      B06  (b) R 0.093 p 1.0000 False | (c) D +0.132 (Rw' 0.132 / Rx' 0.000) p 0.4748 False
+      B07  (b) R 0.182 p 1.0000 False | (c) D +0.216 (Rw' 0.216 / Rx' 0.000) p 0.4438 False
+      B08  (b) R 0.093 p 1.0000 False | (c) D +0.160 (Rw' 0.160 / Rx' 0.000) p 0.4978 False
+      B09  (b) R 0.147 p 1.0000 False | (c) D -0.382 (Rw' 0.209 / Rx' 0.591) p 0.7216 False
+      B10  (b) R 0.061 p 1.0000 False | (c) D -1.102 (Rw' 0.080 / Rx' 1.182) p 0.9280 False
+      B11  (b) R 0.194 p 1.0000 False | (c) D +0.236 (Rw' 0.236 / Rx' 0.000) p 0.4363 False
+      B12  (b) R 0.029 p 1.0000 False | (c) D +0.047 (Rw' 0.047 / Rx' 0.000) p 0.5167 False
+      B13  (b) R 0.077 p 1.0000 False | (c) D -0.335 (Rw' 0.148 / Rx' 0.483) p 0.7071 False
+      B14  (b) R 0.096 p 1.0000 False | (c) D +0.168 (Rw' 0.168 / Rx' 0.000) p 0.4333 False
+  DANTE_VERSE S0: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.148 p 1.0000 False | (c) D +0.114 (Rw' 0.114 / Rx' 0.000) p 0.4743 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.4948 False
+      B02  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5142 False
+      B03  (b) R 0.218 p 0.9995 False | (c) D +0.129 (Rw' 0.129 / Rx' 0.000) p 0.4913 False
+      B04  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5502 False
+      B05  (b) R 0.197 p 1.0000 False | (c) D +0.130 (Rw' 0.130 / Rx' 0.000) p 0.4258 False
+      B06  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5357 False
+      B07  (b) R 0.093 p 1.0000 False | (c) D +0.059 (Rw' 0.059 / Rx' 0.000) p 0.5017 False
+      B08  (b) R 0.354 p 0.9980 False | (c) D +0.226 (Rw' 0.226 / Rx' 0.000) p 0.3863 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5347 False
+      B10  (b) R 0.063 p 1.0000 False | (c) D +0.048 (Rw' 0.048 / Rx' 0.000) p 0.5012 False
+      B11  (b) R 0.067 p 1.0000 False | (c) D +0.061 (Rw' 0.061 / Rx' 0.000) p 0.5152 False
+      B12  (b) R 0.086 p 0.9995 False | (c) D +0.052 (Rw' 0.052 / Rx' 0.000) p 0.4623 False
+      B13  (b) R 0.119 p 1.0000 False | (c) D -0.345 (Rw' 0.062 / Rx' 0.407) p 0.7141 False
+      B14  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5327 False
+  DANTE_VERSE S2: (b) 0, (c) 0, (b)&(c) 0 of 15 blocks (threshold 8) -> does not show
+      B00  (b) R 0.218 p 1.0000 False | (c) D +0.168 (Rw' 0.168 / Rx' 0.000) p 0.4388 False
+      B01  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.4953 False
+      B02  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5157 False
+      B03  (b) R 0.213 p 0.9995 False | (c) D +0.128 (Rw' 0.128 / Rx' 0.000) p 0.4913 False
+      B04  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5462 False
+      B05  (b) R 0.197 p 1.0000 False | (c) D +0.128 (Rw' 0.128 / Rx' 0.000) p 0.4293 False
+      B06  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5367 False
+      B07  (b) R 0.091 p 1.0000 False | (c) D +0.058 (Rw' 0.058 / Rx' 0.000) p 0.5002 False
+      B08  (b) R 0.354 p 0.9980 False | (c) D +0.224 (Rw' 0.224 / Rx' 0.000) p 0.3883 False
+      B09  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5367 False
+      B10  (b) R 0.062 p 1.0000 False | (c) D +0.048 (Rw' 0.048 / Rx' 0.000) p 0.4988 False
+      B11  (b) R 0.067 p 1.0000 False | (c) D +0.060 (Rw' 0.060 / Rx' 0.000) p 0.5147 False
+      B12  (b) R 0.086 p 0.9995 False | (c) D +0.052 (Rw' 0.052 / Rx' 0.000) p 0.4643 False
+      B13  (b) R 0.115 p 1.0000 False | (c) D -0.339 (Rw' 0.061 / Rx' 0.399) p 0.7126 False
+      B14  (b) R 0.000 p 1.0000 False | (c) D +0.000 (Rw' 0.000 / Rx' 0.000) p 0.5272 False
+
+CALLS
+VOYNICH_ZL             S0 no (0/15) ; S1 no (6/15) ; S2 no (2/15)
+CTRL_POS_PLANTED       S1 SHOWS (16/16) ; S0 no (2/16) ; S2 SHOWS (16/16)
+CTRL_NEG_CAESAR        S0 no (0/15) ; S2 no (0/15)
+APICIUS_LATIN_RECIPES  S0 no (0/15) ; S2 no (0/15)
+DIGBY_RECIPES          S0 no (0/15) ; S2 no (0/15)
+ROGET_SYNONYMS         S0 no (0/15) ; S2 no (0/15)
+CULPEPER_HERBAL        S0 no (0/15) ; S2 no (0/15)
+KALEVALA_VERSE         S0 no (0/15) ; S2 no (0/15)
+BALLADS_REFRAINS       S0 no (0/15) ; S2 no (0/15)
+CATHOLIC_LITANIES      S0 no (0/15) ; S2 no (0/15)
+MEDIEVAL_PRAYERS       S0 no (0/15) ; S2 no (0/15)
+CREMMA_ABBREV_LATIN    S0 no (0/15) ; S2 no (0/15)
+HEBREW_UNVOWELLED      S0 no (0/15) ; S2 no (0/15)
+DANTE_VERSE            S0 no (0/15) ; S2 no (0/15)
+Controls: positive (planted, S1) shows required: True ; negative (Caesar) does not show required: True
+VERDICT: reference texts showing (b)&(c) on >= 8/15 blocks: NONE

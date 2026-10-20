@@ -1,0 +1,41 @@
+== C1 counts, good stub
+HASH_CHECK_OK runs/s128/s128_layout_counts_v2.py vparse.py data/fixture/synthetic_ivtff_v4.txt
+pages_kept 2 pages_no_kept_line 1 para_marks 3 excluded_foldouts 1
+count_list_sha256 600a7f0f4f78f16e701c86a2ff8392a2a2bd2213019b7c194bbb10854fbf00ad
+exit=0
+#s128_layout_counts v2 (prereg v4)
+#source_path	data/fixture/synthetic_ivtff_v4.txt
+#source_sha256	a343e35840b60a9789bc806b642f06d59ef40f6118b29fe053a59ebf6ee073b8
+#para_start_marks_on_included_herbal_lines	3
+#excluded_foldout_pages	1	f901r1
+#herbal_pages_no_kept_line	1	f901r
+page	Q	B	H	L	line_token_counts	para_start_flags
+f900r	Z	1	1	A	4,2,4,2,3	1,0,1,0,1
+f900v	Z	1	2	?	2,1,2	1,0,0
+== C2 counts, data hash mismatch
+HASH_CHECK_FAIL data/fixture/synthetic_ivtff_v4.txt HASH_MISMATCH
+exit=2 wrote=no
+== C3 counts, self hash mismatch
+HASH_CHECK_FAIL runs/s128/s128_layout_counts_v2.py HASH_MISMATCH
+exit=2 wrote=no
+== C4 counts, vparse.py altered after stub
+HASH_CHECK_FAIL vparse.py HASH_MISMATCH
+exit=2 wrote=no
+vparse restored 0e317c9a762e77c2
+== C5 counts, data not in stub
+HASH_CHECK_FAIL data/fixture/synthetic_ivtff_v4.txt NOT_IN_STUB
+exit=2 wrote=no
+== C6 counts, no <%> marks
+HASH_CHECK_OK runs/s128/s128_layout_counts_v2.py vparse.py data/fixture/synthetic_ivtff_v4_nomarks.txt
+pages_kept 2 pages_no_kept_line 1 para_marks 0 excluded_foldouts 1
+count_list_sha256 d2b8490f262e327b0014d6798cf7f8383e71e70155b570ba3e3a92bb84dcb04d
+exit=3
+#s128_layout_counts v2 (prereg v4)
+#source_path	data/fixture/synthetic_ivtff_v4_nomarks.txt
+#source_sha256	eb7f50a588f1a5ade4983c43d60a0502089152cc656e4f3b06e54935b4764478
+#para_start_marks_on_included_herbal_lines	0
+#excluded_foldout_pages	1	f901r1
+#herbal_pages_no_kept_line	1	f901r
+page	Q	B	H	L	line_token_counts	para_start_flags
+f900r	Z	1	1	A	2,2,3	1,1,1
+f900v	Z	1	2	?	2,1,2	1,0,0

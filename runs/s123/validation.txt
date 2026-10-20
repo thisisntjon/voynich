@@ -1,0 +1,9 @@
+# s123 hand validation, written Mon Oct 19 00:32:01 PDT 2026 after viewing runs/s123/crops/valsheet_0.png (f75r, f82v, f84r) and valsheet_1.png (f81r, f82r, f84v) with the Read tool.
+# format: class | folio | PASS/FAIL | what was seen. PASS = the masked (magenta) pixels are painted water of the claimed colour.
+green | f75r | PASS | olive-green pool with nymphs; mask covers the pool, nymph bodies left out
+green | f82v | PASS | wide green pool band; mask covers it; a thin blue-and-green arc at top right is mostly not masked
+green | f84r | PASS | green pool under five nymphs; masked; a small blue pool at top left is NOT masked (blue miss)
+green | f81r | PASS | green band pool with nymphs; masked; pale blue wavy lines inside the band not masked
+green | f82r | PASS | lobed green pool; masked; text and nymphs left out
+blue | f84v | PASS | the masked pixels are the dark-blue central stream of a blue pool, so precision is fine; recall is poor: most of the pale blue wash of the same pool is not masked
+# also seen on page overviews (not part of the frozen rule): f80r has a pale-blue water band, only a short dark strip is masked (4686 px, below MIN_PX); f77r has small saturated blue pools under tubes, removed by MIN_COMP / chroma floor. The blue chroma floor (9, set on f9v petals) is above the chroma of the pale blue washes in quire M.

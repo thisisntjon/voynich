@@ -1,0 +1,200 @@
+# results_m2_robustness: PREREG robustness check 1 (second transliterations + glyph-collapsed), seed 20261017
+# run 2026-10-17 16:37 (system clock); baseline column ZL3b-EVA copied from results_m0_newmetrics.json
+# converter: tools/ivtff_to_meta.py (paragraph loci only, unreadable tokens dropped, [a:b]->a, braces removed)
+# ZL3b-EVA       tokens= 34857  types= 7025
+# ZL3b-glyph+    pages= 207  lines= 4130  tokens= 34857  types= 7025  alphabet= 37 chars  quires=16
+# RF1b           pages= 207  lines= 4130  tokens= 34618  types= 7348  alphabet= 24 chars  quires=16
+# IT2a           pages= 206  lines= 4117  tokens= 34411  types= 7069  alphabet= 21 chars  quires=16
+# GC2a           pages= 207  lines= 4128  tokens= 36385  types= 8351  alphabet= 70 chars  quires=16
+
+=== 1. LEXICON GROWTH ===
+metric                                            ZL3b-EVA   ZL3b-glyph+          RF1b          IT2a          GC2a
+beta (all)                                           0.741         0.741         0.753         0.750         0.774
+beta early half                                      0.780         0.780         0.799         0.786         0.792
+beta late half                                       0.725         0.725         0.716         0.729         0.760
+new-type rate last20%/first20%                       0.464         0.464         0.473         0.462         0.473
+new types edit1 of prev-200 tokens                   0.322         0.385         0.316         0.330         0.393
+  same, far window (baseline)                        0.225         0.280         0.228         0.231         0.292
+  edit-1 locality excess (recent - far)              0.097         0.105         0.088         0.099         0.101
+null(shuffled pages) beta mean                       0.762         0.762         0.771         0.766         0.783
+null rate ratio mean                                 0.422         0.422         0.433         0.432         0.451
+null edit1 share mean                                0.307         0.369         0.300         0.314         0.381
+
+=== 2. SLOT STRUCTURE ===
+metric                                            ZL3b-EVA   ZL3b-glyph+          RF1b          IT2a          GC2a
+[all_types] n prefixes                                  29            37            28            27            35
+[all_types] n cores                                   2335          1700          2536          2380          2256
+[all_types] n suffixes                                  19            30            20            20            30
+[all_types] n types                                   7025          7025          7348          7069          8351
+[all_types] occupancy P x C x S                     0.0055        0.0037        0.0052        0.0055        0.0035
+[all_types] occupancy P x C                         0.0660        0.0568        0.0669        0.0697        0.0579
+[all_types] occupancy C x S                         0.0848        0.0670        0.0787        0.0810        0.0618
+[all_types] H(core) bits                             6.580         5.784         6.713         6.650         6.214
+[all_types] H(core | prefix) bits                    4.911         4.070         5.009         5.031         4.483
+[all_types] table-likeness (tok-weighted)            0.648         0.602         0.650         0.654         0.621
+[all_types] table-likeness (unweighted)              0.695         0.633         0.696         0.695         0.650
+[all_types] core edit-1 neighbour share              0.872         0.900         0.852         0.865         0.883
+[all_types] empty-prefix token share                 0.188         0.088         0.182         0.195         0.107
+[all_types] empty-suffix token share                 0.442         0.475         0.433         0.427         0.500
+[top_types] n prefixes                                  29            37            28            27            35
+[top_types] n cores                                    392           217           407           413           235
+[top_types] n suffixes                                  19            30            20            20            30
+[top_types] n types                                   2000          2000          2000          2000          2000
+[top_types] occupancy P x C x S                     0.0093        0.0083        0.0088        0.0090        0.0081
+[top_types] occupancy P x C                         0.1067        0.1094        0.1065        0.1072        0.1108
+[top_types] occupancy C x S                         0.1003        0.0959        0.0932        0.0938        0.0925
+[top_types] H(core) bits                             5.564         4.834         5.620         5.614         5.010
+[top_types] H(core | prefix) bits                    4.003         3.219         4.024         4.080         3.399
+[top_types] table-likeness (tok-weighted)            0.705         0.684         0.704         0.709         0.689
+[top_types] table-likeness (unweighted)              0.769         0.723         0.765         0.767         0.727
+[top_types] core edit-1 neighbour share              0.957         0.986         0.973         0.971         0.991
+[top_types] empty-prefix token share                 0.187         0.083         0.179         0.186         0.099
+[top_types] empty-suffix token share                 0.487         0.536         0.478         0.470         0.569
+
+[ZL3b-glyph+] H(glyph)=3.979  prefixes: o Ą qo qok ą Ąe da ok ot a y Ąo ol l ąe k s qot t oka ąo ota Ąeo p yk r Ā yt Ąċ sa lk al okċ oke ąċ dal
+[ZL3b-glyph+]   suffixes: y dy ać ol edy ar ey or al aĈ ċy o s ody Ąy Ąey am ky eol dar d Ądy dal Ąor ąey āy aĊ ty daĈ
+[RF1b] H(glyph)=3.870  prefixes: o ch qo qok che a ok ot she y cho ol l qot k t oke sho ota ote yk p cth al yt r dal
+[RF1b]   suffixes: y ol ar hy or al eey ain s o ody chy am ky dar d kar dal air
+[IT2a] H(glyph)=3.863  prefixes: o ch qo qok che ok ot she y a cho ol l k qot t oke sho ote yk cth yt r lk al dal
+[IT2a]   suffixes: y ol ar or hy al eey ain s o ody chy am ky dar d kar dal air
+[GC2a] H(glyph)=4.153  prefixes: o 1 4o 8 4oh 1c a 2 oh ok 8a 9 1o oe e h 2c s 4ok k oha 1co oka 2o y ohc 9h ae K 9k g okc eh 3
+[GC2a]   suffixes: 9 89 am oe ay c9 c89 oy ae an 79 o s C9 c79 19 1c9 o89 coe ap h9 8 8ay cc9 co 1oy H9 8ae az
+
+=== 3. INFORMATION PROFILE (MI bits, plug-in minus permutation null) ===
+metric                                            ZL3b-EVA   ZL3b-glyph+          RF1b          IT2a          GC2a
+[word_boundaries_given] adjacent                     0.174         0.174         0.163         0.151         0.165
+[word_boundaries_given] same_line_2_5                0.049         0.049         0.053         0.032         0.039
+[word_boundaries_given] prev_line_same_col           0.039         0.039         0.039         0.042         0.030
+[word_boundaries_given] prev_line_other_col          0.029         0.029         0.029         0.025         0.016
+[word_boundaries_given] same_page_far                0.029         0.029         0.021         0.020         0.021
+[word_boundaries_given] same_section_other_page         0.021         0.021         0.011         0.006         0.018
+[word_boundaries_given] other_section               -0.001        -0.001         0.003         0.007        -0.000
+[word_boundaries_given] same_col - other_col (prev line)         0.009         0.009         0.011         0.017         0.013
+[word_boundaries_given] H(w) adjacent pair set         6.495         6.495         6.411         6.447         6.202
+[word_boundaries_given] raw MI adjacent              1.470         1.470         1.434         1.455         1.378
+[bpe_resegmented] adjacent                           1.176         1.034         1.165         1.162         1.027
+[bpe_resegmented] same_line_2_5                      0.053         0.048         0.053         0.056         0.046
+[bpe_resegmented] prev_line_same_col                 0.039         0.043         0.035         0.036         0.038
+[bpe_resegmented] prev_line_other_col                0.019         0.022         0.019         0.020         0.018
+[bpe_resegmented] same_page_far                      0.016         0.017         0.010         0.013         0.017
+[bpe_resegmented] same_section_other_page            0.006         0.005         0.005         0.007         0.007
+[bpe_resegmented] other_section                      0.000         0.002         0.000        -0.000         0.000
+[bpe_resegmented] same_col - other_col (prev line)         0.021         0.021         0.016         0.016         0.020
+[bpe_resegmented] H(w) adjacent pair set             5.287         5.483         5.284         5.281         5.642
+[bpe_resegmented] raw MI adjacent                    1.237         1.128         1.226         1.220         1.187
+
+=== 4. HELD-OUT BAKE-OFF (leave-one-quire-out; bits/token, bits/char; 'char' = one alphabet symbol) ===
+metric                                            ZL3b-EVA   ZL3b-glyph+          RF1b          IT2a          GC2a
+markov2 bits/token                                  11.581        11.509        11.744        11.677        12.047
+markov3 bits/token                                  11.556        11.620        11.723        11.636        12.239
+slot bits/token                                     12.217        12.170        12.425        12.297        12.823
+unigram_gt bits/token                               12.082        12.201        12.269        12.163        12.891
+copy0.3+markov3 bits/token                          11.811        11.861        11.983        11.888        12.500
+copy0.1+markov3 bits/token                          11.579        11.635        11.749        11.659        12.260
+copy0.05+markov3 bits/token                         11.545        11.604        11.715        11.626        12.224
+markov2 bits/char                                    1.934         2.287         1.940         1.925         2.472
+markov3 bits/char                                    1.929         2.309         1.936         1.918         2.511
+slot bits/char                                       2.040         2.418         2.052         2.027         2.631
+unigram_gt bits/char                                 2.017         2.424         2.026         2.005         2.645
+copy0.3+markov3 bits/char                            1.972         2.357         1.979         1.960         2.565
+copy0.1+markov3 bits/char                            1.933         2.312         1.941         1.922         2.516
+copy0.05+markov3 bits/char                           1.927         2.306         1.935         1.917         2.508
+gain over markov3: copy0.3+markov3                  -0.255        -0.241        -0.260        -0.252        -0.261
+gain over markov3: copy0.1+markov3                  -0.022        -0.016        -0.026        -0.022        -0.021
+gain over markov3: copy0.05+markov3                  0.012         0.016         0.009         0.011         0.015
+slot - markov3 bits/token                            0.661         0.551         0.702         0.661         0.584
+markov3 - unigram_gt bits/token                     -0.526        -0.582        -0.546        -0.526        -0.652
+folds                                                   16            16            16            16            16
+
+bake-off winner (overall)                     copy0.05+markov3           markov2  copy0.05+markov3  copy0.05+markov3           markov2
+
+=== 5. EXTRA PUBLISHED SIGNATURES ===
+metric                                            ZL3b-EVA   ZL3b-glyph+          RF1b          IT2a          GC2a
+(a) edge MI word->next word                          0.188         0.199         0.179         0.173         0.236
+    edge MI line-end->next line                      0.016         0.017         0.018         0.010         0.014
+(b) hapax share @10k                                 0.686         0.686         0.704         0.688         0.723
+    hapax share @20k                                 0.680         0.680         0.692         0.681         0.709
+    hapax share all tokens                           0.680         0.680         0.691         0.678         0.702
+(c) Moran I wordlen lag1                             0.141         0.178         0.141         0.141         0.197
+    Moran I within-line pairs                        0.157         0.197         0.155         0.157         0.218
+(d) glyph position entropy (max 2.32)                1.661         1.588         1.665         1.650         1.573
+(e) bits/char ltr                                    1.929         2.309         1.936         1.918         2.511
+    bits/char rtl                                    1.924         2.304         1.933         1.914         2.509
+    asymmetry ltr - rtl                             0.0049        0.0051        0.0036        0.0040        0.0024
+
+=== flips: sign/ordering of the Voynich value relative to the Latin (Caesar) and Italian (Dante) controls of the baseline run ===
+baseline controls from results_m0_newmetrics.json; 'preserved' = every transliteration keeps the EVA relation
+headline                                        Latin  Italian                      EVA rel.       ZL3b-glyph+              RF1b              IT2a              GC2a  preserved
+Heaps beta                                     0.7826   0.7653             0.7410 below both            0.7410            0.7533            0.7501           0.7740*  NO
+late/early new-type rate                       0.4111   0.4616             0.4639 above both            0.4639            0.4728            0.4624            0.4726  YES
+edit-1 locality excess (recent - far)          0.0209   0.0558             0.0965 above both            0.1049            0.0882            0.0992            0.1007  YES
+slot occupancy PxCxS (all types)               0.0014   0.0017             0.0055 above both            0.0037            0.0052            0.0055            0.0035  YES
+table-likeness tok-weighted (all types)        0.7470   0.6327    0.6475 between (Lat>V>Ita)           0.6019*            0.6504            0.6541           0.6210*  NO
+core crowding: core edit-1 share (all types)   0.6794   0.7468             0.8719 above both            0.9000            0.8517            0.8651            0.8830  YES
+adjacent MI (word boundaries given)            0.2696   0.5739             0.1737 below both            0.1737            0.1629            0.1510            0.1646  YES
+page-level MI: same_page_far (wbg)            -0.0071   0.0066             0.0295 above both            0.0295            0.0210            0.0199            0.0208  YES
+same-col minus other-col prev-line MI (wbg)   -0.0036   0.0020             0.0092 above both            0.0092            0.0105            0.0172            0.0132  YES
+bake-off winner                             unigram_gunigram_g              copy0.05+markov3           markov2  copy0.05+markov3  copy0.05+markov3           markov2  NO
+markov3 - unigram_gt bits/token                1.4503   0.2298            -0.5256 below both           -0.5816           -0.5457           -0.5262           -0.6516  YES
+edge MI word->next word                        0.0372   0.1451             0.1882 above both            0.1989            0.1792            0.1731            0.2360  YES
+hapax share @10k                               0.6519   0.6766             0.6855 above both            0.6855            0.7042            0.6883            0.7229  YES
+Moran's I word length lag 1                    0.0007  -0.1541             0.1407 above both            0.1775            0.1408            0.1410            0.1968  YES
+glyph position entropy                         2.1519   2.0155             1.6607 below both            1.5875            1.6646            1.6502            1.5729  YES
+ltr - rtl bits/char asymmetry                 -0.0023   0.0023             0.0049 above both            0.0051            0.0036            0.0040            0.0024  YES
+(* = relation to the controls differs from the EVA baseline)
+
+=== magnitude moves > 20% vs ZL3b-EVA (any row above with |EVA| >= 0.005; bits/char rows are not comparable for ZL3b-glyph+ or GC2a, whose symbols are multi-letter glyphs / v101 glyphs) ===
+  new types edit1 of prev-200 tokens           GC2a         EVA=0.3219 -> 0.3926  (+22%)
+    same, far window (baseline)                ZL3b-glyph+  EVA=0.2253 -> 0.2797  (+24%)
+    same, far window (baseline)                GC2a         EVA=0.2253 -> 0.2919  (+30%)
+  null edit1 share mean                        ZL3b-glyph+  EVA=0.3068 -> 0.3693  (+20%)
+  null edit1 share mean                        GC2a         EVA=0.3068 -> 0.3808  (+24%)
+  [all_types] occupancy P x C x S              ZL3b-glyph+  EVA=0.0055 -> 0.0037  (-32%)
+  [all_types] occupancy P x C x S              GC2a         EVA=0.0055 -> 0.0035  (-35%)
+  [all_types] occupancy C x S                  ZL3b-glyph+  EVA=0.0848 -> 0.0670  (-21%)
+  [all_types] occupancy C x S                  GC2a         EVA=0.0848 -> 0.0618  (-27%)
+  [all_types] empty-prefix token share         ZL3b-glyph+  EVA=0.1879 -> 0.0875  (-53%)
+  [all_types] empty-prefix token share         GC2a         EVA=0.1879 -> 0.1073  (-43%)
+  [top_types] empty-prefix token share         ZL3b-glyph+  EVA=0.1870 -> 0.0825  (-56%)
+  [top_types] empty-prefix token share         GC2a         EVA=0.1870 -> 0.0989  (-47%)
+  [word_boundaries_given] same_line_2_5        IT2a         EVA=0.0488 -> 0.0319  (-35%)
+  [word_boundaries_given] same_line_2_5        GC2a         EVA=0.0488 -> 0.0388  (-20%)
+  [word_boundaries_given] prev_line_same_col   GC2a         EVA=0.0387 -> 0.0296  (-23%)
+  [word_boundaries_given] prev_line_other_col  GC2a         EVA=0.0295 -> 0.0164  (-44%)
+  [word_boundaries_given] same_page_far        RF1b         EVA=0.0295 -> 0.0210  (-29%)
+  [word_boundaries_given] same_page_far        IT2a         EVA=0.0295 -> 0.0199  (-33%)
+  [word_boundaries_given] same_page_far        GC2a         EVA=0.0295 -> 0.0208  (-29%)
+  [word_boundaries_given] same_section_other_page RF1b         EVA=0.0210 -> 0.0108  (-49%)
+  [word_boundaries_given] same_section_other_page IT2a         EVA=0.0210 -> 0.0064  (-69%)
+  [word_boundaries_given] same_col - other_col (prev line) IT2a         EVA=0.0092 -> 0.0172  (+87%)
+  [word_boundaries_given] same_col - other_col (prev line) GC2a         EVA=0.0092 -> 0.0132  (+43%)
+  [bpe_resegmented] same_page_far              RF1b         EVA=0.0164 -> 0.0102  (-38%)
+  [bpe_resegmented] same_page_far              IT2a         EVA=0.0164 -> 0.0127  (-22%)
+  [bpe_resegmented] same_section_other_page    RF1b         EVA=0.0059 -> 0.0046  (-21%)
+  [bpe_resegmented] same_section_other_page    IT2a         EVA=0.0059 -> 0.0073  (+24%)
+  [bpe_resegmented] same_section_other_page    GC2a         EVA=0.0059 -> 0.0071  (+21%)
+  [bpe_resegmented] same_col - other_col (prev line) RF1b         EVA=0.0206 -> 0.0163  (-21%)
+  [bpe_resegmented] same_col - other_col (prev line) IT2a         EVA=0.0206 -> 0.0163  (-21%)
+  markov2 bits/char                            GC2a         EVA=1.9335 -> 2.4719  (+28%)
+  markov3 bits/char                            GC2a         EVA=1.9293 -> 2.5113  (+30%)
+  slot bits/char                               GC2a         EVA=2.0396 -> 2.6312  (+29%)
+  unigram_gt bits/char                         ZL3b-glyph+  EVA=2.0171 -> 2.4243  (+20%)
+  unigram_gt bits/char                         GC2a         EVA=2.0171 -> 2.6450  (+31%)
+  copy0.3+markov3 bits/char                    GC2a         EVA=1.9719 -> 2.5648  (+30%)
+  copy0.1+markov3 bits/char                    GC2a         EVA=1.9331 -> 2.5156  (+30%)
+  copy0.05+markov3 bits/char                   GC2a         EVA=1.9274 -> 2.5082  (+30%)
+  gain over markov3: copy0.1+markov3           ZL3b-glyph+  EVA=-0.0224 -> -0.0158  (+30%)
+  gain over markov3: copy0.05+markov3          ZL3b-glyph+  EVA=0.0115 -> 0.0160  (+38%)
+  gain over markov3: copy0.05+markov3          RF1b         EVA=0.0115 -> 0.0086  (-25%)
+  gain over markov3: copy0.05+markov3          GC2a         EVA=0.0115 -> 0.0152  (+31%)
+  markov3 - unigram_gt bits/token              GC2a         EVA=-0.5256 -> -0.6516  (-24%)
+  (a) edge MI word->next word                  GC2a         EVA=0.1882 -> 0.2360  (+25%)
+      edge MI line-end->next line              IT2a         EVA=0.0158 -> 0.0101  (-36%)
+  (c) Moran I wordlen lag1                     ZL3b-glyph+  EVA=0.1407 -> 0.1775  (+26%)
+  (c) Moran I wordlen lag1                     GC2a         EVA=0.1407 -> 0.1968  (+40%)
+      Moran I within-line pairs                ZL3b-glyph+  EVA=0.1572 -> 0.1973  (+25%)
+      Moran I within-line pairs                GC2a         EVA=0.1572 -> 0.2185  (+39%)
+  (e) bits/char ltr                            GC2a         EVA=1.9293 -> 2.5113  (+30%)
+      bits/char rtl                            GC2a         EVA=1.9245 -> 2.5090  (+30%)
+
+timing (s): ZL3b-glyph+/lex=17.0, ZL3b-glyph+/slot=0.2, ZL3b-glyph+/info=2.0, ZL3b-glyph+/bake=9.3, ZL3b-glyph+/extra=4.8, RF1b/lex=12.7, RF1b/slot=0.2, RF1b/info=1.7, RF1b/bake=8.3, RF1b/extra=5.2, IT2a/lex=10.7, IT2a/slot=0.2, IT2a/info=1.5, IT2a/bake=7.7, IT2a/extra=4.6, GC2a/lex=27.6, GC2a/slot=0.3, GC2a/info=1.7, GC2a/bake=8.1, GC2a/extra=4.5

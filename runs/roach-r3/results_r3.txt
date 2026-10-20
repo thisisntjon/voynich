@@ -1,0 +1,49 @@
+r3.py mode=real run at (clock): 2026-10-18T02:37:17-07:00
+r3.py sha256: 06e88402c27707541cc0cc636953ea4fc27997b99ce20d5889ebf0a3d46908fe
+r3.prereg.sha256: 06e88402c27707541cc0cc636953ea4fc27997b99ce20d5889ebf0a3d46908fe
+stub match: YES
+data ZL3b-n.txt sha256 bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc
+data pg18837.txt sha256 8bae4d88747b318b58ea193f981766fed337ddf613df452c1a06d72c9af75ffd
+data pg45334.txt sha256 4cdd962f1910a49091b945eff4233798b8c13f74b011cee75a8cccc7467d3612
+
+ZL pages with paragraph text: 207 (brief expects 207)
+held-out pages: f100v f101v f102v2 f10v f111r f115v f11v f16r f18r f18v f19r f26v f2r f33v f34v f35r f35v f39v f41r f43r f48v f4r f52v f53v f56v f57r f58v f5r f5v f67r2 f67v2 f68r1 f68v2 f75r f83v f88v f89v1 f8r f90v2 f93r f94v
+== VOYNICH ZL3b paragraph text : pages 207 (train 166, held-out 41), lines 4130, words 35075
+R3a prefix-stream gain  +0.0457 bits/prefix  95% [+0.0390, +0.0520]  rescaled [+0.0314, +0.0577]  n=4865  -> FAIL (rescaled: FAIL)
+R3b affix|core gain     +1.3795 bits/word    95% [+1.3382, +1.4090]  rescaled [+1.2898, +1.4336]  n=5557  -> PASS (rescaled: PASS)
+R3c [all pages] within Moran I obs +0.1598 null +0.0710 (sd 0.0046) excess +0.0888  95% [+0.0823, +0.0944]  rescaled [+0.0750, +0.0994]  perm p=0.0050
+R3c [all pages] cross  Moran I obs +0.0153 null +0.0374 (sd 0.0157) excess -0.0221  95% [-0.0379, -0.0072]  rescaled [-0.0565, +0.0052]  perm p=0.1692
+R3c [all pages] call: within-line only
+R3c [all pages] rescaled call: within-line only
+R3c [held-out pages] within Moran I obs +0.1728 null +0.0840 (sd 0.0124) excess +0.0888  95% [+0.0756, +0.0983]  rescaled [+0.0625, +0.1085]  perm p=0.0050
+R3c [held-out pages] cross  Moran I obs -0.0234 null +0.0271 (sd 0.0384) excess -0.0505  95% [-0.0956, -0.0162]  rescaled [-0.1398, +0.0215]  perm p=0.1940
+R3c [held-out pages] call: within-line only
+R3c [held-out pages] rescaled call: within-line only
+
+CALLS (Voynich): R3a FAIL ; R3b PASS ; R3c (all pages) within-line only
+
+REFERENCES (context only)
+LATIN affixes: prefixes ['co', 'in', 'qu', 'pr', 're', 'ca', 'ad', 'su', 'ex', 'se'] ; suffixes ['s', 'e', 'm', 't', 'um', 'i', 'us', 'is', 'o', 'a', 'nt', 'ue', 'que', 'r', 'n', 'es', 'bus', 'em', 'd', 're']
+== LATIN Caesar BG V-VIII (PG18837) : pages 115 (train 92, held-out 23), lines 3437, words 30880
+R3a prefix-stream gain  +0.0085 bits/prefix  95% [+0.0048, +0.0117]  rescaled [+0.0015, +0.0145]  n=5552  -> FAIL (rescaled: FAIL)
+R3b affix|core gain     +3.4227 bits/word    95% [+3.3849, +3.4728]  rescaled [+3.3517, +3.5185]  n=6242  -> PASS (rescaled: PASS)
+R3c [all pages] within Moran I obs -0.0136 null -0.0163 (sd 0.0054) excess +0.0027  95% [-0.0029, +0.0079]  rescaled [-0.0085, +0.0132]  perm p=0.3035
+R3c [all pages] cross  Moran I obs +0.0034 null +0.0048 (sd 0.0168) excess -0.0014  95% [-0.0188, +0.0173]  rescaled [-0.0367, +0.0356]  perm p=0.9254
+R3c [all pages] call: no within-line excess (interval includes or lies below 0)
+R3c [all pages] rescaled call: no within-line excess (interval includes or lies below 0)
+R3c [held-out pages] within Moran I obs -0.0102 null -0.0183 (sd 0.0119) excess +0.0081  95% [-0.0075, +0.0218]  rescaled [-0.0207, +0.0349]  perm p=0.2736
+R3c [held-out pages] cross  Moran I obs -0.0362 null +0.0036 (sd 0.0376) excess -0.0398  95% [-0.0824, +0.0064]  rescaled [-0.1179, +0.0505]  perm p=0.2736
+R3c [held-out pages] call: no within-line excess (interval includes or lies below 0)
+R3c [held-out pages] rescaled call: no within-line excess (interval includes or lies below 0)
+ITALIAN affixes: prefixes ['di', 'co', 'ch', 'qu', 'in', 'de', 'un', 'al', 'pe', 'il'] ; suffixes ['e', 'o', 'a', 'i', 'n', 'l', 'to', 're', 'he', 'r', 'on', 'te', 'no', 'ta', 'ra', 'ro', 'io', 'ti', 'la', 'ia']
+== ITALIAN Manzoni Promessi sposi (PG45334, first 60000 words) : pages 194 (train 155, held-out 39), lines 5802, words 60013
+R3a prefix-stream gain  +0.0195 bits/prefix  95% [+0.0174, +0.0215]  rescaled [+0.0152, +0.0234]  n=10785  -> FAIL (rescaled: FAIL)
+R3b affix|core gain     +2.6607 bits/word    95% [+2.6203, +2.6995]  rescaled [+2.5850, +2.7408]  n=11955  -> PASS (rescaled: PASS)
+R3c [all pages] within Moran I obs -0.1988 null -0.0226 (sd 0.0043) excess -0.1762  95% [-0.1809, -0.1721]  rescaled [-0.1855, -0.1679]  perm p=1.0000
+R3c [all pages] cross  Moran I obs -0.1413 null +0.0137 (sd 0.0130) excess -0.1551  95% [-0.1699, -0.1410]  rescaled [-0.1833, -0.1259]  perm p=0.0050
+R3c [all pages] call: no within-line excess (interval includes or lies below 0)
+R3c [all pages] rescaled call: no within-line excess (interval includes or lies below 0)
+R3c [held-out pages] within Moran I obs -0.1864 null -0.0232 (sd 0.0084) excess -0.1631  95% [-0.1736, -0.1534]  rescaled [-0.1829, -0.1431]  perm p=1.0000
+R3c [held-out pages] cross  Moran I obs -0.1506 null +0.0170 (sd 0.0331) excess -0.1676  95% [-0.2007, -0.1378]  rescaled [-0.2325, -0.1087]  perm p=0.0050
+R3c [held-out pages] call: no within-line excess (interval includes or lies below 0)
+R3c [held-out pages] rescaled call: no within-line excess (interval includes or lies below 0)

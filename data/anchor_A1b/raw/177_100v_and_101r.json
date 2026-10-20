@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:05:33.4778991Z",
+ "response": "{\n  \"PT\": \"PLANT\",\n  \"P_plants\": \"21+\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"5-10\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"MULTI\",\n  \"J_shape\": \"NONE\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"6+\",\n  \"J_fragtype\": \"MIXED\",\n  \"C_centre\": \"EMPTY\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"2-3\",\n  \"C_rings\": \"4+\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"0\",\n  \"B_figures\": \"0\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Illustrations of plants with roots and leaves, no containers or circular diagrams.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 3001585200,
+ "load_duration": 215007500,
+ "prompt_eval_count": 3488,
+ "prompt_eval_duration": 911694000,
+ "eval_count": 214,
+ "eval_duration": 1625274000,
+ "stem": "177_100v_and_101r"
+}

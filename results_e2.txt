@@ -1,0 +1,22 @@
+E2 edge ablation  paragraph P*  '?' dropped
+pairs=30727  H(first)=3.1169  H(first|last)=2.9219  MI=0.1950
+
+delete rule  P(left)  H(F|left)  MI if deleted  share of MI 
+y               0.410     3.0262         0.1578        0.191
+n               0.166     2.6259         0.1136        0.418
+l               0.162     3.0702         0.1874        0.039
+r               0.157     2.7661         0.1400        0.282
+o               0.036     3.4260         0.2061       -0.057
+s               0.032     2.6456         0.1799        0.077
+d               0.015     3.1180         0.1950       -0.000
+m               0.009     2.6031         0.1904        0.023
+
+P(first | last) for the left edges that carry the most MI
+  n n= 5096  c:0.292, o:0.291, s:0.144, q:0.077, d:0.073
+  r n= 4816  o:0.261, c:0.235, a:0.181, s:0.140, q:0.051
+  y n=12585  q:0.275, o:0.186, c:0.149, d:0.097, s:0.088
+  s n=  985  a:0.289, o:0.247, c:0.195, s:0.113, y:0.057
+  l n= 4968  c:0.242, o:0.190, s:0.152, d:0.124, q:0.082
+  m n=  273  c:0.293, o:0.267, s:0.165, q:0.095, d:0.081
+
+y->q count=3465  rate among y-left=0.275  rate among all pairs=0.113

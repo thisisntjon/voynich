@@ -1,0 +1,12 @@
+J1 gate: truth type-ARI >= 0.15 at m=3 required before any Voynich run
+F4 filed references (results_i1.txt): m=1 ARI 0.190, m=3 ARI 0.044
+m=1 K=73 types=4703 hapax=0.492 tok=20917 | F4 ARI=0.245 NMI=0.777 tokARI=0.545 | J1 ARI=0.166 NMI=0.775 tokARI=0.438
+m=1 K=96 types=4703 hapax=0.492 tok=20917 | F4 ARI=0.234 NMI=0.809 tokARI=0.570 | J1 ARI=0.155 NMI=0.801 tokARI=0.409
+m=3 K=73 types=7610 hapax=0.702 tok=20917 | F4 ARI=0.036 NMI=0.533 tokARI=0.193 | J1 ARI=0.101 NMI=0.617 tokARI=0.251
+m=3 K=96 types=7610 hapax=0.702 tok=20917 | F4 ARI=0.039 NMI=0.581 tokARI=0.156 | J1 ARI=0.101 NMI=0.654 tokARI=0.256
+m=2 K=73 types=6541 hapax=0.630 tok=20917 | F4 ARI=0.107 NMI=0.651 tokARI=0.227 | J1 ARI=0.149 NMI=0.698 tokARI=0.320
+m=2 K=96 types=6541 hapax=0.630 tok=20917 | F4 ARI=0.055 NMI=0.653 tokARI=0.216 | J1 ARI=0.179 NMI=0.748 tokARI=0.348
+J1v2 declared: context + 2.0*spelling, no position block, K=96
+m=3 K=96 J1v2 ARI=0.171 NMI=0.715 tokARI=0.285
+m=2 K=96 J1v2 ARI=0.184 NMI=0.763 tokARI=0.334
+Gate applies at m=3 (either K). See verdict in chat/handoff, not here.

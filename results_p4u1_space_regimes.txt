@@ -1,0 +1,23 @@
+P4-U1: uncertain spaces as junctures vs squeezed spaces (pre-registered in the docstring)
+Clock: Sat Oct 17 22:41:49 PDT 2026
+Stub: p4u1_space_regimes.py=MATCH vparse.py=MATCH
+
+=== ZL3b: 4045 lines, 29815 scored boundaries, comma share 0.082 (2434 comma, 27381 dot) ===
+P1  D(last quarter - rest) = +0.0396   null mean +0.0009  q99 +0.0093  p = 0.0005   [left-final-glyph stratified D +0.0430, reported]  -> POSITIVE
+P2  joined-form rate: comma 0.4166 vs dot (length-standardised) 0.2503  R = 1.66  dR 95% CI [+0.1475, +0.1847]  -> HIGH
+    both-parts-standalone rate: comma 0.8217 vs dot 0.9915  (reported)
+VERDICT ZL3b: BOTH  (decision row)
+
+=== RF1b: 4037 lines, 24141 scored boundaries, comma share 0.021 (508 comma, 23633 dot) ===
+P1  D(last quarter - rest) = +0.0103   null mean +0.0003  q99 +0.0051  p = 0.0005   [left-final-glyph stratified D +0.0115, reported]  -> POSITIVE
+P2  joined-form rate: comma 0.5472 vs dot (length-standardised) 0.3214  R = 1.70  dR 95% CI [+0.1922, +0.2623]  -> HIGH
+    both-parts-standalone rate: comma 0.8622 vs dot 0.9977  (reported)
+VERDICT RF1b: BOTH  (agreement only)
+
+=== IT2a: 4033 lines, 29421 scored boundaries, comma share 0.000 (0 comma, 29421 dot) ===
+P1  D(last quarter - rest) = +0.0000   null mean +0.0000  q99 +0.0000  p = 1.0000   [left-final-glyph stratified D +0.0000, reported]  -> not positive
+P2  joined-form rate: comma nan vs dot (length-standardised) nan  R = nan  dR 95% CI [+nan, +nan]  -> not high
+    both-parts-standalone rate: comma nan vs dot nan  (reported)
+VERDICT IT2a: UNDECIDED  (agreement only)
+
+VERDICT P4-U1: BOTH   agreement: ZL3b=BOTH  RF1b=BOTH  IT2a=UNDECIDED

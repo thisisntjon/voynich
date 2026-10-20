@@ -1,0 +1,13 @@
+S108 FIXTURE (synthetic only; no real data read)
+date: Sun Oct 18 14:57:17 PDT 2026 (`date`)  device: cuda; below_normal=True
+s108 sha256=b9fd9452adfebc89e23209fb1e16d86597b14485697bc4901148492ae1a5f736  stub_match=NO STUB
+FXa drawn grid (red row rules, black column rules, rotated column 2): [(4, ['hor', 'rot', 'hor', 'hor'], 'w00a w00b | w02a w02bc | w03a w03b'), (4, ['hor', 'rot', 'hor', 'hor'], 'w10a w10b | w12a w12bc | w13a w13b'), (4, ['hor', 'rot', 'hor', 'hor'], 'w20a w20b | w22a w22bc | w23a w23b')] -> PASS
+FXb hyphen join + S107.tok: ['melancholico', 'cum', 'ſyr', 'acet'] -> PASS
+FXc whitespace cells (T1 rule): [['Mafticis', '3 ij', 'Partes viij', 'Pars'], ['Alchon', 'partes', 'pars']] -> PASS
+  FX_LP91_n1300                      tok   1300 ty   269 core% 100.0 | o100 +0.055(p0.202) o200 +0.020 | Rw1 2.405(p0.001) Rc1 0.000 | loc 0.982[0.958,1.005] | C1 YYYY VOYNICH-LIKE [order n=343<4731]
+  FX_prose_n1300                     tok   1300 ty   572 core% 100.0 | o100 +0.610(p0.001) o200 +0.716 | Rw1 0.917(p0.675) Rc1 0.614 | loc 0.991[0.909,1.066] | C1 nnYY - [order n=343<4731]
+FXd n=1300: planted (b)+(c) True (want True); Markov prose (b)+(c) False (want False) -> PASS
+  FX_LP91_n10000                     tok  10000 ty   847 core% 100.0 | o100 +0.043(p0.015) o200 +0.066 | Rw1 2.861(p0.001) Rc1 0.194 | loc 0.969[0.950,0.984] | C1 YYYY VOYNICH-LIKE [order n=2114<4731]
+  FX_prose_n10000                    tok  10000 ty  1370 core% 100.0 | o100 +1.044(p0.001) o200 +1.107 | Rw1 0.763(p0.992) Rc1 0.733 | loc 1.000[0.993,1.006] | C1 nnYY - [order n=2114<4731]
+FXd n=10000: planted (b)+(c) True (want True); Markov prose (b)+(c) False (want False) -> PASS
+FIXTURE PASS   runtime 3s; finished Sun Oct 18 14:57:20 PDT 2026 (`date`)

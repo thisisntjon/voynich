@@ -1,0 +1,5 @@
+BOUND order: heaps_beta=0.716 rareJac_adj=0.0205 far=0.0068 ratio=3.02 (207 pages, quires=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'M', 'N', 'O', 'Q', 'S', 'T'])
+REVERSED   : heaps_beta=0.722 rareJac_adj=0.0205 far=0.0068 ratio=3.02
+quire-permuted (30x): heaps 0.679..0.835 (mean 0.731) | adj 0.0203..0.0211 | ratio 2.27..4.95 (mean 3.50)
+page-permuted (30x): heaps 0.677..0.766 (mean 0.721) | adj 0.0055..0.0096 | ratio 0.73..1.51 (mean 1.02)
+Reading: bound-order stats outside quire-permutation range => survive bifolio/quire-level reordering; inside => order-fragile, singulion order matters.

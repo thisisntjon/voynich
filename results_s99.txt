@@ -1,0 +1,26 @@
+S99 - label rare core vs physically nearest body lines (Phase 6.3, E1)
+started Sun Oct 18 12:23:26 PDT 2026 (`date`)  priority=BelowNormal workers=1  free_RAM_GB=7.42
+thresholds: TOP_K=20 TOP_K_BROAD=5 RARE_SUB_SHARE=0.01 MIN_BODY_LINES=4 N_PERM=10000 ALPHA=0.05 NEG_MDE_MAX=0.1 SEED=99018
+stub_match=True (22 modules, 224 data files) 
+[fixture_near] events=72 pages=24 T=0.0736 null_mean=0.5000 sd=0.0254 shift=+0.4264 p=0.0005 MDE=0.0631
+[fixture_none] events=72 pages=24 T=0.5094 null_mean=0.5000 sd=0.0234 shift=-0.0094 p=0.6697 MDE=0.0581
+[fixture_mild] events=72 pages=24 T=0.3035 null_mean=0.4998 sd=0.0236 shift=+0.1963 p=0.0005 MDE=0.0588
+CALL_FIXTURE=True
+data: train_tokens=27668 eligible_pages=32 labels=334 labels_dropped_by_box_guard=0
+[core_slot] events=57 pages=24 T=0.5442 null_mean=0.5004 sd=0.0353 shift=-0.0438 p=0.8953 MDE=0.0877
+[core_zat] events=8 pages=7 T=0.5688 null_mean=0.4994 sd=0.0904 shift=-0.0695 p=0.7735 MDE=0.2247
+[trim] events=35 pages=19 T=0.4822 null_mean=0.4994 sd=0.0416 shift=+0.0172 p=0.3405 MDE=0.1034
+[frame] events=163 pages=30 T=0.5036 null_mean=0.4999 sd=0.0171 shift=-0.0037 p=0.5856 MDE=0.0424
+[common_core] events=154 pages=24 T=0.5020 null_mean=0.5000 sd=0.0109 shift=-0.0020 p=0.5730 MDE=0.0271
+[moved] events=33 pages=18 T=0.4780 null_mean=0.5004 sd=0.0419 shift=+0.0224 p=0.3006 MDE=0.1042
+[core_slot_noadj] events=56 pages=24 T=0.5355 null_mean=0.5004 sd=0.0376 shift=-0.0351 p=0.8254 MDE=0.0934
+[core_slot_k5] events=146 pages=29 T=0.5114 null_mean=0.4997 sd=0.0165 shift=-0.0117 p=0.7619 MDE=0.0410
+[core_zat_k5] events=53 pages=21 T=0.4950 null_mean=0.4998 sd=0.0266 shift=+0.0048 p=0.4300 MDE=0.0661
+recency: primary events whose nearest MATCHING line is a reading-order neighbour = 10/57; whose nearest line overall is a neighbour = 36/57
+CALL_PRIMARY=False  (p=0.8953 < 0.05)
+CALL_SECOND=False  (T_zat=0.5688 < 0.5)
+CALL_CONTROLS=True  (p_frame=0.5856, p_common=0.5730, both >= 0.05)
+POWER: MDE(core_slot) = 0.0877 shift in mean normalized rank at n=57 events / 24 pages (one-sided alpha 0.05, power 0.8); NEG_MDE_MAX=0.1
+VERDICT=NEGATIVE
+sidecars: runs/s99/events_core_slot.csv, runs/s99/summary.json
+finished Sun Oct 18 12:24:34 PDT 2026 (`date`) runtime_s=67.7

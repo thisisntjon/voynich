@@ -1,0 +1,10 @@
+-- identical (expect PASS)
+token check: OK
+L14: tokens A 50 B 50 edits 0 agreement 1.0000
+L17: tokens A 50 B 50 edits 0 agreement 1.0000
+ROUTE_FIXTURE_IDENTICAL=PASS
+-- 10% perturbed (expect FAIL)
+token check: OK
+L14: tokens A 50 B 50 edits 5 agreement 0.9000
+L17: tokens A 50 B 50 edits 7 agreement 0.8600
+ROUTE_FIXTURE_PERTURBED=FAIL

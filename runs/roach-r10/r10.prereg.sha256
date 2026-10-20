@@ -1,0 +1,11 @@
+# r10 pre-registration, voynich-91 (Roach). Frozen at (clock): 2026-10-18 13:54:09 PDT
+# Queue: <team-comms> item r10 (what makes cores repeat inside lines).
+# Fixture run 1 13:49:12 rev0 NOT OK (planted pool matched by copy 8/15). Rev 1: copy window -> distance 1. Run 2 13:50:47 NOT OK (same). Rev 2 (2 of max 2): R_w(d) baseline -> exact within-PAGE expectation. Run 3 13:52:33 OK (copy text: copy 15, pool 0; pool text: pool 13, copy 0).
+# Cores: S1 (r3 lists) and S2 (r7 MDL on ZL). Quantities per held-out quire: t1 R_w(1), t2 R_w(2), t3 mean R_w(3..6) (vs page expectation); t4 R_x'(1); t5 MM-MI K=100 excess (real 200 / copies 20 within-line shuffles); t6 quire locality.
+# Generators (train quires): (i) per-line Polya pool (a closed form); (ii) drifting recency urn across lines (a,tau grid); (iii) copy previous word with prob c (grid). 200 copies; MATCH = all 6 in [0.5,99.5] envelope.
+# CALL: generator matches under a segmenter if >= 8 of 15 folds; report generator(s) matching under BOTH S1 and S2; if none, report each generator's most-missed quantities.
+# Controls: planted copy (c=0.2) -> (iii) must match >= 8; planted pool (a=2) -> (iii) must NOT match >= 8.
+# Verify: grep -v "^#" r10.prereg.sha256 | tr -d '\r' | sha256sum -c -
+ada3231f0b6b0992767c7bd98fb206a4b1f138dcdb11d190cfc521ddaff4f69b  r10.py
+0d5e65db45b3c410bfbcab5b56d45adaab09b09c9af007b3546538a5b9f69b96  ../r7/r7.py
+bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc  ../dl_ZL/ZL3b-n.txt

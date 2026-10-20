@@ -1,0 +1,7 @@
+k=0 LM=german units=24 units/word=4.27
+  VMS real            -4.147
+  pseudo-VMS trigram  -4.265
+  real latin          -4.230
+  real italian        -4.314
+  same-lang ceiling   -2.598
+  real english        -4.267

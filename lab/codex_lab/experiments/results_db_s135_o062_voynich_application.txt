@@ -1,0 +1,9 @@
+db-S135 calibrated O-062 whole-plant application
+freeze_ok=True manifest_ok=True device=cuda:0 gallery_pairs=20 n_control=473 n_voynich=123 failures=0
+MDE_hit1=0.114644203 POWER_OK=False
+PRIMARY_hit1: mean_V=0.097560976 mean_C=0.150105708 delta=-0.052544733 p=0.956404360 null_q99=+0.080630468
+SECONDARY_hit5: mean_V=0.455284553 mean_C=0.457716702 delta=-0.002432149 p=0.547645235 null_q99=+0.089766067
+LOKO: positive=0/20 median_delta=-0.054658898
+SIGNAL=False
+VERDICT: NO_CALL_UNDERPOWERED
+runtime_seconds=49.436

@@ -1,0 +1,26 @@
+S118 Antidotarium source specificity
+script_sha256=3E12567EDCD1C7BDEB10879BEF3E48D93C2A0250BC6E48524B43873778F82118
+prereg_sha256=1DB74B69CB59FD3A4014D6A05DAFE0678367BD11C3F2C1C2D9B8F045E2AE8CCA
+[PLANTED]
+  ANT_FORMULA: median_r=+0.542681, p=0.000500, positive=10/10
+  CREMMA_MED: median_r=+0.121688, p=0.000500, positive=10/10
+  ANT_INDICATION: median_r=+0.118727, p=0.000500, positive=10/10
+  CAESAR: median_r=+0.048610, p=0.028486, positive=9/10
+  FORMULA_CONFIG: median_r=+0.008879, p=0.301849, positive=6/10
+  formula_rank=1, mean_delta=+0.355155, signflip_p=0.001951
+[CANON_COMP_CORE]
+  ANT_FORMULA: median_r=+0.110273, p=0.000500, positive=10/10
+  ANT_INDICATION: median_r=+0.059431, p=0.001499, positive=7/10
+  CREMMA_MED: median_r=+0.036316, p=0.026487, positive=8/10
+  CAESAR: median_r=+0.032031, p=0.019490, positive=7/10
+  FORMULA_CONFIG: median_r=-0.008667, p=0.629185, positive=3/10
+  formula_rank=1, mean_delta=+0.032479, signflip_p=0.053659
+[TRIM1]
+  ANT_FORMULA: median_r=+0.083682, p=0.000500, positive=9/10
+  ANT_INDICATION: median_r=+0.054641, p=0.036982, positive=9/10
+  CREMMA_MED: median_r=+0.053486, p=0.013993, positive=8/10
+  CAESAR: median_r=-0.005497, p=0.490755, positive=4/10
+  FORMULA_CONFIG: median_r=-0.020442, p=0.798101, positive=3/10
+  formula_rank=1, mean_delta=-0.014495, signflip_p=0.684878
+power_pass=True
+VERDICT=GENERIC_OR_NON_SPECIFIC_GRAPH_LINK

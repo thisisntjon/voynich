@@ -1,0 +1,41 @@
+S1: Pre-registered v2 Joint Producer Comparison (Family C `nomen_s1_joint` vs Family G `c2_s1_joint`)
+s1_prereg_sha256=436704043f65054ebd224bb7acf6cdc2f3dac9e4e2f9383da78d1740a51116cc (stub_match=True)  PREREG-v2.md[:16]=f8c42d76a3e7651b  ranges=results_m4_phase1_board.json[:16]=bb86177034d324c9
+Equal tuning budget: 1 seed-0 type-count parameter per entrant (14-step bisection to target=7,025 types); evaluated once at seed=1
+
+[Calibration C `nomen_s1_joint` on seed=0] p_coin=0.0428 -> types=7013 (target 7025), h2=2.251, hapax=0.462, repeat=0.16% (14 configs logged)
+[Calibration G `c2_s1_joint` on seed=0]    lam=2.9572    -> types=7023 (target 7025), h2=2.128, hapax=0.665, repeat=1.05% (14 configs logged)
+
+=== Full-Book Content & Word-Order Checks (ZL3b, 34,857 tokens) ===
+  voynich_MS           | types=7025 hapax=0.680 h2=2.109 edge=+0.181 rep=0.94% | F1_quire=+0.0461 [+0.0357,+0.0564] | NMI h1 0.275 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.333 (quire p 0.133/7bl, bifolio p 0.005/12bl)
+  nomen_s1_joint (C)   | types=6924 hapax=0.460 h2=2.253 edge=+0.216 rep=0.17% | F1_quire=+0.0247 [+0.0163,+0.0338] | NMI h1 0.366 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.105 (quire p 0.010/7bl, bifolio p 0.000/12bl)
+  c2_s1_joint (G)      | types=7604 hapax=0.678 h2=2.160 edge=+0.227 rep=0.97% | F1_quire=+0.0235 [+0.0119,+0.0347] | NMI h1 0.142 (quire p 0.018/11bl, bifolio p 0.000/27bl)  NMI h2 0.141 (quire p 0.010/7bl, bifolio p 0.000/12bl)
+
+=== PREREG-v2 Joint Scoreboard Across Subsets (all / Currier A / Currier B) ===
+--- Subset: ALL ---
+  voynich_ALL          | v1=PASS (missed: NONE                        ) | h2=2.126 sd=1.764 JSDf=0.1759 p=x17.89 m=x16.31 ex=+0.1809 rep=0.90% types25k=5417 | outs L=9(t7) C=7(t5) G=4(t4)
+      vs L: out=9 (h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl) | tight-out=7 (h2, jsd_first_fg, p_init_enrich, m_final_enrich, redup_pct, x_position_entropy, x_ltr_minus_rtl)
+      vs C: out=7 (h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_ltr_minus_rtl) | tight-out=5 (h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word)
+      vs G: out=4 (jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word) | tight-out=4 (jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word)
+  nomen_s1_joint_ALL   | v1=FAIL (missed: jsd_first_fg,p_init_enrich,m_final_enrich,redup_pct) | h2=2.246 sd=1.838 JSDf=0.0999 p=x4.40 m=x2.76 ex=+0.2130 rep=0.18% types25k=5563 | outs L=7(t5) C=6(t4) G=3(t3)
+      vs L: out=7 (h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, x_edge_mi_word, x_position_entropy) | tight-out=5 (h2, jsd_first_fg, p_init_enrich, m_final_enrich, x_position_entropy)
+      vs C: out=6 (h2, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_ltr_minus_rtl) | tight-out=4 (h2, cross_excess_eva, redup_pct, x_edge_mi_word)
+      vs G: out=3 (jsd_first_fg, cross_excess_eva, x_edge_mi_word) | tight-out=3 (jsd_first_fg, cross_excess_eva, x_edge_mi_word)
+  c2_s1_joint_ALL      | v1=FAIL (missed: p_init_enrich,m_final_enrich) | h2=2.144 sd=2.062 JSDf=0.1181 p=x6.37 m=x4.07 ex=+0.2244 rep=1.14% types25k=5575 | outs L=9(t7) C=6(t4) G=3(t3)
+      vs L: out=9 (h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl) | tight-out=7 (h2, jsd_first_fg, p_init_enrich, m_final_enrich, redup_pct, x_position_entropy, x_ltr_minus_rtl)
+      vs C: out=6 (h2, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_ltr_minus_rtl) | tight-out=4 (h2, cross_excess_eva, redup_pct, x_edge_mi_word)
+      vs G: out=3 (jsd_first_fg, cross_excess_eva, x_edge_mi_word) | tight-out=3 (jsd_first_fg, cross_excess_eva, x_edge_mi_word)
+
+--- Subset: Currier_A ---
+  voynich_Currier_A    | v1=FAIL (missed: m_final_enrich              ) | h2=2.145 sd=1.786 JSDf=0.1392 p=x11.62 m=x6.21 ex=+0.1203 rep=0.86% types25k=3217 | outs L=7(t7) C=7(t5) G=3(t3)
+  nomen_s1_joint_Currier_A | v1=FAIL (missed: jsd_first_fg,p_init_enrich,m_final_enrich,redup_pct) | h2=2.233 sd=1.799 JSDf=0.0962 p=x3.41 m=x2.87 ex=+0.2183 rep=0.22% types25k=3129 | outs L=7(t5) C=6(t4) G=3(t3)
+  c2_s1_joint_Currier_A | v1=FAIL (missed: p_init_enrich,m_final_enrich) | h2=2.166 sd=2.028 JSDf=0.1198 p=x7.02 m=x3.78 ex=+0.2243 rep=1.21% types25k=3224 | outs L=9(t7) C=6(t4) G=4(t3)
+
+--- Subset: Currier_B ---
+  voynich_Currier_B    | v1=PASS (missed: NONE                        ) | h2=1.998 sd=1.779 JSDf=0.2191 p=x21.78 m=x32.09 ex=+0.2321 rep=0.84% types25k=4788 | outs L=9(t7) C=7(t5) G=6(t5)
+  nomen_s1_joint_Currier_B | v1=FAIL (missed: p_init_enrich,m_final_enrich,redup_pct) | h2=2.259 sd=1.857 JSDf=0.1070 p=x5.86 m=x2.54 ex=+0.2144 rep=0.15% types25k=5511 | outs L=8(t6) C=6(t4) G=3(t3)
+  c2_s1_joint_Currier_B | v1=FAIL (missed: sd_len,p_init_enrich,m_final_enrich) | h2=2.157 sd=2.114 JSDf=0.1219 p=x7.31 m=x4.28 ex=+0.2275 rep=0.90% types25k=5389 | outs L=9(t7) C=6(t4) G=4(t4)
+
+=== PREREG-v2 BOUNDED VERDICT ===
+  nomen_s1_joint (C) v1 bands: ALL=False (missed: ['jsd_first_fg', 'p_init_enrich', 'm_final_enrich', 'redup_pct']), A=False (missed: ['jsd_first_fg', 'p_init_enrich', 'm_final_enrich', 'redup_pct']), B=False (missed: ['p_init_enrich', 'm_final_enrich', 'redup_pct'])
+  c2_s1_joint (G)    v1 bands: ALL=False (missed: False -> ['p_init_enrich', 'm_final_enrich']), A=False (missed: ['p_init_enrich', 'm_final_enrich']), B=False (missed: ['sd_len', 'p_init_enrich', 'm_final_enrich'])
+  OVERALL S1 VERDICT: NEITHER JOINT-PASSES ALL 7 v1 BANDS (see residual misses above)

@@ -1,0 +1,15 @@
+# Python 3.11 (tested): the versions the 3.11 reruns used and reproduced with (numpy 2.4.6, scipy 1.17.0, scikit-learn 1.8.0).
+# For Python 3.12 or newer use requirements-lock-py313.txt (the project's 3.13 environment).
+et_xmlfile==2.0.0
+joblib==1.5.3
+narwhals==2.15.0
+numpy==2.4.6
+openpyxl==3.1.5
+pypdf==6.11.0
+PyYAML==6.0.3
+scikit-learn==1.8.0
+scipy==1.17.0
+threadpoolctl==3.6.0
+psutil==7.2.1
+defusedxml==0.7.1
+cloudpickle==3.1.2

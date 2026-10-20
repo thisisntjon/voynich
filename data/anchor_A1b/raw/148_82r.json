@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:03:16.6232395Z",
+ "response": "{\n  \"PT\": \"MARGINAL\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"0\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"MULTI\",\n  \"J_shape\": \"OTHER\",\n  \"J_count\": \"1-2\",\n  \"J_fragcount\": \"NA\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"HUMAN\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"0\",\n  \"C_rings\": \"4+\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"2\",\n  \"B_figures\": \"6-10\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Page with marginal drawings, no central diagram or plant.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2598040500,
+ "load_duration": 186210200,
+ "prompt_eval_count": 3268,
+ "prompt_eval_duration": 720958000,
+ "eval_count": 207,
+ "eval_duration": 1549637000,
+ "stem": "148_82r"
+}

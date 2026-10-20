@@ -1,0 +1,29 @@
+S42: line n-1 same-x edit<=1 recency hits classified by layer (core vs operator frame); within-page line-permutation null
+run started Sat Oct 17 22:24:03 PDT 2026 (`date`)
+s42_recency_by_layer.py sha256=d58581375cd53b74e71ea5c008e1345859dde96ae11e7bed86379ac4176812df  prereg stub_match=True
+recency definition: s35_physical_codicology_quire_network.py sha256=c86b92c82ae8a14b5da3b74325cdea51a4367f7cc0b51d80b237510b0d8a1c51 (copied, not imported); m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b (loaded by path)
+null: within-page line permutation, 200 draws, random.Random(20261017); prediction: same-core/changed-affix excess > same-affix/changed-core excess
+
+SlotSegmenter on 34857 ZL3b tokens: 28 prefixes ['a', 'al', 'ch', 'che', 'cho', 'cth', 'dal', 'k', 'l', 'lk', 'o', 'ok', 'oke', 'ol', 'ot', 'ota', 'ote', 'p', 'qo', 'qok', 'qot', 'r', 'she', 'sho', 't', 'y', 'yk', 'yt']; 18 suffixes ['ain', 'air', 'al', 'am', 'ar', 'chy', 'd', 'dal', 'dar', 'eey', 'hy', 'ky', 'o', 'ody', 'ol', 'or', 's', 'y']; 2335 cores
+m1.build_pages: 204 aligned pages, 3782 aligned paragraph lines, 31495 tokens
+
+observed: 22046 same-x probes (line n vs line n-1, d <= 0.5 W); 1017 edit<=1 hits = 4.61 % (check vs results_s35 'Line n-1 same_x edit<=1 : obs=…%'); exact 233 = 1.06 %
+  both-same                 :   233 hits    1.06 % of probes    22.9 % of hits
+  same-core/changed-affix   :   235 hits    1.07 % of probes    23.1 % of hits
+  same-affix/changed-core   :   230 hits    1.04 % of probes    22.6 % of hits
+  other                     :   319 hits    1.45 % of probes    31.4 % of hits
+
+null (200 draws): comparison line = random other line of the same page; probes per draw mean 23307
+  class                      |   obs | null mean      sd |  excess       z       p |   obs %  null %
+  both-same                  |   233 |     208.1    14.5 |   +24.9   +1.72   0.045 |    1.06    0.89
+  same-core/changed-affix    |   235 |     198.5    14.0 |   +36.5   +2.60   0.010 |    1.07    0.85
+  same-affix/changed-core    |   230 |     194.2    13.2 |   +35.8   +2.70   0.005 |    1.04    0.83
+  other                      |   319 |     282.3    15.9 |   +36.7   +2.31   0.010 |    1.45    1.21
+
+=== READING (pre-registered rule) ===
+excess same-core/changed-affix +36.5 (z +2.60, p 0.010) vs same-affix/changed-core +35.8 (z +2.70, p 0.005); margin +0.7 hits -> core copied
+prediction (same-core/changed-affix dominates above null): CONFIRMED
+exact hits (both-same, not in the rule): excess +24.9 (z +1.72); other: excess +36.7 (z +2.31)
+
+elapsed 9.1 s
+run finished Sat Oct 17 22:24:12 PDT 2026 (`date`)

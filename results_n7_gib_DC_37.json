@@ -1,0 +1,129 @@
+{
+ "row": {
+  "name": "gib_DC_37",
+  "tokens": 317,
+  "types": 308,
+  "pages": 2,
+  "lines": 40,
+  "errors": {
+   "extra": "ZeroDivisionError: float division by zero",
+   "bake": "KeyError: 'markov3'"
+  },
+  "types_25k": 308,
+  "h2": 3.5878,
+  "sd_len": 2.274,
+  "jsd_first_fg": 0.1712,
+  "p_init_enrich": 2.15,
+  "m_final_enrich": 1.32,
+  "cross_excess_eva": 0.1747,
+  "redup_pct": 0.0,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "p_init_enrich",
+   "m_final_enrich",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "gib_DC_37",
+   "tokens": 317,
+   "types": 308,
+   "hapax_rate": 0.9935,
+   "mean_len": 6.423,
+   "sd_len": 2.274,
+   "h1": 4.1748,
+   "h2": 3.5878,
+   "h3": 2.3265,
+   "zipf": -0.0462,
+   "redup_pct": 0.0,
+   "jsd_first_fg": 0.1712,
+   "jsd_last_lg": 0.1497,
+   "p_init_enrich": 2.15,
+   "m_final_enrich": 1.32,
+   "cross_mi_eva": 1.2435,
+   "cross_excess_eva": 0.1747,
+   "cross_mi_glyph": 1.274,
+   "cross_excess_glyph": 0.1709,
+   "recur_le_1": 0.0,
+   "recur_le_5": 0.0,
+   "recur_le_20": 0.0063,
+   "recur_le_100": 0.0284
+  },
+  "info_mi_adjacent": 0.0,
+  "info_mi_page": 0.0,
+  "info_samecol_minus_othercol": 0.0014440433212996595,
+  "info_bpe_adjacent": 0.25882235025328804,
+  "lex_beta": null,
+  "lex_rate_late_early": null,
+  "lex_edit1_excess": 0.016233766233766232,
+  "slot_occupancy_pc": 0.04043730242360379,
+  "slot_table_likeness": 0.9911899788745645,
+  "slot_core_crowding": 0.2945205479452055,
+  "x_edge_mi_word": null,
+  "x_position_entropy": null,
+  "x_ltr_minus_rtl": null,
+  "x_moran_I": null,
+  "bake_char3_minus_unigram": null,
+  "x_hapax_10k": null,
+  "bake_winner": null,
+  "family": "X",
+  "note": "data\\controls_gibberish\\gib_DC_37.meta.json; 317 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 3,
+    "outs": 4,
+    "na": 3,
+    "out_metrics": [
+     "jsd_first_fg",
+     "p_init_enrich",
+     "cross_excess_eva",
+     "types_25k"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "p_init_enrich"
+    ]
+   },
+   "C": {
+    "ins": 2,
+    "outs": 3,
+    "na": 5,
+    "out_metrics": [
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "types_25k"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "cross_excess_eva"
+    ]
+   },
+   "G": {
+    "ins": 2,
+    "outs": 5,
+    "na": 3,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "types_25k"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "results_m4_phase1_board.json"
+}

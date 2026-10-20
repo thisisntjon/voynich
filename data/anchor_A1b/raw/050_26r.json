@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T03:54:40.2033028Z",
+ "response": "{\n  \"PT\": \"PLANT\",\n  \"P_plants\": \"1\",\n  \"P_root\": \"TAPROOT\",\n  \"P_leafshape\": \"ROUND\",\n  \"P_leafcount\": \"5-10\",\n  \"P_flower\": \"2-4\",\n  \"P_habit\": \"ROSETTE\",\n  \"J_shape\": \"NONE\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"0\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"EMPTY\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"0\",\n  \"C_rings\": \"0-1\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"0\",\n  \"B_figures\": \"0\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2772584400,
+ "load_duration": 299007900,
+ "prompt_eval_count": 3225,
+ "prompt_eval_duration": 801191000,
+ "eval_count": 197,
+ "eval_duration": 1463060000,
+ "stem": "050_26r"
+}

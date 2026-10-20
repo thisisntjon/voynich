@@ -1,0 +1,454 @@
+s84 -- s73 word-stem alignment, leave-one-quire-out, >= 100 matched nulls per transliteration, language call
+Run timestamp : Sun Oct 18 04:52:03 PDT 2026 (`date`)
+Python        : 3.11.9 (isolated -I=1); torch 2.11.0.dev20260115+cu128
+device        : cuda (NVIDIA GeForce RTX 5080) for shuffles, quantiles and exceedance counts; s73 solver (alignment search) on CPU numpy, imported unchanged
+workers       : 4 processes, BelowNormal (psutil), single-threaded BLAS
+s84_stem_alignment_loqo.py sha256=772460e675e83951bd0c0089208fab182ce4d52294ff079f2e0b741b20fe3ef9
+prereg stub s84_stem_alignment_loqo.prereg.sha256 sha256=fa4e079316d23263aeff5f68f1835a0af1d13106c2e776bb8e1fa461cb55706d  stub_match=True
+  local import a1_profile.py sha256=0b20e37ec2254d27
+  local import a2_position.py sha256=426b7b649361a877
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad3
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cce
+  local import c1_quire_null.py sha256=9f0bb9a84f8b1048
+  local import c2_section_generator.py sha256=f21281d9fe41d309
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6e
+  local import corpora.py sha256=2f2b3d4af32a054a
+  local import corpora_ext.py sha256=d7a0be47e77b57b1
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d
+  local import f2_syllable_control.py sha256=440ff45dee9087ab
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16d
+  local import g1_edge_joint.py sha256=4f955d3479429372
+  local import m1_coordinates.py sha256=0ddc1eaafd22eb85
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e081
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef5
+  local import p1_bifolio_null.py sha256=3aba99a6cdd124a5
+  local import p4d1_core_order.py sha256=5a400968081214ba
+  local import s29_q1_label_controls.py sha256=5676bd92ae940c63
+  local import s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8
+  local import s50_solver.py sha256=c63e035be6a0e03f
+  local import s50_solver_ladder.py sha256=1b5c5227cf12db05
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c9
+  local import s56_core_repetition_lag.py sha256=1e5987dfee74c819
+  local import s57_local_memory_model.py sha256=4adc4796938b68f9
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7d
+  local import s73_word_code_solver_and_syllabary.py sha256=06f2241b51c9f314
+  local import s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa
+  local import s80_a14_size_matched.py sha256=196cf61f3ca5af44
+  local import s82_cipher_rescore_matched_k.py sha256=084488da6ba79a42
+  local import s84_stem_alignment_loqo.py sha256=772460e675e83951
+  local import scoreboard/__init__.py sha256=4b9a400be433c242
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc
+  local import scoreboard/score.py sha256=3a7b7c3efea13b88
+  local import tools/boxes.py sha256=8b4d2fdb08aa01f4
+  local import vparse.py sha256=0e317c9a762e77c2
+
+folds (quires with >= 4 ZL3b pages): A B C D E F G H I M N O Q S T (15)
+P4-D1 instances (s82 curve matches): 25
+jobs: 324  (per transliteration: 1 Voynich + 105 nulls; 6 planted W3 controls on ZL3b)
+
+  done VOY_ZL3b                                 [21s, types 2335, tokens 34857]  t+27s
+  done LSHUF_ZL3b_00                            [21s, types 2335, tokens 34857]  t+27s
+  done LSHUF_ZL3b_01                            [21s, types 2335, tokens 34857]  t+27s
+  done LSHUF_ZL3b_02                            [21s, types 2335, tokens 34857]  t+27s
+  done LSHUF_ZL3b_03                            [19s, types 2335, tokens 34857]  t+45s
+  done LSHUF_ZL3b_04                            [19s, types 2335, tokens 34857]  t+45s
+  done LSHUF_ZL3b_05                            [19s, types 2335, tokens 34857]  t+46s
+  done LSHUF_ZL3b_06                            [19s, types 2335, tokens 34857]  t+46s
+  done LSHUF_ZL3b_07                            [18s, types 2335, tokens 34857]  t+64s
+  done LSHUF_ZL3b_08                            [18s, types 2335, tokens 34857]  t+64s
+  done LSHUF_ZL3b_09                            [18s, types 2335, tokens 34857]  t+64s
+  done LSHUF_ZL3b_10                            [18s, types 2335, tokens 34857]  t+64s
+  done LSHUF_ZL3b_11                            [18s, types 2335, tokens 34857]  t+82s
+  done LSHUF_ZL3b_12                            [18s, types 2335, tokens 34857]  t+82s
+  done LSHUF_ZL3b_13                            [18s, types 2335, tokens 34857]  t+82s
+  done LSHUF_ZL3b_14                            [18s, types 2335, tokens 34857]  t+82s
+  done LSHUF_ZL3b_15                            [19s, types 2335, tokens 34857]  t+101s
+  done LSHUF_ZL3b_16                            [19s, types 2335, tokens 34857]  t+101s
+  done LSHUF_ZL3b_17                            [19s, types 2335, tokens 34857]  t+101s
+  done LSHUF_ZL3b_18                            [19s, types 2335, tokens 34857]  t+101s
+  done LSHUF_ZL3b_19                            [18s, types 2335, tokens 34857]  t+119s
+  done BSHUF_ZL3b_00                            [18s, types 2335, tokens 34857]  t+119s
+  done BSHUF_ZL3b_01                            [18s, types 2335, tokens 34857]  t+119s
+  done BSHUF_ZL3b_02                            [18s, types 2335, tokens 34857]  t+120s
+  done BSHUF_ZL3b_03                            [18s, types 2335, tokens 34857]  t+137s
+  done BSHUF_ZL3b_04                            [18s, types 2335, tokens 34857]  t+137s
+  done BSHUF_ZL3b_05                            [18s, types 2335, tokens 34857]  t+137s
+  done BSHUF_ZL3b_06                            [18s, types 2335, tokens 34857]  t+138s
+  done BSHUF_ZL3b_07                            [18s, types 2335, tokens 34857]  t+155s
+  done BSHUF_ZL3b_08                            [18s, types 2335, tokens 34857]  t+155s
+  done BSHUF_ZL3b_09                            [18s, types 2335, tokens 34857]  t+155s
+  done BSHUF_ZL3b_10                            [18s, types 2335, tokens 34857]  t+156s
+  done BSHUF_ZL3b_11                            [18s, types 2335, tokens 34857]  t+174s
+  done BSHUF_ZL3b_12                            [19s, types 2335, tokens 34857]  t+174s
+  done BSHUF_ZL3b_13                            [18s, types 2335, tokens 34857]  t+174s
+  done BSHUF_ZL3b_14                            [18s, types 2335, tokens 34857]  t+174s
+  done BSHUF_ZL3b_15                            [18s, types 2335, tokens 34857]  t+192s
+  done BSHUF_ZL3b_16                            [18s, types 2335, tokens 34857]  t+192s
+  done BSHUF_ZL3b_17                            [18s, types 2335, tokens 34857]  t+192s
+  done BSHUF_ZL3b_18                            [18s, types 2335, tokens 34857]  t+192s
+  done BSHUF_ZL3b_19                            [18s, types 2335, tokens 34857]  t+210s
+  done S67_ZL3b_00                              [18s, types 1616, tokens 34857]  t+210s
+  done S67_ZL3b_01                              [18s, types 1630, tokens 34857]  t+210s
+  done S67_ZL3b_02                              [18s, types 1570, tokens 34857]  t+211s
+  done S67_ZL3b_03                              [19s, types 1618, tokens 34857]  t+229s
+  done S67_ZL3b_04                              [18s, types 1630, tokens 34857]  t+229s
+  done S67_ZL3b_05                              [18s, types 1586, tokens 34857]  t+229s
+  done S67_ZL3b_06                              [19s, types 1580, tokens 34857]  t+229s
+  done S67_ZL3b_07                              [18s, types 1625, tokens 34857]  t+247s
+  done S67_ZL3b_08                              [18s, types 1625, tokens 34857]  t+247s
+  done S67_ZL3b_09                              [18s, types 1616, tokens 34857]  t+247s
+  done S67_ZL3b_10                              [18s, types 1621, tokens 34857]  t+247s
+  done S67_ZL3b_11                              [18s, types 1611, tokens 34857]  t+265s
+  done S67_ZL3b_12                              [18s, types 1593, tokens 34857]  t+265s
+  done S67_ZL3b_13                              [18s, types 1634, tokens 34857]  t+265s
+  done S67_ZL3b_14                              [18s, types 1615, tokens 34857]  t+265s
+  done S67_ZL3b_15                              [18s, types 1602, tokens 34857]  t+283s
+  done S67_ZL3b_16                              [19s, types 1594, tokens 34857]  t+283s
+  done S67_ZL3b_17                              [18s, types 1582, tokens 34857]  t+283s
+  done S67_ZL3b_18                              [19s, types 1581, tokens 34857]  t+284s
+  done S67_ZL3b_19                              [19s, types 1622, tokens 34857]  t+302s
+  done S57_ZL3b_00                              [19s, types 2387, tokens 34857]  t+302s
+  done S57_ZL3b_01                              [19s, types 2412, tokens 34857]  t+302s
+  done S57_ZL3b_02                              [19s, types 2378, tokens 34857]  t+303s
+  done S57_ZL3b_03                              [19s, types 2401, tokens 34857]  t+321s
+  done S57_ZL3b_04                              [19s, types 2413, tokens 34857]  t+321s
+  done S57_ZL3b_05                              [19s, types 2454, tokens 34857]  t+321s
+  done S57_ZL3b_06                              [19s, types 2410, tokens 34857]  t+322s
+  done S57_ZL3b_07                              [18s, types 2387, tokens 34857]  t+339s
+  done S57_ZL3b_08                              [19s, types 2406, tokens 34857]  t+339s
+  done S57_ZL3b_09                              [19s, types 2416, tokens 34857]  t+340s
+  done S57_ZL3b_10                              [18s, types 2437, tokens 34857]  t+340s
+  done S57_ZL3b_11                              [19s, types 2388, tokens 34857]  t+358s
+  done S57_ZL3b_12                              [19s, types 2428, tokens 34857]  t+359s
+  done S57_ZL3b_13                              [19s, types 2414, tokens 34857]  t+359s
+  done S57_ZL3b_14                              [19s, types 2403, tokens 34857]  t+359s
+  done S57_ZL3b_15                              [19s, types 2364, tokens 34857]  t+377s
+  done S57_ZL3b_16                              [19s, types 2395, tokens 34857]  t+378s
+  done S57_ZL3b_17                              [19s, types 2386, tokens 34857]  t+378s
+  done S57_ZL3b_18                              [19s, types 2363, tokens 34857]  t+378s
+  done S57_ZL3b_19                              [19s, types 2392, tokens 34857]  t+396s
+  done P4D1_ZL3b_K1_latin_caesar_s1             [21s, types 1720, tokens 34857]  t+398s
+  done P4D1_ZL3b_K1_latin_caesar_s2             [21s, types 1653, tokens 34857]  t+399s
+  done P4D1_ZL3b_K1_latin_caesar_s3             [20s, types 1643, tokens 34857]  t+399s
+  done P4D1_ZL3b_K3_latin_caesar_s1             [20s, types 2155, tokens 34857]  t+416s
+  done P4D1_ZL3b_K3_latin_caesar_s2             [20s, types 2186, tokens 34857]  t+418s
+  done P4D1_ZL3b_K3_latin_caesar_s3             [20s, types 2152, tokens 34857]  t+419s
+  done P4D1_ZL3b_K1_latin_augustine_s1          [21s, types 1688, tokens 34857]  t+419s
+  done P4D1_ZL3b_K1_latin_augustine_s2          [20s, types 1690, tokens 34857]  t+436s
+  done P4D1_ZL3b_K1_latin_augustine_s3          [20s, types 1624, tokens 34857]  t+439s
+  done P4D1_ZL3b_K3_latin_augustine_s1          [20s, types 2194, tokens 34857]  t+439s
+  done P4D1_ZL3b_K3_latin_augustine_s2          [20s, types 2198, tokens 34857]  t+439s
+  done P4D1_ZL3b_K3_latin_augustine_s3          [20s, types 2204, tokens 34857]  t+456s
+  done P4D1_ZL3b_K1_italian_dante_s1            [20s, types 1695, tokens 34857]  t+459s
+  done P4D1_ZL3b_K1_italian_dante_s2            [20s, types 1679, tokens 34857]  t+459s
+  done P4D1_ZL3b_K1_italian_dante_s3            [20s, types 1613, tokens 34857]  t+459s
+  done P4D1_ZL3b_K3_italian_dante_s1            [20s, types 2150, tokens 34857]  t+477s
+  done P4D1_ZL3b_K3_italian_dante_s2            [20s, types 2206, tokens 34857]  t+479s
+  done P4D1_ZL3b_K3_italian_dante_s3            [20s, types 2129, tokens 34857]  t+479s
+  done P4D1_ZL3b_K1_german_kafka_s1             [21s, types 1715, tokens 34857]  t+480s
+  done P4D1_ZL3b_K1_german_kafka_s2             [20s, types 1640, tokens 34857]  t+497s
+  done P4D1_ZL3b_K3_german_kafka_s1             [20s, types 2182, tokens 34857]  t+499s
+  done P4D1_ZL3b_K1_english_alice_s1            [20s, types 1661, tokens 34857]  t+500s
+  done P4D1_ZL3b_K1_english_alice_s3            [20s, types 1606, tokens 34857]  t+500s
+  done P4D1_ZL3b_K3_english_alice_s1            [20s, types 2235, tokens 34857]  t+517s
+  done P4D1_ZL3b_K3_english_alice_s3            [20s, types 2238, tokens 34857]  t+518s
+  done VOY_RF1b                                 [20s, types 2536, tokens 34618]  t+519s
+  done LSHUF_RF1b_00                            [19s, types 2536, tokens 34618]  t+519s
+  done LSHUF_RF1b_01                            [19s, types 2536, tokens 34618]  t+536s
+  done LSHUF_RF1b_02                            [19s, types 2536, tokens 34618]  t+538s
+  done LSHUF_RF1b_03                            [19s, types 2536, tokens 34618]  t+538s
+  done LSHUF_RF1b_04                            [19s, types 2536, tokens 34618]  t+538s
+  done LSHUF_RF1b_05                            [19s, types 2536, tokens 34618]  t+555s
+  done LSHUF_RF1b_06                            [19s, types 2536, tokens 34618]  t+557s
+  done LSHUF_RF1b_07                            [19s, types 2536, tokens 34618]  t+557s
+  done LSHUF_RF1b_08                            [19s, types 2536, tokens 34618]  t+557s
+  done LSHUF_RF1b_09                            [19s, types 2536, tokens 34618]  t+573s
+  done LSHUF_RF1b_10                            [19s, types 2536, tokens 34618]  t+575s
+  done LSHUF_RF1b_11                            [19s, types 2536, tokens 34618]  t+575s
+  done LSHUF_RF1b_12                            [19s, types 2536, tokens 34618]  t+576s
+  done LSHUF_RF1b_13                            [19s, types 2536, tokens 34618]  t+592s
+  done LSHUF_RF1b_14                            [19s, types 2536, tokens 34618]  t+594s
+  done LSHUF_RF1b_15                            [19s, types 2536, tokens 34618]  t+594s
+  done LSHUF_RF1b_16                            [19s, types 2536, tokens 34618]  t+595s
+  done LSHUF_RF1b_17                            [19s, types 2536, tokens 34618]  t+611s
+  done LSHUF_RF1b_18                            [19s, types 2536, tokens 34618]  t+613s
+  done LSHUF_RF1b_19                            [19s, types 2536, tokens 34618]  t+613s
+  done BSHUF_RF1b_00                            [19s, types 2536, tokens 34618]  t+614s
+  done BSHUF_RF1b_01                            [19s, types 2536, tokens 34618]  t+630s
+  done BSHUF_RF1b_02                            [19s, types 2536, tokens 34618]  t+632s
+  done BSHUF_RF1b_03                            [19s, types 2536, tokens 34618]  t+632s
+  done BSHUF_RF1b_04                            [19s, types 2536, tokens 34618]  t+632s
+  done BSHUF_RF1b_05                            [19s, types 2536, tokens 34618]  t+648s
+  done BSHUF_RF1b_06                            [19s, types 2536, tokens 34618]  t+650s
+  done BSHUF_RF1b_07                            [19s, types 2536, tokens 34618]  t+651s
+  done BSHUF_RF1b_08                            [18s, types 2536, tokens 34618]  t+651s
+  done BSHUF_RF1b_09                            [19s, types 2536, tokens 34618]  t+667s
+  done BSHUF_RF1b_10                            [19s, types 2536, tokens 34618]  t+669s
+  done BSHUF_RF1b_11                            [19s, types 2536, tokens 34618]  t+669s
+  done BSHUF_RF1b_12                            [19s, types 2536, tokens 34618]  t+669s
+  done BSHUF_RF1b_13                            [19s, types 2536, tokens 34618]  t+686s
+  done BSHUF_RF1b_14                            [19s, types 2536, tokens 34618]  t+688s
+  done BSHUF_RF1b_15                            [19s, types 2536, tokens 34618]  t+688s
+  done BSHUF_RF1b_16                            [19s, types 2536, tokens 34618]  t+688s
+  done BSHUF_RF1b_17                            [19s, types 2536, tokens 34618]  t+705s
+  done BSHUF_RF1b_18                            [19s, types 2536, tokens 34618]  t+707s
+  done BSHUF_RF1b_19                            [19s, types 2536, tokens 34618]  t+707s
+  done S67_RF1b_00                              [19s, types 1714, tokens 34618]  t+707s
+  done S67_RF1b_01                              [19s, types 1771, tokens 34618]  t+724s
+  done S67_RF1b_02                              [19s, types 1728, tokens 34618]  t+726s
+  done S67_RF1b_03                              [19s, types 1711, tokens 34618]  t+726s
+  done S67_RF1b_04                              [19s, types 1760, tokens 34618]  t+726s
+  done S67_RF1b_05                              [19s, types 1756, tokens 34618]  t+742s
+  done S67_RF1b_06                              [19s, types 1717, tokens 34618]  t+744s
+  done S67_RF1b_07                              [19s, types 1736, tokens 34618]  t+745s
+  done S67_RF1b_08                              [19s, types 1708, tokens 34618]  t+745s
+  done S67_RF1b_09                              [18s, types 1782, tokens 34618]  t+761s
+  done S67_RF1b_10                              [18s, types 1733, tokens 34618]  t+763s
+  done S67_RF1b_11                              [18s, types 1727, tokens 34618]  t+763s
+  done S67_RF1b_12                              [18s, types 1748, tokens 34618]  t+763s
+  done S67_RF1b_13                              [19s, types 1744, tokens 34618]  t+780s
+  done S67_RF1b_14                              [19s, types 1746, tokens 34618]  t+781s
+  done S67_RF1b_15                              [19s, types 1702, tokens 34618]  t+782s
+  done S67_RF1b_16                              [19s, types 1788, tokens 34618]  t+782s
+  done S67_RF1b_17                              [19s, types 1736, tokens 34618]  t+798s
+  done S67_RF1b_18                              [19s, types 1725, tokens 34618]  t+800s
+  done S67_RF1b_19                              [19s, types 1730, tokens 34618]  t+801s
+  done S57_RF1b_00                              [19s, types 2590, tokens 34618]  t+801s
+  done S57_RF1b_01                              [19s, types 2539, tokens 34618]  t+817s
+  done S57_RF1b_02                              [19s, types 2564, tokens 34618]  t+819s
+  done S57_RF1b_03                              [19s, types 2557, tokens 34618]  t+820s
+  done S57_RF1b_04                              [19s, types 2478, tokens 34618]  t+820s
+  done S57_RF1b_05                              [19s, types 2589, tokens 34618]  t+836s
+  done S57_RF1b_06                              [19s, types 2624, tokens 34618]  t+838s
+  done S57_RF1b_07                              [19s, types 2630, tokens 34618]  t+839s
+  done S57_RF1b_08                              [19s, types 2527, tokens 34618]  t+839s
+  done S57_RF1b_09                              [19s, types 2587, tokens 34618]  t+855s
+  done S57_RF1b_10                              [19s, types 2500, tokens 34618]  t+857s
+  done S57_RF1b_11                              [19s, types 2532, tokens 34618]  t+858s
+  done S57_RF1b_12                              [19s, types 2534, tokens 34618]  t+858s
+  done S57_RF1b_13                              [19s, types 2593, tokens 34618]  t+874s
+  done S57_RF1b_14                              [19s, types 2537, tokens 34618]  t+876s
+  done S57_RF1b_15                              [19s, types 2609, tokens 34618]  t+877s
+  done S57_RF1b_16                              [19s, types 2619, tokens 34618]  t+877s
+  done S57_RF1b_17                              [19s, types 2553, tokens 34618]  t+893s
+  done S57_RF1b_18                              [19s, types 2569, tokens 34618]  t+895s
+  done S57_RF1b_19                              [19s, types 2566, tokens 34618]  t+896s
+  done P4D1_RF1b_K1_latin_caesar_s1             [20s, types 1798, tokens 34618]  t+898s
+  done P4D1_RF1b_K1_latin_caesar_s2             [20s, types 1729, tokens 34618]  t+914s
+  done P4D1_RF1b_K1_latin_caesar_s3             [20s, types 1721, tokens 34618]  t+915s
+  done P4D1_RF1b_K3_latin_caesar_s1             [20s, types 2274, tokens 34618]  t+916s
+  done P4D1_RF1b_K3_latin_caesar_s2             [20s, types 2313, tokens 34618]  t+918s
+  done P4D1_RF1b_K3_latin_caesar_s3             [20s, types 2283, tokens 34618]  t+934s
+  done P4D1_RF1b_K1_latin_augustine_s1          [21s, types 1766, tokens 34618]  t+936s
+  done P4D1_RF1b_K1_latin_augustine_s2          [21s, types 1773, tokens 34618]  t+937s
+  done P4D1_RF1b_K1_latin_augustine_s3          [21s, types 1709, tokens 34618]  t+939s
+  done P4D1_RF1b_K3_latin_augustine_s1          [21s, types 2308, tokens 34618]  t+955s
+  done P4D1_RF1b_K3_latin_augustine_s2          [21s, types 2331, tokens 34618]  t+957s
+  done P4D1_RF1b_K3_latin_augustine_s3          [21s, types 2347, tokens 34618]  t+957s
+  done P4D1_RF1b_K1_italian_dante_s1            [21s, types 1767, tokens 34618]  t+960s
+  done P4D1_RF1b_K1_italian_dante_s2            [22s, types 1741, tokens 34618]  t+976s
+  done P4D1_RF1b_K1_italian_dante_s3            [22s, types 1698, tokens 34618]  t+979s
+  done P4D1_RF1b_K3_italian_dante_s1            [21s, types 2275, tokens 34618]  t+979s
+  done P4D1_RF1b_K3_italian_dante_s2            [21s, types 2326, tokens 34618]  t+981s
+  done P4D1_RF1b_K3_italian_dante_s3            [21s, types 2263, tokens 34618]  t+998s
+  done P4D1_RF1b_K1_german_kafka_s1             [21s, types 1796, tokens 34618]  t+1000s
+  done P4D1_RF1b_K1_german_kafka_s2             [21s, types 1724, tokens 34618]  t+1000s
+  done P4D1_RF1b_K3_german_kafka_s1             [21s, types 2305, tokens 34618]  t+1002s
+  done P4D1_RF1b_K1_english_alice_s1            [21s, types 1738, tokens 34618]  t+1018s
+  done P4D1_RF1b_K1_english_alice_s3            [21s, types 1694, tokens 34618]  t+1020s
+  done P4D1_RF1b_K3_english_alice_s1            [20s, types 2347, tokens 34618]  t+1020s
+  done P4D1_RF1b_K3_english_alice_s3            [20s, types 2372, tokens 34618]  t+1022s
+  done VOY_IT2a                                 [20s, types 2380, tokens 34411]  t+1038s
+  done LSHUF_IT2a_00                            [20s, types 2380, tokens 34411]  t+1040s
+  done LSHUF_IT2a_01                            [19s, types 2380, tokens 34411]  t+1040s
+  done LSHUF_IT2a_02                            [20s, types 2380, tokens 34411]  t+1042s
+  done LSHUF_IT2a_03                            [19s, types 2380, tokens 34411]  t+1057s
+  done LSHUF_IT2a_04                            [19s, types 2380, tokens 34411]  t+1059s
+  done LSHUF_IT2a_05                            [19s, types 2380, tokens 34411]  t+1059s
+  done LSHUF_IT2a_06                            [19s, types 2380, tokens 34411]  t+1061s
+  done LSHUF_IT2a_07                            [19s, types 2380, tokens 34411]  t+1076s
+  done LSHUF_IT2a_08                            [19s, types 2380, tokens 34411]  t+1078s
+  done LSHUF_IT2a_09                            [19s, types 2380, tokens 34411]  t+1078s
+  done LSHUF_IT2a_10                            [19s, types 2380, tokens 34411]  t+1080s
+  done LSHUF_IT2a_11                            [19s, types 2380, tokens 34411]  t+1095s
+  done LSHUF_IT2a_12                            [19s, types 2380, tokens 34411]  t+1097s
+  done LSHUF_IT2a_13                            [19s, types 2380, tokens 34411]  t+1097s
+  done LSHUF_IT2a_14                            [19s, types 2380, tokens 34411]  t+1099s
+  done LSHUF_IT2a_15                            [19s, types 2380, tokens 34411]  t+1113s
+  done LSHUF_IT2a_16                            [19s, types 2380, tokens 34411]  t+1115s
+  done LSHUF_IT2a_17                            [19s, types 2380, tokens 34411]  t+1116s
+  done LSHUF_IT2a_18                            [19s, types 2380, tokens 34411]  t+1118s
+  done LSHUF_IT2a_19                            [19s, types 2380, tokens 34411]  t+1132s
+  done BSHUF_IT2a_00                            [19s, types 2380, tokens 34411]  t+1134s
+  done BSHUF_IT2a_01                            [19s, types 2380, tokens 34411]  t+1135s
+  done BSHUF_IT2a_02                            [19s, types 2380, tokens 34411]  t+1137s
+  done BSHUF_IT2a_03                            [19s, types 2380, tokens 34411]  t+1152s
+  done BSHUF_IT2a_04                            [19s, types 2380, tokens 34411]  t+1153s
+  done BSHUF_IT2a_05                            [19s, types 2380, tokens 34411]  t+1154s
+  done BSHUF_IT2a_06                            [19s, types 2380, tokens 34411]  t+1156s
+  done BSHUF_IT2a_07                            [20s, types 2380, tokens 34411]  t+1171s
+  done BSHUF_IT2a_08                            [19s, types 2380, tokens 34411]  t+1173s
+  done BSHUF_IT2a_09                            [20s, types 2380, tokens 34411]  t+1174s
+  done BSHUF_IT2a_10                            [20s, types 2380, tokens 34411]  t+1176s
+  done BSHUF_IT2a_11                            [20s, types 2380, tokens 34411]  t+1191s
+  done BSHUF_IT2a_12                            [20s, types 2380, tokens 34411]  t+1193s
+  done BSHUF_IT2a_13                            [20s, types 2380, tokens 34411]  t+1194s
+  done BSHUF_IT2a_14                            [20s, types 2380, tokens 34411]  t+1196s
+  done BSHUF_IT2a_15                            [20s, types 2380, tokens 34411]  t+1211s
+  done BSHUF_IT2a_16                            [20s, types 2380, tokens 34411]  t+1212s
+  done BSHUF_IT2a_17                            [20s, types 2380, tokens 34411]  t+1213s
+  done BSHUF_IT2a_18                            [20s, types 2380, tokens 34411]  t+1216s
+  done BSHUF_IT2a_19                            [19s, types 2380, tokens 34411]  t+1230s
+  done S67_IT2a_00                              [19s, types 1644, tokens 34411]  t+1232s
+  done S67_IT2a_01                              [19s, types 1654, tokens 34411]  t+1232s
+  done S67_IT2a_02                              [19s, types 1632, tokens 34411]  t+1235s
+  done S67_IT2a_03                              [19s, types 1632, tokens 34411]  t+1249s
+  done S67_IT2a_04                              [19s, types 1672, tokens 34411]  t+1250s
+  done S67_IT2a_05                              [19s, types 1683, tokens 34411]  t+1251s
+  done S67_IT2a_06                              [19s, types 1631, tokens 34411]  t+1254s
+  done S67_IT2a_07                              [19s, types 1644, tokens 34411]  t+1268s
+  done S67_IT2a_08                              [19s, types 1661, tokens 34411]  t+1269s
+  done S67_IT2a_09                              [19s, types 1664, tokens 34411]  t+1270s
+  done S67_IT2a_10                              [19s, types 1638, tokens 34411]  t+1272s
+  done S67_IT2a_11                              [19s, types 1617, tokens 34411]  t+1287s
+  done S67_IT2a_12                              [19s, types 1650, tokens 34411]  t+1288s
+  done S67_IT2a_13                              [19s, types 1625, tokens 34411]  t+1289s
+  done S67_IT2a_14                              [19s, types 1638, tokens 34411]  t+1291s
+  done S67_IT2a_15                              [19s, types 1626, tokens 34411]  t+1305s
+  done S67_IT2a_16                              [19s, types 1628, tokens 34411]  t+1307s
+  done S67_IT2a_17                              [19s, types 1662, tokens 34411]  t+1308s
+  done S67_IT2a_18                              [19s, types 1645, tokens 34411]  t+1310s
+  done S67_IT2a_19                              [19s, types 1621, tokens 34411]  t+1324s
+  done S57_IT2a_00                              [19s, types 2437, tokens 34411]  t+1326s
+  done S57_IT2a_01                              [19s, types 2493, tokens 34411]  t+1326s
+  done S57_IT2a_02                              [19s, types 2448, tokens 34411]  t+1329s
+  done S57_IT2a_03                              [19s, types 2409, tokens 34411]  t+1343s
+  done S57_IT2a_04                              [19s, types 2460, tokens 34411]  t+1344s
+  done S57_IT2a_05                              [19s, types 2547, tokens 34411]  t+1345s
+  done S57_IT2a_06                              [19s, types 2458, tokens 34411]  t+1348s
+  done S57_IT2a_07                              [19s, types 2475, tokens 34411]  t+1361s
+  done S57_IT2a_08                              [19s, types 2488, tokens 34411]  t+1363s
+  done S57_IT2a_09                              [19s, types 2445, tokens 34411]  t+1364s
+  done S57_IT2a_10                              [19s, types 2444, tokens 34411]  t+1367s
+  done S57_IT2a_11                              [19s, types 2465, tokens 34411]  t+1380s
+  done S57_IT2a_12                              [19s, types 2418, tokens 34411]  t+1382s
+  done S57_IT2a_13                              [19s, types 2463, tokens 34411]  t+1383s
+  done S57_IT2a_14                              [19s, types 2503, tokens 34411]  t+1386s
+  done S57_IT2a_15                              [19s, types 2511, tokens 34411]  t+1399s
+  done S57_IT2a_16                              [19s, types 2487, tokens 34411]  t+1401s
+  done S57_IT2a_17                              [19s, types 2452, tokens 34411]  t+1402s
+  done S57_IT2a_18                              [19s, types 2475, tokens 34411]  t+1404s
+  done S57_IT2a_19                              [19s, types 2460, tokens 34411]  t+1418s
+  done P4D1_IT2a_K1_latin_caesar_s1             [20s, types 1912, tokens 34411]  t+1421s
+  done P4D1_IT2a_K1_latin_caesar_s2             [20s, types 1833, tokens 34411]  t+1422s
+  done P4D1_IT2a_K1_latin_caesar_s3             [20s, types 1823, tokens 34411]  t+1425s
+  done P4D1_IT2a_K3_latin_caesar_s1             [20s, types 2493, tokens 34411]  t+1438s
+  done P4D1_IT2a_K3_latin_caesar_s2             [20s, types 2513, tokens 34411]  t+1441s
+  done P4D1_IT2a_K3_latin_caesar_s3             [20s, types 2466, tokens 34411]  t+1442s
+  done P4D1_IT2a_K1_latin_augustine_s1          [20s, types 1882, tokens 34411]  t+1445s
+  done P4D1_IT2a_K1_latin_augustine_s2          [21s, types 1884, tokens 34411]  t+1459s
+  done P4D1_IT2a_K1_latin_augustine_s3          [21s, types 1782, tokens 34411]  t+1462s
+  done P4D1_IT2a_K3_latin_augustine_s1          [21s, types 2537, tokens 34411]  t+1463s
+  done P4D1_IT2a_K3_latin_augustine_s2          [21s, types 2510, tokens 34411]  t+1466s
+  done P4D1_IT2a_K3_latin_augustine_s3          [22s, types 2522, tokens 34411]  t+1480s
+  done P4D1_IT2a_K1_italian_dante_s1            [22s, types 1890, tokens 34411]  t+1484s
+  done P4D1_IT2a_K1_italian_dante_s2            [23s, types 1863, tokens 34411]  t+1485s
+  done P4D1_IT2a_K1_italian_dante_s3            [23s, types 1766, tokens 34411]  t+1489s
+  done P4D1_IT2a_K3_italian_dante_s1            [21s, types 2486, tokens 34411]  t+1502s
+  done P4D1_IT2a_K3_italian_dante_s2            [21s, types 2533, tokens 34411]  t+1505s
+  done P4D1_IT2a_K3_italian_dante_s3            [21s, types 2441, tokens 34411]  t+1506s
+  done P4D1_IT2a_K1_german_kafka_s1             [21s, types 1911, tokens 34411]  t+1509s
+  done P4D1_IT2a_K1_german_kafka_s2             [21s, types 1820, tokens 34411]  t+1522s
+  done P4D1_IT2a_K3_german_kafka_s1             [20s, types 2499, tokens 34411]  t+1525s
+  done P4D1_IT2a_K1_english_alice_s1            [21s, types 1873, tokens 34411]  t+1526s
+  done P4D1_IT2a_K1_english_alice_s3            [21s, types 1786, tokens 34411]  t+1530s
+  done P4D1_IT2a_K3_english_alice_s1            [20s, types 2567, tokens 34411]  t+1542s
+  done P4D1_IT2a_K3_english_alice_s3            [20s, types 2559, tokens 34411]  t+1545s
+  done CTRL_W3_latin                            [20s, types 849, tokens 34857]  t+1547s
+  done CTRL_W3_italian                          [20s, types 849, tokens 34857]  t+1550s
+  done CTRL_W3_german                           [19s, types 849, tokens 34857]  t+1562s
+  done CTRL_W3_occitan                          [20s, types 847, tokens 34857]  t+1565s
+  done CTRL_W3_czech                            [19s, types 849, tokens 34857]  t+1566s
+  done CTRL_W3_catalan                          [19s, types 850, tokens 34857]  t+1569s
+
+=== MATCHING (held-out tokens per fold equal Voynich's; core types, whole text) ===
+  ZL3b: fold token mismatches 0; core types VOY 2335  LSHUF 2335  BSHUF 2335  S67 1608  S57 2402  P4D1 1914  CTRL 849
+  RF1b: fold token mismatches 0; core types VOY 2536  LSHUF 2536  BSHUF 2536  S67 1738  S57 2565  P4D1 2016
+  IT2a: fold token mismatches 0; core types VOY 2380  LSHUF 2380  BSHUF 2380  S67 1643  S57 2467  P4D1 2166
+
+=== PER-FOLD TABLE (gain = held-out stem-transition LL gain per 1,000 pairs, bits; max over 6 languages) ===
+--- ZL3b: 105 null texts; Voynich modal language italian (7/15), margin -9.62 vs null margin p95 +4.14
+  fold    tok     best     gain  null_p95   margin  above |  LSHUF_p95  BSHUF_p95    S67_p95    S57_p95   P4D1_p95 |    latin  italian   german  occitan    czech  catalan
+     A   1520  italian   -33.98    +34.04   +17.64     no |     -26.43      +0.54      -2.27      -0.65     +63.87 |   -51.62   -33.98   -53.63   -63.24   -56.53   -53.15
+     B   1041  italian   -51.69    +29.75   +23.79     no |     -46.79      -1.83     -10.42      -2.71     +34.03 |   -75.48   -51.69   -75.83   -78.26   -84.62   -79.56
+     C   1431  italian   -40.44    +30.92   +10.29     no |     -30.42      -2.55      -6.26      -0.44     +49.55 |   -57.31   -40.44   -52.24   -77.66   -72.09   -50.74
+     D   1272  italian    -0.58    +37.61   +14.75     no |     -11.93      -1.52      -2.86      -0.96     +43.84 |   -32.71    -0.58   -16.46   -17.03   -15.33   -15.97
+     E   1556  occitan    +0.83    +41.15   +10.11     no |      -3.57      +5.62      +2.37      +3.19     +54.93 |   -40.58    -9.28   -19.94    +0.83    -9.67   -31.34
+     F   1708   german    +7.81    +50.11   +21.89     no |      +1.55      -0.66      -0.50      -2.57     +53.89 |   -36.05   -24.64    +7.81   -40.51   -27.86   -14.08
+     G   1521  catalan    +2.69    +42.76    +7.89     no |      -7.47      -2.51      -3.04      +1.61     +55.68 |   -27.82    -6.93   -20.23    -5.20   -12.61    +2.69
+     H   1290  italian   -13.18    +32.78    +9.63     no |     -16.37      -0.80      -5.40      -3.09     +35.59 |   -52.49   -13.18   -22.80   -40.65   -44.79   -47.47
+     I    367    czech   -25.40     -3.68    +3.76     no |     -19.08      -8.85      -9.46      -8.17      +1.65 |   -38.52   -35.49   -29.16   -56.03   -25.40   -30.71
+     M   6800  occitan   +38.85   +200.08   +14.23     no |     -22.06     +17.90      +2.60     +15.44    +234.13 |   -17.70   +15.35   +24.63   +38.85   -11.71   -34.95
+     N   1692  occitan   +19.68    +48.34    +8.78     no |      -4.48      +0.23      -7.61      -4.29     +66.41 |   -32.96    -1.73   -10.45   +19.68   -14.39   +10.90
+     O   1380    czech   -26.69    +33.66    +1.80     no |     -28.79      -1.58      -1.64      -4.01     +40.56 |   -38.90   -62.93   -28.48   -53.80   -26.69   -69.48
+     Q    911  italian   -10.26    +21.72    +2.40     no |      -4.50      -5.55      -5.63      -3.92     +32.10 |   -47.03   -10.26   -17.27   -12.67   -19.30   -19.39
+     S   1396  italian   -42.48    +39.35    +2.08     no |     -35.48      -0.36      -4.57      -9.45     +45.76 |  -104.20   -42.48   -60.19   -44.55   -71.06   -53.45
+     T  10836  occitan   +70.78   +194.30    +0.93     no |      +6.68      +1.94      -4.54     +11.79    +207.90 |   -27.35   -10.64   +64.31   +70.78   +47.11   +69.85
+  folds above null p95: 0/15;  mean max gain -6.94 vs null text means (p95 +50.38), exceedance p = 0.2453
+  null texts with a modal language on >= 10/15 folds: 2/105; Voynich margin exceedance p = 0.9434
+
+--- RF1b: 105 null texts; Voynich modal language occitan (6/15), margin -0.30 vs null margin p95 +5.12
+  fold    tok     best     gain  null_p95   margin  above |  LSHUF_p95  BSHUF_p95    S67_p95    S57_p95   P4D1_p95 |    latin  italian   german  occitan    czech  catalan
+     A   1469  occitan   -30.78    +39.36   +11.77     no |     -21.42      -4.70      -8.16      -1.12     +46.63 |   -72.24   -42.54   -51.76   -30.78   -62.03   -54.71
+     B    990   german   -50.47    +19.96    +0.40     no |     -45.17      -5.00     -11.35      -3.16     +36.08 |   -99.79   -70.59   -50.47   -50.88   -84.73   -67.00
+     C   1394  occitan   -45.80    +34.67    +1.84     no |     -30.78      +0.66      +2.65      +5.88     +37.86 |   -67.85   -63.23   -47.64   -45.80   -57.51   -70.97
+     D   1238  occitan   -14.58    +27.22    +2.30     no |      -4.33      +2.62      -7.19      -2.74     +31.40 |   -40.52   -24.37   -32.31   -14.58   -40.87   -16.88
+     E   1509  occitan    +8.23    +37.91   +31.55     no |      -4.74      -3.71      -0.94      -6.70     +42.55 |   -57.94   -23.32   -29.00    +8.23   -52.54   -34.87
+     F   1688  occitan   +23.72    +43.69   +35.22     no |      +1.69      -0.63      -0.09      -3.80     +61.44 |   -24.20   -11.50   -24.14   +23.72   -16.41   -29.40
+     G   1478  catalan    +0.36    +41.52    +3.33     no |      -6.49      -4.09      -5.44      -0.51     +48.87 |   -37.47   -11.53    -2.96   -12.01   -38.84    +0.36
+     H   1272  italian   -23.79    +32.42    +6.18     no |     -18.95      +0.50      -8.12      +2.38     +52.11 |   -65.16   -23.79   -41.42   -42.58   -35.87   -29.97
+     I    359   german   -19.68     -2.03    +8.46     no |     -23.16      -7.77      -8.27      -7.53      +0.83 |   -34.67   -28.14   -19.68   -33.51   -28.97   -28.66
+     M   6834  catalan   +29.98   +206.45   +16.27     no |     -13.67     +14.21     +16.00      +8.63    +234.76 |   -21.24    -1.67   -10.53    +1.88   +13.71   +29.98
+     N   1703  occitan   +13.56    +44.46   +27.37     no |      -6.72      +2.30      +6.18      -0.32     +58.12 |   -27.50   -13.81   -29.28   +13.56   -21.77   -13.86
+     O   1396  italian   -27.94    +34.60   +18.26     no |     -19.17      -0.63      -7.33      -3.03     +53.47 |   -64.37   -27.94   -54.68   -54.88   -58.01   -46.20
+     Q    930  italian   -10.19    +14.97    +6.19     no |      -0.90      -4.20      -5.11      -3.61     +25.43 |   -32.92   -10.19   -16.39   -19.20   -35.54   -26.12
+     S   1431  catalan   -45.14    +39.37    +0.83     no |     -40.36      +0.64      -2.11      -2.26     +49.22 |   -57.49   -64.22   -45.98   -48.34   -49.10   -45.14
+     T  10793  italian   +40.48   +199.10    +0.55     no |     +25.38      +4.66      -5.14     +11.64    +220.36 |   +25.53   +40.48    -3.24   +38.61   +39.93   +37.05
+  folds above null p95: 0/15;  mean max gain -10.14 vs null text means (p95 +49.31), exceedance p = 0.3396
+  null texts with a modal language on >= 10/15 folds: 6/105; Voynich margin exceedance p = 0.1415
+
+--- IT2a: 105 null texts; Voynich modal language italian (6/15), margin -5.87 vs null margin p95 +2.57
+  fold    tok     best     gain  null_p95   margin  above |  LSHUF_p95  BSHUF_p95    S67_p95    S57_p95   P4D1_p95 |    latin  italian   german  occitan    czech  catalan
+     A   1495  catalan   -27.80    +32.61   +17.58     no |     -25.86      -2.13      -5.73      -6.80     +48.86 |   -70.64   -45.38   -50.67   -59.90   -53.85   -27.80
+     B   1019    latin   -60.93    +21.81    +3.37     no |     -43.38      -3.41      -5.31      -0.29     +38.29 |   -60.93   -64.61   -64.30   -70.59   -70.04   -83.48
+     C   1401  italian   -39.63    +27.94   +19.22     no |     -35.13      +0.75      -5.07      -3.96     +45.47 |   -70.20   -39.63   -78.32   -58.84   -75.39   -77.41
+     D   1251  italian   -12.66    +28.90    +5.01     no |      -4.64      -1.86      -8.95      -6.32     +49.26 |   -40.49   -12.66   -17.68   -23.24   -51.94   -21.23
+     E   1522  italian    +5.06    +40.39    +7.84     no |      -1.66      -4.09      +0.20      -1.34     +53.06 |   -48.87    +5.06    -2.78   -15.34   -50.42    -8.68
+     F   1711  occitan   +19.84    +45.30   +28.61     no |      +0.53      -3.85      -4.03      +4.10     +53.35 |   -23.98   -26.24   -14.75   +19.84   -31.45    -8.77
+     G   1497  occitan    -2.40    +39.93    +2.64     no |      -4.28      -3.67      -0.34      +4.18     +45.12 |   -33.57    -5.04   -14.85    -2.40   -14.37   -26.91
+     H   1271  catalan   -24.20    +34.05    +1.00     no |     -20.39      -4.79      -5.68      -3.05     +42.91 |   -50.44   -25.20   -36.13   -34.62   -33.60   -24.20
+     I    353   german   -23.36     -4.74   +10.38     no |     -18.44      -9.22     -11.26      -7.68      -2.62 |   -55.29   -33.74   -23.36   -44.49   -34.03   -52.48
+     M   6773  italian   +25.38   +206.19    +6.33     no |     -16.85      -1.32      +6.63     +10.38    +236.08 |   -12.96   +25.38   -57.58   +19.05    +1.14    +9.57
+     N   1624  italian   +21.04    +42.49   +24.09     no |      -6.45      +3.59      +2.42      +0.89     +47.17 |   -46.17   +21.04   -14.36   -26.64   -16.77    -3.05
+     O   1384   german   -29.20    +30.70    +9.17     no |     -34.05      -2.16      -0.52      +5.29     +40.09 |   -58.58   -51.29   -29.20   -76.17   -72.36   -38.37
+     Q    932  italian    -1.56    +20.27    +6.58     no |      +1.31      -4.87      -7.84      +2.47     +28.41 |   -25.25    -1.56   -28.87    -8.14   -37.67   -17.87
+     S   1369   german   -38.55    +32.29   +10.31     no |     -39.53      +1.49     -12.48      +0.96     +47.11 |   -89.94   -69.25   -38.55   -48.86   -64.08   -61.93
+     T  10673   german   +32.91   +205.33   +12.02     no |      +0.95      +2.41      +1.61     +11.19    +229.59 |   +20.88    +9.88   +32.91    +6.13    -7.49   +19.64
+  folds above null p95: 0/15;  mean max gain -10.40 vs null text means (p95 +49.57), exceedance p = 0.2925
+  null texts with a modal language on >= 10/15 folds: 4/105; Voynich margin exceedance p = 0.6321
+
+=== PLANTED W3 CONTROLS (ZL3b skeleton; vs ZL3b null pool) ===
+  latin    folds above null p95  0/15; own language best  8/15 (modal latin 8/15); margin  +10.00 vs p95 +4.14; median max gain   -9.19 -> fail
+  italian  folds above null p95 12/15; own language best 14/15 (modal italian 14/15); margin  +45.44 vs p95 +4.14; median max gain  +52.47 -> PASS
+  german   folds above null p95  1/15; own language best 11/15 (modal german 11/15); margin  +11.26 vs p95 +4.14; median max gain  +14.84 -> fail
+  occitan  folds above null p95  9/15; own language best 14/15 (modal occitan 14/15); margin  +40.94 vs p95 +4.14; median max gain  +51.56 -> fail
+  czech    folds above null p95  5/15; own language best 10/15 (modal czech 10/15); margin  +11.74 vs p95 +4.14; median max gain  +24.35 -> fail
+  catalan  folds above null p95 12/15; own language best 13/15 (modal catalan 13/15); margin  +30.88 vs p95 +4.14; median max gain  +83.30 -> PASS
+
+=== CALLS ===
+C1 above null (>= 10/15 folds on all three): ZL3b 0/15, RF1b 0/15, IT2a 0/15 -> False
+C2 language specificity: ZL3b modal italian 7/15, margin -9.62 vs p95 +4.14 (no); RF1b modal occitan 6/15, margin -0.30 vs p95 +5.12 (no); IT2a modal italian 6/15, margin -5.87 vs p95 +2.57 (no) -> False
+C3 planted controls pass C1+C2 rules: 2/6 (need >= 5; all-6 no) -> False
+VERDICT: inconclusive: controls failed
+finished Sun Oct 18 05:18:11 PDT 2026 (`date`); elapsed 1570s

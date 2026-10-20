@@ -1,0 +1,2 @@
+# s27 prereg: sha256 of the s27 script (K4 bound rows + shared Phase 3 scoring library; predictions-table rows, DELTA page-bootstrap rule and verdict rule are in its docstring); frozen Sat Oct 17 21:26:26 PDT 2026 before the run
+98203915f0729f8dfacb26ddc7b8d25e2bded1cf06e915883ecf59299151ba7e *s27_k4_bound.py

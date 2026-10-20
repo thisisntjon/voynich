@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:03:07.1194716Z",
+ "response": "{\n  \"PT\": \"BATH\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NA\",\n  \"P_leafshape\": \"NA\",\n  \"P_leafcount\": \"NA\",\n  \"P_flower\": \"NA\",\n  \"P_habit\": \"NA\",\n  \"J_shape\": \"NA\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"0\",\n  \"J_fragtype\": \"NA\",\n  \"C_centre\": \"HUMAN\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"1-9\",\n  \"C_rings\": \"2\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"3+\",\n  \"B_figures\": \"6-10\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Multiple human figures in pools, two rings around central figure.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2894104800,
+ "load_duration": 349833200,
+ "prompt_eval_count": 3268,
+ "prompt_eval_duration": 754884000,
+ "eval_count": 205,
+ "eval_duration": 1643126000,
+ "stem": "146_81r"
+}

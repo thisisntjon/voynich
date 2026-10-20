@@ -1,0 +1,146 @@
+S35: PHYSICAL CODICOLOGY, QUIRE/BIFOLIO NETWORK, LINE-WIDTH GEOMETRY & O-049 LABEL CLOSURE
+==================================================================================================
+Run timestamp : 2026-10-17 21:37:48 Pacific Daylight Time
+Script SHA256 : c86b92c82ae8a14b5da3b74325cdea51a4367f7cc0b51d80b237510b0d8a1c51
+Prereg stub   : s35_physical_codicology_quire_network.prereg.sha256 -> stub_match=True (c86b92c82ae8a14b5da3b74325cdea51a4367f7cc0b51d80b237510b0d8a1c51)
+Runtime env   : python -I (3.11.9), numpy 2.4.6, single CPU process, SEED=20261017
+Input SHA256s : ZL3b-n.txt=bf5b6d4ac1e3a51b...  folio_evidence_inventory.tsv=865ad0620acf75da...
+
+==================================================================================================
+PART 1: CODICOLOGICAL HIERARCHY — QUIRE, BIFOLIO SHEET, CONJOINT FOLIO & RECTO/VERSO (O-004 / O-005)
+==================================================================================================
+Codicological Census (data/ZL3b-n.txt vs. data/folio_evidence_inventory.tsv):
+  Total transcribed folios/pages : 227 (inventory rows: 227)
+  Quires ($Q)                    : 18 (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, Q, S, T; P and R lost)
+  Folded bifolio sheets ($Q, $B) : 52 distinct physical sheets (+1 fRos '?' foldout)
+  Metadata note                  : ZL3b-n.txt $B=1..7 is the folded parchment sheet (e.g. Quire A
+                                   $B=1 pairs conjoint folios f1 [$F=a] and f8 [$F=z]);
+                                   folio_evidence_inventory.tsv 'bifolio' column records $F (a..z).
+  Paragraph pages analyzed       : 207 pages with >=20 P-tokens & >=2 lines (34,857/34,857 P-tokens = 100.00%)
+
+--- 1A. Variance Decomposition (ANOVA eta^2 & 500-Draw Within-(Hand,Section) Token-Shuffle Null) ---
+Property                  |   Lang   Hand    Sec  Sec|H | Quire|(H,S) eta^2 (win%)  z_quire    p_q | Bifolio|Q eta^2 (win%)   z_bif    p_b
+------------------------------------------------------------------------------------------------------------------------------------
+h2 (cond char entropy)    |  0.005  0.060  0.187  0.164 |  0.175 ( 22.5% of win)    +2.82  0.010 |  0.260 ( 43.2% of Q)   +6.80  0.002
+cross_excess_eva (MI)     |  0.216  0.267  0.312  0.111 |  0.051 (  8.2% of win)    -0.84  0.782 |  0.096 ( 16.8% of Q)   +0.86  0.196
+I_within (word-len Moran) |  0.085  0.103  0.093  0.090 |  0.095 ( 11.8% of win)    +0.06  0.449 |  0.103 ( 14.4% of Q)   +0.31  0.355
+k/(k+t) gallows ratio     |  0.171  0.187  0.230  0.238 |  0.089 ( 15.6% of win)    +1.14  0.134 |  0.154 ( 31.8% of Q)   +4.33  0.002
+p/(p+f) gallows ratio     |  0.005  0.021  0.112  0.159 |  0.104 ( 12.7% of win)    +0.53  0.287 |  0.065 (  9.0% of Q)   -1.17  0.890
+qo- prefix rate           |  0.221  0.253  0.481  0.282 |  0.044 (  9.5% of win)    -0.25  0.575 |  0.118 ( 28.1% of Q)   +3.88  0.004
+-edy/(-edy+-aiin) ratio   |  0.725  0.734  0.479  0.064 |  0.072 ( 35.7% of win)    +2.42  0.022 |  0.031 ( 23.8% of Q)   +4.39  0.006
+
+--- 1B. Macro-Stratum Property Means (Currier Language A vs B & Hands 1..5) ---
+Stratum        Pages  Tokens |     h2 cross_ex I_within k/(k+t) p/(p+f) qo_rate edy/(edy+aiin)
+--------------------------------------------------------------------------------------------------
+Currier A        114   11231 |  1.815  +0.0347  +0.0783   0.521   0.697   0.097          0.072
+Currier B         83   23078 |  1.827  +0.1584  +0.1242   0.659   0.716   0.157          0.593
+Hand 1           112   10481 |  1.811  +0.0333  +0.0768   0.520   0.697   0.097          0.072
+Hand 2            46   10800 |  1.792  +0.1763  +0.1269   0.681   0.695   0.163          0.631
+Hand 3            31   11703 |  1.880  +0.1600  +0.1220   0.634   0.757   0.154          0.491
+Hand 4            10     540 |  1.827  -0.0304  -0.0048   0.554   0.716   0.060          0.295
+Hand 5             7     873 |  1.908  +0.0013  +0.1244   0.630   0.677   0.106          0.691
+
+--- 1C. Pairwise Codicological Hierarchy Within (Hand, Section) (O-004) ---
+Pair Relation Within (Hand, Section) | n_pairs | Vocab Cosine    Null Mean±SD   z_cos  p_cos | 7-Prop Dist    Null Mean±SD  z_dist
+--------------------------------------------------------------------------------------------------------------------------------
+1. Same-Leaf Recto/Verso (fNr<->fNv) |      91 |       0.4206  0.4113±0.0049   +1.92  0.026 |       2.569   2.549±0.068   +0.29
+2. Conjoint-Sheet Folio (same $Q,$B) |     218 |       0.3825  0.3968±0.0038   -3.72  1.000 |       2.662   2.651±0.052   +0.21
+3. Same-Quire Non-Conjoint (diff $B) |     765 |       0.4135  0.4863±0.0035  -20.89  1.000 |       2.708   2.240±0.053   +8.89
+4. Different-Quire Same-(Hand,Sec)   |    4213 |       0.2801  0.3332±0.0035  -15.09  1.000 |       3.136   3.023±0.060   +1.89
+  Hierarchy contrasts (vocab cosine excess over length-preserving token shuffle):
+    * Same-Leaf R/V minus Conjoint-Sheet   : +0.0381 (z=+4.27, p=0.002)
+    * Conjoint-Sheet minus Same-Quire Other: -0.0310 (z=+12.65, p=0.002)
+    * Same-Quire Other minus Diff-Quire    : +0.1334 (z=-5.11, p=1.000)
+
+--- 1D. Closure of O-005: m1 Copy-Locality / Recency Across Codicological Tiers & Bifolio Null ---
+Comparison Line Tier (within hand, section)  | n(same_x)  exact%  edit<=1% | n(off_x) off edit<=1% | same_x - off_x
+--------------------------------------------------------------------------------------------------------------------
+1_prev_line                                  |     22046    1.06      4.61 |    25429         3.42 |          +1.19 pp
+2_same_page_far                              |     22275    0.84      3.79 |    28068         3.15 |          +0.64 pp
+3_same_leaf_verso                            |     18209    0.65      3.49 |    24587         2.83 |          +0.65 pp
+4_conjoint_folio                             |     19923    0.66      3.14 |    26782         2.86 |          +0.28 pp
+5_same_quire_other_bif                       |     15978    0.54      2.91 |    21781         2.83 |          +0.08 pp
+6_other_quire_same_strat                     |     16389    0.47      2.29 |    22409         1.84 |          +0.45 pp
+
+  O-005 Test 1 (Within-Bifolio Line-Permutation Null, 200 draws excluding self-line):
+    * Line n-1 same_x edit<=1 : obs=4.61% vs within-bifolio null=3.44%±0.13% (z=+8.82, p=0.0050)
+    * Line n-1 off_x  edit<=1 : obs=3.42% vs within-bifolio null=2.88%±0.11% (z=+5.01, p=0.0050)
+  O-005 Test 2 (Bifolio-Cluster Bootstrap on m1.collect, 1,000 draws across 50 physical sheets):
+    * Recency at same_x (same - far) : +0.88 pp  95% CI [+0.37, +1.34] pp  P(<=0)=0.0010
+    * Recency ratio (same / far)     : 1.23x     95% CI [1.09x, 1.37x]
+    * Recency at off_x (off - off_far): +0.47 pp  95% CI [+0.16, +0.79] pp  P(<=0)=0.0020
+    * Column-specific excess (all)   : +0.41 pp  95% CI [-0.24, +0.95] pp  P(<=0)=0.1170
+  O-005 Test 3 (a4b W=40 Nearest-Neighbour edit<=1 Copy-Locality Across Bifolio Tiers, n=8118 probes):
+    * Local (preceding 40 tokens) = 56.63% | Same-Bifolio Far = 50.42% (loc/sbif = 1.12x) | Other-Bifolio Far = 46.82% (loc/obif = 1.21x)
+  PART 1 / O-005 VERDICT: Macro-properties are governed by (Hand, Section) (eta^2 up to 0.734 on -edy/-aiin and 0.481 on qo- rate), with significant bifolio-within-quire clustering on h2 (z=+6.80, p=0.002), k/(k+t) (z=+4.33, p=0.002), qo- (z=+3.88, p=0.004), and -edy/-aiin (z=+4.39, p=0.006), while edge coupling (z_bif=+0.86, p=0.196) and Moran I (z_bif=+0.31, p=0.355) are invariant across quires/bifolios. On O-005, m1's line-to-line recency excess (+0.88 pp, 1.23x) SURVIVES both the within-bifolio line-permutation null (obs 4.61% vs 3.44%, z=+8.82, p=0.0050) and the bifolio-cluster bootstrap (P(<=0)=0.0010), and a4b W=40 copy-locality beats same-bifolio far (56.63% vs 50.42%, 1.12x), proving copy-locality is genuine short-range sequential recency rather than a bifolio/leaf vocabulary artifact.
+
+==================================================================================================
+PART 2: PHYSICAL ILLUSTRATION-INTRUSION & LINE-WIDTH BOX GEOMETRY (223 FOLIOS WITH BOXES)
+==================================================================================================
+Aligned Paragraph Lines with Physical Bounding Boxes (>=3 clean tokens): 3713 lines across 204 folios
+  * Short / Illustration-Wrapped (3-5 tokens)  :  646 lines ( 2734 tokens) | mean span=237.2px (53.0% of page width) | '<->' split= 4.3%
+  * Medium-Width Lines (6-7 tokens)            :  662 lines ( 4314 tokens) | mean span=377.5px (81.0% of page width) | '<->' split=23.1%
+  * Full-Width Paragraph Lines (>=8 tokens)    : 2405 lines (24212 tokens) | mean span=520.9px (98.9% of page width) | '<->' split=16.5%
+
+--- 2A. Line-Level Anomalies by Physical Line Width Class & Matched-Size Subsampling Null ---
+Line Class                             | Lines   Toks | jsd_f_exc  p_init  m_final m/g_fin% | cross_exc |  Moran_I (null_med, q99)
+------------------------------------------------------------------------------------------------------------------------------
+Short / Illus-Wrapped (3-5 tokens)     |   646   2734 |   +0.1540   6.32x    3.94x   10.22% |   +0.1019 | +0.0922 (+0.042, +0.078)
+Medium-Width (6-7 tokens)              |   662   4314 |   +0.1384  15.19x    6.49x   11.93% |   +0.1235 | +0.1394 (+0.077, +0.104)
+Full-Width Paragraph (>=8 tokens)      |  2405  24212 |   +0.1889  19.64x   22.98x   20.96% |   +0.1796 | +0.1493 (+0.064, +0.077)
+Full-Width Subsampled to Short (200x)  |   646   2734 |   +0.1849  22.52x   25.62x   20.91% |   +0.1533 | +0.1533 (95%CI [+0.119,+0.190])
+
+--- 2B. Short (3-5) vs. Full (>=8) Stratified by Currier Language (A vs. B) ---
+  Currier A Short (3-5, n=408 lines): jsd_f_exc=+0.1583  m_fin= 2.34x (m/g= 9.56%)  cross_exc=+0.0867  Moran_I=+0.0542 (q99=+0.0564)
+  Currier A Full  (>=8, n= 616 lines): jsd_f_exc=+0.1386  m_fin= 8.83x (m/g=17.05%)  cross_exc=+0.0998  Moran_I=+0.0903 (q99=+0.0534)
+  Currier B Short (3-5, n=213 lines): jsd_f_exc=+0.1984  m_fin=26.23x (m/g=10.80%)  cross_exc=+0.1503  Moran_I=+0.1568 (q99=+0.1449)
+  Currier B Full  (>=8, n=1758 lines): jsd_f_exc=+0.2180  m_fin=34.52x (m/g=22.01%)  cross_exc=+0.2195  Moran_I=+0.1586 (q99=+0.0767)
+
+--- 2C. Internal Drawing-Interruption ('<->') Anatomy vs. True Right-Margin Line Ends ---
+Boundary Position                      | n_tokens |  -m end% -m/-g end% | gallows_0%  p_init% o/y/d/s_0%
+----------------------------------------------------------------------------------------------------------
+True Line-Initial (left margin)        |     4045 |    0.47%      0.49% |     22.32%    9.27%     58.34%
+Post-Drawing Resume (after '<->')      |      744 |    1.88%      2.55% |      0.27%    0.00%     74.46%
+True Mid-Line (uninterrupted)          |    25325 |    0.92%      0.99% |      6.46%    0.53%     43.63%
+Pre-Drawing Stop (before '<->')        |      744 |    2.42%      2.82% |      6.99%    0.40%     54.03%
+True Line-Final (right margin/end)     |     4045 |   15.50%     17.70% |      4.99%    0.35%     51.64%
+
+--- 2D. Physical Word-Box Width per Character (px/char) Across Line Positions & m/g Flourishes ---
+Line Position / Subclass     |  n_words | mean_len | raw px/ch | page-norm px/ch | len-adj ratio vs mid
+------------------------------------------------------------------------------------------------------
+Line-Initial (slot 0)        |     3655 |     5.52 |      9.55 |          1.0053 |       1.0155 ± 0.0025
+Mid-Line (slots 1..k-2)      |    23405 |     5.12 |      9.36 |          1.0010 |       1.0000 ± 0.0008
+Line-Final (all, slot k-1)   |     3613 |     4.81 |      9.41 |          0.9912 |       0.9772 ± 0.0029
+  Line-Final non-m/g         |     2977 |     4.86 |      9.32 |          0.9758 |       0.9635 ± 0.0030
+  Line-Final m/g-ending      |      636 |     4.59 |      9.85 |          1.0634 |       1.0411 ± 0.0079
+  Mid-Line m/g-ending        |      247 |     4.68 |     10.60 |          1.0966 |       1.0781 ± 0.0081
+  PART 2 VERDICT: Short illustration-wrapped lines (3-5 tokens, 53.0% of page width) exhibit the line-initial JSD anomaly (+0.1540 overall; +0.1984 vs +0.2180 in Currier B), strong m-final enrichment (26.23x in Currier B short lines vs 34.52x in Currier B full lines), positive cross-word coupling (+0.1019; +0.1503 in B), and above-null within-line Moran I (+0.0922 > q99 +0.0775; in Currier B short lines +0.1568 matches full lines +0.1586). Crucially, internal '<->' drawing interruptions do NOT trigger line-final -m/-g (2.82% before '<->' vs 0.99% mid-line vs 17.70% at true line end) nor line-initial gallows (0.27% after '<->' vs 22.32% at true line start), and physically non-m/g line-final words are slightly compressed (0.9635x mid-line width/char) while m/g-ending words carry a +4.11% horizontal flourish.
+
+==================================================================================================
+PART 3: CLOSURE OF O-049 — COLLISION-FREE 837-TYPE LABEL GENERATOR ON Q1 TEST A & TEST B
+==================================================================================================
+[GATE] Manuscript ZL3b Labels: 1164 tokens, 837 types, 915 repeat pairs
+  Test A: p_uw (obs)=0.463 | p_u (free null)=0.222 (free z=+13.94, p_free=0.005) | p_w (within-illus null)=0.362 (within-illus z=+5.24, p_win=0.005)
+  Test B: acc=0.166 (seen=0.338, 157/530) vs maj=0.134
+  [GATE PASS] Exact match to results_q1.txt and results_s29_q1_controls.txt verified.
+
+Model / Seed                 | p_coin types pairs | p_uw(obs) p_u(free)  free_z p_w(win)   win_z  p_win |  B_acc      B_seen (n)
+--------------------------------------------------------------------------------------------------------------------------------------
+G_sec_only_837 [s=20261017]  |  0.539   829   947 |     0.813     0.222  +37.87    0.780   +1.74  0.025 |  0.347  0.741 (170/530)
+G_sec_only_837 [s=20261018]  |  0.539   818  1071 |     0.861     0.223  +36.04    0.851   +0.63  0.328 |  0.321  0.729 (155/530)
+G_sec_only_837 [s=20261019]  |  0.539   834  1076 |     0.769     0.222  +31.31    0.785   -1.12  0.881 |  0.321  0.671 (155/530)
+>> G_sec_only_837 MEAN       |  0.539 827.0 1031.3 |     0.814     0.222  +35.07    0.805   +0.41  0.411 |  0.330  0.714  [Illustration-conditioned ($I only), collision-free 837 types]
+
+G_unit_cond_837 [s=20261017] |  0.539   828   993 |     1.000     0.223  +49.86    0.747  +11.67  0.005 |  0.396  1.000 (162/530)
+G_unit_cond_837 [s=20261018] |  0.539   815  1114 |     1.000     0.224  +47.00    0.816   +9.79  0.005 |  0.372  1.000 (163/530)
+G_unit_cond_837 [s=20261019] |  0.539   838  1023 |     1.000     0.221  +43.45    0.773  +13.23  0.005 |  0.379  1.000 (152/530)
+>> G_unit_cond_837 MEAN      |  0.539 827.0 1043.3 |     1.000     0.223  +46.77    0.779  +11.57  0.005 |  0.382  1.000  [Unit-class-conditioned (disjoint unit pools), collision-free 837 types]
+
+G_unit_cond_837_matched [s=20261017] |  0.511   825  1129 |     0.466     0.222  +13.98    0.398   +5.53  0.005 |  0.262  0.541 (172/530)
+G_unit_cond_837_matched [s=20261018] |  0.511   810  1193 |     0.470     0.223  +14.78    0.416   +5.41  0.005 |  0.262  0.570 (179/530)
+G_unit_cond_837_matched [s=20261019] |  0.511   833  1181 |     0.416     0.221  +11.15    0.370   +4.38  0.005 |  0.262  0.517 (180/530)
+>> G_unit_cond_837_matched MEAN |  0.511 822.7 1167.7 |     0.451     0.222  +13.30    0.394   +5.11  0.005 |  0.262  0.542  [Unit-class + shared background pool, collision-free 837 types]
+
+  PART 3 / O-049 CLOSURE VERDICT: Removing s29's M2 short-word collision defect restores the ~837-type label sparsity (mean 827.0, 827.0, and 822.7 types; ~1043-1168 repeat pairs vs MS 837 types and 915 pairs). At ~837 types, G_sec_only_837 (blind to unit class) remains null on within-illustration Test A (within-illus z=+0.41, p_win=0.411), whereas pure disjoint G_unit_cond_837 reaches within-illus z=+11.57 (p_uw=1.000 vs p_w=0.779, p_win=0.005; Test B acc=0.382, seen=1.000) and G_unit_cond_837_matched (with a 46% shared global pool) matches the manuscript's Test A (p_uw=0.451, free z=+13.30, within-illus z=+5.11, p_win=0.005) and Test B (acc=0.262, seen=0.542). O-049 is CLOSED: a collision-free class-conditioned generator at ~837 types easily exceeds the manuscript's z=+5.24 (reaching z=+11.57 pure and z=+5.11 with shared background noise).
+
+Completed S35 in 72.84s (<90s budget). Wrote results_s35_physical_codicology_quire_network.txt.

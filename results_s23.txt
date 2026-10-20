@@ -1,0 +1,243 @@
+# results_s23: power refile, hash ledger, m1 x10 seeds, P-VALUE LEDGER
+# run Sat Oct 17 20:49:10 PDT 2026  (from `date`)
+# script s23_power_hash_ledger.py sha256 41da7be0ffb78c075d01931f22ac0ad3270b95f2f372547b70e1fcbd7846f2d5
+# prereg stub s23_power_hash_ledger.prereg.sha256: 41da7be0ffb78c075d01931f22ac0ad3270b95f2f372547b70e1fcbd7846f2d5  stub_match=MATCH
+# python -I, single process, no multiprocessing; numpy 2.4.6
+
+====================================================================================================
+(a) HASH LEDGER  --  `sha256sum -c` equivalent (hashlib) over every prereg stub on disk
+====================================================================================================
+stub                                         line target                                             status   note
+n1_habit_table.prereg.sha256                    1 n1_habit_table.py                                  OK       
+n2_habit_fine.prereg.sha256                     1 n2_habit_fine.py                                   OK       
+n2_habit_fine.prereg.sha256                     2 n1_habit_table.py                                  OK       
+n3_content_signals.prereg.sha256                1 n3_content_signals.py                              OK       
+n3_content_signals.prereg.sha256                2 n1_habit_table.py                                  OK       
+n3_content_signals.prereg.sha256                3 c1_quire_null.py                                   OK       
+n3_content_signals.prereg.sha256                4 b5_nmf_topics.py                                   OK       
+n3_content_signals.prereg.sha256                5 scoreboard/metrics_new.py                          OK       
+n3b_controlled_content.prereg.sha256            1 n3b_controlled_content.py                          OK       
+n3b_controlled_content.prereg.sha256            2 n1_habit_table.py                                  OK       
+n3b_controlled_content.prereg.sha256            3 p1_bifolio_null.py                                 OK       
+n3b_controlled_content.prereg.sha256            4 b5_nmf_topics.py                                   OK       
+n3b_controlled_content.prereg.sha256                                                                          [CRLF line endings (hash lines still parse)]
+n4_habit7k.prereg.sha256                        1 n4_habit7k.py                                      OK       
+n4_habit7k.prereg.sha256                        2 n1_habit_table.py                                  OK       
+n4_habit7k.prereg.sha256                        3 n3_content_signals.py                              OK       
+n4_habit7k.prereg.sha256                        4 c1_quire_null.py                                   OK       
+n4_habit7k.prereg.sha256                        5 c2_section_generator.py                            OK       
+n4_habit7k.prereg.sha256                        6 b5_nmf_topics.py                                   OK       
+n4_habit7k.prereg.sha256                        7 f3_flow_choice.py                                  OK       
+n4_habit7k.prereg.sha256                        8 f1_residual_order.py                               OK       
+n4_habit7k.prereg.sha256                        9 c3_edge_coupling.py                                OK       
+n4_habit7k.prereg.sha256                       10 a1_profile.py                                      OK       
+n4_habit7k.prereg.sha256                       11 b4_selfcite_sim.py                                 OK       
+n4_habit7k.prereg.sha256                       12 vparse.py                                          OK       
+n4_habit7k.prereg.sha256                       13 scoreboard/metrics_new.py                          OK       
+n4_habit7k.prereg.sha256                       14 data/ZL3b-n.txt                                    OK       
+n4_habit7k.prereg.sha256                       15 data/translit/ZL3b_eva.meta.json                   OK       
+n4_habit7k.prereg.sha256                       16 data/translit/RF1b.meta.json                       OK       
+n4_habit7k.prereg.sha256                       17 data/translit/IT2a.meta.json                       OK       
+n4b_habit7k_glyph.prereg.sha256                 1 n6_habit7k_glyph.py                                OK       
+n5_signature_discrimination.prereg.sha256       2 n5_signature_discrimination.py                     FAILED   original hash, superseded by amendment line 50 (matches the amendment, not the original)
+n5_signature_discrimination.prereg.sha256       3 a1_profile.py                                      OK       
+n5_signature_discrimination.prereg.sha256       4 a2_position.py                                     OK       
+n5_signature_discrimination.prereg.sha256       5 b4_selfcite_sim.py                                 OK       
+n5_signature_discrimination.prereg.sha256       6 b5_nmf_topics.py                                   OK       
+n5_signature_discrimination.prereg.sha256       7 c2_section_generator.py                            OK       
+n5_signature_discrimination.prereg.sha256       8 c3_edge_coupling.py                                OK       
+n5_signature_discrimination.prereg.sha256       9 c4_naibbe_lines.py                                 OK       
+n5_signature_discrimination.prereg.sha256      10 corpora.py                                         OK       
+n5_signature_discrimination.prereg.sha256      11 corpora_ext.py                                     OK       
+n5_signature_discrimination.prereg.sha256      12 f1_residual_order.py                               OK       
+n5_signature_discrimination.prereg.sha256      13 f2_syllable_control.py                             OK       
+n5_signature_discrimination.prereg.sha256      14 f3_flow_choice.py                                  OK       
+n5_signature_discrimination.prereg.sha256      15 h1_flow_lines.py                                   OK       
+n5_signature_discrimination.prereg.sha256      16 k1_joint_producer.py                               OK       
+n5_signature_discrimination.prereg.sha256      17 k2_nomenclator.py                                  OK       
+n5_signature_discrimination.prereg.sha256      18 k4_lossy_nomenclator.py                            OK       
+n5_signature_discrimination.prereg.sha256      19 m3_bakeoff_reconcile.py                            OK       
+n5_signature_discrimination.prereg.sha256      20 m4_phase1_board.py                                 OK       
+n5_signature_discrimination.prereg.sha256      21 m5_line_anatomy.py                                 OK       
+n5_signature_discrimination.prereg.sha256      22 n1_habit_table.py                                  OK       
+n5_signature_discrimination.prereg.sha256      23 scoreboard/__init__.py                             OK       
+n5_signature_discrimination.prereg.sha256      24 scoreboard/metrics_new.py                          OK       
+n5_signature_discrimination.prereg.sha256      25 vparse.py                                          OK       
+n5_signature_discrimination.prereg.sha256      26 scoreboard/score.py                                OK       
+n5_signature_discrimination.prereg.sha256      27 data/controls_synthetic/c2_best.meta.json          OK       
+n5_signature_discrimination.prereg.sha256      28 data/controls_synthetic/flow_cipher_layer.meta.json OK       
+n5_signature_discrimination.prereg.sha256      29 data/controls_synthetic/flow_gen_layer.meta.json   OK       
+n5_signature_discrimination.prereg.sha256      30 data/controls_synthetic/latin_merged.meta.json     OK       
+n5_signature_discrimination.prereg.sha256      31 data/controls_synthetic/lull_ars_brevis_table.meta.json OK       
+n5_signature_discrimination.prereg.sha256      32 data/controls_synthetic/markov1.meta.json          OK       
+n5_signature_discrimination.prereg.sha256      33 data/controls_synthetic/naibbe_like.meta.json      OK       
+n5_signature_discrimination.prereg.sha256      34 data/controls_synthetic/nomen_k2_x2.meta.json      OK       
+n5_signature_discrimination.prereg.sha256      35 data/controls_synthetic/nomen_k2_x8.meta.json      OK       
+n5_signature_discrimination.prereg.sha256      36 data/controls_synthetic/nomen_lines.meta.json      OK       
+n5_signature_discrimination.prereg.sha256      37 data/controls_synthetic/nomen_numeric.meta.json    OK       
+n5_signature_discrimination.prereg.sha256      38 data/controls_synthetic/nomen_numeric_lines.meta.json OK       
+n5_signature_discrimination.prereg.sha256      39 data/controls_synthetic/nomen_numeric_sylls.meta.json OK       
+n5_signature_discrimination.prereg.sha256      40 data/controls_synthetic/nomen_syll.meta.json       OK       
+n5_signature_discrimination.prereg.sha256      41 data/controls_synthetic/nomen_word.meta.json       OK       
+n5_signature_discrimination.prereg.sha256      42 data/controls_synthetic/rugg_grille.meta.json      OK       
+n5_signature_discrimination.prereg.sha256      43 data/controls_synthetic/schwartz_reuse.meta.json   OK       
+n5_signature_discrimination.prereg.sha256      44 data/controls_synthetic/timm_schinner.meta.json    OK       
+n5_signature_discrimination.prereg.sha256      45 data/controls_synthetic/timm_schinner_ownlines.meta.json OK       
+n5_signature_discrimination.prereg.sha256      46 data/translit/RF1b.meta.json                       OK       
+n5_signature_discrimination.prereg.sha256      47 data/translit/IT2a.meta.json                       OK       
+n5_signature_discrimination.prereg.sha256      48 data/translit/ZL3b_eva.meta.json                   OK       
+n5_signature_discrimination.prereg.sha256      50 n5_signature_discrimination.py                     OK       AMENDMENT line (replaces line 2); current script = amended hash
+n5_signature_discrimination.prereg.sha256                                                                     [stub carries a dated # AMENDMENT comment]
+n6_ab_split.prereg.sha256                       2 n6_ab_split.py                                     FAILED   original hash, superseded by amendment line 29 (matches the amendment, not the original)
+n6_ab_split.prereg.sha256                       3 scoreboard/run_v2.py                               OK       
+n6_ab_split.prereg.sha256                       4 scoreboard/score.py                                OK       
+n6_ab_split.prereg.sha256                       5 scoreboard/metrics_new.py                          OK       
+n6_ab_split.prereg.sha256                       6 scoreboard/__init__.py                             OK       
+n6_ab_split.prereg.sha256                       7 m4_phase1_board.py                                 OK       
+n6_ab_split.prereg.sha256                       8 corpora.py                                         OK       
+n6_ab_split.prereg.sha256                       9 corpora_ext.py                                     OK       
+n6_ab_split.prereg.sha256                      10 vparse.py                                          OK       
+n6_ab_split.prereg.sha256                      11 results_m4_phase1_board.json                       OK       
+n6_ab_split.prereg.sha256                      12 PREREG-v2.md                                       OK       
+n6_ab_split.prereg.sha256                      13 data/ZL3b-n.txt                                    OK       
+n6_ab_split.prereg.sha256                      14 data/translit/RF1b.meta.json                       OK       
+n6_ab_split.prereg.sha256                      15 data/translit/IT2a.meta.json                       OK       
+n6_ab_split.prereg.sha256                      16 data/controls_synthetic/c2_best.meta.json          OK       
+n6_ab_split.prereg.sha256                      17 data/controls_synthetic/markov1.meta.json          OK       
+n6_ab_split.prereg.sha256                      18 data/controls_synthetic/rugg_grille.meta.json      OK       
+n6_ab_split.prereg.sha256                      19 data/controls_synthetic/schwartz_reuse.meta.json   OK       
+n6_ab_split.prereg.sha256                      20 data/controls_synthetic/timm_schinner.meta.json    OK       
+n6_ab_split.prereg.sha256                      21 data/controls_synthetic/timm_schinner_ownlines.meta.json OK       
+n6_ab_split.prereg.sha256                      22 data/controls_synthetic/nomen_lines.meta.json      OK       
+n6_ab_split.prereg.sha256                      23 data/controls_synthetic/nomen_numeric.meta.json    OK       
+n6_ab_split.prereg.sha256                      24 data/controls_synthetic/nomen_numeric_lines.meta.json OK       
+n6_ab_split.prereg.sha256                      25 data/controls_synthetic/nomen_numeric_sylls.meta.json OK       
+n6_ab_split.prereg.sha256                      26 data/controls_synthetic/nomen_syll.meta.json       OK       
+n6_ab_split.prereg.sha256                      27 data/controls_synthetic/nomen_word.meta.json       OK       
+n6_ab_split.prereg.sha256                      29 n6_ab_split.py                                     OK       AMENDMENT line (replaces line 2); current script = amended hash
+n6_ab_split.prereg.sha256                                                                                     [stub carries a dated # AMENDMENT comment]
+n6_habit7k_glyph.prereg.sha256                  1 n6_habit7k_glyph.py                                OK       
+n7_gibberish_family.prereg.sha256               1 n7_gibberish_family.py                             OK       
+s15_band_widths.prereg.sha256                   1 s15_band_widths.py                                 OK       
+s17_realline_v2.prereg.sha256                   2 s17_realline_v2.py                                 OK       
+s17_realline_v2.prereg.sha256                   3 tools/realline_to_meta.py                          OK       
+s18_cremma_v2.prereg.sha256                     2 s18_cremma_v2.py                                   OK       
+s18_cremma_v2.prereg.sha256                     3 tools/cremma_to_meta.py                            OK       
+s1_v2_joint_producers.prereg.sha256             1 s1_v2_joint_producers.py                           OK       
+s20_ab_coupling_v2.prereg.sha256                2 s20_ab_coupling_v2.py                              OK       
+s23_power_hash_ledger.prereg.sha256             2 s23_power_hash_ledger.py                           OK       
+s29_q1_label_controls.prereg.sha256             1 s29_q1_label_controls.py                           OK       
+s29_q1_label_controls.prereg.sha256                                                                           [CRLF line endings (hash lines still parse)]
+s2_u1_u2_u3_controls.prereg.sha256              1 s2_u1_u2_u3_controls.py                            OK       
+s30_phase2_u2_u3_deltas.prereg.sha256           1 s30_phase2_u2_u3_deltas.py                         OK       
+s30_phase2_u2_u3_deltas.prereg.sha256                                                                         [CRLF line endings (hash lines still parse)]
+s31_null_glyph_charwin_pilot.prereg.sha256      1 s31_null_glyph_charwin_pilot.py                    OK       
+s31_null_glyph_charwin_pilot.prereg.sha256                                                                    [CRLF line endings (hash lines still parse)]
+scoreboard/PREREG-v2.sha256                     1 PREREG-v2.md                                       OK       
+scoreboard/PREREG-v2.sha256                     2 scoreboard/run_v2.py                               OK       
+scoreboard/PREREG-v2.sha256                     3 tools/gibberish_to_meta.py                         OK       
+scoreboard/PREREG.sha256                        1 PREREG.md                                          OK       
+scoreboard/PREREG.sha256                        2 scoreboard/score.py                                OK       
+
+TOTALS: 122 OK, 2 FAILED, 0 MISSING over 22 stubs
+Amended stubs (FAILED original + OK amendment line): n5_signature_discrimination.prereg.sha256, n6_ab_split.prereg.sha256
+  -> these record 'match the amendment, not the original'; the FAILED lines are the pre-crash hashes, not drift.
+
+NOTES
+  results_n4.txt: prints a script hash = False  (n4_habit7k.prereg.sha256 exists and verifies above; PREREG-v2 §9 requires the result file to print its hash; it does not)
+  results_p1_bifolio.txt: prints a script hash = False; no p1_bifolio*.prereg.sha256 stub exists on disk.
+    p1_bifolio_null.py hash 3aba99a6cdd1... is listed in n3b_controlled_content.prereg.sha256 -> OK against the script on disk
+    p1_bifolio is therefore verifiable only through n3b's stub (phase-2.md decision 6). A retro stub is NOT
+    written here: a stub written after results_p1_bifolio.txt exists would not be 'before the run'.
+  n4b_habit7k_glyph / n6_habit7k_glyph: two stubs, one script (same hash); both verify independently above.
+
+====================================================================================================
+(b) M1 x10 SEEDS  --  column-specific excess vs far-line draw seed (pw_m1_column.py pattern, m1 module unchanged)
+====================================================================================================
+pages 204  aligned paragraph lines 3782  build 1.9s
+statistic: column-specific excess = (same-far) - (off-off_far) in edit<=1 pp; P = P(diff <= 0) under the
+page-cluster bootstrap, n_boot=1000 (m1_coordinates.N_BOOT, the filed setting; pw_m1_column.py used 300).
+filed: results_m1_coordinates.txt:59,64  excess +0.41 pp  P = 0.068  (seed 20261017, one far-line draw)
+
+seed  n_same  excess_pp   ci_lo   ci_hi  P_colspec  P_samefar    t_s
+   0   22046      +0.33   -0.15   +0.80      0.076      0.000      0
+   1   22046      +0.62   +0.17   +1.06      0.005      0.000      0
+   2   22046      +0.78   +0.22   +1.25      0.007      0.000      0
+   3   22046      +0.46   -0.05   +0.98      0.035      0.000      0
+   4   22046      +1.02   +0.50   +1.54      0.001      0.000      0
+   5   22046      +0.32   -0.18   +0.83      0.100      0.000      0
+   6   22046      +0.37   -0.16   +0.86      0.080      0.000      0
+   7   22046      +0.48   -0.03   +0.99      0.032      0.001      0
+   8   22046      +0.72   +0.23   +1.23      0.004      0.000      0
+   9   22046      +0.48   +0.01   +0.95      0.023      0.000      0
+
+P(column-specific<=0): median 0.028  range [0.001, 0.100]  7 of 10 below 0.05
+excess: median +0.48 pp  range [+0.32, +1.02] pp
+same-far P: median 0.000  range [0.000, 0.001]
+READING: filed P=0.068 was one seed; across 10 seeds median P = 0.028, 7 of 10 below 0.05 -> seed-unstable; the far-line draw decides the verdict (C-constraints §5 pitfall 1); no verdict at this design. (C-constraints §1: filed +0.41 pp ~ r=0.004, below the r~0.006-0.007 detection threshold.)
+
+====================================================================================================
+(c) POWER REFILE  --  each filed negative beside its smallest detectable effect (C-constraints.md §1)
+====================================================================================================
+TEST    : c1 test A, hand 2 (quire-block exact null)
+FILED   : results_c1.txt:10  NMI=0.333 null mean 0.209 p=0.133 (7 blocks HHHHBTT, 105 assignments, floor 0.0095)
+POWER   : C-constraints §1: power 0.8 needs injected share s = 0.60 (0.9 at s = 0.70; 0.6 at s = 0.50; 0.5 at s = 0.45); the manuscript's own effect (NMI 0.333) corresponds to s ~ 0.60-0.65. At its own effect size the test misses 20-40 % of the time. 'hand 2 p = 0.133 is a coin flip, not a negative.'
+STATUS  : UNDERPOWERED
+
+TEST    : m6 §4 list order, PHARMA jar labels Lc, shared 2-char prefix
+FILED   : results_m6_labels.txt:152  obs=0.125 shuffled=0.072±0.034 z=+1.56 p(higher)=0.174 (24 adjacent pairs; 200 shuffles, floor 1/201)
+POWER   : C-constraints §1: 'not detectable: r = 0.50 gives power 0.6' -- undetectable below r = 0.50; 'the jar-label list test has no power at any plausible effect size.'
+STATUS  : UNDERPOWERED
+
+TEST    : m6 §4 list order, STARS labels Ls, shared 2-char prefix
+FILED   : results_m6_labels.txt:140  obs=0.094 shuffled=0.104±0.031 z=-0.32 p(higher)=0.756 (64 adjacent pairs; 200 shuffles, floor 1/201)
+POWER   : C-constraints §1: r = 0.15 power 1.0, r = 0.10 power 0.6 -- only an effect >= 15 % is readable; 'no list order in the star labels' means 'no effect >= 15 %'.
+STATUS  : UNDERPOWERED
+
+TEST    : a3 own-page label hit vs section-permuted null
+FILED   : results_a3.txt:2  hit 0.121 null 0.107±0.010 p=0.106 (40 pages, 778 label tokens)
+POWER   : C-constraints §1 (last paragraph): 'Other filed negatives not curved (unverified power): a3/d6 own-page label hit (p = 0.09-0.11, 40 pages, 778 tokens; d6's SENSITIVITY row on 55 pages already gives p = 0.020, so the 40-page negative is a sample-size negative)'. No injection curve was run.
+STATUS  : POWER UNVERIFIED
+
+TEST    : d6 own-page label hit vs section-permuted null
+FILED   : results_d6.txt:91  hit 12.1 % null mean 10.6 % p99 13.0 % p=0.0945 (40 pages); results_d6.txt:93 SENSITIVITY 55 pages p=(3+1)/201=0.0199
+POWER   : C-constraints §1: same row as a3 -- power curve not run, 'unverified'; the 55-page sensitivity row already crosses 0.05, so the 40-page p is a sample-size negative.
+STATUS  : POWER UNVERIFIED
+
+Refiled reading for the D-list: none of these five is a negative; they are power statements. No re-run (c1 uses default_rng(0), c1_quire_null.py:180; m6 is module-level code; a3/d6 are the 40-page exhaustive set).
+
+====================================================================================================
+(d) P-VALUE LEDGER  --  Phase 2 family = the p-values this file prints; Benjamini-Hochberg q = 0.05
+====================================================================================================
+Family rule (research/phase-2.md §5, C-constraints §3): one family per round = every p-value a Phase 2 result file
+prints. The 10 m1 seeds enter as one p (the median; the 10 are sensitivity). A p equal to its exact/permutation
+floor is 'floor, not ranked' (C-constraints §5 pitfall 2) and is excluded from m.
+
+m = 7 ranked p-values (q = 0.05); 0 floor-bound entries listed unranked
+rank    raw_p  BH_cutoff pass   floor                        test  [source]
+   1   0.0199     0.0071 fail   shuffle floor 1/201 = 0.005  d6 SENSITIVITY own-page label hit (55 pages)  [results_d6.txt:93]
+   2   0.0275     0.0143 fail   bootstrap floor 1/1000       m1 column-specific excess, median over seeds 0-9  [results_s23.txt block (b); filed results_m1_coordinates.txt:64 P=0.068]
+   3   0.0945     0.0214 fail   shuffle floor 1/201 = 0.005  d6 own-page label hit (40 pages)  [results_d6.txt:91]
+   4   0.1060     0.0286 fail   floor not stated in file     a3 own-page label hit (40 pages)  [results_a3.txt:2]
+   5   0.1330     0.0357 fail   exact floor 1/105 = 0.0095   c1 test A hand 2 quire-block null  [results_c1.txt:10]
+   6   0.1740     0.0429 fail   shuffle floor 1/201 = 0.005  m6 Lc shared 2-char prefix (24 pairs)  [results_m6_labels.txt:152]
+   7   0.7560     0.0500 fail   shuffle floor 1/201 = 0.005  m6 Ls shared 2-char prefix (64 pairs)  [results_m6_labels.txt:140]
+
+BH survivors at q=0.05: NONE
+Smallest ranked p 0.0199 vs cutoff 1/7*0.05 = 0.0071. The five refiled negatives are filed as power statements, not p-values; none can pass, which is the point.
+
+CONTEXT (earlier content-side p-values C-constraints §3 flagged; listed unranked, NOT members of the Phase 2 family):
+  p=0.018          c1 test A hand 1 quire-block null  [results_c1.txt:7]  floor-bound (1/55); 'floor, not ranked'
+  p=0.018          n3 hand-1 NMI margin tests (ZL3b 0.013 / IT2a 0.005 are NMI margins, not p-values)  [C-constraints §3 table]  floor-bound (1/55, inherited from c1); 'floor, not ranked'
+  p=0.050          m6 ALL label pages, shared 2-char prefix (1107 pairs)  [results_m6_labels.txt:164]  at 5 %; C §1: r~0.015 effect, below the r=0.05 grid
+  p=0.005          m6 ALL label pages, adjacent norm. edit distance (ned)  [results_m6_labels.txt:160]  C §3: passes BH(0.05) over 582 only; = Bonferroni alpha at m=10, not <
+  p=0.106 / 0.0945 a3/d6 labels 40 pages  [results_a3.txt:2 / results_d6.txt:91]  refiled above as POWER UNVERIFIED
+  p=0.133          c1 test A hand 2  [results_c1.txt:10]  refiled above as UNDERPOWERED
+  p=0.068          m1 column-specific (filed seed)  [results_m1_coordinates.txt:64]  seed-unstable; block (b)
+  C-constraints §3 summary: 582 printed p-values across results_*.txt (560 by the stricter regex), 291 < 0.05;
+  per file m1 86, n2 87, n3b 159, n1 48, c2 47, b5 32, m6 30, c1 28, l1 20, n3 18. Under BH(0.05) over all 582 the
+  cutoff is 0.018: the floor results sit exactly on the line, m6 ned p=0.005 passes, pre2 p=0.050 does not. With
+  291/582 < 0.05 as the base rate, any single sub-0.05 p cited without a pre-registered family is noise at ~50 % prior.
+
+Any later Phase 2 / Phase 3 file that prints a p-value appends its row to its own copy of this block and re-states m.
+# end results_s23  total 5s after m1 build

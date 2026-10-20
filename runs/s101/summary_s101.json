@@ -1,0 +1,562 @@
+{
+ "stub_match": "True",
+ "rule": "POWERED if recovery >= 10/15; WEAK if 5..9/15; UNINFORMATIVE if <= 4/15",
+ "rows": [
+  {
+   "finding": "F-30",
+   "family": "s71_WTG_global",
+   "rule": ">=5/6 (P1..P5,P7)",
+   "recovery": {
+    "ZL3b": 1,
+    "RF1b": 2,
+    "IT2a": 4
+   },
+   "calls_by_T": {
+    "ZL3b": "UNINFORMATIVE",
+    "RF1b": "UNINFORMATIVE",
+    "IT2a": "UNINFORMATIVE"
+   },
+   "family_call": "UNINFORMATIVE",
+   "recentred_recovery": {
+    "ZL3b": 7,
+    "RF1b": 6,
+    "IT2a": 9
+   },
+   "per_pred": {
+    "ZL3b": {
+     "P1": 11,
+     "P2": 10,
+     "P3": 5,
+     "P4": 11,
+     "P5": 0,
+     "P7": 15
+    },
+    "RF1b": {
+     "P1": 11,
+     "P2": 8,
+     "P3": 9,
+     "P4": 10,
+     "P5": 0,
+     "P7": 15
+    },
+    "IT2a": {
+     "P1": 13,
+     "P2": 9,
+     "P3": 8,
+     "P4": 12,
+     "P5": 0,
+     "P7": 15
+    }
+   }
+  },
+  {
+   "finding": "F-30",
+   "family": "s71_WTG_scribe",
+   "rule": ">=5/6 (P1..P5,P7)",
+   "recovery": {
+    "ZL3b": 3,
+    "RF1b": 1,
+    "IT2a": 4
+   },
+   "calls_by_T": {
+    "ZL3b": "UNINFORMATIVE",
+    "RF1b": "UNINFORMATIVE",
+    "IT2a": "UNINFORMATIVE"
+   },
+   "family_call": "UNINFORMATIVE",
+   "recentred_recovery": {
+    "ZL3b": 5,
+    "RF1b": 5,
+    "IT2a": 6
+   },
+   "per_pred": {
+    "ZL3b": {
+     "P1": 11,
+     "P2": 9,
+     "P3": 8,
+     "P4": 12,
+     "P5": 0,
+     "P7": 14
+    },
+    "RF1b": {
+     "P1": 8,
+     "P2": 9,
+     "P3": 6,
+     "P4": 9,
+     "P5": 0,
+     "P7": 14
+    },
+    "IT2a": {
+     "P1": 12,
+     "P2": 9,
+     "P3": 6,
+     "P4": 12,
+     "P5": 0,
+     "P7": 14
+    }
+   }
+  },
+  {
+   "finding": "F-34",
+   "family": "s81_line_sticky_fit|latin_cremma_C1",
+   "rule": "C1 >=5/6 (P1..P5,P7)",
+   "recovery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "calls_by_T": {
+    "ZL3b": "UNINFORMATIVE",
+    "RF1b": "UNINFORMATIVE",
+    "IT2a": "UNINFORMATIVE"
+   },
+   "family_call": "UNINFORMATIVE",
+   "recentred_recovery": {
+    "ZL3b": 11,
+    "RF1b": 11,
+    "IT2a": 10
+   },
+   "per_pred": {
+    "ZL3b": {
+     "P1": 13,
+     "P2": 8,
+     "P3": 4,
+     "P4": 0,
+     "P5": 0,
+     "P7": 15
+    },
+    "RF1b": {
+     "P1": 11,
+     "P2": 12,
+     "P3": 4,
+     "P4": 0,
+     "P5": 0,
+     "P7": 15
+    },
+    "IT2a": {
+     "P1": 12,
+     "P2": 9,
+     "P3": 6,
+     "P4": 0,
+     "P5": 0,
+     "P7": 15
+    }
+   }
+  },
+  {
+   "finding": "F-34",
+   "family": "s81_line_sticky_fit|latin_cremma_C2_s69",
+   "rule": "C2 s69 call-pattern match",
+   "recovery": {
+    "ZL3b": 9,
+    "RF1b": 13,
+    "IT2a": 15
+   },
+   "calls_by_T": {
+    "ZL3b": "WEAK",
+    "RF1b": "POWERED",
+    "IT2a": "POWERED"
+   },
+   "family_call": "WEAK",
+   "recentred_recovery": {
+    "ZL3b": 9,
+    "RF1b": 13,
+    "IT2a": 15
+   },
+   "per_pred": {}
+  },
+  {
+   "finding": "F-34",
+   "family": "s81_line_sticky75|latin_cremma_C1",
+   "rule": "C1 >=5/6 (P1..P5,P7)",
+   "recovery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "calls_by_T": {
+    "ZL3b": "UNINFORMATIVE",
+    "RF1b": "UNINFORMATIVE",
+    "IT2a": "UNINFORMATIVE"
+   },
+   "family_call": "UNINFORMATIVE",
+   "recentred_recovery": {
+    "ZL3b": 10,
+    "RF1b": 9,
+    "IT2a": 9
+   },
+   "per_pred": {
+    "ZL3b": {
+     "P1": 14,
+     "P2": 9,
+     "P3": 6,
+     "P4": 0,
+     "P5": 0,
+     "P7": 15
+    },
+    "RF1b": {
+     "P1": 10,
+     "P2": 11,
+     "P3": 5,
+     "P4": 0,
+     "P5": 0,
+     "P7": 15
+    },
+    "IT2a": {
+     "P1": 13,
+     "P2": 8,
+     "P3": 5,
+     "P4": 0,
+     "P5": 0,
+     "P7": 15
+    }
+   }
+  },
+  {
+   "finding": "F-34",
+   "family": "s81_line_sticky75|latin_cremma_C2_s69",
+   "rule": "C2 s69 call-pattern match",
+   "recovery": {
+    "ZL3b": 15,
+    "RF1b": 14,
+    "IT2a": 15
+   },
+   "calls_by_T": {
+    "ZL3b": "POWERED",
+    "RF1b": "POWERED",
+    "IT2a": "POWERED"
+   },
+   "family_call": "POWERED",
+   "recentred_recovery": {
+    "ZL3b": 15,
+    "RF1b": 14,
+    "IT2a": 15
+   },
+   "per_pred": {}
+  },
+  {
+   "finding": "F-23",
+   "family": "F23_s57",
+   "rule": ">=5/6 (P1..P5,P7)",
+   "recovery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "calls_by_T": {
+    "ZL3b": "UNINFORMATIVE",
+    "RF1b": "UNINFORMATIVE",
+    "IT2a": "UNINFORMATIVE"
+   },
+   "family_call": "UNINFORMATIVE",
+   "recentred_recovery": {
+    "ZL3b": 6,
+    "RF1b": 6,
+    "IT2a": 5
+   },
+   "per_pred": {
+    "ZL3b": {
+     "P1": 13,
+     "P2": 8,
+     "P3": 7,
+     "P4": 1,
+     "P5": 0,
+     "P7": 15
+    },
+    "RF1b": {
+     "P1": 14,
+     "P2": 7,
+     "P3": 4,
+     "P4": 1,
+     "P5": 0,
+     "P7": 15
+    },
+    "IT2a": {
+     "P1": 13,
+     "P2": 5,
+     "P3": 5,
+     "P4": 1,
+     "P5": 0,
+     "P7": 15
+    }
+   }
+  },
+  {
+   "finding": "F-23",
+   "family": "F23_s58",
+   "rule": ">=5/6 (P1..P5,P7)",
+   "recovery": {
+    "ZL3b": 2,
+    "RF1b": 1,
+    "IT2a": 1
+   },
+   "calls_by_T": {
+    "ZL3b": "UNINFORMATIVE",
+    "RF1b": "UNINFORMATIVE",
+    "IT2a": "UNINFORMATIVE"
+   },
+   "family_call": "UNINFORMATIVE",
+   "recentred_recovery": {
+    "ZL3b": 7,
+    "RF1b": 6,
+    "IT2a": 2
+   },
+   "per_pred": {
+    "ZL3b": {
+     "P1": 12,
+     "P2": 11,
+     "P3": 3,
+     "P4": 0,
+     "P5": 15,
+     "P7": 13
+    },
+    "RF1b": {
+     "P1": 12,
+     "P2": 11,
+     "P3": 2,
+     "P4": 0,
+     "P5": 15,
+     "P7": 13
+    },
+    "IT2a": {
+     "P1": 13,
+     "P2": 8,
+     "P3": 3,
+     "P4": 0,
+     "P5": 15,
+     "P7": 11
+    }
+   }
+  },
+  {
+   "finding": "F-23",
+   "family": "F23_s61",
+   "rule": ">=5/6 (P1..P5,P7)",
+   "recovery": {
+    "ZL3b": 1,
+    "RF1b": 1,
+    "IT2a": 1
+   },
+   "calls_by_T": {
+    "ZL3b": "UNINFORMATIVE",
+    "RF1b": "UNINFORMATIVE",
+    "IT2a": "UNINFORMATIVE"
+   },
+   "family_call": "UNINFORMATIVE",
+   "recentred_recovery": {
+    "ZL3b": 6,
+    "RF1b": 10,
+    "IT2a": 7
+   },
+   "per_pred": {
+    "ZL3b": {
+     "P1": 8,
+     "P2": 10,
+     "P3": 6,
+     "P4": 6,
+     "P5": 0,
+     "P7": 15
+    },
+    "RF1b": {
+     "P1": 11,
+     "P2": 12,
+     "P3": 4,
+     "P4": 7,
+     "P5": 0,
+     "P7": 15
+    },
+    "IT2a": {
+     "P1": 10,
+     "P2": 12,
+     "P3": 3,
+     "P4": 3,
+     "P5": 0,
+     "P7": 15
+    }
+   }
+  },
+  {
+   "finding": "F-23",
+   "family": "F23_s67_CA",
+   "rule": ">=5/6 (P1..P5,P7)",
+   "recovery": {
+    "ZL3b": 2,
+    "RF1b": 2,
+    "IT2a": 0
+   },
+   "calls_by_T": {
+    "ZL3b": "UNINFORMATIVE",
+    "RF1b": "UNINFORMATIVE",
+    "IT2a": "UNINFORMATIVE"
+   },
+   "family_call": "UNINFORMATIVE",
+   "recentred_recovery": {
+    "ZL3b": 4,
+    "RF1b": 7,
+    "IT2a": 6
+   },
+   "per_pred": {
+    "ZL3b": {
+     "P1": 15,
+     "P2": 12,
+     "P3": 4,
+     "P4": 1,
+     "P5": 7,
+     "P7": 15
+    },
+    "RF1b": {
+     "P1": 15,
+     "P2": 6,
+     "P3": 8,
+     "P4": 0,
+     "P5": 9,
+     "P7": 15
+    },
+    "IT2a": {
+     "P1": 15,
+     "P2": 8,
+     "P3": 5,
+     "P4": 1,
+     "P5": 4,
+     "P7": 15
+    }
+   }
+  },
+  {
+   "finding": "F-23",
+   "family": "F23_s67_CA0",
+   "rule": ">=5/6 (P1..P5,P7)",
+   "recovery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 0
+   },
+   "calls_by_T": {
+    "ZL3b": "UNINFORMATIVE",
+    "RF1b": "UNINFORMATIVE",
+    "IT2a": "UNINFORMATIVE"
+   },
+   "family_call": "UNINFORMATIVE",
+   "recentred_recovery": {
+    "ZL3b": 1,
+    "RF1b": 7,
+    "IT2a": 2
+   },
+   "per_pred": {
+    "ZL3b": {
+     "P1": 0,
+     "P2": 12,
+     "P3": 4,
+     "P4": 0,
+     "P5": 8,
+     "P7": 15
+    },
+    "RF1b": {
+     "P1": 0,
+     "P2": 14,
+     "P3": 11,
+     "P4": 0,
+     "P5": 13,
+     "P7": 15
+    },
+    "IT2a": {
+     "P1": 0,
+     "P2": 10,
+     "P3": 7,
+     "P4": 0,
+     "P5": 5,
+     "P7": 15
+    }
+   }
+  },
+  {
+   "finding": "F-41",
+   "family": "s91_LP91_C1_core",
+   "rule": "C1 S87.c1 (a_order,b_Rw,c_Rc<Rw,d_loc)",
+   "recovery": {
+    "ZL3b": 7,
+    "RF1b": 5,
+    "IT2a": 14
+   },
+   "calls_by_T": {
+    "ZL3b": "WEAK",
+    "RF1b": "WEAK",
+    "IT2a": "POWERED"
+   },
+   "family_call": "WEAK",
+   "recentred_recovery": {
+    "ZL3b": 15,
+    "RF1b": 14,
+    "IT2a": 14
+   },
+   "per_pred": {
+    "ZL3b": {
+     "b_Rwithin": 15,
+     "c_Rcross<Rwithin": 15,
+     "a_order": 9,
+     "d_locality": 12
+    },
+    "RF1b": {
+     "b_Rwithin": 15,
+     "c_Rcross<Rwithin": 14,
+     "d_locality": 13,
+     "a_order": 8
+    },
+    "IT2a": {
+     "a_order": 14,
+     "b_Rwithin": 15,
+     "c_Rcross<Rwithin": 15,
+     "d_locality": 15
+    }
+   }
+  },
+  {
+   "finding": "F-41",
+   "family": "s91_LP91_C2_words",
+   "rule": "C2 >=5/6 (P1..P5,P7)",
+   "recovery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 2
+   },
+   "calls_by_T": {
+    "ZL3b": "UNINFORMATIVE",
+    "RF1b": "UNINFORMATIVE",
+    "IT2a": "UNINFORMATIVE"
+   },
+   "family_call": "UNINFORMATIVE",
+   "recentred_recovery": {
+    "ZL3b": 0,
+    "RF1b": 0,
+    "IT2a": 2
+   },
+   "per_pred": {
+    "ZL3b": {
+     "P1": 13,
+     "P2": 8,
+     "P3": 10,
+     "P4": 0,
+     "P5": 5,
+     "P7": 14
+    },
+    "RF1b": {
+     "P1": 14,
+     "P2": 9,
+     "P3": 5,
+     "P4": 0,
+     "P5": 2,
+     "P7": 15
+    },
+    "IT2a": {
+     "P1": 10,
+     "P2": 8,
+     "P3": 11,
+     "P4": 0,
+     "P5": 6,
+     "P7": 13
+    }
+   }
+  }
+ ],
+ "elapsed_secs": 7811.224458217621
+}

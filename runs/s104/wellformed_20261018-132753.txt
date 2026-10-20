@@ -1,0 +1,24 @@
+S104 WELL-FORMEDNESS CHECK (pre-freeze; only alphabets and counts; no statistic, no recovery)
+date: Sun Oct 18 13:27:53 PDT 2026 (`date`)
+  plaintext P1_la: 32063 words available
+  plaintext P2_it: 24531 words available
+  plaintext P3_de: 58675 words available
+  P1_la_G1a          segment words 13267 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 18 'abcdefghijklmnowxz'
+  P1_la_G1a_shuf     segment words 13267 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 18 'abcdefghijklmnowxz'
+  P1_la_G1b          segment words 22500 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'
+  P1_la_G1b_shuf     segment words 22500 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'
+  P1_la_G1c          segment words 22500 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'
+  P1_la_G1c_shuf     segment words 22500 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'
+  P2_it_G1a          segment words 13014 (enough True); units 22501; cipher tokens 22500 lines 2888 pages 173; alphabet 18 'abcdefghijklmnowxz'
+  P2_it_G1a_shuf     segment words 13014 (enough True); units 22501; cipher tokens 22500 lines 2888 pages 173; alphabet 18 'abcdefghijklmnowxz'
+  P2_it_G1b          segment words 22500 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'
+  P2_it_G1b_shuf     segment words 22500 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'
+  P2_it_G1c          segment words 22500 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'
+  P2_it_G1c_shuf     segment words 22500 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'
+  P3_de_G1a          segment words 14687 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 18 'abcdefghijklmnowxz'
+  P3_de_G1a_shuf     segment words 14687 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 18 'abcdefghijklmnowxz'
+  P3_de_G1b          segment words 22500 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'
+  P3_de_G1b_shuf     segment words 22500 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'
+  P3_de_G1c          segment words 22500 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'
+  P3_de_G1c_shuf     segment words 22500 (enough True); units 22500; cipher tokens 22500 lines 2888 pages 173; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'
+finished Sun Oct 18 13:27:55 PDT 2026 (`date`)

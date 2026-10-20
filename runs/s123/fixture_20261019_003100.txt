@@ -1,0 +1,29 @@
+s123 fixture, started 2026-10-19 00:31:00; leaves ['f75', 'f76', 'f77', 'f78', 'f79', 'f80', 'f81', 'f82', 'f83', 'f84']; bifolios ['M-1', 'M-2', 'M-3', 'M-4', 'M-5']; matchings 945 (exact); min achievable p = 0.00106
+pages in section B: 19 (f75r, f75v, f76v, f77r, f77v, f78r, f78v, f79r, f79v, f80r, f80v, f81r, f81v, f82r, f82v, f83r, f83v, f84r, f84v)
+  sheet-planted quire 1: T=+0.4416 p=0.0011 -> SHEET
+  sheet-planted quire 2: T=+0.4434 p=0.0095 -> SHEET
+  sheet-planted quire 3: T=+0.3809 p=0.0011 -> SHEET
+  sheet-planted quire 4: T=+0.4378 p=0.0032 -> SHEET
+  sheet-planted quire 5: T=+0.3643 p=0.0032 -> SHEET
+  sheet-planted quire 6: T=+0.4222 p=0.0032 -> SHEET
+  sheet-planted quire 7: T=+0.3491 p=0.0032 -> SHEET
+  sheet-planted quire 8: T=+0.2525 p=0.0095 -> SHEET
+  sheet-planted quire 9: T=+0.4574 p=0.0011 -> SHEET
+  sheet-planted quire 10: T=+0.3035 p=0.0032 -> SHEET
+  random-planted quire 1: T=+0.1695 p=0.1302 -> NOT_SHEET
+  random-planted quire 2: T=+0.1726 p=0.1746 -> NOT_SHEET
+  random-planted quire 3: T=-0.0320 p=0.3905 -> NOT_SHEET
+  random-planted quire 4: T=+0.1331 p=0.1937 -> NOT_SHEET
+  random-planted quire 5: T=+0.1634 p=0.0942 -> NOT_SHEET
+  random-planted quire 6: T=-0.2604 p=1.0000 -> NOT_SHEET
+  random-planted quire 7: T=+0.1430 p=0.0878 -> NOT_SHEET
+  random-planted quire 8: T=+0.0184 p=0.3968 -> NOT_SHEET
+  random-planted quire 9: T=+0.1495 p=0.0794 -> NOT_SHEET
+  random-planted quire 10: T=-0.1934 p=0.6952 -> NOT_SHEET
+GATE sheet-planted SHEET 10/10 (need >= 8); random-planted NOT_SHEET 10/10 (need >= 8)
+  descriptive 500 sims (binary classes, no batch jitter): power 0.752, false SHEET rate under random 0.048
+  descriptive 500 sims (jitter 0.10, page noise 0.15): power 0.812, false SHEET rate under random 0.058
+  descriptive 500 sims (gate settings): power 0.952, false SHEET rate under random 0.054
+POSITIVE CONTROL A (text, F-51 type; 43 ZL3b folio features, z within quire M, leaf mean, RMS distance): T=+0.2091 p=0.0011 -> SHEET  (s120 needed 35 sheets; 5 sheets here, so a miss means low power, not a broken test)
+CALL_FIXTURE: PASS
+finished 2026-10-19 00:31:01

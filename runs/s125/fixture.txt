@@ -1,0 +1,7 @@
+FX0 planted loci counts recovered {'B': 7, 'PH': 14, 'CZA': 20} == {'B': 7, 'PH': 14, 'CZA': 20}: PASS
+FX1 3 topics n=1000: qualifies=True expected=True [] -> PASS
+FX2 3 topics n=207: qualifies=False expected=False ['R4 n=207 < 969'] -> PASS
+FX3 1 topic n=2000: qualifies=False expected=False ['R3 topics=1 related_pair=False'] -> PASS
+FX4 Voynich n=2000: qualifies=False expected=False ['R1 not real/non-Voynich'] -> PASS
+FX5 pooled n=2000: qualifies=False expected=False ['R2 pooled sources'] -> PASS
+FIXTURE_PASS=True

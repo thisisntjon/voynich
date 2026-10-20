@@ -1,0 +1,22 @@
+d3 seed 1 meta: {'n_units_used': 44, 'pool_size': 82, 'frag_mean_len': 2.790909090909091}
+Bands: h2 1.98-2.28, sd 1.41-2.11, JSDf>=0.10, p>=x8, m>=x8, excess>=+0.09, redup 0.4-1.8%
+score.py line metrics use every line. b4.report dropped page-first lines.
+
+b4_simcal_global
+  h2=1.892 sd=1.704 JSDf=0.0012 p=x0.99 m=x0.91 excess=-0.0013 redup=2.244%  tokens=25000
+  joint=FAIL  failed=['h2', 'jsd_first_fg', 'p_init_enrich', 'm_final_enrich', 'cross_excess_eva', 'redup_pct']
+b4_simcal_seeded
+  h2=2.010 sd=1.876 JSDf=0.0041 p=x1.58 m=x1.09 excess=-0.0009 redup=3.152%  tokens=25000
+  joint=FAIL  failed=['jsd_first_fg', 'p_init_enrich', 'm_final_enrich', 'cross_excess_eva', 'redup_pct']
+c2_tuned_l200_post_s4
+  h2=1.805 sd=1.640 JSDf=0.0364 p=x21.64 m=x16.76 excess=+0.0009 redup=1.504%  tokens=25000
+  joint=FAIL  failed=['h2', 'jsd_first_fg', 'cross_excess_eva']
+naibbe_skeleton
+  h2=2.080 sd=1.618 JSDf=0.0007 p=x0.9 m=x1.18 excess=+0.0018 redup=0.191%  tokens=20917
+  joint=FAIL  failed=['jsd_first_fg', 'p_init_enrich', 'm_final_enrich', 'cross_excess_eva', 'redup_pct']
+d3_verbose_seed1
+  h2=2.479 sd=4.088 JSDf=0.0010 p=x0.97 m=x0.88 excess=+0.0054 redup=0.368%  tokens=25000
+  joint=FAIL  failed=['h2', 'sd_len', 'jsd_first_fg', 'p_init_enrich', 'm_final_enrich', 'cross_excess_eva', 'redup_pct']
+
+board entrants: ['voynich_eva', 'null_token_shuffled', 'ctrl_latin_caesar', 'ctrl_italian_dante', 'b4_simcal_global', 'b4_simcal_seeded', 'c2_tuned_l200_post_s4', 'naibbe_skeleton', 'd3_verbose_seed1']
+reproduction_pass left as True

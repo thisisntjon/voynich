@@ -1,0 +1,21 @@
+nfirst normalisation: apiu apiu apium
+-- 21 agreeing pairs (expect pass)
+diplomatic first item: 21/21 (point 1.000; T1 needs >= 19; 95% CP [0.839, 1.000]) -> passes point threshold
+normalized first item: 21/21 (point 1.000; needs >= 0.85; 95% CP [0.839, 1.000]) -> passes point threshold
+CALL=BOTH_PASS_POINT_THRESHOLDS (interval caveat: n <= 21 cannot show 0.85 at 95% confidence, L-365)
+-- 15 agree, 6 disagree (expect not passed)
+diplomatic first item: 15/21 (point 0.714; T1 needs >= 19; 95% CP [0.478, 0.887]) -> below point threshold
+normalized first item: 15/21 (point 0.714; needs >= 0.85; 95% CP [0.478, 0.887]) -> below point threshold
+CALL=GATE_NOT_PASSED (interval caveat: n <= 21 cannot show 0.85 at 95% confidence, L-365)
+-- blanks dropped (D-b): 20 agree + 1 blank (expect 20/20 pass)
+diplomatic first item: 20/20 (point 1.000; T1 needs >= 18; 95% CP [0.832, 1.000]) -> passes point threshold
+normalized first item: 20/20 (point 1.000; needs >= 0.85; 95% CP [0.832, 1.000]) -> passes point threshold
+CALL=BOTH_PASS_POINT_THRESHOLDS (interval caveat: n <= 21 cannot show 0.85 at 95% confidence, L-365)
+-- 18/20 diplomatic boundary (expect pass) and 17/20 (expect not passed)
+diplomatic first item: 18/20 (point 0.900; T1 needs >= 18; 95% CP [0.683, 0.988]) -> passes point threshold
+normalized first item: 1/1 (point 1.000; needs >= 0.85; 95% CP [0.025, 1.000]) -> passes point threshold
+CALL=BOTH_PASS_POINT_THRESHOLDS (interval caveat: n <= 21 cannot show 0.85 at 95% confidence, L-365)
+diplomatic first item: 17/20 (point 0.850; T1 needs >= 18; 95% CP [0.621, 0.968]) -> below point threshold
+normalized first item: 1/1 (point 1.000; needs >= 0.85; 95% CP [0.025, 1.000]) -> passes point threshold
+CALL=GATE_NOT_PASSED (interval caveat: n <= 21 cannot show 0.85 at 95% confidence, L-365)
+CONTROL_PASS

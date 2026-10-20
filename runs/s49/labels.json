@@ -1,0 +1,144 @@
+{
+ "labels": {
+  "lang_latin_cremma": "LANG",
+  "lang_italian_dante": "LANG",
+  "lang_mhg_nibelungenlied": "LANG",
+  "lang_occitan_croisade": "LANG",
+  "lang_oldfrench_roland": "LANG",
+  "lang_mhg_parzival": "LANG",
+  "ciph_s10_latin_cremma": "CIPH",
+  "ciph_s10_italian_dante": "CIPH",
+  "ciph_s10_mhg_nibelungenlied": "CIPH",
+  "ciph_s10_occitan_croisade": "CIPH",
+  "ciph_s10_oldfrench_roland": "CIPH",
+  "code_k4_latin_cremma": "CODE",
+  "code_k4_italian_dante": "CODE",
+  "code_k4_mhg_nibelungenlied": "CODE",
+  "code_k4_occitan_croisade": "CODE",
+  "code_k4_oldfrench_roland": "CODE",
+  "code_k4_mhg_parzival": "CODE",
+  "gen_s28_ZL3b_s1": "GEN",
+  "gen_c2_section": "GEN",
+  "gen_timm_schinner": "GEN",
+  "gen_schwartz_reuse": "GEN",
+  "gen_rugg_grille": "GEN",
+  "gib_resample_1": "GIB",
+  "gib_resample_2": "GIB",
+  "gib_resample_3": "GIB",
+  "gib_resample_4": "GIB",
+  "gib_resample_5": "GIB",
+  "gib_resample_6": "GIB",
+  "gen_G2layer_ZL3b_s1": "GEN",
+  "ciph_L2layer_ZL3b_s1": "CIPH",
+  "twin_G2layer_ZL3b_s2": "TWIN_G",
+  "twin_L2layer_ZL3b_s2": "TWIN_L",
+  "twin_G2layer_ZL3b_s3": "TWIN_G",
+  "twin_L2layer_ZL3b_s3": "TWIN_L",
+  "twin_G2layer_ZL3b_s4": "TWIN_G",
+  "twin_L2layer_ZL3b_s4": "TWIN_L",
+  "twin_G2layer_RF1b_s1": "TWIN_G",
+  "twin_L2layer_RF1b_s1": "TWIN_L",
+  "twin_G2layer_RF1b_s2": "TWIN_G",
+  "twin_L2layer_RF1b_s2": "TWIN_L",
+  "twin_G2layer_RF1b_s3": "TWIN_G",
+  "twin_L2layer_RF1b_s3": "TWIN_L",
+  "twin_G2layer_IT2a_s1": "TWIN_G",
+  "twin_L2layer_IT2a_s1": "TWIN_L",
+  "twin_G2layer_IT2a_s2": "TWIN_G",
+  "twin_L2layer_IT2a_s2": "TWIN_L",
+  "twin_G2layer_IT2a_s3": "TWIN_G",
+  "twin_L2layer_IT2a_s3": "TWIN_L"
+ },
+ "notes": {
+  "lang_latin_cremma": "real lines, first 38000 tokens",
+  "lang_italian_dante": "real lines, first 38000 tokens",
+  "lang_mhg_nibelungenlied": "real lines, first 38000 tokens",
+  "lang_occitan_croisade": "real lines, first 38000 tokens",
+  "lang_oldfrench_roland": "real lines, first 29524 tokens SHORT (source has fewer than 38k tokens)",
+  "lang_mhg_parzival": "real lines, first 38000 tokens",
+  "ciph_s10_latin_cremma": "s10 verbose homophonic, p_null 0.124, 78 letters, homophone counts {2: 26, 3: 29, 4: 21, 5: 1, 6: 1}, plaintext words consumed 28543 of 38000",
+  "ciph_s10_italian_dante": "s10 verbose homophonic, p_null 0.137, 23 letters, homophone counts {2: 6, 3: 5, 4: 8, 5: 2, 6: 2}, plaintext words consumed 28211 of 38000",
+  "ciph_s10_mhg_nibelungenlied": "s10 verbose homophonic, p_null 0.186, 24 letters, homophone counts {2: 6, 3: 9, 4: 6, 5: 2, 6: 1}, plaintext words consumed 26485 of 38000",
+  "ciph_s10_occitan_croisade": "s10 verbose homophonic, p_null 0.152, 26 letters, homophone counts {2: 6, 3: 8, 4: 8, 5: 3, 6: 1}, plaintext words consumed 27637 of 38000",
+  "ciph_s10_oldfrench_roland": "s10 verbose homophonic, p_null 0.104, 26 letters, homophone counts {2: 8, 3: 5, 4: 11, 6: 2}, plaintext words consumed 29280 of 29524",
+  "code_k4_latin_cremma": "K4 shared-codeword nomenclator (7025/6/180/1.8), codebook seed 20261018, 7024 codewords used, mean owners 11.34, plaintext words consumed 37187 of 38000",
+  "code_k4_italian_dante": "K4 shared-codeword nomenclator (7025/6/180/1.8), codebook seed 20261019, 6970 codewords used, mean owners 5.89, plaintext words consumed 37187 of 38000",
+  "code_k4_mhg_nibelungenlied": "K4 shared-codeword nomenclator (7025/6/180/1.8), codebook seed 20261020, 6824 codewords used, mean owners 4.00, plaintext words consumed 37187 of 38000",
+  "code_k4_occitan_croisade": "K4 shared-codeword nomenclator (7025/6/180/1.8), codebook seed 20261021, 6975 codewords used, mean owners 5.58, plaintext words consumed 37187 of 38000",
+  "code_k4_oldfrench_roland": "K4 shared-codeword nomenclator (7025/6/180/1.8), codebook seed 20261022, 6797 codewords used, mean owners 3.89, plaintext words consumed 37187 of 29524 (CYCLED)",
+  "code_k4_mhg_parzival": "K4 shared-codeword nomenclator (7025/6/180/1.8), codebook seed 20261023, 6893 codewords used, mean owners 4.66, plaintext words consumed 37187 of 38000",
+  "gen_s28_ZL3b_s1": "s28 mechanism, lam 2.9883 -> 6988 types at seed 0 (target 7450)",
+  "gen_c2_section": "c2.Gen.generate {'mode': 'section', 'seed': 2, 'p_seed': 0.8, 'rule_p': 0.088, 'rule_m': 0.148} on the skeleton",
+  "gen_timm_schinner": "timm_schinner_ownlines (Java generator output, own lines), first 38k tokens",
+  "gen_schwartz_reuse": "ctl_schwartz.generate, betas from schwartz_reuse.meta.json, seed 20261017, extended template",
+  "gen_rugg_grille": "ctl_generators.rugg_grille + layout, Random(SEED+10), N_TOKENS 38000, own lines",
+  "gib_resample_1": "gib_realline_pooled writer blocks with replacement: 138 blocks, 37 of 38 writers, max repeats 8",
+  "gib_resample_2": "gib_realline_pooled writer blocks with replacement: 150 blocks, 36 of 38 writers, max repeats 9",
+  "gib_resample_3": "gib_realline_pooled writer blocks with replacement: 155 blocks, 37 of 38 writers, max repeats 9",
+  "gib_resample_4": "gib_realline_pooled writer blocks with replacement: 144 blocks, 37 of 38 writers, max repeats 9",
+  "gib_resample_5": "gib_realline_pooled writer blocks with replacement: 146 blocks, 37 of 38 writers, max repeats 11",
+  "gib_resample_6": "gib_realline_pooled writer blocks with replacement: 149 blocks, 37 of 38 writers, max repeats 9",
+  "gen_G2layer_ZL3b_s1": "s36 G_2layer, ZL3b, seed 1 (corpus member; twin pair 1)",
+  "ciph_L2layer_ZL3b_s1": "s36 L_2layer, ZL3b, seed 1 (corpus member; twin pair 1)",
+  "twin_G2layer_ZL3b_s2": "s36 G_2layer, ZL3b, seed 2 (twin panel only)",
+  "twin_L2layer_ZL3b_s2": "s36 L_2layer, ZL3b, seed 2 (twin panel only)",
+  "twin_G2layer_ZL3b_s3": "s36 G_2layer, ZL3b, seed 3 (twin panel only)",
+  "twin_L2layer_ZL3b_s3": "s36 L_2layer, ZL3b, seed 3 (twin panel only)",
+  "twin_G2layer_ZL3b_s4": "s36 G_2layer, ZL3b, seed 4 (twin panel only)",
+  "twin_L2layer_ZL3b_s4": "s36 L_2layer, ZL3b, seed 4 (twin panel only)",
+  "twin_G2layer_RF1b_s1": "s36 G_2layer, RF1b, seed 1 (twin panel only)",
+  "twin_L2layer_RF1b_s1": "s36 L_2layer, RF1b, seed 1 (twin panel only)",
+  "twin_G2layer_RF1b_s2": "s36 G_2layer, RF1b, seed 2 (twin panel only)",
+  "twin_L2layer_RF1b_s2": "s36 L_2layer, RF1b, seed 2 (twin panel only)",
+  "twin_G2layer_RF1b_s3": "s36 G_2layer, RF1b, seed 3 (twin panel only)",
+  "twin_L2layer_RF1b_s3": "s36 L_2layer, RF1b, seed 3 (twin panel only)",
+  "twin_G2layer_IT2a_s1": "s36 G_2layer, IT2a, seed 1 (twin panel only)",
+  "twin_L2layer_IT2a_s1": "s36 L_2layer, IT2a, seed 1 (twin panel only)",
+  "twin_G2layer_IT2a_s2": "s36 G_2layer, IT2a, seed 2 (twin panel only)",
+  "twin_L2layer_IT2a_s2": "s36 L_2layer, IT2a, seed 2 (twin panel only)",
+  "twin_G2layer_IT2a_s3": "s36 G_2layer, IT2a, seed 3 (twin panel only)",
+  "twin_L2layer_IT2a_s3": "s36 L_2layer, IT2a, seed 3 (twin panel only)"
+ },
+ "twins": [
+  [
+   "gen_G2layer_ZL3b_s1",
+   "ciph_L2layer_ZL3b_s1"
+  ],
+  [
+   "twin_G2layer_ZL3b_s2",
+   "twin_L2layer_ZL3b_s2"
+  ],
+  [
+   "twin_G2layer_ZL3b_s3",
+   "twin_L2layer_ZL3b_s3"
+  ],
+  [
+   "twin_G2layer_ZL3b_s4",
+   "twin_L2layer_ZL3b_s4"
+  ],
+  [
+   "twin_G2layer_RF1b_s1",
+   "twin_L2layer_RF1b_s1"
+  ],
+  [
+   "twin_G2layer_RF1b_s2",
+   "twin_L2layer_RF1b_s2"
+  ],
+  [
+   "twin_G2layer_RF1b_s3",
+   "twin_L2layer_RF1b_s3"
+  ],
+  [
+   "twin_G2layer_IT2a_s1",
+   "twin_L2layer_IT2a_s1"
+  ],
+  [
+   "twin_G2layer_IT2a_s2",
+   "twin_L2layer_IT2a_s2"
+  ],
+  [
+   "twin_G2layer_IT2a_s3",
+   "twin_L2layer_IT2a_s3"
+  ]
+ ]
+}

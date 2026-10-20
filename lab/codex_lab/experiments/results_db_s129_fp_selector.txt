@@ -1,0 +1,10 @@
+db-S129 mode=real
+script_sha256=5E213FA24B0096D2972CB0C02DA032C6636F1B56CEE9B7E4B0392183C5FA35FF
+source=./data/ZL3b-n.txt
+source_sha256=BF5B6D4AC1E3A51B1847A9C388318D609020441CCD56984C901C32B09BECCAFC
+eligible_occurrences=634
+eligible_skeletons=54
+line_role: cmi_bits=0.274871375 excess_bits=0.013580470 raw_p=0.213578642 bonferroni_p=0.640735926 call=False
+hand_section: cmi_bits=0.288319033 excess_bits=0.027849831 raw_p=0.049095090 bonferroni_p=0.147285271 call=False
+quire: cmi_bits=0.348575491 excess_bits=0.019149423 raw_p=0.132586741 bonferroni_p=0.397760224 call=False
+CALL_EXTERNAL_SELECTOR=False

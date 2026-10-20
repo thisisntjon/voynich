@@ -1,0 +1,31 @@
+S100: quire-tail cores versus herbal picture similarity
+freeze_match=True seed=100018 permutations=10000 pages=119
+
+[ZL3b] tail_tokens=4046 tail_types=1068 echo_events=60 echo_types=21 zero_echo_pages=73
+  tail_occurrence  ALL    r=+0.05276 p=0.29877 null_mean=+0.03402 q99=+0.11587 pairs=7021
+  tail_occurrence  NOBIF  r=+0.04619 p=0.35256 null_mean=+0.03263 q99=+0.11542 pairs=6853
+  tail_echo        ALL    r=-0.00368 p=0.79312 null_mean=+0.01944 q99=+0.08394 pairs=7021
+  tail_echo        NOBIF  r=-0.00521 p=0.81052 null_mean=+0.01989 q99=+0.08486 pairs=6853
+[RF1b] tail_tokens=4261 tail_types=1191 echo_events=62 echo_types=19 zero_echo_pages=70
+  tail_occurrence  ALL    r=+0.08274 p=0.11509 null_mean=+0.03845 q99=+0.12146 pairs=7021
+  tail_occurrence  NOBIF  r=+0.07624 p=0.14459 null_mean=+0.03698 q99=+0.12030 pairs=6853
+  tail_echo        ALL    r=+0.02154 p=0.62324 null_mean=+0.03080 q99=+0.09815 pairs=7021
+  tail_echo        NOBIF  r=+0.01485 p=0.68713 null_mean=+0.02911 q99=+0.09731 pairs=6853
+[IT2a] tail_tokens=4068 tail_types=1118 echo_events=61 echo_types=20 zero_echo_pages=72
+  tail_occurrence  ALL    r=+0.04620 p=0.33937 null_mean=+0.03170 q99=+0.11549 pairs=7021
+  tail_occurrence  NOBIF  r=+0.04025 p=0.40116 null_mean=+0.03116 q99=+0.11584 pairs=6853
+  tail_echo        ALL    r=+0.01198 p=0.69693 null_mean=+0.02704 q99=+0.09380 pairs=7021
+  tail_echo        NOBIF  r=+0.00998 p=0.71333 null_mean=+0.02655 q99=+0.09334 pairs=6853
+
+Power controls (ZL3b tail occurrence, identical statistic):
+  s=0.10: detected=0/20 mean_r=+0.06930 min_r=-0.01244
+  s=0.20: detected=12/20 mean_r=+0.14071 min_r=+0.07768
+  s=0.30: detected=20/20 mean_r=+0.20537 min_r=+0.14793
+  s=0.40: detected=20/20 mean_r=+0.26911 min_r=+0.24058
+
+power_pass=True
+C1_OCCURRENCE_LINK=False
+C2_ECHO_LINK=False
+C3_NO_LARGE_LINK=True
+VERDICT=NO_LARGE_TAIL_PICTURE_LINK_DETECTED
+runtime_seconds=49.61

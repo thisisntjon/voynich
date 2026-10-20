@@ -1,0 +1,89 @@
+# results_n6_ab_split: Currier A vs B on the frozen PREREG-v2 board (O-010)
+# run 2026-10-17 19:41 (system clock); script sha256 e1352ed3fc37ed702e328f39dc0e59a8616d992af94f2af63436f216f75c8836; stub n6_ab_split.prereg.sha256: MATCH
+# ranges: results_m4_phase1_board.json (full size); results_n6_ranges_A11k.json / results_n6_ranges_B23k.json (matched)
+# PREREG-v2.md sha256 f8c42d76a3e7651b  run_v2.py 7dfdc9f75de5980a
+# CAVEAT: Currier A is mostly hand 1 and herbal pages, so A vs B is confounded with scribe and
+#         section. This test does not and cannot show two languages.
+
+=== 0. CODE CHECKS ===
+whole-text ZL3b vs m4 voynich_all: PASS
+ZL3b A vs m4 voynich_A: PASS
+ZL3b B vs m4 voynich_B: PASS
+full-size controls vs m4 rows: 33/33 reproduce (|diff|<=1e-6)
+per-metric in/out recomputation vs run_v2 printed out-counts: FAIL [('RF1b', None, 'full', 'C', 7, {'ins': 1, 'outs': 6, 'na': 3, 'out_metrics': ['h2', 'jsd_first_fg', 'cross_excess_eva', 'redup_pct', 'x_edge_mi_word', 'x_ltr_minus_rtl'], 'out_tight': ['h2', 'jsd_first_fg', 'cross_excess_eva', 'redup_pct', 'x_edge_mi_word']}), ('IT2a', None, 'full', 'C', 7, {'ins': 1, 'outs': 6, 'na': 3, 'out_metrics': ['h2', 'jsd_first_fg', 'cross_excess_eva', 'redup_pct', 'x_edge_mi_word', 'x_ltr_minus_rtl'], 'out_tight': ['h2', 'jsd_first_fg', 'cross_excess_eva', 'redup_pct', 'x_edge_mi_word']})]
+matched controls shorter than target: A11k -; B23k ['german_kafka', 'latin_caesar', 'latin_macer_floridus']
+
+=== 1. v1 SEVEN BANDS per half (PASS/FAIL), ZL3b | RF1b | IT2a ===
+[A]  ZL3b: joint FAIL missed m_final_enrich  RF1b: joint FAIL missed m_final_enrich  IT2a: joint FAIL missed m_final_enrich
+[B]  ZL3b: joint PASS missed -  RF1b: joint PASS missed -  IT2a: joint PASS missed -
+[all]  ZL3b: joint PASS missed -  RF1b: joint PASS missed -  IT2a: joint PASS missed -
+
+=== 2a. PER-METRIC IN/OUT (full-size ranges), L C G on ZL3b; '*' = flips between ZL3b/RF1b/IT2a (weight 0 by §2) ===
+metric                                VA    L   C   G        VB    L   C   G      Vall    L   C   G
+h2                                2.1453 OUT OUT  IN     1.9983 OUT OUT  IN     2.1262 OUT OUT  IN 
+jsd_first_fg                      0.1392 OUT OUT OUT     0.2191 OUT OUT OUT     0.1759 OUT OUT OUT 
+p_init_enrich                    11.6200 OUT  NA  IN    21.7800 OUT  NA OUT*   17.8900 OUT  NA  IN 
+m_final_enrich                    6.2100 OUT  NA  IN    32.0900 OUT  NA OUT    16.3100 OUT  NA OUT 
+cross_excess_eva                  0.1203  IN OUT OUT     0.2321 OUT OUT OUT     0.1809 OUT OUT OUT 
+redup_pct                         0.8640 OUT OUT  IN     0.8410 OUT OUT  IN     0.8960 OUT OUT  IN 
+x_edge_mi_word                    0.1265  IN OUT OUT     0.2404 OUT OUT OUT     0.1882 OUT OUT OUT 
+types_25k                      3217.0000  IN OUT  IN  4788.0000  IN OUT  IN  5417.0000  IN OUT  IN 
+x_position_entropy                1.6948 OUT  IN  IN     1.6037 OUT  IN  IN     1.6607 OUT  IN  IN 
+x_ltr_minus_rtl                   0.0047 OUT OUT  IN*    0.0088 OUT OUT OUT*    0.0049 OUT OUT  IN 
+report-only: cross_excess_eva is weighted above; edge clause uses x_edge_mi_word and jsd_first_fg only
+  [A] §2-dropped: x_ltr_minus_rtl
+     L: outs= 6 na=0 tight-outs=6  out: h2, jsd_first_fg, p_init_enrich, m_final_enrich, redup_pct, x_position_entropy
+     C: outs= 6 na=2 tight-outs=5  out: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k
+     G: outs= 3 na=0 tight-outs=3  out: jsd_first_fg, cross_excess_eva, x_edge_mi_word
+     favoured: G   kill-candidates (>=3 tight outs): C, G, L
+  [B] §2-dropped: p_init_enrich, x_ltr_minus_rtl
+     L: outs= 7 na=0 tight-outs=5  out: h2, jsd_first_fg, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_position_entropy
+     C: outs= 6 na=1 tight-outs=5  out: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k
+     G: outs= 4 na=0 tight-outs=4  out: jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word
+     favoured: G   kill-candidates (>=3 tight outs): C, G, L
+  [all] §2-dropped: -
+     L: outs= 9 na=0 tight-outs=7  out: h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl
+     C: outs= 7 na=2 tight-outs=5  out: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_ltr_minus_rtl
+     G: outs= 4 na=0 tight-outs=4  out: jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word
+     favoured: G   kill-candidates (>=3 tight outs): C, G, L
+
+=== 2b. PER-METRIC IN/OUT (matched-size ranges), L C G on ZL3b; '*' = flips between ZL3b/RF1b/IT2a (weight 0 by §2) ===
+metric                                VA    L   C   G        VB    L   C   G
+h2                                2.1453 OUT OUT  IN     1.9983 OUT OUT  IN 
+jsd_first_fg                      0.1392 OUT OUT OUT*    0.2191 OUT OUT OUT 
+p_init_enrich                    11.6200 OUT  NA  IN    21.7800 OUT  NA OUT*
+m_final_enrich                    6.2100 OUT  NA  IN    32.0900 OUT  NA OUT 
+cross_excess_eva                  0.1203  IN OUT OUT     0.2321 OUT OUT OUT 
+redup_pct                         0.8640 OUT OUT  IN     0.8410 OUT OUT  IN 
+x_edge_mi_word                    0.1265  IN OUT OUT     0.2404 OUT OUT OUT 
+types_25k                      3217.0000  IN OUT  IN* 4788.0000  IN OUT  IN 
+x_position_entropy                1.6948 OUT  IN  IN     1.6037 OUT  IN  IN 
+x_ltr_minus_rtl                   0.0047  IN  IN  IN     0.0088 OUT OUT OUT*
+report-only: cross_excess_eva is weighted above; edge clause uses x_edge_mi_word and jsd_first_fg only
+  [A] §2-dropped: jsd_first_fg, types_25k
+     L: outs= 5 na=0 tight-outs=5  out: h2, p_init_enrich, m_final_enrich, redup_pct, x_position_entropy
+     C: outs= 4 na=2 tight-outs=4  out: h2, cross_excess_eva, redup_pct, x_edge_mi_word
+     G: outs= 2 na=0 tight-outs=2  out: cross_excess_eva, x_edge_mi_word
+     favoured: G   kill-candidates (>=3 tight outs): C, L
+  [B] §2-dropped: p_init_enrich, x_ltr_minus_rtl
+     L: outs= 7 na=0 tight-outs=5  out: h2, jsd_first_fg, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_position_entropy
+     C: outs= 6 na=1 tight-outs=5  out: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k
+     G: outs= 4 na=0 tight-outs=4  out: jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word
+     favoured: G   kill-candidates (>=3 tight outs): C, G, L
+
+=== 3. HALF IN L WHERE WHOLE TEXT IS OUT L (ZL3b, full-size ranges, weighted metrics) ===
+  A: cross_excess_eva, x_edge_mi_word   (IN on all three files: cross_excess_eva, x_edge_mi_word)
+  B: -   (IN on all three files: -)
+  A matched-size: cross_excess_eva, x_edge_mi_word, x_ltr_minus_rtl
+  B matched-size: -
+
+=== 4. VERDICT (rule fixed in the docstring) ===
+  full   : SAME   clause1 (family verdicts differ): False  [A ['G', ['C', 'G', 'L']] vs B ['G', ['C', 'G', 'L']]]   clause2 (A in L on edge+JSD, B not): False  [A in: False, B in: False]
+           A L in/out  x_edge_mi_word: ZL3b=IN RF1b=IN IT2a=IN   jsd_first_fg: ZL3b=OUT RF1b=OUT IT2a=OUT   cross_excess_eva (report): ZL3b=IN RF1b=IN IT2a=IN
+           B L in/out  x_edge_mi_word: ZL3b=OUT RF1b=OUT IT2a=OUT   jsd_first_fg: ZL3b=OUT RF1b=OUT IT2a=OUT   cross_excess_eva (report): ZL3b=OUT RF1b=OUT IT2a=OUT
+  matched: SPLIT   clause1 (family verdicts differ): True  [A ['G', ['C', 'L']] vs B ['G', ['C', 'G', 'L']]]   clause2 (A in L on edge+JSD, B not): False  [A in: False, B in: False]
+           A L in/out  x_edge_mi_word: ZL3b=IN RF1b=IN IT2a=IN   jsd_first_fg: ZL3b=OUT RF1b=OUT IT2a=OUT   cross_excess_eva (report): ZL3b=IN RF1b=IN IT2a=IN
+           B L in/out  x_edge_mi_word: ZL3b=OUT RF1b=OUT IT2a=OUT   jsd_first_fg: ZL3b=OUT RF1b=OUT IT2a=OUT   cross_excess_eva (report): ZL3b=OUT RF1b=OUT IT2a=OUT
+
+VERDICT n6: SAME (size-fragile)   (full-size SAME, matched-size SPLIT)
+CAVEAT: A is mostly hand 1 / herbal; A vs B = scribe + section + language label together. No two-language claim follows from this test.

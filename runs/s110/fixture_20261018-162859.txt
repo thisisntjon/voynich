@@ -1,0 +1,71 @@
+S110 FIXTURE (synthetic only; reads no Voynich data)
+date: Sun Oct 18 16:28:59 PDT 2026 (`date`)
+s110_g2_combinatory_grid.py sha256=541572065ba8f7c602c6151bfebebadb9c57e4496fbf2ef0ea490574a50e055f; s104 sha256=da6c33be8f4143bd0f681bc8da211031331cdc6f90cf786185362a3254e93e70 (stub da6c33be8f4143bd0f681bc8da211031331cdc6f90cf786185362a3254e93e70) -> True
+figure: 84 columns x 20 cells = 1680 rows; symbol ranks tbcdefghik; first column bcdt bctb bctc bctd bdtb bdtc bdtd btbc btbd btcd cdtb cdtc cdtd ctbc ctbd ctcd dtbc dtbd dtcd tbcd
+layout: 15 quires, 150 pages, 2700 lines, 21740 tokens
+FX2 known-map decoding on the whole planted G2a text: 0.9293
+  [fixture fits] free RAM 5.2 GB (need >= 4.0); 45 jobs on 2 workers
+  fit seconds: median 63.3, max 80.3
+  target FX110/FX1_planted_G2b/target       tok  21740 ty   489 core% 100.0 | o100 -0.000(p0.490) o200 -0.022 | Rw1 1.085(p0.087) Rc1 1.065 | loc 1.000[0.999,1.001] | C1 nnYY - [order n=4398<4731]
+  target FX110/FX2_planted_G2a/target       tok  21740 ty    37 core% 100.0 | o100 +1.310(p0.001) o200 +1.310 | Rw1 5.008(p0.001) Rc1 0.878 | loc 1.000[1.000,1.000] | C1 nYYY - [order n=4398<4731]
+  target FX110/FX3_prose_G2b/target         tok  21740 ty  4386 core% 100.0 | o100 +0.089(p0.001) o200 +0.101 | Rw1 0.620(p1.000) Rc1 0.740 | loc 0.931[0.917,0.947] | C1 nnnY - [order n=4398<4731]
+  [fixture battery] free RAM 4.6 GB (need >= 4.0); 120 jobs on 2 workers
+
+  FX1_planted_G2b: per fold Q | sig flags | battery | replicate loc in band | fitted phi, m | drift scale pre/suf | kappa, tau | extra | RECOVERED
+   A | YYnY | 2 | True | 0.60, 200 | 3.3/3.3 | 0.15, 2.0 | prefix TV 0.132 (n 10) | False
+   B | YYYY | 4 | True | 0.60, 200 | 5.0/2.0 | 0.20, 2.0 | prefix TV 0.137 (n 10) | True
+   C | YYnY | 3 | True | 0.60, 200 | 10.0/3.3 | 0.20, 2.0 | prefix TV 0.135 (n 10) | False
+   D | YYnY | 3 | True | 0.60, 200 | 5.0/10.0 | 0.20, 2.0 | prefix TV 0.137 (n 10) | False
+   E | YYYY | 5 | True | 0.40, 50 | 3.3/3.3 | 0.30, 2.0 | prefix TV 0.143 (n 10) | True
+   F | YYnY | 2 | True | 0.60, 200 | 3.3/10.0 | 0.30, 4.0 | prefix TV 0.130 (n 10) | False
+   G | YYnY | 4 | True | 0.60, 200 | 3.3/3.3 | 0.30, 2.0 | prefix TV 0.133 (n 10) | False
+   H | YYnY | 4 | True | 0.60, 200 | 5.0/3.3 | 0.30, 2.0 | prefix TV 0.137 (n 10) | False
+   I | YYYY | 4 | True | 0.40, 100 | 5.0/3.3 | 0.30, 2.0 | prefix TV 0.142 (n 10) | True
+   J | YYYY | 3 | True | 0.40, 25 | 2.0/3.3 | 0.20, 2.0 | prefix TV 0.132 (n 10) | False
+   K | YYnY | 5 | True | 0.60, 200 | 10.0/3.3 | 0.30, 2.0 | prefix TV 0.137 (n 10) | False
+   L | YYYY | 5 | True | 0.60, 200 | 3.3/3.3 | 0.40, 2.0 | prefix TV 0.144 (n 10) | True
+   M | YnnY | 3 | True | 0.60, 200 | 5.0/3.3 | 0.20, 2.0 | prefix TV 0.138 (n 10) | False
+   N | YYYY | 3 | True | 0.40, 25 | 5.0/3.3 | 0.30, 2.0 | prefix TV 0.144 (n 10) | False
+   O | YYnY | 3 | True | 0.60, 200 | 5.0/10.0 | 0.20, 2.0 | prefix TV 0.133 (n 10) | False
+
+  FX2_planted_G2a: per fold Q | sig flags | battery | replicate loc in band | fitted phi, m | drift scale pre/suf | kappa, tau | extra | RECOVERED
+   A | nnnY | 2 | True | 0.00, 0 | 1.0/1.0 | 0.10, 1.0 | decode 0.928 prof False | False
+   B | nnYY | 2 | True | 0.00, 0 | 1.0/1.0 | 0.30, 4.0 | decode 0.872 prof False | False
+   C | nnYY | 2 | True | 0.00, 0 | 1.0/1.0 | 0.20, 2.0 | decode 0.939 prof False | False
+   D | nnYY | 2 | True | 0.00, 0 | 1.0/1.0 | 0.20, 4.0 | decode 0.956 prof False | False
+   E | nnYY | 2 | True | 0.00, 0 | 1.0/20.0 | 0.40, 4.0 | decode 0.928 prof False | False
+   F | nnYY | 2 | True | 0.00, 0 | 2.0/20.0 | 0.15, 2.0 | decode 0.972 prof False | False
+   G | nnYY | 1 | True | 0.00, 0 | 1.0/1.0 | 0.40, 4.0 | decode 0.906 prof False | False
+   H | nnYY | 2 | True | 0.00, 0 | 2.0/1.0 | 0.15, 2.0 | decode 0.928 prof False | False
+   I | nnYY | 1 | True | 0.00, 0 | 1.4/1.0 | 0.30, 4.0 | decode 0.906 prof False | False
+   J | nnYY | 1 | True | 0.00, 0 | 1.4/20.0 | 0.30, 4.0 | decode 0.956 prof False | False
+   K | nnYY | 1 | True | 0.00, 0 | 1.0/10.0 | 0.40, 4.0 | decode 0.922 prof False | False
+   L | nnYY | 2 | True | 0.00, 0 | 1.0/1.0 | 0.20, 4.0 | decode 0.928 prof False | False
+   M | nnYY | 2 | True | 0.00, 0 | 1.0/10.0 | 0.30, 4.0 | decode 0.917 prof False | False
+   N | nnYY | 2 | True | 0.00, 0 | 1.0/1.0 | 0.10, 0.5 | decode 0.933 prof False | False
+   O | nnYY | 2 | True | 0.00, 0 | 1.0/20.0 | 0.40, 4.0 | decode 0.950 prof False | False
+
+  FX3_prose_G2b: per fold Q | sig flags | battery | replicate loc in band | fitted phi, m | drift scale pre/suf | kappa, tau | extra | RECOVERED
+   A | nnnY | 3 | False | 0.15, 25 | 3.3/2.0 | 0.00, 1.0 |  | False
+   B | nnYY | 2 | False | 0.20, 50 | 2.0/2.0 | 0.00, 1.0 |  | False
+   C | nnnY | 3 | False | 0.40, 400 | 3.3/2.0 | 0.00, 1.0 |  | False
+   D | nnnY | 3 | False | 0.20, 50 | 3.3/2.0 | 0.00, 1.0 |  | False
+   E | nnnY | 4 | False | 0.20, 25 | 3.3/2.0 | 0.00, 1.0 |  | False
+   F | nnnY | 3 | False | 0.20, 25 | 3.3/2.0 | 0.00, 1.0 |  | False
+   G | nnnY | 3 | True | 0.20, 25 | 3.3/2.0 | 0.00, 1.0 |  | False
+   H | nnnY | 3 | False | 0.40, 400 | 5.0/2.0 | 0.00, 1.0 |  | False
+   I | nnYY | 4 | False | 0.40, 400 | 2.0/1.4 | 0.00, 1.0 |  | False
+   J | nnYY | 3 | False | 0.20, 50 | 2.0/2.0 | 0.00, 1.0 |  | False
+   K | nnYY | 3 | True | 0.20, 25 | 3.3/2.0 | 0.00, 1.0 |  | False
+   L | nnYY | 3 | True | 0.20, 25 | 2.0/2.0 | 0.00, 1.0 |  | False
+   M | nnYY | 3 | False | 0.20, 25 | 3.3/1.4 | 0.00, 1.0 |  | False
+   N | nnnY | 4 | True | 0.20, 25 | 3.3/2.0 | 0.00, 1.0 |  | False
+   O | nnnY | 4 | True | 0.20, 25 | 2.0/2.0 | 0.00, 1.0 |  | False
+
+FX1 planted G2b recovered on 4/15 folds (need >= 10); median drift scale prefix 5.00 suffix 3.33 (planted 5.0; band (2.5, 10.0)); median prefix TV 0.137 (<= 0.15) -> FX1 = False
+FX2 planted G2a: decoding >= 0.80 on 15/15 folds; fold rule on 0/15 (need >= 10 each) -> FX2 = False
+FX3 prose: G2b fold rule (recovered) on 0/15 (profile-only 0/15; need < 10); G2a known-map decoding 0.000 (< 0.80) -> FX3 = True
+FX4 battery fix on a control with an empty block: FXREF: folds >=4/6  1/15 (NOT ASSESSABLE 1) fails | per fold 2 1 1 2 4 1 1 0 2 0 1 1 0 1 NA -> FX4 = True
+
+FIXTURE_PASS = False
+runtime 1595 s; finished Sun Oct 18 16:55:34 PDT 2026 (`date`)

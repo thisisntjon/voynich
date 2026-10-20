@@ -1,0 +1,314 @@
+S18: CREMMA Medii Aevi real-line Latin on the v2 scorer (phase-1.md step s18, audit items 1 and 4 folded)
+run started Sat Oct 17 20:31:00 PDT 2026 (`date`)
+s18_cremma_v2.py sha256=beaffc95052c2985f81957b7f27b4e6974e0293a9448cd6e858fed52ec4c2e54  tools/cremma_to_meta.py sha256=17c8cd39130ca2be09d8f3bb669647e016170f278720c4031fc2f9e02ee7a95b  prereg stub_match=True
+ranges file s15_ranges.json sha256=b995aba64e5baa22524565963d67880287e43e98220a7c3cdd2d136eac6b3fef  scorer scoreboard/run_v2.py sha256=7dfdc9f75de5980a…
+sidecars scored: 54 cremma_* (48 native incl. _marks, 6 _relined8 twins); non-cremma sidecars present and NOT scored (s17's): gib_realline_pooled.meta.json, gib_realline_pooled_relined8.meta.json, italian_dante.meta.json, italian_dante_relined8.meta.json, mhg_nibelungenlied.meta.json, mhg_nibelungenlied_relined8.meta.json, occitan_croisade.meta.json, occitan_croisade_relined8.meta.json, oldfrench_roland.meta.json, oldfrench_roland_relined8.meta.json
+
+=== run_v2 --family L --ranges s15_ranges.json, one call per sidecar ===
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_all.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_all.txt
+    # pages=42 lines=2482 tokens=25002 types=8626 sections=['Eccl', 'Lit', 'Medic', 'Schol'] hands=9 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_all_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_all_marks.txt
+    # pages=42 lines=2482 tokens=25002 types=9848 sections=['Eccl', 'Lit', 'Medic', 'Schol'] hands=9 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_all_relined8.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_all_relined8.txt
+    # pages=42 lines=3141 tokens=25000 types=8626 sections=['Eccl', 'Lit', 'Medic', 'Schol'] hands=9 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_all_relined8_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_all_relined8_marks.txt
+    # pages=42 lines=3141 tokens=25000 types=9848 sections=['Eccl', 'Lit', 'Medic', 'Schol'] hands=9 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Arras-861.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Arras-861.txt
+    # pages=5 lines=351 tokens=2478 types=1429 sections=['Lit'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Arras-861_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Arras-861_marks.txt
+    # pages=5 lines=351 tokens=2478 types=1485 sections=['Lit'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_BGO-511.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_BGO-511.txt
+    # pages=6 lines=54 tokens=169 types=126 sections=['Eccl'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_BGO-511_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_BGO-511_marks.txt
+    # pages=6 lines=54 tokens=169 types=127 sections=['Eccl'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_BIS-193.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_BIS-193.txt
+    # pages=6 lines=598 tokens=6981 types=2019 sections=['Schol'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_BIS-193_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_BIS-193_marks.txt
+    # pages=6 lines=598 tokens=6981 types=2349 sections=['Schol'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_c15.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_c15.txt
+    # pages=46 lines=1398 tokens=10190 types=4833 sections=['Eccl', 'Gramm', 'Lit', 'Schol'] hands=7 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_c15_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_c15_marks.txt
+    # pages=46 lines=1398 tokens=10190 types=5051 sections=['Eccl', 'Gramm', 'Lit', 'Schol'] hands=7 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_c15_relined8.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_c15_relined8.txt
+    # pages=46 lines=1294 tokens=10190 types=4833 sections=['Eccl', 'Gramm', 'Lit', 'Schol'] hands=7 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_c15_relined8_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_c15_relined8_marks.txt
+    # pages=46 lines=1294 tokens=10190 types=5051 sections=['Eccl', 'Gramm', 'Lit', 'Schol'] hands=7 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_CCCC-MSS-165.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_CCCC-MSS-165.txt
+    # pages=5 lines=148 tokens=1410 types=629 sections=['Schol'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_CCCC-MSS-165_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_CCCC-MSS-165_marks.txt
+    # pages=5 lines=148 tokens=1410 types=655 sections=['Schol'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_CCCC-MSS-236.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_CCCC-MSS-236.txt
+    # pages=5 lines=160 tokens=1138 types=761 sections=['Lit'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_CCCC-MSS-236_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_CCCC-MSS-236_marks.txt
+    # pages=5 lines=160 tokens=1138 types=791 sections=['Lit'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_CLM13027.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_CLM13027.txt
+    # pages=5 lines=609 tokens=6732 types=3052 sections=['Medic'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_CLM13027_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_CLM13027_marks.txt
+    # pages=5 lines=609 tokens=6732 types=3385 sections=['Medic'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Egerton821.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Egerton821.txt
+    # pages=4 lines=114 tokens=1088 types=603 sections=['Medic'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Egerton821_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Egerton821_marks.txt
+    # pages=4 lines=114 tokens=1088 types=641 sections=['Medic'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_H318.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_H318.txt
+    # pages=5 lines=414 tokens=4676 types=1889 sections=['Medic'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_H318_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_H318_marks.txt
+    # pages=5 lines=414 tokens=4676 types=2081 sections=['Medic'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Latin16195.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Latin16195.txt
+    # pages=2 lines=430 tokens=3993 types=1349 sections=['Medic'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Latin16195_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Latin16195_marks.txt
+    # pages=2 lines=430 tokens=3993 types=1507 sections=['Medic'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Latin6395.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Latin6395.txt
+    # pages=3 lines=622 tokens=3162 types=2199 sections=['Lit'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Latin6395_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Latin6395_marks.txt
+    # pages=3 lines=622 tokens=3162 types=2301 sections=['Lit'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Latin8236.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Latin8236.txt
+    # pages=5 lines=206 tokens=1403 types=999 sections=['Lit'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Latin8236_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Latin8236_marks.txt
+    # pages=5 lines=206 tokens=1403 types=1008 sections=['Lit'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_LaurPlut33.31.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_LaurPlut33.31.txt
+    # pages=5 lines=201 tokens=1267 types=807 sections=['Lit'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_LaurPlut33.31_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_LaurPlut33.31_marks.txt
+    # pages=5 lines=201 tokens=1267 types=832 sections=['Lit'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_LaurPlut39.34.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_LaurPlut39.34.txt
+    # pages=5 lines=131 tokens=770 types=546 sections=['Lit'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_LaurPlut39.34_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_LaurPlut39.34_marks.txt
+    # pages=5 lines=131 tokens=770 types=548 sections=['Lit'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_LaurPlut53.08.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_LaurPlut53.08.txt
+    # pages=4 lines=216 tokens=3319 types=1686 sections=['Gramm'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_LaurPlut53.08_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_LaurPlut53.08_marks.txt
+    # pages=4 lines=216 tokens=3319 types=1754 sections=['Gramm'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_LaurPlut53.09.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_LaurPlut53.09.txt
+    # pages=4 lines=125 tokens=1323 types=773 sections=['Gramm'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_LaurPlut53.09_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_LaurPlut53.09_marks.txt
+    # pages=4 lines=125 tokens=1323 types=774 sections=['Gramm'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Mazarine915.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Mazarine915.txt
+    # pages=4 lines=418 tokens=4581 types=1329 sections=['Schol'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Mazarine915_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Mazarine915_marks.txt
+    # pages=4 lines=418 tokens=4581 types=1548 sections=['Schol'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_PalLat373.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_PalLat373.txt
+    # pages=5 lines=432 tokens=2248 types=1099 sections=['Schol'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_PalLat373_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_PalLat373_marks.txt
+    # pages=5 lines=432 tokens=2248 types=1162 sections=['Schol'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Phi_10a135.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Phi_10a135.txt
+    # pages=5 lines=139 tokens=1718 types=1031 sections=['Medic'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_Phi_10a135_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_Phi_10a135_marks.txt
+    # pages=5 lines=139 tokens=1718 types=1103 sections=['Medic'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_prose15.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_prose15.txt
+    # pages=13 lines=773 tokens=6890 types=3201 sections=['Gramm', 'Schol'] hands=3 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_prose15_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_prose15_marks.txt
+    # pages=13 lines=773 tokens=6890 types=3365 sections=['Gramm', 'Schol'] hands=3 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_prose15_relined8.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_prose15_relined8.txt
+    # pages=13 lines=869 tokens=6890 types=3201 sections=['Gramm', 'Schol'] hands=3 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_prose15_relined8_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_prose15_relined8_marks.txt
+    # pages=13 lines=869 tokens=6890 types=3365 sections=['Gramm', 'Schol'] hands=3 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_SBB_PK_Hdschr25.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_SBB_PK_Hdschr25.txt
+    # pages=17 lines=234 tokens=958 types=591 sections=['Eccl'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_SBB_PK_Hdschr25_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_SBB_PK_Hdschr25_marks.txt
+    # pages=17 lines=234 tokens=958 types=605 sections=['Eccl'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_UBL758.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_UBL758.txt
+    # pages=15 lines=469 tokens=4366 types=2147 sections=['Eccl'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_UBL758_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_UBL758_marks.txt
+    # pages=15 lines=469 tokens=4366 types=2205 sections=['Eccl'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_WettF0015.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_WettF0015.txt
+    # pages=5 lines=380 tokens=3498 types=1108 sections=['Schol'] hands=1 langs=['la']
+  $ python.exe -I ./scoreboard/run_v2.py --meta ./data/controls_realline/cremma_WettF0015_marks.meta.json --family L --ranges ./s15_ranges.json --out ./results_s18_cremma_WettF0015_marks.txt
+    # pages=5 lines=380 tokens=3498 types=1267 sections=['Schol'] hands=1 langs=['la']
+
+=== per sidecar: JSD within-line permutation null (a2_position.null, n=30) and excess, CHARWIN (n5), on load_meta+subsample(25000) pages; _marks JSDs use glyph units ===
+sidecar                              | lines tokens | jsd_f raw          null   excess | jsd_l raw          null   excess |  CHARWIN | a2==run_v2 (cp)
+cremma_all                           |  2482  25002 |    0.0302 0.0060±0.0012  +0.0242 |    0.0318 0.0065±0.0010  +0.0254 |  -0.1521 | True/True
+cremma_all_marks                     |  2482  25002 |    0.0502 0.0179±0.0015  +0.0323 |    0.0584 0.0219±0.0016  +0.0365 |  -0.1528 | True/True
+cremma_all_relined8                  |  3141  25000 |    0.0035 0.0043±0.0008  -0.0008 |    0.0041 0.0041±0.0006  -0.0000 |  -0.1522 | True/True
+cremma_all_relined8_marks            |  3141  25000 |    0.0131 0.0144±0.0011  -0.0013 |    0.0185 0.0167±0.0011  +0.0018 |  -0.1529 | True/True
+cremma_Arras-861                     |   351   2478 |    0.0391 0.0151±0.0043  +0.0239 |    0.0569 0.0182±0.0048  +0.0388 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Arras-861_marks               |   351   2478 |    0.0612 0.0293±0.0056  +0.0319 |    0.1114 0.0386±0.0075  +0.0729 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_BGO-511                       |    54    169 |    0.1768 0.1646±0.0456  +0.0122 |    0.0993 0.1141±0.0266  -0.0148 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_BGO-511_marks                 |    54    169 |    0.1768 0.1646±0.0456  +0.0122 |    0.1369 0.1327±0.0284  +0.0041 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_BIS-193                       |   598   6981 |    0.0582 0.0190±0.0028  +0.0393 |    0.0365 0.0173±0.0037  +0.0191 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_BIS-193_marks                 |   598   6981 |    0.0925 0.0452±0.0042  +0.0474 |    0.0815 0.0475±0.0061  +0.0340 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_c15                           |  1398  10190 |    0.0209 0.0110±0.0022  +0.0099 |    0.0517 0.0143±0.0024  +0.0374 |  -0.1760 | True/True
+cremma_c15_marks                     |  1398  10190 |    0.0322 0.0208±0.0025  +0.0113 |    0.0696 0.0255±0.0028  +0.0441 |  -0.1748 | True/True
+cremma_c15_relined8                  |  1294  10190 |    0.0046 0.0072±0.0013  -0.0026 |    0.0097 0.0072±0.0016  +0.0025 |  -0.1760 | True/True
+cremma_c15_relined8_marks            |  1294  10190 |    0.0145 0.0164±0.0020  -0.0019 |    0.0195 0.0174±0.0021  +0.0021 |  -0.1748 | True/True
+cremma_CCCC-MSS-165                  |   148   1410 |    0.0485 0.0439±0.0106  +0.0047 |    0.1084 0.0376±0.0089  +0.0709 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_CCCC-MSS-165_marks            |   148   1410 |    0.0814 0.0596±0.0126  +0.0219 |    0.1307 0.0601±0.0103  +0.0706 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_CCCC-MSS-236                  |   160   1138 |    0.1059 0.0416±0.0118  +0.0642 |    0.1126 0.0423±0.0080  +0.0703 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_CCCC-MSS-236_marks            |   160   1138 |    0.1503 0.0850±0.0113  +0.0653 |    0.1556 0.0874±0.0129  +0.0682 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_CLM13027                      |   609   6732 |    0.0620 0.0137±0.0027  +0.0483 |    0.0588 0.0142±0.0029  +0.0446 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_CLM13027_marks                |   609   6732 |    0.1011 0.0401±0.0042  +0.0609 |    0.1235 0.0463±0.0049  +0.0773 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Egerton821                    |   114   1088 |    0.1880 0.0557±0.0147  +0.1324 |    0.0823 0.0544±0.0111  +0.0279 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Egerton821_marks              |   114   1088 |    0.2625 0.1028±0.0197  +0.1597 |    0.1400 0.1033±0.0137  +0.0367 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_H318                          |   414   4676 |    0.0354 0.0202±0.0047  +0.0152 |    0.0542 0.0186±0.0037  +0.0356 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_H318_marks                    |   414   4676 |    0.0638 0.0434±0.0052  +0.0205 |    0.1059 0.0534±0.0051  +0.0524 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Latin16195                    |   430   3993 |    0.0235 0.0152±0.0035  +0.0083 |    0.0382 0.0180±0.0048  +0.0202 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Latin16195_marks              |   430   3993 |    0.0492 0.0398±0.0042  +0.0094 |    0.0884 0.0534±0.0066  +0.0350 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Latin6395                     |   622   3162 |    0.0712 0.0129±0.0027  +0.0583 |    0.0430 0.0126±0.0027  +0.0304 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Latin6395_marks               |   622   3162 |    0.1128 0.0259±0.0042  +0.0869 |    0.0751 0.0286±0.0040  +0.0466 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Latin8236                     |   206   1403 |    0.0895 0.0316±0.0083  +0.0579 |    0.1350 0.0258±0.0066  +0.1092 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Latin8236_marks               |   206   1403 |    0.0963 0.0357±0.0091  +0.0606 |    0.1455 0.0326±0.0076  +0.1129 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_LaurPlut33.31                 |   201   1267 |    0.1704 0.0334±0.0091  +0.1370 |    0.0689 0.0367±0.0089  +0.0322 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_LaurPlut33.31_marks           |   201   1267 |    0.1903 0.0444±0.0110  +0.1459 |    0.0927 0.0483±0.0077  +0.0444 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_LaurPlut39.34                 |   131    770 |    0.1502 0.0485±0.0135  +0.1017 |    0.1652 0.0561±0.0141  +0.1091 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_LaurPlut39.34_marks           |   131    770 |    0.1568 0.0517±0.0136  +0.1052 |    0.1734 0.0600±0.0140  +0.1134 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_LaurPlut53.08                 |   216   3319 |    0.0319 0.0247±0.0065  +0.0073 |    0.1161 0.0287±0.0063  +0.0874 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_LaurPlut53.08_marks           |   216   3319 |    0.0546 0.0411±0.0070  +0.0135 |    0.1368 0.0476±0.0085  +0.0892 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_LaurPlut53.09                 |   125   1323 |    0.0605 0.0402±0.0110  +0.0203 |    0.1851 0.0405±0.0126  +0.1446 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_LaurPlut53.09_marks           |   125   1323 |    0.0608 0.0440±0.0117  +0.0167 |    0.2334 0.0478±0.0127  +0.1855 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Mazarine915                   |   418   4581 |    0.0400 0.0208±0.0039  +0.0192 |    0.0421 0.0240±0.0039  +0.0181 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Mazarine915_marks             |   418   4581 |    0.0674 0.0507±0.0046  +0.0167 |    0.0908 0.0580±0.0055  +0.0328 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_PalLat373                     |   432   2248 |    0.0424 0.0221±0.0054  +0.0202 |    0.0452 0.0197±0.0037  +0.0255 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_PalLat373_marks               |   432   2248 |    0.0571 0.0384±0.0069  +0.0186 |    0.0881 0.0482±0.0057  +0.0398 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Phi_10a135                    |   139   1718 |    0.0833 0.0592±0.0148  +0.0241 |    0.0707 0.0573±0.0154  +0.0134 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_Phi_10a135_marks              |   139   1718 |    0.1215 0.0940±0.0170  +0.0275 |    0.1636 0.1291±0.0171  +0.0345 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_prose15                       |   773   6890 |    0.0236 0.0158±0.0031  +0.0078 |    0.0670 0.0182±0.0036  +0.0488 |  -0.0257 | True/True
+cremma_prose15_marks                 |   773   6890 |    0.0374 0.0289±0.0039  +0.0085 |    0.0979 0.0365±0.0044  +0.0614 |  -0.0243 | True/True
+cremma_prose15_relined8              |   869   6890 |    0.0064 0.0101±0.0018  -0.0037 |    0.0112 0.0108±0.0015  +0.0004 |  -0.0257 | True/True
+cremma_prose15_relined8_marks        |   869   6890 |    0.0202 0.0211±0.0027  -0.0009 |    0.0261 0.0250±0.0022  +0.0011 |  -0.0243 | True/True
+cremma_SBB_PK_Hdschr25               |   234    958 |    0.0399 0.0376±0.0092  +0.0023 |    0.0957 0.0411±0.0090  +0.0546 |  -0.4278 | True/True
+cremma_SBB_PK_Hdschr25_marks         |   234    958 |    0.0510 0.0571±0.0112  -0.0061 |    0.1184 0.0595±0.0115  +0.0589 |  -0.4251 | True/True
+cremma_UBL758                        |   469   4366 |    0.0477 0.0172±0.0043  +0.0306 |    0.0524 0.0169±0.0036  +0.0356 |  -0.0734 | True/True
+cremma_UBL758_marks                  |   469   4366 |    0.0549 0.0267±0.0041  +0.0282 |    0.1084 0.0306±0.0047  +0.0777 |  -0.0774 | True/True
+cremma_WettF0015                     |   380   3498 |    0.0698 0.0174±0.0045  +0.0525 |    0.0470 0.0214±0.0046  +0.0256 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+cremma_WettF0015_marks               |   380   3498 |    0.1255 0.0565±0.0063  +0.0690 |    0.1157 0.0745±0.0075  +0.0413 |       NA | True/True  n5: ZeroDivisionError('float division by zero')
+a2_position.stats(code point) vs run_v2 raw JSD: all equal
+
+=== v2 metrics per sidecar (run_v2 rows + JSD null/excess + n5 CHARWIN; _marks JSDs = glyph unit) ===
+sidecar                              | lines tokens | jsd_first_fg jsd_first_null jsd_first_exc  jsd_last_lg jsd_last_null jsd_last_exc p_init_enrich m_final_enrich cross_excess_eva x_edge_mi_word x_position_entropy    x_moran_I      CHARWIN           h2    types_25k
+cremma_all                           |  2482  25002 |       0.0302       0.0060       0.0242       0.0318       0.0065       0.0254       0.8400       1.2200       0.0491       0.0643       2.0699      -0.0169      -0.1521       3.5825         8626
+cremma_all_marks                     |  2482  25002 |       0.0502       0.0179       0.0323       0.0584       0.0219       0.0365       0.8400       1.6100       0.0528       0.0682       2.0264      -0.0264      -0.1528       3.6820         9848
+cremma_all_relined8                  |  3141  25000 |       0.0035       0.0043      -0.0008       0.0041       0.0041      -0.0000       0.8600       0.9100       0.0444       0.0615       2.0699      -0.0169      -0.1522       3.5825         8626
+cremma_all_relined8_marks            |  3141  25000 |       0.0131       0.0144      -0.0013       0.0185       0.0167       0.0018       0.8600       1.0400       0.0480       0.0669       2.0264      -0.0264      -0.1529       3.6820         9848
+cremma_Arras-861                     |   351   2478 |       0.0391       0.0151       0.0239       0.0569       0.0182       0.0388       0.6600       2.0900       0.0352           NA           NA           NA           NA       3.3856         1429
+cremma_Arras-861_marks               |   351   2478 |       0.0612       0.0293       0.0319       0.1114       0.0386       0.0729       0.6600       2.5400       0.0125           NA           NA           NA           NA       3.4278         1485
+cremma_BGO-511                       |    54    169 |       0.1768       0.1646       0.0122       0.0993       0.1141      -0.0148       0.0000       0.6900      -0.0946           NA           NA           NA           NA       3.0073          126
+cremma_BGO-511_marks                 |    54    169 |       0.1768       0.1646       0.0122       0.1369       0.1327       0.0041       0.0000       0.4600      -0.1201           NA           NA           NA           NA       3.0095          127
+cremma_BIS-193                       |   598   6981 |       0.0582       0.0190       0.0393       0.0365       0.0173       0.0191       0.9700       0.8000       0.0974           NA           NA           NA           NA       3.4682         2019
+cremma_BIS-193_marks                 |   598   6981 |       0.0925       0.0452       0.0474       0.0815       0.0475       0.0340       0.9800       0.9800       0.1032           NA           NA           NA           NA       3.5772         2349
+cremma_c15                           |  1398  10190 |       0.0209       0.0110       0.0099       0.0517       0.0143       0.0374       0.8900       1.1500       0.0390       0.0524       2.1213      -0.0316      -0.1760       3.4833         4833
+cremma_c15_marks                     |  1398  10190 |       0.0322       0.0208       0.0113       0.0696       0.0255       0.0441       0.8900       1.1300       0.0435       0.0611       2.1092      -0.0424      -0.1748       3.5465         5051
+cremma_c15_relined8                  |  1294  10190 |       0.0046       0.0072      -0.0026       0.0097       0.0072       0.0025       1.0600       0.7000       0.0415       0.0503       2.1213      -0.0316      -0.1760       3.4833         4833
+cremma_c15_relined8_marks            |  1294  10190 |       0.0145       0.0164      -0.0019       0.0195       0.0174       0.0021       1.0600       0.6800       0.0473       0.0595       2.1092      -0.0424      -0.1748       3.5465         5051
+cremma_CCCC-MSS-165                  |   148   1410 |       0.0485       0.0439       0.0047       0.1084       0.0376       0.0709       0.8500       3.3300       0.0520           NA           NA           NA           NA       3.2727          629
+cremma_CCCC-MSS-165_marks            |   148   1410 |       0.0814       0.0596       0.0219       0.1307       0.0601       0.0706       0.8500       3.0800       0.0746           NA           NA           NA           NA       3.3029          655
+cremma_CCCC-MSS-236                  |   160   1138 |       0.1059       0.0416       0.0642       0.1126       0.0423       0.0703       0.5800       1.1700       0.1922           NA           NA           NA           NA       3.3696          761
+cremma_CCCC-MSS-236_marks            |   160   1138 |       0.1503       0.0850       0.0653       0.1556       0.0874       0.0682       0.5800       1.3800       0.1858           NA           NA           NA           NA       3.4267          791
+cremma_CLM13027                      |   609   6732 |       0.0620       0.0137       0.0483       0.0588       0.0142       0.0446       0.7900       0.9600       0.0680           NA           NA           NA           NA       3.5209         3052
+cremma_CLM13027_marks                |   609   6732 |       0.1011       0.0401       0.0609       0.1235       0.0463       0.0773       0.8100       1.2700       0.0677           NA           NA           NA           NA       3.5864         3385
+cremma_Egerton821                    |   114   1088 |       0.1880       0.0557       0.1324       0.0823       0.0544       0.0279       0.8000       0.9900       0.1599           NA           NA           NA           NA       3.3355          603
+cremma_Egerton821_marks              |   114   1088 |       0.2625       0.1028       0.1597       0.1400       0.1033       0.0367       0.8000       1.2700       0.1830           NA           NA           NA           NA       3.3586          641
+cremma_H318                          |   414   4676 |       0.0354       0.0202       0.0152       0.0542       0.0186       0.0356       1.0500       1.3700       0.0888           NA           NA           NA           NA       3.4218         1889
+cremma_H318_marks                    |   414   4676 |       0.0638       0.0434       0.0205       0.1059       0.0534       0.0524       1.0500       1.4400       0.0819           NA           NA           NA           NA       3.4511         2081
+cremma_Latin16195                    |   430   3993 |       0.0235       0.0152       0.0083       0.0382       0.0180       0.0202       1.1600       0.9900       0.1328           NA           NA           NA           NA       3.4012         1349
+cremma_Latin16195_marks              |   430   3993 |       0.0492       0.0398       0.0094       0.0884       0.0534       0.0350       1.1600       1.2000       0.1315           NA           NA           NA           NA       3.4959         1507
+cremma_Latin6395                     |   622   3162 |       0.0712       0.0129       0.0583       0.0430       0.0126       0.0304       1.1900       0.8500       0.0450           NA           NA           NA           NA       3.4266         2199
+cremma_Latin6395_marks               |   622   3162 |       0.1128       0.0259       0.0869       0.0751       0.0286       0.0466       1.1900       1.0900       0.0472           NA           NA           NA           NA       3.4827         2301
+cremma_Latin8236                     |   206   1403 |       0.0895       0.0316       0.0579       0.1350       0.0258       0.1092       1.1600       1.4200       0.1781           NA           NA           NA           NA       3.3351          999
+cremma_Latin8236_marks               |   206   1403 |       0.0963       0.0357       0.0606       0.1455       0.0326       0.1129       1.1600       1.4200       0.1882           NA           NA           NA           NA       3.3618         1008
+cremma_LaurPlut33.31                 |   201   1267 |       0.1704       0.0334       0.1370       0.0689       0.0367       0.0322       1.0100       2.1600       0.2478           NA           NA           NA           NA       3.3430          807
+cremma_LaurPlut33.31_marks           |   201   1267 |       0.1903       0.0444       0.1459       0.0927       0.0483       0.0444       1.0100       2.2700       0.2471           NA           NA           NA           NA       3.3774          832
+cremma_LaurPlut39.34                 |   131    770 |       0.1502       0.0485       0.1017       0.1652       0.0561       0.1091       0.3900       1.1100       0.2085           NA           NA           NA           NA       3.3255          546
+cremma_LaurPlut39.34_marks           |   131    770 |       0.1568       0.0517       0.1052       0.1734       0.0600       0.1134       0.3900       1.1100       0.2099           NA           NA           NA           NA       3.3312          548
+cremma_LaurPlut53.08                 |   216   3319 |       0.0319       0.0247       0.0073       0.1161       0.0287       0.0874       0.9500       0.0000       0.0094           NA           NA           NA           NA       3.3877         1686
+cremma_LaurPlut53.08_marks           |   216   3319 |       0.0546       0.0411       0.0135       0.1368       0.0476       0.0892       0.9500       0.0000       0.0177           NA           NA           NA           NA       3.4232         1754
+cremma_LaurPlut53.09                 |   125   1323 |       0.0605       0.0402       0.0203       0.1851       0.0405       0.1446       1.2300       0.6900       0.0179           NA           NA           NA           NA       3.3031          773
+cremma_LaurPlut53.09_marks           |   125   1323 |       0.0608       0.0440       0.0167       0.2334       0.0478       0.1855       1.2300       0.6400       0.0051           NA           NA           NA           NA       3.3133          774
+cremma_Mazarine915                   |   418   4581 |       0.0400       0.0208       0.0192       0.0421       0.0240       0.0181       0.8000       0.9600       0.1207           NA           NA           NA           NA       3.3745         1329
+cremma_Mazarine915_marks             |   418   4581 |       0.0674       0.0507       0.0167       0.0908       0.0580       0.0328       0.8000       1.1900       0.1166           NA           NA           NA           NA       3.4637         1548
+cremma_PalLat373                     |   432   2248 |       0.0424       0.0221       0.0202       0.0452       0.0197       0.0255       1.1700       1.2100       0.0723           NA           NA           NA           NA       3.3930         1099
+cremma_PalLat373_marks               |   432   2248 |       0.0571       0.0384       0.0186       0.0881       0.0482       0.0398       1.1700       1.2400       0.0635           NA           NA           NA           NA       3.4735         1162
+cremma_Phi_10a135                    |   139   1718 |       0.0833       0.0592       0.0241       0.0707       0.0573       0.0134       1.2300       0.6000       0.0717           NA           NA           NA           NA       3.4864         1031
+cremma_Phi_10a135_marks              |   139   1718 |       0.1215       0.0940       0.0275       0.1636       0.1291       0.0345       1.2300       0.6300       0.0773           NA           NA           NA           NA       3.5613         1103
+cremma_prose15                       |   773   6890 |       0.0236       0.0158       0.0078       0.0670       0.0182       0.0488       0.9500       1.1600       0.0239       0.0414       2.0948      -0.0415      -0.0257       3.4709         3201
+cremma_prose15_marks                 |   773   6890 |       0.0374       0.0289       0.0085       0.0979       0.0365       0.0614       0.9500       1.1300       0.0264       0.0461       2.0791      -0.0555      -0.0243       3.5354         3365
+cremma_prose15_relined8              |   869   6890 |       0.0064       0.0101      -0.0037       0.0112       0.0108       0.0004       1.1000       0.6000       0.0356       0.0439       2.0948      -0.0415      -0.0257       3.4709         3201
+cremma_prose15_relined8_marks        |   869   6890 |       0.0202       0.0211      -0.0009       0.0261       0.0250       0.0011       1.1100       0.6000       0.0363       0.0495       2.0791      -0.0555      -0.0243       3.5354         3365
+cremma_SBB_PK_Hdschr25               |   234    958 |       0.0399       0.0376       0.0023       0.0957       0.0411       0.0546       1.0000       0.6300       0.0371       0.0884       2.1035      -0.0222      -0.4278       3.3097          591
+cremma_SBB_PK_Hdschr25_marks         |   234    958 |       0.0510       0.0571      -0.0061       0.1184       0.0595       0.0589       1.0000       0.6100       0.0232       0.0657       2.0948      -0.0411      -0.4251       3.3547          605
+cremma_UBL758                        |   469   4366 |       0.0477       0.0172       0.0306       0.0524       0.0169       0.0356       1.1900       0.8400       0.0429       0.0507       2.1005      -0.0618      -0.0734       3.4499         2147
+cremma_UBL758_marks                  |   469   4366 |       0.0549       0.0267       0.0282       0.1084       0.0306       0.0777       1.1900       0.7300       0.0395       0.0535       2.0911      -0.0723      -0.0774       3.4916         2205
+cremma_WettF0015                     |   380   3498 |       0.0698       0.0174       0.0525       0.0470       0.0214       0.0256       0.7100       0.9200       0.0951           NA           NA           NA           NA       3.4213         1108
+cremma_WettF0015_marks               |   380   3498 |       0.1255       0.0565       0.0690       0.1157       0.0745       0.0413       0.7100       0.7600       0.1115           NA           NA           NA           NA       3.4644         1267
+
+=== matched-size Voynich reference: ZL3b lines as run_v2 --voynich loads them, 200 draws per size, random.Random(20261017).sample, a2.stats / a2.null n=30 ===
+ZL3b full: 4130 lines; jsd_first raw 0.1759 null 0.0019 excess +0.1740; jsd_last raw 0.0820 null 0.0012 excess +0.0809
+  matched to cremma_prose15 (773 lines): jsd_first raw median 0.1789 [0.1581, 0.2038]; null median 0.0055 [0.0045, 0.0063]; excess median +0.1734 [+0.1528, +0.1980]
+  matched to cremma_c15 (1398 lines): jsd_first raw median 0.1779 [0.1652, 0.1911]; null median 0.0035 [0.0031, 0.0040]; excess median +0.1743 [+0.1615, +0.1875]
+
+=== pooling guard (audit item 1): per-manuscript calibrated excess, weighted mean, leave-one-out, heterogeneity ===
+manuscript             | lines tokens | jsd_first_exc jsd_last_exc | marks_first_exc | pools
+Arras-861              |   351   2478 |       +0.0239      +0.0388 |          0.0319 | -
+BGO-511                |    54    169 |       +0.0122      -0.0148 |          0.0122 | c15
+BIS-193                |   598   6981 |       +0.0393      +0.0191 |          0.0474 | -
+CCCC-MSS-165           |   148   1410 |       +0.0047      +0.0709 |          0.0219 | -
+CCCC-MSS-236           |   160   1138 |       +0.0642      +0.0703 |          0.0653 | -
+CLM13027               |   609   6732 |       +0.0483      +0.0446 |          0.0609 | -
+Egerton821             |   114   1088 |       +0.1324      +0.0279 |          0.1597 | -
+H318                   |   414   4676 |       +0.0152      +0.0356 |          0.0205 | -
+Latin16195             |   430   3993 |       +0.0083      +0.0202 |          0.0094 | -
+Latin6395              |   622   3162 |       +0.0583      +0.0304 |          0.0869 | -
+Latin8236              |   206   1403 |       +0.0579      +0.1092 |          0.0606 | c15
+LaurPlut33.31          |   201   1267 |       +0.1370      +0.0322 |          0.1459 | -
+LaurPlut39.34          |   131    770 |       +0.1017      +0.1091 |          0.1052 | c15
+LaurPlut53.08          |   216   3319 |       +0.0073      +0.0874 |          0.0135 | prose15, c15
+LaurPlut53.09          |   125   1323 |       +0.0203      +0.1446 |          0.0167 | prose15, c15
+Mazarine915            |   418   4581 |       +0.0192      +0.0181 |          0.0167 | -
+PalLat373              |   432   2248 |       +0.0202      +0.0255 |          0.0186 | prose15, c15
+Phi_10a135             |   139   1718 |       +0.0241      +0.0134 |          0.0275 | -
+SBB_PK_Hdschr25        |   234    958 |       +0.0023      +0.0546 |         -0.0061 | c15
+UBL758                 |   469   4366 |       +0.0306      +0.0356 |          0.0282 | -
+WettF0015              |   380   3498 |       +0.0525      +0.0256 |          0.0690 | -
+
+cremma_prose15: pooled jsd_first_exc +0.0078 (raw 0.0236, null 0.0158); members LaurPlut53.08, LaurPlut53.09, PalLat373
+  (ii) manuscript-weighted mean (weights = scored lines, total 773): jsd_first_exc +0.0166, jsd_last_exc +0.0621
+  (iii) leave-one-manuscript-out pooled excess (pooled sidecar pages minus that hand, in memory):
+    without LaurPlut53.08    lines=  557  jsd_first raw 0.0289 null 0.0194 excess +0.0095  | jsd_last excess +0.0439
+    without LaurPlut53.09    lines=  648  jsd_first raw 0.0309 null 0.0187 excess +0.0121  | jsd_last excess +0.0366
+    without PalLat373        lines=  341  jsd_first raw 0.0264 null 0.0176 excess +0.0088  | jsd_last excess +0.0898
+  (iv) heterogeneity (max - min member jsd_first_exc) = 0.0130  (max +0.0203 LaurPlut53.09, min +0.0073 LaurPlut53.08)
+  guard vs matched-size Voynich excess median +0.1734 (773 lines): no member reaches it
+
+cremma_c15: pooled jsd_first_exc +0.0099 (raw 0.0209, null 0.0110); members BGO-511, Latin8236, LaurPlut39.34, LaurPlut53.08, LaurPlut53.09, PalLat373, SBB_PK_Hdschr25
+  (ii) manuscript-weighted mean (weights = scored lines, total 1398): jsd_first_exc +0.0281, jsd_last_exc +0.0692
+  (iii) leave-one-manuscript-out pooled excess (pooled sidecar pages minus that hand, in memory):
+    without BGO-511          lines= 1344  jsd_first raw 0.0201 null 0.0109 excess +0.0093  | jsd_last excess +0.0377
+    without Latin8236        lines= 1192  jsd_first raw 0.0246 null 0.0132 excess +0.0114  | jsd_last excess +0.0371
+    without LaurPlut39.34    lines= 1267  jsd_first raw 0.0196 null 0.0107 excess +0.0089  | jsd_last excess +0.0384
+    without LaurPlut53.08    lines= 1182  jsd_first raw 0.0190 null 0.0105 excess +0.0084  | jsd_last excess +0.0345
+    without LaurPlut53.09    lines= 1273  jsd_first raw 0.0262 null 0.0126 excess +0.0137  | jsd_last excess +0.0330
+    without PalLat373        lines=  966  jsd_first raw 0.0267 null 0.0119 excess +0.0148  | jsd_last excess +0.0510
+    without SBB_PK_Hdschr25  lines= 1164  jsd_first raw 0.0223 null 0.0114 excess +0.0109  | jsd_last excess +0.0417
+  (iv) heterogeneity (max - min member jsd_first_exc) = 0.0994  (max +0.1017 LaurPlut39.34, min +0.0023 SBB_PK_Hdschr25)
+  guard vs matched-size Voynich excess median +0.1743 (1398 lines): no member reaches it
+
+=== s19: native minus _relined8 per metric; flag >hw where |diff| exceeds the s15 within_manuscript 95 % half-width (hi95-lo95)/2; n/a where no width ===
+half-widths: jsd_first_fg=0.0355, p_init_enrich=7.0268, m_final_enrich=8.6136, cross_excess_eva=0.0304, x_edge_mi_word=0.0320, x_position_entropy=0.0314, x_moran_I=0.0307, h2=0.0492, sd_len=0.0406, redup_pct=0.1988, types_25k=371.7500
+pool                     | family |   lines n/r |  jsd_first_fg jsd_first_exc   jsd_last_lg  jsd_last_exc p_init_enrich m_final_enrich cross_excess_eva x_edge_mi_word x_position_entropy     x_moran_I       CHARWIN            h2        sd_len     redup_pct     types_25k
+cremma_prose15           | base   |   773/  869 |  +0.0172 <=hw  +0.0115  n/a  +0.0558  n/a  +0.0484  n/a  -0.1500 <=hw  +0.5600 <=hw  -0.0117 <=hw  -0.0026 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000  n/a  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw
+cremma_prose15           | marks  |   773/  869 |  +0.0172 <=hw  +0.0094  n/a  +0.0717  n/a  +0.0603  n/a  -0.1600 <=hw  +0.5300 <=hw  -0.0099 <=hw  -0.0034 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000  n/a  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw
+cremma_c15               | base   |  1398/ 1294 |  +0.0163 <=hw  +0.0124  n/a  +0.0420  n/a  +0.0350  n/a  -0.1700 <=hw  +0.4500 <=hw  -0.0025 <=hw  +0.0021 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000  n/a  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw
+cremma_c15               | marks  |  1398/ 1294 |  +0.0176 <=hw  +0.0132  n/a  +0.0501  n/a  +0.0420  n/a  -0.1700 <=hw  +0.4500 <=hw  -0.0038 <=hw  +0.0017 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000  n/a  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw
+cremma_all               | base   |  2482/ 3141 |  +0.0267 <=hw  +0.0250  n/a  +0.0277  n/a  +0.0254  n/a  -0.0200 <=hw  +0.3100 <=hw  +0.0047 <=hw  +0.0027 <=hw  +0.0000 <=hw  -0.0000 <=hw  +0.0001  n/a  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw
+cremma_all               | marks  |  2482/ 3141 |  +0.0371  >hw  +0.0336  n/a  +0.0399  n/a  +0.0346  n/a  -0.0200 <=hw  +0.5700 <=hw  +0.0048 <=hw  +0.0013 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0001  n/a  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw  +0.0000 <=hw
+(_marks rows: glyph-unit JSDs; sensitivity only, not comparable to an EVA band without that qualification)
+
+=== DECISION (pre-registered rule, s18_cremma_v2.prereg.sha256; phase-1.md stub as amended) ===
+primary statistic: E = pooled cremma_prose15 jsd_first EXCESS = jsd_first_fg - within-line null mean (a2_position.null n=30)
+null_level  = 0.0055  (median matched-size Voynich jsd_first NULL, 200 draws of 773 ZL3b lines, seed 20261017)
+lower_bound = 0.1447  (s15_ranges.json within_manuscript.jsd_first_fg.lo95)
+thresholds in excess terms: T_hold = 0.10 - 0.0055 = 0.0945;  T_inval = 0.1447 - 0.0055 = 0.1392
+rule: E < T_hold -> "U1 HOLDS";  T_hold <= E < T_inval -> "PARTLY INVALIDATED";  E >= T_inval -> "INVALIDATED"
+E (cremma_prose15, base family) = 0.0078  (raw 0.0236, null 0.0158±0.0031, 773 lines, 6890 tokens)
+outcome before guard: U1 HOLDS
+pooling guard: any prose15 / c15 member calibrated jsd_first_exc >= its pool's matched-size Voynich excess median? no
+kill rule: prose15 tokens 6890 >= 5,000: met;  c15 tokens 10190 >= 8,000: met
+VERDICT: U1 HOLDS
+sensitivity (_marks family, glyph-unit JSD, same thresholds, NOT the decision): E_marks = 0.0085 -> U1 HOLDS
+secondary: cremma_prose15 jsd_last excess = 0.0488 (raw 0.0670, null 0.0182); s15 widths: jsd_first_fg hw=0.0355, p_init_enrich hw=7.0268, m_final_enrich hw=8.6136, cross_excess_eva hw=0.0304, x_edge_mi_word hw=0.0320, x_position_entropy hw=0.0314, x_moran_I hw=0.0307, h2 hw=0.0492, sd_len hw=0.0406, redup_pct hw=0.1988, types_25k hw=371.7500
+re-wrap clause: prose15 native - relined8 jsd_first_fg = 0.0172, s15 half-width = 0.0355 -> within the s15 width
+caveats carried: prose15 column count unverified; paragraph proxy = ALTO TextBlock, block-initial (column proxy); abbreviations unresolved so Latin h2/types rows carry no weight; _marks under-represents detached signs (manifest).
+
+run_v2 step errors: {"cremma_Arras-861": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Arras-861_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_BGO-511": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_BGO-511_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_BIS-193": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_BIS-193_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_CCCC-MSS-165": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_CCCC-MSS-165_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_CCCC-MSS-236": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_CCCC-MSS-236_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_CLM13027": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_CLM13027_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Egerton821": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Egerton821_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_H318": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_H318_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Latin16195": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Latin16195_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Latin6395": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Latin6395_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Latin8236": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Latin8236_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_LaurPlut33.31": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_LaurPlut33.31_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_LaurPlut39.34": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_LaurPlut39.34_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_LaurPlut53.08": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_LaurPlut53.08_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_LaurPlut53.09": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_LaurPlut53.09_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Mazarine915": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Mazarine915_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_PalLat373": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_PalLat373_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Phi_10a135": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_Phi_10a135_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_WettF0015": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}, "cremma_WettF0015_marks": {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}}
+n5 CHARWIN errors: {"cremma_Arras-861": "ZeroDivisionError('float division by zero')", "cremma_Arras-861_marks": "ZeroDivisionError('float division by zero')", "cremma_BGO-511": "ZeroDivisionError('float division by zero')", "cremma_BGO-511_marks": "ZeroDivisionError('float division by zero')", "cremma_BIS-193": "ZeroDivisionError('float division by zero')", "cremma_BIS-193_marks": "ZeroDivisionError('float division by zero')", "cremma_CCCC-MSS-165": "ZeroDivisionError('float division by zero')", "cremma_CCCC-MSS-165_marks": "ZeroDivisionError('float division by zero')", "cremma_CCCC-MSS-236": "ZeroDivisionError('float division by zero')", "cremma_CCCC-MSS-236_marks": "ZeroDivisionError('float division by zero')", "cremma_CLM13027": "ZeroDivisionError('float division by zero')", "cremma_CLM13027_marks": "ZeroDivisionError('float division by zero')", "cremma_Egerton821": "ZeroDivisionError('float division by zero')", "cremma_Egerton821_marks": "ZeroDivisionError('float division by zero')", "cremma_H318": "ZeroDivisionError('float division by zero')", "cremma_H318_marks": "ZeroDivisionError('float division by zero')", "cremma_Latin16195": "ZeroDivisionError('float division by zero')", "cremma_Latin16195_marks": "ZeroDivisionError('float division by zero')", "cremma_Latin6395": "ZeroDivisionError('float division by zero')", "cremma_Latin6395_marks": "ZeroDivisionError('float division by zero')", "cremma_Latin8236": "ZeroDivisionError('float division by zero')", "cremma_Latin8236_marks": "ZeroDivisionError('float division by zero')", "cremma_LaurPlut33.31": "ZeroDivisionError('float division by zero')", "cremma_LaurPlut33.31_marks": "ZeroDivisionError('float division by zero')", "cremma_LaurPlut39.34": "ZeroDivisionError('float division by zero')", "cremma_LaurPlut39.34_marks": "ZeroDivisionError('float division by zero')", "cremma_LaurPlut53.08": "ZeroDivisionError('float division by zero')", "cremma_LaurPlut53.08_marks": "ZeroDivisionError('float division by zero')", "cremma_LaurPlut53.09": "ZeroDivisionError('float division by zero')", "cremma_LaurPlut53.09_marks": "ZeroDivisionError('float division by zero')", "cremma_Mazarine915": "ZeroDivisionError('float division by zero')", "cremma_Mazarine915_marks": "ZeroDivisionError('float division by zero')", "cremma_PalLat373": "ZeroDivisionError('float division by zero')", "cremma_PalLat373_marks": "ZeroDivisionError('float division by zero')", "cremma_Phi_10a135": "ZeroDivisionError('float division by zero')", "cremma_Phi_10a135_marks": "ZeroDivisionError('float division by zero')", "cremma_WettF0015": "ZeroDivisionError('float division by zero')", "cremma_WettF0015_marks": "ZeroDivisionError('float division by zero')"}
+done-when (s18): pooled prose15 row (6890 tokens), cremma_c15, cremma_all and 21 per-manuscript rows with the pre-registered verdict -> MET; verdict = U1 HOLDS
+done-when (s19): results_s19.txt for prose15, c15 and all -> MET
+run finished Sat Oct 17 20:36:18 PDT 2026 (`date`)

@@ -1,0 +1,4307 @@
+[
+ {
+  "page": "f10r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "saluia",
+    "pes"
+   ],
+   "B": [
+    "branca",
+    "ruta"
+   ]
+  },
+  "parts": [
+   [
+    "mandragora",
+    false
+   ],
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "consolida",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f10v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "lingua"
+   ],
+   "B": [
+    "sigillum",
+    "lingua"
+   ]
+  },
+  "parts": [
+   [
+    "trifolium",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "caprifolium",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f11r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 1.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "liquiritia"
+   ],
+   "B": [
+    "cyclamen",
+    "cyclamen"
+   ]
+  },
+  "parts": [
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f11v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "saluia",
+    "bryonia"
+   ],
+   "B": [
+    "cyclamen",
+    "pes"
+   ]
+  },
+  "parts": [
+   [
+    "branca",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f13r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "raphanus",
+    "bryonia"
+   ],
+   "B": [
+    "cyclamen",
+    "scrophularia"
+   ]
+  },
+  "parts": [
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "bistorta",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f13v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "tamariscus",
+    "saponaria"
+   ],
+   "B": [
+    "hypocistis",
+    "pes"
+   ]
+  },
+  "parts": [
+   [
+    "palma",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "branca",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f14r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 1.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "tamariscus",
+    "bistorta"
+   ],
+   "B": [
+    "scolopendria",
+    "scolopendria"
+   ]
+  },
+  "parts": [
+   [
+    "squilla",
+    false
+   ],
+   [
+    "gentiana",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f14v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "lactuca"
+   ],
+   "B": [
+    "tamariscus",
+    "saluia"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "gentiana",
+    false
+   ],
+   [
+    "pes",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f15r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "rubia"
+   ],
+   "B": [
+    "mandragora",
+    "hypocistis"
+   ]
+  },
+  "parts": [
+   [
+    "origanum",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "chamaepitys",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f15v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "ruta"
+   ],
+   "B": [
+    "alleluia",
+    "pes"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "saxifraga",
+    false
+   ],
+   [
+    "ruta",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f16r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "dictamnus",
+    "agrimonia"
+   ],
+   "B": [
+    "palma",
+    "napellus"
+   ]
+  },
+  "parts": [
+   [
+    "saponaria",
+    false
+   ],
+   [
+    "paeonia",
+    false
+   ],
+   [
+    "pulmonaria",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f16v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 1.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "aristolochia",
+    "napellus"
+   ],
+   "B": [
+    "pes",
+    "pes"
+   ]
+  },
+  "parts": [
+   [
+    "pes",
+    false
+   ],
+   [
+    "spica",
+    false
+   ],
+   [
+    "cyclamen",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f17r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "liquiritia"
+   ],
+   "B": [
+    "cyperus",
+    "saponaria"
+   ]
+  },
+  "parts": [
+   [
+    "origanum",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ],
+   [
+    "dictamnus",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f17v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "liquiritia"
+   ],
+   "B": [
+    "betonica",
+    "alkekengi"
+   ]
+  },
+  "parts": [
+   [
+    "aristolochia",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "ruta",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f18r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "branca",
+    "scrophularia"
+   ],
+   "B": [
+    "saponaria",
+    "consolida"
+   ]
+  },
+  "parts": [
+   [
+    "lactuca",
+    false
+   ],
+   [
+    "chamaepitys",
+    false
+   ],
+   [
+    "palma",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f18v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "calendula",
+    "pes"
+   ],
+   "B": [
+    "napellus",
+    "uitis"
+   ]
+  },
+  "parts": [
+   [
+    "dictamnus",
+    false
+   ],
+   [
+    "uitis",
+    false
+   ],
+   [
+    "lactuca",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f19r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "hermodactylus"
+   ],
+   "B": [
+    "liquiritia",
+    "gentiana"
+   ]
+  },
+  "parts": [
+   [
+    "origanum",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f19v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "rubia"
+   ],
+   "B": [
+    "cyperus",
+    "serpentaria"
+   ]
+  },
+  "parts": [
+   [
+    "consolida",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "caprifolium",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f1v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "sigillum",
+    "spica"
+   ],
+   "B": [
+    "caprifolium",
+    "alkekengi"
+   ]
+  },
+  "parts": [
+   [
+    "spica",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ],
+   [
+    "ruta",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f20r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "agrimonia"
+   ],
+   "B": [
+    "saluia",
+    "betonica"
+   ]
+  },
+  "parts": [
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "lactuca",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f20v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "liquiritia"
+   ],
+   "B": [
+    "cyperus",
+    "saxifraga"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f21r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "ungula",
+    "palma"
+   ],
+   "B": [
+    "lingua",
+    "asphodelus"
+   ]
+  },
+  "parts": [
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "hypocistis",
+    false
+   ],
+   [
+    "pes",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f21v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "cyperus",
+    "cauda"
+   ],
+   "B": [
+    "dictamnus",
+    "saponaria"
+   ]
+  },
+  "parts": [
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f22r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "rubia"
+   ],
+   "B": [
+    "reubarbarum",
+    "ungula"
+   ]
+  },
+  "parts": [
+   [
+    "origanum",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f22v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "dictamnus",
+    "napellus"
+   ],
+   "B": [
+    "sigillum",
+    "gentiana"
+   ]
+  },
+  "parts": [
+   [
+    "cyperus",
+    false
+   ],
+   [
+    "mandragora",
+    false
+   ],
+   [
+    "pes",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f23r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "lactuca"
+   ],
+   "B": [
+    "napellus",
+    "pes"
+   ]
+  },
+  "parts": [
+   [
+    "origanum",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "saxifraga",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f23v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "pes",
+    "rubia"
+   ],
+   "B": [
+    "branca",
+    "bryonia"
+   ]
+  },
+  "parts": [
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "pes",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f24r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "liquiritia"
+   ],
+   "B": [
+    "consolida",
+    "gentiana"
+   ]
+  },
+  "parts": [
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "aristolochia",
+    true
+   ],
+   [
+    "liquiritia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f24v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "aristolochia",
+    "origanum"
+   ],
+   "B": [
+    "cyclamen",
+    "bryonia"
+   ]
+  },
+  "parts": [
+   [
+    "origanum",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ],
+   [
+    "lactuca",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f25r",
+  "A": {
+   "hit1": 1.0,
+   "hit5": 1.0
+  },
+  "B": {
+   "hit1": 1.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "sigillum",
+    "sigillum"
+   ],
+   "B": [
+    "agrimonia",
+    "agrimonia"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "sigillum",
+    true
+   ],
+   [
+    "dictamnus",
+    true
+   ]
+  ]
+ },
+ {
+  "page": "f25v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "caprifolium",
+    "serpentaria"
+   ],
+   "B": [
+    "pes",
+    "napellus"
+   ]
+  },
+  "parts": [
+   [
+    "asphodelus",
+    false
+   ],
+   [
+    "paeonia",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f26r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "agrimonia",
+    "betonica"
+   ],
+   "B": [
+    "branca",
+    "scrophularia"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "scrophularia",
+    false
+   ],
+   [
+    "palma",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f26v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "spica"
+   ],
+   "B": [
+    "ruta",
+    "lentiscus"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "spica",
+    false
+   ],
+   [
+    "aristolochia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f27r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "saxifraga",
+    "pulmonaria"
+   ],
+   "B": [
+    "pulmonaria",
+    "lactuca"
+   ]
+  },
+  "parts": [
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "pulmonaria",
+    true
+   ],
+   [
+    "dictamnus",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f27v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "cyperus",
+    "cauda"
+   ],
+   "B": [
+    "dictamnus",
+    "agrimonia"
+   ]
+  },
+  "parts": [
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f28r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "lactuca"
+   ],
+   "B": [
+    "squilla",
+    "aristolochia"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ],
+   [
+    "saxifraga",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f28v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "liquiritia"
+   ],
+   "B": [
+    "dictamnus",
+    "squilla"
+   ]
+  },
+  "parts": [
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "origanum",
+    false
+   ],
+   [
+    "caprifolium",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f29r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "cyperus",
+    "cauda"
+   ],
+   "B": [
+    "uitis",
+    "consolida"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "cyclamen",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f29v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "cyperus",
+    "saponaria"
+   ],
+   "B": [
+    "asphodelus",
+    "squilla"
+   ]
+  },
+  "parts": [
+   [
+    "palma",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f2r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "paeonia",
+    "alkekengi"
+   ],
+   "B": [
+    "paeonia",
+    "serpentaria"
+   ]
+  },
+  "parts": [
+   [
+    "reubarbarum",
+    false
+   ],
+   [
+    "bistorta",
+    false
+   ],
+   [
+    "gentiana",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f2v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "cyperus",
+    "branca"
+   ],
+   "B": [
+    "ungula",
+    "pes"
+   ]
+  },
+  "parts": [
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "consolida",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f30r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "apios",
+    "consolida"
+   ],
+   "B": [
+    "paeonia",
+    "lentiscus"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "sigillum",
+    true
+   ],
+   [
+    "palma",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f30v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "cyperus",
+    "raphanus"
+   ],
+   "B": [
+    "saluia",
+    "agrimonia"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f31r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "betonica",
+    "apios"
+   ],
+   "B": [
+    "scrophularia",
+    "saponaria"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "agrimonia",
+    true
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f31v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "cyperus",
+    "cauda"
+   ],
+   "B": [
+    "reubarbarum",
+    "cyclamen"
+   ]
+  },
+  "parts": [
+   [
+    "cauda",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f32r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "origanum"
+   ],
+   "B": [
+    "chamaepitys",
+    "reubarbarum"
+   ]
+  },
+  "parts": [
+   [
+    "origanum",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f32v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "caprifolium",
+    "saluia"
+   ],
+   "B": [
+    "spica",
+    "uitis"
+   ]
+  },
+  "parts": [
+   [
+    "branca",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "caprifolium",
+    true
+   ]
+  ]
+ },
+ {
+  "page": "f33r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "reubarbarum",
+    "consolida"
+   ],
+   "B": [
+    "alkekengi",
+    "consolida"
+   ]
+  },
+  "parts": [
+   [
+    "calendula",
+    false
+   ],
+   [
+    "agrimonia",
+    false
+   ],
+   [
+    "consolida",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f33v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "cyperus",
+    "cauda"
+   ],
+   "B": [
+    "polypodium",
+    "napellus"
+   ]
+  },
+  "parts": [
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f34r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "aristolochia",
+    "lingua"
+   ],
+   "B": [
+    "cyperus",
+    "caprifolium"
+   ]
+  },
+  "parts": [
+   [
+    "origanum",
+    false
+   ],
+   [
+    "gentiana",
+    false
+   ],
+   [
+    "dictamnus",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f34v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "liquiritia"
+   ],
+   "B": [
+    "trifolium",
+    "rubia"
+   ]
+  },
+  "parts": [
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "caprifolium",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f35r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "lentiscus",
+    "ungula"
+   ],
+   "B": [
+    "cyclamen",
+    "ungula"
+   ]
+  },
+  "parts": [
+   [
+    "branca",
+    false
+   ],
+   [
+    "squilla",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f35v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "calendula",
+    "ungula"
+   ],
+   "B": [
+    "lactuca",
+    "uitis"
+   ]
+  },
+  "parts": [
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "mandragora",
+    false
+   ],
+   [
+    "caprifolium",
+    true
+   ]
+  ]
+ },
+ {
+  "page": "f36r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "bryonia",
+    "aristolochia"
+   ],
+   "B": [
+    "pes",
+    "uitis"
+   ]
+  },
+  "parts": [
+   [
+    "branca",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "aristolochia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f36v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 1.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "pes",
+    "napellus"
+   ],
+   "B": [
+    "pes",
+    "pes"
+   ]
+  },
+  "parts": [
+   [
+    "reubarbarum",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "pes",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f37r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "sigillum",
+    "spica"
+   ],
+   "B": [
+    "alkekengi",
+    "uitis"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "mandragora",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f37v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "pes",
+    "pulmonaria"
+   ],
+   "B": [
+    "trifolium",
+    "gentiana"
+   ]
+  },
+  "parts": [
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "trifolium",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f38r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 1.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "raphanus",
+    "scrophularia"
+   ],
+   "B": [
+    "cauda",
+    "cauda"
+   ]
+  },
+  "parts": [
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "gentiana",
+    false
+   ],
+   [
+    "gentiana",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f38v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "raphanus",
+    "branca"
+   ],
+   "B": [
+    "reubarbarum",
+    "lactuca"
+   ]
+  },
+  "parts": [
+   [
+    "calendula",
+    false
+   ],
+   [
+    "betonica",
+    false
+   ],
+   [
+    "gentiana",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f39r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "pulmonaria",
+    "palma"
+   ],
+   "B": [
+    "pulmonaria",
+    "raphanus"
+   ]
+  },
+  "parts": [
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "saluia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f39v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "betonica",
+    "apios"
+   ],
+   "B": [
+    "dictamnus",
+    "lentiscus"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "saxifraga",
+    false
+   ],
+   [
+    "aristolochia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f3r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "trifolium",
+    "paeonia"
+   ],
+   "B": [
+    "saxifraga",
+    "squilla"
+   ]
+  },
+  "parts": [
+   [
+    "reubarbarum",
+    false
+   ],
+   [
+    "bistorta",
+    false
+   ],
+   [
+    "pes",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f3v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "calendula",
+    "dictamnus"
+   ],
+   "B": [
+    "spica",
+    "ungula"
+   ]
+  },
+  "parts": [
+   [
+    "palma",
+    false
+   ],
+   [
+    "mandragora",
+    false
+   ],
+   [
+    "ruta",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f40r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "spica"
+   ],
+   "B": [
+    "cyclamen",
+    "cauda"
+   ]
+  },
+  "parts": [
+   [
+    "origanum",
+    false
+   ],
+   [
+    "origanum",
+    false
+   ],
+   [
+    "pes",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f40v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "cyclamen",
+    "saxifraga"
+   ],
+   "B": [
+    "squilla",
+    "mandragora"
+   ]
+  },
+  "parts": [
+   [
+    "saluia",
+    false
+   ],
+   [
+    "saxifraga",
+    false
+   ],
+   [
+    "lactuca",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f41r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 1.0
+  },
+  "B": {
+   "hit1": 1.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "liquiritia"
+   ],
+   "B": [
+    "cauda",
+    "cauda"
+   ]
+  },
+  "parts": [
+   [
+    "origanum",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "lingua",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f41v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "calendula",
+    "scrophularia"
+   ],
+   "B": [
+    "ruta",
+    "cyclamen"
+   ]
+  },
+  "parts": [
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "hermodactylus",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f42r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "dictamnus",
+    "sigillum"
+   ],
+   "B": [
+    "saluia",
+    "bryonia"
+   ]
+  },
+  "parts": [
+   [
+    "polypodium",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f42v",
+  "A": {
+   "hit1": 1.0,
+   "hit5": 1.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "pulmonaria",
+    "pulmonaria"
+   ],
+   "B": [
+    "gentiana",
+    "raphanus"
+   ]
+  },
+  "parts": [
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "pes",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f43r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "sigillum",
+    "ruta"
+   ],
+   "B": [
+    "reubarbarum",
+    "chamaepitys"
+   ]
+  },
+  "parts": [
+   [
+    "sigillum",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "ruta",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f43v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "lactuca"
+   ],
+   "B": [
+    "liquiritia",
+    "bistorta"
+   ]
+  },
+  "parts": [
+   [
+    "betonica",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f44r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "saluia",
+    "bryonia"
+   ],
+   "B": [
+    "squilla",
+    "pes"
+   ]
+  },
+  "parts": [
+   [
+    "ungula",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f44v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "calendula",
+    "ungula"
+   ],
+   "B": [
+    "raphanus",
+    "scolopendria"
+   ]
+  },
+  "parts": [
+   [
+    "palma",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f45r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "lactuca"
+   ],
+   "B": [
+    "palma",
+    "liquiritia"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "lactuca",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f45v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 1.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "apios",
+    "lingua"
+   ],
+   "B": [
+    "sigillum",
+    "sigillum"
+   ]
+  },
+  "parts": [
+   [
+    "hermodactylus",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "paeonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f46r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "lactuca"
+   ],
+   "B": [
+    "sigillum",
+    "aristolochia"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "aristolochia",
+    false
+   ],
+   [
+    "dictamnus",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f46v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "pulmonaria",
+    "pes"
+   ],
+   "B": [
+    "branca",
+    "pes"
+   ]
+  },
+  "parts": [
+   [
+    "uitis",
+    false
+   ],
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "pes",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f47r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "saluia",
+    "branca"
+   ],
+   "B": [
+    "pes",
+    "uitis"
+   ]
+  },
+  "parts": [
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f47v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "reubarbarum",
+    "calendula"
+   ],
+   "B": [
+    "pulmonaria",
+    "lingua"
+   ]
+  },
+  "parts": [
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "betonica",
+    false
+   ],
+   [
+    "consolida",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f48r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "pes",
+    "scrophularia"
+   ],
+   "B": [
+    "lactuca",
+    "tamariscus"
+   ]
+  },
+  "parts": [
+   [
+    "saluia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "pes",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f48v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "trifolium"
+   ],
+   "B": [
+    "lactuca",
+    "hypocistis"
+   ]
+  },
+  "parts": [
+   [
+    "origanum",
+    false
+   ],
+   [
+    "apios",
+    false
+   ],
+   [
+    "chamaepitys",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f49r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "cyperus",
+    "cauda"
+   ],
+   "B": [
+    "cyclamen",
+    "uitis"
+   ]
+  },
+  "parts": [
+   [
+    "raphanus",
+    false
+   ],
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f49v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "lentiscus",
+    "rubia"
+   ],
+   "B": [
+    "alleluia",
+    "uitis"
+   ]
+  },
+  "parts": [
+   [
+    "rubia",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "caprifolium",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f4r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "dictamnus",
+    "liquiritia"
+   ],
+   "B": [
+    "lactuca",
+    "sigillum"
+   ]
+  },
+  "parts": [
+   [
+    "gentiana",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f4v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "lentiscus",
+    "rubia"
+   ],
+   "B": [
+    "spica",
+    "cyperus"
+   ]
+  },
+  "parts": [
+   [
+    "rubia",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "caprifolium",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f50r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "aristolochia",
+    "consolida"
+   ],
+   "B": [
+    "cyclamen",
+    "origanum"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "aristolochia",
+    false
+   ],
+   [
+    "pes",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f50v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "lentiscus",
+    "spica"
+   ],
+   "B": [
+    "cyclamen",
+    "trifolium"
+   ]
+  },
+  "parts": [
+   [
+    "pes",
+    false
+   ],
+   [
+    "trifolium",
+    false
+   ],
+   [
+    "lactuca",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f51r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "lactuca",
+    "mandragora"
+   ],
+   "B": [
+    "trifolium",
+    "reubarbarum"
+   ]
+  },
+  "parts": [
+   [
+    "rubia",
+    false
+   ],
+   [
+    "mandragora",
+    false
+   ],
+   [
+    "lactuca",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f51v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "ruta",
+    "consolida"
+   ],
+   "B": [
+    "sigillum",
+    "uitis"
+   ]
+  },
+  "parts": [
+   [
+    "mandragora",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "consolida",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f52r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "saluia",
+    "apios"
+   ],
+   "B": [
+    "gentiana",
+    "sigillum"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "consolida",
+    false
+   ],
+   [
+    "scrophularia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f52v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "lingua",
+    "caprifolium"
+   ],
+   "B": [
+    "aristolochia",
+    "hermodactylus"
+   ]
+  },
+  "parts": [
+   [
+    "aristolochia",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "caprifolium",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f53r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "apios",
+    "lactuca"
+   ],
+   "B": [
+    "origanum",
+    "rubia"
+   ]
+  },
+  "parts": [
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "lactuca",
+    false
+   ],
+   [
+    "aristolochia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f53v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "origanum",
+    "rubia"
+   ],
+   "B": [
+    "saponaria",
+    "apios"
+   ]
+  },
+  "parts": [
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "saluia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f54r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "apios",
+    "ruta"
+   ],
+   "B": [
+    "polypodium",
+    "agrimonia"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "lingua",
+    false
+   ],
+   [
+    "saxifraga",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f54v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "liquiritia",
+    "ruta"
+   ],
+   "B": [
+    "sigillum",
+    "liquiritia"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "spica",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f55r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "pes",
+    "ungula"
+   ],
+   "B": [
+    "trifolium",
+    "ungula"
+   ]
+  },
+  "parts": [
+   [
+    "pes",
+    false
+   ],
+   [
+    "pes",
+    true
+   ],
+   [
+    "liquiritia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f55v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "bryonia",
+    "cauda"
+   ],
+   "B": [
+    "aristolochia",
+    "uitis"
+   ]
+  },
+  "parts": [
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "lingua",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f56r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "liquiritia"
+   ],
+   "B": [
+    "cyclamen",
+    "origanum"
+   ]
+  },
+  "parts": [
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ],
+   [
+    "ruta",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f56v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "caprifolium",
+    "serpentaria"
+   ],
+   "B": [
+    "tamariscus",
+    "spica"
+   ]
+  },
+  "parts": [
+   [
+    "calendula",
+    false
+   ],
+   [
+    "saxifraga",
+    false
+   ],
+   [
+    "saluia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f57r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "consolida",
+    "lingua"
+   ],
+   "B": [
+    "napellus",
+    "hypocistis"
+   ]
+  },
+  "parts": [
+   [
+    "lingua",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "saponaria",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f5r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "cyperus",
+    "bryonia"
+   ],
+   "B": [
+    "pes",
+    "bistorta"
+   ]
+  },
+  "parts": [
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f5v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "lingua"
+   ],
+   "B": [
+    "bryonia",
+    "uitis"
+   ]
+  },
+  "parts": [
+   [
+    "rubia",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "dictamnus",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f65v",
+  "A": {
+   "hit1": 1.0,
+   "hit5": 1.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "caprifolium",
+    "caprifolium"
+   ],
+   "B": [
+    "saponaria",
+    "saxifraga"
+   ]
+  },
+  "parts": [
+   [
+    "branca",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "caprifolium",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f66v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "lentiscus",
+    "cyperus"
+   ],
+   "B": [
+    "reubarbarum",
+    "liquiritia"
+   ]
+  },
+  "parts": [
+   [
+    "alkekengi",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "caprifolium",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f6r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "mandragora",
+    "consolida"
+   ],
+   "B": [
+    "polypodium",
+    "lactuca"
+   ]
+  },
+  "parts": [
+   [
+    "palma",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "lactuca",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f6v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "cyclamen",
+    "apios"
+   ],
+   "B": [
+    "pes",
+    "napellus"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "spica",
+    false
+   ],
+   [
+    "cyclamen",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f7r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "spica",
+    "lactuca"
+   ],
+   "B": [
+    "saxifraga",
+    "napellus"
+   ]
+  },
+  "parts": [
+   [
+    "bistorta",
+    false
+   ],
+   [
+    "alleluia",
+    false
+   ],
+   [
+    "ruta",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f7v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "hermodactylus",
+    "palma"
+   ],
+   "B": [
+    "caprifolium",
+    "sigillum"
+   ]
+  },
+  "parts": [
+   [
+    "pes",
+    false
+   ],
+   [
+    "branca",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f87r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "saponaria",
+    "tamariscus"
+   ],
+   "B": [
+    "bryonia",
+    "branca"
+   ]
+  },
+  "parts": [
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "scrophularia",
+    false
+   ],
+   [
+    "ruta",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f87v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "caprifolium",
+    "saluia"
+   ],
+   "B": [
+    "raphanus",
+    "spica"
+   ]
+  },
+  "parts": [
+   [
+    "caprifolium",
+    false
+   ],
+   [
+    "caprifolium",
+    false
+   ],
+   [
+    "lingua",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f8r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "branca",
+    "ungula"
+   ],
+   "B": [
+    "saluia",
+    "lactuca"
+   ]
+  },
+  "parts": [
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "lingua",
+    false
+   ],
+   [
+    "dictamnus",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f8v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "dictamnus",
+    "sigillum"
+   ],
+   "B": [
+    "dictamnus",
+    "sigillum"
+   ]
+  },
+  "parts": [
+   [
+    "paeonia",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "dictamnus",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f90r1",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "paeonia",
+    "asphodelus"
+   ],
+   "B": [
+    "dictamnus",
+    "lingua"
+   ]
+  },
+  "parts": [
+   [
+    "chamaepitys",
+    false
+   ],
+   [
+    "sigillum",
+    false
+   ],
+   [
+    "pes",
+    true
+   ]
+  ]
+ },
+ {
+  "page": "f90r2",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "rubia"
+   ],
+   "B": [
+    "lactuca",
+    "rubia"
+   ]
+  },
+  "parts": [
+   [
+    "dictamnus",
+    false
+   ],
+   [
+    "rubia",
+    false
+   ],
+   [
+    "dictamnus",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f90v1",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 1.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "lingua",
+    "tamariscus"
+   ],
+   "B": [
+    "liquiritia",
+    "liquiritia"
+   ]
+  },
+  "parts": [
+   [
+    "rubia",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "caprifolium",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f90v2",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "lingua"
+   ],
+   "B": [
+    "mandragora",
+    "cyclamen"
+   ]
+  },
+  "parts": [
+   [
+    "bistorta",
+    false
+   ],
+   [
+    "lactuca",
+    false
+   ],
+   [
+    "dictamnus",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f93r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "saluia",
+    "cauda"
+   ],
+   "B": [
+    "betonica",
+    "cauda"
+   ]
+  },
+  "parts": [
+   [
+    "saluia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f93v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "pes",
+    "lingua"
+   ],
+   "B": [
+    "cyclamen",
+    "hypocistis"
+   ]
+  },
+  "parts": [
+   [
+    "alkekengi",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "pes",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f94r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "alkekengi",
+    "liquiritia"
+   ],
+   "B": [
+    "saluia",
+    "scrophularia"
+   ]
+  },
+  "parts": [
+   [
+    "apios",
+    false
+   ],
+   [
+    "liquiritia",
+    false
+   ],
+   [
+    "ruta",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f96r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "cyclamen",
+    "apios"
+   ],
+   "B": [
+    "cyclamen",
+    "hypocistis"
+   ]
+  },
+  "parts": [
+   [
+    "origanum",
+    false
+   ],
+   [
+    "pes",
+    false
+   ],
+   [
+    "cyclamen",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f96v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 1.0
+  },
+  "top": {
+   "A": [
+    "calendula",
+    "scrophularia"
+   ],
+   "B": [
+    "sigillum",
+    "aristolochia"
+   ]
+  },
+  "parts": [
+   [
+    "pulmonaria",
+    false
+   ],
+   [
+    "uitis",
+    false
+   ],
+   [
+    "caprifolium",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f9r",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "top": {
+   "A": [
+    "calendula",
+    "uitis"
+   ],
+   "B": [
+    "trifolium",
+    "uitis"
+   ]
+  },
+  "parts": [
+   [
+    "dictamnus",
+    false
+   ],
+   [
+    "uitis",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ },
+ {
+  "page": "f9v",
+  "A": {
+   "hit1": 0.0,
+   "hit5": 0.0
+  },
+  "B": {
+   "hit1": 0.0,
+   "hit5": 0.5
+  },
+  "top": {
+   "A": [
+    "saluia",
+    "saponaria"
+   ],
+   "B": [
+    "napellus",
+    "pes"
+   ]
+  },
+  "parts": [
+   [
+    "raphanus",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ],
+   [
+    "bryonia",
+    false
+   ]
+  ]
+ }
+]

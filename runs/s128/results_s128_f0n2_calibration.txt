@@ -1,0 +1,5 @@
+# s128_f0n2_calib.py on Egerton (Ventura TEI), 15 seeds 20261031..20261045, 28 random blocks of 4 consecutive chapters = 112 pages, pseudo-lines of 8, 200 draws per null; no Voynich data
+name 60 N2 pass 15 /15  N1 pass 15 /15 median S 0.339 median q1 0.25 median q2 0.25
+name 90 N2 pass 15 /15  N1 pass 15 /15 median S 0.384 median q1 0.259 median q2 0.259
+rarity 60 N2 pass 1 /15  N1 pass 0 /15 median S 0.098 median q1 0.179 median q2 0.17
+rarity 90 N2 pass 0 /15  N1 pass 0 /15 median S 0.107 median q1 0.188 median q2 0.179

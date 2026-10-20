@@ -1,0 +1,59 @@
+P1 bifolio-aligned null   seed 20261017   run 2026-10-17 19:24:35 Pacific Daylight Time
+Rules are in the docstring of p1_bifolio_null.py. No new band.
+$Q|$B is the current sheet ($F is the folio slot). Not a reading order.
+A first pass keyed on $F. Headers show f1 and f8 share $B=1 and not $F. This file is the $B run.
+
+Part A  conjoint folios, L1 cosine
+------------------------------------------------------------------------
+sanity L1 page cosine  RV n=91 obs=0.4206 (filed 0.4206)  Adj n=157 obs=0.4153 (filed 0.4153)  MATCH
+sanity page-shuffle RV  null=0.3450+/-0.0074 z=+10.27 p=0.0000
+sanity page-shuffle Adj null=0.3501+/-0.0059 z=+11.13 p=0.0000
+sheets: 50   exactly-two folios: 43   singleton: 1   foldout(>2): 6   mixed-stratum pairs dropped: 5   pairs used: 38
+check quire A $B=1 folios (f1 and f8 expected): ['f1', 'f8']
+conjoint page-shuffle   obs=0.5648 null=0.4689+/-0.0122 z=+7.86 p=0.0000  n=38
+conjoint length-preserved obs=0.5648 null=0.5663+/-0.0065 z=-0.22 p=0.6020
+DECISION Part A: DIES
+What would refute SURVIVES: length-preserved p >= 0.001 on these pairs. Checked in this file.
+
+Part B  bifolio-block topic null and sheet cohesion
+------------------------------------------------------------------------
+hand 1 bifolio-block NMI=0.275 null=0.048 p=0.000  centroid=+0.0431 p=0.034  blocks=27 assignments=2925/2925  SURVIVES
+  block labels HHHHHHHHHHHHHHHHHHHHHHHPHPP
+hand 2 bifolio-block NMI=0.333 null=0.131 p=0.012  centroid=+0.1837 p=0.004  blocks=11 assignments=2772/2772  SURVIVES
+  block labels HHHHHBBBBBT
+  cohesion 1/H: gap=+0.0230  chunks=201 bifolios=24
+  cohesion 2/H: gap=+0.0166  chunks=58 bifolios=5
+  cohesion 5/H: gap=+0.0180  chunks=13 bifolios=2
+  cohesion 3/S: gap=+0.0202  chunks=277 bifolios=7
+  cohesion 3/H: gap=+0.0426  chunks=14 bifolios=2
+  cohesion 4/C: gap=+0.0531  chunks=6 bifolios=3
+  cohesion 2/B: gap=+0.0176  chunks=156 bifolios=5
+  cohesion 2/T: gap=+0.0321  chunks=44 bifolios=2
+  cohesion 1/P: gap=+0.0106  chunks=58 bifolios=3
+pooled sheet gap obs=+0.0216 null=+0.0031+/-0.0005 z=+36.08 p=0.0000  NEIGHBOURHOOD
+DECISION Part B topics: SURVIVES    sheet cohesion: NEIGHBOURHOOD
+What would refute SURVIVES: bifolio-block NMI p >= 0.05, or centroid p >= 0.05. Checked above.
+
+Part C  same-page MI against the other page of the sheet
+------------------------------------------------------------------------
+  same_page_far: n_pairs=34791  mi=+0.0179 se=0.0108 n_used=30000
+  same_bifolio_other_folio: n_pairs=34712  mi=+0.0208 se=0.0125 n_used=30000
+  same_section_other_bifolio: n_pairs=34578  mi=+0.0154 se=0.0145 n_used=30000
+DECISION Part C: WEAK
+What would refute PAGE: gap <= se(page)+se(sheet) inside this run. Checked above.
+m0's filed same_page_far is +0.029 on a seven-relation common subsample; this run's
+three-relation subsample is a different draw and is not required to reprint +0.029.
+
+Part D  section S column excess, bifolio cluster bootstrap
+------------------------------------------------------------------------
+section S pages=25  column-specific excess=+1.02 pp  filed +1.02  MATCH
+page-cluster 95% CI [+0.03, +1.98]  P(diff<=0)=0.021  (filed P=0.016)
+bifolio-cluster n=7  95% CI [+0.48, +1.78]  P(diff<=0)=0.000
+DECISION Part D: SURVIVES
+What would refute DIES: a bifolio-cluster interval lying entirely above 0, on a collect
+whose point estimate matches the filed +1.02 pp. Checked above.
+
+DECISION OVERALL: CONTENT (B,D)
+CONTENT would be page or section signal past the sheet. PHYSICAL is sheet similarity.
+Neither is a key, a language, or a reading. What would refute NONE/PHYSICAL as the
+last word on content is a later non-Voynich joint pass of the seven v1 bands.

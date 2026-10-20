@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T03:52:04.1282591Z",
+ "response": "{\n  \"PT\": \"PLANT\",\n  \"P_plants\": \"1\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"2-4\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"ROSETTE\",\n  \"J_shape\": \"NONE\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"0\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"EMPTY\",\n  \"C_animal\": \"-\",\n  \"C_figures\": \"0\",\n  \"C_rings\": \"0-1\",\n  \"C_diagrams\": \"NA\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"0\",\n  \"B_figures\": \"0\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Single plant drawing with linear leaves.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2582886000,
+ "load_duration": 197027000,
+ "prompt_eval_count": 3225,
+ "prompt_eval_duration": 751075000,
+ "eval_count": 199,
+ "eval_duration": 1484037000,
+ "stem": "018_9r"
+}

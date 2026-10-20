@@ -1,0 +1,161 @@
+S35: Phase 3 ledger (prefix moved from s33 at 21:34: s33 taken by a peer's s33_line_scales_interlock.py) and verdict (reads results_s27 / s28 / s10; no new compute)
+run started Sat Oct 17 22:19:41 PDT 2026 (`date`)
+s35_phase3_ledger.py sha256=714af357b825594fea7aa027c32c3bf6260b668206af53b2b29e1cda2fcf2a7b
+read results_s27.txt sha256=29857e698cf10b5af0766cdeae041ee047757fe6d184bdfb4035f598e11ff71b  | run started Sat Oct 17 21:26:34 PDT 2026 (`date`) | s27_k4_bound.py sha256=98203915f0729f8dfacb26ddc7b8d25e2bded1cf06e915883ecf59299151ba7e  prereg stub_match=True
+read results_s28.txt sha256=dd4f3986134ba3ecaf4c35506245f8564b920f7c0393757e8682ce003d0bb5e7  | run started Sat Oct 17 21:42:52 PDT 2026 (`date`) | s28_generator_mechanism.py sha256=c964250dc78bd3ff2c317144e6ae8520ba473a2184f558123584d7f94625b4f4  prereg stub_match=True
+read results_s10.txt sha256=c5fc2f3b720df02091df68e195e094be012fe92eb0d9767f9426f4c2aaa79419  | run started Sat Oct 17 21:58:37 PDT 2026 (`date`) | s10_cipher_mechanism.py sha256=e8c0b14119c9cb6780449daf0f0492161d9267a064df8d879c191e1d654c6830  prereg stub_match=True
+
+=== 1. PREDICTION TABLE (plan 'Pre-committed predictions'; decision column ZL3b, majority of seeds 1-3; RF1b / IT2a beside) ===
+metric   Voynich                      | s10 (L) predicted              ZL3b observed          cell  RF1b       IT2a       | s28 (G) predicted              ZL3b observed          cell  RF1b       IT2a      
+CHARWIN  +0.094                       | positive, missed               positive, reached      HOLD  positive   negative UNSTABLE | negative, missed               negative, missed       HOLD  negative   negative  
+F1       +0.046 [0.036, 0.056]        | reached                        missed                 FAIL  reached UNSTABLE missed     | missed                         reached                FAIL  reached    reached   
+MORAN    0.157 [0.109, 0.170]         | missed, negative               missed, positive       HOLD  missed     missed     | missed, positive but below     missed, positive       HOLD  missed     missed    
+NMI      0.275 (bar 0.206, 1/55 floor) | below bar                      below                  HOLD  below      below      | below bar                      below                  HOLD  below      below     
+(NMI-h1 reported, not counted: 1/55 floor. CHARWIN cell = sign; Moran cell = reached/missed, sign beside; F1 cell = reached/missed.)
+
+values behind the cells (ZL3b, seeds 1-3: value | DELTA [lo, hi] | call):
+  s10_cipher             CHARWIN  s1: +0.08307 Δ-0.01094 [-0.04346,+0.02088] reached  s2: +0.07887 Δ-0.01514 [-0.03723,+0.00929] reached  s3: +0.10737 Δ+0.01336 [-0.02378,+0.05096] reached
+  s10_cipher             F1       s1: +0.01565 Δ-0.03040 [-0.04822,-0.01263] missed  s2: +0.01965 Δ-0.02640 [-0.04017,-0.01105] missed  s3: +0.02594 Δ-0.02011 [-0.03320,-0.00718] missed
+  s10_cipher             MORAN    s1: +0.00044 Δ-0.15681 [-0.17400,-0.13732] missed  s2: +0.01866 Δ-0.13858 [-0.15539,-0.12151] missed  s3: +0.01091 Δ-0.14634 [-0.16577,-0.12753] missed
+  s10_cipher             NMI      s1: 0.02974 Δ-0.24538 [nan,nan] below  s2: 0.03170 Δ-0.24342 [nan,nan] below  s3: 0.07855 Δ-0.19657 [nan,nan] below
+  s28_gen                CHARWIN  s1: -0.03144 Δ-0.12544 [-0.17722,-0.07321] missed  s2: -0.00270 Δ-0.09671 [-0.13049,-0.06000] missed  s3: -0.05169 Δ-0.14570 [-0.18341,-0.10742] missed
+  s28_gen                F1       s1: +0.04037 Δ-0.00568 [-0.01864,+0.00825] reached  s2: +0.03635 Δ-0.00971 [-0.02010,+0.00021] reached  s3: +0.02656 Δ-0.01949 [-0.03568,-0.00472] missed
+  s28_gen                MORAN    s1: +0.05634 Δ-0.10090 [-0.12020,-0.08222] missed  s2: +0.05887 Δ-0.09837 [-0.11671,-0.07882] missed  s3: +0.05733 Δ-0.09991 [-0.11862,-0.08015] missed
+  s28_gen                NMI      s1: 0.00061 Δ-0.27451 [nan,nan] below  s2: 0.01535 Δ-0.25977 [nan,nan] below  s3: 0.03666 Δ-0.23846 [nan,nan] below
+  s27_k4                 CHARWIN  s1: -0.57687 Δ-0.67088 [-0.73085,-0.61680] missed  s2: -0.57920 Δ-0.67321 [-0.74224,-0.61022] missed  s3: -0.60971 Δ-0.70372 [-0.76296,-0.64289] missed
+  s27_k4                 F1       s1: +0.04027 Δ-0.00578 [-0.02414,+0.01084] reached  s2: +0.03317 Δ-0.01289 [-0.02559,+0.00209] reached  s3: +0.03787 Δ-0.00818 [-0.02364,+0.00726] reached
+  s27_k4                 MORAN    s1: +0.02293 Δ-0.13432 [-0.15269,-0.11455] missed  s2: +0.02413 Δ-0.13311 [-0.15430,-0.11037] missed  s3: +0.01513 Δ-0.14211 [-0.16049,-0.12299] missed
+  s27_k4                 NMI      s1: 0.27158 Δ-0.00354 [nan,nan] reached  s2: 0.23683 Δ-0.03829 [nan,nan] reached  s3: 0.30451 Δ+0.02939 [nan,nan] reached
+  s27_flow_cipher_layer  CHARWIN  s0: -0.18193 Δ-0.27594 [-0.32583,-0.23167] missed
+  s27_flow_cipher_layer  F1       s0: +0.05066 Δ+0.00461 [-0.01337,+0.02495] reached
+  s27_flow_cipher_layer  MORAN    s0: -0.01631 Δ-0.17355 [-0.19413,-0.15289] missed
+  s27_flow_cipher_layer  NMI      s0: 0.01623 Δ-0.25889 [nan,nan] below
+
+=== 2. VERDICT (plan rule, verbatim in the docstring) ===
+s10 (L): 2/3 hold (fails: F1); file FAMILY line: ('L', 2)
+s28 (G): 2/3 hold (fails: F1); file FAMILY line: ('G', 2)
+VERDICT: tie at this design
+Phase 4 trigger (plan: 's33 verdict = registered lean toward L', ledger now s35): NOT MET; Tier 2 not available from this pair (research §4); stop rule (PLAN 20:02): the pair is scored once, no re-tuning.
+three-file robustness (v2 §2): UNSTABLE cells: s10 IT2a CHARWIN, s10 RF1b F1
+
+--- rule provenance (red-team addition relayed by the coordinator during the s10 run; the verdict rule itself is unchanged) ---
+rule used in this verdict                                  | triggering result / document
+coupling (cross_excess_eva, x_edge_mi_word) no family weight; B row only | results_s20.txt (PREREG-v2.1 item 5); s2 Part 2B, s30 Part 1B (handed tables regenerate coupling)
+m_final_enrich no weight for Currier-A rows                | results_n6_ab_split.txt line 17 (PREREG-v2.1 item 4); s30 stratification record
+CHARWIN / F1 / Moran I as the judged unbanded targets      | results_n5.txt (+0.094), results_n6.txt (F1 reopened), results_s21.txt (Moran); s31 pilot H2 (PREREG-v2.1 item 7)
+DELTA = entrant - Voynich with page bootstrap, reached/missed by interval | workflow/phases/phase-3.md 'Pre-committed predictions' (coordinator addendum 20:58, research/phase-3.md §4)
+NMI-h1 reported, not counted (1/55 floor)                  | results_n6.txt line 18; PREREG-v2.1 items 6.3 and 7.7
+jsd_first_fg / p_init_enrich fixed by the pools, no weight | phase-3.md decision 4; research/phase-3.md §6 hazard 5 (s31 pools)
+board metrics judged on the 41 held-out pages              | results_s32.txt (A1 holds at >= 500 lines; verse separable at 41 pages); phase-3.md 'What changed' 2
+one BH family per round, power line per negative           | PREREG-v2.1 item 6 (results_s23.txt blocks (c), (d))
+
+--- design provenance (red-team addition; read before the verdict) ---
+* The M5 edge pools (s31.build_m5_edge_pools) and the R_la_syll rank map (s31.build_latin_syllable_edge_table) were built
+  from the FULL page set of each transliteration, including the 41 held-out pages (s28_generator_mechanism.py construction
+  line, s10_cipher_mechanism.py construction line). The board rows on the 41 pages are therefore 'held-out for scoring,
+  not for pool construction'.
+* Both generators descend from the s31 pilot (results_s31_null_glyph_charwin.txt, one seed, full book): s28 reuses
+  gen_s31_generator_m5_direct verbatim; s10 keeps s31's line-edge draws, flow weight and reduplication rate.
+* The M2 mid-line fix (train on ws[1:-1]) was chosen after the pilot missed m_final_enrich (TEAM-HANDOFF line 70) and
+  pre-committed in workflow/phases/phase-3.md (decision 6) before this run; it was not chosen on this round's results.
+* Honest label for the round: 'mechanisms fixed after pilots, scored once', not 'scored once on untouched material'.
+* The three judged predictions (CHARWIN, F1, Moran I) are whole-book statistics with their own nulls (m3 page split,
+  quire split with within-line-shuffle correction, 999-draw line shuffle) and are unaffected by the 41-page split.
+
+=== 3. P-VALUE LEDGER  --  Phase 3 family = every p-value results_s27/s28/s10 print; Benjamini-Hochberg q = 0.05 ===
+Seed replicates enter as one p (median over seeds per entrant x T x test); p <= its floor is 'floor, not ranked' and excluded from m.
+m = 30 ranked p-values (q = 0.05); 18 floor-bound entries listed unranked
+rank    raw_p  BH_cutoff pass   floor      test  [source]
+   1   0.0020     0.0017 fail   0.0010     s27_k4 IT2a moran_line_shuffle (median of seeds 1,2,3)  [results_s27.txt]
+   2   0.0020     0.0033 PASS   0.0010     s27_k4null RF1b moran_line_shuffle (median of seeds 1)  [results_s27.txt]
+   3   0.0060     0.0050 fail   0.0010     s27_k4 ZL3b moran_line_shuffle (median of seeds 1,2,3)  [results_s27.txt]
+   4   0.0072     0.0067 fail   0.0003     s28_gen IT2a nmi_h1_bifolio (median of seeds 1,2,3)  [results_s28.txt]
+   5   0.0085     0.0083 fail   0.0003     s10_cipher ZL3b nmi_h1_bifolio (median of seeds 1,2,3)  [results_s10.txt]
+   6   0.0232     0.0100 fail   0.0003     s28_gen RF1b nmi_h1_bifolio (median of seeds 1,2,3)  [results_s28.txt]
+   7   0.0470     0.0117 fail   0.0010     s27_k4 RF1b moran_line_shuffle (median of seeds 1,2,3)  [results_s27.txt]
+   8   0.0545     0.0133 fail   0.0182     s10_cipher ZL3b nmi_h1_quire_block (median of seeds 1,2,3)  [results_s10.txt]
+   9   0.0800     0.0150 fail   0.0010     s28_gen ZL3b moran_line_shuffle (median of seeds 1,2,3)  [results_s28.txt]
+  10   0.1091     0.0167 fail   0.0182     s28_gen RF1b nmi_h1_quire_block (median of seeds 1,2,3)  [results_s28.txt]
+  11   0.1340     0.0183 fail   0.0010     s10_cipher ZL3b moran_line_shuffle (median of seeds 1,2,3)  [results_s10.txt]
+  12   0.1641     0.0200 fail   0.0003     s10_cipher RF1b nmi_h1_bifolio (median of seeds 1,2,3)  [results_s10.txt]
+  13   0.1720     0.0217 fail   0.0010     s28_gen IT2a moran_line_shuffle (median of seeds 1,2,3)  [results_s28.txt]
+  14   0.1740     0.0233 fail   0.0010     s28_gen RF1b moran_line_shuffle (median of seeds 1,2,3)  [results_s28.txt]
+  15   0.2000     0.0250 fail   0.0182     s10_cipher RF1b nmi_h1_quire_block (median of seeds 1,2,3)  [results_s10.txt]
+  16   0.2182     0.0267 fail   0.0182     s10_cipher IT2a nmi_h1_quire_block (median of seeds 1,2,3)  [results_s10.txt]
+  17   0.2516     0.0283 fail   0.0003     s10_cipher IT2a nmi_h1_bifolio (median of seeds 1,2,3)  [results_s10.txt]
+  18   0.2544     0.0300 fail   0.0003     s27_k4null IT2a nmi_h1_bifolio (median of seeds 1)  [results_s27.txt]
+  19   0.2727     0.0317 fail   0.0182     s27_k4null IT2a nmi_h1_quire_block (median of seeds 1)  [results_s27.txt]
+  20   0.2906     0.0333 fail   0.0003     s28_gen ZL3b nmi_h1_bifolio (median of seeds 1,2,3)  [results_s28.txt]
+  21   0.3091     0.0350 fail   0.0182     s28_gen ZL3b nmi_h1_quire_block (median of seeds 1,2,3)  [results_s28.txt]
+  22   0.3320     0.0367 fail   0.0010     s10_cipher RF1b moran_line_shuffle (median of seeds 1,2,3)  [results_s10.txt]
+  23   0.5000     0.0383 fail   0.0417     s27_flow_cipher_layer ZL3b nmi_h1_bifolio (median of seeds 0)  [results_s27.txt]
+  24   0.5556     0.0400 fail   0.1111     s27_flow_cipher_layer ZL3b nmi_h1_quire_block (median of seeds 0)  [results_s27.txt]
+  25   0.5560     0.0417 fail   0.0010     s10_cipher IT2a moran_line_shuffle (median of seeds 1,2,3)  [results_s10.txt]
+  26   0.6516     0.0433 fail   0.0003     s27_k4null ZL3b nmi_h1_bifolio (median of seeds 1)  [results_s27.txt]
+  27   0.6909     0.0450 fail   0.0182     s27_k4null RF1b nmi_h1_quire_block (median of seeds 1)  [results_s27.txt]
+  28   0.7273     0.0467 fail   0.0182     s27_k4null ZL3b nmi_h1_quire_block (median of seeds 1)  [results_s27.txt]
+  29   0.7559     0.0483 fail   0.0003     s27_k4null RF1b nmi_h1_bifolio (median of seeds 1)  [results_s27.txt]
+  30   0.9890     0.0500 fail   0.0010     s27_flow_cipher_layer ZL3b moran_line_shuffle (median of seeds 0)  [results_s27.txt]
+BH survivors at q=0.05: s27_k4 IT2a moran_line_shuffle (median of seeds 1,2,3)  [results_s27.txt], s27_k4null RF1b moran_line_shuffle (median of seeds 1)  [results_s27.txt]
+   -    0.0010      floor n/a    0.0010     voynich IT2a moran_line_shuffle (median of seeds 0)  [results_s10.txt]  'floor, not ranked'
+   -    0.0010      floor n/a    0.0010     voynich RF1b moran_line_shuffle (median of seeds 0)  [results_s10.txt]  'floor, not ranked'
+   -    0.0010      floor n/a    0.0010     voynich ZL3b moran_line_shuffle (median of seeds 0)  [results_s10.txt]  'floor, not ranked'
+   -    0.0003      floor n/a    0.0003     s27_k4 IT2a nmi_h1_bifolio (median of seeds 1,2,3)  [results_s27.txt]  'floor, not ranked'
+   -    0.0182      floor n/a    0.0182     s27_k4 IT2a nmi_h1_quire_block (median of seeds 1,2,3)  [results_s27.txt]  'floor, not ranked'
+   -    0.0003      floor n/a    0.0003     s27_k4 RF1b nmi_h1_bifolio (median of seeds 1,2,3)  [results_s27.txt]  'floor, not ranked'
+   -    0.0182      floor n/a    0.0182     s27_k4 RF1b nmi_h1_quire_block (median of seeds 1,2,3)  [results_s27.txt]  'floor, not ranked'
+   -    0.0003      floor n/a    0.0003     s27_k4 ZL3b nmi_h1_bifolio (median of seeds 1,2,3)  [results_s27.txt]  'floor, not ranked'
+   -    0.0182      floor n/a    0.0182     s27_k4 ZL3b nmi_h1_quire_block (median of seeds 1,2,3)  [results_s27.txt]  'floor, not ranked'
+   -    0.0010      floor n/a    0.0010     s27_k4null IT2a moran_line_shuffle (median of seeds 1)  [results_s27.txt]  'floor, not ranked'
+   -    0.0010      floor n/a    0.0010     s27_k4null ZL3b moran_line_shuffle (median of seeds 1)  [results_s27.txt]  'floor, not ranked'
+   -    0.0010      floor n/a    0.0010     voynich IT2a moran_line_shuffle (median of seeds 0)  [results_s27.txt]  'floor, not ranked'
+   -    0.0010      floor n/a    0.0010     voynich RF1b moran_line_shuffle (median of seeds 0)  [results_s27.txt]  'floor, not ranked'
+   -    0.0010      floor n/a    0.0010     voynich ZL3b moran_line_shuffle (median of seeds 0)  [results_s27.txt]  'floor, not ranked'
+   -    0.0182      floor n/a    0.0182     s28_gen IT2a nmi_h1_quire_block (median of seeds 1,2,3)  [results_s28.txt]  'floor, not ranked'
+   -    0.0010      floor n/a    0.0010     voynich IT2a moran_line_shuffle (median of seeds 0)  [results_s28.txt]  'floor, not ranked'
+   -    0.0010      floor n/a    0.0010     voynich RF1b moran_line_shuffle (median of seeds 0)  [results_s28.txt]  'floor, not ranked'
+   -    0.0010      floor n/a    0.0010     voynich ZL3b moran_line_shuffle (median of seeds 0)  [results_s28.txt]  'floor, not ranked'
+
+=== 4. POWER LINES (v2.1 item 6.1): one per negative prediction cell (observed 'missed') and per cell whose DELTA interval includes zero ===
+TEST    : s10 (s10_cipher) ZL3b CHARWIN: DELTA = entrant - Voynich, page bootstrap B=1000, seeds 1-3
+FILED   : DELTA per seed -0.0109 [-0.0435, +0.0209] reached, -0.0151 [-0.0372, +0.0093] reached, +0.0134 [-0.0238, +0.0510] reached; majority reached with interval including zero (no detected difference)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05) = 2.8 x median bootstrap SE 0.0163 = 0.0456; median observed |DELTA| 0.0134
+STATUS  : UNDERPOWERED for a difference of the observed size
+
+TEST    : s10 (s10_cipher) ZL3b F1: DELTA = entrant - Voynich, page bootstrap B=1000, seeds 1-3
+FILED   : DELTA per seed -0.0304 [-0.0482, -0.0126] missed, -0.0264 [-0.0402, -0.0111] missed, -0.0201 [-0.0332, -0.0072] missed; majority missed (negative: entrant does not reproduce Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05) = 2.8 x median bootstrap SE 0.0075 = 0.0209; median observed |DELTA| 0.0264
+STATUS  : POWERED (the observed shortfall exceeds the minimum detectable difference)
+
+TEST    : s10 (s10_cipher) ZL3b MORAN: DELTA = entrant - Voynich, page bootstrap B=1000, seeds 1-3
+FILED   : DELTA per seed -0.1568 [-0.1740, -0.1373] missed, -0.1386 [-0.1554, -0.1215] missed, -0.1463 [-0.1658, -0.1275] missed; majority missed (negative: entrant does not reproduce Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05) = 2.8 x median bootstrap SE 0.0091 = 0.0254; median observed |DELTA| 0.1463
+STATUS  : POWERED (the observed shortfall exceeds the minimum detectable difference)
+
+TEST    : s28 (s28_gen) ZL3b CHARWIN: DELTA = entrant - Voynich, page bootstrap B=1000, seeds 1-3
+FILED   : DELTA per seed -0.1254 [-0.1772, -0.0732] missed, -0.0967 [-0.1305, -0.0600] missed, -0.1457 [-0.1834, -0.1074] missed; majority missed (negative: entrant does not reproduce Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05) = 2.8 x median bootstrap SE 0.0201 = 0.0564; median observed |DELTA| 0.1254
+STATUS  : POWERED (the observed shortfall exceeds the minimum detectable difference)
+
+TEST    : s28 (s28_gen) ZL3b F1: DELTA = entrant - Voynich, page bootstrap B=1000, seeds 1-3
+FILED   : DELTA per seed -0.0057 [-0.0186, +0.0083] reached, -0.0097 [-0.0201, +0.0002] reached, -0.0195 [-0.0357, -0.0047] missed; majority reached with interval including zero (no detected difference)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05) = 2.8 x median bootstrap SE 0.0067 = 0.0188; median observed |DELTA| 0.0097
+STATUS  : UNDERPOWERED for a difference of the observed size
+
+TEST    : s28 (s28_gen) ZL3b MORAN: DELTA = entrant - Voynich, page bootstrap B=1000, seeds 1-3
+FILED   : DELTA per seed -0.1009 [-0.1202, -0.0822] missed, -0.0984 [-0.1167, -0.0788] missed, -0.0999 [-0.1186, -0.0801] missed; majority missed (negative: entrant does not reproduce Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05) = 2.8 x median bootstrap SE 0.0098 = 0.0274; median observed |DELTA| 0.0999
+STATUS  : POWERED (the observed shortfall exceeds the minimum detectable difference)
+
+=== 5. STUB CHECKS (sha256sum -c) ===
+sha256sum -c s27_k4_bound.prereg.sha256: s27_k4_bound.py: OK
+sha256sum -c s28_generator_mechanism.prereg.sha256: s28_generator_mechanism.py: OK | s27_k4_bound.py: OK
+sha256sum -c s10_cipher_mechanism.prereg.sha256: s10_cipher_mechanism.py: OK | s27_k4_bound.py: OK
+sha256sum -c s35_phase3_ledger.prereg.sha256: s35_phase3_ledger.py: OK
+all stubs verify: True
+
+=== rows for workflow/CONSTRAINTS-MAP.md (to be added by the coordinator; this script edits nothing else) ===
+| s10 cipher mechanism (L) | CHARWIN positive, missed -> HOLD; F1 reached -> FAIL; MORAN missed, negative -> HOLD | NMI-h1 below (not counted) | results_s10.txt, results_s35.txt | verdict: tie at this design |
+| s28 generation mechanism (G) | CHARWIN negative, missed -> HOLD; F1 missed -> FAIL; MORAN missed, positive but below -> HOLD | NMI-h1 below (not counted) | results_s28.txt, results_s35.txt | verdict: tie at this design |
+
+elapsed 0.1s; run ended Sat Oct 17 22:19:41 PDT 2026 (`date`)

@@ -1,0 +1,13 @@
+dest	sha256	urls
+data/ZL3b-n.txt	bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc	https://www.voynich.nu/data/ZL3b-n.txt
+data/external/voynich-nu-ivtff/000_README.txt	cd1e418804ec55607450da78f3d52d8d76d2cff5acb10ea3af5e1f7253a07a4a	https://www.voynich.nu/data/000_README.txt https://www.voynich.nu/data/beta/000_README.txt
+data/external/voynich-nu-ivtff/CD2a-n.txt	edc18e6de699c50d575925d4f469685ccbbe22c9755b9b8a3b002f83253cbde5	https://www.voynich.nu/data/CD2a-n.txt
+data/external/voynich-nu-ivtff/FG2a-n.txt	a1460a05ff610a406e62b4095a8f8e88c04653c1ef4aa5ad6428ddb1ac01fe06	https://www.voynich.nu/data/FG2a-n.txt
+data/external/voynich-nu-ivtff/GC2a-n.txt	b09570cb6c993bc2d87134d115e60a978650a8a6495483ddbb1f6005a586096f	https://www.voynich.nu/data/GC2a-n.txt
+data/external/voynich-nu-ivtff/IT2a-n.txt	7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5	https://www.voynich.nu/data/IT2a-n.txt
+data/external/voynich-nu-ivtff/ivtff.xlsx	4abb051eee0e3550a451597a35f1b24329d128d2415a937ad49db1ce81080e84	https://www.voynich.nu/data/ivtff.xlsx
+data/external/voynich-nu-ivtff/LSI_ivtff_0d.txt	3f3f2af18cde10efe75c582f49b07b651c3397022fcbfa5854fecc424c121afa	https://www.voynich.nu/data/beta/LSI_ivtff_0d.txt
+data/external/voynich-nu-ivtff/RF1b-e.txt	e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782	https://www.voynich.nu/data/RF1b-e.txt
+data/external/voynich-nu-ivtff/RF1b-er.txt	eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2	https://www.voynich.nu/data/RF1b-er.txt
+data/external/voynich-nu-ivtff/voyn_101.txt	f278a451d873c520f7ab509c4af12152698a1d3efd2353924e177a565c17ba7e	https://www.voynich.nu/data/voyn_101.txt
+data/external/voynich-nu-ivtff/VT0e-n.txt	e13ba5e073cae54722bc095db8eb9a1aa9c7105f45a70f66a0aad236077f2426	https://www.voynich.nu/data/VT0e-n.txt

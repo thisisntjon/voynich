@@ -1,0 +1,30 @@
+=== S29: Q1 LABEL GENERATOR CONTROLS & PLANTED-CRIB POWER CURVE ===
+[GATE] ZL3b MS: 1164 tokens, 837 types, 915 repeat pairs
+  Test A: obs=0.463 vs free=0.222 (z=+13.9, p=0.005) | vs within-illus=0.362 (z=+5.2, p=0.005)
+  Test B: acc=0.166 (seen=0.338, 157/530) vs maj=0.134
+  Test C: obs=0.0005 vs perm=0.0018 (z=-1.4, p=0.970; 12 pages)
+  [GATE PASS] Exact match to results_q1.txt verified.
+
+--- PART 1: MATCHED-SPARSITY GENERATOR CONTROLS (1,164 tokens, ~837 types) ---
+  sec_only [seed 1, p_coin=0.900]: types=566 pairs=3075 | A_obs=0.240 free_z=+1.8 win_z=-0.2 (p=0.577) | B_acc=0.181 (seen=0.221, 299/530) vs maj=0.134
+  sec_only [seed 2, p_coin=0.900]: types=538 pairs=3184 | A_obs=0.250 free_z=+2.6 win_z=+1.2 (p=0.119) | B_acc=0.192 (seen=0.221, 326/530) vs maj=0.134
+  sec_only [seed 3, p_coin=0.900]: types=551 pairs=3053 | A_obs=0.242 free_z=+1.9 win_z=-1.4 (p=0.910) | B_acc=0.192 (seen=0.239, 297/530) vs maj=0.134
+  >> G_sec_only (seeded by illus only, unit-blind) MEAN: types=551.7 | A_obs=0.244 free_z=+2.13 within-illus_z=-0.12 | B_acc=0.189 (seen=0.227)
+
+  unit_cond [seed 1, p_coin=0.900]: types=560 pairs=3386 | A_obs=0.260 free_z=+3.8 win_z=+2.2 (p=0.025) | B_acc=0.211 (seen=0.263, 300/530) vs maj=0.134
+  unit_cond [seed 2, p_coin=0.900]: types=547 pairs=3294 | A_obs=0.251 free_z=+2.6 win_z=+1.9 (p=0.040) | B_acc=0.189 (seen=0.230, 318/530) vs maj=0.134
+  unit_cond [seed 3, p_coin=0.900]: types=563 pairs=3057 | A_obs=0.257 free_z=+3.2 win_z=+1.9 (p=0.045) | B_acc=0.189 (seen=0.237, 312/530) vs maj=0.134
+  >> G_unit_cond (seeded by IVTFF unit class) MEAN: types=556.7 | A_obs=0.256 free_z=+3.23 within-illus_z=+2.02 | B_acc=0.196 (seen=0.243)
+
+PART 1 VERDICT: PARTIAL / OTHER
+
+--- PART 2: Q1 TEST C ZODIAC POSITIONAL POWER CURVE & CORE-STEM RECURRENCE ---
+  Real ZL3b Lz skeleton: 12 pages, 344 tokens, 279 types (81.1% unique), 30 angular positions
+  Planted k1_low_noise   (k=1, p_aff=0.45): unique=51.7% | Exact-token power=1.00 (mean z=+132.83) | Core-stem power=1.00 (mean z=+241.84)
+  Planted k2_label_avg   (k=2, p_aff=0.58): unique=72.2% | Exact-token power=1.00 (mean z=+71.73) | Core-stem power=1.00 (mean z=+168.80)
+  Planted k4_lz_matched  (k=4, p_aff=0.66): unique=86.2% | Exact-token power=1.00 (mean z=+42.84) | Core-stem power=1.00 (mean z=+119.90)
+  Planted k6_high_noise  (k=6, p_aff=0.75): unique=93.6% | Exact-token power=1.00 (mean z=+26.61) | Core-stem power=1.00 (mean z=+98.24)
+
+  Real ZL3b Lz Affix-Stripped Core Stems (201 stem types in 344 tokens = 58.4% unique):
+    obs=0.0081 vs permuted=0.0082 (z=-0.00, p=0.488)
+PART 2 VERDICT: Exact power=1.00, Stem power=1.00, MS stem z=-0.00 (p=0.488)

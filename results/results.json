@@ -1,0 +1,1497 @@
+{
+  "source": "ZL IVTFF EVA transliteration (data/ZL3b-n.txt), paragraph units (P*)",
+  "seed": 20261017,
+  "profiles": {
+    "voynich_para": {
+      "label": "Voynich paragraphs",
+      "tokens": 34857,
+      "types": 7025,
+      "ttr": 0.2015,
+      "hapax_rate": 0.6803,
+      "mean_word_len": 4.99,
+      "alphabet_size": 25,
+      "char_H0_bits": 3.8655,
+      "char_H1_cond_bits": 2.3208,
+      "char_IC": 0.0766,
+      "word_IC": 0.00344,
+      "word_H0_bits": 10.2161,
+      "word_H1_cond_bits": 4.4304,
+      "zipf_slope": -0.9388,
+      "zipf_r2": 0.9704,
+      "top_words": [
+        [
+          "daiin",
+          816
+        ],
+        [
+          "ol",
+          531
+        ],
+        [
+          "chedy",
+          494
+        ],
+        [
+          "aiin",
+          459
+        ],
+        [
+          "shedy",
+          424
+        ],
+        [
+          "chol",
+          378
+        ],
+        [
+          "or",
+          365
+        ],
+        [
+          "chey",
+          337
+        ],
+        [
+          "ar",
+          330
+        ],
+        [
+          "s",
+          310
+        ],
+        [
+          "qokeedy",
+          307
+        ],
+        [
+          "qokeey",
+          303
+        ],
+        [
+          "dar",
+          286
+        ],
+        [
+          "qokain",
+          279
+        ],
+        [
+          "qokedy",
+          276
+        ]
+      ],
+      "top_chars": [
+        [
+          "o",
+          22337
+        ],
+        [
+          "e",
+          18098
+        ],
+        [
+          "h",
+          16608
+        ],
+        [
+          "y",
+          16106
+        ],
+        [
+          "a",
+          12854
+        ],
+        [
+          "c",
+          12260
+        ],
+        [
+          "d",
+          11861
+        ],
+        [
+          "i",
+          11034
+        ],
+        [
+          "k",
+          10054
+        ],
+        [
+          "l",
+          9477
+        ],
+        [
+          "r",
+          6543
+        ],
+        [
+          "s",
+          6509
+        ],
+        [
+          "t",
+          6022
+        ],
+        [
+          "n",
+          5800
+        ],
+        [
+          "q",
+          5342
+        ],
+        [
+          "p",
+          1491
+        ],
+        [
+          "m",
+          934
+        ],
+        [
+          "f",
+          419
+        ],
+        [
+          "g",
+          121
+        ],
+        [
+          "x",
+          21
+        ],
+        [
+          "b",
+          15
+        ],
+        [
+          "j",
+          10
+        ],
+        [
+          "u",
+          7
+        ],
+        [
+          "z",
+          4
+        ],
+        [
+          "v",
+          1
+        ]
+      ],
+      "wordlen_dist": {
+        "1": 1109,
+        "2": 2210,
+        "3": 3223,
+        "4": 6283,
+        "5": 8738,
+        "6": 6825,
+        "7": 4027,
+        "8": 1595,
+        "9": 584,
+        "10": 182,
+        "11": 52,
+        "12": 18,
+        "13": 9,
+        "14": 2
+      }
+    },
+    "english_control": {
+      "label": "English workspace docs",
+      "tokens": 1174,
+      "types": 424,
+      "ttr": 0.3612,
+      "hapax_rate": 0.5142,
+      "mean_word_len": 5.513,
+      "alphabet_size": 26,
+      "char_H0_bits": 4.2165,
+      "char_H1_cond_bits": 3.52,
+      "char_IC": 0.0628,
+      "word_IC": 0.00662,
+      "word_H0_bits": 7.9547,
+      "word_H1_cond_bits": 1.6082,
+      "zipf_slope": -0.7774,
+      "zipf_r2": 0.9516,
+      "top_words": [
+        [
+          "databricks",
+          40
+        ],
+        [
+          "md",
+          33
+        ],
+        [
+          "the",
+          29
+        ],
+        [
+          "parlay",
+          28
+        ],
+        [
+          "points",
+          25
+        ],
+        [
+          "beta",
+          19
+        ],
+        [
+          "project",
+          17
+        ],
+        [
+          "consumpt",
+          17
+        ],
+        [
+          "proto",
+          14
+        ],
+        [
+          "claude",
+          13
+        ],
+        [
+          "plan",
+          13
+        ],
+        [
+          "app",
+          13
+        ],
+        [
+          "root",
+          12
+        ],
+        [
+          "to",
+          12
+        ],
+        [
+          "workspace",
+          11
+        ]
+      ],
+      "top_chars": [
+        [
+          "e",
+          672
+        ],
+        [
+          "t",
+          589
+        ],
+        [
+          "a",
+          549
+        ],
+        [
+          "o",
+          526
+        ],
+        [
+          "s",
+          467
+        ],
+        [
+          "r",
+          437
+        ],
+        [
+          "n",
+          429
+        ],
+        [
+          "i",
+          419
+        ],
+        [
+          "p",
+          328
+        ],
+        [
+          "c",
+          301
+        ],
+        [
+          "l",
+          289
+        ],
+        [
+          "d",
+          262
+        ],
+        [
+          "m",
+          186
+        ],
+        [
+          "h",
+          143
+        ],
+        [
+          "u",
+          141
+        ],
+        [
+          "g",
+          120
+        ],
+        [
+          "b",
+          112
+        ],
+        [
+          "y",
+          111
+        ],
+        [
+          "k",
+          94
+        ],
+        [
+          "f",
+          82
+        ],
+        [
+          "w",
+          70
+        ],
+        [
+          "v",
+          61
+        ],
+        [
+          "j",
+          37
+        ],
+        [
+          "x",
+          31
+        ],
+        [
+          "z",
+          10
+        ]
+      ],
+      "wordlen_dist": {
+        "2": 119,
+        "3": 182,
+        "4": 188,
+        "5": 129,
+        "6": 191,
+        "7": 95,
+        "8": 120,
+        "9": 45,
+        "10": 70,
+        "11": 18,
+        "12": 9,
+        "13": 4,
+        "14": 3,
+        "15": 1
+      }
+    },
+    "english_substitution_cipher": {
+      "label": "English, monoalphabetic cipher",
+      "tokens": 1174,
+      "types": 424,
+      "ttr": 0.3612,
+      "hapax_rate": 0.5142,
+      "mean_word_len": 5.513,
+      "alphabet_size": 26,
+      "char_H0_bits": 4.2165,
+      "char_H1_cond_bits": 3.52,
+      "char_IC": 0.0628,
+      "word_IC": 0.00662,
+      "word_H0_bits": 7.9547,
+      "word_H1_cond_bits": 1.6082,
+      "zipf_slope": -0.7774,
+      "zipf_r2": 0.9516,
+      "top_words": [
+        [
+          "mypyusbegq",
+          40
+        ],
+        [
+          "hm",
+          33
+        ],
+        [
+          "pnt",
+          29
+        ],
+        [
+          "kyszya",
+          28
+        ],
+        [
+          "kjbcpq",
+          25
+        ],
+        [
+          "utpy",
+          19
+        ],
+        [
+          "ksjltep",
+          17
+        ],
+        [
+          "ejcqdhkp",
+          17
+        ],
+        [
+          "ksjpj",
+          14
+        ],
+        [
+          "ezydmt",
+          13
+        ],
+        [
+          "kzyc",
+          13
+        ],
+        [
+          "ykk",
+          13
+        ],
+        [
+          "sjjp",
+          12
+        ],
+        [
+          "pj",
+          12
+        ],
+        [
+          "fjsgqkyet",
+          11
+        ]
+      ],
+      "top_chars": [
+        [
+          "t",
+          672
+        ],
+        [
+          "p",
+          589
+        ],
+        [
+          "y",
+          549
+        ],
+        [
+          "j",
+          526
+        ],
+        [
+          "q",
+          467
+        ],
+        [
+          "s",
+          437
+        ],
+        [
+          "c",
+          429
+        ],
+        [
+          "b",
+          419
+        ],
+        [
+          "k",
+          328
+        ],
+        [
+          "e",
+          301
+        ],
+        [
+          "z",
+          289
+        ],
+        [
+          "m",
+          262
+        ],
+        [
+          "h",
+          186
+        ],
+        [
+          "n",
+          143
+        ],
+        [
+          "d",
+          141
+        ],
+        [
+          "w",
+          120
+        ],
+        [
+          "u",
+          112
+        ],
+        [
+          "a",
+          111
+        ],
+        [
+          "g",
+          94
+        ],
+        [
+          "x",
+          82
+        ],
+        [
+          "f",
+          70
+        ],
+        [
+          "v",
+          61
+        ],
+        [
+          "l",
+          37
+        ],
+        [
+          "o",
+          31
+        ],
+        [
+          "i",
+          10
+        ]
+      ],
+      "wordlen_dist": {
+        "2": 119,
+        "3": 182,
+        "4": 188,
+        "5": 129,
+        "6": 191,
+        "7": 95,
+        "8": 120,
+        "9": 45,
+        "10": 70,
+        "11": 18,
+        "12": 9,
+        "13": 4,
+        "14": 3,
+        "15": 1
+      }
+    },
+    "voynich_shuffled_words": {
+      "label": "Voynich, word order shuffled",
+      "tokens": 34857,
+      "types": 7025,
+      "ttr": 0.2015,
+      "hapax_rate": 0.6803,
+      "mean_word_len": 4.99,
+      "alphabet_size": 25,
+      "char_H0_bits": 3.8655,
+      "char_H1_cond_bits": 2.3774,
+      "char_IC": 0.0766,
+      "word_IC": 0.00344,
+      "word_H0_bits": 10.2161,
+      "word_H1_cond_bits": 4.6058,
+      "zipf_slope": -0.9388,
+      "zipf_r2": 0.9704,
+      "top_words": [
+        [
+          "daiin",
+          816
+        ],
+        [
+          "ol",
+          531
+        ],
+        [
+          "chedy",
+          494
+        ],
+        [
+          "aiin",
+          459
+        ],
+        [
+          "shedy",
+          424
+        ],
+        [
+          "chol",
+          378
+        ],
+        [
+          "or",
+          365
+        ],
+        [
+          "chey",
+          337
+        ],
+        [
+          "ar",
+          330
+        ],
+        [
+          "s",
+          310
+        ],
+        [
+          "qokeedy",
+          307
+        ],
+        [
+          "qokeey",
+          303
+        ],
+        [
+          "dar",
+          286
+        ],
+        [
+          "qokain",
+          279
+        ],
+        [
+          "qokedy",
+          276
+        ]
+      ],
+      "top_chars": [
+        [
+          "o",
+          22337
+        ],
+        [
+          "e",
+          18098
+        ],
+        [
+          "h",
+          16608
+        ],
+        [
+          "y",
+          16106
+        ],
+        [
+          "a",
+          12854
+        ],
+        [
+          "c",
+          12260
+        ],
+        [
+          "d",
+          11861
+        ],
+        [
+          "i",
+          11034
+        ],
+        [
+          "k",
+          10054
+        ],
+        [
+          "l",
+          9477
+        ],
+        [
+          "r",
+          6543
+        ],
+        [
+          "s",
+          6509
+        ],
+        [
+          "t",
+          6022
+        ],
+        [
+          "n",
+          5800
+        ],
+        [
+          "q",
+          5342
+        ],
+        [
+          "p",
+          1491
+        ],
+        [
+          "m",
+          934
+        ],
+        [
+          "f",
+          419
+        ],
+        [
+          "g",
+          121
+        ],
+        [
+          "x",
+          21
+        ],
+        [
+          "b",
+          15
+        ],
+        [
+          "j",
+          10
+        ],
+        [
+          "u",
+          7
+        ],
+        [
+          "z",
+          4
+        ],
+        [
+          "v",
+          1
+        ]
+      ],
+      "wordlen_dist": {
+        "1": 1109,
+        "2": 2210,
+        "3": 3223,
+        "4": 6283,
+        "5": 8738,
+        "6": 6825,
+        "7": 4027,
+        "8": 1595,
+        "9": 584,
+        "10": 182,
+        "11": 52,
+        "12": 18,
+        "13": 9,
+        "14": 2
+      }
+    },
+    "voynich_markov1": {
+      "label": "Voynich Markov-1 pseudo-words",
+      "tokens": 34857,
+      "types": 15860,
+      "ttr": 0.455,
+      "hapax_rate": 0.775,
+      "mean_word_len": 5.003,
+      "alphabet_size": 24,
+      "char_H0_bits": 3.8534,
+      "char_H1_cond_bits": 2.7129,
+      "char_IC": 0.07757,
+      "word_IC": 0.00074,
+      "word_H0_bits": 12.6249,
+      "word_H1_cond_bits": 2.4454,
+      "zipf_slope": -0.7033,
+      "zipf_r2": 0.9887,
+      "top_words": [
+        [
+          "ch",
+          329
+        ],
+        [
+          "qo",
+          319
+        ],
+        [
+          "che",
+          232
+        ],
+        [
+          "sh",
+          219
+        ],
+        [
+          "o",
+          217
+        ],
+        [
+          "c",
+          192
+        ],
+        [
+          "q",
+          160
+        ],
+        [
+          "qok",
+          136
+        ],
+        [
+          "she",
+          136
+        ],
+        [
+          "dy",
+          122
+        ],
+        [
+          "cho",
+          121
+        ],
+        [
+          "ched",
+          119
+        ],
+        [
+          "chee",
+          118
+        ],
+        [
+          "qol",
+          113
+        ],
+        [
+          "s",
+          113
+        ]
+      ],
+      "top_chars": [
+        [
+          "o",
+          23229
+        ],
+        [
+          "h",
+          17462
+        ],
+        [
+          "e",
+          15842
+        ],
+        [
+          "a",
+          14332
+        ],
+        [
+          "y",
+          14326
+        ],
+        [
+          "c",
+          14288
+        ],
+        [
+          "k",
+          13286
+        ],
+        [
+          "d",
+          11380
+        ],
+        [
+          "l",
+          8884
+        ],
+        [
+          "t",
+          8335
+        ],
+        [
+          "i",
+          8077
+        ],
+        [
+          "s",
+          7302
+        ],
+        [
+          "r",
+          5730
+        ],
+        [
+          "q",
+          5489
+        ],
+        [
+          "n",
+          3017
+        ],
+        [
+          "p",
+          1855
+        ],
+        [
+          "m",
+          806
+        ],
+        [
+          "f",
+          515
+        ],
+        [
+          "g",
+          200
+        ],
+        [
+          "x",
+          21
+        ],
+        [
+          "b",
+          15
+        ],
+        [
+          "j",
+          7
+        ],
+        [
+          "u",
+          6
+        ],
+        [
+          "z",
+          2
+        ]
+      ],
+      "wordlen_dist": {
+        "1": 1019,
+        "2": 2182,
+        "3": 3233,
+        "4": 6354,
+        "5": 8760,
+        "6": 6869,
+        "7": 3928,
+        "8": 1624,
+        "9": 608,
+        "10": 192,
+        "11": 57,
+        "12": 17,
+        "13": 13,
+        "14": 1
+      }
+    }
+  },
+  "repetition_voynich": {
+    "adjacent_double_rate": 0.00843,
+    "adjacent_doubles": 294,
+    "top_word_bigrams": [
+      [
+        "s aiin",
+        57
+      ],
+      [
+        "or aiin",
+        54
+      ],
+      [
+        "chol daiin",
+        33
+      ],
+      [
+        "ar aiin",
+        25
+      ],
+      [
+        "chol chol",
+        24
+      ],
+      [
+        "ol shedy",
+        24
+      ],
+      [
+        "r aiin",
+        22
+      ],
+      [
+        "ol chedy",
+        22
+      ],
+      [
+        "o l",
+        21
+      ],
+      [
+        "shedy qokedy",
+        21
+      ]
+    ],
+    "top_word_trigrams": [
+      [
+        "ol s aiin",
+        5
+      ],
+      [
+        "ol shedy qokedy",
+        5
+      ],
+      [
+        "or or aiin",
+        4
+      ],
+      [
+        "or aiin ol",
+        4
+      ],
+      [
+        "chey qol chedy",
+        4
+      ],
+      [
+        "s aiin chey",
+        4
+      ],
+      [
+        "s aiin daiin",
+        3
+      ],
+      [
+        "qokedy qokedy qokedy",
+        3
+      ],
+      [
+        "shey qokain chedy",
+        3
+      ],
+      [
+        "ol chedy qol",
+        3
+      ]
+    ],
+    "repeated_bigram_types": 2512,
+    "bigram_types": 29470
+  },
+  "repetition_english": {
+    "adjacent_double_rate": 0.00597,
+    "adjacent_doubles": 7,
+    "top_word_bigrams": [
+      [
+        "parlay points",
+        24
+      ],
+      [
+        "points beta",
+        17
+      ],
+      [
+        "consumpt proto",
+        12
+      ],
+      [
+        "agents md",
+        9
+      ],
+      [
+        "fin analyzer",
+        8
+      ],
+      [
+        "databricks apps",
+        8
+      ],
+      [
+        "md consumpt",
+        7
+      ],
+      [
+        "plan md",
+        7
+      ],
+      [
+        "claude md",
+        6
+      ],
+      [
+        "workflow plan",
+        5
+      ]
+    ],
+    "top_word_trigrams": [
+      [
+        "parlay points beta",
+        17
+      ],
+      [
+        "workflow plan md",
+        5
+      ],
+      [
+        "md consumpt proto",
+        5
+      ],
+      [
+        "consumpt claude md",
+        4
+      ],
+      [
+        "consumpt proto agents",
+        4
+      ],
+      [
+        "proto agents md",
+        4
+      ],
+      [
+        "claude md consumpt",
+        3
+      ],
+      [
+        "the old god",
+        3
+      ],
+      [
+        "in fin analyzer",
+        3
+      ],
+      [
+        "consumpt proto workflow",
+        3
+      ]
+    ],
+    "repeated_bigram_types": 127,
+    "bigram_types": 914
+  },
+  "repetition_markov": {
+    "adjacent_double_rate": 0.00092,
+    "adjacent_doubles": 32,
+    "top_word_bigrams": [
+      [
+        "c qo",
+        6
+      ],
+      [
+        "qo qo",
+        5
+      ],
+      [
+        "ch ch",
+        5
+      ],
+      [
+        "dy qo",
+        4
+      ],
+      [
+        "chee ch",
+        4
+      ],
+      [
+        "qo o",
+        4
+      ],
+      [
+        "c o",
+        4
+      ],
+      [
+        "ch chee",
+        3
+      ],
+      [
+        "sh che",
+        3
+      ],
+      [
+        "o che",
+        3
+      ]
+    ],
+    "top_word_trigrams": [
+      [
+        "aino qoteyke dyk",
+        1
+      ],
+      [
+        "qoteyke dyk chdal",
+        1
+      ],
+      [
+        "dyk chdal opc",
+        1
+      ],
+      [
+        "chdal opc dyt",
+        1
+      ],
+      [
+        "opc dyt dara",
+        1
+      ],
+      [
+        "dyt dara odyk",
+        1
+      ],
+      [
+        "dara odyk dykore",
+        1
+      ],
+      [
+        "odyk dykore qokai",
+        1
+      ],
+      [
+        "dykore qokai dych",
+        1
+      ],
+      [
+        "qokai dych shee",
+        1
+      ]
+    ],
+    "repeated_bigram_types": 253,
+    "bigram_types": 34551
+  },
+  "word_structure_voynich": {
+    "top_prefixes_2": [
+      [
+        "ch",
+        5619
+      ],
+      [
+        "qo",
+        5192
+      ],
+      [
+        "sh",
+        3056
+      ],
+      [
+        "da",
+        2120
+      ],
+      [
+        "ok",
+        2040
+      ],
+      [
+        "ot",
+        1855
+      ],
+      [
+        "ol",
+        1498
+      ],
+      [
+        "ai",
+        789
+      ],
+      [
+        "or",
+        539
+      ],
+      [
+        "yk",
+        525
+      ],
+      [
+        "ct",
+        494
+      ],
+      [
+        "ar",
+        457
+      ]
+    ],
+    "top_suffixes_3": [
+      [
+        "edy",
+        4018
+      ],
+      [
+        "iin",
+        3974
+      ],
+      [
+        "eey",
+        1740
+      ],
+      [
+        "ain",
+        1620
+      ],
+      [
+        "hey",
+        1533
+      ],
+      [
+        "ody",
+        981
+      ],
+      [
+        "hol",
+        945
+      ],
+      [
+        "chy",
+        859
+      ],
+      [
+        "eol",
+        761
+      ],
+      [
+        "hdy",
+        669
+      ],
+      [
+        "hor",
+        640
+      ],
+      [
+        "dar",
+        617
+      ]
+    ],
+    "pos_entropy_first_char": 3.1041,
+    "pos_entropy_second_char": 3.0925,
+    "pos_entropy_last_char": 2.3221,
+    "pos_entropy_second_last": 2.8413,
+    "line_initial_gallows_rate": 0.2191,
+    "line_other_gallows_rate": 0.0616,
+    "line_initial_n": 4130
+  },
+  "neighbors_voynich": {
+    "sample_n": 400,
+    "frac_with_neighbor": 0.8625,
+    "mean_neighbors": 7.412,
+    "max_neighbors": 43
+  },
+  "neighbors_english": {
+    "sample_n": 400,
+    "frac_with_neighbor": 0.27,
+    "mean_neighbors": 0.537,
+    "max_neighbors": 9
+  },
+  "neighbors_markov": {
+    "sample_n": 400,
+    "frac_with_neighbor": 0.7975,
+    "mean_neighbors": 7.457,
+    "max_neighbors": 48
+  },
+  "currier_AB": {
+    "A_tokens": 11231,
+    "B_tokens": 23078,
+    "A_types": 3217,
+    "B_types": 4788,
+    "vocab_jaccard_AB": 0.1586,
+    "char_JS_AB_bits": 0.0168,
+    "word_JS_AB_bits": 0.46779,
+    "char_JS_B_halves_bits": 0.00019,
+    "word_JS_B_halves_bits": 0.1995,
+    "top_A_only": [],
+    "top_B_only": [
+      [
+        "qokeedy",
+        307
+      ],
+      [
+        "otedy",
+        140
+      ],
+      [
+        "okedy",
+        109
+      ],
+      [
+        "qotedy",
+        87
+      ]
+    ]
+  },
+  "substitution_attempt": {
+    "scorer": "English within-word letter-bigram log-prob per bigram (higher=more English-like)",
+    "english_identity_score": -2.2607,
+    "enciphered_english_solved_score": -2.2541,
+    "enciphered_english_recovered_sample": [
+      "python",
+      "projects",
+      "root",
+      "navigation",
+      "topic",
+      "existing",
+      "entry",
+      "point",
+      "scope",
+      "fin",
+      "analyzer",
+      "fin",
+      "analyzer",
+      "agents",
+      "md",
+      "fin",
+      "analyzer",
+      "agents",
+      "md",
+      "partial",
+      "copy",
+      "moved",
+      "from",
+      "the",
+      "root"
+    ],
+    "voynich_best_score": -2.4817,
+    "voynich_best_mapping": {
+      "a": "k",
+      "c": "a",
+      "d": "c",
+      "e": "l",
+      "f": "g",
+      "g": "h",
+      "h": "r",
+      "i": "s",
+      "k": "d",
+      "l": "n",
+      "m": "w",
+      "n": "u",
+      "o": "e",
+      "p": "m",
+      "q": "j",
+      "r": "x",
+      "s": "b",
+      "t": "p",
+      "v": "q",
+      "y": "o"
+    },
+    "voynich_decoded_sample": [
+      "gkarob",
+      "odkn",
+      "kx",
+      "kpkssu",
+      "bren",
+      "brexo",
+      "aprxlb",
+      "o",
+      "dex",
+      "brenco",
+      "bexo",
+      "adrkx",
+      "ex",
+      "o",
+      "dksx",
+      "arpkssu",
+      "brkx",
+      "kbl",
+      "aprkx",
+      "aprkx",
+      "cku",
+      "bokssx",
+      "brldo",
+      "ex",
+      "odkssu"
+    ],
+    "note": "Positive control must score near English identity; Voynich far below it falsifies plain monoalphabetic substitution of English-like plaintext under EVA-as-alphabet."
+  }
+}

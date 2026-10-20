@@ -1,0 +1,35 @@
+C4: Naibbe ciphertext (Greshko 2025, Zenodo 17219445, cached 'Four-Text Sampler' run) through a2, B4 and C3
+tokens=20923 types=4733; layouts: Voynich page/line skeleton, and 50-char wrap
+
+Voynich mean line length = 49.6 chars; skeleton fills 157 pages
+
+--- a2: line position (all lines) ---
+VOYNICH          first glyph  JSD(first,mid)=0.1759 null=0.0019±0.0005   JSD(last,mid)=0.0363 null=0.0020±0.0005
+VOYNICH          last glyph   JSD(first,mid)=0.0143 null=0.0013±0.0003   JSD(last,mid)=0.0820 null=0.0012±0.0004
+VOYNICH          length       JSD(first,mid)=0.0217 null=0.0007±0.0003   JSD(last,mid)=0.0124 null=0.0008±0.0003
+NAIBBE skeleton  first glyph  JSD(first,mid)=0.0007 null=0.0012±0.0003   JSD(last,mid)=0.0018 null=0.0011±0.0004
+NAIBBE skeleton  last glyph   JSD(first,mid)=0.0008 null=0.0010±0.0004   JSD(last,mid)=0.0011 null=0.0009±0.0003
+NAIBBE skeleton  length       JSD(first,mid)=0.0004 null=0.0007±0.0003   JSD(last,mid)=0.0006 null=0.0006±0.0003
+NAIBBE wrap      first glyph  JSD(first,mid)=0.0032 null=0.0011±0.0005   JSD(last,mid)=0.0024 null=0.0011±0.0005
+NAIBBE wrap      last glyph   JSD(first,mid)=0.0034 null=0.0010±0.0003   JSD(last,mid)=0.0009 null=0.0010±0.0005
+NAIBBE wrap      length       JSD(first,mid)=0.0191 null=0.0008±0.0004   JSD(last,mid)=0.0019 null=0.0009±0.0004
+NULL Naibbe shuf first glyph  JSD(first,mid)=0.0006 null=0.0011±0.0004   JSD(last,mid)=0.0014 null=0.0013±0.0005
+NULL Naibbe shuf last glyph   JSD(first,mid)=0.0025 null=0.0012±0.0005   JSD(last,mid)=0.0014 null=0.0010±0.0004
+NULL Naibbe shuf length       JSD(first,mid)=0.0003 null=0.0007±0.0003   JSD(last,mid)=0.0001 null=0.0005±0.0002
+CTRL dante       first glyph  JSD(first,mid)=0.0337 null=0.0009±0.0003   JSD(last,mid)=0.0686 null=0.0010±0.0002
+CTRL dante       last glyph   JSD(first,mid)=0.0185 null=0.0010±0.0003   JSD(last,mid)=0.1673 null=0.0009±0.0003
+CTRL dante       length       JSD(first,mid)=0.0062 null=0.0013±0.0005   JSD(last,mid)=0.3050 null=0.0013±0.0004
+
+--- b4.report: lines 2+ of each page ---
+VOYNICH          JSDfirst=0.1722 (null 0.0019)  JSDlast=0.0839 (null 0.0013)  p-init x15.97  m-final x16.55  h2=2.093  repeat=0.87%  samecol_edit<=1=0.044  tokens=33053
+NAIBBE skeleton  JSDfirst=0.0006 (null 0.0014)  JSDlast=0.0011 (null 0.0010)  p-init x 0.89  m-final x 1.14  h2=2.080  repeat=0.18%  samecol_edit<=1=0.019  tokens=19607
+NAIBBE wrap      JSDfirst=0.0032 (null 0.0012)  JSDlast=0.0009 (null 0.0010)  p-init x 0.77  m-final x 0.96  h2=2.080  repeat=0.19%  samecol_edit<=1=  -    tokens=20923
+NULL Naibbe shuf JSDfirst=0.0006 (null 0.0015)  JSDlast=0.0016 (null 0.0011)  p-init x 1.01  m-final x 1.17  h2=2.080  repeat=0.39%  samecol_edit<=1=0.019  tokens=19607
+CTRL_dante       JSDfirst=0.0337 (null 0.0009)  JSDlast=0.1673 (null 0.0009)  p-init x 1.23  m-final x 0.00  h2=3.108  repeat=0.05%  samecol_edit<=1=  -    tokens=36104
+
+--- c3 edge coupling ---
+VOYNICH all            EVA MI=0.1950 excess=+0.1809 (z  194.7)   glyph+ MI=0.2125 excess=+0.1899 (z  203.1)
+NAIBBE skeleton        EVA MI=0.0079 excess=+0.0018 (z    2.6)   glyph+ MI=0.0166 excess=+0.0047 (z    5.9)
+NAIBBE wrap            EVA MI=0.0083 excess=+0.0022 (z    5.5)   glyph+ MI=0.0174 excess=+0.0057 (z    5.6)
+NULL Naibbe shuffled   EVA MI=0.0053 excess=-0.0008 (z   -1.2)   glyph+ MI=0.0108 excess=-0.0009 (z   -1.0)
+CTRL italian_dante     EVA MI=0.1560 excess=+0.1446 (z  169.1)   glyph+ MI=0.1711 excess=+0.1557 (z  166.2)

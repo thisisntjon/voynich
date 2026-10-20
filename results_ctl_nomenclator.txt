@@ -1,0 +1,13 @@
+ctl_nomenclator.py  seed=20261017  N_TOKENS=35000
+h2 = char conditional entropy with space as a symbol (a1_profile.char_entropies); redup = immediate word repeats (%)
+
+variant                       tokens     types     hapax  mean_len    sd_len     alpha        h1        h2     redup
+plaintext (Macer+Pliny)        35007      9168     0.611     5.874     2.525        48     4.059     3.343     0.000
+nomen_word                     35007      9168     0.611     5.333     1.588        19     3.967     3.178     0.000
+nomen_syll                     35007      9166     0.611     5.374     2.380        19     4.041     3.764     0.000
+nomen_lines                    35007     10080     0.640     5.378     1.602        21     4.007     3.204     0.000
+Voynich EVA (first 35k)        34857      7025     0.680     4.990     1.788        26     3.871     2.109     0.843
+
+plaintext sections: 79; code classes: Counter({4: 2515, 2: 2297, 3: 1645, 7: 600, 5: 521, 8: 490, 11: 478, 6: 283, 1: 250, 0: 50, 10: 39})
+word code: 9168 types -> 9168 codewords (one-to-one)
+syllable code: 1797 syllables; unit length distribution Counter({3: 1667, 2: 130})

@@ -1,0 +1,193 @@
+{
+ "row": {
+  "name": "flow_gen_layer",
+  "tokens": 25007,
+  "types": 1581,
+  "pages": 187,
+  "lines": 3147,
+  "errors": {},
+  "types_25k": 1581,
+  "h2": 1.7528,
+  "sd_len": 1.599,
+  "jsd_first_fg": 0.122,
+  "p_init_enrich": 10.5,
+  "m_final_enrich": 4.51,
+  "cross_excess_eva": 0.2254,
+  "redup_pct": 2.292,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "m_final_enrich",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "flow_gen_layer",
+   "tokens": 25000,
+   "types": 1581,
+   "hapax_rate": 0.3909,
+   "mean_len": 4.321,
+   "sd_len": 1.599,
+   "h1": 3.8026,
+   "h2": 1.7528,
+   "h3": 1.4801,
+   "zipf": -1.3171,
+   "redup_pct": 2.292,
+   "jsd_first_fg": 0.122,
+   "jsd_last_lg": 0.0315,
+   "p_init_enrich": 10.5,
+   "m_final_enrich": 4.51,
+   "cross_mi_eva": 0.2376,
+   "cross_excess_eva": 0.2254,
+   "cross_mi_glyph": 0.2435,
+   "cross_excess_glyph": 0.2245,
+   "recur_le_1": 0.0229,
+   "recur_le_5": 0.1029,
+   "recur_le_20": 0.2842,
+   "recur_le_100": 0.5661
+  },
+  "x_edge_mi_word": 0.23062927194377494,
+  "x_hapax_10k": 0.4588701684836472,
+  "x_moran_I": 0.042611473526870135,
+  "x_position_entropy": 1.3809497356243199,
+  "x_ltr_minus_rtl": 0.0013051768613292487,
+  "info_mi_adjacent": 0.12512204965540308,
+  "info_mi_page": 0.018243038520415755,
+  "info_samecol_minus_othercol": 0.008545726155054556,
+  "info_bpe_adjacent": 1.2235013753200703,
+  "lex_beta": 0.5970187066166763,
+  "lex_rate_late_early": 0.225531914893617,
+  "lex_edit1_excess": 0.06767868437697655,
+  "slot_occupancy_pc": 0.11076626712328767,
+  "slot_table_likeness": 0.5921992841252818,
+  "slot_core_crowding": 0.9006849315068494,
+  "bake_winner": "copy0.05+markov3",
+  "bake_char3_minus_unigram": -0.10727541521008277,
+  "bake_bits": {
+   "markov2": 8.188302511159149,
+   "markov3": 8.135763433737823,
+   "slot": 8.344725204366645,
+   "unigram_gt": 8.243038848947906,
+   "copy0.3+markov3": 8.300111911057131,
+   "copy0.1+markov3": 8.103954562405935,
+   "copy0.05+markov3": 8.077673988621342
+  },
+  "family": "-",
+  "note": "data\\controls_synthetic\\flow_gen_layer.meta.json; 34857 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 9,
+    "outs": 9,
+    "na": 0,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "p_init_enrich",
+     "m_final_enrich",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "x_position_entropy",
+     "slot_occupancy_pc"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "p_init_enrich",
+     "m_final_enrich",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_position_entropy",
+     "slot_occupancy_pc"
+    ]
+   },
+   "C": {
+    "ins": 5,
+    "outs": 11,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k",
+     "x_position_entropy",
+     "x_moran_I",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_table_likeness"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k",
+     "x_moran_I",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_table_likeness"
+    ]
+   },
+   "G": {
+    "ins": 13,
+    "outs": 5,
+    "na": 0,
+    "out_metrics": [
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "slot_table_likeness"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "slot_table_likeness"
+    ]
+   },
+   "X": {
+    "ins": 5,
+    "outs": 12,
+    "na": 1,
+    "out_metrics": [
+     "h2",
+     "m_final_enrich",
+     "x_edge_mi_word",
+     "x_position_entropy",
+     "x_moran_I",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding",
+     "bake_char3_minus_unigram"
+    ],
+    "out_tight": [
+     "m_final_enrich",
+     "x_edge_mi_word",
+     "x_moran_I",
+     "lex_beta",
+     "lex_rate_late_early",
+     "lex_edit1_excess",
+     "slot_occupancy_pc",
+     "slot_table_likeness",
+     "slot_core_crowding",
+     "bake_char3_minus_unigram"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "n7_gibberish_ranges.json"
+}

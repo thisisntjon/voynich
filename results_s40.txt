@@ -1,0 +1,56 @@
+S40: the prefix stream as a text — entropy, Zipf, held-out next-prefix bigram gain; Voynich vs CREMMA Latin, gibberish, generators
+run started Sat Oct 17 22:29:32 PDT 2026 (`date`)
+s40_prefix_stream_as_text.py sha256=78e005177a72f02f7c56ddfd87dd7b1e84c96a5b3d1f78e94e7351797abc8470  prereg stub_match=True
+split: 80/20 pages, random.Random(20261017) (g1.split_names convention); segmenter fitted on training pages per corpus; GAIN = held-out unigram bits - Witten-Bell bigram bits per within-line target; null = within-line shuffle x20
+rule (ZL3b prefix GAIN): language-like if inside the Latin per-manuscript range AND above both generators; habit-like if inside the generator range; else neither
+
+=== Voynich (prefix stream | core stream) ===
+  corpus                 |   tr/te | pfxC    H1   H2|   zipf |    uni     bi    GAIN    null  EXCESS      z | coreC    H1    GAIN  EXCESS      z | tePair
+  ZL3b                   | 166/ 41 |   28  4.32  4.17  -0.86 |  4.360  4.260 +0.0999 +0.0162 +0.0837  +20.7 |  2360  6.61 -0.1622 +0.1127  +10.2 |   7562
+    ZL3b segmenter (training pages): 27 prefix candidates, 18 suffix candidates
+  RF1b                   | 166/ 41 |   29  4.36  4.21  -0.90 |  4.400  4.305 +0.0951 +0.0107 +0.0845  +13.1 |  2491  6.66 -0.1379 +0.1277  +15.3 |   7580
+    RF1b segmenter (training pages): 28 prefix candidates, 20 suffix candidates
+  IT2a                   | 165/ 41 |   25  4.18  4.09  -0.88 |  4.238  4.142 +0.0961 +0.0201 +0.0760  +21.5 |  2420  6.69 -0.1297 +0.1413  +17.0 |   7392
+    IT2a segmenter (training pages): 24 prefix candidates, 19 suffix candidates
+
+=== (a) Latin CREMMA manuscripts, own segmenter each (>= 1000 tokens qualify for the range) ===
+  corpus                 |   tr/te | pfxC    H1   H2|   zipf |    uni     bi    GAIN    null  EXCESS      z | coreC    H1    GAIN  EXCESS      z | tePair
+  Arras-861              |   4/  1 |   33  4.53  4.16  -0.79 |  4.543  4.809 -0.2660 -0.1930 -0.0730   -2.3 |   825  7.74 -0.4478 +0.0645   +2.4 |    443
+  BGO-511                | skipped: 169 tokens, 6 pages
+  BIS-193                |   5/  1 |   25  3.82  3.69  -0.91 |  3.804  3.847 -0.0427 -0.0644 +0.0218   +2.7 |  1022  7.15 -0.2685 +0.1895  +11.1 |   1429
+  CCCC-MSS-165           |   4/  1 |   18  3.17  2.95  -1.18 |  3.196  3.224 -0.0284 -0.1462 +0.1178   +3.1 |   452  7.25 -0.2563 +0.2841   +5.2 |    255
+  CCCC-MSS-236           |   4/  1 |   29  4.34  3.94  -0.80 |  4.623  4.690 -0.0666 -0.2126 +0.1460   +2.9 |   439  7.27 -0.5055 -0.0142   -0.3 |    177
+  CLM13027               |   4/  1 |   30  4.25  4.10  -0.86 |  4.172  4.270 -0.0978 -0.0863 -0.0115   -0.6 |  1729  8.15 -0.4903 +0.0196   +0.8 |   1163
+  Egerton821             | skipped: 1088 tokens, 4 pages
+  H318                   |   4/  1 |   26  3.96  3.81  -0.93 |  4.128  4.266 -0.1379 -0.1175 -0.0204   -0.9 |  1226  7.96 -0.3845 +0.1172   +4.4 |    956
+  Latin16195             | skipped: 3993 tokens, 2 pages
+  Latin6395              | skipped: 3162 tokens, 3 pages
+  Latin8236              |   4/  1 |   41  5.03  4.17  -0.64 |  5.167  5.382 -0.2154 -0.3148 +0.0994   +2.4 |   576  7.79 -0.4353 +0.0536   +1.4 |    232
+  LaurPlut33.31          |   4/  1 |   25  4.05  3.82  -0.84 |  4.417  4.436 -0.0195 -0.2020 +0.1825   +3.7 |   520  7.65 -0.4466 +0.0455   +1.0 |    213
+  LaurPlut39.34          | skipped: 770 tokens, 5 pages
+  LaurPlut53.08          | skipped: 3319 tokens, 4 pages
+  LaurPlut53.09          | skipped: 1323 tokens, 4 pages
+  Mazarine915            | skipped: 4581 tokens, 4 pages
+  PalLat373              |   4/  1 |   23  3.75  3.49  -1.06 |  3.716  3.802 -0.0858 -0.1330 +0.0471   +2.0 |   678  7.58 -0.3697 +0.1132   +2.8 |    360
+  Phi_10a135             |   4/  1 |   29  4.25  3.81  -0.79 |  4.180  4.290 -0.1094 -0.1811 +0.0716   +1.4 |   675  7.88 -0.3990 +0.0595   +1.4 |    287
+  SBB_PK_Hdschr25        | skipped: 958 tokens, 17 pages
+  UBL758                 |  12/  3 |   35  4.68  4.36  -0.81 |  4.627  4.718 -0.0909 -0.1351 +0.0443   +1.2 |  1295  8.23 -0.3306 +0.1491   +4.4 |    481
+  WettF0015              |   4/  1 |   22  3.42  3.23  -1.03 |  3.394  3.474 -0.0798 -0.1072 +0.0274   +1.3 |   625  6.83 -0.3251 +0.1162   +3.3 |    630
+  cremma_all (pool)      |  34/  8 |   34  4.50  4.42  -0.85 |  4.490  4.519 -0.0290 -0.0373 +0.0083   +1.7 |  4340  8.38 -0.3772 +0.1231   +7.7 |   4004
+
+=== (b) human gibberish on real lines; (c) generators ===
+  corpus                 |   tr/te | pfxC    H1   H2|   zipf |    uni     bi    GAIN    null  EXCESS      z | coreC    H1    GAIN  EXCESS      z | tePair
+  gib_realline_pooled    |  30/  8 |   41  5.12  4.90  -0.64 |  5.055  5.162 -0.1076 -0.0890 -0.0186   -0.9 |  4169  9.74 -0.3924 -0.0086   -0.6 |   1375
+  c2_best                | 150/ 37 |   15  2.91  2.86  -1.21 |  2.888  2.886 +0.0013 -0.0092 +0.0104   +3.3 |   572  5.68 -0.2523 +0.0248   +2.8 |   5148
+  timm_schinner          | 150/ 37 |   24  3.85  3.81  -1.05 |  3.814  3.817 -0.0039 -0.0107 +0.0068   +1.2 |  1088  6.26 -0.2680 +0.0351   +3.5 |   5148
+
+=== READING (pre-registered rule) ===
+Latin range (prefix GAIN, 12 manuscripts): [-0.2660, -0.0195] (pool -0.0290); generator range: [-0.0039, +0.0013] (c2_best +0.0013, timm_schinner -0.0039); gibberish -0.1076
+  ZL3b: prefix GAIN +0.0999 (excess over shuffle +0.0837, z +20.7) -> neither (above the Latin max); margins: - Latin min +0.3659, Latin max - -0.1194, - gen max +0.0987; core GAIN -0.1622
+  RF1b: prefix GAIN +0.0951 (excess over shuffle +0.0845, z +13.1) -> neither (above the Latin max); margins: - Latin min +0.3611, Latin max - -0.1146, - gen max +0.0939; core GAIN -0.1379
+  IT2a: prefix GAIN +0.0961 (excess over shuffle +0.0760, z +21.5) -> neither (above the Latin max); margins: - Latin min +0.3621, Latin max - -0.1156, - gen max +0.0948; core GAIN -0.1297
+reading: neither (above the Latin max) (ZL3b); same call on RF1b, IT2a
+core-stream comparison (no rule): Voynich core GAIN -0.1622; Latin core GAIN range [-0.5055, -0.2563]; generators c2_best -0.2523, timm_schinner -0.2680; gibberish -0.3924
+
+elapsed 8.0 s
+run finished Sat Oct 17 22:29:40 PDT 2026 (`date`)

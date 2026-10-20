@@ -1,0 +1,1104 @@
+{
+"homophones": {
+"e": [
+"R",
+"A",
+"z",
+"M"
+],
+"a": [
+"v",
+"i",
+"L",
+"O"
+],
+"o": [
+"r",
+"N",
+"B",
+"P"
+],
+"i": [
+"l",
+"n",
+"u"
+],
+"t": [
+"y",
+"T",
+"p"
+],
+"l": [
+"C",
+"H",
+"o"
+],
+"n": [
+"t",
+"S"
+],
+"r": [
+"b",
+"K"
+],
+"s": [
+"a",
+"E"
+],
+"c": [
+"U",
+"d"
+],
+"u": [
+"f"
+],
+"d": [
+"g"
+],
+"p": [
+"q"
+],
+"m": [
+"k"
+],
+"b": [
+"Q"
+],
+"f": [
+"j"
+],
+"g": [
+"e"
+],
+"z": [
+"c"
+],
+"h": [
+"F"
+],
+"y": [
+"D"
+],
+"q": [
+"I"
+],
+"x": [
+"G"
+],
+"k": [
+"x"
+],
+"~": [
+"h"
+],
+"&": [
+"J"
+]
+},
+"nulls": [
+"s",
+"m"
+],
+"code": {
+"toy": [
+"uq",
+"dc",
+"pE"
+],
+"tu": [
+"NO",
+"za",
+"Fb"
+],
+"carne": [
+"NQ",
+"RG",
+"Dt"
+],
+"togli": [
+"BJ",
+"Cf",
+"xl"
+],
+"fare": [
+"hd",
+"yC",
+"Qe"
+],
+"specie": [
+"cS",
+"vb",
+"Uy"
+],
+"oua": [
+"Ec",
+"xu",
+"HP"
+],
+"lardo": [
+"Bb",
+"Mt",
+"Eb"
+],
+"spezie": [
+"if",
+"Er",
+"kP"
+],
+"uoy": [
+"bq",
+"tp",
+"PG"
+],
+"acqua": [
+"Kd",
+"be",
+"tC"
+],
+"poni": [
+"Id",
+"Rj",
+"Jx"
+],
+"aqua": [
+"kO",
+"jA",
+"An"
+],
+"dentro": [
+"vN",
+"Gl",
+"FU"
+],
+"mandole": [
+"bP",
+"Fr",
+"vI"
+],
+"distempera": [
+"JU",
+"Gn",
+"vj"
+],
+"poco": [
+"va",
+"Eq",
+"Fy"
+],
+"meti": [
+"dq",
+"ue",
+"JM"
+],
+"bolire": [
+"yb",
+"iR",
+"KT"
+],
+"col": [
+"aH",
+"fz",
+"uo"
+],
+"sauore": [
+"Go",
+"fG",
+"kA"
+],
+"sale": [
+"Pn",
+"Ff",
+"QR"
+],
+"fay": [
+"Uq",
+"aA",
+"jq"
+],
+"brodo": [
+"cf",
+"PN",
+"Dz"
+],
+"modo": [
+"ep",
+"pT",
+"Ac"
+],
+"zucharo": [
+"IT",
+"GE",
+"Qr"
+],
+"polastri": [
+"OJ",
+"QL",
+"Fu"
+],
+"mettiui": [
+"FD",
+"NS",
+"aJ"
+],
+"po": [
+"hq",
+"CO",
+"Ay"
+],
+"altramente": [
+"dC",
+"NJ",
+"ca"
+],
+"puoi": [
+"qk",
+"uI",
+"Jz"
+],
+"forte": [
+"xk",
+"cz",
+"BP"
+],
+"bona": [
+"aC",
+"fn",
+"cu"
+],
+"miti": [
+"EL",
+"Sf",
+"Ht"
+],
+"dolze": [
+"fb",
+"gQ",
+"vC"
+],
+"mitige": [
+"uJ",
+"tk",
+"kt"
+],
+"torta": [
+"dP",
+"Tf",
+"CR"
+],
+"detto": [
+"zT",
+"TK",
+"Md"
+],
+"oglio": [
+"Br",
+"xt",
+"bE"
+],
+"uole": [
+"Tp",
+"Qo",
+"Ky"
+],
+"bone": [
+"Av",
+"gq",
+"fP"
+],
+"metti": [
+"Se",
+"tK",
+"qH"
+],
+"insieme": [
+"kT",
+"nc",
+"cg"
+],
+"persone": [
+"OL",
+"xa",
+"lj"
+],
+"polli": [
+"Ap",
+"Gy",
+"CG"
+],
+"porco": [
+"oO",
+"fh",
+"fU"
+],
+"zaffarano": [
+"yn",
+"lo",
+"CP"
+],
+"cocere": [
+"ov",
+"dL",
+"Qa"
+],
+"uuoli": [
+"dR",
+"Pd",
+"bg"
+],
+"aceto": [
+"DG",
+"hb",
+"Cu"
+],
+"cosse": [
+"bvg",
+"JfU",
+"lxe"
+],
+"erbe": [
+"Dcx",
+"NBy",
+"itl"
+],
+"mangiare": [
+"ARK",
+"RDl",
+"IzA"
+],
+"libre": [
+"PCR",
+"kaa",
+"Ebf"
+],
+"mele": [
+"IED",
+"plH",
+"FOU"
+],
+"uino": [
+"eah",
+"dqG",
+"krb"
+],
+"pocho": [
+"Noh",
+"Rke",
+"iMe"
+],
+"batuto": [
+"iRO",
+"MvL",
+"BbR"
+],
+"bono": [
+"RGt",
+"Rae",
+"xEz"
+],
+"libra": [
+"ntA",
+"NbS",
+"fyu"
+],
+"grasso": [
+"RtS",
+"MyN",
+"tPG"
+],
+"do": [
+"jlL",
+"IbR",
+"glF"
+],
+"farina": [
+"kvc",
+"MBh",
+"Idf"
+],
+"quantita": [
+"cyr",
+"edp",
+"Rnk"
+],
+"zafarano": [
+"ESF",
+"LBT",
+"bqM"
+],
+"cascio": [
+"ioE",
+"MEi",
+"NBP"
+],
+"db": [
+"LcO",
+"xQk",
+"uCr"
+],
+"pepe": [
+"jNf",
+"hjO",
+"Dqz"
+],
+"fine": [
+"iPO",
+"vDG",
+"TcI"
+],
+"monde": [
+"vvN",
+"Bia",
+"EAR"
+],
+"padella": [
+"jzJ",
+"ycb",
+"HeM"
+],
+"suso": [
+"Bok",
+"yrg",
+"Ilo"
+],
+"uua": [
+"ovI",
+"Aex",
+"KnJ"
+],
+"detta": [
+"tqS",
+"lgJ",
+"QnT"
+],
+"meza": [
+"Uek",
+"din",
+"cal"
+],
+"zenzeuro": [
+"Cnz",
+"qTS",
+"Jcc"
+],
+"bullire": [
+"eul",
+"viy",
+"jUF"
+],
+"fresco": [
+"IeC",
+"rko",
+"Bjv"
+],
+"herbe": [
+"MdC",
+"Nei",
+"Dua"
+],
+"pane": [
+"Sev",
+"Ltt",
+"PQn"
+],
+"pesta": [
+"UgL",
+"Fqk",
+"POd"
+],
+"spesso": [
+"vAg",
+"ynE",
+"RIM"
+],
+"caponi": [
+"nyT",
+"tzQ",
+"FxU"
+],
+"cipolle": [
+"KPN",
+"tRP",
+"gcq"
+],
+"dibattute": [
+"xTA",
+"cIh",
+"bBg"
+],
+"ouuero": [
+"fIH",
+"ztr",
+"BaA"
+],
+"uiuanda": [
+"nOM",
+"Geo",
+"xHE"
+],
+"altra": [
+"zvz",
+"UTt",
+"DFy"
+],
+"altre": [
+"PuG",
+"KDq",
+"fel"
+],
+"ay": [
+"UMd",
+"lRj",
+"cCG"
+],
+"cocto": [
+"NSu",
+"Spu",
+"bTN"
+],
+"oue": [
+"hKc",
+"TqO",
+"IRv"
+],
+"agresta": [
+"nQn",
+"gvl",
+"Shz"
+],
+"crosta": [
+"goE",
+"fzD",
+"QzH"
+],
+"etc": [
+"cyp",
+"fPF",
+"fvP"
+],
+"late": [
+"hxU",
+"jRd",
+"jnn"
+],
+"pasta": [
+"hMc",
+"NEt",
+"JLD"
+],
+"altro": [
+"rLP",
+"OKK",
+"djD"
+],
+"cossa": [
+"Qqj",
+"Ttx",
+"iEv"
+],
+"fane": [
+"NNC",
+"xbS",
+"DON"
+],
+"lauate": [
+"hzD",
+"gFr",
+"Cio"
+],
+"mitili": [
+"KzR",
+"luj",
+"kFa"
+],
+"molto": [
+"hFz",
+"MhB",
+"tkA"
+],
+"onze": [
+"JQx",
+"ugf",
+"CER"
+],
+"passa": [
+"eai",
+"MkN",
+"Pzb"
+],
+"senza": [
+"AqJ",
+"THI",
+"vif"
+],
+"ui": [
+"cvy",
+"ehr",
+"Jei"
+],
+"uia": [
+"CCN",
+"JGh",
+"xoO"
+],
+"assay": [
+"QdI",
+"xID",
+"xRe"
+],
+"bon": [
+"xlh",
+"UQU",
+"ADA"
+],
+"cose": [
+"bMG",
+"kQP",
+"KFH"
+],
+"fuora": [
+"lFO",
+"aNz",
+"vlS"
+],
+"latte": [
+"hoI",
+"GJn",
+"aMn"
+],
+"mezo": [
+"KxR",
+"tjp",
+"pQx"
+],
+"odorifere": [
+"ttl",
+"hvc",
+"FAO"
+],
+"tre": [
+"feI",
+"fgQ",
+"SBI"
+],
+"altri": [
+"IPI",
+"dqx",
+"Pbe"
+],
+"bianco": [
+"LNM",
+"OUr",
+"rGO"
+],
+"quarto": [
+"eHH",
+"qkJ",
+"Lcp"
+],
+"uccelli": [
+"dBb",
+"ztz",
+"vTx"
+],
+"zuccaro": [
+"kLN",
+"Ptx",
+"QPj"
+],
+"lacqua": [
+"TKH",
+"Ldr",
+"NFf"
+],
+"pesce": [
+"QaR",
+"xfo",
+"llp"
+],
+"cocti": [
+"iCQ",
+"tGU",
+"OuH"
+],
+"coxere": [
+"pzn",
+"kkp",
+"iTS"
+],
+"entro": [
+"HpK",
+"qGf",
+"olv"
+],
+"freschi": [
+"pbE",
+"qjo",
+"fxh"
+],
+"garofali": [
+"exN",
+"Peu",
+"pAL"
+],
+"calda": [
+"nkh",
+"LiN",
+"jIK"
+],
+"caxo": [
+"zQb",
+"Tng",
+"oil"
+],
+"coltello": [
+"OPQ",
+"Fbi",
+"Dlf"
+],
+"noce": [
+"LBy",
+"zQd",
+"jMh"
+],
+"olio": [
+"ozI",
+"RbH",
+"Ruc"
+],
+"sera": [
+"DuI",
+"uFj",
+"TPL"
+],
+"amandole": [
+"BcM",
+"KqF",
+"uzH"
+],
+"capponi": [
+"ySS",
+"qQD",
+"tnG"
+],
+"uaso": [
+"AHE",
+"PSb",
+"tPa"
+],
+"xii": [
+"txK",
+"Jjd",
+"JUR"
+],
+"xtt": [
+"uUc",
+"Btd",
+"FuM"
+],
+"auere": [
+"LhB",
+"DAU",
+"xPQ"
+],
+"eh": [
+"tDG",
+"MPe",
+"pUn"
+],
+"lessare": [
+"LTQ",
+"nIo",
+"GeU"
+],
+"mescola": [
+"HeK",
+"IJA",
+"hQh"
+],
+"mitilo": [
+"Fzg",
+"yvf",
+"nNb"
+],
+"pesse": [
+"bbA",
+"TRi",
+"eRg"
+],
+"petrosemolo": [
+"ggq",
+"naS",
+"cFu"
+],
+"pome": [
+"jMt",
+"IIT",
+"gRM"
+],
+"rafioli": [
+"Dqb",
+"PQp",
+"UIf"
+],
+"scudelle": [
+"cCM",
+"pDU",
+"Slz"
+],
+"simile": [
+"tFz",
+"IoI",
+"ahU"
+],
+"testo": [
+"vaa",
+"HnL",
+"CkG"
+],
+"buono": [
+"nNg",
+"Faq",
+"ojE"
+],
+"cipolla": [
+"avQ",
+"LJz",
+"KCo"
+],
+"fino": [
+"ahO",
+"GkF",
+"eey"
+],
+"lauati": [
+"SEp",
+"gQl",
+"Jll"
+],
+"metili": [
+"Cfe",
+"EOg",
+"Mhn"
+],
+"mortaro": [
+"nMR",
+"IgT",
+"Gza"
+],
+"pesci": [
+"DoQ",
+"BiJ",
+"GJv"
+],
+"tropo": [
+"Rxv",
+"jhU",
+"lqR"
+],
+"bollire": [
+"qCB",
+"JaJ",
+"jdf"
+],
+"castrone": [
+"TbL",
+"HLI",
+"MiL"
+],
+"cocte": [
+"jSN",
+"liJ",
+"fvH"
+],
+"cotto": [
+"FLp",
+"UKo",
+"BbF"
+],
+"cuocere": [
+"rej",
+"xSe",
+"bIf"
+],
+"datali": [
+"FJO",
+"TcK",
+"qPK"
+],
+"ditte": [
+"xBC",
+"Oqv",
+"Nxd"
+],
+"fiore": [
+"xeD",
+"SNa",
+"GkA"
+],
+"insiema": [
+"Uxc",
+"Jlo",
+"pyL"
+],
+"lessali": [
+"FIq",
+"akC",
+"MnH"
+],
+"mesta": [
+"oUJ",
+"otB",
+"UEU"
+],
+"mortaio": [
+"CvN",
+"xdi",
+"LcC"
+],
+"onto": [
+"MfD",
+"bud",
+"CLy"
+],
+"pesto": [
+"xRh",
+"USf",
+"Hdv"
+],
+"porcho": [
+"hJC",
+"Nzb",
+"JRx"
+],
+"porri": [
+"GjN",
+"thv",
+"hQl"
+],
+"tuorla": [
+"oFN",
+"yap",
+"Peb"
+],
+"colato": [
+"lPf",
+"SNo",
+"Qrc"
+],
+"detti": [
+"oGx",
+"lQF",
+"yMA"
+],
+"fatto": [
+"eiv",
+"xky",
+"LDk"
+],
+"fortemente": [
+"nKv",
+"kup",
+"hbO"
+],
+"fuoco": [
+"rKi",
+"PHb",
+"RRt"
+],
+"gittata": [
+"Txa",
+"cAa",
+"xoL"
+],
+"lauato": [
+"CKK",
+"dHE",
+"FId"
+],
+"mangia": [
+"BTk",
+"ADR",
+"FJS"
+],
+"minuto": [
+"HRe",
+"IJD",
+"cEp"
+],
+"mondi": [
+"uQC",
+"uQq",
+"Btz"
+],
+"parte": [
+"RTB",
+"jUA",
+"cOy"
+],
+"pastello": [
+"ftg",
+"qFc",
+"HnF"
+],
+"pentola": [
+"Gxa",
+"fRJ",
+"OOP"
+],
+"polueriza": [
+"KJL",
+"Bxi",
+"hLf"
+],
+"tagliato": [
+"EiO",
+"bIt",
+"xzD"
+],
+"trite": [
+"nOH",
+"MLS",
+"qDq"
+],
+"trito": [
+"SHC",
+"qey",
+"vqJ"
+],
+"abbastanza": [
+"eRE",
+"kPf",
+"ASG"
+],
+"bianchi": [
+"oLD",
+"JUo",
+"fjN"
+],
+"bolla": [
+"zIP",
+"tkS",
+"quG"
+],
+"falli": [
+"TDL",
+"yUM",
+"uiA"
+],
+"onza": [
+"MCQ",
+"Jgv",
+"UfI"
+],
+"oui": [
+"HJF",
+"aru",
+"vpk"
+],
+"pastume": [
+"TNq",
+"pfG",
+"oHU"
+]
+}
+}

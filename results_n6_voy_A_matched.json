@@ -1,0 +1,141 @@
+{
+ "row": {
+  "name": "voynich_A",
+  "tokens": 11231,
+  "types": 3217,
+  "pages": 114,
+  "lines": 1557,
+  "errors": {},
+  "types_25k": 3217,
+  "h2": 2.1453,
+  "sd_len": 1.786,
+  "jsd_first_fg": 0.1392,
+  "p_init_enrich": 11.62,
+  "m_final_enrich": 6.21,
+  "cross_excess_eva": 0.1203,
+  "redup_pct": 0.864,
+  "v1_pass": false,
+  "v1_missed": [
+   "m_final_enrich"
+  ],
+  "v1_full": {
+   "name": "voynich_A",
+   "tokens": 11231,
+   "types": 3217,
+   "hapax_rate": 0.6888,
+   "mean_len": 4.791,
+   "sd_len": 1.786,
+   "h1": 3.8335,
+   "h2": 2.1453,
+   "h3": 1.8771,
+   "zipf": -0.9608,
+   "redup_pct": 0.864,
+   "jsd_first_fg": 0.1392,
+   "jsd_last_lg": 0.0838,
+   "p_init_enrich": 11.62,
+   "m_final_enrich": 6.21,
+   "cross_mi_eva": 0.146,
+   "cross_excess_eva": 0.1203,
+   "cross_mi_glyph": 0.1773,
+   "cross_excess_glyph": 0.1327,
+   "recur_le_1": 0.0086,
+   "recur_le_5": 0.0444,
+   "recur_le_20": 0.126,
+   "recur_le_100": 0.3058
+  },
+  "x_edge_mi_word": 0.12652864094305027,
+  "x_hapax_10k": 0.693109243697479,
+  "x_moran_I": 0.1053124882657831,
+  "x_position_entropy": 1.6947677157897374,
+  "x_ltr_minus_rtl": 0.00473753138672399,
+  "info_mi_adjacent": 0.10316037250088006,
+  "info_mi_page": -0.0011640261598417911,
+  "info_samecol_minus_othercol": 0.009968583510213902,
+  "info_bpe_adjacent": 1.1121502252489435,
+  "lex_beta": 0.7472566014258144,
+  "lex_rate_late_early": 0.5185567010309279,
+  "lex_edit1_excess": 0.09138949331675478,
+  "slot_occupancy_pc": 0.06961375154088481,
+  "slot_table_likeness": 0.6875357165793116,
+  "slot_core_crowding": 0.8600191754554171,
+  "bake_winner": "markov2",
+  "bake_char3_minus_unigram": -0.6619929957677417,
+  "bake_bits": {
+   "markov2": 11.4286710789249,
+   "markov3": 11.53456004633373,
+   "slot": 12.303561949430676,
+   "unigram_gt": 12.196553042101472,
+   "copy0.3+markov3": 11.809740974420599,
+   "copy0.1+markov3": 11.56705839875687,
+   "copy0.05+markov3": 11.526678819793696
+  },
+  "family": "V",
+  "note": "ZL3b EVA paragraphs (vparse), whole; lang=A: 114/207 pages",
+  "lang": "A",
+  "in_out": {
+   "L": {
+    "ins": 4,
+    "outs": 6,
+    "na": 0,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "p_init_enrich",
+     "m_final_enrich",
+     "redup_pct",
+     "x_position_entropy"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "p_init_enrich",
+     "m_final_enrich",
+     "redup_pct",
+     "x_position_entropy"
+    ]
+   },
+   "C": {
+    "ins": 2,
+    "outs": 6,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word"
+    ]
+   },
+   "G": {
+    "ins": 7,
+    "outs": 3,
+    "na": 0,
+    "out_metrics": [
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "x_edge_mi_word"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "x_edge_mi_word"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "results_n6_ranges_A11k.json"
+}

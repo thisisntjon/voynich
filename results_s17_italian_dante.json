@@ -1,0 +1,152 @@
+{
+ "row": {
+  "name": "italian_dante",
+  "tokens": 25001,
+  "types": 5250,
+  "pages": 27,
+  "lines": 3470,
+  "errors": {},
+  "types_25k": 5249,
+  "h2": 3.1042,
+  "sd_len": 2.234,
+  "jsd_first_fg": 0.0337,
+  "p_init_enrich": 1.22,
+  "m_final_enrich": 0.0,
+  "cross_excess_eva": 0.1615,
+  "redup_pct": 0.048,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "jsd_first_fg",
+   "p_init_enrich",
+   "m_final_enrich",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "italian_dante",
+   "tokens": 25000,
+   "types": 5249,
+   "hapax_rate": 0.6352,
+   "mean_len": 3.935,
+   "sd_len": 2.234,
+   "h1": 3.9249,
+   "h2": 3.1042,
+   "h3": 2.6287,
+   "zipf": -1.0294,
+   "redup_pct": 0.048,
+   "jsd_first_fg": 0.0337,
+   "jsd_last_lg": 0.1648,
+   "p_init_enrich": 1.22,
+   "m_final_enrich": 0.0,
+   "cross_mi_eva": 0.1781,
+   "cross_excess_eva": 0.1615,
+   "cross_mi_glyph": 0.1933,
+   "cross_excess_glyph": 0.1717,
+   "recur_le_1": 0.0005,
+   "recur_le_5": 0.035,
+   "recur_le_20": 0.1412,
+   "recur_le_100": 0.3428
+  },
+  "x_edge_mi_word": 0.16720316597384935,
+  "x_hapax_10k": 0.6643433602347762,
+  "x_moran_I": -0.15113367138443878,
+  "x_position_entropy": 2.0138741336074117,
+  "x_ltr_minus_rtl": 0.0027970766753164697,
+  "info_mi_adjacent": 0.6585243615753396,
+  "info_mi_page": 0.014019395665672674,
+  "info_samecol_minus_othercol": 0.023532435424638676,
+  "info_bpe_adjacent": 0.903231963270615,
+  "lex_beta": 0.7716250136926344,
+  "lex_rate_late_early": 0.43973747016706444,
+  "lex_edit1_excess": 0.05961904761904763,
+  "slot_occupancy_pc": 0.040919435098378684,
+  "slot_table_likeness": 0.6290610988471519,
+  "slot_core_crowding": 0.7481135465325188,
+  "bake_winner": "unigram_gt",
+  "bake_char3_minus_unigram": 0.1156288979450597,
+  "bake_bits": {
+   "markov2": 13.400431745389527,
+   "markov3": 12.236498485310003,
+   "slot": 13.011574721459159,
+   "unigram_gt": 12.120869587364943,
+   "copy0.3+markov3": 12.630150903386317,
+   "copy0.1+markov3": 12.335941800467436,
+   "copy0.05+markov3": 12.27831194426937
+  },
+  "family": "L",
+  "note": ".//data//controls_realline//italian_dante.meta.json; 101607 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 7,
+    "outs": 3,
+    "na": 0,
+    "out_metrics": [
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "x_edge_mi_word"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "cross_excess_eva"
+    ]
+   },
+   "C": {
+    "ins": 2,
+    "outs": 6,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k"
+    ]
+   },
+   "G": {
+    "ins": 6,
+    "outs": 4,
+    "na": 0,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_position_entropy"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "x_position_entropy"
+    ]
+   },
+   "X": {
+    "ins": 8,
+    "outs": 1,
+    "na": 1,
+    "out_metrics": [
+     "x_edge_mi_word"
+    ],
+    "out_tight": [
+     "x_edge_mi_word"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": ".//s15_ranges.json"
+}

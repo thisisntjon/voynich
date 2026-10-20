@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:02:05.1679552Z",
+ "response": "{\n  \"PT\": \"CIRCLE\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"0\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"ROSETTE\",\n  \"J_shape\": \"OTHER\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"NA\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"HUMAN\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"20+\",\n  \"C_rings\": \"4+\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"NA\",\n  \"B_figures\": \"NA\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Circular diagram with multiple human figures and rings.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2728328700,
+ "load_duration": 226199200,
+ "prompt_eval_count": 3354,
+ "prompt_eval_duration": 786666000,
+ "eval_count": 202,
+ "eval_duration": 1550381000,
+ "stem": "133_73v"
+}

@@ -1,0 +1,92 @@
+s124 page grouping of pharma plant-part drawings; SEED 20261019; N_PERM 2000; device cuda:0
+FIXTURE strong seed 0: n_obj 358 T +0.1307 p 0.0005 AUC 0.703 -> GROUPED_BY_PAGE
+FIXTURE strong seed 1: n_obj 391 T +0.1424 p 0.0005 AUC 0.718 -> GROUPED_BY_PAGE
+FIXTURE strong seed 2: n_obj 352 T +0.1187 p 0.0005 AUC 0.669 -> GROUPED_BY_PAGE
+FIXTURE strong seed 3: n_obj 363 T +0.1199 p 0.0005 AUC 0.673 -> GROUPED_BY_PAGE
+FIXTURE strong seed 4: n_obj 385 T +0.1400 p 0.0005 AUC 0.723 -> GROUPED_BY_PAGE
+FIXTURE strong seed 5: n_obj 375 T +0.1271 p 0.0005 AUC 0.689 -> GROUPED_BY_PAGE
+FIXTURE strong seed 6: n_obj 379 T +0.1460 p 0.0005 AUC 0.728 -> GROUPED_BY_PAGE
+FIXTURE strong seed 7: n_obj 381 T +0.1329 p 0.0005 AUC 0.689 -> GROUPED_BY_PAGE
+FIXTURE strong seed 8: n_obj 369 T +0.1315 p 0.0005 AUC 0.697 -> GROUPED_BY_PAGE
+FIXTURE strong seed 9: n_obj 377 T +0.1304 p 0.0005 AUC 0.699 -> GROUPED_BY_PAGE
+FIXTURE absent seed 0: n_obj 357 T -0.0010 p 0.4923 AUC 0.497 -> NOT_GROUPED
+FIXTURE absent seed 1: n_obj 353 T +0.0010 p 0.1014 AUC 0.498 -> NOT_GROUPED
+FIXTURE absent seed 2: n_obj 361 T -0.0044 p 0.9070 AUC 0.492 -> NOT_GROUPED
+FIXTURE absent seed 3: n_obj 381 T +0.0003 p 0.9270 AUC 0.502 -> NOT_GROUPED
+FIXTURE absent seed 4: n_obj 391 T -0.0002 p 0.9005 AUC 0.503 -> NOT_GROUPED
+FIXTURE absent seed 5: n_obj 374 T -0.0007 p 0.6972 AUC 0.502 -> NOT_GROUPED
+FIXTURE absent seed 6: n_obj 386 T +0.0046 p 0.0985 AUC 0.510 -> NOT_GROUPED
+FIXTURE absent seed 7: n_obj 354 T -0.0010 p 0.8636 AUC 0.498 -> NOT_GROUPED
+FIXTURE absent seed 8: n_obj 347 T -0.0002 p 0.7576 AUC 0.501 -> NOT_GROUPED
+FIXTURE absent seed 9: n_obj 351 T +0.0022 p 0.3283 AUC 0.506 -> NOT_GROUPED
+FIXTURE weak   seed 0: n_obj 361 T +0.0218 p 0.0005 AUC 0.533 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 1: n_obj 367 T +0.0275 p 0.0005 AUC 0.542 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 2: n_obj 369 T +0.0155 p 0.0005 AUC 0.520 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 3: n_obj 389 T +0.0279 p 0.0005 AUC 0.545 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 4: n_obj 355 T +0.0208 p 0.0005 AUC 0.531 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 5: n_obj 396 T +0.0210 p 0.0005 AUC 0.536 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 6: n_obj 371 T +0.0135 p 0.0005 AUC 0.522 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 7: n_obj 376 T +0.0277 p 0.0005 AUC 0.543 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 8: n_obj 366 T +0.0162 p 0.0005 AUC 0.530 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 9: n_obj 410 T +0.0201 p 0.0005 AUC 0.529 -> GROUPED_BY_PAGE
+FIXTURE strong GROUPED 10/10 (need >= 8); absent NOT_GROUPED 10/10 (need >= 8); weak GROUPED 10/10 (reported)
+FIXTURE_GATE PASS
+Voynich objects 334 in 17 units (17 with >= 4); jars 67
+PRIMARY (DINOv2 silhouette, size-residualised): T +0.0056 null -0.0025 +- 0.0020 p 0.0005 AUC 0.519 (within pairs 3431, between 25891); OLS beta [0.5461, -0.0354, -0.0179, -0.0028]
+SECONDARY classical: T +0.0034 p 0.2809 AUC 0.502
+SECONDARY colour: T +0.0331 p 0.0005 AUC 0.573
+CLUSTERS k=17 ARI 0.0041 null 0.0001 +- 0.0026 p 0.0765
+SCAN CONTROL (same canvas, 3 canvases [np.str_('161_88v_and_89r.jpg'), np.str_('177_100v_and_101r.jpg'), np.str_('179_101v_part_and_102r.jpg')], 168 objects): T_canvas +0.0090 p 0.0240 AUC 0.531
+JAR (secondary) within-panel: 54 jar groups in 16 panels, 311 objects: T_jar +0.0059 p 0.1084 AUC 0.520
+JAR (secondary) vs other units (labels = jar group where defined, else panel): T +0.0112 p 0.0015 AUC 0.538
+SHUFFLED-VOYNICH 1: T -0.0040 p 0.7676 AUC 0.488 -> NOT_GROUPED
+SHUFFLED-VOYNICH 2: T -0.0040 p 0.7901 AUC 0.486 -> NOT_GROUPED
+SHUFFLED-VOYNICH 3: T -0.0035 p 0.7091 AUC 0.487 -> NOT_GROUPED
+SHUFFLED-VOYNICH 4: T -0.0038 p 0.7481 AUC 0.485 -> NOT_GROUPED
+SHUFFLED-VOYNICH 5: T -0.0005 p 0.1669 AUC 0.498 -> NOT_GROUPED
+SHUFFLED-VOYNICH 6: T +0.0006 p 0.0705 AUC 0.501 -> NOT_GROUPED
+SHUFFLED-VOYNICH 7: T -0.0061 p 0.9720 AUC 0.477 -> NOT_GROUPED
+SHUFFLED-VOYNICH 8: T +0.0007 p 0.0560 AUC 0.503 -> NOT_GROUPED
+SHUFFLED-VOYNICH 9: T -0.0036 p 0.7166 AUC 0.485 -> NOT_GROUPED
+SHUFFLED-VOYNICH 10: T -0.0019 p 0.3883 AUC 0.493 -> NOT_GROUPED
+CONTROL sloane4016: 227 candidate images, 179 eligible (>= 4 objects), 3 sets
+CONTROL sloane4016 set 0: pages 16 objects 116 T +0.0509 p 0.0005 AUC 0.635 -> GROUPED_BY_PAGE
+CONTROL sloane4016 set 1: pages 16 objects 147 T +0.0431 p 0.0005 AUC 0.622 -> GROUPED_BY_PAGE
+CONTROL sloane4016 set 2: pages 16 objects 157 T +0.0200 p 0.0010 AUC 0.554 -> GROUPED_BY_PAGE
+CONTROL ljs419: 197 candidate images, 148 eligible (>= 4 objects), 3 sets
+CONTROL ljs419 set 0: pages 16 objects 162 T +0.0295 p 0.0005 AUC 0.593 -> GROUPED_BY_PAGE
+CONTROL ljs419 set 1: pages 16 objects 180 T +0.0123 p 0.0050 AUC 0.536 -> GROUPED_BY_PAGE
+CONTROL ljs419 set 2: pages 16 objects 160 T +0.0310 p 0.0005 AUC 0.608 -> GROUPED_BY_PAGE
+CONTROL bsb_clm5905: 391 candidate images, 73 eligible (>= 4 objects), 3 sets
+CONTROL bsb_clm5905 set 0: pages 16 objects 112 T +0.0271 p 0.0005 AUC 0.579 -> GROUPED_BY_PAGE
+CONTROL bsb_clm5905 set 1: pages 16 objects 122 T +0.0264 p 0.0005 AUC 0.578 -> GROUPED_BY_PAGE
+CONTROL bsb_clm5905 set 2: pages 16 objects 81 T +0.0193 p 0.0015 AUC 0.554 -> GROUPED_BY_PAGE
+CONTROL bl_add41623: 323 candidate images, 243 eligible (>= 4 objects), 3 sets
+CONTROL bl_add41623 set 0: pages 16 objects 221 T +0.0174 p 0.0005 AUC 0.552 -> GROUPED_BY_PAGE
+CONTROL bl_add41623 set 1: pages 16 objects 201 T +0.0127 p 0.0010 AUC 0.532 -> GROUPED_BY_PAGE
+CONTROL bl_add41623 set 2: pages 16 objects 221 T +0.0105 p 0.0405 AUC 0.526 -> NOT_GROUPED
+CONTROL canon_misc_408: 158 candidate images, 77 eligible (>= 4 objects), 3 sets
+CONTROL canon_misc_408 set 0: pages 16 objects 98 T +0.0170 p 0.0050 AUC 0.543 -> GROUPED_BY_PAGE
+CONTROL canon_misc_408 set 1: pages 16 objects 115 T +0.0112 p 0.0595 AUC 0.530 -> NOT_GROUPED
+CONTROL canon_misc_408 set 2: pages 16 objects 95 T +0.0244 p 0.0005 AUC 0.579 -> GROUPED_BY_PAGE
+DESCRIPTIVE (no call): objects per cluster for each panel (cluster ids from the k-unit clustering)
+  f88r_p1    n= 21 c0:18 c3:1 c6:1 c11:1
+  f88v_p1    n= 24 c0:15 c6:3 c3:2 c14:2 c7:1 c10:1
+  f89r1_p1   n= 18 c0:13 c3:1 c4:1 c10:1 c14:1 c15:1
+  f89r2_p1   n= 29 c0:18 c3:6 c5:2 c7:2 c4:1
+  f89v1_p1   n= 13 c0:7 c7:2 c1:1 c3:1 c4:1 c13:1
+  f89v2_p1   n= 22 c0:12 c3:4 c12:3 c6:1 c7:1 c14:1
+  f100r_p1   n= 14 c0:8 c3:3 c2:1 c4:1 c16:1
+  f100v_p1   n= 14 c0:11 c3:2 c9:1
+  f101r_p1   n= 36 c0:30 c3:4 c4:1 c6:1
+  f101v_p1   n= 18 c0:15 c3:2 c14:1
+  f101v_p2   n= 20 c0:11 c3:3 c2:2 c6:1 c7:1 c11:1 c14:1
+  f102r1_p1  n= 12 c0:10 c3:1 c8:1
+  f102r2_p1  n= 15 c0:11 c3:1 c5:1 c7:1 c16:1
+  f102v1_p1  n= 13 c0:8 c3:3 c4:1 c7:1
+  f102v2_p1  n= 23 c0:19 c14:2 c2:1 c3:1
+  f99r_p1    n= 21 c0:17 c1:2 c3:1 c4:1
+  f99v_p1    n= 21 c0:18 c3:1 c4:1 c5:1
+CALL s124 primary: GROUPED_BY_PAGE (p 0.0005, AUC 0.519)
+CALL s124 vs real herbal controls: BELOW RANGE (Voynich AUC 0.519; controls [0.526, 0.635] over 15 sets)
+CALL s124 shuffled Voynich: 0/10 GROUPED_BY_PAGE; AUC range [0.477, 0.503]

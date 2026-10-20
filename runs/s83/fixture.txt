@@ -1,0 +1,286 @@
+s83 fixture (--synth) -- date: Sun Oct 18 04:12:15 PDT 2026 (`date`)
+device: cuda
+  F3 GPU/CPU MI check K=5: max |diff| 1.78e-15 on cuda
+  F3 GPU/CPU MI check K=50: max |diff| 8.88e-16 on cuda
+  F3 GPU/CPU MI check K=200: max |diff| 1.78e-15 on cuda
+  synthetic manuscript: HLT lat-syll-p0.9-cad {'r': 0.25, 'a': 1.0, 'g': 2.0} built from all ZL3b pages; 207 pages, 34562 tokens; pool {('latin', 'syllable'): {'unit_types': 779, 'stream': 81182, 'H_mean': 3.0, 'H_median': 1.0, 'H_max': 14, 'cores': 2335}}
+  synthetic Moran 0.2627
+[306s] fold B done (298s)
+[316s] fold E done (308s)
+[401s] fold M done (392s)
+[443s] fold T done (434s)
+--- FIX fold B: held-out 14 pages (1208 tokens), training 193 pages (33354 tokens)
+  kit: classes [27, 12, 13, 45, 36, 9, 5, 28, 20, 33, 9, 63]; line tables {'sizes': [618, 720, 642, 752, 652, 597], 'contexts_P': [15994, 9627, 3644, 806, 428, 13], 'contexts_S': [7878, 6789, 627, 361, 13], 'inertia': 442.653}; mu 5.349
+  pool latin/letter: {'unit_types': 23, 'stream': 143139, 'H_mean': 91.6, 'H_median': 102.0, 'H_max': 104, 'cores': 2107}
+  pool latin/syllable: {'unit_types': 703, 'stream': 82750, 'H_mean': 3.0, 'H_median': 3.0, 'H_max': 7, 'cores': 2107}
+  pool latin/chunk: {'unit_types': 433, 'stream': 80524, 'H_mean': 4.9, 'H_median': 1.0, 'H_max': 14, 'cores': 2107}
+  pool italian/letter: {'unit_types': 23, 'stream': 236473, 'H_mean': 91.6, 'H_median': 103.0, 'H_max': 105, 'cores': 2107}
+  pool italian/syllable: {'unit_types': 712, 'stream': 105347, 'H_mean': 3.0, 'H_median': 1.0, 'H_max': 10, 'cores': 2107}
+  pool italian/chunk: {'unit_types': 283, 'stream': 134551, 'H_mean': 7.4, 'H_median': 7.0, 'H_max': 17, 'cores': 2107}
+  training targets: Moran 0.2619, sd 1.4139, pm1 +0.0720, pm3 -0.0026, core order K100 +0.2323, R(1) 0.823, types 10015
+  fit lat-lett-p0.5-nocad          loss     945.2 (112, 4, 723, 155, 0, 0, 105) r 0.0 a 1.0 g 0.0; in-sample Moran -0.007 pm1 +0.077 pm3 -0.003 co +0.130 R1 0.45 types 10217
+  fit lat-lett-p0.5-cad            loss     359.7 (98, 188, 0, 753, 0, 0, 73) r 0.0 a 1.0 g 1.25; in-sample Moran 0.262 pm1 +0.075 pm3 -0.002 co +0.147 R1 0.53 types 8640
+  fit lat-lett-p0.9-nocad          loss     944.8 (124, 6, 714, 126, 1, 0, 99) r 0.0 a 1.0 g 0.0; in-sample Moran -0.005 pm1 +0.082 pm3 -0.004 co +0.133 R1 0.43 types 10269
+  fit lat-lett-p0.9-cad            loss     388.5 (129, 137, 57, 432, 2, 0, 64) r 0.0 a 1.0 g 0.75; in-sample Moran 0.186 pm1 +0.085 pm3 -0.002 co +0.152 R1 0.42 types 8842
+  fit lat-syll-p0.5-nocad          loss     541.7 (38, 55, 366, 195, 3, 0, 79) r 0.0 a 1.0 g 0.0; in-sample Moran 0.071 pm1 +0.088 pm3 -0.004 co +0.321 R1 0.90 types 10760
+  fit lat-syll-p0.5-cad            loss      89.6 (24, 0, 0, 575, 1, 0, 65) r 0.0 a 0.75 g 2.0; in-sample Moran 0.263 pm1 +0.079 pm3 -0.002 co +0.313 R1 0.88 types 9972
+  fit lat-syll-p0.9-nocad          loss     546.1 (10, 109, 375, 244, 2, 0, 51) r 0.0 a 1.0 g 0.0; in-sample Moran 0.068 pm1 +0.086 pm3 -0.004 co +0.303 R1 0.87 types 11059
+  fit lat-syll-p0.9-cad        SEL loss      53.2 (15, 2, 1, 557, 0, 0, 35) r 0.25 a 0.75 g 2.0; in-sample Moran 0.272 pm1 +0.078 pm3 -0.001 co +0.292 R1 0.87 types 10156
+  fit lat-chun-p0.5-nocad          loss    2272.0 (271, 1284, 711, 432, 0, 0, 6) r 0.5 a 1.0 g 0.0; in-sample Moran -0.005 pm1 +0.075 pm3 +0.000 co +0.256 R1 0.54 types 13604
+  fit lat-chun-p0.5-cad            loss     485.5 (150, 322, 2, 542, 0, 0, 11) r 0.25 a 1.0 g 2.0; in-sample Moran 0.248 pm1 +0.067 pm3 -0.005 co +0.266 R1 0.58 types 11812
+  fit lat-chun-p0.9-nocad          loss    2415.4 (239, 1488, 688, 500, 0, 0, 0) r 0.5 a 1.0 g 0.0; in-sample Moran -0.000 pm1 +0.076 pm3 -0.004 co +0.232 R1 0.58 types 13878
+  fit lat-chun-p0.9-cad            loss     509.2 (140, 354, 2, 636, 0, 0, 14) r 0.0 a 1.0 g 2.0; in-sample Moran 0.248 pm1 +0.077 pm3 -0.003 co +0.270 R1 0.43 types 11898
+  fit ita-lett-p0.5-nocad          loss     940.7 (142, 19, 777, 144, 2, 0, 1) r 0.0 a 1.0 g 0.0; in-sample Moran -0.017 pm1 +0.086 pm3 -0.001 co +0.243 R1 0.42 types 10447
+  fit ita-lett-p0.5-cad            loss     331.5 (108, 113, 92, 364, 1, 0, 17) r 0.0 a 1.0 g 0.75; in-sample Moran 0.166 pm1 +0.083 pm3 -0.001 co +0.274 R1 0.49 types 8949
+  fit ita-lett-p0.9-nocad          loss     943.5 (160, 6, 775, 100, 2, 0, 1) r 0.0 a 1.0 g 0.0; in-sample Moran -0.016 pm1 +0.085 pm3 -0.002 co +0.240 R1 0.37 types 10259
+  fit ita-lett-p0.9-cad            loss     337.0 (106, 204, 2, 823, 3, 0, 22) r 0.0 a 1.0 g 1.25; in-sample Moran 0.248 pm1 +0.091 pm3 -0.003 co +0.279 R1 0.56 types 8586
+  fit ita-syll-p0.5-nocad          loss    2587.7 (120, 1795, 672, 533, 1, 0, 0) r 0.5 a 1.0 g 0.0; in-sample Moran 0.003 pm1 +0.080 pm3 -0.003 co +0.239 R1 0.39 types 14258
+  fit ita-syll-p0.5-cad            loss     719.0 (187, 519, 10, 411, 0, 0, 3) r 0.0 a 1.0 g 2.0; in-sample Moran 0.230 pm1 +0.066 pm3 -0.004 co +0.249 R1 0.33 types 12296
+  fit ita-syll-p0.9-nocad          loss    2568.9 (172, 1770, 626, 495, 1, 0, 1) r 0.25 a 1.0 g 0.0; in-sample Moran 0.012 pm1 +0.079 pm3 -0.006 co +0.242 R1 0.36 types 14228
+  fit ita-syll-p0.9-cad            loss     769.2 (114, 647, 4, 423, 0, 0, 4) r 0.5 a 1.0 g 2.0; in-sample Moran 0.241 pm1 +0.072 pm3 -0.002 co +0.253 R1 0.45 types 12562
+  fit ita-chun-p0.5-nocad          loss    2011.5 (181, 438, 650, 379, 1, 0, 741) r 0.5 a 1.0 g 0.0; in-sample Moran 0.007 pm1 +0.083 pm3 -0.004 co +0.505 R1 0.34 types 12112
+  fit ita-chun-p0.5-cad            loss     933.4 (201, 154, 18, 530, 2, 0, 558) r 0.0 a 0.75 g 2.0; in-sample Moran 0.219 pm1 +0.087 pm3 -0.002 co +0.469 R1 0.32 types 11256
+  fit ita-chun-p0.9-nocad          loss    2063.5 (175, 404, 696, 396, 1, 0, 788) r 0.5 a 1.0 g 0.0; in-sample Moran -0.002 pm1 +0.080 pm3 -0.001 co +0.513 R1 0.34 types 12029
+  fit ita-chun-p0.9-cad            loss     956.2 (183, 162, 13, 560, 3, 0, 596) r 0.5 a 0.75 g 2.0; in-sample Moran 0.227 pm1 +0.089 pm3 -0.002 co +0.476 R1 0.30 types 11288
+  fits 178s; SEL = lat-syll-p0.9-cad
+  Voynich band (training quires, min..max): K50 [+0.1354,+0.2530] n14, K100 [+0.1431,+0.2760] n14, K200 [+0.1674,+0.2994] n14
+  real held-out: Moran 0.2824; core->core +0.3263; prefix gain +0.0656; jsd 0.1559; CHARWIN -0.1987; R(1) 0.758; s69 M1 +0.0656 calls TFFFTTF; core order K50 +0.2945 [+0.2275,+0.3037] p 0.005, K100 +0.3020 [+0.2332,+0.3028] p 0.005, K200 +0.2707 [+0.2016,+0.2747] p 0.005
+  -- SEL (lat-syll-p0.9-cad): 3/6 [P1+ P2- P3+ P4- P5- P7+]; C2 + K50 +0.2077 p 0.005, K100 +0.2031 p 0.005, K200 +0.2266 p 0.005; R(1) 0.811; s69 M1 +0.1128 calls TFFFTTF match
+    P1 HOLDS: Moran Δ +0.0133 [-0.0141,+0.0486] (gen 0.2957, real 0.2824); margin hi-0 = +0.0486
+    P2 fails: core->core excess Δ -0.1025 [-0.1502,-0.0506] (gen +0.2237, real +0.3263); margins 0-lo +0.1502, hi-0 -0.0506
+    P3 HOLDS: prefix gain gen +0.0730 vs real +0.0656 [+0.0519,+0.0788]; margins g-lo +0.0212, hi-g +0.0057
+    P4 fails: jsd_first_fg gen 0.1144 vs s15 width [0.1447,0.2156] (real held-out 0.1559); margins -0.0303 / +0.1012; excess gen +0.0924 real +0.1316
+    P5 fails: CHARWIN gen -0.4493 (real -0.1987); margin -0.4493
+    P7 HOLDS: types gen/real at matched tokens 1.070 (seeds 1.102, 1.037); tol ±15%
+  -- NAIBBE (NAIBBE): 1/6 [P1- P2- P3- P4- P5- P7+]; C2 - K50 -0.0034 p 0.562 OUT, K100 -0.0058 p 0.602 OUT, K200 +0.0287 p 0.090 OUT; R(1) 0.949; s69 M1 -0.0123 calls TFFFTFF MISMATCH
+    P1 fails: Moran Δ -0.2802 [-0.3106,-0.2409] (gen 0.0022, real 0.2824); margin hi-0 = -0.2409
+    P2 fails: core->core excess Δ -0.2999 [-0.3285,-0.2186] (gen +0.0264, real +0.3263); margins 0-lo +0.3285, hi-0 -0.2186
+    P3 fails: prefix gain gen -0.0151 vs real +0.0656 [+0.0519,+0.0788]; margins g-lo -0.0670, hi-g +0.0939
+    P4 fails: jsd_first_fg gen 0.0169 vs s15 width [0.1447,0.2156] (real held-out 0.1559); margins -0.1278 / +0.1987; excess gen -0.0024 real +0.1316
+    P5 fails: CHARWIN gen -0.2002 (real -0.1987); margin -0.2002
+    P7 HOLDS: types gen/real at matched tokens 0.880 (seeds 0.882, 0.878); tol ±15%
+  -- ORACLE (ORACLE): 3/6 [P1+ P2- P3+ P4- P5- P7+]; C2 + K50 +0.2002 p 0.005, K100 +0.1847 p 0.005, K200 +0.2299 p 0.005; R(1) 0.878; s69 M1 +0.0579 calls TFFFTFF MISMATCH
+    P1 HOLDS: Moran Δ -0.0123 [-0.0478,+0.0266] (gen 0.2701, real 0.2824); margin hi-0 = +0.0266
+    P2 fails: core->core excess Δ -0.0715 [-0.1248,-0.0244] (gen +0.2548, real +0.3263); margins 0-lo +0.1248, hi-0 -0.0244
+    P3 HOLDS: prefix gain gen +0.0744 vs real +0.0656 [+0.0519,+0.0788]; margins g-lo +0.0225, hi-g +0.0044
+    P4 fails: jsd_first_fg gen 0.1161 vs s15 width [0.1447,0.2156] (real held-out 0.1559); margins -0.0286 / +0.0995; excess gen +0.0943 real +0.1316
+    P5 fails: CHARWIN gen -0.2006 (real -0.1987); margin -0.2006
+    P7 HOLDS: types gen/real at matched tokens 1.016 (seeds 1.029, 1.003); tol ±15%
+  fold time 298s (fits 178s)
+--- FIX fold E: held-out 16 pages (1843 tokens), training 191 pages (32719 tokens)
+  kit: classes [30, 9, 43, 10, 46, 9, 10, 5, 19, 37, 50, 32]; line tables {'sizes': [637, 738, 615, 546, 683, 700], 'contexts_P': [15611, 9396, 3331, 771, 427, 13], 'contexts_S': [7704, 6635, 593, 342, 13], 'inertia': 433.271}; mu 5.344
+  pool latin/letter: {'unit_types': 23, 'stream': 143139, 'H_mean': 89.8, 'H_median': 100.0, 'H_max': 102, 'cores': 2066}
+  pool latin/syllable: {'unit_types': 689, 'stream': 83060, 'H_mean': 3.0, 'H_median': 3.0, 'H_max': 7, 'cores': 2066}
+  pool latin/chunk: {'unit_types': 433, 'stream': 80524, 'H_mean': 4.8, 'H_median': 1.0, 'H_max': 14, 'cores': 2066}
+  pool italian/letter: {'unit_types': 23, 'stream': 236473, 'H_mean': 89.8, 'H_median': 101.0, 'H_max': 103, 'cores': 2066}
+  pool italian/syllable: {'unit_types': 698, 'stream': 105557, 'H_mean': 3.0, 'H_median': 1.0, 'H_max': 10, 'cores': 2066}
+  pool italian/chunk: {'unit_types': 283, 'stream': 134551, 'H_mean': 7.3, 'H_median': 6.0, 'H_max': 17, 'cores': 2066}
+  training targets: Moran 0.2650, sd 1.4126, pm1 +0.0706, pm3 -0.0011, core order K100 +0.2394, R(1) 0.829, types 9794
+  fit lat-lett-p0.5-nocad          loss     885.1 (94, 16, 668, 157, 1, 0, 105) r 0.0 a 1.0 g 0.0; in-sample Moran 0.007 pm1 +0.081 pm3 -0.002 co +0.137 R1 0.46 types 10191
+  fit lat-lett-p0.5-cad            loss     345.6 (110, 83, 51, 361, 0, 0, 102) r 0.0 a 1.0 g 0.75; in-sample Moran 0.194 pm1 +0.076 pm3 -0.002 co +0.139 R1 0.50 types 8902
+  fit lat-lett-p0.9-nocad          loss     956.6 (129, 7, 714, 132, 1, 0, 107) r 0.0 a 1.0 g 0.0; in-sample Moran -0.002 pm1 +0.078 pm3 -0.005 co +0.136 R1 0.41 types 10047
+  fit lat-lett-p0.9-cad            loss     377.1 (138, 180, 0, 710, 1, 0, 58) r 0.0 a 1.0 g 1.25; in-sample Moran 0.263 pm1 +0.080 pm3 -0.003 co +0.163 R1 0.42 types 8479
+  fit lat-syll-p0.5-nocad          loss     561.9 (36, 73, 380, 247, 2, 0, 70) r 0.5 a 1.0 g 0.0; in-sample Moran 0.070 pm1 +0.086 pm3 -0.003 co +0.323 R1 0.92 types 10630
+  fit lat-syll-p0.5-cad            loss      80.4 (22, 2, 1, 628, 0, 0, 56) r 0.25 a 0.75 g 2.0; in-sample Moran 0.254 pm1 +0.076 pm3 -0.002 co +0.314 R1 0.87 types 9672
+  fit lat-syll-p0.9-nocad          loss     612.7 (20, 160, 388, 222, 0, 0, 44) r 0.0 a 1.0 g 0.0; in-sample Moran 0.068 pm1 +0.073 pm3 -0.003 co +0.306 R1 0.85 types 11032
+  fit lat-syll-p0.9-cad        SEL loss      51.7 (12, 7, 2, 642, 1, 0, 29) r 0.0 a 0.75 g 2.0; in-sample Moran 0.281 pm1 +0.078 pm3 -0.004 co +0.293 R1 0.85 types 10059
+  fit lat-chun-p0.5-nocad          loss    2474.2 (168, 1638, 667, 476, 0, 0, 1) r 0.25 a 1.0 g 0.0; in-sample Moran 0.007 pm1 +0.073 pm3 -0.004 co +0.248 R1 0.51 types 13758
+  fit lat-chun-p0.5-cad            loss     540.2 (102, 436, 2, 556, 0, 0, 1) r 0.0 a 1.0 g 2.0; in-sample Moran 0.252 pm1 +0.066 pm3 -0.003 co +0.249 R1 0.49 types 11838
+  fit lat-chun-p0.9-nocad          loss    2632.4 (123, 1787, 718, 487, 0, 0, 5) r 0.0 a 1.0 g 0.0; in-sample Moran -0.003 pm1 +0.069 pm3 -0.003 co +0.218 R1 0.49 types 13934
+  fit lat-chun-p0.9-cad            loss     606.7 (152, 452, 0, 583, 0, 0, 2) r 0.0 a 1.0 g 2.0; in-sample Moran 0.266 pm1 +0.068 pm3 -0.002 co +0.255 R1 0.42 types 11876
+  fit ita-lett-p0.5-nocad          loss    1014.7 (129, 24, 860, 174, 2, 0, 0) r 0.0 a 1.0 g 0.0; in-sample Moran -0.028 pm1 +0.083 pm3 -0.001 co +0.235 R1 0.46 types 10270
+  fit ita-lett-p0.5-cad            loss     301.8 (105, 167, 7, 777, 0, 0, 22) r 0.0 a 1.0 g 1.25; in-sample Moran 0.239 pm1 +0.077 pm3 +0.000 co +0.286 R1 0.54 types 8527
+  fit ita-lett-p0.9-nocad          loss    1062.3 (156, 28, 876, 165, 1, 0, 0) r 0.0 a 1.0 g 0.0; in-sample Moran -0.031 pm1 +0.083 pm3 -0.002 co +0.235 R1 0.37 types 10312
+  fit ita-lett-p0.9-cad            loss     278.8 (106, 60, 92, 380, 1, 0, 20) r 0.0 a 1.0 g 0.75; in-sample Moran 0.169 pm1 +0.081 pm3 -0.002 co +0.284 R1 0.52 types 9037
+  fit ita-syll-p0.5-nocad          loss    3151.1 (99, 2227, 823, 602, 0, 0, 1) r 0.5 a 1.0 g 0.0; in-sample Moran -0.022 pm1 +0.072 pm3 -0.004 co +0.227 R1 0.44 types 14416
+  fit ita-syll-p0.5-cad            loss     808.8 (151, 632, 24, 408, 0, 0, 2) r 0.0 a 1.0 g 2.0; in-sample Moran 0.216 pm1 +0.068 pm3 -0.003 co +0.253 R1 0.36 types 12256
+  fit ita-syll-p0.9-nocad          loss    3049.2 (153, 2058, 836, 581, 1, 0, 1) r 0.5 a 1.0 g 0.0; in-sample Moran -0.024 pm1 +0.081 pm3 -0.004 co +0.228 R1 0.42 types 14237
+  fit ita-syll-p0.9-cad            loss     866.7 (123, 720, 19, 361, 0, 0, 4) r 0.5 a 1.0 g 2.0; in-sample Moran 0.221 pm1 +0.074 pm3 -0.002 co +0.260 R1 0.44 types 12422
+  fit ita-chun-p0.5-nocad          loss    2089.0 (206, 532, 701, 407, 1, 0, 650) r 0.5 a 1.0 g 0.0; in-sample Moran 0.000 pm1 +0.079 pm3 -0.003 co +0.494 R1 0.31 types 12052
+  fit ita-chun-p0.5-cad            loss     988.5 (207, 196, 15, 476, 2, 0, 568) r 0.25 a 0.75 g 2.0; in-sample Moran 0.226 pm1 +0.083 pm3 -0.004 co +0.478 R1 0.32 types 11165
+  fit ita-chun-p0.9-nocad          loss    2154.4 (206, 548, 744, 412, 2, 0, 655) r 0.0 a 1.0 g 0.0; in-sample Moran -0.008 pm1 +0.084 pm3 -0.006 co +0.495 R1 0.32 types 12086
+  fit ita-chun-p0.9-cad            loss     898.5 (187, 196, 5, 513, 1, 0, 510) r 0.25 a 0.75 g 2.0; in-sample Moran 0.243 pm1 +0.078 pm3 -0.003 co +0.465 R1 0.30 types 11166
+  fits 175s; SEL = lat-syll-p0.9-cad
+  Voynich band (training quires, min..max): K50 [+0.1414,+0.2957] n14, K100 [+0.1478,+0.3030] n14, K200 [+0.1589,+0.3295] n14
+  real held-out: Moran 0.2207; core->core +0.1939; prefix gain +0.0908; jsd 0.1227; CHARWIN -0.2498; R(1) 0.841; s69 M1 +0.0908 calls TFFFTTF; core order K50 +0.1726 [+0.1374,+0.1968] p 0.005, K100 +0.2381 [+0.1938,+0.2578] p 0.005, K200 +0.2537 [+0.2099,+0.2769] p 0.005
+  -- SEL (lat-syll-p0.9-cad): 2/6 [P1+ P2- P3- P4- P5- P7+]; C2 + K50 +0.2524 p 0.005, K100 +0.2480 p 0.005, K200 +0.2507 p 0.005; R(1) 0.849; s69 M1 +0.0857 calls TFFFTTF match
+    P1 HOLDS: Moran Δ +0.0337 [+0.0093,+0.0607] (gen 0.2544, real 0.2207); margin hi-0 = +0.0607
+    P2 fails: core->core excess Δ +0.0838 [+0.0392,+0.1274] (gen +0.2777, real +0.1939); margins 0-lo -0.0392, hi-0 +0.1274
+    P3 fails: prefix gain gen +0.0765 vs real +0.0908 [+0.0770,+0.1023]; margins g-lo -0.0004, hi-g +0.0258
+    P4 fails: jsd_first_fg gen 0.1168 vs s15 width [0.1447,0.2156] (real held-out 0.1227); margins -0.0279 / +0.0988; excess gen +0.1017 real +0.1073
+    P5 fails: CHARWIN gen -0.3758 (real -0.2498); margin -0.3758
+    P7 HOLDS: types gen/real at matched tokens 0.980 (seeds 0.996, 0.963); tol ±15%
+  -- NAIBBE (NAIBBE): 0/6 [P1- P2- P3- P4- P5- P7-]; C2 - K50 +0.0202 p 0.090 OUT, K100 +0.0310 p 0.020 OUT, K200 +0.0323 p 0.040 OUT; R(1) 0.990; s69 M1 -0.0164 calls TFFFTFF MISMATCH
+    P1 fails: Moran Δ -0.2171 [-0.2393,-0.1897] (gen 0.0036, real 0.2207); margin hi-0 = -0.1897
+    P2 fails: core->core excess Δ -0.1653 [-0.1853,-0.1128] (gen +0.0286, real +0.1939); margins 0-lo +0.1853, hi-0 -0.1128
+    P3 fails: prefix gain gen -0.0145 vs real +0.0908 [+0.0770,+0.1023]; margins g-lo -0.0915, hi-g +0.1168
+    P4 fails: jsd_first_fg gen 0.0100 vs s15 width [0.1447,0.2156] (real held-out 0.1227); margins -0.1347 / +0.2056; excess gen -0.0048 real +0.1073
+    P5 fails: CHARWIN gen -0.2119 (real -0.2498); margin -0.2119
+    P7 fails: types gen/real at matched tokens 0.774 (seeds 0.791, 0.757); tol ±15%
+  -- ORACLE (ORACLE): 4/6 [P1+ P2+ P3- P4+ P5- P7+]; C2 + K50 +0.2361 p 0.005, K100 +0.2412 p 0.005, K200 +0.2779 p 0.005; R(1) 0.859; s69 M1 +0.0679 calls TFFFTTF match
+    P1 HOLDS: Moran Δ +0.0443 [+0.0161,+0.0730] (gen 0.2651, real 0.2207); margin hi-0 = +0.0730
+    P2 HOLDS: core->core excess Δ +0.0440 [-0.0112,+0.0814] (gen +0.2379, real +0.1939); margins 0-lo +0.0112, hi-0 +0.0814
+    P3 fails: prefix gain gen +0.0685 vs real +0.0908 [+0.0770,+0.1023]; margins g-lo -0.0085, hi-g +0.0339
+    P4 HOLDS: jsd_first_fg gen 0.1534 vs s15 width [0.1447,0.2156] (real held-out 0.1227); margins +0.0087 / +0.0622; excess gen +0.1377 real +0.1073
+    P5 fails: CHARWIN gen -0.1839 (real -0.2498); margin -0.1839
+    P7 HOLDS: types gen/real at matched tokens 0.900 (seeds 0.932, 0.868); tol ±15%
+  fold time 308s (fits 175s)
+--- FIX fold M: held-out 20 pages (6727 tokens), training 187 pages (27835 tokens)
+  kit: classes [49, 15, 52, 4, 34, 7, 52, 11, 26, 31, 9, 10]; line tables {'sizes': [619, 477, 580, 551, 586, 525], 'contexts_P': [14131, 8584, 3151, 748, 420, 13], 'contexts_S': [7045, 6085, 556, 326, 13], 'inertia': 370.669}; mu 5.355
+  pool latin/letter: {'unit_types': 23, 'stream': 143139, 'H_mean': 86.3, 'H_median': 96.0, 'H_max': 99, 'cores': 1985}
+  pool latin/syllable: {'unit_types': 662, 'stream': 83686, 'H_mean': 3.0, 'H_median': 3.0, 'H_max': 7, 'cores': 1985}
+  pool latin/chunk: {'unit_types': 433, 'stream': 80524, 'H_mean': 4.6, 'H_median': 1.0, 'H_max': 14, 'cores': 1985}
+  pool italian/letter: {'unit_types': 23, 'stream': 236473, 'H_mean': 86.3, 'H_median': 98.0, 'H_max': 99, 'cores': 1985}
+  pool italian/syllable: {'unit_types': 671, 'stream': 106054, 'H_mean': 3.0, 'H_median': 1.0, 'H_max': 10, 'cores': 1985}
+  pool italian/chunk: {'unit_types': 283, 'stream': 134551, 'H_mean': 7.0, 'H_median': 6.0, 'H_max': 16, 'cores': 1985}
+  training targets: Moran 0.2646, sd 1.4189, pm1 +0.0742, pm3 -0.0024, core order K100 +0.2370, R(1) 0.803, types 8880
+  fit lat-lett-p0.5-nocad          loss    1027.1 (137, 17, 760, 173, 1, 0, 112) r 0.0 a 1.0 g 0.0; in-sample Moran -0.011 pm1 +0.085 pm3 -0.003 co +0.131 R1 0.42 types 9248
+  fit lat-lett-p0.5-cad            loss     319.4 (111, 72, 43, 324, 1, 0, 92) r 0.0 a 1.0 g 0.75; in-sample Moran 0.199 pm1 +0.084 pm3 -0.004 co +0.141 R1 0.54 types 8125
+  fit lat-lett-p0.9-nocad          loss     978.6 (108, 20, 740, 154, 2, 0, 109) r 0.0 a 1.0 g 0.0; in-sample Moran -0.007 pm1 +0.087 pm3 +0.001 co +0.133 R1 0.47 types 9278
+  fit lat-lett-p0.9-cad            loss     353.2 (119, 84, 75, 387, 2, 0, 74) r 0.0 a 1.0 g 0.75; in-sample Moran 0.178 pm1 +0.087 pm3 -0.001 co +0.151 R1 0.42 types 8066
+  fit lat-syll-p0.5-nocad          loss     507.9 (61, 52, 322, 175, 2, 0, 71) r 0.5 a 1.0 g 0.0; in-sample Moran 0.085 pm1 +0.087 pm3 -0.007 co +0.321 R1 0.93 types 9522
+  fit lat-syll-p0.5-cad            loss      86.9 (45, 8, 5, 372, 1, 0, 27) r 0.25 a 0.75 g 1.25; in-sample Moran 0.242 pm1 +0.084 pm3 -0.005 co +0.289 R1 0.86 types 9129
+  fit lat-syll-p0.9-nocad          loss     539.1 (14, 152, 340, 260, 0, 0, 33) r 0.0 a 1.0 g 0.0; in-sample Moran 0.080 pm1 +0.081 pm3 -0.001 co +0.294 R1 0.88 types 9975
+  fit lat-syll-p0.9-cad        SEL loss      78.8 (22, 1, 0, 602, 1, 0, 55) r 0.0 a 1.0 g 2.0; in-sample Moran 0.269 pm1 +0.084 pm3 -0.003 co +0.311 R1 0.85 types 8803
+  fit lat-chun-p0.5-nocad          loss    2407.6 (139, 1503, 764, 507, 0, 0, 0) r 0.25 a 1.0 g 0.0; in-sample Moran -0.012 pm1 +0.080 pm3 -0.004 co +0.236 R1 0.50 types 12323
+  fit lat-chun-p0.5-cad            loss     467.1 (123, 334, 9, 579, 0, 0, 1) r 0.0 a 1.0 g 2.0; in-sample Moran 0.235 pm1 +0.075 pm3 +0.001 co +0.244 R1 0.49 types 10503
+  fit lat-chun-p0.9-nocad          loss    2409.0 (152, 1487, 769, 565, 0, 0, 2) r 0.0 a 1.0 g 0.0; in-sample Moran -0.013 pm1 +0.075 pm3 -0.005 co +0.224 R1 0.47 types 12304
+  fit lat-chun-p0.9-cad            loss     511.7 (157, 350, 2, 545, 0, 0, 2) r 0.0 a 1.0 g 2.0; in-sample Moran 0.251 pm1 +0.080 pm3 -0.002 co +0.253 R1 0.42 types 10542
+  fit ita-lett-p0.5-nocad          loss    1057.7 (132, 12, 908, 169, 2, 0, 3) r 0.0 a 1.0 g 0.0; in-sample Moran -0.037 pm1 +0.087 pm3 -0.001 co +0.219 R1 0.42 types 9191
+  fit ita-lett-p0.5-cad            loss     340.0 (127, 72, 134, 344, 3, 0, 3) r 0.0 a 1.0 g 0.75; in-sample Moran 0.149 pm1 +0.091 pm3 -0.005 co +0.255 R1 0.47 types 8126
+  fit ita-lett-p0.9-nocad          loss    1138.0 (177, 34, 925, 160, 1, 0, 1) r 0.0 a 1.0 g 0.0; in-sample Moran -0.039 pm1 +0.085 pm3 -0.003 co +0.227 R1 0.38 types 9397
+  fit ita-lett-p0.9-cad            loss     307.9 (102, 73, 123, 349, 2, 0, 7) r 0.0 a 1.0 g 0.75; in-sample Moran 0.154 pm1 +0.088 pm3 -0.005 co +0.264 R1 0.50 types 8120
+  fit ita-syll-p0.5-nocad          loss    2632.5 (124, 1649, 859, 522, 0, 0, 0) r 0.5 a 1.0 g 0.0; in-sample Moran -0.028 pm1 +0.078 pm3 -0.003 co +0.231 R1 0.43 types 12486
+  fit ita-syll-p0.5-cad            loss     667.0 (132, 508, 26, 430, 0, 0, 2) r 0.25 a 1.0 g 2.0; in-sample Moran 0.214 pm1 +0.078 pm3 -0.004 co +0.250 R1 0.40 types 10881
+  fit ita-syll-p0.9-nocad          loss    2546.9 (134, 1628, 785, 591, 0, 0, 0) r 0.5 a 1.0 g 0.0; in-sample Moran -0.016 pm1 +0.077 pm3 -0.002 co +0.243 R1 0.45 types 12463
+  fit ita-syll-p0.9-cad            loss     736.0 (108, 599, 27, 487, 0, 0, 3) r 0.5 a 1.0 g 2.0; in-sample Moran 0.213 pm1 +0.072 pm3 -0.000 co +0.253 R1 0.46 types 11053
+  fit ita-chun-p0.5-nocad          loss    1995.2 (180, 450, 671, 341, 2, 0, 692) r 0.25 a 1.0 g 0.0; in-sample Moran 0.006 pm1 +0.090 pm3 -0.003 co +0.500 R1 0.35 types 10763
+  fit ita-chun-p0.5-cad            loss     893.6 (163, 149, 5, 569, 2, 0, 575) r 0.25 a 0.75 g 2.0; in-sample Moran 0.243 pm1 +0.089 pm3 -0.002 co +0.477 R1 0.34 types 9963
+  fit ita-chun-p0.9-nocad          loss    1950.3 (176, 459, 608, 380, 0, 0, 706) r 0.25 a 1.0 g 0.0; in-sample Moran 0.018 pm1 +0.081 pm3 -0.006 co +0.503 R1 0.34 types 10783
+  fit ita-chun-p0.9-cad            loss     850.0 (182, 147, 1, 598, 2, 0, 518) r 0.5 a 0.75 g 2.0; in-sample Moran 0.255 pm1 +0.088 pm3 -0.002 co +0.465 R1 0.29 types 9956
+  fits 149s; SEL = lat-syll-p0.9-cad
+  Voynich band (training quires, min..max): K50 [+0.1507,+0.2946] n14, K100 [+0.1521,+0.2946] n14, K200 [+0.1587,+0.2897] n14
+  real held-out: Moran 0.2544; core->core +0.3145; prefix gain +0.0516; jsd 0.0955; CHARWIN -0.1791; R(1) 0.931; s69 M1 +0.0516 calls TFFFTTF; core order K50 +0.2163 [+0.2040,+0.2285] p 0.005, K100 +0.2576 [+0.2399,+0.2681] p 0.005, K200 +0.2621 [+0.2387,+0.2711] p 0.005
+  -- SEL (lat-syll-p0.9-cad): 2/6 [P1+ P2- P3- P4- P5- P7+]; C2 - K50 +0.2649 p 0.005, K100 +0.2990 p 0.005 OUT, K200 +0.3189 p 0.005 OUT; R(1) 0.748; s69 M1 +0.0786 calls TFFFTTF match
+    P1 HOLDS: Moran Δ +0.0223 [+0.0073,+0.0339] (gen 0.2768, real 0.2544); margin hi-0 = +0.0339
+    P2 fails: core->core excess Δ +0.0422 [+0.0160,+0.0601] (gen +0.3567, real +0.3145); margins 0-lo -0.0160, hi-0 +0.0601
+    P3 fails: prefix gain gen +0.0666 vs real +0.0516 [+0.0456,+0.0592]; margins g-lo +0.0211, hi-g -0.0074
+    P4 fails: jsd_first_fg gen 0.0911 vs s15 width [0.1447,0.2156] (real held-out 0.0955); margins -0.0536 / +0.1245; excess gen +0.0867 real +0.0913
+    P5 fails: CHARWIN gen -0.4135 (real -0.1791); margin -0.4135
+    P7 HOLDS: types gen/real at matched tokens 1.107 (seeds 1.037, 1.177); tol ±15%
+  -- NAIBBE (NAIBBE): 0/6 [P1- P2- P3- P4- P5- P7-]; C2 - K50 +0.0123 p 0.005 OUT, K100 +0.0102 p 0.060 OUT, K200 +0.0058 p 0.214 OUT; R(1) 0.898; s69 M1 -0.0231 calls TFFFTFF MISMATCH
+    P1 fails: Moran Δ -0.2843 [-0.2986,-0.2741] (gen -0.0299, real 0.2544); margin hi-0 = -0.2741
+    P2 fails: core->core excess Δ -0.3176 [-0.3194,-0.2809] (gen -0.0031, real +0.3145); margins 0-lo +0.3194, hi-0 -0.2809
+    P3 fails: prefix gain gen -0.0186 vs real +0.0516 [+0.0456,+0.0592]; margins g-lo -0.0641, hi-g +0.0778
+    P4 fails: jsd_first_fg gen 0.0038 vs s15 width [0.1447,0.2156] (real held-out 0.0955); margins -0.1409 / +0.2118; excess gen +0.0003 real +0.0913
+    P5 fails: CHARWIN gen -0.1837 (real -0.1791); margin -0.1837
+    P7 fails: types gen/real at matched tokens 0.821 (seeds 0.813, 0.828); tol ±15%
+  -- ORACLE (ORACLE): 2/6 [P1+ P2- P3- P4- P5- P7+]; C2 - K50 +0.2530 p 0.005, K100 +0.2762 p 0.005, K200 +0.2962 p 0.005 OUT; R(1) 0.856; s69 M1 +0.0651 calls TFFFTTF match
+    P1 HOLDS: Moran Δ +0.0316 [+0.0181,+0.0426] (gen 0.2861, real 0.2544); margin hi-0 = +0.0426
+    P2 fails: core->core excess Δ +0.0315 [+0.0054,+0.0607] (gen +0.3460, real +0.3145); margins 0-lo -0.0054, hi-0 +0.0607
+    P3 fails: prefix gain gen +0.0641 vs real +0.0516 [+0.0456,+0.0592]; margins g-lo +0.0185, hi-g -0.0049
+    P4 fails: jsd_first_fg gen 0.1072 vs s15 width [0.1447,0.2156] (real held-out 0.0955); margins -0.0375 / +0.1084; excess gen +0.1025 real +0.0913
+    P5 fails: CHARWIN gen -0.1636 (real -0.1791); margin -0.1636
+    P7 HOLDS: types gen/real at matched tokens 1.013 (seeds 1.009, 1.017); tol ±15%
+  fold time 392s (fits 149s)
+--- FIX fold T: held-out 23 pages (9025 tokens), training 184 pages (25537 tokens)
+  kit: classes [10, 43, 37, 35, 29, 2, 10, 50, 23, 20, 31, 10]; line tables {'sizes': [661, 451, 394, 497, 572, 471], 'contexts_P': [13333, 8116, 3370, 763, 411, 13], 'contexts_S': [6647, 5758, 605, 344, 13], 'inertia': 339.715}; mu 5.353
+  pool latin/letter: {'unit_types': 23, 'stream': 143139, 'H_mean': 84.2, 'H_median': 94.0, 'H_max': 96, 'cores': 1936}
+  pool latin/syllable: {'unit_types': 646, 'stream': 84082, 'H_mean': 3.0, 'H_median': 3.0, 'H_max': 6, 'cores': 1936}
+  pool latin/chunk: {'unit_types': 433, 'stream': 80524, 'H_mean': 4.5, 'H_median': 1.0, 'H_max': 13, 'cores': 1936}
+  pool italian/letter: {'unit_types': 23, 'stream': 236473, 'H_mean': 84.2, 'H_median': 95.0, 'H_max': 98, 'cores': 1936}
+  pool italian/syllable: {'unit_types': 655, 'stream': 106376, 'H_mean': 3.0, 'H_median': 1.0, 'H_max': 9, 'cores': 1936}
+  pool italian/chunk: {'unit_types': 283, 'stream': 134551, 'H_mean': 6.8, 'H_median': 6.0, 'H_max': 15, 'cores': 1936}
+  training targets: Moran 0.2580, sd 1.4063, pm1 +0.0732, pm3 +0.0011, core order K100 +0.2307, R(1) 0.875, types 8356
+  fit lat-lett-p0.5-nocad          loss     974.0 (157, 3, 719, 165, 0, 0, 94) r 0.0 a 1.0 g 0.0; in-sample Moran -0.010 pm1 +0.079 pm3 -0.000 co +0.134 R1 0.42 types 8494
+  fit lat-lett-p0.5-cad            loss     350.2 (83, 110, 60, 338, 2, 0, 95) r 0.0 a 1.0 g 0.75; in-sample Moran 0.180 pm1 +0.088 pm3 -0.002 co +0.133 R1 0.59 types 7481
+  fit lat-lett-p0.9-nocad          loss    1011.2 (150, 5, 743, 167, 3, 0, 110) r 0.0 a 1.0 g 0.0; in-sample Moran -0.015 pm1 +0.092 pm3 -0.000 co +0.126 R1 0.45 types 8535
+  fit lat-lett-p0.9-cad            loss     446.7 (190, 121, 61, 397, 3, 0, 72) r 0.0 a 1.0 g 0.75; in-sample Moran 0.180 pm1 +0.090 pm3 -0.001 co +0.146 R1 0.36 types 7437
+  fit lat-syll-p0.5-nocad          loss     515.4 (54, 5, 364, 194, 2, 0, 90) r 0.25 a 1.0 g 0.0; in-sample Moran 0.067 pm1 +0.088 pm3 -0.006 co +0.326 R1 0.87 types 8545
+  fit lat-syll-p0.5-cad            loss     103.1 (41, 16, 0, 606, 2, 0, 45) r 0.25 a 0.75 g 2.0; in-sample Moran 0.255 pm1 +0.086 pm3 -0.000 co +0.298 R1 0.90 types 8027
+  fit lat-syll-p0.9-nocad          loss     536.8 (17, 92, 390, 219, 1, 1, 37) r 0.0 a 1.0 g 0.0; in-sample Moran 0.061 pm1 +0.084 pm3 -0.006 co +0.291 R1 0.87 types 9157
+  fit lat-syll-p0.9-cad        SEL loss      69.9 (22, 15, 1, 571, 1, 0, 30) r 0.0 a 0.75 g 2.0; in-sample Moran 0.270 pm1 +0.085 pm3 -0.003 co +0.286 R1 0.86 types 8676
+  fit lat-chun-p0.5-nocad          loss    2122.0 (126, 1220, 774, 429, 0, 0, 1) r 0.0 a 1.0 g 0.0; in-sample Moran -0.020 pm1 +0.078 pm3 +0.002 co +0.240 R1 0.53 types 11275
+  fit lat-chun-p0.5-cad            loss     433.1 (157, 266, 2, 597, 0, 0, 8) r 0.0 a 1.0 g 2.0; in-sample Moran 0.244 pm1 +0.073 pm3 -0.002 co +0.260 R1 0.50 types 9719
+  fit lat-chun-p0.9-nocad          loss    2016.6 (197, 1127, 692, 444, 1, 0, 0) r 0.0 a 1.0 g 0.0; in-sample Moran -0.005 pm1 +0.081 pm3 -0.001 co +0.230 R1 0.43 types 11161
+  fit lat-chun-p0.9-cad            loss     510.4 (240, 259, 0, 610, 0, 0, 12) r 0.0 a 1.0 g 2.0; in-sample Moran 0.261 pm1 +0.072 pm3 -0.003 co +0.265 R1 0.38 types 9700
+  fit ita-lett-p0.5-nocad          loss    1030.2 (166, 10, 850, 177, 2, 0, 1) r 0.0 a 1.0 g 0.0; in-sample Moran -0.034 pm1 +0.088 pm3 -0.005 co +0.219 R1 0.44 types 8625
+  fit ita-lett-p0.5-cad            loss     325.5 (137, 89, 89, 340, 2, 0, 9) r 0.0 a 1.0 g 0.75; in-sample Moran 0.164 pm1 +0.087 pm3 +0.002 co +0.261 R1 0.48 types 7569
+  fit ita-lett-p0.9-nocad          loss    1052.1 (184, 22, 842, 190, 3, 0, 1) r 0.0 a 1.0 g 0.0; in-sample Moran -0.032 pm1 +0.091 pm3 -0.002 co +0.222 R1 0.35 types 8744
+  fit ita-lett-p0.9-cad            loss     318.8 (118, 88, 105, 377, 1, 0, 6) r 0.0 a 1.0 g 0.75; in-sample Moran 0.155 pm1 +0.083 pm3 -0.006 co +0.255 R1 0.56 types 7574
+  fit ita-syll-p0.5-nocad          loss    2237.8 (222, 1234, 781, 511, 0, 0, 1) r 0.0 a 1.0 g 0.0; in-sample Moran -0.021 pm1 +0.073 pm3 -0.003 co +0.241 R1 0.37 types 11291
+  fit ita-syll-p0.5-cad            loss     543.8 (154, 356, 28, 500, 0, 0, 6) r 0.5 a 1.0 g 2.0; in-sample Moran 0.205 pm1 +0.079 pm3 -0.000 co +0.254 R1 0.43 types 9933
+  fit ita-syll-p0.9-nocad          loss    2218.0 (137, 1281, 798, 521, 0, 0, 1) r 0.5 a 1.0 g 0.0; in-sample Moran -0.025 pm1 +0.074 pm3 +0.004 co +0.241 R1 0.47 types 11347
+  fit ita-syll-p0.9-cad            loss     612.1 (139, 443, 26, 464, 0, 0, 4) r 0.25 a 1.0 g 2.0; in-sample Moran 0.207 pm1 +0.072 pm3 -0.003 co +0.250 R1 0.48 types 10115
+  fit ita-chun-p0.5-nocad          loss    1866.9 (186, 270, 706, 327, 2, 0, 703) r 0.5 a 1.0 g 0.0; in-sample Moran -0.008 pm1 +0.086 pm3 -0.005 co +0.496 R1 0.35 types 9729
+  fit ita-chun-p0.5-cad            loss     925.3 (226, 95, 3, 622, 1, 0, 600) r 0.5 a 0.75 g 2.0; in-sample Moran 0.240 pm1 +0.085 pm3 -0.003 co +0.476 R1 0.32 types 9170
+  fit ita-chun-p0.9-nocad          loss    1941.0 (234, 355, 668, 329, 2, 0, 681) r 0.0 a 1.0 g 0.0; in-sample Moran -0.000 pm1 +0.086 pm3 -0.004 co +0.492 R1 0.31 types 9931
+  fit ita-chun-p0.9-cad            loss     960.1 (231, 112, 7, 616, 0, 0, 610) r 0.25 a 0.75 g 2.0; in-sample Moran 0.232 pm1 +0.079 pm3 -0.001 co +0.478 R1 0.30 types 9242
+  fits 137s; SEL = lat-syll-p0.9-cad
+  Voynich band (training quires, min..max): K50 [+0.1338,+0.2637] n14, K100 [+0.1503,+0.2552] n14, K200 [+0.1673,+0.3408] n14
+  real held-out: Moran 0.2753; core->core +0.3419; prefix gain +0.0581; jsd 0.1177; CHARWIN -0.1392; R(1) 0.734; s69 M1 +0.0581 calls TFFFTTF; core order K50 +0.2210 [+0.2110,+0.2323] p 0.005, K100 +0.2418 [+0.2228,+0.2555] p 0.005, K200 +0.2607 [+0.2355,+0.2714] p 0.005
+  -- SEL (lat-syll-p0.9-cad): 4/6 [P1+ P2+ P3+ P4- P5- P7+]; C2 - K50 +0.2322 p 0.005, K100 +0.2645 p 0.005 OUT, K200 +0.2901 p 0.005; R(1) 0.894; s69 M1 +0.0690 calls TFFFTTF match
+    P1 HOLDS: Moran Δ -0.0013 [-0.0148,+0.0135] (gen 0.2740, real 0.2753); margin hi-0 = +0.0135
+    P2 HOLDS: core->core excess Δ -0.0040 [-0.0390,+0.0162] (gen +0.3378, real +0.3419); margins 0-lo +0.0390, hi-0 +0.0162
+    P3 HOLDS: prefix gain gen +0.0645 vs real +0.0581 [+0.0499,+0.0648]; margins g-lo +0.0146, hi-g +0.0003
+    P4 fails: jsd_first_fg gen 0.1032 vs s15 width [0.1447,0.2156] (real held-out 0.1177); margins -0.0415 / +0.1124; excess gen +0.1000 real +0.1141
+    P5 fails: CHARWIN gen -0.3615 (real -0.1392); margin -0.3615
+    P7 HOLDS: types gen/real at matched tokens 1.104 (seeds 1.056, 1.153); tol ±15%
+  -- NAIBBE (NAIBBE): 0/6 [P1- P2- P3- P4- P5- P7-]; C2 - K50 +0.0128 p 0.005 OUT, K100 +0.0177 p 0.005 OUT, K200 +0.0159 p 0.010 OUT; R(1) 0.894; s69 M1 -0.0094 calls TFFFTFF MISMATCH
+    P1 fails: Moran Δ -0.3162 [-0.3261,-0.3025] (gen -0.0409, real 0.2753); margin hi-0 = -0.3025
+    P2 fails: core->core excess Δ -0.3329 [-0.3393,-0.2922] (gen +0.0090, real +0.3419); margins 0-lo +0.3393, hi-0 -0.2922
+    P3 fails: prefix gain gen -0.0123 vs real +0.0581 [+0.0499,+0.0648]; margins g-lo -0.0621, hi-g +0.0771
+    P4 fails: jsd_first_fg gen 0.0023 vs s15 width [0.1447,0.2156] (real held-out 0.1177); margins -0.1424 / +0.2133; excess gen -0.0005 real +0.1141
+    P5 fails: CHARWIN gen -0.1722 (real -0.1392); margin -0.1722
+    P7 fails: types gen/real at matched tokens 0.776 (seeds 0.785, 0.768); tol ±15%
+  -- ORACLE (ORACLE): 3/6 [P1+ P2+ P3- P4- P5- P7+]; C2 - K50 +0.2287 p 0.005, K100 +0.2697 p 0.005 OUT, K200 +0.2939 p 0.005; R(1) 0.926; s69 M1 +0.0695 calls TFFFTTF match
+    P1 HOLDS: Moran Δ -0.0048 [-0.0197,+0.0091] (gen 0.2706, real 0.2753); margin hi-0 = +0.0091
+    P2 HOLDS: core->core excess Δ +0.0222 [-0.0046,+0.0453] (gen +0.3641, real +0.3419); margins 0-lo +0.0046, hi-0 +0.0453
+    P3 fails: prefix gain gen +0.0680 vs real +0.0581 [+0.0499,+0.0648]; margins g-lo +0.0181, hi-g -0.0032
+    P4 fails: jsd_first_fg gen 0.1170 vs s15 width [0.1447,0.2156] (real held-out 0.1177); margins -0.0277 / +0.0986; excess gen +0.1136 real +0.1141
+    P5 fails: CHARWIN gen -0.1636 (real -0.1392); margin -0.1636
+    P7 HOLDS: types gen/real at matched tokens 0.991 (seeds 0.989, 0.993); tol ±15%
+  fold time 434s (fits 137s)
+=== PER-PREDICTION FOLD COUNTS (P1 P2 P3 P4 P5 P7; folds >= 5/6; C2 folds; C3 folds; R(1)>1 folds; s69-match folds) ===
+  FIX:
+    SEL                      >=5/6  0/4 | P1  4 P2  1 P3  2 P4  0 P5  0 P7  4 | C2  2 | C3  0 (R1>1  0, s69  4) | mean R1 0.825
+    lat-lett-p0.5-nocad      >=5/6  0/4 | P1  0 P2  0 P3  1 P4  0 P5  0 P7  4 | C2  0 | C3  0 (R1>1  0, s69  4) | mean R1 0.335
+    lat-lett-p0.5-cad        >=5/6  0/4 | P1  2 P2  0 P3  0 P4  0 P5  0 P7  4 | C2  0 | C3  0 (R1>1  0, s69  4) | mean R1 0.617
+    lat-lett-p0.9-nocad      >=5/6  0/4 | P1  0 P2  0 P3  1 P4  0 P5  0 P7  4 | C2  0 | C3  0 (R1>1  0, s69  3) | mean R1 0.393
+    lat-lett-p0.9-cad        >=5/6  0/4 | P1  1 P2  0 P3  1 P4  0 P5  0 P7  4 | C2  0 | C3  0 (R1>1  0, s69  3) | mean R1 0.441
+    lat-syll-p0.5-nocad      >=5/6  0/4 | P1  0 P2  0 P3  2 P4  0 P5  0 P7  4 | C2  1 | C3  1 (R1>1  1, s69  4) | mean R1 0.913
+    lat-syll-p0.5-cad        >=5/6  0/4 | P1  2 P2  1 P3  1 P4  0 P5  0 P7  4 | C2  3 | C3  0 (R1>1  0, s69  4) | mean R1 0.786
+    lat-syll-p0.9-nocad      >=5/6  0/4 | P1  0 P2  0 P3  2 P4  0 P5  0 P7  4 | C2  3 | C3  0 (R1>1  0, s69  3) | mean R1 0.798
+    lat-syll-p0.9-cad        >=5/6  0/4 | P1  4 P2  1 P3  2 P4  0 P5  0 P7  4 | C2  2 | C3  0 (R1>1  0, s69  4) | mean R1 0.825
+    lat-chun-p0.5-nocad      >=5/6  0/4 | P1  0 P2  0 P3  3 P4  0 P5  0 P7  0 | C2  0 | C3  0 (R1>1  0, s69  3) | mean R1 0.695
+    lat-chun-p0.5-cad        >=5/6  0/4 | P1  3 P2  0 P3  2 P4  0 P5  0 P7  1 | C2  1 | C3  0 (R1>1  0, s69  4) | mean R1 0.582
+    lat-chun-p0.9-nocad      >=5/6  0/4 | P1  0 P2  0 P3  1 P4  0 P5  0 P7  0 | C2  0 | C3  0 (R1>1  0, s69  2) | mean R1 0.584
+    lat-chun-p0.9-cad        >=5/6  0/4 | P1  1 P2  0 P3  3 P4  0 P5  0 P7  1 | C2  0 | C3  0 (R1>1  0, s69  2) | mean R1 0.696
+    ita-lett-p0.5-nocad      >=5/6  0/4 | P1  0 P2  0 P3  1 P4  0 P5  0 P7  4 | C2  1 | C3  0 (R1>1  0, s69  3) | mean R1 0.531
+    ita-lett-p0.5-cad        >=5/6  0/4 | P1  1 P2  0 P3  1 P4  0 P5  0 P7  4 | C2  3 | C3  0 (R1>1  0, s69  4) | mean R1 0.442
+    ita-lett-p0.9-nocad      >=5/6  0/4 | P1  0 P2  0 P3  0 P4  0 P5  0 P7  4 | C2  1 | C3  0 (R1>1  0, s69  4) | mean R1 0.422
+    ita-lett-p0.9-cad        >=5/6  0/4 | P1  0 P2  0 P3  1 P4  0 P5  0 P7  4 | C2  2 | C3  0 (R1>1  0, s69  4) | mean R1 0.523
+    ita-syll-p0.5-nocad      >=5/6  0/4 | P1  0 P2  0 P3  2 P4  0 P5  0 P7  0 | C2  0 | C3  0 (R1>1  0, s69  4) | mean R1 0.553
+    ita-syll-p0.5-cad        >=5/6  0/4 | P1  2 P2  0 P3  2 P4  0 P5  0 P7  1 | C2  0 | C3  0 (R1>1  0, s69  3) | mean R1 0.681
+    ita-syll-p0.9-nocad      >=5/6  0/4 | P1  0 P2  0 P3  1 P4  0 P5  0 P7  0 | C2  0 | C3  0 (R1>1  0, s69  4) | mean R1 0.544
+    ita-syll-p0.9-cad        >=5/6  0/4 | P1  0 P2  0 P3  2 P4  0 P5  0 P7  1 | C2  0 | C3  0 (R1>1  0, s69  3) | mean R1 0.674
+    ita-chun-p0.5-nocad      >=5/6  0/4 | P1  0 P2  2 P3  2 P4  0 P5  0 P7  1 | C2  2 | C3  0 (R1>1  0, s69  4) | mean R1 0.443
+    ita-chun-p0.5-cad        >=5/6  0/4 | P1  1 P2  1 P3  1 P4  0 P5  0 P7  2 | C2  3 | C3  0 (R1>1  0, s69  2) | mean R1 0.478
+    ita-chun-p0.9-nocad      >=5/6  0/4 | P1  0 P2  1 P3  0 P4  0 P5  0 P7  1 | C2  1 | C3  0 (R1>1  0, s69  4) | mean R1 0.448
+    ita-chun-p0.9-cad        >=5/6  0/4 | P1  1 P2  1 P3  2 P4  0 P5  0 P7  3 | C2  3 | C3  0 (R1>1  0, s69  3) | mean R1 0.419
+    NAIBBE                   >=5/6  0/4 | P1  0 P2  0 P3  0 P4  0 P5  0 P7  1 | C2  0 | C3  0 (R1>1  0, s69  0) | mean R1 0.933
+    ORACLE                   >=5/6  0/4 | P1  4 P2  2 P3  1 P4  1 P5  0 P7  4 | C2  2 | C3  0 (R1>1  0, s69  3) | mean R1 0.880
+
+=== SEL per fold ===
+  FIX B: lat-syll-p0.9-cad        3/6 +-+--+ t1.07 | C2 +++ | R1 gen 0.811 real 0.758 | s69 gen TFFFTTF real TFFFTTF M1 gen +0.113 real +0.066
+  FIX E: lat-syll-p0.9-cad        2/6 +----+ t0.98 | C2 +++ | R1 gen 0.849 real 0.841 | s69 gen TFFFTTF real TFFFTTF M1 gen +0.086 real +0.091
+  FIX M: lat-syll-p0.9-cad        2/6 +----+ t1.11 | C2 +-- | R1 gen 0.748 real 0.931 | s69 gen TFFFTTF real TFFFTTF M1 gen +0.079 real +0.052
+  FIX T: lat-syll-p0.9-cad        4/6 +++--+ t1.10 | C2 +-+ | R1 gen 0.894 real 0.734 | s69 gen TFFFTTF real TFFFTTF M1 gen +0.069 real +0.058
+  SEL chosen: {'lat-syll-p0.9-cad': 4}
+
+  ORACLE (planted kit and parameters, fresh seeds) holds >= 3 of P1 P2 P3 P7 on 3/4 folds (the battery's ceiling for this family)
+  F1 SEL holds >= 3 of P1 P2 P3 P7 on 2/4 folds (need >= max(2, ORACLE - 1) = 2) -> OK  [planted config fixed: 2/4; SEL >= 5/6 of all six: 0/4]
+  F2 NAIBBE holds < 3 of P1 P2 P3 P7 on 4/4 folds (need >= 3) -> OK  [NAIBBE >= 5/6: 0/4]
+  F3 GPU MI equals s80.mi_batch -> OK
+  reported: SEL = planted configuration on 4/4 folds; SEL C2 folds 2/4, C3 folds 0/4; NAIBBE C2 0/4, C3 0/4
+FIXTURE PASS (443s); date end: Sun Oct 18 04:19:38 PDT 2026 (`date`)

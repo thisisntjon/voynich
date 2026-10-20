@@ -1,0 +1,22 @@
+s115-A1 kappa: pilot_pass1.tsv vs pilot_pass2.tsv; images in both: 15 (only pass1 0, only pass2 0)
+category	n_applicable	percent_agree	kappa	levels_pass1	levels_pass2
+PT	15	1.000	1.000	BATH:3,CIRCLE:2,MARGINAL:2,NONE:1,PHARMA:2,PLANT:5	BATH:3,CIRCLE:2,MARGINAL:2,NONE:1,PHARMA:2,PLANT:5
+P_plants	5	1.000	1.000	1:3,2:2	1:3,2:2
+P_root	5	0.600	0.444	BRANCHING:2,BULB:1,TUBER:2	BRANCHING:1,BULB:3,TUBER:1
+P_leafshape	5	1.000	1.000	DIVIDED:3,ELLIPTIC:1,LINEAR:1	DIVIDED:3,ELLIPTIC:1,LINEAR:1
+P_leafcount	5	1.000	1.000	11-20:4,5-10:1	11-20:4,5-10:1
+P_flower	5	1.000	1.000	1:1,2-4:2,5+:2	1:1,2-4:2,5+:2
+P_habit	5	1.000	1.000	MULTI:1,SINGLE:4	MULTI:1,SINGLE:4
+J_shape	2	1.000	1.000	CYLINDER:1,VASE:1	CYLINDER:1,VASE:1
+J_count	2	0.500	0.000	5+:2	3-4:1,5+:1
+J_fragcount	2	1.000	1.000	16+:1,6-15:1	16+:1,6-15:1
+J_fragtype	2	1.000	undefined	MIXED:2	MIXED:2
+C_centre	2	1.000	undefined	ANIMAL:2	ANIMAL:2
+C_animal	2	1.000	1.000	CRAWLER:1,HORNED:1	CRAWLER:1,HORNED:1
+C_figures	2	1.000	1.000	10-19:1,20+:1	10-19:1,20+:1
+C_rings	2	1.000	1.000	2:1,3:1	2:1,3:1
+C_diagrams	2	1.000	1.000	1:1,4+:1	1:1,4+:1
+C_rays	2	1.000	undefined	ABSENT:2	ABSENT:2
+B_pools	3	1.000	undefined	3+:3	3+:3
+B_figures	3	1.000	1.000	11+:2,6-10:1	11+:2,6-10:1
+B_tubes	3	1.000	undefined	PRESENT:3	PRESENT:3

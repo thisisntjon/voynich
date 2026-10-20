@@ -1,0 +1,29 @@
+# UNVERIFIED (not yet seen by the Independent Verifier)
+plan_id=PLAN-X01-v5.1 plan_sha256=af4fee6b847caca46afd2456818d510e817cb09699b91034270ac7f4a6a75393
+mode=GATE
+script=vx01_a1_known_answer.py script_sha256=5c408207c9668f203e3f716caa1d4db1412ea1943fc4c6707aac0eaa00b39d9e
+common_sha256=cd4e5960f6e4058fd75f63478be58acf3b27ac54c6168a818c2d19a89325360a
+gate_seeds_sha256=bd9961f3510c7f4ae50f45a693ff73b143447f89fdc1c10d7ed95cfb1068a3dd
+dev_log_sha256=c8f6f7893aceb8d2ffda8d2e34be14c2ed63d5e8dc74a949ea33ef3f99f7a49f
+stub_match=True stub_files_match=True
+earlier_GATE_START_without_complete=0
+argv=--gate
+seeds=20261301,20261302,20261303,20261304,20261305,20261306,20261307,20261308,20261309,20261310,20261311,20261312,20261313,20261314,20261315,20261321,20261322,20261323,20261324,20261325,20261326,20261327,20261328,20261329,20261330,20261331,20261332,20261333,20261334,20261335,20261401,20261402,20261403,20261404,20261405,20261406,20261407,20261408,20261409,20261410,20261411,20261412,20261413,20261414,20261415,20261501,20261502,20261503,20261504,20261505,20261506,20261507,20261508,20261509,20261510,20261511,20261512,20261513,20261514,20261515,20261601,20261602,20261603,20261604,20261605,20261606,20261607,20261608,20261609,20261610,20261611,20261612,20261613,20261614,20261615
+scores_file=runs/vx01_a1/a1_scores.csv
+scores_sha256=f42277ea43798defdb99520511ce7f1980a24cfb515d70710b7d26a32ac2a9ca
+
+A1 known-answer roll-up: books passing out of 15 per cell. G1/G2 pass = F1>=0.85 and exact>=0.70; NULL pass = false structure<=0.05.
+Label rule: ADEQUATE ON PLANTED BOOKS (G1 at Slot-sized inventories, G2 Rugg-sized) only if all 9 cells have >=10/15.
+segmenter        ZL3b-G1  ZL3b-G2  ZL3b-NULL  RF1b-G1  RF1b-G2  RF1b-NULL  IT2a-G1  IT2a-G2  IT2a-NULL  LABEL
+Slot                  0/15       0/15       0/15       0/15       0/15       0/15       0/15       0/15       0/15  NOT ADEQUATE
+Zattera-primary       0/15       0/15       0/15       0/15       0/15       0/15       0/15       0/15       0/15  NOT ADEQUATE
+Zattera-hybrid        0/15       0/15       0/15       0/15       0/15       0/15       0/15       0/15       0/15  NOT ADEQUATE
+Zattera-S2            0/15       0/15       0/15       0/15       0/15       0/15       0/15       0/15       0/15  NOT ADEQUATE
+Seg_Affix2            0/15       0/15       0/15       0/15       0/15       0/15       0/15       0/15       0/15  NOT ADEQUATE
+Canonical             0/15       0/15       0/15       0/15       0/15       0/15       0/15       0/15       0/15  NOT ADEQUATE
+vx01_seg_mdl         15/15       0/15      15/15      15/15       0/15      15/15      15/15       0/15      15/15  NOT ADEQUATE
+unsegmented           0/15       0/15      15/15       0/15       0/15      15/15       0/15       0/15      15/15  NOT ADEQUATE
+
+No segmenter, Slot included, is ADEQUATE: X-01 stays at-risk; no finding is upgraded or downgraded; A2/A3 flips are descriptive only (filed as 'no segmenter validated').
+Zattera-hybrid (Part B dependency): fails in at least one cell
+These labels hold only on synthetic books with independent affix draws (Slot's own assumption). They do not mean adequate for the Voynich text and do not discharge X-01.

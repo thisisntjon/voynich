@@ -1,0 +1,153 @@
+job L4 catalan key 1 start 02:13:11
+MDL slot search: 127 prefix / 99 suffix candidates; cost 287869 -> 282624; |P|=32 |S|=23
+cand (0.01,0.5) |P|=31 |S|=24 reading=sep units=1265 score=-337888 ignored=0 crit=-346878
+cand (0.01,0.5) |P|=31 |S|=24 reading=pair units=297 score=-113428 ignored=-107818 crit=-231956
+cand (0.01,0.5) |P|=31 |S|=24 reading=core units=1210 score=-134176 ignored=-132848 crit=-277734
+cand (mdl,-) |P|=32 |S|=23 reading=sep units=1252 score=-331589 ignored=0 crit=-340486
+cand (mdl,-) |P|=32 |S|=23 reading=pair units=260 score=-109812 ignored=-108678 crit=-228845
+cand (mdl,-) |P|=32 |S|=23 reading=core units=1197 score=-134108 ignored=-128411 crit=-272873
+final pair r0 p1 sweep 0 T=20.000 score=-174547.5 nulls=73 M=18905
+final pair r0 p1 sweep 10 T=7.767 score=-133568.9 nulls=73 M=18905
+final pair r0 p1 sweep 20 T=3.016 score=-133158.2 nulls=73 M=18905
+final pair r0 p1 sweep 30 T=1.171 score=-133103.9 nulls=73 M=18905
+final pair r0 p1 sweep 39 T=0.000 score=-133103.9 nulls=73 M=18905
+final pair r0 stepwise nulls: 27 rounds, nulls 99, score -109812.1
+final pair r0 p2 sweep 0 T=0.500 score=-109812.1 nulls=99 M=16020
+final pair r0 p2 sweep 3 T=0.000 score=-109812.1 nulls=99 M=16020
+final pair restart 0 final score -109812.1 nulls 99
+final pair r1 p1 sweep 0 T=20.000 score=-175288.1 nulls=81 M=18858
+final pair r1 p1 sweep 10 T=7.767 score=-163615.4 nulls=81 M=18858
+final pair r1 p1 sweep 20 T=3.016 score=-162905.6 nulls=81 M=18858
+final pair r1 p1 sweep 30 T=1.171 score=-162871.4 nulls=81 M=18858
+final pair r1 p1 sweep 39 T=0.000 score=-162854.1 nulls=81 M=18858
+final pair r1 stepwise nulls: 58 rounds, nulls 138, score -147587.1
+final pair r1 p2 sweep 0 T=0.500 score=-147511.7 nulls=133 M=11400
+final pair r1 p2 sweep 3 T=0.000 score=-147500.2 nulls=133 M=11401
+final pair restart 1 final score -147500.2 nulls 133
+final pair r2 p1 sweep 0 T=20.000 score=-178201.7 nulls=73 M=18905
+final pair r2 p1 sweep 10 T=7.767 score=-164203.3 nulls=73 M=18905
+final pair r2 p1 sweep 20 T=3.016 score=-163658.7 nulls=73 M=18905
+final pair r2 p1 sweep 30 T=1.171 score=-163382.9 nulls=73 M=18905
+final pair r2 p1 sweep 39 T=0.000 score=-163379.2 nulls=73 M=18905
+final pair r2 stepwise nulls: 46 rounds, nulls 118, score -147305.6
+final pair r2 p2 sweep 0 T=0.500 score=-147307.0 nulls=118 M=11399
+final pair r2 p2 sweep 3 T=0.000 score=-147305.6 nulls=118 M=11399
+final pair restart 2 final score -147305.6 nulls 118
+final pair r3 p1 sweep 0 T=20.000 score=-177524.7 nulls=81 M=18858
+final pair r3 p1 sweep 10 T=7.767 score=-133202.6 nulls=81 M=18858
+final pair r3 p1 sweep 20 T=3.016 score=-132940.0 nulls=81 M=18858
+final pair r3 p1 sweep 30 T=1.171 score=-132916.6 nulls=81 M=18858
+final pair r3 p1 sweep 39 T=0.000 score=-132916.6 nulls=81 M=18858
+final pair r3 stepwise nulls: 23 rounds, nulls 103, score -109943.6
+final pair r3 p2 sweep 0 T=0.500 score=-109812.1 nulls=99 M=16020
+final pair r3 p2 sweep 3 T=0.000 score=-109812.1 nulls=99 M=16020
+final pair restart 3 final score -109812.1 nulls 99
+final pair r4 p1 sweep 0 T=20.000 score=-176794.7 nulls=73 M=18905
+final pair r4 p1 sweep 10 T=7.767 score=-133447.3 nulls=73 M=18905
+final pair r4 p1 sweep 20 T=3.016 score=-133151.4 nulls=73 M=18905
+final pair r4 p1 sweep 30 T=1.171 score=-133103.9 nulls=73 M=18905
+final pair r4 p1 sweep 39 T=0.000 score=-133103.9 nulls=73 M=18905
+final pair r4 stepwise nulls: 27 rounds, nulls 99, score -109812.1
+final pair r4 p2 sweep 0 T=0.500 score=-109812.1 nulls=99 M=16020
+final pair r4 p2 sweep 3 T=0.000 score=-109812.1 nulls=99 M=16020
+final pair restart 4 final score -109812.1 nulls 99
+final pair r5 p1 sweep 0 T=20.000 score=-180849.7 nulls=81 M=18858
+final pair r5 p1 sweep 10 T=7.767 score=-163802.0 nulls=81 M=18858
+final pair r5 p1 sweep 20 T=3.016 score=-162866.0 nulls=81 M=18858
+final pair r5 p1 sweep 30 T=1.171 score=-162664.4 nulls=81 M=18858
+final pair r5 p1 sweep 39 T=0.000 score=-162661.2 nulls=81 M=18858
+final pair r5 stepwise nulls: 46 rounds, nulls 126, score -148396.7
+final pair r5 p2 sweep 0 T=0.500 score=-148280.4 nulls=122 M=11409
+final pair r5 p2 sweep 3 T=0.000 score=-148260.9 nulls=122 M=11402
+final pair restart 5 final score -148260.9 nulls 122
+final pair r6 p1 sweep 0 T=20.000 score=-174633.4 nulls=73 M=18905
+final pair r6 p1 sweep 10 T=7.767 score=-161825.8 nulls=73 M=18905
+final pair r6 p1 sweep 20 T=3.016 score=-149324.0 nulls=73 M=18905
+final pair r6 p1 sweep 30 T=1.171 score=-133153.3 nulls=73 M=18905
+final pair r6 p1 sweep 39 T=0.000 score=-133152.0 nulls=73 M=18905
+final pair r6 stepwise nulls: 27 rounds, nulls 99, score -109812.1
+final pair r6 p2 sweep 0 T=0.500 score=-109812.1 nulls=99 M=16020
+final pair r6 p2 sweep 3 T=0.000 score=-109812.1 nulls=99 M=16020
+final pair restart 6 final score -109812.1 nulls 99
+final pair r7 p1 sweep 0 T=20.000 score=-173549.0 nulls=81 M=18858
+final pair r7 p1 sweep 10 T=7.767 score=-163461.6 nulls=81 M=18858
+final pair r7 p1 sweep 20 T=3.016 score=-162666.5 nulls=81 M=18858
+final pair r7 p1 sweep 30 T=1.171 score=-162501.4 nulls=81 M=18858
+final pair r7 p1 sweep 39 T=0.000 score=-162483.5 nulls=81 M=18858
+final pair r7 stepwise nulls: 60 rounds, nulls 141, score -147259.8
+final pair r7 p2 sweep 0 T=0.500 score=-147151.9 nulls=137 M=11412
+final pair r7 p2 sweep 3 T=0.000 score=-147115.9 nulls=136 M=11415
+final pair restart 7 final score -147115.9 nulls 136
+final pair r8 p1 sweep 0 T=20.000 score=-173013.7 nulls=73 M=18905
+final pair r8 p1 sweep 10 T=7.767 score=-133330.7 nulls=73 M=18905
+final pair r8 p1 sweep 20 T=3.016 score=-133152.0 nulls=73 M=18905
+final pair r8 p1 sweep 30 T=1.171 score=-133103.9 nulls=73 M=18905
+final pair r8 p1 sweep 39 T=0.000 score=-133103.9 nulls=73 M=18905
+final pair r8 stepwise nulls: 27 rounds, nulls 99, score -109812.1
+final pair r8 p2 sweep 0 T=0.500 score=-109812.1 nulls=99 M=16020
+final pair r8 p2 sweep 3 T=0.000 score=-109812.1 nulls=99 M=16020
+final pair restart 8 final score -109812.1 nulls 99
+final pair r9 p1 sweep 0 T=20.000 score=-178928.8 nulls=81 M=18858
+final pair r9 p1 sweep 10 T=7.767 score=-163221.1 nulls=81 M=18858
+final pair r9 p1 sweep 20 T=3.016 score=-162266.7 nulls=81 M=18858
+final pair r9 p1 sweep 30 T=1.171 score=-162081.3 nulls=81 M=18858
+final pair r9 p1 sweep 39 T=0.000 score=-162070.6 nulls=81 M=18858
+final pair r9 stepwise nulls: 48 rounds, nulls 128, score -146930.1
+final pair r9 p2 sweep 0 T=0.500 score=-146875.3 nulls=128 M=11399
+final pair r9 p2 sweep 3 T=0.000 score=-146873.5 nulls=127 M=11403
+final pair restart 9 final score -146873.5 nulls 127
+final pair r10 p1 sweep 0 T=20.000 score=-173264.1 nulls=73 M=18905
+final pair r10 p1 sweep 10 T=7.767 score=-164520.4 nulls=73 M=18905
+final pair r10 p1 sweep 20 T=3.016 score=-163562.0 nulls=73 M=18905
+final pair r10 p1 sweep 30 T=1.171 score=-163466.8 nulls=73 M=18905
+final pair r10 p1 sweep 39 T=0.000 score=-163453.6 nulls=73 M=18905
+final pair r10 stepwise nulls: 46 rounds, nulls 118, score -147878.8
+final pair r10 p2 sweep 0 T=0.500 score=-147882.3 nulls=117 M=11402
+final pair r10 p2 sweep 3 T=0.000 score=-147878.8 nulls=118 M=11399
+final pair restart 10 final score -147878.8 nulls 118
+final pair r11 p1 sweep 0 T=20.000 score=-180217.4 nulls=81 M=18858
+final pair r11 p1 sweep 10 T=7.767 score=-133958.3 nulls=81 M=18858
+final pair r11 p1 sweep 20 T=3.016 score=-132977.7 nulls=81 M=18858
+final pair r11 p1 sweep 30 T=1.171 score=-132959.4 nulls=81 M=18858
+final pair r11 p1 sweep 39 T=0.000 score=-132956.7 nulls=81 M=18858
+final pair r11 stepwise nulls: 23 rounds, nulls 103, score -109943.6
+final pair r11 p2 sweep 0 T=0.500 score=-109812.1 nulls=99 M=16020
+final pair r11 p2 sweep 3 T=0.000 score=-109812.1 nulls=99 M=16020
+final pair restart 11 final score -109812.1 nulls 99
+final pair r12 p1 sweep 0 T=20.000 score=-179441.3 nulls=73 M=18905
+final pair r12 p1 sweep 10 T=7.767 score=-163378.7 nulls=73 M=18905
+final pair r12 p1 sweep 20 T=3.016 score=-162812.9 nulls=73 M=18905
+final pair r12 p1 sweep 30 T=1.171 score=-162661.3 nulls=73 M=18905
+final pair r12 p1 sweep 39 T=0.000 score=-162641.4 nulls=73 M=18905
+final pair r12 stepwise nulls: 59 rounds, nulls 131, score -147334.2
+final pair r12 p2 sweep 0 T=0.500 score=-147288.8 nulls=135 M=11403
+final pair r12 p2 sweep 3 T=0.000 score=-147256.4 nulls=136 M=11403
+final pair restart 12 final score -147256.4 nulls 136
+final pair r13 p1 sweep 0 T=20.000 score=-179939.0 nulls=81 M=18858
+final pair r13 p1 sweep 10 T=7.767 score=-133656.2 nulls=81 M=18858
+final pair r13 p1 sweep 20 T=3.016 score=-132953.3 nulls=81 M=18858
+final pair r13 p1 sweep 30 T=1.171 score=-132934.4 nulls=81 M=18858
+final pair r13 p1 sweep 39 T=0.000 score=-132934.4 nulls=81 M=18858
+final pair r13 stepwise nulls: 23 rounds, nulls 103, score -109943.6
+final pair r13 p2 sweep 0 T=0.500 score=-109812.1 nulls=99 M=16020
+final pair r13 p2 sweep 3 T=0.000 score=-109812.1 nulls=99 M=16020
+final pair restart 13 final score -109812.1 nulls 99
+final pair r14 p1 sweep 0 T=20.000 score=-175124.0 nulls=73 M=18905
+final pair r14 p1 sweep 10 T=7.767 score=-133576.7 nulls=73 M=18905
+final pair r14 p1 sweep 20 T=3.016 score=-133197.3 nulls=73 M=18905
+final pair r14 p1 sweep 30 T=1.171 score=-133157.7 nulls=73 M=18905
+final pair r14 p1 sweep 39 T=0.000 score=-133152.0 nulls=73 M=18905
+final pair r14 stepwise nulls: 27 rounds, nulls 99, score -109812.1
+final pair r14 p2 sweep 0 T=0.500 score=-109812.1 nulls=99 M=16020
+final pair r14 p2 sweep 3 T=0.000 score=-109812.1 nulls=99 M=16020
+final pair restart 14 final score -109812.1 nulls 99
+final pair r15 p1 sweep 0 T=20.000 score=-175304.3 nulls=81 M=18858
+final pair r15 p1 sweep 10 T=7.767 score=-133069.7 nulls=81 M=18858
+final pair r15 p1 sweep 20 T=3.016 score=-132972.4 nulls=81 M=18858
+final pair r15 p1 sweep 30 T=1.171 score=-132941.5 nulls=81 M=18858
+final pair r15 p1 sweep 39 T=0.000 score=-132934.4 nulls=81 M=18858
+final pair r15 stepwise nulls: 23 rounds, nulls 103, score -109943.6
+final pair r15 p2 sweep 0 T=0.500 score=-109812.1 nulls=99 M=16020
+final pair r15 p2 sweep 3 T=0.000 score=-109812.1 nulls=99 M=16020
+final pair restart 15 final score -109812.1 nulls 99
+RESULT acc=0.9731 info={'chosen': "seg('mdl', '-') pair |P|=32 |S|=23", 'true_sets': '', 'seg_match_true': False, 'reading_true': 'pair', 'acc': 0.9731033203487294, 'score': np.float64(-109812.07360529095), 'nulls': 99, 'units': 260, 'elapsed': 604.9964125156403}

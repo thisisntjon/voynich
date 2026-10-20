@@ -1,0 +1,6 @@
+ZL3b zodiac labels  n  296: ot/ok-initial 0.53 (len-matched paragraph 0.12); types also in paragraph text 0.48 (matched 1.00); mean len 5.9
+ZL3b other labels   n  829: ot/ok-initial 0.28 (len-matched paragraph 0.11); types also in paragraph text 0.49 (matched 1.00); mean len 5.1
+RF1b zodiac labels  n  299: ot/ok-initial 0.52 (len-matched paragraph 0.12); types also in paragraph text 0.47 (matched 1.00); mean len 6.0
+RF1b other labels   n  828: ot/ok-initial 0.27 (len-matched paragraph 0.10); types also in paragraph text 0.49 (matched 1.00); mean len 5.2
+IT2a zodiac labels  n  297: ot/ok-initial 0.53 (len-matched paragraph 0.12); types also in paragraph text 0.50 (matched 1.00); mean len 5.8
+IT2a other labels   n  665: ot/ok-initial 0.27 (len-matched paragraph 0.10); types also in paragraph text 0.49 (matched 1.00); mean len 5.0

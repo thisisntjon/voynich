@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:03:30.803965Z",
+ "response": "{\n  \"PT\": \"PLANT\",\n  \"P_plants\": \"2\",\n  \"P_root\": \"TUBER\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"0\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"MULTI\",\n  \"J_shape\": \"NONE\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"0\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"HUMAN\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"2-9\",\n  \"C_rings\": \"ABSENT\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"0\",\n  \"B_figures\": \"6-10\",\n  \"B_tubes\": \"PRESENT\",\n  \"note\": \"Illustration of mermaids with plants, no containers or circular diagrams.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2628904100,
+ "load_duration": 185907800,
+ "prompt_eval_count": 3311,
+ "prompt_eval_duration": 753507000,
+ "eval_count": 210,
+ "eval_duration": 1551194000,
+ "stem": "151_83v"
+}

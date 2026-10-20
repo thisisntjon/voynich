@@ -1,0 +1,221 @@
+S113 FIXTURE (synthetic only; reads no Voynich data)
+date: Sun Oct 18 19:56:24 PDT 2026 (`date`)
+tools/s113_g2_envelope.py sha256=d7e987092c7e48c2f2c56d95eba1dcf959781aaccaf50ad3bcf731acbfad4faa
+s110_g2_combinatory_grid.py sha256=cc20e4345f9e1551be9620305b5bef5563125d44027d904400737be53fd7045a; tools/vkb/features.py sha256=0a1f266fa7798448eb3791ba61752d9ab7aa8b3b52092d8e9dc9184a46493017 (R_SHUF 200)
+N_REP 100; envelope [P0.5, P99.5]; stats Rw1_line, h2, rhythm; books 10; POS >= 9/10 not excluded, ORACLE >= 9/10 contained, NEG (G2a) >= 9/10 excluded; UNI diagnostic; seed 20261113
+planted books: 10; tokens per book 21441-21692; lines 2700
+  [fits] free RAM 5.9 GB (keep >= 4.0); 10 jobs on 2 workers
+  [fits 74s] 1/10 done (0)
+  [fits 75s] 2/10 done (1)
+  [fits 147s] 3/10 done (2)
+  [fits 147s] 4/10 done (3)
+  [fits 215s] 5/10 done (5)
+  [fits 215s] 6/10 done (4)
+  [fits 281s] 7/10 done (6)
+  [fits 281s] 8/10 done (7)
+  [fits 350s] 9/10 done (8)
+  [fits 351s] 10/10 done (9)
+  book 0 G2b fit (71s): phi 0.4 m 50 drift pre 1/0.3 beta 10 suf 1/0.1 beta 10 kappa 0.3 tau 2.0 (planted phi 0.3 m 100 lam 0.2 beta 10 kappa 0.2 tau 2)
+  book 1 G2b fit (71s): phi 0.6 m 200 drift pre 1/0.2 beta 20 suf 1/0.2 beta 10 kappa 0.2 tau 2.0 (planted phi 0.3 m 100 lam 0.2 beta 10 kappa 0.2 tau 2)
+  book 2 G2b fit (72s): phi 0.4 m 50 drift pre 1/0.1 beta 10 suf 1/0.1 beta 10 kappa 0.15 tau 2.0 (planted phi 0.3 m 100 lam 0.2 beta 10 kappa 0.2 tau 2)
+  book 3 G2b fit (72s): phi 0.6 m 200 drift pre 1/0.1 beta 10 suf 1/0.2 beta 20 kappa 0.2 tau 2.0 (planted phi 0.3 m 100 lam 0.2 beta 10 kappa 0.2 tau 2)
+  book 4 G2b fit (68s): phi 0.4 m 50 drift pre 1/0.3 beta 20 suf 1/0.2 beta 10 kappa 0.2 tau 2.0 (planted phi 0.3 m 100 lam 0.2 beta 10 kappa 0.2 tau 2)
+  book 5 G2b fit (68s): phi 0.4 m 25 drift pre 1/0.2 beta 10 suf 1/0.1 beta 10 kappa 0.3 tau 2.0 (planted phi 0.3 m 100 lam 0.2 beta 10 kappa 0.2 tau 2)
+  book 6 G2b fit (66s): phi 0.4 m 25 drift pre 1/0.05 beta 5 suf 1/0.2 beta 10 kappa 0.2 tau 2.0 (planted phi 0.3 m 100 lam 0.2 beta 10 kappa 0.2 tau 2)
+  book 7 G2b fit (66s): phi 0.4 m 100 drift pre 1/0.2 beta 20 suf 1/0.05 beta 10 kappa 0.2 tau 2.0 (planted phi 0.3 m 100 lam 0.2 beta 10 kappa 0.2 tau 2)
+  book 8 G2b fit (69s): phi 0.4 m 100 drift pre 1/0.05 beta 10 suf 1/0.3 beta 20 kappa 0.2 tau 2.0 (planted phi 0.3 m 100 lam 0.2 beta 10 kappa 0.2 tau 2)
+  book 9 G2b fit (70s): phi 0.4 m 100 drift pre 1/0.2 beta 10 suf 1/0.2 beta 10 kappa 0.2 tau 2.0 (planted phi 0.3 m 100 lam 0.2 beta 10 kappa 0.2 tau 2)
+  [replicates] free RAM 6.0 GB (keep >= 4.0); 40 jobs on 2 workers
+  [replicates 190s] 1/40 done (('ORACLE', 0))
+  [replicates 191s] 2/40 done (('POS', 0))
+  [replicates 342s] 3/40 done (('NEG', 0))
+  [replicates 344s] 4/40 done (('UNI', 0))
+  [replicates 534s] 5/40 done (('ORACLE', 1))
+  [replicates 535s] 6/40 done (('POS', 1))
+  [replicates 689s] 7/40 done (('NEG', 1))
+  [replicates 694s] 8/40 done (('UNI', 1))
+  [replicates 894s] 9/40 done (('POS', 2))
+  [replicates 896s] 10/40 done (('ORACLE', 2))
+  [replicates 1053s] 11/40 done (('NEG', 2))
+  [replicates 1057s] 12/40 done (('UNI', 2))
+  [replicates 1261s] 13/40 done (('POS', 3))
+  [replicates 1261s] 14/40 done (('ORACLE', 3))
+  [replicates 1437s] 15/40 done (('NEG', 3))
+  [replicates 1441s] 16/40 done (('UNI', 3))
+  [replicates 1631s] 17/40 done (('POS', 4))
+  [replicates 1633s] 18/40 done (('ORACLE', 4))
+  [replicates 1803s] 19/40 done (('NEG', 4))
+  [replicates 1808s] 20/40 done (('UNI', 4))
+  [replicates 1994s] 21/40 done (('POS', 5))
+  [replicates 1996s] 22/40 done (('ORACLE', 5))
+  [replicates 2150s] 23/40 done (('NEG', 5))
+  [replicates 2153s] 24/40 done (('UNI', 5))
+  [replicates 2345s] 25/40 done (('POS', 6))
+  [replicates 2346s] 26/40 done (('ORACLE', 6))
+  [replicates 2505s] 27/40 done (('NEG', 6))
+  [replicates 2509s] 28/40 done (('UNI', 6))
+  [replicates 2693s] 29/40 done (('POS', 7))
+  [replicates 2693s] 30/40 done (('ORACLE', 7))
+  [replicates 2863s] 31/40 done (('NEG', 7))
+  [replicates 2866s] 32/40 done (('UNI', 7))
+  [replicates 3078s] 33/40 done (('POS', 8))
+  [replicates 3080s] 34/40 done (('ORACLE', 8))
+  [replicates 3286s] 35/40 done (('NEG', 8))
+  [replicates 3292s] 36/40 done (('UNI', 8))
+  [replicates 3499s] 37/40 done (('POS', 9))
+  [replicates 3501s] 38/40 done (('ORACLE', 9))
+  [replicates 3646s] 39/40 done (('NEG', 9))
+  [replicates 3653s] 40/40 done (('UNI', 9))
+
+=== per book: target statistics; per candidate envelope and flags (Y = inside, order Rw1_line h2 rhythm) ===
+book 0: target Rw1_line 0.9540 h2 2.9416 rhythm 0.0330
+  POS    Rw1_line [0.8418, 1.1838] h2 [3.0141, 3.0393] rhythm [0.0280, 0.0576] flags YnY -> EXCLUDED (h2)
+  ORACLE Rw1_line [0.8644, 1.0974] h2 [2.9328, 2.9577] rhythm [0.0229, 0.0461] flags YYY -> not excluded
+  NEG    Rw1_line [1.5080, 1.6465] h2 [1.9236, 1.9329] rhythm [0.0808, 0.1106] flags nnn -> EXCLUDED (Rw1_line, h2, rhythm)
+  UNI    Rw1_line [0.9107, 1.0953] h2 [2.9416, 2.9416] rhythm [-0.0170, 0.0150] flags YYn -> EXCLUDED (rhythm)
+book 1: target Rw1_line 1.0310 h2 2.9295 rhythm 0.0268
+  POS    Rw1_line [0.8025, 1.2266] h2 [3.0878, 3.1038] rhythm [0.0012, 0.0325] flags YnY -> EXCLUDED (h2)
+  ORACLE Rw1_line [0.9011, 1.1575] h2 [2.9261, 2.9499] rhythm [0.0033, 0.0312] flags YYY -> not excluded
+  NEG    Rw1_line [1.6032, 1.7333] h2 [1.8220, 1.8378] rhythm [0.2216, 0.2497] flags nnn -> EXCLUDED (Rw1_line, h2, rhythm)
+  UNI    Rw1_line [0.8924, 1.1738] h2 [2.9295, 2.9295] rhythm [-0.0175, 0.0174] flags YYn -> EXCLUDED (rhythm)
+book 2: target Rw1_line 0.9835 h2 2.9279 rhythm 0.0696
+  POS    Rw1_line [0.8768, 1.2025] h2 [3.0143, 3.0434] rhythm [0.0469, 0.0718] flags YnY -> EXCLUDED (h2)
+  ORACLE Rw1_line [0.9205, 1.0888] h2 [2.9089, 2.9362] rhythm [0.0625, 0.0906] flags YYY -> not excluded
+  NEG    Rw1_line [1.6662, 1.8084] h2 [1.6257, 1.6323] rhythm [0.0440, 0.0741] flags nnY -> EXCLUDED (Rw1_line, h2)
+  UNI    Rw1_line [0.8974, 1.0859] h2 [2.9279, 2.9279] rhythm [-0.0151, 0.0134] flags YYn -> EXCLUDED (rhythm)
+book 3: target Rw1_line 1.0325 h2 2.9378 rhythm 0.0068
+  POS    Rw1_line [0.8084, 1.2005] h2 [3.0637, 3.0820] rhythm [0.0084, 0.0384] flags Ynn -> EXCLUDED (h2, rhythm)
+  ORACLE Rw1_line [0.8986, 1.1689] h2 [2.9313, 2.9509] rhythm [-0.0044, 0.0286] flags YYY -> not excluded
+  NEG    Rw1_line [1.6344, 1.7408] h2 [1.9359, 1.9497] rhythm [0.2413, 0.2774] flags nnn -> EXCLUDED (Rw1_line, h2, rhythm)
+  UNI    Rw1_line [0.8850, 1.1551] h2 [2.9378, 2.9378] rhythm [-0.0145, 0.0151] flags YYY -> not excluded
+book 4: target Rw1_line 1.0137 h2 3.0032 rhythm -0.0373
+  POS    Rw1_line [0.8239, 1.1766] h2 [3.0799, 3.1026] rhythm [-0.0539, -0.0198] flags YnY -> EXCLUDED (h2)
+  ORACLE Rw1_line [0.8985, 1.1143] h2 [2.9931, 3.0136] rhythm [-0.0559, -0.0266] flags YYY -> not excluded
+  NEG    Rw1_line [1.3578, 1.4521] h2 [1.7477, 1.7629] rhythm [0.1873, 0.2183] flags nnn -> EXCLUDED (Rw1_line, h2, rhythm)
+  UNI    Rw1_line [0.9118, 1.1105] h2 [3.0032, 3.0032] rhythm [-0.0163, 0.0171] flags YYn -> EXCLUDED (rhythm)
+book 5: target Rw1_line 1.0432 h2 2.9079 rhythm 0.0336
+  POS    Rw1_line [0.8886, 1.1600] h2 [2.9828, 3.0188] rhythm [0.0127, 0.0408] flags YnY -> EXCLUDED (h2)
+  ORACLE Rw1_line [0.8904, 1.1038] h2 [2.8870, 2.9095] rhythm [0.0110, 0.0392] flags YYY -> not excluded
+  NEG    Rw1_line [1.7843, 1.9112] h2 [1.7698, 1.7779] rhythm [0.1197, 0.1488] flags nnn -> EXCLUDED (Rw1_line, h2, rhythm)
+  UNI    Rw1_line [0.8813, 1.0983] h2 [2.9079, 2.9079] rhythm [-0.0156, 0.0172] flags YYn -> EXCLUDED (rhythm)
+book 6: target Rw1_line 1.0019 h2 2.9434 rhythm -0.0367
+  POS    Rw1_line [0.8722, 1.1533] h2 [3.0035, 3.0349] rhythm [-0.0504, -0.0140] flags YnY -> EXCLUDED (h2)
+  ORACLE Rw1_line [0.9272, 1.1011] h2 [2.9242, 2.9504] rhythm [-0.0553, -0.0236] flags YYY -> not excluded
+  NEG    Rw1_line [1.3026, 1.4364] h2 [1.6043, 1.6115] rhythm [-0.0121, 0.0227] flags nnn -> EXCLUDED (Rw1_line, h2, rhythm)
+  UNI    Rw1_line [0.8967, 1.1255] h2 [2.9434, 2.9434] rhythm [-0.0150, 0.0145] flags YYn -> EXCLUDED (rhythm)
+book 7: target Rw1_line 1.0432 h2 2.9811 rhythm -0.0736
+  POS    Rw1_line [0.8375, 1.2092] h2 [3.0903, 3.1121] rhythm [-0.0463, -0.0146] flags Ynn -> EXCLUDED (h2, rhythm)
+  ORACLE Rw1_line [0.8976, 1.0971] h2 [2.9690, 2.9918] rhythm [-0.0786, -0.0500] flags YYY -> not excluded
+  NEG    Rw1_line [1.6864, 1.9664] h2 [1.9044, 1.9173] rhythm [0.1544, 0.1774] flags nnn -> EXCLUDED (Rw1_line, h2, rhythm)
+  UNI    Rw1_line [0.8730, 1.1209] h2 [2.9811, 2.9811] rhythm [-0.0155, 0.0138] flags YYn -> EXCLUDED (rhythm)
+book 8: target Rw1_line 0.9115 h2 2.9283 rhythm -0.0037
+  POS    Rw1_line [0.8574, 1.1161] h2 [3.0095, 3.0335] rhythm [-0.0093, 0.0189] flags YnY -> EXCLUDED (h2)
+  ORACLE Rw1_line [0.9123, 1.1131] h2 [2.9214, 2.9401] rhythm [-0.0017, 0.0232] flags nYn -> EXCLUDED (Rw1_line, rhythm)
+  NEG    Rw1_line [1.7307, 1.9220] h2 [1.9823, 1.9950] rhythm [0.0877, 0.1191] flags nnn -> EXCLUDED (Rw1_line, h2, rhythm)
+  UNI    Rw1_line [0.9100, 1.0961] h2 [2.9283, 2.9283] rhythm [-0.0141, 0.0133] flags YYY -> not excluded
+book 9: target Rw1_line 1.0393 h2 2.9149 rhythm 0.0027
+  POS    Rw1_line [0.8302, 1.2393] h2 [3.0494, 3.0721] rhythm [-0.0133, 0.0119] flags YnY -> EXCLUDED (h2)
+  ORACLE Rw1_line [0.9144, 1.1371] h2 [2.9029, 2.9248] rhythm [-0.0162, 0.0163] flags YYY -> not excluded
+  NEG    Rw1_line [1.7001, 1.7974] h2 [1.8251, 1.8398] rhythm [0.1731, 0.2023] flags nnn -> EXCLUDED (Rw1_line, h2, rhythm)
+  UNI    Rw1_line [0.8895, 1.1453] h2 [2.9149, 2.9149] rhythm [-0.0138, 0.0139] flags YYY -> not excluded
+
+=== s67 battery DIAGNOSTIC (book 0; first replicate of each candidate vs the planted book; not a gate) ===
+  [fx battery] free RAM 3.5 GB < 4.0; waiting 30 s
+  [fx battery] free RAM 3.5 GB < 4.0; waiting 30 s
+  [fx battery] free RAM 3.2 GB < 4.0; waiting 30 s
+  [fx battery] free RAM 3.0 GB < 4.0; waiting 30 s
+  [fx battery] free RAM 2.8 GB < 4.0; waiting 30 s
+  [fx battery] free RAM 2.9 GB < 4.0; waiting 30 s
+  [fx battery] free RAM 3.1 GB < 4.0; waiting 30 s
+  [fx battery] free RAM 3.1 GB < 4.0; waiting 30 s
+  [fx battery] free RAM 3.0 GB < 4.0; waiting 30 s
+  [fx battery] free RAM 2.9 GB < 4.0; waiting 30 s
+  [fx battery] free RAM 2.6 GB < 4.0; waiting 30 s
+  [fx battery] free RAM 10.7 GB (keep >= 4.0); 75 jobs on 4 workers
+  [fx battery 9s] 1/75 done (('SV', 'NEG', 0))
+  [fx battery 9s] 2/75 done (('SV', 'POS', 0))
+  [fx battery 9s] 3/75 done (('REF', 0))
+  [fx battery 9s] 4/75 done (('SV', 'ORACLE', 0))
+  [fx battery 11s] 5/75 done (('SV', 'UNI', 0))
+  [fx battery 11s] 6/75 done (('REF', 1))
+  [fx battery 11s] 7/75 done (('SV', 'ORACLE', 1))
+  [fx battery 11s] 8/75 done (('SV', 'POS', 1))
+  [fx battery 13s] 9/75 done (('SV', 'UNI', 1))
+  [fx battery 13s] 10/75 done (('SV', 'NEG', 1))
+  [fx battery 13s] 11/75 done (('REF', 2))
+  [fx battery 13s] 12/75 done (('SV', 'POS', 2))
+  [fx battery 15s] 13/75 done (('SV', 'NEG', 2))
+  [fx battery 15s] 14/75 done (('SV', 'ORACLE', 2))
+  [fx battery 15s] 15/75 done (('SV', 'UNI', 2))
+  [fx battery 15s] 16/75 done (('REF', 3))
+  [fx battery 16s] 17/75 done (('SV', 'POS', 3))
+  [fx battery 16s] 18/75 done (('SV', 'ORACLE', 3))
+  [fx battery 17s] 19/75 done (('SV', 'UNI', 3))
+  [fx battery 17s] 20/75 done (('SV', 'NEG', 3))
+  [fx battery 18s] 21/75 done (('REF', 4))
+  [fx battery 18s] 22/75 done (('SV', 'POS', 4))
+  [fx battery 18s] 23/75 done (('SV', 'NEG', 4))
+  [fx battery 18s] 24/75 done (('SV', 'ORACLE', 4))
+  [fx battery 20s] 25/75 done (('REF', 5))
+  [fx battery 20s] 26/75 done (('SV', 'UNI', 4))
+  [fx battery 20s] 27/75 done (('SV', 'POS', 5))
+  [fx battery 20s] 28/75 done (('SV', 'ORACLE', 5))
+  [fx battery 22s] 29/75 done (('SV', 'NEG', 5))
+  [fx battery 22s] 30/75 done (('SV', 'UNI', 5))
+  [fx battery 22s] 31/75 done (('REF', 6))
+  [fx battery 22s] 32/75 done (('SV', 'POS', 6))
+  [fx battery 24s] 33/75 done (('SV', 'ORACLE', 6))
+  [fx battery 24s] 34/75 done (('SV', 'NEG', 6))
+  [fx battery 24s] 35/75 done (('SV', 'UNI', 6))
+  [fx battery 24s] 36/75 done (('REF', 7))
+  [fx battery 26s] 37/75 done (('SV', 'POS', 7))
+  [fx battery 26s] 38/75 done (('SV', 'ORACLE', 7))
+  [fx battery 26s] 39/75 done (('SV', 'NEG', 7))
+  [fx battery 26s] 40/75 done (('SV', 'UNI', 7))
+  [fx battery 28s] 41/75 done (('REF', 8))
+  [fx battery 28s] 42/75 done (('SV', 'NEG', 8))
+  [fx battery 28s] 43/75 done (('SV', 'ORACLE', 8))
+  [fx battery 28s] 44/75 done (('SV', 'POS', 8))
+  [fx battery 30s] 45/75 done (('REF', 9))
+  [fx battery 30s] 46/75 done (('SV', 'UNI', 8))
+  [fx battery 30s] 47/75 done (('SV', 'ORACLE', 9))
+  [fx battery 30s] 48/75 done (('SV', 'POS', 9))
+  [fx battery 32s] 49/75 done (('SV', 'NEG', 9))
+  [fx battery 32s] 50/75 done (('REF', 10))
+  [fx battery 32s] 51/75 done (('SV', 'UNI', 9))
+  [fx battery 32s] 52/75 done (('SV', 'POS', 10))
+  [fx battery 34s] 53/75 done (('SV', 'ORACLE', 10))
+  [fx battery 34s] 54/75 done (('SV', 'NEG', 10))
+  [fx battery 34s] 55/75 done (('SV', 'UNI', 10))
+  [fx battery 34s] 56/75 done (('REF', 11))
+  [fx battery 35s] 57/75 done (('SV', 'POS', 11))
+  [fx battery 35s] 58/75 done (('SV', 'NEG', 11))
+  [fx battery 35s] 59/75 done (('SV', 'ORACLE', 11))
+  [fx battery 36s] 60/75 done (('SV', 'UNI', 11))
+  [fx battery 37s] 61/75 done (('REF', 12))
+  [fx battery 37s] 62/75 done (('SV', 'POS', 12))
+  [fx battery 37s] 63/75 done (('SV', 'ORACLE', 12))
+  [fx battery 37s] 64/75 done (('SV', 'NEG', 12))
+  [fx battery 39s] 65/75 done (('SV', 'UNI', 12))
+  [fx battery 39s] 66/75 done (('REF', 13))
+  [fx battery 39s] 67/75 done (('SV', 'POS', 13))
+  [fx battery 39s] 68/75 done (('SV', 'ORACLE', 13))
+  [fx battery 41s] 69/75 done (('SV', 'NEG', 13))
+  [fx battery 41s] 70/75 done (('SV', 'UNI', 13))
+  [fx battery 41s] 71/75 done (('REF', 14))
+  [fx battery 41s] 72/75 done (('SV', 'POS', 14))
+  [fx battery 43s] 73/75 done (('SV', 'ORACLE', 14))
+  [fx battery 43s] 74/75 done (('SV', 'NEG', 14))
+  [fx battery 43s] 75/75 done (('SV', 'UNI', 14))
+  POS    folds >= 4/6: 12/15 | per fold 4 3 4 5 4 3 4 4 4 5 4 5 3 5 5
+  ORACLE folds >= 4/6: 10/15 | per fold 3 3 4 5 4 4 4 2 4 3 5 2 4 5 5
+  NEG    folds >= 4/6: 0/15 | per fold 1 1 2 1 1 2 1 1 1 1 1 1 1 2 1
+  UNI    folds >= 4/6: 3/15 | per fold 4 2 3 2 3 2 3 3 4 3 3 3 3 4 3
+
+=== FIXTURE CALLS ===
+POS (G2b refitted) not excluded on 0/10 (need >= 9): False; killing stats {'Rw1_line': 0, 'h2': 10, 'rhythm': 2}
+ORACLE (true planted G2b) contains the planted book on 9/10 (need >= 9): True; killing stats {'Rw1_line': 1, 'h2': 0, 'rhythm': 1}
+NEG (G2a fitted) excluded on 10/10 (need >= 9): True; killing stats {'Rw1_line': 10, 'h2': 10, 'rhythm': 9}
+UNI (unigram word baseline, diagnostic) excluded on 7/10; killing stats {'Rw1_line': 0, 'h2': 0, 'rhythm': 7}
+FIXTURE_PASS = False
+finished: Sun Oct 18 21:09:37 PDT 2026 (`date`)

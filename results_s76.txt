@@ -1,0 +1,120 @@
+S76: segmenter independence of the slot-layer picture (Zattera 2022 12-slot model vs SlotSegmenter)
+date: Sun Oct 18 02:51:59 PDT 2026 (`date`)
+s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+prereg stub s76_segmenter_independence.prereg.sha256 sha256=f445900bf225110f29b8cc32faccd43af5eef1aa238ecc9b921e00fe8b95ef17  stub_match=True
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  local import s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+python 3.11.9; numpy 2.4.6; seed 20261017; s69 nulls 200 / subsamples 500; s56 shuffles 200 / subsamples 500; s55 f2 shuffles 200, interval 500 subsamples x 20 shuffles
+slot table: 0:q/s/d  1:o/y  2:l/r  3:t/k/p/f  4:ch/sh  5:cth/ckh/cph/cfh  6:e/ee/eee  7:s/d  8:o/a  9:i/ii/iii  10:d/l/r/m/n  11:y
+layers (primary): prefix = slots 0-2, core = 3-7, suffix = 8-11; S3: core 3-6, suffix 7-11.  Undecomposable: primary drop; S1 whole-word core; S2 core '∅'.
+
+  ZL3b: ZL3b_eva.meta.json sha256=ce233477803a8653; IVTFF re-parse ZL3b-n.txt sha256=bf5b6d4ac1e3a51b matches meta lines exactly; gap pairs 745, paragraph-start lines 264
+  RF1b: RF1b.meta.json sha256=c7d9bccba99b2610; IVTFF re-parse RF1b-er.txt sha256=eb857a1f353b1898 matches meta lines exactly; gap pairs 752, paragraph-start lines 264
+  IT2a: IT2a.meta.json sha256=0d0d3e758d1e308b; IVTFF re-parse IT2a-n.txt sha256=7f27a8b0feed8f6d matches meta lines exactly; gap pairs 779, paragraph-start lines 260
+
+=== decomposition coverage (unit: this text's tokens / word types; Zattera's concordance: 86.6 % tokens, 51.3 % types) ===
+  ZL3b  tokens  34857 types  7025 | decomposed tokens  28671 = 82.3%  types  3028 = 43.1% | undecomposable tokens: outside glyphs 473, slot order 5713; of types seen >= 2 times 2909 tok (8.3%; Zattera 1.5 %)
+        Fig. 4 grammar generates 20167 decomposed tokens (70.3%); our slot assignment = a grammar assignment on 20167 of them (100.0%); non-empty layers among decomposed tokens: pfx_nonempty 46.7%, core_nonempty 83.6%, sfx_nonempty 97.1%
+        top undecomposable: cheky:59 checkhy:47 chodaiin:45 chos:37 choty:36 cheos:36 choky:35 sheckhy:33 sheky:31 checthy:30 shodaiin:24 cheeky:23 chety:20 chockhy:19 shecthy:19
+  RF1b  tokens  34618 types  7348 | decomposed tokens  28066 = 81.1%  types  3096 = 42.1% | undecomposable tokens: outside glyphs 423, slot order 6129; of types seen >= 2 times 3046 tok (8.8%; Zattera 1.5 %)
+        Fig. 4 grammar generates 19800 decomposed tokens (70.5%); our slot assignment = a grammar assignment on 19800 of them (100.0%); non-empty layers among decomposed tokens: pfx_nonempty 47.3%, core_nonempty 83.8%, sfx_nonempty 97.2%
+        top undecomposable: cheky:59 checkhy:48 chodaiin:46 choty:37 chos:37 choky:34 cheos:34 sheky:33 checthy:31 sheckhy:31 cheeky:25 shodaiin:24 chety:22 shecthy:20 chocthy:19
+  IT2a  tokens  34411 types  7069 | decomposed tokens  28280 = 82.2%  types  3109 = 44.0% | undecomposable tokens: outside glyphs 378, slot order 5753; of types seen >= 2 times 2884 tok (8.4%; Zattera 1.5 %)
+        Fig. 4 grammar generates 20178 decomposed tokens (71.4%); our slot assignment = a grammar assignment on 20178 of them (100.0%); non-empty layers among decomposed tokens: pfx_nonempty 48.4%, core_nonempty 85.2%, sfx_nonempty 97.6%
+        top undecomposable: cheky:60 checkhy:47 chodaiin:43 sheckhy:35 sheky:34 choty:34 chos:34 choky:33 cheos:30 checthy:28 shodaiin:23 chety:23 cheeky:22 shecthy:20 chockhy:19
+  ZL3b  drop variant: 28671 tokens kept on 207 pages (0 pages emptied), lines 4130 -> 4104
+  RF1b  drop variant: 28066 tokens kept on 207 pages (0 pages emptied), lines 4130 -> 4098
+  IT2a  drop variant: 28280 tokens kept on 206 pages (0 pages emptied), lines 4117 -> 4089
+
+=== measures per text and configuration ===
+  ZL3b  orig              split69 166/41 split55 166/41 tok 34857 prefixes 28 cores55 2360 cores56 2360 | M1 +0.0999 [+0.0814,+0.1149] excess +0.0835 (z +17.7) | b_pos -0.0674 [-0.0930,-0.0392] | M7 +0.6881 [+0.6678,+0.7075] | A14 -0.0528 [-0.0763,-0.0364] (subsample median -0.0548) | R1 1.169 [1.143,1.197] R1 non-top20 1.760 [1.616,1.888]  [22s]
+  ZL3b  Z_primary         split69 166/41 split55 166/41 tok 28671 prefixes 25 cores55 163 cores56 163 | M1 +0.0171 [+0.0099,+0.0224] excess +0.0245 (z +5.7) | b_pos -0.0548 [-0.0707,-0.0370] | M7 +0.5249 [+0.5040,+0.5432] | A14 +0.0793 [+0.0610,+0.0947] (subsample median +0.0789) | R1 1.196 [1.177,1.216] R1 non-top20 2.307 [1.925,2.592]  [38s]
+  ZL3b  Z_S1_whole        split69 166/41 split55 166/41 tok 34857 prefixes 25 cores55 4160 cores56 4160 | M1 +0.0124 [+0.0072,+0.0168] excess +0.0189 (z +5.3) | b_pos -0.0457 [-0.0582,-0.0283] | M7 +0.5738 [+0.5518,+0.5925] | A14 -0.0204 [-0.0401,-0.0029] (subsample median -0.0220) | R1 1.250 [1.227,1.272] R1 non-top20 2.390 [2.001,2.688]  [59s]
+  ZL3b  Z_S2_empty        split69 166/41 split55 166/41 tok 34857 prefixes 25 cores55 164 cores56 164 | M1 +0.0124 [+0.0072,+0.0168] excess +0.0189 (z +5.3) | b_pos -0.0457 [-0.0582,-0.0283] | M7 +0.5906 [+0.5680,+0.6080] | A14 +0.0765 [+0.0634,+0.0842] (subsample median +0.0752) | R1 1.199 [1.181,1.216] R1 non-top20 2.826 [2.382,3.155]  [78s]
+  ZL3b  Z_S3_slot7suffix  split69 166/41 split55 166/41 tok 28671 prefixes 25 cores55 84 cores56 84 | M1 +0.0171 [+0.0099,+0.0224] excess +0.0245 (z +5.7) | b_pos -0.0548 [-0.0707,-0.0370] | M7 +0.5314 [+0.5091,+0.5524] | A14 +0.0711 [+0.0569,+0.0840] (subsample median +0.0718) | R1 1.156 [1.140,1.173] R1 non-top20 2.415 [1.914,2.745]  [95s]
+  RF1b  orig              split69 166/41 split55 166/41 tok 34618 prefixes 29 cores55 2491 cores56 2491 | M1 +0.0951 [+0.0764,+0.1094] excess +0.0827 (z +16.8) | b_pos -0.0922 [-0.1173,-0.0679] | M7 +0.6818 [+0.6591,+0.7037] | A14 -0.0500 [-0.0756,-0.0316] (subsample median -0.0533) | R1 1.160 [1.133,1.187] R1 non-top20 1.793 [1.668,1.943]  [117s]
+  RF1b  Z_primary         split69 166/41 split55 166/41 tok 28066 prefixes 28 cores55 164 cores56 164 | M1 +0.0167 [+0.0087,+0.0223] excess +0.0262 (z +6.4) | b_pos -0.0511 [-0.0683,-0.0293] | M7 +0.5331 [+0.5130,+0.5529] | A14 +0.0737 [+0.0548,+0.0852] (subsample median +0.0715) | R1 1.199 [1.176,1.217] R1 non-top20 2.186 [1.861,2.472]  [134s]
+  RF1b  Z_S1_whole        split69 166/41 split55 166/41 tok 34618 prefixes 28 cores55 4416 cores56 4416 | M1 +0.0112 [+0.0055,+0.0150] excess +0.0189 (z +5.8) | b_pos -0.0639 [-0.0782,-0.0454] | M7 +0.5860 [+0.5646,+0.6055] | A14 -0.0243 [-0.0456,-0.0025] (subsample median -0.0251) | R1 1.245 [1.216,1.268] R1 non-top20 2.097 [1.781,2.399]  [155s]
+  RF1b  Z_S2_empty        split69 166/41 split55 166/41 tok 34618 prefixes 28 cores55 165 cores56 165 | M1 +0.0112 [+0.0055,+0.0150] excess +0.0189 (z +5.8) | b_pos -0.0639 [-0.0782,-0.0454] | M7 +0.5915 [+0.5720,+0.6100] | A14 +0.0726 [+0.0611,+0.0812] (subsample median +0.0717) | R1 1.197 [1.177,1.215] R1 non-top20 2.641 [2.262,2.965]  [176s]
+  RF1b  Z_S3_slot7suffix  split69 166/41 split55 166/41 tok 28066 prefixes 28 cores55 84 cores56 84 | M1 +0.0167 [+0.0087,+0.0223] excess +0.0262 (z +6.4) | b_pos -0.0511 [-0.0683,-0.0293] | M7 +0.5485 [+0.5246,+0.5705] | A14 +0.0685 [+0.0530,+0.0797] (subsample median +0.0673) | R1 1.162 [1.143,1.178] R1 non-top20 2.200 [1.803,2.511]  [193s]
+  IT2a  orig              split69 165/41 split55 165/41 tok 34411 prefixes 25 cores55 2420 cores56 2420 | M1 +0.0961 [+0.0785,+0.1096] excess +0.0759 (z +17.1) | b_pos -0.0420 [-0.0618,-0.0231] | M7 +0.6437 [+0.6250,+0.6640] | A14 -0.0508 [-0.0735,-0.0369] (subsample median -0.0538) | R1 1.220 [1.188,1.249] R1 non-top20 1.732 [1.600,1.847]  [216s]
+  IT2a  Z_primary         split69 165/41 split55 165/41 tok 28280 prefixes 29 cores55 163 cores56 163 | M1 +0.0134 [+0.0053,+0.0189] excess +0.0234 (z +4.7) | b_pos -0.0311 [-0.0487,-0.0108] | M7 +0.5470 [+0.5274,+0.5656] | A14 +0.0778 [+0.0620,+0.0894] (subsample median +0.0762) | R1 1.209 [1.183,1.232] R1 non-top20 2.363 [2.009,2.619]  [234s]
+  IT2a  Z_S1_whole        split69 165/41 split55 165/41 tok 34411 prefixes 29 cores55 4123 cores56 4123 | M1 +0.0080 [+0.0022,+0.0121] excess +0.0156 (z +4.3) | b_pos -0.0422 [-0.0543,-0.0236] | M7 +0.5997 [+0.5790,+0.6176] | A14 +0.0061 [-0.0155,+0.0251] (subsample median +0.0046) | R1 1.257 [1.227,1.284] R1 non-top20 2.499 [2.099,2.791]  [257s]
+  IT2a  Z_S2_empty        split69 165/41 split55 165/41 tok 34411 prefixes 29 cores55 164 cores56 164 | M1 +0.0080 [+0.0022,+0.0121] excess +0.0156 (z +4.3) | b_pos -0.0422 [-0.0543,-0.0236] | M7 +0.5998 [+0.5783,+0.6177] | A14 +0.0785 [+0.0657,+0.0873] (subsample median +0.0772) | R1 1.206 [1.185,1.228] R1 non-top20 2.917 [2.500,3.244]  [277s]
+  IT2a  Z_S3_slot7suffix  split69 165/41 split55 165/41 tok 28280 prefixes 29 cores55 84 cores56 84 | M1 +0.0134 [+0.0053,+0.0189] excess +0.0234 (z +4.7) | b_pos -0.0311 [-0.0487,-0.0108] | M7 +0.5407 [+0.5198,+0.5611] | A14 +0.0709 [+0.0580,+0.0832] (subsample median +0.0701) | R1 1.172 [1.153,1.192] R1 non-top20 2.434 [2.043,2.757]  [294s]
+
+=== reproduction check: recomputed orig vs published source values ===
+  ZL3b  M1 +0.0999 (s69 +0.0999)  M7 +0.6881 (s69 +0.6881)  b_pos -0.0674 (s69 -0.0674)  A14 -0.05279 (s55 f2 -0.05279)  R1 1.169 (s56 1.169)
+  RF1b  M1 +0.0951 (s69 +0.0951)  M7 +0.6818 (s69 +0.6818)  b_pos -0.0922 (s69 -0.0922)  A14 -0.04996 (s55 f2 -0.04996)  R1 1.160 (s56 1.160)
+  IT2a  M1 +0.0961 (s69 +0.0961)  M7 +0.6437 (s69 +0.6437)  b_pos -0.0420 (s69 -0.0420)  A14 -0.05076 (s55 f2 -0.05076)  R1 1.220 (s56 1.220)
+
+=== orig (SlotSegmenter) vs Zattera PRIMARY (values [95 % interval]) ===
+  ZL3b  (a) M1 gain          orig    +0.0999 [+0.0814,+0.1149]   Zattera    +0.0171 [+0.0099,+0.0224]
+  ZL3b  (b) b_pos            orig    -0.0674 [-0.0930,-0.0392]   Zattera    -0.0548 [-0.0707,-0.0370]
+  ZL3b  (c) M7               orig    +0.6881 [+0.6678,+0.7075]   Zattera    +0.5249 [+0.5040,+0.5432]
+  ZL3b  (d) A14 excess       orig    -0.0528 [-0.0763,-0.0364]   Zattera    +0.0793 [+0.0610,+0.0947]
+  ZL3b  (e) R(1) all         orig          1.169 [1.143,1.197]   Zattera          1.196 [1.177,1.216]
+  ZL3b  (e) R(1) non-top20   orig          1.760 [1.616,1.888]   Zattera          2.307 [1.925,2.592]
+  ZL3b  (a) M1 excess        orig +0.0835 (null +0.0164 sd 0.0047)   Zattera +0.0245 (null -0.0074 sd 0.0043)
+  RF1b  (a) M1 gain          orig    +0.0951 [+0.0764,+0.1094]   Zattera    +0.0167 [+0.0087,+0.0223]
+  RF1b  (b) b_pos            orig    -0.0922 [-0.1173,-0.0679]   Zattera    -0.0511 [-0.0683,-0.0293]
+  RF1b  (c) M7               orig    +0.6818 [+0.6591,+0.7037]   Zattera    +0.5331 [+0.5130,+0.5529]
+  RF1b  (d) A14 excess       orig    -0.0500 [-0.0756,-0.0316]   Zattera    +0.0737 [+0.0548,+0.0852]
+  RF1b  (e) R(1) all         orig          1.160 [1.133,1.187]   Zattera          1.199 [1.176,1.217]
+  RF1b  (e) R(1) non-top20   orig          1.793 [1.668,1.943]   Zattera          2.186 [1.861,2.472]
+  RF1b  (a) M1 excess        orig +0.0827 (null +0.0125 sd 0.0049)   Zattera +0.0262 (null -0.0095 sd 0.0041)
+  IT2a  (a) M1 gain          orig    +0.0961 [+0.0785,+0.1096]   Zattera    +0.0134 [+0.0053,+0.0189]
+  IT2a  (b) b_pos            orig    -0.0420 [-0.0618,-0.0231]   Zattera    -0.0311 [-0.0487,-0.0108]
+  IT2a  (c) M7               orig    +0.6437 [+0.6250,+0.6640]   Zattera    +0.5470 [+0.5274,+0.5656]
+  IT2a  (d) A14 excess       orig    -0.0508 [-0.0735,-0.0369]   Zattera    +0.0778 [+0.0620,+0.0894]
+  IT2a  (e) R(1) all         orig          1.220 [1.188,1.249]   Zattera          1.209 [1.183,1.232]
+  IT2a  (e) R(1) non-top20   orig          1.732 [1.600,1.847]   Zattera          2.363 [2.009,2.619]
+  IT2a  (a) M1 excess        orig +0.0759 (null +0.0202 sd 0.0044)   Zattera +0.0234 (null -0.0100 sd 0.0050)
+
+=== PRE-REGISTERED CALLS (judged on Zattera PRIMARY; orig and S1-S3 beside) ===
+  C-a M1 gain > 0, interval above 0
+      ZL3b  Zattera: holds  (M1 +0.0171 [+0.0099,+0.0224])   orig=holds Z_primary=holds Z_S1_whole=holds Z_S2_empty=holds Z_S3_slot7suffix=holds
+      RF1b  Zattera: holds  (M1 +0.0167 [+0.0087,+0.0223])   orig=holds Z_primary=holds Z_S1_whole=holds Z_S2_empty=holds Z_S3_slot7suffix=holds
+      IT2a  Zattera: holds  (M1 +0.0134 [+0.0053,+0.0189])   orig=holds Z_primary=holds Z_S1_whole=holds Z_S2_empty=holds Z_S3_slot7suffix=holds
+  C-b b_pos < 0, interval below 0
+      ZL3b  Zattera: holds  (b_pos -0.0548 [-0.0707,-0.0370])   orig=holds Z_primary=holds Z_S1_whole=holds Z_S2_empty=holds Z_S3_slot7suffix=holds
+      RF1b  Zattera: holds  (b_pos -0.0511 [-0.0683,-0.0293])   orig=holds Z_primary=holds Z_S1_whole=holds Z_S2_empty=holds Z_S3_slot7suffix=holds
+      IT2a  Zattera: holds  (b_pos -0.0311 [-0.0487,-0.0108])   orig=holds Z_primary=holds Z_S1_whole=holds Z_S2_empty=holds Z_S3_slot7suffix=holds
+  C-c M7 > M1
+      ZL3b  Zattera: holds  (M7 +0.5249 vs M1 +0.0171)   orig=holds Z_primary=holds Z_S1_whole=holds Z_S2_empty=holds Z_S3_slot7suffix=holds
+      RF1b  Zattera: holds  (M7 +0.5331 vs M1 +0.0167)   orig=holds Z_primary=holds Z_S1_whole=holds Z_S2_empty=holds Z_S3_slot7suffix=holds
+      IT2a  Zattera: holds  (M7 +0.5470 vs M1 +0.0134)   orig=holds Z_primary=holds Z_S1_whole=holds Z_S2_empty=holds Z_S3_slot7suffix=holds
+  C-d A14 excess interval includes 0 or lies below it
+      ZL3b  Zattera: FAILS  (A14 +0.0793 [+0.0610,+0.0947])   orig=holds Z_primary=FAILS Z_S1_whole=holds Z_S2_empty=FAILS Z_S3_slot7suffix=FAILS
+      RF1b  Zattera: FAILS  (A14 +0.0737 [+0.0548,+0.0852])   orig=holds Z_primary=FAILS Z_S1_whole=holds Z_S2_empty=FAILS Z_S3_slot7suffix=FAILS
+      IT2a  Zattera: FAILS  (A14 +0.0778 [+0.0620,+0.0894])   orig=holds Z_primary=FAILS Z_S1_whole=holds Z_S2_empty=FAILS Z_S3_slot7suffix=FAILS
+  C-e R(1) all cores > 1, interval above 1
+      ZL3b  Zattera: holds  (R1 1.196 [1.177,1.216])   orig=holds Z_primary=holds Z_S1_whole=holds Z_S2_empty=holds Z_S3_slot7suffix=holds
+      RF1b  Zattera: holds  (R1 1.199 [1.176,1.217])   orig=holds Z_primary=holds Z_S1_whole=holds Z_S2_empty=holds Z_S3_slot7suffix=holds
+      IT2a  Zattera: holds  (R1 1.209 [1.183,1.232])   orig=holds Z_primary=holds Z_S1_whole=holds Z_S2_empty=holds Z_S3_slot7suffix=holds
+
+VERDICT (Zattera PRIMARY): partly dependent: C-d on ZL3b (FLIP: held under orig); C-d on RF1b (FLIP: held under orig); C-d on IT2a (FLIP: held under orig)
+  same rule on Z_S1_whole (reported only): segmenter-independent (all five calls hold under Zattera on all three transliterations)
+  same rule on Z_S2_empty (reported only): partly dependent: C-d on ZL3b (FLIP: held under orig); C-d on RF1b (FLIP: held under orig); C-d on IT2a (FLIP: held under orig)
+  same rule on Z_S3_slot7suffix (reported only): partly dependent: C-d on ZL3b (FLIP: held under orig); C-d on RF1b (FLIP: held under orig); C-d on IT2a (FLIP: held under orig)
+
+sidecars: runs/s76/values.csv, runs/s76/coverage.json, runs/s76/calls.json
+runtime 294 s; finished Sun Oct 18 02:56:53 PDT 2026 (`date`)

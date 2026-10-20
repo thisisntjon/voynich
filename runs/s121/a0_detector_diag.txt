@@ -1,0 +1,9 @@
+# s121 DESCRIPTIVE A0-only diagnostic of the calibration failure (not part of any call; scratch script diag.py importing tools/s121_duplicate_identity.py read-only); 2026-10-18T22:10:21
+ms counts Counter({np.str_('sloane4016'): 469, np.str_('ljs419'): 186, np.str_('bod408'): 165})
+mutual pairs by ms pair Counter({(np.str_('sloane4016'), np.str_('sloane4016')): 69, (np.str_('ljs419'), np.str_('ljs419')): 30, (np.str_('bod408'), np.str_('bod408')): 27, (np.str_('ljs419'), np.str_('sloane4016')): 3, (np.str_('bod408'), np.str_('ljs419')): 2, (np.str_('bod408'), np.str_('sloane4016')): 2})
+same-name in mutual pairs by ms pair Counter({(np.str_('bod408'), np.str_('bod408')): 2, (np.str_('ljs419'), np.str_('sloane4016')): 1, (np.str_('sloane4016'), np.str_('sloane4016')): 1, (np.str_('bod408'), np.str_('sloane4016')): 1})
+all cross-page same-name pairs by ms pair Counter({(np.str_('bod408'), np.str_('ljs419')): 113, (np.str_('bod408'), np.str_('sloane4016')): 66, (np.str_('ljs419'), np.str_('sloane4016')): 35, (np.str_('bod408'), np.str_('bod408')): 21, (np.str_('ljs419'), np.str_('ljs419')): 17, (np.str_('sloane4016'), np.str_('sloane4016')): 2})
+within ljs419: mutual pairs 34, same-name 0, same-name pairs available 17
+within sloane4016: mutual pairs 74, same-name 1, same-name pairs available 2
+within bod408: mutual pairs 27, same-name 2, same-name pairs available 21
+cross-ms-only mutual pairs 55 precision 0.164 top10/20 prec 0.4 0.2

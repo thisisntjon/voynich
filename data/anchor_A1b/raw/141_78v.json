@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:02:43.1799784Z",
+ "response": "{\n  \"PT\": \"BATH\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NA\",\n  \"P_leafshape\": \"NA\",\n  \"P_leafcount\": \"NA\",\n  \"P_flower\": \"NA\",\n  \"P_habit\": \"NA\",\n  \"J_shape\": \"NA\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"0\",\n  \"J_fragtype\": \"NA\",\n  \"C_centre\": \"HUMAN\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"1-9\",\n  \"C_rings\": \"0-1\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"2\",\n  \"B_figures\": \"6-10\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Illustration of a boat with naked figures, possibly symbolic.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2688442300,
+ "load_duration": 186534700,
+ "prompt_eval_count": 3311,
+ "prompt_eval_duration": 777614000,
+ "eval_count": 206,
+ "eval_duration": 1581101000,
+ "stem": "141_78v"
+}

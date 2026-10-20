@@ -1,0 +1,11 @@
+db-S125 — f49v margin sign to aligned-line relation
+input_sha256=BF5B6D4AC1E3A51B1847A9C388318D609020441CCD56984C901C32B09BECCAFC
+pairs=26 repeated_labels=7 counts={'f': 1, 'o': 3, 'r': 1, 'y': 5, 'e': 4, '@140;': 3, 'k': 2, 's': 1, 'p': 2, '@192;': 2, '@164;': 1, 'd': 1}
+fixture_recovered=20/20 fixture_gate=True
+frame_beta=+0.042893 p=0.119088
+char_beta=+0.023394 p=0.135986
+token_beta=-0.000697 p=0.493351
+leave_one_label_out=@140;:+0.063500,@192;:+0.049599,e:+0.041321,k:+0.037950,o:+0.023153,p:+0.029154,y:+0.023893
+stability_positive=7/7
+without_special_labels_beta=+0.076898 p=0.029497
+VERDICT=NO_DETECTED_MARGIN_SIGN_LINE_RELATION

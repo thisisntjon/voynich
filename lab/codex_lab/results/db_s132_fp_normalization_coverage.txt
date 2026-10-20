@@ -1,0 +1,32 @@
+db-S132 mode=real
+script_sha256=960D4AE762B02B61C15BC1FA3E391485B9B4C1B5EE4EBD6ED5603D54273B2CFF
+source=./data/ZL3b-n.txt
+source_sha256=BF5B6D4AC1E3A51B1847A9C388318D609020441CCD56984C901C32B09BECCAFC
+candidate_counts=421/1501
+baseline_token_coverage=0.825741016
+candidate_token_coverage=0.828684678
+token_gain=0.002943662
+baseline_type_coverage=0.635642494
+candidate_type_coverage=0.641535554
+type_gain=0.005893060
+frequency_matched_rank_p=0.096774194
+positive_folds=16/16
+CALL_FP_NORMALIZATION=False
+nulls=g/m:0.000495 m/q:0.000029 m/n:0.001224 m/t:0.000379 m/s:0.001603 m/r:0.004343 g/q:0.000000 g/n:0.000379 g/t:0.000117 g/s:0.000699 g/r:0.000641 l/m:0.003993 k/m:0.000262 i/m:0.000437 g/l:0.000874 d/m:0.001137 c/m:0.000029 g/k:0.000146 a/m:0.000058 g/i:0.000146 d/g:0.000758 c/g:0.000029 a/g:0.000117 m/y:0.001137 h/m:0.000000 e/m:0.000117 g/y:0.001457 g/h:0.000000 e/g:0.000175 m/o:0.000437
+folds:
+  A n=1429 token_gain=0.003498950 type_gain=0.003615196
+  B n=979 token_gain=0.004085802 type_gain=0.006613805
+  C n=1405 token_gain=0.007829181 type_gain=0.012063745
+  D n=1182 token_gain=0.002538071 type_gain=0.004016805
+  E n=1463 token_gain=0.004101162 type_gain=0.006930949
+  F n=1649 token_gain=0.003032141 type_gain=0.002522112
+  G n=1464 token_gain=0.002732240 type_gain=0.005221932
+  H n=1282 token_gain=0.003900156 type_gain=0.005794774
+  I n=364 token_gain=0.005494505 type_gain=0.007067138
+  J n=137 token_gain=0.007299270 type_gain=0.010000000
+  M n=6761 token_gain=0.001183257 type_gain=0.002689432
+  N n=1700 token_gain=0.003529412 type_gain=0.005597933
+  O n=1336 token_gain=0.004491018 type_gain=0.008337397
+  Q n=866 token_gain=0.005773672 type_gain=0.008504337
+  S n=1405 token_gain=0.002135231 type_gain=0.003435572
+  T n=10889 token_gain=0.002479567 type_gain=0.001877829

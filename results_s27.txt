@@ -1,0 +1,533 @@
+S27: K4 bound rows (middle setting k=6 w=180 beta=1.8, 3 T x 3 seeds) + flow_cipher_layer anchor (phase-3.md step s27)
+run started Sat Oct 17 21:26:34 PDT 2026 (`date`)
+s27_k4_bound.py sha256=98203915f0729f8dfacb26ddc7b8d25e2bded1cf06e915883ecf59299151ba7e  prereg stub_match=True
+ranges: s15_ranges.json sha256=b995aba64e5baa22524565963d67880287e43e98220a7c3cdd2d136eac6b3fef; scorer scoreboard/run_v2.py sha256=7dfdc9f75de5980a... (loaded by path; scoreboard.json untouched)
+shared library: s27_k4_bound.py sha256=98203915f0729f8dfacb26ddc7b8d25e2bded1cf06e915883ecf59299151ba7e
+python -I; one CPU process; no GPU; no paid calls; no new data; DELTA page bootstrap B=1000; Moran null 999 draws; seed 20261017
+bound rows enter no count; K4 is circular twice (Voynich R table, Voynich codeword pool); flow_cipher_layer = real Naibbe key on Voynich-measured tables, no decode
+
+=== ZL3b: 207 pages, 34857 tokens; para_start exact on 207 pages, first-line fallback on 0; 41 held-out pages: 41 ===
+Voynich ZL3b references: CHARWIN +0.0940  Moran I +0.1572 (line-shuffle q99 +0.0806, p=0.001)  F1 +0.0461 [+0.0357, +0.0564]  NMI-h1 0.275 (quire p 0.018, bifolio p 0.000)
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+Voynich ZL3b full all               34857  7025  5417 2.126 1.764 0.176   17.9   16.3 0.181 0.896 0.188 1.661  0.0049 0.141 |  1/ 9/8  1/ 7/6  6/ 4/4  4/ 5/2 | types_:W h2:W jsd_fi:W(pool) p_init:W(pool) m_fina:W cross_:W(B-ref) x_edge:W(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+Voynich ZL3b full A                 11231  3217  3217 2.145 1.786 0.139   11.6    6.2 0.120 0.864 0.127 1.695  0.0047 0.105 |  3/ 6/6  1/ 7/6  7/ 3/3  6/ 2/1 | types_:o h2:W jsd_fi:o(pool) p_init:W(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:W  KILL-CAND:LCG
+Voynich ZL3b full B                 23078  4788  4788 1.998 1.779 0.219   21.8   32.1 0.232 0.841 0.240 1.604  0.0088 0.151 |  1/ 9/8  1/ 7/6  4/ 6/5  4/ 5/2 | types_:o h2:o jsd_fi:o(pool) p_init:W(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+Voynich ZL3b g41 all                 8586  2535  2535 2.048 1.725 0.176   18.9   26.2 0.203 0.804 0.211 1.624  0.0078 0.145 |  1/ 9/8  1/ 7/6  5/ 5/5  4/ 5/2 | types_:W h2:o jsd_fi:W(pool) p_init:W(pool) m_fina:W cross_:W(B-ref) x_edge:W(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+Voynich ZL3b g41 A                   1724   845   845 2.142 1.674 0.172   13.0    9.4 0.122 0.580 0.138 1.685  0.0080 0.119 |  3/ 6/6  1/ 7/6  5/ 5/5  6/ 2/1 | types_:o h2:W jsd_fi:W(pool) p_init:W(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:W redup_:o  KILL-CAND:LCG
+Voynich ZL3b g41 B                   6717  1976  1976 1.963 1.729 0.193   21.8   39.3 0.238 0.849 0.249 1.583  0.0078 0.143 |  1/ 9/8  1/ 7/6  4/ 6/5  4/ 5/2 | types_:W h2:o jsd_fi:W(pool) p_init:W(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+K4 codebook ZL3b: plaintext types 9065, codewords used 7010, mean owners/codeword 7.8
+--- s27_k4_ZL3b_s1 (K4 k=6 w=180 b=1.8, seed 1) ---
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+s27_k4_ZL3b_s1 full all             34857  5611  4639 2.260 1.788 0.126    5.1    3.7 0.344 0.236 0.349 1.750  0.0042 0.023 |  2/ 8/7  2/ 6/5  7/ 3/3  5/ 4/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s1 full A               11231  2781  2781 2.243 1.754 0.128    5.7    3.2 0.329 0.240 0.336 1.724  0.0030 0.013 |  3/ 6/5  2/ 6/5  7/ 3/3  7/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s1 full B               23078  4653  4653 2.277 1.812 0.124    5.0    4.0 0.350 0.191 0.355 1.760  0.0042 0.025 |  2/ 8/7  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s1 g41 all               8586  2799  2799 2.267 1.790 0.124    4.9    3.7 0.341 0.210 0.347 1.749  0.0093 0.020 |  2/ 8/7  2/ 6/5  6/ 4/4  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s1 g41 A                 1724   911   911 2.227 1.718 0.147    6.8    4.3 0.345 0.174 0.361 1.711  0.0096 0.020 |  2/ 7/6  1/ 7/6  5/ 5/5  5/ 3/1 | types_:o h2:o jsd_fi:W(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s1 g41 B                 6717  2417  2417 2.273 1.808 0.120    4.6    3.7 0.342 0.223 0.347 1.757  0.0136 0.022 |  2/ 8/7  2/ 6/5  6/ 4/4  6/ 3/2 | types_:W h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+  CHARWIN  -0.5769 (negative)  Voynich +0.0940  DELTA -0.6709 [-0.7309, -0.6168]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_k4|ZL3b|1|CHARWIN|-0.57687|+0.09401|-0.67088|-0.73085|-0.61680|missed|sign=negative;se=0.02982
+  MORAN I  +0.0229 (positive)  Voynich +0.1572  DELTA -0.1343 [-0.1527, -0.1145]  -> missed; own line-shuffle null (999): median +0.0102 q99 +0.0219 p=0.006 above own q99: True  (Voynich q99 +0.0806 p=0.001)
+CELL|s27_k4|ZL3b|1|MORAN|+0.02293|+0.15724|-0.13432|-0.15269|-0.11455|missed|sign=positive;q99=+0.02190;p=0.0060;se=0.00988
+  F1 resid +0.0403 own CI [+0.0265, +0.0531]  Voynich +0.0461 [+0.0357, +0.0564]  DELTA -0.0058 [-0.0241, +0.0108]  -> reached
+CELL|s27_k4|ZL3b|1|F1|+0.04027|+0.04605|-0.00578|-0.02414|+0.01084|reached|ownlo=+0.02653;ownhi=+0.05309;se=0.00877
+  NMI-h1   0.272 (bar 0.206; Voynich 0.275)  quire-block p=0.018 (11 blocks, 55 assignments, floor 0.0182)  bifolio p=0.000 (27 blocks, 2925 assignments)  -> REACHES bar (reported, not counted)
+CELL|s27_k4|ZL3b|1|NMI|0.27158|0.27512|-0.00354|nan|nan|reached|pq=0.0182;pb=0.0003
+    elapsed 145s
+--- s27_k4_ZL3b_s2 (K4 k=6 w=180 b=1.8, seed 2) ---
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+s27_k4_ZL3b_s2 full all             34857  5525  4602 2.263 1.786 0.119    4.5    3.5 0.352 0.208 0.357 1.750  0.0027 0.018 |  3/ 7/6  2/ 6/5  7/ 3/3  5/ 4/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s2 full A               11231  2795  2795 2.250 1.752 0.118    4.3    3.1 0.332 0.249 0.340 1.726  0.0041 0.024 |  2/ 7/6  2/ 6/5  7/ 3/3  7/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s2 full B               23078  4576  4576 2.278 1.815 0.120    4.5    3.7 0.362 0.191 0.367 1.760  0.0032 0.014 |  3/ 7/6  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s2 g41 all               8586  2795  2795 2.272 1.802 0.124    4.7    3.3 0.376 0.210 0.382 1.748  0.0085 0.014 |  2/ 8/7  2/ 6/5  6/ 4/4  6/ 3/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s2 g41 A                 1724   935   935 2.260 1.774 0.144    5.1    2.6 0.335 0.290 0.339 1.731  0.0199 0.027 |  2/ 7/6  1/ 7/6  5/ 5/5  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s2 g41 B                 6717  2399  2399 2.270 1.808 0.119    4.5    3.5 0.390 0.194 0.394 1.751  0.0144 0.007 |  2/ 8/7  2/ 6/5  6/ 4/4  5/ 4/2 | types_:W h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+  CHARWIN  -0.5792 (negative)  Voynich +0.0940  DELTA -0.6732 [-0.7422, -0.6102]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_k4|ZL3b|2|CHARWIN|-0.57920|+0.09401|-0.67321|-0.74224|-0.61022|missed|sign=negative;se=0.03405
+  MORAN I  +0.0241 (positive)  Voynich +0.1572  DELTA -0.1331 [-0.1543, -0.1104]  -> missed; own line-shuffle null (999): median +0.0063 q99 +0.0176 p=0.002 above own q99: True  (Voynich q99 +0.0806 p=0.001)
+CELL|s27_k4|ZL3b|2|MORAN|+0.02413|+0.15724|-0.13311|-0.15430|-0.11037|missed|sign=positive;q99=+0.01763;p=0.0020;se=0.01088
+  F1 resid +0.0332 own CI [+0.0233, +0.0455]  Voynich +0.0461 [+0.0357, +0.0564]  DELTA -0.0129 [-0.0256, +0.0021]  -> reached
+CELL|s27_k4|ZL3b|2|F1|+0.03317|+0.04605|-0.01289|-0.02559|+0.00209|reached|ownlo=+0.02326;ownhi=+0.04549;se=0.00716
+  NMI-h1   0.237 (bar 0.206; Voynich 0.275)  quire-block p=0.018 (11 blocks, 55 assignments, floor 0.0182)  bifolio p=0.000 (27 blocks, 2925 assignments)  -> REACHES bar (reported, not counted)
+CELL|s27_k4|ZL3b|2|NMI|0.23683|0.27512|-0.03829|nan|nan|reached|pq=0.0182;pb=0.0003
+    elapsed 215s
+--- s27_k4_ZL3b_s3 (K4 k=6 w=180 b=1.8, seed 3) ---
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+s27_k4_ZL3b_s3 full all             34857  5568  4601 2.261 1.798 0.124    4.6    3.5 0.349 0.216 0.355 1.750  0.0029 0.014 |  3/ 7/6  2/ 6/5  7/ 3/3  5/ 4/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s3 full A               11231  2794  2794 2.235 1.774 0.118    4.5    3.4 0.338 0.223 0.345 1.721  0.0011 0.013 |  3/ 6/5  3/ 5/5  7/ 3/3  6/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s3 full B               23078  4576  4576 2.283 1.817 0.125    4.7    3.6 0.354 0.191 0.359 1.763  0.0039 0.013 |  2/ 8/7  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s3 g41 all               8586  2810  2810 2.264 1.812 0.122    4.1    3.6 0.341 0.256 0.346 1.747  0.0105 0.006 |  2/ 8/7  2/ 6/5  6/ 4/4  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s3 g41 A                 1724   908   908 2.217 1.751 0.128    3.4    3.4 0.313 0.348 0.314 1.699  0.0054 0.011 |  2/ 7/6  2/ 6/5  6/ 4/4  6/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_ZL3b_s3 g41 B                 6717  2415  2415 2.270 1.827 0.121    4.3    3.7 0.345 0.238 0.350 1.757  0.0105 0.004 |  2/ 8/7  2/ 6/5  6/ 4/4  5/ 4/2 | types_:W h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+  CHARWIN  -0.6097 (negative)  Voynich +0.0940  DELTA -0.7037 [-0.7630, -0.6429]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_k4|ZL3b|3|CHARWIN|-0.60971|+0.09401|-0.70372|-0.76296|-0.64289|missed|sign=negative;se=0.03107
+  MORAN I  +0.0151 (positive)  Voynich +0.1572  DELTA -0.1421 [-0.1605, -0.1230]  -> missed; own line-shuffle null (999): median +0.0039 q99 +0.0157 p=0.013 above own q99: False  (Voynich q99 +0.0806 p=0.001)
+CELL|s27_k4|ZL3b|3|MORAN|+0.01513|+0.15724|-0.14211|-0.16049|-0.12299|missed|sign=positive;q99=+0.01569;p=0.0130;se=0.00931
+  F1 resid +0.0379 own CI [+0.0243, +0.0508]  Voynich +0.0461 [+0.0357, +0.0564]  DELTA -0.0082 [-0.0236, +0.0073]  -> reached
+CELL|s27_k4|ZL3b|3|F1|+0.03787|+0.04605|-0.00818|-0.02364|+0.00726|reached|ownlo=+0.02430;ownhi=+0.05083;se=0.00810
+  NMI-h1   0.305 (bar 0.206; Voynich 0.275)  quire-block p=0.018 (11 blocks, 55 assignments, floor 0.0182)  bifolio p=0.000 (27 blocks, 2925 assignments)  -> REACHES bar (reported, not counted)
+CELL|s27_k4|ZL3b|3|NMI|0.30451|0.27512|+0.02939|nan|nan|reached|pq=0.0182;pb=0.0003
+    elapsed 286s
+--- s27_k4null_ZL3b_s1 (shuffled plaintext, seed 1; F1/NMI reference) ---
+  CHARWIN  -0.6237 (negative)  Voynich +0.0940  DELTA -0.7177 [-0.7659, -0.6682]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_k4null|ZL3b|1|CHARWIN|-0.62373|+0.09401|-0.71774|-0.76589|-0.66818|missed|sign=negative;se=0.02573
+  MORAN I  +0.0355 (positive)  Voynich +0.1572  DELTA -0.1218 [-0.1377, -0.1039]  -> missed; own line-shuffle null (999): median +0.0052 q99 +0.0176 p=0.001 above own q99: True  (Voynich q99 +0.0806 p=0.001)
+CELL|s27_k4null|ZL3b|1|MORAN|+0.03546|+0.15724|-0.12178|-0.13772|-0.10395|missed|sign=positive;q99=+0.01762;p=0.0010;se=0.00884
+  F1 resid +0.0142 own CI [+0.0044, +0.0249]  Voynich +0.0461 [+0.0357, +0.0564]  DELTA -0.0318 [-0.0465, -0.0166]  -> missed
+CELL|s27_k4null|ZL3b|1|F1|+0.01421|+0.04605|-0.03184|-0.04650|-0.01661|missed|ownlo=+0.00439;ownhi=+0.02489;se=0.00787
+  NMI-h1   0.004 (bar 0.206; Voynich 0.275)  quire-block p=0.727 (11 blocks, 55 assignments, floor 0.0182)  bifolio p=0.652 (27 blocks, 2925 assignments)  -> below bar (reported, not counted)
+CELL|s27_k4null|ZL3b|1|NMI|0.00400|0.27512|-0.27112|nan|nan|below|pq=0.7273;pb=0.6516
+--- flow_cipher_layer (file, 159 pages; cipher-family anchor, independent page bootstrap) ---
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+flow_cipher_layer full all          21292  4971  4971 2.120 1.667 0.087    7.5    4.7 0.217 0.136 0.220 1.598  0.0008 -0.021 |  3/ 7/6  3/ 5/5  7/ 3/3  4/ 5/3 | types_:o h2:W jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCGX
+flow_cipher_layer full A             9034  3044  3044 2.128 1.703 0.087    7.5    4.0 0.212 0.155 0.216 1.603 -0.0007 -0.013 |  3/ 6/5  3/ 5/5  7/ 3/3  4/ 4/2 | types_:o h2:W jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:W(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+flow_cipher_layer full B            11710  3513  3513 2.109 1.641 0.085    7.2    5.4 0.220 0.128 0.222 1.592  0.0002 -0.027 |  3/ 7/6  3/ 5/5  7/ 3/3  4/ 5/3 | types_:o h2:W jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCGX
+flow_cipher_layer g41 all            5890  2301  2301 2.108 1.622 0.086    6.7    4.3 0.227 0.136 0.233 1.594 -0.0012 -0.013 |  3/ 7/6  3/ 5/5  6/ 4/4  4/ 5/3 | types_:W h2:W jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCGX
+flow_cipher_layer g41 A              1589   865   865 2.114 1.664 0.099    6.3    3.6 0.219 0.126 0.225 1.607 -0.0079 0.003 |  2/ 7/6  3/ 5/5  5/ 5/5  4/ 4/2 | types_:o h2:W jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+flow_cipher_layer g41 B              4156  1765  1765 2.104 1.611 0.082    6.5    4.6 0.233 0.144 0.238 1.591 -0.0022 -0.017 |  3/ 7/6  3/ 5/5  6/ 4/4  4/ 5/3 | types_:o h2:W jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCGX
+  CHARWIN  -0.1819 (negative)  Voynich +0.0940  DELTA -0.2759 [-0.3258, -0.2317]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_flow_cipher_layer|ZL3b|0|CHARWIN|-0.18193|+0.09401|-0.27594|-0.32583|-0.23167|missed|sign=negative;se=0.02386
+  MORAN I  -0.0163 (non-positive)  Voynich +0.1572  DELTA -0.1736 [-0.1941, -0.1529]  -> missed; own line-shuffle null (999): median -0.0021 q99 +0.0123 p=0.989 above own q99: False  (Voynich q99 +0.0806 p=0.001)
+CELL|s27_flow_cipher_layer|ZL3b|0|MORAN|-0.01631|+0.15724|-0.17355|-0.19413|-0.15289|missed|sign=non-positive;q99=+0.01233;p=0.9890;se=0.01061
+  F1 resid +0.0507 own CI [+0.0337, +0.0668]  Voynich +0.0461 [+0.0357, +0.0564]  DELTA +0.0046 [-0.0134, +0.0249]  -> reached
+CELL|s27_flow_cipher_layer|ZL3b|0|F1|+0.05066|+0.04605|+0.00461|-0.01337|+0.02495|reached|ownlo=+0.03372;ownhi=+0.06682;se=0.01010
+  NMI-h1   0.016 (bar 0.206; Voynich 0.275)  quire-block p=0.556 (9 blocks, 9 assignments, floor 0.1111)  bifolio p=0.500 (24 blocks, 24 assignments)  -> below bar (reported, not counted)
+CELL|s27_flow_cipher_layer|ZL3b|0|NMI|0.01623|0.27512|-0.25889|nan|nan|below|pq=0.5556;pb=0.5000
+
+=== RF1b: 207 pages, 34618 tokens; para_start exact on 207 pages, first-line fallback on 0; 41 held-out pages: 41 ===
+Voynich RF1b references: CHARWIN +0.1099  Moran I +0.1549 (line-shuffle q99 +0.0815, p=0.001)  F1 +0.0333 [+0.0213, +0.0446]  NMI-h1 0.270 (quire p 0.018, bifolio p 0.000)
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+Voynich RF1b full all               34618  7348  5680 2.135 1.777 0.181   19.4   16.4 0.173 0.880 0.179 1.665  0.0036 0.141 |  1/ 9/8  1/ 7/6  6/ 4/4  5/ 4/2 | types_:W h2:W jsd_fi:W(pool) p_init:W(pool) m_fina:W cross_:W(B-ref) x_edge:W(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+Voynich RF1b full A                 11053  3384  3384 2.158 1.806 0.145   12.8    6.3 0.107 0.841 0.113 1.711  0.0021 0.109 |  4/ 5/5  1/ 7/6  7/ 3/3  6/ 2/1 | types_:o h2:W jsd_fi:W(pool) p_init:W(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:W  KILL-CAND:LCG
+Voynich RF1b full B                 23028  4945  4945 2.008 1.786 0.224   23.6   32.5 0.226 0.825 0.233 1.604  0.0064 0.154 |  1/ 9/8  1/ 7/6  5/ 5/4  4/ 5/2 | types_:o h2:o jsd_fi:o(pool) p_init:W(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+Voynich RF1b g41 all                 8604  2576  2576 2.054 1.724 0.178   20.7   27.2 0.197 0.744 0.205 1.622  0.0066 0.145 |  1/ 9/8  1/ 7/6  6/ 4/4  4/ 5/2 | types_:W h2:W jsd_fi:W(pool) p_init:W(pool) m_fina:W cross_:W(B-ref) x_edge:W(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+Voynich RF1b g41 A                   1694   882   882 2.154 1.689 0.174   19.1   10.2 0.092 0.473 0.096 1.703  0.0015 0.127 |  4/ 5/5  2/ 6/6  6/ 4/4  5/ 3/1 | types_:o h2:o jsd_fi:W(pool) p_init:W(pool) m_fina:W(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:W redup_:o  KILL-CAND:LCG
+Voynich RF1b g41 B                   6768  1986  1986 1.967 1.730 0.196   22.6   40.0 0.236 0.798 0.246 1.577  0.0071 0.145 |  1/ 9/8  1/ 7/6  4/ 6/5  4/ 5/2 | types_:W h2:o jsd_fi:W(pool) p_init:W(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+K4 codebook RF1b: plaintext types 9029, codewords used 7016, mean owners/codeword 7.7
+--- s27_k4_RF1b_s1 (K4 k=6 w=180 b=1.8, seed 1) ---
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+s27_k4_RF1b_s1 full all             34618  5539  4594 2.260 1.845 0.124    5.5    3.5 0.338 0.244 0.343 1.752  0.0027 0.014 |  3/ 7/6  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s1 full A               11053  2754  2754 2.237 1.801 0.129    5.3    3.6 0.318 0.235 0.326 1.730  0.0047 0.026 |  2/ 7/6  1/ 7/6  7/ 3/3  6/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s1 full B               23028  4623  4623 2.277 1.887 0.122    5.5    3.4 0.345 0.252 0.350 1.761  0.0048 0.006 |  2/ 8/7  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s1 g41 all               8604  2777  2777 2.271 1.877 0.137    5.5    3.1 0.343 0.186 0.348 1.753  0.0021 0.014 |  3/ 7/6  1/ 7/6  7/ 3/3  6/ 3/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s1 g41 A                 1694   889   889 2.236 1.799 0.135    5.2    3.5 0.293 0.000 0.305 1.731  0.0068 -0.019 |  2/ 7/6  2/ 6/5  5/ 5/5  6/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s1 g41 B                 6768  2421  2421 2.274 1.896 0.141    5.7    3.0 0.346 0.236 0.353 1.757  0.0053 0.019 |  2/ 8/7  1/ 7/6  7/ 3/3  6/ 3/1 | types_:W h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+  CHARWIN  -0.6189 (negative)  Voynich +0.1099  DELTA -0.7288 [-0.8015, -0.6586]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_k4|RF1b|1|CHARWIN|-0.61895|+0.10990|-0.72884|-0.80152|-0.65865|missed|sign=negative;se=0.03640
+  MORAN I  +0.0187 (positive)  Voynich +0.1549  DELTA -0.1362 [-0.1520, -0.1166]  -> missed; own line-shuffle null (999): median +0.0098 q99 +0.0221 p=0.047 above own q99: False  (Voynich q99 +0.0815 p=0.001)
+CELL|s27_k4|RF1b|1|MORAN|+0.01868|+0.15487|-0.13618|-0.15203|-0.11664|missed|sign=positive;q99=+0.02208;p=0.0470;se=0.00916
+  F1 resid +0.0279 own CI [+0.0192, +0.0384]  Voynich +0.0333 [+0.0213, +0.0446]  DELTA -0.0054 [-0.0216, +0.0116]  -> reached
+CELL|s27_k4|RF1b|1|F1|+0.02792|+0.03332|-0.00540|-0.02158|+0.01161|reached|ownlo=+0.01918;ownhi=+0.03845;se=0.00856
+  NMI-h1   0.301 (bar 0.206; Voynich 0.270)  quire-block p=0.018 (11 blocks, 55 assignments, floor 0.0182)  bifolio p=0.000 (27 blocks, 2925 assignments)  -> REACHES bar (reported, not counted)
+CELL|s27_k4|RF1b|1|NMI|0.30109|0.27038|+0.03071|nan|nan|reached|pq=0.0182;pb=0.0003
+    elapsed 495s
+--- s27_k4_RF1b_s2 (K4 k=6 w=180 b=1.8, seed 2) ---
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+s27_k4_RF1b_s2 full all             34618  5588  4655 2.257 1.844 0.124    5.1    3.6 0.334 0.240 0.339 1.749  0.0022 0.015 |  3/ 7/6  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s2 full A               11053  2765  2765 2.235 1.793 0.136    5.8    4.0 0.324 0.290 0.329 1.728  0.0034 0.027 |  2/ 7/6  1/ 7/6  7/ 3/3  6/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s2 full B               23028  4647  4647 2.272 1.884 0.118    4.8    3.4 0.337 0.204 0.342 1.757  0.0047 0.009 |  2/ 8/7  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s2 g41 all               8604  2813  2813 2.255 1.872 0.123    5.2    3.1 0.331 0.232 0.336 1.748  0.0058 0.025 |  2/ 8/7  2/ 6/5  7/ 3/3  7/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s2 g41 A                 1694   893   893 2.214 1.771 0.136    7.4    4.4 0.354 0.177 0.356 1.723  0.0184 0.027 |  2/ 7/6  1/ 7/6  5/ 5/5  4/ 4/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s2 g41 B                 6768  2423  2423 2.260 1.898 0.121    4.8    2.9 0.323 0.251 0.326 1.751  0.0078 0.028 |  2/ 8/7  2/ 6/5  6/ 4/4  7/ 2/1 | types_:W h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+  CHARWIN  -0.6090 (negative)  Voynich +0.1099  DELTA -0.7189 [-0.8073, -0.6320]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_k4|RF1b|2|CHARWIN|-0.60900|+0.10990|-0.71890|-0.80733|-0.63200|missed|sign=negative;se=0.04519
+  MORAN I  +0.0159 (positive)  Voynich +0.1549  DELTA -0.1389 [-0.1564, -0.1198]  -> missed; own line-shuffle null (999): median +0.0126 q99 +0.0232 p=0.222 above own q99: False  (Voynich q99 +0.0815 p=0.001)
+CELL|s27_k4|RF1b|2|MORAN|+0.01593|+0.15487|-0.13894|-0.15642|-0.11977|missed|sign=positive;q99=+0.02324;p=0.2220;se=0.00918
+  F1 resid +0.0275 own CI [+0.0173, +0.0376]  Voynich +0.0333 [+0.0213, +0.0446]  DELTA -0.0058 [-0.0206, +0.0107]  -> reached
+CELL|s27_k4|RF1b|2|F1|+0.02748|+0.03332|-0.00584|-0.02056|+0.01069|reached|ownlo=+0.01727;ownhi=+0.03756;se=0.00785
+  NMI-h1   0.277 (bar 0.206; Voynich 0.270)  quire-block p=0.018 (11 blocks, 55 assignments, floor 0.0182)  bifolio p=0.000 (27 blocks, 2925 assignments)  -> REACHES bar (reported, not counted)
+CELL|s27_k4|RF1b|2|NMI|0.27673|0.27038|+0.00635|nan|nan|reached|pq=0.0182;pb=0.0003
+    elapsed 566s
+--- s27_k4_RF1b_s3 (K4 k=6 w=180 b=1.8, seed 3) ---
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+s27_k4_RF1b_s3 full all             34618  5546  4603 2.262 1.851 0.120    5.2    3.3 0.340 0.228 0.345 1.752  0.0035 0.014 |  2/ 8/7  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s3 full A               11053  2714  2714 2.244 1.797 0.124    4.9    3.5 0.341 0.217 0.348 1.733  0.0029 0.017 |  3/ 6/5  2/ 6/5  7/ 3/3  6/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s3 full B               23028  4602  4602 2.272 1.895 0.119    5.3    3.2 0.341 0.243 0.345 1.759  0.0044 0.013 |  2/ 8/7  2/ 6/5  7/ 3/3  7/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s3 g41 all               8604  2781  2781 2.267 1.881 0.110    5.0    3.5 0.329 0.186 0.332 1.749  0.0057 0.027 |  2/ 8/7  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s3 g41 A                 1694   910   910 2.239 1.829 0.125    5.4    4.9 0.322 0.118 0.333 1.732  0.0118 0.032 |  2/ 7/6  2/ 6/5  5/ 5/5  6/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_RF1b_s3 g41 B                 6768  2386  2386 2.267 1.896 0.108    5.0    3.0 0.329 0.207 0.337 1.750  0.0079 0.025 |  2/ 8/7  2/ 6/5  6/ 4/4  7/ 2/1 | types_:W h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+  CHARWIN  -0.6213 (negative)  Voynich +0.1099  DELTA -0.7312 [-0.8175, -0.6480]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_k4|RF1b|3|CHARWIN|-0.62127|+0.10990|-0.73117|-0.81754|-0.64805|missed|sign=negative;se=0.04340
+  MORAN I  +0.0169 (positive)  Voynich +0.1549  DELTA -0.1380 [-0.1556, -0.1198]  -> missed; own line-shuffle null (999): median +0.0069 q99 +0.0186 p=0.020 above own q99: False  (Voynich q99 +0.0815 p=0.001)
+CELL|s27_k4|RF1b|3|MORAN|+0.01689|+0.15487|-0.13798|-0.15560|-0.11982|missed|sign=positive;q99=+0.01860;p=0.0200;se=0.00911
+  F1 resid +0.0237 own CI [+0.0157, +0.0329]  Voynich +0.0333 [+0.0213, +0.0446]  DELTA -0.0096 [-0.0242, +0.0047]  -> reached
+CELL|s27_k4|RF1b|3|F1|+0.02367|+0.03332|-0.00965|-0.02416|+0.00466|reached|ownlo=+0.01567;ownhi=+0.03293;se=0.00731
+  NMI-h1   0.195 (bar 0.206; Voynich 0.270)  quire-block p=0.018 (11 blocks, 55 assignments, floor 0.0182)  bifolio p=0.000 (27 blocks, 2925 assignments)  -> below bar (reported, not counted)
+CELL|s27_k4|RF1b|3|NMI|0.19520|0.27038|-0.07518|nan|nan|below|pq=0.0182;pb=0.0003
+    elapsed 639s
+--- s27_k4null_RF1b_s1 (shuffled plaintext, seed 1; F1/NMI reference) ---
+  CHARWIN  -0.6617 (negative)  Voynich +0.1099  DELTA -0.7716 [-0.8278, -0.7129]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_k4null|RF1b|1|CHARWIN|-0.66166|+0.10990|-0.77156|-0.82781|-0.71295|missed|sign=negative;se=0.02875
+  MORAN I  +0.0208 (positive)  Voynich +0.1549  DELTA -0.1341 [-0.1514, -0.1150]  -> missed; own line-shuffle null (999): median +0.0039 q99 +0.0148 p=0.002 above own q99: True  (Voynich q99 +0.0815 p=0.001)
+CELL|s27_k4null|RF1b|1|MORAN|+0.02081|+0.15487|-0.13405|-0.15141|-0.11496|missed|sign=positive;q99=+0.01479;p=0.0020;se=0.00977
+  F1 resid +0.0106 own CI [+0.0007, +0.0211]  Voynich +0.0333 [+0.0213, +0.0446]  DELTA -0.0227 [-0.0353, -0.0093]  -> missed
+CELL|s27_k4null|RF1b|1|F1|+0.01063|+0.03332|-0.02269|-0.03534|-0.00931|missed|ownlo=+0.00073;ownhi=+0.02110;se=0.00680
+  NMI-h1   0.003 (bar 0.206; Voynich 0.270)  quire-block p=0.691 (11 blocks, 55 assignments, floor 0.0182)  bifolio p=0.756 (27 blocks, 2925 assignments)  -> below bar (reported, not counted)
+CELL|s27_k4null|RF1b|1|NMI|0.00278|0.27038|-0.26760|nan|nan|below|pq=0.6909;pb=0.7559
+
+=== IT2a: 206 pages, 34411 tokens; para_start exact on 204 pages, first-line fallback on 2; 41 held-out pages: 41 ===
+Voynich IT2a references: CHARWIN +0.0977  Moran I +0.1566 (line-shuffle q99 +0.0830, p=0.001)  F1 +0.0410 [+0.0317, +0.0498]  NMI-h1 0.287 (quire p 0.018, bifolio p 0.000)
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+Voynich IT2a full all               34411  7069  5522 2.128 1.691 0.175   17.6   16.5 0.166 0.932 0.173 1.650  0.0040 0.141 |  1/ 9/8  1/ 7/6  6/ 4/4  4/ 5/2 | types_:W h2:W jsd_fi:W(pool) p_init:W(pool) m_fina:W cross_:W(B-ref) x_edge:W(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+Voynich IT2a full A                 11081  3243  3243 2.139 1.730 0.136   12.0    6.5 0.097 0.957 0.102 1.686  0.0013 0.099 |  4/ 5/5  2/ 6/6  7/ 3/3  6/ 2/1 | types_:o h2:W jsd_fi:o(pool) p_init:W(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:W  KILL-CAND:LCG
+Voynich IT2a full B                 22797  4813  4813 2.004 1.682 0.220   21.0   32.0 0.218 0.838 0.226 1.591  0.0069 0.157 |  1/ 9/8  1/ 7/6  5/ 5/5  4/ 5/2 | types_:o h2:o jsd_fi:o(pool) p_init:W(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+Voynich IT2a g41 all                 8411  2478  2478 2.033 1.632 0.182   18.7   30.4 0.190 0.856 0.200 1.603  0.0048 0.151 |  1/ 9/8  1/ 7/6  6/ 4/4  4/ 5/2 | types_:W h2:o jsd_fi:W(pool) p_init:W(pool) m_fina:o cross_:W(B-ref) x_edge:W(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+Voynich IT2a g41 A                   1731   852   852 2.128 1.627 0.178   13.8   10.1 0.091 0.809 0.109 1.671 -0.0065 0.119 |  4/ 5/5  2/ 6/6  5/ 5/5  4/ 4/2 | types_:o h2:W jsd_fi:W(pool) p_init:W(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+Voynich IT2a g41 B                   6537  1912  1912 1.942 1.625 0.201   21.4   50.5 0.227 0.857 0.237 1.558  0.0052 0.150 |  1/ 9/8  1/ 7/6  6/ 4/4  4/ 5/2 | types_:W h2:o jsd_fi:W(pool) p_init:W(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:W redup_:W  KILL-CAND:LCG
+K4 codebook IT2a: plaintext types 8971, codewords used 7013, mean owners/codeword 7.7
+--- s27_k4_IT2a_s1 (K4 k=6 w=180 b=1.8, seed 1) ---
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+s27_k4_IT2a_s1 full all             34411  5491  4571 2.259 1.765 0.114    4.8    3.6 0.335 0.192 0.340 1.742  0.0019 0.020 |  3/ 7/6  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s1 full A               11081  2734  2734 2.253 1.763 0.118    4.7    3.2 0.328 0.144 0.335 1.724  0.0009 0.022 |  3/ 6/5  3/ 5/5  7/ 3/3  7/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s1 full B               22797  4559  4559 2.275 1.794 0.113    5.0    3.7 0.337 0.202 0.341 1.750  0.0016 0.019 |  3/ 7/6  3/ 5/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s1 g41 all               8411  2747  2747 2.273 1.763 0.125    4.5    3.9 0.335 0.202 0.339 1.746  0.0038 0.019 |  2/ 8/7  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s1 g41 A                 1731   904   904 2.235 1.737 0.136    4.1    3.1 0.314 0.116 0.320 1.728  0.0248 0.010 |  2/ 7/6  1/ 7/6  5/ 5/5  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s1 g41 B                 6537  2330  2330 2.277 1.771 0.127    4.8    4.1 0.339 0.229 0.346 1.748  0.0066 0.025 |  2/ 8/7  2/ 6/5  7/ 3/3  7/ 2/2 | types_:W h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+  CHARWIN  -0.6182 (negative)  Voynich +0.0977  DELTA -0.7159 [-0.7884, -0.6477]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_k4|IT2a|1|CHARWIN|-0.61817|+0.09774|-0.71591|-0.78845|-0.64766|missed|sign=negative;se=0.03542
+  MORAN I  +0.0240 (positive)  Voynich +0.1566  DELTA -0.1326 [-0.1528, -0.1126]  -> missed; own line-shuffle null (999): median +0.0087 q99 +0.0210 p=0.001 above own q99: True  (Voynich q99 +0.0830 p=0.001)
+CELL|s27_k4|IT2a|1|MORAN|+0.02396|+0.15659|-0.13263|-0.15280|-0.11257|missed|sign=positive;q99=+0.02099;p=0.0010;se=0.01033
+  F1 resid +0.0326 own CI [+0.0226, +0.0426]  Voynich +0.0410 [+0.0317, +0.0498]  DELTA -0.0083 [-0.0212, +0.0054]  -> reached
+CELL|s27_k4|IT2a|1|F1|+0.03264|+0.04095|-0.00831|-0.02124|+0.00539|reached|ownlo=+0.02260;ownhi=+0.04261;se=0.00680
+  NMI-h1   0.309 (bar 0.206; Voynich 0.287)  quire-block p=0.018 (11 blocks, 55 assignments, floor 0.0182)  bifolio p=0.000 (27 blocks, 2925 assignments)  -> REACHES bar (reported, not counted)
+CELL|s27_k4|IT2a|1|NMI|0.30915|0.28703|+0.02212|nan|nan|reached|pq=0.0182;pb=0.0003
+    elapsed 802s
+--- s27_k4_IT2a_s2 (K4 k=6 w=180 b=1.8, seed 2) ---
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+s27_k4_IT2a_s2 full all             34411  5533  4575 2.264 1.764 0.124    5.1    3.6 0.323 0.160 0.328 1.747  0.0017 0.022 |  3/ 7/6  3/ 5/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s2 full A               11081  2744  2744 2.250 1.747 0.120    6.0    3.2 0.316 0.190 0.323 1.725  0.0012 0.018 |  3/ 6/5  3/ 5/5  7/ 3/3  7/ 2/1 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s2 full B               22797  4589  4589 2.278 1.804 0.129    5.0    3.7 0.326 0.167 0.330 1.757  0.0028 0.023 |  3/ 7/6  1/ 7/6  7/ 3/3  7/ 2/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s2 g41 all               8411  2759  2759 2.271 1.763 0.121    4.2    3.9 0.332 0.131 0.339 1.750  0.0056 0.014 |  2/ 8/7  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s2 g41 A                 1731   920   920 2.228 1.689 0.126    4.5    3.4 0.331 0.173 0.343 1.711  0.0156 -0.013 |  2/ 7/6  2/ 6/5  5/ 5/5  5/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s2 g41 B                 6537  2328  2328 2.278 1.782 0.126    4.3    4.0 0.329 0.107 0.335 1.758  0.0124 0.021 |  2/ 8/7  2/ 6/5  6/ 4/4  7/ 2/2 | types_:W h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+  CHARWIN  -0.6198 (negative)  Voynich +0.0977  DELTA -0.7175 [-0.7733, -0.6640]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_k4|IT2a|2|CHARWIN|-0.61977|+0.09774|-0.71751|-0.77330|-0.66405|missed|sign=negative;se=0.02744
+  MORAN I  +0.0232 (positive)  Voynich +0.1566  DELTA -0.1334 [-0.1515, -0.1150]  -> missed; own line-shuffle null (999): median +0.0075 q99 +0.0192 p=0.003 above own q99: True  (Voynich q99 +0.0830 p=0.001)
+CELL|s27_k4|IT2a|2|MORAN|+0.02316|+0.15659|-0.13344|-0.15147|-0.11497|missed|sign=positive;q99=+0.01921;p=0.0030;se=0.00956
+  F1 resid +0.0293 own CI [+0.0210, +0.0377]  Voynich +0.0410 [+0.0317, +0.0498]  DELTA -0.0117 [-0.0229, +0.0015]  -> reached
+CELL|s27_k4|IT2a|2|F1|+0.02928|+0.04095|-0.01167|-0.02292|+0.00148|reached|ownlo=+0.02095;ownhi=+0.03766;se=0.00623
+  NMI-h1   0.261 (bar 0.206; Voynich 0.287)  quire-block p=0.018 (11 blocks, 55 assignments, floor 0.0182)  bifolio p=0.000 (27 blocks, 2925 assignments)  -> REACHES bar (reported, not counted)
+CELL|s27_k4|IT2a|2|NMI|0.26132|0.28703|-0.02571|nan|nan|reached|pq=0.0182;pb=0.0003
+    elapsed 871s
+--- s27_k4_IT2a_s3 (K4 k=6 w=180 b=1.8, seed 3) ---
+row                                   tok   typ  t25k     h2  sdlen   jsdf  pinit   mfin  cross  redup edgeMI   posH ltr-rtl  moran |        L        C        G        X | width-flags
+s27_k4_IT2a_s3 full all             34411  5543  4597 2.259 1.769 0.110    4.5    3.8 0.331 0.176 0.336 1.748  0.0037 0.020 |  2/ 8/7  2/ 6/5  7/ 3/3  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s3 full A               11081  2723  2723 2.245 1.747 0.096    4.2    3.2 0.316 0.162 0.322 1.729 -0.0023 0.023 |  3/ 6/5  3/ 5/5  6/ 4/4  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s3 full B               22797  4603  4603 2.277 1.813 0.120    4.8    4.0 0.336 0.206 0.341 1.757  0.0008 0.018 |  3/ 7/6  3/ 5/5  7/ 3/3  6/ 3/3 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCGX
+s27_k4_IT2a_s3 g41 all               8411  2768  2768 2.269 1.771 0.113    4.1    4.2 0.340 0.178 0.344 1.748  0.0084 0.001 |  2/ 8/7  2/ 6/5  6/ 4/4  6/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s3 g41 A                 1731   903   903 2.230 1.733 0.118    3.5    3.6 0.306 0.173 0.319 1.710  0.0246 0.009 |  2/ 7/6  2/ 6/5  5/ 5/5  5/ 3/2 | types_:o h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o(A:nw) cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+s27_k4_IT2a_s3 g41 B                 6537  2361  2361 2.275 1.779 0.117    4.3    4.3 0.340 0.168 0.346 1.757  0.0071 0.000 |  2/ 8/7  2/ 6/5  6/ 4/4  6/ 3/2 | types_:W h2:o jsd_fi:o(pool) p_init:o(pool) m_fina:o cross_:o(B-ref) x_edge:o(B-ref) x_mora:o redup_:o  KILL-CAND:LCG
+  CHARWIN  -0.6318 (negative)  Voynich +0.0977  DELTA -0.7296 [-0.8134, -0.6495]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_k4|IT2a|3|CHARWIN|-0.63184|+0.09774|-0.72957|-0.81341|-0.64950|missed|sign=negative;se=0.04257
+  MORAN I  +0.0250 (positive)  Voynich +0.1566  DELTA -0.1316 [-0.1492, -0.1115]  -> missed; own line-shuffle null (999): median +0.0100 q99 +0.0207 p=0.002 above own q99: True  (Voynich q99 +0.0830 p=0.001)
+CELL|s27_k4|IT2a|3|MORAN|+0.02502|+0.15659|-0.13157|-0.14917|-0.11148|missed|sign=positive;q99=+0.02072;p=0.0020;se=0.00990
+  F1 resid +0.0300 own CI [+0.0191, +0.0412]  Voynich +0.0410 [+0.0317, +0.0498]  DELTA -0.0109 [-0.0262, +0.0039]  -> reached
+CELL|s27_k4|IT2a|3|F1|+0.03000|+0.04095|-0.01095|-0.02617|+0.00388|reached|ownlo=+0.01907;ownhi=+0.04120;se=0.00763
+  NMI-h1   0.291 (bar 0.206; Voynich 0.287)  quire-block p=0.018 (11 blocks, 55 assignments, floor 0.0182)  bifolio p=0.000 (27 blocks, 2925 assignments)  -> REACHES bar (reported, not counted)
+CELL|s27_k4|IT2a|3|NMI|0.29093|0.28703|+0.00390|nan|nan|reached|pq=0.0182;pb=0.0003
+    elapsed 940s
+--- s27_k4null_IT2a_s1 (shuffled plaintext, seed 1; F1/NMI reference) ---
+  CHARWIN  -0.6735 (negative)  Voynich +0.0977  DELTA -0.7712 [-0.8158, -0.7255]  -> missed; own null: n/a (invariant under within-line shuffle)
+CELL|s27_k4null|IT2a|1|CHARWIN|-0.67351|+0.09774|-0.77124|-0.81580|-0.72549|missed|sign=negative;se=0.02354
+  MORAN I  +0.0263 (positive)  Voynich +0.1566  DELTA -0.1303 [-0.1491, -0.1116]  -> missed; own line-shuffle null (999): median +0.0023 q99 +0.0145 p=0.001 above own q99: True  (Voynich q99 +0.0830 p=0.001)
+CELL|s27_k4null|IT2a|1|MORAN|+0.02627|+0.15659|-0.13033|-0.14907|-0.11159|missed|sign=positive;q99=+0.01450;p=0.0010;se=0.00968
+  F1 resid +0.0190 own CI [+0.0096, +0.0283]  Voynich +0.0410 [+0.0317, +0.0498]  DELTA -0.0220 [-0.0336, -0.0102]  -> missed
+CELL|s27_k4null|IT2a|1|F1|+0.01896|+0.04095|-0.02199|-0.03357|-0.01025|missed|ownlo=+0.00961;ownhi=+0.02829;se=0.00588
+  NMI-h1   0.014 (bar 0.206; Voynich 0.287)  quire-block p=0.273 (11 blocks, 55 assignments, floor 0.0182)  bifolio p=0.254 (27 blocks, 2925 assignments)  -> below bar (reported, not counted)
+CELL|s27_k4null|IT2a|1|NMI|0.01364|0.28703|-0.27340|nan|nan|below|pq=0.2727;pb=0.2544
+
+=== summary of calls (bound rows; informational, no count) ===
+  s27_k4                   ZL3b s1 CHARWIN  value -0.57687 Voynich +0.09401 DELTA -0.67088 [-0.73085, -0.61680] -> missed  sign=negative;se=0.02982
+  s27_k4                   ZL3b s1 MORAN    value +0.02293 Voynich +0.15724 DELTA -0.13432 [-0.15269, -0.11455] -> missed  sign=positive;q99=+0.02190;p=0.0060;se=0.00988
+  s27_k4                   ZL3b s1 F1       value +0.04027 Voynich +0.04605 DELTA -0.00578 [-0.02414, +0.01084] -> reached  ownlo=+0.02653;ownhi=+0.05309;se=0.00877
+  s27_k4                   ZL3b s1 NMI      value 0.27158 Voynich 0.27512 DELTA -0.00354 [nan, nan] -> reached  pq=0.0182;pb=0.0003
+  s27_k4                   ZL3b s2 CHARWIN  value -0.57920 Voynich +0.09401 DELTA -0.67321 [-0.74224, -0.61022] -> missed  sign=negative;se=0.03405
+  s27_k4                   ZL3b s2 MORAN    value +0.02413 Voynich +0.15724 DELTA -0.13311 [-0.15430, -0.11037] -> missed  sign=positive;q99=+0.01763;p=0.0020;se=0.01088
+  s27_k4                   ZL3b s2 F1       value +0.03317 Voynich +0.04605 DELTA -0.01289 [-0.02559, +0.00209] -> reached  ownlo=+0.02326;ownhi=+0.04549;se=0.00716
+  s27_k4                   ZL3b s2 NMI      value 0.23683 Voynich 0.27512 DELTA -0.03829 [nan, nan] -> reached  pq=0.0182;pb=0.0003
+  s27_k4                   ZL3b s3 CHARWIN  value -0.60971 Voynich +0.09401 DELTA -0.70372 [-0.76296, -0.64289] -> missed  sign=negative;se=0.03107
+  s27_k4                   ZL3b s3 MORAN    value +0.01513 Voynich +0.15724 DELTA -0.14211 [-0.16049, -0.12299] -> missed  sign=positive;q99=+0.01569;p=0.0130;se=0.00931
+  s27_k4                   ZL3b s3 F1       value +0.03787 Voynich +0.04605 DELTA -0.00818 [-0.02364, +0.00726] -> reached  ownlo=+0.02430;ownhi=+0.05083;se=0.00810
+  s27_k4                   ZL3b s3 NMI      value 0.30451 Voynich 0.27512 DELTA +0.02939 [nan, nan] -> reached  pq=0.0182;pb=0.0003
+  s27_k4null               ZL3b s1 CHARWIN  value -0.62373 Voynich +0.09401 DELTA -0.71774 [-0.76589, -0.66818] -> missed  sign=negative;se=0.02573
+  s27_k4null               ZL3b s1 MORAN    value +0.03546 Voynich +0.15724 DELTA -0.12178 [-0.13772, -0.10395] -> missed  sign=positive;q99=+0.01762;p=0.0010;se=0.00884
+  s27_k4null               ZL3b s1 F1       value +0.01421 Voynich +0.04605 DELTA -0.03184 [-0.04650, -0.01661] -> missed  ownlo=+0.00439;ownhi=+0.02489;se=0.00787
+  s27_k4null               ZL3b s1 NMI      value 0.00400 Voynich 0.27512 DELTA -0.27112 [nan, nan] -> below  pq=0.7273;pb=0.6516
+  s27_flow_cipher_layer    ZL3b s0 CHARWIN  value -0.18193 Voynich +0.09401 DELTA -0.27594 [-0.32583, -0.23167] -> missed  sign=negative;se=0.02386
+  s27_flow_cipher_layer    ZL3b s0 MORAN    value -0.01631 Voynich +0.15724 DELTA -0.17355 [-0.19413, -0.15289] -> missed  sign=non-positive;q99=+0.01233;p=0.9890;se=0.01061
+  s27_flow_cipher_layer    ZL3b s0 F1       value +0.05066 Voynich +0.04605 DELTA +0.00461 [-0.01337, +0.02495] -> reached  ownlo=+0.03372;ownhi=+0.06682;se=0.01010
+  s27_flow_cipher_layer    ZL3b s0 NMI      value 0.01623 Voynich 0.27512 DELTA -0.25889 [nan, nan] -> below  pq=0.5556;pb=0.5000
+  s27_k4                   RF1b s1 CHARWIN  value -0.61895 Voynich +0.10990 DELTA -0.72884 [-0.80152, -0.65865] -> missed  sign=negative;se=0.03640
+  s27_k4                   RF1b s1 MORAN    value +0.01868 Voynich +0.15487 DELTA -0.13618 [-0.15203, -0.11664] -> missed  sign=positive;q99=+0.02208;p=0.0470;se=0.00916
+  s27_k4                   RF1b s1 F1       value +0.02792 Voynich +0.03332 DELTA -0.00540 [-0.02158, +0.01161] -> reached  ownlo=+0.01918;ownhi=+0.03845;se=0.00856
+  s27_k4                   RF1b s1 NMI      value 0.30109 Voynich 0.27038 DELTA +0.03071 [nan, nan] -> reached  pq=0.0182;pb=0.0003
+  s27_k4                   RF1b s2 CHARWIN  value -0.60900 Voynich +0.10990 DELTA -0.71890 [-0.80733, -0.63200] -> missed  sign=negative;se=0.04519
+  s27_k4                   RF1b s2 MORAN    value +0.01593 Voynich +0.15487 DELTA -0.13894 [-0.15642, -0.11977] -> missed  sign=positive;q99=+0.02324;p=0.2220;se=0.00918
+  s27_k4                   RF1b s2 F1       value +0.02748 Voynich +0.03332 DELTA -0.00584 [-0.02056, +0.01069] -> reached  ownlo=+0.01727;ownhi=+0.03756;se=0.00785
+  s27_k4                   RF1b s2 NMI      value 0.27673 Voynich 0.27038 DELTA +0.00635 [nan, nan] -> reached  pq=0.0182;pb=0.0003
+  s27_k4                   RF1b s3 CHARWIN  value -0.62127 Voynich +0.10990 DELTA -0.73117 [-0.81754, -0.64805] -> missed  sign=negative;se=0.04340
+  s27_k4                   RF1b s3 MORAN    value +0.01689 Voynich +0.15487 DELTA -0.13798 [-0.15560, -0.11982] -> missed  sign=positive;q99=+0.01860;p=0.0200;se=0.00911
+  s27_k4                   RF1b s3 F1       value +0.02367 Voynich +0.03332 DELTA -0.00965 [-0.02416, +0.00466] -> reached  ownlo=+0.01567;ownhi=+0.03293;se=0.00731
+  s27_k4                   RF1b s3 NMI      value 0.19520 Voynich 0.27038 DELTA -0.07518 [nan, nan] -> below  pq=0.0182;pb=0.0003
+  s27_k4null               RF1b s1 CHARWIN  value -0.66166 Voynich +0.10990 DELTA -0.77156 [-0.82781, -0.71295] -> missed  sign=negative;se=0.02875
+  s27_k4null               RF1b s1 MORAN    value +0.02081 Voynich +0.15487 DELTA -0.13405 [-0.15141, -0.11496] -> missed  sign=positive;q99=+0.01479;p=0.0020;se=0.00977
+  s27_k4null               RF1b s1 F1       value +0.01063 Voynich +0.03332 DELTA -0.02269 [-0.03534, -0.00931] -> missed  ownlo=+0.00073;ownhi=+0.02110;se=0.00680
+  s27_k4null               RF1b s1 NMI      value 0.00278 Voynich 0.27038 DELTA -0.26760 [nan, nan] -> below  pq=0.6909;pb=0.7559
+  s27_k4                   IT2a s1 CHARWIN  value -0.61817 Voynich +0.09774 DELTA -0.71591 [-0.78845, -0.64766] -> missed  sign=negative;se=0.03542
+  s27_k4                   IT2a s1 MORAN    value +0.02396 Voynich +0.15659 DELTA -0.13263 [-0.15280, -0.11257] -> missed  sign=positive;q99=+0.02099;p=0.0010;se=0.01033
+  s27_k4                   IT2a s1 F1       value +0.03264 Voynich +0.04095 DELTA -0.00831 [-0.02124, +0.00539] -> reached  ownlo=+0.02260;ownhi=+0.04261;se=0.00680
+  s27_k4                   IT2a s1 NMI      value 0.30915 Voynich 0.28703 DELTA +0.02212 [nan, nan] -> reached  pq=0.0182;pb=0.0003
+  s27_k4                   IT2a s2 CHARWIN  value -0.61977 Voynich +0.09774 DELTA -0.71751 [-0.77330, -0.66405] -> missed  sign=negative;se=0.02744
+  s27_k4                   IT2a s2 MORAN    value +0.02316 Voynich +0.15659 DELTA -0.13344 [-0.15147, -0.11497] -> missed  sign=positive;q99=+0.01921;p=0.0030;se=0.00956
+  s27_k4                   IT2a s2 F1       value +0.02928 Voynich +0.04095 DELTA -0.01167 [-0.02292, +0.00148] -> reached  ownlo=+0.02095;ownhi=+0.03766;se=0.00623
+  s27_k4                   IT2a s2 NMI      value 0.26132 Voynich 0.28703 DELTA -0.02571 [nan, nan] -> reached  pq=0.0182;pb=0.0003
+  s27_k4                   IT2a s3 CHARWIN  value -0.63184 Voynich +0.09774 DELTA -0.72957 [-0.81341, -0.64950] -> missed  sign=negative;se=0.04257
+  s27_k4                   IT2a s3 MORAN    value +0.02502 Voynich +0.15659 DELTA -0.13157 [-0.14917, -0.11148] -> missed  sign=positive;q99=+0.02072;p=0.0020;se=0.00990
+  s27_k4                   IT2a s3 F1       value +0.03000 Voynich +0.04095 DELTA -0.01095 [-0.02617, +0.00388] -> reached  ownlo=+0.01907;ownhi=+0.04120;se=0.00763
+  s27_k4                   IT2a s3 NMI      value 0.29093 Voynich 0.28703 DELTA +0.00390 [nan, nan] -> reached  pq=0.0182;pb=0.0003
+  s27_k4null               IT2a s1 CHARWIN  value -0.67351 Voynich +0.09774 DELTA -0.77124 [-0.81580, -0.72549] -> missed  sign=negative;se=0.02354
+  s27_k4null               IT2a s1 MORAN    value +0.02627 Voynich +0.15659 DELTA -0.13033 [-0.14907, -0.11159] -> missed  sign=positive;q99=+0.01450;p=0.0010;se=0.00968
+  s27_k4null               IT2a s1 F1       value +0.01896 Voynich +0.04095 DELTA -0.02199 [-0.03357, -0.01025] -> missed  ownlo=+0.00961;ownhi=+0.02829;se=0.00588
+  s27_k4null               IT2a s1 NMI      value 0.01364 Voynich 0.28703 DELTA -0.27340 [nan, nan] -> below  pq=0.2727;pb=0.2544
+
+=== POWER (v2.1 item 6.1): every negative / null-difference cell beside its smallest detectable DELTA ===
+TEST    : s27_k4 ZL3b seed 1 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.57687 Voynich +0.09401 DELTA -0.67088 [-0.73085, -0.61680] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0298 = 0.0835; observed |DELTA| 0.6709 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 ZL3b seed 1 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.02293 Voynich +0.15724 DELTA -0.13432 [-0.15269, -0.11455] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0099 = 0.0277; observed |DELTA| 0.1343 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 ZL3b seed 1 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.04027 Voynich +0.04605 DELTA -0.00578 [-0.02414, +0.01084] -> reached; interval includes zero (no detected difference)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0088 = 0.0246; observed |DELTA| 0.0058 < MDE
+STATUS  : UNDERPOWERED for a difference of the observed size
+
+TEST    : s27_k4 ZL3b seed 2 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.57920 Voynich +0.09401 DELTA -0.67321 [-0.74224, -0.61022] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0340 = 0.0953; observed |DELTA| 0.6732 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 ZL3b seed 2 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.02413 Voynich +0.15724 DELTA -0.13311 [-0.15430, -0.11037] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0109 = 0.0305; observed |DELTA| 0.1331 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 ZL3b seed 2 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.03317 Voynich +0.04605 DELTA -0.01289 [-0.02559, +0.00209] -> reached; interval includes zero (no detected difference)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0072 = 0.0200; observed |DELTA| 0.0129 < MDE
+STATUS  : UNDERPOWERED for a difference of the observed size
+
+TEST    : s27_k4 ZL3b seed 3 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.60971 Voynich +0.09401 DELTA -0.70372 [-0.76296, -0.64289] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0311 = 0.0870; observed |DELTA| 0.7037 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 ZL3b seed 3 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.01513 Voynich +0.15724 DELTA -0.14211 [-0.16049, -0.12299] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0093 = 0.0261; observed |DELTA| 0.1421 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 ZL3b seed 3 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.03787 Voynich +0.04605 DELTA -0.00818 [-0.02364, +0.00726] -> reached; interval includes zero (no detected difference)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0081 = 0.0227; observed |DELTA| 0.0082 < MDE
+STATUS  : UNDERPOWERED for a difference of the observed size
+
+TEST    : s27_k4null ZL3b seed 1 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.62373 Voynich +0.09401 DELTA -0.71774 [-0.76589, -0.66818] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0257 = 0.0720; observed |DELTA| 0.7177 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4null ZL3b seed 1 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.03546 Voynich +0.15724 DELTA -0.12178 [-0.13772, -0.10395] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0088 = 0.0248; observed |DELTA| 0.1218 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4null ZL3b seed 1 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.01421 Voynich +0.04605 DELTA -0.03184 [-0.04650, -0.01661] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0079 = 0.0220; observed |DELTA| 0.0318 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_flow_cipher_layer ZL3b seed 0 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.18193 Voynich +0.09401 DELTA -0.27594 [-0.32583, -0.23167] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0239 = 0.0668; observed |DELTA| 0.2759 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_flow_cipher_layer ZL3b seed 0 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.01631 Voynich +0.15724 DELTA -0.17355 [-0.19413, -0.15289] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0106 = 0.0297; observed |DELTA| 0.1736 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_flow_cipher_layer ZL3b seed 0 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.05066 Voynich +0.04605 DELTA +0.00461 [-0.01337, +0.02495] -> reached; interval includes zero (no detected difference)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0101 = 0.0283; observed |DELTA| 0.0046 < MDE
+STATUS  : UNDERPOWERED for a difference of the observed size
+
+TEST    : s27_k4 RF1b seed 1 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.61895 Voynich +0.10990 DELTA -0.72884 [-0.80152, -0.65865] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0364 = 0.1019; observed |DELTA| 0.7288 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 RF1b seed 1 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.01868 Voynich +0.15487 DELTA -0.13618 [-0.15203, -0.11664] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0092 = 0.0256; observed |DELTA| 0.1362 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 RF1b seed 1 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.02792 Voynich +0.03332 DELTA -0.00540 [-0.02158, +0.01161] -> reached; interval includes zero (no detected difference)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0086 = 0.0240; observed |DELTA| 0.0054 < MDE
+STATUS  : UNDERPOWERED for a difference of the observed size
+
+TEST    : s27_k4 RF1b seed 2 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.60900 Voynich +0.10990 DELTA -0.71890 [-0.80733, -0.63200] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0452 = 0.1265; observed |DELTA| 0.7189 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 RF1b seed 2 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.01593 Voynich +0.15487 DELTA -0.13894 [-0.15642, -0.11977] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0092 = 0.0257; observed |DELTA| 0.1389 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 RF1b seed 2 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.02748 Voynich +0.03332 DELTA -0.00584 [-0.02056, +0.01069] -> reached; interval includes zero (no detected difference)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0078 = 0.0220; observed |DELTA| 0.0058 < MDE
+STATUS  : UNDERPOWERED for a difference of the observed size
+
+TEST    : s27_k4 RF1b seed 3 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.62127 Voynich +0.10990 DELTA -0.73117 [-0.81754, -0.64805] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0434 = 0.1215; observed |DELTA| 0.7312 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 RF1b seed 3 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.01689 Voynich +0.15487 DELTA -0.13798 [-0.15560, -0.11982] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0091 = 0.0255; observed |DELTA| 0.1380 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 RF1b seed 3 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.02367 Voynich +0.03332 DELTA -0.00965 [-0.02416, +0.00466] -> reached; interval includes zero (no detected difference)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0073 = 0.0205; observed |DELTA| 0.0097 < MDE
+STATUS  : UNDERPOWERED for a difference of the observed size
+
+TEST    : s27_k4null RF1b seed 1 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.66166 Voynich +0.10990 DELTA -0.77156 [-0.82781, -0.71295] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0288 = 0.0805; observed |DELTA| 0.7716 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4null RF1b seed 1 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.02081 Voynich +0.15487 DELTA -0.13405 [-0.15141, -0.11496] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0098 = 0.0274; observed |DELTA| 0.1341 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4null RF1b seed 1 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.01063 Voynich +0.03332 DELTA -0.02269 [-0.03534, -0.00931] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0068 = 0.0190; observed |DELTA| 0.0227 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 IT2a seed 1 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.61817 Voynich +0.09774 DELTA -0.71591 [-0.78845, -0.64766] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0354 = 0.0992; observed |DELTA| 0.7159 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 IT2a seed 1 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.02396 Voynich +0.15659 DELTA -0.13263 [-0.15280, -0.11257] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0103 = 0.0289; observed |DELTA| 0.1326 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 IT2a seed 1 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.03264 Voynich +0.04095 DELTA -0.00831 [-0.02124, +0.00539] -> reached; interval includes zero (no detected difference)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0068 = 0.0190; observed |DELTA| 0.0083 < MDE
+STATUS  : UNDERPOWERED for a difference of the observed size
+
+TEST    : s27_k4 IT2a seed 2 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.61977 Voynich +0.09774 DELTA -0.71751 [-0.77330, -0.66405] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0274 = 0.0768; observed |DELTA| 0.7175 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 IT2a seed 2 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.02316 Voynich +0.15659 DELTA -0.13344 [-0.15147, -0.11497] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0096 = 0.0268; observed |DELTA| 0.1334 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 IT2a seed 2 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.02928 Voynich +0.04095 DELTA -0.01167 [-0.02292, +0.00148] -> reached; interval includes zero (no detected difference)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0062 = 0.0174; observed |DELTA| 0.0117 < MDE
+STATUS  : UNDERPOWERED for a difference of the observed size
+
+TEST    : s27_k4 IT2a seed 3 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.63184 Voynich +0.09774 DELTA -0.72957 [-0.81341, -0.64950] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0426 = 0.1192; observed |DELTA| 0.7296 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 IT2a seed 3 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.02502 Voynich +0.15659 DELTA -0.13157 [-0.14917, -0.11148] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0099 = 0.0277; observed |DELTA| 0.1316 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4 IT2a seed 3 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.03000 Voynich +0.04095 DELTA -0.01095 [-0.02617, +0.00388] -> reached; interval includes zero (no detected difference)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0076 = 0.0214; observed |DELTA| 0.0109 < MDE
+STATUS  : UNDERPOWERED for a difference of the observed size
+
+TEST    : s27_k4null IT2a seed 1 CHARWIN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value -0.67351 Voynich +0.09774 DELTA -0.77124 [-0.81580, -0.72549] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0235 = 0.0659; observed |DELTA| 0.7712 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4null IT2a seed 1 MORAN DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.02627 Voynich +0.15659 DELTA -0.13033 [-0.14907, -0.11159] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0097 = 0.0271; observed |DELTA| 0.1303 >= MDE
+STATUS  : POWERED
+
+TEST    : s27_k4null IT2a seed 1 F1 DELTA vs Voynich (page bootstrap B=1000)
+FILED   : value +0.01896 Voynich +0.04095 DELTA -0.02199 [-0.03357, -0.01025] -> missed; missed (entrant below Voynich)
+POWER   : smallest |DELTA| detectable at power 0.8 (two-sided 0.05, normal approx.) = 2.8 x SE 0.0059 = 0.0165; observed |DELTA| 0.0220 >= MDE
+STATUS  : POWERED
+
+=== p-values printed by this file (round family members for s33; floor-bound = 'floor, not ranked') ===
+PVAL|voynich|ZL3b|0|moran_line_shuffle|0.0010|0.0010|reference row, not an entrant
+PVAL|s27_k4|ZL3b|1|moran_line_shuffle|0.0060|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0139 over null median
+PVAL|s27_k4|ZL3b|1|nmi_h1_quire_block|0.0182|0.0182|exact null, 55 assignments
+PVAL|s27_k4|ZL3b|1|nmi_h1_bifolio|0.0003|0.0003|2925 assignments
+PVAL|s27_k4|ZL3b|2|moran_line_shuffle|0.0020|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0141 over null median
+PVAL|s27_k4|ZL3b|2|nmi_h1_quire_block|0.0182|0.0182|exact null, 55 assignments
+PVAL|s27_k4|ZL3b|2|nmi_h1_bifolio|0.0003|0.0003|2925 assignments
+PVAL|s27_k4|ZL3b|3|moran_line_shuffle|0.0130|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0140 over null median
+PVAL|s27_k4|ZL3b|3|nmi_h1_quire_block|0.0182|0.0182|exact null, 55 assignments
+PVAL|s27_k4|ZL3b|3|nmi_h1_bifolio|0.0003|0.0003|2925 assignments
+PVAL|s27_k4null|ZL3b|1|moran_line_shuffle|0.0010|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0145 over null median
+PVAL|s27_k4null|ZL3b|1|nmi_h1_quire_block|0.7273|0.0182|exact null, 55 assignments
+PVAL|s27_k4null|ZL3b|1|nmi_h1_bifolio|0.6516|0.0003|2925 assignments
+PVAL|s27_flow_cipher_layer|ZL3b|0|moran_line_shuffle|0.9890|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0174 over null median
+PVAL|s27_flow_cipher_layer|ZL3b|0|nmi_h1_quire_block|0.5556|0.1111|exact null, 9 assignments
+PVAL|s27_flow_cipher_layer|ZL3b|0|nmi_h1_bifolio|0.5000|0.0417|24 assignments
+PVAL|voynich|RF1b|0|moran_line_shuffle|0.0010|0.0010|reference row, not an entrant
+PVAL|s27_k4|RF1b|1|moran_line_shuffle|0.0470|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0140 over null median
+PVAL|s27_k4|RF1b|1|nmi_h1_quire_block|0.0182|0.0182|exact null, 55 assignments
+PVAL|s27_k4|RF1b|1|nmi_h1_bifolio|0.0003|0.0003|2925 assignments
+PVAL|s27_k4|RF1b|2|moran_line_shuffle|0.2220|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0138 over null median
+PVAL|s27_k4|RF1b|2|nmi_h1_quire_block|0.0182|0.0182|exact null, 55 assignments
+PVAL|s27_k4|RF1b|2|nmi_h1_bifolio|0.0003|0.0003|2925 assignments
+PVAL|s27_k4|RF1b|3|moran_line_shuffle|0.0200|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0141 over null median
+PVAL|s27_k4|RF1b|3|nmi_h1_quire_block|0.0182|0.0182|exact null, 55 assignments
+PVAL|s27_k4|RF1b|3|nmi_h1_bifolio|0.0003|0.0003|2925 assignments
+PVAL|s27_k4null|RF1b|1|moran_line_shuffle|0.0020|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0139 over null median
+PVAL|s27_k4null|RF1b|1|nmi_h1_quire_block|0.6909|0.0182|exact null, 55 assignments
+PVAL|s27_k4null|RF1b|1|nmi_h1_bifolio|0.7559|0.0003|2925 assignments
+PVAL|voynich|IT2a|0|moran_line_shuffle|0.0010|0.0010|reference row, not an entrant
+PVAL|s27_k4|IT2a|1|moran_line_shuffle|0.0010|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0140 over null median
+PVAL|s27_k4|IT2a|1|nmi_h1_quire_block|0.0182|0.0182|exact null, 55 assignments
+PVAL|s27_k4|IT2a|1|nmi_h1_bifolio|0.0003|0.0003|2925 assignments
+PVAL|s27_k4|IT2a|2|moran_line_shuffle|0.0030|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0147 over null median
+PVAL|s27_k4|IT2a|2|nmi_h1_quire_block|0.0182|0.0182|exact null, 55 assignments
+PVAL|s27_k4|IT2a|2|nmi_h1_bifolio|0.0003|0.0003|2925 assignments
+PVAL|s27_k4|IT2a|3|moran_line_shuffle|0.0020|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0136 over null median
+PVAL|s27_k4|IT2a|3|nmi_h1_quire_block|0.0182|0.0182|exact null, 55 assignments
+PVAL|s27_k4|IT2a|3|nmi_h1_bifolio|0.0003|0.0003|2925 assignments
+PVAL|s27_k4null|IT2a|1|moran_line_shuffle|0.0010|0.0010|one-sided, 999 draws; power 0.8 at I excess ~ 0.0143 over null median
+PVAL|s27_k4null|IT2a|1|nmi_h1_quire_block|0.2727|0.0182|exact null, 55 assignments
+PVAL|s27_k4null|IT2a|1|nmi_h1_bifolio|0.2544|0.0003|2925 assignments
+
+sidecars: ./runs/s27 (9 files); rows.json written there
+elapsed 957s; run ended Sat Oct 17 21:42:31 PDT 2026 (`date`)

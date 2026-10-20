@@ -1,0 +1,12 @@
+B4: self-citation generator without positional rules (lines 2+ of each page)
+SIM: P_SAMECOL=0.28 P_MUTATE=0.7, pool=previous 2 lines; SIMcal: 0.05/0.97, pool=whole page so far; null = within-line word shuffle (20 reps)
+x-values = rate at line start/end divided by rate mid-line
+
+VOYNICH          JSDfirst=0.1722 (null 0.0019)  JSDlast=0.0839 (null 0.0013)  p-init x15.97  m-final x16.55  h2=2.093  repeat=0.87%  samecol_edit<=1=0.044  tokens=33053
+SIM_global_s1    JSDfirst=0.0011 (null 0.0011)  JSDlast=0.0008 (null 0.0010)  p-init x 1.07  m-final x 0.85  h2=1.871  repeat=4.40%  samecol_edit<=1=0.183  tokens=33053
+SIM_global_s2    JSDfirst=0.0012 (null 0.0012)  JSDlast=0.0021 (null 0.0010)  p-init x 1.04  m-final x 0.81  h2=1.872  repeat=4.36%  samecol_edit<=1=0.188  tokens=33053
+SIM_seeded_s1    JSDfirst=0.0052 (null 0.0009)  JSDlast=0.0010 (null 0.0012)  p-init x 1.89  m-final x 1.04  h2=1.992  repeat=5.98%  samecol_edit<=1=0.193  tokens=33053
+SIM_seeded_s2    JSDfirst=0.0041 (null 0.0010)  JSDlast=0.0012 (null 0.0009)  p-init x 1.61  m-final x 1.14  h2=2.003  repeat=4.96%  samecol_edit<=1=0.179  tokens=33053
+SIMcal_global    JSDfirst=0.0009 (null 0.0009)  JSDlast=0.0013 (null 0.0011)  p-init x 0.88  m-final x 1.13  h2=1.875  repeat=2.24%  samecol_edit<=1=0.101  tokens=33053
+SIMcal_seeded    JSDfirst=0.0009 (null 0.0010)  JSDlast=0.0012 (null 0.0013)  p-init x 1.16  m-final x 1.10  h2=1.987  repeat=2.95%  samecol_edit<=1=0.096  tokens=33053
+CTRL_dante       JSDfirst=0.0337 (null 0.0009)  JSDlast=0.1673 (null 0.0009)  p-init x 1.23  m-final x 0.00  h2=3.108  repeat=0.05%  samecol_edit<=1=  -    tokens=36104

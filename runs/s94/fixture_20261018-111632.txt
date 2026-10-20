@@ -1,0 +1,7 @@
+S94 FIXTURE (synthetic only; no Voynich data read)
+date: Sun Oct 18 11:16:32 PDT 2026 (`date`)  device: cuda (NVIDIA GeForce RTX 5080); below_normal=True; free RAM 7.7 GB
+s94_shared_lexicon_producer_loqo.py sha256=2980919204f5b30bbdfdd173524f993008be0d855b27e2107291afca6298c433  stub_match=NO STUB
+fixture world: 1500 cores, 15 quires x 12 pages x 20 lines; FX_A 28726 tokens; planted {'tilt': 0.8, 'conc': 30.0, 'alpha': 8.0, 'rho': 0.03, 'lam': 0.45, 'pen': 0.8}
+fixture target (FX_A): o100 +0.059 o200 +0.074 Rw1 2.651(p0.001) Rc1 0.338 loc 0.973; order bands K100 [+0.0217,+0.0964] K200 [+0.0281,+0.1195]; locality band [0.9558,0.9910]
+FX_prose: o100 +1.042 o200 +1.235 Rw1 0.687(p1.000) Rc1 0.818 loc 1.000 C1 nnnn -> not Voynich-like
+FX_B (planted, seed 2, whole text): o100 +0.021 o200 +0.030 Rw1 2.616(p0.001) Rc1 0.215 loc 0.973 C1 nYYY (descriptive)

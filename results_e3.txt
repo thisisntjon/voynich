@@ -1,0 +1,43 @@
+E3 f57v lines
+  line  1 unit=L0   n=  1 dairal
+  line  2 unit=Cc   n= 54 v sal y soeos vs ar okees o
+  line  3 unit=Cc   n= 68 o l d r v x k m
+  line  4 unit=Cc   n= 31 daiin otey ofchey shes o d okeeod l
+  line  5 unit=Cc   n= 35 o v l r m aiin d ?
+  line  6 unit=L0   n=  1 otodarag
+  line  7 unit=L0   n=  1 oparairdly
+  line  8 unit=L0   n=  1 olkeedal
+  line  9 unit=L0   n=  1 otardaly
+  line 10 unit=Ro   n=  1 arkaldy
+  line 11 unit=Ro   n=  1 ara?arar
+  line 12 unit=Ro   n=  1 okeely
+  line 13 unit=Ro   n=  2 ocfhor okear
+
+aligned line 3 unit=Cc
+pos c1             c2             c3             c4              flag
+  0 o              o              o              o               STABLE
+  1 l              l              l              l               STABLE
+  2 d              d              d              d               STABLE
+  3 r              r              r              r               STABLE
+  4 v              v              v              v               STABLE
+  5 x              x              x              x               STABLE
+  6 k              k              k              k               STABLE
+  7 m              m              m              m               STABLE
+  8 f              f              p              p               VARIANT
+  9 ?v             ?v             ?v             ?v              STABLE
+ 10 t              t              t              t               STABLE
+ 11 r              r              r              r               STABLE
+ 12 ?              ?              ?              ?               STABLE
+ 13 ?              ?              ?              ?               STABLE
+ 14 y              y              y              y               STABLE
+ 15 I              c              c              c               VARIANT
+ 16 ?              ?              ?              ?               STABLE
+
+stable positions=15/17  variant positions=2
+  pos 08: f | f | p | p
+  pos 15: I | c | c | c
+qo*edy tokens in the 68: 0/68
+chunk 1 agrees with chunk 1 at 17/17
+chunk 2 agrees with chunk 1 at 16/17
+chunk 3 agrees with chunk 1 at 15/17
+chunk 4 agrees with chunk 1 at 15/17

@@ -1,0 +1,4 @@
+# s47 prereg: sha256 of the scoring script and its imported pipeline modules; frozen Sat Oct 17 23:41:18 PDT 2026 before any scoring run (code exercised only on the synthetic in-memory fixture, --selftest)
+1ce14f231f9f6137b4a1009c6cb7ae5ee42d47a4579eda2ab4523008b1541de4  s47_ink_space_agreement.py
+b19e55e41b84c595b844321ddf62d4d93918b10342711bb4747688825ec3483e  tools/segment_scans.py
+0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1  vparse.py

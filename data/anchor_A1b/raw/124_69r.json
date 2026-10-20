@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:01:16.5094761Z",
+ "response": "{\n  \"PT\": \"CIRCLE\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"0\",\n  \"P_flower\": \"NA\",\n  \"P_habit\": \"ROSETTE\",\n  \"J_shape\": \"NA\",\n  \"J_count\": \"NA\",\n  \"J_fragcount\": \"NA\",\n  \"J_fragtype\": \"NA\",\n  \"C_centre\": \"GEOMETRIC\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"0\",\n  \"C_rings\": \"4+\",\n  \"C_diagrams\": \"1\",\n  \"C_rays\": \"PRESENT\",\n  \"B_pools\": \"NA\",\n  \"B_figures\": \"NA\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Circular diagram with rays and rings, no plants or containers.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2675450200,
+ "load_duration": 182699800,
+ "prompt_eval_count": 3268,
+ "prompt_eval_duration": 791348000,
+ "eval_count": 203,
+ "eval_duration": 1557668000,
+ "stem": "124_69r"
+}

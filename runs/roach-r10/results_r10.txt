@@ -1,0 +1,107 @@
+r10.py mode=real run at (clock): 2026-10-18T13:54:10-07:00
+r10.py sha256: ada3231f0b6b0992767c7bd98fb206a4b1f138dcdb11d190cfc521ddaff4f69b
+r7.py (local import) sha256: 0d5e65db45b3c410bfbcab5b56d45adaab09b09c9af007b3546538a5b9f69b96
+prereg r10.py ada3231f0b6b0992767c7bd98fb206a4b1f138dcdb11d190cfc521ddaff4f69b ; stub match: YES ; r7.py entry match: YES
+data ../dl_ZL/ZL3b-n.txt bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc
+S2 MDL affixes on ZL: ['o', 'qo', 'y', 'cho', 'ch', 'sh', 'che', 'she', 's', 'd', 'l', 'ol', 'q'] ; ['s', 'aiin', 'ar', 'y', 'or', 'ain', 'al', 'ol', 'dy', 'ody', 'o', 'eey', 'edy', 'ey', 'eedy']
+== VOYNICH_ZL S1
+  VOYNICH_ZL S1: 15 folds, threshold 8
+   fold | fitted pool a ; drift a/tau ; copy c | match (i) pool (ii) drift (iii) copy | real t1..t6 | misses
+   A    | 39.59 ; 30/2 ; 0.02 | False False False | 1.574 1.421 1.365 0.338 0.043 0.569 | pool:t6 drift:t4,t6 copy:t6
+   B    | 38.87 ; 30/4 ; 0.02 | True  True  True  | 1.231 0.899 1.040 1.146 -0.071 0.924 | pool:- drift:- copy:-
+   C    | 39.26 ; 30/2 ; 0.02 | False False False | 1.390 1.144 0.635 0.425 0.016 0.759 | pool:t3,t6 drift:t3,t4,t6 copy:t6
+   D    | 38.85 ; 30/2 ; 0.02 | False False False | 1.558 1.057 1.276 0.897 0.032 0.540 | pool:t6 drift:t6 copy:t6
+   E    | 38.83 ; 30/2 ; 0.02 | False False False | 1.337 1.296 0.907 0.823 -0.007 1.218 | pool:t3 drift:t3 copy:t6
+   F    | 38.73 ; 30/4 ; 0.02 | False False False | 1.568 1.526 0.938 1.759 -0.007 0.769 | pool:t3,t6 drift:t1,t2 copy:t2,t6
+   G    | 38.90 ; 30/2 ; 0.02 | False False True  | 1.218 0.924 0.789 0.859 -0.044 0.819 | pool:t2,t3 drift:t2 copy:-
+   H    | 38.83 ; 30/2 ; 0.02 | False False False | 1.727 1.411 1.198 0.390 0.021 0.718 | pool:t6 drift:t4,t6 copy:t6
+   I    | 38.62 ; 30/4 ; 0.02 | False False False | 1.484 0.499 1.842 1.317 -0.154 0.284 | pool:t2,t6 drift:t6 copy:t3,t6
+   M    | 39.69 ; 30/2 ; 0.02 | False False False | 1.272 1.215 1.005 0.672 0.020 2.430 | pool:t1,t2,t3,t6 drift:t1,t2,t3,t4,t6 copy:t1,t2,t6
+   N    | 39.21 ; 30/4 ; 0.02 | False True  False | 1.573 1.384 1.038 0.979 0.038 1.247 | pool:t3,t6 drift:- copy:t2,t6
+   O    | 38.79 ; 30/4 ; 0.02 | False False False | 1.090 1.320 1.448 0.260 -0.070 0.562 | pool:t6 drift:t6 copy:t3,t6
+   Q    | 38.51 ; 30/2 ; 0.02 | False True  False | 1.080 1.244 0.926 0.650 -0.061 0.747 | pool:t3,t6 drift:- copy:t6
+   S    | 38.12 ; 30/4 ; 0.02 | False False False | 1.649 1.594 1.145 0.465 -0.049 0.711 | pool:t6 drift:t1,t2,t6 copy:t2,t6
+   T    | 33.68 ; 30/4 ; 0.02 | False False False | 1.403 1.335 0.986 0.348 0.028 1.249 | pool:t1,t2,t3,t4,t5,t6 drift:t3,t4,t5,t6 copy:t2,t4,t6
+   folds matched: (i) pool 1, (ii) drift 3, (iii) copy 2 (threshold 8)
+   pool most-missed quantities: t6 12, t3 8, t2 4
+   drift most-missed quantities: t6 9, t4 5, t3 4
+   copy most-missed quantities: t6 13, t2 5, t3 2
+
+== VOYNICH_ZL S2
+  VOYNICH_ZL S2: 15 folds, threshold 8
+   fold | fitted pool a ; drift a/tau ; copy c | match (i) pool (ii) drift (iii) copy | real t1..t6 | misses
+   A    | 47.67 ; 30/8 ; 0.02 | False False False | 1.430 1.288 1.012 0.607 0.068 0.620 | pool:t3,t6 drift:t1,t5,t6 copy:t5,t6
+   B    | 46.84 ; 30/4 ; 0.02 | False True  True  | 1.121 1.124 0.911 0.875 0.077 0.924 | pool:t3,t5 drift:- copy:-
+   C    | 47.60 ; 30/2 ; 0.02 | False False False | 1.228 1.518 0.960 0.132 0.007 0.693 | pool:t3,t4,t6 drift:t3,t4,t6 copy:t2,t4,t6
+   D    | 47.03 ; 30/4 ; 0.02 | False False False | 1.003 1.034 1.149 0.303 0.009 0.742 | pool:t1,t6 drift:t4,t6 copy:t1,t6
+   E    | 46.94 ; 30/2 ; 0.02 | False True  False | 1.034 1.274 1.159 0.721 0.022 1.137 | pool:t1,t3 drift:- copy:t1
+   F    | 47.01 ; 30/4 ; 0.02 | False False True  | 1.499 1.309 1.157 0.461 0.008 0.883 | pool:t3 drift:t1 copy:-
+   G    | 46.68 ; 30/8 ; 0.02 | False True  False | 1.170 0.946 1.010 0.759 0.000 0.818 | pool:t2,t3,t6 drift:- copy:t6
+   H    | 47.23 ; 30/8 ; 0.02 | False False False | 1.413 1.771 1.281 0.175 -0.032 0.844 | pool:t6 drift:t2,t4 copy:t2,t3,t4,t6
+   I    | 46.75 ; 30/8 ; 0.02 | False False False | 1.262 1.192 1.584 0.790 -0.036 0.469 | pool:t6 drift:t3,t6 copy:t6
+   M    | 48.28 ; 30/4 ; 0.02 | False False False | 1.110 1.297 1.076 0.508 0.080 2.173 | pool:t1,t2,t3,t4,t5,t6 drift:t1,t3,t4,t5,t6 copy:t1,t2,t4,t5,t6
+   N    | 46.35 ; 30/2 ; 0.00 | False False False | 1.295 1.274 1.171 0.533 0.056 1.120 | pool:t3,t5 drift:t3 copy:t5
+   O    | 46.71 ; 30/4 ; 0.02 | False False False | 0.946 1.459 1.384 0.484 0.020 0.619 | pool:t1,t6 drift:t2,t3,t6 copy:t1,t2,t3,t6
+   Q    | 47.00 ; 30/8 ; 0.02 | True  False True  | 1.183 1.238 1.125 0.186 -0.008 0.908 | pool:- drift:t4 copy:-
+   S    | 46.03 ; 30/4 ; 0.02 | False False False | 1.388 1.501 1.208 0.672 -0.003 0.778 | pool:t6 drift:t2,t6 copy:t2,t3,t6
+   T    | 42.20 ; 30/4 ; 0.00 | False False False | 1.449 1.455 1.113 0.227 0.082 1.212 | pool:t3,t4,t5,t6 drift:t1,t2,t3,t4,t5,t6 copy:t1,t2,t3,t4,t5,t6
+   folds matched: (i) pool 1, (ii) drift 3, (iii) copy 3 (threshold 8)
+   pool most-missed quantities: t6 10, t3 9, t5 4
+   drift most-missed quantities: t6 8, t3 6, t4 6
+   copy most-missed quantities: t6 10, t2 6, t1 5
+
+== PLANTED_COPY
+  PLANTED_COPY: 15 folds, threshold 8
+   fold | fitted pool a ; drift a/tau ; copy c | match (i) pool (ii) drift (iii) copy | real t1..t6 | misses
+   A    | 14.81 ; 30/0.5 ; 0.20 | False False True  | 4.262 1.708 0.591 0.976 0.186 1.264 | pool:t1,t3,t5 drift:t1,t3,t5,t6 copy:-
+   B    | 14.76 ; 30/0.5 ; 0.20 | False False True  | 5.212 1.146 1.190 0.356 0.225 0.851 | pool:t1,t2,t3,t5 drift:t1,t5 copy:-
+   C    | 14.95 ; 30/0.5 ; 0.20 | False False False | 4.970 2.007 1.677 1.172 0.190 1.062 | pool:t1,t5 drift:t1,t5 copy:t3
+   D    | 14.78 ; 30/0.5 ; 0.20 | False False True  | 4.532 1.703 0.661 1.113 0.210 1.000 | pool:t1,t3,t5 drift:t1,t3,t5 copy:-
+   E    | 14.74 ; 30/0.5 ; 0.20 | False False True  | 4.712 1.636 0.935 0.569 0.243 0.997 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   F    | 14.90 ; 30/0.5 ; 0.20 | False False True  | 4.860 1.805 1.143 0.431 0.251 1.076 | pool:t1,t3,t5 drift:t1,t3,t5 copy:-
+   G    | 14.87 ; 30/0.5 ; 0.20 | False False True  | 5.218 1.633 1.459 0.718 0.119 0.902 | pool:t1,t3,t5 drift:t1,t5 copy:-
+   H    | 14.64 ; 30/0.5 ; 0.20 | False False True  | 4.992 1.627 0.857 1.722 0.217 1.027 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   I    | 14.72 ; 30/0.5 ; 0.20 | False False True  | 4.373 1.856 0.684 0.332 0.086 0.953 | pool:t1,t3 drift:t1,t3 copy:-
+   M    | 15.04 ; 30/0.5 ; 0.20 | False False True  | 4.912 1.718 1.141 0.768 0.256 1.047 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   N    | 14.70 ; 30/0.5 ; 0.20 | False False True  | 4.597 1.470 1.089 0.981 0.215 1.169 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   O    | 14.65 ; 30/0.5 ; 0.20 | False False True  | 5.001 1.755 0.942 0.615 0.282 1.007 | pool:t1,t3,t5 drift:t1,t3,t5 copy:-
+   Q    | 14.73 ; 30/0.5 ; 0.20 | False False True  | 5.715 1.481 0.604 0.383 0.194 0.939 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   S    | 14.46 ; 30/0.5 ; 0.20 | False False True  | 4.619 1.565 1.015 0.757 0.248 1.075 | pool:t1,t2,t3,t5 drift:t1,t3,t5 copy:-
+   T    | 13.40 ; 30/0.5 ; 0.20 | False False False | 5.426 1.797 1.069 1.124 0.300 0.908 | pool:t1,t2,t3,t5,t6 drift:t1,t3,t5,t6 copy:t6
+   folds matched: (i) pool 0, (ii) drift 0, (iii) copy 13 (threshold 8)
+   pool most-missed quantities: t1 15, t3 14, t5 14
+   drift most-missed quantities: t1 15, t5 14, t3 12
+   copy most-missed quantities: t3 1, t6 1
+
+== PLANTED_POOL
+  PLANTED_POOL: 15 folds, threshold 8
+   fold | fitted pool a ; drift a/tau ; copy c | match (i) pool (ii) drift (iii) copy | real t1..t6 | misses
+   A    | 2.06 ; 10/0.5 ; 0.30 | False False False | 4.816 4.469 4.486 0.947 0.045 1.256 | pool:t2,t3 drift:t1,t2,t3 copy:t1,t2,t3,t5
+   B    | 2.06 ; 10/0.5 ; 0.30 | True  False False | 5.354 4.744 5.673 0.768 0.032 0.946 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   C    | 2.07 ; 10/0.5 ; 0.30 | True  False False | 5.746 5.731 6.253 0.672 0.020 1.032 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   D    | 2.07 ; 10/0.5 ; 0.30 | True  False False | 5.598 5.339 5.984 0.198 -0.041 0.994 | pool:- drift:t1,t2,t3,t4 copy:t2,t3,t4,t5
+   E    | 2.05 ; 10/0.5 ; 0.30 | True  False False | 5.096 5.349 5.539 0.974 -0.014 0.931 | pool:- drift:t1,t2,t3 copy:t1,t2,t3,t5
+   F    | 2.07 ; 10/0.5 ; 0.30 | True  False False | 5.242 4.872 5.016 0.585 0.047 1.140 | pool:- drift:t1,t2,t3 copy:t1,t2,t3,t5
+   G    | 2.06 ; 10/0.5 ; 0.30 | True  False False | 5.049 4.987 4.855 0.722 -0.002 1.096 | pool:- drift:t1,t2,t3 copy:t1,t2,t3,t5
+   H    | 2.07 ; 10/0.5 ; 0.30 | True  False False | 8.003 7.382 7.782 0.616 0.029 0.895 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   I    | 2.06 ; 10/0.5 ; 0.30 | True  False False | 3.325 3.633 3.219 0.228 0.007 1.010 | pool:- drift:t1,t3 copy:t1,t3,t5
+   M    | 2.07 ; 10/0.5 ; 0.30 | True  False False | 7.049 7.031 6.556 0.736 0.016 1.067 | pool:- drift:t1,t2,t3,t4 copy:t2,t3,t5
+   N    | 2.06 ; 10/0.5 ; 0.30 | True  False False | 7.214 7.842 8.336 0.912 -0.059 0.903 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   O    | 2.07 ; 10/0.5 ; 0.30 | True  False False | 6.417 6.738 6.676 0.830 0.019 0.914 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   Q    | 2.06 ; 30/0.5 ; 0.30 | True  False False | 5.385 5.335 4.346 0.681 0.014 1.138 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   S    | 2.07 ; 10/0.5 ; 0.30 | True  False False | 5.600 5.969 6.338 0.375 -0.079 0.986 | pool:- drift:t1,t2,t3 copy:t2,t3,t5
+   T    | 2.08 ; 10/0.5 ; 0.30 | True  False False | 7.553 7.580 7.661 0.863 0.008 0.993 | pool:- drift:t1,t2,t3,t4 copy:t2,t3,t5
+   folds matched: (i) pool 14, (ii) drift 0, (iii) copy 0 (threshold 8)
+   pool most-missed quantities: t2 1, t3 1
+   drift most-missed quantities: t1 15, t3 15, t2 14
+   copy most-missed quantities: t3 15, t5 15, t2 14
+
+CALLS
+ZL S1: folds matched (i) pool 1, (ii) drift 3, (iii) copy 2
+ZL S2: folds matched (i) pool 1, (ii) drift 3, (iii) copy 3
+Generator(s) matching >= 8/15 under BOTH S1 and S2: NONE
+  pool misses: S1 {'t6': 12, 't3': 8, 't2': 4} ; S2 {'t6': 10, 't3': 9, 't5': 4}
+  drift misses: S1 {'t6': 9, 't4': 5, 't3': 4} ; S2 {'t6': 8, 't3': 6, 't4': 6}
+  copy misses: S1 {'t6': 13, 't2': 5, 't3': 2} ; S2 {'t6': 10, 't2': 6, 't1': 5}
+Controls: positive (planted copy) (iii) matches required: True ; negative (planted pool) (iii) not matching required: True
+VERDICT: NO generator matches under both segmenters

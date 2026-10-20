@@ -1,0 +1,147 @@
+{
+ "row": {
+  "name": "RF1b_B",
+  "tokens": 23028,
+  "types": 4945,
+  "pages": 83,
+  "lines": 2478,
+  "errors": {},
+  "types_25k": 4945,
+  "h2": 2.0084,
+  "sd_len": 1.786,
+  "jsd_first_fg": 0.2244,
+  "p_init_enrich": 23.62,
+  "m_final_enrich": 32.52,
+  "cross_excess_eva": 0.2259,
+  "redup_pct": 0.825,
+  "v1_pass": true,
+  "v1_missed": [],
+  "v1_full": {
+   "name": "RF1b_B",
+   "tokens": 23028,
+   "types": 4945,
+   "hapax_rate": 0.6868,
+   "mean_len": 5.126,
+   "sd_len": 1.786,
+   "h1": 3.8757,
+   "h2": 2.0084,
+   "h3": 1.7385,
+   "zipf": -1.0605,
+   "redup_pct": 0.825,
+   "jsd_first_fg": 0.2244,
+   "jsd_last_lg": 0.0985,
+   "p_init_enrich": 23.62,
+   "m_final_enrich": 32.52,
+   "cross_mi_eva": 0.2423,
+   "cross_excess_eva": 0.2259,
+   "cross_mi_glyph": 0.2604,
+   "cross_excess_glyph": 0.2357,
+   "recur_le_1": 0.0083,
+   "recur_le_5": 0.0419,
+   "recur_le_20": 0.1284,
+   "recur_le_100": 0.3217
+  },
+  "x_edge_mi_word": 0.23317046842789207,
+  "x_hapax_10k": 0.688135593220339,
+  "x_moran_I": 0.15350488615942234,
+  "x_position_entropy": 1.6038174694569567,
+  "x_ltr_minus_rtl": 0.006384736829060898,
+  "info_mi_adjacent": 0.16168564932321772,
+  "info_mi_page": 0.005649039451301574,
+  "info_samecol_minus_othercol": -0.0010966300769235104,
+  "info_bpe_adjacent": 1.2487223859213694,
+  "lex_beta": 0.7505791789498673,
+  "lex_rate_late_early": 0.5390428211586902,
+  "lex_edit1_excess": 0.07340748230535893,
+  "slot_occupancy_pc": 0.08272680676576115,
+  "slot_table_likeness": 0.6540271453785826,
+  "slot_core_crowding": 0.8334187596104562,
+  "bake_winner": "markov2",
+  "bake_char3_minus_unigram": -0.6080520653326449,
+  "bake_bits": {
+   "markov2": 11.355757925894876,
+   "markov3": 11.427755632557126,
+   "slot": 12.185383607382912,
+   "unigram_gt": 12.035807697889771,
+   "copy0.3+markov3": 11.70653402939851,
+   "copy0.1+markov3": 11.463094904949449,
+   "copy0.05+markov3": 11.424919695488862
+  },
+  "family": "-",
+  "note": "data/translit/RF1b.meta.json; 34618 tokens full; lang=B: 83/207 pages",
+  "lang": "B",
+  "in_out": {
+   "L": {
+    "ins": 1,
+    "outs": 9,
+    "na": 0,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "p_init_enrich",
+     "m_final_enrich",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "p_init_enrich",
+     "m_final_enrich",
+     "redup_pct",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ]
+   },
+   "C": {
+    "ins": 1,
+    "outs": 7,
+    "na": 2,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word"
+    ]
+   },
+   "G": {
+    "ins": 5,
+    "outs": 5,
+    "na": 0,
+    "out_metrics": [
+     "jsd_first_fg",
+     "p_init_enrich",
+     "m_final_enrich",
+     "cross_excess_eva",
+     "x_edge_mi_word"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "m_final_enrich",
+     "cross_excess_eva",
+     "x_edge_mi_word"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "results_m4_phase1_board.json"
+}

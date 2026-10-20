@@ -1,0 +1,41 @@
+L1: Confirmatory Held-Out G1 Split Diagnostic & Intra-Section Continuity Test
+=============================================================================
+Frozen split seed=20261017; PREREG v1 bands from scoreboard/score.py
+
+Part A: Real Voynich & Competing Families on G1's Exact Split (train=166, test=41)
+-----------------------------------------------------------------------------------------------
+voynich_full_207p            tok=25000 types=5417 h2=2.126 sd=1.764 JSDf=0.1759 p=x17.89 m=x16.31 excess=+0.1809 redup= 0.90%  joint=PASS failed=-
+voynich_train_166p           tok=25000 types=5677 h2=2.124 sd=1.812 JSDf=0.1768 p=x17.55 m=x14.50 excess=+0.1736 redup= 0.82%  joint=PASS failed=-
+voynich_held_41p (TARGET)    tok= 8586 types=2535 h2=2.048 sd=1.725 JSDf=0.1762 p=x18.95 m=x26.23 excess=+0.2023 redup= 0.80%  joint=PASS failed=-
+
+g1_seed_L200_held41p         tok= 8586 types= 619 h2=1.595 sd=1.562 JSDf=0.0801 p=x540.78 m=x17.44 excess=+0.0997 redup= 2.75%  joint=FAIL failed=['h2', 'jsd_first_fg', 'redup_pct']
+g1_circular_LNone_held41p    tok= 8586 types=2168 h2=1.935 sd=1.734 JSDf=0.0994 p=x118.36 m=x 8.75 excess=+0.1035 redup= 0.68%  joint=FAIL failed=['h2', 'jsd_first_fg']
+h1_flow_cipher_held41p       tok= 5890 types=2328 h2=2.105 sd=1.648 JSDf=0.0300 p=x 6.97 m=x 6.08 excess=+0.2036 redup= 0.03%  joint=FAIL failed=['jsd_first_fg', 'p_init_enrich', 'm_final_enrich', 'redup_pct']
+c_k2_nomen_x2_held41p        tok= 8586 types=4548 h2=2.517 sd=1.810 JSDf=0.0403 p=x 2.76 m=x 1.77 excess=+0.0647 redup= 0.00%  joint=FAIL failed=['h2', 'jsd_first_fg', 'p_init_enrich', 'm_final_enrich', 'cross_excess_eva', 'redup_pct']
+c_k2_nomen_x5_held41p        tok= 8586 types=5906 h2=2.744 sd=1.745 JSDf=0.0920 p=x 3.07 m=x 4.33 excess=+0.2042 redup= 0.00%  joint=FAIL failed=['h2', 'jsd_first_fg', 'p_init_enrich', 'm_final_enrich', 'redup_pct']
+
+Finite-Sample Check: 200 Random 41-Page Splits of Real Voynich (seeds 1000..1199)
+-----------------------------------------------------------------------------------------------
+Real Voynich 41-page joint PASS rate: 200/200 (100.0%)
+Real Voynich 41-page band miss counts: NONE
+Real Voynich 41-page quantiles (p05 / p50 / p95):
+  h2              : 2.058 / 2.103 / 2.145  (PREREG band: [1.980, 2.280])
+  jsd_first_fg    : 0.1480 / 0.1777 / 0.2109  (PREREG band: >= 0.1000)
+  cross_excess_eva: +0.1533 / +0.1802 / +0.2052  (PREREG band: >= +0.0900)
+DECISION (Part A): Real Voynich PASSES all 7 bands on the exact 41 held-out pages
+  (h2=2.048, JSDf=0.1762) and in 100.0% of random 41-page splits.
+  Therefore G1's held-out misses (seed h2=1.595, JSDf=0.0801; circular h2=1.935, JSDf=0.0994) are
+  GENUINE GENERATOR DEFICITS, not finite-sample artifacts.
+
+Part B: Intra-Section Recto/Verso & Adjacent-Folio Continuity (2,000 Section-Preserving Permutations)
+-----------------------------------------------------------------------------------------------
+VOYNICH (real)     [page-shuf]  | RV (n=91): obs=0.4206 null=0.3450+/-0.0074 z=+10.27 p=0.0000 | Adj (n=157): obs=0.4153 null=0.3501+/-0.0059 z=+11.13 p=0.0000
+VOYNICH (real)     [len-presv]  | RV (n=91): obs=0.4206 null=0.4112+/-0.0046 z= +2.05 p=0.0150 | Adj (n=157): obs=0.4153 null=0.4188+/-0.0039 z= -0.89 p=0.8150
+G1 seed_L200       [page-shuf]  | RV (n=91): obs=0.5340 null=0.4978+/-0.0070 z= +5.17 p=0.0000 | Adj (n=157): obs=0.5256 null=0.4865+/-0.0072 z= +5.43 p=0.0000
+G1 seed_L200       [len-presv]  | RV (n=91): obs=0.5340 null=0.5402+/-0.0050 z= -1.24 p=0.9050 | Adj (n=157): obs=0.5256 null=0.5299+/-0.0042 z= -1.03 p=0.8100
+G1 circular        [page-shuf]  | RV (n=91): obs=0.3150 null=0.2870+/-0.0053 z= +5.30 p=0.0000 | Adj (n=157): obs=0.3080 null=0.2851+/-0.0049 z= +4.70 p=0.0000
+G1 circular        [len-presv]  | RV (n=91): obs=0.3150 null=0.3107+/-0.0040 z= +1.06 p=0.1400 | Adj (n=157): obs=0.3080 null=0.3077+/-0.0032 z= +0.09 p=0.4650
+H1 flow_cipher     [page-shuf]  | RV (n=91): obs=0.2107 null=0.1855+/-0.0043 z= +5.83 p=0.0000 | Adj (n=157): obs=0.2065 null=0.1855+/-0.0037 z= +5.65 p=0.0000
+H1 flow_cipher     [len-presv]  | RV (n=91): obs=0.2107 null=0.2021+/-0.0043 z= +2.01 p=0.0250 | Adj (n=157): obs=0.2065 null=0.2006+/-0.0033 z= +1.77 p=0.0350
+C K2_nomen_x2      [page-shuf]  | RV (n=91): obs=0.0793 null=0.0653+/-0.0024 z= +5.85 p=0.0000 | Adj (n=157): obs=0.0823 null=0.0675+/-0.0018 z= +8.31 p=0.0000
+C K2_nomen_x2      [len-presv]  | RV (n=91): obs=0.0793 null=0.0703+/-0.0022 z= +4.18 p=0.0000 | Adj (n=157): obs=0.0823 null=0.0727+/-0.0017 z= +5.74 p=0.0000

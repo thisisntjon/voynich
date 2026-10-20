@@ -1,0 +1,6 @@
+db-S134 O-062 cross-witness herbal positive control
+freeze_ok=True images_ok=True device=cuda:0 pairs=20
+REP_A: mrr=0.235808390 q99=0.297394882 p=0.111588841; top1=0.100000000 q99=0.150000000 p=0.162083792; top5=0.325000000 p=0.239576042; median_rank=10.500; call=False
+REP_B: mrr=0.474841659 q99=0.305844994 p=0.000099990; top1=0.300000000 q99=0.175000000 p=0.000199980; top5=0.650000000 p=0.000499950; median_rank=2.500; call=True
+VERDICT: POSITIVE_CONTROL_PASS
+runtime_seconds=12.464

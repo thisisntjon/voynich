@@ -1,0 +1,232 @@
+# results_m4_phase1_board: Phase 1 joint family-discrimination board
+# run 2026-10-17 16:40 (system clock), seed 20261017, sample 25000 tokens per non-Voynich corpus, lexicon null shuffles 5
+# v1 = scoreboard/score.py loaded by path, score_corpus + g0 band checks; new = scoreboard/metrics_new.py
+
+synthetic meta.json found (15): c2_best.meta.json, latin_merged.meta.json, lull_ars_brevis_table.meta.json, markov1.meta.json, naibbe_like.meta.json, nomen_lines.meta.json, nomen_numeric.meta.json, nomen_numeric_lines.meta.json, nomen_numeric_sylls.meta.json, nomen_syll.meta.json, nomen_word.meta.json, rugg_grille.meta.json, schwartz_reuse.meta.json, timm_schinner.meta.json, timm_schinner_ownlines.meta.json
+expected-but-missing synthetic corpora: none
+
+corpora:
+  V voynich_all                      pages= 207 lines= 4130 tokens= 34857 types=  7025 sections=  7  [ZL3b EVA paragraphs, whole]
+  V voynich_A                        pages= 114 lines= 1557 tokens= 11231 types=  3217 sections=  4  [Currier A pages]
+  V voynich_B                        pages=  83 lines= 2478 tokens= 23078 types=  4788 sections=  5  [Currier B pages]
+  G c2_best                          pages= 187 lines= 3147 tokens= 25007 types=  1720 sections=  7  [meta.json; 34857 tokens full]
+  X latin_merged                     pages= 125 lines= 2500 tokens= 25000 types=  6801 sections= 25  [meta.json; 35000 tokens full]
+  X lull_ars_brevis_table            pages=  84 lines= 1680 tokens=  1680 types=   816 sections= 84  [meta.json; 1680 tokens full]
+  G markov1                          pages= 182 lines= 3119 tokens= 25000 types=  8195 sections= 42  [meta.json; 35000 tokens full]
+  X naibbe_like                      pages= 169 lines= 3369 tokens= 25003 types= 21627 sections= 72  [meta.json; 34994 tokens full]
+  C nomen_lines                      pages= 184 lines= 3118 tokens= 25000 types=  7238 sections= 67  [meta.json; 35007 tokens full]
+  C nomen_numeric                    pages= 169 lines= 3368 tokens= 25003 types=  6567 sections= 72  [meta.json; 35007 tokens full]
+  C nomen_numeric_lines              pages= 184 lines= 3118 tokens= 25000 types=  7238 sections= 67  [meta.json; 35007 tokens full]
+  C nomen_numeric_sylls              pages= 169 lines= 3368 tokens= 25003 types=  6560 sections= 72  [meta.json; 35007 tokens full]
+  C nomen_syll                       pages= 169 lines= 3368 tokens= 25003 types=  6565 sections= 72  [meta.json; 35007 tokens full]
+  C nomen_word                       pages= 169 lines= 3368 tokens= 25003 types=  6567 sections= 72  [meta.json; 35007 tokens full]
+  G rugg_grille                      pages= 179 lines= 3115 tokens= 25002 types=  4079 sections= 42  [meta.json; 35000 tokens full]
+  G schwartz_reuse                   pages= 187 lines= 3147 tokens= 25007 types=  4654 sections=  7  [meta.json; 34857 tokens full]
+  G timm_schinner                    pages= 187 lines= 3147 tokens= 25007 types=  4125 sections=  7  [meta.json; 34857 tokens full]
+  G timm_schinner_ownlines           pages=  96 lines= 2776 tokens= 25003 types=  4125 sections=  1  [meta.json; 43376 tokens full]
+  L latin_caesar                     pages= 122 lines= 2440 tokens= 19520 types=  5491 sections=  4  [corpora.control; 19520 tokens full]
+  L latin_augustine                  pages= 157 lines= 3125 tokens= 25000 types=  7602 sections=  4  [corpora.control; 130897 tokens full]
+  L italian_dante                    pages= 157 lines= 3125 tokens= 25000 types=  5323 sections=  4  [corpora.control; 97009 tokens full]
+  L german_faust                     pages= 157 lines= 3125 tokens= 25000 types=  5305 sections=  4  [corpora.control; 29412 tokens full]
+  L german_kafka                     pages= 115 lines= 2284 tokens= 18269 types=  3571 sections=  4  [corpora.control; 18269 tokens full]
+  L english_alice                    pages= 157 lines= 3125 tokens= 25000 types=  2438 sections=  4  [corpora.control; 26056 tokens full]
+  L hebrew_torah                     pages= 157 lines= 3125 tokens= 25000 types=  8308 sections=  2  [corpora_ext; 69385 tokens full]
+  L arabic_quran                     pages= 157 lines= 3125 tokens= 25000 types=  6338 sections=  8  [corpora_ext; 78248 tokens full]
+  L greek_herodotus                  pages= 157 lines= 3125 tokens= 25000 types=  6784 sections=  4  [corpora_ext; 184936 tokens full]
+  L czech_bible_kralicka_1613        pages= 157 lines= 3125 tokens= 25000 types=  4724 sections=  4  [corpora_ext; 76893 tokens full]
+  L occitan_croisade_albigeoise      pages= 157 lines= 3125 tokens= 25000 types=  4685 sections=126  [corpora_ext; 82388 tokens full]
+  L oldfrench_roland                 pages= 157 lines= 3125 tokens= 25000 types=  3975 sections=152  [corpora_ext; 29524 tokens full]
+  L mhg_nibelungenlied               pages= 157 lines= 3125 tokens= 25000 types=  3478 sections= 13  [corpora_ext; 78700 tokens full]
+  L mhg_parzival                     pages= 157 lines= 3125 tokens= 25000 types=  4206 sections=  4  [corpora_ext; 130551 tokens full]
+  L catalan_tirant                   pages= 157 lines= 3125 tokens= 25000 types=  3445 sections= 38  [corpora_ext; 205824 tokens full]
+  L turkish_kanun_medeni_1926        pages= 157 lines= 3125 tokens= 25000 types=  5158 sections=  4  [corpora_ext; 37026 tokens full]
+  L latin_macer_floridus             pages=  88 lines= 1756 tokens= 14044 types=  3898 sections= 60  [corpora_ext; 14044 tokens full]
+  L latin_pliny_herbal               pages= 157 lines= 3125 tokens= 25000 types=  7609 sections=  3  [corpora_ext; 76561 tokens full]
+  L hawaiian_fornander               pages= 157 lines= 3125 tokens= 25000 types=  1182 sections=  4  [corpora_ext; 427956 tokens full]
+  L tagalog_urbana_feliza_1864       pages= 157 lines= 3125 tokens= 25000 types=  4498 sections=  4  [corpora_ext; 36740 tokens full]
+  L tagalog_florante_1838            pages= 149 lines= 2970 tokens= 23760 types=  4651 sections=  4  [corpora_ext; 23760 tokens full]
+  X enochian_keys_dee                pages=   9 lines=  161 tokens=  1287 types=   730 sections=  8  [corpora_ext constructed; 1287 tokens full]
+  X ignota_hildegard_glossary        pages=   1 lines=    7 tokens=    53 types=    43 sections=  1  [corpora_ext constructed; 53 tokens full]
+  X trithemius_steganographia_1608   pages= 157 lines= 3125 tokens= 25000 types= 13491 sections=  4  [corpora_ext constructed; 48906 tokens full]
+  X trithemius_polygraphia           pages= 157 lines= 3125 tokens= 25000 types= 10931 sections=  4  [corpora_ext constructed; 111411 tokens full]
+
+Voynich-all reproduction vs score.py TARGETS:
+  PASS h2: got 2.1262 want 2.126+-0.01 (results_a1.txt)
+  PASS jsd_first_fg: got 0.1759 want 0.1759+-0.005 (results_a2.txt)
+  PASS cross_mi_eva: got 0.195 want 0.195+-0.005 (results_c3.txt)
+  PASS cross_excess_eva: got 0.1809 want 0.1809+-0.01 (results_c3.txt)
+
+=== 1. WIDE TABLE (rows = corpora, columns = metrics) ===
+v1 bands: h2 1.98-2.28, sd 1.41-2.11, JSDf>=0.10, p>=x8, m>=x8, excess>=+0.09, redup 0.4-1.8%
+F corpus                         tokens             h2         sd_len   jsd_first_fg  p_init_enrich m_final_enrich cross_excess_eva      redup_pct        v1_pass      v1_missed       lex_beta lex_rate_late_early lex_edit1_excess slot_occupancy_pc slot_table_likeness slot_core_crowding info_mi_adjacent   info_mi_page info_samecol_minus_othercol    bake_winner bake_char3_minus_unigram x_edge_mi_word    x_hapax_10k      x_moran_I x_position_entropy x_ltr_minus_rtl
+V voynich_all                     34857         2.1262         1.7640         0.1759        17.8900        16.3100         0.1809         0.8960           PASS              -         0.7410         0.4639         0.0965         0.0660         0.6475         0.8719         0.1737         0.0295         0.0092 copy0.05+marko        -0.5256         0.1882         0.6855         0.1407         1.6607         0.0049
+V voynich_A                       11231         2.1453         1.7860         0.1392        11.6200         6.2100         0.1203         0.8640           FAIL m_final_enrich         0.7473         0.5186         0.0914         0.0696         0.6875         0.8600         0.1032        -0.0012         0.0100        markov2        -0.6620         0.1265         0.6931         0.1053         1.6948         0.0047
+V voynich_B                       23078         1.9983         1.7790         0.2191        21.7800        32.0900         0.2321         0.8410           PASS              -         0.7481         0.5112         0.0729         0.0797         0.6560         0.8585         0.1670         0.0120        -0.0007        markov2        -0.5922         0.2404         0.6856         0.1509         1.6037         0.0088
+G c2_best                         25007         1.8159         1.6420         0.0403        19.8600        11.2300         0.0005         1.1080           FAIL h2,jsd_first_f         0.6067         0.2526         0.0122         0.1253         0.6337         0.9703         0.0042         0.0045         0.0080        markov3        -0.1685         0.0008         0.4585         0.0059         1.4065         0.0015
+X latin_merged                    25000         2.7198         2.8300         0.0014         0.9400            inf         0.0239         0.0600           FAIL h2,sd_len,jsd_         0.8024         0.5352         0.0206         0.0427         0.6643         0.8310         0.2925         0.0017        -0.0006     unigram_gt         0.8825         0.0248         0.7262        -0.0566         2.1820        -0.0003
+X lull_ars_brevis_table            1680         2.6031         0.2180         0.0000            inf            inf         0.0000         0.0000           FAIL h2,sd_len,jsd_         0.8019         0.5751         0.9939         0.5511         0.8609         1.0000            nan         0.3970            nan copy0.3+markov        -0.2804            nan            nan            nan            nan            nan
+G markov1                         25000         2.1035         3.4320         0.0009         1.0300         1.2500        -0.0003         0.8920           FAIL sd_len,jsd_fir         0.8243         0.6399         0.0032         0.0623         0.6308         0.5928         0.0140         0.0076        -0.0019        markov2        -0.8125        -0.0008         0.8329         0.0018         1.7974         0.0061
+X naibbe_like                     25003         4.0771         3.2500         0.0026            inf            inf         0.0017         0.0000           FAIL h2,sd_len,jsd_         0.9766         0.8608         0.0007         0.0422         0.9502         0.3377        -0.0437        -0.0045         0.0267        markov2        -0.4245         0.0018         0.9675        -0.0219         2.2946         0.0029
+C nomen_lines                     25000         3.1969         1.5980         0.1174            inf            inf         0.0241         0.0000           FAIL h2,cross_exces         0.7768         0.5316         0.0055         0.0704         0.8082         0.9382         0.2981         0.0198         0.0047     unigram_gt         0.4339         0.0272         0.6254        -0.0118         1.9227        -0.0020
+C nomen_numeric                   25003         3.3089         0.9660         0.0074            inf            inf         0.0080         0.0000           FAIL h2,sd_len,jsd_         0.7577         0.5127         0.0131         0.1916         0.9564         1.0000         0.3565         0.0078        -0.0137           slot        -0.6528         0.0085         0.5880         0.0227         1.5869        -0.0280
+C nomen_numeric_lines             25000         3.3510         0.9860         0.1170            inf            inf         0.0059         0.0000           FAIL h2,sd_len,cros         0.7768         0.5316         0.0187         0.1170         0.8753         1.0000         0.2981         0.0198         0.0047        markov2        -0.7002         0.0075         0.6254         0.0227         1.6150        -0.0243
+C nomen_numeric_sylls             25003         3.6475         2.2750         0.0131            inf            inf         0.0091         0.0000           FAIL h2,sd_len,jsd_         0.7575         0.5120         0.0026         0.0296         0.7499         0.7237         0.3567         0.0082        -0.0145     unigram_gt         1.2930         0.0101         0.5880        -0.0427         2.1713        -0.0021
+C nomen_syll                      25003         3.7570         2.3240         0.0116            inf            inf         0.0202         0.0000           FAIL h2,sd_len,jsd_         0.7577         0.5122         0.0000         0.0290         0.7507         0.6432         0.3565         0.0078        -0.0137     unigram_gt         1.8111         0.0219         0.5875        -0.0298         2.2384        -0.0010
+C nomen_word                      25003         3.1709         1.5840         0.0115            inf            inf         0.0290         0.0000           FAIL h2,jsd_first_f         0.7577         0.5127        -0.0014         0.0867         0.8339         0.9875         0.3565         0.0078        -0.0137     unigram_gt         0.5150         0.0316         0.5880        -0.0119         1.9343        -0.0011
+G rugg_grille                     25002         2.5106         1.1350         0.0011         0.9800         1.0000         0.0083         0.1200           FAIL h2,sd_len,jsd_         0.7045         0.0591        -0.0150         0.0719         0.7659         0.9758         0.3421        -0.0008         0.0144     unigram_gt         0.6793         0.0260         0.4146         0.0247         1.6001        -0.0002
+G schwartz_reuse                  25007         2.1113         1.9040         0.0224         2.4400         3.3800         0.0001         0.9640           FAIL jsd_first_fg,p         0.7394         0.4356         0.0509         0.0626         0.6679         0.7910         0.0203         0.0168         0.0096 copy0.05+marko        -0.2953         0.0034         0.6137         0.1125         1.6736         0.0013
+G timm_schinner                   25007         2.0648         1.5980         0.0015         0.8000         0.9800         0.0144         0.8520           FAIL jsd_first_fg,p         0.7651         0.5135         0.2613         0.0861         0.6298         0.9290         0.1082         0.0158         0.0009 copy0.05+marko        -0.3692         0.0171         0.5464        -0.0036         1.7928         0.0012
+G timm_schinner_ownlines          25003         2.0648         1.5980         0.0568         7.5800         8.8000         0.0106         0.8520           FAIL jsd_first_fg,p         0.7651         0.5135         0.2613         0.0861         0.6298         0.9290         0.1195         0.0200         0.0253 copy0.05+marko        -0.3686         0.0135         0.5464        -0.0035         1.7929         0.0010
+L latin_caesar                    19520         3.2947         2.9050         0.0019         0.9500         1.0200         0.0371         0.0000           FAIL h2,sd_len,jsd_         0.7826         0.4111         0.0209         0.0332         0.7470         0.6794         0.2696        -0.0071        -0.0036     unigram_gt         1.4503         0.0372         0.6519         0.0007         2.1519        -0.0023
+L latin_augustine                 25000         3.2955         2.8300         0.0025         0.9900         0.9800         0.0390         0.0160           FAIL h2,sd_len,jsd_         0.8168         0.5624         0.0207         0.0316         0.7104         0.7034         0.2887         0.0041         0.0131     unigram_gt         0.5446         0.0409         0.7401        -0.0566         2.1467        -0.0017
+L italian_dante                   25000         3.1074         2.2410         0.0014         1.0100         1.3800         0.1405         0.0480           FAIL h2,sd_len,jsd_         0.7653         0.4616         0.0558         0.0394         0.6327         0.7468         0.5739         0.0066         0.0020     unigram_gt         0.2298         0.1451         0.6766        -0.1541         2.0155         0.0023
+L german_faust                    25000         3.1605         2.4570         0.0013         0.8200         1.1200         0.0505         0.1520           FAIL h2,sd_len,jsd_         0.7658         0.4047         0.0205         0.0437         0.6759         0.5844         0.4135         0.0091         0.0068     unigram_gt         0.4239         0.0528         0.6823        -0.0306         2.0327        -0.0005
+L german_kafka                    18269         3.1437         2.7240         0.0027         0.9900         1.1600         0.0429         0.0820           FAIL h2,sd_len,jsd_         0.7368         0.3980        -0.0017         0.0508         0.6931         0.5097         0.5103        -0.0065         0.0139     unigram_gt         0.8183         0.0440         0.6482        -0.0313         2.0672        -0.0016
+L english_alice                   25000         3.2084         1.9490         0.0022         1.2200         1.1400         0.1072         0.1600           FAIL h2,jsd_first_f         0.6322         0.2599         0.0201         0.0573         0.6625         0.6997         1.0097         0.0164         0.0118     unigram_gt         0.4974         0.1115         0.4917        -0.0647         1.9804         0.0017
+L hebrew_torah                    25000         3.5377         1.3880         0.0013            inf            inf         0.0556         0.1040           FAIL h2,sd_len,jsd_         0.9095         0.6117         0.0995         0.0576         0.7758         0.8784         0.2973         0.0274        -0.0063 copy0.05+marko        -0.4292         0.0593         0.6567         0.0377         2.0131        -0.0012
+L arabic_quran                    25000         3.4532         1.6280         0.0020            inf            inf         0.0906         0.0080           FAIL h2,jsd_first_f         0.7957         0.5358         0.0481         0.0639         0.7000         0.9231         0.6966         0.0128        -0.0040 copy0.05+marko         0.0106         0.0947         0.6555        -0.0298         2.0396        -0.0016
+L greek_herodotus                 25000         3.1870         2.8220         0.0017            inf            inf         0.0304         0.0080           FAIL h2,sd_len,jsd_         0.8254         0.5493         0.0399         0.0405         0.6813         0.5985         0.3670         0.0023         0.0029     unigram_gt         0.4707         0.0321         0.6953        -0.0372         1.9978        -0.0062
+L czech_bible_kralicka_1613       25000         3.3969         2.4110         0.0013         0.9800         1.0500         0.0470         0.1280           FAIL h2,sd_len,jsd_         0.8386         0.5563         0.0787         0.0438         0.7007         0.7408         0.5917         0.0022         0.0125     unigram_gt         0.4341         0.0513         0.5842        -0.1203         2.0946        -0.0019
+L occitan_croisade_albigeoise     25000         3.1630         2.2120         0.0019         0.8700         0.9600         0.0959         0.0280           FAIL h2,sd_len,jsd_         0.7461         0.4180         0.0371         0.0420         0.6307         0.8104         0.5305         0.0091         0.0166     unigram_gt         0.3186         0.0997         0.6567        -0.1835         2.0343        -0.0018
+L oldfrench_roland                25000         3.1375         2.2960         0.0011         1.0200         1.2500         0.0791         0.0440           FAIL h2,sd_len,jsd_         0.7068         0.3929         0.0244         0.0469         0.6488         0.8112         0.2309         0.0305         0.0859     unigram_gt         0.6214         0.0833         0.5855        -0.1418         2.0028         0.0003
+L mhg_nibelungenlied              25000         3.0228         2.0120         0.0015         0.8800         1.0400         0.0837         0.0600           FAIL h2,jsd_first_f         0.6920         0.2561         0.0290         0.0468         0.6543         0.8380         0.5238         0.0089         0.0018     unigram_gt         0.3546         0.0871         0.5477        -0.1047         1.9439         0.0005
+L mhg_parzival                    25000         3.1234         1.9770         0.0008         1.0300         0.8900         0.0646         0.0160           FAIL h2,jsd_first_f         0.7004         0.3668         0.0292         0.0451         0.6706         0.7499         0.3842        -0.0093         0.0039     unigram_gt         0.4655         0.0673         0.5802        -0.1002         1.9693         0.0006
+L catalan_tirant                  25000         3.0982         2.3620         0.0014         1.0000         1.1100         0.0798         0.0040           FAIL h2,sd_len,jsd_         0.7092         0.3626         0.0296         0.0514         0.6320         0.7283         0.7938         0.0018        -0.0071     unigram_gt         0.7047         0.0847         0.5679        -0.1698         2.0030        -0.0007
+L turkish_kanun_medeni_1926       25000         3.3336         2.7040         0.0014         0.7500         1.0700         0.0881         0.0240           FAIL h2,sd_len,jsd_         0.7465         0.3030         0.0535         0.0386         0.7658         0.6744         0.5801         0.0241         0.0024     unigram_gt         1.7457         0.0918         0.5679        -0.0030         2.1282        -0.0027
+L latin_macer_floridus            14044         3.2982         2.2370         0.0011         0.9500         0.9200         0.1459         0.0000           FAIL h2,sd_len,jsd_         0.7585         0.3908         0.0136         0.0375         0.7574         0.7065         0.3075        -0.0229         0.0258     unigram_gt         1.5232         0.1497         0.5880        -0.0234         2.1240         0.0009
+L latin_pliny_herbal              25000         3.3404         2.7090         0.0019         1.0500         0.9500         0.0261         0.0000           FAIL h2,sd_len,jsd_         0.7709         0.5424         0.0196         0.0314         0.7319         0.6800         0.3195         0.0094        -0.0008     unigram_gt         1.5678         0.0280         0.6574        -0.0238         2.1557         0.0004
+L hawaiian_fornander              25000         2.5694         2.4930         0.0009         1.0700         0.0000         0.0500         0.3800           FAIL h2,sd_len,jsd_         0.5730         0.2160         0.0034         0.0663         0.5462         0.6981         1.1160         0.0163        -0.0041     unigram_gt         0.5988         0.0521         0.4139        -0.2184         1.9902         0.0011
+L tagalog_urbana_feliza_1864      25000         2.8344         2.9710         0.0023         1.0000         1.0500         0.1442         0.1200           FAIL h2,sd_len,jsd_         0.7534         0.4427         0.0209         0.0654         0.6177         0.6023         0.7891        -0.0011         0.0103     unigram_gt         1.3194         0.1488         0.6513        -0.2736         2.0896         0.0021
+L tagalog_florante_1838           23760         2.8876         2.7130         0.0018         1.0200         0.8700         0.1105         0.2020           FAIL h2,sd_len,jsd_         0.8004         0.2113         0.0284         0.0588         0.6689         0.6547         0.6799         0.0232         0.0300     unigram_gt         1.1974         0.1162         0.6835        -0.1843         2.0866         0.0005
+X enochian_keys_dee                1287         2.9426         2.7250         0.0247         1.0500         0.6000         0.0743         0.7000           FAIL h2,sd_len,jsd_         0.8371         0.7354         0.2123         0.0654         0.8388         0.5922         0.4514         0.1409         0.2437            nan            nan            nan            nan            nan            nan            nan
+X ignota_hildegard_glossary          53         2.5061         1.7980         0.3530         0.8000         0.0000         0.0488         0.0000           FAIL h2,p_init_enri            nan            nan         0.0465         1.0000         0.9755         0.0930            nan            nan            nan            nan            nan            nan            nan            nan            nan            nan
+X trithemius_steganographia_1608  25000         3.6819         4.8110         0.0026         1.0500         0.9500         0.0332         0.1440           FAIL h2,sd_len,jsd_         0.9021         0.6680         0.0090         0.0275         0.8139         0.5004         0.1630         0.0084        -0.0173        markov3        -0.0797         0.0390         0.8661         0.0731         2.2058         0.0029
+X trithemius_polygraphia          25000         3.4816         3.2920         0.0017         1.0400         1.0400         0.0276         0.0320           FAIL h2,sd_len,jsd_         0.8616         0.6690         0.0270         0.0251         0.7841         0.6502         0.1331         0.0244        -0.0061     unigram_gt         0.4868         0.0312         0.7641         0.0255         2.1735         0.0013
+
+column key:
+  h2                           frozen v1 (score.py)
+  sd_len                       frozen v1 (score.py)
+  jsd_first_fg                 frozen v1 (score.py)
+  p_init_enrich                frozen v1 (score.py)
+  m_final_enrich               frozen v1 (score.py)
+  cross_excess_eva             frozen v1 (score.py)
+  redup_pct                    frozen v1 (score.py)
+  lex_beta                     lexicon_growth: Heaps beta (all)
+  lex_rate_late_early          lexicon_growth: new-type rate last20%/first20%
+  lex_edit1_excess             lexicon_growth: edit-1 share of new types, recent-200 minus far-window
+  slot_occupancy_pc            slot_structure: occupancy prefix x core (all types)
+  slot_table_likeness          slot_structure: table-likeness token-weighted (all types)
+  slot_core_crowding           slot_structure: core edit-1 neighbour share (all types)
+  info_mi_adjacent             information_profile: MI adjacent, word boundaries given (bits)
+  info_mi_page                 information_profile: MI same_page_far (bits)
+  info_samecol_minus_othercol  information_profile: MI prev_line_same_col minus prev_line_other_col
+  bake_winner                  heldout_bakeoff: overall winner (bits/token)
+  bake_char3_minus_unigram     heldout_bakeoff: markov3 (char-3 WB) minus unigram_gt bits/token
+  x_edge_mi_word               extra_signatures: edge MI last glyph -> next first glyph (shuffle-corrected)
+  x_hapax_10k                  extra_signatures: hapax share at 10k tokens
+  x_moran_I                    extra_signatures: Moran's I word length lag 1
+  x_position_entropy           extra_signatures: glyph position entropy (bits, max 2.32)
+  x_ltr_minus_rtl              extra_signatures: bits/char ltr minus rtl
+
+bake-off bits/token per model (markov2, markov3, slot, unigram_gt, copy0.3, copy0.1, copy0.05):
+  voynich_all                    markov2=11.581 markov3=11.556 slot=12.217 unigram_gt=12.082 copy0.3+markov3=11.811 copy0.1+markov3=11.579 copy0.05+markov3=11.545
+  voynich_A                      markov2=11.429 markov3=11.535 slot=12.304 unigram_gt=12.197 copy0.3+markov3=11.810 copy0.1+markov3=11.567 copy0.05+markov3=11.527
+  voynich_B                      markov2=11.254 markov3=11.315 slot=12.038 unigram_gt=11.907 copy0.3+markov3=11.587 copy0.1+markov3=11.345 copy0.05+markov3=11.307
+  c2_best                        markov2=8.545 markov3=8.498 slot=8.727 unigram_gt=8.666 copy0.3+markov3=8.771 copy0.1+markov3=8.539 copy0.05+markov3=8.500
+  latin_merged                   markov2=15.291 markov3=13.941 slot=14.161 unigram_gt=13.059 copy0.3+markov3=14.169 copy0.1+markov3=13.922 copy0.05+markov3=13.884
+  lull_ars_brevis_table          markov2=12.892 markov3=12.554 slot=12.971 unigram_gt=12.834 copy0.3+markov3=11.178 copy0.1+markov3=11.555 copy0.05+markov3=11.770
+  markov1                        markov2=12.752 markov3=12.963 slot=14.249 unigram_gt=13.776 copy0.3+markov3=13.340 copy0.1+markov3=13.059 copy0.05+markov3=13.004
+  naibbe_like                    markov2=32.845 markov3=32.987 slot=34.681 unigram_gt=33.411 copy0.3+markov3=33.462 copy0.1+markov3=33.123 copy0.05+markov3=33.052
+  nomen_lines                    markov2=15.141 markov3=13.070 slot=13.441 unigram_gt=12.636 copy0.3+markov3=13.455 copy0.1+markov3=13.155 copy0.05+markov3=13.098
+  nomen_numeric                  markov2=11.577 markov3=11.538 slot=11.510 unigram_gt=12.191 copy0.3+markov3=11.877 copy0.1+markov3=11.614 copy0.05+markov3=11.565
+  nomen_numeric_lines            markov2=11.898 markov3=11.913 slot=12.025 unigram_gt=12.613 copy0.3+markov3=12.256 copy0.1+markov3=11.991 copy0.05+markov3=11.941
+  nomen_numeric_sylls            markov2=19.392 markov3=15.601 slot=15.388 unigram_gt=14.308 copy0.3+markov3=15.986 copy0.1+markov3=15.684 copy0.05+markov3=15.625
+  nomen_syll                     markov2=20.386 markov3=16.300 slot=15.505 unigram_gt=14.489 copy0.3+markov3=16.686 copy0.1+markov3=16.381 copy0.05+markov3=16.322
+  nomen_word                     markov2=14.825 markov3=12.729 slot=12.856 unigram_gt=12.214 copy0.3+markov3=13.119 copy0.1+markov3=12.816 copy0.05+markov3=12.758
+  rugg_grille                    markov2=13.260 markov3=12.259 slot=12.191 unigram_gt=11.579 copy0.3+markov3=12.669 copy0.1+markov3=12.364 copy0.05+markov3=12.303
+  schwartz_reuse                 markov2=11.394 markov3=11.346 slot=11.841 unigram_gt=11.641 copy0.3+markov3=11.602 copy0.1+markov3=11.352 copy0.05+markov3=11.312
+  timm_schinner                  markov2=10.929 markov3=10.851 slot=11.218 unigram_gt=11.220 copy0.3+markov3=10.896 copy0.1+markov3=10.723 copy0.05+markov3=10.714
+  timm_schinner_ownlines         markov2=10.922 markov3=10.847 slot=11.199 unigram_gt=11.216 copy0.3+markov3=10.866 copy0.1+markov3=10.701 copy0.05+markov3=10.698
+  latin_caesar                   markov2=18.723 markov3=15.297 slot=14.830 unigram_gt=13.846 copy0.3+markov3=15.666 copy0.1+markov3=15.367 copy0.05+markov3=15.311
+  latin_augustine                markov2=17.341 markov3=14.678 slot=15.508 unigram_gt=14.133 copy0.3+markov3=14.952 copy0.1+markov3=14.682 copy0.05+markov3=14.638
+  italian_dante                  markov2=13.305 markov3=12.049 slot=12.696 unigram_gt=11.819 copy0.3+markov3=12.398 copy0.1+markov3=12.125 copy0.05+markov3=12.073
+  german_faust                   markov2=14.925 markov3=12.947 slot=13.382 unigram_gt=12.523 copy0.3+markov3=13.213 copy0.1+markov3=12.959 copy0.05+markov3=12.919
+  german_kafka                   markov2=15.239 markov3=12.786 slot=12.645 unigram_gt=11.968 copy0.3+markov3=13.131 copy0.1+markov3=12.849 copy0.05+markov3=12.797
+  english_alice                  markov2=12.531 markov3=10.488 slot=10.599 unigram_gt=9.991 copy0.3+markov3=10.734 copy0.1+markov3=10.487 copy0.05+markov3=10.448
+  hebrew_torah                   markov2=16.342 markov3=15.093 slot=16.168 unigram_gt=15.522 copy0.3+markov3=15.125 copy0.1+markov3=14.902 copy0.05+markov3=14.884
+  arabic_quran                   markov2=15.062 markov3=13.252 slot=13.846 unigram_gt=13.241 copy0.3+markov3=13.473 copy0.1+markov3=13.216 copy0.05+markov3=13.178
+  greek_herodotus                markov2=16.831 markov3=14.608 slot=14.994 unigram_gt=14.137 copy0.3+markov3=14.913 copy0.1+markov3=14.635 copy0.05+markov3=14.585
+  czech_bible_kralicka_1613      markov2=15.762 markov3=13.383 slot=13.744 unigram_gt=12.949 copy0.3+markov3=13.433 copy0.1+markov3=13.207 copy0.05+markov3=13.183
+  occitan_croisade_albigeoise    markov2=12.984 markov3=11.697 slot=12.218 unigram_gt=11.379 copy0.3+markov3=12.009 copy0.1+markov3=11.756 copy0.05+markov3=11.712
+  oldfrench_roland               markov2=13.352 markov3=11.723 slot=11.927 unigram_gt=11.102 copy0.3+markov3=12.040 copy0.1+markov3=11.782 copy0.05+markov3=11.737
+  mhg_nibelungenlied             markov2=12.788 markov3=11.046 slot=11.450 unigram_gt=10.691 copy0.3+markov3=11.405 copy0.1+markov3=11.130 copy0.05+markov3=11.079
+  mhg_parzival                   markov2=13.454 markov3=11.786 slot=12.064 unigram_gt=11.320 copy0.3+markov3=12.119 copy0.1+markov3=11.850 copy0.05+markov3=11.802
+  catalan_tirant                 markov2=13.105 markov3=11.187 slot=11.129 unigram_gt=10.483 copy0.3+markov3=11.489 copy0.1+markov3=11.233 copy0.05+markov3=11.188
+  turkish_kanun_medeni_1926      markov2=19.787 markov3=15.068 slot=14.337 unigram_gt=13.323 copy0.3+markov3=15.171 copy0.1+markov3=14.920 copy0.05+markov3=14.891
+  latin_macer_floridus           markov2=18.540 markov3=15.062 slot=14.204 unigram_gt=13.539 copy0.3+markov3=15.459 copy0.1+markov3=15.149 copy0.05+markov3=15.089
+  latin_pliny_herbal             markov2=19.524 markov3=16.255 slot=15.555 unigram_gt=14.687 copy0.3+markov3=16.628 copy0.1+markov3=16.326 copy0.05+markov3=16.267
+  hawaiian_fornander             markov2=9.882 markov3=8.636 slot=8.572 unigram_gt=8.037 copy0.3+markov3=8.760 copy0.1+markov3=8.585 copy0.05+markov3=8.565
+  tagalog_urbana_feliza_1864     markov2=14.455 markov3=12.677 slot=12.001 unigram_gt=11.358 copy0.3+markov3=12.896 copy0.1+markov3=12.661 copy0.05+markov3=12.623
+  tagalog_florante_1838          markov2=14.488 markov3=13.012 slot=12.480 unigram_gt=11.814 copy0.3+markov3=13.217 copy0.1+markov3=12.978 copy0.05+markov3=12.940
+  trithemius_steganographia_1608 markov2=24.895 markov3=23.438 slot=25.188 unigram_gt=23.518 copy0.3+markov3=23.813 copy0.1+markov3=23.514 copy0.05+markov3=23.458
+  trithemius_polygraphia         markov2=21.329 markov3=19.161 slot=19.874 unigram_gt=18.674 copy0.3+markov3=19.445 copy0.1+markov3=19.157 copy0.05+markov3=19.107
+
+=== 2. FAMILY CONTROL RANGES (min..max) AND VOYNICH IN/OUT (range extended by 10% of width) ===
+tight = width < 0.5 * spread over all corpora; weight=0 if L, C, G ranges mutually overlap
+G range for line-edge metrics ['info_samecol_minus_othercol', 'jsd_first_fg', 'm_final_enrich', 'p_init_enrich'] excludes ['timm_schinner'] (poured into the Voynich line shape, so its line edges are Voynich's, not the generator's); timm_schinner_ownlines supplies them
+metric                                   L range             C range             G range   spread tightLCG  ovl   Vall val   L   C   G     VA val   L   C   G     VB val   L   C   G
+h2                                2.5694..3.5377      3.1709..3.7570      1.8159..2.5106   2.2612      ttt   no     2.1262 OUT OUT  IN     2.1453 OUT OUT  IN     1.9983 OUT OUT  IN
+sd_len                            1.3880..2.9710      0.9660..2.3240      1.1350..3.4320   4.5930      tt.  yes     1.7640  IN  IN  IN     1.7860  IN  IN  IN     1.7790  IN  IN  IN
+jsd_first_fg                      0.0008..0.0027      0.0074..0.1174      0.0009..0.0568   0.3530      ttt   no     0.1759 OUT OUT OUT     0.1392 OUT OUT OUT     0.2191 OUT OUT OUT
+p_init_enrich                     0.7500..1.2200                 nan     0.9800..19.8600  21.0300      t..   na    17.8900 OUT  NA  IN    11.6200 OUT  NA  IN    21.7800 OUT  NA OUT
+m_final_enrich                    0.0000..1.3800                 nan     1.0000..11.2300  32.0900      t.t   na    16.3100 OUT  NA OUT     6.2100 OUT  NA  IN    32.0900 OUT  NA OUT
+cross_excess_eva                  0.0261..0.1459      0.0059..0.0290     -0.0003..0.0144   0.2324      .tt   no     0.1809 OUT OUT OUT     0.1203  IN OUT OUT     0.2321 OUT OUT OUT
+redup_pct                         0.0000..0.3800      0.0000..0.0000      0.1200..1.1080   1.1080      tt.   no     0.8960 OUT OUT  IN     0.8640 OUT OUT  IN     0.8410 OUT OUT  IN
+lex_beta                          0.5730..0.9095      0.7575..0.7768      0.6067..0.8243   0.4036      .t.  yes     0.7410  IN OUT  IN     0.7473  IN OUT  IN     0.7481  IN OUT  IN
+lex_rate_late_early               0.2113..0.6117      0.5120..0.5316      0.0591..0.6399   0.8018      tt.  yes     0.4639  IN OUT  IN     0.5186  IN  IN  IN     0.5112  IN  IN  IN
+lex_edit1_excess                 -0.0017..0.0995     -0.0014..0.0187     -0.0150..0.2613   1.0088      ttt  yes     0.0965  IN OUT  IN     0.0914  IN OUT  IN     0.0729  IN OUT  IN
+slot_occupancy_pc                 0.0314..0.0663      0.0290..0.1916      0.0623..0.1253   0.9749      ttt  yes     0.0660  IN  IN  IN     0.0696  IN  IN  IN     0.0797 OUT  IN  IN
+slot_table_likeness               0.5462..0.7758      0.7499..0.9564      0.6298..0.7659   0.4294      .tt  yes     0.6475  IN OUT  IN     0.6875  IN OUT  IN     0.6560  IN OUT  IN
+slot_core_crowding                0.5097..0.9231      0.6432..1.0000      0.5928..0.9758   0.9070      ttt  yes     0.8719  IN  IN  IN     0.8600  IN  IN  IN     0.8585  IN  IN  IN
+info_mi_adjacent                  0.2309..1.1160      0.2981..0.3567      0.0042..0.3421   1.1597      .tt  yes     0.1737  IN OUT  IN     0.1032 OUT OUT  IN     0.1670  IN OUT  IN
+info_mi_page                     -0.0229..0.0305      0.0078..0.0198     -0.0008..0.0200   0.4199      ttt  yes     0.0295  IN OUT OUT    -0.0012  IN OUT  IN     0.0120  IN  IN  IN
+info_samecol_minus_othercol      -0.0071..0.0859     -0.0145..0.0047     -0.0019..0.0253   0.2610      ttt  yes     0.0092  IN OUT  IN     0.0100  IN OUT  IN    -0.0007  IN  IN  IN
+bake_char3_minus_unigram         -0.4292..1.7457     -0.7002..1.8111     -0.8125..0.6793   2.6236      ...  yes    -0.5256  IN  IN  IN    -0.6620 OUT  IN  IN    -0.5922  IN  IN  IN
+x_edge_mi_word                    0.0280..0.1497      0.0075..0.0316     -0.0008..0.0260   0.2412      .tt   no     0.1882 OUT OUT OUT     0.1265  IN OUT OUT     0.2404 OUT OUT OUT
+x_hapax_10k                       0.4139..0.7401      0.5875..0.6254      0.4146..0.8329   0.5536      .t.  yes     0.6855  IN OUT  IN     0.6931  IN OUT  IN     0.6856  IN OUT  IN
+x_moran_I                        -0.2736..0.0377     -0.0427..0.0227     -0.0036..0.1125   0.4245      .tt  yes     0.1407 OUT OUT OUT     0.1053 OUT OUT  IN     0.1509 OUT OUT OUT
+x_position_entropy                1.9439..2.1557      1.5869..2.2384      1.4065..1.7974   0.8880      t.t   no     1.6607 OUT  IN  IN     1.6948 OUT  IN  IN     1.6037 OUT  IN  IN
+x_ltr_minus_rtl                  -0.0062..0.0023    -0.0280..-0.0010     -0.0002..0.0061   0.0368      t.t   no     0.0049 OUT OUT  IN     0.0047 OUT OUT  IN     0.0088 OUT OUT OUT
+bake_winner                  L=['copy0.05+markov3', 'unigram_gt'] C=['markov2', 'slot', 'unigram_gt'] G=['copy0.05+markov3', 'markov2', 'markov3', 'unigram_gt']  Vall=copy0.05+markov3 L:IN C:OUT G:IN   VA=markov2 L:OUT C:IN G:IN   VB=markov2 L:OUT C:IN G:IN 
+
+=== 3. PER-FAMILY OUT COUNTS (weighted metrics only; all-metric count in brackets) ===
+[voynich_all]
+  L: in= 0 out= 9 [all metrics out=10]  out-metrics: h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl  | tight-outs (7): h2, jsd_first_fg, p_init_enrich, m_final_enrich, redup_pct, x_position_entropy, x_ltr_minus_rtl
+  C: in= 1 out= 6 [all metrics out=16]  out-metrics: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, x_ltr_minus_rtl  | tight-outs (5): h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word
+  G: in= 5 out= 4 [all metrics out=6]  out-metrics: jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word  | tight-outs (4): jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word
+  fewest outs: G (4) vs C (6); margin 2 -> FAVOURED (>=2)
+  outside ALL families (L, C and G): jsd_first_fg, cross_excess_eva, x_edge_mi_word, x_moran_I
+  kill precondition (>=3 weighted outs on tight ranges): ['L', 'C', 'G']
+[voynich_A]
+  L: in= 2 out= 7 [all metrics out=11]  out-metrics: h2, jsd_first_fg, p_init_enrich, m_final_enrich, redup_pct, x_position_entropy, x_ltr_minus_rtl  | tight-outs (7): h2, jsd_first_fg, p_init_enrich, m_final_enrich, redup_pct, x_position_entropy, x_ltr_minus_rtl
+  C: in= 1 out= 6 [all metrics out=14]  out-metrics: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, x_ltr_minus_rtl  | tight-outs (5): h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word
+  G: in= 6 out= 3 [all metrics out=3]  out-metrics: jsd_first_fg, cross_excess_eva, x_edge_mi_word  | tight-outs (3): jsd_first_fg, cross_excess_eva, x_edge_mi_word
+  fewest outs: G (3) vs C (6); margin 3 -> FAVOURED (>=2)
+  outside ALL families (L, C and G): jsd_first_fg
+  kill precondition (>=3 weighted outs on tight ranges): ['L', 'C', 'G']
+[voynich_B]
+  L: in= 0 out= 9 [all metrics out=12]  out-metrics: h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl  | tight-outs (7): h2, jsd_first_fg, p_init_enrich, m_final_enrich, redup_pct, x_position_entropy, x_ltr_minus_rtl
+  C: in= 1 out= 6 [all metrics out=12]  out-metrics: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, x_ltr_minus_rtl  | tight-outs (5): h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word
+  G: in= 3 out= 6 [all metrics out=7]  out-metrics: jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, x_edge_mi_word, x_ltr_minus_rtl  | tight-outs (5): jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word, x_ltr_minus_rtl
+  fewest outs: tie ['C', 'G'] at 6; no family favoured
+  outside ALL families (L, C and G): jsd_first_fg, cross_excess_eva, x_edge_mi_word, x_moran_I, x_ltr_minus_rtl
+  kill precondition (>=3 weighted outs on tight ranges): ['L', 'C', 'G']
+
+=== 4. METRICS WHERE L, C AND G RANGES OVERLAP (no weight) ===
+sd_len, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, info_mi_adjacent, info_mi_page, info_samecol_minus_othercol, bake_char3_minus_unigram, x_hapax_10k, x_moran_I, bake_winner
+weighted metrics (9): h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl
+
+=== 5. RUN NOTES ===
+missing synthetic corpora: none
+corpora with errors: {"lull_ars_brevis_table": {"extra": "TypeError: Cannot cast array data from dtype('float64') to dtype('int64') according to the rule 'safe'"}, "enochian_keys_dee": {"bake": "KeyError: 'markov3'", "extra": "ZeroDivisionError: float division by zero"}, "ignota_hildegard_glossary": {"bake": "KeyError: 'markov3'", "extra": "ZeroDivisionError: float division by zero"}}
+total runtime 703s

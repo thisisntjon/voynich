@@ -1,0 +1,63 @@
+--- FINDINGS-MAP.orig.md	2026-10-19 02:37:57.888645432 -0700
++++ FINDINGS-MAP_X01-FIX-2026-10-19.md	2026-10-19 02:37:57.896645432 -0700
+@@ -1,5 +1,9 @@
+ # Findings map (generated 2026-10-19 01:23 PDT; do not edit)
+ 
++> **2026-10-19: X-01 at-risk per A1 gate (results_vx01_a1.txt 1e2ff8bd326878c80e77b2eaf0b6ea98d66edb7a9ac823bcb2534e2074e39de6, IV-RESCORE-X01-A1.md e7be4afc4003bfe515c1f55bca43b0eca05dc7df63daaf7fd0cb1b292d0e0fa9); no tested segmenter was adequate on planted books; earlier "discharged" wording withdrawn.**
++> UNVERIFIED hand fix of a generated file (new file; the original FINDINGS-MAP.md, sha256 d5d1804b85efb530514e509dfd2b9be77f4eb410b581845552610c1c0de9f51c, is unchanged). Only X-01 statements changed: in section 2, X-01 is now shown **at risk** (was struck as discharged) for F-06, F-11, F-12, F-13, F-14, F-15, F-17, F-30 and F-38, and the P-14 row in section 6 no longer says X-01 is discharged. Not recomputed: section 1 weights (the `*` halving for at-risk assumptions), section 2 status column, section 5 gaps and the section 8 diagram. The renderer (`python tools/findings_graph.py render`) must recompute those from the graph after the graph records X-01 as not discharged.
++
++
+ Source: `workflow/FINDINGS-GRAPH.yaml`. Regenerate: `python tools/findings_graph.py render`. Process: `workflow/TRIANGULATION.md`.
+ Numbers live in `.inventory/registers/CLAIMS.md`; narrative in `workflow/CONSTRAINTS-MAP.md`. This page is the
+ relationship layer: each finding's independent evidence lines, the assumptions it rests on, and where it points.
+@@ -45,16 +49,16 @@
+ | F-03 | Cross-space coupling is adjacent ordering, strongest in Currier B, and cheap to make | TRIANGULATED | data, external, impl | — | A3, A4 | standing |
+ | F-04 ◆ | Word lengths follow a rhythm inside lines that stops at line breaks | TRIANGULATED | data, impl, method, order, physical, split | X-03 | A5, A13, dot3 | standing |
+ | F-05 | Characters predict the text better than its word list does | TRIANGULATED | data, impl, method, split | — | A6 | standing |
+-| F-06 ◆ | Cores carry held-out word-order structure (restated; the 'affixes carry none' half withdrawn by r5) | TRIANGULATED | data, impl, method, split | ~~X-01~~, ~~X-07~~ | A7, A16 | standing |
++| F-06 ◆ | Cores carry held-out word-order structure (restated; the 'affixes carry none' half withdrawn by r5) | TRIANGULATED | data, impl, method, split | **X-01**, ~~X-07~~ | A7, A16 | standing |
+ | F-07 | Hand-1 section vocabulary beats the generator and a bifolio null, at the permutation floor | TRIANGULATED | data, impl, split | — | A8 | standing |
+ | F-08 | The edge and coupling anomalies are not alphabet or boundary artefacts; entropy and type counts are | TRIANGULATED | impl, method, seg | — | A9 | standing |
+-| F-11 ◆ | Every word is prefix + core + suffix, and the line signatures live in the affixes | TRIANGULATED | data, external, impl, seg, split | ~~X-01~~ | A13, dot8, dot10 | standing |
+-| F-12 ◆ | Cores carry weak order, weaker than language and mostly weaker than letter-in-core ciphers | TRIANGULATED | data, impl, method, seg, split | ~~X-01~~ | A14, A16, dot27, dot29 | standing |
+-| F-13 ◆ | The same core recurs at short range, the opposite of language | TRIANGULATED | data, impl, order, seg | ~~X-01~~ | dot16 | standing |
+-| F-14 ◆ | The prefix stream carries short-range memory (strongest one word back) and restarts at each line; an exact one-step frame law is not established | TRIANGULATED | data, impl, method, order, seg, split | ~~X-01~~, X-03 | dot25, dot28 | standing |
+-| F-15 ◆ | Prefix and suffix are chosen together with the core | TRIANGULATED | impl, method, seg, split | ~~X-01~~ | A17, A18, dot19, dot23 | standing |
++| F-11 ◆ | Every word is prefix + core + suffix, and the line signatures live in the affixes | TRIANGULATED | data, external, impl, seg, split | **X-01** | A13, dot8, dot10 | standing |
++| F-12 ◆ | Cores carry weak order, weaker than language and mostly weaker than letter-in-core ciphers | TRIANGULATED | data, impl, method, seg, split | **X-01** | A14, A16, dot27, dot29 | standing |
++| F-13 ◆ | The same core recurs at short range, the opposite of language | TRIANGULATED | data, impl, order, seg | **X-01** | dot16 | standing |
++| F-14 ◆ | The prefix stream carries short-range memory (strongest one word back) and restarts at each line; an exact one-step frame law is not established | TRIANGULATED | data, impl, method, order, seg, split | **X-01**, X-03 | dot25, dot28 | standing |
++| F-15 ◆ | Prefix and suffix are chosen together with the core | TRIANGULATED | impl, method, seg, split | **X-01** | A17, A18, dot19, dot23 | standing |
+ | F-16 | Currier A/B is a split between scribes; within-B Hand 2 vs Hand 3 slot divergence is section | TRIANGULATED | impl, method, split | X-08 | A20, dot12, dot24 | standing |
+-| F-17 ◆ | Each quire uses a narrower vocabulary than any global-lexicon model | TRIANGULATED | data, impl, seg, split | ~~X-01~~ | dot23 | standing |
++| F-17 ◆ | Each quire uses a narrower vocabulary than any global-lexicon model | TRIANGULATED | data, impl, seg, split | **X-01** | dot23 | standing |
+ | F-18 | Drawings explain only part of the edge marking; layout does not inflate the line findings | TRIANGULATED | impl, method, physical | — | A15, dot9 | standing |
+ | F-19 ◆ | The word unit is physical | TRIANGULATED | data, method, physical | X-03 | A19 | standing |
+ | F-20 | There is no internal crib | TRIANGULATED | data, external, impl, method | — | dot13 | standing |
+@@ -68,7 +72,7 @@
+ | F-33 | No strong link between plant pictures and core vocabulary; affix frames associate with pictures | TRIANGULATED | data, impl, physical, seg | — | — | standing |
+ | F-35 | Syllabary, abjad and root-and-pattern encodings cannot give the manuscript's letter predictability | TRIANGULATED | data, impl, method | — | — | standing |
+ | F-36 ◆ | Voynich word stems align to a reference vocabulary above null on half-splits only (cause unresolved; the denom_b-floor explanation is unsupported, D-063), not on 15-quire LOQO or G_word | TRIANGULATED | data, impl, order, split | ~~X-04~~ | — | standing |
+-| F-38 | A two-layer slot-plus-context language model beats the bar on 15-quire LOQO across three segmenters | TRIANGULATED | data, impl, seg, split | ~~X-07~~, ~~X-01~~ | — | standing |
++| F-38 | A two-layer slot-plus-context language model beats the bar on 15-quire LOQO across three segmenters | TRIANGULATED | data, impl, seg, split | ~~X-07~~, **X-01** | — | standing |
+ | F-39 ◆ | Plaintext letters or syllables spread over homophone cores leave too little same-core repetition (robust across independent segmenters); their excess core order depends on how affixes are stripped | TRIANGULATED | data, impl, method, order, seg, split | **X-01** | — | at-risk |
+ | F-40 ◆ | The core layer matches no reference class; no natural prose, verse, list or medical-table text reuses words in-line (a Lullian combinatory letter-table does, s107), no generator has its weak order | TRIANGULATED | data, impl, method, order, split | **X-01** | — | at-risk |
+ | F-41 | A per-line core pool reproduces in-line reuse and cross-line avoidance out of sample, but not mild quire locality with weak order | TRIANGULATED | data, impl, method, split | **X-01** | — | at-risk |
+@@ -87,7 +91,7 @@
+ | F-50 | Affix and word-length choices drift by quire beyond hand and section; constancy of the core mechanism is not shown | SINGLE | data | **X-01** | — | at-risk |
+ | F-23 ◆ | No lexical producer predicts held-out pages or quires | CONTESTED | data, physical, seg, split | ~~X-07~~ | dot18, dot21, dot23 | at-risk |
+ | F-26 | The manuscript sits between word code and generator, outside both on wrapper-free features | CONTESTED | data, method | **X-06** | dot14, dot15 | at-risk |
+-| F-30 ◆ | Neither a weakened table-and-grille nor constrained assembly predicts held-out quires | CONTESTED | data, impl, seg, split | ~~X-01~~ | dot25 | at-risk |
++| F-30 ◆ | Neither a weakened table-and-grille nor constrained assembly predicts held-out quires | CONTESTED | data, impl, seg, split | **X-01** | dot25 | at-risk |
+ | F-34 ◆ | A line-held affix table reproduces the prefix memory on held-out quires, but the sticky Naibbe cipher predicts none of them | CONTESTED | data, method, split | **X-01** | — | at-risk |
+ | F-37 | Tested transposition and single-null-glyph schemes do not explain the text | CONTESTED | data, impl | **X-06** | — | at-risk |
+ | F-43 | Less-frequent label cores retrieve their own page's paragraph vocabulary, but only under one core representation | CONTESTED | data, method, seg | **X-01** | — | at-risk |
+@@ -176,7 +180,7 @@
+ | P-10 | s74 | Argon | filed | F-04, H-05 | Cadence prediction and line automaton |
+ | P-11 | s75 | Argon | filed | H-02 | Transposition with null glyphs; MDL bake-off |
+ | P-13 | s81 | voynich-08 | filed | H-14, F-30 | Line-sticky Naibbe (and per-page sticky) on the full s57/s67 LOQO battery plus the s55 distance: does a per-line table cipher predict held-out quires? |
+-| P-14 | roach r5 | roach voynich-91 | filed | F-06, F-13, F-23 | Blind replication of the held-out core word-order residual (F-06) and short-range core repetition R(d) (F-13) with roach's own segmenter, on LOQO folds (adds impl, discharges X-01/X-07) |
++| P-14 | roach r5 | roach voynich-91 | filed | F-06, F-13, F-23 | Blind replication of the held-out core word-order residual (F-06) and short-range core repetition R(d) (F-13) with roach's own segmenter, on LOQO folds (adds impl; aimed to discharge X-01/X-07; X-01 not discharged per A1) |
+ | P-15 | s82 | voynich-08 | filed | H-02, H-03, F-25, F-26 | Do the s50 verbose-homophonic and P4-D1 letter-in-core families match the corrected matched-K core-order curve, h2 and rhythm together? |
+ | P-16 | s83 | voynich-08 | filed | H-02, H-14, H-03 | Does a homophonic letter- or syllable-in-core cipher with a per-line affix table reproduce the slot layer, the matched-K core order and the rhythm on held-out quires? |
+ | P-17 | s84 | voynich-08 | filed | F-36, H-06 | Word-stem alignment solver re-run order-free on LOQO folds with matched nulls: which reference language and which stems align, and does the margin beat the planted-control gap? |

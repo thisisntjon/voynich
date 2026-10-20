@@ -1,0 +1,170 @@
+EXPLORATORY -- VKB folio relationship scan. Not pre-registered, not filed, moves no scoreboard entry.
+started 2026-10-18 17:21:48 PDT; VKB build 2026-10-18 17:21; db data\vkb\vkb.sqlite
+script tools/vkb/queries/folio_relationship_scan.py; B=10000 permutations; seed 20261018; analysis set: >= 50 P tokens; BH-FDR per scheme and transliteration; flag BOTH = q_hand < 0.05 and q_sect < 0.05
+Effect: eta2 = eta^2 of feature ranks across the variable's levels (n_stars: Spearman rho); eta2|hand, eta2|sect = same after removing hand / section rank means. replicates: RF1b / IT2a p < 0.05 under every applicable control. p_free, p_hand, p_sect: permutation p (free, within hand, within section); q_*: BH. n/a = no stratum holds two levels of the variable.
+
+ZL3b: 193 folios, 46 features, 316 feature x variable tests (4s)
+RF1b: 195 folios, 46 features, 316 feature x variable tests (9s)
+IT2a: 193 folios, 46 features, 316 feature x variable tests (13s)
+
+== 1a. ZL3b associations surviving BOTH within-hand and within-section permutation (BH q < 0.05): 24
+feature          variable    n stat  effect eta2|hand eta2|sect   p_free   p_hand   p_sect  q_free  q_hand  q_sect  replicates
+n_lines          n_stars    23  rho  +0.799       n/a       n/a   0.0001   0.0001   0.0001 0.00036 0.00097 0.00087  RF1b:yes IT2a:yes
+mean_wlen        quire     193 eta2  +0.563     0.349     0.273   0.0001   0.0001   0.0001 0.00036 0.00097 0.00087  RF1b:yes IT2a:yes
+pfx:she          quire     193 eta2  +0.510     0.400     0.189   0.0001   0.0001   0.0001 0.00036 0.00097 0.00087  RF1b:yes IT2a:yes
+pfx:che          quire     193 eta2  +0.392     0.309     0.199   0.0001   0.0001   0.0001 0.00036 0.00097 0.00087  RF1b:yes IT2a:yes
+init:q           quire     193 eta2  +0.336     0.251     0.155   0.0001   0.0001   0.0003 0.00036 0.00097  0.0023  RF1b:yes IT2a:yes
+n_tokens         n_stars    23  rho  +0.705       n/a       n/a   0.0003   0.0002   0.0005  0.0010  0.0018  0.0037  RF1b:yes IT2a:yes
+ttr_50           quire     193 eta2  +0.320     0.152     0.159   0.0001   0.0001   0.0006 0.00036 0.00097  0.0041  RF1b:yes IT2a:yes
+init:t           quire     193 eta2  +0.228     0.240     0.218   0.0001   0.0005   0.0002 0.00036  0.0041  0.0016  RF1b:yes IT2a:yes
+pfx:ch           quire     193 eta2  +0.346     0.343     0.135   0.0001   0.0001   0.0008 0.00036 0.00097  0.0052  RF1b:yes IT2a:yes
+final:m          quire     193 eta2  +0.306     0.212     0.154   0.0001   0.0008   0.0013 0.00036  0.0062  0.0078  RF1b:yes IT2a:yes
+init:o           quire     193 eta2  +0.264     0.226     0.180   0.0001   0.0022   0.0006 0.00036  0.0149  0.0041  RF1b:yes IT2a:yes
+final:l          quire     193 eta2  +0.280     0.258     0.155   0.0001   0.0001   0.0030 0.00036 0.00097  0.0163  RF1b:yes IT2a:yes
+pfx:a            quire     193 eta2  +0.461     0.381     0.247   0.0001   0.0027   0.0006 0.00036  0.0166  0.0041  RF1b:yes IT2a:yes
+pfx:o            n_stars    23  rho  -0.620       n/a       n/a   0.0018   0.0029   0.0017  0.0054  0.0175  0.0100  RF1b:yes IT2a:yes
+pfx:qok          quire     193 eta2  +0.511     0.330     0.133   0.0001   0.0001   0.0039 0.00036 0.00097  0.0203  RF1b:yes IT2a:yes
+h2               quire     193 eta2  +0.327     0.191     0.104   0.0001   0.0001   0.0042 0.00036 0.00097  0.0215  RF1b:yes IT2a:yes
+h2_50            quire     193 eta2  +0.383     0.136     0.116   0.0001   0.0001   0.0048 0.00036 0.00097  0.0232  RF1b:yes IT2a:yes
+sfx:y            quire     193 eta2  +0.526     0.274     0.250   0.0001   0.0051   0.0001 0.00036  0.0288 0.00087  RF1b:yes IT2a:yes
+pfx:qok          n_stars    23  rho  +0.567       n/a       n/a   0.0050   0.0053   0.0060  0.0140  0.0293  0.0267  RF1b:yes IT2a:yes
+final:n          quire     193 eta2  +0.256     0.148     0.133   0.0001   0.0027   0.0078 0.00036  0.0166  0.0334  RF1b:yes IT2a:yes
+sfx:ol           quire     193 eta2  +0.396     0.305     0.229   0.0001   0.0070   0.0001 0.00036  0.0365 0.00087  RF1b:yes IT2a:yes
+pfx:qot          bifpos    185 eta2  +0.043     0.034     0.042   0.0060   0.0069   0.0034  0.0163  0.0365  0.0181  RF1b:yes IT2a:yes
+sfx:hy           quire     193 eta2  +0.288     0.185     0.143   0.0001   0.0063   0.0095 0.00036  0.0341  0.0390  RF1b:yes IT2a:yes
+sfx:eey          quire     193 eta2  +0.245     0.173     0.132   0.0001   0.0003   0.0110 0.00036  0.0026  0.0438  RF1b:yes IT2a:yes
+
+== 1b. ZL3b hand: only the within-section control applies; q < 0.05: 19
+feature          variable    n stat  effect eta2|hand eta2|sect   p_free   p_hand   p_sect  q_free  q_hand  q_sect  replicates
+sfx:y            hand      193 eta2  +0.668         0     0.385   0.0001      n/a   0.0001 0.00036     n/a 0.00087  RF1b:yes IT2a:yes
+pfx:cho          hand      193 eta2  +0.620         0     0.291   0.0001      n/a   0.0001 0.00036     n/a 0.00087  RF1b:yes IT2a:yes
+n_tokens         hand      193 eta2  +0.452         0     0.126   0.0001      n/a   0.0001 0.00036     n/a 0.00087  RF1b:yes IT2a:yes
+pfx:a            hand      193 eta2  +0.443         0     0.295   0.0001      n/a   0.0001 0.00036     n/a 0.00087  RF1b:yes IT2a:yes
+sfx:or           hand      193 eta2  +0.414         0     0.193   0.0001      n/a   0.0001 0.00036     n/a 0.00087  RF1b:yes IT2a:yes
+mean_wlen        hand      193 eta2  +0.411         0     0.194   0.0001      n/a   0.0001 0.00036     n/a 0.00087  RF1b:yes IT2a:yes
+sfx:ol           hand      193 eta2  +0.375         0     0.212   0.0001      n/a   0.0001 0.00036     n/a 0.00087  RF1b:yes IT2a:yes
+pfx:qok          hand      193 eta2  +0.360         0     0.103   0.0001      n/a   0.0001 0.00036     n/a 0.00087  RF1b:yes IT2a:yes
+sfx:o            hand      193 eta2  +0.310         0     0.135   0.0001      n/a   0.0001 0.00036     n/a 0.00087  RF1b:yes IT2a:yes
+pfx:she          hand      193 eta2  +0.262         0     0.119   0.0001      n/a   0.0001 0.00036     n/a 0.00087  RF1b:yes IT2a:yes
+pfx:che          hand      193 eta2  +0.228         0     0.140   0.0001      n/a   0.0001 0.00036     n/a 0.00087  RF1b:yes IT2a:yes
+init:o           hand      193 eta2  +0.166         0     0.112   0.0001      n/a   0.0001 0.00036     n/a 0.00087  RF1b:yes IT2a:yes
+sfx:hy           hand      193 eta2  +0.195         0     0.078   0.0001      n/a   0.0003 0.00036     n/a  0.0023  RF1b:yes IT2a:yes
+final:n          hand      193 eta2  +0.154         0     0.086   0.0001      n/a   0.0007 0.00036     n/a  0.0046  RF1b:yes IT2a:yes
+h2_50            hand      193 eta2  +0.239         0     0.046   0.0001      n/a    0.001 0.00036     n/a  0.0063  RF1b:yes IT2a:yes
+sfx:ar           hand      193 eta2  +0.098         0     0.050   0.0007      n/a   0.0052  0.0023     n/a  0.0243  RF1b:yes IT2a:yes
+pfx:o            hand      193 eta2  +0.057         0     0.051   0.0229      n/a   0.0055  0.0544     n/a  0.0253  RF1b:yes IT2a:yes
+final:m          hand      193 eta2  +0.180         0     0.085   0.0001      n/a   0.0059 0.00036     n/a  0.0266  RF1b:yes IT2a:yes
+init:t           hand      193 eta2  +0.072         0     0.106   0.0057      n/a   0.0063  0.0158     n/a  0.0275  RF1b:yes IT2a:yes
+
+== 1b. ZL3b section: only the within-hand control applies; q < 0.05: 21
+feature          variable    n stat  effect eta2|hand eta2|sect   p_free   p_hand   p_sect  q_free  q_hand  q_sect  replicates
+n_tokens         section   193 eta2  +0.656     0.378         0   0.0001   0.0001      n/a 0.00036 0.00097     n/a  RF1b:yes IT2a:yes
+label_share      section   193 eta2  +0.625     0.601         0   0.0001   0.0001      n/a 0.00036 0.00097     n/a  RF1b:yes IT2a:yes
+n_lines          section   193 eta2  +0.599     0.250         0   0.0001   0.0001      n/a 0.00036 0.00097     n/a  RF1b:yes IT2a:yes
+pfx:qok          section   193 eta2  +0.431     0.255         0   0.0001   0.0001      n/a 0.00036 0.00097     n/a  RF1b:yes IT2a:yes
+pfx:she          section   193 eta2  +0.362     0.244         0   0.0001   0.0001      n/a 0.00036 0.00097     n/a  RF1b:yes IT2a:yes
+mean_wlen        section   193 eta2  +0.349     0.196         0   0.0001   0.0001      n/a 0.00036 0.00097     n/a  RF1b:yes IT2a:yes
+h2_50            section   193 eta2  +0.283     0.097         0   0.0001   0.0001      n/a 0.00036 0.00097     n/a  RF1b:yes IT2a:yes
+h2               section   193 eta2  +0.240     0.125         0   0.0001   0.0001      n/a 0.00036 0.00097     n/a  RF1b:yes IT2a:yes
+pfx:ch           section   193 eta2  +0.207     0.198         0   0.0001   0.0001      n/a 0.00036 0.00097     n/a  RF1b:yes IT2a:yes
+init:q           section   193 eta2  +0.189     0.132         0   0.0001   0.0001      n/a 0.00036 0.00097     n/a  RF1b:yes IT2a:yes
+init:s           section   193 eta2  +0.186     0.084         0   0.0001   0.0001      n/a 0.00036 0.00097     n/a  RF1b:yes IT2a:yes
+pfx:k            section   193 eta2  +0.185     0.112         0   0.0001   0.0001      n/a 0.00036 0.00097     n/a  RF1b:yes IT2a:yes
+final:l          section   193 eta2  +0.156     0.114         0   0.0002   0.0001      n/a 0.00069 0.00097     n/a  RF1b:yes IT2a:yes
+pfx:che          section   193 eta2  +0.230     0.186         0   0.0001   0.0004      n/a 0.00036  0.0034     n/a  RF1b:yes IT2a:yes
+pfx:qot          section   193 eta2  +0.108     0.094         0   0.0014   0.0011      n/a  0.0042  0.0083     n/a  RF1b:yes IT2a:yes
+ttr_50           section   193 eta2  +0.185     0.062         0   0.0001   0.0013      n/a 0.00036  0.0095     n/a  RF1b:yes IT2a:yes
+final:y          section   193 eta2  +0.147     0.061         0   0.0001   0.0016      n/a 0.00036  0.0114     n/a  RF1b:yes IT2a:yes
+sfx:eey          section   193 eta2  +0.128     0.056         0   0.0001   0.0021      n/a 0.00036  0.0146     n/a  RF1b:yes IT2a:yes
+h1_50            section   193 eta2  +0.080     0.084         0   0.0126   0.0040      n/a  0.0311  0.0231     n/a  RF1b:yes IT2a:yes
+init:y           section   193 eta2  +0.075     0.056         0   0.0174   0.0082      n/a  0.0423  0.0419     n/a  RF1b:yes IT2a:yes
+final:n          section   193 eta2  +0.132     0.072         0   0.0001   0.0096      n/a 0.00036  0.0482     n/a  RF1b:yes IT2a:yes
+
+== 1c. Per variable: tests, significant free (q<0.05), surviving within hand, within section, both (ZL3b)
+  quire    tests  45  free  38  hand  29 (n/a 0)  sect  22 (n/a 0)  both  19
+  hand     tests  45  free  29  hand   0 (n/a 45)  sect  19 (n/a 0)  both   0
+  lang     tests  45  free  26  hand   0 (n/a 0)  sect  20 (n/a 0)  both   0
+  section  tests  45  free  31  hand  21 (n/a 0)  sect   0 (n/a 45)  both   0
+  side     tests  46  free   0  hand   0 (n/a 0)  sect   0 (n/a 0)  both   0
+  bifpos   tests  46  free   3  hand   1 (n/a 0)  sect   2 (n/a 0)  both   1
+  n_stars  tests  44  free   5  hand   4 (n/a 0)  sect   5 (n/a 0)  both   4
+
+== 1d. Strongest free associations that do NOT survive both controls (top 15 by effect, q_free < 0.05)
+feature          variable    n stat  effect eta2|hand eta2|sect   p_free   p_hand   p_sect  q_free  q_hand  q_sect  replicates
+sfx:y            lang      190 eta2  +0.653   0.00049     0.316   0.0001   0.0172   0.0001 0.00036  0.0732 0.00087  RF1b:yes IT2a:yes
+n_tokens         quire     193 eta2  +0.653     0.396     0.129   0.0001   0.0001   0.0543 0.00036 0.00097  0.1799  RF1b:no IT2a:yes
+pfx:cho          lang      190 eta2  +0.607    0.0009     0.269   0.0001   0.0140   0.0001 0.00036  0.0622 0.00087  RF1b:yes IT2a:yes
+n_lines          quire     193 eta2  +0.606     0.326     0.104   0.0001   0.0001   0.1670 0.00036 0.00097  0.3935  RF1b:no IT2a:no
+label_share      quire     193 eta2  +0.562     0.530     0.103   0.0001   0.0001   0.2977 0.00036 0.00097  0.5641  RF1b:no IT2a:no
+final:l          n_stars    23  rho  +0.519       n/a       n/a   0.0119   0.0118   0.0104  0.0301  0.0551  0.0421  RF1b:yes IT2a:yes
+pfx:cho          quire     193 eta2  +0.472     0.150     0.193   0.0001   0.0333   0.0003 0.00036  0.1187  0.0023  RF1b:yes IT2a:no
+sfx:or           lang      190 eta2  +0.387   8.4e-06     0.157   0.0001   0.6399   0.0001 0.00036  0.8344 0.00087  RF1b:no IT2a:no
+n_tokens         lang      190 eta2  +0.376   9.7e-06     0.084   0.0001   0.3647   0.0001 0.00036  0.6295 0.00087  RF1b:no IT2a:no
+sfx:ol           lang      190 eta2  +0.373   7.3e-05     0.192   0.0001   0.1975   0.0001 0.00036  0.4572 0.00087  RF1b:no IT2a:no
+pfx:a            lang      190 eta2  +0.371   0.00013     0.233   0.0001   0.8917   0.0001 0.00036  0.9495 0.00087  RF1b:no IT2a:no
+mean_wlen        lang      190 eta2  +0.339   0.00013     0.125   0.0001   0.1402   0.0001 0.00036  0.3653 0.00087  RF1b:no IT2a:no
+pfx:qok          lang      190 eta2  +0.332   2.4e-05     0.098   0.0001   0.2792   0.0001 0.00036  0.5743 0.00087  RF1b:no IT2a:no
+sfx:or           quire     193 eta2  +0.292     0.075     0.142   0.0001   0.5459   0.0029 0.00036  0.7711  0.0163  RF1b:no IT2a:no
+n_stars          bifpos     23 eta2  +0.288     0.288     0.288   0.0103   0.0108   0.0079  0.0269  0.0523  0.0334  RF1b:yes IT2a:yes
+
+== 2. ZL3b feature x feature over 193 folios, 45 features, 903 pairs (n_tokens/n_lines excluded as partners). rho = Spearman; rho|n = partial on rank n_tokens; rho|n,h,s = partial on n_tokens + hand + section dummies; p, q for rho|n (t approximation, BH over all pairs).
+-- 2a. strongest pairs not explained by n_tokens, no definitional overlap (top 25 by |rho|n|)
+feature a        feature b            rho   rho|n rho|n,h,s         p         q
+h2_50            ttr_50            +0.660  +0.708    +0.772  1.56e-30  2.82e-28
+h2               ttr_50            +0.700  +0.700    +0.747  1.53e-29  2.30e-27
+pfx:cho          sfx:y             -0.676  -0.563    -0.013  1.99e-17  2.57e-15
+sfx:or           sfx:y             -0.625  -0.549    -0.265  1.55e-16  1.75e-14
+mean_wlen        sfx:y             +0.636  +0.513    +0.299  2.63e-14  2.64e-12
+pfx:cho          pfx:qok           -0.617  -0.485    -0.253  1.02e-12  9.23e-11
+h2_50            init:y            +0.438  +0.482    +0.469  1.53e-12  1.17e-10
+pfx:she          sfx:y             +0.611  +0.481    +0.262  1.74e-12  1.21e-10
+init:q           ttr_50            -0.475  -0.473    -0.367  4.49e-12  2.90e-10
+h2               init:y            +0.473  +0.468    +0.449  7.76e-12  4.67e-10
+h2_50            sfx:s             +0.456  +0.459    +0.407  2.24e-11  1.26e-09
+pfx:cho          sfx:o             +0.535  +0.456    +0.171  2.94e-11  1.56e-09
+h2               sfx:s             +0.441  +0.453    +0.403  4.04e-11  2.03e-09
+mean_wlen        pfx:qok           +0.583  +0.446    +0.238  9.15e-11  4.35e-09
+h2               pfx:qok           -0.301  -0.441    -0.238  1.53e-10  6.91e-09
+h2               init:q            -0.437  -0.433    -0.398  3.47e-10  1.49e-08
+pfx:che          sfx:y             +0.587  +0.432    +0.323  4.11e-10  1.69e-08
+h2_50            pfx:qok           -0.493  -0.423    -0.220  9.96e-10  3.91e-08
+init:o           sfx:y             -0.458  -0.421    -0.174  1.17e-09  4.40e-08
+h2_50            init:q            -0.382  -0.417    -0.400  1.87e-09  6.75e-08
+init:q           init:y            -0.415  -0.412    -0.341  2.77e-09  9.63e-08
+mean_wlen        ttr_50            +0.392  +0.411    +0.423  3.21e-09  1.06e-07
+init:q           init:t            -0.412  -0.411    -0.325  3.27e-09  1.06e-07
+init:y           ttr_50            +0.411  +0.408    +0.373  4.38e-09  1.36e-07
+sfx:ol           sfx:or            +0.454  +0.398    +0.131  1.06e-08  3.20e-07
+-- 2b. same ranking, also surviving hand + section (top 15 by |rho|n,h,s|, no overlap)
+feature a        feature b            rho   rho|n rho|n,h,s         p         q
+h2_50            ttr_50            +0.660  +0.708    +0.772  1.56e-30  2.82e-28
+h2               ttr_50            +0.700  +0.700    +0.747  1.53e-29  2.30e-27
+h2_50            init:y            +0.438  +0.482    +0.469  1.53e-12  1.17e-10
+h2               init:y            +0.473  +0.468    +0.449  7.76e-12  4.67e-10
+mean_wlen        ttr_50            +0.392  +0.411    +0.423  3.21e-09  1.06e-07
+pfx:che          pfx:ok            -0.237  -0.313    -0.420  9.86e-06  1.25e-04
+h2_50            sfx:s             +0.456  +0.459    +0.407  2.24e-11  1.26e-09
+h2               sfx:s             +0.441  +0.453    +0.403  4.04e-11  2.03e-09
+h2_50            init:q            -0.382  -0.417    -0.400  1.87e-09  6.75e-08
+h2               init:q            -0.437  -0.433    -0.398  3.47e-10  1.49e-08
+pfx:ok           pfx:she           -0.279  -0.351    -0.390  5.87e-07  1.15e-05
+final:n          h2                -0.219  -0.188    -0.374  8.96e-03  3.71e-02
+init:y           ttr_50            +0.411  +0.408    +0.373  4.38e-09  1.36e-07
+init:q           ttr_50            -0.475  -0.473    -0.367  4.49e-12  2.90e-10
+pfx:che          sfx:eey           +0.411  +0.330    +0.367  2.90e-06  4.23e-05
+-- 2c. pairs with definitional overlap (top 10 by |rho|n|; expected, listed for completeness)
+feature a        feature b            rho   rho|n rho|n,h,s         p         q
+h1               h1_50             +0.974  +0.988    +0.987 4.57e-157 4.13e-154
+h2               h2_50             +0.886  +0.971    +0.963 4.84e-120 2.19e-117
+Rw1              Rw1_line          +0.842  +0.849    +0.844  1.65e-54  4.96e-52
+lag1_wlen        rhythm_excess     +0.806  +0.802    +0.803  1.76e-44  3.98e-42
+final:y          sfx:y             +0.478  +0.481    +0.432  1.56e-12  1.17e-10
+final:s          sfx:s             +0.378  +0.376    +0.403  7.61e-08  1.81e-06
+init:q           pfx:qot           +0.321  +0.318    +0.269  6.91e-06  9.18e-05
+final:l          sfx:al            +0.379  +0.317    +0.315  7.35e-06  9.48e-05
+final:n          sfx:ain           +0.232  +0.310    +0.303  1.18e-05  1.39e-04
+final:l          sfx:ol            +0.165  +0.264    +0.169  2.20e-04  1.85e-03
+-- 2d. correlation with n_tokens (Spearman), the size confound, all features
+  n_lines +0.84; sfx:y +0.53; pfx:a +0.53; pfx:qok +0.53; pfx:che +0.51; pfx:cho -0.49; mean_wlen +0.47; pfx:she +0.47; sfx:hy -0.41; sfx:or -0.36; sfx:o -0.32; final:m +0.32; sfx:al +0.31; final:n -0.31; final:l +0.29; init:s +0.29; h2_50 -0.28; sfx:eey +0.27; sfx:ol -0.27; sfx:ar +0.24; pfx:o +0.22; pfx:ch -0.22; label_share +0.21; pfx:k -0.21; init:o -0.20; sfx:ain +0.19; lag1_wlen +0.17; final:r +0.14; final:y +0.14; h2 +0.14; h1 +0.13; rhythm_excess +0.13; init:y +0.08; Rw1_line -0.08; ttr_50 +0.06; pfx:ok +0.06; init:q -0.06; pfx:qot -0.06; sfx:s -0.06; final:s -0.06; Rw1 +0.04; init:d +0.04; h1_50 -0.04; init:t +0.03
+
+finished 2026-10-18 17:22:00 PDT; 13s. EXPLORATORY: leads only; any lead needs a pre-registered run.

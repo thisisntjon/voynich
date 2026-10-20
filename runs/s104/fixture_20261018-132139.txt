@@ -1,0 +1,25 @@
+S104 FIXTURE (synthetic only; no real data read)
+date: Sun Oct 18 13:21:39 PDT 2026 (`date`)  device: cuda; below_normal=True
+s104 sha256=4276d64ffd08b71fb05123ab239f8c69c6d4a502fba8112f094b85a7d0168f14  stub_match=NO STUB
+fixture plaintext words 28075 types 5330
+  G1a: injective share 0.9655 (recovery must equal it)
+  G1a: recovery 0.9655; tokens 22500 lines 2941 pages 162; alphabet 18 'abcdefghijklmnowxz'; line-held/wheel ok True; disjoint True -> ok
+  G1a twin: injective share 0.9655 (recovery must equal it)
+  G1a twin: recovery 0.9655; tokens 22500 lines 2941 pages 162; alphabet 18 'abcdefghijklmnowxz'; line-held/wheel ok True; disjoint True -> ok
+  G1a: twin is a permutation of the plaintext segment: True
+  G1b: recovery 1.0000; tokens 22500 lines 2941 pages 162; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'; line-held/wheel ok True; disjoint True; code share 0.727 -> ok
+  G1b twin: recovery 1.0000; tokens 22500 lines 2941 pages 162; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'; line-held/wheel ok True; disjoint True; code share 0.727 -> ok
+  G1b: twin is a permutation of the plaintext segment: True
+  G1c: recovery 1.0000; tokens 22500 lines 2941 pages 162; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'; line-held/wheel ok True; disjoint True; code share 0.737 -> ok
+  G1c twin: recovery 1.0000; tokens 22500 lines 2941 pages 162; alphabet 51 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz'; line-held/wheel ok True; disjoint True; code share 0.737 -> ok
+  G1c: twin is a permutation of the plaintext segment: True
+  abbreviation tests: et->& (want &); perfundere->p~fu~dere (want p~fu~dere); confectio->c~fectio (want c~fectio); herbam->herba~ (want herba~); aquamque->aqua~q~ (want aqua~q~); dominus->domin~ (want domin~); und->& (want &); in->in (want in) -> ok
+FXa encoders/decoders: PASS
+  [fixture lag-2] free RAM 5.1 GB (need >= 4.0); 30 jobs on 2 workers
+FXb lag-2 bar 7.964 e-3 bits: s81 line-sticky residue +11.377 (pos 8/15); first-order residue +4.399 (pos 2/15) -> PASS
+  [fixture survivor] free RAM 4.4 GB (need >= 4.0); 9 jobs on 2 workers
+  [FXc] FXc_G1b: ZL3b Q00 sig YYYY bat 3/6; RF1b Q00 sig nYYY bat 3/6; IT2a Q00 sig YYYY bat 3/6
+  [FXc] FXc_G1a: ZL3b Q00 sig nYYY bat 1/6; RF1b Q00 sig nYYY bat 1/6; IT2a Q00 sig nYYY bat 1/6
+FXc survivor path end to end: PASS
+FXd pools returned (lag-2 30 jobs ok True; battery via FXc) -> PASS
+FIXTURE PASS   runtime 60s; finished Sun Oct 18 13:22:39 PDT 2026 (`date`)

@@ -1,0 +1,5 @@
+positive K=25: n_ids=25 acc=0.033
+positive K=35: n_ids=35 acc=0.046
+positive K=45: n_ids=45 acc=0.050
+negative shuffled: acc=0.030 (must be < 0.5)
+CONTROL_FAIL

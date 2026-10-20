@@ -1,0 +1,54 @@
+=== T1: section signatures (paragraph text, grouped by $I illustration code) ===
+ I  folios  tokens   edy%    ed%    qo%   qok%  aiin%  o/(o+e)  top words
+ S      25   11586  13.68  17.89  16.65  10.06  11.44    0.484  aiin:216,chedy:198,ar:170,qokeey:165  [f103r..f58v]
+ H     128   11468   4.12   5.05   9.12   4.35  11.64    0.677  daiin:460,chol:227,s:186,chor:155  [f10r..f9v]
+ B      19    6240  25.98  28.21  24.31  16.25   5.88    0.483  ol:221,shedy:218,chedy:184,qokain:160  [f75r..f84v]
+ P      16    2306   0.52   0.61  12.19   7.55  10.41    0.591  daiin:96,s:45,chol:43,ol:42  [f100r..f99v]
+ T       6    2284  11.60  13.57  14.01   7.75  11.16    0.564  or:44,shedy:43,ol:42,chedy:40  [f1r..f86v6]
+ C       8     694   8.65  11.24  11.82   5.48  12.82    0.519  aiin:18,or:17,daiin:17,ol:13  [f67v2..fRos]
+ A       5     279   0.72   1.43   6.09   2.87   9.68    0.522  ar:9,aiin:7,shey:5,s:5  [f67r1..f68v2]
+
+--- Herbal-A quire drift (illus=H, lang=A, by quire $Q) ---
+Q=A: n=  1312 edy%=0.00 ed%=0.08 qo%=6.71 o/(o+e)=0.733
+Q=B: n=  1041 edy%=0.00 ed%=0.00 qo%=8.45 o/(o+e)=0.899
+Q=C: n=  1431 edy%=0.00 ed%=0.00 qo%=10.27 o/(o+e)=0.798
+Q=D: n=   880 edy%=0.23 ed%=0.34 qo%=8.52 o/(o+e)=0.728
+Q=E: n=   598 edy%=0.00 ed%=0.00 qo%=9.70 o/(o+e)=0.822
+Q=F: n=   754 edy%=0.00 ed%=0.00 qo%=6.76 o/(o+e)=0.756
+Q=G: n=  1102 edy%=0.18 ed%=0.27 qo%=10.80 o/(o+e)=0.717
+Q=O: n=   470 edy%=0.21 ed%=0.64 qo%=11.49 o/(o+e)=0.556
+Q=Q: n=   379 edy%=0.00 ed%=0.00 qo%=7.39 o/(o+e)=0.686
+
+--- Labels only (unit L*), qo- scarcity check by $I ---
+I=Z: label tokens=  344 qo%=0.29 edy%=3.20 o/(o+e)=0.622
+I=P: label tokens=  241 qo%=0.00 edy%=0.00 o/(o+e)=0.822
+I=C: label tokens=  212 qo%=0.47 edy%=7.08 o/(o+e)=0.743
+I=A: label tokens=  148 qo%=0.68 edy%=1.35 o/(o+e)=0.712
+I=B: label tokens=  126 qo%=2.38 edy%=11.11 o/(o+e)=0.802
+I=T: label tokens=   62 qo%=6.45 edy%=0.00 o/(o+e)=0.667
+I=H: label tokens=   31 qo%=0.00 edy%=0.00 o/(o+e)=0.500
+
+=== T2: same-column previous-line copying (positional self-citation) ===
+tokens evaluated: 30941 (same-col), 17745 (off-col), 29009 (far-line)
+exact match  same-column prev line : 2.57%
+exact match  off-column prev line  : 1.96%
+exact match  same-column far line  : 1.94%
+edit<=1 hit  same-column prev line : 10.69%
+edit<=1 hit  off-column prev line  : 8.79%
+edit<=1 hit  same-column far line  : 8.80%
+ratios (edit<=1): col/far = 1.21, col/off = 1.22
+
+=== T3: key-like folios f49v / f57v / f66r / f116v (all units) ===
+f49v: lines=52 tokens=169 units={'L0': 26, 'P0': 26}
+  text: f kshor shol cphokchol chcfhhy o qokchy qokchod sho ckhy r chotchy chcthy cthey koddy y okeodsho chotshol dam e shol shodaiin qotchar ? qotchy chokchy choky k chotchy chodaiin dan s qoteees cheo daiin dol p ochor sheeod ksheo dl o qoksho daiin shckhy dar ? dchol cthol daiin choky y ochokeey ckhey daiin dain chokag e qokeol chokeeody otol kcho s chol daiin ? fchochor shol tchol opcheodal dchsy chotchy ? dcho d chol chokchodaiin chokchy tchol okchokol
+f57v: lines=13 tokens=198 units={'L0': 5, 'Cc': 4, 'Ro': 4}
+  text: dairal v sal y soeos vs ar okees o d soefchees l g sos okey defo f o rkedam sh ofol sar ddal yty s y daiir otey dshdy dkals oty pchchy a r opaiin dal karody v r okeey daram qokar okal okal d o l shkeal dy das o k sher s aiin o l d r v x k m f ?v t r ? ? y I ? o l d r v x k m
+f66r: lines=82 tokens=348 units={'L0': 49, 'P0': 32, 'Lx': 1}
+  text: rary rals qor dary ykeol saly salf fary qotesy ykaly doly saiin qokal qolsa raral y o s sh y d o f ? x air d sh y f f y o d s f c ? x t o ? l r t o x p d pdaiin oteedy opchedy chap chefchy shddy ypches cholpchd okedals sair shekey qokeedar okal okedy qokeedy qokal okedy qokshd ykshedy chady cthdy qokees cheeo okcho dy chekeey chedy chckhy shdy qotedy chdy
+f116v: lines=1 tokens=2 units={'Lx': 1}
+  text: oror sheey
+
+f57v char stream length (EVA chars): 445
+f57v stream head: dairalvsalysoeosvsarokeesodsoefcheeslgsosokeydefoforkedamshofolsarddalytysydaiiroteydshdydkalsotypchchyaropaiindalkarodyvrokeeydaramqokarokalokaldolshkealdydaso
+top periods by char-match rate (period, rate): 13:0.174, 26:0.115, 6:0.098, 39:0.096, 36:0.093, 27:0.091, 33:0.085, 9:0.083
+repeated 16-char block exists in f57v stream: 'trycoldrvxkmptry'

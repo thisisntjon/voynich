@@ -1,0 +1,87 @@
+{
+ "legibility": {
+  "T1_alkindi_1531": {
+   "tokens": 150,
+   "g1": false,
+   "recs": 0,
+   "ids_ok": false,
+   "num": 0,
+   "den": 0,
+   "frac": NaN,
+   "g2": false,
+   "info": {
+    "pages": 24,
+    "alkindi_pages": [
+     141,
+     142,
+     143,
+     144,
+     145,
+     146,
+     147,
+     148,
+     149,
+     150,
+     151,
+     152,
+     153,
+     154,
+     155,
+     156,
+     157,
+     158,
+     159,
+     160,
+     161,
+     162,
+     163,
+     164
+    ],
+    "bands": 63,
+    "ruled_rows": 20,
+    "lines": 20,
+    "tokens": 150
+   },
+   "same_as_extract": true
+  },
+  "T2_tacuinum_1531": {
+   "tokens": 4686,
+   "g1": true,
+   "recs": 20,
+   "ids_ok": true,
+   "num": 113,
+   "den": 292,
+   "frac": 0.386986301369863,
+   "g2": false,
+   "info": {
+    "pages": 148,
+    "alkindi_pages": null,
+    "bands": 525,
+    "ruled_rows": 286,
+    "lines": 285,
+    "tokens": 4686
+   },
+   "same_as_extract": true
+  },
+  "T3_ibnjazlah_1532": {
+   "tokens": 16499,
+   "g1": true,
+   "recs": 20,
+   "ids_ok": true,
+   "num": 351,
+   "den": 663,
+   "frac": 0.5294117647058824,
+   "g2": false,
+   "info": {
+    "pages": 164,
+    "alkindi_pages": null,
+    "bands": 844,
+    "ruled_rows": 478,
+    "lines": 478,
+    "tokens": 16499
+   },
+   "same_as_extract": true
+  }
+ },
+ "calls": null
+}

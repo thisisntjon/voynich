@@ -1,0 +1,132 @@
+{
+ "row": {
+  "name": "gib_DC_34",
+  "tokens": 276,
+  "types": 161,
+  "pages": 2,
+  "lines": 35,
+  "errors": {
+   "extra": "ZeroDivisionError: float division by zero",
+   "bake": "KeyError: 'markov3'"
+  },
+  "types_25k": 161,
+  "h2": 2.9368,
+  "sd_len": 1.352,
+  "jsd_first_fg": 0.0821,
+  "p_init_enrich": 2.94,
+  "m_final_enrich": 1.04,
+  "cross_excess_eva": -0.0087,
+  "redup_pct": 0.364,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "jsd_first_fg",
+   "p_init_enrich",
+   "m_final_enrich",
+   "cross_excess_eva",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "gib_DC_34",
+   "tokens": 276,
+   "types": 161,
+   "hapax_rate": 0.7578,
+   "mean_len": 3.29,
+   "sd_len": 1.352,
+   "h1": 4.0255,
+   "h2": 2.9368,
+   "h3": 1.6166,
+   "zipf": -0.5438,
+   "redup_pct": 0.364,
+   "jsd_first_fg": 0.0821,
+   "jsd_last_lg": 0.1546,
+   "p_init_enrich": 2.94,
+   "m_final_enrich": 1.04,
+   "cross_mi_eva": 0.9251,
+   "cross_excess_eva": -0.0087,
+   "cross_mi_glyph": 1.0204,
+   "cross_excess_glyph": -0.017,
+   "recur_le_1": 0.0036,
+   "recur_le_5": 0.0435,
+   "recur_le_20": 0.2029,
+   "recur_le_100": 0.3587
+  },
+  "info_mi_adjacent": -0.020658799161477504,
+  "info_mi_page": 0.004759616177185677,
+  "info_samecol_minus_othercol": -0.013829148868821584,
+  "info_bpe_adjacent": 0.18760949419036255,
+  "lex_beta": null,
+  "lex_rate_late_early": null,
+  "lex_edit1_excess": 0.4906832298136646,
+  "slot_occupancy_pc": 0.13550135501355012,
+  "slot_table_likeness": 0.8763637874265591,
+  "slot_core_crowding": 0.7560975609756098,
+  "x_edge_mi_word": null,
+  "x_position_entropy": null,
+  "x_ltr_minus_rtl": null,
+  "x_moran_I": null,
+  "bake_char3_minus_unigram": null,
+  "x_hapax_10k": null,
+  "bake_winner": null,
+  "family": "X",
+  "note": "data\\controls_gibberish\\gib_DC_34.meta.json; 276 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 3,
+    "outs": 4,
+    "na": 3,
+    "out_metrics": [
+     "jsd_first_fg",
+     "p_init_enrich",
+     "cross_excess_eva",
+     "types_25k"
+    ],
+    "out_tight": [
+     "jsd_first_fg",
+     "p_init_enrich"
+    ]
+   },
+   "C": {
+    "ins": 1,
+    "outs": 4,
+    "na": 5,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "redup_pct",
+     "types_25k"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "redup_pct"
+    ]
+   },
+   "G": {
+    "ins": 3,
+    "outs": 4,
+    "na": 3,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva",
+     "types_25k"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "cross_excess_eva"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": "results_m4_phase1_board.json"
+}

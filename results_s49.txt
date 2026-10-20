@@ -1,0 +1,256 @@
+S49 (P4-D3, D-052): blind identifiability study - can the board tell cipher / code / generator / language / gibberish apart on known texts at 38k tokens?
+run started Sat Oct 17 23:52:20 PDT 2026 (`date`)
+s49_identifiability.py sha256=5baf869712abe5b1316023c8fc9f20f153597df3d3ab038aef36451b3fca6f78  prereg stub_match=True
+ranges: s15_ranges.json sha256=b995aba64e5baa22524565963d67880287e43e98220a7c3cdd2d136eac6b3fef; scorer scoreboard/run_v2.py sha256=7dfdc9f75de5980a... (loaded by path; scoreboard.json untouched)
+shared library: s27_k4_bound.py sha256=98203915f0729f8dfacb26ddc7b8d25e2bded1cf06e915883ecf59299151ba7e
+python -I; one CPU process; no GPU; no paid calls; no new data; DELTA page bootstrap B=1000; Moran null 999 draws; seed 20261017
+date: Sat Oct 17 23:52:20 PDT 2026 (`date`)
+N_TOK 38000; quire block 2000; features 26 (21 board + 5 extras); B_feat 1000; phase limit 5400 s
+deps: s10_cipher_mechanism.py=e8c0b14119c9cb67; s28_generator_mechanism.py=c964250dc78bd3ff; s36_two_layer_operator_core.py=41e451cbacb9b528; p4d1_core_order.py=5a400968081214ba; k4_lossy_nomenclator.py=cac660eb7f101a9d; ctl_schwartz.py=2409474fe0fbf716; ctl_generators.py=46e8912d9d87f148; c2_section_generator.py=f21281d9fe41d309; a2_position.py=426b7b649361a877; scoreboard/metrics_new.py=a59c9c17f8abe4cc
+
+=== PHASE 1: corpus construction (mechanisms fixed in the docstring) ===
+ZL3b: 207 pages 34857 tokens; skeleton 244 pages 38000 tokens
+  built lang_latin_cremma                class LANG  tokens  38000 types  13274 pages   65  real lines, first 38000 tokens  [0s]
+  built lang_italian_dante               class LANG  tokens  38000 types   6848 pages   38  real lines, first 38000 tokens  [0s]
+  built lang_mhg_nibelungenlied          class LANG  tokens  38000 types   4552 pages   20  real lines, first 38000 tokens  [0s]
+  built lang_occitan_croisade            class LANG  tokens  38000 types   6481 pages  162  real lines, first 38000 tokens  [0s]
+  built lang_oldfrench_roland            class LANG  tokens  29524 types   4411 pages  291  real lines, first 29524 tokens SHORT (source has fewer than 38k tokens)  [1s]
+  built lang_mhg_parzival                class LANG  tokens  38000 types   5357 pages  237  real lines, first 38000 tokens  [1s]
+  built ciph_s10_latin_cremma            class CIPH  tokens  38000 types  19783 pages  244  s10 verbose homophonic, p_null 0.124, 78 letters, homophone counts {2: 26, 3: 29, 4: 21, 5: 1, 6: 1}, plaintext words consumed 28543 of 38000  [2s]
+  built ciph_s10_italian_dante           class CIPH  tokens  38000 types  18325 pages  244  s10 verbose homophonic, p_null 0.137, 23 letters, homophone counts {2: 6, 3: 5, 4: 8, 5: 2, 6: 2}, plaintext words consumed 28211 of 38000  [4s]
+  built ciph_s10_mhg_nibelungenlied      class CIPH  tokens  38000 types  17579 pages  244  s10 verbose homophonic, p_null 0.186, 24 letters, homophone counts {2: 6, 3: 9, 4: 6, 5: 2, 6: 1}, plaintext words consumed 26485 of 38000  [5s]
+  built ciph_s10_occitan_croisade        class CIPH  tokens  38000 types  17186 pages  244  s10 verbose homophonic, p_null 0.152, 26 letters, homophone counts {2: 6, 3: 8, 4: 8, 5: 3, 6: 1}, plaintext words consumed 27637 of 38000  [6s]
+  built ciph_s10_oldfrench_roland        class CIPH  tokens  38000 types  18465 pages  244  s10 verbose homophonic, p_null 0.104, 26 letters, homophone counts {2: 8, 3: 5, 4: 11, 6: 2}, plaintext words consumed 29280 of 29524  [8s]
+  built code_k4_latin_cremma             class CODE  tokens  38000 types   6039 pages  244  K4 shared-codeword nomenclator (7025/6/180/1.8), codebook seed 20261018, 7024 codewords used, mean owners 11.34, plaintext words consumed 37187 of 38000  [10s]
+  built code_k4_italian_dante            class CODE  tokens  38000 types   5039 pages  244  K4 shared-codeword nomenclator (7025/6/180/1.8), codebook seed 20261019, 6970 codewords used, mean owners 5.89, plaintext words consumed 37187 of 38000  [10s]
+  built code_k4_mhg_nibelungenlied       class CODE  tokens  38000 types   4541 pages  244  K4 shared-codeword nomenclator (7025/6/180/1.8), codebook seed 20261020, 6824 codewords used, mean owners 4.00, plaintext words consumed 37187 of 38000  [11s]
+  built code_k4_occitan_croisade         class CODE  tokens  38000 types   4965 pages  244  K4 shared-codeword nomenclator (7025/6/180/1.8), codebook seed 20261021, 6975 codewords used, mean owners 5.58, plaintext words consumed 37187 of 38000  [12s]
+  built code_k4_oldfrench_roland         class CODE  tokens  38000 types   4707 pages  244  K4 shared-codeword nomenclator (7025/6/180/1.8), codebook seed 20261022, 6797 codewords used, mean owners 3.89, plaintext words consumed 37187 of 29524 (CYCLED)  [12s]
+  built code_k4_mhg_parzival             class CODE  tokens  38000 types   4781 pages  244  K4 shared-codeword nomenclator (7025/6/180/1.8), codebook seed 20261023, 6893 codewords used, mean owners 4.66, plaintext words consumed 37187 of 38000  [13s]
+  built gen_s28_ZL3b_s1                  class GEN   tokens  38000 types   7376 pages  244  s28 mechanism, lam 2.9883 -> 6988 types at seed 0 (target 7450)  [52s]
+  built gen_c2_section                   class GEN   tokens  38000 types   2058 pages  244  c2.Gen.generate {'mode': 'section', 'seed': 2, 'p_seed': 0.8, 'rule_p': 0.088, 'rule_m': 0.148} on the skeleton  [53s]
+  built gen_timm_schinner                class GEN   tokens  38000 types   5503 pages  146  timm_schinner_ownlines (Java generator output, own lines), first 38k tokens  [53s]
+  built gen_schwartz_reuse               class GEN   tokens  38000 types   6291 pages  244  ctl_schwartz.generate, betas from schwartz_reuse.meta.json, seed 20261017, extended template  [55s]
+  built gen_rugg_grille                  class GEN   tokens  38000 types   4253 pages  267  ctl_generators.rugg_grille + layout, Random(SEED+10), N_TOKENS 38000, own lines  [56s]
+  built gib_resample_1                   class GIB   tokens  38000 types   6701 pages  138  gib_realline_pooled writer blocks with replacement: 138 blocks, 37 of 38 writers, max repeats 8  [56s]
+  built gib_resample_2                   class GIB   tokens  38000 types   6484 pages  150  gib_realline_pooled writer blocks with replacement: 150 blocks, 36 of 38 writers, max repeats 9  [56s]
+  built gib_resample_3                   class GIB   tokens  38000 types   6710 pages  155  gib_realline_pooled writer blocks with replacement: 155 blocks, 37 of 38 writers, max repeats 9  [56s]
+  built gib_resample_4                   class GIB   tokens  38000 types   6686 pages  144  gib_realline_pooled writer blocks with replacement: 144 blocks, 37 of 38 writers, max repeats 9  [56s]
+  built gib_resample_5                   class GIB   tokens  38000 types   6597 pages  146  gib_realline_pooled writer blocks with replacement: 146 blocks, 37 of 38 writers, max repeats 11  [56s]
+  built gib_resample_6                   class GIB   tokens  38000 types   6664 pages  149  gib_realline_pooled writer blocks with replacement: 149 blocks, 37 of 38 writers, max repeats 9  [56s]
+  two-layer model ZL3b: target types 7531 at 38000 tokens; G lam 1.9398 -> 7555 types; L lam 1.9398 -> 7515 types
+  built gen_G2layer_ZL3b_s1              class GEN   tokens  38000 types   8108 pages  244  s36 G_2layer, ZL3b, seed 1 (corpus member; twin pair 1)  [100s]
+  built ciph_L2layer_ZL3b_s1             class CIPH  tokens  38000 types   8127 pages  244  s36 L_2layer, ZL3b, seed 1 (corpus member; twin pair 1)  [100s]
+  built twin_G2layer_ZL3b_s2             class TWIN_G tokens  38000 types   8127 pages  244  s36 G_2layer, ZL3b, seed 2 (twin panel only)  [102s]
+  built twin_L2layer_ZL3b_s2             class TWIN_L tokens  38000 types   7951 pages  244  s36 L_2layer, ZL3b, seed 2 (twin panel only)  [102s]
+  built twin_G2layer_ZL3b_s3             class TWIN_G tokens  38000 types   8060 pages  244  s36 G_2layer, ZL3b, seed 3 (twin panel only)  [104s]
+  built twin_L2layer_ZL3b_s3             class TWIN_L tokens  38000 types   8044 pages  244  s36 L_2layer, ZL3b, seed 3 (twin panel only)  [104s]
+  built twin_G2layer_ZL3b_s4             class TWIN_G tokens  38000 types   8064 pages  244  s36 G_2layer, ZL3b, seed 4 (twin panel only)  [106s]
+  built twin_L2layer_ZL3b_s4             class TWIN_L tokens  38000 types   7958 pages  244  s36 L_2layer, ZL3b, seed 4 (twin panel only)  [106s]
+  two-layer model RF1b: target types 7976 at 38000 tokens; G lam 2.4672 -> 8006 types; L lam 2.3406 -> 7985 types
+  built twin_G2layer_RF1b_s1             class TWIN_G tokens  38000 types   8596 pages  248  s36 G_2layer, RF1b, seed 1 (twin panel only)  [147s]
+  built twin_L2layer_RF1b_s1             class TWIN_L tokens  38000 types   8452 pages  248  s36 L_2layer, RF1b, seed 1 (twin panel only)  [147s]
+  built twin_G2layer_RF1b_s2             class TWIN_G tokens  38000 types   8529 pages  248  s36 G_2layer, RF1b, seed 2 (twin panel only)  [150s]
+  built twin_L2layer_RF1b_s2             class TWIN_L tokens  38000 types   8449 pages  248  s36 L_2layer, RF1b, seed 2 (twin panel only)  [150s]
+  built twin_G2layer_RF1b_s3             class TWIN_G tokens  38000 types   8649 pages  248  s36 G_2layer, RF1b, seed 3 (twin panel only)  [152s]
+  built twin_L2layer_RF1b_s3             class TWIN_L tokens  38000 types   8713 pages  248  s36 L_2layer, RF1b, seed 3 (twin panel only)  [152s]
+  two-layer model IT2a: target types 7721 at 38000 tokens; G lam 2.2562 -> 7673 types; L lam 2.2352 -> 7689 types
+  built twin_G2layer_IT2a_s1             class TWIN_G tokens  38000 types   8186 pages  249  s36 G_2layer, IT2a, seed 1 (twin panel only)  [194s]
+  built twin_L2layer_IT2a_s1             class TWIN_L tokens  38000 types   8234 pages  249  s36 L_2layer, IT2a, seed 1 (twin panel only)  [194s]
+  built twin_G2layer_IT2a_s2             class TWIN_G tokens  38000 types   8237 pages  249  s36 G_2layer, IT2a, seed 2 (twin panel only)  [196s]
+  built twin_L2layer_IT2a_s2             class TWIN_L tokens  38000 types   8215 pages  249  s36 L_2layer, IT2a, seed 2 (twin panel only)  [196s]
+  built twin_G2layer_IT2a_s3             class TWIN_G tokens  38000 types   8325 pages  249  s36 G_2layer, IT2a, seed 3 (twin panel only)  [197s]
+  built twin_L2layer_IT2a_s3             class TWIN_L tokens  38000 types   8235 pages  249  s36 L_2layer, IT2a, seed 3 (twin panel only)  [197s]
+labels: ./runs/s49/labels.json sha256=c7ee6ee63a24b7902bbc44af9236b422a1f1a418e1c94584deb560c2a659300f (48 texts: LANG 6, CIPH 6, CODE 6, GEN 6, GIB 6, TWIN_G 9, TWIN_L 9)
+phase 1 elapsed 197s
+
+=== PHASE 2: features (26 per text) ===
+  lang_latin_cremma                A5_moran=+0.0119 A6_charwin=-0.1252 A7_f1=+0.0461 A14_core_e=+0.0597 line_init_=+0.0193  types_25k=8626  [60s]
+  lang_italian_dante               A5_moran=-0.1448 A6_charwin=-0.5328 A7_f1=+0.2155 A14_core_e=-0.0644 line_init_=+0.0329  types_25k=5248  [33s]
+  lang_mhg_nibelungenlied          A5_moran=-0.1072 A6_charwin=-0.5601 A7_f1=+0.2843 A14_core_e=+0.3244 line_init_=+0.0871  types_25k=3478  [31s]
+  lang_occitan_croisade            A5_moran=-0.1418 A6_charwin=-0.5640 A7_f1=+0.2458 A14_core_e=-0.0354 line_init_=+0.0789  types_25k=4685  [33s]
+  lang_oldfrench_roland            A5_moran=-0.1374 A6_charwin=-0.8219 A7_f1=+0.3110 A14_core_e=+0.0104 line_init_=+0.0199  types_25k=3975  [23s]
+  lang_mhg_parzival                A5_moran=-0.0533 A6_charwin=-0.6591 A7_f1=+0.2271 A14_core_e=+0.1347 line_init_=+0.0738  types_25k=4121  [36s]
+  ciph_s10_latin_cremma            A5_moran=-0.0173 A6_charwin=+0.0789 A7_f1=+0.0289 A14_core_e=+0.1055 line_init_=+0.1268  types_25k=13748  [50s]
+  ciph_s10_italian_dante           A5_moran=-0.1148 A6_charwin=-0.0406 A7_f1=+0.0499 A14_core_e=+0.0369 line_init_=+0.1219  types_25k=12834  [50s]
+  ciph_s10_mhg_nibelungenlied      A5_moran=-0.0669 A6_charwin=-0.1289 A7_f1=+0.0209 A14_core_e=+0.0974 line_init_=+0.0757  types_25k=12474  [50s]
+  ciph_s10_occitan_croisade        A5_moran=-0.1302 A6_charwin=-0.0328 A7_f1=+0.0438 A14_core_e=-0.0067 line_init_=+0.1036  types_25k=12023  [49s]
+  ciph_s10_oldfrench_roland        A5_moran=-0.1068 A6_charwin=-0.2297 A7_f1=+0.0654 A14_core_e=+0.0435 line_init_=+0.0996  types_25k=12912  [53s]
+  code_k4_latin_cremma             A5_moran=+0.0520 A6_charwin=-0.7535 A7_f1=+0.0214 A14_core_e=+0.0048 line_init_=+0.1211  types_25k=4282  [37s]
+  code_k4_italian_dante            A5_moran=-0.0083 A6_charwin=-0.4843 A7_f1=+0.0697 A14_core_e=-0.0009 line_init_=+0.1230  types_25k=3934  [32s]
+  code_k4_mhg_nibelungenlied       A5_moran=+0.0185 A6_charwin=-0.4253 A7_f1=+0.0600 A14_core_e=+0.0144 line_init_=+0.1266  types_25k=3608  [32s]
+  code_k4_occitan_croisade         A5_moran=+0.0025 A6_charwin=-0.4353 A7_f1=+0.0874 A14_core_e=-0.0200 line_init_=+0.1272  types_25k=3772  [32s]
+  code_k4_oldfrench_roland         A5_moran=+0.0070 A6_charwin=-0.5397 A7_f1=+0.0953 A14_core_e=-0.0052 line_init_=+0.1197  types_25k=3959  [32s]
+  code_k4_mhg_parzival             A5_moran=+0.0118 A6_charwin=-0.4062 A7_f1=+0.0568 A14_core_e=-0.0082 line_init_=+0.1202  types_25k=3790  [34s]
+  gen_s28_ZL3b_s1                  A5_moran=+0.0561 A6_charwin=-0.0318 A7_f1=+0.0350 A14_core_e=+0.0730 line_init_=+0.1022  types_25k=5081  [41s]
+  gen_c2_section                   A5_moran=+0.0059 A6_charwin=-0.0118 A7_f1=+0.0015 A14_core_e=-0.0205 line_init_=+0.0379  types_25k=1720  [31s]
+  gen_timm_schinner                A5_moran=+0.0076 A6_charwin=-0.0192 A7_f1=+0.0235 A14_core_e=+0.0132 line_init_=+0.0544  types_25k=4125  [37s]
+  gen_schwartz_reuse               A5_moran=+0.1504 A6_charwin=-0.0368 A7_f1=+0.0056 A14_core_e=+0.0461 line_init_=+0.0220  types_25k=4654  [35s]
+  gen_rugg_grille                  A5_moran=+0.0196 A6_charwin=-0.7934 A7_f1=+1.0062 A14_core_e=+0.5253 line_init_=-0.0004  types_25k=4079  [34s]
+  gib_resample_1                   A5_moran=+0.1023 A6_charwin=-3.6564 A7_f1=+0.7436 A14_core_e=+1.0669 line_init_=+0.0085  types_25k=6241  [42s]
+  gib_resample_2                   A5_moran=+0.1073 A6_charwin=-4.2175 A7_f1=+0.6499 A14_core_e=+1.0935 line_init_=+0.0058  types_25k=6484  [31s]
+  gib_resample_3                   A5_moran=+0.0802 A6_charwin=-4.2958 A7_f1=+0.5016 A14_core_e=+1.0266 line_init_=+0.0057  types_25k=6520  [31s]
+  gib_resample_4                   A5_moran=+0.0808 A6_charwin=-3.9229 A7_f1=+0.5100 A14_core_e=+1.0660 line_init_=+0.0043  types_25k=6686  [30s]
+  gib_resample_5                   A5_moran=+0.0810 A6_charwin=-4.1483 A7_f1=+0.6510 A14_core_e=+1.0078 line_init_=+0.0040  types_25k=6260  [40s]
+  gib_resample_6                   A5_moran=+0.1095 A6_charwin=-4.5449 A7_f1=+0.5677 A14_core_e=+1.0953 line_init_=+0.0093  types_25k=6153  [39s]
+  gen_G2layer_ZL3b_s1              A5_moran=+0.1654 A6_charwin=+0.0749 A7_f1=+0.0479 A14_core_e=+0.1197 line_init_=+0.0497  types_25k=5439  [38s]
+  ciph_L2layer_ZL3b_s1             A5_moran=+0.1661 A6_charwin=+0.0286 A7_f1=+0.0572 A14_core_e=+0.1013 line_init_=+0.0467  types_25k=5470  [37s]
+  twin_G2layer_ZL3b_s2             A5_moran=+0.1534 A6_charwin=+0.0732 A7_f1=+0.0526 A14_core_e=+0.1191 line_init_=+0.0545  types_25k=5492  [38s]
+  twin_L2layer_ZL3b_s2             A5_moran=+0.1668 A6_charwin=+0.0470 A7_f1=+0.0623 A14_core_e=+0.1310 line_init_=+0.0545  types_25k=5381  [37s]
+  twin_G2layer_ZL3b_s3             A5_moran=+0.1519 A6_charwin=+0.0633 A7_f1=+0.0523 A14_core_e=+0.1168 line_init_=+0.0497  types_25k=5472  [41s]
+  twin_L2layer_ZL3b_s3             A5_moran=+0.1692 A6_charwin=+0.0225 A7_f1=+0.0498 A14_core_e=+0.1233 line_init_=+0.0544  types_25k=5429  [41s]
+  twin_G2layer_ZL3b_s4             A5_moran=+0.1680 A6_charwin=+0.0694 A7_f1=+0.0524 A14_core_e=+0.1153 line_init_=+0.0478  types_25k=5324  [40s]
+  twin_L2layer_ZL3b_s4             A5_moran=+0.1589 A6_charwin=+0.0607 A7_f1=+0.0545 A14_core_e=+0.1025 line_init_=+0.0521  types_25k=5278  [39s]
+  twin_G2layer_RF1b_s1             A5_moran=+0.1394 A6_charwin=+0.0723 A7_f1=+0.0649 A14_core_e=+0.1392 line_init_=+0.0506  types_25k=5926  [42s]
+  twin_L2layer_RF1b_s1             A5_moran=+0.1345 A6_charwin=+0.0818 A7_f1=+0.0513 A14_core_e=+0.1083 line_init_=+0.0534  types_25k=5792  [38s]
+  twin_G2layer_RF1b_s2             A5_moran=+0.1404 A6_charwin=+0.1121 A7_f1=+0.0569 A14_core_e=+0.1029 line_init_=+0.0516  types_25k=5764  [40s]
+  twin_L2layer_RF1b_s2             A5_moran=+0.1439 A6_charwin=-0.0024 A7_f1=+0.0598 A14_core_e=+0.1189 line_init_=+0.0518  types_25k=5731  [42s]
+  twin_G2layer_RF1b_s3             A5_moran=+0.1408 A6_charwin=+0.0835 A7_f1=+0.0565 A14_core_e=+0.1123 line_init_=+0.0556  types_25k=5885  [43s]
+  twin_L2layer_RF1b_s3             A5_moran=+0.1366 A6_charwin=+0.0947 A7_f1=+0.0622 A14_core_e=+0.1205 line_init_=+0.0559  types_25k=5910  [42s]
+  twin_G2layer_IT2a_s1             A5_moran=+0.1322 A6_charwin=+0.0948 A7_f1=+0.0653 A14_core_e=+0.0970 line_init_=+0.0518  types_25k=5558  [43s]
+  twin_L2layer_IT2a_s1             A5_moran=+0.1334 A6_charwin=+0.0493 A7_f1=+0.0594 A14_core_e=+0.0882 line_init_=+0.0549  types_25k=5629  [42s]
+  twin_G2layer_IT2a_s2             A5_moran=+0.1381 A6_charwin=+0.0953 A7_f1=+0.0641 A14_core_e=+0.0854 line_init_=+0.0486  types_25k=5595  [39s]
+  twin_L2layer_IT2a_s2             A5_moran=+0.1495 A6_charwin=+0.0494 A7_f1=+0.0630 A14_core_e=+0.0885 line_init_=+0.0550  types_25k=5630  [39s]
+  twin_G2layer_IT2a_s3             A5_moran=+0.1319 A6_charwin=+0.0475 A7_f1=+0.0743 A14_core_e=+0.1045 line_init_=+0.0513  types_25k=5694  [40s]
+  twin_L2layer_IT2a_s3             A5_moran=+0.1464 A6_charwin=+0.0491 A7_f1=+0.0621 A14_core_e=+0.0999 line_init_=+0.0531  types_25k=5640  [40s]
+  Voynich_ZL3b                     A5_moran=+0.1572 A6_charwin=+0.0940 A7_f1=+0.0461 A14_core_e=-0.0315 line_init_=+0.1740  types_25k=5417  [33s]
+  Voynich_RF1b                     A5_moran=+0.1549 A6_charwin=+0.1099 A7_f1=+0.0333 A14_core_e=-0.0424 line_init_=+0.1789  types_25k=5680  [33s]
+  Voynich_IT2a                     A5_moran=+0.1566 A6_charwin=+0.0977 A7_f1=+0.0410 A14_core_e=-0.0354 line_init_=+0.1730  types_25k=5522  [29s]
+feature table: ./runs/s49/features.csv
+checks (not gates): Voynich ZL3b A14 core excess -0.0315 (s34 paragraph text -0.0315); line-initial excess +0.1740 (s32/s44 +0.1740); A5 +0.1572 (+0.1572); A6 +0.0940 (+0.0940); A7 +0.0461 (+0.0461)
+
+class means (raw)          LANG       CIPH       CODE        GEN        GIB   Voynich_ZL3b
+  h2                    +3.1883    +3.1919    +2.1792    +2.1332    +3.9603   +2.1262
+  sd_len                +2.1805    +2.9162    +1.7503    +1.6812    +2.7490   +1.7640
+  jsd_first_fg          +0.0538    +0.0969    +0.1240    +0.0454    +0.0080   +0.1759
+  p_init_enrich         +0.9500   +11.9850    +5.6783   +12.2367    +0.9900   +17.8900
+  m_final_enrich        +0.4817    +6.1000    +3.3300    +5.6500    +0.9133   +16.3100
+  cross_excess_eva      +0.0948    +0.2654    +0.3431    +0.2088    +0.0561   +0.1809
+  redup_pct             +0.0647    +0.9780    +0.2293    +1.0520    +0.5233   +0.8960
+  x_edge_mi_word        +0.1017    +0.2702    +0.3485    +0.2161    +0.0897   +0.1882
+  types_25k          +5022.1667 +11576.8333 +3890.8333 +4183.0000 +6390.6667   +5417.0000
+  x_position_entropy    +2.0112    +2.1185    +1.6959    +1.6458    +2.2406   +1.6607
+  x_ltr_minus_rtl       -0.0002    -0.0012    +0.0021    +0.0008    +0.0001   +0.0049
+  x_moran_I             -0.1094    -0.0417    +0.0088    +0.0595    +0.1162   +0.1407
+  lex_beta              +0.7351    +0.8629    +0.6675    +0.7266    +0.8309   +0.7410
+  lex_rate_late_earl    +0.4958    +0.6644    +0.3383    +0.3935    +0.0518   +0.4639
+  lex_edit1_excess      +0.0440    +0.0123    -0.0030    +0.0664    +0.1333   +0.0965
+  slot_occupancy_pc     +0.0411    +0.0359    +0.0699    +0.0807    +0.0366   +0.0660
+  slot_table_likenes    +0.6474    +0.7537    +0.6662    +0.6557    +0.8792   +0.6475
+  slot_core_crowding    +0.8083    +0.6068    +0.8652    +0.8988    +0.5918   +0.8719
+  info_mi_adjacent      +0.6058    +0.0447    +0.1751    +0.1712    +0.7297   +0.1737
+  info_samecol_minus    +0.0377    +0.0040    +0.0011    +0.0048    +0.1890   +0.0092
+  bake_char3_minus_u    +0.3498    -0.3012    +0.1318    -0.1452    +4.4761   -0.5256
+  A5_moran              -0.0954    -0.0450    +0.0139    +0.0675    +0.0935   +0.1572
+  A6_charwin            -0.5438    -0.0541    -0.5074    -0.1364    -4.1310   +0.0940
+  A7_f1                 +0.2216    +0.0444    +0.0651    +0.1866    +0.6040   +0.0461
+  A14_core_excess       +0.0716    +0.0630    -0.0025    +0.1261    +1.0594   -0.0315
+  line_init_excess      +0.0520    +0.0957    +0.1230    +0.0443    +0.0063   +0.1740
+
+=== PHASE 3: classification (NC = nearest centroid gates; LDA declared second) ===
+T5 five-class LOO, NC: 26/30 correct (reported, not gating: bar >= 15/30; binomial p vs 0.2 = 7.8e-15)
+  true / pred       LANG      CIPH      CODE       GEN       GIB   correct
+  LANG                 5         1         0         0         0   5/6
+  CIPH                 0         5         0         1         0   5/6
+  CODE                 0         0         6         0         0   6/6
+  GEN                  1         0         1         4         0   4/6
+  GIB                  0         0         0         0         6   6/6
+  per-class accuracy: LANG 5/6, CIPH 5/6, CODE 6/6, GEN 4/6, GIB 6/6
+T5 five-class LOO, LDA: 24/30 correct (reported, not gating: bar >= 15/30; binomial p vs 0.2 = 2.8e-12)
+  true / pred       LANG      CIPH      CODE       GEN       GIB   correct
+  LANG                 5         1         0         0         0   5/6
+  CIPH                 0         5         0         1         0   5/6
+  CODE                 0         0         6         0         0   6/6
+  GEN                  2         1         1         2         0   2/6
+  GIB                  0         0         0         0         6   6/6
+  per-class accuracy: LANG 5/6, CIPH 5/6, CODE 6/6, GEN 2/6, GIB 6/6
+  T5 per-text NC: lang_latin_cremma->CIPH; gen_s28_ZL3b_s1->CODE; gen_rugg_grille->LANG; ciph_L2layer_ZL3b_s1->GEN (misclassified only)
+  T5 per-text LDA: lang_latin_cremma->CIPH; gen_s28_ZL3b_s1->CODE; gen_timm_schinner->LANG; gen_rugg_grille->LANG; gen_G2layer_ZL3b_s1->CIPH; ciph_L2layer_ZL3b_s1->GEN (misclassified only)
+
+T2 PRIMARY binary (CIPH+CODE) vs (GEN+GIB), 24 texts LOO, NC: 21/24 correct; binomial p vs 0.5 = 0.00014; Clopper-Pearson 95% lower 0.676
+  true / pred     cipher generator   correct
+  cipher              11         1   11/12
+  generator            2        10   10/12
+  by class: CIPH 5/6, CODE 6/6, GEN 4/6, GIB 6/6; wrong: gen_s28_ZL3b_s1->cipher; gen_rugg_grille->cipher; ciph_L2layer_ZL3b_s1->generator
+T2 PRIMARY binary (CIPH+CODE) vs (GEN+GIB), 24 texts LOO, LDA: 21/24 correct; binomial p vs 0.5 = 0.00014; Clopper-Pearson 95% lower 0.676
+  true / pred     cipher generator   correct
+  cipher              11         1   11/12
+  generator            2        10   10/12
+  by class: CIPH 5/6, CODE 6/6, GEN 4/6, GIB 6/6; wrong: gen_s28_ZL3b_s1->cipher; gen_G2layer_ZL3b_s1->cipher; ciph_L2layer_ZL3b_s1->generator
+
+TW twin task (primary: train = 22 non-two-layer texts of the 24): NC 6/10, LDA 6/10; sign-test p (>=k of 10) NC 0.377, LDA 0.377
+    gen_G2layer_ZL3b_s1      vs ciph_L2layer_ZL3b_s1      NC s(G)=-1.623 s(L)=-1.616 -> correct;  LDA s(G)=-104.305 s(L)=-101.720 -> correct
+    twin_G2layer_ZL3b_s2     vs twin_L2layer_ZL3b_s2      NC s(G)=-1.614 s(L)=-1.360 -> correct;  LDA s(G)=-102.337 s(L)=-92.788 -> correct
+    twin_G2layer_ZL3b_s3     vs twin_L2layer_ZL3b_s3      NC s(G)=-1.619 s(L)=-1.611 -> correct;  LDA s(G)=-100.305 s(L)=-102.567 -> WRONG
+    twin_G2layer_ZL3b_s4     vs twin_L2layer_ZL3b_s4      NC s(G)=-1.633 s(L)=-1.516 -> correct;  LDA s(G)=-103.247 s(L)=-98.263 -> correct
+    twin_G2layer_RF1b_s1     vs twin_L2layer_RF1b_s1      NC s(G)=-1.376 s(L)=-1.403 -> WRONG;  LDA s(G)=-86.892 s(L)=-89.859 -> WRONG
+    twin_G2layer_RF1b_s2     vs twin_L2layer_RF1b_s2      NC s(G)=-1.418 s(L)=-1.438 -> WRONG;  LDA s(G)=-88.183 s(L)=-91.341 -> WRONG
+    twin_G2layer_RF1b_s3     vs twin_L2layer_RF1b_s3      NC s(G)=-1.333 s(L)=-1.423 -> WRONG;  LDA s(G)=-84.955 s(L)=-83.362 -> correct
+    twin_G2layer_IT2a_s1     vs twin_L2layer_IT2a_s1      NC s(G)=-1.358 s(L)=-1.582 -> WRONG;  LDA s(G)=-100.959 s(L)=-97.905 -> correct
+    twin_G2layer_IT2a_s2     vs twin_L2layer_IT2a_s2      NC s(G)=-1.574 s(L)=-1.420 -> correct;  LDA s(G)=-99.997 s(L)=-101.958 -> WRONG
+    twin_G2layer_IT2a_s3     vs twin_L2layer_IT2a_s3      NC s(G)=-1.617 s(L)=-1.537 -> correct;  LDA s(G)=-105.566 s(L)=-98.621 -> correct
+TW twin task (beside: ZL3b s1 two-layer texts kept in training, reported not gating): NC 6/10, LDA 4/10; sign-test p (>=k of 10) NC 0.377, LDA 0.828
+    gen_G2layer_ZL3b_s1      vs ciph_L2layer_ZL3b_s1      NC s(G)=-1.623 s(L)=-1.616 -> correct;  LDA s(G)=-104.305 s(L)=-101.720 -> correct
+    twin_G2layer_ZL3b_s2     vs twin_L2layer_ZL3b_s2      NC s(G)=-1.755 s(L)=-1.418 -> correct;  LDA s(G)=-2.656 s(L)=-3.723 -> WRONG
+    twin_G2layer_ZL3b_s3     vs twin_L2layer_ZL3b_s3      NC s(G)=-1.721 s(L)=-1.784 -> WRONG;  LDA s(G)=-2.736 s(L)=-4.327 -> WRONG
+    twin_G2layer_ZL3b_s4     vs twin_L2layer_ZL3b_s4      NC s(G)=-1.768 s(L)=-1.478 -> correct;  LDA s(G)=-2.768 s(L)=-0.676 -> correct
+    twin_G2layer_RF1b_s1     vs twin_L2layer_RF1b_s1      NC s(G)=-1.556 s(L)=-1.520 -> correct;  LDA s(G)=-2.142 s(L)=-4.800 -> WRONG
+    twin_G2layer_RF1b_s2     vs twin_L2layer_RF1b_s2      NC s(G)=-1.560 s(L)=-1.591 -> WRONG;  LDA s(G)=-3.219 s(L)=-4.290 -> WRONG
+    twin_G2layer_RF1b_s3     vs twin_L2layer_RF1b_s3      NC s(G)=-1.512 s(L)=-1.576 -> WRONG;  LDA s(G)=-3.491 s(L)=-1.160 -> correct
+    twin_G2layer_IT2a_s1     vs twin_L2layer_IT2a_s1      NC s(G)=-1.367 s(L)=-1.655 -> WRONG;  LDA s(G)=+0.103 s(L)=-1.239 -> WRONG
+    twin_G2layer_IT2a_s2     vs twin_L2layer_IT2a_s2      NC s(G)=-1.647 s(L)=-1.424 -> correct;  LDA s(G)=-2.541 s(L)=+0.578 -> correct
+    twin_G2layer_IT2a_s3     vs twin_L2layer_IT2a_s3      NC s(G)=-1.754 s(L)=-1.595 -> correct;  LDA s(G)=-2.065 s(L)=-2.584 -> WRONG
+
+Per-feature univariate AUC, cipher side (CIPH+CODE) vs generator side (GEN+GIB), 24 texts (|AUC-0.5| sorted):
+  jsd_first_fg                   AUC 0.965
+  line_init_excess               AUC 0.965
+  lex_edit1_excess               AUC 0.104
+  x_moran_I                      AUC 0.139
+  A5_moran                       AUC 0.139
+  cross_excess_eva               AUC 0.833
+  x_edge_mi_word                 AUC 0.833
+  A14_core_excess                AUC 0.167
+  info_mi_adjacent               AUC 0.174
+  lex_rate_late_early            AUC 0.806
+  info_samecol_minus_othercol    AUC 0.222
+  p_init_enrich                  AUC 0.715
+  m_final_enrich                 AUC 0.684
+  bake_char3_minus_unigram       AUC 0.340
+  A6_charwin                     AUC 0.653
+  A7_f1                          AUC 0.354
+  redup_pct                      AUC 0.361
+  x_position_entropy             AUC 0.375
+  slot_table_likeness            AUC 0.396
+  h2                             AUC 0.410
+  slot_occupancy_pc              AUC 0.410
+  sd_len                         AUC 0.583
+  slot_core_crowding             AUC 0.431
+  lex_beta                       AUC 0.451
+  types_25k                      AUC 0.514
+  x_ltr_minus_rtl                AUC 0.514
+
+=== Voynich landing (models fitted on all 30 / the 24; z on the training texts only) ===
+median LOO margin (2nd nearest - nearest) of correctly classified texts: T5 3.307; T2 3.805
+Voynich_ZL3b: T5 NC nearest CODE (margin 0.104 vs median 3.307); distances LANG 9.12, CIPH 8.14, CODE 6.11, GEN 6.21, GIB 11.54
+    T5 LDA posterior LANG 0.000, CIPH 0.000, CODE 0.993, GEN 0.007, GIB 0.000; feature bootstrap (B=1000) nearest class shares LANG 0.000, CIPH 0.002, CODE 0.518, GEN 0.480, GIB 0.000
+    T2 NC nearest GEN -> generator (margin 0.018 vs median 3.805); distances CIPH 8.15, CODE 6.16, GEN 6.14, GIB 11.05; LDA posterior cipher 0.997 generator 0.003; bootstrap side shares cipher 0.476 generator 0.524
+    assignment counts (Q2 rule: binary passes AND margin > median margin): NO (binary NC passes; margin 0.018 <= 3.805)
+Voynich_RF1b: T5 NC nearest CODE (margin 0.006 vs median 3.307); distances LANG 8.96, CIPH 7.72, CODE 6.04, GEN 6.04, GIB 11.44
+    T5 LDA posterior LANG 0.000, CIPH 0.000, CODE 0.986, GEN 0.014, GIB 0.000; feature bootstrap (B=1000) nearest class shares LANG 0.000, CIPH 0.005, CODE 0.485, GEN 0.510, GIB 0.000
+    T2 NC nearest GEN -> generator (margin 0.137 vs median 3.805); distances CIPH 7.70, CODE 6.07, GEN 5.93, GIB 10.92; LDA posterior cipher 0.999 generator 0.001; bootstrap side shares cipher 0.429 generator 0.571
+    assignment counts (Q2 rule: binary passes AND margin > median margin): NO (binary NC passes; margin 0.137 <= 3.805)
+Voynich_IT2a: T5 NC nearest GEN (margin 0.059 vs median 3.307); distances LANG 8.99, CIPH 7.93, CODE 6.05, GEN 5.99, GIB 11.41
+    T5 LDA posterior LANG 0.000, CIPH 0.000, CODE 0.967, GEN 0.033, GIB 0.000; feature bootstrap (B=1000) nearest class shares LANG 0.000, CIPH 0.001, CODE 0.455, GEN 0.544, GIB 0.000
+    T2 NC nearest GEN -> generator (margin 0.182 vs median 3.805); distances CIPH 7.91, CODE 6.09, GEN 5.91, GIB 10.90; LDA posterior cipher 0.998 generator 0.002; bootstrap side shares cipher 0.405 generator 0.595
+    assignment counts (Q2 rule: binary passes AND margin > median margin): NO (binary NC passes; margin 0.182 <= 3.805)
+
+=== VERDICTS (Q2 rules, frozen) ===
+PRIMARY binary NC 21/24 -> PASS: board usable for Tier 2
+  LDA beside: 21/24 -> PASS: board usable for Tier 2
+TWIN NC 6/10 -> FAIL: the 7/10-tie problem is structural, and only the non-tied features (A5/A6/A7) may be cited; LDA beside 6/10
+FIVE-CLASS NC 26/30 (>= 15/30, reported not gating); LDA 24/30
+VERDICT|s49|binary_nc=21/24|binary_lda=21/24|twin_nc=6/10|twin_lda=6/10|five_nc=26/30|five_lda=24/30
+
+phase 2+3 elapsed 1954s
+sidecars: ./runs/s49 (48 .meta.json); features.csv, confusion_*.csv, labels.json there
+elapsed 2152s; run ended Sun Oct 18 00:28:11 PDT 2026 (`date`)

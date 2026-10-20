@@ -1,0 +1,35 @@
+# s126_water_sheet prereg stub (sha256sum format, LF). Frozen Mon Oct 19 00:37:38 PDT 2026 (`date`), after the fixture passed and the calibration validation was written, before any quire-M colour is read in s126.
+# Run s126 (D-066 cc-s126, approved by Jon 00:33): s123 rerun with blue recalibrated outside quire M (blue L>=25, C>=4, hue 200-310, components>=200 px; green unchanged).
+# Fixture runs/s126/fixture_20261019_003728.txt: CALL_FIXTURE PASS (sheet 10/10, random 10/10); positive control A p 0.0011 SHEET. Calibration validation runs/s126/validation.txt: blue 6/6, green 6/6 PASS; negatives 0 px.
+# Decision rule: CALL SHEET if exact matching p <= 0.05 and T > 0 on leaf blue share; NOT_MEASURABLE if calibration validation < 4/5 per class or < 4 usable bifolios; CALL_COLOUR_SPLIT = NOT_MEASURABLE whenever CALL is, else the s123 0.2/0.8 rule. Quire-M blue crops (runs/s126/validation_M.txt) are descriptive only.
+# Disclosure: the calibrator saw quire-M overviews in s123. Verify: grep -v "^#" STUB | tr -d CR | sha256sum -c -
+0494506097356c8605651863c1ca1b01b6badfe583442b2ef969a38b52ecc390 *tools/s126_water_sheet.py
+a80b88b2d7eaaf70a158721bd5785c1582c3c4d289ea7a9499d263fd2da3bfb0 *tools/s126_colour.py
+f657b546b7bc4304d2d3a941c7533316add8b30e22fad8d100fefc4691f5132c *tools/s126_calib.py
+92545ae611daf09c03ae84fd10ec7a04054810901577b703b60054634a2838ca *tools/s126_calib_crops.py
+59a4c565bdf64bfb5bd1ad91cfc9e8fcbf3f9db9f84bac25ac17746c45c260aa *tools/s123_water_sheet.py
+306bc3afba7350565632a58ce6d834cb9588a2e1aa1a26346d19039ec75eb4a4 *tools/s123_colour.py
+35960e34701318187118c6ccf1b5661d37793ea639a64ec74a31008ba8165a4d *runs/s126/inputs_meta.json
+95d5b1b8e4da3a17693a4742511e2824f50152830321484d1fafe1f405f41ca6 *runs/s126/fixture_20261019_003728.txt
+da9b5ce95eb98892406c8bd80ec333b4d52cf22bab2f4ea353c7d07e803f50b7 *runs/s126/validation.txt
+6d4f1b9d29d251ce1c649a7304dcacc2283d266668749b24ab53b95b32c3524f *runs/s126/calib_choice.txt
+6fd33917722a97ef0c93f905885963332645c1a1c81f60f03a165b12007a7fc3 *data/external/yale_scans/pages/134_75r.jpg
+654edf15a65d1a2bb0d7bb4995f8f6fba1625d5eed847c9b6969d1c44e385a23 *data/external/yale_scans/pages/135_75v.jpg
+39d264ab4e6fbb9cad1de45b7efedb6f4b9cb497cb587214926fcbaf6590ec68 *data/external/yale_scans/pages/136_76r.jpg
+affdb2ff70e84ae277d3d30d18b3a468bd4eded393f70514978ad8b0c48df49e *data/external/yale_scans/pages/137_76v.jpg
+9ad387ccea37cd8a25ce9602817eb19af5105c545a238203715efe454e5b24ad *data/external/yale_scans/pages/138_77r.jpg
+e2e2f629753bfe6a9c111d8157ac63cfc4524966cbf367ddaaffece07cffdab2 *data/external/yale_scans/pages/139_77v.jpg
+0054f691ac8fddcac324fba6b385f8ad578cd0f2f9879d5498a325bab0310893 *data/external/yale_scans/pages/140_78r.jpg
+9c574f3a564cc55252633174784745a075689be93a9c7249f381f71434f282e0 *data/external/yale_scans/pages/141_78v.jpg
+a0f51d21267270b55ac69fc947a4a3443e2a32fc263b162c51a27ad9745eb979 *data/external/yale_scans/pages/142_79r.jpg
+81d647bbc752211d5bf671f7791c59fc8dceaa60e20e7f7a075319b44ed879c1 *data/external/yale_scans/pages/143_79v.jpg
+81223a0b0aa0a24fe821cf62a9bdf4ac504f222ab3cfcb89fcedd7946bceada0 *data/external/yale_scans/pages/144_80r.jpg
+29c94fba8ec872eb71faab93fc4a02e09cd4ef31d1b9001bd44f011d141cfb0b *data/external/yale_scans/pages/145_80v.jpg
+e5e83f606eb9c3089051035f53ea694bcb1dadb5a93ee0064019c903ec6802fe *data/external/yale_scans/pages/146_81r.jpg
+bb1a2316e7fc2966f5761f591d79339c75dcfbc6c2c9ab2b88a37e800266d4bf *data/external/yale_scans/pages/147_81v.jpg
+269cb42307824ab82764f80009429e58d98c649371d8efe10d2a1f54132a21ef *data/external/yale_scans/pages/148_82r.jpg
+4c86853e2d6e62690ec0106dcc3812c95f009022b06e7edfd347386728003142 *data/external/yale_scans/pages/149_82v.jpg
+dc353557586906cbe4210f503cc57af58599a3948517fb45b1d222760be96729 *data/external/yale_scans/pages/150_83r.jpg
+dc4610b14efc89e3eded3b887b28b95f8c98a07adb4bed6d83a10e37daf0c7e9 *data/external/yale_scans/pages/151_83v.jpg
+7e8fa7c29b6c6ab462ad5359bdabfcd60505622700f6e5cb18478d20cbd79fbe *data/external/yale_scans/pages/152_84r.jpg
+e47d19f00b8c50c3216c4e48106c0b229c61091b403f52bb084bf89fa9fe5f6f *data/external/yale_scans/pages/153_84v.jpg

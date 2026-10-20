@@ -1,0 +1,4 @@
+S76 prereg frozen: Sun Oct 18 02:51:50 PDT 2026 (`date`)
+stub: s76_segmenter_independence.prereg.sha256 sha256=f445900bf225110f29b8cc32faccd43af5eef1aa238ecc9b921e00fe8b95ef17
+script sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+fixture: runs/s76/fixture.txt (all required checks PASS)

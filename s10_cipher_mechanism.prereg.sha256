@@ -1,0 +1,3 @@
+# s10 prereg: sha256 of the s10 script (cipher mechanism; the plan predictions-table rows, DELTA page-bootstrap rule and verdict rule are verbatim in its docstring; scoring library s27_k4_bound.py, hash below); frozen Sat Oct 17 21:58:31 PDT 2026 before the run
+e8c0b14119c9cb6780449daf0f0492161d9267a064df8d879c191e1d654c6830 *s10_cipher_mechanism.py
+98203915f0729f8dfacb26ddc7b8d25e2bded1cf06e915883ecf59299151ba7e *s27_k4_bound.py

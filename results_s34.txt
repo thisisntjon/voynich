@@ -1,0 +1,264 @@
+S34: superimposed-streams check (Phase 3; sibling of s24): two interleaved streams, M = pitch classes, W = word classes
+run started Sat Oct 17 22:17:38 PDT 2026 (`date`)
+s34_superimposed_streams.py sha256=4c27fd6103837a8accf2126b8625ae71031be260433df55609b0566a8456a199  prereg stub_match=True
+cap: python -I, one CPU process, no GPU, no paid calls, no new data; expected < 300 s; HARD STOP 900 s (watchdog + in-loop checks); planted corpus held in memory only
+loader: scoreboard/run_v2.py load_meta by path (sha256 7dfdc9f75de5980a...)
+search: exhaustive 2-partitions of the present classes (2^C - 2); h2 on first 25000 residual tokens; M-stream MI line-shuffle null 200 draws on the best partition; seed 20261017
+
+=== Glyph classes (declared; metrics_new.SlotSegmenter is data-driven and has no class list; b3_slot_claims.py GALLOWS = "tkpf" read as text) ===
+   0 GALLOWS       k t p f
+   1 BENCHGALLOWS  ckh cth cph cfh
+   2 BENCH         ch sh
+   3 E             e+ (run = one glyph)
+   4 OA            o a
+   5 I             i+ (run = one glyph)
+   6 FINAL         n r l m g s
+   7 D             d
+   8 Y             y
+   9 Q             q
+  10 PITCH         planted alpha beta gamma delta epsilon (planted corpus only)
+  -- OTHER: every other character; never a slot class, always in W
+  parser regex: ckh|cth|cph|cfh|ch|sh|e+|i+|[ktpf]|[oa]|[nrlmgs]|d|y|q|[αβγδε]|.
+
+language h2 rows: s17_mhg_nibelungenlied=3.0228, s17_italian_dante=3.1042, s17_oldfrench_roland=3.1375, s17_occitan_croisade=3.1630, s18_cremma_all=3.5825
+language h2 range = [3.0228, 3.5825]
+language rows at 25k tokens (types_25k / hapax_25k / h2 recomputed): mhg_nibelungenlied 3478 / 0.074 / 3.0228, italian_dante 5249 / 0.133 / 3.1042, oldfrench_roland 3975 / 0.088 / 3.1375, occitan_croisade 4685 / 0.113 / 3.1630, cremma_all 8626 / 0.248 / 3.5825
+P1 conditions (Amendment 1): h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax_25k <= 0.248; selector: argmax S = I_self - I_cross among P1-ok partitions
+
+cremma_all unplanted reference: 57278 tokens, h2 3.5825, types_25k 8626, hapax 0.248
+ZL3b unstripped reference: 34857 tokens, h2 2.1262, types_25k 5417, hapax 0.147
+RF1b unstripped reference: 34618 tokens, h2 2.1351, types_25k 5680, hapax 0.156
+IT2a unstripped reference: 34411 tokens, h2 2.1283, types_25k 5522, hapax 0.150
+
+=== P3 positive control: planted corpus search (PITCH must be exactly M of the selected partition) ===
+--- planted_cremma: 57278 tokens, 6451 lines, 310415 glyphs, OTHER char share 15.28 %; classes present C=10 [GALLOWS, BENCH, E, OA, I, FINAL, D, Y, Q, PITCH]; partitions 1022 (= 2^C - 2, no restriction)  POSITIVE CONTROL: cremma_all real lines + 83598 planted pitch glyphs (K=5, Markov contour stay 0.5/step 0.2+0.2/jump 0.1)
+    class glyph shares: GALLOWS 9.5%, BENCH 0.0%, E 7.1%, OA 10.1%, I 9.0%, FINAL 18.2%, D 2.7%, Y 0.1%, Q 1.1%, PITCH 26.9%
+    partitions meeting P1 conditions (h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax <= 0.248): 345 of 1022; ordering: P1-ok first, then argmax S = I_self - I_cross, then fewer M classes, then class order
+    rank    ok        S  I_self I_cross      h2  types  hapax res_tok dropped M_alph M_glyphs  M classes
+       1  True  +0.6249  0.6797  0.0548  3.1425   3553  0.084   51979    5299     26   198087  GALLOWS+BENCH+E+OA+I+Y+Q+PITCH
+       2  True  +0.6244  0.6789  0.0545  3.1455   3564  0.084   51982    5296     24   197963  GALLOWS+E+OA+I+Y+Q+PITCH
+       3  True  +0.6215  0.6772  0.0557  3.1492   3578  0.085   51991    5287     25   197846  GALLOWS+BENCH+E+OA+I+Q+PITCH
+       4  True  +0.6210  0.6764  0.0554  3.1522   3589  0.085   51994    5284     23   197722  GALLOWS+E+OA+I+Q+PITCH
+       5  True  +0.6207  0.6730  0.0524  3.1857   3698  0.088   52479    4799     25   194585  GALLOWS+BENCH+E+OA+I+Y+PITCH
+       6  True  +0.6202  0.6722  0.0521  3.1886   3709  0.088   52482    4796     23   194461  GALLOWS+E+OA+I+Y+PITCH
+       7  True  +0.6173  0.6706  0.0533  3.1922   3723  0.088   52491    4787     24   194344  GALLOWS+BENCH+E+OA+I+PITCH
+       8  True  +0.6168  0.6698  0.0530  3.1952   3734  0.089   52494    4784     22   194220  GALLOWS+E+OA+I+PITCH
+       9  True  +0.5683  0.6244  0.0561  3.2667   4885  0.122   52318    4960     23   177058  BENCH+E+OA+I+D+Y+Q+PITCH
+      10  True  +0.5680  0.6237  0.0557  3.2693   4895  0.122   52319    4959     21   176934  E+OA+I+D+Y+Q+PITCH
+    SELECTED partition M = {GALLOWS+BENCH+E+OA+I+Y+Q+PITCH} (meets P1 conditions; constrained argmax S): S +0.6249 = I_self 0.6797 - I_cross 0.0548 bits
+    P1 planted_cremma: h2 3.1425 (to range edges +0.1197 / +0.4400); types_25k 3553 (+75 vs lo 3478, +5073 vs hi 8626); hapax 0.084 (-0.164 vs 0.248); h2_check |fast - s24| = 4.84e-14 -> PASS
+    P2 planted_cremma: M alphabet 26, M glyphs 198087, I_self 0.6797 bits vs line-shuffle null (200 draws) 99th pct 0.0143, max 0.0144, median 0.0134; excess over 99th pct +0.6654; MC p 0.005; S +0.6249 (> 0) -> PASS
+
+P3: selected partition M = {GALLOWS+BENCH+E+OA+I+Y+Q+PITCH} (NOT exactly PITCH); S +0.6249 (I_self 0.6797, I_cross 0.0548); residual h2 3.1425 vs cremma_all 3.5825 (|d| 0.4400 vs tol 0.05); P2 on it PASS (reference only) -> FAIL
+P3 PITCH-only partition: rank 25 of 1022 under S (P1-ok first); meets P1 conditions: True; S +0.5328 = I_self 0.5333 - I_cross 0.0004; h2 3.5825 (|d| vs cremma_all 0.0000), types_25k 8626, hapax 0.248, M alphabet 5, M glyphs 83598; planted pitch glyphs = 83598
+    25  True  +0.5328  0.5333  0.0004  3.5825   8626  0.248   57278       0      5    83598  PITCH
+
+=== Voynich: P1 residual-is-language and P2 stream-is-melody ===
+--- ZL3b: 34857 tokens, 4130 lines, 146448 glyphs, OTHER char share 0.22 %; classes present C=10 [GALLOWS, BENCHGALLOWS, BENCH, E, OA, I, FINAL, D, Y, Q]; partitions 1022 (= 2^C - 2, no restriction)  Voynich
+    class glyph shares: GALLOWS 10.9%, BENCHGALLOWS 1.4%, BENCH 9.8%, E 9.2%, OA 24.0%, I 4.5%, FINAL 17.2%, D 8.1%, Y 11.0%, Q 3.6%
+    partitions meeting P1 conditions (h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax <= 0.248): 0 of 1022; ordering: P1-ok first, then argmax S = I_self - I_cross, then fewer M classes, then class order
+    rank    ok        S  I_self I_cross      h2  types  hapax res_tok dropped M_alph M_glyphs  M classes
+       1 False  +1.4304  1.4373  0.0069  0.6404     34  0.005    2280   32577     25   144063  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+       2 False  +1.3633  1.3774  0.0141  0.2448     28  0.001   11747   23110     28   134213  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+       3 False  +1.3602  1.3713  0.0111  0.2477     19  0.001    5663   29194     28   140732  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       4 False  +1.3351  1.3549  0.0198  0.5869     63  0.002   13362   21495     24   132202  GALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+       5 False  +1.3280  1.3366  0.0086  0.2637     33  0.001   15352   19505     28   129968  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       6 False  +1.3273  1.3447  0.0174  0.6776     47  0.002    7467   27390     24   138721  GALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       7 False  +1.3230  1.3413  0.0183  0.4417     43  0.001   14142   20715     27   131683  GALLOWS+BENCHGALLOWS+E+OA+I+FINAL+D+Y+Q
+       8 False  +1.3047  1.3184  0.0137  0.5728     69  0.002   15888   18969     24   127957  GALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       9 False  +1.2954  1.3175  0.0222  0.6906     88  0.002   15163   19694     23   129672  GALLOWS+E+OA+I+FINAL+D+Y+Q
+      10 False  +1.2882  1.3078  0.0196  0.6001     40  0.001   13224   21633     25   132639  GALLOWS+BENCHGALLOWS+BENCH+OA+I+FINAL+D+Y+Q
+    SELECTED partition M = {GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q} (does NOT meet P1 conditions; unconstrained fallback argmax S): S +1.4304 = I_self 1.4373 - I_cross 0.0069 bits
+    P1 ZL3b: h2 0.6404 (to range edges -2.3824 / +2.9421); types_25k 34 (-3444 vs lo 3478, +8592 vs hi 8626); hapax 0.005 (-0.244 vs 0.248); h2_check |fast - s24| = 1.33e-15 -> FAIL
+    P2 ZL3b: M alphabet 25, M glyphs 144063, I_self 1.4373 bits vs line-shuffle null (200 draws) 99th pct 0.0105, max 0.0107, median 0.0095; excess over 99th pct +1.4268; MC p 0.005; S +1.4304 (> 0) -> PASS
+
+--- RF1b: 34618 tokens, 4130 lines, 147071 glyphs, OTHER char share 0.17 %; classes present C=10 [GALLOWS, BENCHGALLOWS, BENCH, E, OA, I, FINAL, D, Y, Q]; partitions 1022 (= 2^C - 2, no restriction)  Voynich
+    class glyph shares: GALLOWS 10.9%, BENCHGALLOWS 1.4%, BENCH 9.8%, E 9.2%, OA 24.0%, I 4.5%, FINAL 17.2%, D 8.1%, Y 11.0%, Q 3.6%
+    partitions meeting P1 conditions (h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax <= 0.248): 0 of 1022; ordering: P1-ok first, then argmax S = I_self - I_cross, then fewer M classes, then class order
+    rank    ok        S  I_self I_cross      h2  types  hapax res_tok dropped M_alph M_glyphs  M classes
+       1 False  +1.4206  1.4276  0.0071  0.6192     34  0.006    2305   32313     25   144650  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+       2 False  +1.3579  1.3715  0.0135  0.2315     23  0.001   11705   22913     28   134874  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+       3 False  +1.3508  1.3620  0.0112  0.2155     16  0.001    5621   28997     28   141417  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       4 False  +1.3290  1.3484  0.0194  0.5896     64  0.002   13380   21238     24   132751  GALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+       5 False  +1.3204  1.3289  0.0085  0.2625     27  0.001   15269   19349     28   130628  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       6 False  +1.3167  1.3342  0.0175  0.6680     48  0.002    7511   27107     24   139294  GALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       7 False  +1.3140  1.3322  0.0182  0.4395     39  0.001   14089   20529     27   132315  GALLOWS+BENCHGALLOWS+E+OA+I+FINAL+D+Y+Q
+       8 False  +1.2965  1.3102  0.0137  0.5822     72  0.002   15825   18793     24   128505  GALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       9 False  +1.2846  1.3070  0.0223  0.6970     91  0.002   15164   19454     23   130192  GALLOWS+E+OA+I+FINAL+D+Y+Q
+      10 False  +1.2801  1.2992  0.0191  0.5870     32  0.001   13256   21362     25   133233  GALLOWS+BENCHGALLOWS+BENCH+OA+I+FINAL+D+Y+Q
+    SELECTED partition M = {GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q} (does NOT meet P1 conditions; unconstrained fallback argmax S): S +1.4206 = I_self 1.4276 - I_cross 0.0071 bits
+    P1 RF1b: h2 0.6192 (to range edges -2.4036 / +2.9633); types_25k 34 (-3444 vs lo 3478, +8592 vs hi 8626); hapax 0.006 (-0.242 vs 0.248); h2_check |fast - s24| = 4.44e-16 -> FAIL
+    P2 RF1b: M alphabet 25, M glyphs 144650, I_self 1.4276 bits vs line-shuffle null (200 draws) 99th pct 0.0105, max 0.0106, median 0.0094; excess over 99th pct +1.4171; MC p 0.005; S +1.4206 (> 0) -> PASS
+
+--- IT2a: 34411 tokens, 4117 lines, 146758 glyphs, OTHER char share 0.18 %; classes present C=10 [GALLOWS, BENCHGALLOWS, BENCH, E, OA, I, FINAL, D, Y, Q]; partitions 1022 (= 2^C - 2, no restriction)  Voynich
+    class glyph shares: GALLOWS 10.9%, BENCHGALLOWS 1.4%, BENCH 9.8%, E 9.2%, OA 24.1%, I 4.5%, FINAL 17.2%, D 8.1%, Y 11.0%, Q 3.6%
+    partitions meeting P1 conditions (h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax <= 0.248): 0 of 1022; ordering: P1-ok first, then argmax S = I_self - I_cross, then fewer M classes, then class order
+    rank    ok        S  I_self I_cross      h2  types  hapax res_tok dropped M_alph M_glyphs  M classes
+       1 False  +1.4211  1.4276  0.0065  0.5988     27  0.005    2282   32129     25   144380  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+       2 False  +1.3537  1.3675  0.0139  0.2216     16  0.000   11742   22669     28   134551  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+       3 False  +1.3506  1.3616  0.0109  0.2069     11  0.000    5626   28785     28   141095  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       4 False  +1.3258  1.3455  0.0197  0.5750     54  0.001   13394   21017     24   132489  GALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+       5 False  +1.3190  1.3276  0.0086  0.2507     21  0.001   15253   19158     28   130361  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       6 False  +1.3180  1.3355  0.0175  0.6579     39  0.002    7477   26934     24   139033  GALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       7 False  +1.3147  1.3326  0.0179  0.4294     30  0.001   14123   20288     27   132041  GALLOWS+BENCHGALLOWS+E+OA+I+FINAL+D+Y+Q
+       8 False  +1.2956  1.3094  0.0138  0.5680     58  0.002   15812   18599     24   128299  GALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       9 False  +1.2869  1.3088  0.0220  0.6835     75  0.002   15188   19223     23   129979  GALLOWS+E+OA+I+FINAL+D+Y+Q
+      10 False  +1.2800  1.2994  0.0194  0.5840     29  0.001   13208   21203     25   132992  GALLOWS+BENCHGALLOWS+BENCH+OA+I+FINAL+D+Y+Q
+    SELECTED partition M = {GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q} (does NOT meet P1 conditions; unconstrained fallback argmax S): S +1.4211 = I_self 1.4276 - I_cross 0.0065 bits
+    P1 IT2a: h2 0.5988 (to range edges -2.4240 / +2.9837); types_25k 27 (-3451 vs lo 3478, +8599 vs hi 8626); hapax 0.005 (-0.244 vs 0.248); h2_check |fast - s24| = 1.33e-15 -> FAIL
+    P2 IT2a: M alphabet 25, M glyphs 144380, I_self 1.4276 bits vs line-shuffle null (200 draws) 99th pct 0.0105, max 0.0106, median 0.0095; excess over 99th pct +1.4171; MC p 0.005; S +1.4211 (> 0) -> PASS
+
+=== Negative controls: same search, same rules ===
+--- gib_realline_pooled: 10023 tokens, 1617 lines, 49089 glyphs, OTHER char share 16.46 %; classes present C=10 [GALLOWS, BENCHGALLOWS, BENCH, E, OA, I, FINAL, D, Y, Q]; partitions 1022 (= 2^C - 2, no restriction)  negative control: human GIBBERISH, writers' own lines
+    class glyph shares: GALLOWS 14.9%, BENCHGALLOWS 0.0%, BENCH 0.9%, E 6.9%, OA 17.7%, I 7.0%, FINAL 31.2%, D 2.5%, Y 1.1%, Q 1.1%
+    partitions meeting P1 conditions (h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax <= 0.248): 0 of 1022; ordering: P1-ok first, then argmax S = I_self - I_cross, then fewer M classes, then class order
+    rank    ok        S  I_self I_cross      h2  types  hapax res_tok dropped M_alph M_glyphs  M classes
+       1 False  +0.1678  0.1873  0.0195  2.2788    417  0.043    5491    4532     24    40893  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+       2 False  +0.1645  0.1837  0.0191  2.3957    501  0.053    5723    4300     25    40337  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       3 False  +0.1641  0.1833  0.0192  2.3967    503  0.053    5724    4299     23    40335  GALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       4 False  +0.1626  0.1840  0.0214  2.3986    504  0.053    5669    4354     25    40370  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       5 False  +0.1622  0.1836  0.0215  2.3997    506  0.053    5670    4353     23    40368  GALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       6 False  +0.1587  0.1800  0.0213  2.5079    599  0.063    5895    4128     24    39812  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D
+       7 False  +0.1583  0.1796  0.0213  2.5088    601  0.064    5896    4127     22    39810  GALLOWS+BENCH+E+OA+I+FINAL+D
+       8 False  +0.1553  0.1767  0.0214  2.3254    487  0.050    5746    4277     24    40434  GALLOWS+BENCHGALLOWS+E+OA+I+FINAL+D+Y+Q
+       9 False  +0.1549  0.1763  0.0215  2.3264    489  0.050    5747    4276     22    40432  GALLOWS+E+OA+I+FINAL+D+Y+Q
+      10 False  +0.1523  0.1742  0.0219  2.4342    536  0.053    6070    3953     25    39655  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+    SELECTED partition M = {GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q} (does NOT meet P1 conditions; unconstrained fallback argmax S): S +0.1678 = I_self 0.1873 - I_cross 0.0195 bits
+    P1 gib_realline_pooled: h2 2.2788 (to range edges -0.7440 / +1.3037); types_25k 417 (-3061 vs lo 3478, +8209 vs hi 8626); hapax 0.043 (-0.205 vs 0.248); h2_check |fast - s24| = 4.00e-15 -> FAIL
+    P2 gib_realline_pooled: M alphabet 24, M glyphs 40893, I_self 0.1873 bits vs line-shuffle null (200 draws) 99th pct 0.0157, max 0.0161, median 0.0135; excess over 99th pct +0.1716; MC p 0.005; S +0.1678 (> 0) -> PASS
+
+--- c2_best: 34857 tokens, 4130 lines, 128101 glyphs, OTHER char share 0.02 %; classes present C=10 [GALLOWS, BENCHGALLOWS, BENCH, E, OA, I, FINAL, D, Y, Q]; partitions 1022 (= 2^C - 2, no restriction)  negative control: c2 section generator
+    class glyph shares: GALLOWS 9.6%, BENCHGALLOWS 1.1%, BENCH 9.1%, E 8.6%, OA 24.1%, I 5.7%, FINAL 17.7%, D 9.0%, Y 11.0%, Q 4.1%
+    partitions meeting P1 conditions (h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax <= 0.248): 0 of 1022; ordering: P1-ok first, then argmax S = I_self - I_cross, then fewer M classes, then class order
+    rank    ok        S  I_self I_cross      h2  types  hapax res_tok dropped M_alph M_glyphs  M classes
+       1 False  +1.6390  1.6425  0.0035  0.4039     12  0.002    1419   33438     23   126666  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+       2 False  +1.5970  1.6139  0.0168  0.0526      7  0.000   11503   23354     26   116496  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+       3 False  +1.5742  1.5959  0.0217  0.3546     19  0.000   12770   22087     22   115096  GALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+       4 False  +1.5636  1.5782  0.0146  0.0336      7  0.001    5267   29590     26   122832  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       5 False  +1.5350  1.5559  0.0209  0.4658     17  0.001    6616   28241     22   121432  GALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       6 False  +1.5289  1.5331  0.0042  0.0973      9  0.000   13764   21093     26   113969  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       7 False  +1.5156  1.5222  0.0066  0.3797     22  0.000   14070   20787     22   112569  GALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       8 False  +1.5080  1.5341  0.0262  0.3280     14  0.000   11560   23297     25   116466  GALLOWS+BENCHGALLOWS+E+OA+I+FINAL+D+Y+Q
+       9 False  +1.4859  1.5156  0.0296  0.5841     31  0.001   12240   22617     21   115066  GALLOWS+E+OA+I+FINAL+D+Y+Q
+      10 False  +1.4562  1.5250  0.0688  0.6191     11  0.000   15251   19606     25   111262  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+Y
+    SELECTED partition M = {GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q} (does NOT meet P1 conditions; unconstrained fallback argmax S): S +1.6390 = I_self 1.6425 - I_cross 0.0035 bits
+    P1 c2_best: h2 0.4039 (to range edges -2.6189 / +3.1786); types_25k 12 (-3466 vs lo 3478, +8614 vs hi 8626); hapax 0.002 (-0.246 vs 0.248); h2_check |fast - s24| = 0.00e+00 -> FAIL
+    P2 c2_best: M alphabet 23, M glyphs 126666, I_self 1.6425 bits vs line-shuffle null (200 draws) 99th pct 0.0098, max 0.0100, median 0.0088; excess over 99th pct +1.6327; MC p 0.005; S +1.6390 (> 0) -> PASS
+
+--- schwartz_reuse: 34857 tokens, 4130 lines, 144042 glyphs, OTHER char share 0.54 %; classes present C=10 [GALLOWS, BENCHGALLOWS, BENCH, E, OA, I, FINAL, D, Y, Q]; partitions 1022 (= 2^C - 2, no restriction)  negative control: Schwartz reuse generator
+    class glyph shares: GALLOWS 10.7%, BENCHGALLOWS 1.1%, BENCH 9.6%, E 8.8%, OA 23.9%, I 4.6%, FINAL 17.6%, D 8.3%, Y 11.2%, Q 3.6%
+    partitions meeting P1 conditions (h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax <= 0.248): 0 of 1022; ordering: P1-ok first, then argmax S = I_self - I_cross, then fewer M classes, then class order
+    rank    ok        S  I_self I_cross      h2  types  hapax res_tok dropped M_alph M_glyphs  M classes
+       1 False  +1.3635  1.3673  0.0038  0.8177     35  0.005    2364   32493     24   141562  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+       2 False  +1.2973  1.3065  0.0092  0.4746     28  0.001    5911   28946     27   137962  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       3 False  +1.2936  1.3086  0.0151  0.3865     42  0.001   12170   22687     27   131185  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+       4 False  +1.2776  1.2824  0.0049  0.3745     43  0.001   15568   19289     27   127027  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       5 False  +1.2738  1.2861  0.0123  0.7821     51  0.002    7327   27530     23   136405  GALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       6 False  +1.2723  1.2908  0.0185  0.6493     69  0.002   13435   21422     23   129628  GALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+       7 False  +1.2626  1.2703  0.0077  0.6185     73  0.001   15987   18870     23   125470  GALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       8 False  +1.2482  1.2657  0.0174  0.5331     68  0.002   13926   20931     26   129265  GALLOWS+BENCHGALLOWS+E+OA+I+FINAL+D+Y+Q
+       9 False  +1.2293  1.2490  0.0197  0.7299    103  0.003   14771   20086     22   127708  GALLOWS+E+OA+I+FINAL+D+Y+Q
+      10 False  +1.2055  1.2220  0.0165  0.7162     66  0.002   12744   22113     24   130457  GALLOWS+BENCHGALLOWS+BENCH+OA+I+FINAL+D+Y+Q
+    SELECTED partition M = {GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q} (does NOT meet P1 conditions; unconstrained fallback argmax S): S +1.3635 = I_self 1.3673 - I_cross 0.0038 bits
+    P1 schwartz_reuse: h2 0.8177 (to range edges -2.2051 / +2.7648); types_25k 35 (-3443 vs lo 3478, +8591 vs hi 8626); hapax 0.005 (-0.243 vs 0.248); h2_check |fast - s24| = 1.78e-15 -> FAIL
+    P2 schwartz_reuse: M alphabet 24, M glyphs 141562, I_self 1.3673 bits vs line-shuffle null (200 draws) 99th pct 0.0067, max 0.0070, median 0.0060; excess over 99th pct +1.3607; MC p 0.005; S +1.3635 (> 0) -> PASS
+
+--- timm_schinner: 34857 tokens, 4130 lines, 138007 glyphs, OTHER char share 0.03 %; classes present C=10 [GALLOWS, BENCHGALLOWS, BENCH, E, OA, I, FINAL, D, Y, Q]; partitions 1022 (= 2^C - 2, no restriction)  negative control: Timm-Schinner self-citation
+    class glyph shares: GALLOWS 4.4%, BENCHGALLOWS 0.5%, BENCH 12.1%, E 4.9%, OA 29.6%, I 5.3%, FINAL 25.8%, D 8.7%, Y 7.7%, Q 0.9%
+    partitions meeting P1 conditions (h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax <= 0.248): 0 of 1022; ordering: P1-ok first, then argmax S = I_self - I_cross, then fewer M classes, then class order
+    rank    ok        S  I_self I_cross      h2  types  hapax res_tok dropped M_alph M_glyphs  M classes
+       1 False  +1.2580  1.2595  0.0015  0.4897     12  0.005     657   34200     23   137327  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+       2 False  +1.2439  1.2465  0.0026  0.9166     21  0.000    5983   28874     23   131897  BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+       3 False  +1.2394  1.2427  0.0033  1.2479     41  0.001    6564   28293     19   131268  BENCH+E+OA+I+FINAL+D+Y+Q
+       4 False  +1.2377  1.2422  0.0045  0.1199      3  0.001    1306   33551     26   136700  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       5 False  +1.2316  1.2372  0.0056  0.6160     16  0.002    1899   32958     22   136071  GALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       6 False  +1.2140  1.2240  0.0100  1.1872     39  0.002    6882   27975     22   130641  BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       7 False  +1.2096  1.2203  0.0108  1.4469     62  0.003    7449   27408     18   130012  BENCH+E+OA+I+FINAL+D+Y
+       8 False  +1.1949  1.1964  0.0014  0.2180      7  0.000    9950   24907     26   127271  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       9 False  +1.1887  1.1915  0.0028  0.4196     30  0.001   10344   24513     22   126642  GALLOWS+BENCH+E+OA+I+FINAL+D+Q
+      10 False  +1.1829  1.1936  0.0107  0.1319      7  0.000   11567   23290     26   126017  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+    SELECTED partition M = {GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q} (does NOT meet P1 conditions; unconstrained fallback argmax S): S +1.2580 = I_self 1.2595 - I_cross 0.0015 bits
+    P1 timm_schinner: h2 0.4897 (to range edges -2.5331 / +3.0928); types_25k 12 (-3466 vs lo 3478, +8614 vs hi 8626); hapax 0.005 (-0.244 vs 0.248); h2_check |fast - s24| = 0.00e+00 -> FAIL
+    P2 timm_schinner: M alphabet 23, M glyphs 137327, I_self 1.2595 bits vs line-shuffle null (200 draws) 99th pct 0.0129, max 0.0130, median 0.0120; excess over 99th pct +1.2466; MC p 0.005; S +1.2580 (> 0) -> PASS
+
+--- flow_gen_layer: 34857 tokens, 4130 lines, 127693 glyphs, OTHER char share 0.02 %; classes present C=10 [GALLOWS, BENCHGALLOWS, BENCH, E, OA, I, FINAL, D, Y, Q]; partitions 1022 (= 2^C - 2, no restriction)  negative control: n2 flow generator layer
+    class glyph shares: GALLOWS 7.7%, BENCHGALLOWS 0.9%, BENCH 8.4%, E 7.6%, OA 23.2%, I 7.3%, FINAL 18.3%, D 12.9%, Y 10.7%, Q 3.1%
+    partitions meeting P1 conditions (h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax <= 0.248): 0 of 1022; ordering: P1-ok first, then argmax S = I_self - I_cross, then fewer M classes, then class order
+    rank    ok        S  I_self I_cross      h2  types  hapax res_tok dropped M_alph M_glyphs  M classes
+       1 False  +1.7582  1.7614  0.0032  0.4184     10  0.002    1134   33723     23   126558  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+       2 False  +1.6791  1.6958  0.0167  0.0385      8  0.000    3926   30931     26   123761  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       3 False  +1.6774  1.7073  0.0299  0.0510      9  0.000   16271   18586     26   111254  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+       4 False  +1.6545  1.6919  0.0374  0.2630     20  0.000   17283   17574     22   110146  GALLOWS+BENCH+E+OA+I+FINAL+Y+Q
+       5 False  +1.6541  1.6755  0.0214  0.4813     16  0.001    5015   29842     22   122653  GALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       6 False  +1.6359  1.6420  0.0061  0.0962      9  0.000   13290   21567     26   114064  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       7 False  +1.6306  1.6536  0.0230  0.3391     12  0.000   10668   24189     25   116923  GALLOWS+BENCHGALLOWS+E+OA+I+FINAL+D+Y+Q
+       8 False  +1.6230  1.6314  0.0084  0.3448     20  0.000   13483   21374     22   112956  GALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       9 False  +1.6099  1.6360  0.0262  0.5733     26  0.000   11167   23690     21   115815  GALLOWS+E+OA+I+FINAL+D+Y+Q
+      10 False  +1.5871  1.6093  0.0222  0.4683     11  0.000    9641   25216     24   117991  GALLOWS+BENCHGALLOWS+BENCH+OA+I+FINAL+D+Y+Q
+    SELECTED partition M = {GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q} (does NOT meet P1 conditions; unconstrained fallback argmax S): S +1.7582 = I_self 1.7614 - I_cross 0.0032 bits
+    P1 flow_gen_layer: h2 0.4184 (to range edges -2.6044 / +3.1641); types_25k 10 (-3468 vs lo 3478, +8616 vs hi 8626); hapax 0.002 (-0.247 vs 0.248); h2_check |fast - s24| = 4.44e-16 -> FAIL
+    P2 flow_gen_layer: M alphabet 23, M glyphs 126558, I_self 1.7614 bits vs line-shuffle null (200 draws) 99th pct 0.0105, max 0.0111, median 0.0096; excess over 99th pct +1.7509; MC p 0.005; S +1.7582 (> 0) -> PASS
+
+--- mhg_nibelungenlied: 78700 tokens, 9300 lines, 327526 glyphs, OTHER char share 13.71 %; classes present C=10 [GALLOWS, BENCHGALLOWS, BENCH, E, OA, I, FINAL, D, Y, Q]; partitions 1022 (= 2^C - 2, no restriction)  negative control: MHG verse, native lines
+    class glyph shares: GALLOWS 7.8%, BENCHGALLOWS 0.0%, BENCH 2.6%, E 17.4%, OA 9.7%, I 9.3%, FINAL 33.2%, D 6.0%, Y 0.0%, Q 0.0%
+    partitions meeting P1 conditions (h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax <= 0.248): 3 of 1022; ordering: P1-ok first, then argmax S = I_self - I_cross, then fewer M classes, then class order
+    rank    ok        S  I_self I_cross      h2  types  hapax res_tok dropped M_alph M_glyphs  M classes
+       1  True     +nan     nan  0.0000  3.0228   3478  0.074   78700       0      1        2  BENCHGALLOWS
+       2  True     +nan     nan  0.0000  3.0228   3478  0.074   78700       0      1        5  Q
+       3  True     +nan     nan  0.8631  3.0228   3478  0.074   78700       0      2        7  BENCHGALLOWS+Q
+       4 False  +0.4010  0.4370  0.0360  1.7296    181  0.002   38523   40177     21   281443  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+       5 False  +0.4010  0.4370  0.0360  1.7296    181  0.002   38523   40177     21   281440  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       6 False  +0.4009  0.4370  0.0360  1.7296    181  0.002   38523   40177     20   281438  GALLOWS+BENCH+E+OA+I+FINAL+D+Y
+       7 False  +0.3991  0.4353  0.0362  1.7384    188  0.003   38583   40117     21   281316  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       8 False  +0.3991  0.4353  0.0362  1.7384    188  0.003   38583   40117     20   281314  GALLOWS+BENCH+E+OA+I+FINAL+D+Q
+       9 False  +0.3990  0.4352  0.0362  1.7384    188  0.003   38583   40117     20   281311  GALLOWS+BENCHGALLOWS+BENCH+E+OA+I+FINAL+D
+      10 False  +0.3990  0.4352  0.0362  1.7384    188  0.003   38583   40117     19   281309  GALLOWS+BENCH+E+OA+I+FINAL+D
+    SELECTED partition M = {BENCHGALLOWS} (meets P1 conditions; constrained argmax S): S +nan = I_self nan - I_cross 0.0000 bits
+    P1 mhg_nibelungenlied: h2 3.0228 (to range edges +0.0000 / +0.5597); types_25k 3478 (+0 vs lo 3478, +5148 vs hi 8626); hapax 0.074 (-0.174 vs 0.248); h2_check |fast - s24| = 8.88e-16 -> PASS
+    P2 mhg_nibelungenlied: M alphabet 1, M glyphs 2, I_self nan bits vs line-shuffle null (200 draws) 99th pct nan, max nan, median nan; excess over 99th pct +nan; MC p 0.005; S +nan (NOT > 0) -> FAIL
+
+--- italian_dante: 101607 tokens, 14235 lines, 396261 glyphs, OTHER char share 10.55 %; classes present C=9 [GALLOWS, BENCH, E, OA, I, FINAL, D, Y, Q]; partitions 510 (= 2^C - 2, no restriction)  negative control: Italian verse, native lines
+    class glyph shares: GALLOWS 9.9%, BENCH 1.6%, E 12.3%, OA 20.7%, I 10.4%, FINAL 29.8%, D 3.8%, Y 0.0%, Q 0.8%
+    partitions meeting P1 conditions (h2 in [3.0228, 3.5825], types_25k in [3478, 8626], hapax <= 0.248): 113 of 510; ordering: P1-ok first, then argmax S = I_self - I_cross, then fewer M classes, then class order
+    rank    ok        S  I_self I_cross      h2  types  hapax res_tok dropped M_alph M_glyphs  M classes
+       1  True  +0.0000  0.0000  0.0000  3.1260   5284  0.134  100576    1031      1     6523  BENCH
+       2  True  +0.0000  0.0000  0.0000  3.0841   5217  0.133  101064     543      1    15010  D
+       3  True  +0.0000  0.0000  0.0000  3.1141   5249  0.133  101607       0      1     3353  Q
+       4  True  -0.0005  0.0000  0.0005  3.0767   5008  0.127  101041     566      2    41358  I
+       5  True  -0.0007  0.0000  0.0007  3.0767   5008  0.127  101041     566      3    41359  I+Y
+       6  True  -0.0010  0.0000  0.0010  3.0841   5217  0.133  101064     543      2    15011  D+Y
+       7  True  -0.0011  0.0000  0.0011  3.1573   5201  0.131   96751    4856      2    48567  E
+       8  True  -0.0012  0.0000  0.0012  3.1573   5201  0.131   96751    4856      3    48568  E+Y
+       9  True  -0.0022  0.0000  0.0022  3.1260   5284  0.134  100576    1031      2     6524  BENCH+Y
+      10  True  -0.0039  0.0000  0.0039  3.1141   5249  0.133  101607       0      2     3354  Y+Q
+    SELECTED partition M = {BENCH} (meets P1 conditions; constrained argmax S): S +0.0000 = I_self 0.0000 - I_cross 0.0000 bits
+    P1 italian_dante: h2 3.1260 (to range edges +0.1032 / +0.4565); types_25k 5284 (+1806 vs lo 3478, +3342 vs hi 8626); hapax 0.134 (-0.114 vs 0.248); h2_check |fast - s24| = 2.22e-15 -> PASS
+    P2 italian_dante: M alphabet 1, M glyphs 6523, I_self 0.0000 bits vs line-shuffle null (200 draws) 99th pct 0.0000, max 0.0000, median 0.0000; excess over 99th pct +0.0000; MC p 1.000; S +0.0000 (NOT > 0) -> FAIL
+
+=== SUMMARY (margins) ===
+corpus                  C parts  n_ok        S  I_self I_cross      h2  types  hapax  null99  excess  P1    P2    P1+P2  selected M
+planted_cremma         10  1022   345  +0.6249  0.6797  0.0548  3.1425   3553  0.084  0.0143 +0.6654  PASS  PASS  True   GALLOWS+BENCH+E+OA+I+Y+Q+PITCH
+ZL3b                   10  1022     0  +1.4304  1.4373  0.0069  0.6404     34  0.005  0.0105 +1.4268  FAIL  PASS  False  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+RF1b                   10  1022     0  +1.4206  1.4276  0.0071  0.6192     34  0.006  0.0105 +1.4171  FAIL  PASS  False  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+IT2a                   10  1022     0  +1.4211  1.4276  0.0065  0.5988     27  0.005  0.0105 +1.4171  FAIL  PASS  False  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+gib_realline_pooled    10  1022     0  +0.1678  0.1873  0.0195  2.2788    417  0.043  0.0157 +0.1716  FAIL  PASS  False  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+c2_best                10  1022     0  +1.6390  1.6425  0.0035  0.4039     12  0.002  0.0098 +1.6327  FAIL  PASS  False  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+schwartz_reuse         10  1022     0  +1.3635  1.3673  0.0038  0.8177     35  0.005  0.0067 +1.3607  FAIL  PASS  False  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+timm_schinner          10  1022     0  +1.2580  1.2595  0.0015  0.4897     12  0.005  0.0129 +1.2466  FAIL  PASS  False  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+flow_gen_layer         10  1022     0  +1.7582  1.7614  0.0032  0.4184     10  0.002  0.0105 +1.7509  FAIL  PASS  False  GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q
+mhg_nibelungenlied     10  1022     3     +nan     nan  0.0000  3.0228   3478  0.074     nan    +nan  PASS  FAIL  False  BENCHGALLOWS
+italian_dante           9   510   113  +0.0000  0.0000  0.0000  3.1260   5284  0.134  0.0000 +0.0000  PASS  FAIL  False  BENCH
+planted PITCH-only     10  1022     -  +0.5328  0.5333  0.0004  3.5825   8626  0.248       -       -  ok    -     -      PITCH (rank 25 under S)
+
+=== VERDICT (pre-registered rule: SUPPORTED only if P3 PASS and P1+P2 PASS on ZL3b, RF1b, IT2a and no negative control satisfies P1+P2; NOT SUPPORTED otherwise; TEST INVALID if P3 FAILs) ===
+P3 positive control: FAIL
+ZL3b: P1 FAIL  P2 PASS  best M = {GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q}
+RF1b: P1 FAIL  P2 PASS  best M = {GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q}
+IT2a: P1 FAIL  P2 PASS  best M = {GALLOWS+BENCH+E+OA+I+FINAL+D+Y+Q}
+negative controls satisfying P1+P2: none
+VERDICT: TEST INVALID (P3 positive control failed)
+failed predictions: P3, P1
+
+elapsed 234.2 s (expected < 300 s; hard cap 900 s; within cap: True)
+done-when: results_s34.txt exists with the class list, the P3 planted-search block, the P1/P2 blocks on all three transliterations, the seven negative-control blocks, the summary table and the verdict line -> met
+run ended Sat Oct 17 22:21:32 PDT 2026 (`date`)

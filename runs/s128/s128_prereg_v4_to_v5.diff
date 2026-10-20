@@ -1,0 +1,176 @@
+--- runs/s128/s128_name_slot_prediction_v4.prereg
++++ runs/s128/s128_name_slot_prediction_v5.prereg
+@@ -1,22 +1,31 @@
+-# s128 v4 PRE-REGISTRATION: page-confined "name slot" at the start of Voynich herbal pages
+-# Replaces v3 (runs/s128/s128_name_slot_prediction_v3.prereg, sha256 f355d9b6...4ea5, REJECTED by the Independent Verifier,
++# s128 v5 PRE-REGISTRATION: page-confined "name slot" at the start of Voynich herbal pages
++# Replaces v4 (runs/s128/s128_name_slot_prediction_v4.prereg, sha256 5d9d6bea...01b6, stub c309cfcc...8f87; frozen, unchanged),
++# blind grade runs/s128/blind_review/BLIND-GRADE-s128-v4.md sha256 ace44256...e9c (0 FAIL, 13 FIX: 8 must-fix, 4 should-fix).
++# v4 replaced v3 (runs/s128/s128_name_slot_prediction_v3.prereg, sha256 f355d9b6...4ea5, REJECTED by the Independent Verifier,
+ # runs/s128/iv/IV-REVIEW-S128-PREREG-V3-20261019.md sha256 3a3b6cf2...06a6, must-fixes 1-5).
+ # Earlier: v2 (8c96091a...2e6f, IV review 4231aece...ee36; N2 ruling: option B decides), v1 (c0329038...e385, IV review dab20d8b...a6a2).
+-# v1, v2, v3, their stubs, the v3 count script runs/s128/s128_layout_counts.py and the DRAFT are left unchanged.
++# v1, v2, v3, v4, their stubs, the v3 count script runs/s128/s128_layout_counts.py and the DRAFT are left unchanged.
+ # Frozen BEFORE any Voynich text was read for s128 and before any s128 scorer exists. Freeze time: stub header.
+ # Lead rulings (Voynich Analyst, 2026-10-19 ~01:26 PDT): separate line under run id s128; N2 decisive with swaps restricted to same
+ # hand and Currier language; N1 reported beside it, non-decisive; held under D-072; Gisclon 2026 logged as c-589, queued after s128.
+ # Calibration (known-answer herbals, no Voynich): runs/s128/results_s128_herbal_profile.txt ("calibration file", cited by line)
+ # and runs/s128/results_s128_f0n2_calibration.txt (N2 known-answer check on Egerton). Every input is hashed in the stub.
+-# Stub: runs/s128/s128_name_slot_prediction_v4.prereg.sha256. Every uncommented entry is a path relative to the project root (no
+-# absolute paths; the IV reviews are listed by their copies in runs/s128/iv/). Check, from the project root (Git Bash):
+-#   grep -v "^#" runs/s128/s128_name_slot_prediction_v4.prereg.sha256 | tr -d '\r' | sha256sum -c -
++# Stub: runs/s128/s128_name_slot_prediction_v5.prereg.sha256. Every uncommented entry is a path relative to the project root (no
++# absolute paths; the IV reviews are listed by their copies in runs/s128/iv/). Every uncommented line has the form
++# '<sha256><two spaces><path>' (sha256sum text mode), the only form the two pre-read scripts read (the v4 stub's '<sha256> *<path>'
++# lines are not read by them); lines appended at (c) and (d0) use the same form. Check, from the project root (Git Bash):
++#   grep -v "^#" runs/s128/s128_name_slot_prediction_v5.prereg.sha256 | tr -d '\r' | sha256sum -c -
+ 
+ STATUS AND ORDER
+ - Frozen design. NOT run. No scorer implemented. Two pre-read scripts are written, fixture-tested and hashed in the stub now:
+   runs/s128/s128_layout_counts_v2.py (count list, step d0) and runs/s128/s128_f0n2_real.py (deciding N2 check, step d1). Neither has
+-  touched a Voynich file; their tests used only hand-written or made-up inputs in runs/s128/s128_v4_fixture/. No other code may run at
++  touched a Voynich file; their tests used only hand-written or made-up inputs in runs/s128/s128_v4_fixture/ and
++  runs/s128/s128_v5_fixture/ (v5 stub-form check). No other code may run at
+   d0 or d1. The v3 count script runs/s128/s128_layout_counts.py is superseded and must not be used.
++- No v1, v2, v3 or v4 code has ever been run on a Voynich file: not the v3 count script runs/s128/s128_layout_counts.py (run only on
++  the synthetic inputs in runs/s128/s128_layout_counts_fixture/), not the two v4 scripts above (made-up inputs only, as
++  just said), and not the calibration scripts runs/s128/s128_herbal_profile.py and runs/s128/s128_f0n2_calib.py
++  (run only on the known-answer herbals). No s128 output made from a Voynich file exists.
+ - HOLD 1 (D-072): no s128 Voynich read until Egerton transfer or Fontana known-answer recovery holds up with the Independent Verifier.
+ - HOLD 2: nothing in s128 counts until the Independent Verifier accepts this prereg.
+ - Order once both holds clear:
+@@ -24,20 +33,24 @@
+   (b) run gate F0 and the report-only F0-N2 N60/N90 arms on calibration texts only (no Voynich file opened);
+   (c) append the scorer's sha256 to the stub as a new uncommented line;
+   (d0) from the project root run exactly
+-         python -I runs/s128/s128_layout_counts_v2.py runs/s128/s128_name_slot_prediction_v4.prereg.sha256 data/ZL3b-n.txt runs/s128/s128_layout_counts_ZL3b.tsv
++         python -I runs/s128/s128_layout_counts_v2.py runs/s128/s128_name_slot_prediction_v5.prereg.sha256 data/ZL3b-n.txt runs/s128/s128_layout_counts_ZL3b.tsv
+        Before it opens data/ZL3b-n.txt for parsing (and before importing vparse) it checks the sha256 of itself, vparse.py and
+        data/ZL3b-n.txt against this stub; a missing entry or any mismatch exits 2 and writes nothing (s128 stops). It is the only
+        code that touches a Voynich file before step (d). Exit 3 (no <%> mark on any included herbal line) stops the primary
+        (STOP_NO_PARA_MARKS). On exit 0, append the count list's sha256 to the stub as a new uncommented line;
+   (d1) from the project root run exactly
+-         python -I runs/s128/s128_f0n2_real.py runs/s128/s128_name_slot_prediction_v4.prereg.sha256 runs/s128/s128_layout_counts_ZL3b.tsv runs/s128/results_s128_f0n2_real_<YYYYMMDDTHHMMSS>.txt
++         python -I runs/s128/s128_f0n2_real.py runs/s128/s128_name_slot_prediction_v5.prereg.sha256 runs/s128/s128_layout_counts_ZL3b.tsv runs/s128/results_s128_f0n2_real_<YYYYMMDDTHHMMSS>.txt
+        It checks the sha256 of itself, s128_herbal_profile.py, the Ventura TEI and the count list against this stub first (exit 2 on
+        any mismatch), reads no Voynich file, and prints CALL_F0N2_REAL PASS (exit 0) or FAIL (exit 1). FAIL or exit 2 stops s128
+        before any Voynich text is read;
+   (d) read step: the scorer first rebuilds the count list from data/ZL3b-n.txt with the same rules; if its sha256 differs from the
+       stub entry, stop (COUNT_LIST_MISMATCH). Only then is Voynich text read;
+   (e) gates G1b then G1a; (f) real score; (g) CALL.
+-  Any gate failure in (b), (d0), (d1) or (d) stops s128; a fix needs a new run id.
++  Any gate failure in (b) (gate F0), (d0), (d1) or (d) stops s128. The report-only F0-N2 N60/N90 arms in (b) are not a gate: a miss
++  on them is printed and does not stop s128.
++  FILING (lead rule): whatever s128 ends in, a STOP at any gate or a CALL, it is filed and reported as the s128 result, as printed
++  (runs/s128/results_s128_*.txt). A fix needs a new run id; a new run id never replaces, withdraws or overrides a filed s128 result,
++  and any successor must cite s128 and its filed STOP or CALL.
+ 
+ QUESTION
+ Do Voynich herbal pages carry, as a real Circa Instans-type herbal does, a word type that is confined to one page, recurs on that page,
+@@ -102,8 +115,13 @@
+ - N2 (DECISIVE), 1,000 draws, seed 20261019. Stratum = (quire $Q, sheet ($Q,$B), hand $H, Currier language $L): where a sheet mixes hands
+   or languages, swaps happen only between its pages sharing both. Paragraph-initial tokens are permuted among the paragraph-initial
+   slots of all pages in the stratum. Line-initial tokens are permuted among the line-initial slots of the same page. Other tokens are
+-  permuted among the other slots of the same page. Line lengths and paragraph structure are kept. If more than 25% of herbal pages sit
+-  in single-page strata, those pages only are re-stratified by (quire, hand, language); the count is printed.
++  permuted among the other slots of the same page. Line lengths and paragraph structure are kept.
++  Single-page widening: if the pages that are alone in their ($Q, sheet, $H, $L) stratum are more than 25% of the pages of the s128
++  page set (pages held in place, below, count in that denominator, not in the numerator), those single pages only are re-stratified
++  by (quire, hand, language) among themselves: a widened page joins only other widened pages with the same ($Q, $H, $L) and never
++  merges into an existing multi-page stratum with the same ($Q, $H, $L). A page still alone after widening, or alone when the 25% line
++  is not crossed, is a one-page stratum: its paragraph-initial tokens are permuted only among its own paragraph-initial slots (a page
++  with one paragraph start keeps its start token in place). The scorer prints the number of widened pages and of one-page strata.
+   Pages with no $H or no $L value ('?' from vparse) are left out of the N2 strata: their paragraph-initial tokens are not swapped
+   with any other page (held in place), while their line-initial and other tokens are permuted within the page as above. They stay in
+   S and in N1. The count of such pages is printed.
+@@ -127,9 +145,12 @@
+   on exit 3 is never hashed into the stub or used).
+ 
+ GATES BEFORE ANY VOYNICH TEXT IS READ (F0 and the N60/N90 arms: calibration texts only; F0-N2-REAL: calibration texts + count list)
+-- F0 scorer fixture, seeds 20261021..20261030 (10). On the calibration Egerton set at start_N90 (8-token pseudo-lines, one paragraph per
+-  chapter, reference corpus = all chapters): the scorer reproduces S = 0.266 +/- 0.01 and N1 q99 = 0.134 +/- 0.02 (calibration file
+-  line 9). With tokens shuffled within chapter (one shuffle per seed), S is not above its N1 q99 (200 draws) in >= 9 of 10 seeds.
++- F0 scorer fixture, seeds 20261021..20261030 (10). On the calibration Egerton set at start_N90 (each chapter cut to its first 90
++  tokens: calibration file line 9, made by runs/s128/s128_herbal_profile.py analyse(N=90, window='start'), lines 104-106 and 234-235;
++  8-token pseudo-lines, one paragraph per chapter, reference corpus = all chapters): the scorer reproduces S = 0.266 +/- 0.01 (S does
++  not depend on the seed) and, with 200 N1 draws per seed, N1 q99 = 0.134 +/- 0.02 (calibration file line 9) in >= 9 of the 10 seeds;
++  every seed's N1 q99 is printed.
++  With tokens shuffled within chapter (one shuffle per seed), S is not above its N1 q99 (200 draws) in >= 9 of 10 seeds.
+ - F0-N2 N60/N90 arms (REPORT-ONLY), seeds 20261031..20261045 (15). Per seed: draw 28 random blocks of 4 consecutive
+   Egerton chapters (112 pages, about the herbal page count); pseudo-stratum = the block of 4 (a sheet stand-in, one hand, one language);
+   pages truncated to N = 60 and N = 90 tokens; 8-token pseudo-lines; one paragraph per page (paragraph-initial = token 0, where Egerton
+@@ -140,7 +161,7 @@
+   separate a rarity-only start from a name.)
+   Frozen expected outcome (already observed in runs/s128/results_s128_f0n2_calibration.txt with s128_f0n2_calib.py): NAME 15/15 at
+   N60 and N90 (median S 0.339 / 0.384, N2 q99 0.250 / 0.259); RARITY 1/15 and 0/15 (median S 0.098 / 0.107, N2 q99 0.170 / 0.179).
+-  These N60/N90 arms are REPORT-ONLY in v3 (Verifier N2 ruling); they do not decide.
++  These N60/N90 arms are REPORT-ONLY in v5, this prereg (Verifier N2 ruling); they do not decide, and a miss does not stop s128.
+ 
+ - F0-N2-REAL, the DECIDING known-answer check for N2 (step d1; after the count list exists, before any Voynich text is read).
+   Code: runs/s128/s128_f0n2_real.py only (hash in the stub now, before the count list exists). Inputs: the count list
+@@ -152,8 +173,10 @@
+     same hold-in-place rule for pages with no $H or $L).
+   - rng = random.Random(seed); start = rng.randrange(number of Egerton chapters). Chapters are consumed in edition order from start,
+     wrapping round, each at most once per seed; strata are filled in order of their first page in the count list, so each stratum
+-    gets a block of consecutive chapters.
++    gets a block of consecutive chapters. Within a stratum, pages are filled in count-list order. Pages held in place (no $H or $L)
++    are filled after all strata, in count-list order.
+   - Each chapter is poured into one page: its tokens in order fill line 1 to that line's real token count, then line 2, and so on.
++    Tokens past the page's last slot are dropped (the page keeps exactly its count-list size).
+     Paragraph-start flags and slot classes come from the count list; the chapter's token 0 is therefore the paragraph-initial token
+     of line 1 (where Egerton places the name 86% of the time).
+   - Too short: a chapter with fewer tokens than the page's total is skipped (counted SHORT_SKIP) and the next chapter is used. If more
+@@ -175,19 +198,24 @@
+   replaced by a fresh type unique to that page; with probability 0.535 (Egerton start_N90 share of chapters whose name recurs >= 2,
+   calibration file line 9, column 'recurs>=2') 1-3 (uniform) further copies replace random tokens of the same page outside line 1.
+   PASS = planted S > planted-corpus N2 q99 (200 draws) in >= 10/15 seeds. FAIL -> CALL NOT_POWERED.
++  Full-call power, REPORT-ONLY (changes neither G1b nor the call): per G1b seed the scorer also prints whether planted S >= 0.117 and
++  whether the planted corpus is LOQO_MET (LOQO as below, on the planted pages, 200 draws per qualifying quire, drawn from the same
++  seed's RNG stream after its G1b N2 draws, quires in the LOQO order), and the number of seeds out of 15 with all three of planted
++  S > N2 q99, planted S >= 0.117 and planted LOQO_MET. If that number is < 10/15 it prints G1b_FULL_CALL_LOW beside the call.
+ - G1a planted gate, reported only, seeds 20261201..20261215 (15): as G1b, but the plant replaces a random non-paragraph-initial token of
+-  line 1. A page whose line 1 has only one token gets no G1a plant (left unplanted) and is counted; if such pages are > 10% of herbal
+-  pages, G1a is printed as G1a_REDUCED.
++  line 1. A page whose line 1 has only one token gets no G1a plant (left unplanted) and is counted; if such pages are > 10% of the
++  pages of the s128 page set, G1a is printed as G1a_REDUCED.
+ - Macer-strength versions of G1b and G1a (recurrence probability 0.364, Macer start_N90 'recurs>=2', calibration file line 18),
+   seeds 20261301..20261315 and 20261401..20261415: reported only.
+ - One-token line 1 in G1b: the plant still goes into the paragraph-initial slot (the line's only token); recurrence copies go outside
+   line 1 as above. If a page has no included tokens outside line 1, it receives no recurrence copies; the count is printed.
+ 
+ LEAVE-ONE-QUIRE-OUT (no parameter is fitted; thresholds 2 and 0.9 are fixed from calibration)
+-- Qualifying quire: a herbal quire with >= 4 herbal pages. For each, S_q on its pages (confinement still against the full same-language
++- Qualifying quire: a herbal quire with >= 4 pages of the s128 page set. For each, S_q on its pages (confinement still against the full same-language
+   reference corpus) and N2 restricted to that quire's strata, 200 draws. One RNG stream, seed 20261501, quires processed in ascending
+   $Q order.
+-- LOQO_MET if at least 3 quires qualify and S_q > N2_q q95 in >= ceil(2/3 x qualifying quires).
++- LOQO_MET if at least 3 quires qualify and S_q > N2_q q95 in >= ceil(2/3 x qualifying quires); q95 = sorted draw index
++  ceil(0.95 x draws) - 1 (189 at 200 draws).
+ - LOQO_NOT_MET if at least 3 quires qualify and fewer pass. LOQO_NOT_ASSESSABLE if fewer than 3 quires qualify.
+ 
+ CALL (ZL3b, whole words, pooled herbal). Rules are tested in this order; the first that applies is the call, so every outcome maps to
+@@ -202,8 +230,9 @@
+   null (p 0.01). The floor is set AT Macer's value so a Macer-strength name signal passes; it is not meant to exclude Macer-strength signals.
+ 
+ REPORTED, NOT CALLED
+-- N1 beside N2 (required). Herbal A and B separately. RF1b, IT2a, SlotSegmenter cores, Zattera cores (BH across these 4 x 3 cells,
+-  seeds as for the primary nulls).
++- N1 beside N2 (required). Herbal A and B separately. RF1b, IT2a, SlotSegmenter cores, Zattera cores: Benjamini-Hochberg at FDR 0.05
++  on the N2 p-values across 12 cells = 4 variants (RF1b whole words, IT2a whole words, ZL3b SlotSegmenter cores, ZL3b Zattera cores)
++  x 3 page groups (pooled herbal, Herbal A, Herbal B), report-only, seeds as for the primary nulls.
+ - Descriptive: for hit pages, median own-page count of the line-1 type, share that recur beyond line 1, median share of other
+   same-language herbal pages containing the type (Egerton other-chapter fraction 0.0019 at start_N90, calibration file line 9).
+ - Stolfi first-token uniqueness rate with its N2 value, marked non-diagnostic (calibration CALL_D).
+@@ -212,8 +241,10 @@
+ - NAME_SLOT_PRESENT locates where a plant-name crib should be tried (line 1, page-confined, self-recurring). It reads nothing, does not
+   show the type is a plant name, and does not move the scoreboard until the Independent Verifier accepts it.
+ - RARITY_ONLY: the page-start signal is the known paragraph-initial vocabulary (L-069); page confinement gives "first word = plant name"
+-  no support. ABSENT: herbal pages do not behave like a named-chapter herbal at the page start. MIXED: no claim either way.
+-- No re-run with changed thresholds, units, strata or seeds under s128; any change is a new run id.
++  no support. ABSENT: no page-start name signal at Egerton strength (the strength G1b checks power for); a weaker, Macer-strength
++  signal (recurrence 0.364, power reported only) is not ruled out. MIXED: no claim either way.
++- No re-run with changed thresholds, units, strata or seeds under s128; any change is a new run id, and a new run id never replaces
++  a filed s128 result (FILING, under STATUS AND ORDER).
+ 
+ OUTPUTS
+ - Scorer (reserved): tools/s128_name_slot_score.py. Results: runs/s128/results_s128_name_slot_<YYYYMMDDTHHMMSS>.txt, one file per run,

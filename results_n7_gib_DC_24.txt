@@ -1,0 +1,55 @@
+# PREREG-v2 score: gib_DC_24  family=X  run=2026-10-17 19:40 (system clock)  seed=20261017
+# source: data\controls_gibberish\gib_DC_24.meta.json
+# data\controls_gibberish\gib_DC_24.meta.json; 79 tokens full
+# v1 bands: scoreboard/score.py via path + g0 band checks; extras: scoreboard/metrics_new.py; sample cap 25000 (non-Voynich)
+# pages=1 lines=10 tokens=79 types=64 sections=['gib'] hands=1 langs=['?']
+
+    v1 0.0s
+    extra 0.0s  [ZeroDivisionError: float division by zero]
+    info 0.0s
+    lex 0.0s
+    slot 0.0s
+    bake 0.0s  [KeyError: 'markov3']
+
+# ranges: results_m4_phase1_board.json (run 2026-10-17 16:52); X range absent -> X printed NA
+=== v1 seven bands (frozen; PREREG v1 thresholds) ===
+band                      value           band   ok    L    C    G
+h2                       2.9204      1.98-2.28   --   IN  OUT  OUT
+sd_len                   2.6920      1.41-2.11   --   IN  OUT   IN
+jsd_first_fg             0.2289         >=0.10   ok  OUT  OUT  OUT
+p_init_enrich            0.0000           >=x8   --  OUT   NA   IN
+m_final_enrich           1.1800           >=x8   --   IN   NA   IN
+cross_excess_eva        -0.0666        >=+0.09   --  OUT  OUT  OUT
+redup_pct                0.0000       0.4-1.8%   --   IN   IN  OUT
+v1 joint: FAIL  missed: h2,sd_len,p_init_enrich,m_final_enrich,cross_excess_eva,redup_pct
+
+=== v2 extras (metrics_new) ===
+metric                            value      class    L    C    G  tightLCG ovl
+x_edge_mi_word                      nan   WEIGHTED   NA   NA   NA       .tt  no
+types_25k                       64.0000  WEIGHTED*  OUT  OUT  OUT       ...  no
+x_position_entropy                  nan   WEIGHTED   NA   NA   NA       t.t  no
+x_ltr_minus_rtl                     nan   WEIGHTED   NA   NA   NA       t.t  no
+x_moran_I                           nan   WEIGHTED   NA   NA   NA       .tt yes
+lex_beta                            nan   WEIGHTED   NA   NA   NA       .t. yes
+lex_rate_late_early                 nan   WEIGHTED   NA   NA   NA       tt. yes
+lex_edit1_excess                 0.2031   WEIGHTED  OUT  OUT   IN       ttt yes
+slot_occupancy_pc                0.3441   WEIGHTED  OUT  OUT  OUT       ttt yes
+slot_table_likeness              0.9749   WEIGHTED  OUT   IN  OUT       .tt yes
+slot_core_crowding               0.3065   WEIGHTED  OUT  OUT  OUT       ttt yes
+info_mi_adjacent                    nan   WEIGHTED   NA   NA   NA       .tt yes
+info_samecol_minus_othercol         nan   WEIGHTED   NA   NA   NA       ttt yes
+bake_char3_minus_unigram            nan   WEIGHTED   NA   NA   NA       ... yes
+x_hapax_10k                         nan     REPORT   NA   NA   NA       .t. yes
+info_mi_page                        nan     REPORT   NA   NA   NA       ttt yes
+info_bpe_adjacent                0.0725     REPORT   NA   NA   NA       ...  no
+bake_winner: None  bake bits: nan
+
+=== per-family in/out (weighted metrics = v1 bands + WEIGHTED extras, minus the ranges file's no-weight list) ===
+  L: in= 3 out= 4 na= 3  out: jsd_first_fg, p_init_enrich, cross_excess_eva, types_25k  | tight-outs (2): jsd_first_fg, p_init_enrich
+  C: in= 1 out= 4 na= 5  out: h2, jsd_first_fg, cross_excess_eva, types_25k  | tight-outs (3): h2, jsd_first_fg, cross_excess_eva
+  G: in= 2 out= 5 na= 3  out: h2, jsd_first_fg, cross_excess_eva, redup_pct, types_25k  | tight-outs (3): h2, jsd_first_fg, cross_excess_eva
+  weighted metrics (10): h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_position_entropy, x_ltr_minus_rtl
+  (kill = >=3 weighted outs on tight ranges; favoured = fewest outs by >=2; both need the A/B rule of PREREG-v2 §6)
+
+errors: {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}
+provenance sha256[:16]: {'score.py': '3a7b7c3efea13b88', 'metrics_new.py': 'a59c9c17f8abe4cc', 'run_v2.py': '7dfdc9f75de5980a'}

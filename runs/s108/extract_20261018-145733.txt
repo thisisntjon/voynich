@@ -1,0 +1,137 @@
+S108 EXTRACT (row-selection rule, token counts, legibility sample; no signature statistic)
+date: Sun Oct 18 14:57:33 PDT 2026 (`date`)
+s108 sha256=b9fd9452adfebc89e23209fb1e16d86597b14485697bc4901148492ae1a5f736
+
+=== T1_alkindi_1531: Al-Kindi De rerum gradibus tables (1531, BIU Sante copy), one ruled row per line
+  {'pages': 24, 'alkindi_pages': [141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164], 'bands': 63, 'ruled_rows': 20, 'lines': 20, 'tokens': 150}
+  legibility sample (20 rows, seed 20261109): [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+  [0] n145 y1090-1159 cells 3 hor 3 | [hor] Superparticularis. uq. vu || [hor] IX. q. || [hor] iq* , wq. '
+      tokens (7): superparticularis uq vu ix q iq wq
+  [1] n145 y1159-1231 cells 3 hor 3 | [hor] Superpartiens. ix. xv. || [hor] XXV. iq* V* || [hor] vq.
+      tokens (7): superpartiens ix xv xxv iq v vq
+  [2] n145 y1231-1303 cells 3 hor 3 | [hor] Multiplex fiiperparticularis. nif. x. || [hor] XXV. q. V* || [hor] xt.
+      tokens (8): multiplex fiiperparticularis nif x xxv q v xt
+  [3] n160 y1470-1534 cells 3 hor 3 | [hor] Zuccari || [hor] i)* || [hor] partes duae* pars una* ptesdug* gs primae
+      tokens (9): zuccari i partes duae pars una ptesdug gs primae
+  [4] n160 y1534-1605 cells 3 hor 3 | [hor] Indi || [hor] 5 i* || [hor] pars inedia* pars una* pars Una* p,s media.
+      tokens (11): indi i pars inedia pars una pars una p s media
+  [5] n161 y1881-1951 cells 5 hor 5 | [hor] Mafticis || [hor] 3 h* || [hor] Partes urj. Pars || [hor] I* || [hor] Partes «ip Pars una*
+      tokens (10): mafticis h partes urj pars i partes ip pars una
+  [6] n161 y1951-2016 cells 4 hor 4 | [hor] Alchon || [hor] 3 i* || [hor] partes q, pars || [hor] partes q* pars 5.
+      tokens (8): alchon i partes q pars partes q pars
+  [7] n161 y2016-2085 cells 3 hor 3 | [hor] balaufti3 1. || [hor] pars s. parces q. || [hor] partes q* pars 5*
+      tokens (8): balaufti pars s parces q partes q pars
+  [8] n161 y2085-2154 cells 3 hor 3 | [hor] Harmel || [hor] partes Hq, pars || [hor] partes «q. pars p
+      tokens (8): harmel partes hq pars partes q pars p
+  [9] n161 y2154-2223 cells 4 hor 4 | [hor] Emblici || [hor] pars 5» pars || [hor] V» || [hor] pars i pars 5.
+      tokens (7): emblici pars pars v pars i pars
+  [10] n161 y2223-2360 cells 5 hor 5 | [hor] Nigella? Euforbfj || [hor] 3 h* 3 i. || [hor] partes viip pars partes viq* pars || [hor] i. || [hor] partes viq* pars i* partes viq* pars 5*
+      tokens (18): nigella euforbfj h i partes viip pars partes viq pars i partes viq pars i partes viq pars
+  [11] n161 y2360-2434 cells 4 hor 4 | [hor] Nafturti) || [hor] 3 i* - || [hor] partes viip pars || [hor] partes viq.pars 5.
+      tokens (8): nafturti i partes viip pars partes viq pars
+  [12] n162 y803-878 cells 3 hor 3 | [hor] iVlalticis || [hor] Partes iiri. Pars i* || [hor] Partes, nq.
+      tokens (7): ivlalticis partes iiri pars i partes nq
+  [13] n162 y878-939 cells 4 hor 4 | [hor] Acori || [hor] I. || [hor] partes q. pars C || [hor] partes q.
+      tokens (8): acori i partes q pars c partes q
+  [14] n162 y939-1011 cells 3 hor 3 | [hor] Balaufti« 3 || [hor] pars 5* partes q* || [hor] partes q»
+      tokens (6): balaufti pars partes q partes q
+  [15] n162 y1011-1080 cells 4 hor 4 | [hor] Harmel || [hor] t. || [hor] partes nq. pars || [hor] partes uq.
+      tokens (7): harmel t partes nq pars partes uq
+  [16] n162 y2631-2698 cells 3 hor 3 | [hor] Piperis || [hor] Pondera || [hor] Caliditatis Frigiditatis
+      tokens (4): piperis pondera caliditatis frigiditatis
+  [17] n164 y942-1013 cells 3 hor 3 | [hor] l* || [hor] h. || [hor] nq*
+      tokens (3): l h nq
+  [18] n164 y1154-1224 cells 3 hor 3 | [hor] ij* || [hor] V* || [hor] XI*
+      tokens (3): ij v xi
+  [19] n164 y1224-1291 cells 3 hor 3 | [hor] lij. || [hor] virf* || [hor] xviq.
+      tokens (3): lij virf xviq
+
+=== T2_tacuinum_1531: Tacuinum sanitatis 1531 ruled rows (BIU Sante copy), one ruled row per line
+  {'pages': 148, 'alkindi_pages': None, 'bands': 525, 'ruled_rows': 286, 'lines': 285, 'tokens': 4686}
+  legibility sample (20 rows, seed 20261110): [12, 17, 38, 47, 60, 72, 84, 131, 143, 145, 167, 169, 172, 193, 194, 205, 220, 231, 247, 272]
+  [12] n043 y846-1012 cells 7 hor 4 | [rot0.14] s“S Ifii b-OT ~ || [rot0.00] C j-, b ! 5' || [hor0.71] j^od no eft itipticum. || [hor1.00] Lubricat aegc rtiones. || [hor1.00] Dentibus , 8C ori. || [hor0.81] Cum fyrupo acetofo fimplici. || [rot0.13] , ? ac > l-Pl i a| i i i i 3^1 1 ? * i
+      tokens (15): j od no eft itipticum lubricat aegc rtiones dentibus c ori cum fyrupo acetofo fimplici
+  [17] n045 y350-517 cells 7 hor 5 | [rot0.00] i c ?r || [rot0.11] 3 P?p S" '» 5 3 'P SP “ 2 H 2. aSoS •p « 2. r || [hor0.85] Corafenf,ma gn*. || [hor0.71] Dolori inteItinorum, || [hor0.76] Gomburit fanguincra. || [hor0.83] Cum curulis recentibus. || [hor0.59] Cft 1 h B r C£
+      tokens (15): corafenf ma gn dolori inteitinorum gomburit fanguincra cum curulis recentibus cft h b r c
+  [38] n049 y1526-1586 cells 3 hor 2 | [none] D || [hor0.77] O M V || [hor0.74] S
+      tokens (4): o m v s
+  [47] n053 y154-347 cells 9 hor 4 | [rot0.00] Dc E p || [rot0.16] Herbis^liuc ST 33r c 3 2 'sr c || [hor1.00] OlCTibu$,& t:*. ' Amplae, & ctETin». || [hor0.72] pfODrietauburipfoi Vigilias , & gomorreas fedant. || [hor0.72] um, Coitui,& uifut. || [hor0.62] luuarocnta Cummtlccn tureum 3pi)s. || [rot0.07] radonaWft» 2 C P h* "Z 1 || [rot0.29] iij || [rot0.00] irVi Uli' 1
+      tokens (16): olctibu t amplae ctetin pfodrietauburipfoi vigilias gomorreas fedant um coitui uifut luuarocnta cummtlccn tureum pi s
+  [60] n055 y1026-1195 cells 8 hor 4 | [rot0.17] 0 oi 2. H i 1 f: i P 5» || [rot0.00] 1 3 r 5' || [hor0.90] Recens, dulce. || [hor0.69] Pc(S:ori,tuffi, 8i itomacho. || [hor0.70] Vifccribus debilibus. || [hor1.00] Cum maftice. || [rot0.21] X c 3 0 5 ■0 -H ■a c 1 || [rot0.36] £. S* 3 5*
+      tokens (12): recens dulce pc s ori tuffi i itomacho vifccribus debilibus cum maftice
+  [72] n061 y374-542 cells 9 hor 5 | [rot0.07] T a c/« g || [hor0.67] o || [hor0.85] Praeparata cu pullis colum barum. || [hor0.80] Cholerae, || [hor0.72] Neruis,etme landtoliae. || [hor0.83] Cumuinoue teri,& odorifercH || [rot0.19] frigidior Sang, temperato. || [rot0.16] iil .C w i3 ' i’" || [rot0.35] V
+      tokens (13): o praeparata cu pullis colum barum cholerae neruis etme landtoliae cumuinoue teri odoriferch
+  [84] n063 y1016-1184 cells 9 hor 4 | [rot0.00] 0 c (U J? & C || [rot0.03] i w c o ■ c 2 3 o S’ || [hor0.90] Frixa,ro£un>. da. || [hor0.71] Conualefcen fibus. || [hor0.75] Exercitantibus, || [hor0.83] Cum uino rubeo. || [rot0.15] Z 3 2, S o St S\ || [rot0.00] 3 ts || [rot0.11] > a. a. y
+      tokens (10): frixa ro un da conualefcen fibus exercitantibus cum uino rubeo
+  [131] n075 y1016-1184 cells 6 hor 4 | [rot0.36] 0 o 3. b s ■§ || [rot0.18] iJ ■U i??- || [hor0.82] Corium auis humid3e,feu ladanris animalis. || [hor0.96] Quibus cho lera iluic ad ftomachum. || [hor0.60] Generat opiiationem , 6C malam dig^. ftiOnem, || [hor0.66] Cum aceto, £c fpeciebus, &bonacodura.
+      tokens (24): corium auis humid e feu ladanris animalis quibus cho lera iluic ad ftomachum generat opiiationem c malam dig ftionem cum aceto c fpeciebus bonacodura
+  [143] n079 y386-719 cells 3 hor 3 | [hor0.66] £::£ citris fuiianjs.. || [hor0.69] Extlnguit fer uorem cholerae. || [hor0.80] Cum Gallinis pinguibus.
+      tokens (9): citris fuiianjs extlnguit fer uorem cholerae cum gallinis pinguibus
+  [145] n079 y1051-1393 cells 4 hor 4 | [hor0.71] Exberfaeris r€c<ntibus. || [hor0.80] Infiammad* otuhepads» || [hor0.85] Confiipa- || [hor0.56] Cum chalbe xuccarino.
+      tokens (10): exberfaeris r c ntibus infiammad otuhepads confiipa cum chalbe xuccarino
+  [167] n091 y145-338 cells 9 hor 4 | [none] i' || [rot0.20] De Aquis > 7 5 i §-f 3 “VS || [hor0.63] ptuuiaUbus , Ex fontibus orientalia bus» || [hor0.70] &;Fondumt Hepati calido jSi' digeftioni. || [hor0.52] InfngidSt, & efticjunt infia tiones humidas . || [hor0.70] tuuamcnta Cumbalnco, & exercitio moderato. || [rot0.26] larionabilia. < 3: c g S 3 o || [rot0.30] ioc 'E. Br || [rot0.26] E £• P?V
+      tokens (19): ptuuiaubus ex fontibus orientalia bus fondumt hepati calido jsi digeftioni infngidst efticjunt infia tiones humidas tuuamcnta cumbalnco exercitio moderato
+  [169] n091 y504-671 cells 8 hor 4 | [rot0.34] 2 75 iS' S 3 3 t Ii r ,3 s l. || [hor0.71] 1 Exaquadul1 ci cxiftente. || [hor0.90] Digefljonem rtiehotai. || [hor0.87] Tuffimcom«nouct. || [hor0.66] Bibenda antea mpdiC4im, || [rot0.21] it l',§S-l || [rot0.00] Q £; || [rot0.13] $ & S
+      tokens (11): exaquadul ci cxiftente digefljonem rtiehotai tuffimcom nouct bibenda antea mpdic im
+  [172] n091 y1009-1178 cells 9 hor 4 | [rot0.00] y H || [rot0.23] r 09 j 3' || [hor0.79] Non amara, & flucnf. || [hor0.71] Soluitcorpus^ || [hor0.59] Pruritum efficit. || [hor0.63] Cu mifcetur cu bono luto, et iturpoft cius potu ad balneum. || [rot0.35] o, 5 .5 "C || [rot0.12] Ti i; 9?' 1 || [rot0.29] D
+      tokens (17): non amara flucnf soluitcorpus pruritum efficit cu mifcetur cu bono luto et iturpoft cius potu ad balneum
+  [193] n095 y2343-2678 cells 5 hor 3 | [rot0.28] s? r f: •S" ,s^ || [hor0.56] <£?rifai. || [hor0.65] DdorSditOn n a 'foda , pro deftdephanrig5& magnis infrigidatio nibus curis. || [hor0.68] Hcbcramfm ftts, & fonmi, wmprouo» i eant. || [rot0.41] Cwmlhidhi 1 . bedecae.
+      tokens (17): rifai ddorsditon n a foda pro deftdephanrig magnis infrigidatio nibus curis hcbcramfm ftts fonmi wmprouo i eant
+  [194] n095 y2678-3015 cells 6 hor 4 | [hor0.55] 0 t S' »' ? sf 3 f e 1’ ’ || [hor0.63] IA U V VS EK ; HEfpfa fU|US<}UfftS> || [rot0.39] t V VAPa 'E$i4r T V M\ «us , || [hor0.55] ' N -G y 5 ; E N-#'' . V H : ' ■ «u«* || [hor0.50] ■i ItEH O# iioC*4ociiinenti ekiis. || [rot0.00] i { fi I!
+      tokens (28): t s sf f e ia u v vs ek hefpfa fu us uffts n g y e n v h u i iteh o iioc ociiinenti ekiis
+  [205] n099 y1371-1711 cells 9 hor 3 | [rot0.33] 0 E, is? 2?2i .§■1 || [rot0.29] 'th a. s c 1 ; c. || [hor0.76] , Quoddudt ad pjTofpieri-.ur tatem. || [rot0.49] lii.qad.-i Periclitanti-; u *ibus.,.&!iii' •#bus•■■ || [hor0.73] ‘Eo multi '■'fj^ilicairrtnor' ‘ xim^inducit, • * || [hor0.63] CuHa^tnhabitatione lapi cniu,etdircre tione. || [rot0.43] A || [rot0.39] q S “3 || [rot0.12] . Q ■p •1
+      tokens (17): quoddudt ad pjtofpieri ur tatem eo multi fj ilicairrtnor xim inducit cuha tnhabitatione lapi cniu etdircre tione
+  [220] n105 y305-360 cells 3 hor 2 | [hor0.92] PcMotu,Qui€te;>exerddpm'o4€raiOa&fpeckbusipforuin, || [hor1.00] ; luuamcnca || [rot0.43] rarionajbilfal
+      tokens (8): pcmotu qui te exerddpm o raioa fpeckbusipforuin luuamcnca
+  [231] n107 y311-366 cells 6 hor 6 | [hor0.70] opcrarionibus || [hor0.80] jincorytn ^ || [hor0.50] &pyttbus || [hor0.71] tpforuaa, || [hor0.53] tuuamenta || [hor0.57] laaonabili^
+      tokens (6): opcrarionibus jincorytn pyttbus tpforuaa tuuamenta laaonabili
+  [247] n109 y1744-2083 cells 8 hor 4 | [rot0.00] ' 3.1 wi; ^ || [rot0.26] -n'’ : w.i ' || [rot0.43] T 5' || [hor0.74] ■ Z Leuis, fplen§) did,a,&pul? chra, || [hor0.55] Temperat ca lorem corporis. || [hor0.70] ;,Dcfat cutem, , prohibet '^exire uapores. || [hor0.63] Cum mixtione fetae. || [rot0.39] \,-.b Tai m' 0 0 3 1 F‘p -p 4? c s
+      tokens (19): z leuis fplen did a pul chra temperat ca lorem corporis dcfat cutem prohibet exire uapores cum mixtione fetae
+  [272] n115 y1366-1705 cells 3 hor 3 | [hor0.70] Dediuis Septentrionalibus, || [hor0.79] Procurat di . gddoaem. || [hor0.50] fremori, §£ frigori.
+      tokens (7): dediuis septentrionalibus procurat di gddoaem fremori frigori
+
+=== T3_ibnjazlah_1532: Ibn Jazlah Tacuini aegritudinum 1532, one ruled row per line
+  {'pages': 164, 'alkindi_pages': None, 'bands': 844, 'ruled_rows': 478, 'lines': 478, 'tokens': 16499}
+  legibility sample (20 rows, seed 20261111): [28, 29, 36, 68, 100, 127, 128, 142, 158, 180, 226, 243, 286, 321, 369, 390, 404, 423, 452, 456]
+  [28] n014 y702-802 cells 8 hor 7 | [hor0.67] Laasues wu iy Deritis || [hor0.68] [—————————I————$—T—7 Apacali| dumíngin | MEL oiuís || [none] XX || [hor0.65] Putrefactío eíngiue, & | NM faníes eius || [hor0.82] Foctororís || [hor0.74] —-— Fhisusfa liuzmin | fomno || [hor0.88] E 1: Qarodd dítaínden | fou: tibus | || [hor0.93] ? Apoftema Mollifíca calidum ín renibus. 37 ; -
+      tokens (29): laasues wu iy deritis i t apacali dumingin mel oiuis putrefactio eingiue nm fanies eius foctororis fhisusfa liuzmin fomno e qarodd ditainden fou tibus apoftema mollifica calidum in renibus
+  [29] n014 y802-900 cells 5 hor 5 | [hor0.88] cour Squínar dh || [hor0.73] ——————— Spinein gu| is la;uclfan | guifuoce || [hor0.85] ————————— Submer; fio,firan eulatío || [hor1.00] fth Afthma || [hor0.88] Eiectio,& conftrí&í ictio
+      tokens (19): cour squinar dh spinein gu is la uclfan guifuoce submer fio firan eulatio fth afthma eiectio conftri i ictio
+  [36] n014 y1495-1593 cells 6 hor 6 | [hor0.91] TenafE n || [hor0.62] : Difynteria || [hor0.65] Difvntería "yn epatí ca || [hor0.65] Eum. erabil€ || [hor0.79] LLumpbrici : üennes. A. | cucurbitini || [hor0.66] Forito |... Hemorroíde
+      tokens (15): tenafe n difynteria difvnteria yn epati ca eum erabil llumpbrici uennes a cucurbitini forito hemorroide
+  [68] n073 y595-789 cells 7 hor 6 | [hor0.67] : : Flegmon || [rot0.14] — Dye wL0oWx.090£5 m-— 3 '|5, zw 2 : ca gr "o gs E || [hor0.85] Qe qerenoesey, LI Inrrinfecus ex porimrinte repletíoe fan. d Extrinfecus ex uulnerefra&u | re, uel díflocatíone, || [hor0.78] tís calídi, eius: prímitur, Dolor;inflatio, exteníío, & for & mansrepulfio quando co. || [hor0.70] Cum mínutione fiat, P IERI — || [hor0.82] Infrigidet fand. auellana indíana, & luto arm. fief memite,ra fura cucur.rof, &adfempuiue || [hor0.73] Emplattret lio, € aqua diuiae, tufulae, zin Ictibufas exco riatis, trítís cü aqua endiuiz,
+      tokens (59): flegmon qe qerenoesey li inrrinfecus ex porimrinte repletioe fan d extrinfecus ex uulnerefra u re uel diflocatione tis calidi eius primitur dolor inflatio exteniio for mansrepulfio quando co cum minutione fiat p ieri infrigidet fand auellana indiana luto arm fief memite ra fura cucur rof adfempuiue emplattret lio aqua diuiae tufulae zin ictibufas exco riatis tritis cu aqua endiuiz
+  [100] n079 y1371-1566 cells 7 hor 6 | [hor0.83] UIEIES Pannus, & lentigínes faciei || [rot0.07] SsHang tpruni 3jeui2áq su25jauaj eprung || [hor0.84] Exuápore fang.adufiti, uel hurnorís melancholici || [hor0.78] Puncti ín facie in alíeno co lore,cü aliqua afperitate || [hor0.88] c minutione cephalíce & potu aque cafei || [hor0.88] WITRTCTSSS cum ufnen coudito cum fe.pfiIj, melonís, & farína hor deí || [hor0.84] lllinatur cum aniyedal.ama rís,lentíb.co ctís, & fícub, trítís
+      tokens (47): uieies pannus lentigines faciei exuapore fang adufiti uel hurnoris melancholici puncti in facie in alieno co lore cu aliqua afperitate c minutione cephalice potu aque cafei witrtctsss cum ufnen coudito cum fe pfiij melonis farina hor dei lllinatur cum aniyedal ama ris lentib co ctis ficub tritis
+  [127] n085 y594-786 cells 7 hor 6 | [hor0.73] lcuscum feparatione CO rinuítatis ueng. || [rot0.13] t oe SS SS ACIE 2 M AI 25 a 8 S apeRRO "i 5m [4] I 3 2 || [hor0.86] Manifefia de || [hor0.83] Sieftexitus ex arteria, erít cü faltu, cum colore rubeo. || [hor0.53] | INulla fiat, || [hor0.73] Pàni ínfufi ín aqua rof, & a. ceto applícen turloco, || [hor0.82] Afpergátumi | pul,uafis figu | lí cü extrahit : defornace,
+      tokens (35): lcuscum feparatione co rinuitatis ueng manifefia de sieftexitus ex arteria erit cu faltu cum colore rubeo inulla fiat pani infufi in aqua rof a ceto applicen turloco afpergatumi pul uafis figu li cu extrahit defornace
+  [128] n085 y786-980 cells 7 hor 6 | [hor1.00] Vulnus neruorum, || [rot0.18] OEUEIEUT SERE S;£E£E£E| AE E IAE S gb || [hor0.73] | Maniffla fi er || [hor0.93] Manífeftum eft, || [hor0.82] INulla fiat, || [hor0.88] Cum oleo rof, & thucia condítacumeo, || [hor0.71] Cülana infufo | olco tepí, & | celotacü oleo, | autgumíeraniuiridíscü oleo,
+      tokens (22): vulnus neruorum maniffla fi er manifeftum eft inulla fiat cum oleo rof thucia conditacumeo culana infufo olco tepi celotacu oleo autgumieraniuiridiscu oleo
+  [142] n087 y1749-1944 cells 7 hor 6 | [hor0.87] Pundio aranez,Xrutle, || [rot0.20] On o o9 £.&,2 2| | & E z 2 | 3 E: || [hor0.78] | Exaduerfitatefrigídíátis uenení, || [hor0.73] Apott.loci pücti, & eríti facie lutptictio acus: etalíqn fincop. fi fuer.iartería, aut mamilla, || [hor0.75] Sugatur, || [hor0.79] Epíthímet aqua calída plu ribus uícibus. || [hor0.83] Emplaftret fale & myrrha, & fale dííIoluto ín aqua.
+      tokens (33): pundio aranez xrutle exaduerfitatefrigidiatis ueneni apott loci pucti eriti facie lutptictio acus etaliqn fincop fi fuer iarteria aut mamilla sugatur epithimet aqua calida plu ribus uicibus emplaftret fale myrrha fale diiioluto in aqua
+  [158] n091 y989-1182 cells 7 hor 6 | [hor0.78] Potus pfillr trí tí, & aqua coríandrí recetis, || [rot0.29] T7941 s —. cn jd 8 2.64 8 D. p S £ee 8| || [hor0.72] . [4 L4 Ex forti frígiditate , & firí&urà pororti, &meatuü, || [hor0.79] Aneuftía, lamentatío,firí. ctus anhelíte, fudor frigíds, & fincopis. || [hor0.92] Cum uomítu aqua calídae,aneto, & fale, || [hor0.88] Cum muíco cocto ad tertian, a MÀU ÀÀ——n || [hor0.89] Cum íure facto cumífpídebeg, & modico altír,
+      tokens (44): potus pfillr tri ti aqua coriandri recetis l ex forti frigiditate firi ura pororti meatuu aneuftia lamentatio firi ctus anhelite fudor frigids fincopis cum uomitu aqua calidae aneto fale cum muico cocto ad tertian a mau aa n cum iure facto cumifpidebeg modico altir
+  [180] n095 y1373-1566 cells 7 hor 6 | [hor0.73] Soda ex calíd. exteriorí, || [rot0.25] niu A A, "sepioniu noJon m p) A, *2jpgjaniu A *sjjeuani "Sije *3yode || [hor0.98] Ex percuffione, uel alía re cadente fuper | caput, || [hor0.88] Pulfatio,et era uedo, & alin do (ébuis, || [hor0.77] Cü mínutione cephalicz, & clífteriletítíuo, || [hor0.73] Emplafiret lu to armeno,fo Ins cíprefli,ui olís rof. || [hor0.76] Emplaftret ca Jamo arom.ra dí.eranadfylueft, pifis , & aqua rof.
+      tokens (43): soda ex calid exteriori ex percuffione uel alia re cadente fuper caput pulfatio et era uedo alin do ebuis cu minutione cephalicz clifteriletitiuo emplafiret lu to armeno fo ins ciprefli ui olis rof emplaftret ca jamo arom ra di eranadfylueft pifis aqua rof
+  [226] n105 y986-1180 cells 7 hor 6 | [hor0.76] Nodulus in paipebra, || [rot0.20] "epIoH.] "sies *uuin23IS vpisu] *Joout3 uoN] í || [hor0.78] Ex flegmate groilo, || [hor0.89] Durus ta&us, nifi fitfubtilís materíae, || [hor0.83] Cum decoct, epithimí, || [hor0.90] — Emplaftretur emplafiro diachilone, || [hor0.90] Emplafiretur alphíta, lupi norum , & oleo, :
+      tokens (23): nodulus in paipebra ex flegmate groilo durus ta us nifi fitfubtilis materiae cum decoct epithimi emplaftretur emplafiro diachilone emplafiretur alphita lupi norum oleo
+  [243] n109 y398-593 cells 7 hor 6 | [hor0.71] | NOMI NA || [rot0.15] EPIS ga c i8£5358| asiste n Ma INIM B. - || [hor1.00] CA V-. SA || [hor1.00] SIGNVM || [hor0.83] BVA cuatio m $$$ ———Ü Ó— || [hor0.92] C rcgalís || [hor0.78] VRA|CVRA leuís ínuen tionis
+      tokens (18): nomi na ca v sa signvm bva cuatio m u o c rcgalis vra cvra leuis inuen tionis
+  [286] n117 y1168-1362 cells 7 hor 6 | [hor0.76] Apoftema calidumin Língua. || [rot0.19] RAT iJ s E 4 : B .|£ à. E 2.0| br rs 9. 2 8 um. s || [hor0.64] Exfangui| ne, || [hor0.88] Rubedo língua,G&eius | íntlatio, || [hor0.80] | Cum mínutionecepha | licae, || [hor0.92] | Abluatosdeco&;coríandríjXíumac, || [hor0.74] : | Lauetur os | decoáione | lentíum,& rof,
+      tokens (20): apoftema calidumin lingua exfangui ne rubedo lingua g eius intlatio cum minutionecepha licae abluatosdeco coriandrijxiumac lauetur os decoaione lentium rof
+  [321] n125 y406-599 cells 7 hor 6 | [hor1.00] NOMI Z » || [rot0.12] C zu OUR UR n 8 B EBHZ pice 5 E Vt || [hor1.00] 5.A || [hor0.80] ST GA NVM' || [hor0.64] BDWVA. cuatío || [hor0.79] CVRA rcealís || [hor0.77] CVRA leuís ínuentíonís
+      tokens (13): nomi z a st ga nvm bdwva cuatio cvra rcealis cvra leuis inuentionis
+  [369] n133 y1963-2159 cells 7 hor 6 | [hor0.80] ; Bolifinus || [rot0.22] TO » OQ -j is Bun 2 8| £u S E S s z * £4 || [hor0.74] tximala cople xionefrigida, |intefaínorefto| machí,uel pau | cocibo,&uírtute debili || [hor0.84] Frigiditas oris | ftomachi, cibí defe&us,appe tits, dolor, fincopís,et cófum ptío corporís || [hor0.91] Nulla fiat, || [hor0.71] Cibet paneín| fufo infyr.pomorü, & pafiel letis, ci eallícu. lís. & pdícibus || [hor0.71] Cü pane infuío infapa, & rotet facies ad frígida
+      tokens (46): bolifinus tximala cople xionefrigida intefainorefto machi uel pau cocibo uirtute debili frigiditas oris ftomachi cibi defe us appe tits dolor fincopis et cofum ptio corporis nulla fiat cibet panein fufo infyr pomoru pafiel letis ci eallicu lis pdicibus cu pane infuio infapa rotet facies ad frigida
+  [390] n139 y354-402 cells 4 hor 3 | [none] M || [hor0.86] muluplicatur in eo || [hor0.89] de morbis || [hor0.75] Epatis.
+      tokens (6): muluplicatur in eo de morbis epatis
+  [404] n141 y987-1182 cells 7 hor 6 | [hor0.70] H dropifis T yropalli tes || [rot0.32] lOo»z d DNE 2 5 ps g € 22582 €£| Use ) Ei RUE ^N || [hor0.55] Ex friciditate mulaepads || [hor0.81] ! j Sonítus u£trís | cü percutitur | ad modum . tympaní || [hor0.76] Cum címíno, baurac , ruta, míxtis cü melle:fuppon:t fae peindie. || [hor0.89] Cum tyríaca faroc, maftí| cadonemaft, & ele&uario marmafat. || [hor0.62] Cümafcati| oncthuris
+      tokens (38): h dropifis t yropalli tes ex friciditate mulaepads j sonitus u tris cu percutitur ad modum tympani cum cimino baurac ruta mixtis cu melle fuppon t fae peindie cum tyriaca faroc mafti cadonemaft ele uario marmafat cumafcati oncthuris
+  [423] n145 y980-1176 cells 7 hor 6 | [hor0.92] ' V cera uclicae || [rot0.13] — "NE 9 & z 9 : c| p ES -| «m 8 E -0es || [hor0.76] Exprecedeteapofiematcuclice — || [hor0.74] Nigredo coloris, feb. diffici|lísmídis,ardor| leíus,fotoreis,| & urina fimi lís furfurf, || [hor0.88] | Cum medicinísfaniem — purgatbus '| || || [hor0.91] | Cütrocif.papaueris, &fy| rup. de papauere ; || [hor0.78] | |Cütaur.slutiar. fj podío,ami.| do, dragaga, & fyr. iuíubarum
+      tokens (34): v cera uclicae exprecedeteapofiematcuclice nigredo coloris feb diffici lismidis ardor leius fotoreis urina fimi lis furfurf cum medicinisfaniem purgatbus cutrocif papaueris fy rup de papauere cutaur slutiar fj podio ami do dragaga fyr iuiubarum
+  [452] n151 y982-1177 cells 7 hor 6 | [hor0.87] Hamorrhoídemai:ics || [rot0.18] esc BE T -— ett TS We [525998 Ades P a D L Es || [hor1.00] Ex humore me lancholíco || [hor0.75] Colorníger,&| manatíoiimílis| fecí uini, & füic ut uua mori, uel ficus || [hor0.85] Cumdeco| «üioneftomiatico, || [hor0.77] Ciíbet hzdís, & aríctibus: ungatur oleo narcíísí,G lílrj || [hor0.76] llliniat: une.lítargyrí,cadmi:. & uenz citri nze,cera & pice ueterí
+      tokens (36): hamorrhoidemai ics ex humore me lancholico colorniger manatioiimilis feci uini fuic ut uua mori uel ficus cumdeco uioneftomiatico ciibet hzdis arictibus ungatur oleo narciisi g lilrj llliniat une litargyri cadmi uenz citri nze cera pice ueteri
+  [456] n151 y1764-1962 cells 7 hor 6 | [hor0.56] e Exitus matricís || [rot0.14] TIE [e eO — G e A. A Z5 B. E. uo m OL 8RO'B BD || [hor0.78] Ex humíditate uifcofa, uel cauffa exteríorí || [hor0.83] Videt adocu lum forís, uel | palparí poteft | circa exitum ' || [hor0.82] Cumpillulis | ierze,etftomat.| nififit ex cauf fa exteriori | || [hor0.84] Clíferízet 0leo fambuc.a| qua aromatíca,& eallía || [hor0.81] Sedearín aqua cucumertüi,& füptícorum
+      tokens (37): e exitus matricis ex humiditate uifcofa uel cauffa exteriori videt adocu lum foris uel palpari poteft circa exitum cumpillulis ierze etftomat nififit ex cauf fa exteriori cliferizet leo fambuc a qua aromatica eallia sedearin aqua cucumertui fupticorum
+
+runtime 196s; finished Sun Oct 18 15:00:49 PDT 2026 (`date`)

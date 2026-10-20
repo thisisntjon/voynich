@@ -1,0 +1,6 @@
+# s20 prereg: sha256 of the s20 script; frozen Sat Oct 17 20:48:50 PDT 2026 before any s20 run_v2 call
+# FAILED (original line; the reader looked for <out>.txt.json instead of run_v2's <out>.json and crashed after the
+#   first run_v2 call, before any row was read; one-line path fix, no change to metrics, ranges or reading):
+# 42907ff1ccd345cc30ffdbf7d2b939ad69bf4ce0d9d54e632ec027fdc360753d  s20_ab_coupling_v2.py
+# amendment frozen Sat Oct 17 20:49:24 PDT 2026 before the re-run:
+0c6f0eddbcc51c049af786940590636a70f2494241dad7db62569926a323dad4  s20_ab_coupling_v2.py

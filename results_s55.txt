@@ -1,0 +1,206 @@
+S55: word-level code (K4) vs procedural generator on wrapper-free, layer-split statistics; where does Voynich fall?
+date: Sun Oct 18 00:39:00 PDT 2026 (`date`)
+s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+prereg stub s55_code_vs_generator.prereg.sha256 sha256=733217f0903ff62981bdfc56369de7d37f95698aaeb1f3761d89fb48a1a81300  stub_match=True
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+numpy 2.4.6; sklearn 1.8.0
+python -I; one CPU process; no new data; seed 20261017; shuffles 200; gain null 20; page bootstrap B=500 (20 null draws per resample); split 80/20 pages random.Random(20261017)
+
+labels: ./runs/s49/labels.json sha256=c7ee6ee63a24b7902bbc44af9236b422a1f1a418e1c94584deb560c2a659300f (s49 printed c7ee6ee63a24b7902bbc44af9236b422a1f1a418e1c94584deb560c2a659300f)
+  sidecar code_k4_latin_cremma.meta.json sha256=1668f75d66500ca1
+  sidecar code_k4_italian_dante.meta.json sha256=38baf2990a7081fd
+  sidecar code_k4_mhg_nibelungenlied.meta.json sha256=19de4005a0afed2e
+  sidecar code_k4_occitan_croisade.meta.json sha256=83abfad64e188063
+  sidecar code_k4_oldfrench_roland.meta.json sha256=ea759f62ba77737c
+  sidecar code_k4_mhg_parzival.meta.json sha256=b480ccddb46dc40b
+  sidecar gen_s28_ZL3b_s1.meta.json sha256=d91ca65ff1dae608
+  sidecar gen_c2_section.meta.json sha256=105d966718e7a9bf
+  sidecar gen_timm_schinner.meta.json sha256=a54e217da3cf09e1
+  sidecar gen_schwartz_reuse.meta.json sha256=b7da90538d28616a
+  sidecar gen_rugg_grille.meta.json sha256=7902397b7962687c
+  sidecar gen_G2layer_ZL3b_s1.meta.json sha256=c8dc7c588fd19e56
+  sidecar ciph_L2layer_ZL3b_s1.meta.json sha256=52a627b55b98a68a
+  sidecar twin_G2layer_ZL3b_s2.meta.json sha256=782186932db772b8
+  sidecar twin_L2layer_ZL3b_s2.meta.json sha256=4db7417fc6bb847c
+  sidecar twin_G2layer_ZL3b_s3.meta.json sha256=fc51ff60d879871e
+  sidecar twin_L2layer_ZL3b_s3.meta.json sha256=b9a2335dd0abb9b8
+  sidecar twin_G2layer_ZL3b_s4.meta.json sha256=8e80d56fc0748880
+  sidecar twin_L2layer_ZL3b_s4.meta.json sha256=2a39d2e668354fe6
+  sidecar twin_G2layer_RF1b_s1.meta.json sha256=f8f6e0430cb650b8
+  sidecar twin_L2layer_RF1b_s1.meta.json sha256=188e18cdc13d1a5a
+  sidecar twin_G2layer_RF1b_s2.meta.json sha256=d8c11e91b096fb71
+  sidecar twin_L2layer_RF1b_s2.meta.json sha256=ac85b22fc8239396
+  sidecar twin_G2layer_RF1b_s3.meta.json sha256=5c6b8bd4f285eec2
+  sidecar twin_L2layer_RF1b_s3.meta.json sha256=4f47bfd91eb5feaa
+  sidecar twin_G2layer_IT2a_s1.meta.json sha256=7041f8c0da1f1d11
+  sidecar twin_L2layer_IT2a_s1.meta.json sha256=3967debf804627a2
+  sidecar twin_G2layer_IT2a_s2.meta.json sha256=8406a5dcc0648fbb
+  sidecar twin_L2layer_IT2a_s2.meta.json sha256=9146a11397cf2003
+  sidecar twin_G2layer_IT2a_s3.meta.json sha256=4982027e4c9777a3
+  sidecar twin_L2layer_IT2a_s3.meta.json sha256=e42ff8674ee61731
+  translit ZL3b_eva.meta.json sha256=ce233477803a8653
+  translit RF1b.meta.json sha256=c7d9bccba99b2610
+  translit IT2a.meta.json sha256=0d0d3e758d1e308b
+texts: CODE 6, GEN 6, extras 19, Voynich 3
+
+=== features (held-out pages; segmenter fitted on training pages) ===
+  text                           cls      tok teTok   tr/te pfx cores     f1_core_F1   f2_core_core   f3_core_gain f4_prefix_gain f5a_core_cover f5b_core_heaps f6_core_sec_nm  f7_frame_core
+  code_k4_latin_cremma           CODE   38000  9169 195/ 49  36  1886        +0.0059        -0.0087        -0.4313        -0.0055        +0.8633        +0.6552        +0.0133        +1.7626  [3s]
+  code_k4_italian_dante          CODE   38000  9169 195/ 49  27  1766        +0.0163        -0.0113        -0.2923        +0.0195        +0.7952        +0.6219        +0.0066        +2.2373  [6s]
+  code_k4_mhg_nibelungenlied     CODE   38000  9169 195/ 49  26  1644        +0.0182        -0.0143        -0.2584        +0.0265        +0.7680        +0.6087        +0.0014        +2.1317  [9s]
+  code_k4_occitan_croisade       CODE   38000  9169 195/ 49  24  1759        +0.0146        -0.0226        -0.2576        +0.0365        +0.8060        +0.6020        +0.0034        +2.0462  [12s]
+  code_k4_oldfrench_roland       CODE   38000  9169 195/ 49  22  1690        +0.0203        -0.0358        -0.2727        +0.0147        +0.7879        +0.6185        +0.0046        +2.0384  [15s]
+  code_k4_mhg_parzival           CODE   38000  9169 195/ 49  30  1552        +0.0005        -0.0068        -0.2812        +0.0207        +0.7976        +0.5842        +0.0031        +2.0920  [18s]
+  gen_s28_ZL3b_s1                GEN    38000  9169 195/ 49  26  3377        +0.0131        +0.0383        -0.2412        +0.0359        +0.5355        +0.7121        +0.0005        +1.9403  [20s]
+  gen_c2_section                 GEN    38000  9169 195/ 49  14   668        +0.0033        -0.0374        -0.2187        +0.0007        +0.7813        +0.5063        +0.0096        +2.1036  [23s]
+  gen_timm_schinner              GEN    38000  7537 117/ 29  24  1380        +0.0037        -0.0072        -0.2831        +0.0218        +0.7005        +0.6468        +0.0000        +1.8638  [26s]
+  gen_schwartz_reuse             GEN    38000  9169 195/ 49  29  2071        -0.0114        +0.0441        -0.2775        +0.0005        +0.6003        +0.6085        +0.0172        +1.8169  [28s]
+  gen_rugg_grille                GEN    38000  7299 214/ 53  43   606        +0.1975        +0.2716        +0.9283        +0.5522        +0.9864        +0.5895        -0.0017        +1.3099  [31s]
+  gen_G2layer_ZL3b_s1            GEN    38000  9169 195/ 49  18  4708        +0.0256        +0.0658        -0.1838        +0.0278        +0.4433        +0.7454        +0.0092        +1.9169  [34s]
+  ciph_L2layer_ZL3b_s1           EXTRA  38000  9169 195/ 49  19  4576        +0.0070        +0.0491        -0.2233        +0.0547        +0.4460        +0.7356        +0.0062        +1.9134  [37s]
+  twin_G2layer_ZL3b_s2           EXTRA  38000  9169 195/ 49  20  4645        +0.0234        +0.0283        -0.2215        +0.0428        +0.4361        +0.7527        +0.0102        +2.0099  [40s]
+  twin_L2layer_ZL3b_s2           EXTRA  38000  9169 195/ 49  21  4488        +0.0309        +0.0579        -0.2201        +0.0343        +0.4560        +0.7577        +0.0108        +1.9639  [43s]
+  twin_G2layer_ZL3b_s3           EXTRA  38000  9169 195/ 49  19  4627        +0.0263        +0.0209        -0.1984        +0.0280        +0.4453        +0.7451        +0.0116        +1.9898  [46s]
+  twin_L2layer_ZL3b_s3           EXTRA  38000  9169 195/ 49  20  4611        +0.0200        +0.0727        -0.1972        +0.0397        +0.4424        +0.7642        +0.0107        +1.9894  [49s]
+  twin_G2layer_ZL3b_s4           EXTRA  38000  9169 195/ 49  20  4612        +0.0303        +0.0722        -0.2045        +0.0345        +0.4323        +0.7833        +0.0121        +1.9740  [52s]
+  twin_L2layer_ZL3b_s4           EXTRA  38000  9169 195/ 49  22  4440        +0.0199        +0.0372        -0.2360        +0.0614        +0.4468        +0.7554        +0.0108        +1.9985  [56s]
+  twin_G2layer_RF1b_s1           EXTRA  38000  9532 198/ 50  22  5072        +0.0329        +0.0950        -0.1561        +0.0431        +0.4180        +0.7702        +0.0069        +2.1352  [59s]
+  twin_L2layer_RF1b_s1           EXTRA  38000  9532 198/ 50  23  4747        +0.0225        +0.0700        -0.2215        +0.0446        +0.4286        +0.7410        +0.0042        +2.0731  [62s]
+  twin_G2layer_RF1b_s2           EXTRA  38000  9532 198/ 50  26  4603        +0.0215        +0.0508        -0.2003        +0.0440        +0.4411        +0.7823        +0.0050        +2.0785  [65s]
+  twin_L2layer_RF1b_s2           EXTRA  38000  9532 198/ 50  24  4691        +0.0216        +0.0671        -0.1855        +0.0359        +0.4612        +0.7664        +0.0053        +2.0742  [68s]
+  twin_G2layer_RF1b_s3           EXTRA  38000  9532 198/ 50  23  4941        +0.0245        +0.0798        -0.2148        +0.0342        +0.4310        +0.7751        +0.0030        +2.1092  [72s]
+  twin_L2layer_RF1b_s3           EXTRA  38000  9532 198/ 50  23  4746        +0.0198        +0.0488        -0.2126        +0.0346        +0.4489        +0.7962        +0.0058        +2.1037  [75s]
+  twin_G2layer_IT2a_s1           EXTRA  38000  9300 199/ 50  21  4512        +0.0214        +0.0433        -0.2316        +0.0497        +0.4272        +0.7543        +0.0075        +2.0011  [78s]
+  twin_L2layer_IT2a_s1           EXTRA  38000  9300 199/ 50  21  4686        +0.0124        +0.0360        -0.2044        +0.0413        +0.4420        +0.7501        +0.0070        +1.9669  [81s]
+  twin_G2layer_IT2a_s2           EXTRA  38000  9300 199/ 50  21  4586        +0.0259        +0.0184        -0.2338        +0.0444        +0.4298        +0.7969        +0.0046        +1.9561  [85s]
+  twin_L2layer_IT2a_s2           EXTRA  38000  9300 199/ 50  20  4600        +0.0182        +0.0126        -0.1997        +0.0497        +0.4384        +0.7862        +0.0046        +1.9749  [88s]
+  twin_G2layer_IT2a_s3           EXTRA  38000  9300 199/ 50  21  4736        +0.0308        +0.0324        -0.2064        +0.0484        +0.4396        +0.7267        +0.0048        +2.0067  [91s]
+  twin_L2layer_IT2a_s3           EXTRA  38000  9300 199/ 50  21  4574        +0.0210        +0.0126        -0.2137        +0.0612        +0.4446        +0.7769        +0.0086        +1.9411  [94s]
+  Voynich_ZL3b                   VOY    34857  8586 166/ 41  27  2360        +0.0054        -0.0528        -0.1622        +0.0999        +0.5732        +0.7015        +0.0221        +1.7925  [114s]
+  Voynich_RF1b                   VOY    34618  8604 166/ 41  28  2491        +0.0087        -0.0500        -0.1379        +0.0951        +0.5833        +0.6825        +0.0222        +1.7798  [134s]
+  Voynich_IT2a                   VOY    34411  8411 165/ 41  24  2420        +0.0141        -0.0508        -0.1297        +0.0961        +0.6063        +0.7111        +0.0210        +1.7714  [153s]
+tables: ./runs/s55/features.csv; ./runs/s55/voynich_bootstrap.csv
+beside (not features): within-line-shuffle EXCESS of the gains and raw section NMI
+  code_k4_latin_cremma           core gain excess +0.0208 (z +2.4); prefix gain excess +0.0293 (z +8.2); raw NMI(core;sec) 0.0939 over 7 held-out sections
+  code_k4_italian_dante          core gain excess +0.0917 (z +10.4); prefix gain excess +0.0379 (z +17.0); raw NMI(core;sec) 0.0721 over 7 held-out sections
+  code_k4_mhg_nibelungenlied     core gain excess +0.0972 (z +11.6); prefix gain excess +0.0449 (z +18.2); raw NMI(core;sec) 0.0619 over 7 held-out sections
+  code_k4_occitan_croisade       core gain excess +0.1085 (z +14.3); prefix gain excess +0.0516 (z +21.0); raw NMI(core;sec) 0.0663 over 7 held-out sections
+  code_k4_oldfrench_roland       core gain excess +0.1071 (z +15.1); prefix gain excess +0.0278 (z +11.6); raw NMI(core;sec) 0.0682 over 7 held-out sections
+  code_k4_mhg_parzival           core gain excess +0.0529 (z +6.9); prefix gain excess +0.0456 (z +10.7); raw NMI(core;sec) 0.0580 over 7 held-out sections
+  gen_s28_ZL3b_s1                core gain excess +0.1540 (z +19.0); prefix gain excess +0.0519 (z +16.8); raw NMI(core;sec) 0.0966 over 7 held-out sections
+  gen_c2_section                 core gain excess +0.0241 (z +2.9); prefix gain excess +0.0055 (z +4.1); raw NMI(core;sec) 0.0494 over 7 held-out sections
+  gen_timm_schinner              core gain excess +0.0314 (z +2.7); prefix gain excess +0.0165 (z +5.7); raw NMI(core;sec) 0.0000 over 1 held-out sections
+  gen_schwartz_reuse             core gain excess +0.0072 (z +1.2); prefix gain excess +0.0087 (z +2.1); raw NMI(core;sec) 0.0780 over 7 held-out sections
+  gen_rugg_grille                core gain excess +0.9851 (z +65.9); prefix gain excess +0.4940 (z +111.6); raw NMI(core;sec) 0.1182 over 36 held-out sections
+  gen_G2layer_ZL3b_s1            core gain excess +0.2289 (z +28.5); prefix gain excess +0.0355 (z +13.5); raw NMI(core;sec) 0.1298 over 7 held-out sections
+  Voynich_ZL3b                   core gain excess +0.1171 (z +17.8); prefix gain excess +0.0821 (z +26.3); raw NMI(core;sec) 0.1046 over 7 held-out sections
+  Voynich_RF1b                   core gain excess +0.1267 (z +13.7); prefix gain excess +0.0835 (z +14.8); raw NMI(core;sec) 0.1043 over 7 held-out sections
+  Voynich_IT2a                   core gain excess +0.1472 (z +16.5); prefix gain excess +0.0763 (z +19.9); raw NMI(core;sec) 0.1003 over 6 held-out sections
+
+=== per-feature class means (sd), AUC (CODE positive vs GEN), Voynich values [page-bootstrap 95 %] ===
+  feature                CODE mean (sd)        GEN mean (sd)    AUC                         Voynich_ZL3b                         Voynich_RF1b                         Voynich_IT2a
+  f1_core_F1          +0.0126 (0.0071)    +0.0386 (0.0719)  0.556           +0.0054 [-0.0049, +0.0151]           +0.0087 [-0.0048, +0.0212]           +0.0141 [+0.0017, +0.0253]
+  f2_core_core        -0.0166 (0.0100)    +0.0625 (0.0996)  0.194           -0.0528 [+0.1081, +0.3567]           -0.0500 [+0.1136, +0.3655]           -0.0508 [+0.1193, +0.3520]
+  f3_core_gain        -0.2989 (0.0605)    -0.0460 (0.4370)  0.194           -0.1622 [-0.2138, -0.1197]           -0.1379 [-0.1847, -0.0982]           -0.1297 [-0.1733, -0.0905]
+  f4_prefix_gain      +0.0187 (0.0128)    +0.1065 (0.1998)  0.389           +0.0999 [+0.0661, +0.1303]           +0.0951 [+0.0608, +0.1285]           +0.0961 [+0.0610, +0.1281]
+  f5a_core_cover      +0.8030 (0.0294)    +0.6746 (0.1768)  0.806           +0.5732 [+0.5922, +0.6569]           +0.5833 [+0.6043, +0.6712]           +0.6063 [+0.6286, +0.6783]
+  f5b_core_heaps      +0.6151 (0.0217)    +0.6348 (0.0792)  0.444           +0.7015 [+0.5962, +0.7797]           +0.6825 [+0.5990, +0.7674]           +0.7111 [+0.5878, +0.7607]
+  f6_core_sec_nmi     +0.0054 (0.0039)    +0.0058 (0.0068)  0.556           +0.0221 [+0.0385, +0.0695]           +0.0222 [+0.0383, +0.0682]           +0.0210 [+0.0372, +0.0693]
+  f7_frame_core       +2.0514 (0.1451)    +1.8252 (0.2471)  0.778           +1.7925 [+1.8591, +2.1580]           +1.7798 [+1.8452, +2.1651]           +1.7714 [+1.8497, +2.1288]
+  per-text GEN values (to see which generator sits where):
+    f1_core_F1       s28_ZL3b_s1 +0.0131; c2_section +0.0033; timm_schinner +0.0037; schwartz_reuse -0.0114; rugg_grille +0.1975; G2layer_ZL3b_s1 +0.0256
+    f2_core_core     s28_ZL3b_s1 +0.0383; c2_section -0.0374; timm_schinner -0.0072; schwartz_reuse +0.0441; rugg_grille +0.2716; G2layer_ZL3b_s1 +0.0658
+    f3_core_gain     s28_ZL3b_s1 -0.2412; c2_section -0.2187; timm_schinner -0.2831; schwartz_reuse -0.2775; rugg_grille +0.9283; G2layer_ZL3b_s1 -0.1838
+    f4_prefix_gain   s28_ZL3b_s1 +0.0359; c2_section +0.0007; timm_schinner +0.0218; schwartz_reuse +0.0005; rugg_grille +0.5522; G2layer_ZL3b_s1 +0.0278
+    f5a_core_cover   s28_ZL3b_s1 +0.5355; c2_section +0.7813; timm_schinner +0.7005; schwartz_reuse +0.6003; rugg_grille +0.9864; G2layer_ZL3b_s1 +0.4433
+    f5b_core_heaps   s28_ZL3b_s1 +0.7121; c2_section +0.5063; timm_schinner +0.6468; schwartz_reuse +0.6085; rugg_grille +0.5895; G2layer_ZL3b_s1 +0.7454
+    f6_core_sec_nmi  s28_ZL3b_s1 +0.0005; c2_section +0.0096; timm_schinner +0.0000; schwartz_reuse +0.0172; rugg_grille -0.0017; G2layer_ZL3b_s1 +0.0092
+    f7_frame_core    s28_ZL3b_s1 +1.9403; c2_section +2.1036; timm_schinner +1.8638; schwartz_reuse +1.8169; rugg_grille +1.3099; G2layer_ZL3b_s1 +1.9169
+
+=== P1: leave-one-text-out over the 12 (CODE 6, GEN 6) ===
+  code_k4_latin_cremma           true CODE  NC CODE margin 0.044 ok   LR GEN  |logit| 0.406 P(CODE) 0.400 WRONG
+  code_k4_italian_dante          true CODE  NC CODE margin 1.380 ok   LR CODE |logit| 1.192 P(CODE) 0.767 ok
+  code_k4_mhg_nibelungenlied     true CODE  NC CODE margin 1.106 ok   LR CODE |logit| 0.661 P(CODE) 0.660 ok
+  code_k4_occitan_croisade       true CODE  NC CODE margin 1.439 ok   LR CODE |logit| 0.777 P(CODE) 0.685 ok
+  code_k4_oldfrench_roland       true CODE  NC CODE margin 1.540 ok   LR CODE |logit| 0.771 P(CODE) 0.684 ok
+  code_k4_mhg_parzival           true CODE  NC CODE margin 1.323 ok   LR CODE |logit| 0.634 P(CODE) 0.653 ok
+  gen_s28_ZL3b_s1                true GEN   NC GEN  margin 0.238 ok   LR GEN  |logit| 0.680 P(CODE) 0.336 ok
+  gen_c2_section                 true GEN   NC CODE margin 1.739 WRONG   LR CODE |logit| 2.841 P(CODE) 0.945 WRONG
+  gen_timm_schinner              true GEN   NC CODE margin 0.565 WRONG   LR CODE |logit| 0.678 P(CODE) 0.663 WRONG
+  gen_schwartz_reuse             true GEN   NC CODE margin 0.287 WRONG   LR GEN  |logit| 1.208 P(CODE) 0.230 ok
+  gen_rugg_grille                true GEN   NC GEN  margin 0.312 ok   LR CODE |logit| 1.868 P(CODE) 0.866 WRONG
+  gen_G2layer_ZL3b_s1            true GEN   NC GEN  margin 0.506 ok   LR GEN  |logit| 2.171 P(CODE) 0.102 ok
+  NC 9/12, LR 8/12 (bar >= 10/12 on both) -> P1 FAIL
+  median LOO margin of correctly classified texts: NC 1.106; LR |logit| 0.774
+  sensitivity (reported, not gating) without f6_core_sec_nmi: NC 10/12, LR 9/12; wrong NC: gen_c2_section, gen_timm_schinner; wrong LR: gen_c2_section, gen_timm_schinner, gen_rugg_grille
+  sensitivity (reported, not gating) without f7_frame_core: NC 9/12, LR 9/12; wrong NC: gen_c2_section, gen_timm_schinner, gen_schwartz_reuse; wrong LR: gen_c2_section, gen_timm_schinner, gen_rugg_grille
+
+=== P2: Voynich landing (models fitted on all 12; z on the 12) ===
+  LR coefficients (z units, positive -> GEN): f1_core_F1 -0.031, f2_core_core +0.426, f3_core_gain +0.431, f4_prefix_gain +0.138, f5a_core_cover -1.194, f5b_core_heaps -0.308, f6_core_sec_nmi +0.102, f7_frame_core -0.635
+  Voynich_ZL3b: NC nearest GEN margin 0.366 (median 1.106; d CODE 3.985, d GEN 3.619);  LR GEN |logit| 1.505 (median 0.774) P(CODE) 0.182
+      z-vector: f1_core_F1 -0.38, f2_core_core -0.93, f3_core_gain +0.03, f4_prefix_gain +0.25, f5a_core_cover -1.17, f5b_core_heaps +1.30, f6_core_sec_nmi +2.99, f7_frame_core -0.63
+      page bootstrap (B=500) share assigned CODE: NC 0.000, LR 0.000
+      assignment: does not count (P1 failed)
+  Voynich_RF1b: NC nearest GEN margin 0.372 (median 1.106; d CODE 3.881, d GEN 3.509);  LR GEN |logit| 1.596 (median 0.774) P(CODE) 0.169
+      z-vector: f1_core_F1 -0.32, f2_core_core -0.90, f3_core_gain +0.10, f4_prefix_gain +0.22, f5a_core_cover -1.09, f5b_core_heaps +0.98, f6_core_sec_nmi +3.02, f7_frame_core -0.68
+      page bootstrap (B=500) share assigned CODE: NC 0.000, LR 0.000
+      assignment: does not count (P1 failed)
+  Voynich_IT2a: NC nearest GEN margin 0.404 (median 1.106; d CODE 3.845, d GEN 3.441);  LR GEN |logit| 1.258 (median 0.774) P(CODE) 0.221
+      z-vector: f1_core_F1 -0.22, f2_core_core -0.91, f3_core_gain +0.13, f4_prefix_gain +0.23, f5a_core_cover -0.93, f5b_core_heaps +1.46, f6_core_sec_nmi +2.80, f7_frame_core -0.72
+      page bootstrap (B=500) share assigned CODE: NC 0.000, LR 0.000
+      assignment: does not count (P1 failed)
+
+=== extras (reported only; projected with the 12-text models) ===
+  ciph_L2layer_ZL3b_s1           NC GEN  margin 0.873;  LR GEN  |logit| 2.183 P(CODE) 0.101
+  twin_G2layer_ZL3b_s2           NC GEN  margin 0.685;  LR GEN  |logit| 1.859 P(CODE) 0.135
+  twin_L2layer_ZL3b_s2           NC GEN  margin 0.833;  LR GEN  |logit| 1.947 P(CODE) 0.125
+  twin_G2layer_ZL3b_s3           NC GEN  margin 0.675;  LR GEN  |logit| 1.878 P(CODE) 0.133
+  twin_L2layer_ZL3b_s3           NC GEN  margin 0.842;  LR GEN  |logit| 2.074 P(CODE) 0.112
+  twin_G2layer_ZL3b_s4           NC GEN  margin 0.849;  LR GEN  |logit| 2.105 P(CODE) 0.109
+  twin_L2layer_ZL3b_s4           NC GEN  margin 0.718;  LR GEN  |logit| 1.845 P(CODE) 0.136
+  twin_G2layer_RF1b_s1           NC GEN  margin 0.799;  LR GEN  |logit| 1.943 P(CODE) 0.125
+  twin_L2layer_RF1b_s1           NC GEN  margin 0.749;  LR GEN  |logit| 1.920 P(CODE) 0.128
+  twin_G2layer_RF1b_s2           NC GEN  margin 0.653;  LR GEN  |logit| 1.525 P(CODE) 0.179
+  twin_L2layer_RF1b_s2           NC GEN  margin 0.704;  LR GEN  |logit| 1.556 P(CODE) 0.174
+  twin_G2layer_RF1b_s3           NC GEN  margin 0.690;  LR GEN  |logit| 1.650 P(CODE) 0.161
+  twin_L2layer_RF1b_s3           NC GEN  margin 0.578;  LR GEN  |logit| 1.300 P(CODE) 0.214
+  twin_G2layer_IT2a_s1           NC GEN  margin 0.761;  LR GEN  |logit| 1.973 P(CODE) 0.122
+  twin_L2layer_IT2a_s1           NC GEN  margin 0.753;  LR GEN  |logit| 1.948 P(CODE) 0.125
+  twin_G2layer_IT2a_s2           NC GEN  margin 0.687;  LR GEN  |logit| 1.658 P(CODE) 0.160
+  twin_L2layer_IT2a_s2           NC GEN  margin 0.653;  LR GEN  |logit| 1.611 P(CODE) 0.166
+  twin_G2layer_IT2a_s3           NC GEN  margin 0.761;  LR GEN  |logit| 1.915 P(CODE) 0.128
+  twin_L2layer_IT2a_s3           NC GEN  margin 0.716;  LR GEN  |logit| 1.765 P(CODE) 0.146
+  twin pairs: L_2layer leans more CODE than its G_2layer twin in 7/10 pairs (LR P(CODE); gen_G2layer_ZL3b_s1 is a training text, its P from the all-12 model)
+    gen_G2layer_ZL3b_s1      P(CODE) 0.091  vs  ciph_L2layer_ZL3b_s1     P(CODE) 0.101 -> L more CODE
+    twin_G2layer_ZL3b_s2     P(CODE) 0.135  vs  twin_L2layer_ZL3b_s2     P(CODE) 0.125 -> G more CODE
+    twin_G2layer_ZL3b_s3     P(CODE) 0.133  vs  twin_L2layer_ZL3b_s3     P(CODE) 0.112 -> G more CODE
+    twin_G2layer_ZL3b_s4     P(CODE) 0.109  vs  twin_L2layer_ZL3b_s4     P(CODE) 0.136 -> L more CODE
+    twin_G2layer_RF1b_s1     P(CODE) 0.125  vs  twin_L2layer_RF1b_s1     P(CODE) 0.128 -> L more CODE
+    twin_G2layer_RF1b_s2     P(CODE) 0.179  vs  twin_L2layer_RF1b_s2     P(CODE) 0.174 -> G more CODE
+    twin_G2layer_RF1b_s3     P(CODE) 0.161  vs  twin_L2layer_RF1b_s3     P(CODE) 0.214 -> L more CODE
+    twin_G2layer_IT2a_s1     P(CODE) 0.122  vs  twin_L2layer_IT2a_s1     P(CODE) 0.125 -> L more CODE
+    twin_G2layer_IT2a_s2     P(CODE) 0.160  vs  twin_L2layer_IT2a_s2     P(CODE) 0.166 -> L more CODE
+    twin_G2layer_IT2a_s3     P(CODE) 0.128  vs  twin_L2layer_IT2a_s3     P(CODE) 0.146 -> L more CODE
+
+=== READING (frozen rules) ===
+P1 FAIL (NC 9/12, LR 8/12): code and generator are not separable without line-edge features; the question cannot be settled by these statistics.
+VERDICT|s55|p1=FAIL|nc=9/12|lr=8/12|Voynich_ZL3b=does not count (P1 failed)|Voynich_RF1b=does not count (P1 failed)|Voynich_IT2a=does not count (P1 failed)
+
+elapsed 153s; run ended Sun Oct 18 00:41:33 PDT 2026 (`date`)
+outputs: ./results_s55.txt; ./runs/s55
+stub_match at end (all local modules loaded by now): True

@@ -1,0 +1,177 @@
+script	needs	how_to_get
+ctl_timm_schinner.py	data/external/jre/jdk-21.0.12.1+1-jre/bin/java.exe	not available in this repository
+experiments/medieval_line_controls/run.py	data/ZL3b-n.txt	python tools/fetch_data.py
+experiments/medieval_line_controls/run.py	data/translit/IT2a.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+experiments/medieval_line_controls/run.py	data/translit/RF1b.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+lab/runs/explore/label_compound_concordance_20261019.py	data/ZL3b-n.txt	python tools/fetch_data.py
+lab/runs/explore/label_glyphstream_20261019.py	data/ZL3b-n.txt	python tools/fetch_data.py
+lab/runs/explore/paragraph_recurrence_20261019.py	data/ZL3b-n.txt	python tools/fetch_data.py
+lab/runs/explore/star_entry_concordance_20261019.py	data/ZL3b-n.txt	python tools/fetch_data.py
+n6_ab_split.py	data/translit/IT2a.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+n6_ab_split.py	data/translit/RF1b.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+runs/explore/rcross_edge_null_20261019.py	data/vkb/vkb.sqlite	third-party or derived data: fetch it or rebuild it
+runs/explore/rwithin_position_null_20261019.py	data/vkb/vkb.sqlite	third-party or derived data: fetch it or rebuild it
+runs/explore/zodiac_label_alignment_probe_20261019.py	data/vkb/vkb.sqlite	third-party or derived data: fetch it or rebuild it
+runs/explore/zodiac_label_vocab_probe_20261019.py	data/vkb/vkb.sqlite	third-party or derived data: fetch it or rebuild it
+runs/roach-r10/r10.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/roach-r11/r11.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/roach-r11/r11dry.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/roach-r12/r12.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/roach-r13/r13.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/roach-r15/r15b.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/roach-r3/r3.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/roach-r4/r4.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/roach-r5/r5.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/roach-r6/r6.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/roach-r7/r7.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/roach-r8/r8.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/roach-r9/r9.py	roach-root/ layout and its dl_* inputs (transliterations, Project Gutenberg, Hebrew Bible, CREMMA)	python tools/roach_layout.py (after tools/fetch_data.py and tools/fetch_cremma.py)
+runs/s120/sensitivity_no_layout.py	runs/2026-10-18/bigpicture-physical.md	not available in this repository
+runs/s128/s128_f0n2_real.py	data/external/ventura_egerton747/tractatus-de-herbis-egerton-747-ventura2009-tei.xml	third-party or derived data: fetch it or rebuild it
+runs/s133/s133_egerton_gate_score.py	data/egerton_caption_gate/sealed/SEALED_KEY_blind_read_1_pid_to_row_v1.tsv	blind-study material
+s101_loqo_power_audit.py	data/ZL3b-n.txt	python tools/fetch_data.py
+s101_loqo_power_audit.py	data/external/voynich-nu-ivtff/IT2a-n.txt	python tools/fetch_data.py
+s101_loqo_power_audit.py	data/external/voynich-nu-ivtff/RF1b-er.txt	python tools/fetch_data.py
+s101_loqo_power_audit.py	data/naibbe_zenodo_17219445/Naibbe_Cipher.xlsx	third-party or derived data: fetch it or rebuild it
+s101_loqo_power_audit.py	data/translit/IT2a.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+s101_loqo_power_audit.py	data/translit/RF1b.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+s101_loqo_power_audit.py	data/translit/ZL3b_eva.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+s101_loqo_power_audit.py	runs/s49/lang_italian_dante.meta.json	third-party text (transliteration copy)
+s101_loqo_power_audit.py	runs/s49/lang_latin_cremma.meta.json	third-party text (transliteration copy)
+s102_period_ciphers_recipes.py	data/controls/latin_augustine.txt	third-party or derived data: fetch it or rebuild it
+s102_period_ciphers_recipes.py	data/controls/latin_macer_floridus.txt	third-party or derived data: fetch it or rebuild it
+s102_period_ciphers_recipes.py	data/controls_period/raw_de/Buoch_von_guoter_Spise_rendered.txt	third-party or derived data: fetch it or rebuild it
+s102_period_ciphers_recipes.py	data/controls_period/raw_de/b24880681_djvu.txt	third-party or derived data: fetch it or rebuild it
+s102_period_ciphers_recipes.py	data/controls_period/raw_de/bub_gb_I0QSAAAAYAAJ_djvu.txt	third-party or derived data: fetch it or rebuild it
+s102_period_ciphers_recipes.py	data/controls_period/raw_it/b21525213_djvu.txt	third-party or derived data: fetch it or rebuild it
+s102_period_ciphers_recipes.py	data/controls_period/raw_it/librodicucinade00fratgoog_djvu.txt	third-party or derived data: fetch it or rebuild it
+s102_period_ciphers_recipes.py	data/controls_realline/cremma_all_marks.meta.json	third-party or derived data: fetch it or rebuild it
+s104_g1_encoding_grid.py	data/controls/latin_augustine.txt	third-party or derived data: fetch it or rebuild it
+s104_g1_encoding_grid.py	data/controls/latin_macer_floridus.txt	third-party or derived data: fetch it or rebuild it
+s104_g1_encoding_grid.py	data/controls_realline/cremma_all_marks.meta.json	third-party or derived data: fetch it or rebuild it
+s104_g1_encoding_grid.py	data/naibbe_zenodo_17219445/Naibbe_Cipher.xlsx	third-party or derived data: fetch it or rebuild it
+s104_g1_encoding_grid.py	runs/s49/lang_latin_cremma.meta.json	third-party text (transliteration copy)
+s107_tabular_medical_reference.py	data/controls/latin_augustine.txt	third-party or derived data: fetch it or rebuild it
+s108_ruled_medical_tables.py	data/controls/latin_augustine.txt	third-party or derived data: fetch it or rebuild it
+s108_ruled_medical_tables.py	data/controls_tabular_ruled/ibnjazlah1532/b14562455_0002_djvu.xml	third-party or derived data: fetch it or rebuild it
+s108_ruled_medical_tables.py	data/controls_tabular_ruled/schott1531_biusante/BIUSante_00188x01_djvu.xml	third-party or derived data: fetch it or rebuild it
+s109_label_network.py	data/ZL3b-n.txt	python tools/fetch_data.py
+s111_subject_vs_batch.py	data/ZL3b-n.txt	python tools/fetch_data.py
+s111_subject_vs_batch.py	data/translit/ZL3b_eva.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+s15_band_widths.py	data/ZL3b-n.txt	python tools/fetch_data.py
+s89_line_repetition_genres.py	data/controls/enochian_keys_dee.txt	third-party or derived data: fetch it or rebuild it
+s89_line_repetition_genres.py	data/controls/trithemius_steganographia_1608.txt	third-party or derived data: fetch it or rebuild it
+s89_line_repetition_genres.py	data/external/genre-s87/alphitaamedicob00mowagoog_djvu.txt	third-party or derived data: fetch it or rebuild it
+s90_constructed_text_core.py	data/controls/enochian_keys_dee.txt	third-party or derived data: fetch it or rebuild it
+s90_constructed_text_core.py	data/controls/ignota_hildegard_glossary.txt	third-party or derived data: fetch it or rebuild it
+s90_constructed_text_core.py	data/controls/trithemius_polygraphia.txt	third-party or derived data: fetch it or rebuild it
+s90_constructed_text_core.py	data/controls/trithemius_steganographia_1608.txt	third-party or derived data: fetch it or rebuild it
+s90_constructed_text_core.py	data/controls_realline/gib_realline_pooled.meta.json	third-party or derived data: fetch it or rebuild it
+s91_line_pool_producer_loqo.py	data/naibbe_zenodo_17219445/Naibbe_Cipher.xlsx	third-party or derived data: fetch it or rebuild it
+s91_line_pool_producer_loqo.py	runs/s49/lang_latin_cremma.meta.json	third-party text (transliteration copy)
+s97_language_rescue_controls.py	data/controls/arabic_quran.txt	third-party or derived data: fetch it or rebuild it
+s97_language_rescue_controls.py	data/controls/hebrew_torah.txt	third-party or derived data: fetch it or rebuild it
+s97_language_rescue_controls.py	data/controls/latin_augustine.txt	third-party or derived data: fetch it or rebuild it
+s97_language_rescue_controls.py	data/controls_realline/cremma_all.meta.json	third-party or derived data: fetch it or rebuild it
+s97_language_rescue_controls.py	data/controls_realline/cremma_all_marks.meta.json	third-party or derived data: fetch it or rebuild it
+s97_language_rescue_controls.py	data/controls_realline/italian_dante.meta.json	third-party or derived data: fetch it or rebuild it
+s97_language_rescue_controls.py	data/external/genre-s87/BIUSante_pharma_res012103_djvu.txt	third-party or derived data: fetch it or rebuild it
+s99_label_nearby_lines.py	data/ZL3b-n.txt	python tools/fetch_data.py
+tools/build_translit.py	data/ZL3b-n.txt	python tools/fetch_data.py
+tools/build_translit.py	data/translit/GC2a.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+tools/build_translit.py	data/translit/IT2a.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+tools/build_translit.py	data/translit/RF1b.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+tools/build_translit.py	data/translit/ZL3b_eva.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+tools/build_translit.py	data/translit/ZL3b_glyphplus.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+tools/realline_to_meta.py	data/controls/italian_dante.txt	third-party or derived data: fetch it or rebuild it
+tools/restore_s45_text.py	data/ZL3b-n.txt	python tools/fetch_data.py
+tools/roach_layout.py	data/ZL3b-n.txt	python tools/fetch_data.py
+tools/roach_layout.py	data/external/voynich-nu-ivtff/IT2a-n.txt	python tools/fetch_data.py
+tools/roach_layout.py	data/external/voynich-nu-ivtff/RF1b-e.txt	python tools/fetch_data.py
+tools/s113_g2_envelope.py	data/controls/latin_macer_floridus.txt	third-party or derived data: fetch it or rebuild it
+tools/s113_g2_envelope.py	data/controls_realline/cremma_all_marks.meta.json	third-party or derived data: fetch it or rebuild it
+tools/s115_a0_fetch_408.py	data/herbals_alchemical/bodleian_canon_misc_408/canvases_structures.tsv	third-party or derived data: fetch it or rebuild it
+tools/s117_line_cooccurrence.py	runs/2026-10-18/bigpicture-mechanism.md	not available in this repository
+tools/s118_sheet_unit.py	runs/2026-10-18/bigpicture-physical.md	not available in this repository
+tools/s119_sheet_unit.py	runs/2026-10-18/bigpicture-physical.md	not available in this repository
+tools/s120_sheet_unit.py	runs/2026-10-18/bigpicture-physical.md	not available in this repository
+tools/s124_page_grouping.py	data/external/models/dinov2-base/config.json	third-party or derived data: fetch it or rebuild it
+tools/s124_page_grouping.py	data/external/models/dinov2-base/model.safetensors	third-party or derived data: fetch it or rebuild it
+tools/s125_label_topic_gate.py	data/controls_tabular/raw_tacuinum_medimanus/tacuinum_sanitatis.html	third-party or derived data: fetch it or rebuild it
+tools/s125_label_topic_gate.py	data/herbals_alchemical/bodleian_canon_misc_408/canvases_structures.tsv	third-party or derived data: fetch it or rebuild it
+tools/s125_label_topic_gate.py	data/herbals_period/ljs419/captions_s103.json	third-party or derived data: fetch it or rebuild it
+tools/s125_label_topic_gate.py	data/herbals_period/sloane4016/captions_s103.json	third-party or derived data: fetch it or rebuild it
+tools/vkb/manuscript.py	data/ZL3b-n.txt	python tools/fetch_data.py
+tools/vkb/manuscript.py	data/external/voynich-nu-ivtff/IT2a-n.txt	python tools/fetch_data.py
+tools/vkb/manuscript.py	data/external/voynich-nu-ivtff/RF1b-er.txt	python tools/fetch_data.py
+tools/vkb/manuscript.py	data/external/yale_scans/pages_index.json	third-party or derived data: fetch it or rebuild it
+tools/vkb/manuscript.py	data/translit/ZL3b_eva.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+tools/vkb/queries/folio_relationship_scan.py	runs/2026-10-18/vkb-relationship-scan.txt	not available in this repository
+tools/vkb/test_paths.py	data/translit/ZL3b_eva.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+tools/vkb/world.py	data/ZL3b-n.txt	python tools/fetch_data.py
+tools/vkb/world.py	data/controls_realline/CREMMA_MANIFEST.md	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/controls_realline/README.md	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/controls_realline/cremma_all_marks.meta.json	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/controls_realline/gib_realline_pooled.meta.json	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/external/intake-phase1/hodgins-2009.pdf	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/external/intake-phase1/layfield-davis-2026-pdf.pdf	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/external/intake-phase1/mccrone-2009.pdf	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/external/lit-20261018/greshko-tandf-pdf/greshko.pdf	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/external/lit-20261018/meister-1902-pelling-zip/Meister1902.real.zip	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/external/lit-20261018/meister-1902-pelling-zip/Meister1902.zip	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/external/voynich-nu-ivtff/ivtff_format.pdf	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/external/voynich-nu-ivtff/ivtff_format.real.pdf	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/herbals_alchemical/README.md	third-party or derived data: fetch it or rebuild it
+tools/vkb/world.py	data/herbals_period/README.md	third-party or derived data: fetch it or rebuild it
+vx01_a1_gen.py	data/translit/IT2a.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_a1_gen.py	data/translit/RF1b.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_a1_gen.py	data/translit/ZL3b_eva.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_b0_fitter_recovery.py	data/ZL3b-n.txt	python tools/fetch_data.py
+vx01_b0_fitter_recovery.py	data/external/voynich-nu-ivtff/IT2a-n.txt	python tools/fetch_data.py
+vx01_b0_fitter_recovery.py	data/external/voynich-nu-ivtff/RF1b-er.txt	python tools/fetch_data.py
+vx01_b0_fitter_recovery.py	data/naibbe_zenodo_17219445/Naibbe_Cipher.xlsx	third-party or derived data: fetch it or rebuild it
+vx01_b0_fitter_recovery.py	data/translit/IT2a.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_b0_fitter_recovery.py	data/translit/RF1b.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_b0_fitter_recovery.py	data/translit/ZL3b_eva.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_b0_fitter_recovery.py	runs/s49/lang_latin_cremma.meta.json	third-party text (transliteration copy)
+vx01_b0_fitter_recovery_c2.py	data/ZL3b-n.txt	python tools/fetch_data.py
+vx01_b0_fitter_recovery_c2.py	data/external/voynich-nu-ivtff/IT2a-n.txt	python tools/fetch_data.py
+vx01_b0_fitter_recovery_c2.py	data/external/voynich-nu-ivtff/RF1b-er.txt	python tools/fetch_data.py
+vx01_b0_fitter_recovery_c2.py	data/naibbe_zenodo_17219445/Naibbe_Cipher.xlsx	third-party or derived data: fetch it or rebuild it
+vx01_b0_fitter_recovery_c2.py	data/translit/IT2a.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_b0_fitter_recovery_c2.py	data/translit/RF1b.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_b0_fitter_recovery_c2.py	data/translit/ZL3b_eva.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_b0_fitter_recovery_c2.py	runs/s49/lang_latin_cremma.meta.json	third-party text (transliteration copy)
+vx01_b0_fitter_recovery_c3.py	data/ZL3b-n.txt	python tools/fetch_data.py
+vx01_b0_fitter_recovery_c3.py	data/external/voynich-nu-ivtff/IT2a-n.txt	python tools/fetch_data.py
+vx01_b0_fitter_recovery_c3.py	data/external/voynich-nu-ivtff/RF1b-er.txt	python tools/fetch_data.py
+vx01_b0_fitter_recovery_c3.py	data/naibbe_zenodo_17219445/Naibbe_Cipher.xlsx	third-party or derived data: fetch it or rebuild it
+vx01_b0_fitter_recovery_c3.py	data/translit/IT2a.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_b0_fitter_recovery_c3.py	data/translit/RF1b.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_b0_fitter_recovery_c3.py	data/translit/ZL3b_eva.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_b0_fitter_recovery_c3.py	runs/s49/lang_latin_cremma.meta.json	third-party text (transliteration copy)
+vx01_bf_rk.py	data/ZL3b-n.txt	python tools/fetch_data.py
+vx01_bf_rk.py	data/external/voynich-nu-ivtff/IT2a-n.txt	python tools/fetch_data.py
+vx01_bf_rk.py	data/external/voynich-nu-ivtff/RF1b-er.txt	python tools/fetch_data.py
+vx01_bf_rk.py	data/naibbe_zenodo_17219445/Naibbe_Cipher.xlsx	third-party or derived data: fetch it or rebuild it
+vx01_bf_rk.py	data/translit/IT2a.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_bf_rk.py	data/translit/RF1b.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_bf_rk.py	data/translit/ZL3b_eva.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_bf_rk.py	runs/s49/lang_latin_cremma.meta.json	third-party text (transliteration copy)
+vx01_bf_rk_c2.py	data/ZL3b-n.txt	python tools/fetch_data.py
+vx01_bf_rk_c2.py	data/external/voynich-nu-ivtff/IT2a-n.txt	python tools/fetch_data.py
+vx01_bf_rk_c2.py	data/external/voynich-nu-ivtff/RF1b-er.txt	python tools/fetch_data.py
+vx01_bf_rk_c2.py	data/naibbe_zenodo_17219445/Naibbe_Cipher.xlsx	third-party or derived data: fetch it or rebuild it
+vx01_bf_rk_c2.py	data/translit/IT2a.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_bf_rk_c2.py	data/translit/RF1b.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_bf_rk_c2.py	data/translit/ZL3b_eva.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_bf_rk_c2.py	runs/s49/lang_latin_cremma.meta.json	third-party text (transliteration copy)
+vx01_bf_rk_c3.py	data/ZL3b-n.txt	python tools/fetch_data.py
+vx01_bf_rk_c3.py	data/external/voynich-nu-ivtff/IT2a-n.txt	python tools/fetch_data.py
+vx01_bf_rk_c3.py	data/external/voynich-nu-ivtff/RF1b-er.txt	python tools/fetch_data.py
+vx01_bf_rk_c3.py	data/naibbe_zenodo_17219445/Naibbe_Cipher.xlsx	third-party or derived data: fetch it or rebuild it
+vx01_bf_rk_c3.py	data/translit/IT2a.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_bf_rk_c3.py	data/translit/RF1b.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_bf_rk_c3.py	data/translit/ZL3b_eva.meta.json	python tools/build_translit.py (after tools/fetch_data.py)
+vx01_bf_rk_c3.py	runs/s49/lang_latin_cremma.meta.json	third-party text (transliteration copy)
+workflow/research/support_phase1_audit.py	data/external/cremma-medieval-lat-mlc1/data/Arras-861/056r.xml	third-party or derived data: fetch it or rebuild it

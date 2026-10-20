@@ -1,0 +1,2 @@
+# s35 prereg: sha256 of the Phase 3 ledger script (prefix moved from s33 to s35 at 21:34, prefix collision with a peer; no s33 stub was ever frozen); frozen Sat Oct 17 22:19:41 PDT 2026 before the run
+714af357b825594fea7aa027c32c3bf6260b668206af53b2b29e1cda2fcf2a7b *s35_phase3_ledger.py

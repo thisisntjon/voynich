@@ -1,0 +1,68 @@
+--- fixture mutation (identity segmentation): 20 held-out pages, 1600 tokens, 612 events (first-on-page rare cores); N2 section fallback pages 0, N3 length fallback events 0
+    parent rates  real  W 0.3971  V 0.1127  WuV 0.3971
+                  N1    W 0.2405  V 0.0743  WuV 0.2405
+                  N2    W 0.1722  V 0.0592  WuV 0.1722
+                  N3    W 0.1941  V 0.0609  WuV 0.1941
+                  N3t   W 0.1755  V 0.0568  WuV 0.1755
+    ratio vs N1  : W   1.651 [1.603,1.709]  V   1.517 [1.378,1.670]  WV  1.651 [1.603,1.709]
+    ratio vs N2  : W   2.305 [2.142,2.459]  V   1.905 [1.673,2.149]  WV  2.305 [2.142,2.459]
+    ratio vs N3  : W   2.046 [1.939,2.145]  V   1.851 [1.647,2.032]  WV  2.046 [1.939,2.145]
+    ratio vs N3t : W   2.263 [2.148,2.373]  V   1.986 [1.773,2.188]  WV  2.263 [2.148,2.373]
+    end-glyph-only parent share: real 0.7078 (172/243); N1 0.7329, N2 0.7699, N3 0.7945, N3t 0.7922
+    CALL (WuV vs N3 lower bound > 1): mutation  (margin lo-1 = +0.939)
+    C- built: list entries used 612 of 1434, refills 0
+--- fixture C- from mutation text: 20 held-out pages, 1600 tokens, 612 events (first-on-page rare cores); N2 section fallback pages 0, N3 length fallback events 0
+    parent rates  real  W 0.1095  V 0.0327  WuV 0.1095
+                  N1    W 0.1153  V 0.0330  WuV 0.1153
+                  N2    W 0.1133  V 0.0365  WuV 0.1133
+                  N3    W 0.1044  V 0.0305  WuV 0.1044
+                  N3t   W 0.0902  V 0.0256  WuV 0.0902
+    ratio vs N1  : W   0.949 [0.886,1.004]  V   0.990 [0.757,1.203]  WV  0.949 [0.886,1.004]
+    ratio vs N2  : W   0.967 [0.891,1.021]  V   0.895 [0.699,1.072]  WV  0.967 [0.891,1.021]
+    ratio vs N3  : W   1.049 [0.955,1.159]  V   1.072 [0.835,1.294]  WV  1.049 [0.955,1.159]
+    ratio vs N3t : W   1.214 [1.096,1.335]  V   1.278 [0.997,1.537]  WV  1.214 [1.096,1.335]
+    end-glyph-only parent share: real 0.6716 (45/67); N1 0.6421, N2 0.6666, N3 0.6404, N3t 0.6223
+    CALL (WuV vs N3 lower bound > 1): not mutation  (margin lo-1 = -0.045)
+--- fixture list (identity segmentation): 20 held-out pages, 1600 tokens, 642 events (first-on-page rare cores); N2 section fallback pages 0, N3 length fallback events 0
+    parent rates  real  W 0.0343  V 0.0031  WuV 0.0343
+                  N1    W 0.0318  V 0.0069  WuV 0.0318
+                  N2    W 0.0313  V 0.0068  WuV 0.0313
+                  N3    W 0.0333  V 0.0051  WuV 0.0333
+                  N3t   W 0.0349  V 0.0055  WuV 0.0349
+    ratio vs N1  : W   1.077 [0.918,1.201]  V   0.452 [0.000,0.627]  WV  1.077 [0.918,1.201]
+    ratio vs N2  : W   1.096 [0.895,1.251]  V   0.459 [0.000,0.633]  WV  1.096 [0.895,1.251]
+    ratio vs N3  : W   1.028 [0.845,1.173]  V   0.606 [0.000,0.893]  WV  1.028 [0.845,1.173]
+    ratio vs N3t : W   0.983 [0.817,1.122]  V   0.562 [0.000,0.816]  WV  0.983 [0.817,1.122]
+    end-glyph-only parent share: real 0.8636 (19/22); N1 0.8296, N2 0.7967, N3 0.8776, N3t 0.8941
+    CALL (WuV vs N3 lower bound > 1): not mutation  (margin lo-1 = -0.155)
+--- fixture linecopy (identity segmentation): 20 held-out pages, 1600 tokens, 597 events (first-on-page rare cores); N2 section fallback pages 0, N3 length fallback events 0
+    parent rates  real  W 0.3735  V 0.3300  WuV 0.3735
+                  N1    W 0.2283  V 0.0686  WuV 0.2283
+                  N2    W 0.1701  V 0.0564  WuV 0.1701
+                  N3    W 0.2000  V 0.0724  WuV 0.2000
+                  N3t   W 0.1829  V 0.0671  WuV 0.1829
+    ratio vs N1  : W   1.636 [1.590,1.680]  V   4.810 [4.507,5.225]  WV  1.636 [1.590,1.680]
+    ratio vs N2  : W   2.196 [2.096,2.300]  V   5.847 [5.392,6.435]  WV  2.196 [2.096,2.300]
+    ratio vs N3  : W   1.868 [1.764,2.019]  V   4.558 [4.195,5.086]  WV  1.868 [1.764,2.019]
+    ratio vs N3t : W   2.042 [1.909,2.208]  V   4.921 [4.523,5.444]  WV  2.042 [1.909,2.208]
+    end-glyph-only parent share: real 0.6547 (146/223); N1 0.7244, N2 0.7684, N3 0.8177, N3t 0.8241
+    CALL (WuV vs N3 lower bound > 1): mutation  (margin lo-1 = +0.764)
+--- fixture mutation, wrapped words, SlotSegmenter cores: 12 held-out pages, 960 tokens, 243 events (first-on-page rare cores); N2 section fallback pages 0, N3 length fallback events 0
+    parent rates  real  W 0.3333  V 0.0947  WuV 0.3333
+                  N1    W 0.2572  V 0.0866  WuV 0.2572
+                  N2    W 0.2256  V 0.0860  WuV 0.2256
+                  N3    W 0.2386  V 0.0832  WuV 0.2386
+                  N3t   W 0.2370  V 0.0833  WuV 0.2370
+    ratio vs N1  : W   1.296 [1.211,1.353]  V   1.093 [0.943,1.248]  WV  1.296 [1.211,1.353]
+    ratio vs N2  : W   1.478 [1.354,1.578]  V   1.100 [0.925,1.250]  WV  1.478 [1.354,1.578]
+    ratio vs N3  : W   1.397 [1.287,1.486]  V   1.138 [1.002,1.279]  WV  1.397 [1.287,1.486]
+    ratio vs N3t : W   1.406 [1.285,1.503]  V   1.137 [0.992,1.284]  WV  1.406 [1.285,1.503]
+    end-glyph-only parent share: real 0.8395 (68/81); N1 0.8971, N2 0.9256, N3 0.9291, N3t 0.9371
+    CALL (WuV vs N3 lower bound > 1): mutation  (margin lo-1 = +0.287)
+  check mutation called mutation: OK
+  check list not called mutation: OK
+  check C- from mutation text not called mutation: OK
+  check linecopy V vs N1 ratio > 1.5: OK
+  check mutation W vs N1 lower bound > 1: OK
+  check list WuV vs N3 interval includes 1: OK
+FIXTURE PASS

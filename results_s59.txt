@@ -1,0 +1,234 @@
+s59 -- rare-core parents: on-page 1-glyph mutation vs outside list (held-out pages)
+date: Sun Oct 18 01:24:00 PDT 2026 (`date`)
+sha256 s59_rare_core_parents.py: e5b5b79d70b213f83f4b6f3e1b673508574851453b3c283d7a3095df2bf0a2d7
+sha256 s59_rare_core_parents.prereg.sha256: f9d9d506511137e28912d5e5cb00105f2be822674ea891f8f07fdc5aedf71808
+stub_match: True
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import s59_rare_core_parents.py sha256=e5b5b79d70b213f83f4b6f3e1b673508574851453b3c283d7a3095df2bf0a2d7
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+numpy 2.4.6; python 3.11.9 -I; top-20 from training cores; W = preceding 15 tokens; V = line above, index j-1..j+1; nulls 500 draws; interval 500 draws of 80 % of pages without replacement
+
+text ZL3b: data/translit/ZL3b_eva.meta.json sha256=ce233477803a8653; pages 207 -> train 166 / held-out 41; SlotSegmenter 27 prefix / 18 suffix candidates
+  [ZL3b] analysed in 10s (top-20: aiin ain al ar ch che d daiin e ed ee iin k l o ol or r s y; rare training core types 1964)
+--- ZL3b: 41 held-out pages, 8586 tokens, 1893 events (first-on-page rare cores); N2 section fallback pages 4, N3 length fallback events 1
+    parent rates  real  W 0.3703  V 0.1183  WuV 0.3703
+                  N1    W 0.3644  V 0.1207  WuV 0.3644
+                  N2    W 0.3273  V 0.0987  WuV 0.3390
+                  N3    W 0.2327  V 0.0832  WuV 0.2327
+                  N3t   W 0.3157  V 0.1021  WuV 0.3157
+    ratio vs N1  : W   1.016 [0.995,1.035]  V   0.980 [0.940,1.017]  WV  1.016 [0.995,1.035]
+    ratio vs N2  : W   1.132 [1.106,1.158]  V   1.199 [1.142,1.257]  WV  1.092 [1.069,1.118]
+    ratio vs N3  : W   1.591 [1.533,1.651]  V   1.423 [1.347,1.491]  WV  1.591 [1.533,1.651]
+    ratio vs N3t : W   1.173 [1.141,1.206]  V   1.159 [1.108,1.205]  WV  1.173 [1.141,1.206]
+    end-glyph-only parent share: real 0.9173 (643/701); N1 0.9183, N2 0.9244, N3 0.9523, N3t 0.9228
+    CALL (WuV vs N3 lower bound > 1): mutation  (margin lo-1 = +0.533)
+  C- ZL3b: list entries used 1893 of 1964 rare training core types, refills 0
+  [ZL3b C-] analysed in 9s (top-20: aiin ain al ar ch che d daiin e ed ee iin k l o ol or r s y; rare training core types 1964)
+--- ZL3b C-: 41 held-out pages, 8586 tokens, 1893 events (first-on-page rare cores); N2 section fallback pages 4, N3 length fallback events 0
+    parent rates  real  W 0.0882  V 0.0280  WuV 0.0882
+                  N1    W 0.0901  V 0.0254  WuV 0.0901
+                  N2    W 0.0854  V 0.0235  WuV 0.0892
+                  N3    W 0.0862  V 0.0248  WuV 0.0862
+                  N3t   W 0.1629  V 0.0432  WuV 0.1629
+    ratio vs N1  : W   0.979 [0.938,1.019]  V   1.102 [0.945,1.212]  WV  0.979 [0.938,1.019]
+    ratio vs N2  : W   1.033 [0.981,1.089]  V   1.191 [1.032,1.316]  WV  0.989 [0.940,1.044]
+    ratio vs N3  : W   1.024 [0.965,1.081]  V   1.130 [0.978,1.237]  WV  1.024 [0.965,1.081]
+    ratio vs N3t : W   0.542 [0.505,0.577]  V   0.647 [0.547,0.723]  WV  0.542 [0.505,0.577]
+    end-glyph-only parent share: real 0.8922 (149/167); N1 0.8976, N2 0.8958, N3 0.8976, N3t 0.8850
+    CALL (WuV vs N3 lower bound > 1): not mutation  (margin lo-1 = -0.035)
+text ZL3b C+ s1: runs/s57/gen_ZL3b_s1.meta.json sha256=7757f95b22a82c94; train 166 / held-out 41
+  [ZL3b C+ s1] analysed in 9s (top-20: aiin ain al ar ch che ched d e ed ee iin k l o ol or r s y; rare training core types 1860)
+    seed 1 beside: WuV vs N3 1.544 [1.512,1.575], events 1781
+text ZL3b C+ s2: runs/s57/gen_ZL3b_s2.meta.json sha256=56b582c87871088f; train 166 / held-out 41
+  [ZL3b C+ s2] analysed in 10s (top-20: aiin ain al ar ch che d e ed ee iin k l o ol or r s sh y; rare training core types 1788)
+    seed 2 beside: WuV vs N3 1.578 [1.550,1.609], events 1874
+text ZL3b C+ s3: runs/s57/gen_ZL3b_s3.meta.json sha256=e9ce8d36514cde31; train 166 / held-out 41
+  [ZL3b C+ s3] analysed in 10s (top-20: aiin ain al ar ch che d e ed ee iin k l o ol or r s sh y; rare training core types 1846)
+    seed 3 beside: WuV vs N3 1.513 [1.475,1.550], events 1802
+--- ZL3b C+ (s57 producer, seeds 1-3 pooled): 123 held-out pages, 18955 tokens, 5457 events (first-on-page rare cores); N2 section fallback pages 0, N3 length fallback events 0
+    parent rates  real  W 0.4647  V 0.1439  WuV 0.4649
+                  N1    W 0.4130  V 0.1241  WuV 0.4133
+                  N2    W 0.3933  V 0.1213  WuV 0.4003
+                  N3    W 0.3006  V 0.0999  WuV 0.3008
+                  N3t   W 0.3952  V 0.1218  WuV 0.3954
+    ratio vs N1  : W   1.125 [1.113,1.137]  V   1.159 [1.128,1.188]  WV  1.125 [1.113,1.137]
+    ratio vs N2  : W   1.182 [1.169,1.195]  V   1.186 [1.154,1.217]  WV  1.161 [1.149,1.174]
+    ratio vs N3  : W   1.546 [1.527,1.566]  V   1.440 [1.405,1.477]  WV  1.546 [1.526,1.566]
+    ratio vs N3t : W   1.176 [1.163,1.189]  V   1.181 [1.152,1.210]  WV  1.176 [1.162,1.189]
+    end-glyph-only parent share: real 0.8636 (2191/2537); N1 0.9089, N2 0.9188, N3 0.9021, N3t 0.9155
+    CALL (WuV vs N3 lower bound > 1): mutation  (margin lo-1 = +0.526)
+
+text RF1b: data/translit/RF1b.meta.json sha256=c7d9bccba99b2610; pages 207 -> train 166 / held-out 41; SlotSegmenter 28 prefix / 20 suffix candidates
+  [RF1b] analysed in 11s (top-20: aiin ain al ar ch che d daiin e ed ee eed iin k l o ol r s y; rare training core types 2106)
+--- RF1b: 41 held-out pages, 8604 tokens, 1889 events (first-on-page rare cores); N2 section fallback pages 4, N3 length fallback events 0
+    parent rates  real  W 0.3727  V 0.1165  WuV 0.3727
+                  N1    W 0.3688  V 0.1244  WuV 0.3688
+                  N2    W 0.3349  V 0.0991  WuV 0.3457
+                  N3    W 0.2487  V 0.0871  WuV 0.2487
+                  N3t   W 0.3237  V 0.1025  WuV 0.3237
+    ratio vs N1  : W   1.011 [0.991,1.027]  V   0.936 [0.895,0.974]  WV  1.010 [0.991,1.027]
+    ratio vs N2  : W   1.113 [1.090,1.133]  V   1.175 [1.122,1.235]  WV  1.078 [1.057,1.098]
+    ratio vs N3  : W   1.498 [1.450,1.538]  V   1.337 [1.274,1.403]  WV  1.498 [1.450,1.538]
+    ratio vs N3t : W   1.151 [1.121,1.178]  V   1.136 [1.087,1.182]  WV  1.151 [1.121,1.178]
+    end-glyph-only parent share: real 0.9105 (641/704); N1 0.9182, N2 0.9257, N3 0.9562, N3t 0.9269
+    CALL (WuV vs N3 lower bound > 1): mutation  (margin lo-1 = +0.450)
+  C- RF1b: list entries used 1889 of 2106 rare training core types, refills 0
+  [RF1b C-] analysed in 9s (top-20: aiin ain al ar ch che d daiin e ed ee eed iin k l o ol r s y; rare training core types 2106)
+--- RF1b C-: 41 held-out pages, 8604 tokens, 1889 events (first-on-page rare cores); N2 section fallback pages 4, N3 length fallback events 0
+    parent rates  real  W 0.0884  V 0.0206  WuV 0.0884
+                  N1    W 0.0885  V 0.0246  WuV 0.0885
+                  N2    W 0.0835  V 0.0213  WuV 0.0865
+                  N3    W 0.0821  V 0.0223  WuV 0.0821
+                  N3t   W 0.1481  V 0.0373  WuV 0.1481
+    ratio vs N1  : W   0.999 [0.957,1.041]  V   0.839 [0.717,0.966]  WV  0.999 [0.957,1.041]
+    ratio vs N2  : W   1.059 [1.009,1.113]  V   0.971 [0.818,1.133]  WV  1.022 [0.972,1.076]
+    ratio vs N3  : W   1.077 [1.029,1.123]  V   0.928 [0.793,1.062]  WV  1.077 [1.029,1.122]
+    ratio vs N3t : W   0.597 [0.566,0.631]  V   0.554 [0.469,0.631]  WV  0.597 [0.566,0.631]
+    end-glyph-only parent share: real 0.8862 (148/167); N1 0.8837, N2 0.8755, N3 0.8932, N3t 0.8714
+    CALL (WuV vs N3 lower bound > 1): mutation  (margin lo-1 = +0.029)
+text RF1b C+ s1: runs/s57/gen_RF1b_s1.meta.json sha256=cb9407c1be3095d4; train 166 / held-out 41
+  [RF1b C+ s1] analysed in 10s (top-20: aiin ain al ar c ch che d e ed ee iin k l o ol or r s y; rare training core types 1985)
+    seed 1 beside: WuV vs N3 1.614 [1.575,1.652], events 1841
+text RF1b C+ s2: runs/s57/gen_RF1b_s2.meta.json sha256=5ca80563784e9198; train 166 / held-out 41
+  [RF1b C+ s2] analysed in 10s (top-20: aiin ain al ar ch che d e ed ee iin k l o ol or r s sh y; rare training core types 1955)
+    seed 2 beside: WuV vs N3 1.600 [1.565,1.642], events 1958
+text RF1b C+ s3: runs/s57/gen_RF1b_s3.meta.json sha256=093c6ae3c75fd840; train 166 / held-out 41
+  [RF1b C+ s3] analysed in 10s (top-20: aiin ain al ar ch che d e ed ee iin k l o ol or r s sh y; rare training core types 1960)
+    seed 3 beside: WuV vs N3 1.532 [1.499,1.565], events 1844
+--- RF1b C+ (s57 producer, seeds 1-3 pooled): 123 held-out pages, 19026 tokens, 5643 events (first-on-page rare cores); N2 section fallback pages 0, N3 length fallback events 0
+    parent rates  real  W 0.4583  V 0.1439  WuV 0.4583
+                  N1    W 0.3983  V 0.1178  WuV 0.3987
+                  N2    W 0.3771  V 0.1146  WuV 0.3838
+                  N3    W 0.2894  V 0.0950  WuV 0.2897
+                  N3t   W 0.3809  V 0.1168  WuV 0.3812
+    ratio vs N1  : W   1.151 [1.139,1.162]  V   1.222 [1.186,1.256]  WV  1.149 [1.138,1.161]
+    ratio vs N2  : W   1.215 [1.201,1.229]  V   1.255 [1.216,1.294]  WV  1.194 [1.180,1.208]
+    ratio vs N3  : W   1.583 [1.566,1.604]  V   1.515 [1.480,1.552]  WV  1.582 [1.564,1.602]
+    ratio vs N3t : W   1.203 [1.191,1.217]  V   1.232 [1.204,1.260]  WV  1.202 [1.190,1.216]
+    end-glyph-only parent share: real 0.8662 (2240/2586); N1 0.9066, N2 0.9195, N3 0.9106, N3t 0.9146
+    CALL (WuV vs N3 lower bound > 1): mutation  (margin lo-1 = +0.564)
+
+text IT2a: data/translit/IT2a.meta.json sha256=0d0d3e758d1e308b; pages 206 -> train 165 / held-out 41; SlotSegmenter 24 prefix / 19 suffix candidates
+  [IT2a] analysed in 10s (top-20: aiin ain al ar ch che d daiin e ed ee eed k l o ol or r s y; rare training core types 2063)
+--- IT2a: 41 held-out pages, 8411 tokens, 1913 events (first-on-page rare cores); N2 section fallback pages 2, N3 length fallback events 0
+    parent rates  real  W 0.3654  V 0.1181  WuV 0.3654
+                  N1    W 0.3702  V 0.1217  WuV 0.3702
+                  N2    W 0.3269  V 0.0956  WuV 0.3373
+                  N3    W 0.2259  V 0.0778  WuV 0.2259
+                  N3t   W 0.3075  V 0.0943  WuV 0.3075
+    ratio vs N1  : W   0.987 [0.967,1.007]  V   0.971 [0.930,1.011]  WV  0.987 [0.967,1.007]
+    ratio vs N2  : W   1.118 [1.079,1.148]  V   1.235 [1.185,1.296]  WV  1.083 [1.046,1.112]
+    ratio vs N3  : W   1.617 [1.555,1.662]  V   1.519 [1.458,1.588]  WV  1.617 [1.555,1.662]
+    ratio vs N3t : W   1.188 [1.154,1.220]  V   1.253 [1.212,1.295]  WV  1.188 [1.154,1.220]
+    end-glyph-only parent share: real 0.9142 (639/699); N1 0.9197, N2 0.9260, N3 0.9502, N3t 0.9234
+    CALL (WuV vs N3 lower bound > 1): mutation  (margin lo-1 = +0.555)
+  C- IT2a: list entries used 1913 of 2063 rare training core types, refills 0
+  [IT2a C-] analysed in 9s (top-20: aiin ain al ar ch che d daiin e ed ee eed k l o ol or r s y; rare training core types 2063)
+--- IT2a C-: 41 held-out pages, 8411 tokens, 1913 events (first-on-page rare cores); N2 section fallback pages 2, N3 length fallback events 0
+    parent rates  real  W 0.0810  V 0.0204  WuV 0.0810
+                  N1    W 0.0872  V 0.0243  WuV 0.0872
+                  N2    W 0.0825  V 0.0203  WuV 0.0851
+                  N3    W 0.0807  V 0.0208  WuV 0.0807
+                  N3t   W 0.1529  V 0.0365  WuV 0.1529
+    ratio vs N1  : W   0.930 [0.882,0.980]  V   0.839 [0.730,0.925]  WV  0.930 [0.882,0.980]
+    ratio vs N2  : W   0.982 [0.920,1.049]  V   1.005 [0.884,1.102]  WV  0.953 [0.895,1.019]
+    ratio vs N3  : W   1.004 [0.946,1.059]  V   0.978 [0.842,1.091]  WV  1.004 [0.946,1.059]
+    ratio vs N3t : W   0.530 [0.495,0.565]  V   0.558 [0.484,0.622]  WV  0.530 [0.495,0.565]
+    end-glyph-only parent share: real 0.8194 (127/155); N1 0.8767, N2 0.8937, N3 0.8877, N3t 0.8769
+    CALL (WuV vs N3 lower bound > 1): not mutation  (margin lo-1 = -0.054)
+text IT2a C+ s1: runs/s57/gen_IT2a_s1.meta.json sha256=dbbea083b0edd250; train 165 / held-out 41
+  [IT2a C+ s1] analysed in 10s (top-20: aiin ain al ar ch che d e ed ee iin k l o ol or r s sh y; rare training core types 1876)
+    seed 1 beside: WuV vs N3 1.560 [1.527,1.598], events 1745
+text IT2a C+ s2: runs/s57/gen_IT2a_s2.meta.json sha256=b8fba2576697c8d4; train 165 / held-out 41
+  [IT2a C+ s2] analysed in 11s (top-20: aiin ain al ar ch che d e ed ee iin k l o ol or r s sh y; rare training core types 1944)
+    seed 2 beside: WuV vs N3 1.579 [1.554,1.606], events 1891
+text IT2a C+ s3: runs/s57/gen_IT2a_s3.meta.json sha256=44fbc0e112277615; train 165 / held-out 41
+  [IT2a C+ s3] analysed in 8s (top-20: aiin ain al ar c ch che d e ee iin k l o ol or r s sh y; rare training core types 1732)
+    seed 3 beside: WuV vs N3 1.599 [1.556,1.643], events 1544
+--- IT2a C+ (s57 producer, seeds 1-3 pooled): 123 held-out pages, 17849 tokens, 5180 events (first-on-page rare cores); N2 section fallback pages 0, N3 length fallback events 0
+    parent rates  real  W 0.4656  V 0.1465  WuV 0.4658
+                  N1    W 0.4068  V 0.1204  WuV 0.4070
+                  N2    W 0.3916  V 0.1173  WuV 0.3990
+                  N3    W 0.2950  V 0.0972  WuV 0.2951
+                  N3t   W 0.3940  V 0.1205  WuV 0.3942
+    ratio vs N1  : W   1.145 [1.133,1.157]  V   1.217 [1.179,1.252]  WV  1.145 [1.132,1.157]
+    ratio vs N2  : W   1.189 [1.176,1.203]  V   1.249 [1.214,1.285]  WV  1.168 [1.156,1.181]
+    ratio vs N3  : W   1.579 [1.560,1.601]  V   1.507 [1.468,1.544]  WV  1.579 [1.560,1.601]
+    ratio vs N3t : W   1.182 [1.170,1.195]  V   1.216 [1.188,1.242]  WV  1.182 [1.170,1.196]
+    end-glyph-only parent share: real 0.8661 (2090/2413); N1 0.9025, N2 0.9143, N3 0.9026, N3t 0.9085
+    CALL (WuV vs N3 lower bound > 1): mutation  (margin lo-1 = +0.560)
+
+text latin_cremma_prose15: data/controls_realline/cremma_prose15.meta.json sha256=684a9de813a852a4; pages 13 -> train 10 / held-out 3; SlotSegmenter 36 prefix / 34 suffix candidates
+  [latin_cremma_prose15] analysed in 3s (top-20: a b c d e i id m n o q qu r s t u x ⁊ ꝑ ꝙ; rare training core types 1509)
+--- latin_cremma_prose15: 3 held-out pages, 1730 tokens, 622 events (first-on-page rare cores); N2 section fallback pages 1, N3 length fallback events 0
+    parent rates  real  W 0.2106  V 0.0643  WuV 0.2170
+                  N1    W 0.1960  V 0.0709  WuV 0.2001
+                  N2    W 0.1697  V 0.0345  WuV 0.1721
+                  N3    W 0.1793  V 0.0632  WuV 0.1835
+                  N3t   W 0.1834  V 0.0647  WuV 0.1875
+    ratio vs N1  : W   1.075 [1.020,1.130]  V   0.907 [0.743,1.025]  WV  1.085 [1.020,1.143]
+    ratio vs N2  : W   1.241 [1.220,1.271]  V   1.864 [1.176,2.567]  WV  1.261 [1.220,1.298]
+    ratio vs N3  : W   1.175 [1.109,1.231]  V   1.017 [0.801,1.120]  WV  1.183 [1.109,1.240]
+    ratio vs N3t : W   1.149 [1.085,1.200]  V   0.994 [0.771,1.100]  WV  1.158 [1.085,1.212]
+    end-glyph-only parent share: real 0.9778 (132/135); N1 0.9851, N2 0.9862, N3 0.9802, N3t 0.9801
+    CALL (WuV vs N3 lower bound > 1): mutation  (margin lo-1 = +0.109)
+
+text italian_dante: data/controls_realline/italian_dante.meta.json sha256=67180b1154b10b14; pages 101 -> train 81 / held-out 20; SlotSegmenter 34 prefix / 33 suffix candidates
+  [italian_dante] analysed in 31s (top-20: a an d e er h i l m n o ol or qu ques r s t u v; rare training core types 6008)
+--- italian_dante: 20 held-out pages, 20448 tokens, 5784 events (first-on-page rare cores); N2 section fallback pages 0, N3 length fallback events 0
+    parent rates  real  W 0.2087  V 0.0531  WuV 0.2087
+                  N1    W 0.1808  V 0.0567  WuV 0.1808
+                  N2    W 0.1770  V 0.0521  WuV 0.1839
+                  N3    W 0.1675  V 0.0494  WuV 0.1675
+                  N3t   W 0.1771  V 0.0527  WuV 0.1771
+    ratio vs N1  : W   1.154 [1.136,1.173]  V   0.936 [0.897,0.967]  WV  1.154 [1.136,1.173]
+    ratio vs N2  : W   1.179 [1.159,1.202]  V   1.019 [0.964,1.063]  WV  1.134 [1.114,1.158]
+    ratio vs N3  : W   1.246 [1.228,1.266]  V   1.074 [1.036,1.102]  WV  1.246 [1.228,1.266]
+    ratio vs N3t : W   1.178 [1.163,1.197]  V   1.007 [0.974,1.033]  WV  1.178 [1.163,1.197]
+    end-glyph-only parent share: real 0.9768 (1179/1207); N1 0.9737, N2 0.9733, N3 0.9760, N3t 0.9728
+    CALL (WuV vs N3 lower bound > 1): mutation  (margin lo-1 = +0.228)
+
+=== Summary: ratio real/null [95 % page-subsample interval] ===
+text                               events |        W vs N1         |        V vs N1         |        WV vs N1        |        W vs N2         |        V vs N2         |        WV vs N2        |        W vs N3         |        V vs N3         |        WV vs N3       
+ZL3b                                 1893 |    1.02 [0.99,1.03]    |    0.98 [0.94,1.02]    |    1.02 [0.99,1.03]    |    1.13 [1.11,1.16]    |    1.20 [1.14,1.26]    |    1.09 [1.07,1.12]    |    1.59 [1.53,1.65]    |    1.42 [1.35,1.49]    |    1.59 [1.53,1.65]   
+ZL3b C-                              1893 |    0.98 [0.94,1.02]    |    1.10 [0.94,1.21]    |    0.98 [0.94,1.02]    |    1.03 [0.98,1.09]    |    1.19 [1.03,1.32]    |    0.99 [0.94,1.04]    |    1.02 [0.96,1.08]    |    1.13 [0.98,1.24]    |    1.02 [0.96,1.08]   
+ZL3b C+                              5457 |    1.13 [1.11,1.14]    |    1.16 [1.13,1.19]    |    1.12 [1.11,1.14]    |    1.18 [1.17,1.19]    |    1.19 [1.15,1.22]    |    1.16 [1.15,1.17]    |    1.55 [1.53,1.57]    |    1.44 [1.40,1.48]    |    1.55 [1.53,1.57]   
+RF1b                                 1889 |    1.01 [0.99,1.03]    |    0.94 [0.90,0.97]    |    1.01 [0.99,1.03]    |    1.11 [1.09,1.13]    |    1.18 [1.12,1.23]    |    1.08 [1.06,1.10]    |    1.50 [1.45,1.54]    |    1.34 [1.27,1.40]    |    1.50 [1.45,1.54]   
+RF1b C-                              1889 |    1.00 [0.96,1.04]    |    0.84 [0.72,0.97]    |    1.00 [0.96,1.04]    |    1.06 [1.01,1.11]    |    0.97 [0.82,1.13]    |    1.02 [0.97,1.08]    |    1.08 [1.03,1.12]    |    0.93 [0.79,1.06]    |    1.08 [1.03,1.12]   
+RF1b C+                              5643 |    1.15 [1.14,1.16]    |    1.22 [1.19,1.26]    |    1.15 [1.14,1.16]    |    1.22 [1.20,1.23]    |    1.26 [1.22,1.29]    |    1.19 [1.18,1.21]    |    1.58 [1.57,1.60]    |    1.51 [1.48,1.55]    |    1.58 [1.56,1.60]   
+IT2a                                 1913 |    0.99 [0.97,1.01]    |    0.97 [0.93,1.01]    |    0.99 [0.97,1.01]    |    1.12 [1.08,1.15]    |    1.24 [1.18,1.30]    |    1.08 [1.05,1.11]    |    1.62 [1.56,1.66]    |    1.52 [1.46,1.59]    |    1.62 [1.56,1.66]   
+IT2a C-                              1913 |    0.93 [0.88,0.98]    |    0.84 [0.73,0.93]    |    0.93 [0.88,0.98]    |    0.98 [0.92,1.05]    |    1.00 [0.88,1.10]    |    0.95 [0.89,1.02]    |    1.00 [0.95,1.06]    |    0.98 [0.84,1.09]    |    1.00 [0.95,1.06]   
+IT2a C+                              5180 |    1.14 [1.13,1.16]    |    1.22 [1.18,1.25]    |    1.14 [1.13,1.16]    |    1.19 [1.18,1.20]    |    1.25 [1.21,1.29]    |    1.17 [1.16,1.18]    |    1.58 [1.56,1.60]    |    1.51 [1.47,1.54]    |    1.58 [1.56,1.60]   
+latin_cremma_prose15                  622 |    1.07 [1.02,1.13]    |    0.91 [0.74,1.02]    |    1.08 [1.02,1.14]    |    1.24 [1.22,1.27]    |    1.86 [1.18,2.57]    |    1.26 [1.22,1.30]    |    1.17 [1.11,1.23]    |    1.02 [0.80,1.12]    |    1.18 [1.11,1.24]   
+italian_dante                        5784 |    1.15 [1.14,1.17]    |    0.94 [0.90,0.97]    |    1.15 [1.14,1.17]    |    1.18 [1.16,1.20]    |    1.02 [0.96,1.06]    |    1.13 [1.11,1.16]    |    1.25 [1.23,1.27]    |    1.07 [1.04,1.10]    |    1.25 [1.23,1.27]   
+
+=== V-only (line-above echo) and beside statistics ===
+  ZL3b                               V vs N1 0.980 [0.940,1.017]  V vs N2 1.199  V vs N3 1.423 [1.347,1.491]  WuV vs N3t 1.173 [1.141,1.206]  end-glyph share real 0.917 / N1 0.918 / N3 0.952
+  ZL3b C-                            V vs N1 1.102 [0.945,1.212]  V vs N2 1.191  V vs N3 1.130 [0.978,1.237]  WuV vs N3t 0.542 [0.505,0.577]  end-glyph share real 0.892 / N1 0.898 / N3 0.898
+  ZL3b C+                            V vs N1 1.159 [1.128,1.188]  V vs N2 1.186  V vs N3 1.440 [1.405,1.477]  WuV vs N3t 1.176 [1.162,1.189]  end-glyph share real 0.864 / N1 0.909 / N3 0.902
+  RF1b                               V vs N1 0.936 [0.895,0.974]  V vs N2 1.175  V vs N3 1.337 [1.274,1.403]  WuV vs N3t 1.151 [1.121,1.178]  end-glyph share real 0.911 / N1 0.918 / N3 0.956
+  RF1b C-                            V vs N1 0.839 [0.717,0.966]  V vs N2 0.971  V vs N3 0.928 [0.793,1.062]  WuV vs N3t 0.597 [0.566,0.631]  end-glyph share real 0.886 / N1 0.884 / N3 0.893
+  RF1b C+                            V vs N1 1.222 [1.186,1.256]  V vs N2 1.255  V vs N3 1.515 [1.480,1.552]  WuV vs N3t 1.202 [1.190,1.216]  end-glyph share real 0.866 / N1 0.907 / N3 0.911
+  IT2a                               V vs N1 0.971 [0.930,1.011]  V vs N2 1.235  V vs N3 1.519 [1.458,1.588]  WuV vs N3t 1.188 [1.154,1.220]  end-glyph share real 0.914 / N1 0.920 / N3 0.950
+  IT2a C-                            V vs N1 0.839 [0.730,0.925]  V vs N2 1.005  V vs N3 0.978 [0.842,1.091]  WuV vs N3t 0.530 [0.495,0.565]  end-glyph share real 0.819 / N1 0.877 / N3 0.888
+  IT2a C+                            V vs N1 1.217 [1.179,1.252]  V vs N2 1.249  V vs N3 1.507 [1.468,1.544]  WuV vs N3t 1.182 [1.170,1.196]  end-glyph share real 0.866 / N1 0.903 / N3 0.903
+  latin_cremma_prose15               V vs N1 0.907 [0.743,1.025]  V vs N2 1.864  V vs N3 1.017 [0.801,1.120]  WuV vs N3t 1.158 [1.085,1.212]  end-glyph share real 0.978 / N1 0.985 / N3 0.980
+  italian_dante                      V vs N1 0.936 [0.897,0.967]  V vs N2 1.019  V vs N3 1.074 [1.036,1.102]  WuV vs N3t 1.178 [1.163,1.197]  end-glyph share real 0.977 / N1 0.974 / N3 0.976
+
+=== Pre-registered verdict ===
+  ZL3b: real WuV vs N3 -> mutation; C+ PASS (called mutation); C- PASS (not called mutation)
+  RF1b: real WuV vs N3 -> mutation; C+ PASS (called mutation); C- FAIL (not called mutation)
+  IT2a: real WuV vs N3 -> mutation; C+ PASS (called mutation); C- PASS (not called mutation)
+VERDICT: inconclusive: controls failed
+  caveats fixed before the run: N3 controls the window's density but not that the event cores themselves may sit in
+  denser shape neighbourhoods than random rare training types; N1 (same page, positions destroyed) is the cleaner locality
+  test and is printed beside.  The Latin reference has only 3 held-out pages (interval coarse).
+
+date end: Sun Oct 18 01:27:04 PDT 2026 (`date`)
+elapsed: 184.6 s
+paths: ./results_s59.txt, ./runs/s59/cells.json, ./runs/s59/cminus_<T>_cores.json

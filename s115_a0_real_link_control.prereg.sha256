@@ -1,0 +1,8 @@
+# s115_a0_real_link_control prereg stub (sha256sum format, LF, no BOM). Run s115-A0, D-066 (t). Frozen Sun Oct 18 20:26:26 PDT 2026 (clock read with date), before any real scoring.
+# Thresholds (script docstring): ALPHA 0.05, POWER_MIN 0.80, SHUFFLE_MAX 0.10; Voynich-like size (a) N=119 units, noise 0.15; (b) 13 pairs / pool 123; R=200, NPERM=999.
+# REAL_LINK_RECOVERED = CALL_A and CALL_B (each: share of Voynich-size subsamples with p<0.05 >= 0.80 and shuffled-label share <= 0.10); CALL_C NOT_RUN (no body text).
+# Before freezing only --fixture (synthetic) was run: FIXTURE_PASS=True. Real data seen before freezing: caption/pair lists only (no image embedding, no score).
+# Pre-run revision (same clock day, before any real scoring): permutation batch 2e7 -> 3e6 elements to keep free RAM >= 4 GB; fixture re-run PASS.
+# Verify: grep -v "^#" s115_a0_real_link_control.prereg.sha256 | tr -d '\r' | sha256sum -c -
+58a59d8e33fabdda8d007be0b43f5f342a3bf45500b778c1a14e28fd4c83d944 *tools/s115_a0_real_link_control.py
+fe7246e396c2721fb152eb8d5fbb782c920f8d75675c63ebfa445cdbed8cc862 *data/anchor_A0/MANIFEST.sha256

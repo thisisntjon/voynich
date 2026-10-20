@@ -1,0 +1,54 @@
+# s100_star_marker_classes prereg stub, frozen 2026-10-18T20:20:43Z (date -u) after 3-page calibration, before full Quire 20 execution
+# calibration pages (3): f103r (19 stars), f107v (15 stars), f114r (13 stars); ZERO TEXT USED OR INSPECTED (D-065)
+# detection: sc=H/3750.0; rectified strip u in [18*sc, 155*sc] left of 4-quartile p75 xt(y); peak NMS min_dist=50*sc, thr=max(33.0, bg_p20 + 0.25*(pk_p95-bg_p20))
+# Method A (classical thresholding & morphology): filled_A = 1 iff core_ink_val >= 55.0 in r<=10.0*sc (comb = dark + 2.0*rg_exc); tailed_A = 1 iff tail_score >= 9.5 narrow-ridge rows
+# Method B (GPU embeddings + clustering): dinov2-base CLS (L2-norm) on 224x224 continuous core RGB and DoG tail crops -> PCA(3, seed=100) -> KMeans(2, n_init=20, seed=100)
+# decision rule / VERDICT: binary class is RELIABLE iff Cohen_kappa(Method A, Method B) >= 0.60 across all detected Quire 20 stars (expected ~285)
+5a8662ceb31ccc5a07c78b426af29da3bf10c81523812525cbfbfc49baabfd2b *s100_star_marker_classes.py
+6c9c720aca60bec752704467425b35ca9042c078fd69fb200a3802df92541448 *runs/s45/pages/f103r.json
+aec2368026cf441506a58874ece3e064742dac6c1886b3a8e7beb132c0d6c967 *runs/s45/pages/f103v.json
+a7a7b38dea48410ab7d8f0ec55cdf54072254b60fad6d4fceb85e89e73070a0d *runs/s45/pages/f104r.json
+42e20b25755f269f89069413022ea02e0ac321ade06d113dce22f256d89b90c2 *runs/s45/pages/f104v.json
+0abfa97bf944a5df798b364d28e9586c9b3b1e6219e1d09557fe36d635d25ce3 *runs/s45/pages/f105r.json
+eaac8663f2374494561ddbf5596822e0c8fd44a2d4f29837164cc2b3acb11239 *runs/s45/pages/f105v.json
+c7d61e7c9278bf9fc1de000c4f1113c53e382c28c55bd158036c426ee33e06f1 *runs/s45/pages/f106r.json
+5fcd0013cfe8aa165cec342fddeb6a491a3b5d65e424bd0d533c27b227d4cf72 *runs/s45/pages/f106v.json
+57f0ac33e38e13c2431e3a9c6bd2891b93412083d6e004ea2d2ae84a2c4758a3 *runs/s45/pages/f107r.json
+4d62d0e388fe7d53c497b213b5b4c722278a78b4bee999a766cce6d64fa186aa *runs/s45/pages/f107v.json
+afefd707aabbe9f576d05dc15bb1d21accef0406cf9fe8566e3faa16e819b6fd *runs/s45/pages/f108r.json
+405ecf8ed6ca3ec8cc6ea8c6a565c3ea2e730a53a744d4da6b974f843597936b *runs/s45/pages/f108v.json
+0b4aece4ffe1af206c1ee13921ce431593a2b3d1c9ac0af71cee824f6547ec14 *runs/s45/pages/f111r.json
+d1346eabc4aced1fb12d7d680d066c5d7d18912bb71003074fae9b2f48c0319e *runs/s45/pages/f111v.json
+772254e29eeb1538c5ee2a62dbbc70a3d7935869105054756f74383ef33f98ad *runs/s45/pages/f112r.json
+c10c0927fd3d8b29b0c1d0581a0dfb4f0d498ab6de40cbc6d042af257bd3de58 *runs/s45/pages/f112v.json
+be3e096d00edd76940501e067361893c200751ee91833b4e80ed011db8023d71 *runs/s45/pages/f113r.json
+2c39343450b8da43c240c3ee2e11b3239b8d3fe2dcecb6de96b1eb4343999f26 *runs/s45/pages/f113v.json
+245df56798c76230e8c76c6f1dd578f8572e90d0ee03da09ff378eaf32506a83 *runs/s45/pages/f114r.json
+e4e664057e53b9f82768bc228dccc71fb06cb5869e5545be377d4f29e1470de6 *runs/s45/pages/f114v.json
+da56eac85f4e30679d99f7dccda0970b72c866ecd2d690187d16d209d6219e27 *runs/s45/pages/f115r.json
+7a07bd680486e82ed2c475fc86e5c96c6f9fb4af02cb4b3dd0a589137a13072d *runs/s45/pages/f115v.json
+af4160c619b5a099821069e07e92fb2d187aee3b3bcb5078fd5ae5c8c9f20832 *runs/s45/pages/f116r.json
+28a65644ebf9a16dc41c073e6535117d924765fae6af474dbd1e3fe2b167beda *data/external/yale_scans/pages/182_103r.jpg
+dd2444928b8dd5d1e60fbd58e04e4be38ed877f9d491058a7c6b779ceb18a75b *data/external/yale_scans/pages/183_103v.jpg
+2ee5f2a32ed2e242d60dcb34398c9b8be6af0341872a476e3905f1314ebe716f *data/external/yale_scans/pages/184_104r.jpg
+c6caadfdcdcc2afb0351ecb3b9f94cdc8c61be0cf005aa16d16aea024e336ccd *data/external/yale_scans/pages/185_104v.jpg
+0401750e6d83ed74cd4fea79f99c2aba5e2c8dcd90ed0f2641be81c7b722e82f *data/external/yale_scans/pages/186_105r.jpg
+540787c3d0aa7a13c1cc620fe222a13d0b2409eaa69e19de56d2544cfdf3c678 *data/external/yale_scans/pages/187_105v.jpg
+1aad6bd53b227df51ba6f9b19812558a8b4f4313f97dd1a8b272ee4c60fefb31 *data/external/yale_scans/pages/188_106r.jpg
+41e4c5cd7a0b171517dea7724fc3b858ffe38293f043f317061e93a99c47ffc5 *data/external/yale_scans/pages/189_106v.jpg
+eb97d7b784be55eaa92781031d3ccefc3e37f9eda41314a9ed996e711a041a58 *data/external/yale_scans/pages/190_107r.jpg
+46316d4cb82f2ccdd1c8d414ee99ad60f72d6154c28b888d00c484245d75704c *data/external/yale_scans/pages/191_107v.jpg
+afad28189500567259ef2041cd1c591644bf6d6c86ac6a39cd1c09503693ad76 *data/external/yale_scans/pages/192_108r.jpg
+df3fce237ad489c5fcdc1c8dab2a5b21b7c338bc3b88ca588cc79434f9499a7b *data/external/yale_scans/pages/193_108v.jpg
+12ea5325dcdc68d0ea9480bb369d1d95b4dc3accd1ff0d9b84beea8827cfdf31 *data/external/yale_scans/pages/194_111r.jpg
+00729a36de336f57b387fc364441057b31b4bc51f6c5e915352d9185121cbcbf *data/external/yale_scans/pages/195_111v.jpg
+f59b3420ff3fdbe6f360c12993304a12b11acdef1a2978784efcd77541c0d9b3 *data/external/yale_scans/pages/196_112r.jpg
+c421f574928c767cada83c01295370c078b66234610d262e286079a7a5a4cc1a *data/external/yale_scans/pages/197_112v.jpg
+ad748f9012b174be520b7ac837fdadf913e49a696323920ca655ecf5474afb5c *data/external/yale_scans/pages/198_113r.jpg
+d5b4940ea3d934848bf98c751616172339e8f0e587e41aaea15023e1a314eca3 *data/external/yale_scans/pages/199_113v.jpg
+fc76cfcb2e6f8911b3928c59772c9c4eca7854dd2a260bec81972f78b883aa37 *data/external/yale_scans/pages/200_114r.jpg
+159d08488392d651c1818e825d3defce83187ad6997610d179dbfe76be30e4e3 *data/external/yale_scans/pages/201_114v.jpg
+6de34408de10afa401805534c691341824f0660e054d836f9be5e8620cb17668 *data/external/yale_scans/pages/202_115r.jpg
+5700486404459fe1abfc11f6347aa0171bd651e39bcf71d594beecfb170ed8a3 *data/external/yale_scans/pages/203_115v.jpg
+4451503bbcbf9f9ab541c65c630bd37bfb06991c708abf29b2ad184ee09ac20c *data/external/yale_scans/pages/204_116r.jpg
+0f2e8691a66f255159b28f3fc2984633016f96c30c6d4d89cff6396708e5bb17 *data/external/yale_scans/pages/205_116v.jpg

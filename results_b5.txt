@@ -1,0 +1,45 @@
+B5: NMF topic alignment (TF-IDF, 40-word chunks, argmax topic as cluster)
+NMI = normalised mutual information; null = labels permuted among pages/blocks (200x), mean and 99th pct
+rotation null = page-label sequence rotated by every offset (fake sections stay contiguous); p = share of offsets >= observed
+
+[VOYNICH ZL3b] chunks=871 K=8
+   NMI(cluster, illus) = 0.379   perm-null mean 0.055, 99th pct 0.078 | rotation-null mean 0.165, max 0.373, p=0.000
+   NMI(cluster, hand ) = 0.375   perm-null mean 0.043, 99th pct 0.069 | rotation-null mean 0.125, max 0.273, p=0.000
+   NMI(cluster, lang ) = 0.346   perm-null mean 0.021, 99th pct 0.045 | rotation-null mean 0.072, max 0.230, p=0.000
+   within hand 1 {'H': 201, 'P': 58}: NMI(cluster, section) = 0.275  null 0.014 / p99 0.040 | rotation mean 0.056, max 0.271, p=0.000
+   within hand 2 {'H': 58, 'B': 156, 'T': 44}: NMI(cluster, section) = 0.333  null 0.045 / p99 0.104 | rotation mean 0.146, max 0.376, p=0.048
+[NULL token-shuffled] chunks=871 K=8
+   NMI(cluster, illus) = 0.014   perm-null mean 0.015, 99th pct 0.024 | rotation-null mean 0.014, max 0.026, p=0.468
+   NMI(cluster, hand ) = 0.009   perm-null mean 0.012, 99th pct 0.018 | rotation-null mean 0.012, max 0.022, p=0.844
+   NMI(cluster, lang ) = 0.006   perm-null mean 0.006, 99th pct 0.010 | rotation-null mean 0.005, max 0.012, p=0.268
+   within hand 1 {'H': 201, 'P': 58}: NMI(cluster, section) = 0.007  null 0.006 / p99 0.019 | rotation mean 0.008, max 0.050, p=0.427
+   within hand 2 {'H': 58, 'B': 156, 'T': 44}: NMI(cluster, section) = 0.011  null 0.012 / p99 0.027 | rotation mean 0.010, max 0.029, p=0.357
+[SIM self-citation (seeded first line)] chunks=871 K=8
+   NMI(cluster, illus) = 0.098   perm-null mean 0.061, 99th pct 0.095 | rotation-null mean 0.070, max 0.118, p=0.073
+   NMI(cluster, hand ) = 0.106   perm-null mean 0.050, 99th pct 0.083 | rotation-null mean 0.058, max 0.105, p=0.000
+   NMI(cluster, lang ) = 0.079   perm-null mean 0.030, 99th pct 0.062 | rotation-null mean 0.035, max 0.075, p=0.000
+   within hand 1 {'H': 201, 'P': 58}: NMI(cluster, section) = 0.028  null 0.014 / p99 0.048 | rotation mean 0.030, max 0.123, p=0.382
+   within hand 2 {'H': 58, 'B': 156, 'T': 44}: NMI(cluster, section) = 0.108  null 0.097 / p99 0.187 | rotation mean 0.094, max 0.201, p=0.286
+[SIMcal self-citation (seeded)] chunks=871 K=8
+   NMI(cluster, illus) = 0.129   perm-null mean 0.073, 99th pct 0.118 | rotation-null mean 0.080, max 0.145, p=0.020
+   NMI(cluster, hand ) = 0.137   perm-null mean 0.062, 99th pct 0.104 | rotation-null mean 0.070, max 0.116, p=0.000
+   NMI(cluster, lang ) = 0.103   perm-null mean 0.036, 99th pct 0.068 | rotation-null mean 0.042, max 0.087, p=0.000
+   within hand 1 {'H': 201, 'P': 58}: NMI(cluster, section) = 0.002  null 0.013 / p99 0.052 | rotation mean 0.016, max 0.059, p=0.991
+   within hand 2 {'H': 58, 'B': 156, 'T': 44}: NMI(cluster, section) = 0.100  null 0.091 / p99 0.190 | rotation mean 0.124, max 0.198, p=0.762
+[SIM self-citation (global first line)] chunks=871 K=8
+   NMI(cluster, illus) = 0.047   perm-null mean 0.048, 99th pct 0.067 | rotation-null mean 0.046, max 0.082, p=0.459
+   NMI(cluster, hand ) = 0.040   perm-null mean 0.037, 99th pct 0.057 | rotation-null mean 0.037, max 0.072, p=0.337
+   NMI(cluster, lang ) = 0.008   perm-null mean 0.019, 99th pct 0.038 | rotation-null mean 0.019, max 0.049, p=0.961
+   within hand 1 {'H': 201, 'P': 58}: NMI(cluster, section) = 0.031  null 0.013 / p99 0.044 | rotation mean 0.017, max 0.070, p=0.127
+   within hand 2 {'H': 58, 'B': 156, 'T': 44}: NMI(cluster, section) = 0.024  null 0.055 / p99 0.125 | rotation mean 0.054, max 0.093, p=0.976
+[SIMcal self-citation (global)] chunks=871 K=8
+   NMI(cluster, illus) = 0.083   perm-null mean 0.064, 99th pct 0.095 | rotation-null mean 0.067, max 0.123, p=0.244
+   NMI(cluster, hand ) = 0.061   perm-null mean 0.055, 99th pct 0.090 | rotation-null mean 0.059, max 0.103, p=0.429
+   NMI(cluster, lang ) = 0.019   perm-null mean 0.032, 99th pct 0.072 | rotation-null mean 0.036, max 0.082, p=0.956
+   within hand 1 {'H': 201, 'P': 58}: NMI(cluster, section) = 0.024  null 0.014 / p99 0.051 | rotation mean 0.011, max 0.029, p=0.073
+   within hand 2 {'H': 58, 'B': 156, 'T': 44}: NMI(cluster, section) = 0.183  null 0.116 / p99 0.208 | rotation mean 0.124, max 0.234, p=0.095
+
+[CTRL italian_dante] chunks=2552 labels={'inferno': 858, 'purgatorio': 855, 'paradiso': 839}
+   NMI(cluster, label) = 0.017   null 0.002 / p99 0.004 | rotation mean 0.011, max 0.017, p=0.022
+[CTRL latin_augustine] chunks=3414 labels={'primus': 145, 'secundus': 77, 'tertius': 109, 'quartus': 146, 'quintus': 138, 'sextus': 148, 'septimus': 166, 'octavus': 153, 'nonus': 165, 'decimus': 333, 'undecimus': 195, 'duodecimus': 204, 'decimus tertius': 1435}
+   NMI(cluster, label) = 0.155   null 0.015 / p99 0.020 | rotation mean 0.181, max 0.273, p=0.575

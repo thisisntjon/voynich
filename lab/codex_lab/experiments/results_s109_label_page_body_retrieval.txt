@@ -1,0 +1,9 @@
+S109 — quire-controlled label-to-body page retrieval
+freeze_match=True fixture_pass=True seed=109018
+fixture mrr=1.000000 q99=0.562500 top1=1.000000 q99=0.416667
+[quire] groups=4 pages=22 events=173 MRR=0.630303 [0.475910,0.856561] null_q99=0.587577 p=0.001999 top1=0.454545 null_q99=0.409091 p=0.005997 median_rank=2.00
+[register] groups=3 pages=22 events=173 MRR=0.533386 [0.363417,1.000000] null_q99=0.492558 p=0.002499 top1=0.363636 null_q99=0.318182 p=0.009995 median_rank=3.00
+C1_QUIRE_PAGE_LINK=True
+C2_REGISTER_PAGE_LINK=True
+VERDICT=LABEL_PAGE_BODY_ANCHOR_CANDIDATE
+runtime_seconds=5.316

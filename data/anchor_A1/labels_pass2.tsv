@@ -1,0 +1,205 @@
+stem	PT	P_plants	P_root	P_leafshape	P_leafcount	P_flower	P_habit	J_shape	J_count	J_fragcount	J_fragtype	C_centre	C_animal	C_figures	C_rings	C_diagrams	C_rays	B_pools	B_figures	B_tubes	note
+002_1r	NONE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	green oval blotches look like mask fill, treated as no drawing
+003_1v	PLANT	1	TUBER	ELLIPTIC	21+	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	very faded wide root mass at bottom; root uncertain
+004_2r	PLANT	1	BRANCHING	DIVIDED	5-10	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+005_2v	PLANT	1	TUBER	ROUND	1-4	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	faint horizontal root at base, TUBER vs NONE
+006_3r	PLANT	1	BRANCHING	DIVIDED	1-4	0	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	single pinnately divided frond; red stripes not counted as flowers
+007_3v	PLANT	1	TUBER	DIVIDED	5-10	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	long segmented horizontal root: tuber vs taproot borderline
+008_4r	PLANT	1	BRANCHING	ELLIPTIC	21+	1	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	root faint; leaf ratio near 3; ghost offset ignored
+009_4v	PLANT	1	TUBER	LINEAR	21+	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	double-ball root, BULB vs TUBER; star whorls ambiguous
+010_5r	PLANT	1	NONE	DIVIDED	1-4	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaf mass read as one palmately divided leaf; very ambiguous
+011_5v	PLANT	1	TUBER	DIVIDED	21+	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaf count near 20 boundary; ghost offset ignored
+012_6r	PLANT	1	TUBER	DIVIDED	1-4	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	pale masked root, TUBER vs BRANCHING; club heads as flowers
+013_6v	PLANT	1	BRANCHING	DIVIDED	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	palmate star leaves; spiky round heads
+014_7r	PLANT	1	BRANCHING	LINEAR	5-10	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	inner white star read as one flower over leaf whorl
+015_7v	PLANT	1	TAPROOT	ELLIPTIC	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	basal leaf cluster with tall stem; ghost offset ignored
+016_8r	PLANT	1	BRANCHING	ROUND	1-4	0	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	big shallow-lobed leaf; ROUND vs DIVIDED
+017_8v	PLANT	1	TUBER	ELLIPTIC	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	flat horizontal root mass, leaf count near 20
+018_9r	PLANT	1	TUBER	DIVIDED	11-20	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+019_9v	PLANT	1	BRANCHING	DIVIDED	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	mixed leaf types; leaf count near 20
+020_10r	PLANT	1	TUBER	ELLIPTIC	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	blue flower plus pale bud; flower 1 vs 2-4
+021_10v	PLANT	1	TUBER	ELLIPTIC	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	wavy leaf chains hard to count; two nodding flowers
+022_11r	PLANT	1	BRANCHING	ELLIPTIC	21+	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	dense scalloped crown; leaf shape hard to read
+023_11v	PLANT	1	BRANCHING	ROUND	21+	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	dense scale-like leaf mass
+024_13r	PLANT	1	TUBER	ROUND	5-10	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	one terminal spike of many buds; 1 vs 5+
+025_13v	PLANT	1	TUBER	ROUND	21+	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	two stems with scale-like leaf masses
+026_14r	PLANT	1	TUBER	LINEAR	21+	1	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	segmented horizontal rhizome; leaf count near 20
+027_14v	PLANT	1	TUBER	DIVIDED	1-4	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thick cut root arms: tuber vs branching borderline
+028_15r	PLANT	1	TUBER	DIVIDED	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	bead strings on leaf tips counted as fruit; red crown root
+029_15v	PLANT	1	BRANCHING	ELLIPTIC	1-4	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	four broad leaves, curled flower head
+030_16r	PLANT	1	TUBER	DIVIDED	5-10	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thick fingered root; several stems from cut top
+031_16v	PLANT	1	TUBER	DIVIDED	1-4	1	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	red spiky rings read as leaves not flowers; ambiguous
+032_17r	PLANT	1	TUBER	LINEAR	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	two small red swellings on thin root; TUBER vs BULB
+033_17v	PLANT	1	TUBER	ELLIPTIC	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	chain of hairy root swellings; berry clusters
+034_18r	PLANT	1	BRANCHING	ELLIPTIC	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	one head plus three small buds
+035_18v	PLANT	1	TUBER	DIVIDED	11-20	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	round swelling plus lobed horizontal root
+036_19r	PLANT	1	BRANCHING	DIVIDED	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	funnel crown above roots; BRANCHING vs TUBER
+037_19v	PLANT	1	TUBER	LINEAR	21+	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	stump root flaring to roots, TUBER vs BRANCHING
+038_20r	PLANT	1	BRANCHING	DIVIDED	5-10	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	root partly erased by masking; pinnate fronds from base
+039_20v	PLANT	1	BULB	LINEAR	11-20	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	root cut at page edge; side stem joins near base
+040_21r	PLANT	1	TAPROOT	ELLIPTIC	21+	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	radiating sprigs; root only a faint thin line
+041_21v	PLANT	1	TUBER	DIVIDED	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small looped root mass at page bottom
+042_22r	PLANT	1	BRANCHING	ELLIPTIC	11-20	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	three stems from base; many red spikes
+043_22v	PLANT	1	TUBER	DIVIDED	5-10	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	spiny horizontal rhizome; layered leaves read as divided
+044_23r	PLANT	2	TUBER	DIVIDED	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	two stems on shared segmented rhizome; 1 vs 2 plants
+045_23v	PLANT	1	BRANCHING	ROUND	21+	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	side stems branch near base; SINGLE vs MULTI borderline
+046_24r	PLANT	1	BRANCHING	ELLIPTIC	21+	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	hooked leaves with small lobes, DIVIDED vs ELLIPTIC borderline
+047_24v	PLANT	1	BRANCHING	ELLIPTIC	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	round blade with long tail: round vs elliptic
+048_25r	PLANT	1	TAPROOT	ELLIPTIC	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small red buds at nodes, 4 groups ~6 buds
+049_25v	PLANT	1	BRANCHING	LINEAR	11-20	0	ROSETTE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	faint fibrous root; star of lance leaves
+050_26r	PLANT	1	BRANCHING	ROUND	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	flower count taken as individual berries in two clusters
+051_26v	PLANT	1	BRANCHING	DIVIDED	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	pinnate fronds of round leaflets counted as compound
+052_27r	PLANT	2	BRANCHING	ELLIPTIC	5-10	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small second plant at right; leafcount near 4/5 boundary
+053_27v	PLANT	1	TUBER	ELLIPTIC	21+	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	lobed root mass; red-centred flowers
+054_28r	PLANT	1	TUBER	ELLIPTIC	5-10	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	whorl leaf count near 10; three white spikes
+055_28v	PLANT	1	BRANCHING	ELLIPTIC	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ring of curled leaves vs pods ambiguous; ghost offset ignored
+056_29r	PLANT	1	BRANCHING	ELLIPTIC	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	root very faint, diverging lines
+057_29v	PLANT	1	TUBER	DIVIDED	1-4	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	two comb-toothed leaves; horizontal root mass
+058_30r	PLANT	1	NONE	ELLIPTIC	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaf ratio about 3, ELLIPTIC vs LINEAR; root faint or absent
+059_30v	PLANT	1	TUBER	ELLIPTIC	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	horizontal lumpy root; ghost offset at left ignored
+060_31r	PLANT	1	TAPROOT	ELLIPTIC	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	horizontal S-shaped root axis; TAPROOT vs TUBER
+061_31v	PLANT	1	BRANCHING	ELLIPTIC	21+	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	dense block of pointed leaves; leaf shape uncertain
+062_32r	PLANT	1	NONE	ELLIPTIC	21+	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	base shows green strokes only, no root; leaf ratio near 1.5
+063_32v	PLANT	1	TUBER	DIVIDED	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thick horizontal root: tuber vs taproot borderline
+064_33r	PLANT	1	BRANCHING	ELLIPTIC	11-20	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	three flower heads; habit SINGLE vs MULTI
+065_33v	PLANT	1	TUBER	DIVIDED	5-10	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thin roots ending in three round discs
+066_34r	PLANT	1	BULB	DIVIDED	5-10	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small oval swelling at base; leaf incision depth borderline
+067_34v	PLANT	1	TUBER	ROUND	21+	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	massive lobed root; many round leaves
+068_35r	PLANT	1	BRANCHING	ROUND	1-4	1	ROSETTE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	cup-shaped leaf mass on stalk; stem about leaf length; ghost bleedthrough ignored
+069_35v	PLANT	1	TUBER	DIVIDED	1-4	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	foliage crown leaf count uncertain; berry clusters
+070_36r	PLANT	1	TUBER	DIVIDED	11-20	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaf count near 10/11 boundary
+071_36v	PLANT	1	TAPROOT	DIVIDED	11-20	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	palmate leaves; side stem from base
+072_37r	PLANT	1	BRANCHING	LINEAR	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaf ratio near 3, LINEAR vs ELLIPTIC
+073_37v	PLANT	1	TUBER	ELLIPTIC	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	lumpy root with fingers; three blue-headed flowers
+074_38r	PLANT	1	BRANCHING	DIVIDED	1-4	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	single big toothed leaf; white cup at leaf base counted as flower
+075_38v	PLANT	1	BRANCHING	ROUND	21+	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	many diamond leaves; round vs elliptic borderline
+076_39r	PLANT	3+	BRANCHING	ELLIPTIC	5-10	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	row of shoots above separate root band; plant count ambiguous
+077_39v	PLANT	1	TUBER	DIVIDED	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	flared trunk root with many roots; notched leaves
+078_40r	PLANT	1	BRANCHING	DIVIDED	5-10	1	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	two stems from base join into loop below flower
+079_40v	PLANT	2	TUBER	ROUND	1-4	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	cluster of bulbs read as lobed; fringed leaves round vs divided
+080_41r	PLANT	1	TUBER	DIVIDED	11-20	0	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	two-lobed thick root; fan leaves frilled
+081_41v	PLANT	1	TUBER	DIVIDED	5-10	1	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	two spindle tubers; one large blue floret head
+082_42r	PLANT	1	TAPROOT	ROUND	1-4	0	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	red trefoil read as leaf not flower; root axis borderline
+083_42v	PLANT	1	BRANCHING	ELLIPTIC	5-10	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ghost offset at upper left ignored; 6 leaves
+084_43r	PLANT	1	BRANCHING	ELLIPTIC	21+	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	many stems on shared root mat; 1 plant vs 3+
+085_43v	PLANT	2	TUBER	DIVIDED	5-10	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	two plants near-equal height; left taken as principal
+086_44r	PLANT	1	TAPROOT	LINEAR	11-20	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	overlapping leaf fan, count approximate
+087_44v	PLANT	1	BRANCHING	ELLIPTIC	5-10	2-4	ROSETTE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thick brown trunk root vs taproot; habit borderline
+088_45r	PLANT	1	TUBER	ELLIPTIC	21+	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	three stems from tubular root mass
+089_45v	PLANT	1	TUBER	ELLIPTIC	21+	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	long horizontal knobbed rhizome, three stems
+090_46r	PLANT	1	TUBER	ELLIPTIC	11-20	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	three stems on one horizontal rhizome; leaf count near 20
+091_46v	PLANT	1	BRANCHING	ELLIPTIC	1-4	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	fibrous root crown; shallow-toothed leaves
+092_47r	PLANT	1	BULB	ROUND	11-20	0	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	overlapping leaf masses; one lobed leaf vs many leaves
+093_47v	PLANT	1	TUBER	ELLIPTIC	5-10	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	crown with spreading thick roots, TUBER vs BRANCHING
+094_48r	PLANT	1	BRANCHING	DIVIDED	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	stem and roots very faint; outline heads at top
+095_48v	PLANT	1	BRANCHING	DIVIDED	21+	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	faint unpainted root; leaf count near 21
+096_49r	PLANT	1	TUBER	ROUND	1-4	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	cloud-like leaf masses, count unclear
+097_49v	PLANT	1	BULB	ROUND	5-10	0	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	tiny root knob borderline; green curls read as leaves
+098_50r	PLANT	1	BRANCHING	ELLIPTIC	5-10	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+099_50v	PLANT	1	BRANCHING	ELLIPTIC	5-10	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	overlapping leaves; flower head one vs several
+100_51r	PLANT	1	TUBER	DIVIDED	1-4	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thick forked root TUBER vs BRANCHING; finger lobes vs ELLIPTIC
+101_51v	PLANT	1	TUBER	LINEAR	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thick forked root fingers; many blue buds
+102_52r	PLANT	2	TUBER	DIVIDED	11-20	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	two plants on one rhizome; leaf tips incised, DIVIDED borderline
+103_52v	PLANT	1	TUBER	ROUND	5-10	0	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	curled spiny leaves; root swollen vs branching borderline
+104_53r	PLANT	1	TUBER	ELLIPTIC	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	blocky looped root; spiny leaves
+105_53v	PLANT	1	TUBER	LINEAR	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thick cylindrical root, TUBER vs TAPROOT borderline
+106_54r	PLANT	1	BRANCHING	ELLIPTIC	21+	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leafy side branches could be read as compound leaves
+107_54v	PLANT	1	TUBER	ELLIPTIC	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaf ratio near 3, elliptic vs linear borderline
+108_55r	PLANT	1	BULB	DIVIDED	21+	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	cup-shaped crown; BULB vs TUBER; leafcount near 20
+109_55v	PLANT	1	TUBER	ELLIPTIC	11-20	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	flat crown root mass, TUBER vs BRANCHING borderline
+110_56r	PLANT	1	TAPROOT	DIVIDED	21+	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	root partly erased by masking; spiky leaves on coil counted
+111_56v	PLANT	1	BRANCHING	DIVIDED	1-4	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ghost offset at left ignored; tooth depth borderline
+112_57r	PLANT	1	BRANCHING	DIVIDED	11-20	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	root faded and partly masked; root and habit uncertain
+113_57v	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	HUMAN	NA	1-9	4+	1	ABSENT	NA	NA	NA	four figures around small rosette; HUMAN vs GEOMETRIC borderline
+114_58r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	one small outline star top left; near-blank
+115_58v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	single small star top left; text page
+116_65r	PLANT	1	TUBER	DIVIDED	11-20	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	faint unpainted flower umbels at top
+117_65v	PLANT	1	BRANCHING	ROUND	21+	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	round green heads read as leaves, not flowers
+118_66r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	one small figure bottom left; show-through ignored
+119_66v	PLANT	1	BRANCHING	DIVIDED	1-4	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	striped leaf masses read as divided
+120_67r	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	GEOMETRIC	NA	0	4+	2-3	PRESENT	NA	NA	NA	two near-equal diagrams; took right as principal (left: face)
+121_67v	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	FACE	NA	0	2	4+	PRESENT	NA	NA	NA	corrects line 22 (missing B columns); same labels
+122_68r	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	FACE	NA	0	3	2-3	PRESENT	NA	NA	NA	three-panel foldout; right wedge diagram principal
+123_68v	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	EMPTY	NA	0	0-1	2-3	ABSENT	NA	NA	NA	principal=left spiral diagram; curved arms not counted as rays
+124_69r	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	GEOMETRIC	NA	0	3	1	PRESENT	NA	NA	NA	scalloped rim; ring count uncertain
+125_69v_and_70r	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	GEOMETRIC	NA	0	3	2-3	PRESENT	NA	NA	NA	corrects line 21 (missing B columns); same labels
+126_70v_part	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ANIMAL	FISH	20+	4+	1	ABSENT	NA	NA	NA	two fish centre; partial coloured drawing at left edge not counted
+127_70v_part	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ANIMAL	HORNED	10-19	4+	1	ABSENT	NA	NA	NA	horned quadruped centre, two rings of figures
+128_71r	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ANIMAL	HORNED	10-19	3	1	ABSENT	NA	NA	NA	figures in tubs around horned beast
+129_71v_and_72r	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ANIMAL	CRAWLER	20+	3	4+	ABSENT	NA	NA	NA	four diagrams; principal largest rightmost, crustaceans; diameters close
+130_72v_part	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ANIMAL	HORNLESS	20+	4+	2-3	ABSENT	NA	NA	NA	left diagram taken as larger; faint ring lines, count approximate
+131_72v_part	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	GEOMETRIC	NA	20+	4+	1	ABSENT	NA	NA	NA	centre is a balance object; no fitting centre level
+132_73r	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ANIMAL	HORNLESS	20+	3	1	ABSENT	NA	NA	NA	ring count 3 vs 4+ uncertain
+133_73v	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	HUMAN	NA	20+	3	1	ABSENT	NA	NA	NA	central clothed figure with bow; ring count approximate
+134_75r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	11+	PRESENT	long green channel pool, small tub, lower pool
+135_75v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	11+	PRESENT	pool count 2 vs 3 borderline (blue canopy, split lower basin)
+136_76r	NONE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	only writing residue visible
+137_76v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	1-5	PRESENT	few figures in tubs; BATH vs MARGINAL borderline
+138_77r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	1-5	PRESENT	figures in tube-tubs, few true basins; pool count hard
+139_77v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	6-10	PRESENT	six figures in small pools and tubes
+140_78r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2	11+	PRESENT	two oval pools fed by segmented tubes
+141_78v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1	6-10	PRESENT	nine figures in one long green pool with arches
+142_79r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	6-10	PRESENT	vertical chain of basins down left edge; faded green wash
+143_79v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	1-5	PRESENT	faint left-margin figures; green pool with animals; BATH vs OTHER borderline
+144_80r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	11+	PRESENT	long blue channel, small tubs; pool count 2 vs 3+
+145_80v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	6-10	PRESENT	faint figures, masking partly erased drawing
+146_81r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2	11+	PRESENT	two green pools joined by pipe
+147_81v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1	11+	PRESENT	one large green pool with two rows of figures
+148_82r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	11+	PRESENT	big green pool plus several small tubs
+149_82v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	6-10	PRESENT	figures in tubs and green pool; adjacent page edge ignored
+150_83r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	1-5	PRESENT	figures in tube-vessels; arching tube; pool count approximate
+151_83v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	1-5	PRESENT	figures in tube ends; pool count ambiguous
+152_84r	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	11+	PRESENT	three pools linked by blue channel
+153_84v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2	11+	PRESENT	two pools linked by stream; figure count borderline 10-11
+154_85r_part_p8586	NONE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	writing only; slivers of other page at left edge
+155_85r_part_86v_part_p8586	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	FACE	NA	1-9	2	2-3	ABSENT	NA	NA	NA	CORRECTION supersedes earlier row (C_diagrams typo)
+156_86v_part_p8586	OTHER	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	corner cloud shapes and scaled tubes, no circle covering quarter
+157_85v_and_86r_foldout	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	GEOMETRIC	NA	0	4+	4+	ABSENT	NA	NA	NA	nine-panel foldout; principal centre towers and stars
+158_87r	PLANT	1	TUBER	ELLIPTIC	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	knotted root TUBER vs BRANCHING hard; leaf count near 20
+159_87v	PLANT	2	TUBER	DIVIDED	5-10	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	principal right plant; habit rosette vs multi unclear
+160_88r	PHARMA	NA	NA	NA	NA	NA	NA	VASE	3-4	16+	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	jars banded but pedestalled; VASE vs CYLINDER
+161_88v_and_89r	PHARMA	NA	NA	NA	NA	NA	NA	VASE	5+	16+	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	foldout, ornate pedestal vessels, many roots and leaves
+162_89v_part	PHARMA	NA	NA	NA	NA	NA	NA	VASE	3-4	16+	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	many faded fragments; count approximate
+163_89v_part_and_90r	PHARMA	NA	NA	NA	NA	NA	NA	VASE	1-2	6-15	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	foldout: two vase jars plus large whole plants on other panels
+164_90r	PLANT	1	TUBER	DIVIDED	5-10	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	pinnate branches vs leafy twigs ambiguous; root crown BULB/TUBER
+165_90v_part	PLANT	1	TUBER	DIVIDED	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thick limb-like root; leaflets on side stalks
+166_93r	PLANT	1	BRANCHING	LINEAR	11-20	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaf ratio near 3, LINEAR vs ELLIPTIC borderline
+167_93v	PLANT	1	TUBER	LINEAR	21+	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ghost offset plant at left ignored; lobed root
+168_94r	PLANT	1	BRANCHING	DIVIDED	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	fronds from base; habit SINGLE vs MULTI unclear
+169_94v_and_95r	PLANT	3+	TUBER	LINEAR	21+	1	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	three-panel foldout; principal has four lobed tubers
+170_95v_part	PLANT	1	BRANCHING	DIVIDED	1-4	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaflet groups read as compound leaves; berry clusters
+171_95v	PLANT	1	TUBER	DIVIDED	11-20	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	horizontal lobed root mass, many blue flower heads
+172_96r	PLANT	1	BRANCHING	DIVIDED	5-10	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaf whorls read as palmate compound; could be LINEAR 21+
+173_96v	PLANT	1	TUBER	ROUND	21+	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	arrow leaves, berry clusters, elongated hairy root
+174_99r	PHARMA	NA	NA	NA	NA	NA	NA	CYLINDER	3-4	16+	ROOTS	NA	NA	NA	NA	NA	NA	NA	NA	NA	rows of roots beside four jars
+175_99v	PHARMA	NA	NA	NA	NA	NA	NA	CYLINDER	3-4	16+	ROOTS	NA	NA	NA	NA	NA	NA	NA	NA	NA	four jars at left, rows of roots, one leafy plant
+176_100r	PHARMA	NA	NA	NA	NA	NA	NA	CYLINDER	1-2	16+	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	two red jars, about 16 small plants
+177_100v_and_101r	PHARMA	NA	NA	NA	NA	NA	NA	CYLINDER	3-4	16+	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	many small whole plants; jar count uncertain
+178_101v_part	PHARMA	NA	NA	NA	NA	NA	NA	CYLINDER	5+	6-15	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	jar count includes two partial jars at left edge
+179_101v_part_and_102r	PHARMA	NA	NA	NA	NA	NA	NA	CYLINDER	5+	16+	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	foldout three panels, cylinder jars, many small plants and roots
+180_102v_part	PHARMA	NA	NA	NA	NA	NA	NA	CYLINDER	1-2	16+	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	two stacked jars; fragment count near 16 boundary
+181_102v_part	PHARMA	NA	NA	NA	NA	NA	NA	CYLINDER	1-2	6-15	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	two banded jars, roots with leafy tops
+182_103r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small red stars left margin; stain top right
+183_103v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	margin stars; painted edge of adjacent leaf ignored
+184_104r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin
+185_104v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin
+186_105r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small tailed stars down left margin
+187_105v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin only
+188_106r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin
+189_106v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin
+190_107r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars down left margin
+191_107v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin only
+192_108r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin
+193_108v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin
+194_111r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars down left margin
+195_111v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin only
+196_112r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin
+197_112v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin
+198_113r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars down left margin
+199_113v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin only
+200_114r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin
+201_114v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in margin, masked text
+202_115r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars down left margin
+203_115v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin only
+204_116r	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small stars in left margin, faint lines
+205_116v	NONE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	faded blank page, two red dots only

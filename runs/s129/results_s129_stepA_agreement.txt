@@ -1,0 +1,7 @@
+L02: tokens A 48 B 49 edits 15
+L09: tokens A 57 B 55 edits 19
+L13: tokens A 51 B 48 edits 16
+L17: tokens A 49 B 51 edits 13
+L19: tokens A 49 B 51 edits 13
+agreement=0.7066 over 5 lines
+STEP_A_GATE=FAIL

@@ -1,0 +1,13 @@
+# r8 pre-registration, voynich-91 (Roach). Frozen at (clock): 2026-10-18 13:13:45 PDT
+# Task relayed from Skynet 2026-10-18 (r8). Reply-to thread: <team-comms>
+# Fixture run 1 13:02:31 PDT: NOT OK (WEAK stand-in = r7 planted had order ~+0.3, stronger than ciphers B/C). Revision 1 (1 of max 2): weak stand-in (copy 0.15, chain 0.05); fixture check on ORACLE cores.
+# Fixture run 2 13:07:58 PDT: FIXTURE CHECK OK (ORACLE: WEAK HOLDS 2/3 settings, STRONG NOT HOLDS 1/3). Info: WEAK S1 HOLDS, S2 NOT HOLDS.
+# Cipher: Latin letter stream (PG18837); core glyphs {k,t,p,f,e,o,a,i,d}; per-line table of 3 (prefix,suffix) pairs from r3 lists+empty; ZL layout, 35,075 words.
+# Settings: A letter h=3 len 2-3 ; B letter h=6 len 2-3 ; C 2-letter chunk h=2 len 3-4. Segmenters: S1 (r3 lists), S2 (r7 MDL, fitted on each text). Generator boundaries not used.
+# Measures per LOQO fold (15): (a) MM-MI excess K=100 over 200 within-line shuffles; (b) R_within(1) vs exact within-line expectation (r7.fold_measures).
+# CALL: a setting supports under a segmenter if cipher(a) > Voynich(a) AND cipher(b) < Voynich(b) on >= 8 of 15 folds; claim HOLDS under that segmenter if >= 2 of 3 settings support. Per segmenter.
+# Verify: grep -v "^#" r8.prereg.sha256 | tr -d '\r' | sha256sum -c -
+d5fe0de371e44576ab4e2caeb76cc9ce617ba0b4b640c5d54a226fbe63a722c6  r8.py
+0d5e65db45b3c410bfbcab5b56d45adaab09b09c9af007b3546538a5b9f69b96  ../r7/r7.py
+bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc  ../dl_ZL/ZL3b-n.txt
+8bae4d88747b318b58ea193f981766fed337ddf613df452c1a06d72c9af75ffd  ../r3/dl_PG18837/pg18837.txt

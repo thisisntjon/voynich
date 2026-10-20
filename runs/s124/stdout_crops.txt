@@ -1,0 +1,45 @@
+s124 stage crops device cuda:0
+FIXTURE strong seed 0: n_obj 358 T +0.1307 p 0.0005 AUC 0.703 -> GROUPED_BY_PAGE
+FIXTURE strong seed 1: n_obj 391 T +0.1424 p 0.0005 AUC 0.718 -> GROUPED_BY_PAGE
+FIXTURE strong seed 2: n_obj 352 T +0.1187 p 0.0005 AUC 0.669 -> GROUPED_BY_PAGE
+FIXTURE strong seed 3: n_obj 363 T +0.1199 p 0.0005 AUC 0.673 -> GROUPED_BY_PAGE
+FIXTURE strong seed 4: n_obj 385 T +0.1400 p 0.0005 AUC 0.723 -> GROUPED_BY_PAGE
+FIXTURE strong seed 5: n_obj 375 T +0.1271 p 0.0005 AUC 0.689 -> GROUPED_BY_PAGE
+FIXTURE strong seed 6: n_obj 379 T +0.1460 p 0.0005 AUC 0.728 -> GROUPED_BY_PAGE
+FIXTURE strong seed 7: n_obj 381 T +0.1329 p 0.0005 AUC 0.689 -> GROUPED_BY_PAGE
+FIXTURE strong seed 8: n_obj 369 T +0.1315 p 0.0005 AUC 0.697 -> GROUPED_BY_PAGE
+FIXTURE strong seed 9: n_obj 377 T +0.1304 p 0.0005 AUC 0.699 -> GROUPED_BY_PAGE
+FIXTURE absent seed 0: n_obj 357 T -0.0010 p 0.4923 AUC 0.497 -> NOT_GROUPED
+FIXTURE absent seed 1: n_obj 353 T +0.0010 p 0.1014 AUC 0.498 -> NOT_GROUPED
+FIXTURE absent seed 2: n_obj 361 T -0.0044 p 0.9070 AUC 0.492 -> NOT_GROUPED
+FIXTURE absent seed 3: n_obj 381 T +0.0003 p 0.9270 AUC 0.502 -> NOT_GROUPED
+FIXTURE absent seed 4: n_obj 391 T -0.0002 p 0.9005 AUC 0.503 -> NOT_GROUPED
+FIXTURE absent seed 5: n_obj 374 T -0.0007 p 0.6972 AUC 0.502 -> NOT_GROUPED
+FIXTURE absent seed 6: n_obj 386 T +0.0046 p 0.0985 AUC 0.510 -> NOT_GROUPED
+FIXTURE absent seed 7: n_obj 354 T -0.0010 p 0.8636 AUC 0.498 -> NOT_GROUPED
+FIXTURE absent seed 8: n_obj 347 T -0.0002 p 0.7576 AUC 0.501 -> NOT_GROUPED
+FIXTURE absent seed 9: n_obj 351 T +0.0022 p 0.3283 AUC 0.506 -> NOT_GROUPED
+FIXTURE weak   seed 0: n_obj 361 T +0.0218 p 0.0005 AUC 0.533 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 1: n_obj 367 T +0.0275 p 0.0005 AUC 0.542 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 2: n_obj 369 T +0.0155 p 0.0005 AUC 0.520 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 3: n_obj 389 T +0.0279 p 0.0005 AUC 0.545 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 4: n_obj 355 T +0.0208 p 0.0005 AUC 0.531 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 5: n_obj 396 T +0.0210 p 0.0005 AUC 0.536 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 6: n_obj 371 T +0.0135 p 0.0005 AUC 0.522 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 7: n_obj 376 T +0.0277 p 0.0005 AUC 0.543 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 8: n_obj 366 T +0.0162 p 0.0005 AUC 0.530 -> GROUPED_BY_PAGE
+FIXTURE weak   seed 9: n_obj 410 T +0.0201 p 0.0005 AUC 0.529 -> GROUPED_BY_PAGE
+FIXTURE strong GROUPED 10/10 (need >= 8); absent NOT_GROUPED 10/10 (need >= 8); weak GROUPED 10/10 (reported)
+FIXTURE_GATE PASS
+Voynich: 334 plant-part objects, 67 jar-like, units 17
+hc00 f88v_p1 obj 00 bbox_frac [0.239, 0.018, 0.11, 0.059] area_frac 0.0026
+hc01 f89r1_p1 obj 03 bbox_frac [0.379, 0.097, 0.067, 0.046] area_frac 0.0002
+hc02 f89r2_p1 obj 21 bbox_frac [0.079, 0.554, 0.111, 0.106] area_frac 0.0032
+hc03 f89r2_p1 obj 26 bbox_frac [0.106, 0.761, 0.18, 0.189] area_frac 0.0076
+hc04 f89v2_p1 obj 20 bbox_frac [0.879, 0.758, 0.061, 0.064] area_frac 0.0010
+hc05 f99r_p1 obj 08 bbox_frac [0.108, 0.288, 0.152, 0.122] area_frac 0.0075
+hc06 f99v_p1 obj 03 bbox_frac [0.707, 0.05, 0.056, 0.061] area_frac 0.0009
+hc07 f100r_p1 obj 10 bbox_frac [0.183, 0.233, 0.052, 0.048] area_frac 0.0004
+hc08 f101r_p1 obj 09 bbox_frac [0.115, 0.083, 0.08, 0.108] area_frac 0.0022
+hc09 f101v_p1 obj 13 bbox_frac [0.64, 0.124, 0.114, 0.065] area_frac 0.0015
+elapsed 224s

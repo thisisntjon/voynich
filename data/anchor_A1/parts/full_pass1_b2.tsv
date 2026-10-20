@@ -1,0 +1,51 @@
+003_1v	PLANT	1	TUBER	ELLIPTIC	21+	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	faint lumpy horizontal root mass at base
+007_3v	PLANT	1	TUBER	DIVIDED	5-10	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	elongated horizontal root; show-through plant ignored
+011_5v	PLANT	1	TUBER	DIVIDED	21+	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaf count near 20 boundary
+015_7v	PLANT	1	TAPROOT	ELLIPTIC	11-20	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	basal rosette plus tall stem; leaf count near 20
+019_9v	PLANT	1	BRANCHING	DIVIDED	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	lower leaves linear, upper lobed; leafshape close call
+023_11v	PLANT	1	BRANCHING	ROUND	21+	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	scale-like leaves in dense crown treated as leaves
+027_14v	PLANT	1	TUBER	DIVIDED	1-4	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thick finger-like cut roots; deep toothed leaves
+031_16v	PLANT	1	TUBER	DIVIDED	1-4	1	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	red spiky rings judged leaves not flowers; ambiguous
+035_18v	PLANT	1	TUBER	DIVIDED	11-20	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+039_20v	PLANT	1	BULB	LINEAR	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	root dome cut off at page edge; bulb vs tuber unsure
+043_22v	PLANT	1	TUBER	ELLIPTIC	5-10	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	pleated fan leaves; shape ambiguous
+047_24v	PLANT	1	BRANCHING	ROUND	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	roots with small swellings, not one mass
+051_26v	PLANT	1	BRANCHING	DIVIDED	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	pinnate leaves counted as compound units
+055_28v	PLANT	1	BRANCHING	LINEAR	11-20	0	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ring of narrow leaves; small side object not counted flower
+059_30v	PLANT	1	TUBER	ELLIPTIC	5-10	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+063_32v	PLANT	1	TUBER	DIVIDED	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thick elongated root, tuber vs taproot; buds counted as flowers
+067_34v	PLANT	1	TUBER	ROUND	21+	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	massive lobed root; tuber vs branching
+071_36v	PLANT	1	TAPROOT	DIVIDED	11-20	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	side stem near base; single vs multi unsure
+075_38v	PLANT	1	BRANCHING	ELLIPTIC	21+	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	diamond leaves near round/elliptic boundary
+079_40v	PLANT	2	TUBER	DIVIDED	1-4	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	cluster of small bulbs; bulb vs tuber unsure
+083_42v	PLANT	1	BRANCHING	ELLIPTIC	5-10	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+087_44v	PLANT	1	TAPROOT	DIVIDED	5-10	2-4	ROSETTE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	thick trunk root forking at bottom; habit unsure
+091_46v	PLANT	1	BRANCHING	ELLIPTIC	1-4	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	serrated leaves, teeth judged shallow
+095_48v	PLANT	1	BRANCHING	DIVIDED	21+	2-4	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	faint unpainted root outline
+099_50v	PLANT	1	BRANCHING	ROUND	5-10	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	overlapping leaf layers hard to count; flower count unsure
+103_52v	PLANT	1	TUBER	ROUND	5-10	0	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	curled spiny leaves; round vs divided unsure
+107_54v	PLANT	1	TUBER	LINEAR	11-20	5+	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaf ratio near 3, linear vs elliptic
+111_56v	PLANT	1	BRANCHING	DIVIDED	1-4	1	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	-
+115_58v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	small star only; adjacent-page plant at edge ignored
+119_66v	PLANT	1	BRANCHING	DIVIDED	1-4	2-4	SINGLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	striped fan leaves read as divided
+123_68v	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	EMPTY	NA	0	3	2-3	ABSENT	NA	NA	NA	spiral arms curved; ring count uncertain
+127_70v_part	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	ANIMAL	HORNED	10-19	4+	1	ABSENT	NA	NA	NA	horned quadruped centre; ring count approximate
+131_72v_part	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	GEOMETRIC	NA	20+	4+	1	ABSENT	NA	NA	NA	centre is a balance object, no category fits well
+135_75v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	11+	PRESENT	lower pool may be one or two basins
+139_77v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	6-10	PRESENT	adjacent-page drawings at edges ignored
+143_79v	OTHER	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	pipes, pool with fish/animals; only one clear human; BATH borderline
+147_81v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1	11+	PRESENT	-
+151_83v	BATH	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3+	1-5	PRESENT	figures in tube ends; pool count depends on tubs
+155_85r_part_86v_part_p8586	CIRCLE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	FACE	NA	1-9	2	2-3	ABSENT	NA	NA	NA	principal (left vs middle) near tie; rings hard to count
+159_87v	PLANT	2	TUBER	DIVIDED	5-10	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	flower clusters counted as many flowers
+163_89v_part_and_90r	PHARMA	NA	NA	NA	NA	NA	NA	VASE	1-2	6-15	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	foldout: jars panel plus two large whole plants
+167_93v	PLANT	1	TUBER	LINEAR	21+	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	leaf whorls of narrow leaves counted individually
+171_95v	PLANT	1	TUBER	DIVIDED	11-20	5+	MULTI	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	two stems on one horizontal root; one vs two plants
+175_99v	PHARMA	NA	NA	NA	NA	NA	NA	CYLINDER	3-4	16+	ROOTS	NA	NA	NA	NA	NA	NA	NA	NA	NA	fragment count near 16-20
+179_101v_part_and_102r	PHARMA	NA	NA	NA	NA	NA	NA	CYLINDER	5+	16+	MIXED	NA	NA	NA	NA	NA	NA	NA	NA	NA	foldout; many small whole plants
+183_103v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	margin stars only
+187_105v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	margin stars only
+191_107v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	margin stars only
+195_111v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	margin stars only
+199_113v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	margin stars only
+203_115v	MARGINAL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	margin stars only

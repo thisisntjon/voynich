@@ -1,0 +1,54 @@
+# PREREG-v2 score: RF1b_B  family=-  run=2026-10-17 19:48 (system clock)  seed=20261017
+# source: data/translit/RF1b.meta.json
+# data/translit/RF1b.meta.json; 34618 tokens full; lang=B: 83/207 pages
+# v1 bands: scoreboard/score.py via path + g0 band checks; extras: scoreboard/metrics_new.py; sample cap 25000 (non-Voynich)
+# pages=83 lines=2478 tokens=23028 types=4945 sections=['B', 'C', 'H', 'S', 'T'] hands=5 langs=['B']
+
+    v1 0.9s
+    extra 2.0s
+    info 1.5s
+    lex 4.0s
+    slot 0.2s
+    bake 3.8s
+
+# ranges: results_n6_ranges_B23k.json (run n6 matched 23078); X range absent -> X printed NA
+=== v1 seven bands (frozen; PREREG v1 thresholds) ===
+band                      value           band   ok    L    C    G
+h2                       2.0084      1.98-2.28   ok  OUT  OUT   IN
+sd_len                   1.7860      1.41-2.11   ok   IN   IN   IN
+jsd_first_fg             0.2244         >=0.10   ok  OUT  OUT  OUT
+p_init_enrich           23.6200           >=x8   ok  OUT   NA  OUT
+m_final_enrich          32.5200           >=x8   ok  OUT   NA  OUT
+cross_excess_eva         0.2259        >=+0.09   ok  OUT  OUT  OUT
+redup_pct                0.8250       0.4-1.8%   ok  OUT  OUT   IN
+v1 joint: PASS  missed: -
+
+=== v2 extras (metrics_new) ===
+metric                            value      class    L    C    G  tightLCG ovl
+x_edge_mi_word                   0.2332   WEIGHTED  OUT  OUT  OUT       .tt  no
+types_25k                     4945.0000  WEIGHTED*   IN  OUT   IN       ...  no
+x_position_entropy               1.6038   WEIGHTED  OUT   IN   IN       t.t  no
+x_ltr_minus_rtl                  0.0064   WEIGHTED  OUT  OUT   IN       t.t  no
+x_moran_I                        0.1535   WEIGHTED  OUT  OUT  OUT       .tt yes
+lex_beta                         0.7506   WEIGHTED   IN  OUT   IN       .t. yes
+lex_rate_late_early              0.5390   WEIGHTED   IN   IN   IN       tt. yes
+lex_edit1_excess                 0.0734   WEIGHTED   IN  OUT   IN       ttt yes
+slot_occupancy_pc                0.0827   WEIGHTED  OUT   IN   IN       ttt yes
+slot_table_likeness              0.6540   WEIGHTED   IN  OUT   IN       .tt yes
+slot_core_crowding               0.8334   WEIGHTED   IN   IN   IN       ttt yes
+info_mi_adjacent                 0.1617   WEIGHTED   IN  OUT   IN       .tt yes
+info_samecol_minus_othercol     -0.0011   WEIGHTED   IN   IN   IN       ttt yes
+bake_char3_minus_unigram        -0.6081   WEIGHTED   IN   IN   IN       ... yes
+x_hapax_10k                      0.6881     REPORT   IN  OUT   IN       .t. yes
+info_mi_page                     0.0056     REPORT   IN  OUT   IN       ttt yes
+info_bpe_adjacent                1.2487     REPORT  OUT  OUT  OUT       ...  no
+bake_winner: markov2  bake bits: markov2=11.356 markov3=11.428 slot=12.185 unigram_gt=12.036 copy0.3+markov3=11.707 copy0.1+markov3=11.463 copy0.05+markov3=11.425
+
+=== per-family in/out (weighted metrics = v1 bands + WEIGHTED extras, minus the ranges file's no-weight list) ===
+  L: in= 1 out= 9 na= 0  out: h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl  | tight-outs (7): h2, jsd_first_fg, p_init_enrich, m_final_enrich, redup_pct, x_position_entropy, x_ltr_minus_rtl
+  C: in= 1 out= 7 na= 2  out: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_ltr_minus_rtl  | tight-outs (5): h2, jsd_first_fg, cross_excess_eva, redup_pct, x_edge_mi_word
+  G: in= 5 out= 5 na= 0  out: jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, x_edge_mi_word  | tight-outs (4): jsd_first_fg, m_final_enrich, cross_excess_eva, x_edge_mi_word
+  weighted metrics (10): h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_position_entropy, x_ltr_minus_rtl
+  (kill = >=3 weighted outs on tight ranges; favoured = fewest outs by >=2; both need the A/B rule of PREREG-v2 §6)
+
+provenance sha256[:16]: {'score.py': '3a7b7c3efea13b88', 'metrics_new.py': 'a59c9c17f8abe4cc', 'run_v2.py': '7dfdc9f75de5980a'}

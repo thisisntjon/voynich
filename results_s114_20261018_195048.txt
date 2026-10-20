@@ -1,0 +1,93 @@
+s114 whole-book quire omnibus -- REAL RUN. Design DECISIONS.md D-066 (s). started 2026-10-18 19:50:48 PDT; BelowNormal, 1 core
+script tools/s114_quire_omnibus.py sha256 23a16011bb41b76eb10903eb2be4931db08a13afd1c02156f19265113e4d662b; stub s114_quire_omnibus.prereg.sha256 verified (4 files) sha256 d32e4bc2086974305040f52a7c7a2c624caa16455239defdb1ed801fd1641f01; VKB data\vkb\vkb.sqlite sha256 6615aae975844410613729f2efab7a9c726354c8bd49c72d6eebd104d1b3a1f9 build 2026-10-18 17:21; B=10000, sims=200, seed 20261018, min tokens 100
+
+==== ZL3b (primary); Test-A set (43): Rw1, final:l, final:m, final:n, final:r, final:s, final:y, h1, h1_50, h2, h2_50, init:d, init:o, init:q, init:s, init:t, init:y, label_share, lag1_wlen, mean_wlen, n_lines, n_tokens, pfx:a, pfx:ch, pfx:che, pfx:cho, pfx:k, pfx:o, pfx:ok, pfx:qok, pfx:qot, pfx:she, sfx:ain, sfx:al, sfx:ar, sfx:eey, sfx:hy, sfx:o, sfx:ol, sfx:or, sfx:s, sfx:y, ttr_50
+-- ZL3b: 107 folios, 13 hand x section cells, 15 quires; Test A features scored 43/43
+Test A ZL3b: omnibus T=4.8077 null mean=3.4738 null 99th=4.3059 p=0.00010
+  descriptive sub-omnibus (affix/word-length families only, 34 features, not a call): p=0.00010
+  per-feature contributions (DESCRIPTIVE ONLY; excess = eta2 - null mean), top 12 of 43:
+  feature            n    eta2    null  excess   p_feat
+  sfx:al           107   0.234   0.083   0.151   0.0021
+  pfx:ch           107   0.238   0.100   0.138   0.0113
+  h1_50            107   0.219   0.085   0.134   0.0039
+  pfx:che          107   0.199   0.077   0.122   0.0048
+  sfx:o            107   0.204   0.083   0.121   0.0064
+  h1               107   0.192   0.083   0.109   0.0090
+  sfx:ol           107   0.180   0.072   0.108   0.0055
+  sfx:s            107   0.175   0.081   0.094   0.0171
+  pfx:o            107   0.162   0.079   0.083   0.0310
+  final:s          107   0.162   0.090   0.072   0.0616
+  pfx:cho          107   0.139   0.070   0.069   0.0324
+  sfx:eey          107   0.150   0.085   0.065   0.0682
+  MDE scan ZL3b: f=0.1 SD power=0.035
+  MDE scan ZL3b: f=0.2 SD power=0.060
+  MDE scan ZL3b: f=0.3 SD power=0.165
+  MDE scan ZL3b: f=0.4 SD power=0.305
+  MDE scan ZL3b: f=0.5 SD power=0.565
+  MDE scan ZL3b: f=0.6 SD power=0.660
+  MDE scan ZL3b: f=0.7 SD power=0.810
+Test B ZL3b: MDE = 0.7 SD (80% power, alpha 0.05, 200 sims; computed before the Test B p-value)
+Test B ZL3b: omnibus T=0.2863 null mean=0.1753 p=0.04500; Rw1_line eta2=0.139 p=0.1677 (descriptive); rhythm_excess eta2=0.147 p=0.0436 (descriptive)
+
+==== RF1b (replication); Test-A set (43): Rw1, final:l, final:m, final:n, final:r, final:s, final:y, h1, h1_50, h2, h2_50, init:d, init:o, init:q, init:s, init:t, init:y, label_share, lag1_wlen, mean_wlen, n_lines, n_tokens, pfx:a, pfx:ch, pfx:che, pfx:cho, pfx:k, pfx:o, pfx:ok, pfx:qok, pfx:qot, pfx:she, sfx:ain, sfx:al, sfx:ar, sfx:eey, sfx:hy, sfx:o, sfx:ol, sfx:or, sfx:s, sfx:y, ttr_50
+-- RF1b: 100 folios, 12 hand x section cells, 14 quires; Test A features scored 43/43
+Test A RF1b: omnibus T=5.3604 null mean=3.7068 null 99th=4.5714 p=0.00010
+  descriptive sub-omnibus (affix/word-length families only, 34 features, not a call): p=0.00010
+  per-feature contributions (DESCRIPTIVE ONLY; excess = eta2 - null mean), top 12 of 43:
+  feature            n    eta2    null  excess   p_feat
+  pfx:ch           100   0.280   0.111   0.169   0.0059
+  sfx:o            100   0.226   0.084   0.142   0.0023
+  h1_50            100   0.222   0.089   0.133   0.0048
+  h1               100   0.223   0.092   0.131   0.0061
+  sfx:ol           100   0.208   0.087   0.121   0.0124
+  pfx:o            100   0.200   0.080   0.120   0.0053
+  pfx:che          100   0.186   0.077   0.108   0.0129
+  sfx:y            100   0.170   0.066   0.104   0.0038
+  pfx:cho          100   0.164   0.076   0.087   0.0173
+  sfx:al           100   0.181   0.094   0.087   0.0414
+  sfx:eey          100   0.170   0.084   0.086   0.0303
+  final:l          100   0.169   0.086   0.083   0.0340
+  MDE scan RF1b: f=0.1 SD power=0.080
+  MDE scan RF1b: f=0.2 SD power=0.060
+  MDE scan RF1b: f=0.3 SD power=0.130
+  MDE scan RF1b: f=0.4 SD power=0.295
+  MDE scan RF1b: f=0.5 SD power=0.420
+  MDE scan RF1b: f=0.6 SD power=0.570
+  MDE scan RF1b: f=0.7 SD power=0.770
+  MDE scan RF1b: f=0.8 SD power=0.845
+Test B RF1b: MDE = 0.8 SD (80% power, alpha 0.05, 200 sims; computed before the Test B p-value)
+Test B RF1b: omnibus T=0.2945 null mean=0.1965 p=0.07189; Rw1_line eta2=0.155 p=0.1776 (descriptive); rhythm_excess eta2=0.139 p=0.0950 (descriptive)
+
+==== IT2a (replication); Test-A set (43): Rw1, final:l, final:m, final:n, final:r, final:s, final:y, h1, h1_50, h2, h2_50, init:d, init:o, init:q, init:s, init:t, init:y, label_share, lag1_wlen, mean_wlen, n_lines, n_tokens, pfx:a, pfx:ch, pfx:che, pfx:cho, pfx:k, pfx:o, pfx:ok, pfx:qok, pfx:qot, pfx:she, sfx:ain, sfx:al, sfx:ar, sfx:eey, sfx:hy, sfx:o, sfx:ol, sfx:or, sfx:s, sfx:y, ttr_50
+-- IT2a: 101 folios, 13 hand x section cells, 15 quires; Test A features scored 43/43
+Test A IT2a: omnibus T=5.1101 null mean=3.5706 null 99th=4.4113 p=0.00010
+  descriptive sub-omnibus (affix/word-length families only, 34 features, not a call): p=0.00020
+  per-feature contributions (DESCRIPTIVE ONLY; excess = eta2 - null mean), top 12 of 43:
+  feature            n    eta2    null  excess   p_feat
+  sfx:al           101   0.253   0.085   0.168   0.0006
+  pfx:ch           101   0.270   0.104   0.166   0.0056
+  pfx:cho          101   0.205   0.073   0.132   0.0007
+  sfx:o            101   0.202   0.087   0.115   0.0070
+  sfx:eey          101   0.193   0.085   0.108   0.0175
+  sfx:y            101   0.165   0.066   0.098   0.0094
+  h1_50            101   0.177   0.087   0.090   0.0291
+  h1               101   0.174   0.088   0.086   0.0373
+  pfx:che          101   0.163   0.078   0.085   0.0305
+  pfx:o            101   0.155   0.079   0.075   0.0351
+  final:l          101   0.158   0.085   0.073   0.0477
+  sfx:ain          101   0.140   0.071   0.069   0.0303
+  MDE scan IT2a: f=0.1 SD power=0.030
+  MDE scan IT2a: f=0.2 SD power=0.115
+  MDE scan IT2a: f=0.3 SD power=0.170
+  MDE scan IT2a: f=0.4 SD power=0.305
+  MDE scan IT2a: f=0.5 SD power=0.485
+  MDE scan IT2a: f=0.6 SD power=0.605
+  MDE scan IT2a: f=0.7 SD power=0.770
+  MDE scan IT2a: f=0.8 SD power=0.845
+Test B IT2a: MDE = 0.8 SD (80% power, alpha 0.05, 200 sims; computed before the Test B p-value)
+Test B IT2a: omnibus T=0.2869 null mean=0.1908 p=0.06899; Rw1_line eta2=0.213 p=0.0269 (descriptive); rhythm_excess eta2=0.074 p=0.5752 (descriptive)
+
+Test A: p ZL3b=0.00010 (rule < 0.01), RF1b=0.00010, IT2a=0.00010 (rule < 0.05) -> DRIFT_REAL
+Test B: MDE ZL3b=0.7, RF1b=0.8, IT2a=0.8 (rule <= 0.8); p ZL3b=0.04500, RF1b=0.07189, IT2a=0.06899 (rule >= 0.05) -> NOT_SUPPORTED
+elapsed 40s; finished 2026-10-18 19:51:28 PDT
+CALL: s114 TEST_A=DRIFT_REAL pA_ZL3b=0.00010 pA_RF1b=0.00010 pA_IT2a=0.00010 TEST_B=NOT_SUPPORTED MDE_ZL3b=0.7 MDE_RF1b=0.8 MDE_IT2a=0.8 pB_ZL3b=0.04500 pB_RF1b=0.07189 pB_IT2a=0.06899 OUTCOME=DRIFT_ONLY

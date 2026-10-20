@@ -1,0 +1,55 @@
+# PREREG-v2 score: gib_realline_pooled  family=L  run=2026-10-17 20:28 (system clock)  seed=20261017
+# source: ./data/controls_realline/gib_realline_pooled.meta.json
+# ./data/controls_realline/gib_realline_pooled.meta.json; 10023 tokens full
+# v1 bands: scoreboard/score.py via path + g0 band checks; extras: scoreboard/metrics_new.py; sample cap 25000 (non-Voynich)
+# pages=38 lines=1617 tokens=10023 types=6839 sections=['gib'] hands=38 langs=['?']
+
+    v1 0.3s
+    extra 0.4s
+    info 0.8s
+    lex 3.1s
+    slot 0.3s
+    bake 0.7s
+
+# ranges: ./s15_ranges.json (run s15 Sat Oct 17 20:10:47 PDT 2026, extend 0.1); families ['L', 'C', 'G', 'X']; X range present
+=== v1 seven bands (frozen; PREREG v1 thresholds) ===
+band                      value           band   ok    L    C    G    X
+h2                       3.9619      1.98-2.28   --  OUT  OUT  OUT   IN
+sd_len                   2.7030      1.41-2.11   --   IN  OUT   IN   IN
+jsd_first_fg             0.0078         >=0.10   --  OUT   IN   IN  OUT
+p_init_enrich            0.9600           >=x8   --   IN   NA   IN   IN
+m_final_enrich           0.9800           >=x8   --   IN   NA   IN   IN
+cross_excess_eva         0.0127        >=+0.09   --  OUT   IN   IN   IN
+redup_pct                0.4990       0.4-1.8%   ok  OUT  OUT   IN   IN
+v1 joint: FAIL  missed: h2,sd_len,jsd_first_fg,p_init_enrich,m_final_enrich,cross_excess_eva
+
+=== v2 extras (metrics_new) ===
+metric                            value      class    L    C    G    X  tightLCG ovl
+x_edge_mi_word                   0.0298   WEIGHTED   IN   IN  OUT   IN       .tt  no
+types_25k                     6839.0000  WEIGHTED*   IN   IN   IN   NA       ttt  no
+x_position_entropy               2.2426   WEIGHTED  OUT   IN  OUT   IN       t.t  no
+x_ltr_minus_rtl                  0.0088   WEIGHTED  OUT  OUT  OUT   IN       t.t  no
+x_moran_I                        0.1194   WEIGHTED  OUT  OUT   IN   IN       .tt yes
+lex_beta                         0.9849   WEIGHTED  OUT  OUT  OUT   IN       .t. yes
+lex_rate_late_early              1.0615   WEIGHTED  OUT  OUT  OUT   IN       tt. yes
+lex_edit1_excess                 0.1386   WEIGHTED  OUT  OUT   IN   IN       ttt yes
+slot_occupancy_pc                0.0366   WEIGHTED   IN   IN  OUT   IN       ttt yes
+slot_table_likeness              0.8958   WEIGHTED  OUT   IN  OUT   IN       .tt yes
+slot_core_crowding               0.5903   WEIGHTED   IN  OUT   IN   IN       ttt yes
+info_mi_adjacent                 0.3298   WEIGHTED   IN   IN   IN   IN       .tt yes
+info_samecol_minus_othercol      0.0109   WEIGHTED   IN  OUT   IN   IN       ttt yes
+bake_char3_minus_unigram        -0.8447   WEIGHTED  OUT   IN   IN   IN       ... yes
+x_hapax_10k                      0.8521     REPORT  OUT  OUT   IN   IN       .t. yes
+info_mi_page                     0.1613     REPORT  OUT  OUT  OUT   IN       ttt yes
+info_bpe_adjacent                0.3484     REPORT   NA   NA   NA   IN       ... yes
+bake_winner: markov2  bake bits: markov2=25.103 markov3=26.982 slot=27.208 unigram_gt=27.827 copy0.3+markov3=26.777 copy0.1+markov3=26.576 copy0.05+markov3=26.573
+
+=== per-family in/out (weighted metrics = v1 bands + WEIGHTED extras, minus the ranges file's no-weight list) ===
+  L: in= 4 out= 6 na= 0  out: h2, jsd_first_fg, cross_excess_eva, redup_pct, x_position_entropy, x_ltr_minus_rtl  | tight-outs (6): h2, jsd_first_fg, cross_excess_eva, redup_pct, x_position_entropy, x_ltr_minus_rtl
+  C: in= 5 out= 3 na= 2  out: h2, redup_pct, x_ltr_minus_rtl  | tight-outs (2): h2, redup_pct
+  G: in= 6 out= 4 na= 0  out: h2, x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl  | tight-outs (4): h2, x_edge_mi_word, x_position_entropy, x_ltr_minus_rtl
+  X: in= 8 out= 1 na= 1  out: jsd_first_fg  | tight-outs (0): -
+  weighted metrics (10): h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_position_entropy, x_ltr_minus_rtl
+  (kill = >=3 weighted outs on tight ranges; favoured = fewest outs by >=2; both need the A/B rule of PREREG-v2 §6)
+
+provenance sha256[:16]: {'score.py': '3a7b7c3efea13b88', 'metrics_new.py': 'a59c9c17f8abe4cc', 'run_v2.py': '7dfdc9f75de5980a'}

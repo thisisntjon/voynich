@@ -1,0 +1,12 @@
+# s133 prereg stub, frozen 2026-10-19 11:50:49 PDT by voynich-08 / <session> after fixture (CONTROL_PASS), before any hint check, blind read or caption comparison; gates in the script docstring, steps in PROTOCOL.md
+# note: lead read only page/box_index coverage (21/21 primary rows mapped: 3 Grok, 18 packet gate P-ids); no caption text compared
+# verify from runs/s133: grep -v '^#' s133.prereg | tr -d '\r' | sha256sum -c -
+fb9d2dc67bffca23477238302114e6f7fd8df4dca013440d083893c4caae3ed2 *s133_egerton_gate_score.py
+0468d3818ea4823d22dbccce10c71017d7dd5f10bb4a816c1835ba01d83d11b6 *fixture_output.txt
+86b0cb44da5acf9b9aef6d6f4d40e9990747b2e11bb2b266676d021fd5dd9a66 *PROTOCOL.md
+1ca5144c13859199e79682894c98aecfcfd0da44eb20f805f549c24ec4285612 *../../data/egerton_caption_gate/sealed/SEALED_KEY_blind_read_1_pid_to_row_v1.tsv
+d83e2a1a942e45ce27d4dad7ce5c252d0773bb0df0c9e8c46a76100eb707a957 *<team-comms>
+2fc0fccfb2548afd51310176be523159ec791d16850ab971d278c3631439863f *<team-comms>
+c53b4d8557e61098b00af5aaea0d6713feb48a58fa8d04f7c67ee128cf07e8f1 *<team-comms>
+822c7f7e0d176874b6450af14411710d561ad1215828ff76314a217675b15da9 *<team-comms>
+f540e1f9ccd7773c60fac8747cf42192d872dab11e8fb2267976f8af76d80dcc *<team-comms>

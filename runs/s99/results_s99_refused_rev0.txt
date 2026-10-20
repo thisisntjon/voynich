@@ -1,0 +1,5 @@
+S99 - label rare core vs physically nearest body lines (Phase 6.3, E1)
+started Sun Oct 18 12:22:41 PDT 2026 (`date`)  priority=BelowNormal workers=1  free_RAM_GB=7.39
+thresholds: TOP_K=20 TOP_K_BROAD=5 RARE_SUB_SHARE=0.01 MIN_BODY_LINES=4 N_PERM=10000 ALPHA=0.05 NEG_MDE_MAX=0.1 SEED=99018
+stub_match=False (22 modules, 224 data files) bad=['| sha256sum -c -'] missing=[]
+REFUSED: stub does not verify; no real scoring.

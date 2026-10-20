@@ -1,0 +1,26 @@
+r3.py mode=fixture run at (clock): 2026-10-18T02:36:45-07:00
+r3.py sha256: 06e88402c27707541cc0cc636953ea4fc27997b99ce20d5889ebf0a3d46908fe
+fixture fixture_chain.txt sha256 444131f325b817cac7326c618afd41b6fc6bef06f539abc77e1703a20fd0f40e
+== FIXTURE chain=True : pages 207 (train 166, held-out 41), lines 4140, words 31019
+R3a prefix-stream gain  +1.2898 bits/prefix  95% [+1.2638, +1.3167]  rescaled [+1.2367, +1.3441]  n=5304  -> PASS (rescaled: PASS)
+R3b affix|core gain     +1.6811 bits/word    95% [+1.6604, +1.7025]  rescaled [+1.6373, +1.7228]  n=6124  -> PASS (rescaled: PASS)
+R3c [all pages] within Moran I obs +0.0344 null +0.0071 (sd 0.0053) excess +0.0273  95% [+0.0225, +0.0326]  rescaled [+0.0174, +0.0377]  perm p=0.0050
+R3c [all pages] cross  Moran I obs +0.0074 null +0.0012 (sd 0.0177) excess +0.0062  95% [-0.0088, +0.0226]  rescaled [-0.0229, +0.0404]  perm p=0.7811
+R3c [all pages] call: within-line only
+R3c [all pages] rescaled call: within-line only
+R3c [held-out pages] within Moran I obs +0.0379 null +0.0116 (sd 0.0114) excess +0.0263  95% [+0.0147, +0.0385]  rescaled [+0.0028, +0.0511]  perm p=0.0149
+R3c [held-out pages] cross  Moran I obs +0.0208 null +0.0033 (sd 0.0382) excess +0.0174  95% [-0.0213, +0.0539]  rescaled [-0.0625, +0.0903]  perm p=0.5920
+R3c [held-out pages] call: within-line only
+R3c [held-out pages] rescaled call: within-line only
+fixture fixture_nochain.txt sha256 c7cb23f2dbf9be2f7e94b9178cb35139d2283bd36521b57a2599c3fbff57691b
+== FIXTURE chain=False : pages 207 (train 166, held-out 41), lines 4140, words 31270
+R3a prefix-stream gain  -0.0042 bits/prefix  95% [-0.0055, -0.0029]  rescaled [-0.0069, -0.0016]  n=5473  -> FAIL (rescaled: FAIL)
+R3b affix|core gain     -0.0462 bits/word    95% [-0.0496, -0.0426]  rescaled [-0.0530, -0.0387]  n=6293  -> FAIL (rescaled: FAIL)
+R3c [all pages] within Moran I obs +0.0070 null -0.0012 (sd 0.0052) excess +0.0082  95% [+0.0036, +0.0128]  rescaled [-0.0011, +0.0175]  perm p=0.0647
+R3c [all pages] cross  Moran I obs -0.0129 null -0.0006 (sd 0.0164) excess -0.0122  95% [-0.0260, +0.0052]  rescaled [-0.0389, +0.0239]  perm p=0.4577
+R3c [all pages] call: within-line only
+R3c [all pages] rescaled call: no within-line excess (interval includes or lies below 0)
+R3c [held-out pages] within Moran I obs -0.0091 null -0.0035 (sd 0.0119) excess -0.0056  95% [-0.0150, +0.0048]  rescaled [-0.0249, +0.0152]  perm p=0.6866
+R3c [held-out pages] cross  Moran I obs -0.0091 null -0.0020 (sd 0.0384) excess -0.0071  95% [-0.0404, +0.0305]  rescaled [-0.0716, +0.0725]  perm p=0.8408
+R3c [held-out pages] call: no within-line excess (interval includes or lies below 0)
+R3c [held-out pages] rescaled call: no within-line excess (interval includes or lies below 0)

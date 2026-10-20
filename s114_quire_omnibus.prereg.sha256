@@ -1,0 +1,11 @@
+# s114_quire_omnibus pre-registration stub (sha256sum format, LF, no BOM). Frozen 2026-10-18 19:50:41 PDT (clock read with date) BEFORE any real-data statistic.
+# Design: DECISIONS.md D-066 (s) (Jon approved 'Omnibus, whole book (Recommended)'); retests D-066 (q) without the s112 half split (L-326).
+# Fixture run before freeze: runs/s114/fixture_20261018_195002.txt: planted-batch DRIFT_REAL 10/10 (need >= 8) PASS; planted-constant 0/10 (need <= 1) PASS.
+# Test A: omnibus sum of eta2(quire | hand x section residual ranks) over all folio_features except Rw1_line, rhythm_excess, n_stars; B=10,000 within-cell label permutations, one shared set per transliteration; DRIFT_REAL iff p(ZL3b)<0.01 and p(RF1b)<0.05 and p(IT2a)<0.05.
+# Test B: same omnibus over {Rw1_line, rhythm_excess}; MDE first (grid 0.1..2.0 SD, 200 sims at real noise, 80% power at alpha 0.05); CONSTANT_SUPPORTED iff MDE<=0.8 and p>=0.05 on all three; else NOT_SUPPORTED if any p<0.05, else UNINFORMATIVE.
+# Constants: n_tokens>=100; SEED 20261018; 1 worker, BelowNormal. Paths relative to the project root.
+# Verify: grep -v '^#' s114_quire_omnibus.prereg.sha256 | tr -d '\r' | sha256sum -c -
+23a16011bb41b76eb10903eb2be4931db08a13afd1c02156f19265113e4d662b *tools/s114_quire_omnibus.py
+0a1f266fa7798448eb3791ba61752d9ab7aa8b3b52092d8e9dc9184a46493017 *tools/vkb/features.py
+6615aae975844410613729f2efab7a9c726354c8bd49c72d6eebd104d1b3a1f9 *data/vkb/vkb.sqlite
+10962cf958029d39eeb5051d2a168c4d5ae2e7827ca4e7148f0db0dfc14e17e4 *runs/s114/fixture_20261018_195002.txt

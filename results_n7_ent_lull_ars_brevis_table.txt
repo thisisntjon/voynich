@@ -1,0 +1,56 @@
+# PREREG-v2 score: lull_ars_brevis_table  family=-  run=2026-10-17 19:49 (system clock)  seed=20261017
+# source: data\controls_synthetic\lull_ars_brevis_table.meta.json
+# data\controls_synthetic\lull_ars_brevis_table.meta.json; 1680 tokens full
+# v1 bands: scoreboard/score.py via path + g0 band checks; extras: scoreboard/metrics_new.py; sample cap 25000 (non-Voynich)
+# pages=84 lines=1680 tokens=1680 types=816 sections=['column BCD', 'column BCE', 'column BCF', 'column BCG', 'column BCH', 'column BCI', 'column BCK', 'column BDE'] hands=1 langs=['?']
+
+    v1 0.1s
+    extra 0.0s  [TypeError: Cannot cast array data from dtype('float64') to dtype('int64') according to the rule 'safe']
+    info 0.3s
+    lex 0.1s
+    slot 0.0s
+    bake 0.2s
+
+# ranges: n7_gibberish_ranges.json (run 2026-10-17 16:52, extend 0.1); families ['L', 'C', 'G', 'X']; X range present
+=== v1 seven bands (frozen; PREREG v1 thresholds) ===
+band                      value           band   ok    L    C    G    X
+h2                       2.6031      1.98-2.28   --   IN  OUT  OUT   IN
+sd_len                   0.2180      1.41-2.11   --  OUT  OUT  OUT  OUT
+jsd_first_fg             0.0000         >=0.10   --  OUT   IN   IN  OUT
+p_init_enrich               nan           >=x8   ok   NA   NA   NA   NA
+m_final_enrich              nan           >=x8   ok   NA   NA   NA   NA
+cross_excess_eva         0.0000        >=+0.09   --  OUT  OUT   IN   IN
+redup_pct                0.0000       0.4-1.8%   --   IN   IN  OUT   IN
+v1 joint: FAIL  missed: h2,sd_len,jsd_first_fg,cross_excess_eva,redup_pct
+
+=== v2 extras (metrics_new) ===
+metric                            value      class    L    C    G    X  tightLCG ovl
+x_edge_mi_word                      nan   WEIGHTED   NA   NA   NA   NA       .tt  no
+types_25k                      816.0000  WEIGHTED*   IN  OUT  OUT   NA       ttt  no
+x_position_entropy                  nan   WEIGHTED   NA   NA   NA   NA       t.t  no
+x_ltr_minus_rtl                     nan   WEIGHTED   NA   NA   NA   NA       t.t  no
+x_moran_I                           nan   WEIGHTED   NA   NA   NA   NA       .tt  no
+lex_beta                         0.8019   WEIGHTED   IN  OUT   IN  OUT       .t.  no
+lex_rate_late_early              0.5751   WEIGHTED   IN  OUT   IN  OUT       tt.  no
+lex_edit1_excess                 0.9939   WEIGHTED  OUT  OUT  OUT  OUT       ttt  no
+slot_occupancy_pc                0.5511   WEIGHTED  OUT  OUT  OUT  OUT       ttt  no
+slot_table_likeness              0.8609   WEIGHTED  OUT   IN  OUT  OUT       .tt  no
+slot_core_crowding               1.0000   WEIGHTED  OUT   IN   IN  OUT       ttt  no
+info_mi_adjacent                    nan   WEIGHTED   NA   NA   NA   NA       .tt yes
+info_samecol_minus_othercol         nan   WEIGHTED   NA   NA   NA   NA       ttt yes
+bake_char3_minus_unigram        -0.2804   WEIGHTED   IN   IN   IN  OUT       ...  no
+x_hapax_10k                         nan     REPORT   NA   NA   NA   NA       .t. yes
+info_mi_page                     0.3970     REPORT  OUT  OUT  OUT  OUT       ttt yes
+info_bpe_adjacent                0.5359     REPORT   NA   NA   NA  OUT       ... yes
+bake_winner: copy0.3+markov3  bake bits: markov2=12.892 markov3=12.554 slot=12.971 unigram_gt=12.834 copy0.3+markov3=11.178 copy0.1+markov3=11.555 copy0.05+markov3=11.770
+
+=== per-family in/out (weighted metrics = v1 bands + WEIGHTED extras, minus the ranges file's no-weight list) ===
+  L: in= 6 out= 6 na= 6  out: jsd_first_fg, cross_excess_eva, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding  | tight-outs (5): jsd_first_fg, cross_excess_eva, lex_edit1_excess, slot_occupancy_pc, slot_core_crowding
+  C: in= 5 out= 7 na= 6  out: h2, cross_excess_eva, types_25k, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc  | tight-outs (7): h2, cross_excess_eva, types_25k, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc
+  G: in= 6 out= 6 na= 6  out: h2, redup_pct, types_25k, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness  | tight-outs (6): h2, redup_pct, types_25k, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness
+  X: in= 3 out= 8 na= 7  out: jsd_first_fg, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram  | tight-outs (7): lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  weighted metrics (18): h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_position_entropy, x_ltr_minus_rtl, x_moran_I, lex_beta, lex_rate_late_early, lex_edit1_excess, slot_occupancy_pc, slot_table_likeness, slot_core_crowding, bake_char3_minus_unigram
+  (kill = >=3 weighted outs on tight ranges; favoured = fewest outs by >=2; both need the A/B rule of PREREG-v2 §6)
+
+errors: {"extra": "TypeError: Cannot cast array data from dtype('float64') to dtype('int64') according to the rule 'safe'"}
+provenance sha256[:16]: {'score.py': '3a7b7c3efea13b88', 'metrics_new.py': 'a59c9c17f8abe4cc', 'run_v2.py': '7dfdc9f75de5980a'}

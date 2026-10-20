@@ -1,0 +1,225 @@
+=== segment_scans.py start Sat Oct 17 22:53:31 PDT 2026 device=cuda:0
+canvases: 204; matched single-folio pages: 177; unmatched: 27
+  unmatched canvas '67r' (120_67r.jpg): ZL3b splits this canvas into f67r1,f67r2
+  unmatched canvas '67v' (121_67v.jpg): ZL3b splits this canvas into f67v1,f67v2
+  unmatched canvas '68r' (122_68r.jpg): ZL3b splits this canvas into f68r1,f68r2,f68r3
+  unmatched canvas '68v' (123_68v.jpg): ZL3b splits this canvas into f68v1,f68v2,f68v3
+  unmatched canvas '69v and 70r' (125_69v_and_70r.jpg): composite/partial canvas label
+  unmatched canvas '70v (part)' (126_70v_part.jpg): composite/partial canvas label
+  unmatched canvas '70v (part)' (127_70v_part.jpg): composite/partial canvas label
+  unmatched canvas '71v and 72r' (129_71v_and_72r.jpg): composite/partial canvas label
+  unmatched canvas '72v (part)' (130_72v_part.jpg): composite/partial canvas label
+  unmatched canvas '72v (part)' (131_72v_part.jpg): composite/partial canvas label
+  unmatched canvas '85r (part) (part of 85-86 foldout)' (154_85r_part_p8586.jpg): composite/partial canvas label
+  unmatched canvas '85r (part) 86v (part) (part of 85-86 foldout)' (155_85r_part_86v_part_p8586.jpg): composite/partial canvas label
+  unmatched canvas '86v (part) (part of 85-86 foldout)' (156_86v_part_p8586.jpg): composite/partial canvas label
+  unmatched canvas '85v and 86r (foldout)' (157_85v_and_86r_foldout.jpg): composite/partial canvas label
+  unmatched canvas '88v and 89r' (161_88v_and_89r.jpg): composite/partial canvas label
+  unmatched canvas '89v (part)' (162_89v_part.jpg): composite/partial canvas label
+  unmatched canvas '89v (part) and 90r' (163_89v_part_and_90r.jpg): composite/partial canvas label
+  unmatched canvas '90r' (164_90r.jpg): ZL3b splits this canvas into f90r1,f90r2
+  unmatched canvas '90v (part)' (165_90v_part.jpg): composite/partial canvas label
+  unmatched canvas '94v and 95r' (169_94v_and_95r.jpg): composite/partial canvas label
+  unmatched canvas '95v (part)' (170_95v_part.jpg): composite/partial canvas label
+  unmatched canvas '95v' (171_95v.jpg): ZL3b splits this canvas into f95v1,f95v2
+  unmatched canvas '100v and 101r' (177_100v_and_101r.jpg): composite/partial canvas label
+  unmatched canvas '101v (part)' (178_101v_part.jpg): composite/partial canvas label
+  unmatched canvas '101v (part) and 102r' (179_101v_part_and_102r.jpg): composite/partial canvas label
+  unmatched canvas '102v (part)' (180_102v_part.jpg): composite/partial canvas label
+  unmatched canvas '102v (part)' (181_102v_part.jpg): composite/partial canvas label
+ZL3b pages without a usable canvas (50): f100v f101r f101v f102r1 f102r2 f102v1 f102v2 f67r1 f67r2 f67v1 f67v2 f68r1 f68r2 f68r3 f68v1 f68v2 f68v3 f69v f70r1 f70r2 f70v1 f70v2 f71v f72r1 f72r2 f72r3 f72v1 f72v2 f72v3 f85r1 f85r2 f86v3 f86v4 f86v5 f86v6 f88v f89r1 f89r2 f89v1 f89v2 f90r1 f90r2 f90v1 f90v2 f94v f95r1 f95r2 f95v1 f95v2 fRos
+torch 2.11.0.dev20260115+cu128 cuda=True model=kraken/blla.mlmodel
+f1r      det= 25 loci= 28 P= 28 d= -3 FLAG thr= 13.8px(mixt) gaps= 1518 merge=  2 split=314 1to1= 22/ 28 conf=0.13 9s
+f1v      det= 14 loci= 10 P= 10 d= +4 FLAG thr= 20.0px(fall) gaps=  556 merge= 14 split= 47 1to1=  5/ 10 conf=0.10 6s
+f2r      det= 16 loci= 15 P= 13 d= +1 ok  thr= 16.8px(mixt) gaps=  505 merge=  3 split= 21 1to1=  9/ 12 conf=0.09 6s
+f2v      det=  8 loci=  8 P=  8 d= +0 ok  thr= 18.9px(mixt) gaps=  309 merge= 10 split=  8 1to1=  8/  8 conf=0.07 6s
+f3r      det= 20 loci= 20 P= 20 d= +0 ok  thr= 20.1px(mixt) gaps=  767 merge= 12 split= 19 1to1= 20/ 20 conf=0.07 6s
+f3v      det= 14 loci= 14 P= 14 d= +0 ok  thr= 25.4px(mixt) gaps=  534 merge= 10 split= 17 1to1= 14/ 14 conf=0.11 6s
+f4r      det= 13 loci= 13 P= 13 d= +0 ok  thr= 14.1px(mixt) gaps=  423 merge=  7 split= 32 1to1= 13/ 13 conf=0.10 6s
+f4v      det= 14 loci= 14 P= 14 d= +0 ok  thr= 19.0px(mixt) gaps=  549 merge=  9 split= 26 1to1= 14/ 14 conf=0.07 6s
+f5r      det=  7 loci=  7 P=  7 d= +0 ok  thr= 17.5px(mixt) gaps=  303 merge=  8 split= 13 1to1=  7/  7 conf=0.07 4s
+f5v      det=  8 loci=  6 P=  6 d= +2 ok  thr= 24.1px(mixt) gaps=  269 merge=  7 split=  2 1to1=  5/  6 conf=0.09 4s
+--- 10/177 pages, 1.0 min
+f6r      det= 17 loci= 14 P= 14 d= +3 FLAG thr= 21.4px(mixt) gaps=  554 merge=  7 split= 18 1to1= 11/ 14 conf=0.09 6s
+f6v      det= 21 loci= 21 P= 21 d= +0 ok  thr= 12.2px(mixt) gaps=  700 merge=  6 split= 83 1to1= 21/ 21 conf=0.08 7s
+f7r      det= 13 loci= 10 P= 10 d= +3 FLAG thr= 18.8px(mixt) gaps=  457 merge=  2 split= 14 1to1=  8/ 10 conf=0.08 6s
+f7v      det=  9 loci=  9 P=  9 d= +0 ok  thr= 15.9px(mixt) gaps=  360 merge=  9 split=  8 1to1=  9/  9 conf=0.06 6s
+f8r      det= 25 loci= 21 P= 21 d= +4 FLAG thr= 21.1px(mixt) gaps=  925 merge= 16 split= 38 1to1= 11/ 21 conf=0.11 7s
+f8v      det= 20 loci= 17 P= 17 d= +3 FLAG thr= 23.6px(mixt) gaps=  797 merge= 11 split= 32 1to1= 12/ 17 conf=0.09 7s
+f9r      det= 14 loci= 10 P= 10 d= +4 FLAG thr= 24.7px(mixt) gaps=  529 merge= 26 split= 10 1to1=  7/ 10 conf=0.11 6s
+f9v      det= 12 loci= 12 P= 12 d= +0 ok  thr= 13.7px(mixt) gaps=  365 merge=  8 split= 13 1to1= 12/ 12 conf=0.07 6s
+f10r     det= 12 loci= 12 P= 12 d= +0 ok  thr= 14.0px(mixt) gaps=  469 merge=  6 split= 33 1to1= 12/ 12 conf=0.06 7s
+f10v     det=  7 loci=  7 P=  7 d= +0 ok  thr= 18.5px(mixt) gaps=  262 merge=  7 split=  1 1to1=  7/  7 conf=0.07 6s
+--- 20/177 pages, 2.1 min
+f11r     det=  9 loci=  7 P=  7 d= +2 ok  thr= 12.6px(mixt) gaps=  248 merge=  2 split= 16 1to1=  6/  7 conf=0.09 5s
+f11v     det=  7 loci=  7 P=  6 d= +0 ok  thr= 16.0px(fall) gaps=  230 merge=  0 split=  5 1to1=  4/  5 conf=0.05 6s
+f13r     det= 12 loci= 10 P= 10 d= +2 ok  thr= 13.5px(mixt) gaps=  336 merge=  7 split= 23 1to1=  8/ 10 conf=0.11 6s
+f13v     det= 10 loci= 10 P= 10 d= +0 ok  thr= 15.8px(mixt) gaps=  311 merge=  3 split=  8 1to1= 10/ 10 conf=0.09 6s
+f14r     det= 14 loci= 13 P= 13 d= +1 ok  thr= 19.4px(mixt) gaps=  395 merge=  7 split=  6 1to1= 12/ 13 conf=0.06 6s
+f14v     det= 10 loci=  9 P=  9 d= +1 ok  thr= 11.1px(mixt) gaps=  319 merge=  1 split= 43 1to1=  8/  9 conf=0.05 6s
+f15r     det= 15 loci= 15 P= 15 d= +0 ok  thr= 18.8px(mixt) gaps=  426 merge= 16 split= 10 1to1= 15/ 15 conf=0.09 6s
+f15v     det= 12 loci= 12 P= 12 d= +0 ok  thr= 18.4px(mixt) gaps=  315 merge= 14 split=  5 1to1= 12/ 12 conf=0.04 6s
+f16r     det= 15 loci= 13 P= 13 d= +2 ok  thr= 11.0px(mixt) gaps=  366 merge=  3 split= 36 1to1= 11/ 13 conf=0.09 6s
+f16v     det= 13 loci= 13 P= 13 d= +0 ok  thr= 18.6px(mixt) gaps=  390 merge=  8 split=  6 1to1= 13/ 13 conf=0.09 6s
+--- 30/177 pages, 3.1 min
+f17r     det= 14 loci= 13 P= 12 d= +1 ok  thr= 15.3px(mixt) gaps=  518 merge=  3 split= 84 1to1=  8/ 12 conf=0.13 6s
+f17v     det= 24 loci= 23 P= 23 d= +1 ok  thr= 21.0px(mixt) gaps=  709 merge= 11 split= 14 1to1= 22/ 23 conf=0.07 7s
+f18r     det= 14 loci= 14 P= 14 d= +0 ok  thr= 13.8px(mixt) gaps=  373 merge=  4 split=  4 1to1= 14/ 14 conf=0.10 6s
+f18v     det= 12 loci= 10 P= 10 d= +2 ok  thr= 22.8px(mixt) gaps=  311 merge= 12 split=  3 1to1=  9/ 10 conf=0.08 7s
+f19r     det= 13 loci= 13 P= 13 d= +0 ok  thr= 20.1px(mixt) gaps=  371 merge= 17 split=  2 1to1= 13/ 13 conf=0.05 5s
+f19v     det= 14 loci= 14 P= 14 d= +0 ok  thr= 22.0px(mixt) gaps=  431 merge= 19 split=  0 1to1= 14/ 14 conf=0.09 5s
+f20r     det= 13 loci= 13 P= 13 d= +0 ok  thr= 22.4px(mixt) gaps=  518 merge= 15 split=  3 1to1= 13/ 13 conf=0.04 5s
+f20v     det= 11 loci= 11 P= 11 d= +0 ok  thr= 13.3px(mixt) gaps=  420 merge=  6 split= 22 1to1= 11/ 11 conf=0.06 5s
+f21r     det= 12 loci= 12 P= 12 d= +0 ok  thr= 21.7px(mixt) gaps=  557 merge= 28 split=  5 1to1= 12/ 12 conf=0.06 5s
+f21v     det= 11 loci=  8 P=  8 d= +3 FLAG thr= 22.4px(mixt) gaps=  374 merge=  9 split=  8 1to1=  6/  8 conf=0.13 5s
+--- 40/177 pages, 4.0 min
+f22r     det= 14 loci= 13 P= 13 d= +1 ok  thr= 11.6px(mixt) gaps=  513 merge=  6 split= 29 1to1= 12/ 13 conf=0.07 5s
+f22v     det= 17 loci= 16 P= 16 d= +1 ok  thr= 15.6px(mixt) gaps=  369 merge=  8 split=  6 1to1= 15/ 16 conf=0.08 6s
+f23r     det= 16 loci= 11 P= 11 d= +5 FLAG thr= 19.4px(mixt) gaps=  550 merge= 27 split= 16 1to1=  7/ 11 conf=0.12 6s
+f23v     det= 14 loci= 12 P= 12 d= +2 ok  thr= 12.4px(mixt) gaps=  343 merge=  6 split= 23 1to1= 10/ 12 conf=0.07 6s
+f24r     det= 21 loci= 20 P= 20 d= +1 ok  thr= 15.9px(mixt) gaps=  476 merge=  8 split= 23 1to1= 19/ 20 conf=0.08 6s
+f24v     det= 16 loci= 16 P= 16 d= +0 ok  thr= 23.6px(mixt) gaps=  527 merge=  7 split= 15 1to1= 16/ 16 conf=0.07 6s
+f25r     det=  7 loci=  7 P=  7 d= +0 ok  thr= 26.5px(mixt) gaps=  346 merge=  4 split=  3 1to1=  7/  7 conf=0.13 4s
+f25v     det=  7 loci=  7 P=  7 d= +0 ok  thr= 18.3px(mixt) gaps=  320 merge=  6 split=  9 1to1=  7/  7 conf=0.07 5s
+f26r     det= 10 loci= 10 P= 10 d= +0 ok  thr= 12.8px(mixt) gaps=  366 merge= 12 split= 14 1to1= 10/ 10 conf=0.09 5s
+f26v     det=  9 loci=  9 P=  9 d= +0 ok  thr= 32.0px(mixt) gaps=  417 merge= 32 split=  1 1to1=  9/  9 conf=0.06 5s
+--- 50/177 pages, 4.9 min
+f27r     det= 13 loci= 13 P= 13 d= +0 ok  thr= 17.2px(mixt) gaps=  359 merge= 12 split= 19 1to1= 13/ 13 conf=0.09 5s
+f27v     det= 10 loci=  8 P=  8 d= +2 ok  thr= 17.4px(mixt) gaps=  326 merge=  5 split= 23 1to1=  6/  8 conf=0.08 5s
+f28r     det= 10 loci=  9 P=  9 d= +1 ok  thr= 15.2px(mixt) gaps=  382 merge=  5 split= 13 1to1=  8/  9 conf=0.06 5s
+f28v     det= 10 loci=  9 P=  9 d= +1 ok  thr= 13.7px(mixt) gaps=  358 merge=  6 split= 25 1to1=  8/  9 conf=0.10 5s
+f29r     det= 10 loci=  9 P=  9 d= +1 ok  thr= 16.4px(mixt) gaps=  297 merge= 13 split= 10 1to1=  8/  9 conf=0.11 5s
+f29v     det= 16 loci= 12 P= 12 d= +4 FLAG thr= 17.1px(mixt) gaps=  457 merge= 15 split= 17 1to1=  9/ 12 conf=0.12 5s
+f30r     det= 13 loci= 13 P= 13 d= +0 ok  thr= 19.5px(mixt) gaps=  487 merge=  9 split=  4 1to1= 13/ 13 conf=0.13 6s
+f30v     det= 11 loci= 11 P= 11 d= +0 ok  thr= 21.8px(mixt) gaps=  311 merge=  6 split=  5 1to1= 11/ 11 conf=0.03 5s
+f31r     det= 16 loci= 16 P= 16 d= +0 ok  thr= 21.2px(mixt) gaps=  502 merge= 17 split=  3 1to1= 16/ 16 conf=0.06 6s
+f31v     det= 11 loci= 11 P= 11 d= +0 ok  thr= 16.3px(mixt) gaps=  531 merge= 17 split=  8 1to1= 11/ 11 conf=0.08 6s
+--- 60/177 pages, 5.8 min
+f32r     det= 19 loci= 19 P= 19 d= +0 ok  thr= 16.2px(mixt) gaps=  372 merge=  3 split= 13 1to1= 19/ 19 conf=0.12 6s
+f32v     det= 11 loci= 11 P= 11 d= +0 ok  thr= 13.1px(mixt) gaps=  400 merge=  4 split= 39 1to1= 11/ 11 conf=0.10 6s
+f33r     det=  8 loci=  7 P=  7 d= +1 ok  thr= 12.6px(mixt) gaps=  343 merge=  6 split= 13 1to1=  6/  7 conf=0.07 6s
+f33v     det= 18 loci= 11 P= 11 d= +7 FLAG thr= 12.2px(mixt) gaps=  396 merge= 21 split= 13 1to1=  5/ 11 conf=0.08 7s
+f34r     det= 19 loci= 15 P= 15 d= +4 FLAG thr= 14.9px(mixt) gaps=  737 merge= 21 split= 26 1to1= 11/ 15 conf=0.10 7s
+f34v     det= 13 loci= 11 P= 11 d= +2 ok  thr= 18.9px(mixt) gaps=  626 merge= 17 split=  6 1to1= 10/ 11 conf=0.06 6s
+f35r     det= 16 loci= 15 P= 15 d= +1 ok  thr= 18.1px(mixt) gaps=  542 merge= 17 split= 42 1to1= 11/ 15 conf=0.19 6s
+f35v     det= 21 loci= 21 P= 21 d= +0 ok  thr= 15.1px(mixt) gaps=  431 merge= 10 split= 44 1to1= 21/ 21 conf=0.17 6s
+f36r     det= 12 loci=  9 P=  9 d= +3 FLAG thr= 12.5px(mixt) gaps=  287 merge=  5 split= 23 1to1=  6/  9 conf=0.08 6s
+f36v     det= 14 loci= 14 P= 14 d= +0 ok  thr= 13.2px(mixt) gaps=  349 merge=  5 split=  9 1to1= 14/ 14 conf=0.11 7s
+--- 70/177 pages, 6.8 min
+f37r     det= 12 loci= 11 P= 11 d= +1 ok  thr= 15.3px(mixt) gaps=  382 merge=  9 split= 17 1to1= 10/ 11 conf=0.11 6s
+f37v     det= 23 loci= 23 P= 23 d= +0 ok  thr= 12.6px(mixt) gaps=  415 merge=  2 split= 26 1to1= 23/ 23 conf=0.08 6s
+f38r     det= 11 loci=  6 P=  6 d= +5 FLAG thr= 22.0px(fall) gaps=  141 merge= 14 split= 10 1to1=  2/  6 conf=0.23 4s
+f38v     det=  8 loci=  8 P=  8 d= +0 ok  thr= 15.3px(mixt) gaps=  297 merge= 15 split= 32 1to1=  8/  8 conf=0.08 4s
+f39r     det= 16 loci= 16 P= 16 d= +0 ok  thr= 16.7px(mixt) gaps=  789 merge= 21 split=  7 1to1= 16/ 16 conf=0.06 6s
+f39v     det= 15 loci= 14 P= 14 d= +1 ok  thr= 13.5px(mixt) gaps=  667 merge= 13 split= 22 1to1= 13/ 14 conf=0.05 5s
+f40r     det= 14 loci= 11 P= 11 d= +3 FLAG thr= 16.1px(mixt) gaps=  447 merge= 18 split=  4 1to1=  6/ 11 conf=0.10 5s
+f40v     det= 21 loci= 19 P= 19 d= +2 ok  thr= 16.8px(mixt) gaps=  538 merge= 15 split= 11 1to1= 17/ 19 conf=0.09 5s
+f41r     det= 18 loci= 11 P= 11 d= +7 FLAG thr= 21.6px(mixt) gaps=  617 merge= 15 split= 30 1to1=  6/ 11 conf=0.10 5s
+f41v     det= 10 loci=  8 P=  7 d= +2 ok  thr= 14.9px(mixt) gaps=  430 merge=  8 split= 10 1to1=  3/  7 conf=0.17 5s
+--- 80/177 pages, 7.7 min
+f42r     det= 25 loci= 23 P= 23 d= +2 ok  thr= 32.1px(mixt) gaps=  740 merge= 23 split=  5 1to1= 21/ 23 conf=0.08 7s
+f42v     det= 15 loci= 16 P= 16 d= -1 ok  thr= 25.8px(mixt) gaps=  706 merge= 22 split= 13 1to1= 14/ 16 conf=0.07 6s
+f43r     det= 17 loci= 14 P= 14 d= +3 FLAG thr= 19.2px(mixt) gaps=  827 merge= 33 split=  5 1to1= 12/ 14 conf=0.05 6s
+f43v     det= 17 loci= 16 P= 16 d= +1 ok  thr= 17.6px(mixt) gaps=  843 merge= 22 split=  6 1to1= 15/ 16 conf=0.06 6s
+f44r     det= 12 loci= 11 P= 11 d= +1 ok  thr= 25.2px(mixt) gaps=  491 merge= 14 split=  2 1to1= 10/ 11 conf=0.05 6s
+f44v     det= 13 loci= 13 P= 13 d= +0 ok  thr= 23.0px(mixt) gaps=  542 merge= 14 split=  2 1to1= 13/ 13 conf=0.07 6s
+f45r     det= 12 loci= 11 P= 11 d= +1 ok  thr= 24.5px(mixt) gaps=  447 merge= 19 split=  2 1to1= 10/ 11 conf=0.06 6s
+f45v     det= 11 loci= 11 P= 11 d= +0 ok  thr= 14.4px(mixt) gaps=  398 merge=  3 split= 12 1to1= 11/ 11 conf=0.05 6s
+f46r     det= 16 loci= 15 P= 15 d= +1 ok  thr= 16.8px(mixt) gaps=  758 merge= 20 split=  2 1to1= 14/ 15 conf=0.06 7s
+f46v     det= 12 loci= 13 P= 13 d= -1 ok  thr= 13.3px(mixt) gaps=  730 merge= 12 split= 23 1to1= 11/ 13 conf=0.13 7s
+--- 90/177 pages, 8.7 min
+f47r     det= 11 loci= 11 P= 11 d= +0 ok  thr= 19.0px(mixt) gaps=  303 merge= 22 split=  5 1to1=  5/ 11 conf=0.23 5s
+f47v     det= 14 loci= 14 P= 14 d= +0 ok  thr= 20.9px(mixt) gaps=  455 merge=  9 split= 29 1to1= 14/ 14 conf=0.12 6s
+f48r     det= 10 loci=  9 P=  9 d= +1 ok  thr= 17.5px(mixt) gaps=  524 merge= 10 split=  3 1to1=  8/  9 conf=0.07 5s
+f48v     det= 12 loci= 11 P= 11 d= +1 ok  thr= 12.9px(mixt) gaps=  639 merge= 15 split= 23 1to1= 10/ 11 conf=0.03 6s
+f49r     det= 23 loci= 21 P= 21 d= +2 ok  thr= 17.9px(mixt) gaps=  704 merge=  7 split= 93 1to1= 19/ 21 conf=0.10 6s
+f49v     det= 26 loci= 52 P= 26 d=-26 FLAG thr= 22.6px(mixt) gaps=  928 merge=  4 split= 14 1to1=  8/  8 conf=0.06 6s
+f50r     det= 13 loci= 10 P= 10 d= +3 FLAG thr= 14.1px(mixt) gaps=  481 merge=  6 split= 12 1to1=  9/ 10 conf=0.04 5s
+f50v     det= 12 loci= 11 P= 11 d= +1 ok  thr= 14.6px(mixt) gaps=  572 merge=  3 split= 22 1to1= 10/ 11 conf=0.06 6s
+f51r     det= 15 loci= 15 P= 15 d= +0 ok  thr= 20.0px(mixt) gaps=  412 merge= 12 split=  1 1to1= 15/ 15 conf=0.08 5s
+f51v     det= 14 loci= 13 P= 13 d= +1 ok  thr= 13.6px(mixt) gaps=  378 merge=  2 split= 13 1to1= 12/ 13 conf=0.07 6s
+--- 100/177 pages, 9.6 min
+f52r     det=  8 loci=  8 P=  8 d= +0 ok  thr= 23.7px(mixt) gaps=  442 merge= 10 split=  1 1to1=  8/  8 conf=0.04 5s
+f52v     det= 14 loci= 14 P= 14 d= +0 ok  thr= 14.9px(mixt) gaps=  372 merge=  7 split= 13 1to1= 14/ 14 conf=0.06 5s
+f53r     det= 13 loci=  9 P=  9 d= +4 FLAG thr= 15.0px(mixt) gaps=  305 merge=  8 split= 14 1to1=  5/  9 conf=0.13 5s
+f53v     det= 13 loci= 13 P= 13 d= +0 ok  thr= 27.2px(mixt) gaps=  373 merge= 18 split=  0 1to1= 13/ 13 conf=0.05 5s
+f54r     det= 25 loci= 12 P= 12 d=+13 FLAG thr= 14.4px(mixt) gaps=  437 merge= 12 split= 36 1to1=  5/ 12 conf=0.19 6s
+f54v     det= 16 loci= 16 P= 16 d= +0 ok  thr= 22.2px(mixt) gaps=  356 merge= 21 split=  0 1to1= 16/ 16 conf=0.08 6s
+f55r     det= 17 loci= 13 P= 13 d= +4 FLAG thr= 14.6px(mixt) gaps=  639 merge=  4 split= 20 1to1= 10/ 13 conf=0.13 6s
+f55v     det= 16 loci= 12 P= 12 d= +4 FLAG thr= 15.3px(mixt) gaps=  585 merge=  5 split=  8 1to1=  8/ 12 conf=0.06 6s
+f56r     det= 19 loci= 19 P= 19 d= +0 ok  thr= 18.0px(mixt) gaps=  605 merge=  9 split= 57 1to1= 19/ 19 conf=0.09 6s
+f56v     det= 16 loci= 16 P= 16 d= +0 ok  thr= 11.9px(mixt) gaps=  545 merge=  3 split=117 1to1= 13/ 16 conf=0.12 5s
+--- 110/177 pages, 10.5 min
+f57r     det= 12 loci= 11 P= 11 d= +1 ok  thr= 20.0px(mixt) gaps=  510 merge= 12 split= 27 1to1= 10/ 11 conf=0.10 5s
+f57v     no P lines in ZL3b; skipped
+f58r     det= 42 loci= 41 P= 41 d= +1 ok  thr= 18.9px(mixt) gaps= 2293 merge= 58 split= 12 1to1= 40/ 41 conf=0.04 9s
+f58v     det= 39 loci= 39 P= 39 d= +0 ok  thr= 19.4px(mixt) gaps= 2585 merge= 53 split= 38 1to1= 39/ 39 conf=0.04 9s
+f65r     no P lines in ZL3b; skipped
+f65v     det=  7 loci=  6 P=  6 d= +1 ok  thr= 22.1px(mixt) gaps=  254 merge=  9 split=  3 1to1=  5/  6 conf=0.08 5s
+f66r     det= 36 loci= 82 P= 32 d=-46 FLAG thr= 18.4px(mixt) gaps= 1759 merge= 86 split= 19 1to1=  9/ 29 conf=0.56 9s
+f66v     det= 14 loci= 13 P= 13 d= +1 ok  thr= 16.6px(mixt) gaps=  716 merge= 11 split= 40 1to1= 12/ 13 conf=0.10 6s
+f69r     det= 14 loci= 49 P=  4 d=-35 FLAG thr= 16.9px(mixt) gaps=  411 merge= 18 split=  0 1to1=  0/  3 conf=0.52 6s
+f71r     no P lines in ZL3b; skipped
+f73r     no P lines in ZL3b; skipped
+f73v     no P lines in ZL3b; skipped
+f75r     det= 50 loci= 53 P= 53 d= -3 FLAG thr= 12.1px(mixt) gaps= 2081 merge= 33 split= 76 1to1= 38/ 53 conf=0.09 10s
+f75v     det= 57 loci= 70 P= 37 d=-13 FLAG thr= 11.9px(mixt) gaps= 1688 merge= 30 split=115 1to1= 16/ 33 conf=0.11 10s
+f76r     det= 50 loci= 56 P= 47 d= -6 FLAG thr= 15.6px(mixt) gaps= 2426 merge= 42 split= 26 1to1= 36/ 38 conf=0.05 13s
+f76v     det= 42 loci= 41 P= 41 d= +1 ok  thr= 16.1px(mixt) gaps= 1672 merge= 34 split= 13 1to1= 40/ 41 conf=0.06 11s
+f77r     det= 45 loci= 50 P= 40 d= -5 FLAG thr= 15.2px(mixt) gaps= 1647 merge= 17 split= 20 1to1= 37/ 37 conf=0.08 10s
+f77v     det= 44 loci= 45 P= 37 d= -1 ok  thr= 16.0px(mixt) gaps= 1693 merge= 11 split= 30 1to1= 32/ 36 conf=0.08 9s
+f78r     det= 45 loci= 47 P= 41 d= -2 ok  thr= 11.1px(mixt) gaps= 1158 merge= 21 split= 37 1to1= 38/ 41 conf=0.11 8s
+f78v     det= 36 loci= 32 P= 32 d= +4 FLAG thr= 17.8px(mixt) gaps= 1450 merge= 33 split= 17 1to1= 29/ 32 conf=0.07 8s
+--- 130/177 pages, 12.7 min
+f79r     det= 46 loci= 44 P= 44 d= +2 ok  thr= 20.4px(mixt) gaps= 1750 merge= 57 split=  8 1to1= 43/ 44 conf=0.04 10s
+f79v     det= 47 loci= 42 P= 42 d= +5 FLAG thr= 13.5px(mixt) gaps= 1641 merge= 15 split= 48 1to1= 40/ 42 conf=0.04 10s
+f80r     det= 50 loci= 53 P= 43 d= -3 FLAG thr= 11.5px(mixt) gaps= 2221 merge= 14 split=105 1to1= 43/ 43 conf=0.09 11s
+f80v     det= 48 loci= 44 P= 44 d= +4 FLAG thr= 17.7px(mixt) gaps= 1999 merge= 28 split= 23 1to1= 41/ 44 conf=0.06 10s
+f81r     det= 31 loci= 31 P= 31 d= +0 ok  thr= 18.1px(mixt) gaps=  930 merge= 22 split=  3 1to1= 31/ 31 conf=0.05 7s
+f81v     det= 29 loci= 28 P= 27 d= +1 ok  thr= 13.0px(mixt) gaps= 1078 merge= 15 split= 49 1to1= 26/ 27 conf=0.09 8s
+f82r     det= 43 loci= 45 P= 32 d= -2 ok  thr= 14.6px(mixt) gaps= 1422 merge=  8 split= 24 1to1= 28/ 30 conf=0.09 9s
+f82v     det= 43 loci= 48 P= 34 d= -5 FLAG thr= 12.3px(mixt) gaps= 1593 merge= 10 split= 60 1to1= 32/ 34 conf=0.09 9s
+f83r     det= 48 loci= 55 P= 51 d= -7 FLAG thr= 13.9px(mixt) gaps= 1575 merge= 18 split= 39 1to1= 34/ 49 conf=0.09 10s
+f83v     det= 34 loci= 35 P= 31 d= -1 ok  thr= 19.8px(mixt) gaps= 1306 merge= 14 split=  4 1to1= 29/ 30 conf=0.08 9s
+--- 140/177 pages, 14.2 min
+f84r     det= 41 loci= 47 P= 34 d= -6 FLAG thr= 11.1px(mixt) gaps= 1725 merge= 19 split= 49 1to1= 32/ 33 conf=0.11 9s
+f84v     det= 42 loci= 51 P= 51 d= -9 FLAG thr= 12.2px(mixt) gaps= 1536 merge= 40 split= 70 1to1= 34/ 51 conf=0.13 10s
+f87r     det= 16 loci= 16 P= 16 d= +0 ok  thr= 24.7px(mixt) gaps=  641 merge= 15 split=  3 1to1= 16/ 16 conf=0.06 6s
+f87v     det= 18 loci= 16 P= 16 d= +2 ok  thr= 22.7px(mixt) gaps=  544 merge= 12 split=  7 1to1= 14/ 16 conf=0.10 6s
+f88r     det= 30 loci= 31 P= 16 d= -1 ok  thr= 13.8px(mixt) gaps=  959 merge=  5 split= 67 1to1= 12/ 15 conf=0.09 6s
+f93r     det= 33 loci= 32 P= 32 d= +1 ok  thr= 18.4px(mixt) gaps=  749 merge= 12 split= 11 1to1= 31/ 32 conf=0.08 7s
+f93v     det= 11 loci= 10 P= 10 d= +1 ok  thr= 13.4px(mixt) gaps=  424 merge=  8 split= 21 1to1=  9/ 10 conf=0.05 5s
+f94r     det= 10 loci=  9 P=  9 d= +1 ok  thr= 14.1px(mixt) gaps=  400 merge=  2 split= 10 1to1=  8/  9 conf=0.04 5s
+f96r     det= 18 loci= 13 P= 13 d= +5 FLAG thr= 18.4px(mixt) gaps=  476 merge=  9 split= 17 1to1=  9/ 13 conf=0.13 6s
+f96v     det= 13 loci= 13 P= 13 d= +0 ok  thr= 19.8px(mixt) gaps=  360 merge=  5 split=  9 1to1= 13/ 13 conf=0.07 6s
+--- 150/177 pages, 15.3 min
+f99r     det= 35 loci= 52 P= 18 d=-17 FLAG thr= 14.2px(mixt) gaps= 1049 merge= 17 split= 29 1to1= 11/ 13 conf=0.14 6s
+f99v     det= 28 loci= 44 P= 19 d=-16 FLAG thr= 14.3px(mixt) gaps=  953 merge=  4 split= 27 1to1= 13/ 13 conf=0.17 6s
+f100r    det= 21 loci= 27 P= 10 d= -6 FLAG thr= 15.7px(mixt) gaps=  698 merge=  3 split= 18 1to1=  9/  9 conf=0.11 5s
+f103r    det= 58 loci= 54 P= 54 d= +4 FLAG thr= 15.9px(mixt) gaps= 2735 merge= 54 split= 76 1to1= 50/ 54 conf=0.08 12s
+f103v    det= 46 loci= 46 P= 46 d= +0 ok  thr= 17.5px(mixt) gaps= 2155 merge= 50 split=  8 1to1= 46/ 46 conf=0.06 10s
+f104r    det= 46 loci= 45 P= 45 d= +1 ok  thr= 20.4px(mixt) gaps= 2241 merge= 69 split=  9 1to1= 44/ 45 conf=0.05 10s
+f104v    det= 45 loci= 44 P= 44 d= +1 ok  thr= 15.5px(mixt) gaps= 1923 merge= 49 split= 13 1to1= 43/ 44 conf=0.04 10s
+f105r    det= 40 loci= 37 P= 37 d= +3 FLAG thr= 18.5px(mixt) gaps= 1923 merge= 56 split= 11 1to1= 35/ 37 conf=0.05 8s
+f105v    det= 39 loci= 38 P= 38 d= +1 ok  thr= 15.9px(mixt) gaps= 1777 merge= 54 split= 29 1to1= 37/ 38 conf=0.06 10s
+f106r    det= 48 loci= 47 P= 47 d= +1 ok  thr= 17.7px(mixt) gaps= 2192 merge= 32 split= 12 1to1= 46/ 47 conf=0.05 11s
+--- 160/177 pages, 16.8 min
+f106v    det= 47 loci= 47 P= 47 d= +0 ok  thr= 17.6px(mixt) gaps= 2030 merge= 53 split= 10 1to1= 47/ 47 conf=0.04 10s
+f107r    det= 52 loci= 51 P= 51 d= +1 ok  thr= 16.1px(mixt) gaps= 2211 merge= 39 split= 27 1to1= 50/ 51 conf=0.05 10s
+f107v    det= 52 loci= 49 P= 49 d= +3 FLAG thr= 16.8px(mixt) gaps= 2092 merge= 32 split= 11 1to1= 46/ 49 conf=0.06 12s
+f108r    det= 51 loci= 50 P= 50 d= +1 ok  thr= 18.8px(mixt) gaps= 2884 merge= 59 split=  7 1to1= 49/ 50 conf=0.06 12s
+f108v    det= 55 loci= 53 P= 53 d= +2 ok  thr= 15.2px(mixt) gaps= 2986 merge= 56 split= 24 1to1= 51/ 53 conf=0.05 12s
+f111r    det= 54 loci= 54 P= 54 d= +0 ok  thr= 15.3px(mixt) gaps= 3133 merge= 88 split= 23 1to1= 54/ 54 conf=0.06 12s
+f111v    det= 51 loci= 51 P= 51 d= +0 ok  thr= 15.7px(mixt) gaps= 3073 merge= 68 split= 31 1to1= 48/ 51 conf=0.06 12s
+f112r    det= 45 loci= 45 P= 45 d= +0 ok  thr= 15.9px(mixt) gaps= 2200 merge= 36 split= 85 1to1= 39/ 45 conf=0.09 10s
+f112v    det= 47 loci= 47 P= 47 d= +0 ok  thr= 15.2px(mixt) gaps= 2147 merge= 32 split= 31 1to1= 47/ 47 conf=0.06 11s
+f113r    det= 51 loci= 51 P= 51 d= +0 ok  thr= 17.0px(mixt) gaps= 2512 merge= 57 split=  8 1to1= 51/ 51 conf=0.05 12s
+--- 170/177 pages, 18.7 min
+f113v    det= 49 loci= 49 P= 49 d= +0 ok  thr= 16.7px(mixt) gaps= 2213 merge= 56 split= 12 1to1= 49/ 49 conf=0.07 12s
+f114r    det= 46 loci= 45 P= 45 d= +1 ok  thr= 14.1px(mixt) gaps= 2121 merge= 54 split= 32 1to1= 44/ 45 conf=0.05 10s
+f114v    det= 42 loci= 41 P= 41 d= +1 ok  thr= 18.6px(mixt) gaps= 1996 merge= 42 split=  9 1to1= 40/ 41 conf=0.06 10s
+f115r    det= 45 loci= 45 P= 45 d= +0 ok  thr= 16.1px(mixt) gaps= 1871 merge= 37 split=  5 1to1= 45/ 45 conf=0.05 11s
+f115v    det= 46 loci= 45 P= 45 d= +1 ok  thr= 18.9px(mixt) gaps= 2312 merge= 36 split= 19 1to1= 44/ 45 conf=0.06 11s
+f116r    det= 51 loci= 50 P= 50 d= +1 ok  thr= 16.6px(mixt) gaps= 2515 merge= 79 split= 27 1to1= 49/ 50 conf=0.06 11s
+f116v    no P lines in ZL3b; skipped
+=== done: 171 pages, clean=127; merges=3202 splits=3961 P-lines=3545 aligned=3545 1to1=3226; 19.8 min

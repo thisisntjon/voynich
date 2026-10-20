@@ -1,0 +1,210 @@
+s45_ink_stream_score.py sha256=2b85997b13f617ed262a75e781dcaf2de83255d835c30ef08127822c908ebb90  prereg stub_match=True
+run: Sat Oct 17 23:13:32 PDT 2026
+estimators by path: a2_position.stats/null (feat w[0], n=30; lines >= 3 words), s21_moran_realline (999 draws, seed 20261017), scoreboard/run_v2.score_one (ranges s15_ranges.json)
+segmentation: ./runs/s45/segment_summary.json; pages segmented=171 clean(|d|<=2)=127 unmatched canvases=27 ZL3b pages without canvas=50
+PARTIAL: only 127 pages segment cleanly (< 150); pages used: f2r f2v f3r f3v f4r f4v f5r f5v f6v f7v f9v f10r f10v f11r f11v f13r f13v f14r f14v f15r f15v f16r f16v f17r f17v f18r f18v f19r f19v f20r f20v f21r f22r f22v f23v f24r f24v f25r f25v f26r f26v f27r f27v f28r f28v f29r f30r f30v f31r f31v f32r f32v f33r f34v f35r f35v f36v f37r f37v f38v f39r f39v f40v f41v f42r f42v f43v f44r f44v f45r f45v f46r f46v f47r f47v f48r f48v f49r f50v f51r f51v f52r f52v f53v f54v f56r f56v f57r f58r f58v f65v f66v f76v f77v f78r f79r f81r f81v f82r f83v f87r f87v f88r f93r f93v f94r f96v f103v f104r f104v f105v f106r f106v f107r f108r f108v f111r f111v f112r f112v f113r f113v f114r f114v f115r f115v f116r
+
+=== quality block: per-page line-count agreement (det = ink lines after merge/filter; loci = all ZL3b loci on the page; P = paragraph loci; flag if |d| > 2) ===
+page      det loci    P    d flag thr_px src  merge split   1to1/P ink/word  conf
+f1r        25   28   28   -3 FLAG   13.8 mixt     2   314  22/ 28      2.78  0.86
+f1v        14   10   10   +4 FLAG   20.0 fall    14    47   5/ 10      1.42  0.90
+f2r        16   15   13   +1 ok     16.8 mixt     3    21   9/ 12      1.20  0.91
+f2v         8    8    8   +0 ok     18.9 mixt    10     8   8/  8      0.97  0.93
+f3r        20   20   20   +0 ok     20.1 mixt    12    19  20/ 20      1.06  0.93
+f3v        14   14   14   +0 ok     25.4 mixt    10    17  14/ 14      1.11  0.89
+f4r        13   13   13   +0 ok     14.1 mixt     7    32  13/ 13      1.39  0.90
+f4v        14   14   14   +0 ok     19.0 mixt     9    26  14/ 14      1.23  0.93
+f5r         7    7    7   +0 ok     17.5 mixt     8    13   7/  7      1.09  0.93
+f5v         8    6    6   +2 ok     24.1 mixt     7     2   5/  6      0.90  0.91
+f6r        17   14   14   +3 FLAG   21.4 mixt     7    18  11/ 14      1.13  0.91
+f6v        21   21   21   +0 ok     12.2 mixt     6    83  21/ 21      1.72  0.92
+f7r        13   10   10   +3 FLAG   18.8 mixt     2    14   8/ 10      1.18  0.92
+f7v         9    9    9   +0 ok     15.9 mixt     9     8   9/  9      0.99  0.94
+f8r        25   21   21   +4 FLAG   21.1 mixt    16    38  11/ 21      1.16  0.89
+f8v        20   17   17   +3 FLAG   23.6 mixt    11    32  12/ 17      1.18  0.91
+f9r        14   10   10   +4 FLAG   24.7 mixt    26    10   7/ 10      0.81  0.89
+f9v        12   12   12   +0 ok     13.7 mixt     8    13  12/ 12      1.06  0.93
+f10r       12   12   12   +0 ok     14.0 mixt     6    33  12/ 12      1.29  0.94
+f10v        7    7    7   +0 ok     18.5 mixt     7     1   7/  7      0.89  0.93
+f11r        9    7    7   +2 ok     12.6 mixt     2    16   6/  7      1.31  0.91
+f11v        7    7    6   +0 ok     16.0 fall     0     5   4/  5      1.12  0.95
+f13r       12   10   10   +2 ok     13.5 mixt     7    23   8/ 10      1.21  0.89
+f13v       10   10   10   +0 ok     15.8 mixt     3     8  10/ 10      1.07  0.91
+f14r       14   13   13   +1 ok     19.4 mixt     7     6  12/ 13      0.99  0.94
+f14v       10    9    9   +1 ok     11.1 mixt     1    43   8/  9      1.59  0.95
+f15r       15   15   15   +0 ok     18.8 mixt    16    10  15/ 15      0.94  0.91
+f15v       12   12   12   +0 ok     18.4 mixt    14     5  12/ 12      0.88  0.96
+f16r       15   13   13   +2 ok     11.0 mixt     3    36  11/ 13      1.39  0.91
+f16v       13   13   13   +0 ok     18.6 mixt     8     6  13/ 13      0.97  0.91
+f17r       14   13   12   +1 ok     15.3 mixt     3    84   8/ 12      2.15  0.87
+f17v       24   23   23   +1 ok     21.0 mixt    11    14  22/ 23      1.02  0.93
+f18r       14   14   14   +0 ok     13.8 mixt     4     4  14/ 14      1.00  0.90
+f18v       12   10   10   +2 ok     22.8 mixt    12     3   9/ 10      0.87  0.92
+f19r       13   13   13   +0 ok     20.1 mixt    17     2  13/ 13      0.81  0.95
+f19v       14   14   14   +0 ok     22.0 mixt    19     0  14/ 14      0.76  0.91
+f20r       13   13   13   +0 ok     22.4 mixt    15     3  13/ 13      0.87  0.96
+f20v       11   11   11   +0 ok     13.3 mixt     6    22  11/ 11      1.21  0.94
+f21r       12   12   12   +0 ok     21.7 mixt    28     5  12/ 12      0.78  0.94
+f21v       11    8    8   +3 FLAG   22.4 mixt     9     8   6/  8      0.98  0.87
+f22r       14   13   13   +1 ok     11.6 mixt     6    29  12/ 13      1.23  0.93
+f22v       17   16   16   +1 ok     15.6 mixt     8     6  15/ 16      0.97  0.92
+f23r       16   11   11   +5 FLAG   19.4 mixt    27    16   7/ 11      0.90  0.88
+f23v       14   12   12   +2 ok     12.4 mixt     6    23  10/ 12      1.18  0.93
+f24r       21   20   20   +1 ok     15.9 mixt     8    23  19/ 20      1.15  0.92
+f24v       16   16   16   +0 ok     23.6 mixt     7    15  16/ 16      1.09  0.93
+f25r        7    7    7   +0 ok     26.5 mixt     4     3   7/  7      0.98  0.87
+f25v        7    7    7   +0 ok     18.3 mixt     6     9   7/  7      1.07  0.93
+f26r       10   10   10   +0 ok     12.8 mixt    12    14  10/ 10      1.02  0.91
+f26v        9    9    9   +0 ok     32.0 mixt    32     1   9/  9      0.67  0.94
+f27r       13   13   13   +0 ok     17.2 mixt    12    19  13/ 13      1.09  0.91
+f27v       10    8    8   +2 ok     17.4 mixt     5    23   6/  8      1.30  0.92
+f28r       10    9    9   +1 ok     15.2 mixt     5    13   8/  9      1.12  0.94
+f28v       10    9    9   +1 ok     13.7 mixt     6    25   8/  9      1.31  0.90
+f29r       10    9    9   +1 ok     16.4 mixt    13    10   8/  9      0.98  0.89
+f29v       16   12   12   +4 FLAG   17.1 mixt    15    17   9/ 12      1.02  0.88
+f30r       13   13   13   +0 ok     19.5 mixt     9     4  13/ 13      0.95  0.87
+f30v       11   11   11   +0 ok     21.8 mixt     6     5  11/ 11      0.98  0.97
+f31r       16   16   16   +0 ok     21.2 mixt    17     3  16/ 16      0.86  0.94
+f31v       11   11   11   +0 ok     16.3 mixt    17     8  11/ 11      0.92  0.92
+f32r       19   19   19   +0 ok     16.2 mixt     3    13  19/ 19      1.13  0.88
+f32v       11   11   11   +0 ok     13.1 mixt     4    39  11/ 11      1.40  0.90
+f33r        8    7    7   +1 ok     12.6 mixt     6    13   6/  7      1.09  0.93
+f33v       18   11   11   +7 FLAG   12.2 mixt    21    13   5/ 11      0.93  0.92
+f34r       19   15   15   +4 FLAG   14.9 mixt    21    26  11/ 15      1.03  0.90
+f34v       13   11   11   +2 ok     18.9 mixt    17     6  10/ 11      0.91  0.94
+f35r       16   15   15   +1 ok     18.1 mixt    17    42  11/ 15      1.33  0.81
+f35v       21   21   21   +0 ok     15.1 mixt    10    44  21/ 21      1.41  0.83
+f36r       12    9    9   +3 FLAG   12.5 mixt     5    23   6/  9      1.29  0.92
+f36v       14   14   14   +0 ok     13.2 mixt     5     9  14/ 14      1.05  0.89
+f37r       12   11   11   +1 ok     15.3 mixt     9    17  10/ 11      1.10  0.89
+f37v       23   23   23   +0 ok     12.6 mixt     2    26  23/ 23      1.27  0.92
+f38r       11    6    6   +5 FLAG   22.0 fall    14    10   2/  6      0.91  0.77
+f38v        8    8    8   +0 ok     15.3 mixt    15    32   8/  8      1.29  0.92
+f39r       16   16   16   +0 ok     16.7 mixt    21     7  16/ 16      0.91  0.94
+f39v       15   14   14   +1 ok     13.5 mixt    13    22  13/ 14      1.06  0.95
+f40r       14   11   11   +3 FLAG   16.1 mixt    18     4   6/ 11      0.86  0.90
+f40v       21   19   19   +2 ok     16.8 mixt    15    11  17/ 19      0.96  0.91
+f41r       18   11   11   +7 FLAG   21.6 mixt    15    30   6/ 11      1.15  0.90
+f41v       10    8    7   +2 ok     14.9 mixt     8    10   3/  7      1.03  0.83
+f42r       25   23   23   +2 ok     32.1 mixt    23     5  21/ 23      0.87  0.92
+f42v       15   16   16   -1 ok     25.8 mixt    22    13  14/ 16      0.92  0.93
+f43r       17   14   14   +3 FLAG   19.2 mixt    33     5  12/ 14      0.82  0.95
+f43v       17   16   16   +1 ok     17.6 mixt    22     6  15/ 16      0.89  0.94
+f44r       12   11   11   +1 ok     25.2 mixt    14     2  10/ 11      0.84  0.95
+f44v       13   13   13   +0 ok     23.0 mixt    14     2  13/ 13      0.88  0.93
+f45r       12   11   11   +1 ok     24.5 mixt    19     2  10/ 11      0.81  0.94
+f45v       11   11   11   +0 ok     14.4 mixt     3    12  11/ 11      1.11  0.95
+f46r       16   15   15   +1 ok     16.8 mixt    20     2  14/ 15      0.89  0.94
+f46v       12   13   13   -1 ok     13.3 mixt    12    23  11/ 13      1.10  0.87
+f47r       11   11   11   +0 ok     19.0 mixt    22     5   5/ 11      0.80  0.77
+f47v       14   14   14   +0 ok     20.9 mixt     9    29  14/ 14      1.24  0.88
+f48r       10    9    9   +1 ok     17.5 mixt    10     3   8/  9      0.92  0.93
+f48v       12   11   11   +1 ok     12.9 mixt    15    23  10/ 11      1.06  0.97
+f49r       23   21   21   +2 ok     17.9 mixt     7    93  19/ 21      1.82  0.90
+f49v       26   52   26  -26 FLAG   22.6 mixt     4    14   8/  8      1.20  0.94
+f50r       13   10   10   +3 FLAG   14.1 mixt     6    12   9/ 10      1.06  0.96
+f50v       12   11   11   +1 ok     14.6 mixt     3    22  10/ 11      1.20  0.94
+f51r       15   15   15   +0 ok     20.0 mixt    12     1  15/ 15      0.88  0.92
+f51v       14   13   13   +1 ok     13.6 mixt     2    13  12/ 13      1.13  0.93
+f52r        8    8    8   +0 ok     23.7 mixt    10     1   8/  8      0.87  0.96
+f52v       14   14   14   +0 ok     14.9 mixt     7    13  14/ 14      1.09  0.94
+f53r       13    9    9   +4 FLAG   15.0 mixt     8    14   5/  9      1.13  0.87
+f53v       13   13   13   +0 ok     27.2 mixt    18     0  13/ 13      0.74  0.95
+f54r       25   12   12  +13 FLAG   14.4 mixt    12    36   5/ 12      1.24  0.81
+f54v       16   16   16   +0 ok     22.2 mixt    21     0  16/ 16      0.77  0.92
+f55r       17   13   13   +4 FLAG   14.6 mixt     4    20  10/ 13      1.13  0.87
+f55v       16   12   12   +4 FLAG   15.3 mixt     5     8   8/ 12      1.04  0.94
+f56r       19   19   19   +0 ok     18.0 mixt     9    57  19/ 19      1.49  0.91
+f56v       16   16   16   +0 ok     11.9 mixt     3   117  13/ 16      2.70  0.88
+f57r       12   11   11   +1 ok     20.0 mixt    12    27  10/ 11      1.17  0.90
+f58r       42   41   41   +1 ok     18.9 mixt    58    12  40/ 41      0.88  0.96
+f58v       39   39   39   +0 ok     19.4 mixt    53    38  39/ 39      0.96  0.96
+f65v        7    6    6   +1 ok     22.1 mixt     9     3   5/  6      0.87  0.92
+f66r       36   82   32  -46 FLAG   18.4 mixt    86    19   9/ 29      0.59  0.44
+f66v       14   13   13   +1 ok     16.6 mixt    11    40  12/ 13      1.25  0.90
+f69r       14   49    4  -35 FLAG   16.9 mixt    18     0   0/  3      0.38  0.48
+f75r       50   53   53   -3 FLAG   12.1 mixt    33    76  38/ 53      1.08  0.91
+f75v       57   70   37  -13 FLAG   11.9 mixt    30   115  16/ 33      1.33  0.89
+f76r       50   56   47   -6 FLAG   15.6 mixt    42    26  36/ 38      0.96  0.95
+f76v       42   41   41   +1 ok     16.1 mixt    34    13  40/ 41      0.95  0.94
+f77r       45   50   40   -5 FLAG   15.2 mixt    17    20  37/ 37      1.01  0.92
+f77v       44   45   37   -1 ok     16.0 mixt    11    30  32/ 36      1.06  0.92
+f78r       45   47   41   -2 ok     11.1 mixt    21    37  38/ 41      1.06  0.89
+f78v       36   32   32   +4 FLAG   17.8 mixt    33    17  29/ 32      0.95  0.93
+f79r       46   44   44   +2 ok     20.4 mixt    57     8  43/ 44      0.87  0.96
+f79v       47   42   42   +5 FLAG   13.5 mixt    15    48  40/ 42      1.09  0.96
+f80r       50   53   43   -3 FLAG   11.5 mixt    14   105  43/ 43      1.21  0.91
+f80v       48   44   44   +4 FLAG   17.7 mixt    28    23  41/ 44      0.99  0.94
+f81r       31   31   31   +0 ok     18.1 mixt    22     3  31/ 31      0.91  0.95
+f81v       29   28   27   +1 ok     13.0 mixt    15    49  26/ 27      1.13  0.91
+f82r       43   45   32   -2 ok     14.6 mixt     8    24  28/ 30      1.06  0.91
+f82v       43   48   34   -5 FLAG   12.3 mixt    10    60  32/ 34      1.17  0.91
+f83r       48   55   51   -7 FLAG   13.9 mixt    18    39  34/ 49      1.07  0.91
+f83v       34   35   31   -1 ok     19.8 mixt    14     4  29/ 30      0.96  0.92
+f84r       41   47   34   -6 FLAG   11.1 mixt    19    49  32/ 33      1.09  0.89
+f84v       42   51   51   -9 FLAG   12.2 mixt    40    70  34/ 51      1.09  0.87
+f87r       16   16   16   +0 ok     24.7 mixt    15     3  16/ 16      0.88  0.94
+f87v       18   16   16   +2 ok     22.7 mixt    12     7  14/ 16      0.95  0.90
+f88r       30   31   16   -1 ok     13.8 mixt     5    67  12/ 15      1.48  0.91
+f93r       33   32   32   +1 ok     18.4 mixt    12    11  31/ 32      1.01  0.92
+f93v       11   10   10   +1 ok     13.4 mixt     8    21   9/ 10      1.16  0.95
+f94r       10    9    9   +1 ok     14.1 mixt     2    10   8/  9      1.10  0.96
+f96r       18   13   13   +5 FLAG   18.4 mixt     9    17   9/ 13      1.10  0.87
+f96v       13   13   13   +0 ok     19.8 mixt     5     9  13/ 13      1.07  0.93
+f99r       35   52   18  -17 FLAG   14.2 mixt    17    29  11/ 13      1.11  0.86
+f99v       28   44   19  -16 FLAG   14.3 mixt     4    27  13/ 13      1.24  0.83
+f100r      21   27   10   -6 FLAG   15.7 mixt     3    18   9/  9      1.19  0.89
+f103r      58   54   54   +4 FLAG   15.9 mixt    54    76  50/ 54      1.05  0.92
+f103v      46   46   46   +0 ok     17.5 mixt    50     8  46/ 46      0.91  0.94
+f104r      46   45   45   +1 ok     20.4 mixt    69     9  44/ 45      0.87  0.95
+f104v      45   44   44   +1 ok     15.5 mixt    49    13  43/ 44      0.92  0.96
+f105r      40   37   37   +3 FLAG   18.5 mixt    56    11  35/ 37      0.88  0.95
+f105v      39   38   38   +1 ok     15.9 mixt    54    29  37/ 38      0.94  0.94
+f106r      48   47   47   +1 ok     17.7 mixt    32    12  46/ 47      0.95  0.95
+f106v      47   47   47   +0 ok     17.6 mixt    53    10  47/ 47      0.90  0.96
+f107r      52   51   51   +1 ok     16.1 mixt    39    27  50/ 51      0.98  0.95
+f107v      52   49   49   +3 FLAG   16.8 mixt    32    11  46/ 49      0.95  0.94
+f108r      51   50   50   +1 ok     18.8 mixt    59     7  49/ 50      0.89  0.94
+f108v      55   53   53   +2 ok     15.2 mixt    56    24  51/ 53      0.94  0.95
+f111r      54   54   54   +0 ok     15.3 mixt    88    23  54/ 54      0.90  0.94
+f111v      51   51   51   +0 ok     15.7 mixt    68    31  48/ 51      0.93  0.94
+f112r      45   45   45   +0 ok     15.9 mixt    36    85  39/ 45      1.13  0.91
+f112v      47   47   47   +0 ok     15.2 mixt    32    31  47/ 47      1.00  0.94
+f113r      51   51   51   +0 ok     17.0 mixt    57     8  51/ 51      0.91  0.95
+f113v      49   49   49   +0 ok     16.7 mixt    56    12  49/ 49      0.91  0.93
+f114r      46   45   45   +1 ok     14.1 mixt    54    32  44/ 45      0.95  0.95
+f114v      42   41   41   +1 ok     18.6 mixt    42     9  40/ 41      0.91  0.94
+f115r      45   45   45   +0 ok     16.1 mixt    37     5  45/ 45      0.93  0.95
+f115v      46   45   45   +1 ok     18.9 mixt    36    19  44/ 45      0.96  0.94
+f116r      51   50   50   +1 ok     16.6 mixt    79    27  49/ 50      0.91  0.94
+line agreement: pages=171 |d|<=2: 127  |d|<=1: 110  d==0: 63  median d=+0.0  mean |d|=2.39
+
+=== token merge/split (ZL3b tokens on ink-aligned P-lines; all segmented pages / clean pages) ===
+all pages : merges=3202 splits=3961 on P-lines=3545 (aligned 3545, 1:1 line matches 3226); ink tokens without glyphs dropped=83
+clean pages: merges=2329 splits=2376; S0 tokens=21197 S1 tokens=21203 (merge rate 0.110, split rate 0.112 per S0 token; S1/S0 = 1.000)
+
+--- S0 ZL3b transliterated: pages=127 lines=2561 tokens=21197
+    line-initial JSD(first,mid) raw=0.1869 null=0.0036±0.0008 excess=+0.1833 (lines>=3: 2524/2561)
+    within-line Moran I=0.1675 null median=0.0706 q99=0.0845 p=0.001 (tokens 21197, pairs 18636)
+    run_v2: cross_excess_eva=0.1785 types=5150 types_25k=5150 h2=2.1136 sd_len=1.8000 jsd_first_fg=0.1869 errors=-
+--- S1 ink-resegmented: pages=127 lines=2636 tokens=21203
+    line-initial JSD(first,mid) raw=0.1763 null=0.0023±0.0008 excess=+0.1740 (lines>=3: 2525/2636)
+    within-line Moran I=0.2538 null median=0.1754 q99=0.1882 p=0.001 (tokens 21203, pairs 18567)
+    run_v2: cross_excess_eva=0.3330 types=6148 types_25k=6148 h2=2.2413 sd_len=2.4830 jsd_first_fg=0.1763 errors=-
+--- S2 ink-relined: pages=127 lines=2631 tokens=21155
+    line-initial JSD(first,mid) raw=0.1793 null=0.0031±0.0006 excess=+0.1763 (lines>=3: 2518/2631)
+    within-line Moran I=0.1669 null median=0.0705 q99=0.0852 p=0.001 (tokens 21155, pairs 18524)
+    run_v2: cross_excess_eva=0.1789 types=5142 types_25k=5142 h2=2.1136 sd_len=1.7990 jsd_first_fg=0.1793 errors=-
+
+=== fixed predictions ===
+P1 line-initial excess, ink-relined: +0.1763 vs [+0.137, +0.209] (transliteration on the same pages +0.1833) -> HOLDS
+P2 within-line Moran I, ink-resegmented: 0.2538 > q99 0.1882: True; in [0.109, 0.17]: False (transliteration on the same pages 0.1675) -> FAILS by 0.0838 outside the band
+P3 cross_excess_eva, ink-resegmented: 0.3330 positive and in [0.148, 0.209] (transliteration on the same pages 0.1785) -> FAILS by 0.1240
+types_25k/h2: ink-resegmented types_25k=6148 (types 6148) h2=2.2413; transliteration same pages types_25k=5150 (types 5150) h2=2.1136; s30 convention rows c-326: standard 6,572 types; merge 7,426; split 4,525
+  s15 IN/OUT cross_excess_eva: S0=0.1785 L:OUT; S1=0.3330 L:OUT; S2=0.1789 L:OUT
+  s15 IN/OUT h2: S0=2.1136 L:OUT; S1=2.2413 L:OUT; S2=2.1136 L:OUT
+  s15 IN/OUT jsd_first_fg: S0=0.1869 L:OUT; S1=0.1763 L:OUT; S2=0.1793 L:OUT
+  s15 IN/OUT x_moran_I: S0=0.1495 L:OUT; S1=0.2370 L:OUT; S2=0.1494 L:OUT
+
+READING (PARTIAL, 127 clean pages): fails: P2, P3
+end: Sat Oct 17 23:14:11 PDT 2026

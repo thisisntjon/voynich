@@ -1,0 +1,397 @@
+S104: grid G1 (G1a verbose syllabary, G1b line-table nomenclator, G1c abbreviate-then-G1b) x 3 period recipe plaintexts, each with a shuffled-plaintext twin, vs the D-066 (j) joint profile (pre-registered in the docstring)
+date: Sun Oct 18 13:29:17 PDT 2026 (`date`)
+device: cuda (NVIDIA GeForce RTX 5080); torch 2.11.0.dev20260115+cu128; numpy 2.4.6; python 3.11.9; BelowNormal set=True; workers 2
+s104_g1_encoding_grid.py sha256=da6c33be8f4143bd0f681bc8da211031331cdc6f90cf786185362a3254e93e70
+prereg stub s104_g1_encoding_grid.prereg.sha256 sha256=a540287ff9cda7bf348fba5f584f602d7f8b45afe9067d83ca9e60091f130d10  stub_match=True
+  hashed a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  hashed a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  hashed b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  hashed b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  hashed c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  hashed c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  hashed c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  hashed c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  hashed corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  hashed f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  hashed f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  hashed f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  hashed g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  hashed m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  hashed m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  hashed n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  hashed p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  hashed p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  hashed s102_period_ciphers_recipes.py sha256=5e35d7fa3e1f4e82fb69df46ab6dd703c84dac7e99eca1fae9c7248b307f5e87
+  hashed s104_g1_encoding_grid.py sha256=da6c33be8f4143bd0f681bc8da211031331cdc6f90cf786185362a3254e93e70
+  hashed s21_moran_realline.py sha256=e4e96e8f53969a7677f33db74c67125a3afe835b96ac1065cc4400f517dd09eb
+  hashed s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  hashed s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  hashed s50_solver.py sha256=c63e035be6a0e03f7a71c0be6e5b1a3a1bd2033ce8041552bb169319f10df9ad
+  hashed s50_solver_ladder.py sha256=1b5c5227cf12db05d7c09d73040fad545e5f318512254128c609dbe4441b965b
+  hashed s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  hashed s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  hashed s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  hashed s64_naibbe_taxonomy.py sha256=6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3
+  hashed s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  hashed s69_prefix_stream_memory.py sha256=11e722d4a0391d34228637da8b9c1872a6dc4ddd5dc1f2ff4e94f8c6a903c458
+  hashed s70_canonical_segmentation_and_rare_cores.py sha256=ae0a00e8df8b053677451a5dd96b55dc5a9e0942052a59147383129bec95b5cb
+  hashed s71_weakened_grille_and_sticky_naibbe_loqo.py sha256=9b4f024792c778ae300fd14d7d1e85f03243d50964b1f7f61ba09f1553c11a18
+  hashed s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  hashed s77_deconfounded_scribe_and_comma_ablation_loqo.py sha256=56eb6afdafdc57654b56a7019ee6a9410752db9ffb08c3a9112f83dd0798cc5d
+  hashed s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  hashed s81_sticky_table_loqo.py sha256=418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063
+  hashed s86_sticky_table_solver_and_triangulation.py sha256=2e36fc0a6ce81520ae521b78ea4bd8fd8cccea5048a4209bf6317ae39f59f3e0
+  hashed s87_core_layer_genre.py sha256=d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db
+  hashed s91_line_pool_producer_loqo.py sha256=92dba656c9d74dfb972837d3bba070bb945c3ed59ef444448d5bd7aafcdee21a
+  hashed s97_language_rescue_controls.py sha256=76837cdbf089eb445278cc7c51879dfd9f5b7daef1bf6720a9d02c83b320c7cb
+  hashed s98_lag2_prefix_dependence.py sha256=2deac4c11729071829cb20e850fe1851358b021331a22fa4d6dd1844af11bf01
+  hashed scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  hashed scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  hashed tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  hashed tools/ivtff_to_meta.py sha256=5a08d4252dabfbe5f4ef5f93e5f2808a678ebb76fe32d99891c8310679bc81aa
+  hashed vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+  hashed data/translit/ZL3b_eva.meta.json sha256=ce233477803a865365e53418f5e2b78c324fa0ea124b0aa46a9eb6a5189f7ef0
+  hashed data/translit/RF1b.meta.json sha256=c7d9bccba99b2610b9d80b4ce5f26f7d1ab54c12ec2364d0423d6b89f51da9df
+  hashed data/translit/IT2a.meta.json sha256=0d0d3e758d1e308b0aee4b4d006f90cbc8090c081e0fcb3327de6734ac5e5fdf
+  hashed data/controls_realline/cremma_all_marks.meta.json sha256=be53d490c342df533d2c218a33f5892bba49be377fcf9023da39293b56b01115
+  hashed data/controls/latin_macer_floridus.txt sha256=00c484e965af06b52ff4fc323af3e14071d3476fd59b8f85a5b7ec1e1a7b35b2
+  hashed data/controls/latin_augustine.txt sha256=30287aab673c861ae500f06fe55d4396f529a0c251b37178e7220b6c51317189
+  hashed results_s98.txt sha256=52a9b4ea92a0f718d15580f51c07d73414a339ddfecc19bd99e7e5bbcf7670e9
+  hashed runs/s49/lang_latin_cremma.meta.json sha256=2f63d4beabdbc1b84821a74ce462eb3dcc80d43117ec33db6a5f8eb5aa7da3fc
+  hashed data/naibbe_zenodo_17219445/Naibbe_Cipher.xlsx sha256=890835df665d33b96228d4a587030fee2bc1637783dc627b4e6aa584186cadcd
+  hashed data/controls_period/raw_it/librodicucinade00fratgoog_djvu.txt sha256=f466e12c9ff61a32e1e4534af5d5fa7f28aa4188a954ceb1137c612b9270d75b
+  hashed data/controls_period/raw_it/b21525213_djvu.txt sha256=1b167fdb127cbb5c3c9dd4ea5159ffaf497a49580556bcc08cd874d9309d8edf
+  hashed data/controls_period/raw_de/bub_gb_I0QSAAAAYAAJ_djvu.txt sha256=9fa4c19aed390b7629dfb77592ef9a31a9218fcd6b82987bbf380ab9f447789b
+  hashed data/controls_period/raw_de/Buoch_von_guoter_Spise_rendered.txt sha256=efb119a0a75104e53bb94978d7cb99bf11b9098362977db733e8e2eeb9c97410
+  hashed data/controls_period/raw_de/b24880681_djvu.txt sha256=18684bb864ece18f510fa383f0c04828248591926840db7f829e5c03411a1b0a
+N_TOT 22500; N_match 4731; K_ROWS 6; NC 100 x D 6; REC_MIN 0.8; H2 band (2.023, 2.234); rhythm p < 0.05; LAG2: s81 reference (results_s98.txt) ZL3b +17.874, RF1b +12.491, IT2a +17.418 e-3 bits, mean 15.928, bar = 0.5 x mean = 7.964 e-3 bits; seed 20261104
+
+=== Voynich target (SlotSegmenter cores, s87 seeds; rhythm; h2 at the same 22,500-token cut) ===
+LOCALITY band: [0.9074, 1.0499]
+  VOY_ZL3b                           tok  22500 ty  1747 core% 100.0 | o100 +0.034(p0.005) o200 +0.028 | Rw1 1.180(p0.001) Rc1 0.564 | loc 0.977[0.950,1.006] | C1 YYYY VOYNICH-LIKE | rhythm exc +0.0704 p 0.001 | h2 2.1234
+  VOY_RF1b                           tok  22500 ty  1840 core% 100.0 | o100 +0.020(p0.040) o200 +0.009 | Rw1 1.193(p0.001) Rc1 0.670 | loc 0.977[0.943,1.013] | C1 YYYY VOYNICH-LIKE | rhythm exc +0.0679 p 0.001 | h2 2.1336
+  VOY_IT2a                           tok  22500 ty  1712 core% 100.0 | o100 +0.030(p0.004) o200 +0.030 | Rw1 1.217(p0.001) Rc1 0.646 | loc 0.979[0.944,1.015] | C1 YYYY VOYNICH-LIKE | rhythm exc +0.0690 p 0.001 | h2 2.1272
+
+=== plaintexts and the 18 encoded texts ===
+  plaintext P1_la: 32063 words available; first words: geminos canales u~ge aplicitos c~pleto co~i op~e secu~ foa~s educit eam p~gnantib~
+  plaintext P2_it: 24531 words available; first words: amidono d amido se tu uuo fare amiduni per xtt persone tuoi
+  plaintext P3_de: 58675 words available; first words: liber de naturali facnltate incipit hie beginnet daz arzinbuoch ypocratis daz er
+  P1_la_G1a          words 13267 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 18 | recovery 0.8392; syllable types 3136
+       first line: xmbdw xbdw xmkow xalw xehw xmmcw xbfw xmbdw xddw xanw   <- ge mi nos ca na les u~ ge ap li
+  P1_la_G1a_shuf     words 13267 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 18 | recovery 0.8392; syllable types 3136
+       first line: xacw xidw xabw xmbdw xcbw xndcw xbbw xmdmw xbiw xlbw   <- si su~t q~ uid~ ad oui ex ai ~a lia
+  P1_la_G1b          words 22500 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 51 | recovery 1.0000; code-token share 0.520; spelled collisions 0
+       first line: LMsEJIGYY RmfAoHn tbLH AToSFqPInYY RbToMKNYZ FIgSYY WXqzE WXGHFkbYY WXyIAbGYZ WXHzORqaYY   <- geminos canales u~ge aplicitos c~pleto co~i op~e secu~ foa~s educit
+  P1_la_G1b_shuf     words 22500 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 51 | recovery 1.0000; code-token share 0.520; spelled collisions 0
+       first line: ltpvzCYZ RIpvRtsYZ TNaMnP KHbTbAfeavmpZY HK mUOJzAJnYZ VWBGZY VWGUyyOeEbLAaIdYZ VWhRpTIhgSaEGYZ WXGU   <- hu~ide co~icum potest te~p~antia~ g~ abundans iuuabit sbffui~gato~ c~po~itis oleo
+  P1_la_G1c          words 22500 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 51 | recovery 1.0000; code-token share 0.529; spelled collisions 0; majority-expansion accuracy 0.963
+       first line: yMoETNGZY FATczMnZY tdyC mszEFqKIG eFdszMaNYY FIdqZY NspHZY neCRObZY BImdGYY MithFqKZY   <- geminos canales u~ge aplicitos c~pleto co~i op~e secu~ foa~s educit
+  P1_la_G1c_shuf     words 22500 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 51 | recovery 1.0000; code-token share 0.529; spelled collisions 0; majority-expansion accuracy 0.963
+       first line: XvJYZ XuH WETFYY WnNFSmacpZY WcbcYY WDDCaSsEmpa WipognNYY WGAeavpYY WmssNTmGYY WUr   <- reddit e~ i~p~mu~t~ sociata~ dic~ zzetipia~t d~m~so sati~ apponas ex
+  P2_it_G1a          words 13014 (enough True) units 22501 | tokens 22500 lines 2888 pages 173 | alphabet 18 | recovery 0.9875; syllable types 1023
+       first line: xakw xcdw xaow xbaw xicw xakw xcdw xaow xanw xbmw   <- a mi do no d a mi do se tu
+  P2_it_G1a_shuf     words 13014 (enough True) units 22501 | tokens 22500 lines 2888 pages 173 | alphabet 18 | recovery 0.9875; syllable types 1023
+       first line: xbbw xgew xcgw xfaw xaaw xcew xacw xaaw xbbw xglw   <- toy for ma zo e con le e toy dis
+  P2_it_G1b          words 22500 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 51 | recovery 1.0000; code-token share 0.817; spelled collisions 0
+       first line: MzuJBQfYY nr XPdG XaOYY Xsk XhhvYY XOe XizuJhQuZY XbnYZ VWKkQYZ   <- amidono d amido se tu uuo fare amiduni per xtt
+  P2_it_G1b_shuf     words 22500 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 51 | recovery 1.0000; code-token share 0.817; spelled collisions 0
+       first line: vQYZ lKYY eFlYZ HDf VWPvaYY VWukSZY WXukSZY WXeDYY WXxzdZY WXaahYZ   <- e carne i come esse altramente altri uoy puoi xxu
+  P2_it_G1c          words 22500 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 51 | recovery 1.0000; code-token share 0.818; spelled collisions 0; majority-expansion accuracy 0.996
+       first line: MHuhBFvYZ nr XPdG XaOYY Xsk XEdvZY XOe XiHGhdFAYZ XbnYZ VWFAMYZ   <- amidono d amido se tu uuo fare amiduni per xtt
+  P2_it_G1c_shuf     words 22500 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 51 | recovery 1.0000; code-token share 0.818; spelled collisions 0; majority-expansion accuracy 0.996
+       first line: LK bnYZ iHZY eFlYZ Vsy VPEDUhMLLDZY VrJdAgFkYZ dh AKSDPDJ see   <- nel per le mettiui caponi gualdaffa c~uiene c~pete~teme~te istaga~ zaffarano
+  P3_de_G1a          words 14687 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 18 | recovery 0.9136; syllable types 2205
+       first line: xghw xdhw xaaw xgcw xicw xmanw xghw xmlaw xnogw xblw   <- li ber de na tu ra li fac nlta te
+  P3_de_G1a_shuf     words 14687 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 18 | recovery 0.9136; syllable types 2205
+       first line: xccw xmaow xocbw xcbw xahw xolbw xafw xaew xhnw xgnw   <- men schen dor re die brun ne ge sunt mac
+  P3_de_G1b          words 22500 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 51 | recovery 1.0000; code-token share 0.761; spelled collisions 0
+       first line: odRLcYY VWIqdZY VWJNMecNpfZY VWQDNOJpMsviYY VWgmOflfv Xxn WXPxS WXBnZY WXsctdERTykOPYZ WXjlkOUsMgz   <- liber de naturali facnltate incipit hie beginnet daz arzinbuoch ypocratis
+  P3_de_G1b_shuf     words 22500 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 51 | recovery 1.0000; code-token share 0.761; spelled collisions 0
+       first line: en LfAYZ eCZY mLC vekOPIYZ mmYY VxRYZ VFq VGTO VJh   <- der umbe die nes tuoche man d dem gar so
+  P3_de_G1c          words 22500 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 51 | recovery 1.0000; code-token share 0.763; spelled collisions 0; majority-expansion accuracy 0.945
+       first line: omlLcYY VWrqo VWtsMecNpbZY VWqDsOtpvNvLYZ VWbgOEjbvYZ XeCZY WXuMCZY WXffZY WXNUxmflekyOP WXhjkOUNvmK   <- liber de naturali facnltate i~cipit hie begi~net daz arzi~buoch ypocratis
+  P3_de_G1c_shuf     words 22500 (enough True) units 22500 | tokens 22500 lines 2888 pages 173 | alphabet 51 | recovery 1.0000; code-token share 0.763; spelled collisions 0; majority-expansion accuracy 0.945
+       first line: WXsOZY WXFJ WXBnZY WXJgZY WXRikcCktkqYY WXOPuuBRBYY WXEO WXFq WXicHZY WXrnYY   <- oles er de~ an geordonof chuuege tu ez durch du
+  R recovery >= 0.8 on all 18 (and every segment long enough): True (min 0.8392)
+
+=== S: s97 gate (PC1 planted LP91, PC2 IT2a as control, NC plain Latin), s97 code and constants ===
+  PC1_LP91_planted_s1                tok  22500 ty   784 core% 100.0 | o100 +0.073(p0.001) o200 +0.088 | Rw1 2.517(p0.001) Rc1 0.371 | loc 0.934[0.898,0.969] | C1 nYYY -
+  PC1_LP91_planted_s2                tok  22500 ty   779 core% 100.0 | o100 +0.045(p0.001) o200 +0.043 | Rw1 2.453(p0.001) Rc1 0.363 | loc 0.940[0.904,0.975] | C1 YYYY VOYNICH-LIKE
+  PC1_LP91_planted_s3                tok  22500 ty   770 core% 100.0 | o100 +0.041(p0.001) o200 +0.046 | Rw1 2.398(p0.001) Rc1 0.500 | loc 0.929[0.890,0.969] | C1 YYYY VOYNICH-LIKE
+  PC1 Voynich-like on 2/3 seeds (need >= 2) -> True
+
+=== SIG profiles (flags a order, b R_within, c R_cross<R_within, d locality) ===
+  P1_la_G1a/identity                 tok  22500 ty  4120 core% 100.0 | o100 +0.001(p0.447) o200 +0.017 | Rw1 1.110(p0.301) Rc1 0.229 | loc 0.990[0.985,0.994] | C1 nnYY - | D 2.12
+  P1_la_G1a/slot                     tok  22500 ty    98 core% 100.0 | o100 +0.017(p0.019) o200 +0.017 | Rw1 0.935(p0.998) Rc1 0.859 | loc 1.000[0.998,1.001] | C1 YnYY - | D 0.94
+  P1_la_G1a/affix2                   tok  22500 ty   798 core% 100.0 | o100 +0.159(p0.001) o200 +0.247 | Rw1 0.369(p1.000) Rc1 0.612 | loc 1.000[0.999,1.000] | C1 nnnY - | D 3.35
+  P1_la_G1a_shuf/identity            tok  22500 ty  4121 core% 100.0 | o100 +0.002(p0.395) o200 -0.023 | Rw1 5.171(p0.001) Rc1 0.666 | loc 1.000[0.997,1.003] | C1 nYYY - | D 3.06
+  P1_la_G1a_shuf/slot                tok  22500 ty    70 core% 100.0 | o100 +0.006(p0.219) o200 +0.006 | Rw1 1.002(p0.465) Rc1 0.961 | loc 1.000[1.000,1.000] | C1 nnYY - | D 1.13
+  P1_la_G1a_shuf/affix2              tok  22500 ty   797 core% 100.0 | o100 +0.124(p0.001) o200 +0.169 | Rw1 1.460(p0.001) Rc1 0.631 | loc 1.000[1.000,1.000] | C1 nYYY - | D 1.56
+  P1_la_G1b/identity                 tok  22500 ty 13089 core% 100.0 | o100 -0.019(p0.991) o200 -0.032 | Rw1 1.085(p0.362) Rc1 0.000 | loc 0.931[0.854,1.005] | C1 nnYY - | D 12.96
+  P1_la_G1b/slot                     tok  22500 ty 10772 core% 100.0 | o100 +0.101(p0.001) o200 +0.108 | Rw1 0.261(p1.000) Rc1 0.190 | loc 0.913[0.848,0.980] | C1 nnYY - | D 3.99
+  P1_la_G1b/affix2                   tok  22500 ty 10808 core% 100.0 | o100 +0.118(p0.001) o200 +0.118 | Rw1 0.253(p1.000) Rc1 0.243 | loc 0.907[0.840,0.974] | C1 nnYn - | D 3.83
+  P1_la_G1b_shuf/identity            tok  22500 ty 13084 core% 100.0 | o100 +0.011(p0.096) o200 +0.015 | Rw1 6.790(p0.001) Rc1 1.976 | loc 0.996[0.984,1.007] | C1 nYYY - | D 4.21
+  P1_la_G1b_shuf/slot                tok  22500 ty 10772 core% 100.0 | o100 +0.006(p0.249) o200 +0.011 | Rw1 1.049(p0.306) Rc1 0.969 | loc 1.003[0.987,1.019] | C1 nnYY - | D 1.10
+  P1_la_G1b_shuf/affix2              tok  22500 ty 10810 core% 100.0 | o100 +0.009(p0.173) o200 +0.006 | Rw1 0.950(p0.721) Rc1 1.081 | loc 1.002[0.989,1.015] | C1 nnnY - | D 1.34
+  P1_la_G1c/identity                 tok  22500 ty 12878 core% 100.0 | o100 -0.014(p0.964) o200 -0.024 | Rw1 0.980(p0.577) Rc1 0.000 | loc 0.931[0.854,1.003] | C1 nnYY - | D 12.96
+  P1_la_G1c/slot                     tok  22500 ty 10572 core% 100.0 | o100 +0.077(p0.001) o200 +0.113 | Rw1 0.259(p1.000) Rc1 0.283 | loc 0.925[0.856,0.998] | C1 nnnY - | D 3.56
+  P1_la_G1c/affix2                   tok  22500 ty 10593 core% 100.0 | o100 +0.122(p0.001) o200 +0.131 | Rw1 0.239(p1.000) Rc1 0.229 | loc 0.931[0.869,0.995] | C1 nnYY - | D 4.00
+  P1_la_G1c_shuf/identity            tok  22500 ty 12886 core% 100.0 | o100 +0.020(p0.009) o200 +0.025 | Rw1 7.338(p0.001) Rc1 0.749 | loc 0.993[0.976,1.009] | C1 YYYY VOYNICH-LIKE | D 3.67
+  P1_la_G1c_shuf/slot                tok  22500 ty 10561 core% 100.0 | o100 +0.005(p0.289) o200 -0.005 | Rw1 1.160(p0.030) Rc1 0.843 | loc 1.008[0.994,1.021] | C1 nYYY - | D 0.94
+  P1_la_G1c_shuf/affix2              tok  22500 ty 10589 core% 100.0 | o100 -0.000(p0.523) o200 -0.002 | Rw1 1.071(p0.201) Rc1 0.942 | loc 1.000[0.983,1.015] | C1 nnYY - | D 1.13
+  P2_it_G1a/identity                 tok  22500 ty  2585 core% 100.0 | o100 +0.054(p0.001) o200 +0.154 | Rw1 0.533(p1.000) Rc1 0.000 | loc 0.991[0.976,1.003] | C1 nnYY - | D 13.06
+  P2_it_G1a/slot                     tok  22500 ty   261 core% 100.0 | o100 +0.165(p0.001) o200 +0.167 | Rw1 0.820(p1.000) Rc1 0.861 | loc 0.996[0.985,1.007] | C1 nnnY - | D 2.03
+  P2_it_G1a/affix2                   tok  22500 ty   782 core% 100.0 | o100 +0.646(p0.001) o200 +0.890 | Rw1 0.556(p1.000) Rc1 0.271 | loc 0.993[0.984,1.002] | C1 nnYY - | D 10.98
+  P2_it_G1a_shuf/identity            tok  22500 ty  2561 core% 100.0 | o100 +0.012(p0.155) o200 +0.077 | Rw1 4.491(p0.001) Rc1 0.767 | loc 0.998[0.993,1.003] | C1 nYYY - | D 2.75
+  P2_it_G1a_shuf/slot                tok  22500 ty   225 core% 100.0 | o100 +0.125(p0.001) o200 +0.129 | Rw1 1.016(p0.280) Rc1 1.010 | loc 1.000[0.987,1.012] | C1 nnYY - | D 1.57
+  P2_it_G1a_shuf/affix2              tok  22500 ty   781 core% 100.0 | o100 +0.495(p0.001) o200 +0.618 | Rw1 1.798(p0.001) Rc1 0.890 | loc 0.999[0.995,1.004] | C1 nYYY - | D 7.65
+  P2_it_G1b/identity                 tok  22500 ty  6531 core% 100.0 | o100 -0.017(p0.975) o200 -0.022 | Rw1 1.556(p0.001) Rc1 0.000 | loc 0.980[0.959,1.001] | C1 nYYY - | D 12.96
+  P2_it_G1b/slot                     tok  22500 ty  4186 core% 100.0 | o100 +0.450(p0.001) o200 +0.504 | Rw1 0.246(p1.000) Rc1 0.204 | loc 0.968[0.913,1.018] | C1 nnYY - | D 7.49
+  P2_it_G1b/affix2                   tok  22500 ty  4172 core% 100.0 | o100 +0.487(p0.001) o200 +0.525 | Rw1 0.353(p1.000) Rc1 0.265 | loc 0.974[0.924,1.026] | C1 nnYY - | D 7.47
+  P2_it_G1b_shuf/identity            tok  22500 ty  6542 core% 100.0 | o100 +0.027(p0.003) o200 +0.042 | Rw1 8.930(p0.001) Rc1 0.317 | loc 0.996[0.986,1.007] | C1 YYYY VOYNICH-LIKE | D 4.26
+  P2_it_G1b_shuf/slot                tok  22500 ty  4186 core% 100.0 | o100 +0.016(p0.069) o200 +0.017 | Rw1 1.006(p0.446) Rc1 0.725 | loc 1.000[0.980,1.019] | C1 YnYY - | D 0.67
+  P2_it_G1b_shuf/affix2              tok  22500 ty  4166 core% 100.0 | o100 +0.032(p0.005) o200 +0.035 | Rw1 1.797(p0.001) Rc1 0.722 | loc 1.000[0.979,1.021] | C1 YYYY VOYNICH-LIKE | D 0.90
+  P2_it_G1c/identity                 tok  22500 ty  6528 core% 100.0 | o100 -0.015(p0.951) o200 -0.006 | Rw1 1.485(p0.002) Rc1 0.000 | loc 0.978[0.955,0.999] | C1 nYYY - | D 12.95
+  P2_it_G1c/slot                     tok  22500 ty  4175 core% 100.0 | o100 +0.419(p0.001) o200 +0.479 | Rw1 0.192(p1.000) Rc1 0.127 | loc 0.953[0.903,1.004] | C1 nnYY - | D 7.71
+  P2_it_G1c/affix2                   tok  22500 ty  4157 core% 100.0 | o100 +0.487(p0.001) o200 +0.524 | Rw1 0.308(p1.000) Rc1 0.190 | loc 0.972[0.919,1.026] | C1 nnYY - | D 7.74
+  P2_it_G1c_shuf/identity            tok  22500 ty  6512 core% 100.0 | o100 +0.060(p0.001) o200 +0.067 | Rw1 8.916(p0.001) Rc1 0.717 | loc 0.995[0.987,1.003] | C1 YYYY VOYNICH-LIKE | D 4.04
+  P2_it_G1c_shuf/slot                tok  22500 ty  4178 core% 100.0 | o100 -0.006(p0.712) o200 -0.012 | Rw1 1.035(p0.213) Rc1 0.767 | loc 1.000[0.981,1.020] | C1 nnYY - | D 0.99
+  P2_it_G1c_shuf/affix2              tok  22500 ty  4153 core% 100.0 | o100 +0.026(p0.019) o200 +0.023 | Rw1 1.604(p0.001) Rc1 0.550 | loc 1.001[0.983,1.020] | C1 YYYY VOYNICH-LIKE | D 0.74
+  P3_de_G1a/identity                 tok  22500 ty  3791 core% 100.0 | o100 +0.198(p0.001) o200 +0.242 | Rw1 0.489(p1.000) Rc1 0.000 | loc 0.990[0.980,0.999] | C1 nnYY - | D 13.28
+  P3_de_G1a/slot                     tok  22500 ty   205 core% 100.0 | o100 +0.147(p0.001) o200 +0.146 | Rw1 0.926(p0.998) Rc1 0.864 | loc 0.998[0.989,1.008] | C1 nnYY - | D 1.70
+  P3_de_G1a/affix2                   tok  22500 ty   798 core% 100.0 | o100 +0.483(p0.001) o200 +0.609 | Rw1 0.187(p1.000) Rc1 0.085 | loc 0.999[0.998,1.000] | C1 nnYY - | D 9.22
+  P3_de_G1a_shuf/identity            tok  22500 ty  3819 core% 100.0 | o100 +0.217(p0.001) o200 +0.228 | Rw1 2.709(p0.001) Rc1 0.522 | loc 1.000[0.995,1.005] | C1 nYYY - | D 3.11
+  P3_de_G1a_shuf/slot                tok  22500 ty   182 core% 100.0 | o100 +0.135(p0.001) o200 +0.143 | Rw1 0.958(p0.941) Rc1 0.834 | loc 1.000[0.994,1.006] | C1 nnYY - | D 1.55
+  P3_de_G1a_shuf/affix2              tok  22500 ty   798 core% 100.0 | o100 +0.343(p0.001) o200 +0.418 | Rw1 0.868(p0.949) Rc1 0.594 | loc 1.000[1.000,1.000] | C1 nnYY - | D 5.01
+  P3_de_G1b/identity                 tok  22500 ty  7756 core% 100.0 | o100 -0.008(p0.818) o200 -0.041 | Rw1 1.193(p0.137) Rc1 0.200 | loc 0.970[0.915,1.022] | C1 nnYY - | D 2.52
+  P3_de_G1b/slot                     tok  22500 ty  5443 core% 100.0 | o100 +0.331(p0.001) o200 +0.350 | Rw1 0.206(p1.000) Rc1 0.186 | loc 0.989[0.896,1.087] | C1 nnYY - | D 6.13
+  P3_de_G1b/affix2                   tok  22500 ty  5438 core% 100.0 | o100 +0.333(p0.001) o200 +0.352 | Rw1 0.212(p1.000) Rc1 0.184 | loc 0.992[0.895,1.091] | C1 nnYY - | D 6.12
+  P3_de_G1b_shuf/identity            tok  22500 ty  7742 core% 100.0 | o100 +0.034(p0.001) o200 +0.050 | Rw1 8.006(p0.001) Rc1 0.270 | loc 0.996[0.985,1.009] | C1 YYYY VOYNICH-LIKE | D 4.17
+  P3_de_G1b_shuf/slot                tok  22500 ty  5437 core% 100.0 | o100 +0.000(p0.486) o200 +0.001 | Rw1 1.079(p0.115) Rc1 1.032 | loc 0.998[0.979,1.018] | C1 nnYY - | D 1.25
+  P3_de_G1b_shuf/affix2              tok  22500 ty  5438 core% 100.0 | o100 +0.014(p0.098) o200 +0.012 | Rw1 1.041(p0.259) Rc1 1.041 | loc 0.999[0.978,1.021] | C1 YnYY - | D 1.18
+  P3_de_G1c/identity                 tok  22500 ty  7671 core% 100.0 | o100 -0.002(p0.607) o200 -0.026 | Rw1 1.021(p0.461) Rc1 0.523 | loc 0.975[0.915,1.031] | C1 nnYY - | D 1.03
+  P3_de_G1c/slot                     tok  22500 ty  5366 core% 100.0 | o100 +0.311(p0.001) o200 +0.342 | Rw1 0.291(p1.000) Rc1 0.317 | loc 0.984[0.896,1.083] | C1 nnnY - | D 5.22
+  P3_de_G1c/affix2                   tok  22500 ty  5359 core% 100.0 | o100 +0.352(p0.001) o200 +0.362 | Rw1 0.266(p1.000) Rc1 0.321 | loc 0.987[0.891,1.084] | C1 nnnY - | D 5.68
+  P3_de_G1c_shuf/identity            tok  22500 ty  7673 core% 100.0 | o100 +0.031(p0.002) o200 +0.012 | Rw1 6.723(p0.001) Rc1 0.758 | loc 0.997[0.986,1.008] | C1 YYYY VOYNICH-LIKE | D 3.50
+  P3_de_G1c_shuf/slot                tok  22500 ty  5372 core% 100.0 | o100 +0.008(p0.228) o200 +0.003 | Rw1 0.945(p0.830) Rc1 0.783 | loc 0.998[0.980,1.017] | C1 nnYY - | D 0.91
+  P3_de_G1c_shuf/affix2              tok  22500 ty  5371 core% 100.0 | o100 +0.006(p0.314) o200 +0.009 | Rw1 1.098(p0.059) Rc1 0.707 | loc 0.999[0.982,1.017] | C1 nnYY - | D 0.69
+  VOY_ZL3b/identity                  tok  22500 ty  5011 core% 100.0 | o100 +0.065(p0.001) o200 +0.098 | Rw1 1.176(p0.011) Rc1 0.260 | loc 0.958[0.935,0.982] | C1 nYYY - | D 1.86
+  VOY_ZL3b/slot                      tok  22500 ty  1747 core% 100.0 | o100 +0.034(p0.001) o200 +0.028 | Rw1 1.183(p0.001) Rc1 0.567 | loc 0.978[0.950,1.005] | C1 YYYY VOYNICH-LIKE | D 0.31
+  VOY_ZL3b/affix2                    tok  22500 ty  2045 core% 100.0 | o100 +0.079(p0.001) o200 +0.074 | Rw1 1.166(p0.001) Rc1 0.384 | loc 0.974[0.951,1.001] | C1 YYYY VOYNICH-LIKE | D 1.08
+  VOY_RF1b/identity                  tok  22500 ty  5265 core% 100.0 | o100 +0.057(p0.001) o200 +0.079 | Rw1 1.188(p0.011) Rc1 0.308 | loc 0.961[0.934,0.990] | C1 YYYY VOYNICH-LIKE | D 1.48
+  VOY_RF1b/slot                      tok  22500 ty  1840 core% 100.0 | o100 +0.020(p0.046) o200 +0.009 | Rw1 1.191(p0.001) Rc1 0.672 | loc 0.977[0.944,1.015] | C1 YYYY VOYNICH-LIKE | D 0.51
+  VOY_RF1b/affix2                    tok  22500 ty  2174 core% 100.0 | o100 +0.051(p0.001) o200 +0.046 | Rw1 1.171(p0.001) Rc1 0.435 | loc 0.975[0.945,1.007] | C1 YYYY VOYNICH-LIKE | D 0.73
+  VOY_IT2a/identity                  tok  22500 ty  5110 core% 100.0 | o100 +0.061(p0.001) o200 +0.072 | Rw1 1.210(p0.003) Rc1 0.341 | loc 0.957[0.931,0.984] | C1 YYYY VOYNICH-LIKE | D 1.27
+  VOY_IT2a/slot                      tok  22500 ty  1712 core% 100.0 | o100 +0.030(p0.006) o200 +0.031 | Rw1 1.215(p0.001) Rc1 0.646 | loc 0.979[0.944,1.015] | C1 YYYY VOYNICH-LIKE | D 0.28
+  VOY_IT2a/affix2                    tok  22500 ty  2065 core% 100.0 | o100 +0.064(p0.001) o200 +0.053 | Rw1 1.150(p0.001) Rc1 0.398 | loc 0.972[0.944,1.004] | C1 YYYY VOYNICH-LIKE | D 0.93
+  PC2_VOY_IT2a_as_control/slot       tok  22500 ty  1712 core% 100.0 | o100 +0.030(p0.004) o200 +0.030 | Rw1 1.217(p0.001) Rc1 0.652 | loc 0.979[0.946,1.016] | C1 YYYY VOYNICH-LIKE | D 0.29
+  NC_augustine_la/identity           tok  22500 ty  6893 core% 100.0 | o100 +0.127(p0.001) o200 +0.148 | Rw1 0.071(p1.000) Rc1 0.048 | loc 0.920[0.901,0.940] | C1 nnYY - | D 7.78
+  NC_augustine_la/slot               tok  22500 ty  4498 core% 100.0 | o100 +0.108(p0.001) o200 +0.102 | Rw1 0.612(p1.000) Rc1 0.719 | loc 0.931[0.916,0.948] | C1 nnnY - | D 1.65
+  NC_augustine_la/affix2             tok  22500 ty  4989 core% 100.0 | o100 +0.093(p0.001) o200 +0.105 | Rw1 0.437(p1.000) Rc1 0.327 | loc 0.930[0.915,0.946] | C1 nnYY - | D 2.55
+
+=== RHY (within-line lag-1 length Moran I vs 999 within-line shuffles) and H2 ===
+  P1_la_G1a                  I +0.8948 null median +0.8985 excess -0.0037 p 1.000 -> False | h2 2.8054 in [2.023, 2.234] -> False
+  P1_la_G1a_shuf             I +0.9005 null median +0.9003 excess +0.0002 p 0.424 -> False | h2 2.8055 in [2.023, 2.234] -> False
+  P1_la_G1b                  I +0.0075 null median +0.0325 excess -0.0250 p 1.000 -> False | h2 4.0194 in [2.023, 2.234] -> False
+  P1_la_G1b_shuf             I +0.0263 null median +0.0234 excess +0.0029 p 0.323 -> False | h2 4.0199 in [2.023, 2.234] -> False
+  P1_la_G1c                  I +0.0080 null median +0.0290 excess -0.0211 p 1.000 -> False | h2 4.0085 in [2.023, 2.234] -> False
+  P1_la_G1c_shuf             I +0.0255 null median +0.0113 excess +0.0143 p 0.010 -> True | h2 4.0018 in [2.023, 2.234] -> False
+  P2_it_G1a                  I +0.9537 null median +0.9533 excess +0.0005 p 0.278 -> False | h2 2.6379 in [2.023, 2.234] -> False
+  P2_it_G1a_shuf             I +0.9524 null median +0.9526 excess -0.0003 p 0.683 -> False | h2 2.6379 in [2.023, 2.234] -> False
+  P2_it_G1b                  I +0.0144 null median +0.0382 excess -0.0237 p 1.000 -> False | h2 3.3446 in [2.023, 2.234] -> False
+  P2_it_G1b_shuf             I +0.0984 null median +0.0549 excess +0.0435 p 0.001 -> True | h2 3.3434 in [2.023, 2.234] -> False
+  P2_it_G1c                  I +0.0121 null median +0.0346 excess -0.0225 p 1.000 -> False | h2 3.3471 in [2.023, 2.234] -> False
+  P2_it_G1c_shuf             I +0.0845 null median +0.0448 excess +0.0397 p 0.001 -> True | h2 3.3463 in [2.023, 2.234] -> False
+  P3_de_G1a                  I +0.9102 null median +0.9110 excess -0.0008 p 0.793 -> False | h2 2.7378 in [2.023, 2.234] -> False
+  P3_de_G1a_shuf             I +0.9153 null median +0.9124 excess +0.0029 p 0.002 -> True | h2 2.7378 in [2.023, 2.234] -> False
+  P3_de_G1b                  I +0.0056 null median +0.0275 excess -0.0220 p 1.000 -> False | h2 3.5462 in [2.023, 2.234] -> False
+  P3_de_G1b_shuf             I +0.0688 null median +0.0382 excess +0.0306 p 0.001 -> True | h2 3.5536 in [2.023, 2.234] -> False
+  P3_de_G1c                  I +0.0042 null median +0.0291 excess -0.0250 p 1.000 -> False | h2 3.5100 in [2.023, 2.234] -> False
+  P3_de_G1c_shuf             I +0.0659 null median +0.0407 excess +0.0253 p 0.001 -> True | h2 3.5198 in [2.023, 2.234] -> False
+  VOY_ZL3b                   I +0.1310 null median +0.0606 excess +0.0704 p 0.001 -> True | h2 2.1234 in [2.023, 2.234] -> True
+  VOY_RF1b                   I +0.1299 null median +0.0625 excess +0.0674 p 0.001 -> True | h2 2.1336 in [2.023, 2.234] -> True
+  VOY_IT2a                   I +0.1275 null median +0.0584 excess +0.0691 p 0.001 -> True | h2 2.1272 in [2.023, 2.234] -> True
+  PC2_VOY_IT2a_as_control    I +0.1275 null median +0.0584 excess +0.0691 p 0.001 -> True | h2 2.1272 in [2.023, 2.234] -> True
+  NC_augustine_la            I -0.0503 null median +0.0093 excess -0.0596 p 1.000 -> False | h2 3.3233 in [2.023, 2.234] -> False
+
+=== LAG2: s98 prefix XCMI (K 8, same-length null, M 200) leave-one-block-out, residue = median excess over 15 blocks; bar 7.964 e-3 bits ===
+  [lag-2] free RAM 5.7 GB (need >= 4.0); 330 jobs on 2 workers
+  [lag-2 18s] 20/330 done (last ('P1_la_G1a_shuf', 'B04') 1s)
+  [lag-2 32s] 40/330 done (last ('P1_la_G1b', 'B09') 2s)
+  [lag-2 47s] 60/330 done (last ('P1_la_G1b_shuf', 'B14') 1s)
+  [lag-2 64s] 80/330 done (last ('P1_la_G1c_shuf', 'B04') 2s)
+  [lag-2 78s] 100/330 done (last ('P2_it_G1a', 'B09') 2s)
+  [lag-2 92s] 120/330 done (last ('P2_it_G1a_shuf', 'B14') 1s)
+  [lag-2 108s] 140/330 done (last ('P2_it_G1b_shuf', 'B04') 2s)
+  [lag-2 123s] 160/330 done (last ('P2_it_G1c', 'B09') 2s)
+  [lag-2 139s] 180/330 done (last ('P2_it_G1c_shuf', 'B14') 1s)
+  [lag-2 153s] 200/330 done (last ('P3_de_G1a_shuf', 'B05') 1s)
+  [lag-2 169s] 220/330 done (last ('P3_de_G1b', 'B09') 2s)
+  [lag-2 185s] 240/330 done (last ('P3_de_G1b_shuf', 'B14') 2s)
+  [lag-2 201s] 260/330 done (last ('P3_de_G1c_shuf', 'B04') 2s)
+  [lag-2 217s] 280/330 done (last ('VOY_ZL3b', 'B09') 2s)
+  [lag-2 233s] 300/330 done (last ('VOY_RF1b', 'B14') 2s)
+  [lag-2 248s] 320/330 done (last ('S81_line_sticky75', 'B04') 2s)
+  [lag-2 256s] 330/330 done (last ('S81_line_sticky75', 'B13') 2s)
+  P1_la_G1a                  residue +2.194 e-3 bits (blocks 15, positive 0/15) -> <= bar True
+  P1_la_G1a_shuf             residue +4.205 e-3 bits (blocks 15, positive 1/15) -> <= bar True
+  P1_la_G1b                  residue -0.785 e-3 bits (blocks 15, positive 1/15) -> <= bar True
+  P1_la_G1b_shuf             residue +0.848 e-3 bits (blocks 15, positive 3/15) -> <= bar True
+  P1_la_G1c                  residue +2.731 e-3 bits (blocks 15, positive 2/15) -> <= bar True
+  P1_la_G1c_shuf             residue -4.692 e-3 bits (blocks 15, positive 0/15) -> <= bar True
+  P2_it_G1a                  residue -1.174 e-3 bits (blocks 15, positive 1/15) -> <= bar True
+  P2_it_G1a_shuf             residue +2.614 e-3 bits (blocks 15, positive 1/15) -> <= bar True
+  P2_it_G1b                  residue +6.747 e-3 bits (blocks 15, positive 4/15) -> <= bar True
+  P2_it_G1b_shuf             residue +3.394 e-3 bits (blocks 15, positive 1/15) -> <= bar True
+  P2_it_G1c                  residue +7.189 e-3 bits (blocks 15, positive 4/15) -> <= bar True
+  P2_it_G1c_shuf             residue +1.154 e-3 bits (blocks 15, positive 1/15) -> <= bar True
+  P3_de_G1a                  residue +2.806 e-3 bits (blocks 15, positive 2/15) -> <= bar True
+  P3_de_G1a_shuf             residue -1.003 e-3 bits (blocks 15, positive 1/15) -> <= bar True
+  P3_de_G1b                  residue +10.630 e-3 bits (blocks 15, positive 7/15) -> <= bar False
+  P3_de_G1b_shuf             residue +1.459 e-3 bits (blocks 15, positive 2/15) -> <= bar True
+  P3_de_G1c                  residue +7.469 e-3 bits (blocks 15, positive 4/15) -> <= bar True
+  P3_de_G1c_shuf             residue +3.810 e-3 bits (blocks 15, positive 0/15) -> <= bar True
+  VOY_ZL3b                   residue +5.354 e-3 bits (blocks 15, positive 2/15) -> <= bar True
+  VOY_RF1b                   residue +6.189 e-3 bits (blocks 15, positive 2/15) -> <= bar True
+  VOY_IT2a                   residue +4.871 e-3 bits (blocks 15, positive 4/15) -> <= bar True
+  S81_line_sticky75          residue +12.343 e-3 bits (blocks 15, positive 10/15) -> <= bar False
+  (preliminary, absolute bar; final L after A1 calibration) L lag-2 validity: VOY all <= bar True; s81 table > bar True -> True
+
+=== BAT: s67 slot battery (text block b vs real Voynich fold folds[b]) ===
+  folds (15): A B C D E F G H I M N O Q S T
+  [battery] free RAM 6.0 GB (need >= 4.0); 390 jobs on 2 workers
+  [battery 28s] 20/390 done (last ('REF', 'RF1b', 4) 2s)
+  [battery 53s] 40/390 done (last ('REF', 'IT2a', 10) 2s)
+  [battery 75s] 60/390 done (last ('CTL', 'P1_la_G1a', 14) 1s)
+  [battery 93s] 80/390 done (last ('CTL', 'P1_la_G1b', 4) 2s)
+  [battery 114s] 100/390 done (last ('CTL', 'P1_la_G1b_shuf', 9) 2s)
+  [battery 135s] 120/390 done (last ('CTL', 'P1_la_G1c', 14) 2s)
+  [battery 155s] 140/390 done (last ('CTL', 'P2_it_G1a', 4) 2s)
+  [battery 171s] 160/390 done (last ('CTL', 'P2_it_G1a_shuf', 9) 2s)
+  [battery 188s] 180/390 done (last ('CTL', 'P2_it_G1b', 14) 2s)
+  [battery 206s] 200/390 done (last ('CTL', 'P2_it_G1c', 4) 2s)
+  [battery 224s] 220/390 done (last ('CTL', 'P2_it_G1c_shuf', 9) 2s)
+  [battery 240s] 240/390 done (last ('CTL', 'P3_de_G1a', 14) 1s)
+  [battery 257s] 260/390 done (last ('CTL', 'P3_de_G1b', 4) 2s)
+  [battery 277s] 280/390 done (last ('CTL', 'P3_de_G1b_shuf', 9) 2s)
+  [battery 295s] 300/390 done (last ('CTL', 'P3_de_G1c', 14) 2s)
+  [battery 315s] 320/390 done (last ('CTL', 'VOY_ZL3b', 4) 2s)
+  [battery 330s] 340/390 done (last ('CTL', 'VOY_RF1b', 9) 1s)
+  [battery 344s] 360/390 done (last ('CTL', 'VOY_IT2a', 14) 1s)
+  [battery 358s] 380/390 done (last ('CTL', 'NC_augustine_la', 4) 1s)
+  [battery 366s] 390/390 done (last ('CTL', 'NC_augustine_la', 14) 2s)
+  P1_la_G1a                  ZL3b: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1 15 P2  1 P3  0 P4  0 P5  0 P7  2 | per fold 1 1 1 1 1 1 1 1 2 2 1 1 2 1 1
+  P1_la_G1a                  RF1b: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1 15 P2  1 P3  0 P4  0 P5  0 P7  3 | per fold 1 1 1 1 1 1 1 2 2 2 1 1 2 1 1
+  P1_la_G1a                  IT2a: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1 15 P2  1 P3  0 P4  0 P5  0 P7  2 | per fold 1 1 1 1 1 1 1 2 2 2 1 1 1 1 1
+  P1_la_G1a_shuf             ZL3b: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1 15 P2  1 P3  0 P4  0 P5  0 P7  1 | per fold 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1
+  P1_la_G1a_shuf             RF1b: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1 15 P2  1 P3  0 P4  0 P5  0 P7  1 | per fold 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1
+  P1_la_G1a_shuf             IT2a: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1 15 P2  1 P3  0 P4  0 P5  0 P7  1 | per fold 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1
+  P1_la_G1b                  ZL3b: folds >=4/6  1/15 fails; median 2.0/6; per prediction P1  2 P2  1 P3  0 P4 12 P5 15 P7  1 | per fold 2 1 2 2 3 2 1 2 4 2 2 2 2 2 2
+  P1_la_G1b                  RF1b: folds >=4/6  1/15 fails; median 2.0/6; per prediction P1  2 P2  1 P3  0 P4 12 P5 15 P7  1 | per fold 2 1 2 2 2 3 1 2 4 2 2 2 2 2 2
+  P1_la_G1b                  IT2a: folds >=4/6  1/15 fails; median 2.0/6; per prediction P1  2 P2  1 P3  0 P4 12 P5 15 P7  1 | per fold 2 1 2 2 2 3 1 2 4 2 2 2 2 2 2
+  P1_la_G1b_shuf             ZL3b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  1 P2  2 P3  0 P4 10 P5 15 P7  0 | per fold 3 1 2 3 2 1 2 2 1 3 1 2 2 2 1
+  P1_la_G1b_shuf             RF1b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  2 P2  2 P3  0 P4 10 P5 15 P7  0 | per fold 3 1 2 3 2 1 2 2 2 3 1 2 2 2 1
+  P1_la_G1b_shuf             IT2a: folds >=4/6  1/15 fails; median 2.0/6; per prediction P1  2 P2  2 P3  0 P4 10 P5 15 P7  0 | per fold 4 1 2 2 2 1 2 2 2 3 1 2 2 2 1
+  P1_la_G1c                  ZL3b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  1 P2  2 P3  0 P4  9 P5 15 P7  1 | per fold 2 1 1 2 3 1 1 2 2 3 2 2 2 2 2
+  P1_la_G1c                  RF1b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  2 P2  2 P3  0 P4  9 P5 15 P7  1 | per fold 2 1 1 2 2 2 1 2 3 3 2 2 2 2 2
+  P1_la_G1c                  IT2a: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  2 P2  2 P3  0 P4  9 P5 15 P7  1 | per fold 2 1 1 2 2 2 1 2 3 3 2 2 2 2 2
+  P1_la_G1c_shuf             ZL3b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  3 P2  1 P3  0 P4 13 P5 15 P7  0 | per fold 2 1 3 2 2 2 2 2 2 2 3 3 2 2 2
+  P1_la_G1c_shuf             RF1b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  2 P2  1 P3  0 P4 13 P5 15 P7  1 | per fold 2 1 2 2 2 2 2 2 3 2 3 3 2 2 2
+  P1_la_G1c_shuf             IT2a: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  3 P2  0 P3  0 P4 13 P5 15 P7  1 | per fold 3 1 2 2 2 2 2 2 3 2 2 3 2 2 2
+  P2_it_G1a                  ZL3b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1 15 P2  0 P3  0 P4  0 P5  0 P7 12 | per fold 2 2 2 2 2 1 2 1 2 1 2 2 2 2 2
+  P2_it_G1a                  RF1b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1 15 P2  0 P3  0 P4  0 P5  0 P7 12 | per fold 2 2 2 2 2 1 2 1 2 1 2 2 2 2 2
+  P2_it_G1a                  IT2a: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1 15 P2  0 P3  0 P4  0 P5  0 P7 12 | per fold 2 2 2 2 2 1 2 1 2 1 2 2 2 2 2
+  P2_it_G1a_shuf             ZL3b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1 15 P2  0 P3  0 P4  0 P5  0 P7 14 | per fold 2 2 2 2 2 2 2 2 2 1 2 2 2 2 2
+  P2_it_G1a_shuf             RF1b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1 15 P2  0 P3  0 P4  0 P5  0 P7 12 | per fold 2 2 2 2 2 1 2 1 2 1 2 2 2 2 2
+  P2_it_G1a_shuf             IT2a: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1 15 P2  0 P3  0 P4  0 P5  0 P7 13 | per fold 2 2 2 2 2 2 2 1 2 1 2 2 2 2 2
+  P2_it_G1b                  ZL3b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  1 P2  0 P3  0 P4 12 P5 15 P7  1 | per fold 2 1 3 2 2 2 2 2 3 1 2 2 2 2 1
+  P2_it_G1b                  RF1b: folds >=4/6  1/15 fails; median 2.0/6; per prediction P1  2 P2  0 P3  0 P4 12 P5 15 P7  3 | per fold 2 1 3 2 2 2 3 3 4 1 2 2 2 2 1
+  P2_it_G1b                  IT2a: folds >=4/6  1/15 fails; median 2.0/6; per prediction P1  1 P2  0 P3  0 P4 12 P5 15 P7  2 | per fold 2 1 2 2 2 2 2 3 4 1 2 2 2 2 1
+  P2_it_G1b_shuf             ZL3b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  7 P2  1 P3  0 P4 12 P5 15 P7  1 | per fold 2 2 3 3 3 2 2 2 3 3 2 2 3 2 2
+  P2_it_G1b_shuf             RF1b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  8 P2  1 P3  0 P4 12 P5 15 P7  1 | per fold 2 3 3 3 3 2 2 2 3 3 2 2 3 2 2
+  P2_it_G1b_shuf             IT2a: folds >=4/6  0/15 fails; median 3.0/6; per prediction P1 10 P2  1 P3  0 P4 12 P5 15 P7  1 | per fold 2 3 3 3 2 3 2 3 3 3 2 2 3 3 2
+  P2_it_G1c                  ZL3b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  1 P2  0 P3  0 P4 13 P5 15 P7  1 | per fold 1 2 3 2 2 2 2 2 3 1 2 2 2 2 2
+  P2_it_G1c                  RF1b: folds >=4/6  1/15 fails; median 2.0/6; per prediction P1  2 P2  0 P3  0 P4 13 P5 15 P7  3 | per fold 1 2 3 2 2 2 3 3 4 1 2 2 2 2 2
+  P2_it_G1c                  IT2a: folds >=4/6  1/15 fails; median 2.0/6; per prediction P1  2 P2  0 P3  0 P4 13 P5 15 P7  2 | per fold 1 2 3 2 2 2 2 3 4 1 2 2 2 2 2
+  P2_it_G1c_shuf             ZL3b: folds >=4/6  2/15 fails; median 3.0/6; per prediction P1  8 P2  6 P3  0 P4 12 P5 15 P7  1 | per fold 3 3 3 2 3 2 3 2 3 4 2 3 4 2 3
+  P2_it_G1c_shuf             RF1b: folds >=4/6  2/15 fails; median 3.0/6; per prediction P1  7 P2  4 P3  0 P4 12 P5 15 P7  1 | per fold 3 3 3 2 1 2 3 2 4 3 2 3 4 2 2
+  P2_it_G1c_shuf             IT2a: folds >=4/6  1/15 fails; median 3.0/6; per prediction P1  7 P2  2 P3  0 P4 12 P5 15 P7  1 | per fold 3 3 3 1 1 2 3 2 4 3 2 3 3 2 2
+  P3_de_G1a                  ZL3b: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1 15 P2  0 P3  0 P4  0 P5  0 P7  7 | per fold 1 1 1 2 1 2 2 2 2 1 1 2 2 1 1
+  P3_de_G1a                  RF1b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1 15 P2  0 P3  0 P4  0 P5  0 P7  8 | per fold 2 1 1 2 1 2 2 2 2 1 1 2 2 1 1
+  P3_de_G1a                  IT2a: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1 15 P2  0 P3  0 P4  0 P5  0 P7  8 | per fold 2 1 1 2 1 2 2 2 2 1 1 2 2 1 1
+  P3_de_G1a_shuf             ZL3b: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1 15 P2  0 P3  0 P4  0 P5  0 P7  3 | per fold 1 1 1 1 1 1 1 2 2 1 1 1 2 1 1
+  P3_de_G1a_shuf             RF1b: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1 15 P2  0 P3  0 P4  0 P5  0 P7  6 | per fold 2 1 1 1 1 2 2 2 2 1 1 1 2 1 1
+  P3_de_G1a_shuf             IT2a: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1 15 P2  0 P3  0 P4  0 P5  0 P7  3 | per fold 1 1 1 1 1 1 1 2 2 1 1 1 2 1 1
+  P3_de_G1b                  ZL3b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  0 P2  0 P3  0 P4 11 P5 15 P7  2 | per fold 1 1 1 2 2 2 2 2 3 2 2 2 3 2 1
+  P3_de_G1b                  RF1b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  0 P2  0 P3  0 P4 11 P5 15 P7  2 | per fold 1 1 1 2 2 2 2 2 3 2 2 2 3 2 1
+  P3_de_G1b                  IT2a: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  1 P2  0 P3  0 P4 11 P5 15 P7  1 | per fold 2 1 1 2 2 2 2 2 3 2 2 2 2 2 1
+  P3_de_G1b_shuf             ZL3b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  4 P2  3 P3  0 P4 10 P5 15 P7  1 | per fold 2 2 2 3 2 2 2 1 2 3 2 2 3 2 3
+  P3_de_G1b_shuf             RF1b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  5 P2  3 P3  0 P4 10 P5 15 P7  1 | per fold 2 2 2 3 2 3 2 1 3 3 2 2 3 2 2
+  P3_de_G1b_shuf             IT2a: folds >=4/6  1/15 fails; median 2.0/6; per prediction P1  6 P2  3 P3  0 P4 10 P5 15 P7  1 | per fold 2 2 2 3 2 4 2 1 3 3 2 2 3 2 2
+  P3_de_G1c                  ZL3b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  1 P2  0 P3  0 P4  9 P5 15 P7  2 | per fold 2 1 1 2 2 2 2 1 2 2 1 2 3 2 2
+  P3_de_G1c                  RF1b: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  1 P2  0 P3  0 P4  9 P5 15 P7  2 | per fold 2 1 1 2 2 2 2 1 2 2 1 2 3 2 2
+  P3_de_G1c                  IT2a: folds >=4/6  0/15 fails; median 2.0/6; per prediction P1  1 P2  0 P3  0 P4  9 P5 15 P7  1 | per fold 3 1 1 2 2 2 2 1 2 2 1 2 1 2 2
+  P3_de_G1c_shuf             ZL3b: folds >=4/6  1/15 fails; median 2.0/6; per prediction P1  4 P2  1 P3  0 P4 13 P5 15 P7  1 | per fold 4 3 3 2 2 2 2 2 3 2 1 3 1 2 2
+  P3_de_G1c_shuf             RF1b: folds >=4/6  2/15 fails; median 2.0/6; per prediction P1  4 P2  2 P3  0 P4 13 P5 15 P7  1 | per fold 4 3 3 2 2 2 2 2 4 2 1 3 1 2 2
+  P3_de_G1c_shuf             IT2a: folds >=4/6  2/15 fails; median 2.0/6; per prediction P1  5 P2  2 P3  0 P4 13 P5 15 P7  1 | per fold 4 3 3 2 2 2 2 2 4 2 1 3 1 3 2
+  VOY_ZL3b                   ZL3b: folds >=4/6 10/15 HOLDS; median 4.0/6; per prediction P1 12 P2 12 P3  2 P4  9 P5 15 P7 10 | per fold 5 5 6 5 4 5 5 5 4 2 2 3 3 4 2
+  VOY_ZL3b                   RF1b: folds >=4/6  9/15 HOLDS; median 4.0/6; per prediction P1 11 P2 12 P3  2 P4  9 P5 15 P7 11 | per fold 5 5 6 5 5 4 5 5 4 2 2 3 3 3 3
+  VOY_ZL3b                   IT2a: folds >=4/6 10/15 HOLDS; median 5.0/6; per prediction P1 12 P2 11 P3  5 P4  9 P5 15 P7 11 | per fold 6 6 5 6 5 4 5 5 4 2 1 3 3 5 3
+  VOY_RF1b                   ZL3b: folds >=4/6 14/15 HOLDS; median 5.0/6; per prediction P1 13 P2 13 P3  5 P4 13 P5 15 P7 10 | per fold 5 6 6 5 5 5 6 5 4 4 4 4 4 4 2
+  VOY_RF1b                   RF1b: folds >=4/6 11/15 HOLDS; median 5.0/6; per prediction P1 11 P2 11 P3  4 P4 13 P5 15 P7 10 | per fold 5 5 5 5 5 5 6 5 4 4 3 3 4 3 2
+  VOY_RF1b                   IT2a: folds >=4/6 12/15 HOLDS; median 5.0/6; per prediction P1 12 P2 11 P3  4 P4 13 P5 15 P7 11 | per fold 5 6 5 5 5 4 6 5 4 4 2 3 4 5 3
+  VOY_IT2a                   ZL3b: folds >=4/6  8/15 HOLDS; median 4.0/6; per prediction P1  9 P2 10 P3  4 P4 10 P5 15 P7 11 | per fold 3 5 6 5 5 4 4 5 3 4 3 3 3 3 3
+  VOY_IT2a                   RF1b: folds >=4/6 10/15 HOLDS; median 4.0/6; per prediction P1 10 P2 12 P3  4 P4 10 P5 15 P7 11 | per fold 4 5 6 5 5 4 5 5 4 4 3 3 3 3 3
+  VOY_IT2a                   IT2a: folds >=4/6 10/15 HOLDS; median 4.0/6; per prediction P1 11 P2 10 P3  4 P4 10 P5 15 P7 11 | per fold 4 5 5 5 5 4 5 5 3 4 2 3 3 5 3
+  PC2_VOY_IT2a_as_control    IT2a: folds >=4/6 10/15 HOLDS; median 4.0/6; per prediction P1 12 P2 10 P3  4 P4 10 P5 15 P7 11 | per fold 4 6 5 5 5 4 5 5 3 4 2 3 3 5 3
+  NC_augustine_la            ZL3b: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1  1 P2  2 P3  1 P4  0 P5  0 P7  8 | per fold 0 0 2 1 1 1 1 1 1 1 0 1 1 1 0
+  NC_augustine_la            RF1b: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1  0 P2  1 P3  1 P4  0 P5  0 P7  9 | per fold 0 1 1 1 0 1 1 1 1 1 0 1 1 1 0
+  NC_augustine_la            IT2a: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1  0 P2  1 P3  4 P4  0 P5  0 P7  8 | per fold 0 0 2 1 0 1 1 1 1 1 0 2 1 2 0
+
+=== A1 target calibration: the manuscript through the same criteria (absolute rules) ===
+  VOY_ZL3b: SIG identity:nYYY slot:YYYY affix2:YYYY | BAT ZL3b 10/15 RF1b 9/15 IT2a 10/15 | RHY +0.0704 p 0.001 | h2 2.1234 | LAG2 +5.354
+  VOY_RF1b: SIG identity:YYYY slot:YYYY affix2:YYYY | BAT ZL3b 14/15 RF1b 11/15 IT2a 12/15 | RHY +0.0674 p 0.001 | h2 2.1336 | LAG2 +6.189
+  VOY_IT2a: SIG identity:YYYY slot:YYYY affix2:YYYY | BAT ZL3b 8/15 RF1b 10/15 IT2a 10/15 | RHY +0.0691 p 0.001 | h2 2.1272 | LAG2 +4.871
+  TARGET-RELATIVE criteria (manuscript fails the absolute rule): SIG ['identity']; BAT none (min VOY folds {'ZL3b': 8, 'RF1b': 9, 'IT2a': 10}); RHY False (min excess +0.0674); H2 False (band 2.0230, 2.2340); LAG2 False (bar used 7.964 e-3 bits)
+  survivor fold rule on the manuscript (slot SIG and battery row >= 4/6): VOY_ZL3b vs ZL3b 10/15; VOY_ZL3b vs RF1b 9/15; VOY_ZL3b vs IT2a 10/15; VOY_RF1b vs ZL3b 14/15; VOY_RF1b vs RF1b 11/15; VOY_RF1b vs IT2a 12/15; VOY_IT2a vs ZL3b 8/15; VOY_IT2a vs RF1b 10/15; VOY_IT2a vs IT2a 10/15
+  survivor LOQO bar per T: {'ZL3b': 8, 'RF1b': 8, 'IT2a': 8}
+  L lag-2 validity with the bar used (7.964): VOY <= bar [True, True, True]; s81 table +12.343 > bar -> True
+
+=== calls ===
+  R recovery True; S s97 gate (PC1 True, PC2 True, NC True) True; L lag-2 validity True
+  CALL_S104_GATE = True
+
+  CELL TABLE (plaintext row, then its shuffled twin): SIG flags id/slot/affix2 | BAT folds ZL3b/RF1b/IT2a | RHY excess,p | h2 | LAG2 residue e-3 | rec | PASS
+   P1_la_G1a          SIG nYYY*/YnYY/nnnY n | BAT 0/0/0 n | RHY -0.0037,1.000 n | h2 2.805 n | LAG2 +2.19 Y | rec 0.839 | -
+   P1_la_G1a_shuf     SIG nnnY*/nnYY/nYYY n | BAT 0/0/0 n | RHY +0.0002,0.424 n | h2 2.805 n | LAG2 +4.20 Y | rec 0.839 | -
+   P1_la_G1b          SIG nYnY*/nnYY/nnYn n | BAT 1/1/1 n | RHY -0.0250,1.000 n | h2 4.019 n | LAG2 -0.79 Y | rec 1.000 | -
+   P1_la_G1b_shuf     SIG nnnY*/nnYY/nnnY n | BAT 0/0/1 n | RHY +0.0029,0.323 n | h2 4.020 n | LAG2 +0.85 Y | rec 1.000 | -
+   P1_la_G1c          SIG nYnY*/nnnY/nnYY n | BAT 0/0/0 n | RHY -0.0211,1.000 n | h2 4.009 n | LAG2 +2.73 Y | rec 1.000 | -
+   P1_la_G1c_shuf     SIG nnnY*/nYYY/nnYY n | BAT 0/0/0 n | RHY +0.0143,0.010 Y | h2 4.002 n | LAG2 -4.69 Y | rec 1.000 | -
+   P2_it_G1a          SIG nnnY*/nnnY/nnYY n | BAT 0/0/0 n | RHY +0.0005,0.278 n | h2 2.638 n | LAG2 -1.17 Y | rec 0.988 | -
+   P2_it_G1a_shuf     SIG nnnY*/nnYY/nYYY n | BAT 0/0/0 n | RHY -0.0003,0.683 n | h2 2.638 n | LAG2 +2.61 Y | rec 0.988 | -
+   P2_it_G1b          SIG nnnY*/nnYY/nnYY n | BAT 0/1/1 n | RHY -0.0237,1.000 n | h2 3.345 n | LAG2 +6.75 Y | rec 1.000 | -
+   P2_it_G1b_shuf     SIG YnYY*/YnYY/YYYY n | BAT 0/0/0 n | RHY +0.0435,0.001 Y | h2 3.343 n | LAG2 +3.39 Y | rec 1.000 | -
+   P2_it_G1c          SIG nYnY*/nnYY/nnYY n | BAT 0/1/1 n | RHY -0.0225,1.000 n | h2 3.347 n | LAG2 +7.19 Y | rec 1.000 | -
+   P2_it_G1c_shuf     SIG YnnY*/nnYY/YYYY n | BAT 2/2/1 n | RHY +0.0397,0.001 Y | h2 3.346 n | LAG2 +1.15 Y | rec 1.000 | -
+   P3_de_G1a          SIG nnnY*/nnYY/nnYY n | BAT 0/0/0 n | RHY -0.0008,0.793 n | h2 2.738 n | LAG2 +2.81 Y | rec 0.914 | -
+   P3_de_G1a_shuf     SIG nnnY*/nnYY/nnYY n | BAT 0/0/0 n | RHY +0.0029,0.002 Y | h2 2.738 n | LAG2 -1.00 Y | rec 0.914 | -
+   P3_de_G1b          SIG nYnY*/nnYY/nnYY n | BAT 0/0/0 n | RHY -0.0220,1.000 n | h2 3.546 n | LAG2 +10.63 n | rec 1.000 | -
+   P3_de_G1b_shuf     SIG YnYY*/nnYY/YnYY n | BAT 0/0/1 n | RHY +0.0306,0.001 Y | h2 3.554 n | LAG2 +1.46 Y | rec 1.000 | -
+   P3_de_G1c          SIG nYnY*/nnnY/nnnY n | BAT 0/0/0 n | RHY -0.0250,1.000 n | h2 3.510 n | LAG2 +7.47 Y | rec 1.000 | -
+   P3_de_G1c_shuf     SIG nnnY*/nnYY/nnYY n | BAT 1/2/2 n | RHY +0.0253,0.001 Y | h2 3.520 n | LAG2 +3.81 Y | rec 1.000 | -
+  CALL_S104_ANY_PASS = False
+  TWIN_PASS(P1_la_G1a) = False
+  TWIN_PASS(P1_la_G1b) = False
+  TWIN_PASS(P1_la_G1c) = False
+  TWIN_PASS(P2_it_G1a) = False
+  TWIN_PASS(P2_it_G1b) = False
+  TWIN_PASS(P2_it_G1c) = False
+  TWIN_PASS(P3_de_G1a) = False
+  TWIN_PASS(P3_de_G1b) = False
+  TWIN_PASS(P3_de_G1c) = False
+
+VERDICT: CALL_S104_GATE = True; CALL_S104_ANY_PASS = False: no plaintext cell passes: table-driven verbose encodings of real recipe text are closed within G1; the grid moves to the H-05/H-07 side (procedure without plaintext) (D-066 (j) stopping rule)
+
+sidecars: runs/s104/profiles.csv, runs/s104/lag2.csv, runs/s104/battery.csv, runs/s104/calls.json, runs/s104/key_<cell>.json
+runtime 719 s; finished Sun Oct 18 13:41:16 PDT 2026 (`date`)

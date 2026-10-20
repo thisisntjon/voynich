@@ -1,0 +1,328 @@
+s92_f40_seg_order_physical_triangulation.py — F-40 Triangulation Across `seg` (X-01), `order`, and `physical` (s92 / P-24)
+date: 2026-10-18 08:29:54 (datetime.now)
+device: cpu (CUDA_VISIBLE_DEVICES=''); torch 2.11.0.dev20260115+cu128 (threads=4); numpy 2.4.6; python 3.11.9
+stub_match: True
+sha256 s92_f40_seg_order_physical_triangulation.py: 378e94bcffca8beea20b7180bfd80949e94cda32da14b1ef4e7aec7658688477
+sha256 s92_f40_seg_order_physical_triangulation.prereg.sha256: 33f25414a3c8e775a31087608903311a514a45010da1e53bb5a8539c88bfc82b
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  local import m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  local import p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  local import s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  local import s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  local import s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  local import s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  local import s70_canonical_segmentation_and_rare_cores.py sha256=ae0a00e8df8b053677451a5dd96b55dc5a9e0942052a59147383129bec95b5cb
+  local import s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  local import s77_deconfounded_scribe_and_comma_ablation_loqo.py sha256=56eb6afdafdc57654b56a7019ee6a9410752db9ffb08c3a9112f83dd0798cc5d
+  local import s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  local import s87_core_layer_genre.py sha256=d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db
+  local import s89_line_repetition_genres.py sha256=037282e31f57ce2c2091e8fbce5e7488ede231c715cf38c7e4c2d86caa5c305a
+  local import s90_constructed_text_core.py sha256=7b1c63cecb8bed9e732285d464916615e189045cec9ba4d7bb086c64a5e6d633
+  local import s92_f40_seg_order_physical_triangulation.py sha256=378e94bcffca8beea20b7180bfd80949e94cda32da14b1ef4e7aec7658688477
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+params: SEED=20261018, SPLIT_SEED=20261017, N_TOT=22500, NB=15, N_MATCH=4731, N_SHUF_ORDER=300, N_SHUF_R=300, N_PERM_LOC=250, N_BOOT_LOC=500, N_INT_DRAWS=80x20
+
+============================================================================================================
+PART 1 (Axis `seg` / Discharging X-01 on F-40: 5 Segmentation Schemes Across Voynich, Generators & Reference Classes)
+============================================================================================================
+
+--- 1A. Voynich Core-Layer Profile Across 3 Transliterations x 5 Primary Segmenters (+ Zattera_drop) ---
+  Translit Segmenter       Types  Empty HO_Tok        MM_K100 [95% CI]   p100        MM_K200 [95% CI]   p200   Rw(1)   pRw1   Rc(1)          loc [95% CI]  C1(seg)  C1(s87)
+  ZL3b   SlotSegmenter    1747      0   4731 +0.0339 [+0.0155,+0.0504] 0.0066 +0.0276 [+0.0101,+0.0458] 0.0233  1.1809 0.0033  0.5668 0.9776 [0.9512,1.0041]     PASS     PASS
+  RF1b   SlotSegmenter    1840      0   4731 +0.0187 [+0.0058,+0.0330] 0.0631 +0.0070 [-0.0106,+0.0205] 0.2957  1.1976 0.0033  0.6690 0.9767 [0.9421,1.0129]     PASS     PASS
+  IT2a   SlotSegmenter    1712      0   4731 +0.0312 [+0.0170,+0.0417] 0.0033 +0.0318 [+0.0134,+0.0449] 0.0033  1.2166 0.0033  0.6506 0.9784 [0.9427,1.0123]     PASS     PASS
+  ZL3b   Zattera          3019      0   4731 +0.1096 [+0.0848,+0.1198] 0.0033 +0.0963 [+0.0721,+0.1044] 0.0033  1.1418 0.0033  0.8561 0.9672 [0.9178,1.0157]     PASS     FAIL
+  RF1b   Zattera          3230      0   4731 +0.0846 [+0.0573,+0.0926] 0.0033 +0.0879 [+0.0571,+0.0946] 0.0033  1.1339 0.0033  0.8210 0.9707 [0.9127,1.0305]     PASS     FAIL
+  IT2a   Zattera          3052      0   4731 +0.0636 [+0.0442,+0.0774] 0.0033 +0.0625 [+0.0390,+0.0727] 0.0033  1.1538 0.0033  0.8205 0.9670 [0.9170,1.0163]     PASS     PASS
+  ZL3b   Seg_Affix2       2045      0   4731 +0.0796 [+0.0546,+0.0927] 0.0033 +0.0742 [+0.0415,+0.0844] 0.0033  1.1645 0.0033  0.3852 0.9739 [0.9488,0.9963]     PASS     PASS
+  RF1b   Seg_Affix2       2174      0   4731 +0.0510 [+0.0268,+0.0637] 0.0033 +0.0459 [+0.0197,+0.0564] 0.0033  1.1765 0.0033  0.4341 0.9744 [0.9460,1.0079]     PASS     PASS
+  IT2a   Seg_Affix2       2065      0   4731 +0.0656 [+0.0434,+0.0785] 0.0033 +0.0545 [+0.0293,+0.0707] 0.0033  1.1531 0.0033  0.3972 0.9725 [0.9426,1.0006]     PASS     PASS
+  ZL3b   Canon+Comp        868      0   4731 +0.0440 [+0.0220,+0.0647] 0.0033 +0.0331 [+0.0118,+0.0544] 0.0066  1.1831 0.0033  0.5882 0.9905 [0.9685,1.0123]     PASS     PASS
+  RF1b   Canon+Comp        935      0   4731 +0.0208 [+0.0024,+0.0350] 0.0432 -0.0018 [-0.0238,+0.0133] 0.5249  1.2033 0.0033  0.6661 0.9864 [0.9600,1.0170]     PASS     PASS
+  IT2a   Canon+Comp        835      0   4731 +0.0351 [+0.0217,+0.0439] 0.0033 +0.0216 [+0.0023,+0.0300] 0.0498  1.2170 0.0033  0.6680 0.9892 [0.9593,1.0160]     PASS     PASS
+  ZL3b   RawWord          5011      0   4731 +0.0641 [+0.0507,+0.0770] 0.0033 +0.0972 [+0.0752,+0.1167] 0.0033  1.1635 0.0066  0.2595 0.9584 [0.9355,0.9807]     PASS     FAIL
+  RF1b   RawWord          5265      0   4731 +0.0569 [+0.0373,+0.0693] 0.0033 +0.0795 [+0.0487,+0.0976] 0.0033  1.1982 0.0100  0.3062 0.9610 [0.9344,0.9912]     PASS     PASS
+  IT2a   RawWord          5110      0   4731 +0.0617 [+0.0481,+0.0735] 0.0033 +0.0717 [+0.0422,+0.0923] 0.0033  1.2196 0.0066  0.3479 0.9567 [0.9321,0.9809]     PASS     PASS
+  ZL3b   Zattera_drop      149   6851   4116 +0.0686 [+0.0536,+0.0806] 0.0033 +0.0675 [+0.0512,+0.0809] 0.0033  1.0959 0.0033  1.0625 0.9978 [0.9826,1.0135]     PASS     PASS
+  RF1b   Zattera_drop      150   7003   3994 +0.0700 [+0.0527,+0.0843] 0.0033 +0.0667 [+0.0490,+0.0802] 0.0033  1.0835 0.0066  1.0304 0.9989 [0.9857,1.0115]     PASS     PASS
+  IT2a   Zattera_drop      150   6595   3960 +0.0624 [+0.0480,+0.0780] 0.0033 +0.0597 [+0.0432,+0.0762] 0.0033  1.1080 0.0033  1.0156 0.9973 [0.9872,1.0071]     PASS     PASS
+
+  Segmenter-Specific Voynich Target Bands (s80/s87 207p Order Band & 22.5k Locality Band):
+    SlotSegmenter : K100 [+0.0123,+0.0923] | K200 [-0.0035,+0.0865] | loc [0.9059,1.0480] | mean Rw(1)=1.1984, mean Rc(1)=0.6288 (max Rc(1)=0.6690)
+    Zattera       : K100 [+0.0442,+0.1257] | K200 [+0.0390,+0.1249] | loc [0.8528,1.0885] | mean Rw(1)=1.1432, mean Rc(1)=0.8325 (max Rc(1)=0.8561)
+    Seg_Affix2    : K100 [+0.0268,+0.0973] | K200 [-0.0036,+0.0883] | loc [0.9124,1.0364] | mean Rw(1)=1.1647, mean Rc(1)=0.4055 (max Rc(1)=0.4341)
+    Canon+Comp    : K100 [+0.0104,+0.0835] | K200 [-0.0238,+0.0788] | loc [0.9294,1.0458] | mean Rw(1)=1.2011, mean Rc(1)=0.6408 (max Rc(1)=0.6680)
+    RawWord       : K100 [+0.0373,+0.1246] | K200 [+0.0422,+0.1434] | loc [0.9042,1.0177] | mean Rw(1)=1.1938, mean Rc(1)=0.3045 (max Rc(1)=0.3479)
+    Zattera_drop  : K100 [+0.0480,+0.1103] | K200 [+0.0383,+0.1074] | loc [0.9669,1.0288] | mean Rw(1)=1.0958, mean Rc(1)=1.0362 (max Rc(1)=1.0625)
+
+--- 1B. All 4 Voynich Generators Re-Segmented Across All 5 Schemes (4 Generators x 5 Segmenters = 20 Cells) ---
+  Generator        Segmenter       Types        MM_K100 [95% CI]   p100  MM_K200   p200   Rw(1)   pRw1   Rc(1)     loc  a_ord   b_Rw  c_Rc<Rw  d_loc    C1      D
+  G_s57_localmem   SlotSegmenter    1737 -0.0082 [-0.0082,-0.0082] 0.7575  -0.0091 0.7608  1.2396 0.0033  0.9247  0.9780      .      T        T      T    no   1.15
+  G_s67_CA         SlotSegmenter    1139 +0.0073 [+0.0073,+0.0073] 0.2558  +0.0059 0.3455  1.2034 0.0033  1.0384  0.9817      .      T        T      T    no   1.18
+  G_pagepool       SlotSegmenter    1310 -0.0230 [-0.0230,-0.0230] 0.9867  -0.0244 0.9801  0.9744 0.8140  0.9160  0.8025      .      .        T      .    no   1.76
+  G_linepool       SlotSegmenter     721 -0.0044 [-0.0044,-0.0044] 0.6246  -0.0026 0.5714  1.2364 0.0033  1.0155  0.8810      .      T        T      .    no   1.37
+  G_s57_localmem   Zattera          3437 -0.0058 [-0.0058,-0.0058] 0.7043  -0.0111 0.8140  1.2016 0.0033  1.0322  0.9760      .      T        T      T    no   1.46
+  G_s67_CA         Zattera          4022 +0.0105 [+0.0105,+0.0105] 0.1628  +0.0105 0.1960  1.0588 0.0598  0.9392  0.9778      .      .        T      T    no   1.14
+  G_pagepool       Zattera          2144 -0.0014 [-0.0014,-0.0014] 0.5714  -0.0051 0.6645  0.9446 0.9867  0.8747  0.6815      .      .        T      .    no   1.76
+  G_linepool       Zattera          1127 +0.0241 [+0.0241,+0.0241] 0.0266  +0.0183 0.0598  1.2105 0.0033  0.9218  0.8122      .      T        T      .    no   1.14
+  G_s57_localmem   Seg_Affix2       2167 -0.0034 [-0.0034,-0.0034] 0.6113  -0.0050 0.6346  1.1291 0.0033  0.9450  0.9883      .      T        T      T    no   1.95
+  G_s67_CA         Seg_Affix2       2254 +0.0246 [+0.0246,+0.0246] 0.0066  +0.0279 0.0233  1.1706 0.0033  0.9226  0.9909      .      T        T      T    no   1.72
+  G_pagepool       Seg_Affix2       1535 -0.0126 [-0.0126,-0.0126] 0.8372  -0.0174 0.8970  0.9784 0.8007  0.9754  0.8120      .      .        T      .    no   2.41
+  G_linepool       Seg_Affix2        892 -0.0025 [-0.0025,-0.0025] 0.6013  +0.0102 0.1761  1.2275 0.0033  1.0468  0.8830      .      T        T      .    no   2.20
+  G_s57_localmem   Canon+Comp        942 -0.0011 [-0.0011,-0.0011] 0.5382  -0.0048 0.6445  1.2624 0.0033  0.9331  0.9894      .      T        T      T    no   1.00
+  G_s67_CA         Canon+Comp        601 +0.0070 [+0.0070,+0.0070] 0.2724  +0.0027 0.4385  1.1976 0.0033  1.0253  0.9937      .      T        T      T    no   1.08
+  G_pagepool       Canon+Comp        719 +0.0074 [+0.0074,+0.0074] 0.2525  +0.0040 0.4053  0.9740 0.8073  0.9036  0.9190      .      .        T      .    no   1.10
+  G_linepool       Canon+Comp        478 -0.0059 [-0.0059,-0.0059] 0.6611  -0.0068 0.6910  1.1900 0.0033  0.9960  0.9269      .      T        T      .    no   1.23
+  G_s57_localmem   RawWord          5439 -0.0032 [-0.0032,-0.0032] 0.6179  +0.0166 0.1362  1.9430 0.0033  1.0261  0.9869      .      T        T      T    no   2.85
+  G_s67_CA         RawWord          6100 +0.0202 [+0.0202,+0.0202] 0.0166  +0.0095 0.2625  1.5136 0.0033  1.5041  0.9806      .      T        T      T    no   3.38
+  G_pagepool       RawWord          3671 -0.0030 [-0.0030,-0.0030] 0.6445  -0.0015 0.5482  1.0308 0.2924  0.9363  0.7626      .      .        T      .    no   3.00
+  G_linepool       RawWord          2706 +0.0050 [+0.0050,+0.0050] 0.3688  +0.0100 0.2990  2.0980 0.0033  0.9033  0.7765      .      T        T      .    no   3.05
+
+--- 1C. All Reference Texts (Classes L, P, V, R, T, N, H, C) Evaluated Against All 5 Segmenters' Voynich Bands ---
+  Text                     Cls Gate   MM_K100   p100  MM_K200   Rw(1)   pRw1   Rc(1)     loc  b_Rw  C1(any/5 segs)   MinD
+  L_alphita_la             L   yes    +0.2315 0.0010  +0.2820  0.0767 1.0000  0.1843  0.9308     .       0/5         6.04
+  L_dispensarium_la        L   yes    +0.0882 0.0010  +0.1070  0.1381 1.0000  0.2104  0.8799     .       0/5         4.43
+  L_cookery15_enm          L   yes    +0.6554 0.0010  +0.7512  0.0274 1.0000  0.0480  0.9583     .       0/5        11.81
+  L_culpeper_en            L   yes    +0.4727 0.0010  +0.5639  0.0093 1.0000  0.0661  0.9807     .       0/5        11.73
+  L_cury_enm               L   desc   +0.7136 0.0010  +0.7610  0.0126 1.0000  0.0546  0.9047     .       0/5        13.12
+  P_cremma_prose_la        P   yes    +0.0744 0.0010  +0.0989  0.1926 1.0000  0.2988  0.7920     .       0/5         3.89
+  P_caesar_la              P   desc   +0.1076 0.0010  +0.1522  0.0000 1.0000  0.0000  0.9642     .       0/5        18.26
+  P_augustine_la           P   yes    +0.1274 0.0010  +0.1483  0.0718 1.0000  0.0481  0.9200     .       0/5         6.78
+  P_pliny_herbal_la        P   yes    +0.0910 0.0010  +0.1321  0.0000 1.0000  0.0000  0.9580     .       0/5        18.25
+  P_mandeville_en          P   yes    +0.5405 0.0010  +0.6325  0.0146 1.0000  0.0353  0.9284     .       0/5        11.90
+  P_alice_en               P   yes    +0.5001 0.0010  +0.6361  0.1459 1.0000  0.0601  0.9595     .       0/5         8.36
+  V_dante_it               V   yes    +0.3448 0.0010  +0.4318  0.0664 1.0000  0.0000  0.9801     .       0/5        13.46
+  V_nibelungenlied_gmh     V   yes    +0.2411 0.0010  +0.2790  0.0493 1.0000  0.3887  0.9736     .       0/5         6.82
+  V_croisade_oc            V   yes    +0.3621 0.0010  +0.4748  0.0272 1.0000  0.0000  0.9669     .       0/5        14.44
+  V_roland_fro             V   yes    +0.3257 0.0010  +0.4294  0.0604 1.0000  0.0000  0.9665     .       0/5        13.50
+  R_kalevala_fi            R   yes    +0.1105 0.0010  +0.1489  0.1415 1.0000  0.8075  0.8479     .       0/5         4.28
+  R_horae_ebor_la          R   yes    +0.1603 0.0010  +0.2668  0.1048 1.0000  0.1963  0.8777     .       0/5         5.29
+  R_atharva_en             R   yes    +0.2229 0.0010  +0.2761  0.0589 1.0000  0.1401  0.9104     .       0/5         6.61
+  R_carmina_gd_en          R   yes    +0.3538 0.0010  +0.4107  0.1398 1.0000  0.2008  0.8828     .       0/5         5.94
+  R_steganographia_la      R   yes    +0.0417 0.0010  +0.0838  0.5319 0.9980  0.4475  0.9498     .       0/5         1.66
+  T_alphita_la             T   yes    +0.3064 0.0010  +0.3251  0.0879 1.0000  0.0722  0.9272     .       0/5         6.73
+  T_promptorium_enm_la     T   yes    +0.1388 0.0010  +0.1418  0.0956 1.0000  0.0935  0.7646     .       0/5         5.84
+  R_pool                   R   yes    +0.0900 0.0010  +0.1313  0.2168 1.0000  0.2908  0.6653     .       0/5         4.14
+  T_pool                   T   yes    +0.1165 0.0010  +0.1556  0.1028 1.0000  0.1654  0.7827     .       0/5         5.30
+  N_pool                   N   yes    +0.0326 0.0010  +0.0511  0.2379 1.0000  0.1854  0.7546     .       0/5         3.80
+  C_steganographia_la      C   yes    +0.0421 0.0010  +0.0840  0.5378 0.9960  0.4391  0.9500     .       0/5         1.64
+  C_steg_heidel_la         C   yes    +0.0473 0.0010  +0.0524  0.1186 1.0000  0.3292  0.9138     .       0/5         4.62
+  C_enochian_clauses       C   desc   +0.0387 0.1858  +0.0365  0.4037 0.9980  0.0000  0.9761     .       0/5        11.68
+  C_lull_rows5             C   desc   +0.0394 0.3187  +0.5427  0.0000 1.0000  0.0000  0.9112     .       0/5        18.68
+  H_gib_pool               H   desc   -0.0108 0.7612  -0.0020  0.5364 1.0000  0.4978  0.3579     .       0/5         3.26
+  C_pool                   C   yes    +0.0521 0.0010  +0.0678  0.4560 1.0000  0.3278  0.8210     .       0/5         2.24
+
+--- 1D. Secondary Morphological Re-Segmentation Check on Reference Texts (Zattera, Seg_Affix2, Canon+Comp vs SlotSegmenter) ---
+  RefText                Cls Segmenter       Types  MM_K100   p100   Rw(1)   pRw1   Rc(1)   Rw-Rc     loc    C1  Rc<=VoyMax  C1&RcBand
+  L_alphita_la           L   SlotSegmenter    5925  +0.2273 0.0010  0.3575 1.0000  0.2922 +0.0653  0.9472    no          NO         no
+  L_alphita_la           L   Zattera          8666  +0.2292 0.0033  0.1160 1.0000  0.1780 -0.0620  0.9312    no          NO         no
+  L_alphita_la           L   Seg_Affix2       6222  +0.2364 0.0033  0.3265 1.0000  0.4135 -0.0870  0.9459    no          NO         no
+  L_alphita_la           L   Canon+Comp       4542  +0.2070 0.0033  0.4080 1.0000  0.3262 +0.0818  0.9612    no          NO         no
+  L_alphita_la           L   RawWord          8769  +0.2315 0.0010  0.0767 1.0000  0.1843 -0.1076  0.9308    no          NO         no
+  L_dispensarium_la      L   SlotSegmenter    5037  +0.0677 0.0010  0.8077 1.0000  0.9289 -0.1212  0.8953    no          NO         no
+  L_dispensarium_la      L   Zattera          8315  +0.0847 0.0033  0.2813 1.0000  0.1899 +0.0915  0.8764    no          NO         no
+  L_dispensarium_la      L   Seg_Affix2       5877  +0.0715 0.0033  0.5448 1.0000  0.3497 +0.1951  0.8962    no          NO         no
+  L_dispensarium_la      L   Canon+Comp       3721  +0.0655 0.0033  0.8057 1.0000  0.8935 -0.0879  0.9156    no          NO         no
+  L_dispensarium_la      L   RawWord          8442  +0.0882 0.0010  0.1381 1.0000  0.2104 -0.0723  0.8799    no          NO         no
+  P_cremma_prose_la      P   SlotSegmenter    3855  +0.0568 0.0010  0.6851 1.0000  0.7804 -0.0953  0.8578    no          NO         no
+  P_cremma_prose_la      P   Zattera          7363  +0.0654 0.0033  0.3115 1.0000  0.3098 +0.0017  0.7839    no          NO         no
+  P_cremma_prose_la      P   Seg_Affix2       4490  +0.0831 0.0033  0.5242 1.0000  0.5199 +0.0044  0.8479    no          NO         no
+  P_cremma_prose_la      P   Canon+Comp       2618  +0.0458 0.0033  0.6851 1.0000  0.7555 -0.0704  0.8967    no          NO         no
+  P_cremma_prose_la      P   RawWord          7507  +0.0744 0.0010  0.1926 1.0000  0.2988 -0.1062  0.7920    no          NO         no
+  V_dante_it             V   SlotSegmenter    2585  +0.1565 0.0010  0.7039 1.0000  0.2494 +0.4545  0.9770    no         yes         no
+  V_dante_it             V   Zattera          4825  +0.3278 0.0033  0.3434 1.0000  0.0253 +0.3180  0.9792    no          NO         no
+  V_dante_it             V   Seg_Affix2       3001  +0.2653 0.0033  0.3116 1.0000  0.1172 +0.1944  0.9787    no          NO         no
+  V_dante_it             V   Canon+Comp       1709  +0.1348 0.0033  0.7282 1.0000  0.2761 +0.4521  0.9859    no         yes         no
+  V_dante_it             V   RawWord          4891  +0.3448 0.0010  0.0664 1.0000  0.0000 +0.0664  0.9801    no          NO         no
+  R_kalevala_fi          R   SlotSegmenter    5351  +0.1883 0.0010  0.7227 1.0000  0.4633 +0.2594  0.8921    no          NO         no
+  R_kalevala_fi          R   Zattera          8821  +0.1142 0.0033  0.6400 1.0000  0.7566 -0.1166  0.8470    no          NO         no
+  R_kalevala_fi          R   Seg_Affix2       6399  +0.1648 0.0033  0.7776 0.9934  0.5872 +0.1904  0.8799    no          NO         no
+  R_kalevala_fi          R   Canon+Comp       4160  +0.1900 0.0033  0.7561 1.0000  0.4981 +0.2580  0.9130    no          NO         no
+  R_kalevala_fi          R   RawWord          8865  +0.1105 0.0010  0.1415 1.0000  0.8075 -0.6660  0.8479    no          NO         no
+  R_horae_ebor_la        R   SlotSegmenter    4045  +0.2109 0.0010  0.4534 1.0000  0.4008 +0.0526  0.9094    no          NO         no
+  R_horae_ebor_la        R   Zattera          6091  +0.1662 0.0033  0.1057 1.0000  0.2488 -0.1430  0.8773    no          NO         no
+  R_horae_ebor_la        R   Seg_Affix2       4220  +0.1873 0.0033  0.4701 1.0000  0.5223 -0.0522  0.9062    no          NO         no
+  R_horae_ebor_la        R   Canon+Comp       3151  +0.1886 0.0033  0.4842 1.0000  0.4368 +0.0474  0.9269    no          NO         no
+  R_horae_ebor_la        R   RawWord          6162  +0.1603 0.0010  0.1048 1.0000  0.1963 -0.0915  0.8777    no          NO         no
+  R_steganographia_la    R   SlotSegmenter    8895  +0.0480 0.0010  1.1692 0.0130  0.9429 +0.2263  0.9605  PASS          NO         no
+  R_steganographia_la    R   Zattera         12837  +0.0450 0.0033  0.6077 0.9867  0.8114 -0.2036  0.9498    no          NO         no
+  R_steganographia_la    R   Seg_Affix2       9857  +0.0578 0.0033  0.9853 0.5581  0.6209 +0.3644  0.9570    no          NO         no
+  R_steganographia_la    R   Canon+Comp       7209  +0.0287 0.0100  1.1276 0.0266  0.9286 +0.1990  0.9677  PASS          NO         no
+  R_steganographia_la    R   RawWord         12998  +0.0417 0.0010  0.5319 0.9980  0.4475 +0.0844  0.9498    no          NO         no
+  T_promptorium_enm_la   T   SlotSegmenter    8239  +0.0926 0.0010  0.6495 1.0000  0.4459 +0.2036  0.8686    no          NO         no
+  T_promptorium_enm_la   T   Zattera         12970  +0.1301 0.0033  0.1315 1.0000  0.0902 +0.0412  0.7623    no          NO         no
+  T_promptorium_enm_la   T   Seg_Affix2       9636  +0.0936 0.0033  0.5372 1.0000  0.4093 +0.1279  0.8387    no          NO         no
+  T_promptorium_enm_la   T   Canon+Comp       6074  +0.0343 0.0033  0.7153 1.0000  0.5713 +0.1439  0.8967    no          NO         no
+  T_promptorium_enm_la   T   RawWord         13161  +0.1388 0.0010  0.0956 1.0000  0.0935 +0.0021  0.7646    no          NO         no
+  N_pool                 N   SlotSegmenter    4471  +0.0248 0.0080  0.6879 1.0000  0.6903 -0.0024  0.8330    no          NO         no
+  N_pool                 N   Zattera          8135  +0.0277 0.0033  0.3604 1.0000  0.1989 +0.1615  0.7468    no          NO         no
+  N_pool                 N   Seg_Affix2       5164  +0.0554 0.0033  0.7239 1.0000  0.5399 +0.1839  0.8220    no          NO         no
+  N_pool                 N   Canon+Comp       3185  +0.0107 0.1661  0.7163 1.0000  0.7584 -0.0421  0.8763    no          NO         no
+  N_pool                 N   RawWord          8276  +0.0326 0.0010  0.2379 1.0000  0.1854 +0.0525  0.7546    no          NO         no
+  H_gib_pool             H   SlotSegmenter    4245  +0.0311 0.0679  0.8890 0.9640  0.3861 +0.5029  0.6818    no         yes         no
+  H_gib_pool             H   Zattera          6621  -0.0252 0.9468  0.5426 1.0000  0.5073 +0.0353  0.3536    no          NO         no
+  H_gib_pool             H   Seg_Affix2       4879  +0.0110 0.3090  0.7299 0.9967  0.4277 +0.3022  0.6239    no          NO         no
+  H_gib_pool             H   Canon+Comp       3269  +0.0109 0.3322  0.8822 0.9967  0.3884 +0.4937  0.7387    no         yes         no
+  H_gib_pool             H   RawWord          6839  -0.0108 0.7612  0.5364 1.0000  0.4978 +0.0386  0.3579    no          NO         no
+  C_steg_heidel_la       C   SlotSegmenter    6334  +0.0381 0.0010  0.7640 1.0000  1.3178 -0.5538  0.9345    no          NO         no
+  C_steg_heidel_la       C   Zattera         10260  +0.0416 0.0033  0.2910 1.0000  0.4392 -0.1483  0.9127    no          NO         no
+  C_steg_heidel_la       C   Seg_Affix2       7381  +0.0223 0.0266  0.6767 1.0000  0.8111 -0.1345  0.9260    no          NO         no
+  C_steg_heidel_la       C   Canon+Comp       4801  +0.0408 0.0033  0.7818 1.0000  1.3168 -0.5350  0.9450    no          NO         no
+  C_steg_heidel_la       C   RawWord         10406  +0.0473 0.0010  0.1186 1.0000  0.3292 -0.2106  0.9138    no          NO         no
+  C_pool                 C   SlotSegmenter    8475  +0.0712 0.0010  2.2733 0.0010  1.3105 +0.9628  0.9241    no          NO         no
+  C_pool                 C   Zattera         12902  +0.0481 0.0033  0.5527 1.0000  0.6214 -0.0688  0.8200    no          NO         no
+  C_pool                 C   Seg_Affix2       9625  +0.0465 0.0033  1.0541 0.2591  0.7664 +0.2876  0.8329    no          NO         no
+  C_pool                 C   Canon+Comp       6910  +0.0552 0.0033  2.1897 0.0033  1.2926 +0.8971  0.9391  PASS          NO         no
+  C_pool                 C   RawWord         13067  +0.0521 0.0010  0.4560 1.0000  0.3278 +0.1282  0.8210    no          NO         no
+
+--- 1E. Pre-Registered Call CALL_1_F40_SEG_INDEP (Discharging X-01 on F-40) ---
+  - Voynich 15 primary (Translit x Segmenter) cells passing C1 (segmenter band): 15/15 (s87 frozen band: 12/15; core 3-part signature [ci_lo(K100)>0, Rw1>1, Rc1<Rw1]: 15/15; Zattera_drop: 3/3)
+  - Generator 20 (Generator x Segmenter) cells passing C1: 0/20 (core-segmented 16 cells passing a_order: 0/16; req: 0/20)
+  - Reference 31 texts across L, P, V, R, T, N, H, C passing C1 on primary words under any of 5 segmenter bands: 0/31 (passing b_Rwithin: 0/31; req: 0/31)
+  - Reference 60 (RefText x Segmenter) cells passing both C1 and Voynich cross-line avoidance (Rc1 <= VoyMax+0.15, Rw1-Rc1 >= 0.35): 0/60 (req: 0/60)
+  - CALL_1_F40_SEG_INDEP: TRUE (X-01 on F-40 DISCHARGED across all 5 segmentation schemes)
+
+============================================================================================================
+PART 2 (Axis `order` on F-40: Reading-Order Perturbation Invariance Across 3 Transliterations x 3 Segmenters)
+============================================================================================================
+
+--- 2A. 3 Transliterations x 3 Segmenters x 4 Uniform-Direction Trajectories (+ T4 Boustrophedon Diagnostic & T5 Shuffle Control) ---
+  Translit Segmenter      Trajectory                      MM_K100 [95% CI]   p100  MM_K200   p200   Rw(1)   pRw1   Rc(1)          loc [95% CI]  a  b  c  d    C1
+  ZL3b   SlotSegmenter  T0_standard              +0.0339 [+0.0155,+0.0504] 0.0066  +0.0276 0.0233  1.1809 0.0033  0.5668 0.9776 [0.9512,1.0041]  T  T  T  T  PASS
+  ZL3b   SlotSegmenter  T1_line_rev              +0.0335 [+0.0137,+0.0510] 0.0033  +0.0287 0.0266  1.1813 0.0033  0.5153 0.9775 [0.9508,1.0046]  T  T  T  T  PASS
+  ZL3b   SlotSegmenter  T2_tok_rev               +0.0325 [+0.0135,+0.0471] 0.0033  +0.0268 0.0133  1.1787 0.0033  0.5095 0.9775 [0.9510,1.0041]  T  T  T  T  PASS
+  ZL3b   SlotSegmenter  T3_full_page_rev         +0.0314 [+0.0157,+0.0491] 0.0066  +0.0267 0.0199  1.1821 0.0033  0.5624 0.9778 [0.9507,1.0046]  T  T  T  T  PASS
+  ZL3b   SlotSegmenter  T4_boustrophedon         +0.0103 [-0.0080,+0.0285] 0.1694  +0.0120 0.1595  1.1788 0.0033  1.0843 0.9776 [0.9508,1.0044]  .  T  T  T  FAIL
+  ZL3b   SlotSegmenter  T5_within_page_tok_shuf  +0.0084 [+0.0084,+0.0084] 0.2292  +0.0082 0.2757  0.9593 0.9070  1.0841 0.9778 [0.9506,1.0048]  .  .  .  T  FAIL
+  ZL3b   Zattera        T0_standard              +0.1096 [+0.0848,+0.1198] 0.0033  +0.0963 0.0033  1.1418 0.0033  0.8561 0.9672 [0.9178,1.0157]  T  T  T  T  PASS
+  ZL3b   Zattera        T1_line_rev              +0.1047 [+0.0791,+0.1156] 0.0033  +0.0877 0.0033  1.1395 0.0033  0.6949 0.9670 [0.9180,1.0158]  T  T  T  T  PASS
+  ZL3b   Zattera        T2_tok_rev               +0.1095 [+0.0836,+0.1191] 0.0033  +0.0969 0.0033  1.1416 0.0033  0.7020 0.9668 [0.9176,1.0155]  T  T  T  T  PASS
+  ZL3b   Zattera        T3_full_page_rev         +0.1027 [+0.0741,+0.1134] 0.0033  +0.0855 0.0033  1.1428 0.0033  0.8541 0.9669 [0.9174,1.0163]  T  T  T  T  PASS
+  ZL3b   Zattera        T4_boustrophedon         +0.0650 [+0.0430,+0.0768] 0.0033  +0.0510 0.0033  1.1423 0.0033  1.0940 0.9672 [0.9185,1.0157]  T  T  T  T  PASS
+  ZL3b   Zattera        T5_within_page_tok_shuf  +0.0079 [+0.0079,+0.0079] 0.2326  +0.0021 0.4352  1.0185 0.2857  1.0516 0.9666 [0.9167,1.0152]  .  .  .  T  FAIL
+  ZL3b   Seg_Affix2     T0_standard              +0.0796 [+0.0546,+0.0927] 0.0033  +0.0742 0.0033  1.1645 0.0033  0.3852 0.9739 [0.9488,0.9963]  T  T  T  T  PASS
+  ZL3b   Seg_Affix2     T1_line_rev              +0.0745 [+0.0508,+0.0871] 0.0033  +0.0712 0.0033  1.1635 0.0033  0.4310 0.9738 [0.9486,0.9975]  T  T  T  T  PASS
+  ZL3b   Seg_Affix2     T2_tok_rev               +0.0781 [+0.0563,+0.0897] 0.0033  +0.0732 0.0033  1.1676 0.0033  0.4288 0.9738 [0.9484,0.9975]  T  T  T  T  PASS
+  ZL3b   Seg_Affix2     T3_full_page_rev         +0.0749 [+0.0502,+0.0852] 0.0033  +0.0703 0.0033  1.1639 0.0033  0.3830 0.9738 [0.9488,0.9974]  T  T  T  T  PASS
+  ZL3b   Seg_Affix2     T4_boustrophedon         +0.0463 [+0.0258,+0.0604] 0.0033  +0.0409 0.0100  1.1675 0.0033  0.7114 0.9739 [0.9486,0.9973]  T  T  T  T  PASS
+  ZL3b   Seg_Affix2     T5_within_page_tok_shuf  +0.0091 [+0.0091,+0.0091] 0.1894  +0.0141 0.1595  0.9992 0.5349  0.9214 0.9738 [0.9484,0.9973]  .  .  T  T  FAIL
+  RF1b   SlotSegmenter  T0_standard              +0.0187 [+0.0058,+0.0330] 0.0631  +0.0070 0.2957  1.1976 0.0033  0.6690 0.9767 [0.9421,1.0129]  T  T  T  T  PASS
+  RF1b   SlotSegmenter  T1_line_rev              +0.0248 [+0.0088,+0.0382] 0.0166  +0.0149 0.1229  1.1911 0.0033  0.5860 0.9769 [0.9427,1.0126]  T  T  T  T  PASS
+  RF1b   SlotSegmenter  T2_tok_rev               +0.0201 [+0.0008,+0.0330] 0.0332  +0.0086 0.2458  1.1974 0.0033  0.5935 0.9766 [0.9416,1.0122]  T  T  T  T  PASS
+  RF1b   SlotSegmenter  T3_full_page_rev         +0.0240 [+0.0043,+0.0380] 0.0332  +0.0141 0.1528  1.1904 0.0033  0.6728 0.9771 [0.9429,1.0128]  T  T  T  T  PASS
+  RF1b   SlotSegmenter  T4_boustrophedon         +0.0072 [-0.0182,+0.0226] 0.2757  -0.0059 0.6578  1.1978 0.0033  1.1168 0.9768 [0.9421,1.0128]  .  T  T  T  FAIL
+  RF1b   SlotSegmenter  T5_within_page_tok_shuf  -0.0096 [-0.0096,-0.0096] 0.8007  -0.0137 0.8505  1.0145 0.3455  1.0516 0.9771 [0.9422,1.0132]  .  .  .  T  FAIL
+  RF1b   Zattera        T0_standard              +0.0846 [+0.0573,+0.0926] 0.0033  +0.0879 0.0033  1.1339 0.0033  0.8210 0.9707 [0.9127,1.0305]  T  T  T  T  PASS
+  RF1b   Zattera        T1_line_rev              +0.0839 [+0.0591,+0.0914] 0.0033  +0.0837 0.0033  1.1301 0.0033  0.6915 0.9707 [0.9128,1.0302]  T  T  T  T  PASS
+  RF1b   Zattera        T2_tok_rev               +0.0841 [+0.0617,+0.0941] 0.0033  +0.0874 0.0033  1.1307 0.0033  0.6909 0.9705 [0.9128,1.0301]  T  T  T  T  PASS
+  RF1b   Zattera        T3_full_page_rev         +0.0843 [+0.0581,+0.0909] 0.0033  +0.0848 0.0033  1.1282 0.0033  0.8233 0.9705 [0.9125,1.0297]  T  T  T  T  PASS
+  RF1b   Zattera        T4_boustrophedon         +0.0559 [+0.0319,+0.0647] 0.0033  +0.0556 0.0033  1.1328 0.0033  1.0351 0.9705 [0.9132,1.0300]  T  T  T  T  PASS
+  RF1b   Zattera        T5_within_page_tok_shuf  -0.0066 [-0.0066,-0.0066] 0.7309  -0.0105 0.8206  0.9988 0.5017  1.1977 0.9706 [0.9126,1.0302]  .  .  .  T  FAIL
+  RF1b   Seg_Affix2     T0_standard              +0.0510 [+0.0268,+0.0637] 0.0033  +0.0459 0.0033  1.1765 0.0033  0.4341 0.9744 [0.9460,1.0079]  T  T  T  T  PASS
+  RF1b   Seg_Affix2     T1_line_rev              +0.0537 [+0.0264,+0.0632] 0.0033  +0.0482 0.0066  1.1723 0.0033  0.4429 0.9747 [0.9474,1.0081]  T  T  T  T  PASS
+  RF1b   Seg_Affix2     T2_tok_rev               +0.0515 [+0.0284,+0.0626] 0.0033  +0.0469 0.0066  1.1728 0.0033  0.4447 0.9746 [0.9461,1.0084]  T  T  T  T  PASS
+  RF1b   Seg_Affix2     T3_full_page_rev         +0.0524 [+0.0270,+0.0635] 0.0033  +0.0470 0.0033  1.1723 0.0033  0.4379 0.9746 [0.9464,1.0082]  T  T  T  T  PASS
+  RF1b   Seg_Affix2     T4_boustrophedon         +0.0362 [+0.0177,+0.0430] 0.0066  +0.0323 0.0332  1.1759 0.0033  0.7239 0.9745 [0.9461,1.0081]  T  T  T  T  PASS
+  RF1b   Seg_Affix2     T5_within_page_tok_shuf  -0.0150 [-0.0150,-0.0150] 0.9203  -0.0150 0.8671  1.0031 0.4751  1.0943 0.9747 [0.9466,1.0080]  .  .  .  T  FAIL
+  IT2a   SlotSegmenter  T0_standard              +0.0312 [+0.0170,+0.0417] 0.0033  +0.0318 0.0033  1.2166 0.0033  0.6506 0.9784 [0.9427,1.0123]  T  T  T  T  PASS
+  IT2a   SlotSegmenter  T1_line_rev              +0.0276 [+0.0160,+0.0385] 0.0166  +0.0277 0.0166  1.2176 0.0033  0.5769 0.9788 [0.9433,1.0122]  T  T  T  T  PASS
+  IT2a   SlotSegmenter  T2_tok_rev               +0.0304 [+0.0174,+0.0422] 0.0066  +0.0311 0.0066  1.2152 0.0033  0.5746 0.9787 [0.9424,1.0124]  T  T  T  T  PASS
+  IT2a   SlotSegmenter  T3_full_page_rev         +0.0278 [+0.0142,+0.0379] 0.0066  +0.0283 0.0066  1.2175 0.0033  0.6467 0.9787 [0.9429,1.0122]  T  T  T  T  PASS
+  IT2a   SlotSegmenter  T4_boustrophedon         +0.0208 [+0.0043,+0.0312] 0.0399  +0.0200 0.0831  1.2156 0.0033  1.1246 0.9786 [0.9428,1.0122]  T  T  T  T  PASS
+  IT2a   SlotSegmenter  T5_within_page_tok_shuf  -0.0052 [-0.0052,-0.0052] 0.6711  +0.0012 0.4551  1.0106 0.3953  0.9896 0.9783 [0.9425,1.0123]  .  .  T  T  FAIL
+  IT2a   Zattera        T0_standard              +0.0636 [+0.0442,+0.0774] 0.0033  +0.0625 0.0033  1.1538 0.0033  0.8205 0.9670 [0.9170,1.0163]  T  T  T  T  PASS
+  IT2a   Zattera        T1_line_rev              +0.0619 [+0.0444,+0.0759] 0.0033  +0.0627 0.0033  1.1526 0.0033  0.6661 0.9673 [0.9174,1.0162]  T  T  T  T  PASS
+  IT2a   Zattera        T2_tok_rev               +0.0639 [+0.0447,+0.0784] 0.0033  +0.0635 0.0033  1.1487 0.0033  0.6694 0.9674 [0.9182,1.0167]  T  T  T  T  PASS
+  IT2a   Zattera        T3_full_page_rev         +0.0620 [+0.0429,+0.0731] 0.0033  +0.0628 0.0033  1.1523 0.0033  0.8179 0.9673 [0.9178,1.0169]  T  T  T  T  PASS
+  IT2a   Zattera        T4_boustrophedon         +0.0333 [+0.0146,+0.0545] 0.0066  +0.0351 0.0066  1.1485 0.0033  1.0699 0.9672 [0.9178,1.0161]  .  T  T  T  FAIL
+  IT2a   Zattera        T5_within_page_tok_shuf  -0.0132 [-0.0132,-0.0132] 0.8704  -0.0150 0.8605  0.9719 0.8339  0.9635 0.9670 [0.9166,1.0158]  .  .  T  T  FAIL
+  IT2a   Seg_Affix2     T0_standard              +0.0656 [+0.0434,+0.0785] 0.0033  +0.0545 0.0033  1.1531 0.0033  0.3972 0.9725 [0.9426,1.0006]  T  T  T  T  PASS
+  IT2a   Seg_Affix2     T1_line_rev              +0.0618 [+0.0415,+0.0771] 0.0033  +0.0494 0.0066  1.1510 0.0033  0.4468 0.9727 [0.9435,1.0011]  T  T  T  T  PASS
+  IT2a   Seg_Affix2     T2_tok_rev               +0.0626 [+0.0437,+0.0757] 0.0033  +0.0507 0.0033  1.1489 0.0033  0.4468 0.9726 [0.9431,1.0015]  T  T  T  T  PASS
+  IT2a   Seg_Affix2     T3_full_page_rev         +0.0607 [+0.0409,+0.0769] 0.0033  +0.0486 0.0033  1.1491 0.0033  0.3968 0.9725 [0.9431,1.0011]  T  T  T  T  PASS
+  IT2a   Seg_Affix2     T4_boustrophedon         +0.0525 [+0.0343,+0.0648] 0.0033  +0.0377 0.0100  1.1518 0.0033  0.7751 0.9726 [0.9436,1.0007]  T  T  T  T  PASS
+  IT2a   Seg_Affix2     T5_within_page_tok_shuf  -0.0032 [-0.0032,-0.0032] 0.6312  -0.0148 0.8538  1.0308 0.1728  1.0825 0.9724 [0.9430,1.0011]  .  .  .  T  FAIL
+
+--- 2B. Pre-Registered Call CALL_2_F40_ORDER_INDEP (Axis `order` on F-40) ---
+  - Core signature (ci_lo(MM_K100) > 0, Rw(1) > 1.0 [p < 0.01], Rc(1) < Rw(1)) across 36 uniform-direction (Translit x Seg x ('T0_standard', 'T1_line_rev', 'T2_tok_rev', 'T3_full_page_rev')) cells: 36/36 (req: 36/36)
+  - Full 4-part C1 (a_order, b_Rwithin, c_Rcross<Rwithin, d_locality) across 36 uniform-direction reading-order cells: 36/36 (req: 36/36)
+  - Diagnostic T4_boustrophedon (alternating L->R / R->L lines): 9/9 preserve b_Rwithin & d_locality (req: 9/9) while 9/9 show predicted 1/2(C+C^T) order cancellation & same-margin Rc(1) elevation (req: 9/9)
+  - Negative control T5_within_page_tok_shuf: 0/9 pass C1 (req: 0/9), 9/9 break both a_order & b_Rwithin (req: 9/9), while 9/9 preserve d_locality (req: 9/9)
+  - CALL_2_F40_ORDER_INDEP: TRUE (F-40 is 36/36 invariant across standard, bottom-to-top line reversal, right-to-left token reversal, and full-page reversal; T4 boustrophedon & T5 shuffle controls confirm directional & line-local geometry)
+
+============================================================================================================
+PART 3 (Axis `physical` on F-40: s45/s47 127-Page Physical Ink-Verified Subset & Direct Scan-Resegmented Streams)
+============================================================================================================
+
+  127 Clean Physical Yale Scan Pages (`runs/s45/segment_summary.json`): matched held-out tokens N_match_phys = 3890
+
+--- 3A. 8 Physical Ink-Verified Streams x 3 Independent Segmenters = 24 Cells ---
+  PhysicalStream       Segmenter      Pages  Tokens  Types        MM_K100 [95% CI]   p100  MM_K200   p200   Rw(1)   pRw1   Rc(1)          loc [95% CI]  a  b  c  d    C1
+  ZL3b_ink_lines_127   SlotSegmenter    127   21155   1755 +0.0465 [+0.0215,+0.0609] 0.0033  +0.0172 0.1296  1.3131 0.0033  0.5748 0.9740 [0.9506,0.9971]  T  T  T  T  PASS
+  ZL3b_ink_lines_127   Zattera          127   21155   3086 +0.0908 [+0.0690,+0.1141] 0.0033  +0.0868 0.0033  1.2228 0.0033  0.7517 0.9645 [0.9254,0.9980]  T  T  T  T  PASS
+  ZL3b_ink_lines_127   Seg_Affix2       127   21155   1927 +0.0549 [+0.0280,+0.0712] 0.0033  +0.0552 0.0033  1.1487 0.0033  0.5362 0.9724 [0.9532,0.9924]  T  T  T  T  PASS
+  ZL3b_ink_full_127    SlotSegmenter    127   21203   2418 +0.0691 [+0.0459,+0.0829] 0.0033  +0.0557 0.0033  1.0564 0.0664  0.5325 0.9719 [0.9392,1.0047]  T  .  T  T  FAIL
+  ZL3b_ink_full_127    Zattera          127   21203   4139 +0.0775 [+0.0590,+0.0988] 0.0033  +0.0669 0.0033  1.0863 0.0166  0.6643 0.9568 [0.9155,1.0017]  T  T  T  T  PASS
+  ZL3b_ink_full_127    Seg_Affix2       127   21203   2868 +0.0456 [+0.0144,+0.0608] 0.0033  +0.0357 0.0233  0.9789 0.6944  0.5783 0.9665 [0.9397,0.9948]  T  .  T  T  FAIL
+  ZL3b_clean127        SlotSegmenter    127   21197   1760 +0.0490 [+0.0266,+0.0624] 0.0033  +0.0190 0.1395  1.3125 0.0033  0.5556 0.9737 [0.9503,0.9983]  T  T  T  T  PASS
+  ZL3b_clean127        Zattera          127   21197   3094 +0.0906 [+0.0624,+0.1101] 0.0033  +0.0870 0.0033  1.2184 0.0033  0.7449 0.9639 [0.9303,0.9969]  T  T  T  T  PASS
+  ZL3b_clean127        Seg_Affix2       127   21197   1931 +0.0548 [+0.0334,+0.0712] 0.0033  +0.0537 0.0033  1.1470 0.0033  0.5274 0.9721 [0.9524,0.9905]  T  T  T  T  PASS
+  ZL3b_1to1_lines_127  SlotSegmenter    127   20140   1631 +0.0519 [+0.0294,+0.0703] 0.0033  +0.0291 0.0332  1.3015 0.0033  0.5920 0.9758 [0.9496,1.0022]  T  T  T  T  PASS
+  ZL3b_1to1_lines_127  Zattera          127   20140   2930 +0.0868 [+0.0599,+0.1077] 0.0033  +0.0821 0.0033  1.2237 0.0033  0.7867 0.9675 [0.9304,1.0063]  T  T  T  T  PASS
+  ZL3b_1to1_lines_127  Seg_Affix2       127   20140   1843 +0.0610 [+0.0327,+0.0806] 0.0033  +0.0584 0.0033  1.1550 0.0033  0.5097 0.9728 [0.9513,0.9941]  T  T  T  T  PASS
+  RF1b_clean127        SlotSegmenter    127   20972   1910 +0.0568 [+0.0363,+0.0691] 0.0033  +0.0363 0.0166  1.2628 0.0033  0.5673 0.9730 [0.9454,1.0029]  T  T  T  T  PASS
+  RF1b_clean127        Zattera          127   20972   3301 +0.0975 [+0.0577,+0.1172] 0.0033  +0.0921 0.0033  1.2074 0.0033  0.7424 0.9650 [0.9213,1.0152]  T  T  T  T  PASS
+  RF1b_clean127        Seg_Affix2       127   20972   2145 +0.0570 [+0.0305,+0.0768] 0.0033  +0.0481 0.0066  1.2031 0.0033  0.5364 0.9752 [0.9439,1.0103]  T  T  T  T  PASS
+  RF1b_1to1_lines_127  SlotSegmenter    127   19919   1812 +0.0487 [+0.0225,+0.0630] 0.0033  +0.0323 0.0066  1.2569 0.0033  0.5743 0.9735 [0.9493,0.9987]  T  T  T  T  PASS
+  RF1b_1to1_lines_127  Zattera          127   19919   3130 +0.0895 [+0.0658,+0.1011] 0.0033  +0.0886 0.0033  1.2185 0.0033  0.7651 0.9725 [0.9203,1.0253]  T  T  T  T  PASS
+  RF1b_1to1_lines_127  Seg_Affix2       127   19919   2051 +0.0631 [+0.0285,+0.0782] 0.0033  +0.0522 0.0033  1.2143 0.0033  0.5121 0.9763 [0.9498,1.0095]  T  T  T  T  PASS
+  IT2a_clean127        SlotSegmenter    127   20927   1766 +0.0478 [+0.0311,+0.0638] 0.0033  +0.0333 0.0133  1.3351 0.0033  0.5024 0.9723 [0.9463,1.0015]  T  T  T  T  PASS
+  IT2a_clean127        Zattera          127   20927   3093 +0.0876 [+0.0565,+0.1127] 0.0033  +0.0838 0.0033  1.2596 0.0033  0.7219 0.9655 [0.9168,1.0132]  T  T  T  T  PASS
+  IT2a_clean127        Seg_Affix2       127   20927   1867 +0.0602 [+0.0254,+0.0778] 0.0033  +0.0454 0.0100  1.1703 0.0033  0.5309 0.9737 [0.9455,0.9967]  T  T  T  T  PASS
+  IT2a_1to1_lines_127  SlotSegmenter    127   19870   1693 +0.0537 [+0.0353,+0.0721] 0.0033  +0.0356 0.0100  1.3143 0.0033  0.5198 0.9744 [0.9498,1.0037]  T  T  T  T  PASS
+  IT2a_1to1_lines_127  Zattera          127   19870   2931 +0.0735 [+0.0496,+0.0942] 0.0033  +0.0760 0.0033  1.2654 0.0033  0.7602 0.9701 [0.9192,1.0279]  T  T  T  T  PASS
+  IT2a_1to1_lines_127  Seg_Affix2       127   19870   1789 +0.0537 [+0.0188,+0.0740] 0.0033  +0.0378 0.0066  1.1775 0.0033  0.5119 0.9743 [0.9479,1.0011]  T  T  T  T  PASS
+
+--- 3B. Direct s47 Physical Inter-Word Ink-Gap Verification on Repeated Adjacent Cores (core(w_t) == core(w_{t+1})) ---
+  [SlotSegmenter] Repeated-Core Adjacent Pairs (n= 855): ink_space_call_rate = 0.8772 [0.8561,0.8983] (87.7%), median gap ratio r = w_px/thr = 1.7556 [1.6733,1.8060] | Non-Repeated Adjacent Pairs (n=16566): ink_space_call_rate = 0.8757 (87.6%), median r = 1.8060
+  [Zattera      ] Repeated-Core Adjacent Pairs (n= 876): ink_space_call_rate = 0.9053 [0.8858,0.9247] (90.5%), median gap ratio r = w_px/thr = 1.8516 [1.7930,1.9115] | Non-Repeated Adjacent Pairs (n=16545): ink_space_call_rate = 0.8742 (87.4%), median r = 1.7996
+  [Seg_Affix2   ] Repeated-Core Adjacent Pairs (n= 832): ink_space_call_rate = 0.8750 [0.8521,0.8967] (87.5%), median gap ratio r = w_px/thr = 1.8060 [1.7457,1.8717] | Non-Repeated Adjacent Pairs (n=16589): ink_space_call_rate = 0.8758 (87.6%), median r = 1.8023
+
+--- 3C. Pre-Registered Call CALL_3_F40_PHYSICAL (Axis `physical` on F-40) ---
+  - Components a_order (MM_K100 > 0, p < 0.05) + c_Rcross<Rwithin + d_locality across 24 physical cells: 24/24 (req: 24/24)
+  - Full 4-part C1 on 1:1 ink-aligned & clean-127 physical streams (7 streams x 3 segmenters): 21/21 (req: 21/21; all 24 physical cells: 22/24, req: >= 22/24)
+  - s47 physical inter-word ink-space agreement on adjacent repeated-core pairs: min ink_call rate = 0.8750 (req: >= 0.7500), min median r = w_px/thr = 1.7556 (req: > 1.2000)
+  - CALL_3_F40_PHYSICAL: TRUE (F-40 survives on the 127 physical ink-verified scan pages and scan-resegmented token streams)
+
+============================================================================================================
+SUMMARY OF PRE-REGISTERED CALLS & F-40 TRIANGULATION LEDGER CLOSURE (s92 / P-24)
+============================================================================================================
+  1. CALL_1_F40_SEG_INDEP (Axis `seg` / X-01 on F-40) : TRUE (Voynich C1 = 15/15 across 5 segmenters; Generators C1 = 0/20; Reference primary C1 = 0/31; Reference stem C1+RcBand = 0/60)
+  2. CALL_2_F40_ORDER_INDEP (Axis `order` on F-40)    : TRUE (Core signature = 36/36 & Full C1 = 36/36 across T0/T1/T2/T3; T4 boustrophedon keeps b+d in 9/9 & cancels a/elevates Rc in 9/9; T5 shuffle breaks a+b in 9/9 & keeps d in 9/9)
+  3. CALL_3_F40_PHYSICAL (Axis `physical` on F-40)    : TRUE (1:1 & clean-127 C1 = 21/21 [all physical C1 = 22/24, a+c+d = 24/24]; s47 repeated-core physical ink-space rate >= 87.5%, median r >= 1.756)
+  - CI bracket audit (lo <= point <= hi)              : 0 violations across 1316 checks
+  - Pre-registration stub match                       : True
+
+OVERALL VERDICT (s92 / P-24): ALL 3 PRE-REGISTERED CALLS HOLD — X-01 ON F-40 DISCHARGED; F-40 TRIANGULATED ACROSS ALL 6 AXES (impl, seg, null, holdout, order, physical)
+runtime: 186.22 s; finished 2026-10-18 08:33:01 (datetime.now)

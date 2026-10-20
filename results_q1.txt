@@ -1,0 +1,6 @@
+Q1 label crib: 1029 label lines, 1164 tokens, 837 types
+units: [('L0', 352), ('Lz', 344), ('Lf', 205), ('Ls', 84), ('Ln', 64), ('Lt', 56), ('Lc', 36), ('Lx', 9), ('La', 9), ('Lp', 5)]
+A repeat-in-same-unit: obs 0.463 vs free-shuffle 0.222 (z=+13.9, p=0.005, pairs=915)
+A vs within-illus shuffle: 0.362 (z=+5.2, p=0.005)
+B predict unit from word (page-half held-out): acc 0.166 (seen-words 0.338, n_seen=157/530) vs majority 0.134
+C zodiac same-position repeat rate: obs 0.0005 vs permuted 0.0018 (z=-1.4, p=0.970; 12 zodiac pages)

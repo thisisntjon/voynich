@@ -1,0 +1,33 @@
+S110 WELL-FORMEDNESS CHECK (pre-freeze; only counts and alphabets; no fit, no statistic)
+date: Sun Oct 18 17:05:51 PDT 2026 (`date`)
+ZL3b cut: 173 pages, 22500 tokens, quires A B C D E F G H I J M N O Q; folds A B C D E F G H I M N O Q S T
+P1 Latin: 32063 words, 3974 lines, V 10445; inputs [('content', 32063), ('content_shuf', 32063), ('random', None)]
+  G2a_content: tokens 22500 lines 2888 pages 173 alphabet 11 ctl jobs 15 lag2 jobs 15
+     LOQO ZL3b fold A: train tokens 33337, first replicate pages 16, H tokens 22500 pages 238
+     LOQO RF1b fold A: train tokens 33149, first replicate pages 16, H tokens 22500 pages 245
+     LOQO IT2a fold A: train tokens 32916, first replicate pages 16, H tokens 22500 pages 241
+  G2a_content_shuf: tokens 22500 lines 2888 pages 173 alphabet 11 ctl jobs 15 lag2 jobs 15
+     LOQO ZL3b fold A: train tokens 33337, first replicate pages 16, H tokens 22500 pages 238
+     LOQO RF1b fold A: train tokens 33149, first replicate pages 16, H tokens 22500 pages 245
+     LOQO IT2a fold A: train tokens 32916, first replicate pages 16, H tokens 22500 pages 241
+  G2a_random: tokens 22500 lines 2888 pages 173 alphabet 11 ctl jobs 15 lag2 jobs 15
+     LOQO ZL3b fold A: train tokens 33337, first replicate pages 16, H tokens 22500 pages 238
+     LOQO RF1b fold A: train tokens 33149, first replicate pages 16, H tokens 22500 pages 245
+     LOQO IT2a fold A: train tokens 32916, first replicate pages 16, H tokens 22500 pages 241
+  G2b_content: tokens 22500 lines 2888 pages 173 alphabet 26 ctl jobs 15 lag2 jobs 15
+     LOQO ZL3b fold A: train tokens 33337, first replicate pages 16, H tokens 22500 pages 238
+     LOQO RF1b fold A: train tokens 33149, first replicate pages 16, H tokens 22500 pages 245
+     LOQO IT2a fold A: train tokens 32916, first replicate pages 16, H tokens 22500 pages 241
+  G2b_content_shuf: tokens 22500 lines 2888 pages 173 alphabet 26 ctl jobs 15 lag2 jobs 15
+     LOQO ZL3b fold A: train tokens 33337, first replicate pages 16, H tokens 22500 pages 238
+     LOQO RF1b fold A: train tokens 33149, first replicate pages 16, H tokens 22500 pages 245
+     LOQO IT2a fold A: train tokens 32916, first replicate pages 16, H tokens 22500 pages 241
+  G2b_random: tokens 22500 lines 2888 pages 173 alphabet 26 ctl jobs 15 lag2 jobs 15
+     LOQO ZL3b fold A: train tokens 33337, first replicate pages 16, H tokens 22500 pages 238
+     LOQO RF1b fold A: train tokens 33149, first replicate pages 16, H tokens 22500 pages 245
+     LOQO IT2a fold A: train tokens 32916, first replicate pages 16, H tokens 22500 pages 241
+  s107 T1: lines 208 -> pages 15 tokens 9770; ctl jobs 15
+  s107 T2: lines 206 -> pages 15 tokens 16069; ctl jobs 15
+  s107 T3: lines 233 -> pages 17 tokens 957; ctl jobs 15
+  s81 skeleton text: pages 173; REF battery jobs 45; s81 reference OrderedDict([('ZL3b', 0.017873999999999998), ('RF1b', 0.012491), ('IT2a', 0.017418)])
+finished Sun Oct 18 17:06:06 PDT 2026 (`date`)

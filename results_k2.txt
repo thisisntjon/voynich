@@ -1,0 +1,17 @@
+K2: homophonic nomenclator (word codebook) + flow choice + M5 layer; columns as K1
+
+VOYNICH                  NMI h1/h2=0.275/0.333  JSDf para=0.549 other=0.147  JSDl=0.082  p(para) x  87.0  m-fin x 16.3  d w2/last 0.042/0.165  crossMI+0.181  resid +0.042  h2=2.11  types=7025 hapax=0.68  rep=0.84%  tok=34857
+PLAINTEXT Latin (sanity) NMI h1/h2=0.448/0.303  JSDf para=0.006 other=0.001  JSDl=0.001  p(para) x   0.9  m-fin x  1.0  d w2/last 0.050/0.049  crossMI+0.027  resid +0.232  h2=3.32  types=9044 hapax=0.60  rep=0.01%  tok=34857
+
+  codeword pool: 120000 (Voynich types, neighbours, bigram-consistent single-glyph variants)
+  codebook scale 1.0: plaintext types 9065, codewords used 9390 of pool 120000, homophones per word median 1 max 12
+NOMENCLATOR x1.0         NMI h1/h2=0.518/0.253  JSDf para=0.459 other=0.013  JSDl=0.003  p(para) x  18.0  m-fin x  1.5  d w2/last 0.075/0.125  crossMI+0.030  resid +0.102  h2=2.39  types=9253 hapax=0.56  rep=0.01%  tok=34857
+  codebook scale 2.0: plaintext types 9065, codewords used 10617 of pool 120000, homophones per word median 1 max 24
+NOMENCLATOR x2.0         NMI h1/h2=0.370/0.270  JSDf para=0.445 other=0.022  JSDl=0.013  p(para) x  15.5  m-fin x  2.3  d w2/last 0.063/0.129  crossMI+0.069  resid +0.045  h2=2.51  types=10471 hapax=0.51  rep=0.01%  tok=34857
+  codebook scale 4.0: plaintext types 9065, codewords used 16219 of pool 120000, homophones per word median 1 max 48
+NOMENCLATOR x4.0         NMI h1/h2=0.151/0.085  JSDf para=0.438 other=0.055  JSDl=0.038  p(para) x  13.9  m-fin x  3.8  d w2/last 0.072/0.155  crossMI+0.148  resid +0.020  h2=2.68  types=14493 hapax=0.58  rep=0.01%  tok=34857
+  codebook scale 8.0: plaintext types 9065, codewords used 37557 of pool 120000, homophones per word median 3 max 96
+NOMENCLATOR x8.0         NMI h1/h2=0.135/0.042  JSDf para=0.431 other=0.097  JSDl=0.079  p(para) x  12.3  m-fin x  5.0  d w2/last 0.072/0.158  crossMI+0.269  resid +0.016  h2=2.83  types=18624 hapax=0.66  rep=0.00%  tok=34857
+  codebook scale 16.0: plaintext types 9065, codewords used 68796 of pool 120000, homophones per word median 5 max 192
+NOMENCLATOR x16.0        NMI h1/h2=0.042/0.033  JSDf para=0.436 other=0.130  JSDl=0.124  p(para) x  11.9  m-fin x  5.8  d w2/last 0.061/0.178  crossMI+0.354  resid +0.025  h2=2.95  types=22597 hapax=0.74  rep=0.00%  tok=34857
+NULL nomenclator x4, shuffled plain NMI h1/h2=0.003/0.010  JSDf para=0.443 other=0.049  JSDl=0.038  p(para) x  14.4  m-fin x  3.6  d w2/last 0.062/0.145  crossMI+0.136  resid +0.011  h2=2.69  types=14491 hapax=0.58  rep=0.02%  tok=34857

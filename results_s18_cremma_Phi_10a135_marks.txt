@@ -1,0 +1,56 @@
+# PREREG-v2 score: cremma_Phi_10a135_marks  family=L  run=2026-10-17 20:34 (system clock)  seed=20261017
+# source: ./data/controls_realline/cremma_Phi_10a135_marks.meta.json
+# ./data/controls_realline/cremma_Phi_10a135_marks.meta.json; 1718 tokens full
+# v1 bands: scoreboard/score.py via path + g0 band checks; extras: scoreboard/metrics_new.py; sample cap 25000 (non-Voynich)
+# pages=5 lines=139 tokens=1718 types=1103 sections=['Medic'] hands=1 langs=['la']
+
+    v1 0.1s
+    extra 0.0s  [ZeroDivisionError: float division by zero]
+    info 0.5s
+    lex 1.1s
+    slot 0.2s
+    bake 0.0s  [KeyError: 'markov3']
+
+# ranges: ./s15_ranges.json (run s15 Sat Oct 17 20:10:47 PDT 2026, extend 0.1); families ['L', 'C', 'G', 'X']; X range present
+=== v1 seven bands (frozen; PREREG v1 thresholds) ===
+band                      value           band   ok    L    C    G    X
+h2                       3.5613      1.98-2.28   --   IN   IN  OUT   IN
+sd_len                   2.6700      1.41-2.11   --   IN  OUT   IN   IN
+jsd_first_fg             0.0833         >=0.10   --  OUT   IN  OUT   IN
+p_init_enrich            1.2300           >=x8   --   IN   NA   IN   IN
+m_final_enrich           0.6300           >=x8   --   IN   NA   IN   IN
+cross_excess_eva         0.0773        >=+0.09   --   IN  OUT  OUT   IN
+redup_pct                0.0580       0.4-1.8%   --   IN  OUT   IN   IN
+v1 joint: FAIL  missed: h2,sd_len,jsd_first_fg,p_init_enrich,m_final_enrich,cross_excess_eva,redup_pct
+
+=== v2 extras (metrics_new) ===
+metric                            value      class    L    C    G    X  tightLCG ovl
+x_edge_mi_word                      nan   WEIGHTED   NA   NA   NA   NA       .tt  no
+types_25k                     1103.0000  WEIGHTED*   IN  OUT   IN   NA       ttt  no
+x_position_entropy                  nan   WEIGHTED   NA   NA   NA   NA       t.t  no
+x_ltr_minus_rtl                     nan   WEIGHTED   NA   NA   NA   NA       t.t  no
+x_moran_I                           nan   WEIGHTED   NA   NA   NA   NA       .tt yes
+lex_beta                         0.9315   WEIGHTED   IN  OUT  OUT  OUT       .t. yes
+lex_rate_late_early              0.7959   WEIGHTED  OUT  OUT  OUT  OUT       tt. yes
+lex_edit1_excess                 0.1904   WEIGHTED  OUT  OUT   IN  OUT       ttt yes
+slot_occupancy_pc                0.0436   WEIGHTED   IN   IN  OUT  OUT       ttt yes
+slot_table_likeness              0.8819   WEIGHTED  OUT   IN  OUT  OUT       .tt yes
+slot_core_crowding               0.5965   WEIGHTED   IN  OUT   IN   IN       ttt yes
+info_mi_adjacent                 0.7784   WEIGHTED   IN  OUT  OUT  OUT       .tt yes
+info_samecol_minus_othercol     -0.0482   WEIGHTED  OUT  OUT  OUT  OUT       ttt yes
+bake_char3_minus_unigram            nan   WEIGHTED   NA   NA   NA   NA       ... yes
+x_hapax_10k                         nan     REPORT   NA   NA   NA   NA       .t. yes
+info_mi_page                     0.5066     REPORT  OUT  OUT  OUT  OUT       ttt yes
+info_bpe_adjacent                0.6867     REPORT   NA   NA   NA  OUT       ... yes
+bake_winner: None  bake bits: nan
+
+=== per-family in/out (weighted metrics = v1 bands + WEIGHTED extras, minus the ranges file's no-weight list) ===
+  L: in= 6 out= 1 na= 3  out: jsd_first_fg  | tight-outs (1): jsd_first_fg
+  C: in= 2 out= 3 na= 5  out: cross_excess_eva, redup_pct, types_25k  | tight-outs (3): cross_excess_eva, redup_pct, types_25k
+  G: in= 4 out= 3 na= 3  out: h2, jsd_first_fg, cross_excess_eva  | tight-outs (3): h2, jsd_first_fg, cross_excess_eva
+  X: in= 6 out= 0 na= 4  out: -  | tight-outs (0): -
+  weighted metrics (10): h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_position_entropy, x_ltr_minus_rtl
+  (kill = >=3 weighted outs on tight ranges; favoured = fewest outs by >=2; both need the A/B rule of PREREG-v2 §6)
+
+errors: {"extra": "ZeroDivisionError: float division by zero", "bake": "KeyError: 'markov3'"}
+provenance sha256[:16]: {'score.py': '3a7b7c3efea13b88', 'metrics_new.py': 'a59c9c17f8abe4cc', 'run_v2.py': '7dfdc9f75de5980a'}

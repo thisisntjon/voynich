@@ -1,0 +1,37 @@
+{
+ "loc_band": [
+  0.9073818633685861,
+  1.049928019378369
+ ],
+ "order_band": {
+  "100": [
+   0.012321,
+   0.092252
+  ],
+  "200": [
+   -0.003465,
+   0.086474
+  ]
+ },
+ "rw_v": 1.1968822539263946,
+ "rc_v": 0.6266510978571009,
+ "C1": {
+  "R_kalevala_fi": false,
+  "R_horae_ebor_la": false,
+  "R_atharva_en": false,
+  "R_carmina_gd_en": false,
+  "R_steganographia_la": false,
+  "T_alphita_la": false,
+  "T_promptorium_enm_la": false,
+  "R_pool": false,
+  "T_pool": false,
+  "N_pool": false
+ },
+ "C2": {
+  "R": 0,
+  "T": 0,
+  "N": 0
+ },
+ "arm_b": "deferred",
+ "verdict": "no line-repetition genre reproduces the core layer; closest text R_steganographia_la (R, D 1.82), failing: b_Rwithin"
+}

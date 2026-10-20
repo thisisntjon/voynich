@@ -1,0 +1,34 @@
+# s128 (P-72) prereg stub: label -> eye-matched herbal partner text (D-066 ee, D-073). Frozen Mon Oct 19 09:06:44 PDT 2026 before any Voynich herbal-page text was read.
+# Only --selftest was run before freezing (synthetic fixture PASS strong 10/10, absent NO_LINK 10/10; Egerton calibration; VKB label-line tokens only).
+# Run id s128 also used by an unrelated Grok Bot study under runs/s128/ (name-slot prereg); this study's files all carry the p72 tag.
+# Frozen PRIMARY pairs (pair_id pharma <- herbal | label_line_id | ZL3b label): eye_verdict in {same,plausible} AND label_confidence=likely
+#   P05 f102r2 <- f18v | f102r2.21 | koldarod
+#   P06 f102r2 <- f23r | f102r2.22 | odalydary
+#   P09 f102v1 <- f19r | f102v1.18 | opchdard
+#   P11 f89v2 <- f48v | f89v2.6 | chokam
+#   P13 f89v2 <- f40v | f89v2.4 | chokaro
+#   P18 f89r1 <- f57r | f89r1.4 | otoldy
+#   P22 f89r2 <- f35v | f89r2.4 | saloiinsheol
+#   P23 f89r2 <- f87v | f89r2.16 | korainy
+#   P24 f89r2 <- f87r | f89r2.16 | korainy
+#   P25 f99r <- f51r | f99r.20 | oaro
+#   P26 f99r <- f96v | f99r.46 | tolsasy
+#   P27 f99v <- f44r | f99v.2 | otoldy
+#   P28 f99v <- f34v | f99v.28 | chor olekor
+#   P29 f99v <- f90v1 | f99v.28 | chor olekor
+#   P31 f100r <- f96v | f100r.2 | sochorcfhy
+#   P32 f100v <- f13v | f100v.3 | opchor
+#   P33 f100v <- f90v2 | f100v.6 | ykchochdy
+#   P39 f102v2 <- f36r | f102v2.14 | sarol
+# SECONDARY extra (label_confidence=unclear):
+#   P10 f89v2 <- f48r | f89v2.27/f89v2.28 | sada? daseky
+#   P21 f89r1 <- f33r | f89r1.25/f89r1.26 | saldam sydarary
+#   P30 f99v <- f55r | f99v.31 | doldam
+#   P38 f101v <- f37r | no label_line_id | unscorable
+# Verify: grep -v "^#" s128_p72_label_partner.prereg.sha256 | tr -d '\r' | sha256sum -c -
+84862797dbdd2a6acabb854fb3db65fdfb0a7abba08de150d498ad7a2dc94bfa  tools/s128_p72_label_partner.py
+fb0b287ca22b9c1635bf329d7579dcf67d4b2a72da0f23d386ed91e4cc868d4b  data/external/page-facts/eyecheck/pairs.tsv
+a830e2b74a4e6add314cf5ea820c8fc7cdcd9cd03e109a94fa7acf4c7aa32591  data/vkb/vkb.sqlite
+d17b4b81f381828becd9e01b54f6eebaee3d8ab2a3e08a45212013f00c0951d4  data/external/ventura_egerton747/tractatus-de-herbis-egerton-747-ventura2009-tei.xml
+34f982ec9fca65edaa7299461be57ef9fbbdd6b298d686038384d204a9d49705  s54_label_partner_text.py
+a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed  scoreboard/metrics_new.py

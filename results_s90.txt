@@ -1,0 +1,230 @@
+S90: meaningless (gibberish) and constructed human text vs the four-part Voynich core signature
+date: Sun Oct 18 06:48:23 PDT 2026 (`date`)
+device: cuda (NVIDIA GeForce RTX 5080); torch 2.11.0.dev20260115+cu128; numpy 2.4.6; python 3.11.9; priority BelowNormal set=True; single process; free RAM at start 7.8 GB
+s90_constructed_text_core.py sha256=7b1c63cecb8bed9e732285d464916615e189045cec9ba4d7bb086c64a5e6d633
+prereg stub s90_constructed_text_core.prereg.sha256 sha256=53f0869ab87f7e9fd96f7005dea5dc593b92314c2c3e5620ac92b0051391c007  stub_match=True
+  hashed a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  hashed a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  hashed b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  hashed b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  hashed c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  hashed c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  hashed c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  hashed c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  hashed corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  hashed f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  hashed f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  hashed f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  hashed g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  hashed m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  hashed m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  hashed n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  hashed p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  hashed p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  hashed s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  hashed s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  hashed s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  hashed s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  hashed s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  hashed s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  hashed s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  hashed s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  hashed s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  hashed s87_core_layer_genre.py sha256=d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db
+  hashed s89_line_repetition_genres.py sha256=037282e31f57ce2c2091e8fbce5e7488ede231c715cf38c7e4c2d86caa5c305a
+  hashed s90_constructed_text_core.py sha256=7b1c63cecb8bed9e732285d464916615e189045cec9ba4d7bb086c64a5e6d633
+  hashed scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  hashed scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  hashed tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  hashed vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+  hashed data/controls_realline/gib_realline_pooled.meta.json sha256=b8e70b13d918fef479ea0ecb601664e34cb5ba233382ddd9e81ae168bc4c70a5
+  hashed data/controls/trithemius_steganographia_1608.txt sha256=fb7a0274738ee07fe09945fb4b6ec25e9355aaeb194fd3d2bb53c43dabd9b4d1
+  hashed data/controls/trithemius_polygraphia.txt sha256=582a994f7a5ef4226c80ed5873342ead689fbe762a9f3dda765cce3e9f81e8aa
+  hashed data/controls/enochian_keys_dee.txt sha256=d0df8c682d243f173226e418001d32cc3de3a87d510f007358a5514aa0ebd0eb
+  hashed data/controls/ignota_hildegard_glossary.txt sha256=a99083c51eb5c49818248d071c9fa1737bc951fefc5e7335c7274b93f394633b
+  hashed data/controls_synthetic/lull_ars_brevis_table.meta.json sha256=cafcb59f81b85f664f0cd6c3d06cfe794017331304c10c33772ee8f40d7f4144
+  hashed data/translit/ZL3b_eva.meta.json sha256=ce233477803a865365e53418f5e2b78c324fa0ea124b0aa46a9eb6a5189f7ef0
+  hashed data/translit/RF1b.meta.json sha256=c7d9bccba99b2610b9d80b4ce5f26f7d1ab54c12ec2364d0423d6b89f51da9df
+  hashed data/translit/IT2a.meta.json sha256=0d0d3e758d1e308b0aee4b4d006f90cbc8090c081e0fcb3327de6734ac5e5fdf
+N_TOT 22500; N_match 4731 (frozen from s87 amendment 1); s87 counts order 1000, R 1000, locality 500 perms / 2000 boots; seed 20261090
+ORDER bands (S87.ORDER_BAND, frozen): K100 [+0.012321,+0.092252] K200 [-0.003465,+0.086474]
+
+LOCALITY band (recomputed from VOY, s87 rule): [0.9074, 1.0499]; s87 amendment 1 [0.9074, 1.0499] -> MATCH
+R_VOY (mean of 3): R_within(1) 1.197, R_cross(1) 0.627
+  V1 VOY_ZL3b: o100 +0.034 o200 +0.028 Rw1 1.180(p0.001) Rc1 0.564 loc 0.977 C1 YYYY -> PASS
+  V1 VOY_RF1b: o100 +0.020 o200 +0.009 Rw1 1.193(p0.001) Rc1 0.670 loc 0.977 C1 YYYY -> PASS
+  V1 VOY_IT2a: o100 +0.030 o200 +0.030 Rw1 1.217(p0.001) Rc1 0.646 loc 0.979 C1 YYYY -> PASS
+  V3 (power, not gating) VOY_ZL3b@10023: o100 +0.033 o200 +0.012 Rw1 1.335(p0.001) Rc1 0.570 loc 0.982 C1 YYYY -> (b) at H-pool size: detected
+
+=== corpus list (class, gating, tokens, lines, label) ===
+  H_gib_DA_01            H  UNMATCHED tokens     210 lines     53 mean line  3.96  G&B gibberish writer DA_01, own lines
+  H_gib_DA_02            H  UNMATCHED tokens     356 lines     55 mean line  6.47  G&B gibberish writer DA_02, own lines
+  H_gib_DC_01            H  UNMATCHED tokens     364 lines     52 mean line  7.00  G&B gibberish writer DC_01, own lines
+  H_gib_DC_03            H  UNMATCHED tokens     251 lines     48 mean line  5.23  G&B gibberish writer DC_03, own lines
+  H_gib_DC_04            H  UNMATCHED tokens     270 lines     48 mean line  5.62  G&B gibberish writer DC_04, own lines
+  H_gib_DC_05            H  UNMATCHED tokens     200 lines     25 mean line  8.00  G&B gibberish writer DC_05, own lines
+  H_gib_DC_06            H  UNMATCHED tokens     342 lines     65 mean line  5.26  G&B gibberish writer DC_06, own lines
+  H_gib_DC_08            H  UNMATCHED tokens     247 lines     35 mean line  7.06  G&B gibberish writer DC_08, own lines
+  H_gib_DC_09            H  UNMATCHED tokens     218 lines     40 mean line  5.45  G&B gibberish writer DC_09, own lines
+  H_gib_DC_10            H  UNMATCHED tokens     221 lines     43 mean line  5.14  G&B gibberish writer DC_10, own lines
+  H_gib_DC_11            H  UNMATCHED tokens     223 lines     56 mean line  3.98  G&B gibberish writer DC_11, own lines
+  H_gib_DC_12            H  UNMATCHED tokens     207 lines     46 mean line  4.50  G&B gibberish writer DC_12, own lines
+  H_gib_DC_15            H  UNMATCHED tokens     480 lines     76 mean line  6.32  G&B gibberish writer DC_15, own lines
+  H_gib_DC_16            H  UNMATCHED tokens     338 lines     59 mean line  5.73  G&B gibberish writer DC_16, own lines
+  H_gib_DC_18            H  UNMATCHED tokens     421 lines     47 mean line  8.96  G&B gibberish writer DC_18, own lines
+  H_gib_DC_20            H  UNMATCHED tokens     274 lines     48 mean line  5.71  G&B gibberish writer DC_20, own lines
+  H_gib_DC_21            H  UNMATCHED tokens     305 lines     60 mean line  5.08  G&B gibberish writer DC_21, own lines
+  H_gib_DC_22            H  UNMATCHED tokens     150 lines     53 mean line  2.83  G&B gibberish writer DC_22, own lines
+  H_gib_DC_23            H  UNMATCHED tokens     120 lines     18 mean line  6.67  G&B gibberish writer DC_23, own lines
+  H_gib_DC_24            H  UNMATCHED tokens      79 lines     11 mean line  7.18  G&B gibberish writer DC_24, own lines
+  H_gib_DC_25            H  UNMATCHED tokens     157 lines     27 mean line  5.81  G&B gibberish writer DC_25, own lines
+  H_gib_DC_26            H  UNMATCHED tokens     228 lines     28 mean line  8.14  G&B gibberish writer DC_26, own lines
+  H_gib_DC_27            H  UNMATCHED tokens     332 lines     53 mean line  6.26  G&B gibberish writer DC_27, own lines
+  H_gib_DC_28            H  UNMATCHED tokens     215 lines     38 mean line  5.66  G&B gibberish writer DC_28, own lines
+  H_gib_DC_29            H  UNMATCHED tokens     184 lines     27 mean line  6.81  G&B gibberish writer DC_29, own lines
+  H_gib_DC_30            H  UNMATCHED tokens     322 lines     46 mean line  7.00  G&B gibberish writer DC_30, own lines
+  H_gib_DC_31            H  UNMATCHED tokens     355 lines     52 mean line  6.83  G&B gibberish writer DC_31, own lines
+  H_gib_DC_32            H  UNMATCHED tokens     281 lines     30 mean line  9.37  G&B gibberish writer DC_32, own lines
+  H_gib_DC_33            H  UNMATCHED tokens     188 lines     30 mean line  6.27  G&B gibberish writer DC_33, own lines
+  H_gib_DC_34            H  UNMATCHED tokens     276 lines     46 mean line  6.00  G&B gibberish writer DC_34, own lines
+  H_gib_DC_35            H  UNMATCHED tokens     267 lines     27 mean line  9.89  G&B gibberish writer DC_35, own lines
+  H_gib_DC_36            H  UNMATCHED tokens     199 lines     55 mean line  3.62  G&B gibberish writer DC_36, own lines
+  H_gib_DC_37            H  UNMATCHED tokens     317 lines     34 mean line  9.32  G&B gibberish writer DC_37, own lines
+  H_gib_DC_38            H  UNMATCHED tokens     292 lines     36 mean line  8.11  G&B gibberish writer DC_38, own lines
+  H_gib_DC_39            H  UNMATCHED tokens     312 lines     40 mean line  7.80  G&B gibberish writer DC_39, own lines
+  H_gib_DC_40            H  UNMATCHED tokens     330 lines     28 mean line 11.79  G&B gibberish writer DC_40, own lines
+  H_gib_DC_41            H  UNMATCHED tokens     150 lines     23 mean line  6.52  G&B gibberish writer DC_41, own lines
+  H_gib_DC_42            H  UNMATCHED tokens     342 lines     59 mean line  5.80  G&B gibberish writer DC_42, own lines
+  C_steganographia_la    C  gating    tokens   44628 lines   6222 mean line  7.17  Trithemius Steganographia 1608, OCR lines (s89 loader; reference)
+  C_steg_heidel_la       C  gating    tokens   61279 lines   7405 mean line  8.28  Steganographia in Heidel 1721 ed. (+clavis), OCR lines 2178-9582
+  C_enochian_keys        C  UNMATCHED tokens    1306 lines     38 mean line 34.37  Enochian Keys/Calls, one Key per line (s89 loader)
+  C_enochian_clauses     C  UNMATCHED tokens    1250 lines    159 mean line  7.86  Enochian Keys, clause lines (s37 rule)
+  C_ignota               C  UNMATCHED tokens      58 lines     50 mean line  1.16  Lingua Ignota glossary sample, one word per line
+  C_lull_rows5           C  UNMATCHED tokens    1680 lines    336 mean line  5.00  Llull Ars brevis Fig. 4 table, rows of 5 cells (s37 rows5)
+  H_gib_pool             H  UNMATCHED tokens   10023 lines   1617 mean line  6.20  all 38 gibberish writers; water-filled quotas (max 480 tokens), pages within members
+  C_pool                 C  gating    tokens   22500 lines   3184 mean line  7.07  constructed pool: Steganographia 1608, Enochian Keys, Ignota, Lull; water-filled quotas (max 19456 tokens), pages within members
+  classes: H = human meaningless text (volunteer gibberish); C = constructed human text
+
+=== profiles (primary = whole words; C1 flags a order, b R_within, c R_cross<R_within, d locality) ===
+  H_gib_DA_01              tok    210 ty   148 | order MM K25 -0.103 K50 -0.088 K100 -0.010(p0.516) K200 +0.023(p0.446) K400 +0.023 | Rw1 0.727(p0.746) Rw2 2.24 Rw3 0.00 Rw5 nan Rc1 0.000 | loc 0.715[nan,nan] p0.030 typeR 0.961 | C1 nnYn - | D 13.07 [H, UNMATCHED; held-out 55 < N_match]
+  H_gib_DA_02              tok    356 ty   183 | order MM K25 +0.140 K50 +0.186 K100 +0.213(p0.045) K200 +0.280(p0.023) K400 +0.280 | Rw1 0.000(p1.000) Rw2 0.32 Rw3 3.53 Rw5 0.00 Rc1 0.000 | loc 0.777[nan,nan] p0.006 typeR 0.960 | C1 nnnn - | D 19.46 [H, UNMATCHED; held-out 81 < N_match]
+  H_gib_DC_01              tok    364 ty   309 | order MM K25 +0.019 K50 +0.020 K100 +0.000(p0.463) K200 +0.034(p0.349) K400 +0.127 | Rw1 0.000(p1.000) Rw2 0.00 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 1.162[nan,nan] p0.754 typeR 0.996 | C1 nnnn - | D 19.24 [H, UNMATCHED; held-out 111 < N_match]
+  H_gib_DC_03              tok    251 ty   123 | order MM K25 +0.112 K50 +0.112 K100 +0.108(p0.245) K200 +0.244(p0.063) K400 +0.244 | Rw1 0.373(p0.977) Rw2 1.24 Rw3 0.70 Rw5 1.80 Rc1 0.000 | loc 0.946[nan,nan] p0.246 typeR 0.980 | C1 nnYY - | D 13.29 [H, UNMATCHED; held-out 42 < N_match]
+  H_gib_DC_04              tok    270 ty   197 | order MM K25 -0.068 K50 -0.099 K100 -0.127(p0.872) K200 -0.054(p0.640) K400 -0.054 | Rw1 0.000(p1.000) Rw2 0.00 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 0.915[nan,nan] p0.244 typeR 0.993 | C1 nnnY - | D 19.33 [H, UNMATCHED; held-out 66 < N_match]
+  H_gib_DC_05              NOT PROFILABLE (descriptive, 200 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_06              tok    342 ty   214 | order MM K25 +0.148 K50 +0.076 K100 +0.075(p0.281) K200 +0.031(p0.409) K400 +0.031 | Rw1 0.641(p0.816) Rw2 1.99 Rw3 1.16 Rw5 0.00 Rc1 0.000 | loc 0.848[nan,nan] p0.002 typeR 0.965 | C1 YnYn - | D 13.00 [H, UNMATCHED; held-out 73 < N_match]
+  H_gib_DC_08              NOT PROFILABLE (descriptive, 247 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_09              tok    218 ty   169 | order MM K25 -0.059 K50 -0.119 K100 -0.033(p0.571) K200 -0.003(p0.501) K400 -0.003 | Rw1 2.119(p0.382) Rw2 0.00 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 0.947[nan,nan] p0.437 typeR 1.018 | C1 nnYY - | D 13.00 [H, UNMATCHED; held-out 52 < N_match]
+  H_gib_DC_10              tok    221 ty   162 | order MM K25 -0.176 K50 -0.119 K100 +0.029(p0.417) K200 +0.242(p0.076) K400 +0.242 | Rw1 0.000(p1.000) Rw2 0.00 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 1.064[nan,nan] p0.705 typeR 1.006 | C1 nnnn - | D 19.31 [H, UNMATCHED; held-out 40 < N_match]
+  H_gib_DC_11              tok    223 ty   158 | order MM K25 +0.051 K50 +0.051 K100 +0.100(p0.243) K200 +0.151(p0.186) K400 +0.151 | Rw1 0.698(p0.785) Rw2 0.00 Rw3 1.72 Rw5 0.00 Rc1 2.439 | loc 0.879[nan,nan] p0.110 typeR 0.993 | C1 nnnn - | D 3.23 [H, UNMATCHED; held-out 62 < N_match]
+  H_gib_DC_12              tok    207 ty   175 | order MM K25 -0.009 K50 -0.023 K100 +0.103(p0.633) K200 +0.103(p0.633) K400 +0.103 | Rw1 0.000(p1.000) Rw2 0.00 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 0.811[nan,nan] p0.180 typeR 0.989 | C1 nnnn - | D 19.24 [H, UNMATCHED; held-out 27 < N_match]
+  H_gib_DC_15              tok    480 ty   356 | order MM K25 -0.005 K50 -0.022 K100 -0.025(p0.605) K200 -0.036(p0.629) K400 +0.001 | Rw1 1.362(p0.369) Rw2 0.00 Rw3 0.70 Rw5 1.57 Rc1 0.000 | loc 0.874[nan,nan] p0.006 typeR 0.967 | C1 nnYn - | D 12.98 [H, UNMATCHED; held-out 82 < N_match]
+  H_gib_DC_16              tok    338 ty   302 | order MM K25 +0.003 K50 +0.004 K100 -0.006(p0.532) K200 +0.016(p0.376) K400 +0.016 | Rw1 1.786(p0.439) Rw2 2.32 Rw3 3.22 Rw5 0.00 Rc1 0.000 | loc 0.846[nan,nan] p0.134 typeR 0.986 | C1 nnYn - | D 12.98 [H, UNMATCHED; held-out 78 < N_match]
+  H_gib_DC_18              tok    421 ty   299 | order MM K25 -0.027 K50 -0.025 K100 +0.020(p0.342) K200 +0.116(p0.127) K400 +0.247 | Rw1 0.690(p0.780) Rw2 1.19 Rw3 0.96 Rw5 0.00 Rc1 0.000 | loc 0.668[nan,nan] p0.002 typeR 0.937 | C1 nnYn - | D 13.13 [H, UNMATCHED; held-out 103 < N_match]
+  H_gib_DC_20              tok    274 ty   160 | order MM K25 +0.022 K50 +0.175 K100 +0.162(p0.181) K200 +0.254(p0.094) K400 +0.254 | Rw1 3.381(p0.002) Rw2 2.43 Rw3 1.41 Rw5 0.00 Rc1 3.604 | loc 0.882[nan,nan] p0.032 typeR 0.971 | C1 nYnn - | D 4.79 [H, UNMATCHED; held-out 49 < N_match]
+  H_gib_DC_21              tok    305 ty   160 | order MM K25 -0.163 K50 -0.050 K100 -0.008(p0.531) K200 -0.038(p0.579) K400 -0.038 | Rw1 0.000(p1.000) Rw2 0.42 Rw3 0.57 Rw5 1.49 Rc1 0.000 | loc 0.901[nan,nan] p0.194 typeR 0.981 | C1 nnnn - | D 19.23 [H, UNMATCHED; held-out 55 < N_match]
+  H_gib_DC_22              tok    150 ty   125 | order MM K25 +0.000 K50 +0.000 K100 +0.000(p1.000) K200 +0.000(p1.000) K400 +0.000 | Rw1 3.442(p0.094) Rw2 0.00 Rw3 3.53 Rw5 9.01 Rc1 0.000 | loc 0.393[nan,nan] p0.002 typeR 0.939 | C1 nnYn - | D 13.61 [H, UNMATCHED; held-out 48 < N_match]
+  H_gib_DC_23              NOT PROFILABLE (descriptive, 120 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_24              NOT PROFILABLE (descriptive, 79 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_25              NOT PROFILABLE (descriptive, 157 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_26              NOT PROFILABLE (descriptive, 228 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_27              tok    332 ty   279 | order MM K25 +0.092 K50 +0.090 K100 +0.102(p0.272) K200 +0.305(p0.051) K400 +0.305 | Rw1 2.532(p0.329) Rw2 0.00 Rw3 4.07 Rw5 0.00 Rc1 0.000 | loc 0.649[nan,nan] p0.040 typeR 0.991 | C1 nnYn - | D 13.43 [H, UNMATCHED; held-out 78 < N_match]
+  H_gib_DC_28              NOT PROFILABLE (descriptive, 215 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_29              NOT PROFILABLE (descriptive, 184 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_30              tok    322 ty   293 | order MM K25 +0.094 K50 +0.094 K100 +0.168(p0.056) K200 +0.129(p0.099) K400 +0.130 | Rw1 0.000(p1.000) Rw2 0.00 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 1.207[nan,nan] p0.854 typeR 1.006 | C1 nnnn - | D 19.31 [H, UNMATCHED; held-out 70 < N_match]
+  H_gib_DC_31              tok    355 ty   343 | order MM K25 +0.000 K50 +0.000 K100 +0.000(p1.000) K200 +0.000(p0.610) K400 +0.000 | Rw1 0.000(p1.000) Rw2 0.00 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 0.138[nan,nan] p0.004 typeR 0.984 | C1 nnnn - | D 19.92 [H, UNMATCHED; held-out 70 < N_match]
+  H_gib_DC_32              NOT PROFILABLE (descriptive, 281 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_33              NOT PROFILABLE (descriptive, 188 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_34              tok    276 ty   161 | order MM K25 -0.003 K50 -0.047 K100 +0.013(p0.454) K200 +0.107(p0.217) K400 +0.107 | Rw1 0.250(p0.984) Rw2 1.87 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 0.966[nan,nan] p0.335 typeR 0.999 | C1 nnYY - | D 13.31 [H, UNMATCHED; held-out 60 < N_match]
+  H_gib_DC_35              NOT PROFILABLE (descriptive, 267 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_36              tok    199 ty   187 | order MM K25 +0.000 K50 +0.001 K100 +0.002(p0.502) K200 +0.114(p0.136) K400 +0.114 | Rw1 0.000(p1.000) Rw2 0.00 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 0.797[nan,nan] p0.285 typeR 1.004 | C1 nnnn - | D 19.25 [H, UNMATCHED; held-out 53 < N_match]
+  H_gib_DC_37              NOT PROFILABLE (descriptive, 317 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_38              NOT PROFILABLE (descriptive, 292 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_39              tok    312 ty   236 | order MM K25 -0.075 K50 -0.075 K100 -0.016(p0.596) K200 -0.041(p0.642) K400 -0.041 | Rw1 0.000(p1.000) Rw2 1.67 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 1.328[nan,nan] p0.920 typeR 0.994 | C1 nnnn - | D 19.35 [H, UNMATCHED; held-out 76 < N_match]
+  H_gib_DC_40              NOT PROFILABLE (descriptive, 330 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_41              NOT PROFILABLE (descriptive, 150 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  H_gib_DC_42              tok    342 ty   217 | order MM K25 -0.014 K50 +0.228 K100 +0.224(p0.046) K200 +0.417(p0.005) K400 +0.417 | Rw1 0.000(p1.000) Rw2 0.82 Rw3 0.00 Rw5 1.63 Rc1 2.950 | loc 0.871[nan,nan] p0.006 typeR 0.949 | C1 nnnn - | D 15.15 [H, UNMATCHED; held-out 108 < N_match]
+  C_steganographia_la      tok  22500 ty 12998 | order MM K25 +0.023 K50 +0.019 K100 +0.042(p0.001) K200 +0.084(p0.001) K400 +0.106 | Rw1 0.538(p0.996) Rw2 1.35 Rw3 1.57 Rw5 1.48 Rc1 0.439 | loc 0.950[0.901,0.994] p0.002 typeR 0.976 | C1 YnYY - | D 1.82 [C; held-out 4731]
+  C_steg_heidel_la         tok  22500 ty 10406 | order MM K25 +0.005 K50 +0.021 K100 +0.047(p0.001) K200 +0.052(p0.001) K400 +0.096 | Rw1 0.119(p1.000) Rw2 1.02 Rw3 1.28 Rw5 1.03 Rc1 0.329 | loc 0.914[0.865,0.959] p0.002 typeR 0.932 | C1 YnnY - | D 4.83 [C; held-out 4731]
+  C_enochian_keys          NOT PROFILABLE (descriptive, 1306 tokens): RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify th
+  C_enochian_clauses       tok   1250 ty   717 | order MM K25 -0.009 K50 +0.036 K100 +0.039(p0.186) K200 +0.036(p0.212) K400 +0.115 | Rw1 0.404(p0.998) Rw2 0.35 Rw3 0.70 Rw5 1.22 Rc1 0.000 | loc 0.976[0.820,1.126] p0.136 typeR 0.962 | C1 YnYY - | D 13.09 [C, UNMATCHED; held-out 450 < N_match]
+  C_ignota                 NOT PROFILABLE (descriptive, 58 tokens): ValueError: math domain error
+  C_lull_rows5             tok   1680 ty   816 | order MM K25 +0.000 K50 +0.020 K100 +0.039(p0.319) K200 +0.543(p0.001) K400 +0.543 | Rw1 0.000(p1.000) Rw2 0.00 Rw3 0.00 Rw5 nan Rc1 0.000 | loc 0.911[0.885,0.936] p0.002 typeR 0.911 | C1 nnnY - | D 19.83 [C, UNMATCHED; held-out 380 < N_match]
+  H_gib_pool               tok  10023 ty  6839 | order MM K25 -0.015 K50 -0.020 K100 -0.011(p0.761) K200 -0.002(p0.537) K400 +0.001 | Rw1 0.536(p1.000) Rw2 0.79 Rw3 0.95 Rw5 0.74 Rc1 0.498 | loc 0.358[0.308,0.412] p0.002 typeR 0.816 | C1 nnYn - | D 4.32 [H, UNMATCHED; held-out 1560 < N_match]
+  C_pool                   tok  22500 ty 13067 | order MM K25 +0.023 K50 +0.032 K100 +0.052(p0.001) K200 +0.068(p0.001) K400 +0.103 | Rw1 0.456(p1.000) Rw2 0.89 Rw3 1.11 Rw5 1.26 Rc1 0.328 | loc 0.821[0.720,0.901] p0.002 typeR 0.924 | C1 YnYn - | D 2.54 [C; held-out 4731]
+
+=== secondary: SlotSegmenter stems (descriptive, never in a call) ===
+  H_gib_DA_01/stem         tok    210 ty   143 | order MM K25 -0.084 K50 +0.031 K100 +0.031(p0.419) K200 +0.120(p0.231) K400 +0.120 | Rw1 0.696(p0.764) Rw2 2.10 Rw3 2.05 Rw5 nan Rc1 0.000 | loc 0.779[nan,nan] p0.046 typeR 0.958 | C1 nnYn - | D 13.04
+  H_gib_DA_02/stem         tok    356 ty   179 | order MM K25 +0.147 K50 +0.260 K100 +0.272(p0.029) K200 +0.331(p0.009) K400 +0.331 | Rw1 0.000(p1.000) Rw2 0.31 Rw3 3.44 Rw5 0.00 Rc1 0.000 | loc 0.769[nan,nan] p0.002 typeR 0.957 | C1 nnnn - | D 19.61
+  H_gib_DC_01/stem         tok    364 ty   253 | order MM K25 +0.128 K50 +0.105 K100 +0.074(p0.230) K200 +0.082(p0.241) K400 +0.180 | Rw1 0.000(p1.000) Rw2 1.22 Rw3 1.35 Rw5 2.66 Rc1 0.000 | loc 0.982[nan,nan] p0.497 typeR 1.003 | C1 YnnY - | D 19.20
+  H_gib_DC_03/stem         tok    251 ty   118 | order MM K25 +0.111 K50 +0.258 K100 +0.247(p0.054) K200 +0.247(p0.054) K400 +0.247 | Rw1 0.367(p0.978) Rw2 1.42 Rw3 0.65 Rw5 1.81 Rc1 0.000 | loc 0.931[nan,nan] p0.204 typeR 0.978 | C1 nnYY - | D 13.46
+  H_gib_DC_04/stem         tok    270 ty   171 | order MM K25 -0.025 K50 -0.131 K100 -0.289(p0.994) K200 -0.285(p0.977) K400 -0.285 | Rw1 0.000(p1.000) Rw2 0.00 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 1.029[nan,nan] p0.623 typeR 0.999 | C1 nnnY - | D 19.84
+  H_gib_DC_06/stem         tok    342 ty   194 | order MM K25 +0.078 K50 +0.053 K100 +0.127(p0.167) K200 +0.164(p0.129) K400 +0.164 | Rw1 0.828(p0.726) Rw2 1.90 Rw3 1.12 Rw5 0.00 Rc1 0.000 | loc 0.934[nan,nan] p0.114 typeR 0.977 | C1 nnYY - | D 13.02
+  H_gib_DC_09/stem         tok    218 ty   160 | order MM K25 +0.163 K50 -0.014 K100 -0.130(p0.744) K200 +0.147(p0.248) K400 +0.147 | Rw1 3.356(p0.115) Rw2 0.00 Rw3 0.00 Rw5 0.00 Rc1 7.407 | loc 0.865[nan,nan] p0.323 typeR 1.012 | C1 nnnn - | D 5.88
+  H_gib_DC_10/stem         tok    221 ty   146 | order MM K25 -0.203 K50 -0.108 K100 +0.116(p0.308) K200 +0.328(p0.060) K400 +0.328 | Rw1 0.000(p1.000) Rw2 0.76 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 1.098[nan,nan] p0.804 typeR 1.018 | C1 nnnn - | D 19.43
+  H_gib_DC_11/stem         tok    223 ty   154 | order MM K25 +0.032 K50 +0.032 K100 +0.070(p0.289) K200 +0.122(p0.218) K400 +0.122 | Rw1 0.535(p0.858) Rw2 0.00 Rw3 1.56 Rw5 0.00 Rc1 1.727 | loc 0.918[nan,nan] p0.250 typeR 0.998 | C1 nnnY - | D 2.75
+  H_gib_DC_12/stem         tok    207 ty   165 | order MM K25 -0.017 K50 +0.105 K100 -0.022(p0.842) K200 -0.231(p0.918) K400 -0.231 | Rw1 0.000(p1.000) Rw2 0.00 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 0.981[nan,nan] p0.443 typeR 0.994 | C1 nnnY - | D 19.40
+  H_gib_DC_15/stem         tok    480 ty   254 | order MM K25 +0.115 K50 +0.142 K100 +0.130(p0.096) K200 +0.091(p0.222) K400 -0.069 | Rw1 0.988(p0.581) Rw2 0.92 Rw3 0.60 Rw5 1.85 Rc1 0.000 | loc 1.033[nan,nan] p0.784 typeR 0.985 | C1 nnYY - | D 12.96
+  H_gib_DC_16/stem         tok    338 ty   182 | order MM K25 -0.038 K50 +0.110 K100 +0.227(p0.021) K200 +0.227(p0.021) K400 +0.227 | Rw1 1.493(p0.180) Rw2 0.79 Rw3 0.36 Rw5 2.56 Rc1 1.105 | loc 0.840[nan,nan] p0.004 typeR 0.952 | C1 nnYn - | D 3.08
+  H_gib_DC_18/stem         tok    421 ty   201 | order MM K25 -0.021 K50 +0.090 K100 +0.034(p0.342) K200 +0.112(p0.151) K400 +0.112 | Rw1 0.740(p0.858) Rw2 1.36 Rw3 0.86 Rw5 0.38 Rc1 1.538 | loc 0.899[nan,nan] p0.030 typeR 0.963 | C1 nnnn - | D 2.22
+  H_gib_DC_20/stem         tok    274 ty   128 | order MM K25 -0.039 K50 +0.028 K100 +0.084(p0.320) K200 +0.084(p0.320) K400 +0.084 | Rw1 1.975(p0.031) Rw2 1.51 Rw3 0.68 Rw5 1.70 Rc1 1.990 | loc 0.948[nan,nan] p0.176 typeR 0.980 | C1 YYnY - | D 2.59
+  H_gib_DC_21/stem         tok    305 ty   145 | order MM K25 -0.066 K50 +0.027 K100 -0.052(p0.623) K200 -0.101(p0.703) K400 -0.101 | Rw1 0.000(p1.000) Rw2 0.75 Rw3 0.52 Rw5 1.19 Rc1 0.000 | loc 0.912[nan,nan] p0.216 typeR 0.998 | C1 nnnY - | D 19.29
+  H_gib_DC_22/stem         tok    150 ty   112 | order MM K25 +0.000 K50 +0.000 K100 +0.000(p0.611) K200 +0.000(p0.611) K400 +0.000 | Rw1 3.122(p0.070) Rw2 0.00 Rw3 2.16 Rw5 6.02 Rc1 0.000 | loc 0.493[nan,nan] p0.002 typeR 0.931 | C1 nnYn - | D 13.42
+  H_gib_DC_27/stem         tok    332 ty   182 | order MM K25 +0.065 K50 +0.090 K100 +0.336(p0.038) K200 +0.377(p0.028) K400 +0.377 | Rw1 2.162(p0.052) Rw2 0.84 Rw3 2.27 Rw5 4.03 Rc1 0.000 | loc 0.831[nan,nan] p0.070 typeR 0.996 | C1 nnYn - | D 13.79
+  H_gib_DC_30/stem         tok    322 ty   241 | order MM K25 -0.076 K50 +0.054 K100 +0.200(p0.046) K200 +0.366(p0.007) K400 +0.366 | Rw1 0.580(p0.827) Rw2 0.71 Rw3 1.65 Rw5 1.79 Rc1 0.000 | loc 1.136[nan,nan] p0.920 typeR 1.011 | C1 nnYn - | D 13.52
+  H_gib_DC_31/stem         tok    355 ty   279 | order MM K25 -0.036 K50 -0.036 K100 +0.043(p0.371) K200 -0.049(p0.643) K400 -0.049 | Rw1 1.220(p0.572) Rw2 1.39 Rw3 3.39 Rw5 3.06 Rc1 7.042 | loc 0.476[nan,nan] p0.004 typeR 0.976 | C1 nnnn - | D 5.85
+  H_gib_DC_34/stem         tok    276 ty   123 | order MM K25 -0.029 K50 +0.071 K100 +0.080(p0.309) K200 +0.080(p0.309) K400 +0.080 | Rw1 0.844(p0.718) Rw2 1.23 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 1.019[nan,nan] p0.621 typeR 1.013 | C1 YnYY - | D 12.94
+  H_gib_DC_36/stem         tok    199 ty   156 | order MM K25 -0.076 K50 -0.076 K100 -0.069(p0.676) K200 -0.059(p0.651) K400 -0.059 | Rw1 1.279(p0.549) Rw2 0.00 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 0.856[nan,nan] p0.224 typeR 1.007 | C1 nnYn - | D 13.04
+  H_gib_DC_39/stem         tok    312 ty   204 | order MM K25 +0.014 K50 +0.014 K100 -0.034(p0.613) K200 +0.120(p0.181) K400 +0.120 | Rw1 0.987(p0.600) Rw2 1.61 Rw3 0.00 Rw5 0.00 Rc1 0.000 | loc 1.279[nan,nan] p0.952 typeR 1.001 | C1 nnYn - | D 13.11
+  H_gib_DC_42/stem         tok    342 ty   197 | order MM K25 +0.056 K50 +0.094 K100 +0.090(p0.263) K200 +0.266(p0.022) K400 +0.266 | Rw1 0.000(p1.000) Rw2 0.56 Rw3 0.00 Rw5 1.14 Rc1 2.232 | loc 0.863[nan,nan] p0.006 typeR 0.938 | C1 nnnn - | D 14.63
+  C_steganographia_la/stem tok  22500 ty  8895 | order MM K25 +0.014 K50 +0.030 K100 +0.047(p0.001) K200 +0.065(p0.001) K400 +0.080 | Rw1 1.169(p0.013) Rw2 1.14 Rw3 1.44 Rw5 1.52 Rc1 0.940 | loc 0.960[0.920,0.996] p0.002 typeR 0.979 | C1 YYYY VOYNICH-LIKE | D 0.86
+  C_steg_heidel_la/stem    tok  22500 ty  6334 | order MM K25 +0.012 K50 +0.022 K100 +0.038(p0.001) K200 +0.038(p0.005) K400 +0.072 | Rw1 0.764(p1.000) Rw2 1.04 Rw3 1.16 Rw5 1.24 Rc1 1.318 | loc 0.934[0.893,0.973] p0.002 typeR 0.933 | C1 YnnY - | D 1.77
+  C_enochian_clauses/stem  tok   1250 ty   500 | order MM K25 +0.025 K50 +0.052 K100 +0.044(p0.168) K200 +0.044(p0.209) K400 +0.067 | Rw1 0.713(p0.947) Rw2 0.60 Rw3 0.65 Rw5 0.96 Rc1 0.000 | loc 0.986[0.854,1.109] p0.216 typeR 0.960 | C1 YnYY - | D 12.95
+  C_lull_rows5/stem        tok   1680 ty    15 | order MM K25 +0.124 K50 +0.124 K100 +0.124(p0.006) K200 +0.124(p0.006) K400 +0.124 | Rw1 0.628(p1.000) Rw2 1.56 Rw3 1.40 Rw5 nan Rc1 0.492 | loc 0.986[0.967,1.000] p0.002 typeR 0.663 | C1 nnYY - | D 1.79
+  H_gib_pool/stem          tok  10023 ty  4245 | order MM K25 +0.006 K50 +0.015 K100 +0.031(p0.068) K200 +0.075(p0.001) K400 +0.059 | Rw1 0.889(p0.964) Rw2 1.07 Rw3 1.01 Rw5 1.12 Rc1 0.386 | loc 0.682[0.610,0.755] p0.002 typeR 0.857 | C1 YnYn - | D 2.22
+  C_pool/stem              tok  22500 ty  8475 | order MM K25 +0.053 K50 +0.063 K100 +0.071(p0.001) K200 +0.110(p0.001) K400 +0.106 | Rw1 2.273(p0.001) Rw2 1.20 Rw3 1.21 Rw5 1.38 Rc1 1.310 | loc 0.924[0.837,1.048] p0.002 typeR 0.938 | C1 nYYY - | D 2.11
+
+=== per-text flags (all profiled texts; C1 and C2 count gating texts only) ===
+  H_gib_DA_01              H descr. a n (o100 -0.010 o200 +0.023)  b n (Rw1 0.727 p0.746)  c Y (Rc1 0.000)  d n (loc 0.715)  | C1 [descriptive]  (b) alone no
+  H_gib_DA_02              H descr. a n (o100 +0.213 o200 +0.280)  b n (Rw1 0.000 p1.000)  c n (Rc1 0.000)  d n (loc 0.777)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_01              H descr. a n (o100 +0.000 o200 +0.034)  b n (Rw1 0.000 p1.000)  c n (Rc1 0.000)  d n (loc 1.162)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_03              H descr. a n (o100 +0.108 o200 +0.244)  b n (Rw1 0.373 p0.977)  c Y (Rc1 0.000)  d Y (loc 0.946)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_04              H descr. a n (o100 -0.127 o200 -0.054)  b n (Rw1 0.000 p1.000)  c n (Rc1 0.000)  d Y (loc 0.915)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_06              H descr. a Y (o100 +0.075 o200 +0.031)  b n (Rw1 0.641 p0.816)  c Y (Rc1 0.000)  d n (loc 0.848)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_09              H descr. a n (o100 -0.033 o200 -0.003)  b n (Rw1 2.119 p0.382)  c Y (Rc1 0.000)  d Y (loc 0.947)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_10              H descr. a n (o100 +0.029 o200 +0.242)  b n (Rw1 0.000 p1.000)  c n (Rc1 0.000)  d n (loc 1.064)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_11              H descr. a n (o100 +0.100 o200 +0.151)  b n (Rw1 0.698 p0.785)  c n (Rc1 2.439)  d n (loc 0.879)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_12              H descr. a n (o100 +0.103 o200 +0.103)  b n (Rw1 0.000 p1.000)  c n (Rc1 0.000)  d n (loc 0.811)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_15              H descr. a n (o100 -0.025 o200 -0.036)  b n (Rw1 1.362 p0.369)  c Y (Rc1 0.000)  d n (loc 0.874)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_16              H descr. a n (o100 -0.006 o200 +0.016)  b n (Rw1 1.786 p0.439)  c Y (Rc1 0.000)  d n (loc 0.846)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_18              H descr. a n (o100 +0.020 o200 +0.116)  b n (Rw1 0.690 p0.780)  c Y (Rc1 0.000)  d n (loc 0.668)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_20              H descr. a n (o100 +0.162 o200 +0.254)  b Y (Rw1 3.381 p0.002)  c n (Rc1 3.604)  d n (loc 0.882)  | C1 [descriptive]  (b) alone YES
+  H_gib_DC_21              H descr. a n (o100 -0.008 o200 -0.038)  b n (Rw1 0.000 p1.000)  c n (Rc1 0.000)  d n (loc 0.901)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_22              H descr. a n (o100 +0.000 o200 +0.000)  b n (Rw1 3.442 p0.094)  c Y (Rc1 0.000)  d n (loc 0.393)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_27              H descr. a n (o100 +0.102 o200 +0.305)  b n (Rw1 2.532 p0.329)  c Y (Rc1 0.000)  d n (loc 0.649)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_30              H descr. a n (o100 +0.168 o200 +0.129)  b n (Rw1 0.000 p1.000)  c n (Rc1 0.000)  d n (loc 1.207)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_31              H descr. a n (o100 +0.000 o200 +0.000)  b n (Rw1 0.000 p1.000)  c n (Rc1 0.000)  d n (loc 0.138)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_34              H descr. a n (o100 +0.013 o200 +0.107)  b n (Rw1 0.250 p0.984)  c Y (Rc1 0.000)  d Y (loc 0.966)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_36              H descr. a n (o100 +0.002 o200 +0.114)  b n (Rw1 0.000 p1.000)  c n (Rc1 0.000)  d n (loc 0.797)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_39              H descr. a n (o100 -0.016 o200 -0.041)  b n (Rw1 0.000 p1.000)  c n (Rc1 0.000)  d n (loc 1.328)  | C1 [descriptive]  (b) alone no
+  H_gib_DC_42              H descr. a n (o100 +0.224 o200 +0.417)  b n (Rw1 0.000 p1.000)  c n (Rc1 2.950)  d n (loc 0.871)  | C1 [descriptive]  (b) alone no
+  C_steganographia_la      C gating a Y (o100 +0.042 o200 +0.084)  b n (Rw1 0.538 p0.996)  c Y (Rc1 0.439)  d Y (loc 0.950)  | C1 no  (b) alone no
+  C_steg_heidel_la         C gating a Y (o100 +0.047 o200 +0.052)  b n (Rw1 0.119 p1.000)  c n (Rc1 0.329)  d Y (loc 0.914)  | C1 no  (b) alone no
+  C_enochian_clauses       C descr. a Y (o100 +0.039 o200 +0.036)  b n (Rw1 0.404 p0.998)  c Y (Rc1 0.000)  d Y (loc 0.976)  | C1 [descriptive]  (b) alone no
+  C_lull_rows5             C descr. a n (o100 +0.039 o200 +0.543)  b n (Rw1 0.000 p1.000)  c n (Rc1 0.000)  d Y (loc 0.911)  | C1 [descriptive]  (b) alone no
+  H_gib_pool               H descr. a n (o100 -0.011 o200 -0.002)  b n (Rw1 0.536 p1.000)  c Y (Rc1 0.498)  d n (loc 0.358)  | C1 [descriptive]  (b) alone no
+  C_pool                   C gating a Y (o100 +0.052 o200 +0.068)  b n (Rw1 0.456 p1.000)  c Y (Rc1 0.328)  d n (loc 0.821)  | C1 no  (b) alone no
+
+=== C1 (gating texts) ===
+  C1 C_steganographia_la      C  no           fails: b_Rwithin
+  C1 C_steg_heidel_la         C  no           fails: b_Rwithin, c_Rcross<Rwithin
+  C1 C_pool                   C  no           fails: b_Rwithin, d_locality
+  C2 gating texts with (b) true per class: H 0/0; C 0/3
+  descriptive texts with (b) true (not in C2): H 1/24 profiled; C 0/2 profiled
+
+VERDICT: no human text class tested reuses words inside lines
+  closest gating text: C_steganographia_la (C, D 1.82), failing: b_Rwithin
+  descriptive H (no gating text exists): H_gib_pool 10023 tokens Rw1 0.536 (p1.000) Rc1 0.498 -> (b) fails (power: see runs/s90/fixture.txt FXS)
+
+sidecars: runs/s90/profiles.csv, runs/s90/calls.json
+runtime 11 s; finished Sun Oct 18 06:48:33 PDT 2026 (`date`)

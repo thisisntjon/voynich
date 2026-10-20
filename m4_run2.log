@@ -1,0 +1,279 @@
+# results_m4_phase1_board: Phase 1 joint family-discrimination board
+# run 2026-10-17 17:02 (system clock), seed 20261017, sample 25000 tokens per non-Voynich corpus, lexicon null shuffles 5
+# v1 = scoreboard/score.py loaded by path, score_corpus + g0 band checks; new = scoreboard/metrics_new.py
+
+synthetic meta.json found (19): c2_best.meta.json, flow_cipher_layer.meta.json, flow_gen_layer.meta.json, latin_merged.meta.json, lull_ars_brevis_table.meta.json, markov1.meta.json, naibbe_like.meta.json, nomen_k2_x2.meta.json, nomen_k2_x8.meta.json, nomen_lines.meta.json, nomen_numeric.meta.json, nomen_numeric_lines.meta.json, nomen_numeric_sylls.meta.json, nomen_syll.meta.json, nomen_word.meta.json, rugg_grille.meta.json, schwartz_reuse.meta.json, timm_schinner.meta.json, timm_schinner_ownlines.meta.json
+expected-but-missing synthetic corpora: none
+
+corpora:
+  V voynich_all                      pages= 207 lines= 4130 tokens= 34857 types=  7025 sections=  7  [ZL3b EVA paragraphs, whole]
+  V voynich_A                        pages= 114 lines= 1557 tokens= 11231 types=  3217 sections=  4  [Currier A pages]
+  V voynich_B                        pages=  83 lines= 2478 tokens= 23078 types=  4788 sections=  5  [Currier B pages]
+  G c2_best                          pages= 187 lines= 3147 tokens= 25007 types=  1720 sections=  7  [meta.json; 34857 tokens full]
+  X flow_cipher_layer                pages= 159 lines= 2732 tokens= 21292 types=  4971 sections=  7  [meta.json; 21292 tokens full]
+  X flow_gen_layer                   pages= 187 lines= 3147 tokens= 25007 types=  1581 sections=  7  [meta.json; 34857 tokens full]
+  X latin_merged                     pages= 125 lines= 2500 tokens= 25000 types=  6801 sections= 25  [meta.json; 35000 tokens full]
+  X lull_ars_brevis_table            pages=  84 lines= 1680 tokens=  1680 types=   816 sections= 84  [meta.json; 1680 tokens full]
+  G markov1                          pages= 182 lines= 3119 tokens= 25000 types=  8195 sections= 42  [meta.json; 35000 tokens full]
+  X naibbe_like                      pages= 169 lines= 3369 tokens= 25003 types= 21627 sections= 72  [meta.json; 34994 tokens full]
+  C nomen_k2_x2                      pages= 187 lines= 3147 tokens= 25007 types=  8606 sections=  7  [meta.json; 34857 tokens full]
+  C nomen_k2_x8                      pages= 187 lines= 3147 tokens= 25007 types= 14593 sections=  7  [meta.json; 34857 tokens full]
+  C nomen_lines                      pages= 184 lines= 3118 tokens= 25000 types=  7238 sections= 67  [meta.json; 35007 tokens full]
+  C nomen_numeric                    pages= 169 lines= 3368 tokens= 25003 types=  6567 sections= 72  [meta.json; 35007 tokens full]
+  C nomen_numeric_lines              pages= 184 lines= 3118 tokens= 25000 types=  7238 sections= 67  [meta.json; 35007 tokens full]
+  C nomen_numeric_sylls              pages= 169 lines= 3368 tokens= 25003 types=  6560 sections= 72  [meta.json; 35007 tokens full]
+  C nomen_syll                       pages= 169 lines= 3368 tokens= 25003 types=  6565 sections= 72  [meta.json; 35007 tokens full]
+  C nomen_word                       pages= 169 lines= 3368 tokens= 25003 types=  6567 sections= 72  [meta.json; 35007 tokens full]
+  G rugg_grille                      pages= 179 lines= 3115 tokens= 25002 types=  4079 sections= 42  [meta.json; 35000 tokens full]
+  G schwartz_reuse                   pages= 187 lines= 3147 tokens= 25007 types=  4654 sections=  7  [meta.json; 34857 tokens full]
+  G timm_schinner                    pages= 187 lines= 3147 tokens= 25007 types=  4125 sections=  7  [meta.json; 34857 tokens full]
+  G timm_schinner_ownlines           pages=  96 lines= 2776 tokens= 25003 types=  4125 sections=  1  [meta.json; 43376 tokens full]
+  L latin_caesar                     pages= 122 lines= 2440 tokens= 19520 types=  5491 sections=  4  [corpora.control; 19520 tokens full]
+  L latin_augustine                  pages= 157 lines= 3125 tokens= 25000 types=  7602 sections=  4  [corpora.control; 130897 tokens full]
+  L italian_dante                    pages= 157 lines= 3125 tokens= 25000 types=  5323 sections=  4  [corpora.control; 97009 tokens full]
+  L german_faust                     pages= 157 lines= 3125 tokens= 25000 types=  5305 sections=  4  [corpora.control; 29412 tokens full]
+  L german_kafka                     pages= 115 lines= 2284 tokens= 18269 types=  3571 sections=  4  [corpora.control; 18269 tokens full]
+  L english_alice                    pages= 157 lines= 3125 tokens= 25000 types=  2438 sections=  4  [corpora.control; 26056 tokens full]
+  L hebrew_torah                     pages= 157 lines= 3125 tokens= 25000 types=  8308 sections=  2  [corpora_ext; 69385 tokens full]
+  L arabic_quran                     pages= 157 lines= 3125 tokens= 25000 types=  6338 sections=  8  [corpora_ext; 78248 tokens full]
+  L greek_herodotus                  pages= 157 lines= 3125 tokens= 25000 types=  6784 sections=  4  [corpora_ext; 184936 tokens full]
+  L czech_bible_kralicka_1613        pages= 157 lines= 3125 tokens= 25000 types=  4724 sections=  4  [corpora_ext; 76893 tokens full]
+  L occitan_croisade_albigeoise      pages= 157 lines= 3125 tokens= 25000 types=  4685 sections=126  [corpora_ext; 82388 tokens full]
+  L oldfrench_roland                 pages= 157 lines= 3125 tokens= 25000 types=  3975 sections=152  [corpora_ext; 29524 tokens full]
+  L mhg_nibelungenlied               pages= 157 lines= 3125 tokens= 25000 types=  3478 sections= 13  [corpora_ext; 78700 tokens full]
+  L mhg_parzival                     pages= 157 lines= 3125 tokens= 25000 types=  4206 sections=  4  [corpora_ext; 130551 tokens full]
+  L catalan_tirant                   pages= 157 lines= 3125 tokens= 25000 types=  3445 sections= 38  [corpora_ext; 205824 tokens full]
+  L turkish_kanun_medeni_1926        pages= 157 lines= 3125 tokens= 25000 types=  5158 sections=  4  [corpora_ext; 37026 tokens full]
+  L latin_macer_floridus             pages=  88 lines= 1756 tokens= 14044 types=  3898 sections= 60  [corpora_ext; 14044 tokens full]
+  L latin_pliny_herbal               pages= 157 lines= 3125 tokens= 25000 types=  7609 sections=  3  [corpora_ext; 76561 tokens full]
+  L hawaiian_fornander               pages= 157 lines= 3125 tokens= 25000 types=  1182 sections=  4  [corpora_ext; 427956 tokens full]
+  L tagalog_urbana_feliza_1864       pages= 157 lines= 3125 tokens= 25000 types=  4498 sections=  4  [corpora_ext; 36740 tokens full]
+  L tagalog_florante_1838            pages= 149 lines= 2970 tokens= 23760 types=  4651 sections=  4  [corpora_ext; 23760 tokens full]
+  X enochian_keys_dee                pages=   9 lines=  161 tokens=  1287 types=   730 sections=  8  [corpora_ext constructed; 1287 tokens full]
+  X ignota_hildegard_glossary        pages=   1 lines=    7 tokens=    53 types=    43 sections=  1  [corpora_ext constructed; 53 tokens full]
+  X trithemius_steganographia_1608   pages= 157 lines= 3125 tokens= 25000 types= 13491 sections=  4  [corpora_ext constructed; 48906 tokens full]
+  X trithemius_polygraphia           pages= 157 lines= 3125 tokens= 25000 types= 10931 sections=  4  [corpora_ext constructed; 111411 tokens full]
+
+[1/47] voynich_all (V) ... elapsed 2s
+    v1 1.4s
+    lex 5.2s
+    slot 0.3s
+    info 1.8s
+    bake 7.7s
+    extra 4.8s
+[2/47] voynich_A (V) ... elapsed 23s
+    v1 0.4s
+    lex 1.8s
+    slot 0.1s
+    info 0.7s
+    bake 1.7s
+    extra 1.0s
+[3/47] voynich_B (V) ... elapsed 29s
+    v1 0.9s
+    lex 3.1s
+    slot 0.2s
+    info 1.2s
+    bake 2.9s
+    extra 1.8s
+[4/47] c2_best (G) ... elapsed 39s
+    v1 0.9s
+    lex 1.1s
+    slot 0.1s
+    info 1.1s
+    bake 4.7s
+    extra 3.1s
+[5/47] flow_cipher_layer (X) ... elapsed 50s
+    v1 0.8s
+    lex 2.6s
+    slot 0.2s
+    info 1.2s
+    bake 3.9s
+    extra 2.4s
+[6/47] flow_gen_layer (X) ... elapsed 61s
+    v1 0.9s
+    lex 1.0s
+    slot 0.1s
+    info 1.2s
+    bake 4.6s
+    extra 3.1s
+[7/47] latin_merged (X) ... elapsed 72s
+    v1 0.8s
+    lex 3.2s
+    slot 0.2s
+    info 1.3s
+    bake 5.2s
+    extra 3.6s
+[8/47] lull_ars_brevis_table (X) ... elapsed 86s
+    v1 0.1s
+    lex 0.1s
+    slot 0.0s
+    info 0.3s
+    bake 0.3s
+    extra 0.0s
+[9/47] markov1 (G) ... elapsed 87s
+    v1 1.2s
+    lex 5.6s
+    slot 0.4s
+    info 1.6s
+    bake 8.8s
+    extra 4.9s
+[10/47] naibbe_like (X) ... elapsed 110s
+    v1 1.2s
+    lex 12.7s
+    slot 1.3s
+    info 2.3s
+    bake 11.3s
+    extra 6.4s
+[11/47] nomen_k2_x2 (C) ... elapsed 145s
+    v1 1.0s
+    lex 5.5s
+    slot 0.2s
+    info 1.2s
+    bake 6.1s
+    extra 4.0s
+[12/47] nomen_k2_x8 (C) ... elapsed 163s
+    v1 1.1s
+    lex 10.5s
+    slot 0.4s
+    info 1.5s
+    bake 7.9s
+    extra 4.8s
+[13/47] nomen_lines (C) ... elapsed 189s
+    v1 1.1s
+    lex 4.1s
+    slot 0.2s
+    info 1.6s
+    bake 8.4s
+    extra 5.4s
+[14/47] nomen_numeric (C) ... elapsed 209s
+    v1 1.1s
+    lex 2.4s
+    slot 0.1s
+    info 1.2s
+    bake 5.1s
+    extra 3.2s
+[15/47] nomen_numeric_lines (C) ... elapsed 223s
+    v1 1.0s
+    lex 2.9s
+    slot 0.1s
+    info 1.3s
+    bake 5.9s
+    extra 3.4s
+[16/47] nomen_numeric_sylls (C) ... elapsed 237s
+    v1 1.0s
+    lex 3.6s
+    slot 0.3s
+    info 1.6s
+    bake 7.1s
+    extra 4.5s
+[17/47] nomen_syll (C) ... elapsed 255s
+    v1 1.1s
+    lex 3.6s
+    slot 0.3s
+    info 1.8s
+    bake 7.6s
+    extra 4.3s
+[18/47] nomen_word (C) ... elapsed 274s
+    v1 0.8s
+    lex 2.8s
+    slot 0.1s
+    info 1.3s
+    bake 5.8s
+    extra 3.6s
+[19/47] rugg_grille (G) ... elapsed 288s
+    v1 0.9s
+    lex 1.5s
+    slot 0.1s
+    info 1.2s
+    bake 5.9s
+    extra 3.9s
+[20/47] schwartz_reuse (G) ... elapsed 302s
+    v1 0.9s
+    lex 2.8s
+    slot 0.2s
+    info 1.2s
+    bake 5.1s
+    extra 3.1s
+[21/47] timm_schinner (G) ... elapsed 315s
+    v1 0.9s
+    lex 2.1s
+    slot 0.1s
+    info 1.1s
+    bake 4.9s
+    extra 3.0s
+[22/47] timm_schinner_ownlines (G) ... elapsed 327s
+    v1 0.9s
+    lex 1.9s
+    slot 0.1s
+    info 1.0s
+    bake 3.1s
+    extra 1.9s
+[23/47] latin_caesar (L) ... elapsed 336s
+    v1 0.7s
+    lex 4.9s
+    slot 0.3s
+    info 1.4s
+    bake 4.7s
+    extra 3.0s
+[24/47] latin_augustine (L) ... elapsed 351s
+    v1 1.0s
+    lex 6.6s
+    slot 0.5s
+    info 1.6s
+    bake 6.9s
+    extra 4.4s
+[25/47] italian_dante (L) ... elapsed 372s
+    v1 1.0s
+    lex 3.7s
+    slot 0.2s
+    info 1.4s
+    bake 5.5s
+    extra 3.5s
+[26/47] german_faust (L) ... elapsed 388s
+    v1 1.0s
+    lex 4.9s
+    slot 0.4s
+    info 1.6s
+    bake 6.9s
+    extra 4.2s
+[27/47] german_kafka (L) ... elapsed 407s
+    v1 0.9s
+    lex 3.2s
+    slot 0.3s
+    info 1.3s
+    bake 3.8s
+    extra 2.5s
+[28/47] english_alice (L) ... elapsed 419s
+    v1 1.0s
+    lex 2.0s
+    slot 0.2s
+    info 1.4s
+    bake 5.5s
+    extra 3.4s
+[29/47] hebrew_torah (L) ... elapsed 432s
+    v1 1.2s
+    lex 6.1s
+    slot 0.3s
+    info 1.7s
+    bake 8.8s
+    extra 5.6s
+[30/47] arabic_quran (L) ... elapsed 456s
+    v1 1.4s
+    lex 5.4s
+    slot 0.2s
+    info 1.3s
+    bake 6.4s
+    extra 4.2s
+[31/47] greek_herodotus (L) ... elapsed 475s
+    v1 1.1s
+    lex 5.9s
+    slot 0.4s
+    info 1.4s
+    bake 7.5s
+    extra 5.9s
+[32/47] czech_bible_kralicka_1613 (L) ... elapsed 497s
+    v1 0.9s
+    lex 3.2s
+    slot 0.2s
+    info 1.5s
+    bake 5.1s

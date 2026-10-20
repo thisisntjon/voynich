@@ -1,0 +1,2 @@
+# s54 prereg: sha256 of the scoring script; frozen Sun Oct 18 00:23:43 PDT 2026 before any scoring run on real data (only the --selftest synthetic fixture was run, output in the scratchpad)
+34f982ec9fca65edaa7299461be57ef9fbbdd6b298d686038384d204a9d49705  s54_label_partner_text.py

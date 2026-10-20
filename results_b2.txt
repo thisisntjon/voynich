@@ -1,0 +1,106 @@
+B2: 2-state HMM and Sukhotin vowel identification
+tokens/corpus=25000, HMM train chars=42000, restarts=20
+HMM: 'X' = state whose glyphs have the higher word-final rate.
+AUC_final = P(final-rate of an X glyph > that of a Y glyph); 1.0 = perfect final/non-final split.
+vowel_acc = token-weighted agreement of the split with a,e,i,o,u,y (controls only; 0.5 = chance-ish).
+stable = restarts (of 20) landing on the same partition as the best one.
+
+[voynich_eva] spaces=kept  LL=-103606  stable=6/20  space-symbol-side=Y
+   X (final-ish): o y c a s n g b u z
+   Y            : h e d i k l r t q p m f x j
+   AUC_final=0.673  final_tokens_on_X=0.637
+[voynich_eva] spaces=removed  LL=-104168  stable=11/20
+   X (final-ish): o y e c a s g u
+   Y            : h d i k l r t n q p m f b x
+   AUC_final=0.577  final_tokens_on_X=0.488
+   Sukhotin spaces=kept: vowels=o h a y n g b u  within-word alternation=0.729
+   Sukhotin spaces=removed: vowels=o y a c e s n  within-word alternation=0.816
+
+[voynich_glyph] spaces=kept  LL=-106000  stable=9/20  space-symbol-side=Y
+   X (final-ish): y d i ch l k r n q t sh s p cth
+   Y            : o e a h
+   AUC_final=0.620  final_tokens_on_X=0.964
+[voynich_glyph] spaces=removed  LL=-108242  stable=9/20
+   X (final-ish): o y a n g u
+   Y            : e d i ch l k r q t sh s p cth ckh
+   AUC_final=0.790  final_tokens_on_X=0.601
+   Sukhotin spaces=kept: vowels=o a e y n c h u  within-word alternation=0.782
+   Sukhotin spaces=removed: vowels=o y a e n c g u  within-word alternation=0.782
+
+[NULL_voy_charshuf] spaces=kept  LL=-110696  stable=13/20  space-symbol-side=Y
+   X (final-ish): o h y e c d a i k l s r t n
+   Y            : x j u v
+   AUC_final=0.750  final_tokens_on_X=1.000
+[NULL_voy_charshuf] spaces=removed  LL=-112500  stable=1/20
+   X (final-ish): y c d a k l t q m b u z
+   Y            : o h e i s r n p f g x j v
+   AUC_final=0.718  final_tokens_on_X=0.490
+   Sukhotin spaces=kept: vowels=o h y e c m g f x j  within-word alternation=0.501
+   Sukhotin spaces=removed: vowels=o h y e c p g x j  within-word alternation=0.501
+
+[latin_caesar] spaces=kept  LL=-110484  stable=14/20  space-symbol-side=Y
+   X (final-ish): t s r n m c p l d q b v g f
+   Y            : e i u a o y j k
+   AUC_final=0.492  final_tokens_on_X=0.647  vowel_acc=1.000
+[latin_caesar] spaces=removed  LL=-110546  stable=15/20
+   X (final-ish): t s r n m c p l d q b v g f
+   Y            : e i u a o
+   AUC_final=0.368  final_tokens_on_X=0.647  vowel_acc=1.000
+   Sukhotin spaces=kept: vowels=e i u a o y  within-word alternation=0.797
+   Sukhotin spaces=removed: vowels=e i a u o y  within-word alternation=0.797
+
+[latin_augustine] spaces=kept  LL=-109560  stable=15/20  space-symbol-side=Y
+   X (final-ish): t s n m r c d l p b q v f g
+   Y            : e i a u o y
+   AUC_final=0.465  final_tokens_on_X=0.657  vowel_acc=1.000
+[latin_augustine] spaces=removed  LL=-110366  stable=9/20
+   X (final-ish): t s n m r c d l p b q v f g
+   Y            : e i a u o y
+   AUC_final=0.465  final_tokens_on_X=0.657  vowel_acc=1.000
+   Sukhotin spaces=kept: vowels=e i a u o y  within-word alternation=0.824
+   Sukhotin spaces=removed: vowels=e i a u o y  within-word alternation=0.824
+
+[italian_dante] spaces=kept  LL=-109856  stable=6/20  space-symbol-side=Y
+   X (final-ish): e a i o q x
+   Y            : n r l s t c d u m p v g h f
+   AUC_final=0.802  final_tokens_on_X=0.763  vowel_acc=0.956
+[italian_dante] spaces=removed  LL=-111902  stable=11/20
+   X (final-ish): e a i o u
+   Y            : n r l s t c d m p v g h f b
+   AUC_final=0.941  final_tokens_on_X=0.783  vowel_acc=1.000
+   Sukhotin spaces=kept: vowels=e o a i u h  within-word alternation=0.752
+   Sukhotin spaces=removed: vowels=e a o i u  within-word alternation=0.750
+
+[german_faust] spaces=kept  LL=-112871  stable=5/20  space-symbol-side=Y
+   X (final-ish): n i r s h t d l m g b w f k
+   Y            : e a u c o y
+   AUC_final=0.675  final_tokens_on_X=0.842  vowel_acc=0.878
+[german_faust] spaces=removed  LL=-115925  stable=11/20
+   X (final-ish): n i r s h t d l m g b w f k
+   Y            : e a u c o q y
+   AUC_final=0.743  final_tokens_on_X=0.842  vowel_acc=0.878
+   Sukhotin spaces=kept: vowels=e a i u o h k  within-word alternation=0.713
+   Sukhotin spaces=removed: vowels=e a i u o h t k  within-word alternation=0.708
+
+[german_kafka] spaces=kept  LL=-113485  stable=12/20  space-symbol-side=Y
+   X (final-ish): n r s t h d l g m w b f z k
+   Y            : e i a u c o p
+   AUC_final=0.688  final_tokens_on_X=0.787  vowel_acc=0.962
+[german_kafka] spaces=removed  LL=-115583  stable=8/20
+   X (final-ish): n r i s t h d l g m w b f z
+   Y            : e a u c o
+   AUC_final=0.624  final_tokens_on_X=0.793  vowel_acc=0.893
+   Sukhotin spaces=kept: vowels=e a i u o h k p  within-word alternation=0.725
+   Sukhotin spaces=removed: vowels=e a i u o h k p  within-word alternation=0.725
+
+[english_alice] spaces=kept  LL=-113956  stable=5/20  space-symbol-side=Y
+   X (final-ish): e t a o i n s r d l w g c y
+   Y            : h u x z
+   AUC_final=0.756  final_tokens_on_X=0.959  vowel_acc=0.555
+[english_alice] spaces=removed  LL=-117360  stable=15/20
+   X (final-ish): t h n s r d l w g c y m f p
+   Y            : e a o i u q
+   AUC_final=0.575  final_tokens_on_X=0.675  vowel_acc=0.977
+   Sukhotin spaces=kept: vowels=e o a i u g y  within-word alternation=0.711
+   Sukhotin spaces=removed: vowels=e t a o i u y  within-word alternation=0.700
+

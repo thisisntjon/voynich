@@ -1,0 +1,124 @@
+s78_picture_text_similarity.py sha256=21d55546277c8636585fc48ce2916e6fea5dbff65acdc8971337308d1b8e4a03
+stub_match=NO STUB
+run start: Sun Oct 18 03:23:44 PDT 2026 (`date`)
+mode: FIXTURE (synthetic only); seed 20261018; perms 10000; controls 20 reps; C+ s=0.2, k=12, pool 20 types (count >= 3)
+
+fixture: 72 synthetic pages, 6 picture groups (shape+colour), 3 hands x 6 quires; text strokes hand-styled
+masking: ink share inside boxes before 0.1120 -> after 0.0000
+   masking check [fixture]: mean same-page cosine masked vs text-in: DINOv2 0.7764, SigLIP 0.8811
+   r(picture sim masked, picture sim text-in) over pairs = 0.9052
+   same-hand minus different-hand mean picture z (masked): +0.2427
+   same-hand minus different-hand mean picture z (text-in): +0.2112
+   picture z same-group minus different-group (masked): +2.234
+
+====================================================================================================
+FIXTURE WORLD: LINK (30% of cores planted by picture group)
+====================================================================================================
+[fixture] N pages = 72; pairs ALL = 2556, NOBIF = 2448; hand x quire strata = 6 (6 with >= 2 pages, 72 pages permutable)
+   covariates (share of ALL pairs): same hand 0.324, same quire 0.155, same bifolio 0.042, same language 0.549
+   ZL3b: segmenter prefixes 11 suffixes 19; tokens on scored pages 8210; core types 143
+   RF1b: segmenter prefixes 11 suffixes 22; tokens on scored pages 8210; core types 209
+   IT2a: segmenter prefixes 11 suffixes 21; tokens on scored pages 8210; core types 261
+
+   main table (partial Mantel r; one-sided stratified p, 10000 perms):
+   translit text    picture  variant        r        p  null mean  null q99 pairs
+   ZL3b   cores   masked   ALL     +0.4104   0.0001    +0.0336   +0.1024 2556
+   ZL3b   cores   masked   NOBIF   +0.4053   0.0001    +0.0274   +0.0979 2448
+   ZL3b   words   masked   ALL     +0.3295   0.0001    +0.0345   +0.0881 2556
+   ZL3b   words   masked   NOBIF   +0.3280   0.0001    +0.0307   +0.0860 2448
+   ZL3b   frames  masked   ALL     +0.0789   0.0008    +0.0123   +0.0614 2556
+   ZL3b   frames  masked   NOBIF   +0.0888   0.0006    +0.0191   +0.0700 2448
+   RF1b   cores   masked   ALL     +0.3955   0.0001    +0.0326   +0.1026 2556
+   RF1b   cores   masked   NOBIF   +0.3890   0.0001    +0.0265   +0.0981 2448
+   RF1b   words   masked   ALL     +0.3098   0.0001    +0.0328   +0.0880 2556
+   RF1b   words   masked   NOBIF   +0.3086   0.0001    +0.0296   +0.0855 2448
+   RF1b   frames  masked   ALL     +0.0820   0.0003    +0.0095   +0.0582 2556
+   RF1b   frames  masked   NOBIF   +0.0913   0.0003    +0.0162   +0.0668 2448
+   IT2a   cores   masked   ALL     +0.4034   0.0001    +0.0317   +0.0982 2556
+   IT2a   cores   masked   NOBIF   +0.3985   0.0001    +0.0258   +0.0950 2448
+   IT2a   words   masked   ALL     +0.3294   0.0001    +0.0370   +0.0900 2556
+   IT2a   words   masked   NOBIF   +0.3263   0.0001    +0.0323   +0.0869 2448
+   IT2a   frames  masked   ALL     +0.0823   0.0005    +0.0155   +0.0636 2556
+   IT2a   frames  masked   NOBIF   +0.0926   0.0004    +0.0224   +0.0727 2448
+   ZL3b   cores   text-in  ALL     +0.4035   0.0001    +0.0060   +0.0766 2556
+   ZL3b   cores   text-in  NOBIF   +0.4005   0.0001    +0.0028   +0.0746 2448
+   ZL3b   cores   dino     ALL     +0.3872   0.0001    +0.0302   +0.1057 2556
+   ZL3b   cores   dino     NOBIF   +0.3831   0.0001    +0.0245   +0.1020 2448
+   ZL3b   cores   siglip   ALL     +0.4135   0.0001    +0.0353   +0.0991 2556
+   ZL3b   cores   siglip   NOBIF   +0.4079   0.0001    +0.0291   +0.0951 2448
+   C+ groups (KMeans k=12 on masked embeddings): sizes [10, 10, 7, 6, 6, 6, 6, 5, 5, 4, 4, 3]
+   C+ s=0.05: detected (p<0.01) ALL 0/20, NOBIF 0/20; mean r ALL +0.0480 (min +0.0027), NOBIF +0.0410
+   C+ s=0.10: detected (p<0.01) ALL 7/20, NOBIF 6/20; mean r ALL +0.0920 (min +0.0218), NOBIF +0.0837
+   C+ s=0.20: detected (p<0.01) ALL 20/20, NOBIF 20/20; mean r ALL +0.2451 (min +0.1764), NOBIF +0.2367
+   C+ s=0.40: detected (p<0.01) ALL 20/20, NOBIF 20/20; mean r ALL +0.4745 (min +0.3798), NOBIF +0.4649
+   C- (derangement within hand x quire): reached p<0.01: ALL 0/20, NOBIF 0/20; mean r ALL +0.0274
+   controls: C+ (s=0.20) PASS (20/20 >= 18); C- PASS (0/20 <= 2)
+   minimum detectable effect (smallest s with >= 18/20, ALL): s = 0.20 (mean r there +0.2451)
+   fixture verdict: mixed  (expected: picture-linked cores)
+     - ZL3b cores r>0 & p<0.01 in ALL and NOBIF: True
+     - RF1b and IT2a cores r>0 in ALL and NOBIF: True
+     - ZL3b frames p>=0.01 in ALL and NOBIF: False
+     - ZL3b cores p>=0.05 in ALL and NOBIF: False
+   10 most similar picture pairs (masked; z-avg), with ZL3b core tf-idf cosine and its percentile among all 2556 pairs:
+     x009   x038  pic z +2.51  core cos 0.625 (pct 0.80)  shared core types  27  same[HL  ] hands 1/1 quires A/D  top shared d f k doaiin y p
+     x002   x042  pic z +2.50  core cos 0.581 (pct 0.75)  shared core types  31  same[HL  ] hands 1/1 quires A/D  top shared d f p k feoaiin t
+     x008   x047  pic z +2.49  core cos 0.606 (pct 0.78)  shared core types  30  same[HL  ] hands 1/1 quires A/D  top shared p r t paaiin ol y
+     x021   x051  pic z +2.43  core cos 0.719 (pct 0.93)  shared core types  23  same[HL  ] hands 2/2 quires B/E  top shared t f d fe l ke
+     x006   x011  pic z +2.41  core cos 0.729 (pct 0.94)  shared core types  37  same[HQL ] hands 1/1 quires A/A  top shared d k t l aiin f
+
+====================================================================================================
+FIXTURE WORLD: NOLINK
+====================================================================================================
+[fixture] N pages = 72; pairs ALL = 2556, NOBIF = 2448; hand x quire strata = 6 (6 with >= 2 pages, 72 pages permutable)
+   covariates (share of ALL pairs): same hand 0.324, same quire 0.155, same bifolio 0.042, same language 0.549
+   ZL3b: segmenter prefixes 6 suffixes 15; tokens on scored pages 8695; core types 192
+   RF1b: segmenter prefixes 7 suffixes 17; tokens on scored pages 8695; core types 280
+   IT2a: segmenter prefixes 6 suffixes 19; tokens on scored pages 8695; core types 252
+
+   main table (partial Mantel r; one-sided stratified p, 10000 perms):
+   translit text    picture  variant        r        p  null mean  null q99 pairs
+   ZL3b   cores   masked   ALL     +0.0315   0.6166    +0.0402   +0.1059 2556
+   ZL3b   cores   masked   NOBIF   +0.0265   0.6840    +0.0404   +0.1072 2448
+   ZL3b   words   masked   ALL     +0.0402   0.7805    +0.0562   +0.1047 2556
+   ZL3b   words   masked   NOBIF   +0.0313   0.8144    +0.0504   +0.0992 2448
+   ZL3b   frames  masked   ALL     +0.0383   0.3682    +0.0303   +0.0897 2556
+   ZL3b   frames  masked   NOBIF   +0.0410   0.3794    +0.0332   +0.0942 2448
+   RF1b   cores   masked   ALL     +0.0287   0.6097    +0.0371   +0.1078 2556
+   RF1b   cores   masked   NOBIF   +0.0242   0.6540    +0.0365   +0.1089 2448
+   RF1b   words   masked   ALL     +0.0414   0.7345    +0.0543   +0.1018 2556
+   RF1b   words   masked   NOBIF   +0.0362   0.7344    +0.0493   +0.0975 2448
+   RF1b   frames  masked   ALL     +0.0468   0.2697    +0.0315   +0.0903 2556
+   RF1b   frames  masked   NOBIF   +0.0496   0.2871    +0.0350   +0.0963 2448
+   IT2a   cores   masked   ALL     +0.0347   0.5509    +0.0388   +0.1051 2556
+   IT2a   cores   masked   NOBIF   +0.0269   0.6458    +0.0382   +0.1062 2448
+   IT2a   words   masked   ALL     +0.0430   0.7300    +0.0560   +0.1046 2556
+   IT2a   words   masked   NOBIF   +0.0341   0.7729    +0.0500   +0.0988 2448
+   IT2a   frames  masked   ALL     +0.0352   0.3374    +0.0248   +0.0850 2556
+   IT2a   frames  masked   NOBIF   +0.0369   0.3692    +0.0281   +0.0906 2448
+   ZL3b   cores   text-in  ALL     +0.0026   0.6575    +0.0149   +0.0836 2556
+   ZL3b   cores   text-in  NOBIF   -0.0023   0.7147    +0.0150   +0.0856 2448
+   ZL3b   cores   dino     ALL     +0.0156   0.7593    +0.0385   +0.1140 2556
+   ZL3b   cores   dino     NOBIF   +0.0111   0.7994    +0.0391   +0.1155 2448
+   ZL3b   cores   siglip   ALL     +0.0458   0.4096    +0.0401   +0.1004 2556
+   ZL3b   cores   siglip   NOBIF   +0.0406   0.4842    +0.0398   +0.1010 2448
+   C+ groups (KMeans k=12 on masked embeddings): sizes [10, 10, 7, 6, 6, 6, 6, 5, 5, 4, 4, 3]
+   C+ s=0.05: detected (p<0.01) ALL 2/20, NOBIF 1/20; mean r ALL +0.0603 (min -0.0161), NOBIF +0.0618
+   C+ s=0.10: detected (p<0.01) ALL 15/20, NOBIF 15/20; mean r ALL +0.1184 (min +0.0371), NOBIF +0.1188
+   C+ s=0.20: detected (p<0.01) ALL 20/20, NOBIF 20/20; mean r ALL +0.2764 (min +0.2441), NOBIF +0.2725
+   C+ s=0.40: detected (p<0.01) ALL 20/20, NOBIF 20/20; mean r ALL +0.4959 (min +0.4566), NOBIF +0.4884
+   C- (derangement within hand x quire): reached p<0.01: ALL 0/20, NOBIF 0/20; mean r ALL +0.0292
+   controls: C+ (s=0.20) PASS (20/20 >= 18); C- PASS (0/20 <= 2)
+   minimum detectable effect (smallest s with >= 18/20, ALL): s = 0.20 (mean r there +0.2764)
+   fixture verdict: no picture link detected  (expected: no picture link detected)
+     - ZL3b cores r>0 & p<0.01 in ALL and NOBIF: False
+     - RF1b and IT2a cores r>0 in ALL and NOBIF: True
+     - ZL3b frames p>=0.01 in ALL and NOBIF: True
+     - ZL3b cores p>=0.05 in ALL and NOBIF: True
+   10 most similar picture pairs (masked; z-avg), with ZL3b core tf-idf cosine and its percentile among all 2556 pairs:
+     x009   x038  pic z +2.51  core cos 0.770 (pct 0.94)  shared core types  31  same[HL  ] hands 1/1 quires A/D  top shared d p k paaiin f doaiin
+     x002   x042  pic z +2.50  core cos 0.640 (pct 0.72)  shared core types  27  same[HL  ] hands 1/1 quires A/D  top shared d p f doaiin k l
+     x008   x047  pic z +2.49  core cos 0.711 (pct 0.82)  shared core types  28  same[HL  ] hands 1/1 quires A/D  top shared d p paaiin f ke r
+     x021   x051  pic z +2.43  core cos 0.677 (pct 0.76)  shared core types  25  same[HL  ] hands 2/2 quires B/E  top shared l t s f r ke
+     x006   x011  pic z +2.41  core cos 0.709 (pct 0.82)  shared core types  26  same[HQL ] hands 1/1 quires A/A  top shared d p t k doaiin s
+
+run end: Sun Oct 18 03:25:32 PDT 2026 (`date`); elapsed 109s

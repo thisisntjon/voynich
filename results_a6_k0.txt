@@ -1,0 +1,10 @@
+BPE merges=0: 24 distinct units in sample, 4.27 units/word
+Reference: genuine Caesar under Latin LM = -3.084 bits/char (ceiling)
+POS control (homophonic Latin, 21 syms): score -3.097, letter accuracy 100.0%
+    fines sequanorum ab helvetiis dividit milia passuum xviiii murum in altitudinem pedum
+VMS -> latin   : score -3.891  vs pseudo-VMS null -4.245±0.009
+     putia inur um unullo ater atemi antmra i nem atersi aemi antum
+VMS -> italian : score -3.856  vs pseudo-VMS null -4.449±0.118
+     reias aren en erette sion siona prinms a ron sionla sona prien
+VMS -> german  : score -4.147  vs pseudo-VMS null -4.436±0.060
+     oline nelt lt leleen erst erstn derthe n est ersten estn derlt

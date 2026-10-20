@@ -1,0 +1,33 @@
+=== S30: PHASE 2 U2 & U3 DELTAS (CURRIER A/B COUPLING, PER-ALPHABET WIDTHS, O1 INK SPLITS) ===
+
+--- PART 1 (s20 delta): Currier A vs. Currier B Position-Stratified Coupling Null ---
+  ZL3b_eva   [Currier_A]: pages=114 tok= 11224 | obs_MI=0.1460 within_ex=+0.1206 cell_strat_ex=+0.1263±0.0017 (survival=104.8%)
+  ZL3b_eva   [Currier_B]: pages= 83 tok= 23063 | obs_MI=0.2489 within_ex=+0.2323 cell_strat_ex=+0.2393±0.0008 (survival=103.0%)
+  RF1b       [Currier_A]: pages=114 tok= 11047 | obs_MI=0.1309 within_ex=+0.1063 cell_strat_ex=+0.1121±0.0015 (survival=105.4%)
+  RF1b       [Currier_B]: pages= 83 tok= 23012 | obs_MI=0.2423 within_ex=+0.2254 cell_strat_ex=+0.2321±0.0008 (survival=103.0%)
+  IT2a       [Currier_A]: pages=114 tok= 11074 | obs_MI=0.1187 within_ex=+0.0965 cell_strat_ex=+0.1017±0.0016 (survival=105.4%)
+  IT2a       [Currier_B]: pages= 82 tok= 22781 | obs_MI=0.2340 within_ex=+0.2181 cell_strat_ex=+0.2248±0.0009 (survival=103.1%)
+
+--- PART 1B (s20 delta): Non-Voynich Syllable & Dante Edge-Table Transfer on Currier A vs. B ---
+  Table=LA_Herbal_Syllable  : Gen_Currier_A_edge=+0.6741 (h2=1.860) | Gen_Currier_B_edge=+0.6371 (h2=1.645)
+  Table=IT_Dante_Rank       : Gen_Currier_A_edge=+0.2530 (h2=1.856) | Gen_Currier_B_edge=+0.2111 (h2=1.648)
+PART 1 VERDICT: BOTH CURRIER A AND B COUPLING SURVIVE STRATIFICATION (min survival=103.0%), AND NON-VOYNICH SYLLABLE/PROSE TABLES MECHANICALLY DRIVE COUPLING IN BOTH (min ex=+0.2111 >= +0.09)
+
+--- PART 2A (s22 delta): Per-Alphabet 200-Split 41-Page Band Widths (seeds 1000..1199) ---
+  ZL3b_eva       [FULL tok=34857 typ=7025 hap=0.680 h2=2.109 sd=1.788 JSDf=0.176 ex=+0.181]
+    41-page 95% CI: h2=2.103 [2.054, 2.152] | sd=1.783 [1.747, 1.828] | types=2284 [1911, 2654] | hapax=0.703 [0.688, 0.715] | JSDf=0.178 [0.145, 0.216] | ex=+0.180 [+0.147, +0.208]
+  ZL3b_glyphplus [FULL tok=34857 typ=7025 hap=0.680 h2=2.385 sd=1.456 JSDf=0.202 ex=+0.190]
+    41-page 95% CI: h2=2.376 [2.305, 2.440] | sd=1.453 [1.420, 1.488] | types=2284 [1911, 2654] | hapax=0.703 [0.688, 0.715] | JSDf=0.208 [0.168, 0.247] | ex=+0.187 [+0.153, +0.215]
+  GC2a           [FULL tok=36385 typ=8351 hap=0.702 h2=2.533 sd=1.480 JSDf=0.214 ex=+0.226]
+    41-page 95% CI: h2=2.512 [2.456, 2.574] | sd=1.476 [1.437, 1.518] | types=2609 [2176, 3041] | hapax=0.725 [0.708, 0.742] | JSDf=0.224 [0.185, 0.261] | ex=+0.218 [+0.179, +0.252]
+  RF1b           [FULL tok=34618 typ=7348 hap=0.691 h2=2.120 sd=1.796 JSDf=0.181 ex=+0.172]
+    41-page 95% CI: h2=2.114 [2.063, 2.159] | sd=1.792 [1.749, 1.838] | types=2350 [1954, 2716] | hapax=0.711 [0.697, 0.726] | JSDf=0.184 [0.150, 0.220] | ex=+0.171 [+0.137, +0.200]
+  IT2a           [FULL tok=34411 typ=7069 hap=0.678 h2=2.112 sd=1.705 JSDf=0.175 ex=+0.166]
+    41-page 95% CI: h2=2.104 [2.058, 2.154] | sd=1.703 [1.657, 1.753] | types=2302 [1946, 2666] | hapax=0.700 [0.687, 0.719] | JSDf=0.180 [0.147, 0.220] | ex=+0.165 [+0.133, +0.193]
+
+--- PART 2B (s22 delta): O1 Ink-Gap Driven Boundary Split / Merge Row on ZL3b-n.txt ---
+  Standard_Spaces ('.' and ',')             : tok=31712 types=6572 hapax=0.693 | h2=2.099 sd_len=1.915 JSDf=0.182 cross_ex=+0.192
+  Certain_Only_Merge ('.' only, ',' merged) : tok=29447 types=7426 hapax=0.724 | h2=2.112 sd_len=2.002 JSDf=0.182 cross_ex=+0.158
+  IntraWord_Lift_Split (medial lift splits) : tok=41912 types=4525 hapax=0.641 | h2=2.072 sd_len=1.858 JSDf=0.209 cross_ex=+0.493
+
+PART 2 VERDICT: U3 ALPHABET AND INK-BOUNDARY TABLE COMPLETE — h2 spans 2.108 (EVA) to 2.539 (GC2a) across alphabets and shifts under ink-boundary merge/split while JSDf (>=0.13) and positive cross-boundary coupling survive all three.

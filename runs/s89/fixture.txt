@@ -1,0 +1,9 @@
+S89 FIXTURE (synthetic only; no real data read)
+date: Sun Oct 18 06:40:12 PDT 2026 (`date`)  device: cuda (NVIDIA GeForce RTX 5080); below_normal=True
+s89_line_repetition_genres.py sha256=037282e31f57ce2c2091e8fbce5e7488ede231c715cf38c7e4c2d86caa5c305a  stub_match=False (mismatch: s89_line_repetition_genres.py; not in stub: -)
+fixture world: 1500 cores, 15 quires x 12 pages x 20 lines; FX_A 28821 tokens; planted {'alpha': 2.4, 'lam': 0.35, 'rho': 0.05, 'pen': 0.5, 'mix': 0.0}
+fixture target (FX_A): o100 +0.014 o200 +0.023 Rw1 1.824(p0.001) Rc1 0.897 loc 0.926; order bands K100 [-0.0154,+0.0439] K200 [-0.0077,+0.0539]; locality band [0.8918,0.9596]
+FX_prose: o100 +1.029 o200 +1.208 Rw1 0.720(p1.000) Rc1 0.526 loc 1.000 C1 nnYn -> not Voynich-like
+FXP planted in-line-repetition text FX_B: o100 +0.006 o200 +0.009 Rw1 1.853(p0.001) Rc1 0.731 loc 0.911 C1 YYYY -> (b) and (c) recovered: PASS
+FX2 prose not Voynich-like: PASS
+FIXTURE PASS   runtime 5s; finished Sun Oct 18 06:40:17 PDT 2026 (`date`)

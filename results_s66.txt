@@ -1,0 +1,138 @@
+s66 -- Scribal Self-Corrections, Quire/Bifolio Vocabulary Turnover & Producer Post-Mortem
+date: 2026-10-18T02:12:43
+sha256 s66_scribal_corrections_and_quire_seams.py: 5f02b376b3674ec71b8263291bcffb2f61a6d6e3b8963553f956d3126260f8cf
+sha256 s66_scribal_corrections_and_quire_seams.prereg.sha256: 04b9102056065f2eda61881aacd9e507c2c587711921178a0e12818e9628e612
+stub_match: True
+
+=== PART 1 (D-055 Rec 3): Forensic Catalog of 21 Scribal Corrections/Overwrites & [a:b] Alternations ===
+Total <!corr/erased/weirdo> token events in ZL3b-n.txt: 21
+ # Folio  Loc       Q  H  S  Slot     Tag            Clean        P|C|S (166p)     wCnt cCnt Prev       Next       Box [x,y,w,h]     
+ 1 f1v    7,+P0     A  1  H  line_end <!corr?>       lchiody      l|chi|ody           0    0 do         $          [57,675,45,24]    
+ 2 f16r   2,+P0     B  1  H  mid      <!corr?>       otey         ote|y|-            32 1418 ychykchy   kol        [126,57,42,30]    
+ 3 f19r   2,+P0     C  1  H  line_end <!corr?>       cho?         cho|?|-             0    0 ?          $          [480,36,33,21]    
+ 4 f27r   6,+P0     D  1  H  mid      <!corr?>       cholohaiin   cho|lohaiin|-       1    1 chor       shy        [303,222,60,15]   
+ 5 f39r   12,+P0    E  2  H  line_0   <!corr?>       tolchdaiin   t|olchdaiin|-       1    1 ^          chckhy     [45,240,87,21]    
+ 6 f42r   19,+P0    F  1  H  mid      <!corr?>       ck?hy        -|ck?|hy            0    0 sho        cty        [312,660,57,33]   
+ 7 f50v   8,+P0     G  2  H  line_end <!corr?>       qod          qo|d|-              3 2633 okain      $          [567,165,36,21]   
+ 8 f58v   3,+P0     H  3  S  mid      <!corr?>       sho?k??hy    sho|?k??|hy         0    0 qotain     qokeol     [186,111,30,21]   
+ 9 f67v2  4,+Pb     I  4  C  line_end <!corr?>       okor         ok|or|-            25  430 ar         $          [390,78,21,12]    
+10 f78r   29,+P0    M  2  B  line_end <!corr?>       ol           o|l|-             376 1406 chy        $          [456,600,24,12]   
+11 f79r   21,+P0    M  2  B  mid      <!corr?>       okaos        ok|ao|s             0    0 otshey     aiin       [258,384,60,27]   
+12 f85r1  13,+P0    N  2  T  mid      <!corr?>       daldy        -|dald|y           11   13 ol         shody      no_box            
+13 f86v6  20,+P0    N  2  T  line_0   <!corr?>       pdaiiiy      p|daiii|y           1    1 ^          otol       [21,408,54,36]    
+14 f87r   7,+P0     O  1  H  mid      <!corr?>       koo          k|o|o               1  547 shy        sols       [324,222,54,33]   
+15 f88v   20,+P0    O  1  P  line_0   <!corr?>       sqokeodaiin  -|sqokeodaiin|-     1    1 ^          cheody     [78,576,60,24]    
+16 f93v   6,+P0     Q  1  H  line_0   <!corr?>       ytch?l       yt|ch?l|-           0    0 ^          ckhol      [87,129,54,27]    
+17 f102v2 31,+P0    S  1  P  mid      <!corr?>       sheshe       she|she|-           1  146 eeos       oeeor      [309,567,45,21]   
+18 f107v  44,+P0    T  3  S  line_0   <!corr?>       kaich        k|aich|-            1    1 ^          o          [132,774,21,15]   
+19 f108r  43,+P0    T  3  S  line_end <!corr?>       cheam        che|am|-            5  126 qckhy      $          no_box            
+20 f112r  1,@P0     T  3  S  mid      <!corr?>       ykair        yk|air|-            6   77 qokeey     ?arally    [186,9,54,33]     
+21 f112r  1,@P0     T  3  S  line_end <!erased?>     chcphy       ch|cp|hy            9   33 aiin       $          [447,18,33,15]    
+Summary 1A: tags={'<!corr?>': 20, '<!erased?>': 1} | by_hand={'1': 9, '2': 6, '3': 5, '4': 1} | by_pos={'line_end': 7, 'mid': 9, 'line_0': 5} | non-erased tokens with attested 166p core: 15/21 (71.4%)
+
+Summary 1B: Inline [a:b] glyph-alternation occurrences in paragraph lines: 646
+  Slot localization of [a:b]: Core=301 (46.6%), Boundary_Shift(P/C/S)=258 (39.9%), Suffix=45 (7.0%), Prefix=42 (6.5%)
+  Lexical asymmetry (166p training): exactly one of (a,b) is attested training word = 312/646 (48.3%), both attested = 269/646 (41.6%), dominant variant >=5x rarer variant = 216/646 (33.4%), at least one core attested = 620/646 (96.0%)
+  Top 12 [a:b] glyph pairs: a/o:139, r/s:89, o/y:43, ch/ee:23, a/y:20, g/m:19, k/t:16, ?/y:12, ?/a:12, ?/o:11, ?/l:11, e/o:10
+
+=== PART 2: Quire/Bifolio Vocabulary Turnover (Dot 23) & Codicological Horizon of Rare-Core Families ===
+--- ZL3b (meta sha256=ce233477803a8653) ---
+  2A. Quire-Level Vocabulary Narrowness (Global Pool vs Quire Observed; explains s67 Dot 23):
+    Quire Pages Hand:Sec Tokens | ObsWord ExpW_Glob Glob/ObsW | ObsCore ExpC_Glob Glob/ObsC  HS/ObsC
+    A        16 H1:H       1520 |     743     762.4    1.026x |     295     277.1    0.939x   0.904x
+    B        14 H1:H       1041 |     478     580.2    1.214x |     202     215.0    1.065x   1.041x
+    C        16 H1:H       1431 |     668     729.6    1.092x |     249     265.6    1.067x   1.033x
+    D        16 H1:H       1272 |     649     671.8    1.035x |     246     245.5    0.998x   0.954x
+    E        16 H2:H       1556 |     698     777.0    1.113x |     255     280.7    1.101x   0.822x
+    F        16 H1:H       1708 |     850     827.0    0.973x |     308     300.6    0.976x   0.928x
+    G        16 H1:H       1521 |     757     764.2    1.010x |     274     276.7    1.010x   0.968x
+    H         6 H5:H       1290 |     741     678.5    0.916x |     291     250.0    0.859x   0.854x
+    I         7 H4:A        367 |     284     258.9    0.912x |     143     108.9    0.762x   0.765x
+    M        20 H2:B       6800 |    1487    2127.9    1.431x |     554     734.2    1.325x   1.325x
+    N         7 H2:T       1692 |     758     826.3    1.090x |     279     296.5    1.063x   0.703x
+    O        12 H1:H       1380 |     704     706.9    1.004x |     281     259.4    0.923x   0.885x
+    Q        10 H3:H        911 |     563     526.6    0.935x |     214     197.6    0.923x   0.933x
+    S        10 H1:P       1396 |     640     718.4    1.123x |     254     264.5    1.041x   0.829x
+    T        23 H3:S      10836 |    3055    2824.3    0.924x |     976     968.0    0.992x   0.762x
+    Mean across 15 quires: Global-pool draw over-produces word types by 1.053x and core types by 1.003x (within Hand+Sec draw over-produces cores by 0.914x; Quire M = 1.431x words / 1.325x cores).
+  2B. Size-Controlled (K=25 rare cores/page) Codicological Hierarchy Within (Hand, Section):
+    1_same_leaf_RV           (n_pairs=  64): exact_rare_share=0.1408 (1.003x vs diff_quire_HS) | edit1_rare_share=0.4747 (0.990x vs diff_quire_HS)
+    2_conjoint_bifolio       (n_pairs= 111): exact_rare_share=0.1325 (0.944x vs diff_quire_HS) | edit1_rare_share=0.4686 (0.978x vs diff_quire_HS)
+    3_same_quire_other_bif   (n_pairs= 445): exact_rare_share=0.1087 (0.774x vs diff_quire_HS) | edit1_rare_share=0.4365 (0.911x vs diff_quire_HS)
+    4_diff_quire_same_HS     (n_pairs=1141): exact_rare_share=0.1404 (1.000x vs diff_quire_HS) | edit1_rare_share=0.4792 (1.000x vs diff_quire_HS)
+    5_diff_hand_or_sec       (n_pairs=8109): exact_rare_share=0.0976 (0.695x vs diff_quire_HS) | edit1_rare_share=0.4088 (0.853x vs diff_quire_HS)
+  2C. Within-Page Edit-1 Rare-Core Pair Anatomy (n_pairs=6987, within_page_rate=0.664): Boundary_Bleed=49.5% (null 49.2%), Vowel/Minim=16.4% (null 15.1%), Cons/Gallows=34.1% (null 35.7%)
+
+--- RF1b (meta sha256=c7d9bccba99b2610) ---
+  2A. Quire-Level Vocabulary Narrowness (Global Pool vs Quire Observed; explains s67 Dot 23):
+    Quire Pages Hand:Sec Tokens | ObsWord ExpW_Glob Glob/ObsW | ObsCore ExpC_Glob Glob/ObsC  HS/ObsC
+    A        16 H1:H       1469 |     765     759.1    0.992x |     312     277.1    0.888x   0.912x
+    B        14 H1:H        990 |     496     564.2    1.137x |     224     212.6    0.949x   0.985x
+    C        16 H1:H       1394 |     693     730.3    1.054x |     271     268.6    0.991x   1.007x
+    D        16 H1:H       1238 |     669     672.9    1.006x |     258     249.6    0.968x   0.984x
+    E        16 H2:H       1509 |     725     775.1    1.069x |     269     282.3    1.050x   0.793x
+    F        16 H1:H       1688 |     870     839.8    0.965x |     317     302.4    0.954x   0.969x
+    G        16 H1:H       1478 |     782     763.0    0.976x |     299     279.2    0.934x   0.948x
+    H         6 H5:H       1272 |     758     685.6    0.904x |     284     254.8    0.897x   0.885x
+    I         7 H4:A        359 |     288     259.8    0.902x |     137     111.1    0.811x   0.803x
+    M        20 H2:B       6834 |    1503    2205.2    1.467x |     543     765.4    1.410x   1.409x
+    N         7 H2:T       1703 |     774     843.8    1.090x |     284     306.7    1.080x   0.696x
+    O        12 H1:H       1396 |     699     731.3    1.046x |     274     267.1    0.975x   0.997x
+    Q        10 H3:H        930 |     569     542.8    0.954x |     211     206.2    0.977x   0.966x
+    S        10 H1:P       1431 |     658     744.0    1.131x |     264     271.3    1.028x   0.805x
+    T        23 H3:S      10793 |    3168    2934.3    0.926x |    1032    1008.8    0.977x   0.752x
+    Mean across 15 quires: Global-pool draw over-produces word types by 1.041x and core types by 0.993x (within Hand+Sec draw over-produces cores by 0.928x; Quire M = 1.467x words / 1.410x cores).
+  2B. Size-Controlled (K=25 rare cores/page) Codicological Hierarchy Within (Hand, Section):
+    1_same_leaf_RV           (n_pairs=  63): exact_rare_share=0.1384 (0.994x vs diff_quire_HS) | edit1_rare_share=0.4683 (1.006x vs diff_quire_HS)
+    2_conjoint_bifolio       (n_pairs= 112): exact_rare_share=0.1346 (0.966x vs diff_quire_HS) | edit1_rare_share=0.4686 (1.007x vs diff_quire_HS)
+    3_same_quire_other_bif   (n_pairs= 474): exact_rare_share=0.1087 (0.781x vs diff_quire_HS) | edit1_rare_share=0.4290 (0.922x vs diff_quire_HS)
+    4_diff_quire_same_HS     (n_pairs=1369): exact_rare_share=0.1392 (1.000x vs diff_quire_HS) | edit1_rare_share=0.4654 (1.000x vs diff_quire_HS)
+    5_diff_hand_or_sec       (n_pairs=8713): exact_rare_share=0.0981 (0.704x vs diff_quire_HS) | edit1_rare_share=0.4061 (0.873x vs diff_quire_HS)
+  2C. Within-Page Edit-1 Rare-Core Pair Anatomy (n_pairs=7013, within_page_rate=0.647): Boundary_Bleed=49.3% (null 48.6%), Vowel/Minim=16.0% (null 16.1%), Cons/Gallows=34.6% (null 35.4%)
+
+--- IT2a (meta sha256=0d0d3e758d1e308b) ---
+  2A. Quire-Level Vocabulary Narrowness (Global Pool vs Quire Observed; explains s67 Dot 23):
+    Quire Pages Hand:Sec Tokens | ObsWord ExpW_Glob Glob/ObsW | ObsCore ExpC_Glob Glob/ObsC  HS/ObsC
+    A        16 H1:H       1495 |     741     769.5    1.038x |     285     281.8    0.989x   0.953x
+    B        14 H1:H       1019 |     477     577.5    1.211x |     211     219.0    1.038x   0.999x
+    C        16 H1:H       1401 |     681     731.8    1.075x |     268     270.9    1.011x   0.948x
+    D        16 H1:H       1251 |     655     671.5    1.025x |     260     252.3    0.970x   0.921x
+    E        16 H2:H       1522 |     720     776.5    1.078x |     260     284.0    1.092x   0.867x
+    F        16 H1:H       1711 |     847     843.6    0.996x |     307     308.7    1.006x   0.942x
+    G        16 H1:H       1497 |     766     769.9    1.005x |     285     282.7    0.992x   0.949x
+    H         6 H5:H       1271 |     753     681.0    0.904x |     310     254.4    0.821x   0.832x
+    I         7 H4:A        353 |     285     252.9    0.887x |     146     108.7    0.744x   0.745x
+    M        20 H2:B       6773 |    1491    2162.0    1.450x |     559     760.4    1.360x   1.353x
+    N         6 H2:T       1624 |     749     813.5    1.086x |     294     299.3    1.018x   0.707x
+    O        12 H1:H       1384 |     699     725.8    1.038x |     271     267.0    0.985x   0.942x
+    Q        10 H3:H        932 |     556     542.2    0.975x |     204     207.0    1.015x   1.012x
+    S        10 H1:P       1369 |     640     721.5    1.127x |     263     269.9    1.026x   0.805x
+    T        23 H3:S      10673 |    3093    2864.4    0.926x |    1027    1005.1    0.979x   0.759x
+    Mean across 15 quires: Global-pool draw over-produces word types by 1.055x and core types by 1.003x (within Hand+Sec draw over-produces cores by 0.916x; Quire M = 1.450x words / 1.360x cores).
+  2B. Size-Controlled (K=25 rare cores/page) Codicological Hierarchy Within (Hand, Section):
+    1_same_leaf_RV           (n_pairs=  59): exact_rare_share=0.1339 (0.995x vs diff_quire_HS) | edit1_rare_share=0.4617 (1.033x vs diff_quire_HS)
+    2_conjoint_bifolio       (n_pairs= 107): exact_rare_share=0.1307 (0.972x vs diff_quire_HS) | edit1_rare_share=0.4633 (1.036x vs diff_quire_HS)
+    3_same_quire_other_bif   (n_pairs= 453): exact_rare_share=0.1085 (0.807x vs diff_quire_HS) | edit1_rare_share=0.4397 (0.984x vs diff_quire_HS)
+    4_diff_quire_same_HS     (n_pairs=1112): exact_rare_share=0.1346 (1.000x vs diff_quire_HS) | edit1_rare_share=0.4471 (1.000x vs diff_quire_HS)
+    5_diff_hand_or_sec       (n_pairs=8139): exact_rare_share=0.0970 (0.721x vs diff_quire_HS) | edit1_rare_share=0.4036 (0.903x vs diff_quire_HS)
+  2C. Within-Page Edit-1 Rare-Core Pair Anatomy (n_pairs=6995, within_page_rate=0.657): Boundary_Bleed=42.0% (null 37.4%), Vowel/Minim=17.1% (null 18.3%), Cons/Gallows=40.9% (null 44.3%)
+
+=== PART 3 (D-056): Mechanistic Post-Mortem of s57, s58, s61 Sidecars & s67 Prefix-Order Gap ===
+Text / Model       | HO_Types OOV_Word%   H_uni H_char3  CHARWIN | dCov(w,w) dCov(A,A) dCov(C,C) dCov(A,C) dCov(C,A) Cov(A_t,C_t)
+ZL3b:Real_HO       |     2535    14.26%  11.632  11.151  +0.4804 |   +0.2983   +0.1080   +0.0163   +0.0448   +0.1293      -0.5515
+ZL3b:s57_copy_vary |     2297     7.39%  12.208  12.564  -0.3566 |   +0.0538   +0.0192   +0.0174   -0.0087   +0.0260      -0.5957
+ZL3b:s58_affix_wrap |     3428    60.60%  22.390  20.708  +1.6817 |   +0.2159   +0.1186   +0.0493   +0.0249   +0.0231      +0.1035
+ZL3b:s61_joint_JW  |     2308     8.88%  12.307  12.530  -0.2235 |   +0.1683   +0.0642   +0.0404   +0.0187   +0.0450      -0.5612
+  [ZL3b Prefix-Order Decomposition on 41 Held-Out Pages (n=8586)]: H(P_t)=4.3506b | lag1_prefix_gain=+0.1574b | s67_pos_prevS_gain=+0.2305b | joint(pos,P_{t-1},S_{t-1})_gain=+0.1885b | direct CMI I(P_t; P_{t-1} | pos, S_{t-1})=-0.0420b | page_prefix_regime_gain=+0.2193b
+RF1b:Real_HO       |     2576    14.49%  11.671  11.185  +0.4861 |   +0.2989   +0.1012   +0.0155   +0.0474   +0.1348      -0.5472
+RF1b:s57_copy_vary |     2403     7.15%  12.352  12.808  -0.4552 |   +0.0283   +0.0358   +0.0048   -0.0459   +0.0335      -0.6983
+RF1b:s58_affix_wrap |     3454    61.80%  22.379  20.746  +1.6326 |   +0.2294   +0.1007   +0.0935   +0.0261   +0.0091      +0.1034
+RF1b:s61_joint_JW  |     2429    11.12%  12.884  13.112  -0.2279 |   +0.0772   +0.0401   +0.0020   +0.0433   -0.0082      -0.5318
+  [RF1b Prefix-Order Decomposition on 41 Held-Out Pages (n=8604)]: H(P_t)=4.3922b | lag1_prefix_gain=+0.1543b | s67_pos_prevS_gain=+0.2299b | joint(pos,P_{t-1},S_{t-1})_gain=+0.1778b | direct CMI I(P_t; P_{t-1} | pos, S_{t-1})=-0.0521b | page_prefix_regime_gain=+0.2200b
+IT2a:Real_HO       |     2478    13.73%  11.570  11.107  +0.4626 |   +0.2705   +0.0821   +0.0390   +0.0594   +0.0901      -0.6327
+IT2a:s57_copy_vary |     2311     7.95%  12.567  12.932  -0.3655 |   +0.0566   +0.0266   +0.0749   +0.0049   -0.0497      -0.8417
+IT2a:s58_affix_wrap |     3362    61.94%  22.721  21.031  +1.6892 |   +0.1587   +0.1017   +0.0220   -0.0155   +0.0506      +0.0925
+IT2a:s61_joint_JW  |     2316    10.81%  12.737  12.941  -0.2035 |   +0.1030   +0.0405   +0.0210   +0.0208   +0.0207      -0.6191
+  [IT2a Prefix-Order Decomposition on 41 Held-Out Pages (n=8411)]: H(P_t)=4.1902b | lag1_prefix_gain=+0.1488b | s67_pos_prevS_gain=+0.2259b | joint(pos,P_{t-1},S_{t-1})_gain=+0.1998b | direct CMI I(P_t; P_{t-1} | pos, S_{t-1})=-0.0260b | page_prefix_regime_gain=+0.2210b
+
+elapsed: 20.0 s

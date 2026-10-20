@@ -1,0 +1,54 @@
+# PREREG-v2 score: nomen_numeric_sylls  family=C  run=2026-10-17 19:42 (system clock)  seed=20261017
+# source: data/controls_synthetic/nomen_numeric_sylls.meta.json
+# data/controls_synthetic/nomen_numeric_sylls.meta.json; 35007 tokens full
+# v1 bands: scoreboard/score.py via path + g0 band checks; extras: scoreboard/metrics_new.py; sample cap 25000 (non-Voynich)
+# pages=169 lines=3368 tokens=25003 types=6560 sections=['macer:I.  Artemisia', 'macer:II.  Abrotanum', 'macer:III.  Absinthium', 'macer:IV.  Urtica', 'macer:IX.  Althaea', 'macer:L.  Barrocus', 'macer:LI.  Senecion', 'macer:LII.  Chelidonia'] hands=1 langs=['?']
+
+    v1 0.8s
+    extra 4.8s
+    info 2.1s
+    lex 4.3s
+    slot 0.4s
+    bake 8.7s
+
+# ranges: results_m4_phase1_board.json (run 2026-10-17 16:52); X range absent -> X printed NA
+=== v1 seven bands (frozen; PREREG v1 thresholds) ===
+band                      value           band   ok    L    C    G
+h2                       3.6475      1.98-2.28   --  OUT   IN  OUT
+sd_len                   2.2750      1.41-2.11   --   IN   IN   IN
+jsd_first_fg             0.0131         >=0.10   --  OUT   IN   IN
+p_init_enrich               nan           >=x8   ok   NA   NA   NA
+m_final_enrich              nan           >=x8   ok   NA   NA   NA
+cross_excess_eva         0.0091        >=+0.09   --  OUT   IN   IN
+redup_pct                0.0000       0.4-1.8%   --   IN   IN  OUT
+v1 joint: FAIL  missed: h2,sd_len,jsd_first_fg,cross_excess_eva,redup_pct
+
+=== v2 extras (metrics_new) ===
+metric                            value      class    L    C    G  tightLCG ovl
+x_edge_mi_word                   0.0101   WEIGHTED  OUT   IN   IN       .tt  no
+types_25k                     6560.0000  WEIGHTED*   IN   IN   IN       ...  no
+x_position_entropy               2.1713   WEIGHTED   IN   IN  OUT       t.t  no
+x_ltr_minus_rtl                 -0.0021   WEIGHTED   IN   IN  OUT       t.t  no
+x_moran_I                       -0.0427   WEIGHTED   IN   IN  OUT       .tt yes
+lex_beta                         0.7575   WEIGHTED   IN   IN   IN       .t. yes
+lex_rate_late_early              0.5120   WEIGHTED   IN   IN   IN       tt. yes
+lex_edit1_excess                 0.0026   WEIGHTED   IN   IN   IN       ttt yes
+slot_occupancy_pc                0.0296   WEIGHTED   IN   IN  OUT       ttt yes
+slot_table_likeness              0.7499   WEIGHTED   IN   IN   IN       .tt yes
+slot_core_crowding               0.7237   WEIGHTED   IN   IN   IN       ttt yes
+info_mi_adjacent                 0.3567   WEIGHTED   IN   IN   IN       .tt yes
+info_samecol_minus_othercol     -0.0145   WEIGHTED   IN   IN  OUT       ttt yes
+bake_char3_minus_unigram         1.2930   WEIGHTED   IN   IN  OUT       ... yes
+x_hapax_10k                      0.5880     REPORT   IN   IN   IN       .t. yes
+info_mi_page                     0.0082     REPORT   IN   IN   IN       ttt yes
+info_bpe_adjacent                0.4345     REPORT   NA   NA   NA       ...  no
+bake_winner: unigram_gt  bake bits: markov2=19.392 markov3=15.601 slot=15.388 unigram_gt=14.308 copy0.3+markov3=15.986 copy0.1+markov3=15.684 copy0.05+markov3=15.625
+
+=== per-family in/out (weighted metrics = v1 bands + WEIGHTED extras, minus the ranges file's no-weight list) ===
+  L: in= 4 out= 4 na= 2  out: h2, jsd_first_fg, cross_excess_eva, x_edge_mi_word  | tight-outs (2): h2, jsd_first_fg
+  C: in= 8 out= 0 na= 2  out: -  | tight-outs (0): -
+  G: in= 4 out= 4 na= 2  out: h2, redup_pct, x_position_entropy, x_ltr_minus_rtl  | tight-outs (3): h2, x_position_entropy, x_ltr_minus_rtl
+  weighted metrics (10): h2, jsd_first_fg, p_init_enrich, m_final_enrich, cross_excess_eva, redup_pct, x_edge_mi_word, types_25k, x_position_entropy, x_ltr_minus_rtl
+  (kill = >=3 weighted outs on tight ranges; favoured = fewest outs by >=2; both need the A/B rule of PREREG-v2 §6)
+
+provenance sha256[:16]: {'score.py': '3a7b7c3efea13b88', 'metrics_new.py': 'a59c9c17f8abe4cc', 'run_v2.py': '7dfdc9f75de5980a'}

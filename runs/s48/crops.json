@@ -1,0 +1,12777 @@
+{
+ "params": {
+  "WORK_H": 1000,
+  "PAINT_DS": 0.1,
+  "INK_DV": 0.3,
+  "V_MIN": 0.18,
+  "CLOSE": 15,
+  "HERB_KEEP": 0.05,
+  "TEXT_PAD": 0.25,
+  "DAB": 10.0,
+  "OPEN": 5,
+  "DIL": 15,
+  "MAX_FRAC": 0.85,
+  "EDGE": 0.06,
+  "MIN_AREA": 0.002,
+  "MIN_SIDE": 0.035,
+  "JAR_ASPECT": 1.6,
+  "JAR_H": 0.12,
+  "JAR_ASPECT_EDGE": 1.2,
+  "JAR_EDGE": 0.2,
+  "CROP_SAVE_MAX": 512,
+  "EMB_SIZE": 224
+ },
+ "panels": {
+  "160_88r.jpg": [
+   [
+    "f88r",
+    0.0,
+    1.0,
+    "P"
+   ]
+  ],
+  "161_88v_and_89r.jpg": [
+   [
+    "f88v",
+    0.05,
+    0.31,
+    "P"
+   ],
+   [
+    "f89r1",
+    0.31,
+    0.58,
+    "P"
+   ],
+   [
+    "f89r2",
+    0.58,
+    0.99,
+    "P"
+   ]
+  ],
+  "162_89v_part.jpg": [
+   [
+    "f89v2",
+    0.04,
+    0.95,
+    "P"
+   ]
+  ],
+  "163_89v_part_and_90r.jpg": [
+   [
+    "f89v1",
+    0.08,
+    0.385,
+    "P"
+   ],
+   [
+    "f90v2",
+    0.385,
+    0.69,
+    "H"
+   ],
+   [
+    "f90r2",
+    0.69,
+    0.98,
+    "H"
+   ]
+  ],
+  "164_90r.jpg": [
+   [
+    "f90r1",
+    0.04,
+    0.97,
+    "H"
+   ]
+  ],
+  "165_90v_part.jpg": [
+   [
+    "f90v1",
+    0.06,
+    0.97,
+    "H"
+   ]
+  ],
+  "174_99r.jpg": [
+   [
+    "f99r",
+    0.0,
+    1.0,
+    "P"
+   ]
+  ],
+  "175_99v.jpg": [
+   [
+    "f99v",
+    0.0,
+    1.0,
+    "P"
+   ]
+  ],
+  "176_100r.jpg": [
+   [
+    "f100r",
+    0.0,
+    1.0,
+    "P"
+   ]
+  ],
+  "177_100v_and_101r.jpg": [
+   [
+    "f100v",
+    0.08,
+    0.39,
+    "P"
+   ],
+   [
+    "f101r",
+    0.39,
+    0.98,
+    "P"
+   ]
+  ],
+  "178_101v_part.jpg": [
+   [
+    "f101v",
+    0.0,
+    1.0,
+    "P"
+   ]
+  ],
+  "179_101v_part_and_102r.jpg": [
+   [
+    "f101v",
+    0.04,
+    0.35,
+    "P"
+   ],
+   [
+    "f102r1",
+    0.35,
+    0.645,
+    "P"
+   ],
+   [
+    "f102r2",
+    0.645,
+    0.99,
+    "P"
+   ]
+  ],
+  "180_102v_part.jpg": [
+   [
+    "f102v2",
+    0.05,
+    0.97,
+    "P"
+   ]
+  ],
+  "181_102v_part.jpg": [
+   [
+    "f102v1",
+    0.0,
+    1.0,
+    "P"
+   ]
+  ]
+ },
+ "herbal_without_canvas": [
+  "f65r",
+  "f94v",
+  "f95r1",
+  "f95r2",
+  "f95v1",
+  "f95v2"
+ ],
+ "n_herbal": 123,
+ "n_pharma": 405,
+ "crops": [
+  {
+   "crop": "H_f10r",
+   "page": "f10r",
+   "kind": "herbal",
+   "canvas": "020_10r.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    378,
+    1068,
+    1967,
+    2281
+   ],
+   "n_components": 10,
+   "parch": [
+    199,
+    179,
+    159
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f10v",
+   "page": "f10v",
+   "kind": "herbal",
+   "canvas": "021_10v.jpg",
+   "n_text_lines_removed": 7,
+   "bbox_canvas": [
+    89,
+    1338,
+    2589,
+    2371
+   ],
+   "n_components": 4,
+   "parch": [
+    199,
+    180,
+    161
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f11r",
+   "page": "f11r",
+   "kind": "herbal",
+   "canvas": "022_11r.jpg",
+   "n_text_lines_removed": 9,
+   "bbox_canvas": [
+    103,
+    68,
+    2475,
+    3582
+   ],
+   "n_components": 23,
+   "parch": [
+    199,
+    180,
+    161
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f11v",
+   "page": "f11v",
+   "kind": "herbal",
+   "canvas": "023_11v.jpg",
+   "n_text_lines_removed": 7,
+   "bbox_canvas": [
+    1164,
+    209,
+    1515,
+    1672
+   ],
+   "n_components": 1,
+   "parch": [
+    198,
+    178,
+    158
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f13r",
+   "page": "f13r",
+   "kind": "herbal",
+   "canvas": "024_13r.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    421,
+    1414,
+    1932,
+    2225
+   ],
+   "n_components": 3,
+   "parch": [
+    196,
+    177,
+    159
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f13v",
+   "page": "f13v",
+   "kind": "herbal",
+   "canvas": "025_13v.jpg",
+   "n_text_lines_removed": 10,
+   "bbox_canvas": [
+    72,
+    60,
+    2497,
+    3635
+   ],
+   "n_components": 9,
+   "parch": [
+    197,
+    178,
+    161
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f14r",
+   "page": "f14r",
+   "kind": "herbal",
+   "canvas": "026_14r.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    82,
+    531,
+    2399,
+    3111
+   ],
+   "n_components": 7,
+   "parch": [
+    197,
+    178,
+    161
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f14v",
+   "page": "f14v",
+   "kind": "herbal",
+   "canvas": "027_14v.jpg",
+   "n_text_lines_removed": 10,
+   "bbox_canvas": [
+    153,
+    56,
+    2577,
+    3529
+   ],
+   "n_components": 6,
+   "parch": [
+    198,
+    180,
+    162
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f15r",
+   "page": "f15r",
+   "kind": "herbal",
+   "canvas": "028_15r.jpg",
+   "n_text_lines_removed": 15,
+   "bbox_canvas": [
+    71,
+    68,
+    2489,
+    3586
+   ],
+   "n_components": 11,
+   "parch": [
+    200,
+    183,
+    166
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f15v",
+   "page": "f15v",
+   "kind": "herbal",
+   "canvas": "029_15v.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    70,
+    272,
+    2663,
+    3447
+   ],
+   "n_components": 4,
+   "parch": [
+    200,
+    181,
+    162
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f16r",
+   "page": "f16r",
+   "kind": "herbal",
+   "canvas": "030_16r.jpg",
+   "n_text_lines_removed": 15,
+   "bbox_canvas": [
+    951,
+    683,
+    1619,
+    2179
+   ],
+   "n_components": 1,
+   "parch": [
+    199,
+    181,
+    164
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f16v",
+   "page": "f16v",
+   "kind": "herbal",
+   "canvas": "031_16v.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    1136,
+    277,
+    1615,
+    3344
+   ],
+   "n_components": 5,
+   "parch": [
+    198,
+    179,
+    160
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f17r",
+   "page": "f17r",
+   "kind": "herbal",
+   "canvas": "032_17r.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    100,
+    75,
+    2459,
+    3590
+   ],
+   "n_components": 21,
+   "parch": [
+    201,
+    181,
+    160
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f17v",
+   "page": "f17v",
+   "kind": "herbal",
+   "canvas": "033_17v.jpg",
+   "n_text_lines_removed": 24,
+   "bbox_canvas": [
+    425,
+    107,
+    2271,
+    3594
+   ],
+   "n_components": 9,
+   "parch": [
+    198,
+    180,
+    161
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f18r",
+   "page": "f18r",
+   "kind": "herbal",
+   "canvas": "034_18r.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    1070,
+    75,
+    1418,
+    3400
+   ],
+   "n_components": 4,
+   "parch": [
+    201,
+    183,
+    163
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f18v",
+   "page": "f18v",
+   "kind": "herbal",
+   "canvas": "035_18v.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    480,
+    928,
+    2053,
+    2765
+   ],
+   "n_components": 4,
+   "parch": [
+    199,
+    179,
+    159
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f19r",
+   "page": "f19r",
+   "kind": "herbal",
+   "canvas": "036_19r.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    151,
+    75,
+    2352,
+    3594
+   ],
+   "n_components": 10,
+   "parch": [
+    200,
+    180,
+    160
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f19v",
+   "page": "f19v",
+   "kind": "herbal",
+   "canvas": "037_19v.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    70,
+    572,
+    2684,
+    3123
+   ],
+   "n_components": 6,
+   "parch": [
+    201,
+    181,
+    162
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f1v",
+   "page": "f1v",
+   "kind": "herbal",
+   "canvas": "003_1v.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    504,
+    585,
+    2128,
+    1897
+   ],
+   "n_components": 4,
+   "parch": [
+    191,
+    166,
+    141
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f20r",
+   "page": "f20r",
+   "kind": "herbal",
+   "canvas": "038_20r.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    370,
+    73,
+    2127,
+    3599
+   ],
+   "n_components": 8,
+   "parch": [
+    204,
+    184,
+    165
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f20v",
+   "page": "f20v",
+   "kind": "herbal",
+   "canvas": "039_20v.jpg",
+   "n_text_lines_removed": 11,
+   "bbox_canvas": [
+    84,
+    121,
+    2622,
+    3583
+   ],
+   "n_components": 21,
+   "parch": [
+    206,
+    187,
+    166
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f21r",
+   "page": "f21r",
+   "kind": "herbal",
+   "canvas": "040_21r.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    243,
+    79,
+    1998,
+    3265
+   ],
+   "n_components": 9,
+   "parch": [
+    200,
+    181,
+    163
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f21v",
+   "page": "f21v",
+   "kind": "herbal",
+   "canvas": "041_21v.jpg",
+   "n_text_lines_removed": 11,
+   "bbox_canvas": [
+    88,
+    94,
+    2657,
+    3609
+   ],
+   "n_components": 24,
+   "parch": [
+    204,
+    185,
+    166
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f22r",
+   "page": "f22r",
+   "kind": "herbal",
+   "canvas": "042_22r.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    50,
+    81,
+    2282,
+    3577
+   ],
+   "n_components": 13,
+   "parch": [
+    200,
+    182,
+    164
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f22v",
+   "page": "f22v",
+   "kind": "herbal",
+   "canvas": "043_22v.jpg",
+   "n_text_lines_removed": 17,
+   "bbox_canvas": [
+    81,
+    106,
+    2657,
+    3624
+   ],
+   "n_components": 12,
+   "parch": [
+    201,
+    183,
+    167
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f23r",
+   "page": "f23r",
+   "kind": "herbal",
+   "canvas": "044_23r.jpg",
+   "n_text_lines_removed": 16,
+   "bbox_canvas": [
+    231,
+    71,
+    2174,
+    3564
+   ],
+   "n_components": 17,
+   "parch": [
+    202,
+    184,
+    165
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f23v",
+   "page": "f23v",
+   "kind": "herbal",
+   "canvas": "045_23v.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    100,
+    60,
+    2544,
+    3661
+   ],
+   "n_components": 8,
+   "parch": [
+    203,
+    185,
+    169
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f24r",
+   "page": "f24r",
+   "kind": "herbal",
+   "canvas": "046_24r.jpg",
+   "n_text_lines_removed": 21,
+   "bbox_canvas": [
+    149,
+    85,
+    2378,
+    3559
+   ],
+   "n_components": 9,
+   "parch": [
+    199,
+    182,
+    166
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f24v",
+   "page": "f24v",
+   "kind": "herbal",
+   "canvas": "047_24v.jpg",
+   "n_text_lines_removed": 16,
+   "bbox_canvas": [
+    476,
+    80,
+    2386,
+    3634
+   ],
+   "n_components": 15,
+   "parch": [
+    202,
+    183,
+    165
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f25r",
+   "page": "f25r",
+   "kind": "herbal",
+   "canvas": "048_25r.jpg",
+   "n_text_lines_removed": 7,
+   "bbox_canvas": [
+    435,
+    79,
+    2135,
+    3601
+   ],
+   "n_components": 4,
+   "parch": [
+    205,
+    188,
+    172
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f25v",
+   "page": "f25v",
+   "kind": "herbal",
+   "canvas": "049_25v.jpg",
+   "n_text_lines_removed": 7,
+   "bbox_canvas": [
+    77,
+    735,
+    2702,
+    2979
+   ],
+   "n_components": 3,
+   "parch": [
+    199,
+    181,
+    163
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f26r",
+   "page": "f26r",
+   "kind": "herbal",
+   "canvas": "050_26r.jpg",
+   "n_text_lines_removed": 10,
+   "bbox_canvas": [
+    742,
+    228,
+    1301,
+    3143
+   ],
+   "n_components": 9,
+   "parch": [
+    206,
+    189,
+    173
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f26v",
+   "page": "f26v",
+   "kind": "herbal",
+   "canvas": "051_26v.jpg",
+   "n_text_lines_removed": 9,
+   "bbox_canvas": [
+    446,
+    84,
+    2275,
+    3635
+   ],
+   "n_components": 5,
+   "parch": [
+    204,
+    187,
+    170
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f27r",
+   "page": "f27r",
+   "kind": "herbal",
+   "canvas": "052_27r.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    882,
+    814,
+    1688,
+    2872
+   ],
+   "n_components": 3,
+   "parch": [
+    203,
+    187,
+    171
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f27v",
+   "page": "f27v",
+   "kind": "herbal",
+   "canvas": "053_27v.jpg",
+   "n_text_lines_removed": 10,
+   "bbox_canvas": [
+    93,
+    74,
+    2673,
+    3627
+   ],
+   "n_components": 14,
+   "parch": [
+    202,
+    184,
+    167
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f28r",
+   "page": "f28r",
+   "kind": "herbal",
+   "canvas": "054_28r.jpg",
+   "n_text_lines_removed": 10,
+   "bbox_canvas": [
+    564,
+    88,
+    2023,
+    3594
+   ],
+   "n_components": 5,
+   "parch": [
+    200,
+    180,
+    161
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f28v",
+   "page": "f28v",
+   "kind": "herbal",
+   "canvas": "055_28v.jpg",
+   "n_text_lines_removed": 10,
+   "bbox_canvas": [
+    223,
+    1036,
+    2558,
+    2668
+   ],
+   "n_components": 13,
+   "parch": [
+    197,
+    176,
+    154
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f29r",
+   "page": "f29r",
+   "kind": "herbal",
+   "canvas": "056_29r.jpg",
+   "n_text_lines_removed": 10,
+   "bbox_canvas": [
+    903,
+    85,
+    1645,
+    2553
+   ],
+   "n_components": 2,
+   "parch": [
+    198,
+    178,
+    159
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f29v",
+   "page": "f29v",
+   "kind": "herbal",
+   "canvas": "057_29v.jpg",
+   "n_text_lines_removed": 16,
+   "bbox_canvas": [
+    91,
+    84,
+    2624,
+    3610
+   ],
+   "n_components": 13,
+   "parch": [
+    199,
+    181,
+    161
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f2r",
+   "page": "f2r",
+   "kind": "herbal",
+   "canvas": "004_2r.jpg",
+   "n_text_lines_removed": 16,
+   "bbox_canvas": [
+    516,
+    995,
+    1876,
+    2683
+   ],
+   "n_components": 9,
+   "parch": [
+    190,
+    170,
+    148
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f2v",
+   "page": "f2v",
+   "kind": "herbal",
+   "canvas": "005_2v.jpg",
+   "n_text_lines_removed": 8,
+   "bbox_canvas": [
+    961,
+    1027,
+    1435,
+    1446
+   ],
+   "n_components": 1,
+   "parch": [
+    187,
+    166,
+    143
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f30r",
+   "page": "f30r",
+   "kind": "herbal",
+   "canvas": "058_30r.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    658,
+    79,
+    1936,
+    3580
+   ],
+   "n_components": 7,
+   "parch": [
+    201,
+    183,
+    166
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f30v",
+   "page": "f30v",
+   "kind": "herbal",
+   "canvas": "059_30v.jpg",
+   "n_text_lines_removed": 11,
+   "bbox_canvas": [
+    75,
+    66,
+    2704,
+    2646
+   ],
+   "n_components": 5,
+   "parch": [
+    205,
+    188,
+    173
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f31r",
+   "page": "f31r",
+   "kind": "herbal",
+   "canvas": "060_31r.jpg",
+   "n_text_lines_removed": 16,
+   "bbox_canvas": [
+    78,
+    95,
+    2443,
+    1549
+   ],
+   "n_components": 5,
+   "parch": [
+    201,
+    185,
+    169
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f31v",
+   "page": "f31v",
+   "kind": "herbal",
+   "canvas": "061_31v.jpg",
+   "n_text_lines_removed": 11,
+   "bbox_canvas": [
+    74,
+    86,
+    2704,
+    3619
+   ],
+   "n_components": 4,
+   "parch": [
+    203,
+    186,
+    169
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f32r",
+   "page": "f32r",
+   "kind": "herbal",
+   "canvas": "062_32r.jpg",
+   "n_text_lines_removed": 19,
+   "bbox_canvas": [
+    625,
+    88,
+    1911,
+    3572
+   ],
+   "n_components": 13,
+   "parch": [
+    201,
+    184,
+    167
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f32v",
+   "page": "f32v",
+   "kind": "herbal",
+   "canvas": "063_32v.jpg",
+   "n_text_lines_removed": 11,
+   "bbox_canvas": [
+    80,
+    103,
+    2473,
+    3606
+   ],
+   "n_components": 13,
+   "parch": [
+    200,
+    182,
+    164
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f33r",
+   "page": "f33r",
+   "kind": "herbal",
+   "canvas": "064_33r.jpg",
+   "n_text_lines_removed": 8,
+   "bbox_canvas": [
+    270,
+    704,
+    2167,
+    2889
+   ],
+   "n_components": 3,
+   "parch": [
+    202,
+    183,
+    165
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f33v",
+   "page": "f33v",
+   "kind": "herbal",
+   "canvas": "065_33v.jpg",
+   "n_text_lines_removed": 18,
+   "bbox_canvas": [
+    92,
+    74,
+    2701,
+    3545
+   ],
+   "n_components": 8,
+   "parch": [
+    200,
+    182,
+    165
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f34r",
+   "page": "f34r",
+   "kind": "herbal",
+   "canvas": "066_34r.jpg",
+   "n_text_lines_removed": 19,
+   "bbox_canvas": [
+    202,
+    72,
+    2215,
+    3613
+   ],
+   "n_components": 9,
+   "parch": [
+    202,
+    185,
+    168
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f34v",
+   "page": "f34v",
+   "kind": "herbal",
+   "canvas": "067_34v.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    88,
+    1373,
+    2729,
+    2326
+   ],
+   "n_components": 9,
+   "parch": [
+    199,
+    181,
+    164
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f35r",
+   "page": "f35r",
+   "kind": "herbal",
+   "canvas": "068_35r.jpg",
+   "n_text_lines_removed": 16,
+   "bbox_canvas": [
+    1180,
+    392,
+    1476,
+    3284
+   ],
+   "n_components": 3,
+   "parch": [
+    201,
+    182,
+    161
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f35v",
+   "page": "f35v",
+   "kind": "herbal",
+   "canvas": "069_35v.jpg",
+   "n_text_lines_removed": 21,
+   "bbox_canvas": [
+    85,
+    163,
+    2671,
+    3527
+   ],
+   "n_components": 6,
+   "parch": [
+    196,
+    178,
+    160
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f36r",
+   "page": "f36r",
+   "kind": "herbal",
+   "canvas": "070_36r.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    496,
+    895,
+    1722,
+    2761
+   ],
+   "n_components": 5,
+   "parch": [
+    202,
+    183,
+    163
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f36v",
+   "page": "f36v",
+   "kind": "herbal",
+   "canvas": "071_36v.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    319,
+    1045,
+    2410,
+    2660
+   ],
+   "n_components": 12,
+   "parch": [
+    201,
+    182,
+    162
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f37r",
+   "page": "f37r",
+   "kind": "herbal",
+   "canvas": "072_37r.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    1055,
+    91,
+    1584,
+    3553
+   ],
+   "n_components": 5,
+   "parch": [
+    202,
+    182,
+    164
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f37v",
+   "page": "f37v",
+   "kind": "herbal",
+   "canvas": "073_37v.jpg",
+   "n_text_lines_removed": 23,
+   "bbox_canvas": [
+    74,
+    87,
+    2620,
+    3606
+   ],
+   "n_components": 17,
+   "parch": [
+    204,
+    186,
+    168
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f38r",
+   "page": "f38r",
+   "kind": "herbal",
+   "canvas": "074_38r.jpg",
+   "n_text_lines_removed": 11,
+   "bbox_canvas": [
+    379,
+    137,
+    1071,
+    3508
+   ],
+   "n_components": 2,
+   "parch": [
+    198,
+    180,
+    162
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f38v",
+   "page": "f38v",
+   "kind": "herbal",
+   "canvas": "075_38v.jpg",
+   "n_text_lines_removed": 8,
+   "bbox_canvas": [
+    491,
+    113,
+    2218,
+    3581
+   ],
+   "n_components": 3,
+   "parch": [
+    197,
+    179,
+    161
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f39r",
+   "page": "f39r",
+   "kind": "herbal",
+   "canvas": "076_39r.jpg",
+   "n_text_lines_removed": 16,
+   "bbox_canvas": [
+    178,
+    1322,
+    2506,
+    2339
+   ],
+   "n_components": 3,
+   "parch": [
+    198,
+    180,
+    162
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f39v",
+   "page": "f39v",
+   "kind": "herbal",
+   "canvas": "077_39v.jpg",
+   "n_text_lines_removed": 15,
+   "bbox_canvas": [
+    86,
+    58,
+    2542,
+    2538
+   ],
+   "n_components": 3,
+   "parch": [
+    201,
+    183,
+    167
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f3r",
+   "page": "f3r",
+   "kind": "herbal",
+   "canvas": "006_3r.jpg",
+   "n_text_lines_removed": 20,
+   "bbox_canvas": [
+    1148,
+    276,
+    1302,
+    3273
+   ],
+   "n_components": 2,
+   "parch": [
+    193,
+    173,
+    151
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f3v",
+   "page": "f3v",
+   "kind": "herbal",
+   "canvas": "007_3v.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    284,
+    187,
+    2350,
+    3536
+   ],
+   "n_components": 10,
+   "parch": [
+    193,
+    171,
+    148
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f40r",
+   "page": "f40r",
+   "kind": "herbal",
+   "canvas": "078_40r.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    159,
+    98,
+    2507,
+    3546
+   ],
+   "n_components": 8,
+   "parch": [
+    205,
+    188,
+    173
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f40v",
+   "page": "f40v",
+   "kind": "herbal",
+   "canvas": "079_40v.jpg",
+   "n_text_lines_removed": 21,
+   "bbox_canvas": [
+    329,
+    248,
+    2263,
+    3455
+   ],
+   "n_components": 4,
+   "parch": [
+    200,
+    179,
+    160
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f41r",
+   "page": "f41r",
+   "kind": "herbal",
+   "canvas": "080_41r.jpg",
+   "n_text_lines_removed": 18,
+   "bbox_canvas": [
+    562,
+    80,
+    2029,
+    3580
+   ],
+   "n_components": 21,
+   "parch": [
+    206,
+    186,
+    167
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f41v",
+   "page": "f41v",
+   "kind": "herbal",
+   "canvas": "081_41v.jpg",
+   "n_text_lines_removed": 10,
+   "bbox_canvas": [
+    568,
+    353,
+    2113,
+    3224
+   ],
+   "n_components": 2,
+   "parch": [
+    202,
+    182,
+    162
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f42r",
+   "page": "f42r",
+   "kind": "herbal",
+   "canvas": "082_42r.jpg",
+   "n_text_lines_removed": 25,
+   "bbox_canvas": [
+    153,
+    79,
+    2502,
+    3574
+   ],
+   "n_components": 4,
+   "parch": [
+    206,
+    186,
+    167
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f42v",
+   "page": "f42v",
+   "kind": "herbal",
+   "canvas": "083_42v.jpg",
+   "n_text_lines_removed": 15,
+   "bbox_canvas": [
+    1318,
+    899,
+    1485,
+    2728
+   ],
+   "n_components": 2,
+   "parch": [
+    198,
+    177,
+    156
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f43r",
+   "page": "f43r",
+   "kind": "herbal",
+   "canvas": "084_43r.jpg",
+   "n_text_lines_removed": 17,
+   "bbox_canvas": [
+    100,
+    1752,
+    2548,
+    1806
+   ],
+   "n_components": 11,
+   "parch": [
+    207,
+    187,
+    167
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f43v",
+   "page": "f43v",
+   "kind": "herbal",
+   "canvas": "085_43v.jpg",
+   "n_text_lines_removed": 17,
+   "bbox_canvas": [
+    65,
+    143,
+    2633,
+    3569
+   ],
+   "n_components": 10,
+   "parch": [
+    209,
+    190,
+    173
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f44r",
+   "page": "f44r",
+   "kind": "herbal",
+   "canvas": "086_44r.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    1172,
+    482,
+    1168,
+    1354
+   ],
+   "n_components": 2,
+   "parch": [
+    206,
+    185,
+    164
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f44v",
+   "page": "f44v",
+   "kind": "herbal",
+   "canvas": "087_44v.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    334,
+    1351,
+    2317,
+    2255
+   ],
+   "n_components": 4,
+   "parch": [
+    202,
+    181,
+    158
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f45r",
+   "page": "f45r",
+   "kind": "herbal",
+   "canvas": "088_45r.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    559,
+    79,
+    2062,
+    3410
+   ],
+   "n_components": 18,
+   "parch": [
+    197,
+    177,
+    157
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f45v",
+   "page": "f45v",
+   "kind": "herbal",
+   "canvas": "089_45v.jpg",
+   "n_text_lines_removed": 11,
+   "bbox_canvas": [
+    354,
+    581,
+    2287,
+    3107
+   ],
+   "n_components": 2,
+   "parch": [
+    203,
+    183,
+    163
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f46r",
+   "page": "f46r",
+   "kind": "herbal",
+   "canvas": "090_46r.jpg",
+   "n_text_lines_removed": 16,
+   "bbox_canvas": [
+    660,
+    90,
+    2077,
+    3534
+   ],
+   "n_components": 7,
+   "parch": [
+    204,
+    186,
+    168
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f46v",
+   "page": "f46v",
+   "kind": "herbal",
+   "canvas": "091_46v.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    516,
+    1007,
+    1729,
+    2688
+   ],
+   "n_components": 3,
+   "parch": [
+    202,
+    182,
+    162
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f47r",
+   "page": "f47r",
+   "kind": "herbal",
+   "canvas": "092_47r.jpg",
+   "n_text_lines_removed": 11,
+   "bbox_canvas": [
+    462,
+    147,
+    1802,
+    2887
+   ],
+   "n_components": 2,
+   "parch": [
+    199,
+    177,
+    154
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f47v",
+   "page": "f47v",
+   "kind": "herbal",
+   "canvas": "093_47v.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    1185,
+    968,
+    1638,
+    1977
+   ],
+   "n_components": 2,
+   "parch": [
+    200,
+    181,
+    160
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f48r",
+   "page": "f48r",
+   "kind": "herbal",
+   "canvas": "094_48r.jpg",
+   "n_text_lines_removed": 10,
+   "bbox_canvas": [
+    486,
+    82,
+    2245,
+    3548
+   ],
+   "n_components": 13,
+   "parch": [
+    203,
+    184,
+    165
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f48v",
+   "page": "f48v",
+   "kind": "herbal",
+   "canvas": "095_48v.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    64,
+    81,
+    2379,
+    3617
+   ],
+   "n_components": 12,
+   "parch": [
+    203,
+    184,
+    166
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f49r",
+   "page": "f49r",
+   "kind": "herbal",
+   "canvas": "096_49r.jpg",
+   "n_text_lines_removed": 23,
+   "bbox_canvas": [
+    379,
+    89,
+    2336,
+    3584
+   ],
+   "n_components": 9,
+   "parch": [
+    199,
+    181,
+    163
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f49v",
+   "page": "f49v",
+   "kind": "herbal",
+   "canvas": "097_49v.jpg",
+   "n_text_lines_removed": 26,
+   "bbox_canvas": [
+    63,
+    131,
+    2790,
+    3558
+   ],
+   "n_components": 6,
+   "parch": [
+    198,
+    179,
+    161
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f4r",
+   "page": "f4r",
+   "kind": "herbal",
+   "canvas": "008_4r.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    1046,
+    771,
+    1308,
+    2883
+   ],
+   "n_components": 17,
+   "parch": [
+    190,
+    169,
+    147
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f4v",
+   "page": "f4v",
+   "kind": "herbal",
+   "canvas": "009_4v.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    193,
+    404,
+    2355,
+    3316
+   ],
+   "n_components": 11,
+   "parch": [
+    196,
+    174,
+    152
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f50r",
+   "page": "f50r",
+   "kind": "herbal",
+   "canvas": "098_50r.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    219,
+    81,
+    2294,
+    3602
+   ],
+   "n_components": 7,
+   "parch": [
+    204,
+    185,
+    168
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f50v",
+   "page": "f50v",
+   "kind": "herbal",
+   "canvas": "099_50v.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    62,
+    142,
+    2528,
+    3561
+   ],
+   "n_components": 5,
+   "parch": [
+    203,
+    184,
+    166
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f51r",
+   "page": "f51r",
+   "kind": "herbal",
+   "canvas": "100_51r.jpg",
+   "n_text_lines_removed": 15,
+   "bbox_canvas": [
+    367,
+    91,
+    2327,
+    3602
+   ],
+   "n_components": 11,
+   "parch": [
+    206,
+    187,
+    168
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f51v",
+   "page": "f51v",
+   "kind": "herbal",
+   "canvas": "101_51v.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    74,
+    154,
+    2753,
+    3562
+   ],
+   "n_components": 4,
+   "parch": [
+    202,
+    184,
+    165
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f52r",
+   "page": "f52r",
+   "kind": "herbal",
+   "canvas": "102_52r.jpg",
+   "n_text_lines_removed": 8,
+   "bbox_canvas": [
+    284,
+    87,
+    2148,
+    3605
+   ],
+   "n_components": 5,
+   "parch": [
+    195,
+    176,
+    153
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f52v",
+   "page": "f52v",
+   "kind": "herbal",
+   "canvas": "103_52v.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    276,
+    197,
+    2516,
+    3494
+   ],
+   "n_components": 4,
+   "parch": [
+    197,
+    177,
+    156
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f53r",
+   "page": "f53r",
+   "kind": "herbal",
+   "canvas": "104_53r.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    679,
+    67,
+    1876,
+    3549
+   ],
+   "n_components": 12,
+   "parch": [
+    200,
+    180,
+    158
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f53v",
+   "page": "f53v",
+   "kind": "herbal",
+   "canvas": "105_53v.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    59,
+    100,
+    2727,
+    3608
+   ],
+   "n_components": 10,
+   "parch": [
+    200,
+    182,
+    165
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f54r",
+   "page": "f54r",
+   "kind": "herbal",
+   "canvas": "106_54r.jpg",
+   "n_text_lines_removed": 25,
+   "bbox_canvas": [
+    472,
+    64,
+    2193,
+    2984
+   ],
+   "n_components": 24,
+   "parch": [
+    203,
+    193,
+    178
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f54v",
+   "page": "f54v",
+   "kind": "herbal",
+   "canvas": "107_54v.jpg",
+   "n_text_lines_removed": 16,
+   "bbox_canvas": [
+    68,
+    123,
+    2810,
+    3572
+   ],
+   "n_components": 9,
+   "parch": [
+    206,
+    187,
+    167
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f55r",
+   "page": "f55r",
+   "kind": "herbal",
+   "canvas": "108_55r.jpg",
+   "n_text_lines_removed": 17,
+   "bbox_canvas": [
+    293,
+    1395,
+    2266,
+    2259
+   ],
+   "n_components": 10,
+   "parch": [
+    202,
+    183,
+    164
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f55v",
+   "page": "f55v",
+   "kind": "herbal",
+   "canvas": "109_55v.jpg",
+   "n_text_lines_removed": 16,
+   "bbox_canvas": [
+    485,
+    77,
+    1719,
+    351
+   ],
+   "n_components": 4,
+   "parch": [
+    204,
+    186,
+    168
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f56r",
+   "page": "f56r",
+   "kind": "herbal",
+   "canvas": "110_56r.jpg",
+   "n_text_lines_removed": 19,
+   "bbox_canvas": [
+    392,
+    70,
+    2064,
+    3572
+   ],
+   "n_components": 12,
+   "parch": [
+    205,
+    186,
+    167
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f56v",
+   "page": "f56v",
+   "kind": "herbal",
+   "canvas": "111_56v.jpg",
+   "n_text_lines_removed": 16,
+   "bbox_canvas": [
+    64,
+    681,
+    2872,
+    3006
+   ],
+   "n_components": 3,
+   "parch": [
+    202,
+    182,
+    161
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f57r",
+   "page": "f57r",
+   "kind": "herbal",
+   "canvas": "112_57r.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    292,
+    52,
+    2347,
+    3611
+   ],
+   "n_components": 17,
+   "parch": [
+    201,
+    180,
+    160
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f5r",
+   "page": "f5r",
+   "kind": "herbal",
+   "canvas": "010_5r.jpg",
+   "n_text_lines_removed": 7,
+   "bbox_canvas": [
+    733,
+    1474,
+    1405,
+    1222
+   ],
+   "n_components": 1,
+   "parch": [
+    187,
+    167,
+    145
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f5v",
+   "page": "f5v",
+   "kind": "herbal",
+   "canvas": "011_5v.jpg",
+   "n_text_lines_removed": 8,
+   "bbox_canvas": [
+    299,
+    1038,
+    2203,
+    2692
+   ],
+   "n_components": 21,
+   "parch": [
+    192,
+    172,
+    152
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f65v",
+   "page": "f65v",
+   "kind": "herbal",
+   "canvas": "117_65v.jpg",
+   "n_text_lines_removed": 7,
+   "bbox_canvas": [
+    196,
+    92,
+    2627,
+    3594
+   ],
+   "n_components": 10,
+   "parch": [
+    200,
+    179,
+    159
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f66v",
+   "page": "f66v",
+   "kind": "herbal",
+   "canvas": "119_66v.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    70,
+    1251,
+    2596,
+    2428
+   ],
+   "n_components": 10,
+   "parch": [
+    192,
+    170,
+    148
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f6r",
+   "page": "f6r",
+   "kind": "herbal",
+   "canvas": "012_6r.jpg",
+   "n_text_lines_removed": 17,
+   "bbox_canvas": [
+    308,
+    268,
+    2129,
+    3357
+   ],
+   "n_components": 8,
+   "parch": [
+    194,
+    175,
+    154
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f6v",
+   "page": "f6v",
+   "kind": "herbal",
+   "canvas": "013_6v.jpg",
+   "n_text_lines_removed": 21,
+   "bbox_canvas": [
+    370,
+    96,
+    2226,
+    2842
+   ],
+   "n_components": 10,
+   "parch": [
+    200,
+    182,
+    164
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f7r",
+   "page": "f7r",
+   "kind": "herbal",
+   "canvas": "014_7r.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    461,
+    340,
+    1906,
+    1966
+   ],
+   "n_components": 1,
+   "parch": [
+    196,
+    177,
+    158
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f7v",
+   "page": "f7v",
+   "kind": "herbal",
+   "canvas": "015_7v.jpg",
+   "n_text_lines_removed": 9,
+   "bbox_canvas": [
+    1037,
+    1313,
+    1308,
+    1861
+   ],
+   "n_components": 7,
+   "parch": [
+    205,
+    187,
+    168
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f87r",
+   "page": "f87r",
+   "kind": "herbal",
+   "canvas": "158_87r.jpg",
+   "n_text_lines_removed": 16,
+   "bbox_canvas": [
+    122,
+    83,
+    2501,
+    3609
+   ],
+   "n_components": 8,
+   "parch": [
+    193,
+    173,
+    154
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f87v",
+   "page": "f87v",
+   "kind": "herbal",
+   "canvas": "159_87v.jpg",
+   "n_text_lines_removed": 18,
+   "bbox_canvas": [
+    120,
+    1060,
+    2706,
+    2544
+   ],
+   "n_components": 2,
+   "parch": [
+    190,
+    171,
+    151
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f8r",
+   "page": "f8r",
+   "kind": "herbal",
+   "canvas": "016_8r.jpg",
+   "n_text_lines_removed": 25,
+   "bbox_canvas": [
+    608,
+    164,
+    1601,
+    3496
+   ],
+   "n_components": 4,
+   "parch": [
+    197,
+    178,
+    158
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f8v",
+   "page": "f8v",
+   "kind": "herbal",
+   "canvas": "017_8v.jpg",
+   "n_text_lines_removed": 20,
+   "bbox_canvas": [
+    139,
+    1030,
+    2175,
+    2688
+   ],
+   "n_components": 5,
+   "parch": [
+    198,
+    177,
+    155
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f90r1",
+   "page": "f90r1",
+   "kind": "herbal",
+   "canvas": "164_90r.jpg",
+   "n_text_lines_removed": 0,
+   "bbox_canvas": [
+    750,
+    546,
+    1713,
+    3155
+   ],
+   "n_components": 2,
+   "parch": [
+    199,
+    180,
+    160
+   ],
+   "text_lines_source": "none"
+  },
+  {
+   "crop": "H_f90r2",
+   "page": "f90r2",
+   "kind": "herbal",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "n_text_lines_removed": 0,
+   "bbox_canvas": [
+    5530,
+    265,
+    2047,
+    3359
+   ],
+   "n_components": 28,
+   "parch": [
+    181,
+    166,
+    151
+   ],
+   "text_lines_source": "none"
+  },
+  {
+   "crop": "H_f90v1",
+   "page": "f90v1",
+   "kind": "herbal",
+   "canvas": "165_90v_part.jpg",
+   "n_text_lines_removed": 0,
+   "bbox_canvas": [
+    170,
+    75,
+    2529,
+    3548
+   ],
+   "n_components": 14,
+   "parch": [
+    199,
+    181,
+    161
+   ],
+   "text_lines_source": "none"
+  },
+  {
+   "crop": "H_f90v2",
+   "page": "f90v2",
+   "kind": "herbal",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "n_text_lines_removed": 0,
+   "bbox_canvas": [
+    3166,
+    107,
+    2209,
+    3530
+   ],
+   "n_components": 13,
+   "parch": [
+    196,
+    179,
+    161
+   ],
+   "text_lines_source": "none"
+  },
+  {
+   "crop": "H_f93r",
+   "page": "f93r",
+   "kind": "herbal",
+   "canvas": "166_93r.jpg",
+   "n_text_lines_removed": 33,
+   "bbox_canvas": [
+    1020,
+    427,
+    1390,
+    2617
+   ],
+   "n_components": 2,
+   "parch": [
+    195,
+    174,
+    151
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f93v",
+   "page": "f93v",
+   "kind": "herbal",
+   "canvas": "167_93v.jpg",
+   "n_text_lines_removed": 11,
+   "bbox_canvas": [
+    206,
+    91,
+    2477,
+    3372
+   ],
+   "n_components": 10,
+   "parch": [
+    197,
+    180,
+    163
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f94r",
+   "page": "f94r",
+   "kind": "herbal",
+   "canvas": "168_94r.jpg",
+   "n_text_lines_removed": 10,
+   "bbox_canvas": [
+    412,
+    71,
+    2193,
+    3619
+   ],
+   "n_components": 3,
+   "parch": [
+    204,
+    186,
+    168
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f96r",
+   "page": "f96r",
+   "kind": "herbal",
+   "canvas": "172_96r.jpg",
+   "n_text_lines_removed": 18,
+   "bbox_canvas": [
+    282,
+    53,
+    2330,
+    2649
+   ],
+   "n_components": 7,
+   "parch": [
+    198,
+    182,
+    167
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f96v",
+   "page": "f96v",
+   "kind": "herbal",
+   "canvas": "173_96v.jpg",
+   "n_text_lines_removed": 13,
+   "bbox_canvas": [
+    126,
+    78,
+    2643,
+    3553
+   ],
+   "n_components": 17,
+   "parch": [
+    192,
+    173,
+    153
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f9r",
+   "page": "f9r",
+   "kind": "herbal",
+   "canvas": "018_9r.jpg",
+   "n_text_lines_removed": 14,
+   "bbox_canvas": [
+    634,
+    1091,
+    1891,
+    2583
+   ],
+   "n_components": 7,
+   "parch": [
+    194,
+    173,
+    152
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "H_f9v",
+   "page": "f9v",
+   "kind": "herbal",
+   "canvas": "019_9v.jpg",
+   "n_text_lines_removed": 12,
+   "bbox_canvas": [
+    62,
+    99,
+    2668,
+    3625
+   ],
+   "n_components": 15,
+   "parch": [
+    201,
+    182,
+    165
+   ],
+   "text_lines_source": "s45 kraken line boxes"
+  },
+  {
+   "crop": "P_f88r_p1_00",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2137,
+    215,
+    202,
+    281
+   ],
+   "bbox_panel_frac": [
+    0.8098,
+    0.04,
+    0.0766,
+    0.078
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_01",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    278,
+    262,
+    187,
+    223
+   ],
+   "bbox_panel_frac": [
+    0.1053,
+    0.053,
+    0.0711,
+    0.062
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_02",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1484,
+    349,
+    227,
+    386
+   ],
+   "bbox_panel_frac": [
+    0.5622,
+    0.077,
+    0.0862,
+    0.107
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_03",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1242,
+    482,
+    169,
+    166
+   ],
+   "bbox_panel_frac": [
+    0.4706,
+    0.114,
+    0.0643,
+    0.046
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_04",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    234,
+    486,
+    299,
+    700
+   ],
+   "bbox_panel_frac": [
+    0.0889,
+    0.115,
+    0.1135,
+    0.194
+   ],
+   "jar_like": true,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_05",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    967,
+    504,
+    184,
+    288
+   ],
+   "bbox_panel_frac": [
+    0.3666,
+    0.12,
+    0.0698,
+    0.08
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_06",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1328,
+    1154,
+    649,
+    678
+   ],
+   "bbox_panel_frac": [
+    0.5034,
+    0.3,
+    0.2462,
+    0.188
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_07",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2246,
+    1172,
+    198,
+    151
+   ],
+   "bbox_panel_frac": [
+    0.8509,
+    0.305,
+    0.0752,
+    0.042
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_08",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    834,
+    1194,
+    285,
+    335
+   ],
+   "bbox_panel_frac": [
+    0.316,
+    0.311,
+    0.1081,
+    0.093
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_09",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1086,
+    1284,
+    249,
+    238
+   ],
+   "bbox_panel_frac": [
+    0.4118,
+    0.336,
+    0.0944,
+    0.066
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_10",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    324,
+    1324,
+    148,
+    137
+   ],
+   "bbox_panel_frac": [
+    0.1231,
+    0.347,
+    0.0561,
+    0.038
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_11",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2101,
+    1331,
+    249,
+    552
+   ],
+   "bbox_panel_frac": [
+    0.7962,
+    0.349,
+    0.0944,
+    0.153
+   ],
+   "jar_like": true,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_12",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2347,
+    1338,
+    249,
+    393
+   ],
+   "bbox_panel_frac": [
+    0.8892,
+    0.351,
+    0.0944,
+    0.109
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_13",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    274,
+    1389,
+    599,
+    855
+   ],
+   "bbox_panel_frac": [
+    0.104,
+    0.365,
+    0.2271,
+    0.237
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_14",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1635,
+    1537,
+    245,
+    191
+   ],
+   "bbox_panel_frac": [
+    0.6197,
+    0.406,
+    0.093,
+    0.053
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_15",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2307,
+    1757,
+    176,
+    263
+   ],
+   "bbox_panel_frac": [
+    0.8741,
+    0.467,
+    0.067,
+    0.073
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_16",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1155,
+    2168,
+    285,
+    259
+   ],
+   "bbox_panel_frac": [
+    0.4378,
+    0.581,
+    0.1081,
+    0.072
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_17",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1798,
+    2179,
+    166,
+    158
+   ],
+   "bbox_panel_frac": [
+    0.6813,
+    0.584,
+    0.0629,
+    0.044
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_18",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1534,
+    2197,
+    169,
+    173
+   ],
+   "bbox_panel_frac": [
+    0.5814,
+    0.589,
+    0.0643,
+    0.048
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_19",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    657,
+    2248,
+    227,
+    162
+   ],
+   "bbox_panel_frac": [
+    0.249,
+    0.603,
+    0.0862,
+    0.045
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_20",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1473,
+    2389,
+    310,
+    292
+   ],
+   "bbox_panel_frac": [
+    0.5581,
+    0.642,
+    0.1176,
+    0.081
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_21",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1072,
+    2425,
+    209,
+    184
+   ],
+   "bbox_panel_frac": [
+    0.4063,
+    0.652,
+    0.0793,
+    0.051
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_22",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    281,
+    2501,
+    278,
+    805
+   ],
+   "bbox_panel_frac": [
+    0.1067,
+    0.673,
+    0.1053,
+    0.223
+   ],
+   "jar_like": true,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_23",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    223,
+    3306,
+    758,
+    292
+   ],
+   "bbox_panel_frac": [
+    0.0848,
+    0.896,
+    0.2873,
+    0.081
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88r_p1_24",
+   "page": "f88r",
+   "kind": "pharma",
+   "canvas": "160_88r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    946,
+    3530,
+    848,
+    151
+   ],
+   "bbox_panel_frac": [
+    0.3584,
+    0.958,
+    0.3215,
+    0.042
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    180,
+    162
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_00",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1017,
+    154,
+    260,
+    210
+   ],
+   "bbox_panel_frac": [
+    0.239,
+    0.018,
+    0.1104,
+    0.059
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_01",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1438,
+    168,
+    232,
+    178
+   ],
+   "bbox_panel_frac": [
+    0.4175,
+    0.022,
+    0.0983,
+    0.05
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_02",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1920,
+    211,
+    224,
+    189
+   ],
+   "bbox_panel_frac": [
+    0.6218,
+    0.034,
+    0.0953,
+    0.053
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_03",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    585,
+    329,
+    178,
+    249
+   ],
+   "bbox_panel_frac": [
+    0.056,
+    0.067,
+    0.0756,
+    0.07
+   ],
+   "jar_like": true,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_04",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2567,
+    372,
+    246,
+    307
+   ],
+   "bbox_panel_frac": [
+    0.8956,
+    0.079,
+    0.1044,
+    0.086
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_05",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1492,
+    375,
+    1064,
+    553
+   ],
+   "bbox_panel_frac": [
+    0.4402,
+    0.08,
+    0.4508,
+    0.155
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_06",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    867,
+    529,
+    171,
+    235
+   ],
+   "bbox_panel_frac": [
+    0.1755,
+    0.123,
+    0.0726,
+    0.066
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_07",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    545,
+    604,
+    264,
+    453
+   ],
+   "bbox_panel_frac": [
+    0.0393,
+    0.144,
+    0.112,
+    0.127
+   ],
+   "jar_like": true,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_08",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1742,
+    1086,
+    228,
+    207
+   ],
+   "bbox_panel_frac": [
+    0.5461,
+    0.279,
+    0.0968,
+    0.058
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_09",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1763,
+    1175,
+    449,
+    460
+   ],
+   "bbox_panel_frac": [
+    0.5552,
+    0.304,
+    0.1906,
+    0.129
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_10",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1213,
+    1229,
+    192,
+    267
+   ],
+   "bbox_panel_frac": [
+    0.3222,
+    0.319,
+    0.0817,
+    0.075
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_11",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1431,
+    1293,
+    303,
+    282
+   ],
+   "bbox_panel_frac": [
+    0.4145,
+    0.337,
+    0.1286,
+    0.079
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_12",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    595,
+    1318,
+    210,
+    142
+   ],
+   "bbox_panel_frac": [
+    0.0605,
+    0.344,
+    0.0893,
+    0.04
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_13",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2502,
+    1336,
+    310,
+    239
+   ],
+   "bbox_panel_frac": [
+    0.8684,
+    0.349,
+    0.1316,
+    0.067
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_14",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    567,
+    1493,
+    285,
+    210
+   ],
+   "bbox_panel_frac": [
+    0.0484,
+    0.393,
+    0.121,
+    0.059
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_15",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2570,
+    2211,
+    224,
+    457
+   ],
+   "bbox_panel_frac": [
+    0.8971,
+    0.594,
+    0.0953,
+    0.128
+   ],
+   "jar_like": true,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_16",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    588,
+    2296,
+    199,
+    157
+   ],
+   "bbox_panel_frac": [
+    0.0575,
+    0.618,
+    0.0847,
+    0.044
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_17",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    510,
+    2468,
+    357,
+    271
+   ],
+   "bbox_panel_frac": [
+    0.0242,
+    0.666,
+    0.1513,
+    0.076
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_18",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1788,
+    2661,
+    303,
+    453
+   ],
+   "bbox_panel_frac": [
+    0.5658,
+    0.72,
+    0.1286,
+    0.127
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_19",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1163,
+    2771,
+    246,
+    414
+   ],
+   "bbox_panel_frac": [
+    0.3011,
+    0.751,
+    0.1044,
+    0.116
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_20",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    517,
+    2775,
+    496,
+    282
+   ],
+   "bbox_panel_frac": [
+    0.0272,
+    0.752,
+    0.2103,
+    0.079
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_21",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1442,
+    2882,
+    310,
+    539
+   ],
+   "bbox_panel_frac": [
+    0.4191,
+    0.782,
+    0.1316,
+    0.151
+   ],
+   "jar_like": true,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_22",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    502,
+    3036,
+    371,
+    167
+   ],
+   "bbox_panel_frac": [
+    0.0212,
+    0.825,
+    0.1573,
+    0.047
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_23",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2134,
+    3064,
+    164,
+    157
+   ],
+   "bbox_panel_frac": [
+    0.7126,
+    0.833,
+    0.0696,
+    0.044
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_24",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1956,
+    3203,
+    189,
+    153
+   ],
+   "bbox_panel_frac": [
+    0.6369,
+    0.872,
+    0.0802,
+    0.043
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_25",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1120,
+    3303,
+    135,
+    267
+   ],
+   "bbox_panel_frac": [
+    0.2829,
+    0.9,
+    0.0575,
+    0.075
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_26",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2142,
+    3346,
+    124,
+    203
+   ],
+   "bbox_panel_frac": [
+    0.7156,
+    0.912,
+    0.053,
+    0.057
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f88v_p1_27",
+   "page": "f88v",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2388,
+    3482,
+    160,
+    178
+   ],
+   "bbox_panel_frac": [
+    0.82,
+    0.95,
+    0.0681,
+    0.05
+   ],
+   "jar_like": false,
+   "parch": [
+    181,
+    163,
+    144
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_00",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4855,
+    100,
+    297,
+    232
+   ],
+   "bbox_panel_frac": [
+    0.8333,
+    0.0,
+    0.1213,
+    0.065
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_01",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3336,
+    157,
+    540,
+    479
+   ],
+   "bbox_panel_frac": [
+    0.2135,
+    0.016,
+    0.2208,
+    0.134
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_02",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4042,
+    189,
+    175,
+    153
+   ],
+   "bbox_panel_frac": [
+    0.5015,
+    0.025,
+    0.0716,
+    0.043
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_03",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3741,
+    447,
+    164,
+    164
+   ],
+   "bbox_panel_frac": [
+    0.3787,
+    0.097,
+    0.0673,
+    0.046
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_04",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3114,
+    454,
+    257,
+    526
+   ],
+   "bbox_panel_frac": [
+    0.1228,
+    0.099,
+    0.1053,
+    0.147
+   ],
+   "jar_like": true,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_05",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3848,
+    518,
+    239,
+    318
+   ],
+   "bbox_panel_frac": [
+    0.4225,
+    0.117,
+    0.098,
+    0.089
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_06",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4067,
+    518,
+    318,
+    222
+   ],
+   "bbox_panel_frac": [
+    0.5117,
+    0.117,
+    0.1301,
+    0.062
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_07",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5059,
+    905,
+    157,
+    386
+   ],
+   "bbox_panel_frac": [
+    0.9167,
+    0.225,
+    0.0643,
+    0.108
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_08",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3358,
+    1263,
+    225,
+    168
+   ],
+   "bbox_panel_frac": [
+    0.2222,
+    0.325,
+    0.0921,
+    0.047
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_09",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2932,
+    1353,
+    239,
+    329
+   ],
+   "bbox_panel_frac": [
+    0.0482,
+    0.35,
+    0.098,
+    0.092
+   ],
+   "jar_like": true,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_10",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4758,
+    1439,
+    175,
+    153
+   ],
+   "bbox_panel_frac": [
+    0.7939,
+    0.374,
+    0.0716,
+    0.043
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_11",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4099,
+    1464,
+    196,
+    128
+   ],
+   "bbox_panel_frac": [
+    0.5249,
+    0.381,
+    0.0804,
+    0.036
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_12",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4998,
+    1851,
+    146,
+    279
+   ],
+   "bbox_panel_frac": [
+    0.8918,
+    0.489,
+    0.0599,
+    0.078
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_13",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2960,
+    2108,
+    239,
+    354
+   ],
+   "bbox_panel_frac": [
+    0.0599,
+    0.561,
+    0.098,
+    0.099
+   ],
+   "jar_like": true,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_14",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2932,
+    2330,
+    207,
+    311
+   ],
+   "bbox_panel_frac": [
+    0.0482,
+    0.623,
+    0.0848,
+    0.087
+   ],
+   "jar_like": true,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_15",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4092,
+    2560,
+    479,
+    519
+   ],
+   "bbox_panel_frac": [
+    0.5219,
+    0.687,
+    0.1959,
+    0.145
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_16",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3394,
+    2599,
+    383,
+    272
+   ],
+   "bbox_panel_frac": [
+    0.2368,
+    0.698,
+    0.1564,
+    0.076
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_17",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4704,
+    2663,
+    132,
+    146
+   ],
+   "bbox_panel_frac": [
+    0.7719,
+    0.716,
+    0.0541,
+    0.041
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_18",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2899,
+    2771,
+    304,
+    254
+   ],
+   "bbox_panel_frac": [
+    0.0351,
+    0.746,
+    0.1243,
+    0.071
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_19",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3873,
+    2825,
+    143,
+    229
+   ],
+   "bbox_panel_frac": [
+    0.4327,
+    0.761,
+    0.0585,
+    0.064
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_20",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3290,
+    2860,
+    286,
+    472
+   ],
+   "bbox_panel_frac": [
+    0.1944,
+    0.771,
+    0.117,
+    0.132
+   ],
+   "jar_like": true,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_21",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4500,
+    2936,
+    168,
+    254
+   ],
+   "bbox_panel_frac": [
+    0.6886,
+    0.792,
+    0.0687,
+    0.071
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_22",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3598,
+    3004,
+    125,
+    372
+   ],
+   "bbox_panel_frac": [
+    0.3202,
+    0.811,
+    0.0512,
+    0.104
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_23",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4049,
+    3050,
+    128,
+    440
+   ],
+   "bbox_panel_frac": [
+    0.5044,
+    0.824,
+    0.0526,
+    0.123
+   ],
+   "jar_like": true,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_24",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3906,
+    3118,
+    193,
+    547
+   ],
+   "bbox_panel_frac": [
+    0.4459,
+    0.843,
+    0.0789,
+    0.153
+   ],
+   "jar_like": true,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_25",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3702,
+    3147,
+    200,
+    436
+   ],
+   "bbox_panel_frac": [
+    0.3626,
+    0.851,
+    0.0819,
+    0.122
+   ],
+   "jar_like": true,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r1_p1_26",
+   "page": "f89r1",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4042,
+    3265,
+    1031,
+    415
+   ],
+   "bbox_panel_frac": [
+    0.5015,
+    0.884,
+    0.4211,
+    0.116
+   ],
+   "jar_like": false,
+   "parch": [
+    198,
+    179,
+    159
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_00",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5365,
+    180,
+    368,
+    348
+   ],
+   "bbox_panel_frac": [
+    0.0273,
+    0.0,
+    0.0997,
+    0.1
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_01",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6253,
+    180,
+    1347,
+    417
+   ],
+   "bbox_panel_frac": [
+    0.2672,
+    0.0,
+    0.3641,
+    0.12
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_02",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    8011,
+    340,
+    950,
+    595
+   ],
+   "bbox_panel_frac": [
+    0.7422,
+    0.046,
+    0.2568,
+    0.171
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_03",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5282,
+    454,
+    539,
+    483
+   ],
+   "bbox_panel_frac": [
+    0.0047,
+    0.079,
+    0.1458,
+    0.139
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_04",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    7416,
+    475,
+    431,
+    424
+   ],
+   "bbox_panel_frac": [
+    0.5814,
+    0.085,
+    0.1167,
+    0.122
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_05",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5985,
+    531,
+    240,
+    382
+   ],
+   "bbox_panel_frac": [
+    0.1947,
+    0.101,
+    0.0649,
+    0.11
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_06",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6897,
+    709,
+    163,
+    257
+   ],
+   "bbox_panel_frac": [
+    0.4412,
+    0.152,
+    0.0442,
+    0.074
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_07",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5609,
+    1203,
+    393,
+    487
+   ],
+   "bbox_panel_frac": [
+    0.0931,
+    0.294,
+    0.1063,
+    0.14
+   ],
+   "jar_like": true,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_08",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6559,
+    1273,
+    671,
+    428
+   ],
+   "bbox_panel_frac": [
+    0.35,
+    0.314,
+    0.1816,
+    0.123
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_09",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5303,
+    1276,
+    261,
+    142
+   ],
+   "bbox_panel_frac": [
+    0.0103,
+    0.315,
+    0.0706,
+    0.041
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_10",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    7329,
+    1293,
+    344,
+    362
+   ],
+   "bbox_panel_frac": [
+    0.5579,
+    0.32,
+    0.0931,
+    0.104
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_11",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6166,
+    1419,
+    208,
+    215
+   ],
+   "bbox_panel_frac": [
+    0.2437,
+    0.356,
+    0.0564,
+    0.062
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_12",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5268,
+    1676,
+    306,
+    142
+   ],
+   "bbox_panel_frac": [
+    0.0009,
+    0.43,
+    0.0828,
+    0.041
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_13",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5679,
+    1903,
+    288,
+    181
+   ],
+   "bbox_panel_frac": [
+    0.1119,
+    0.495,
+    0.0781,
+    0.052
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_14",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6086,
+    1920,
+    198,
+    254
+   ],
+   "bbox_panel_frac": [
+    0.222,
+    0.5,
+    0.0536,
+    0.073
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_15",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6371,
+    1944,
+    156,
+    170
+   ],
+   "bbox_panel_frac": [
+    0.2992,
+    0.507,
+    0.0423,
+    0.049
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_16",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    7350,
+    1958,
+    233,
+    128
+   ],
+   "bbox_panel_frac": [
+    0.5635,
+    0.511,
+    0.063,
+    0.037
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_17",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6587,
+    1962,
+    215,
+    174
+   ],
+   "bbox_panel_frac": [
+    0.3575,
+    0.512,
+    0.0583,
+    0.05
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_18",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5331,
+    2017,
+    233,
+    309
+   ],
+   "bbox_panel_frac": [
+    0.0179,
+    0.528,
+    0.063,
+    0.089
+   ],
+   "jar_like": true,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_19",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6737,
+    2035,
+    295,
+    292
+   ],
+   "bbox_panel_frac": [
+    0.3979,
+    0.533,
+    0.08,
+    0.084
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_20",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    8164,
+    2094,
+    595,
+    456
+   ],
+   "bbox_panel_frac": [
+    0.7836,
+    0.55,
+    0.1609,
+    0.131
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_21",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5557,
+    2108,
+    410,
+    368
+   ],
+   "bbox_panel_frac": [
+    0.079,
+    0.554,
+    0.111,
+    0.106
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_22",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    7680,
+    2139,
+    174,
+    247
+   ],
+   "bbox_panel_frac": [
+    0.6529,
+    0.563,
+    0.047,
+    0.071
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_23",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5992,
+    2150,
+    341,
+    233
+   ],
+   "bbox_panel_frac": [
+    0.1966,
+    0.566,
+    0.0922,
+    0.067
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_24",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5306,
+    2338,
+    271,
+    264
+   ],
+   "bbox_panel_frac": [
+    0.0113,
+    0.62,
+    0.0734,
+    0.076
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_25",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    7458,
+    2804,
+    341,
+    362
+   ],
+   "bbox_panel_frac": [
+    0.5927,
+    0.754,
+    0.0922,
+    0.104
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_26",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5999,
+    2825,
+    379,
+    201
+   ],
+   "bbox_panel_frac": [
+    0.1985,
+    0.76,
+    0.1025,
+    0.058
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_27",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5658,
+    2829,
+    664,
+    657
+   ],
+   "bbox_panel_frac": [
+    0.1063,
+    0.761,
+    0.1797,
+    0.189
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_28",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    7868,
+    2957,
+    563,
+    699
+   ],
+   "bbox_panel_frac": [
+    0.7037,
+    0.798,
+    0.1524,
+    0.201
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_29",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5369,
+    3083,
+    156,
+    174
+   ],
+   "bbox_panel_frac": [
+    0.0282,
+    0.834,
+    0.0423,
+    0.05
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89r2_p1_30",
+   "page": "f89r2",
+   "kind": "pharma",
+   "canvas": "161_88v_and_89r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5265,
+    3274,
+    1099,
+    386
+   ],
+   "bbox_panel_frac": [
+    0.0,
+    0.889,
+    0.2973,
+    0.111
+   ],
+   "jar_like": false,
+   "parch": [
+    175,
+    160,
+    146
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_00",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2149,
+    249,
+    313,
+    559
+   ],
+   "bbox_panel_frac": [
+    0.5184,
+    0.04,
+    0.0822,
+    0.155
+   ],
+   "jar_like": true,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_01",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3091,
+    310,
+    440,
+    454
+   ],
+   "bbox_panel_frac": [
+    0.7649,
+    0.057,
+    0.1152,
+    0.126
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_02",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3531,
+    382,
+    364,
+    425
+   ],
+   "bbox_panel_frac": [
+    0.8801,
+    0.077,
+    0.0954,
+    0.118
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_03",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    222,
+    476,
+    389,
+    256
+   ],
+   "bbox_panel_frac": [
+    0.0142,
+    0.103,
+    0.102,
+    0.071
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_04",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    868,
+    480,
+    364,
+    436
+   ],
+   "bbox_panel_frac": [
+    0.1832,
+    0.104,
+    0.0954,
+    0.121
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_05",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1553,
+    538,
+    158,
+    223
+   ],
+   "bbox_panel_frac": [
+    0.3626,
+    0.12,
+    0.0415,
+    0.062
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_06",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1286,
+    581,
+    216,
+    223
+   ],
+   "bbox_panel_frac": [
+    0.2927,
+    0.132,
+    0.0567,
+    0.062
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_07",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    301,
+    772,
+    364,
+    415
+   ],
+   "bbox_panel_frac": [
+    0.0349,
+    0.185,
+    0.0954,
+    0.115
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_08",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3481,
+    862,
+    249,
+    382
+   ],
+   "bbox_panel_frac": [
+    0.8669,
+    0.21,
+    0.0652,
+    0.106
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_09",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2975,
+    1267,
+    761,
+    898
+   ],
+   "bbox_panel_frac": [
+    0.7347,
+    0.322,
+    0.1992,
+    0.249
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_10",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2300,
+    1339,
+    768,
+    552
+   ],
+   "bbox_panel_frac": [
+    0.5581,
+    0.342,
+    0.2011,
+    0.153
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_11",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    961,
+    1407,
+    375,
+    227
+   ],
+   "bbox_panel_frac": [
+    0.2077,
+    0.361,
+    0.0982,
+    0.063
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_12",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    312,
+    1674,
+    1053,
+    555
+   ],
+   "bbox_panel_frac": [
+    0.0378,
+    0.435,
+    0.2757,
+    0.154
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_13",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1604,
+    1700,
+    786,
+    357
+   ],
+   "bbox_panel_frac": [
+    0.3758,
+    0.442,
+    0.2059,
+    0.099
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_14",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    370,
+    1703,
+    245,
+    180
+   ],
+   "bbox_panel_frac": [
+    0.0529,
+    0.443,
+    0.0642,
+    0.05
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_15",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    380,
+    2504,
+    368,
+    425
+   ],
+   "bbox_panel_frac": [
+    0.0557,
+    0.665,
+    0.0963,
+    0.118
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_16",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3647,
+    2606,
+    230,
+    202
+   ],
+   "bbox_panel_frac": [
+    0.9103,
+    0.693,
+    0.0604,
+    0.056
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_17",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2687,
+    2645,
+    256,
+    281
+   ],
+   "bbox_panel_frac": [
+    0.6591,
+    0.704,
+    0.067,
+    0.078
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_18",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1337,
+    2761,
+    494,
+    519
+   ],
+   "bbox_panel_frac": [
+    0.3059,
+    0.736,
+    0.1294,
+    0.144
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_19",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2149,
+    2800,
+    313,
+    274
+   ],
+   "bbox_panel_frac": [
+    0.5184,
+    0.747,
+    0.0822,
+    0.076
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_20",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3527,
+    2840,
+    234,
+    230
+   ],
+   "bbox_panel_frac": [
+    0.8791,
+    0.758,
+    0.0614,
+    0.064
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_21",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1871,
+    2995,
+    227,
+    375
+   ],
+   "bbox_panel_frac": [
+    0.4457,
+    0.801,
+    0.0595,
+    0.104
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_22",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3062,
+    3013,
+    285,
+    523
+   ],
+   "bbox_panel_frac": [
+    0.7573,
+    0.806,
+    0.0746,
+    0.145
+   ],
+   "jar_like": true,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_23",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2347,
+    3042,
+    321,
+    624
+   ],
+   "bbox_panel_frac": [
+    0.5703,
+    0.814,
+    0.084,
+    0.173
+   ],
+   "jar_like": true,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v2_p1_24",
+   "page": "f89v2",
+   "kind": "pharma",
+   "canvas": "162_89v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2813,
+    3576,
+    530,
+    137
+   ],
+   "bbox_panel_frac": [
+    0.6922,
+    0.962,
+    0.1388,
+    0.038
+   ],
+   "jar_like": false,
+   "parch": [
+    193,
+    173,
+    154
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_00",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1888,
+    129,
+    698,
+    322
+   ],
+   "bbox_panel_frac": [
+    0.5328,
+    0.0,
+    0.294,
+    0.091
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_01",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2643,
+    306,
+    279,
+    272
+   ],
+   "bbox_panel_frac": [
+    0.8507,
+    0.05,
+    0.1179,
+    0.077
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_02",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1388,
+    369,
+    535,
+    584
+   ],
+   "bbox_panel_frac": [
+    0.3224,
+    0.068,
+    0.2254,
+    0.165
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_03",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2246,
+    447,
+    251,
+    311
+   ],
+   "bbox_panel_frac": [
+    0.6836,
+    0.09,
+    0.106,
+    0.088
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_04",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1140,
+    511,
+    240,
+    591
+   ],
+   "bbox_panel_frac": [
+    0.2179,
+    0.108,
+    0.1015,
+    0.167
+   ],
+   "jar_like": true,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_05",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    690,
+    550,
+    435,
+    655
+   ],
+   "bbox_panel_frac": [
+    0.0284,
+    0.119,
+    0.1836,
+    0.185
+   ],
+   "jar_like": true,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_06",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2458,
+    610,
+    414,
+    538
+   ],
+   "bbox_panel_frac": [
+    0.7731,
+    0.136,
+    0.1746,
+    0.152
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_07",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    743,
+    1504,
+    251,
+    481
+   ],
+   "bbox_panel_frac": [
+    0.0507,
+    0.388,
+    0.106,
+    0.136
+   ],
+   "jar_like": true,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_08",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    732,
+    2195,
+    368,
+    581
+   ],
+   "bbox_panel_frac": [
+    0.0463,
+    0.583,
+    0.1552,
+    0.164
+   ],
+   "jar_like": true,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_09",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1097,
+    2312,
+    464,
+    343
+   ],
+   "bbox_panel_frac": [
+    0.2,
+    0.616,
+    0.1955,
+    0.097
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_10",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1962,
+    2319,
+    375,
+    187
+   ],
+   "bbox_panel_frac": [
+    0.5642,
+    0.618,
+    0.1582,
+    0.053
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_11",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2129,
+    2503,
+    294,
+    279
+   ],
+   "bbox_panel_frac": [
+    0.6343,
+    0.67,
+    0.1239,
+    0.079
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_12",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2774,
+    2514,
+    198,
+    248
+   ],
+   "bbox_panel_frac": [
+    0.906,
+    0.673,
+    0.0836,
+    0.07
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_13",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1732,
+    2613,
+    1027,
+    1059
+   ],
+   "bbox_panel_frac": [
+    0.4672,
+    0.701,
+    0.4328,
+    0.299
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_14",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1470,
+    2645,
+    428,
+    630
+   ],
+   "bbox_panel_frac": [
+    0.3567,
+    0.71,
+    0.1806,
+    0.178
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_15",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2777,
+    3247,
+    219,
+    340
+   ],
+   "bbox_panel_frac": [
+    0.9075,
+    0.88,
+    0.0925,
+    0.096
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f89v1_p1_16",
+   "page": "f89v1",
+   "kind": "pharma",
+   "canvas": "163_89v_part_and_90r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    856,
+    3261,
+    861,
+    411
+   ],
+   "bbox_panel_frac": [
+    0.0985,
+    0.884,
+    0.3627,
+    0.116
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    174,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_00",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    803,
+    153,
+    159,
+    289
+   ],
+   "bbox_panel_frac": [
+    0.3062,
+    0.02,
+    0.0607,
+    0.08
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_01",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1781,
+    251,
+    159,
+    267
+   ],
+   "bbox_panel_frac": [
+    0.6786,
+    0.047,
+    0.0607,
+    0.074
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_02",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2193,
+    265,
+    206,
+    181
+   ],
+   "bbox_panel_frac": [
+    0.8359,
+    0.051,
+    0.0786,
+    0.05
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_03",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1143,
+    283,
+    133,
+    220
+   ],
+   "bbox_panel_frac": [
+    0.4359,
+    0.056,
+    0.051,
+    0.061
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_04",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1980,
+    330,
+    144,
+    267
+   ],
+   "bbox_panel_frac": [
+    0.7545,
+    0.069,
+    0.0552,
+    0.074
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_05",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    260,
+    363,
+    314,
+    481
+   ],
+   "bbox_panel_frac": [
+    0.0993,
+    0.078,
+    0.12,
+    0.133
+   ],
+   "jar_like": true,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_06",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    615,
+    609,
+    362,
+    170
+   ],
+   "bbox_panel_frac": [
+    0.2345,
+    0.146,
+    0.1379,
+    0.047
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_07",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1006,
+    609,
+    535,
+    296
+   ],
+   "bbox_panel_frac": [
+    0.3834,
+    0.146,
+    0.2041,
+    0.082
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_08",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    282,
+    1123,
+    398,
+    441
+   ],
+   "bbox_panel_frac": [
+    0.1076,
+    0.288,
+    0.1517,
+    0.122
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_09",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    698,
+    1156,
+    170,
+    173
+   ],
+   "bbox_panel_frac": [
+    0.2662,
+    0.297,
+    0.0648,
+    0.048
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_10",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1343,
+    1170,
+    383,
+    242
+   ],
+   "bbox_panel_frac": [
+    0.5117,
+    0.301,
+    0.1462,
+    0.067
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_11",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1828,
+    1224,
+    173,
+    181
+   ],
+   "bbox_panel_frac": [
+    0.6966,
+    0.316,
+    0.0662,
+    0.05
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_12",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    901,
+    1232,
+    152,
+    206
+   ],
+   "bbox_panel_frac": [
+    0.3434,
+    0.318,
+    0.0579,
+    0.057
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_13",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2381,
+    1445,
+    202,
+    296
+   ],
+   "bbox_panel_frac": [
+    0.9076,
+    0.377,
+    0.0772,
+    0.082
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_14",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    293,
+    1728,
+    242,
+    177
+   ],
+   "bbox_panel_frac": [
+    0.1117,
+    0.455,
+    0.0924,
+    0.049
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_15",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    825,
+    1807,
+    177,
+    170
+   ],
+   "bbox_panel_frac": [
+    0.3145,
+    0.477,
+    0.0676,
+    0.047
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_16",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    278,
+    1912,
+    260,
+    224
+   ],
+   "bbox_panel_frac": [
+    0.1062,
+    0.506,
+    0.0993,
+    0.062
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_17",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1962,
+    2318,
+    626,
+    318
+   ],
+   "bbox_panel_frac": [
+    0.7476,
+    0.618,
+    0.2386,
+    0.088
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_18",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    246,
+    2484,
+    289,
+    452
+   ],
+   "bbox_panel_frac": [
+    0.0938,
+    0.664,
+    0.1103,
+    0.125
+   ],
+   "jar_like": true,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_19",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1911,
+    2651,
+    369,
+    376
+   ],
+   "bbox_panel_frac": [
+    0.7283,
+    0.71,
+    0.1407,
+    0.104
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_20",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    669,
+    2662,
+    1147,
+    387
+   ],
+   "bbox_panel_frac": [
+    0.2552,
+    0.713,
+    0.4372,
+    0.107
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_21",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2309,
+    2940,
+    199,
+    224
+   ],
+   "bbox_panel_frac": [
+    0.88,
+    0.79,
+    0.0759,
+    0.062
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99r_p1_22",
+   "page": "f99r",
+   "kind": "pharma",
+   "canvas": "174_99r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2200,
+    3172,
+    224,
+    224
+   ],
+   "bbox_panel_frac": [
+    0.8386,
+    0.854,
+    0.0855,
+    0.062
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    175,
+    156
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_00",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1330,
+    86,
+    462,
+    254
+   ],
+   "bbox_panel_frac": [
+    0.4563,
+    0.0,
+    0.1708,
+    0.072
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_01",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    399,
+    230,
+    211,
+    211
+   ],
+   "bbox_panel_frac": [
+    0.1121,
+    0.041,
+    0.0782,
+    0.06
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_02",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    963,
+    251,
+    211,
+    317
+   ],
+   "bbox_panel_frac": [
+    0.3207,
+    0.047,
+    0.0782,
+    0.09
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_03",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2008,
+    262,
+    151,
+    215
+   ],
+   "bbox_panel_frac": [
+    0.7066,
+    0.05,
+    0.0561,
+    0.061
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_04",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1433,
+    318,
+    151,
+    151
+   ],
+   "bbox_panel_frac": [
+    0.4941,
+    0.066,
+    0.0561,
+    0.043
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_05",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2121,
+    459,
+    201,
+    158
+   ],
+   "bbox_panel_frac": [
+    0.7484,
+    0.106,
+    0.0743,
+    0.045
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_06",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    364,
+    657,
+    285,
+    197
+   ],
+   "bbox_panel_frac": [
+    0.0991,
+    0.162,
+    0.1056,
+    0.056
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_07",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    427,
+    946,
+    229,
+    243
+   ],
+   "bbox_panel_frac": [
+    0.1226,
+    0.244,
+    0.0847,
+    0.069
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_08",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1902,
+    1017,
+    257,
+    282
+   ],
+   "bbox_panel_frac": [
+    0.6675,
+    0.264,
+    0.0952,
+    0.08
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_09",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    903,
+    1035,
+    208,
+    215
+   ],
+   "bbox_panel_frac": [
+    0.2986,
+    0.269,
+    0.0769,
+    0.061
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_10",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1376,
+    1059,
+    313,
+    317
+   ],
+   "bbox_panel_frac": [
+    0.4733,
+    0.276,
+    0.116,
+    0.09
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_11",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    424,
+    1190,
+    246,
+    282
+   ],
+   "bbox_panel_frac": [
+    0.1213,
+    0.313,
+    0.0913,
+    0.08
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_12",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    170,
+    1299,
+    137,
+    906
+   ],
+   "bbox_panel_frac": [
+    0.0274,
+    0.344,
+    0.0508,
+    0.257
+   ],
+   "jar_like": true,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_13",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    455,
+    1641,
+    225,
+    144
+   ],
+   "bbox_panel_frac": [
+    0.133,
+    0.441,
+    0.0834,
+    0.041
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_14",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1831,
+    1761,
+    388,
+    476
+   ],
+   "bbox_panel_frac": [
+    0.6415,
+    0.475,
+    0.1434,
+    0.135
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_15",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    448,
+    1790,
+    257,
+    335
+   ],
+   "bbox_panel_frac": [
+    0.1304,
+    0.483,
+    0.0952,
+    0.095
+   ],
+   "jar_like": true,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_16",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1059,
+    1832,
+    373,
+    229
+   ],
+   "bbox_panel_frac": [
+    0.3559,
+    0.495,
+    0.1382,
+    0.065
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_17",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    96,
+    2287,
+    1097,
+    1326
+   ],
+   "bbox_panel_frac": [
+    0.0,
+    0.624,
+    0.4055,
+    0.376
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_18",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    455,
+    2354,
+    215,
+    222
+   ],
+   "bbox_panel_frac": [
+    0.133,
+    0.643,
+    0.0795,
+    0.063
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_19",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1919,
+    2421,
+    779,
+    807
+   ],
+   "bbox_panel_frac": [
+    0.6741,
+    0.662,
+    0.2881,
+    0.229
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_20",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    448,
+    2562,
+    246,
+    250
+   ],
+   "bbox_panel_frac": [
+    0.1304,
+    0.702,
+    0.0913,
+    0.071
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_21",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    843,
+    3109,
+    395,
+    250
+   ],
+   "bbox_panel_frac": [
+    0.2764,
+    0.857,
+    0.146,
+    0.071
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f99v_p1_22",
+   "page": "f99v",
+   "kind": "pharma",
+   "canvas": "175_99v.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2064,
+    3324,
+    194,
+    197
+   ],
+   "bbox_panel_frac": [
+    0.7275,
+    0.918,
+    0.0717,
+    0.056
+   ],
+   "jar_like": false,
+   "parch": [
+    194,
+    176,
+    157
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_00",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1147,
+    64,
+    369,
+    416
+   ],
+   "bbox_panel_frac": [
+    0.4421,
+    0.0,
+    0.1423,
+    0.115
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_01",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1530,
+    64,
+    955,
+    488
+   ],
+   "bbox_panel_frac": [
+    0.59,
+    0.0,
+    0.3682,
+    0.135
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_02",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    162,
+    158,
+    1067,
+    843
+   ],
+   "bbox_panel_frac": [
+    0.0628,
+    0.026,
+    0.4114,
+    0.233
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_03",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2453,
+    215,
+    141,
+    372
+   ],
+   "bbox_panel_frac": [
+    0.9456,
+    0.042,
+    0.0544,
+    0.103
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_04",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1111,
+    570,
+    340,
+    651
+   ],
+   "bbox_panel_frac": [
+    0.4282,
+    0.14,
+    0.1311,
+    0.18
+   ],
+   "jar_like": true,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_05",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1965,
+    599,
+    495,
+    647
+   ],
+   "bbox_panel_frac": [
+    0.7573,
+    0.148,
+    0.1911,
+    0.179
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_06",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1592,
+    686,
+    347,
+    383
+   ],
+   "bbox_panel_frac": [
+    0.6137,
+    0.172,
+    0.1339,
+    0.106
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_07",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    126,
+    708,
+    354,
+    300
+   ],
+   "bbox_panel_frac": [
+    0.0488,
+    0.178,
+    0.1367,
+    0.083
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_08",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1874,
+    737,
+    720,
+    1447
+   ],
+   "bbox_panel_frac": [
+    0.7225,
+    0.186,
+    0.2775,
+    0.4
+   ],
+   "jar_like": true,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_09",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    557,
+    740,
+    307,
+    372
+   ],
+   "bbox_panel_frac": [
+    0.2148,
+    0.187,
+    0.1185,
+    0.103
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_10",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    474,
+    907,
+    133,
+    173
+   ],
+   "bbox_panel_frac": [
+    0.1827,
+    0.233,
+    0.0516,
+    0.048
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_11",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    539,
+    1652,
+    807,
+    669
+   ],
+   "bbox_panel_frac": [
+    0.2078,
+    0.439,
+    0.311,
+    0.185
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_12",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1491,
+    1667,
+    398,
+    354
+   ],
+   "bbox_panel_frac": [
+    0.5746,
+    0.443,
+    0.1534,
+    0.098
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_13",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    303,
+    1746,
+    246,
+    492
+   ],
+   "bbox_panel_frac": [
+    0.1172,
+    0.465,
+    0.0948,
+    0.136
+   ],
+   "jar_like": true,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_14",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2055,
+    2058,
+    311,
+    166
+   ],
+   "bbox_panel_frac": [
+    0.7922,
+    0.551,
+    0.1199,
+    0.046
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_15",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1769,
+    2094,
+    303,
+    177
+   ],
+   "bbox_panel_frac": [
+    0.682,
+    0.561,
+    0.1172,
+    0.049
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_16",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    0,
+    2506,
+    141,
+    723
+   ],
+   "bbox_panel_frac": [
+    0.0,
+    0.675,
+    0.0544,
+    0.2
+   ],
+   "jar_like": true,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100r_p1_17",
+   "page": "f100r",
+   "kind": "pharma",
+   "canvas": "176_100r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    991,
+    3129,
+    1592,
+    553
+   ],
+   "bbox_panel_frac": [
+    0.3821,
+    0.847,
+    0.6137,
+    0.153
+   ],
+   "jar_like": false,
+   "parch": [
+    190,
+    174,
+    156
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_00",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    748,
+    105,
+    213,
+    133
+   ],
+   "bbox_panel_frac": [
+    0.065,
+    0.0,
+    0.0921,
+    0.038
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_01",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    990,
+    108,
+    227,
+    360
+   ],
+   "bbox_panel_frac": [
+    0.1692,
+    0.001,
+    0.0982,
+    0.103
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_02",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1200,
+    178,
+    154,
+    136
+   ],
+   "bbox_panel_frac": [
+    0.2598,
+    0.021,
+    0.0665,
+    0.039
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_03",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1781,
+    185,
+    385,
+    448
+   ],
+   "bbox_panel_frac": [
+    0.5106,
+    0.023,
+    0.1662,
+    0.128
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_04",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2334,
+    213,
+    581,
+    402
+   ],
+   "bbox_panel_frac": [
+    0.7492,
+    0.031,
+    0.2508,
+    0.115
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_05",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    776,
+    231,
+    357,
+    416
+   ],
+   "bbox_panel_frac": [
+    0.077,
+    0.036,
+    0.1541,
+    0.119
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_06",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1214,
+    343,
+    143,
+    126
+   ],
+   "bbox_panel_frac": [
+    0.2659,
+    0.068,
+    0.0619,
+    0.036
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_07",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1273,
+    479,
+    129,
+    259
+   ],
+   "bbox_panel_frac": [
+    0.2915,
+    0.107,
+    0.0559,
+    0.074
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_08",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    598,
+    574,
+    136,
+    122
+   ],
+   "bbox_panel_frac": [
+    0.0,
+    0.134,
+    0.0589,
+    0.035
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_09",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1519,
+    640,
+    175,
+    150
+   ],
+   "bbox_panel_frac": [
+    0.3973,
+    0.153,
+    0.0755,
+    0.043
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_10",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2569,
+    714,
+    220,
+    199
+   ],
+   "bbox_panel_frac": [
+    0.8505,
+    0.174,
+    0.0952,
+    0.057
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_11",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    885,
+    717,
+    1684,
+    682
+   ],
+   "bbox_panel_frac": [
+    0.1239,
+    0.175,
+    0.7266,
+    0.195
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_12",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    682,
+    955,
+    196,
+    259
+   ],
+   "bbox_panel_frac": [
+    0.0363,
+    0.243,
+    0.0846,
+    0.074
+   ],
+   "jar_like": true,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_13",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1676,
+    1334,
+    147,
+    203
+   ],
+   "bbox_panel_frac": [
+    0.4653,
+    0.351,
+    0.0634,
+    0.058
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_14",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    675,
+    1362,
+    546,
+    819
+   ],
+   "bbox_panel_frac": [
+    0.0332,
+    0.359,
+    0.2356,
+    0.234
+   ],
+   "jar_like": true,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_15",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1238,
+    1491,
+    556,
+    647
+   ],
+   "bbox_panel_frac": [
+    0.2764,
+    0.396,
+    0.2402,
+    0.185
+   ],
+   "jar_like": false,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_16",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1844,
+    1502,
+    360,
+    822
+   ],
+   "bbox_panel_frac": [
+    0.5378,
+    0.399,
+    0.1556,
+    0.235
+   ],
+   "jar_like": true,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f100v_p1_17",
+   "page": "f100v",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2331,
+    1540,
+    479,
+    843
+   ],
+   "bbox_panel_frac": [
+    0.7477,
+    0.41,
+    0.2069,
+    0.241
+   ],
+   "jar_like": true,
+   "parch": [
+    182,
+    165,
+    145
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_00",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4935,
+    105,
+    1446,
+    375
+   ],
+   "bbox_panel_frac": [
+    0.4571,
+    0.0,
+    0.3278,
+    0.108
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_01",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6568,
+    105,
+    368,
+    142
+   ],
+   "bbox_panel_frac": [
+    0.8274,
+    0.0,
+    0.0835,
+    0.041
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_02",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4149,
+    139,
+    326,
+    497
+   ],
+   "bbox_panel_frac": [
+    0.279,
+    0.01,
+    0.0741,
+    0.143
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_03",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3777,
+    143,
+    330,
+    601
+   ],
+   "bbox_panel_frac": [
+    0.1946,
+    0.011,
+    0.0749,
+    0.173
+   ],
+   "jar_like": true,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_04",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3603,
+    177,
+    170,
+    201
+   ],
+   "bbox_panel_frac": [
+    0.1552,
+    0.021,
+    0.0386,
+    0.058
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_05",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3012,
+    188,
+    180,
+    222
+   ],
+   "bbox_panel_frac": [
+    0.0213,
+    0.024,
+    0.041,
+    0.064
+   ],
+   "jar_like": true,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_06",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4406,
+    198,
+    521,
+    650
+   ],
+   "bbox_panel_frac": [
+    0.3373,
+    0.027,
+    0.1182,
+    0.187
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_07",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5505,
+    303,
+    417,
+    396
+   ],
+   "bbox_panel_frac": [
+    0.5863,
+    0.057,
+    0.0946,
+    0.114
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_08",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6395,
+    303,
+    549,
+    465
+   ],
+   "bbox_panel_frac": [
+    0.788,
+    0.057,
+    0.1245,
+    0.134
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_09",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3426,
+    393,
+    351,
+    375
+   ],
+   "bbox_panel_frac": [
+    0.1151,
+    0.083,
+    0.0796,
+    0.108
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_10",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3252,
+    445,
+    152,
+    285
+   ],
+   "bbox_panel_frac": [
+    0.0757,
+    0.098,
+    0.0347,
+    0.082
+   ],
+   "jar_like": true,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_11",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4924,
+    490,
+    354,
+    392
+   ],
+   "bbox_panel_frac": [
+    0.4547,
+    0.111,
+    0.0804,
+    0.113
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_12",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3805,
+    744,
+    465,
+    653
+   ],
+   "bbox_panel_frac": [
+    0.2009,
+    0.184,
+    0.1056,
+    0.188
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_13",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5251,
+    748,
+    194,
+    173
+   ],
+   "bbox_panel_frac": [
+    0.5288,
+    0.185,
+    0.0441,
+    0.05
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_14",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2919,
+    800,
+    500,
+    775
+   ],
+   "bbox_panel_frac": [
+    0.0,
+    0.2,
+    0.1135,
+    0.223
+   ],
+   "jar_like": true,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_15",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5098,
+    852,
+    716,
+    528
+   ],
+   "bbox_panel_frac": [
+    0.4941,
+    0.215,
+    0.1623,
+    0.152
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_16",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4517,
+    1053,
+    170,
+    215
+   ],
+   "bbox_panel_frac": [
+    0.3625,
+    0.273,
+    0.0386,
+    0.062
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_17",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5647,
+    1109,
+    434,
+    650
+   ],
+   "bbox_panel_frac": [
+    0.6186,
+    0.289,
+    0.0985,
+    0.187
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_18",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6408,
+    1116,
+    385,
+    389
+   ],
+   "bbox_panel_frac": [
+    0.7912,
+    0.291,
+    0.0875,
+    0.112
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_19",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4215,
+    1311,
+    285,
+    205
+   ],
+   "bbox_panel_frac": [
+    0.2939,
+    0.347,
+    0.0646,
+    0.059
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_20",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3840,
+    1530,
+    184,
+    177
+   ],
+   "bbox_panel_frac": [
+    0.2088,
+    0.41,
+    0.0418,
+    0.051
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_21",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2939,
+    1710,
+    236,
+    180
+   ],
+   "bbox_panel_frac": [
+    0.0047,
+    0.462,
+    0.0536,
+    0.052
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_22",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2939,
+    2082,
+    264,
+    232
+   ],
+   "bbox_panel_frac": [
+    0.0047,
+    0.569,
+    0.0599,
+    0.067
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_23",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6975,
+    2499,
+    246,
+    406
+   ],
+   "bbox_panel_frac": [
+    0.9196,
+    0.689,
+    0.0559,
+    0.117
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_24",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6680,
+    2513,
+    285,
+    420
+   ],
+   "bbox_panel_frac": [
+    0.8526,
+    0.693,
+    0.0646,
+    0.121
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_25",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6363,
+    2552,
+    163,
+    271
+   ],
+   "bbox_panel_frac": [
+    0.7809,
+    0.704,
+    0.037,
+    0.078
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_26",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5915,
+    2559,
+    462,
+    608
+   ],
+   "bbox_panel_frac": [
+    0.6793,
+    0.706,
+    0.1048,
+    0.175
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_27",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6513,
+    2652,
+    198,
+    295
+   ],
+   "bbox_panel_frac": [
+    0.8148,
+    0.733,
+    0.0449,
+    0.085
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_28",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4292,
+    2673,
+    636,
+    507
+   ],
+   "bbox_panel_frac": [
+    0.3113,
+    0.739,
+    0.1442,
+    0.146
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_29",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5317,
+    2684,
+    257,
+    319
+   ],
+   "bbox_panel_frac": [
+    0.5437,
+    0.742,
+    0.0583,
+    0.092
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_30",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3308,
+    2732,
+    497,
+    351
+   ],
+   "bbox_panel_frac": [
+    0.0883,
+    0.756,
+    0.1127,
+    0.101
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_31",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6370,
+    2823,
+    145,
+    305
+   ],
+   "bbox_panel_frac": [
+    0.7825,
+    0.782,
+    0.0331,
+    0.088
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_32",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3892,
+    2826,
+    291,
+    257
+   ],
+   "bbox_panel_frac": [
+    0.2206,
+    0.783,
+    0.0662,
+    0.074
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_33",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5046,
+    2885,
+    257,
+    191
+   ],
+   "bbox_panel_frac": [
+    0.4823,
+    0.8,
+    0.0583,
+    0.055
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_34",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6593,
+    2924,
+    184,
+    264
+   ],
+   "bbox_panel_frac": [
+    0.8329,
+    0.811,
+    0.0418,
+    0.076
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_35",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5393,
+    2930,
+    194,
+    194
+   ],
+   "bbox_panel_frac": [
+    0.5611,
+    0.813,
+    0.0441,
+    0.056
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_36",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3906,
+    3125,
+    264,
+    201
+   ],
+   "bbox_panel_frac": [
+    0.2238,
+    0.869,
+    0.0599,
+    0.058
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_37",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6940,
+    3139,
+    298,
+    180
+   ],
+   "bbox_panel_frac": [
+    0.9117,
+    0.873,
+    0.0678,
+    0.052
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_38",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6325,
+    3233,
+    316,
+    239
+   ],
+   "bbox_panel_frac": [
+    0.7723,
+    0.9,
+    0.0717,
+    0.069
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101r_p1_39",
+   "page": "f101r",
+   "kind": "pharma",
+   "canvas": "177_100v_and_101r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5077,
+    3257,
+    354,
+    323
+   ],
+   "bbox_panel_frac": [
+    0.4894,
+    0.907,
+    0.0804,
+    0.093
+   ],
+   "jar_like": false,
+   "parch": [
+    179,
+    165,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_00",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2067,
+    58,
+    479,
+    850
+   ],
+   "bbox_panel_frac": [
+    0.7914,
+    0.0,
+    0.1836,
+    0.234
+   ],
+   "jar_like": true,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_01",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1926,
+    65,
+    178,
+    170
+   ],
+   "bbox_panel_frac": [
+    0.7371,
+    0.002,
+    0.0682,
+    0.047
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_02",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1511,
+    72,
+    134,
+    181
+   ],
+   "bbox_panel_frac": [
+    0.5786,
+    0.004,
+    0.0515,
+    0.05
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_03",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    523,
+    94,
+    385,
+    599
+   ],
+   "bbox_panel_frac": [
+    0.2003,
+    0.01,
+    0.1474,
+    0.165
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_04",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1380,
+    167,
+    181,
+    225
+   ],
+   "bbox_panel_frac": [
+    0.5285,
+    0.03,
+    0.0695,
+    0.062
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_05",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1628,
+    174,
+    167,
+    192
+   ],
+   "bbox_panel_frac": [
+    0.6231,
+    0.032,
+    0.064,
+    0.053
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_06",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2056,
+    196,
+    218,
+    479
+   ],
+   "bbox_panel_frac": [
+    0.7872,
+    0.038,
+    0.0834,
+    0.132
+   ],
+   "jar_like": true,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_07",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2438,
+    210,
+    163,
+    359
+   ],
+   "bbox_panel_frac": [
+    0.9332,
+    0.042,
+    0.0626,
+    0.099
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_08",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    283,
+    221,
+    218,
+    526
+   ],
+   "bbox_panel_frac": [
+    0.1085,
+    0.045,
+    0.0834,
+    0.145
+   ],
+   "jar_like": true,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_09",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    955,
+    246,
+    327,
+    585
+   ],
+   "bbox_panel_frac": [
+    0.3658,
+    0.052,
+    0.1252,
+    0.161
+   ],
+   "jar_like": true,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_10",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1718,
+    276,
+    247,
+    203
+   ],
+   "bbox_panel_frac": [
+    0.6579,
+    0.06,
+    0.0946,
+    0.056
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_11",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1290,
+    334,
+    170,
+    159
+   ],
+   "bbox_panel_frac": [
+    0.4937,
+    0.076,
+    0.0654,
+    0.044
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_12",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    766,
+    446,
+    214,
+    214
+   ],
+   "bbox_panel_frac": [
+    0.2935,
+    0.107,
+    0.0821,
+    0.059
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_13",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1671,
+    508,
+    297,
+    236
+   ],
+   "bbox_panel_frac": [
+    0.6398,
+    0.124,
+    0.114,
+    0.065
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_14",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1337,
+    526,
+    156,
+    138
+   ],
+   "bbox_panel_frac": [
+    0.5118,
+    0.129,
+    0.0598,
+    0.038
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_15",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    973,
+    661,
+    853,
+    639
+   ],
+   "bbox_panel_frac": [
+    0.3727,
+    0.166,
+    0.3268,
+    0.176
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_16",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    308,
+    835,
+    283,
+    541
+   ],
+   "bbox_panel_frac": [
+    0.1182,
+    0.214,
+    0.1085,
+    0.149
+   ],
+   "jar_like": true,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_17",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    585,
+    915,
+    625,
+    508
+   ],
+   "bbox_panel_frac": [
+    0.2239,
+    0.236,
+    0.2392,
+    0.14
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_18",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    130,
+    937,
+    130,
+    297
+   ],
+   "bbox_panel_frac": [
+    0.0501,
+    0.242,
+    0.0501,
+    0.082
+   ],
+   "jar_like": true,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_19",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1751,
+    1031,
+    850,
+    686
+   ],
+   "bbox_panel_frac": [
+    0.6704,
+    0.268,
+    0.3255,
+    0.189
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_20",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1210,
+    1431,
+    228,
+    210
+   ],
+   "bbox_panel_frac": [
+    0.4631,
+    0.378,
+    0.0876,
+    0.058
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_21",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    588,
+    1438,
+    363,
+    766
+   ],
+   "bbox_panel_frac": [
+    0.2253,
+    0.38,
+    0.1391,
+    0.211
+   ],
+   "jar_like": true,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_22",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1250,
+    1438,
+    545,
+    439
+   ],
+   "bbox_panel_frac": [
+    0.4784,
+    0.38,
+    0.2086,
+    0.121
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_23",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    367,
+    1497,
+    203,
+    592
+   ],
+   "bbox_panel_frac": [
+    0.1405,
+    0.396,
+    0.0779,
+    0.163
+   ],
+   "jar_like": true,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_24",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    178,
+    1707,
+    127,
+    174
+   ],
+   "bbox_panel_frac": [
+    0.0682,
+    0.454,
+    0.0487,
+    0.048
+   ],
+   "jar_like": true,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_25",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2289,
+    1715,
+    265,
+    908
+   ],
+   "bbox_panel_frac": [
+    0.8762,
+    0.456,
+    0.1015,
+    0.25
+   ],
+   "jar_like": true,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_26",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    185,
+    2107,
+    138,
+    192
+   ],
+   "bbox_panel_frac": [
+    0.0709,
+    0.564,
+    0.0529,
+    0.053
+   ],
+   "jar_like": true,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_27",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2263,
+    3121,
+    319,
+    461
+   ],
+   "bbox_panel_frac": [
+    0.8665,
+    0.843,
+    0.1224,
+    0.127
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_28",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    265,
+    3223,
+    134,
+    258
+   ],
+   "bbox_panel_frac": [
+    0.1015,
+    0.871,
+    0.0515,
+    0.071
+   ],
+   "jar_like": true,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p1_29",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "178_101v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2104,
+    3535,
+    196,
+    127
+   ],
+   "bbox_panel_frac": [
+    0.8053,
+    0.957,
+    0.0751,
+    0.035
+   ],
+   "jar_like": false,
+   "parch": [
+    186,
+    168,
+    147
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_00",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    544,
+    160,
+    660,
+    907
+   ],
+   "bbox_panel_frac": [
+    0.086,
+    0.0,
+    0.2609,
+    0.254
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_01",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    1251,
+    231,
+    571,
+    1314
+   ],
+   "bbox_panel_frac": [
+    0.3653,
+    0.02,
+    0.2257,
+    0.368
+   ],
+   "jar_like": true,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_02",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    1512,
+    245,
+    1192,
+    603
+   ],
+   "bbox_panel_frac": [
+    0.4683,
+    0.024,
+    0.4711,
+    0.169
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_03",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    451,
+    374,
+    160,
+    171
+   ],
+   "bbox_panel_frac": [
+    0.0494,
+    0.06,
+    0.0635,
+    0.048
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_04",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    523,
+    677,
+    160,
+    253
+   ],
+   "bbox_panel_frac": [
+    0.0776,
+    0.145,
+    0.0635,
+    0.071
+   ],
+   "jar_like": true,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_05",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    801,
+    781,
+    135,
+    146
+   ],
+   "bbox_panel_frac": [
+    0.1876,
+    0.174,
+    0.0536,
+    0.041
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_06",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    1687,
+    845,
+    271,
+    132
+   ],
+   "bbox_panel_frac": [
+    0.5374,
+    0.192,
+    0.1072,
+    0.037
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_07",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    2162,
+    859,
+    678,
+    557
+   ],
+   "bbox_panel_frac": [
+    0.725,
+    0.196,
+    0.268,
+    0.156
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_08",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    444,
+    1031,
+    310,
+    374
+   ],
+   "bbox_panel_frac": [
+    0.0465,
+    0.244,
+    0.1227,
+    0.105
+   ],
+   "jar_like": true,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_09",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    680,
+    1034,
+    728,
+    371
+   ],
+   "bbox_panel_frac": [
+    0.1396,
+    0.245,
+    0.2877,
+    0.104
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_10",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    1912,
+    1049,
+    217,
+    321
+   ],
+   "bbox_panel_frac": [
+    0.6262,
+    0.249,
+    0.086,
+    0.09
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_11",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    930,
+    1302,
+    189,
+    182
+   ],
+   "bbox_panel_frac": [
+    0.2384,
+    0.32,
+    0.0748,
+    0.051
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_12",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    2112,
+    1370,
+    257,
+    164
+   ],
+   "bbox_panel_frac": [
+    0.7052,
+    0.339,
+    0.1016,
+    0.046
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_13",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    2405,
+    1531,
+    249,
+    603
+   ],
+   "bbox_panel_frac": [
+    0.8209,
+    0.384,
+    0.0987,
+    0.169
+   ],
+   "jar_like": true,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_14",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    1926,
+    1545,
+    464,
+    585
+   ],
+   "bbox_panel_frac": [
+    0.6319,
+    0.388,
+    0.1834,
+    0.164
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_15",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    791,
+    1549,
+    239,
+    210
+   ],
+   "bbox_panel_frac": [
+    0.1834,
+    0.389,
+    0.0945,
+    0.059
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_16",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    1126,
+    1609,
+    217,
+    410
+   ],
+   "bbox_panel_frac": [
+    0.3159,
+    0.406,
+    0.086,
+    0.115
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_17",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    1530,
+    1756,
+    310,
+    399
+   ],
+   "bbox_panel_frac": [
+    0.4753,
+    0.447,
+    0.1227,
+    0.112
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_18",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    830,
+    1766,
+    267,
+    174
+   ],
+   "bbox_panel_frac": [
+    0.1989,
+    0.45,
+    0.1058,
+    0.049
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_19",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    2426,
+    1799,
+    124,
+    378
+   ],
+   "bbox_panel_frac": [
+    0.8293,
+    0.459,
+    0.0494,
+    0.106
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_20",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    1001,
+    1920,
+    246,
+    189
+   ],
+   "bbox_panel_frac": [
+    0.2666,
+    0.493,
+    0.0973,
+    0.053
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_21",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    630,
+    2116,
+    185,
+    135
+   ],
+   "bbox_panel_frac": [
+    0.1199,
+    0.548,
+    0.0733,
+    0.038
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_22",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    1566,
+    2249,
+    282,
+    196
+   ],
+   "bbox_panel_frac": [
+    0.4894,
+    0.585,
+    0.1114,
+    0.055
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f101v_p2_23",
+   "page": "f101v",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 2,
+   "bbox_canvas": [
+    476,
+    3470,
+    299,
+    260
+   ],
+   "bbox_panel_frac": [
+    0.0592,
+    0.927,
+    0.1185,
+    0.073
+   ],
+   "jar_like": false,
+   "parch": [
+    177,
+    161,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_00",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3313,
+    126,
+    1025,
+    373
+   ],
+   "bbox_panel_frac": [
+    0.188,
+    0.006,
+    0.4256,
+    0.103
+   ],
+   "jar_like": false,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_01",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2868,
+    202,
+    405,
+    583
+   ],
+   "bbox_panel_frac": [
+    0.003,
+    0.027,
+    0.1684,
+    0.161
+   ],
+   "jar_like": true,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_02",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4364,
+    253,
+    677,
+    489
+   ],
+   "bbox_panel_frac": [
+    0.6241,
+    0.041,
+    0.2812,
+    0.135
+   ],
+   "jar_like": false,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_03",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3955,
+    507,
+    192,
+    141
+   ],
+   "bbox_panel_frac": [
+    0.4541,
+    0.111,
+    0.0797,
+    0.039
+   ],
+   "jar_like": false,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_04",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3582,
+    594,
+    333,
+    257
+   ],
+   "bbox_panel_frac": [
+    0.2992,
+    0.135,
+    0.1383,
+    0.071
+   ],
+   "jar_like": false,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_05",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3915,
+    663,
+    137,
+    134
+   ],
+   "bbox_panel_frac": [
+    0.4376,
+    0.154,
+    0.0571,
+    0.037
+   ],
+   "jar_like": false,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_06",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3295,
+    673,
+    221,
+    173
+   ],
+   "bbox_panel_frac": [
+    0.1805,
+    0.157,
+    0.0917,
+    0.048
+   ],
+   "jar_like": false,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_07",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4104,
+    1079,
+    804,
+    568
+   ],
+   "bbox_panel_frac": [
+    0.5158,
+    0.269,
+    0.3338,
+    0.157
+   ],
+   "jar_like": false,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_08",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2875,
+    1286,
+    250,
+    366
+   ],
+   "bbox_panel_frac": [
+    0.006,
+    0.326,
+    0.1038,
+    0.101
+   ],
+   "jar_like": true,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_09",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2889,
+    2047,
+    275,
+    434
+   ],
+   "bbox_panel_frac": [
+    0.012,
+    0.536,
+    0.1143,
+    0.12
+   ],
+   "jar_like": true,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_10",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4488,
+    2192,
+    467,
+    239
+   ],
+   "bbox_panel_frac": [
+    0.6752,
+    0.576,
+    0.194,
+    0.066
+   ],
+   "jar_like": false,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_11",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2973,
+    2355,
+    1344,
+    1152
+   ],
+   "bbox_panel_frac": [
+    0.0466,
+    0.621,
+    0.5579,
+    0.318
+   ],
+   "jar_like": false,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_12",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4571,
+    2525,
+    489,
+    337
+   ],
+   "bbox_panel_frac": [
+    0.7098,
+    0.668,
+    0.203,
+    0.093
+   ],
+   "jar_like": false,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_13",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    3940,
+    2960,
+    340,
+    253
+   ],
+   "bbox_panel_frac": [
+    0.4481,
+    0.788,
+    0.1414,
+    0.07
+   ],
+   "jar_like": false,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r1_p1_14",
+   "page": "f102r1",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    4136,
+    3036,
+    463,
+    260
+   ],
+   "bbox_panel_frac": [
+    0.5293,
+    0.809,
+    0.1925,
+    0.072
+   ],
+   "jar_like": false,
+   "parch": [
+    189,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_00",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6907,
+    335,
+    379,
+    402
+   ],
+   "bbox_panel_frac": [
+    0.6039,
+    0.0,
+    0.1402,
+    0.121
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_01",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6274,
+    351,
+    665,
+    469
+   ],
+   "bbox_panel_frac": [
+    0.3702,
+    0.005,
+    0.246,
+    0.141
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_02",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5273,
+    554,
+    222,
+    316
+   ],
+   "bbox_panel_frac": [
+    0.0,
+    0.066,
+    0.0824,
+    0.095
+   ],
+   "jar_like": true,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_03",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5702,
+    587,
+    232,
+    153
+   ],
+   "bbox_panel_frac": [
+    0.1587,
+    0.076,
+    0.0861,
+    0.046
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_04",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    7489,
+    694,
+    339,
+    296
+   ],
+   "bbox_panel_frac": [
+    0.8192,
+    0.108,
+    0.1255,
+    0.089
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_05",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5931,
+    714,
+    183,
+    156
+   ],
+   "bbox_panel_frac": [
+    0.2435,
+    0.114,
+    0.0677,
+    0.047
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_06",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6883,
+    1017,
+    173,
+    159
+   ],
+   "bbox_panel_frac": [
+    0.5953,
+    0.205,
+    0.064,
+    0.048
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_07",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    7782,
+    1173,
+    196,
+    256
+   ],
+   "bbox_panel_frac": [
+    0.9274,
+    0.252,
+    0.0726,
+    0.077
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_08",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5279,
+    1180,
+    222,
+    216
+   ],
+   "bbox_panel_frac": [
+    0.0025,
+    0.254,
+    0.0824,
+    0.065
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_09",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6138,
+    1323,
+    472,
+    326
+   ],
+   "bbox_panel_frac": [
+    0.3198,
+    0.297,
+    0.1747,
+    0.098
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_10",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5708,
+    1330,
+    362,
+    302
+   ],
+   "bbox_panel_frac": [
+    0.1611,
+    0.299,
+    0.1341,
+    0.091
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_11",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6800,
+    1346,
+    156,
+    199
+   ],
+   "bbox_panel_frac": [
+    0.5646,
+    0.304,
+    0.0578,
+    0.06
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_12",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5336,
+    1393,
+    176,
+    286
+   ],
+   "bbox_panel_frac": [
+    0.0234,
+    0.318,
+    0.0652,
+    0.086
+   ],
+   "jar_like": true,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_13",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5273,
+    1995,
+    242,
+    173
+   ],
+   "bbox_panel_frac": [
+    0.0,
+    0.499,
+    0.0898,
+    0.052
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_14",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5273,
+    2198,
+    246,
+    449
+   ],
+   "bbox_panel_frac": [
+    0.0,
+    0.56,
+    0.091,
+    0.135
+   ],
+   "jar_like": true,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_15",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5622,
+    2581,
+    149,
+    329
+   ],
+   "bbox_panel_frac": [
+    0.1292,
+    0.675,
+    0.0554,
+    0.099
+   ],
+   "jar_like": true,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_16",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6897,
+    2970,
+    232,
+    232
+   ],
+   "bbox_panel_frac": [
+    0.6002,
+    0.792,
+    0.0861,
+    0.07
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_17",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    6228,
+    2990,
+    505,
+    359
+   ],
+   "bbox_panel_frac": [
+    0.353,
+    0.798,
+    0.187,
+    0.108
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_18",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5316,
+    3000,
+    159,
+    272
+   ],
+   "bbox_panel_frac": [
+    0.016,
+    0.801,
+    0.059,
+    0.082
+   ],
+   "jar_like": true,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102r2_p1_19",
+   "page": "f102r2",
+   "kind": "pharma",
+   "canvas": "179_101v_part_and_102r.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    5961,
+    3100,
+    149,
+    129
+   ],
+   "bbox_panel_frac": [
+    0.2546,
+    0.831,
+    0.0554,
+    0.039
+   ],
+   "jar_like": false,
+   "parch": [
+    173,
+    158,
+    142
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_00",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2164,
+    127,
+    284,
+    262
+   ],
+   "bbox_panel_frac": [
+    0.7399,
+    0.015,
+    0.1046,
+    0.072
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_01",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    967,
+    178,
+    555,
+    613
+   ],
+   "bbox_panel_frac": [
+    0.3003,
+    0.029,
+    0.2038,
+    0.168
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_02",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    704,
+    215,
+    215,
+    153
+   ],
+   "bbox_panel_frac": [
+    0.2038,
+    0.039,
+    0.0791,
+    0.042
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_03",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1525,
+    226,
+    460,
+    171
+   ],
+   "bbox_panel_frac": [
+    0.5054,
+    0.042,
+    0.1689,
+    0.047
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_04",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2741,
+    321,
+    131,
+    248
+   ],
+   "bbox_panel_frac": [
+    0.9517,
+    0.068,
+    0.0483,
+    0.068
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_05",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1547,
+    394,
+    281,
+    489
+   ],
+   "bbox_panel_frac": [
+    0.5134,
+    0.088,
+    0.1032,
+    0.134
+   ],
+   "jar_like": true,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_06",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1839,
+    427,
+    379,
+    383
+   ],
+   "bbox_panel_frac": [
+    0.6206,
+    0.097,
+    0.1394,
+    0.105
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_07",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2296,
+    441,
+    365,
+    281
+   ],
+   "bbox_panel_frac": [
+    0.7882,
+    0.101,
+    0.134,
+    0.077
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_08",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    857,
+    460,
+    149,
+    314
+   ],
+   "bbox_panel_frac": [
+    0.2601,
+    0.106,
+    0.055,
+    0.086
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_09",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    302,
+    514,
+    233,
+    193
+   ],
+   "bbox_panel_frac": [
+    0.0563,
+    0.121,
+    0.0858,
+    0.053
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_10",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1295,
+    562,
+    167,
+    164
+   ],
+   "bbox_panel_frac": [
+    0.4209,
+    0.134,
+    0.0617,
+    0.045
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_11",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2117,
+    755,
+    635,
+    423
+   ],
+   "bbox_panel_frac": [
+    0.7225,
+    0.187,
+    0.2332,
+    0.116
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_12",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    835,
+    777,
+    755,
+    255
+   ],
+   "bbox_panel_frac": [
+    0.252,
+    0.193,
+    0.2775,
+    0.07
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_13",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1766,
+    836,
+    321,
+    303
+   ],
+   "bbox_panel_frac": [
+    0.5938,
+    0.209,
+    0.118,
+    0.083
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_14",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    320,
+    1066,
+    208,
+    222
+   ],
+   "bbox_panel_frac": [
+    0.063,
+    0.272,
+    0.0764,
+    0.061
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_15",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2730,
+    1143,
+    135,
+    266
+   ],
+   "bbox_panel_frac": [
+    0.9477,
+    0.293,
+    0.0496,
+    0.073
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_16",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    455,
+    1460,
+    1533,
+    668
+   ],
+   "bbox_panel_frac": [
+    0.1126,
+    0.38,
+    0.563,
+    0.183
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_17",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2248,
+    1577,
+    270,
+    219
+   ],
+   "bbox_panel_frac": [
+    0.7708,
+    0.412,
+    0.0992,
+    0.06
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_18",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2541,
+    1588,
+    157,
+    226
+   ],
+   "bbox_panel_frac": [
+    0.878,
+    0.415,
+    0.0576,
+    0.062
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_19",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2080,
+    1851,
+    222,
+    251
+   ],
+   "bbox_panel_frac": [
+    0.7091,
+    0.487,
+    0.0818,
+    0.069
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_20",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2650,
+    1862,
+    193,
+    273
+   ],
+   "bbox_panel_frac": [
+    0.9182,
+    0.49,
+    0.071,
+    0.075
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_21",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    652,
+    2019,
+    916,
+    361
+   ],
+   "bbox_panel_frac": [
+    0.185,
+    0.533,
+    0.3365,
+    0.099
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_22",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2537,
+    2136,
+    295,
+    1216
+   ],
+   "bbox_panel_frac": [
+    0.8767,
+    0.565,
+    0.1086,
+    0.333
+   ],
+   "jar_like": true,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_23",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2409,
+    3272,
+    138,
+    146
+   ],
+   "bbox_panel_frac": [
+    0.8298,
+    0.876,
+    0.0509,
+    0.04
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v2_p1_24",
+   "page": "f102v2",
+   "kind": "pharma",
+   "canvas": "180_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    200,
+    3399,
+    379,
+    233
+   ],
+   "bbox_panel_frac": [
+    0.0188,
+    0.911,
+    0.1394,
+    0.064
+   ],
+   "jar_like": false,
+   "parch": [
+    187,
+    168,
+    148
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_00",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    363,
+    80,
+    1528,
+    662
+   ],
+   "bbox_panel_frac": [
+    0.0965,
+    0.001,
+    0.5586,
+    0.188
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_01",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1895,
+    98,
+    676,
+    352
+   ],
+   "bbox_panel_frac": [
+    0.6564,
+    0.006,
+    0.2471,
+    0.1
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_02",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2167,
+    489,
+    310,
+    394
+   ],
+   "bbox_panel_frac": [
+    0.7555,
+    0.117,
+    0.1133,
+    0.112
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_03",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1363,
+    510,
+    133,
+    193
+   ],
+   "bbox_panel_frac": [
+    0.462,
+    0.123,
+    0.0489,
+    0.055
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_04",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    2480,
+    732,
+    133,
+    147
+   ],
+   "bbox_panel_frac": [
+    0.87,
+    0.186,
+    0.0489,
+    0.042
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_05",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    785,
+    749,
+    140,
+    155
+   ],
+   "bbox_panel_frac": [
+    0.251,
+    0.191,
+    0.0515,
+    0.044
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_06",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1152,
+    767,
+    359,
+    334
+   ],
+   "bbox_panel_frac": [
+    0.3848,
+    0.196,
+    0.1313,
+    0.095
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_07",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    447,
+    771,
+    172,
+    207
+   ],
+   "bbox_panel_frac": [
+    0.1274,
+    0.197,
+    0.0631,
+    0.059
+   ],
+   "jar_like": true,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_08",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    930,
+    940,
+    310,
+    179
+   ],
+   "bbox_panel_frac": [
+    0.3037,
+    0.245,
+    0.1133,
+    0.051
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_09",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    401,
+    964,
+    274,
+    440
+   ],
+   "bbox_panel_frac": [
+    0.1107,
+    0.252,
+    0.1004,
+    0.125
+   ],
+   "jar_like": true,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_10",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    472,
+    1708,
+    207,
+    260
+   ],
+   "bbox_panel_frac": [
+    0.1364,
+    0.463,
+    0.0759,
+    0.074
+   ],
+   "jar_like": true,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_11",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1603,
+    1803,
+    334,
+    271
+   ],
+   "bbox_panel_frac": [
+    0.5495,
+    0.49,
+    0.1223,
+    0.077
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_12",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1821,
+    1820,
+    863,
+    694
+   ],
+   "bbox_panel_frac": [
+    0.6293,
+    0.495,
+    0.3153,
+    0.197
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_13",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    444,
+    1940,
+    708,
+    616
+   ],
+   "bbox_panel_frac": [
+    0.1261,
+    0.529,
+    0.2587,
+    0.175
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_14",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    1289,
+    1940,
+    391,
+    496
+   ],
+   "bbox_panel_frac": [
+    0.435,
+    0.529,
+    0.1429,
+    0.141
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  },
+  {
+   "crop": "P_f102v1_p1_15",
+   "page": "f102v1",
+   "kind": "pharma",
+   "canvas": "181_102v_part.jpg",
+   "panel": 1,
+   "bbox_canvas": [
+    285,
+    3293,
+    616,
+    306
+   ],
+   "bbox_panel_frac": [
+    0.0682,
+    0.913,
+    0.2252,
+    0.087
+   ],
+   "jar_like": false,
+   "parch": [
+    192,
+    172,
+    153
+   ]
+  }
+ ]
+}

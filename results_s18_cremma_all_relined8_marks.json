@@ -1,0 +1,159 @@
+{
+ "row": {
+  "name": "cremma_all_relined8_marks",
+  "tokens": 25000,
+  "types": 9848,
+  "pages": 42,
+  "lines": 3141,
+  "errors": {},
+  "types_25k": 9848,
+  "h2": 3.682,
+  "sd_len": 2.506,
+  "jsd_first_fg": 0.004,
+  "p_init_enrich": 0.86,
+  "m_final_enrich": 1.04,
+  "cross_excess_eva": 0.048,
+  "redup_pct": 0.124,
+  "v1_pass": false,
+  "v1_missed": [
+   "h2",
+   "sd_len",
+   "jsd_first_fg",
+   "p_init_enrich",
+   "m_final_enrich",
+   "cross_excess_eva",
+   "redup_pct"
+  ],
+  "v1_full": {
+   "name": "cremma_all_relined8_marks",
+   "tokens": 25000,
+   "types": 9848,
+   "hapax_rate": 0.7486,
+   "mean_len": 4.318,
+   "sd_len": 2.506,
+   "h1": 4.4289,
+   "h2": 3.682,
+   "h3": 3.1215,
+   "zipf": -0.841,
+   "redup_pct": 0.124,
+   "jsd_first_fg": 0.004,
+   "jsd_last_lg": 0.0058,
+   "p_init_enrich": 0.86,
+   "m_final_enrich": 1.04,
+   "cross_mi_eva": 0.153,
+   "cross_excess_eva": 0.048,
+   "cross_mi_glyph": 0.1627,
+   "cross_excess_glyph": 0.0505,
+   "recur_le_1": 0.0012,
+   "recur_le_5": 0.0405,
+   "recur_le_20": 0.1317,
+   "recur_le_100": 0.2898
+  },
+  "x_edge_mi_word": 0.06692058048004391,
+  "x_hapax_10k": 0.728500909327098,
+  "x_moran_I": -0.02635957880911289,
+  "x_position_entropy": 2.026386056986888,
+  "x_ltr_minus_rtl": 0.008344416806807746,
+  "info_mi_adjacent": 0.20545985729412297,
+  "info_mi_page": 0.048639293155358976,
+  "info_samecol_minus_othercol": 0.027131822942779937,
+  "info_bpe_adjacent": 0.7340548496710293,
+  "lex_beta": 0.8452490769030001,
+  "lex_rate_late_early": 0.6732954545454545,
+  "lex_edit1_excess": 0.06884646628757107,
+  "slot_occupancy_pc": 0.037621539283276786,
+  "slot_table_likeness": 0.7643225556376954,
+  "slot_core_crowding": 0.7365058012443249,
+  "bake_winner": "copy0.05+markov3",
+  "bake_char3_minus_unigram": -0.7011881518872549,
+  "bake_bits": {
+   "markov2": 19.430921858138124,
+   "markov3": 19.12421163917692,
+   "slot": 20.785567082493774,
+   "unigram_gt": 19.825399791064175,
+   "copy0.3+markov3": 19.012007478214315,
+   "copy0.1+markov3": 18.779763882857885,
+   "copy0.05+markov3": 18.75786324069857
+  },
+  "family": "L",
+  "note": ".//data//controls_realline//cremma_all_relined8_marks.meta.json; 57278 tokens full",
+  "lang": null,
+  "in_out": {
+   "L": {
+    "ins": 6,
+    "outs": 4,
+    "na": 0,
+    "out_metrics": [
+     "h2",
+     "jsd_first_fg",
+     "types_25k",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "h2",
+     "jsd_first_fg",
+     "types_25k",
+     "x_ltr_minus_rtl"
+    ]
+   },
+   "C": {
+    "ins": 3,
+    "outs": 5,
+    "na": 2,
+    "out_metrics": [
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "cross_excess_eva",
+     "redup_pct",
+     "x_edge_mi_word",
+     "types_25k"
+    ]
+   },
+   "G": {
+    "ins": 4,
+    "outs": 6,
+    "na": 0,
+    "out_metrics": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "types_25k",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ],
+    "out_tight": [
+     "h2",
+     "cross_excess_eva",
+     "x_edge_mi_word",
+     "types_25k",
+     "x_position_entropy",
+     "x_ltr_minus_rtl"
+    ]
+   },
+   "X": {
+    "ins": 7,
+    "outs": 2,
+    "na": 1,
+    "out_metrics": [
+     "jsd_first_fg",
+     "x_edge_mi_word"
+    ],
+    "out_tight": [
+     "x_edge_mi_word"
+    ]
+   }
+  }
+ },
+ "seed": 20261017,
+ "provenance": {
+  "score.py": "3a7b7c3efea13b88",
+  "metrics_new.py": "a59c9c17f8abe4cc",
+  "run_v2.py": "7dfdc9f75de5980a"
+ },
+ "ranges_file": ".//s15_ranges.json"
+}

@@ -1,0 +1,13 @@
+# r13 pre-registration, voynich-91 (Roach). Frozen at (clock): 2026-10-18 15:52:31 PDT
+# Brief: <team-comms> (blind power audit of F-23 / F-30 exclusions).
+# Fixture run 1 15:48:56 rev0 NOT OK (planted B refit 0/15, latent table not recoverable). Rev 1: ORACLE self-test added; fixture check on ORACLE. Run 2 15:50:02 NOT OK (A oracle used refitted lexicon).
+# Rev 2 (2 of max 2): A oracle uses the true generating lexicon; first rev-2 run 15:50:55 crashed (pickling), same design re-implemented by passing generating lines. Run 3 15:51:34 OK: ORACLE A 13, B 13; refit A 10, B 0.
+# Producers: (A) copy-and-vary (q,e grid fit to rep/near over previous 10 words); (B) Rugg table-and-grille (R grid fit to TTR/rep; random table from S1 part distributions, grille offsets (0,d2,d3), step 1-3).
+# Quantities (8): r10 t1-t6 on whole words + t7 type/token + t8 mean word length. MATCH: all 8 in [0.5,99.5] envelope of 200 copies of the producer refitted on training quires.
+# Tests per producer: PLANTED (fit on all ZL, generate on ZL layout, LOQO self-test = positive control & power), REAL ZL, CROSS on other producer's planted (negative control, should be <=4), ORACLE (true params; info).
+# CALL: POWERED planted >= 10/15; WEAK 5-9; UNINFORMATIVE <= 4. Real reported separately; real 0/15 = EXCLUSION only if planted POWERED.
+# Verify: grep -v "^#" r13.prereg.sha256 | tr -d '\r' | sha256sum -c -
+d3c91e27791781b3d047ca56a926ae6862a0b9b3c37fd38cc89b1bc0215b3d94  r13.py
+ada3231f0b6b0992767c7bd98fb206a4b1f138dcdb11d190cfc521ddaff4f69b  ../r10/r10.py
+0d5e65db45b3c410bfbcab5b56d45adaab09b09c9af007b3546538a5b9f69b96  ../r7/r7.py
+bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc  ../dl_ZL/ZL3b-n.txt

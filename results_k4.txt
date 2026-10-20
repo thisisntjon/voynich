@@ -1,0 +1,9 @@
+K4: Lossy (Many-to-One + Flow) Shared-Codeword Nomenclator + M5 Line Layer
+Pass bar: within 25% of Voynich on NMI, residual, crossMI, JSDf, with types in [5971, 8079] and h2 in [1.96, 2.26]
+
+VOYNICH (target)         NMI h1/h2=0.275/0.333  JSDf para=0.549 other=0.147  JSDl=0.082  p(para) x  87.0  m-fin x 16.3  d w2/last 0.042/0.165  crossMI+0.181  resid +0.042  h2=2.11  types=7025 hapax=0.68  rep=0.84%  tok=34857
+K4 k= 4 w=120 b=1.5 (col=5.2x) NMI h1/h2=0.315/0.150  JSDf para=0.477 other=0.075  JSDl=0.020  p(para) x  21.2  m-fin x  2.6  d w2/last 0.103/0.187  crossMI+0.215  resid +0.049  h2=2.23  types=5613 hapax=0.31  rep=0.19%  tok=34857
+K4 k= 6 w=180 b=1.8 (col=7.8x) NMI h1/h2=0.272/0.052  JSDf para=0.459 other=0.107  JSDl=0.031  p(para) x  19.4  m-fin x  3.7  d w2/last 0.088/0.210  crossMI+0.344  resid +0.047  h2=2.27  types=5611 hapax=0.33  rep=0.21%  tok=34857
+K4 k= 8 w=260 b=2.0 (col=10.3x) NMI h1/h2=0.172/0.077  JSDf para=0.449 other=0.123  JSDl=0.039  p(para) x  15.6  m-fin x  3.7  d w2/last 0.099/0.233  crossMI+0.447  resid +0.038  h2=2.26  types=5444 hapax=0.32  rep=0.30%  tok=34857
+K4 k=12 w=400 b=2.2 (col=15.5x) NMI h1/h2=0.206/0.078  JSDf para=0.431 other=0.170  JSDl=0.059  p(para) x  10.4  m-fin x  4.5  d w2/last 0.079/0.200  crossMI+0.693  resid +0.050  h2=2.31  types=5076 hapax=0.33  rep=0.31%  tok=34857
+K4 k= 6 NULL (shuffled plain) NMI h1/h2=0.004/0.012  JSDf para=0.462 other=0.110  JSDl=0.028  p(para) x  19.3  m-fin x  3.3  d w2/last 0.095/0.214  crossMI+0.346  resid +0.007  h2=2.27  types=5535 hapax=0.31  rep=0.26%  tok=34857

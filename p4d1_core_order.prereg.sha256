@@ -1,0 +1,8 @@
+# p4d1 prereg: sha256 of p4d1_core_order.py and the local modules it imports; frozen Sat Oct 17 22:29:12 PDT 2026 before any run
+# superseded: ec6db95b032bdd7a2250123a4e3f39978b2de049c532c66359d40d426cf56d5d *p4d1_core_order.py
+2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518 *corpora.py
+406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625 *s34_morphology_syntax_geography.py
+a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed *scoreboard/metrics_new.py
+0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1 *vparse.py
+# AMENDMENT 1 Sat Oct 17 22:31:16 PDT 2026: run 1 crashed (empty homophone list at K3); fallback in assign() fires only where it crashed; run-1 partial kept as results_p4d1_core_order.run1-crashed.txt
+5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39 *p4d1_core_order.py

@@ -1,0 +1,11 @@
+=== S31: PHASE 3 ENTRANT PRE-TEST (NULL-GLYPH O-024, DIRECT M5 LINE DRAWS, NON-VOYNICH EDGE TABLE, CHARWIN) ===
+
+  Voynich_ZL3b (target)      | tok=34857 typ=7025 typ25k=5417 hap=0.680 | h2=2.126 sd=1.764 JSDf=0.176 p=x17.89 m=x16.31 ex=+0.181 rep=0.94% | v1=7/7 v2=9/9 | CHARWIN=+0.094 POSLOCK=1.661 MORAN=+0.141
+  s31_cipher_null_affix (C)  | tok=34857 typ=6427 typ25k=5190 hap=0.643 | h2=2.112 sd=1.702 JSDf=0.100 p=x14.51 m=x 3.19 ex=+0.598 rep=1.13% | v1=5/7 v2=7/9 | CHARWIN=+0.057 POSLOCK=1.611 MORAN=-0.017
+  s31_gen_m5_direct     (G)  | tok=34857 typ=6794 typ25k=5039 hap=0.642 | h2=2.127 sd=1.791 JSDf=0.111 p=x21.85 m=x 3.54 ex=+0.627 rep=0.73% | v1=6/7 v2=8/9 | CHARWIN=-0.021 POSLOCK=1.688 MORAN=+0.053
+  s1_nomen_reweight     (C)  | tok=34857 typ=6924 typ25k=5563 hap=0.460 | h2=2.246 sd=1.838 JSDf=0.102 p=x 5.03 m=x 2.66 ex=+0.216 rep=0.17% | v1=4/7 v2=6/9 | CHARWIN=-0.508 POSLOCK=1.747 MORAN=+0.016
+  s1_c2_reweight        (G)  | tok=34857 typ=7604 typ25k=5575 hap=0.678 | h2=2.144 sd=2.062 JSDf=0.120 p=x 7.13 m=x 4.05 ex=+0.227 rep=0.97% | v1=5/7 v2=7/9 | CHARWIN=-0.001 POSLOCK=1.720 MORAN=+0.040
+
+--- S31 VERDICTS ---
+  1. H1 (9/9 v2 Band Sufficiency with Non-Voynich Syllable Table + M5 Direct Line Draws): s31_cipher_null_affix passes 5/7 v1 (7/9 v2); s31_gen_m5_direct passes 6/7 v1 (8/9 v2).
+  2. H2 (CHARWIN Mechanism at ~7k types): s31_cipher_null_affix CHARWIN=+0.057, s31_gen_m5_direct CHARWIN=-0.021 vs. Voynich +0.094.

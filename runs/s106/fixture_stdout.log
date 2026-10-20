@@ -1,0 +1,9 @@
+s106 FIXTURE (synthetic, no manuscript text)  2026-10-18 13:35:42 Pacific Daylight Time  free RAM 5.27 GB
+  segmenter core of planted word e.g. ('', 'qzvz', 'y'), first-line df of 'zvz' core 0.040
+ fixture plant: deviations from alternation would be scored as in real data
+  fixture-plant [A_cores] n=321 (class1 169): base AUC 0.9608, text AUC 0.9996, delta +0.0388, perm p 0.0010 (null mean +0.0077, q95 +0.0171), pass=True  [13s]
+  fixture-plant [B_3grams] n=321 (class1 169): base AUC 0.9608, text AUC 0.9985, delta +0.0377, perm p 0.0010 (null mean +0.0120, q95 +0.0211), pass=True  [37s]
+ fixture null: deviations from alternation would be scored as in real data
+  fixture-null [A_cores] n=321 (class1 164): base AUC 0.8521, text AUC 0.8537, delta +0.0016, perm p 0.3946 (null mean -0.0022, q95 +0.0197), pass=False  [14s]
+  fixture-null [B_3grams] n=321 (class1 164): base AUC 0.8521, text AUC 0.8191, delta -0.0330, perm p 0.9051 (null mean -0.0100, q95 +0.0191), pass=False  [39s]
+CALL fixture_ok = True

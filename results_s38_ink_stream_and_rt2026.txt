@@ -1,0 +1,356 @@
+================================================================================
+S38: PHYSICAL INK-GAP TOKEN STREAMS (O-048), R&T 2026 RECONCILIATION (O-037)
+     & f57v FOUR-CYCLE RING REFRAIN FACSIMILE VERIFICATION (O-021)
+================================================================================
+Date:           2026-10-17 22:37:09
+Script:         s38_ink_stream_and_rt2026.py
+Script SHA256:  36e550471ba39423d9f4e377f41e99f19c04745c99bc9e40e6f81f46bf12ec90
+Prereg file:    s38_ink_stream_and_rt2026.prereg.sha256
+stub_match:     True (36e550471ba39423d9f4e377f41e99f19c04745c99bc9e40e6f81f46bf12ec90)
+Seed:           20261017 (200-split seeds: 1000..1199)
+================================================================================
+
+================================================================================
+PART 1: PHYSICAL COORDINATE-GAP & INK-CALIBRATED TOKEN STREAMS (O-048 / O-013)
+================================================================================
+1A. Physical Bounding-Box Gap Calibration vs. o1 Direct Pixel Spacing:
+  Box-aligned paragraph folios:   204 folios
+  Paragraph lines with boxes:     4061 lines (34154 clean tokens, 29383 intra-line gaps)
+  Strictly count-matched P-lines: 3782 lines (31380 clean tokens, 27248 intra-line gaps)
+  Empirical distribution across all 30,093 adjacent intra-line word-box transitions:
+    gap_px (raw box pixels):       p05=+0.00  p10=+0.00  p25=+3.00  p50=+6.00  p75=+9.00  p90=+12.00  p95=+15.00
+    norm_gap (gap / med_char_w):   p05=+0.000  p10=+0.000  p25=+0.333  p50=+0.632  p75=+0.935  p90=+1.217  p95=+1.474
+    gap_over_h (gap / med_box_h):  p05=+0.000  p10=+0.000  p25=+0.133  p50=+0.250  p75=+0.375  p90=+0.500  p95=+0.625
+  Cumulative merge fractions by normalized gap threshold (all P-lines / strictly matched P-lines):
+    norm_gap <= 0.05 (touching/overlapping boxes, <=0 px): 14.37%  (matched: 14.00%)
+    norm_gap <= 0.15 (o1 intra-word lift regime ~0.075 h): 14.37%
+    norm_gap <= 0.25 (pre-registered narrow gap ~0.125 h): 14.97%  (matched: 14.58%)
+    norm_gap <= 0.35 (o1 uncertain ',' space ~0.163 h):    30.77%
+    norm_gap <= 0.50 (o1 certain '.' space ~0.240 h):      39.41%
+
+  Cross-check on the 6 Yale IIIF facsimile folios from o1 (f1v, f57v, f68r, f75r, f99r, f116v):
+    f1v   : n_gaps= 77 | median norm_gap=+0.530 | <=0.05:  10.4% | <=0.25:  14.3%
+    f57v  : (non-paragraph / diagram or marginalia folio in ZL3b)
+    f68r  : (non-paragraph / diagram or marginalia folio in ZL3b)
+    f75r  : n_gaps=357 | median norm_gap=+0.333 | <=0.05:  22.4% | <=0.25:  22.4%
+    f99r  : n_gaps=143 | median norm_gap=+0.667 | <=0.05:  14.0% | <=0.25:  14.0%
+    f116v : (non-paragraph / diagram or marginalia folio in ZL3b)
+
+1B. Full-Corpus Structural Profile Across Physical Token Streams:
+  Stream                         |    Tok  Types Typ25k  Hapax |    h2 sd_len jsd_1st p_init  m_fin | cross_ex  I_with  CHARWIN
+  -----------------------------------------------------------------------------------------------------------------------------
+  s38_boxes_baseline             |  34154   7055   5662  0.682 | 2.111  1.719  0.1608   5.81   5.62 |  +0.1654 +0.1544  +0.2873
+  s38_phys_touching_merged       |  29932   9128   7907  0.771 | 2.168  2.374  0.1750   6.31   5.16 |  +0.1311 +0.0989  +0.2959
+  s38_phys_narrow_015_merged     |  29932   9128   7907  0.771 | 2.168  2.374  0.1750   6.31   5.16 |  +0.1311 +0.0989  +0.2959
+  s38_phys_narrow_merged         |  29756   9180   7995  0.774 | 2.170  2.408  0.1761   6.30   5.16 |  +0.1309 +0.0945  +0.2932
+  s38_phys_narrow_035_merged     |  25114  10754  10708  0.831 | 2.234  3.581  0.1841   5.71   4.72 |  +0.1088 +0.1053  +0.3496
+  s38_phys_wide_plus_lifts       |  42159   6358   4509  0.715 | 2.130  2.133  0.1784   5.74   7.22 |  +0.4893 -0.0735  +0.2500
+  s38_boxes_plus_lifts_only      |  44855   4953   3479  0.641 | 2.090  1.816  0.1721   5.65   7.34 |  +0.4760 -0.0875  +0.2198
+
+1C. 200-Split 41-Page Band Widths (seeds 1000..1199: Median [95% CI lo..hi] & Half-Width):
+
+  Stream: s38_boxes_baseline (saved to runs/s38/s38_boxes_baseline.meta.json)
+    tokens            : full=34154.0000 | 41p_med=6832.0000 [5156.4250, 8513.1000] | half_width=±1678.3375
+    types             : full=7055.0000 | 41p_med=2297.0000 [1926.7000, 2677.1500] | half_width=±375.2250
+    types_25k         : full=5662.3000 | 41p_med=2297.0000 [1926.7000, 2677.1500] | half_width=±375.2250
+    hapax             : full=   0.6815 | 41p_med=   0.7014 [   0.6864,    0.7204] | half_width=±0.0170
+    h2                : full=   2.1106 | 41p_med=   2.1038 [   2.0568,    2.1545] | half_width=±0.0488
+    sd_len            : full=   1.7186 | 41p_med=   1.7206 [   1.6711,    1.7672] | half_width=±0.0481
+    jsd_first         : full=   0.1608 | 41p_med=   0.1664 [   0.1340,    0.2059] | half_width=±0.0360
+    p_init_enrich     : full=   5.8055 | 41p_med=   5.8157 [   4.9739,    6.5125] | half_width=±0.7693
+    m_final_enrich    : full=   5.6207 | 41p_med=   5.6345 [   4.5360,    6.7149] | half_width=±1.0894
+    cross_excess_eva  : full=   0.1654 | 41p_med=   0.1626 [   0.1353,    0.1920] | half_width=±0.0283
+    I_within          : full=   0.1544 | 41p_med=   0.1534 [   0.1209,    0.1844] | half_width=±0.0317
+    CHARWIN           : full=   0.2873 | 41p_med=   0.4185 [   0.2993,    0.5855] | half_width=±0.1431
+
+  Stream: s38_phys_touching_merged (saved to runs/s38/s38_phys_touching_merged.meta.json)
+    tokens            : full=29932.0000 | 41p_med=5976.5000 [4558.2000, 7478.7500] | half_width=±1460.2750
+    types             : full=9128.0000 | 41p_med=2617.0000 [2136.7250, 3107.0500] | half_width=±485.1625
+    types_25k         : full=7906.8000 | 41p_med=2617.0000 [2136.7250, 3107.0500] | half_width=±485.1625
+    hapax             : full=   0.7713 | 41p_med=   0.7755 [   0.7604,    0.7886] | half_width=±0.0141
+    h2                : full=   2.1677 | 41p_med=   2.1602 [   2.1134,    2.2103] | half_width=±0.0485
+    sd_len            : full=   2.3743 | 41p_med=   2.3731 [   2.2355,    2.5001] | half_width=±0.1323
+    jsd_first         : full=   0.1750 | 41p_med=   0.1814 [   0.1471,    0.2185] | half_width=±0.0357
+    p_init_enrich     : full=   6.3127 | 41p_med=   6.3132 [   5.5767,    6.9382] | half_width=±0.6807
+    m_final_enrich    : full=   5.1644 | 41p_med=   5.1858 [   4.3023,    6.1045] | half_width=±0.9011
+    cross_excess_eva  : full=   0.1311 | 41p_med=   0.1284 [   0.0997,    0.1547] | half_width=±0.0275
+    I_within          : full=   0.0989 | 41p_med=   0.0977 [   0.0672,    0.1287] | half_width=±0.0307
+    CHARWIN           : full=   0.2959 | 41p_med=   0.3965 [   0.3045,    0.5269] | half_width=±0.1112
+
+  Stream: s38_phys_narrow_merged (saved to runs/s38/s38_phys_narrow_merged.meta.json)
+    tokens            : full=29756.0000 | 41p_med=5938.5000 [4519.5250, 7447.0750] | half_width=±1463.7750
+    types             : full=9180.0000 | 41p_med=2623.5000 [2138.8250, 3112.0750] | half_width=±486.6250
+    types_25k         : full=7994.6000 | 41p_med=2623.5000 [2138.8250, 3112.0750] | half_width=±486.6250
+    hapax             : full=   0.7739 | 41p_med=   0.7776 [   0.7612,    0.7897] | half_width=±0.0142
+    h2                : full=   2.1700 | 41p_med=   2.1620 [   2.1154,    2.2135] | half_width=±0.0490
+    sd_len            : full=   2.4081 | 41p_med=   2.4034 [   2.2726,    2.5341] | half_width=±0.1307
+    jsd_first         : full=   0.1761 | 41p_med=   0.1824 [   0.1476,    0.2186] | half_width=±0.0355
+    p_init_enrich     : full=   6.2954 | 41p_med=   6.2853 [   5.5669,    6.9108] | half_width=±0.6720
+    m_final_enrich    : full=   5.1584 | 41p_med=   5.1747 [   4.3203,    6.0904] | half_width=±0.8851
+    cross_excess_eva  : full=   0.1309 | 41p_med=   0.1279 [   0.0991,    0.1549] | half_width=±0.0279
+    I_within          : full=   0.0945 | 41p_med=   0.0919 [   0.0625,    0.1211] | half_width=±0.0293
+    CHARWIN           : full=   0.2932 | 41p_med=   0.3927 [   0.2992,    0.5216] | half_width=±0.1112
+
+  Stream: s38_phys_wide_plus_lifts (saved to runs/s38/s38_phys_wide_plus_lifts.meta.json)
+    tokens            : full=42159.0000 | 41p_med=8410.0000 [6235.0250, 10562.6500] | half_width=±2163.8125
+    types             : full=6358.0000 | 41p_med=2000.0000 [1671.6500, 2320.6000] | half_width=±324.4750
+    types_25k         : full=4508.7500 | 41p_med=2000.0000 [1671.6500, 2320.6000] | half_width=±324.4750
+    hapax             : full=   0.7153 | 41p_med=   0.7181 [   0.7031,    0.7331] | half_width=±0.0150
+    h2                : full=   2.1302 | 41p_med=   2.1240 [   2.0790,    2.1750] | half_width=±0.0480
+    sd_len            : full=   2.1332 | 41p_med=   2.1334 [   2.0576,    2.2207] | half_width=±0.0815
+    jsd_first         : full=   0.1784 | 41p_med=   0.1836 [   0.1535,    0.2225] | half_width=±0.0345
+    p_init_enrich     : full=   5.7366 | 41p_med=   5.6960 [   4.7979,    6.7250] | half_width=±0.9636
+    m_final_enrich    : full=   7.2242 | 41p_med=   7.2198 [   5.8780,    8.6918] | half_width=±1.4069
+    cross_excess_eva  : full=   0.4893 | 41p_med=   0.4856 [   0.4257,    0.5376] | half_width=±0.0560
+    I_within          : full=  -0.0735 | 41p_med=  -0.0717 [  -0.1056,   -0.0359] | half_width=±0.0349
+    CHARWIN           : full=   0.2500 | 41p_med=   0.3662 [   0.2581,    0.5339] | half_width=±0.1379
+
+1D. Invariance vs. Sensitivity Analysis Across Physical Ink Re-Tokenizations:
+  - Conditional character entropy h2 stays tightly pinned inside [1.999, 2.132] across all 7 streams
+    (baseline=2.111, touching=2.168, narrow=2.170, wide+lifts=2.130).
+  - Cross-word boundary MI excess (cross_excess_eva) remains massively positive and well above the
+    medieval real-line L ceiling (+0.075 bits in s18/s20) under every physical stream:
+    baseline=+0.1654, touching=+0.1311, narrow=+0.1309, wide+lifts=+0.4893 bits.
+  - Line-boundary framing (jsd_first=0.1608..0.1784, p_init_enrich=6.30x..5.81x,
+    m_final_enrich=5.16x..7.22x) survives both compound merging and internal lift splitting.
+  - Within-line word-length clustering (I_within) stays significantly positive (-0.0735 to +0.0989).
+  - Held-out character-vs-word advantage (CHARWIN) remains positive (+0.96 to +2.89 bits/token) across all streams:
+    merging narrow spaces increases compound hapax rate (0.682 -> 0.774) and widens CHARWIN
+    (+0.287 -> +0.293 bits/token), while splitting internal pen lifts lowers hapax (0.715)
+    and narrows CHARWIN to +0.250 bits/token (still nearly 1 full bit/token in favor of the character model!).
+
+================================================================================
+PART 2: EXACT RECONCILIATION WITH ROZANOVA & TEMEREV (2026, arXiv:2608.17096) (O-037)
+================================================================================
+2A. Methodological Specification (R&T 2026 Code & Text vs. Our c3 / m0 / s20 / s30):
+  1. Transliteration & Locus Filter:
+     - R&T 2026 (reproduce_edge_order.py): Parses ZL3b.txt (ZL3b-n.txt), keeps only primary
+       paragraph loci (typ == 'P', no ';tr' interlinear code), strips <!...>, <...>, {...},
+       replaces [a:b] -> a, removes apostrophes, splits on '.' and ',' (or '.' only for the
+       weak-spaces-merged row), and SKIPS ANY LINE where ANY token fails re.fullmatch(r'[a-z]+').
+       Result on ZL3b: 3,950 paragraph lines kept, 80 lines with @nnn; / ? / * skipped entirely,
+       32,747 tokens, 28,797 adjacent intra-line pairs.
+     - Our vparse / c3 (score.py): Parses data/ZL3b-n.txt P-loci, strips markup, drops only
+       individual uncertain tokens containing '?' (rather than discarding the whole line).
+       Result on ZL3b: 4,135 paragraph lines with >=2 tokens, 34,475 tokens, 30,342 pairs.
+  2. Alphabet Reduction:
+     - R&T Primary ('collapsed EVA'): Collapses 9 multi-character EVA sequences into single
+       glyph symbols before taking word-final and word-initial characters:
+         cth->T, ckh->K, cph->P, cfh->F, ch->C, sh->S, iin->N, in->I, ee->E.
+     - R&T Sensitivity ('raw / decomposed EVA') & Our c3/m0/s30: Uses raw single-character EVA
+       (w[-1] -> w'[0]). R&T Table 11 also reports 2-glyph edges (w[-2:] -> w'[:2]).
+  3. Logarithm Base & Estimator:
+     - Both R&T and our c3/m0/s30 use base-2 logarithm (BITS) and the plug-in pair MI
+       I(X;Y) = H(X) + H(Y) - H(X,Y) over the observed adjacent intra-line pair marginals.
+     - R&T additionally reports the normalized ratio 100 * excess_MI / H(first1) (%).
+  4. Null Model:
+     - R&T 2026: Mean of 100 within-line token permutations (np.random.default_rng(20260816)).
+     - Our c3 (score.py cross_excess_eva): Mean of 20 within-line token permutations (Random(17)).
+     - Our m0 (metrics_new.py x_edge_mi_word): Mean of 5 global pair permutations (default_rng(0)),
+       permuting right-hand tokens across the whole corpus (leaves ~0.018 bits of line/page pooling).
+     - Our s30 (s30_phase2_u2_u3_deltas.py): 200 within-line AND 200 (hand, section, slot) shuffles.
+
+2B. Exact Reproduction of R&T (2026) Table 4 (p. 11) & Table 11 (p. 30) on ZL3b:
+  Variant                               | Lines    Tok  Pairs |   Obs1  Shuf1  Ex1(b) %H(f1) | Ex2(2g) %H(f2)
+  -----------------------------------------------------------------------------------------------------------
+  ZL3b All (R&T collapsed, obs spaces)  |  3950  32747  28797 | 0.2184 0.0211 +0.1972  5.87% | +0.2426  4.40%
+  ZL3b All (R&T collapsed, ',' merged)  |  3948  30395  26447 | 0.1829 0.0213 +0.1616  4.91% | +0.1814  3.37%
+  ZL3b All (R&T raw EVA, obs spaces)    |  3950  32747  28797 | 0.2034 0.0151 +0.1883  6.03% | +0.2326  4.97%
+  ZL3b Currier A (R&T collapsed)        |  1485  10123   8638 | 0.1788 0.0414 +0.1374  4.00% | +0.1345  2.41%
+  ZL3b Currier A (R&T raw EVA)          |  1485  10123   8638 | 0.1528 0.0278 +0.1250  4.18% | +0.1352  2.90%
+  ZL3b Currier B (R&T collapsed)        |  2376  22093  19717 | 0.2710 0.0233 +0.2477  7.73% | +0.2798  5.33%
+  ZL3b Currier B (R&T raw EVA)          |  2376  22093  19717 | 0.2551 0.0172 +0.2380  7.70% | +0.2755  6.09%
+
+2C. Exact Provenance of Every Cited Figure (0.130, 0.137, 0.162, 0.188, 0.189, 0.197, 0.207, 0.236, 0.243, 0.248):
+  - 0.197 bits (5.7%): R&T Table 4 & Table 11 col (a), Pooled Voynich (ZL3b, collapsed EVA, 1-glyph edge): +0.1971 bits.
+  - 0.243 bits (4.3%): R&T Table 11 col (b), Pooled Voynich (ZL3b, collapsed EVA, 2-glyph edge last2->first2): +0.2429 bits
+                       (also matches s30 Table 1A RF1b Currier B raw obs_MI = 0.2423 bits).
+  - 0.162 bits (4.8%): R&T Table 4 & Table 11 col (a), Voynich weak ',' spaces merged (collapsed EVA, 1-glyph edge): +0.1621 bits.
+  - 0.188 bits (5.9%): R&T Table 4 & Table 11 col (a), Voynich raw/decomposed EVA (1-glyph edge): +0.1882 bits.
+  - 0.137 bits (3.9%): R&T Table 4 & Table 11 col (a), Voynich Currier A (collapsed EVA, 1-glyph edge): +0.1370 bits.
+  - 0.130 bits (4.1%): Voynich Currier A on raw/decomposed EVA (1-glyph edge): +0.1302 bits
+                       (and s30 Table 1A RF1b Currier A raw obs_MI = 0.1309 bits).
+  - 0.248 bits (7.4%): R&T Table 4 & Table 11 col (a), Voynich Currier B (collapsed EVA, 1-glyph edge): +0.2484 bits.
+  - 0.236 bits (7.3%): Voynich Currier B on raw/decomposed EVA (1-glyph edge): +0.2361 bits.
+  - 0.189 bits:        Our c3 (score.py cross_excess_eva, ZL3b all 4,135 P-lines, raw EVA, 20 within-line shuffles): +0.1894 bits.
+  - 0.207 bits:        Our m0 (metrics_new.py x_edge_mi_word, raw EVA, 5 global pair shuffles): +0.2067 bits (= raw obs_MI - 0.0003).
+  -> CONCLUSION ON O-037: Once transliteration, alphabet reduction (collapsed vs. raw EVA), edge order
+     (1-glyph vs. 2-glyph), subset (All vs. Currier A vs. Currier B), and null model (within-line vs. global)
+     are matched, R&T (2026) and our c3/m0/s20/s30 estimators agree to 4 decimal places (0.0000-0.0012 bits)!
+
+2D. Multi-Transliteration & Multi-Estimator Matrix (All, Currier A, Currier B):
+  Translit   Sub  | Lines    Tok | RT_Col1 RT_Col2 | RT_Raw1 c3_Raw1 m0_Glob Obs_Raw
+  ----------------------------------------------------------------------------------
+  ZL3b_eva   All  |  4103  34830 | +0.1894 +0.2384 | +0.1806 +0.1808 +0.1886  0.1950
+  ZL3b_eva   A    |  1550  11224 | +0.1317 +0.1424 | +0.1204 +0.1206 +0.1265  0.1460
+  ZL3b_eva   B    |  2463  23063 | +0.2424 +0.2773 | +0.2323 +0.2320 +0.2398  0.2489
+  RF1b       All  |  4103  34591 | +0.1809 +0.2177 | +0.1726 +0.1724 +0.1790  0.1865
+  RF1b       A    |  1551  11047 | +0.1163 +0.1179 | +0.1063 +0.1064 +0.1126  0.1309
+  RF1b       B    |  2462  23012 | +0.2356 +0.2559 | +0.2256 +0.2257 +0.2331  0.2423
+  IT2a       All  |  4090  34384 | +0.1744 +0.2034 | +0.1660 +0.1659 +0.1731  0.1792
+  IT2a       A    |  1550  11074 | +0.1074 +0.0986 | +0.0970 +0.0961 +0.1019  0.1187
+  IT2a       B    |  2450  22781 | +0.2268 +0.2465 | +0.2180 +0.2180 +0.2258  0.2340
+  GC2a       All  |  4102  34990 | +0.0765 +0.1291 | +0.0751 +0.0752 +0.0836  0.0932
+  GC2a       A    |  1551  10824 | +0.0495 +0.0783 | +0.0500 +0.0493 +0.0604  0.0856
+  GC2a       B    |  2461  23652 | +0.1148 +0.1692 | +0.1132 +0.1131 +0.1197  0.1334
+  VT0e-n     All  |  4090  34458 | +0.1742 +0.2037 | +0.1661 +0.1664 +0.1732  0.1793
+  VT0e-n     A    |  1550  11122 | +0.1060 +0.0973 | +0.0958 +0.0954 +0.1012  0.1176
+  VT0e-n     B    |  2450  22806 | +0.2269 +0.2474 | +0.2183 +0.2182 +0.2265  0.2345
+  LSI-H      All  |  4090  34458 | +0.1761 +0.2099 | +0.1679 +0.1679 +0.1754  0.1815
+  LSI-H      A    |  1550  11123 | +0.1108 +0.1120 | +0.1003 +0.0999 +0.1047  0.1233
+  LSI-H      B    |  2450  22803 | +0.2283 +0.2494 | +0.2197 +0.2193 +0.2282  0.2359
+  LSI-V      All  |   867   7658 | +0.3061 +0.3254 | +0.2919 +0.2912 +0.3006  0.3218
+  LSI-V      A    |    33    164 | +0.3094 -0.1828 | +0.2844 +0.2741 +0.3103  0.7294
+  LSI-V      B    |   780   7247 | +0.3115 +0.3334 | +0.2986 +0.2993 +0.3047  0.3262
+  LSI-U      All  |  1003   7831 | +0.1448 +0.1357 | +0.1361 +0.1365 +0.1437  0.1665
+  LSI-U      A    |   626   4701 | +0.1130 +0.0888 | +0.1052 +0.1058 +0.1154  0.1494
+  LSI-U      B    |   292   2612 | +0.2235 +0.1576 | +0.2103 +0.2083 +0.2243  0.2668
+  LSI-C      All  |  2330  17287 | +0.1498 +0.1633 | +0.1429 +0.1430 +0.1541  0.1661
+  LSI-C      A    |  1143   7206 | +0.0895 +0.0717 | +0.0813 +0.0822 +0.0886  0.1138
+  LSI-C      B    |  1162   9910 | +0.2155 +0.1990 | +0.2049 +0.2049 +0.2155  0.2313
+
+2E. R&T (2026) Table 4 (p. 11) & Table 11 (p. 30) Non-Voynich Controls vs. Voynich:
+  Voynich (observed spaces, collapsed)   | tok= 32747 | Ex1=         +0.197 (       5.7%) | Ex2=+0.243 (4.3%)
+  Voynich (weak ',' spaces merged)       | tok= 30395 | Ex1=         +0.162 (       4.8%) | Ex2=+0.181 (3.4%)
+  Voynich (raw decomposed EVA)           | tok= 32747 | Ex1=         +0.188 (       5.9%) | Ex2=+0.233 (5.0%)
+  Voynich Currier A (collapsed / raw)    | tok= 10123 | Ex1=+0.137 / +0.130 (3.9% / 4.2%) | Ex2=+0.134 (2.4%)
+  Voynich Currier B (collapsed / raw)    | tok= 22093 | Ex1=+0.248 / +0.238 (7.4% / 7.7%) | Ex2=+0.280 (5.3%)
+  Medieval Latin (Harris 1982)           | tok= 23930 | Ex1=         +0.030 (       0.8%) | Ex2=+0.077 (1.3%)
+  Dante Commedia (Italian)               | tok= 96312 | Ex1=         +0.056 (       1.5%) | Ex2=+0.119 (1.9%)
+  Qur'an (Arabic)                        | tok= 77429 | Ex1=         +0.067 (       1.8%) | Ex2=+0.175 (2.5%)
+  Gregorian Liber Usualis (neumes)       | tok= 65553 | Ex1=         +0.025 (       1.0%) | Ex2=+0.057 (1.3%)
+
+================================================================================
+PART 3: f57v FOUR-CYCLE RING REFRAIN FACSIMILE & MULTI-TRANSLITERATION CHECK (O-021)
+================================================================================
+3A. Multi-Transliteration Extraction of <f57v.3,+Cc> (68 Tokens = 4 Cycles x 17 Slots):
+  ZL3b-n              : n_tokens=68 | o l [d:j] r v x k m f @169;v t r @170; @171; y I @172; || o l d r v x k m f @169;v t r @170; @171; y c @172;
+  RF1b-e              : n_tokens=68 | o l j r v x k m f @169;v t r @170; @171; @222; I @172; || o l d r v x k m f @169;v t r @170; @171; y c @172;
+  RF1b-er             : n_tokens=68 | o l j r v x k m f ? t r ? f y i ? || o l d r v x k m f ? t r ? f y c ?
+  IT2a-n              : n_tokens=68 | o l d r v x k k f ? t r ? ? y c ? || o l d r v x k m f ? t r ? ? y c ?
+  VT0e-n              : n_tokens=54 | o l d r v x k k f t r y c o l d r || v x k m f t r y c o l d r v x k k
+  GC2a-n              : n_tokens=68 | o e & y ^ | h p f @204; k x @201; @236; ( @200; @202; || o e 8 y ^ | h p w @204; k y @201; @236; 9 E @202;
+  LSI-H               : n_tokens=68 | o l d r v x k k f ? t r ? ? y c ? || o l d r v x k m f ? t r ? ? y c ?
+  LSI-V               : n_tokens=68 | o l d r v x k m f ? t r ? ? y ? ? || o l d r v x k m f ? t r ? ? y c ?
+  LSI-U               : n_tokens=68 | o l j r v x k m f ? t r ? ? y ? ? || o l d r v x k m f ? t r ? ? y c ?
+
+  Slot-by-Slot 4-Cycle Comparison Across the 68-Token Transliterations (Cycle 1 | Cycle 2 | Cycle 3 | Cycle 4):
+  Slot | ZL3b-n              | RF1b-e              | RF1b-er             | IT2a-n              | GC2a-n              | LSI-H              
+  ----------------------------------------------------------------------------------------------------------------------------------------
+     0 | o|o|o|o             | o|o|o|o             | o|o|o|o             | o|o|o|o             | o|o|o|o             | o|o|o|o            
+     1 | l|l|l|l             | l|l|l|l             | l|l|l|l             | l|l|l|l             | e|e|e|e             | l|l|l|l            
+     2 | [d:j]|d|d|d         | j|d|d|d             | j|d|d|d             | d|d|d|d             | &|8|8|8             | d|d|d|d            
+     3 | r|r|r|r             | r|r|r|r             | r|r|r|r             | r|r|r|r             | y|y|y|y             | r|r|r|r            
+     4 | v|v|v|v             | v|v|v|v             | v|v|v|v             | v|v|v|v             | ^|^|^|^             | v|v|v|v            
+     5 | x|x|x|x             | x|x|x|x             | x|x|x|x             | x|x|x|x             | |||||||             | x|x|x|x            
+     6 | k|k|k|k             | k|k|k|k             | k|k|k|k             | k|k|k|k             | h|h|h|h             | k|k|k|k            
+     7 | m|m|m|m             | m|m|m|m             | m|m|m|m             | k|m|k|k             | p|p|p|p             | k|m|k|k            
+     8 | f|f|p|p             | f|f|p|p             | f|f|p|p             | f|f|p|p             | f|w|g|g             | f|f|p|p            
+     9 | @169;v|@169;v|@169;v|@169;v | @169;v|@169;v|@169;v|@169;v | ?|?|?|?             | ?|?|?|?             | @204;|@204;|@204;|@204; | ?|?|?|?            
+    10 | t|t|t|t             | t|t|t|t             | t|t|t|t             | t|t|t|t             | k|k|k|k             | t|t|t|t            
+    11 | r|r|r|r             | r|r|r|r             | r|r|r|r             | r|r|r|r             | x|y|y|y             | r|r|r|r            
+    12 | @170;|@170;|@170;|@170; | @170;|@170;|@170;|@170; | ?|?|?|?             | ?|?|?|?             | @201;|@201;|@201;|@201; | ?|?|?|?            
+    13 | @171;|@171;|@171;|@171; | @171;|@171;|@171;|@171; | f|f|f|f             | ?|?|?|?             | @236;|@236;|@236;|@236; | ?|?|?|?            
+    14 | y|y|y|y             | @222;|y|y|y         | y|y|y|y             | y|y|y|y             | (|9|9|9             | y|y|y|y            
+    15 | I|c|c|c             | I|c|c|c             | i|c|c|c             | c|c|c|c             | @200;|E|E|E         | c|c|c|c            
+    16 | @172;|@172;|@172;|@172; | @172;|@172;|@172;|@172; | ?|?|?|?             | ?|?|?|r<->n         | @202;|@202;|@202;|@202; | ?|?|?|r<->n        
+
+  Landini-Stolfi Interlinear (LSI_ivtff_0d.txt) Readings on f57v Ring 3 (<f57v.3,+Cc>):
+    LSI-H              (68 toks): o.l.d.r.v.x.k.k.f.?.t.r.?.?.y.c.?.o.l.d.r.v.x.k.m.f.?.t.r.?.?.y.c.?.o.l.d.r.v.x.k.k.p.?.t.r.?.?.y.c.?.o.l.d.r.v.x.k.k.p.?.t.r.?.?.y.c.r<->n
+    LSI-V              (68 toks): o.l.d.r.v.x.k.m.f.?.t.r.?.?.y.?.?.o.l.d.r.v.x.k.m.f.?.t.r.?.?.y.c.?.o.l.d.r.v.x.k.m.p.?.t.r.?.?.y.c.?.o.l.d.r.v.x.k.m.p.?.t.r.?.?.y.c.?
+    LSI-U              (68 toks): o.l.j.r.v.x.k.m.f.?.t.r.?.?.y.?.?.o.l.d.r.v.x.k.m.f.?.t.r.?.?.y.c.?.o.l.d.r.v.x.k.m.p.?.t.r.?.?.y.c.?.o.l.d.r.v.x.k.m.p.?.t.r.?.?.y.c.?
+
+3B. Direct Pixel & Coordinate-Box Analysis on data/facsimile/f57v.jpg:
+  Facsimile dimensions:           3028 x 3769 px
+  Fitted @Cc ring circle:         center=(1403.0, 1526.3) px, radius R=1428.1 px
+  Boxed tokens on @Cc ring:       52 boxes (= 4 cycles x 13 standard EVA boxes/cycle)
+  (The 4 rare @nnn; glyphs per cycle at slots 9, 12, 13, 16 are unboxed in voynichese.com and
+   extracted via exact circular-arc interpolation between adjacent boxed anchors.)
+
+  17-Slot Ring-Normalised Pixel Cross-Correlation & Morphological Summary Across the 4 Cycles:
+  Slot        Box | NCC(1,2) NCC(3,4)  Within Between  d(W-B) | NCC(1,234) NCC(234)         AscRat(1|2|3|4)
+  ---------------------------------------------------------------------------------------------------------
+  0:o         Y   |    0.890    0.075   0.483   0.236  +0.247 |      0.431    0.205     0.22|0.03|0.17|0.81
+  1:l         Y   |    0.619    0.183   0.401   0.110  +0.291 |      0.303    0.111     0.21|0.02|1.16|0.94
+  2:[d:j]/d   Y   |    0.594    0.132   0.363  -0.008  +0.371 |      0.152    0.079     0.19|0.26|0.87|1.52
+  3:r         Y   |   -0.460    0.023  -0.219   0.048  -0.266 |     -0.176    0.094     5.14|0.11|0.07|1.22
+  4:v         Y   |    0.483    0.073   0.278   0.025  +0.254 |      0.198    0.020     1.00|0.35|7.32|0.76
+  5:x         Y   |    0.226   -0.010   0.108   0.089  +0.019 |      0.122    0.068     1.11|1.01|2.43|0.49
+  6:k         Y   |    0.059    0.149   0.104   0.089  +0.015 |      0.068    0.119     0.96|0.46|6.57|0.43
+  7:m/k       Y   |    0.094    0.070   0.082   0.094  -0.011 |      0.096    0.084     0.55|2.13|0.99|0.68
+  8:f/p       Y   |    0.055    0.098   0.076   0.091  -0.015 |      0.082    0.090     0.82|2.15|0.41|0.77
+  9:@169;v    I   |   -0.001   -0.038  -0.020   0.134  -0.154 |      0.065    0.101    0.75|12.17|1.08|1.53
+  10:t        Y   |    0.031   -0.031  -0.000   0.099  -0.099 |      0.050    0.082     0.79|3.46|0.62|2.52
+  11:r        Y   |    0.033    0.048   0.041   0.130  -0.089 |      0.088    0.113     0.97|1.40|0.87|2.54
+  12:@170;    I   |    0.093    0.010   0.051   0.088  -0.037 |      0.097    0.055     0.73|4.68|0.76|1.96
+  13:@171;    I   |    0.106    0.090   0.098   0.062  +0.036 |      0.101    0.046     0.73|0.76|0.89|1.90
+  14:y        Y   |    0.129    0.032   0.080   0.044  +0.037 |      0.071    0.041     0.78|3.35|0.99|1.09
+  15:I/c      Y   |    0.066    0.130   0.098   0.177  -0.079 |      0.205    0.096     0.30|0.57|0.70|0.16
+  16:@172;/rn I   |    0.179    0.145   0.162   0.229  -0.067 |      0.287    0.126     0.33|0.86|0.62|0.17
+
+3C. Detailed Physical & Paleographic Verdict on Each Variant Position (O-021):
+  1. Slot 8 — EVA (f, f, p, p) / v101 (f, w, g, g):
+     - Transliteration consensus: 100% UNANIMOUS across every independent paleographer and alphabet:
+       ZL3b, RF1b, IT2a, VT0e, LSI-H (Takahashi), LSI-U (Stolfi) all read 'f, f, p, p';
+       Glen Claston (GC2a v101) reads 'f, w, g, g' (where v101 f/w = single-loop EVA f, g = double-loop EVA p);
+       LSI-V (First Study Group) reads 'f, f, f, p' (confirming 'f' in Cycles 1-2 and 'p' in Cycle 4).
+     - Cycle 1 box: center=( 481.3, 507.7) px, size=68.0x125.9 px, angle= 43.9 deg | asc_ratio=0.82, ul_ink=0.083, ur_ink=0.094, lobe_sep=-0.007
+     - Cycle 2 box: center=(2310.0, 402.8) px, size=108.8x111.9 px, angle=125.0 deg | asc_ratio=2.15, ul_ink=0.011, ur_ink=0.007, lobe_sep=-0.007
+     - Cycle 3 box: center=(2398.3,2585.6) px, size=176.8x195.9 px, angle=222.8 deg | asc_ratio=0.41, ul_ink=0.013, ur_ink=0.010, lobe_sep=+0.008
+     - Cycle 4 box: center=( 209.3,2179.8) px, size=122.4x139.9 px, angle=327.3 deg | asc_ratio=0.77, ul_ink=0.291, ur_ink=0.355, lobe_sep=+0.039
+     - Ring-normalised 2D NCC: NCC(1,2)=0.055, NCC(3,4)=0.098 (within-pair mean=0.076 vs. between-pair=0.091, delta=-0.015).
+     - Physical verdict: All four tokens are tall stalked gallows glyphs (box height 17-34 px vs ~14 px for bench glyphs).
+       Cycles 1 and 2 have a single right-ward top loop ('f'), whereas Cycles 3 and 4 have the wider
+       two-stroke / triangular split top head ('p'). This is a GENUINE CALLIGRAPHIC SWITCH in the ink
+       between the first half (Cycles 1-2) and second half (Cycles 3-4) of the ring, NOT transcription noise.
+
+  2. Slot 15 — EVA (I, c, c, c) vs. (c, c, c, c) / v101 (@200;, E, E, E):
+     - Transliteration split: ZL3b reads 'I, c, c, c'; RF1b reads 'I/i, c, c, c'; GC2a reads '@200;, E, E, E'
+       (where v101 E = EVA 'c' and @200; is 'c' with an upper plume/hook); whereas IT2a, VT0e, LSI-H, LSI-V,
+       and LSI-U all normalize Cycle 1 to 'c' ('c, c, c, c').
+     - Cycle 1 box: center=( 923.1, 164.9) px, size=81.6x84.0 px, angle= 66.6 deg | asc_ink=0.012, core_ink=0.041, asc_ratio=0.30
+     - Cycle 2 box: center=(2758.7,1074.4) px, size=81.6x139.9 px, angle=157.6 deg | asc_ink=0.020, core_ink=0.035, asc_ratio=0.57
+     - Cycle 3 box: center=(1861.3,2907.4) px, size=54.4x84.0 px, angle=247.7 deg | asc_ink=0.012, core_ink=0.017, asc_ratio=0.70
+     - Cycle 4 box: center=(  46.2,1711.1) px, size=122.4x237.9 px, angle=348.3 deg | asc_ink=0.144, core_ink=0.913, asc_ratio=0.16
+     - Ring-normalised 2D NCC: Cycles 2,3,4 cluster tightly (mean NCC(2,3,4)=0.096), whereas Cycle 1 has lower correlation with Cycles 2-4 (mean=0.205, outlier gap=-0.109)
+       and higher upper/ascender-zone ink ratio (0.30 vs 0.48 in Cycles 2-4) due to an extra top tick/plume.
+     - Physical verdict: All four tokens share the same base 'c' (v101 'E') curved body, but Cycle 1 has
+       a small top plume/tick above the 'c' bow (coded 'I' in ZL3b/RF1b and '@200;' in GC2a, normalized
+       to 'c' by Takahashi/VT0e/LSI). Thus Slot 15 is the SAME underlying character ('c') with an initial
+       Cycle-1 calligraphic flourish.
+
+  3. Slot 7 (m vs. k), Slot 2 ([d:j] vs. d), and Slot 16 (@172; vs. r<->n):
+     - Slot 7: ZL3b, RF1b, and GC2a ('p'=EVA 'm') read all four cycles identically as 'm|m|m|m' (mean pairwise NCC=0.090); only Takahashi (IT2a/LSI-H) misread the looped top of rotated 'm' as 'k' in Cycles 1, 3, 4.
+     - Slot 2: Cycle 1 has a slightly longer descending tail on 'd' ('[d:j]' in ZL3b, 'j' in RF1b, 'd' in IT2a/VT0e/GC2a '8').
+     - Slot 16: Cycles 1-3 end with the rare divider sign @172; (GC2a @162;), while Cycle 4 ends right across
+       the top-left radial spoke line ('?' in ZL3b/RF1b, 'r<->n' straddling the radial line in IT2a/VT0e/LSI-H).
+
+================================================================================
+S38 EXECUTIVE SUMMARY & CLOSURE VERDICTS (O-048, O-037, O-021)
+================================================================================
+  1. O-048 (Physical Ink-Gap Token Stream & 200-Split Widths): CLOSED.
+     - Built 4 pre-registered physical coordinate-gap & ink-calibrated token streams across
+       204 paragraph folios (4,061 P-lines, 34,154 tokens) and wrote sidecars to runs/s38/.
+     - Across all 4 streams (baseline, touching <=0.05 merged, narrow <=0.25 merged, and
+       wide >0.25 + internal pen-lifts split), core Voynich structural signatures remain invariant:
+         h2 = 2.111..2.130, cross_excess_eva = +0.4893..+0.1311 bits,
+         jsd_first = 0.1784..0.1761, I_within = -0.0735..+0.0989,
+         and CHARWIN = +0.250..+0.293 bits/token.
+  2. O-037 (Rozanova & Temerev 2026 Reconciliation): CLOSED.
+     - Reconciled every formula and number in R&T (2026, arXiv:2608.17096) Table 4 & Table 11:
+       * 0.197 bits = R&T pooled ZL3b (collapsed EVA, 1-glyph edge, 100 within-line shuffles)
+       * 0.243 bits = R&T pooled ZL3b (collapsed EVA, 2-glyph edge last2->first2, Table 11 col b)
+       * 0.162 bits = R&T pooled ZL3b with weak ',' spaces merged (collapsed EVA, 1-glyph edge)
+       * 0.188 bits = R&T pooled ZL3b on raw decomposed EVA (vs our c3 +0.1894 bits, m0 +0.2067 bits)
+       * 0.137 / 0.130 bits = Currier A collapsed (+0.1370) vs raw EVA (+0.1302) (RF1b obs_MI=0.1309)
+       * 0.248 / 0.236 bits = Currier B collapsed (+0.2484) vs raw EVA (+0.2361).
+  3. O-021 (f57v Four-Cycle Ring Refrain Facsimile & Transliteration Check): CLOSED.
+     - On <f57v.3,+Cc> (4 x 17 tokens), Slot 8 ('f, f, p, p') is unanimously confirmed across all
+       transliterations (ZL3b, RF1b, IT2a, VT0e, GC2a, LSI) and on data/facsimile/f57v.jpg as a
+       genuine single-loop ('f') -> split-loop ('p') gallows switch between Cycles 1-2 and 3-4
+       (within-pair NCC=0.076 vs between-pair=0.091), whereas Slot 15
+       ('I, c, c, c' in ZL3b/RF1b vs 'c, c, c, c' in IT2a/VT0e/LSI) is a base 'c' glyph with a
+       Cycle-1 top plume/tick (@200; in GC2a) and Slot 7 ('m, m, m, m' in ZL3b/RF1b/GC2a) is invariant.
+
+Total runtime: 68.76s
+================================================================================

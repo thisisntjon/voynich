@@ -1,0 +1,86 @@
+s47: ink vs transcribers' word spaces (O-048 word half) — pre-registered in the docstring
+run: Sat Oct 17 23:41:22 PDT 2026
+s47_ink_space_agreement.py sha256=1ce14f231f9f6137b4a1009c6cb7ae5ee42d47a4579eda2ab4523008b1541de4  prereg stub_match=True
+clean s45 pages: 127
+lines used=2441  raw-width gate passed=2377 (0.974)
+=== exclusions / line log ===
+  not_1to1_rows=101  skip_group=29  split_none=18  interruption=354  nonaz=204  lines_used=2441  lines_gate_ok=2377
+  confidence threshold used: conf >= 0.0 (s45 default: no cut)
+
+=== all eligible positions (primary) ===
+positions: D(certain .)=16059  C(uncertain ,)=1450  N(no space)=61560  pages=127
+  ink-space calls in D: 14673/16059 = 0.9137
+  ink-space calls in C: 650/1450 = 0.4483
+  ink-space calls in N: 2076/61560 = 0.0337
+kappa_certain=0.8662 [page-boot 95% 0.8448, 0.8841]  kappa_comma=space=0.8433  kappa_comma=join=0.8442
+raw-width positions (gate lines): D=15666 C=1410 N=60028
+AUC D vs N: r=width/thr 0.9643   px 0.9647
+  D: median r=1.8601 [page-boot 95% 1.8119, 1.9116]  r q10/25/50/75/90=1.035/1.413/1.860/2.349/2.871  px q10/25/50/75/90=17.0/24.0/32.0/40.0/48.0  share r=0 (continuous ink)=0.005
+  C: median r=0.9400 [page-boot 95% 0.8957, 0.9921]  r q10/25/50/75/90=0.376/0.630/0.940/1.269/1.948  px q10/25/50/75/90=7.0/11.0/16.0/21.0/32.0  share r=0 (continuous ink)=0.012
+  N: median r=0.3737 [page-boot 95% 0.3584, 0.3954]  r q10/25/50/75/90=0.000/0.186/0.374/0.566/0.778  px q10/25/50/75/90=0.0/3.0/6.0/10.0/13.0  share r=0 (continuous ink)=0.114
+
+=== gallows-adjacent positions ===
+  [gal] positions: D(certain .)=1425  C(uncertain ,)=344  N(no space)=18647  pages=127
+  [gal]   ink-space calls in D: 1214/1425 = 0.8519
+  [gal]   ink-space calls in C: 189/344 = 0.5494
+  [gal]   ink-space calls in N: 583/18647 = 0.0313
+  [gal] kappa_certain=0.7324 [page-boot 95% 0.6999, 0.7630]  kappa_comma=space=0.7218  kappa_comma=join=0.6863
+  [gal] raw-width positions (gate lines): D=1379 C=334 N=18197
+  [gal] AUC D vs N: r=width/thr 0.9449   px 0.9453
+  [gal]   D: median r=1.6455 [page-boot 95% 1.5894, 1.7049]  r q10/25/50/75/90=0.765/1.213/1.645/2.173/2.705  px q10/25/50/75/90=13.0/21.0/29.0/38.0/45.0  share r=0 (continuous ink)=0.009
+  [gal]   C: median r=1.0605 [page-boot 95% 0.9886, 1.1324]  r q10/25/50/75/90=0.465/0.784/1.061/1.385/2.043  px q10/25/50/75/90=8.0/13.0/17.0/22.0/32.0  share r=0 (continuous ink)=0.015
+  [gal]   N: median r=0.3625 [page-boot 95% 0.3403, 0.3829]  r q10/25/50/75/90=0.000/0.145/0.363/0.561/0.776  px q10/25/50/75/90=0.0/2.0/6.0/10.0/13.0  share r=0 (continuous ink)=0.137
+=== not gallows-adjacent ===
+  [non] positions: D(certain .)=14634  C(uncertain ,)=1106  N(no space)=42913  pages=127
+  [non]   ink-space calls in D: 13459/14634 = 0.9197
+  [non]   ink-space calls in C: 461/1106 = 0.4168
+  [non]   ink-space calls in N: 1493/42913 = 0.0348
+  [non] kappa_certain=0.8786 [page-boot 95% 0.8589, 0.8934]  kappa_comma=space=0.8552  kappa_comma=join=0.8600
+  [non] raw-width positions (gate lines): D=14287 C=1076 N=41831
+  [non] AUC D vs N: r=width/thr 0.9654   px 0.9659
+  [non]   D: median r=1.8790 [page-boot 95% 1.8314, 1.9306]  r q10/25/50/75/90=1.057/1.430/1.879/2.361/2.880  px q10/25/50/75/90=18.0/24.0/32.0/40.0/48.0  share r=0 (continuous ink)=0.005
+  [non]   C: median r=0.8993 [page-boot 95% 0.8463, 0.9521]  r q10/25/50/75/90=0.358/0.589/0.899/1.230/1.910  px q10/25/50/75/90=6.0/10.0/15.0/20.0/31.5  share r=0 (continuous ink)=0.011
+  [non]   N: median r=0.3766 [page-boot 95% 0.3625, 0.3978]  r q10/25/50/75/90=0.000/0.197/0.377/0.568/0.779  px q10/25/50/75/90=0.0/3.0/7.0/10.0/13.0  share r=0 (continuous ink)=0.104
+
+=== reported caveat rows (not predictions) ===
+  [counts equal, 1:1 by construction] positions: D(certain .)=4739  C(uncertain ,)=232  N(no space)=18660  pages=127
+  [counts equal, 1:1 by construction]   ink-space calls in D: 4739/4739 = 1.0000
+  [counts equal, 1:1 by construction]   ink-space calls in C: 232/232 = 1.0000
+  [counts equal, 1:1 by construction]   ink-space calls in N: 0/18660 = 0.0000
+  [counts equal, 1:1 by construction] kappa_certain=1.0000 [page-boot 95% 1.0000, 1.0000]  kappa_comma=space=1.0000  kappa_comma=join=0.9699
+  [counts equal, 1:1 by construction] raw-width positions (gate lines): D=4640 C=225 N=18244
+  [counts equal, 1:1 by construction] AUC D vs N: r=width/thr 1.0000   px 0.9991
+  [counts equal, 1:1 by construction]   D: median r=1.9306 [page-boot 95% 1.8943, 1.9818]  r q10/25/50/75/90=1.246/1.531/1.931/2.368/2.849  px q10/25/50/75/90=21.0/26.0/33.0/40.0/48.0  share r=0 (continuous ink)=0.000
+  [counts equal, 1:1 by construction]   C: median r=1.3988 [page-boot 95% 1.2937, 1.5113]  r q10/25/50/75/90=1.067/1.149/1.399/2.070/2.774  px q10/25/50/75/90=17.0/19.0/23.0/33.0/45.0  share r=0 (continuous ink)=0.000
+  [counts equal, 1:1 by construction]   N: median r=0.3439 [page-boot 95% 0.3291, 0.3703]  r q10/25/50/75/90=0.000/0.150/0.344/0.527/0.687  px q10/25/50/75/90=0.0/3.0/6.0/9.0/12.0  share r=0 (continuous ink)=0.141
+  [counts differ, DP placed] positions: D(certain .)=11320  C(uncertain ,)=1218  N(no space)=42900  pages=127
+  [counts differ, DP placed]   ink-space calls in D: 9934/11320 = 0.8776
+  [counts differ, DP placed]   ink-space calls in C: 418/1218 = 0.3432
+  [counts differ, DP placed]   ink-space calls in N: 2076/42900 = 0.0484
+  [counts differ, DP placed] kappa_certain=0.8110 [page-boot 95% 0.7873, 0.8320]  kappa_comma=space=0.7797  kappa_comma=join=0.7922
+  [counts differ, DP placed] raw-width positions (gate lines): D=11026 C=1185 N=41784
+  [counts differ, DP placed] AUC D vs N: r=width/thr 0.9475   px 0.9487
+  [counts differ, DP placed]   D: median r=1.8178 [page-boot 95% 1.7738, 1.8685]  r q10/25/50/75/90=0.905/1.340/1.818/2.339/2.884  px q10/25/50/75/90=15.0/23.0/31.0/40.0/47.0  share r=0 (continuous ink)=0.007
+  [counts differ, DP placed]   C: median r=0.8489 [page-boot 95% 0.8061, 0.8961]  r q10/25/50/75/90=0.346/0.567/0.849/1.125/1.608  px q10/25/50/75/90=6.0/10.0/15.0/19.0/25.0  share r=0 (continuous ink)=0.014
+  [counts differ, DP placed]   N: median r=0.3881 [page-boot 95% 0.3701, 0.4168]  r q10/25/50/75/90=0.000/0.197/0.388/0.590/0.821  px q10/25/50/75/90=0.0/3.0/7.0/10.0/14.0  share r=0 (continuous ink)=0.102
+  [conf>=0.9] positions: D(certain .)=8525  C(uncertain ,)=621  N(no space)=33747  pages=127
+  [conf>=0.9]   ink-space calls in D: 8093/8525 = 0.9493
+  [conf>=0.9]   ink-space calls in C: 317/621 = 0.5105
+  [conf>=0.9]   ink-space calls in N: 358/33747 = 0.0106
+  [conf>=0.9] kappa_certain=0.9418 [page-boot 95% 0.9334, 0.9498]  kappa_comma=space=0.9228  kappa_comma=join=0.9198
+  [conf>=0.9] raw-width positions (gate lines): D=8331 C=606 N=32959
+  [conf>=0.9] AUC D vs N: r=width/thr 0.9880   px 0.9875
+  [conf>=0.9]   D: median r=1.8832 [page-boot 95% 1.8428, 1.9307]  r q10/25/50/75/90=1.133/1.472/1.883/2.330/2.819  px q10/25/50/75/90=19.0/25.0/32.0/40.0/47.0  share r=0 (continuous ink)=0.001
+  [conf>=0.9]   C: median r=1.0210 [page-boot 95% 0.9521, 1.0659]  r q10/25/50/75/90=0.467/0.712/1.021/1.316/2.070  px q10/25/50/75/90=8.0/12.0/17.0/22.0/33.0  share r=0 (continuous ink)=0.003
+  [conf>=0.9]   N: median r=0.3534 [page-boot 95% 0.3394, 0.3721]  r q10/25/50/75/90=0.000/0.161/0.353/0.529/0.702  px q10/25/50/75/90=0.0/3.0/6.0/9.0/12.0  share r=0 (continuous ink)=0.130
+
+=== fixed predictions ===
+P1 kappa_certain = 0.8662 [95% 0.8448, 0.8841] vs >= 0.6: margin +0.2662 -> HOLDS
+P2 median r: N=0.3737 [0.3584,0.3954]  C=0.9400 [0.8957,0.9921]  D=1.8601 [1.8119,1.9116]; order N<C<D: True; margins CI_C.lo-CI_N.hi=+0.5003, CI_D.lo-CI_C.hi=+0.8197 -> HOLDS
+P3 ink-space share at N positions: gallows-adjacent 583/18647=0.0313, not 1493/42913=0.0348; ratio=0.899 [95% 0.802, 1.008] vs >= 2.0: margin -1.101 -> FAILS
+
+READING: P1 holds -> the ink agrees with the certain spaces; the s45 P2/P3 failures are attributed to s45's alignment noise, and the transcription's spaces stand as the word unit.
+  P2 (commas physically intermediate): HOLDS;  P3 (gallows pen-lift is a physical gap): FAILS
+
+paths: ./results_s47.txt  ./runs/s47/positions.tsv  ./runs/s47/lines.tsv
+end: Sat Oct 17 23:43:17 PDT 2026  elapsed=114.3s

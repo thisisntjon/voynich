@@ -1,0 +1,4 @@
+ctl_naibbe.py seed=20261017
+variant                       tokens     types     hapax  mean_len    sd_len     alpha        h1        h2     redup
+naibbe_like                    34994     29813     0.964     7.419     3.333        19     4.194     4.080     0.000
+Voynich EVA (first 35k)        34857      7025     0.680     4.990     1.788        26     3.871     2.109     0.843

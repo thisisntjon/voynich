@@ -1,0 +1,5 @@
+r4 prereg log
+fixture runs: 2026-10-18 03:04:28 PDT (first version; no-order fixtures: brief interval sometimes excludes 0), 03:05:52 PDT (null sd + permutation p added as secondary; fixtures behave)
+FREEZE at (clock): 2026-10-18 03:06:37 PDT  f74f1ddcd7d34dfb5003ff867236d75f787e7f9cfbfe7cc4ddc0ab528b60735d  r4.py
+real run start: 2026-10-18 03:06:37 PDT
+real run end: 2026-10-18 03:07:43 PDT exit=0

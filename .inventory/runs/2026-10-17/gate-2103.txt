@@ -1,0 +1,82 @@
+# Gate run 2026-10-17 21:11 PDT (refresh of the 18:53 gate; census dir runs/2026-10-17/census-2103)
+
+## census.py
+$ python -I ~/.claude/skills/inventory/scripts/census.py --root . --out .inventory/runs/2026-10-17/census-2103 --exclude .venv --exclude .uv-cache --exclude .uv-python --exclude __pycache__ --exclude data/external --exclude data/controls_raw --exclude data/controls --exclude data/controls_synthetic --exclude data/translit
+census: 818 files -> ./.inventory/runs/2026-10-17/census-2103/census.jsonl
+summary -> ./.inventory/runs/2026-10-17/census-2103/census-summary.md
+flags: 10 dup clusters, 0 empty, 1 secret-suspect, 0 stale docs
+
+## validate.py
+$ python -I ~/.claude/skills/inventory/scripts/validate.py --manifest .inventory/MANIFEST.jsonl --root . --census .inventory/runs/2026-10-17/census-2103/census.jsonl --claims .inventory/registers/CLAIMS.md
+G6: gated 247 verification-asserting claim rows
+records: 333 | fails: 1 | warnings: 12
+  WARN  G4 line 239: value=A `workflow/phases/phase-1.md` has no next_action
+  WARN  G4 line 242: value=A `workflow/research/support-phase1-audit.md` has no next_action
+  WARN  G4 line 243: value=A `results_s15.txt` has no next_action
+  WARN  G4 line 244: value=A `s15_ranges.json` has no next_action
+  WARN  G4 line 245: value=A `results_s17.txt` has no next_action
+  WARN  G4 line 246: value=A `data/controls_realline/` has no next_action
+  WARN  G4 line 254: value=A `results_s23.txt` has no next_action
+  WARN  G4 line 255: value=A `results_s30_phase2_deltas.txt` has no next_action
+  WARN  G4 line 257: value=A `results_s20.txt` has no next_action
+  WARN  G4 line 258: value=A `results_s21.txt` has no next_action
+  WARN  G4 line 259: value=A `PREREG-v2.1.md` has no next_action
+  WARN  G4 line 260: value=A `lab/codex_lab/experiments/moran-realline-controls-v1/` has no next_action
+  FAIL  G3 coverage 49.9% of 657 knowledge files (329 unaccounted)
+
+Note: the single FAIL is G3. 328 of the 329 unaccounted files are per-corpus sidecar outputs; the 329th is results_s24.txt, written 21:11 while s24 was still running (not filed, in flight) at the root (results_n6_<tag>, results_n7_<tag>, results_s17/s18/s20_<tag> .txt/.json), one script each (filed as rows v-278, v-283, v-251, v-250, v-304). The gate matches directory prefixes only; enumerating or relocating them is an owner decision (INDEX maintenance contract).
+
+## claim_coverage.py (live summary docs: root *.md; 22 files now, 7 at 18:53)
+$ python -I ~/.claude/skills/inventory/scripts/claim_coverage.py --claims .inventory/registers/CLAIMS.md --root . --public "*.md"
+claim coverage: 184/252 = 73.0% across 22 public files
+claim register: 603 distinct numbers, 183 with an id
+
+UNCOVERED (68) — a number here cannot be sourced on request:
+
+  PREREG-v2.1.md  (25)
+    :33    5/97           results_s15.txt header), lo95/hi95 = 2.5/97.5 percentiles. A manuscript value or an entrant
+    :48    8.8k           | types_25k | 2283 | 1911 | 2654 | 5417 (34.9k tok.) | " (41-page subset = raw type count at 4.9–8.8
+    :53    6/7            s2 Part 3B on 6/7 v1 bands; the `redup_pct` CI differs beyond tolerance (s15 0.662–1.060 vs
+    :55    4,885          Subset token counts: median 6,898 (range 4,885–8,787), so the widths are at ~7k tokens and
+    :55    8,787          Subset token counts: median 6,898 (range 4,885–8,787), so the widths are at ~7k tokens and
+    :84    5,000          triggered; kill-rule token minima met (prose15 6,890 ≥ 5,000; c15 10,190 ≥ 8,000).
+    :84    8,000          triggered; kill-rule token minima met (prose15 6,890 ≥ 5,000; c15 10,190 ≥ 8,000).
+    :102   0491 / 0       `results_s18_cremma_*.json`, native line breaks): cremma_all (25,002 tok.) 0.0491 / 0.0643;
+    :102   25,002         `results_s18_cremma_*.json`, native line breaks): cremma_all (25,002 tok.) 0.0491 / 0.0643;
+    :103   0390 / 0       cremma_c15 (10,190) 0.0390 / 0.0524; cremma_prose15 (6,890) 0.0239 / 0.0414;
+    :103   0239 / 0       cremma_c15 (10,190) 0.0390 / 0.0524; cremma_prose15 (6,890) 0.0239 / 0.0414;
+    :104   0127 / 0       gib_realline_pooled (10,023) 0.0127 / 0.0298; mhg_nibelungenlied 0.0792 / 0.0832;
+    :104   0792 / 0       gib_realline_pooled (10,023) 0.0127 / 0.0298; mhg_nibelungenlied 0.0792 / 0.0832;
+    :105   0911 / 0       oldfrench_roland 0.0911 / 0.0971; occitan_croisade 0.1084 / 0.1123; italian_dante 0.1615 /
+    :107   5k             0.0298..0.1672 (n = 8 of 8). Per-manuscript CREMMA rows at ≥ 5k tokens (BIS-193 0.0974,
+    :116   7/7            v2 §3 and §10 record the same ×6.21 from run_v2 on A). B and "all" pass 7/7 on all three
+    :120   6/6            "A: joint PASS (6/6 under the v2.1 A-rule; m_final ×<value>, no weight)". B and "all" rows keep
+    :123   11k            Rejected because the enrichment ratios are the noisy bands (width 14–19× at 8–11k tokens,
+    :137   2259 / 0       ZL3b A 0.1203 / 0.1265, B 0.2321 / 0.2404; RF1b A 0.1071 / 0.1126, B 0.2259 / 0.2332;
+    :138   0968 / 0       IT2a A 0.0968 / 0.1023, B 0.2181 / 0.2262. |A − B| is 3.6–4.0 s15 half-widths on both metrics
+    :138   2181 / 0       IT2a A 0.0968 / 0.1023, B 0.2181 / 0.2262. |A − B| is 3.6–4.0 s15 half-widths on both metrics
+    :174   1/105          (1/55 for the hand-1 quire-block null, 1/105 for hand 2, 1/201 for 200-shuffle tests,
+    :174   1/201          (1/55 for the hand-1 quire-block null, 1/105 for hand 2, 1/201 for 200-shuffle tests,
+    :175   1/1000         1/1000 for 999-draw tests) is listed unranked with the words "floor, not ranked" and is
+    :179   50 %           are < 0.05, so any single sub-0.05 p cited without a pre-registered family is noise at ~50 %
+
+  TEAM-HANDOFF.md  (20)
+    :29    0 %            - `results_n7.txt` (prefix **n7**, `n7_gibberish_family.py`, pre-registered 19:38 (prereg sha256 029
+    :31    46.3 %         - `results_q1.txt` (`q1_label_crib.py`, unidentified helper agent, 19:25; write-up `Q_RESULTS.md`). 
+    :31    36.2 %         - `results_q1.txt` (`q1_label_crib.py`, unidentified helper agent, 19:25; write-up `Q_RESULTS.md`). 
+    :43    133 / 0        - Hand-2 section NMI: **NOT EVIDENCE** under the 7-block quire null (MS $p = 0.133 / 0.219 / 0.152$)
+    :43    219 / 0        - Hand-2 section NMI: **NOT EVIDENCE** under the 7-block quire null (MS $p = 0.133 / 0.219 / 0.152$)
+    :47    $0.333         - **Q1 (`Q1_sec_vocab` on held-out `eval_bifolios`) $\rightarrow$ Bounded Verdict `C` (Inconclusive 
+    :47    108 / 0        - **Q1 (`Q1_sec_vocab` on held-out `eval_bifolios`) $\rightarrow$ Bounded Verdict `C` (Inconclusive 
+    :52    7.7k           - `results_n4.txt` (`n4_habit7k.py`, pre-registered 19:18, hashes in `n4_habit7k.prereg.sha256`, run
+    :52    133 / 0        - `results_n4.txt` (`n4_habit7k.py`, pre-registered 19:18, hashes in `n4_habit7k.prereg.sha256`, run
+    :52    219 / 0        - `results_n4.txt` (`n4_habit7k.py`, pre-registered 19:18, hashes in `n4_habit7k.prereg.sha256`, run
+    :54    68%            - `results_n6.txt` / `results_n4b_glyph.txt` (`n6_habit7k_glyph.py` / `n4b_habit7k_glyph.py`, pre-re
+    :54    7.3k           - `results_n6.txt` / `results_n4b_glyph.txt` (`n6_habit7k_glyph.py` / `n4b_habit7k_glyph.py`, pre-re
+    :62    577 / 0        - **Part 1 (Matched-sparsity generator controls on `Q1` Tests A & B)**: Section-only generator `G_se
+    :62    119 / 0        - **Part 1 (Matched-sparsity generator controls on `Q1` Tests A & B)**: Section-only generator `G_se
+    :135   2/3            | n4: hand-1 NMI and F1 against a 7k-type habit generator, plus a bifolio null | DONE (`results_n4.t
+
+  ... 28 more (raise --show)
+
+CLAIM COVERAGE: REPORT ONLY

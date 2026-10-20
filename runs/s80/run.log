@@ -1,0 +1,958 @@
+S80: A14 at matched core-inventory size (pre-registered in the docstring; no edits after the freeze)
+date: Sun Oct 18 03:19:38 PDT 2026 (`date`)
+s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+prereg stub s80_a14_size_matched.prereg.sha256 sha256=a0d34862b16e242bb5732a043af55de50c25bc06e175ee2b9f20cfc5dc5275bd  stub_match=True
+  local import a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  local import a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  local import b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  local import b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  local import c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  local import c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  local import c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  local import c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  local import corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  local import f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  local import f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  local import f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  local import g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  local import m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  local import n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  local import p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  local import p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  local import s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  local import s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  local import s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  local import s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  local import s69_prefix_stream_memory.py sha256=785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5
+  local import s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  local import s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  local import scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  local import scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  local import tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  local import vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+python 3.11.9; numpy 2.4.6; sklearn 1.8.0; seed 20261017; shuffles 200; interval 500 draws of 80 % of matched pages x 20 shuffles
+texts: 39 (VOY 3, VOYZ 1, CIPHER 12, LANG 8, GEN 6, GEN57 9)
+
+=== reproduction checks (not gating) ===
+  s55 f2 ZL3b via s55 TextData.core_core: -0.05279 (published -0.05279) -> MATCH
+  P4-D1 K1_latin_caesar        seed 1 core_excess +0.0586 (published +0.0586) cores 1639 -> MATCH
+  P4-D1 K3_latin_caesar        seed 1 core_excess +0.0889 (published +0.0889) cores 2218 -> MATCH
+  P4-D1 K1_latin_augustine     seed 1 core_excess +0.0695 (published +0.0695) cores 1666 -> MATCH
+  P4-D1 K3_latin_augustine     seed 1 core_excess +0.0808 (published +0.0808) cores 2272 -> MATCH
+  P4-D1 K1_italian_dante       seed 1 core_excess +0.0777 (published +0.0777) cores 1636 -> MATCH
+  P4-D1 K3_italian_dante       seed 1 core_excess +0.0827 (published +0.0827) cores 2229 -> MATCH
+  P4-D1 K1_german_faust        seed 1 core_excess +0.1544 (published +0.1544) cores 1623 -> MATCH
+  P4-D1 K3_german_faust        seed 1 core_excess +0.1413 (published +0.1413) cores 2241 -> MATCH
+  P4-D1 K1_german_kafka        seed 1 core_excess +0.1179 (published +0.1179) cores 1653 -> MATCH
+  P4-D1 K3_german_kafka        seed 1 core_excess +0.1344 (published +0.1344) cores 2267 -> MATCH
+  P4-D1 K1_english_alice       seed 1 core_excess +0.0874 (published +0.0874) cores 1635 -> MATCH
+  P4-D1 K3_english_alice       seed 1 core_excess +0.0995 (published +0.0995) cores 2324 -> MATCH
+
+=== size matching: N_match = 6195 held-out tokens (smallest qualifying held-out set: lang_oldfrench_roland); qualifying = >= 8 held-out pages and >= 5000 held-out tokens ===
+  VOY_ZL3b                     VOY    train/held-out pages 166/41 held-out tokens   8586 training core types  1984  matched
+  VOY_RF1b                     VOY    train/held-out pages 166/41 held-out tokens   8604 training core types  2126  matched
+  VOY_IT2a                     VOY    train/held-out pages 165/41 held-out tokens   8411 training core types  2083  matched
+  VOYZ_ZL3b_zattera            VOYZ   train/held-out pages 166/41 held-out tokens   7133 training core types   150  matched
+  K1_latin_caesar              CIPHER train/held-out pages 166/41 held-out tokens   8586 training core types  1422  matched
+  K3_latin_caesar              CIPHER train/held-out pages 166/41 held-out tokens   8586 training core types  1968  matched
+  K1_latin_augustine           CIPHER train/held-out pages 166/41 held-out tokens   8586 training core types  1431  matched
+  K3_latin_augustine           CIPHER train/held-out pages 166/41 held-out tokens   8586 training core types  2020  matched
+  K1_italian_dante             CIPHER train/held-out pages 166/41 held-out tokens   8586 training core types  1372  matched
+  K3_italian_dante             CIPHER train/held-out pages 166/41 held-out tokens   8586 training core types  1955  matched
+  K1_german_faust              CIPHER train/held-out pages 166/41 held-out tokens   8586 training core types  1417  matched
+  K3_german_faust              CIPHER train/held-out pages 166/41 held-out tokens   8586 training core types  2027  matched
+  K1_german_kafka              CIPHER train/held-out pages 166/41 held-out tokens   8586 training core types  1441  matched
+  K3_german_kafka              CIPHER train/held-out pages 166/41 held-out tokens   8586 training core types  1970  matched
+  K1_english_alice             CIPHER train/held-out pages 166/41 held-out tokens   8586 training core types  1399  matched
+  K3_english_alice             CIPHER train/held-out pages 166/41 held-out tokens   8586 training core types  2022  matched
+  lang_italian_dante           LANG   train/held-out pages 30/8 held-out tokens   8100 training core types  3182  matched
+  lang_latin_cremma            LANG   train/held-out pages 52/13 held-out tokens   7183 training core types  5500  matched
+  lang_mhg_nibelungenlied      LANG   train/held-out pages 16/4 held-out tokens   5172 training core types  2331  UNMATCHED (scored on all held-out tokens)
+  lang_mhg_parzival            LANG   train/held-out pages 190/47 held-out tokens   7624 training core types  2330  matched
+  lang_occitan_croisade        LANG   train/held-out pages 130/32 held-out tokens   7354 training core types  2763  matched
+  lang_oldfrench_roland        LANG   train/held-out pages 233/58 held-out tokens   6195 training core types  2101  matched
+  realline_cremma_prose15      LANG   train/held-out pages 10/3 held-out tokens   1730 training core types  1529  UNMATCHED (scored on all held-out tokens)
+  realline_italian_dante       LANG   train/held-out pages 81/20 held-out tokens  20448 training core types  6028  matched
+  gen_s28_ZL3b_s1              GEN    train/held-out pages 195/49 held-out tokens   9169 training core types  2781  matched
+  gen_c2_section               GEN    train/held-out pages 195/49 held-out tokens   9169 training core types   586  matched
+  gen_timm_schinner            GEN    train/held-out pages 117/29 held-out tokens   7537 training core types  1215  matched
+  gen_schwartz_reuse           GEN    train/held-out pages 195/49 held-out tokens   9169 training core types  1764  matched
+  gen_rugg_grille              GEN    train/held-out pages 214/53 held-out tokens   7299 training core types   600  matched
+  gen_G2layer_ZL3b_s1          GEN    train/held-out pages 195/49 held-out tokens   9169 training core types  3809  matched
+  s57_gen_IT2a_s1              GEN57  train/held-out pages 165/41 held-out tokens   6781 training core types  1877  matched
+  s57_gen_IT2a_s2              GEN57  train/held-out pages 165/41 held-out tokens   6735 training core types  1970  matched
+  s57_gen_IT2a_s3              GEN57  train/held-out pages 165/41 held-out tokens   6619 training core types  1827  matched
+  s57_gen_RF1b_s1              GEN57  train/held-out pages 166/41 held-out tokens   6755 training core types  1968  matched
+  s57_gen_RF1b_s2              GEN57  train/held-out pages 166/41 held-out tokens   7313 training core types  1957  matched
+  s57_gen_RF1b_s3              GEN57  train/held-out pages 166/41 held-out tokens   6970 training core types  1938  matched
+  s57_gen_ZL3b_s1              GEN57  train/held-out pages 166/41 held-out tokens   6745 training core types  1861  matched
+  s57_gen_ZL3b_s2              GEN57  train/held-out pages 166/41 held-out tokens   7154 training core types  1810  matched
+  s57_gen_ZL3b_s3              GEN57  train/held-out pages 166/41 held-out tokens   6890 training core types  1822  matched
+
+=== measures (MM = Miller-Madow excess, PRIMARY; plug = plug-in excess; [95 % interval] med = subsample median) ===
+
+  VOY_ZL3b (VOY): tokens 6195 pages 30 pairs 5442 core types 706  [48s in worker]
+    freq  K=  25 cls    25 | MM +0.0460 [+0.0313,+0.0557] med +0.0456 rc [+0.0317,+0.0561] | plug +0.0449 [+0.0303,+0.0533] med +0.0443
+    freq  K=  50 cls    50 | MM +0.0577 [+0.0387,+0.0702] med +0.0552 rc [+0.0412,+0.0727] | plug +0.0528 [+0.0349,+0.0633] med +0.0502
+    freq  K= 100 cls    99 | MM +0.0452 [+0.0266,+0.0596] med +0.0426 rc [+0.0293,+0.0622] | plug +0.0407 [+0.0233,+0.0532] med +0.0376
+    freq  K= 200 cls   177 | MM +0.0352 [+0.0140,+0.0526] med +0.0328 rc [+0.0163,+0.0549] | plug +0.0292 [+0.0089,+0.0451] med +0.0267
+    freq  K= 400 cls   267 | MM +0.0213 [-0.0006,+0.0409] med +0.0191 rc [+0.0017,+0.0432] | plug +0.0148 [-0.0055,+0.0322] med +0.0127
+    freq  K= 800 cls   326 | MM +0.0099 [-0.0140,+0.0281] med +0.0069 rc [-0.0110,+0.0311] | plug +0.0031 [-0.0194,+0.0198] med +0.0006
+    freq  K=full cls   706 | MM -0.0598 [-0.0932,-0.0364] med -0.0623 rc [-0.0907,-0.0340] | plug -0.0657 [-0.0966,-0.0428] med -0.0682
+    clust K=  25 cls    25 | MM +0.0522 [+0.0384,+0.0618] med +0.0534 rc [+0.0372,+0.0606] | plug +0.0515 [+0.0376,+0.0601] med +0.0521
+    clust K=  50 cls    50 | MM +0.0561 [+0.0369,+0.0716] med +0.0560 rc [+0.0370,+0.0717] | plug +0.0523 [+0.0340,+0.0656] med +0.0513
+    clust K= 100 cls    99 | MM +0.0517 [+0.0309,+0.0691] med +0.0486 rc [+0.0340,+0.0722] | plug +0.0438 [+0.0237,+0.0586] med +0.0403
+    clust K= 200 cls   188 | MM +0.0291 [+0.0075,+0.0463] med +0.0262 rc [+0.0104,+0.0492] | plug +0.0212 [+0.0003,+0.0371] med +0.0179
+    clust K= 400 cls   281 | MM +0.0197 [-0.0028,+0.0387] med +0.0168 rc [+0.0001,+0.0417] | plug +0.0126 [-0.0084,+0.0294] med +0.0095
+    clust K= 800 cls   313 | MM +0.0164 [-0.0064,+0.0348] med +0.0134 rc [-0.0034,+0.0379] | plug +0.0096 [-0.0119,+0.0259] med +0.0065
+    clust K=full cls   706 | MM -0.0598 [-0.0932,-0.0364] med -0.0623 rc [-0.0907,-0.0340] | plug -0.0657 [-0.0966,-0.0428] med -0.0682
+
+  VOY_RF1b (VOY): tokens 6195 pages 30 pairs 5445 core types 689  [51s in worker]
+    freq  K=  25 cls    25 | MM +0.0410 [+0.0301,+0.0514] med +0.0417 rc [+0.0294,+0.0507] | plug +0.0400 [+0.0295,+0.0494] med +0.0403
+    freq  K=  50 cls    50 | MM +0.0558 [+0.0410,+0.0685] med +0.0538 rc [+0.0430,+0.0705] | plug +0.0513 [+0.0362,+0.0630] med +0.0492
+    freq  K= 100 cls    99 | MM +0.0496 [+0.0316,+0.0618] med +0.0470 rc [+0.0342,+0.0644] | plug +0.0429 [+0.0264,+0.0549] med +0.0400
+    freq  K= 200 cls   179 | MM +0.0435 [+0.0251,+0.0549] med +0.0402 rc [+0.0285,+0.0583] | plug +0.0354 [+0.0185,+0.0472] med +0.0321
+    freq  K= 400 cls   261 | MM +0.0298 [+0.0066,+0.0438] med +0.0254 rc [+0.0111,+0.0482] | plug +0.0210 [-0.0013,+0.0350] med +0.0165
+    freq  K= 800 cls   337 | MM +0.0084 [-0.0166,+0.0242] med +0.0041 rc [-0.0123,+0.0285] | plug +0.0005 [-0.0228,+0.0163] med -0.0040
+    freq  K=full cls   689 | MM -0.0551 [-0.0888,-0.0297] med -0.0583 rc [-0.0856,-0.0265] | plug -0.0618 [-0.0929,-0.0375] med -0.0640
+    clust K=  25 cls    25 | MM +0.0483 [+0.0368,+0.0595] med +0.0483 rc [+0.0367,+0.0594] | plug +0.0462 [+0.0346,+0.0554] med +0.0458
+    clust K=  50 cls    50 | MM +0.0701 [+0.0523,+0.0808] med +0.0689 rc [+0.0535,+0.0820] | plug +0.0637 [+0.0465,+0.0727] med +0.0621
+    clust K= 100 cls    98 | MM +0.0535 [+0.0319,+0.0679] med +0.0501 rc [+0.0354,+0.0714] | plug +0.0434 [+0.0235,+0.0561] med +0.0395
+    clust K= 200 cls   188 | MM +0.0320 [+0.0102,+0.0438] med +0.0270 rc [+0.0151,+0.0487] | plug +0.0216 [+0.0003,+0.0336] med +0.0167
+    clust K= 400 cls   285 | MM +0.0177 [-0.0062,+0.0318] med +0.0133 rc [-0.0019,+0.0362] | plug +0.0088 [-0.0135,+0.0222] med +0.0042
+    clust K= 800 cls   322 | MM +0.0123 [-0.0120,+0.0273] med +0.0077 rc [-0.0075,+0.0319] | plug +0.0040 [-0.0188,+0.0186] med -0.0003
+    clust K=full cls   689 | MM -0.0551 [-0.0888,-0.0297] med -0.0583 rc [-0.0856,-0.0265] | plug -0.0618 [-0.0929,-0.0375] med -0.0640
+
+  VOY_IT2a (VOY): tokens 6195 pages 30 pairs 5433 core types 697  [50s in worker]
+    freq  K=  25 cls    25 | MM +0.0536 [+0.0411,+0.0648] med +0.0538 rc [+0.0409,+0.0646] | plug +0.0515 [+0.0393,+0.0617] med +0.0514
+    freq  K=  50 cls    50 | MM +0.0688 [+0.0500,+0.0797] med +0.0666 rc [+0.0522,+0.0819] | plug +0.0607 [+0.0440,+0.0697] med +0.0581
+    freq  K= 100 cls    99 | MM +0.0583 [+0.0363,+0.0703] med +0.0552 rc [+0.0394,+0.0734] | plug +0.0483 [+0.0281,+0.0577] med +0.0445
+    freq  K= 200 cls   174 | MM +0.0522 [+0.0326,+0.0669] med +0.0493 rc [+0.0355,+0.0698] | plug +0.0420 [+0.0234,+0.0539] med +0.0388
+    freq  K= 400 cls   265 | MM +0.0397 [+0.0168,+0.0566] med +0.0352 rc [+0.0214,+0.0612] | plug +0.0283 [+0.0061,+0.0433] med +0.0238
+    freq  K= 800 cls   342 | MM +0.0259 [+0.0035,+0.0428] med +0.0224 rc [+0.0069,+0.0463] | plug +0.0147 [-0.0072,+0.0294] med +0.0109
+    freq  K=full cls   697 | MM -0.0473 [-0.0796,-0.0268] med -0.0511 rc [-0.0759,-0.0230] | plug -0.0577 [-0.0888,-0.0382] med -0.0617
+    clust K=  25 cls    25 | MM +0.0548 [+0.0432,+0.0671] med +0.0549 rc [+0.0432,+0.0671] | plug +0.0526 [+0.0410,+0.0634] med +0.0520
+    clust K=  50 cls    50 | MM +0.0738 [+0.0540,+0.0907] med +0.0730 rc [+0.0548,+0.0915] | plug +0.0659 [+0.0466,+0.0795] med +0.0638
+    clust K= 100 cls    99 | MM +0.0605 [+0.0422,+0.0728] med +0.0564 rc [+0.0463,+0.0769] | plug +0.0486 [+0.0310,+0.0579] med +0.0438
+    clust K= 200 cls   188 | MM +0.0491 [+0.0298,+0.0627] med +0.0456 rc [+0.0333,+0.0662] | plug +0.0362 [+0.0177,+0.0478] med +0.0320
+    clust K= 400 cls   288 | MM +0.0379 [+0.0150,+0.0532] med +0.0333 rc [+0.0196,+0.0579] | plug +0.0251 [+0.0031,+0.0389] med +0.0203
+    clust K= 800 cls   329 | MM +0.0309 [+0.0084,+0.0466] med +0.0275 rc [+0.0119,+0.0501] | plug +0.0195 [-0.0018,+0.0342] med +0.0156
+    clust K=full cls   697 | MM -0.0473 [-0.0796,-0.0268] med -0.0511 rc [-0.0759,-0.0230] | plug -0.0577 [-0.0888,-0.0382] med -0.0617
+
+  VOYZ_ZL3b_zattera (VOYZ): tokens 6195 pages 39 pairs 5298 core types 122  [59s in worker]
+    freq  K=  25 cls    25 | MM +0.0690 [+0.0547,+0.0818] med +0.0694 rc [+0.0542,+0.0814] | plug +0.0677 [+0.0535,+0.0797] med +0.0678
+    freq  K=  50 cls    50 | MM +0.0926 [+0.0724,+0.1088] med +0.0917 rc [+0.0733,+0.1097] | plug +0.0886 [+0.0701,+0.1028] med +0.0876
+    freq  K= 100 cls    92 | MM +0.0987 [+0.0749,+0.1135] med +0.0965 rc [+0.0772,+0.1157] | plug +0.0931 [+0.0714,+0.1066] med +0.0910
+    freq  K= 200 cls   110 | MM +0.0946 [+0.0704,+0.1105] med +0.0927 rc [+0.0722,+0.1124] | plug +0.0893 [+0.0667,+0.1033] med +0.0871
+    freq  K= 400 cls   110 | MM +0.0946 [+0.0704,+0.1105] med +0.0927 rc [+0.0722,+0.1124] | plug +0.0893 [+0.0667,+0.1033] med +0.0871
+    freq  K= 800 cls   110 | MM +0.0946 [+0.0704,+0.1105] med +0.0927 rc [+0.0722,+0.1124] | plug +0.0893 [+0.0667,+0.1033] med +0.0871
+    freq  K=full cls   122 | MM +0.0934 [+0.0696,+0.1101] med +0.0913 rc [+0.0716,+0.1121] | plug +0.0882 [+0.0664,+0.1030] med +0.0857
+    clust K=  25 cls    25 | MM +0.0733 [+0.0584,+0.0865] med +0.0724 rc [+0.0594,+0.0875] | plug +0.0719 [+0.0577,+0.0846] med +0.0709
+    clust K=  50 cls    50 | MM +0.0952 [+0.0750,+0.1087] med +0.0938 rc [+0.0765,+0.1101] | plug +0.0908 [+0.0715,+0.1033] med +0.0891
+    clust K= 100 cls    93 | MM +0.0993 [+0.0754,+0.1152] med +0.0974 rc [+0.0772,+0.1171] | plug +0.0935 [+0.0708,+0.1072] med +0.0916
+    clust K= 200 cls   101 | MM +0.0975 [+0.0731,+0.1127] med +0.0954 rc [+0.0752,+0.1148] | plug +0.0920 [+0.0697,+0.1051] med +0.0900
+    clust K= 400 cls   101 | MM +0.0975 [+0.0731,+0.1127] med +0.0954 rc [+0.0752,+0.1148] | plug +0.0920 [+0.0697,+0.1051] med +0.0900
+    clust K= 800 cls   101 | MM +0.0975 [+0.0731,+0.1127] med +0.0954 rc [+0.0752,+0.1148] | plug +0.0920 [+0.0697,+0.1051] med +0.0900
+    clust K=full cls   122 | MM +0.0934 [+0.0696,+0.1101] med +0.0913 rc [+0.0716,+0.1121] | plug +0.0882 [+0.0664,+0.1030] med +0.0857
+
+  K1_latin_caesar (CIPHER): tokens 6195 pages 30 pairs 5442 core types 577  [52s in worker]
+    freq  K=  25 cls    25 | MM +0.0654 [+0.0539,+0.0792] med +0.0656 rc [+0.0537,+0.0790] | plug +0.0640 [+0.0524,+0.0769] med +0.0640
+    freq  K=  50 cls    50 | MM +0.0815 [+0.0673,+0.0943] med +0.0802 rc [+0.0686,+0.0956] | plug +0.0777 [+0.0642,+0.0889] med +0.0760
+    freq  K= 100 cls    99 | MM +0.0762 [+0.0624,+0.0917] med +0.0757 rc [+0.0629,+0.0922] | plug +0.0743 [+0.0613,+0.0875] med +0.0733
+    freq  K= 200 cls   180 | MM +0.0721 [+0.0583,+0.0893] med +0.0721 rc [+0.0582,+0.0893] | plug +0.0704 [+0.0554,+0.0844] med +0.0700
+    freq  K= 400 cls   255 | MM +0.0723 [+0.0553,+0.0949] med +0.0725 rc [+0.0551,+0.0946] | plug +0.0702 [+0.0532,+0.0901] med +0.0700
+    freq  K= 800 cls   330 | MM +0.0775 [+0.0584,+0.0976] med +0.0773 rc [+0.0586,+0.0977] | plug +0.0743 [+0.0562,+0.0924] med +0.0737
+    freq  K=full cls   577 | MM +0.0447 [+0.0228,+0.0655] med +0.0458 rc [+0.0217,+0.0644] | plug +0.0432 [+0.0220,+0.0626] med +0.0440
+    clust K=  25 cls    25 | MM +0.0690 [+0.0569,+0.0807] med +0.0689 rc [+0.0570,+0.0808] | plug +0.0687 [+0.0572,+0.0799] med +0.0689
+    clust K=  50 cls    50 | MM +0.0788 [+0.0621,+0.0948] med +0.0792 rc [+0.0616,+0.0943] | plug +0.0759 [+0.0599,+0.0893] med +0.0756
+    clust K= 100 cls   100 | MM +0.0857 [+0.0707,+0.1015] med +0.0842 rc [+0.0722,+0.1030] | plug +0.0809 [+0.0670,+0.0948] med +0.0792
+    clust K= 200 cls   191 | MM +0.0765 [+0.0626,+0.0944] med +0.0763 rc [+0.0628,+0.0946] | plug +0.0740 [+0.0607,+0.0902] med +0.0732
+    clust K= 400 cls   277 | MM +0.0750 [+0.0592,+0.0951] med +0.0748 rc [+0.0595,+0.0954] | plug +0.0726 [+0.0566,+0.0900] med +0.0718
+    clust K= 800 cls   304 | MM +0.0766 [+0.0599,+0.0971] med +0.0760 rc [+0.0604,+0.0977] | plug +0.0737 [+0.0572,+0.0916] med +0.0725
+    clust K=full cls   577 | MM +0.0447 [+0.0228,+0.0655] med +0.0458 rc [+0.0217,+0.0644] | plug +0.0432 [+0.0220,+0.0626] med +0.0440
+
+  K3_latin_caesar (CIPHER): tokens 6195 pages 30 pairs 5442 core types 892  [63s in worker]
+    freq  K=  25 cls    25 | MM +0.0446 [+0.0336,+0.0519] med +0.0436 rc [+0.0346,+0.0529] | plug +0.0416 [+0.0315,+0.0477] med +0.0403
+    freq  K=  50 cls    50 | MM +0.0560 [+0.0425,+0.0648] med +0.0538 rc [+0.0447,+0.0670] | plug +0.0516 [+0.0384,+0.0587] med +0.0492
+    freq  K= 100 cls    99 | MM +0.0601 [+0.0441,+0.0688] med +0.0571 rc [+0.0470,+0.0718] | plug +0.0557 [+0.0397,+0.0630] med +0.0526
+    freq  K= 200 cls   190 | MM +0.0670 [+0.0508,+0.0782] med +0.0640 rc [+0.0539,+0.0812] | plug +0.0614 [+0.0454,+0.0712] med +0.0586
+    freq  K= 400 cls   326 | MM +0.0854 [+0.0690,+0.0950] med +0.0814 rc [+0.0729,+0.0989] | plug +0.0777 [+0.0599,+0.0871] med +0.0741
+    freq  K= 800 cls   476 | MM +0.0727 [+0.0510,+0.0815] med +0.0679 rc [+0.0558,+0.0863] | plug +0.0644 [+0.0439,+0.0728] med +0.0603
+    freq  K=full cls   892 | MM +0.0595 [+0.0337,+0.0707] med +0.0530 rc [+0.0402,+0.0772] | plug +0.0508 [+0.0276,+0.0599] med +0.0454
+    clust K=  25 cls    25 | MM +0.0378 [+0.0298,+0.0482] med +0.0382 rc [+0.0294,+0.0478] | plug +0.0376 [+0.0294,+0.0475] med +0.0379
+    clust K=  50 cls    50 | MM +0.0466 [+0.0293,+0.0615] med +0.0462 rc [+0.0297,+0.0619] | plug +0.0445 [+0.0288,+0.0569] med +0.0438
+    clust K= 100 cls   100 | MM +0.0686 [+0.0451,+0.0807] med +0.0641 rc [+0.0496,+0.0853] | plug +0.0612 [+0.0404,+0.0709] med +0.0571
+    clust K= 200 cls   195 | MM +0.0859 [+0.0637,+0.0941] med +0.0815 rc [+0.0681,+0.0985] | plug +0.0752 [+0.0554,+0.0819] med +0.0710
+    clust K= 400 cls   360 | MM +0.0835 [+0.0613,+0.0914] med +0.0771 rc [+0.0677,+0.0978] | plug +0.0730 [+0.0527,+0.0800] med +0.0673
+    clust K= 800 cls   514 | MM +0.0825 [+0.0586,+0.0905] med +0.0765 rc [+0.0646,+0.0965] | plug +0.0723 [+0.0494,+0.0813] med +0.0668
+    clust K=full cls   892 | MM +0.0595 [+0.0337,+0.0707] med +0.0530 rc [+0.0402,+0.0772] | plug +0.0508 [+0.0276,+0.0599] med +0.0454
+
+  K1_latin_augustine (CIPHER): tokens 6195 pages 30 pairs 5442 core types 568  [48s in worker]
+    freq  K=  25 cls    25 | MM +0.0662 [+0.0578,+0.0767] med +0.0666 rc [+0.0574,+0.0763] | plug +0.0648 [+0.0563,+0.0736] med +0.0646
+    freq  K=  50 cls    50 | MM +0.0684 [+0.0543,+0.0783] med +0.0668 rc [+0.0559,+0.0799] | plug +0.0645 [+0.0502,+0.0727] med +0.0623
+    freq  K= 100 cls    97 | MM +0.0648 [+0.0479,+0.0764] med +0.0611 rc [+0.0516,+0.0801] | plug +0.0596 [+0.0440,+0.0704] med +0.0559
+    freq  K= 200 cls   171 | MM +0.0691 [+0.0530,+0.0796] med +0.0656 rc [+0.0566,+0.0832] | plug +0.0647 [+0.0494,+0.0744] med +0.0610
+    freq  K= 400 cls   260 | MM +0.0589 [+0.0428,+0.0688] med +0.0557 rc [+0.0460,+0.0720] | plug +0.0539 [+0.0393,+0.0624] med +0.0509
+    freq  K= 800 cls   325 | MM +0.0563 [+0.0413,+0.0663] med +0.0533 rc [+0.0443,+0.0693] | plug +0.0512 [+0.0371,+0.0607] med +0.0482
+    freq  K=full cls   568 | MM +0.0413 [+0.0231,+0.0565] med +0.0385 rc [+0.0260,+0.0594] | plug +0.0372 [+0.0197,+0.0521] med +0.0346
+    clust K=  25 cls    25 | MM +0.0685 [+0.0600,+0.0813] med +0.0688 rc [+0.0597,+0.0811] | plug +0.0682 [+0.0598,+0.0792] med +0.0679
+    clust K=  50 cls    50 | MM +0.0800 [+0.0659,+0.0902] med +0.0788 rc [+0.0670,+0.0913] | plug +0.0759 [+0.0617,+0.0847] med +0.0743
+    clust K= 100 cls    98 | MM +0.0714 [+0.0527,+0.0821] med +0.0668 rc [+0.0573,+0.0867] | plug +0.0643 [+0.0466,+0.0739] med +0.0602
+    clust K= 200 cls   191 | MM +0.0589 [+0.0429,+0.0687] med +0.0555 rc [+0.0463,+0.0722] | plug +0.0532 [+0.0383,+0.0615] med +0.0497
+    clust K= 400 cls   279 | MM +0.0553 [+0.0391,+0.0647] med +0.0521 rc [+0.0423,+0.0680] | plug +0.0496 [+0.0353,+0.0583] med +0.0465
+    clust K= 800 cls   307 | MM +0.0535 [+0.0391,+0.0629] med +0.0507 rc [+0.0420,+0.0657] | plug +0.0483 [+0.0347,+0.0569] med +0.0456
+    clust K=full cls   568 | MM +0.0413 [+0.0231,+0.0565] med +0.0385 rc [+0.0260,+0.0594] | plug +0.0372 [+0.0197,+0.0521] med +0.0346
+
+  K3_latin_augustine (CIPHER): tokens 6195 pages 30 pairs 5442 core types 911  [54s in worker]
+    freq  K=  25 cls    25 | MM +0.0262 [+0.0205,+0.0348] med +0.0269 rc [+0.0197,+0.0340] | plug +0.0253 [+0.0196,+0.0325] med +0.0254
+    freq  K=  50 cls    50 | MM +0.0438 [+0.0335,+0.0574] med +0.0446 rc [+0.0326,+0.0565] | plug +0.0405 [+0.0311,+0.0516] med +0.0405
+    freq  K= 100 cls    99 | MM +0.0483 [+0.0351,+0.0630] med +0.0471 rc [+0.0363,+0.0642] | plug +0.0423 [+0.0306,+0.0546] med +0.0405
+    freq  K= 200 cls   192 | MM +0.0475 [+0.0282,+0.0654] med +0.0451 rc [+0.0306,+0.0679] | plug +0.0393 [+0.0217,+0.0550] med +0.0370
+    freq  K= 400 cls   320 | MM +0.0627 [+0.0421,+0.0764] med +0.0573 rc [+0.0474,+0.0817] | plug +0.0517 [+0.0326,+0.0640] med +0.0463
+    freq  K= 800 cls   484 | MM +0.0637 [+0.0392,+0.0804] med +0.0585 rc [+0.0445,+0.0856] | plug +0.0536 [+0.0308,+0.0685] med +0.0487
+    freq  K=full cls   911 | MM +0.0655 [+0.0385,+0.0853] med +0.0620 rc [+0.0420,+0.0888] | plug +0.0550 [+0.0285,+0.0730] med +0.0516
+    clust K=  25 cls    25 | MM +0.0242 [+0.0149,+0.0321] med +0.0243 rc [+0.0148,+0.0320] | plug +0.0235 [+0.0148,+0.0305] med +0.0235
+    clust K=  50 cls    50 | MM +0.0431 [+0.0305,+0.0568] med +0.0433 rc [+0.0303,+0.0566] | plug +0.0413 [+0.0300,+0.0517] med +0.0405
+    clust K= 100 cls    99 | MM +0.0798 [+0.0643,+0.0952] med +0.0773 rc [+0.0668,+0.0977] | plug +0.0700 [+0.0556,+0.0816] med +0.0666
+    clust K= 200 cls   196 | MM +0.0565 [+0.0343,+0.0720] med +0.0538 rc [+0.0371,+0.0747] | plug +0.0478 [+0.0268,+0.0619] med +0.0442
+    clust K= 400 cls   357 | MM +0.0532 [+0.0313,+0.0681] med +0.0485 rc [+0.0360,+0.0728] | plug +0.0446 [+0.0239,+0.0570] med +0.0404
+    clust K= 800 cls   515 | MM +0.0595 [+0.0370,+0.0744] med +0.0549 rc [+0.0416,+0.0789] | plug +0.0507 [+0.0285,+0.0640] med +0.0465
+    clust K=full cls   911 | MM +0.0655 [+0.0385,+0.0853] med +0.0620 rc [+0.0420,+0.0888] | plug +0.0550 [+0.0285,+0.0730] med +0.0516
+
+  K1_italian_dante (CIPHER): tokens 6195 pages 30 pairs 5442 core types 568  [48s in worker]
+    freq  K=  25 cls    25 | MM +0.0719 [+0.0622,+0.0806] med +0.0726 rc [+0.0615,+0.0799] | plug +0.0701 [+0.0608,+0.0777] med +0.0704
+    freq  K=  50 cls    50 | MM +0.0994 [+0.0863,+0.1098] med +0.0984 rc [+0.0874,+0.1108] | plug +0.0946 [+0.0826,+0.1034] med +0.0932
+    freq  K= 100 cls    99 | MM +0.0885 [+0.0716,+0.1014] med +0.0865 rc [+0.0736,+0.1035] | plug +0.0821 [+0.0664,+0.0933] med +0.0801
+    freq  K= 200 cls   171 | MM +0.0920 [+0.0740,+0.1083] med +0.0903 rc [+0.0757,+0.1101] | plug +0.0854 [+0.0689,+0.0993] med +0.0837
+    freq  K= 400 cls   241 | MM +0.0809 [+0.0626,+0.0968] med +0.0782 rc [+0.0653,+0.0995] | plug +0.0732 [+0.0567,+0.0875] med +0.0709
+    freq  K= 800 cls   314 | MM +0.0795 [+0.0599,+0.0966] med +0.0775 rc [+0.0619,+0.0986] | plug +0.0717 [+0.0532,+0.0874] med +0.0699
+    freq  K=full cls   568 | MM +0.0681 [+0.0452,+0.0879] med +0.0665 rc [+0.0468,+0.0895] | plug +0.0597 [+0.0399,+0.0787] med +0.0584
+    clust K=  25 cls    25 | MM +0.0879 [+0.0784,+0.1026] med +0.0893 rc [+0.0770,+0.1013] | plug +0.0869 [+0.0771,+0.0996] med +0.0874
+    clust K=  50 cls    50 | MM +0.1019 [+0.0871,+0.1173] med +0.1018 rc [+0.0872,+0.1174] | plug +0.0964 [+0.0821,+0.1083] med +0.0958
+    clust K= 100 cls    99 | MM +0.1021 [+0.0823,+0.1167] med +0.0992 rc [+0.0853,+0.1196] | plug +0.0919 [+0.0737,+0.1034] med +0.0886
+    clust K= 200 cls   186 | MM +0.0904 [+0.0721,+0.1039] med +0.0863 rc [+0.0762,+0.1080] | plug +0.0806 [+0.0635,+0.0929] med +0.0770
+    clust K= 400 cls   262 | MM +0.0829 [+0.0636,+0.0987] med +0.0794 rc [+0.0671,+0.1022] | plug +0.0743 [+0.0572,+0.0882] med +0.0714
+    clust K= 800 cls   295 | MM +0.0811 [+0.0622,+0.0982] med +0.0783 rc [+0.0650,+0.1010] | plug +0.0729 [+0.0557,+0.0881] med +0.0706
+    clust K=full cls   568 | MM +0.0681 [+0.0452,+0.0879] med +0.0665 rc [+0.0468,+0.0895] | plug +0.0597 [+0.0399,+0.0787] med +0.0584
+
+  K3_italian_dante (CIPHER): tokens 6195 pages 30 pairs 5442 core types 907  [59s in worker]
+    freq  K=  25 cls    25 | MM +0.0399 [+0.0331,+0.0470] med +0.0400 rc [+0.0330,+0.0469] | plug +0.0379 [+0.0310,+0.0438] med +0.0374
+    freq  K=  50 cls    50 | MM +0.0508 [+0.0405,+0.0610] med +0.0500 rc [+0.0412,+0.0617] | plug +0.0480 [+0.0383,+0.0561] med +0.0465
+    freq  K= 100 cls   100 | MM +0.0627 [+0.0491,+0.0735] med +0.0612 rc [+0.0506,+0.0750] | plug +0.0584 [+0.0464,+0.0671] med +0.0562
+    freq  K= 200 cls   193 | MM +0.0541 [+0.0353,+0.0679] med +0.0522 rc [+0.0373,+0.0698] | plug +0.0490 [+0.0319,+0.0610] med +0.0469
+    freq  K= 400 cls   336 | MM +0.0448 [+0.0254,+0.0606] med +0.0440 rc [+0.0261,+0.0613] | plug +0.0394 [+0.0220,+0.0533] med +0.0381
+    freq  K= 800 cls   488 | MM +0.0659 [+0.0364,+0.0822] med +0.0647 rc [+0.0376,+0.0834] | plug +0.0580 [+0.0313,+0.0720] med +0.0559
+    freq  K=full cls   907 | MM +0.0323 [+0.0033,+0.0522] med +0.0307 rc [+0.0049,+0.0539] | plug +0.0270 [+0.0002,+0.0450] med +0.0252
+    clust K=  25 cls    25 | MM +0.0474 [+0.0415,+0.0559] med +0.0479 rc [+0.0410,+0.0554] | plug +0.0452 [+0.0389,+0.0521] med +0.0453
+    clust K=  50 cls    50 | MM +0.0597 [+0.0459,+0.0714] med +0.0587 rc [+0.0468,+0.0723] | plug +0.0552 [+0.0422,+0.0644] med +0.0533
+    clust K= 100 cls   100 | MM +0.0637 [+0.0488,+0.0745] med +0.0611 rc [+0.0513,+0.0770] | plug +0.0562 [+0.0417,+0.0637] med +0.0533
+    clust K= 200 cls   199 | MM +0.0672 [+0.0468,+0.0778] med +0.0632 rc [+0.0508,+0.0818] | plug +0.0588 [+0.0392,+0.0663] med +0.0547
+    clust K= 400 cls   359 | MM +0.0668 [+0.0441,+0.0771] med +0.0632 rc [+0.0476,+0.0807] | plug +0.0583 [+0.0360,+0.0673] med +0.0546
+    clust K= 800 cls   523 | MM +0.0685 [+0.0429,+0.0809] med +0.0653 rc [+0.0461,+0.0840] | plug +0.0596 [+0.0354,+0.0701] med +0.0561
+    clust K=full cls   907 | MM +0.0323 [+0.0033,+0.0522] med +0.0307 rc [+0.0049,+0.0539] | plug +0.0270 [+0.0002,+0.0450] med +0.0252
+
+  K1_german_faust (CIPHER): tokens 6195 pages 30 pairs 5442 core types 552  [48s in worker]
+    freq  K=  25 cls    25 | MM +0.1236 [+0.1081,+0.1379] med +0.1243 rc [+0.1074,+0.1372] | plug +0.1200 [+0.1046,+0.1322] med +0.1197
+    freq  K=  50 cls    50 | MM +0.1379 [+0.1189,+0.1528] med +0.1370 rc [+0.1198,+0.1537] | plug +0.1313 [+0.1125,+0.1443] med +0.1295
+    freq  K= 100 cls    99 | MM +0.1409 [+0.1175,+0.1579] med +0.1400 rc [+0.1184,+0.1589] | plug +0.1340 [+0.1119,+0.1482] med +0.1318
+    freq  K= 200 cls   163 | MM +0.1446 [+0.1217,+0.1619] med +0.1440 rc [+0.1224,+0.1626] | plug +0.1369 [+0.1140,+0.1514] med +0.1353
+    freq  K= 400 cls   243 | MM +0.1381 [+0.1159,+0.1530] med +0.1365 rc [+0.1174,+0.1545] | plug +0.1299 [+0.1082,+0.1423] med +0.1274
+    freq  K= 800 cls   324 | MM +0.1371 [+0.1144,+0.1512] med +0.1346 rc [+0.1169,+0.1537] | plug +0.1291 [+0.1065,+0.1411] med +0.1256
+    freq  K=full cls   552 | MM +0.1352 [+0.1092,+0.1531] med +0.1322 rc [+0.1122,+0.1560] | plug +0.1271 [+0.1018,+0.1433] med +0.1235
+    clust K=  25 cls    25 | MM +0.1333 [+0.1217,+0.1486] med +0.1355 rc [+0.1195,+0.1464] | plug +0.1318 [+0.1194,+0.1454] med +0.1332
+    clust K=  50 cls    50 | MM +0.1358 [+0.1177,+0.1505] med +0.1363 rc [+0.1172,+0.1500] | plug +0.1302 [+0.1122,+0.1422] med +0.1292
+    clust K= 100 cls   100 | MM +0.1406 [+0.1192,+0.1581] med +0.1395 rc [+0.1203,+0.1592] | plug +0.1322 [+0.1117,+0.1468] med +0.1298
+    clust K= 200 cls   184 | MM +0.1360 [+0.1165,+0.1504] med +0.1341 rc [+0.1184,+0.1523] | plug +0.1281 [+0.1091,+0.1400] med +0.1249
+    clust K= 400 cls   267 | MM +0.1345 [+0.1118,+0.1478] med +0.1322 rc [+0.1141,+0.1501] | plug +0.1265 [+0.1040,+0.1379] med +0.1234
+    clust K= 800 cls   306 | MM +0.1355 [+0.1136,+0.1481] med +0.1331 rc [+0.1160,+0.1504] | plug +0.1275 [+0.1054,+0.1383] med +0.1243
+    clust K=full cls   552 | MM +0.1352 [+0.1092,+0.1531] med +0.1322 rc [+0.1122,+0.1560] | plug +0.1271 [+0.1018,+0.1433] med +0.1235
+
+  K3_german_faust (CIPHER): tokens 6195 pages 30 pairs 5442 core types 952  [61s in worker]
+    freq  K=  25 cls    25 | MM +0.0894 [+0.0812,+0.1001] med +0.0885 rc [+0.0820,+0.1009] | plug +0.0849 [+0.0759,+0.0937] med +0.0830
+    freq  K=  50 cls    50 | MM +0.1155 [+0.0992,+0.1273] med +0.1128 rc [+0.1018,+0.1299] | plug +0.1063 [+0.0902,+0.1152] med +0.1023
+    freq  K= 100 cls   100 | MM +0.1314 [+0.1135,+0.1420] med +0.1272 rc [+0.1177,+0.1462] | plug +0.1208 [+0.1035,+0.1302] med +0.1163
+    freq  K= 200 cls   188 | MM +0.1313 [+0.1118,+0.1412] med +0.1269 rc [+0.1163,+0.1456] | plug +0.1204 [+0.1027,+0.1282] med +0.1153
+    freq  K= 400 cls   329 | MM +0.1351 [+0.1150,+0.1485] med +0.1305 rc [+0.1196,+0.1531] | plug +0.1237 [+0.1049,+0.1340] med +0.1184
+    freq  K= 800 cls   481 | MM +0.1260 [+0.1043,+0.1407] med +0.1214 rc [+0.1090,+0.1454] | plug +0.1142 [+0.0931,+0.1274] med +0.1085
+    freq  K=full cls   952 | MM +0.1191 [+0.0921,+0.1351] med +0.1123 rc [+0.0988,+0.1418] | plug +0.1076 [+0.0820,+0.1217] med +0.1008
+    clust K=  25 cls    25 | MM +0.0845 [+0.0751,+0.0986] med +0.0847 rc [+0.0749,+0.0984] | plug +0.0814 [+0.0716,+0.0936] med +0.0807
+    clust K=  50 cls    50 | MM +0.1226 [+0.1018,+0.1403] med +0.1193 rc [+0.1051,+0.1436] | plug +0.1137 [+0.0943,+0.1287] med +0.1097
+    clust K= 100 cls   100 | MM +0.1488 [+0.1245,+0.1628] med +0.1436 rc [+0.1296,+0.1679] | plug +0.1355 [+0.1128,+0.1463] med +0.1296
+    clust K= 200 cls   199 | MM +0.1452 [+0.1189,+0.1575] med +0.1367 rc [+0.1274,+0.1660] | plug +0.1294 [+0.1061,+0.1400] med +0.1212
+    clust K= 400 cls   362 | MM +0.1347 [+0.1124,+0.1491] med +0.1282 rc [+0.1190,+0.1557] | plug +0.1225 [+0.1015,+0.1346] med +0.1156
+    clust K= 800 cls   517 | MM +0.1339 [+0.1098,+0.1484] med +0.1279 rc [+0.1158,+0.1544] | plug +0.1218 [+0.0995,+0.1347] med +0.1152
+    clust K=full cls   952 | MM +0.1191 [+0.0921,+0.1351] med +0.1123 rc [+0.0988,+0.1418] | plug +0.1076 [+0.0820,+0.1217] med +0.1008
+
+  K1_german_kafka (CIPHER): tokens 6195 pages 30 pairs 5442 core types 557  [47s in worker]
+    freq  K=  25 cls    25 | MM +0.0711 [+0.0634,+0.0837] med +0.0720 rc [+0.0625,+0.0829] | plug +0.0698 [+0.0618,+0.0807] med +0.0699
+    freq  K=  50 cls    50 | MM +0.0885 [+0.0783,+0.1037] med +0.0894 rc [+0.0774,+0.1029] | plug +0.0861 [+0.0765,+0.0993] med +0.0863
+    freq  K= 100 cls    97 | MM +0.0963 [+0.0837,+0.1124] med +0.0964 rc [+0.0836,+0.1122] | plug +0.0928 [+0.0802,+0.1067] med +0.0922
+    freq  K= 200 cls   165 | MM +0.0906 [+0.0779,+0.1071] med +0.0910 rc [+0.0775,+0.1068] | plug +0.0877 [+0.0752,+0.1022] med +0.0875
+    freq  K= 400 cls   242 | MM +0.0949 [+0.0813,+0.1135] med +0.0960 rc [+0.0801,+0.1123] | plug +0.0914 [+0.0785,+0.1082] med +0.0917
+    freq  K= 800 cls   315 | MM +0.0896 [+0.0753,+0.1099] med +0.0910 rc [+0.0739,+0.1084] | plug +0.0866 [+0.0721,+0.1041] med +0.0871
+    freq  K=full cls   557 | MM +0.0950 [+0.0796,+0.1148] med +0.0958 rc [+0.0788,+0.1139] | plug +0.0913 [+0.0759,+0.1086] med +0.0915
+    clust K=  25 cls    25 | MM +0.0900 [+0.0799,+0.1016] med +0.0901 rc [+0.0799,+0.1015] | plug +0.0890 [+0.0792,+0.0993] med +0.0888
+    clust K=  50 cls    50 | MM +0.1047 [+0.0908,+0.1252] med +0.1049 rc [+0.0906,+0.1250] | plug +0.1005 [+0.0869,+0.1169] med +0.0997
+    clust K= 100 cls    99 | MM +0.0904 [+0.0762,+0.1099] med +0.0908 rc [+0.0758,+0.1095] | plug +0.0873 [+0.0738,+0.1045] med +0.0873
+    clust K= 200 cls   186 | MM +0.0883 [+0.0744,+0.1106] med +0.0896 rc [+0.0730,+0.1093] | plug +0.0854 [+0.0711,+0.1044] med +0.0855
+    clust K= 400 cls   268 | MM +0.0860 [+0.0722,+0.1064] med +0.0875 rc [+0.0706,+0.1049] | plug +0.0832 [+0.0698,+0.1011] med +0.0838
+    clust K= 800 cls   299 | MM +0.0871 [+0.0733,+0.1082] med +0.0887 rc [+0.0717,+0.1066] | plug +0.0843 [+0.0703,+0.1025] med +0.0851
+    clust K=full cls   557 | MM +0.0950 [+0.0796,+0.1148] med +0.0958 rc [+0.0788,+0.1139] | plug +0.0913 [+0.0759,+0.1086] med +0.0915
+
+  K3_german_kafka (CIPHER): tokens 6195 pages 30 pairs 5442 core types 927  [56s in worker]
+    freq  K=  25 cls    25 | MM +0.0501 [+0.0409,+0.0582] med +0.0500 rc [+0.0410,+0.0583] | plug +0.0482 [+0.0398,+0.0554] med +0.0479
+    freq  K=  50 cls    50 | MM +0.0670 [+0.0506,+0.0766] med +0.0635 rc [+0.0541,+0.0800] | plug +0.0618 [+0.0475,+0.0712] med +0.0587
+    freq  K= 100 cls   100 | MM +0.0731 [+0.0538,+0.0837] med +0.0671 rc [+0.0598,+0.0896] | plug +0.0659 [+0.0492,+0.0745] med +0.0608
+    freq  K= 200 cls   189 | MM +0.0711 [+0.0499,+0.0809] med +0.0638 rc [+0.0572,+0.0882] | plug +0.0624 [+0.0440,+0.0715] med +0.0562
+    freq  K= 400 cls   324 | MM +0.0825 [+0.0578,+0.0933] med +0.0758 rc [+0.0644,+0.1000] | plug +0.0731 [+0.0524,+0.0826] med +0.0677
+    freq  K= 800 cls   486 | MM +0.0737 [+0.0476,+0.0870] med +0.0672 rc [+0.0541,+0.0935] | plug +0.0649 [+0.0421,+0.0772] med +0.0593
+    freq  K=full cls   927 | MM +0.0711 [+0.0424,+0.0894] med +0.0655 rc [+0.0480,+0.0951] | plug +0.0616 [+0.0360,+0.0775] med +0.0569
+    clust K=  25 cls    25 | MM +0.0491 [+0.0416,+0.0576] med +0.0498 rc [+0.0409,+0.0568] | plug +0.0489 [+0.0417,+0.0562] med +0.0491
+    clust K=  50 cls    50 | MM +0.0815 [+0.0651,+0.0915] med +0.0787 rc [+0.0680,+0.0944] | plug +0.0750 [+0.0604,+0.0837] med +0.0719
+    clust K= 100 cls   100 | MM +0.0853 [+0.0636,+0.0949] med +0.0793 rc [+0.0696,+0.1008] | plug +0.0752 [+0.0567,+0.0823] med +0.0696
+    clust K= 200 cls   199 | MM +0.0850 [+0.0586,+0.0944] med +0.0754 rc [+0.0682,+0.1040] | plug +0.0732 [+0.0511,+0.0816] med +0.0653
+    clust K= 400 cls   359 | MM +0.0722 [+0.0479,+0.0857] med +0.0651 rc [+0.0549,+0.0928] | plug +0.0631 [+0.0421,+0.0756] med +0.0570
+    clust K= 800 cls   523 | MM +0.0769 [+0.0524,+0.0902] med +0.0690 rc [+0.0604,+0.0981] | plug +0.0666 [+0.0452,+0.0794] med +0.0605
+    clust K=full cls   927 | MM +0.0711 [+0.0424,+0.0894] med +0.0655 rc [+0.0480,+0.0951] | plug +0.0616 [+0.0360,+0.0775] med +0.0569
+
+  K1_english_alice (CIPHER): tokens 6195 pages 30 pairs 5442 core types 589  [49s in worker]
+    freq  K=  25 cls    25 | MM +0.0674 [+0.0594,+0.0771] med +0.0679 rc [+0.0590,+0.0767] | plug +0.0660 [+0.0566,+0.0750] med +0.0659
+    freq  K=  50 cls    50 | MM +0.0743 [+0.0590,+0.0832] med +0.0738 rc [+0.0595,+0.0837] | plug +0.0692 [+0.0539,+0.0779] med +0.0684
+    freq  K= 100 cls   100 | MM +0.0639 [+0.0470,+0.0738] med +0.0627 rc [+0.0482,+0.0750] | plug +0.0573 [+0.0399,+0.0662] med +0.0557
+    freq  K= 200 cls   174 | MM +0.0649 [+0.0478,+0.0750] med +0.0635 rc [+0.0491,+0.0764] | plug +0.0584 [+0.0408,+0.0686] med +0.0573
+    freq  K= 400 cls   256 | MM +0.0638 [+0.0479,+0.0762] med +0.0624 rc [+0.0493,+0.0775] | plug +0.0572 [+0.0412,+0.0687] med +0.0555
+    freq  K= 800 cls   320 | MM +0.0682 [+0.0514,+0.0814] med +0.0668 rc [+0.0528,+0.0828] | plug +0.0607 [+0.0436,+0.0722] med +0.0591
+    freq  K=full cls   589 | MM +0.0327 [+0.0148,+0.0514] med +0.0331 rc [+0.0144,+0.0510] | plug +0.0279 [+0.0104,+0.0454] med +0.0284
+    clust K=  25 cls    25 | MM +0.0775 [+0.0658,+0.0892] med +0.0788 rc [+0.0646,+0.0880] | plug +0.0773 [+0.0653,+0.0881] med +0.0780
+    clust K=  50 cls    50 | MM +0.0802 [+0.0674,+0.0895] med +0.0795 rc [+0.0681,+0.0901] | plug +0.0755 [+0.0617,+0.0834] med +0.0741
+    clust K= 100 cls   100 | MM +0.0769 [+0.0627,+0.0859] med +0.0749 rc [+0.0647,+0.0879] | plug +0.0685 [+0.0543,+0.0757] med +0.0662
+    clust K= 200 cls   186 | MM +0.0715 [+0.0576,+0.0814] med +0.0706 rc [+0.0585,+0.0823] | plug +0.0640 [+0.0498,+0.0734] med +0.0628
+    clust K= 400 cls   270 | MM +0.0696 [+0.0541,+0.0825] med +0.0685 rc [+0.0552,+0.0836] | plug +0.0626 [+0.0473,+0.0739] med +0.0614
+    clust K= 800 cls   304 | MM +0.0712 [+0.0548,+0.0844] med +0.0698 rc [+0.0563,+0.0858] | plug +0.0639 [+0.0477,+0.0756] med +0.0624
+    clust K=full cls   589 | MM +0.0327 [+0.0148,+0.0514] med +0.0331 rc [+0.0144,+0.0510] | plug +0.0279 [+0.0104,+0.0454] med +0.0284
+
+  K3_english_alice (CIPHER): tokens 6195 pages 30 pairs 5442 core types 957  [56s in worker]
+    freq  K=  25 cls    25 | MM +0.0557 [+0.0447,+0.0661] med +0.0565 rc [+0.0438,+0.0653] | plug +0.0535 [+0.0420,+0.0618] med +0.0539
+    freq  K=  50 cls    50 | MM +0.0693 [+0.0499,+0.0815] med +0.0684 rc [+0.0509,+0.0825] | plug +0.0640 [+0.0457,+0.0745] med +0.0625
+    freq  K= 100 cls   100 | MM +0.0823 [+0.0615,+0.0965] med +0.0795 rc [+0.0642,+0.0993] | plug +0.0759 [+0.0566,+0.0884] med +0.0726
+    freq  K= 200 cls   191 | MM +0.0838 [+0.0595,+0.0960] med +0.0792 rc [+0.0641,+0.1006] | plug +0.0756 [+0.0535,+0.0860] med +0.0715
+    freq  K= 400 cls   330 | MM +0.0875 [+0.0618,+0.0977] med +0.0819 rc [+0.0674,+0.1033] | plug +0.0765 [+0.0529,+0.0865] med +0.0713
+    freq  K= 800 cls   504 | MM +0.0834 [+0.0496,+0.0979] med +0.0771 rc [+0.0558,+0.1042] | plug +0.0717 [+0.0406,+0.0850] med +0.0660
+    freq  K=full cls   957 | MM +0.0656 [+0.0358,+0.0798] med +0.0594 rc [+0.0420,+0.0861] | plug +0.0571 [+0.0299,+0.0701] med +0.0515
+    clust K=  25 cls    25 | MM +0.0569 [+0.0458,+0.0685] med +0.0577 rc [+0.0450,+0.0677] | plug +0.0560 [+0.0447,+0.0660] med +0.0564
+    clust K=  50 cls    50 | MM +0.0720 [+0.0577,+0.0830] med +0.0714 rc [+0.0582,+0.0835] | plug +0.0669 [+0.0522,+0.0761] med +0.0656
+    clust K= 100 cls   100 | MM +0.0845 [+0.0529,+0.0991] med +0.0813 rc [+0.0561,+0.1023] | plug +0.0756 [+0.0477,+0.0885] med +0.0719
+    clust K= 200 cls   199 | MM +0.0956 [+0.0649,+0.1101] med +0.0895 rc [+0.0710,+0.1162] | plug +0.0828 [+0.0542,+0.0947] med +0.0767
+    clust K= 400 cls   370 | MM +0.0904 [+0.0591,+0.1014] med +0.0836 rc [+0.0659,+0.1081] | plug +0.0774 [+0.0488,+0.0881] med +0.0708
+    clust K= 800 cls   562 | MM +0.0812 [+0.0489,+0.0947] med +0.0757 rc [+0.0543,+0.1001] | plug +0.0701 [+0.0391,+0.0826] med +0.0649
+    clust K=full cls   957 | MM +0.0656 [+0.0358,+0.0798] med +0.0594 rc [+0.0420,+0.0861] | plug +0.0571 [+0.0299,+0.0701] med +0.0515
+
+  lang_italian_dante (LANG): tokens 6195 pages 7 pairs 5341 core types 1143  [55s in worker]
+    freq  K=  25 cls    25 | MM +0.0871 [+0.0790,+0.0985] med +0.0865 rc [+0.0795,+0.0990] | plug +0.0861 [+0.0777,+0.0962] med +0.0854
+    freq  K=  50 cls    50 | MM +0.1355 [+0.1244,+0.1459] med +0.1333 rc [+0.1266,+0.1481] | plug +0.1285 [+0.1180,+0.1379] med +0.1262
+    freq  K= 100 cls    97 | MM +0.1619 [+0.1464,+0.1720] med +0.1603 rc [+0.1480,+0.1735] | plug +0.1489 [+0.1345,+0.1585] med +0.1480
+    freq  K= 200 cls   191 | MM +0.1559 [+0.1343,+0.1703] med +0.1541 rc [+0.1360,+0.1720] | plug +0.1376 [+0.1173,+0.1522] med +0.1360
+    freq  K= 400 cls   333 | MM +0.1322 [+0.1025,+0.1447] med +0.1332 rc [+0.1014,+0.1437] | plug +0.1088 [+0.0803,+0.1222] med +0.1101
+    freq  K= 800 cls   490 | MM +0.0798 [+0.0478,+0.0955] med +0.0780 rc [+0.0496,+0.0972] | plug +0.0565 [+0.0272,+0.0734] med +0.0545
+    freq  K=full cls  1143 | MM -0.1466 [-0.1785,-0.1212] med -0.1542 rc [-0.1710,-0.1136] | plug -0.1626 [-0.1906,-0.1373] med -0.1695
+    clust K=  25 cls    25 | MM +0.1296 [+0.1230,+0.1398] med +0.1300 rc [+0.1226,+0.1394] | plug +0.1260 [+0.1189,+0.1346] med +0.1256
+    clust K=  50 cls    50 | MM +0.1562 [+0.1393,+0.1755] med +0.1546 rc [+0.1409,+0.1771] | plug +0.1428 [+0.1259,+0.1583] med +0.1404
+    clust K= 100 cls   100 | MM +0.1814 [+0.1583,+0.1873] med +0.1734 rc [+0.1664,+0.1953] | plug +0.1527 [+0.1288,+0.1559] med +0.1441
+    clust K= 200 cls   197 | MM +0.1406 [+0.1126,+0.1502] med +0.1366 rc [+0.1166,+0.1542] | plug +0.1091 [+0.0814,+0.1194] med +0.1048
+    clust K= 400 cls   361 | MM +0.0961 [+0.0636,+0.1061] med +0.0913 rc [+0.0683,+0.1108] | plug +0.0651 [+0.0340,+0.0769] med +0.0602
+    clust K= 800 cls   522 | MM +0.0624 [+0.0277,+0.0735] med +0.0580 rc [+0.0321,+0.0779] | plug +0.0351 [+0.0034,+0.0478] med +0.0313
+    clust K=full cls  1143 | MM -0.1466 [-0.1785,-0.1212] med -0.1542 rc [-0.1710,-0.1136] | plug -0.1626 [-0.1906,-0.1373] med -0.1695
+
+  lang_latin_cremma (LANG): tokens 6195 pages 13 pairs 5501 core types 1692  [60s in worker]
+    freq  K=  25 cls    25 | MM +0.0358 [+0.0263,+0.0637] med +0.0399 rc [+0.0222,+0.0596] | plug +0.0346 [+0.0246,+0.0584] med +0.0384
+    freq  K=  50 cls    50 | MM +0.0483 [+0.0362,+0.0856] med +0.0553 rc [+0.0291,+0.0785] | plug +0.0453 [+0.0329,+0.0773] med +0.0514
+    freq  K= 100 cls    97 | MM +0.0543 [+0.0351,+0.0916] med +0.0638 rc [+0.0256,+0.0821] | plug +0.0487 [+0.0283,+0.0798] med +0.0570
+    freq  K= 200 cls   180 | MM +0.0758 [+0.0551,+0.1346] med +0.0830 rc [+0.0479,+0.1274] | plug +0.0671 [+0.0475,+0.1182] med +0.0733
+    freq  K= 400 cls   303 | MM +0.1002 [+0.0636,+0.1688] med +0.1089 rc [+0.0549,+0.1601] | plug +0.0842 [+0.0505,+0.1421] med +0.0911
+    freq  K= 800 cls   450 | MM +0.1195 [+0.0760,+0.1918] med +0.1256 rc [+0.0699,+0.1857] | plug +0.1007 [+0.0616,+0.1609] med +0.1053
+    freq  K=full cls  1692 | MM +0.1222 [+0.0900,+0.1912] med +0.1293 rc [+0.0828,+0.1840] | plug +0.1036 [+0.0731,+0.1672] med +0.1095
+    clust K=  25 cls    25 | MM +0.0291 [+0.0189,+0.0426] med +0.0304 rc [+0.0176,+0.0413] | plug +0.0270 [+0.0176,+0.0401] med +0.0284
+    clust K=  50 cls    50 | MM +0.0711 [+0.0585,+0.1148] med +0.0782 rc [+0.0515,+0.1078] | plug +0.0636 [+0.0514,+0.1017] med +0.0688
+    clust K= 100 cls    99 | MM +0.0956 [+0.0609,+0.1519] med +0.1046 rc [+0.0518,+0.1429] | plug +0.0847 [+0.0528,+0.1324] med +0.0919
+    clust K= 200 cls   186 | MM +0.1124 [+0.0732,+0.1746] med +0.1202 rc [+0.0655,+0.1669] | plug +0.0959 [+0.0605,+0.1478] med +0.1014
+    clust K= 400 cls   337 | MM +0.1188 [+0.0833,+0.1919] med +0.1226 rc [+0.0794,+0.1880] | plug +0.1010 [+0.0693,+0.1625] med +0.1032
+    clust K= 800 cls   513 | MM +0.1291 [+0.0893,+0.2106] med +0.1316 rc [+0.0868,+0.2081] | plug +0.1094 [+0.0741,+0.1776] med +0.1106
+    clust K=full cls  1692 | MM +0.1222 [+0.0900,+0.1912] med +0.1293 rc [+0.0828,+0.1840] | plug +0.1036 [+0.0731,+0.1672] med +0.1095
+
+  lang_mhg_nibelungenlied (LANG, UNMATCHED): tokens 5172 pages 4 pairs 4557 core types 798  [50s in worker]
+    freq  K=  25 cls    25 | MM +0.1176 [+0.1052,+0.1286] med +0.1133 rc [+0.1096,+0.1330] | plug +0.1067 [+0.0933,+0.1163] med +0.0996
+    freq  K=  50 cls    50 | MM +0.1690 [+0.1387,+0.1849] med +0.1589 rc [+0.1488,+0.1950] | plug +0.1479 [+0.1184,+0.1619] med +0.1345
+    freq  K= 100 cls    98 | MM +0.1956 [+0.1644,+0.2175] med +0.1785 rc [+0.1815,+0.2346] | plug +0.1697 [+0.1401,+0.1881] med +0.1503
+    freq  K= 200 cls   190 | MM +0.2337 [+0.1991,+0.2466] med +0.2132 rc [+0.2197,+0.2671] | plug +0.2019 [+0.1713,+0.2130] med +0.1805
+    freq  K= 400 cls   333 | MM +0.2681 [+0.2301,+0.2814] med +0.2468 rc [+0.2514,+0.3027] | plug +0.2337 [+0.2002,+0.2453] med +0.2113
+    freq  K= 800 cls   479 | MM +0.2413 [+0.1908,+0.2532] med +0.2290 rc [+0.2031,+0.2655] | plug +0.2083 [+0.1638,+0.2200] med +0.1940
+    freq  K=full cls   798 | MM +0.2532 [+0.1968,+0.2602] med +0.2426 rc [+0.2074,+0.2708] | plug +0.2218 [+0.1720,+0.2292] med +0.2095
+    clust K=  25 cls    25 | MM +0.1229 [+0.1124,+0.1358] med +0.1230 rc [+0.1123,+0.1356] | plug +0.1167 [+0.1052,+0.1278] med +0.1136
+    clust K=  50 cls    50 | MM +0.2238 [+0.2035,+0.2317] med +0.2173 rc [+0.2100,+0.2382] | plug +0.1985 [+0.1762,+0.2054] med +0.1860
+    clust K= 100 cls   100 | MM +0.2426 [+0.2059,+0.2562] med +0.2343 rc [+0.2142,+0.2645] | plug +0.2096 [+0.1760,+0.2197] med +0.1975
+    clust K= 200 cls   196 | MM +0.2531 [+0.2052,+0.2612] med +0.2356 rc [+0.2227,+0.2787] | plug +0.2143 [+0.1722,+0.2215] med +0.1961
+    clust K= 400 cls   351 | MM +0.2534 [+0.2075,+0.2590] med +0.2346 rc [+0.2263,+0.2778] | plug +0.2160 [+0.1756,+0.2222] med +0.1970
+    clust K= 800 cls   499 | MM +0.2370 [+0.1873,+0.2464] med +0.2221 rc [+0.2022,+0.2613] | plug +0.2032 [+0.1600,+0.2129] med +0.1878
+    clust K=full cls   798 | MM +0.2532 [+0.1968,+0.2602] med +0.2426 rc [+0.2074,+0.2708] | plug +0.2218 [+0.1720,+0.2292] med +0.2095
+
+  lang_mhg_parzival (LANG): tokens 6195 pages 39 pairs 5045 core types 942  [47s in worker]
+    freq  K=  25 cls    25 | MM +0.0555 [+0.0456,+0.0640] med +0.0548 rc [+0.0462,+0.0646] | plug +0.0520 [+0.0424,+0.0589] med +0.0507
+    freq  K=  50 cls    50 | MM +0.0871 [+0.0708,+0.0973] med +0.0843 rc [+0.0735,+0.1000] | plug +0.0774 [+0.0617,+0.0843] med +0.0731
+    freq  K= 100 cls    98 | MM +0.0952 [+0.0764,+0.1055] med +0.0916 rc [+0.0799,+0.1090] | plug +0.0852 [+0.0673,+0.0935] med +0.0805
+    freq  K= 200 cls   193 | MM +0.1058 [+0.0827,+0.1196] med +0.1012 rc [+0.0873,+0.1242] | plug +0.0936 [+0.0722,+0.1047] med +0.0886
+    freq  K= 400 cls   341 | MM +0.0940 [+0.0687,+0.1100] med +0.0891 rc [+0.0735,+0.1148] | plug +0.0824 [+0.0585,+0.0959] med +0.0768
+    freq  K= 800 cls   530 | MM +0.0833 [+0.0552,+0.1006] med +0.0794 rc [+0.0590,+0.1044] | plug +0.0714 [+0.0454,+0.0866] med +0.0672
+    freq  K=full cls   942 | MM +0.0504 [+0.0180,+0.0731] med +0.0467 rc [+0.0217,+0.0768] | plug +0.0402 [+0.0105,+0.0617] med +0.0374
+    clust K=  25 cls    25 | MM +0.0710 [+0.0565,+0.0847] med +0.0711 rc [+0.0563,+0.0846] | plug +0.0663 [+0.0515,+0.0777] med +0.0650
+    clust K=  50 cls    50 | MM +0.0968 [+0.0747,+0.1088] med +0.0922 rc [+0.0794,+0.1135] | plug +0.0818 [+0.0609,+0.0902] med +0.0758
+    clust K= 100 cls    99 | MM +0.1134 [+0.0873,+0.1233] med +0.1054 rc [+0.0953,+0.1313] | plug +0.0951 [+0.0711,+0.1019] med +0.0871
+    clust K= 200 cls   194 | MM +0.1099 [+0.0835,+0.1240] med +0.1030 rc [+0.0905,+0.1309] | plug +0.0941 [+0.0698,+0.1050] med +0.0868
+    clust K= 400 cls   358 | MM +0.1027 [+0.0762,+0.1179] med +0.0957 rc [+0.0831,+0.1249] | plug +0.0858 [+0.0599,+0.0991] med +0.0788
+    clust K= 800 cls   552 | MM +0.0831 [+0.0524,+0.0984] med +0.0776 rc [+0.0579,+0.1040] | plug +0.0688 [+0.0412,+0.0832] med +0.0632
+    clust K=full cls   942 | MM +0.0504 [+0.0180,+0.0731] med +0.0467 rc [+0.0217,+0.0768] | plug +0.0402 [+0.0105,+0.0617] med +0.0374
+
+  lang_occitan_croisade (LANG): tokens 6195 pages 27 pairs 5483 core types 1038  [54s in worker]
+    freq  K=  25 cls    25 | MM +0.1319 [+0.1231,+0.1464] med +0.1326 rc [+0.1223,+0.1456] | plug +0.1300 [+0.1210,+0.1433] med +0.1302
+    freq  K=  50 cls    50 | MM +0.1587 [+0.1426,+0.1760] med +0.1578 rc [+0.1434,+0.1769] | plug +0.1519 [+0.1361,+0.1686] med +0.1508
+    freq  K= 100 cls    99 | MM +0.1848 [+0.1600,+0.2013] med +0.1814 rc [+0.1635,+0.2048] | plug +0.1714 [+0.1471,+0.1864] med +0.1678
+    freq  K= 200 cls   182 | MM +0.2010 [+0.1699,+0.2166] med +0.1953 rc [+0.1756,+0.2223] | plug +0.1828 [+0.1542,+0.1978] med +0.1780
+    freq  K= 400 cls   315 | MM +0.1832 [+0.1463,+0.2021] med +0.1765 rc [+0.1529,+0.2088] | plug +0.1633 [+0.1285,+0.1827] med +0.1577
+    freq  K= 800 cls   475 | MM +0.1125 [+0.0744,+0.1334] med +0.1043 rc [+0.0825,+0.1415] | plug +0.0917 [+0.0575,+0.1135] med +0.0850
+    freq  K=full cls  1038 | MM -0.1337 [-0.1658,-0.1124] med -0.1423 rc [-0.1572,-0.1037] | plug -0.1488 [-0.1770,-0.1248] med -0.1549
+    clust K=  25 cls    25 | MM +0.1637 [+0.1463,+0.1857] med +0.1641 rc [+0.1458,+0.1853] | plug +0.1597 [+0.1419,+0.1793] med +0.1591
+    clust K=  50 cls    50 | MM +0.2228 [+0.1947,+0.2482] med +0.2190 rc [+0.1985,+0.2520] | plug +0.2039 [+0.1758,+0.2256] med +0.1991
+    clust K= 100 cls    98 | MM +0.1964 [+0.1605,+0.2257] med +0.1895 rc [+0.1673,+0.2325] | plug +0.1692 [+0.1347,+0.1939] med +0.1610
+    clust K= 200 cls   194 | MM +0.1706 [+0.1293,+0.1863] med +0.1582 rc [+0.1418,+0.1987] | plug +0.1395 [+0.1024,+0.1555] med +0.1282
+    clust K= 400 cls   340 | MM +0.1363 [+0.0906,+0.1525] med +0.1230 rc [+0.1039,+0.1658] | plug +0.1057 [+0.0660,+0.1223] med +0.0947
+    clust K= 800 cls   522 | MM +0.0921 [+0.0505,+0.1143] med +0.0820 rc [+0.0606,+0.1245] | plug +0.0689 [+0.0317,+0.0915] med +0.0611
+    clust K=full cls  1038 | MM -0.1337 [-0.1658,-0.1124] med -0.1423 rc [-0.1572,-0.1037] | plug -0.1488 [-0.1770,-0.1248] med -0.1549
+
+  lang_oldfrench_roland (LANG): tokens 6195 pages 58 pairs 5351 core types 993  [62s in worker]
+    freq  K=  25 cls    25 | MM +0.0914 [+0.0795,+0.0998] med +0.0896 rc [+0.0813,+0.1015] | plug +0.0860 [+0.0746,+0.0934] med +0.0839
+    freq  K=  50 cls    50 | MM +0.1543 [+0.1347,+0.1645] med +0.1506 rc [+0.1385,+0.1683] | plug +0.1432 [+0.1250,+0.1522] med +0.1391
+    freq  K= 100 cls   100 | MM +0.1955 [+0.1666,+0.2060] med +0.1872 rc [+0.1749,+0.2143] | plug +0.1746 [+0.1477,+0.1839] med +0.1666
+    freq  K= 200 cls   195 | MM +0.2066 [+0.1633,+0.2134] med +0.1902 rc [+0.1797,+0.2298] | plug +0.1727 [+0.1338,+0.1787] med +0.1579
+    freq  K= 400 cls   362 | MM +0.1735 [+0.1199,+0.1746] med +0.1501 rc [+0.1432,+0.1979] | plug +0.1318 [+0.0855,+0.1344] med +0.1114
+    freq  K= 800 cls   540 | MM +0.1057 [+0.0494,+0.1059] med +0.0795 rc [+0.0755,+0.1321] | plug +0.0622 [+0.0142,+0.0647] med +0.0413
+    freq  K=full cls   993 | MM -0.0954 [-0.1537,-0.0868] med -0.1187 rc [-0.1305,-0.0635] | plug -0.1314 [-0.1806,-0.1206] med -0.1495
+    clust K=  25 cls    25 | MM +0.1571 [+0.1463,+0.1711] med +0.1596 rc [+0.1437,+0.1685] | plug +0.1521 [+0.1398,+0.1641] med +0.1531
+    clust K=  50 cls    50 | MM +0.2305 [+0.2005,+0.2439] med +0.2250 rc [+0.2059,+0.2493] | plug +0.2054 [+0.1755,+0.2141] med +0.1969
+    clust K= 100 cls   100 | MM +0.2567 [+0.2097,+0.2597] med +0.2365 rc [+0.2300,+0.2800] | plug +0.2085 [+0.1644,+0.2092] med +0.1878
+    clust K= 200 cls   198 | MM +0.2034 [+0.1452,+0.2004] med +0.1744 rc [+0.1743,+0.2295] | plug +0.1486 [+0.0984,+0.1458] med +0.1226
+    clust K= 400 cls   371 | MM +0.1384 [+0.0792,+0.1337] med +0.1080 rc [+0.1096,+0.1642] | plug +0.0852 [+0.0341,+0.0823] med +0.0598
+    clust K= 800 cls   568 | MM +0.0865 [+0.0299,+0.0857] med +0.0579 rc [+0.0584,+0.1142] | plug +0.0406 [-0.0079,+0.0424] med +0.0178
+    clust K=full cls   993 | MM -0.0954 [-0.1537,-0.0868] med -0.1187 rc [-0.1305,-0.0635] | plug -0.1314 [-0.1806,-0.1206] med -0.1495
+
+  realline_cremma_prose15 (LANG, UNMATCHED): tokens 1730 pages 3 pairs 1514 core types 575  [24s in worker]
+    freq  K=  25 cls    24 | MM +0.0395 [+0.0333,+0.0627] med +0.0419 rc [+0.0309,+0.0603] | plug +0.0341 [+0.0246,+0.0579] med +0.0344
+    freq  K=  50 cls    45 | MM +0.0739 [+0.0572,+0.1278] med +0.0791 rc [+0.0521,+0.1226] | plug +0.0641 [+0.0422,+0.1164] med +0.0659
+    freq  K= 100 cls    74 | MM +0.0687 [+0.0535,+0.1255] med +0.0689 rc [+0.0533,+0.1253] | plug +0.0576 [+0.0383,+0.1125] med +0.0552
+    freq  K= 200 cls   121 | MM +0.0452 [+0.0241,+0.1006] med +0.0504 rc [+0.0188,+0.0954] | plug +0.0300 [+0.0043,+0.0852] med +0.0342
+    freq  K= 400 cls   166 | MM +0.0289 [+0.0093,+0.0885] med +0.0350 rc [+0.0032,+0.0824] | plug +0.0167 [-0.0051,+0.0777] med +0.0210
+    freq  K= 800 cls   195 | MM +0.0401 [+0.0291,+0.0963] med +0.0518 rc [+0.0175,+0.0847] | plug +0.0276 [+0.0155,+0.0851] med +0.0344
+    freq  K=full cls   575 | MM +0.0316 [-0.0326,+0.0820] med +0.0251 rc [-0.0260,+0.0886] | plug +0.0124 [-0.0463,+0.0599] med +0.0055
+    clust K=  25 cls    25 | MM +0.0381 [+0.0118,+0.0926] med +0.0621 rc [-0.0121,+0.0687] | plug +0.0339 [+0.0097,+0.0787] med +0.0553
+    clust K=  50 cls    49 | MM +0.0587 [+0.0395,+0.0739] med +0.0583 rc [+0.0399,+0.0744] | plug +0.0447 [+0.0294,+0.0566] med +0.0437
+    clust K= 100 cls    82 | MM +0.0670 [+0.0524,+0.0921] med +0.0685 rc [+0.0509,+0.0906] | plug +0.0501 [+0.0351,+0.0774] med +0.0494
+    clust K= 200 cls   137 | MM +0.0288 [+0.0214,+0.0834] med +0.0397 rc [+0.0106,+0.0726] | plug +0.0179 [+0.0087,+0.0729] med +0.0248
+    clust K= 400 cls   173 | MM +0.0354 [+0.0214,+0.0994] med +0.0416 rc [+0.0152,+0.0932] | plug +0.0234 [+0.0080,+0.0874] med +0.0262
+    clust K= 800 cls   181 | MM +0.0363 [+0.0231,+0.0966] med +0.0438 rc [+0.0156,+0.0891] | plug +0.0245 [+0.0099,+0.0860] med +0.0282
+    clust K=full cls   575 | MM +0.0316 [-0.0326,+0.0820] med +0.0251 rc [-0.0260,+0.0886] | plug +0.0124 [-0.0463,+0.0599] med +0.0055
+
+  realline_italian_dante (LANG): tokens 6195 pages 7 pairs 5315 core types 1174  [64s in worker]
+    freq  K=  25 cls    25 | MM +0.0725 [+0.0690,+0.0784] med +0.0719 rc [+0.0696,+0.0790] | plug +0.0685 [+0.0647,+0.0733] med +0.0677
+    freq  K=  50 cls    50 | MM +0.1038 [+0.0953,+0.1090] med +0.1013 rc [+0.0978,+0.1115] | plug +0.0976 [+0.0903,+0.1019] med +0.0950
+    freq  K= 100 cls   100 | MM +0.1175 [+0.1006,+0.1232] med +0.1137 rc [+0.1043,+0.1270] | plug +0.1076 [+0.0942,+0.1133] med +0.1035
+    freq  K= 200 cls   198 | MM +0.1190 [+0.1000,+0.1256] med +0.1138 rc [+0.1053,+0.1308] | plug +0.1011 [+0.0821,+0.1088] med +0.0966
+    freq  K= 400 cls   343 | MM +0.0994 [+0.0773,+0.1090] med +0.0930 rc [+0.0836,+0.1154] | plug +0.0786 [+0.0573,+0.0866] med +0.0742
+    freq  K= 800 cls   530 | MM +0.0451 [+0.0199,+0.0510] med +0.0390 rc [+0.0260,+0.0572] | plug +0.0241 [+0.0025,+0.0309] med +0.0188
+    freq  K=full cls  1174 | MM -0.1481 [-0.1777,-0.1383] med -0.1542 rc [-0.1715,-0.1322] | plug -0.1609 [-0.1869,-0.1515] med -0.1655
+    clust K=  25 cls    25 | MM +0.1011 [+0.0947,+0.1097] med +0.1008 rc [+0.0950,+0.1101] | plug +0.0967 [+0.0893,+0.1039] med +0.0960
+    clust K=  50 cls    50 | MM +0.1581 [+0.1494,+0.1629] med +0.1566 rc [+0.1509,+0.1644] | plug +0.1390 [+0.1295,+0.1418] med +0.1352
+    clust K= 100 cls   100 | MM +0.1539 [+0.1383,+0.1537] med +0.1471 rc [+0.1452,+0.1606] | plug +0.1262 [+0.1109,+0.1249] med +0.1175
+    clust K= 200 cls   200 | MM +0.0993 [+0.0729,+0.1015] med +0.0900 rc [+0.0822,+0.1108] | plug +0.0679 [+0.0456,+0.0690] med +0.0592
+    clust K= 400 cls   370 | MM +0.0546 [+0.0254,+0.0559] med +0.0426 rc [+0.0374,+0.0679] | plug +0.0214 [-0.0063,+0.0241] med +0.0120
+    clust K= 800 cls   622 | MM -0.0058 [-0.0337,-0.0010] med -0.0171 rc [-0.0224,+0.0103] | plug -0.0317 [-0.0577,-0.0261] med -0.0400
+    clust K=full cls  1174 | MM -0.1481 [-0.1777,-0.1383] med -0.1542 rc [-0.1715,-0.1322] | plug -0.1609 [-0.1869,-0.1515] med -0.1655
+
+  gen_s28_ZL3b_s1 (GEN): tokens 6195 pages 36 pairs 5411 core types 973  [45s in worker]
+    freq  K=  25 cls    25 | MM +0.0408 [+0.0339,+0.0531] med +0.0428 rc [+0.0319,+0.0511] | plug +0.0394 [+0.0317,+0.0495] med +0.0404
+    freq  K=  50 cls    50 | MM +0.0582 [+0.0461,+0.0725] med +0.0581 rc [+0.0462,+0.0726] | plug +0.0523 [+0.0395,+0.0637] med +0.0511
+    freq  K= 100 cls    96 | MM +0.0584 [+0.0417,+0.0721] med +0.0561 rc [+0.0439,+0.0744] | plug +0.0483 [+0.0318,+0.0583] med +0.0454
+    freq  K= 200 cls   168 | MM +0.0525 [+0.0290,+0.0699] med +0.0493 rc [+0.0322,+0.0731] | plug +0.0403 [+0.0172,+0.0550] med +0.0366
+    freq  K= 400 cls   252 | MM +0.0422 [+0.0156,+0.0607] med +0.0375 rc [+0.0203,+0.0653] | plug +0.0289 [+0.0041,+0.0453] med +0.0238
+    freq  K= 800 cls   353 | MM +0.0274 [+0.0000,+0.0482] med +0.0226 rc [+0.0049,+0.0530] | plug +0.0139 [-0.0123,+0.0322] med +0.0088
+    freq  K=full cls   973 | MM +0.0475 [+0.0127,+0.0633] med +0.0420 rc [+0.0182,+0.0688] | plug +0.0351 [+0.0028,+0.0481] med +0.0295
+    clust K=  25 cls    25 | MM +0.0611 [+0.0540,+0.0726] med +0.0632 rc [+0.0519,+0.0705] | plug +0.0587 [+0.0509,+0.0686] med +0.0598
+    clust K=  50 cls    50 | MM +0.0826 [+0.0689,+0.0968] med +0.0824 rc [+0.0692,+0.0970] | plug +0.0731 [+0.0578,+0.0842] med +0.0712
+    clust K= 100 cls    99 | MM +0.0657 [+0.0440,+0.0870] med +0.0641 rc [+0.0456,+0.0886] | plug +0.0535 [+0.0324,+0.0713] med +0.0505
+    clust K= 200 cls   186 | MM +0.0622 [+0.0341,+0.0810] med +0.0563 rc [+0.0400,+0.0869] | plug +0.0458 [+0.0188,+0.0624] med +0.0393
+    clust K= 400 cls   301 | MM +0.0420 [+0.0150,+0.0625] med +0.0367 rc [+0.0203,+0.0678] | plug +0.0276 [+0.0013,+0.0455] med +0.0216
+    clust K= 800 cls   388 | MM +0.0392 [+0.0097,+0.0594] med +0.0337 rc [+0.0153,+0.0649] | plug +0.0248 [-0.0034,+0.0426] med +0.0191
+    clust K=full cls   973 | MM +0.0475 [+0.0127,+0.0633] med +0.0420 rc [+0.0182,+0.0688] | plug +0.0351 [+0.0028,+0.0481] med +0.0295
+
+  gen_c2_section (GEN): tokens 6195 pages 36 pairs 5411 core types 305  [43s in worker]
+    freq  K=  25 cls    25 | MM +0.0019 [-0.0053,+0.0096] med +0.0024 rc [-0.0058,+0.0091] | plug +0.0023 [-0.0037,+0.0092] med +0.0027
+    freq  K=  50 cls    50 | MM +0.0050 [-0.0060,+0.0173] med +0.0050 rc [-0.0059,+0.0174] | plug +0.0021 [-0.0085,+0.0132] med +0.0016
+    freq  K= 100 cls   100 | MM +0.0015 [-0.0122,+0.0147] med -0.0002 rc [-0.0105,+0.0164] | plug -0.0019 [-0.0150,+0.0100] med -0.0041
+    freq  K= 200 cls   174 | MM -0.0019 [-0.0203,+0.0150] med -0.0048 rc [-0.0174,+0.0179] | plug -0.0066 [-0.0247,+0.0081] med -0.0096
+    freq  K= 400 cls   228 | MM -0.0077 [-0.0271,+0.0059] med -0.0115 rc [-0.0233,+0.0097] | plug -0.0133 [-0.0320,-0.0009] med -0.0174
+    freq  K= 800 cls   250 | MM -0.0072 [-0.0263,+0.0068] med -0.0110 rc [-0.0225,+0.0106] | plug -0.0125 [-0.0315,+0.0003] med -0.0164
+    freq  K=full cls   305 | MM -0.0167 [-0.0355,-0.0037] med -0.0204 rc [-0.0318,-0.0001] | plug -0.0219 [-0.0394,-0.0097] med -0.0254
+    clust K=  25 cls    25 | MM +0.0010 [-0.0062,+0.0091] med +0.0009 rc [-0.0061,+0.0092] | plug +0.0003 [-0.0062,+0.0073] med -0.0001
+    clust K=  50 cls    50 | MM +0.0064 [-0.0051,+0.0200] med +0.0055 rc [-0.0043,+0.0208] | plug +0.0036 [-0.0069,+0.0150] med +0.0022
+    clust K= 100 cls   100 | MM +0.0092 [-0.0055,+0.0238] med +0.0074 rc [-0.0037,+0.0257] | plug +0.0055 [-0.0087,+0.0179] med +0.0033
+    clust K= 200 cls   184 | MM -0.0023 [-0.0215,+0.0129] med -0.0064 rc [-0.0174,+0.0169] | plug -0.0082 [-0.0269,+0.0055] med -0.0122
+    clust K= 400 cls   223 | MM -0.0062 [-0.0251,+0.0072] med -0.0104 rc [-0.0210,+0.0113] | plug -0.0117 [-0.0302,+0.0010] med -0.0155
+    clust K= 800 cls   223 | MM -0.0062 [-0.0251,+0.0072] med -0.0104 rc [-0.0210,+0.0113] | plug -0.0117 [-0.0302,+0.0010] med -0.0155
+    clust K=full cls   305 | MM -0.0167 [-0.0355,-0.0037] med -0.0204 rc [-0.0318,-0.0001] | plug -0.0219 [-0.0394,-0.0097] med -0.0254
+
+  gen_timm_schinner (GEN): tokens 6195 pages 24 pairs 5505 core types 490  [54s in worker]
+    freq  K=  25 cls    25 | MM +0.0144 [+0.0059,+0.0255] med +0.0162 rc [+0.0041,+0.0238] | plug +0.0135 [+0.0054,+0.0236] med +0.0148
+    freq  K=  50 cls    50 | MM +0.0128 [+0.0016,+0.0247] med +0.0137 rc [+0.0007,+0.0238] | plug +0.0100 [+0.0001,+0.0205] med +0.0103
+    freq  K= 100 cls    96 | MM +0.0151 [+0.0011,+0.0243] med +0.0127 rc [+0.0035,+0.0267] | plug +0.0092 [-0.0039,+0.0176] med +0.0066
+    freq  K= 200 cls   168 | MM +0.0124 [-0.0022,+0.0231] med +0.0100 rc [+0.0002,+0.0255] | plug +0.0050 [-0.0085,+0.0140] med +0.0026
+    freq  K= 400 cls   245 | MM +0.0112 [-0.0077,+0.0231] med +0.0083 rc [-0.0047,+0.0260] | plug +0.0032 [-0.0144,+0.0138] med +0.0002
+    freq  K= 800 cls   311 | MM +0.0139 [-0.0068,+0.0264] med +0.0100 rc [-0.0029,+0.0303] | plug +0.0057 [-0.0136,+0.0165] med +0.0020
+    freq  K=full cls   490 | MM -0.0039 [-0.0269,+0.0122] med -0.0070 rc [-0.0238,+0.0153] | plug -0.0105 [-0.0321,+0.0045] med -0.0138
+    clust K=  25 cls    25 | MM +0.0112 [+0.0017,+0.0207] med +0.0113 rc [+0.0016,+0.0205] | plug +0.0107 [+0.0015,+0.0199] med +0.0108
+    clust K=  50 cls    50 | MM +0.0202 [+0.0028,+0.0400] med +0.0213 rc [+0.0016,+0.0389] | plug +0.0177 [+0.0024,+0.0339] med +0.0180
+    clust K= 100 cls    99 | MM +0.0215 [+0.0046,+0.0369] med +0.0212 rc [+0.0049,+0.0372] | plug +0.0153 [+0.0002,+0.0280] med +0.0141
+    clust K= 200 cls   184 | MM +0.0178 [-0.0001,+0.0295] med +0.0143 rc [+0.0034,+0.0330] | plug +0.0093 [-0.0079,+0.0196] med +0.0057
+    clust K= 400 cls   272 | MM +0.0150 [-0.0060,+0.0292] med +0.0119 rc [-0.0029,+0.0324] | plug +0.0069 [-0.0127,+0.0189] med +0.0035
+    clust K= 800 cls   298 | MM +0.0148 [-0.0058,+0.0283] med +0.0112 rc [-0.0023,+0.0319] | plug +0.0066 [-0.0127,+0.0186] med +0.0033
+    clust K=full cls   490 | MM -0.0039 [-0.0269,+0.0122] med -0.0070 rc [-0.0238,+0.0153] | plug -0.0105 [-0.0321,+0.0045] med -0.0138
+
+  gen_schwartz_reuse (GEN): tokens 6195 pages 36 pairs 5411 core types 605  [49s in worker]
+    freq  K=  25 cls    25 | MM +0.0093 [+0.0026,+0.0184] med +0.0101 rc [+0.0019,+0.0177] | plug +0.0090 [+0.0023,+0.0170] med +0.0092
+    freq  K=  50 cls    50 | MM +0.0207 [+0.0087,+0.0319] med +0.0200 rc [+0.0094,+0.0326] | plug +0.0175 [+0.0068,+0.0267] med +0.0162
+    freq  K= 100 cls    99 | MM +0.0170 [+0.0024,+0.0290] med +0.0159 rc [+0.0035,+0.0300] | plug +0.0145 [+0.0021,+0.0243] med +0.0128
+    freq  K= 200 cls   174 | MM +0.0155 [-0.0017,+0.0305] med +0.0145 rc [-0.0006,+0.0316] | plug +0.0118 [-0.0045,+0.0247] med +0.0104
+    freq  K= 400 cls   254 | MM +0.0257 [+0.0063,+0.0415] med +0.0246 rc [+0.0074,+0.0426] | plug +0.0218 [+0.0039,+0.0355] med +0.0201
+    freq  K= 800 cls   322 | MM +0.0270 [+0.0076,+0.0426] med +0.0261 rc [+0.0085,+0.0434] | plug +0.0235 [+0.0061,+0.0371] med +0.0218
+    freq  K=full cls   605 | MM +0.0522 [+0.0319,+0.0688] med +0.0516 rc [+0.0325,+0.0694] | plug +0.0476 [+0.0289,+0.0615] med +0.0467
+    clust K=  25 cls    25 | MM +0.0007 [-0.0066,+0.0095] med +0.0014 rc [-0.0073,+0.0087] | plug +0.0012 [-0.0056,+0.0087] med +0.0017
+    clust K=  50 cls    50 | MM +0.0125 [-0.0009,+0.0288] med +0.0136 rc [-0.0020,+0.0277] | plug +0.0119 [-0.0004,+0.0245] med +0.0119
+    clust K= 100 cls   100 | MM +0.0278 [+0.0077,+0.0420] med +0.0271 rc [+0.0084,+0.0427] | plug +0.0241 [+0.0068,+0.0357] med +0.0224
+    clust K= 200 cls   185 | MM +0.0207 [+0.0020,+0.0345] med +0.0192 rc [+0.0035,+0.0360] | plug +0.0174 [+0.0005,+0.0296] med +0.0153
+    clust K= 400 cls   278 | MM +0.0242 [+0.0045,+0.0395] med +0.0229 rc [+0.0058,+0.0408] | plug +0.0205 [+0.0022,+0.0330] med +0.0184
+    clust K= 800 cls   314 | MM +0.0234 [+0.0043,+0.0389] med +0.0223 rc [+0.0054,+0.0400] | plug +0.0200 [+0.0023,+0.0330] med +0.0182
+    clust K=full cls   605 | MM +0.0522 [+0.0319,+0.0688] med +0.0516 rc [+0.0325,+0.0694] | plug +0.0476 [+0.0289,+0.0615] med +0.0467
+
+  gen_rugg_grille (GEN): tokens 6195 pages 45 pairs 5422 core types 412  [59s in worker]
+    freq  K=  25 cls    25 | MM +0.0993 [+0.0869,+0.1075] med +0.0983 rc [+0.0878,+0.1085] | plug +0.0936 [+0.0810,+0.0998] med +0.0914
+    freq  K=  50 cls    50 | MM +0.1571 [+0.1374,+0.1665] med +0.1518 rc [+0.1427,+0.1718] | plug +0.1420 [+0.1220,+0.1485] med +0.1357
+    freq  K= 100 cls   100 | MM +0.2065 [+0.1755,+0.2120] med +0.1933 rc [+0.1887,+0.2252] | plug +0.1773 [+0.1475,+0.1804] med +0.1642
+    freq  K= 200 cls   187 | MM +0.2538 [+0.2098,+0.2553] med +0.2329 rc [+0.2307,+0.2762] | plug +0.2135 [+0.1736,+0.2138] med +0.1942
+    freq  K= 400 cls   319 | MM +0.2869 [+0.2337,+0.2856] med +0.2589 rc [+0.2617,+0.3136] | plug +0.2376 [+0.1914,+0.2347] med +0.2132
+    freq  K= 800 cls   407 | MM +0.2907 [+0.2366,+0.2866] med +0.2615 rc [+0.2659,+0.3158] | plug +0.2392 [+0.1925,+0.2344] med +0.2139
+    freq  K=full cls   412 | MM +0.2905 [+0.2369,+0.2874] med +0.2613 rc [+0.2661,+0.3167] | plug +0.2391 [+0.1927,+0.2352] med +0.2139
+    clust K=  25 cls    25 | MM +0.1425 [+0.1303,+0.1557] med +0.1424 rc [+0.1304,+0.1558] | plug +0.1385 [+0.1259,+0.1502] med +0.1376
+    clust K=  50 cls    50 | MM +0.3139 [+0.2863,+0.3278] med +0.3081 rc [+0.2921,+0.3336] | plug +0.2881 [+0.2597,+0.2970] med +0.2790
+    clust K= 100 cls   100 | MM +0.3734 [+0.3276,+0.3740] med +0.3505 rc [+0.3505,+0.3968] | plug +0.3212 [+0.2788,+0.3185] med +0.2983
+    clust K= 200 cls   194 | MM +0.3614 [+0.3034,+0.3550] med +0.3301 rc [+0.3347,+0.3863] | plug +0.3001 [+0.2488,+0.2928] med +0.2714
+    clust K= 400 cls   337 | MM +0.3239 [+0.2673,+0.3167] med +0.2917 rc [+0.2995,+0.3489] | plug +0.2665 [+0.2170,+0.2590] med +0.2385
+    clust K= 800 cls   393 | MM +0.2935 [+0.2393,+0.2883] med +0.2637 rc [+0.2691,+0.3182] | plug +0.2414 [+0.1949,+0.2357] med +0.2160
+    clust K=full cls   412 | MM +0.2905 [+0.2369,+0.2874] med +0.2613 rc [+0.2661,+0.3167] | plug +0.2391 [+0.1927,+0.2352] med +0.2139
+
+  gen_G2layer_ZL3b_s1 (GEN): tokens 6195 pages 36 pairs 5411 core types 1252  [59s in worker]
+    freq  K=  25 cls    25 | MM +0.0713 [+0.0604,+0.0817] med +0.0715 rc [+0.0602,+0.0816] | plug +0.0697 [+0.0590,+0.0794] med +0.0695
+    freq  K=  50 cls    50 | MM +0.0850 [+0.0696,+0.0960] med +0.0836 rc [+0.0710,+0.0974] | plug +0.0798 [+0.0650,+0.0889] med +0.0777
+    freq  K= 100 cls    97 | MM +0.1016 [+0.0883,+0.1119] med +0.1004 rc [+0.0895,+0.1131] | plug +0.0956 [+0.0823,+0.1038] med +0.0937
+    freq  K= 200 cls   173 | MM +0.0909 [+0.0747,+0.1018] med +0.0886 rc [+0.0771,+0.1042] | plug +0.0832 [+0.0677,+0.0927] med +0.0802
+    freq  K= 400 cls   252 | MM +0.0905 [+0.0747,+0.0996] med +0.0874 rc [+0.0778,+0.1027] | plug +0.0812 [+0.0659,+0.0891] med +0.0780
+    freq  K= 800 cls   338 | MM +0.0980 [+0.0790,+0.1098] med +0.0946 rc [+0.0823,+0.1132] | plug +0.0882 [+0.0705,+0.0980] med +0.0848
+    freq  K=full cls  1252 | MM +0.0558 [+0.0256,+0.0758] med +0.0513 rc [+0.0302,+0.0803] | plug +0.0416 [+0.0138,+0.0602] med +0.0371
+    clust K=  25 cls    25 | MM +0.0884 [+0.0773,+0.0994] med +0.0874 rc [+0.0784,+0.1005] | plug +0.0867 [+0.0757,+0.0969] med +0.0856
+    clust K=  50 cls    49 | MM +0.0926 [+0.0805,+0.1112] med +0.0934 rc [+0.0797,+0.1104] | plug +0.0900 [+0.0783,+0.1046] med +0.0898
+    clust K= 100 cls   100 | MM +0.1228 [+0.1018,+0.1324] med +0.1179 rc [+0.1066,+0.1372] | plug +0.1113 [+0.0915,+0.1187] med +0.1058
+    clust K= 200 cls   183 | MM +0.1104 [+0.0878,+0.1211] med +0.1058 rc [+0.0924,+0.1257] | plug +0.0984 [+0.0782,+0.1070] med +0.0936
+    clust K= 400 cls   299 | MM +0.0962 [+0.0737,+0.1071] med +0.0916 rc [+0.0783,+0.1117] | plug +0.0860 [+0.0648,+0.0958] med +0.0810
+    clust K= 800 cls   387 | MM +0.0932 [+0.0715,+0.1040] med +0.0880 rc [+0.0767,+0.1091] | plug +0.0824 [+0.0619,+0.0921] med +0.0774
+    clust K=full cls  1252 | MM +0.0558 [+0.0256,+0.0758] med +0.0513 rc [+0.0302,+0.0803] | plug +0.0416 [+0.0138,+0.0602] med +0.0371
+
+  s57_gen_IT2a_s1 (GEN57): tokens 6195 pages 36 pairs 5454 core types 802  [59s in worker]
+    freq  K=  25 cls    25 | MM +0.0022 [-0.0036,+0.0097] med +0.0036 rc [-0.0050,+0.0083] | plug +0.0026 [-0.0026,+0.0097] med +0.0037
+    freq  K=  50 cls    50 | MM +0.0042 [-0.0057,+0.0181] med +0.0054 rc [-0.0068,+0.0169] | plug +0.0047 [-0.0037,+0.0167] med +0.0058
+    freq  K= 100 cls   100 | MM +0.0068 [-0.0049,+0.0200] med +0.0071 rc [-0.0052,+0.0197] | plug +0.0056 [-0.0046,+0.0161] med +0.0056
+    freq  K= 200 cls   182 | MM -0.0061 [-0.0199,+0.0091] med -0.0060 rc [-0.0199,+0.0090] | plug -0.0089 [-0.0206,+0.0037] med -0.0089
+    freq  K= 400 cls   278 | MM -0.0132 [-0.0315,+0.0028] med -0.0135 rc [-0.0312,+0.0031] | plug -0.0174 [-0.0327,-0.0041] med -0.0177
+    freq  K= 800 cls   413 | MM -0.0235 [-0.0429,-0.0054] med -0.0233 rc [-0.0431,-0.0056] | plug -0.0291 [-0.0454,-0.0133] med -0.0290
+    freq  K=full cls   802 | MM -0.0252 [-0.0474,-0.0061] med -0.0256 rc [-0.0470,-0.0057] | plug -0.0295 [-0.0485,-0.0118] med -0.0302
+    clust K=  25 cls    25 | MM -0.0017 [-0.0089,+0.0083] med -0.0017 rc [-0.0088,+0.0084] | plug -0.0016 [-0.0083,+0.0074] med -0.0017
+    clust K=  50 cls    50 | MM -0.0034 [-0.0169,+0.0187] med -0.0028 rc [-0.0175,+0.0180] | plug -0.0017 [-0.0130,+0.0162] med -0.0012
+    clust K= 100 cls   100 | MM +0.0161 [+0.0004,+0.0311] med +0.0156 rc [+0.0009,+0.0316] | plug +0.0091 [-0.0052,+0.0210] med +0.0082
+    clust K= 200 cls   195 | MM +0.0030 [-0.0158,+0.0199] med +0.0028 rc [-0.0156,+0.0201] | plug -0.0044 [-0.0212,+0.0091] med -0.0046
+    clust K= 400 cls   328 | MM -0.0136 [-0.0332,+0.0052] med -0.0136 rc [-0.0332,+0.0053] | plug -0.0203 [-0.0369,-0.0044] med -0.0204
+    clust K= 800 cls   418 | MM -0.0176 [-0.0379,+0.0023] med -0.0181 rc [-0.0374,+0.0028] | plug -0.0240 [-0.0416,-0.0076] med -0.0245
+    clust K=full cls   802 | MM -0.0252 [-0.0474,-0.0061] med -0.0256 rc [-0.0470,-0.0057] | plug -0.0295 [-0.0485,-0.0118] med -0.0302
+
+  s57_gen_IT2a_s2 (GEN57): tokens 6195 pages 36 pairs 5448 core types 806  [49s in worker]
+    freq  K=  25 cls    25 | MM -0.0081 [-0.0163,-0.0009] med -0.0091 rc [-0.0154,+0.0001] | plug -0.0080 [-0.0151,-0.0011] med -0.0085
+    freq  K=  50 cls    50 | MM -0.0105 [-0.0221,-0.0007] med -0.0116 rc [-0.0210,+0.0004] | plug -0.0116 [-0.0213,-0.0026] med -0.0124
+    freq  K= 100 cls   100 | MM -0.0172 [-0.0287,-0.0071] med -0.0178 rc [-0.0281,-0.0065] | plug -0.0182 [-0.0274,-0.0089] med -0.0183
+    freq  K= 200 cls   183 | MM -0.0360 [-0.0528,-0.0260] med -0.0383 rc [-0.0506,-0.0238] | plug -0.0394 [-0.0541,-0.0301] med -0.0410
+    freq  K= 400 cls   280 | MM -0.0500 [-0.0682,-0.0380] med -0.0531 rc [-0.0652,-0.0350] | plug -0.0530 [-0.0681,-0.0422] med -0.0548
+    freq  K= 800 cls   400 | MM -0.0466 [-0.0677,-0.0323] med -0.0503 rc [-0.0640,-0.0287] | plug -0.0497 [-0.0677,-0.0365] med -0.0523
+    freq  K=full cls   806 | MM -0.0395 [-0.0649,-0.0235] med -0.0425 rc [-0.0619,-0.0205] | plug -0.0421 [-0.0637,-0.0264] med -0.0442
+    clust K=  25 cls    25 | MM +0.0022 [-0.0069,+0.0095] med +0.0016 rc [-0.0064,+0.0100] | plug +0.0013 [-0.0068,+0.0079] med +0.0007
+    clust K=  50 cls    50 | MM -0.0216 [-0.0362,-0.0091] med -0.0220 rc [-0.0358,-0.0087] | plug -0.0211 [-0.0330,-0.0111] med -0.0214
+    clust K= 100 cls   100 | MM -0.0270 [-0.0404,-0.0121] med -0.0278 rc [-0.0396,-0.0113] | plug -0.0281 [-0.0393,-0.0154] med -0.0288
+    clust K= 200 cls   192 | MM -0.0381 [-0.0556,-0.0242] med -0.0409 rc [-0.0528,-0.0214] | plug -0.0414 [-0.0563,-0.0281] med -0.0436
+    clust K= 400 cls   324 | MM -0.0442 [-0.0645,-0.0313] med -0.0478 rc [-0.0608,-0.0276] | plug -0.0484 [-0.0657,-0.0361] med -0.0508
+    clust K= 800 cls   421 | MM -0.0501 [-0.0714,-0.0361] med -0.0536 rc [-0.0679,-0.0325] | plug -0.0535 [-0.0718,-0.0409] med -0.0561
+    clust K=full cls   806 | MM -0.0395 [-0.0649,-0.0235] med -0.0425 rc [-0.0619,-0.0205] | plug -0.0421 [-0.0637,-0.0264] med -0.0442
+
+  s57_gen_IT2a_s3 (GEN57): tokens 6195 pages 37 pairs 5449 core types 799  [64s in worker]
+    freq  K=  25 cls    25 | MM +0.0004 [-0.0077,+0.0071] med -0.0009 rc [-0.0064,+0.0084] | plug -0.0002 [-0.0075,+0.0061] med -0.0012
+    freq  K=  50 cls    50 | MM -0.0054 [-0.0154,+0.0052] med -0.0060 rc [-0.0148,+0.0059] | plug -0.0057 [-0.0138,+0.0036] med -0.0065
+    freq  K= 100 cls   100 | MM -0.0149 [-0.0286,-0.0042] med -0.0173 rc [-0.0263,-0.0019] | plug -0.0173 [-0.0289,-0.0087] med -0.0196
+    freq  K= 200 cls   180 | MM -0.0206 [-0.0364,-0.0084] med -0.0228 rc [-0.0342,-0.0062] | plug -0.0246 [-0.0388,-0.0140] med -0.0267
+    freq  K= 400 cls   285 | MM -0.0057 [-0.0226,+0.0094] med -0.0085 rc [-0.0198,+0.0122] | plug -0.0100 [-0.0252,+0.0041] med -0.0128
+    freq  K= 800 cls   398 | MM -0.0214 [-0.0411,-0.0042] med -0.0234 rc [-0.0391,-0.0022] | plug -0.0255 [-0.0427,-0.0108] med -0.0276
+    freq  K=full cls   799 | MM -0.0429 [-0.0623,-0.0229] med -0.0438 rc [-0.0614,-0.0220] | plug -0.0447 [-0.0618,-0.0270] med -0.0455
+    clust K=  25 cls    25 | MM -0.0074 [-0.0144,-0.0015] med -0.0076 rc [-0.0142,-0.0013] | plug -0.0077 [-0.0145,-0.0024] med -0.0080
+    clust K=  50 cls    50 | MM +0.0033 [-0.0070,+0.0164] med +0.0023 rc [-0.0060,+0.0174] | plug +0.0008 [-0.0090,+0.0127] med -0.0008
+    clust K= 100 cls   100 | MM -0.0080 [-0.0236,+0.0041] med -0.0099 rc [-0.0217,+0.0060] | plug -0.0118 [-0.0259,-0.0013] med -0.0135
+    clust K= 200 cls   194 | MM -0.0093 [-0.0279,+0.0053] med -0.0116 rc [-0.0256,+0.0076] | plug -0.0146 [-0.0306,-0.0023] med -0.0168
+    clust K= 400 cls   325 | MM -0.0129 [-0.0327,+0.0032] med -0.0165 rc [-0.0291,+0.0068] | plug -0.0187 [-0.0365,-0.0050] med -0.0218
+    clust K= 800 cls   408 | MM -0.0190 [-0.0398,-0.0017] med -0.0214 rc [-0.0373,+0.0008] | plug -0.0238 [-0.0419,-0.0087] med -0.0265
+    clust K=full cls   799 | MM -0.0429 [-0.0623,-0.0229] med -0.0438 rc [-0.0614,-0.0220] | plug -0.0447 [-0.0618,-0.0270] med -0.0455
+
+  s57_gen_RF1b_s1 (GEN57): tokens 6195 pages 39 pairs 5468 core types 828  [50s in worker]
+    freq  K=  25 cls    25 | MM -0.0048 [-0.0127,+0.0020] med -0.0049 rc [-0.0126,+0.0021] | plug -0.0049 [-0.0121,+0.0010] med -0.0047
+    freq  K=  50 cls    50 | MM +0.0123 [-0.0008,+0.0235] med +0.0114 rc [+0.0001,+0.0243] | plug +0.0093 [-0.0019,+0.0191] med +0.0082
+    freq  K= 100 cls   100 | MM +0.0240 [+0.0115,+0.0365] med +0.0237 rc [+0.0118,+0.0368] | plug +0.0210 [+0.0102,+0.0321] med +0.0207
+    freq  K= 200 cls   186 | MM +0.0078 [-0.0073,+0.0215] med +0.0072 rc [-0.0067,+0.0221] | plug +0.0051 [-0.0083,+0.0167] med +0.0041
+    freq  K= 400 cls   291 | MM -0.0136 [-0.0282,+0.0000] med -0.0149 rc [-0.0269,+0.0013] | plug -0.0160 [-0.0299,-0.0034] med -0.0173
+    freq  K= 800 cls   412 | MM -0.0201 [-0.0340,-0.0083] med -0.0217 rc [-0.0324,-0.0068] | plug -0.0232 [-0.0350,-0.0131] med -0.0244
+    freq  K=full cls   828 | MM +0.0020 [-0.0172,+0.0179] med +0.0001 rc [-0.0153,+0.0199] | plug -0.0007 [-0.0194,+0.0142] med -0.0027
+    clust K=  25 cls    25 | MM -0.0058 [-0.0138,+0.0035] med -0.0056 rc [-0.0140,+0.0033] | plug -0.0051 [-0.0123,+0.0033] med -0.0049
+    clust K=  50 cls    50 | MM +0.0071 [-0.0097,+0.0184] med +0.0049 rc [-0.0075,+0.0206] | plug +0.0038 [-0.0104,+0.0127] med +0.0018
+    clust K= 100 cls   100 | MM +0.0240 [+0.0071,+0.0364] med +0.0225 rc [+0.0086,+0.0379] | plug +0.0171 [+0.0029,+0.0266] med +0.0155
+    clust K= 200 cls   193 | MM +0.0019 [-0.0103,+0.0140] med +0.0011 rc [-0.0094,+0.0148] | plug -0.0020 [-0.0130,+0.0075] med -0.0034
+    clust K= 400 cls   326 | MM -0.0084 [-0.0235,+0.0011] med -0.0113 rc [-0.0206,+0.0040] | plug -0.0140 [-0.0276,-0.0059] med -0.0170
+    clust K= 800 cls   430 | MM -0.0146 [-0.0286,-0.0040] med -0.0168 rc [-0.0264,-0.0018] | plug -0.0192 [-0.0319,-0.0097] med -0.0211
+    clust K=full cls   828 | MM +0.0020 [-0.0172,+0.0179] med +0.0001 rc [-0.0153,+0.0199] | plug -0.0007 [-0.0194,+0.0142] med -0.0027
+
+  s57_gen_RF1b_s2 (GEN57): tokens 6195 pages 37 pairs 5470 core types 808  [59s in worker]
+    freq  K=  25 cls    25 | MM -0.0077 [-0.0149,-0.0000] med -0.0079 rc [-0.0147,+0.0002] | plug -0.0083 [-0.0146,-0.0021] med -0.0087
+    freq  K=  50 cls    50 | MM -0.0070 [-0.0157,+0.0044] med -0.0063 rc [-0.0164,+0.0037] | plug -0.0067 [-0.0146,+0.0031] med -0.0060
+    freq  K= 100 cls   100 | MM -0.0284 [-0.0398,-0.0159] med -0.0287 rc [-0.0395,-0.0156] | plug -0.0295 [-0.0403,-0.0186] med -0.0300
+    freq  K= 200 cls   186 | MM -0.0311 [-0.0425,-0.0181] med -0.0315 rc [-0.0421,-0.0177] | plug -0.0319 [-0.0426,-0.0194] med -0.0327
+    freq  K= 400 cls   293 | MM -0.0390 [-0.0519,-0.0243] med -0.0401 rc [-0.0509,-0.0232] | plug -0.0407 [-0.0524,-0.0275] med -0.0416
+    freq  K= 800 cls   397 | MM -0.0460 [-0.0604,-0.0321] med -0.0463 rc [-0.0600,-0.0317] | plug -0.0480 [-0.0608,-0.0348] med -0.0478
+    freq  K=full cls   808 | MM -0.0199 [-0.0383,-0.0079] med -0.0231 rc [-0.0351,-0.0047] | plug -0.0229 [-0.0394,-0.0128] med -0.0259
+    clust K=  25 cls    25 | MM -0.0109 [-0.0187,-0.0044] med -0.0116 rc [-0.0180,-0.0038] | plug -0.0113 [-0.0184,-0.0054] med -0.0118
+    clust K=  50 cls    50 | MM -0.0049 [-0.0169,+0.0072] med -0.0045 rc [-0.0173,+0.0068] | plug -0.0076 [-0.0178,+0.0023] med -0.0076
+    clust K= 100 cls   100 | MM -0.0201 [-0.0315,-0.0065] med -0.0192 rc [-0.0324,-0.0074] | plug -0.0222 [-0.0314,-0.0115] med -0.0215
+    clust K= 200 cls   198 | MM -0.0342 [-0.0480,-0.0220] med -0.0348 rc [-0.0474,-0.0215] | plug -0.0369 [-0.0486,-0.0265] med -0.0372
+    clust K= 400 cls   332 | MM -0.0434 [-0.0557,-0.0296] med -0.0437 rc [-0.0554,-0.0292] | plug -0.0452 [-0.0564,-0.0324] med -0.0451
+    clust K= 800 cls   422 | MM -0.0453 [-0.0591,-0.0315] med -0.0457 rc [-0.0587,-0.0311] | plug -0.0473 [-0.0592,-0.0347] med -0.0469
+    clust K=full cls   808 | MM -0.0199 [-0.0383,-0.0079] med -0.0231 rc [-0.0351,-0.0047] | plug -0.0229 [-0.0394,-0.0128] med -0.0259
+
+  s57_gen_RF1b_s3 (GEN57): tokens 6195 pages 39 pairs 5478 core types 824  [52s in worker]
+    freq  K=  25 cls    25 | MM +0.0013 [-0.0058,+0.0094] med +0.0020 rc [-0.0065,+0.0088] | plug +0.0023 [-0.0036,+0.0095] med +0.0027
+    freq  K=  50 cls    50 | MM +0.0024 [-0.0107,+0.0111] med +0.0004 rc [-0.0088,+0.0130] | plug +0.0012 [-0.0098,+0.0088] med -0.0002
+    freq  K= 100 cls   100 | MM +0.0093 [-0.0038,+0.0207] med +0.0089 rc [-0.0034,+0.0211] | plug +0.0103 [-0.0007,+0.0209] med +0.0098
+    freq  K= 200 cls   188 | MM -0.0017 [-0.0189,+0.0126] med -0.0031 rc [-0.0176,+0.0139] | plug -0.0020 [-0.0168,+0.0112] med -0.0028
+    freq  K= 400 cls   286 | MM -0.0106 [-0.0306,+0.0048] med -0.0125 rc [-0.0287,+0.0068] | plug -0.0109 [-0.0281,+0.0037] med -0.0121
+    freq  K= 800 cls   403 | MM -0.0287 [-0.0469,-0.0141] med -0.0312 rc [-0.0445,-0.0116] | plug -0.0302 [-0.0456,-0.0157] med -0.0318
+    freq  K=full cls   824 | MM -0.0303 [-0.0577,-0.0090] med -0.0343 rc [-0.0538,-0.0051] | plug -0.0321 [-0.0555,-0.0111] med -0.0352
+    clust K=  25 cls    25 | MM +0.0075 [-0.0010,+0.0153] med +0.0075 rc [-0.0010,+0.0153] | plug +0.0074 [-0.0002,+0.0143] med +0.0072
+    clust K=  50 cls    50 | MM +0.0052 [-0.0101,+0.0212] med +0.0048 rc [-0.0097,+0.0216] | plug +0.0041 [-0.0089,+0.0168] med +0.0030
+    clust K= 100 cls   100 | MM +0.0128 [-0.0038,+0.0227] med +0.0090 rc [+0.0000,+0.0265] | plug +0.0083 [-0.0057,+0.0163] med +0.0046
+    clust K= 200 cls   194 | MM -0.0087 [-0.0263,+0.0040] med -0.0108 rc [-0.0241,+0.0062] | plug -0.0119 [-0.0269,+0.0001] med -0.0141
+    clust K= 400 cls   329 | MM -0.0253 [-0.0437,-0.0107] med -0.0280 rc [-0.0410,-0.0081] | plug -0.0279 [-0.0446,-0.0142] med -0.0300
+    clust K= 800 cls   428 | MM -0.0332 [-0.0535,-0.0186] med -0.0358 rc [-0.0509,-0.0160] | plug -0.0348 [-0.0522,-0.0198] med -0.0368
+    clust K=full cls   824 | MM -0.0303 [-0.0577,-0.0090] med -0.0343 rc [-0.0538,-0.0051] | plug -0.0321 [-0.0555,-0.0111] med -0.0352
+
+  s57_gen_ZL3b_s1 (GEN57): tokens 6195 pages 39 pairs 5464 core types 810  [45s in worker]
+    freq  K=  25 cls    25 | MM +0.0049 [-0.0041,+0.0114] med +0.0036 rc [-0.0028,+0.0127] | plug +0.0036 [-0.0047,+0.0096] med +0.0025
+    freq  K=  50 cls    50 | MM +0.0116 [+0.0000,+0.0213] med +0.0108 rc [+0.0008,+0.0221] | plug +0.0105 [+0.0009,+0.0183] med +0.0097
+    freq  K= 100 cls    99 | MM +0.0119 [-0.0025,+0.0282] med +0.0134 rc [-0.0041,+0.0267] | plug +0.0108 [-0.0010,+0.0242] med +0.0118
+    freq  K= 200 cls   180 | MM +0.0064 [-0.0085,+0.0247] med +0.0077 rc [-0.0097,+0.0235] | plug +0.0041 [-0.0079,+0.0188] med +0.0045
+    freq  K= 400 cls   282 | MM +0.0004 [-0.0199,+0.0220] med +0.0010 rc [-0.0205,+0.0214] | plug -0.0024 [-0.0196,+0.0164] med -0.0021
+    freq  K= 800 cls   403 | MM -0.0193 [-0.0386,+0.0028] med -0.0183 rc [-0.0396,+0.0018] | plug -0.0217 [-0.0385,-0.0032] med -0.0212
+    freq  K=full cls   810 | MM -0.0164 [-0.0432,+0.0140] med -0.0168 rc [-0.0428,+0.0144] | plug -0.0193 [-0.0426,+0.0080] med -0.0199
+    clust K=  25 cls    25 | MM +0.0028 [-0.0041,+0.0108] med +0.0025 rc [-0.0038,+0.0110] | plug +0.0026 [-0.0038,+0.0090] med +0.0021
+    clust K=  50 cls    50 | MM +0.0086 [-0.0087,+0.0197] med +0.0054 rc [-0.0055,+0.0229] | plug +0.0044 [-0.0111,+0.0137] med +0.0012
+    clust K= 100 cls   100 | MM -0.0019 [-0.0181,+0.0140] med -0.0025 rc [-0.0175,+0.0146] | plug -0.0051 [-0.0182,+0.0081] med -0.0060
+    clust K= 200 cls   194 | MM -0.0005 [-0.0202,+0.0167] med -0.0008 rc [-0.0199,+0.0170] | plug -0.0056 [-0.0222,+0.0093] med -0.0063
+    clust K= 400 cls   330 | MM -0.0179 [-0.0393,+0.0033] med -0.0185 rc [-0.0387,+0.0040] | plug -0.0222 [-0.0401,-0.0049] med -0.0233
+    clust K= 800 cls   424 | MM -0.0271 [-0.0493,-0.0053] med -0.0264 rc [-0.0500,-0.0060] | plug -0.0298 [-0.0480,-0.0104] med -0.0297
+    clust K=full cls   810 | MM -0.0164 [-0.0432,+0.0140] med -0.0168 rc [-0.0428,+0.0144] | plug -0.0193 [-0.0426,+0.0080] med -0.0199
+
+  s57_gen_ZL3b_s2 (GEN57): tokens 6195 pages 37 pairs 5454 core types 773  [44s in worker]
+    freq  K=  25 cls    25 | MM -0.0013 [-0.0095,+0.0086] med -0.0008 rc [-0.0100,+0.0081] | plug -0.0007 [-0.0085,+0.0085] med -0.0003
+    freq  K=  50 cls    50 | MM +0.0106 [-0.0047,+0.0242] med +0.0112 rc [-0.0053,+0.0236] | plug +0.0101 [-0.0034,+0.0220] med +0.0106
+    freq  K= 100 cls   100 | MM +0.0148 [-0.0018,+0.0312] med +0.0157 rc [-0.0027,+0.0303] | plug +0.0146 [-0.0004,+0.0290] med +0.0153
+    freq  K= 200 cls   186 | MM +0.0115 [-0.0106,+0.0301] med +0.0106 rc [-0.0098,+0.0309] | plug +0.0094 [-0.0106,+0.0257] med +0.0088
+    freq  K= 400 cls   299 | MM +0.0009 [-0.0223,+0.0225] med +0.0001 rc [-0.0215,+0.0233] | plug -0.0011 [-0.0224,+0.0180] med -0.0018
+    freq  K= 800 cls   406 | MM -0.0174 [-0.0376,+0.0011] med -0.0175 rc [-0.0374,+0.0012] | plug -0.0180 [-0.0360,-0.0012] med -0.0182
+    freq  K=full cls   773 | MM -0.0261 [-0.0511,-0.0001] med -0.0262 rc [-0.0510,-0.0001] | plug -0.0268 [-0.0490,-0.0029] med -0.0267
+    clust K=  25 cls    25 | MM +0.0078 [-0.0016,+0.0180] med +0.0079 rc [-0.0017,+0.0179] | plug +0.0081 [-0.0008,+0.0179] med +0.0081
+    clust K=  50 cls    50 | MM -0.0076 [-0.0211,+0.0109] med -0.0062 rc [-0.0225,+0.0095] | plug -0.0053 [-0.0179,+0.0105] med -0.0042
+    clust K= 100 cls   100 | MM +0.0051 [-0.0154,+0.0226] med +0.0060 rc [-0.0162,+0.0217] | plug +0.0034 [-0.0149,+0.0175] med +0.0033
+    clust K= 200 cls   196 | MM -0.0009 [-0.0199,+0.0153] med -0.0012 rc [-0.0195,+0.0156] | plug -0.0029 [-0.0202,+0.0114] med -0.0035
+    clust K= 400 cls   339 | MM -0.0161 [-0.0380,+0.0039] med -0.0169 rc [-0.0372,+0.0047] | plug -0.0178 [-0.0370,-0.0012] med -0.0186
+    clust K= 800 cls   418 | MM -0.0234 [-0.0435,-0.0058] med -0.0235 rc [-0.0433,-0.0057] | plug -0.0238 [-0.0417,-0.0080] med -0.0242
+    clust K=full cls   773 | MM -0.0261 [-0.0511,-0.0001] med -0.0262 rc [-0.0510,-0.0001] | plug -0.0268 [-0.0490,-0.0029] med -0.0267
+
+  s57_gen_ZL3b_s3 (GEN57): tokens 6195 pages 39 pairs 5471 core types 778  [39s in worker]
+    freq  K=  25 cls    25 | MM +0.0038 [-0.0026,+0.0146] med +0.0055 rc [-0.0043,+0.0129] | plug +0.0028 [-0.0033,+0.0113] med +0.0037
+    freq  K=  50 cls    50 | MM +0.0059 [-0.0045,+0.0204] med +0.0074 rc [-0.0060,+0.0188] | plug +0.0057 [-0.0036,+0.0185] med +0.0065
+    freq  K= 100 cls   100 | MM +0.0102 [-0.0015,+0.0259] med +0.0116 rc [-0.0030,+0.0245] | plug +0.0092 [-0.0023,+0.0236] med +0.0103
+    freq  K= 200 cls   185 | MM +0.0081 [-0.0047,+0.0247] med +0.0088 rc [-0.0054,+0.0240] | plug +0.0057 [-0.0072,+0.0206] med +0.0055
+    freq  K= 400 cls   281 | MM +0.0080 [-0.0080,+0.0276] med +0.0087 rc [-0.0086,+0.0269] | plug +0.0066 [-0.0100,+0.0244] med +0.0063
+    freq  K= 800 cls   391 | MM -0.0107 [-0.0282,+0.0100] med -0.0103 rc [-0.0287,+0.0096] | plug -0.0114 [-0.0292,+0.0084] med -0.0115
+    freq  K=full cls   778 | MM +0.0017 [-0.0179,+0.0254] med +0.0005 rc [-0.0167,+0.0266] | plug +0.0011 [-0.0186,+0.0234] med -0.0007
+    clust K=  25 cls    25 | MM +0.0044 [-0.0012,+0.0127] med +0.0053 rc [-0.0020,+0.0118] | plug +0.0044 [-0.0011,+0.0118] med +0.0050
+    clust K=  50 cls    50 | MM +0.0095 [-0.0017,+0.0222] med +0.0099 rc [-0.0021,+0.0218] | plug +0.0076 [-0.0036,+0.0189] med +0.0076
+    clust K= 100 cls   100 | MM +0.0018 [-0.0120,+0.0168] med +0.0034 rc [-0.0136,+0.0153] | plug +0.0010 [-0.0112,+0.0146] med +0.0018
+    clust K= 200 cls   197 | MM +0.0054 [-0.0089,+0.0215] med +0.0053 rc [-0.0088,+0.0216] | plug +0.0027 [-0.0115,+0.0173] med +0.0019
+    clust K= 400 cls   322 | MM -0.0043 [-0.0224,+0.0158] med -0.0044 rc [-0.0223,+0.0159] | plug -0.0061 [-0.0240,+0.0121] med -0.0070
+    clust K= 800 cls   406 | MM -0.0068 [-0.0250,+0.0148] med -0.0069 rc [-0.0248,+0.0149] | plug -0.0082 [-0.0265,+0.0120] med -0.0090
+    clust K=full cls   778 | MM +0.0017 [-0.0179,+0.0254] med +0.0005 rc [-0.0167,+0.0266] | plug +0.0011 [-0.0186,+0.0234] med -0.0007
+  measured in 248s total
+
+=== excess vs K (MM point [95 %]; plug-in point beside) ===
+  method M-freq
+    text                                              K=25                      K=50                     K=100                     K=200                     K=400                     K=800                    K=full
+    VOY_ZL3b                         +0.046[+0.031,+0.056]     +0.058[+0.039,+0.070]     +0.045[+0.027,+0.060]     +0.035[+0.014,+0.053]     +0.021[-0.001,+0.041]     +0.010[-0.014,+0.028]     -0.060[-0.093,-0.036]
+    VOY_RF1b                         +0.041[+0.030,+0.051]     +0.056[+0.041,+0.069]     +0.050[+0.032,+0.062]     +0.044[+0.025,+0.055]     +0.030[+0.007,+0.044]     +0.008[-0.017,+0.024]     -0.055[-0.089,-0.030]
+    VOY_IT2a                         +0.054[+0.041,+0.065]     +0.069[+0.050,+0.080]     +0.058[+0.036,+0.070]     +0.052[+0.033,+0.067]     +0.040[+0.017,+0.057]     +0.026[+0.003,+0.043]     -0.047[-0.080,-0.027]
+    VOYZ_ZL3b_zattera                +0.069[+0.055,+0.082]     +0.093[+0.072,+0.109]     +0.099[+0.075,+0.114]     +0.095[+0.070,+0.111]     +0.095[+0.070,+0.111]     +0.095[+0.070,+0.111]     +0.093[+0.070,+0.110]
+    K1_latin_caesar                  +0.065[+0.054,+0.079]     +0.081[+0.067,+0.094]     +0.076[+0.062,+0.092]     +0.072[+0.058,+0.089]     +0.072[+0.055,+0.095]     +0.077[+0.058,+0.098]     +0.045[+0.023,+0.065]
+    K3_latin_caesar                  +0.045[+0.034,+0.052]     +0.056[+0.042,+0.065]     +0.060[+0.044,+0.069]     +0.067[+0.051,+0.078]     +0.085[+0.069,+0.095]     +0.073[+0.051,+0.082]     +0.060[+0.034,+0.071]
+    K1_latin_augustine               +0.066[+0.058,+0.077]     +0.068[+0.054,+0.078]     +0.065[+0.048,+0.076]     +0.069[+0.053,+0.080]     +0.059[+0.043,+0.069]     +0.056[+0.041,+0.066]     +0.041[+0.023,+0.057]
+    K3_latin_augustine               +0.026[+0.020,+0.035]     +0.044[+0.033,+0.057]     +0.048[+0.035,+0.063]     +0.048[+0.028,+0.065]     +0.063[+0.042,+0.076]     +0.064[+0.039,+0.080]     +0.066[+0.038,+0.085]
+    K1_italian_dante                 +0.072[+0.062,+0.081]     +0.099[+0.086,+0.110]     +0.089[+0.072,+0.101]     +0.092[+0.074,+0.108]     +0.081[+0.063,+0.097]     +0.079[+0.060,+0.097]     +0.068[+0.045,+0.088]
+    K3_italian_dante                 +0.040[+0.033,+0.047]     +0.051[+0.040,+0.061]     +0.063[+0.049,+0.074]     +0.054[+0.035,+0.068]     +0.045[+0.025,+0.061]     +0.066[+0.036,+0.082]     +0.032[+0.003,+0.052]
+    K1_german_faust                  +0.124[+0.108,+0.138]     +0.138[+0.119,+0.153]     +0.141[+0.117,+0.158]     +0.145[+0.122,+0.162]     +0.138[+0.116,+0.153]     +0.137[+0.114,+0.151]     +0.135[+0.109,+0.153]
+    K3_german_faust                  +0.089[+0.081,+0.100]     +0.115[+0.099,+0.127]     +0.131[+0.114,+0.142]     +0.131[+0.112,+0.141]     +0.135[+0.115,+0.148]     +0.126[+0.104,+0.141]     +0.119[+0.092,+0.135]
+    K1_german_kafka                  +0.071[+0.063,+0.084]     +0.089[+0.078,+0.104]     +0.096[+0.084,+0.112]     +0.091[+0.078,+0.107]     +0.095[+0.081,+0.113]     +0.090[+0.075,+0.110]     +0.095[+0.080,+0.115]
+    K3_german_kafka                  +0.050[+0.041,+0.058]     +0.067[+0.051,+0.077]     +0.073[+0.054,+0.084]     +0.071[+0.050,+0.081]     +0.082[+0.058,+0.093]     +0.074[+0.048,+0.087]     +0.071[+0.042,+0.089]
+    K1_english_alice                 +0.067[+0.059,+0.077]     +0.074[+0.059,+0.083]     +0.064[+0.047,+0.074]     +0.065[+0.048,+0.075]     +0.064[+0.048,+0.076]     +0.068[+0.051,+0.081]     +0.033[+0.015,+0.051]
+    K3_english_alice                 +0.056[+0.045,+0.066]     +0.069[+0.050,+0.082]     +0.082[+0.061,+0.097]     +0.084[+0.060,+0.096]     +0.088[+0.062,+0.098]     +0.083[+0.050,+0.098]     +0.066[+0.036,+0.080]
+    lang_italian_dante               +0.087[+0.079,+0.098]     +0.136[+0.124,+0.146]     +0.162[+0.146,+0.172]     +0.156[+0.134,+0.170]     +0.132[+0.102,+0.145]     +0.080[+0.048,+0.095]     -0.147[-0.179,-0.121]
+    lang_latin_cremma                +0.036[+0.026,+0.064]     +0.048[+0.036,+0.086]     +0.054[+0.035,+0.092]     +0.076[+0.055,+0.135]     +0.100[+0.064,+0.169]     +0.119[+0.076,+0.192]     +0.122[+0.090,+0.191]
+    lang_mhg_nibelungenlied          +0.118[+0.105,+0.129]     +0.169[+0.139,+0.185]     +0.196[+0.164,+0.217]     +0.234[+0.199,+0.247]     +0.268[+0.230,+0.281]     +0.241[+0.191,+0.253]     +0.253[+0.197,+0.260]
+    lang_mhg_parzival                +0.055[+0.046,+0.064]     +0.087[+0.071,+0.097]     +0.095[+0.076,+0.105]     +0.106[+0.083,+0.120]     +0.094[+0.069,+0.110]     +0.083[+0.055,+0.101]     +0.050[+0.018,+0.073]
+    lang_occitan_croisade            +0.132[+0.123,+0.146]     +0.159[+0.143,+0.176]     +0.185[+0.160,+0.201]     +0.201[+0.170,+0.217]     +0.183[+0.146,+0.202]     +0.112[+0.074,+0.133]     -0.134[-0.166,-0.112]
+    lang_oldfrench_roland            +0.091[+0.080,+0.100]     +0.154[+0.135,+0.164]     +0.196[+0.167,+0.206]     +0.207[+0.163,+0.213]     +0.173[+0.120,+0.175]     +0.106[+0.049,+0.106]     -0.095[-0.154,-0.087]
+    realline_cremma_prose15          +0.039[+0.033,+0.063]     +0.074[+0.057,+0.128]     +0.069[+0.053,+0.125]     +0.045[+0.024,+0.101]     +0.029[+0.009,+0.088]     +0.040[+0.029,+0.096]     +0.032[-0.033,+0.082]
+    realline_italian_dante           +0.072[+0.069,+0.078]     +0.104[+0.095,+0.109]     +0.118[+0.101,+0.123]     +0.119[+0.100,+0.126]     +0.099[+0.077,+0.109]     +0.045[+0.020,+0.051]     -0.148[-0.178,-0.138]
+    gen_s28_ZL3b_s1                  +0.041[+0.034,+0.053]     +0.058[+0.046,+0.072]     +0.058[+0.042,+0.072]     +0.053[+0.029,+0.070]     +0.042[+0.016,+0.061]     +0.027[+0.000,+0.048]     +0.047[+0.013,+0.063]
+    gen_c2_section                   +0.002[-0.005,+0.010]     +0.005[-0.006,+0.017]     +0.002[-0.012,+0.015]     -0.002[-0.020,+0.015]     -0.008[-0.027,+0.006]     -0.007[-0.026,+0.007]     -0.017[-0.035,-0.004]
+    gen_timm_schinner                +0.014[+0.006,+0.026]     +0.013[+0.002,+0.025]     +0.015[+0.001,+0.024]     +0.012[-0.002,+0.023]     +0.011[-0.008,+0.023]     +0.014[-0.007,+0.026]     -0.004[-0.027,+0.012]
+    gen_schwartz_reuse               +0.009[+0.003,+0.018]     +0.021[+0.009,+0.032]     +0.017[+0.002,+0.029]     +0.016[-0.002,+0.031]     +0.026[+0.006,+0.042]     +0.027[+0.008,+0.043]     +0.052[+0.032,+0.069]
+    gen_rugg_grille                  +0.099[+0.087,+0.108]     +0.157[+0.137,+0.167]     +0.206[+0.176,+0.212]     +0.254[+0.210,+0.255]     +0.287[+0.234,+0.286]     +0.291[+0.237,+0.287]     +0.291[+0.237,+0.287]
+    gen_G2layer_ZL3b_s1              +0.071[+0.060,+0.082]     +0.085[+0.070,+0.096]     +0.102[+0.088,+0.112]     +0.091[+0.075,+0.102]     +0.091[+0.075,+0.100]     +0.098[+0.079,+0.110]     +0.056[+0.026,+0.076]
+    s57_gen_IT2a_s1                  +0.002[-0.004,+0.010]     +0.004[-0.006,+0.018]     +0.007[-0.005,+0.020]     -0.006[-0.020,+0.009]     -0.013[-0.031,+0.003]     -0.023[-0.043,-0.005]     -0.025[-0.047,-0.006]
+    s57_gen_IT2a_s2                  -0.008[-0.016,-0.001]     -0.011[-0.022,-0.001]     -0.017[-0.029,-0.007]     -0.036[-0.053,-0.026]     -0.050[-0.068,-0.038]     -0.047[-0.068,-0.032]     -0.039[-0.065,-0.024]
+    s57_gen_IT2a_s3                  +0.000[-0.008,+0.007]     -0.005[-0.015,+0.005]     -0.015[-0.029,-0.004]     -0.021[-0.036,-0.008]     -0.006[-0.023,+0.009]     -0.021[-0.041,-0.004]     -0.043[-0.062,-0.023]
+    s57_gen_RF1b_s1                  -0.005[-0.013,+0.002]     +0.012[-0.001,+0.023]     +0.024[+0.012,+0.036]     +0.008[-0.007,+0.021]     -0.014[-0.028,+0.000]     -0.020[-0.034,-0.008]     +0.002[-0.017,+0.018]
+    s57_gen_RF1b_s2                  -0.008[-0.015,-0.000]     -0.007[-0.016,+0.004]     -0.028[-0.040,-0.016]     -0.031[-0.043,-0.018]     -0.039[-0.052,-0.024]     -0.046[-0.060,-0.032]     -0.020[-0.038,-0.008]
+    s57_gen_RF1b_s3                  +0.001[-0.006,+0.009]     +0.002[-0.011,+0.011]     +0.009[-0.004,+0.021]     -0.002[-0.019,+0.013]     -0.011[-0.031,+0.005]     -0.029[-0.047,-0.014]     -0.030[-0.058,-0.009]
+    s57_gen_ZL3b_s1                  +0.005[-0.004,+0.011]     +0.012[+0.000,+0.021]     +0.012[-0.003,+0.028]     +0.006[-0.008,+0.025]     +0.000[-0.020,+0.022]     -0.019[-0.039,+0.003]     -0.016[-0.043,+0.014]
+    s57_gen_ZL3b_s2                  -0.001[-0.010,+0.009]     +0.011[-0.005,+0.024]     +0.015[-0.002,+0.031]     +0.011[-0.011,+0.030]     +0.001[-0.022,+0.022]     -0.017[-0.038,+0.001]     -0.026[-0.051,-0.000]
+    s57_gen_ZL3b_s3                  +0.004[-0.003,+0.015]     +0.006[-0.004,+0.020]     +0.010[-0.002,+0.026]     +0.008[-0.005,+0.025]     +0.008[-0.008,+0.028]     -0.011[-0.028,+0.010]     +0.002[-0.018,+0.025]
+    plug-in points:
+    VOY_ZL3b                                       +0.0449                   +0.0528                   +0.0407                   +0.0292                   +0.0148                   +0.0031                   -0.0657
+    VOY_RF1b                                       +0.0400                   +0.0513                   +0.0429                   +0.0354                   +0.0210                   +0.0005                   -0.0618
+    VOY_IT2a                                       +0.0515                   +0.0607                   +0.0483                   +0.0420                   +0.0283                   +0.0147                   -0.0577
+    VOYZ_ZL3b_zattera                              +0.0677                   +0.0886                   +0.0931                   +0.0893                   +0.0893                   +0.0893                   +0.0882
+    K1_latin_caesar                                +0.0640                   +0.0777                   +0.0743                   +0.0704                   +0.0702                   +0.0743                   +0.0432
+    K3_latin_caesar                                +0.0416                   +0.0516                   +0.0557                   +0.0614                   +0.0777                   +0.0644                   +0.0508
+    K1_latin_augustine                             +0.0648                   +0.0645                   +0.0596                   +0.0647                   +0.0539                   +0.0512                   +0.0372
+    K3_latin_augustine                             +0.0253                   +0.0405                   +0.0423                   +0.0393                   +0.0517                   +0.0536                   +0.0550
+    K1_italian_dante                               +0.0701                   +0.0946                   +0.0821                   +0.0854                   +0.0732                   +0.0717                   +0.0597
+    K3_italian_dante                               +0.0379                   +0.0480                   +0.0584                   +0.0490                   +0.0394                   +0.0580                   +0.0270
+    K1_german_faust                                +0.1200                   +0.1313                   +0.1340                   +0.1369                   +0.1299                   +0.1291                   +0.1271
+    K3_german_faust                                +0.0849                   +0.1063                   +0.1208                   +0.1204                   +0.1237                   +0.1142                   +0.1076
+    K1_german_kafka                                +0.0698                   +0.0861                   +0.0928                   +0.0877                   +0.0914                   +0.0866                   +0.0913
+    K3_german_kafka                                +0.0482                   +0.0618                   +0.0659                   +0.0624                   +0.0731                   +0.0649                   +0.0616
+    K1_english_alice                               +0.0660                   +0.0692                   +0.0573                   +0.0584                   +0.0572                   +0.0607                   +0.0279
+    K3_english_alice                               +0.0535                   +0.0640                   +0.0759                   +0.0756                   +0.0765                   +0.0717                   +0.0571
+    lang_italian_dante                             +0.0861                   +0.1285                   +0.1489                   +0.1376                   +0.1088                   +0.0565                   -0.1626
+    lang_latin_cremma                              +0.0346                   +0.0453                   +0.0487                   +0.0671                   +0.0842                   +0.1007                   +0.1036
+    lang_mhg_nibelungenlied                        +0.1067                   +0.1479                   +0.1697                   +0.2019                   +0.2337                   +0.2083                   +0.2218
+    lang_mhg_parzival                              +0.0520                   +0.0774                   +0.0852                   +0.0936                   +0.0824                   +0.0714                   +0.0402
+    lang_occitan_croisade                          +0.1300                   +0.1519                   +0.1714                   +0.1828                   +0.1633                   +0.0917                   -0.1488
+    lang_oldfrench_roland                          +0.0860                   +0.1432                   +0.1746                   +0.1727                   +0.1318                   +0.0622                   -0.1314
+    realline_cremma_prose15                        +0.0341                   +0.0641                   +0.0576                   +0.0300                   +0.0167                   +0.0276                   +0.0124
+    realline_italian_dante                         +0.0685                   +0.0976                   +0.1076                   +0.1011                   +0.0786                   +0.0241                   -0.1609
+    gen_s28_ZL3b_s1                                +0.0394                   +0.0523                   +0.0483                   +0.0403                   +0.0289                   +0.0139                   +0.0351
+    gen_c2_section                                 +0.0023                   +0.0021                   -0.0019                   -0.0066                   -0.0133                   -0.0125                   -0.0219
+    gen_timm_schinner                              +0.0135                   +0.0100                   +0.0092                   +0.0050                   +0.0032                   +0.0057                   -0.0105
+    gen_schwartz_reuse                             +0.0090                   +0.0175                   +0.0145                   +0.0118                   +0.0218                   +0.0235                   +0.0476
+    gen_rugg_grille                                +0.0936                   +0.1420                   +0.1773                   +0.2135                   +0.2376                   +0.2392                   +0.2391
+    gen_G2layer_ZL3b_s1                            +0.0697                   +0.0798                   +0.0956                   +0.0832                   +0.0812                   +0.0882                   +0.0416
+    s57_gen_IT2a_s1                                +0.0026                   +0.0047                   +0.0056                   -0.0089                   -0.0174                   -0.0291                   -0.0295
+    s57_gen_IT2a_s2                                -0.0080                   -0.0116                   -0.0182                   -0.0394                   -0.0530                   -0.0497                   -0.0421
+    s57_gen_IT2a_s3                                -0.0002                   -0.0057                   -0.0173                   -0.0246                   -0.0100                   -0.0255                   -0.0447
+    s57_gen_RF1b_s1                                -0.0049                   +0.0093                   +0.0210                   +0.0051                   -0.0160                   -0.0232                   -0.0007
+    s57_gen_RF1b_s2                                -0.0083                   -0.0067                   -0.0295                   -0.0319                   -0.0407                   -0.0480                   -0.0229
+    s57_gen_RF1b_s3                                +0.0023                   +0.0012                   +0.0103                   -0.0020                   -0.0109                   -0.0302                   -0.0321
+    s57_gen_ZL3b_s1                                +0.0036                   +0.0105                   +0.0108                   +0.0041                   -0.0024                   -0.0217                   -0.0193
+    s57_gen_ZL3b_s2                                -0.0007                   +0.0101                   +0.0146                   +0.0094                   -0.0011                   -0.0180                   -0.0268
+    s57_gen_ZL3b_s3                                +0.0028                   +0.0057                   +0.0092                   +0.0057                   +0.0066                   -0.0114                   +0.0011
+  method M-clust
+    text                                              K=25                      K=50                     K=100                     K=200                     K=400                     K=800                    K=full
+    VOY_ZL3b                         +0.052[+0.038,+0.062]     +0.056[+0.037,+0.072]     +0.052[+0.031,+0.069]     +0.029[+0.008,+0.046]     +0.020[-0.003,+0.039]     +0.016[-0.006,+0.035]     -0.060[-0.093,-0.036]
+    VOY_RF1b                         +0.048[+0.037,+0.059]     +0.070[+0.052,+0.081]     +0.054[+0.032,+0.068]     +0.032[+0.010,+0.044]     +0.018[-0.006,+0.032]     +0.012[-0.012,+0.027]     -0.055[-0.089,-0.030]
+    VOY_IT2a                         +0.055[+0.043,+0.067]     +0.074[+0.054,+0.091]     +0.060[+0.042,+0.073]     +0.049[+0.030,+0.063]     +0.038[+0.015,+0.053]     +0.031[+0.008,+0.047]     -0.047[-0.080,-0.027]
+    VOYZ_ZL3b_zattera                +0.073[+0.058,+0.087]     +0.095[+0.075,+0.109]     +0.099[+0.075,+0.115]     +0.098[+0.073,+0.113]     +0.098[+0.073,+0.113]     +0.098[+0.073,+0.113]     +0.093[+0.070,+0.110]
+    K1_latin_caesar                  +0.069[+0.057,+0.081]     +0.079[+0.062,+0.095]     +0.086[+0.071,+0.102]     +0.076[+0.063,+0.094]     +0.075[+0.059,+0.095]     +0.077[+0.060,+0.097]     +0.045[+0.023,+0.065]
+    K3_latin_caesar                  +0.038[+0.030,+0.048]     +0.047[+0.029,+0.061]     +0.069[+0.045,+0.081]     +0.086[+0.064,+0.094]     +0.083[+0.061,+0.091]     +0.083[+0.059,+0.090]     +0.060[+0.034,+0.071]
+    K1_latin_augustine               +0.069[+0.060,+0.081]     +0.080[+0.066,+0.090]     +0.071[+0.053,+0.082]     +0.059[+0.043,+0.069]     +0.055[+0.039,+0.065]     +0.054[+0.039,+0.063]     +0.041[+0.023,+0.057]
+    K3_latin_augustine               +0.024[+0.015,+0.032]     +0.043[+0.031,+0.057]     +0.080[+0.064,+0.095]     +0.057[+0.034,+0.072]     +0.053[+0.031,+0.068]     +0.059[+0.037,+0.074]     +0.066[+0.038,+0.085]
+    K1_italian_dante                 +0.088[+0.078,+0.103]     +0.102[+0.087,+0.117]     +0.102[+0.082,+0.117]     +0.090[+0.072,+0.104]     +0.083[+0.064,+0.099]     +0.081[+0.062,+0.098]     +0.068[+0.045,+0.088]
+    K3_italian_dante                 +0.047[+0.042,+0.056]     +0.060[+0.046,+0.071]     +0.064[+0.049,+0.074]     +0.067[+0.047,+0.078]     +0.067[+0.044,+0.077]     +0.068[+0.043,+0.081]     +0.032[+0.003,+0.052]
+    K1_german_faust                  +0.133[+0.122,+0.149]     +0.136[+0.118,+0.150]     +0.141[+0.119,+0.158]     +0.136[+0.116,+0.150]     +0.134[+0.112,+0.148]     +0.135[+0.114,+0.148]     +0.135[+0.109,+0.153]
+    K3_german_faust                  +0.085[+0.075,+0.099]     +0.123[+0.102,+0.140]     +0.149[+0.124,+0.163]     +0.145[+0.119,+0.157]     +0.135[+0.112,+0.149]     +0.134[+0.110,+0.148]     +0.119[+0.092,+0.135]
+    K1_german_kafka                  +0.090[+0.080,+0.102]     +0.105[+0.091,+0.125]     +0.090[+0.076,+0.110]     +0.088[+0.074,+0.111]     +0.086[+0.072,+0.106]     +0.087[+0.073,+0.108]     +0.095[+0.080,+0.115]
+    K3_german_kafka                  +0.049[+0.042,+0.058]     +0.082[+0.065,+0.092]     +0.085[+0.064,+0.095]     +0.085[+0.059,+0.094]     +0.072[+0.048,+0.086]     +0.077[+0.052,+0.090]     +0.071[+0.042,+0.089]
+    K1_english_alice                 +0.077[+0.066,+0.089]     +0.080[+0.067,+0.089]     +0.077[+0.063,+0.086]     +0.072[+0.058,+0.081]     +0.070[+0.054,+0.082]     +0.071[+0.055,+0.084]     +0.033[+0.015,+0.051]
+    K3_english_alice                 +0.057[+0.046,+0.068]     +0.072[+0.058,+0.083]     +0.085[+0.053,+0.099]     +0.096[+0.065,+0.110]     +0.090[+0.059,+0.101]     +0.081[+0.049,+0.095]     +0.066[+0.036,+0.080]
+    lang_italian_dante               +0.130[+0.123,+0.140]     +0.156[+0.139,+0.175]     +0.181[+0.158,+0.187]     +0.141[+0.113,+0.150]     +0.096[+0.064,+0.106]     +0.062[+0.028,+0.073]     -0.147[-0.179,-0.121]
+    lang_latin_cremma                +0.029[+0.019,+0.043]     +0.071[+0.059,+0.115]     +0.096[+0.061,+0.152]     +0.112[+0.073,+0.175]     +0.119[+0.083,+0.192]     +0.129[+0.089,+0.211]     +0.122[+0.090,+0.191]
+    lang_mhg_nibelungenlied          +0.123[+0.112,+0.136]     +0.224[+0.204,+0.232]     +0.243[+0.206,+0.256]     +0.253[+0.205,+0.261]     +0.253[+0.207,+0.259]     +0.237[+0.187,+0.246]     +0.253[+0.197,+0.260]
+    lang_mhg_parzival                +0.071[+0.056,+0.085]     +0.097[+0.075,+0.109]     +0.113[+0.087,+0.123]     +0.110[+0.084,+0.124]     +0.103[+0.076,+0.118]     +0.083[+0.052,+0.098]     +0.050[+0.018,+0.073]
+    lang_occitan_croisade            +0.164[+0.146,+0.186]     +0.223[+0.195,+0.248]     +0.196[+0.161,+0.226]     +0.171[+0.129,+0.186]     +0.136[+0.091,+0.153]     +0.092[+0.050,+0.114]     -0.134[-0.166,-0.112]
+    lang_oldfrench_roland            +0.157[+0.146,+0.171]     +0.230[+0.200,+0.244]     +0.257[+0.210,+0.260]     +0.203[+0.145,+0.200]     +0.138[+0.079,+0.134]     +0.086[+0.030,+0.086]     -0.095[-0.154,-0.087]
+    realline_cremma_prose15          +0.038[+0.012,+0.093]     +0.059[+0.039,+0.074]     +0.067[+0.052,+0.092]     +0.029[+0.021,+0.083]     +0.035[+0.021,+0.099]     +0.036[+0.023,+0.097]     +0.032[-0.033,+0.082]
+    realline_italian_dante           +0.101[+0.095,+0.110]     +0.158[+0.149,+0.163]     +0.154[+0.138,+0.154]     +0.099[+0.073,+0.102]     +0.055[+0.025,+0.056]     -0.006[-0.034,-0.001]     -0.148[-0.178,-0.138]
+    gen_s28_ZL3b_s1                  +0.061[+0.054,+0.073]     +0.083[+0.069,+0.097]     +0.066[+0.044,+0.087]     +0.062[+0.034,+0.081]     +0.042[+0.015,+0.063]     +0.039[+0.010,+0.059]     +0.047[+0.013,+0.063]
+    gen_c2_section                   +0.001[-0.006,+0.009]     +0.006[-0.005,+0.020]     +0.009[-0.005,+0.024]     -0.002[-0.021,+0.013]     -0.006[-0.025,+0.007]     -0.006[-0.025,+0.007]     -0.017[-0.035,-0.004]
+    gen_timm_schinner                +0.011[+0.002,+0.021]     +0.020[+0.003,+0.040]     +0.021[+0.005,+0.037]     +0.018[-0.000,+0.029]     +0.015[-0.006,+0.029]     +0.015[-0.006,+0.028]     -0.004[-0.027,+0.012]
+    gen_schwartz_reuse               +0.001[-0.007,+0.009]     +0.012[-0.001,+0.029]     +0.028[+0.008,+0.042]     +0.021[+0.002,+0.035]     +0.024[+0.005,+0.040]     +0.023[+0.004,+0.039]     +0.052[+0.032,+0.069]
+    gen_rugg_grille                  +0.142[+0.130,+0.156]     +0.314[+0.286,+0.328]     +0.373[+0.328,+0.374]     +0.361[+0.303,+0.355]     +0.324[+0.267,+0.317]     +0.293[+0.239,+0.288]     +0.291[+0.237,+0.287]
+    gen_G2layer_ZL3b_s1              +0.088[+0.077,+0.099]     +0.093[+0.081,+0.111]     +0.123[+0.102,+0.132]     +0.110[+0.088,+0.121]     +0.096[+0.074,+0.107]     +0.093[+0.072,+0.104]     +0.056[+0.026,+0.076]
+    s57_gen_IT2a_s1                  -0.002[-0.009,+0.008]     -0.003[-0.017,+0.019]     +0.016[+0.000,+0.031]     +0.003[-0.016,+0.020]     -0.014[-0.033,+0.005]     -0.018[-0.038,+0.002]     -0.025[-0.047,-0.006]
+    s57_gen_IT2a_s2                  +0.002[-0.007,+0.009]     -0.022[-0.036,-0.009]     -0.027[-0.040,-0.012]     -0.038[-0.056,-0.024]     -0.044[-0.065,-0.031]     -0.050[-0.071,-0.036]     -0.039[-0.065,-0.024]
+    s57_gen_IT2a_s3                  -0.007[-0.014,-0.002]     +0.003[-0.007,+0.016]     -0.008[-0.024,+0.004]     -0.009[-0.028,+0.005]     -0.013[-0.033,+0.003]     -0.019[-0.040,-0.002]     -0.043[-0.062,-0.023]
+    s57_gen_RF1b_s1                  -0.006[-0.014,+0.004]     +0.007[-0.010,+0.018]     +0.024[+0.007,+0.036]     +0.002[-0.010,+0.014]     -0.008[-0.023,+0.001]     -0.015[-0.029,-0.004]     +0.002[-0.017,+0.018]
+    s57_gen_RF1b_s2                  -0.011[-0.019,-0.004]     -0.005[-0.017,+0.007]     -0.020[-0.032,-0.007]     -0.034[-0.048,-0.022]     -0.043[-0.056,-0.030]     -0.045[-0.059,-0.031]     -0.020[-0.038,-0.008]
+    s57_gen_RF1b_s3                  +0.008[-0.001,+0.015]     +0.005[-0.010,+0.021]     +0.013[-0.004,+0.023]     -0.009[-0.026,+0.004]     -0.025[-0.044,-0.011]     -0.033[-0.053,-0.019]     -0.030[-0.058,-0.009]
+    s57_gen_ZL3b_s1                  +0.003[-0.004,+0.011]     +0.009[-0.009,+0.020]     -0.002[-0.018,+0.014]     -0.000[-0.020,+0.017]     -0.018[-0.039,+0.003]     -0.027[-0.049,-0.005]     -0.016[-0.043,+0.014]
+    s57_gen_ZL3b_s2                  +0.008[-0.002,+0.018]     -0.008[-0.021,+0.011]     +0.005[-0.015,+0.023]     -0.001[-0.020,+0.015]     -0.016[-0.038,+0.004]     -0.023[-0.043,-0.006]     -0.026[-0.051,-0.000]
+    s57_gen_ZL3b_s3                  +0.004[-0.001,+0.013]     +0.009[-0.002,+0.022]     +0.002[-0.012,+0.017]     +0.005[-0.009,+0.022]     -0.004[-0.022,+0.016]     -0.007[-0.025,+0.015]     +0.002[-0.018,+0.025]
+    plug-in points:
+    VOY_ZL3b                                       +0.0515                   +0.0523                   +0.0438                   +0.0212                   +0.0126                   +0.0096                   -0.0657
+    VOY_RF1b                                       +0.0462                   +0.0637                   +0.0434                   +0.0216                   +0.0088                   +0.0040                   -0.0618
+    VOY_IT2a                                       +0.0526                   +0.0659                   +0.0486                   +0.0362                   +0.0251                   +0.0195                   -0.0577
+    VOYZ_ZL3b_zattera                              +0.0719                   +0.0908                   +0.0935                   +0.0920                   +0.0920                   +0.0920                   +0.0882
+    K1_latin_caesar                                +0.0687                   +0.0759                   +0.0809                   +0.0740                   +0.0726                   +0.0737                   +0.0432
+    K3_latin_caesar                                +0.0376                   +0.0445                   +0.0612                   +0.0752                   +0.0730                   +0.0723                   +0.0508
+    K1_latin_augustine                             +0.0682                   +0.0759                   +0.0643                   +0.0532                   +0.0496                   +0.0483                   +0.0372
+    K3_latin_augustine                             +0.0235                   +0.0413                   +0.0700                   +0.0478                   +0.0446                   +0.0507                   +0.0550
+    K1_italian_dante                               +0.0869                   +0.0964                   +0.0919                   +0.0806                   +0.0743                   +0.0729                   +0.0597
+    K3_italian_dante                               +0.0452                   +0.0552                   +0.0562                   +0.0588                   +0.0583                   +0.0596                   +0.0270
+    K1_german_faust                                +0.1318                   +0.1302                   +0.1322                   +0.1281                   +0.1265                   +0.1275                   +0.1271
+    K3_german_faust                                +0.0814                   +0.1137                   +0.1355                   +0.1294                   +0.1225                   +0.1218                   +0.1076
+    K1_german_kafka                                +0.0890                   +0.1005                   +0.0873                   +0.0854                   +0.0832                   +0.0843                   +0.0913
+    K3_german_kafka                                +0.0489                   +0.0750                   +0.0752                   +0.0732                   +0.0631                   +0.0666                   +0.0616
+    K1_english_alice                               +0.0773                   +0.0755                   +0.0685                   +0.0640                   +0.0626                   +0.0639                   +0.0279
+    K3_english_alice                               +0.0560                   +0.0669                   +0.0756                   +0.0828                   +0.0774                   +0.0701                   +0.0571
+    lang_italian_dante                             +0.1260                   +0.1428                   +0.1527                   +0.1091                   +0.0651                   +0.0351                   -0.1626
+    lang_latin_cremma                              +0.0270                   +0.0636                   +0.0847                   +0.0959                   +0.1010                   +0.1094                   +0.1036
+    lang_mhg_nibelungenlied                        +0.1167                   +0.1985                   +0.2096                   +0.2143                   +0.2160                   +0.2032                   +0.2218
+    lang_mhg_parzival                              +0.0663                   +0.0818                   +0.0951                   +0.0941                   +0.0858                   +0.0688                   +0.0402
+    lang_occitan_croisade                          +0.1597                   +0.2039                   +0.1692                   +0.1395                   +0.1057                   +0.0689                   -0.1488
+    lang_oldfrench_roland                          +0.1521                   +0.2054                   +0.2085                   +0.1486                   +0.0852                   +0.0406                   -0.1314
+    realline_cremma_prose15                        +0.0339                   +0.0447                   +0.0501                   +0.0179                   +0.0234                   +0.0245                   +0.0124
+    realline_italian_dante                         +0.0967                   +0.1390                   +0.1262                   +0.0679                   +0.0214                   -0.0317                   -0.1609
+    gen_s28_ZL3b_s1                                +0.0587                   +0.0731                   +0.0535                   +0.0458                   +0.0276                   +0.0248                   +0.0351
+    gen_c2_section                                 +0.0003                   +0.0036                   +0.0055                   -0.0082                   -0.0117                   -0.0117                   -0.0219
+    gen_timm_schinner                              +0.0107                   +0.0177                   +0.0153                   +0.0093                   +0.0069                   +0.0066                   -0.0105
+    gen_schwartz_reuse                             +0.0012                   +0.0119                   +0.0241                   +0.0174                   +0.0205                   +0.0200                   +0.0476
+    gen_rugg_grille                                +0.1385                   +0.2881                   +0.3212                   +0.3001                   +0.2665                   +0.2414                   +0.2391
+    gen_G2layer_ZL3b_s1                            +0.0867                   +0.0900                   +0.1113                   +0.0984                   +0.0860                   +0.0824                   +0.0416
+    s57_gen_IT2a_s1                                -0.0016                   -0.0017                   +0.0091                   -0.0044                   -0.0203                   -0.0240                   -0.0295
+    s57_gen_IT2a_s2                                +0.0013                   -0.0211                   -0.0281                   -0.0414                   -0.0484                   -0.0535                   -0.0421
+    s57_gen_IT2a_s3                                -0.0077                   +0.0008                   -0.0118                   -0.0146                   -0.0187                   -0.0238                   -0.0447
+    s57_gen_RF1b_s1                                -0.0051                   +0.0038                   +0.0171                   -0.0020                   -0.0140                   -0.0192                   -0.0007
+    s57_gen_RF1b_s2                                -0.0113                   -0.0076                   -0.0222                   -0.0369                   -0.0452                   -0.0473                   -0.0229
+    s57_gen_RF1b_s3                                +0.0074                   +0.0041                   +0.0083                   -0.0119                   -0.0279                   -0.0348                   -0.0321
+    s57_gen_ZL3b_s1                                +0.0026                   +0.0044                   -0.0051                   -0.0056                   -0.0222                   -0.0298                   -0.0193
+    s57_gen_ZL3b_s2                                +0.0081                   -0.0053                   +0.0034                   -0.0029                   -0.0178                   -0.0238                   -0.0268
+    s57_gen_ZL3b_s3                                +0.0044                   +0.0076                   +0.0010                   +0.0027                   -0.0061                   -0.0082                   +0.0011
+
+=== PRE-REGISTERED CALLS (MM primary; plug-in beside) ===
+  [PRIMARY MM] C1 ZL3b M-freq K=100: +0.0452 [+0.0266,+0.0596] -> C1 TRUE (A14 as stated is FALSE at matched size)
+  [PRIMARY MM] C2 VOY_ZL3b           M-freq  K=50  Voynich +0.0577 | ciphers p10 +0.0513 min +0.0438 max +0.1379 (n=12) -> inside
+  [PRIMARY MM] C2 VOY_ZL3b           M-freq  K=100 Voynich +0.0452 | ciphers p10 +0.0603 min +0.0483 max +0.1409 (n=12) -> below
+  [PRIMARY MM] C2 VOY_ZL3b           M-freq  K=200 Voynich +0.0352 | ciphers p10 +0.0552 min +0.0475 max +0.1446 (n=12) -> below
+  [PRIMARY MM] C2 VOY_ZL3b           M-clust K=50  Voynich +0.0561 | ciphers p10 +0.0479 min +0.0431 max +0.1358 (n=12) -> inside
+  [PRIMARY MM] C2 VOY_ZL3b           M-clust K=100 Voynich +0.0517 | ciphers p10 +0.0689 min +0.0637 max +0.1488 (n=12) -> below
+  [PRIMARY MM] C2 VOY_ZL3b           M-clust K=200 Voynich +0.0291 | ciphers p10 +0.0598 min +0.0565 max +0.1452 (n=12) -> below
+  [PRIMARY MM] C2 VOY_RF1b           M-freq  K=50  Voynich +0.0558 | ciphers p10 +0.0513 min +0.0438 max +0.1379 (n=12) -> inside
+  [PRIMARY MM] C2 VOY_RF1b           M-freq  K=100 Voynich +0.0496 | ciphers p10 +0.0603 min +0.0483 max +0.1409 (n=12) -> below
+  [PRIMARY MM] C2 VOY_RF1b           M-freq  K=200 Voynich +0.0435 | ciphers p10 +0.0552 min +0.0475 max +0.1446 (n=12) -> below
+  [PRIMARY MM] C2 VOY_RF1b           M-clust K=50  Voynich +0.0701 | ciphers p10 +0.0479 min +0.0431 max +0.1358 (n=12) -> inside
+  [PRIMARY MM] C2 VOY_RF1b           M-clust K=100 Voynich +0.0535 | ciphers p10 +0.0689 min +0.0637 max +0.1488 (n=12) -> below
+  [PRIMARY MM] C2 VOY_RF1b           M-clust K=200 Voynich +0.0320 | ciphers p10 +0.0598 min +0.0565 max +0.1452 (n=12) -> below
+  [PRIMARY MM] C2 VOY_IT2a           M-freq  K=50  Voynich +0.0688 | ciphers p10 +0.0513 min +0.0438 max +0.1379 (n=12) -> inside
+  [PRIMARY MM] C2 VOY_IT2a           M-freq  K=100 Voynich +0.0583 | ciphers p10 +0.0603 min +0.0483 max +0.1409 (n=12) -> below
+  [PRIMARY MM] C2 VOY_IT2a           M-freq  K=200 Voynich +0.0522 | ciphers p10 +0.0552 min +0.0475 max +0.1446 (n=12) -> below
+  [PRIMARY MM] C2 VOY_IT2a           M-clust K=50  Voynich +0.0738 | ciphers p10 +0.0479 min +0.0431 max +0.1358 (n=12) -> inside
+  [PRIMARY MM] C2 VOY_IT2a           M-clust K=100 Voynich +0.0605 | ciphers p10 +0.0689 min +0.0637 max +0.1488 (n=12) -> below
+  [PRIMARY MM] C2 VOY_IT2a           M-clust K=200 Voynich +0.0491 | ciphers p10 +0.0598 min +0.0565 max +0.1452 (n=12) -> below
+  [PRIMARY MM] C2 VOYZ_ZL3b_zattera  M-freq  K=50  Voynich +0.0926 | ciphers p10 +0.0513 min +0.0438 max +0.1379 (n=12) -> inside (reported only)
+  [PRIMARY MM] C2 VOYZ_ZL3b_zattera  M-freq  K=100 Voynich +0.0987 | ciphers p10 +0.0603 min +0.0483 max +0.1409 (n=12) -> inside (reported only)
+  [PRIMARY MM] C2 VOYZ_ZL3b_zattera  M-freq  K=200 Voynich +0.0946 | ciphers p10 +0.0552 min +0.0475 max +0.1446 (n=12) -> inside (reported only)
+  [PRIMARY MM] C2 VOYZ_ZL3b_zattera  M-clust K=50  Voynich +0.0952 | ciphers p10 +0.0479 min +0.0431 max +0.1358 (n=12) -> inside (reported only)
+  [PRIMARY MM] C2 VOYZ_ZL3b_zattera  M-clust K=100 Voynich +0.0993 | ciphers p10 +0.0689 min +0.0637 max +0.1488 (n=12) -> inside (reported only)
+  [PRIMARY MM] C2 VOYZ_ZL3b_zattera  M-clust K=200 Voynich +0.0975 | ciphers p10 +0.0598 min +0.0565 max +0.1452 (n=12) -> inside (reported only)
+  [PRIMARY MM] C2: below 12, between 0, inside 6 of 18 -> separation fails
+  [PRIMARY MM] FINAL READING: P4-D1 exclusion does not survive matched size; reopen letter-in-core ciphers
+  [plug-in (reported)] C1 ZL3b M-freq K=100: +0.0407 [+0.0233,+0.0532] -> C1 TRUE (A14 as stated is FALSE at matched size)
+  [plug-in (reported)] C2 VOY_ZL3b           M-freq  K=50  Voynich +0.0528 | ciphers p10 +0.0483 min +0.0405 max +0.1313 (n=12) -> inside
+  [plug-in (reported)] C2 VOY_ZL3b           M-freq  K=100 Voynich +0.0407 | ciphers p10 +0.0559 min +0.0423 max +0.1340 (n=12) -> below
+  [plug-in (reported)] C2 VOY_ZL3b           M-freq  K=200 Voynich +0.0292 | ciphers p10 +0.0499 min +0.0393 max +0.1369 (n=12) -> below
+  [plug-in (reported)] C2 VOY_ZL3b           M-clust K=50  Voynich +0.0523 | ciphers p10 +0.0455 min +0.0413 max +0.1302 (n=12) -> inside
+  [plug-in (reported)] C2 VOY_ZL3b           M-clust K=100 Voynich +0.0438 | ciphers p10 +0.0615 min +0.0562 max +0.1355 (n=12) -> below
+  [plug-in (reported)] C2 VOY_ZL3b           M-clust K=200 Voynich +0.0212 | ciphers p10 +0.0537 min +0.0478 max +0.1294 (n=12) -> below
+  [plug-in (reported)] C2 VOY_RF1b           M-freq  K=50  Voynich +0.0513 | ciphers p10 +0.0483 min +0.0405 max +0.1313 (n=12) -> inside
+  [plug-in (reported)] C2 VOY_RF1b           M-freq  K=100 Voynich +0.0429 | ciphers p10 +0.0559 min +0.0423 max +0.1340 (n=12) -> below
+  [plug-in (reported)] C2 VOY_RF1b           M-freq  K=200 Voynich +0.0354 | ciphers p10 +0.0499 min +0.0393 max +0.1369 (n=12) -> below
+  [plug-in (reported)] C2 VOY_RF1b           M-clust K=50  Voynich +0.0637 | ciphers p10 +0.0455 min +0.0413 max +0.1302 (n=12) -> inside
+  [plug-in (reported)] C2 VOY_RF1b           M-clust K=100 Voynich +0.0434 | ciphers p10 +0.0615 min +0.0562 max +0.1355 (n=12) -> below
+  [plug-in (reported)] C2 VOY_RF1b           M-clust K=200 Voynich +0.0216 | ciphers p10 +0.0537 min +0.0478 max +0.1294 (n=12) -> below
+  [plug-in (reported)] C2 VOY_IT2a           M-freq  K=50  Voynich +0.0607 | ciphers p10 +0.0483 min +0.0405 max +0.1313 (n=12) -> inside
+  [plug-in (reported)] C2 VOY_IT2a           M-freq  K=100 Voynich +0.0483 | ciphers p10 +0.0559 min +0.0423 max +0.1340 (n=12) -> below
+  [plug-in (reported)] C2 VOY_IT2a           M-freq  K=200 Voynich +0.0420 | ciphers p10 +0.0499 min +0.0393 max +0.1369 (n=12) -> below
+  [plug-in (reported)] C2 VOY_IT2a           M-clust K=50  Voynich +0.0659 | ciphers p10 +0.0455 min +0.0413 max +0.1302 (n=12) -> inside
+  [plug-in (reported)] C2 VOY_IT2a           M-clust K=100 Voynich +0.0486 | ciphers p10 +0.0615 min +0.0562 max +0.1355 (n=12) -> below
+  [plug-in (reported)] C2 VOY_IT2a           M-clust K=200 Voynich +0.0362 | ciphers p10 +0.0537 min +0.0478 max +0.1294 (n=12) -> below
+  [plug-in (reported)] C2 VOYZ_ZL3b_zattera  M-freq  K=50  Voynich +0.0886 | ciphers p10 +0.0483 min +0.0405 max +0.1313 (n=12) -> inside (reported only)
+  [plug-in (reported)] C2 VOYZ_ZL3b_zattera  M-freq  K=100 Voynich +0.0931 | ciphers p10 +0.0559 min +0.0423 max +0.1340 (n=12) -> inside (reported only)
+  [plug-in (reported)] C2 VOYZ_ZL3b_zattera  M-freq  K=200 Voynich +0.0893 | ciphers p10 +0.0499 min +0.0393 max +0.1369 (n=12) -> inside (reported only)
+  [plug-in (reported)] C2 VOYZ_ZL3b_zattera  M-clust K=50  Voynich +0.0908 | ciphers p10 +0.0455 min +0.0413 max +0.1302 (n=12) -> inside (reported only)
+  [plug-in (reported)] C2 VOYZ_ZL3b_zattera  M-clust K=100 Voynich +0.0935 | ciphers p10 +0.0615 min +0.0562 max +0.1355 (n=12) -> inside (reported only)
+  [plug-in (reported)] C2 VOYZ_ZL3b_zattera  M-clust K=200 Voynich +0.0920 | ciphers p10 +0.0537 min +0.0478 max +0.1294 (n=12) -> inside (reported only)
+  [plug-in (reported)] C2: below 12, between 0, inside 6 of 18 -> separation fails
+  [plug-in (reported)] FINAL READING: P4-D1 exclusion does not survive matched size; reopen letter-in-core ciphers
+
+  C3 (descriptive): Voynich vs matched LANG references (MM)
+    M-freq  K=  25 LANG min +0.0358 med +0.0798 max +0.1319 | ZL3b +0.0460 (1/6 below); RF1b +0.0410 (1/6 below); IT2a +0.0536 (1/6 below); Zatt +0.0690 (2/6 below)
+    M-freq  K=  50 LANG min +0.0483 med +0.1197 max +0.1587 | ZL3b +0.0577 (1/6 below); RF1b +0.0558 (1/6 below); IT2a +0.0688 (1/6 below); Zatt +0.0926 (2/6 below)
+    M-freq  K= 100 LANG min +0.0543 med +0.1397 max +0.1955 | ZL3b +0.0452 (0/6 below); RF1b +0.0496 (0/6 below); IT2a +0.0583 (1/6 below); Zatt +0.0987 (2/6 below)
+    M-freq  K= 200 LANG min +0.0758 med +0.1375 max +0.2066 | ZL3b +0.0352 (0/6 below); RF1b +0.0435 (0/6 below); IT2a +0.0522 (0/6 below); Zatt +0.0946 (1/6 below)
+    M-freq  K= 400 LANG min +0.0940 med +0.1162 max +0.1832 | ZL3b +0.0213 (0/6 below); RF1b +0.0298 (0/6 below); IT2a +0.0397 (0/6 below); Zatt +0.0946 (1/6 below)
+    M-freq  K= 800 LANG min +0.0451 med +0.0945 max +0.1195 | ZL3b +0.0099 (0/6 below); RF1b +0.0084 (0/6 below); IT2a +0.0259 (0/6 below); Zatt +0.0946 (3/6 below)
+    M-freq  K=full LANG min -0.1481 med -0.1145 max +0.1222 | ZL3b -0.0598 (4/6 below); RF1b -0.0551 (4/6 below); IT2a -0.0473 (4/6 below); Zatt +0.0934 (5/6 below)
+    M-clust K=  25 LANG min +0.0291 med +0.1154 max +0.1637 | ZL3b +0.0522 (1/6 below); RF1b +0.0483 (1/6 below); IT2a +0.0548 (1/6 below); Zatt +0.0733 (2/6 below)
+    M-clust K=  50 LANG min +0.0711 med +0.1571 max +0.2305 | ZL3b +0.0561 (0/6 below); RF1b +0.0701 (0/6 below); IT2a +0.0738 (1/6 below); Zatt +0.0952 (1/6 below)
+    M-clust K= 100 LANG min +0.0956 med +0.1677 max +0.2567 | ZL3b +0.0517 (0/6 below); RF1b +0.0535 (0/6 below); IT2a +0.0605 (0/6 below); Zatt +0.0993 (1/6 below)
+    M-clust K= 200 LANG min +0.0993 med +0.1265 max +0.2034 | ZL3b +0.0291 (0/6 below); RF1b +0.0320 (0/6 below); IT2a +0.0491 (0/6 below); Zatt +0.0975 (0/6 below)
+    M-clust K= 400 LANG min +0.0546 med +0.1107 max +0.1384 | ZL3b +0.0197 (0/6 below); RF1b +0.0177 (0/6 below); IT2a +0.0379 (0/6 below); Zatt +0.0975 (2/6 below)
+    M-clust K= 800 LANG min -0.0058 med +0.0848 max +0.1291 | ZL3b +0.0164 (1/6 below); RF1b +0.0123 (1/6 below); IT2a +0.0309 (1/6 below); Zatt +0.0975 (5/6 below)
+    M-clust K=full LANG min -0.1481 med -0.1145 max +0.1222 | ZL3b -0.0598 (4/6 below); RF1b -0.0551 (4/6 below); IT2a -0.0473 (4/6 below); Zatt +0.0934 (5/6 below)
+  GEN references (MM, M-freq): K=25 min +0.0019 max +0.0993; K=50 min +0.0050 max +0.1571; K=100 min +0.0015 max +0.2065; K=200 min -0.0019 max +0.2538; K=400 min -0.0077 max +0.2869; K=800 min -0.0072 max +0.2907; K=full min -0.0167 max +0.2905
+  GEN57 references (MM, M-freq): K=25 min -0.0081 max +0.0049; K=50 min -0.0105 max +0.0123; K=100 min -0.0284 max +0.0240; K=200 min -0.0360 max +0.0115; K=400 min -0.0500 max +0.0080; K=800 min -0.0466 max -0.0107; K=full min -0.0429 max +0.0020
+
+sidecars: runs/s80/values.csv, runs/s80/texts.json, runs/s80/calls.json
+runtime 248 s; finished Sun Oct 18 03:23:46 PDT 2026 (`date`)

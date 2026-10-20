@@ -1,0 +1,981 @@
+{
+ "stamp": "20261018-171201",
+ "pages": [
+  "f9r",
+  "f9v",
+  "f10r",
+  "f10v",
+  "f11r",
+  "f11v",
+  "f13r",
+  "f13v",
+  "f14r",
+  "f14v",
+  "f15r",
+  "f15v",
+  "f16r",
+  "f16v",
+  "f33r",
+  "f33v",
+  "f34r",
+  "f34v",
+  "f39r",
+  "f39v",
+  "f40r",
+  "f40v",
+  "f57r",
+  "f57v",
+  "f58r",
+  "f58v",
+  "f65r",
+  "f65v",
+  "f66r",
+  "f66v",
+  "f76r",
+  "f76v",
+  "f77r",
+  "f77v",
+  "f78r",
+  "f78v",
+  "f81r",
+  "f81v",
+  "f82r",
+  "f82v",
+  "f83r",
+  "f83v"
+ ],
+ "n": 42,
+ "params": {
+  "DRAFT_DIV": 8,
+  "WORK_W": 160,
+  "WORK_H": 224,
+  "MAX_SHIFT": 16,
+  "V_MIN": 0.25,
+  "DAB_STRONG": 16.0,
+  "GHOST_CAP": 12.0,
+  "STRONG_DILATE": 3,
+  "INK_DL": 22.0,
+  "HP_SIGMA": 20.0,
+  "STAIN_MED": 9,
+  "STAIN_LO": 2.0,
+  "STAIN_HI": 25.0,
+  "GUTTER_FRAC": 0.08,
+  "PROF_SIGMA": 2.0,
+  "GPU_MEM_FRAC_GB": 3.5
+ },
+ "image_sha256": {
+  "f9r": "a5f3a7b1a3f9c0e791a3365d801884c64d996749719d84ffb11f0f06fbb30925",
+  "f9v": "790a7493a31133cf9375fb7471d1d1167df4988bcadeb74ea2528a0ba562e693",
+  "f10r": "8d8d5636691bae1be1ff908afad1388c25c53154e8808be572675ae8500c2ac5",
+  "f10v": "5cff25a923f5e8173a2a8ad21ec247d7c9bd090ac379322d5dda4d17be916403",
+  "f11r": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+  "f11v": "896a5297fd4ac6a4ca215ae5e000ac8d6a50ea6063283a28b42ba1974d681d51",
+  "f13r": "454eb5f05db936ed0cf729c3881af0ded0993bc116246c6c8fd0c2789f4e9833",
+  "f13v": "79ac3ff85ed178229cd4bafc6332c606684dd0eba37221758a7ec430c86544f0",
+  "f14r": "1c2b3a255fc01cb6db6f1c2e971ee93e6911ef1acc2ef0800a6a7eae2572945c",
+  "f14v": "97dbdbe273597957d62db2cf3a6d9769a0121cba1d0bb682c8008a6d2de622a6",
+  "f15r": "94d811f32199d1a092ff7eedb50ef6b7d3e35fa609093a55cdd3937a056b0edf",
+  "f15v": "d224773e2e39ef02719c25560e8072e6407bdea9f8d1bdf8da515adb5c2fc127",
+  "f16r": "1a7e9d3d9e6c647d73899317cf21c2967ded0e30517c5020e7c2093f6d99f265",
+  "f16v": "0001f9fb64430a47afa2c9dfa94e8eba1b6423ab0d3c3b9ae2a7c43e406d3a5e",
+  "f33r": "28e6d9f02b9ca96b85275b7c6dd6e94453d3a2f5c6038d9966933d0229da9e74",
+  "f33v": "41b148c40e9cf73c63044c5415d3c2bbeebffc20153a36762f35e8134da42941",
+  "f34r": "4108828356258d68d2b53ef29d484f0648c269ecc4984781248e7803ba51e353",
+  "f34v": "2f68183982075a405f7e2cc11ea06b76b263f80f20f01083279e7f03dcb4f78a",
+  "f39r": "c86b9bc0182e1385136465d92ce9c43f31320bfab55d7b2e87e1ea81a7330bf0",
+  "f39v": "13cafc785fd69c7471bc670480becc6338cf20682e1d196c2ef14f03abee8586",
+  "f40r": "540cff9e3a031c5de5ba9d5c7e388cd50980b0d225a1f89b97bda2c6f0de60b7",
+  "f40v": "bce0c42319b096126ad9fe0558ecfb8a61335867cbd1869e0865eaacf54c1087",
+  "f57r": "473727b2ea1dd000a4a15eaa57302a48c410d4f6e670abdd607cd7c7461ff98c",
+  "f57v": "2bf46dbeaaaab4a97075f46f503582da0eef2b352eb92277d7a3b6db1a3a0b8c",
+  "f58r": "2897cf3214d13176c9d708a9f4f9030752a50922271ade7286c0c2cd73b811fd",
+  "f58v": "7319cd29982e6ac56192d02b8546a4b65aace9f2e65f3c782a1c019a94d3b3fc",
+  "f65r": "dc7a0c45454665f33287804ec56f8eaa952a691540fc6fd434e79d75c7ce597f",
+  "f65v": "d3ebd8bfcf12a0a98f9ecc96ee345e82c7cc15d5c786c93c63ccd2f923ea1714",
+  "f66r": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+  "f66v": "8304c6ba3605207c67f4f843974e60e947b423f21255a06656d6af3055fa53ce",
+  "f76r": "39d264ab4e6fbb9cad1de45b7efedb6f4b9cb497cb587214926fcbaf6590ec68",
+  "f76v": "affdb2ff70e84ae277d3d30d18b3a468bd4eded393f70514978ad8b0c48df49e",
+  "f77r": "9ad387ccea37cd8a25ce9602817eb19af5105c545a238203715efe454e5b24ad",
+  "f77v": "e2e2f629753bfe6a9c111d8157ac63cfc4524966cbf367ddaaffece07cffdab2",
+  "f78r": "0054f691ac8fddcac324fba6b385f8ad578cd0f2f9879d5498a325bab0310893",
+  "f78v": "9c574f3a564cc55252633174784745a075689be93a9c7249f381f71434f282e0",
+  "f81r": "e5e83f606eb9c3089051035f53ea694bcb1dadb5a93ee0064019c903ec6802fe",
+  "f81v": "bb1a2316e7fc2966f5761f591d79339c75dcfbc6c2c9ab2b88a37e800266d4bf",
+  "f82r": "269cb42307824ab82764f80009429e58d98c649371d8efe10d2a1f54132a21ef",
+  "f82v": "4c86853e2d6e62690ec0106dcc3812c95f009022b06e7edfd347386728003142",
+  "f83r": "dc353557586906cbe4210f503cc57af58599a3948517fb45b1d222760be96729",
+  "f83v": "dc4610b14efc89e3eded3b887b28b95f8c98a07adb4bed6d83a10e37daf0c7e9"
+ },
+ "preflight": {
+  "free_ram_gb": 4.568622589111328,
+  "gpu_used_gb": 6.1025390625,
+  "gpu_free_gb": 9.818359375
+ },
+ "timing_s": {
+  "features": 9.933511972427368,
+  "gpu": 3.6609244346618652,
+  "total": 14.06525182723999
+ },
+ "gpu_peak_alloc_gb": 0.111328125,
+ "n_candidates_per_page": {
+  "min": 40,
+  "max": 40
+ },
+ "known": [
+  {
+   "link": "f10v|f15r",
+   "evidence": "splashed stain (sec. 7)",
+   "currently_facing": false,
+   "O_offset": {
+    "rank_from_left": 17,
+    "rank_from_right": 8,
+    "worst": 17,
+    "best": 8,
+    "global_rank": 201,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "O_offset_excl_current": {
+    "rank_from_left": 17,
+    "rank_from_right": 8,
+    "worst": 17,
+    "best": 8,
+    "global_rank": 201,
+    "global_of": 840,
+    "n_cand_left": 39
+   },
+   "O_offset_control_rot": {
+    "rank_from_left": 6,
+    "rank_from_right": 5,
+    "worst": 6,
+    "best": 5,
+    "global_rank": 40,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain": {
+    "rank_from_left": 19,
+    "rank_from_right": 25,
+    "worst": 25,
+    "best": 19,
+    "global_rank": 490,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain_excl_current": {
+    "rank_from_left": 18,
+    "rank_from_right": 24,
+    "worst": 24,
+    "best": 18,
+    "global_rank": 490,
+    "global_of": 840,
+    "n_cand_left": 39
+   },
+   "T_stain_control_rot": {
+    "rank_from_left": 15,
+    "rank_from_right": 26,
+    "worst": 26,
+    "best": 15,
+    "global_rank": 395,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter": {
+    "rank_from_left": 40,
+    "rank_from_right": 27,
+    "worst": 40,
+    "best": 27,
+    "global_rank": 631,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter_excl_current": {
+    "rank_from_left": 39,
+    "rank_from_right": 26,
+    "worst": 39,
+    "best": 26,
+    "global_rank": 631,
+    "global_of": 840,
+    "n_cand_left": 39
+   },
+   "U_gutter_control_rot": {
+    "rank_from_left": 40,
+    "rank_from_right": 25,
+    "worst": 40,
+    "best": 25,
+    "global_rank": 638,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined": {
+    "rank_from_left": 17,
+    "rank_from_right": 20,
+    "worst": 20,
+    "best": 17,
+    "global_rank": 366,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined_excl_current": {
+    "rank_from_left": 17,
+    "rank_from_right": 19,
+    "worst": 19,
+    "best": 17,
+    "global_rank": 366,
+    "global_of": 840,
+    "n_cand_left": 39
+   },
+   "combined_control_rot": {
+    "rank_from_left": 5,
+    "rank_from_right": 9,
+    "worst": 9,
+    "best": 5,
+    "global_rank": 139,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "raw_O_hflip_vs_rot180_vs_none": [
+    0.07876157015562057,
+    0.11959878355264664,
+    0.07207009196281433
+   ]
+  },
+  {
+   "link": "f33v|f40r",
+   "evidence": "blue petals (sec. 7)",
+   "currently_facing": false,
+   "O_offset": {
+    "rank_from_left": 22,
+    "rank_from_right": 13,
+    "worst": 22,
+    "best": 13,
+    "global_rank": 287,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "O_offset_excl_current": {
+    "rank_from_left": 21,
+    "rank_from_right": 12,
+    "worst": 21,
+    "best": 12,
+    "global_rank": 287,
+    "global_of": 840,
+    "n_cand_left": 39
+   },
+   "O_offset_control_rot": {
+    "rank_from_left": 40,
+    "rank_from_right": 35,
+    "worst": 40,
+    "best": 35,
+    "global_rank": 829,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain": {
+    "rank_from_left": 13,
+    "rank_from_right": 7,
+    "worst": 13,
+    "best": 7,
+    "global_rank": 263,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain_excl_current": {
+    "rank_from_left": 12,
+    "rank_from_right": 7,
+    "worst": 12,
+    "best": 7,
+    "global_rank": 263,
+    "global_of": 840,
+    "n_cand_left": 39
+   },
+   "T_stain_control_rot": {
+    "rank_from_left": 29,
+    "rank_from_right": 23,
+    "worst": 29,
+    "best": 23,
+    "global_rank": 606,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter": {
+    "rank_from_left": 23,
+    "rank_from_right": 40,
+    "worst": 40,
+    "best": 23,
+    "global_rank": 631,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter_excl_current": {
+    "rank_from_left": 22,
+    "rank_from_right": 39,
+    "worst": 39,
+    "best": 22,
+    "global_rank": 631,
+    "global_of": 840,
+    "n_cand_left": 39
+   },
+   "U_gutter_control_rot": {
+    "rank_from_left": 24,
+    "rank_from_right": 40,
+    "worst": 40,
+    "best": 24,
+    "global_rank": 638,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined": {
+    "rank_from_left": 19,
+    "rank_from_right": 10,
+    "worst": 19,
+    "best": 10,
+    "global_rank": 286,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined_excl_current": {
+    "rank_from_left": 18,
+    "rank_from_right": 10,
+    "worst": 18,
+    "best": 10,
+    "global_rank": 286,
+    "global_of": 840,
+    "n_cand_left": 39
+   },
+   "combined_control_rot": {
+    "rank_from_left": 39,
+    "rank_from_right": 35,
+    "worst": 39,
+    "best": 35,
+    "global_rank": 827,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "raw_O_hflip_vs_rot180_vs_none": [
+    0.06566442549228668,
+    -0.01267922017723322,
+    0.06486255675554276
+   ]
+  },
+  {
+   "link": "f58v|f65r",
+   "evidence": "bit of green leaf (sec. 7)",
+   "currently_facing": true,
+   "O_offset": {
+    "rank_from_left": 40,
+    "rank_from_right": 38,
+    "worst": 40,
+    "best": 38,
+    "global_rank": 798,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "O_offset_excl_current": {
+    "rank_from_left": 40,
+    "rank_from_right": 38,
+    "worst": 40,
+    "best": 38,
+    "global_rank": 798,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "O_offset_control_rot": {
+    "rank_from_left": 37,
+    "rank_from_right": 36,
+    "worst": 37,
+    "best": 36,
+    "global_rank": 719,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain": {
+    "rank_from_left": 9,
+    "rank_from_right": 3,
+    "worst": 9,
+    "best": 3,
+    "global_rank": 138,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain_excl_current": {
+    "rank_from_left": 9,
+    "rank_from_right": 3,
+    "worst": 9,
+    "best": 3,
+    "global_rank": 138,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain_control_rot": {
+    "rank_from_left": 29,
+    "rank_from_right": 20,
+    "worst": 29,
+    "best": 20,
+    "global_rank": 551,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter": {
+    "rank_from_left": 40,
+    "rank_from_right": 23,
+    "worst": 40,
+    "best": 23,
+    "global_rank": 631,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter_excl_current": {
+    "rank_from_left": 40,
+    "rank_from_right": 23,
+    "worst": 40,
+    "best": 23,
+    "global_rank": 631,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter_control_rot": {
+    "rank_from_left": 40,
+    "rank_from_right": 22,
+    "worst": 40,
+    "best": 22,
+    "global_rank": 638,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined": {
+    "rank_from_left": 29,
+    "rank_from_right": 17,
+    "worst": 29,
+    "best": 17,
+    "global_rank": 551,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined_excl_current": {
+    "rank_from_left": 29,
+    "rank_from_right": 17,
+    "worst": 29,
+    "best": 17,
+    "global_rank": 551,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined_control_rot": {
+    "rank_from_left": 37,
+    "rank_from_right": 32,
+    "worst": 37,
+    "best": 32,
+    "global_rank": 719,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "raw_O_hflip_vs_rot180_vs_none": [
+    -0.002412176225334406,
+    0.027168573811650276,
+    0.007766852155327797
+   ]
+  },
+  {
+   "link": "f76v|f83r",
+   "evidence": "nymph's right arm in the upper gutter (sec. 7)",
+   "currently_facing": false,
+   "O_offset": {
+    "rank_from_left": 8,
+    "rank_from_right": 15,
+    "worst": 15,
+    "best": 8,
+    "global_rank": 484,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "O_offset_excl_current": {
+    "rank_from_left": 8,
+    "rank_from_right": 14,
+    "worst": 14,
+    "best": 8,
+    "global_rank": 484,
+    "global_of": 840,
+    "n_cand_left": 39
+   },
+   "O_offset_control_rot": {
+    "rank_from_left": 9,
+    "rank_from_right": 17,
+    "worst": 17,
+    "best": 9,
+    "global_rank": 421,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain": {
+    "rank_from_left": 22,
+    "rank_from_right": 9,
+    "worst": 22,
+    "best": 9,
+    "global_rank": 283,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain_excl_current": {
+    "rank_from_left": 21,
+    "rank_from_right": 9,
+    "worst": 21,
+    "best": 9,
+    "global_rank": 283,
+    "global_of": 840,
+    "n_cand_left": 39
+   },
+   "T_stain_control_rot": {
+    "rank_from_left": 23,
+    "rank_from_right": 13,
+    "worst": 23,
+    "best": 13,
+    "global_rank": 330,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter": {
+    "rank_from_left": 33,
+    "rank_from_right": 34,
+    "worst": 34,
+    "best": 33,
+    "global_rank": 759,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter_excl_current": {
+    "rank_from_left": 32,
+    "rank_from_right": 33,
+    "worst": 33,
+    "best": 32,
+    "global_rank": 759,
+    "global_of": 840,
+    "n_cand_left": 39
+   },
+   "U_gutter_control_rot": {
+    "rank_from_left": 33,
+    "rank_from_right": 33,
+    "worst": 33,
+    "best": 33,
+    "global_rank": 765,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined": {
+    "rank_from_left": 19,
+    "rank_from_right": 19,
+    "worst": 19,
+    "best": 19,
+    "global_rank": 465,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined_excl_current": {
+    "rank_from_left": 18,
+    "rank_from_right": 18,
+    "worst": 18,
+    "best": 18,
+    "global_rank": 465,
+    "global_of": 840,
+    "n_cand_left": 39
+   },
+   "combined_control_rot": {
+    "rank_from_left": 19,
+    "rank_from_right": 18,
+    "worst": 19,
+    "best": 18,
+    "global_rank": 470,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "raw_O_hflip_vs_rot180_vs_none": [
+    0.04306584596633911,
+    0.05278989300131798,
+    0.03480292856693268
+   ]
+  },
+  {
+   "link": "f78v|f81r",
+   "evidence": "two streams crossing the centre gutter (sec. 6)",
+   "currently_facing": false,
+   "O_offset": {
+    "rank_from_left": 6,
+    "rank_from_right": 13,
+    "worst": 13,
+    "best": 6,
+    "global_rank": 244,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "O_offset_excl_current": {
+    "rank_from_left": 6,
+    "rank_from_right": 13,
+    "worst": 13,
+    "best": 6,
+    "global_rank": 244,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "O_offset_control_rot": {
+    "rank_from_left": 6,
+    "rank_from_right": 11,
+    "worst": 11,
+    "best": 6,
+    "global_rank": 201,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain": {
+    "rank_from_left": 1,
+    "rank_from_right": 1,
+    "worst": 1,
+    "best": 1,
+    "global_rank": 2,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain_excl_current": {
+    "rank_from_left": 1,
+    "rank_from_right": 1,
+    "worst": 1,
+    "best": 1,
+    "global_rank": 2,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain_control_rot": {
+    "rank_from_left": 1,
+    "rank_from_right": 1,
+    "worst": 1,
+    "best": 1,
+    "global_rank": 1,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter": {
+    "rank_from_left": 11,
+    "rank_from_right": 17,
+    "worst": 17,
+    "best": 11,
+    "global_rank": 156,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter_excl_current": {
+    "rank_from_left": 11,
+    "rank_from_right": 17,
+    "worst": 17,
+    "best": 11,
+    "global_rank": 156,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter_control_rot": {
+    "rank_from_left": 26,
+    "rank_from_right": 36,
+    "worst": 36,
+    "best": 26,
+    "global_rank": 666,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined": {
+    "rank_from_left": 2,
+    "rank_from_right": 2,
+    "worst": 2,
+    "best": 2,
+    "global_rank": 18,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined_excl_current": {
+    "rank_from_left": 2,
+    "rank_from_right": 2,
+    "worst": 2,
+    "best": 2,
+    "global_rank": 18,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined_control_rot": {
+    "rank_from_left": 2,
+    "rank_from_right": 3,
+    "worst": 3,
+    "best": 2,
+    "global_rank": 31,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "raw_O_hflip_vs_rot180_vs_none": [
+    0.0714709535241127,
+    0.07622276246547699,
+    0.05667371302843094
+   ]
+  }
+ ],
+ "facing_vs_random": {
+  "O_offset": {
+   "n_facing": 15,
+   "n_random": 816,
+   "facing_mean": 0.06691624969244003,
+   "facing_median": 0.04556521028280258,
+   "random_mean": 0.05591505020856857,
+   "random_median": 0.04991225525736809,
+   "random_p95": 0.13022901117801666,
+   "auc_facing_vs_random": 0.5516339869281046,
+   "auc_known_vs_random": 0.5215686274509804,
+   "auc_conjouter_vs_random": 0.3843137254901961,
+   "known_top5_both_ends": 0,
+   "null_top5_both_ends_mean": 0.3195,
+   "p_known_top5": 1.0
+  },
+  "T_stain": {
+   "n_facing": 15,
+   "n_random": 816,
+   "facing_mean": 0.3577732443809509,
+   "facing_median": 0.34755760431289673,
+   "random_mean": 0.2599218785762787,
+   "random_median": 0.24746423959732056,
+   "random_p95": 0.4716920554637909,
+   "auc_facing_vs_random": 0.7176470588235294,
+   "auc_known_vs_random": 0.7269607843137255,
+   "auc_conjouter_vs_random": 0.7083333333333334,
+   "known_top5_both_ends": 1,
+   "null_top5_both_ends_mean": 0.419,
+   "p_known_top5": 0.35282358820589704
+  },
+  "U_gutter": {
+   "n_facing": 15,
+   "n_random": 816,
+   "facing_mean": 1.1009900569915771,
+   "facing_median": 1.7944941520690918,
+   "random_mean": 0.14055019617080688,
+   "random_median": 0.0,
+   "random_p95": 1.4411842823028564,
+   "auc_facing_vs_random": 0.8044934640522876,
+   "auc_known_vs_random": 0.5060049019607844,
+   "auc_conjouter_vs_random": 0.6012254901960784,
+   "known_top5_both_ends": 0,
+   "null_top5_both_ends_mean": 0.3305,
+   "p_known_top5": 1.0
+  },
+  "combined": {
+   "n_facing": 15,
+   "n_random": 816,
+   "facing_mean": 3.010211706161499,
+   "facing_median": 3.6113786697387695,
+   "random_mean": -0.06477104872465134,
+   "random_median": -0.305014967918396,
+   "random_p95": 3.1357803344726562,
+   "auc_facing_vs_random": 0.8437091503267974,
+   "auc_known_vs_random": 0.6061274509803921,
+   "auc_conjouter_vs_random": 0.5352941176470588,
+   "known_top5_both_ends": 1,
+   "null_top5_both_ends_mean": 0.4655,
+   "p_known_top5": 0.392303848075962
+  }
+ },
+ "conjugate_outer": [
+  {
+   "pair": "f10r|f15v",
+   "O_offset": {
+    "rank_from_left": 4,
+    "rank_from_right": 5,
+    "worst": 5,
+    "best": 4,
+    "global_rank": 42,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain": {
+    "rank_from_left": 4,
+    "rank_from_right": 1,
+    "worst": 4,
+    "best": 1,
+    "global_rank": 64,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter": {
+    "rank_from_left": 12,
+    "rank_from_right": 8,
+    "worst": 12,
+    "best": 8,
+    "global_rank": 123,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined": {
+    "rank_from_left": 4,
+    "rank_from_right": 3,
+    "worst": 4,
+    "best": 3,
+    "global_rank": 31,
+    "global_of": 840,
+    "n_cand_left": 40
+   }
+  },
+  {
+   "pair": "f33r|f40v",
+   "O_offset": {
+    "rank_from_left": 40,
+    "rank_from_right": 40,
+    "worst": 40,
+    "best": 40,
+    "global_rank": 838,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain": {
+    "rank_from_left": 21,
+    "rank_from_right": 21,
+    "worst": 21,
+    "best": 21,
+    "global_rank": 372,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter": {
+    "rank_from_left": 40,
+    "rank_from_right": 40,
+    "worst": 40,
+    "best": 40,
+    "global_rank": 631,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined": {
+    "rank_from_left": 38,
+    "rank_from_right": 37,
+    "worst": 38,
+    "best": 37,
+    "global_rank": 821,
+    "global_of": 840,
+    "n_cand_left": 40
+   }
+  },
+  {
+   "pair": "f58r|f65v",
+   "O_offset": {
+    "rank_from_left": 30,
+    "rank_from_right": 38,
+    "worst": 38,
+    "best": 30,
+    "global_rank": 734,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain": {
+    "rank_from_left": 12,
+    "rank_from_right": 9,
+    "worst": 12,
+    "best": 9,
+    "global_rank": 188,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter": {
+    "rank_from_left": 21,
+    "rank_from_right": 40,
+    "worst": 40,
+    "best": 21,
+    "global_rank": 631,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined": {
+    "rank_from_left": 18,
+    "rank_from_right": 20,
+    "worst": 20,
+    "best": 18,
+    "global_rank": 485,
+    "global_of": 840,
+    "n_cand_left": 40
+   }
+  },
+  {
+   "pair": "f76r|f83v",
+   "O_offset": {
+    "rank_from_left": 10,
+    "rank_from_right": 28,
+    "worst": 28,
+    "best": 10,
+    "global_rank": 420,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain": {
+    "rank_from_left": 33,
+    "rank_from_right": 31,
+    "worst": 33,
+    "best": 31,
+    "global_rank": 625,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter": {
+    "rank_from_left": 40,
+    "rank_from_right": 25,
+    "worst": 40,
+    "best": 25,
+    "global_rank": 631,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined": {
+    "rank_from_left": 28,
+    "rank_from_right": 35,
+    "worst": 35,
+    "best": 28,
+    "global_rank": 623,
+    "global_of": 840,
+    "n_cand_left": 40
+   }
+  },
+  {
+   "pair": "f78r|f81v",
+   "O_offset": {
+    "rank_from_left": 25,
+    "rank_from_right": 16,
+    "worst": 25,
+    "best": 16,
+    "global_rank": 556,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "T_stain": {
+    "rank_from_left": 1,
+    "rank_from_right": 1,
+    "worst": 1,
+    "best": 1,
+    "global_rank": 1,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "U_gutter": {
+    "rank_from_left": 40,
+    "rank_from_right": 23,
+    "worst": 40,
+    "best": 23,
+    "global_rank": 631,
+    "global_of": 840,
+    "n_cand_left": 40
+   },
+   "combined": {
+    "rank_from_left": 2,
+    "rank_from_right": 2,
+    "worst": 2,
+    "best": 2,
+    "global_rank": 20,
+    "global_of": 840,
+    "n_cand_left": 40
+   }
+  }
+ ],
+ "same_leaf": {
+  "n": 21,
+  "O_hflip_mean": 0.17408673465251923,
+  "O_hflip_random_mean": 0.05604875832796097
+ }
+}

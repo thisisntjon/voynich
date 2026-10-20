@@ -1,0 +1,1434 @@
+{
+ "script_sha256": "34f982ec9fca65edaa7299461be57ef9fbbdd6b298d686038384d204a9d49705",
+ "stub_match": true,
+ "results": {
+  "planted/ed1": {
+   "ranks": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    3.0,
+    1.0,
+    1.0,
+    3.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "N": 128,
+   "mrr": 0.8974358974358974,
+   "null_mean": 0.04249571823053091,
+   "q99": 0.14141043630779912,
+   "q995": 0.16259807028622927,
+   "P": 9.999000099990002e-05,
+   "median_pct": 0.0,
+   "top5": 13,
+   "top1": 11,
+   "n_tokens": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ]
+  },
+  "planted/exact": {
+   "ranks": [
+    1.0,
+    1.0,
+    14.0,
+    2.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "N": 128,
+   "mrr": 0.8901098901098901,
+   "null_mean": 0.0420854944070086,
+   "q99": 0.14221861208804876,
+   "q995": 0.16555812641294557,
+   "P": 9.999000099990002e-05,
+   "median_pct": 0.0,
+   "top5": 12,
+   "top1": 11,
+   "n_tokens": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ]
+  },
+  "planted/core": {
+   "ranks": [
+    1.0,
+    12.0,
+    90.0,
+    21.5,
+    2.0,
+    1.0,
+    1.0,
+    8.0,
+    5.5,
+    1.0,
+    1.0,
+    29.0,
+    11.0
+   ],
+   "N": 128,
+   "mrr": 0.467166623361491,
+   "null_mean": 0.042924875188818976,
+   "q99": 0.14559811061148983,
+   "q995": 0.16920083849514145,
+   "P": 9.999000099990002e-05,
+   "median_pct": 0.03543307086614173,
+   "top5": 6,
+   "top1": 5,
+   "n_tokens": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ]
+  },
+  "a/ed1": {
+   "ranks": [
+    55.0,
+    76.0,
+    52.0,
+    43.5,
+    106.0,
+    21.0,
+    52.0,
+    75.0,
+    58.5,
+    123.5,
+    6.0,
+    7.5,
+    56.0
+   ],
+   "N": 128,
+   "mrr": 0.03894034048360922,
+   "null_mean": 0.04256896175823471,
+   "q99": 0.13834682258523062,
+   "q995": 0.15546858189629936,
+   "P": 0.37696230376962303,
+   "median_pct": 0.4251968503937008,
+   "top5": 0,
+   "top1": 0,
+   "n_tokens": [
+    4,
+    14,
+    7,
+    10,
+    7,
+    7,
+    4,
+    7,
+    16,
+    25,
+    19,
+    19,
+    36
+   ]
+  },
+  "a/exact": {
+   "ranks": [
+    90.0,
+    83.0,
+    14.0,
+    38.5,
+    118.5,
+    14.0,
+    7.5,
+    82.0,
+    29.0,
+    64.0,
+    70.0,
+    15.5,
+    93.5
+   ],
+   "N": 128,
+   "mrr": 0.03735096428213503,
+   "null_mean": 0.04148612642479031,
+   "q99": 0.1327114497056623,
+   "q995": 0.14876987610773118,
+   "P": 0.39616038396160386,
+   "median_pct": 0.49606299212598426,
+   "top5": 0,
+   "top1": 0,
+   "n_tokens": [
+    4,
+    14,
+    7,
+    10,
+    7,
+    7,
+    4,
+    7,
+    16,
+    25,
+    19,
+    19,
+    36
+   ]
+  },
+  "a/core": {
+   "ranks": [
+    65.5,
+    47.5,
+    90.0,
+    71.5,
+    109.5,
+    26.5,
+    90.0,
+    116.0,
+    23.0,
+    3.0,
+    6.0,
+    104.5,
+    74.0
+   ],
+   "N": 128,
+   "mrr": 0.05342908881048557,
+   "null_mean": 0.04211605848799933,
+   "q99": 0.13780076044414752,
+   "q995": 0.15487379119432843,
+   "P": 0.2263773622637736,
+   "median_pct": 0.5551181102362205,
+   "top5": 1,
+   "top1": 0,
+   "n_tokens": [
+    4,
+    14,
+    7,
+    10,
+    7,
+    7,
+    4,
+    7,
+    16,
+    25,
+    19,
+    19,
+    36
+   ]
+  },
+  "b/ed1": {
+   "ranks": [
+    54.0,
+    85.5,
+    51.0,
+    7.5,
+    106.0,
+    21.0,
+    51.0,
+    75.0,
+    72.5,
+    127.0,
+    37.0,
+    67.0,
+    39.0
+   ],
+   "N": 128,
+   "mrr": 0.027877717905717726,
+   "null_mean": 0.04216990310036356,
+   "q99": 0.1343915265631164,
+   "q995": 0.145291905998676,
+   "P": 0.6104389561043896,
+   "median_pct": 0.41732283464566927,
+   "top5": 0,
+   "top1": 0,
+   "n_tokens": [
+    1,
+    1,
+    3,
+    1,
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "b/exact": {
+   "ranks": [
+    90.0,
+    74.5,
+    14.0,
+    33.0,
+    118.5,
+    14.0,
+    7.5,
+    82.0,
+    59.0,
+    101.5,
+    35.0,
+    35.0,
+    10.0
+   ],
+   "N": 128,
+   "mrr": 0.04120043102670637,
+   "null_mean": 0.040231647556253594,
+   "q99": 0.1121560891003827,
+   "q995": 0.12215842075764546,
+   "P": 0.33436656334366566,
+   "median_pct": 0.2677165354330709,
+   "top5": 0,
+   "top1": 0,
+   "n_tokens": [
+    1,
+    1,
+    3,
+    1,
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "b/core": {
+   "ranks": [
+    65.5,
+    82.0,
+    90.0,
+    24.5,
+    109.5,
+    26.5,
+    90.0,
+    116.0,
+    16.0,
+    121.0,
+    1.0,
+    123.5,
+    18.0
+   ],
+   "N": 128,
+   "mrr": 0.09849284534131149,
+   "null_mean": 0.04211497737018935,
+   "q99": 0.13561234801530267,
+   "q995": 0.15060641434048624,
+   "P": 0.060693930606939304,
+   "median_pct": 0.6377952755905512,
+   "top5": 1,
+   "top1": 1,
+   "n_tokens": [
+    1,
+    1,
+    3,
+    1,
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "b_row/ed1": {
+   "ranks": [
+    54.0,
+    73.5,
+    51.0,
+    8.5,
+    106.0,
+    21.0,
+    51.0,
+    75.0,
+    80.0,
+    127.0,
+    66.5,
+    45.5,
+    39.0
+   ],
+   "N": 128,
+   "mrr": 0.026338746643230916,
+   "null_mean": 0.04264057318222458,
+   "q99": 0.13747640252880478,
+   "q995": 0.15420467971890475,
+   "P": 0.6572342765723428,
+   "median_pct": 0.41732283464566927,
+   "top5": 0,
+   "top1": 0,
+   "n_tokens": [
+    1,
+    4,
+    3,
+    4,
+    3,
+    1,
+    1,
+    1,
+    5,
+    4,
+    13,
+    13,
+    2
+   ]
+  },
+  "b_row/exact": {
+   "ranks": [
+    90.0,
+    75.5,
+    14.0,
+    33.0,
+    118.5,
+    14.0,
+    7.5,
+    82.0,
+    60.0,
+    102.5,
+    63.0,
+    63.0,
+    10.0
+   ],
+   "N": 128,
+   "mrr": 0.03920402978519191,
+   "null_mean": 0.04107589061718186,
+   "q99": 0.1277027097320803,
+   "q995": 0.14491802295284759,
+   "P": 0.3641635836416358,
+   "median_pct": 0.4881889763779528,
+   "top5": 0,
+   "top1": 0,
+   "n_tokens": [
+    1,
+    4,
+    3,
+    4,
+    3,
+    1,
+    1,
+    1,
+    5,
+    4,
+    13,
+    13,
+    2
+   ]
+  },
+  "b_row/core": {
+   "ranks": [
+    65.5,
+    81.5,
+    90.0,
+    24.5,
+    109.5,
+    26.5,
+    90.0,
+    116.0,
+    8.5,
+    104.5,
+    2.0,
+    120.5,
+    18.0
+   ],
+   "N": 128,
+   "mrr": 0.06439502841038448,
+   "null_mean": 0.04207643182526076,
+   "q99": 0.1364578934298802,
+   "q995": 0.15162514566146976,
+   "P": 0.1578842115788421,
+   "median_pct": 0.6338582677165354,
+   "top5": 1,
+   "top1": 0,
+   "n_tokens": [
+    1,
+    4,
+    3,
+    4,
+    3,
+    1,
+    1,
+    1,
+    5,
+    4,
+    13,
+    13,
+    2
+   ]
+  }
+ },
+ "table": [
+  {
+   "pharma": [
+    "f102r1"
+   ],
+   "herbal": "f1v",
+   "src": "ZL f102r1[3,2] (Petersen, Stolfi)",
+   "cell": "f102r1[3,2]",
+   "cell_flag": "row fallback",
+   "labels": {
+    "a": [
+     "daarod",
+     "otodeeodor",
+     "okolaly",
+     "ddardsh"
+    ],
+    "b": [
+     "ddardsh"
+    ],
+    "b_row": [
+     "ddardsh"
+    ]
+   },
+   "planted": [
+    "okolshol",
+    "dchsr",
+    "ol"
+   ],
+   "ed1_hits_true": {
+    "a": [],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 1.0,
+    "planted/exact": 1.0,
+    "planted/core": 1.0,
+    "a/ed1": 55.0,
+    "a/exact": 90.0,
+    "a/core": 65.5,
+    "b/ed1": 54.0,
+    "b/exact": 90.0,
+    "b/core": 65.5,
+    "b_row/ed1": 54.0,
+    "b_row/exact": 90.0,
+    "b_row/core": 65.5
+   }
+  },
+  {
+   "pharma": [
+    "f100v"
+   ],
+   "herbal": "f3v",
+   "src": "ZL f100v[1,1] root (Petersen)",
+   "cell": "f100v[1,1]",
+   "cell_flag": "cell",
+   "labels": {
+    "a": [
+     "tolchd",
+     "chols",
+     "opchor",
+     "solsy",
+     "soleesos",
+     "ykchochdy",
+     "ykchdy",
+     "dchdy",
+     "dalsy",
+     "okcheor",
+     "ytchol",
+     "dykchal",
+     "chos",
+     "ctharal"
+    ],
+    "b": [
+     "tolchd"
+    ],
+    "b_row": [
+     "tolchd",
+     "chols",
+     "opchor",
+     "solsy"
+    ]
+   },
+   "planted": [
+    "kcham",
+    "ycham",
+    "sheam"
+   ],
+   "ed1_hits_true": {
+    "a": [
+     "chols",
+     "chos",
+     "ykchdy"
+    ],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 1.0,
+    "planted/exact": 1.0,
+    "planted/core": 12.0,
+    "a/ed1": 76.0,
+    "a/exact": 83.0,
+    "a/core": 47.5,
+    "b/ed1": 85.5,
+    "b/exact": 74.5,
+    "b/core": 82.0,
+    "b_row/ed1": 73.5,
+    "b_row/exact": 75.5,
+    "b_row/core": 81.5
+   }
+  },
+  {
+   "pharma": [
+    "f102r2"
+   ],
+   "herbal": "f18v",
+   "src": "ZL f102r2[3,1] ? (FSG, Stolfi)",
+   "cell": "f102r2[3,1]",
+   "cell_flag": "cell",
+   "labels": {
+    "a": [
+     "kodaiig",
+     "ok?rolda",
+     "loeekadag",
+     "oshea??l",
+     "so???dch",
+     "koldarod",
+     "odalydary"
+    ],
+    "b": [
+     "loeekadag",
+     "oshea??l",
+     "so???dch"
+    ],
+    "b_row": [
+     "loeekadag",
+     "oshea??l",
+     "so???dch"
+    ]
+   },
+   "planted": [
+    "shI?",
+    "orthy",
+    "qokcl"
+   ],
+   "ed1_hits_true": {
+    "a": [],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 1.0,
+    "planted/exact": 14.0,
+    "planted/core": 90.0,
+    "a/ed1": 52.0,
+    "a/exact": 14.0,
+    "a/core": 90.0,
+    "b/ed1": 51.0,
+    "b/exact": 14.0,
+    "b/core": 90.0,
+    "b_row/ed1": 51.0,
+    "b_row/exact": 14.0,
+    "b_row/core": 90.0
+   }
+  },
+  {
+   "pharma": [
+    "f102v1"
+   ],
+   "herbal": "f19r",
+   "src": "ZL f102v1[2,2] ? (Stolfi)",
+   "cell": "f102v1[2,2]",
+   "cell_flag": "cell",
+   "labels": {
+    "a": [
+     "keoraiiin",
+     "okeody",
+     "okeody",
+     "daiisaly",
+     "ypary",
+     "opchytcy",
+     "d?indy",
+     "ypcholdy",
+     "loralody",
+     "opchdard"
+    ],
+    "b": [
+     "ypcholdy"
+    ],
+    "b_row": [
+     "d?indy",
+     "ypcholdy",
+     "loralody",
+     "opchdard"
+    ]
+   },
+   "planted": [
+    "qotshy",
+    "maiin",
+    "dsjy"
+   ],
+   "ed1_hits_true": {
+    "a": [],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 1.0,
+    "planted/exact": 2.0,
+    "planted/core": 21.5,
+    "a/ed1": 43.5,
+    "a/exact": 38.5,
+    "a/core": 71.5,
+    "b/ed1": 7.5,
+    "b/exact": 33.0,
+    "b/core": 24.5,
+    "b_row/ed1": 8.5,
+    "b_row/exact": 33.0,
+    "b_row/core": 24.5
+   }
+  },
+  {
+   "pharma": [
+    "f102r2"
+   ],
+   "herbal": "f23r",
+   "src": "ZL f102r2[3,1] (FSG, GL)",
+   "cell": "f102r2[3,1]",
+   "cell_flag": "cell",
+   "labels": {
+    "a": [
+     "kodaiig",
+     "ok?rolda",
+     "loeekadag",
+     "oshea??l",
+     "so???dch",
+     "koldarod",
+     "odalydary"
+    ],
+    "b": [
+     "loeekadag",
+     "oshea??l",
+     "so???dch"
+    ],
+    "b_row": [
+     "loeekadag",
+     "oshea??l",
+     "so???dch"
+    ]
+   },
+   "planted": [
+    "lolchor",
+    "qokeees",
+    "yohor"
+   ],
+   "ed1_hits_true": {
+    "a": [],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 1.0,
+    "planted/exact": 1.0,
+    "planted/core": 2.0,
+    "a/ed1": 106.0,
+    "a/exact": 118.5,
+    "a/core": 109.5,
+    "b/ed1": 106.0,
+    "b/exact": 118.5,
+    "b/core": 109.5,
+    "b_row/ed1": 106.0,
+    "b_row/exact": 118.5,
+    "b_row/core": 109.5
+   }
+  },
+  {
+   "pharma": [
+    "f102r2"
+   ],
+   "herbal": "f32v",
+   "src": "ZL f102r2[1,2] ? (FSG, Stolfi)",
+   "cell": "f102r2[1,2]",
+   "cell_flag": "row fallback",
+   "labels": {
+    "a": [
+     "kodaiig",
+     "ok?rolda",
+     "loeekadag",
+     "oshea??l",
+     "so???dch",
+     "koldarod",
+     "odalydary"
+    ],
+    "b": [
+     "kodaiig"
+    ],
+    "b_row": [
+     "kodaiig"
+    ]
+   },
+   "planted": [
+    "dailn",
+    "chocthy",
+    "dchcthy"
+   ],
+   "ed1_hits_true": {
+    "a": [],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 3.0,
+    "planted/exact": 1.0,
+    "planted/core": 1.0,
+    "a/ed1": 21.0,
+    "a/exact": 14.0,
+    "a/core": 26.5,
+    "b/ed1": 21.0,
+    "b/exact": 14.0,
+    "b/core": 26.5,
+    "b_row/ed1": 21.0,
+    "b_row/exact": 14.0,
+    "b_row/core": 26.5
+   }
+  },
+  {
+   "pharma": [
+    "f102r1"
+   ],
+   "herbal": "f37v",
+   "src": "ZL f102r1[3,1] ? (Stolfi)",
+   "cell": "f102r1[3,1]",
+   "cell_flag": "cell",
+   "labels": {
+    "a": [
+     "daarod",
+     "otodeeodor",
+     "okolaly",
+     "ddardsh"
+    ],
+    "b": [
+     "ddardsh"
+    ],
+    "b_row": [
+     "ddardsh"
+    ]
+   },
+   "planted": [
+    "daiiin",
+    "sotoiiin",
+    "chopdaIn"
+   ],
+   "ed1_hits_true": {
+    "a": [],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 1.0,
+    "planted/exact": 1.0,
+    "planted/core": 1.0,
+    "a/ed1": 52.0,
+    "a/exact": 7.5,
+    "a/core": 90.0,
+    "b/ed1": 51.0,
+    "b/exact": 7.5,
+    "b/core": 90.0,
+    "b_row/ed1": 51.0,
+    "b_row/exact": 7.5,
+    "b_row/core": 90.0
+   }
+  },
+  {
+   "pharma": [
+    "f102r2"
+   ],
+   "herbal": "f47v",
+   "src": "ZL f102r2[1,1] (Petersen)",
+   "cell": "f102r2[1,1]",
+   "cell_flag": "cell",
+   "labels": {
+    "a": [
+     "kodaiig",
+     "ok?rolda",
+     "loeekadag",
+     "oshea??l",
+     "so???dch",
+     "koldarod",
+     "odalydary"
+    ],
+    "b": [
+     "kodaiig"
+    ],
+    "b_row": [
+     "kodaiig"
+    ]
+   },
+   "planted": [
+    "sary",
+    "sal",
+    "odg"
+   ],
+   "ed1_hits_true": {
+    "a": [],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 1.0,
+    "planted/exact": 1.0,
+    "planted/core": 8.0,
+    "a/ed1": 75.0,
+    "a/exact": 82.0,
+    "a/core": 116.0,
+    "b/ed1": 75.0,
+    "b/exact": 82.0,
+    "b/core": 116.0,
+    "b_row/ed1": 75.0,
+    "b_row/exact": 82.0,
+    "b_row/core": 116.0
+   }
+  },
+  {
+   "pharma": [
+    "f89v2"
+   ],
+   "herbal": "f48r",
+   "src": "ZL f89v2[3,4] ? (Stolfi)",
+   "cell": "f89v2[3,4]",
+   "cell_flag": "cell",
+   "labels": {
+    "a": [
+     "choeesy",
+     "okam",
+     "darcheor",
+     "chokaro",
+     "sheol",
+     "chokam",
+     "otory",
+     "otair",
+     "chody",
+     "dykaran",
+     "opcheedey",
+     "opaloiiry",
+     "otaram",
+     "chtchy",
+     "sada?",
+     "daseky"
+    ],
+    "b": [
+     "sada?"
+    ],
+    "b_row": [
+     "opaloiiry",
+     "otaram",
+     "chtchy",
+     "sada?",
+     "daseky"
+    ]
+   },
+   "planted": [
+    "okedy",
+    "otal",
+    "qotol"
+   ],
+   "ed1_hits_true": {
+    "a": [
+     "chody",
+     "okam",
+     "sheol"
+    ],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 3.0,
+    "planted/exact": 1.0,
+    "planted/core": 5.5,
+    "a/ed1": 58.5,
+    "a/exact": 29.0,
+    "a/core": 23.0,
+    "b/ed1": 72.5,
+    "b/exact": 59.0,
+    "b/core": 16.0,
+    "b_row/ed1": 80.0,
+    "b_row/exact": 60.0,
+    "b_row/core": 8.5
+   }
+  },
+  {
+   "pharma": [
+    "f89v1",
+    "f89v2"
+   ],
+   "herbal": "f48v",
+   "src": "ZL f89v[1,4] ? (Stolfi)",
+   "cell": "f89v1[1,4]",
+   "cell_flag": "cell",
+   "labels": {
+    "a": [
+     "okoraldy",
+     "otoikhy",
+     "otchar",
+     "darshody",
+     "koeeorain",
+     "otorshos",
+     "opol",
+     "olaiin",
+     "opaldaiin",
+     "choeesy",
+     "okam",
+     "darcheor",
+     "chokaro",
+     "sheol",
+     "chokam",
+     "otory",
+     "otair",
+     "chody",
+     "dykaran",
+     "opcheedey",
+     "opaloiiry",
+     "otaram",
+     "chtchy",
+     "sada?",
+     "daseky"
+    ],
+    "b": [
+     "darshody"
+    ],
+    "b_row": [
+     "okoraldy",
+     "otoikhy",
+     "otchar",
+     "darshody"
+    ]
+   },
+   "planted": [
+    "ol",
+    "chedy",
+    "cheedls"
+   ],
+   "ed1_hits_true": {
+    "a": [
+     "chody",
+     "okam",
+     "otair",
+     "otory"
+    ],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 1.0,
+    "planted/exact": 1.0,
+    "planted/core": 1.0,
+    "a/ed1": 123.5,
+    "a/exact": 64.0,
+    "a/core": 3.0,
+    "b/ed1": 127.0,
+    "b/exact": 101.5,
+    "b/core": 121.0,
+    "b_row/ed1": 127.0,
+    "b_row/exact": 102.5,
+    "b_row/core": 104.5
+   }
+  },
+  {
+   "pharma": [
+    "f100r"
+   ],
+   "herbal": "f90v2",
+   "src": "ZL f100r[1,3] ? (Stolfi)",
+   "cell": "f100r[1,3]",
+   "cell_flag": "cell",
+   "labels": {
+    "a": [
+     "chosaroshol",
+     "sochorcfhy",
+     "otear",
+     "chofary",
+     "sar",
+     "char",
+     "daiindy",
+     "oraro",
+     "chalsain",
+     "soity",
+     "sosam",
+     "dakocth",
+     "sofam",
+     "okeeos",
+     "shockhey",
+     "orol",
+     "olcheom",
+     "oteol",
+     "okols"
+    ],
+    "b": [
+     "otear"
+    ],
+    "b_row": [
+     "chosaroshol",
+     "sochorcfhy",
+     "otear",
+     "chofary",
+     "sar",
+     "char",
+     "daiindy",
+     "oraro",
+     "chalsain",
+     "soity",
+     "sosam",
+     "dakocth",
+     "sofam"
+    ]
+   },
+   "planted": [
+    "cpheal",
+    "chnol",
+    "qokeol"
+   ],
+   "ed1_hits_true": {
+    "a": [
+     "okeeos",
+     "okols",
+     "oteol",
+     "sar"
+    ],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 1.0,
+    "planted/exact": 1.0,
+    "planted/core": 1.0,
+    "a/ed1": 6.0,
+    "a/exact": 70.0,
+    "a/core": 6.0,
+    "b/ed1": 37.0,
+    "b/exact": 35.0,
+    "b/core": 1.0,
+    "b_row/ed1": 66.5,
+    "b_row/exact": 63.0,
+    "b_row/core": 2.0
+   }
+  },
+  {
+   "pharma": [
+    "f100r"
+   ],
+   "herbal": "f90v1",
+   "src": "ZL f100r[1,3] ? (Stolfi)",
+   "cell": "f100r[1,3]",
+   "cell_flag": "cell",
+   "labels": {
+    "a": [
+     "chosaroshol",
+     "sochorcfhy",
+     "otear",
+     "chofary",
+     "sar",
+     "char",
+     "daiindy",
+     "oraro",
+     "chalsain",
+     "soity",
+     "sosam",
+     "dakocth",
+     "sofam",
+     "okeeos",
+     "shockhey",
+     "orol",
+     "olcheom",
+     "oteol",
+     "okols"
+    ],
+    "b": [
+     "otear"
+    ],
+    "b_row": [
+     "chosaroshol",
+     "sochorcfhy",
+     "otear",
+     "chofary",
+     "sar",
+     "char",
+     "daiindy",
+     "oraro",
+     "chalsain",
+     "soity",
+     "sosam",
+     "dakocth",
+     "sofam"
+    ]
+   },
+   "planted": [
+    "qockhy",
+    "ot",
+    "keeeol"
+   ],
+   "ed1_hits_true": {
+    "a": [
+     "char",
+     "okeeos",
+     "orol",
+     "oteol",
+     "sar"
+    ],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 1.0,
+    "planted/exact": 1.0,
+    "planted/core": 29.0,
+    "a/ed1": 7.5,
+    "a/exact": 15.5,
+    "a/core": 104.5,
+    "b/ed1": 67.0,
+    "b/exact": 35.0,
+    "b/core": 123.5,
+    "b_row/ed1": 45.5,
+    "b_row/exact": 63.0,
+    "b_row/core": 120.5
+   }
+  },
+  {
+   "pharma": [
+    "f99r"
+   ],
+   "herbal": "f96v",
+   "src": "ZL f99r[4,1] ? (GL)",
+   "cell": "f99r[4,1]",
+   "cell_flag": "cell",
+   "labels": {
+    "a": [
+     "okaradag",
+     "okar",
+     "y",
+     "darar",
+     "oky",
+     "salo",
+     "aro",
+     "ain",
+     "okor",
+     "ralol",
+     "skeeal",
+     "okary",
+     "okolo",
+     "otalam",
+     "otoldy",
+     "oparal",
+     "oaro",
+     "aloly",
+     "aora?",
+     "choky",
+     "oky",
+     "okeoly",
+     "yteold",
+     "cheotchy",
+     "tsholdy",
+     "okos",
+     "oekey",
+     "dar",
+     "chockhia",
+     "r",
+     "cheyet",
+     "saiiny",
+     "sory",
+     "dam",
+     "yteoldy",
+     "tolsasy"
+    ],
+    "b": [
+     "yteoldy"
+    ],
+    "b_row": [
+     "yteoldy",
+     "tolsasy"
+    ]
+   },
+   "planted": [
+    "sheey",
+    "dteeody",
+    "odar"
+   ],
+   "ed1_hits_true": {
+    "a": [
+     "ain",
+     "aro",
+     "dar",
+     "oaro",
+     "okar",
+     "r",
+     "salo",
+     "sory",
+     "y"
+    ],
+    "b": []
+   },
+   "ranks": {
+    "planted/ed1": 1.0,
+    "planted/exact": 1.0,
+    "planted/core": 11.0,
+    "a/ed1": 56.0,
+    "a/exact": 93.5,
+    "a/core": 74.0,
+    "b/ed1": 39.0,
+    "b/exact": 10.0,
+    "b/core": 18.0,
+    "b_row/ed1": 39.0,
+    "b_row/exact": 10.0,
+    "b_row/core": 18.0
+   }
+  }
+ ],
+ "pool": [
+  "f1v",
+  "f2r",
+  "f2v",
+  "f3r",
+  "f3v",
+  "f4r",
+  "f4v",
+  "f5r",
+  "f5v",
+  "f6r",
+  "f6v",
+  "f7r",
+  "f7v",
+  "f8r",
+  "f8v",
+  "f9r",
+  "f9v",
+  "f10r",
+  "f10v",
+  "f11r",
+  "f11v",
+  "f13r",
+  "f13v",
+  "f14r",
+  "f14v",
+  "f15r",
+  "f15v",
+  "f16r",
+  "f16v",
+  "f17r",
+  "f17v",
+  "f18r",
+  "f18v",
+  "f19r",
+  "f19v",
+  "f20r",
+  "f20v",
+  "f21r",
+  "f21v",
+  "f22r",
+  "f22v",
+  "f23r",
+  "f23v",
+  "f24r",
+  "f24v",
+  "f25r",
+  "f25v",
+  "f26r",
+  "f26v",
+  "f27r",
+  "f27v",
+  "f28r",
+  "f28v",
+  "f29r",
+  "f29v",
+  "f30r",
+  "f30v",
+  "f31r",
+  "f31v",
+  "f32r",
+  "f32v",
+  "f33r",
+  "f33v",
+  "f34r",
+  "f34v",
+  "f35r",
+  "f35v",
+  "f36r",
+  "f36v",
+  "f37r",
+  "f37v",
+  "f38r",
+  "f38v",
+  "f39r",
+  "f39v",
+  "f40r",
+  "f40v",
+  "f41r",
+  "f41v",
+  "f42r",
+  "f42v",
+  "f43r",
+  "f43v",
+  "f44r",
+  "f44v",
+  "f45r",
+  "f45v",
+  "f46r",
+  "f46v",
+  "f47r",
+  "f47v",
+  "f48r",
+  "f48v",
+  "f49r",
+  "f49v",
+  "f50r",
+  "f50v",
+  "f51r",
+  "f51v",
+  "f52r",
+  "f52v",
+  "f53r",
+  "f53v",
+  "f54r",
+  "f54v",
+  "f55r",
+  "f55v",
+  "f56r",
+  "f56v",
+  "f57r",
+  "f65v",
+  "f66v",
+  "f87r",
+  "f87v",
+  "f90r1",
+  "f90r2",
+  "f90v2",
+  "f90v1",
+  "f93r",
+  "f93v",
+  "f94r",
+  "f94v",
+  "f95r1",
+  "f95r2",
+  "f95v2",
+  "f95v1",
+  "f96r",
+  "f96v"
+ ],
+ "control_pass": true,
+ "verdict": "no label-text link"
+}

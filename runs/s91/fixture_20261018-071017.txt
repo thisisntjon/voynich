@@ -1,0 +1,48 @@
+S91 FIXTURE (synthetic only; no Voynich data read)
+date: Sun Oct 18 07:10:17 PDT 2026 (`date`)  device: cuda (NVIDIA GeForce RTX 5080); below_normal=True; free RAM 8.6 GB
+s91_line_pool_producer_loqo.py sha256=70e0405e1e312b26336aa12cba3fe883a6b1cde1ddc894f8bf9d9a2ab73886e1  stub_match=NO STUB
+fixture world: 1500 cores, 15 quires x 12 pages x 20 lines; FX_A 28726 tokens; planted {'conc': 300.0, 'alpha': 8.0, 'rho': 0.03, 'lam': 0.45, 'pen': 0.8}
+fixture target (FX_A): o100 +0.031 o200 +0.045 Rw1 3.419(p0.001) Rc1 0.355 loc 0.965; order bands K100 [-0.0035,+0.0656] K200 [+0.0084,+0.0823]; locality band [0.9350,0.9956]
+FX_prose: o100 +1.042 o200 +1.235 Rw1 0.686(p1.000) Rc1 0.823 loc 1.000 C1 nnnn -> not Voynich-like
+FX_B (planted, seed 2, whole text): o100 +0.016 o200 +0.003 Rw1 2.999(p0.001) Rc1 0.342 loc 0.966 C1 nYYY (descriptive)
+  FX_B:
+    Q00 pages  12 tok  1980 | fit conc 30 alpha 8 rho 0.03 lam 0.3 pen 0.9 loss 0.025 (191 ev) | H[12x] o100 +0.042 o200 +0.045 Rw1 2.899(p0.001) Rc1 0.495 loc 0.960 YYYY D 0.76 | fold VOYNICH-LIKE | C2 3/6 ++--+- types 0.41
+       fit target (real training) o100 +0.048 o200 +0.050 Rw1 3.057 Rc1 0.375 loc 0.972; fitted (in-sample, reduced counts) o100 +0.050 o200 +0.062 Rw1 3.075 Rc1 0.391 loc 0.961; held-out quire alone: real Rw1 2.56 Rc1 0.00 vs one generated replicate Rw1 2.62 Rc1 1.12; OOV 0.059
+    Q01 pages  12 tok  1968 | fit conc 30 alpha 3.4 rho 0 lam 0.2 pen 0.8 loss 0.071 (171 ev) | H[12x] o100 +0.070 o200 +0.081 Rw1 3.055(p0.001) Rc1 0.370 loc 0.947 nYYY D 0.75 | fold -
+       fit target (real training) o100 +0.050 o200 +0.046 Rw1 3.048 Rc1 0.354 loc 0.972; fitted (in-sample, reduced counts) o100 +0.046 o200 +0.057 Rw1 3.135 Rc1 0.319 loc 0.959; held-out quire alone: real Rw1 2.86 Rc1 0.31 vs one generated replicate Rw1 2.88 Rc1 0.00; OOV 0.035
+    Q02 pages  12 tok  1942 | fit conc 30 alpha 3.4 rho 0 lam 0.3 pen 0.6 loss 0.344 (92 ev) | H[12x] o100 +0.107 o200 +0.089 Rw1 3.245(p0.001) Rc1 0.626 loc 0.952 nYYY D 1.61 | fold -
+       fit target (real training) o100 +0.047 o200 +0.065 Rw1 3.017 Rc1 0.375 loc 0.973; fitted (in-sample, reduced counts) o100 +0.071 o200 +0.102 Rw1 3.474 Rc1 0.416 loc 0.958; held-out quire alone: real Rw1 3.28 Rc1 0.00 vs one generated replicate Rw1 3.00 Rc1 0.81; OOV 0.060
+    Q03 pages  12 tok  1824 | fit conc 30 alpha 3.4 rho 0 lam 0.2 pen 0.8 loss 0.082 (173 ev) | H[13x] o100 +0.016 o200 +0.031 Rw1 3.083(p0.001) Rc1 0.348 loc 0.949 YYYY D 0.42 | fold VOYNICH-LIKE
+       fit target (real training) o100 +0.053 o200 +0.071 Rw1 3.068 Rc1 0.356 loc 0.974; fitted (in-sample, reduced counts) o100 +0.048 o200 +0.062 Rw1 3.120 Rc1 0.314 loc 0.961; held-out quire alone: real Rw1 2.57 Rc1 0.34 vs one generated replicate Rw1 2.68 Rc1 0.28; OOV 0.039
+    Q04 pages  12 tok  1924 | fit conc 30 alpha 5 rho 0 lam 0.3 pen 0.8 loss 0.093 (195 ev) | H[12x] o100 +0.044 o200 +0.073 Rw1 3.005(p0.001) Rc1 0.420 loc 0.953 YYYY D 0.60 | fold VOYNICH-LIKE
+       fit target (real training) o100 +0.052 o200 +0.074 Rw1 3.039 Rc1 0.355 loc 0.972; fitted (in-sample, reduced counts) o100 +0.039 o200 +0.065 Rw1 3.019 Rc1 0.402 loc 0.962; held-out quire alone: real Rw1 2.86 Rc1 0.33 vs one generated replicate Rw1 2.55 Rc1 0.30; OOV 0.028
+    Q05 pages  12 tok  1949 | fit conc 30 alpha 3.4 rho 0 lam 0.2 pen 0.8 loss 0.109 (179 ev) | H[12x] o100 +0.037 o200 +0.049 Rw1 2.963(p0.001) Rc1 0.485 loc 0.954 YYYY D 0.72 | fold VOYNICH-LIKE
+       fit target (real training) o100 +0.053 o200 +0.066 Rw1 3.015 Rc1 0.329 loc 0.973; fitted (in-sample, reduced counts) o100 +0.050 o200 +0.050 Rw1 3.121 Rc1 0.288 loc 0.959; held-out quire alone: real Rw1 3.24 Rc1 0.73 vs one generated replicate Rw1 2.81 Rc1 0.61; OOV 0.045
+    Q06 pages  12 tok  1896 | fit conc 30 alpha 5 rho 0 lam 0.3 pen 0.8 loss 0.178 (98 ev) | H[12x] o100 +0.035 o200 +0.048 Rw1 2.989(p0.001) Rc1 0.433 loc 0.961 YYYY D 0.49 | fold VOYNICH-LIKE
+       fit target (real training) o100 +0.056 o200 +0.064 Rw1 2.982 Rc1 0.331 loc 0.973; fitted (in-sample, reduced counts) o100 +0.074 o200 +0.099 Rw1 3.099 Rc1 0.321 loc 0.963; held-out quire alone: real Rw1 3.62 Rc1 0.62 vs one generated replicate Rw1 3.31 Rc1 0.16; OOV 0.053
+    Q07 pages  12 tok  1954 | fit conc 30 alpha 5 rho 0 lam 0.3 pen 0.8 loss 0.009 (133 ev) | H[12x] o100 +0.066 o200 +0.080 Rw1 3.049(p0.001) Rc1 0.599 loc 0.952 nYYY D 1.25 | fold -
+       fit target (real training) o100 +0.056 o200 +0.065 Rw1 3.009 Rc1 0.375 loc 0.972; fitted (in-sample, reduced counts) o100 +0.054 o200 +0.069 Rw1 2.957 Rc1 0.371 loc 0.960; held-out quire alone: real Rw1 3.50 Rc1 0.00 vs one generated replicate Rw1 2.99 Rc1 0.49; OOV 0.049
+    Q08 pages  12 tok  1880 | fit conc 30 alpha 3.4 rho 0 lam 0.2 pen 0.8 loss 0.036 (151 ev) | H[12x] o100 +0.036 o200 +0.051 Rw1 3.282(p0.001) Rc1 0.323 loc 0.955 YYYY D 0.27 | fold VOYNICH-LIKE
+       fit target (real training) o100 +0.054 o200 +0.070 Rw1 3.086 Rc1 0.353 loc 0.973; fitted (in-sample, reduced counts) o100 +0.052 o200 +0.065 Rw1 3.151 Rc1 0.329 loc 0.956; held-out quire alone: real Rw1 2.34 Rc1 0.32 vs one generated replicate Rw1 3.42 Rc1 0.17; OOV 0.076
+    Q09 pages  12 tok  1885 | fit conc 30 alpha 3.4 rho 0 lam 0.2 pen 0.8 loss 0.066 (122 ev) | H[12x] o100 +0.031 o200 +0.056 Rw1 3.075(p0.001) Rc1 0.330 loc 0.955 YYYY D 0.33 | fold VOYNICH-LIKE
+       fit target (real training) o100 +0.052 o200 +0.070 Rw1 3.007 Rc1 0.328 loc 0.974; fitted (in-sample, reduced counts) o100 +0.052 o200 +0.053 Rw1 3.233 Rc1 0.345 loc 0.960; held-out quire alone: real Rw1 3.62 Rc1 0.73 vs one generated replicate Rw1 3.75 Rc1 0.32; OOV 0.069
+    Q10 pages  12 tok  1888 | fit conc 300 alpha 20 rho 0 lam 0.45 pen 0.6 loss 0.217 (158 ev) | H[12x] o100 +0.062 o200 +0.066 Rw1 3.524(p0.001) Rc1 0.411 loc 0.985 YYYY D 0.63 | fold VOYNICH-LIKE
+       fit target (real training) o100 +0.045 o200 +0.042 Rw1 3.040 Rc1 0.378 loc 0.974; fitted (in-sample, reduced counts) o100 +0.043 o200 +0.042 Rw1 3.590 Rc1 0.443 loc 0.985; held-out quire alone: real Rw1 2.94 Rc1 0.00 vs one generated replicate Rw1 3.35 Rc1 0.37; OOV 0.046
+    Q11 pages  12 tok  1903 | fit conc 30 alpha 3.4 rho 0 lam 0.2 pen 0.8 loss 0.029 (103 ev) | H[12x] o100 +0.034 o200 +0.039 Rw1 2.966(p0.001) Rc1 0.253 loc 0.951 YYYY D 0.77 | fold VOYNICH-LIKE
+       fit target (real training) o100 +0.059 o200 +0.061 Rw1 3.032 Rc1 0.330 loc 0.974; fitted (in-sample, reduced counts) o100 +0.049 o200 +0.062 Rw1 3.196 Rc1 0.322 loc 0.965; held-out quire alone: real Rw1 3.02 Rc1 0.63 vs one generated replicate Rw1 2.61 Rc1 0.26; OOV 0.033
+    Q12 pages  12 tok  1879 | fit conc 30 alpha 8 rho 0.03 lam 0.3 pen 0.9 loss 0.067 (207 ev) | H[12x] o100 +0.033 o200 +0.042 Rw1 3.078(p0.001) Rc1 0.421 loc 0.965 YYYY D 0.41 | fold VOYNICH-LIKE
+       fit target (real training) o100 +0.030 o200 +0.033 Rw1 3.010 Rc1 0.328 loc 0.974; fitted (in-sample, reduced counts) o100 +0.042 o200 +0.049 Rw1 3.107 Rc1 0.352 loc 0.967; held-out quire alone: real Rw1 3.56 Rc1 0.76 vs one generated replicate Rw1 3.51 Rc1 0.41; OOV 0.046
+    Q13 pages  12 tok  1895 | fit conc 100 alpha 12 rho 0 lam 0.2 pen 0.8 loss 0.056 (136 ev) | H[12x] o100 +0.006 o200 +0.026 Rw1 2.683(p0.001) Rc1 0.324 loc 0.973 YYYY D 0.66 | fold VOYNICH-LIKE
+       fit target (real training) o100 +0.026 o200 +0.019 Rw1 3.052 Rc1 0.356 loc 0.974; fitted (in-sample, reduced counts) o100 +0.020 o200 +0.022 Rw1 2.728 Rc1 0.358 loc 0.977; held-out quire alone: real Rw1 2.67 Rc1 0.28 vs one generated replicate Rw1 2.25 Rc1 0.00; OOV 0.019
+    Q14 pages  12 tok  1959 | fit conc 30 alpha 5 rho 0 lam 0.2 pen 0.8 loss 0.263 (167 ev) | H[12x] o100 +0.028 o200 +0.023 Rw1 2.659(p0.001) Rc1 0.398 loc 0.955 YYYY D 0.64 | fold VOYNICH-LIKE
+       fit target (real training) o100 +0.033 o200 +0.021 Rw1 3.014 Rc1 0.357 loc 0.972; fitted (in-sample, reduced counts) o100 +0.019 o200 +0.015 Rw1 2.495 Rc1 0.409 loc 0.954; held-out quire alone: real Rw1 3.12 Rc1 0.30 vs one generated replicate Rw1 2.67 Rc1 0.15; OOV 0.030
+FX1 planted LP91 recovered as Voynich-like-to-itself on 12/15 folds (need >= 12): PASS; component failures {'a_order': 3}
+   fitted parameters vs planted {'conc': 300.0, 'alpha': 8.0, 'rho': 0.03, 'lam': 0.45, 'pen': 0.8}:
+     conc  min 30 max 300 median 30 | mode 30 on 13/15 folds | at grid edge 0/15
+     alpha min 3.4 max 20 median 5 | mode 3.4 on 7/15 folds | at grid edge 0/15
+     rho   min 0 max 0.03 median 0 | mode 0 on 13/15 folds | at grid edge 13/15
+     lam   min 0.2 max 0.45 median 0.2 | mode 0.2 on 8/15 folds | at grid edge 0/15
+     pen   min 0.6 max 0.9 median 0.8 | mode 0.8 on 11/15 folds | at grid edge 0/15
+FX2 prose not Voynich-like: PASS
+FX3 (crash test, not gating) C2 battery ran on fold Q00: 3/6 ++--+-
+FIXTURE PASS   runtime 1630s; finished Sun Oct 18 07:37:27 PDT 2026 (`date`)

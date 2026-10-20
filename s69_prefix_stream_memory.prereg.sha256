@@ -1,0 +1,8 @@
+e83c4671dbdd31a5a6a4db315ace37b7d9e97acfd2089d150e422bab2033b56c *s69_prefix_stream_memory.py
+2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518 *corpora.py
+4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f *scoreboard/__init__.py
+a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed *scoreboard/metrics_new.py
+0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1 *vparse.py
+# FAILED run 1 (Sun Oct 18 02:12:20 PDT 2026): gap/paragraph tests n/a from TypeError in voynich_pages count line; outputs kept as runs/s69/run1_FAILED_*
+# AMENDMENT 1 OK (Sun Oct 18 02:13:08 PDT 2026): one-line fix of that count (plus an AMENDMENT notice line); later line for the script supersedes the frozen hash above
+785e5cf3096f8a7dc18ef7d9e17a4b2533e308f074613b9ac4f65de465a1d0a5 *s69_prefix_stream_memory.py

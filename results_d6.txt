@@ -1,0 +1,93 @@
+========================================================================
+A) f57v GLYPH-LEVEL RING RETEST (GLYPHS_PLUS, word boundaries dropped)
+========================================================================
+  f57v line 1 unit=L0 words=1
+  f57v line 2 unit=Cc words=54
+  f57v line 3 unit=Cc words=68
+  f57v line 4 unit=Cc words=31
+  f57v line 5 unit=Cc words=35
+  f57v line 6 unit=L0 words=1
+  f57v line 7 unit=L0 words=1
+  f57v line 8 unit=L0 words=1
+  f57v line 9 unit=L0 words=1
+  f57v line 10 unit=Ro words=1
+  f57v line 11 unit=Ro words=1
+  f57v line 12 unit=Ro words=1
+  f57v line 13 unit=Ro words=2
+[f57v Cc (all circular lines joined)] words=188 glyphs=367 alphabet=25 n_?=19 coincidence_baseline=0.068
+  top periods (p:rate): 18:0.203, 36:0.157, 12:0.101, 40:0.092, 25:0.091 | period17=0.077
+  longest repeated block: len=27 glyphs x2 at glyph positions [175, 193]
+    block(EVA-decoded)='?vtr??yc?oldrvxkmp?vtr??yc?'
+[f57v Ro (radii joined)] words=5 glyphs=29 alphabet=11 n_?=1 coincidence_baseline=0.146
+  top periods (p:rate): 27:1.000, 14:0.267, 20:0.222, 9:0.200, 24:0.200 | period17=0.000
+  longest repeated block: len=3 glyphs x2 at glyph positions [7, 11]
+    block(EVA-decoded)='ara'
+[f57v Cc+Ro joined] words=193 glyphs=396 alphabet=26 n_?=20 coincidence_baseline=0.070
+  top periods (p:rate): 18:0.196, 36:0.156, 27:0.098, 12:0.094, 9:0.093 | period17=0.071
+  longest repeated block: len=27 glyphs x2 at glyph positions [175, 193]
+    block(EVA-decoded)='?vtr??yc?oldrvxkmp?vtr??yc?'
+-- per-line breakdown (each transcribed ring/line separately) --
+[f57v.2 Cc] words=54 glyphs=148 alphabet=21 n_?=0 coincidence_baseline=0.083
+  top periods (p:rate): 12:0.140, 10:0.130, 8:0.121, 15:0.120, 29:0.118 | period17=0.099
+  longest repeated block: len=4 glyphs x2 at glyph positions [12, 117]
+    block(EVA-decoded)='arok'
+[f57v.3 Cc] words=68 glyphs=72 alphabet=15 n_?=16 coincidence_baseline=0.102
+  top periods (p:rate): 18:0.963, 36:0.917, 40:0.125, 22:0.120, 9:0.111 | period17=0.055
+  longest repeated block: len=27 glyphs x2 at glyph positions [27, 45]
+    block(EVA-decoded)='?vtr??yc?oldrvxkmp?vtr??yc?'
+[f57v.4 Cc] words=31 glyphs=90 alphabet=18 n_?=1 coincidence_baseline=0.084
+  top periods (p:rate): 37:0.170, 31:0.153, 40:0.140, 36:0.130, 24:0.121 | period17=0.055
+  longest repeated block: len=5 glyphs x2 at glyph positions [30, 67]
+    block(EVA-decoded)='kedar'
+[f57v.5 Cc] words=35 glyphs=57 alphabet=19 n_?=2 coincidence_baseline=0.079
+  top periods (p:rate): 17:0.175, 14:0.140, 6:0.137, 34:0.130, 25:0.125 | period17=0.175
+  longest repeated block: len=3 glyphs x2 at glyph positions [19, 36]
+    block(EVA-decoded)='aro'
+[f57v.10 Ro] words=1 glyphs=7 alphabet=6 n_?=0 coincidence_baseline=0.184
+  top periods (p:rate): 5:0.000, 6:0.000 | period17=nan
+  longest repeated block: len=1 glyphs x2 at glyph positions [0, 3]
+    block(EVA-decoded)='a'
+[f57v.11 Ro] words=1 glyphs=8 alphabet=3 n_?=1 coincidence_baseline=0.406
+  top periods (p:rate): 6:1.000, 5:0.000, 7:0.000 | period17=nan
+  longest repeated block: len=3 glyphs x2 at glyph positions [0, 4]
+    block(EVA-decoded)='ara'
+[f57v.12 Ro] words=1 glyphs=5 alphabet=5 n_?=0 coincidence_baseline=0.200
+  top periods (p:rate):  | period17=nan
+  longest repeated block: len=0 glyphs x0 at glyph positions []
+    block(EVA-decoded)=''
+[f57v.13 Ro] words=2 glyphs=9 alphabet=6 n_?=0 coincidence_baseline=0.210
+  top periods (p:rate): 5:0.250, 6:0.000, 7:0.000, 8:0.000 | period17=nan
+  longest repeated block: len=1 glyphs x3 at glyph positions [0, 2, 4]
+    block(EVA-decoded)='o'
+-- exact '17 glyphs x 4 repeats' check --
+  f57v Cc (all circular lines joined): n=367 n/17=21.59 whole_is_17xk=False exact_17x4_windows_at=[] period17_rate=0.077 (baseline 0.068)
+  f57v Ro (radii joined): n=29 n/17=1.71 whole_is_17xk=False exact_17x4_windows_at=[] period17_rate=0.000 (baseline 0.146)
+  f57v Cc+Ro joined: n=396 n/17=23.29 whole_is_17xk=False exact_17x4_windows_at=[] period17_rate=0.071 (baseline 0.070)
+  f57v.2 Cc: n=148 n/17=8.71 whole_is_17xk=False exact_17x4_windows_at=[] period17_rate=0.099 (baseline 0.083)
+  f57v.3 Cc: n=72 n/17=4.24 whole_is_17xk=False exact_17x4_windows_at=[] period17_rate=0.055 (baseline 0.102)
+  f57v.4 Cc: n=90 n/17=5.29 whole_is_17xk=False exact_17x4_windows_at=[] period17_rate=0.055 (baseline 0.084)
+  f57v.5 Cc: n=57 n/17=3.35 whole_is_17xk=False exact_17x4_windows_at=[] period17_rate=0.175 (baseline 0.079)
+  f57v.10 Ro: n=7 n/17=0.41 whole_is_17xk=False exact_17x4_windows_at=[] period17_rate=nan (baseline 0.184)
+  f57v.11 Ro: n=8 n/17=0.47 whole_is_17xk=False exact_17x4_windows_at=[] period17_rate=nan (baseline 0.406)
+  f57v.12 Ro: n=5 n/17=0.29 whole_is_17xk=False exact_17x4_windows_at=[] period17_rate=nan (baseline 0.200)
+  f57v.13 Ro: n=9 n/17=0.53 whole_is_17xk=False exact_17x4_windows_at=[] period17_rate=nan (baseline 0.210)
+  f57v.3 WORD-level: 68 words = 17x4 chunks; word-for-word agreement of chunks 1-4 with chunk 1 = [17, 16, 15, 15]/17 each
+VERDICT on '17 units x4': at GLYPH level the repeat period is 18, NOT 17: f57v.3 has 68 EVA words (=17 words x4) but 72 glyphs, because one word per cycle ('?v', EVA @169;v) is 2 glyphs, so 17 words = 18 glyphs; period-18 match=0.963 and period-36 match=0.917 vs period-17 match=0.055 (baseline 0.102); no exact 17-glyph x4 window exists in Cc, Ro, joined, or any line. The '17x4' claim is a WORD-level fact about f57v.3 only (with 1-2 variant words per cycle, see chunk agreement), not a glyph-level period and not a property of the whole f57v circular text (Cc period17=0.077 vs baseline 0.068; Cc best period is 18 at 0.203, driven by f57v.3).
+CAVEAT: '?' collapses distinct @nnn; rare glyphs; in the repeated ring the same rare glyphs recur at the same offsets in EVA (@169;-@172;), so the exact-repeat result is not an artifact of that collapse.
+
+========================================================================
+B) POWERED LABEL TEST (ALL pages with labels + paragraph text)
+========================================================================
+pages with labels+paragraph text: n=40 (all pages, no cap) label tokens=778 label types=591
+sections (illus) represented: A:3p, B:11p, C:4p, H:5p, P:15p, T:2p
+label-in-own-page hit rate: 94/778 = 0.1208 (12.1%)
+within-section permuted null (200 perms, seed=12345): mean=0.1060 sd=0.0100 p99=0.1298 max=0.1350
+empirical p (null>=obs): (18+1)/(200+1) = 0.0945 [raw fraction 0.0900]
+-- per-section breakdown (sections with >=5 pages) --
+  section B: pages=11 label_tokens=126 hit=0.2460 (24.6%) null_mean=0.2304 p99=0.2779 p=(56+1)/201=0.2836
+  section H: pages=5 label_tokens=28 hit=0.1429 (14.3%) null_mean=0.1916 p99=0.3214 p=(144+1)/201=0.7214
+  section P: pages=15 label_tokens=241 hit=0.0788 (7.9%) null_mean=0.0731 p99=0.1079 p=(80+1)/201=0.4030
+  sections with <5 pages (in overall test, not broken out): A:3p, C:4p, T:2p
+VERDICT labels: own-page hit 12.1% does NOT exceed section-permuted null (mean 10.6%, p99 13.0%, p=0.0945) -> no page-specific label referentiality beyond section vocabulary.
+AUDIT: 57 pages have any L* labels; only 40 also have P* paragraph text, so n=40 above is EXHAUSTIVE for labels+paragraph. 17 label pages have no paragraph text: ['f116v', 'f57v', 'f65r', 'f67v1', 'f68r3', 'f70v1', 'f70v2', 'f71r', 'f71v', 'f72r1', 'f72r2', 'f72r3', 'f72v1', 'f72v2', 'f72v3', 'f73r', 'f73v']
+SENSITIVITY (page text = any non-label unit, beyond the 40): pages=55 label_tokens=1159 hit=0.1441 (14.4%) null_mean=0.1179 p99=0.1459 p=(3+1)/201=0.0199 (sections: A:5p, B:11p, C:5p, H:5p, P:15p, T:2p, Z:12p)

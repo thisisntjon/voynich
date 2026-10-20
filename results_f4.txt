@@ -1,0 +1,100 @@
+F4: homophone-class recovery. Procedure frozen in the script docstring before the Voynich rows were run.
+held-out numbers are bits per token on held-out pages, minus the same text line-shuffled (F1 calibration)
+
+CONTROL  F3 flow cipher beta=1.5 (truth known)
+  tokens=20917  types>=10: 191  K-rule picks f=0.5 -> K=96
+  selection (even->odd) class-over-token by f: 0.1: +0.0011  0.2: +0.0073  0.33: +0.0030  0.5: +0.0173
+  held-out even->odd: class gain +0.0257  token gain +0.0488  class-over-token +0.0173
+  held-out odd->even: class gain +0.0244  token gain +0.0424  class-over-token +0.0156  (honest)
+  stability: seed ARI (mean of 3 pairs) 0.203   page-split ARI 0.042 on 100 common types
+  truth: type ARI 0.234 / 0.187 / 0.148   type NMI 0.809 / 0.794 / 0.785   token ARI 0.570 / 0.449 / 0.440  (seeds 0/1/2)
+
+CONTROL-NULL  same tokens shuffled across book
+  tokens=20917  types>=10: 191  K-rule picks f=0.5 -> K=96
+  selection (even->odd) class-over-token by f: 0.1: +0.0032  0.2: -0.0028  0.33: +0.0043  0.5: +0.0112
+  held-out even->odd: class gain +0.0083  token gain +0.0044  class-over-token +0.0112
+  held-out odd->even: class gain +0.0058  token gain -0.0032  class-over-token +0.0060  (honest)
+  stability: seed ARI (mean of 3 pairs) 0.088   page-split ARI 0.080 on 103 common types
+  truth: type ARI 0.050 / 0.041 / 0.030   type NMI 0.734 / 0.738 / 0.732   token ARI 0.159 / 0.245 / 0.174  (seeds 0/1/2)
+
+CONTROL beta=0  plain Naibbe re-encryption
+  tokens=20917  types>=10: 206  K-rule picks f=0.5 -> K=103
+  selection (even->odd) class-over-token by f: 0.1: +0.0232  0.2: +0.0205  0.33: +0.0243  0.5: +0.0275
+  held-out even->odd: class gain +0.0382  token gain +0.0372  class-over-token +0.0275
+  held-out odd->even: class gain +0.0361  token gain +0.0350  class-over-token +0.0258  (honest)
+  stability: seed ARI (mean of 3 pairs) 0.282   page-split ARI 0.119 on 102 common types
+  truth: type ARI 0.277 / 0.247 / 0.261   type NMI 0.814 / 0.813 / 0.815   token ARI 0.636 / 0.554 / 0.602  (seeds 0/1/2)
+
+VOYNICH  b4.pages() paragraph text
+  tokens=34857  types>=10: 489  K-rule picks f=0.5 -> K=244
+  selection (even->odd) class-over-token by f: 0.1: -0.0079  0.2: -0.0100  0.33: -0.0045  0.5: +0.0055
+  held-out even->odd: class gain +0.0187  token gain +0.0420  class-over-token +0.0055
+  held-out odd->even: class gain +0.0094  token gain +0.0394  class-over-token +0.0006  (honest)
+  stability: seed ARI (mean of 3 pairs) 0.108   page-split ARI 0.056 on 229 common types
+  largest classes (seed 0, by tokens):
+    daiin dain shol shor chody qotchy odaiin okeol cthey chaiin ...   [15 types]
+    ol ar y l qol char okol chear otchedy chodar ...   [11 types]
+    dar dy qoky okal dol oty dam sain oly okey ...   [17 types]
+    chedy shedy otedy chdy sheedy cheedy sheckhy lkedy   [8 types]
+    chol chor sho cthy shy oky chodaiin choky dchor dchol ...   [15 types]
+    chey shey cheey cheol cheody olkeey sheeky cphey oar   [9 types]
+    qokain qokaiin qokey qotaiin qotal qokchdy tedy chedaiin chety chdal ...   [13 types]
+    al okaiin otaiin otal cheky aiiin chedain ytchey   [8 types]
+    or s ytal   [3 types]
+    qokedy qokal qokar qotain   [4 types]
+    qokeey okeey oteey qo   [4 types]
+    aiin kaiin ky ot tshedy   [5 types]
+
+VOYNICH-NULL  tokens shuffled across book
+  tokens=34857  types>=10: 489  K-rule picks f=0.1 -> K=49
+  selection (even->odd) class-over-token by f: 0.1: -0.0031  0.2: -0.0032  0.33: -0.0069  0.5: -0.0119
+  held-out even->odd: class gain -0.0020  token gain +0.0025  class-over-token -0.0031
+  held-out odd->even: class gain +0.0026  token gain -0.0003  class-over-token +0.0013  (honest)
+  stability: seed ARI (mean of 3 pairs) 0.094   page-split ARI 0.041 on 233 common types
+
+PROSE latin_caesar
+  tokens=19520  types>=10: 307  K-rule picks f=0.5 -> K=154
+  selection (even->odd) class-over-token by f: 0.1: +0.0237  0.2: +0.0160  0.33: +0.0319  0.5: +0.0498
+  held-out even->odd: class gain +0.0870  token gain +0.1769  class-over-token +0.0498
+  held-out odd->even: class gain +0.0802  token gain +0.1679  class-over-token +0.0361  (honest)
+  stability: seed ARI (mean of 3 pairs) 0.143   page-split ARI 0.033 on 113 common types
+  largest classes (seed 0, by tokens):
+    in ex constituit   [3 types]
+    et qui itaque hi   [4 types]
+    cum ab a pro   [4 types]
+    neque est si aut sunt omnia subito x germanorum nisi ...   [11 types]
+    quod ut   [2 types]
+    se quos ipse suos rhenum tela diem numerum duas   [9 types]
+    ad per contra   [3 types]
+    caesar castris omnibus causa gallia equitatu proeliis q   [8 types]
+    hostes nostros quorum hostibus item omni iter fuga ipsi caesaris ...   [12 types]
+    atque celeriter seque quin diutius legatum   [6 types]
+    ne etiam exercitum copiis gallis certior enim sui   [8 types]
+    non   [1 types]
+
+PROSE italian_dante
+  tokens=33000  types>=10: 389  K-rule picks f=0.2 -> K=78
+  selection (even->odd) class-over-token by f: 0.1: +0.0138  0.2: +0.0396  0.33: +0.0305  0.5: +0.0304
+  held-out even->odd: class gain +0.0826  token gain +0.2275  class-over-token +0.0396
+  held-out odd->even: class gain +0.0588  token gain +0.2187  class-over-token +0.0044  (honest)
+  stability: seed ARI (mean of 3 pairs) 0.221   page-split ARI 0.142 on 175 common types
+
+SUMMARY  (f, K, held-out odd->even class gain / token gain / class-over-token, seed ARI, split ARI, truth type ARI)
+  CONTROL  F3 flow cipher beta=1.5 (truth known) f=0.5  K=96   cls +0.0244  tok +0.0424  cot +0.0156  seed 0.203  split 0.042  truth tARI 0.190
+  CONTROL-NULL  same tokens shuffled across book f=0.5  K=96   cls +0.0058  tok -0.0032  cot +0.0060  seed 0.088  split 0.080  truth tARI 0.040
+  CONTROL beta=0  plain Naibbe re-encryption     f=0.5  K=103  cls +0.0361  tok +0.0350  cot +0.0258  seed 0.282  split 0.119  truth tARI 0.262
+  VOYNICH  b4.pages() paragraph text             f=0.5  K=244  cls +0.0094  tok +0.0394  cot +0.0006  seed 0.108  split 0.056
+  VOYNICH-NULL  tokens shuffled across book      f=0.1  K=49   cls +0.0026  tok -0.0003  cot +0.0013  seed 0.094  split 0.041
+  PROSE latin_caesar                             f=0.5  K=154  cls +0.0802  tok +0.1679  cot +0.0361  seed 0.143  split 0.033
+  PROSE italian_dante                            f=0.2  K=78   cls +0.0588  tok +0.2187  cot +0.0044  seed 0.221  split 0.142
+
+SEED SPREAD of the honest held-out class-over-token (odd->even, each text's chosen f, KMeans seeds 0/1/2)
+  CONTROL  F3 flow cipher beta=1.5 (truth known) +0.0156 / +0.0101 / +0.0160   mean +0.0139
+  CONTROL-NULL  same tokens shuffled across book +0.0060 / -0.0027 / +0.0064   mean +0.0032
+  CONTROL beta=0  plain Naibbe re-encryption     +0.0258 / +0.0338 / +0.0212   mean +0.0269
+  VOYNICH  b4.pages() paragraph text             +0.0006 / -0.0122 / -0.0039   mean -0.0052
+  VOYNICH-NULL  tokens shuffled across book      +0.0013 / -0.0130 / -0.0015   mean -0.0044
+  PROSE latin_caesar                             +0.0361 / +0.0404 / +0.0336   mean +0.0367
+  PROSE italian_dante                            +0.0044 / +0.0199 / +0.0095   mean +0.0113
+
+Step 4 (a6 solver on class sequences) is conditional on stable Voynich classes; see F_RESULTS.md F4.

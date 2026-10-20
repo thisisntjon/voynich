@@ -1,0 +1,12 @@
+S111 — segmenter-free anatomy of the label/page link
+freeze_match=True core_fixture=True edge_fixture=True seed=111018
+[RawWord] groups=4 pages=22 events=231 MRR=0.379152 q95=0.517788 q99=0.559027 p=0.779110 top1=0.090909 q99=0.363636
+[RawTrim1] groups=4 pages=23 events=255 MRR=0.521429 q95=0.506936 q99=0.550835 p=0.025487 top1=0.304348 q99=0.347826
+[GlyphTrim1] groups=4 pages=23 events=258 MRR=0.512733 q95=0.510559 q99=0.562011 p=0.055972 top1=0.304348 q99=0.391304
+[RawEdge2] groups=4 pages=25 events=304 MRR=0.373571 q95=0.470429 q99=0.524431 p=0.601199 top1=0.160000 q99=0.320000
+[paired] groups=4 pages=23 inner=0.521429 edge=0.400518 delta=+0.120911 null_med=-0.000414 q99=+0.148137 p=0.030985
+C1_FIXED_INTERIOR=False
+C2_EDGE_INSUFFICIENT=True
+C3_INTERIOR_BEATS_EDGE=False
+VERDICT=NO_SEGMENTER_FREE_LABEL_LINK
+runtime_seconds=52.007

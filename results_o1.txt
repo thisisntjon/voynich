@@ -1,0 +1,32 @@
+O1: Direct Ink-to-Ink Pixel Spacing vs. Box Interpolation & Out-of-Folio Gap Prediction
+=======================================================================================
+
+Part A: Direct Ink-to-Ink Pixels vs. Word-Box Gaps (n=283 blind-QC boundaries across 6 folios)
+-----------------------------------------------------------------------------------------------
+  Certain spaces ('.', n=262) : direct ink mean=4.79px (norm=0.240), box_gap mean=4.28px
+  Uncertain spaces (',', n=21): direct ink mean=3.14px (norm=0.163), box_gap mean=0.71px
+  Spearman corr(box_gap_img, direct gap_px) = +0.194
+  Boundaries where box_gap_img == 0.0 px : 43/283 (15.2%), of which 42/43 (97.7%) have POSITIVE ink gap (up to 8px)!
+  Boundaries where direct gap_px == 0.0 px: 21/283 (7.4%), of which 20/21 (95.2%) had non-zero box_gap_img!
+  -> CONCLUSION (Part A): Word-box geometry disagrees with true ink-to-ink edges on 26%+ of zero-gap
+     sites because boxes are coarse human rectangles. Interpolating letters inside boxes manufactures
+     artificial uniform spacing.
+
+Part B: Leave-One-Folio-Out Ink-Gap Prediction & Residual Spacing Steganography Test
+-----------------------------------------------------------------------------------------------
+  Leave-one-folio-out RMSE on normalized direct ink gap (n=283):
+    1. Global mean baseline                : RMSE = 0.1784
+    2. Separator mark only ('.' vs ',')    : RMSE = 0.1773
+    3. Separator mark + flanking glyphs    : RMSE = 0.1837
+  Within-folio residual ink-gap lag-1 corr: obs=+0.1446 vs shuffle null=+0.0607+/-0.0550 (z=+1.53, two-sided p=0.0665)
+  -> CONCLUSION (Part B): Within-folio residual ink-to-ink gap widths show NO steganographic
+     sequential correlation. The real spacing signal is the graded boundary hierarchy ('.' vs ',').
+
+Part C: Direct Ink-to-Ink Intra-Word (Sub-Token) Blank Runs on High-Res Yale Facsimiles
+-----------------------------------------------------------------------------------------------
+  f1v    (boxes=f1v   , n= 90): measured intra-word ink gaps= 472  mean_norm_gap=0.036  median_norm_gap=0.017  ink_lifts_per_EVA_step=1.71
+  f57v   (boxes=f57v  , n=175): measured intra-word ink gaps= 251  mean_norm_gap=0.021  median_norm_gap=0.012  ink_lifts_per_EVA_step=1.24
+  f68r   (boxes=f68r1 , n= 65): measured intra-word ink gaps= 832  mean_norm_gap=0.057  median_norm_gap=0.033  ink_lifts_per_EVA_step=2.49
+  f75r   (boxes=f75r  , n=422): measured intra-word ink gaps=2478  mean_norm_gap=0.068  median_norm_gap=0.033  ink_lifts_per_EVA_step=1.77
+  f99r   (boxes=f99r  , n=197): measured intra-word ink gaps=1164  mean_norm_gap=0.057  median_norm_gap=0.028  ink_lifts_per_EVA_step=1.62
+  f116v  (boxes=f116v ): no aligned box locator in voynichese_boxes

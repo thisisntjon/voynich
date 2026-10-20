@@ -1,0 +1,7 @@
+#s128_layout_counts v3
+#source_sha256	ce465ae1777daec574a7d68bd200831ac5916d228fb300c9d9716c9c9c0c26da
+#para_start_marks_on_included_herbal_lines	2
+#excluded_foldout_pages	f901r1
+page	Q	B	H	L	line_token_counts	para_start_flags
+f900r	Z	1	1	A	4,2,4,2	1,0,1,0
+f900v	Z	1	2	?	2,1	1,0

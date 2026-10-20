@@ -1,0 +1,9 @@
+s116 power gate on the s115-A0 real-herbal corpus; 2026-10-18T21:52:19; script sha256 07ca0f34b585e315e9645f93fc7d4646e8925599392c33d75568cea45dcdcd62
+A0 units 820; s116 units 378 -> N = 378; label token-count distribution {1: 327, 2: 37, 3: 11, 4: 2, 5: 1} (mean 1.183); NOISE 0.15; R 200; NPERM 499
+[uniform real] N=378 share p<0.05 = 0.360; share p<0.01 = 0.120; r median +0.0495 IQR [+0.0387, +0.0598]
+[uniform shuffled] N=378 share p<0.05 = 0.050; share p<0.01 = 0.010; r median +0.0357 IQR [+0.0248, +0.0473]
+[page_clustered real] N=378 share p<0.05 = 0.415; share p<0.01 = 0.145; r median +0.0517 IQR [+0.0411, +0.0631]
+[page_clustered shuffled] N=378 share p<0.05 = 0.030; share p<0.01 = 0.010; r median +0.0357 IQR [+0.0253, +0.0467]
+POWER=0.360 (min of samplers); SHUFFLED=0.050 (max of samplers)
+POWER_PASS=False
+end 2026-10-18T21:59:56

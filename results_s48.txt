@@ -1,0 +1,39 @@
+s48_same_plant_images.py sha256=d3ba835c4060729fb3dacf619c56a3e36297de8db8dcc5de30319db7106eea8d  prereg stub_match=True
+run: Sat Oct 17 23:59:08 PDT 2026
+crops: herbal pool N=123; pharma non-jar crops=336 (jar-like excluded: 69); pairs scored=13/13
+models: DINOv2 ViT-B/14 (facebook/dinov2-base, CLS) + SigLIP ViT-B/16-224 (google/siglip-base-patch16-224); 8 views averaged
+[mean] MRR=0.0361  null mean=0.0437 q99=0.1383  P=0.4458  top5=0/13  top1=0  median percentile=0.287
+[dino] MRR=0.0394  null mean=0.0437 q99=0.1373  P=0.3963  top5=1/13  top1=0  median percentile=0.418
+[siglip] MRR=0.0234  null mean=0.0437 q99=0.1411  P=0.7758  top5=0/13  top1=0  median percentile=0.689
+
+per-pair ranks (rank / N; best-matching crop, mean model):
+  f102r1        <- f1v    mean  29/123  dino  23  siglip  90  best crop P_f102r1_p1_02 cos=0.7004   [ZL f102r1[3,2] (Petersen, Stolfi)]
+  f100v         <- f3v    mean  78/123  dino  56  siglip 114  best crop P_f100v_p1_11 cos=0.6864   [ZL f100v[1,1] root (Petersen)]
+  f102r2        <- f18v   mean 113/123  dino 118  siglip  74  best crop P_f102r2_p1_09 cos=0.5712   [ZL f102r2[3,1] ? (FSG, Stolfi)]
+  f102v1        <- f19r   mean  13/123  dino   5  siglip  87  best crop P_f102v1_p1_00 cos=0.7318   [ZL f102v1[2,2] ? (Stolfi); Stolfi 2025 'f102v-2.3']
+  f102r2        <- f23r   mean 118/123  dino 103  siglip 103  best crop P_f102r2_p1_09 cos=0.5541   [ZL f102r2[3,1] (FSG, GL); Stolfi 2025 3.2]
+  f102r2        <- f32v   mean  21/123  dino  18  siglip  71  best crop P_f102r2_p1_00 cos=0.666   [ZL f102r2[1,2] ? (FSG, Stolfi)]
+  f102r1        <- f37v   mean   9/123  dino  19  siglip  25  best crop P_f102r1_p1_11 cos=0.7263   [ZL f102r1[3,1] ? (Stolfi)]
+  f102r2        <- f47v   mean  25/123  dino  52  siglip  17  best crop P_f102r2_p1_01 cos=0.6637   [ZL f102r2[1,1] (Petersen)]
+  f89v2         <- f48r   mean  36/123  dino  23  siglip  71  best crop P_f89v2_p1_09 cos=0.6924   [ZL f89v2[3,4] ? (Stolfi)]
+  f89v1+f89v2   <- f48v   mean  73/123  dino  82  siglip  88  best crop P_f89v2_p1_10 cos=0.6623   [ZL f89v[1,4] ? (Stolfi)]
+  f100r         <- f90v2  mean  62/123  dino  60  siglip  85  best crop P_f100r_p1_01 cos=0.7028   [ZL f100r[1,3] ? (Stolfi)]
+  f100r         <- f90v1  mean  81/123  dino  76  siglip 112  best crop P_f100r_p1_01 cos=0.679   [ZL f100r[1,3] ? (Stolfi)]
+  f99r          <- f96v   mean  17/123  dino  49  siglip  11  best crop P_f99r_p1_17 cos=0.6747   [ZL f99r[4,1] ? (GL)]
+
+P1 (mean model): MRR 0.0361 <= null q99 0.1383; top-5 count 0 (need >= 5) -> FAIL
+
+P2 (descriptive): rank of the herbal page by the crop filling each cell (mean model)
+  f23r on f102r2: row crops (rank of f23r among 123 by that crop alone): P_f102r2_p1_16:100, P_f102r2_p1_17:95, P_f102r2_p1_19:102; cols = ['P_f102r2_p1_17', 'P_f102r2_p1_16']
+    ZL cell col 1: P_f102r2_p1_17 rank 95
+    Stolfi cell col 2: P_f102r2_p1_16 rank 100
+  f19r on f102v1: row crops (rank of f19r among 123 by that crop alone): P_f102v1_p1_11:7, P_f102v1_p1_12:27, P_f102v1_p1_13:21, P_f102v1_p1_14:18; cols = ['P_f102v1_p1_13', 'P_f102v1_p1_14', 'P_f102v1_p1_12']
+    ZL cell col 2: P_f102v1_p1_14 rank 18
+    Stolfi cell col 3: P_f102v1_p1_12 rank 27
+  f19r on f102v2: row crops (rank of f19r among 123 by that crop alone): P_f102v2_p1_16:5, P_f102v2_p1_17:56, P_f102v2_p1_18:41, P_f102v2_p1_19:48, P_f102v2_p1_20:29, P_f102v2_p1_21:14; cols = ['P_f102v2_p1_21', 'P_f102v2_p1_16']
+    Stolfi(alt f102v2) cell col 3: not present (only 2 cols)
+  P2 f23r: ZL cell rank 95 vs Stolfi cell rank 100 (f102r2) -> higher: ZL
+  P2 f19r: ZL cell rank 18 vs Stolfi cell rank 27 (f102v1) -> higher: ZL
+
+predictions: not written (P1 failed)
+elapsed: 0.2s

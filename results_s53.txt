@@ -1,0 +1,39 @@
+date: Sun Oct 18 00:17:49 PDT 2026
+s53_same_plant_parts.py sha256=8479b3c3694610c1dfb99fd7f20accb68a85c55c4240759c35fca9555c69df49
+stub_match=True
+elapsed: score 0.9s + embed 360.9s
+
+embed stage: run Sun Oct 18 00:17:47 PDT 2026, script sha256 8479b3c3694610c1dfb99fd7f20accb68a85c55c4240759c35fca9555c69df49 (same as scoring script), plant_regions.py sha256 12d7d5942f98db0cfa5323edf422b7ded5cb949ac8f54925f5a03b6c30f9f156, elapsed 360.9s
+pharma sketches: 410 = 133 merged groups from 336 non-jar s48 crops + 277 member crops of multi-crop groups (multi-crop sketches: 74; GAP=40 work px, MAX_SK=0.6, pad 0.1)
+herbal windows: 9677 over 123 pages; by kind {'s25': 6027, 's40': 1968, 's60': 1107, 'full': 123, 'leaf': 286, 'flower': 43, 'root': 123}
+models: DINOv2 ViT-B/14 CLS + SigLIP B/16 (8 views averaged); MNN on DINOv2 patch tokens (identity view, fg patch >= 10% chroma/ink)
+
+statistics (pair score = max over the pharma page's sketches; rank among N; null = 10,000 label perms):
+  [mean_cls_centred   ] PRIMARY   MRR=0.2140  null mean=0.0439 q99=0.1430  P=0.0005  top5=3/13  top1=2  median pct=0.311
+  [mean_cls_raw       ] secondary MRR=0.1449  null mean=0.0438 q99=0.1393  P=0.0084  top5=3/13  top1=1  median pct=0.369
+  [dino_cls_raw       ] secondary MRR=0.1186  null mean=0.0436 q99=0.1399  P=0.0285  top5=3/13  top1=0  median pct=0.336
+  [siglip_cls_raw     ] secondary MRR=0.1206  null mean=0.0433 q99=0.1404  P=0.0258  top5=2/13  top1=1  median pct=0.270
+  [dino_cls_centred   ] secondary MRR=0.1679  null mean=0.0438 q99=0.1417  P=0.0044  top5=3/13  top1=1  median pct=0.148
+  [siglip_cls_centred ] secondary MRR=0.0771  null mean=0.0437 q99=0.1395  P=0.1245  top5=2/13  top1=0  median pct=0.279
+  [mnn_raw            ] secondary MRR=0.0350  null mean=0.0522 q99=0.1683  P=0.6040  top5=0/13  top1=0  median pct=0.393
+  [mnn_centred        ] secondary MRR=0.0415  null mean=0.0437 q99=0.1381  P=0.3683  top5=0/13  top1=0  median pct=0.287
+
+per-pair ranks (/123); columns = mean_cls_centred, mean_cls_raw, dino_cls_raw, siglip_cls_raw, dino_cls_centred, siglip_cls_centred, mnn_raw, mnn_centred
+  best sketch / best window = argmax for the true page under the primary statistic and mean-model raw cosine
+  f102r1       <- f1v      3  20  42  12  13  33   6  12   sketch S_f102r1_p1_08_part window s25 cos=0.802  [ZL f102r1[3,2] (Petersen, Stolfi)]
+  f100v        <- f3v    101 105  94  87  99  89  49  36   sketch S_f100v_p1_08_part window s25 cos=0.714  [ZL f100v[1,1] root (Petersen)]
+  f102r2       <- f18v    46  46  59  18  35   7  17  42   sketch S_f102r2_p1_10 window s25 cos=0.745  [ZL f102r2[3,1] ? (FSG, Stolfi)]
+  f102v1       <- f19r    42  16  29  12  28  35  96  85   sketch S_f102v1_p1_03 window s25 cos=0.742  [ZL f102v1[2,2] ? (Stolfi); Stolfi 2025 'f102v-2.3']
+  f102r2       <- f23r   115  86  87  87 109 120  35 103   sketch S_f102r2_p1_00 window s25 cos=0.756  [ZL f102r2[3,1] (FSG, GL); Stolfi 2025 3.2]
+  f102r2       <- f32v    40  50  49  63  38   8  35  67   sketch S_f102r2_p1_11_part window s25 cos=0.781  [ZL f102r2[1,2] ? (FSG, Stolfi)]
+  f102r1       <- f37v    40   4   2   5  19  37  63   9   sketch S_f102r1_p1_04 window s60 cos=0.828  [ZL f102r1[3,1] ? (Stolfi)]
+  f102r2       <- f47v    39  56  91  67  54  65  88  30   sketch S_f102r2_p1_12_part window s40 cos=0.778  [ZL f102r2[1,1] (Petersen)]
+  f89v2        <- f48r     1   1   2  31   2   4  86  14   sketch S_f89v2_p1_05 window s25 cos=0.825  [ZL f89v2[3,4] ? (Stolfi)]
+  f89v1+f89v2  <- f48v    17  60  41  56  11 110  24  12   sketch S_f89v2_p1_09_part window s25 cos=0.808  [ZL f89v[1,4] ? (Stolfi)]
+  f100r        <- f90v2    8  77  73  80  12  89  71  92   sketch S_f100r_p1_15_part window s25 cos=0.805  [ZL f100r[1,3] ? (Stolfi)]
+  f100r        <- f90v1    1  13  24  34   1   5  71  54   sketch S_f100r_p1_05_part window leaf cos=0.857  [ZL f100r[1,3] ? (Stolfi)]
+  f99r         <- f96v     8   3   3   1   4   7  31  25   sketch S_f99r_p1_23_part window s25 cos=0.808  [ZL f99r[4,1] ? (GL)]
+
+P1 (mean_cls_centred): MRR 0.2140 > null q99 0.1430; top-5 count 3 (need >= 5) -> FAIL
+
+predictions: not written (P1 failed)

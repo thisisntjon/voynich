@@ -1,0 +1,33 @@
+contact_blobs 20261018-172434  N=177 surfaces, 176 candidates each; features 74s, GPU 18s, peak 0.51 GB
+ghost blobs/surface median 40; surfaces without blobs 0
+
+[B_primary]
+  K1 (development) both-end ranks: f10v|f15r 27, f33v|f40r 44, f58v|f65r 29, f76v|f83r 53, f78v|f81r 46  -> 0/5 top-5  PASS=False
+  K2 (held-out, n=52): top-5 both ends 0 (0.0%), null mean 0.31, p=1.00000, median rank 102  PASS=False
+  K3 (n=41 bifolia): inner>outer 17/41, Wilcoxon p=0.9499 (held-out quires n=27: p=0.9259)  PASS=False
+  AUC held-out facing vs random pairs 0.529
+
+[B_rot180_control]
+  K1 (development) both-end ranks: f10v|f15r 113, f33v|f40r 21, f58v|f65r 51, f76v|f83r 17, f78v|f81r 11  -> 0/5 top-5  PASS=False
+  K2 (held-out, n=52): top-5 both ends 1 (1.9%), null mean 0.26, p=0.23578, median rank 98  PASS=False
+  K3 (n=41 bifolia): inner>outer 17/41, Wilcoxon p=0.9296 (held-out quires n=27: p=0.9498)  PASS=False
+  AUC held-out facing vs random pairs 0.543
+
+[B_mirror_excess]
+  K1 (development) both-end ranks: f10v|f15r 48, f33v|f40r 158, f58v|f65r 36, f76v|f83r 161, f78v|f81r 173  -> 0/5 top-5  PASS=False
+  K2 (held-out, n=52): top-5 both ends 1 (1.9%), null mean 0.39, p=0.32497, median rank 106  PASS=False
+  K3 (n=41 bifolia): inner>outer 23/41, Wilcoxon p=0.3267 (held-out quires n=27: p=0.2135)  PASS=False
+  AUC held-out facing vs random pairs 0.487
+
+[B_plus_T]
+  K1 (development) both-end ranks: f10v|f15r 43, f33v|f40r 9, f58v|f65r 48, f76v|f83r 59, f78v|f81r 1  -> 1/5 top-5  PASS=False
+  K2 (held-out, n=52): top-5 both ends 5 (9.6%), null mean 0.57, p=0.00050, median rank 50  PASS=False
+  K3 (n=41 bifolia): inner>outer 23/41, Wilcoxon p=0.7559 (held-out quires n=27: p=0.5047)  PASS=False
+  AUC held-out facing vs random pairs 0.697
+
+[T_stain]
+  K1 (development) both-end ranks: f10v|f15r 80, f33v|f40r 5, f58v|f65r 111, f76v|f83r 63, f78v|f81r 1  -> 2/5 top-5  PASS=False
+  K2 (held-out, n=52): top-5 both ends 5 (9.6%), null mean 0.64, p=0.00030, median rank 56  PASS=False
+  K3 (n=41 bifolia): inner>outer 22/41, Wilcoxon p=0.4796 (held-out quires n=27: p=0.3659)  PASS=False
+  AUC held-out facing vs random pairs 0.685
+

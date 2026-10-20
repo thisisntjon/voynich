@@ -1,0 +1,145 @@
+S107: tabular medical / combinatory texts vs the F-40 core behaviour (D-066 (k); pre-registered in the docstring)
+date: Sun Oct 18 14:27:33 PDT 2026 (`date`)
+device: cuda (NVIDIA GeForce RTX 5080); torch 2.11.0.dev20260115+cu128; numpy 2.4.6; python 3.11.9; BelowNormal set=True; battery workers 2
+s107_tabular_medical_reference.py sha256=a8bc8ad49a3f35b9f4a5653b8ae8458d0ec3addfb5054b340777194902494f62
+prereg stub s107_tabular_medical_reference.prereg.sha256 sha256=205f3b0e3082837c3f143034909dfdb543964effb2fe340f246925e8fca67cbb  stub_match=True
+  hashed a1_profile.py sha256=0b20e37ec2254d277a7ed8e1bf73e03c9fbfd15f92c4289496dd0ee07392f3b2
+  hashed a2_position.py sha256=426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3
+  hashed b4_selfcite_sim.py sha256=5fcdfdeb5e819ad33bbb1641cf2c5ce850b61b7fb9c85ec4bc21933caaf69d5a
+  hashed b5_nmf_topics.py sha256=0f1722dea55b3cceda5e6f622e6cedc99c779506b160862ad2c41e5168d41007
+  hashed c1_quire_null.py sha256=9f0bb9a84f8b104804ced4743ae0a85d29b4428ad7982474f56b1090fb1d3f57
+  hashed c2_section_generator.py sha256=f21281d9fe41d309823117ab2517af5fddae6aead7ae84b5fec6114ea7c78c0a
+  hashed c3_edge_coupling.py sha256=30b6ba47c9de4a36379ea0fea92a39a10da5ec6da4f4488266d4b3f68a827ffb
+  hashed c4_naibbe_lines.py sha256=46b5e002aee66f6ee95f43c8f4edccffb68629e3a526416333eb8e552465260b
+  hashed corpora.py sha256=2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518
+  hashed f1_residual_order.py sha256=5bd3e11f07c7231d37efbedb644aa0d5644a4678b33ca030065fa9241c26ab76
+  hashed f2_syllable_control.py sha256=440ff45dee9087abe9a6aa77976bbe46b369790cb113416bf5779658f49008bd
+  hashed f3_flow_choice.py sha256=e0ac0ac62d6de16da094501a3fff26afd0551de681421ba66e6b8383d121e0ca
+  hashed g1_edge_joint.py sha256=4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7
+  hashed m1_coordinates.py sha256=0ddc1eaafd22eb852b46f0fe2023b6cefaae3c3cbc9d59c47efc57a74e01626b
+  hashed m3_bakeoff_reconcile.py sha256=598472b8b6e2e08186241a0e44e23860d933e4c0c8e42653c5222a9335b2b299
+  hashed n1_habit_table.py sha256=a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1
+  hashed p1_bifolio_null.py sha256=3aba99a6cdd124a50d6dba5636fb5c37e1bbec25a5568600ca07b9bfcd342dea
+  hashed p4d1_core_order.py sha256=5a400968081214ba5f38bbe29bdabe42ddcfe6f949f491e5f579ce3f0e8b7a39
+  hashed s107_tabular_medical_reference.py sha256=a8bc8ad49a3f35b9f4a5653b8ae8458d0ec3addfb5054b340777194902494f62
+  hashed s29_q1_label_controls.py sha256=5676bd92ae940c63c7a55ba468558fb9119692bd6fe144fb9e56e07a2b730c02
+  hashed s34_morphology_syntax_geography.py sha256=406b6d9fd5cfafc8830dec85ddb05cf6743a49024220bbc7429c9d303aba8625
+  hashed s55_code_vs_generator.py sha256=56485b42c5c928c908a04be1a9b888a06c85088bc0b49589ef340d69ca220cec
+  hashed s56_core_repetition_lag.py sha256=1e5987dfee74c819b1f1c11abe0d386ce19f1ca730c39a30d45d4a534391b6a7
+  hashed s57_local_memory_model.py sha256=4adc4796938b68f97d69e9d0b3b35fba6cb40ae68576538445352dfeb6063155
+  hashed s64_naibbe_taxonomy.py sha256=6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3
+  hashed s67_constrained_assembly_loqo.py sha256=8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354
+  hashed s69_prefix_stream_memory.py sha256=11e722d4a0391d34228637da8b9c1872a6dc4ddd5dc1f2ff4e94f8c6a903c458
+  hashed s76_segmenter_independence.py sha256=43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29
+  hashed s77_deconfounded_scribe_and_comma_ablation_loqo.py sha256=56eb6afdafdc57654b56a7019ee6a9410752db9ffb08c3a9112f83dd0798cc5d
+  hashed s80_a14_size_matched.py sha256=196cf61f3ca5af440e03fa5e1550d1ac7ee25ad32b35de3ec61d1965d6485a5b
+  hashed s81_sticky_table_loqo.py sha256=418515ad0ecd7544fb4bba2fb0efcce1ecdbe198809c6bf830cbf31b57cd5063
+  hashed s87_core_layer_genre.py sha256=d5ed585681670bc9e9eaf76449b7497a43bb33d6d4e689b0f0c337387f49d8db
+  hashed s91_line_pool_producer_loqo.py sha256=92dba656c9d74dfb972837d3bba070bb945c3ed59ef444448d5bd7aafcdee21a
+  hashed s97_language_rescue_controls.py sha256=76837cdbf089eb445278cc7c51879dfd9f5b7daef1bf6720a9d02c83b320c7cb
+  hashed scoreboard/__init__.py sha256=4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f
+  hashed scoreboard/metrics_new.py sha256=a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed
+  hashed tools/boxes.py sha256=8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65
+  hashed vparse.py sha256=0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1
+  hashed data/translit/ZL3b_eva.meta.json sha256=ce233477803a865365e53418f5e2b78c324fa0ea124b0aa46a9eb6a5189f7ef0
+  hashed data/translit/RF1b.meta.json sha256=c7d9bccba99b2610b9d80b4ce5f26f7d1ab54c12ec2364d0423d6b89f51da9df
+  hashed data/translit/IT2a.meta.json sha256=0d0d3e758d1e308b0aee4b4d006f90cbc8090c081e0fcb3327de6734ac5e5fdf
+  hashed data/controls/latin_augustine.txt sha256=30287aab673c861ae500f06fe55d4396f529a0c251b37178e7220b6c51317189
+  hashed runs/s97/profiles.csv sha256=64b0b49580cabd93cfc1cf33ee491a7c722d6d614b3575705bc1b4b4e51c8cdd
+  hashed results_s97.txt sha256=df7be33a1bef1622e33eb7ad8c0dbd17fdb758427fd8d5f93f7479523373decf
+  hashed data/controls_tabular/README.md sha256=2d83f2b83b517319f5e71df18c5c68b8857066af2584d0f557bbd778f17279f8
+  hashed data/controls_tabular/raw_tacuinum_medimanus/tacuinum_sanitatis.html sha256=396f9bb41124d9d70e0a410b5554a535d1acc2731555ad8bfc3278af1faa23c5
+  hashed data/controls_tabular/raw_degradibus/BIUSante_00128x01_djvu.txt sha256=6b2bf4267dab93500c80f4b652e02f641988202cd43258e2146c58c91764c194
+  hashed data/controls_tabular/raw_lull_1515/ARes54311_djvu.txt sha256=aa0bb346dc8110a59c67966b8973eaa373313831fc386ef52c455cdcf408a4be
+free RAM 4.8 GB (need >= 4.0)
+N_TOT 22500; N_match 4731; order/R shuffles 1000/1000; locality perms 500, boot 2000; battery N_DRAW 300, fold >= 4/6, >= 8/15 folds per T; MIN_CORE_SHARE 0.5; s97 seed 20261097; s107 seed 20261107
+
+=== Voynich target (SlotSegmenter cores, s87 seeds; as s97) ===
+LOCALITY band: [0.9074, 1.0499] (s97: [0.9074, 1.0499])
+  VOY_ZL3b                           tok  22500 ty  1747 core% 100.0 | o100 +0.034(p0.005) o200 +0.028 | Rw1 1.180(p0.001) Rc1 0.564 | loc 0.977[0.950,1.006] | C1 YYYY VOYNICH-LIKE
+  VOY_RF1b                           tok  22500 ty  1840 core% 100.0 | o100 +0.020(p0.040) o200 +0.009 | Rw1 1.193(p0.001) Rc1 0.670 | loc 0.977[0.943,1.013] | C1 YYYY VOYNICH-LIKE
+  VOY_IT2a                           tok  22500 ty  1712 core% 100.0 | o100 +0.030(p0.004) o200 +0.030 | Rw1 1.217(p0.001) Rc1 0.646 | loc 0.979[0.944,1.015] | C1 YYYY VOYNICH-LIKE
+
+=== building texts ===
+  T1 Tacuinum BnF lat. 9333 (MediManus): 208 entry lines, 9770 tokens
+  T2 Constantinus De gradibus (Basel 1536 OCR lines 19849-22090): 206 entry lines, 16069 tokens
+  T3 Lull Tabula generalis (1515 OCR): 233 table rows, 957 tokens
+  PC2_VOY_IT2a_as_control    gate     tokens  22500 pages  174 lines  2914 mean line   7.7  IT2a words, real pages, control path
+  NC_augustine_la            gate     tokens  22500 pages  173 lines  2888 mean line   7.8  plain Latin prose (Augustine), ZL3b line lengths
+  T1_tacuinum_bnf9333        tabular  tokens   9770 pages   15 lines   208 mean line  47.0  Tacuinum sanitatis, one table entry per line  FLAG: below 22,500
+  T2_degradibus_const        tabular  tokens  16069 pages   15 lines   206 mean line  78.0  De gradibus, one entry (simple) per line, by source entry boundaries  FLAG: below 22,500
+  T3_lull_tabula_1515        tabular  tokens    957 pages   17 lines   233 mean line   4.1  Lull Tabula generalis, one printed table row per line  FLAG: below 22,500
+
+=== GATE PC1: s91 LP91 at PLANTED {'conc': 300.0, 'alpha': 8.0, 'rho': 0.03, 'lam': 0.45, 'pen': 0.8} on ZL3b lexicon/layout (identity on emitted cores; as s97) ===
+  PC1_LP91_planted_s1                tok  22500 ty   784 core% 100.0 | o100 +0.073(p0.001) o200 +0.088 | Rw1 2.517(p0.001) Rc1 0.371 | loc 0.934[0.898,0.969] | C1 nYYY - | D 1.92
+  PC1_LP91_planted_s2                tok  22500 ty   779 core% 100.0 | o100 +0.045(p0.001) o200 +0.043 | Rw1 2.453(p0.001) Rc1 0.363 | loc 0.940[0.904,0.975] | C1 YYYY VOYNICH-LIKE | D 1.83
+  PC1_LP91_planted_s3                tok  22500 ty   770 core% 100.0 | o100 +0.041(p0.001) o200 +0.046 | Rw1 2.398(p0.001) Rc1 0.500 | loc 0.929[0.890,0.969] | C1 YYYY VOYNICH-LIKE | D 1.50
+  PC1 Voynich-like on 2/3 seeds (need >= 2) -> PASS
+
+=== signature profiles (C1 flags a order, b R_within, c R_cross<R_within, d locality) ===
+  PC2_VOY_IT2a_as_control/slot       tok  22500 ty  1712 core% 100.0 | o100 +0.031(p0.003) o200 +0.032 | Rw1 1.215(p0.001) Rc1 0.649 | loc 0.978[0.944,1.015] | C1 YYYY VOYNICH-LIKE | D 0.27 | b+c True
+  NC_augustine_la/identity           tok  22500 ty  6893 core% 100.0 | o100 +0.128(p0.001) o200 +0.148 | Rw1 0.072(p1.000) Rc1 0.047 | loc 0.920[0.900,0.940] | C1 nnYY - | D 7.79 | b+c False
+  NC_augustine_la/slot               tok  22500 ty  4498 core% 100.0 | o100 +0.108(p0.001) o200 +0.103 | Rw1 0.613(p1.000) Rc1 0.718 | loc 0.931[0.916,0.948] | C1 nnnY - | D 1.65 | b+c False
+  NC_augustine_la/affix2             tok  22500 ty  4989 core% 100.0 | o100 +0.093(p0.001) o200 +0.105 | Rw1 0.438(p1.000) Rc1 0.327 | loc 0.930[0.916,0.946] | C1 nnYY - | D 2.54 | b+c False
+  T1_tacuinum_bnf9333/identity       tok   9770 ty  2312 core% 100.0 | o100 +1.231(p0.001) o200 +1.262 | Rw1 0.026(p1.000) Rc1 0.000 | loc 0.934[0.858,0.994] | C1 nnYY - [order n=2922<4731] | D 23.39 | b+c False
+  T1_tacuinum_bnf9333/slot           tok   9770 ty  1818 core% 100.0 | o100 +1.170(p0.001) o200 +1.181 | Rw1 0.131(p1.000) Rc1 0.000 | loc 0.946[0.880,1.001] | C1 nnYY - [order n=2922<4731] | D 21.71 | b+c False
+  T1_tacuinum_bnf9333/affix2         tok   9770 ty  1684 core% 100.0 | o100 +1.241(p0.001) o200 +1.262 | Rw1 0.143(p1.000) Rc1 0.000 | loc 0.960[0.896,1.015] | C1 nnYY - [order n=2922<4731] | D 22.56 | b+c False
+  T2_degradibus_const/identity       tok  16069 ty  6411 core% 100.0 | o100 +0.154(p0.001) o200 +0.210 | Rw1 0.168(p1.000) Rc1 0.000 | loc 0.945[0.920,0.971] | C1 nnYY - | D 13.65 | b+c False
+  T2_degradibus_const/slot           tok  16069 ty  4244 core% 100.0 | o100 +0.165(p0.001) o200 +0.213 | Rw1 0.635(p1.000) Rc1 0.000 | loc 0.949[0.923,0.972] | C1 nnYY - | D 13.14 | b+c False
+  T2_degradibus_const/affix2         tok  16069 ty  4692 core% 100.0 | o100 +0.195(p0.001) o200 +0.252 | Rw1 0.609(p1.000) Rc1 0.000 | loc 0.949[0.928,0.968] | C1 nnYY - | D 13.24 | b+c False
+  T3_lull_tabula_1515/identity       tok    957 ty   387 core% 100.0 | o100 +0.337(p0.001) o200 +0.253 | Rw1 6.503(p0.001) Rc1 0.342 | loc 0.909[0.822,1.003] | C1 nYYY - [order n=140<4731] | D 5.27 | b+c True
+  T3_lull_tabula_1515/slot           tok    957 ty    89 core% 100.0 | o100 +0.201(p0.008) o200 +0.201 | Rw1 2.025(p0.001) Rc1 0.626 | loc 1.020[0.867,1.171] | C1 nYYY - [order n=140<4731] | D 2.54 | b+c True
+  T3_lull_tabula_1515/affix2         tok    957 ty   105 core% 100.0 | o100 +0.022(p0.404) o200 +0.022 | Rw1 1.659(p0.001) Rc1 1.039 | loc 1.088[0.923,1.245] | C1 YYYn - [order n=140<4731] | D 1.44 | b+c True
+
+=== REPRO: gate rows vs runs/s97/profiles.csv (descriptive, 3 decimals: o100 Rw1 Rc1 loc) ===
+  PC2_VOY_IT2a_as_control/slot: s107 (0.031, 1.215, 0.649, 0.978) s97 (0.031, 1.215, 0.649, 0.979) -> False
+  NC_augustine_la/identity: s107 (0.128, 0.072, 0.047, 0.92) s97 (0.128, 0.071, 0.047, 0.92) -> False
+  NC_augustine_la/slot: s107 (0.108, 0.613, 0.718, 0.931) s97 (0.108, 0.613, 0.718, 0.931) -> True
+  NC_augustine_la/affix2: s107 (0.093, 0.438, 0.327, 0.93) s97 (0.093, 0.438, 0.327, 0.929) -> False
+  REPRO all gate rows = False
+
+=== POWER (descriptive): planted LP91 seed 1 (identity) and IT2a (slot) cut to each tabular text's size ===
+  PWR_LP91_n9770                     tok   9770 ty   519 core% 100.0 | o100 +0.029(p0.103) o200 +0.033 | Rw1 2.572(p0.001) Rc1 0.263 | loc 0.950[0.933,0.967] | C1 YYYY VOYNICH-LIKE [order n=2014<4731] | b+c True (size of T1_tacuinum_bnf9333)
+  PWR_IT2a_n9770                     tok   9770 ty   921 core% 100.0 | o100 +0.017(p0.192) o200 +0.015 | Rw1 1.292(p0.001) Rc1 0.541 | loc 0.993[0.967,1.015] | C1 YYYY VOYNICH-LIKE [order n=1942<4731] | b+c True (size of T1_tacuinum_bnf9333)
+  PWR_LP91_n16069                    tok  16069 ty   670 core% 100.0 | o100 +0.037(p0.014) o200 +0.035 | Rw1 2.499(p0.001) Rc1 0.339 | loc 0.939[0.910,0.967] | C1 YYYY VOYNICH-LIKE [order n=3301<4731] | b+c True (size of T2_degradibus_const)
+  PWR_IT2a_n16069                    tok  16069 ty  1226 core% 100.0 | o100 +0.032(p0.013) o200 +0.012 | Rw1 1.186(p0.001) Rc1 0.671 | loc 0.980[0.943,1.020] | C1 YYYY VOYNICH-LIKE [order n=3274<4731] | b+c True (size of T2_degradibus_const)
+  PWR_LP91_n957                      tok    957 ty   132 core% 100.0 | o100 -0.009(p0.573) o200 -0.039 | Rw1 3.174(p0.001) Rc1 0.869 | loc 0.992[0.970,1.016] | C1 nYYY - [order n=322<4731] | b+c True (size of T3_lull_tabula_1515)
+  PWR_IT2a_n957                      tok    957 ty   225 core% 100.0 | o100 +0.091(p0.070) o200 +0.166 | Rw1 1.551(p0.003) Rc1 1.537 | loc 0.977[0.930,1.018] | C1 nYYY - [order n=316<4731] | b+c True (size of T3_lull_tabula_1515)
+
+=== s67 slot battery (text block b vs real Voynich fold folds[b]) ===
+  folds (15): A B C D E F G H I M N O Q S T
+  [battery] free RAM 4.8 GB (need >= 4.0); 120 Measured jobs on 2 workers
+  [battery 14s] 10/120 done (last ('REF', 'ZL3b', 10) 2s)
+  [battery 28s] 20/120 done (last ('REF', 'RF1b', 4) 2s)
+  [battery 39s] 30/120 done (last ('REF', 'IT2a', 0) 2s)
+  [battery 52s] 40/120 done (last ('REF', 'IT2a', 10) 2s)
+  [battery 65s] 50/120 done (last ('CTL', 'PC2_VOY_IT2a_as_control', 4) 2s)
+  [battery 74s] 60/120 done (last ('CTL', 'PC2_VOY_IT2a_as_control', 14) 2s)
+  [battery 83s] 70/120 done (last ('CTL', 'NC_augustine_la', 10) 2s)
+  [battery 89s] 80/120 done (last ('CTL', 'T1_tacuinum_bnf9333', 4) 1s)
+  [battery 93s] 90/120 done (last ('CTL', 'T1_tacuinum_bnf9333', 13) 1s)
+  [battery 101s] 100/120 done (last ('CTL', 'T2_degradibus_const', 9) 1s)
+  [battery 105s] 110/120 done (last ('CTL', 'T3_lull_tabula_1515', 4) 0s)
+  [battery 105s] 120/120 done (last ('CTL', 'T3_lull_tabula_1515', 14) 0s)
+  9 Measured jobs raised: ('CTL', 'T1_tacuinum_bnf9333', 1): ZeroDivisionError('float division by zero'); ('CTL', 'T1_tacuinum_bnf9333', 11): ZeroDivisionError('float division by zero'); ('CTL', 'T1_tacuinum_bnf9333', 14): ZeroDivisionError('float division by zero'); ('CTL', 'T2_degradibus_const', 1): ZeroDivisionError('float division by zero'); ('CTL', 'T2_degradibus_const', 14): ZeroDivisionError('float division by zero'); ('CTL', 'T3_lull_tabula_1515', 7): ZeroDivisionError('float division by zero')
+  PC2_VOY_IT2a_as_control    IT2a: folds >=4/6 10/15 HOLDS; median 4.0/6; per prediction P1 12 P2 10 P3  4 P4 10 P5 15 P7 11 | per fold 4 6 5 5 5 4 5 5 3 4 2 3 3 5 3
+  NC_augustine_la            ZL3b: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1  1 P2  2 P3  1 P4  0 P5  0 P7  8 | per fold 0 0 2 1 1 1 1 1 1 1 0 1 1 1 0
+  NC_augustine_la            RF1b: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1  0 P2  1 P3  1 P4  0 P5  0 P7  9 | per fold 0 1 1 1 0 1 1 1 1 1 0 1 1 1 0
+  NC_augustine_la            IT2a: folds >=4/6  0/15 fails; median 1.0/6; per prediction P1  0 P2  1 P3  4 P4  0 P5  0 P7  8 | per fold 0 0 2 1 0 1 1 1 1 1 0 2 1 2 0
+  T1_tacuinum_bnf9333        battery NOT ASSESSABLE (a Measured job raised; battery = False)
+  T2_degradibus_const        battery NOT ASSESSABLE (a Measured job raised; battery = False)
+  T3_lull_tabula_1515        battery NOT ASSESSABLE (a Measured job raised; battery = False)
+
+=== calls ===
+  PC2_VOY_IT2a_as_control    gate     signature slot:YYYY (applicable slot) -> True; battery IT2a 10/15 -> True; FULL_VOYNICH_LIKE = True; SHOWS_F40_CORE (b+c) = True [slot:True]
+  NC_augustine_la            gate     signature identity:nnYY slot:nnnY affix2:nnYY (applicable identity,slot,affix2) -> False; battery ZL3b 0/15 RF1b 0/15 IT2a 0/15 -> False; FULL_VOYNICH_LIKE = False; SHOWS_F40_CORE (b+c) = False [identity:False slot:False affix2:False]
+  T1_tacuinum_bnf9333        tabular  signature identity:nnYY slot:nnYY affix2:nnYY (applicable identity,slot,affix2) -> False; battery NOT ASSESSABLE -> False; FULL_VOYNICH_LIKE = False; SHOWS_F40_CORE (b+c) = False [identity:False slot:False affix2:False]  FLAG: below 22,500
+  T2_degradibus_const        tabular  signature identity:nnYY slot:nnYY affix2:nnYY (applicable identity,slot,affix2) -> False; battery NOT ASSESSABLE -> False; FULL_VOYNICH_LIKE = False; SHOWS_F40_CORE (b+c) = False [identity:False slot:False affix2:False]  FLAG: below 22,500
+  T3_lull_tabula_1515        tabular  signature identity:nYYY slot:nYYY affix2:YYYn (applicable identity,slot,affix2) -> False; battery NOT ASSESSABLE -> False; FULL_VOYNICH_LIKE = False; SHOWS_F40_CORE (b+c) = True [identity:True slot:True affix2:True]  FLAG: below 22,500
+  GATE: PC1 True; PC2 True; NC (plain Latin not Voynich-like) True -> GATE = True  (REPRO descriptive = False)
+  CALL_RESTATE_F40 = True
+
+VERDICT: CALL_RESTATE_F40 = True: F-40 restated: in-line reuse is not unique to the manuscript (tabular writing produces it): T3_lull_tabula_1515; H-01-tabular opened as a new hypothesis
+
+sidecars: runs/s107/profiles.csv, runs/s107/battery.csv, runs/s107/texts.txt, runs/s107/calls.json
+runtime 116 s; finished Sun Oct 18 14:29:28 PDT 2026 (`date`)

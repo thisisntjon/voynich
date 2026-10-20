@@ -1,0 +1,191 @@
+S72: Wider L4 Construction (L4w) Aimed at the h2 / A14 Conflict, and Blind 6-Language Identification
+date: 2026-10-18 03:34:07
+hashes: s72_wider_l4_and_language_id.py=7e29c19fb0fb23206c91fd0fbd18429150fded0db61e7506a623ee05d08ef06f
+stub_match: True  (stub s72_wider_l4_and_language_id.prereg.sha256)
+deps (imported unchanged): s50_solver_ladder.py=1b5c5227cf12db05  s50_solver.py=c63e035be6a0e03f  p4d1_core_order.py=5a400968081214ba  s67_constrained_assembly_loqo.py=8e5299212a84ec55  m3_bakeoff_reconcile.py=598472b8b6e2e081
+
+=== PART 1: Mathematical & Empirical Anatomy of the h2 / A14 Conflict in s50's L4 ===
+1A. Pseudocount dilution in s50 L4Base.tri_w = (n_ZL3b(P,C,S) + 0.5)^gamma:
+    ZL3b attested pairs = 526, cores = 2335, mean pair count = 66.27 tokens.
+    Per pair, uniform +0.5 pseudocount adds 1167.5 pseudo-tokens (94.6% of raw mass).
+    Resulting share of ZL3b-attested (P,C,S) tokens: ZL3b = 100.0%, s50 K=0/a=0.7/g=0.0 = 28.0%, s50 K=0/a=0.7/g=1.0 = 78.3%, s50 K=0/a=1.0/g=1.0 = 83.1%, s50 K=12/a=1.0/g=1.0 = 74.2%.
+
+1B. Exact 4-Component Decomposition of h2 = H(c_2 | c_1) (sum_k w_k * h2_k == h2):
+  Voynich_ZL3b                         h1=3.871  h2=2.109 (Delta=+0.000)  [w_end->' ': 0.635b, ' '->w_start: 3.203b]
+    C1_cross_word_space      share=0.334  h2_k=1.919 (+0.000)  H_int=1.601  contrib=0.6407 (+0.0000)
+    C2_prefix_and_pre_core   share=0.296  h2_k=2.182 (+0.000)  H_int=1.900  contrib=0.6456 (+0.0000)
+    C3_core_internal         share=0.224  h2_k=2.146 (+0.000)  H_int=1.785  contrib=0.4804 (+0.0000)
+    C4_core_suf_and_suffix   share=0.146  h2_k=2.340 (+0.000)  H_int=1.704  contrib=0.3426 (+0.0000)
+  s50_L4_K0_b1_a0.7_g1.0 (closest)     h1=3.832  h2=2.285 (Delta=+0.175)  [w_end->' ': 0.753b, ' '->w_start: 3.203b]
+    C1_cross_word_space      share=0.331  h2_k=1.978 (+0.059)  H_int=1.602  contrib=0.6553 (+0.0146)
+    C2_prefix_and_pre_core   share=0.309  h2_k=2.511 (+0.328)  H_int=2.182  contrib=0.7747 (+0.1291)
+    C3_core_internal         share=0.170  h2_k=2.226 (+0.080)  H_int=1.823  contrib=0.3785 (-0.1019)
+    C4_core_suf_and_suffix   share=0.190  h2_k=2.505 (+0.165)  H_int=1.886  contrib=0.4762 (+0.1335)
+  s50_L4_K0_b1_a1.0_g1.0 (Moran hit)   h1=3.799  h2=2.180 (Delta=+0.071)  [w_end->' ': 0.698b, ' '->w_start: 3.195b]
+    C1_cross_word_space      share=0.342  h2_k=1.946 (+0.028)  H_int=1.597  contrib=0.6666 (+0.0259)
+    C2_prefix_and_pre_core   share=0.316  h2_k=2.424 (+0.242)  H_int=2.094  contrib=0.7668 (+0.1213)
+    C3_core_internal         share=0.145  h2_k=1.847 (-0.299)  H_int=1.414  contrib=0.2670 (-0.2133)
+    C4_core_suf_and_suffix   share=0.197  h2_k=2.438 (+0.098)  H_int=1.831  contrib=0.4794 (+0.1367)
+  s50_L4_K12_b1_a1.0_g1.0 (A14<=0)     h1=3.828  h2=2.317 (Delta=+0.208)  [w_end->' ': 0.819b, ' '->w_start: 3.243b]
+    C1_cross_word_space      share=0.332  h2_k=2.031 (+0.112)  H_int=1.621  contrib=0.6743 (+0.0336)
+    C2_prefix_and_pre_core   share=0.311  h2_k=2.582 (+0.400)  H_int=2.235  contrib=0.8041 (+0.1585)
+    C3_core_internal         share=0.160  h2_k=2.072 (-0.075)  H_int=1.670  contrib=0.3310 (-0.1493)
+    C4_core_suf_and_suffix   share=0.197  h2_k=2.579 (+0.239)  H_int=1.973  contrib=0.5074 (+0.1648)
+  s50_L4_K0_b1_a0.7_g0.0 (gamma=0)     h1=3.905  h2=2.770 (Delta=+0.660)  [w_end->' ': 1.390b, ' '->w_start: 3.303b]
+    C1_cross_word_space      share=0.310  h2_k=2.347 (+0.428)  H_int=1.652  contrib=0.7269 (+0.0862)
+    C2_prefix_and_pre_core   share=0.308  h2_k=3.007 (+0.825)  H_int=2.621  contrib=0.9248 (+0.2792)
+    C3_core_internal         share=0.170  h2_k=2.736 (+0.590)  H_int=2.272  contrib=0.4662 (-0.0141)
+    C4_core_suf_and_suffix   share=0.212  h2_k=3.070 (+0.730)  H_int=2.332  contrib=0.6518 (+0.3092)
+
+1C. Quantitative Anatomy of the A14 Conflict (Latin plaintext lag-1 letter MI I(X_t; X_{t+1}) = 0.5074 bits):
+  Voynich_ZL3b                         I(PS;C)=3.186b  PS_exc=+0.1157  I_obs(C1;C2)=1.3469  I_shuf=1.3784  A14=-0.0315  adj_eq=0.0503  nonadj_eq=0.0469
+  s50_L4_K0_b1_a0.7_g1.0 (closest)     I(PS;C)=2.324b  PS_exc=+0.2706  I_obs(C1;C2)=1.2184  I_shuf=1.1472  A14=+0.0713  adj_eq=0.0037  nonadj_eq=0.0658
+  s50_L4_K0_b1_a1.0_g1.0 (Moran hit)   I(PS;C)=1.928b  PS_exc=+0.2817  I_obs(C1;C2)=0.6176  I_shuf=0.4950  A14=+0.1226  adj_eq=0.0011  nonadj_eq=0.0860
+  s50_L4_K12_b1_a1.0_g1.0 (A14<=0)     I(PS;C)=1.867b  PS_exc=+0.2464  I_obs(C1;C2)=0.9195  I_shuf=0.9051  A14=+0.0144  adj_eq=0.0063  nonadj_eq=0.1098
+  s50_L4_K0_b1_a0.7_g0.0 (gamma=0)     I(PS;C)=2.676b  PS_exc=+0.1429  I_obs(C1;C2)=2.3141  I_shuf=2.3158  A14=-0.0017  adj_eq=0.0134  nonadj_eq=0.0324
+
+=== PART 2: Wider L4w Construction Grid (36 pre-registered points on Latin seed 0) ===
+Reference extra discriminators: Voynich ZL3b: f4_prefix_gain=+0.0891  CHARWIN=+0.0754  Cov(|A|,|C|)=-0.5460 | s50 closest L4: f4_prefix_gain=+0.0179  CHARWIN=-0.1107  Cov(|A|,|C|)=-0.0576
+L4w cal eta=0.0 delta=0.00 alpha=0.46 p_rep=0.00 beta=0.72: types 16436*  hapax 0.771*  h2 2.696*  A14 -0.0038  Moran +0.2185*  dist=11.92  f4=-0.0107  CHARWIN=+0.0126  CovAC=-0.5115
+L4w cal eta=0.0 delta=0.00 alpha=0.46 p_rep=0.18 beta=0.72: types 15878*  hapax 0.756*  h2 2.697*  A14 -0.0315  Moran +0.2125*  dist=11.95  f4=-0.0144  CHARWIN=+0.0206  CovAC=-0.4609
+L4w cal eta=0.0 delta=0.00 alpha=0.60 p_rep=0.00 beta=0.72: types 12590*  hapax 0.739*  h2 2.587*  A14 -0.0046  Moran +0.2129*  dist=9.74  f4=+0.0002  CHARWIN=-0.0524  CovAC=-0.5234
+L4w cal eta=0.0 delta=0.00 alpha=0.60 p_rep=0.18 beta=0.72: types 12018*  hapax 0.717  h2 2.587*  A14 -0.0176  Moran +0.2046*  dist=9.75  f4=+0.0015  CHARWIN=-0.0589  CovAC=-0.4670
+L4w cal eta=0.0 delta=1.25 alpha=0.46 p_rep=0.00 beta=0.72: types 6852  hapax 0.696  h2 2.157*  A14 +0.0141*  Moran +0.1693  dist=2.41  f4=+0.0049  CHARWIN=-0.1782  CovAC=-0.8648
+L4w cal eta=0.0 delta=1.25 alpha=0.46 p_rep=0.18 beta=0.72: types 7392  hapax 0.677  h2 2.208*  A14 -0.0077  Moran +0.1668  dist=2.15  f4=+0.0019  CHARWIN=-0.1692  CovAC=-0.6544
+L4w cal eta=0.0 delta=1.25 alpha=0.60 p_rep=0.00 beta=0.72: types 5348*  hapax 0.651  h2 2.106  A14 +0.0272*  Moran +0.1405  dist=3.72  f4=+0.0055  CHARWIN=-0.2401  CovAC=-0.9503
+L4w cal eta=0.0 delta=1.25 alpha=0.60 p_rep=0.18 beta=0.72: types 5754*  hapax 0.618*  h2 2.159*  A14 -0.0033  Moran +0.1265  dist=1.55  f4=+0.0059  CHARWIN=-0.2430  CovAC=-0.6092
+L4w cal eta=0.0 delta=1.60 alpha=0.46 p_rep=0.00 beta=0.72: types 5784*  hapax 0.661  h2 2.092  A14 +0.0205*  Moran +0.1560  dist=3.05  f4=+0.0058  CHARWIN=-0.2280  CovAC=-1.0002
+L4w cal eta=0.0 delta=1.60 alpha=0.46 p_rep=0.18 beta=0.72: types 6448  hapax 0.643  h2 2.153*  A14 -0.0106  Moran +0.1465  dist=1.05  f4=+0.0036  CHARWIN=-0.2275  CovAC=-0.8113
+L4w cal eta=0.0 delta=1.60 alpha=0.60 p_rep=0.00 beta=0.72: types 4595*  hapax 0.621*  h2 2.051  A14 +0.0250*  Moran +0.1215  dist=3.50  f4=+0.0056  CHARWIN=-0.2753  CovAC=-0.9852
+L4w cal eta=0.0 delta=1.60 alpha=0.60 p_rep=0.18 beta=0.72: types 5118*  hapax 0.599*  h2 2.110  A14 +0.0072*  Moran +0.1075*  dist=2.27  f4=+0.0080  CHARWIN=-0.2693  CovAC=-0.8049
+L4w cal eta=2.0 delta=0.00 alpha=0.46 p_rep=0.00 beta=0.72: types 15147*  hapax 0.732*  h2 2.645*  A14 -0.0338  Moran +0.2101*  dist=10.91  f4=+0.0666  CHARWIN=-0.1205  CovAC=-0.4350
+L4w cal eta=2.0 delta=0.00 alpha=0.46 p_rep=0.18 beta=0.72: types 14643*  hapax 0.723*  h2 2.641*  A14 -0.0386  Moran +0.2021*  dist=10.81  f4=+0.0578  CHARWIN=-0.1148  CovAC=-0.3734
+L4w cal eta=2.0 delta=0.00 alpha=0.60 p_rep=0.00 beta=0.72: types 11680*  hapax 0.709  h2 2.533*  A14 -0.0269  Moran +0.2086*  dist=8.66  f4=+0.0852  CHARWIN=-0.1687  CovAC=-0.4429
+L4w cal eta=2.0 delta=0.00 alpha=0.60 p_rep=0.18 beta=0.72: types 11329*  hapax 0.705  h2 2.533*  A14 -0.0394  Moran +0.1912*  dist=8.67  f4=+0.0799  CHARWIN=-0.1676  CovAC=-0.3621
+L4w cal eta=2.0 delta=1.25 alpha=0.46 p_rep=0.00 beta=0.72: types 7038  hapax 0.680  h2 2.160*  A14 +0.0036*  Moran +0.1746*  dist=1.36  f4=+0.0730  CHARWIN=-0.2880  CovAC=-0.7660
+L4w cal eta=2.0 delta=1.25 alpha=0.46 p_rep=0.18 beta=0.72: types 7466  hapax 0.671  h2 2.200*  A14 -0.0251  Moran +0.1537  dist=1.99  f4=+0.0925  CHARWIN=-0.2645  CovAC=-0.6044
+L4w cal eta=2.0 delta=1.25 alpha=0.60 p_rep=0.00 beta=0.72: types 5498*  hapax 0.652  h2 2.097  A14 +0.0231*  Moran +0.1344  dist=3.31  f4=+0.0755  CHARWIN=-0.3225  CovAC=-0.7074
+L4w cal eta=2.0 delta=1.25 alpha=0.60 p_rep=0.18 beta=0.72: types 5828*  hapax 0.630*  h2 2.138  A14 +0.0084*  Moran +0.1136  dist=1.84  f4=+0.0931  CHARWIN=-0.3037  CovAC=-0.6349
+L4w cal eta=2.0 delta=1.60 alpha=0.46 p_rep=0.00 beta=0.72: types 5956*  hapax 0.661  h2 2.095  A14 +0.0182*  Moran +0.1526  dist=2.82  f4=+0.0676  CHARWIN=-0.3260  CovAC=-1.0224
+L4w cal eta=2.0 delta=1.60 alpha=0.46 p_rep=0.18 beta=0.72: types 6530  hapax 0.649  h2 2.145  A14 -0.0099  Moran +0.1318  dist=0.90  f4=+0.0964  CHARWIN=-0.3341  CovAC=-0.6855 [ALL-5 HIT + f4>=0.08]
+L4w cal eta=2.0 delta=1.60 alpha=0.60 p_rep=0.00 beta=0.72: types 4690*  hapax 0.623*  h2 2.043*  A14 +0.0276*  Moran +0.1197  dist=3.76  f4=+0.0653  CHARWIN=-0.3786  CovAC=-1.0018
+L4w cal eta=2.0 delta=1.60 alpha=0.60 p_rep=0.18 beta=0.72: types 5185*  hapax 0.614*  h2 2.093  A14 +0.0209*  Moran +0.0904*  dist=3.09  f4=+0.0993  CHARWIN=-0.3439  CovAC=-0.6438
+L4w cal eta=4.0 delta=0.00 alpha=0.46 p_rep=0.00 beta=0.72: types 14807*  hapax 0.717  h2 2.644*  A14 -0.0355  Moran +0.2104*  dist=10.87  f4=+0.1151  CHARWIN=-0.2102  CovAC=-0.3553
+L4w cal eta=4.0 delta=0.00 alpha=0.46 p_rep=0.18 beta=0.72: types 14414*  hapax 0.715  h2 2.645*  A14 -0.0331  Moran +0.2085*  dist=10.89  f4=+0.1151  CHARWIN=-0.1858  CovAC=-0.3005
+L4w cal eta=4.0 delta=0.00 alpha=0.60 p_rep=0.00 beta=0.72: types 11483*  hapax 0.701  h2 2.538*  A14 -0.0258  Moran +0.2069*  dist=8.76  f4=+0.1298  CHARWIN=-0.2520  CovAC=-0.4254
+L4w cal eta=4.0 delta=0.00 alpha=0.60 p_rep=0.18 beta=0.72: types 11204*  hapax 0.701  h2 2.537*  A14 -0.0347  Moran +0.1910*  dist=8.75  f4=+0.1282  CHARWIN=-0.2381  CovAC=-0.3330
+L4w cal eta=4.0 delta=1.25 alpha=0.46 p_rep=0.00 beta=0.72: types 7079  hapax 0.677  h2 2.178*  A14 +0.0351*  Moran +0.1797*  dist=4.51  f4=+0.1185  CHARWIN=-0.3937  CovAC=-0.6778
+L4w cal eta=4.0 delta=1.25 alpha=0.46 p_rep=0.18 beta=0.72: types 7481  hapax 0.666  h2 2.218*  A14 -0.0048  Moran +0.1525  dist=2.36  f4=+0.1432  CHARWIN=-0.3317  CovAC=-0.5838
+L4w cal eta=4.0 delta=1.25 alpha=0.60 p_rep=0.00 beta=0.72: types 5558*  hapax 0.655  h2 2.113  A14 +0.0662*  Moran +0.1454  dist=7.62  f4=+0.0957  CHARWIN=-0.4104  CovAC=-0.7017
+L4w cal eta=4.0 delta=1.25 alpha=0.60 p_rep=0.18 beta=0.72: types 5758*  hapax 0.629*  h2 2.150*  A14 +0.0264*  Moran +0.1161  dist=3.64  f4=+0.1516  CHARWIN=-0.3853  CovAC=-0.6336
+L4w cal eta=4.0 delta=1.60 alpha=0.46 p_rep=0.00 beta=0.72: types 6037  hapax 0.665  h2 2.114  A14 +0.0594*  Moran +0.1582  dist=6.94  f4=+0.0883  CHARWIN=-0.4261  CovAC=-0.7603
+L4w cal eta=4.0 delta=1.60 alpha=0.46 p_rep=0.18 beta=0.72: types 6550  hapax 0.648  h2 2.161*  A14 +0.0068*  Moran +0.1334  dist=1.68  f4=+0.1214  CHARWIN=-0.4086  CovAC=-0.5966
+L4w cal eta=4.0 delta=1.60 alpha=0.60 p_rep=0.00 beta=0.72: types 4731*  hapax 0.631*  h2 2.059  A14 +0.0784*  Moran +0.1258  dist=8.84  f4=+0.0722  CHARWIN=-0.4594  CovAC=-1.0477
+L4w cal eta=4.0 delta=1.60 alpha=0.60 p_rep=0.18 beta=0.72: types 5090*  hapax 0.612*  h2 2.105  A14 +0.0557*  Moran +0.1000*  dist=6.57  f4=+0.1274  CHARWIN=-0.4255  CovAC=-0.6141
+L4w grid summary (36 points, 80.0s): 1/36 points hit all 5 s50 targets simultaneously; 1/36 hit all 5 + f4_prefix_gain >= +0.08; per-target hits: {'types': 10, 'hapax': 22, 'h2': 13, 'a14': 18, 'moran': 19, 'f4>=0.08': 16, 'CHARWIN>0': 2}
+Selected L4w parameter point: eta=2.0 delta=1.6 alpha=0.46 p_rep=0.18 beta=0.72 gamma0=0.35 -> hits ALL 5 s50 targets AND f4_prefix_gain >= +0.08
+Selected L4w h2 & A14 anatomy: h2=2.145 (C1_cross_word_space=0.5753, C2_prefix_and_pre_core=0.6383, C3_core_internal=0.4145, C4_core_suf_and_suffix=0.5171) | I(PS;C)=2.876b  I_obs(C1;C2)=1.1230  I_shuf=1.1329  A14=-0.0099  nonadj_eq=0.0542
+
+--- 2B. 18 L4w Ciphers (6 languages x 3 keys) at Selected L4w Point ---
+L4w cipher latin    key 1: types 6307  hapax 0.644  h2 2.087  A14 +0.0141*  Moran +0.1011*  f4=+0.0631  CHARWIN=-0.3371  CovAC=-0.9035  miss
+L4w cipher latin    key 2: types 6446  hapax 0.643  h2 2.110  A14 -0.0133  Moran +0.1442  f4=+0.1012  CHARWIN=-0.2630  CovAC=-0.8284  ALL-5 HIT
+L4w cipher latin    key 3: types 6687  hapax 0.645  h2 2.142  A14 +0.0088*  Moran +0.1531  f4=+0.1067  CHARWIN=-0.3597  CovAC=-1.3459  miss
+L4w cipher italian  key 1: types 6445  hapax 0.635*  h2 2.104  A14 +0.0147*  Moran +0.1041*  f4=+0.0930  CHARWIN=-0.3428  CovAC=-0.9474  miss
+L4w cipher italian  key 2: types 6351  hapax 0.631*  h2 2.117  A14 +0.0111*  Moran +0.1556  f4=+0.0768  CHARWIN=-0.2770  CovAC=-0.8811  miss
+L4w cipher italian  key 3: types 6572  hapax 0.652  h2 2.128  A14 -0.0023  Moran +0.1191  f4=+0.1008  CHARWIN=-0.4044  CovAC=-1.4155  ALL-5 HIT
+L4w cipher german   key 1: types 6307  hapax 0.637*  h2 2.097  A14 +0.0360*  Moran +0.1201  f4=+0.0619  CHARWIN=-0.3501  CovAC=-1.2256  miss
+L4w cipher german   key 2: types 6590  hapax 0.640*  h2 2.109  A14 +0.0066*  Moran +0.1396  f4=+0.0828  CHARWIN=-0.2903  CovAC=-0.8485  miss
+L4w cipher german   key 3: types 6604  hapax 0.646  h2 2.142  A14 +0.0034*  Moran +0.1663  f4=+0.0864  CHARWIN=-0.3668  CovAC=-1.4391  miss
+L4w cipher occitan  key 1: types 6433  hapax 0.633*  h2 2.131  A14 +0.0188*  Moran +0.1342  f4=+0.0522  CHARWIN=-0.3690  CovAC=-0.9955  miss
+L4w cipher occitan  key 2: types 6638  hapax 0.632*  h2 2.141  A14 +0.0179*  Moran +0.1319  f4=+0.0633  CHARWIN=-0.2999  CovAC=-0.8073  miss
+L4w cipher occitan  key 3: types 6709  hapax 0.658  h2 2.128  A14 -0.0138  Moran +0.1211  f4=+0.0764  CHARWIN=-0.3380  CovAC=-1.3876  ALL-5 HIT
+L4w cipher czech    key 1: types 6414  hapax 0.634*  h2 2.121  A14 +0.0039*  Moran +0.1161  f4=+0.0576  CHARWIN=-0.3495  CovAC=-0.8328  miss
+L4w cipher czech    key 2: types 6746  hapax 0.654  h2 2.129  A14 -0.0210  Moran +0.1504  f4=+0.0893  CHARWIN=-0.3033  CovAC=-0.7594  ALL-5 HIT
+L4w cipher czech    key 3: types 6438  hapax 0.636*  h2 2.096  A14 -0.0006  Moran +0.1056*  f4=+0.0797  CHARWIN=-0.3358  CovAC=-1.3293  miss
+L4w cipher catalan  key 1: types 6340  hapax 0.643  h2 2.100  A14 +0.0117*  Moran +0.1151  f4=+0.0580  CHARWIN=-0.3419  CovAC=-1.0950  miss
+L4w cipher catalan  key 2: types 6310  hapax 0.630*  h2 2.122  A14 +0.0216*  Moran +0.1399  f4=+0.0604  CHARWIN=-0.2411  CovAC=-0.7817  miss
+L4w cipher catalan  key 3: types 6573  hapax 0.653  h2 2.125  A14 -0.0200  Moran +0.1133  f4=+0.0779  CHARWIN=-0.3434  CovAC=-1.3448  ALL-5 HIT
+18-cipher L4w target summary: 5/18 ciphers hit all 5 s50 targets (languages with >=2/3 hitting all 5: []); 3/18 hit all 5 + f4>=+0.08.
+
+--- 2C. Solver Verification on L4w Across 6 Languages (RESTARTS=6, SWEEPS=30) ---
+L4w solver known_pair  latin    key 1: acc=0.9958 PASS (>=0.90: yes)  nulls=39/145  rd=pair |P|=28 |S|=18  17.5s
+L4w solver unknown_seg latin    key 1: acc=0.1235 FAIL (>=0.90: no)  nulls=118/257  rd=pair |P|=20 |S|=18  64.3s
+L4w solver known_pair  italian  key 1: acc=0.9971 PASS (>=0.90: yes)  nulls=40/145  rd=pair |P|=28 |S|=18  18.9s
+L4w solver unknown_seg italian  key 1: acc=0.2145 FAIL (>=0.90: no)  nulls=120/275  rd=pair |P|=21 |S|=18  70.1s
+L4w solver known_pair  german   key 1: acc=0.9969 PASS (>=0.90: yes)  nulls=34/141  rd=pair |P|=28 |S|=18  47.0s
+L4w solver unknown_seg german   key 1: acc=0.7254 FAIL (>=0.90: no)  nulls=64/252  rd=pair |P|=20 |S|=17  230.3s
+L4w solver known_pair  occitan  key 1: acc=0.9972 PASS (>=0.90: yes)  nulls=37/147  rd=pair |P|=28 |S|=18  37.0s
+L4w solver unknown_seg occitan  key 1: acc=0.8676 PASS (>=0.90: no)  nulls=51/245  rd=pair |P|=20 |S|=18  120.9s
+L4w solver known_pair  czech    key 1: acc=0.9965 PASS (>=0.90: yes)  nulls=36/144  rd=pair |P|=28 |S|=18  32.6s
+L4w solver unknown_seg czech    key 1: acc=0.2423 FAIL (>=0.90: no)  nulls=90/297  rd=pair |P|=23 |S|=19  92.8s
+L4w solver known_pair  catalan  key 1: acc=0.9965 PASS (>=0.90: yes)  nulls=39/146  rd=pair |P|=28 |S|=18  20.7s
+L4w solver unknown_seg catalan  key 1: acc=0.3485 FAIL (>=0.90: no)  nulls=73/234  rd=pair |P|=18 |S|=19  48.5s
+L4w solver summary: known_pair passes 6/6 (['latin', 'italian', 'german', 'occitan', 'czech', 'catalan']); unknown_seg passes 1/6 (['occitan']).
+
+=== PART 3: Blind 6-Language Identification & Null-Control Gate ===
+3A. Candidate Language Baseline Entropies (23-letter alphabet):
+  latin    H_1 (unigram) = 3.958 b/let  H_5 (5-gram held-out) = 2.933 b/let  Delta_H_true = H_1 - H_5 = 1.026 b/let
+  italian  H_1 (unigram) = 3.958 b/let  H_5 (5-gram held-out) = 2.895 b/let  Delta_H_true = H_1 - H_5 = 1.063 b/let
+  german   H_1 (unigram) = 3.970 b/let  H_5 (5-gram held-out) = 2.873 b/let  Delta_H_true = H_1 - H_5 = 1.097 b/let
+  occitan  H_1 (unigram) = 3.950 b/let  H_5 (5-gram held-out) = 3.205 b/let  Delta_H_true = H_1 - H_5 = 0.746 b/let
+  czech    H_1 (unigram) = 4.099 b/let  H_5 (5-gram held-out) = 3.326 b/let  Delta_H_true = H_1 - H_5 = 0.772 b/let
+  catalan  H_1 (unigram) = 3.949 b/let  H_5 (5-gram held-out) = 2.467 b/let  Delta_H_true = H_1 - H_5 = 1.482 b/let
+
+3B. Blind 6-Language Identification Results (45 texts x 6 LMs = 270 solves, 3346.5s):
+  L2_latin_k1              true=latin    top1=italian  Match_adj=+2.025 (raw=+2.106)  margin=+0.534  gate>=0.50:True  MISS | lat:+1.063(dH=+1.196)  ita:+2.025(dH=+2.237)  ger:+0.910(dH=+1.148)  occ:+1.491(dH=+1.196)  cze:+1.026(dH=+0.875)  cat:+1.152(dH=+1.852)
+  L4_latin_k1              true=latin    top1=occitan  Match_adj=+0.988 (raw=+1.113)  margin=+0.102  gate>=0.50:True  MISS | lat:+0.887(dH=+1.022)  ita:+0.796(dH=+0.933)  ger:+0.562(dH=+0.723)  occ:+0.988(dH=+0.830)  cze:+0.728(dH=+0.654)  cat:+0.669(dH=+1.129)
+  L2_latin_k2              true=latin    top1=latin    Match_adj=+4.213 (raw=+4.222)  margin=+2.277  gate>=0.50:True  OK | lat:+4.213(dH=+4.330)  ita:+1.936(dH=+2.158)  ger:+0.973(dH=+1.203)  occ:+1.385(dH=+1.125)  cze:+1.067(dH=+0.912)  cat:+1.055(dH=+1.706)
+  L4_latin_k2              true=latin    top1=italian  Match_adj=+1.038 (raw=+1.117)  margin=+0.012  gate>=0.50:True  MISS | lat:+0.781(dH=+0.912)  ita:+1.038(dH=+1.187)  ger:+0.684(dH=+0.873)  occ:+1.027(dH=+0.834)  cze:+0.435(dH=+0.400)  cat:+0.542(dH=+0.924)
+  L2_latin_k3              true=latin    top1=latin    Match_adj=+4.211 (raw=+4.219)  margin=+2.729  gate>=0.50:True  OK | lat:+4.211(dH=+4.328)  ita:+1.129(dH=+1.295)  ger:+1.083(dH=+1.338)  occ:+1.481(dH=+1.182)  cze:+0.986(dH=+0.842)  cat:+0.810(dH=+1.316)
+  L4_latin_k3              true=latin    top1=latin    Match_adj=+3.624 (raw=+3.639)  margin=+2.580  gate>=0.50:True  OK | lat:+3.624(dH=+3.732)  ita:+1.044(dH=+1.192)  ger:+0.651(dH=+0.841)  occ:+1.040(dH=+0.849)  cze:+0.633(dH=+0.552)  cat:+0.606(dH=+1.017)
+  L2_italian_k1            true=italian  top1=occitan  Match_adj=+2.008 (raw=+2.093)  margin=+0.393  gate>=0.50:True  MISS | lat:+1.615(dH=+1.770)  ita:+1.113(dH=+1.274)  ger:+1.059(dH=+1.306)  occ:+2.008(dH=+1.560)  cze:+0.965(dH=+0.816)  cat:+0.631(dH=+1.049)
+  L4_italian_k1            true=italian  top1=italian  Match_adj=+3.808 (raw=+3.821)  margin=+2.208  gate>=0.50:True  OK | lat:+0.805(dH=+0.938)  ita:+3.808(dH=+4.060)  ger:+0.824(dH=+1.017)  occ:+1.600(dH=+1.284)  cze:+0.801(dH=+0.707)  cat:+0.631(dH=+1.037)
+  L2_italian_k2            true=italian  top1=italian  Match_adj=+4.388 (raw=+4.390)  margin=+2.859  gate>=0.50:True  OK | lat:+0.970(dH=+1.103)  ita:+4.388(dH=+4.665)  ger:+1.182(dH=+1.441)  occ:+1.530(dH=+1.228)  cze:+1.007(dH=+0.835)  cat:+1.085(dH=+1.733)
+  L4_italian_k2            true=italian  top1=italian  Match_adj=+3.699 (raw=+3.704)  margin=+2.545  gate>=0.50:True  OK | lat:+0.782(dH=+0.913)  ita:+3.699(dH=+3.935)  ger:+1.012(dH=+1.261)  occ:+1.154(dH=+0.926)  cze:+0.621(dH=+0.554)  cat:+0.543(dH=+0.946)
+  L2_italian_k3            true=italian  top1=occitan  Match_adj=+2.254 (raw=+2.361)  margin=+0.229  gate>=0.50:True  MISS | lat:+1.573(dH=+1.721)  ita:+2.025(dH=+2.250)  ger:+1.057(dH=+1.306)  occ:+2.254(dH=+1.760)  cze:+1.083(dH=+0.894)  cat:+1.021(dH=+1.633)
+  L4_italian_k3            true=italian  top1=italian  Match_adj=+3.764 (raw=+3.770)  margin=+2.381  gate>=0.50:True  OK | lat:+0.930(dH=+1.066)  ita:+3.764(dH=+4.006)  ger:+0.980(dH=+1.191)  occ:+1.383(dH=+1.116)  cze:+0.596(dH=+0.518)  cat:+0.386(dH=+0.701)
+  L2_german_k1             true=german   top1=german   Match_adj=+4.333 (raw=+4.340)  margin=+2.295  gate>=0.50:True  OK | lat:+1.621(dH=+1.778)  ita:+2.038(dH=+2.250)  ger:+4.333(dH=+4.763)  occ:+1.598(dH=+1.275)  cze:+1.033(dH=+0.861)  cat:+0.601(dH=+0.984)
+  L4_german_k1             true=german   top1=german   Match_adj=+3.700 (raw=+3.717)  margin=+2.059  gate>=0.50:True  OK | lat:+0.662(dH=+0.792)  ita:+1.387(dH=+1.565)  ger:+3.700(dH=+4.079)  occ:+1.641(dH=+1.324)  cze:+0.994(dH=+0.830)  cat:+0.786(dH=+1.273)
+  L2_german_k2             true=german   top1=occitan  Match_adj=+1.683 (raw=+1.781)  margin=+0.336  gate>=0.50:True  MISS | lat:+1.347(dH=+1.497)  ita:+1.066(dH=+1.242)  ger:+1.063(dH=+1.299)  occ:+1.683(dH=+1.328)  cze:+0.969(dH=+0.812)  cat:+1.148(dH=+1.842)
+  L4_german_k2             true=german   top1=german   Match_adj=+3.228 (raw=+3.243)  margin=+1.967  gate>=0.50:True  OK | lat:+0.743(dH=+0.864)  ita:+1.012(dH=+1.159)  ger:+3.228(dH=+3.559)  occ:+1.261(dH=+1.022)  cze:+0.859(dH=+0.740)  cat:+0.547(dH=+0.909)
+  L2_german_k3             true=german   top1=occitan  Match_adj=+1.707 (raw=+1.830)  margin=+0.054  gate>=0.50:True  MISS | lat:+1.653(dH=+1.811)  ita:+1.137(dH=+1.308)  ger:+1.153(dH=+1.388)  occ:+1.707(dH=+1.365)  cze:+1.002(dH=+0.852)  cat:+0.737(dH=+1.207)
+  L4_german_k3             true=german   top1=german   Match_adj=+3.738 (raw=+3.750)  margin=+2.297  gate>=0.50:True  OK | lat:+1.041(dH=+1.177)  ita:+1.227(dH=+1.388)  ger:+3.738(dH=+4.115)  occ:+1.441(dH=+1.164)  cze:+1.001(dH=+0.836)  cat:+0.757(dH=+1.219)
+  L2_occitan_k1            true=occitan  top1=occitan  Match_adj=+5.137 (raw=+5.159)  margin=+3.140  gate>=0.50:True  OK | lat:+1.562(dH=+1.704)  ita:+1.188(dH=+1.341)  ger:+1.497(dH=+1.764)  occ:+5.137(dH=+3.847)  cze:+1.036(dH=+0.872)  cat:+1.998(dH=+2.989)
+  L4_occitan_k1            true=occitan  top1=occitan  Match_adj=+4.761 (raw=+4.784)  margin=+2.947  gate>=0.50:True  OK | lat:+0.958(dH=+1.083)  ita:+1.185(dH=+1.353)  ger:+1.106(dH=+1.339)  occ:+4.761(dH=+3.567)  cze:+0.817(dH=+0.704)  cat:+1.814(dH=+2.730)
+  L2_occitan_k2            true=occitan  top1=occitan  Match_adj=+5.134 (raw=+5.157)  margin=+3.115  gate>=0.50:True  OK | lat:+1.160(dH=+1.281)  ita:+2.003(dH=+2.221)  ger:+1.314(dH=+1.539)  occ:+5.134(dH=+3.844)  cze:+0.964(dH=+0.845)  cat:+2.019(dH=+3.015)
+  L4_occitan_k2            true=occitan  top1=occitan  Match_adj=+3.935 (raw=+3.963)  margin=+2.926  gate>=0.50:True  OK | lat:+0.681(dH=+0.825)  ita:+1.009(dH=+1.142)  ger:+0.813(dH=+1.018)  occ:+3.935(dH=+2.955)  cze:+0.429(dH=+0.423)  cat:+0.538(dH=+0.921)
+  L2_occitan_k3            true=occitan  top1=italian  Match_adj=+1.981 (raw=+2.080)  margin=+0.749  gate>=0.50:True  MISS | lat:+0.917(dH=+1.024)  ita:+1.981(dH=+2.210)  ger:+1.083(dH=+1.291)  occ:+1.232(dH=+1.009)  cze:+0.968(dH=+0.822)  cat:+1.119(dH=+1.786)
+  L4_occitan_k3            true=occitan  top1=occitan  Match_adj=+4.111 (raw=+4.138)  margin=+2.614  gate>=0.50:True  OK | lat:+0.691(dH=+0.815)  ita:+0.822(dH=+0.950)  ger:+0.794(dH=+0.971)  occ:+4.111(dH=+3.085)  cze:+0.524(dH=+0.459)  cat:+1.496(dH=+2.251)
+  L2_czech_k1              true=czech    top1=italian  Match_adj=+2.057 (raw=+2.152)  margin=+0.373  gate>=0.50:True  MISS | lat:+1.548(dH=+1.693)  ita:+2.057(dH=+2.286)  ger:+1.121(dH=+1.360)  occ:+1.684(dH=+1.350)  cze:+1.462(dH=+1.198)  cat:+0.651(dH=+1.086)
+  L4_czech_k1              true=czech    top1=czech    Match_adj=+5.056 (raw=+5.076)  margin=+3.439  gate>=0.50:True  OK | lat:+0.998(dH=+1.151)  ita:+1.163(dH=+1.325)  ger:+1.369(dH=+1.624)  occ:+1.617(dH=+1.300)  cze:+5.056(dH=+3.921)  cat:+0.764(dH=+1.236)
+  L2_czech_k2              true=czech    top1=czech    Match_adj=+5.096 (raw=+5.112)  margin=+3.111  gate>=0.50:True  OK | lat:+1.466(dH=+1.600)  ita:+1.985(dH=+2.210)  ger:+1.508(dH=+1.805)  occ:+1.404(dH=+1.128)  cze:+5.096(dH=+3.948)  cat:+1.171(dH=+1.858)
+  L4_czech_k2              true=czech    top1=czech    Match_adj=+1.252 (raw=+1.350)  margin=+0.168  gate>=0.50:True  OK | lat:+0.746(dH=+0.856)  ita:+0.645(dH=+0.779)  ger:+0.648(dH=+0.826)  occ:+1.085(dH=+0.876)  cze:+1.252(dH=+1.042)  cat:+0.533(dH=+0.907)
+  L2_czech_k3              true=czech    top1=czech    Match_adj=+5.098 (raw=+5.114)  margin=+3.095  gate>=0.50:True  OK | lat:+1.090(dH=+1.211)  ita:+2.004(dH=+2.223)  ger:+1.016(dH=+1.271)  occ:+1.188(dH=+0.979)  cze:+5.098(dH=+3.950)  cat:+1.243(dH=+1.979)
+  L4_czech_k3              true=czech    top1=czech    Match_adj=+3.524 (raw=+3.550)  margin=+2.554  gate>=0.50:True  OK | lat:+0.649(dH=+0.760)  ita:+0.766(dH=+0.904)  ger:+0.693(dH=+0.912)  occ:+0.970(dH=+0.801)  cze:+3.524(dH=+2.742)  cat:+0.443(dH=+0.761)
+  L2_catalan_k1            true=catalan  top1=occitan  Match_adj=+3.973 (raw=+4.034)  margin=+1.985  gate>=0.50:True  MISS | lat:+0.982(dH=+1.104)  ita:+1.988(dH=+2.200)  ger:+1.146(dH=+1.398)  occ:+3.973(dH=+3.007)  cze:+0.992(dH=+0.858)  cat:+1.228(dH=+1.960)
+  L4_catalan_k1            true=catalan  top1=catalan  Match_adj=+3.280 (raw=+3.285)  margin=+1.595  gate>=0.50:True  OK | lat:+1.584(dH=+1.724)  ita:+1.251(dH=+1.434)  ger:+0.873(dH=+1.062)  occ:+1.685(dH=+1.352)  cze:+0.630(dH=+0.551)  cat:+3.280(dH=+4.868)
+  L2_catalan_k2            true=catalan  top1=occitan  Match_adj=+3.957 (raw=+4.016)  margin=+1.977  gate>=0.50:True  MISS | lat:+1.255(dH=+1.386)  ita:+1.979(dH=+2.193)  ger:+1.162(dH=+1.385)  occ:+3.957(dH=+2.994)  cze:+1.113(dH=+0.915)  cat:+1.205(dH=+1.920)
+  L4_catalan_k2            true=catalan  top1=italian  Match_adj=+1.128 (raw=+1.204)  margin=+0.026  gate>=0.50:True  MISS | lat:+0.755(dH=+0.850)  ita:+1.128(dH=+1.279)  ger:+0.725(dH=+0.918)  occ:+1.103(dH=+0.914)  cze:+0.549(dH=+0.479)  cat:+0.441(dH=+0.748)
+  L2_catalan_k3            true=catalan  top1=italian  Match_adj=+1.983 (raw=+2.074)  margin=+0.544  gate>=0.50:True  MISS | lat:+1.174(dH=+1.307)  ita:+1.983(dH=+2.204)  ger:+0.950(dH=+1.201)  occ:+1.439(dH=+1.151)  cze:+0.978(dH=+0.829)  cat:+0.604(dH=+1.022)
+  L4_catalan_k3            true=catalan  top1=catalan  Match_adj=+2.478 (raw=+2.497)  margin=+1.239  gate>=0.50:True  OK | lat:+0.813(dH=+0.939)  ita:+1.130(dH=+1.293)  ger:+0.377(dH=+0.561)  occ:+1.239(dH=+1.023)  cze:+0.454(dH=+0.426)  cat:+2.478(dH=+3.700)
+  L4w_latin_k1             true=latin    top1=occitan  Match_adj=+0.626 (raw=+0.756)  margin=+0.047  gate>=0.50:True  MISS | lat:+0.406(dH=+0.568)  ita:+0.579(dH=+0.743)  ger:+0.317(dH=+0.456)  occ:+0.626(dH=+0.564)  cze:+0.268(dH=+0.262)  cat:+0.098(dH=+0.254)
+  L4w_italian_k1           true=italian  top1=italian  Match_adj=+0.644 (raw=+0.754)  margin=+0.031  gate>=0.50:True  OK | lat:+0.612(dH=+0.776)  ita:+0.644(dH=+0.801)  ger:+0.515(dH=+0.676)  occ:+0.458(dH=+0.448)  cze:+0.305(dH=+0.297)  cat:+0.274(dH=+0.526)
+  L4w_german_k1            true=german   top1=german   Match_adj=+1.473 (raw=+1.585)  margin=+0.690  gate>=0.50:True  OK | lat:+0.486(dH=+0.654)  ita:+0.247(dH=+0.374)  ger:+1.473(dH=+1.740)  occ:+0.783(dH=+0.669)  cze:+0.429(dH=+0.414)  cat:+0.344(dH=+0.654)
+  L4w_occitan_k1           true=occitan  top1=occitan  Match_adj=+0.948 (raw=+1.056)  margin=+0.132  gate>=0.50:True  OK | lat:+0.527(dH=+0.656)  ita:+0.816(dH=+0.949)  ger:+0.314(dH=+0.488)  occ:+0.948(dH=+0.788)  cze:+0.583(dH=+0.517)  cat:+0.278(dH=+0.541)
+  L4w_czech_k1             true=czech    top1=occitan  Match_adj=+0.627 (raw=+0.740)  margin=+0.237  gate>=0.50:True  MISS | lat:+0.390(dH=+0.540)  ita:+0.342(dH=+0.473)  ger:+0.068(dH=+0.214)  occ:+0.627(dH=+0.552)  cze:+0.375(dH=+0.343)  cat:+0.228(dH=+0.542)
+  L4w_catalan_k1           true=catalan  top1=occitan  Match_adj=+0.667 (raw=+0.806)  margin=+0.038  gate>=0.50:True  MISS | lat:+0.382(dH=+0.495)  ita:+0.630(dH=+0.784)  ger:+0.315(dH=+0.451)  occ:+0.667(dH=+0.601)  cze:+0.331(dH=+0.327)  cat:+0.267(dH=+0.526)
+  CTRL1_s67_CA_ZL3b        true=none     top1=czech    Match_adj=+0.194 (raw=+0.302)  margin=+0.059  gate>=0.50:False OK | lat:+0.108(dH=+0.205)  ita:+0.122(dH=+0.243)  ger:+0.088(dH=+0.212)  occ:+0.136(dH=+0.179)  cze:+0.194(dH=+0.233)  cat:+0.108(dH=+0.265)
+  CTRL2_shuffled_L4_latin  true=none     top1=czech    Match_adj=+0.002 (raw=+0.100)  margin=+0.072  gate>=0.50:False OK | lat:-0.095(dH=+0.029)  ita:-0.176(dH=-0.053)  ger:-0.134(dH=-0.036)  occ:-0.121(dH=+0.007)  cze:+0.002(dH=+0.077)  cat:-0.069(dH=+0.021)
+  CTRL3_Voynich_ZL3b_pair  true=none     top1=czech    Match_adj=+0.161 (raw=+0.228)  margin=+0.144  gate>=0.50:False OK | lat:+0.017(dH=+0.111)  ita:-0.004(dH=+0.109)  ger:-0.174(dH=-0.051)  occ:-0.130(dH=-0.005)  cze:+0.161(dH=+0.176)  cat:-0.073(dH=+0.001)
+
+3C. Blind Language-ID & Null-Gate Summary:
+  Family L2  : key-level Top-1 accuracy = 8/18 (44.4%); languages ranked #1 (majority of keys) = 3/6 (['latin', 'occitan', 'czech']); null-gate pass (>= 0.50) = 18/18; Match_adj range = [+1.683, +5.137] (mean +3.402)
+  Family L4  : key-level Top-1 accuracy = 15/18 (83.3%); languages ranked #1 (majority of keys) = 5/6 (['italian', 'german', 'occitan', 'czech', 'catalan']); null-gate pass (>= 0.50) = 18/18; Match_adj range = [+0.988, +5.056] (mean +3.173)
+  Family L4w : key-level Top-1 accuracy = 3/6 (50.0%); languages ranked #1 (majority of keys) = 3/6 (['italian', 'german', 'occitan']); null-gate pass (>= 0.50) = 6/6; Match_adj range = [+0.626, +1.473] (mean +0.831)
+  Negative Controls (CTRL1..3): rejected by null-gate (< 0.50) = 3/3; Match_adj values = [0.1944, 0.0024, 0.1609] (max = +0.1944)
+
+=== OVERALL S72 VERDICT & SYNTHESIS ===
+1. Part 1 (h2 / A14 Conflict Anatomy): In s50's L4, h2 is inflated (+0.175 to +0.208 bits above ZL3b's 2.109) primarily by C2 Prefix->Core (+0.129b) and C4 Core->Suffix (+0.134b) unattested junctures caused by the +0.5 pseudocount across 2,335 cores (94.6% pseudocount mass), while A14 > 0 (+0.0713 at K=0, gamma=1) is driven by plaintext letter bigram MI (0.5074b) leaking through within-word I((P,S);C) (2.324b) into adjacent cores when same-line non-adjacent core repetition is absent.
+2. Part 2 (Wider L4w Construction & Solver): 1/36 pre-registered L4w grid points on Latin seed 0 and 5/18 L4w ciphers across the 6 languages simultaneously hit all 5 s50 targets (types, hapax, h2, A14 <= 0, Moran), and 1/36 grid points (3/18 ciphers) also hit f4_prefix_gain >= +0.08, whereas CHARWIN is negative at all 24 points with delta > 0 (0/24 > 0; selected L4w point CHARWIN = -0.3341 vs ZL3b +0.0754). s50_solver still breaks L4w in 6/6 languages (known_pair) and 1/6 languages (unknown_seg) at >= 80% accuracy.
+3. Part 3 (Blind 6-Language ID & Null Gate): Normalized held-out sequential gain Match_adj(L) on untouched Half B identifies the true language Top-1 in 8/18 L2 ciphers, 15/18 L4 ciphers, and 3/6 L4w ciphers, while rejecting 3/3 non-cipher/shuffled negative controls (max Match_adj = +0.1944 vs gate 0.50).
+elapsed: 3503.6s; end 2026-10-18 04:32:31

@@ -1,0 +1,21 @@
+# s86 pre-registration stub, frozen before running on real data (D-048 / D-057)
+# Part 1: Solver Ladder & Blind 6-Language ID on H-14 (ST1) and H-02+H-14 (ST2_let, ST2_dig); planted vs negative controls vs Real Voynich (ZL3b, RF1b, IT2a) on Half A -> Half B and 5-fold / 15-quire CV.
+# Part 2: F-33 / L-174 119-page Herbal masked picture similarity Mantel decomposition (Edge vs Interior, Prefix vs Suffix, partial Mantel | D_layout & D_codex, 3 segmenters) across ZL3b, RF1b, IT2a.
+# Part 3: Multi-axis triangulation of SINGLE findings F-02 (c-314; data, split, physical s45) and F-21 (c-378; data, split, seg, physical s47).
+# Verify: grep -v ^# s86_sticky_table_solver_and_triangulation.prereg.sha256 | sha256sum -c -
+426b7b649361a8776a2152b95ddde4380d23af73f2e5096ed70891abee7937b3 *a2_position.py
+2f2b3d4af32a054a63f4c90492e56dd0e2e76d7157de1317a0d62aeb40223518 *corpora.py
+4f955d34794293725c0063020ff00b1c5ed401aa38ee361cd2e4b345eca57ba7 *g1_edge_joint.py
+a40137f5ea2b8ef54d8829cf4bdecefa43f393cb53d0e7a526afe8010489afc1 *n1_habit_table.py
+c63e035be6a0e03f7a71c0be6e5b1a3a1bd2033ce8041552bb169319f10df9ad *s50_solver.py
+1b5c5227cf12db05d7c09d73040fad545e5f318512254128c609dbe4441b965b *s50_solver_ladder.py
+6af7dbf59486209a8f5d0fac79850a9130a6d56797662e89a9e2a90111e30fe3 *s64_naibbe_taxonomy.py
+8e5299212a84ec552ec00d34aaa9871333e65e98c2bacc7ae45ebf12cc8cc354 *s67_constrained_assembly_loqo.py
+ae0a00e8df8b053677451a5dd96b55dc5a9e0942052a59147383129bec95b5cb *s70_canonical_segmentation_and_rare_cores.py
+43f7aab7ad8c2bfa12e9d020f4749eb11281d51d7262c898cb499452c0184a29 *s76_segmenter_independence.py
+2e36fc0a6ce81520ae521b78ea4bd8fd8cccea5048a4209bf6317ae39f59f3e0 *s86_sticky_table_solver_and_triangulation.py
+4b9a400be433c2429864c638e823c742d6a54899e36597c0e6a2269eaf24c06f *scoreboard/__init__.py
+a59c9c17f8abe4cc8e29347854b02304eaa6a13c90b32f1890c1b1a60e7b23ed *scoreboard/metrics_new.py
+8b4d2fdb08aa01f4b3402386b3ff1ccbc2041f662e10e8a440cae5d784874a65 *tools/boxes.py
+5a08d4252dabfbe5f4ef5f93e5f2808a678ebb76fe32d99891c8310679bc81aa *tools/ivtff_to_meta.py
+0e317c9a762e77c2f9002a1b95af367911a6714a7585803ab8715178a95a91c1 *vparse.py

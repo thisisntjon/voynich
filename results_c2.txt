@@ -1,0 +1,55 @@
+C2: section-seeded copy-and-mutate generator + line rules vs Voynich targets
+L=300 lexicon types per key; rules: p-initial prob 0.088, m-final prob 0.148; DRIFT_PAGES=20
+targets: within-hand NMI 0.275 (hand 1) / 0.333 (hand 2); p-init x15.97, m-final x16.55; h2 2.09; repeat 0.87%; samecol 0.044
+
+--- section NMI (B5 protocol) ---
+VOYNICH                    within-hand NMI: hand1 0.275 (perm 0.014, p99 0.047, rot p=0.000)   hand2 0.333 (perm 0.051, p99 0.128, rot p=0.048)
+NULL global, no rules      within-hand NMI: hand1 0.040 (perm 0.010, p99 0.039, rot p=0.036)   hand2 0.050 (perm 0.044, p99 0.087, rot p=0.310)
+section ps=0.1 s1          within-hand NMI: hand1 0.077 (perm 0.012, p99 0.045, rot p=0.009)   hand2 0.078 (perm 0.073, p99 0.166, rot p=0.405)
+section ps=0.1 s2          within-hand NMI: hand1 0.023 (perm 0.014, p99 0.043, rot p=0.191)   hand2 0.093 (perm 0.073, p99 0.178, rot p=0.190)
+section ps=0.3 s1          within-hand NMI: hand1 0.031 (perm 0.012, p99 0.043, rot p=0.036)   hand2 0.090 (perm 0.049, p99 0.118, rot p=0.000)
+section ps=0.3 s2          within-hand NMI: hand1 0.122 (perm 0.011, p99 0.036, rot p=0.018)   hand2 0.242 (perm 0.066, p99 0.154, rot p=0.000)
+section ps=0.6 s1          within-hand NMI: hand1 0.172 (perm 0.011, p99 0.038, rot p=0.009)   hand2 0.337 (perm 0.040, p99 0.096, rot p=0.000)
+section ps=0.6 s2          within-hand NMI: hand1 0.320 (perm 0.012, p99 0.044, rot p=0.000)   hand2 0.267 (perm 0.037, p99 0.092, rot p=0.000)
+section ps=0.8 s1          within-hand NMI: hand1 0.178 (perm 0.010, p99 0.048, rot p=0.000)   hand2 0.329 (perm 0.033, p99 0.079, rot p=0.000)
+section ps=0.8 s2          within-hand NMI: hand1 0.291 (perm 0.011, p99 0.050, rot p=0.000)   hand2 0.327 (perm 0.029, p99 0.065, rot p=0.000)
+section ps=0.3 no rules    within-hand NMI: hand1 0.045 (perm 0.012, p99 0.042, rot p=0.027)   hand2 0.250 (perm 0.053, p99 0.134, rot p=0.000)
+section ps=0.6 L=150 s1    within-hand NMI: hand1 0.438 (perm 0.013, p99 0.049, rot p=0.000)   hand2 0.503 (perm 0.045, p99 0.117, rot p=0.000)
+section ps=0.6 L=150 s2    within-hand NMI: hand1 0.456 (perm 0.013, p99 0.055, rot p=0.000)   hand2 0.584 (perm 0.055, p99 0.120, rot p=0.000)
+section ps=0.6 rules x2    within-hand NMI: hand1 0.206 (perm 0.010, p99 0.040, rot p=0.000)   hand2 0.313 (perm 0.037, p99 0.085, rot p=0.000)
+section ps=0.6 post-rules  within-hand NMI: hand1 0.220 (perm 0.011, p99 0.043, rot p=0.009)   hand2 0.292 (perm 0.037, p99 0.085, rot p=0.000)
+section ps=0.6 L=150 post  within-hand NMI: hand1 0.385 (perm 0.014, p99 0.052, rot p=0.000)   hand2 0.629 (perm 0.058, p99 0.177, rot p=0.000)
+TUNED L=200 ps=0.6 post s4 within-hand NMI: hand1 0.419 (perm 0.013, p99 0.050, rot p=0.000)   hand2 0.322 (perm 0.041, p99 0.117, rot p=0.000)
+TUNED L=200 ps=0.6 post s5 within-hand NMI: hand1 0.423 (perm 0.014, p99 0.050, rot p=0.000)   hand2 0.513 (perm 0.053, p99 0.126, rot p=0.000)
+TUNED L=200 ps=0.6 post s6 within-hand NMI: hand1 0.396 (perm 0.013, p99 0.052, rot p=0.000)   hand2 0.507 (perm 0.055, p99 0.129, rot p=0.000)
+drift ps=0.6               within-hand NMI: hand1 0.022 (perm 0.010, p99 0.031, rot p=0.236)   hand2 0.098 (perm 0.025, p99 0.061, rot p=0.024)
+circular ps=0.3            within-hand NMI: hand1 0.192 (perm 0.014, p99 0.056, rot p=0.000)   hand2 0.239 (perm 0.085, p99 0.179, rot p=0.000)
+circular ps=0.6            within-hand NMI: hand1 0.319 (perm 0.012, p99 0.046, rot p=0.000)   hand2 0.304 (perm 0.037, p99 0.095, rot p=0.000)
+circular ps=0.6 post       within-hand NMI: hand1 0.246 (perm 0.011, p99 0.046, rot p=0.000)   hand2 0.338 (perm 0.038, p99 0.094, rot p=0.000)
+CTRL latin_augustine       NMI(cluster, book) 0.155 (perm 0.015, p99 0.019, rot p=0.575)
+
+--- line statistics (b4.report, lines 2+ of each page) ---
+VOYNICH          JSDfirst=0.1722 (null 0.0019)  JSDlast=0.0839 (null 0.0013)  p-init x15.97  m-final x16.55  h2=2.093  repeat=0.87%  samecol_edit<=1=0.044  tokens=33053
+NULL global, no rules JSDfirst=0.0014 (null 0.0011)  JSDlast=0.0011 (null 0.0009)  p-init x 1.01  m-final x 0.93  h2=1.724  repeat=1.86%  samecol_edit<=1=0.084  tokens=33053
+section ps=0.1 s1 JSDfirst=0.0293 (null 0.0012)  JSDlast=0.0438 (null 0.0011)  p-init x 6.92  m-final x 4.52  h2=1.801  repeat=2.49%  samecol_edit<=1=0.098  tokens=33053
+section ps=0.1 s2 JSDfirst=0.0335 (null 0.0011)  JSDlast=0.0442 (null 0.0009)  p-init x 7.18  m-final x 4.73  h2=1.818  repeat=2.63%  samecol_edit<=1=0.099  tokens=33053
+section ps=0.3 s1 JSDfirst=0.0286 (null 0.0010)  JSDlast=0.0470 (null 0.0012)  p-init x 7.30  m-final x 6.29  h2=1.813  repeat=1.80%  samecol_edit<=1=0.079  tokens=33053
+section ps=0.3 s2 JSDfirst=0.0338 (null 0.0011)  JSDlast=0.0424 (null 0.0010)  p-init x10.85  m-final x 5.38  h2=1.806  repeat=1.88%  samecol_edit<=1=0.078  tokens=33053
+section ps=0.6 s1 JSDfirst=0.0339 (null 0.0011)  JSDlast=0.0501 (null 0.0011)  p-init x11.36  m-final x 7.51  h2=1.760  repeat=1.34%  samecol_edit<=1=0.063  tokens=33053
+section ps=0.6 s2 JSDfirst=0.0361 (null 0.0010)  JSDlast=0.0522 (null 0.0013)  p-init x11.97  m-final x 8.31  h2=1.795  repeat=1.44%  samecol_edit<=1=0.065  tokens=33053
+section ps=0.8 s1 JSDfirst=0.0358 (null 0.0012)  JSDlast=0.0504 (null 0.0012)  p-init x14.85  m-final x 8.19  h2=1.788  repeat=1.37%  samecol_edit<=1=0.059  tokens=33053
+section ps=0.8 s2 JSDfirst=0.0390 (null 0.0013)  JSDlast=0.0560 (null 0.0010)  p-init x18.71  m-final x10.14  h2=1.803  repeat=1.19%  samecol_edit<=1=0.060  tokens=33053
+section ps=0.3 no rules JSDfirst=0.0013 (null 0.0011)  JSDlast=0.0006 (null 0.0011)  p-init x 0.71  m-final x 1.05  h2=1.757  repeat=1.95%  samecol_edit<=1=0.083  tokens=33053
+section ps=0.6 L=150 s1 JSDfirst=0.0385 (null 0.0012)  JSDlast=0.0432 (null 0.0012)  p-init x12.29  m-final x 6.63  h2=1.806  repeat=1.42%  samecol_edit<=1=0.066  tokens=33053
+section ps=0.6 L=150 s2 JSDfirst=0.0329 (null 0.0011)  JSDlast=0.0530 (null 0.0012)  p-init x11.75  m-final x 8.77  h2=1.785  repeat=1.63%  samecol_edit<=1=0.071  tokens=33053
+section ps=0.6 rules x2 JSDfirst=0.0831 (null 0.0010)  JSDlast=0.1186 (null 0.0012)  p-init x17.22  m-final x11.63  h2=1.789  repeat=1.31%  samecol_edit<=1=0.060  tokens=33053
+section ps=0.6 post-rules JSDfirst=0.0413 (null 0.0013)  JSDlast=0.0597 (null 0.0012)  p-init x21.71  m-final x12.11  h2=1.767  repeat=1.42%  samecol_edit<=1=0.058  tokens=33053
+section ps=0.6 L=150 post JSDfirst=0.0386 (null 0.0013)  JSDlast=0.0560 (null 0.0012)  p-init x17.72  m-final x12.22  h2=1.805  repeat=1.61%  samecol_edit<=1=0.074  tokens=33053
+TUNED L=200 ps=0.6 post s4 JSDfirst=0.0358 (null 0.0012)  JSDlast=0.0881 (null 0.0011)  p-init x20.58  m-final x16.95  h2=1.821  repeat=1.43%  samecol_edit<=1=0.067  tokens=33053
+TUNED L=200 ps=0.6 post s5 JSDfirst=0.0314 (null 0.0011)  JSDlast=0.0943 (null 0.0012)  p-init x16.36  m-final x18.91  h2=1.756  repeat=1.59%  samecol_edit<=1=0.069  tokens=33053
+TUNED L=200 ps=0.6 post s6 JSDfirst=0.0378 (null 0.0011)  JSDlast=0.0922 (null 0.0013)  p-init x19.15  m-final x18.50  h2=1.787  repeat=1.49%  samecol_edit<=1=0.067  tokens=33053
+drift ps=0.6     JSDfirst=0.0351 (null 0.0011)  JSDlast=0.0510 (null 0.0010)  p-init x12.42  m-final x 8.45  h2=1.778  repeat=1.40%  samecol_edit<=1=0.062  tokens=33053
+circular ps=0.3  JSDfirst=0.0237 (null 0.0011)  JSDlast=0.0438 (null 0.0013)  p-init x 5.38  m-final x 5.16  h2=2.007  repeat=1.56%  samecol_edit<=1=0.063  tokens=33053
+circular ps=0.6  JSDfirst=0.0282 (null 0.0013)  JSDlast=0.0388 (null 0.0011)  p-init x 6.56  m-final x 5.12  h2=2.017  repeat=0.97%  samecol_edit<=1=0.044  tokens=33053
+circular ps=0.6 post JSDfirst=0.0337 (null 0.0012)  JSDlast=0.0475 (null 0.0013)  p-init x 9.15  m-final x 7.00  h2=2.016  repeat=0.96%  samecol_edit<=1=0.042  tokens=33053
+CTRL_dante       JSDfirst=0.0337 (null 0.0009)  JSDlast=0.1673 (null 0.0009)  p-init x 1.23  m-final x 0.00  h2=3.108  repeat=0.05%  samecol_edit<=1=  -    tokens=36104

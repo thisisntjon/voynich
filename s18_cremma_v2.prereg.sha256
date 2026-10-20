@@ -1,0 +1,3 @@
+# s18 prereg: sha256 of the s18 script and the CREMMA sidecar builder; frozen Sat Oct 17 20:23:43 PDT 2026 before any s18 scoring run
+beaffc95052c2985f81957b7f27b4e6974e0293a9448cd6e858fed52ec4c2e54 *s18_cremma_v2.py
+17c8cd39130ca2be09d8f3bb669647e016170f278720c4031fc2f9e02ee7a95b *tools/cremma_to_meta.py

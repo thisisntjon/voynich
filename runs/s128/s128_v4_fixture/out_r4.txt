@@ -1,0 +1,18 @@
+# s128 F0-N2-REAL; count list data/fixture/madeup_counts_toolong.tsv sha256 3edb4b9a5260c03d401883aab3ce627e354da725a1e7103da64ded45d71e9e60; pages 8; strata 1; held_in_place 0; widened 0; Egerton chapters 523
+seed 20261046 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261047 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261048 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261049 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261050 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261051 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261052 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261053 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261054 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261055 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261056 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261057 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261058 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261059 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+seed 20261060 FAILED_SEED examined 523 short_skip 522 -> NAME miss, RARITY fire
+NAME fires 0/15 (need >= 10); RARITY fires 15/15 (need <= 5)
+CALL_F0N2_REAL FAIL

@@ -1,0 +1,14 @@
+{
+ "model": "qwen2.5vl:7b",
+ "created_at": "2026-10-19T04:06:01.7291221Z",
+ "response": "{\n  \"PT\": \"MARGINAL\",\n  \"P_plants\": \"NA\",\n  \"P_root\": \"NONE\",\n  \"P_leafshape\": \"LINEAR\",\n  \"P_leafcount\": \"0\",\n  \"P_flower\": \"0\",\n  \"P_habit\": \"NA\",\n  \"J_shape\": \"NA\",\n  \"J_count\": \"0\",\n  \"J_fragcount\": \"0\",\n  \"J_fragtype\": \"NONE\",\n  \"C_centre\": \"FACE\",\n  \"C_animal\": \"NA\",\n  \"C_figures\": \"1-9\",\n  \"C_rings\": \"2\",\n  \"C_diagrams\": \"4+\",\n  \"C_rays\": \"ABSENT\",\n  \"B_pools\": \"0\",\n  \"B_figures\": \"0\",\n  \"B_tubes\": \"ABSENT\",\n  \"note\": \"Small drawings, no plants or containers.\"\n}",
+ "done": true,
+ "done_reason": "stop",
+ "total_duration": 2468185400,
+ "load_duration": 145851600,
+ "prompt_eval_count": 3268,
+ "prompt_eval_duration": 728389000,
+ "eval_count": 199,
+ "eval_duration": 1461858000,
+ "stem": "183_103v"
+}

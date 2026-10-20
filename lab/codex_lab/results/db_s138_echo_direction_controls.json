@@ -1,0 +1,1538 @@
+{
+  "state": "local_frozen_execution_unaudited",
+  "scope": "descriptive external-control contrast; no claim of uniqueness or decipherment",
+  "source_sha256": "0FF0B742B18F5506CAE5803684A9EFD4929652E88E1750CA4A426FE3BFFE507F",
+  "manifest_sha256": "0B22192F26DF55E028BAFF89A4998F4EB5F5AC37A4AF61B0120F9EDE4B4806B5",
+  "seed": 70693,
+  "n_perm": 5000,
+  "minimum_echoes": 100,
+  "alpha": 0.01,
+  "primary_rule": "adequate n_echo>=100 under both segmenters; reproduction iff line-reversal p<=.01 under both",
+  "call_rule": "any adequate control reproduction defeats uniqueness; otherwise >=3 adequate control families permits only NOT_REPRODUCED_IN_EVALUATED_CONTROLS",
+  "call": "UNIQUENESS_DEFEATED_CONTROL_REPRODUCES",
+  "reproducing_controls": [
+    "LLULL|1515_table"
+  ],
+  "adequate_control_families": [
+    "Llull_table_rows"
+  ],
+  "voynich_segmentation_exact_match": {
+    "slot": 1.0,
+    "a2": 1.0
+  },
+  "dependence_note": "control corpora and manuscripts are not assumed statistically independent",
+  "results": {
+    "CREMMA|Arras-861": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 350,
+      "n_tokens": 2478,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 17,
+          "n_echo_lines": 17,
+          "stat": 10.0,
+          "line_reverse_p": 0.739252149570086,
+          "line_reverse_q99": 12.0
+        },
+        "a2": {
+          "n_echo": 9,
+          "n_echo_lines": 9,
+          "stat": 8.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 8.0
+        }
+      }
+    },
+    "CREMMA|BGO-511": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 54,
+      "n_tokens": 169,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 2,
+          "n_echo_lines": 2,
+          "stat": 2.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 2.0
+        },
+        "a2": {
+          "n_echo": 2,
+          "n_echo_lines": 2,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        }
+      }
+    },
+    "CREMMA|BIS-193": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 598,
+      "n_tokens": 7689,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 53,
+          "n_echo_lines": 49,
+          "stat": 17.333333333333332,
+          "line_reverse_p": 0.09778044391121776,
+          "line_reverse_q99": 20.0
+        },
+        "a2": {
+          "n_echo": 36,
+          "n_echo_lines": 35,
+          "stat": 20.0,
+          "line_reverse_p": 0.1913617276544691,
+          "line_reverse_q99": 22.0
+        }
+      }
+    },
+    "CREMMA|CCCC-MSS-165": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 148,
+      "n_tokens": 1400,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 15,
+          "n_echo_lines": 13,
+          "stat": 4.0,
+          "line_reverse_p": 0.4983003399320136,
+          "line_reverse_q99": 4.0
+        },
+        "a2": {
+          "n_echo": 13,
+          "n_echo_lines": 10,
+          "stat": 7.0,
+          "line_reverse_p": 0.2581483703259348,
+          "line_reverse_q99": 7.0
+        }
+      }
+    },
+    "CREMMA|CCCC-MSS-236": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 160,
+      "n_tokens": 1135,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 11,
+          "n_echo_lines": 10,
+          "stat": 4.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 4.0
+        },
+        "a2": {
+          "n_echo": 3,
+          "n_echo_lines": 3,
+          "stat": 3.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 3.0
+        }
+      }
+    },
+    "CREMMA|CLM13027": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 609,
+      "n_tokens": 6772,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 35,
+          "n_echo_lines": 31,
+          "stat": 13.0,
+          "line_reverse_p": 0.1767646470705859,
+          "line_reverse_q99": 15.0
+        },
+        "a2": {
+          "n_echo": 14,
+          "n_echo_lines": 13,
+          "stat": 8.0,
+          "line_reverse_p": 0.7394521095780844,
+          "line_reverse_q99": 10.0
+        }
+      }
+    },
+    "CREMMA|Egerton821": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 114,
+      "n_tokens": 1089,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 24,
+          "n_echo_lines": 17,
+          "stat": 6.0,
+          "line_reverse_p": 0.14197160567886422,
+          "line_reverse_q99": 6.0
+        },
+        "a2": {
+          "n_echo": 32,
+          "n_echo_lines": 19,
+          "stat": 16.0,
+          "line_reverse_p": 0.0007998400319936012,
+          "line_reverse_q99": 12.0
+        }
+      }
+    },
+    "CREMMA|H318": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 414,
+      "n_tokens": 4693,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 17,
+          "n_echo_lines": 17,
+          "stat": 6.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 6.0
+        },
+        "a2": {
+          "n_echo": 14,
+          "n_echo_lines": 13,
+          "stat": 12.0,
+          "line_reverse_p": 0.4929014197160568,
+          "line_reverse_q99": 12.0
+        }
+      }
+    },
+    "CREMMA|Latin16195": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 430,
+      "n_tokens": 4240,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 17,
+          "n_echo_lines": 15,
+          "stat": 11.0,
+          "line_reverse_p": 0.03179364127174565,
+          "line_reverse_q99": 11.0
+        },
+        "a2": {
+          "n_echo": 24,
+          "n_echo_lines": 22,
+          "stat": 17.333333333333332,
+          "line_reverse_p": 0.008398320335932814,
+          "line_reverse_q99": 16.8
+        }
+      }
+    },
+    "CREMMA|Latin6395": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 622,
+      "n_tokens": 3170,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 10,
+          "n_echo_lines": 10,
+          "stat": 6.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 6.0
+        },
+        "a2": {
+          "n_echo": 10,
+          "n_echo_lines": 8,
+          "stat": 5.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 5.0
+        }
+      }
+    },
+    "CREMMA|Latin8236": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 205,
+      "n_tokens": 1373,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 9,
+          "n_echo_lines": 8,
+          "stat": 7.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 9.0
+        },
+        "a2": {
+          "n_echo": 4,
+          "n_echo_lines": 4,
+          "stat": 4.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 4.0
+        }
+      }
+    },
+    "CREMMA|LaurentianusPluteus33.31": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 201,
+      "n_tokens": 1268,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 9,
+          "n_echo_lines": 9,
+          "stat": 6.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 6.0
+        },
+        "a2": {
+          "n_echo": 3,
+          "n_echo_lines": 3,
+          "stat": 2.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 2.0
+        }
+      }
+    },
+    "CREMMA|LaurentianusPluteus39.34": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 116,
+      "n_tokens": 749,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 4,
+          "n_echo_lines": 4,
+          "stat": 3.0,
+          "line_reverse_p": 0.495500899820036,
+          "line_reverse_q99": 3.0
+        },
+        "a2": {
+          "n_echo": 2,
+          "n_echo_lines": 2,
+          "stat": 2.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 2.0
+        }
+      }
+    },
+    "CREMMA|LaurentianusPluteus53.08": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 216,
+      "n_tokens": 3322,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 24,
+          "n_echo_lines": 22,
+          "stat": 15.0,
+          "line_reverse_p": 0.038592281543691265,
+          "line_reverse_q99": 15.0
+        },
+        "a2": {
+          "n_echo": 12,
+          "n_echo_lines": 11,
+          "stat": 6.333333333333334,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 6.333333333333334
+        }
+      }
+    },
+    "CREMMA|LaurentianusPluteus53.09": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 125,
+      "n_tokens": 1295,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 15,
+          "n_echo_lines": 15,
+          "stat": 6.0,
+          "line_reverse_p": 0.49610077984403117,
+          "line_reverse_q99": 6.0
+        },
+        "a2": {
+          "n_echo": 20,
+          "n_echo_lines": 18,
+          "stat": 13.0,
+          "line_reverse_p": 0.05438912217556489,
+          "line_reverse_q99": 13.0
+        }
+      }
+    },
+    "CREMMA|Mazarine915": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 418,
+      "n_tokens": 5557,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 44,
+          "n_echo_lines": 38,
+          "stat": 12.771428571428572,
+          "line_reverse_p": 0.14077184563087383,
+          "line_reverse_q99": 17.285714285714285
+        },
+        "a2": {
+          "n_echo": 26,
+          "n_echo_lines": 20,
+          "stat": 15.0,
+          "line_reverse_p": 0.1285742851429714,
+          "line_reverse_q99": 17.0
+        }
+      }
+    },
+    "CREMMA|PalLat373": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 432,
+      "n_tokens": 2308,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 11,
+          "n_echo_lines": 11,
+          "stat": 7.0,
+          "line_reverse_p": 0.250749850029994,
+          "line_reverse_q99": 7.0
+        },
+        "a2": {
+          "n_echo": 12,
+          "n_echo_lines": 12,
+          "stat": 3.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 3.0
+        }
+      }
+    },
+    "CREMMA|Phi_10a135": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 138,
+      "n_tokens": 1711,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 8,
+          "n_echo_lines": 7,
+          "stat": 4.0,
+          "line_reverse_p": 0.2491501699660068,
+          "line_reverse_q99": 6.0
+        },
+        "a2": {
+          "n_echo": 6,
+          "n_echo_lines": 5,
+          "stat": 5.0,
+          "line_reverse_p": 0.5020995800839833,
+          "line_reverse_q99": 5.0
+        }
+      }
+    },
+    "CREMMA|SBB_PK_Hdschr25": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 232,
+      "n_tokens": 949,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 5,
+          "n_echo_lines": 5,
+          "stat": 4.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 4.0
+        },
+        "a2": {
+          "n_echo": 9,
+          "n_echo_lines": 9,
+          "stat": 7.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 9.0
+        }
+      }
+    },
+    "CREMMA|UBL758": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 460,
+      "n_tokens": 4332,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 18,
+          "n_echo_lines": 17,
+          "stat": 7.333333333333333,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 12.0
+        },
+        "a2": {
+          "n_echo": 11,
+          "n_echo_lines": 11,
+          "stat": 10.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 10.0
+        }
+      }
+    },
+    "CREMMA|WettF0015": {
+      "family": "CREMMA_physical_lines",
+      "layout": "physical source lines",
+      "n_lines": 380,
+      "n_tokens": 3634,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 19,
+          "n_echo_lines": 19,
+          "stat": 5.0,
+          "line_reverse_p": 0.4287142571485703,
+          "line_reverse_q99": 9.0
+        },
+        "a2": {
+          "n_echo": 13,
+          "n_echo_lines": 13,
+          "stat": 3.2,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 10.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DA_01": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 53,
+      "n_tokens": 215,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DA_02": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 55,
+      "n_tokens": 356,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_01": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 52,
+      "n_tokens": 364,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 3,
+          "n_echo_lines": 3,
+          "stat": 2.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 2.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_03": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 48,
+      "n_tokens": 251,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 6,
+          "n_echo_lines": 6,
+          "stat": 5.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 5.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_04": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 48,
+      "n_tokens": 270,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 4,
+          "n_echo_lines": 4,
+          "stat": 3.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 3.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_05": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 25,
+      "n_tokens": 200,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 6,
+          "n_echo_lines": 5,
+          "stat": 3.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 3.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_06": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 65,
+      "n_tokens": 372,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 7,
+          "n_echo_lines": 6,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 5,
+          "n_echo_lines": 5,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_08": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 35,
+      "n_tokens": 247,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 3,
+          "n_echo_lines": 3,
+          "stat": 2.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 2.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_09": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 40,
+      "n_tokens": 218,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        },
+        "a2": {
+          "n_echo": 4,
+          "n_echo_lines": 4,
+          "stat": 3.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 3.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_10": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 43,
+      "n_tokens": 221,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 2,
+          "n_echo_lines": 2,
+          "stat": 2.0,
+          "line_reverse_p": 0.4981003799240152,
+          "line_reverse_q99": 2.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_11": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 56,
+      "n_tokens": 223,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 2,
+          "n_echo_lines": 2,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_12": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 46,
+      "n_tokens": 207,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_15": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 76,
+      "n_tokens": 480,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 8,
+          "n_echo_lines": 5,
+          "stat": 4.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 4.0
+        },
+        "a2": {
+          "n_echo": 8,
+          "n_echo_lines": 7,
+          "stat": 5.0,
+          "line_reverse_p": 0.509498100379924,
+          "line_reverse_q99": 5.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_16": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 59,
+      "n_tokens": 338,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 7,
+          "n_echo_lines": 6,
+          "stat": 4.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 4.0
+        },
+        "a2": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_18": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 47,
+      "n_tokens": 421,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 8,
+          "n_echo_lines": 7,
+          "stat": 3.0,
+          "line_reverse_p": 0.7514497100579884,
+          "line_reverse_q99": 5.0
+        },
+        "a2": {
+          "n_echo": 6,
+          "n_echo_lines": 5,
+          "stat": 2.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 2.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_20": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 48,
+      "n_tokens": 274,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 9,
+          "n_echo_lines": 8,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 13,
+          "n_echo_lines": 11,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_21": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 60,
+      "n_tokens": 322,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 4,
+          "n_echo_lines": 4,
+          "stat": 2.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 2.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_22": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 53,
+      "n_tokens": 150,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 2,
+          "n_echo_lines": 2,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 4,
+          "n_echo_lines": 3,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_23": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 18,
+      "n_tokens": 120,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 2,
+          "n_echo_lines": 2,
+          "stat": 2.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 2.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_24": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 11,
+      "n_tokens": 79,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_25": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 27,
+      "n_tokens": 157,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_26": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 28,
+      "n_tokens": 228,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_27": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 53,
+      "n_tokens": 332,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 6,
+          "n_echo_lines": 6,
+          "stat": 3.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 3.0
+        },
+        "a2": {
+          "n_echo": 2,
+          "n_echo_lines": 2,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_28": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 38,
+      "n_tokens": 215,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_29": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 27,
+      "n_tokens": 184,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_30": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 46,
+      "n_tokens": 322,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        },
+        "a2": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_31": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 52,
+      "n_tokens": 355,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        },
+        "a2": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_32": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 30,
+      "n_tokens": 281,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 3,
+          "n_echo_lines": 2,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 9,
+          "n_echo_lines": 7,
+          "stat": 6.0,
+          "line_reverse_p": 0.4977004599080184,
+          "line_reverse_q99": 6.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_33": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 30,
+      "n_tokens": 188,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 2,
+          "n_echo_lines": 1,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_34": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 46,
+      "n_tokens": 276,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 4,
+          "n_echo_lines": 4,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        },
+        "a2": {
+          "n_echo": 4,
+          "n_echo_lines": 4,
+          "stat": 2.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 2.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_35": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 27,
+      "n_tokens": 267,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_36": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 55,
+      "n_tokens": 199,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_37": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 34,
+      "n_tokens": 317,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_38": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 36,
+      "n_tokens": 292,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 1,
+          "n_echo_lines": 1,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 9,
+          "n_echo_lines": 9,
+          "stat": 4.333333333333333,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 7.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_39": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 40,
+      "n_tokens": 312,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 3,
+          "n_echo_lines": 3,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        },
+        "a2": {
+          "n_echo": 8,
+          "n_echo_lines": 8,
+          "stat": 6.0,
+          "line_reverse_p": 0.4979004199160168,
+          "line_reverse_q99": 6.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_40": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 28,
+      "n_tokens": 330,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 6,
+          "n_echo_lines": 4,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 7,
+          "n_echo_lines": 5,
+          "stat": 1.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 1.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_41": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 23,
+      "n_tokens": 150,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        }
+      }
+    },
+    "GIBBERISH|Gibberish - DC_42": {
+      "family": "human_gibberish_physical_lines",
+      "layout": "writer's source lines",
+      "n_lines": 59,
+      "n_tokens": 342,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 0,
+          "n_echo_lines": 0,
+          "stat": 0.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 0.0
+        },
+        "a2": {
+          "n_echo": 5,
+          "n_echo_lines": 3,
+          "stat": 5.0,
+          "line_reverse_p": 1.0,
+          "line_reverse_q99": 5.0
+        }
+      }
+    },
+    "LLULL|1515_table": {
+      "family": "Llull_table_rows",
+      "layout": "printed table rows reconstructed from OCR",
+      "n_lines": 233,
+      "n_tokens": 957,
+      "adequate_both": true,
+      "reproduces_both": true,
+      "cells": {
+        "slot": {
+          "n_echo": 230,
+          "n_echo_lines": 131,
+          "stat": 33.6,
+          "line_reverse_p": 0.0001999600079984003,
+          "line_reverse_q99": 21.56069841269842
+        },
+        "a2": {
+          "n_echo": 291,
+          "n_echo_lines": 145,
+          "stat": 92.54545454545455,
+          "line_reverse_p": 0.0001999600079984003,
+          "line_reverse_q99": 36.885622895622895
+        }
+      }
+    },
+    "RECIPE|Antidotarium": {
+      "family": "Antidotarium_pseudolines",
+      "layout": "artificial consecutive 8-token formula lines",
+      "n_lines": 1569,
+      "n_tokens": 12404,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 21,
+          "n_echo_lines": 20,
+          "stat": 7.133333333333333,
+          "line_reverse_p": 0.5002999400119976,
+          "line_reverse_q99": 13.0
+        },
+        "a2": {
+          "n_echo": 25,
+          "n_echo_lines": 25,
+          "stat": 18.333333333333336,
+          "line_reverse_p": 0.0015996800639872025,
+          "line_reverse_q99": 16.2
+        }
+      }
+    },
+    "RECIPE|CoReMA": {
+      "family": "CoReMA_pseudolines",
+      "layout": "artificial consecutive 8-token lines",
+      "n_lines": 1579,
+      "n_tokens": 12325,
+      "adequate_both": false,
+      "reproduces_both": false,
+      "cells": {
+        "slot": {
+          "n_echo": 47,
+          "n_echo_lines": 47,
+          "stat": 19.272727272727273,
+          "line_reverse_p": 0.005598880223955209,
+          "line_reverse_q99": 17.81818181818182
+        },
+        "a2": {
+          "n_echo": 201,
+          "n_echo_lines": 187,
+          "stat": 59.777011494252875,
+          "line_reverse_p": 0.0001999600079984003,
+          "line_reverse_q99": 34.926309067688386
+        }
+      }
+    },
+    "VOYNICH|ZL3b": {
+      "family": "Voynich_target",
+      "layout": "stored physical transcription lines",
+      "n_lines": 5385,
+      "n_tokens": 39020,
+      "adequate_both": true,
+      "reproduces_both": true,
+      "cells": {
+        "slot": {
+          "n_echo": 1420,
+          "n_echo_lines": 1087,
+          "stat": 107.47512430181006,
+          "line_reverse_p": 0.0015996800639872025,
+          "line_reverse_q99": 100.26640895412974
+        },
+        "a2": {
+          "n_echo": 1476,
+          "n_echo_lines": 1129,
+          "stat": 71.75575001074316,
+          "line_reverse_p": 0.0007998400319936012,
+          "line_reverse_q99": 63.79093881519793
+        }
+      }
+    }
+  }
+}
