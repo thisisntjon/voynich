@@ -1,6 +1,6 @@
 # Dead ends
 
-*Generated from `workflow/FINDINGS-GRAPH.yaml` and `.inventory/registers/` (snapshot 2026-10-19).*
+*Generated from [`record/workflow/FINDINGS-GRAPH.yaml`](record/workflow/FINDINGS-GRAPH.yaml) and [`record/.inventory/registers/`](record/.inventory/registers/) (snapshot 2026-10-19).*
 
 What was tried and did not work, so nobody has to spend the compute again. "Excluded" or "disfavoured" means *in the form tested here*; each row says where the evidence is.
 
@@ -27,7 +27,7 @@ Evidence is listed as finding(strength): s strong, m moderate, w weak; `*` the f
 | H-16 | Practitioner notation, shorthand or mnemonic manual: cores stand for ingredients, operations or categories a trained reader knew (red-team 2026-10-18; Sylvie guess 3) | weakened, thin evidence (s97: constructed sigla control fails; no real shorthand text tested) | F-40(w*), F-44(w*) |
 | H-17 | A natural language written in an invented verbose script with heavy abbreviation or misleading word boundaries (red-team 2026-10-18; Sylvie guess 4) | weakened (s97): abbreviated, abjad and verbose-orthography controls fail; a line-held spelling-variant scheme gives in-line reuse but not order or locality | F-40(m*) |
 
-Live explanations are listed in `OPEN-QUESTIONS.md`.
+Live explanations are listed in [`OPEN-QUESTIONS.md`](OPEN-QUESTIONS.md).
 
 ## Results rejected or withdrawn
 
@@ -59,7 +59,7 @@ Runs whose filed result does not stand (state `rejected` in the graph), with the
 
 ## Failures by theme
 
-From the theme index of `.inventory/registers/LEARNINGS.md`; each L-id is a row with what we believed, what happened, the evidence and what it changed.
+From the theme index of [`record/.inventory/registers/LEARNINGS.md`](record/.inventory/registers/LEARNINGS.md); each L-id is a row with what we believed, what happened, the evidence and what it changed.
 
 - **Segmentation and the word unit:** L-004, L-008, L-035, L-036, L-040, L-113, L-121, L-133, L-144, L-165, L-166, L-190, L-196, L-198, L-301, L-304, L-306
 - **Core order / A14:** L-126, L-135, L-142, L-143, L-151, L-166, L-170, L-171, L-172, L-175, L-176, L-180, L-182, L-311

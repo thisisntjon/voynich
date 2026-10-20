@@ -2,25 +2,27 @@
 
 *Snapshot of 2026-10-19. Research paused; handed over so that others, human or AI, can check it and go further.*
 
-**What this is.** The full working record of an investigation of the Voynich manuscript (Yale, Beinecke MS 408) by a small team of AI research agents directed by one person, Jon, at Simone Systems Research: 205 analysis scripts at the root, 96 run folders, 619 results files, and the registers that tie every cited number to its results file.
+**What this is.** The full working record of an investigation of the Voynich manuscript (Yale, Beinecke MS 408) by a small team of AI research agents directed by one person, Jon, at Simone Systems Research: 205 analysis scripts at the top of `record/`, 96 run folders, 619 results files, and the registers that tie every cited number to its results file.
 
 **It is not deciphered.** Nothing here reads the manuscript, names its language or says what it means. No result is evidence of meaning; every finding is about how the text is built, not what it says.
 
 **What was found.** 51 tested structural findings about how the text is built (how words, lines and pages behave), each graded by how many independent kinds of check agree: 17 triangulated, 14 corroborated, 15 single-line, 5 contested. Most extend published work; 8 have no published precedent we know of, and 3 re-find a published result.
 
-**What was ruled out.** Of the 20 explanations considered, most (letter ciphers, verbose and table ciphers, generators as built, free gibberish, independent streams, artefacts of layout or transcription) were tested and are excluded or disfavoured in the forms tested. That list of dead ends is probably the most useful thing here: see `DEAD-ENDS.md`.
+**What was ruled out.** Of the 20 explanations considered, most (letter ciphers, verbose and table ciphers, generators as built, free gibberish, independent streams, artefacts of layout or transcription) were tested and are excluded or disfavoured in the forms tested. That list of dead ends is probably the most useful thing here: see [`DEAD-ENDS.md`](DEAD-ENDS.md).
 
 **What it means, in plain words.** The text is not random: words, lines and pages follow regular habits, such as word lengths that rise and fall together inside a line and vocabulary that shifts between sections and scribes. Several of these habits are also found in ordinary metrical verse, so they do not rule out a natural language written as verse; they do rule out many simple ciphers and generators, in the forms tested. Nothing found here says what the words mean, which language (if any) lies underneath, or whether the book is a hoax. The record's value is a map of what has been checked, how firmly, and what not to try again.
 
 **How to check it.** Every number has a claim id (`c-NNN`) pointing to a results file; the transliterations are fetched and checked by sha256; scripts rerun to the same output (five commands below).
 
+> **Layout.** These pages and the licences are at the top; the full research record is in [`record/`](record/), unchanged. Paths in these pages are inside `record/`, and commands run from there (`cd record`).
+
 ## Start here
 
 | You are | Read |
 |---|---|
-| Curious about the manuscript | This page, then `FINDINGS.md` (plain titles and limits), then `DEAD-ENDS.md`. Terms are in `GLOSSARY.md`. |
-| A Voynich researcher | `FINDINGS.md` (each finding with its novelty against published work and its evidence), `DEAD-ENDS.md`, then `OPEN-QUESTIONS.md`. Rerun anything with the commands below. |
-| An AI agent continuing the work | `CONTINUING.md` (how to work here alone), then `OPEN-QUESTIONS.md`, then the source-of-truth map below. |
+| Curious about the manuscript | This page, then [`FINDINGS.md`](FINDINGS.md) (plain titles and limits), then [`DEAD-ENDS.md`](DEAD-ENDS.md). Terms are in [`GLOSSARY.md`](GLOSSARY.md). |
+| A Voynich researcher | [`FINDINGS.md`](FINDINGS.md) (each finding with its novelty against published work and its evidence), [`DEAD-ENDS.md`](DEAD-ENDS.md), then [`OPEN-QUESTIONS.md`](OPEN-QUESTIONS.md). Rerun anything with the commands below. |
+| An AI agent continuing the work | [`CONTINUING.md`](CONTINUING.md) (how to work here alone), then [`OPEN-QUESTIONS.md`](OPEN-QUESTIONS.md), then the source-of-truth map below. |
 
 ## Strongest result
 
@@ -32,9 +34,9 @@
 
 ## Headline findings
 
-Standing findings that reach TRIANGULATED or CORROBORATED and rest on no at-risk assumption. All of them, with limits and evidence, are in `FINDINGS.md`.
+Standing findings that reach TRIANGULATED or CORROBORATED and rest on no at-risk assumption. All of them, with limits and evidence, are in [`FINDINGS.md`](FINDINGS.md).
 
-Axes are the independent kinds of check that agree: `data` another transliteration, `seg` another word-splitting method, `split` held-out pages or quires (LOQO = leave one quire out), `method` a different statistic, `impl` code written independently, `physical` measured from scan ink, `external` published by others, `order` survives changes of reading order. Other terms (cores, h2, POST-HOC, run ids, agent names) are in `GLOSSARY.md`.
+Axes are the independent kinds of check that agree: [`record/data`](record/data/) another transliteration, `seg` another word-splitting method, `split` held-out pages or quires (LOQO = leave one quire out), `method` a different statistic, `impl` code written independently, `physical` measured from scan ink, `external` published by others, `order` survives changes of reading order. Other terms (cores, h2, POST-HOC, run ids, agent names) are in [`GLOSSARY.md`](GLOSSARY.md).
 
 | id | finding | grade | agreeing axes | axes if each run counts once | novelty |
 |---|---|---|---|---|---|
@@ -61,7 +63,7 @@ Axes are the independent kinds of check that agree: `data` another transliterati
 
 ## Hypothesis scoreboard
 
-Weights are computed from the findings that bear on each hypothesis (strength x grade, halved when the finding rests on an at-risk assumption; the same computation as section 1 of `workflow/FINDINGS-MAP.md`). They summarise this project's evidence only. The status column is the project's judgement and also reflects failed tests that are not encoded as finding links (for example, H-05's weakened grille failed held-out quires 0/15), so a weight for can sit beside a weakened status.
+Weights are computed from the findings that bear on each hypothesis (strength x grade, halved when the finding rests on an at-risk assumption; the same computation as section 1 of [`record/workflow/FINDINGS-MAP.md`](record/workflow/FINDINGS-MAP.md)). They summarise this project's evidence only. The status column is the project's judgement and also reflects failed tests that are not encoded as finding links (for example, H-05's weakened grille failed held-out quires 0/15), so a weight for can sit beside a weakened status.
 
 | id | explanation | status | weight for | weight against |
 |---|---|---|---|---|
@@ -89,11 +91,11 @@ Weights are computed from the findings that bear on each hypothesis (strength x 
 ## Limits of this work
 
 - **Who checked it.** Every run, audit and replication was done by AI agents inside the project. No outside researcher has reviewed it. "Independent" replications (the `impl` axis) are by other agents on the same team, writing their own code.
-- **Counting checks.** A grade counts the kinds of check (axes) that agree, as filed. One run sometimes supplies two axes (for example, independent code on held-out pages counts as both `impl` and `split`); the headline table and `FINDINGS.md` also give the count when each run counts once. Some axes are weaker than their name suggests for a given statistic (a lag-1 statistic reads the same in either direction, so its `order` line is nearly automatic).
-- **Edited scripts.** `tools/verify_stubs.py` finds 18 stub lines whose script was edited after it was pinned; the pinned original is kept beside it as `*.orig-<hash>`. Results from those scripts still appear in some evidence lines.
+- **Counting checks.** A grade counts the kinds of check (axes) that agree, as filed. One run sometimes supplies two axes (for example, independent code on held-out pages counts as both `impl` and `split`); the headline table and [`FINDINGS.md`](FINDINGS.md) also give the count when each run counts once. Some axes are weaker than their name suggests for a given statistic (a lag-1 statistic reads the same in either direction, so its `order` line is nearly automatic).
+- **Edited scripts.** [`record/tools/verify_stubs.py`](record/tools/verify_stubs.py) finds 18 stub lines whose script was edited after it was pinned; the pinned original is kept beside it as `*.orig-<hash>`. Results from those scripts still appear in some evidence lines.
 - **Pre-registration.** Designs were frozen by hash (`*.prereg.sha256`) by the same agents, often minutes before the real run. 79 of 238 evidence lines are flagged POST-HOC or unverified (a results file was overwritten after its stub was re-stamped, or the line was never re-frozen) and do not count toward any grade.
-- **Multiple testing.** About 96 run folders, 205 root scripts and 157 pre-registration stubs tested many statistics. The registers describe no correction for multiple testing across the project as a whole (no family-wise or false-discovery control); individual runs set their own thresholds and nulls. Treat single-run p-values near 0.05 as leads, not results, and the hypothesis weights as a summary, not a probability.
-- **Shared data.** The three main transliterations (ZL3b, RF1b, IT2a) share the same scans and the EVA glyph set, so agreement across them is the weakest axis (`data`) and never counts as independence alone.
+- **Multiple testing.** About 96 run folders, 205 top-level scripts in `record/` and 157 pre-registration stubs tested many statistics. The registers describe no correction for multiple testing across the project as a whole (no family-wise or false-discovery control); individual runs set their own thresholds and nulls. Treat single-run p-values near 0.05 as leads, not results, and the hypothesis weights as a summary, not a probability.
+- **Shared data.** The three main transliterations (ZL3b, RF1b, IT2a) share the same scans and the EVA glyph set, so agreement across them is the weakest axis ([`record/data`](record/data/)) and never counts as independence alone.
 - **Segmentation.** 18 findings rest on assumption X-01 (that the automatic prefix/core/suffix split gives the right units), which is at risk: no tested segmenter recovered planted books (c-592). Those findings are weighted half.
 - **Prior work.** 40 of 51 findings extend published observations and 3 re-find them. "New" (8) means only that the project's own literature notes hold no precedent; several are null tests, and informal tries on forums (voynich.ninja, Zandbergen's pages) were not searched systematically.
 - **Structure, not meaning.** No finding is evidence of what the text says.
@@ -104,22 +106,23 @@ Edit only the canonical home; derived views are rebuilt from it. If a document a
 
 | Kind of fact | Canonical home | Derived views |
 |---|---|---|
-| Raw measurements | `results_*.txt` at the root and `runs/<id>/results*` (619 files; the record of each run. A results file overwritten after its stub was re-stamped is flagged POST-HOC and its lines do not count) | the numbers quoted everywhere else |
-| Cited numbers | `.inventory/registers/CLAIMS.md` (582 claim rows, `c-NNN`, each with its source file) | |
-| Findings, hypotheses, assumptions and their evidence lines | `workflow/FINDINGS-GRAPH.yaml` | `workflow/FINDINGS-MAP.md` (`python tools/findings_graph.py render --allow-missing`), `FINDINGS.md`, this page |
-| What was learned, including failures | `.inventory/registers/LEARNINGS.md` (308 rows, theme index at the top) | `DEAD-ENDS.md` |
-| Decisions, reversals and rejections | `.inventory/registers/DECISIONS.md` (88 rows; D-066 is the run log) | |
-| Open questions and parked work | `.inventory/registers/OPEN.md` (86 rows) | `OPEN-QUESTIONS.md` |
-| Methods, equations, thresholds | `.inventory/registers/METHODS.md`, `workflow/TRIANGULATION.md` (how results are graded and filed) | |
-| Runs and who ran them | `runs/<id>/` and `TEAM-HANDOFF.md` | `ROOT-INDEX.md` |
+| Raw measurements | `results_*.txt` at the top of `record/` and `runs/<id>/results*` (619 files; the record of each run. A results file overwritten after its stub was re-stamped is flagged POST-HOC and its lines do not count) | the numbers quoted everywhere else |
+| Cited numbers | [`record/.inventory/registers/CLAIMS.md`](record/.inventory/registers/CLAIMS.md) (582 claim rows, `c-NNN`, each with its source file) | |
+| Findings, hypotheses, assumptions and their evidence lines | [`record/workflow/FINDINGS-GRAPH.yaml`](record/workflow/FINDINGS-GRAPH.yaml) | [`record/workflow/FINDINGS-MAP.md`](record/workflow/FINDINGS-MAP.md) (`python tools/findings_graph.py render --allow-missing`), [`FINDINGS.md`](FINDINGS.md), this page |
+| What was learned, including failures | [`record/.inventory/registers/LEARNINGS.md`](record/.inventory/registers/LEARNINGS.md) (308 rows, theme index at the top) | [`DEAD-ENDS.md`](DEAD-ENDS.md) |
+| Decisions, reversals and rejections | [`record/.inventory/registers/DECISIONS.md`](record/.inventory/registers/DECISIONS.md) (88 rows; D-066 is the run log) | |
+| Open questions and parked work | [`record/.inventory/registers/OPEN.md`](record/.inventory/registers/OPEN.md) (86 rows) | [`OPEN-QUESTIONS.md`](OPEN-QUESTIONS.md) |
+| Methods, equations, thresholds | [`record/.inventory/registers/METHODS.md`](record/.inventory/registers/METHODS.md), [`record/workflow/TRIANGULATION.md`](record/workflow/TRIANGULATION.md) (how results are graded and filed) | |
+| Runs and who ran them | `runs/<id>/` and [`record/TEAM-HANDOFF.md`](record/TEAM-HANDOFF.md) | [`record/ROOT-INDEX.md`](record/ROOT-INDEX.md) |
 | Pre-registrations | `*.prereg`, `*.prereg.sha256` | `python tools/verify_stubs.py` |
 | Published per-page facts (who said what about each folio) | `data/page-facts/*.tsv` (sources and links; quotations removed) | |
-| Third-party sources and licences | `data/SOURCES.tsv`, `data/FETCH.tsv` | `NEEDS.tsv` (what each script needs) |
-| What is not here, and why | `WITHHELD.tsv`, `MISSING-EVIDENCE.tsv`, `START-HERE.md` | |
+| Third-party sources and licences | [`record/data/SOURCES.tsv`](record/data/SOURCES.tsv), [`record/data/FETCH.tsv`](record/data/FETCH.tsv) | [`record/NEEDS.tsv`](record/NEEDS.tsv) (what each script needs) |
+| What is not here, and why | [`record/WITHHELD.tsv`](record/WITHHELD.tsv), [`record/MISSING-EVIDENCE.tsv`](record/MISSING-EVIDENCE.tsv), [`START-HERE.md`](START-HERE.md) | |
 
 ## Reproduce a result
 
 ```
+cd record
 pip install -r requirements-lock.txt   # Python 3.11; on 3.12 or newer use requirements-lock-py313.txt
 python tools/fetch_data.py             # transliterations from voynich.nu, checked by sha256
 python tools/build_translit.py         # rebuilds data/translit/*.meta.json byte for byte
@@ -130,12 +133,12 @@ git diff results_s34_morphology_syntax_geography.txt   # only the clock and run-
 
 Other results files can also differ in lines that print a local path or a date; compare the numbers. Restoring the s45 text changes 171 tracked page files: do not commit them.
 
-Rerun the strongest result (F-04): `python s21_moran_realline.py` (our run, results_s21.txt), then its independent replications: `python tools/roach_layout.py` (rebuilds roach's folder layout under `roach-root/` and downloads the Project Gutenberg, Hebrew Bible and CREMMA controls, each checked by sha256; run `tools/fetch_cremma.py` first for CREMMA) and the command in `runs/roach-r3/README.md` and `runs/roach-r12/README.md`, run from `roach-root/r3` and `roach-root/r12`.
+Rerun the strongest result (F-04): `python s21_moran_realline.py` (our run, results_s21.txt), then its independent replications: `python tools/roach_layout.py` (rebuilds roach's folder layout under `roach-root/` and downloads the Project Gutenberg, Hebrew Bible and CREMMA controls, each checked by sha256; run [`record/tools/fetch_cremma.py`](record/tools/fetch_cremma.py) first for CREMMA) and the command in [`record/runs/roach-r3/README.md`](record/runs/roach-r3/README.md) and [`record/runs/roach-r12/README.md`](record/runs/roach-r12/README.md), run from `roach-root/r3` and `roach-root/r12`.
 
-`python tools/verify_stubs.py` checks every pre-registration stub; `START-HERE.md` has the full guide, what is withheld and why, and credits.
+`python tools/verify_stubs.py` checks every pre-registration stub; [`START-HERE.md`](START-HERE.md) has the full guide, what is withheld and why, and credits.
 
 ## Credit, licence and citation
 
-Transliterations by René Zandbergen and Gabriel Landini, Takeshi Takahashi, Glen Claston, Prescott Currier and Mary D'Imperio, William Friedman's study group and Jorge Stolfi, all from https://www.voynich.nu/; manuscript images by Yale University's Beinecke Library. Full credits in `START-HERE.md`.
+Transliterations by René Zandbergen and Gabriel Landini, Takeshi Takahashi, Glen Claston, Prescott Currier and Mary D'Imperio, William Friedman's study group and Jorge Stolfi, all from https://www.voynich.nu/; manuscript images by Yale University's Beinecke Library. Full credits in [`START-HERE.md`](START-HERE.md).
 
-Code: MIT (`LICENSE`). Our text, results and data: CC BY 4.0 (`LICENSE-DATA.md`). Cite with `CITATION.cff`.
+Code: MIT ([`LICENSE`](LICENSE)). Our text, results and data: CC BY 4.0 ([`LICENSE-DATA.md`](LICENSE-DATA.md)). Cite with [`CITATION.cff`](CITATION.cff).

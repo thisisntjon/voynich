@@ -86,6 +86,7 @@ fontana_ACQUISITION_RECEIPT_V1.json	third-party or derived data: fetch it or reb
 fontana_trocr_preflight_OCR.tsv	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md, .inventory/registers/LEARNINGS.md
 gaps.md	not in the source tree at export	.inventory/registers/LEARNINGS.md, workflow/FINDINGS-GRAPH.yaml
 gaps/text_structure.md	not in the source tree at export	workflow/FINDINGS-GRAPH.yaml
+gib_resample_1-6.meta.json	not in the source tree at export	.inventory/registers/DECISIONS.md
 greshko-entropy-csv.txt	third-party or derived data: fetch it or rebuild it	.inventory/registers/CLAIMS.md
 held_files.tsv	third-party or derived data: fetch it or rebuild it	.inventory/registers/OPEN.md
 incoming/ten-theories/DELIVERY.md	team communication, agent configuration or outside material	.inventory/registers/DECISIONS.md, .inventory/registers/LEARNINGS.md

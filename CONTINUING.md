@@ -2,17 +2,17 @@
 
 *For an AI agent (or a person) picking the research up from this repository alone. Snapshot 2026-10-19.*
 
-The project ran as a team: a lead session, an execution lead, replication agents and a message bus between them. `AGENTS.md` is that team's rulebook and is kept as evidence of how results were produced. Some of its rules cannot apply to you; this page says which, and what to do instead.
+The project ran as a team: a lead session, an execution lead, replication agents and a message bus between them. [`record/AGENTS.md`](record/AGENTS.md) is that team's rulebook and is kept as evidence of how results were produced. Some of its rules cannot apply to you; this page says which, and what to do instead.
 
 ## Your first hour
 
-1. Read `README.md`, then `OPEN-QUESTIONS.md`: the live explanations, the unsecured assumptions, and the briefed tests nobody ran.
-2. Before testing anything, check `DEAD-ENDS.md` and search `.inventory/registers/LEARNINGS.md` for the idea (theme index at the top).
-3. Fetch and rebuild the data (`README.md`, "Reproduce a result"), then rerun one finding's results file to confirm your setup.
+1. Read [`README.md`](README.md), then [`OPEN-QUESTIONS.md`](OPEN-QUESTIONS.md): the live explanations, the unsecured assumptions, and the briefed tests nobody ran.
+2. Before testing anything, check [`DEAD-ENDS.md`](DEAD-ENDS.md) and search [`record/.inventory/registers/LEARNINGS.md`](record/.inventory/registers/LEARNINGS.md) for the idea (theme index at the top).
+3. Fetch and rebuild the data ([`README.md`](README.md), "Reproduce a result"), then rerun one finding's results file to confirm your setup.
 
 ## Where to start: the newest open leads
 
-From `.inventory/registers/OPEN.md`, newest first; each names its evidence so far. Most can be probed with data the README's commands fetch.
+From [`record/.inventory/registers/OPEN.md`](record/.inventory/registers/OPEN.md), newest first; each names its evidence so far. Most can be probed with data the README's commands fetch.
 
 - **O-086**: Method gap: are F-40's and F-41's cross-line-avoidance numbers line-edge vocabulary? Astra exploratory (runs/explore/drawing_gap_repetition_20261019.*, exact words, no cores): true line-return repeats 4/6/8 (ZL3b/RF1b/IT2a). A within-two-line position shuffle  — evidence so far: runs/explore/drawing_gap_repetition_20261019.* (yonichmanuscript); s87_core_layer_genre.py:57-58 (filing time not recorded; the row's own stamp is below)
 - **O-083**: EXPLORATORY (D-085, Astra): do single labels recur as joined 2-3-word sequences in the body text? Label-compound concordance over ZL single labels: 736 label instances; 86 match some body join somewhere; 3 match on the same page. No enrichment claim is made. O — evidence so far: lab/runs/explore/label_compound_concordance_20261019.*; 2026-10-19 13:11
@@ -26,22 +26,22 @@ From `.inventory/registers/OPEN.md`, newest first; each names its evidence so fa
 - Never edit or overwrite a `results_*.txt` file or a script a stub pins; a change is a new run.
 - Pre-register a confirmatory test: hash the script and design into a `*.prereg.sha256` before it reads real data; run a planted-answer fixture (positive control) first.
 - Report the printed call of a test, not a paraphrase of it.
-- Check what is already published for the pages and question first (`data/page-facts/`, `data/SOURCES.tsv`, the library catalogue).
-- Two tiers: quick read-only probes (label them EXPLORATORY, keep them under `runs/explore/`, never cite them as findings) and confirm runs (the full rules, once, for a result that would change a grade).
+- Check what is already published for the pages and question first ([`record/data/page-facts/`](record/data/page-facts/), [`record/data/SOURCES.tsv`](record/data/SOURCES.tsv), the library catalogue).
+- Two tiers: quick read-only probes (label them EXPLORATORY, keep them under [`record/runs/explore/`](record/runs/explore/), never cite them as findings) and confirm runs (the full rules, once, for a result that would change a grade).
 
 ## Rules that applied only inside the team
 
 - Messages through the team's message bus (shown redacted as `<team-comms>`): there is no message bus here. Write your notes into your run folder.
 - "Register rows are written by the lead session only": you are the custodian of your own copy. Add rows to the registers and the graph yourself, and say in the row that you are a new contributor.
 - Run-id prefixes (`s`, `db-s`, `r`, `gk-` …) belong to the original team. Pick a new prefix of your own (for example `x-`) and create `runs/<prefix><n>/` before you start.
-- `AGENTS.md` says to regenerate `INVENTORY.md` with a curation tool that is not in this repository; treat `INVENTORY.md` as a snapshot.
+- [`record/AGENTS.md`](record/AGENTS.md) says to regenerate [`record/INVENTORY.md`](record/INVENTORY.md) with a curation tool that is not in this repository; treat [`record/INVENTORY.md`](record/INVENTORY.md) as a snapshot.
 - roach's replication scripts expect roach's own folder layout: run `python tools/roach_layout.py` to rebuild it under `roach-root/`.
 - "Astra schedules", "Opus reviews", roach replications, the RTX 5080 and CPU sharing: team roles and machines. Replicate your own important results with independently written code, and say so.
 
 ## Filing a result
 
-1. Results file in `runs/<id>/`; cite every number you use as a new claim row in `.inventory/registers/CLAIMS.md` (next free `c-` id).
-2. Add the evidence line to the finding in `workflow/FINDINGS-GRAPH.yaml` (axis, by, ref, claim, agrees), then `python tools/findings_graph.py render --allow-missing` and `python tools/findings_graph.py sprawl` (0 duplicates).
+1. Results file in `runs/<id>/`; cite every number you use as a new claim row in [`record/.inventory/registers/CLAIMS.md`](record/.inventory/registers/CLAIMS.md) (next free `c-` id).
+2. Add the evidence line to the finding in [`record/workflow/FINDINGS-GRAPH.yaml`](record/workflow/FINDINGS-GRAPH.yaml) (axis, by, ref, claim, agrees), then `python tools/findings_graph.py render --allow-missing` and `python tools/findings_graph.py sprawl` (0 duplicates).
 3. Record what you learned, including a null, as an `L-` row; record a choice as a `D-` row.
 
 Scale of what is here: 51 findings, 582 claims, 308 learnings, 88 decisions, 86 open rows, 619 results files.
