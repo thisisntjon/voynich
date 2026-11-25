@@ -1,15 +1,9 @@
 cff-version: 1.2.0
-message: "If you use this research record, please cite it as below. Code is MIT; text, results and data are CC BY 4.0; run files name the AI agent that ran them."
-title: "Voynich manuscript research record"
-type: dataset
+message: "Cite this edition and the folio, locus or dataset you inspected. For underlying materials use their individual credits."
+title: "Voynich Reconstruction Atlas"
 authors:
   - name: "Simone Systems Research"
-version: "2026-10-19"
-date-released: "2026-10-19"
-repository-code: "https://github.com/thisisntjon/voynich"
-license: [MIT, CC-BY-4.0]
-abstract: >-
-  Working record of a structural investigation of the Voynich manuscript (Beinecke MS 408) by AI
-  research agents directed by Simone Systems Research: tested findings with graded evidence, excluded
-  explanations, registers of every cited number, and the scripts to reproduce them. Not a decipherment.
-keywords: [Voynich manuscript, Beinecke MS 408, quantitative linguistics, undeciphered scripts, reproducibility]
+version: "1.0"
+date-released: 2026-11-25
+type: software
+url: "https://github.com/thisisntjon/voynich/tree/reconstruction-atlas-v1"

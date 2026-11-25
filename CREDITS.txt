@@ -1,0 +1,31 @@
+Voynich Reconstruction Atlas, research edition 1.0.0, 25 November 2026
+Simone Systems Research. Derived from the November 25 reconstruction and part tree v1.0.1.
+
+Courtesy of the Yale University Library. Beinecke Rare Book and Manuscript Library, Yale University, MS 408.
+Photographs and coordinate frames: https://collections.library.yale.edu/catalog/2002046
+Source IIIF manifest: https://collections.library.yale.edu/manifests/2002046
+Yale reuse policy: https://web.library.yale.edu/about/copyright/permission.html
+Beinecke credits: https://beinecke.library.yale.edu/beinecke/beinecke-library-copyright-information
+
+Transliterations: René Zandbergen and Gabriel Landini (ZL3b) and Takeshi Takahashi (IT2a,
+converted in the Landini–Stolfi interlinear edition). RF1b is the reference transliteration
+distributed by René Zandbergen. The source transliteration tables at voynich.nu are CC0.
+Source editions: https://www.voynich.nu/transcr.html
+Terms: https://www.voynich.nu/roadmap.html#cop
+
+Ryan Allen, Voynich glyph map, ryanallen.com/voynich. Site tracers credited in the snapshot:
+nablator, christopear, Shlomo1, EMZS and powder9. Glyph map snapshot of 22 November 2026.
+https://ryanallen.com/voynich/glyph-map.html (CC BY 4.0)
+The Voynichese Project, copyright 2014 (Apache 2.0), and data repackaged by L. Rozanova
+and A. Temerev (MIT). Both upstream notices accompany geometry-derived downloads.
+https://github.com/voynichese/voynichese ; https://github.com/lrozanova/voynich-units
+
+Changes: SSR aligned and estimated character positions in Yale's coordinate system,
+combined characters into writing units and words, built a hierarchy and extracted
+candidate drawing and pigment regions. SSR computed layout edge profiles, editorial
+comparisons and reassembly outcomes. Data incorporating Allen's map carry CC BY 4.0:
+https://creativecommons.org/licenses/by/4.0/
+Manuscript grouping conventions and specialist collation: René Zandbergen,
+https://www.voynich.nu/descr.html . Scribal and language categories reflect prior work
+by Lisa Fagin Davis and Prescott Currier. Cite the edition date, source edition and
+object ID when identifying an observation. Estimated boxes and links describe geometry.
