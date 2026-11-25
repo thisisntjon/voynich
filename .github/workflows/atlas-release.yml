@@ -1,0 +1,33 @@
+name: Publish verified Reconstruction Atlas
+on:
+  push:
+    branches: [reconstruction-atlas-v1]
+    paths:
+      - 'distribution/**'
+      - 'assemble.py'
+      - 'RELEASE.md'
+permissions:
+  contents: write
+concurrency:
+  group: reconstruction-atlas-v1-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble and verify the edition
+        run: |
+          python3 assemble.py --output release
+          unzip -j release/Voynich-Reconstruction-Atlas-1.0.zip resources/atlas-data-v1.zip -d release
+          cp fold-quire-1.pdf replication-v1.zip release/
+          (cd release && sha256sum --check ../SHA256SUMS.txt)
+      - name: Publish the edition and individual downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh release view reconstruction-atlas-1.0 >/dev/null 2>&1; then
+            gh release create reconstruction-atlas-1.0 --target "$GITHUB_SHA" --title "Voynich Reconstruction Atlas 1.0" --notes-file RELEASE.md release/* SHA256SUMS.txt
+          else
+            gh release view reconstruction-atlas-1.0 --json tagName,url
+          fi
